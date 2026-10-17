@@ -537,6 +537,38 @@ header.site { border-bottom: 0; }
 .watch .what { font-size: 15px; line-height: 1.45; }
 .watch .what b { display: block; font-weight: 700; color: var(--ink); }
 .watch .what span { color: var(--body); font-size: 14px; }
+
+/* Watch: the day's video, newest first */
+.vids { display: grid; grid-auto-flow: column; grid-auto-columns: min(280px, 78vw); gap: 18px; overflow-x: auto; padding-bottom: 10px; scroll-snap-type: x proximity; scrollbar-width: thin; }
+.vid { position: relative; scroll-snap-align: start; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.vid .vt { position: relative; display: block; aspect-ratio: 16 / 9; max-width: 100%; overflow: hidden; background: #2B1B54; }
+.vid .vt svg { width: 100%; height: 100%; display: block; }
+.vid .vt .ph .credit { display: none; }
+.vid .pb { position: absolute; left: 10px; bottom: 10px; display: flex; align-items: center; gap: 6px; padding: 4px 9px 4px 6px; background: rgba(15, 11, 25, .78); color: #FFFFFF; font-size: 12px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.vid .pb i { width: 22px; height: 22px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; }
+.vid .pb.live { background: #C2264B; }
+.vid .src { font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); }
+.vid h3 { margin: 0; font-family: var(--serif); font-size: 17px; font-weight: 600; line-height: 1.25; text-wrap: balance; }
+.vid h3 a::after { content: ""; position: absolute; inset: 0; z-index: 1; }
+.vid:hover h3 a { color: var(--accent); }
+.vid .when { font-size: 12px; color: var(--muted); }
+.vfilters { margin-bottom: 14px; }
+/* What America's newsrooms are leading with */
+.fronts-us { margin-top: 32px; padding-top: 18px; border-top: 1px solid var(--line); }
+.fronts-us > h3 { margin: 0 0 4px; font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--title); }
+.fronts-us > p { margin: 0 0 14px; font-size: 13px; color: var(--muted); }
+.ledes { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr)); gap: 0 28px; }
+.lede { position: relative; display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 4px 14px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.lede .mono { grid-row: span 2; width: 44px; height: 44px; font-size: 14px; }
+.lede .o { font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); }
+.lede a { font-family: var(--serif); font-size: 17px; font-weight: 600; line-height: 1.25; }
+.lede a::after { content: ""; position: absolute; inset: 0; }
+.lede:hover a { color: var(--accent); }
+.canada-lens { margin-top: 18px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 6px; padding: 16px 18px; background: var(--soft); border-left: 4px solid var(--wine); position: relative; }
+.canada-lens b { font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--wine); }
+.canada-lens a { font-family: var(--serif); font-size: 20px; font-weight: 600; line-height: 1.25; }
+.canada-lens a::after { content: ""; position: absolute; inset: 0; }
+.canada-lens span { font-size: 14px; color: var(--body); }
 </style>
 
 <header class="site">
@@ -573,6 +605,7 @@ header.site { border-bottom: 0; }
       <a href="#">Energy &amp; Infrastructure</a>
       <a href="#sec-world">World</a>
       <a href="#sec-us">United States</a>
+      <a href="#video">Watch</a>
       <a href="#editorsread">Editor's Read</a>
       <a href="#mostread">Most read</a>
       <a href="#reading">Today's reading</a>
@@ -587,7 +620,7 @@ header.site { border-bottom: 0; }
   <div class="wrap">
     <a class="mini" href="#" tabindex="-1">Palindrome <em>N</em></a>
     <nav aria-label="Sections">
-      <a href="#editorsread" tabindex="-1">Editor's Read</a><a href="#sec-canada" tabindex="-1">Canada</a><a href="#sec-politics" tabindex="-1">Politics</a><a href="#sec-business" tabindex="-1">Business</a><a href="#sec-world" tabindex="-1">World</a><a href="#sec-us" tabindex="-1">U.S.</a><a href="#mostread" tabindex="-1">Most read</a><a href="#reading" tabindex="-1">Reading</a><a href="#ontherecord" tabindex="-1">On the record</a><a href="#editorials" tabindex="-1">Editorials</a><a href="#godeeper" tabindex="-1">Go deeper</a>
+      <a href="#video" tabindex="-1">Watch</a><a href="#editorsread" tabindex="-1">Editor's Read</a><a href="#sec-canada" tabindex="-1">Canada</a><a href="#sec-politics" tabindex="-1">Politics</a><a href="#sec-business" tabindex="-1">Business</a><a href="#sec-world" tabindex="-1">World</a><a href="#sec-us" tabindex="-1">U.S.</a><a href="#mostread" tabindex="-1">Most read</a><a href="#reading" tabindex="-1">Reading</a><a href="#ontherecord" tabindex="-1">On the record</a><a href="#editorials" tabindex="-1">Editorials</a><a href="#godeeper" tabindex="-1">Go deeper</a>
     </nav>
     <span class="now"><span class="live"><i aria-hidden="true"></i></span><span id="clock2">5:15 p.m.</span> ET</span>
   </div>
@@ -626,7 +659,7 @@ header.site { border-bottom: 0; }
         <h2><a class="card-link" href="https://english.alarabiya.net/News/middle-east/2026/10/17/tanker-explodes-after-hitting-mine-in-strait-of-hormuz-iran-s-irgc" target="_blank" rel="noopener">Oil tanker explodes after hitting a mine in the Strait of Hormuz, Iran's Revolutionary Guard says</a></h2>
         <p class="bk-dek">First reported Saturday by <strong>Al Arabiya</strong>, citing Iran's Revolutionary Guard. <strong>Al Jazeera</strong> now reports it too. Palindrome has not confirmed it yet.</p>
         <div class="know">
-          <div><h3>What we know</h3><ul><li>The Guard says a tanker hit a mine in the Strait of Hormuz and exploded.</li><li>It says the ship carried more than two million barrels of crude on a route Iran had not approved.</li><li>Al Jazeera reports several tankers hit since Friday, and the Guard now warns the strait is closed.</li><li>The U.K.'s maritime trade agency says a grenade fired from a small boat hit one tanker.</li></ul></div>
+          <div><h3>What we know</h3><ul><li>The Guard says a tanker hit a mine in the Strait of Hormuz and exploded.</li><li>It says the ship carried more than two million barrels of crude on a route Iran had not approved.</li><li>Al Jazeera reports several tankers hit since Friday, and the Guard now warns the strait is closed.</li><li>The U.K.'s maritime trade agency says a grenade fired from a small boat hit one tanker.</li><li>U.S. Central Command says most of Iran's attempted attacks fail and the strait is open, <a href="https://www.foxnews.com/world/vast-majority-irans-attempted-attacks-strait-hormuz-unsuccessful-centcom-spokesman-says" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline">Fox News reports</a>. It did not address this tanker.</li></ul></div>
           <div><h3>Not yet known</h3><ul><li>The ship's name and flag.</li><li>Whether anyone was hurt.</li><li>Confirmation from other outlets.</li></ul></div>
         </div>
         <div class="actions">
@@ -659,6 +692,17 @@ header.site { border-bottom: 0; }
       <p class="label">The wire <span class="live"><i aria-hidden="true"></i>Live</span></p>
       <ol id="latestList"></ol>
     </aside>
+  </section>
+
+  <section id="video" aria-labelledby="w-h" style="scroll-margin-top: 64px">
+    <div class="band-head"><h2 id="w-h">Watch</h2><p>The day's news on video, from newsrooms in Canada, the U.S. and abroad. Every clip plays on the outlet's own site.</p></div>
+    <div class="filters vfilters" role="group" aria-label="Filter videos">
+      <button type="button" data-v="all" aria-pressed="true">All</button>
+      <button type="button" data-v="ca" aria-pressed="false">Canada</button>
+      <button type="button" data-v="us" aria-pressed="false">United States</button>
+      <button type="button" data-v="world" aria-pressed="false">World</button>
+    </div>
+    <div class="vids" id="vids" aria-live="polite"></div>
   </section>
 
   <section id="editorsread" aria-labelledby="er-h">
@@ -701,6 +745,12 @@ header.site { border-bottom: 0; }
     <div class="us">
       <div id="usLead"></div>
       <div class="us-list" id="usList"></div>
+    </div>
+    <div class="fronts-us">
+      <h3>What America's newsrooms are leading with</h3>
+      <p>The top story on each front page at 5:30 p.m. ET, in our words. Tap to read it there.</p>
+      <div class="ledes" id="ledes"></div>
+      <div class="canada-lens"><b>How U.S. media see Canada today</b><a href="https://www.axios.com/2026/10/16/carney-canada-alberta-separatist-trump-trade-war-unity" target="_blank" rel="noopener">Trump’s feud with Canada meets Alberta’s separation vote</a><span>Axios ties Monday's vote to the trade war, noting U.S. tariffs of 50% on many Canadian goods since talks collapsed in August.</span></div>
     </div>
   </section>
 
@@ -910,7 +960,7 @@ header.site { border-bottom: 0; }
   const extra = [
     ['ballot', 'Canada', 'B.C. votes for mayors and councils today', '', 'CTV News, CBC News', 'https://www.ctvnews.ca/vancouver/article/how-to-watch-live-results-of-bcs-municipal-elections-on-saturday/', '', '3:30 p.m.'],
     ['globe', 'World', 'Trump revives “51st state” talk weeks before the U.S. midterms', '', 'Global News', 'https://globalnews.ca/news/12103949/donald-trump-51st-state-midterms/', '', ''],
-    ['chart', 'World', 'Trump signs, then waives, steep new Russia sanctions', '', 'Euronews, Al Jazeera', 'https://www.euronews.com/video/2026/10/17/latest-news-bulletin-october-17th-2026-midday', '', '']
+    ['chart', 'World', 'Trump signs, then waives, steep new Russia sanctions', '', 'Euronews, Al Jazeera, CBS News, ABC News', 'https://www.euronews.com/video/2026/10/17/latest-news-bulletin-october-17th-2026-midday', '', '']
   ];
   const desk = { 'Business & Economy': 'business', World: 'world', Politics: 'politics', Canada: 'canada' };
   // Which desk each story belongs on (the Alberta research story is political coverage)
@@ -1080,10 +1130,10 @@ header.site { border-bottom: 0; }
 
   // United States desk (real stories, Oct 16–17, 2026)
   const us = [
-    { pic: 'city', topic: 'Oregon', h: 'Parent and teacher stopped a gunman at a Bend, Oregon, elementary school', s: 'Three children and a 25-year-old teacher were killed at Silver Rail Elementary. Police say the 16-year-old attacker was a former student; a teacher tackled him and a parent shot him dead minutes after the first 911 call. Two people are in critical condition.', src: 'Al Jazeera, Fox News, FOX 13 Seattle, Common Dreams', link: 'https://www.aljazeera.com/news/2026/10/17/oregon-school-shooter-was-former-special-needs-student-police-say', img: 'https://www.aljazeera.com/wp-content/uploads/2026/10/image-1792181302.jpg?resize=730%2C410&quality=80', time: 'Oct 17' },
-    { pic: 'podium', topic: 'Midterms', h: 'Trump rallies in northern Kentucky as Republicans defend their turf', s: '', src: 'WCPO, FOX19, Spectrum News', link: 'https://www.wcpo.com/news/northern-kentucky/president-trump-to-rally-kentucky-voters-in-highland-heights-as-midterms-loom', img: '', time: '2:00 p.m.' },
+    { pic: 'city', topic: 'Oregon', h: 'Parent and teacher stopped a gunman at a Bend, Oregon, elementary school', s: 'Three children and a 25-year-old teacher were killed at Silver Rail Elementary. Police say the 16-year-old attacker was a former student; a teacher tackled him and a parent shot him dead minutes after the first 911 call. Two people are in critical condition.', src: 'Al Jazeera, Fox News, ABC News, PBS NewsHour, Common Dreams', link: 'https://www.aljazeera.com/news/2026/10/17/oregon-school-shooter-was-former-special-needs-student-police-say', img: 'https://www.aljazeera.com/wp-content/uploads/2026/10/image-1792181302.jpg?resize=730%2C410&quality=80', time: 'Oct 17' },
+    { pic: 'podium', topic: 'Midterms', h: 'Trump rallies in northern Kentucky as Republicans defend their turf', s: '', src: 'WCPO, FOX19, Spectrum News, Fox News, CNN', link: 'https://www.wcpo.com/news/northern-kentucky/president-trump-to-rally-kentucky-voters-in-highland-heights-as-midterms-loom', img: '', time: '2:00 p.m.' },
     { pic: 'forest', topic: 'California', h: 'Wind-driven Norte Fire burns homes in Orange County; 16,000 told to leave', s: '', src: 'Al Jazeera', link: 'https://www.aljazeera.com/news/2026/10/17/southern-california-wildfire-engulfs-homes-prompts-evacuation-orders', img: 'https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ad2d683dbb6-1792202371.jpg?resize=770%2C513&quality=80', time: 'Oct 17' },
-    { pic: 'parliament', topic: 'White House', h: 'New press secretary out after five days on the job', s: '', src: 'Al Jazeera', link: 'https://www.aljazeera.com/news/2026/10/16/white-house-press-secretary-katie-zacharia-fired-after-five-days-on-the-job', img: 'https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ad270d1-1792176337.jpg?resize=770%2C513&quality=80', time: 'Oct 16' },
+    { pic: 'parliament', topic: 'White House', h: 'New press secretary out after five days on the job', s: '', src: 'Al Jazeera, Axios, PBS NewsHour, Fox News', link: 'https://www.aljazeera.com/news/2026/10/16/white-house-press-secretary-katie-zacharia-fired-after-five-days-on-the-job', img: 'https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ad270d1-1792176337.jpg?resize=770%2C513&quality=80', time: 'Oct 16' },
     { pic: 'wave', topic: 'Border', h: 'U.S. Coast Guard rescues 16 after a boat sinks off Baja California; 11 missing', s: '', src: 'Al Jazeera', link: 'https://www.aljazeera.com/news/2026/10/17/us-coastguard-rescues-16-after-boat-sinks-off-mexicos-baja-coast', img: 'https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6ad2bbbfc8926-1792195519.jpg?resize=770%2C513&quality=80', time: 'Oct 17' }
   ];
   const usMeta = (x) => '<div class="fm">' + meter(x.src.split(',').length) + '<span class="ts">' + esc(x.time) + '</span></div><div class="fm">' + esc(x.src) + '</div>';
@@ -1099,6 +1149,47 @@ header.site { border-bottom: 0; }
     if (days > 0) $('usCount').innerHTML = 'U.S. midterms in <b>' + days + '</b> ' + (days === 1 ? 'day' : 'days') + ' · Nov. 3';
   } catch (e) {}
   wirePhotos();
+
+  // Watch: real clips; each plays on the outlet's site
+  const AJI = 'https://www.aljazeera.com/wp-content/uploads/2026/10/';
+  const vids = [
+    { r: 'us', o: 'Fox News', live: true, t: 'Trump urges Kentucky voters to back Republicans at midterm rally', w: 'Today', u: 'https://www.foxnews.com/video/5614615980001', pic: 'podium' },
+    { r: 'world', o: 'Fox News', t: 'U.S. Central Command says most of Iran’s attacks on Hormuz shipping fail', w: 'Today', u: 'https://www.foxnews.com/video/6407012468112', pic: 'tanker' },
+    { r: 'us', o: 'Al Jazeera', d: '0:50', t: 'Wildfire forces thousands of evacuation orders in Orange County', w: 'Today', u: 'https://www.aljazeera.com/video/newsfeed/2026/10/17/wildfire-prompts-thousands-of-evacuation-orders-in-orange-county', img: AJI + 'image-1792224190.jpg?resize=770%2C433&quality=80', pic: 'forest' },
+    { r: 'world', o: 'Al Jazeera', d: '1:13', t: 'Trump waives Russia sanctions as his rift with Zelenskyy widens', w: 'Today', u: 'https://www.aljazeera.com/video/newsfeed/2026/10/17/trump-waives-russia-sanctions-as-rift-with-zelenskyy-widens', img: AJI + 'image-1792213059.jpg?resize=770%2C433&quality=80', pic: 'chart' },
+    { r: 'ca', o: 'CBC News', t: 'Alberta referendum countdown: Carney and Smith keep up the pro-Canada drumbeat', w: 'This week', u: 'https://www.cbc.ca/player/play/video/9.7385095', pic: 'ballot' },
+    { r: 'us', o: 'PBS NewsHour', d: '4:32', t: 'Oregon school shooter attacked a special education classroom, police say', w: 'Oct 16', u: 'https://www.pbs.org/newshour/show/oregon-school-shooter-attacked-special-education-classroom-police-say', pic: 'city' },
+    { r: 'us', o: 'PBS NewsHour', d: '4:57', t: 'News Wrap: Zacharia out as press secretary after less than a week', w: 'Oct 16', u: 'https://www.pbs.org/newshour/show/news-wrap-zacharia-out-as-white-house-press-secretary-after-less-than-a-week-on-the-job', pic: 'parliament' },
+    { r: 'us', o: 'PBS NewsHour', d: '6:48', t: 'Checking the claims Trump is making at his midterm rallies', w: 'Oct 16', u: 'https://www.pbs.org/newshour/show/examining-the-controversial-claims-trump-is-making-at-his-midterm-rallies', pic: 'podium' },
+    { r: 'us', o: 'Al Jazeera', d: '1:03', t: 'Bend, Oregon, mourns the victims of the school shooting', w: 'Oct 16', u: 'https://www.aljazeera.com/video/newsfeed/2026/10/16/oregon-community-mourns-victims-of-school-shooting', img: AJI + 'image-1792181302.jpg?resize=730%2C410&quality=80', pic: 'city' },
+    { r: 'ca', o: 'On YouTube', t: 'Premier Danielle Smith casts her vote to stay in Canada', w: 'Oct 14', u: 'https://www.youtube.com/watch?v=1leLGQcaypU', pic: 'ballot' },
+    { r: 'ca', o: 'Global News', d: '0:55', t: '“Canada will end up being the 51st state,” Trump says', w: 'Oct 14', u: 'https://globalnews.ca/video/12103040/canada-will-end-up-being-the-51st-state-trump-says/', pic: 'globe' },
+    { r: 'ca', o: 'Global News', d: '2:06', t: 'U.S. ambassador Hoekstra tells Canada to stay out of American politics', w: 'Oct 14', u: 'https://globalnews.ca/video/12103135/u-s-ambassador-hoekstra-warns-canada-to-keep-your-nose-out-of-american-politics/', pic: 'parliament' }
+  ];
+  const tri = '<svg width="10" height="10" viewBox="0 0 24 24" fill="#2B1B54" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg>';
+  function showVids(r) {
+    const list = vids.filter((v) => r === 'all' || v.r === r);
+    $('vids').innerHTML = list.map((v) => '<article class="vid"><a class="vt" href="' + esc(v.u) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + photo(v.img, v.pic, v.t, v.o) +
+      '<span class="pb' + (v.live ? ' live' : '') + '"><i>' + tri + '</i>' + (v.live ? 'Live' : v.d ? esc(v.d) : 'Watch') + '</span></a>' +
+      '<span class="src">' + esc(v.o) + '</span><h3><a href="' + esc(v.u) + '" target="_blank" rel="noopener">' + esc(v.t) + '</a></h3><span class="when">' + esc(v.w) + '</span></article>').join('');
+    wirePhotos();
+  }
+  document.querySelectorAll('.vfilters button').forEach((b) => b.addEventListener('click', () => {
+    document.querySelectorAll('.vfilters button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    showVids(b.dataset.v);
+  }));
+  showVids('all');
+
+  // What America's newsrooms are leading with (read Oct 17, 5:30 p.m. ET)
+  const ledes = [
+    ['CBS News', 'Trump waiving tariffs on the biggest buyers of Russian oil', 'https://www.cbsnews.com/news/trump-waives-sanctions-tariffs-russian-oil-lindsey-graham/'],
+    ['ABC News', 'Trump’s waiver of new Russia sanctions, and the backlash in Congress', 'https://abcnews.com/Politics/trump-signs-order-waiving-graham-act-sanctions-russia/story?id=137341529'],
+    ['Fox News', 'The U.S. military’s claim that most Iranian attacks on Hormuz shipping fail', 'https://www.foxnews.com/world/vast-majority-irans-attempted-attacks-strait-hormuz-unsuccessful-centcom-spokesman-says'],
+    ['CNN', 'Live midterm coverage, led by Trump’s rally in Kentucky', 'https://cnn.com/2026/10/17/politics/live-news/midterm-election-congress'],
+    ['PBS NewsHour', 'Analysis of the press secretary’s five-day tenure', 'https://www.pbs.org/newshour/show/capehart-and-continetti-on-the-white-house-press-secretarys-quick-exit'],
+    ['Axios', 'Katie Zacharia’s exit as White House press secretary', 'https://www.axios.com/2026/10/16/trump-katie-zacharia-press-secretary']
+  ];
+  $('ledes').innerHTML = ledes.map(([o, h, u]) => '<article class="lede"><span class="mono" aria-hidden="true">' + esc({ 'CBS News': 'CBS', 'ABC News': 'ABC', 'Fox News': 'Fox', CNN: 'CNN', 'PBS NewsHour': 'PBS', Axios: 'Ax' }[o] || o.slice(0, 3)) + '</span><span class="o">' + esc(o) + '</span><a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(h) + '</a></article>').join('');
 
   // Compact bar once the nameplate scrolls off
   const stick = $('stick');
