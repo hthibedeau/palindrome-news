@@ -485,6 +485,29 @@ header.site { border-bottom: 0; }
 .fs p { margin: 0; font-size: 14px; line-height: 1.5; color: var(--body); }
 .fs .fm { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; font-size: 12px; color: var(--muted); }
 .fs .fm .ts { font-size: 12px; }
+
+/* United States desk */
+.us-flag { display: inline-flex; align-items: center; gap: 8px; }
+.us-count { font-size: 13px; color: var(--muted); }
+.us-count b { font-family: var(--serif); font-size: 20px; color: var(--title); font-variant-numeric: tabular-nums; }
+.us { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px 32px; }
+@media (min-width: 900px) { .us { grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); } .us-list { border-left: 1px solid var(--line); padding-left: 28px; } }
+.us-lead { position: relative; display: flex; flex-direction: column; gap: 10px; }
+.us-lead .fimg { display: block; aspect-ratio: 16 / 9; max-width: 100%; overflow: hidden; background: #2B1B54; }
+.us-lead .fimg svg { width: 100%; height: 100%; display: block; }
+.us-lead h3 { margin: 4px 0 0; font-family: var(--serif); font-weight: 700; font-size: clamp(26px, 3vw, 34px); line-height: 1.1; letter-spacing: -.015em; }
+.us-lead h3 a::after { content: ""; position: absolute; inset: 0; z-index: 1; }
+.us-lead:hover h3 a { color: var(--accent); }
+.us-lead p { margin: 0; font-size: 16px; line-height: 1.55; color: var(--body); max-width: 640px; }
+.us-list { display: flex; flex-direction: column; }
+.us-list .fs:first-of-type { padding-top: 0; }
+.us-list .fs { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 4px 14px; align-items: start; }
+.us-list .fs .thumbs { grid-row: span 3; display: block; aspect-ratio: 1; max-width: 100%; overflow: hidden; background: #2B1B54; }
+.us-list .fs .thumbs svg { width: 100%; height: 100%; display: block; }
+@media (max-width: 420px) { .us-list .fs { grid-template-columns: 72px minmax(0, 1fr); } }
+.us-list .fs > :not(.thumbs) { grid-column: 2; }
+.us-list .fs .thumbs { grid-row: 1 / span 4; }
+.us-lead .fm { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; font-size: 13px; color: var(--muted); }
 </style>
 
 <header class="site">
@@ -520,6 +543,7 @@ header.site { border-bottom: 0; }
       <a href="#sec-business">Business &amp; Economy</a>
       <a href="#">Energy &amp; Infrastructure</a>
       <a href="#sec-world">World</a>
+      <a href="#sec-us">United States</a>
       <a href="#mostread">Most read</a>
       <a href="#reading">Today's reading</a>
       <a href="#ontherecord">On the record</a>
@@ -533,7 +557,7 @@ header.site { border-bottom: 0; }
   <div class="wrap">
     <a class="mini" href="#" tabindex="-1">Palindrome <em>N</em></a>
     <nav aria-label="Sections">
-      <a href="#sec-canada" tabindex="-1">Canada</a><a href="#sec-politics" tabindex="-1">Politics</a><a href="#sec-business" tabindex="-1">Business</a><a href="#sec-world" tabindex="-1">World</a><a href="#mostread" tabindex="-1">Most read</a><a href="#reading" tabindex="-1">Reading</a><a href="#ontherecord" tabindex="-1">On the record</a><a href="#editorials" tabindex="-1">Editorials</a><a href="#godeeper" tabindex="-1">Go deeper</a>
+      <a href="#sec-canada" tabindex="-1">Canada</a><a href="#sec-politics" tabindex="-1">Politics</a><a href="#sec-business" tabindex="-1">Business</a><a href="#sec-world" tabindex="-1">World</a><a href="#sec-us" tabindex="-1">U.S.</a><a href="#mostread" tabindex="-1">Most read</a><a href="#reading" tabindex="-1">Reading</a><a href="#ontherecord" tabindex="-1">On the record</a><a href="#editorials" tabindex="-1">Editorials</a><a href="#godeeper" tabindex="-1">Go deeper</a>
     </nav>
     <span class="now"><span class="live"><i aria-hidden="true"></i></span><span id="clock2">5:15 p.m.</span> ET</span>
   </div>
@@ -570,9 +594,9 @@ header.site { border-bottom: 0; }
       <div class="bk-text">
         <span class="tag">Breaking</span><span class="btime">4:45 p.m. ET</span>
         <h2><a class="card-link" href="https://english.alarabiya.net/News/middle-east/2026/10/17/tanker-explodes-after-hitting-mine-in-strait-of-hormuz-iran-s-irgc" target="_blank" rel="noopener">Oil tanker explodes after hitting a mine in the Strait of Hormuz, Iran's Revolutionary Guard says</a></h2>
-        <p class="bk-dek">Reported Saturday by <strong>Al Arabiya</strong>, citing Iran's Revolutionary Guard through Iranian media. Palindrome has not confirmed this yet.</p>
+        <p class="bk-dek">First reported Saturday by <strong>Al Arabiya</strong>, citing Iran's Revolutionary Guard. <strong>Al Jazeera</strong> now reports it too. Palindrome has not confirmed it yet.</p>
         <div class="know">
-          <div><h3>What we know</h3><ul><li>The Guard says a tanker hit a mine in the Strait of Hormuz and exploded.</li><li>It says the ship carried more than two million barrels of crude on a route Iran had not approved.</li></ul></div>
+          <div><h3>What we know</h3><ul><li>The Guard says a tanker hit a mine in the Strait of Hormuz and exploded.</li><li>It says the ship carried more than two million barrels of crude on a route Iran had not approved.</li><li>Al Jazeera reports several tankers hit since Friday, and the Guard now warns the strait is closed.</li><li>The U.K.'s maritime trade agency says a grenade fired from a small boat hit one tanker.</li></ul></div>
           <div><h3>Not yet known</h3><ul><li>The ship's name and flag.</li><li>Whether anyone was hurt.</li><li>Confirmation from other outlets.</li></ul></div>
         </div>
         <div class="actions">
@@ -582,10 +606,10 @@ header.site { border-bottom: 0; }
       </div>
       <div class="bk-side">
         <div class="bart" data-art="tanker" data-alt="Tanker at sea" data-photo="https://vid.alarabiya.net/images/2026/10/17/41b26f54-9a9e-45ca-8716-508cb77c7744/41b26f54-9a9e-45ca-8716-508cb77c7744_16x9_600x338.JPG" data-credit="Al Arabiya"></div>
-        <div class="tracker" aria-label="Confirmation tracker: 1 of 6 outlets">
-          <div class="tt">Confirmation tracker <span>1 of 6</span></div>
-          <div class="segs" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
-          <p>Reporting so far: Al Arabiya. A full Palindrome summary runs once six independent outlets confirm.</p>
+        <div class="tracker" aria-label="Confirmation tracker: 2 of 6 outlets">
+          <div class="tt">Confirmation tracker <span>2 of 6</span></div>
+          <div class="segs" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i></div>
+          <p>Reporting so far: Al Arabiya, <a href="https://www.aljazeera.com/news/liveblog/2026/10/17/draft-2" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline">Al Jazeera &#8599;</a>. A full Palindrome summary runs once six independent outlets confirm.</p>
         </div>
       </div>
     </section>
@@ -609,6 +633,14 @@ header.site { border-bottom: 0; }
   <section aria-labelledby="day-h">
     <div class="band-head"><h2 id="day-h">The day so far</h2><p>The bar beside each story counts its outlets. Six fills it, and only then does Palindrome write a summary.</p></div>
     <div class="fronts" id="fronts"></div>
+  </section>
+
+  <section id="sec-us" class="ruled" aria-labelledby="us-h" style="scroll-margin-top: 64px">
+    <div class="band-head"><h2 id="us-h">United States</h2><p class="us-count" id="usCount">The top American stories, with the same six-source meter.</p></div>
+    <div class="us">
+      <div id="usLead"></div>
+      <div class="us-list" id="usList"></div>
+    </div>
   </section>
 
   <section id="mostread" class="ruled" aria-labelledby="mr-h">
@@ -817,7 +849,7 @@ header.site { border-bottom: 0; }
   const extra = [
     ['ballot', 'Canada', 'B.C. votes for mayors and councils today', '', 'CTV News, CBC News', 'https://www.ctvnews.ca/vancouver/article/how-to-watch-live-results-of-bcs-municipal-elections-on-saturday/', '', '3:30 p.m.'],
     ['globe', 'World', 'Trump revives “51st state” talk weeks before the U.S. midterms', '', 'Global News', 'https://globalnews.ca/news/12103949/donald-trump-51st-state-midterms/', '', ''],
-    ['chart', 'World', 'Trump signs, then waives, steep new Russia sanctions', '', 'Euronews', 'https://www.euronews.com/video/2026/10/17/latest-news-bulletin-october-17th-2026-midday', '', '']
+    ['chart', 'World', 'Trump signs, then waives, steep new Russia sanctions', '', 'Euronews, Al Jazeera', 'https://www.euronews.com/video/2026/10/17/latest-news-bulletin-october-17th-2026-midday', '', '']
   ];
   const desk = { 'Business & Economy': 'business', World: 'world', Politics: 'politics', Canada: 'canada' };
   // Which desk each story belongs on (the Alberta research story is political coverage)
@@ -877,6 +909,7 @@ header.site { border-bottom: 0; }
 
   // Latest: what Palindrome updated, newest first. Feeds the ticker and the Latest column.
   const latest = [
+    ['5:25 p.m.', 'Breaking', 'Iran’s Guard warns the Strait of Hormuz is “closed” as more tankers are reported hit', 'Al Jazeera', 'https://www.aljazeera.com/news/liveblog/2026/10/17/draft-2'],
     ['4:45 p.m.', 'Breaking', 'Oil tanker explodes after hitting a mine in the Strait of Hormuz, Iran’s Revolutionary Guard says', 'Al Arabiya', 'https://english.alarabiya.net/News/middle-east/2026/10/17/tanker-explodes-after-hitting-mine-in-strait-of-hormuz-iran-s-irgc'],
     ['4:30 p.m.', 'Business', 'Stellantis workers vote on a strike mandate', 'Global News', 'https://globalnews.ca/news/12106389/stellantis-begin-voting-strike-mandate/'],
     ['4:00 p.m.', 'Canada', 'Groundwork laid online to dispute Alberta’s result, report says', 'Global News', 'https://globalnews.ca/news/12105632/alberta-referendum-results-mcgill-online-research'],
@@ -976,6 +1009,28 @@ header.site { border-bottom: 0; }
     ['ballot', 'On YouTube', 'Alberta Premier Danielle Smith casts vote to stay in Canada', 'Oct 14 · YouTube', 'https://www.youtube.com/watch?v=1leLGQcaypU'],
     ['city', 'CBC News', 'After the Vote: B.C. Municipal Election 2026', 'Tonight · CBC News video', 'https://www.cbc.ca/player/play/video/9.7384304']
   ].map(([pic, s, t, w, h]) => row(pic, null, play.replace('width="18" height="18"', 'width="14" height="14"'), s, t, w, 'Watch', h)).join('');
+
+  // United States desk (real stories, Oct 16–17, 2026)
+  const us = [
+    { pic: 'city', topic: 'Oregon', h: 'Parent and teacher stopped a gunman at a Bend, Oregon, elementary school', s: 'Three children and a 25-year-old teacher were killed at Silver Rail Elementary. Police say the 16-year-old attacker was a former student; a teacher tackled him and a parent shot him dead minutes after the first 911 call. Two people are in critical condition.', src: 'Al Jazeera, Fox News, FOX 13 Seattle, Common Dreams', link: 'https://www.aljazeera.com/news/2026/10/17/oregon-school-shooter-was-former-special-needs-student-police-say', img: 'https://www.aljazeera.com/wp-content/uploads/2026/10/image-1792181302.jpg?resize=730%2C410&quality=80', time: 'Oct 17' },
+    { pic: 'podium', topic: 'Midterms', h: 'Trump rallies in northern Kentucky as Republicans defend their turf', s: '', src: 'WCPO, FOX19, Spectrum News', link: 'https://www.wcpo.com/news/northern-kentucky/president-trump-to-rally-kentucky-voters-in-highland-heights-as-midterms-loom', img: '', time: '2:00 p.m.' },
+    { pic: 'forest', topic: 'California', h: 'Wind-driven Norte Fire burns homes in Orange County; 16,000 told to leave', s: '', src: 'Al Jazeera', link: 'https://www.aljazeera.com/news/2026/10/17/southern-california-wildfire-engulfs-homes-prompts-evacuation-orders', img: 'https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ad2d683dbb6-1792202371.jpg?resize=770%2C513&quality=80', time: 'Oct 17' },
+    { pic: 'parliament', topic: 'White House', h: 'New press secretary out after five days on the job', s: '', src: 'Al Jazeera', link: 'https://www.aljazeera.com/news/2026/10/16/white-house-press-secretary-katie-zacharia-fired-after-five-days-on-the-job', img: 'https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ad270d1-1792176337.jpg?resize=770%2C513&quality=80', time: 'Oct 16' },
+    { pic: 'wave', topic: 'Border', h: 'U.S. Coast Guard rescues 16 after a boat sinks off Baja California; 11 missing', s: '', src: 'Al Jazeera', link: 'https://www.aljazeera.com/news/2026/10/17/us-coastguard-rescues-16-after-boat-sinks-off-mexicos-baja-coast', img: 'https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6ad2bbbfc8926-1792195519.jpg?resize=770%2C513&quality=80', time: 'Oct 17' }
+  ];
+  const usMeta = (x) => '<div class="fm">' + meter(x.src.split(',').length) + '<span class="ts">' + esc(x.time) + '</span></div><div class="fm">' + esc(x.src) + '</div>';
+  const L = us[0];
+  $('usLead').innerHTML = '<article class="us-lead"><a class="fimg" href="' + esc(L.link) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + photo(L.img, L.pic, 'Memorial in Bend, Oregon', 'Al Jazeera') + '</a>' +
+    '<span class="eyebrow">' + esc(L.topic) + '</span><h3><a href="' + esc(L.link) + '" target="_blank" rel="noopener">' + esc(L.h) + '</a></h3><p>' + esc(L.s) + '</p>' + usMeta(L) + '</article>';
+  $('usList').innerHTML = us.slice(1).map((x) => '<article class="fs"><a class="thumbs" href="' + esc(x.link) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + photo(x.img, x.pic, x.h, x.src.split(',')[0]) + '</a>' +
+    '<span class="eyebrow">' + esc(x.topic) + '</span><h4><a href="' + esc(x.link) + '" target="_blank" rel="noopener">' + esc(x.h) + '</a></h4>' + usMeta(x) + '</article>').join('');
+  // Countdown to the U.S. midterms, Nov. 3, 2026
+  try {
+    const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/Toronto' }));
+    const days = Math.round((new Date(2026, 10, 3) - new Date(now.getFullYear(), now.getMonth(), now.getDate())) / 86400000);
+    if (days > 0) $('usCount').innerHTML = 'U.S. midterms in <b>' + days + '</b> ' + (days === 1 ? 'day' : 'days') + ' · Nov. 3';
+  } catch (e) {}
+  wirePhotos();
 
   // Compact bar once the nameplate scrolls off
   const stick = $('stick');
