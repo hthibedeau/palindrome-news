@@ -1,0 +1,938 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Palindrome Editor's Desk</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root { color-scheme: light;
+    --bg: #F8F6FC; --card: #FFFFFF; --ink: #1F1638; --deep: #2B1B54; --accent: #6A3FC8; --wine: #7A1F3D;
+    --muted: #5F5878; --body: #433A5E; --line: #E4DFF0; --soft: #EFEBF8; --chip: #D5CCEA; --good: #2B1B54;
+    --serif: 'Newsreader', Georgia, serif; --sans: 'Public Sans', system-ui, -apple-system, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.5; }
+  a { color: var(--accent); }
+  button, input, select, textarea { font: inherit; }
+  :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  [hidden] { display: none !important; }
+
+  header.bar { position: sticky; top: 0; z-index: 5; background: var(--deep); color: #FFF; padding: 10px max(16px, env(safe-area-inset-left)) 0; }
+  header .row { display: flex; align-items: center; justify-content: space-between; gap: 12px; max-width: 1000px; margin: 0 auto; }
+  header .name { font-family: var(--serif); font-size: 22px; font-weight: 600; }
+  header .name em { color: #CBBFE8; font-weight: 500; }
+  header .site { color: #D9D0EE; font-size: 14px; text-decoration: none; }
+  nav.tabs { display: flex; gap: 2px; overflow-x: auto; max-width: 1000px; margin: 8px auto 0; scrollbar-width: none; }
+  nav.tabs::-webkit-scrollbar { display: none; }
+  nav.tabs button { flex: 0 0 auto; border: 0; background: transparent; color: #D9D0EE; padding: 10px 14px; min-height: 44px; border-bottom: 3px solid transparent; cursor: pointer; font-weight: 500; }
+  nav.tabs button[aria-selected="true"] { color: #FFF; border-bottom-color: #CBBFE8; font-weight: 600; }
+  nav.tabs .count { display: inline-block; min-width: 20px; padding: 0 6px; margin-left: 4px; border-radius: 999px; background: var(--wine); color: #FFF; font-size: 12px; }
+
+  main { max-width: 1000px; margin: 0 auto; padding: 20px max(16px, env(safe-area-inset-left)) 80px; }
+  h1 { font-family: var(--serif); font-weight: 500; font-size: 30px; margin: 4px 0 6px; }
+  h2 { font-family: var(--serif); font-weight: 500; font-size: 23px; margin: 30px 0 8px; }
+  h3 { margin: 0 0 6px; font-size: 17px; }
+  p.lead { margin: 0 0 18px; color: var(--muted); }
+  .muted { color: var(--muted); font-size: 14px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 18px; margin-bottom: 14px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 210px), 1fr)); gap: 12px; }
+  .stat { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; cursor: pointer; text-align: left; }
+  .stat b { display: block; font-family: var(--serif); font-size: 34px; line-height: 1.1; color: var(--deep); }
+  .stat span { color: var(--body); font-size: 14px; }
+  .stat.attn { border-color: var(--wine); }
+  .stat.attn b { color: var(--wine); }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 44px; padding: 0 18px; border-radius: 8px; border: 0; background: var(--accent); color: #FFF; font-weight: 600; cursor: pointer; text-decoration: none; }
+  .btn.dark { background: var(--deep); }
+  .btn.ghost { background: var(--card); color: var(--deep); border: 1px solid var(--chip); font-weight: 500; }
+  .btn.danger { background: var(--card); color: var(--wine); border: 1px solid #E9BFCD; font-weight: 500; }
+  .btn.small { min-height: 38px; padding: 0 12px; font-size: 14px; }
+  .btn:disabled { opacity: .55; cursor: wait; }
+  .row-btns { display: flex; flex-wrap: wrap; gap: 8px; }
+
+  label.f { display: flex; flex-direction: column; gap: 6px; font-weight: 600; font-size: 15px; margin-bottom: 14px; }
+  label.f .hint { font-weight: 400; color: var(--muted); font-size: 14px; }
+  input[type=text], input[type=url], input[type=password], input[type=number], select, textarea { width: 100%; min-height: 46px; padding: 10px 12px; border: 1px solid var(--chip); border-radius: 8px; background: #FFF; color: var(--ink); font-weight: 400; }
+  textarea { min-height: 110px; resize: vertical; }
+  .check { display: flex; gap: 10px; align-items: flex-start; font-weight: 400; margin-bottom: 14px; }
+  .check input { width: 22px; height: 22px; margin-top: 2px; flex: 0 0 auto; }
+  details.more { margin: 4px 0 14px; }
+  details.more summary { cursor: pointer; color: var(--accent); font-weight: 600; min-height: 32px; }
+
+  .chips { display: flex; gap: 8px; overflow-x: auto; margin-bottom: 14px; scrollbar-width: none; }
+  .chips button { flex: 0 0 auto; min-height: 40px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--chip); background: var(--card); color: var(--ink); cursor: pointer; }
+  .chips button[aria-pressed="true"] { background: var(--deep); border-color: var(--deep); color: #FFF; font-weight: 600; }
+
+  .story { background: var(--card); border: 1px solid var(--line); border-left: 5px solid var(--chip); border-radius: 8px; padding: 16px 18px; margin-bottom: 14px; }
+  .story.live { border-left-color: var(--deep); }
+  .story.ready { border-left-color: var(--accent); }
+  .story.back { border-left-color: var(--wine); }
+  .badge { display: inline-block; font-size: 13px; font-weight: 600; padding: 3px 10px; border-radius: 999px; background: var(--soft); color: var(--deep); }
+  .story.live .badge { background: var(--deep); color: #FFF; }
+  .story.ready .badge { background: var(--accent); color: #FFF; }
+  .story.back .badge { background: #F6E1E8; color: var(--wine); }
+  .story h3 { font-family: var(--serif); font-weight: 500; font-size: 21px; line-height: 1.25; margin: 10px 0 6px; }
+  .story p { margin: 0 0 8px; color: var(--body); }
+  .story .why { font-size: 14px; color: var(--muted); margin-bottom: 8px; }
+  .story details { font-size: 14px; margin-top: 6px; }
+  .story details summary { cursor: pointer; color: var(--accent); font-weight: 600; min-height: 32px; }
+  .story ul { margin: 6px 0 4px; padding-left: 20px; }
+  .story li { margin-bottom: 6px; }
+  .tag { display: inline-block; font-size: 12px; padding: 1px 7px; border-radius: 4px; background: var(--soft); color: var(--body); margin-left: 4px; }
+  .tag.ok { background: #E7E1F6; color: var(--deep); }
+  .tag.no { background: #F6E1E8; color: var(--wine); }
+
+  .list { background: var(--card); border: 1px solid var(--line); border-radius: 8px; }
+  .item { display: flex; gap: 12px; align-items: center; justify-content: space-between; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+  .item:last-child { border-bottom: 0; }
+  .item .t { min-width: 0; }
+  .item .t b { display: block; font-weight: 600; }
+  .item .t span { display: block; color: var(--muted); font-size: 13px; overflow-wrap: anywhere; }
+  .switch { position: relative; width: 52px; height: 30px; flex: 0 0 auto; }
+  .switch input { opacity: 0; width: 100%; height: 100%; margin: 0; cursor: pointer; position: absolute; inset: 0; z-index: 1; }
+  .switch span { position: absolute; inset: 0; border-radius: 999px; background: var(--chip); transition: background .15s; }
+  .switch span::after { content: ""; position: absolute; top: 3px; left: 3px; width: 24px; height: 24px; border-radius: 50%; background: #FFF; transition: transform .15s; }
+  .switch input:checked + span { background: var(--accent); }
+  .switch input:checked + span::after { transform: translateX(22px); }
+
+  .notice { border-radius: 8px; padding: 12px 14px; margin-bottom: 14px; background: var(--soft); color: var(--deep); }
+  .notice.warn { background: #F6E1E8; color: var(--wine); }
+  .tbl { overflow-x: auto; background: var(--card); border: 1px solid var(--line); border-radius: 8px; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); background: var(--bg); }
+  td a { overflow-wrap: anywhere; }
+
+  dialog { border: 0; border-radius: 12px; padding: 0; width: min(520px, calc(100vw - 32px)); box-shadow: 0 12px 40px rgba(15, 11, 25, .3); }
+  dialog::backdrop { background: rgba(15, 11, 25, .45); }
+  dialog form { padding: 20px; }
+  dialog h3 { font-family: var(--serif); font-weight: 500; font-size: 22px; margin: 0 0 8px; }
+  .toast { position: fixed; left: 50%; bottom: calc(20px + env(safe-area-inset-bottom)); transform: translateX(-50%); background: var(--deep); color: #FFF; padding: 12px 18px; border-radius: 10px; max-width: calc(100vw - 32px); z-index: 20; box-shadow: 0 6px 20px rgba(15, 11, 25, .3); }
+  .toast.bad { background: var(--wine); }
+
+  #signin { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px 16px; }
+  #signin .card { width: min(420px, 100%); padding: 28px 24px; }
+  #signin .logo { font-family: var(--serif); font-size: 30px; font-weight: 600; color: var(--deep); margin-bottom: 4px; }
+  #signin .logo em { color: var(--accent); font-weight: 500; }
+  .faq details { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 12px 16px; margin-bottom: 10px; }
+  .faq summary { cursor: pointer; font-weight: 600; min-height: 32px; }
+  .faq p { color: var(--body); }
+</style>
+
+
+<!-- Sign in -->
+<div style="background:#7A1F3D;color:#fff;font-size:13px;padding:8px 16px;text-align:center">Preview of the Editor's Desk with sample stories from Oct 17. Try the buttons; nothing is saved. Any password works.</div>
+<section id="signin">
+  <form class="card" id="signinForm">
+    <div class="logo">Palindrome <em>Newsroom</em></div>
+    <p class="lead">Editor's Desk</p>
+    <label class="f">Editor password
+      <input type="password" id="pw" autocomplete="current-password" required>
+    </label>
+    <label class="check"><input type="checkbox" id="remember"> Keep me signed in on this device</label>
+    <button class="btn dark" type="submit" style="width: 100%">Sign in</button>
+    <p class="muted" id="signinMsg" role="status" style="margin-top: 12px"></p>
+  </form>
+</section>
+
+<div id="app" hidden>
+  <header class="bar">
+    <div class="row">
+      <div class="name">Palindrome <em>Desk</em></div>
+      <a class="site" href="/" target="_blank" rel="noopener">See the site &#8599;</a>
+    </div>
+    <nav class="tabs" role="tablist" aria-label="Editor's Desk">
+      <button role="tab" data-tab="today" aria-selected="true">Today</button>
+      <button role="tab" data-tab="stories">Stories<span class="count" id="storyCount" hidden></span></button>
+      <button role="tab" data-tab="add">Add to the site</button>
+      <button role="tab" data-tab="find">Find news</button>
+      <button role="tab" data-tab="sources">Sources</button>
+      <button role="tab" data-tab="settings">Settings</button>
+      <button role="tab" data-tab="help">Help</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- TODAY -->
+    <section data-panel="today">
+      <h1 id="hello">Good morning</h1>
+      <p class="lead">Here's where the newsroom stands. Tap a box to see those stories.</p>
+      <div id="readiness"></div>
+      <div class="grid" id="stats"></div>
+      <div class="row-btns" style="margin-top: 16px">
+        <button class="btn dark" id="runNow">Check the news now</button>
+        <button class="btn ghost" id="mostReadNow">Update Most read</button>
+      </div>
+      <h2>What happened last</h2>
+      <div id="lastRuns" class="card"><p class="muted">Loading…</p></div>
+      <div id="problems"></div>
+    </section>
+
+    <!-- STORIES -->
+    <section data-panel="stories" hidden>
+      <h1>Stories</h1>
+      <p class="lead">Every story the newsroom has found, in ranking order. Only stories that pass every check can go live.</p>
+      <div class="chips" role="group" aria-label="Show">
+        <button data-filter="all" aria-pressed="true">All</button>
+        <button data-filter="live" aria-pressed="false">Live</button>
+        <button data-filter="ready" aria-pressed="false">Ready to publish</button>
+        <button data-filter="sources" aria-pressed="false">Waiting for sources</button>
+        <button data-filter="back" aria-pressed="false">Sent back</button>
+        <button data-filter="hidden" aria-pressed="false">Hidden</button>
+      </div>
+      <div id="storyList"><p class="muted">Loading…</p></div>
+      <details class="more"><summary>History of editor changes</summary><div id="changeLog"></div></details>
+    </section>
+
+    <!-- ADD -->
+    <section data-panel="add" hidden>
+      <h1>Add to the site</h1>
+      <p class="lead">Recommend an article for Today's reading, or add a leader's post to On the record.</p>
+
+      <div class="card">
+        <h3>Recommend an article</h3>
+        <p class="muted">Paste the link. The photo, headline, writer and outlet are filled in for you.</p>
+        <form id="readForm">
+          <label class="f">Article link<input type="url" id="r-url" required placeholder="https://"></label>
+          <details class="more"><summary>Fix the writer or outlet (optional)</summary>
+            <label class="f">Writer<input type="text" id="r-author"></label>
+            <label class="f">Outlet <span class="hint">For example, The Canadian Press</span><input type="text" id="r-outlet"></label>
+            <label class="f">Read on <span class="hint">Only when a wire story is on a partner site, for example CJME</span><input type="text" id="r-via"></label>
+          </details>
+          <button class="btn" type="submit">Add the article</button>
+        </form>
+      </div>
+      <h2>On Today's reading now</h2>
+      <div class="list" id="readsList"><div class="item muted">Loading…</div></div>
+
+      <div class="card" style="margin-top: 28px">
+        <h3>Add a leader's post</h3>
+        <p class="muted">Only posts from approved, verified accounts can be added. You can change the approved list under Sources.</p>
+        <form id="postForm">
+          <label class="f">Post link <span class="hint">In the X or Instagram app, tap Share, then Copy link</span><input type="url" id="p-url" required placeholder="https://"></label>
+          <label class="f">Whose post is it?<select id="p-account"><option value="">Work it out from the link</option></select></label>
+          <label class="f">Your summary <span class="hint">One or two sentences, in your own words</span><textarea id="p-summary" required minlength="20" maxlength="400"></textarea></label>
+          <label class="f">What's in the post?<select id="p-media"><option value="">Work it out</option><option value="video">A video</option><option value="photo">A photo</option><option value="none">Just text</option></select></label>
+          <label class="check"><input type="checkbox" id="p-confirm"> I checked that this post is from the person's official account</label>
+          <button class="btn" type="submit">Add the post</button>
+        </form>
+      </div>
+      <h2>On the record now</h2>
+      <div class="list" id="postsList"><div class="item muted">Loading…</div></div>
+    </section>
+
+    <!-- FIND -->
+    <section data-panel="find" hidden>
+      <h1>Find news</h1>
+      <p class="lead">Ask for anything on public news pages, in your own words. Tap an example to try it.</p>
+      <div class="chips" id="examples">
+        <button type="button">Every headline on CBC Politics with writer and link</button>
+        <button type="button">Press releases from the Prime Minister's office this week, with date and link</button>
+        <button type="button">New reports from the C.D. Howe Institute with title, author and date</button>
+      </div>
+      <form id="findForm" class="card">
+        <label class="f">What are you looking for?<textarea id="f-req" required minlength="8" placeholder="For example: today's top stories on Global News about Alberta, with writer and link"></textarea></label>
+        <button class="btn" type="submit">Find it</button>
+      </form>
+      <div id="findOut"></div>
+    </section>
+
+    <!-- SOURCES -->
+    <section data-panel="sources" hidden>
+      <h1>Sources</h1>
+      <p class="lead">Where the newsroom looks. Changes apply right away.</p>
+
+      <h2>News sites we check</h2>
+      <p class="muted">The newsroom reads these for new stories. News sites are checked every 30 minutes, others every hour.</p>
+      <div class="row-btns" style="margin-bottom: 10px"><button class="btn ghost small" id="checkSites">Check the sites now</button></div>
+      <div class="list" id="sitesList"><div class="item muted">Loading…</div></div>
+      <details class="more"><summary>Add a news site</summary>
+        <form id="siteForm" class="card">
+          <label class="f">Name<input type="text" id="s-name" required placeholder="The Globe and Mail: Politics"></label>
+          <label class="f">Link to its news page<input type="url" id="s-url" required placeholder="https://"></label>
+          <label class="f">Type<select id="s-cat"><option value="news">News outlet</option><option value="gov">Government</option><option value="thinktank">Think tank</option><option value="other">Other</option></select></label>
+          <label class="f">How often to check<select id="s-every"><option value="30">Every 30 minutes</option><option value="60">Every hour</option><option value="180">Every 3 hours</option><option value="1440">Once a day</option></select></label>
+          <button class="btn" type="submit">Add the site</button>
+        </form>
+      </details>
+
+      <h2>Most read outlets</h2>
+      <p class="muted">The "most read" lists from these newsrooms make up Most read across Canada. Switch one off to leave it out.</p>
+      <div class="list" id="outletsList"><div class="item muted">Loading…</div></div>
+      <details class="more"><summary>Add an outlet</summary>
+        <form id="outletForm" class="card">
+          <label class="f">Name<input type="text" id="o-name" required></label>
+          <label class="f">Homepage link<input type="url" id="o-url" required placeholder="https://"></label>
+          <label class="f">Region<select id="o-region"><option>National</option><option>Ontario</option><option>Quebec</option><option>British Columbia</option><option>Alberta</option><option>Saskatchewan</option><option>Manitoba</option><option>Atlantic</option><option>North</option></select></label>
+          <button class="btn" type="submit">Add the outlet</button>
+        </form>
+      </details>
+
+      <h2>Leaders' verified accounts</h2>
+      <p class="muted">On the record only shows posts from these accounts. To add someone, you need their official government page, and it must link to the account. That's how Palindrome stays clear of fake accounts.</p>
+      <div class="list" id="accountsList"><div class="item muted">Loading…</div></div>
+      <details class="more"><summary>Add a leader</summary>
+        <form id="accountForm" class="card">
+          <label class="f">Name<input type="text" id="a-name" required placeholder="Chrystia Freeland"></label>
+          <label class="f">Role<input type="text" id="a-role" required placeholder="MP for University–Rosedale"></label>
+          <label class="f">Group<select id="a-cat"><option value="pm">Prime Minister</option><option value="mp" selected>MPs &amp; ministers</option><option value="premier">Premiers</option><option value="intl">International</option></select></label>
+          <label class="f">X handle <span class="hint">Without the @</span><input type="text" id="a-x" autocapitalize="off"></label>
+          <label class="f">Instagram handle <span class="hint">Without the @</span><input type="text" id="a-ig" autocapitalize="off"></label>
+          <label class="f">Official government page <span class="hint">For an MP, their page on ourcommons.ca. It must link to the accounts above.</span><input type="url" id="a-page" required placeholder="https://www.ourcommons.ca/members/…"></label>
+          <button class="btn" type="submit">Check and add</button>
+        </form>
+      </details>
+    </section>
+
+    <!-- SETTINGS -->
+    <section data-panel="settings" hidden>
+      <h1>Settings</h1>
+      <p class="lead">Changes save as soon as you flip a switch.</p>
+      <div class="list" id="switches"></div>
+      <h2>What's set up</h2>
+      <div class="card" id="setupState"></div>
+      <div class="row-btns"><button class="btn danger" id="signout">Sign out</button></div>
+    </section>
+
+    <!-- HELP -->
+    <section data-panel="help" hidden class="faq">
+      <h1>Help</h1>
+      <p class="lead">How Palindrome works, in plain words.</p>
+      <details open><summary>What happens every 30 minutes?</summary>
+        <p>Five AI editors work in turn, each following the brief you wrote:</p>
+        <ol>
+          <li><b>Discovery</b> reads the news sites and groups articles about the same event.</li>
+          <li><b>Verification</b> reads the articles and counts how many independent newsrooms confirm the story. A wire story carried by six outlets counts as one.</li>
+          <li><b>Managing editor</b> ranks the stories by how much they matter to Canadians, not by clicks.</li>
+          <li><b>Senior writer</b> writes a short summary from the confirmed facts only.</li>
+          <li><b>Standards editor</b> checks every fact, number and link. Only stories it approves can go live.</li>
+        </ol>
+        <p>Overnight (11 p.m. to 6 a.m.), this happens once an hour.</p></details>
+      <details><summary>Why is a story "waiting for sources"?</summary><p>Palindrome only publishes a full summary when at least six independent newsrooms have reported a story. Until then, the site shows just the headline and links, under Developing. It updates on its own as more outlets report.</p></details>
+      <details><summary>What does "sent back" mean?</summary><p>The standards editor found a problem, such as a fact no source supports, wording too close to an article, or a wrong link. The writer gets one try to fix it. If it's still not right, it waits here for you. The reasons are listed on the story.</p></details>
+      <details><summary>Can I change where a story appears?</summary><p>Yes. On any story, you can keep it at the top, move it to a spot, hide it, or change its topic or section. You'll be asked for a reason each time, and it's saved in the history.</p></details>
+      <details><summary>Do sponsors affect the ranking?</summary><p>No. Sponsors never enter the newsroom. The ranking only looks at the news.</p></details>
+      <details><summary>Why can't it read some sites?</summary><p>Some sites need a subscription, block automated readers, or ask not to be read. Palindrome respects that and never gets around it. Those sites are listed on the Today screen.</p></details>
+      <details><summary>Something looks wrong. What do I do?</summary><p>Hide the story right away from the Stories tab, and give a reason. Then check the sources listed on it. If the problem keeps happening, switch off "Publish approved stories automatically" in Settings, so nothing goes live until you tap Publish.</p></details>
+    </section>
+  </main>
+</div>
+
+<!-- One dialog for every question the desk asks -->
+<dialog id="ask">
+  <form method="dialog" id="askForm">
+    <h3 id="askTitle"></h3>
+    <p class="muted" id="askText"></p>
+    <div id="askExtra"></div>
+    <label class="f" id="askReasonWrap">Why? <span class="hint">Saved in the history</span><textarea id="askReason" style="min-height: 80px"></textarea></label>
+    <div class="row-btns" style="justify-content: flex-end">
+      <button class="btn ghost" value="cancel" type="submit" formnovalidate>Cancel</button>
+      <button class="btn dark" value="ok" type="submit" id="askOk">Save</button>
+    </div>
+  </form>
+</dialog>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script>
+// Preview only: answers the Desk's requests with sample data from Oct 17, 2026, so the
+// Desk can be tried without a server. Nothing here is saved; reload to start over.
+(() => {
+  const now = new Date('2026-10-17T15:30:00Z').toISOString();
+  const ago = (m) => new Date(Date.parse(now) - m * 60000).toISOString();
+  const factors = (a) => ({ importance: a[0], impact_on_canadians: a[1], urgency: a[2], scale: a[3], novelty: a[4], policy_relevance: a[5], original_reporting: a[6], corroboration: a[7], freshness: a[8] });
+  const src = (publisher, headline, url, read = true, extra = {}) => ({ publisher, headline, url, readInFull: read, relevant: true, eligible: true, factsSupported: [], ...extra });
+  const db = {
+    settings: { publishAutomatically: false, newsroomOn: true, watchListOn: true, mostReadOn: true },
+    clusters: [
+      {
+        id: 'c1', event: 'Albertans head into final weekend before separation vote', category: 'Politics', kind: 'ongoing', published: { at: ago(40), by: 'automatic' },
+        ranking: { lane: 'major_ongoing', score: 86, explanation: 'Monday’s vote could start a process to leave Canada; it affects the whole country’s future and is reported independently across the country.', factors: factors([10, 10, 8, 10, 6, 10, 8, 10, 8]) },
+        verification: { status: 'VERIFIED', independentOrigins: 7, disputed: [], unverified: ['Turnout in advance polls has not been officially confirmed'], sources: [
+          src('Canadian Press (on Yahoo News Canada)', 'Rallies planned in final weekend before Alberta separation referendum', 'https://ca.news.yahoo.com/rallies-planned-final-weekend-alberta-120015382.html', true, { wire: 'The Canadian Press', factsSupported: ['Rallies by both sides in Edmonton this weekend', 'Vote is on Monday'] }),
+          src('CBC News', 'Pro-independence rally outside Alberta’s legislature set for Saturday', 'https://www.cbc.ca/news/canada/edmonton/pro-independence-alberta-referendum-2026-9.7384296', true, { factsSupported: ['Separatist rally at the legislature Saturday'] }),
+          src('Global News', 'As Alberta referendum nears, seeds to dispute results planted online', 'https://globalnews.ca/news/12105632/alberta-referendum-results-mcgill-online-research', true, { factsSupported: ['Research finds online posts preparing to dispute the result'] }),
+          src('Hill Times', '‘Late to the party’ or ‘asleep at the switch’?', 'https://www.hilltimes.com/2026/10/16/late-to-the-party-or-asleep-at-the-switch-carney-poilievre-make-last-pitches-for-unity-in-alberta/522457/', false, { unreadReason: 'Needs a subscription' })
+        ] },
+        story: { headline: 'Alberta’s last weekend before the separation vote', summary: 'Albertans vote Monday on whether to stay in Canada or hold a second, binding referendum on leaving. Both sides are rallying in Edmonton this weekend. Prime Minister Mark Carney campaigned in the city on Friday, and Premier Danielle Smith says she voted to stay. A research report finds online posts already laying groundwork to dispute the result. The outcome could shape national unity debates and federal-provincial relations for years.', category: 'Politics', uncertainty: 'Advance-poll turnout has not been officially confirmed.' },
+        audit: { status: 'APPROVED', problems: [] },
+        history: [{ at: ago(60), event: 'Standards: APPROVED' }, { at: ago(40), event: 'Published automatically' }]
+      },
+      {
+        id: 'c2', event: 'Ottawa warns Stelco owner over layoffs', category: 'Business', kind: 'update',
+        ranking: { lane: 'developing', score: 74, explanation: 'Up to 500 jobs and a rare federal threat of a forced sale make this a material development for Canadian industry policy.', factors: factors([8, 8, 7, 6, 7, 9, 7, 10, 7]) },
+        verification: { status: 'VERIFIED', independentOrigins: 6, disputed: [{ fact: 'Number of layoffs', detail: 'Some outlets say "up to 500," others report a lower number confirmed so far' }], unverified: [], sources: [
+          src('Global News', 'Stelco penalties including fines, forced sale possible over layoffs: Joly', 'https://globalnews.ca/news/12101944/stelco-federal-government-legal-action/', true, { factsSupported: ['Joly says fines or a forced sale are possible'] }),
+          src('CTV News', '‘Everything is on the table’: Canada weighs legal action over possible Stelco layoffs', 'https://www.ctvnews.ca/business/article/everything-is-on-the-table-canada-weighs-legal-action-over-possible-stelco-layoffs/', true, { factsSupported: ['Ottawa weighing legal action'] }),
+          src('BNN Bloomberg', 'Everything is on the table: Canada weighs legal action', 'https://www.bnnbloomberg.ca/tariffs/2026/10/14/everything-is-on-the-table-canada-weighs-legal-action-over-possible-stelco-layoffs/', true, { wire: 'The Canadian Press' })
+        ] },
+        story: { headline: 'Ottawa threatens Stelco’s U.S. owner with fines or a forced sale', summary: 'The federal government says Cleveland-Cliffs could face fines or be forced to sell its Canadian steel assets if Stelco goes ahead with layoffs that break job promises made when it bought the company. Industry Minister Mélanie Joly says everything is on the table. Reports put the possible job losses at up to 500 in Hamilton and Nanticoke. The case tests how far Ottawa will go to enforce investment commitments.', category: 'Business', uncertainty: 'Reports differ on how many layoffs are confirmed.' },
+        audit: { status: 'APPROVED', problems: [] },
+        history: [{ at: ago(25), event: 'Standards: APPROVED' }]
+      },
+      {
+        id: 'c3', event: 'Oil tanker explodes after hitting mine in Strait of Hormuz', category: 'World', kind: 'breaking',
+        ranking: { lane: 'breaking', score: 71, explanation: 'A major shipping route for world oil; could move fuel prices in Canada. Still confirmed by only a few independent newsrooms.', factors: factors([9, 7, 9, 8, 9, 6, 5, 5, 10]) },
+        verification: { status: 'DEVELOPING — INSUFFICIENT INDEPENDENT SOURCES', independentOrigins: 3, disputed: [], unverified: ['Name and flag of the ship', 'Any injuries'], sources: [
+          src('Al Arabiya', 'Tanker explodes after hitting mine in Strait of Hormuz: Iran’s IRGC', 'https://english.alarabiya.net/News/middle-east/2026/10/17/tanker-explodes-after-hitting-mine-in-strait-of-hormuz-iran-s-irgc', true, { factsSupported: ['Iran’s Revolutionary Guard says a tanker hit a mine'] }),
+          src('The New Arab', 'IRGC say oil tankers on fire after hitting mines in Strait', 'https://newarab.com/news/irgc-say-tanker-exploded-after-hitting-mine-hormuz-strait'),
+          src('TRT World', 'Iran says oil tanker catches fire after hitting mine', 'https://www.trtworld.com/article/7a757f49385e')
+        ] },
+        history: [{ at: ago(15), event: 'Verification: 3 of 6 independent origins' }]
+      },
+      {
+        id: 'c4', event: 'Stellantis workers begin strike vote', category: 'Business', kind: 'new_development',
+        ranking: { lane: 'developing', score: 58, explanation: 'A strike would hit auto production in Ontario, but the vote is an early step.', factors: factors([6, 7, 5, 6, 7, 6, 6, 10, 7]) },
+        verification: { status: 'VERIFIED', independentOrigins: 6, disputed: [], unverified: [], sources: [src('Global News', 'Stellantis workers begin voting on strike mandate as talks remain stalled', 'https://globalnews.ca/news/12106389/stellantis-begin-voting-strike-mandate/')] },
+        story: { headline: 'Stellantis strike looms', summary: 'Workers are voting on a strike mandate.', category: 'Business' },
+        audit: { status: 'NEEDS REVISION', problems: [
+          { issue: 'Summary is 7 words; the standard is about 60 to 100.', evidence: 'Word count by code.' },
+          { issue: 'The headline says a strike "looms," which overstates an early vote.', evidence: 'Source 1 says only that voting has begun.' }
+        ] },
+        history: [{ at: ago(20), event: 'Standards: NEEDS REVISION' }]
+      }
+    ],
+    overrides: [],
+    reads: [
+      { id: 'r1', headline: 'How Canada’s fractured immigration consensus is starting to show up at ballot boxes', author: 'David Baxter', outlet: 'Canadian Press', image: 'x' },
+      { id: 'r2', headline: 'Meet Canada’s first ever Parliamentary Visual Artist Laureate', author: 'Rachel Aiello', outlet: 'CTV News', image: 'x' }
+    ],
+    posts: [{ id: 'p1', summary: 'A Thanksgiving video to Albertans a week before the separation vote.', account: { name: 'Mark Carney' } }],
+    accounts: [
+      { id: 'mark-carney', name: 'Mark Carney', role: 'Prime Minister of Canada', category: 'pm', groupName: 'Prime Minister', handles: { x: 'MarkJCarney', instagram: 'markjcarney' }, confirmedAgainst: 'https://www.pm.gc.ca/en' },
+      { id: 'volodymyr-zelenskyy', name: 'Volodymyr Zelenskyy', role: 'President of Ukraine', category: 'intl', groupName: 'International', handles: { x: 'ZelenskyyUa', instagram: 'zelenskyy_official' }, confirmedAgainst: 'https://www.president.gov.ua/en' },
+      { id: 'danielle-smith', name: 'Danielle Smith', role: 'Premier of Alberta', category: 'premier', groupName: 'Premiers', handles: { x: 'ABDanielleSmith' }, confirmedAgainst: 'https://www.alberta.ca/premier' }
+    ],
+    outlets: [{ name: 'CBC News', region: 'National' }, { name: 'CTV News', region: 'National' }, { name: 'Global News', region: 'National' }, { name: 'The Tyee', region: 'British Columbia' }, { name: 'APTN News', region: 'National' }, { name: 'Times Colonist', region: 'British Columbia', enabled: false }],
+    watches: [
+      { id: 'w1', name: 'CBC News: Politics', everyMinutes: 30, lastRun: ago(12), lastCount: 4 },
+      { id: 'w2', name: 'Global News: Politics', everyMinutes: 30, lastRun: ago(12), lastCount: 3 },
+      { id: 'w3', name: 'Montreal Gazette', everyMinutes: 30, lastRun: ago(12), lastError: 'montrealgazette.com asks automated tools not to read / . Palindrome follows that.' },
+      { id: 'w4', name: 'C.D. Howe Institute: Research', everyMinutes: 60, lastRun: ago(40), lastCount: 1 }
+    ]
+  };
+  const counts = () => {
+    const c = db.clusters;
+    return {
+      live: c.filter((x) => x.published).length,
+      waitingForYou: c.filter((x) => !x.published && x.audit?.status === 'APPROVED').length,
+      waitingForSources: c.filter((x) => !x.published && x.verification && x.verification.status !== 'VERIFIED').length,
+      sentBack: c.filter((x) => !x.published && x.audit?.status === 'NEEDS REVISION').length,
+      heldBack: 0, hidden: c.filter((x) => x.human?.suppressed).length
+    };
+  };
+  const reply = (data, status = 200) => Promise.resolve(new Response(status === 204 ? null : JSON.stringify(data), { status, headers: { 'content-type': 'application/json' } }));
+  const realFetch = window.fetch.bind(window);
+  window.fetch = async (url, opts = {}) => {
+    const u = new URL(url, location.href);
+    if (!u.pathname.startsWith('/api/')) return realFetch(url, opts);
+    const body = opts.body ? JSON.parse(opts.body) : {};
+    const p = u.pathname;
+    await new Promise((r) => setTimeout(r, 250));
+    if (p === '/api/desk/check') return reply({ ok: true });
+    if (p === '/api/desk/status') return reply({ settings: db.settings, ready: { ai: true, screenshots: true }, stories: counts(), lastRuns: {
+      newsroom: { at: ago(12), log: ['Discovery: 214 feed items, 19 story clusters.', 'Verification: "Oil tanker explodes after hitting mine in Strait of Hormuz": 3 independent origins → DEVELOPING — INSUFFICIENT INDEPENDENT SOURCES.', 'Managing editor: ranked 19 clusters.', 'Standards: "Ottawa threatens Stelco’s U.S. owner with fines or a forced sale" → APPROVED.', 'Standards: "Stellantis strike looms" → NEEDS REVISION.'] },
+      mostRead: { at: ago(30), report: [{ source: 'Global News', found: 5 }, { source: 'The Tyee', found: 3 }, { source: 'APTN News', found: 10 }, { source: 'CBC News', found: 0, error: 'No most-read list found on CBC News.' }] },
+      watches: { at: ago(12) } }, siteProblems: db.watches.filter((w) => w.lastError).map((w) => ({ name: w.name, problem: w.lastError })), outletProblems: [{ name: 'CBC News', problem: 'No most-read list found on the page this time.' }] });
+    if (p === '/api/desk/settings') { Object.assign(db.settings, body); return reply({ settings: db.settings }); }
+    if (p === '/api/newsroom/review') return reply({ clusters: db.clusters });
+    if (p === '/api/newsroom/overrides') return reply({ overrides: db.overrides });
+    if (p === '/api/newsroom/override') {
+      const c = db.clusters.find((x) => x.id === body.clusterId);
+      if (body.action === 'approve' && c.audit?.status !== 'APPROVED') return reply({ error: 'Only APPROVED stories can be published.' }, 409);
+      c.human ||= {};
+      ({ approve: () => { c.published = { at: now }; }, unpublish: () => { delete c.published; }, pin: () => { c.human.pinned = Number(body.value) || 1; }, unpin: () => { delete c.human.pinned; },
+        suppress: () => { c.human.suppressed = true; }, unsuppress: () => { delete c.human.suppressed; }, category: () => { c.category = body.value; }, lane: () => { c.human.lane = body.value; } })[body.action]();
+      const rec = { ...body, at: new Date().toISOString(), editor: 'Editor' };
+      db.overrides.unshift(rec);
+      c.history.push({ at: rec.at, event: 'Editor: ' + body.action + (body.value ? ' ' + body.value : '') + ' (' + body.reason + ')' });
+      return reply({ override: rec });
+    }
+    if (p === '/api/newsroom/run' || p === '/api/gather/run' || p === '/api/mostread/run') return reply({ log: ['In this preview, nothing is checked. On the live site this runs all five editors.'], results: [], report: [] });
+    if (p === '/api/reads' && opts.method !== 'POST') return reply({ reads: db.reads });
+    if (p === '/api/reads') { const r = { id: 'r' + Date.now(), headline: 'Your recommended article (preview)', outlet: new URL(body.url).hostname, image: 'x' }; db.reads.unshift(r); return reply({ read: r }, 201); }
+    if (p.startsWith('/api/reads/')) { db.reads = db.reads.filter((r) => r.id !== p.split('/').pop()); return reply(null, 204); }
+    if (p === '/api/posts' && opts.method !== 'POST') return reply({ posts: db.posts });
+    if (p === '/api/posts') return reply({ error: 'In this preview, posts can’t be checked against X or Instagram. On the live site this adds the post.' }, 400);
+    if (p.startsWith('/api/posts/')) { db.posts = db.posts.filter((r) => r.id !== p.split('/').pop()); return reply(null, 204); }
+    if (p === '/api/desk/accounts' && opts.method !== 'POST') return reply({ accounts: db.accounts });
+    if (p === '/api/desk/accounts') return reply({ error: 'In this preview, official pages can’t be opened. On the live site the Desk checks the page links to the account, then adds the person.' }, 422);
+    if (p === '/api/desk/accounts/remove') { db.accounts = db.accounts.filter((a) => a.id !== body.id); return reply({ ok: true }); }
+    if (p === '/api/desk/outlets' && opts.method !== 'POST') return reply({ outlets: db.outlets });
+    if (p === '/api/desk/outlets') { db.outlets.push({ name: body.name, region: body.region }); return reply({ outlet: body }, 201); }
+    if (p === '/api/desk/outlets/switch') { const o = db.outlets.find((x) => x.name === body.name); if (body.enabled) delete o.enabled; else o.enabled = false; return reply({ outlet: o }); }
+    if (p === '/api/desk/outlets/remove') { db.outlets = db.outlets.filter((x) => x.name !== body.name); return reply({ ok: true }); }
+    if (p === '/api/gather/watches' && opts.method !== 'POST') return reply({ watches: db.watches });
+    if (p === '/api/gather/watches') { db.watches.push({ id: 'w' + Date.now(), name: body.name, everyMinutes: body.everyMinutes }); return reply({}, 201); }
+    if (p === '/api/desk/watches/remove') { db.watches = db.watches.filter((w) => w.id !== body.id); return reply({ ok: true }); }
+    if (p === '/api/gather/ask') return reply({ title: 'Preview', fields: ['headline', 'outlet', 'link'], items: [
+      { headline: 'Stelco penalties including fines, forced sale possible over layoffs: Joly', outlet: 'Global News', link: 'https://globalnews.ca/news/12101944/stelco-federal-government-legal-action/' },
+      { headline: 'Stellantis workers begin voting on strike mandate as talks remain stalled', outlet: 'Global News', link: 'https://globalnews.ca/news/12106389/stellantis-begin-voting-strike-mandate/' }
+    ], pages: [{ url: 'https://globalnews.ca/politics/', ok: true }], notes: 'In this preview, these are sample results. On the live site, Claude reads the pages and builds the table from your request.' });
+    return reply({ error: 'Not available in the preview.' }, 404);
+  };
+  try { sessionStorage.setItem('pal-desk', 'preview'); } catch (e) {}
+})();
+
+</script>
+<script>
+(() => {
+  const API = window.PALINDROME_API || '';
+  const $ = (id) => document.getElementById(id);
+  const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const when = (iso) => iso ? new Date(iso).toLocaleString('en-CA', { weekday: 'short', hour: 'numeric', minute: '2-digit' }) : 'not yet';
+  let password = '';
+  try { password = localStorage.getItem('pal-desk') || sessionStorage.getItem('pal-desk') || ''; } catch (e) {}
+
+  // ---------- Talking to the server ----------
+  async function api(path, body) {
+    const r = await fetch(API + path, {
+      method: body === undefined ? 'GET' : 'POST',
+      headers: { 'content-type': 'application/json', authorization: 'Bearer ' + password },
+      body: body === undefined ? undefined : JSON.stringify(body)
+    });
+    if (r.status === 401) { signOut('Your password didn’t work. Please sign in again.'); throw new Error('Please sign in again.'); }
+    if (r.status === 204) return {};
+    const data = await r.json().catch(() => ({}));
+    if (!r.ok) throw new Error(data.error || 'Something went wrong. Try again in a minute.');
+    return data;
+  }
+  function toast(msg, bad) {
+    const t = $('toast');
+    t.textContent = msg;
+    t.className = 'toast' + (bad ? ' bad' : '');
+    t.hidden = false;
+    clearTimeout(toast.timer);
+    toast.timer = setTimeout(() => { t.hidden = true; }, bad ? 7000 : 4000);
+  }
+  async function busy(btn, label, fn) {
+    const old = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = label;
+    try { return await fn(); } catch (err) { toast(err.message, true); } finally { btn.disabled = false; btn.textContent = old; }
+  }
+
+  // ---------- The question dialog ----------
+  function askUser({ title, text = '', extra = '', reason = true, ok = 'Save' }) {
+    return new Promise((resolve) => {
+      $('askTitle').textContent = title;
+      $('askText').textContent = text;
+      $('askExtra').innerHTML = extra;
+      $('askReasonWrap').hidden = !reason;
+      $('askReason').value = '';
+      $('askOk').textContent = ok;
+      const d = $('ask');
+      d.onclose = () => {
+        if (d.returnValue !== 'ok') return resolve(null);
+        const extraInput = $('askExtra').querySelector('input,select');
+        resolve({ reason: $('askReason').value.trim(), value: extraInput ? extraInput.value : null });
+      };
+      d.showModal();
+    });
+  }
+  $('askForm').addEventListener('submit', (e) => {
+    const which = e.submitter && e.submitter.value;
+    if (which === 'ok' && !$('askReasonWrap').hidden && $('askReason').value.trim().length < 3) {
+      e.preventDefault();
+      $('askReason').focus();
+      toast('Please add a short reason first.', true);
+    }
+  });
+
+  // ---------- Sign in ----------
+  async function signIn(pw, remember) {
+    password = pw;
+    await api('/api/desk/check');
+    try {
+      (remember ? localStorage : sessionStorage).setItem('pal-desk', pw);
+    } catch (e) {}
+    $('signin').hidden = true;
+    $('app').hidden = false;
+    show('today');
+  }
+  function signOut(msg) {
+    password = '';
+    try { localStorage.removeItem('pal-desk'); sessionStorage.removeItem('pal-desk'); } catch (e) {}
+    $('app').hidden = true;
+    $('signin').hidden = false;
+    $('signinMsg').textContent = msg || '';
+  }
+  $('signinForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    $('signinMsg').textContent = 'Signing in…';
+    try { await signIn($('pw').value, $('remember').checked); } catch (err) { $('signinMsg').textContent = err.message; }
+  });
+  $('signout').addEventListener('click', () => signOut('You’re signed out.'));
+
+  // ---------- Tabs ----------
+  const loaders = {};
+  function show(tab) {
+    document.querySelectorAll('[role=tab]').forEach((b) => b.setAttribute('aria-selected', String(b.dataset.tab === tab)));
+    document.querySelectorAll('[data-panel]').forEach((p) => { p.hidden = p.dataset.panel !== tab; });
+    window.scrollTo(0, 0);
+    if (loaders[tab]) loaders[tab]();
+  }
+  document.querySelectorAll('[role=tab]').forEach((b) => b.addEventListener('click', () => show(b.dataset.tab)));
+
+  // ---------- Today ----------
+  let storyFilter = 'all';
+  loaders.today = async () => {
+    const h = new Date().getHours();
+    $('hello').textContent = h < 12 ? 'Good morning' : h < 18 ? 'Good afternoon' : 'Good evening';
+    try {
+      const s = await api('/api/desk/status');
+      const notes = [];
+      if (!s.ready.ai) notes.push('The AI editors are switched off, because the Anthropic key isn’t set up on the server. Until it is, no stories are written. Help explains why.');
+      if (!s.settings.newsroomOn) notes.push('The newsroom schedule is paused. Turn it back on in Settings.');
+      if (!s.settings.publishAutomatically && s.stories.waitingForYou) notes.push(s.stories.waitingForYou + ' approved ' + (s.stories.waitingForYou === 1 ? 'story is' : 'stories are') + ' waiting for you to publish.');
+      $('readiness').innerHTML = notes.map((n) => '<div class="notice warn">' + esc(n) + '</div>').join('');
+      const st = s.stories;
+      const boxes = [
+        ['live', st.live, 'live on the site'],
+        ['ready', st.waitingForYou, s.settings.publishAutomatically ? 'approved, going live' : 'ready for you to publish', !s.settings.publishAutomatically && st.waitingForYou],
+        ['sources', st.waitingForSources, 'waiting for more sources'],
+        ['back', st.sentBack + st.heldBack, 'sent back or held back', st.sentBack + st.heldBack > 0],
+        ['hidden', st.hidden, 'hidden by you']
+      ];
+      $('stats').innerHTML = boxes.map(([f, n, label, attn]) => '<button class="stat' + (attn ? ' attn' : '') + '" data-go="' + f + '"><b>' + n + '</b><span>' + esc(label) + '</span></button>').join('');
+      const c = $('storyCount');
+      const needs = (s.settings.publishAutomatically ? 0 : st.waitingForYou) + st.sentBack;
+      c.hidden = !needs;
+      c.textContent = needs;
+
+      const r = s.lastRuns || {};
+      $('lastRuns').innerHTML =
+        '<p><b>Newsroom:</b> ' + (r.newsroom ? 'last checked the news ' + esc(when(r.newsroom.at)) : 'hasn’t run yet') + '</p>' +
+        (r.newsroom?.log?.length ? '<details class="more"><summary>What it did</summary><ul>' + r.newsroom.log.map((l) => '<li>' + esc(l) + '</li>').join('') + '</ul></details>' : '') +
+        '<p><b>Most read:</b> ' + (r.mostRead ? 'updated ' + esc(when(r.mostRead.at)) + ', from ' + r.mostRead.report.filter((x) => x.found).length + ' of ' + r.mostRead.report.length + ' outlets' : 'not updated yet') + '</p>' +
+        '<p style="margin:0"><b>News sites:</b> ' + (r.watches ? 'last checked ' + esc(when(r.watches.at)) : 'not checked yet') + '</p>';
+      const probs = [...s.siteProblems, ...s.outletProblems];
+      $('problems').innerHTML = probs.length ? '<details class="more"><summary>' + probs.length + ' ' + (probs.length === 1 ? 'source' : 'sources') + ' couldn’t be read last time</summary><div class="list">' +
+        probs.map((p) => '<div class="item"><div class="t"><b>' + esc(p.name) + '</b><span>' + esc(p.problem) + '</span></div></div>').join('') + '</div><p class="muted">This is normal for sites with paywalls or that block automated readers. If a site you rely on is listed every time, its link may need updating under Sources.</p></details>' : '';
+    } catch (err) {
+      $('lastRuns').innerHTML = '<p>' + esc(err.message) + '</p>';
+    }
+  };
+  $('stats').addEventListener('click', (e) => {
+    const b = e.target.closest('[data-go]');
+    if (!b) return;
+    storyFilter = b.dataset.go;
+    show('stories');
+  });
+  $('runNow').addEventListener('click', (e) => busy(e.target, 'Checking the news… (a few minutes)', async () => {
+    await api('/api/gather/run', {});
+    const r = await api('/api/newsroom/run', {});
+    toast('Done. ' + (r.log[r.log.length - 1] || ''));
+    loaders.today();
+  }));
+  $('mostReadNow').addEventListener('click', (e) => busy(e.target, 'Reading the outlets…', async () => {
+    const r = await api('/api/mostread/run', {});
+    toast('Most read updated from ' + r.report.filter((x) => x.found).length + ' outlets.');
+    loaders.today();
+  }));
+
+  // ---------- Stories ----------
+  const TOPICS = ['Government & public affairs', 'Politics', 'Business', 'Economy', 'Energy', 'National security', 'Defence', 'Technology', 'Indigenous affairs', 'Climate', 'World', 'Health', 'Justice', 'Other'];
+  const SECTIONS = { breaking: 'Breaking news', developing: 'Developing', major_ongoing: 'Major ongoing story', analysis: 'Analysis', opinion: 'Opinion' };
+  const FACTORS = { importance: 'Public importance', impact_on_canadians: 'Impact on Canadians', urgency: 'Urgency', scale: 'Scale', novelty: 'What’s new', policy_relevance: 'Canadian policy and economy', original_reporting: 'Original reporting', corroboration: 'Independent confirmation', freshness: 'Freshness' };
+  let stories = [];
+
+  function plainStatus(c) {
+    if (c.human?.suppressed) return ['hidden', 'Hidden by you', 'It won’t appear on the site until you show it again.'];
+    if (c.published) return ['live', 'Live on the site', 'Passed every check.'];
+    if (c.audit?.status === 'APPROVED') return ['ready', 'Ready to publish', 'Passed every check. Tap Publish to put it on the site.'];
+    if (c.audit?.status === 'NEEDS REVISION') return ['back', 'Sent back to the writer', 'The standards editor found problems, listed below.'];
+    if (c.audit?.status === 'REJECTED') return ['back', 'Held back', 'It won’t be published. The reasons are listed below.'];
+    if (c.verification && c.verification.status !== 'VERIFIED') return ['sources', 'Waiting for more sources', 'Confirmed by ' + c.verification.independentOrigins + ' of the 6 independent newsrooms needed. The site shows the headline and links only.'];
+    if (c.verification) return ['sources', 'Confirmed, being written', 'Six or more independent newsrooms confirm it. The writer is next.'];
+    if (['analysis', 'opinion', 'recycled'].includes(c.kind)) return ['other', c.kind === 'opinion' ? 'Opinion' : c.kind === 'analysis' ? 'Analysis' : 'Repeated coverage', 'Not treated as a news story.'];
+    return ['sources', 'Found, not checked yet', 'It will be checked on the next run.'];
+  }
+  function storyHtml(c, i) {
+    const [kind, label, explain] = plainStatus(c);
+    const s = c.story && !c.story.withheld ? c.story : null;
+    const r = c.ranking;
+    const v = c.verification;
+    const cls = kind === 'live' ? 'live' : kind === 'ready' ? 'ready' : kind === 'back' ? 'back' : '';
+    let html = '<article class="story ' + cls + '" data-id="' + c.id + '">' +
+      '<span class="badge">' + esc(label) + '</span>' +
+      (r ? '<span class="tag">#' + (i + 1) + '</span>' : '') + '<span class="tag">' + esc(c.category) + '</span>' +
+      (c.human?.lane || r?.lane ? '<span class="tag">' + esc(SECTIONS[c.human?.lane || r.lane]) + '</span>' : '') +
+      (c.human?.pinned ? '<span class="tag ok">Kept at spot ' + c.human.pinned + '</span>' : '') +
+      '<h3>' + esc(s ? s.headline : c.event) + '</h3>' +
+      '<p class="why">' + esc(explain) + '</p>' +
+      (s ? '<p>' + esc(s.summary) + '</p>' + (s.uncertainty ? '<p class="muted">Not yet confirmed: ' + esc(s.uncertainty) + '</p>' : '') : '') +
+      (c.story?.withheld ? '<p class="muted">The writer didn’t write it: ' + esc(c.story.reason) + '</p>' : '');
+    if (c.audit?.problems?.length && kind !== 'live') {
+      html += '<details open><summary>What the standards editor found</summary><ul>' + c.audit.problems.map((p) => '<li>' + esc(p.issue) + '<br><span class="muted">' + esc(p.evidence) + '</span></li>').join('') + '</ul></details>';
+    }
+    if (r) {
+      html += '<details><summary>Why it’s ranked here</summary><p>' + esc(r.explanation) + '</p><p class="muted">Score ' + r.score + ' out of 100. ' +
+        Object.entries(r.factors).map(([k, n]) => esc(FACTORS[k] || k) + ' ' + n + '/10').join(' · ') + '</p></details>';
+    }
+    if (v) {
+      const counted = v.sources.filter((x) => x.relevant && x.eligible && x.readInFull);
+      html += '<details><summary>Sources (' + counted.length + ' read, ' + v.independentOrigins + ' independent)</summary><ul>' +
+        v.sources.map((x) => '<li><a href="' + esc(x.url) + '" target="_blank" rel="noopener">' + esc(x.publisher) + ': ' + esc(x.headline) + '</a>' +
+          (x.readInFull ? '<span class="tag ok">read</span>' : '<span class="tag no">couldn’t read</span>') +
+          (x.wire ? '<span class="tag">' + esc(x.wire) + ' wire</span>' : '') +
+          (!x.relevant ? '<span class="tag no">different story</span>' : '') +
+          (x.factsSupported?.length ? '<br><span class="muted">Confirms: ' + esc(x.factsSupported.join('; ')) + '</span>' : '') + '</li>').join('') + '</ul>' +
+        (v.disputed?.length ? '<p><b>Sources disagree on:</b> ' + esc(v.disputed.map((d) => d.fact + ' (' + d.detail + ')').join('; ')) + '</p>' : '') +
+        (v.unverified?.length ? '<p><b>Not yet confirmed:</b> ' + esc(v.unverified.join('; ')) + '</p>' : '') + '</details>';
+    }
+    if (c.history?.length) html += '<details><summary>History</summary><ul>' + c.history.slice(-8).reverse().map((h) => '<li><span class="muted">' + esc(when(h.at)) + '</span> ' + esc(h.event) + '</li>').join('') + '</ul></details>';
+    html += '<div class="row-btns" style="margin-top: 12px">' +
+      (kind === 'ready' ? '<button class="btn small" data-act="approve">Publish</button>' : '') +
+      (c.published ? '<button class="btn danger small" data-act="unpublish">Take off the site</button>' : '') +
+      (c.human?.pinned ? '<button class="btn ghost small" data-act="unpin">Stop keeping in place</button>' : '<button class="btn ghost small" data-act="pin">Keep at a spot…</button>') +
+      (c.human?.suppressed ? '<button class="btn ghost small" data-act="unsuppress">Show again</button>' : '<button class="btn danger small" data-act="suppress">Hide</button>') +
+      '<button class="btn ghost small" data-act="category">Change topic…</button>' +
+      '<button class="btn ghost small" data-act="lane">Change section…</button>' +
+      '</div></article>';
+    return html;
+  }
+  function filterMatch(c) {
+    const [kind] = plainStatus(c);
+    if (storyFilter === 'all') return !c.human?.suppressed;
+    return kind === storyFilter;
+  }
+  function renderStories() {
+    document.querySelectorAll('[data-filter]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.filter === storyFilter)));
+    const list = stories.filter(filterMatch);
+    $('storyList').innerHTML = list.length ? list.map((c) => storyHtml(c, stories.indexOf(c))).join('') : '<div class="card muted">No stories here right now.</div>';
+  }
+  loaders.stories = async () => {
+    try {
+      stories = (await api('/api/newsroom/review')).clusters;
+      renderStories();
+      const { overrides } = await api('/api/newsroom/overrides');
+      $('changeLog').innerHTML = overrides.length ? '<div class="list">' + overrides.slice(0, 50).map((o) => {
+        const c = stories.find((x) => x.id === o.clusterId);
+        return '<div class="item"><div class="t"><b>' + esc(actionWords(o)) + '</b><span>' + esc(c ? (c.story?.headline || c.event) : 'A story no longer on the list') + ' · ' + esc(when(o.at)) + ' · ' + esc(o.editor) + '</span><span>Reason: ' + esc(o.reason) + '</span></div></div>';
+      }).join('') + '</div>' : '<p class="muted">No changes yet.</p>';
+    } catch (err) {
+      $('storyList').innerHTML = '<div class="card">' + esc(err.message) + '</div>';
+    }
+  };
+  function actionWords(o) {
+    return { approve: 'Published', unpublish: 'Took off the site', pin: 'Kept at spot ' + o.value, unpin: 'Stopped keeping in place', suppress: 'Hid', unsuppress: 'Showed again', category: 'Changed topic to ' + o.value, lane: 'Changed section to ' + (SECTIONS[o.value] || o.value), position: 'Moved to spot ' + o.value }[o.action] || o.action;
+  }
+  document.querySelectorAll('[data-filter]').forEach((b) => b.addEventListener('click', () => { storyFilter = b.dataset.filter; renderStories(); }));
+  $('storyList').addEventListener('click', async (e) => {
+    const b = e.target.closest('[data-act]');
+    if (!b) return;
+    const card = b.closest('.story');
+    const c = stories.find((x) => x.id === card.dataset.id);
+    const act = b.dataset.act;
+    const name = c.story?.headline || c.event;
+    const questions = {
+      approve: { title: 'Publish this story?', text: name, ok: 'Publish' },
+      unpublish: { title: 'Take this story off the site?', text: name, ok: 'Take it off' },
+      pin: { title: 'Keep this story in place', text: 'It stays at this spot whatever the ranking says, until you let it go.', extra: '<label class="f">Spot on the page <span class="hint">1 is the top</span><input type="number" min="1" max="30" value="1"></label>', ok: 'Keep it there' },
+      unpin: { title: 'Let the ranking place this story again?', text: name, ok: 'Let it go' },
+      suppress: { title: 'Hide this story from the site?', text: name, ok: 'Hide it' },
+      unsuppress: { title: 'Show this story again?', text: name, ok: 'Show it' },
+      category: { title: 'Change topic', text: name, extra: '<label class="f">Topic<select>' + TOPICS.map((t) => '<option' + (t === c.category ? ' selected' : '') + '>' + esc(t) + '</option>').join('') + '</select></label>' },
+      lane: { title: 'Change section', text: name, extra: '<label class="f">Section<select>' + Object.entries(SECTIONS).map(([k, v]) => '<option value="' + k + '">' + esc(v) + '</option>').join('') + '</select></label>' }
+    };
+    const answer = await askUser(questions[act]);
+    if (!answer) return;
+    try {
+      await api('/api/newsroom/override', { clusterId: c.id, action: act, value: answer.value, reason: answer.reason, editor: 'Editor' });
+      toast('Saved.');
+      loaders.stories();
+    } catch (err) {
+      toast(err.message, true);
+    }
+  });
+
+  // ---------- Add to the site ----------
+  let accounts = [];
+  loaders.add = async () => {
+    try {
+      const [{ reads }, { posts }, acc] = await Promise.all([api('/api/reads?limit=30'), api('/api/posts?limit=30'), api('/api/desk/accounts')]);
+      accounts = acc.accounts;
+      $('p-account').innerHTML = '<option value="">Work it out from the link</option>' + accounts.map((a) => '<option value="' + esc(a.id) + '">' + esc(a.name) + ' (' + esc(a.role) + ')</option>').join('');
+      $('readsList').innerHTML = reads.length ? reads.map((r) => '<div class="item"><div class="t"><b>' + esc(r.headline) + '</b><span>' + esc([r.author, r.outlet].filter(Boolean).join(' · ')) + (r.image ? '' : ' · no photo found') + '</span></div><button class="btn danger small" data-remove-read="' + r.id + '">Remove</button></div>').join('') : '<div class="item muted">Nothing yet.</div>';
+      $('postsList').innerHTML = posts.length ? posts.map((p) => '<div class="item"><div class="t"><b>' + esc(p.account.name) + '</b><span>' + esc(p.summary) + '</span></div><button class="btn danger small" data-remove-post="' + p.id + '">Remove</button></div>').join('') : '<div class="item muted">Nothing yet.</div>';
+    } catch (err) {
+      toast(err.message, true);
+    }
+  };
+  $('readForm').addEventListener('submit', (e) => {
+    e.preventDefault();
+    busy(e.submitter, 'Reading the article…', async () => {
+      const body = { url: $('r-url').value.trim() };
+      ['author', 'outlet', 'via'].forEach((k) => { const v = $('r-' + k).value.trim(); if (v) body[k] = v; });
+      const { read } = await api('/api/reads', body);
+      toast('Added: ' + read.headline + (read.image ? '' : '. No photo was found for it.'));
+      $('readForm').reset();
+      loaders.add();
+    });
+  });
+  $('postForm').addEventListener('submit', (e) => {
+    e.preventDefault();
+    busy(e.submitter, 'Checking the post…', async () => {
+      const body = { url: $('p-url').value.trim(), summary: $('p-summary').value.trim(), editorConfirmed: $('p-confirm').checked };
+      if ($('p-account').value) body.accountId = $('p-account').value;
+      if ($('p-media').value) body.media = $('p-media').value;
+      const { post } = await api('/api/posts', body);
+      toast('Added ' + post.account.name + '’s post.');
+      $('postForm').reset();
+      loaders.add();
+    });
+  });
+  document.addEventListener('click', async (e) => {
+    const rr = e.target.closest('[data-remove-read]');
+    const rp = e.target.closest('[data-remove-post]');
+    if (!rr && !rp) return;
+    const ok = await askUser({ title: rr ? 'Remove this article from Today’s reading?' : 'Remove this post from On the record?', reason: false, ok: 'Remove' });
+    if (!ok) return;
+    try {
+      await fetch(API + (rr ? '/api/reads/' + rr.dataset.removeRead : '/api/posts/' + rp.dataset.removePost), { method: 'DELETE', headers: { authorization: 'Bearer ' + password } });
+      toast('Removed.');
+      loaders.add();
+    } catch (err) { toast(err.message, true); }
+  });
+
+  // ---------- Find news ----------
+  let found = null;
+  $('examples').addEventListener('click', (e) => {
+    const b = e.target.closest('button');
+    if (b) { $('f-req').value = b.textContent; $('f-req').focus(); }
+  });
+  $('findForm').addEventListener('submit', (e) => {
+    e.preventDefault();
+    $('findOut').innerHTML = '';
+    busy(e.submitter, 'Looking… (up to a minute)', async () => {
+      found = await api('/api/gather/ask', { request: $('f-req').value });
+      const link = found.fields.find((f) => /link|url/i.test(f));
+      const isLink = (v) => /^https?:\/\//.test(String(v || ''));
+      const failed = found.pages.filter((p) => !p.ok);
+      $('findOut').innerHTML = '<h2>' + esc(found.title) + ' <span class="muted">· ' + found.items.length + ' found</span></h2>' +
+        (found.items.length ? '<div class="row-btns" style="margin-bottom:10px"><button class="btn ghost small" id="dl">Download as a spreadsheet</button></div>' +
+          '<div class="tbl"><table><thead><tr>' + found.fields.map((f) => '<th>' + esc(f) + '</th>').join('') + (link ? '<th></th>' : '') + '</tr></thead><tbody>' +
+          found.items.map((it) => '<tr>' + found.fields.map((f) => '<td>' + (isLink(it[f]) ? '<a href="' + esc(it[f]) + '" target="_blank" rel="noopener">Open</a>' : esc(it[f])) + '</td>').join('') +
+            (link ? '<td>' + (isLink(it[link]) ? '<button class="btn small" data-recommend="' + esc(it[link]) + '">Add to Today’s reading</button>' : '') + '</td>' : '') + '</tr>').join('') + '</tbody></table></div>' : '') +
+        (found.notes ? '<p class="muted">' + esc(found.notes) + '</p>' : '') +
+        (failed.length ? '<p class="muted">Couldn’t read: ' + failed.map((p) => esc(p.url) + ' (' + esc(p.error) + ')').join('; ') + '</p>' : '');
+      const dl = $('dl');
+      if (dl) dl.addEventListener('click', () => {
+        const cell = (v) => { const s = v == null ? '' : String(v); return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; };
+        const csv = [found.fields.map(cell).join(','), ...found.items.map((it) => found.fields.map((f) => cell(it[f])).join(','))].join('\n');
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv' }));
+        a.download = 'palindrome-find.csv';
+        a.click();
+      });
+    });
+  });
+  $('findOut').addEventListener('click', (e) => {
+    const b = e.target.closest('[data-recommend]');
+    if (!b) return;
+    busy(b, 'Adding…', async () => {
+      await api('/api/reads', { url: b.dataset.recommend });
+      b.dataset.done = '1';
+      toast('Added to Today’s reading.');
+    }).then(() => { if (b.dataset.done) { b.textContent = 'Added'; b.disabled = true; } });
+  });
+
+  // ---------- Sources ----------
+  const EVERY = (m) => m >= 1440 ? 'once a day' : m >= 60 ? 'every ' + (m / 60 === 1 ? 'hour' : m / 60 + ' hours') : 'every ' + m + ' minutes';
+  loaders.sources = async () => {
+    try {
+      const [{ watches }, { outlets }, { accounts: acc }] = await Promise.all([api('/api/gather/watches'), api('/api/desk/outlets'), api('/api/desk/accounts')]);
+      $('sitesList').innerHTML = watches.length ? watches.map((w) => '<div class="item"><div class="t"><b>' + esc(w.name) + '</b><span>' + esc(EVERY(w.everyMinutes)) + ' · last checked ' + esc(when(w.lastRun)) + (w.lastError ? ' · couldn’t read: ' + esc(w.lastError) : (w.lastRun ? ' · ' + w.lastCount + ' new' : '')) + '</span></div><button class="btn danger small" data-remove-site="' + w.id + '">Remove</button></div>').join('') : '<div class="item muted">No sites yet.</div>';
+      $('outletsList').innerHTML = outlets.map((o) => '<div class="item"><div class="t"><b>' + esc(o.name) + '</b><span>' + esc(o.region || '') + '</span></div><div class="row-btns" style="align-items:center"><label class="switch" title="Include in Most read"><input type="checkbox" data-outlet="' + esc(o.name) + '"' + (o.enabled === false ? '' : ' checked') + ' aria-label="Include ' + esc(o.name) + ' in Most read"><span></span></label><button class="btn danger small" data-remove-outlet="' + esc(o.name) + '">Remove</button></div></div>').join('');
+      $('accountsList').innerHTML = acc.map((a) => '<div class="item"><div class="t"><b>' + esc(a.name) + '</b><span>' + esc(a.role) + ' · ' + esc(a.groupName) + ' · ' + Object.entries(a.handles).map(([k, v]) => (k === 'x' ? 'X' : 'Instagram') + ' @' + esc(v)).join(', ') + '</span><span>Confirmed on <a href="' + esc(a.confirmedAgainst) + '" target="_blank" rel="noopener">official page</a></span></div><button class="btn danger small" data-remove-account="' + esc(a.id) + '">Remove</button></div>').join('');
+    } catch (err) { toast(err.message, true); }
+  };
+  $('checkSites').addEventListener('click', (e) => busy(e.target, 'Checking… (a few minutes)', async () => {
+    const { results } = await api('/api/gather/run', {});
+    toast(results.length ? results.reduce((n, r) => n + r.found, 0) + ' new headlines from ' + results.length + ' sites.' : 'Every site was checked recently. Each runs on its own schedule.');
+    loaders.sources();
+  }));
+  $('siteForm').addEventListener('submit', (e) => {
+    e.preventDefault();
+    busy(e.submitter, 'Adding…', async () => {
+      await api('/api/gather/watches', { name: $('s-name').value, url: $('s-url').value, category: $('s-cat').value, everyMinutes: Number($('s-every').value) });
+      toast('Added. It will be checked on the next run.');
+      $('siteForm').reset();
+      loaders.sources();
+    });
+  });
+  $('outletForm').addEventListener('submit', (e) => {
+    e.preventDefault();
+    busy(e.submitter, 'Adding…', async () => {
+      await api('/api/desk/outlets', { name: $('o-name').value, url: $('o-url').value, region: $('o-region').value });
+      toast('Added to Most read.');
+      $('outletForm').reset();
+      loaders.sources();
+    });
+  });
+  $('accountForm').addEventListener('submit', (e) => {
+    e.preventDefault();
+    busy(e.submitter, 'Checking the official page…', async () => {
+      const { account } = await api('/api/desk/accounts', { name: $('a-name').value, role: $('a-role').value, category: $('a-cat').value, x: $('a-x').value, instagram: $('a-ig').value, officialPage: $('a-page').value });
+      toast(account.name + ' was confirmed and added.');
+      $('accountForm').reset();
+      loaders.sources();
+    });
+  });
+  document.addEventListener('change', async (e) => {
+    const sw = e.target.closest('[data-outlet]');
+    if (!sw) return;
+    try {
+      await api('/api/desk/outlets/switch', { name: sw.dataset.outlet, enabled: sw.checked });
+      toast(sw.dataset.outlet + (sw.checked ? ' is back in Most read.' : ' is left out of Most read.'));
+    } catch (err) { sw.checked = !sw.checked; toast(err.message, true); }
+  });
+  document.addEventListener('click', async (e) => {
+    const site = e.target.closest('[data-remove-site]');
+    const outlet = e.target.closest('[data-remove-outlet]');
+    const acct = e.target.closest('[data-remove-account]');
+    if (!site && !outlet && !acct) return;
+    const what = site ? 'this news site' : outlet ? outlet.dataset.removeOutlet + ' from Most read' : 'this leader from the approved list';
+    const ok = await askUser({ title: 'Remove ' + what + '?', text: acct ? 'Their posts already on the site stay until you remove them under Add to the site.' : '', reason: false, ok: 'Remove' });
+    if (!ok) return;
+    try {
+      if (site) await api('/api/desk/watches/remove', { id: site.dataset.removeSite });
+      if (outlet) await api('/api/desk/outlets/remove', { name: outlet.dataset.removeOutlet });
+      if (acct) await api('/api/desk/accounts/remove', { id: acct.dataset.removeAccount });
+      toast('Removed.');
+      loaders.sources();
+    } catch (err) { toast(err.message, true); }
+  });
+
+  // ---------- Settings ----------
+  const SWITCHES = [
+    ['publishAutomatically', 'Publish approved stories automatically', 'On: stories that pass every check go live by themselves. Off: they wait under "Ready to publish" until you tap Publish.'],
+    ['newsroomOn', 'Run the AI newsroom on its schedule', 'Every 30 minutes from 6 a.m. to 11 p.m., hourly overnight. Off pauses it; you can still tap "Check the news now".'],
+    ['watchListOn', 'Check news sites on their schedule', 'Reads the news sites for new headlines.'],
+    ['mostReadOn', 'Update Most read every hour', 'Reads the outlets’ most-read lists.']
+  ];
+  loaders.settings = async () => {
+    try {
+      const s = await api('/api/desk/status');
+      $('switches').innerHTML = SWITCHES.map(([k, title, help]) => '<div class="item"><div class="t"><b>' + esc(title) + '</b><span>' + esc(help) + '</span></div><label class="switch"><input type="checkbox" data-setting="' + k + '"' + (s.settings[k] ? ' checked' : '') + ' aria-label="' + esc(title) + '"><span></span></label></div>').join('');
+      $('setupState').innerHTML =
+        '<p>' + (s.ready.ai ? '✓ The AI editors are connected.' : '✗ The AI editors aren’t connected. Whoever set up the server needs to add the Anthropic key (setup guide, step 5).') + '</p>' +
+        '<p style="margin:0">' + (s.ready.screenshots ? '✓ Screen grabs of posts are working.' : '✗ Screen grabs of posts aren’t available on this server. Posts show their initials instead.') + '</p>';
+    } catch (err) { toast(err.message, true); }
+  };
+  $('switches').addEventListener('change', async (e) => {
+    const sw = e.target.closest('[data-setting]');
+    if (!sw) return;
+    try {
+      await api('/api/desk/settings', { [sw.dataset.setting]: sw.checked });
+      toast('Saved.');
+    } catch (err) { sw.checked = !sw.checked; toast(err.message, true); }
+  });
+
+  // ---------- Start ----------
+  if (password) {
+    signIn(password, true).catch(() => signOut(''));
+  }
+})();
+</script>
+
+</body></html>
