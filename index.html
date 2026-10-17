@@ -543,7 +543,7 @@ header.site { border-bottom: 0; }
 .vid { position: relative; scroll-snap-align: start; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
 .vid .vt { position: relative; display: block; aspect-ratio: 16 / 9; max-width: 100%; overflow: hidden; background: #2B1B54; }
 .vid .vt svg { width: 100%; height: 100%; display: block; }
-.vid .vt .ph .credit { display: none; }
+.vid .vt .ph .credit { left: auto; right: 8px; top: 8px; bottom: auto; }
 .vid .pb { position: absolute; left: 10px; bottom: 10px; display: flex; align-items: center; gap: 6px; padding: 4px 9px 4px 6px; background: rgba(15, 11, 25, .78); color: #FFFFFF; font-size: 12px; font-weight: 700; font-variant-numeric: tabular-nums; }
 .vid .pb i { width: 22px; height: 22px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; }
 .vid .pb.live { background: #C2264B; }
@@ -1154,16 +1154,16 @@ header.site { border-bottom: 0; }
   const AJI = 'https://www.aljazeera.com/wp-content/uploads/2026/10/';
   const vids = [
     { r: 'us', o: 'Fox News', live: true, t: 'Trump urges Kentucky voters to back Republicans at midterm rally', w: 'Today', u: 'https://www.foxnews.com/video/5614615980001', pic: 'podium' },
-    { r: 'world', o: 'Fox News', t: 'U.S. Central Command says most of Iran’s attacks on Hormuz shipping fail', w: 'Today', u: 'https://www.foxnews.com/video/6407012468112', pic: 'tanker' },
+    { r: 'world', o: 'Fox News', d: '2:58', t: 'U.S. Central Command says most of Iran’s attacks on Hormuz shipping fail', w: 'Today', u: 'https://www.foxnews.com/video/6407012468112', img: 'https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/12b9ae07-f51b-4369-8a8b-203a1dcbd00d/5ff90cf5-c1b7-48a9-b1cc-b64c13bcaa27/1280x720/match/1024/512/image.jpg?ve=1&tl=1', pic: 'tanker' },
     { r: 'us', o: 'Al Jazeera', d: '0:50', t: 'Wildfire forces thousands of evacuation orders in Orange County', w: 'Today', u: 'https://www.aljazeera.com/video/newsfeed/2026/10/17/wildfire-prompts-thousands-of-evacuation-orders-in-orange-county', img: AJI + 'image-1792224190.jpg?resize=770%2C433&quality=80', pic: 'forest' },
     { r: 'world', o: 'Al Jazeera', d: '1:13', t: 'Trump waives Russia sanctions as his rift with Zelenskyy widens', w: 'Today', u: 'https://www.aljazeera.com/video/newsfeed/2026/10/17/trump-waives-russia-sanctions-as-rift-with-zelenskyy-widens', img: AJI + 'image-1792213059.jpg?resize=770%2C433&quality=80', pic: 'chart' },
     { r: 'ca', o: 'CBC News', t: 'Alberta referendum countdown: Carney and Smith keep up the pro-Canada drumbeat', w: 'This week', u: 'https://www.cbc.ca/player/play/video/9.7385095', pic: 'ballot' },
-    { r: 'us', o: 'PBS NewsHour', d: '4:32', t: 'Oregon school shooter attacked a special education classroom, police say', w: 'Oct 16', u: 'https://www.pbs.org/newshour/show/oregon-school-shooter-attacked-special-education-classroom-police-say', pic: 'city' },
+    { r: 'us', o: 'PBS NewsHour', d: '4:32', t: 'Oregon school shooter attacked a special education classroom, police say', w: 'Oct 16', u: 'https://www.pbs.org/newshour/show/oregon-school-shooter-attacked-special-education-classroom-police-say', img: 'https://d3i6fh83elv35t.cloudfront.net/static/2026/10/oreganshootingpackage-1024x683.jpg', pic: 'city' },
     { r: 'us', o: 'PBS NewsHour', d: '4:57', t: 'News Wrap: Zacharia out as press secretary after less than a week', w: 'Oct 16', u: 'https://www.pbs.org/newshour/show/news-wrap-zacharia-out-as-white-house-press-secretary-after-less-than-a-week-on-the-job', pic: 'parliament' },
-    { r: 'us', o: 'PBS NewsHour', d: '6:48', t: 'Checking the claims Trump is making at his midterm rallies', w: 'Oct 16', u: 'https://www.pbs.org/newshour/show/examining-the-controversial-claims-trump-is-making-at-his-midterm-rallies', pic: 'podium' },
+    { r: 'us', o: 'PBS NewsHour', d: '6:48', t: 'Checking the claims Trump is making at his midterm rallies', w: 'Oct 16', u: 'https://www.pbs.org/newshour/show/examining-the-controversial-claims-trump-is-making-at-his-midterm-rallies', img: 'https://d3i6fh83elv35t.cloudfront.net/static/2026/10/rallyrhetoric-1024x682.jpg', pic: 'podium' },
     { r: 'us', o: 'Al Jazeera', d: '1:03', t: 'Bend, Oregon, mourns the victims of the school shooting', w: 'Oct 16', u: 'https://www.aljazeera.com/video/newsfeed/2026/10/16/oregon-community-mourns-victims-of-school-shooting', img: AJI + 'image-1792181302.jpg?resize=730%2C410&quality=80', pic: 'city' },
-    { r: 'ca', o: 'On YouTube', t: 'Premier Danielle Smith casts her vote to stay in Canada', w: 'Oct 14', u: 'https://www.youtube.com/watch?v=1leLGQcaypU', pic: 'ballot' },
-    { r: 'ca', o: 'Global News', d: '0:55', t: '“Canada will end up being the 51st state,” Trump says', w: 'Oct 14', u: 'https://globalnews.ca/video/12103040/canada-will-end-up-being-the-51st-state-trump-says/', pic: 'globe' },
+    { r: 'ca', o: 'On YouTube', t: 'Premier Danielle Smith casts her vote to stay in Canada', w: 'Oct 14', u: 'https://www.youtube.com/watch?v=1leLGQcaypU', img: 'https://i.ytimg.com/vi/1leLGQcaypU/hqdefault.jpg', pic: 'ballot' },
+    { r: 'ca', o: 'Global News', d: '0:55', t: '“Canada will end up being the 51st state,” Trump says', w: 'Oct 14', u: 'https://globalnews.ca/video/12103040/canada-will-end-up-being-the-51st-state-trump-says/', img: 'https://i0.wp.com/media.globalnews.ca/videostatic/news/x9hr8i2vs1-c9n2uqt8ie/Trump_AZ_Canada_WEB_thumbnail_1280x720_.jpg?w=500&quality=70&strip=all', pic: 'globe' },
     { r: 'ca', o: 'Global News', d: '2:06', t: 'U.S. ambassador Hoekstra tells Canada to stay out of American politics', w: 'Oct 14', u: 'https://globalnews.ca/video/12103135/u-s-ambassador-hoekstra-warns-canada-to-keep-your-nose-out-of-american-politics/', pic: 'parliament' }
   ];
   const tri = '<svg width="10" height="10" viewBox="0 0 24 24" fill="#2B1B54" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg>';
