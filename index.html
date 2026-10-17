@@ -508,6 +508,35 @@ header.site { border-bottom: 0; }
 .us-list .fs > :not(.thumbs) { grid-column: 2; }
 .us-list .fs .thumbs { grid-row: 1 / span 4; }
 .us-lead .fm { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; font-size: 13px; color: var(--muted); }
+
+/* The Editor's Read: signed analysis, what to watch, why-it-matters lines */
+.why { position: relative; margin: 0; padding: 10px 0 10px 14px; border-left: 3px solid var(--wine); font-size: 15px; line-height: 1.5; color: var(--ink); }
+.why b { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--wine); margin-right: 6px; }
+.lead .why { margin-bottom: 16px; max-width: 640px; font-size: 16px; }
+.fs .why { padding: 6px 0 6px 10px; font-size: 13.5px; }
+.fs .why b { font-size: 10px; }
+.desk { display: grid; grid-template-columns: minmax(0, 1fr); gap: 28px 40px; padding: clamp(20px, 3vw, 32px); background: var(--surface); border: 1px solid var(--line); border-top: 4px solid var(--wine); }
+@media (min-width: 900px) { .desk { grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); } .watch { border-left: 1px solid var(--line); padding-left: 32px; } }
+.byl { display: flex; align-items: center; gap: 12px; }
+.byl .av { flex: 0 0 52px; height: 52px; border-radius: 50%; background: var(--band); color: var(--band-ink); display: flex; align-items: center; justify-content: center; font-family: var(--serif); font-weight: 600; font-size: 20px; }
+.byl .nm { font-weight: 700; font-size: 15px; color: var(--ink); }
+.byl .rl { font-size: 13px; color: var(--muted); }
+.kicker { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #FFFFFF; background: var(--wine); padding: 3px 8px; }
+.essay h3 { margin: 12px 0 14px; font-family: var(--serif); font-weight: 700; font-size: clamp(28px, 3.4vw, 40px); line-height: 1.08; letter-spacing: -.02em; color: var(--title); }
+.essay .body { font-family: var(--serif); font-size: 19px; line-height: 1.6; color: var(--ink); max-width: 66ch; }
+.essay .body p { margin: 0 0 14px; }
+.essay .body p:first-child::first-letter { float: left; font-size: 3.4em; line-height: .82; font-weight: 700; padding: 6px 8px 0 0; color: var(--wine); }
+.essay .sig { margin-top: 6px; font-family: var(--serif); font-style: italic; font-size: 20px; color: var(--title); }
+.essay .src { margin-top: 12px; font-size: 13px; color: var(--muted); }
+.essay .src a { color: var(--accent); font-weight: 600; }
+.draft-note { margin-top: 14px; padding: 8px 12px; border: 1px dashed var(--dash); font-size: 12.5px; color: var(--muted); }
+.watch h3 { margin: 0 0 4px; font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--title); padding-bottom: 8px; border-bottom: 2px solid var(--title); }
+.watch ol { list-style: none; margin: 0; padding: 0; }
+.watch li { display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.watch .when { font-size: 12px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--wine); line-height: 1.35; }
+.watch .what { font-size: 15px; line-height: 1.45; }
+.watch .what b { display: block; font-weight: 700; color: var(--ink); }
+.watch .what span { color: var(--body); font-size: 14px; }
 </style>
 
 <header class="site">
@@ -544,6 +573,7 @@ header.site { border-bottom: 0; }
       <a href="#">Energy &amp; Infrastructure</a>
       <a href="#sec-world">World</a>
       <a href="#sec-us">United States</a>
+      <a href="#editorsread">Editor's Read</a>
       <a href="#mostread">Most read</a>
       <a href="#reading">Today's reading</a>
       <a href="#ontherecord">On the record</a>
@@ -557,7 +587,7 @@ header.site { border-bottom: 0; }
   <div class="wrap">
     <a class="mini" href="#" tabindex="-1">Palindrome <em>N</em></a>
     <nav aria-label="Sections">
-      <a href="#sec-canada" tabindex="-1">Canada</a><a href="#sec-politics" tabindex="-1">Politics</a><a href="#sec-business" tabindex="-1">Business</a><a href="#sec-world" tabindex="-1">World</a><a href="#sec-us" tabindex="-1">U.S.</a><a href="#mostread" tabindex="-1">Most read</a><a href="#reading" tabindex="-1">Reading</a><a href="#ontherecord" tabindex="-1">On the record</a><a href="#editorials" tabindex="-1">Editorials</a><a href="#godeeper" tabindex="-1">Go deeper</a>
+      <a href="#editorsread" tabindex="-1">Editor's Read</a><a href="#sec-canada" tabindex="-1">Canada</a><a href="#sec-politics" tabindex="-1">Politics</a><a href="#sec-business" tabindex="-1">Business</a><a href="#sec-world" tabindex="-1">World</a><a href="#sec-us" tabindex="-1">U.S.</a><a href="#mostread" tabindex="-1">Most read</a><a href="#reading" tabindex="-1">Reading</a><a href="#ontherecord" tabindex="-1">On the record</a><a href="#editorials" tabindex="-1">Editorials</a><a href="#godeeper" tabindex="-1">Go deeper</a>
     </nav>
     <span class="now"><span class="live"><i aria-hidden="true"></i></span><span id="clock2">5:15 p.m.</span> ET</span>
   </div>
@@ -621,6 +651,7 @@ header.site { border-bottom: 0; }
       <div style="display: flex; align-items: center; gap: 12px"><span class="eyebrow">Canada</span><span class="pill">Vote Monday</span></div>
       <h1><a class="card-link" href="https://ca.news.yahoo.com/rallies-planned-final-weekend-alberta-120015382.html" target="_blank" rel="noopener">Alberta's last weekend before the separation vote</a></h1>
       <p class="dek">Supporters and opponents of separation are holding rallies in Edmonton this weekend, including one at the legislature. On Monday, Albertans decide whether to stay in Canada or hold a second, binding referendum on leaving. Prime Minister Mark Carney campaigned in Edmonton on Friday, and Premier Danielle Smith says she voted to stay. A research report says online posts are already laying the groundwork to dispute the result.</p>
+      <p class="why"><b>Why it matters</b>A vote for a second referendum would not take Alberta out of Canada. It would set a formal process toward that in motion.</p>
       <div class="row-meta"><span class="meter-slot" data-n="8"></span><span class="ts">Updated 4:00 p.m.</span><span style="color: var(--accent); font-weight: 600">Canadian Press report &#8599;</span></div>
       <div class="chips-static"><span>Canadian Press</span><span>CBC News</span><span>Global News</span><span>CTV News</span><span>Hill Times</span><span class="more">+3 more</span></div>
     </article>
@@ -628,6 +659,36 @@ header.site { border-bottom: 0; }
       <p class="label">The wire <span class="live"><i aria-hidden="true"></i>Live</span></p>
       <ol id="latestList"></ol>
     </aside>
+  </section>
+
+  <section id="editorsread" aria-labelledby="er-h">
+    <div class="band-head"><h2 id="er-h">The Editor's Read</h2><p>What today's news adds up to, in three minutes. Analysis, not opinion.</p></div>
+    <div class="desk">
+      <article class="essay">
+        <div class="byl"><span class="av" aria-hidden="true">HT</span><span><span class="nm">Hannah Thibedeau</span><br><span class="rl">Editor · Saturday evening, Oct. 17</span></span></div>
+        <span class="kicker" style="margin-top: 16px">Analysis</span>
+        <h3>A weekend that tests Canada's ties, at home and across the border</h3>
+        <div class="body">
+          <p>Monday's vote in Alberta is not a vote to leave Canada. It is a vote on whether to hold a second, binding referendum that would be. That difference matters. A "yes" does not break up the country, but it puts the question on a formal path. The Prime Minister campaigned in Edmonton on Friday, and the Premier says she voted to stay. Researchers already see people online preparing to dispute the result, whichever way it goes.</p>
+          <p>The pressure from the south has not let up. Donald Trump is reviving "51st state" talk weeks before the U.S. midterms. Ottawa is threatening Stelco's American owner with fines or a forced sale over layoffs. Stellantis workers are voting on a strike mandate. These are separate stories, but together they show how much of Canada's economy still turns on decisions made in the United States.</p>
+          <p>Keep an eye on the Strait of Hormuz. If attacks on tankers keep shipping out of the strait, oil prices could move, and that would be felt in Alberta, a province built on oil, right as it votes. Only two outlets have reported the attacks so far. We'll tell you when the story is confirmed.</p>
+        </div>
+        <div class="sig">Hannah</div>
+        <p class="src">Drawn from reporting by <a href="https://ca.news.yahoo.com/rallies-planned-final-weekend-alberta-120015382.html" target="_blank" rel="noopener">The Canadian Press</a>, Global News (on the <a href="https://globalnews.ca/news/12105632/alberta-referendum-results-mcgill-online-research" target="_blank" rel="noopener">online groundwork</a>, <a href="https://globalnews.ca/news/12103949/donald-trump-51st-state-midterms/" target="_blank" rel="noopener">Trump</a>, <a href="https://globalnews.ca/news/12101944/stelco-federal-government-legal-action/" target="_blank" rel="noopener">Stelco</a> and <a href="https://globalnews.ca/news/12106389/stellantis-begin-voting-strike-mandate/" target="_blank" rel="noopener">Stellantis</a>), <a href="https://english.alarabiya.net/News/middle-east/2026/10/17/tanker-explodes-after-hitting-mine-in-strait-of-hormuz-iran-s-irgc" target="_blank" rel="noopener">Al Arabiya</a> and <a href="https://www.aljazeera.com/news/liveblog/2026/10/17/draft-2" target="_blank" rel="noopener">Al Jazeera</a>.</p>
+        <p class="draft-note">Preview draft written by Claude in Hannah's name. On the live site, the Editor's Read runs only after Hannah has edited and approved it.</p>
+      </article>
+      <aside class="watch" aria-label="What to watch">
+        <h3>What to watch</h3>
+        <ol>
+          <li><span class="when">Tonight</span><span class="what"><b>B.C. municipal results</b><span>Mayors and councils across the province.</span></span></li>
+          <li><span class="when">Monday, Oct. 19</span><span class="what"><b>Alberta votes</b><span>Stay in Canada, or hold a binding referendum on leaving.</span></span></li>
+          <li><span class="when">Ongoing</span><span class="what"><b>Strait of Hormuz</b><span>Whether more outlets confirm the tanker attacks, and what oil prices do.</span></span></li>
+          <li><span class="when">Coming up</span><span class="what"><b>Stellantis strike vote</b><span>The result tells us whether a strike is on the table.</span></span></li>
+          <li><span class="when">This fall</span><span class="what"><b>Immigration levels plan</b><span>The minister has hinted the targets will rise.</span></span></li>
+          <li><span class="when">Nov. 3</span><span class="what"><b>U.S. midterms</b><span>Control of Congress, and with it Trump's room to act on trade and Canada.</span></span></li>
+        </ol>
+      </aside>
+    </div>
   </section>
 
   <section aria-labelledby="day-h">
@@ -854,6 +915,12 @@ header.site { border-bottom: 0; }
   const desk = { 'Business & Economy': 'business', World: 'world', Politics: 'politics', Canada: 'canada' };
   // Which desk each story belongs on (the Alberta research story is political coverage)
   const placed = stories.map(([pic, topic, badge, h, s, src, link, img, time]) => [pic, /Alberta/.test(h) ? 'Politics' : topic, h, s, src, link, img, time]).concat(extra);
+  const WHY = {
+    'Flintstones vitamins, Aleve and Claritin in new recall': 'These are everyday products in many homes. Check the recall list before you use them.',
+    'Immigration levels likely to rise, minister hints': 'The levels plan sets how many people Canada admits each year, and it feeds straight into debates over housing and jobs.',
+    'Ottawa warns Stelco’s U.S. owner over layoffs': 'It tests whether Ottawa will enforce the job promises foreign buyers make when they take over Canadian companies.',
+    'Russia keeps hitting Ukraine’s power grid despite a ceasefire claim': 'Winter is coming. Damage to the grid now means blackouts when Ukrainians need heat most.'
+  };
   const fronts = [['canada', 'Canada'], ['politics', 'Politics'], ['business', 'Business & Economy'], ['world', 'World']];
   $('fronts').innerHTML = fronts.map(([id, name]) => {
     const list = placed.filter((x) => desk[x[1]] === id);
@@ -864,6 +931,7 @@ header.site { border-bottom: 0; }
           (i === 0 ? '<a class="fimg" href="' + esc(link) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + photo(img, pic, h, src.split(',')[0]) + '</a>' : '') +
           '<h4><a href="' + esc(link) + '" target="_blank" rel="noopener">' + esc(h) + '</a></h4>' +
           (i === 0 && sum ? '<p>' + esc(sum) + '</p>' : '') +
+          (i === 0 && WHY[h] ? '<p class="why"><b>Why it matters</b>' + esc(WHY[h]) + '</p>' : '') +
           '<div class="fm">' + meter(n) + (time ? '<span class="ts">' + esc(time) + '</span>' : '') + '</div>' +
           '<div class="fm">' + esc(src) + '</div></article>';
       }).join('') + '</div>';
