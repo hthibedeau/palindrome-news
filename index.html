@@ -509,7 +509,7 @@ header.site { border-bottom: 0; }
 .us-list .fs .thumbs { grid-row: 1 / span 4; }
 .us-lead .fm { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; font-size: 13px; color: var(--muted); }
 
-/* The Editor's Read: signed analysis, what to watch, why-it-matters lines */
+/* What to watch, the 60-second brief, why-it-matters lines */
 .why { position: relative; margin: 0; padding: 10px 0 10px 14px; border-left: 3px solid var(--wine); font-size: 15px; line-height: 1.5; color: var(--ink); }
 .why b { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--wine); margin-right: 6px; }
 .lead .why { margin-bottom: 16px; max-width: 640px; font-size: 16px; }
@@ -743,6 +743,11 @@ header.site { border-bottom: 0; }
 .mr li .t { flex: 1 1 auto; }
 .mr .mrthumb { position: relative; z-index: 2; flex: 0 0 96px; aspect-ratio: 4 / 3; overflow: hidden; background: var(--soft); }
 @media (max-width: 480px) { .mr .mrthumb { flex-basis: 76px; } }
+
+#ahead .desk { grid-template-columns: minmax(0, 1fr) !important; gap: 18px; }
+#ahead .watch { border-left: 0 !important; padding-left: 0 !important; }
+#ahead .watch ol { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr)); column-gap: 28px; }
+#ahead .ahead-audio .audio { margin: 0; }
 </style>
 
 <header class="site">
@@ -784,7 +789,7 @@ header.site { border-bottom: 0; }
       <a href="#pictures">Pictures</a>
       <a href="#breakdown">Breakdown</a>
       <a href="#video">Watch</a>
-      <a href="#editorsread">Editor's Read</a>
+      <a href="#ahead">What to watch</a>
       <a href="#mostread">Most read</a>
       <a href="#reading">Today's reading</a>
       <a href="#ontherecord">On the record</a>
@@ -798,7 +803,7 @@ header.site { border-bottom: 0; }
   <div class="wrap">
     <a class="mini" href="#" tabindex="-1">Palindrome <em>N</em></a>
     <nav aria-label="Sections">
-      <a href="#breakdown" tabindex="-1">Breakdown</a><a href="#video" tabindex="-1">Watch</a><a href="#editorsread" tabindex="-1">Editor's Read</a><a href="#sec-canada" tabindex="-1">Canada</a><a href="#sec-politics" tabindex="-1">Politics</a><a href="#sec-business" tabindex="-1">Business</a><a href="#sec-world" tabindex="-1">World</a><a href="#sec-us" tabindex="-1">U.S.</a><a href="#mostread" tabindex="-1">Most read</a><a href="#reading" tabindex="-1">Reading</a><a href="#ontherecord" tabindex="-1">On the record</a><a href="#editorials" tabindex="-1">Editorials</a><a href="#godeeper" tabindex="-1">Go deeper</a>
+      <a href="#breakdown" tabindex="-1">Breakdown</a><a href="#video" tabindex="-1">Watch</a><a href="#ahead" tabindex="-1">What to watch</a><a href="#sec-canada" tabindex="-1">Canada</a><a href="#sec-politics" tabindex="-1">Politics</a><a href="#sec-business" tabindex="-1">Business</a><a href="#sec-world" tabindex="-1">World</a><a href="#sec-us" tabindex="-1">U.S.</a><a href="#mostread" tabindex="-1">Most read</a><a href="#reading" tabindex="-1">Reading</a><a href="#ontherecord" tabindex="-1">On the record</a><a href="#editorials" tabindex="-1">Editorials</a><a href="#godeeper" tabindex="-1">Go deeper</a>
     </nav>
     <span class="now"><span class="live"><i aria-hidden="true"></i></span><span id="clock2">5:15 p.m.</span> ET</span>
   </div>
@@ -903,30 +908,19 @@ header.site { border-bottom: 0; }
     <div class="vids" id="vids" aria-live="polite"></div>
   </section>
 
-  <section id="editorsread" aria-labelledby="er-h">
-    <div class="band-head"><h2 id="er-h">The Editor's Read</h2><p>What today's news adds up to, in three minutes. Analysis, not opinion.</p></div>
+  <section id="ahead" aria-labelledby="er-h" style="scroll-margin-top: 64px">
+    <div class="band-head"><h2 id="er-h">What to watch</h2><p>The dates and decisions coming up, and today's top stories read aloud in a minute.</p></div>
     <div class="desk">
-      <article class="essay">
+      <div class="ahead-audio">
         <div class="audio" id="audio">
           <button type="button" id="audioBtn" aria-label="Play the 60-second brief"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg></button>
           <span class="at"><b>The 60-second brief</b><span id="audioNote">Today's top stories, read aloud. About one minute.</span></span>
           <span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
           <p class="cap" id="audioCap" aria-live="polite"></p>
         </div>
-        <div class="byl"><span class="av" aria-hidden="true">HT</span><span><span class="nm">Hannah Thibedeau</span><br><span class="rl">Editor · Saturday evening, Oct. 17</span></span></div>
-        <span class="kicker" style="margin-top: 16px">Analysis</span>
-        <h3>A weekend that tests Canada's ties, at home and across the border</h3>
-        <div class="body">
-          <p>Monday's vote in Alberta is not a vote to leave Canada. It is a vote on whether to hold a second, binding referendum that would be. That difference matters. A "yes" does not break up the country, but it puts the question on a formal path. The Prime Minister campaigned in Edmonton on Friday, and the Premier says she voted to stay. Researchers already see people online preparing to dispute the result, whichever way it goes.</p>
-          <p>The pressure from the south has not let up. Donald Trump is reviving "51st state" talk weeks before the U.S. midterms. Ottawa is threatening Stelco's American owner with fines or a forced sale over layoffs. Stellantis workers are voting on a strike mandate. These are separate stories, but together they show how much of Canada's economy still turns on decisions made in the United States.</p>
-          <p>Keep an eye on the Strait of Hormuz. If attacks on tankers keep shipping out of the strait, oil prices could move, and that would be felt in Alberta, a province built on oil, right as it votes. Only two outlets have reported the attacks so far. We'll tell you when the story is confirmed.</p>
-        </div>
-        <div class="sig">Hannah</div>
-        <p class="src">Drawn from reporting by <a href="https://ca.news.yahoo.com/rallies-planned-final-weekend-alberta-120015382.html" target="_blank" rel="noopener">The Canadian Press</a>, Global News (on the <a href="https://globalnews.ca/news/12105632/alberta-referendum-results-mcgill-online-research" target="_blank" rel="noopener">online groundwork</a>, <a href="https://globalnews.ca/news/12103949/donald-trump-51st-state-midterms/" target="_blank" rel="noopener">Trump</a>, <a href="https://globalnews.ca/news/12101944/stelco-federal-government-legal-action/" target="_blank" rel="noopener">Stelco</a> and <a href="https://globalnews.ca/news/12106389/stellantis-begin-voting-strike-mandate/" target="_blank" rel="noopener">Stellantis</a>), <a href="https://english.alarabiya.net/News/middle-east/2026/10/17/tanker-explodes-after-hitting-mine-in-strait-of-hormuz-iran-s-irgc" target="_blank" rel="noopener">Al Arabiya</a> and <a href="https://www.aljazeera.com/news/liveblog/2026/10/17/draft-2" target="_blank" rel="noopener">Al Jazeera</a>.</p>
-        <p class="draft-note">Preview draft written by Claude in Hannah's name. On the live site, the Editor's Read runs only after Hannah has edited and approved it.</p>
-      </article>
+      </div>
       <aside class="watch" aria-label="What to watch">
-        <h3>What to watch</h3>
+        <h3>Coming up</h3>
         <ol>
           <li><span class="when">Tonight</span><span class="what"><b>B.C. municipal results</b><span>Mayors and councils across the province.</span></span></li>
           <li><span class="when">Monday, Oct. 19</span><span class="what"><b>Alberta votes</b><span>Stay in Canada, or hold a binding referendum on leaving.</span></span></li>
@@ -1457,7 +1451,7 @@ header.site { border-bottom: 0; }
   // Wall of clocks
   const clocks = [
     ['Vancouver', 'America/Vancouver', 'B.C. votes', '#sec-canada', false],
-    ['Edmonton', 'America/Edmonton', 'Vote Monday', '#editorsread', false],
+    ['Edmonton', 'America/Edmonton', 'Vote Monday', '#bd-alberta', false],
     ['Ottawa', 'America/Toronto', 'Newsroom', '#', false],
     ['Washington', 'America/New_York', 'Midterms', '#sec-us', false],
     ['Kyiv', 'Europe/Kyiv', 'Power grid', '#sec-world', false],
@@ -1538,7 +1532,7 @@ header.site { border-bottom: 0; }
     });
   }
   aBtn.addEventListener('click', () => (playing ? stopBrief() : playBrief()));
-  $('audioNote').textContent = 'Today’s top stories in about a minute. In this preview your device reads it; on the live site, Hannah records it.';
+  $('audioNote').textContent = 'Today’s top stories in about a minute, read aloud by your device.';
 
   // The breakdown: synopses for stories with six or more independent sources
   const BDS = [
