@@ -711,6 +711,38 @@ header.site { border-bottom: 0; }
 .addshot[aria-busy="true"] { opacity: .6; cursor: progress; }
 .vid .addshot, .read .addshot { align-self: flex-start; margin-top: 4px; }
 .shot-toast { position: fixed; left: 50%; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); z-index: 60; max-width: min(92vw, 460px); padding: 10px 16px; background: var(--band); color: var(--band-ink); font-size: 14px; box-shadow: 0 6px 20px rgba(15, 11, 25, .3); }
+
+/* The day in pictures: a rotating gallery of the day's news photos */
+.pics { background: #0F0B19; color: #F1ECFA; }
+.pics .stage { position: relative; display: block; aspect-ratio: 16 / 8; max-width: 100%; overflow: hidden; background: #0F0B19; }
+@media (max-width: 640px) { .pics .stage { aspect-ratio: 4 / 3; } }
+.pics .stage .ph, .pics .stage svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.pics .stage .ph img { animation: picfade .6s ease; }
+@keyframes picfade { from { opacity: 0; } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .pics .stage .ph img { animation: none; } }
+.pics .stage .ph .credit { display: none; }
+.pics .cap { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 18px; align-items: start; padding: 14px 18px; }
+.pics .cap p { color: #F1ECFA; margin: 0; font-family: var(--serif); font-size: clamp(17px, 2vw, 21px); line-height: 1.35; }
+.pics .cap small { display: block; margin-top: 4px; font-size: 12px; color: #C9BFE3; }
+.pics .cap small a { color: #F0C3D0; font-weight: 600; }
+.pics .ctl { display: flex; gap: 6px; }
+.pics .ctl button { width: 40px; height: 40px; border: 1px solid #4A3A78; background: transparent; color: #F1ECFA; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+.pics .ctl button:hover { background: #2B1B54; }
+.pics .count { font-size: 12px; font-weight: 700; letter-spacing: .1em; color: #C9BFE3; align-self: center; margin-right: 6px; font-variant-numeric: tabular-nums; }
+.pics .strip { display: flex; gap: 6px; overflow-x: auto; padding: 0 18px 16px; scrollbar-width: none; }
+.pics .strip::-webkit-scrollbar { display: none; }
+.pics .strip button { flex: 0 0 88px; aspect-ratio: 16 / 10; padding: 0; border: 2px solid transparent; background: #2B1B54; overflow: hidden; cursor: pointer; opacity: .6; }
+.pics .strip button[aria-current="true"] { border-color: #F0C3D0; opacity: 1; }
+.pics .strip .ph, .pics .strip svg { display: block; width: 100%; height: 100%; }
+.pics .strip .ph .credit { display: none; }
+@media (max-width: 560px) { .pics .cap { grid-template-columns: minmax(0, 1fr); } }
+/* Photos on the wire and on Most read */
+.latest li.wt { grid-template-columns: 64px minmax(0, 1fr) 64px; }
+.latest .wthumb { position: relative; z-index: 2; display: block; width: 64px; aspect-ratio: 1; overflow: hidden; background: var(--soft); }
+.latest .wthumb .ph .credit, .mr .mrthumb .ph .credit { display: none; }
+.mr li .t { flex: 1 1 auto; }
+.mr .mrthumb { position: relative; z-index: 2; flex: 0 0 96px; aspect-ratio: 4 / 3; overflow: hidden; background: var(--soft); }
+@media (max-width: 480px) { .mr .mrthumb { flex-basis: 76px; } }
 </style>
 
 <header class="site">
@@ -749,6 +781,7 @@ header.site { border-bottom: 0; }
       <a href="#">Energy &amp; Infrastructure</a>
       <a href="#sec-world">World</a>
       <a href="#sec-us">United States</a>
+      <a href="#pictures">Pictures</a>
       <a href="#breakdown">Breakdown</a>
       <a href="#video">Watch</a>
       <a href="#editorsread">Editor's Read</a>
@@ -847,6 +880,11 @@ header.site { border-bottom: 0; }
       <p class="label">The wire <span class="live"><i aria-hidden="true"></i>Live</span></p>
       <ol id="latestList"></ol>
     </aside>
+  </section>
+
+  <section id="pictures" aria-labelledby="pic-h" style="scroll-margin-top: 64px">
+    <div class="band-head"><h2 id="pic-h">The day in pictures</h2><p>Photos from today's news, credited to each newsroom. A new picture every few seconds, and a new order each visit.</p></div>
+    <div class="pics" id="pics" aria-roledescription="carousel"></div>
   </section>
 
   <section id="breakdown" aria-labelledby="bd-h" style="scroll-margin-top: 64px">
@@ -1087,7 +1125,7 @@ header.site { border-bottom: 0; }
   }
   // A real photo from the outlet, credited. Where it can't load, the illustration stands in.
   // Outlet photos copied into this page's own storage (original URL -> stored copy), so they load on the preview link
-  const LOCAL = {"https://globalnews.ca/wp-content/uploads/2026/10/66448dec2477783b245bd24907a89f6317d195d18d4c2661fb7704f9003f50e2_a43a0b.jpg?quality=65&strip=all&w=720&h=379&crop=1":"/_blob/686eec11bfcbfef4263b35acddcdde23","https://globalnews.ca/wp-content/uploads/2026/10/Aleve-e1792085538434.jpg?quality=65&strip=all&w=720&h=379&crop=1":"/_blob/cd17a0340e439563f69a7419defedafe","https://globalnews.ca/wp-content/uploads/2026/10/CP177060556-e1791992284619.jpg?quality=65&strip=all&w=720&h=379&crop=1":"/_blob/41fb0e23e28637f74e6ba0459b2d7331","https://globalnews.ca/wp-content/uploads/2026/10/CP177086698-e1791986862112.jpg?quality=65&strip=all&w=720&h=379&crop=1":"/_blob/1c60f2622c4b20ae09ae875ec4e566a1","https://globalnews.ca/wp-content/uploads/2026/10/Stellantis-e1792244648251.jpg?quality=65&strip=all&w=720&h=379&crop=1":"/_blob/827f6deed7dab8b357541410ec400d92","https://truth-archive.us-iad-1.linodeobjects.com/attachments/18556/e9c8f0673df961f2-20222c41b3bc.jpg":"/_blob/982e74c20ce2bcb27edb86a3168f55dc","https://truth-archive.us-iad-1.linodeobjects.com/attachments/18562/poster/24e0f60013c09069-7ac4f5bca5d4.jpg":"/_blob/e4ed53b15c9fef8a897b711f835f7b49","https://s.yimg.com/lo/mysterio/api/c2420239db3bc10887b1e485057123a2afa4288ecf07ee1d0fd6d67812181dc8/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fcp_news_842%2F94cd3a3d0d3669a3c5aff483a883dc4d.jpg":"/_blob/4ee8cfad98ba69b0fb98a4c0d83c1b44","https://www.ctvnews.ca/resizer/v2/TKKOAZ4AOVHSJJS7CHMKKRZDIM.JPG?smart=true&auth=2dfaf85644097ab23fe05ac4117d54272f68c8ca3125f687243e4d70bf0ff504&width=1200&height=630":"/_blob/db7f9b2a8bb4ce9c68c628b95e9b6e8b","https://www.aljazeera.com/wp-content/uploads/2026/10/image-1792181302.jpg?resize=730%2C410&quality=80":"/_blob/a389898bee881836e027516c51ce5cd6","https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ad2d683dbb6-1792202371.jpg?resize=770%2C513&quality=80":"/_blob/c754ec14774d91fe410a512eaba11b06","https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ad270d1-1792176337.jpg?resize=770%2C513&quality=80":"/_blob/0ac05ee2f606113179ae0b12c489899e","https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6ad2bbbfc8926-1792195519.jpg?resize=770%2C513&quality=80":"/_blob/9e7ca46f429b94a78f8f0a4cea894a96","https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/12b9ae07-f51b-4369-8a8b-203a1dcbd00d/5ff90cf5-c1b7-48a9-b1cc-b64c13bcaa27/1280x720/match/1024/512/image.jpg?ve=1&tl=1":"/_blob/458aca92933099fae6d5871dd780ecc8","https://i.ytimg.com/vi/1leLGQcaypU/hqdefault.jpg":"/_blob/b686047b4b334f044c1251a2a55da138","https://www.aljazeera.com/wp-content/uploads/2026/10/image-1792224190.jpg?resize=770%2C433&quality=80":"/_blob/cba978c044913d4dd79d356967c4ea82","https://www.aljazeera.com/wp-content/uploads/2026/10/image-1792213059.jpg?resize=770%2C433&quality=80":"/_blob/db08353c87ca0c1ce260d58ff83b78b7"};
+  const LOCAL = {"https://globalnews.ca/wp-content/uploads/2026/10/66448dec2477783b245bd24907a89f6317d195d18d4c2661fb7704f9003f50e2_a43a0b.jpg?quality=65&strip=all&w=720&h=379&crop=1":"/_blob/686eec11bfcbfef4263b35acddcdde23","https://globalnews.ca/wp-content/uploads/2026/10/Aleve-e1792085538434.jpg?quality=65&strip=all&w=720&h=379&crop=1":"/_blob/cd17a0340e439563f69a7419defedafe","https://globalnews.ca/wp-content/uploads/2026/10/CP177060556-e1791992284619.jpg?quality=65&strip=all&w=720&h=379&crop=1":"/_blob/41fb0e23e28637f74e6ba0459b2d7331","https://globalnews.ca/wp-content/uploads/2026/10/CP177086698-e1791986862112.jpg?quality=65&strip=all&w=720&h=379&crop=1":"/_blob/1c60f2622c4b20ae09ae875ec4e566a1","https://globalnews.ca/wp-content/uploads/2026/10/Stellantis-e1792244648251.jpg?quality=65&strip=all&w=720&h=379&crop=1":"/_blob/827f6deed7dab8b357541410ec400d92","https://truth-archive.us-iad-1.linodeobjects.com/attachments/18556/e9c8f0673df961f2-20222c41b3bc.jpg":"/_blob/982e74c20ce2bcb27edb86a3168f55dc","https://truth-archive.us-iad-1.linodeobjects.com/attachments/18562/poster/24e0f60013c09069-7ac4f5bca5d4.jpg":"/_blob/e4ed53b15c9fef8a897b711f835f7b49","https://s.yimg.com/lo/mysterio/api/c2420239db3bc10887b1e485057123a2afa4288ecf07ee1d0fd6d67812181dc8/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fcp_news_842%2F94cd3a3d0d3669a3c5aff483a883dc4d.jpg":"/_blob/4ee8cfad98ba69b0fb98a4c0d83c1b44","https://www.ctvnews.ca/resizer/v2/TKKOAZ4AOVHSJJS7CHMKKRZDIM.JPG?smart=true&auth=2dfaf85644097ab23fe05ac4117d54272f68c8ca3125f687243e4d70bf0ff504&width=1200&height=630":"/_blob/db7f9b2a8bb4ce9c68c628b95e9b6e8b","https://www.aljazeera.com/wp-content/uploads/2026/10/image-1792181302.jpg?resize=730%2C410&quality=80":"/_blob/a389898bee881836e027516c51ce5cd6","https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ad2d683dbb6-1792202371.jpg?resize=770%2C513&quality=80":"/_blob/c754ec14774d91fe410a512eaba11b06","https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ad270d1-1792176337.jpg?resize=770%2C513&quality=80":"/_blob/0ac05ee2f606113179ae0b12c489899e","https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6ad2bbbfc8926-1792195519.jpg?resize=770%2C513&quality=80":"/_blob/9e7ca46f429b94a78f8f0a4cea894a96","https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/12b9ae07-f51b-4369-8a8b-203a1dcbd00d/5ff90cf5-c1b7-48a9-b1cc-b64c13bcaa27/1280x720/match/1024/512/image.jpg?ve=1&tl=1":"/_blob/458aca92933099fae6d5871dd780ecc8","https://i.ytimg.com/vi/1leLGQcaypU/hqdefault.jpg":"/_blob/b686047b4b334f044c1251a2a55da138","https://www.aljazeera.com/wp-content/uploads/2026/10/image-1792224190.jpg?resize=770%2C433&quality=80":"/_blob/cba978c044913d4dd79d356967c4ea82","https://www.aljazeera.com/wp-content/uploads/2026/10/image-1792213059.jpg?resize=770%2C433&quality=80":"/_blob/db08353c87ca0c1ce260d58ff83b78b7","https://vid.alarabiya.net/images/2026/10/17/41b26f54-9a9e-45ca-8716-508cb77c7744/41b26f54-9a9e-45ca-8716-508cb77c7744_16x9_600x338.JPG":"/_blob/912abd1f3fd3b39ffb641dc53af1666b","https://globalnews.ca/wp-content/uploads/2026/10/passenger-rescued-overboard-royal-caribbean.jpg?quality=65&strip=all&w=720&h=379&crop=1":"/_blob/0e46a21242685b626d5d151243aa924d","https://globalnews.ca/wp-content/uploads/2026/10/Trump-51st-state-midterms.jpg?quality=65&strip=all&w=720&h=379&crop=1":"/_blob/98bdaf56edf531466e11d2dcd8765091","https://www.ctvnews.ca/resizer/v2/VHX6TEX4CFDL5CSMHSXVM3Q7RM.png?smart=true&auth=ee1ebc20c5352b0c09c5a58ed9e68e7382dcc7ee7586b082a039549b9404dab3&width=1200&height=630":"/_blob/632d6945016f327427ba8222f24d2c8c","https://static-cdn.toi-media.com/www/uploads/2026/10/File-2.png":"/_blob/c5839a4824ecbaa18c6953a3d24c8b64","https://d3i6fh83elv35t.cloudfront.net/static/2026/10/oreganshootingpackage-1024x683.jpg":"/_blob/55c3a53750934f88aae8fbc9e7c696d1","https://d3i6fh83elv35t.cloudfront.net/static/2026/10/rallyrhetoric-1024x682.jpg":"/_blob/97532c9192edb1ece75fd57596dc4590","https://i0.wp.com/media.globalnews.ca/videostatic/news/x9hr8i2vs1-c9n2uqt8ie/Trump_AZ_Canada_WEB_thumbnail_1280x720_.jpg?w=500&quality=70&strip=all":"/_blob/be64631c9aff60a996d4f3ed3a8c93c0"};
   function photo(url, kind, alt, credit) {
     if (!url) return art(kind, alt);
     const orig = url; url = LOCAL[url] || url;
@@ -1100,7 +1138,9 @@ header.site { border-bottom: 0; }
       // Stored copy first; if it isn't there (e.g. on another host), try the outlet's original; then the illustration
       const swap = () => {
         if (img.dataset.orig && !img.dataset.triedOrig) { img.dataset.triedOrig = '1'; img.src = img.dataset.orig; return; }
-        const ph = img.closest('.ph'); if (ph) ph.outerHTML = art(ph.dataset.kind, ph.dataset.alt);
+        const ph = img.closest('.ph'); if (!ph) return;
+        if (ph.dataset.kind === 'none') { const box = ph.closest('.wthumb, .mrthumb'); if (box) { const li = box.closest('li'); if (li) li.classList.remove('wt'); box.remove(); } else ph.remove(); return; }
+        ph.outerHTML = art(ph.dataset.kind, ph.dataset.alt);
       };
       img.addEventListener('error', swap);
       if (img.complete && img.naturalWidth === 0 && img.getAttribute('src')) swap();
@@ -1205,8 +1245,10 @@ header.site { border-bottom: 0; }
     { h: 'Why Trump is reviving 51st state rhetoric with midterms in less than 3 weeks', u: 'https://globalnews.ca/news/12103949/donald-trump-51st-state-midterms/', o: [['Global News', 3, 'https://globalnews.ca/news/12103949/donald-trump-51st-state-midterms/']] },
     { h: 'A confused voter’s guide to the civic elections', u: 'https://thetyee.ca/News/2026/10/15/Voter-Guide-Civic-Election/', o: [['The Tyee', 3, 'https://thetyee.ca/News/2026/10/15/Voter-Guide-Civic-Election/']] }
   ];
+  const MRI = {"Understanding-Alberta-Separation-Referendum": "https://thetyee.ca/Opinion/2026/05/04/DanielleSmithAlbertaReferendum.jpg", "flintstones-vitamin-recall": "https://globalnews.ca/wp-content/uploads/2026/10/Aleve-e1792085538434.jpg?quality=65&strip=all&w=720&h=379&crop=1", "bc-illegal-eviction": "https://images-dh-production-baselayer.dailyhive.com/uploads/2026/10/bc-eviction.jpg?format=auto", "ndp-mp-calls-for-emergency-debate": "https://www.aptnnews.ca/wp-content/uploads/2026/06/NDP-MP-Leah-Gazan-2.jpg", "royal-caribbean-cruise-passenger": "https://globalnews.ca/wp-content/uploads/2026/10/passenger-rescued-overboard-royal-caribbean.jpg?quality=65&strip=all&w=720&h=379&crop=1", "Grand-Forks-Money-Health-Care": "https://thetyee.ca/News/2026/10/15/NeilThurley.jpg", "afn-draft-for-upcoming-meeting": "https://www.aptnnews.ca/wp-content/uploads/2025/12/AFN-MOU-DISPUTE-WEB-1.jpg", "john-legend-vancouver-2026": "https://images-dh-production-baselayer.dailyhive.com/uploads/2026/10/851829351_18031237778884978_930442065505392285_n-1-2.jpg?format=auto", "donald-trump-51st-state-midterms": "https://globalnews.ca/wp-content/uploads/2026/10/Trump-51st-state-midterms.jpg?quality=65&strip=all&w=720&h=379&crop=1", "Voter-Guide-Civic-Election": "https://thetyee.ca/News/2026/10/14/MunicipalHallBallotIllustration.jpg"};
+  const mrImg = (u) => { const k = Object.keys(MRI).find((x) => u.includes(x)); return k ? MRI[k] : ''; };
   $('mrList').innerHTML = mostRead.map((s) => '<li><div class="t"><a class="hed" href="' + esc(s.u) + '" target="_blank" rel="noopener">' + esc(s.h) + '</a><span class="outlets">' +
-    s.o.map(([name, r, link]) => '<a href="' + esc(link) + '" target="_blank" rel="noopener"><b>#' + r + '</b> ' + esc(name) + '</a>').join('') + '</span></div></li>').join('');
+    s.o.map(([name, r, link]) => '<a href="' + esc(link) + '" target="_blank" rel="noopener"><b>#' + r + '</b> ' + esc(name) + '</a>').join('') + '</span></div>' + (mrImg(s.u) ? '<a class="mrthumb" href="' + esc(s.u) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + photo(mrImg(s.u), 'none', s.h, s.o[0][0]) + '</a>' : '') + '</li>').join('');
 
   // Today's reading: real articles, in the outlet-credit format
   const reads = [
@@ -1248,8 +1290,10 @@ header.site { border-bottom: 0; }
       return Math.floor(mins / 60) + ' hr ago';
     } catch (e) { return ''; }
   }
+  const WI = {"stellantis-begin-voting": "https://globalnews.ca/wp-content/uploads/2026/10/Stellantis-e1792244648251.jpg?quality=65&strip=all&w=720&h=379&crop=1", "alberta-referendum-results-mcgill": "https://globalnews.ca/wp-content/uploads/2026/10/66448dec2477783b245bd24907a89f6317d195d18d4c2661fb7704f9003f50e2_a43a0b.jpg?quality=65&strip=all&w=720&h=379&crop=1", "how-to-watch-live-results-of-bcs": "https://www.ctvnews.ca/resizer/v2/VHX6TEX4CFDL5CSMHSXVM3Q7RM.png?smart=true&auth=ee1ebc20c5352b0c09c5a58ed9e68e7382dcc7ee7586b082a039549b9404dab3&width=1200&height=630", "stelco-federal-government": "https://globalnews.ca/wp-content/uploads/2026/10/CP177060556-e1791992284619.jpg?quality=65&strip=all&w=720&h=379&crop=1", "russia-ukraine-energy-strikes": "https://globalnews.ca/wp-content/uploads/2026/10/CP177086698-e1791986862112.jpg?quality=65&strip=all&w=720&h=379&crop=1", "flintstones-vitamin-recall": "https://globalnews.ca/wp-content/uploads/2026/10/Aleve-e1792085538434.jpg?quality=65&strip=all&w=720&h=379&crop=1", "tanker-explodes-after-hitting-mine": "https://vid.alarabiya.net/images/2026/10/17/41b26f54-9a9e-45ca-8716-508cb77c7744/41b26f54-9a9e-45ca-8716-508cb77c7744_16x9_600x338.JPG", "liveblog/2026/10/17": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/12b9ae07-f51b-4369-8a8b-203a1dcbd00d/5ff90cf5-c1b7-48a9-b1cc-b64c13bcaa27/1280x720/match/1024/512/image.jpg?ve=1&tl=1"};
+  const wImg = (u) => { const x = Object.keys(WI).find((k) => u.includes(k)); return x ? WI[x] : ''; };
   $('latestList').innerHTML = latest.slice(0, 7).map(([t, k, h, o, u]) =>
-    '<li><time>' + esc(t) + (ago(t) ? '<span class="ago">' + ago(t) + '</span>' : '') + '</time><span><span class="k' + (k === 'Breaking' ? ' hot' : '') + '">' + esc(k) + '</span><a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(h) + '</a><span class="o">' + esc(o) + '</span></span></li>').join('');
+    '<li' + (wImg(u) ? ' class="wt"' : '') + '><time>' + esc(t) + (ago(t) ? '<span class="ago">' + ago(t) + '</span>' : '') + '</time><span><span class="k' + (k === 'Breaking' ? ' hot' : '') + '">' + esc(k) + '</span><a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(h) + '</a><span class="o">' + esc(o) + '</span></span>' + (wImg(u) ? '<a class="wthumb" href="' + esc(u) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + photo(wImg(u), 'none', h, o) + '</a>' : '') + '</li>').join('');
   const tkItem = (hidden) => ([t, k, h, o, u]) => '<li' + (hidden ? ' aria-hidden="true"' : '') + '><time>' + esc(t) + '</time><a href="' + esc(u) + '" target="_blank" rel="noopener"' + (hidden ? ' tabindex="-1"' : '') + '>' + esc(h) + '</a><span class="o">' + esc(o) + '</span></li>';
   if ($('tkTrack')) $('tkTrack').innerHTML = latest.map(tkItem(false)).join('') + latest.map(tkItem(true)).join('');
 
@@ -1671,6 +1715,45 @@ header.site { border-bottom: 0; }
       }
     });
   })();
+
+  // The day in pictures: shuffled each visit, advances every 6 seconds
+  const PICS = [["https://s.yimg.com/lo/mysterio/api/c2420239db3bc10887b1e485057123a2afa4288ecf07ee1d0fd6d67812181dc8/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fcp_news_842%2F94cd3a3d0d3669a3c5aff483a883dc4d.jpg", "Alberta Premier Danielle Smith. Albertans vote Monday on whether to start the path toward a referendum on leaving Canada.", "The Canadian Press", "https://ca.news.yahoo.com/rallies-planned-final-weekend-alberta-120015382.html"], ["https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ad2d683dbb6-1792202371.jpg?resize=770%2C513&quality=80", "A firefighter battles the Norte Fire in Orange County, California, where 16,000 people have been told to leave.", "AFP via Al Jazeera", "https://www.aljazeera.com/news/2026/10/17/southern-california-wildfire-engulfs-homes-prompts-evacuation-orders"], ["https://www.aljazeera.com/wp-content/uploads/2026/10/image-1792181302.jpg?resize=730%2C410&quality=80", "Flowers and candles at a memorial in Bend, Oregon, after Thursday’s school shooting.", "Al Jazeera", "https://www.aljazeera.com/video/newsfeed/2026/10/16/oregon-community-mourns-victims-of-school-shooting"], ["https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/12b9ae07-f51b-4369-8a8b-203a1dcbd00d/5ff90cf5-c1b7-48a9-b1cc-b64c13bcaa27/1280x720/match/1024/512/image.jpg?ve=1&tl=1", "Capt. Tim Hawkins of U.S. Central Command says most of Iran’s attacks on Hormuz shipping fail.", "Fox News", "https://www.foxnews.com/video/6407012468112"], ["https://globalnews.ca/wp-content/uploads/2026/10/CP177060556-e1791992284619.jpg?quality=65&strip=all&w=720&h=379&crop=1", "Stelco’s steelworks. Ottawa is warning the company’s U.S. owner over up to 500 layoffs.", "The Canadian Press via Global News", "https://globalnews.ca/news/12101944/stelco-federal-government-legal-action/"], ["https://globalnews.ca/wp-content/uploads/2026/10/CP177086698-e1791986862112.jpg?quality=65&strip=all&w=720&h=379&crop=1", "Rescuers at a damaged building in Ukraine, as Russian strikes on energy sites go on despite a ceasefire claim.", "The Canadian Press via Global News", "https://globalnews.ca/news/12101977/russia-ukraine-energy-strikes/"], ["https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ad270d1-1792176337.jpg?resize=770%2C513&quality=80", "Katie Zacharia, out as White House press secretary after five days.", "Reuters via Al Jazeera", "https://www.aljazeera.com/news/2026/10/16/white-house-press-secretary-katie-zacharia-fired-after-five-days-on-the-job"], ["https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6ad2bbbfc8926-1792195519.jpg?resize=770%2C513&quality=80", "A U.S. Coast Guard helicopter. The Coast Guard rescued 16 people after a boat sank off Baja California.", "AP via Al Jazeera", "https://www.aljazeera.com/news/2026/10/17/us-coastguard-rescues-16-after-boat-sinks-off-mexicos-baja-coast"], ["https://www.aljazeera.com/wp-content/uploads/2026/10/image-1792213059.jpg?resize=770%2C433&quality=80", "Donald Trump speaks to reporters at the White House as he pauses new Russia sanctions.", "Al Jazeera", "https://www.aljazeera.com/video/newsfeed/2026/10/17/trump-waives-russia-sanctions-as-rift-with-zelenskyy-widens"], ["https://globalnews.ca/wp-content/uploads/2026/10/66448dec2477783b245bd24907a89f6317d195d18d4c2661fb7704f9003f50e2_a43a0b.jpg?quality=65&strip=all&w=720&h=379&crop=1", "A polling station sign in Alberta. Researchers see posts online already preparing to dispute Monday’s result.", "Global News", "https://globalnews.ca/news/12105632/alberta-referendum-results-mcgill-online-research"], ["https://globalnews.ca/wp-content/uploads/2026/10/Stellantis-e1792244648251.jpg?quality=65&strip=all&w=720&h=379&crop=1", "Contract talks between Stellantis and its workers have stalled as they vote on a strike mandate.", "Global News", "https://globalnews.ca/news/12106389/stellantis-begin-voting-strike-mandate/"], ["https://globalnews.ca/wp-content/uploads/2026/10/Aleve-e1792085538434.jpg?quality=65&strip=all&w=720&h=379&crop=1", "Aleve is among the common products in a new recall.", "Global News", "https://globalnews.ca/news/12103845/flintstones-vitamin-recall-aleve-claritin/"]];
+  for (let i = PICS.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [PICS[i], PICS[j]] = [PICS[j], PICS[i]]; }
+  let pi = 0, pTimer = null, paused = false;
+  const still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const icoPrev = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>';
+  const icoNext = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>';
+  const icoPause = '<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14"/><rect x="14" y="5" width="4" height="14"/></svg>';
+  const icoPlay = '<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg>';
+  $('pics').innerHTML = '<a class="stage" id="picStage" target="_blank" rel="noopener"></a>' +
+    '<div class="cap"><div><p id="picCap"></p><small id="picCred"></small></div><div class="ctl"><span class="count" id="picCount"></span>' +
+    '<button type="button" id="picPrev" aria-label="Previous photo">' + icoPrev + '</button><button type="button" id="picPause" aria-label="Pause">' + icoPause + '</button><button type="button" id="picNext" aria-label="Next photo">' + icoNext + '</button></div></div>' +
+    '<div class="strip" id="picStrip">' + PICS.map(([u, c], i) => '<button type="button" data-i="' + i + '" aria-label="Photo ' + (i + 1) + '">' + photo(u, 'city', '', '') + '</button>').join('') + '</div>';
+  function showPic(i) {
+    pi = (i + PICS.length) % PICS.length;
+    const [u, c, cr, link] = PICS[pi];
+    $('picStage').href = link;
+    $('picStage').innerHTML = photo(u, 'city', c, cr);
+    $('picCap').textContent = c;
+    $('picCred').innerHTML = 'Photo: ' + esc(cr) + ' · <a href="' + esc(link) + '" target="_blank" rel="noopener">Read the story &#8599;</a>';
+    $('picCount').textContent = (pi + 1) + ' / ' + PICS.length;
+    document.querySelectorAll('#picStrip button').forEach((b, j) => b.setAttribute('aria-current', String(j === pi)));
+    const cur = document.querySelector('#picStrip button[aria-current="true"]');
+    if (cur && cur.scrollIntoView) { const st = $('picStrip'); st.scrollLeft = cur.offsetLeft - st.clientWidth / 2 + cur.clientWidth / 2; }
+    wirePhotos();
+  }
+  function startPics() { clearInterval(pTimer); if (!paused) pTimer = setInterval(() => showPic(pi + 1), 6000); }
+  $('picPrev').addEventListener('click', () => { showPic(pi - 1); startPics(); });
+  $('picNext').addEventListener('click', () => { showPic(pi + 1); startPics(); });
+  $('picPause').addEventListener('click', () => {
+    paused = !paused; $('picPause').innerHTML = paused ? icoPlay : icoPause; $('picPause').setAttribute('aria-label', paused ? 'Play' : 'Pause'); startPics();
+  });
+  $('picStrip').addEventListener('click', (e) => { const b = e.target.closest('button'); if (b) { showPic(Number(b.dataset.i)); startPics(); } });
+  $('pics').addEventListener('mouseenter', () => clearInterval(pTimer));
+  $('pics').addEventListener('mouseleave', startPics);
+  $('pics').addEventListener('focusin', () => clearInterval(pTimer));
+  if (still) { paused = true; $('picPause').innerHTML = icoPlay; $('picPause').setAttribute('aria-label', 'Play'); }
+  showPic(0); startPics();
 
   // Compact bar once the nameplate scrolls off
   const stick = $('stick');
