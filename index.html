@@ -700,6 +700,14 @@ header.site { border-bottom: 0; }
 .us-verified { margin: 0 0 18px; padding: 10px 14px; background: var(--soft); font-size: 14px; color: var(--body); }
 .us-verified b { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--title); margin-right: 8px; }
 .us-verified a { font-weight: 600; color: var(--accent); }
+
+/* Screenshots the editor adds to post and video cards */
+.ph.shot img { object-position: center 20%; }
+.addshot { position: relative; z-index: 3; display: inline-flex; align-items: center; gap: 6px; min-height: 32px; padding: 0 10px; border: 1px dashed var(--accent); background: var(--surface); color: var(--accent); font: inherit; font-size: 12.5px; font-weight: 700; cursor: pointer; }
+.addshot:hover { background: var(--soft); }
+.addshot[aria-busy="true"] { opacity: .6; cursor: progress; }
+.vid .addshot, .read .addshot { align-self: flex-start; margin-top: 4px; }
+.shot-toast { position: fixed; left: 50%; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); z-index: 60; max-width: min(92vw, 460px); padding: 10px 16px; background: var(--band); color: var(--band-ink); font-size: 14px; box-shadow: 0 6px 20px rgba(15, 11, 25, .3); }
 </style>
 
 <header class="site">
@@ -1044,6 +1052,12 @@ header.site { border-bottom: 0; }
 (() => {
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const $ = (id) => document.getElementById(id);
+  // Screenshots the editor has added (slot -> asset id), and whether this viewer may add them
+  const MEDIA = {};
+  let CAN_UPLOAD = false;
+  const slotId = (u) => String(u).replace(/^https?:\/\//, '').replace(/[^a-z0-9]+/gi, '-').replace(/^-+|-+$/g, '').slice(-90) || 'x';
+  const shot = (slot) => '<span class="ph shot"><img src="/_blob/' + MEDIA[slot] + '" alt="" loading="lazy" decoding="async"></span>';
+  const addBtn = (slot) => CAN_UPLOAD ? '<button type="button" class="addshot" data-slot="' + slot + '">' + (MEDIA[slot] ? 'Replace screenshot' : '+ Add screenshot') + '</button>' : '';
 
   // Stand-in illustrations, drawn in the house purples and burgundy.
   // On the live site each slot takes a licensed news photo instead.
@@ -1254,7 +1268,7 @@ header.site { border-bottom: 0; }
     const where = p.platform || 'X';
     const play = p.media === 'video' ? '<span class="playbtn"><svg width="18" height="18" viewBox="0 0 24 24" fill="#2B1B54" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>' : '';
     return '<article class="read">' +
-      '<a class="pic" href="' + esc(p.href) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + (p.img ? photo(p.img, p.pic || PIC[p.cat] || 'city', kind + ' from ' + p.name, p.credit) : art(p.pic || PIC[p.cat] || 'city', kind + ' from ' + p.name)) + play + '<span class="tag">' + (/statement/i.test(where) ? esc(where) : kind + ' on ' + esc(where)) + '</span></a>' +
+      '<a class="pic" href="' + esc(p.href) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + (MEDIA[slotId(p.href)] ? shot(slotId(p.href)) : p.img ? photo(p.img, p.pic || PIC[p.cat] || 'city', kind + ' from ' + p.name, p.credit) : art(p.pic || PIC[p.cat] || 'city', kind + ' from ' + p.name)) + play + '<span class="tag">' + (/statement/i.test(where) ? esc(where) : kind + ' on ' + esc(where)) + '</span></a>' +
       '<div class="txt">' +
       '<span class="author">' + esc(p.name) + '<span class="vt">' + tick + '</span></span>' +
       '<span class="role">' + esc(p.role) + ' · ' + esc(p.handle) + '</span>' +
@@ -1262,10 +1276,12 @@ header.site { border-bottom: 0; }
       '<p class="gist">' + esc(p.summary) + '</p>' +
       '<span class="src"><span>' + esc(p.date) + '</span><a href="' + esc(p.href) + '" target="_blank" rel="noopener">' + (p.report ? 'Read the report' : 'See it on ' + where) + ' &#8599;</a>' +
       (p.profile ? '<a class="alt" href="' + esc(p.profile) + '" target="_blank" rel="noopener">' + esc(p.handle) + ' on X &#8599;</a>' : '') +
-      (p.ig && where === 'X' ? '<a class="alt" href="' + esc(p.ig) + '" target="_blank" rel="noopener">Instagram &#8599;</a>' : '') + '</span>' +
+      (p.ig && where === 'X' ? '<a class="alt" href="' + esc(p.ig) + '" target="_blank" rel="noopener">Instagram &#8599;</a>' : '') + '</span>' + addBtn(slotId(p.href)) +
       '</div></article>';
   }
+  let curCat = 'all';
   function showPosts(cat) {
+    curCat = cat;
     const list = posts.filter((p) => cat === 'all' || p.cat === cat);
     $('record').innerHTML = list.length ? list.map(postCard).join('') : '<div class="empty">No posts from this group yet. New posts are checked every hour.</div>';
     wirePhotos();
@@ -1346,11 +1362,13 @@ header.site { border-bottom: 0; }
     { r: 'ca', o: 'Global News', d: '2:06', t: 'U.S. ambassador Hoekstra tells Canada to stay out of American politics', w: 'Oct 14', u: 'https://globalnews.ca/video/12103135/u-s-ambassador-hoekstra-warns-canada-to-keep-your-nose-out-of-american-politics/', pic: 'parliament' }
   ];
   const tri = '<svg width="10" height="10" viewBox="0 0 24 24" fill="#2B1B54" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg>';
+  let curV = 'all';
   function showVids(r) {
+    curV = r;
     const list = vids.filter((v) => r === 'all' || v.r === r);
-    $('vids').innerHTML = list.map((v) => '<article class="vid"><a class="vt" href="' + esc(v.u) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + photo(v.img, v.pic, v.t, v.o) +
+    $('vids').innerHTML = list.map((v) => '<article class="vid"><a class="vt" href="' + esc(v.u) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + (MEDIA[slotId(v.u)] ? shot(slotId(v.u)) : photo(v.img, v.pic, v.t, v.o)) +
       '<span class="pb' + (v.live ? ' live' : '') + '"><i>' + tri + '</i>' + (v.live ? 'Live' : v.d ? esc(v.d) : 'Watch') + '</span></a>' +
-      '<span class="src">' + esc(v.o) + '</span><h3><a href="' + esc(v.u) + '" target="_blank" rel="noopener">' + esc(v.t) + '</a></h3><span class="when">' + esc(v.w) + '</span></article>').join('');
+      '<span class="src">' + esc(v.o) + '</span><h3><a href="' + esc(v.u) + '" target="_blank" rel="noopener">' + esc(v.t) + '</a></h3><span class="when">' + esc(v.w) + '</span>' + addBtn(slotId(v.u)) + '</article>').join('');
     wirePhotos();
   }
   document.querySelectorAll('.vfilters button').forEach((b) => b.addEventListener('click', () => {
@@ -1579,6 +1597,68 @@ header.site { border-bottom: 0; }
   window.addEventListener('hashchange', openFromHash);
   document.addEventListener('click', (e) => { const a = e.target.closest('a[href^="#bd-"]'); if (a) { const el = document.getElementById(a.getAttribute('href').slice(1)); if (el) el.open = true; } });
   openFromHash();
+
+  // Editor screenshots: stored with this page, shown to every viewer
+  function rerenderMedia() { showPosts(curCat); showVids(curV); }
+  function toast(msg) {
+    let t = document.querySelector('.shot-toast');
+    if (!t) { t = document.createElement('div'); t.className = 'shot-toast'; t.setAttribute('role', 'status'); document.body.appendChild(t); }
+    t.textContent = msg; t.hidden = false;
+    clearTimeout(toast.h); toast.h = setTimeout(() => { t.hidden = true; }, 4200);
+  }
+  async function shrink(file) {
+    try {
+      const bmp = await createImageBitmap(file);
+      const sc = Math.min(1, 1400 / Math.max(bmp.width, bmp.height));
+      const c = document.createElement('canvas');
+      c.width = Math.round(bmp.width * sc); c.height = Math.round(bmp.height * sc);
+      c.getContext('2d').drawImage(bmp, 0, 0, c.width, c.height);
+      return await new Promise((r) => c.toBlob((b) => r(b || file), 'image/jpeg', 0.86));
+    } catch (e) { return file; }
+  }
+  (async () => {
+    if (!window.claude || typeof window.claude.use !== 'function') return;
+    let db = null, assets = null;
+    try { [db, assets] = await Promise.all([window.claude.use('db'), window.claude.use('assets')]); } catch (e) { return; }
+    if (!db) return;
+    const col = db.collection('media');
+    col.onSnapshot((snap) => {
+      Object.keys(MEDIA).forEach((k) => { delete MEDIA[k]; });
+      snap.docs.forEach((d) => { const v = d.data(); if (v && typeof v.asset === 'string' && /^[0-9a-f]{32}$/.test(v.asset)) MEDIA[d.id] = v.asset; });
+      rerenderMedia();
+    }, () => {});
+    if (!assets) return;
+    CAN_UPLOAD = true;
+    rerenderMedia();
+    const input = document.createElement('input');
+    input.type = 'file'; input.accept = 'image/png,image/jpeg,image/webp'; input.hidden = true; input.id = 'shotInput';
+    document.body.appendChild(input);
+    let target = null;
+    document.addEventListener('click', (e) => {
+      const b = e.target.closest('.addshot');
+      if (!b) return;
+      e.preventDefault(); e.stopPropagation();
+      target = b; input.value = ''; input.click();
+    });
+    input.addEventListener('change', async () => {
+      const file = input.files && input.files[0];
+      if (!file || !target) return;
+      const slot = target.dataset.slot;
+      target.setAttribute('aria-busy', 'true'); target.textContent = 'Uploading…';
+      try {
+        const blob = await shrink(file);
+        const res = await assets.upload(blob, { type: blob.type && /^image\/(png|jpeg|webp)$/.test(blob.type) ? blob.type : 'image/jpeg' });
+        await col.doc(slot).set({ asset: res.id, at: Date.now() });
+        MEDIA[slot] = res.id;
+        rerenderMedia();
+        toast('Screenshot added. Everyone who opens this page now sees it.');
+      } catch (err) {
+        const code = err && err.code;
+        toast(code === 'unsupported_type' ? 'That file type won’t work. Use a screenshot (PNG or JPG).' : code === 'too_large' ? 'That image is too big. Try a smaller screenshot.' : code === 'rate_limited' ? 'Too many uploads at once. Wait a moment and try again.' : 'The screenshot didn’t upload. Try again.');
+        rerenderMedia();
+      }
+    });
+  })();
 
   // Compact bar once the nameplate scrolls off
   const stick = $('stick');
