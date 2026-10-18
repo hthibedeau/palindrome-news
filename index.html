@@ -1083,16 +1083,24 @@ header.site { border-bottom: 0; }
     return `<svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice" role="img" aria-label="${esc(alt || 'Illustration')}">${draw(tint)}</svg>`;
   }
   // A real photo from the outlet, credited. Where it can't load, the illustration stands in.
+  // Outlet photos copied into this page's own storage (original URL -> stored copy), so they load on the preview link
+  const LOCAL = {"https://globalnews.ca/wp-content/uploads/2026/10/66448dec2477783b245bd24907a89f6317d195d18d4c2661fb7704f9003f50e2_a43a0b.jpg?quality=65&strip=all&w=720&h=379&crop=1": "/_blob/686eec11bfcbfef4263b35acddcdde23","https://globalnews.ca/wp-content/uploads/2026/10/Aleve-e1792085538434.jpg?quality=65&strip=all&w=720&h=379&crop=1": "/_blob/cd17a0340e439563f69a7419defedafe","https://globalnews.ca/wp-content/uploads/2026/10/CP177060556-e1791992284619.jpg?quality=65&strip=all&w=720&h=379&crop=1": "/_blob/41fb0e23e28637f74e6ba0459b2d7331","https://globalnews.ca/wp-content/uploads/2026/10/CP177086698-e1791986862112.jpg?quality=65&strip=all&w=720&h=379&crop=1": "/_blob/1c60f2622c4b20ae09ae875ec4e566a1","https://globalnews.ca/wp-content/uploads/2026/10/Stellantis-e1792244648251.jpg?quality=65&strip=all&w=720&h=379&crop=1": "/_blob/827f6deed7dab8b357541410ec400d92","https://truth-archive.us-iad-1.linodeobjects.com/attachments/18556/e9c8f0673df961f2-20222c41b3bc.jpg": "/_blob/982e74c20ce2bcb27edb86a3168f55dc","https://truth-archive.us-iad-1.linodeobjects.com/attachments/18562/poster/24e0f60013c09069-7ac4f5bca5d4.jpg": "/_blob/e4ed53b15c9fef8a897b711f835f7b49"};
   function photo(url, kind, alt, credit) {
     if (!url) return art(kind, alt);
-    return '<span class="ph" data-kind="' + esc(kind) + '" data-alt="' + esc(alt || '') + '"><img src="' + esc(url) + '" alt="' + esc(alt || '') + '" loading="lazy" decoding="async" referrerpolicy="no-referrer">' + (credit ? '<span class="credit">' + esc(credit) + '</span>' : '') + '</span>';
+    const orig = url; url = LOCAL[url] || url;
+    return '<span class="ph" data-kind="' + esc(kind) + '" data-alt="' + esc(alt || '') + '"><img src="' + esc(url) + '"' + (url !== orig ? ' data-orig="' + esc(orig) + '"' : '') + ' alt="' + esc(alt || '') + '" loading="lazy" decoding="async" referrerpolicy="no-referrer">' + (credit ? '<span class="credit">' + esc(credit) + '</span>' : '') + '</span>';
   }
   function wirePhotos() {
     document.querySelectorAll('.ph img').forEach((img) => {
       if (img.dataset.wired) return;
       img.dataset.wired = '1';
-      const swap = () => { const ph = img.closest('.ph'); if (ph) ph.outerHTML = art(ph.dataset.kind, ph.dataset.alt); };
-      if (img.complete && img.naturalWidth === 0 && img.getAttribute('src')) swap(); else img.addEventListener('error', swap);
+      // Stored copy first; if it isn't there (e.g. on another host), try the outlet's original; then the illustration
+      const swap = () => {
+        if (img.dataset.orig && !img.dataset.triedOrig) { img.dataset.triedOrig = '1'; img.src = img.dataset.orig; return; }
+        const ph = img.closest('.ph'); if (ph) ph.outerHTML = art(ph.dataset.kind, ph.dataset.alt);
+      };
+      img.addEventListener('error', swap);
+      if (img.complete && img.naturalWidth === 0 && img.getAttribute('src')) swap();
     });
   }
   const initials = (name) => name.split(/\s+/).filter((w) => /^[A-Z]/.test(w)).slice(0, 2).map((w) => w[0]).join('');
