@@ -21,3 +21,7 @@ Both pages open directly in a web browser. They are previews: the live site will
 - Tapping a story takes the reader straight to the original article.
 - Breaking news can run with credit to the outlet that reported it, and takes over the top of the homepage.
 - Sponsors pay for the site but never choose or rank the news. Paid editorials are always labelled.
+
+## Photos on the preview link
+
+The claude.ai preview blocks images hosted on other websites, so outlet photos are copied into the page's own storage. `tools/localize_images.py index.html <folder>` downloads every photo it can reach and lists the exact host names still to approve under claude.ai Settings > Capabilities > Allow network egress. The page tries the stored copy first, then the outlet's original, then a drawn illustration.
