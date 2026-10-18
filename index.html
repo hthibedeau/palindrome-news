@@ -552,6 +552,12 @@ header.site { border-bottom: 0; }
 .vid h3 a::after { content: ""; position: absolute; inset: 0; z-index: 1; }
 @media (hover: hover) { .vid:hover h3 a { color: var(--accent); } }
 .vid .when { font-size: 12px; color: var(--muted); }
+/* Big play button on every Watch clip: one tap opens the clip on the outlet's site */
+.vid .bigplay { position: absolute; z-index: 2; top: 0; left: 0; width: 100%; aspect-ratio: 16 / 9; display: flex; align-items: center; justify-content: center; }
+.vid .bigplay svg { box-sizing: content-box; padding: 14px 13px 14px 17px; border-radius: 50%; background: rgba(255, 255, 255, .92); box-shadow: 0 4px 18px rgba(15, 11, 25, .45); transition: transform .15s ease; }
+@media (hover: hover) { .vid:hover .bigplay svg { transform: scale(1.1); } }
+.vid .bigplay:focus-visible { outline: 3px solid var(--accent); outline-offset: -3px; }
+.vid .plays { font-weight: 600; letter-spacing: 0; text-transform: none; color: var(--muted); }
 .vfilters { margin-bottom: 14px; }
 /* What America's newsrooms are leading with */
 .fronts-us { margin-top: 32px; padding-top: 18px; border-top: 1px solid var(--line); }
@@ -928,7 +934,7 @@ header.site { border-bottom: 0; }
   </section>
 
   <section id="video" aria-labelledby="w-h" style="scroll-margin-top: 64px">
-    <div class="band-head"><h2 id="w-h">Watch</h2><p>The day's news on video, from newsrooms in Canada, the U.S. and abroad. Every clip plays on the outlet's own site.</p></div>
+    <div class="band-head"><h2 id="w-h">Watch</h2><p>The day's news on video, from newsrooms in Canada, the U.S. and abroad. Press play and the clip opens on the outlet's own site.</p></div>
     <div class="filters vfilters" role="group" aria-label="Filter videos">
       <button type="button" data-v="all" aria-pressed="true">All</button>
       <button type="button" data-v="ca" aria-pressed="false">Canada</button>
@@ -1483,14 +1489,17 @@ header.site { border-bottom: 0; }
     { r: 'ca', o: 'Global News', d: '0:55', t: '“Canada will end up being the 51st state,” Trump says', w: 'Oct 14', u: 'https://globalnews.ca/video/12103040/canada-will-end-up-being-the-51st-state-trump-says/', img: 'https://i0.wp.com/media.globalnews.ca/videostatic/news/x9hr8i2vs1-c9n2uqt8ie/Trump_AZ_Canada_WEB_thumbnail_1280x720_.jpg?w=500&quality=70&strip=all', pic: 'globe' },
     { r: 'ca', o: 'Global News', d: '2:06', t: 'U.S. ambassador Hoekstra tells Canada to stay out of American politics', w: 'Oct 14', u: 'https://globalnews.ca/video/12103135/u-s-ambassador-hoekstra-warns-canada-to-keep-your-nose-out-of-american-politics/', pic: 'parliament' }
   ];
+  // YouTube clips start playing as soon as they open; the outlets' own players start on their pages
+  const vurl = (u) => /youtube\.com\/watch/.test(u) ? u + (u.includes('autoplay') ? '' : '&autoplay=1') : u;
   const tri = '<svg width="10" height="10" viewBox="0 0 24 24" fill="#2B1B54" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg>';
   let curV = 'all';
   function showVids(r) {
     curV = r;
     const list = vids.filter((v) => r === 'all' || v.r === r);
-    $('vids').innerHTML = list.map((v) => '<article class="vid"><a class="vt" href="' + esc(v.u) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + (MEDIA[slotId(v.u)] ? shot(slotId(v.u)) : photo(v.img, v.pic, v.t, v.o)) +
-      '<span class="pb' + (v.live ? ' live' : '') + '"><i>' + tri + '</i>' + (v.live ? 'Live' : v.d ? esc(v.d) : 'Watch') + '</span></a>' +
-      '<span class="src">' + esc(v.o) + '</span><h3><a href="' + esc(v.u) + '" target="_blank" rel="noopener">' + esc(v.t) + '</a></h3><span class="when">' + esc(v.w) + '</span>' + addBtn(slotId(v.u)) + '</article>').join('');
+    $('vids').innerHTML = list.map((v) => '<article class="vid"><a class="vt" href="' + esc(vurl(v.u)) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + (MEDIA[slotId(v.u)] ? shot(slotId(v.u)) : photo(v.img, v.pic, v.t, v.o)) +
+      '<span class="pb' + (v.live ? ' live' : '') + '">' + (v.live ? 'Live' : v.d ? esc(v.d) : 'Video') + '</span></a>' +
+      '<a class="bigplay" href="' + esc(vurl(v.u)) + '" target="_blank" rel="noopener" aria-label="Play on ' + esc(v.o) + ': ' + esc(v.t) + '"><svg width="30" height="30" viewBox="0 0 24 24" fill="#2B1B54" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></a>' +
+      '<span class="src">' + esc(v.o) + ' <span class="plays">· plays on their site &#8599;</span></span><h3><a href="' + esc(v.u) + '" target="_blank" rel="noopener">' + esc(v.t) + '</a></h3><span class="when">' + esc(v.w) + '</span>' + addBtn(slotId(v.u)) + '</article>').join('');
     wirePhotos();
   }
   document.querySelectorAll('.vfilters button').forEach((b) => b.addEventListener('click', () => {
