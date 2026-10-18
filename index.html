@@ -540,7 +540,7 @@ header.site { border-bottom: 0; }
 
 /* Watch: the day's video, newest first */
 .vids { display: grid; grid-auto-flow: column; grid-auto-columns: min(280px, 78vw); gap: 18px; overflow-x: auto; padding-bottom: 10px; scroll-snap-type: x proximity; scrollbar-width: thin; }
-.vid { position: relative; cursor: default; scroll-snap-align: start; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.vid { position: relative; cursor: pointer; scroll-snap-align: start; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
 .vid .vt { position: relative; display: block; aspect-ratio: 16 / 9; max-width: 100%; overflow: hidden; background: #2B1B54; }
 .vid .vt svg { width: 100%; height: 100%; display: block; }
 .vid .vt .ph .credit { left: auto; right: 8px; top: 8px; bottom: auto; }
@@ -553,8 +553,7 @@ header.site { border-bottom: 0; }
 @media (hover: hover) { .vid:hover h3 a { color: var(--accent); } }
 .vid .when { font-size: 12px; color: var(--muted); }
 /* Big play button on every Watch clip: one tap opens the clip on the outlet's site */
-.vid .bigplay { position: absolute; z-index: 2; top: 0; left: 0; width: 100%; aspect-ratio: 16 / 9; display: flex; align-items: center; justify-content: center; pointer-events: none; }
-.vid .bigplay svg { pointer-events: auto; cursor: pointer; }
+.vid .bigplay { position: absolute; z-index: 2; top: 0; left: 0; width: 100%; aspect-ratio: 16 / 9; display: flex; align-items: center; justify-content: center; }
 .vid .bigplay svg { box-sizing: content-box; padding: 14px 13px 14px 17px; border-radius: 50%; background: rgba(255, 255, 255, .92); box-shadow: 0 4px 18px rgba(15, 11, 25, .45); transition: transform .15s ease; }
 @media (hover: hover) { .vid:hover .bigplay svg { transform: scale(1.1); } }
 .vid .bigplay:focus-visible { outline: 3px solid var(--accent); outline-offset: -3px; }
@@ -674,6 +673,10 @@ header.site { border-bottom: 0; }
 .bd .bdimg svg { width: 100%; height: 100%; display: block; }
 .bd .k, .bd h3, .bd .lede1 { grid-column: 2; }
 @media (hover: hover) { .bd h3 a:hover { color: var(--accent); } }
+/* The whole breakdown card opens the story; only the summary button stays a button */
+.bd > .sum { cursor: pointer; }
+.bd h3 a::after { content: ""; position: absolute; inset: 0; z-index: 1; }
+.bd .tog, .bd .bdimg { position: relative; z-index: 2; }
 .bd .lede1 .via { font-size: 12.5px; font-weight: 600; color: var(--accent); white-space: nowrap; }
 .bd .tog { border: 1px solid var(--chipline); background: var(--surface); min-height: 40px; padding: 0 12px; font: inherit; cursor: pointer; }
 .bd .k { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--wine); }
@@ -937,7 +940,7 @@ header.site { border-bottom: 0; }
   </section>
 
   <section id="video" aria-labelledby="w-h" style="scroll-margin-top: 64px">
-    <div class="band-head"><h2 id="w-h">Watch</h2><p>The day's news on video, from newsrooms in Canada, the U.S. and abroad. Only the play button opens a clip, on the outlet's own site.</p></div>
+    <div class="band-head"><h2 id="w-h">Watch</h2><p>The day's news on video, from newsrooms in Canada, the U.S. and abroad. Tap any clip to watch it on the outlet's own site.</p></div>
     <div class="filters vfilters" role="group" aria-label="Filter videos">
       <button type="button" data-v="all" aria-pressed="true">All</button>
       <button type="button" data-v="ca" aria-pressed="false">Canada</button>
@@ -1495,17 +1498,17 @@ header.site { border-bottom: 0; }
     { r: 'ca', o: 'Global News', d: '0:55', t: '“Canada will end up being the 51st state,” Trump says', w: 'Oct 14', u: 'https://globalnews.ca/video/12103040/canada-will-end-up-being-the-51st-state-trump-says/', img: 'https://i0.wp.com/media.globalnews.ca/videostatic/news/x9hr8i2vs1-c9n2uqt8ie/Trump_AZ_Canada_WEB_thumbnail_1280x720_.jpg?w=500&quality=70&strip=all', pic: 'globe' },
     { r: 'ca', o: 'Global News', d: '2:06', t: 'U.S. ambassador Hoekstra tells Canada to stay out of American politics', w: 'Oct 14', u: 'https://globalnews.ca/video/12103135/u-s-ambassador-hoekstra-warns-canada-to-keep-your-nose-out-of-american-politics/', pic: 'parliament' }
   ];
-  // Only the play button opens a clip, and nothing starts playing by itself
+  // Every part of a clip card opens it on the outlet's site; nothing starts by itself
   const vurl = (u) => u;
   const tri = '<svg width="10" height="10" viewBox="0 0 24 24" fill="#2B1B54" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg>';
   let curV = 'all';
   function showVids(r) {
     curV = r;
     const list = vids.filter((v) => r === 'all' || v.r === r);
-    $('vids').innerHTML = list.map((v) => '<article class="vid"><span class="vt" aria-hidden="true">' + (MEDIA[slotId(v.u)] ? shot(slotId(v.u)) : photo(v.img, v.pic, v.t, v.o)) +
-      '<span class="pb' + (v.live ? ' live' : '') + '">' + (v.live ? 'Live' : v.d ? esc(v.d) : 'Video') + '</span></span>' +
+    $('vids').innerHTML = list.map((v) => '<article class="vid"><a class="vt" href="' + esc(v.u) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + (MEDIA[slotId(v.u)] ? shot(slotId(v.u)) : photo(v.img, v.pic, v.t, v.o)) +
+      '<span class="pb' + (v.live ? ' live' : '') + '">' + (v.live ? 'Live' : v.d ? esc(v.d) : 'Video') + '</span></a>' +
       '<a class="bigplay" href="' + esc(vurl(v.u)) + '" target="_blank" rel="noopener" aria-label="Play on ' + esc(v.o) + ': ' + esc(v.t) + '"><svg width="30" height="30" viewBox="0 0 24 24" fill="#2B1B54" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></a>' +
-      '<span class="src">' + esc(v.o) + ' <span class="plays">· plays on their site &#8599;</span></span><h3>' + esc(v.t) + '</h3><span class="when">' + esc(v.w) + '</span>' + addBtn(slotId(v.u)) + '</article>').join('');
+      '<span class="src">' + esc(v.o) + ' <span class="plays">· plays on their site &#8599;</span></span><h3><a href="' + esc(v.u) + '" target="_blank" rel="noopener">' + esc(v.t) + '</a></h3><span class="when">' + esc(v.w) + '</span>' + addBtn(slotId(v.u)) + '</article>').join('');
     wirePhotos();
   }
   document.querySelectorAll('.vfilters button').forEach((b) => b.addEventListener('click', () => {
