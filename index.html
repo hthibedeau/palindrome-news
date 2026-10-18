@@ -904,7 +904,8 @@ header.site { border-bottom: 0; }
       <button type="button" data-cat="pm" aria-pressed="false">Prime Minister</button>
       <button type="button" data-cat="mp" aria-pressed="false">MPs &amp; ministers</button>
       <button type="button" data-cat="premier" aria-pressed="false">Premiers</button>
-      <button type="button" data-cat="intl" aria-pressed="false">International</button>
+      <button type="button" data-cat="us" aria-pressed="false">Trump &amp; U.S.</button>
+      <button type="button" data-cat="intl" aria-pressed="false">World leaders</button>
     </div>
     <div class="reads" id="record" aria-live="polite"></div>
     <p class="fine">Summaries are written by Palindrome. Verified accounts only, confirmed against official government websites. On the live site, each card shows the post's own photo or video still; illustrations stand in here.</p>
@@ -1205,6 +1206,11 @@ header.site { border-bottom: 0; }
   // On the record (real posts; the hourly update replaces this list on the live site)
   const tick = '<svg width="15" height="15" viewBox="0 0 24 24" role="img" aria-label="Verified account"><circle cx="12" cy="12" r="10" fill="#6A3FC8"/><path d="M7.5 12.5l3 3 6-6.5" fill="none" stroke="#FFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   const posts = [
+    { cat: 'intl', media: 'none', initials: 'VZ', name: 'Volodymyr Zelenskyy', role: 'President of Ukraine', date: 'Oct 17', platform: 'X', handle: '@ZelenskyyUa', quote: 'We must not give up ground.', summary: 'Says Russia sent more than 320 Shahed drones overnight at Ukraine’s energy system, and ties the attack to the U.S. pause on Russia sanctions. As reported by Newsweek.', href: 'https://www.newsweek.com/zelensky-russia-energy-attack-trump-sanctions-waiver-12583734', report: true, profile: 'https://x.com/ZelenskyyUa', pic: 'powerline' },
+    { cat: 'us', media: 'none', initials: 'DT', name: 'Donald J. Trump', role: 'President of the United States', date: 'Oct 17', platform: 'Truth Social', handle: '@realDonaldTrump', quote: 'Heading to Kentucky! Will be landing soon.', summary: 'Posted on his way to the Highland Heights rally. He talks up the crowd and urges Kentuckians to elect Andy Barr to the U.S. Senate.', href: 'https://truthsocial.com/@realDonaldTrump/117457204970246458', pic: 'podium' },
+    { cat: 'us', media: 'video', initials: 'DT', name: 'Donald J. Trump', role: 'President of the United States', date: 'Oct 17', platform: 'Truth Social', handle: '@realDonaldTrump', hed: 'Endorses Mike Rogers for the Senate in Michigan', summary: 'One of six midterm endorsement videos posted Saturday. He backs Rogers and calls the Democratic candidate, Abdul El-Sayed, weak.', href: 'https://truthsocial.com/@realDonaldTrump/117457346173487081', pic: 'parliament' },
+    { cat: 'us', media: 'photo', initials: 'DT', name: 'Donald J. Trump', role: 'President of the United States', date: 'Oct 17', platform: 'Truth Social', handle: '@realDonaldTrump', quote: 'Best in History!', summary: 'Posted just after midnight with a graphic saying the S&P 500 is up 30% from December 2024 to September 2026.', href: 'https://truthsocial.com/@realDonaldTrump/117454292438977074', pic: 'chart' },
+    { cat: 'intl', media: 'video', initials: 'BN', name: 'Benjamin Netanyahu', role: 'Prime Minister of Israel', date: 'Oct 16', platform: 'Video statement', handle: 'Prime Minister’s Office', quote: 'This is our homeland, we will not gamble with our survival', summary: 'A video message in English answering Barack Obama’s remark that Israel “took land off people.” He says Jews are not foreign occupiers in their ancestral land. As reported by The Times of Israel.', href: 'https://www.timesofisrael.com/liveblog_entry/after-obama-said-israel-took-land-off-people-netanyahu-fires-back-this-is-our-homeland-we-will-not-gamble-with-our-survival/', report: true, pic: 'globe' },
     { cat: 'pm', media: 'video', initials: 'MC', name: 'Mark Carney', role: 'Prime Minister of Canada', date: 'Oct 12', platform: 'X', handle: '@MarkJCarney', quote: 'Canada is worth fighting for.', summary: 'A Thanksgiving video to Albertans a week before the separation vote. Filmed at his old Edmonton high school, he argued the country is stronger united.', href: 'https://x.com/MarkJCarney/status/2109645591533748420', ig: 'https://www.instagram.com/markjcarney/' },
     { cat: 'intl', media: 'none', initials: 'VZ', name: 'Volodymyr Zelenskyy', role: 'President of Ukraine', date: 'Oct 14', platform: 'X', handle: '@ZelenskyyUa', quote: 'Overnight, the Russians used 39 ballistic missiles and more than 120 attack drones…', summary: 'Says Russia fired 39 ballistic missiles and more than 120 drones overnight at energy and critical infrastructure in Kyiv, the Kyiv region and Kharkiv.', href: 'https://x.com/ZelenskyyUa/status/2110248974485463412', ig: 'https://www.instagram.com/zelenskyy_official/' },
     { cat: 'premier', media: 'none', initials: 'DS', name: 'Danielle Smith', role: 'Premier of Alberta', date: 'May 24', platform: 'X', handle: '@ABDanielleSmith', quote: 'I am fiercely loyal to Alberta and Canada…', summary: 'Says she will vote for Alberta to stay in Confederation, and argues that delaying the vote would only drag out the debate.', href: 'https://x.com/ABDanielleSmith/status/2058598173921493408' }
@@ -1213,17 +1219,18 @@ header.site { border-bottom: 0; }
   const PIC = { pm: 'podium', intl: 'powerline', premier: 'ballot', mp: 'parliament' };
   function postCard(p) {
     const kind = p.media === 'video' ? 'Video' : p.media === 'photo' ? 'Photo' : 'Post';
-    const where = p.platform === 'X' ? 'X' : 'Instagram';
+    const where = p.platform || 'X';
     const play = p.media === 'video' ? '<span class="playbtn"><svg width="18" height="18" viewBox="0 0 24 24" fill="#2B1B54" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>' : '';
     return '<article class="read">' +
-      '<a class="pic" href="' + esc(p.href) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + art(p.pic || PIC[p.cat] || 'city', kind + ' from ' + p.name) + play + '<span class="tag">' + kind + ' on ' + where + '</span></a>' +
+      '<a class="pic" href="' + esc(p.href) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + art(p.pic || PIC[p.cat] || 'city', kind + ' from ' + p.name) + play + '<span class="tag">' + (/statement/i.test(where) ? esc(where) : kind + ' on ' + esc(where)) + '</span></a>' +
       '<div class="txt">' +
       '<span class="author">' + esc(p.name) + '<span class="vt">' + tick + '</span></span>' +
       '<span class="role">' + esc(p.role) + ' · ' + esc(p.handle) + '</span>' +
-      '<a class="hed" href="' + esc(p.href) + '" target="_blank" rel="noopener">“' + esc(p.quote) + '”</a>' +
+      '<a class="hed" href="' + esc(p.href) + '" target="_blank" rel="noopener">' + (p.quote ? '“' + esc(p.quote) + '”' : esc(p.hed)) + '</a>' +
       '<p class="gist">' + esc(p.summary) + '</p>' +
-      '<span class="src"><span>' + esc(p.date) + '</span><a href="' + esc(p.href) + '" target="_blank" rel="noopener">See it on ' + where + ' &#8599;</a>' +
-      (p.ig && where !== 'Instagram' ? '<a class="alt" href="' + esc(p.ig) + '" target="_blank" rel="noopener">Instagram &#8599;</a>' : '') + '</span>' +
+      '<span class="src"><span>' + esc(p.date) + '</span><a href="' + esc(p.href) + '" target="_blank" rel="noopener">' + (p.report ? 'Read the report' : 'See it on ' + where) + ' &#8599;</a>' +
+      (p.profile ? '<a class="alt" href="' + esc(p.profile) + '" target="_blank" rel="noopener">' + esc(p.handle) + ' on X &#8599;</a>' : '') +
+      (p.ig && where === 'X' ? '<a class="alt" href="' + esc(p.ig) + '" target="_blank" rel="noopener">Instagram &#8599;</a>' : '') + '</span>' +
       '</div></article>';
   }
   function showPosts(cat) {
