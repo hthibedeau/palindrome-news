@@ -764,9 +764,35 @@ header.site { border-bottom: 0; }
 @keyframes kb1 { from { transform: scale(1) translate(0, 0); } to { transform: scale(1.12) translate(-2%, -1.5%); } }
 @keyframes kb2 { from { transform: scale(1.02); } to { transform: scale(1.1) translate(1.5%, -1%); } }
 .hero-art, .breaking .bart, .bd .bdimg, .us-lead .fimg, .fs .fimg, .vid .vt { overflow: hidden; }
+
+/* Every jump lands below the bar that follows you down the page */
+[id] { scroll-margin-top: 70px; }
+/* About Palindrome */
+.about-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 16px; }
+.about-grid > div { background: var(--surface); border: 1px solid var(--line); border-top: 3px solid var(--title); padding: 16px 18px; }
+.about-grid h3 { margin: 0 0 8px; font-family: var(--serif); font-size: 20px; font-weight: 600; color: var(--title); }
+.about-grid p, .about-grid li { margin: 0 0 8px; font-size: 14.5px; line-height: 1.55; color: var(--body); }
+.about-grid ul { margin: 0; padding-left: 18px; }
+.about-grid .addr { display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; font-weight: 600; color: var(--ink); }
+.about-grid .addr code { font-family: inherit; background: var(--soft); padding: 3px 8px; user-select: all; }
+.about-grid .addr button { min-height: 32px; padding: 0 10px; border: 1px solid var(--chipline); background: var(--surface); color: var(--ink); font: inherit; font-size: 12.5px; cursor: pointer; }
+.srcs-list { font-size: 14px !important; line-height: 1.7 !important; }
+/* Search */
+.srch { position: fixed; inset: 0; z-index: 80; background: rgba(15, 11, 25, .55); display: flex; justify-content: center; align-items: flex-start; padding: calc(70px + env(safe-area-inset-top, 0px)) max(16px, env(safe-area-inset-right, 0px)) 16px max(16px, env(safe-area-inset-left, 0px)); }
+.srch[hidden] { display: none; }
+.srch .box { width: min(680px, 100%); max-height: calc(100vh - 110px); display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--line); border-top: 4px solid var(--title); box-shadow: 0 18px 50px rgba(15, 11, 25, .35); }
+.srch .row { display: flex; gap: 8px; padding: 12px; border-bottom: 1px solid var(--line); }
+.srch input { flex: 1 1 auto; min-width: 0; min-height: 46px; padding: 0 14px; border: 1px solid var(--chipline); background: var(--bg); color: var(--ink); font: inherit; font-size: 17px; }
+.srch .close { min-height: 46px; padding: 0 14px; border: 1px solid var(--chipline); background: var(--surface); color: var(--ink); font: inherit; cursor: pointer; }
+.srch ol { list-style: none; margin: 0; padding: 4px 0; overflow-y: auto; }
+.srch li a { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 12px; padding: 10px 16px; }
+.srch li a:hover, .srch li a:focus-visible { background: var(--soft); }
+.srch li b { font-family: var(--serif); font-size: 17px; font-weight: 600; color: var(--ink); line-height: 1.3; }
+.srch li span { font-size: 12px; color: var(--muted); align-self: center; white-space: nowrap; }
+.srch .hint { padding: 14px 16px; font-size: 14px; color: var(--muted); margin: 0; }
 </style>
 
-<header class="site">
+<header class="site" id="top">
   <div class="wrap">
     <div class="topline">
       <span class="meta dateline"><span id="today">Saturday, October 17, 2026</span><span class="clock"><span id="clock">4:58 p.m.</span> ET</span><span class="live"><i aria-hidden="true"></i>Live · checked every 30 minutes</span><span class="preview-tag">Preview edition</span></span>
@@ -778,7 +804,7 @@ header.site { border-bottom: 0; }
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>Dark</button>
         </div>
         <a class="btn" href="#newsletter">Get the Daily Brief</a>
-        <button type="button" class="btn btn-ghost" aria-label="Search">
+        <button type="button" class="btn btn-ghost" aria-label="Search" id="searchBtn" aria-haspopup="dialog">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
         </button>
       </div>
@@ -787,19 +813,18 @@ header.site { border-bottom: 0; }
       <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 11:35 p.m.</b></span></div>
       <div class="plate">
         <span class="stamp" id="stamp" hidden>Late edition</span>
-        <a class="logo" href="#">Palindrome <em>Newsroom</em></a>
+        <a class="logo" href="#top">Palindrome <em>Newsroom</em></a>
         <div class="motto"><span>News from every direction. One clear perspective.</span></div>
         <div class="byline">Founded and edited by Hannah Thibedeau</div>
       </div>
       <div class="ear ear-r"><b>Our standard</b><span class="big">Six sources</span><span>No summary runs until six independent outlets report it</span></div>
     </div>
     <nav class="sections" aria-label="Sections">
-      <a href="#" aria-current="page">Top stories</a>
+      <a href="#top" aria-current="page">Top stories</a>
       <a href="#board">Story board</a>
       <a href="#sec-canada">Canada</a>
       <a href="#sec-politics">Politics</a>
       <a href="#sec-business">Business &amp; Economy</a>
-      <a href="#">Energy &amp; Infrastructure</a>
       <a href="#sec-world">World</a>
       <a href="#sec-us">United States</a>
       <a href="#pictures">Pictures</a>
@@ -817,7 +842,7 @@ header.site { border-bottom: 0; }
 </header>
 <div class="stick" id="stick" aria-hidden="true">
   <div class="wrap">
-    <a class="mini" href="#" tabindex="-1">Palindrome <em>N</em></a>
+    <a class="mini" href="#top" tabindex="-1">Palindrome <em>N</em></a>
     <nav aria-label="Sections">
       <a href="#breakdown" tabindex="-1">Breakdown</a><a href="#video" tabindex="-1">Watch</a><a href="#ahead" tabindex="-1">What to watch</a><a href="#sec-canada" tabindex="-1">Canada</a><a href="#sec-politics" tabindex="-1">Politics</a><a href="#sec-business" tabindex="-1">Business</a><a href="#sec-world" tabindex="-1">World</a><a href="#sec-us" tabindex="-1">U.S.</a><a href="#mostread" tabindex="-1">Most read</a><a href="#reading" tabindex="-1">Reading</a><a href="#ontherecord" tabindex="-1">On the record</a><a href="#editorials" tabindex="-1">Editorials</a><a href="#godeeper" tabindex="-1">Go deeper</a>
     </nav>
@@ -866,7 +891,7 @@ header.site { border-bottom: 0; }
         </div>
         <div class="actions">
           <a href="https://english.alarabiya.net/News/middle-east/2026/10/17/tanker-explodes-after-hitting-mine-in-strait-of-hormuz-iran-s-irgc" target="_blank" rel="noopener">Read Al Arabiya's report &#8599;</a>
-          <a href="#" id="backToBrief">Today's Daily Brief</a>
+          <a href="#topSlot" id="backToBrief">Today's Daily Brief</a>
         </div>
       </div>
       <div class="bk-side">
@@ -1052,7 +1077,7 @@ header.site { border-bottom: 0; }
     <div class="sponsor-strip"><span>Go deeper is sponsored by</span><b>[SPONSOR NAME]</b></div>
   </section>
 
-  <section class="ruled" aria-labelledby="sp-h">
+  <section class="ruled" id="sponsors" aria-labelledby="sp-h">
     <div class="band-head"><h2 id="sp-h">Our sponsors</h2><p>Sponsors pay for Palindrome. They never choose or rank the news.</p></div>
     <div class="two">
       <div class="main">
@@ -1071,11 +1096,37 @@ header.site { border-bottom: 0; }
           <div><dt>Editorial rewrite</dt><dd>[YOUR PRICE]</dd></div>
           <div><dt>Editorial placement</dt><dd>[YOUR PRICE]</dd></div>
         </dl>
-        <a class="btn" href="#">Talk to us about sponsoring &rarr;</a>
+        <a class="btn" href="#contact">Talk to us about sponsoring &rarr;</a>
       </aside>
     </div>
   </section>
 </main>
+
+<section class="wrap" id="about" aria-labelledby="ab-h" style="margin-top: 40px">
+  <div class="band-head"><h2 id="ab-h">About Palindrome</h2><p>How we work, where our news comes from, and how to reach us.</p></div>
+  <div class="about-grid">
+    <div id="methodology"><h3>Methodology</h3>
+      <p>A story gets a full Palindrome summary only when six independent newsrooms have reported it. Outlets with the same owner count as one.</p>
+      <p>Until then it runs as developing news, with a meter showing how many outlets have it. Breaking news can run sooner, credited to the outlet that reported it, and is labelled unconfirmed.</p>
+      <p>Every summary links to the reporting it draws on, and tapping a story takes you to the original article.</p></div>
+    <div id="sources"><h3>Sources</h3>
+      <p>Today’s page draws on:</p>
+      <p class="srcs-list" id="srcList"></p></div>
+    <div id="contact"><h3>Contact &amp; takedowns</h3>
+      <p>Spotted an error, want a summary or image removed, or want to talk about sponsoring? Write to us.</p>
+      <p class="addr"><code id="mailAddr">[CONTACT EMAIL]</code><button type="button" id="copyMail">Copy</button></p>
+      <p>Publishers can ask us to remove a summary or image of their work, and we will.</p></div>
+    <div id="privacy"><h3>Privacy</h3>
+      <p>This preview collects no personal information. Your light or dark choice is saved only in your own browser.</p>
+      <p>Newsletter sign-ups open when the site launches, with a full privacy policy.</p></div>
+    <div id="sponsorship-policy"><h3>Sponsorship policy</h3>
+      <p>Sponsors pay for Palindrome, but they never choose, rank or edit the news.</p>
+      <p>Paid editorials are always labelled as paid and never appear in Best of the day.</p></div>
+    <div id="sponsor-services"><h3>Sponsor services</h3>
+      <ul><li>Homepage and section sponsorship: [YOUR PRICE]</li><li>Editorial rewrite: [YOUR PRICE]</li><li>Editorial placement: [YOUR PRICE]</li></ul>
+      <p style="margin-top: 8px"><a href="#contact" style="color: var(--accent); font-weight: 600">Talk to us about sponsoring &rarr;</a></p></div>
+  </div>
+</section>
 
 <section class="news" id="newsletter" aria-labelledby="nl-h">
   <div class="wrap">
@@ -1094,11 +1145,18 @@ header.site { border-bottom: 0; }
   </div>
 </section>
 
+<div class="srch" id="srch" role="dialog" aria-modal="true" aria-label="Search Palindrome" hidden>
+  <div class="box">
+    <div class="row"><input type="search" id="srchIn" placeholder="Search today’s stories" autocomplete="off" aria-label="Search today’s stories"><button type="button" class="close" id="srchClose">Close</button></div>
+    <ol id="srchOut"></ol>
+  </div>
+</div>
+
 <footer class="site">
   <div class="wrap">
     <div class="about"><div class="name">Palindrome Newsroom</div>We link to original publishers and never republish full articles. Summaries are brief and neutral. If something is wrong, tell us.</div>
     <nav aria-label="Footer">
-      <a href="#">Methodology</a><a href="#">Sources</a><a href="#corrections">Corrections</a><a href="#">Contact &amp; takedowns</a><a href="#">Privacy</a><a href="#">Sponsorship policy</a><a href="#">Sponsor services</a>
+      <a href="#methodology">Methodology</a><a href="#sources">Sources</a><a href="#corrections">Corrections</a><a href="#contact">Contact &amp; takedowns</a><a href="#privacy">Privacy</a><a href="#sponsorship-policy">Sponsorship policy</a><a href="#sponsor-services">Sponsor services</a>
     </nav>
   </div>
 </footer>
@@ -1193,7 +1251,7 @@ header.site { border-bottom: 0; }
     toggle.textContent = 'Show breaking news';
   }
   toggle.addEventListener('click', () => setBreaking(toggle.getAttribute('aria-pressed') !== 'true'));
-  $('backToBrief').addEventListener('click', (e) => { e.preventDefault(); setBreaking(false); });
+  $('backToBrief').addEventListener('click', (e) => { e.preventDefault(); setBreaking(false); $('topSlot').scrollIntoView(); });
 
   // The day so far (sample)
   const stories = [
@@ -1475,7 +1533,7 @@ header.site { border-bottom: 0; }
   const clocks = [
     ['Vancouver', 'America/Vancouver', 'B.C. votes', '#sec-canada', false],
     ['Edmonton', 'America/Edmonton', 'Vote Monday', '#bd-alberta', false],
-    ['Ottawa', 'America/Toronto', 'Newsroom', '#', false],
+    ['Ottawa', 'America/Toronto', 'Parliament', '#sec-politics', false],
     ['Washington', 'America/New_York', 'Midterms', '#sec-us', false],
     ['Kyiv', 'Europe/Kyiv', 'Power grid', '#sec-world', false],
     ['Tehran', 'Asia/Tehran', 'Hormuz', '#breaking', true]
@@ -1794,6 +1852,60 @@ header.site { border-bottom: 0; }
   $('pics').addEventListener('focusin', () => clearInterval(pTimer));
   if (still) { paused = true; $('picPause').innerHTML = icoPlay; $('picPause').setAttribute('aria-label', 'Play'); }
   showPic(0); startPics();
+
+  // Sources list, built from every outlet the page links to
+  try {
+    const seen = new Set();
+    document.querySelectorAll('.srcs li a b, .chips-static span, .fm, .meta strong, .mr .outlets a, .read .src a, .ed .src, .paper .inst, .media-row .src, .vid .src, .lede .o').forEach((el) => {
+      const t = el.textContent.replace(/^#\d+\s*/, '').replace(/^(Read (at|on)|Read)\s+/, '').replace(/\s*[·↗].*$/, '').trim();
+      t.split(/,\s*/).forEach((n) => { n = n.trim(); if (n && n.length < 40 && !/^\d|^@|^See it|^On |^the report|^Instagram$|^Front Burner$|^Good Talk$|outlets|of 6|Verified|Developing|Oct|p\.m\.|Today|Tonight|Watch|This week|Breakdown|Updated|\+/.test(n)) seen.add(n); });
+    });
+    const byKey = new Map();
+    [...seen].forEach((n) => { const k = n.replace(/^The /, '').toLowerCase(); if (!byKey.has(k) || n.length > byKey.get(k).length) byKey.set(k, n); });
+    $('srcList').textContent = [...byKey.values()].sort((a, b) => a.replace(/^The /, '').localeCompare(b.replace(/^The /, ''))).join(' · ');
+  } catch (e) {}
+  $('copyMail').addEventListener('click', () => {
+    const t = $('mailAddr').textContent;
+    const done = () => { $('copyMail').textContent = 'Copied'; setTimeout(() => { $('copyMail').textContent = 'Copy'; }, 1800); };
+    try { navigator.clipboard.writeText(t).then(done, () => { const r = document.createRange(); r.selectNodeContents($('mailAddr')); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); }); } catch (e) {}
+  });
+
+  // Search: every headline on the page; a result goes straight to the article
+  function headlines() {
+    const out = [], seen = new Set();
+    document.querySelectorAll('main a[href^="http"]:not(.srcs a), main summary h3').forEach((a) => {
+      const el = a.matches('summary h3') ? a : (a.querySelector('.hed, .ttl') || a);
+      const t = (el.textContent || '').replace(/\s+/g, ' ').replace(/\s*↗\s*$/, '').trim();
+      if (t.length < 18 || seen.has(t) || /^(Read|See it|Open|Watch|Listen|Instagram|Breakdown)/.test(t)) return;
+      let href = a.getAttribute('href'), where = '';
+      if (!href) { const d = a.closest('details'); href = '#' + d.id; where = 'Breakdown'; }
+      else { try { where = new URL(href).hostname.replace(/^www\./, ''); } catch (e) {} }
+      seen.add(t); out.push({ t, href, where, full: ((a.closest('article, .ed, .lede, .media-row, details, li') || a).textContent + ' ' + where).toLowerCase() });
+    });
+    return out;
+  }
+  let INDEX = null;
+  const srch = $('srch'), srchIn = $('srchIn'), srchOut = $('srchOut');
+  function runSearch() {
+    const q = srchIn.value.trim().toLowerCase();
+    if (!INDEX) INDEX = headlines();
+    const words = q.split(/\s+/).filter(Boolean);
+    const hits = words.length ? INDEX.filter((h) => words.every((w) => h.full.includes(w))).slice(0, 30) : [];
+    srchOut.innerHTML = !q ? '<li><p class="hint">Type a name, place or topic, like Alberta, Trump or Hormuz.</p></li>'
+      : hits.length ? hits.map((h) => '<li><a href="' + esc(h.href) + '"' + (h.href.startsWith('#') ? '' : ' target="_blank" rel="noopener"') + '><b>' + esc(h.t) + '</b><span>' + esc(h.where) + '</span></a></li>').join('')
+      : '<li><p class="hint">Nothing on today’s page matches “' + esc(srchIn.value.trim()) + '”.</p></li>';
+  }
+  function openSearch() { srch.hidden = false; INDEX = null; runSearch(); setTimeout(() => srchIn.focus(), 0); }
+  function closeSearch() { srch.hidden = true; $('searchBtn').focus(); }
+  $('searchBtn').addEventListener('click', openSearch);
+  $('srchClose').addEventListener('click', closeSearch);
+  srchIn.addEventListener('input', runSearch);
+  srch.addEventListener('click', (e) => { if (e.target === srch) closeSearch(); const a = e.target.closest('a'); if (a) { srch.hidden = true; if (a.hash) { const d = document.getElementById(a.hash.slice(1)); if (d && d.tagName === 'DETAILS') d.open = true; } } });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !srch.hidden) closeSearch();
+    if (e.key === '/' && srch.hidden && !/input|textarea/i.test((document.activeElement || {}).tagName || '')) { e.preventDefault(); openSearch(); }
+    if (e.key === 'Enter' && !srch.hidden && document.activeElement === srchIn) { const a = srchOut.querySelector('a'); if (a) a.click(); }
+  });
 
   // Compact bar once the nameplate scrolls off
   const stick = $('stick');
