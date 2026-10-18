@@ -1,8 +1,8 @@
-# Palindrome Newsroom
+# Palindrome News
 
 News from every direction. One clear perspective.
 
-Palindrome Newsroom is an online newsroom for people who get their news online instead of on TV. It summarizes the day's stories from trusted outlets, always links to the original reporting, and never publishes its own editorials.
+Palindrome News is an online newsroom for people who get their news online instead of on TV. It summarizes the day's stories from trusted outlets, always links to the original reporting, and never publishes its own editorials.
 
 Founded and edited by Hannah Thibedeau.
 
