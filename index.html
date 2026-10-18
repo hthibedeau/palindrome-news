@@ -980,9 +980,10 @@ header.site { border-bottom: 0; }
       <button type="button" data-cat="premier" aria-pressed="false">Premiers</button>
       <button type="button" data-cat="us" aria-pressed="false">Trump &amp; U.S.</button>
       <button type="button" data-cat="intl" aria-pressed="false">World leaders</button>
+      <button type="button" data-cat="biz" aria-pressed="false">Business leaders</button>
     </div>
     <div class="reads" id="record" aria-live="polite"></div>
-    <p class="fine">Summaries are written by Palindrome. Verified accounts only, confirmed against official government websites. On the live site, each card shows the post's own photo or video still; illustrations stand in here.</p>
+    <p class="fine">Summaries are written by Palindrome. Verified accounts only, confirmed against official websites. Sources include X, Truth Social, Instagram and LinkedIn. On the live site each card shows the post itself through the platform’s official embed; in this preview it shows the post’s photo, an archive image of the post, or a newsroom’s photo of it.</p>
     <div class="sponsor-strip"><span>Section sponsored by</span><b>[SPONSOR NAME]</b></div>
   </section>
 
@@ -1322,7 +1323,7 @@ header.site { border-bottom: 0; }
     const kind = p.media === 'video' ? 'Video' : p.media === 'photo' ? 'Photo' : 'Post';
     const where = p.platform || 'X';
     const play = p.media === 'video' ? '<span class="playbtn"><svg width="18" height="18" viewBox="0 0 24 24" fill="#2B1B54" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>' : '';
-    return '<article class="read">' +
+    return '<article class="read" data-embed="' + esc(p.post || p.href) + '" data-platform="' + esc(where) + '">' +
       '<a class="pic" href="' + esc(p.href) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + (MEDIA[slotId(p.href)] ? shot(slotId(p.href)) : p.img ? photo(p.img, p.pic || PIC[p.cat] || 'city', kind + ' from ' + p.name, p.credit) : art(p.pic || PIC[p.cat] || 'city', kind + ' from ' + p.name)) + play + '<span class="tag">' + (/statement/i.test(where) ? esc(where) : kind + ' on ' + esc(where)) + '</span></a>' +
       '<div class="txt">' +
       '<span class="author">' + esc(p.name) + '<span class="vt">' + tick + '</span></span>' +
@@ -1338,7 +1339,10 @@ header.site { border-bottom: 0; }
   function showPosts(cat) {
     curCat = cat;
     const list = posts.filter((p) => cat === 'all' || p.cat === cat);
-    $('record').innerHTML = list.length ? list.map(postCard).join('') : '<div class="empty">No posts from this group yet. New posts are checked every hour.</div>';
+    const none = cat === 'biz'
+      ? 'No business leader’s LinkedIn post has been confirmed today. We add one only when it is verified, usually because a newsroom has reported it. Posts from CEOs, business councils and labour leaders show here, on LinkedIn and Instagram as well as X.'
+      : 'No posts from this group yet. New posts are checked every hour.';
+    $('record').innerHTML = list.length ? list.map(postCard).join('') : '<div class="empty">' + none + '</div>';
     wirePhotos();
   }
   document.querySelectorAll('.filters button').forEach((b) => b.addEventListener('click', () => {

@@ -27,3 +27,5 @@ Both pages open directly in a web browser. They are previews: the live site will
 The claude.ai preview blocks images hosted on other websites, so outlet photos are copied into the page's own storage. `tools/localize_images.py index.html <folder>` downloads every photo it can reach and lists the exact host names still to approve under claude.ai Settings > Capabilities > Allow network egress. The page tries the stored copy first, then the outlet's original, then a drawn illustration.
 
 `tools/grab_picture.py <link> <out.jpg>` gets a picture for any story, post or video: the page's own share image if it has one, otherwise a screen grab of the top of the page. X (Twitter) pages are not grabbed; their posts use X's official embed on the live site.
+
+On the record cards carry `data-embed` (the original post link) and `data-platform`. On the live site these are swapped for each platform's official embed (X, Instagram, LinkedIn, Truth Social), so posts show exactly as published without scraping.
