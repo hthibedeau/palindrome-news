@@ -693,6 +693,13 @@ header.site { border-bottom: 0; }
 .bd .srcs a span { color: var(--accent); }
 .bd .note { margin: 12px 0 0; font-size: 12.5px; color: var(--muted); }
 .to-bd { font-size: 13px; font-weight: 700; color: var(--wine) !important; position: relative; z-index: 2; }
+
+.dirwrap { margin-top: 18px; }
+.dirwrap h4 { margin: 0 0 10px; font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--title); }
+.dirwrap .dir p { font-size: 16px; }
+.us-verified { margin: 0 0 18px; padding: 10px 14px; background: var(--soft); font-size: 14px; color: var(--body); }
+.us-verified b { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--title); margin-right: 8px; }
+.us-verified a { font-weight: 600; color: var(--accent); }
 </style>
 
 <header class="site">
@@ -731,7 +738,6 @@ header.site { border-bottom: 0; }
       <a href="#">Energy &amp; Infrastructure</a>
       <a href="#sec-world">World</a>
       <a href="#sec-us">United States</a>
-      <a href="#directions">Every direction</a>
       <a href="#breakdown">Breakdown</a>
       <a href="#video">Watch</a>
       <a href="#editorsread">Editor's Read</a>
@@ -751,12 +757,6 @@ header.site { border-bottom: 0; }
       <a href="#breakdown" tabindex="-1">Breakdown</a><a href="#video" tabindex="-1">Watch</a><a href="#editorsread" tabindex="-1">Editor's Read</a><a href="#sec-canada" tabindex="-1">Canada</a><a href="#sec-politics" tabindex="-1">Politics</a><a href="#sec-business" tabindex="-1">Business</a><a href="#sec-world" tabindex="-1">World</a><a href="#sec-us" tabindex="-1">U.S.</a><a href="#mostread" tabindex="-1">Most read</a><a href="#reading" tabindex="-1">Reading</a><a href="#ontherecord" tabindex="-1">On the record</a><a href="#editorials" tabindex="-1">Editorials</a><a href="#godeeper" tabindex="-1">Go deeper</a>
     </nav>
     <span class="now"><span class="live"><i aria-hidden="true"></i></span><span id="clock2">5:15 p.m.</span> ET</span>
-  </div>
-</div>
-<div class="ticker" role="region" aria-label="Latest headlines">
-  <div class="wrap ticker-in">
-    <span class="tk-label"><i aria-hidden="true"></i>Latest</span>
-    <div class="tk-viewport"><ul class="tk-track" id="tkTrack"></ul></div>
   </div>
 </div>
 
@@ -791,7 +791,7 @@ header.site { border-bottom: 0; }
         <h2><a class="card-link" href="https://english.alarabiya.net/News/middle-east/2026/10/17/tanker-explodes-after-hitting-mine-in-strait-of-hormuz-iran-s-irgc" target="_blank" rel="noopener">Oil tanker explodes after hitting a mine in the Strait of Hormuz, Iran's Revolutionary Guard says</a></h2>
         <p class="bk-dek">First reported Saturday by <strong>Al Arabiya</strong>, citing Iran's Revolutionary Guard. <strong>Al Jazeera</strong> now reports it too. Palindrome has not confirmed it yet.</p>
         <div class="know">
-          <div><h3>What we know</h3><ul><li>The Guard says a tanker hit a mine in the Strait of Hormuz and exploded.</li><li>It says the ship carried more than two million barrels of crude on a route Iran had not approved.</li><li>Al Jazeera reports several tankers hit since Friday, and the Guard now warns the strait is closed.</li><li>The U.K.'s maritime trade agency says a grenade fired from a small boat hit one tanker.</li></ul></div>
+          <div><h3>What we know</h3><ul><li>The Guard says a tanker hit a mine in the Strait of Hormuz and exploded.</li><li>It says the ship carried more than two million barrels of crude on a route Iran had not approved.</li><li>The U.K.'s maritime trade agency says a grenade fired from a small boat hit one tanker.</li></ul></div>
           <div><h3>Not yet known</h3><ul><li>The ship's name and flag.</li><li>Whether anyone was hurt.</li><li>Confirmation from other outlets.</li></ul></div>
         </div>
         <p class="acc-h">Two accounts</p>
@@ -828,8 +828,7 @@ header.site { border-bottom: 0; }
       <div class="art hero-art" data-art="ballot" data-alt="Rally in Edmonton" data-photo="https://s.yimg.com/lo/mysterio/api/c2420239db3bc10887b1e485057123a2afa4288ecf07ee1d0fd6d67812181dc8/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fcp_news_842%2F94cd3a3d0d3669a3c5aff483a883dc4d.jpg" data-credit="The Canadian Press"></div>
       <div style="display: flex; align-items: center; gap: 12px"><span class="eyebrow">Canada</span><span class="pill">Vote Monday</span></div>
       <h1><a class="card-link" href="https://ca.news.yahoo.com/rallies-planned-final-weekend-alberta-120015382.html" target="_blank" rel="noopener">Alberta's last weekend before the separation vote</a></h1>
-      <p class="dek">Supporters and opponents of separation are holding rallies in Edmonton this weekend, including one at the legislature. On Monday, Albertans decide whether to stay in Canada or hold a second, binding referendum on leaving. Prime Minister Mark Carney campaigned in Edmonton on Friday, and Premier Danielle Smith says she voted to stay. A research report says online posts are already laying the groundwork to dispute the result.</p>
-      <p class="why"><b>Why it matters</b>A vote for a second referendum would not take Alberta out of Canada. It would set a formal process toward that in motion.</p>
+      <p class="dek">Albertans vote Monday on whether to start the legal path toward a binding referendum on leaving Canada. Both sides rallied in Edmonton this weekend.</p>
       <div class="row-meta"><span class="meter-slot" data-n="8"></span><span class="ts">Updated 4:00 p.m.</span><span style="color: var(--accent); font-weight: 600">Canadian Press report &#8599;</span></div>
       <div class="chips-static"><span>Canadian Press</span><span>Global News</span><span>Hill Times</span><span>Axios</span><span>Time</span><span class="more">+3 more</span><a class="to-bd" href="#bd-alberta" style="align-self: center; margin-left: 6px">Read the breakdown &#8595;</a></div>
     </article>
@@ -891,29 +890,14 @@ header.site { border-bottom: 0; }
     </div>
   </section>
 
-  <section id="board" aria-labelledby="sb-h" style="scroll-margin-top: 64px">
-    <div class="band-head"><h2 id="sb-h">Story board</h2><p>Every story we're working on tonight, and where it stands.</p></div>
-    <div class="board-wrap"><table class="board">
-      <thead><tr><th scope="col">Slug</th><th scope="col">Story</th><th scope="col">Desk</th><th scope="col">Status</th><th scope="col">Sources</th><th scope="col">Next</th></tr></thead>
-      <tbody id="boardBody"></tbody>
-    </table></div>
-    <div class="board-legend"><span><span class="stp verified">Verified</span> six or more independent outlets</span><span><span class="stp confirming">Confirming</span> breaking, being checked</span><span><span class="stp watching">Watching</span> results or a decision still to come</span><span><span class="stp developing">Developing</span> fewer than six outlets so far</span></div>
-  </section>
-
   <section aria-labelledby="day-h">
-    <div class="band-head"><h2 id="day-h">The day so far</h2><p>The bar beside each story counts its outlets. Six fills it, and only then does Palindrome write a summary.</p></div>
+    <div class="band-head"><h2 id="day-h">The day so far</h2><p>Stories still being confirmed. The bar counts outlets; at six, a story moves up to The breakdown.</p></div>
     <div class="fronts" id="fronts"></div>
-  </section>
-
-  <section id="directions" class="ruled" aria-labelledby="dir-h" style="scroll-margin-top: 64px">
-    <div class="band-head"><h2 id="dir-h">From every direction</h2><p>One story, four newsrooms. What each one chose to lead with.</p></div>
-    <p style="margin: 0 0 14px; font-family: var(--serif); font-size: 22px; font-weight: 600; color: var(--title)">Trump puts new Russia sanctions on hold</p>
-    <div class="dirs" id="dirs"></div>
-    <p class="common"><b>What they all agree on</b>Trump signed new sanctions on Russia into law, then paused them by executive order.</p>
   </section>
 
   <section id="sec-us" class="ruled" aria-labelledby="us-h" style="scroll-margin-top: 64px">
     <div class="band-head"><h2 id="us-h">United States</h2><p class="us-count" id="usCount">The top American stories, with the same six-source meter.</p></div>
+    <p class="us-verified"><b>Verified tonight</b><a href="#bd-oregon">Bend school shooting</a> · <a href="#bd-kentucky">Trump in Kentucky</a> · <a href="#bd-presssec">Press secretary out</a> · <a href="#bd-russia">Russia sanctions paused</a></p>
     <div class="us">
       <div id="usLead"></div>
       <div class="us-list" id="usList"></div>
@@ -935,7 +919,7 @@ header.site { border-bottom: 0; }
   <section id="reading" class="ruled" aria-labelledby="rd-h">
     <div class="band-head"><h2 id="rd-h">Today's reading</h2><p>Picked by the editor from other newsrooms. Every link goes to the original.</p></div>
     <div class="reads" id="reads"></div>
-    <p class="fine">Images are each article's own preview picture, credited to the outlet. In this preview, four are taken from a phone photo of the articles and two are stand-in illustrations.</p>
+    <p class="fine">Images are each article's own preview picture, credited to the outlet. In this preview, three are taken from a phone photo of the articles and one is a stand-in illustration.</p>
   </section>
 
   <section id="ontherecord" class="ruled" aria-labelledby="otr-h">
@@ -975,6 +959,15 @@ header.site { border-bottom: 0; }
     <div class="sponsor-strip"><span>Section sponsored by</span><b>[SPONSOR NAME]</b></div>
   </section>
 
+  <section id="board" aria-labelledby="sb-h" style="scroll-margin-top: 64px">
+    <div class="band-head"><h2 id="sb-h">Story board</h2><p>Every story we're working on tonight, and where it stands.</p></div>
+    <div class="board-wrap"><table class="board">
+      <thead><tr><th scope="col">Slug</th><th scope="col">Story</th><th scope="col">Desk</th><th scope="col">Status</th><th scope="col">Sources</th><th scope="col">Next</th></tr></thead>
+      <tbody id="boardBody"></tbody>
+    </table></div>
+    <div class="board-legend"><span><span class="stp verified">Verified</span> six or more independent outlets</span><span><span class="stp confirming">Confirming</span> breaking, being checked</span><span><span class="stp watching">Watching</span> results or a decision still to come</span><span><span class="stp developing">Developing</span> fewer than six outlets so far</span></div>
+  </section>
+
   <section id="corrections" class="ruled" aria-labelledby="cx-h" style="scroll-margin-top: 64px">
     <div class="band-head"><h2 id="cx-h">Corrections &amp; updates</h2><p>Every change we make to a story, with the time. Nothing is changed quietly.</p></div>
     <ol class="log">
@@ -989,10 +982,9 @@ header.site { border-bottom: 0; }
   </section>
 
   <section id="godeeper" class="deeper" aria-labelledby="gd-h">
-    <div class="band-head"><h2 id="gd-h">Go deeper</h2><p>Podcasts and video on this week’s big stories. They take longer to make, so check when each was posted.</p></div>
+    <div class="band-head"><h2 id="gd-h">Go deeper</h2><p>Podcasts on this week’s big stories. They take longer to make, so check when each was posted.</p></div>
     <div class="cols">
       <div class="col"><p class="label">Listen</p><div id="listen"></div></div>
-      <div class="col"><p class="label">Watch</p><div id="watch"></div></div>
     </div>
     <div class="sponsor-strip"><span>Go deeper is sponsored by</span><b>[SPONSOR NAME]</b></div>
   </section>
@@ -1146,11 +1138,10 @@ header.site { border-bottom: 0; }
   const extra = [
     ['ballot', 'Canada', 'B.C. votes for mayors and councils today', '', 'CTV News, CBC News', 'https://www.ctvnews.ca/vancouver/article/how-to-watch-live-results-of-bcs-municipal-elections-on-saturday/', '', '3:30 p.m.'],
     ['globe', 'World', 'Trump revives “51st state” talk weeks before the U.S. midterms', '', 'Global News', 'https://globalnews.ca/news/12103949/donald-trump-51st-state-midterms/', '', ''],
-    ['chart', 'World', 'Trump signs, then waives, steep new Russia sanctions', '', 'Euronews, Al Jazeera, CBS News, ABC News, Kyiv Independent, RFE/RL, CNBC, The Hill', 'https://www.euronews.com/video/2026/10/17/latest-news-bulletin-october-17th-2026-midday', '', '']
   ];
   const desk = { 'Business & Economy': 'business', World: 'world', Politics: 'politics', Canada: 'canada' };
   // Which desk each story belongs on (the Alberta research story is political coverage)
-  const placed = stories.map(([pic, topic, badge, h, s, src, link, img, time]) => [pic, /Alberta/.test(h) ? 'Politics' : topic, h, s, src, link, img, time]).concat(extra);
+  const placed = stories.filter((x) => !/Alberta/.test(x[3])).map(([pic, topic, badge, h, s, src, link, img, time]) => [pic, /Alberta/.test(h) ? 'Politics' : topic, h, s, src, link, img, time]).concat(extra);
   const WHY = {
     'Flintstones vitamins, Aleve and Claritin in new recall': 'These are everyday products in many homes. Check the recall list before you use them.',
     'Immigration levels likely to rise, minister hints': 'The levels plan sets how many people Canada admits each year, and it feeds straight into debates over housing and jobs.',
@@ -1195,11 +1186,9 @@ header.site { border-bottom: 0; }
   // Today's reading: real articles, in the outlet-credit format
   const reads = [
     { pic: 'parliament', author: 'Marlo Glass', outlet: 'Hill Times', date: 'Oct 16, 2026', hed: '‘Late to the party’ or ‘asleep at the switch’? Carney, Poilievre make last pitches for unity in Alberta', href: 'https://www.hilltimes.com/2026/10/16/late-to-the-party-or-asleep-at-the-switch-carney-poilievre-make-last-pitches-for-unity-in-alberta/522457/' },
-    { pic: 'city', img: 'https://www.ctvnews.ca/resizer/v2/TKKOAZ4AOVHSJJS7CHMKKRZDIM.JPG?smart=true&auth=2dfaf85644097ab23fe05ac4117d54272f68c8ca3125f687243e4d70bf0ff504&width=1200&height=630', author: 'Stephanie Ha', outlet: 'CTV News', date: 'Oct 16, 2026', hed: '‘We do need people’: Immigration minister teases immigration levels will be going up', href: 'https://www.ctvnews.ca/politics/article/we-do-need-people-immigration-minister-teases-immigration-levels-will-be-going-up/' },
     { pic: 'ballot', photo: 'baxter', author: 'David Baxter', outlet: 'Canadian Press', date: 'Oct 17, 2026', hed: 'How Canada’s fractured immigration consensus is starting to show up at ballot boxes', href: 'https://www.cjme.com/2026/10/17/how-canadas-fractured-immigration-consensus-is-starting-to-show-up-at-ballot-boxes/', via: 'CJME' },
     { pic: 'globe', photo: 'moran', author: 'Tracy Moran', outlet: 'National Post', date: 'Oct 17, 2026', hed: 'Canada war-gamed a U.S. invasion. A former NORAD commander explains why', href: 'https://ca.news.yahoo.com/canada-war-gamed-u-invasion-080036046.html', via: 'Yahoo News' },
-    { pic: 'podium', photo: 'aiello', author: 'Rachel Aiello', outlet: 'CTV News', date: 'Oct 17, 2026', hed: 'Meet Canada’s first ever Parliamentary Visual Artist Laureate', href: 'https://www.ctvnews.ca/canada/article/meet-canadas-first-ever-parliamentary-visual-artist-laureate/' },
-    { pic: 'wave', photo: 'goodtalk', author: 'Peter Mansbridge, Chantal Hébert, Bruce Anderson', outlet: 'YouTube', date: 'Oct 16, 2026', hed: 'Good Talk: “Vote Like Canada Depends On It”', href: 'https://www.youtube.com/watch?v=4gYbC34aZNE' }
+    { pic: 'podium', photo: 'aiello', author: 'Rachel Aiello', outlet: 'CTV News', date: 'Oct 17, 2026', hed: 'Meet Canada’s first ever Parliamentary Visual Artist Laureate', href: 'https://www.ctvnews.ca/canada/article/meet-canadas-first-ever-parliamentary-visual-artist-laureate/' }
   ];
   $('reads').innerHTML = reads.map((r) =>
     '<article class="read"><a class="pic" href="' + esc(r.href) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + (r.photo && PHOTOS[r.photo] ? '<img src="' + PHOTOS[r.photo] + '" alt="" width="300" height="300" style="width: 100%; height: 100%; object-fit: cover; display: block">' : r.img ? photo(r.img, r.pic, r.hed) : art(r.pic, r.hed)) + '<span class="tag">' + esc(r.outlet) + '</span></a>' +
@@ -1237,7 +1226,7 @@ header.site { border-bottom: 0; }
   $('latestList').innerHTML = latest.slice(0, 7).map(([t, k, h, o, u]) =>
     '<li><time>' + esc(t) + (ago(t) ? '<span class="ago">' + ago(t) + '</span>' : '') + '</time><span><span class="k' + (k === 'Breaking' ? ' hot' : '') + '">' + esc(k) + '</span><a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(h) + '</a><span class="o">' + esc(o) + '</span></span></li>').join('');
   const tkItem = (hidden) => ([t, k, h, o, u]) => '<li' + (hidden ? ' aria-hidden="true"' : '') + '><time>' + esc(t) + '</time><a href="' + esc(u) + '" target="_blank" rel="noopener"' + (hidden ? ' tabindex="-1"' : '') + '>' + esc(h) + '</a><span class="o">' + esc(o) + '</span></li>';
-  $('tkTrack').innerHTML = latest.map(tkItem(false)).join('') + latest.map(tkItem(true)).join('');
+  if ($('tkTrack')) $('tkTrack').innerHTML = latest.map(tkItem(false)).join('') + latest.map(tkItem(true)).join('');
 
   // Live clock, Toronto time
   function tickClock() {
@@ -1312,27 +1301,21 @@ header.site { border-bottom: 0; }
     ['#7A1F3D', 'Front Burner · CBC Podcasts', 'The other nine referendum questions in Alberta', 'This week · on CBC Listen', 'https://www.cbc.ca/radio/frontburner/the-other-nine-referendum-questions-in-alberta-9.7379405'],
     ['#4B2F8F', 'Front Burner · CBC Podcasts', 'Alberta’s referendum on a referendum', 'Earlier episode · on CBC Listen', 'https://www.cbc.ca/listen/cbc-podcasts/209-front-burner/episode/16216969-albertas-referendum-on-a-referendum']
   ].map(([tint, s, t, w, h]) => row('wave', tint, mic.replace('width="20" height="20"', 'width="16" height="16"'), s, t, w, 'Listen', h)).join('');
-  $('watch').innerHTML = [
-    ['podium', 'CBC News', 'Alberta referendum countdown: Carney, Smith keep up pro-Canada drumbeat', 'This week · CBC News video', 'https://www.cbc.ca/player/play/video/9.7385095'],
-    ['parliament', 'CBC News', 'Mark Carney attends rally ahead of Alberta referendum', 'This week · CBC News video', 'https://www.cbc.ca/player/play/video/9.7383656'],
-    ['podium', 'CBC News', 'Pierre Poilievre speaks in Calgary ahead of Alberta referendum', 'This week · CBC News video', 'https://www.cbc.ca/player/play/video/9.7383896'],
-    ['ballot', 'On YouTube', 'Alberta Premier Danielle Smith casts vote to stay in Canada', 'Oct 14 · YouTube', 'https://www.youtube.com/watch?v=1leLGQcaypU'],
-    ['city', 'CBC News', 'After the Vote: B.C. Municipal Election 2026', 'Tonight · CBC News video', 'https://www.cbc.ca/player/play/video/9.7384304']
-  ].map(([pic, s, t, w, h]) => row(pic, null, play.replace('width="18" height="18"', 'width="14" height="14"'), s, t, w, 'Watch', h)).join('');
 
   // United States desk (real stories, Oct 16–17, 2026)
   const us = [
     { pic: 'city', topic: 'Oregon', h: 'Parent and teacher stopped a gunman at a Bend, Oregon, elementary school', s: 'Three children and a 25-year-old teacher were killed at Silver Rail Elementary. Police say the 16-year-old attacker was a former student; a teacher tackled him and a parent shot him dead minutes after the first 911 call. Two people are in critical condition.', src: 'Al Jazeera, Fox News, ABC News, PBS NewsHour, Common Dreams, Associated Press', bd: 'bd-oregon', link: 'https://www.aljazeera.com/news/2026/10/17/oregon-school-shooter-was-former-special-needs-student-police-say', img: 'https://www.aljazeera.com/wp-content/uploads/2026/10/image-1792181302.jpg?resize=730%2C410&quality=80', time: 'Oct 17' },
     { pic: 'podium', topic: 'Midterms', h: 'Trump rallies in northern Kentucky as Republicans defend their turf', s: '', src: 'WCPO, FOX19, Spectrum News, Fox News, CNN, Kentucky Lantern', bd: 'bd-kentucky', link: 'https://www.wcpo.com/news/northern-kentucky/president-trump-to-rally-kentucky-voters-in-highland-heights-as-midterms-loom', img: '', time: '2:00 p.m.' },
-    { pic: 'forest', topic: 'California', h: 'Wind-driven Norte Fire burns homes in Orange County; 16,000 told to leave', s: '', src: 'Al Jazeera', link: 'https://www.aljazeera.com/news/2026/10/17/southern-california-wildfire-engulfs-homes-prompts-evacuation-orders', img: 'https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ad2d683dbb6-1792202371.jpg?resize=770%2C513&quality=80', time: 'Oct 17' },
+    { pic: 'forest', topic: 'California', h: 'Wind-driven Norte Fire burns homes in Orange County; 16,000 told to leave', s: 'The Norte Fire started Friday in San Clemente and spread into San Juan Capistrano, damaging or destroying at least six homes. About 16,000 residents are under evacuation orders as hot Santa Ana winds drive it.', src: 'Al Jazeera', link: 'https://www.aljazeera.com/news/2026/10/17/southern-california-wildfire-engulfs-homes-prompts-evacuation-orders', img: 'https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ad2d683dbb6-1792202371.jpg?resize=770%2C513&quality=80', time: 'Oct 17' },
     { pic: 'parliament', topic: 'White House', h: 'New press secretary out after five days on the job', s: '', src: 'Al Jazeera, Axios, PBS NewsHour, Fox News, CNBC, The Hill, NBC Washington', bd: 'bd-presssec', link: 'https://www.aljazeera.com/news/2026/10/16/white-house-press-secretary-katie-zacharia-fired-after-five-days-on-the-job', img: 'https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ad270d1-1792176337.jpg?resize=770%2C513&quality=80', time: 'Oct 16' },
     { pic: 'wave', topic: 'Border', h: 'U.S. Coast Guard rescues 16 after a boat sinks off Baja California; 11 missing', s: '', src: 'Al Jazeera', link: 'https://www.aljazeera.com/news/2026/10/17/us-coastguard-rescues-16-after-boat-sinks-off-mexicos-baja-coast', img: 'https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6ad2bbbfc8926-1792195519.jpg?resize=770%2C513&quality=80', time: 'Oct 17' }
   ];
   const usMeta = (x) => '<div class="fm">' + meter(x.src.split(',').length) + '<span class="ts">' + esc(x.time) + '</span>' + (x.bd ? '<a class="to-bd" href="#' + x.bd + '">Breakdown &#8595;</a>' : '') + '</div><div class="fm">' + esc(x.src) + '</div>';
-  const L = us[0];
-  $('usLead').innerHTML = '<article class="us-lead"><a class="fimg" href="' + esc(L.link) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + photo(L.img, L.pic, 'Memorial in Bend, Oregon', 'Al Jazeera') + '</a>' +
+  const usOpen = us.filter((x) => !x.bd);
+  const L = usOpen[0];
+  $('usLead').innerHTML = '<article class="us-lead"><a class="fimg" href="' + esc(L.link) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + photo(L.img, L.pic, L.h, L.src.split(',')[0]) + '</a>' +
     '<span class="eyebrow">' + esc(L.topic) + '</span><h3><a href="' + esc(L.link) + '" target="_blank" rel="noopener">' + esc(L.h) + '</a></h3><p>' + esc(L.s) + '</p>' + usMeta(L) + '</article>';
-  $('usList').innerHTML = us.slice(1).map((x) => '<article class="fs"><a class="thumbs" href="' + esc(x.link) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + photo(x.img, x.pic, x.h, x.src.split(',')[0]) + '</a>' +
+  $('usList').innerHTML = usOpen.slice(1).map((x) => '<article class="fs"><a class="thumbs" href="' + esc(x.link) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + photo(x.img, x.pic, x.h, x.src.split(',')[0]) + '</a>' +
     '<span class="eyebrow">' + esc(x.topic) + '</span><h4><a href="' + esc(x.link) + '" target="_blank" rel="noopener">' + esc(x.h) + '</a></h4>' + usMeta(x) + '</article>').join('');
   // Countdown to the U.S. midterms, Nov. 3, 2026
   try {
@@ -1354,6 +1337,9 @@ header.site { border-bottom: 0; }
     { r: 'us', o: 'PBS NewsHour', d: '4:57', t: 'News Wrap: Zacharia out as press secretary after less than a week', w: 'Oct 16', u: 'https://www.pbs.org/newshour/show/news-wrap-zacharia-out-as-white-house-press-secretary-after-less-than-a-week-on-the-job', pic: 'parliament' },
     { r: 'us', o: 'PBS NewsHour', d: '6:48', t: 'Checking the claims Trump is making at his midterm rallies', w: 'Oct 16', u: 'https://www.pbs.org/newshour/show/examining-the-controversial-claims-trump-is-making-at-his-midterm-rallies', img: 'https://d3i6fh83elv35t.cloudfront.net/static/2026/10/rallyrhetoric-1024x682.jpg', pic: 'podium' },
     { r: 'us', o: 'Al Jazeera', d: '1:03', t: 'Bend, Oregon, mourns the victims of the school shooting', w: 'Oct 16', u: 'https://www.aljazeera.com/video/newsfeed/2026/10/16/oregon-community-mourns-victims-of-school-shooting', img: AJI + 'image-1792181302.jpg?resize=730%2C410&quality=80', pic: 'city' },
+    { r: 'ca', o: 'CBC News', t: 'Mark Carney attends a rally ahead of the Alberta referendum', w: 'This week', u: 'https://www.cbc.ca/player/play/video/9.7383656', pic: 'parliament' },
+    { r: 'ca', o: 'CBC News', t: 'Pierre Poilievre speaks in Calgary ahead of the referendum', w: 'This week', u: 'https://www.cbc.ca/player/play/video/9.7383896', pic: 'podium' },
+    { r: 'ca', o: 'CBC News', t: 'After the Vote: B.C. municipal election results', w: 'Tonight', u: 'https://www.cbc.ca/player/play/video/9.7384304', pic: 'city' },
     { r: 'ca', o: 'On YouTube', t: 'Premier Danielle Smith casts her vote to stay in Canada', w: 'Oct 14', u: 'https://www.youtube.com/watch?v=1leLGQcaypU', img: 'https://i.ytimg.com/vi/1leLGQcaypU/hqdefault.jpg', pic: 'ballot' },
     { r: 'ca', o: 'Global News', d: '0:55', t: '“Canada will end up being the 51st state,” Trump says', w: 'Oct 14', u: 'https://globalnews.ca/video/12103040/canada-will-end-up-being-the-51st-state-trump-says/', img: 'https://i0.wp.com/media.globalnews.ca/videostatic/news/x9hr8i2vs1-c9n2uqt8ie/Trump_AZ_Canada_WEB_thumbnail_1280x720_.jpg?w=500&quality=70&strip=all', pic: 'globe' },
     { r: 'ca', o: 'Global News', d: '2:06', t: 'U.S. ambassador Hoekstra tells Canada to stay out of American politics', w: 'Oct 14', u: 'https://globalnews.ca/video/12103135/u-s-ambassador-hoekstra-warns-canada-to-keep-your-nose-out-of-american-politics/', pic: 'parliament' }
@@ -1379,7 +1365,6 @@ header.site { border-bottom: 0; }
     ['Fox News', 'The U.S. military’s claim that most Iranian attacks on Hormuz shipping fail', 'https://www.foxnews.com/world/vast-majority-irans-attempted-attacks-strait-hormuz-unsuccessful-centcom-spokesman-says'],
     ['CNN', 'Live midterm coverage, led by Trump’s rally in Kentucky', 'https://cnn.com/2026/10/17/politics/live-news/midterm-election-congress'],
     ['PBS NewsHour', 'Analysis of the press secretary’s five-day tenure', 'https://www.pbs.org/newshour/show/capehart-and-continetti-on-the-white-house-press-secretarys-quick-exit'],
-    ['Axios', 'Katie Zacharia’s exit as White House press secretary', 'https://www.axios.com/2026/10/16/trump-katie-zacharia-press-secretary']
   ];
   $('ledes').innerHTML = ledes.map(([o, h, u]) => '<article class="lede"><span class="mono" aria-hidden="true">' + esc({ 'CBS News': 'CBS', 'ABC News': 'ABC', 'Fox News': 'Fox', CNN: 'CNN', 'PBS NewsHour': 'PBS', Axios: 'Ax' }[o] || o.slice(0, 3)) + '</span><span class="o">' + esc(o) + '</span><a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(h) + '</a></article>').join('');
 
@@ -1390,7 +1375,6 @@ header.site { border-bottom: 0; }
     ['Al Jazeera', 'Leads with who gains', 'Analysts say Russia stands to gain the most, and ask whether Europe still buys Moscow’s gas.', 'https://www.aljazeera.com/news/2026/10/17/trump-eases-russia-oil-sanctions-but-is-europe-still-buying-moscows-gas'],
     ['Euronews', 'Leads with the reversal', 'Trump signed steep new sanctions, then waived them, in the same news cycle.', 'https://www.euronews.com/video/2026/10/17/latest-news-bulletin-october-17th-2026-midday']
   ];
-  $('dirs').innerHTML = dirs.map(([o, a, p, u]) => '<article class="dir"><span class="o">' + esc(o) + '</span><span class="ang">' + esc(a) + '</span><p>' + esc(p) + '</p><a href="' + esc(u) + '" target="_blank" rel="noopener">Read ' + esc(o) + ' &#8599;</a></article>').join('');
 
   // Wall of clocks
   const clocks = [
@@ -1500,7 +1484,7 @@ header.site { border-bottom: 0; }
         ['The Washington Post', 'Carney’s final appeal', 'https://www.washingtonpost.com/world/2026/10/16/carney-canada-alberta-referendum-premier-smith/bee5b866-c9a7-11f1-aefb-abe4112d087e_story.html'],
         ['BNN Bloomberg', 'Carney at the Edmonton rally, live', 'https://www.bnnbloomberg.ca/business/politics/2026/10/17/pm-carney-speaks-at-forever-canadian-rally-in-edmonton-ahead-of-alberta-referendum-live-updates-here/']
       ] },
-    { id: 'bd-russia', desk: 'World', h: 'Trump pauses the Russia sanctions he signed into law',
+    { id: 'bd-russia', desk: 'World', dirs: true, h: 'Trump pauses the Russia sanctions he signed into law',
       lede: 'An executive order waives most of the Graham Act’s sanctions and tariffs two days before they were due.',
       rows: [
         ['The news', 'On Oct. 16, Donald Trump signed an executive order waiving most of the new sanctions and tariffs on Russia in the Graham Act, two days before they were due to take effect.', [2, 5]],
@@ -1585,6 +1569,7 @@ header.site { border-bottom: 0; }
       '<h3>' + esc(b.h) + '</h3><p class="lede1">' + esc(b.lede) + '</p>' +
       '<span class="tog"><span class="o1">Open</span><span class="o2">Close</span>' + chev + '</span></summary>' +
       '<div class="in"><dl>' + b.rows.map(([k, v, refs], i) => '<div' + (i === 0 ? ' class="bnews"' : '') + '><dt>' + esc(k) + '</dt><dd>' + esc(v) + sup(refs) + '</dd></div>').join('') + '</dl>' +
+      (b.dirs ? '<div class="dirwrap"><h4>From every direction</h4><div class="dirs">' + dirs.map(([o, a, p, u]) => '<article class="dir"><span class="o">' + esc(o) + '</span><span class="ang">' + esc(a) + '</span><p>' + esc(p) + '</p><a href="' + esc(u) + '" target="_blank" rel="noopener">Read ' + esc(o) + ' &#8599;</a></article>').join('') + '</div><p class="common"><b>What they all agree on</b>Trump signed new sanctions on Russia into law, then paused them by executive order.</p></div>' : '') +
       '<div class="srcs"><h4>Verified by ' + n + ' independent outlets</h4><ol>' + b.src.map(([o, d, u]) => '<li><a href="' + esc(u) + '" target="_blank" rel="noopener"><b>' + esc(o) + '</b> · <span>' + esc(d) + ' &#8599;</span></a></li>').join('') + '</ol></div>' +
       '<p class="note">Analysis by Palindrome, drawn only from the reporting listed. Preview draft; on the live site the editor approves each breakdown before it runs.</p></div></details>';
   }).join('');
