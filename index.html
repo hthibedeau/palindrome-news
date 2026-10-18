@@ -662,17 +662,20 @@ header.site { border-bottom: 0; }
 /* The breakdown: a reporter's synopsis for every story with six or more independent sources */
 .bds { display: flex; flex-direction: column; gap: 14px; }
 .bd { background: var(--surface); border: 1px solid var(--line); border-left: 5px solid var(--title); scroll-margin-top: 64px; }
-.bd > summary { list-style: none; cursor: pointer; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 16px; align-items: center; padding: 16px 20px; }
+.bd > summary { list-style: none; cursor: pointer; display: grid; grid-template-columns: 168px minmax(0, 1fr) auto; gap: 6px 18px; align-items: center; padding: 16px 20px; }
+.bd .bdimg { grid-column: 1; grid-row: 1 / span 3; display: block; aspect-ratio: 16 / 10; max-width: 100%; overflow: hidden; background: #2B1B54; align-self: start; }
+.bd .bdimg svg { width: 100%; height: 100%; display: block; }
+.bd .k, .bd h3, .bd .lede1 { grid-column: 2; }
 .bd > summary::-webkit-details-marker { display: none; }
 .bd .k { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--wine); }
 .bd .k .desk2 { color: var(--muted); }
-.bd h3 { grid-column: 1; margin: 0; font-family: var(--serif); font-weight: 700; font-size: clamp(20px, 2.4vw, 26px); line-height: 1.15; color: var(--title); }
-.bd .tog { grid-column: 2; grid-row: 1 / span 3; display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: var(--accent); white-space: nowrap; }
+.bd h3 { margin: 0; font-family: var(--serif); font-weight: 700; font-size: clamp(20px, 2.4vw, 26px); line-height: 1.15; color: var(--title); }
+.bd .tog { grid-column: 3; grid-row: 1 / span 3; display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: var(--accent); white-space: nowrap; }
 .bd .tog svg { transition: transform .2s; }
 .bd[open] .tog svg { transform: rotate(180deg); }
 .bd[open] .tog .o1, .bd:not([open]) .tog .o2 { display: none; }
 @media (prefers-reduced-motion: reduce) { .bd .tog svg { transition: none; } }
-.bd .lede1 { grid-column: 1; margin: 0; font-size: 15px; line-height: 1.5; color: var(--body); }
+.bd .lede1 { margin: 0; font-size: 15px; line-height: 1.5; color: var(--body); }
 .bd[open] .lede1 { display: none; }
 .bd .in { padding: 0 20px 20px; }
 .bd dl { margin: 0; display: grid; grid-template-columns: minmax(0, 1fr); border-top: 1px solid var(--line); }
@@ -683,7 +686,7 @@ header.site { border-bottom: 0; }
 .bd dd sup a { color: inherit; }
 .bd dl > div.bnews dd { font-weight: 600; }
 .bd dd sup + sup::before { content: ","; color: var(--muted); margin-right: 1px; }
-@media (max-width: 600px) { .bd dl > div { grid-template-columns: minmax(0, 1fr); } .bd > summary { grid-template-columns: minmax(0, 1fr); } .bd .tog { grid-column: 1; grid-row: auto; } }
+@media (max-width: 600px) { .bd dl > div { grid-template-columns: minmax(0, 1fr); } .bd > summary { grid-template-columns: minmax(0, 1fr); } .bd .bdimg, .bd .k, .bd h3, .bd .lede1, .bd .tog { grid-column: 1; grid-row: auto; } }
 .bd .srcs { margin-top: 16px; }
 .bd .srcs h4 { margin: 0 0 8px; font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--title); }
 .bd .srcs ol { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: 6px 24px; counter-reset: s; }
@@ -1084,7 +1087,7 @@ header.site { border-bottom: 0; }
   }
   // A real photo from the outlet, credited. Where it can't load, the illustration stands in.
   // Outlet photos copied into this page's own storage (original URL -> stored copy), so they load on the preview link
-  const LOCAL = {"https://globalnews.ca/wp-content/uploads/2026/10/66448dec2477783b245bd24907a89f6317d195d18d4c2661fb7704f9003f50e2_a43a0b.jpg?quality=65&strip=all&w=720&h=379&crop=1": "/_blob/686eec11bfcbfef4263b35acddcdde23","https://globalnews.ca/wp-content/uploads/2026/10/Aleve-e1792085538434.jpg?quality=65&strip=all&w=720&h=379&crop=1": "/_blob/cd17a0340e439563f69a7419defedafe","https://globalnews.ca/wp-content/uploads/2026/10/CP177060556-e1791992284619.jpg?quality=65&strip=all&w=720&h=379&crop=1": "/_blob/41fb0e23e28637f74e6ba0459b2d7331","https://globalnews.ca/wp-content/uploads/2026/10/CP177086698-e1791986862112.jpg?quality=65&strip=all&w=720&h=379&crop=1": "/_blob/1c60f2622c4b20ae09ae875ec4e566a1","https://globalnews.ca/wp-content/uploads/2026/10/Stellantis-e1792244648251.jpg?quality=65&strip=all&w=720&h=379&crop=1": "/_blob/827f6deed7dab8b357541410ec400d92","https://truth-archive.us-iad-1.linodeobjects.com/attachments/18556/e9c8f0673df961f2-20222c41b3bc.jpg": "/_blob/982e74c20ce2bcb27edb86a3168f55dc","https://truth-archive.us-iad-1.linodeobjects.com/attachments/18562/poster/24e0f60013c09069-7ac4f5bca5d4.jpg": "/_blob/e4ed53b15c9fef8a897b711f835f7b49"};
+  const LOCAL = {"https://globalnews.ca/wp-content/uploads/2026/10/66448dec2477783b245bd24907a89f6317d195d18d4c2661fb7704f9003f50e2_a43a0b.jpg?quality=65&strip=all&w=720&h=379&crop=1":"/_blob/686eec11bfcbfef4263b35acddcdde23","https://globalnews.ca/wp-content/uploads/2026/10/Aleve-e1792085538434.jpg?quality=65&strip=all&w=720&h=379&crop=1":"/_blob/cd17a0340e439563f69a7419defedafe","https://globalnews.ca/wp-content/uploads/2026/10/CP177060556-e1791992284619.jpg?quality=65&strip=all&w=720&h=379&crop=1":"/_blob/41fb0e23e28637f74e6ba0459b2d7331","https://globalnews.ca/wp-content/uploads/2026/10/CP177086698-e1791986862112.jpg?quality=65&strip=all&w=720&h=379&crop=1":"/_blob/1c60f2622c4b20ae09ae875ec4e566a1","https://globalnews.ca/wp-content/uploads/2026/10/Stellantis-e1792244648251.jpg?quality=65&strip=all&w=720&h=379&crop=1":"/_blob/827f6deed7dab8b357541410ec400d92","https://truth-archive.us-iad-1.linodeobjects.com/attachments/18556/e9c8f0673df961f2-20222c41b3bc.jpg":"/_blob/982e74c20ce2bcb27edb86a3168f55dc","https://truth-archive.us-iad-1.linodeobjects.com/attachments/18562/poster/24e0f60013c09069-7ac4f5bca5d4.jpg":"/_blob/e4ed53b15c9fef8a897b711f835f7b49","https://s.yimg.com/lo/mysterio/api/c2420239db3bc10887b1e485057123a2afa4288ecf07ee1d0fd6d67812181dc8/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fcp_news_842%2F94cd3a3d0d3669a3c5aff483a883dc4d.jpg":"/_blob/4ee8cfad98ba69b0fb98a4c0d83c1b44","https://www.ctvnews.ca/resizer/v2/TKKOAZ4AOVHSJJS7CHMKKRZDIM.JPG?smart=true&auth=2dfaf85644097ab23fe05ac4117d54272f68c8ca3125f687243e4d70bf0ff504&width=1200&height=630":"/_blob/db7f9b2a8bb4ce9c68c628b95e9b6e8b","https://www.aljazeera.com/wp-content/uploads/2026/10/image-1792181302.jpg?resize=730%2C410&quality=80":"/_blob/a389898bee881836e027516c51ce5cd6","https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ad2d683dbb6-1792202371.jpg?resize=770%2C513&quality=80":"/_blob/c754ec14774d91fe410a512eaba11b06","https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ad270d1-1792176337.jpg?resize=770%2C513&quality=80":"/_blob/0ac05ee2f606113179ae0b12c489899e","https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6ad2bbbfc8926-1792195519.jpg?resize=770%2C513&quality=80":"/_blob/9e7ca46f429b94a78f8f0a4cea894a96","https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/12b9ae07-f51b-4369-8a8b-203a1dcbd00d/5ff90cf5-c1b7-48a9-b1cc-b64c13bcaa27/1280x720/match/1024/512/image.jpg?ve=1&tl=1":"/_blob/458aca92933099fae6d5871dd780ecc8","https://i.ytimg.com/vi/1leLGQcaypU/hqdefault.jpg":"/_blob/b686047b4b334f044c1251a2a55da138","https://www.aljazeera.com/wp-content/uploads/2026/10/image-1792224190.jpg?resize=770%2C433&quality=80":"/_blob/cba978c044913d4dd79d356967c4ea82","https://www.aljazeera.com/wp-content/uploads/2026/10/image-1792213059.jpg?resize=770%2C433&quality=80":"/_blob/db08353c87ca0c1ce260d58ff83b78b7"};
   function photo(url, kind, alt, credit) {
     if (!url) return art(kind, alt);
     const orig = url; url = LOCAL[url] || url;
@@ -1491,7 +1494,7 @@ header.site { border-bottom: 0; }
 
   // The breakdown: synopses for stories with six or more independent sources
   const BDS = [
-    { id: 'bd-alberta', desk: 'Canada', h: 'Alberta votes Monday on a path to leaving Canada', open: true,
+    { id: 'bd-alberta', desk: 'Canada', img: 'https://s.yimg.com/lo/mysterio/api/c2420239db3bc10887b1e485057123a2afa4288ecf07ee1d0fd6d67812181dc8/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fcp_news_842%2F94cd3a3d0d3669a3c5aff483a883dc4d.jpg', credit: 'The Canadian Press', pic: 'ballot', h: 'Alberta votes Monday on a path to leaving Canada', open: true,
       lede: 'Albertans decide Monday whether to start the legal process toward a binding referendum on separation.',
       rows: [
         ['The news', 'On Monday, Albertans vote on whether to begin the legal process toward a binding referendum on leaving Canada. Rallies for both sides filled Edmonton this weekend.', [1, 8]],
@@ -1511,7 +1514,7 @@ header.site { border-bottom: 0; }
         ['The Washington Post', 'Carney’s final appeal', 'https://www.washingtonpost.com/world/2026/10/16/carney-canada-alberta-referendum-premier-smith/bee5b866-c9a7-11f1-aefb-abe4112d087e_story.html'],
         ['BNN Bloomberg', 'Carney at the Edmonton rally, live', 'https://www.bnnbloomberg.ca/business/politics/2026/10/17/pm-carney-speaks-at-forever-canadian-rally-in-edmonton-ahead-of-alberta-referendum-live-updates-here/']
       ] },
-    { id: 'bd-russia', desk: 'World', dirs: true, h: 'Trump pauses the Russia sanctions he signed into law',
+    { id: 'bd-russia', desk: 'World', dirs: true, img: 'https://www.aljazeera.com/wp-content/uploads/2026/10/image-1792213059.jpg?resize=770%2C433&quality=80', credit: 'Al Jazeera', pic: 'chart', h: 'Trump pauses the Russia sanctions he signed into law',
       lede: 'An executive order waives most of the Graham Act’s sanctions and tariffs two days before they were due.',
       rows: [
         ['The news', 'On Oct. 16, Donald Trump signed an executive order waiving most of the new sanctions and tariffs on Russia in the Graham Act, two days before they were due to take effect.', [2, 5]],
@@ -1531,7 +1534,7 @@ header.site { border-bottom: 0; }
         ['CNBC', 'Zelenskyy condemns the waiver', 'https://www.cnbc.com/2026/10/17/trump-waives-russia-related-sanctions-tariffs-before-they-take-effect-.html'],
         ['The Hill', 'Graham Act sanctions waived', 'https://thehill.com/homenews/administration/6155621-trump-waives-russian-sanctions-act-tariffs/']
       ] },
-    { id: 'bd-oregon', desk: 'United States', h: 'A parent and a teacher stopped a gunman at a Bend, Oregon, school',
+    { id: 'bd-oregon', desk: 'United States', img: 'https://www.aljazeera.com/wp-content/uploads/2026/10/image-1792181302.jpg?resize=730%2C410&quality=80', credit: 'Al Jazeera', pic: 'city', h: 'A parent and a teacher stopped a gunman at a Bend, Oregon, school',
       lede: 'Three children and a teacher were killed at Silver Rail Elementary on Thursday.',
       rows: [
         ['The news', 'A 16-year-old former student shot his way through locked doors at Silver Rail Elementary in Bend, Oregon, on Thursday. Three children, ages 5, 8 and 11, and a 25-year-old teacher, Meghan Lambert, were killed.', [1, 6]],
@@ -1549,7 +1552,7 @@ header.site { border-bottom: 0; }
         ['Common Dreams', 'Children among the victims', 'https://www.commondreams.org/news/a-devastating-day-for-oregon-suspect-dead-kids-among-victims-in-elementary-school-shooting'],
         ['Associated Press', 'The first full account, via KTAR', 'https://ktar.com/ap/bend-school-shooting-silver-rail-elementary']
       ] },
-    { id: 'bd-presssec', desk: 'United States', h: 'The White House press secretary is out after five days',
+    { id: 'bd-presssec', desk: 'United States', img: 'https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ad270d1-1792176337.jpg?resize=770%2C513&quality=80', credit: 'Al Jazeera', pic: 'parliament', h: 'The White House press secretary is out after five days',
       lede: 'Katie Zacharia leaves after a rocky first briefing and questions about her credentials.',
       rows: [
         ['The news', 'Katie Zacharia is out as White House press secretary five days after starting. A senior official says she is moving to another role.', [1, 7]],
@@ -1568,7 +1571,7 @@ header.site { border-bottom: 0; }
         ['The Hill', 'How her five days went', 'https://thehill.com/homenews/administration/6155287-katie-zacharia-white-house-exit-five-days/'],
         ['NBC Washington', 'Out after five days', 'https://www.nbcwashington.com/news/national-international/trump-press-secretary-katie-zacharia-future/4168341/']
       ] },
-    { id: 'bd-kentucky', desk: 'United States', h: 'Trump rallies in Kentucky to hold Republican ground',
+    { id: 'bd-kentucky', desk: 'United States', pic: 'podium', h: 'Trump rallies in Kentucky to hold Republican ground',
       lede: 'Saturday’s stop in Highland Heights is part of a tour of Republican states before Nov. 3.',
       rows: [
         ['The news', 'Donald Trump held a rally in Highland Heights, Kentucky, on Saturday, telling voters to back Republicans in the midterms.', [1, 4]],
@@ -1591,7 +1594,7 @@ header.site { border-bottom: 0; }
   $('bds').innerHTML = BDS.map((b) => {
     const n = b.src.length;
     const sup = (refs) => refs.map((r) => '<sup><a href="' + esc(b.src[r - 1][2]) + '" target="_blank" rel="noopener" title="' + esc(b.src[r - 1][0]) + '">' + r + '</a></sup>').join('');
-    return '<details class="bd" id="' + b.id + '"' + (b.open ? ' open' : '') + '><summary>' +
+    return '<details class="bd" id="' + b.id + '"' + (b.open ? ' open' : '') + '><summary>' + '<span class="bdimg">' + photo(b.img, b.pic, b.h, b.credit) + '</span>' +
       '<span class="k">The breakdown <span class="desk2">' + esc(b.desk) + '</span>' + meter(n) + '</span>' +
       '<h3>' + esc(b.h) + '</h3><p class="lede1">' + esc(b.lede) + '</p>' +
       '<span class="tog"><span class="o1">Open</span><span class="o2">Close</span>' + chev + '</span></summary>' +
@@ -1600,6 +1603,7 @@ header.site { border-bottom: 0; }
       '<div class="srcs"><h4>Verified by ' + n + ' independent outlets</h4><ol>' + b.src.map(([o, d, u]) => '<li><a href="' + esc(u) + '" target="_blank" rel="noopener"><b>' + esc(o) + '</b> · <span>' + esc(d) + ' &#8599;</span></a></li>').join('') + '</ol></div>' +
       '<p class="note">Analysis by Palindrome, drawn only from the reporting listed. Preview draft; on the live site the editor approves each breakdown before it runs.</p></div></details>';
   }).join('');
+  wirePhotos();
   // A jump link opens its breakdown
   function openFromHash() { const el = location.hash && document.getElementById(location.hash.slice(1)); if (el && el.tagName === 'DETAILS') el.open = true; }
   window.addEventListener('hashchange', openFromHash);
