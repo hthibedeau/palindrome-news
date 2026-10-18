@@ -944,7 +944,7 @@ header.site { border-bottom: 0; }
       </ol>
     </section>
 
-    <section class="breaking tap" id="breaking" aria-label="Breaking news" data-since="2026-10-17T20:16:00-04:00" data-latest="https://www.cbc.ca/news/canada/edmonton/livestory/cfb-wainwright-fire-live-updates-9.7385537" data-first="https://www.ctvnews.ca/edmonton/article/fatalities-and-injuries-after-explosion-and-fire-at-canadian-forces-base-in-alberta/">
+    <section class="breaking tap" id="breaking" aria-label="Breaking news" data-since="2026-10-17T20:16:00-04:00" data-lastdev="2026-10-18T16:33:00-04:00" data-expected="2026-10-18T17:00:00-04:00" data-latest="https://www.cbc.ca/news/canada/edmonton/livestory/cfb-wainwright-fire-live-updates-9.7385537" data-first="https://www.ctvnews.ca/edmonton/article/fatalities-and-injuries-after-explosion-and-fire-at-canadian-forces-base-in-alberta/">
       <div class="bk-text">
         <span class="tag">Breaking</span><span class="btime">Updated 4:50 p.m. ET Sunday</span>
         <h2><a class="card-link" href="https://globalnews.ca/news/12106709/cfb-wainwright-fire/" target="_blank" rel="noopener">Four service members killed, dozens hurt in fire at CFB Wainwright, Carney says</a></h2>
@@ -1147,6 +1147,7 @@ header.site { border-bottom: 0; }
   <section id="corrections" class="ruled" aria-labelledby="cx-h" style="scroll-margin-top: 64px">
     <div class="band-head"><h2 id="cx-h">Corrections &amp; updates</h2><p>Every change we make to a story, with the time. Nothing is changed quietly.</p></div>
     <ol class="log">
+      <li><time>Sun 5:30 p.m.</time><span class="kind">Correction</span><span><b>When a story is Breaking:</b> the six-hour limit added at 5:24 p.m. is replaced. A story now stays Breaking while it keeps moving: a new development within the last hour, or an update that is scheduled (such as a news conference) and due. When the pace slows past that, it becomes the Top story. CFB Wainwright is Breaking again: officials were due to give an update at 5 p.m. Eastern.</span></li>
           <li><time>Sun 5:30 p.m.</time><span class="kind">Update</span><span><b>Alberta referendum:</b> the link now goes to CTV News (5:17 p.m.): Elections Alberta says 1,356,873 people, 43.1% of eligible voters, have already voted by advance or mail-in ballot. Lead story, breakdown and wire updated; the lead’s “Globe and Mail report” label now reads “Latest report,” since the link goes to the free CTV report. <b>Wire:</b> adds Hurricane Trudy on Mexico’s Pacific coast (The Associated Press via CTV News, 3:02 p.m.); Saturday’s West Bank item moves off the wire.</span></li>
       <li><time>Sun 5:24 p.m.</time><span class="kind">Update</span><span><b>Breaking now has a time limit:</b> a story is labelled Breaking for its first six hours after it first broke. After that, the top slot calls it the Top story, in calmer colours. CFB Wainwright first broke Saturday at 8:16 p.m., so it is now the Top story.</span></li>
             <li><time>Sun 4:50 p.m.</time><span class="kind">Update</span><span><b>France:</b> the link now goes to Al Jazeera (4:19 p.m.): the Interior Ministry says nearly 2,400 people were arrested on Saturday and about 1,000 police and gendarmes were hurt (earlier figures: 1,800 arrests, 150 to 500 hurt), and Macron promised a “crisis unit” for urgent aid. Breakdown, France card and wire updated; the card no longer says Macron “is to address the nation tonight.” <b>CFB Wainwright:</b> CBC News reports the officials’ update is expected at 3 p.m. Mountain time (5 p.m. Eastern); added to What we know and the timeline.</span></li>
@@ -1355,13 +1356,19 @@ header.site { border-bottom: 0; }
   if (window.matchMedia) { try { matchMedia('(prefers-color-scheme: dark)').addEventListener('change', syncTheme); } catch (e) {} }
   syncTheme();
 
-  // Breaking has a time limit: BREAKING_HOURS after the story first broke (data-since), the slot says "Top story" instead
-  const BREAKING_HOURS = 6;
-  (function breakingLimit() {
-    const bk = document.getElementById('breaking'); if (!bk || !bk.dataset.since) return;
-    const since = Date.parse(bk.dataset.since); if (isNaN(since)) return;
+  // Breaking lasts while the story is moving (Hannah's rule). The slot says "Breaking" while either
+  //  - a new development came in within the last BREAKING_PACE_MIN minutes (data-lastdev), or
+  //  - an update is scheduled (data-expected, e.g. a news conference) and is due, or due within the last BREAKING_PACE_MIN minutes.
+  // Once the pace slows past that, it says "Top story" in calmer colours. Change the pace here.
+  const BREAKING_PACE_MIN = 60;
+  (function breakingPace() {
+    const bk = document.getElementById('breaking'); if (!bk) return;
+    const last = Date.parse(bk.dataset.lastdev || ''), exp = Date.parse(bk.dataset.expected || '');
+    if (isNaN(last) && isNaN(exp)) return;
     const apply = () => {
-      const top = Date.now() - since > BREAKING_HOURS * 3600000;
+      const now = Date.now(), win = BREAKING_PACE_MIN * 60000;
+      const moving = (!isNaN(last) && now - last <= win) || (!isNaN(exp) && now <= exp + win);
+      const top = !moving;
       bk.classList.toggle('top', top);
       const tag = bk.querySelector('.tag'); if (tag) tag.textContent = top ? 'Top story' : 'Breaking';
       bk.setAttribute('aria-label', top ? 'Top story' : 'Breaking news');
