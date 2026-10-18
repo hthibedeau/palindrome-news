@@ -825,6 +825,18 @@ header.site { border-bottom: 0; }
 .firstby .tl-sub { font-size: 11.5px; }
 /* Credit links (Latest, First reported by, For subscribers) sit above the card's whole-card link, so each opens its own outlet in one tap */
 .firstby, .breaking p.first { position: relative; z-index: 3; }
+/* Live video in the Breaking box: a YouTube player when the network streams there, otherwise a button to the site that is playing it */
+.bk-live { position: relative; z-index: 3; margin: 4px 0 16px; max-width: 760px; }
+.bk-live .bk-player { position: relative; aspect-ratio: 16 / 9; background: #0F0B19; }
+.bk-live .bk-player iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.bk-live .bk-cap { margin: 6px 0 0; font-size: 13px; color: #F6E1E8; }
+.bk-live .bk-cap a { color: #FFFFFF; text-decoration: underline; font-weight: 600; }
+.bk-live .bk-watch { display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 18px; background: #C2264B; color: #FFFFFF; font-size: 16px; font-weight: 700; border-radius: 4px; text-decoration: none; box-shadow: 0 2px 10px rgba(15, 11, 25, .35); }
+.bk-live .bk-watch.replay { background: #FFFFFF; color: #7A1F3D; }
+.bk-live .bk-watch i { width: 10px; height: 10px; border-radius: 50%; background: #FFFFFF; }
+.bk-live .bk-watch.replay i { background: #7A1F3D; }
+@media (prefers-reduced-motion: no-preference) { .bk-live .bk-watch:not(.replay) i { animation: pulse 1.6s ease-in-out infinite; } }
+.bk-live .bk-what { display: block; margin-top: 6px; font-size: 13px; color: #F6E1E8; }
 .latest .firstby a, #latestList .firstby a { display: inline; font-size: 12px; margin: 0; line-height: inherit; }
 
 /* ===== Newsroom pass 3: photo-led cards, breaking video row, smaller newsrooms ===== */
@@ -879,7 +891,7 @@ header.site { border-bottom: 0; }
       </div>
     </div>
     <div class="masthead">
-      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 5:30 p.m.</b></span></div>
+      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 5:37 p.m.</b></span></div>
       <div class="plate">
         <span class="stamp" id="stamp" hidden>Late edition</span>
         <a class="logo" href="#top">Palindrome <em>News</em></a>
@@ -949,6 +961,7 @@ header.site { border-bottom: 0; }
         <span class="tag">Breaking</span><span class="btime">Updated 4:50 p.m. ET Sunday</span>
         <h2><a class="card-link" href="https://globalnews.ca/news/12106709/cfb-wainwright-fire/" target="_blank" rel="noopener">Four service members killed, dozens hurt in fire at CFB Wainwright, Carney says</a></h2>
         <p class="first"><span class="bl"><b>Latest</b> <a href="https://www.ctvnews.ca/edmonton/article/four-dead-dozens-wounded-in-cfb-wainwright-fire-pm-says-live-here/" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline"><strong>CTV News</strong></a> · Sun 12:58 p.m.</span><span class="bl">First reported by <a href="https://www.ctvnews.ca/edmonton/article/fatalities-and-injuries-after-explosion-and-fire-at-canadian-forces-base-in-alberta/" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline"><strong>CTV News</strong></a> · Sat 8:16 p.m.</span></p>
+        <div class="bk-live" id="bkLive" hidden></div>
         <p class="bk-dek">Prime Minister Mark Carney said Sunday that four service members were killed and dozens more seriously hurt when a fast-moving fire swept a training area at the Alberta base on Saturday afternoon. Their families have been told. He called it “one of the worst tragedies for the Forces on Canadian soil in peacetime.” Earlier reports citing military sources had put the toll at seven or more. Military sources told Global News a preliminary investigation suggests a munition from a live training exercise set off a fast-moving grass fire; officials have not confirmed a cause.</p>
         <div class="know">
           <div><h3>What we know</h3><ul><li>Four service members died, Carney said in Ottawa on Sunday, and their next of kin have been notified. Dozens more were seriously hurt. Those affected came from bases across the country, including reservists and soldiers of Princess Patricia’s Canadian Light Infantry, who were training when the fire broke out.</li><li>National Defence says there is no sign of terrorism; the incident is under investigation. Flags on federal buildings are at half-mast.</li><li>The fire started around 4 p.m. Mountain time (6 p.m. Eastern) Saturday in a training area at the base, about 200 km southeast of Edmonton. Gusts near 100 km/h pushed it past the base fence.</li><li>Defence Minister David McGuinty confirmed deaths and injuries and said he could not recall an incident like it in recent memory. On Sunday he said he was heading to Edmonton for a briefing. Carney said officials, including McGuinty and Maj.-Gen. Wade Rutland, would brief Canadians this afternoon; CBC News reports the update is expected at 3 p.m. Mountain time (5 p.m. Eastern).</li><li>Patients are being treated in Wainwright, Edmonton, Red Deer and Calgary. Several hospitals, including Edmonton’s Royal Alexandra and University of Alberta hospitals, went to Code Orange, a mass-casualty alert; Acute Care Alberta said Sunday afternoon that all Code Orange alerts have been stood down. Emergency Health Services Alberta sent 30 units, including 22 ground ambulances and eight air ambulances, in a response that ran more than 10 hours.</li><li>By late Saturday, the Municipal District of Wainwright said the fire was being held. No evacuation order was issued.</li><li>The fire closed advance voting in the area early for Monday’s Alberta referendum; ballots were moved securely.</li></ul></div>
@@ -1147,6 +1160,7 @@ header.site { border-bottom: 0; }
   <section id="corrections" class="ruled" aria-labelledby="cx-h" style="scroll-margin-top: 64px">
     <div class="band-head"><h2 id="cx-h">Corrections &amp; updates</h2><p>Every change we make to a story, with the time. Nothing is changed quietly.</p></div>
     <ol class="log">
+      <li><time>Sun 5:37 p.m.</time><span class="kind">New</span><span><b>Watch live:</b> when a story is Breaking, its box now carries the live video. If the network streams it on YouTube, the player sits right in the box; if not, a red “Watch live” button opens the network’s own page that is playing it. For Canadian stories CTV News comes first, then CBC News; for U.S. stories, American networks. CFB Wainwright: officials’ update, live on CTV News.</span></li>
       <li><time>Sun 5:30 p.m.</time><span class="kind">Correction</span><span><b>When a story is Breaking:</b> the six-hour limit added at 5:24 p.m. is replaced. A story now stays Breaking while it keeps moving: a new development within the last hour, or an update that is scheduled (such as a news conference) and due. When the pace slows past that, it becomes the Top story. CFB Wainwright is Breaking again: officials were due to give an update at 5 p.m. Eastern.</span></li>
           <li><time>Sun 5:30 p.m.</time><span class="kind">Update</span><span><b>Alberta referendum:</b> the link now goes to CTV News (5:17 p.m.): Elections Alberta says 1,356,873 people, 43.1% of eligible voters, have already voted by advance or mail-in ballot. Lead story, breakdown and wire updated; the lead’s “Globe and Mail report” label now reads “Latest report,” since the link goes to the free CTV report. <b>Wire:</b> adds Hurricane Trudy on Mexico’s Pacific coast (The Associated Press via CTV News, 3:02 p.m.); Saturday’s West Bank item moves off the wire.</span></li>
       <li><time>Sun 5:24 p.m.</time><span class="kind">Update</span><span><b>Breaking now has a time limit:</b> a story is labelled Breaking for its first six hours after it first broke. After that, the top slot calls it the Top story, in calmer colours. CFB Wainwright first broke Saturday at 8:16 p.m., so it is now the Top story.</span></li>
@@ -1361,6 +1375,23 @@ header.site { border-bottom: 0; }
   //  - an update is scheduled (data-expected, e.g. a news conference) and is due, or due within the last BREAKING_PACE_MIN minutes.
   // Once the pace slows past that, it says "Top story" in calmer colours. Change the pace here.
   const BREAKING_PACE_MIN = 60;
+  // Live video for the Breaking story (Hannah's rule). Each update fills LIVE when a network is streaming the story.
+  // Order: Canadian story - CTV News, then CBC News, Global News, CPAC, CP24; U.S. story - CBS News, NBC News, ABC News, PBS NewsHour, C-SPAN, Fox News, CNN.
+  // YouTube first: yt = the live video's YouTube id (plays right here). If the network isn't live on YouTube, leave yt empty and set url to the network's own page that is playing it.
+  // status: 'live' (Watch live), 'replay' (stream over, recording posted) or 'off' (hide). Times are Eastern.
+  const LIVE = { status: 'live', outlet: 'CTV News', title: 'Officials provide update on Wainwright explosion', yt: '', url: 'https://www.ctvnews.ca/video/live/2026/10/18/watch-live-officials-provide-update-on-wainwright-explosion/', start: '2026-10-18T17:00:00-04:00' };
+  (function liveBox() {
+    const box = document.getElementById('bkLive'); if (!box || !LIVE || LIVE.status === 'off' || !(LIVE.yt || LIVE.url)) return;
+    const live = LIVE.status === 'live', word = live ? 'Watch live' : 'Watch the replay';
+    if (LIVE.yt) {
+      const id = encodeURIComponent(LIVE.yt);
+      box.innerHTML = '<div class="bk-player"><iframe src="https://www.youtube-nocookie.com/embed/' + id + '?rel=0&playsinline=1" title="' + esc(LIVE.outlet + ': ' + LIVE.title) + '" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>'
+        + '<p class="bk-cap">' + (live ? 'LIVE' : 'Replay') + ' · ' + esc(LIVE.outlet) + ' on YouTube · ' + esc(LIVE.title) + ' · <a href="https://www.youtube.com/watch?v=' + id + '" target="_blank" rel="noopener">Open on YouTube</a>' + (LIVE.url ? ' · <a href="' + esc(LIVE.url) + '" target="_blank" rel="noopener">' + esc(LIVE.outlet) + '</a>' : '') + '</p>';
+    } else {
+      box.innerHTML = '<a class="bk-watch' + (live ? '' : ' replay') + '" href="' + esc(LIVE.url) + '" target="_blank" rel="noopener"><i aria-hidden="true"></i>' + word + ' on ' + esc(LIVE.outlet) + ' &#8599;</a><span class="bk-what">' + esc(LIVE.title) + '</span>';
+    }
+    box.hidden = false;
+  })();
   (function breakingPace() {
     const bk = document.getElementById('breaking'); if (!bk) return;
     const last = Date.parse(bk.dataset.lastdev || ''), exp = Date.parse(bk.dataset.expected || '');
