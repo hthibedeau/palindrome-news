@@ -569,6 +569,51 @@ header.site { border-bottom: 0; }
 .canada-lens a { font-family: var(--serif); font-size: 20px; font-weight: 600; line-height: 1.25; }
 .canada-lens a::after { content: ""; position: absolute; inset: 0; }
 .canada-lens span { font-size: 14px; color: var(--body); }
+
+/* Wall of clocks: the cities in today's news */
+.clocks { background: var(--surface); border-bottom: 1px solid var(--line); }
+.clocks .wrap { display: flex; gap: 0; overflow-x: auto; scrollbar-width: none; }
+.clocks .wrap::-webkit-scrollbar { display: none; }
+.clk { position: relative; flex: 1 0 auto; min-width: 128px; display: flex; flex-direction: column; gap: 1px; padding: 9px 16px; border-left: 1px solid var(--line); }
+.clk:first-child { border-left: 0; padding-left: 0; }
+.clk .city { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.clk .t { font-family: var(--serif); font-size: 22px; font-weight: 600; line-height: 1.1; color: var(--title); font-variant-numeric: tabular-nums; }
+.clk .t small { font-family: var(--sans); font-size: 11px; font-weight: 600; color: var(--muted); margin-left: 3px; }
+.clk .cgo { font-size: 12px; color: var(--accent); font-weight: 600; white-space: nowrap; }
+.clk a::after { content: ""; position: absolute; inset: 0; }
+.clk:hover .t { color: var(--accent); }
+.clk.hot .city { color: var(--live); }
+/* Breaking: two accounts and the story's timeline */
+.accounts { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 12px; margin: 0 0 20px; }
+.acct { position: relative; z-index: 2; padding: 12px 14px; background: rgba(15, 11, 25, .28); border-top: 3px solid #F6E1E8; }
+.acct.b { border-top-color: rgba(255,255,255,.45); }
+.acct h3 { margin: 0 0 6px; font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #F6E1E8; }
+.breaking .acct p, .acct p { margin: 0 0 6px; font-size: 15px; line-height: 1.45; color: #FFFFFF; }
+.acct small { font-size: 12px; color: #F6E1E8; }
+.acct small a { color: #FFFFFF; text-decoration: underline; }
+.breaking p.acc-h, .acc-h { margin: 0 0 8px; font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #F6E1E8; }
+.tl { margin-top: 14px; padding: 14px 16px; background: rgba(15, 11, 25, .28); }
+.tl h3 { margin: 0 0 8px; font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #F6E1E8; }
+.tl ol { list-style: none; margin: 0; padding: 0 0 0 14px; border-left: 2px solid rgba(255,255,255,.3); }
+.tl li { position: relative; padding: 0 0 10px 6px; font-size: 13px; line-height: 1.45; color: #FFFFFF; }
+.tl li:last-child { padding-bottom: 0; }
+.tl li::before { content: ""; position: absolute; left: -21px; top: 5px; width: 10px; height: 10px; border-radius: 50%; background: #7A1F3D; border: 2px solid #FFFFFF; }
+.tl li:first-child::before { background: #FFFFFF; }
+.tl time { display: block; font-weight: 700; font-size: 12px; color: #F6E1E8; font-variant-numeric: tabular-nums; }
+/* From every direction: how outlets framed the same story */
+.dirs { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 16px; }
+.dir { position: relative; display: flex; flex-direction: column; gap: 8px; padding: 16px 18px; background: var(--surface); border: 1px solid var(--line); border-top: 4px solid var(--accent); }
+.dir:nth-child(2) { border-top-color: var(--wine); }
+.dir:nth-child(3) { border-top-color: var(--title); }
+.dir:nth-child(4) { border-top-color: var(--dash); }
+.dir .o { font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--title); }
+.dir .ang { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.dir p { margin: 0; font-family: var(--serif); font-size: 18px; line-height: 1.35; color: var(--ink); }
+.dir a { margin-top: auto; font-size: 13px; font-weight: 600; color: var(--accent); }
+.dir a::after { content: ""; position: absolute; inset: 0; }
+.dir:hover { border-color: var(--accent); }
+.common { margin-top: 16px; padding: 14px 18px; border: 1px dashed var(--dash); font-size: 15px; line-height: 1.5; color: var(--body); }
+.common b { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--title); margin-right: 8px; }
 </style>
 
 <header class="site">
@@ -605,6 +650,7 @@ header.site { border-bottom: 0; }
       <a href="#">Energy &amp; Infrastructure</a>
       <a href="#sec-world">World</a>
       <a href="#sec-us">United States</a>
+      <a href="#directions">Every direction</a>
       <a href="#video">Watch</a>
       <a href="#editorsread">Editor's Read</a>
       <a href="#mostread">Most read</a>
@@ -630,6 +676,10 @@ header.site { border-bottom: 0; }
     <span class="tk-label"><i aria-hidden="true"></i>Latest</span>
     <div class="tk-viewport"><ul class="tk-track" id="tkTrack"></ul></div>
   </div>
+</div>
+
+<div class="clocks" aria-label="Local time where today's news is happening">
+  <div class="wrap" id="clocks"></div>
 </div>
 
 <main class="wrap">
@@ -659,8 +709,13 @@ header.site { border-bottom: 0; }
         <h2><a class="card-link" href="https://english.alarabiya.net/News/middle-east/2026/10/17/tanker-explodes-after-hitting-mine-in-strait-of-hormuz-iran-s-irgc" target="_blank" rel="noopener">Oil tanker explodes after hitting a mine in the Strait of Hormuz, Iran's Revolutionary Guard says</a></h2>
         <p class="bk-dek">First reported Saturday by <strong>Al Arabiya</strong>, citing Iran's Revolutionary Guard. <strong>Al Jazeera</strong> now reports it too. Palindrome has not confirmed it yet.</p>
         <div class="know">
-          <div><h3>What we know</h3><ul><li>The Guard says a tanker hit a mine in the Strait of Hormuz and exploded.</li><li>It says the ship carried more than two million barrels of crude on a route Iran had not approved.</li><li>Al Jazeera reports several tankers hit since Friday, and the Guard now warns the strait is closed.</li><li>The U.K.'s maritime trade agency says a grenade fired from a small boat hit one tanker.</li><li>U.S. Central Command says most of Iran's attempted attacks fail and the strait is open, <a href="https://www.foxnews.com/world/vast-majority-irans-attempted-attacks-strait-hormuz-unsuccessful-centcom-spokesman-says" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline">Fox News reports</a>. It did not address this tanker.</li></ul></div>
+          <div><h3>What we know</h3><ul><li>The Guard says a tanker hit a mine in the Strait of Hormuz and exploded.</li><li>It says the ship carried more than two million barrels of crude on a route Iran had not approved.</li><li>Al Jazeera reports several tankers hit since Friday, and the Guard now warns the strait is closed.</li><li>The U.K.'s maritime trade agency says a grenade fired from a small boat hit one tanker.</li></ul></div>
           <div><h3>Not yet known</h3><ul><li>The ship's name and flag.</li><li>Whether anyone was hurt.</li><li>Confirmation from other outlets.</li></ul></div>
+        </div>
+        <p class="acc-h">Two accounts</p>
+        <div class="accounts">
+          <div class="acct"><h3>Iran's Revolutionary Guard</h3><p>The strait is "closed." A tanker on an unapproved route hit a mine and exploded.</p><small>Via <a href="https://english.alarabiya.net/News/middle-east/2026/10/17/tanker-explodes-after-hitting-mine-in-strait-of-hormuz-iran-s-irgc" target="_blank" rel="noopener">Al Arabiya</a> and <a href="https://www.aljazeera.com/news/liveblog/2026/10/17/draft-2" target="_blank" rel="noopener">Al Jazeera</a></small></div>
+          <div class="acct b"><h3>U.S. Central Command</h3><p>The strait is open. About 97% of ships trying to cross got through without being hit.</p><small>Via <a href="https://www.foxnews.com/world/vast-majority-irans-attempted-attacks-strait-hormuz-unsuccessful-centcom-spokesman-says" target="_blank" rel="noopener">Fox News</a>. It did not address this tanker.</small></div>
         </div>
         <div class="actions">
           <a href="https://english.alarabiya.net/News/middle-east/2026/10/17/tanker-explodes-after-hitting-mine-in-strait-of-hormuz-iran-s-irgc" target="_blank" rel="noopener">Read Al Arabiya's report &#8599;</a>
@@ -673,6 +728,14 @@ header.site { border-bottom: 0; }
           <div class="tt">Confirmation tracker <span>2 of 6</span></div>
           <div class="segs" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i></div>
           <p>Reporting so far: Al Arabiya, <a href="https://www.aljazeera.com/news/liveblog/2026/10/17/draft-2" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline">Al Jazeera &#8599;</a>. A full Palindrome summary runs once six independent outlets confirm.</p>
+        </div>
+        <div class="tl">
+          <h3>How this story developed</h3>
+          <ol>
+            <li><time>5:30 p.m.</time>The U.S. military's competing account added: it says the strait is open.</li>
+            <li><time>5:25 p.m.</time>Al Jazeera reports it too, and the Guard warns the strait is closed. Tracker moves to 2 of 6.</li>
+            <li><time>4:45 p.m.</time>Al Arabiya first reports the explosion, citing Iran's Revolutionary Guard.</li>
+          </ol>
         </div>
       </div>
     </section>
@@ -738,6 +801,13 @@ header.site { border-bottom: 0; }
   <section aria-labelledby="day-h">
     <div class="band-head"><h2 id="day-h">The day so far</h2><p>The bar beside each story counts its outlets. Six fills it, and only then does Palindrome write a summary.</p></div>
     <div class="fronts" id="fronts"></div>
+  </section>
+
+  <section id="directions" class="ruled" aria-labelledby="dir-h" style="scroll-margin-top: 64px">
+    <div class="band-head"><h2 id="dir-h">From every direction</h2><p>One story, four newsrooms. What each one chose to lead with.</p></div>
+    <p style="margin: 0 0 14px; font-family: var(--serif); font-size: 22px; font-weight: 600; color: var(--title)">Trump puts new Russia sanctions on hold</p>
+    <div class="dirs" id="dirs"></div>
+    <p class="common"><b>What they all agree on</b>Trump signed new sanctions on Russia into law, then paused them by executive order.</p>
   </section>
 
   <section id="sec-us" class="ruled" aria-labelledby="us-h" style="scroll-margin-top: 64px">
@@ -1190,6 +1260,34 @@ header.site { border-bottom: 0; }
     ['Axios', 'Katie Zacharia’s exit as White House press secretary', 'https://www.axios.com/2026/10/16/trump-katie-zacharia-press-secretary']
   ];
   $('ledes').innerHTML = ledes.map(([o, h, u]) => '<article class="lede"><span class="mono" aria-hidden="true">' + esc({ 'CBS News': 'CBS', 'ABC News': 'ABC', 'Fox News': 'Fox', CNN: 'CNN', 'PBS NewsHour': 'PBS', Axios: 'Ax' }[o] || o.slice(0, 3)) + '</span><span class="o">' + esc(o) + '</span><a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(h) + '</a></article>').join('');
+
+  // From every direction (angles described in our words)
+  const dirs = [
+    ['CBS News', 'Leads with trade', 'The waiver spares the biggest buyers of Russian oil from new U.S. tariffs.', 'https://www.cbsnews.com/news/trump-waives-sanctions-tariffs-russian-oil-lindsey-graham/'],
+    ['ABC News', 'Leads with Congress', 'Some lawmakers are pushing back on Trump for waiving the sanctions they passed.', 'https://abcnews.com/Politics/trump-signs-order-waiving-graham-act-sanctions-russia/story?id=137341529'],
+    ['Al Jazeera', 'Leads with who gains', 'Analysts say Russia stands to gain the most, and ask whether Europe still buys Moscow’s gas.', 'https://www.aljazeera.com/news/2026/10/17/trump-eases-russia-oil-sanctions-but-is-europe-still-buying-moscows-gas'],
+    ['Euronews', 'Leads with the reversal', 'Trump signed steep new sanctions, then waived them, in the same news cycle.', 'https://www.euronews.com/video/2026/10/17/latest-news-bulletin-october-17th-2026-midday']
+  ];
+  $('dirs').innerHTML = dirs.map(([o, a, p, u]) => '<article class="dir"><span class="o">' + esc(o) + '</span><span class="ang">' + esc(a) + '</span><p>' + esc(p) + '</p><a href="' + esc(u) + '" target="_blank" rel="noopener">Read ' + esc(o) + ' &#8599;</a></article>').join('');
+
+  // Wall of clocks
+  const clocks = [
+    ['Vancouver', 'America/Vancouver', 'B.C. votes', '#sec-canada', false],
+    ['Edmonton', 'America/Edmonton', 'Vote Monday', '#editorsread', false],
+    ['Ottawa', 'America/Toronto', 'Newsroom', '#', false],
+    ['Washington', 'America/New_York', 'Midterms', '#sec-us', false],
+    ['Kyiv', 'Europe/Kyiv', 'Power grid', '#sec-world', false],
+    ['Tehran', 'Asia/Tehran', 'Hormuz', '#breaking', true]
+  ];
+  function drawClocks() {
+    $('clocks').innerHTML = clocks.map(([c, tz, w, h, hot]) => {
+      let t = '';
+      try { t = new Date().toLocaleTimeString('en-CA', { hour: 'numeric', minute: '2-digit', timeZone: tz }).replace(/\s?([ap])\.?m\.?/i, ' <small>$1.m.</small>'); } catch (e) {}
+      return '<div class="clk' + (hot ? ' hot' : '') + '"><span class="city">' + esc(c) + '</span><span class="t">' + t + '</span><a class="cgo" href="' + h + '">' + esc(w) + '</a></div>';
+    }).join('');
+  }
+  drawClocks();
+  setInterval(drawClocks, 30000);
 
   // Compact bar once the nameplate scrolls off
   const stick = $('stick');
