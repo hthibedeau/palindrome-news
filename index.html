@@ -780,6 +780,11 @@ header.site { border-bottom: 0; }
 
 .breaking p.first { margin: -4px 0 10px; font-size: 13px; font-weight: 600; letter-spacing: .02em; color: #F6E1E8; }
 .breaking p.first a { color: #FFFFFF; }
+/* After the breaking time limit the slot becomes the Top story: same place, calmer colours */
+.breaking.top { background: #2B1B54; }
+.breaking.top .tag { color: #2B1B54; }
+.breaking.top .actions a:first-child { color: #2B1B54; }
+.breaking.top p, .breaking.top .btime, .breaking.top p.first { color: #E6DEF6; }
 .breaking p.first .bl { display: block; }
 .breaking p.first .bl + .bl { font-weight: 500; opacity: .9; }
 .breaking p.first b { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; margin-right: 4px; }
@@ -874,7 +879,7 @@ header.site { border-bottom: 0; }
       </div>
     </div>
     <div class="masthead">
-      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 4:50 p.m.</b></span></div>
+      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 5:24 p.m.</b></span></div>
       <div class="plate">
         <span class="stamp" id="stamp" hidden>Late edition</span>
         <a class="logo" href="#top">Palindrome <em>News</em></a>
@@ -939,7 +944,7 @@ header.site { border-bottom: 0; }
       </ol>
     </section>
 
-    <section class="breaking tap" id="breaking" aria-label="Breaking news" data-latest="https://www.cbc.ca/news/canada/edmonton/livestory/cfb-wainwright-fire-live-updates-9.7385537" data-first="https://www.ctvnews.ca/edmonton/article/fatalities-and-injuries-after-explosion-and-fire-at-canadian-forces-base-in-alberta/">
+    <section class="breaking tap" id="breaking" aria-label="Breaking news" data-since="2026-10-17T20:16:00-04:00" data-latest="https://www.cbc.ca/news/canada/edmonton/livestory/cfb-wainwright-fire-live-updates-9.7385537" data-first="https://www.ctvnews.ca/edmonton/article/fatalities-and-injuries-after-explosion-and-fire-at-canadian-forces-base-in-alberta/">
       <div class="bk-text">
         <span class="tag">Breaking</span><span class="btime">Updated 4:50 p.m. ET Sunday</span>
         <h2><a class="card-link" href="https://globalnews.ca/news/12106709/cfb-wainwright-fire/" target="_blank" rel="noopener">Four service members killed, dozens hurt in fire at CFB Wainwright, Carney says</a></h2>
@@ -1142,6 +1147,7 @@ header.site { border-bottom: 0; }
   <section id="corrections" class="ruled" aria-labelledby="cx-h" style="scroll-margin-top: 64px">
     <div class="band-head"><h2 id="cx-h">Corrections &amp; updates</h2><p>Every change we make to a story, with the time. Nothing is changed quietly.</p></div>
     <ol class="log">
+      <li><time>Sun 5:24 p.m.</time><span class="kind">Update</span><span><b>Breaking now has a time limit:</b> a story is labelled Breaking for its first six hours after it first broke. After that, the top slot calls it the Top story, in calmer colours. CFB Wainwright first broke Saturday at 8:16 p.m., so it is now the Top story.</span></li>
             <li><time>Sun 4:50 p.m.</time><span class="kind">Update</span><span><b>France:</b> the link now goes to Al Jazeera (4:19 p.m.): the Interior Ministry says nearly 2,400 people were arrested on Saturday and about 1,000 police and gendarmes were hurt (earlier figures: 1,800 arrests, 150 to 500 hurt), and Macron promised a “crisis unit” for urgent aid. Breakdown, France card and wire updated; the card no longer says Macron “is to address the nation tonight.” <b>CFB Wainwright:</b> CBC News reports the officials’ update is expected at 3 p.m. Mountain time (5 p.m. Eastern); added to What we know and the timeline.</span></li>
       <li><time>Sun 4:37 p.m.</time><span class="kind">Update</span><span><b>For subscribers:</b> where The Globe and Mail has a report on a story, it now appears as a separate “For subscribers” link under the free latest report and the “First reported by” credit: CFB Wainwright, the Alberta referendum, the B.C. elections, the St. Petersburg drone strikes and the Netanyahu endorsement. The Globe’s rally report is back in the referendum breakdown’s sources. Also fixed: the “Alberta votes” item in What to watch still pointed at the Globe in the page’s code, and on some cards a tap on a credit line opened the headline’s link instead; each credit now opens its own outlet in one tap.</span></li>
       <li><time>Sun 4:26 p.m.</time><span class="kind">Update</span><span><b>Free to read first:</b> story links no longer open first on The Globe and Mail, which needs a subscription. The Alberta referendum link now goes to CTV News (12:56 p.m.), and the referendum breakdown cites CBC News for Saturday’s separatist rally at the legislature. The Globe is still credited where it reported first.</span></li>
@@ -1348,20 +1354,34 @@ header.site { border-bottom: 0; }
   if (window.matchMedia) { try { matchMedia('(prefers-color-scheme: dark)').addEventListener('change', syncTheme); } catch (e) {} }
   syncTheme();
 
+  // Breaking has a time limit: BREAKING_HOURS after the story first broke (data-since), the slot says "Top story" instead
+  const BREAKING_HOURS = 6;
+  (function breakingLimit() {
+    const bk = document.getElementById('breaking'); if (!bk || !bk.dataset.since) return;
+    const since = Date.parse(bk.dataset.since); if (isNaN(since)) return;
+    const apply = () => {
+      const top = Date.now() - since > BREAKING_HOURS * 3600000;
+      bk.classList.toggle('top', top);
+      const tag = bk.querySelector('.tag'); if (tag) tag.textContent = top ? 'Top story' : 'Breaking';
+      bk.setAttribute('aria-label', top ? 'Top story' : 'Breaking news');
+      const tg = document.getElementById('breakingToggle'); if (tg) tg.textContent = top ? 'Show the top story' : 'Show breaking news';
+    };
+    apply(); setInterval(apply, 60000);
+  })();
   // Breaking news takes over the Daily Brief slot
   const toggle = $('breakingToggle');
   function setBreaking(on) {
     $('breaking').hidden = !on;
     $('brief').hidden = on;
     toggle.setAttribute('aria-pressed', String(on));
-    toggle.textContent = 'Show breaking news';
+    toggle.textContent = $('breaking').classList.contains('top') ? 'Show the top story' : 'Show breaking news';
   }
   toggle.addEventListener('click', () => setBreaking(toggle.getAttribute('aria-pressed') !== 'true'));
   $('backToBrief').addEventListener('click', (e) => { e.preventDefault(); setBreaking(false); $('topSlot').scrollIntoView(); });
 
   // The day so far (sample)
   const stories = [
-    ['city', 'Canada', 'Breaking', 'Four killed, dozens hurt in fire at CFB Wainwright', 'Prime Minister Mark Carney says four service members died and dozens were seriously hurt when a fire tore through a training area at the Alberta base on Saturday. Earlier reports citing military sources had said seven or more.', 'CTV News, Global News, CBC News, The Globe and Mail, Edmonton Journal, Associated Press, Fox News, CNN, NBC News', 'https://www.ctvnews.ca/edmonton/article/four-dead-dozens-wounded-in-cfb-wainwright-fire-pm-says-live-here/', 'https://globalnews.ca/wp-content/uploads/2026/10/CP177106674.jpg?quality=65&strip=all&w=720&h=379&crop=1', 'Sun 12:58 p.m.'],
+    ['city', 'Canada', 'Top story', 'Four killed, dozens hurt in fire at CFB Wainwright', 'Prime Minister Mark Carney says four service members died and dozens were seriously hurt when a fire tore through a training area at the Alberta base on Saturday. Earlier reports citing military sources had said seven or more.', 'CTV News, Global News, CBC News, The Globe and Mail, Edmonton Journal, Associated Press, Fox News, CNN, NBC News', 'https://www.ctvnews.ca/edmonton/article/four-dead-dozens-wounded-in-cfb-wainwright-fire-pm-says-live-here/', 'https://globalnews.ca/wp-content/uploads/2026/10/CP177106674.jpg?quality=65&strip=all&w=720&h=379&crop=1', 'Sun 12:58 p.m.'],
     ['city', 'World', 'Developing', 'Nearly 2,400 arrested as French cost-of-living protests turn violent', 'About 550,000 people marched, by the government’s count. Limoges’s 19th-century city hall burned, and the Interior Ministry says about 1,000 police and gendarmes were hurt. In a televised address Sunday, Macron said rioters and looters would “pay for their crimes.”', 'Al Jazeera, Euronews, Associated Press, AFP, Global News', 'https://www.cbsnews.com/news/protests-france-rising-living-costs-students/', 'https://images.euronews.com/articles/stories/09/95/68/48/1200x675_cmsv2_16375bf6-e39d-5f0e-bd95-e1916c571549-9956848.jpg', 'Sun 9:27 a.m.'],
     ['houses', 'Business & Economy', 'Developing', 'Ottawa warns Stelco’s U.S. owner over layoffs', 'Industry Minister Mélanie Joly says Cleveland-Cliffs could face fines or a forced sale of its Canadian assets if it doesn’t keep its job promises. Stelco has announced up to 500 layoffs.', 'Global News, CTV News, BNN Bloomberg', 'https://globalnews.ca/news/12101944/stelco-federal-government-legal-action/', 'https://globalnews.ca/wp-content/uploads/2026/10/CP177060556-e1791992284619.jpg?quality=65&strip=all&w=720&h=379&crop=1', '3:00 p.m.'],
     ['powerline', 'World', 'Developing', 'Russia keeps hitting Ukraine’s power grid despite a ceasefire claim', 'Ukraine says strikes on its energy sites have gone on night after night since the U.S. announced an energy ceasefire. Russia says details are still being worked out.', 'Global News, Euronews, ITV', 'https://globalnews.ca/news/12101977/russia-ukraine-energy-strikes/', 'https://globalnews.ca/wp-content/uploads/2026/10/CP177086698-e1791986862112.jpg?quality=65&strip=all&w=720&h=379&crop=1', '2:30 p.m.'],
