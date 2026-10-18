@@ -714,30 +714,6 @@ header.site { border-bottom: 0; }
 .vid .addshot, .read .addshot { align-self: flex-start; margin-top: 4px; }
 .shot-toast { position: fixed; left: 50%; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); z-index: 60; max-width: min(92vw, 460px); padding: 10px 16px; background: var(--band); color: var(--band-ink); font-size: 14px; box-shadow: 0 6px 20px rgba(15, 11, 25, .3); }
 
-/* The day in pictures: a rotating gallery of the day's news photos */
-.pics { background: #0F0B19; color: #F1ECFA; }
-.pics .stage { position: relative; display: block; aspect-ratio: 16 / 8; max-width: 100%; overflow: hidden; background: #0F0B19; }
-@media (max-width: 640px) { .pics .stage { aspect-ratio: 4 / 3; } }
-.pics .stage .ph, .pics .stage svg { position: absolute; inset: 0; width: 100%; height: 100%; }
-.pics .stage .ph img { animation: picfade .6s ease; }
-@keyframes picfade { from { opacity: 0; } to { opacity: 1; } }
-@media (prefers-reduced-motion: reduce) { .pics .stage .ph img { animation: none; } }
-.pics .stage .ph .credit { display: none; }
-.pics .cap { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 18px; align-items: start; padding: 14px 18px; }
-.pics .cap p { color: #F1ECFA; margin: 0; font-family: var(--serif); font-size: clamp(17px, 2vw, 21px); line-height: 1.35; }
-.pics .cap small { display: block; margin-top: 4px; font-size: 12px; color: #C9BFE3; }
-.pics .cap small a { color: #F0C3D0; font-weight: 600; }
-.pics .ctl { display: flex; gap: 6px; }
-.pics .ctl button { width: 40px; height: 40px; border: 1px solid #4A3A78; background: transparent; color: #F1ECFA; display: flex; align-items: center; justify-content: center; cursor: pointer; }
-@media (hover: hover) { .pics .ctl button:hover { background: #2B1B54; } }
-.pics .count { font-size: 12px; font-weight: 700; letter-spacing: .1em; color: #C9BFE3; align-self: center; margin-right: 6px; font-variant-numeric: tabular-nums; }
-.pics .strip { display: flex; gap: 6px; overflow-x: auto; padding: 0 18px 16px; scrollbar-width: none; }
-.pics .strip::-webkit-scrollbar { display: none; }
-.pics .strip button { flex: 0 0 88px; aspect-ratio: 16 / 10; padding: 0; border: 2px solid transparent; background: #2B1B54; overflow: hidden; cursor: pointer; opacity: .6; }
-.pics .strip button[aria-current="true"] { border-color: #F0C3D0; opacity: 1; }
-.pics .strip .ph, .pics .strip svg { display: block; width: 100%; height: 100%; }
-.pics .strip .ph .credit { display: none; }
-@media (max-width: 560px) { .pics .cap { grid-template-columns: minmax(0, 1fr); } }
 /* Photos on the wire and on Most read */
 .latest li.wt { grid-template-columns: 64px minmax(0, 1fr) 64px; }
 .latest .wthumb { position: relative; z-index: 2; display: block; width: 64px; aspect-ratio: 1; overflow: hidden; background: var(--soft); }
@@ -758,7 +734,6 @@ header.site { border-bottom: 0; }
 .ed .thumb { display: block; }
 /* Motion: slow pan and zoom on the big news photos, like a newsroom video wall */
 @media (prefers-reduced-motion: no-preference) {
-  .pics .stage .ph img { animation: picfade .6s ease, kb1 14s ease-in-out infinite alternate; }
   .hero-art .ph img, .breaking .bart .ph img, .bd .bdimg .ph img, .us-lead .fimg .ph img { animation: kb2 18s ease-in-out infinite alternate; transform-origin: 60% 40%; }
   .fs.top .fimg .ph img, .vid .vt .ph img { transition: transform 6s ease; }
   @media (hover: hover) { .fs.top:hover .fimg .ph img, .vid:hover .vt .ph img { transform: scale(1.08); } }
@@ -802,14 +777,11 @@ header.site { border-bottom: 0; }
 /* Latest report on top, "First reported by" below, on every story */
 .firstby > span { display: block; }
 .tl-latest b { font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-right: 4px; }
-.pics .tl-latest b { color: #FFB3C1; }
 .firstby { display: block; margin-top: 3px; font-size: 12px; line-height: 1.4; color: var(--muted); }
 .firstby a { position: relative; z-index: 2; color: var(--accent); font-weight: 600; }
 .firstby a:hover { text-decoration: underline; }
-.pics .firstby { color: #C9BFE3; }
 .firstby a::after { content: none !important; }
 .latest .firstby a, #latestList .firstby a { display: inline; font-size: 12px; margin: 0; line-height: inherit; }
-.pics .firstby a { color: #F0C3D0; }
 </style>
 
 <header class="site" id="top">
@@ -847,7 +819,6 @@ header.site { border-bottom: 0; }
       <a href="#sec-business">Business &amp; Economy</a>
       <a href="#sec-world">World</a>
       <a href="#sec-us">United States</a>
-      <a href="#pictures">Pictures</a>
       <a href="#breakdown">Breakdown</a>
       <a href="#video">Watch</a>
       <a href="#ahead">What to watch</a>
@@ -949,11 +920,6 @@ header.site { border-bottom: 0; }
       <p class="label">The wire <span class="live"><i aria-hidden="true"></i>Live</span></p>
       <ol id="latestList"></ol>
     </aside>
-  </section>
-
-  <section id="pictures" aria-labelledby="pic-h" style="scroll-margin-top: 64px">
-    <div class="band-head"><h2 id="pic-h">The day in pictures</h2><p>Photos from today's news, credited to each newsroom. A new picture every few seconds, and a new order each visit.</p></div>
-    <div class="pics" id="pics" aria-roledescription="carousel"></div>
   </section>
 
   <section id="breakdown" aria-labelledby="bd-h" style="scroll-margin-top: 64px">
@@ -1861,46 +1827,6 @@ header.site { border-bottom: 0; }
       }
     });
   })();
-
-  // The day in pictures: shuffled each visit, advances every 6 seconds
-  const PICS = [["https://www.theglobeandmail.com/resizer/v2/RWPHHLA4GZDHJGBZRPO3FA6YWI.JPG?auth=6f12cbfca36303ef552c9fabee9c10ce97bd87f2a287f354002d79edef89336f&width=1200&height=800&quality=80&smart=true", "Pete Fry greets supporters after defeating Ken Sim to become Vancouver’s mayor.", "The Globe and Mail", "https://www.theglobeandmail.com/canada/article-voting-bc-municipal-elections/"], ["https://www.theglobeandmail.com/resizer/v2/ADVD6NTER5ALLOFW6E4ESAMAEM.JPG?auth=3cb21b792cb3b1b2633e86a7222910b6ef1491ce3e1cdfbf34ca817522e44dd5&width=1200&height=800&quality=80&smart=true", "Separatists rally at the Alberta legislature in Edmonton on Saturday, two days before the referendum.", "The Globe and Mail", "https://www.theglobeandmail.com/canada/alberta/article-alberta-separatists-rally-edmonton-referendum-independence-vote/"], ["https://s.yimg.com/lo/mysterio/api/c2420239db3bc10887b1e485057123a2afa4288ecf07ee1d0fd6d67812181dc8/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fcp_news_842%2F94cd3a3d0d3669a3c5aff483a883dc4d.jpg", "Alberta Premier Danielle Smith. Albertans vote Monday on whether to start the path toward a referendum on leaving Canada.", "The Canadian Press", "https://ca.news.yahoo.com/rallies-planned-final-weekend-alberta-120015382.html"], ["https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ad2d683dbb6-1792202371.jpg?resize=770%2C513&quality=80", "A firefighter battles the Norte Fire in Orange County, California, where 16,000 people have been told to leave.", "AFP", "https://www.cbsnews.com/losangeles/news/norte-fire-san-juan-capistrano-oct-17/"], ["https://www.aljazeera.com/wp-content/uploads/2026/10/image-1792181302.jpg?resize=730%2C410&quality=80", "Flowers and candles at a memorial in Bend, Oregon, after Thursday’s school shooting.", "Al Jazeera", "https://www.aljazeera.com/video/newsfeed/2026/10/16/oregon-community-mourns-victims-of-school-shooting"], ["https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/12b9ae07-f51b-4369-8a8b-203a1dcbd00d/5ff90cf5-c1b7-48a9-b1cc-b64c13bcaa27/1280x720/match/1024/512/image.jpg?ve=1&tl=1", "Capt. Tim Hawkins of U.S. Central Command says most of Iran’s attacks on Hormuz shipping fail.", "Fox News", "https://www.foxnews.com/video/6407012468112"], ["https://globalnews.ca/wp-content/uploads/2026/10/CP177060556-e1791992284619.jpg?quality=65&strip=all&w=720&h=379&crop=1", "Stelco’s steelworks. Ottawa is warning the company’s U.S. owner over up to 500 layoffs.", "The Canadian Press via Global News", "https://globalnews.ca/news/12101944/stelco-federal-government-legal-action/"], ["https://globalnews.ca/wp-content/uploads/2026/10/CP177086698-e1791986862112.jpg?quality=65&strip=all&w=720&h=379&crop=1", "Rescuers at a damaged building in Ukraine, as Russian strikes on energy sites go on despite a ceasefire claim.", "The Canadian Press via Global News", "https://globalnews.ca/news/12101977/russia-ukraine-energy-strikes/"], ["https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ad270d1-1792176337.jpg?resize=770%2C513&quality=80", "Katie Zacharia, out as White House press secretary after five days.", "Reuters", "https://www.nbcwashington.com/news/national-international/trump-press-secretary-katie-zacharia-future/4168341/"], ["https://www.aljazeera.com/wp-content/uploads/2026/10/image-1792213059.jpg?resize=770%2C433&quality=80", "Donald Trump speaks to reporters at the White House as he pauses new Russia sanctions.", "Al Jazeera", "https://www.cbsnews.com/news/trump-waives-sanctions-tariffs-russian-oil-lindsey-graham/"], ["https://globalnews.ca/wp-content/uploads/2026/10/66448dec2477783b245bd24907a89f6317d195d18d4c2661fb7704f9003f50e2_a43a0b.jpg?quality=65&strip=all&w=720&h=379&crop=1", "A polling station sign in Alberta. Researchers see posts online already preparing to dispute Monday’s result.", "Global News", "https://globalnews.ca/news/12105632/alberta-referendum-results-mcgill-online-research"], ["https://globalnews.ca/wp-content/uploads/2026/10/Stellantis-e1792244648251.jpg?quality=65&strip=all&w=720&h=379&crop=1", "Contract talks between Stellantis and its workers have stalled as they vote on a strike mandate.", "Global News", "https://globalnews.ca/news/12106389/stellantis-begin-voting-strike-mandate/"], ["https://globalnews.ca/wp-content/uploads/2026/10/Aleve-e1792085538434.jpg?quality=65&strip=all&w=720&h=379&crop=1", "Aleve is among the common products in a new recall.", "Global News", "https://globalnews.ca/news/12103845/flintstones-vitamin-recall-aleve-claritin/"]];
-  for (let i = PICS.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [PICS[i], PICS[j]] = [PICS[j], PICS[i]]; }
-  let pi = 0, pTimer = null, paused = false;
-  const still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const icoPrev = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>';
-  const icoNext = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>';
-  const icoPause = '<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14"/><rect x="14" y="5" width="4" height="14"/></svg>';
-  const icoPlay = '<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg>';
-  $('pics').innerHTML = '<a class="stage" id="picStage" target="_blank" rel="noopener"></a>' +
-    '<div class="cap"><div><p id="picCap"></p><small id="picCred"></small></div><div class="ctl"><span class="count" id="picCount"></span>' +
-    '<button type="button" id="picPrev" aria-label="Previous photo">' + icoPrev + '</button><button type="button" id="picPause" aria-label="Pause">' + icoPause + '</button><button type="button" id="picNext" aria-label="Next photo">' + icoNext + '</button></div></div>' +
-    '<div class="strip" id="picStrip">' + PICS.map(([u, c], i) => '<button type="button" data-i="' + i + '" aria-label="Photo ' + (i + 1) + '">' + photo(u, 'city', '', '') + '</button>').join('') + '</div>';
-  function showPic(i) {
-    pi = (i + PICS.length) % PICS.length;
-    const [u, c, cr, link0] = PICS[pi];
-    const link = latestOf(link0), pst = storyOf(link0);
-    $('picStage').href = link;
-    $('picStage').innerHTML = photo(u, 'city', c, cr);
-    $('picCap').textContent = c;
-    $('picCred').innerHTML = 'Photo: ' + esc(cr) + ' · <a href="' + esc(link) + '" target="_blank" rel="noopener">Read the story &#8599;</a>' + (pst ? firstLine(pst) : '');
-    $('picCount').textContent = (pi + 1) + ' / ' + PICS.length;
-    document.querySelectorAll('#picStrip button').forEach((b, j) => b.setAttribute('aria-current', String(j === pi)));
-    const cur = document.querySelector('#picStrip button[aria-current="true"]');
-    if (cur && cur.scrollIntoView) { const st = $('picStrip'); st.scrollLeft = cur.offsetLeft - st.clientWidth / 2 + cur.clientWidth / 2; }
-    wirePhotos();
-  }
-  function startPics() { clearInterval(pTimer); if (!paused) pTimer = setInterval(() => showPic(pi + 1), 6000); }
-  $('picPrev').addEventListener('click', () => { showPic(pi - 1); startPics(); });
-  $('picNext').addEventListener('click', () => { showPic(pi + 1); startPics(); });
-  $('picPause').addEventListener('click', () => {
-    paused = !paused; $('picPause').innerHTML = paused ? icoPlay : icoPause; $('picPause').setAttribute('aria-label', paused ? 'Play' : 'Pause'); startPics();
-  });
-  $('picStrip').addEventListener('click', (e) => { const b = e.target.closest('button'); if (b) { showPic(Number(b.dataset.i)); startPics(); } });
-  $('pics').addEventListener('mouseenter', () => clearInterval(pTimer));
-  $('pics').addEventListener('mouseleave', startPics);
-  $('pics').addEventListener('focusin', () => clearInterval(pTimer));
-  if (still) { paused = true; $('picPause').innerHTML = icoPlay; $('picPause').setAttribute('aria-label', 'Play'); }
-  setTimeout(() => { showPic(0); startPics(); }, 0);
 
   // Sources list, built from every outlet the page links to
   try {
