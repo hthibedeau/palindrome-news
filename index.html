@@ -1326,6 +1326,7 @@ header.site { border-bottom: 0; }
   <section id="corrections" class="ruled" aria-labelledby="cx-h" style="scroll-margin-top: 64px">
     <div class="band-head"><h2 id="cx-h">Corrections &amp; updates</h2><p>Every change we make to a story, with the time. Nothing is changed quietly.</p></div>
     <ol class="log">
+      <li><time>Sun 9:22 p.m.</time><span class="kind">Update</span><span><b>The 60-second brief</b> is now written in Hannah Thibedeau’s voice, first person, and brought up to date for Sunday evening: CFB Wainwright, Alberta’s vote, Trump on Russia and Netanyahu, France, and Vancouver. It can play a recording in her own voice once one is added.</span></li>
       <li><time>Sun 9:20 p.m.</time><span class="kind">Update</span><span><b>Canada and the U.S.:</b> added Ottawa’s pause of its 16-helicopter Black Hawk purchase over trade tensions (<a href="https://www.cbc.ca/news/politics/black-hawks-us-military-canada-helicopter-deal-9.7378775" target="_blank" rel="noopener">CBC News</a>, <a href="https://verticalmag.com/news/report-canada-pauses-black-hawk-helicopter-purchase-amid-u-s-trade-tensions/" target="_blank" rel="noopener">Vertical Mag</a>).</span></li>
       <li><time>Sun 9:19 p.m.</time><span class="kind">Update</span><span><b>France:</b> the link now goes to The Associated Press via CTV News (7:58 p.m.): Macron blamed far-left “insurrectionist elements,” told prefects to work with mayors to protect public buildings, including by banning protests when necessary, and police fired tear gas in Paris on Sunday (<a href="https://www.ctvnews.ca/world/article/macron-condemns-those-who-sought-to-bring-down-the-republic-after-rioting-mars-nationwide-protests/" target="_blank" rel="noopener">The Associated Press, via CTV News</a>). Breakdown, France card and wire updated.</span></li>
       <li><time>Sun 9:19 p.m.</time><span class="kind">Update</span><span><b>CFB Wainwright:</b> CBC News Network’s live coverage has ended and its live stream page is no longer available; the live box now shows what Pierre Poilievre said in Wainwright, with the 5 p.m. news conference under “Earlier.” CTV’s special Alberta newscast at about 9:30 p.m. MT is still listed under “Coming up live.”</span></li>
@@ -2173,17 +2174,22 @@ header.site { border-bottom: 0; }
     $('stamp').hidden = !late;
   } catch (e) {}
 
-  // 60-second brief, read aloud by the device's voice in this preview
+  // 60-second brief, written in Hannah Thibedeau's voice (style guide: tools/BRIEF_VOICE.md).
+  // BRIEF_AUDIO: path to a recording in Hannah's own voice (e.g. 'audio/brief.mp3'). When set, it plays;
+  // otherwise the device reads the script aloud.
+  const BRIEF_AUDIO = '';
+  const BRIEF_FOR = 'Sunday evening, October 18';
   const brief = [
-    'This is the Palindrome News sixty-second brief for Sunday, October eighteenth.',
-    'In Alberta, Prime Minister Mark Carney says four service members were killed and dozens seriously hurt in a fire at Canadian Forces Base Wainwright on Saturday. He called it one of the worst peacetime tragedies for the Forces on Canadian soil.',
-    'On Monday, Albertans vote on whether to hold a second, binding referendum on leaving Canada. Both sides rallied in Edmonton this weekend.',
-    'Iran’s Revolutionary Guard says two oil tankers hit mines in the Strait of Hormuz. Every report relies on the Guard, and no one has independently confirmed it. The U.S. military says the strait remains open.',
-    'In Bend, Oregon, three children and a teacher were killed at an elementary school before a teacher and a parent stopped the attacker.',
-    'President Trump signed new sanctions on Russia into law, then paused them.',
-    'Ottawa is warning Stelco’s American owner over layoffs, and Stellantis workers are voting on a strike mandate.',
-    'In Vancouver, Pete Fry defeated Ken Sim to become mayor.',
-    'That’s the brief. News from every direction. One clear perspective.'
+    'Good evening. I’m Hannah Thibedeau, and this is your Palindrome News brief.',
+    'We begin in Alberta, at CFB Wainwright. Four soldiers are dead after a grass fire tore through a training range on Saturday afternoon.',
+    'Thirty-nine people are in hospital tonight, at least nineteen in critical condition.',
+    'The military has named the four: Sergeant Morgan Wong, and privates Shaun Farrell, Aidan Goulding and Hayden Lykkemark.',
+    'The prime minister calls it one of the worst peacetime tragedies the Forces have faced on Canadian soil.',
+    'Tomorrow, Albertans vote on whether to start down the road to a separation referendum. More than one point three million have already cast a ballot.',
+    'In Washington, President Trump has paused the Russia sanctions he signed into law, and he’s endorsed Benjamin Netanyahu, nine days before Israel votes.',
+    'In France, nearly twenty-four hundred people have been arrested as cost-of-living protests turn violent.',
+    'And in Vancouver, Pete Fry has unseated Ken Sim as mayor.',
+    'That’s your brief. We’ll keep watching, so you don’t have to.'
   ];
   const audio = $('audio'), aBtn = $('audioBtn');
   const playIco = '<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg>';
@@ -2192,12 +2198,31 @@ header.site { border-bottom: 0; }
   function stopBrief() {
     playing = false; audio.classList.remove('playing'); aBtn.innerHTML = playIco; aBtn.setAttribute('aria-label', 'Play the 60-second brief');
     try { speechSynthesis.cancel(); } catch (e) {}
+    if (rec) { try { rec.pause(); } catch (e) {} rec = null; }
   }
   function pickVoice() {
     try { const v = speechSynthesis.getVoices(); return v.find((x) => x.lang === 'en-CA') || v.find((x) => /^en(-|_)/.test(x.lang) && /female|samantha|karen|moira|serena/i.test(x.name)) || v.find((x) => /^en/.test(x.lang)) || null; } catch (e) { return null; }
   }
+  let rec = null;
+  function playRecording() {
+    const r = rec = new Audio(BRIEF_AUDIO);
+    const total = brief.join(' ').length;
+    r.addEventListener('timeupdate', () => {
+      if (rec !== r || !r.duration) return;
+      let pos = r.currentTime / r.duration * total, acc = 0;
+      for (const line of brief) { acc += line.length + 1; if (pos <= acc) { $('audioCap').textContent = line; break; } }
+    });
+    r.addEventListener('ended', () => { if (rec === r) stopBrief(); });
+    r.addEventListener('error', () => { if (rec === r) { rec = null; playSpeech(); } });
+    r.play().catch(() => { if (rec === r) { rec = null; playSpeech(); } });
+  }
   function playBrief() {
-    if (!('speechSynthesis' in window)) { $('audioNote').textContent = 'This browser can’t read aloud. Here is the script.'; $('audioCap').textContent = brief.join(' '); return; }
+    playing = true; audio.classList.add('playing'); aBtn.innerHTML = stopIco; aBtn.setAttribute('aria-label', 'Stop the 60-second brief');
+    if (BRIEF_AUDIO) return playRecording();
+    playSpeech();
+  }
+  function playSpeech() {
+    if (!('speechSynthesis' in window)) { stopBrief(); $('audioNote').textContent = 'This browser can’t read aloud. Here is the script.'; $('audioCap').textContent = brief.join(' '); return; }
     playing = true; audio.classList.add('playing'); aBtn.innerHTML = stopIco; aBtn.setAttribute('aria-label', 'Stop the 60-second brief');
     speechSynthesis.cancel();
     const voice = pickVoice();
@@ -2211,7 +2236,7 @@ header.site { border-bottom: 0; }
     });
   }
   aBtn.addEventListener('click', () => (playing ? stopBrief() : playBrief()));
-  $('audioNote').textContent = 'Today’s top stories in about a minute, read aloud by your device.';
+  $('audioNote').textContent = BRIEF_AUDIO ? 'Hannah Thibedeau on the day’s top stories · ' + BRIEF_FOR + '. About a minute.' : 'Hannah Thibedeau’s brief for ' + BRIEF_FOR + ', read aloud by your device. About a minute.';
 
   // The breakdown: synopses for stories with six or more independent sources
   const BDS = [
