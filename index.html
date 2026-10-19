@@ -578,6 +578,33 @@ header.site { border-bottom: 0; }
 .canada-lens a::after { content: ""; position: absolute; inset: 0; }
 .canada-lens span { font-size: 14px; color: var(--body); }
 
+/* Canada and the U.S. */
+#canus a { overflow-wrap: anywhere; }
+.cu-status { display: grid; gap: 4px; padding: 14px 18px; background: var(--soft); border-left: 4px solid var(--wine); margin-bottom: 18px; }
+.cu-status b { font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--wine); }
+.cu-state { font-family: var(--serif); font-size: 22px; font-weight: 600; color: var(--title); }
+.cu-status > span:last-child { font-size: 14px; color: var(--body); }
+.cu-status a, .cu-num small a, .cu-list small a, .cu-lens span a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+.cu-nums { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr)); gap: 12px; margin-bottom: 24px; }
+.cu-num { display: grid; gap: 4px; align-content: start; padding: 14px 16px; border: 1px solid var(--line); border-top: 3px solid var(--wine); }
+.cu-num b { font-family: var(--serif); font-size: 30px; line-height: 1; font-weight: 700; color: var(--title); font-variant-numeric: tabular-nums; }
+.cu-num span { font-size: 14px; line-height: 1.4; color: var(--body); }
+.cu-num small, .cu-list small { font-size: 12px; color: var(--muted); }
+.cu-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 8px 36px; }
+.cu-col h3, .cu-lens h3 { margin: 6px 0 6px; font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--title); }
+.cu-list { list-style: none; margin: 0 0 18px; padding: 0; }
+.cu-list li { display: grid; grid-template-columns: 84px minmax(0, 1fr); gap: 2px 12px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.cu-list .cu-when { grid-row: span 2; font-size: 12px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--wine); padding-top: 3px; }
+.cu-list p { margin: 0; font-size: 15px; line-height: 1.45; color: var(--body); }
+.cu-list p b { color: var(--title); }
+.cu-tl p { font-size: 14px; }
+.cu-lens { margin-top: 8px; }
+.cu-lens ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 0 28px; }
+.cu-lens li { display: grid; gap: 2px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.cu-lens li b { font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); }
+.cu-lens li a { font-family: var(--serif); font-size: 17px; font-weight: 600; line-height: 1.25; color: var(--title); }
+.cu-lens li span { font-size: 13px; color: var(--muted); }
+@media (max-width: 520px) { .cu-list li { grid-template-columns: minmax(0, 1fr); } .cu-list .cu-when { grid-row: auto; padding: 0; } }
 /* Wall of clocks: the cities in today's news */
 .clocks { background: var(--surface); border-bottom: 1px solid var(--line); }
 .clocks .wrap { display: flex; gap: 0; overflow-x: auto; scrollbar-width: none; }
@@ -965,6 +992,7 @@ header.site { border-bottom: 0; }
       <a href="#sec-politics">Politics</a>
       <a href="#sec-business">Business &amp; Economy</a>
       <a href="#sec-world">World</a>
+      <a href="#canus">Canada &amp; U.S.</a>
       <a href="#sec-us">United States</a>
       <a href="#smaller">Smaller newsrooms</a>
       <a href="#breakdown">Breakdown</a>
@@ -983,7 +1011,7 @@ header.site { border-bottom: 0; }
   <div class="wrap">
     <a class="mini" href="#top" tabindex="-1">Palindrome <em>N</em></a>
     <nav aria-label="Sections">
-      <a href="#breakdown" tabindex="-1">Breakdown</a><a href="#video" tabindex="-1">Watch</a><a href="#ahead" tabindex="-1">What to watch</a><a href="#sec-canada" tabindex="-1">Canada</a><a href="#sec-politics" tabindex="-1">Politics</a><a href="#sec-business" tabindex="-1">Business</a><a href="#sec-world" tabindex="-1">World</a><a href="#sec-us" tabindex="-1">U.S.</a><a href="#smaller" tabindex="-1">Smaller newsrooms</a><a href="#mostread" tabindex="-1">Most read</a><a href="#reading" tabindex="-1">Reading</a><a href="#ontherecord" tabindex="-1">On the record</a><a href="#editorials" tabindex="-1">Editorials</a><a href="#godeeper" tabindex="-1">Go deeper</a>
+      <a href="#breakdown" tabindex="-1">Breakdown</a><a href="#video" tabindex="-1">Watch</a><a href="#ahead" tabindex="-1">What to watch</a><a href="#sec-canada" tabindex="-1">Canada</a><a href="#sec-politics" tabindex="-1">Politics</a><a href="#sec-business" tabindex="-1">Business</a><a href="#sec-world" tabindex="-1">World</a><a href="#canus" tabindex="-1">Canada &amp; U.S.</a><a href="#sec-us" tabindex="-1">U.S.</a><a href="#smaller" tabindex="-1">Smaller newsrooms</a><a href="#mostread" tabindex="-1">Most read</a><a href="#reading" tabindex="-1">Reading</a><a href="#ontherecord" tabindex="-1">On the record</a><a href="#editorials" tabindex="-1">Editorials</a><a href="#godeeper" tabindex="-1">Go deeper</a>
     </nav>
     <span class="now"><span class="live"><i aria-hidden="true"></i></span><span id="clock2">5:15 p.m.</span> ET</span>
   </div>
@@ -1152,6 +1180,53 @@ header.site { border-bottom: 0; }
     </ol>
   </section>
 
+  <section id="canus" class="ruled" aria-labelledby="cu-h" style="scroll-margin-top: 64px">
+    <div class="band-head"><h2 id="cu-h">Canada and the U.S.</h2><p>Where the trade war stands, what changed this week, and what comes next. Every line links to the newsroom that reported it. Updated Sunday, Oct. 18, 8:45 p.m. ET.</p></div>
+    <div class="cu-status"><b>Trade talks</b><span class="cu-state">Suspended since Aug. 22</span><span>No talks are under way. U.S. Commerce Secretary Howard Lutnick has said Canada is likely to come back to the table after the Quebec and Alberta votes (<a href="https://insidetrade.com/daily-news/lutnick-canada-likely-resume-us-negotiations-after-separatist-votes" target="_blank" rel="noopener">Inside U.S. Trade</a>). Carney says Canada will return “when the Americans are ready” (<a href="https://www.cnbc.com/2026/09/03/carney-lutnick-trump-trade-canada.html" target="_blank" rel="noopener">CNBC</a>).</span></div>
+    <div class="cu-nums">
+      <div class="cu-num"><b>50%</b><span>U.S. tariff on about US$20 billion of Canadian goods, including dairy, alcohol, cement and hockey gear. In force since Aug. 22.</span><small><a href="https://www.npr.org/2026/08/22/nx-s1-5941584/us-canada-tariffs" target="_blank" rel="noopener">NPR</a> · <a href="https://thehill.com/policy/international/6044914-carney-suspends-us-trade-talks-tariffs/" target="_blank" rel="noopener">The Hill</a></small></div>
+      <div class="cu-num"><b>15–50%</b><span>Canada’s counter-tariffs on nearly $20 billion of U.S. goods, more than 700 products, from steel to appliances. In force since Sept. 8.</span><small><a href="https://www.aljazeera.com/news/2026/9/8/canadas-retaliatory-tariffs-on-20bn-of-us-goods-take-effect" target="_blank" rel="noopener">Al Jazeera</a> · <a href="https://www.cnbc.com/2026/08/25/canada-trump-tariffs-trade-carney-leblanc.html" target="_blank" rel="noopener">CNBC</a></small></div>
+      <div class="cu-num"><b>~35%</b><span>Total U.S. duty on Canadian softwood lumber after the Commerce Department’s latest review, the BC Lumber Trade Council says. Set Oct. 14.</span><small><a href="https://www.ctvnews.ca/world/trumps-tariffs/article/us-sets-tax-total-for-canadian-softwood-lumber-exports-at-almost-35-per-cent/" target="_blank" rel="noopener">CTV News</a> · <a href="https://cbc.ca/news/canada/british-columbia/softwood-lumber-export-tax-down-9.7381323" target="_blank" rel="noopener">CBC News</a></small></div>
+      <div class="cu-num"><b>Annual</b><span>CUSMA review. The U.S. declined on July 1 to extend the trade deal for 16 years, so it now faces a review every year.</span><small><a href="https://www.cbc.ca/news/world/cusma-usmca-trump-extension-renewal-9.7255204" target="_blank" rel="noopener">CBC News</a> · <a href="https://www.nationalobserver.com/2026/07/06/news/leblanc-says-canada-seeking-clarity-after-us-opts-annual-cusma-review" target="_blank" rel="noopener">National Observer</a></small></div>
+    </div>
+    <div class="cu-cols">
+      <div class="cu-col">
+        <h3>This week</h3>
+        <ol class="cu-list">
+          <li><span class="cu-when">Thu Oct. 15</span><p><b>Carney: “Some outside our borders are working to break us so they can own us.”</b> At a Calgary rally before Alberta’s vote, the prime minister urged Albertans to stay. He did not name the U.S. in that line.</p><small><a href="https://abcnews.com/International/wireStory/prime-minister-mark-carney-us-break-canada-alberta-137300440" target="_blank" rel="noopener">The Associated Press</a> · <a href="https://time.com/article/2026/10/16/trump-canada-trump-annexation-threat-carney-canada-separatist-referendum-warning/" target="_blank" rel="noopener">Time</a> · <a href="https://www.pbs.org/newshour/world/prime-minister-mark-carney-says-u-s-is-trying-to-break-canada-as-alberta-votes-on-separation-path" target="_blank" rel="noopener">PBS NewsHour</a></small></li>
+          <li><span class="cu-when">Wed Oct. 14</span><p><b>Trump: Canada will “end up being the 51st state.”</b> At a rally in Bullhead City, Ariz., he said “we don’t need them, but they need us.” Ontario Premier Doug Ford said Canada’s sovereignty is not for sale.</p><small><a href="https://www.cp24.com/news/canada/2026/10/14/trump-says-canada-will-end-up-being-the-51st-state-because-thats-the-only-way-it-works/" target="_blank" rel="noopener">CP24</a> · <a href="https://globalnews.ca/video/12103040/canada-will-end-up-being-the-51st-state-trump-says/" target="_blank" rel="noopener">Global News (video)</a> · <a href="https://time.com/article/2026/10/16/trump-canada-trump-annexation-threat-carney-canada-separatist-referendum-warning/" target="_blank" rel="noopener">Time</a></small></li>
+          <li><span class="cu-when">Wed Oct. 14</span><p><b>U.S. ambassador to Canadian politicians: “Keep your nose out.”</b> Pete Hoekstra warned against interference in the Nov. 3 midterms, pointing to Industry Minister Mélanie Joly’s remark that Canada’s counter-tariffs target certain states. Carney later joked about “election interference.”</p><small><a href="https://www.cp24.com/news/canada/2026/10/14/trump-says-canada-will-end-up-being-the-51st-state-because-thats-the-only-way-it-works/" target="_blank" rel="noopener">CP24</a> · <a href="https://www.ctvnews.ca/politics/article/us-ambassador-warns-canadian-politicians-keep-your-nose-out-of-american-politics/" target="_blank" rel="noopener">CTV News</a> · <a href="https://www.bnnbloomberg.ca/business/politics/2026/10/14/us-ambassador-warns-canadian-politicians-keep-your-nose-out-of-american-politics/" target="_blank" rel="noopener">BNN Bloomberg</a> · <a href="https://abcnews.com/International/wireStory/prime-minister-mark-carney-us-break-canada-alberta-137300440" target="_blank" rel="noopener">The Associated Press</a> · <a href="https://www.noovo.info/nouvelles/economie/guerre-commerciale/article/ne-vous-melez-pas-de-la-politique-americaine-le-message-de-lambassadeur-des-etats-unis-aux-responsables-canadiens/" target="_blank" rel="noopener">Noovo Info (fr)</a></small></li>
+          <li><span class="cu-when">Wed Oct. 14</span><p><b>Lumber duty set at almost 35%.</b> The U.S. Commerce Department’s review sets the total tax on Canadian softwood exports, B.C.’s lumber council says.</p><small><a href="https://www.ctvnews.ca/world/trumps-tariffs/article/us-sets-tax-total-for-canadian-softwood-lumber-exports-at-almost-35-per-cent/" target="_blank" rel="noopener">CTV News</a> · <a href="https://cbc.ca/news/canada/british-columbia/softwood-lumber-export-tax-down-9.7381323" target="_blank" rel="noopener">CBC News</a></small></li>
+          <li><span class="cu-when">Tue Oct. 13</span><p><b>Where the counter-tariffs bite in the U.S.</b> Canada buys all of Michigan’s kraft paper exports and 88% of Wisconsin’s blue cheese exports. North Dakota sends 81% of its exports to Canada. More than 60% of Americans oppose the tariffs on Canada, the analysts say, citing a survey.</p><small><a href="https://www.atlanticcouncil.org/blogs/econographics/how-the-trade-war-with-canada-is-hitting-us-states-and-could-sway-midterm-elections/" target="_blank" rel="noopener">Atlantic Council</a></small></li>
+        </ol>
+      </div>
+      <div class="cu-col">
+        <h3>What comes next</h3>
+        <ol class="cu-list cu-next">
+          <li><span class="cu-when">Mon Oct. 19</span><p><b>Alberta votes</b> on whether to begin the legal steps toward a separation referendum. Lutnick has said he expects Canada to resume talks after it.</p><small><a href="https://www.pbs.org/newshour/world/prime-minister-mark-carney-says-u-s-is-trying-to-break-canada-as-alberta-votes-on-separation-path" target="_blank" rel="noopener">PBS NewsHour</a> · <a href="https://insidetrade.com/daily-news/lutnick-canada-likely-resume-us-negotiations-after-separatist-votes" target="_blank" rel="noopener">Inside U.S. Trade</a></small></li>
+          <li><span class="cu-when">Tue Nov. 3</span><p><b>U.S. midterms.</b> Maine and Michigan, both tied closely to Canada, have competitive races. Sen. Susan Collins has distanced herself from the tariffs, and Michigan Republican Senate candidate Mike Rogers has called for the dispute to end.</p><small><a href="https://www.atlanticcouncil.org/blogs/econographics/how-the-trade-war-with-canada-is-hitting-us-states-and-could-sway-midterm-elections/" target="_blank" rel="noopener">Atlantic Council</a> · <a href="https://insidetrade.com/daily-news/collins-urges-lutnick-greer-restart-canada-talks-maine-faces-tariff-hit" target="_blank" rel="noopener">Inside U.S. Trade</a></small></li>
+          <li><span class="cu-when">Watching</span><p><b>Oil and autos.</b> Oil has been spared so far. The average tariff on Canadian autos and parts rose from 0.2% in February 2025 to 9.2% this August.</p><small><a href="https://www.atlanticcouncil.org/blogs/econographics/how-the-trade-war-with-canada-is-hitting-us-states-and-could-sway-midterm-elections/" target="_blank" rel="noopener">Atlantic Council</a></small></li>
+        </ol>
+        <h3>How we got here</h3>
+        <ol class="cu-list cu-tl">
+          <li><span class="cu-when">July 1</span><p>The U.S. declines to extend CUSMA.</p><small><a href="https://www.cbc.ca/news/world/cusma-usmca-trump-extension-renewal-9.7255204" target="_blank" rel="noopener">CBC News</a></small></li>
+          <li><span class="cu-when">July</span><p>Trump announces 50% tariffs on Canadian goods, citing “discriminatory treatment” of U.S. products.</p><small><a href="https://www.aljazeera.com/news/2026/9/8/canadas-retaliatory-tariffs-on-20bn-of-us-goods-take-effect" target="_blank" rel="noopener">Al Jazeera</a></small></li>
+          <li><span class="cu-when">Aug. 22</span><p>Talks collapse. Carney suspends negotiations and the 50% U.S. tariffs take effect.</p><small><a href="https://www.npr.org/2026/08/22/nx-s1-5941584/us-canada-tariffs" target="_blank" rel="noopener">NPR</a> · <a href="https://www.nbcnews.com/business/economy/trump-canada-tariffs-carney-rcna593510" target="_blank" rel="noopener">NBC News</a></small></li>
+          <li><span class="cu-when">Aug. 27</span><p>Lutnick says Canada walked away for “political purposes” tied to Quebec’s election and Alberta’s vote. Trade Minister Dominic LeBlanc welcomes the U.S. dropping its demands on French-language content.</p><small><a href="https://ca.news.yahoo.com/leblanc-welcomes-u-comments-french-162358818.html" target="_blank" rel="noopener">National Post</a> · <a href="https://thehub.ca/2026/08/31/lutnick-says-canada-abandoned-trade-deal-over-quebec-election-alberta-referendum/" target="_blank" rel="noopener">The Hub</a></small></li>
+          <li><span class="cu-when">Sept. 8</span><p>Canada’s counter-tariffs take effect, matching the U.S. “dollar for dollar.”</p><small><a href="https://www.aljazeera.com/news/2026/9/8/canadas-retaliatory-tariffs-on-20bn-of-us-goods-take-effect" target="_blank" rel="noopener">Al Jazeera</a> · <a href="https://thehill.com/policy/international/6045107-canada-retaliates-us-tariffs/" target="_blank" rel="noopener">The Hill</a></small></li>
+        </ol>
+      </div>
+    </div>
+    <div class="cu-lens"><h3>How U.S. media see Canada this week</h3>
+      <ul>
+        <li><b>Axios</b><a href="https://www.axios.com/2026/10/16/carney-canada-alberta-separatist-trump-trade-war-unity" target="_blank" rel="noopener">Trump’s feud with Canada meets Alberta’s separation vote</a><span>Ties Monday’s vote to the trade war.</span></li>
+        <li><b>Time</b><a href="https://time.com/article/2026/10/16/trump-canada-trump-annexation-threat-carney-canada-separatist-referendum-warning/" target="_blank" rel="noopener">Carney warns U.S. is trying to ‘break’ Canada as Trump revives ‘51st state’ threat</a><span>Notes trade fell 4.6% in 2025 but still topped US$870 billion.</span></li>
+        <li><b>PBS NewsHour</b><a href="https://www.pbs.org/newshour/world/prime-minister-mark-carney-says-u-s-is-trying-to-break-canada-as-alberta-votes-on-separation-path" target="_blank" rel="noopener">Carney says U.S. is trying to break Canada as Alberta votes on separation path</a><span>The Associated Press report, carried for American viewers.</span></li>
+        <li><b>Atlantic Council</b><a href="https://www.atlanticcouncil.org/blogs/econographics/how-the-trade-war-with-canada-is-hitting-us-states-and-could-sway-midterm-elections/" target="_blank" rel="noopener">How the trade war with Canada is hitting U.S. states</a><span>A Washington think tank maps the cost state by state.</span></li>
+      </ul>
+    </div>
+  </section>
+
   <section id="sec-us" class="ruled" aria-labelledby="us-h" style="scroll-margin-top: 64px">
     <div class="band-head"><h2 id="us-h">United States</h2><p class="us-count" id="usCount">The top American stories, with the same six-source meter.</p></div>
     <div class="us">
@@ -1162,7 +1237,6 @@ header.site { border-bottom: 0; }
       <h3>What America's newsrooms are leading with</h3>
       <p>The top story on each front page at 5:30 p.m. ET, in our words. Tap to read it there.</p>
       <div class="ledes" id="ledes"></div>
-      <div class="canada-lens"><b>How U.S. media see Canada today</b><a href="https://www.axios.com/2026/10/16/carney-canada-alberta-separatist-trump-trade-war-unity" target="_blank" rel="noopener">Trump’s feud with Canada meets Alberta’s separation vote</a><span>Axios ties Monday's vote to the trade war, noting U.S. tariffs of 50% on many Canadian goods since talks collapsed in August.</span></div>
     </div>
   </section>
 
@@ -1228,6 +1302,7 @@ header.site { border-bottom: 0; }
   <section id="corrections" class="ruled" aria-labelledby="cx-h" style="scroll-margin-top: 64px">
     <div class="band-head"><h2 id="cx-h">Corrections &amp; updates</h2><p>Every change we make to a story, with the time. Nothing is changed quietly.</p></div>
     <ol class="log">
+      <li><time>Sun 8:55 p.m.</time><span class="kind">Update</span><span><b>New section, Canada and the U.S.:</b> where the trade war stands (talks suspended since Aug. 22; U.S. 50% tariffs; Canada’s 15–50% counter-tariffs; lumber duty near 35%; annual CUSMA review), this week’s developments, what comes next, how we got here, and how U.S. outlets are covering Canada. Each line cites the newsrooms that reported it. Replaces the single “How U.S. media see Canada” box.</span></li>
       <li><time>Sun 8:27 p.m.</time><span class="kind">Update</span><span><b>Links to the full broadcasts:</b> the 5 p.m. news conference synopsis now links first to the full, unedited news conference (<a href="https://www.cpac.ca/headline-politics/episode/ministers-and-caf-officials-provide-update-on-cfb-wainwright--october-18-2026?id=e2d95f33-bb9e-49f5-95a3-bf8eaf0ec561" target="_blank" rel="noopener">CPAC</a>), ahead of CTV’s clips; Poilievre’s synopsis adds his full remarks and questions from reporters (<a href="https://www.cpac.ca/headline-politics/episode/cfb-wainwright-incident-pierre-poilievre-speaks-to-media--october-18-2026?id=8fa38ec2-1ee9-498d-b389-2590668a6096" target="_blank" rel="noopener">CPAC</a>).</span></li>
       <li><time>Sun 8:27 p.m.</time><span class="kind">Update</span><span><b>CFB Wainwright:</b> Added an internal Canadian Armed Forces memo saying the fire index was low before a sudden wind change, with injury counts, the evacuation of one home and the investigation (<a href="https://globalnews.ca/news/12107414/fire-risk-was-low-before-sudden-wind-shift-sparked-deadly-base-fire-caf-memo/" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline">Global News</a>); refreshed CBC News live updates.</span></li>
       <li><time>Sun 8:23 p.m.</time><span class="kind">Update</span><span><b>Live video back in the top story:</b> the CBC live stream that carried Poilievre’s remarks is CBC News Network’s continuing live coverage of the Wainwright fire (<a href="https://www.cbc.ca/player/play/video/9.7386097" target="_blank" rel="noopener">CBC News</a>, live from 5 p.m. ET, scheduled until 9 p.m.). It is back in the live spot, with the Poilievre and 5 p.m. news conference synopses kept underneath. Correction: the “watch” link under Poilievre’s synopsis now opens CBC’s recording of his full speech (<a href="https://www.cbc.ca/player/play/video/9.7386253" target="_blank" rel="noopener">CBC News</a>) instead of the live stream.</span></li>
