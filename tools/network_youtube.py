@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Put CNN and CNBC clips in Watch, with real pictures, from their own YouTube channels.
+"""Put clips from news networks' official YouTube channels in Watch, with real pictures.
+
+Started for CNN and CNBC (their own sites block automated reading), now used for any
+network in OFFICIAL, including ones whose sites are blocked to us (BBC, Sky News, DW,
+AP, Reuters, CityNews) and ones whose pictures don't load (CBC).
 
 cnn.com and cnbc.com block automated reading, so their own video pages give us no
 picture. Their official YouTube channels post the same reports, and YouTube's
@@ -25,7 +29,7 @@ Then:
   3. Apply (writes the clip into Watch and the picture into LOCAL):
      python3 tools/network_youtube.py apply index.html <the PREPARED json file> --blob /_blob/<id>
 
-  4. Tidy (run once per update; removes CNN/CNBC YouTube clips older than 7 days and
+  4. Tidy (run once per update; removes network YouTube clips older than 7 days and
      keeps the newest 4 per network):
      python3 tools/network_youtube.py tidy index.html
 
@@ -44,8 +48,37 @@ import tempfile
 
 # Network name as shown on Palindrome -> the official YouTube channel names it posts under
 OFFICIAL = {
+    # U.S.
     "CNN": ["CNN"],
     "CNBC": ["CNBC Television", "CNBC", "CNBC International Live", "CNBC International TV", "CNBC Make It"],
+    "NBC News": ["NBC News", "TODAY", "Meet the Press"],
+    "ABC News": ["ABC News"],
+    "CBS News": ["CBS News", "CBS Evening News", "CBS Mornings", "Face the Nation"],
+    "PBS NewsHour": ["PBS NewsHour"],
+    "Fox News": ["Fox News"],
+    "C-SPAN": ["C-SPAN"],
+    "Bloomberg": ["Bloomberg Television", "Bloomberg Originals"],
+    "Associated Press": ["Associated Press"],
+    "Reuters": ["Reuters"],
+    # Canada
+    "CBC News": ["CBC News", "CBC News: The National", "CBC Alberta", "CBC British Columbia", "CBC Manitoba", "CBC Toronto", "CBC Ottawa", "CBC Montreal", "CBC North", "CBC Saskatchewan", "CBC Nova Scotia", "CBC New Brunswick", "CBC Newfoundland and Labrador", "CBC PEI"],
+    "CTV News": ["CTV News"],
+    "Global News": ["Global News"],
+    "CityNews": ["CityNews", "CityNews Toronto", "CityNews Calgary", "CityNews Edmonton", "CityNews Vancouver"],
+    "CPAC": ["CPAC"],
+    "CP24": ["CP24"],
+    "APTN News": ["APTN News"],
+    "TVO Today": ["TVO Today"],
+    # World
+    "BBC News": ["BBC News"],
+    "Sky News": ["Sky News"],
+    "DW News": ["DW News"],
+    "Al Jazeera": ["Al Jazeera English"],
+    "France 24": ["FRANCE 24 English"],
+    "Euronews": ["euronews"],
+    "ABC News (Australia)": ["ABC News (Australia)", "ABC News In-depth"],
+    "CNA": ["CNA"],
+    "NHK World": ["NHK WORLD-JAPAN"],
 }
 MAX_AGE_DAYS = 7
 KEEP_PER_NETWORK = 4
@@ -122,7 +155,7 @@ def prepare(a):
     if a.index and os.path.exists(a.index) and f"u: 'https://www.youtube.com/watch?v={vid}'" in open(a.index, encoding="utf-8").read():
         return print("REFUSED already on the page:", vid)
     os.makedirs(STAGE, exist_ok=True)
-    jpg = os.path.join(STAGE, f"{a.network.lower()}-{vid}.jpg")
+    jpg = os.path.join(STAGE, f"{re.sub(r'[^a-z0-9]+', '-', a.network.lower()).strip('-')}-{vid}.jpg")
     img = thumbnail(vid, jpg)
     if not img:
         return print("REFUSED no picture could be downloaded from i.ytimg.com for", vid)
@@ -133,7 +166,7 @@ def prepare(a):
         "u": f"https://www.youtube.com/watch?v={vid}", "img": img, "pic": a.pic,
         "id": vid, "date": a.date, "channel": a.channel, "file": jpg,
     }
-    spec = os.path.join(STAGE, f"{a.network.lower()}-{vid}.json")
+    spec = os.path.join(STAGE, f"{re.sub(r'[^a-z0-9]+', '-', a.network.lower()).strip('-')}-{vid}.json")
     json.dump(entry, open(spec, "w"), indent=1, ensure_ascii=False)
     print("PREPARED", spec)
     print(json.dumps(entry, ensure_ascii=False))
@@ -165,7 +198,7 @@ def apply(a):
     if s.count(head) != 1:
         return print("REFUSED could not find `const vids = [` in", a.index)
     pos = s.index(head) + len(head)
-    for _ in range(INSERT_AT):
+    for _ in range(a.at if a.at is not None else INSERT_AT):
         nxt = s.find("\n", pos)
         if nxt == -1 or not s[pos:nxt].lstrip().startswith("{"):
             break
@@ -215,6 +248,7 @@ def main():
     q.add_argument("--index", default="index.html")
     q = sub.add_parser("apply")
     q.add_argument("index"); q.add_argument("spec"); q.add_argument("--blob", required=True)
+    q.add_argument("--at", type=int, help="position in Watch (0 = first); default %d" % INSERT_AT)
     q = sub.add_parser("tidy")
     q.add_argument("index")
     a = p.parse_args()
