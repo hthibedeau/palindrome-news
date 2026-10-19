@@ -1302,7 +1302,7 @@ header.site { border-bottom: 0; }
   <section id="reading" class="ruled" aria-labelledby="rd-h">
     <div class="band-head"><h2 id="rd-h">Today's reading</h2><p>Picked by the editor from other newsrooms. Every link goes to the original.</p></div>
     <div class="reads" id="reads"></div>
-    <p class="fine">Images are each article's own preview picture, credited to the outlet. In this preview, three are taken from a phone photo of the articles and one is a stand-in illustration.</p>
+    <p class="fine">Images are each article's own preview picture, credited to the outlet. Updated Monday morning.</p>
   </section>
 
   <section id="ontherecord" class="ruled" aria-labelledby="otr-h">
@@ -1322,7 +1322,7 @@ header.site { border-bottom: 0; }
   </section>
 
   <section id="editorials" class="ruled" aria-labelledby="ed-h">
-    <div class="band-head"><h2 id="ed-h">Editorials</h2><p>We don't write editorials. We pick the day's best from other outlets. Today: Alberta's vote.</p></div>
+    <div class="band-head"><h2 id="ed-h">Editorials</h2><p>We don't write editorials. We pick the day's best from other outlets. Today: Alberta's vote, Trump, Stelco and France.</p></div>
     <div class="two">
       <div class="main">
         <p class="label">Best of the day</p>
@@ -1920,10 +1920,10 @@ header.site { border-bottom: 0; }
 
   // Today's reading: real articles, in the outlet-credit format
   const reads = [
-    { pic: 'parliament', author: 'Marlo Glass', outlet: 'Hill Times', date: 'Oct 16, 2026', hed: '‘Late to the party’ or ‘asleep at the switch’? Carney, Poilievre make last pitches for unity in Alberta', href: 'https://www.hilltimes.com/2026/10/16/late-to-the-party-or-asleep-at-the-switch-carney-poilievre-make-last-pitches-for-unity-in-alberta/522457/' },
-    { pic: 'ballot', photo: 'baxter', author: 'David Baxter', outlet: 'Canadian Press', date: 'Oct 17, 2026', hed: 'How Canada’s fractured immigration consensus is starting to show up at ballot boxes', href: 'https://www.cjme.com/2026/10/17/how-canadas-fractured-immigration-consensus-is-starting-to-show-up-at-ballot-boxes/', via: 'CJME' },
-    { pic: 'globe', photo: 'moran', author: 'Tracy Moran', outlet: 'National Post', date: 'Oct 17, 2026', hed: 'Canada war-gamed a U.S. invasion. A former NORAD commander explains why', href: 'https://nationalpost.com/news/canada-war-gamed-a-u-s-invasion-a-former-norad-commander-explains-why' },
-    { pic: 'podium', photo: 'aiello', author: 'Rachel Aiello', outlet: 'CTV News', date: 'Oct 17, 2026', hed: 'Meet Canada’s first ever Parliamentary Visual Artist Laureate', href: 'https://www.ctvnews.ca/canada/article/meet-canadas-first-ever-parliamentary-visual-artist-laureate/' }
+    {"pic": "ballot", "author": "Kevin Green and Tara Nelson", "outlet": "CTV News", "date": "Oct 19, 2026", "hed": "Separation has existed since before Alberta was Alberta", "href": "https://www.ctvnews.ca/calgary/article/separation-has-existed-since-before-alberta-was-alberta/", "img": "https://www.ctvnews.ca/resizer/v2/JPPRR67E45HCFLSUQG3VML44M4.jpg?smart=true&auth=d2bd1011ac4b7bdf71e64de99eb0e4edb5a01b64f5cca75a6f2bd7fd25318ecd&width=1200&height=630"},
+    {"pic": "podium", "author": "Wallis Snowdon", "outlet": "CBC News", "date": "Oct 18, 2026", "hed": "‘We will remember’: Tributes pour in for soldiers killed when fire engulfed training exercise", "href": "https://www.cbc.ca/news/canada/edmonton/alberta-wainwright-base-fire-victims-9.7386272", "img": "https://i.cbc.ca/ais/6bc8f352-3b97-443d-9aca-b1aea9b90e73,1792373474183/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C4%2C1206%2C678%29%3BResize%3D620"},
+    {"pic": "ballot", "author": "Craig Ellingson", "outlet": "CTV News", "date": "Oct 18, 2026", "hed": "From booze to daylight saving and equalization: A history of Alberta’s provincial referendums", "href": "https://www.ctvnews.ca/edmonton/alberta-referendum/article/from-booze-to-daylight-saving-and-equalization-a-history-of-albertas-provincial-referendums/", "img": "https://www.ctvnews.ca/resizer/v2/4KCGBQIBDVHHHLCXD2MLLAPCWQ.jpg?smart=true&auth=2f4b9695f952c29d1ceafc7093e9e6e8dae4adbd25b082e9559607d1d2fd1cd3&width=1200&height=630"},
+    {"pic": "forest", "author": "Karen Bartko", "outlet": "Global News", "date": "Oct 18, 2026", "hed": "Fire at CFB Wainwright wasn’t a concern — until a rapid ‘uncommon’ shift in wind", "href": "https://globalnews.ca/news/12107062/cfb-wainwright-fire-what-we-know/", "img": "https://globalnews.ca/wp-content/uploads/2026/10/CP177109408.jpg?quality=65&strip=all&w=720&h=379&crop=1"}
   ];
   $('reads').innerHTML = reads.map((r) =>
     '<article class="read"><a class="pic" href="' + esc(r.href) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + (r.photo && PHOTOS[r.photo] ? '<img src="' + PHOTOS[r.photo] + '" alt="" width="300" height="300" style="width: 100%; height: 100%; object-fit: cover; display: block">' : r.img ? photo(r.img, r.pic, r.hed) : grabbed(r.href) ? photo(grabbed(r.href), r.pic, r.hed) : art(r.pic, r.hed)) + '<span class="tag">' + esc(r.outlet) + '</span></a>' +
@@ -2053,11 +2053,12 @@ header.site { border-bottom: 0; }
 
   // Editorials (sample)
   const eds = [
-    ['The Globe and Mail (subscribers)', 'Editorial board', 'The dimly lit path ahead of Alberta', 'https://www.theglobeandmail.com/opinion/editorials/article-the-dimly-lit-path-ahead-of-alberta/'],
-    ['Western Standard', 'Opinion · guest column', 'The Alberta referendum’s false binary', 'https://www.westernstandard.news/opinion/albers-the-alberta-referendums-false-binary/77945'],
-    ['Al Jazeera', 'Analysis', 'Alberta independence referendum: Will separatists survive a loss?', 'https://www.aljazeera.com/news/2026/10/18/alberta-independence-referendum-will-separatists-survive-a-loss'],
-    ['The Writ', 'Analysis · Éric Grenier', 'Alberta Referendum Poll Tracker', 'https://www.thewrit.ca/p/alberta-referendum-poll-tracker'],
-    ['The Globe and Mail (subscribers)', 'Opinion', 'Don’t buy it when the separatists say the referendum is about leverage', 'https://www.theglobeandmail.com/opinion/article-alberta-independence-separatism-referendum-secession/']
+    ["Al Jazeera", "Analysis", "Alberta independence referendum: Will separatists survive a loss?", "https://www.aljazeera.com/news/2026/10/18/alberta-independence-referendum-will-separatists-survive-a-loss"],
+    ["The Hill Times (subscribers)", "Column · Michael Harris", "Nothing more important in this country’s public life than the events unfolding in Alberta", "https://www.hilltimes.com/2026/10/19/nothing-more-important-in-this-countrys-public-life-than-events-unfolding-in-alberta/522254/"],
+    ["The Globe and Mail (subscribers)", "Editorial board", "The betrayal of Alberta, and Canada", "https://www.theglobeandmail.com/opinion/editorials/article-separatists-referendum-betrayal-of-alberta-and-canada/"],
+    ["The Hill Times (subscribers)", "Column · David Crane", "Americans are waking up to Trump’s harmful bluster", "https://www.hilltimes.com/2026/10/19/americans-are-waking-up-to-trumps-harmful-bluster/522206/"],
+    ["The Hill Times (subscribers)", "Column · Jamie Carroll", "Screw it: let’s just buy Stelco", "https://www.hilltimes.com/2026/10/19/screw-it-lets-just-buy-stelco/522078/"],
+    ["Postimees (Estonia)", "Editorial board", "France plunges into chaos", "https://news.postimees.ee/8567114/editorial-france-plunges-into-chaos"]
   ];
   $('editorialList').innerHTML = eds.map(([o, kind, h, u]) => '<a class="ed" href="' + esc(u) + '" target="_blank" rel="noopener"><span class="lead-in">' + (grabbed(u) ? '<span class="thumb" aria-hidden="true">' + photo(grabbed(u), 'city', h, o) + '</span>' : '<span class="mono" aria-hidden="true">' + esc(initials(o.replace(/^The /, ''))) + '</span>') + '<span style="min-width: 0"><span class="src">' + esc(o) + ' · ' + esc(kind) + '</span><span class="hed">' + esc(h) + '</span></span></span><span class="open">Open &#8599;</span></a>').join('');
 
@@ -2097,9 +2098,9 @@ header.site { border-bottom: 0; }
   const play = '<svg width="18" height="18" viewBox="0 0 24 24" fill="#FFF" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>';
   const row = (pic, tint, ico, s, t, w, go, href) => '<a class="media-row" href="' + esc(href) + '" target="_blank" rel="noopener"><span class="ico">' + (grabbed(href) ? photo(grabbed(href), pic, s, '').replace('<span class="ph"', '<span class="ph bg"') : art(pic, s, tint).replace('<svg', '<svg class="bg"')) + '<span class="glyph">' + ico + '</span></span><span class="txt"><span class="src">' + esc(s) + '</span><span class="ttl">' + esc(t) + '</span><span class="when">' + esc(w) + '</span></span><span class="go">' + go + ' &#8599;</span></a>';
   $('listen').innerHTML = [
-    ['#2B1B54', 'Good Talk · Mansbridge, Hébert & Anderson', 'Vote Like Canada Depends On It', 'Posted Oct 16 · on YouTube', 'https://www.youtube.com/watch?v=4gYbC34aZNE'],
-    ['#7A1F3D', 'Front Burner · CBC Podcasts', 'The other nine referendum questions in Alberta', 'This week · on CBC Listen', 'https://www.cbc.ca/radio/frontburner/the-other-nine-referendum-questions-in-alberta-9.7379405'],
-    ['#4B2F8F', 'Front Burner · CBC Podcasts', 'Alberta’s referendum on a referendum', 'Earlier episode · on CBC Listen', 'https://www.cbc.ca/listen/cbc-podcasts/209-front-burner/episode/16216969-albertas-referendum-on-a-referendum']
+    ['#2B1B54', 'Front Burner · CBC Podcasts', 'CFB Wainwright tragedy + the final Alberta referendum push', 'Posted Oct 19 · on CBC Listen', 'https://www.cbc.ca/radio/frontburner/cfb-wainwright-tragedy-the-final-alberta-referendum-push-9.7386278'],
+    ['#7A1F3D', 'The Decibel · The Globe and Mail', 'The history of Alberta separatism', 'Posted Oct 19 · at The Globe and Mail', 'https://www.theglobeandmail.com/podcasts/the-decibel/article-the-history-of-alberta-separatism/'],
+    ['#4B2F8F', 'Hill Times podcast · The Hill Times', 'Minister Eleanor Olszewski weighs in on the Alberta referendum', 'Posted Oct 16 · at The Hill Times', 'https://www.hilltimes.com/podcast/minister-eleanor-olszewski-weighs-in-on-the-alberta-referendum/']
   ].map(([tint, s, t, w, h]) => row('wave', tint, mic.replace('width="20" height="20"', 'width="16" height="16"'), s, t, w, 'Listen', h)).join('');
 
   // United States desk (real stories, Oct 18–19, 2026)
