@@ -838,7 +838,14 @@ header.site { border-bottom: 0; }
 .bk-chan .chan-pic img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .bk-chan .chan-pic.chan-text::after { content: attr(data-net); position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center; padding: 6px; font: 700 17px/1.2 Georgia, serif; color: #FFFFFF; }
 .bk-chan .chan-badge { position: absolute; left: 6px; top: 6px; background: #D7263D; color: #FFFFFF; font-size: 11px; font-weight: 800; letter-spacing: .06em; padding: 2px 6px; border-radius: 2px; }
-.bk-chan .chan-net { font-weight: 700; font-size: 14.5px; }
+.bk-chan .chan-story { font: 700 16px/1.25 Georgia, serif; }
+.bk-chan .chan-net { font-weight: 700; font-size: 13px; letter-spacing: .02em; color: #F6E1E8; }
+.bk-chan .chan-meta { font-size: 12.5px; font-weight: 600; color: #FFFFFF; }
+.bk-chan .chan-badge.u { background: #FFFFFF; color: #2B1B54; }
+.bk-chan .chan-badge.c { background: #2B1B54; color: #FFFFFF; border: 1px solid rgba(255,255,255,.7); }
+.bk-chan .chan-h + .chan-row { margin-bottom: 12px; }
+.bk-chan .chan-always { margin: 4px 0 0; font-size: 12.5px; color: #F6E1E8; }
+.bk-chan .chan-always a { color: #FFFFFF; font-weight: 600; }
 .bk-chan .chan-what { font-size: 12.5px; color: #F6E1E8; line-height: 1.35; }
 .bk-chan .chan-go { font-size: 12.5px; font-weight: 700; text-decoration: underline; margin-top: auto; }
 .bk-chan .chan-up { display: block; margin-top: 10px; padding: 10px 12px; border: 1px solid rgba(255,255,255,.6); border-radius: 4px; color: #FFFFFF; text-decoration: none; font-size: 14px; line-height: 1.4; }
@@ -941,7 +948,7 @@ header.site { border-bottom: 0; }
       </div>
     </div>
     <div class="masthead">
-      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 7:51 p.m.</b></span></div>
+      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 8:15 p.m.</b></span></div>
       <div class="plate">
         <span class="stamp" id="stamp" hidden>Late edition</span>
         <a class="logo" href="#top">Palindrome <em>News</em></a>
@@ -1218,6 +1225,7 @@ header.site { border-bottom: 0; }
   <section id="corrections" class="ruled" aria-labelledby="cx-h" style="scroll-margin-top: 64px">
     <div class="band-head"><h2 id="cx-h">Corrections &amp; updates</h2><p>Every change we make to a story, with the time. Nothing is changed quietly.</p></div>
     <ol class="log">
+      <li><time>Sun 8:15 p.m.</time><span class="kind">Update</span><span><b>Live coverage, made specific:</b> the generic “Live TV news now” row is replaced by live coverage named by story. Live now: CFB Wainwright live updates from <a href="https://www.cbc.ca/news/canada/edmonton/livestory/cfb-wainwright-fire-live-updates-9.7385537" target="_blank" rel="noopener">CBC News</a> and <a href="https://www.ctvnews.ca/edmonton/article/4-dead-in-one-of-the-worst-peacetime-military-tragedies-pm-follow-the-rapidly-evolving-situation-here/" target="_blank" rel="noopener">CTV News</a>, and <a href="https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tehran-says-netanyahu-seeks-more-war-yemen-fighting-flares" target="_blank" rel="noopener">Al Jazeera’s</a> Iran war live page, each with the time of its newest post. Coming up live: CTV’s Wainwright special tonight; Alberta referendum results on <a href="https://www.cbc.ca/news/canada/calgary/community/cbc-alberta-referendum-coverage-9.7373301" target="_blank" rel="noopener">CBC</a> (Mon 9 p.m. ET) and <a href="https://www.ctvnews.ca/calgary/article/where-to-watch-ctv-news-alberta-referendum-special-coverage/" target="_blank" rel="noopener">CTV</a> (midnight ET, 10 p.m. MT). The CBS News 24/7 tile is removed; 24-hour channels are now a one-line link.</span></li>
       <li><time>Sun 7:51 p.m.</time><span class="kind">Update</span><span><b>CFB Wainwright:</b> Added Wainwright Mayor Bruce Pugh’s remarks after Poilievre (<a href="https://www.cbc.ca/news/canada/edmonton/livestory/cfb-wainwright-fire-live-updates-9.7385537?id=9.7385537.16877" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline">CBC News</a>), the military’s planned board of inquiry and an Ontario mayoral candidate’s critically injured son (<a href="https://www.ctvnews.ca/edmonton/article/4-dead-in-one-of-the-worst-peacetime-military-tragedies-pm-follow-the-rapidly-evolving-situation-here/" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline">CTV News</a>). Story links now point to CBC’s live updates as of 7:24 p.m. New wire item: Venezuela’s opposition backs Machado (<a href="https://www.aljazeera.com/news/2026/10/18/venezuela-opposition-renews-support-for-maria-corina-machado-as-leader" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline">Al Jazeera</a>). The breakdown on the White House press secretary, with no new reporting since Friday, has been retired.</span></li>
       <li><time>Sun 7:49 p.m.</time><span class="kind">New</span><span><b>Live TV news, always on the page:</b> the top story now carries a “Live TV news now” row: CTV News Channel, Global News’s live stream and CBS News 24/7, each with its picture and one tap to the network’s own live page. Scheduled live broadcasts show as “Coming up live”, then “On now”: tonight, CTV News’s special Alberta newscast on the Wainwright tragedy at about 11:30 p.m. ET (<a href="https://www.ctvnews.ca/calgary/article/special-live-newscast-on-wainwright-tragedy-to-be-broadcast-sunday-night-across-alberta/" target="_blank" rel="noopener">CTV News</a>).</span></li>
       <li><time>Sun 7:38 p.m.</time><span class="kind">Update</span><span><b>Newsroom review:</b> Editorials now draw on four outlets and more than one point of view (The Globe and Mail for subscribers, Western Standard, Al Jazeera, The Writ) instead of one newspaper. Think tanks add the Parkland Institute’s brief on the referendum’s immigration questions. In Canada, Politics and Business, each outlet named under a story now links to that outlet’s own report; Stelco now leads with CTV News’s newest report (Fri 2:55 p.m.), and Stellantis lists CP24, BNN Bloomberg and CTV News. Story times now show the day they were published (several were days old but showed only a clock time). The recall item no longer says it was “most read this morning”. The wire is back in time order. In the top story, Poilievre’s remarks get a link to CBC’s recording, and the 5 p.m. news conference synopsis (CTV News) stays one tap away under “Earlier”.</span></li>
@@ -1544,26 +1552,44 @@ header.site { border-bottom: 0; }
     }
     if (typeof wirePhotos === 'function') wirePhotos();
   })();
-  // Live TV news, always on the page (Hannah's rule: add every live video we can confirm). CHANNELS = live streams on now, network's own page;
-  // COMING = scheduled live broadcasts (shown as "Coming up live", then "On now" from `when` until `until`, then hidden).
-  const CHANNELS = [
-    { net: 'CTV News Channel', what: 'Canada’s 24-hour news network', url: 'https://www.ctvnews.ca/video/live/2026/09/11/ctv-news-channel-live/', file: 'img/live/ctv-news-channel.jpg', img: 'https://www.ctvnews.ca/resizer/v2/https%3A%2F%2Fd3g70guqh4mw9g.cloudfront.net%2F09-11-2026%2Ft_ce385614ba654887aef286e5a9b73df0_name_nch_scaled.jpg?smart=true&auth=0900c0af2269b47880a6b0b4b131470e3163b791c634fe99cac44e265a2cb7d2&width=1200&height=630' },
-    { net: 'Global News', what: 'Global News live stream: Canadian news', url: 'https://globalnews.ca/live/national/', file: 'img/live/global-news-live.jpg', img: 'https://globalnews.ca/wp-content/themes/shaw-globalnews/_img/logos/gn_live_share.png' },
-    { net: 'CBS News 24/7', what: 'Free U.S. live news stream', url: 'https://www.cbsnews.com/live/', file: '', img: 'https://assets1.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1200x630/3c2876feb4b25922288eaeb0a1d6b8f0/247-key-channelthumbnail-1920x1080.jpg' }
+  // Live coverage, always on the page and always specific (Hannah's rules: every live video or live update we can confirm, named by story).
+  // LIVENOW: coverage running now. kind 'video' = live video stream; 'updates' = a live blog the outlet is updating now (updated = time of its newest post).
+  // COMING: scheduled live broadcasts, by story; shown as "Coming up live", then "On now" between when and until, then hidden.
+  // ALWAYS: 24-hour news channels, as a small line under the tiles.
+  const LIVENOW = [
+    { kind: 'updates', story: 'CFB Wainwright fire', net: 'CBC News', what: 'Live updates: four soldiers named, 19 in critical condition, reaction from Wainwright', url: 'https://www.cbc.ca/news/canada/edmonton/livestory/cfb-wainwright-fire-live-updates-9.7385537', updated: '2026-10-18T19:57:00-04:00', file: '', blob: '', img: 'https://i.cbc.ca/ais/9d810af5-e040-49f5-b8b9-13abb40ea4f9,1792342748554/full/max/0/default.jpg?im=Crop%2Crect%3D%284%2C0%2C8248%2C4639%29%3BResize%3D620' },
+    { kind: 'updates', story: 'CFB Wainwright fire', net: 'CTV News', what: 'Live updates from reporters in Wainwright: Maj.-Gen. Rutland on how the fire reached troops in under a minute', url: 'https://www.ctvnews.ca/edmonton/article/4-dead-in-one-of-the-worst-peacetime-military-tragedies-pm-follow-the-rapidly-evolving-situation-here/', updated: '2026-10-18T19:27:00-04:00', file: 'img/live/ctv-wainwright-live.jpg', blob: '/_blob/54f3d3d8dd82a1feb3fdf19cac1e841d', img: 'https://www.ctvnews.ca/resizer/v2/KP36M62OAVEONCP7BODNIGQBVE.jpg?smart=true&auth=e15e52bd6599396ce2271f07c06dac41fb9f390db0c34cf69631991b3b055305&width=1200&height=630' },
+    { kind: 'updates', story: 'Strait of Hormuz and the Iran war', net: 'Al Jazeera', what: 'Live: Tehran says Netanyahu seeks more war; fighting flares in Yemen', url: 'https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tehran-says-netanyahu-seeks-more-war-yemen-fighting-flares', updated: '2026-10-18T20:03:00-04:00', file: 'img/live/aljazeera-iran-live.jpg', blob: '/_blob/02d469f3709d01eabbf021cbb20f9c1e', img: 'https://www.aljazeera.com/wp-content/uploads/2026/10/epa_6ad5540e4647-1792365582.jpg?resize=1920%2C1440' }
   ];
   const COMING = [
-    { net: 'CTV News', what: 'Special live Alberta newscast on the Wainwright tragedy, with reporters in Wainwright; Tara Nelson anchors', when: '2026-10-18T23:30:00-04:00', approx: true, local: '9:30 p.m. MT, after Sunday Night Football', until: '2026-10-19T00:45:00-04:00', url: 'https://www.ctvnews.ca/calgary/article/special-live-newscast-on-wainwright-tragedy-to-be-broadcast-sunday-night-across-alberta/' }
+    { story: 'CFB Wainwright fire', net: 'CTV News', what: 'Special live Alberta newscast on the Wainwright tragedy, with reporters in Wainwright; Tara Nelson anchors', where: 'CTV stations in Alberta', when: '2026-10-18T23:30:00-04:00', approx: true, local: '9:30 p.m. MT, after Sunday Night Football', until: '2026-10-19T00:45:00-04:00', url: 'https://www.ctvnews.ca/calgary/article/special-live-newscast-on-wainwright-tragedy-to-be-broadcast-sunday-night-across-alberta/', file: 'img/live/ctv-wainwright-special.jpg', blob: '/_blob/d057e4a6ab3d580190bd3fa39a1103e6', img: 'https://www.ctvnews.ca/resizer/v2/XFLEKJ42HZC4VL2ZNIR6OZBPHM.jpg?smart=true&auth=af163fca0719344d72aec37d589e507d9b9c3bdd414a433a69e9dec15c6701df&width=1200&height=630' },
+    { story: 'Alberta referendum results', net: 'CBC News', what: 'Alberta Votes: Referendum Night, live results and analysis', where: 'Free on CBC Gem, the CBC News YouTube channel, and CBC Calgary and CBC Edmonton online', when: '2026-10-19T21:00:00-04:00', local: '7 p.m. MT', until: '2026-10-20T02:00:00-04:00', url: 'https://www.cbc.ca/news/canada/calgary/community/cbc-alberta-referendum-coverage-9.7373301', file: '', blob: '', img: 'https://i.cbc.ca/ais/a2e4d8eb-4f17-45af-9d02-61fa44993c58,1791409999448/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C3840%2C2160%29%3BResize%3D620' },
+    { story: 'Alberta referendum results', net: 'CTV News', what: 'Alberta referendum special: Tara Nelson anchors, Omar Sachedina in Calgary, and a panel with former premiers Jason Kenney and Rachel Notley', where: 'CTVNews.ca, YouTube, Crave and CTV News Channel', when: '2026-10-20T00:00:00-04:00', local: '10 p.m. MT Monday', until: '2026-10-20T03:00:00-04:00', url: 'https://www.youtube.com/watch?v=7JFEBMVFl6w', file: 'img/live/ctv-referendum-special.jpg', blob: '/_blob/003cb238cc6947110991ee98c142db71', img: 'https://www.ctvnews.ca/resizer/v2/PMCUYVO2BRCIFMXYJWNIHH3YNI.png?smart=true&auth=2df7524be330372ee65f172773f99f3df44fc02888d476bc634ea5102bae49e9&width=1200&height=630', info: 'https://www.ctvnews.ca/calgary/article/where-to-watch-ctv-news-alberta-referendum-special-coverage/' }
   ];
-  (function liveChannels() {
+  const ALWAYS = [['CTV News Channel', 'https://www.ctvnews.ca/video/live/2026/09/11/ctv-news-channel-live/'], ['Global News', 'https://globalnews.ca/live/national/']];
+  (function liveCoverage() {
     const box = document.getElementById('bkChannels'); if (!box) return;
-    const fmtT = (d) => d.toLocaleTimeString('en-CA', { hour: 'numeric', minute: '2-digit', timeZone: 'America/Toronto' }).replace('a.m.', 'a.m.').replace(/\s?([ap])\.?m\.?/i, (m0, x) => ' ' + x.toLowerCase() + '.m.');
+    const tz = { timeZone: 'America/Toronto' };
+    const ampm = (t) => t.replace(/\s?([ap])\.?m\.?/i, (m0, x) => ' ' + x.toLowerCase() + '.m.');
+    const fmtT = (d) => ampm(d.toLocaleTimeString('en-CA', Object.assign({ hour: 'numeric', minute: '2-digit' }, tz)));
+    const dayOf = (d) => d.toLocaleDateString('en-CA', Object.assign({ weekday: 'short' }, tz));
+    const when = (d) => { const today = dayOf(new Date()) === dayOf(d); return (today ? 'Tonight ' : dayOf(d) + ' ') + fmtT(d) + ' ET'; };
+    const pic = (c, badge, cls) => '<span class="chan-pic" data-net="' + esc(c.net) + '"><img alt="" referrerpolicy="no-referrer" data-tries="' + esc(JSON.stringify([c.file, USE_LOCAL && c.blob, c.img].filter(Boolean))) + '"><span class="chan-badge ' + cls + '">' + badge + '</span></span>';
     const render = () => {
       const now = Date.now();
-      const up = COMING.filter((c) => { const u = Date.parse(c.until || c.when) || 0; return now < u; });
-      const tiles = CHANNELS.map((c) => '<a class="chan" href="' + esc(c.url) + '" target="_blank" rel="noopener"><span class="chan-pic" data-net="' + esc(c.net) + '"><img alt="' + esc(c.net + ' live') + '" referrerpolicy="no-referrer" data-tries="' + esc(JSON.stringify([c.file, USE_LOCAL && LOCAL[c.img], c.img].filter(Boolean))) + '"><span class="chan-badge">LIVE</span></span><span class="chan-net">' + esc(c.net) + '</span><span class="chan-what">' + esc(c.what) + '</span><span class="chan-go">Watch live &#8599;</span></a>').join('');
-      const coming = up.map((c) => { const w = new Date(c.when); const on = now >= w.getTime(); return '<a class="chan-up' + (on ? ' on' : '') + '" href="' + esc(c.url) + '" target="_blank" rel="noopener"><b>' + (on ? 'On now' : 'Coming up live') + '</b> ' + (c.approx ? 'about ' : '') + esc(fmtT(w)) + ' ET' + (c.local ? ' (' + esc(c.local) + ')' : '') + ' · <span class="chan-upnet">' + esc(c.net) + '</span>: ' + esc(c.what) + ' &#8599;</a>'; }).join('');
-      if (!tiles && !coming) { box.hidden = true; return; }
-      box.innerHTML = (tiles ? '<p class="chan-h">Live TV news now</p><div class="chan-row">' + tiles + '</div>' : '') + coming;
+      const live = LIVENOW.filter((c) => c.kind === 'video' || !c.updated || now - Date.parse(c.updated) < 6 * 3600e3);
+      const up = COMING.filter((c) => now < (Date.parse(c.until || c.when) || 0)).sort((x, y) => Date.parse(x.when) - Date.parse(y.when));
+      const onNow = up.filter((c) => now >= Date.parse(c.when));
+      const later = up.filter((c) => now < Date.parse(c.when));
+      const tile = (c, badge, cls, meta, go) => '<a class="chan" href="' + esc(c.url) + '" target="_blank" rel="noopener">' + pic(c, badge, cls) + '<span class="chan-story">' + esc(c.story) + '</span><span class="chan-net">' + esc(c.net) + '</span><span class="chan-what">' + esc(c.what) + '</span>' + (meta ? '<span class="chan-meta">' + meta + '</span>' : '') + '<span class="chan-go">' + go + ' &#8599;</span></a>';
+      const nowTiles = onNow.map((c) => tile(c, 'LIVE VIDEO', 'v', 'On now' + (c.where ? ' · ' + esc(c.where) : ''), 'Watch live')).concat(live.map((c) => c.kind === 'video'
+        ? tile(c, 'LIVE VIDEO', 'v', '', 'Watch live')
+        : tile(c, 'LIVE UPDATES', 'u', c.updated ? 'Newest post ' + esc(fmtT(new Date(c.updated))) + ' ET' : '', 'Follow live'))).join('');
+      const laterTiles = later.map((c) => tile(c, esc(when(new Date(c.when)).toUpperCase()), 'c', (c.approx ? 'About ' + esc(when(new Date(c.when))).replace(/^Tonight/, 'tonight') : esc(when(new Date(c.when)))) + (c.local ? ' (' + esc(c.local) + ')' : '') + (c.where ? ' · ' + esc(c.where) : ''), c.url.indexOf('youtube.com') > -1 ? 'Set a reminder on YouTube' : 'How to watch')).join('');
+      if (!nowTiles && !laterTiles) { box.hidden = true; return; }
+      box.innerHTML = (nowTiles ? '<p class="chan-h">Live coverage now</p><div class="chan-row">' + nowTiles + '</div>' : '') +
+        (laterTiles ? '<p class="chan-h">Coming up live</p><div class="chan-row">' + laterTiles + '</div>' : '') +
+        (ALWAYS.length ? '<p class="chan-always">24-hour news channels: ' + ALWAYS.map(([n, u]) => '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(n) + ' &#8599;</a>').join(' · ') + '</p>' : '');
       box.hidden = false;
       box.querySelectorAll('.chan-pic img').forEach((im) => {
         const tries = JSON.parse(im.dataset.tries || '[]'); let k = 0;
