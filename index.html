@@ -1017,7 +1017,7 @@ header.site { border-bottom: 0; }
       </div>
     </div>
     <div class="masthead">
-      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 6:22 a.m.</b></span></div>
+      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 6:46 a.m.</b></span></div>
       <div class="plate">
         <span class="stamp" id="stamp" hidden>Late edition</span>
         <a class="logo" href="#top">Palindrome <em>News</em></a>
@@ -1353,6 +1353,7 @@ header.site { border-bottom: 0; }
   <section id="corrections" class="ruled" aria-labelledby="cx-h" style="scroll-margin-top: 64px">
     <div class="band-head"><h2 id="cx-h">Corrections &amp; updates</h2><p>Every change we make to a story, with the time. Nothing is changed quietly.</p></div>
     <ol class="log">
+      <li><time>Mon 6:46 a.m.</time><span class="kind">Update</span><span><b>The 60-second brief</b> for Monday morning, October 19: CFB Wainwright, Alberta’s vote, Wichita, Trump’s Russia waiver and France.</span></li>
       <li><time>Mon 6:22 a.m.</time><span class="kind">Update</span><span><b>Live coverage:</b> Al Jazeera’s Iran war live blog now leads with a Houthi strike on a camp in Yemen’s Shabwa province that killed or wounded at least 40 people, a deputy governor says (<a href="https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tehran-says-netanyahu-seeks-more-war-yemen-fighting-flares?update=5061703" target="_blank" rel="noopener">Al Jazeera</a>); its France live blog reports more than 2,330 people taken into custody over the weekend and a Yellow Vest call for “Act II” protests on Saturday (<a href="https://www.aljazeera.com/news/liveblog/2026/10/19/france-protests-live-macron-admits-failures-after-days-of-violent-unrest?update=5061656" target="_blank" rel="noopener">Al Jazeera</a>). Both added to the wire. No new developments on the CFB Wainwright fire overnight; Carney’s statement in the House is still set for 11 a.m.</span></li>
       <li><time>Mon 6:21 a.m.</time><span class="kind">Update</span><span><b>Canada and the U.S.:</b> U.S. media lens adds NPR’s voting-day preview of Alberta’s referendum (<a href="https://www.npr.org/2026/10/19/nx-s1-6004877/alberta-voters-weigh-future-in-canada" target="_blank" rel="noopener">NPR</a>) and drops an older AP explainer.</span></li>
       <li><time>Mon 5:58 a.m.</time><span class="kind">Update</span><span><b>Watch:</b> five clips added from networks’ official YouTube channels, with pictures: Fox News on Trump’s midterm promise at his Kentucky rally; ABC News (Australia) on Israeli settlers targeting European diplomats in the West Bank; CTV News Toronto at Six on the mayoral race; and the Associated Press and France 24 on Sally Rooney’s books being pulled from sale in the U.K. (France 24’s clip replaces its picture-less card).</span></li>
@@ -2328,17 +2329,16 @@ header.site { border-bottom: 0; }
   // BRIEF_AUDIO: path to a recording in Hannah's own voice (e.g. 'audio/brief.mp3'). When set, it plays;
   // otherwise the device reads the script aloud.
   const BRIEF_AUDIO = '';
-  const BRIEF_FOR = 'Sunday night, October 18';
+  const BRIEF_FOR = 'Monday morning, October 19';
   const brief = [
-    'Good evening. I’m Hannah Thibedeau, and this is your Palindrome News brief.',
+    'Good morning. I’m Hannah Thibedeau, and this is your Palindrome News brief.',
     'We begin at CFB Wainwright in Alberta, where four soldiers died when a grass fire swept a training range Saturday.',
     'They are Sergeant Morgan Wong, and privates Shaun Farrell, Aidan Goulding and Hayden Lykkemark.',
-    'Thirty-nine people are in hospital, at least nineteen in critical condition. A military memo says a sudden wind change sent the fire toward them.',
-    'Tomorrow, Albertans vote on whether to start down the road to a separation referendum. Over one point three million already have.',
-    'In Wichita, Kansas, a truck drove onto a youth soccer field, killing a six-year-old and a man of thirty-five. No charges so far.',
-    'President Trump has endorsed Benjamin Netanyahu, nine days before Israel votes.',
-    'In France, nearly twenty-four hundred have been arrested as protests turned violent.',
-    'And President Volodymyr Zelenskyy says American intelligence sharing with Ukraine has resumed.',
+    'Thirty-nine people are in hospital, at least nineteen in critical condition. The cause is under investigation.',
+    'Today, Albertans vote on whether to stay in Canada, or hold a binding vote on leaving. Over one point three million already have.',
+    'In Wichita, Kansas, a truck drove onto a youth soccer field, killing a six-year-old and a man of thirty-five. No charges have been filed.',
+    'President Trump defends waiving new sanctions on Russia. President Volodymyr Zelenskyy says the waiver will hurt Ukraine.',
+    'And in France, nearly twenty-four hundred were arrested as protests turned violent. President Macron admits failures in anticipation and intelligence.',
     'That’s your brief. We’ll keep watching, so you don’t have to.'
   ];
   const audio = $('audio'), aBtn = $('audioBtn');
