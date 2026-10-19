@@ -1032,7 +1032,7 @@ header.site { border-bottom: 0; }
       </div>
     </div>
     <div class="masthead">
-      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 4:43 p.m. ET Monday</b></span></div>
+      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 4:46 p.m. ET Monday</b></span></div>
       <div class="plate">
         <span class="stamp" id="stamp" hidden>Late edition</span>
         <a class="logo" href="#top">Palindrome <em>News</em></a>
@@ -1406,6 +1406,7 @@ header.site { border-bottom: 0; }
   <section id="corrections" class="ruled" aria-labelledby="cx-h" style="scroll-margin-top: 64px">
     <div class="band-head"><h2 id="cx-h">Corrections &amp; updates</h2><p>Every change we make to a story, with the time. Nothing is changed quietly.</p></div>
     <ol class="log">
+      <li><time>Mon 4:46 p.m.</time><span class="kind">Update</span><span><b>The 60-second brief</b> for Monday evening, October 19: Commons tributes for the Wainwright soldiers, Alberta’s vote tonight, inflation, a Columbus shooting, Trump’s approval and France’s curfews.</span></li>
       <li><time>Mon 4:43 p.m.</time><span class="kind">Update</span><span><b>Wire:</b> the Columbus, Ohio, shooting now links The Associated Press report via <a href="https://www.cbsnews.com/news/shooting-mosque-columbus-ohio/" target="_blank" rel="noopener">CBS News</a> (updated 4:18 p.m.), with police Sgt. James Fuqua’s statement that it was not an attack on the mosque. CFB Wainwright: a wide check of national, local, hometown, official and international outlets found nothing newer than the fire chief’s 3:56 p.m. statement that the fire is contained.</span></li>
       <li><time>Mon 4:40 p.m.</time><span class="kind">Update</span><span><b>What America’s newsrooms are leading with:</b> refreshed (ABC News, Fox News)</span></li>
       <li><time>Mon 4:20 p.m.</time><span class="kind">Update</span><span><b>Wire:</b> a fatal shooting near a mosque in northeast Columbus, Ohio, which police say was not an attack on the mosque (<a href="https://whio.com/news/local/least-1-dead-after-shooting-columbus-mosque/DP5HKP2STZF5XDZX7RR6MGN23Q" target="_blank" rel="noopener">WHIO</a>; <a href="https://wsvn.com/news/us-world/police-say-a-shooting-in-columbus-ohio-was-not-an-attack-on-a-mosque-but-happened-at-a-nearby-apartment-complex/" target="_blank" rel="noopener">The Associated Press</a>); Canadian publishers’ copyright lawsuit against Anthropic (<a href="https://www.cbc.ca/news/business/anthropic-postmedia-torstar-globe-canadian-press-copyright-lawsuit-9.7387205" target="_blank" rel="noopener">The Canadian Press, via CBC News</a>). CFB Wainwright: a wide check of national, local, hometown and international outlets found nothing newer than the fire chief’s 3:56 p.m. statement.</span></li>
@@ -2546,16 +2547,17 @@ header.site { border-bottom: 0; }
   // BRIEF_AUDIO: path to a recording in Hannah's own voice (e.g. 'audio/brief.mp3'). When set, it plays;
   // otherwise the device reads the script aloud.
   const BRIEF_AUDIO = '';
-  const BRIEF_FOR = 'Monday morning, October 19';
+  const BRIEF_FOR = 'Monday evening, October 19';
   const brief = [
-    'Good morning. I’m Hannah Thibedeau, and this is your Palindrome News brief.',
-    'We begin at CFB Wainwright in Alberta, where four soldiers died when a grass fire swept a training range Saturday.',
-    'They are Sergeant Morgan Wong, and privates Shaun Farrell, Aidan Goulding and Hayden Lykkemark.',
-    'Thirty-nine people are in hospital, at least nineteen in critical condition. The cause is under investigation.',
-    'Today, Albertans vote on whether to stay in Canada, or hold a binding vote on leaving. Over one point three million already have.',
-    'In Wichita, Kansas, a truck drove onto a youth soccer field, killing a six-year-old and a man of thirty-five. No charges have been filed.',
-    'President Trump defends waiving new sanctions on Russia. President Volodymyr Zelenskyy says the waiver will hurt Ukraine.',
-    'And in France, nearly twenty-four hundred were arrested as protests turned violent. President Macron admits failures in anticipation and intelligence.',
+    'Good evening. I’m Hannah Thibedeau, and this is your Palindrome News brief.',
+    'We begin in Ottawa, where MPs stood in silence for four soldiers killed at CFB Wainwright.',
+    'Prime Minister Mark Carney said the loss touches every corner of our nation, and promised a full investigation.',
+    'Wainwright’s fire chief says the fire is contained.',
+    'Albertans vote today on whether to stay in Canada, or hold a binding vote on leaving. Polls close at ten Eastern; a result is expected overnight.',
+    'Inflation rose to three point one per cent in September, led by gas prices.',
+    'In Columbus, Ohio, one person was killed in a shooting near a mosque. Police say it was not an attack on the mosque.',
+    'Fifteen days before the midterms, weekend polls put President Trump’s approval as low as thirty-three per cent.',
+    'And in France, Lille and parts of Paris face overnight curfews after the weekend’s riots.',
     'That’s your brief. We’ll keep watching, so you don’t have to.'
   ];
   const audio = $('audio'), aBtn = $('audioBtn');
