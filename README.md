@@ -21,6 +21,11 @@ Both pages open directly in a web browser. They are previews: the live site will
 - Tapping a story takes the reader straight to the original article.
 - Breaking news can run with credit to the outlet that reported it, and takes over the top of the homepage.
 - Sponsors pay for the site but never choose or rank the news. Paid editorials are always labelled.
+- Breaking news means checking every source out there, not rechecking the same pages: national, local and hometown newsrooms, official sources and wires, every run. Names, photos and tributes of victims go on the page as soon as an outlet publishes them. See `tools/runbooks/BREAKING_SOURCES.md`.
+
+## How the page updates itself
+
+Scheduled tasks follow the runbooks in `tools/runbooks/`: `full-update.md` (every :09 and :39), `live-check.md` (every :24 and :54), and `BREAKING_SOURCES.md`, which both read first. Change the rules by editing these files; the next run picks them up.
 
 ## Photos on the preview link
 
