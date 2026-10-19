@@ -634,7 +634,12 @@ header.site { border-bottom: 0; }
 .acct small { font-size: 12px; color: #F6E1E8; }
 .acct small a { color: #FFFFFF; text-decoration: underline; }
 .breaking p.acc-h, .acc-h { margin: 0 0 8px; font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #F6E1E8; }
-.tl { margin-top: 14px; padding: 14px 16px; background: rgba(15, 11, 25, .28); }
+.tl { position: relative; z-index: 2; margin-top: 14px; padding: 14px 16px; background: rgba(15, 11, 25, .28); }
+.tl li.tl-hide { display: none; }
+.tl-toggle { display: inline-flex; align-items: center; gap: 6px; margin: 12px 0 0; min-height: 44px; padding: 0 14px; font: inherit; font-size: 13px; font-weight: 700; color: #2B1B54; background: #FFFFFF; border: 0; border-radius: 999px; cursor: pointer; }
+.tl-toggle svg { transition: transform .2s; }
+.tl-toggle[aria-expanded="true"] svg { transform: rotate(180deg); }
+.tl-toggle:focus-visible { outline: 3px solid #F6E1E8; outline-offset: 2px; }
 .tl h3 { margin: 0 0 8px; font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #F6E1E8; }
 .tl ol { list-style: none; margin: 0; padding: 0 0 0 14px; border-left: 2px solid rgba(255,255,255,.3); }
 .tl li { position: relative; padding: 0 0 10px 6px; font-size: 13px; line-height: 1.45; color: #FFFFFF; }
@@ -1316,6 +1321,7 @@ header.site { border-bottom: 0; }
   <section id="corrections" class="ruled" aria-labelledby="cx-h" style="scroll-margin-top: 64px">
     <div class="band-head"><h2 id="cx-h">Corrections &amp; updates</h2><p>Every change we make to a story, with the time. Nothing is changed quietly.</p></div>
     <ol class="log">
+      <li><time>Sun 8:57 p.m.</time><span class="kind">Update</span><span><b>How this story developed</b> is now expandable: the three newest updates show, and “Show all” opens the full timeline.</span></li>
       <li><time>Sun 8:53 p.m.</time><span class="kind">Update</span><span><b>How U.S. media see Canada:</b> now its own part of Canada and the U.S., near the top and in the menu, with eight American reports from this week (The Associated Press, The Washington Times, Time, Axios, Bloomberg, PBS NewsHour, Atlantic Council), each with its date and angle, and a one-line summary of how U.S. coverage is framing Canada.</span></li>
       <li><time>Sun 8:55 p.m.</time><span class="kind">Update</span><span><b>New section, Canada and the U.S.:</b> where the trade war stands (talks suspended since Aug. 22; U.S. 50% tariffs; Canada’s 15–50% counter-tariffs; lumber duty near 35%; annual CUSMA review), this week’s developments, what comes next, how we got here, and how U.S. outlets are covering Canada. Each line cites the newsrooms that reported it. Replaces the single “How U.S. media see Canada” box.</span></li>
       <li><time>Sun 8:27 p.m.</time><span class="kind">Update</span><span><b>Links to the full broadcasts:</b> the 5 p.m. news conference synopsis now links first to the full, unedited news conference (<a href="https://www.cpac.ca/headline-politics/episode/ministers-and-caf-officials-provide-update-on-cfb-wainwright--october-18-2026?id=e2d95f33-bb9e-49f5-95a3-bf8eaf0ec561" target="_blank" rel="noopener">CPAC</a>), ahead of CTV’s clips; Poilievre’s synopsis adds his full remarks and questions from reporters (<a href="https://www.cpac.ca/headline-politics/episode/cfb-wainwright-incident-pierre-poilievre-speaks-to-media--october-18-2026?id=8fa38ec2-1ee9-498d-b389-2590668a6096" target="_blank" rel="noopener">CPAC</a>).</span></li>
@@ -2521,12 +2527,12 @@ header.site { border-bottom: 0; }
   (function fold() {
     const bk = document.getElementById('breaking');
     if (bk && window.matchMedia && matchMedia('(max-width: 760px)').matches) {
-      const parts = [...bk.querySelectorAll('.know, .accounts, .tracker, .tl')];
+      const parts = [...bk.querySelectorAll('.know, .accounts, .tracker')];
       parts.forEach((el) => { el.classList.add('fold'); const h = el.previousElementSibling; if (h && h.classList.contains('acc-h')) h.classList.add('fold'); });
       if (parts.length) {
         const dek = bk.querySelector('.bk-dek') || bk.querySelector('h2');
-        dek.insertAdjacentHTML('afterend', '<button type="button" class="bk-more" aria-expanded="false">What we know, both accounts and the timeline <span aria-hidden="true">&#9662;</span></button>');
-        bk.querySelector('.bk-more').addEventListener('click', (e) => { const on = bk.classList.toggle('full'); e.currentTarget.setAttribute('aria-expanded', String(on)); e.currentTarget.firstChild.textContent = on ? 'Show less ' : 'What we know, both accounts and the timeline '; });
+        dek.insertAdjacentHTML('afterend', '<button type="button" class="bk-more" aria-expanded="false">What we know and both accounts <span aria-hidden="true">&#9662;</span></button>');
+        bk.querySelector('.bk-more').addEventListener('click', (e) => { const on = bk.classList.toggle('full'); e.currentTarget.setAttribute('aria-expanded', String(on)); e.currentTarget.firstChild.textContent = on ? 'Show less ' : 'What we know and both accounts '; });
       }
     }
     const log = document.querySelector('#corrections ol.log');
@@ -2570,6 +2576,22 @@ header.site { border-bottom: 0; }
       : 'Enter an email address, like name@example.com.';
   });
 })();
+// "How this story developed": newest 3 shown, the rest one tap away
+document.querySelectorAll('.tl').forEach((tl, n) => {
+  const ol = tl.querySelector('ol'); if (!ol) return;
+  const items = [...ol.children]; const SHOW = 3;
+  if (items.length <= SHOW) return;
+  ol.id = ol.id || 'tlList' + n;
+  const btn = document.createElement('button');
+  btn.type = 'button'; btn.className = 'tl-toggle'; btn.setAttribute('aria-controls', ol.id);
+  const set = (open) => {
+    items.forEach((li, i) => li.classList.toggle('tl-hide', !open && i >= SHOW));
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.innerHTML = (open ? 'Show fewer' : 'Show all ' + items.length + ' updates') + ' <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>';
+  };
+  btn.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); const open = btn.getAttribute('aria-expanded') !== 'true'; set(open); if (!open) tl.scrollIntoView({ block: 'nearest' }); });
+  set(false); ol.after(btn);
+});
 </script>
 
 </body></html>
