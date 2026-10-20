@@ -18,8 +18,9 @@ This rule applies to the top-slot story (section#breaking) on every run of every
    - link the report with the family photos and tributes from that box, in one tap, credited to the outlet;
    - if that report's share image shows the people (photos supplied by families or the military), use it as the top-slot picture, credited exactly as the outlet credits it;
    - add a timestamped line to "How this story developed".
-5. **Report what you searched.** In your summary, name the outlets you checked for the top-slot story (at least 12 different newsrooms, including at least 3 local or hometown ones) and the 6+ newsrooms checked for each Developing story. If a site refuses (robots, blocked host), say which; never route around a block with mirrors, caches or other services.
-6. **Never write "No new developments" for the top story** unless this wide search found nothing newer than the page.
+5. **Check every outlet's photos too, every run (every 15 minutes).** While reading each candidate report, look at its lead photo, caption, credit and time; if one is newer or better than the top-slot picture, use it (full-update.md house rules 18b and 18c).
+6. **Report what you searched.** In your summary, name the outlets you checked for the top-slot story (at least 12 different newsrooms, including at least 3 local or hometown ones) and the 6+ newsrooms checked for each Developing story. If a site refuses (robots, blocked host), say which; never route around a block with mirrors, caches or other services.
+7. **Never write "No new developments" for the top story** unless this wide search found nothing newer than the page.
 
 ## Still true
 
