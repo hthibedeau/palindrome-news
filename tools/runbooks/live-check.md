@@ -10,6 +10,26 @@ You are the quick live check for the Palindrome News homepage, an online news si
 
 **WATCH, EVERY RUN (Hannah: Watch should be updated more often):** look for the newest clips on every Breaking story and the day's other big stories (networks' official YouTube channels via tools/network_youtube.py, and the outlets' own video pages), add them, then run `python3 tools/network_youtube.py checked index.html` so the "Clips checked" time under the Watch heading is real. New clips show first with a "New" badge for 3 hours; day labels update by themselves.
 
+**"COMING UP" IS NEVER OLD, FOR EVERY BREAKING STORY (Hannah, Tue Oct 20, 2026: "write a code for all breaking news that always updates that").** Every run, full update and live check:
+1. Run `python3 tools/schedule_check.py --page index.html`.
+   - It finds every Breaking story on the page, whatever it is.
+   - It shows each story's schedule marked DONE / NOW / NEXT, and warns when nothing is ahead or the times were checked more than 30 minutes ago.
+   - It lists the forward-looking lines ("will address", "expected", "scheduled", "tonight", "tomorrow"…) in the newest reports and live blogs, each with its outlet, post time and link.
+2. Open each lead and read the time on the source itself. Then:
+   - Add each newly announced item to the UPNEXT schedule: `{ at, to?, local?, text, outlet, url }`. For a rough time ("Wednesday morning"), add `approx: 'Wed morning'` and the page shows it as written, never as a countdown.
+   - Fix changed times, citing the newest source.
+   - Remove cancelled items and say so in the timeline.
+   - Add COMING entries for anything carried live.
+   - For the top slot, scheduled items go in COMING with `top: true` (live-check step 1b).
+3. Set `scheduleChecked` on the UPNEXT entry to the real time of the check, even if nothing changed.
+
+The page does the rest by itself:
+- Upcoming items come first.
+- Finished ones fold into "Earlier (N done)".
+- With nothing ahead it says "Nothing else is scheduled yet".
+- Watch buttons drop once coverage ends.
+- The event comes back into the Breaking segment 2 hours before any later scheduled item, such as a premier's address the next evening.
+
 **Every run: check ALL outlets and official alert channels for new breaking news (not only the stories already on the page), and use primary sources (official releases, results pages, court filings, Hansard, full video) as much as possible — see BREAKING_SOURCES.md.**
 
 **ALSO read tools/runbooks/BREAKING_TEMPLATE.md: every Breaking story, now and in the future, uses that layout (photo with caption first, newest headline, tabs, latest reports, no "How this developed" button). Build any new Breaking story that way in the same run.**

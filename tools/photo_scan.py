@@ -194,8 +194,9 @@ def breaking_stories(index):
         for part in re.split(r"\n    \{ id: ", block)[1:]:
             story = re.search(r"story: '([^']*)'", part)
             until = re.search(r"until: '([^']*)'", part)
-            if until and to_utc(until.group(1)) and to_utc(until.group(1)) < now:
-                continue  # ended: no longer Breaking
+            later = [to_utc(x) for x in re.findall(r"\{ at: '([^']*)'", part)]
+            if until and to_utc(until.group(1)) and to_utc(until.group(1)) < now and not any(t and t > now for t in later):
+                continue  # ended, with nothing scheduled later: no longer Breaking
             links = re.findall(r"url: '(https?://[^']+)'", part) + re.findall(r"'(https?://[^']+)'", part)
             cap = re.search(r"caption: '([^']*)'", part)
             out.append({"where": "Breaking event (UPNEXT " + part.split(",")[0].strip("' ") + ")",

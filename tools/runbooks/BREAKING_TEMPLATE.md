@@ -32,7 +32,7 @@ The other runbooks give the detail behind each part: house rules 12–22 in full
    - **Not yet known** holds 2–4 one-line open questions, each with a source.
      - Top story: .bk-keyfacts ul.ky. Event: UPNEXT unknowns.
      - The full paragraphs are folded below.
-   - **Coming up** (events only) holds every scheduled update with its Eastern time, local time and "in N min / Now / Done", each cited, then the watch buttons.
+   - **Coming up** (events only) holds every scheduled update still ahead, with its Eastern time, local time and "in N min / Now" (or "Expected" for a rough time), each cited, then the watch buttons. Finished items fold into "Earlier". Keep it current every run with `python3 tools/schedule_check.py --page index.html` and set scheduleChecked.
    - **Timeline** holds "How this story developed", newest first, one or two short sentences per line, each with its real time and source.
      - Top story: .tl. Event: UPNEXT developed.
      - Long-running stories also get a folded "Further back: how we got here" (TOP_BACKGROUND, or UPNEXT background). Truly breaking stories (a sudden fire, crash, attack or disaster) get NO "further back".

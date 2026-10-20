@@ -946,6 +946,13 @@ header.site { border-bottom: 0; }
 .bk-event .ev-tag { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
 .bk-event .ev-count { font-size: 14px; font-weight: 700; color: #FFFFFF; font-variant-numeric: tabular-nums; }
 .bk-event .ev-sched { position: relative; z-index: 3; margin: 0 0 18px; padding: 12px 16px; background: rgba(15, 11, 25, .32); border-left: 4px solid #FFFFFF; max-width: 760px; }
+.bk-event .ev-sched .sch-none { margin: 4px 0 0; font-size: 15px; color: #F6E1E8; }
+.bk-event .ev-sched .sch-chk { margin: 8px 0 0; font-size: 12px; color: #F6E1E8; }
+.bk-event .ev-sched details.sch-done { margin-top: 8px; }
+.bk-event .ev-sched details.sch-done summary { cursor: pointer; font-size: 13px; font-weight: 700; color: #FFFFFF; text-decoration: underline; text-underline-offset: 3px; list-style: none; }
+.bk-event .ev-sched details.sch-done summary::-webkit-details-marker { display: none; }
+.bk-event .ev-sched details.sch-done summary::after { content: ' ▾'; }
+.bk-event .ev-sched details.sch-done[open] summary::after { content: ' ▴'; }
 .bk-event .ev-sched h3 { margin: 0 0 8px; font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #FFFFFF; }
 .bk-event .ev-sched ol { list-style: none; margin: 0; padding: 0; }
 .bk-event .ev-sched li { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 2px 12px; padding: 8px 0; border-top: 1px solid rgba(255,255,255,.2); font-size: 15px; line-height: 1.4; color: #FFFFFF; }
@@ -2348,7 +2355,7 @@ header.site { border-bottom: 0; }
   window.PAL_TOP_BACKGROUND = TOP_BACKGROUND;
   const EVENT_LEAD_HOURS = 2;
   const UPNEXT = [
-    { id: 'alberta-referendum-2026', story: 'Alberta referendum', devName: 'the Alberta referendum', photoChecked: '2026-10-20T09:20:00-04:00', start: '2026-10-19T21:00:00-04:00', until: '2026-10-20T10:30:00-04:00',
+    { id: 'alberta-referendum-2026', story: 'Alberta referendum', devName: 'the Alberta referendum', scheduleChecked: '2026-10-20T09:26:00-04:00', photoChecked: '2026-10-20T09:20:00-04:00', start: '2026-10-19T21:00:00-04:00', until: '2026-10-20T10:30:00-04:00',
       keyfacts: [
         ['10', 'questions on the ballot; Question 10 asks whether Alberta stays in Canada or starts toward a binding vote on separating', 'CTV News', 'https://www.ctvnews.ca/edmonton/article/delays-at-more-than-100-alberta-polling-stations-push-back-referendum-results-live-updates-here/'],
         ['1.36M', 'votes cast early, by advance poll (837,791) or special ballot (519,082), 43.1 per cent turnout before election day', 'Elections Alberta', 'https://www.elections.ab.ca/resources/media/news-releases/2026-10-19-2/'],
@@ -2477,7 +2484,10 @@ header.site { border-bottom: 0; }
         { at: '2026-10-20T00:00:00-04:00', local: '10 p.m. MT', text: 'Last polls close; Elections Alberta begins releasing results, Question 10 first, counted by hand', outlet: 'CTV News', url: 'https://www.ctvnews.ca/edmonton/article/delays-at-more-than-100-alberta-polling-stations-push-back-referendum-results-live-updates-here/' },
         { at: '2026-10-20T00:00:00-04:00', local: '10 p.m. MT', text: 'CTV News referendum special: Tara Nelson anchors, with former premiers Jason Kenney and Rachel Notley', outlet: 'CTV News', url: 'https://www.ctvnews.ca/calgary/article/where-to-watch-ctv-news-alberta-referendum-special-coverage/' },
         { at: '2026-10-20T03:00:00-04:00', to: '2026-10-20T06:00:00-04:00', local: '1–4 a.m. MT Tuesday', text: 'Results on Question 10, the separation question, expected, Elections Alberta says', outlet: 'CTV News', url: 'https://www.ctvnews.ca/edmonton/article/delays-at-more-than-100-alberta-polling-stations-push-back-referendum-results-live-updates-here/' },
-        { at: '2026-10-20T07:30:00-04:00', local: '5:30 a.m. MT Tuesday', text: 'CBC’s Alberta Morning on what comes next, on CBC Radio One and CBC TV in Alberta', outlet: 'CBC News', url: 'https://www.cbc.ca/news/canada/calgary/community/cbc-alberta-referendum-coverage-9.7373301' }
+        { at: '2026-10-20T07:30:00-04:00', local: '5:30 a.m. MT Tuesday', text: 'CBC’s Alberta Morning on what comes next, on CBC Radio One and CBC TV in Alberta', outlet: 'CBC News', url: 'https://www.cbc.ca/news/canada/calgary/community/cbc-alberta-referendum-coverage-9.7373301' },
+        { at: '2026-10-20T20:45:00-04:00', local: '6:45 p.m. MT', text: 'Premier Danielle Smith addresses Albertans live on the referendum results and “where our province goes from here”', outlet: 'CTV News', url: 'https://www.ctvnews.ca/edmonton/article/albertans-reject-separation-in-historic-vote-ctv-news-projects-live-updates/' },
+        { at: '2026-10-21T08:00:00-04:00', approx: 'Wed morning', text: 'Elections Alberta announces results for the first nine questions', outlet: 'CTV News', url: 'https://www.ctvnews.ca/edmonton/article/albertans-reject-separation-in-historic-vote-ctv-news-projects-live-updates/' },
+        { at: '2026-10-29T12:00:00-04:00', approx: 'Thu Oct. 29', text: 'Official results, Elections Alberta says', outlet: 'Elections Alberta', url: 'https://www.elections.ab.ca/resources/media/news-releases/2026-10-19-2/' }
       ] }
   ];
   window.PAL_UPNEXT = UPNEXT; window.PAL_EVENT_LEAD_HOURS = EVENT_LEAD_HOURS;
@@ -2531,18 +2541,33 @@ header.site { border-bottom: 0; }
     }, true);
     const render = () => {
       const now = Date.now();
-      const ev = UPNEXT.concat(autoEvents()).filter((e) => !isNaN(T(e.start)) && now >= T(e.start) - EVENT_LEAD_HOURS * 3600000 && now <= T(e.until)).sort((a, b) => T(a.start) - T(b.start))[0];
+      // An event is Breaking from EVENT_LEAD_HOURS before it starts until it ends, and again from EVENT_LEAD_HOURS
+      // before any later scheduled item (e.g. a premier's address the next evening) until that item is over.
+      const live = (e) => (!isNaN(T(e.start)) && now >= T(e.start) - EVENT_LEAD_HOURS * 3600000 && now <= T(e.until))
+        || (e.schedule || []).some((x) => !x.approx && now >= T(x.at) - EVENT_LEAD_HOURS * 3600000 && now <= (T(x.to || '') || T(x.at) + 3600000));
+      const ev = UPNEXT.concat(autoEvents()).filter(live).sort((a, b) => T(a.start) - T(b.start))[0];
       if (!ev) { box.hidden = true; box.innerHTML = ''; return; }
       const started = now >= T(ev.start);
       const today = day(now);
-      const rows = (ev.schedule || []).slice().sort((a, b) => T(a.at) - T(b.at)).map((x) => {
+      // Hannah: "Coming up" must never be old. Upcoming and on-now items come first; finished ones fold into
+      // "Earlier"; with nothing left it says so (and the next run must look for new times). approx = a time the
+      // source gives only roughly ("Wednesday morning"): shown as written, never as a countdown.
+      const item = (x) => {
         const a = T(x.at), z = T(x.to || '') || a;
-        const state = now > (x.to ? z : a + 60000) ? 'done' : (now >= a ? 'now' : 'next');
-        const when = fmt(a) + (x.to ? '–' + fmt(z) : '') + ' ET' + (day(a) !== today ? ' ' + day(a) : '');
-        const tag = state === 'done' ? 'Done' : state === 'now' ? 'Now' : 'in ' + left(a - now);
-        return '<li class="' + state + '"><time>' + esc(when) + '<small>' + esc(tag) + (x.local ? ' · ' + esc(x.local) : '') + '</small></time><span>' + esc(x.text) + ' <a href="' + esc(x.url) + '" target="_blank" rel="noopener">' + esc(x.outlet) + ' &#8599;</a></span></li>';
-      }).join('');
-      const nets = (typeof COMING !== 'undefined' ? COMING : []).filter((c) => (c.story || '').indexOf(ev.story) === 0);
+        const state = now > (x.to ? z : a + (x.approx ? 6 * 3600000 : 60000)) ? 'done' : (now >= a ? 'now' : 'next');
+        const when = x.approx ? x.approx : fmt(a) + (x.to ? '–' + fmt(z) : '') + ' ET' + (day(a) !== today ? ' ' + day(a) : '');
+        const tag = state === 'done' ? 'Done' : state === 'now' ? 'Now' : x.approx ? 'Expected' : 'in ' + left(a - now);
+        return { state, html: '<li class="' + state + '"><time>' + esc(when) + '<small>' + esc(tag) + (x.local ? ' · ' + esc(x.local) : '') + '</small></time><span>' + esc(x.text) + ' <a href="' + esc(x.url) + '" target="_blank" rel="noopener">' + esc(x.outlet) + ' &#8599;</a></span></li>' };
+      };
+      const its = (ev.schedule || []).slice().sort((a, b) => T(a.at) - T(b.at)).map(item);
+      const ahead = its.filter((x) => x.state !== 'done'), past = its.filter((x) => x.state === 'done').reverse();
+      const chk = T(ev.scheduleChecked || ev.photoChecked || '');
+      const rows = its.length ? (ahead.length ? ahead.map((x) => x.html).join('') : '<li class="sch-none-li"><p class="sch-none">Nothing else is scheduled yet. We look for new times every 15 minutes.</p></li>')
+        + '</ol>' + (past.length ? '<details class="sch-done"><summary>Earlier (' + past.length + ' done)</summary><ol>' + past.map((x) => x.html).join('') + '</ol></details>' : '')
+        + (isNaN(chk) ? '' : '<p class="sch-chk">Times checked ' + esc(fmt(chk)) + ' ET</p>') + '<ol hidden>' : '';
+      if (its.length && !ahead.length && (isNaN(chk) || now - chk > 30 * 60000)) console.warn('Coming up for ' + ev.story + ' has nothing ahead and was last checked over 30 minutes ago: run tools/schedule_check.py --page index.html');
+      // watch buttons only for coverage that has not ended
+      const nets = (typeof COMING !== 'undefined' ? COMING : []).filter((c) => (c.story || '').indexOf(ev.story) === 0 && now <= (T(c.until || '') || (T(c.when) + 3 * 3600000)));
       const btns = nets.map((c) => '<a href="' + esc(c.url) + '" target="_blank" rel="noopener">' + esc(c.net) + '<small>' + esc(fmt(T(c.when)) + ' ET' + (day(T(c.when)) !== today ? ' ' + day(T(c.when)) : '')) + '</small></a>').join('');
       box.innerHTML = '<div class="bk-text"><div class="ev-media"><div class="bart ev-art"></div></div>'
         + '<div class="ev-tag"><span class="tag">Breaking</span><span class="ev-count">' + esc(started ? 'Live coverage under way' : 'Live coverage begins in ' + left(T(ev.start) - now)) + '</span></div>'

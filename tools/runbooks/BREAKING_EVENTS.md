@@ -42,3 +42,9 @@ Invent a time, a network, a speaker or a link. Show an event whose time no relia
 
 ## Tabs (required)
 Every Breaking event shows the same tabs as the top story: Latest · Coming up · Key facts · Not yet known · Timeline. Give each UPNEXT entry `keyfacts: [['number', 'one-line fact', 'Outlet', 'url'], ...]` (3–6, number first) and `unknowns: [['one-line open question', 'Outlet', 'url'], ...]` (2–4), from real reports, and update them every run (full-update.md house rule 12c).
+
+## Keeping "Coming up" current (every run)
+Run `python3 tools/schedule_check.py --page index.html` and follow the "COMING UP IS NEVER OLD" step in full-update.md / live-check.md.
+- Schedule items can carry `approx` (a rough time, shown as written).
+- Each UPNEXT entry carries `scheduleChecked`.
+- An event shows again 2 hours before any later scheduled item, even after its `until`.
