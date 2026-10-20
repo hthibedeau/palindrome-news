@@ -50,6 +50,7 @@ The other runbooks give the detail behind each part: house rules 12–22 in full
 
 ## Around it
 - **One story, one place.** While a story is Breaking or Developing, the page hides its repeats from the other news sections and brings them back when it leaves. Opinion, analysis and video stay.
+- **Nothing is lost.** Whatever a hidden repeat says that the story lacks is carried into the story's Timeline tab under "Also on this story"; runs then move it into the real timeline. A Breaking event stays as "Developing" for 12 hours after its live window or its last scheduled item (keepUntil to change that).
 - **"Live coverage now" is its own band**, right below the Breaking stories, separate from them. It holds live video, live blogs and "Coming up live" tiles, named by story, each with a picture.
 - **Always watching for new breaking news, and primary sources first** (BREAKING_SOURCES.md): every run scans all outlets and official alert channels for anything new, and cites official releases, results pages, court filings, Hansard and full video directly, with the newsrooms that reported them.
 - **Every source, every run.**

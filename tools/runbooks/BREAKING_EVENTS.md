@@ -48,3 +48,6 @@ Run `python3 tools/schedule_check.py --page index.html` and follow the "COMING U
 - Schedule items can carry `approx` (a rough time, shown as written).
 - Each UPNEXT entry carries `scheduleChecked`.
 - An event shows again 2 hours before any later scheduled item, even after its `until`.
+
+## After the live window
+An event stays on the page as "Developing" for EVENT_KEEP_HOURS (12) after `until` or after its last scheduled item, whichever is later. Its tabs and its How this developed block go with it. Set `keepUntil: ISO` to change that.

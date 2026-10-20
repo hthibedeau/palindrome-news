@@ -43,6 +43,12 @@ Your part, every run:
 2. Put new developments on a Breaking story in its timeline, not in the wire.
 3. If the lead is the Breaking story, the page hides the lead and the wire moves up. Give the lead a different story when you can.
 4. Check what was hidden with `document.documentElement.dataset.dupHidden` (a count) and `.dup-hidden` (the elements) in the Playwright check.
+- **Nothing is lost** (Hannah: "make sure we don't lose anything from the breaking or developing stories"):
+  - When a repeat is hidden, anything in it that the Breaking story does not already link to (the exact report or live-blog post) or say is carried into the story itself. It goes in the Timeline tab under "Also on this story", with its time, words, outlet and link.
+  - Each run, move what is in "Also on this story" into the story's real timeline, key facts or schedule, with its real time. The fold is a safety net, not the place for news.
+- **A Breaking event no longer vanishes when its live window ends.**
+  - It stays as "Developing", with "Next: …" from its schedule, with its tabs, timeline, key facts and How this developed block, for 12 hours after its window or after its last scheduled item, whichever is later (EVENT_KEEP_HOURS).
+  - Set `keepUntil` on the UPNEXT entry to keep it longer, or to end it sooner once the story is folded into the lead or the top slot.
 
 **Every run: check ALL outlets and official alert channels for new breaking news (not only the stories already on the page), and use primary sources (official releases, results pages, court filings, Hansard, full video) as much as possible — see BREAKING_SOURCES.md.**
 

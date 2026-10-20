@@ -2359,6 +2359,7 @@ header.site { border-bottom: 0; }
   const TOP_BACKGROUND = [];
   window.PAL_TOP_BACKGROUND = TOP_BACKGROUND;
   const EVENT_LEAD_HOURS = 2;
+  const EVENT_KEEP_HOURS = 12; // after its live window an event stays as "Developing" this long (or until keepUntil)
   const UPNEXT = [
     { id: 'alberta-referendum-2026', story: 'Alberta referendum', devName: 'the Alberta referendum', match: ['referendum', 'separation', 'separatist', 'Question 10', 'Albertans vote', 'Alberta’s vote', 'Elections Alberta'], scheduleChecked: '2026-10-20T09:50:00-04:00', photoChecked: '2026-10-20T09:50:00-04:00', start: '2026-10-19T21:00:00-04:00', until: '2026-10-20T10:30:00-04:00',
       keyfacts: [
@@ -2498,7 +2499,7 @@ header.site { border-bottom: 0; }
         { at: '2026-10-29T12:00:00-04:00', approx: 'Thu Oct. 29', text: 'Official results, Elections Alberta says', outlet: 'Elections Alberta', url: 'https://www.elections.ab.ca/resources/media/news-releases/2026-10-19-2/' }
       ] }
   ];
-  window.PAL_UPNEXT = UPNEXT; window.PAL_EVENT_LEAD_HOURS = EVENT_LEAD_HOURS;
+  window.PAL_UPNEXT = UPNEXT; window.PAL_EVENT_LEAD_HOURS = EVENT_LEAD_HOURS; window.PAL_EVENT_KEEP_HOURS = EVENT_KEEP_HOURS;
   (function breakingEvent() {
     const box = document.getElementById('bkEvent'); if (!box) return;
     // Safety net: any scheduled live coverage in COMING (not already shown in the top slot) with no UPNEXT entry
@@ -2553,7 +2554,14 @@ header.site { border-bottom: 0; }
       // before any later scheduled item (e.g. a premier's address the next evening) until that item is over.
       const live = (e) => (!isNaN(T(e.start)) && now >= T(e.start) - EVENT_LEAD_HOURS * 3600000 && now <= T(e.until))
         || (e.schedule || []).some((x) => !x.approx && now >= T(x.at) - EVENT_LEAD_HOURS * 3600000 && now <= (T(x.to || '') || T(x.at) + 3600000));
-      const ev = UPNEXT.concat(autoEvents()).filter(live).sort((a, b) => T(a.start) - T(b.start))[0];
+      // Nothing is lost when the live window ends (Hannah: "make sure we don't lose anything from the breaking or
+      // developing stories"): the event stays, marked "Developing", for EVENT_KEEP_HOURS after its window (or until
+      // keepUntil, if a run sets one), with its timeline, key facts and coming-up times intact.
+      const lastEnd = (e) => Math.max.apply(null, [T(e.until)].concat((e.schedule || []).filter((x) => !x.approx && T(x.at) <= now).map((x) => T(x.to || '') || T(x.at) + 3600000)).filter((x) => !isNaN(x)));
+      const kept = (e) => !isNaN(T(e.start)) && now >= T(e.start) && now <= (T(e.keepUntil || '') || (lastEnd(e) + EVENT_KEEP_HOURS * 3600000));
+      const all = UPNEXT.concat(autoEvents());
+      const ev = all.filter(live).sort((a, b) => T(a.start) - T(b.start))[0] || all.filter(kept).sort((a, b) => T(b.until) - T(a.until))[0];
+      const inWin = !!ev && live(ev);
       if (!ev) { box.hidden = true; box.innerHTML = ''; return; }
       const started = now >= T(ev.start);
       const today = day(now);
@@ -2569,6 +2577,8 @@ header.site { border-bottom: 0; }
       };
       const its = (ev.schedule || []).slice().sort((a, b) => T(a.at) - T(b.at)).map(item);
       const ahead = its.filter((x) => x.state !== 'done'), past = its.filter((x) => x.state === 'done').reverse();
+      const nx = (ev.schedule || []).slice().sort((a, b) => T(a.at) - T(b.at)).find((x) => now < (T(x.to || '') || T(x.at) + 60000));
+      const nextUp = nx ? (nx.approx ? nx.approx : fmt(T(nx.at)) + ' ET' + (day(T(nx.at)) !== today ? ' ' + day(T(nx.at)) : '')) + ' · ' + nx.text.split(/[,;(]/)[0].slice(0, 70) : '';
       const chk = T(ev.scheduleChecked || ev.photoChecked || '');
       const rows = its.length ? (ahead.length ? ahead.map((x) => x.html).join('') : '<li class="sch-none-li"><p class="sch-none">Nothing else is scheduled yet. We look for new times every 15 minutes.</p></li>')
         + '</ol>' + (past.length ? '<details class="sch-done"><summary>Earlier (' + past.length + ' done)</summary><ol>' + past.map((x) => x.html).join('') + '</ol></details>' : '')
@@ -2578,7 +2588,7 @@ header.site { border-bottom: 0; }
       const nets = (typeof COMING !== 'undefined' ? COMING : []).filter((c) => (c.story || '').indexOf(ev.story) === 0 && now <= (T(c.until || '') || (T(c.when) + 3 * 3600000)));
       const btns = nets.map((c) => '<a href="' + esc(c.url) + '" target="_blank" rel="noopener">' + esc(c.net) + '<small>' + esc(fmt(T(c.when)) + ' ET' + (day(T(c.when)) !== today ? ' ' + day(T(c.when)) : '')) + '</small></a>').join('');
       box.innerHTML = '<div class="bk-text"><div class="ev-media"><div class="bart ev-art"></div></div>'
-        + '<div class="ev-tag"><span class="tag">Breaking</span><span class="ev-count">' + esc(started ? 'Live coverage under way' : 'Live coverage begins in ' + left(T(ev.start) - now)) + '</span></div>'
+        + '<div class="ev-tag"><span class="tag">' + (inWin ? 'Breaking' : 'Developing') + '</span><span class="ev-count">' + esc(!inWin ? (nextUp ? 'Next: ' + nextUp : 'Live coverage has ended') : started ? 'Live coverage under way' : 'Live coverage begins in ' + left(T(ev.start) - now)) + '</span></div>'
         + '<h2><a class="card-link" href="' + esc(ev.url) + '" target="_blank" rel="noopener">' + esc(ev.h) + '</a></h2>'
         + '<p class="first"><span class="bl"><b>Latest</b> <a href="' + esc(ev.url) + '" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline"><strong>' + esc(ev.outlet) + '</strong></a>' + (ev.urlWhen ? ' · ' + esc(ev.urlWhen) : '') + '</span></p>'
         + evTabsHTML(ev, rows, btns, started)
@@ -2588,6 +2598,7 @@ header.site { border-bottom: 0; }
         .concat((typeof LIVENOW !== 'undefined' ? LIVENOW : []).filter((l) => (l.story || '').indexOf(ev.story.split(' ')[0]) === 0).map((l) => ({ src: l.file || l.img, credit: l.net })));
       imageChain(box.querySelector('.bart'), pics, 'ballot', ev.alt || ev.h);
       box.hidden = false;
+      if (window.PAL_oneStoryOnePlace) window.PAL_oneStoryOnePlace();
     };
     render(); setInterval(render, 60000);
   })();
@@ -3829,7 +3840,9 @@ function etAgeMs(label) {
   const now = Date.now(), lead = (window.PAL_EVENT_LEAD_HOURS || 2) * 3600000;
   (window.PAL_UPNEXT || []).forEach((e) => {
     const st = Date.parse(e.start), un = Date.parse(e.until);
-    if (!e.developed || !e.developed.length || isNaN(st) || now < st - lead || now > un) return;
+    const ends = [un].concat((e.schedule || []).filter((x) => !x.approx && Date.parse(x.at) <= now).map((x) => Date.parse(x.to || '') || Date.parse(x.at) + 3600000)).filter((x) => !isNaN(x));
+    const keep = Date.parse(e.keepUntil || '') || (Math.max.apply(null, ends) + (window.PAL_EVENT_KEEP_HOURS || 12) * 3600000);
+    if (!e.developed || !e.developed.length || isNaN(st) || now < st - lead || now > keep) return;
     blocks.push({ id: 'developed-' + e.id, name: e.devName || e.story, back: '#bkEvent', html: rowsOf(e.developed), bg: e.background || [] });
   });
   const items = [...document.querySelectorAll('#breaking .tl li')];
@@ -3992,6 +4005,8 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
 // one of them), or whose text names the story (section#breaking data-match, UPNEXT match: [...], else the story name).
 // Kept on purpose: Live coverage, How this developed, Watch (video), opinion and analysis (Editorials, Think tanks,
 // Today's reading, On the record, Canada and the U.S.), the Story board and the corrections log.
+// Nothing is lost: whatever a hidden item says that the Breaking story does not already link to is carried into the
+// story itself, in its Timeline tab, under "Also on this story" (time, words, outlet and link).
 (function oneStoryOnePlace() {
   const ZONES = [
     ['.lead > article', 'lead'], ['#latestList > li', 'wire'], ['.tk-track > li', 'ticker'], ['#bds > *', 'breakdown'],
@@ -3999,6 +4014,8 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     ['#mrList > li', 'mostread'], ['aside.watch li', 'whattowatch'], ['ol.sn > li', 'smaller']
   ];
   const norm = (u) => { try { const x = new URL(u, location.href); return (x.host.replace(/^www\./, '') + x.pathname).replace(/\/$/, '').toLowerCase(); } catch (e) { return ''; } };
+  // full = the exact report or live-blog post (keeps ?id=…), so a post the story does not link to is still carried
+  const full = (u) => { try { const x = new URL(u, location.href); return (x.host.replace(/^www\./, '') + x.pathname).replace(/\/$/, '').toLowerCase() + (x.search || ''); } catch (e) { return ''; } };
   const words = (name) => { const w = (name || '').replace(/^the\s+/i, '').trim(); return w ? [w] : []; };
   const rxOf = (list) => list.length ? new RegExp(list.map((x) => x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/['’]/g, "['’]")).join('|'), 'i') : null;
   function active() {
@@ -4017,27 +4034,72 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     }
     return out;
   }
+  const escH = (x) => String(x).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  // What a hidden item says, so nothing it carries is lost: time, words, outlet, link
+  let NAMES = null;
+  const outletName = (u) => {
+    if (!NAMES) { NAMES = {}; (window.PAL_STORY || []).forEach((e) => [e.first, e.latest, e.sub].forEach((x) => { if (x && x[0] && x[1]) { try { const h = new URL(x[1]).host.replace(/^www\./, ''); NAMES[h] = NAMES[h] || x[0].replace(/\s*\(.*\)$/, ''); } catch (er) {} } })); document.querySelectorAll('a[href^="http"]').forEach((x) => { const t = (x.textContent || '').trim(); if (t.length > 1 && t.length < 32 && !/^[\d#]/.test(t) && !/[↗↑↓]/.test(t)) { try { const h = new URL(x.href).host.replace(/^www\./, ''); NAMES[h] = NAMES[h] || t; } catch (e) {} } }); }
+    try { const h = new URL(u).host.replace(/^www\./, ''); return NAMES[h] || h; } catch (e) { return ''; }
+  };
+  function digest(orig) {
+    // read a copy without the credit lines the page adds ("Latest …", "First reported by …")
+    const el = orig.cloneNode(true); el.querySelectorAll('.firstby, .tl-latest, .tl-first, .meter-slot, .chips-static, .row-meta').forEach((x) => x.remove());
+    if (orig.matches('aside.watch li')) { // What to watch: the date and the item, without its credit lines
+      const w = el.querySelector('.when'), b = el.querySelector('.what b'), sp = el.querySelector('.what span'), a0 = el.querySelector('a[href^="http"]');
+      if (!a0) return null;
+      return { when: w ? w.textContent.trim() : '', text: ((b ? b.textContent.trim() : '') + (sp && sp.textContent.trim() ? ': ' + sp.textContent.trim() : '')).slice(0, 260), outlet: outletName(a0.href), url: a0.href };
+    }
+    const a = el.querySelector('a.card-link, h1 a, h2 a, h3 a, h4 a, a.hed') || [...el.querySelectorAll('a[href^="http"]')].find((x) => (x.textContent || '').trim().length > 20) || el.querySelector('a[href^="http"]');
+    if (!a) return null;
+    const head = el.querySelector('h1, h2, h3, h4, .hed');
+    let text = ((head && head.textContent) || (a.textContent.trim().length > 20 ? a.textContent : el.textContent) || '').replace(/\s+/g, ' ').trim();
+    const t = el.querySelector('time'); const when = t ? t.textContent.replace(/\s+/g, ' ').trim() : '';
+    if (when && text.indexOf(when) === 0) text = text.slice(when.length).trim();
+    const k = el.querySelector('.k'); if (k && text.indexOf(k.textContent.trim()) === 0) text = text.slice(k.textContent.trim().length).trim();
+    let outlet = ((el.querySelector('.o, .src') || {}).textContent || '').replace(/^First reported by\s*/i, '').split('·')[0].trim();
+    if (!outlet || outlet.length > 40) outlet = outletName(a.href);
+    return { when, text: text.slice(0, 260), outlet, url: a.href };
+  }
   function run() {
     document.querySelectorAll('.dup-hidden').forEach((el) => { el.hidden = false; el.classList.remove('dup-hidden'); });
+    document.querySelectorAll('.also-on').forEach((el) => el.remove());
     const lead = document.querySelector('.lead'); if (lead) lead.classList.remove('lead-gone');
-    const stories = active(); if (!stories.length) return;
-    const urls = new Set();
+    const stories = active(); if (!stories.length) { document.documentElement.dataset.dupHidden = '0'; return; }
     stories.forEach((st) => {
-      st.el.querySelectorAll('a[href^="http"]').forEach((a) => urls.add(norm(a.href)));
-      st.extra.forEach((u) => u && urls.add(norm(u)));
+      st.shown = new Set(); st.urls = new Set();
+      st.el.querySelectorAll('a[href^="http"]').forEach((a) => { st.shown.add(full(a.href)); st.urls.add(norm(a.href)); });
+      st.text = (st.el.textContent || '').replace(/\s+/g, ' ').toLowerCase();
+      st.extra.forEach((u) => u && st.urls.add(norm(u)));
+      (window.PAL_STORY || []).forEach((e) => {
+        const all = [e.first && e.first[1], e.latest && e.latest[1], e.sub && e.sub[1]].concat(e.match || []).filter(Boolean).map(norm);
+        if (all.some((u) => st.urls.has(u))) all.forEach((u) => st.urls.add(u));
+      });
+      st.urls.delete(''); st.rx = rxOf(st.match); st.also = [];
     });
-    (window.PAL_STORY || []).forEach((e) => {
-      const all = [e.first && e.first[1], e.latest && e.latest[1], e.sub && e.sub[1]].concat(e.match || []).filter(Boolean).map(norm);
-      if (all.some((u) => urls.has(u))) all.forEach((u) => urls.add(u));
-    });
-    urls.delete('');
-    const rx = rxOf([].concat.apply([], stories.map((st) => st.match)));
-    let n = 0;
+    let n = 0; const seen = new Set();
     ZONES.forEach(([sel]) => document.querySelectorAll(sel).forEach((el) => {
-      if (el.closest('#breaking, #bkEvent, #liveCoverage, #developed')) return;
-      const hit = [...el.querySelectorAll('a[href^="http"]')].some((a) => urls.has(norm(a.href))) || (rx && rx.test(el.textContent || ''));
-      if (hit) { el.hidden = true; el.classList.add('dup-hidden'); n++; }
+      if (el.closest('#breaking, #bkEvent, #liveCoverage, #developed') || el.classList.contains('dup-hidden')) return;
+      const links = [...el.querySelectorAll('a[href^="http"]')].map((a) => norm(a.href));
+      const st = stories.find((x) => links.some((u) => x.urls.has(u)) || (x.rx && x.rx.test(el.textContent || '')));
+      if (!st) return;
+      el.hidden = true; el.classList.add('dup-hidden'); n++;
+      // Anything the Breaking story does not already link to is carried into it, under "Also on this story"
+      if (el.getAttribute('aria-hidden') === 'true') return; // ticker copies
+      const fulls = [...el.querySelectorAll('a[href^="http"]')].map((a) => full(a.href));
+      if (fulls.length && fulls.every((u) => st.shown.has(u))) return; // the story already links to this exact report or post
+      const d = digest(el); if (!d) return;
+      const probe = d.text.toLowerCase().slice(0, 60); if (probe.length > 30 && st.text.indexOf(probe) >= 0) return; // already says it
+      const key = norm(d.url) + '|' + d.text.slice(0, 40); if (seen.has(key)) return; seen.add(key);
+      st.also.push(d);
     }));
+    stories.forEach((st) => {
+      if (!st.also.length) return;
+      const box = document.createElement('details'); box.className = 'tab-more also-on';
+      box.innerHTML = '<summary>Also on this story (' + st.also.length + ')</summary><div class="tl"><ol>' + st.also.map((d) => '<li>' + (d.when ? '<time>' + escH(d.when) + '</time>' : '') + escH(d.text) + ' (<a href="' + escH(d.url) + '" target="_blank" rel="noopener">' + escH(d.outlet) + '</a>)</li>').join('') + '</ol></div>';
+      const panes = [...st.el.querySelectorAll('.bk-pane')];
+      const home = panes.find((p) => p.querySelector('.tl')) || panes[panes.length - 1] || st.el.querySelector('.bk-text') || st.el;
+      home.appendChild(box);
+    });
     if (lead) { const art = lead.querySelector(':scope > article'); if (art && art.hidden) lead.classList.add('lead-gone'); }
     document.documentElement.dataset.dupHidden = String(n);
   }
