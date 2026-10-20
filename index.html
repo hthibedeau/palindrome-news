@@ -951,6 +951,15 @@ header.site { border-bottom: 0; }
 /* Live video in the Breaking box: a YouTube player when the network streams there, otherwise a button to the site that is playing it */
 .bk-live { position: relative; z-index: 3; margin: 4px 0 16px; max-width: 760px; }
 .bk-chan { position: relative; z-index: 3; margin: 0 0 18px; max-width: 760px; }
+/* Live coverage now: its own band, separate from the Breaking section (Hannah's rule) */
+.livecov { margin: 20px 0; padding: clamp(14px, 2.4vw, 22px); background: #2B1B54; color: #FFFFFF; border-radius: 2px; }
+.livecov .bk-chan { margin: 0; max-width: none; }
+.livecov .bk-chan .chan-row { margin-bottom: 14px; }
+@media (min-width: 900px) { .livecov .bk-chan .chan-row { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.livecov .chan-always a { color: #FFFFFF; }
+.livecov .chan-what { display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; font-size: 13.5px; line-height: 1.4; }
+.livecov .chan { justify-content: flex-start; }
+.livecov .chan-go { margin-top: auto; }
 /* Scheduled live event for the top story, shown at the top of the slot (Hannah’s rule) */
 .bk-next { position: relative; z-index: 3; margin: 4px 0 16px; max-width: 760px; padding: 14px 16px; background: rgba(15, 11, 25, .32); border-left: 4px solid #FFFFFF; }
 .bk-next .nx-when { display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #FFFFFF; }
@@ -1085,7 +1094,7 @@ header.site { border-bottom: 0; }
       </div>
     </div>
     <div class="masthead">
-      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 9:27 p.m. ET Monday</b></span></div>
+      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 9:29 p.m. ET Monday</b></span></div>
       <div class="plate">
         <span class="stamp" id="stamp" hidden>Late edition</span>
         <a class="logo" href="#top">Palindrome <em>News</em></a>
@@ -1162,7 +1171,6 @@ header.site { border-bottom: 0; }
         <p class="first"><span class="bl"><b>Latest</b> <a href="https://www.ctvnews.ca/edmonton/article/four-dead-dozens-wounded-in-cfb-wainwright-fire-pm-says-live-here/" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline"><strong>CTV News</strong></a> · Sun 12:58 p.m.</span><span class="bl">First reported by <a href="https://www.ctvnews.ca/edmonton/article/fatalities-and-injuries-after-explosion-and-fire-at-canadian-forces-base-in-alberta/" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline"><strong>CTV News</strong></a> · Sat 8:16 p.m.</span></p>
         <div class="bk-next" id="bkNext" hidden></div>
         <div class="bk-live" id="bkLive" hidden></div>
-        <div class="bk-chan" id="bkChannels" hidden></div>
         <p class="bk-dek">A fast-moving grass fire swept a training area at the Alberta base Saturday, killing four soldiers; 39 were taken to hospital, 19 in critical condition (<a href="https://www.ctvnews.ca/edmonton/article/what-happened-at-cfb-wainwright-4-soldiers-dead-39-wounded-here-are-the-confirmed-facts/" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline">CTV News</a>). Chief of the Defence Staff Gen. Jennie Carignan says three investigations are under way and the board of inquiry’s findings will be released publicly (<a href="https://www.ctvnews.ca/politics/article/chief-of-the-defence-staff-commits-to-publicly-release-cfb-wainwright-inquiry-findings/" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline">CTV News</a>). The cause is not yet known.</p>
         <a class="bk-dev-btn" href="#developed-top">How this developed <span aria-hidden="true">&#8595;</span></a>
         <p class="acc-h">Latest reports</p>
@@ -1273,6 +1281,10 @@ header.site { border-bottom: 0; }
           </ol>
         </div>
       </div>
+    </section>
+
+    <section class="livecov" id="liveCoverage" aria-label="Live coverage now" hidden>
+      <div class="bk-chan" id="bkChannels" hidden></div>
     </section>
   </div>
 
@@ -1488,6 +1500,7 @@ header.site { border-bottom: 0; }
   <section id="corrections" class="ruled" aria-labelledby="cx-h" style="scroll-margin-top: 64px">
     <div class="band-head"><h2 id="cx-h">Corrections &amp; updates</h2><p>Every change we make to a story, with the time. Nothing is changed quietly.</p></div>
     <ol class="log">
+      <li><time>Mon 9:29 p.m.</time><span class="kind">Update</span><span><b>Live coverage now</b> has its own band, separate from the Breaking section, right below it: live video, live updates, what’s coming up live and the 24-hour news channels</span></li>
       <li><time>Mon 9:20 p.m.</time><span class="kind">Update</span><span><b>CFB Wainwright:</b> “How this story developed” adds the Wainwright Health Centre medical director’s account of Saturday’s mass-casualty response (<a href="https://www.cbc.ca/news/canada/edmonton/livestory/cfb-wainwright-fire-deaths-carney-9.7386478?id=9.7386478.16939" target="_blank" rel="noopener">CBC News</a>, 8:53 p.m.). <b>Alberta referendum:</b> CBC’s live results special is on now (<a href="https://www.cbc.ca/player/play/video/9.7379746" target="_blank" rel="noopener">CBC News</a>); the Breaking event adds Elections Alberta on the vote’s scale (<a href="https://www.ctvnews.ca/edmonton/article/delays-at-more-than-100-alberta-polling-stations-push-back-referendum-results-live-updates-here/" target="_blank" rel="noopener">CTV News</a>, 8:05 p.m.).</span></li>
       <li><time>Mon 9:16 p.m.</time><span class="kind">Update</span><span><b>How this developed:</b> a truly breaking story’s timeline now starts with the event itself; the earlier training deaths at CFB Wainwright were removed from its timeline. Background (“Further back”) stays only on stories that have been building for a while, such as the Alberta referendum</span></li>
       <li><time>Mon 9:14 p.m.</time><span class="kind">Update</span><span><b>How this developed, in more detail:</b> the Alberta referendum background now runs through 15 dated steps from the spring of 2025 to advance voting, including the court referral and rulings on the separatist question, both petitions, Premier Smith’s address and the Kenney–Notley campaign (<a href="https://www.cbc.ca/news/canada/edmonton/alberta-judge-proposed-referendum-unconstitutional-9.7004982" target="_blank" rel="noopener">CBC News</a>, <a href="https://www.ctvnews.ca/edmonton/article/1-million-votes-cast-in-albertas-referendum/" target="_blank" rel="noopener">CTV News</a>, <a href="https://globalnews.ca/news/11848163/alberta-judge-quashes-separation-petition-in-favour-of-first-nations/" target="_blank" rel="noopener">Global News</a>); CFB Wainwright’s background adds the 2014 and 2017 LAV III deaths (<a href="https://www.cbc.ca/news/canada/edmonton/soldier-killed-in-armoured-vehicle-rollover-at-alberta-base-1.2650270" target="_blank" rel="noopener">CBC News</a>, <a href="https://globalnews.ca/news/3404714/canadian-soldier-dies-in-vehicle-accident-on-alberta-base/" target="_blank" rel="noopener">Global News</a>)</span></li>
@@ -2087,11 +2100,12 @@ header.site { border-bottom: 0; }
         ? tile(c, 'LIVE VIDEO', 'v', '', 'Watch live')
         : tile(c, 'LIVE UPDATES', 'u', c.updated ? 'Newest post ' + esc(fmtT(new Date(c.updated))) + ' ET' : '', 'Follow live'))).join('');
       const laterTiles = later.map((c) => tile(c, esc(when(new Date(c.when)).toUpperCase()), 'c', (c.approx ? 'About ' + esc(when(new Date(c.when))).replace(/^(Tonight|Today)/, (m) => m.toLowerCase()) : esc(when(new Date(c.when)))) + (c.local ? ' (' + esc(c.local) + ')' : '') + (c.where ? ' · ' + esc(c.where) : ''), c.url.indexOf('youtube.com') > -1 ? 'Set a reminder on YouTube' : 'How to watch')).join('');
-      if (!nowTiles && !laterTiles) { box.hidden = true; return; }
+      const sec = document.getElementById('liveCoverage');
+      if (!nowTiles && !laterTiles) { box.hidden = true; if (sec) sec.hidden = true; return; }
       box.innerHTML = (nowTiles ? '<p class="chan-h">Live coverage now</p><div class="chan-row">' + nowTiles + '</div>' : '') +
         (laterTiles ? '<p class="chan-h">Coming up live</p><div class="chan-row">' + laterTiles + '</div>' : '') +
         (ALWAYS.length ? '<p class="chan-always">24-hour news channels: ' + ALWAYS.map(([n, u]) => '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(n) + ' &#8599;</a>').join(' · ') + '</p>' : '');
-      box.hidden = false;
+      box.hidden = false; if (sec) sec.hidden = false;
       box.querySelectorAll('.chan-pic img').forEach((im) => {
         const tries = JSON.parse(im.dataset.tries || '[]'); let k = 0;
         const next = () => { if (k < tries.length) { im.src = tries[k++]; return; } im.remove(); im.parentElement && im.parentElement.classList.add('chan-text'); };
