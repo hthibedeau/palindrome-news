@@ -850,6 +850,18 @@ header.site { border-bottom: 0; }
 
 .breaking p.first { margin: -4px 0 10px; font-size: 13px; font-weight: 600; letter-spacing: .02em; color: #F6E1E8; }
 .breaking p.first a { color: #FFFFFF; }
+/* "How this developed": button in the top story, full timeline later on the page */
+.bk-dev-btn { position: relative; z-index: 3; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; margin: 0 0 18px; padding: 0 18px; background: #FFFFFF; color: #7A1F3D; font-size: 15px; font-weight: 700; border-radius: 2px; }
+.breaking.top .bk-dev-btn { color: #2B1B54; }
+@media (hover: hover) { .bk-dev-btn:hover { color: #7A1F3D; text-decoration: underline; text-underline-offset: 3px; } }
+.dev-list { list-style: none; margin: 0; padding: 0 0 0 18px; border-left: 2px solid var(--rule); max-width: 820px; }
+.dev-list li { position: relative; padding: 0 0 16px 10px; font-size: 15px; line-height: 1.55; color: var(--body); }
+.dev-list li::before { content: ""; position: absolute; left: -25px; top: 6px; width: 10px; height: 10px; border-radius: 50%; background: var(--surface); border: 2px solid var(--wine); }
+.dev-list li:first-child::before { background: var(--wine); }
+.dev-list time { display: block; font-size: 13px; font-weight: 700; color: var(--wine); font-variant-numeric: tabular-nums; }
+.dev-list a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+.dev-back { margin: 8px 0 0; font-size: 14px; font-weight: 600; }
+.dev-back a { color: var(--accent); }
 /* Hannah's rule: the story's photo sits at the TOP of the story it belongs to, never after it */
 .breaking .bk-text > .bart { aspect-ratio: 16 / 9; max-width: none; margin: 0 0 16px; }
 .bk-event { grid-template-columns: minmax(0, 1fr) !important; }
@@ -1057,7 +1069,7 @@ header.site { border-bottom: 0; }
       </div>
     </div>
     <div class="masthead">
-      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 8:47 p.m. ET Monday</b></span></div>
+      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 8:51 p.m. ET Monday</b></span></div>
       <div class="plate">
         <span class="stamp" id="stamp" hidden>Late edition</span>
         <a class="logo" href="#top">Palindrome <em>News</em></a>
@@ -1126,7 +1138,7 @@ header.site { border-bottom: 0; }
 
     <section class="breaking tap bk-event" id="bkEvent" aria-label="Breaking news" hidden></section>
 
-    <section class="breaking tap" id="breaking" aria-label="Breaking news" data-since="2026-10-17T20:16:00-04:00" data-lastdev="2026-10-19T20:25:00-04:00" data-expected="2026-10-19T11:00:00-04:00" data-latest="https://www.cbc.ca/news/canada/edmonton/livestory/cfb-wainwright-fire-deaths-carney-9.7386478" data-first="https://www.ctvnews.ca/edmonton/article/fatalities-and-injuries-after-explosion-and-fire-at-canadian-forces-base-in-alberta/">
+    <section class="breaking tap" id="breaking" data-story="the CFB Wainwright fire" aria-label="Breaking news" data-since="2026-10-17T20:16:00-04:00" data-lastdev="2026-10-19T20:25:00-04:00" data-expected="2026-10-19T11:00:00-04:00" data-latest="https://www.cbc.ca/news/canada/edmonton/livestory/cfb-wainwright-fire-deaths-carney-9.7386478" data-first="https://www.ctvnews.ca/edmonton/article/fatalities-and-injuries-after-explosion-and-fire-at-canadian-forces-base-in-alberta/">
       <div class="bk-text">
         <div class="bart" data-art="city" data-alt="Sgt. Morgan Wong, 26, one of the four soldiers killed in the CFB Wainwright fire, in an undated handout photo" data-photo="img/live/ctv-wong-handout.jpg" data-credit="The Canadian Press/Handout - Canadian Armed Forces, via CTV News"></div>
         <span class="tag">Breaking</span><span class="btime">Updated 8:45 p.m. ET Monday</span>
@@ -1136,6 +1148,7 @@ header.site { border-bottom: 0; }
         <div class="bk-live" id="bkLive" hidden></div>
         <div class="bk-chan" id="bkChannels" hidden></div>
         <p class="bk-dek">A fast-moving grass fire swept a training area at the Alberta base Saturday, killing four soldiers; 39 were taken to hospital, 19 in critical condition (<a href="https://www.ctvnews.ca/edmonton/article/what-happened-at-cfb-wainwright-4-soldiers-dead-39-wounded-here-are-the-confirmed-facts/" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline">CTV News</a>). Chief of the Defence Staff Gen. Jennie Carignan says three investigations are under way and the board of inquiry’s findings will be released publicly (<a href="https://www.ctvnews.ca/politics/article/chief-of-the-defence-staff-commits-to-publicly-release-cfb-wainwright-inquiry-findings/" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline">CTV News</a>). The cause is not yet known.</p>
+        <a class="bk-dev-btn" href="#developed">How this developed <span aria-hidden="true">&#8595;</span></a>
         <p class="acc-h">Latest reports</p>
         <div class="bk-vids bk-grabs"><a class="bkv" href="https://www.ctvnews.ca/saskatoon/prince-albert/article/prince-albert-community-mourns-service-member-lost-in-wainwright-tragedy/" target="_blank" rel="noopener"><span class="bvt" data-art="city" data-alt="Screen grab of the report: Prince Albert mourns Pte. Shaun Farrell, 23" data-photo="img/grabs/ctv-farrell-prince-albert.jpg" data-credit="Screen grab · CTV News"></span><span class="bvl">CTV News · Mon 7:51 p.m.</span><span class="bvh">Prince Albert mourns Pte. Shaun Farrell, 23</span></a><a class="bkv" href="https://www.ctvnews.ca/edmonton/article/an-incredible-person-sgt-morgan-wong-26-remembered-before-cfb-wainwright-tragedy/" target="_blank" rel="noopener"><span class="bvt" data-art="city" data-alt="Screen grab of the report: ‘An incredible person’: Sgt. Morgan Wong, 26, remembered" data-photo="img/grabs/ctv-wong-remembered.jpg" data-credit="Screen grab · CTV News"></span><span class="bvl">CTV News · Mon 7:20 p.m.</span><span class="bvh">‘An incredible person’: Sgt. Morgan Wong, 26, remembered</span></a><a class="bkv" href="https://www.ctvnews.ca/politics/article/chief-of-the-defence-staff-commits-to-publicly-release-cfb-wainwright-inquiry-findings/" target="_blank" rel="noopener"><span class="bvt" data-art="city" data-alt="Screen grab of the report: Canada’s top general says the inquiry findings will be made public" data-photo="img/grabs/ctv-carignan-inquiry.jpg" data-credit="Screen grab · CTV News"></span><span class="bvl">CTV News · Mon 6:14 p.m.</span><span class="bvh">Canada’s top general says the inquiry findings will be made public</span></a></div>
         <div class="who" style="margin: 12px 0; padding: 10px 12px; border-left: 3px solid var(--wine); background: var(--surface)">
@@ -1262,6 +1275,12 @@ header.site { border-bottom: 0; }
   <section id="breakdown" aria-labelledby="bd-h" style="scroll-margin-top: 64px">
     <div class="band-head"><h2 id="bd-h">The breakdown</h2><p>Our synopsis of the day’s other big stories, each confirmed by six or more independent outlets. Newest developments first. Numbers link to the reporting behind each line.</p></div>
     <div class="bds" id="bds"></div>
+  </section>
+
+  <section id="developed" aria-labelledby="dev-h" style="scroll-margin-top: 64px" hidden>
+    <div class="band-head"><h2 id="dev-h">How this developed</h2><p id="devSub">The full timeline of the top story, newest first, each line linked to the outlet that reported it.</p></div>
+    <ol class="dev-list" id="devList"></ol>
+    <p class="dev-back"><a href="#breaking">&#8593; Back to the top story</a></p>
   </section>
 
   <section id="video" aria-labelledby="w-h" style="scroll-margin-top: 64px">
@@ -1451,6 +1470,7 @@ header.site { border-bottom: 0; }
   <section id="corrections" class="ruled" aria-labelledby="cx-h" style="scroll-margin-top: 64px">
     <div class="band-head"><h2 id="cx-h">Corrections &amp; updates</h2><p>Every change we make to a story, with the time. Nothing is changed quietly.</p></div>
     <ol class="log">
+      <li><time>Mon 8:51 p.m.</time><span class="kind">Update</span><span><b>How this developed:</b> the top story now has a “How this developed” button that takes you to the story’s full timeline further down the page, including the updates more than 12 hours old</span></li>
       <li><time>Mon 8:47 p.m.</time><span class="kind">Update</span><span><b>Breaking keeps only the last 12 hours:</b> anything covered more than 12 hours ago now drops out of the Breaking segment by itself (older “How this story developed” lines, finished broadcast summaries). Removed from CFB Wainwright: the Saturday and Sunday videos, the “two accounts” of the early toll, and the summary of Poilievre’s Sunday remarks</span></li>
       <li><time>Mon 8:45 p.m.</time><span class="kind">Update</span><span><b>CFB Wainwright fire:</b> Emergency Management Minister Eleanor Olszewski says supports for the injured will include financial compensation (<a href="https://www.cbc.ca/news/canada/edmonton/livestory/cfb-wainwright-fire-deaths-carney-9.7386478" target="_blank" rel="noopener">CBC News</a>); burn specialists on the long recovery ahead added to the wire (<a href="https://www.ctvnews.ca/health/article/cfb-wainwright-fire-highlights-long-painful-process-of-burn-recovery-specialists-say/" target="_blank" rel="noopener">The Canadian Press, via CTV News</a>)</span></li>
       <li><time>Mon 8:42 p.m.</time><span class="kind">Update</span><span><b>Photos lead their stories:</b> in the Breaking stories the photo now sits at the top of the story it belongs to, above the headline (on wide screens the Breaking event photo sits beside its headline)</span></li>
@@ -3234,6 +3254,21 @@ function etAgeMs(label) {
   if (at > nowWall + 60000) at -= 7 * 86400000;
   return nowWall - at;
 }
+// "How this developed" (Hannah's rule): the top story has a button that jumps to the full timeline further down the page.
+// The section is built here from every line of the top story's "How this story developed" before the Breaking segment
+// keeps only its last 12 hours, so nothing is lost: older lines live on in #developed.
+(function howThisDeveloped() {
+  const sec = document.getElementById('developed'), list = document.getElementById('devList');
+  const items = [...document.querySelectorAll('#breaking .tl li')];
+  const btn = document.querySelector('#breaking .bk-dev-btn');
+  if (!sec || !list || !items.length) { if (btn) btn.hidden = true; return; }
+  list.innerHTML = items.map((li) => '<li>' + li.innerHTML + '</li>').join('');
+  list.querySelectorAll('a').forEach((a) => { a.removeAttribute('style'); a.target = '_blank'; a.rel = 'noopener'; });
+  const name = (document.getElementById('breaking').dataset.story || '').trim();
+  const h = document.getElementById('dev-h'); if (h && name) h.textContent = 'How this developed: ' + name;
+  sec.hidden = false;
+  if (btn) btn.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); sec.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' }); });
+})();
 (function pruneBreaking() {
   const limit = BREAKING_KEEP_HOURS * 3600000;
   const run = () => {
