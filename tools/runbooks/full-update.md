@@ -48,6 +48,20 @@ Your part, every run:
   - It stays as "Developing", with "Next: …" from its schedule, with its tabs, timeline, key facts and How this developed block, for 12 hours after its window or after its last scheduled item, whichever is later (EVENT_KEEP_HOURS).
   - Set `keepUntil` on the UPNEXT entry to keep it longer, or to end it sooner once the story is folded into the lead or the top slot.
 
+**THE CANADA DESK IS THE BIGGEST DESK (Hannah, Tue Oct 20, 2026: "beef up the Canada section").** Every full update:
+1. Run `python3 tools/canada_scan.py`. It lists the newest stories from every province and territory (CBC's regional front pages, Global's regional feeds, and the regional and local newsrooms), each with the other outlets carrying it.
+2. Keep 8 to 12 Canada stories in `const stories = [`, from at least 5 provinces or territories, newest developments first, the biggest story leading.
+   - Each story: `[pic, "Canada", badge, headline, summary, "Outlet, Outlet, …", link, photo, "Day h:mm a.m.", "Region"]`.
+   - Region is the province or territory: "Quebec", "Ontario", "B.C.", "N.W.T.", and so on.
+   - Each summary is 1–3 short sentences, every fact from the linked reports.
+   - Link the newest, fullest free report. The Globe and Mail is never the first click.
+   - Use each article's own photo and its real time from the page's metadata.
+3. Replace any story older than about 24 hours, unless it is still the biggest story in its region and has a newer development (then update it).
+4. Don't put Breaking or Developing stories here; the page hides them anyway. No sports scores.
+5. For the preview, copy new photos in with `tools/localize_images.py` and map them in LOCAL.
+
+The page shows Canada as a full-width band: the lead story large, the others in a grid, each with its region tag and summary. The header lists the regions covered.
+
 **Every run: check ALL outlets and official alert channels for new breaking news (not only the stories already on the page), and use primary sources (official releases, results pages, court filings, Hansard, full video) as much as possible — see BREAKING_SOURCES.md.**
 
 **ALSO read tools/runbooks/BREAKING_TEMPLATE.md: every Breaking story, now and in the future, uses that layout (photo with caption first, newest headline, tabs, latest reports, no "How this developed" button). Build any new Breaking story that way in the same run.**
