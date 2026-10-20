@@ -107,6 +107,8 @@ FEEDS = [
     ("Middle East Eye", "https://www.middleeasteye.net/rss"),  # added by source_discovery.py 2026-10-20
     ("Prime Minister of Canada", "https://www.pm.gc.ca/rss.xml"),  # added by source_discovery.py 2026-10-20
     ("Bank of Canada", "https://www.bankofcanada.ca/feed/"),  # added by source_discovery.py 2026-10-20
+    ("Cabin Radio", "https://cabinradio.ca/feed/"),  # added by source_discovery.py 2026-10-20
+    ("IndigiNews", "https://indiginews.com/feed/"),  # added by source_discovery.py 2026-10-20
 ]
 # Feeds whose pubDate carries a wrong offset: the clock time is really UTC
 UTC_MISLABELLED = {"https://www.cp24.com/arc/outboundfeeds/rss/?outputType=xml", "https://www.bnnbloomberg.ca/arc/outboundfeeds/rss/?outputType=xml"}

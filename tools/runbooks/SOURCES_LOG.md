@@ -128,3 +128,48 @@ Each run of tools/source_discovery.py appends what it tested.
 - RCMP news: no fresh feed found (https://rcmp.ca/en/news); read it through search and article pages
 - Elections Canada: no fresh feed found (https://www.elections.ca); read it through search and article pages
 - White House: no fresh feed found (https://www.whitehouse.gov); read it through search and article pages
+
+## 2026-10-20 23:46 UTC
+- CBC News (Canada): no fresh feed found (https://www.cbc.ca/news/canada); read it through search and article pages
+- CBC News (World): no fresh feed found (https://www.cbc.ca/news/world); read it through search and article pages
+- CBC News (Business): no fresh feed found (https://www.cbc.ca/news/business); read it through search and article pages
+- CBC News (Indigenous): no fresh feed found (https://www.cbc.ca/news/indigenous); read it through search and article pages
+- The Canadian Press: no fresh feed found (https://www.thecanadianpress.com); read it through search and article pages
+- Montreal Gazette: no fresh feed found (https://montrealgazette.com); read it through search and article pages
+- Regina Leader-Post: no fresh feed found (https://leaderpost.com); read it through search and article pages
+- Saskatoon StarPhoenix: no fresh feed found (https://thestarphoenix.com); read it through search and article pages
+- Windsor Star: no fresh feed found (https://windsorstar.com); read it through search and article pages
+- London Free Press: no fresh feed found (https://lfpress.com); read it through search and article pages
+- Hamilton Spectator: no fresh feed found (https://www.thespec.com); read it through search and article pages
+- Waterloo Region Record: no fresh feed found (https://www.therecord.com); read it through search and article pages
+- Cabin Radio: https://cabinradio.ca/feed/ works (10 items, newest 7.0 h) — added to wire_scan.FEEDS
+- Windspeaker: no fresh feed found (https://windspeaker.com); read it through search and article pages
+- IndigiNews: https://indiginews.com/feed/ works (10 items, newest 4.5 h) — added to wire_scan.FEEDS
+- The Hill Times: no fresh feed found (https://www.hilltimes.com); read it through search and article pages
+- iPolitics: no fresh feed found (https://ipolitics.ca); read it through search and article pages
+- Policy Options: no fresh feed found (https://policyoptions.irpp.org); read it through search and article pages
+- Maclean's: no fresh feed found (https://macleans.ca); read it through search and article pages
+- The Walrus: no fresh feed found (https://thewalrus.ca); read it through search and article pages
+- Radio-Canada: no fresh feed found (https://ici.radio-canada.ca/info); read it through search and article pages
+- Castanet: no fresh feed found (https://www.castanet.net); read it through search and article pages
+- The Western Producer: no fresh feed found (https://www.producer.com); read it through search and article pages
+- Associated Press: no fresh feed found (https://apnews.com); read it through search and article pages
+- Reuters: no fresh feed found (https://www.reuters.com); read it through search and article pages
+- AFP: no fresh feed found (https://www.afp.com/en); read it through search and article pages
+- BBC News: no fresh feed found (https://www.bbc.com/news); read it through search and article pages
+- NPR: no fresh feed found (https://www.npr.org); read it through search and article pages
+- Politico: no fresh feed found (https://www.politico.com); read it through search and article pages
+- Axios: no fresh feed found (https://www.axios.com); read it through search and article pages
+- CNN: no fresh feed found (https://www.cnn.com); read it through search and article pages
+- France 24: no fresh feed found (https://www.france24.com/en/); read it through search and article pages
+- DW: no fresh feed found (https://www.dw.com/en); read it through search and article pages
+- Sky News: no fresh feed found (https://news.sky.com); read it through search and article pages
+- The Independent: no fresh feed found (https://www.independent.co.uk); read it through search and article pages
+- ABC News (Australia): no fresh feed found (https://www.abc.net.au/news); read it through search and article pages
+- CNA: no fresh feed found (https://www.channelnewsasia.com); read it through search and article pages
+- Times of Israel: no fresh feed found (https://www.timesofisrael.com); read it through search and article pages
+- Government of Canada news: no fresh feed found (https://www.canada.ca/en/news.html); read it through search and article pages
+- Statistics Canada The Daily: no fresh feed found (https://www150.statcan.gc.ca/n1/dai-quo/index-eng.htm); read it through search and article pages
+- RCMP news: no fresh feed found (https://rcmp.ca/en/news); read it through search and article pages
+- Elections Canada: no fresh feed found (https://www.elections.ca); read it through search and article pages
+- White House: no fresh feed found (https://www.whitehouse.gov); read it through search and article pages
