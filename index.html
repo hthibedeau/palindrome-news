@@ -850,6 +850,17 @@ header.site { border-bottom: 0; }
 
 .breaking p.first { margin: -4px 0 10px; font-size: 13px; font-weight: 600; letter-spacing: .02em; color: #F6E1E8; }
 .breaking p.first a { color: #FFFFFF; }
+/* Hannah's rule: the story's photo sits at the TOP of the story it belongs to, never after it */
+.breaking .bk-text > .bart { aspect-ratio: 16 / 9; max-width: none; margin: 0 0 16px; }
+.bk-event { grid-template-columns: minmax(0, 1fr) !important; }
+.bk-event .bk-text { max-width: none; }
+@media (min-width: 960px) {
+  /* Wide screens: the photo leads on the left, the story beside it, so the headline is seen at the same time */
+  .bk-event .bk-text { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); column-gap: 28px; align-items: start; }
+  .bk-event .bk-text > .bart { grid-column: 1; grid-row: 1 / span 12; margin: 0; }
+  .bk-event .bk-text > :not(.bart) { grid-column: 2; }
+  .breaking:not(.bk-event) .bk-text > .bart { aspect-ratio: 21 / 9; }
+}
 /* Breaking event: a story with scheduled live coverage becomes the Breaking story 2 hours before it starts (UPNEXT in the script) */
 .bk-event { margin-bottom: 20px; }
 .bk-event .ev-tag { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
@@ -1046,7 +1057,7 @@ header.site { border-bottom: 0; }
       </div>
     </div>
     <div class="masthead">
-      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 8:37 p.m. ET Monday</b></span></div>
+      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 8:42 p.m. ET Monday</b></span></div>
       <div class="plate">
         <span class="stamp" id="stamp" hidden>Late edition</span>
         <a class="logo" href="#top">Palindrome <em>News</em></a>
@@ -1117,6 +1128,7 @@ header.site { border-bottom: 0; }
 
     <section class="breaking tap" id="breaking" aria-label="Breaking news" data-since="2026-10-17T20:16:00-04:00" data-lastdev="2026-10-19T20:08:00-04:00" data-expected="2026-10-19T11:00:00-04:00" data-latest="https://www.cbc.ca/news/canada/edmonton/livestory/cfb-wainwright-fire-deaths-carney-9.7386478" data-first="https://www.ctvnews.ca/edmonton/article/fatalities-and-injuries-after-explosion-and-fire-at-canadian-forces-base-in-alberta/">
       <div class="bk-text">
+        <div class="bart" data-art="city" data-alt="Sgt. Morgan Wong, 26, one of the four soldiers killed in the CFB Wainwright fire, in an undated handout photo" data-photo="img/live/ctv-wong-handout.jpg" data-credit="The Canadian Press/Handout - Canadian Armed Forces, via CTV News"></div>
         <span class="tag">Breaking</span><span class="btime">Updated 8:34 p.m. ET Monday</span>
         <h2><a class="card-link" href="https://www.cbc.ca/news/canada/edmonton/livestory/cfb-wainwright-fire-deaths-carney-9.7386478" target="_blank" rel="noopener">CFB Wainwright fire: four soldiers dead, 19 critical; military says inquiry findings will be made public</a></h2>
         <p class="first"><span class="bl"><b>Latest</b> <a href="https://www.ctvnews.ca/edmonton/article/four-dead-dozens-wounded-in-cfb-wainwright-fire-pm-says-live-here/" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline"><strong>CTV News</strong></a> · Sun 12:58 p.m.</span><span class="bl">First reported by <a href="https://www.ctvnews.ca/edmonton/article/fatalities-and-injuries-after-explosion-and-fire-at-canadian-forces-base-in-alberta/" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline"><strong>CTV News</strong></a> · Sat 8:16 p.m.</span></p>
@@ -1153,7 +1165,6 @@ header.site { border-bottom: 0; }
         </div>
       </div>
       <div class="bk-side">
-        <div class="bart" data-art="city" data-alt="Sgt. Morgan Wong, 26, one of the four soldiers killed in the CFB Wainwright fire, in an undated handout photo" data-photo="img/live/ctv-wong-handout.jpg" data-credit="The Canadian Press/Handout - Canadian Armed Forces, via CTV News"></div>
         <div class="tracker" aria-label="Confirmation tracker: 9 independent outlets reporting, verified">
           <div class="tt">Confirmation tracker <span>9 outlets</span></div>
           <div class="segs" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div>
@@ -1446,6 +1457,7 @@ header.site { border-bottom: 0; }
   <section id="corrections" class="ruled" aria-labelledby="cx-h" style="scroll-margin-top: 64px">
     <div class="band-head"><h2 id="cx-h">Corrections &amp; updates</h2><p>Every change we make to a story, with the time. Nothing is changed quietly.</p></div>
     <ol class="log">
+      <li><time>Mon 8:42 p.m.</time><span class="kind">Update</span><span><b>Photos lead their stories:</b> in the Breaking stories the photo now sits at the top of the story it belongs to, above the headline (on wide screens the Breaking event photo sits beside its headline)</span></li>
       <li><time>Mon 8:37 p.m.</time><span class="kind">Update</span><span><b>Pictures in Breaking stories:</b> the top story and every Breaking event now always show a real picture; if one cannot load, the page shows the next one (screen grabs of the latest reports, then video and live-coverage pictures). Sgt. Morgan Wong’s photo is now stored with the page</span></li>
       <li><time>Mon 8:35 p.m.</time><span class="kind">Update</span><span><b>Breaking events, all the time:</b> any scheduled live coverage listed under “Coming up live” now becomes the Breaking story two hours before it starts, even before an editor writes it up; the full method is written into the site’s instructions so every update follows it</span></li>
       <li><time>Mon 8:34 p.m.</time><span class="kind">Update</span><span><b>CFB Wainwright fire:</b> added tributes from Pte. Hayden Lykkemark’s foster mother and to Sgt. Morgan Wong (<a href="https://edmontonjournal.com/news/local-news/canadian-armed-forces-cfb-wainright-fire" target="_blank" rel="noopener">Edmonton Journal</a>, <a href="https://vancouversun.com/news/local-news/tributes-pour-in-for-two-young-bc-soldiers-killed-in-wainwright-fire" target="_blank" rel="noopener">Vancouver Sun</a>) and CBC’s video from the growing memorial in Wainwright (<a href="https://www.cbc.ca/player/play/video/9.7387719" target="_blank" rel="noopener">CBC News</a>).</span></li>
@@ -2141,14 +2153,14 @@ header.site { border-bottom: 0; }
       }).join('');
       const nets = (typeof COMING !== 'undefined' ? COMING : []).filter((c) => (c.story || '').indexOf(ev.story) === 0);
       const btns = nets.map((c) => '<a href="' + esc(c.url) + '" target="_blank" rel="noopener">' + esc(c.net) + '<small>' + esc(fmt(T(c.when)) + ' ET' + (day(T(c.when)) !== today ? ' ' + day(T(c.when)) : '')) + '</small></a>').join('');
-      box.innerHTML = '<div class="bk-text">'
+      box.innerHTML = '<div class="bk-text"><div class="bart ev-art"></div>'
         + '<div class="ev-tag"><span class="tag">Breaking</span><span class="ev-count">' + esc(started ? 'Live coverage under way' : 'Live coverage begins in ' + left(T(ev.start) - now)) + '</span></div>'
         + '<h2><a class="card-link" href="' + esc(ev.url) + '" target="_blank" rel="noopener">' + esc(ev.h) + '</a></h2>'
         + '<p class="first"><span class="bl"><b>Latest</b> <a href="' + esc(ev.url) + '" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline"><strong>' + esc(ev.outlet) + '</strong></a>' + (ev.urlWhen ? ' · ' + esc(ev.urlWhen) : '') + '</span></p>'
         + '<p class="bk-dek">' + ev.dek + '</p>'
         + (rows ? '<div class="ev-sched"><h3>Coming up, with times</h3><ol>' + rows + '</ol></div>' : '')
         + (btns ? '<div class="bk-next' + (started ? ' on' : '') + '" style="margin-top: 0"><div class="nx-when"><i aria-hidden="true"></i>' + (started ? 'Watch live' : 'Where to watch') + '</div><div class="nx-btns">' + btns + '</div></div>' : '')
-        + '</div><div class="bk-side"><div class="bart ev-art"></div></div>';
+        + '</div>';
       const pics = [{ src: ev.photo, credit: ev.credit }]
         .concat(nets.map((c) => ({ src: c.file, credit: c.net })), nets.map((c) => ({ src: c.img, credit: c.net })))
         .concat((typeof LIVENOW !== 'undefined' ? LIVENOW : []).filter((l) => (l.story || '').indexOf(ev.story.split(' ')[0]) === 0).map((l) => ({ src: l.file || l.img, credit: l.net })));
