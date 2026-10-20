@@ -57,6 +57,7 @@ How to use them:
 Hannah set Settings > Capabilities to "All domains". Tested at 11:20 p.m. ET Mon Oct 19:
 - **Now direct (curl), with feeds in tools/wire_scan.py:** CityNews, CP24, Toronto Star, National Post, Calgary Herald, Edmonton Journal, APTN News, Radio-Canada, BBC News, The Guardian, CBS News, ABC News and PBS NewsHour.
   - Also reachable: The Canadian Press site, CPAC, NBC News, NPR and pm.gc.ca.
+- **CBC photos, with their own captions:** each post in a CBC live blog lists its photo in the page's JSON-LD as a BlogPosting `image` with `caption`, `creditText`, `contentUrl` and the post's `datePublished`. Download the photo with `<contentUrl up to default.jpg>?im=Resize%3D1280`. Never pair the page's og:image with a caption from a different post. This is the fastest way to get the newest captioned photo on a story CBC is live-blogging.
 - **CBC photos:** i.cbc.ca photos now download. Use CBC's own photo, with its caption, instead of a screen grab when the photo is the best one.
 - **Still refused by the sites themselves:** apnews.com (403) and reuters.com (401). Keep reaching AP and Reuters through WebSearch + WebFetch on article pages, or through the outlets that carry their copy.
 - **canada.ca timed out.** Retry it, or fall back to the department's statement as quoted by a newsroom.
