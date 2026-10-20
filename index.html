@@ -1513,7 +1513,7 @@ header.site { border-bottom: 0; }
     </div>
     <div class="fronts-us">
       <h3>What America's newsrooms are leading with</h3>
-      <p>The top story on each front page at 6:30 p.m. ET Monday, in our words, with the story’s own picture so you see where you’re going. Tap to read it there.</p>
+      <p>The top story on each front page at 10:40 p.m. ET Monday, in our words, with the story’s own picture so you see where you’re going. Tap to read it there.</p>
       <div class="ledes" id="ledes"></div>
     </div>
   </section>
@@ -1580,6 +1580,7 @@ header.site { border-bottom: 0; }
   <section id="corrections" class="ruled" aria-labelledby="cx-h" style="scroll-margin-top: 64px">
     <div class="band-head"><h2 id="cx-h">Corrections &amp; updates</h2><p>Every change we make to a story, with the time. Nothing is changed quietly.</p></div>
     <ol class="log">
+      <li><time>Mon 10:46 p.m.</time><span class="kind">Update</span><span><b>What America’s newsrooms are leading with:</b> refreshed (ABC News, Axios; CBS News, Fox News and PBS NewsHour unchanged)</span></li>
       <li><time>Mon 10:46 p.m.</time><span class="kind">Update</span><span><b>Alberta referendum:</b> CBC’s decision desk on what it needs before projecting Question 10, and separatist organizer Mitch Sylvestre’s hopes for the result (<a href="https://www.cbc.ca/news/canada/edmonton/livestory/alberta-referendum-results-live-updates-separatism-october-19-2026-9.7387777?id=9.7387777.16961" target="_blank" rel="noopener">CBC News</a>); live-coverage times refreshed. CFB Wainwright: wide check found nothing newer than the 9:58 p.m. update</span></li>
       <li><time>Mon 10:40 p.m.</time><span class="kind">Update</span><span><b>Breaking stories:</b> the “How this developed” buttons are removed; each story’s Timeline tab now shows how it developed</span></li>
       <li><time>Mon 10:38 p.m.</time><span class="kind">Update</span><span><b>Easier to spot:</b> “Further back: how we got here” and the other fold-out lines now look like buttons, with an arrow and “Tap to open”</span></li>
@@ -2941,12 +2942,12 @@ header.site { border-bottom: 0; }
   }));
   showVids('all');
 
-  // What America's newsrooms are leading with (read Mon Oct 19, 6:30 p.m. ET). img = the story's own picture (its share image), so readers see where they're going.
+  // What America's newsrooms are leading with (read Mon Oct 19, 10:40 p.m. ET). img = the story's own picture (its share image), so readers see where they're going.
   const ledes = [
     { o: 'CBS News', h: 'Researchers warn of a quieter AI risk: people slowly handing over work, decisions and skills to machines', u: 'https://www.cbsnews.com/news/ai-doom-scenario-gradual-disempowerment/', img: 'https://assets3.cbsnewsstatic.com/hub/i/r/2026/10/19/2871e3cb-c135-4878-a8f1-162a5c627aa4/thumbnail/1200x630/37172b2d82439afb580652162c72b471/gettyimages-2213179432.jpg', w: 'Mon 11:33 a.m.' },
-    { o: 'ABC News', h: 'Eagles coach defends playing Jalen Hurts with a known blood clot as the quarterback is sidelined indefinitely', u: 'https://abcnews.com/US/eagles-jalen-hurts-blood-clots-leg-lungs-timeline/story?id=137387183', img: 'https://i.abcnewsfe.com/a/a0344274-5cd1-41b6-a127-c7ad27f1f7f7/hurts-1-ap-jef-261019_1792433314519_hpMain_16x9.jpg?w=1600', w: 'Mon 5:06 p.m.' },
+    { o: 'ABC News', h: 'Justice Department charges 28 people in California with unlawful voting and other election offenses', u: 'https://abcnews.com/US/doj-charges-28-unlawful-voting-election-related-offenses/story?id=137384589', img: 'https://i.abcnewsfe.com/a/a989aa11-579d-449c-a254-c5637e65c2ed/vote-4-gty-gmh-261019_1792414804974_hpMain_16x9.jpg?w=1600', w: 'Mon 7:22 p.m.' },
     { o: 'Fox News', h: 'France’s interior minister offers to resign as officials admit they misjudged the riots; Macron says no and orders a security review', u: 'https://www.foxnews.com/politics/frances-massive-intel-failure-sparks-resignation-offers-amid-days-rioting', img: 'https://static.foxnews.com/foxnews.com/content/uploads/2026/10/gettyimages-2300216940-scaled.jpg', w: 'Mon 2:59 p.m.' },
-    { o: 'Axios', h: 'Beshear’s possible 2028 rivals pile on over his resistance to Latino leaders’ push to fund the Texas governor’s race', u: 'https://www.axios.com/2026/10/18/beshear-rivals-latinos-texas-funding', img: 'https://images.axios.com/TUpuiJFdy3QaS2UdlpE2WAbspsE=/0x0:1920x1080/1366x768/2026/10/18/1792341005527.jpg', w: 'Sun 5:45 p.m.' },
+    { o: 'Axios', h: 'Hegseth meets Netanyahu on an unannounced visit to Israel, eight days before Israel’s election', u: 'https://www.axios.com/2026/10/19/pete-hegseth-israel-visit-netanyahu-meeting', img: 'https://images.axios.com/kE1bxxcLV_jQJfCFvUj0FxYbgiQ=/0x55:5289x3030/1366x768/2026/10/19/1792447825003.jpeg', w: 'Mon 6:32 p.m.' },
     { o: 'PBS NewsHour', h: 'Trump heads to Kansas to rally voters as Republican frustration deepens in farm states', u: 'https://www.pbs.org/newshour/politics/watch-live-trump-heads-to-rally-in-kansas-as-republican-voters-frustrations-deepen', img: 'https://d3i6fh83elv35t.cloudfront.net/static/2026/10/2026-10-15T022314Z_786665944_RC2E3OAV7W6F_RTRMADP_3_USA-TRUMP-1024x689.jpg', w: 'Mon 11:44 a.m.' },
   ];
   const ledeHost = (u) => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch (e) { return ''; } };
