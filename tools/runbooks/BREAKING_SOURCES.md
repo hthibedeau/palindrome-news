@@ -2,7 +2,7 @@
 
 Breaking news means checking EVERY source out there, not rechecking the same pages. Hannah's words: "Don't always recheck the same sources. Check every source out there. That's what breaking news is."
 
-This rule applies to the top-slot story (section#breaking) on every run of every update task, and to every story marked Developing on the page. It overrides any narrower list of outlets elsewhere in the runbooks.
+This rule applies to the top-slot story (section#breaking) on every run of every update task, to every story marked Developing on the page, and (Hannah: "for every story find all the sources you can for it") to EVERY story on the page: for each one, find every newsroom that has reported it, add each report to its STORY entry's "match" (so the section fronts link each outlet), point "latest" at the newest, fullest one, and list the outlets under the story. Work through the whole page each full run, top story first, then the lead, the breakdowns, the U.S. section, the section fronts and the wire. It overrides any narrower list of outlets elsewhere in the runbooks.
 
 ## Every run
 
@@ -14,7 +14,7 @@ This rule applies to the top-slot story (section#breaking) on every run of every
 2. **Cover the whole range of newsrooms.** For a Canadian story, look beyond CBC, CTV, Global and CP24 to: The Canadian Press, CityNews, the National Post, the Toronto Star and The Globe and Mail; the local papers, TV and radio near the story (for Alberta, for example, the Edmonton Journal, Calgary Herald, CTV and Global Edmonton and Calgary, 630 CHED and CBC Edmonton); the hometown outlets of every named person (e.g. paNOW and CJWW for Prince Albert, the North Shore News for North Vancouver, the Langley Advance Times and Black Press for Langley); official sources (National Defence and the Canadian Armed Forces, RCMP and police, the PMO, provincial governments, courts, coroners); wire services (CP, AP, Reuters, AFP); U.S. and international outlets; and the networks' YouTube channels. For a U.S. story, the same across American national, local and official sources.
 3. **Open every candidate that may be new** (WebFetch; for sites the runbooks say work with curl, curl) and read its real publish or update time. Anything newer than the newest line in "How this story developed" is a new development. Search results are often stale: check the date every time.
 4. **The human side is news.** When an outlet publishes the names, photos or family tributes of people killed or hurt, or reports a vigil, memorial, funeral or fundraiser, put it on the page right away:
-   - names, ranks or roles, ages and hometowns in "The four who died"-style box (div.who) above "What we know" (create one if the story has victims and none exists);
+   - names, ranks or roles, ages and hometowns in "The four who died"-style box, one short line per person (house rule 13: keep the top story short), (div.who) above "What we know" (create one if the story has victims and none exists);
    - link the report with the family photos and tributes from that box, in one tap, credited to the outlet;
    - if that report's share image shows the people (photos supplied by families or the military), use it as the top-slot picture, credited exactly as the outlet credits it;
    - add a timestamped line to "How this story developed".
