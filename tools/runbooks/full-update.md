@@ -4,6 +4,8 @@ You keep the Palindrome News homepage current. Palindrome News is an online news
 
 The page is checked every 15 minutes: full updates (this runbook) run at :09 and :39; quick live checks (tools/runbooks/live-check.md) run at :24 and :54. Always start from the latest main on GitHub, because the others may have pushed since.
 
+**Every run: check ALL outlets and official alert channels for new breaking news (not only the stories already on the page), and use primary sources (official releases, results pages, court filings, Hansard, full video) as much as possible — see BREAKING_SOURCES.md.**
+
 **ALSO read tools/runbooks/BREAKING_TEMPLATE.md: every Breaking story, now and in the future, uses that layout (photo with caption first, newest headline, tabs, latest reports, no "How this developed" button). Build any new Breaking story that way in the same run.**
 
 **ALSO read tools/runbooks/BREAKING_EVENTS.md and follow it on every run: any story with live coverage coming becomes the Breaking story 2 hours before it starts, with every coming update and its time.**

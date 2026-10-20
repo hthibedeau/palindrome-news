@@ -49,6 +49,7 @@ The other runbooks give the detail behind each part: house rules 12–22 in full
 
 ## Around it
 - **"Live coverage now" is its own band**, right below the Breaking stories, separate from them. It holds live video, live blogs and "Coming up live" tiles, named by story, each with a picture.
+- **Always watching for new breaking news, and primary sources first** (BREAKING_SOURCES.md): every run scans all outlets and official alert channels for anything new, and cites official releases, results pages, court filings, Hansard and full video directly, with the newsrooms that reported them.
 - **Every source, every run.**
   - Search the whole range of newsrooms: national, local, hometown, official, wire, U.S. and international.
   - Link every outlet reporting the story in its STORY match, the tribute lists and the key facts.
