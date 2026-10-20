@@ -862,6 +862,9 @@ header.site { border-bottom: 0; }
 .dev-list a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
 .dev-back { margin: 8px 0 0; font-size: 14px; font-weight: 600; }
 .dev-block + .dev-block { margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--line); }
+.dev-bg-h { margin: 18px 0 10px; font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.dev-bg li::before { border-color: var(--muted); }
+.dev-bg time { color: var(--muted); }
 .dev-name { margin: 0 0 12px; font-family: var(--serif); font-size: 22px; font-weight: 600; color: var(--title); }
 .dev-back a { color: var(--accent); }
 /* Hannah's rule: the story's photo sits at the TOP of the story it belongs to, never after it */
@@ -1071,7 +1074,7 @@ header.site { border-bottom: 0; }
       </div>
     </div>
     <div class="masthead">
-      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 9:03 p.m. ET Monday</b></span></div>
+      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 9:06 p.m. ET Monday</b></span></div>
       <div class="plate">
         <span class="stamp" id="stamp" hidden>Late edition</span>
         <a class="logo" href="#top">Palindrome <em>News</em></a>
@@ -1471,6 +1474,7 @@ header.site { border-bottom: 0; }
   <section id="corrections" class="ruled" aria-labelledby="cx-h" style="scroll-margin-top: 64px">
     <div class="band-head"><h2 id="cx-h">Corrections &amp; updates</h2><p>Every change we make to a story, with the time. Nothing is changed quietly.</p></div>
     <ol class="log">
+      <li><time>Mon 9:06 p.m.</time><span class="kind">Update</span><span><b>How this developed, further back:</b> the Alberta referendum timeline now goes back to the Forever Canadian petition in October 2025, the court ruling on the separatist petition and Premier Smith’s May address (<a href="https://globalnews.ca/news/11848163/alberta-judge-quashes-separation-petition-in-favour-of-first-nations/" target="_blank" rel="noopener">Global News</a>, <a href="https://www.cbc.ca/news/canada/edmonton/alberta-separation-referendum-televised-address-9.7208162" target="_blank" rel="noopener">CBC News</a>, <a href="https://www.ctvnews.ca/edmonton/article/forever-canadian-petition-successful-elections-alberta/" target="_blank" rel="noopener">CTV News</a>); the CFB Wainwright timeline now includes earlier training deaths at the base in 2014 and 2020 (<a href="https://www.cbc.ca/news/canada/edmonton/canadian-soldier-killed-exercise-wainwright-1.5785198" target="_blank" rel="noopener">CBC News</a>)</span></li>
       <li><time>Mon 9:03 p.m.</time><span class="kind">Update</span><span><b>Newer photos in the Breaking stories:</b> CFB Wainwright now shows the condolence book for Pte. Shaun Farrell at Prince Albert city hall (Jasmine Pelletier/<a href="https://www.ctvnews.ca/saskatoon/prince-albert/article/prince-albert-community-mourns-service-member-lost-in-wainwright-tragedy/" target="_blank" rel="noopener">CTV News</a>, Mon 7:51 p.m.); the Alberta referendum shows Albertans voting on referendum day (<a href="https://www.ctvnews.ca/edmonton/article/delays-at-more-than-100-alberta-polling-stations-push-back-referendum-results-live-updates-here/" target="_blank" rel="noopener">CTV News</a>)</span></li>
       <li><time>Mon 9:00 p.m.</time><span class="kind">Update</span><span><b>How this developed, on every Breaking story:</b> the Alberta referendum panel now has its own “How this developed” button and timeline further down the page (<a href="https://www.ctvnews.ca/edmonton/article/delays-at-more-than-100-alberta-polling-stations-push-back-referendum-results-live-updates-here/" target="_blank" rel="noopener">CTV News</a>, <a href="https://www.cbc.ca/news/canada/calgary/referendum-day-voters-react-9.7386960" target="_blank" rel="noopener">CBC News</a>, The Canadian Press), alongside the CFB Wainwright timeline</span></li>
       <li><time>Mon 8:54 p.m.</time><span class="kind">Update</span><span><b>Watch:</b> added five clips from the networks’ own YouTube channels, with pictures: CNN, <a href="https://www.youtube.com/watch?v=_uHb9SsdN1E" target="_blank" rel="noopener">boy killed as a car crashes into a Wichita youth soccer game</a> (Oct. 18); France 24, <a href="https://www.youtube.com/watch?v=HjgQtynH-zA" target="_blank" rel="noopener">French shops left wrecked after a weekend of riots</a> (Oct. 19); CBS News, <a href="https://www.youtube.com/watch?v=0bLqaqPAt_k" target="_blank" rel="noopener">Trump faces backlash over easing sanctions on Russian oil</a> (CBS Mornings, Oct. 19); Associated Press, <a href="https://www.youtube.com/watch?v=sNc4-22iFSQ" target="_blank" rel="noopener">protesters clash with police in Tirana, Albania</a> (Oct. 17); NHK World, <a href="https://www.youtube.com/watch?v=L6qtnHZxwEw" target="_blank" rel="noopener">typhoon rains fuel an invasive weed in Japanese farmland</a> (Oct. 15). Dropped four older clips (CNN, Oct. 13; Associated Press, Oct. 15; France 24 and CBS News, Oct. 17) to keep Watch fresh.</span></li>
@@ -2126,9 +2130,24 @@ header.site { border-bottom: 0; }
   //   until (ISO Eastern: when it stops being the Breaking event), h, url, outlet, urlWhen, dek (may hold links),
   //   photo, credit, alt, schedule: [{ at (ISO Eastern), to (optional ISO end of a window), local, text, outlet, url }] }]
   // Only times reported by the network, the organiser or a reliable outlet. Earliest active event wins.
+  // Background for the top story's "How this developed": earlier events that explain it, newest first,
+  // each [date, what happened, outlet, url] from a real report (Hannah: "if there is a longer background, look up the details and take the reader back").
+  const TOP_BACKGROUND = [
+    ['May 13, 2021', 'The military charges Cpl. Lars Callsen of 3rd Battalion, Princess Patricia’s Canadian Light Infantry, with one count of negligence in Cpl. Choi’s death.', 'CBC News', 'https://www.cbc.ca/news/canada/edmonton/soldier-charged-alberta-base-live-fire-death-training-exercise-1.6025010'],
+    ['Oct. 30, 2020', 'Cpl. James Choi, 29, an army reservist with the Royal Westminster Regiment, is shot during a nighttime live-fire training exercise at CFB Wainwright and dies the next morning in hospital in Edmonton. About 700 people are based at CFB Wainwright, about 200 kilometres southeast of Edmonton.', 'CBC News', 'https://www.cbc.ca/news/canada/edmonton/canadian-soldier-killed-exercise-wainwright-1.5785198'],
+    ['Nov. 3, 2014', 'Pte. Steven Allen, 20, training to become a regular member of the infantry, is fatally injured when a lookout post collapses during an exercise at CFB Wainwright; he dies two days later at the University of Alberta hospital.', 'CBC News', 'https://www.cbc.ca/news/canada/edmonton/soldier-dies-after-training-incident-at-cfb-wainwright-alta-1.2826744']
+  ];
+  window.PAL_TOP_BACKGROUND = TOP_BACKGROUND;
   const EVENT_LEAD_HOURS = 2;
   const UPNEXT = [
     { id: 'alberta-referendum-2026', story: 'Alberta referendum', devName: 'the Alberta referendum', start: '2026-10-19T21:00:00-04:00', until: '2026-10-20T07:00:00-04:00',
+      background: [
+        ['July 24, 2026', 'Elections Alberta verifies nearly 223,000 signatures on the separatist petition, above the roughly 178,000 needed, though the petition is largely moot after the court quashed it; its backers and the province are appealing.', 'The Canadian Press (via Global News)', 'https://globalnews.ca/news/11988474/elections-alberta-separatism-petition-validated/'],
+        ['May 21, 2026', 'In a televised address, Premier Danielle Smith says a question will be added to the Oct. 19 ballot asking whether Alberta should remain in Canada or start the legal process for a binding referendum on separating; she says she will vote to stay.', 'CBC News', 'https://www.cbc.ca/news/canada/edmonton/alberta-separation-referendum-televised-address-9.7208162'],
+        ['May 13, 2026', 'Justice Shaina Leonard of the Court of King’s Bench quashes Stay Free Alberta’s separatist petition, finding the province had a “duty to consult with First Nations.”', 'Global News', 'https://globalnews.ca/news/11848163/alberta-judge-quashes-separation-petition-in-favour-of-first-nations/'],
+        ['Dec. 1, 2025', 'Elections Alberta says the Forever Canadian petition has passed verification and will be sent to the legislature.', 'CTV News', 'https://www.ctvnews.ca/edmonton/article/forever-canadian-petition-successful-elections-alberta/'],
+        ['Oct. 28, 2025', 'The Forever Canadian petition, led by Thomas Lukaszuk, calling for Alberta to remain in Canada, collects just over 456,000 signatures, far more than the 294,000 required.', 'Global News', 'https://globalnews.ca/video/11498821/forever-canadian-petition-surpasses-goal-collects-456k-signatures']
+      ],
       developed: [
         ['Mon 7:55 p.m.', 'More than a million Albertans voted by advance or mail-in ballot. Because of delays at some polling stations, affected voters have until 10 p.m. MT (midnight ET), and Elections Alberta will not release results until the last stations close; Question 10 results are expected between 1 a.m. and 4 a.m. MT Tuesday.', 'CTV News', 'https://www.ctvnews.ca/edmonton/article/delays-at-more-than-100-alberta-polling-stations-push-back-referendum-results-live-updates-here/'],
         ['Mon 6:32 p.m.', 'More than 100 polling stations opened late, so they will stay open past 8 p.m. MT, the latest until 10 p.m. MT at Edmonton’s Westminster School; couriers are delivering ballots to Maskwacis after reports a station there ran out.', 'CBC News', 'https://www.cbc.ca/news/canada/calgary/referendum-day-voters-react-9.7386960'],
@@ -3277,20 +3296,21 @@ function etAgeMs(label) {
   const esc = (x) => String(x).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const sec = document.getElementById('developed'), wrap = document.getElementById('devBlocks'); if (!sec || !wrap) return;
   const blocks = [];
+  const rowsOf = (list) => list.map(([t, x, o, u]) => '<li><time>' + esc(t) + '</time>' + esc(x) + ' (<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(o) + '</a>)</li>').join('');
   const now = Date.now(), lead = (window.PAL_EVENT_LEAD_HOURS || 2) * 3600000;
   (window.PAL_UPNEXT || []).forEach((e) => {
     const st = Date.parse(e.start), un = Date.parse(e.until);
     if (!e.developed || !e.developed.length || isNaN(st) || now < st - lead || now > un) return;
-    blocks.push({ id: 'developed-' + e.id, name: e.devName || e.story, back: '#bkEvent', html: e.developed.map(([t, x, o, u]) => '<li><time>' + esc(t) + '</time>' + esc(x) + ' (<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(o) + '</a>)</li>').join('') });
+    blocks.push({ id: 'developed-' + e.id, name: e.devName || e.story, back: '#bkEvent', html: rowsOf(e.developed), bg: e.background || [] });
   });
   const items = [...document.querySelectorAll('#breaking .tl li')];
   const topBtn = document.querySelector('#breaking .bk-dev-btn');
   if (items.length) {
     const name = (document.getElementById('breaking').dataset.story || 'the top story').trim();
-    blocks.push({ id: 'developed-top', name: name, back: '#breaking', html: items.map((li) => '<li>' + li.innerHTML + '</li>').join('') });
+    blocks.push({ id: 'developed-top', name: name, back: '#breaking', html: items.map((li) => '<li>' + li.innerHTML + '</li>').join(''), bg: window.PAL_TOP_BACKGROUND || [] });
   } else if (topBtn) topBtn.hidden = true;
   if (!blocks.length) return;
-  wrap.innerHTML = blocks.map((k) => '<div class="dev-block" id="' + esc(k.id) + '" style="scroll-margin-top: 64px"><h3 class="dev-name">' + esc(k.name.charAt(0).toUpperCase() + k.name.slice(1)) + '</h3><ol class="dev-list">' + k.html + '</ol><p class="dev-back"><a href="' + k.back + '">&#8593; Back to the story</a></p></div>').join('');
+  wrap.innerHTML = blocks.map((k) => '<div class="dev-block" id="' + esc(k.id) + '" style="scroll-margin-top: 64px"><h3 class="dev-name">' + esc(k.name.charAt(0).toUpperCase() + k.name.slice(1)) + '</h3><ol class="dev-list">' + k.html + '</ol>' + (k.bg && k.bg.length ? '<h4 class="dev-bg-h">Further back: how we got here</h4><ol class="dev-list dev-bg">' + rowsOf(k.bg) + '</ol>' : '') + '<p class="dev-back"><a href="' + k.back + '">&#8593; Back to the story</a></p></div>').join('');
   wrap.querySelectorAll('.dev-list a').forEach((a) => { a.removeAttribute('style'); a.target = '_blank'; a.rel = 'noopener'; });
   sec.hidden = false;
   // Any "How this developed" button (top story or Breaking event, including ones drawn later) scrolls to its block
