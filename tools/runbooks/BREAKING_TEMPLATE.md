@@ -17,6 +17,11 @@ The other runbooks give the detail behind each part: house rules 12–22 in full
    - Each button says exactly where it goes, for example "▶ Watch live on CBC News · Live video · on now · opens cbc.ca" or "Live updates on CTV News · Live blog · updated 1:14 p.m. ET · opens ctvnews.ca".
    - It reads LIVENOW (`story` must match the Breaking story's name), COMING items on air now, and live blogs updated in the last 6 hours (LIVE_BLOG_HOURS).
    - Your part: keep LIVENOW current, with `updated` (the blog's real last-update time) and `until` for video, so the bar shows only coverage that is really live.
+   - **Every source, with a picture** (Hannah: "add in the photo or screen grab, and are there other sources … if there are primary sources offer them too"):
+     - List every newsroom running live coverage on the story in LIVENOW: CBC, CTV, Global, CityNews/CP24, the Toronto Star, Radio-Canada, the local papers, and AP or Reuters when they run one.
+     - Each entry gets a picture: `file` + `blob`, from the coverage's own share photo or a screen grab (img/grabs/). The bar shows it on the button, with a play icon for video.
+     - Add the primary source as `kind: 'official'`: an official live results page, a government or police live stream, a court or legislature feed, or CPAC for the full proceedings. Give it `what` (what it shows, with its own last-updated time), `updated` (when you checked it), `until`, a screen grab, and an optional `note`.
+     - The bar orders the buttons: live video first, then live blogs newest first, then official sources (shown in pale yellow as "Official: … · Primary source").
 3. **The tag itself.**
    - The page switches it to "Developing" one hour after the latest development (data-lastdev).
    - An event shows a countdown or "Live coverage under way".
