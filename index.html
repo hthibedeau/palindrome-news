@@ -850,6 +850,11 @@ header.site { border-bottom: 0; }
 
 .breaking p.first { margin: -4px 0 10px; font-size: 13px; font-weight: 600; letter-spacing: .02em; color: #F6E1E8; }
 .breaking p.first a { color: #FFFFFF; }
+/* Photo captions from the photo's originator, under the picture */
+.breaking .bart-cap { position: relative; z-index: 3; margin: -8px 0 16px; font-size: 13px; line-height: 1.45; color: #F6E1E8; max-width: 900px; }
+.breaking.top .bart-cap { color: #E6DEF6; }
+.bk-event .ev-media .bart { margin: 0 0 16px; }
+
 /* Hannah's rule: the newest updates always show at the top of a Breaking story, replacing older material */
 .bk-just { position: relative; z-index: 3; margin: 0 0 14px; padding: 10px 14px; background: rgba(15, 11, 25, .32); border-left: 4px solid #FFFFFF; max-width: 760px; }
 .bk-just h3 { display: flex; align-items: center; gap: 8px; margin: 0 0 6px; font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #FFFFFF; }
@@ -895,8 +900,9 @@ header.site { border-bottom: 0; }
 @media (min-width: 960px) {
   /* Wide screens: the photo leads on the left, the story beside it, so the headline is seen at the same time */
   .bk-event .bk-text { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); column-gap: 28px; align-items: start; }
-  .bk-event .bk-text > .bart { grid-column: 1; grid-row: 1 / span 12; margin: 0; }
-  .bk-event .bk-text > :not(.bart) { grid-column: 2; }
+  .bk-event .bk-text > .ev-media { grid-column: 1; grid-row: 1 / span 12; margin: 0; }
+  .bk-event .ev-media .bart-cap { margin: -8px 0 0; }
+  .bk-event .bk-text > :not(.ev-media) { grid-column: 2; }
   .breaking:not(.bk-event) .bk-text > .bart { aspect-ratio: 21 / 9; }
 }
 /* Breaking event: a story with scheduled live coverage becomes the Breaking story 2 hours before it starts (UPNEXT in the script) */
@@ -1104,7 +1110,7 @@ header.site { border-bottom: 0; }
       </div>
     </div>
     <div class="masthead">
-      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 10:22 p.m. ET Monday</b></span></div>
+      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 10:23 p.m. ET Monday</b></span></div>
       <div class="plate">
         <span class="stamp" id="stamp" hidden>Late edition</span>
         <a class="logo" href="#top">Palindrome <em>News</em></a>
@@ -1175,7 +1181,7 @@ header.site { border-bottom: 0; }
 
     <section class="breaking tap" id="breaking" data-photo-checked="2026-10-19T22:08:00-04:00" data-story="the CFB Wainwright fire" aria-label="Breaking news" data-since="2026-10-17T20:16:00-04:00" data-lastdev="2026-10-19T21:38:00-04:00" data-expected="2026-10-19T11:00:00-04:00" data-latest="https://www.ctvnews.ca/vancouver/article/its-just-not-fair-fraser-valley-teen-remembered-after-cfb-wainwright-tragedy/" data-first="https://www.ctvnews.ca/edmonton/article/fatalities-and-injuries-after-explosion-and-fire-at-canadian-forces-base-in-alberta/">
       <div class="bk-text">
-        <div class="bart" data-art="city" data-alt="Pte. Hayden Lykkemark, 19, of Langley, B.C., one of the four soldiers killed in the CFB Wainwright fire, in front of a military vehicle" data-photo="img/live/ctv-lykkemark-submitted.jpg" data-credit="Submitted, via CTV News"></div>
+        <div class="bart" data-art="city" data-alt="Pte. Hayden Lykkemark, 19, of Langley, B.C., one of the four soldiers killed in the CFB Wainwright fire, in front of a military vehicle" data-photo="img/live/ctv-lykkemark-submitted.jpg" data-credit="Submitted, via CTV News" data-caption="Hayden Lykkemark is seen posing in front of a military vehicle. (Submitted) — via CTV News"></div>
         <span class="tag">Breaking</span><span class="btime">Updated 10:13 p.m. ET Monday</span>
         <h2><a class="card-link" href="https://www.cbc.ca/news/canada/edmonton/livestory/cfb-wainwright-fire-deaths-carney-9.7386478" target="_blank" rel="noopener">Wainwright fire: high-wind warnings were issued before the blaze that killed four soldiers, as tributes and flags at half-mast spread across Canada</a></h2>
         <p class="first"><span class="bl"><b>Latest</b> <a href="https://www.ctvnews.ca/edmonton/article/four-dead-dozens-wounded-in-cfb-wainwright-fire-pm-says-live-here/" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline"><strong>CTV News</strong></a> · Sun 12:58 p.m.</span><span class="bl">First reported by <a href="https://www.ctvnews.ca/edmonton/article/fatalities-and-injuries-after-explosion-and-fire-at-canadian-forces-base-in-alberta/" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline"><strong>CTV News</strong></a> · Sat 8:16 p.m.</span></p>
@@ -1514,6 +1520,7 @@ header.site { border-bottom: 0; }
   <section id="corrections" class="ruled" aria-labelledby="cx-h" style="scroll-margin-top: 64px">
     <div class="band-head"><h2 id="cx-h">Corrections &amp; updates</h2><p>Every change we make to a story, with the time. Nothing is changed quietly.</p></div>
     <ol class="log">
+      <li><time>Mon 10:23 p.m.</time><span class="kind">Update</span><span><b>Photo captions:</b> the photos in the Breaking stories now carry the caption written by the outlet that published them, under the picture (CTV News; AP via Global News)</span></li>
       <li><time>Mon 10:22 p.m.</time><span class="kind">Update</span><span><b>Canada and the U.S.:</b> What comes next now says Alberta’s separation result is expected overnight, after 106 polling stations opened late and were kept open until 10 p.m. MT (<a href="https://www.cp24.com/news/canada/2026/10/19/delays-at-more-than-100-alberta-polling-stations-push-back-referendum-results-live-updates-here/" target="_blank" rel="noopener">CP24</a>, <a href="https://www.cbc.ca/news/canada/calgary/referendum-day-voters-react-9.7386960" target="_blank" rel="noopener">CBC News</a>).</span></li>
       <li><time>Mon 10:13 p.m.</time><span class="kind">Update</span><span><b>Breaking stories now lead with the newest news:</b> the CFB Wainwright headline and summary are rewritten around the latest reporting (<a href="https://globalnews.ca/video/12108763/high-wind-warnings-were-issued-for-wainwright-before-tragedy/" target="_blank" rel="noopener">Global News</a>, <a href="https://www.ctvnews.ca/vancouver/article/its-just-not-fair-fraser-valley-teen-remembered-after-cfb-wainwright-tragedy/" target="_blank" rel="noopener">CTV News</a>); each Breaking story shows its two newest updates right under the headline; this morning’s House of Commons summary folds into one “Earlier today” line</span></li>
       <li><time>Mon 10:08 p.m.</time><span class="kind">Update</span><span><b>Full newsroom run.</b> <b>CFB Wainwright:</b> Pte. Hayden Lykkemark’s foster mother on her son (<a href="https://www.ctvnews.ca/vancouver/article/its-just-not-fair-fraser-valley-teen-remembered-after-cfb-wainwright-tragedy/" target="_blank" rel="noopener">CTV News</a>, 9:34 p.m.), with his photo now leading the story; Ontario schools asked to lower flags (<a href="https://www.ctvnews.ca/toronto/politics/queens-park/article/sign-of-respect-and-solidarity-calandra-asks-ontario-schools-board-offices-to-fly-flags-to-half-mast-after-cfb-wainwright-tragedy/" target="_blank" rel="noopener">CTV News</a>); high-wind warnings before the fire (<a href="https://globalnews.ca/video/12108763/high-wind-warnings-were-issued-for-wainwright-before-tragedy/" target="_blank" rel="noopener">Global News</a>); 11 more newsrooms’ reports linked. <b>Alberta referendum:</b> most polls closed; Elections Alberta will report Question 10 first (<a href="https://www.elections.ab.ca/resources/media/news-releases/2026-10-19-2/" target="_blank" rel="noopener">Elections Alberta</a>); the separatist campaign’s results event (<a href="https://www.ctvnews.ca/calgary/article/i-think-weve-won-separatist-leader-says-alberta-referendum-has-promoted-serious-adult-discussion/" target="_blank" rel="noopener">CTV News</a>). <b>Breakdown:</b> France, Trump’s Russia sanctions waiver and the Bend, Oregon, shooting updated with new reporting (CTV/CNN, Fox, CBS, Kyiv Independent, AP). <b>Wire:</b> 13 new items from ABC6, Al Jazeera, CTV, WCTV, KPRC, CBS, Global and CBC.</span></li>
@@ -2165,14 +2172,17 @@ header.site { border-bottom: 0; }
     const seen = {}, list = [];
     (cands || []).forEach((c) => {
       if (!c || !c.src) return;
-      [(USE_LOCAL && LOCAL[c.src]) || '', c.src].filter(Boolean).forEach((u) => { if (!seen[u]) { seen[u] = 1; list.push({ u: u, credit: c.credit || '' }); } });
+      [(USE_LOCAL && LOCAL[c.src]) || '', c.src].filter(Boolean).forEach((u) => { if (!seen[u]) { seen[u] = 1; list.push({ u: u, credit: c.credit || '', caption: c.caption || '' }); } });
     });
     el.removeAttribute('data-art'); el.removeAttribute('data-photo');
     let i = 0;
     const show = () => {
-      if (i >= list.length) { el.innerHTML = art(kind || 'city', alt); return; }
+      // Hannah's rule: every photo carries the caption written by whoever took or published it, shown under the picture
+      const capEl = () => { let p = el.nextElementSibling; if (!p || !p.classList.contains('bart-cap')) { p = document.createElement('p'); p.className = 'bart-cap'; el.after(p); } return p; };
+      if (i >= list.length) { el.innerHTML = art(kind || 'city', alt); const p = el.nextElementSibling; if (p && p.classList.contains('bart-cap')) p.remove(); return; }
       const c = list[i];
-      el.innerHTML = '<span class="ph"><img src="' + esc(c.u) + '" alt="' + esc(alt || '') + '" decoding="async" referrerpolicy="no-referrer">' + (c.credit ? '<span class="credit">' + esc(c.credit) + '</span>' : '') + '</span>';
+      if (c.caption) { const p = capEl(); p.textContent = c.caption; } else { const p = el.nextElementSibling; if (p && p.classList.contains('bart-cap')) p.textContent = c.credit ? 'Photo: ' + c.credit : ''; }
+      el.innerHTML = '<span class="ph"><img src="' + esc(c.u) + '" alt="' + esc(alt || '') + '" decoding="async" referrerpolicy="no-referrer">' + (c.credit && !c.caption ? '<span class="credit">' + esc(c.credit) + '</span>' : '') + '</span>';
       const img = el.querySelector('img');
       img.dataset.wired = '1';
       img.addEventListener('error', () => { i++; show(); }, { once: true });
@@ -2229,7 +2239,7 @@ header.site { border-bottom: 0; }
       h: 'Alberta referendum: most polls have closed; the last close at midnight ET, when results begin, with the separation question counted first',
       url: 'https://www.cbc.ca/news/canada/edmonton/livestory/alberta-referendum-results-live-updates-separatism-october-19-2026-9.7387777', outlet: 'CBC News', urlWhen: 'Mon 9:52 p.m.',
       dek: 'Albertans voted Monday on 10 questions. Question 10 asks whether Alberta stays in Canada or moves toward a second, binding referendum on separation. Most polls closed at 8 p.m. MT, but more than 100 that opened late stay open until as late as 10 p.m. MT (midnight ET); Elections Alberta will release no results until every poll has closed, and will report Question 10 first (<a href="https://www.ctvnews.ca/edmonton/article/delays-at-more-than-100-alberta-polling-stations-push-back-referendum-results-live-updates-here/" target="_blank" rel="noopener">CTV News</a>, <a href="https://www.elections.ab.ca/resources/media/news-releases/2026-10-19-2/" target="_blank" rel="noopener">Elections Alberta</a>). More than a million Albertans voted early (<a href="https://www.cbc.ca/news/canada/edmonton/livestory/alberta-referendum-results-live-updates-separatism-october-19-2026-9.7387777" target="_blank" rel="noopener">CBC News</a>).',
-      photo: 'img/live/global-referendum-wainwright-voter.jpg', credit: 'AP Photo/Ty O’Neil, via Global News', alt: 'A voter at a polling location in Wainwright, Alta., on Monday, Oct. 19, 2026',
+      photo: 'img/live/global-referendum-wainwright-voter.jpg', credit: 'AP Photo/Ty O’Neil, via Global News', caption: 'A voting location in Wainwright, Alberta, is seen on Monday, Oct. 19, 2026. (AP Photo/Ty O’Neil) — via Global News', alt: 'A voter at a polling location in Wainwright, Alta., on Monday, Oct. 19, 2026',
       schedule: [
         { at: '2026-10-19T21:00:00-04:00', to: '2026-10-20T01:00:00-04:00', local: '7–11 p.m. MT', text: 'CBC News Special: Alberta Votes: Referendum Night, live results and analysis on CBC.ca, CBC Gem, YouTube and CBC Calgary and Edmonton online', outlet: 'CBC News', url: 'https://www.cbc.ca/player/play/video/9.7379746' },
         { at: '2026-10-19T22:00:00-04:00', local: '8 p.m. MT', text: 'Most polling stations close; stations that opened late stay open longer', outlet: 'CTV News', url: 'https://www.ctvnews.ca/edmonton/article/delays-at-more-than-100-alberta-polling-stations-push-back-referendum-results-live-updates-here/' },
@@ -2276,7 +2286,7 @@ header.site { border-bottom: 0; }
       }).join('');
       const nets = (typeof COMING !== 'undefined' ? COMING : []).filter((c) => (c.story || '').indexOf(ev.story) === 0);
       const btns = nets.map((c) => '<a href="' + esc(c.url) + '" target="_blank" rel="noopener">' + esc(c.net) + '<small>' + esc(fmt(T(c.when)) + ' ET' + (day(T(c.when)) !== today ? ' ' + day(T(c.when)) : '')) + '</small></a>').join('');
-      box.innerHTML = '<div class="bk-text"><div class="bart ev-art"></div>'
+      box.innerHTML = '<div class="bk-text"><div class="ev-media"><div class="bart ev-art"></div></div>'
         + '<div class="ev-tag"><span class="tag">Breaking</span><span class="ev-count">' + esc(started ? 'Live coverage under way' : 'Live coverage begins in ' + left(T(ev.start) - now)) + '</span></div>'
         + '<h2><a class="card-link" href="' + esc(ev.url) + '" target="_blank" rel="noopener">' + esc(ev.h) + '</a></h2>'
         + '<p class="first"><span class="bl"><b>Latest</b> <a href="' + esc(ev.url) + '" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline"><strong>' + esc(ev.outlet) + '</strong></a>' + (ev.urlWhen ? ' · ' + esc(ev.urlWhen) : '') + '</span></p>'
@@ -2285,7 +2295,7 @@ header.site { border-bottom: 0; }
         + ((ev.developed && ev.developed.length) ? '<a class="bk-dev-btn" href="#developed-' + esc(ev.id) + '">How this developed <span aria-hidden="true">&#8595;</span></a>' : '')
         + (btns ? '<div class="bk-next' + (started ? ' on' : '') + '" style="margin-top: 0"><div class="nx-when"><i aria-hidden="true"></i>' + (started ? 'Watch live' : 'Where to watch') + '</div><div class="nx-btns">' + btns + '</div></div>' : '')
         + '</div>';
-      const pics = [{ src: ev.photo, credit: ev.credit }]
+      const pics = [{ src: ev.photo, credit: ev.credit, caption: ev.caption }]
         .concat(nets.map((c) => ({ src: c.file, credit: c.net })), nets.map((c) => ({ src: c.img, credit: c.net })))
         .concat((typeof LIVENOW !== 'undefined' ? LIVENOW : []).filter((l) => (l.story || '').indexOf(ev.story.split(' ')[0]) === 0).map((l) => ({ src: l.file || l.img, credit: l.net })));
       imageChain(box.querySelector('.bart'), pics, 'ballot', ev.alt || ev.h);
@@ -2297,8 +2307,8 @@ header.site { border-bottom: 0; }
   (function topSlotImage() {
     const bk = document.getElementById('breaking'); if (!bk) return;
     const bart = bk.querySelector('.bk-side .bart') || bk.querySelector('.bart'); if (!bart) return;
-    const own = { src: bart.dataset.photo, credit: bart.dataset.credit };
-    imageChain(bart, [own, { src: 'img/live/ctv-farrell-condolence-book.jpg', credit: 'Jasmine Pelletier/CTV News' }, { src: 'img/live/ctv-wong-handout.jpg', credit: 'The Canadian Press/Handout - Canadian Armed Forces, via CTV News' }].concat(storyPics(bk.querySelector('.bk-grabs')), storyPics(bk.querySelector('.bk-vids:not(.bk-grabs)'))), bart.dataset.art || 'city', bart.dataset.alt || '');
+    const own = { src: bart.dataset.photo, credit: bart.dataset.credit, caption: bart.dataset.caption };
+    imageChain(bart, [own, { src: 'img/live/ctv-farrell-condolence-book.jpg', credit: 'Jasmine Pelletier/CTV News', caption: 'A book has been set out at city hall for those who wish to share their condolences. Oct. 19, 2026. (Jasmine Pelletier/CTV News)' }, { src: 'img/live/ctv-wong-handout.jpg', credit: 'The Canadian Press/Handout - Canadian Armed Forces, via CTV News', caption: 'Sgt. Morgan Wong, 26, is shown in an undated handout photo. THE CANADIAN PRESS/Handout - Canadian Armed Forces' }].concat(storyPics(bk.querySelector('.bk-grabs')), storyPics(bk.querySelector('.bk-vids:not(.bk-grabs)'))), bart.dataset.art || 'city', bart.dataset.alt || '');
   })();
 
   // Breaking news takes over the Daily Brief slot
