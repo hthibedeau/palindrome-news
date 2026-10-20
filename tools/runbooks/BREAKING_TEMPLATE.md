@@ -1,0 +1,77 @@
+# The Breaking story template (Hannah: "I want all breaking news to be done like this in the future")
+
+Every Breaking story uses this layout, now and in the future. That covers the top slot (section#breaking) and every Breaking event panel (#bkEvent, built from UPNEXT). It was settled with Hannah on Mon Oct 19, 2026, on the CFB Wainwright fire and the Alberta referendum. When a new story takes the top slot or a new Breaking event starts, build it this way in the same run. Never fall back to the old long layout.
+
+The other runbooks give the detail behind each part: house rules 12–22 in full-update.md, BREAKING_SOURCES.md and BREAKING_EVENTS.md. This file is the checklist.
+
+## The layout, top to bottom
+1. **Photo first, then its caption.**
+   - Use the best, newest real news photo of the story, never a drawing. Check for a better one every 15 minutes, from all sources.
+   - Save it to img/live/, upload it as an asset and map it in LOCAL.
+   - Under the photo goes the caption exactly as the photo's publisher wrote it, ending "— via <outlet>": data-caption on .bart, or caption in the UPNEXT entry.
+   - Keep earlier photos as fallbacks in imageChain.
+   - On wide screens, the event photo sits on the left beside the headline.
+2. **The "Breaking" tag.**
+   - The page switches it to "Developing" one hour after the latest development (data-lastdev).
+   - An event shows a countdown or "Live coverage under way".
+3. **Headline.**
+   - One line, about 15 words, leading with the NEWEST development.
+   - Rewrite it every time the story develops.
+4. **Credit lines.**
+   - "LATEST <outlet> · <time>" points to the newest, fullest free report.
+   - "First reported by <outlet> · <time>".
+   - "For subscribers: The Globe and Mail", when it applies.
+5. **Tabs**, only one open at a time:
+   - **Top story:** Latest · Key facts · <the victims' box, under its own heading, e.g. "The four who died">, only if there are victims · Not yet known · Timeline.
+   - **Breaking event:** Latest · Coming up · Key facts · Not yet known · Timeline.
+   - **Latest** holds the summary (.bk-dek, at most 3 short sentences, newest first) and the two newest timeline lines ("Latest updates").
+   - **Key facts** holds 3–6 one-line facts, each led by its number in bold and ending with its source link.
+     - Top story: section#breaking .bk-keyfacts ul.kf. Event: UPNEXT keyfacts.
+     - Below the facts: the source-count tracker, and the full "What we know" paragraphs folded as "Everything we know, in full".
+   - **Not yet known** holds 2–4 one-line open questions, each with a source.
+     - Top story: .bk-keyfacts ul.ky. Event: UPNEXT unknowns.
+     - The full paragraphs are folded below.
+   - **Coming up** (events only) holds every scheduled update with its Eastern time, local time and "in N min / Now / Done", each cited, then the watch buttons.
+   - **Timeline** holds "How this story developed", newest first, one or two short sentences per line, each with its real time and source.
+     - Top story: .tl. Event: UPNEXT developed.
+     - Long-running stories also get a folded "Further back: how we got here" (TOP_BACKGROUND, or UPNEXT background). Truly breaking stories (a sudden fire, crash, attack or disaster) get NO "further back".
+6. **"Latest reports".**
+   - Screen grabs of the three newest reports on the story, each linked to the outlet with its real time.
+   - Replace the oldest when a newer report comes in.
+7. **Never on a Breaking story:**
+   - a "How this developed" button (the Timeline tab replaced it)
+   - "Tap to open" wording on fold-out buttons
+   - long walls of text
+   - material older than 12 hours in the Breaking segment (the page drops it by itself; the full record lives in the "How this developed" section further down and in the log)
+   - old broadcasts at the top: a summary more than two hours old folds into one "Earlier today" line
+
+## Around it
+- **"Live coverage now" is its own band**, right below the Breaking stories, separate from them. It holds live video, live blogs and "Coming up live" tiles, named by story, each with a picture.
+- **Every source, every run.**
+  - Search the whole range of newsrooms: national, local, hometown, official, wire, U.S. and international.
+  - Link every outlet reporting the story in its STORY match, the tribute lists and the key facts.
+  - Names, photos and family tributes of victims go up as soon as any outlet publishes them.
+- **Scheduled live coverage** on a story makes it a Breaking event two hours before it starts (UPNEXT, BREAKING_EVENTS.md).
+- **Check every link** before publishing. Replace any dead one with a working source.
+
+## When a NEW story becomes Breaking (top slot)
+In the same run:
+1. Set section#breaking's data-since, data-lastdev, data-latest, data-first, data-story and data-photo-checked.
+2. Write the photo with its caption, the headline, the credit lines and the summary.
+3. Write .bk-keyfacts (ul.kf, ul.ky).
+4. Add the victims' box (.who), if there are victims.
+5. Start a fresh .tl timeline.
+6. Add the full .know paragraphs.
+7. Add the "Latest reports" screen grabs.
+8. Set TOP_BACKGROUND to [] for a sudden event, or fill it with dated milestones for a long-running story.
+9. Add the STORY entry.
+10. Move the old top story to the lead or the wire.
+
+The page builds the tabs, "Latest updates", the timeline toggle and the "How this developed" section by itself from these parts.
+
+Before publishing, check it like a reader on a phone (390 wide) and a wide screen (1280):
+- every tab opens
+- the photo and its caption show
+- no headline is older than the newest timeline line
+- every link opens the right outlet in a new tab
+- there are no page errors

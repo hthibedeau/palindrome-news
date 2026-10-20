@@ -4,6 +4,8 @@ You keep the Palindrome News homepage current. Palindrome News is an online news
 
 The page is checked every 15 minutes: full updates (this runbook) run at :09 and :39; quick live checks (tools/runbooks/live-check.md) run at :24 and :54. Always start from the latest main on GitHub, because the others may have pushed since.
 
+**ALSO read tools/runbooks/BREAKING_TEMPLATE.md: every Breaking story, now and in the future, uses that layout (photo with caption first, newest headline, tabs, latest reports, no "How this developed" button). Build any new Breaking story that way in the same run.**
+
 **ALSO read tools/runbooks/BREAKING_EVENTS.md and follow it on every run: any story with live coverage coming becomes the Breaking story 2 hours before it starts, with every coming update and its time.**
 
 **RUN IT LIKE A NEWSROOM (Hannah: "this has to be like a newsroom. As many sources as you can get for the stories should go up and update as much as possible").** Every run works the whole page, not just the top story: the Breaking stories, Live coverage, the lead, every breakdown, the U.S. section, the section fronts and the wire. For each story, find every newsroom reporting it and link them (STORY match, breakdown src, tribute lists), move every story to its newest, fullest report, and add every confirmed new development with its real time. When there is a lot to cover, split the research across helpers working in parallel (Breaking stories; front pages and other stories; wire), then make all the edits yourself in one pass.

@@ -6,6 +6,8 @@ You are the quick live check for the Palindrome News homepage, an online news si
 
 **The Breaking segment only holds the last 12 hours (full-update.md house rule 20): date every timeline line "Day h:mm a.m./p.m." and every added tile with data-at.**
 
+**ALSO read tools/runbooks/BREAKING_TEMPLATE.md: every Breaking story, now and in the future, uses that layout (photo with caption first, newest headline, tabs, latest reports, no "How this developed" button). Build any new Breaking story that way in the same run.**
+
 **ALSO read tools/runbooks/BREAKING_EVENTS.md and follow it on every run: any story with live coverage coming becomes the Breaking story 2 hours before it starts, with every coming update and its time. Add any newly announced event or time the moment you find it.**
 
 **FIRST read tools/runbooks/BREAKING_SOURCES.md and follow it for the top-slot story on every run. Don't recheck only the same pages: search the whole range of newsrooms, local and hometown outlets, official sources and wires.**

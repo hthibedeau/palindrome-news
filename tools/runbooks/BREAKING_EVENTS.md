@@ -1,4 +1,4 @@
-# Breaking events: live coverage coming becomes the Breaking story 2 hours ahead (Hannah's rule)
+# Breaking events (layout: tools/runbooks/BREAKING_TEMPLATE.md): live coverage coming becomes the Breaking story 2 hours ahead (Hannah's rule)
 
 Hannah: "When there is a story that will have live updates, put that as the breaking story 2 hours before the event, then add in any updates that are coming with times." She wants this to happen all the time, on every run of every update task (full updates at :09 and :39, live checks at :24 and :54). This file says exactly how it was first done (the Alberta referendum, Mon Oct 19, 2026) so every run does it the same way.
 
