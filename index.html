@@ -861,6 +861,8 @@ header.site { border-bottom: 0; }
 .dev-list time { display: block; font-size: 13px; font-weight: 700; color: var(--wine); font-variant-numeric: tabular-nums; }
 .dev-list a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
 .dev-back { margin: 8px 0 0; font-size: 14px; font-weight: 600; }
+.dev-block + .dev-block { margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--line); }
+.dev-name { margin: 0 0 12px; font-family: var(--serif); font-size: 22px; font-weight: 600; color: var(--title); }
 .dev-back a { color: var(--accent); }
 /* Hannah's rule: the story's photo sits at the TOP of the story it belongs to, never after it */
 .breaking .bk-text > .bart { aspect-ratio: 16 / 9; max-width: none; margin: 0 0 16px; }
@@ -1069,7 +1071,7 @@ header.site { border-bottom: 0; }
       </div>
     </div>
     <div class="masthead">
-      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 8:54 p.m. ET Monday</b></span></div>
+      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 9:00 p.m. ET Monday</b></span></div>
       <div class="plate">
         <span class="stamp" id="stamp" hidden>Late edition</span>
         <a class="logo" href="#top">Palindrome <em>News</em></a>
@@ -1148,7 +1150,7 @@ header.site { border-bottom: 0; }
         <div class="bk-live" id="bkLive" hidden></div>
         <div class="bk-chan" id="bkChannels" hidden></div>
         <p class="bk-dek">A fast-moving grass fire swept a training area at the Alberta base Saturday, killing four soldiers; 39 were taken to hospital, 19 in critical condition (<a href="https://www.ctvnews.ca/edmonton/article/what-happened-at-cfb-wainwright-4-soldiers-dead-39-wounded-here-are-the-confirmed-facts/" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline">CTV News</a>). Chief of the Defence Staff Gen. Jennie Carignan says three investigations are under way and the board of inquiry’s findings will be released publicly (<a href="https://www.ctvnews.ca/politics/article/chief-of-the-defence-staff-commits-to-publicly-release-cfb-wainwright-inquiry-findings/" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline">CTV News</a>). The cause is not yet known.</p>
-        <a class="bk-dev-btn" href="#developed">How this developed <span aria-hidden="true">&#8595;</span></a>
+        <a class="bk-dev-btn" href="#developed-top">How this developed <span aria-hidden="true">&#8595;</span></a>
         <p class="acc-h">Latest reports</p>
         <div class="bk-vids bk-grabs"><a class="bkv" href="https://www.ctvnews.ca/saskatoon/prince-albert/article/prince-albert-community-mourns-service-member-lost-in-wainwright-tragedy/" target="_blank" rel="noopener"><span class="bvt" data-art="city" data-alt="Screen grab of the report: Prince Albert mourns Pte. Shaun Farrell, 23" data-photo="img/grabs/ctv-farrell-prince-albert.jpg" data-credit="Screen grab · CTV News"></span><span class="bvl">CTV News · Mon 7:51 p.m.</span><span class="bvh">Prince Albert mourns Pte. Shaun Farrell, 23</span></a><a class="bkv" href="https://www.ctvnews.ca/edmonton/article/an-incredible-person-sgt-morgan-wong-26-remembered-before-cfb-wainwright-tragedy/" target="_blank" rel="noopener"><span class="bvt" data-art="city" data-alt="Screen grab of the report: ‘An incredible person’: Sgt. Morgan Wong, 26, remembered" data-photo="img/grabs/ctv-wong-remembered.jpg" data-credit="Screen grab · CTV News"></span><span class="bvl">CTV News · Mon 7:20 p.m.</span><span class="bvh">‘An incredible person’: Sgt. Morgan Wong, 26, remembered</span></a><a class="bkv" href="https://www.ctvnews.ca/politics/article/chief-of-the-defence-staff-commits-to-publicly-release-cfb-wainwright-inquiry-findings/" target="_blank" rel="noopener"><span class="bvt" data-art="city" data-alt="Screen grab of the report: Canada’s top general says the inquiry findings will be made public" data-photo="img/grabs/ctv-carignan-inquiry.jpg" data-credit="Screen grab · CTV News"></span><span class="bvl">CTV News · Mon 6:14 p.m.</span><span class="bvh">Canada’s top general says the inquiry findings will be made public</span></a></div>
         <div class="who" style="margin: 12px 0; padding: 10px 12px; border-left: 3px solid var(--wine); background: var(--surface)">
@@ -1278,9 +1280,8 @@ header.site { border-bottom: 0; }
   </section>
 
   <section id="developed" aria-labelledby="dev-h" style="scroll-margin-top: 64px" hidden>
-    <div class="band-head"><h2 id="dev-h">How this developed</h2><p id="devSub">The full timeline of the top story, newest first, each line linked to the outlet that reported it.</p></div>
-    <ol class="dev-list" id="devList"></ol>
-    <p class="dev-back"><a href="#breaking">&#8593; Back to the top story</a></p>
+    <div class="band-head"><h2 id="dev-h">How this developed</h2><p id="devSub">The full timeline of each Breaking story, newest first, each line linked to the outlet that reported it.</p></div>
+    <div id="devBlocks"></div>
   </section>
 
   <section id="video" aria-labelledby="w-h" style="scroll-margin-top: 64px">
@@ -1470,6 +1471,7 @@ header.site { border-bottom: 0; }
   <section id="corrections" class="ruled" aria-labelledby="cx-h" style="scroll-margin-top: 64px">
     <div class="band-head"><h2 id="cx-h">Corrections &amp; updates</h2><p>Every change we make to a story, with the time. Nothing is changed quietly.</p></div>
     <ol class="log">
+      <li><time>Mon 9:00 p.m.</time><span class="kind">Update</span><span><b>How this developed, on every Breaking story:</b> the Alberta referendum panel now has its own “How this developed” button and timeline further down the page (<a href="https://www.ctvnews.ca/edmonton/article/delays-at-more-than-100-alberta-polling-stations-push-back-referendum-results-live-updates-here/" target="_blank" rel="noopener">CTV News</a>, <a href="https://www.cbc.ca/news/canada/calgary/referendum-day-voters-react-9.7386960" target="_blank" rel="noopener">CBC News</a>, The Canadian Press), alongside the CFB Wainwright timeline</span></li>
       <li><time>Mon 8:54 p.m.</time><span class="kind">Update</span><span><b>Watch:</b> added five clips from the networks’ own YouTube channels, with pictures: CNN, <a href="https://www.youtube.com/watch?v=_uHb9SsdN1E" target="_blank" rel="noopener">boy killed as a car crashes into a Wichita youth soccer game</a> (Oct. 18); France 24, <a href="https://www.youtube.com/watch?v=HjgQtynH-zA" target="_blank" rel="noopener">French shops left wrecked after a weekend of riots</a> (Oct. 19); CBS News, <a href="https://www.youtube.com/watch?v=0bLqaqPAt_k" target="_blank" rel="noopener">Trump faces backlash over easing sanctions on Russian oil</a> (CBS Mornings, Oct. 19); Associated Press, <a href="https://www.youtube.com/watch?v=sNc4-22iFSQ" target="_blank" rel="noopener">protesters clash with police in Tirana, Albania</a> (Oct. 17); NHK World, <a href="https://www.youtube.com/watch?v=L6qtnHZxwEw" target="_blank" rel="noopener">typhoon rains fuel an invasive weed in Japanese farmland</a> (Oct. 15). Dropped four older clips (CNN, Oct. 13; Associated Press, Oct. 15; France 24 and CBS News, Oct. 17) to keep Watch fresh.</span></li>
       <li><time>Mon 8:51 p.m.</time><span class="kind">Update</span><span><b>How this developed:</b> the top story now has a “How this developed” button that takes you to the story’s full timeline further down the page, including the updates more than 12 hours old</span></li>
       <li><time>Mon 8:47 p.m.</time><span class="kind">Update</span><span><b>Breaking keeps only the last 12 hours:</b> anything covered more than 12 hours ago now drops out of the Breaking segment by itself (older “How this story developed” lines, finished broadcast summaries). Removed from CFB Wainwright: the Saturday and Sunday videos, the “two accounts” of the early toll, and the summary of Poilievre’s Sunday remarks</span></li>
@@ -2125,7 +2127,13 @@ header.site { border-bottom: 0; }
   // Only times reported by the network, the organiser or a reliable outlet. Earliest active event wins.
   const EVENT_LEAD_HOURS = 2;
   const UPNEXT = [
-    { id: 'alberta-referendum-2026', story: 'Alberta referendum', start: '2026-10-19T21:00:00-04:00', until: '2026-10-20T07:00:00-04:00',
+    { id: 'alberta-referendum-2026', story: 'Alberta referendum', devName: 'the Alberta referendum', start: '2026-10-19T21:00:00-04:00', until: '2026-10-20T07:00:00-04:00',
+      developed: [
+        ['Mon 7:55 p.m.', 'More than a million Albertans voted by advance or mail-in ballot. Because of delays at some polling stations, affected voters have until 10 p.m. MT (midnight ET), and Elections Alberta will not release results until the last stations close; Question 10 results are expected between 1 a.m. and 4 a.m. MT Tuesday.', 'CTV News', 'https://www.ctvnews.ca/edmonton/article/delays-at-more-than-100-alberta-polling-stations-push-back-referendum-results-live-updates-here/'],
+        ['Mon 6:32 p.m.', 'More than 100 polling stations opened late, so they will stay open past 8 p.m. MT, the latest until 10 p.m. MT at Edmonton’s Westminster School; couriers are delivering ballots to Maskwacis after reports a station there ran out.', 'CBC News', 'https://www.cbc.ca/news/canada/calgary/referendum-day-voters-react-9.7386960'],
+        ['Mon 2:20 p.m.', 'Elections Alberta says some polling stations opened late and will stay open past 8 p.m. MT so voters have time to cast ballots, which will delay results.', 'CBC News', 'https://www.cbc.ca/news/canada/calgary/referendum-day-voters-react-9.7386960'],
+        ['Mon 5:21 a.m.', 'Albertans go to the polls on whether to stay in Canada or hold a second, binding vote on leaving; more than 1.3 million have already voted by mail or at advance polls.', 'The Canadian Press (via CTV News)', 'https://www.ctvnews.ca/edmonton/alberta-referendum/article/albertans-head-to-polls-in-historic-referendum-on-whether-they-want-to-stay-in-canada/']
+      ],
       h: 'Alberta referendum: live results coverage begins at 9 p.m. ET; the last polls close at midnight ET',
       url: 'https://www.ctvnews.ca/edmonton/article/delays-at-more-than-100-alberta-polling-stations-push-back-referendum-results-live-updates-here/', outlet: 'CTV News', urlWhen: 'Mon 7:55 p.m.',
       dek: 'Albertans voted Monday on 10 questions. Question 10 asks whether Alberta stays in Canada or moves toward a second, binding referendum on separation. Because more than 100 polling stations opened late, the last polls close at 10 p.m. MT (midnight ET), and Elections Alberta will not release results until then (<a href="https://www.ctvnews.ca/edmonton/article/delays-at-more-than-100-alberta-polling-stations-push-back-referendum-results-live-updates-here/" target="_blank" rel="noopener">CTV News</a>).',
@@ -2138,6 +2146,7 @@ header.site { border-bottom: 0; }
         { at: '2026-10-20T03:00:00-04:00', to: '2026-10-20T06:00:00-04:00', local: '1–4 a.m. MT Tuesday', text: 'Results on Question 10, the separation question, expected, Elections Alberta says', outlet: 'CTV News', url: 'https://www.ctvnews.ca/edmonton/article/delays-at-more-than-100-alberta-polling-stations-push-back-referendum-results-live-updates-here/' }
       ] }
   ];
+  window.PAL_UPNEXT = UPNEXT; window.PAL_EVENT_LEAD_HOURS = EVENT_LEAD_HOURS;
   (function breakingEvent() {
     const box = document.getElementById('bkEvent'); if (!box) return;
     // Safety net: any scheduled live coverage in COMING (not already shown in the top slot) with no UPNEXT entry
@@ -2179,6 +2188,7 @@ header.site { border-bottom: 0; }
         + '<h2><a class="card-link" href="' + esc(ev.url) + '" target="_blank" rel="noopener">' + esc(ev.h) + '</a></h2>'
         + '<p class="first"><span class="bl"><b>Latest</b> <a href="' + esc(ev.url) + '" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline"><strong>' + esc(ev.outlet) + '</strong></a>' + (ev.urlWhen ? ' · ' + esc(ev.urlWhen) : '') + '</span></p>'
         + '<p class="bk-dek">' + ev.dek + '</p>'
+        + ((ev.developed && ev.developed.length) ? '<a class="bk-dev-btn" href="#developed-' + esc(ev.id) + '">How this developed <span aria-hidden="true">&#8595;</span></a>' : '')
         + (rows ? '<div class="ev-sched"><h3>Coming up</h3><ol>' + rows + '</ol></div>' : '')
         + (btns ? '<div class="bk-next' + (started ? ' on' : '') + '" style="margin-top: 0"><div class="nx-when"><i aria-hidden="true"></i>' + (started ? 'Watch live' : 'Where to watch') + '</div><div class="nx-btns">' + btns + '</div></div>' : '')
         + '</div>';
@@ -3260,16 +3270,35 @@ function etAgeMs(label) {
 // The section is built here from every line of the top story's "How this story developed" before the Breaking segment
 // keeps only its last 12 hours, so nothing is lost: older lines live on in #developed.
 (function howThisDeveloped() {
-  const sec = document.getElementById('developed'), list = document.getElementById('devList');
+  // Hannah's rule: EVERY Breaking story has a "How this developed" button that jumps to its full timeline further down.
+  // Blocks: each Breaking event now in its window (UPNEXT entries with developed: [[time, text, outlet, url], ...], newest first),
+  // then the top story (every line of its "How this story developed", including lines older than 12 hours).
+  const esc = (x) => String(x).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const sec = document.getElementById('developed'), wrap = document.getElementById('devBlocks'); if (!sec || !wrap) return;
+  const blocks = [];
+  const now = Date.now(), lead = (window.PAL_EVENT_LEAD_HOURS || 2) * 3600000;
+  (window.PAL_UPNEXT || []).forEach((e) => {
+    const st = Date.parse(e.start), un = Date.parse(e.until);
+    if (!e.developed || !e.developed.length || isNaN(st) || now < st - lead || now > un) return;
+    blocks.push({ id: 'developed-' + e.id, name: e.devName || e.story, back: '#bkEvent', html: e.developed.map(([t, x, o, u]) => '<li><time>' + esc(t) + '</time>' + esc(x) + ' (<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(o) + '</a>)</li>').join('') });
+  });
   const items = [...document.querySelectorAll('#breaking .tl li')];
-  const btn = document.querySelector('#breaking .bk-dev-btn');
-  if (!sec || !list || !items.length) { if (btn) btn.hidden = true; return; }
-  list.innerHTML = items.map((li) => '<li>' + li.innerHTML + '</li>').join('');
-  list.querySelectorAll('a').forEach((a) => { a.removeAttribute('style'); a.target = '_blank'; a.rel = 'noopener'; });
-  const name = (document.getElementById('breaking').dataset.story || '').trim();
-  const h = document.getElementById('dev-h'); if (h && name) h.textContent = 'How this developed: ' + name;
+  const topBtn = document.querySelector('#breaking .bk-dev-btn');
+  if (items.length) {
+    const name = (document.getElementById('breaking').dataset.story || 'the top story').trim();
+    blocks.push({ id: 'developed-top', name: name, back: '#breaking', html: items.map((li) => '<li>' + li.innerHTML + '</li>').join('') });
+  } else if (topBtn) topBtn.hidden = true;
+  if (!blocks.length) return;
+  wrap.innerHTML = blocks.map((k) => '<div class="dev-block" id="' + esc(k.id) + '" style="scroll-margin-top: 64px"><h3 class="dev-name">' + esc(k.name.charAt(0).toUpperCase() + k.name.slice(1)) + '</h3><ol class="dev-list">' + k.html + '</ol><p class="dev-back"><a href="' + k.back + '">&#8593; Back to the story</a></p></div>').join('');
+  wrap.querySelectorAll('.dev-list a').forEach((a) => { a.removeAttribute('style'); a.target = '_blank'; a.rel = 'noopener'; });
   sec.hidden = false;
-  if (btn) btn.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); sec.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' }); });
+  // Any "How this developed" button (top story or Breaking event, including ones drawn later) scrolls to its block
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest && e.target.closest('.bk-dev-btn'); if (!btn) return;
+    const t = document.querySelector(btn.getAttribute('href')); if (!t) return;
+    e.preventDefault(); e.stopPropagation();
+    t.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+  }, true);
 })();
 (function pruneBreaking() {
   const limit = BREAKING_KEEP_HOURS * 3600000;
