@@ -30,6 +30,20 @@ The page does the rest by itself:
 - Watch buttons drop once coverage ends.
 - The event comes back into the Breaking segment 2 hours before any later scheduled item, such as a premier's address the next evening.
 
+**ONE STORY, ONE PLACE (Hannah, Tue Oct 20, 2026: "If a story is in the breaking or developing, it would probably be better to remove it from other parts of the page").** The page does this by itself (oneStoryOnePlace, the last script).
+- While a story is in the Breaking segment (the top slot, as "Breaking" or "Developing", or a Breaking event that is showing), its repeats are hidden from the lead, the wire, the ticker, the breakdown, the section fronts, the U.S. section, Most read, What to watch and Smaller newsrooms.
+- They come back by themselves when the story leaves the Breaking segment.
+- A repeat is any item that:
+  - links to a page of the story (the story's own links plus every STORY entry sharing one of them), or
+  - names the story in its text.
+- What it keeps: Live coverage, How this developed, Watch, the opinion and analysis sections (Editorials, Think tanks, Today's reading, On the record, Canada and the U.S.), the Story board and the log.
+
+Your part, every run:
+1. Keep the story's name words current: `data-match="Wainwright"` on section#breaking, and `match: ['referendum', 'separation', …]` on each UPNEXT entry. When a new story goes Breaking, set them in the same run. Use distinctive words only, never a bare place name like "Alberta" that would hide unrelated stories.
+2. Put new developments on a Breaking story in its timeline, not in the wire.
+3. If the lead is the Breaking story, the page hides the lead and the wire moves up. Give the lead a different story when you can.
+4. Check what was hidden with `document.documentElement.dataset.dupHidden` (a count) and `.dup-hidden` (the elements) in the Playwright check.
+
 **Every run: check ALL outlets and official alert channels for new breaking news (not only the stories already on the page), and use primary sources (official releases, results pages, court filings, Hansard, full video) as much as possible — see BREAKING_SOURCES.md.**
 
 **ALSO read tools/runbooks/BREAKING_TEMPLATE.md: every Breaking story, now and in the future, uses that layout (photo with caption first, newest headline, tabs, latest reports, no "How this developed" button). Build any new Breaking story that way in the same run.**

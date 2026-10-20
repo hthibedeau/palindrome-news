@@ -49,6 +49,7 @@ The other runbooks give the detail behind each part: house rules 12–22 in full
    - old broadcasts at the top: a summary more than two hours old folds into one "Earlier today" line
 
 ## Around it
+- **One story, one place.** While a story is Breaking or Developing, the page hides its repeats from the other news sections and brings them back when it leaves. Opinion, analysis and video stay.
 - **"Live coverage now" is its own band**, right below the Breaking stories, separate from them. It holds live video, live blogs and "Coming up live" tiles, named by story, each with a picture.
 - **Always watching for new breaking news, and primary sources first** (BREAKING_SOURCES.md): every run scans all outlets and official alert channels for anything new, and cites official releases, results pages, court filings, Hansard and full video directly, with the newsrooms that reported them.
 - **Every source, every run.**
@@ -60,6 +61,7 @@ The other runbooks give the detail behind each part: house rules 12–22 in full
 
 ## When a NEW story becomes Breaking (top slot)
 In the same run:
+0. Set data-match on section#breaking (or match on the UPNEXT entry) to the story's distinctive words, so its repeats leave the rest of the page (one story, one place).
 1. Set section#breaking's data-since, data-lastdev, data-latest, data-first, data-story and data-photo-checked.
 2. Write the photo with its caption, the headline, the credit lines and the summary.
 3. Write .bk-keyfacts (ul.kf, ul.ky).
