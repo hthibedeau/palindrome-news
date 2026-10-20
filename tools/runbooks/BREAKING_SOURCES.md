@@ -31,3 +31,7 @@ Wherever a fact comes from an official or original source, go to that source, re
 ## Still true
 
 Every rule in the runbooks still applies: never invent facts, names, ages, quotes, photos, times or links; one tap to the original; The Globe and Mail is never the first click (subscribers' link only); neutral wording; real Eastern times with the day.
+
+## See also
+- tools/runbooks/SOURCES.md: every outlet and primary source with how to reach it from this workspace, the domains Hannah could allow, and the facts protocol.
+- tools/wire_scan.py: the fast first pass over every directly reachable newsroom, run first in every update and live check.

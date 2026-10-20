@@ -29,6 +29,12 @@ Then:
   3. Apply (writes the clip into Watch and the picture into LOCAL):
      python3 tools/network_youtube.py apply index.html <the PREPARED json file> --blob /_blob/<id>
 
+  5. Checked (EVERY run, full update and live check, after looking for new clips, even if
+     none were added): python3 tools/network_youtube.py checked index.html
+     It sets the "Clips checked <time> ET" line under the Watch heading. apply also sets it,
+     and stamps each new clip with "added", so the page shows it first with a "New" badge for
+     3 hours. Day labels ("Today", "Yesterday", "Oct 18") come from "up" on the page itself.
+
   4. Tidy (run once per update; removes network YouTube clips older than 7 days and
      keeps the newest 4 per network):
      python3 tools/network_youtube.py tidy index.html
@@ -184,11 +190,31 @@ def vid_line(e):
         parts.append(f"d: {js_str(e['d'])}")
     parts += [f"t: {js_str(e['t'])}", f"w: {js_str(e['w'])}", f"u: {js_str(e['u'])}", f"img: {js_str(e['img'])}",
               f"pic: {js_str(e.get('pic') or 'globe')}", f"up: {js_str(e['date'])}"]
+    if e.get("added"):
+        parts.append(f"added: {js_str(e['added'])}")
     return "    { " + ", ".join(parts) + " },\n"
+
+
+def eastern_now_iso():
+    return subprocess.run(["bash", "-c", "TZ=America/Toronto date +%Y-%m-%dT%H:%M:00%:z"], capture_output=True, text=True).stdout.strip()
+
+
+def stamp(s):
+    """Set VIDS_CHECKED (the "Clips checked" time shown in Watch) to now, Eastern."""
+    return re.sub(r"const VIDS_CHECKED = '[^']*';", "const VIDS_CHECKED = '" + eastern_now_iso() + "';", s, count=1)
+
+
+def checked(a):
+    s = open(a.index, encoding="utf-8").read()
+    if "const VIDS_CHECKED = '" not in s:
+        return print("REFUSED could not find `const VIDS_CHECKED` in", a.index)
+    open(a.index, "w", encoding="utf-8").write(stamp(s))
+    print("CHECKED", eastern_now_iso())
 
 
 def apply(a):
     e = json.load(open(a.spec, encoding="utf-8"))
+    e["added"] = eastern_now_iso()
     s = open(a.index, encoding="utf-8").read()
     if f"u: '{e['u']}'" in s:
         return print("SKIPPED already on the page:", e["id"])
@@ -209,6 +235,7 @@ def apply(a):
         return print("REFUSED could not find `const LOCAL = {` in", a.index)
     if json.dumps(e["img"]) + ":" not in s:
         s = s.replace(loc, loc + json.dumps(e["img"]) + ": " + json.dumps(a.blob) + ", ", 1)
+    s = stamp(s)
     open(a.index, "w", encoding="utf-8").write(s)
     print("APPLIED", e["o"], e["id"], "-", e["t"])
 
@@ -251,8 +278,10 @@ def main():
     q.add_argument("--at", type=int, help="position in Watch (0 = first); default %d" % INSERT_AT)
     q = sub.add_parser("tidy")
     q.add_argument("index")
+    q = sub.add_parser("checked")
+    q.add_argument("index")
     a = p.parse_args()
-    {"prepare": prepare, "apply": apply, "tidy": tidy}[a.cmd](a)
+    {"prepare": prepare, "apply": apply, "tidy": tidy, "checked": checked}[a.cmd](a)
 
 
 if __name__ == "__main__":

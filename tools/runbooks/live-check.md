@@ -6,6 +6,10 @@ You are the quick live check for the Palindrome News homepage, an online news si
 
 **The Breaking segment only holds the last 12 hours (full-update.md house rule 20): date every timeline line "Day h:mm a.m./p.m." and every added tile with data-at.**
 
+**STEP 0, EVERY RUN: `python3 tools/wire_scan.py --fresh 30`** (CBC and CTV front pages plus Global, Al Jazeera, Globe and Tyee feeds, newest first, with real Eastern times; NEW = the last 30 minutes). Check every NEW line before anything else. Then follow tools/runbooks/SOURCES.md: the outlet and primary-source directory, how to reach each one, and the facts protocol (primary source first, real times from article metadata only, how to settle conflicting numbers, corrections everywhere in the same run).
+
+**WATCH, EVERY RUN (Hannah: Watch should be updated more often):** look for the newest clips on every Breaking story and the day's other big stories (networks' official YouTube channels via tools/network_youtube.py, and the outlets' own video pages), add them, then run `python3 tools/network_youtube.py checked index.html` so the "Clips checked" time under the Watch heading is real. New clips show first with a "New" badge for 3 hours; day labels update by themselves.
+
 **Every run: check ALL outlets and official alert channels for new breaking news (not only the stories already on the page), and use primary sources (official releases, results pages, court filings, Hansard, full video) as much as possible — see BREAKING_SOURCES.md.**
 
 **ALSO read tools/runbooks/BREAKING_TEMPLATE.md: every Breaking story, now and in the future, uses that layout (photo with caption first, newest headline, tabs, latest reports, no "How this developed" button). Build any new Breaking story that way in the same run.**

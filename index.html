@@ -564,6 +564,8 @@ header.site { border-bottom: 0; }
 .vid .bigplay:focus-visible { outline: 3px solid var(--accent); outline-offset: -3px; }
 .vid .plays { font-weight: 600; letter-spacing: 0; text-transform: none; color: var(--muted); }
 .vfilters { margin-bottom: 14px; }
+.vid .vnew { display: inline-block; margin-right: 6px; padding: 1px 6px; background: #C2264B; color: #FFFFFF; font-size: 11px; letter-spacing: .08em; }
+#vidsChecked { display: block; margin-top: 4px; font-size: 13px; font-weight: 700; color: var(--accent); }
 /* What America's newsrooms are leading with */
 .fronts-us { margin-top: 32px; padding-top: 18px; border-top: 1px solid var(--line); }
 .fronts-us > h3 { margin: 0 0 4px; font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--title); }
@@ -1390,7 +1392,7 @@ header.site { border-bottom: 0; }
   </section>
 
   <section id="video" aria-labelledby="w-h" style="scroll-margin-top: 64px">
-    <div class="band-head"><h2 id="w-h">Watch</h2><p>The day's news on video, mixed so you see a bit of everything, from newsrooms in Canada, the U.S. and abroad, plus arts and life. Tap any clip to watch it on the outlet's own site.</p></div>
+    <div class="band-head"><h2 id="w-h">Watch</h2><p>The day's news on video, mixed so you see a bit of everything, from newsrooms in Canada, the U.S. and abroad, plus arts and life. Tap any clip to watch it on the outlet's own site.<span id="vidsChecked" hidden></span></p></div>
     <div class="filters vfilters" role="group" aria-label="Filter videos">
       <button type="button" data-v="all" aria-pressed="true">All</button>
       <button type="button" data-v="ca" aria-pressed="false">Canada</button>
@@ -2738,6 +2740,9 @@ header.site { border-bottom: 0; }
 
   // Watch: real clips; each plays on the outlet's site
   const AJI = 'https://www.aljazeera.com/wp-content/uploads/2026/10/';
+  // VIDS_CHECKED = real Eastern time Watch was last checked for new clips (every run sets it; tools/network_youtube.py checked index.html)
+  const VIDS_CHECKED = '2026-10-19T23:06:00-04:00';
+  // Optional per clip: added = ISO time it went on the page. Clips added in the last 3 hours show "New" and come first.
   const vids = [
     { r: 'ca', o: 'Global News', d: '3:31', t: 'Canada is “in mourning” after the deadly fire at CFB Wainwright, Carney says', w: 'Today', u: 'https://globalnews.ca/video/12107140/canada-is-in-mourning-following-deadly-explosion-fire-at-cfb-wainwright-carney/', img: 'https://i0.wp.com/media.globalnews.ca/videostatic/news/dlbybtkzqs-t4qad79u7h/ONLINE_STILL_CARNEY.jpg?w=500&quality=70&strip=all', pic: 'city' },
     { r: 'world', o: 'Sky News', d: '56:08', t: 'The World: France orders curfews after a weekend of riots', w: 'Today', u: 'https://www.youtube.com/watch?v=bIKMCUxCrcE', img: 'https://i.ytimg.com/vi/bIKMCUxCrcE/maxresdefault.jpg', pic: 'city', up: '2026-10-19' },
@@ -2927,13 +2932,31 @@ header.site { border-bottom: 0; }
   // Clips whose network doesn't share a still: a plain card naming the network, so the clip is never hidden behind a generic drawing
   const NETCOL = { CNN: '#B00000', 'CBC News': '#B3001B', CNBC: '#00396B', 'France 24': '#0E3A63', 'NBC News': '#2A2A6E', 'CTV News': '#1B2F5E' };
   const netCard = (v) => '<span class="netcard" style="--nc:' + (NETCOL[v.o] || '#2B1B54') + '"><b>' + esc(v.o) + '</b></span>';
+  // Day labels come from the upload date (up), so "Today" is never stale after midnight
+  const etYmd = (d) => new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Toronto', year: 'numeric', month: '2-digit', day: '2-digit' }).format(d);
+  function vDay(v) {
+    if (!v.up) return v.w;
+    const today = etYmd(new Date()), yest = etYmd(new Date(Date.now() - 864e5));
+    if (v.up === today) return 'Today';
+    if (v.up === yest) return 'Yesterday';
+    const [y, m, d] = v.up.split('-').map(Number);
+    return ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'][m - 1] + ' ' + d;
+  }
+  const vNew = (v) => v.added && Date.now() - Date.parse(v.added) < 3 * 36e5 && Date.now() >= Date.parse(v.added);
+  (function vidsStamp() {
+    const el = $('vidsChecked'), t = Date.parse(VIDS_CHECKED);
+    if (!el || isNaN(t)) return;
+    el.textContent = 'Clips checked ' + new Date(t).toLocaleTimeString('en-US', { timeZone: 'America/Toronto', hour: 'numeric', minute: '2-digit' }).replace('AM', 'a.m.').replace('PM', 'p.m.') + ' ET';
+    el.hidden = false;
+  })();
   function showVids(r) {
     curV = r;
-    const list = vids.filter((v) => r === 'all' || (r === 'midterms' ? v.m : r === 'life' ? v.k === 'life' : v.r === r));
+    const all = vids.filter((v) => r === 'all' || (r === 'midterms' ? v.m : r === 'life' ? v.k === 'life' : v.r === r));
+    const list = all.filter(vNew).sort((a, b) => Date.parse(b.added) - Date.parse(a.added)).concat(all.filter((v) => !vNew(v)));
     $('vids').innerHTML = list.map((v) => '<article class="vid"><a class="vt" href="' + esc(v.u) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + (MEDIA[slotId(v.u)] ? shot(slotId(v.u)) : v.img ? photo(v.img, v.pic, v.t, v.o) : netCard(v)) +
       '<span class="pb' + (v.live ? ' live' : '') + '">' + (v.live ? 'Live' : v.d ? esc(v.d) : 'Video') + '</span></a>' +
       '<a class="bigplay" href="' + esc(vurl(v.u)) + '" target="_blank" rel="noopener" aria-label="Play on ' + esc(v.o) + ': ' + esc(v.t) + '"><svg width="30" height="30" viewBox="0 0 24 24" fill="#2B1B54" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></a>' +
-      '<span class="src">' + esc(v.o) + ' <span class="plays">· plays on their site &#8599;</span></span><h3><a href="' + esc(v.u) + '" target="_blank" rel="noopener">' + esc(v.t) + '</a></h3><span class="when">' + esc(v.w) + '</span>' + addBtn(slotId(v.u)) + '</article>').join('');
+      '<span class="src">' + (vNew(v) ? '<b class="vnew">New</b>' : '') + esc(v.o) + ' <span class="plays">· plays on their site &#8599;</span></span><h3><a href="' + esc(v.u) + '" target="_blank" rel="noopener">' + esc(v.t) + '</a></h3><span class="when">' + esc(vDay(v)) + '</span>' + addBtn(slotId(v.u)) + '</article>').join('');
     wirePhotos();
   }
   document.querySelectorAll('.vfilters button').forEach((b) => b.addEventListener('click', () => {
