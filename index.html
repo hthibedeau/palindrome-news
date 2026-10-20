@@ -2590,11 +2590,11 @@ header.site { border-bottom: 0; }
     const lead = v || items[0];
     const what = lead.what.replace(/^Live:\s*/i, '');
     return '<div class="onair-bar" role="region" aria-label="Live now">'
-      + '<div class="oa-head"><span class="oa-live"><i aria-hidden="true"></i>' + (v ? 'Live now' : 'Live updates') + '</span>'
+      + '<div class="oa-head"><span class="oa-live"><i aria-hidden="true"></i>' + (v ? 'Live now' : items[0].cover ? 'Live coverage under way' : 'Live updates') + '</span>'
       + (what ? '<span class="oa-what">' + esc2(what.length > 140 ? what.slice(0, 137) + '…' : what) + '</span>' : '') + '</div>'
       + '<div class="oa-go">' + items.slice(0, 3).map((x) => '<a class="oa-btn' + (x.video ? '' : ' alt') + '" href="' + esc2(x.url) + '" target="_blank" rel="noopener">'
-        + '<b>' + (x.video ? '&#9654; Watch live on ' : 'Live updates on ') + esc2(x.net) + ' &#8599;</b>'
-        + '<small>' + esc2((x.video ? 'Live video' : 'Live blog') + ' · ' + x.note + ' · opens ' + x.site) + '</small></a>').join('') + '</div></div>';
+        + '<b>' + (x.video ? '&#9654; Watch live on ' : x.cover ? 'Follow the coverage on ' : 'Live updates on ') + esc2(x.net) + ' &#8599;</b>'
+        + '<small>' + esc2((x.video ? 'Live video · ' : x.cover ? '' : 'Live blog · ') + x.note + ' · opens ' + x.site) + '</small></a>').join('') + '</div></div>';
   };
   (function topOnAir() {
     const bk = document.getElementById('breaking'); if (!bk) return;
@@ -2668,7 +2668,13 @@ header.site { border-bottom: 0; }
       const all = UPNEXT.concat(autoEvents());
       const ev = all.filter(live).sort((a, b) => T(a.start) - T(b.start))[0] || all.filter(kept).sort((a, b) => T(b.until) - T(a.until))[0];
       const inWin = !!ev && live(ev);
-      const onair = ev ? window.PAL_onAir(ev.story) : [];
+      let onair = ev ? window.PAL_onAir(ev.story) : [];
+      // Never "Live coverage under way" without saying where: with no live video or blog listed, point to the
+      // story's newest live report (ev.url), named by outlet and site.
+      if (ev && !onair.length && inWin && now >= T(ev.start) && ev.url) {
+        let site = ''; try { site = new URL(ev.url).host.replace(/^www\./, ''); } catch (e) {}
+        onair = [{ video: false, net: ev.outlet || site, what: '', url: ev.url, site, note: (/live/i.test(ev.url) ? 'live updates' : 'latest report') + (ev.urlWhen ? ' · ' + ev.urlWhen : ''), cover: true }];
+      }
       if (!ev) { box.hidden = true; box.innerHTML = ''; return; }
       const started = now >= T(ev.start);
       const today = day(now);
@@ -2695,7 +2701,7 @@ header.site { border-bottom: 0; }
       const nets = (typeof COMING !== 'undefined' ? COMING : []).filter((c) => (c.story || '').indexOf(ev.story) === 0 && now <= (T(c.until || '') || (T(c.when) + 3 * 3600000)));
       const btns = nets.map((c) => '<a href="' + esc(c.url) + '" target="_blank" rel="noopener">' + esc(c.net) + '<small>' + esc(fmt(T(c.when)) + ' ET' + (day(T(c.when)) !== today ? ' ' + day(T(c.when)) : '')) + '</small></a>').join('');
       box.innerHTML = '<div class="bk-text"><div class="ev-media"><div class="bart ev-art"></div></div>'
-        + '<div class="ev-tag"><span class="tag">' + (inWin ? 'Breaking' : 'Developing') + '</span><span class="ev-count">' + esc(onair.length ? (nextUp ? 'Next: ' + nextUp : '') : !inWin ? (nextUp ? 'Next: ' + nextUp : 'Live coverage has ended') : started ? 'Live coverage under way' : 'Live coverage begins in ' + left(T(ev.start) - now)) + '</span></div>'
+        + '<div class="ev-tag"><span class="tag">' + (inWin ? 'Breaking' : 'Developing') + '</span><span class="ev-count">' + esc(onair.length ? (nextUp ? 'Next: ' + nextUp : '') : !inWin ? (nextUp ? 'Next: ' + nextUp : 'Live coverage has ended') : started ? '' : 'Live coverage begins in ' + left(T(ev.start) - now)) + '</span></div>'
         + window.PAL_onAirHTML(onair)
         + '<h2><a class="card-link" href="' + esc(ev.url) + '" target="_blank" rel="noopener">' + esc(ev.h) + '</a></h2>'
         + '<p class="first"><span class="bl"><b>Latest</b> <a href="' + esc(ev.url) + '" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline"><strong>' + esc(ev.outlet) + '</strong></a>' + (ev.urlWhen ? ' · ' + esc(ev.urlWhen) : '') + '</span></p>'
