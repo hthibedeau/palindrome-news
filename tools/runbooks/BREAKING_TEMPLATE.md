@@ -5,7 +5,7 @@ Every Breaking story uses this layout, now and in the future. That covers the to
 The other runbooks give the detail behind each part: house rules 12–22 in full-update.md, BREAKING_SOURCES.md and BREAKING_EVENTS.md. This file is the checklist.
 
 ## The layout, top to bottom
-1. **Photo first, then its caption.**
+1. **Photo first, then its caption.** It is replaced automatically every run by `python3 tools/auto_photo.py --page index.html --apply`, which uses the newest captioned, credited photo and keeps the old one as a fallback. tools/freshness_check.py flags a photo unchanged for 3 hours.
    - Find it with `python3 tools/photo_scan.py --page index.html`, which checks every Breaking story on the page, whatever it is, and gives the newest photos with their own captions and credits (method in full-update.md, under house rule 18b).
    - Use the best, newest real news photo of the story, never a drawing. Check for a better one every 15 minutes, from all sources.
    - Save it to img/live/, upload it as an asset and map it in LOCAL.

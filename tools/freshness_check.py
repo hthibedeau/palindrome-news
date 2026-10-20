@@ -74,6 +74,26 @@ def main():
     # breaking photos
     chk = re.search(r'data-photo-checked="([^"]*)"', s)
     print(f"  top-slot photo last checked: {chk.group(1) if chk else '?'}")
+    # Hannah: "constantly look for new photos" — a Breaking photo unchanged for PHOTO_MAX_H hours is a TO DO
+    PHOTO_MAX_H = 3
+    ps = re.search(r'data-photo-set="([^"]*)"', s)
+    sets = [("top slot", ps.group(1))] if ps else []
+    sets += [("event " + n, t) for n, t in re.findall(r"\{ id: '([^']*)'[^\n]*?photoSet: '([^']*)'", s)]
+    sets += [("event " + n, t) for n, t in re.findall(r"\{ id: '([^']*)', story[^\n]*\n(?:[^\n]*\n){0,200}?\s*photo: '[^']*'[^\n]*?photoSet: '([^']*)'", s)]
+    seen_sets = set()
+    for who, t in sets:
+        if who in seen_sets:
+            continue
+        seen_sets.add(who)
+        try:
+            h = (datetime.now(timezone.utc) - datetime.fromisoformat(t).astimezone(timezone.utc)).total_seconds() / 3600
+        except ValueError:
+            continue
+        print(f"  {who} photo set {h:.1f} h ago")
+        if h > PHOTO_MAX_H:
+            todo.append(f"PHOTO ({who}): unchanged for {h:.1f} h. Run photo_scan.py, switch to a newer captioned photo (keep the old one as a fallback) and update data-photo-set / photoSet, or say why there is none.")
+    if not ps:
+        todo.append("PHOTO (top slot): no data-photo-set. Add it (the time the photo was put up) whenever the photo changes.")
     # headline vs newest timeline line (top slot)
     k = s.find('id="breaking"')
     seg = s[k: s.find("</section>", k)] if k >= 0 else ""

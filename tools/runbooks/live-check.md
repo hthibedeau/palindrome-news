@@ -50,6 +50,8 @@ Your part, every run:
   - It stays as "Developing", with "Next: …" from its schedule, with its tabs, timeline, key facts and How this developed block, for 12 hours after its window or after its last scheduled item, whichever is later (EVENT_KEEP_HOURS).
   - Set `keepUntil` on the UPNEXT entry to keep it longer, or to end it sooner once the story is folded into the lead or the top slot.
 
+**LIVE VIDEO ALWAYS ABOVE LIVE BLOGS** (Hannah, Tue Oct 20, 2026), in the LIVE NOW bar and the Live coverage band. Add every scheduled broadcast on a Breaking story to COMING (one entry per network, with its live page) so it shows as live video when it starts.
+
 **LIVE NOW BAR:** every Breaking story with live video or a live blog updated in the last 6 hours shows a red LIVE NOW bar, with buttons naming the network, the kind (live video or live blog), the update time and the site it opens. Keep LIVENOW's `story`, `updated` and `until` exact every run, so the bar never sends viewers to coverage that has ended (BREAKING_TEMPLATE.md step 2).
 
 **EVERY RUN MUST CHANGE THE PAGE WHERE THE NEWS HAS CHANGED: photos, stories, copy, live coverage (Hannah, Tue Oct 20, 2026: "updates to photos, stories, copy, lives should be regular"; "why are you not updating"; "you need to scan more sources").** Stamping a check time without looking is not an update. After the wire scan, every full update and live check runs:
@@ -57,9 +59,13 @@ Your part, every run:
    - It lists stories newsrooms are running that the page does not have, most widely covered first. This is how the federal budget date and the Hoekstra remarks were missed.
    - Every MISSING story carried by 2 or more outlets, or by a national politics desk, goes on the page this run: the wire at least, and a desk, What to watch or Breaking if it is big.
    - Check the "NAMED BUT NOT LINKED" list too: a story named on the page may still be missing.
-2. `python3 tools/photo_scan.py --page index.html`
-   - If a newer, better captioned photo exists for a Breaking story, switch to it, keeping the old one as the first fallback.
-   - Only stamp data-photo-checked / photoChecked when you really compared.
+2. **PHOTOS, AUTOMATICALLY, EVERY RUN** (Hannah: "constantly look for new photos … This has to always happen in the code. The latest photos, captions and source."):
+   - Run `python3 tools/auto_photo.py --page index.html --apply`.
+   - It finds the newest photo on each Breaking story that has a caption and a credit, is at least 900 px wide, and was posted after the current one went up. It saves it, writes the photo, the caption exactly as published "(credit) — via outlet", the alt text and the set time (data-photo-set / photoSet), and keeps the old photo as the first fallback.
+   - Look at the photo with Read. If it does not show the story, or favours one side of a contested vote, rerun with `--skip <url>`.
+   - Upload the file as an asset and map it with `--blob file=/_blob/id`.
+   - tools/freshness_check.py flags any Breaking photo unchanged for 3 hours.
+   - The older manual way, `python3 tools/photo_scan.py --page index.html`, still lists every candidate.
 3. `python3 tools/schedule_check.py --page index.html`: keep Coming up current.
 4. `python3 tools/freshness_check.py --page index.html`. Every TO DO line is work for this run:
    - a desk with nothing new in 6 hours
