@@ -38,7 +38,9 @@ The other runbooks give the detail behind each part: house rules 12–22 in full
 6. **"Latest reports".**
    - Screen grabs of the three newest reports on the story, each linked to the outlet with its real time.
    - Replace the oldest when a newer report comes in.
+   - If CBC News has a report on the story, one of the three is always CBC's newest (Hannah's rule). CBC pages block the usual screen-grab tool here, so load the page in Playwright with each cbc.ca request fetched by curl (images skipped) and screenshot it at 1200x675. Save it as img/grabs/cbc-<slug>.jpg, check it with Read, upload it and map it in LOCAL.
 7. **Never on a Breaking story:**
+   - a "Read the latest" button or a "Today's Daily Brief" link (Hannah removed them; the "LATEST" credit line and "Latest reports" do that job)
    - a "How this developed" button (the Timeline tab replaced it)
    - "Tap to open" wording on fold-out buttons
    - long walls of text
