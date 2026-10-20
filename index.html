@@ -570,6 +570,8 @@ header.site { border-bottom: 0; }
 .onair-bar .oa-live i { width: 11px; height: 11px; border-radius: 50%; background: #FFFFFF; }
 @media (prefers-reduced-motion: no-preference) { .onair-bar .oa-live i { animation: pulse 1.4s ease-in-out infinite; } }
 .onair-bar .oa-what { font-size: 15px; font-weight: 600; line-height: 1.35; }
+.onair-bar .oa-group + .oa-group { margin-top: 12px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,.45); }
+.onair-bar .oa-gh { margin: 0 0 6px; font-size: 12px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: #FFFFFF; }
 .onair-bar .oa-go { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 8px; }
 .onair-bar .oa-btn { display: inline-flex; flex-direction: column; justify-content: center; min-height: 48px; padding: 8px 14px; background: #FFFFFF; color: #7A1F3D; text-decoration: none; border-radius: 2px; }
 .onair-bar .oa-btn b { font-size: 16px; font-weight: 800; }
@@ -2611,11 +2613,14 @@ header.site { border-bottom: 0; }
     return '<div class="onair-bar" role="region" aria-label="Live now">'
       + '<div class="oa-head"><span class="oa-live"><i aria-hidden="true"></i>' + (v ? 'Live now' : items[0].cover ? 'Live coverage under way' : 'Live updates') + '</span>'
       + (what ? '<span class="oa-what">' + esc2(what.length > 140 ? what.slice(0, 137) + '…' : what) + '</span>' : '') + '</div>'
-      + '<div class="oa-go">' + items.slice(0, 6).map((x) => '<a class="oa-btn' + (x.video ? '' : x.official ? ' off' : ' alt') + (x.pic ? ' has-pic' : '') + '" href="' + esc2(x.url) + '" target="_blank" rel="noopener">'
+      // Hannah: separate the live blogs from the broadcasts. Three groups, each with its own heading:
+      // Live broadcasts (video), Live blogs, Official sources (primary).
+      + [['Live broadcasts', items.filter((x) => x.video)], ['Live blogs', items.filter((x) => !x.video && !x.official)], ['Official sources', items.filter((x) => x.official)]]
+        .filter(([, g]) => g.length).map(([name, g]) => '<div class="oa-group"><p class="oa-gh">' + name + '</p><div class="oa-go">' + g.slice(0, 6).map((x) => '<a class="oa-btn' + (x.video ? '' : x.official ? ' off' : ' alt') + (x.pic ? ' has-pic' : '') + '" href="' + esc2(x.url) + '" target="_blank" rel="noopener">'
         + (x.pic ? '<span class="oa-pic"><img src="' + esc2(x.pic) + '" alt="" loading="lazy" onerror="this.parentNode.remove()">' + (x.video ? '<i aria-hidden="true">&#9654;</i>' : '') + '</span>' : '')
         + '<span class="oa-txt"><b>' + (x.video ? '&#9654; Watch live on ' : x.official ? 'Official: ' : x.cover ? 'Follow the coverage on ' : 'Live updates on ') + esc2(x.net) + ' &#8599;</b>'
         + (x.official && x.what ? '<span class="oa-sub">' + esc2(x.what) + '</span>' : '')
-        + '<small>' + esc2((x.video ? 'Live video · ' : x.official ? 'Primary source · ' : x.cover ? '' : 'Live blog · ') + x.note + ' · opens ' + x.site) + '</small></span></a>').join('') + '</div></div>';
+        + '<small>' + esc2((x.video ? 'Live video · ' : x.official ? 'Primary source · ' : x.cover ? '' : 'Live blog · ') + x.note + ' · opens ' + x.site) + '</small></span></a>').join('') + '</div></div>').join('') + '</div>';
   };
   (function topOnAir() {
     const bk = document.getElementById('breaking'); if (!bk) return;
