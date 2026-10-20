@@ -88,3 +88,14 @@ Hannah set Settings > Capabilities to "All domains". Tested at 11:20 p.m. ET Mon
 8. **Labels.**
    - Unconfirmed, contested or official-only claims say so plainly ("police say", "unconfirmed", "the campaign claims").
    - "Not yet known" lists what is still open.
+
+## Growing the source list (every full update)
+`python3 tools/source_discovery.py --add` tests candidate newsrooms and adds fresh feeds to wire_scan.FEEDS; `tools/gap_check.py` shows what the page is missing; `tools/freshness_check.py` shows what has gone stale. On Tue Oct 20, 2026 it added 36 feeds:
+- **CTV:** CTV News's own feed
+- **Official:** the Prime Minister's and the Bank of Canada's feeds
+- **CityNews:** Vancouver, Calgary, Edmonton, Winnipeg, Ottawa, Montreal and Halifax
+- **Canadian papers:** Toronto Sun, Ottawa Citizen, Vancouver Sun, The Province, Lethbridge Herald, Medicine Hat News and CKOM/PAnow
+- **Atlantic:** Halifax Examiner, SaltWire and the Telegraph-Journal
+- **North:** Nunatsiaq News and Yukon News
+- **Others in Canada:** The Narwhal, The Logic, TVA Nouvelles, Le Soleil, Daily Hive and Narcity
+- **U.S. and international:** NBC News, The Hill, Fox News, Euronews, The Japan Times, Kyiv Independent and Middle East Eye

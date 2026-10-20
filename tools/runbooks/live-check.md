@@ -52,6 +52,28 @@ Your part, every run:
 
 **LIVE NOW BAR:** every Breaking story with live video or a live blog updated in the last 6 hours shows a red LIVE NOW bar, with buttons naming the network, the kind (live video or live blog), the update time and the site it opens. Keep LIVENOW's `story`, `updated` and `until` exact every run, so the bar never sends viewers to coverage that has ended (BREAKING_TEMPLATE.md step 2).
 
+**EVERY RUN MUST CHANGE THE PAGE WHERE THE NEWS HAS CHANGED: photos, stories, copy, live coverage (Hannah, Tue Oct 20, 2026: "updates to photos, stories, copy, lives should be regular"; "why are you not updating"; "you need to scan more sources").** Stamping a check time without looking is not an update. After the wire scan, every full update and live check runs:
+1. `python3 tools/gap_check.py --page index.html --hours 4`
+   - It lists stories newsrooms are running that the page does not have, most widely covered first. This is how the federal budget date and the Hoekstra remarks were missed.
+   - Every MISSING story carried by 2 or more outlets, or by a national politics desk, goes on the page this run: the wire at least, and a desk, What to watch or Breaking if it is big.
+   - Check the "NAMED BUT NOT LINKED" list too: a story named on the page may still be missing.
+2. `python3 tools/photo_scan.py --page index.html`
+   - If a newer, better captioned photo exists for a Breaking story, switch to it, keeping the old one as the first fallback.
+   - Only stamp data-photo-checked / photoChecked when you really compared.
+3. `python3 tools/schedule_check.py --page index.html`: keep Coming up current.
+4. `python3 tools/freshness_check.py --page index.html`. Every TO DO line is work for this run:
+   - a desk with nothing new in 6 hours
+   - live blogs whose `updated` time is old (re-read the blog's newest post time; drop blogs that have stopped)
+   - What to watch items that have passed
+   - the wire with nothing new in 45 minutes
+   Do it, or say in the summary exactly why nothing newer exists.
+5. Rewrite headlines and summaries (copy) whenever there is a newer development, newest first, on the Breaking stories, the desks and What to watch.
+
+**ALWAYS ADDING SOURCES (Hannah: "always constantly be looking for news sources to be adding to the code").**
+- Every full update runs `python3 tools/source_discovery.py --add`. It tests every candidate newsroom's feeds and adds the fresh ones to tools/wire_scan.py. The results are logged in tools/runbooks/SOURCES_LOG.md.
+- Whenever you meet a newsroom that isn't in its CANDIDATES list (in search results, "with files from" credits, regional outlets, government and official sites), add it there in the same run.
+- tools/wire_scan.py now reads about 85 feeds and front pages. Arc-platform feeds (CTV, CP24, BNN, Le Soleil) carry UTC times marked as Eastern; the scanner corrects them and drops any time in the future.
+
 **Every run: check ALL outlets and official alert channels for new breaking news (not only the stories already on the page), and use primary sources (official releases, results pages, court filings, Hansard, full video) as much as possible — see BREAKING_SOURCES.md.**
 
 **ALSO read tools/runbooks/BREAKING_TEMPLATE.md: every Breaking story, now and in the future, uses that layout (photo with caption first, newest headline, tabs, latest reports, no "How this developed" button). Build any new Breaking story that way in the same run.**

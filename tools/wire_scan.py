@@ -57,12 +57,64 @@ FEEDS = [
     ("CBS News", "https://www.cbsnews.com/latest/rss/main"),
     ("ABC News", "https://abcnews.go.com/abcnews/topstories"),
     ("PBS NewsHour", "https://www.pbs.org/newshour/feeds/rss/headlines"),
+    # Added Tue Oct 20, 2026 after Hannah: "you need to scan more sources" (missed: budget date, Hoekstra)
+    ("CBC News (politics)", "https://www.cbc.ca/webfeed/rss/rss-politics"),
+    ("Global News", "https://globalnews.ca/national/feed/"),
+    ("Toronto Star (politics)", "https://www.thestar.com/search/?f=rss&t=article&c=politics*&l=50&s=start_time&sd=desc"),
+    ("The Canadian Press (via Winnipeg Free Press)", "https://www.winnipegfreepress.com/rss/?path=%2Fcanada"),
+    ("The Canadian Press (via Winnipeg Free Press)", "https://www.winnipegfreepress.com/rss/?path=%2Fbusiness"),
+    ("Canada's National Observer", "https://www.nationalobserver.com/front/rss"),
+    ("Financial Post", "https://financialpost.com/feed"),
+    ("BNN Bloomberg", "https://www.bnnbloomberg.ca/arc/outboundfeeds/rss/?outputType=xml"),
+    ("Radio-Canada (politique)", "https://ici.radio-canada.ca/rss/4175"),
+    ("La Presse", "https://www.lapresse.ca/actualites/rss"),
+    ("Le Devoir", "https://www.ledevoir.com/rss/manchettes.xml"),
+    ("Le Journal de Montréal", "https://www.journaldemontreal.com/rss.xml"),
+    ("Times Colonist", "https://www.timescolonist.com/rss"),
+    ("Global News (Canada)", "https://globalnews.ca/category/canada/feed/"),  # added by source_discovery.py 2026-10-20
+    ("CTV News", "https://www.ctvnews.ca/arc/outboundfeeds/rss/?outputType=xml"),  # added by source_discovery.py 2026-10-20
+    ("Toronto Sun", "https://torontosun.com/feed/"),  # added by source_discovery.py 2026-10-20
+    ("Ottawa Citizen", "https://ottawacitizen.com/feed/"),  # added by source_discovery.py 2026-10-20
+    ("Vancouver Sun", "https://vancouversun.com/feed/"),  # added by source_discovery.py 2026-10-20
+    ("The Province", "https://theprovince.com/feed/"),  # added by source_discovery.py 2026-10-20
+    ("Halifax Examiner", "https://www.halifaxexaminer.ca/feed/"),  # added by source_discovery.py 2026-10-20
+    ("SaltWire", "https://www.saltwire.com/feed/"),  # added by source_discovery.py 2026-10-20
+    ("Telegraph-Journal", "https://tj.news/feed/"),  # added by source_discovery.py 2026-10-20
+    ("Nunatsiaq News", "https://nunatsiaq.com/feed/"),  # added by source_discovery.py 2026-10-20
+    ("Yukon News", "https://www.yukon-news.com/feed/"),  # added by source_discovery.py 2026-10-20
+    ("The Narwhal", "https://thenarwhal.ca/feed/"),  # added by source_discovery.py 2026-10-20
+    ("The Logic", "https://thelogic.co/feed/"),  # added by source_discovery.py 2026-10-20
+    ("TVA Nouvelles", "https://www.tvanouvelles.ca/rss"),  # added by source_discovery.py 2026-10-20
+    ("Le Soleil", "https://www.lesoleil.com/arc/outboundfeeds/rss/?outputType=xml"),  # added by source_discovery.py 2026-10-20
+    ("Daily Hive", "https://dailyhive.com/feed/"),  # added by source_discovery.py 2026-10-20
+    ("Narcity", "https://www.narcity.com/feeds/feed.rss"),  # added by source_discovery.py 2026-10-20
+    ("CityNews Vancouver", "https://vancouver.citynews.ca/feed/"),  # added by source_discovery.py 2026-10-20
+    ("CityNews Calgary", "https://calgary.citynews.ca/feed/"),  # added by source_discovery.py 2026-10-20
+    ("CityNews Edmonton", "https://edmonton.citynews.ca/feed/"),  # added by source_discovery.py 2026-10-20
+    ("CityNews Winnipeg", "https://winnipeg.citynews.ca/feed/"),  # added by source_discovery.py 2026-10-20
+    ("CityNews Ottawa", "https://ottawa.citynews.ca/feed/"),  # added by source_discovery.py 2026-10-20
+    ("CityNews Montreal", "https://montreal.citynews.ca/feed/"),  # added by source_discovery.py 2026-10-20
+    ("CityNews Halifax", "https://halifax.citynews.ca/feed/"),  # added by source_discovery.py 2026-10-20
+    ("CKOM / PAnow", "https://www.ckom.com/feed/"),  # added by source_discovery.py 2026-10-20
+    ("Lethbridge Herald", "https://lethbridgeherald.com/feed/"),  # added by source_discovery.py 2026-10-20
+    ("Medicine Hat News", "https://medicinehatnews.com/feed/"),  # added by source_discovery.py 2026-10-20
+    ("NBC News", "https://www.nbcnews.com/feed/"),  # added by source_discovery.py 2026-10-20
+    ("The Hill", "https://thehill.com/feed/"),  # added by source_discovery.py 2026-10-20
+    ("Fox News", "https://moxie.foxnews.com/google-publisher/latest.xml"),  # added by source_discovery.py 2026-10-20
+    ("Euronews", "https://www.euronews.com/rss"),  # added by source_discovery.py 2026-10-20
+    ("The Japan Times", "https://www.japantimes.co.jp/feed/"),  # added by source_discovery.py 2026-10-20
+    ("Kyiv Independent", "https://kyivindependent.com/news-archive/rss/"),  # added by source_discovery.py 2026-10-20
+    ("Middle East Eye", "https://www.middleeasteye.net/rss"),  # added by source_discovery.py 2026-10-20
+    ("Prime Minister of Canada", "https://www.pm.gc.ca/rss.xml"),  # added by source_discovery.py 2026-10-20
+    ("Bank of Canada", "https://www.bankofcanada.ca/feed/"),  # added by source_discovery.py 2026-10-20
 ]
 # Feeds whose pubDate carries a wrong offset: the clock time is really UTC
-UTC_MISLABELLED = {"https://www.cp24.com/arc/outboundfeeds/rss/?outputType=xml"}
+UTC_MISLABELLED = {"https://www.cp24.com/arc/outboundfeeds/rss/?outputType=xml", "https://www.bnnbloomberg.ca/arc/outboundfeeds/rss/?outputType=xml"}
 FRONTS = [
     ("CBC News", "https://www.cbc.ca/news", "window.__INITIAL_STATE__", "https://www.cbc.ca"),
     ("CTV News", "https://www.ctvnews.ca", "Fusion.contentCache", "https://www.ctvnews.ca"),
+    ("CTV News", "https://www.ctvnews.ca/politics/", "Fusion.contentCache", "https://www.ctvnews.ca"),
+    ("CBC News", "https://www.cbc.ca/news/politics", "window.__INITIAL_STATE__", "https://www.cbc.ca"),
 ]
 
 
@@ -113,7 +165,7 @@ def rss(outlet, url):
         title = html.unescape(re.sub(r"<!\[CDATA\[|\]\]>", "", t.group(1))).strip()
         link = html.unescape(re.sub(r"<!\[CDATA\[|\]\]>", "", l.group(1))).strip()
         dt = to_utc(d.group(1).strip()) if d else None
-        if dt and url in UTC_MISLABELLED:
+        if dt and (url in UTC_MISLABELLED or '/arc/outboundfeeds/' in url):  # Arc feeds (CTV, CP24, BNN, Le Soleil) mark UTC as -0400
             dt = to_utc(re.sub(r"\s[+-]\d{4}$", " +0000", d.group(1).strip()))
         out.append((dt, outlet, title, link))
     return out

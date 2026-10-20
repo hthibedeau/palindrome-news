@@ -1,0 +1,85 @@
+# Source discovery log
+
+Each run of tools/source_discovery.py appends what it tested.
+
+## 2026-10-20 20:01 UTC
+- CBC News (Canada): no fresh feed found (https://www.cbc.ca/news/canada); read it through search and article pages
+- CBC News (World): no fresh feed found (https://www.cbc.ca/news/world); read it through search and article pages
+- CBC News (Business): no fresh feed found (https://www.cbc.ca/news/business); read it through search and article pages
+- CBC News (Indigenous): no fresh feed found (https://www.cbc.ca/news/indigenous); read it through search and article pages
+- Global News (Canada): https://globalnews.ca/category/canada/feed/ works (10 items, newest 0.0 h) — added to wire_scan.FEEDS
+- CTV News: https://www.ctvnews.ca/arc/outboundfeeds/rss/?outputType=xml works (100 items, newest -0.1 h) — added to wire_scan.FEEDS
+- The Canadian Press: no fresh feed found (https://www.thecanadianpress.com); read it through search and article pages
+- Toronto Sun: https://torontosun.com/feed/ works (10 items, newest 0.1 h) — added to wire_scan.FEEDS
+- Ottawa Citizen: https://ottawacitizen.com/feed/ works (10 items, newest 0.1 h) — added to wire_scan.FEEDS
+- Montreal Gazette: no fresh feed found (https://montrealgazette.com); read it through search and article pages
+- Vancouver Sun: https://vancouversun.com/feed/ works (10 items, newest 1.0 h) — added to wire_scan.FEEDS
+- The Province: https://theprovince.com/feed/ works (10 items, newest 4.3 h) — added to wire_scan.FEEDS
+- Regina Leader-Post: no fresh feed found (https://leaderpost.com); read it through search and article pages
+- Saskatoon StarPhoenix: no fresh feed found (https://thestarphoenix.com); read it through search and article pages
+- Windsor Star: no fresh feed found (https://windsorstar.com); read it through search and article pages
+- London Free Press: no fresh feed found (https://lfpress.com); read it through search and article pages
+- Hamilton Spectator: no fresh feed found (https://www.thespec.com); read it through search and article pages
+- Waterloo Region Record: no fresh feed found (https://www.therecord.com); read it through search and article pages
+- Halifax Examiner: https://www.halifaxexaminer.ca/feed/ works (10 items, newest 0.2 h) — added to wire_scan.FEEDS
+- SaltWire: https://www.saltwire.com/feed/ works (10 items, newest 0.1 h) — added to wire_scan.FEEDS
+- Telegraph-Journal: https://tj.news/feed/ works (8 items, newest 0.5 h) — added to wire_scan.FEEDS
+- CTV Atlantic: https://www.ctvnews.ca/arc/outboundfeeds/rss/?outputType=xml works (100 items, newest -0.1 h) — added to wire_scan.FEEDS
+- Cabin Radio: no fresh feed found (https://cabinradio.ca); read it through search and article pages
+- Nunatsiaq News: https://nunatsiaq.com/feed/ works (25 items, newest 1.5 h) — added to wire_scan.FEEDS
+- Yukon News: https://www.yukon-news.com/feed/ works (10 items, newest 1.0 h) — added to wire_scan.FEEDS
+- Windspeaker: no fresh feed found (https://windspeaker.com); read it through search and article pages
+- IndigiNews: no fresh feed found (https://indiginews.com); read it through search and article pages
+- The Narwhal: https://thenarwhal.ca/feed/ works (11 items, newest 11.0 h) — added to wire_scan.FEEDS
+- The Hill Times: no fresh feed found (https://www.hilltimes.com); read it through search and article pages
+- iPolitics: no fresh feed found (https://ipolitics.ca); read it through search and article pages
+- Policy Options: no fresh feed found (https://policyoptions.irpp.org); read it through search and article pages
+- Maclean's: no fresh feed found (https://macleans.ca); read it through search and article pages
+- The Walrus: no fresh feed found (https://thewalrus.ca); read it through search and article pages
+- The Logic: https://thelogic.co/feed/ works (10 items, newest 0.2 h) — added to wire_scan.FEEDS
+- Radio-Canada: no fresh feed found (https://ici.radio-canada.ca/info); read it through search and article pages
+- TVA Nouvelles: https://www.tvanouvelles.ca/rss works (40 items, newest 2.3 h) — added to wire_scan.FEEDS
+- Le Soleil: https://www.lesoleil.com/arc/outboundfeeds/rss/?outputType=xml works (100 items, newest 0.2 h) — added to wire_scan.FEEDS
+- Castanet: no fresh feed found (https://www.castanet.net); read it through search and article pages
+- Daily Hive: https://dailyhive.com/feed/ works (50 items, newest 0.3 h) — added to wire_scan.FEEDS
+- Narcity: https://www.narcity.com/feeds/feed.rss works (30 items, newest 0.3 h) — added to wire_scan.FEEDS
+- CityNews Vancouver: https://vancouver.citynews.ca/feed/ works (10 items, newest 0.6 h) — added to wire_scan.FEEDS
+- CityNews Calgary: https://calgary.citynews.ca/feed/ works (10 items, newest 0.6 h) — added to wire_scan.FEEDS
+- CityNews Edmonton: https://edmonton.citynews.ca/feed/ works (10 items, newest 0.6 h) — added to wire_scan.FEEDS
+- CityNews Winnipeg: https://winnipeg.citynews.ca/feed/ works (10 items, newest 0.3 h) — added to wire_scan.FEEDS
+- CityNews Ottawa: https://ottawa.citynews.ca/feed/ works (10 items, newest 0.3 h) — added to wire_scan.FEEDS
+- CityNews Montreal: https://montreal.citynews.ca/feed/ works (10 items, newest 0.6 h) — added to wire_scan.FEEDS
+- CityNews Halifax: https://halifax.citynews.ca/feed/ works (10 items, newest 0.4 h) — added to wire_scan.FEEDS
+- CKOM / PAnow: https://www.ckom.com/feed/ works (10 items, newest 0.3 h) — added to wire_scan.FEEDS
+- Lethbridge Herald: https://lethbridgeherald.com/feed/ works (10 items, newest 4.8 h) — added to wire_scan.FEEDS
+- Medicine Hat News: https://medicinehatnews.com/feed/ works (10 items, newest 0.1 h) — added to wire_scan.FEEDS
+- The Western Producer: no fresh feed found (https://www.producer.com); read it through search and article pages
+- Associated Press: no fresh feed found (https://apnews.com); read it through search and article pages
+- Reuters: no fresh feed found (https://www.reuters.com); read it through search and article pages
+- AFP: no fresh feed found (https://www.afp.com/en); read it through search and article pages
+- BBC News: no fresh feed found (https://www.bbc.com/news); read it through search and article pages
+- NPR: no fresh feed found (https://www.npr.org); read it through search and article pages
+- NBC News: https://www.nbcnews.com/feed/ works (25 items, newest 0.1 h) — added to wire_scan.FEEDS
+- Politico: no fresh feed found (https://www.politico.com); read it through search and article pages
+- Axios: no fresh feed found (https://www.axios.com); read it through search and article pages
+- The Hill: https://thehill.com/feed/ works (100 items, newest 0.1 h) — added to wire_scan.FEEDS
+- Fox News: https://moxie.foxnews.com/google-publisher/latest.xml works (25 items, newest 0.1 h) — added to wire_scan.FEEDS
+- CNN: no fresh feed found (https://www.cnn.com); read it through search and article pages
+- France 24: no fresh feed found (https://www.france24.com/en/); read it through search and article pages
+- DW: no fresh feed found (https://www.dw.com/en); read it through search and article pages
+- Euronews: https://www.euronews.com/rss works (50 items, newest 0.2 h) — added to wire_scan.FEEDS
+- Sky News: no fresh feed found (https://news.sky.com); read it through search and article pages
+- The Independent: no fresh feed found (https://www.independent.co.uk); read it through search and article pages
+- ABC News (Australia): no fresh feed found (https://www.abc.net.au/news); read it through search and article pages
+- CNA: no fresh feed found (https://www.channelnewsasia.com); read it through search and article pages
+- The Japan Times: https://www.japantimes.co.jp/feed/ works (30 items, newest 0.0 h) — added to wire_scan.FEEDS
+- Kyiv Independent: https://kyivindependent.com/news-archive/rss/ works (15 items, newest 1.7 h) — added to wire_scan.FEEDS
+- Times of Israel: no fresh feed found (https://www.timesofisrael.com); read it through search and article pages
+- Middle East Eye: https://www.middleeasteye.net/rss works (20 items, newest 0.1 h) — added to wire_scan.FEEDS
+- Government of Canada news: no fresh feed found (https://www.canada.ca/en/news.html); read it through search and article pages
+- Prime Minister of Canada: https://www.pm.gc.ca/rss.xml works (10 items, newest 14.2 h) — added to wire_scan.FEEDS
+- Statistics Canada The Daily: no fresh feed found (https://www150.statcan.gc.ca/n1/dai-quo/index-eng.htm); read it through search and article pages
+- Bank of Canada: https://www.bankofcanada.ca/feed/ works (10 items, newest 3.9 h) — added to wire_scan.FEEDS
+- RCMP news: no fresh feed found (https://rcmp.ca/en/news); read it through search and article pages
+- Elections Canada: no fresh feed found (https://www.elections.ca); read it through search and article pages
+- White House: no fresh feed found (https://www.whitehouse.gov); read it through search and article pages
