@@ -1094,7 +1094,7 @@ header.site { border-bottom: 0; }
       </div>
     </div>
     <div class="masthead">
-      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 9:33 p.m. ET Monday</b></span></div>
+      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 9:41 p.m. ET Monday</b></span></div>
       <div class="plate">
         <span class="stamp" id="stamp" hidden>Late edition</span>
         <a class="logo" href="#top">Palindrome <em>News</em></a>
@@ -1500,6 +1500,7 @@ header.site { border-bottom: 0; }
   <section id="corrections" class="ruled" aria-labelledby="cx-h" style="scroll-margin-top: 64px">
     <div class="band-head"><h2 id="cx-h">Corrections &amp; updates</h2><p>Every change we make to a story, with the time. Nothing is changed quietly.</p></div>
     <ol class="log">
+      <li><time>Mon 9:41 p.m.</time><span class="kind">Update</span><span><b>Alberta referendum:</b> the “How this developed” button now sits right under the “Coming up” list</span></li>
       <li><time>Mon 9:33 p.m.</time><span class="kind">Update</span><span><b>Alberta referendum:</b> “Live coverage now” adds CBC News’s referendum-night live blog, and the Breaking event adds its report from Hinton’s polling station (<a href="https://www.cbc.ca/news/canada/edmonton/livestory/alberta-referendum-results-live-updates-separatism-october-19-2026-9.7387777" target="_blank" rel="noopener">CBC News</a>, 9:21 p.m.); the event’s photo is now a voter at a Wainwright polling station on Monday (AP Photo/Ty O’Neil, via <a href="https://globalnews.ca/news/12108591/alberta-referendum-voting-hours-extended-locations/" target="_blank" rel="noopener">Global News</a>). <b>CFB Wainwright:</b> a wide check of national, local and hometown newsrooms found nothing newer than the 8:53 p.m. update</span></li>
       <li><time>Mon 9:29 p.m.</time><span class="kind">Update</span><span><b>Live coverage now</b> has its own band, separate from the Breaking section, right below it: live video, live updates, what’s coming up live and the 24-hour news channels</span></li>
       <li><time>Mon 9:20 p.m.</time><span class="kind">Update</span><span><b>CFB Wainwright:</b> “How this story developed” adds the Wainwright Health Centre medical director’s account of Saturday’s mass-casualty response (<a href="https://www.cbc.ca/news/canada/edmonton/livestory/cfb-wainwright-fire-deaths-carney-9.7386478?id=9.7386478.16939" target="_blank" rel="noopener">CBC News</a>, 8:53 p.m.). <b>Alberta referendum:</b> CBC’s live results special is on now (<a href="https://www.cbc.ca/player/play/video/9.7379746" target="_blank" rel="noopener">CBC News</a>); the Breaking event adds Elections Alberta on the vote’s scale (<a href="https://www.ctvnews.ca/edmonton/article/delays-at-more-than-100-alberta-polling-stations-push-back-referendum-results-live-updates-here/" target="_blank" rel="noopener">CTV News</a>, 8:05 p.m.).</span></li>
@@ -2253,8 +2254,8 @@ header.site { border-bottom: 0; }
         + '<h2><a class="card-link" href="' + esc(ev.url) + '" target="_blank" rel="noopener">' + esc(ev.h) + '</a></h2>'
         + '<p class="first"><span class="bl"><b>Latest</b> <a href="' + esc(ev.url) + '" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline"><strong>' + esc(ev.outlet) + '</strong></a>' + (ev.urlWhen ? ' · ' + esc(ev.urlWhen) : '') + '</span></p>'
         + '<p class="bk-dek">' + ev.dek + '</p>'
-        + ((ev.developed && ev.developed.length) ? '<a class="bk-dev-btn" href="#developed-' + esc(ev.id) + '">How this developed <span aria-hidden="true">&#8595;</span></a>' : '')
         + (rows ? '<div class="ev-sched"><h3>Coming up</h3><ol>' + rows + '</ol></div>' : '')
+        + ((ev.developed && ev.developed.length) ? '<a class="bk-dev-btn" href="#developed-' + esc(ev.id) + '">How this developed <span aria-hidden="true">&#8595;</span></a>' : '')
         + (btns ? '<div class="bk-next' + (started ? ' on' : '') + '" style="margin-top: 0"><div class="nx-when"><i aria-hidden="true"></i>' + (started ? 'Watch live' : 'Where to watch') + '</div><div class="nx-btns">' + btns + '</div></div>' : '')
         + '</div>';
       const pics = [{ src: ev.photo, credit: ev.credit }]
