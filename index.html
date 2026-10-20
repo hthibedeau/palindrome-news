@@ -1046,7 +1046,7 @@ header.site { border-bottom: 0; }
       </div>
     </div>
     <div class="masthead">
-      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 8:34 p.m. ET Monday</b></span></div>
+      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 8:35 p.m. ET Monday</b></span></div>
       <div class="plate">
         <span class="stamp" id="stamp" hidden>Late edition</span>
         <a class="logo" href="#top">Palindrome <em>News</em></a>
@@ -1446,6 +1446,7 @@ header.site { border-bottom: 0; }
   <section id="corrections" class="ruled" aria-labelledby="cx-h" style="scroll-margin-top: 64px">
     <div class="band-head"><h2 id="cx-h">Corrections &amp; updates</h2><p>Every change we make to a story, with the time. Nothing is changed quietly.</p></div>
     <ol class="log">
+      <li><time>Mon 8:35 p.m.</time><span class="kind">Update</span><span><b>Breaking events, all the time:</b> any scheduled live coverage listed under “Coming up live” now becomes the Breaking story two hours before it starts, even before an editor writes it up; the full method is written into the site’s instructions so every update follows it</span></li>
       <li><time>Mon 8:34 p.m.</time><span class="kind">Update</span><span><b>CFB Wainwright fire:</b> added tributes from Pte. Hayden Lykkemark’s foster mother and to Sgt. Morgan Wong (<a href="https://edmontonjournal.com/news/local-news/canadian-armed-forces-cfb-wainright-fire" target="_blank" rel="noopener">Edmonton Journal</a>, <a href="https://vancouversun.com/news/local-news/tributes-pour-in-for-two-young-bc-soldiers-killed-in-wainwright-fire" target="_blank" rel="noopener">Vancouver Sun</a>) and CBC’s video from the growing memorial in Wainwright (<a href="https://www.cbc.ca/player/play/video/9.7387719" target="_blank" rel="noopener">CBC News</a>).</span></li>
       <li><time>Mon 8:32 p.m.</time><span class="kind">Update</span><span><b>Breaking: Alberta referendum.</b> A story with live coverage coming now becomes the Breaking story two hours before it starts, with every update that is coming and its time. Tonight: CBC’s results show at 9 p.m. ET, most polls close at 10 p.m. ET, the last polls close and results begin at midnight ET, and Question 10 results are expected between 3 and 6 a.m. ET (<a href="https://www.ctvnews.ca/edmonton/article/delays-at-more-than-100-alberta-polling-stations-push-back-referendum-results-live-updates-here/" target="_blank" rel="noopener">CTV News</a>, <a href="https://www.cbc.ca/news/canada/calgary/community/cbc-alberta-referendum-coverage-9.7373301" target="_blank" rel="noopener">CBC News</a>)</span></li>
       <li><time>Mon 8:25 p.m.</time><span class="kind">Update</span><span><b>Top story:</b> “Latest reports” now shows screen grabs of the three newest reports on the CFB Wainwright fire (CTV News); live broadcasts that have ended now show the time they ended once it is confirmed</span></li>
@@ -2055,6 +2056,8 @@ header.site { border-bottom: 0; }
     apply(); setInterval(apply, 60000);
   })();
   // ===== Breaking event (Hannah's rule): when a story will have live coverage, it becomes the Breaking story
+  // HOW THIS IS DONE, EVERY RUN: see tools/runbooks/BREAKING_EVENTS.md (find every live event coming, confirm each time on
+  // the page that reports it, convert to Eastern, add COMING items per network, write the UPNEXT entry with every timed update).
   // EVENT_LEAD_HOURS before the coverage starts, with every update that is coming, each with its time.
   // UPNEXT = [{ id, story (matches COMING story names that start with it), start (ISO Eastern: first live coverage),
   //   until (ISO Eastern: when it stops being the Breaking event), h, url, outlet, urlWhen, dek (may hold links),
@@ -2077,13 +2080,28 @@ header.site { border-bottom: 0; }
   ];
   (function breakingEvent() {
     const box = document.getElementById('bkEvent'); if (!box) return;
+    // Safety net: any scheduled live coverage in COMING (not already shown in the top slot) with no UPNEXT entry
+    // still becomes the Breaking event, built from its COMING items. A proper UPNEXT entry always takes precedence.
+    const autoEvents = () => {
+      const list = (typeof COMING !== 'undefined' ? COMING : []).filter((c) => !c.top && c.story && c.when && !UPNEXT.some((e) => c.story.indexOf(e.story) === 0));
+      const by = {}; list.forEach((c) => { (by[c.story] = by[c.story] || []).push(c); });
+      return Object.keys(by).map((k) => {
+        const its = by[k].slice().sort((a, b) => Date.parse(a.when) - Date.parse(b.when)), first = its[0];
+        const endT = Math.max.apply(null, its.map((c) => Date.parse(c.until || '') || (Date.parse(c.when) + 3 * 3600000)));
+        const t = new Date(Date.parse(first.when)).toLocaleTimeString('en-CA', { timeZone: 'America/Toronto', hour: 'numeric', minute: '2-digit' }).replace(/\s?([ap])\.?\s?m\.?/i, (m0, ap) => ' ' + ap.toLowerCase() + '.m.').replace(':00 ', ' ');
+        return { id: 'auto-' + k, story: k, auto: true, start: first.when, until: new Date(endT).toISOString(),
+          h: k + ': live coverage begins at ' + t + ' ET', url: first.info || first.url, outlet: first.net, urlWhen: '',
+          dek: esc(first.what || ''), photo: first.file || first.img || '', credit: first.net, alt: first.what || k,
+          schedule: its.map((c) => ({ at: c.when, local: c.local || '', text: c.net + ': ' + (c.what || 'live coverage') + (c.where ? ' (' + c.where + ')' : ''), outlet: c.net, url: c.url })) };
+      });
+    };
     const T = (iso) => Date.parse(iso || '');
     const fmt = (t) => new Date(t).toLocaleTimeString('en-CA', { timeZone: 'America/Toronto', hour: 'numeric', minute: '2-digit' }).replace(/\s?([ap])\.?\s?m\.?/i, (m0, ap) => ' ' + ap.toLowerCase() + '.m.').replace(':00 ', ' ');
     const day = (t) => new Date(t).toLocaleDateString('en-CA', { timeZone: 'America/Toronto', weekday: 'short' });
     const left = (ms) => { const m = Math.round(ms / 60000); return m >= 60 ? Math.floor(m / 60) + ' h ' + (m % 60) + ' min' : m + ' min'; };
     const render = () => {
       const now = Date.now();
-      const ev = UPNEXT.filter((e) => !isNaN(T(e.start)) && now >= T(e.start) - EVENT_LEAD_HOURS * 3600000 && now <= T(e.until)).sort((a, b) => T(a.start) - T(b.start))[0];
+      const ev = UPNEXT.concat(autoEvents()).filter((e) => !isNaN(T(e.start)) && now >= T(e.start) - EVENT_LEAD_HOURS * 3600000 && now <= T(e.until)).sort((a, b) => T(a.start) - T(b.start))[0];
       if (!ev) { box.hidden = true; box.innerHTML = ''; return; }
       const started = now >= T(ev.start);
       const today = day(now);
@@ -2103,7 +2121,7 @@ header.site { border-bottom: 0; }
         + '<p class="bk-dek">' + ev.dek + '</p>'
         + (rows ? '<div class="ev-sched"><h3>Coming up, with times</h3><ol>' + rows + '</ol></div>' : '')
         + (btns ? '<div class="bk-next' + (started ? ' on' : '') + '" style="margin-top: 0"><div class="nx-when"><i aria-hidden="true"></i>' + (started ? 'Watch live' : 'Where to watch') + '</div><div class="nx-btns">' + btns + '</div></div>' : '')
-        + '</div><div class="bk-side"><div class="bart" data-art="ballot" data-alt="' + esc(ev.alt || '') + '" data-photo="' + esc(ev.photo || '') + '" data-credit="' + esc(ev.credit || '') + '"></div></div>';
+        + '</div><div class="bk-side"><div class="bart ev-art"></div></div>';
       const bart = box.querySelector('.bart'); if (bart) { bart.innerHTML = ev.photo ? photo(ev.photo, 'ballot', ev.alt, ev.credit) : art('ballot', ev.alt); if (typeof wirePhotos === 'function') wirePhotos(); }
       box.hidden = false;
     };
