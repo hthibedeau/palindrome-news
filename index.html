@@ -834,6 +834,13 @@ header.site { border-bottom: 0; }
 .about-grid .addr code { font-family: inherit; background: var(--soft); padding: 3px 8px; user-select: all; }
 .about-grid .addr button { min-height: 32px; padding: 0 10px; border: 1px solid var(--chipline); background: var(--surface); color: var(--ink); font: inherit; font-size: 12.5px; cursor: pointer; }
 .srcs-list { font-size: 14px !important; line-height: 1.7 !important; }
+/* About Palindrome: each section opens and closes on a tap (Hannah's rule) */
+.about-grid { align-items: start; }
+.about-grid h3 .ab-tog { all: unset; box-sizing: border-box; display: flex; width: 100%; align-items: center; justify-content: space-between; gap: 10px; min-height: 40px; cursor: pointer; }
+.about-grid h3 .ab-tog:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.about-grid h3 .ab-tog i { flex: 0 0 auto; font-style: normal; font-family: var(--sans); font-size: 13px; font-weight: 700; color: var(--accent); }
+.about-grid > div.ab-closed h3 { margin-bottom: 0; }
+.about-grid .ab-body[hidden] { display: none; }
 /* Search */
 .srch { position: fixed; inset: 0; z-index: 80; background: rgba(15, 11, 25, .55); display: flex; justify-content: center; align-items: flex-start; padding: calc(70px + env(safe-area-inset-top, 0px)) max(16px, env(safe-area-inset-right, 0px)) 16px max(16px, env(safe-area-inset-left, 0px)); }
 .srch[hidden] { display: none; }
@@ -1134,7 +1141,7 @@ header.site { border-bottom: 0; }
       </div>
     </div>
     <div class="masthead">
-      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 10:29 p.m. ET Monday</b></span></div>
+      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 10:30 p.m. ET Monday</b></span></div>
       <div class="plate">
         <span class="stamp" id="stamp" hidden>Late edition</span>
         <a class="logo" href="#top">Palindrome <em>News</em></a>
@@ -1559,6 +1566,7 @@ header.site { border-bottom: 0; }
   <section id="corrections" class="ruled" aria-labelledby="cx-h" style="scroll-margin-top: 64px">
     <div class="band-head"><h2 id="cx-h">Corrections &amp; updates</h2><p>Every change we make to a story, with the time. Nothing is changed quietly.</p></div>
     <ol class="log">
+      <li><time>Mon 10:30 p.m.</time><span class="kind">Update</span><span><b>About Palindrome:</b> each section (Methodology, Sources, Contact &amp; takedowns, Privacy, Sponsorship policy, Sponsor services) now opens on a tap and closes again</span></li>
       <li><time>Mon 10:29 p.m.</time><span class="kind">Update</span><span><b>CFB Wainwright, in tabs:</b> the top story’s details now sit in tabs under the headline: Latest, Key facts, The four who died, Not yet known and Timeline, so the story is much shorter; nothing was removed</span></li>
       <li><time>Mon 10:28 p.m.</time><span class="kind">Update</span><span><b>Live coverage:</b> referendum night live updates refreshed: almost all polls closed, voting continues at delayed stations until 10 p.m. MT (<a href="https://www.ctvnews.ca/edmonton/article/delays-at-more-than-100-alberta-polling-stations-push-back-referendum-results-live-updates-here/" target="_blank" rel="noopener">CTV News</a>); Forever Canadian watch party in Edmonton (<a href="https://www.cbc.ca/news/canada/edmonton/livestory/alberta-referendum-results-live-updates-separatism-october-19-2026-9.7387777" target="_blank" rel="noopener">CBC News</a>).</span></li>
       <li><time>Mon 10:29 p.m.</time><span class="kind">Update</span><span><b>CFB Wainwright:</b> Gen. Carignan says Alberta’s coroner will also investigate and a memorial is growing at the town cenotaph (<a href="https://www.cbc.ca/news/canada/edmonton/livestory/cfb-wainwright-fire-deaths-carney-9.7386478?id=9.7386478.16951" target="_blank" rel="noopener">CBC News</a>); added the Lykkemark fundraiser (<a href="https://dailyhive.com/vancouver/fundraiser-hayden-lykkemark-cfb-wainwright-fire" target="_blank" rel="noopener">Daily Hive</a>) and Global’s report on the military community. <b>Alberta referendum:</b> most polls closed, results after midnight ET, Questions 1 to 9 by Wednesday morning (<a href="https://www.cbc.ca/news/canada/edmonton/livestory/alberta-referendum-results-live-updates-separatism-october-19-2026-9.7387777?id=9.7387777.16957" target="_blank" rel="noopener">CBC News</a>).</span></li>
@@ -3581,6 +3589,31 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     bar.appendChild(b); wrap.appendChild(el);
   });
   first.after(wrap);
+})();
+
+// About Palindrome: every section (Methodology, Sources, Contact & takedowns, Privacy, Sponsorship policy, Sponsor services)
+// is closed until tapped and closes again on a second tap; a footer link to a section opens it.
+(function aboutToggles() {
+  const cards = [...document.querySelectorAll('#about .about-grid > div')];
+  const set = (card, open) => {
+    const b = card.querySelector('.ab-tog'), body = card.querySelector('.ab-body'); if (!b || !body) return;
+    body.hidden = !open; card.classList.toggle('ab-closed', !open);
+    b.setAttribute('aria-expanded', String(open)); b.querySelector('i').textContent = open ? 'Close ▴' : 'Open ▾';
+  };
+  cards.forEach((card, n) => {
+    const h = card.querySelector('h3'); if (!h) return;
+    const body = document.createElement('div'); body.className = 'ab-body'; body.id = 'abBody' + n;
+    [...card.children].forEach((el) => { if (el !== h) body.appendChild(el); });
+    card.appendChild(body);
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'ab-tog'; b.setAttribute('aria-controls', body.id);
+    b.innerHTML = '<span>' + h.innerHTML + '</span><i aria-hidden="true"></i>'; h.innerHTML = ''; h.appendChild(b);
+    b.addEventListener('click', () => set(card, card.classList.contains('ab-closed')));
+    set(card, false);
+  });
+  const openFor = (hash) => { const t = hash && document.getElementById(hash.slice(1)); const card = t && cards.find((c) => c === t || c.contains(t)); if (card) set(card, true); };
+  document.addEventListener('click', (e) => { const a = e.target.closest && e.target.closest('a[href^="#"]'); if (a) openFor(a.getAttribute('href')); });
+  window.addEventListener('hashchange', () => openFor(location.hash));
+  openFor(location.hash);
 })();
 </script>
 
