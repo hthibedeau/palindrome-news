@@ -60,7 +60,7 @@ Your part, every run:
 4. Don't put Breaking or Developing stories here; the page hides them anyway. No sports scores.
 5. For the preview, copy new photos in with `tools/localize_images.py` and map them in LOCAL.
 
-The page shows Canada as a full-width band: the lead story large, the others in a grid, each with its region tag and summary. The header lists the regions covered.
+The Canada desk always comes right after the Breaking and Developing stories (Hannah: "all the time"), before Live coverage and everything else; the page places it there by itself. The page shows Canada as a full-width band: the lead story large, the others in a grid, each with its region tag and summary. The header lists the regions covered.
 
 **Every run: check ALL outlets and official alert channels for new breaking news (not only the stories already on the page), and use primary sources (official releases, results pages, court filings, Hansard, full video) as much as possible — see BREAKING_SOURCES.md.**
 
