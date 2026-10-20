@@ -26,7 +26,15 @@ Choosing (house rules 18, 18b and 19 in full-update.md; BREAKING_TEMPLATE.md ste
   - Victims and families: only photos the family or an outlet published; never from social media directly.
   - Keep the previous photo as the first fallback in imageChain (top slot) so the slot is never empty.
 
-Usage:  python3 tools/photo_scan.py <url> [<url> ...] [--download /tmp/photos] [--limit 8]
+Usage:
+  python3 tools/photo_scan.py --page index.html [--download /tmp/photos]
+      EVERY BREAKING STORY, WHATEVER IT IS: reads the page itself to find each story now in the Breaking
+      segment (the top slot, section#breaking, and every UPNEXT Breaking event that has not ended). For each
+      one it gathers the story's own links (the LATEST link, live blogs, timeline and source links on the page)
+      and the newest wire reports matching the story's name (tools/wire_scan.py), then lists the newest photos
+      with captions. Nothing is tied to any one story: new Breaking stories are picked up automatically.
+  python3 tools/photo_scan.py <url> [<url> ...] [--download /tmp/photos] [--limit 8]
+      Just these pages.
 """
 import argparse
 import html
@@ -155,31 +163,123 @@ def scan(url):
     return rows
 
 
+STOP = set("""the a an and of in on at to for from with after before over under into as by is are was were be
+this that these those its their his her new latest live updates update story news fire deadly""".split())
+
+
+def keywords(name):
+    """Distinctive words of a story's name: capitalized words and long words, e.g. 'the CFB Wainwright fire' ->
+    CFB, Wainwright; 'Alberta referendum' -> Alberta, referendum."""
+    words = re.findall(r"[A-Za-zÀ-ſ'’-]+", name or "")
+    keep = [w for w in words if w.lower() not in STOP and (w[0].isupper() or len(w) >= 7)]
+    return keep or [w for w in words if w.lower() not in STOP]
+
+
+def breaking_stories(index):
+    s = open(index, encoding="utf-8").read()
+    now = datetime.now(timezone.utc)
+    out = []
+    i = s.find('id="breaking"')
+    if i >= 0:
+        tag = s[s.rfind("<section", 0, i): s.find(">", i)]
+        body = s[i: s.find("</section>", i)]
+        name = (re.search(r'data-story="([^"]*)"', tag) or [None, "top story"])[1]
+        links = [m for m in re.findall(r'data-latest="([^"]+)"', tag)] + re.findall(r'href="(https?://[^"]+)"', body)
+        cap = re.search(r'class="bart[^"]*"[^>]*data-caption="([^"]*)"', body)
+        out.append({"where": "Top slot (section#breaking)", "name": name, "links": links,
+                    "current": html.unescape(cap.group(1)) if cap else ""})
+    j = s.find("const UPNEXT = [")
+    if j >= 0:
+        block = s[j: s.find("\n  ];", j)]
+        for part in re.split(r"\n    \{ id: ", block)[1:]:
+            story = re.search(r"story: '([^']*)'", part)
+            until = re.search(r"until: '([^']*)'", part)
+            if until and to_utc(until.group(1)) and to_utc(until.group(1)) < now:
+                continue  # ended: no longer Breaking
+            links = re.findall(r"url: '(https?://[^']+)'", part) + re.findall(r"'(https?://[^']+)'", part)
+            cap = re.search(r"caption: '([^']*)'", part)
+            out.append({"where": "Breaking event (UPNEXT " + part.split(",")[0].strip("' ") + ")",
+                        "name": story.group(1) if story else "", "links": links, "current": cap.group(1) if cap else ""})
+    return out
+
+
+def story_urls(st, cap=10):
+    seen, urls = set(), []
+    def add(u):
+        k = u.split("?")[0].split("#")[0].rstrip("/")
+        if k in seen or "theglobeandmail.com" in u or re.search(r"\.(jpg|png|pdf)$", k):
+            return
+        seen.add(k)
+        urls.append(u)
+    live = [u for u in st["links"] if re.search(r"live|/livestory/|en-direct", u)]
+    for u in live:
+        add(u)
+    try:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        import wire_scan
+        rx = re.compile("|".join(map(re.escape, keywords(st["name"]))), re.I)
+        items = []
+        for outlet, url in wire_scan.FEEDS:
+            items += wire_scan.rss(outlet, url)
+        for outlet, url, marker, base in wire_scan.FRONTS:
+            items += wire_scan.front(outlet, url, marker, base)
+        items = [x for x in items if x[0] and rx.search(x[2] + " " + x[3])]
+        items.sort(key=lambda x: x[0], reverse=True)
+        for x in items[:6]:
+            add(x[3])
+    except Exception as e:  # the page's own links still work without the wire
+        print("wire scan unavailable:", e, file=sys.stderr)
+    for u in st["links"]:
+        add(u)
+    return urls[:cap]
+
+
+def report(rows, limit, download, tag=""):
+    rows.sort(key=lambda r: r["when"] or datetime(1970, 1, 1, tzinfo=timezone.utc), reverse=True)
+    if download:
+        os.makedirs(download, exist_ok=True)
+    for i, r in enumerate(rows[:limit], 1):
+        cap = r["caption"] or "NO CAPTION (share photo; find the outlet's own caption before using it)"
+        print(f"[{tag}{i}] {eastern(r['when']) if r['when'] else 'time unknown'} | {r['outlet']} | {r['post'][:90]}")
+        print(f"    caption: {cap}")
+        print(f"    credit:  {r['credit'] or '-'}")
+        print(f"    image:   {r['src']}")
+        print(f"    page:    {r['url']}")
+        if download:
+            f = os.path.join(download, f"{tag}{i}.jpg")
+            print(f"    saved:   {f}" if curl(r["src"], f) else "    saved:   DOWNLOAD FAILED (host blocked?)")
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("urls", nargs="+")
+    ap.add_argument("urls", nargs="*")
+    ap.add_argument("--page", default="", help="index.html: check every story now in the Breaking segment")
     ap.add_argument("--download", default="")
     ap.add_argument("--limit", type=int, default=8)
     a = ap.parse_args()
+    if a.page:
+        stories = breaking_stories(a.page)
+        if not stories:
+            print("No Breaking stories found on the page.")
+        for n, st in enumerate(stories, 1):
+            urls = story_urls(st)
+            print(f"\n=== {st['where']}: {st['name']} ===")
+            print(f"    now on the page: {st['current'] or '(no caption)'}")
+            print(f"    pages checked ({len(urls)}): " + ", ".join(re.sub(r"https?://(www\.)?([^/]+).*", r"\2", u) for u in urls))
+            rows = []
+            for u in urls:
+                rows += scan(u)
+            report(rows, a.limit, a.download, tag=f"s{n}-")
+        return
+    if not a.urls:
+        ap.error("give page urls, or --page index.html")
     rows = []
     for u in a.urls:
         got = scan(u)
         if not got:
             print("NO PHOTOS FOUND (or page blocked):", u, file=sys.stderr)
         rows += got
-    rows.sort(key=lambda r: r["when"] or datetime(1970, 1, 1, tzinfo=timezone.utc), reverse=True)
-    if a.download:
-        os.makedirs(a.download, exist_ok=True)
-    for i, r in enumerate(rows[: a.limit], 1):
-        cap = r["caption"] or "NO CAPTION (share photo; find the outlet's own caption before using it)"
-        print(f"[{i}] {eastern(r['when']) if r['when'] else 'time unknown'} | {r['outlet']} | {r['post'][:90]}")
-        print(f"    caption: {cap}")
-        print(f"    credit:  {r['credit'] or '-'}")
-        print(f"    image:   {r['src']}")
-        print(f"    page:    {r['url']}")
-        if a.download:
-            f = os.path.join(a.download, f"{i}.jpg")
-            print(f"    saved:   {f}" if curl(r["src"], f) else "    saved:   DOWNLOAD FAILED (host blocked?)")
+    report(rows, a.limit, a.download)
 
 
 if __name__ == "__main__":

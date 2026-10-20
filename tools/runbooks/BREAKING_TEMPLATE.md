@@ -6,7 +6,7 @@ The other runbooks give the detail behind each part: house rules 12–22 in full
 
 ## The layout, top to bottom
 1. **Photo first, then its caption.**
-   - Find it with `python3 tools/photo_scan.py <live blogs and newest reports>`, which gives the newest photos with their own captions and credits (method in full-update.md, under house rule 18b).
+   - Find it with `python3 tools/photo_scan.py --page index.html`, which checks every Breaking story on the page, whatever it is, and gives the newest photos with their own captions and credits (method in full-update.md, under house rule 18b).
    - Use the best, newest real news photo of the story, never a drawing. Check for a better one every 15 minutes, from all sources.
    - Save it to img/live/, upload it as an asset and map it in LOCAL.
    - Under the photo goes the caption exactly as the photo's publisher wrote it, ending "— via <outlet>": data-caption on .bart, or caption in the UPNEXT entry.

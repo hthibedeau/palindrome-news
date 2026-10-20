@@ -34,5 +34,5 @@ Every rule in the runbooks still applies: never invent facts, names, ages, quote
 
 ## See also
 - tools/runbooks/SOURCES.md: every outlet and primary source with how to reach it from this workspace, the domains Hannah could allow, and the facts protocol.
-- tools/photo_scan.py: the newest photos on a story, each with its own caption, credit and time (run it in every photo check).
+- tools/photo_scan.py --page index.html: for every story in the Breaking segment (found automatically), the newest photos, each with its own caption, credit and time (run it in every photo check).
 - tools/wire_scan.py: the fast first pass over every directly reachable newsroom, run first in every update and live check.
