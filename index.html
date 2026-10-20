@@ -881,6 +881,9 @@ header.site { border-bottom: 0; }
 .bk-pane .who li { padding: 4px 0; font-size: 15px; line-height: 1.45; }
 .bk-pane .who p { color: #F6E1E8; }
 .bk-pane .tracker { margin-top: 10px; }
+.ev-tabs .bk-pane .ev-sched { margin-bottom: 12px; }
+.ev-tabs .bk-pane .tl { margin-top: 0; padding: 12px 14px; }
+.bk-event .ev-tabs { max-width: none; }
 /* Photo captions from the photo's originator, under the picture */
 .breaking .bart-cap { position: relative; z-index: 3; margin: -8px 0 16px; font-size: 13px; line-height: 1.45; color: #F6E1E8; max-width: 900px; }
 .breaking.top .bart-cap { color: #E6DEF6; }
@@ -1141,7 +1144,7 @@ header.site { border-bottom: 0; }
       </div>
     </div>
     <div class="masthead">
-      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 10:30 p.m. ET Monday</b></span></div>
+      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 10:34 p.m. ET Monday</b></span></div>
       <div class="plate">
         <span class="stamp" id="stamp" hidden>Late edition</span>
         <a class="logo" href="#top">Palindrome <em>News</em></a>
@@ -1566,6 +1569,7 @@ header.site { border-bottom: 0; }
   <section id="corrections" class="ruled" aria-labelledby="cx-h" style="scroll-margin-top: 64px">
     <div class="band-head"><h2 id="cx-h">Corrections &amp; updates</h2><p>Every change we make to a story, with the time. Nothing is changed quietly.</p></div>
     <ol class="log">
+      <li><time>Mon 10:34 p.m.</time><span class="kind">Update</span><span><b>Alberta referendum, in tabs:</b> like CFB Wainwright, the referendum story now has tabs under its headline: Latest, Coming up, Key facts, Not yet known and Timeline, with key facts from <a href="https://www.elections.ab.ca/resources/media/news-releases/2026-10-19-2/" target="_blank" rel="noopener">Elections Alberta</a> and <a href="https://www.ctvnews.ca/edmonton/article/delays-at-more-than-100-alberta-polling-stations-push-back-referendum-results-live-updates-here/" target="_blank" rel="noopener">CTV News</a></span></li>
       <li><time>Mon 10:30 p.m.</time><span class="kind">Update</span><span><b>About Palindrome:</b> each section (Methodology, Sources, Contact &amp; takedowns, Privacy, Sponsorship policy, Sponsor services) now opens on a tap and closes again</span></li>
       <li><time>Mon 10:29 p.m.</time><span class="kind">Update</span><span><b>CFB Wainwright, in tabs:</b> the top story’s details now sit in tabs under the headline: Latest, Key facts, The four who died, Not yet known and Timeline, so the story is much shorter; nothing was removed</span></li>
       <li><time>Mon 10:28 p.m.</time><span class="kind">Update</span><span><b>Live coverage:</b> referendum night live updates refreshed: almost all polls closed, voting continues at delayed stations until 10 p.m. MT (<a href="https://www.ctvnews.ca/edmonton/article/delays-at-more-than-100-alberta-polling-stations-push-back-referendum-results-live-updates-here/" target="_blank" rel="noopener">CTV News</a>); Forever Canadian watch party in Edmonton (<a href="https://www.cbc.ca/news/canada/edmonton/livestory/alberta-referendum-results-live-updates-separatism-october-19-2026-9.7387777" target="_blank" rel="noopener">CBC News</a>).</span></li>
@@ -2258,6 +2262,17 @@ header.site { border-bottom: 0; }
   const EVENT_LEAD_HOURS = 2;
   const UPNEXT = [
     { id: 'alberta-referendum-2026', story: 'Alberta referendum', devName: 'the Alberta referendum', photoChecked: '2026-10-19T22:29:00-04:00', start: '2026-10-19T21:00:00-04:00', until: '2026-10-20T08:30:00-04:00',
+      keyfacts: [
+        ['10', 'questions on the ballot; Question 10 asks whether Alberta stays in Canada or starts toward a binding vote on separating', 'CTV News', 'https://www.ctvnews.ca/edmonton/article/delays-at-more-than-100-alberta-polling-stations-push-back-referendum-results-live-updates-here/'],
+        ['1.36M', 'votes cast early, by advance poll (837,791) or special ballot (519,082), 43.1 per cent turnout before election day', 'Elections Alberta', 'https://www.elections.ab.ca/resources/media/news-releases/2026-10-19-2/'],
+        ['100+', 'polling stations opened late and stay open until as late as 10 p.m. MT (midnight ET)', 'CTV News', 'https://www.ctvnews.ca/edmonton/article/delays-at-more-than-100-alberta-polling-stations-push-back-referendum-results-live-updates-here/'],
+        ['1–4 a.m.', 'MT Tuesday: when Question 10 results are expected; it is counted first, every ballot by hand', 'CTV News', 'https://www.ctvnews.ca/edmonton/article/delays-at-more-than-100-alberta-polling-stations-push-back-referendum-results-live-updates-here/'],
+        ['Oct. 29', 'official results, Elections Alberta says', 'Elections Alberta', 'https://www.elections.ab.ca/resources/media/news-releases/2026-10-19-2/']
+      ],
+      unknowns: [
+        ['How Albertans voted on Question 10: no results until every poll has closed', 'Elections Alberta', 'https://www.elections.ab.ca/resources/media/news-releases/2026-10-19-2/'],
+        ['Final turnout, once election-day ballots are added', 'Elections Alberta', 'https://www.elections.ab.ca/resources/media/news-releases/2026-10-19-2/']
+      ],
       background: [
         ['Oct. 16, 2026', 'Ballots cast pass one million, a third of Alberta’s roughly three million eligible voters: 529,400 over the first three days of advance polls plus about 491,000 special ballots. Special-ballot requests are 11 times the number in the last provincial election, Elections Alberta says.', 'CTV News', 'https://www.ctvnews.ca/edmonton/article/1-million-votes-cast-in-albertas-referendum/'],
         ['Oct. 13, 2026', 'Advance voting opens; just over 174,530 people vote on the first day, Elections Alberta says.', 'CBC News', 'https://www.cbc.ca/news/canada/edmonton/referendum-alta-9.7380726'],
@@ -2323,6 +2338,34 @@ header.site { border-bottom: 0; }
     const fmt = (t) => new Date(t).toLocaleTimeString('en-CA', { timeZone: 'America/Toronto', hour: 'numeric', minute: '2-digit' }).replace(/\s?([ap])\.?\s?m\.?/i, (m0, ap) => ' ' + ap.toLowerCase() + '.m.').replace(':00 ', ' ');
     const day = (t) => new Date(t).toLocaleDateString('en-CA', { timeZone: 'America/Toronto', weekday: 'short' });
     const left = (ms) => { const m = Math.round(ms / 60000); return m >= 60 ? Math.floor(m / 60) + ' h ' + (m % 60) + ' min' : m + ' min'; };
+    // Hannah's rule: every Breaking story uses the same tabs as the top story (option 3). For a Breaking event:
+    // Latest (summary + two newest updates) · Coming up (times, How this developed, where to watch) · Key facts (ev.keyfacts)
+    // · Not yet known (ev.unknowns) · Timeline (ev.developed, then "Further back" from ev.background).
+    let evTab = 0;
+    const li4 = ([t, x, o, u]) => '<li><time>' + esc(t) + '</time>' + esc(x) + ' (<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(o) + '</a>)</li>';
+    const evTabsHTML = (ev, rows, btns, started) => {
+      const panes = [];
+      const dev = ev.developed || [];
+      panes.push(['Latest', '<p class="bk-dek">' + ev.dek + '</p>' + (dev.length ? '<div class="bk-just"><h3><i aria-hidden="true"></i>Latest updates</h3><ol>' + dev.slice(0, 2).map(li4).join('') + '</ol></div>' : '')]);
+      const coming = (rows ? '<div class="ev-sched"><h3>Coming up</h3><ol>' + rows + '</ol></div>' : '')
+        + (dev.length ? '<a class="bk-dev-btn" href="#developed-' + esc(ev.id) + '">How this developed <span aria-hidden="true">&#8595;</span></a>' : '')
+        + (btns ? '<div class="bk-next' + (started ? ' on' : '') + '" style="margin-top: 0"><div class="nx-when"><i aria-hidden="true"></i>' + (started ? 'Watch live' : 'Where to watch') + '</div><div class="nx-btns">' + btns + '</div></div>' : '');
+      if (coming) panes.push(['Coming up', coming]);
+      if (ev.keyfacts && ev.keyfacts.length) panes.push(['Key facts', '<ul class="kf">' + ev.keyfacts.map(([n, x, o, u]) => '<li><b class="n">' + esc(n) + '</b> ' + esc(x) + (u ? ' (<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(o) + '</a>)' : '') + '</li>').join('') + '</ul>']);
+      if (ev.unknowns && ev.unknowns.length) panes.push(['Not yet known', '<ul class="ky">' + ev.unknowns.map(([x, o, u]) => '<li>' + esc(x) + (u ? ' (<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(o) + '</a>)' : '') + '</li>').join('') + '</ul>']);
+      if (dev.length) panes.push(['Timeline', '<div class="tl"><ol>' + dev.map(li4).join('') + '</ol></div>' + ((ev.background && ev.background.length) ? '<details class="tab-more"><summary>Further back: how we got here</summary><div class="tl"><ol>' + ev.background.map(li4).join('') + '</ol></div></details>' : '')]);
+      if (evTab >= panes.length) evTab = 0;
+      return '<div class="bk-tabs ev-tabs"><div class="bk-tabbar" role="tablist" aria-label="Breaking story details">'
+        + panes.map(([n], i) => '<button type="button" role="tab" id="evTab' + i + '" aria-controls="evPane' + i + '" aria-selected="' + (i === evTab) + '">' + esc(n) + '</button>').join('') + '</div>'
+        + panes.map(([n, h], i) => '<div class="bk-pane" role="tabpanel" id="evPane' + i + '" aria-labelledby="evTab' + i + '"' + (i === evTab ? '' : ' hidden') + '>' + h + '</div>').join('') + '</div>';
+    };
+    box.addEventListener('click', (e) => {
+      const b = e.target.closest && e.target.closest('.ev-tabs .bk-tabbar button'); if (!b) return;
+      e.preventDefault(); e.stopPropagation();
+      const bar = b.parentElement, i = [...bar.children].indexOf(b); evTab = i;
+      bar.querySelectorAll('button').forEach((x, k) => x.setAttribute('aria-selected', String(k === i)));
+      box.querySelectorAll('.ev-tabs .bk-pane').forEach((p, k) => { p.hidden = k !== i; });
+    }, true);
     const render = () => {
       const now = Date.now();
       const ev = UPNEXT.concat(autoEvents()).filter((e) => !isNaN(T(e.start)) && now >= T(e.start) - EVENT_LEAD_HOURS * 3600000 && now <= T(e.until)).sort((a, b) => T(a.start) - T(b.start))[0];
@@ -2342,10 +2385,7 @@ header.site { border-bottom: 0; }
         + '<div class="ev-tag"><span class="tag">Breaking</span><span class="ev-count">' + esc(started ? 'Live coverage under way' : 'Live coverage begins in ' + left(T(ev.start) - now)) + '</span></div>'
         + '<h2><a class="card-link" href="' + esc(ev.url) + '" target="_blank" rel="noopener">' + esc(ev.h) + '</a></h2>'
         + '<p class="first"><span class="bl"><b>Latest</b> <a href="' + esc(ev.url) + '" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline"><strong>' + esc(ev.outlet) + '</strong></a>' + (ev.urlWhen ? ' · ' + esc(ev.urlWhen) : '') + '</span></p>'
-        + '<p class="bk-dek">' + ev.dek + '</p>'
-        + (rows ? '<div class="ev-sched"><h3>Coming up</h3><ol>' + rows + '</ol></div>' : '')
-        + ((ev.developed && ev.developed.length) ? '<a class="bk-dev-btn" href="#developed-' + esc(ev.id) + '">How this developed <span aria-hidden="true">&#8595;</span></a>' : '')
-        + (btns ? '<div class="bk-next' + (started ? ' on' : '') + '" style="margin-top: 0"><div class="nx-when"><i aria-hidden="true"></i>' + (started ? 'Watch live' : 'Where to watch') + '</div><div class="nx-btns">' + btns + '</div></div>' : '')
+        + evTabsHTML(ev, rows, btns, started)
         + '</div>';
       const pics = [{ src: ev.photo, credit: ev.credit, caption: ev.caption }]
         .concat(nets.map((c) => ({ src: c.file, credit: c.net })), nets.map((c) => ({ src: c.img, credit: c.net })))

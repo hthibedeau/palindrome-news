@@ -39,3 +39,6 @@ Every Breaking event also needs `devName` (e.g. 'the Alberta referendum') and `d
 
 ## Never
 Invent a time, a network, a speaker or a link. Show an event whose time no reliable source has reported. Leave an event up after its `until`.
+
+## Tabs (required)
+Every Breaking event shows the same tabs as the top story: Latest · Coming up · Key facts · Not yet known · Timeline. Give each UPNEXT entry `keyfacts: [['number', 'one-line fact', 'Outlet', 'url'], ...]` (3–6, number first) and `unknowns: [['one-line open question', 'Outlet', 'url'], ...]` (2–4), from real reports, and update them every run (full-update.md house rule 12c).
