@@ -2158,7 +2158,7 @@ header.site { border-bottom: 0; }
         + '<h2><a class="card-link" href="' + esc(ev.url) + '" target="_blank" rel="noopener">' + esc(ev.h) + '</a></h2>'
         + '<p class="first"><span class="bl"><b>Latest</b> <a href="' + esc(ev.url) + '" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline"><strong>' + esc(ev.outlet) + '</strong></a>' + (ev.urlWhen ? ' · ' + esc(ev.urlWhen) : '') + '</span></p>'
         + '<p class="bk-dek">' + ev.dek + '</p>'
-        + (rows ? '<div class="ev-sched"><h3>Coming up, with times</h3><ol>' + rows + '</ol></div>' : '')
+        + (rows ? '<div class="ev-sched"><h3>Coming up</h3><ol>' + rows + '</ol></div>' : '')
         + (btns ? '<div class="bk-next' + (started ? ' on' : '') + '" style="margin-top: 0"><div class="nx-when"><i aria-hidden="true"></i>' + (started ? 'Watch live' : 'Where to watch') + '</div><div class="nx-btns">' + btns + '</div></div>' : '')
         + '</div>';
       const pics = [{ src: ev.photo, credit: ev.credit }]
