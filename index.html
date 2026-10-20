@@ -564,6 +564,21 @@ header.site { border-bottom: 0; }
 .vid .bigplay:focus-visible { outline: 3px solid var(--accent); outline-offset: -3px; }
 .vid .plays { font-weight: 600; letter-spacing: 0; text-transform: none; color: var(--muted); }
 .vfilters { margin-bottom: 14px; }
+.onair-bar { position: relative; z-index: 3; margin: 12px 0 14px; padding: 12px 14px; background: #C2264B; color: #FFFFFF; border-radius: 2px; box-shadow: 0 0 0 2px #FFFFFF inset; }
+.onair-bar .oa-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; margin-bottom: 10px; }
+.onair-bar .oa-live { display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.onair-bar .oa-live i { width: 11px; height: 11px; border-radius: 50%; background: #FFFFFF; }
+@media (prefers-reduced-motion: no-preference) { .onair-bar .oa-live i { animation: pulse 1.4s ease-in-out infinite; } }
+.onair-bar .oa-what { font-size: 15px; font-weight: 600; line-height: 1.35; }
+.onair-bar .oa-go { display: flex; flex-wrap: wrap; gap: 8px; }
+.onair-bar .oa-btn { display: inline-flex; flex-direction: column; justify-content: center; min-height: 48px; padding: 8px 14px; background: #FFFFFF; color: #7A1F3D; text-decoration: none; border-radius: 2px; }
+.onair-bar .oa-btn b { font-size: 16px; font-weight: 800; }
+.onair-bar .oa-btn small { font-size: 12px; font-weight: 600; color: #5F5878; }
+.onair-bar .oa-btn.alt { background: rgba(255,255,255,.14); color: #FFFFFF; border: 1px solid #FFFFFF; }
+.onair-bar .oa-btn.alt small { color: #F6E1E8; }
+@media (hover: hover) { .onair-bar .oa-btn:hover { outline: 3px solid #FFFFFF; outline-offset: 2px; } }
+@media (max-width: 560px) { .onair-bar .oa-btn { width: 100%; } }
+
 .fronts .front-wide { grid-column: 1 / -1; padding: 0 !important; border-left: 0 !important; }
 .ca-band { display: block; margin: 28px 0 0; }
 .ca-band .front-wide { margin-bottom: 0; }
@@ -2544,6 +2559,52 @@ header.site { border-bottom: 0; }
       ] }
   ];
   window.PAL_UPNEXT = UPNEXT; window.PAL_EVENT_LEAD_HOURS = EVENT_LEAD_HOURS; window.PAL_EVENT_KEEP_HOURS = EVENT_KEEP_HOURS;
+  // LIVE NOW on a Breaking story (Hannah: "live coverage under way needs to stand out more, and where it will take the
+  // viewer"). For any Breaking story, whatever it is: a bright bar with every live video or live blog on that story,
+  // each button saying exactly where it goes (network, kind, site, last update). Sources: LIVENOW (video until it
+  // ends; live blogs updated within LIVE_BLOG_HOURS), COMING items on air now, and LIVE when it is live.
+  const LIVE_BLOG_HOURS = 6;
+  window.PAL_onAir = function (storyName) {
+    const now = Date.now(), Tm = (x) => Date.parse(x || '');
+    const key = (x) => String(x || '').replace(/^the\s+/i, '').toLowerCase().trim();
+    const k = key(storyName); if (!k) return [];
+    const same = (x) => { const a = key(x); return !!a && (a === k || a.indexOf(k) === 0 || k.indexOf(a) === 0); };
+    const host = (u) => { try { return new URL(u).host.replace(/^www\./, ''); } catch (e) { return ''; } };
+    const t = (ms) => new Date(ms).toLocaleTimeString('en-US', { timeZone: 'America/Toronto', hour: 'numeric', minute: '2-digit' }).replace('AM', 'a.m.').replace('PM', 'p.m.');
+    const out = [];
+    (typeof COMING !== 'undefined' ? COMING : []).forEach((c) => {
+      if (same(c.story) && now >= Tm(c.when) && now <= (Tm(c.until) || Tm(c.when) + 3 * 3600000)) out.push({ video: true, net: c.net, what: c.what || '', url: c.url, site: host(c.url), note: 'on now' });
+    });
+    (typeof LIVENOW !== 'undefined' ? LIVENOW : []).forEach((l) => {
+      if (!same(l.story) || !l.url) return;
+      if (l.kind === 'video') { if (now <= (Tm(l.until) || Tm(l.updated) + 2 * 3600000) && !out.some((o) => o.url === l.url)) out.push({ video: true, net: l.net, what: l.what || '', url: l.url, site: host(l.url), note: 'on now' }); }
+      else if (now - Tm(l.updated) <= LIVE_BLOG_HOURS * 3600000) out.push({ video: false, net: l.net, what: l.what || '', url: l.url, site: host(l.url), note: 'updated ' + t(Tm(l.updated)) + ' ET' });
+    });
+    return out.sort((a, b) => (b.video - a.video));
+  };
+  window.PAL_onAirHTML = function (items) {
+    if (!items || !items.length) return '';
+    const esc2 = (x) => String(x).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    const v = items.find((x) => x.video);
+    const lead = v || items[0];
+    const what = lead.what.replace(/^Live:\s*/i, '');
+    return '<div class="onair-bar" role="region" aria-label="Live now">'
+      + '<div class="oa-head"><span class="oa-live"><i aria-hidden="true"></i>' + (v ? 'Live now' : 'Live updates') + '</span>'
+      + (what ? '<span class="oa-what">' + esc2(what.length > 140 ? what.slice(0, 137) + '…' : what) + '</span>' : '') + '</div>'
+      + '<div class="oa-go">' + items.slice(0, 3).map((x) => '<a class="oa-btn' + (x.video ? '' : ' alt') + '" href="' + esc2(x.url) + '" target="_blank" rel="noopener">'
+        + '<b>' + (x.video ? '&#9654; Watch live on ' : 'Live updates on ') + esc2(x.net) + ' &#8599;</b>'
+        + '<small>' + esc2((x.video ? 'Live video' : 'Live blog') + ' · ' + x.note + ' · opens ' + x.site) + '</small></a>').join('') + '</div></div>';
+  };
+  (function topOnAir() {
+    const bk = document.getElementById('breaking'); if (!bk) return;
+    const draw = () => {
+      bk.querySelectorAll(':scope .onair-bar').forEach((x) => x.remove());
+      const tag = bk.querySelector('.tag'); if (!tag) return;
+      const html = window.PAL_onAirHTML(window.PAL_onAir(bk.dataset.story));
+      if (html) tag.parentElement.insertAdjacentHTML('afterend', html);
+    };
+    draw(); setInterval(draw, 60000);
+  })();
   (function breakingEvent() {
     const box = document.getElementById('bkEvent'); if (!box) return;
     // Safety net: any scheduled live coverage in COMING (not already shown in the top slot) with no UPNEXT entry
@@ -2606,6 +2667,7 @@ header.site { border-bottom: 0; }
       const all = UPNEXT.concat(autoEvents());
       const ev = all.filter(live).sort((a, b) => T(a.start) - T(b.start))[0] || all.filter(kept).sort((a, b) => T(b.until) - T(a.until))[0];
       const inWin = !!ev && live(ev);
+      const onair = ev ? window.PAL_onAir(ev.story) : [];
       if (!ev) { box.hidden = true; box.innerHTML = ''; return; }
       const started = now >= T(ev.start);
       const today = day(now);
@@ -2622,7 +2684,7 @@ header.site { border-bottom: 0; }
       const its = (ev.schedule || []).slice().sort((a, b) => T(a.at) - T(b.at)).map(item);
       const ahead = its.filter((x) => x.state !== 'done'), past = its.filter((x) => x.state === 'done').reverse();
       const nx = (ev.schedule || []).slice().sort((a, b) => T(a.at) - T(b.at)).find((x) => now < (T(x.to || '') || T(x.at) + 60000));
-      const nextUp = nx ? (nx.approx ? nx.approx : fmt(T(nx.at)) + ' ET' + (day(T(nx.at)) !== today ? ' ' + day(T(nx.at)) : '')) + ' · ' + nx.text.split(/[,;(]/)[0].slice(0, 70) : '';
+      const nextUp = nx ? (nx.approx ? nx.approx : fmt(T(nx.at)) + ' ET' + (day(T(nx.at)) !== today ? ' ' + day(T(nx.at)) : '')) + ' · ' + ((t0) => t0.length > 80 ? t0.slice(0, 80).replace(/\s+\S*$/, '') + '…' : t0)(nx.text.split(/[,;(]/)[0].trim()) : '';
       const chk = T(ev.scheduleChecked || ev.photoChecked || '');
       const rows = its.length ? (ahead.length ? ahead.map((x) => x.html).join('') : '<li class="sch-none-li"><p class="sch-none">Nothing else is scheduled yet. We look for new times every 15 minutes.</p></li>')
         + '</ol>' + (past.length ? '<details class="sch-done"><summary>Earlier (' + past.length + ' done)</summary><ol>' + past.map((x) => x.html).join('') + '</ol></details>' : '')
@@ -2632,7 +2694,8 @@ header.site { border-bottom: 0; }
       const nets = (typeof COMING !== 'undefined' ? COMING : []).filter((c) => (c.story || '').indexOf(ev.story) === 0 && now <= (T(c.until || '') || (T(c.when) + 3 * 3600000)));
       const btns = nets.map((c) => '<a href="' + esc(c.url) + '" target="_blank" rel="noopener">' + esc(c.net) + '<small>' + esc(fmt(T(c.when)) + ' ET' + (day(T(c.when)) !== today ? ' ' + day(T(c.when)) : '')) + '</small></a>').join('');
       box.innerHTML = '<div class="bk-text"><div class="ev-media"><div class="bart ev-art"></div></div>'
-        + '<div class="ev-tag"><span class="tag">' + (inWin ? 'Breaking' : 'Developing') + '</span><span class="ev-count">' + esc(!inWin ? (nextUp ? 'Next: ' + nextUp : 'Live coverage has ended') : started ? 'Live coverage under way' : 'Live coverage begins in ' + left(T(ev.start) - now)) + '</span></div>'
+        + '<div class="ev-tag"><span class="tag">' + (inWin ? 'Breaking' : 'Developing') + '</span><span class="ev-count">' + esc(onair.length ? (nextUp ? 'Next: ' + nextUp : '') : !inWin ? (nextUp ? 'Next: ' + nextUp : 'Live coverage has ended') : started ? 'Live coverage under way' : 'Live coverage begins in ' + left(T(ev.start) - now)) + '</span></div>'
+        + window.PAL_onAirHTML(onair)
         + '<h2><a class="card-link" href="' + esc(ev.url) + '" target="_blank" rel="noopener">' + esc(ev.h) + '</a></h2>'
         + '<p class="first"><span class="bl"><b>Latest</b> <a href="' + esc(ev.url) + '" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline"><strong>' + esc(ev.outlet) + '</strong></a>' + (ev.urlWhen ? ' · ' + esc(ev.urlWhen) : '') + '</span></p>'
         + evTabsHTML(ev, rows, btns, started)

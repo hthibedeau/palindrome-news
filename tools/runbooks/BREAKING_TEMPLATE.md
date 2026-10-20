@@ -12,7 +12,12 @@ The other runbooks give the detail behind each part: house rules 12–22 in full
    - Under the photo goes the caption exactly as the photo's publisher wrote it, ending "— via <outlet>": data-caption on .bart, or caption in the UPNEXT entry.
    - Keep earlier photos as fallbacks in imageChain.
    - On wide screens, the event photo sits on the left beside the headline.
-2. **The "Breaking" tag.**
+2. **The "Breaking" tag**, and under it, whenever there is live coverage on the story, the **LIVE NOW bar** (Hannah: "live coverage under way needs to stand out more, and where it will take the viewer").
+   - The page builds it by itself, for any Breaking story: a bright red bar with a pulsing dot, what is on air, and one button per live video or live blog.
+   - Each button says exactly where it goes, for example "▶ Watch live on CBC News · Live video · on now · opens cbc.ca" or "Live updates on CTV News · Live blog · updated 1:14 p.m. ET · opens ctvnews.ca".
+   - It reads LIVENOW (`story` must match the Breaking story's name), COMING items on air now, and live blogs updated in the last 6 hours (LIVE_BLOG_HOURS).
+   - Your part: keep LIVENOW current, with `updated` (the blog's real last-update time) and `until` for video, so the bar shows only coverage that is really live.
+3. **The tag itself.**
    - The page switches it to "Developing" one hour after the latest development (data-lastdev).
    - An event shows a countdown or "Live coverage under way".
 3. **Headline.**

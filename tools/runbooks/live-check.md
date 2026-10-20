@@ -50,6 +50,8 @@ Your part, every run:
   - It stays as "Developing", with "Next: …" from its schedule, with its tabs, timeline, key facts and How this developed block, for 12 hours after its window or after its last scheduled item, whichever is later (EVENT_KEEP_HOURS).
   - Set `keepUntil` on the UPNEXT entry to keep it longer, or to end it sooner once the story is folded into the lead or the top slot.
 
+**LIVE NOW BAR:** every Breaking story with live video or a live blog updated in the last 6 hours shows a red LIVE NOW bar, with buttons naming the network, the kind (live video or live blog), the update time and the site it opens. Keep LIVENOW's `story`, `updated` and `until` exact every run, so the bar never sends viewers to coverage that has ended (BREAKING_TEMPLATE.md step 2).
+
 **Every run: check ALL outlets and official alert channels for new breaking news (not only the stories already on the page), and use primary sources (official releases, results pages, court filings, Hansard, full video) as much as possible — see BREAKING_SOURCES.md.**
 
 **ALSO read tools/runbooks/BREAKING_TEMPLATE.md: every Breaking story, now and in the future, uses that layout (photo with caption first, newest headline, tabs, latest reports, no "How this developed" button). Build any new Breaking story that way in the same run.**
