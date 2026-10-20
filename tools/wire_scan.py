@@ -8,13 +8,14 @@ workspace proxy), the sources that this workspace can reach without a browser:
   front pages with machine-readable story lists:  CBC News (window.__INITIAL_STATE__), CTV News (Fusion.contentCache)
   RSS feeds that are fresh:                       Global News (top, Canada, world, politics), Al Jazeera,
                                                   The Globe and Mail (Canada, world, politics, business; subscribers),
-                                                  The Tyee
+                                                  The Tyee, CityNews, CP24, Toronto Star, National Post, Calgary Herald,
+                                                  Edmonton Journal, APTN, Radio-Canada, BBC, The Guardian, CBS, ABC, PBS
 
 Each item gets its real publish/update time in Eastern time, the outlet, the headline and the link. Items newer than
 --fresh minutes (default 60) are flagged NEW. Use --grep to filter (e.g. --grep "Wainwright|referendum").
 
-This is the fast first pass, not the whole job. Sources it cannot reach (AP, Reuters, BBC, CNN, NYT, Postmedia papers,
-CityNews, Radio-Canada, primary sources) are still covered by WebSearch + WebFetch on ARTICLE pages, as
+This is the fast first pass, not the whole job. Sources it cannot reach (AP and Reuters block automated reading on their side; CNN, NYT;
+primary sources) are still covered by WebSearch + WebFetch on ARTICLE pages, as
 tools/runbooks/SOURCES.md says (homepages fetched through WebFetch are often stale caches).
 
 Usage:  python3 tools/wire_scan.py [--fresh 60] [--limit 60] [--grep REGEX] [--json out.json]
@@ -41,7 +42,24 @@ FEEDS = [
     ("The Globe and Mail (subscribers)", "https://www.theglobeandmail.com/arc/outboundfeeds/rss/category/politics/"),
     ("The Globe and Mail (subscribers)", "https://www.theglobeandmail.com/arc/outboundfeeds/rss/category/business/"),
     ("The Tyee", "https://thetyee.ca/rss2.xml"),
+    # Reachable since Hannah allowed all domains (Tue Oct 20, 2026)
+    ("CityNews", "https://toronto.citynews.ca/feed/"),
+    ("CP24", "https://www.cp24.com/arc/outboundfeeds/rss/?outputType=xml"),  # pubDate is UTC wrongly marked -0400 (checked against article:published_time); fixed in UTC_MISLABELLED
+    ("Toronto Star", "https://www.thestar.com/search/?f=rss&t=article&c=news*&l=50&s=start_time&sd=desc"),
+    ("National Post", "https://nationalpost.com/feed"),
+    ("Calgary Herald", "https://calgaryherald.com/feed"),
+    ("Edmonton Journal", "https://edmontonjournal.com/feed"),
+    ("APTN News", "https://www.aptnnews.ca/feed/"),
+    ("Radio-Canada", "https://ici.radio-canada.ca/rss/4159"),
+    ("BBC News", "https://feeds.bbci.co.uk/news/world/rss.xml"),
+    ("BBC News", "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml"),
+    ("The Guardian", "https://www.theguardian.com/world/rss"),
+    ("CBS News", "https://www.cbsnews.com/latest/rss/main"),
+    ("ABC News", "https://abcnews.go.com/abcnews/topstories"),
+    ("PBS NewsHour", "https://www.pbs.org/newshour/feeds/rss/headlines"),
 ]
+# Feeds whose pubDate carries a wrong offset: the clock time is really UTC
+UTC_MISLABELLED = {"https://www.cp24.com/arc/outboundfeeds/rss/?outputType=xml"}
 FRONTS = [
     ("CBC News", "https://www.cbc.ca/news", "window.__INITIAL_STATE__", "https://www.cbc.ca"),
     ("CTV News", "https://www.ctvnews.ca", "Fusion.contentCache", "https://www.ctvnews.ca"),
@@ -94,7 +112,10 @@ def rss(outlet, url):
             continue
         title = html.unescape(re.sub(r"<!\[CDATA\[|\]\]>", "", t.group(1))).strip()
         link = html.unescape(re.sub(r"<!\[CDATA\[|\]\]>", "", l.group(1))).strip()
-        out.append((to_utc(d.group(1).strip()) if d else None, outlet, title, link))
+        dt = to_utc(d.group(1).strip()) if d else None
+        if dt and url in UTC_MISLABELLED:
+            dt = to_utc(re.sub(r"\s[+-]\d{4}$", " +0000", d.group(1).strip()))
+        out.append((dt, outlet, title, link))
     return out
 
 
@@ -162,10 +183,14 @@ def main():
         rows = [r for r in rows if rx.search(r[2]) or rx.search(r[3])]
     rows.sort(key=lambda r: r[0], reverse=True)
     now = datetime.now(timezone.utc)
+    future = [r for r in rows if (r[0] - now).total_seconds() > 600]
+    rows = [r for r in rows if r not in future]
     for dt, outlet, title, link in rows[: a.limit]:
         mins = int((now - dt).total_seconds() // 60)
         flag = "NEW " if mins <= a.fresh else "    "
         print(f"{flag}{eastern(dt):>15} | {outlet} | {title} | {link}")
+    if future:
+        print("BAD TIMES (in the future; check the feed's offset, never use these times): " + ", ".join(sorted({r[1] for r in future})), file=sys.stderr)
     if failed:
         print("UNREACHABLE: " + " ".join(failed), file=sys.stderr)
     if a.json:

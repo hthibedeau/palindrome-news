@@ -9,7 +9,7 @@ Reachability was tested Mon Oct 19, 2026, late evening. If a method stops workin
 python3 tools/wire_scan.py --fresh 30            # everything, newest first, NEW = last 30 min
 python3 tools/wire_scan.py --grep "Wainwright|referendum"   # one story
 ```
-- It reads CBC News and CTV News front pages (their own story lists, with real update times) and fresh RSS feeds: Global News (top, Canada, world, politics), Al Jazeera, The Globe and Mail (Canada, world, politics, business; subscribers only, so never the first click) and The Tyee.
+- It reads CBC News and CTV News front pages (their own story lists, with real update times) and fresh RSS feeds from Global News, Al Jazeera, The Globe and Mail (subscribers only, so never the first click), The Tyee, CityNews, CP24, Toronto Star, National Post, Calgary Herald, Edmonton Journal, APTN, Radio-Canada, BBC, The Guardian, CBS, ABC and PBS.
 - Every NEW line is a lead to check. Open the article, read its real time and facts, and decide whether it is breaking news, a new development on a story we carry, or wire material.
 - It is the fast first pass, not the whole job. Then run the wide WebSearch (BREAKING_SOURCES.md) for everything it cannot reach.
 
@@ -49,18 +49,18 @@ How to use them:
 - Full video of news conferences: CPAC (unedited), ParlVU, the government's own channel.
 
 ### D. Not reachable from this workspace
-- **No direct access:** AP, Reuters, BBC, CNN, NYT, Washington Post, CityNews and CP24 front pages, X, Instagram and LinkedIn.
+- **No direct access:** AP and Reuters (they refuse automated reading), X, Instagram and LinkedIn.
 - **Never scrape:** X, Instagram and LinkedIn. Never use mirrors, caches or archive copies to get around a block.
 - **Use instead:** article pages through WebSearch + WebFetch where they work. Use the networks' official YouTube channels for their video (tools/network_youtube.py).
 
-## Domains Hannah could allow (claude.ai Settings > Capabilities, network access)
-Allowing these would let every run read them directly, faster and fresher than WebFetch:
-- **Canadian newsrooms:** citynews.ca, cp24.com, thecanadianpress.com, nationalpost.com, calgaryherald.com, edmontonjournal.com, thestar.com, aptnnews.ca, ici.radio-canada.ca, cpac.ca
-- **Wires and international:** apnews.com, reuters.com, bbc.com, bbc.co.uk, theguardian.com
-- **U.S. networks:** nbcnews.com, cbsnews.com, abcnews.go.com, npr.org, pbs.org
-- **Photos:** i.cbc.ca, so CBC's own photos can be used instead of screen grabs
-- **Official sources:** canada.ca, pm.gc.ca, news.gc.ca (the federal news release feed)
-- **Official alerts:** alertready.ca and Environment Canada weather alerts (weather.gc.ca)
+## Network access: all domains allowed (Hannah, Tue Oct 20, 2026)
+Hannah set Settings > Capabilities to "All domains". Tested at 11:20 p.m. ET Mon Oct 19:
+- **Now direct (curl), with feeds in tools/wire_scan.py:** CityNews, CP24, Toronto Star, National Post, Calgary Herald, Edmonton Journal, APTN News, Radio-Canada, BBC News, The Guardian, CBS News, ABC News and PBS NewsHour.
+  - Also reachable: The Canadian Press site, CPAC, NBC News, NPR and pm.gc.ca.
+- **CBC photos:** i.cbc.ca photos now download. Use CBC's own photo, with its caption, instead of a screen grab when the photo is the best one.
+- **Still refused by the sites themselves:** apnews.com (403) and reuters.com (401). Keep reaching AP and Reuters through WebSearch + WebFetch on article pages, or through the outlets that carry their copy.
+- **canada.ca timed out.** Retry it, or fall back to the department's statement as quoted by a newsroom.
+- **CP24's feed marks UTC times as Eastern.** wire_scan.py corrects it, and drops and reports any feed time in the future. Always confirm a time on the article itself.
 
 ## Facts protocol: getting the best facts, every time
 1. **Primary first.**
