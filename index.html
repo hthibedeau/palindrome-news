@@ -1,4 +1,18 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}
+/* Fold-out lines ("Further back: how we got here", "… in full", "Earlier today") look like buttons (Hannah's rule) */
+.tab-more > summary, .dev-bgd > summary, .bk-folded > summary { list-style: none; display: inline-flex !important; align-items: center; gap: 8px; min-height: 40px; margin: 4px 0; padding: 0 14px 0 12px; border-radius: 999px; cursor: pointer; font-size: 13px !important; font-weight: 700 !important; letter-spacing: .02em !important; text-transform: none !important; -webkit-user-select: none; user-select: none; }
+.tab-more > summary::-webkit-details-marker, .dev-bgd > summary::-webkit-details-marker, .bk-folded > summary::-webkit-details-marker { display: none; }
+.tab-more > summary::before, .dev-bgd > summary::before, .bk-folded > summary::before { content: "\25B8"; display: inline-block; font-size: 12px; transition: transform .15s; }
+.tab-more[open] > summary::before, .dev-bgd[open] > summary::before, .bk-folded[open] > summary::before { transform: rotate(90deg); }
+.tab-more > summary::after, .dev-bgd > summary::after, .bk-folded > summary::after { content: "Tap to open"; font-weight: 600; font-size: 11.5px; opacity: .8; }
+.tab-more[open] > summary::after, .dev-bgd[open] > summary::after, .bk-folded[open] > summary::after { content: "Tap to close"; }
+.breaking .tab-more > summary, .breaking .bk-folded > summary { background: #FFFFFF; color: #7A1F3D !important; border: 0; }
+.breaking.top .tab-more > summary { color: #2B1B54 !important; }
+.dev-bgd > summary { background: var(--surface); color: var(--accent) !important; border: 1px solid var(--chipline); }
+@media (hover: hover) { .tab-more > summary:hover, .dev-bgd > summary:hover, .bk-folded > summary:hover { filter: brightness(.95); text-decoration: underline; text-underline-offset: 3px; } }
+.tab-more > summary:focus-visible, .dev-bgd > summary:focus-visible, .bk-folded > summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { .tab-more > summary::before, .dev-bgd > summary::before, .bk-folded > summary::before { transition: none; } }
+</style></head><body>
 <title>Palindrome News</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1144,7 +1158,7 @@ header.site { border-bottom: 0; }
       </div>
     </div>
     <div class="masthead">
-      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 10:34 p.m. ET Monday</b></span></div>
+      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 10:38 p.m. ET Monday</b></span></div>
       <div class="plate">
         <span class="stamp" id="stamp" hidden>Late edition</span>
         <a class="logo" href="#top">Palindrome <em>News</em></a>
@@ -1569,6 +1583,7 @@ header.site { border-bottom: 0; }
   <section id="corrections" class="ruled" aria-labelledby="cx-h" style="scroll-margin-top: 64px">
     <div class="band-head"><h2 id="cx-h">Corrections &amp; updates</h2><p>Every change we make to a story, with the time. Nothing is changed quietly.</p></div>
     <ol class="log">
+      <li><time>Mon 10:38 p.m.</time><span class="kind">Update</span><span><b>Easier to spot:</b> “Further back: how we got here” and the other fold-out lines now look like buttons, with an arrow and “Tap to open”</span></li>
       <li><time>Mon 10:34 p.m.</time><span class="kind">Update</span><span><b>Alberta referendum, in tabs:</b> like CFB Wainwright, the referendum story now has tabs under its headline: Latest, Coming up, Key facts, Not yet known and Timeline, with key facts from <a href="https://www.elections.ab.ca/resources/media/news-releases/2026-10-19-2/" target="_blank" rel="noopener">Elections Alberta</a> and <a href="https://www.ctvnews.ca/edmonton/article/delays-at-more-than-100-alberta-polling-stations-push-back-referendum-results-live-updates-here/" target="_blank" rel="noopener">CTV News</a></span></li>
       <li><time>Mon 10:30 p.m.</time><span class="kind">Update</span><span><b>About Palindrome:</b> each section (Methodology, Sources, Contact &amp; takedowns, Privacy, Sponsorship policy, Sponsor services) now opens on a tap and closes again</span></li>
       <li><time>Mon 10:29 p.m.</time><span class="kind">Update</span><span><b>CFB Wainwright, in tabs:</b> the top story’s details now sit in tabs under the headline: Latest, Key facts, The four who died, Not yet known and Timeline, so the story is much shorter; nothing was removed</span></li>
