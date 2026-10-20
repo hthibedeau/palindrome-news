@@ -1085,7 +1085,7 @@ header.site { border-bottom: 0; }
       </div>
     </div>
     <div class="masthead">
-      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 9:14 p.m. ET Monday</b></span></div>
+      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 9:16 p.m. ET Monday</b></span></div>
       <div class="plate">
         <span class="stamp" id="stamp" hidden>Late edition</span>
         <a class="logo" href="#top">Palindrome <em>News</em></a>
@@ -1487,6 +1487,7 @@ header.site { border-bottom: 0; }
   <section id="corrections" class="ruled" aria-labelledby="cx-h" style="scroll-margin-top: 64px">
     <div class="band-head"><h2 id="cx-h">Corrections &amp; updates</h2><p>Every change we make to a story, with the time. Nothing is changed quietly.</p></div>
     <ol class="log">
+      <li><time>Mon 9:16 p.m.</time><span class="kind">Update</span><span><b>How this developed:</b> a truly breaking story’s timeline now starts with the event itself; the earlier training deaths at CFB Wainwright were removed from its timeline. Background (“Further back”) stays only on stories that have been building for a while, such as the Alberta referendum</span></li>
       <li><time>Mon 9:14 p.m.</time><span class="kind">Update</span><span><b>How this developed, in more detail:</b> the Alberta referendum background now runs through 15 dated steps from the spring of 2025 to advance voting, including the court referral and rulings on the separatist question, both petitions, Premier Smith’s address and the Kenney–Notley campaign (<a href="https://www.cbc.ca/news/canada/edmonton/alberta-judge-proposed-referendum-unconstitutional-9.7004982" target="_blank" rel="noopener">CBC News</a>, <a href="https://www.ctvnews.ca/edmonton/article/1-million-votes-cast-in-albertas-referendum/" target="_blank" rel="noopener">CTV News</a>, <a href="https://globalnews.ca/news/11848163/alberta-judge-quashes-separation-petition-in-favour-of-first-nations/" target="_blank" rel="noopener">Global News</a>); CFB Wainwright’s background adds the 2014 and 2017 LAV III deaths (<a href="https://www.cbc.ca/news/canada/edmonton/soldier-killed-in-armoured-vehicle-rollover-at-alberta-base-1.2650270" target="_blank" rel="noopener">CBC News</a>, <a href="https://globalnews.ca/news/3404714/canadian-soldier-dies-in-vehicle-accident-on-alberta-base/" target="_blank" rel="noopener">Global News</a>)</span></li>
       <li><time>Mon 9:09 p.m.</time><span class="kind">Update</span><span><b>CFB Wainwright:</b> “How this story developed” adds a volunteer firefighter’s account of the rescue (<a href="https://calgaryherald.com/news/firefighter-rescue-mission-cfb-wainwright-fatal-fire" target="_blank" rel="noopener">Calgary Herald</a>, 6:04 p.m.) and Pte. Shaun Farrell’s mother’s words and Prince Albert’s plans (<a href="https://paherald.sk.ca/prince-albert-mourns-soldier-killed-in-wainwright-tragedy/" target="_blank" rel="noopener">Prince Albert Daily Herald</a>, 8:18 p.m.); the Herald is added to the tributes in “The four who died.” A wide check of national, local, hometown, official, wire and U.S. outlets found nothing newer than CBC’s 8:25 p.m. post.</span></li>
       <li><time>Mon 9:08 p.m.</time><span class="kind">Update</span><span><b>How this developed:</b> now condensed: each story shows its three newest updates, with “Show all” to open the full timeline and “Further back” to open the background</span></li>
@@ -2148,13 +2149,9 @@ header.site { border-bottom: 0; }
   // Only times reported by the network, the organiser or a reliable outlet. Earliest active event wins.
   // Background for the top story's "How this developed": earlier events that explain it, newest first,
   // each [date, what happened, outlet, url] from a real report (Hannah: "if there is a longer background, look up the details and take the reader back").
-  const TOP_BACKGROUND = [
-    ['May 13, 2021', 'The military charges Cpl. Lars Callsen of 3rd Battalion, Princess Patricia’s Canadian Light Infantry, with one count of negligence in Cpl. James Choi’s death; the case goes through the military justice system.', 'CBC News', 'https://www.cbc.ca/news/canada/edmonton/soldier-charged-alberta-base-live-fire-death-training-exercise-1.6025010'],
-    ['Oct. 30, 2020', 'Cpl. James Choi, 29, an army reservist with the Royal Westminster Regiment, is shot during a nighttime live-fire training exercise at CFB Wainwright and dies the next morning in hospital in Edmonton. The exercise is suspended and military police investigate. About 700 people are based at CFB Wainwright, about 200 kilometres southeast of Edmonton.', 'CBC News', 'https://www.cbc.ca/news/canada/edmonton/canadian-soldier-killed-exercise-wainwright-1.5785198'],
-    ['April 25, 2017', 'Sgt. Robert J. Dynerowicz of the Royal Canadian Dragoons, based at CFB Petawawa, dies and three other soldiers are hurt in an incident with a LAV III armoured vehicle during Exercise Rugged Bear at CFB Wainwright. He had served twice in Afghanistan.', 'Global News', 'https://globalnews.ca/news/3404714/canadian-soldier-dies-in-vehicle-accident-on-alberta-base/'],
-    ['Nov. 3, 2014', 'Pte. Steven Allen, 20, training to become a regular member of the infantry, is fatally injured when a lookout post collapses during an exercise at CFB Wainwright; he dies two days later at the University of Alberta hospital.', 'CBC News', 'https://www.cbc.ca/news/canada/edmonton/soldier-dies-after-training-incident-at-cfb-wainwright-alta-1.2826744'],
-    ['May 21, 2014', 'Lt.-Col. Dan Bobbitt, commanding officer of the 2nd Regiment, Royal Canadian Horse Artillery, is killed and four soldiers are injured when a LAV III overturns during a training exercise at Wainwright.', 'CBC News', 'https://www.cbc.ca/news/canada/edmonton/soldier-killed-in-armoured-vehicle-rollover-at-alberta-base-1.2650270']
-  ];
+  // Hannah's rule: a truly breaking story (a sudden event: a fire, crash, attack, disaster) does NOT go further back;
+  // its timeline starts with the event itself. Only a story that has been building for a while gets a background.
+  const TOP_BACKGROUND = [];
   window.PAL_TOP_BACKGROUND = TOP_BACKGROUND;
   const EVENT_LEAD_HOURS = 2;
   const UPNEXT = [
