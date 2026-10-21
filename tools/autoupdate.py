@@ -60,6 +60,13 @@ CANADA = re.compile(r"\b(Canad\w*|Ottawa|Carney|Poilievre|Ontario|Quebec|Québec
                     r"Nova Scotia|N\.S\.|New Brunswick|N\.B\.|P\.E\.I\.|Newfoundland|Yukon|Nunavut|N\.W\.T\.|Toronto|Montreal|Vancouver|"
                     r"Calgary|Edmonton|Winnipeg|Halifax|Regina|Saskatoon|Victoria|RCMP|Ont\.|Alta\.|Sask\.|Man\.|Que\.)\b")
 USA = re.compile(r"\b(Trump|U\.S\.|White House|Congress|Senate|Republican|Democrat|Ohio|Texas|California|Florida|New York|Washington|Pentagon|FBI)\b")
+DATELINES = {"Ottawa": "National", "Toronto": "Ontario", "Hamilton": "Ontario", "London": "Ontario", "Windsor": "Ontario",
+             "Kingston": "Ontario", "Sudbury": "Ontario", "Thunder Bay": "Ontario", "Montreal": "Quebec", "Quebec": "Quebec",
+             "Gatineau": "Quebec", "Winnipeg": "Manitoba", "Brandon": "Manitoba", "Regina": "Saskatchewan", "Saskatoon": "Saskatchewan",
+             "Calgary": "Alberta", "Edmonton": "Alberta", "Lethbridge": "Alberta", "Red Deer": "Alberta", "Vancouver": "B.C.",
+             "Victoria": "B.C.", "Kelowna": "B.C.", "Kamloops": "B.C.", "Halifax": "Nova Scotia", "Sydney": "Nova Scotia",
+             "Fredericton": "New Brunswick", "Moncton": "New Brunswick", "Saint John": "New Brunswick", "Charlottetown": "P.E.I.",
+             "St. John's": "N.L.", "St. John’s": "N.L.", "Whitehorse": "North", "Yellowknife": "North", "Iqaluit": "North"}
 STORY_HOURS = 12
 WIRE_HOURS = 3
 
@@ -179,6 +186,49 @@ def blog_times(page):
     return out
 
 
+def todays_canada(page, now, links, per_region=2, total=18):
+    """Today's Canada desk (Hannah, Wed Oct 21, 2026: "some of the stories in the Canada section are too old. Make them
+    all today stories"). Regional stories published TODAY (Eastern), from every province and territory
+    (tools/canada_scan.py), not already on the page, one per story, up to `per_region` per region, most widely
+    carried first; each with the outlet's own summary (og:description) and picture (og:image), exactly as published."""
+    import html as _h
+    import canada_scan as cs
+    day = w.eastern(now).split()[0]
+    rows = [r for r in cs.collect(18, now) if w.eastern(r[0]).split()[0] == day]
+    rows = [r for r in rows if r[4].split("?")[0].rstrip("/") not in links and not FRENCH.search(r[2])
+            and not OPINION.search(r[3] + " " + r[4]) and not SOFT.search(r[3] + " " + r[4]) and not re.search(gc.SKIP, r[3], re.I)
+            and not re.search(r"/community/|jackpot|Lotto", r[3] + " " + r[4], re.I)]
+    rows.sort(key=lambda r: (-len(r[5]), -r[0].timestamp()))
+    out, per, seen_words = [], {}, []
+    for dt, region, outlet, title, url, others in rows:
+        ws = cs.words(title)
+        if any(len(ws & x) >= 3 for x in seen_words) or per.get(region, 0) >= per_region:
+            continue
+        x = ps.curl(url) or ""
+        desc = ps.meta(x, "og:description") or ps.meta(x, "description") or ""
+        img = ps.meta(x, "og:image") or ""
+        desc = " ".join(_h.unescape(desc).split())
+        if len(desc) < 40 or not (cs.words(desc) & ws):
+            continue  # no summary, or the site's tagline instead of the story's own
+        # wire copy in a local feed: the dateline says where the story is ("FRIDAY HARBOR - ...", "OTTAWA - ...")
+        dl = re.match(r"([A-Z][A-Z .'’-]{2,30}?)(?:,\s*[A-Za-z. ]+)?\s*[-–—]\s", desc)
+        if dl:
+            place = dl.group(1).strip().title()
+            reg = DATELINES.get(place)
+            if reg is None:
+                continue  # a story from outside Canada
+            region = reg
+        seen_words.append(ws)
+        per[region] = per.get(region, 0) + 1
+        src = ", ".join([outlet] + sorted(o for o in others if not FRENCH.search(o))[:2])
+        out.append({"t": w.eastern(dt), "iso": dt.isoformat(), "region": "National" if region == "Canada" else region,
+                    "title": _h.unescape(title), "summary": desc, "outlet": src, "url": url, "img": _h.unescape(img)})
+        if len(out) >= total:
+            break
+    out.sort(key=lambda r: r["iso"], reverse=True)
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--page", default="index.html")
@@ -279,8 +329,13 @@ def main():
     except Exception as e:  # never block the run
         print("lead check failed:", e)
         leads = []
+    try:
+        canada = todays_canada(page, now, links)
+    except Exception as e:  # never block the run
+        print("canada failed:", e)
+        canada = []
     out = {"checked": now.isoformat(), "checkedLabel": w.eastern(now), "stories": stories,
-           "wire": [r["row"] for r in rows], "blogs": blog_times(page), "leads": leads}
+           "wire": [r["row"] for r in rows], "blogs": blog_times(page), "leads": leads, "canada": canada}
     os.makedirs(root, exist_ok=True)
     with open(a.out, "w", encoding="utf-8") as fh:
         json.dump(out, fh, ensure_ascii=False, indent=1)

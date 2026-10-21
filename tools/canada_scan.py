@@ -58,12 +58,9 @@ def words(t):
     return {x for x in re.findall(r"[a-z0-9']+", t.lower()) if len(x) > 3 and x not in STOP}
 
 
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--hours", type=int, default=18)
-    ap.add_argument("--per", type=int, default=6, help="stories to show per region")
-    a = ap.parse_args()
-    now = datetime.now(timezone.utc)
+def collect(hours=18, now=None):
+    """Every regional story in the last `hours`: (dt, region, outlet, title, url, other outlets with the same story)."""
+    now = now or datetime.now(timezone.utc)
     rows = []
     for region, paths in CBC.items():
         for pth in paths:
@@ -80,7 +77,7 @@ def main():
     seen, keep = set(), []
     for dt, region, outlet, t, u in rows:
         k = u.split("?")[0].rstrip("/")
-        if not dt or k in seen or (now - dt).total_seconds() > a.hours * 3600 or re.search(SKIP, t) or re.search(NOTLOCAL, u):
+        if not dt or k in seen or (now - dt).total_seconds() > hours * 3600 or re.search(SKIP, t) or re.search(NOTLOCAL, u):
             continue
         seen.add(k)
         keep.append((dt, region, outlet, t, u))
@@ -90,6 +87,15 @@ def main():
         wi = words(t)
         others = {o for d, r, o, tt, uu in base if o != outlet and len(wi & words(tt)) >= 3}
         keep[i] = (dt, region, outlet, t, u, others)
+    return keep
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--hours", type=int, default=18)
+    ap.add_argument("--per", type=int, default=6, help="stories to show per region")
+    a = ap.parse_args()
+    keep = collect(a.hours)
     by = {}
     for x in sorted(keep, key=lambda x: x[0], reverse=True):
         by.setdefault(x[1], []).append(x)
