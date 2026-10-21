@@ -5,6 +5,7 @@ Every Breaking story uses this layout, now and in the future. That covers the to
 The other runbooks give the detail behind each part: house rules 12–22 in full-update.md, BREAKING_SOURCES.md and BREAKING_EVENTS.md. This file is the checklist.
 
 ## The layout, top to bottom
+0. **Order, top to bottom (Hannah, Tue Oct 20, 2026):** the photo, its caption, then the latest summary of the story (.bk-dek / UPNEXT dek, newest first, at most 3 short sentences), then the Breaking tag and the LIVE box, then the headline and tabs. The page places the summary under the photo by itself; the Latest tab holds the newest timeline lines.
 1. **Photo first, then its caption.** It is replaced automatically every run by `python3 tools/auto_photo.py --page index.html --apply`, which uses the newest captioned, credited photo and keeps the old one as a fallback. tools/freshness_check.py flags a photo unchanged for 3 hours.
    - Find it with `python3 tools/photo_scan.py --page index.html`, which checks every Breaking story on the page, whatever it is, and gives the newest photos with their own captions and credits (method in full-update.md, under house rule 18b).
    - Use the best, newest real news photo of the story, never a drawing. Check for a better one every 15 minutes, from all sources.
@@ -35,7 +36,7 @@ The other runbooks give the detail behind each part: house rules 12–22 in full
 5. **Tabs**, only one open at a time:
    - **Top story:** Latest · Key facts · <the victims' box, under its own heading, e.g. "The four who died">, only if there are victims · Not yet known · Timeline.
    - **Breaking event:** Latest · Coming up · Key facts · Not yet known · Timeline.
-   - **Latest** holds the summary (.bk-dek, at most 3 short sentences, newest first) and the two newest timeline lines ("Latest updates").
+   - **Latest** holds the two newest timeline lines ("Latest updates"). The summary itself sits under the photo (step 0).
    - **Key facts** holds 3–6 one-line facts, each led by its number in bold and ending with its source link.
      - Top story: section#breaking .bk-keyfacts ul.kf. Event: UPNEXT keyfacts.
      - Below the facts: the source-count tracker, and the full "What we know" paragraphs folded as "Everything we know, in full".

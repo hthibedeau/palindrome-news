@@ -564,6 +564,8 @@ header.site { border-bottom: 0; }
 .vid .bigplay:focus-visible { outline: 3px solid var(--accent); outline-offset: -3px; }
 .vid .plays { font-weight: 600; letter-spacing: 0; text-transform: none; color: var(--muted); }
 .vfilters { margin-bottom: 14px; }
+.breaking .bk-sum { position: relative; z-index: 3; margin: 0 0 14px; font-size: 17px; line-height: 1.5; color: #FFFFFF; }
+.bk-event .ev-media .bk-sum { margin: 10px 0 16px; }
 .onair-bar { position: relative; z-index: 3; margin: 12px 0 14px; padding: 12px 14px; background: #C2264B; color: #FFFFFF; border-radius: 2px; box-shadow: 0 0 0 2px #FFFFFF inset; }
 .onair-bar .oa-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; margin-bottom: 10px; }
 .onair-bar .oa-live { display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
@@ -2716,7 +2718,7 @@ header.site { border-bottom: 0; }
     const evTabsHTML = (ev, rows, btns, started) => {
       const panes = [];
       const dev = ev.developed || [];
-      panes.push(['Latest', '<p class="bk-dek">' + ev.dek + '</p>' + (dev.length ? '<div class="bk-just"><h3><i aria-hidden="true"></i>Latest updates</h3><ol>' + dev.slice(0, 2).map(li4).join('') + '</ol></div>' : '')]);
+      if (dev.length) panes.push(['Latest', '<div class="bk-just"><h3><i aria-hidden="true"></i>Latest updates</h3><ol>' + dev.slice(0, 2).map(li4).join('') + '</ol></div>']);
       const coming = (rows ? '<div class="ev-sched"><h3>Coming up</h3><ol>' + rows + '</ol></div>' : '')
         + (btns ? '<div class="bk-next' + (started ? ' on' : '') + '" style="margin-top: 0"><div class="nx-when"><i aria-hidden="true"></i>' + (started ? 'Watch live' : 'Where to watch') + '</div><div class="nx-btns">' + btns + '</div></div>' : '');
       if (coming) panes.push(['Coming up', coming]);
@@ -2781,7 +2783,7 @@ header.site { border-bottom: 0; }
       // watch buttons only for coverage that has not ended
       const nets = (typeof COMING !== 'undefined' ? COMING : []).filter((c) => (c.story || '').indexOf(ev.story) === 0 && now <= (T(c.until || '') || (T(c.when) + 3 * 3600000)));
       const btns = nets.map((c) => '<a href="' + esc(c.url) + '" target="_blank" rel="noopener">' + esc(c.net) + '<small>' + esc(fmt(T(c.when)) + ' ET' + (day(T(c.when)) !== today ? ' ' + day(T(c.when)) : '')) + '</small></a>').join('');
-      box.innerHTML = '<div class="bk-text"><div class="ev-media"><div class="bart ev-art"></div></div>'
+      box.innerHTML = '<div class="bk-text"><div class="ev-media"><div class="bart ev-art"></div><p class="bk-dek bk-sum">' + ev.dek + '</p></div>'
         + '<div class="ev-tag"><span class="tag">' + (inWin ? 'Breaking' : 'Developing') + '</span><span class="ev-count">' + esc(onair.length ? (nextUp ? 'Next: ' + nextUp : '') : !inWin ? (nextUp ? 'Next: ' + nextUp : 'Live coverage has ended') : started ? '' : 'Live coverage begins in ' + left(T(ev.start) - now)) + '</span></div>'
         + window.PAL_onAirHTML(onair)
         + '<h2><a class="card-link" href="' + esc(ev.url) + '" target="_blank" rel="noopener">' + esc(ev.h) + '</a></h2>'
@@ -4291,7 +4293,10 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
   const tl = bk.querySelector('.tl');
   const panes = [];
   const latest = document.createElement('div');
-  [bk.querySelector('.bk-dek'), bk.querySelector('.bk-just')].forEach((el) => { if (el) latest.appendChild(el); });
+  // Hannah: the latest summary always sits right under the photo (photo, caption, summary), above the live box,
+  // not inside a tab. The Latest tab keeps the newest timeline lines.
+  { const dek = bk.querySelector('.bk-dek'), bart = bk.querySelector('.bart'); if (dek && bart) { dek.classList.add('bk-sum'); const cap = bart.nextElementSibling; ((cap && cap.classList.contains('bart-cap')) ? cap : bart).after(dek); } }
+  [bk.querySelector('.bk-just')].forEach((el) => { if (el) latest.appendChild(el); });
   if (latest.children.length) panes.push(['Latest', latest]);
   const kids = know ? [...know.children] : [];
   const facts = document.createElement('div');
