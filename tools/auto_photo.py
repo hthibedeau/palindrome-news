@@ -31,7 +31,7 @@ import os
 import re
 import subprocess
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import photo_scan as ps  # noqa: E402
@@ -96,6 +96,56 @@ def fetch_ok(src):
         return None
 
 
+OUTLETS = {"winnipegfreepress.com": "Winnipeg Free Press", "ici.radio-canada.ca": "Radio-Canada", "timescolonist.com": "Times Colonist",
+           "cbc.ca": "CBC News", "ctvnews.ca": "CTV News", "globalnews.ca": "Global News", "thestar.com": "Toronto Star",
+           "nationalpost.com": "National Post", "calgaryherald.com": "Calgary Herald", "edmontonjournal.com": "Edmonton Journal",
+           "citynews.ca": "CityNews", "cp24.com": "CP24", "aptnnews.ca": "APTN News", "lapresse.ca": "La Presse",
+           "ledevoir.com": "Le Devoir", "theglobeandmail.com": "The Globe and Mail", "bnnbloomberg.ca": "BNN Bloomberg"}
+MONTHS = "January|February|March|April|May|June|July|August|September|October|November|December|janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre"
+MNUM = {m.lower(): i % 12 + 1 for i, m in enumerate(MONTHS.split("|"))}
+
+
+def outlet_name(o, url):
+    host = re.sub(r"^www\.", "", (o if "." in (o or "") and " " not in o else url.split("/")[2]).lower())
+    for k, v in OUTLETS.items():
+        if host == k or host.endswith("." + k):
+            return v
+    return o if o and "." not in o else host
+
+
+def old_photo(c, now):
+    """True for file/archive photos and photos whose caption dates them more than 2 days back (Hannah wants the latest)."""
+    t = c["caption"] + " " + c["credit"]
+    if re.search(r"\bfile\b|archives?\b|d[’']archives|earlier this (year|month)|in a (?:\d{4} )?photo", t, re.I):
+        return True
+    if re.search(r"chroniqueu|columnist|\bprofil", t + " " + c["src"], re.I):
+        return True  # a writer's headshot is not news
+    for m in re.finditer(r"\b(%s)\.? (\d{1,2})(?:er)?\b(?:,? (20\d\d))?|\b(\d{1,2})(?:er)? (%s)\b(?: (20\d\d))?" % (MONTHS, MONTHS), t, re.I):
+        try:
+            mon, day, yr = (m.group(1), m.group(2), m.group(3)) if m.group(1) else (m.group(5), m.group(4), m.group(6))
+            d = datetime(int(yr or now.year), MNUM[mon.lower()], int(day), tzinfo=timezone.utc)
+            if not yr and d > now + timedelta(days=1):
+                d = d.replace(year=now.year - 1)
+        except (ValueError, KeyError):
+            continue
+        if (now - d).days > 2:
+            return True
+    return False
+
+
+def story_words(page, st):
+    """The story's own match words (data-match on the top slot, match: [...] on an UPNEXT event)."""
+    if st["where"].startswith("Top"):
+        m = re.search(r'data-match="([^"]*)"', page)
+        w = [x.strip() for x in (m.group(1).split(",") if m else []) if x.strip()]
+    else:
+        ev = st["where"].split("UPNEXT ")[-1].rstrip(")")
+        blk = page[page.find("{ id: '%s'" % ev):]
+        m = re.search(r"match: \[([^\]]*)\]", blk[: blk.find("schedule: [")])
+        w = re.findall(r"'([^']+)'", m.group(1)) if m else []
+    return w or ps.keywords(st["name"])
+
+
 def slug(t):
     return re.sub(r"[^a-z0-9]+", "-", t.lower()).strip("-")[:40]
 
@@ -125,6 +175,13 @@ def main():
         for c in candidates(st):
             if c["src"] in a.skip or (since and c["when"] <= since):
                 continue
+            if old_photo(c, now):
+                print(f"   skip (file/archive or dated photo): {c['caption'][:90]}")
+                continue
+            if not re.search("|".join(re.escape(x) for x in story_words(s, st)), c["caption"], re.I):
+                print(f"   skip (caption is not about this story): {c['caption'][:90]}")
+                continue
+            c["outlet"] = outlet_name(c["outlet"], c["url"])
             im = fetch_ok(c["src"])
             if im is None:
                 print(f"   skip (too small or unreadable): {c['src'][:90]}")

@@ -933,6 +933,14 @@ header.site { border-bottom: 0; }
 .ev-tabs .bk-pane .tl { margin-top: 0; padding: 12px 14px; }
 .bk-event .ev-tabs { max-width: none; }
 /* Photo captions from the photo's originator, under the picture */
+.breaking .auto-news { position: relative; z-index: 3; margin: 0 0 16px; padding: 10px 14px; border-left: 3px solid #FFD54A; background: rgba(255,255,255,.09); border-radius: 6px; max-width: 900px; }
+.breaking .auto-news h4 { margin: 0 0 6px; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: #FFE9A8; }
+.breaking .auto-news h4 span { text-transform: none; letter-spacing: 0; font-weight: 400; opacity: .85; }
+.breaking .auto-news ol { list-style: none; margin: 0; padding: 0; }
+.breaking .auto-news li { font-size: 14px; line-height: 1.4; margin: 5px 0; color: #FFFFFF; }
+.breaking .auto-news time { font-weight: 700; margin-right: 8px; white-space: nowrap; }
+.breaking .auto-news a { color: #FFFFFF; text-decoration: underline; }
+.breaking .auto-news .o { opacity: .8; font-size: 13px; }
 .breaking .bart-cap { position: relative; z-index: 3; margin: -8px 0 16px; font-size: 13px; line-height: 1.45; color: #F6E1E8; max-width: 900px; }
 .breaking.top .bart-cap { color: #E6DEF6; }
 .bk-event .ev-media .bart { margin: 0 0 16px; }
@@ -1280,9 +1288,9 @@ header.site { border-bottom: 0; }
 
     <section class="breaking tap bk-event" id="bkEvent" aria-label="Breaking news" hidden></section>
 
-    <section class="breaking tap" id="breaking" data-photo-set="2026-10-20T19:50:00-04:00" data-match="Wainwright" data-photo-checked="2026-10-21T11:05:00-04:00" data-story="the CFB Wainwright fire" aria-label="Breaking news" data-since="2026-10-17T20:16:00-04:00" data-lastdev="2026-10-21T10:31:00-04:00" data-expected="2026-10-19T11:00:00-04:00" data-latest="https://www.ctvnews.ca/windsor/article/windsor-essex-residents-encouraged-to-give-blood-after-cfb-wainwright-tragedy/" data-first="https://www.ctvnews.ca/edmonton/article/fatalities-and-injuries-after-explosion-and-fire-at-canadian-forces-base-in-alberta/">
+    <section class="breaking tap" id="breaking" data-photo-set="2026-10-21T14:53+00:00" data-match="Wainwright" data-photo-checked="2026-10-21T11:05:00-04:00" data-story="the CFB Wainwright fire" aria-label="Breaking news" data-since="2026-10-17T20:16:00-04:00" data-lastdev="2026-10-21T10:31:00-04:00" data-expected="2026-10-19T11:00:00-04:00" data-latest="https://www.ctvnews.ca/windsor/article/windsor-essex-residents-encouraged-to-give-blood-after-cfb-wainwright-tragedy/" data-first="https://www.ctvnews.ca/edmonton/article/fatalities-and-injuries-after-explosion-and-fire-at-canadian-forces-base-in-alberta/">
       <div class="bk-text">
-        <div class="bart" data-art="city" data-alt="Handout portraits of the four soldiers who died, side by side: Pte. Hayden Lykkemark, Pte. Shaun Farrell, Pte. Aidan Goulding and Sgt. Morgan Wong" data-photo="img/live/cp-wainwright-four-soldiers-composite.jpg" data-credit="The Canadian Press/Handout - Facebook, Nadine Dunford; Patricia Farrell; Wylder Goulding; Canadian Armed Forces" data-caption="This composite of handout images shows Canadian Armed Forces members, left to right, Pte. Hayden Lykkemark, Pte. Shaun Farrell, Pte. Aidan Goulding and Sgt. Morgan Wong, who died during a training exercise at CFB Wainwright on Saturday, Oct. 17, 2026. (The Canadian Press/Handout - Facebook, Nadine Dunford; Patricia Farrell; Wylder Goulding; Canadian Armed Forces) — via The Canadian Press (Times Colonist)"></div>
+        <div class="bart" data-art="city" data-alt="Flowers and messages are laid for the victims of a fire that killed four soldiers at CFB Wainwright, at the Memorial Clock Tower on Main Street in Wainwright,…" data-photo="img/live/times-colonist-the-cfb-wainwright-fire-1021-1336.jpg" data-credit="The Canadian Press/Christopher Katsarov, via Times Colonist" data-caption="Flowers and messages are laid for the victims of a fire that killed four soldiers at CFB Wainwright, at the Memorial Clock Tower on Main Street in Wainwright, Alta., on Tuesday, Oct. 20, 2026. (The Canadian Press/Christopher Katsarov) — via Times Colonist"></div>
         <span class="tag">Breaking</span><span class="btime">Updated 10:55 a.m. ET Wednesday</span>
         <h2><a class="card-link" href="https://www.ctvnews.ca/windsor/article/windsor-essex-residents-encouraged-to-give-blood-after-cfb-wainwright-tragedy/" target="_blank" rel="noopener">Blood donors answer the call as Wainwright prepares to grieve four soldiers at tonight’s vigil</a></h2>
         <p class="first"><span class="bl"><b>Latest</b> <a href="https://www.ctvnews.ca/windsor/article/windsor-essex-residents-encouraged-to-give-blood-after-cfb-wainwright-tragedy/" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline"><strong>CTV News</strong></a> · Wed 10:31 a.m.</span><span class="bl">First reported by <a href="https://www.ctvnews.ca/edmonton/article/fatalities-and-injuries-after-explosion-and-fire-at-canadian-forces-base-in-alberta/" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline"><strong>CTV News</strong></a> · Sat 8:16 p.m.</span></p>
@@ -2413,6 +2421,7 @@ header.site { border-bottom: 0; }
     { kind: 'updates', story: 'Strait of Hormuz and the Iran war', net: 'Al Jazeera', what: 'Live: Iran’s Foreign Minister Abbas Araghchi says Tehran is committed to a peaceful resolution but “fully prepared to defend” itself; President Masoud Pezeshkian says the U.S. cannot expect dialogue while blockading and threatening Iran', url: 'https://www.aljazeera.com/news/liveblog/2026/10/21/iran-war-live-us-warns-peace-deal-with-tehran-is-extremely-difficult', updated: '2026-10-21T10:00:00-04:00', file: 'img/live/aljazeera-iran-live-1020.jpg', blob: '/_blob/c6742a9417c2d7a55b8c84564ed781e4', img: 'https://www.aljazeera.com/wp-content/uploads/2026/10/AFP__20261020__D3VR7ET__v1__HighRes__IranPakistanPoliticsDiplomacy-1-1792524358.jpg?resize=1920%2C1440' },
     { kind: 'updates', story: 'France protests', net: 'Al Jazeera', what: 'Live: President Emmanuel Macron acknowledges failures in anticipation and intelligence but rejects the resignation of Interior Minister Laurent Nuñez, who said police lost control during the protests; Paris is relatively calm on Monday morning, with many shops still closed, as calls grow for another major protest on Saturday; Prime Minister Sébastien Lecornu asks some local authorities to impose “partial” and “localised” curfews and says there are no plans to cancel Tuesday’s PSG–Barcelona match in Paris; the Louvre closes after student protesters reach its pyramid entrance; Paris police say 351 people were detained Sunday; the Yellow Vest movement calls “Act II” protests for Saturday', url: 'https://www.aljazeera.com/news/liveblog/2026/10/19/france-protests-live-macron-admits-failures-after-days-of-violent-unrest', updated: '2026-10-19T10:15:00-04:00', file: 'img/live/aljazeera-france-live.jpg', blob: '/_blob/b4fe6a4f5bb8f90870c70ffacb8f0d32', img: 'https://www.aljazeera.com/wp-content/uploads/2026/10/AP26291714919220-1792394736.jpg?resize=1920%2C1440' }
   ];
+  window.PAL_LIVENOW = LIVENOW; // tools/autoupdate.py's newest-post times update these (see the autoupdate script below)
   const COMING = [
     { story: 'Alberta referendum', net: 'CPAC', what: 'Danielle Smith speaks on results of Alberta referendum: the premier’s televised address on the vote and what comes next', where: 'CPAC on TV and cpac.ca', when: '2026-10-20T20:45:00-04:00', local: '6:45 p.m. MT', until: '2026-10-20T20:55:00-04:00', url: 'https://www.cpac.ca/headline-politics/episode/danielle-smith-speaks-on-results-of-alberta-referendum?id=077ede16-8930-45ac-8a4e-0c82888ec789', info: 'https://www.am1150.ca/90539/news/national/premier-to-address-albertans-after-decisive-vote-against-separation-process/', file: '', img: '' },
     { story: 'Alberta referendum', net: 'CTV News', what: 'Premier Danielle Smith’s televised address to Albertans on the referendum results', where: 'CTV and CTVNews.ca live (also on Global and Rogers, and streamed on the Government of Alberta’s website and Smith’s social media, Great West Media reports)', when: '2026-10-20T20:45:00-04:00', local: '6:45 p.m. MT', until: '2026-10-20T20:55:00-04:00', url: 'https://www.ctvnews.ca/video/live/', info: 'https://www.stalbertgazette.com/beyond-local/premier-danielle-smith-to-address-albertans-tuesday-evening-12915115', file: '', img: '' },
@@ -2892,6 +2901,9 @@ header.site { border-bottom: 0; }
       bar.querySelectorAll('button').forEach((x, k) => x.setAttribute('aria-selected', String(k === i)));
       box.querySelectorAll('.ev-tabs .bk-pane').forEach((p, k) => { p.hidden = k !== i; });
     }, true);
+    // Still developing: tools/autoupdate.py found 2+ new reports on it in the last 6 hours (live/auto.json), so it stays
+    // up as Developing even after EVENT_KEEP_HOURS, until the reports stop.
+    const autoActive = (e) => { const d = window.PAL_autoupdate && window.PAL_autoupdate.data; const st = d && (d.stories || []).find((x) => x.key === e.id); return !!st && (st.reports || []).filter((r) => Date.now() - Date.parse(r.iso) < 6 * 3600000).length >= 2; };
     const render = () => {
       const now = Date.now();
       // An event is Breaking from EVENT_LEAD_HOURS before it starts until it ends, and again from EVENT_LEAD_HOURS
@@ -2902,7 +2914,8 @@ header.site { border-bottom: 0; }
       // developing stories"): the event stays, marked "Developing", for EVENT_KEEP_HOURS after its window (or until
       // keepUntil, if a run sets one), with its timeline, key facts and coming-up times intact.
       const lastEnd = (e) => Math.max.apply(null, [T(e.until)].concat((e.schedule || []).filter((x) => !x.approx && T(x.at) <= now).map((x) => T(x.to || '') || T(x.at) + 3600000)).filter((x) => !isNaN(x)));
-      const kept = (e) => !isNaN(T(e.start)) && now >= T(e.start) && now <= (T(e.keepUntil || '') || (lastEnd(e) + EVENT_KEEP_HOURS * 3600000));
+      const kept = (e) => !isNaN(T(e.start)) && now >= T(e.start) && now <= (T(e.keepUntil || '') || (lastEnd(e) + EVENT_KEEP_HOURS * 3600000))
+        || (!isNaN(T(e.start)) && now >= T(e.start) && autoActive(e));
       const all = UPNEXT.concat(autoEvents());
       const ev = all.filter(live).sort((a, b) => T(a.start) - T(b.start))[0] || all.filter(kept).sort((a, b) => T(b.until) - T(a.until))[0];
       const inWin = !!ev && live(ev);
@@ -2938,6 +2951,7 @@ header.site { border-bottom: 0; }
       // watch buttons only for coverage that has not ended
       const nets = (typeof COMING !== 'undefined' ? COMING : []).filter((c) => (c.story || '').indexOf(ev.story) === 0 && now <= (T(c.until || '') || (T(c.when) + 3 * 3600000)));
       const btns = nets.map((c) => '<a href="' + esc(c.url) + '" target="_blank" rel="noopener">' + esc(c.net) + '<small>' + esc(fmt(T(c.when)) + ' ET' + (day(T(c.when)) !== today ? ' ' + day(T(c.when)) : '')) + '</small></a>').join('');
+      box.dataset.evid = ev.id || ''; box.dataset.story = ev.story || '';
       box.innerHTML = '<div class="bk-text"><div class="ev-media"><div class="bart ev-art"></div><p class="bk-dek bk-sum">' + ev.dek + '</p></div>'
         + '<div class="ev-tag"><span class="tag">' + (inWin ? 'Breaking' : 'Developing') + '</span><span class="ev-count">' + esc(onair.length ? (nextUp ? 'Next: ' + nextUp : '') : !inWin ? (nextUp ? 'Next: ' + nextUp : 'Live coverage has ended') : started ? '' : 'Live coverage begins in ' + left(T(ev.start) - now)) + '</span></div>'
         + window.PAL_onAirHTML(onair)
@@ -2953,7 +2967,7 @@ header.site { border-bottom: 0; }
       if (window.PAL_oneStoryOnePlace) window.PAL_oneStoryOnePlace();
       if (window.PAL_liveCoverageRender && !box.dataset.bandDone) { box.dataset.bandDone = '1'; window.PAL_liveCoverageRender(); }
     };
-    render(); setInterval(render, 60000);
+    render(); setInterval(render, 60000); window.PAL_eventRender = render;
   })();
   // The top slot's picture, with fallbacks so it is never just an illustration
   (function topSlotImage() {
@@ -3565,6 +3579,7 @@ header.site { border-bottom: 0; }
   if ($('tkTrack')) $('tkTrack').innerHTML = items.map(tkItem(false)).join('') + items.map(tkItem(true)).join('');
   }
   renderWire();
+  window.PAL_latest = latest; window.PAL_renderWire = renderWire; // the autoupdate script adds newer wire items
 
   // Live clock, Toronto time
   function tickClock() {
@@ -4885,5 +4900,102 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
 })();
 </script>
 
+<script>
+// ===== Autoupdate (Hannah, Wed Oct 21, 2026: "I need the program to continually scan for the latest news" and
+// "create a code that does this"). GitHub Actions runs tools/autoupdate.py every 10 minutes; it reads ~85 newsrooms
+// and official feeds and writes live/auto.json. This script fetches it every 2 minutes and, with no one at the
+// keyboard: lists every report on each Breaking story newer than its last development under the story's summary
+// ("Newest reports · checked automatically"); swaps in a newer news photo with its own caption and credit; puts newer
+// wire headlines at the top of The latest; and updates live blogs' newest-post times. Real headlines, times,
+// captions and links only, exactly as the outlets published them.
+(function () {
+  const SRC = ['live/auto.json', 'https://raw.githubusercontent.com/hthibedeau/palindrome-news/main/live/auto.json'];
+  const STALE_MS = 3 * 3600000;
+  let AUTO = null, wireAdded = new Set();
+  const esc = (x) => String(x == null ? '' : x).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const key = (u) => String(u || '').split('?')[0].replace(/\/$/, '');
+  const fmt = (iso) => { try { return new Date(iso).toLocaleTimeString('en-CA', { hour: 'numeric', minute: '2-digit', timeZone: 'America/Toronto' }); } catch (e) { return ''; } };
+  // 'Wed 10:16 a.m.' (Eastern) -> ms, within the last 7 days
+  function labelMs(lbl) {
+    const m = /^(Mon|Tue|Wed|Thu|Fri|Sat|Sun)\w*\.? (\d{1,2}):(\d{2}) (a|p)\.m\./.exec(lbl || ''); if (!m) return NaN;
+    const now = Date.now();
+    for (let back = 0; back < 8; back++) {
+      const d = new Date(now - back * 86400000);
+      const wd = d.toLocaleDateString('en-CA', { weekday: 'short', timeZone: 'America/Toronto' }).slice(0, 3);
+      if (wd !== m[1]) continue;
+      const ymd = d.toLocaleDateString('en-CA', { timeZone: 'America/Toronto' });
+      const h = (+m[2] % 12) + (m[4] === 'p' ? 12 : 0);
+      for (const off of ['-04:00', '-05:00']) { const t = Date.parse(ymd + 'T' + String(h).padStart(2, '0') + ':' + m[3] + ':00' + off); if (!isNaN(t) && t <= now + 600000) return t; }
+    }
+    return NaN;
+  }
+  async function load() {
+    const got = [];
+    for (const u of SRC) {
+      try { const r = await fetch(u + '?t=' + Date.now(), { cache: 'no-store' }); if (r.ok) got.push({ base: u.replace(/live\/auto\.json$/, ''), d: await r.json() }); } catch (e) {}
+    }
+    got.sort((a, b) => Date.parse(b.d.checked) - Date.parse(a.d.checked));
+    if (!got.length || Date.now() - Date.parse(got[0].d.checked) > STALE_MS) { if (got.length) console.warn('autoupdate: live/auto.json is over 3 hours old; check the Auto update workflow on GitHub Actions'); return; }
+    const fresh = !AUTO || AUTO.d.checked !== got[0].d.checked;
+    AUTO = got[0];
+    if (fresh) { blogs(); wire(); if (window.PAL_eventRender) try { window.PAL_eventRender(); } catch (e) {} }
+    paint();
+  }
+  function blogs() {
+    const L = window.PAL_LIVENOW || [];
+    (AUTO.d.blogs || []).forEach((b) => { const x = L.find((l) => key(l.url) === key(b.url)); if (x && (!x.updated || Date.parse(b.updated) > Date.parse(x.updated))) x.updated = b.updated; });
+    if (window.PAL_liveCoverageRender) try { window.PAL_liveCoverageRender(); } catch (e) {}
+  }
+  function wire() {
+    const latest = window.PAL_latest; if (!latest || !window.PAL_renderWire) return;
+    for (let i = latest.length - 1; i >= 0; i--) if (latest[i].auto) latest.splice(i, 1);
+    const have = new Set(latest.map((r) => key(r[4])));
+    const newest = Math.max.apply(null, latest.map((r) => labelMs(r[0])).filter((x) => !isNaN(x)).concat([0]));
+    const add = (AUTO.d.wire || []).filter((r) => Date.parse(r[5]) > newest && !have.has(key(r[4])) && !document.querySelector('#breaking a[href="' + CSS.escape(r[4]) + '"]'))
+      .sort((a, b) => Date.parse(b[5]) - Date.parse(a[5]))
+      .map((r) => { const row = [r[0], r[1], r[2], r[3], r[4]]; row.auto = true; return row; });
+    if (!add.length) return;
+    latest.unshift.apply(latest, add);
+    try { window.PAL_renderWire(); } catch (e) {}
+  }
+  function photo(root, p) {
+    const el = root.querySelector('.bart'); if (!el || !p || el.dataset.auto === p.src) return;
+    const src = AUTO.base + p.src, im = new Image();
+    im.onload = () => {
+      if (!im.naturalWidth || !el.isConnected) return;
+      el.dataset.auto = p.src; el.removeAttribute('data-art');
+      el.innerHTML = '<span class="ph"><img src="' + esc(src) + '" alt="' + esc(p.alt || '') + '" decoding="async"></span>';
+      let cap = el.nextElementSibling;
+      if (!cap || !cap.classList.contains('bart-cap')) { cap = document.createElement('p'); cap.className = 'bart-cap'; el.after(cap); }
+      cap.textContent = p.caption;
+    };
+    im.src = src;
+  }
+  function paint() {
+    if (!AUTO) return;
+    (AUTO.d.stories || []).forEach((s) => {
+      const root = s.key === 'top' ? document.getElementById('breaking') : document.querySelector('#bkEvent[data-evid="' + CSS.escape(s.key) + '"]');
+      if (!root || root.hidden) return;
+      photo(root, s.photo);
+      const old = root.querySelector('.auto-news'); if (old) old.remove();
+      // the page may have caught up since the scan: drop anything it now links, or older than its last development
+      const lastdev = Date.parse(root.dataset.lastdev || '');
+      const linked = new Set([...root.querySelectorAll('a[href]')].map((a) => key(a.href)));
+      const reps = (s.reports || []).filter((r) => !linked.has(key(r.url)) && !(Date.parse(r.iso) <= lastdev)).slice(0, 6);
+      if (!reps.length) return;
+      const box = document.createElement('div'); box.className = 'auto-news';
+      box.innerHTML = '<h4>Newest reports <span>· checked automatically ' + esc(fmt(AUTO.d.checked)) + ' ET</span></h4><ol>'
+        + reps.map((r) => '<li><time>' + esc(r.t.replace(/^\w+ /, '')) + '</time><a href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(r.title) + '</a> <span class="o">' + esc(r.outlet) + ' &#8599;</span></li>').join('')
+        + '</ol>';
+      const sum = root.querySelector('.bk-sum') || root.querySelector('.bk-dek') || root.querySelector('h2');
+      if (sum) sum.after(box);
+    });
+  }
+  const ev = document.getElementById('bkEvent');
+  if (ev && window.MutationObserver) new MutationObserver(() => paint()).observe(ev, { childList: true });
+  setTimeout(load, 1500); setInterval(load, 120000);
+  window.PAL_autoupdate = { load, get data() { return AUTO && AUTO.d; } };
+})();
+</script>
 
 </body></html>

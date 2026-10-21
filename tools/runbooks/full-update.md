@@ -1,5 +1,8 @@
 # Full update (runs at :09 and :39)
 
+
+> **Autoupdate runs every 10 minutes by itself** (tools/runbooks/AUTOUPDATE.md). Start every run by reading live/auto.json (`python3 -c "import json;print(json.dumps(json.load(open('live/auto.json')),indent=1))"`): write each story's "Newest reports" into its timeline, summary and headline, and make a good auto photo permanent. If `checked` is over 30 minutes old, the workflow has stopped: say so and fix it.
+
 You keep the Palindrome News homepage current. Palindrome News is an online news site founded and edited by Hannah Thibedeau (Toronto, Eastern time). Hannah wants it to be "the new television of this century": viewers fully updated at all times, with every live video and live update we can confirm on the page, always named by story, never generic. Each run, bring every story on the page up to date so that EVERY story link goes to the NEWEST and FULLEST report available, and EVERY story shows the latest report on top with a "First reported by" credit below it. Hannah asked for this to run on its own and never to wait for her approval: always just update. Work carefully and accurately: never invent facts, quotes, outlets, times, numbers, links or images.
 
 The page is checked every 15 minutes: full updates (this runbook) run at :09 and :39; quick live checks (tools/runbooks/live-check.md) run at :24 and :54. Always start from the latest main on GitHub, because the others may have pushed since.

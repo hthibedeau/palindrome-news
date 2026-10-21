@@ -122,6 +122,57 @@ def main():
             pass
     if "<li><span class=\"when\">" in s[s.find('aside class="watch"'): s.find('</aside>', s.find('aside class="watch"'))]:
         todo.append("WHAT TO WATCH: an item has no data-until date; give every item one so it drops off by itself.")
+    # Hannah: "I need the program to continually scan for the latest news. The Wainwright story is not the most up to
+    # date." Every Breaking story: any report on it newer than the story's last development that the page does not
+    # link yet is a TO DO (read it; add the new facts to the timeline, summary, headline; or say why not).
+    try:
+        import os, sys as _sys
+        _sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        import photo_scan as _ps, wire_scan as _ws
+        items = []
+        for outlet, url in _ws.FEEDS:
+            items += _ws.rss(outlet, url)
+        for outlet, url, marker, base in _ws.FRONTS:
+            items += _ws.front(outlet, url, marker, base)
+        links = set(u.split("?")[0].rstrip("/") for u in re.findall(r"https?://[^\s\"'<>]+", s))
+        nowu = datetime.now(timezone.utc)
+        for st in _ps.breaking_stories(a.page):
+            words = []
+            if st["where"].startswith("Top"):
+                mm = re.search(r'data-match="([^"]*)"', s)
+                words = [w.strip() for w in (mm.group(1).split(",") if mm else []) if w.strip()]
+                ld = re.search(r'data-lastdev="([^"]*)"', s)
+                since = _ps.to_utc(ld.group(1)) if ld else None
+            else:
+                ev = st["where"].split("UPNEXT ")[-1].rstrip(")")
+                blk = s[s.find("{ id: '%s'" % ev):]
+                blk = blk[: blk.find("schedule: [")]
+                mm = re.search(r"match: \[([^\]]*)\]", blk)
+                words = re.findall(r"'([^']+)'", mm.group(1)) if mm else []
+                tl = re.findall(r"\['((?:Mon|Tue|Wed|Thu|Fri|Sat|Sun) \d{1,2}:\d{2} [ap]\.m\.)'", blk)
+                newest = max([t for t in (parse_label(x, now) for x in tl) if t], default=None)
+                since = (newest + timedelta(hours=4)).replace(tzinfo=timezone.utc) if newest else None
+            words = words or _ps.keywords(st["name"])
+            rx = re.compile("|".join(re.escape(w) for w in words), re.I)
+            newer, seen = [], set()
+            for dt_, outlet, title, link in items:
+                k = link.split("?")[0].rstrip("/")
+                if not dt_ or k in seen or k in links or not rx.search(title):
+                    continue
+                if since and dt_ <= since:
+                    continue
+                if (dt_ - nowu).total_seconds() > 600 or (nowu - dt_).total_seconds() > 12 * 3600:
+                    continue
+                seen.add(k)
+                newer.append((dt_, outlet, title, link))
+            newer.sort(reverse=True)
+            print(f"  {st['name']}: {len(newer)} report(s) newer than its last development, not yet on the page")
+            for dt_, outlet, title, link in newer[:8]:
+                print(f"      {_ws.eastern(dt_)} | {outlet} | {title[:100]} | {link}")
+            if newer:
+                todo.append(f"STORY {st['name']}: {len(newer)} newer report(s) not on the page (listed above). Read them; add each new fact to the timeline with its real time, rewrite the summary and headline newest-first, set data-lastdev; or say why each adds nothing.")
+    except Exception as e:  # never block the run
+        print("  (story check unavailable:", e, ")")
     print("\nTO DO this run:" if todo else "\nNothing stale.")
     for t in todo:
         print("  - " + t)
