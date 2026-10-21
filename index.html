@@ -588,7 +588,12 @@ header.site { border-bottom: 0; }
 .onair-bar .oa-txt { display: flex; flex-direction: column; min-width: 0; }
 .onair-bar .oa-sub { font-size: 13px; font-weight: 600; line-height: 1.3; }
 .onair-bar .oa-btn.off { background: #FFF6D6; color: #2B1B54; }
-.onair-bar .oa-btn.soon { background: #FFFFFF; color: #7A1F3D; border: 2px dashed #7A1F3D; }
+.onair-bar .oa-btn.soon { position: relative; background: #FFFFFF; color: #7A1F3D; border: 0; border-left: 6px solid #C2264B; border-radius: 6px; padding-left: 14px; box-shadow: 0 2px 0 rgba(0,0,0,.18), 0 6px 18px rgba(20,8,40,.22); }
+.onair-bar .oa-btn.soon.has-pic { padding-left: 6px; }
+.onair-bar .oa-btn.soon b { display: inline-flex; align-items: center; gap: 7px; }
+.onair-bar .oa-btn.soon .oa-clock { flex: 0 0 auto; display: inline-flex; width: 22px; height: 22px; border-radius: 50%; background: #C2264B; align-items: center; justify-content: center; }
+.onair-bar .oa-btn.soon .oa-clock svg { width: 14px; height: 14px; }
+.onair-bar .oa-btn.soon small { display: inline-block; margin-top: 4px; padding: 2px 8px; width: fit-content; border-radius: 999px; background: #FBE7EC; color: #7A1F3D; font-weight: 700; }
 .onair-bar .oa-btn.off small { color: #5F5878; }
 
 @media (hover: hover) { .onair-bar .oa-btn:hover { outline: 3px solid #FFFFFF; outline-offset: 2px; } }
@@ -2709,7 +2714,7 @@ header.site { border-bottom: 0; }
       + [['Live broadcasts', items.filter((x) => x.video)], ['Coming up live', items.filter((x) => x.soon)], ['Live blogs', items.filter((x) => !x.video && !x.official && !x.soon)], ['Official sources', items.filter((x) => x.official)]]
         .filter(([, g]) => g.length).map(([name, g]) => '<div class="oa-group"><p class="oa-gh">' + name + '</p><div class="oa-go">' + g.slice(0, 6).map((x) => '<a class="oa-btn' + (x.video ? '' : x.soon ? ' soon' : x.official ? ' off' : ' alt') + (x.pic ? ' has-pic' : '') + '" href="' + esc2(x.url) + '" target="_blank" rel="noopener">'
         + (x.pic ? '<span class="oa-pic"><img src="' + esc2(x.pic) + '" alt="" loading="lazy" onerror="this.parentNode.remove()">' + (x.video ? '<i aria-hidden="true">&#9654;</i>' : '') + '</span>' : '')
-        + '<span class="oa-txt"><b>' + (x.video ? '&#9654; Watch live on ' : x.soon ? 'Watch on ' : x.official ? 'Official: ' : x.cover ? 'Follow the coverage on ' : 'Live updates on ') + esc2(x.net) + ' &#8599;</b>'
+        + '<span class="oa-txt"><b>' + (x.video ? '&#9654; Watch live on ' : x.soon ? '<span class="oa-clock" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>Watch on ' : x.official ? 'Official: ' : x.cover ? 'Follow the coverage on ' : 'Live updates on ') + esc2(x.net) + ' &#8599;</b>'
         + ((x.official || x.soon) && x.what ? '<span class="oa-sub">' + esc2(x.what) + '</span>' : '')
         + '<small>' + esc2((x.video ? 'Live video · ' : x.soon ? 'Live at ' : x.official ? 'Primary source · ' : x.cover ? '' : 'Live blog · ') + x.note + ' · opens ' + x.site) + '</small></span></a>').join('') + '</div></div>').join('') + '</div>';
   };
