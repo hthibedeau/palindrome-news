@@ -587,6 +587,7 @@ header.site { border-bottom: 0; }
 .onair-bar .oa-txt { display: flex; flex-direction: column; min-width: 0; }
 .onair-bar .oa-sub { font-size: 13px; font-weight: 600; line-height: 1.3; }
 .onair-bar .oa-btn.off { background: #FFF6D6; color: #2B1B54; }
+.onair-bar .oa-btn.soon { background: #FFFFFF; color: #7A1F3D; border: 2px dashed #7A1F3D; }
 .onair-bar .oa-btn.off small { color: #5F5878; }
 
 @media (hover: hover) { .onair-bar .oa-btn:hover { outline: 3px solid #FFFFFF; outline-offset: 2px; } }
@@ -2385,7 +2386,11 @@ header.site { border-bottom: 0; }
         .sort((x, y) => ({ video: 0, updates: 1, official: 2 }[x.kind] ?? 1) - ({ video: 0, updates: 1, official: 2 }[y.kind] ?? 1));
       const up = COMING.filter((c) => now < (Date.parse(c.until || c.when) || 0)).sort((x, y) => Date.parse(x.when) - Date.parse(y.when));
       const onNow = up.filter((c) => now >= Date.parse(c.when));
-      const later = up.filter((c) => now < Date.parse(c.when));
+      // upcoming items on a Breaking story are shown in that story's live box, not repeated down here
+      const bkNames = [(document.getElementById('breaking') || { dataset: {} }).dataset.story, ((document.querySelector('#bkEvent:not([hidden]) h2') || {}).textContent || '')].map((x) => String(x || '').replace(/^the\s+/i, '').toLowerCase());
+      const evStory = ((window.PAL_UPNEXT || []).find((e) => bkNames[1] && bkNames[1].indexOf(String(e.h || '').toLowerCase().slice(0, 30)) === 0) || {}).story || '';
+      const inBreaking = (c) => { const st = String(c.story || '').replace(/^the\s+/i, '').toLowerCase(); return !!st && ((bkNames[0] && (st.indexOf(bkNames[0]) === 0 || bkNames[0].indexOf(st) === 0)) || (evStory && st.indexOf(evStory.toLowerCase()) === 0)); };
+      const later = up.filter((c) => now < Date.parse(c.when) && !inBreaking(c));
       const tile = (c, badge, cls, meta, go) => '<a class="chan" href="' + esc(c.url) + '" target="_blank" rel="noopener">' + pic(c, badge, cls) + '<span class="chan-story">' + esc(c.story) + '</span><span class="chan-net">' + esc(c.net) + '</span><span class="chan-what">' + esc(c.what) + '</span>' + (meta ? '<span class="chan-meta">' + meta + '</span>' : '') + '<span class="chan-go">' + go + ' &#8599;</span></a>';
       const nowTiles = onNow.map((c) => tile(c, 'LIVE VIDEO', 'v', 'On now' + (c.where ? ' · ' + esc(c.where) : ''), 'Watch live')).concat(live.map((c) => c.kind === 'video'
         ? tile(c, 'LIVE VIDEO', 'v', '', 'Watch live')
@@ -2404,6 +2409,7 @@ header.site { border-bottom: 0; }
         im.addEventListener('error', next); next();
       });
     };
+    window.PAL_liveCoverageRender = render;
     render(); setInterval(render, 60000);
   })();
   (function breakingPace() {
@@ -2651,6 +2657,14 @@ header.site { border-bottom: 0; }
     const out = [];
     (typeof COMING !== 'undefined' ? COMING : []).forEach((c) => {
       if (same(c.story) && now >= Tm(c.when) && now <= (Tm(c.until) || Tm(c.when) + 3 * 3600000)) out.push({ video: true, net: c.net, what: c.what || '', url: c.url, site: host(c.url), note: 'on now' });
+      // Hannah: a press conference or broadcast coming up on the story belongs in the live box (not only down
+      // below in "Coming up live"): it shows here with its time and a countdown, and moves to Live broadcasts at
+      // its start time. Within the next 24 hours.
+      else if (same(c.story) && now < Tm(c.when) && Tm(c.when) - now <= 24 * 3600000) {
+        const mins = Math.round((Tm(c.when) - now) / 60000);
+        const inT = mins < 60 ? 'in ' + mins + ' min' : 'in ' + Math.floor(mins / 60) + ' h' + (mins % 60 ? ' ' + (mins % 60) + ' min' : '');
+        out.push({ soon: true, net: c.net, what: c.what || '', url: c.url, site: host(c.url), note: (c.approx ? 'about ' : '') + t(Tm(c.when)) + ' ET' + (c.local ? ' (' + c.local + ')' : '') + ' · ' + inT, t: -Tm(c.when) });
+      }
     });
     (typeof LIVENOW !== 'undefined' ? LIVENOW : []).forEach((l) => {
       if (!same(l.story) || !l.url) return;
@@ -2660,26 +2674,27 @@ header.site { border-bottom: 0; }
       else if (now - Tm(l.updated) <= LIVE_BLOG_HOURS * 3600000) out.push({ video: false, net: l.net, what: l.what || '', url: l.url, site: host(l.url), note: 'updated ' + t(Tm(l.updated)) + ' ET', pic, t: Tm(l.updated) });
     });
     // video first, then live blogs newest first, then official (primary) sources
-    const rank = (x) => x.video ? 0 : x.official ? 2 : 1;
+    const rank = (x) => x.video ? 0 : x.soon ? 0.5 : x.official ? 2 : 1;
     return out.sort((a, b) => rank(a) - rank(b) || (b.t || 0) - (a.t || 0));
   };
   window.PAL_onAirHTML = function (items) {
     if (!items || !items.length) return '';
     const esc2 = (x) => String(x).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
     const v = items.find((x) => x.video);
-    const lead = v || items.find((x) => !x.official) || items[0];
+    const lead = v || items.find((x) => !x.official && !x.soon) || items.find((x) => x.soon) || items[0];
+    const onlySoon = items.every((x) => x.soon || x.official);
     const what = lead.what.replace(/^Live:\s*/i, '');
     return '<div class="onair-bar" role="region" aria-label="Live now">'
-      + '<div class="oa-head"><span class="oa-live"><i aria-hidden="true"></i>' + (v ? 'Live now' : items[0].cover ? 'Live coverage under way' : 'Live updates') + '</span>'
+      + '<div class="oa-head"><span class="oa-live"><i aria-hidden="true"></i>' + (v ? 'Live now' : onlySoon ? 'Coming up live' : items[0].cover ? 'Live coverage under way' : 'Live updates') + '</span>'
       + (what ? '<span class="oa-what">' + esc2(what.length > 140 ? what.slice(0, 137) + '…' : what) + '</span>' : '') + '</div>'
       // Hannah: separate the live blogs from the broadcasts. Three groups, each with its own heading:
       // Live broadcasts (video), Live blogs, Official sources (primary).
-      + [['Live broadcasts', items.filter((x) => x.video)], ['Live blogs', items.filter((x) => !x.video && !x.official)], ['Official sources', items.filter((x) => x.official)]]
-        .filter(([, g]) => g.length).map(([name, g]) => '<div class="oa-group"><p class="oa-gh">' + name + '</p><div class="oa-go">' + g.slice(0, 6).map((x) => '<a class="oa-btn' + (x.video ? '' : x.official ? ' off' : ' alt') + (x.pic ? ' has-pic' : '') + '" href="' + esc2(x.url) + '" target="_blank" rel="noopener">'
+      + [['Live broadcasts', items.filter((x) => x.video)], ['Coming up live', items.filter((x) => x.soon)], ['Live blogs', items.filter((x) => !x.video && !x.official && !x.soon)], ['Official sources', items.filter((x) => x.official)]]
+        .filter(([, g]) => g.length).map(([name, g]) => '<div class="oa-group"><p class="oa-gh">' + name + '</p><div class="oa-go">' + g.slice(0, 6).map((x) => '<a class="oa-btn' + (x.video ? '' : x.soon ? ' soon' : x.official ? ' off' : ' alt') + (x.pic ? ' has-pic' : '') + '" href="' + esc2(x.url) + '" target="_blank" rel="noopener">'
         + (x.pic ? '<span class="oa-pic"><img src="' + esc2(x.pic) + '" alt="" loading="lazy" onerror="this.parentNode.remove()">' + (x.video ? '<i aria-hidden="true">&#9654;</i>' : '') + '</span>' : '')
-        + '<span class="oa-txt"><b>' + (x.video ? '&#9654; Watch live on ' : x.official ? 'Official: ' : x.cover ? 'Follow the coverage on ' : 'Live updates on ') + esc2(x.net) + ' &#8599;</b>'
-        + (x.official && x.what ? '<span class="oa-sub">' + esc2(x.what) + '</span>' : '')
-        + '<small>' + esc2((x.video ? 'Live video · ' : x.official ? 'Primary source · ' : x.cover ? '' : 'Live blog · ') + x.note + ' · opens ' + x.site) + '</small></span></a>').join('') + '</div></div>').join('') + '</div>';
+        + '<span class="oa-txt"><b>' + (x.video ? '&#9654; Watch live on ' : x.soon ? 'Watch on ' : x.official ? 'Official: ' : x.cover ? 'Follow the coverage on ' : 'Live updates on ') + esc2(x.net) + ' &#8599;</b>'
+        + ((x.official || x.soon) && x.what ? '<span class="oa-sub">' + esc2(x.what) + '</span>' : '')
+        + '<small>' + esc2((x.video ? 'Live video · ' : x.soon ? 'Live at ' : x.official ? 'Primary source · ' : x.cover ? '' : 'Live blog · ') + x.note + ' · opens ' + x.site) + '</small></span></a>').join('') + '</div></div>').join('') + '</div>';
   };
   (function topOnAir() {
     const bk = document.getElementById('breaking'); if (!bk) return;
@@ -2798,6 +2813,7 @@ header.site { border-bottom: 0; }
       imageChain(box.querySelector('.bart'), pics, 'ballot', ev.alt || ev.h);
       box.hidden = false;
       if (window.PAL_oneStoryOnePlace) window.PAL_oneStoryOnePlace();
+      if (window.PAL_liveCoverageRender && !box.dataset.bandDone) { box.dataset.bandDone = '1'; window.PAL_liveCoverageRender(); }
     };
     render(); setInterval(render, 60000);
   })();

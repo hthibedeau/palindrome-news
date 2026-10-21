@@ -22,6 +22,10 @@ The other runbooks give the detail behind each part: house rules 12–22 in full
      - List every newsroom running live coverage on the story in LIVENOW: CBC, CTV, Global, CityNews/CP24, the Toronto Star, Radio-Canada, the local papers, and AP or Reuters when they run one.
      - Each entry gets a picture: `file` + `blob`, from the coverage's own share photo or a screen grab (img/grabs/). The bar shows it on the button, with a play icon for video.
      - Add the primary source as `kind: 'official'`: an official live results page, a government or police live stream, a court or legislature feed, or CPAC for the full proceedings. Give it `what` (what it shows, with its own last-updated time), `updated` (when you checked it), `until`, a screen grab, and an optional `note`.
+     - **Coming up live, inside the box** (Hannah: "if there is a press conference coming up live on a topic it should be available in the live updates box … not down below in Coming up live"):
+       - Any COMING item on the story in the next 24 hours shows in the story's live box under "Coming up live", with its Eastern time, local time, a countdown and where to watch. It moves to Live broadcasts at its start time.
+       - The Live coverage band no longer repeats upcoming items for stories that are in the Breaking segment.
+       - Your part: add every announced news conference, address or briefing on a Breaking story to COMING the moment it is announced, one entry per network, each with its watch page.
      - The bar groups the buttons under their own headings, broadcasts kept apart from blogs (Hannah: "separate blogs from broadcast"): **Live broadcasts** (live video), **Live blogs** (newest first), **Official sources** (pale yellow, "Official: … · Primary source"). A group shows only when it has something live.
 3. **The tag itself.**
    - The page switches it to "Developing" one hour after the latest development (data-lastdev).

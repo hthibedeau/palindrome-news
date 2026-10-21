@@ -50,6 +50,8 @@ Your part, every run:
   - It stays as "Developing", with "Next: …" from its schedule, with its tabs, timeline, key facts and How this developed block, for 12 hours after its window or after its last scheduled item, whichever is later (EVENT_KEEP_HOURS).
   - Set `keepUntil` on the UPNEXT entry to keep it longer, or to end it sooner once the story is folded into the lead or the top slot.
 
+**PRESS CONFERENCES COMING UP GO IN THE STORY'S LIVE BOX** (Hannah, Tue Oct 20, 2026): add each announced news conference, address or briefing on a Breaking story to COMING right away, one entry per network with its watch page. The box shows it under "Coming up live" with a countdown, then under Live broadcasts when it starts.
+
 **LIVE VIDEO ALWAYS ABOVE LIVE BLOGS** (Hannah, Tue Oct 20, 2026), in the LIVE NOW bar and the Live coverage band. Add every scheduled broadcast on a Breaking story to COMING (one entry per network, with its live page) so it shows as live video when it starts.
 
 **LIVE NOW BAR:** every Breaking story with live video or a live blog updated in the last 6 hours shows a red LIVE NOW bar, with buttons naming the network, the kind (live video or live blog), the update time and the site it opens. Keep LIVENOW's `story`, `updated` and `until` exact every run, so the bar never sends viewers to coverage that has ended (BREAKING_TEMPLATE.md step 2).
