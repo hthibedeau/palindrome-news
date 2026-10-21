@@ -271,8 +271,16 @@ def main():
     rows.sort(key=lambda r: r[5], reverse=True)
     rows = [{"row": r} for r in rows[:25]]
 
+    # what should lead: National Newswatch + CBC's front + coverage (tools/lead_check.py), for the agent runs
+    try:
+        import lead_check
+        leads = [{"score": g["score"], "title": g["lead"][0], "url": g["lead"][1], "outlets": len(g["outlets"]), "why": g["why"]}
+                 for g in lead_check.rank([(d, o, t, l) for d, o, t, l, _ in items], now)[:10]]
+    except Exception as e:  # never block the run
+        print("lead check failed:", e)
+        leads = []
     out = {"checked": now.isoformat(), "checkedLabel": w.eastern(now), "stories": stories,
-           "wire": [r["row"] for r in rows], "blogs": blog_times(page)}
+           "wire": [r["row"] for r in rows], "blogs": blog_times(page), "leads": leads}
     os.makedirs(root, exist_ok=True)
     with open(a.out, "w", encoding="utf-8") as fh:
         json.dump(out, fh, ensure_ascii=False, indent=1)
