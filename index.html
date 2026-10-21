@@ -565,6 +565,7 @@ header.site { border-bottom: 0; }
 .vid .plays { font-weight: 600; letter-spacing: 0; text-transform: none; color: var(--muted); }
 .vfilters { margin-bottom: 14px; }
 .breaking .bk-sum { position: relative; z-index: 3; margin: 0 0 14px; font-size: 17px; line-height: 1.5; color: #FFFFFF; }
+.bk-event .ev-media h2 { margin: 4px 0 10px; font-size: clamp(26px, 2.9vw, 38px); }
 .bk-event .ev-media .bk-sum { margin: 10px 0 16px; }
 .onair-bar { position: relative; z-index: 3; margin: 12px 0 14px; padding: 12px 14px; background: #C2264B; color: #FFFFFF; border-radius: 2px; box-shadow: 0 0 0 2px #FFFFFF inset; }
 .onair-bar .oa-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; margin-bottom: 10px; }
@@ -2807,10 +2808,9 @@ header.site { border-bottom: 0; }
       const nets = (typeof COMING !== 'undefined' ? COMING : []).filter((c) => (c.story || '').indexOf(ev.story) === 0 && now <= (T(c.until || '') || (T(c.when) + 3 * 3600000)));
       const btns = nets.map((c) => '<a href="' + esc(c.url) + '" target="_blank" rel="noopener">' + esc(c.net) + '<small>' + esc(fmt(T(c.when)) + ' ET' + (day(T(c.when)) !== today ? ' ' + day(T(c.when)) : '')) + '</small></a>').join('');
       box.dataset.evid = ev.id || ''; box.dataset.story = ev.story || '';
-      box.innerHTML = '<div class="bk-text"><div class="ev-media"><div class="bart ev-art"></div><p class="bk-dek bk-sum">' + ev.dek + '</p></div>'
+      box.innerHTML = '<div class="bk-text"><div class="ev-media"><div class="bart ev-art"></div><h2><a class="card-link" href="' + esc(ev.url) + '" target="_blank" rel="noopener">' + esc(ev.h) + '</a></h2><p class="bk-dek bk-sum">' + ev.dek + '</p></div>'
         + '<div class="ev-tag"><span class="tag">' + (inWin ? 'Breaking' : 'Developing') + '</span><span class="ev-count">' + esc(onair.length ? (nextUp ? 'Next: ' + nextUp : '') : !inWin ? (nextUp ? 'Next: ' + nextUp : 'Live coverage has ended') : started ? '' : 'Live coverage begins in ' + left(T(ev.start) - now)) + '</span></div>'
         + window.PAL_onAirHTML(onair)
-        + '<h2><a class="card-link" href="' + esc(ev.url) + '" target="_blank" rel="noopener">' + esc(ev.h) + '</a></h2>'
         + '<p class="first"><span class="bl"><b>Latest</b> <a href="' + esc(ev.url) + '" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline"><strong>' + esc(ev.outlet) + '</strong></a>' + (ev.urlWhen ? ' · ' + esc(ev.urlWhen) : '') + '</span></p>'
         + evTabsHTML(ev, rows, btns, started)
         + '</div>';
@@ -4610,7 +4610,8 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
   const latest = document.createElement('div');
   // Hannah: the latest summary always sits right under the photo (photo, caption, summary), above the live box,
   // not inside a tab. The Latest tab keeps the newest timeline lines.
-  { const dek = bk.querySelector('.bk-dek'), bart = bk.querySelector('.bart'); if (dek && bart) { dek.classList.add('bk-sum'); const cap = bart.nextElementSibling; ((cap && cap.classList.contains('bart-cap')) ? cap : bart).after(dek); } }
+  // Hannah: photo, then its caption, then the headline, then the latest summary
+  { const dek = bk.querySelector('.bk-dek'), bart = bk.querySelector('.bart'); if (dek && bart) { dek.classList.add('bk-sum'); const cap = bart.nextElementSibling; const at = (cap && cap.classList.contains('bart-cap')) ? cap : bart; const head = [bk.querySelector('.bk-text > .tag'), bk.querySelector('.bk-text > .btime'), bk.querySelector('.bk-text > h2')].filter(Boolean); let last = at; head.forEach((x) => { last.after(x); last = x; }); last.after(dek); } }
   [bk.querySelector('.bk-just')].forEach((el) => { if (el) latest.appendChild(el); });
   if (latest.children.length) panes.push(['Latest', latest]);
   const kids = know ? [...know.children] : [];

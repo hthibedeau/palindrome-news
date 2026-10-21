@@ -98,3 +98,6 @@ Before publishing, check it like a reader on a phone (390 wide) and a wide scree
 - no headline is older than the newest timeline line
 - every link opens the right outlet in a new tab
 - there are no page errors
+
+## Order under the photo (Hannah, Wed Oct 21, 2026)
+For both Breaking stories: the photo comes first, then its caption, then the headline, then the latest summary. The page code does this for the top slot and the event box; do not move the headline back beside the photo.
