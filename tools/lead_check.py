@@ -46,7 +46,7 @@ OPINION = re.compile(r"/opinion|/columnists?/|/editorials?/|\| ?Opinion|^Opinion
 THEMES = [
     ("Canada and the U.S.", "Canada and the U.S.",
      re.compile(r"\b(Canad\w*|Carney|Ottawa|Joly|LeBlanc|Champagne|Anand|Ford|Poilievre|premiers?)\b", re.I),
-     re.compile(r"\b(Trump|U\.?S\.?|American|Americans|Washington|White House|Hoekstra|Lutnick|Greer|embassy|midterms?|tariffs?|CUSMA|USMCA|trade war|51st state|Clinton|Rubio|Vance)\b")),
+     re.compile(r"\b(Trump|U\.?S\.?|American|Americans|Washington|White House|Hoekstra|Lutnick|Greer|embassy|midterms?|tariffs?|CUSMA|USMCA|trade war|51st state|Clinton|Rubio|Vance|Turkey|Türkiye|Turkiye|Turkish|Erdogan|Erdoğan|Ankara)\b")),  # the Turkey trip is covered on the page as part of the Canada-U.S. trade theme
 ]
 
 
