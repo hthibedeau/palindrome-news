@@ -1225,7 +1225,7 @@ header.site { border-bottom: 0; }
       </div>
     </div>
     <div class="masthead">
-      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 6:40 a.m. ET Thursday</b></span></div>
+      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 6:48 a.m. ET Thursday</b></span></div>
       <div class="plate">
         <span class="stamp" id="stamp" hidden>Late edition</span>
         <a class="logo" href="#top">Palindrome <em>News</em></a>
@@ -1637,6 +1637,7 @@ header.site { border-bottom: 0; }
   <section id="corrections" class="ruled" aria-labelledby="cx-h" style="scroll-margin-top: 64px">
     <div class="band-head"><h2 id="cx-h">Corrections &amp; updates</h2><p>Every change we make to a story, with the time. Nothing is changed quietly.</p></div>
     <ol class="log">
+      <li><time>Thu 6:48 a.m.</time><span class="kind">Update</span><span><b>The 60-second brief</b> for Thursday morning, October 22: Kyiv and Lozova strikes, Wainwright, Carney in Ankara, Hormuz tankers, France, Storm Josephine.</span></li>
       <li><time>Thu 6:40 a.m.</time><span class="kind">Full update</span><span><b>Putin–Witkoff talks / Russian strikes:</b> Ukraine’s Coordination Headquarters confirms the return of 252 bodies, now in the summary and timeline (<a href="https://en.interfax.com.ua/news/general/1224470.html" target="_blank" rel="noopener">Interfax-Ukraine</a>); the Orpo line adds Finland’s support figures from the <a href="https://valtioneuvosto.fi/en/-/prime-minister-petteri-orpo-in-ukraine" target="_blank" rel="noopener">Finnish Government</a>. <b>Alberta referendum:</b> new photo of Premier Smith at Wednesday’s news conference (Dean Pilling, via <a href="https://edmontonjournal.com/opinion/letters/thursdays-letters-danielle-smith-referendum-option-2" target="_blank" rel="noopener">Edmonton Journal</a>). <b>Canada and the U.S.:</b> kept up until 6 p.m. as the top-ranked story. <b>Live coverage:</b> Al Jazeera’s Iran blog refreshed. <b>Wire:</b> Saudi Aramco evacuation (CBS News), Toronto’s final mayoral debate (CP24), Meta–Zuckerberg tax deal (The Guardian), Nigeria Ebola case (BBC News), Jeffries (AP), Syria raid (Al Jazeera).</span></li>
       <li><time>Thu 6:37 a.m.</time><span class="kind">Update</span><span><b>Russia–Ukraine:</b> A Russian drone damaged the hospital in Hlukhiv, Sumy region (<a href="https://www.ukrinform.net/rubric-ato/4177070-russian-drone-hits-hospital-in-hlukhiv.html" target="_blank" rel="noopener">Ukrinform</a>). Wire: Idaho death-penalty case (CBS News), Barclays job cuts and the Sakharov Prize for the ICC (Euronews). Photos checked; no newer captioned photo.</span></li>
       <li><time>Thu 6:36 a.m.</time><span class="kind">Update</span><span><b>What America’s newsrooms are leading with:</b> refreshed (ABC News now leads with Democrats suing the Trump administration over an alleged election pressure campaign; CBS News, Fox News, PBS NewsHour and Axios unchanged)</span></li>
@@ -4309,17 +4310,16 @@ header.site { border-bottom: 0; }
   // BRIEF_AUDIO: path to a recording in Hannah's own voice (e.g. 'audio/brief.mp3'). When set, it plays;
   // otherwise the device reads the script aloud.
   const BRIEF_AUDIO = '';
-  const BRIEF_FOR = 'Wednesday night, October 21';
+  const BRIEF_FOR = 'Thursday morning, October 22';
   const brief = [
-    'Good evening. I’m Hannah Thibedeau, and this is your Palindrome News brief.',
-    'We begin in Kyiv, where Russian missiles injured six, hours after President Vladimir Putin agreed in principle to three-way talks after November tenth.',
-    'A Kremlin adviser says Abu Dhabi, around mid-November. No date is confirmed.',
-    'Freed American Stephen Hubbard, seventy-four, is expected to stay with his sister in Colorado.',
-    'A CBC investigation finds more than one point five million Crime Stoppers tips across Canada were caught in a hack. Toronto paused its program.',
-    'In Oshawa, the two-year-old girl hit by a driver along with four other children is stable tonight.',
-    'Alberta Premier Danielle Smith tells separatists in her party to accept Monday’s result, or find another party.',
-    'In Quebec, the Parti Québécois wins Vachon by three votes in a recount. The Liberals have not conceded.',
-    'And in Wisconsin, the candidates for governor meet in their only debate.',
+    'Good morning. I’m Hannah Thibedeau, and this is your Palindrome News brief.',
+    'We begin in Ukraine. Russia fired twenty-one ballistic missiles at Kyiv overnight, hours after President Vladimir Putin agreed in principle to new talks.',
+    'A strike on a market in Lozova, in the Kharkiv region, killed at least two people, the governor says.',
+    'In Alberta, twenty-seven soldiers hurt in the Wainwright base fire are still in hospital, thirteen critical. Officials give an update today.',
+    'Prime Minister Mark Carney meets President Recep Tayyip Erdogan in Ankara, the first such visit by a Canadian prime minister.',
+    'Iran says seven oil tankers are on fire or damaged near the Strait of Hormuz. Oil is up more than two per cent.',
+    'In France, President Emmanuel Macron holds an emergency security meeting, two days before more protests.',
+    'And Storm Josephine brings high winds to the U.S. Eastern Seaboard.',
     'That’s your brief. We’ll keep watching, so you don’t have to.'
   ];
   const audio = $('audio'), aBtn = $('audioBtn');
