@@ -200,7 +200,7 @@ def main():
                 return
     for g in groups[:3]:
         t = g["lead"][0]
-        if weakest and g["score"] >= weakest[1] + 4 and not any(score_of(words) == g["score"] and re.search("|".join(map(re.escape, words)), t, re.I) for _, words in leads if words):
+        if weakest and g["score"] >= weakest[1] + 4 and not any(score_of(words) == g["score"] and re.search("|".join(map(re.escape, words)), t + " " + " ".join(g["n"]), re.I) for _, words in leads if words):  # the theme's other headlines count too, so a story already in a slot is not "swapped" for itself
             print(f"\nSWAP: '{t[:90]}' (score {g['score']}) outranks '{weakest[0]}' (score {weakest[1]}). Move the weaker story to its desk and lead with this.")
             print(f"PROMOTE: '{g.get('theme') or t[:90]}' becomes the top Developing story this run (BREAKING_TEMPLATE.md). Lead report: {g['lead'][1]}")
             break
