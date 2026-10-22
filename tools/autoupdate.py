@@ -324,7 +324,7 @@ def main():
     # what should lead: National Newswatch + CBC's front + coverage (tools/lead_check.py), for the agent runs
     try:
         import lead_check
-        leads = [{"score": g["score"], "title": g["lead"][0], "url": g["lead"][1], "outlets": len(g["outlets"]), "why": g["why"]}
+        leads = [{"score": g["score"], "title": g["lead"][0], "url": g["lead"][1], "outlets": len(g["outlets"]), "why": g["why"], "theme": g.get("theme", "")}
                  for g in lead_check.rank([(d, o, t, l) for d, o, t, l, _ in items], now)[:10]]
     except Exception as e:  # never block the run
         print("lead check failed:", e)
