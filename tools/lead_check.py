@@ -180,15 +180,15 @@ def main():
         th = f" [theme: {g['theme']}, {g['parts']} headlines]" if g.get("theme") else ""
         print(f"  {g['score']:>2}  {t[:100]}{th}\n       {len(g['outlets'])} outlets; {', '.join(g['why']) or 'coverage only'} | {u}")
     leads = page_leads(a.page)
-    def score_of(words):
+    def score_of(words, name=None):
         rx = re.compile("|".join(re.escape(x) for x in words), re.I) if words else None
         best = 0
         for g in groups:
-            if rx and rx.search(g["lead"][0] + " " + " ".join(g["n"])):
+            if (name and g.get("theme") == name) or (rx and rx.search(g["lead"][0] + " " + " ".join(g["n"]))):  # a slot named after a theme scores as that theme
                 best = max(best, g["score"])
         return best
     print("\nTHE PAGE LEADS WITH")
-    sc = [(name, score_of(words)) for name, words in leads]
+    sc = [(name, score_of(words, name)) for name, words in leads]
     for name, s_ in sc:
         print(f"  {s_:>2}  {name}")
     weakest = min(sc, key=lambda x: x[1]) if sc else None
@@ -200,7 +200,7 @@ def main():
                 return
     for g in groups[:3]:
         t = g["lead"][0]
-        if weakest and g["score"] >= weakest[1] + 4 and not any(score_of(words) == g["score"] and re.search("|".join(map(re.escape, words)), t + " " + " ".join(g["n"]), re.I) for _, words in leads if words):  # the theme's other headlines count too, so a story already in a slot is not "swapped" for itself
+        if weakest and g["score"] >= weakest[1] + 4 and not any(g.get("theme") == name or (words and score_of(words) == g["score"] and re.search("|".join(map(re.escape, words)), t + " " + " ".join(g["n"]), re.I)) for name, words in leads):  # the theme's other headlines count too, so a story already in a slot is not "swapped" for itself
             print(f"\nSWAP: '{t[:90]}' (score {g['score']}) outranks '{weakest[0]}' (score {weakest[1]}). Move the weaker story to its desk and lead with this.")
             print(f"PROMOTE: '{g.get('theme') or t[:90]}' becomes the top Developing story this run (BREAKING_TEMPLATE.md). Lead report: {g['lead'][1]}")
             break
