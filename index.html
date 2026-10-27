@@ -1230,7 +1230,7 @@ header.site { border-bottom: 0; }
       </div>
     </div>
     <div class="masthead">
-      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 6:36 a.m. ET Tuesday</b></span></div>
+      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 6:46 a.m. ET Tuesday</b></span></div>
       <div class="plate">
         <span class="stamp" id="stamp" hidden>Late edition</span>
         <a class="logo" href="#top">Palindrome <em>News</em></a>
@@ -1613,6 +1613,7 @@ header.site { border-bottom: 0; }
   <section id="corrections" class="ruled" aria-labelledby="cx-h" style="scroll-margin-top: 64px">
     <div class="band-head"><h2 id="cx-h">Corrections &amp; updates</h2><p>Every change we make to a story, with the time. Nothing is changed quietly.</p></div>
     <ol class="log">
+      <li><time>Tue 6:46 a.m.</time><span class="kind">Update</span><span><b>The 60-second brief</b> for Tuesday morning, October 27: Chow’s second term, Hamilton and Mississauga upsets, legislatures return, Canada–U.S. trade, Israel votes, Kyiv attack.</span></li>
       <li><time>Tue 6:36 a.m.</time><span class="kind">Live check</span><span><b>Ontario’s municipal elections:</b> wide search (CBC, CTV, CP24, Global, CityNews, Toronto Star, Sudbury.com, CBC Sudbury, CTV Northern Ontario, insauga, AM800 CKLW, The Queen’s Journal, Toronto Life, The Local, NOW Toronto, CHCH) found nothing newer than the 6 a.m. Sudbury report; no newer captioned photo found. <b>Wire:</b> Stubb and Støre’s call with Putin (<a href="https://www.theguardian.com/world/live/2026/oct/27/russia-ukraine-oleshky-serbia-france-europe-latest-news-updates" target="_blank" rel="noopener">The Guardian</a>).</span></li>
       <li><time>Tue 6:19 a.m.</time><span class="kind">Update</span><span><b>Full update:</b> <b>Ontario’s municipal elections:</b> timeline and “Not yet known” add Sudbury, where about 14,000 paper ballots are still uncounted and Mayor Paul Lefebvre has given his victory speech (<a href="https://www.cbc.ca/news/canada/sudbury/sudbury-mayor-election-paul-lefebvre-9.7397523" target="_blank" rel="noopener">CBC News</a>); photo checked, the Loomis family photo stays (newer captioned photos show Hamilton city hall or older election-night scenes). <b>Wire:</b> Alberta’s legislature returns (<a href="https://www.bnnbloomberg.ca/business/politics/2026/10/27/danielle-smith-aims-to-turn-the-page-after-referendum-as-legislature-returns/" target="_blank" rel="noopener">The Canadian Press</a>), overnight attack on Kyiv (<a href="https://kyivindependent.com/russian-attacks-across-ukraine-kill-four-injure-55-over-past-day-as-kyiv-comes-under-ballistic-missile-assault/" target="_blank" rel="noopener">Kyiv Independent</a>), Queen’s Park returns (<a href="https://globalnews.ca/news/12121679/ford-government-returns-after-21-week-summer-hiatus/" target="_blank" rel="noopener">Global News</a>), Canada–EU labour talks (<a href="https://www.ctvnews.ca/politics/article/free-labour-movement-not-something-canada-and-eu-considering-in-new-pact-ambassador/" target="_blank" rel="noopener">The Canadian Press</a>).</span></li>
       <li><time>Tue 6:08 a.m.</time><span class="kind">Live check</span><span><b>Ontario’s municipal elections:</b> timeline adds Toronto’s new council, seven new councillors and 18 incumbents returned (<a href="https://globalnews.ca/news/12122340/toronto-election-2026-winners/" target="_blank" rel="noopener">Global News</a>; <a href="https://toronto.citynews.ca/2026/10/27/2026-ontario-municipal-elections-several-greater-toronto-and-hamilton-area-incumbents-voted-out/" target="_blank" rel="noopener">CityNews</a>); photo checked, no newer captioned photo that shows the story better; Coming up times checked.</span></li>
@@ -4450,16 +4451,17 @@ header.site { border-bottom: 0; }
   // BRIEF_AUDIO: path to a recording in Hannah's own voice (e.g. 'audio/brief.mp3'). When set, it plays;
   // otherwise the device reads the script aloud.
   const BRIEF_AUDIO = '';
-  const BRIEF_FOR = 'Thursday morning, October 22';
+  const BRIEF_FOR = 'Tuesday morning, October 27';
   const brief = [
     'Good morning. I’m Hannah Thibedeau, and this is your Palindrome News brief.',
-    'We begin in Ukraine. Russia fired twenty-one ballistic missiles at Kyiv overnight, hours after President Vladimir Putin agreed in principle to new talks.',
-    'A strike on a market in Lozova, in the Kharkiv region, killed at least two people, the governor says.',
-    'In Alberta, twenty-seven soldiers hurt in the Wainwright base fire are still in hospital, thirteen critical. Officials give an update today.',
-    'Prime Minister Mark Carney meets President Recep Tayyip Erdogan in Ankara, the first such visit by a Canadian prime minister.',
-    'Iran says seven oil tankers are on fire or damaged near the Strait of Hormuz. Oil is up more than two per cent.',
-    'In France, President Emmanuel Macron holds an emergency security meeting, two days before more protests.',
-    'And Storm Josephine brings high winds to the U.S. Eastern Seaboard.',
+    'We begin in Toronto, where Olivia Chow won a second term as mayor with about fifty-four per cent of the vote.',
+    'She promises property tax increases near inflation, a TTC fare cap, and ten thousand rental home starts in twenty twenty-seven.',
+    'Elsewhere in Ontario, Keanin Loomis ousted Hamilton Mayor Andrea Horwath, and Alvin Tedjo unseated Mississauga Mayor Carolyn Parrish.',
+    'Sudbury still has not published results for about fourteen thousand paper ballots.',
+    'Ontario’s and Alberta’s legislatures both return today.',
+    'On trade, Prime Minister Mark Carney says talks with Washington have picked up slightly, but there is no deal.',
+    'Israelis are voting today, with the highest early turnout since nineteen eighty-one.',
+    'And Russian missiles and drones struck Kyiv overnight. At least four people were killed across Ukraine in the past day, authorities say.',
     'That’s your brief. We’ll keep watching, so you don’t have to.'
   ];
   const audio = $('audio'), aBtn = $('audioBtn');
