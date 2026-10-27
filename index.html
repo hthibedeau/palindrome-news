@@ -1230,7 +1230,7 @@ header.site { border-bottom: 0; }
       </div>
     </div>
     <div class="masthead">
-      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 1:05 p.m. ET Tuesday</b></span></div>
+      <div class="ear ear-l"><b id="edName">Evening edition</b><span class="big">Toronto</span><span>Daily Brief out at 7 a.m. and 5 p.m.</span><span><b style="font-size: 11px">Updated 1:06 p.m. ET Tuesday</b></span></div>
       <div class="plate">
         <span class="stamp" id="stamp" hidden>Late edition</span>
         <a class="logo" href="#top">Palindrome <em>News</em></a>
@@ -1577,7 +1577,7 @@ header.site { border-bottom: 0; }
     </div>
     <div class="fronts-us">
       <h3>What America's newsrooms are leading with</h3>
-      <p>The top story on each front page at 10:54 a.m. ET Tuesday, in our words, with the story’s own picture so you see where you’re going. Tap to read it there.</p>
+      <p>The top story on each front page at 1:06 p.m. ET Tuesday, in our words, with the story’s own picture so you see where you’re going. Tap to read it there.</p>
       <div class="ledes" id="ledes"></div>
     </div>
   </section>
@@ -1644,6 +1644,7 @@ header.site { border-bottom: 0; }
   <section id="corrections" class="ruled" aria-labelledby="cx-h" style="scroll-margin-top: 64px">
     <div class="band-head"><h2 id="cx-h">Corrections &amp; updates</h2><p>Every change we make to a story, with the time. Nothing is changed quietly.</p></div>
     <ol class="log">
+      <li><time>Tue 1:06 p.m.</time><span class="kind">Update</span><span><b>What America’s newsrooms are leading with:</b> refreshed (Axios now leads with the Los Angeles mayor’s race; ABC News and Fox News unchanged)</span></li>
       <li><time>Tue 1:05 p.m.</time><span class="kind">Live check</span><span><b>Ontario’s municipal elections:</b> CP24 and CTV News are streaming Olivia Chow’s 1 p.m. news conference live; timeline and live tile updated. <b>Wire:</b> Pope Leo XIV on “holy war,” Egypt court closes an independent outlet, Surrey INTERPOL arrest, Dutch zookeeper killed by leopard.</span></li>
       <li><time>Tue 12:54 p.m.</time><span class="kind">Watch</span><span><b>Network video:</b> four new YouTube clips with pictures: CBC News (Carney says the U.S. is moving closer to Canada in trade talks, Power &amp; Politics), Global News (Global National, Oct. 24), ABC News Australia (Tel Aviv rally ahead of Israel’s election) and DW News (Israelis flying home to vote).</span></li>
       <li><time>Tue 12:38 p.m.</time><span class="kind">Live check</span><span><b>Ontario’s municipal elections:</b> Simcoe Muskoka results added, with incumbent mayors defeated in six towns and Steve Clarke back as Orillia’s mayor (<a href="https://www.ctvnews.ca/barrie/article/whos-in-heres-a-look-at-the-new-faces-elected-across-simcoe-muskoka/" target="_blank" rel="noopener">CTV News</a>). Wire adds the Lake George mine rights in N.B. and the OPP’s appeal after a fatal hunting incident in eastern Ontario.</span></li>
@@ -4557,7 +4558,7 @@ header.site { border-bottom: 0; }
   const ledes = [
     { o: 'ABC News', h: 'With the midterms a week away, Trump rallies in Texas, where the Senate race between Ken Paxton and James Talarico is close, as ad spending this cycle hits a record $11.21 billion', u: 'https://abcnews.com/Politics/live-updates/midterm-elections-2026-1-week-high-stakes-elections/?id=137578278', img: 'https://i.abcnewsfe.com/a/030cb743-7737-4106-a7f5-1da58f6aba56/vote-7-gty-gmh-261026_1793023934750_hpMain_16x9.jpg?w=1600', w: 'Updated Tue 10:03 a.m.' },
     { o: 'Fox News', h: 'The Justice Department files a new criminal case against former FBI Director James Comey, alleging he shared national defense information in 2016; Comey denies wrongdoing', u: 'https://www.foxnews.com/politics/james-comey-faces-new-doj-case-over-alleged-national-defense-disclosure', img: 'https://static.foxnews.com/foxnews.com/content/uploads/2025/09/james.comey_.jpg', w: 'Updated Mon 6:21 p.m.' },
-    { o: 'Axios', h: 'Israelis vote in an election seen as a referendum on Benjamin Netanyahu\u2019s leadership since Oct. 7, with former military chief Gadi Eisenkot his main challenger', u: 'https://www.axios.com/2026/10/27/israel-election-netanyahu-eisenkot', img: 'https://images.axios.com/IO0Aie3GWoEejdNOBlyyvgvVjtY=/0x0:1920x1080/1366x768/2026/10/26/1793033817579.jpeg', w: 'Tue 5:20 a.m.' },
+    { o: 'Axios', h: 'A fight over Israel splits the Democratic Socialists of America as its Los Angeles chapter backs Nithya Raman, who leads Mayor Karen Bass in recent polls before the Nov. 3 vote', u: 'https://www.axios.com/2026/10/27/dsa-socialists-la-mayor-race-israel-raman-bass', img: 'https://images.axios.com/36-4qNTcE9DaqtdEEqLR7Tzlisw=/0x0:7728x4347/1366x768/2026/10/21/1792602062843.jpeg', w: 'Tue 5:30 a.m.' },
   ];
   const ledeHost = (u) => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch (e) { return ''; } };
   $('ledes').innerHTML = ledes.map((x) => { const src = (USE_LOCAL && LOCAL[x.img]) || x.img; return '<article class="lede"><span class="lthumb" aria-hidden="true"><span class="lsite"><b>' + esc(x.o) + '</b></span>' + (src ? '<img src="' + esc(src) + '" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">' : '') + '<span class="lurl">' + esc(ledeHost(x.u)) + '</span></span><span class="o">' + esc(x.o) + (x.w ? ' <span class="lw">· ' + esc(x.w) + '</span>' : '') + '</span><a href="' + esc(x.u) + '" target="_blank" rel="noopener">' + esc(x.h) + '</a><span class="lgo">Opens on ' + esc(ledeHost(x.u)) + ' &#8599;</span></article>'; }).join('');
