@@ -30,6 +30,7 @@
 a.snimg { display: block; }
 .sn .snimg img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .sn .snw { font-size: 12px; opacity: .75; }
+@media (min-width: 960px) { .bk-event .bk-text > .rel-box, .bk-event .bk-text > .auto-news { grid-column: 2; margin-top: 18px; } }
 </style></head><body>
 <title>Palindrome News</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -6156,8 +6157,11 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       if (!items) return;
       const box = document.createElement('details'); box.className = 'rel-box'; box.open = true;
       box.innerHTML = '<summary>Connected to this story <span>· ' + esc((r.ties || []).slice(0, 3).map((t) => t.charAt(0).toUpperCase() + t.slice(1)).join(', ')) + '</span></summary><ol>' + items + '</ol>';
+      // Wide screens with the photo on the left (iPad, desktop): fill the right-hand column under the tabs, never leave it empty
+      const bt = root.querySelector(':scope > .bk-text');
+      const twoCol = bt && getComputedStyle(bt).gridTemplateColumns.split(' ').length > 1;
       const at = root.querySelector('.auto-news') || root.querySelector('.bk-sum') || root.querySelector('.bk-dek') || root.querySelector('h2');
-      if (at) at.after(box); else root.appendChild(box);
+      if (twoCol) bt.appendChild(box); else if (at) at.after(box); else root.appendChild(box);
     });
   }
 
@@ -6204,13 +6208,15 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       box.innerHTML = '<h4>Newest reports <span>· checked automatically ' + esc(fmt(AUTO.d.checked)) + ' ET</span></h4><ol>'
         + reps.map((r) => '<li><time>' + esc(r.t.replace(/^\w+ /, '')) + '</time><a href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(r.title) + '</a> <span class="o">' + esc(r.outlet) + ' &#8599;</span></li>').join('')
         + '</ol>';
+      const bt = root.querySelector(':scope > .bk-text');
       const sum = root.querySelector('.bk-sum') || root.querySelector('.bk-dek') || root.querySelector('h2');
-      if (sum) sum.after(box);
+      if (bt && getComputedStyle(bt).gridTemplateColumns.split(' ').length > 1) { const rel = bt.querySelector(':scope > .rel-box'); if (rel) rel.before(box); else bt.appendChild(box); } else if (sum) sum.after(box);
     });
   }
   const ev = document.getElementById('bkEvent');
   if (ev && window.MutationObserver) new MutationObserver((ms) => { if (ms.some((m) => [...m.addedNodes].some((n) => !(n.classList && (n.classList.contains('rel-box') || n.classList.contains('auto-news')))))) { paint(); if (AUTO) related(); } }).observe(ev, { childList: true });
   setTimeout(load, 1500); setInterval(load, 120000);
+  let rz; window.addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(() => { if (AUTO) { paint(); related(); } }, 400); });
   window.PAL_autoupdate = { load, get data() { return AUTO && AUTO.d; } };
 })();
 </script>
