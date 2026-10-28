@@ -47,7 +47,8 @@ def reference_wav(tmp):
 
 def speakable(line):
     s = line.replace("’", "'").replace("‘", "'").replace("“", '"').replace("”", '"')
-    s = re.sub(r"\bU\.S\.", "U.S.", s)
+    s = re.sub(r"\s*/\s*PAnow|\s*\(via [^)]*\)", "", s)        # "CKOM / PAnow" -> "CKOM"
+    s = re.sub(r"(\w)-U\.S\.", r"\1 U.S.", s)                # "Canada-U.S." reads as two words
     s = re.sub(r"\$(\d[\d,.]*)\s?(billion|million)", r"\1 \2 dollars", s)
     s = re.sub(r"\$(\d[\d,.]*)", r"\1 dollars", s)
     s = re.sub(r"(\d+)%", r"\1 percent", s)
