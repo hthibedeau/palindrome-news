@@ -1,6 +1,6 @@
 {
- "checked": "2026-10-28T08:45:23.323071+00:00",
- "checkedLabel": "Wed 4:45 a.m.",
+ "checked": "2026-10-28T08:55:22.812930+00:00",
+ "checkedLabel": "Wed 4:55 a.m.",
  "stories": [
   {
    "key": "top",
@@ -84,6 +84,12 @@
      "t": "Wed 4:21 a.m."
     },
     {
+     "outlet": "Times Colonist",
+     "url": "https://www.timescolonist.com/national-news/in-the-news-today-west-bank-import-ban-bank-of-canada-rate-hike-maid-backlash-12949102",
+     "iso": "2026-10-28T08:20:58+00:00",
+     "t": "Wed 4:20 a.m."
+    },
+    {
      "outlet": "The Canadian Press (via Winnipeg Free Press)",
      "url": "https://www.winnipegfreepress.com/canada/2026/10/28/in-the-news-today-west-bank-import-ban-bank-of-canada-rate-hike-maid-backlash",
      "iso": "2026-10-28T08:20:58+00:00",
@@ -104,12 +110,6 @@
     {
      "outlet": "Toronto Star",
      "url": "https://www.thestar.com/news/ontario/a-stab-in-the-back-how-it-feels-to-be-barred-from-accessing-maid-for-mental-illness/article_240fb8b9-0289-500d-85f8-343a94965739.html",
-     "iso": "2026-10-28T08:00:15+00:00",
-     "t": "Wed 4:00 a.m."
-    },
-    {
-     "outlet": "Times Colonist",
-     "url": "https://www.timescolonist.com/the-mix/a-stab-in-the-back-how-it-feels-to-be-barred-from-accessing-maid-for-mental-illness-12949069",
      "iso": "2026-10-28T08:00:15+00:00",
      "t": "Wed 4:00 a.m."
     },
@@ -270,13 +270,22 @@
  ],
  "wire": [
   [
-   "Wed 4:31 a.m.",
-   "Latest",
-   "No clear winner in Israeli election as polls suggest stalemate",
-   "CBS News",
-   "https://www.cbsnews.com/news/israel-election-exit-polls-stalemate/",
-   "2026-10-28T08:31:28+00:00",
+   "Wed 4:47 a.m.",
+   "World",
+   "Israel election results live: vote count continues as exit polls suggest no clear winner",
+   "The Guardian",
+   "https://www.theguardian.com/world/live/2026/oct/28/israel-election-results-live-updates-exit-polls-netanyahu-likud-eisenkot-latest-news",
+   "2026-10-28T08:47:25+00:00",
    4
+  ],
+  [
+   "Wed 4:35 a.m.",
+   "World",
+   "Khouri: Strong Israel-Arab bloc result does not mean Israel has changed",
+   "Al Jazeera",
+   "https://www.aljazeera.com/video/newsfeed/2026/10/28/khouri-strong-israel-arab-bloc-result-does-not-mean-israel-has-changed?traffic_source=rss",
+   "2026-10-28T08:35:05+00:00",
+   1
   ],
   [
    "Wed 4:29 a.m.",
@@ -484,15 +493,6 @@
    "https://www.aljazeera.com/opinions/2026/10/28/russia-is-selling-africa-dependence-disguised-as-partnership?traffic_source=rss",
    "2026-10-28T07:25:41+00:00",
    1
-  ],
-  [
-   "Wed 3:11 a.m.",
-   "World",
-   "Islamic militants kill at least 20 Somali soldiers in ambush, officer says",
-   "Toronto Star",
-   "https://www.thestar.com/news/world/africa/islamic-militants-kill-at-least-20-somali-soldiers-in-ambush-officer-says/article_400c471a-b447-536b-871b-1eaa5dd75154.html",
-   "2026-10-28T07:11:31+00:00",
-   2
   ]
  ],
  "blogs": [
@@ -502,7 +502,7 @@
   },
   {
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/27/israel-election-results-live-exit-polls-soon-as-netanyahu-faces-tight-race",
-   "updated": "2026-10-28T08:46:12+00:00"
+   "updated": "2026-10-28T08:51:45+00:00"
   },
   {
    "url": "https://www.ctvnews.ca/edmonton/article/what-happened-at-cfb-wainwright-4-soldiers-dead-39-wounded-here-are-the-confirmed-facts/",
@@ -532,22 +532,33 @@
    "theme": "Canada and the U.S."
   },
   {
-   "score": 13,
-   "title": "Serbian police say assailant killed after attacking officer outside the Israeli Embassy in Belgrade",
-   "url": "https://www.timescolonist.com/world-news/serbian-police-say-assailant-killed-after-attacking-officer-outside-the-israeli-embassy-in-belgrade-12949043",
-   "outlets": 11,
+   "score": 15,
+   "title": "Israel election results live: vote count continues as exit polls suggest no clear winner",
+   "url": "https://www.theguardian.com/world/live/2026/oct/28/israel-election-results-live-updates-exit-polls-netanyahu-likud-eisenkot-latest-news",
+   "outlets": 13,
    "why": [],
    "theme": ""
   },
   {
-   "score": 8,
+   "score": 9,
    "title": "Satisfaction with Carney touches 70% for the first time: is ‘bridge’ politics beating ‘wedge’ politics?",
    "url": "https://bruce728.substack.com/p/satisfaction-with-carney-touches",
    "outlets": 0,
    "why": [
     "National Newswatch #4",
-    "National Newswatch #8",
-    "National Newswatch #16"
+    "National Newswatch #19",
+    "National Newswatch #9",
+    "National Newswatch #17"
+   ],
+   "theme": ""
+  },
+  {
+   "score": 9,
+   "title": "Crying ‘wolf’ on Russian bots risks missing real political divisions: disinformation expert",
+   "url": "https://www.hilltimes.com/2026/10/28/crying-wolf-on-russian-bots-risks-missing-real-political-divisions-says-disinformation-expert/523610/",
+   "outlets": 4,
+   "why": [
+    "National Newswatch #7"
    ],
    "theme": ""
   },
@@ -569,11 +580,22 @@
   },
   {
    "score": 6,
+   "title": "Alberta Premier fends off leadership challenge and looks to squelch separatist discord",
+   "url": "https://www.theglobeandmail.com/canada/article-alberta-premier-fends-off-leadership-challenge-and-looks-to-squelch/",
+   "outlets": 0,
+   "why": [
+    "National Newswatch #3",
+    "National Newswatch #18"
+   ],
+   "theme": ""
+  },
+  {
+   "score": 6,
    "title": "Smaller airlines ask Transport Canada for pilots' shifts to last up to 14 hours",
    "url": "https://www.cbc.ca/news/politics/air-travel-north-transport-canada-flight-duty-period-9.7398626",
    "outlets": 1,
    "why": [
-    "National Newswatch #7"
+    "National Newswatch #8"
    ],
    "theme": ""
   },
@@ -594,26 +616,6 @@
    "outlets": 1,
    "why": [
     "CBC News front #2"
-   ],
-   "theme": ""
-  },
-  {
-   "score": 6,
-   "title": "Indigenous scholars allege racism, poor treatment at University of Ottawa",
-   "url": "https://www.cbc.ca/news/indigenous/university-of-ottawa-indigenous-complaints-9.7397872",
-   "outlets": 1,
-   "why": [
-    "CBC News front #3"
-   ],
-   "theme": ""
-  },
-  {
-   "score": 6,
-   "title": "Democrats promise Epstein probes will be a priority if they win midterms, but to what end?",
-   "url": "https://www.cbc.ca/news/world/democrats-epstein-plans-midterms-9.7395880",
-   "outlets": 1,
-   "why": [
-    "CBC News front #4"
    ],
    "theme": ""
   }
@@ -695,6 +697,65 @@
   "stale_since": "2026-10-28T00:15:00+00:00",
   "stories": [
    {
+    "key": "auto-2f588a56",
+    "words": [
+     "kharkiv",
+     "russian"
+    ],
+    "score": 9,
+    "outlets": 3,
+    "tag": "Developing",
+    "title": "Putin lectured Nordic leaders on Russian history during latest call, FT reports",
+    "url": "https://kyivindependent.com/putin-lectured-nordic-leaders-on-russian-history-during-latest-call-ft-reports/",
+    "outlet": "Kyiv Independent",
+    "t": "Wed 12:28 a.m.",
+    "iso": "2026-10-28T04:28:16+00:00",
+    "summary": "Russian President Vladimir Putin delivered a lengthy lecture on medieval Slavic history to the leaders of Norway and Finland during an Oct. 27 phone call, offering little mention of an immediate ceasefire despite renewed diplomatic efforts to end Moscow's war in Ukraine, the Financial Times (FT) reported.",
+    "first": {
+     "outlet": "Kyiv Independent",
+     "url": "https://kyivindependent.com/putin-lectured-nordic-leaders-on-russian-history-during-latest-call-ft-reports/",
+     "t": "Wed 12:28 a.m.",
+     "title": "Putin lectured Nordic leaders on Russian history during latest call, FT reports"
+    },
+    "newest": "2026-10-28T07:43:15+00:00",
+    "photo": {
+     "src": "live/img/auto-2f588a56-6b168f6fc6.jpg",
+     "orig": "https://assets.kyivindependent.com/content/images/2024/08/GettyImages-2164023634.jpg",
+     "caption": "Photo — via Kyiv Independent",
+     "alt": "Putin lectured Nordic leaders on Russian history during latest call, FT reports",
+     "outlet": "Kyiv Independent",
+     "url": "https://kyivindependent.com/putin-lectured-nordic-leaders-on-russian-history-during-latest-call-ft-reports/"
+    },
+    "independent": 3,
+    "reports": [
+     {
+      "t": "Wed 3:43 a.m.",
+      "iso": "2026-10-28T07:43:15+00:00",
+      "outlet": "Euronews",
+      "title": "Ukraine: massive fire engulfs buildings after Russian strike on Kharkiv",
+      "url": "https://www.euronews.com/video/2026/10/28/ukraine-massive-fire-engulfs-buildings-after-russian-strike-on-kharkiv",
+      "desc": "Video. Five people, including a 4-year-old child, were injured in an overnight Russian drone strike on Kharkiv. The attack set several buildings ablaze, with firefighters working under the threat of further strikes."
+     },
+     {
+      "t": "Wed 3:35 a.m.",
+      "iso": "2026-10-28T07:35:20+00:00",
+      "outlet": "Al Jazeera",
+      "title": "Elderly women and children survive Russian attack on Kharkiv",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/28/elderly-women-and-children-survive-russian-attack-on-kharkiv?traffic_source=rss",
+      "desc": "A Russian drone attack in Ukraine's Kharkiv late Tuesday forced elderly women and children to evacuate their homes."
+     },
+     {
+      "t": "Wed 12:28 a.m.",
+      "iso": "2026-10-28T04:28:16+00:00",
+      "outlet": "Kyiv Independent",
+      "title": "Putin lectured Nordic leaders on Russian history during latest call, FT reports",
+      "url": "https://kyivindependent.com/putin-lectured-nordic-leaders-on-russian-history-during-latest-call-ft-reports/",
+      "desc": "Russian President Vladimir Putin delivered a lengthy lecture on medieval Slavic history to the leaders of Norway and Finland during an Oct. 27 phone call, offering little mention of an immediate ceasefire despite renewed diplomatic efforts to end Moscow's war in Ukraine, the Financial Times (FT)…"
+     }
+    ],
+    "replaces_top": false
+   },
+   {
     "key": "auto-4cbe5860",
     "words": [
      "conservatives",
@@ -740,7 +801,7 @@
       "outlet": "Toronto Star",
       "title": "Cut tax, reduce deficit, grow economy. Can B.C. Conservatives do it all at once?",
       "url": "https://www.thestar.com/news/canada/british-columbia/cut-tax-reduce-deficit-grow-economy-can-b-c-conservatives-do-it-all-at-once/article_28ac3cb6-f773-521c-bda2-c8a23d7eedd6.html",
-      "desc": ""
+      "desc": "VICTORIA - With two-thirds of the seats in the next legislature, the B.C. Conservatives may have a resounding mandate to follow through on their election promises to cut taxes, reduce"
      },
      {
       "t": "Wed 4:00 a.m.",
@@ -748,7 +809,7 @@
       "outlet": "Times Colonist",
       "title": "Cut tax, reduce deficit, grow economy. Can B.C. Conservatives do it all at once?",
       "url": "https://www.timescolonist.com/the-mix/cut-tax-reduce-deficit-grow-economy-can-bc-conservatives-do-it-all-at-once-12949068",
-      "desc": "VICTORIA — With two-thirds of the seats in the next legislature, the B.C. Conservatives may have a resounding mandate to follow through on their election promises to cut taxes, reduce the deficit and grow the economy at 3."
+      "desc": ""
      },
      {
       "t": "Wed 4:00 a.m.",
@@ -773,66 +834,6 @@
       "title": "Cut tax, reduce deficit, grow economy. Can B.C. Conservatives do it all at once?",
       "url": "https://www.ckom.com/2026/10/28/cut-tax-reduce-deficit-grow-economy-can-b-c-conservatives-do-it-all-at-once/",
       "desc": ""
-     }
-    ],
-    "replaces_top": false
-   },
-   {
-    "key": "auto-b70fff8b",
-    "words": [
-     "bolsonaro",
-     "brazil",
-     "flávio"
-    ],
-    "score": 6,
-    "outlets": 3,
-    "tag": "Developing",
-    "title": "Brazil's Flávio Bolsonaro heading for Ecuador, Argentina says",
-    "url": "https://www.cbsnews.com/news/brazil-flavio-bolsonaro-u-s-visa-presidential-election-loss/",
-    "outlet": "CBS News",
-    "t": "Wed 3:04 a.m.",
-    "iso": "2026-10-28T07:04:00+00:00",
-    "summary": "Flávio Bolsonaro, who lost Brazil's presidential election, was en route to Ecuador after stopping off in Argentina with his family, an Argentine agency said. Earlier, a State Department official told CBS News they would receive U.S. visas.",
-    "first": {
-     "outlet": "BBC News",
-     "url": "https://www.bbc.co.uk/news/articles/ckly0xpxp243o?at_medium=RSS&at_campaign=rss",
-     "t": "Tue 10:47 p.m.",
-     "title": "Defeated presidential candidate Flávio Bolsonaro arrives in US after Brazil cancels his passports, sources say"
-    },
-    "newest": "2026-10-28T07:04:00+00:00",
-    "photo": {
-     "src": "live/img/auto-b70fff8b-a75e28b3c9.jpg",
-     "orig": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/10/27/9bf66ee2-9473-4524-bc14-04af34fae931/thumbnail/1200x630/8105e904046eb47206eca96999f18445/gettyimages-2301579170.jpg",
-     "caption": "Photo — via CBS News",
-     "alt": "Brazil's Flávio Bolsonaro heading for Ecuador, Argentina says",
-     "outlet": "CBS News",
-     "url": "https://www.cbsnews.com/news/brazil-flavio-bolsonaro-u-s-visa-presidential-election-loss/"
-    },
-    "independent": 3,
-    "reports": [
-     {
-      "t": "Wed 3:04 a.m.",
-      "iso": "2026-10-28T07:04:00+00:00",
-      "outlet": "CBS News",
-      "title": "Brazil's Flávio Bolsonaro heading for Ecuador, Argentina says",
-      "url": "https://www.cbsnews.com/news/brazil-flavio-bolsonaro-u-s-visa-presidential-election-loss/",
-      "desc": "Flávio Bolsonaro, who lost Brazil's presidential election, was en route to Ecuador after stopping off in Argentina with his family, an Argentine agency said. Earlier, a State Department official told CBS News they would receive U.S. visas."
-     },
-     {
-      "t": "Wed 2:36 a.m.",
-      "iso": "2026-10-28T06:36:14+00:00",
-      "outlet": "The Guardian",
-      "title": "Flávio Bolsonaro flees Brazil after presidential election loss, reports say",
-      "url": "https://www.theguardian.com/world/2026/oct/27/flavio-bolsonaro-brazil-argentina-fled",
-      "desc": "Far-right senator and his family boarded private plane to Ecuador after crossing border to Argentina, Argentina’s government confirms"
-     },
-     {
-      "t": "Tue 10:47 p.m.",
-      "iso": "2026-10-28T02:47:45+00:00",
-      "outlet": "BBC News",
-      "title": "Defeated presidential candidate Flávio Bolsonaro arrives in US after Brazil cancels his passports, sources say",
-      "url": "https://www.bbc.co.uk/news/articles/ckly0xpxp243o?at_medium=RSS&at_campaign=rss",
-      "desc": "The defeated presidential candidate's apparent arrival in the US came hours after he failed to turn in his passports to Brazilian authorities."
      }
     ],
     "replaces_top": false
@@ -1412,11 +1413,11 @@
   },
   {
    "o": "NPR",
-   "h": "A U.S. cruise ship ends voyage due to fuel costs and passengers lose their homes",
-   "u": "https://www.npr.org/2026/10/28/nx-s1-6020180/us-cruise-ship-ends-voyage-passengers-lose-homes",
-   "img": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6734x3788+0+351/resize/1400/quality/85/format/webp/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F44%2F23%2F0881c66f4de09635a457c6f93b45%2Fap26301261674111.jpg",
-   "w": "Wed 3:57 a.m.",
-   "iso": "2026-10-28T07:57:51+00:00"
+   "h": "Morning news brief",
+   "u": "https://www.npr.org/2026/10/28/nx-s1-6012226/morning-news-brief",
+   "img": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
+   "w": "Wed 4:47 a.m.",
+   "iso": "2026-10-28T08:47:33+00:00"
   },
   {
    "o": "The Hill",
@@ -1677,10 +1678,10 @@
   ],
   [
    "Fox News",
-   "Column · Corey Brooks",
-   "Chicago schools are failing kids at the one skill that can change their lives",
-   "https://www.foxnews.com/opinion/corey-brooks-chicago-schools-failing-kids-one-skill-change-lives",
-   "2026-10-27T14:00:27+00:00"
+   "Column · Gregg Jarrett",
+   "Ilhan Omar turns her defense over to a vile purveyor of hate",
+   "https://www.foxnews.com/opinion/gregg-jarrett-ilhan-omar-turns-defense-vile-purveyor-hate",
+   "2026-10-28T08:50:46+00:00"
   ]
  ],
  "canus": {
@@ -1759,7 +1760,7 @@
    "Times Colonist reports: Serbian police say assailant killed after attacking officer outside the Israeli Embassy in Belgrade.",
    "Narcity reports: Cut tax, reduce deficit, grow economy. Can B.C. Conservatives do it all at once?.",
    "Narcity reports: ’A stab in the back’: How it feels to be barred from accessing MAID for mental illness.",
-   "CBS News reports: Brazil’s Flávio Bolsonaro heading for Ecuador, Argentina says.",
+   "Al Jazeera reports: Cyclone Arnab makes landfall in India’s Andhra Pradesh.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
   ]
  },
@@ -2042,7 +2043,7 @@
     "url": "https://www.youtube.com/watch?v=-NabWfv-VdA",
     "img": "https://i.ytimg.com/vi/-NabWfv-VdA/hqdefault.jpg",
     "story": "Watch BBC News",
-    "watching": "79"
+    "watching": "65"
    },
    {
     "net": "Reuters",
@@ -2051,7 +2052,7 @@
     "url": "https://www.youtube.com/watch?v=4phI-YQVZwE",
     "img": "https://i.ytimg.com/vi/4phI-YQVZwE/hqdefault.jpg",
     "story": "Arrivals at Downing Street ahead of UK budget",
-    "watching": "1"
+    "watching": "17"
    },
    {
     "net": "Sky News",
@@ -2060,16 +2061,7 @@
     "url": "https://www.youtube.com/watch?v=PKnWzu5u6iA",
     "img": "https://i.ytimg.com/vi/PKnWzu5u6iA/hqdefault.jpg",
     "story": "Chancellor to deliver first Budget of Burnham premiership",
-    "watching": "824"
-   },
-   {
-    "net": "DW News",
-    "r": "world",
-    "title": "Live: How close is Netanyahu to coming out on top in Israel's election? | DW News",
-    "url": "https://www.youtube.com/watch?v=bkV9Gisa2Ls",
-    "img": "https://i.ytimg.com/vi/bkV9Gisa2Ls/hqdefault.jpg",
-    "story": "How close is Netanyahu to coming out on top in Israel's election?",
-    "watching": "549"
+    "watching": "800"
    }
   ],
   "upcoming": [
@@ -2142,8 +2134,32 @@
    "story": "Israel election results live: vote count continues as exit polls sugge",
    "title": "Israel election results live: vote count continues as exit polls suggest no clear winner",
    "url": "https://www.theguardian.com/world/live/2026/oct/28/israel-election-results-live-updates-exit-polls-netanyahu-likud-eisenkot-latest-news",
-   "updated": "2026-10-28T08:30:52+00:00",
+   "updated": "2026-10-28T08:47:25+00:00",
    "img": "https://i.guim.co.uk/img/media/b327b608d8b9c67d152fa006b1df8f13666c0a21/0_0_5160_4128/master/5160.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=53137812ee6569691715bc1e5cce8997"
+  },
+  {
+   "net": "Middle East Eye",
+   "story": "Morning update",
+   "title": "Morning update",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-653",
+   "updated": "2026-10-28T08:01:03+00:00",
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-10/ISRAEL_ELECTIONS_AFP.jpg"
+  },
+  {
+   "net": "Middle East Eye",
+   "story": "More than 66 percent of ballots counted, Netanyahu's bloc at 56 seats",
+   "title": "More than 66 percent of ballots counted, Netanyahu's bloc at 56 seats",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/more-66-percent-ballots-counted-netanyahus-bloc-56-seats",
+   "updated": "2026-10-28T07:38:07+00:00",
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-10/ISRAEL_ELECTIONS_AFP.jpg"
+  },
+  {
+   "net": "Middle East Eye",
+   "story": "Netanyahu says his bloc will win 'decisive majority'",
+   "title": "Netanyahu says his bloc will win 'decisive majority'",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-says-his-bloc-will-win-decisive-majority",
+   "updated": "2026-10-28T07:28:22+00:00",
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-10/ISRAEL_ELECTIONS_AFP.jpg"
   },
   {
    "net": "The Guardian",
@@ -2154,20 +2170,60 @@
    "img": "https://i.guim.co.uk/img/media/61bee9f3389f0747d84071aeaf42e7e17ab85fdd/498_0_4959_3969/master/4959.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=00dca9062084baac10c3f6d2bbe964ea"
   },
   {
-   "net": "The Guardian",
-   "story": "Major Israeli TV networks revise polling projections",
-   "title": "Major Israeli TV networks revise polling projections – as it happened",
-   "url": "https://www.theguardian.com/world/live/2026/oct/27/israel-elections-knesset-netanyahu-likud-eisenkot-gaza-latest-updates",
-   "updated": "2026-10-28T04:08:29+00:00",
-   "img": "https://i.guim.co.uk/img/media/d9d9e368239771778a4246a6eb4f8bcd2ca49136/602_0_4585_3668/master/4585.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=817fb054a6bd0cffed3811727eb94814"
+   "net": "Middle East Eye",
+   "story": "Netanyahu's bloc leads at 55 seats, but short of majority vote",
+   "title": "Netanyahu's bloc leads at 55 seats, but short of majority vote",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-bloc-leads-55-seats-short-majority-vote",
+   "updated": "2026-10-28T06:26:16+00:00",
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-10/ISRAEL_ELECTIONS_AFP.jpg"
   },
   {
-   "net": "CBS News",
-   "story": "8-month Iran war looms large over Israeli election",
-   "title": "8-month Iran war looms large over Israeli election",
-   "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-diplomacy-oil-prices-strait-of-hormuz/",
-   "updated": "2026-10-28T03:48:19+00:00",
-   "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/10/27/6b43b474-71b5-489c-978d-5dd4084bf2c4/thumbnail/1200x630/06b0f5881657c68a2c79cab8d4d3968c/gettyimages-2300612831.jpg"
+   "net": "Middle East Eye",
+   "story": "Ra’am leader accuses Netanyahu of ‘lying and inciting’ against Arab pa",
+   "title": "Ra’am leader accuses Netanyahu of ‘lying and inciting’ against Arab party",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/raam-leader-accuses-netanyahu-lying-and-inciting-against-arab-party",
+   "updated": "2026-10-28T06:18:53+00:00",
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-10/ISRAEL_ELECTIONS_AFP.jpg"
+  },
+  {
+   "net": "Middle East Eye",
+   "story": "More than 2.7 million votes counted, Palestinian-led parties overtake ",
+   "title": "More than 2.7 million votes counted, Palestinian-led parties overtake Bennett’s Together alliance at third place",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/more-27-million-votes-counted-palestinian-led-parties-overtake-bennetts",
+   "updated": "2026-10-28T06:01:40+00:00",
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-10/ISRAEL_ELECTIONS_AFP.jpg"
+  },
+  {
+   "net": "Middle East Eye",
+   "story": "Trump claims his backing of Netanyahu reversed his 'decisive defeat' i",
+   "title": "Trump claims his backing of Netanyahu reversed his 'decisive defeat' in Israeli elections",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-claims-his-backing-netanyahu-reversed-his-decisive-defeat-israeli",
+   "updated": "2026-10-28T05:25:48+00:00",
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-10/ISRAEL_ELECTIONS_AFP.jpg"
+  },
+  {
+   "net": "Middle East Eye",
+   "story": "Coalition with Arab parties would be ‘a shame and a disgrace’, Netanya",
+   "title": "Coalition with Arab parties would be ‘a shame and a disgrace’, Netanyahu says",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/coalition-arab-parties-would-be-shame-and-disgrace-netanyahu-says",
+   "updated": "2026-10-28T04:58:51+00:00",
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-10/ISRAEL_ELECTIONS_AFP.jpg"
+  },
+  {
+   "net": "Middle East Eye",
+   "story": "Netanyahu's bloc down to 57 seats, as 42 percent of ballots counted",
+   "title": "Netanyahu's bloc down to 57 seats, as 42 percent of ballots counted",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahus-bloc-down-57-seats-42-percent-ballots-counted",
+   "updated": "2026-10-28T04:36:26+00:00",
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-10/ISRAEL_ELECTIONS_AFP.jpg"
+  },
+  {
+   "net": "Middle East Eye",
+   "story": "Netanyahu claims Israel has 'unprecedented' chance to remove Iranian t",
+   "title": "Netanyahu claims Israel has 'unprecedented' chance to remove Iranian threat",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-claims-israel-has-unprecedented-chance-remove-iranian-threat",
+   "updated": "2026-10-28T04:10:23+00:00",
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-10/ISRAEL_ELECTIONS_AFP.jpg"
   }
  ],
  "related": {
@@ -2294,18 +2350,18 @@
  },
  "bds": [
   {
-   "id": "bd-auto-5749ef53",
+   "id": "bd-auto-71032822",
    "auto": true,
    "desk": "Canada",
    "status": "Developing",
    "at": "2026-10-28T08:32:33+00:00",
    "exact": true,
-   "img": "live/img/auto-5749ef53-5b59554818.jpg",
+   "img": "live/img/auto-71032822-5b59554818.jpg",
    "credit": "via Times Colonist",
    "pic": "globe",
    "h": "Serbian police say assailant killed after attacking officer outside the Israeli Embassy in Belgrade",
    "lede": "BELGRADE, Serbia (AP) — An assailant with knives attacked a police officer from an elite unit guarding the Israeli Embassy in Belgrade just after midnight on Wednesday, police said. The officer responded by fatally shooting the attacker.",
-   "newl": "Now carried by 8 independent newsrooms.",
+   "newl": "Now carried by 9 independent newsrooms.",
    "rows": [
     [
      "Times Colonist",
@@ -2395,6 +2451,11 @@
      "Al Jazeera",
      "Netanyahu outlines achievements, future plans as Likud leads Israeli polls",
      "https://www.aljazeera.com/news/2026/10/28/netanyahu-outlines-achievements-future-plans-as-likud-leads-polls?traffic_source=rss"
+    ],
+    [
+     "Middle East Eye",
+     "Trump claims his backing of Netanyahu reversed his 'decisive defeat' in Israeli elections",
+     "https://www.middleeasteye.net/live-blog/live-blog-update/trump-claims-his-backing-netanyahu-reversed-his-decisive-defeat-israeli"
     ],
     [
      "BBC News",
