@@ -18,6 +18,7 @@
 .cu-auto time { display: block; font-size: 12px; opacity: .75; }
 .cu-auto .o { font-size: 13px; opacity: .75; }
 .cu-auto-note { grid-column: 1 / -1; margin: 4px 0 0; font-size: 12px; opacity: .75; }
+#autoBreaking .ab-d { margin: 4px 0 0; font-size: 14px; line-height: 1.45; color: #F6E1E8; }
 </style></head><body>
 <title>Palindrome News</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -4365,6 +4366,7 @@ header.site { border-bottom: 0; }
     showPosts(b.dataset.cat);
   }));
   showPosts('all');
+  window.PAL_posts = { list: posts, render: () => showPosts(typeof curCat === 'undefined' ? 'all' : curCat || 'all') };
 
   // Editorials (sample)
   const eds = [
@@ -4997,13 +4999,14 @@ header.site { border-bottom: 0; }
   const nrm = (u) => String(u || '').replace(/#.*$/, '').replace(/\/+$/, '');
   const TOP = new Set([...document.querySelectorAll('#breaking h2 a[href^="http"], #breaking .actions a[href^="http"], .lead > article a[href^="http"]')].map((a) => nrm(a.getAttribute('href'))));
   const onTop = (b) => b.src.some((x) => TOP.has(nrm(x[2])));
-  const live = BDS.filter((b) => !onTop(b)).sort((a, b) => String(b.at || '').localeCompare(String(a.at || '')));
-  const BDMAIN = live.filter((b) => !b.earlier), BDOLD = live.filter((b) => b.earlier);
   const etTime = (iso) => { try { return new Date(iso).toLocaleTimeString('en-CA', { hour: 'numeric', minute: '2-digit', timeZone: 'America/Toronto' }).replace(/\s?([ap])\.?m\.?/i, ' $1.m.'); } catch (e) { return ''; } };
   const etDay = (iso) => { try { return new Date(iso).toLocaleDateString('en-CA', { weekday: 'long', timeZone: 'America/Toronto' }); } catch (e) { return ''; } };
   const today = etDay(new Date().toISOString());
   const whenNew = (b) => !b.at ? '' : b.exact ? (etDay(b.at) === today ? 'at ' + etTime(b.at) : etDay(b.at) + ' ' + etTime(b.at)) : etDay(b.at);
   const agoTxt = (iso) => { const m = Math.round((Date.now() - new Date(iso)) / 60000); return m < 1 ? 'just now' : m < 60 ? m + ' min ago' : m < 1440 ? Math.floor(m / 60) + ' hr ' + (m % 60 ? (m % 60) + ' min ' : '') + 'ago' : ''; };
+  function renderBDS() {
+  const live = BDS.filter((b) => !onTop(b)).sort((a, b) => String(b.at || '').localeCompare(String(a.at || '')));
+  const BDMAIN = live.filter((b) => !b.earlier), BDOLD = live.filter((b) => b.earlier);
   $('bds').innerHTML = BDMAIN.map((b, bi) => { b.open = bi === 0 && !(window.matchMedia && matchMedia('(max-width: 760px)').matches);
     const n = b.src.length;
     const sup = (refs) => refs.map((r) => '<sup><a href="' + esc(b.src[r - 1][2]) + '" target="_blank" rel="noopener" title="' + esc(b.src[r - 1][0]) + '">' + r + '</a></sup>').join('');
@@ -5011,12 +5014,15 @@ header.site { border-bottom: 0; }
     return '<article class="bd' + (b.open ? ' open' : '') + '" id="' + b.id + '"><div class="sum">' + '<a class="bdimg" href="' + esc(lead) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + photo(b.img, b.pic, b.h, b.credit) + '</a>' +
       '<span class="k">The breakdown <span class="desk2">' + esc(b.desk) + '</span>' + (b.status ? '<span class="bst bst-' + b.status.toLowerCase() + '">' + esc(b.status) + '</span>' : '') + meter(n) + '</span>' +
       '<h3><a href="' + esc(lead) + '" target="_blank" rel="noopener">' + esc(b.h) + '</a></h3>' + (b.newl ? '<p class="bnew"><b>New ' + esc(whenNew(b)) + '</b> ' + esc(b.newl) + (b.exact ? ' <span class="ago" data-at="' + esc(b.at) + '">' + esc(agoTxt(b.at)) + '</span>' : '') + '</p>' : '') + '<p class="lede1">' + esc(b.lede) + ' <span class="via">Story: ' + esc(L0[0]) + ' &#8599;</span></p>' +
-      '<button type="button" class="tog" aria-expanded="' + (b.open ? 'true' : 'false') + '" aria-controls="' + b.id + '-in"><span class="o1">Our summary</span><span class="o2">Close</span>' + chev + '</button></div>' +
+      '<button type="button" class="tog" aria-expanded="' + (b.open ? 'true' : 'false') + '" aria-controls="' + b.id + '-in"><span class="o1">' + (b.auto ? 'What each newsroom reports' : 'Our summary') + '</span><span class="o2">Close</span>' + chev + '</button></div>' +
       '<div class="in" id="' + b.id + '-in"' + (b.open ? '' : ' hidden') + '><dl>' + b.rows.map(([k, v, refs], i) => '<div' + (i === 0 ? ' class="bnews"' : '') + '><dt>' + esc(k) + '</dt><dd>' + esc(v) + sup(refs) + '</dd></div>').join('') + '</dl>' +
       (b.dirs ? '<div class="dirwrap"><h4>From every direction</h4><div class="dirs">' + dirs.map(([o, a, p, u]) => '<article class="dir"><span class="o">' + esc(o) + '</span><span class="ang">' + esc(a) + '</span><p>' + esc(p) + '</p><a href="' + esc(u) + '" target="_blank" rel="noopener">Read ' + esc(o) + ' &#8599;</a></article>').join('') + '</div><p class="common"><b>What they all agree on</b>Trump signed new sanctions on Russia into law, then paused them by executive order.</p></div>' : '') +
       '<div class="srcs"><h4>Verified by ' + n + ' independent outlets</h4><ol>' + b.src.map(([o, d, u]) => '<li><a href="' + esc(u) + '" target="_blank" rel="noopener"><b>' + esc(o) + '</b> · <span>' + esc(d) + ' &#8599;</span></a></li>').join('') + '</ol></div>' +
-      '<p class="note">Analysis by Palindrome, drawn only from the reporting listed. Preview draft; on the live site the editor approves each breakdown before it runs.</p></div></article>';
+      (b.auto ? '<p class="note">Built automatically from ' + n + ' reports by independent newsrooms (same-owner outlets and wire copies counted once). Each line is the newsroom’s own words, linked to its report.</p>' : '<p class="note">Analysis by Palindrome, drawn only from the reporting listed.</p>') + '</div></article>';
   }).join('') + (BDOLD.length ? '<div class="bd-earlier"><h4>Earlier this weekend</h4><ul>' + BDOLD.map((b) => { const L = b.lead ? b.src[b.lead - 1] : b.src[0]; return '<li><a href="' + esc(L[2]) + '" target="_blank" rel="noopener"><b>' + esc(b.h) + '</b><span>' + esc(b.lede) + '</span><small>' + esc(L[0]) + ' &#8599;</small></a></li>'; }).join('') + '</ul></div>' : '');
+  }
+  renderBDS();
+  window.PAL_bds = { list: BDS, render: renderBDS };
   setInterval(() => document.querySelectorAll('.bnew .ago').forEach((el) => { el.textContent = agoTxt(el.dataset.at); }), 60000);
   wirePhotos();
   // A jump link opens its breakdown
@@ -5949,7 +5955,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     const fresh = !AUTO || AUTO.d.checked !== got[0].d.checked;
     AUTO = got[0];
     deadLinks();
-    if (fresh) { blogs(); wire(); try { autoTop(); } catch (e) { console.warn('autoTop', e); } try { clips(); ledes(); stamp(); papers(); eds(); canus(); brief(); } catch (e) { console.warn('autopilot', e); } if (window.PAL_eventRender) try { window.PAL_eventRender(); } catch (e) {} if (window.PAL_renderFronts) try { window.PAL_renderFronts(); if (window.PAL_oneStoryOnePlace) window.PAL_oneStoryOnePlace(); } catch (e) { console.warn(e); } }
+    if (fresh) { blogs(); wire(); try { autoTop(); } catch (e) { console.warn('autoTop', e); } try { clips(); ledes(); stamp(); papers(); eds(); canus(); brief(); bds(); otr(); } catch (e) { console.warn('autopilot', e); } if (window.PAL_eventRender) try { window.PAL_eventRender(); } catch (e) {} if (window.PAL_renderFronts) try { window.PAL_renderFronts(); if (window.PAL_oneStoryOnePlace) window.PAL_oneStoryOnePlace(); } catch (e) { console.warn(e); } }
     paint();
   }
   function blogs() {
@@ -5986,12 +5992,12 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       const ph = s.photo ? '<div class="bart"><span class="ph"><img src="' + esc(AUTO.base + s.photo.src) + '" alt="' + esc(s.photo.alt || '') + '" decoding="async" onerror="this.closest(\'.bart\').remove()"></span></div><p class="bart-cap">' + esc(s.photo.caption) + '</p>' : '';
       const recent = Date.now() - Date.parse(s.newest) < 3600000;
       const firstLine = s.first && s.first.url !== s.url ? '<br>First reported by ' + a(s.first.url, esc(s.first.outlet)) + ' · ' + esc(s.first.t) : '';
-      const reps = (s.reports || []).map((r) => '<li><time>' + esc(r.t) + '</time>' + a(r.url, esc(r.title)) + ' <span class="o">' + esc(r.outlet) + ' &#8599;</span></li>').join('');
+      const reps = (s.reports || []).map((r) => '<li><time>' + esc(r.t) + '</time>' + a(r.url, esc(r.title)) + ' <span class="o">' + esc(r.outlet) + ' &#8599;</span>' + (r.desc && r.url !== s.url ? '<p class="ab-d">' + esc(r.desc) + '</p>' : '') + '</li>').join('');
       return '<article class="ab-story' + (i ? ' ab-second' : '') + '">' + ph + '<span class="tag">' + (recent ? 'Breaking' : 'Developing') + '</span>'
         + '<h2>' + a(s.url, esc(s.title)) + '</h2>'
         + '<p class="first">LATEST ' + a(s.url, esc(s.outlet)) + ' · ' + esc(s.t) + firstLine + '</p>'
         + (s.summary ? '<p class="bk-dek">' + esc(s.summary) + ' <span class="ab-cr">— ' + esc(s.outlet) + '</span></p>' : '')
-        + '<details class="ab-reps"' + (i ? '' : ' open') + '><summary>' + s.outlets + ' newsrooms on this story</summary><ol>' + reps + '</ol></details>'
+        + '<details class="ab-reps"' + (i ? '' : ' open') + '><summary>What each newsroom reports · ' + (s.independent || s.outlets) + ' independent newsrooms</summary><ol>' + reps + '</ol></details>'
         + '</article>';
     }).join('') + '<p class="ab-note">Picked and updated automatically at ' + esc(fmt(AUTO.d.checked)) + ' ET, by how many newsrooms carry each story and where it sits on National Newswatch and CBC News. Headlines and summaries are the outlets’ own.</p>';
     sec.hidden = false;
@@ -6068,6 +6074,26 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     const B = window.PAL_brief, A = AUTO.d.brief; if (!B || !A || !A.lines || A.edition === B.edition) return;
     B.lines.length = 0; A.lines.forEach((l) => B.lines.push(l)); B.auto = true; B.edition = A.edition;
     const n = document.getElementById('audioNote'); if (n) n.textContent = 'The top stories for ' + A.edition + ', each credited to the newsroom that reported it, read aloud by your device. About a minute.';
+  }
+
+  // The breakdown, by itself: stories carried by 6+ independent newsrooms, each line a newsroom's own words, linked.
+  function bds() {
+    const B = window.PAL_bds, A = AUTO.d.bds || []; if (!B) return;
+    for (let i = B.list.length - 1; i >= 0; i--) if (B.list[i].auto) B.list.splice(i, 1);
+    const have = new Set(B.list.flatMap((b) => b.src.map((x) => key(x[2]))));
+    A.forEach((b) => { if (!b.src.some((x) => have.has(key(x[2])))) B.list.push(Object.assign({}, b, { img: b.img ? AUTO.base + b.img : '' })); });
+    try { B.render(); } catch (e) { console.warn('bds', e); }
+  }
+  // On the record, by itself: statements from official sources (the Prime Minister, governments, the White House, the UN).
+  // Cards older than a week drop off.
+  function otr() {
+    const P = window.PAL_posts, A = AUTO.d.otr || []; if (!P) return;
+    for (let i = P.list.length - 1; i >= 0; i--) if (P.list[i].auto) P.list.splice(i, 1);
+    const have = new Set(P.list.map((p) => key(p.href)));
+    P.list.unshift.apply(P.list, A.filter((p) => !have.has(key(p.href))).map((p) => Object.assign({}, p)));
+    const yr = new Date().getFullYear(), cut = Date.now() - 7 * 864e5;
+    for (let i = P.list.length - 1; i >= 0; i--) { const t = Date.parse(P.list[i].iso || (P.list[i].date + ' ' + yr)); if (!isNaN(t) && t < cut && P.list.length > 3) P.list.splice(i, 1); }
+    P.render();
   }
   function photo(root, p) {
     const el = root.querySelector('.bart'); if (!el || !p || el.dataset.auto === p.src) return;

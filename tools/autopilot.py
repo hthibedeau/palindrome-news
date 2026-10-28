@@ -79,7 +79,42 @@ def clean(s):
     return " ".join(_h.unescape(s or "").split())
 
 
+# Same owner counts as one newsroom (house rule 1); identical wire headlines count once too.
+OWNERS = {"CTV News": "Bell", "CP24": "Bell", "BNN Bloomberg": "Bell", "CityNews": "Rogers", "Global News": "Corus",
+          "National Post": "Postmedia", "Toronto Sun": "Postmedia", "Ottawa Citizen": "Postmedia", "Calgary Herald": "Postmedia",
+          "Edmonton Journal": "Postmedia", "Vancouver Sun": "Postmedia", "The Province": "Postmedia", "Financial Post": "Postmedia",
+          "Toronto Star": "Torstar", "Times Colonist": "Glacier", "Winnipeg Free Press": "FP", "The Canadian Press": "CP"}
+INFO_CACHE = {}
+
+
+def owner(outlet):
+    o = re.sub(r" \(.*\)$", "", outlet)
+    for k, v in OWNERS.items():
+        if o.startswith(k):
+            return v
+    return o
+
+
+def independent(reps):
+    """How many independent newsrooms: one per owner, and copies of the same wire headline count once."""
+    seen_t, owners = set(), set()
+    for r in reps:
+        t = re.sub(r"\W", "", r[2].lower())
+        if t in seen_t:
+            continue
+        seen_t.add(t)
+        owners.add(owner(r[1]))
+    return len(owners)
+
+
 def page_info(url):
+    if url in INFO_CACHE:
+        return INFO_CACHE[url]
+    INFO_CACHE[url] = got = _page_info(url)
+    return got
+
+
+def _page_info(url):
     """The article's own summary, picture (with caption and credit if it states them) and site name."""
     x = curl(url)
     if not x:
@@ -183,6 +218,16 @@ def build_story(g, now, imgdir, prev):
         photo = {"src": src, "orig": pi["img"], "caption": caption, "alt": cap[:160] or r[2], "outlet": outlet, "url": r[3]}
         break
     newest = reps[0][0]
+    # What each newsroom reports: every outlet's own lead sentence (og:description), side by side
+    with ThreadPoolExecutor(6) as ex:
+        infos = list(ex.map(lambda r: page_info(r[3]), reps[:8]))
+    descs, seen_d = {}, set()
+    for r, pi in zip(reps[:8], infos):
+        d = (pi or {}).get("desc", "")
+        k = re.sub(r"\W", "", d.lower())[:80]
+        if len(d) >= 40 and k not in seen_d:
+            seen_d.add(k)
+            descs[r[3]] = d if len(d) <= 300 else d[:300].rsplit(" ", 1)[0] + "…"
     return {
         "key": key, "words": names, "score": g["score"], "outlets": len(per),
         "tag": "Breaking" if (now - newest).total_seconds() < BREAKING_MIN * 60 else "Developing",
@@ -190,7 +235,9 @@ def build_story(g, now, imgdir, prev):
         "summary": info.get("desc", ""),
         "first": {"outlet": au.clean_outlet(first[1]), "url": first[3], "t": w.eastern(first[0]), "title": clean(first[2])},
         "newest": newest.isoformat(), "photo": photo,
-        "reports": [{"t": w.eastern(r[0]), "iso": r[0].isoformat(), "outlet": au.clean_outlet(r[1]), "title": clean(r[2]), "url": r[3]} for r in reps[:14]],
+        "independent": independent(reps),
+        "reports": [{"t": w.eastern(r[0]), "iso": r[0].isoformat(), "outlet": au.clean_outlet(r[1]), "title": clean(r[2]), "url": r[3],
+                     "desc": descs.get(r[3], "")} for r in reps[:14]],
     }
 
 
@@ -473,19 +520,104 @@ def brief(groups, now):
     return {"edition": edition, "lines": lines}
 
 
+# ===== The breakdown, by itself: any story carried by 6 or more independent newsrooms (house rule 1) gets a breakdown
+# built from what each newsroom reports, in its own words, each line credited and linked. Never the top stories.
+BD_MAX = 4
+
+
+def auto_breakdowns(groups, page, now, imgdir, skip_urls, prev):
+    import autoupdate as au
+    out = []
+    for g in groups[:20]:
+        if any(r[3] in skip_urls for r in g.get("rows", [])):
+            continue
+        rows = (core_rows(g) or [[]])[0]
+        if independent(rows) < 6 or any(r[3].split("?")[0].rstrip("/") in page for r in rows[:3]):
+            continue
+        try:
+            s = build_story(g, now, imgdir, prev)
+        except Exception as e:
+            print("auto breakdown failed:", e)
+            s = None
+        if not s or s.get("independent", 0) < 6:
+            continue
+        reps = [r for r in s["reports"] if r.get("desc")]
+        if len(reps) < 3:
+            continue
+        src = [[r["outlet"], r["title"], r["url"]] for r in s["reports"]]
+        idx = {r["url"]: i + 1 for i, r in enumerate(s["reports"])}
+        canada = au.CANADA.search(" ".join(r["title"] for r in s["reports"][:5]))
+        usa = au.USA.search(" ".join(r["title"] for r in s["reports"][:5]))
+        out.append({
+            "id": "bd-" + s["key"], "auto": True, "desk": "Canada" if canada else ("United States" if usa else "World"),
+            "status": "Developing" if (now - datetime.fromisoformat(s["newest"])).total_seconds() < 6 * 3600 else "Ongoing",
+            "at": s["newest"], "exact": True, "img": s["photo"]["src"] if s.get("photo") else "", "credit": ("via " + s["photo"]["outlet"]) if s.get("photo") else "",
+            "pic": "globe", "h": s["title"], "lede": s["summary"], "newl": f"Now carried by {s['independent']} independent newsrooms.",
+            "rows": [[r["outlet"], r["desc"], [idx[r["url"]]]] for r in reps[:6]], "src": src, "lead": idx.get(s["url"], 1),
+        })
+        if len(out) >= BD_MAX:
+            break
+    return out
+
+
+# ===== On the record, by itself: statements from official sources the code can read (no X, Instagram or LinkedIn,
+# which block automated reading). Each card links to the statement itself.
+OFFICIAL_FEEDS = [
+    ("Mark Carney", "Prime Minister of Canada", "pm", "MC", "https://www.pm.gc.ca/en/news.rss"),
+    ("Government of Canada", "Official news releases", "mp", "GC", "https://api.io.canada.ca/io-server/gc/news/en/v2?type=newsreleases&sort=publishedDate&orderBy=desc&pick=20&format=atom"),
+    ("Government of Ontario", "Premier Doug Ford’s government", "premier", "ON", "https://news.ontario.ca/newsroom/en/rss/allnews.rss"),
+    ("Government of Alberta", "Premier Danielle Smith’s government", "premier", "AB", "https://www.alberta.ca/news.rss"),
+    ("Government of B.C.", "Provincial government news", "premier", "BC", "https://news.gov.bc.ca/feed"),
+    ("The White House", "President of the United States", "us", "WH", "https://www.whitehouse.gov/feed/"),
+    ("United Nations", "UN News", "intl", "UN", "https://news.un.org/feed/subscribe/en/news/all/rss.xml"),
+]
+
+
+def on_the_record(page, now):
+    def one(f):
+        name, role, cat, ini, url = f
+        got = []
+        for dt, title, link, desc in rss_desc(url):
+            if not dt or (now - dt).total_seconds() > 48 * 3600 or link in page or re.search(r"^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday), \w+ \d|Fine for|Fined|Injury Results", title):
+                continue
+            day = dt - timedelta(hours=4 if _dst(dt) else 5)
+            g = desc if len(desc) >= 30 else ""
+            if len(g) > 240:
+                g = g[:240].rsplit(" ", 1)[0] + "…"
+            got.append({"cat": cat, "media": "none", "initials": ini, "name": name, "role": role, "date": day.strftime("%b ") + str(day.day),
+                        "platform": "Official statement", "handle": re.sub(r"^https?://(www\.)?", "", link).split("/")[0], "hed": clean(title),
+                        "summary": g, "href": link, "report": False, "iso": dt.isoformat(), "auto": True})
+            if len(got) >= 2:
+                break
+        return got
+    out = []
+    with ThreadPoolExecutor(7) as ex:
+        for got in ex.map(one, OFFICIAL_FEEDS):
+            out += got
+    out.sort(key=lambda p: p["iso"], reverse=True)
+    return out[:8]
+
+
 def run(page, items, groups, breaking, now, imgdir, prev):
     res = {}
     for name, f in [("auto", lambda: auto_stories(groups, page, breaking, now, imgdir, (prev.get("auto") or {}).get("stories", []))),
                     ("clips", lambda: clips(page, prev.get("clips", []), now)),
                     ("ledes", lambda: ledes(now, prev.get("ledes", []))),
                     ("papers", lambda: papers(page, now)), ("eds", lambda: editorials(page, now)),
-                    ("canus", lambda: canus(items, now)), ("brief", lambda: brief(groups, now))]:
+                    ("canus", lambda: canus(items, now)), ("brief", lambda: brief(groups, now)),
+                    ("otr", lambda: on_the_record(page, now))]:
         try:
             res[name] = f()
         except Exception as e:  # never block the run
             print(f"autopilot {name} failed:", e)
             res[name] = prev.get(name) or ({} if name in ("auto", "canus") else None if name == "brief" else [])
     a = res.get("auto") or {}
+    try:
+        skip = {r["url"] for st in a.get("stories", []) for r in st.get("reports", [])}
+        res["bds"] = auto_breakdowns(groups, page, now, imgdir, skip, (prev.get("auto") or {}).get("stories", []))
+    except Exception as e:
+        print("autopilot bds failed:", e)
+        res["bds"] = prev.get("bds") or []
     print(f"autopilot: {len(a.get('stories', []))} auto stories (takeover {a.get('takeover')}), {len(res['clips'])} clips, {len(res['ledes'])} U.S. ledes, "
-          f"{len(res['papers'])} papers, {len(res['eds'])} editorials, canus {len((res['canus'] or {}).get('talks', []))}/{len((res['canus'] or {}).get('usmedia', []))}, brief {bool(res['brief'])}")
+          f"{len(res['papers'])} papers, {len(res['eds'])} editorials, canus {len((res['canus'] or {}).get('talks', []))}/{len((res['canus'] or {}).get('usmedia', []))}, brief {bool(res['brief'])}, {len(res['bds'])} breakdowns, {len(res['otr'])} on the record")
     return res

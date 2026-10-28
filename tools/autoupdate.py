@@ -348,6 +348,7 @@ def main():
         json.dump(out, fh, ensure_ascii=False, indent=1)
     # keep only the photos still in use
     used = {os.path.basename(s["photo"]["src"]) for s in stories + (out.get("auto") or {}).get("stories", []) if s.get("photo")}
+    used |= {os.path.basename(b["img"]) for b in out.get("bds") or [] if b.get("img")}
     for f in glob.glob(os.path.join(imgdir, "*.jpg")):
         if os.path.basename(f) not in used:
             os.remove(f)
