@@ -36,6 +36,7 @@ Since Tue Oct 27, 2026, the site runs on code, not on Claude (Hannah: "I dont wa
   - **What America's newsrooms are leading with.**
   - **Think tanks & white papers** and **Editorials**.
   - **Canada and the U.S.**: the newest on trade and the border, and U.S. newsrooms on Canada.
+  - **The Canadian angle.** When a top story is from another country, a sidebar on it lists the newest reports tying it to Canada (Canadians caught up in it, Ottawa's and the Prime Minister's response, effects on Canadian trade, travel or communities), plus official Canadian statements, each the outlet's own headline, credited and linked. No Canadian angle in the news: no sidebar. `canadian_angle()` in `tools/autopilot.py`.
   - **The 60-second brief**, each story credited to its newsroom and read aloud by the reader's device.
 - **What each newsroom reports**: every auto top story shows each outlet's own lead sentence side by side, credited and linked.
 - **The breakdown**: any story carried by 6 or more independent newsrooms (same owner and wire copies counted once) gets a breakdown by itself, each line in a newsroom's own words.

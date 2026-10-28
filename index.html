@@ -31,6 +31,23 @@ a.snimg { display: block; }
 .sn .snimg img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .sn .snw { font-size: 12px; opacity: .75; }
 @media (min-width: 960px) { .bk-event .bk-text > .rel-box, .bk-event .bk-text > .auto-news { grid-column: 2; margin-top: 18px; } }
+/* The Canadian angle: sidebar on top stories from another country (tools/autopilot.py canadian_angle) */
+.can-box { margin: 12px 0 16px; padding: 10px 14px 8px; border-left: 4px solid #E0242F; background: rgba(255,255,255,.95); color: #1A1A1A; border-radius: 6px; font-size: 15px; line-height: 1.4; }
+.can-box h4 { margin: 0 0 2px; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: #B0141E; display: flex; align-items: center; gap: 6px; }
+.can-box h4 svg { width: 16px; height: 16px; flex: none; }
+.can-box .can-sub { margin: 0 0 6px; font-size: 13px; color: #555; }
+.can-box ol { list-style: none; margin: 0; padding: 0; }
+.can-box li { padding: 7px 0; border-top: 1px solid #E6E1E1; }
+.can-box time, .can-box .rk { display: inline-block; min-width: 96px; font-size: 12px; color: #666; }
+.can-box a { color: #1A1A1A; text-decoration: underline; text-underline-offset: 2px; }
+.can-box .o { font-size: 13px; color: #666; }
+.can-box .can-note { margin: 6px 0 0; font-size: 12px; color: #666; }
+@media (min-width: 960px) {
+  .bk-event .bk-text > .can-box, #breaking .bk-text > .can-box { grid-column: 2; margin-top: 18px; }
+  #autoBreaking .ab-story > .can-box:has(+ .tag) { float: right; width: 320px; margin: 0 0 14px 22px; }
+  #autoBreaking .ab-story::after { content: ""; display: block; clear: both; }
+}
+@media (prefers-color-scheme: dark) { .can-box { background: #1E1A1C; color: #F3EDEE; } .can-box a { color: #F3EDEE; } .can-box li { border-top-color: #3A3335; } .can-box h4 { color: #FF7A82; } .can-box .can-sub, .can-box time, .can-box .rk, .can-box .o, .can-box .can-note { color: #B9AFB2; } }
 </style></head><body>
 <title>Palindrome News</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -6009,7 +6026,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     const fresh = !AUTO || AUTO.d.checked !== got[0].d.checked;
     AUTO = got[0];
     deadLinks();
-    if (fresh) { blogs(); wire(); try { autoTop(); } catch (e) { console.warn('autoTop', e); } try { clips(); ledes(); stamp(); papers(); eds(); canus(); brief(); bds(); otr(); live(); related(); mostRead(); smaller(); dazzle(); } catch (e) { console.warn('autopilot', e); } if (window.PAL_eventRender) try { window.PAL_eventRender(); } catch (e) {} if (window.PAL_renderFronts) try { window.PAL_renderFronts(); if (window.PAL_oneStoryOnePlace) window.PAL_oneStoryOnePlace(); } catch (e) { console.warn(e); } }
+    if (fresh) { blogs(); wire(); try { autoTop(); } catch (e) { console.warn('autoTop', e); } try { clips(); ledes(); stamp(); papers(); eds(); canus(); brief(); bds(); otr(); live(); related(); try { canAngle(); } catch (e) { console.warn('canAngle', e); } mostRead(); smaller(); dazzle(); } catch (e) { console.warn('autopilot', e); } if (window.PAL_eventRender) try { window.PAL_eventRender(); } catch (e) {} if (window.PAL_renderFronts) try { window.PAL_renderFronts(); if (window.PAL_oneStoryOnePlace) window.PAL_oneStoryOnePlace(); } catch (e) { console.warn(e); } }
     paint();
   }
   function blogs() {
@@ -6202,6 +6219,38 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     });
   }
 
+  // The Canadian angle (Hannah, Wed Oct 28, 2026: "when there is a top headline from another country, if there is
+  // canadian angle that can be tied to it somehow …add it into it by putting it in a sidebar"). tools/autopilot.py
+  // canadian_angle finds, every 10 minutes, the reports tying a top story from abroad to Canada; this puts them in a
+  // sidebar on that story. Each line is the outlet's own headline, credited and linked. No angle in the news: no sidebar.
+  const LEAF = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#E0242F" d="M12 2l1.6 3.2 1.8-.9-.6 4.3 2.4-2.3.6 1.6 3-.6-1 3.1 1.4.8-4.6 3.8.5 1.6-4.4-.8v4.7h-1.4v-4.7l-4.4.8.5-1.6L3 11.2l1.4-.8-1-3.1 3 .6.6-1.6 2.4 2.3-.6-4.3 1.8.9z"/></svg>';
+  function canAngle() {
+    const C = AUTO.d.canangle || {};
+    document.querySelectorAll('.can-box').forEach((b) => b.remove());
+    Object.keys(C).forEach((k) => {
+      const root = k === 'top' ? document.getElementById('breaking') : document.querySelector('#bkEvent[data-evid="' + CSS.escape(k) + '"]') || document.querySelector('#autoBreaking [data-key="' + CSS.escape(k) + '"]');
+      if (!root || root.hidden) return;
+      const c = C[k], a = (u, t) => '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + t + '</a>';
+      const items = (c.official || []).map((x) => '<li><span class="rk">Official</span>' + a(x.url, esc(x.title)) + ' <span class="o">' + esc(x.outlet) + ' &#8599;</span></li>').join('')
+        + (c.stories || []).map((x) => '<li><time>' + esc(x.t) + '</time>' + a(x.url, esc(x.title)) + ' <span class="o">' + esc(x.outlet) + ' &#8599;</span></li>').join('')
+        + (c.views || []).map((x) => '<li><span class="rk">' + esc(x.kind) + '</span>' + a(x.url, esc(x.title)) + ' <span class="o">' + esc(x.outlet) + ' &#8599;</span></li>').join('');
+      if (!items) return;
+      const box = document.createElement('aside'); box.className = 'can-box'; box.setAttribute('aria-label', 'The Canadian angle');
+      box.innerHTML = '<h4>' + LEAF + 'The Canadian angle</h4><p class="can-sub">How this story reaches Canada</p><ol>' + items + '</ol>'
+        + '<p class="can-note">Found automatically at ' + esc(fmt(AUTO.d.checked)) + ' ET. Headlines are the outlets’ own.</p>';
+      if (root.classList.contains('ab-story')) {  // wide screens: floated beside the headline; phones: under the summary
+        const wide = window.matchMedia('(min-width: 960px)').matches && root.offsetWidth >= 800, tag = root.querySelector(':scope > .tag'), after = root.querySelector(':scope > .bk-dek') || root.querySelector(':scope > .first');
+        if (wide && tag) tag.before(box); else if (after) after.after(box); else root.appendChild(box);
+        return;
+      }
+      const bt = root.querySelector(':scope > .bk-text');
+      const twoCol = bt && getComputedStyle(bt).gridTemplateColumns.split(' ').length > 1;
+      const at = root.querySelector('.bk-sum') || root.querySelector('.bk-dek') || root.querySelector('h2');
+      if (twoCol) { const first = bt.querySelector(':scope > .auto-news, :scope > .rel-box'); if (first) first.before(box); else bt.appendChild(box); }
+      else if (at) at.after(box); else root.appendChild(box);
+    });
+  }
+
   // Most read across Canada, from the newsrooms' own most-read and trending lists (tools/autopilot.py most_read).
   function mostRead() {
     const M = window.PAL_mostRead, A = AUTO.d.mostread; if (!M || !A || !A.list || A.list.length < 5) return;
@@ -6245,7 +6294,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       ((auto && auto.reports) || []).forEach((r) => add(r.outlet, r.url, Date.parse(r.iso)));
       if (root.classList.contains('ab-story')) { const a = (AUTO.d.auto && AUTO.d.auto.stories || []).find((x) => x.key === root.dataset.key); ((a && a.reports) || []).forEach((r) => add(r.outlet, r.url, Date.parse(r.iso))); }
       // links on the page that carry their own time (timeline lines, credit lines)
-      root.querySelectorAll('a[href^="http"]').forEach((a) => { if (a.closest('.rel-box, .cov')) return; const holder = a.closest('li, p, div'); const tm = holder && holder.querySelector('time'); const t = tm ? (Date.parse(tm.getAttribute('datetime') || '') || labelMs(tm.textContent.trim())) : NaN; if (!isNaN(t)) add(outletOf(a.href), a.href, t); });
+      root.querySelectorAll('a[href^="http"]').forEach((a) => { if (a.closest('.rel-box, .can-box, .cov')) return; const holder = a.closest('li, p, div'); const tm = holder && holder.querySelector('time'); const t = tm ? (Date.parse(tm.getAttribute('datetime') || '') || labelMs(tm.textContent.trim())) : NaN; if (!isNaN(t)) add(outletOf(a.href), a.href, t); });
       let cov = root.querySelector('.cov');
       if (by.size < 2 && cov) { cov.remove(); cov = null; }
       if (by.size >= 2) {
@@ -6305,9 +6354,9 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     });
   }
   const ev = document.getElementById('bkEvent');
-  if (ev && window.MutationObserver) new MutationObserver((ms) => { if (ms.some((m) => [...m.addedNodes].some((n) => !(n.classList && (n.classList.contains('rel-box') || n.classList.contains('auto-news') || n.classList.contains('cov') || n.classList.contains('fresh')))))) { paint(); if (AUTO) { related(); dazzle(); } } }).observe(ev, { childList: true });
+  if (ev && window.MutationObserver) new MutationObserver((ms) => { if (ms.some((m) => [...m.addedNodes].some((n) => !(n.classList && (n.classList.contains('rel-box') || n.classList.contains('can-box') || n.classList.contains('auto-news') || n.classList.contains('cov') || n.classList.contains('fresh')))))) { paint(); if (AUTO) { related(); canAngle(); dazzle(); } } }).observe(ev, { childList: true });
   setTimeout(load, 1500); setInterval(load, 120000);
-  let rz; window.addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(() => { if (AUTO) { paint(); related(); dazzle(); } }, 400); });
+  let rz; window.addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(() => { if (AUTO) { paint(); related(); canAngle(); dazzle(); } }, 400); });
   setTimeout(() => { if (AUTO) dazzle(); }, 4000);
   window.PAL_autoupdate = { load, get data() { return AUTO && AUTO.d; } };
 })();

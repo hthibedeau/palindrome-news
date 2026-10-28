@@ -848,6 +848,76 @@ def related(items, stories, now, eds, papers, groups=()):
     return out
 
 
+# ===== The Canadian angle (Hannah, Wed Oct 28, 2026: "when there is a top headline from another country, if there is
+# canadian angle that can be tied to it somehow …add it into it by putting it in a sidebar ... make sure this is written
+# into the code"). For every top story that is about another country, the newest reports that tie it to Canada:
+# Canadians caught up in it, Ottawa's response, the Prime Minister and Global Affairs, the effect on Canadian trade,
+# travel or communities, and official Canadian statements. Each line is the outlet's own headline, credited and linked;
+# nothing is written or guessed. No Canadian angle in the news: no sidebar.
+CAN_TIE = re.compile(r"\b(Canad(?:a|ian|ians|a's|a’s)|Ottawa|Carney|Anand|Global Affairs|Poilievre|RCMP|CSIS|Canadian Armed Forces|"
+                     r"Ontario|Quebec|Québec|Alberta|British Columbia|B\.C\.|Manitoba|Saskatchewan|Nova Scotia|New Brunswick|"
+                     r"P\.E\.I\.|Newfoundland|Yukon|Nunavut|N\.W\.T\.|Toronto|Montreal|Vancouver|Calgary|Edmonton|Winnipeg|Halifax|"
+                     r"Doug Ford|Legault|David Eby|Danielle Smith|Olivia Chow|Hoekstra)(?!\w)")
+CAN_OUTLET = re.compile(r"^(CBC|CTV|Global News|The Canadian Press|Toronto Star|National Post|CityNews|CP24|APTN|CPAC|"
+                        r"Ottawa Citizen|Calgary Herald|Edmonton Journal|Vancouver Sun|Winnipeg Free Press|Times Colonist|"
+                        r"The Tyee|Hill Times|iPolitics|BNN|Financial Post|Prime Minister|Government of Canada)", re.I)
+FOREIGN_SRC = re.compile(r"/(world|international|us-news|us|europe|asia|africa|middle-east|americas|global-news-world)/|bbc\.|aljazeera|euronews|apnews\.com/article|reuters\.com/world", re.I)
+FOREIGN_SHARE = 0.4  # a story is "from another country" when at least this share of its reports run on world desks or foreign newsrooms
+ANGLE_MAX = 5
+
+
+def canadian_angle(items, stories, now, eds, papers, otr):
+    """{story key: {"place": …, "stories": [...], "views": [...], "official": [...]}} for top stories from abroad."""
+    import autoupdate as au
+    import gap_check as gc
+    from collections import Counter
+    out = {}
+    recent = [x for x in items if (now - x[0]).total_seconds() < 72 * 3600 and au.ok_item(x[1], x[3]) and not au.FRENCH.search(x[1])]
+    for st_ in stories:
+        key, words, own = st_[:3]
+        name = st_[3] if len(st_) > 3 else ""
+        if not words or CAN_TIE.search(name + " " + " ".join(words)):
+            continue  # a Canadian story already
+        rx = re.compile(r"\b(" + "|".join(re.escape(x) for x in words) + r")\b", re.I)
+        mine = [x for x in recent if x[3] in own] if own else [x for x in recent if rx.search(x[2]) and (now - x[0]).total_seconds() < 24 * 3600]
+        if len(mine) < 2:
+            continue
+        if sum(1 for x in mine if FOREIGN_SRC.search(x[3]) or au.US.search(x[1]) or au.WORLDO.search(x[1])) / len(mine) < FOREIGN_SHARE:
+            continue  # a story from another country runs on world desks and foreign newsrooms; this one doesn't
+        # the story's own names (people, places), so a Canadian-angle report has to be about this story, not just the region
+        co = Counter(n.replace("’s", "").replace("'s", "") for x in mine for n in gc.names(x[2]))
+        top = {n for n, c in co.most_common(6) if c >= 2 and n not in WEAK and not CAN_TIE.search(n[:1].upper() + n[1:])}
+        anchor = re.compile(r"\b(" + "|".join(re.escape(x) for x in words[:4]) + r")\b", re.I) if own else rx
+
+        def about(title):
+            nm = {n.replace("’s", "").replace("'s", "") for n in gc.names(title)}
+            return bool(anchor.search(title)) or len(nm & top) >= 2
+
+        picked, seen, used = [], [], set()
+        for dt, outlet, title, link, k in recent:
+            if not CAN_TIE.search(title) or not about(title):
+                continue
+            if au.OPINION.search(title + " " + link) or SPORT.search(title + " " + link) or VIDEO.search(link + " " + title):
+                continue
+            n = gc.names(title) | gc.keys(title)
+            base = re.sub(r"^(CityNews|CTV News|Global News|CBC News)\b.*", r"\1", au.clean_outlet(outlet))  # one per network
+            if base in used or any(len(n & s_) >= 4 for s_ in seen) or any(re.sub(r"\W", "", p_["title"].lower()) == re.sub(r"\W", "", title.lower()) for p_ in picked):
+                continue
+            seen.append(n)
+            used.add(base)
+            picked.append({"t": w.eastern(dt), "iso": dt.isoformat(), "outlet": au.clean_outlet(outlet), "title": clean(title), "url": link,
+                           "ca": bool(CAN_OUTLET.search(au.clean_outlet(outlet)))})
+            if len(picked) >= ANGLE_MAX:
+                break
+        official = [{"outlet": p_["name"], "title": p_["hed"], "url": p_["href"], "t": p_["date"]} for p_ in (otr or [])
+                    if p_.get("cat") in ("pm", "mp") and about(p_["hed"] + " " + p_.get("summary", ""))][:2]
+        views = [{"outlet": e[0], "kind": e[1], "title": e[2], "url": e[3]} for e in (eds or []) if about(e[2]) and CAN_TIE.search(e[2])][:2]
+        views += [{"outlet": p_["inst"], "kind": "Think tank", "title": p_["t"], "url": p_["u"]} for p_ in (papers or []) if about(p_["t"]) and CAN_TIE.search(p_["t"])][:2]
+        if picked or official or views:
+            out[key] = {"story": name or words[0], "stories": picked, "official": official, "views": views}
+    return out
+
+
 # ===== Most read across Canada: built from the newsrooms' own most-read / trending lists (whichever publish one on
 # their front page), ranked by how high and how widely each story sits on them.
 MOST_READ_SITES = [
@@ -1150,6 +1220,12 @@ def run(page, items, groups, breaking, now, imgdir, prev):
     except Exception as e:
         print("autopilot related failed:", e)
         res["related"] = prev.get("related") or {}
+    try:  # the Canadian angle on top stories from another country (sidebar on the page)
+        res["canangle"] = canadian_angle(items, keyed, now, res.get("eds"), res.get("papers"), res.get("otr"))
+    except Exception as e:
+        print("autopilot canangle failed:", e)
+        res["canangle"] = prev.get("canangle") or {}
+    print(f"autopilot Canadian angle: {len(res['canangle'])} stories ({', '.join(res['canangle'])})")
     try:
         skip = {r["url"] for st in a.get("stories", []) for r in st.get("reports", [])}
         res["bds"] = auto_breakdowns(groups, page, now, imgdir, skip, (prev.get("auto") or {}).get("stories", []))
