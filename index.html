@@ -47,6 +47,17 @@ a.snimg { display: block; }
   #autoBreaking .ab-story > .can-box:has(+ .tag) { float: right; width: 320px; margin: 0 0 14px 22px; }
   #autoBreaking .ab-story::after { content: ""; display: block; clear: both; }
 }
+.can-mini { margin: 6px 8px 8px; padding: 0 10px; border-left: 3px solid #E0242F; background: rgba(255,255,255,.95); color: #1A1A1A; border-radius: 6px; }
+.can-mini summary { cursor: pointer; min-height: 36px; display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #B0141E; }
+.can-mini summary svg { width: 14px; height: 14px; flex: none; }
+.can-mini summary span { text-transform: none; letter-spacing: 0; font-weight: 400; color: #666; }
+.can-mini ol { list-style: none; margin: 0; padding: 0 0 6px; }
+.can-mini li { padding: 6px 0; border-top: 1px solid #E6E1E1; font-size: 13px; line-height: 1.35; }
+.can-mini li a { color: #1A1A1A; text-decoration: underline; text-underline-offset: 2px; }
+.can-mini li .o { color: #666; font-size: 12px; }
+.can-mini li .rk { display: inline-block; margin-right: 6px; font-size: 11px; font-weight: 700; color: #B0141E; }
+.can-box .rk.us { color: #B0141E; font-weight: 700; }
+@media (prefers-color-scheme: dark) { .can-mini { background: #1E1A1C; color: #F3EDEE; } .can-mini li a { color: #F3EDEE; } .can-mini li { border-top-color: #3A3335; } .can-mini summary { color: #FF7A82; } .can-mini summary span, .can-mini li .o { color: #B9AFB2; } }
 @media (prefers-color-scheme: dark) { .can-box { background: #1E1A1C; color: #F3EDEE; } .can-box a { color: #F3EDEE; } .can-box li { border-top-color: #3A3335; } .can-box h4 { color: #FF7A82; } .can-box .can-sub, .can-box time, .can-box .rk, .can-box .o, .can-box .can-note { color: #B9AFB2; } }
 </style></head><body>
 <title>Palindrome News</title>
@@ -6026,7 +6037,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     const fresh = !AUTO || AUTO.d.checked !== got[0].d.checked;
     AUTO = got[0];
     deadLinks();
-    if (fresh) { blogs(); wire(); try { autoTop(); } catch (e) { console.warn('autoTop', e); } try { clips(); ledes(); stamp(); papers(); eds(); canus(); brief(); bds(); otr(); live(); related(); try { canAngle(); } catch (e) { console.warn('canAngle', e); } mostRead(); smaller(); dazzle(); } catch (e) { console.warn('autopilot', e); } if (window.PAL_eventRender) try { window.PAL_eventRender(); } catch (e) {} if (window.PAL_renderFronts) try { window.PAL_renderFronts(); if (window.PAL_oneStoryOnePlace) window.PAL_oneStoryOnePlace(); } catch (e) { console.warn(e); } }
+    if (fresh) { blogs(); wire(); try { autoTop(); } catch (e) { console.warn('autoTop', e); } try { clips(); ledes(); stamp(); papers(); eds(); canus(); brief(); bds(); otr(); live(); related(); try { canAngle(); canAngleLive(); } catch (e) { console.warn('canAngle', e); } mostRead(); smaller(); dazzle(); } catch (e) { console.warn('autopilot', e); } if (window.PAL_eventRender) try { window.PAL_eventRender(); } catch (e) {} if (window.PAL_renderFronts) try { window.PAL_renderFronts(); if (window.PAL_oneStoryOnePlace) window.PAL_oneStoryOnePlace(); } catch (e) { console.warn(e); } }
     paint();
   }
   function blogs() {
@@ -6232,11 +6243,11 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       if (!root || root.hidden) return;
       const c = C[k], a = (u, t) => '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + t + '</a>';
       const items = (c.official || []).map((x) => '<li><span class="rk">Official</span>' + a(x.url, esc(x.title)) + ' <span class="o">' + esc(x.outlet) + ' &#8599;</span></li>').join('')
-        + (c.stories || []).map((x) => '<li><time>' + esc(x.t) + '</time>' + a(x.url, esc(x.title)) + ' <span class="o">' + esc(x.outlet) + ' &#8599;</span></li>').join('')
+        + (c.stories || []).map((x) => '<li><time>' + esc(x.t) + '</time>' + (x.tie ? '<span class="rk us">' + esc(x.tie) + ' · </span>' : '') + a(x.url, esc(x.title)) + ' <span class="o">' + esc(x.outlet) + ' &#8599;</span></li>').join('')
         + (c.views || []).map((x) => '<li><span class="rk">' + esc(x.kind) + '</span>' + a(x.url, esc(x.title)) + ' <span class="o">' + esc(x.outlet) + ' &#8599;</span></li>').join('');
       if (!items) return;
       const box = document.createElement('aside'); box.className = 'can-box'; box.setAttribute('aria-label', 'The Canadian angle');
-      box.innerHTML = '<h4>' + LEAF + 'The Canadian angle</h4><p class="can-sub">How this story reaches Canada</p><ol>' + items + '</ol>'
+      box.innerHTML = '<h4>' + LEAF + 'The Canadian angle</h4><p class="can-sub">' + (c.us ? 'How this story, and the Canada–U.S. relationship today, reach Canada' : 'How this story reaches Canada') + '</p><ol>' + items + '</ol>'
         + '<p class="can-note">Found automatically at ' + esc(fmt(AUTO.d.checked)) + ' ET. Headlines are the outlets’ own.</p>';
       if (root.classList.contains('ab-story')) {  // wide screens: floated beside the headline; phones: under the summary
         const wide = window.matchMedia('(min-width: 960px)').matches && root.offsetWidth >= 800, tag = root.querySelector(':scope > .tag'), after = root.querySelector(':scope > .bk-dek') || root.querySelector(':scope > .first');
@@ -6250,6 +6261,35 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       else if (at) at.after(box); else root.appendChild(box);
     });
   }
+
+  // The same Canadian angle on the other headline spots (tools/autopilot.py canadian_angle_live): live coverage tiles
+  // (live blogs, live video now and coming up) and What America's newsrooms are leading with. U.S. political stories also
+  // carry the newest Canada–U.S. relationship reports. Re-attached whenever those spots redraw.
+  let canBusy = false;
+  function canAngleLive() {
+    if (!AUTO || canBusy) return;
+    const C = AUTO.d.canangle_live || {}; canBusy = true;
+    try {
+      document.querySelectorAll('.can-mini').forEach((b) => b.remove());
+      // match on the tile's or card's own main link; YouTube links keep their ?v= (key() drops query strings)
+      const k2 = (u) => /youtube\.com\/watch/.test(u) ? u.replace(/^https?:\/\/(www\.|m\.)?/, '').replace(/&.*$/, '') : key(u);
+      const byKey = {}; Object.keys(C).forEach((u) => { byKey[k2(u)] = C[u]; });
+      const a = (u, t) => '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + t + '</a>';
+      document.querySelectorAll('#bkChannels .chan-cell, #ledes article.lede').forEach((cell) => {
+        const main = cell.querySelector(':scope > a.chan') || cell.querySelector('h3 a[href], h4 a[href], a[href]'); if (!main) return;
+        const c = byKey[k2(main.href)]; if (!c) return;
+        const items = (c.official || []).map((x) => '<li><span class="rk">Official</span>' + a(x.url, esc(x.title)) + ' <span class="o">' + esc(x.outlet) + '</span></li>').join('')
+          + (c.stories || []).map((x) => '<li>' + (x.tie ? '<span class="rk">' + esc(x.tie) + '</span>' : '') + a(x.url, esc(x.title)) + ' <span class="o">' + esc(x.outlet) + ' · ' + esc(x.t) + '</span></li>').join('')
+          + (c.views || []).map((x) => '<li><span class="rk">' + esc(x.kind) + '</span>' + a(x.url, esc(x.title)) + ' <span class="o">' + esc(x.outlet) + '</span></li>').join('');
+        if (!items) return;
+        const n = (c.official || []).length + (c.stories || []).length + (c.views || []).length;
+        const box = document.createElement('details'); box.className = 'can-mini';
+        box.innerHTML = '<summary>' + LEAF + 'The Canadian angle <span>· ' + n + (c.us ? ' on Canada and the U.S.' : ' tying it to Canada') + '</span></summary><ol>' + items + '</ol>';
+        cell.appendChild(box);
+      });
+    } finally { canBusy = false; }
+  }
+  if (window.MutationObserver) ['bkChannels', 'ledes'].forEach((id) => { const el = document.getElementById(id); if (el) new MutationObserver((ms) => { if (!canBusy && ms.some((m) => [...m.addedNodes].some((n) => !(n.classList && n.classList.contains('can-mini'))))) canAngleLive(); }).observe(el, { childList: true }); });
 
   // Most read across Canada, from the newsrooms' own most-read and trending lists (tools/autopilot.py most_read).
   function mostRead() {
