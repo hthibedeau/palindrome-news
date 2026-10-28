@@ -20,7 +20,7 @@
 .cu-auto-note { grid-column: 1 / -1; margin: 4px 0 0; font-size: 12px; opacity: .75; }
 #autoBreaking .ab-d { margin: 4px 0 0; font-size: 14px; line-height: 1.45; color: #F6E1E8; }
 .rel-box { margin: 10px 0 16px; border-top: 1px solid rgba(255,255,255,.25); padding-top: 6px; }
-.rel-box summary { cursor: pointer; font-weight: 600; font-size: 15px; min-height: 44px; display: flex; align-items: center; gap: 6px; }
+.rel-box summary { cursor: pointer; font-weight: 700; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; min-height: 44px; display: flex; align-items: center; gap: 6px; }
 .rel-box summary span { font-weight: 400; opacity: .8; font-size: 13px; }
 .rel-box ol { list-style: none; margin: 0; padding: 0; }
 .rel-box li { padding: 7px 0; border-top: 1px solid rgba(255,255,255,.15); font-size: 15px; line-height: 1.4; }
@@ -6154,8 +6154,8 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       const items = (r.stories || []).map((x) => '<li><time>' + esc(x.t) + '</time>' + a(x.url, esc(x.title)) + ' <span class="o">' + esc(x.outlet) + ' &#8599;</span></li>').join('')
         + (r.views || []).map((x) => '<li><span class="rk">' + esc(x.kind) + '</span>' + a(x.url, esc(x.title)) + ' <span class="o">' + esc(x.outlet) + ' &#8599;</span></li>').join('');
       if (!items) return;
-      const box = document.createElement('details'); box.className = 'rel-box';
-      box.innerHTML = '<summary>Related stories <span>· ' + esc((r.ties || []).slice(0, 3).map((t) => t.charAt(0).toUpperCase() + t.slice(1)).join(', ')) + '</span></summary><ol>' + items + '</ol>';
+      const box = document.createElement('details'); box.className = 'rel-box'; box.open = true;
+      box.innerHTML = '<summary>Connected to this story <span>· ' + esc((r.ties || []).slice(0, 3).map((t) => t.charAt(0).toUpperCase() + t.slice(1)).join(', ')) + '</span></summary><ol>' + items + '</ol>';
       const at = root.querySelector('.auto-news') || root.querySelector('.bk-sum') || root.querySelector('.bk-dek') || root.querySelector('h2');
       if (at) at.after(box); else root.appendChild(box);
     });

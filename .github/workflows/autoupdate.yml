@@ -10,6 +10,7 @@ on:
 permissions:
   contents: write
   pages: write
+  actions: write
 concurrency:
   group: autoupdate
   cancel-in-progress: false
@@ -45,3 +46,9 @@ jobs:
             [ $next -ge $end ] && break
             now=$(date +%s); [ $next -gt $now ] && sleep $(( next - now ))
           done
+      - name: Start the next run (GitHub's own schedule often runs late or skips)
+        if: always()
+        run: |
+          curl -s -o /dev/null -w "next run requested: %{http_code}\n" -X POST \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${{ github.repository }}/actions/workflows/autoupdate.yml/dispatches -d '{"ref":"main"}'
