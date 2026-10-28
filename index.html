@@ -4797,7 +4797,7 @@ header.site { border-bottom: 0; }
   }
   let rec = null;
   function playRecording() {
-    const r = rec = new Audio(BRIEF_AUDIO);
+    const r = rec = new Audio(window.PAL_brief.audio || BRIEF_AUDIO);
     const total = brief.join(' ').length;
     r.addEventListener('timeupdate', () => {
       if (rec !== r || !r.duration) return;
@@ -4810,7 +4810,7 @@ header.site { border-bottom: 0; }
   }
   function playBrief() {
     playing = true; audio.classList.add('playing'); aBtn.innerHTML = stopIco; aBtn.setAttribute('aria-label', 'Stop the 60-second brief');
-    if (BRIEF_AUDIO && !window.PAL_brief.auto) return playRecording();
+    if (window.PAL_brief.audio || (BRIEF_AUDIO && !window.PAL_brief.auto)) return playRecording();
     playSpeech();
   }
   function playSpeech() {
@@ -6070,9 +6070,24 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
   }
   // The 60-second brief: when the written brief is from an earlier edition, the code's brief takes over, each story
   // attributed to the newsroom whose headline it reads, read aloud by the device.
-  function brief() {
-    const B = window.PAL_brief, A = AUTO.d.brief; if (!B || !A || !A.lines || A.edition === B.edition) return;
-    B.lines.length = 0; A.lines.forEach((l) => B.lines.push(l)); B.auto = true; B.edition = A.edition;
+  let VOICE = null, voiceAt = 0;
+  async function brief() {
+    const B = window.PAL_brief; if (!B) return;
+    if (Date.now() - voiceAt > 600000) {
+      voiceAt = Date.now();
+      for (const u of ['live/brief.json', 'https://raw.githubusercontent.com/hthibedeau/palindrome-news/main/live/brief.json']) {
+        try { const r = await fetch(u + '?t=' + Date.now(), { cache: 'no-store' }); if (r.ok) { VOICE = await r.json(); VOICE.base = u.replace(/live\/brief\.json$/, ''); break; } } catch (e) {}
+      }
+    }
+    // Hannah's voice (tools/brief_voice.py): the recording and its script, when it is for the newest edition
+    const A = AUTO.d.brief;
+    if (VOICE && VOICE.audio && A && VOICE.edition === A.edition && B.audio !== VOICE.base + VOICE.audio) {
+      B.lines.length = 0; VOICE.lines.forEach((l) => B.lines.push(l)); B.auto = true; B.edition = VOICE.edition; B.audio = VOICE.base + VOICE.audio;
+      const n = document.getElementById('audioNote'); if (n) n.textContent = 'Hannah Thibedeau on the top stories · ' + VOICE.edition + ', each credited to the newsroom that reported it. About a minute.';
+      return;
+    }
+    if (!A || !A.lines || A.edition === B.edition) return;
+    B.lines.length = 0; A.lines.forEach((l) => B.lines.push(l)); B.auto = true; B.edition = A.edition; B.audio = '';
     const n = document.getElementById('audioNote'); if (n) n.textContent = 'The top stories for ' + A.edition + ', each credited to the newsroom that reported it, read aloud by your device. About a minute.';
   }
 
