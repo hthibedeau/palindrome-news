@@ -19,6 +19,14 @@
 .cu-auto .o { font-size: 13px; opacity: .75; }
 .cu-auto-note { grid-column: 1 / -1; margin: 4px 0 0; font-size: 12px; opacity: .75; }
 #autoBreaking .ab-d { margin: 4px 0 0; font-size: 14px; line-height: 1.45; color: #F6E1E8; }
+.rel-box { margin: 10px 0 16px; border-top: 1px solid rgba(255,255,255,.25); padding-top: 6px; }
+.rel-box summary { cursor: pointer; font-weight: 600; font-size: 15px; min-height: 44px; display: flex; align-items: center; gap: 6px; }
+.rel-box summary span { font-weight: 400; opacity: .8; font-size: 13px; }
+.rel-box ol { list-style: none; margin: 0; padding: 0; }
+.rel-box li { padding: 7px 0; border-top: 1px solid rgba(255,255,255,.15); font-size: 15px; line-height: 1.4; }
+.rel-box time, .rel-box .rk { display: inline-block; min-width: 100px; font-size: 12px; opacity: .8; }
+.rel-box a { color: inherit; }
+.rel-box .o { font-size: 13px; opacity: .8; }
 </style></head><body>
 <title>Palindrome News</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -2516,6 +2524,7 @@ header.site { border-bottom: 0; }
     { story: 'Alberta referendum results', net: 'CTV News', what: 'Alberta referendum special: Tara Nelson anchors, Omar Sachedina in Calgary, and a panel with former premiers Jason Kenney and Rachel Notley', where: 'CTVNews.ca, YouTube, Crave and CTV News Channel', when: '2026-10-20T00:00:00-04:00', local: '10 p.m. MT Monday', until: '2026-10-20T03:00:00-04:00', url: 'https://www.youtube.com/watch?v=YxutBtdTNQU', file: 'img/live/ctv-referendum-special.jpg', blob: '/_blob/003cb238cc6947110991ee98c142db71', img: 'https://www.ctvnews.ca/resizer/v2/PMCUYVO2BRCIFMXYJWNIHH3YNI.png?smart=true&auth=2df7524be330372ee65f172773f99f3df44fc02888d476bc634ea5102bae49e9&width=1200&height=630', info: 'https://www.ctvnews.ca/calgary/article/where-to-watch-ctv-news-alberta-referendum-special-coverage/' }
   ];
   const ALWAYS = [['CTV News Channel', 'https://www.ctvnews.ca/video/live/2026/09/11/ctv-news-channel-live/'], ['Global News', 'https://globalnews.ca/live/national/']];
+  window.PAL_COMING = COMING; window.PAL_ALWAYS = ALWAYS;
   // The top story's scheduled live event (COMING items with top: true) shows at the top of the Breaking slot (Hannah's rule):
   // "Coming up live" with its time before it starts, "Live now" with watch buttons between when and until, then it hides.
   // The top story's scheduled live event (COMING items with top: true) shows at the top of the Breaking slot (Hannah's rule):
@@ -5955,7 +5964,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     const fresh = !AUTO || AUTO.d.checked !== got[0].d.checked;
     AUTO = got[0];
     deadLinks();
-    if (fresh) { blogs(); wire(); try { autoTop(); } catch (e) { console.warn('autoTop', e); } try { clips(); ledes(); stamp(); papers(); eds(); canus(); brief(); bds(); otr(); } catch (e) { console.warn('autopilot', e); } if (window.PAL_eventRender) try { window.PAL_eventRender(); } catch (e) {} if (window.PAL_renderFronts) try { window.PAL_renderFronts(); if (window.PAL_oneStoryOnePlace) window.PAL_oneStoryOnePlace(); } catch (e) { console.warn(e); } }
+    if (fresh) { blogs(); wire(); try { autoTop(); } catch (e) { console.warn('autoTop', e); } try { clips(); ledes(); stamp(); papers(); eds(); canus(); brief(); bds(); otr(); live(); related(); } catch (e) { console.warn('autopilot', e); } if (window.PAL_eventRender) try { window.PAL_eventRender(); } catch (e) {} if (window.PAL_renderFronts) try { window.PAL_renderFronts(); if (window.PAL_oneStoryOnePlace) window.PAL_oneStoryOnePlace(); } catch (e) { console.warn(e); } }
     paint();
   }
   function blogs() {
@@ -5993,7 +6002,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       const recent = Date.now() - Date.parse(s.newest) < 3600000;
       const firstLine = s.first && s.first.url !== s.url ? '<br>First reported by ' + a(s.first.url, esc(s.first.outlet)) + ' · ' + esc(s.first.t) : '';
       const reps = (s.reports || []).map((r) => '<li><time>' + esc(r.t) + '</time>' + a(r.url, esc(r.title)) + ' <span class="o">' + esc(r.outlet) + ' &#8599;</span>' + (r.desc && r.url !== s.url ? '<p class="ab-d">' + esc(r.desc) + '</p>' : '') + '</li>').join('');
-      return '<article class="ab-story' + (i ? ' ab-second' : '') + '">' + ph + '<span class="tag">' + (recent ? 'Breaking' : 'Developing') + '</span>'
+      return '<article class="ab-story' + (i ? ' ab-second' : '') + '" data-key="' + esc(s.key) + '">' + ph + '<span class="tag">' + (recent ? 'Breaking' : 'Developing') + '</span>'
         + '<h2>' + a(s.url, esc(s.title)) + '</h2>'
         + '<p class="first">LATEST ' + a(s.url, esc(s.outlet)) + ' · ' + esc(s.t) + firstLine + '</p>'
         + (s.summary ? '<p class="bk-dek">' + esc(s.summary) + ' <span class="ab-cr">— ' + esc(s.outlet) + '</span></p>' : '')
@@ -6110,6 +6119,38 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     for (let i = P.list.length - 1; i >= 0; i--) { const t = Date.parse(P.list[i].iso || (P.list[i].date + ' ' + yr)); if (!isNaN(t) && t < cut && P.list.length > 3) P.list.splice(i, 1); }
     P.render();
   }
+
+  // Live video, by itself: streams live now on the networks' official YouTube channels, named by story; scheduled ones
+  // under Coming up live; the Prime Minister's media events from his itinerary; 24-hour channels in one line.
+  function live() {
+    const L = window.PAL_LIVENOW, C = window.PAL_COMING, AL = window.PAL_ALWAYS, V = AUTO.d.live || {}; if (!L || !C) return;
+    [L, C].forEach((arr) => { for (let i = arr.length - 1; i >= 0; i--) if (arr[i].auto) arr.splice(i, 1); });
+    const until = new Date(Date.parse(AUTO.d.checked) + 25 * 60000).toISOString();
+    const have = new Set(L.concat(C).map((x) => x.url));
+    (V.now || []).forEach((x) => { if (!have.has(x.url)) L.push({ kind: 'video', story: x.story, net: x.net, what: 'Live on YouTube: ' + x.title + (x.watching ? ' · ' + x.watching + ' watching' : ''), url: x.url, updated: AUTO.d.checked, until, img: x.img, auto: true }); });
+    (V.upcoming || []).forEach((x) => { if (!have.has(x.url)) C.push({ story: x.story, net: x.net, what: x.title, where: 'YouTube', when: x.when, until: new Date(Date.parse(x.when) + 90 * 60000).toISOString(), url: x.url, img: x.img, auto: true }); });
+    (AUTO.d.pm || []).forEach((x) => C.push(Object.assign({ until: new Date(Date.parse(x.when) + 45 * 60000).toISOString(), auto: true }, x)));
+    if (AL) { const nets = new Set(AL.map((a) => a[0])); (V.always || []).forEach((x) => { const n = x.net + ' (live on YouTube)'; if (!nets.has(x.net) && !nets.has(n)) { nets.add(n); AL.push([n, x.url]); } }); }
+    if (window.PAL_liveCoverageRender) try { window.PAL_liveCoverageRender(); } catch (e) { console.warn('live', e); }
+  }
+  // Related stories (Hannah: "for the top stories, find other stories that would tie to that one and add it in"):
+  // under each top story, the newest reports on the people, places and issues running through it, and analysis that names it.
+  function related() {
+    const R = AUTO.d.related || {};
+    document.querySelectorAll('.rel-box').forEach((b) => b.remove());
+    Object.keys(R).forEach((k) => {
+      const root = k === 'top' ? document.getElementById('breaking') : document.querySelector('#bkEvent[data-evid="' + CSS.escape(k) + '"]') || document.querySelector('#autoBreaking [data-key="' + CSS.escape(k) + '"]');
+      if (!root || root.hidden) return;
+      const r = R[k], a = (u, t) => '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + t + '</a>';
+      const items = (r.stories || []).map((x) => '<li><time>' + esc(x.t) + '</time>' + a(x.url, esc(x.title)) + ' <span class="o">' + esc(x.outlet) + ' &#8599;</span></li>').join('')
+        + (r.views || []).map((x) => '<li><span class="rk">' + esc(x.kind) + '</span>' + a(x.url, esc(x.title)) + ' <span class="o">' + esc(x.outlet) + ' &#8599;</span></li>').join('');
+      if (!items) return;
+      const box = document.createElement('details'); box.className = 'rel-box';
+      box.innerHTML = '<summary>Related stories <span>· ' + esc((r.ties || []).slice(0, 3).map((t) => t.charAt(0).toUpperCase() + t.slice(1)).join(', ')) + '</span></summary><ol>' + items + '</ol>';
+      const at = root.querySelector('.auto-news') || root.querySelector('.bk-sum') || root.querySelector('.bk-dek') || root.querySelector('h2');
+      if (at) at.after(box); else root.appendChild(box);
+    });
+  }
   function photo(root, p) {
     const el = root.querySelector('.bart'); if (!el || !p || el.dataset.auto === p.src) return;
     // a photo the editors set later than the auto photo was posted stays (data-photo-set)
@@ -6146,7 +6187,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     });
   }
   const ev = document.getElementById('bkEvent');
-  if (ev && window.MutationObserver) new MutationObserver(() => paint()).observe(ev, { childList: true });
+  if (ev && window.MutationObserver) new MutationObserver((ms) => { if (ms.some((m) => [...m.addedNodes].some((n) => !(n.classList && (n.classList.contains('rel-box') || n.classList.contains('auto-news')))))) { paint(); if (AUTO) related(); } }).observe(ev, { childList: true });
   setTimeout(load, 1500); setInterval(load, 120000);
   window.PAL_autoupdate = { load, get data() { return AUTO && AUTO.d; } };
 })();

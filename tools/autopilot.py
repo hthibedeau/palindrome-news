@@ -41,6 +41,7 @@ canada canadian canadians ottawa u.s us america american trump carney the a this
 president minister government police city court federal provincial premier mayor report reports""".split())
 SPORT = re.compile(r"football|basketball|baseball|\bNHL\b|\bNFL\b|\bNBA\b|\bMLB\b|World Series|Stanley Cup|Blue Jays|Maple Leafs|Raptors|quarterback|/sports?/", re.I)
 FRENCH_TEXT = re.compile(r"\b(les|des|une|pour|avec|dans|sur|qui|est|au|aux|du)\b.*\b(les|des|une|pour|avec|dans|sur|qui|est|au|aux|du)\b", re.I)
+PARTY = set("liberal liberals conservative conservatives ndp bloc green greens party parties caucus".split())
 VIDEO = re.compile(r"/videos?/|/player/|/watch|^Watch:|^WATCH:|^Video:", re.I)
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"
 
@@ -598,6 +599,191 @@ def on_the_record(page, now):
     return out[:8]
 
 
+# ===== Live video, by itself (Hannah: "the new television of this century"): streams that are live NOW on the networks'
+# official YouTube channels, and the ones they have scheduled, named by story. 24-hour channel streams go in one line.
+ALWAYS_ON = re.compile(r"24/7|🔴|English \| Live|News Live\b|LIVE:? Latest|live stream of|livestream|Live News|Breaking News Live|news channel", re.I)
+
+
+def yt_streams(addr):
+    x = curl("https://www.youtube.com/" + addr + "/streams")
+    m = re.search(r'var ytInitialData = (\{.*?\});</script>', x)
+    if not m:
+        return []
+    out = []
+
+    def walk(o):
+        if isinstance(o, dict):
+            if "lockupViewModel" in o:
+                v = o["lockupViewModel"]
+                j = json.dumps(v)
+                md = v.get("metadata", {}).get("lockupMetadataViewModel", {})
+                title = clean(md.get("title", {}).get("content", ""))
+                state = "live" if "BADGE_STYLE_LIVE" in j else ("upcoming" if "Scheduled for" in j or '"Upcoming"' in j else "")
+                watching = (re.search(r'"content": ?"([\d.,K]+) watching"', j) or [None, ""])[1]
+                sched = (re.search(r'Scheduled for ([0-9/]+, [0-9:]+(?:\\u202f|\s)?[AP]M)', j) or [None, ""])[1].replace("\\u202f", " ")
+                if state:
+                    out.append({"id": v.get("contentId"), "title": title, "state": state, "watching": watching, "sched": sched})
+            for y in o.values():
+                walk(y)
+        elif isinstance(o, list):
+            for y in o:
+                walk(y)
+    walk(json.loads(m.group(1)))
+    return out
+
+
+def start_time(vid):
+    x = curl(f"https://www.youtube.com/watch?v={vid}")
+    m = re.search(r'"startTimestamp":"([^"]+)"', x) or re.search(r'"scheduledStartTime":"(\d+)"', x)
+    if not m:
+        return None
+    v = m.group(1)
+    return datetime.fromtimestamp(int(v), timezone.utc) if v.isdigit() else w.to_utc(v)
+
+
+def sched_time(txt):
+    """YouTube shows an anonymous visitor scheduled times in U.S. Pacific time ("Scheduled for 10/28/26, 11:15 AM" for
+    CBC's 2:15 p.m. ET Question Period). Returns UTC, or None."""
+    from zoneinfo import ZoneInfo
+    m = re.match(r"(\d{1,2})/(\d{1,2})/(\d{2}), (\d{1,2}):(\d{2}) ?([AP])M", (txt or "").strip())
+    if not m:
+        return None
+    mo, d, y, h, mi, ap_ = m.groups()
+    h = int(h) % 12 + (12 if ap_ == "P" else 0)
+    return datetime(2000 + int(y), int(mo), int(d), h, int(mi), tzinfo=ZoneInfo("America/Los_Angeles")).astimezone(timezone.utc)
+
+
+def name_story(title, named):
+    for name, rx in named:
+        if rx.search(title):
+            return name
+    t = re.sub(r"^(LIVE|WATCH LIVE|LIVE NOW)\s*[:|-]\s*", "", title, flags=re.I)
+    t = re.split(r"\s+[|–—]\s+", t)[0]
+    return t[:70]
+
+
+def live_video(page, named, now):
+    import network_youtube as ny
+    res = {"now": [], "upcoming": [], "always": []}
+
+    def one(ch):
+        net, addr, region = ch
+        try:
+            return net, region, yt_streams(addr)
+        except Exception:
+            return net, region, []
+    with ThreadPoolExecutor(8) as ex:
+        got = list(ex.map(one, CHANNELS))
+    for net, region, streams in got:
+        for st in streams[:12]:
+            if re.search(r"#shorts|\bNFL\b|\bNBA\b|\bNHL\b|\bMLB\b|highlights", st["title"], re.I):
+                continue
+            item = {"net": net, "r": region, "title": st["title"], "url": f"https://www.youtube.com/watch?v={st['id']}",
+                    "img": f"https://i.ytimg.com/vi/{st['id']}/hqdefault.jpg", "story": name_story(st["title"], named)}
+            if st["state"] == "live":
+                item["watching"] = st["watching"]
+                (res["always"] if ALWAYS_ON.search(st["title"]) else res["now"]).append(item)
+            elif st["state"] == "upcoming" and len(res["upcoming"]) < 24:
+                t = sched_time(st.get("sched", ""))
+                if t and 0 < (t - now).total_seconds() < 36 * 3600:
+                    item["when"] = t.isoformat()
+                    res["upcoming"].append(item)
+    order = {"ca": 0, "us": 1, "world": 2}
+    res["now"].sort(key=lambda i: order[i["r"]])
+    res["upcoming"].sort(key=lambda i: i["when"])
+    res["always"] = [{"net": i["net"], "url": i["url"]} for i in res["always"]][:8]
+    return res
+
+
+# ===== Coming up: the Prime Minister's public events with media from his own itinerary (pm.gc.ca), times as announced.
+PM_MEDIA = re.compile(r"media availability|news conference|press conference|statement|address|remarks|announcement|"
+                      r"will speak|will deliver|will make", re.I)
+
+
+def pm_itinerary(now):
+    out = []
+    for dt, title, link, desc in rss_desc("https://www.pm.gc.ca/en/news.rss")[:6]:
+        m = re.match(r"(?:UPDATE\s*[–-]\s*)?(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday), (\w+ \d{1,2}, \d{4})", title)
+        if not m:
+            continue
+        try:
+            day = datetime.strptime(m.group(1), "%B %d, %Y")
+        except ValueError:
+            continue
+        if "National Capital Region" not in desc:
+            continue  # times are local wherever he is; only Ottawa days are certain to be Eastern time
+        for hh, mm, ap_, what in re.findall(r"(\d{1,2}):(\d{2}) (a|p)\.m\. (The Prime Minister will .*?)(?=\s\d{1,2}:\d{2} [ap]\.m\. |$)", desc):
+            if not PM_MEDIA.search(what):
+                continue
+            h = int(hh) % 12 + (12 if ap_ == "p" else 0)
+            loc = day.replace(hour=h, minute=int(mm))
+            off = timedelta(hours=4 if _dst(loc.replace(tzinfo=timezone.utc)) else 5)
+            when = (loc + off).replace(tzinfo=timezone.utc)
+            if (when - now).total_seconds() < -3600:
+                continue
+            sentence = re.split(r"(?<=\.)\s", what)[0]
+            out.append({"story": "Prime Minister Mark Carney", "net": "Prime Minister’s Office", "what": sentence,
+                        "where": "From the Prime Minister’s itinerary", "when": when.isoformat(), "url": link})
+    return out[:6]
+
+
+# ===== Related stories (Hannah, Tue Oct 27: "for the top stories, find other stories that would tie to that one and
+# add it in"): for each top story, the newest reports on the people, places and issues that run through it, which are
+# not the story itself. One per related story, newest first, plus analysis and opinion that names it.
+def related(items, stories, now, eds, papers, groups=()):
+    import autoupdate as au
+    import gap_check as gc
+    from collections import Counter
+    out = {}
+    gidx = {r[3]: i for i, g in enumerate(groups) for r in g.get("rows", [])}
+    recent = [x for x in items if (now - x[0]).total_seconds() < 48 * 3600 and au.ok_item(x[1], x[3]) and not au.FRENCH.search(x[1])]
+    for key, words, own in stories:
+        if not words:
+            continue
+        rx = re.compile("|".join(re.escape(x) for x in words), re.I)
+        # an auto story is exactly its own reports; a hand-written story is every report naming it
+        mine = [x for x in recent if x[3] in own] if own else [x for x in recent if rx.search(x[2])]
+        if own:
+            rx = re.compile("|".join(re.escape(x) for x in words[:3]), re.I)
+        co = Counter(n.replace("’s", "").replace("'s", "") for x in mine for n in gc.names(x[2]))
+        co = Counter({n: c for n, c in co.items() if n not in WEAK and n not in PARTY and not rx.search(n)})
+        def proper(n):  # capitalized somewhere other than the first word: a name, not "Drone kills…"
+            cap = n[:1].upper() + n[1:]
+            return any(re.search(r"[a-z,]\s+" + re.escape(cap) + r"\b", x[2]) for x in mine)
+        ties = [n for n, c in co.most_common(10) if c >= 2 and len(n) > 3 and proper(n)][:5]
+        own_groups = {gi for x in mine for gi in [gidx.get(x[3])] if gi is not None}
+        topkeys = {k_ for k_, c in Counter(k_ for x in mine for k_ in gc.keys(x[2])).items() if c >= 2}
+        topnames = {n for n, c in co.most_common(3)}
+        if not ties:
+            continue
+        trx = re.compile(r"\b(" + "|".join(re.escape(t[:1].upper() + t[1:]) for t in ties) + r")\b")
+        picked, seen, used_groups = [], [], set()
+        for dt, outlet, title, link, k in recent:
+            if rx.search(title) or link in own or au.OPINION.search(title + " " + link) or SPORT.search(title + " " + link) or VIDEO.search(link):
+                continue
+            m = trx.search(title)
+            if not m:
+                continue
+            if gidx.get(link) in own_groups or gidx.get(link) in used_groups:
+                continue
+            if len(gc.keys(title) & topkeys) >= 2 or len({n.replace("’s", "").replace("'s", "") for n in gc.names(title)} & topnames) >= 2:
+                continue  # the story itself, told another way
+            n = gc.names(title) | gc.keys(title)
+            if any(len(n & s_) >= 3 for s_ in seen):
+                continue
+            seen.append(n)
+            if gidx.get(link) is not None:
+                used_groups.add(gidx[link])
+            picked.append({"t": w.eastern(dt), "iso": dt.isoformat(), "outlet": au.clean_outlet(outlet), "title": clean(title), "url": link, "tie": m.group(1)})
+            if len(picked) >= 5:
+                break
+        views = [{"outlet": e[0], "kind": e[1], "title": e[2], "url": e[3]} for e in (eds or []) if rx.search(e[2]) or trx.search(e[2])][:2]
+        views += [{"outlet": p_["inst"], "kind": "Think tank", "title": p_["t"], "url": p_["u"]} for p_ in (papers or []) if rx.search(p_["t"]) or trx.search(p_["t"])][:2]
+        if picked or views:
+            out[key] = {"ties": ties, "stories": picked, "views": views}
+    return out
+
+
 def run(page, items, groups, breaking, now, imgdir, prev):
     res = {}
     for name, f in [("auto", lambda: auto_stories(groups, page, breaking, now, imgdir, (prev.get("auto") or {}).get("stories", []))),
@@ -612,6 +798,21 @@ def run(page, items, groups, breaking, now, imgdir, prev):
             print(f"autopilot {name} failed:", e)
             res[name] = prev.get(name) or ({} if name in ("auto", "canus") else None if name == "brief" else [])
     a = res.get("auto") or {}
+    named = [(st["name"], re.compile("|".join(re.escape(x) for x in words), re.I)) for st, words in breaking if words]
+    named += [(s_["title"][:60], re.compile("|".join(re.escape(x) for x in s_["words"]), re.I)) for s_ in a.get("stories", []) if s_.get("words")]
+    for name, f in [("live", lambda: live_video(page, named, now)), ("pm", lambda: pm_itinerary(now))]:
+        try:
+            res[name] = f()
+        except Exception as e:
+            print(f"autopilot {name} failed:", e)
+            res[name] = prev.get(name) or ({} if name == "live" else [])
+    try:
+        keyed = [("top" if st["where"].startswith("Top") else st["where"].split("UPNEXT ")[-1].rstrip(")"), words, set()) for st, words in breaking]
+        keyed += [(s_["key"], s_.get("words") or [], {r["url"] for r in s_["reports"]}) for s_ in a.get("stories", [])]
+        res["related"] = related(items, keyed, now, res.get("eds"), res.get("papers"), groups)
+    except Exception as e:
+        print("autopilot related failed:", e)
+        res["related"] = prev.get("related") or {}
     try:
         skip = {r["url"] for st in a.get("stories", []) for r in st.get("reports", [])}
         res["bds"] = auto_breakdowns(groups, page, now, imgdir, skip, (prev.get("auto") or {}).get("stories", []))
@@ -619,5 +820,5 @@ def run(page, items, groups, breaking, now, imgdir, prev):
         print("autopilot bds failed:", e)
         res["bds"] = prev.get("bds") or []
     print(f"autopilot: {len(a.get('stories', []))} auto stories (takeover {a.get('takeover')}), {len(res['clips'])} clips, {len(res['ledes'])} U.S. ledes, "
-          f"{len(res['papers'])} papers, {len(res['eds'])} editorials, canus {len((res['canus'] or {}).get('talks', []))}/{len((res['canus'] or {}).get('usmedia', []))}, brief {bool(res['brief'])}, {len(res['bds'])} breakdowns, {len(res['otr'])} on the record")
+          f"{len(res['papers'])} papers, {len(res['eds'])} editorials, canus {len((res['canus'] or {}).get('talks', []))}/{len((res['canus'] or {}).get('usmedia', []))}, brief {bool(res['brief'])}, {len(res['bds'])} breakdowns, {len(res['otr'])} on the record, live {len((res['live'] or {}).get('now', []))} now / {len((res['live'] or {}).get('upcoming', []))} upcoming, PM events {len(res['pm'])}, related for {len(res['related'])} stories")
     return res
