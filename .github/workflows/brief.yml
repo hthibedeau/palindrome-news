@@ -40,6 +40,7 @@ jobs:
       - name: Install the open-source voice model (CPU)
         if: steps.has.outputs.yes
         run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
           pip install --index-url https://download.pytorch.org/whl/cpu torch torchaudio
           pip install chatterbox-tts
       - name: Record the brief
