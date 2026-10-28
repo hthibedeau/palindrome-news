@@ -6222,15 +6222,20 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       if (!root || root.hidden || root.offsetParent === null) return;
       const h2 = root.querySelector('h2'); if (!h2) return;
       // the newsrooms on this story: every outlet linked in it, the outlet's own report (skip connected stories)
-      const by = new Map();
-      root.querySelectorAll('a[href^="http"]').forEach((a) => { if (a.closest('.rel-box, .cov')) return; const o = outletOf(a.href); if (o && !by.has(o)) by.set(o, a.href); });
+      // only newsrooms with a report from the last 24 hours (Hannah: no old news in this strip), newest first
+      const DAY = 24 * 3600e3, by = new Map(), add = (o, u, t) => { if (o && u && t && Date.now() - t < DAY && t <= Date.now() + 6e5 && (!by.has(o) || by.get(o)[1] < t)) by.set(o, [u, t]); };
       const auto = (AUTO.d.stories || []).find((x) => (x.key === 'top' && root.id === 'breaking') || (root.id === 'bkEvent' && root.dataset.evid === x.key));
-      ((auto && auto.reports) || []).forEach((r) => { if (r.outlet && !by.has(r.outlet)) by.set(r.outlet, r.url); });
+      ((auto && auto.coverage) || []).forEach((r) => add(r.outlet, r.url, Date.parse(r.iso)));
+      ((auto && auto.reports) || []).forEach((r) => add(r.outlet, r.url, Date.parse(r.iso)));
+      if (root.classList.contains('ab-story')) { const a = (AUTO.d.auto && AUTO.d.auto.stories || []).find((x) => x.key === root.dataset.key); ((a && a.reports) || []).forEach((r) => add(r.outlet, r.url, Date.parse(r.iso))); }
+      // links on the page that carry their own time (timeline lines, credit lines)
+      root.querySelectorAll('a[href^="http"]').forEach((a) => { if (a.closest('.rel-box, .cov')) return; const holder = a.closest('li, p, div'); const tm = holder && holder.querySelector('time'); const t = tm ? (Date.parse(tm.getAttribute('datetime') || '') || labelMs(tm.textContent.trim())) : NaN; if (!isNaN(t)) add(outletOf(a.href), a.href, t); });
       let cov = root.querySelector('.cov');
+      if (by.size < 2 && cov) { cov.remove(); cov = null; }
       if (by.size >= 2) {
         if (!cov) { cov = document.createElement('div'); cov.className = 'cov'; h2.after(cov); }
-        const list = [...by.entries()], show = list.slice(0, 8);
-        cov.innerHTML = '<span class="cov-n"><b>' + list.length + '</b> newsrooms on this story</span>' + show.map(([o, u]) => '<a class="cov-o" href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(o) + '</a>').join('') + (list.length > 8 ? '<span class="cov-more">+' + (list.length - 8) + ' more</span>' : '');
+        const list = [...by.entries()].sort((x, y) => y[1][1] - x[1][1]).map(([o, v]) => [o, v[0]]), show = list.slice(0, 8);
+        cov.innerHTML = '<span class="cov-n"><b>' + list.length + '</b> newsrooms in the last 24 hours</span>' + show.map(([o, u]) => '<a class="cov-o" href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(o) + '</a>').join('') + (list.length > 8 ? '<span class="cov-more">+' + (list.length - 8) + ' more</span>' : '');
       }
       // live "Updated N min ago" from the newest dated report on the story
       let newest = Date.parse(root.dataset.lastdev || '') || 0;

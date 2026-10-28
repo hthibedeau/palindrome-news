@@ -286,7 +286,30 @@ def main():
         old = prev_photos.get(key)
         if not photo and old and os.path.exists(os.path.join(root, "..", old["src"])) and (not pset or ps.to_utc(old["when"]) > pset):
             photo = old
-        stories.append({"key": key, "name": st["name"], "since": since.isoformat() if since else None, "reports": reps, "photo": photo})
+        # every newsroom covering it in the last 24 hours (newest report each), for the "newsrooms on this story" strip.
+        # A report counts when it names the story (acronyms like MAID only in capitals) and shares a name with the
+        # story's current headline and summary, so a word like "interference" alone never pulls in another story.
+        if key == "top":
+            hm = re.search(r'<section class="breaking tap" id="breaking".*?<h2[^>]*>(.*?)</h2>.*?class="bk-dek"[^>]*>(.*?)</p>', page, re.S)
+            head = re.sub(r"<[^>]+>", " ", " ".join(hm.groups())) if hm else ""
+        else:
+            blk = page[page.find("{ id: '%s'" % key):][:8000]
+            head = " ".join(m_.group(1) for m_ in re.finditer(r"\b(?:h|dek): '((?:[^'\\]|\\.)*)'", blk))
+        hnames = gc.names(head) - {"canada", "trump", "u.s", "carney", "ottawa"}
+        parts = [r"\b%s\b" % re.escape(x) if x.isupper() else "(?i:%s)" % re.escape(x) for x in words]
+        rx2 = re.compile("|".join(parts)) if parts else rx
+        cov, seen_o = [], set()
+        for dt, outlet, title, link, k in items:
+            if (now - dt).total_seconds() > 24 * 3600:
+                break
+            o = clean_outlet(outlet)
+            if o in seen_o or OPINION.search(title + " " + link) or FRENCH.search(o):
+                continue
+            if not (rx2.search(title) or len(gc.names(title) & hnames) >= 2) or (hnames and not gc.names(title) & hnames):
+                continue
+            seen_o.add(o)
+            cov.append({"outlet": o, "url": link, "iso": dt.isoformat(), "t": w.eastern(dt)})
+        stories.append({"key": key, "name": st["name"], "since": since.isoformat() if since else None, "reports": reps, "photo": photo, "coverage": cov})
         print(f"{st['name']}: {len(reps)} newer report(s); photo {'NEW ' + photo['src'] if photo else 'none newer'}")
 
     # wire: one item per story, not on the page, last WIRE_HOURS
