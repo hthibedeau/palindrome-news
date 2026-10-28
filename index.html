@@ -6239,7 +6239,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       }
       // live "Updated N min ago" from the newest dated report on the story
       let newest = Date.parse(root.dataset.lastdev || '') || 0;
-      ((auto && auto.reports) || []).forEach((r) => { const t = Date.parse(r.iso); if (t > newest) newest = t; });
+      ((auto && auto.reports) || []).concat((auto && auto.coverage) || []).forEach((r) => { const t = Date.parse(r.iso); if (t > newest && t <= Date.now() + 6e5) newest = t; });
       root.querySelectorAll('.tl time[datetime], time[datetime]').forEach((t) => { const v = Date.parse(t.getAttribute('datetime')); if (v > newest && v <= Date.now()) newest = v; });
       if (root.classList.contains('ab-story')) { const a = (AUTO.d.auto && AUTO.d.auto.stories || []).find((x) => x.key === root.dataset.key); if (a) newest = Math.max(newest, Date.parse(a.newest) || 0); }
       let pill = root.querySelector('.fresh');
@@ -6247,7 +6247,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       if (txt) {
         if (!pill) { pill = document.createElement('span'); pill.className = 'fresh'; const tag = root.querySelector('.ev-tag') || root.querySelector('.tag'); if (tag) (tag.classList.contains('ev-tag') ? tag.appendChild(pill) : tag.after(pill)); else h2.before(pill); }
         pill.classList.toggle('hot', Date.now() - newest < 3 * 3600e3);
-        pill.innerHTML = '<i></i>Updated ' + esc(txt);
+        pill.innerHTML = '<i></i>Newest report ' + esc(txt);
       } else if (pill) pill.remove();
     });
   }
