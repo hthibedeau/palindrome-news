@@ -49,6 +49,16 @@ Everything shown is the outlets' own: headlines, summaries, captions, times and 
 
 **House rule (Hannah, Oct 27, 2026): everything she asks for is built into the code.** Any new feature or rule goes into `tools/` and the page script so it runs by itself, never as a task someone has to repeat. The runbooks in `tools/runbooks/` describe the older hand-run process. Claude's scheduled tasks for the site are paused; Claude now works only when Hannah asks for something.
 
+## Page order (Hannah, Wed Oct 28, 2026)
+
+The page script (`PAL_orderTop` in `index.html`) keeps this order by itself, whatever is showing:
+
+1. The two Breaking/Developing top stories (the automatic pair, or the hand-written top story and any hand-written Breaking event).
+2. The Canada desk, "Across Canada": today's stories province by province.
+3. A scheduled live broadcast the code has promoted to the event slot, then Live coverage, then everything else.
+
+The Canada desk heading is styled like the Palindrome News nameplate (a "The Canada desk" kicker, "Across *Canada*" in the nameplate's purple italic, under a double rule). It has no maple leaf, so it never looks like a government logo.
+
 ## Photos on the preview link
 
 The claude.ai preview blocks images hosted on other websites, so outlet photos are copied into the page's own storage. `tools/localize_images.py index.html <folder>` downloads every photo it can reach and lists the exact host names still to approve under claude.ai Settings > Capabilities > Allow network egress. The page tries the stored copy first, then the outlet's original, then a drawn illustration.
