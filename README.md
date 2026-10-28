@@ -23,9 +23,26 @@ Both pages open directly in a web browser. They are previews: the live site will
 - Sponsors pay for the site but never choose or rank the news. Paid editorials are always labelled.
 - Breaking news means checking every source out there, not rechecking the same pages: national, local and hometown newsrooms, official sources and wires, every run. Names, photos and tributes of victims go on the page as soon as an outlet publishes them. See `tools/runbooks/BREAKING_SOURCES.md`.
 
-## How the page updates itself
+## How the page updates itself: the code runs it
 
-Scheduled tasks follow the runbooks in `tools/runbooks/`: `full-update.md` (every :09 and :39), `live-check.md` (every :24 and :54), and `BREAKING_SOURCES.md`, which both read first. Change the rules by editing these files; the next run picks them up.
+Since Tue Oct 27, 2026, the site runs on code, not on Claude (Hannah: "I dont want to rely on claude to run my site. I want the code to do it"). Nothing needs a person or an AI to keep it current:
+
+- **Every 10 minutes**, GitHub Actions runs `tools/autoupdate.py` (with `tools/autopilot.py`) and writes `live/auto.json`. The page reads it every 2 minutes. It covers:
+  - **Top stories.** When the hand-written top story has had nothing new for 3 hours, the two biggest stories take its place. They're ranked by National Newswatch, CBC's front page and how many newsrooms carry each one. Each gets the newest report's own headline and summary, credited, plus "First reported by", the outlet's own photo and caption, and every newsroom carrying it. "Breaking" lasts an hour after the newest report.
+  - **The wire**, newest headlines from about 85 newsrooms.
+  - **Newest reports and photos** on every Breaking story, and live-blog times.
+  - **The Canada desk**, today's stories from every province and territory.
+  - **Watch**, new uploads from the networks' official YouTube channels, Canadian and U.S. first.
+  - **What America's newsrooms are leading with.**
+  - **Think tanks & white papers** and **Editorials**.
+  - **Canada and the U.S.**: the newest on trade and the border, and U.S. newsrooms on Canada.
+  - **The 60-second brief**, each story credited to its newsroom and read aloud by the reader's device.
+- **Every hour**, `tools/linkcheck.py` checks every link on the page. The page hides anything whose link is dead (404/410 on two checks in a row).
+- **The page itself** ages out old material: breakdowns move to Earlier after 24 hours and drop after 72, and think-tank papers drop after six weeks.
+
+Everything shown is the outlets' own: headlines, summaries, captions, times and pictures, always credited and linked. The code never writes or guesses.
+
+**House rule (Hannah, Oct 27, 2026): everything she asks for is built into the code.** Any new feature or rule goes into `tools/` and the page script so it runs by itself, never as a task someone has to repeat. The runbooks in `tools/runbooks/` describe the older hand-run process. Claude's scheduled tasks for the site are paused; Claude now works only when Hannah asks for something.
 
 ## Photos on the preview link
 
