@@ -22,17 +22,10 @@ jobs:
     timeout-minutes: 50
     steps:
       - uses: actions/checkout@v4
-      - name: Unlock Hannah's voice recording
+      - name: Is there a recording of Hannah's voice?
         id: has
-        env:
-          VOICE_KEY: ${{ secrets.VOICE_KEY }}
         run: |
-          # The recording is kept encrypted in this public repo; only GitHub, with the VOICE_KEY secret, can open it.
-          if [ -z "$VOICE_KEY" ] || [ ! -f tools/voice-samples/hannah.m4a.enc ]; then echo "No voice key or recording yet: the page reads the brief with the device voice."; exit 0; fi
-          printf '%s\n' "$VOICE_KEY" > "$RUNNER_TEMP/k"
-          openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in tools/voice-samples/hannah.m4a.enc -out tools/voice-samples/hannah.m4a -pass file:"$RUNNER_TEMP/k"
-          rm -f "$RUNNER_TEMP/k"
-          echo "yes=1" >> "$GITHUB_OUTPUT"
+          if ls tools/voice-samples/* 2>/dev/null | grep -Eiq '\.(m4a|mp3|wav|aac|ogg|flac|caf|mp4|mov)$'; then echo "yes=1" >> "$GITHUB_OUTPUT"; else echo "No recording yet in tools/voice-samples/"; fi
       - uses: actions/setup-python@v5
         if: steps.has.outputs.yes
         with:
