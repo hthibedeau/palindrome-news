@@ -1,0 +1,31 @@
+# Checks every outlet link on the page every hour and writes live/links.json; the page hides anything whose link is
+# dead (404/410 on two checks in a row). Hannah, Tue Oct 27, 2026: the code runs the site, not Claude.
+name: Link check
+on:
+  schedule:
+    - cron: '23 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: linkcheck
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check every link on the page
+        run: python3 tools/linkcheck.py --page index.html --out live/links.json
+      - name: Commit and push
+        run: |
+          git config user.name "palindrome-autoupdate"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add live/links.json
+          if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
+          git commit -m "Link check ($(TZ=America/Toronto date '+%a %-I:%M %p ET'))"
+          for i in 1 2 3 4 5; do
+            git pull --rebase -X theirs origin main && git push origin HEAD:main && break
+            sleep 7
+          done

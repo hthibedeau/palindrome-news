@@ -39,6 +39,8 @@ CLIP_HOURS = 36
 WEAK = set("""here's here’s what what's why how who when watch live breaking update updates opinion analysis says said new
 canada canadian canadians ottawa u.s us america american trump carney the a this that it's state states department
 president minister government police city court federal provincial premier mayor report reports""".split())
+SPORT = re.compile(r"football|basketball|baseball|\bNHL\b|\bNFL\b|\bNBA\b|\bMLB\b|World Series|Stanley Cup|Blue Jays|Maple Leafs|Raptors|quarterback|/sports?/", re.I)
+FRENCH_TEXT = re.compile(r"\b(les|des|une|pour|avec|dans|sur|qui|est|au|aux|du)\b.*\b(les|des|une|pour|avec|dans|sur|qui|est|au|aux|du)\b", re.I)
 VIDEO = re.compile(r"/videos?/|/player/|/watch|^Watch:|^WATCH:|^Video:", re.I)
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"
 
@@ -122,20 +124,28 @@ def _ok(outlet, link, title):
     return au.ok_item(outlet, link) and not au.OPINION.search(title + " " + link) and not au.FRENCH.search(outlet)
 
 
+def core_rows(g):
+    """The reports in a ranked group that are really this one story (newest first), or [] if it isn't one story."""
+    import gap_check as gc
+    from collections import Counter
+    rows = sorted({r[3].split("?")[0]: r for r in g["rows"] if _ok(r[1], r[3], r[2]) and not SPORT.search(r[2] + " " + r[3])}.values(), reverse=True)
+    freq = Counter(x for r in rows for x in gc.names(r[2]) if x not in WEAK)
+    if not freq or freq.most_common(1)[0][1] < 3:
+        return None
+    anchor = freq.most_common(1)[0][0]
+    co = Counter(x for r in rows if anchor in gc.names(r[2]) for x in gc.names(r[2]) if x not in WEAK)
+    core = {anchor} | {x for x, n in co.items() if n >= 2}
+    return [r for r in rows if anchor in gc.names(r[2]) or len(gc.names(r[2]) & core) >= 2], core
+
+
 def build_story(g, now, imgdir, prev):
     import autoupdate as au
     import gap_check as gc
     from collections import Counter
-    rows = sorted({r[3].split("?")[0]: r for r in g["rows"] if _ok(r[1], r[3], r[2])}.values(), reverse=True)
-    # a ranked group can hold a stray headline (a news wrap, a shared common name): keep the reports that name the
-    # story's core: the names most of its headlines share
-    freq = Counter(x for r in rows for x in gc.names(r[2]) if x not in WEAK)
-    if not freq or freq.most_common(1)[0][1] < 3:
-        return None  # no name shared by 3+ headlines: not one story
-    anchor = freq.most_common(1)[0][0]
-    co = Counter(x for r in rows if anchor in gc.names(r[2]) for x in gc.names(r[2]) if x not in WEAK)
-    core = {anchor} | {x for x, n in co.items() if n >= 2}
-    rows = [r for r in rows if anchor in gc.names(r[2]) or len(gc.names(r[2]) & core) >= 2]
+    got = core_rows(g)
+    if not got or not got[0]:
+        return None
+    rows, core = got
     if not rows:
         return None
     per = {}
@@ -317,16 +327,165 @@ def ledes(now, prev):
     return out
 
 
+# ===== Think tanks & white papers: newest publications from institutes across the spectrum (their own titles and
+# summaries), at most 2 per institute, last 14 days.
+THINK_TANKS = [
+    ("C.D. Howe Institute", "Toronto", "https://cdhowe.org/feed/"), ("Fraser Institute", "Vancouver", "https://www.fraserinstitute.org/rss.xml"),
+    ("Macdonald-Laurier Institute", "Ottawa", "https://macdonaldlaurier.ca/feed/"),
+    ("Canadian Centre for Policy Alternatives", "Ottawa", "https://www.policyalternatives.ca/feed/"),
+    ("Public Policy Forum", "Ottawa", "https://ppforum.ca/feed/"), ("Broadbent Institute", "Ottawa", "https://www.broadbentinstitute.ca/feed"),
+    ("Frontier Centre for Public Policy", "Winnipeg", "https://fcpp.org/feed/"), ("IRPP", "Montreal", "https://irpp.org/feed/"),
+    ("Montreal Economic Institute", "Montreal", "https://www.iedm.org/feed/"), ("CIGI", "Waterloo", "https://www.cigionline.org/rss/"),
+    ("AEI", "Washington", "https://www.aei.org/feed/"), ("Heritage Foundation", "Washington", "https://www.heritage.org/rss"),
+    ("Brookings", "Washington", "https://www.brookings.edu/feed/"), ("CSIS", "Washington", "https://www.csis.org/rss.xml"),
+    ("Atlantic Council", "Washington", "https://www.atlanticcouncil.org/feed/"), ("Peterson Institute", "Washington", "https://www.piie.com/rss/update.xml"),
+    ("Pew Research Center", "Washington", "https://www.pewresearch.org/feed/"), ("Bruegel", "Brussels", "https://www.bruegel.org/rss.xml"),
+    ("Lowy Institute", "Sydney", "https://www.lowyinstitute.org/the-interpreter/rss.xml"),
+]
+NOT_PAPER = re.compile(r"^(Test|Session \d|\d{4}$|Podcast|Event|Webinar|Watch|Video|Lines that landed)|/events?/|/podcasts?/|/video/|/media-coverage/|/in-the-media/", re.I)
+
+
+def rss_desc(url):
+    """Items with their own descriptions: [(dt, title, link, description)]."""
+    x = curl(url)
+    out = []
+    for it in re.findall(r"<item\b.*?</item>|<entry\b.*?</entry>", x, re.S):
+        g = lambda tag: (re.search(r"<%s\b[^>]*>(.*?)</%s>" % (tag, tag), it, re.S) or [None, ""])[1]
+        title = clean(re.sub(r"<!\[CDATA\[|\]\]>", "", g("title")))
+        link = clean(re.sub(r"<!\[CDATA\[|\]\]>", "", g("link"))) or (re.search(r'<link[^>]+href="([^"]+)"', it) or [None, ""])[1]
+        desc = re.sub(r"<[^>]+>", " ", _h.unescape(re.sub(r"<!\[CDATA\[|\]\]>", "", g("description") or g("summary"))))
+        dt = w.to_utc(g("pubDate") or g("published") or g("updated") or g("dc:date"))
+        if title and link:
+            out.append((dt, title, link, clean(desc)))
+    return out
+
+
+def papers(page, now):
+    def one(t):
+        inst, place, url = t
+        got = []
+        for dt, title, link, desc in rss_desc(url):
+            if not dt or (now - dt).days > 14 or NOT_PAPER.search(title) or NOT_PAPER.search(link) or link in page or FRENCH_TEXT.search(title):
+                continue
+            g = desc if len(desc) >= 40 else ""
+            if len(g) > 320:
+                g = g[:320].rsplit(" ", 1)[0] + "…"
+            day = dt - timedelta(hours=4 if _dst(dt) else 5)
+            got.append({"inst": inst, "place": place, "kind": "Publication", "by": "", "date": day.strftime("%b. ") + str(day.day) + day.strftime(", %Y"),
+                        "d": day.date().isoformat(), "pic": "chart", "u": link, "t": title, "g": g, "auto": True})
+            if len(got) >= 2:
+                break
+        return got
+    out = []
+    with ThreadPoolExecutor(10) as ex:
+        for got in ex.map(one, THINK_TANKS):
+            out += got
+    out.sort(key=lambda p: p["d"], reverse=True)
+    return out[:14]
+
+
+# ===== Editorials: the day's editorials and columns, one per outlet, left and right, Canadian first. Their own headlines.
+OPINION_FEEDS = [
+    ("Toronto Star", "https://www.thestar.com/search/?f=rss&t=article&c=opinion*&l=50&s=start_time&sd=desc"),
+    ("National Post", "https://nationalpost.com/category/opinion/feed"), ("Toronto Sun", "https://torontosun.com/category/opinion/feed"),
+    ("Ottawa Citizen", "https://ottawacitizen.com/category/opinion/feed"), ("Calgary Herald", "https://calgaryherald.com/category/opinion/feed"),
+    ("Edmonton Journal", "https://edmontonjournal.com/category/opinion/feed"), ("Vancouver Sun", "https://vancouversun.com/category/opinion/feed"),
+    ("The Globe and Mail (subscribers)", "https://www.theglobeandmail.com/arc/outboundfeeds/rss/category/opinion/editorials/"),
+    ("The Hub", "https://thehub.ca/feed/"),
+    ("The New York Times", "https://rss.nytimes.com/services/xml/rss/nyt/Opinion.xml"), ("Fox News", "https://moxie.foxnews.com/google-publisher/opinion.xml"),
+    ("The Wall Street Journal (subscribers)", "https://feeds.content.dowjones.io/public/rss/RSSOpinion"),
+    ("Washington Examiner", "https://www.washingtonexaminer.com/section/opinion/feed/"), ("The Guardian", "https://www.theguardian.com/commentisfree/rss"),
+]
+
+
+def editorials(page, now):
+    def one(f):
+        outlet, url = f
+        best = None
+        for dt, o, title, link in w.rss(outlet, url):
+            if not dt or (now - dt).total_seconds() > 30 * 3600 or re.search(r"/video/|/podcast|Lines that landed|letters?\b", link + " " + title, re.I):
+                continue
+            ed = bool(re.search(r"/editorials?/|^Editorial|The Guardian view|^Opinion \| The Post’s View|Star editorial", link + " " + title, re.I))
+            m = re.match(r"^([A-Z][\w.'’-]+(?: [A-Z][\w.'’-]+)?):\s+(.*)$", title)
+            if m and m.group(1).lower() in ("editorial", "opinion", "analysis", "letters"):
+                ed = ed or m.group(1).lower() == "editorial"
+                kind, head = ("Editorial" if ed else m.group(1).title()), m.group(2)
+            elif m:
+                kind, head = "Column · " + m.group(1).title(), m.group(2)
+            else:
+                kind, head = ("Editorial" if ed else "Opinion"), re.sub(r"\s*\|\s*Opinion$", "", title)
+            row = [outlet, kind, clean(head), link, dt.isoformat()]
+            if ed:
+                return row
+            best = best or row
+        return best
+    with ThreadPoolExecutor(8) as ex:
+        out = [x for x in ex.map(one, OPINION_FEEDS) if x and x[3] not in page]
+    return out[:10]
+
+
+# ===== Canada and the U.S.: the newest reports on the relationship, and how U.S. newsrooms are covering Canada.
+CANUS = re.compile(r"CUSMA|USMCA|tariff|softwood|Hoekstra|LeBlanc|trade (?:talks|deal|war)|51st state|Canada-U\.S\.|Canada–U\.S\.|"
+                   r"Canadian (?:steel|aluminum|lumber|dairy)|Keystone|NORAD|border", re.I)
+CANADA_WORD = re.compile(r"\bCanad(?:a|ian|ians|a's|a’s)\b|\bCarney\b|\bOttawa\b|\bAlberta\b|\bQuebec\b|\bOntario\b|\bToronto\b|\bB\.C\.\b|British Columbia")
+US_OUTLETS = re.compile(r"^(CBS News|ABC News|NBC News|PBS NewsHour|Fox News|The Hill|NPR|Axios|CNN|The Associated Press)", re.I)
+
+
+def canus(items, now):
+    import autoupdate as au
+    talks, usm, seen = [], [], set()
+    for dt, outlet, title, link, k in items:
+        if (now - dt).total_seconds() > 4 * 86400 or not au.ok_item(outlet, link) or au.OPINION.search(title + " " + link):
+            continue
+        t = re.sub(r"\W", "", title.lower())
+        if t in seen:
+            continue
+        if US_OUTLETS.search(outlet) and CANADA_WORD.search(title):
+            seen.add(t)
+            usm.append({"t": w.eastern(dt), "iso": dt.isoformat(), "outlet": au.clean_outlet(outlet), "title": clean(title), "url": link})
+        elif CANUS.search(title) and (CANADA_WORD.search(title) or "Hoekstra" in title or "CUSMA" in title) and not au.FRENCH.search(outlet):
+            seen.add(t)
+            talks.append({"t": w.eastern(dt), "iso": dt.isoformat(), "outlet": au.clean_outlet(outlet), "title": clean(title), "url": link})
+    return {"talks": talks[:8], "usmedia": usm[:8]}
+
+
+# ===== The 60-second brief, by itself: the biggest stories now, each attributed to the newsroom whose headline it reads.
+def brief(groups, now):
+    import autoupdate as au
+    loc = now - timedelta(hours=4 if _dst(now) else 5)
+    part = "morning" if loc.hour < 12 else ("evening" if loc.hour < 21 else "night")
+    edition = f"{loc:%A} {part}, {loc:%B} {loc.day}"
+    ca, other = [], []
+    for g in groups[:16]:
+        got = core_rows(g)
+        rows = [r for r in (got[0] if got else []) if not VIDEO.search(r[3] + " " + r[2])]
+        if len({au.clean_outlet(r[1]) for r in rows}) < MIN_OUTLETS:
+            continue
+        r = rows[0]
+        line = f"{au.clean_outlet(r[1])} reports: {clean(r[2]).rstrip('.')}."
+        (ca if au.CANADA.search(" ".join(x[2] for x in rows[:4])) else other).append(line)
+    stories = (ca[:4] + other[:3])[:6]
+    if len(stories) < 3:
+        return None
+    lines = [("Good morning." if part == "morning" else "Good evening.") + " I’m Hannah Thibedeau, and this is your Palindrome News brief."]
+    lines += [x.replace("'", "’") for x in stories]
+    lines.append("That’s your brief. We’ll keep watching, so you don’t have to.")
+    return {"edition": edition, "lines": lines}
+
+
 def run(page, items, groups, breaking, now, imgdir, prev):
     res = {}
     for name, f in [("auto", lambda: auto_stories(groups, page, breaking, now, imgdir, (prev.get("auto") or {}).get("stories", []))),
                     ("clips", lambda: clips(page, prev.get("clips", []), now)),
-                    ("ledes", lambda: ledes(now, prev.get("ledes", [])))]:
+                    ("ledes", lambda: ledes(now, prev.get("ledes", []))),
+                    ("papers", lambda: papers(page, now)), ("eds", lambda: editorials(page, now)),
+                    ("canus", lambda: canus(items, now)), ("brief", lambda: brief(groups, now))]:
         try:
             res[name] = f()
         except Exception as e:  # never block the run
             print(f"autopilot {name} failed:", e)
-            res[name] = prev.get(name) or ({} if name == "auto" else [])
+            res[name] = prev.get(name) or ({} if name in ("auto", "canus") else None if name == "brief" else [])
     a = res.get("auto") or {}
-    print(f"autopilot: {len(a.get('stories', []))} auto stories (takeover {a.get('takeover')}), {len(res['clips'])} clips, {len(res['ledes'])} U.S. ledes")
+    print(f"autopilot: {len(a.get('stories', []))} auto stories (takeover {a.get('takeover')}), {len(res['clips'])} clips, {len(res['ledes'])} U.S. ledes, "
+          f"{len(res['papers'])} papers, {len(res['eds'])} editorials, canus {len((res['canus'] or {}).get('talks', []))}/{len((res['canus'] or {}).get('usmedia', []))}, brief {bool(res['brief'])}")
     return res
