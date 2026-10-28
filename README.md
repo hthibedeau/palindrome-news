@@ -37,6 +37,10 @@ Since Tue Oct 27, 2026, the site runs on code, not on Claude (Hannah: "I dont wa
   - **Think tanks & white papers** and **Editorials**.
   - **Canada and the U.S.**: the newest on trade and the border, and U.S. newsrooms on Canada.
   - **The 60-second brief**, each story credited to its newsroom and read aloud by the reader's device.
+- **What each newsroom reports**: every auto top story shows each outlet's own lead sentence side by side, credited and linked.
+- **The breakdown**: any story carried by 6 or more independent newsrooms (same owner and wire copies counted once) gets a breakdown by itself, each line in a newsroom's own words.
+- **On the record**: statements from official sources the code can read: the Prime Minister, the federal and provincial governments, the White House and the UN.
+- **Hannah's voice**: `tools/brief_voice.py` (`.github/workflows/brief.yml`, three times a day) reads each brief in Hannah's own voice. It copies the voice from her recording in `tools/voice-samples/` with Chatterbox, an open-source model that runs on GitHub. No sign-ups, and nothing is sent anywhere else.
 - **Every hour**, `tools/linkcheck.py` checks every link on the page. The page hides anything whose link is dead (404/410 on two checks in a row).
 - **The page itself** ages out old material: breakdowns move to Earlier after 24 hours and drop after 72, and think-tank papers drop after six weeks.
 
