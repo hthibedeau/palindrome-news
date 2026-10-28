@@ -27,6 +27,9 @@
 .rel-box time, .rel-box .rk { display: inline-block; min-width: 100px; font-size: 12px; opacity: .8; }
 .rel-box a { color: inherit; }
 .rel-box .o { font-size: 13px; opacity: .8; }
+a.snimg { display: block; }
+.sn .snimg img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.sn .snw { font-size: 12px; opacity: .75; }
 </style></head><body>
 <title>Palindrome News</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -1460,7 +1463,7 @@ header.site { border-bottom: 0; }
   </section>
 
   <section id="smaller" aria-labelledby="sn-h" style="scroll-margin-top: 64px">
-    <div class="band-head"><h2 id="sn-h">Smaller newsrooms</h2><p>Today’s top five from independent and northern newsrooms, with an eye on the Arctic. Updated Monday morning.</p></div>
+    <div class="band-head"><h2 id="sn-h">Smaller newsrooms</h2><p id="snNote">Today’s top five from independent and northern newsrooms, with an eye on the Arctic. Updated Monday morning.</p></div>
     <ol class="sn">
       <li class="tap"><div class="snimg" data-art="forest" data-alt="Nunavut teachers feeling the strain as student support workers disappear" data-photo="https://cdn.nunatsiaq.com/wp-content/uploads/2026/10/2019school.jpeg" data-credit="Nunatsiaq News"></div><div class="snt"><span class="snk"><b>Nunatsiaq News</b><span>Nunavut </span><span class="arc">Arctic</span></span><h3><a class="card-link" href="https://nunatsiaq.com/stories/article/burnout-and-hardship-nunavut-teachers-struggle-with-loss-of-student-support-workers/" target="_blank" rel="noopener">Nunavut teachers feeling the strain as student support workers disappear</a></h3><p>Federal Inuit Child First money no longer covers most school requests, so classrooms have fewer support assistants this year and teachers report burnout. Ottawa has extended the program a year with a $115-million top-up and now reviews school requests case by case.</p><span class="snby">By Miriam Lafontaine</span></div></li>
       <li class="tap"><div class="snimg" data-art="forest" data-alt="Coast Guard’s only large drone put through Arctic trials in Iqaluit" data-photo="https://yellowknifer.com/wp-content/uploads/sites/55/2026/10/840207388_1089918053938820_8964616102115494179_n.jpg?w=405" data-credit="Isaac Idlout via Yellowknifer"></div><div class="snt"><span class="snk"><b>Yellowknifer (NNSL)</b><span>Nunavut </span><span class="arc">Arctic</span></span><h3><a class="card-link" href="https://yellowknifer.com/2026/10/19/canadian-coast-guards-only-large-drone-is-testing-arctic-capability-in-iqaluit/" target="_blank" rel="noopener">Coast Guard’s only large drone put through Arctic trials in Iqaluit</a></h3><p>The Canadian Coast Guard is testing its lone Hermes 900 surveillance drone out of Iqaluit until spring 2027, for jobs like tracking ships, spotting pollution and scouting ice.</p><span class="snby">By William Koblensky Varela, Local Journalism Initiative</span></div></li>
@@ -1551,7 +1554,7 @@ header.site { border-bottom: 0; }
   </section>
 
   <section id="mostread" class="ruled" aria-labelledby="mr-h">
-    <div class="band-head"><h2 id="mr-h">Most read across Canada</h2><p>Ranked from the most-read lists of Canada's biggest newsrooms. Updated hourly.</p></div>
+    <div class="band-head"><h2 id="mr-h">Most read across Canada</h2><p id="mrNote">Ranked from the most-read lists of Canada's biggest newsrooms. Updated hourly.</p></div>
     <ol class="mr" id="mrList"></ol>
     <p class="fine">Today's ranking (Monday morning) combines the most-read and trending lists from Global News, APTN News, The Tyee, Daily Hive, Narcity and Castanet, the newsrooms whose lists I could read from here. CBC, CTV and CP24 don't publish a most-read list, and Postmedia papers and the Toronto Star block outside readers. The live version combines 59 English-language newsrooms across the country, from CBC and the Globe to local papers and stations in every region.</p>
   </section>
@@ -3337,8 +3340,12 @@ header.site { border-bottom: 0; }
   ];
   const MRI = {"cfb-wainwright-fire-what-we-know": "https://globalnews.ca/wp-content/uploads/2026/10/CP177106674.jpg?quality=65&strip=all&w=720&h=379&crop=1", "BC-Civic-Elections-Many-Mayors-Ousted": "https://thetyee.ca/News/2026/10/17/OReillyKamloopsElxnMain.jpg", "Understanding-Alberta-Separation-Referendum": "https://thetyee.ca/Opinion/2026/05/04/DanielleSmithAlbertaReferendum.jpg", "flintstones-vitamin-recall": "https://globalnews.ca/wp-content/uploads/2026/10/Aleve-e1792085538434.jpg?quality=65&strip=all&w=720&h=379&crop=1", "bc-illegal-eviction": "https://images-dh-production-baselayer.dailyhive.com/uploads/2026/10/bc-eviction.jpg?format=auto", "ndp-mp-calls-for-emergency-debate": "https://www.aptnnews.ca/wp-content/uploads/2026/06/NDP-MP-Leah-Gazan-2.jpg", "royal-caribbean-cruise-passenger": "https://globalnews.ca/wp-content/uploads/2026/10/passenger-rescued-overboard-royal-caribbean.jpg?quality=65&strip=all&w=720&h=379&crop=1", "Grand-Forks-Money-Health-Care": "https://thetyee.ca/News/2026/10/15/NeilThurley.jpg", "afn-draft-for-upcoming-meeting": "https://www.aptnnews.ca/wp-content/uploads/2025/12/AFN-MOU-DISPUTE-WEB-1.jpg", "john-legend-vancouver-2026": "https://images-dh-production-baselayer.dailyhive.com/uploads/2026/10/851829351_18031237778884978_930442065505392285_n-1-2.jpg?format=auto", "donald-trump-51st-state-midterms": "https://globalnews.ca/wp-content/uploads/2026/10/Trump-51st-state-midterms.jpg?quality=65&strip=all&w=720&h=379&crop=1", "Voter-Guide-Civic-Election": "https://thetyee.ca/News/2026/10/14/MunicipalHallBallotIllustration.jpg"};
   const mrImg = (u) => { const k = Object.keys(MRI).find((x) => u.includes(x)); return k ? MRI[k] : ''; };
+  function renderMR() {
   $('mrList').innerHTML = mostRead.map((s) => '<li><div class="t"><a class="hed" href="' + esc(s.u) + '" target="_blank" rel="noopener">' + esc(s.h) + '</a><span class="outlets">' +
     s.o.map(([name, r, link]) => '<a href="' + esc(link) + '" target="_blank" rel="noopener"><b>#' + r + '</b> ' + esc(name) + '</a>').join('') + '</span></div>' + (mrImg(s.u) ? '<a class="mrthumb" href="' + esc(s.u) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + photo(mrImg(s.u), 'none', s.h, s.o[0][0]) + '</a>' : '') + '</li>').join('');
+  }
+  renderMR();
+  window.PAL_mostRead = { list: mostRead, render: renderMR };
 
   // Today's reading: real articles, in the outlet-credit format
   const reads = [
@@ -5964,7 +5971,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     const fresh = !AUTO || AUTO.d.checked !== got[0].d.checked;
     AUTO = got[0];
     deadLinks();
-    if (fresh) { blogs(); wire(); try { autoTop(); } catch (e) { console.warn('autoTop', e); } try { clips(); ledes(); stamp(); papers(); eds(); canus(); brief(); bds(); otr(); live(); related(); } catch (e) { console.warn('autopilot', e); } if (window.PAL_eventRender) try { window.PAL_eventRender(); } catch (e) {} if (window.PAL_renderFronts) try { window.PAL_renderFronts(); if (window.PAL_oneStoryOnePlace) window.PAL_oneStoryOnePlace(); } catch (e) { console.warn(e); } }
+    if (fresh) { blogs(); wire(); try { autoTop(); } catch (e) { console.warn('autoTop', e); } try { clips(); ledes(); stamp(); papers(); eds(); canus(); brief(); bds(); otr(); live(); related(); mostRead(); smaller(); } catch (e) { console.warn('autopilot', e); } if (window.PAL_eventRender) try { window.PAL_eventRender(); } catch (e) {} if (window.PAL_renderFronts) try { window.PAL_renderFronts(); if (window.PAL_oneStoryOnePlace) window.PAL_oneStoryOnePlace(); } catch (e) { console.warn(e); } }
     paint();
   }
   function blogs() {
@@ -6150,6 +6157,19 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       const at = root.querySelector('.auto-news') || root.querySelector('.bk-sum') || root.querySelector('.bk-dek') || root.querySelector('h2');
       if (at) at.after(box); else root.appendChild(box);
     });
+  }
+
+  // Most read across Canada, from the newsrooms' own most-read and trending lists (tools/autopilot.py most_read).
+  function mostRead() {
+    const M = window.PAL_mostRead, A = AUTO.d.mostread; if (!M || !A || !A.list || A.list.length < 5) return;
+    M.list.length = 0; A.list.forEach((x) => M.list.push(x)); M.render();
+    const n = document.getElementById('mrNote'); if (n) n.textContent = 'Ranked from the most-read and trending lists of ' + A.sites.join(', ') + '. Checked automatically at ' + fmt(AUTO.d.checked) + ' ET.';
+  }
+  // Smaller newsrooms: today's top five from independent and northern newsrooms, the Arctic first (their own words).
+  function smaller() {
+    const S = AUTO.d.smaller || [], ol = document.querySelector('ol.sn'); if (!ol || S.length < 3) return;
+    ol.innerHTML = S.map((x) => '<li class="tap"><a class="snimg" href="' + esc(x.u) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + (x.img ? '<img src="' + esc(x.img) + '" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">' : '') + '</a><div class="snt"><span class="snk"><b>' + esc(x.o) + '</b><span>' + esc(x.region) + ' </span>' + (x.arctic ? '<span class="arc">Arctic</span>' : '') + '</span><h3><a class="card-link" href="' + esc(x.u) + '" target="_blank" rel="noopener">' + esc(x.h) + '</a></h3>' + (x.desc ? '<p>' + esc(x.desc) + '</p>' : '') + '<span class="snw">' + esc(x.t) + '</span></div></li>').join('');
+    const n = document.getElementById('snNote'); if (n) n.textContent = 'Today’s top five from independent and northern newsrooms, the Arctic first. Checked automatically at ' + fmt(AUTO.d.checked) + ' ET.';
   }
   function photo(root, p) {
     const el = root.querySelector('.bart'); if (!el || !p || el.dataset.auto === p.src) return;

@@ -604,6 +604,10 @@ def on_the_record(page, now):
 ALWAYS_ON = re.compile(r"24/7|🔴|English \| Live|News Live\b|LIVE:? Latest|live stream of|livestream|Live News|Breaking News Live|news channel", re.I)
 
 
+EVENT = re.compile(r"news conference|press conference|briefing|address|speech|speaks|statement|debate|Question Period|hearing|"
+                   r"testif|vote|results|election|announce|funeral|memorial|summit|ceremony|rally|town hall|update on", re.I)
+
+
 def yt_streams(addr):
     x = curl("https://www.youtube.com/" + addr + "/streams")
     m = re.search(r'var ytInitialData = (\{.*?\});</script>', x)
@@ -683,7 +687,7 @@ def live_video(page, named, now):
             if st["state"] == "live":
                 item["watching"] = st["watching"]
                 (res["always"] if ALWAYS_ON.search(st["title"]) else res["now"]).append(item)
-            elif st["state"] == "upcoming" and len(res["upcoming"]) < 24:
+            elif st["state"] == "upcoming" and len(res["upcoming"]) < 24 and (EVENT.search(st["title"]) or any(rx.search(st["title"]) for _, rx in named)):
                 t = sched_time(st.get("sched", ""))
                 if t and 0 < (t - now).total_seconds() < 36 * 3600:
                     item["when"] = t.isoformat()
@@ -784,6 +788,107 @@ def related(items, stories, now, eds, papers, groups=()):
     return out
 
 
+# ===== Most read across Canada: built from the newsrooms' own most-read / trending lists (whichever publish one on
+# their front page), ranked by how high and how widely each story sits on them.
+MOST_READ_SITES = [
+    ("Toronto Star", "https://www.thestar.com/"), ("Winnipeg Free Press", "https://www.winnipegfreepress.com/"),
+    ("The Tyee", "https://thetyee.ca/"), ("Global News", "https://globalnews.ca/"), ("Nunatsiaq News", "https://nunatsiaq.com/"),
+    ("Daily Hive", "https://dailyhive.com/vancouver"), ("National Post", "https://nationalpost.com/"), ("Ottawa Citizen", "https://ottawacitizen.com/"),
+    ("Calgary Herald", "https://calgaryherald.com/"), ("Edmonton Journal", "https://edmontonjournal.com/"), ("Vancouver Sun", "https://vancouversun.com/"),
+    ("Times Colonist", "https://www.timescolonist.com/"), ("Castanet", "https://www.castanet.net/"), ("Halifax Examiner", "https://www.halifaxexaminer.ca/"),
+    ("CTV News", "https://www.ctvnews.ca/"), ("CBC News", "https://www.cbc.ca/news"), ("Cabin Radio", "https://cabinradio.ca/"),
+]
+NOT_STORY = re.compile(r"subscribe|sign in|newsletter|horoscope|crossword|obituar|contest|/sponsored|/partners?/|lotto|lottery", re.I)
+
+
+def most_read_list(name, url):
+    x = curl(url)
+    host = url.split("/")[2]
+    for m in re.finditer(r">\s*(Most[ -](?:Read|Popular|Viewed)|Trending(?: Now| Stories)?|Popular)\s*<", x, re.I):
+        seg = x[m.end(): m.end() + 20000]
+        out = []
+        for a in re.finditer(r'<a\b[^>]*href="([^"#]+)"[^>]*>(.*?)</a>', seg, re.S):
+            t = clean(re.sub(r"<[^>]+>", " ", a.group(2)))
+            t = re.sub(r"^(Dished|Lifestyle|News|Canada|World|Crime|Entertainment|Politics|Business|Local)\s+(?=[A-Z‘'“])", "", t)
+            t = re.sub(r"\s+(Crime|World|Entertainment|Canada|Politics|Business|Health|Sports?|Money)\s+\d+\s*(h|hr|hours?|min|d)\b.*$", "", t)
+            u = a.group(1) if a.group(1).startswith("http") else "https://" + host + a.group(1)
+            if len(t) < 30 or NOT_STORY.search(t + " " + u) or any(o[1] == t for o in out):
+                continue
+            out.append((u, t))
+            if len(out) >= 5:
+                break
+        if len(out) >= 3:
+            return name, out
+    return name, []
+
+
+def most_read(now):
+    import gap_check as gc
+    with ThreadPoolExecutor(8) as ex:
+        lists = [x for x in ex.map(lambda f: most_read_list(*f), MOST_READ_SITES) if x[1]]
+    stories = []
+    for outlet, rows in lists:
+        for rank, (u, t) in enumerate(rows, 1):
+            n = gc.names(t) | gc.keys(t)
+            for st in stories:
+                if len(n & st["n"]) >= 3:
+                    break
+            else:
+                st = {"n": set(), "h": t, "u": u, "o": [], "score": 0, "best": 99}
+                stories.append(st)
+            st["n"] |= n
+            if rank < st["best"]:
+                st["best"], st["h"], st["u"] = rank, t, u
+            if all(o[0] != outlet for o in st["o"]):
+                st["o"].append([outlet, rank, u])
+                st["score"] += 6 - rank
+    stories.sort(key=lambda s_: (-s_["score"], s_["best"]))
+    return {"sites": [o for o, _ in lists], "list": [{"h": s_["h"], "u": s_["u"], "o": s_["o"]} for s_ in stories[:10]]}
+
+
+# ===== Smaller newsrooms: today's top five from independent and northern newsrooms, the Arctic first (Hannah: give
+# smaller publications prestige, Arctic and northern ones in particular). Their own headlines, summaries and pictures.
+SMALL = [("Nunatsiaq News", "Nunavut", True), ("Cabin Radio", "N.W.T.", True), ("Yukon News", "Yukon", True),
+         ("IndigiNews", "Indigenous", False), ("The Narwhal", "Environment", False), ("The Tyee", "British Columbia", False),
+         ("Halifax Examiner", "Nova Scotia", False), ("Canada's National Observer", "National", False),
+         ("Lethbridge Herald", "Alberta", False), ("Medicine Hat News", "Alberta", False), ("CKOM / PAnow", "Saskatchewan", False)]
+SMALL_FEEDS = [("Yellowknifer (NNSL)", "https://www.nnsl.com/feed/", "N.W.T.", True), ("APTN News", "https://www.aptnnews.ca/feed/", "Indigenous", False)]
+
+
+def smaller(items, page, now, imgdir):
+    import autoupdate as au
+    pool = []
+    names = {n: (reg, arc) for n, reg, arc in SMALL}
+    for dt, outlet, title, link, k in items:
+        o = au.clean_outlet(outlet)
+        if o in names and (now - dt).total_seconds() < 30 * 3600:
+            pool.append((dt, o, title, link) + names[o])
+    for o, url, reg, arc in SMALL_FEEDS:
+        try:
+            for dt, _, title, link in w.rss(o, url)[:8]:
+                if dt and (now - dt).total_seconds() < 30 * 3600:
+                    pool.append((dt, o, title, link, reg, arc))
+        except Exception:
+            pass
+    pool = [p_ for p_ in pool if not au.OPINION.search(p_[2] + " " + p_[3]) and not SPORT.search(p_[2] + " " + p_[3])
+            and not re.search(r"/community/|/events?/|obituar|horoscope|Please Advise", p_[2] + " " + p_[3], re.I)]
+    from collections import Counter
+    copies = Counter(re.sub(r"\W", "", x[2].lower()) for x in items)
+    pool = [p_ for p_ in pool if copies[re.sub(r"\W", "", p_[2].lower())] <= 1 and "/national-news/" not in p_[3]]  # their own stories, not wire copy
+    pool.sort(key=lambda p_: (not p_[5], -p_[0].timestamp()))  # Arctic first, then newest
+    out, used = [], set()
+    for dt, o, title, link, reg, arc in pool:
+        if o in used:
+            continue
+        info = page_info(link)
+        used.add(o)
+        out.append({"o": o, "region": reg, "arctic": arc, "h": clean(title), "u": link, "t": w.eastern(dt),
+                    "desc": (info.get("desc") or "")[:240], "img": info.get("img", "")})
+        if len(out) >= 5:
+            break
+    return out
+
+
 def run(page, items, groups, breaking, now, imgdir, prev):
     res = {}
     for name, f in [("auto", lambda: auto_stories(groups, page, breaking, now, imgdir, (prev.get("auto") or {}).get("stories", []))),
@@ -791,12 +896,13 @@ def run(page, items, groups, breaking, now, imgdir, prev):
                     ("ledes", lambda: ledes(now, prev.get("ledes", []))),
                     ("papers", lambda: papers(page, now)), ("eds", lambda: editorials(page, now)),
                     ("canus", lambda: canus(items, now)), ("brief", lambda: brief(groups, now)),
-                    ("otr", lambda: on_the_record(page, now))]:
+                    ("otr", lambda: on_the_record(page, now)), ("mostread", lambda: most_read(now)),
+                    ("smaller", lambda: smaller(items, page, now, imgdir))]:
         try:
             res[name] = f()
         except Exception as e:  # never block the run
             print(f"autopilot {name} failed:", e)
-            res[name] = prev.get(name) or ({} if name in ("auto", "canus") else None if name == "brief" else [])
+            res[name] = prev.get(name) or ({} if name in ("auto", "canus", "mostread") else None if name == "brief" else [])
     a = res.get("auto") or {}
     named = [(st["name"], re.compile("|".join(re.escape(x) for x in words), re.I)) for st, words in breaking if words]
     named += [(s_["title"][:60], re.compile("|".join(re.escape(x) for x in s_["words"]), re.I)) for s_ in a.get("stories", []) if s_.get("words")]
@@ -820,5 +926,5 @@ def run(page, items, groups, breaking, now, imgdir, prev):
         print("autopilot bds failed:", e)
         res["bds"] = prev.get("bds") or []
     print(f"autopilot: {len(a.get('stories', []))} auto stories (takeover {a.get('takeover')}), {len(res['clips'])} clips, {len(res['ledes'])} U.S. ledes, "
-          f"{len(res['papers'])} papers, {len(res['eds'])} editorials, canus {len((res['canus'] or {}).get('talks', []))}/{len((res['canus'] or {}).get('usmedia', []))}, brief {bool(res['brief'])}, {len(res['bds'])} breakdowns, {len(res['otr'])} on the record, live {len((res['live'] or {}).get('now', []))} now / {len((res['live'] or {}).get('upcoming', []))} upcoming, PM events {len(res['pm'])}, related for {len(res['related'])} stories")
+          f"{len(res['papers'])} papers, {len(res['eds'])} editorials, canus {len((res['canus'] or {}).get('talks', []))}/{len((res['canus'] or {}).get('usmedia', []))}, brief {bool(res['brief'])}, {len(res['bds'])} breakdowns, {len(res['otr'])} on the record, live {len((res['live'] or {}).get('now', []))} now / {len((res['live'] or {}).get('upcoming', []))} upcoming, PM events {len(res['pm'])}, related for {len(res['related'])} stories, most read {len((res['mostread'] or {}).get('list', []))} from {len((res['mostread'] or {}).get('sites', []))} sites, smaller {len(res['smaller'])}")
     return res
