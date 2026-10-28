@@ -256,10 +256,12 @@ def main():
     items.sort(reverse=True)
 
     stories = []
+    breaking = []
     prev_photos = {s.get("key"): s.get("photo") for s in prev.get("stories", []) if s.get("photo")}
     for st in ps.breaking_stories(a.page):
         key = "top" if st["where"].startswith("Top") else st["where"].split("UPNEXT ")[-1].rstrip(")")
         words = apx.story_words(page, st)
+        breaking.append((st, words))
         rx = re.compile("|".join(re.escape(x) for x in words), re.I)
         since = story_since(page, st, now)
         reps = []
@@ -322,10 +324,12 @@ def main():
     rows = [{"row": r} for r in rows[:25]]
 
     # what should lead: National Newswatch + CBC's front + coverage (tools/lead_check.py), for the agent runs
+    groups = []
     try:
         import lead_check
+        groups = lead_check.rank([(d, o, t, l) for d, o, t, l, _ in items], now)
         leads = [{"score": g["score"], "title": g["lead"][0], "url": g["lead"][1], "outlets": len(g["outlets"]), "why": g["why"], "theme": g.get("theme", "")}
-                 for g in lead_check.rank([(d, o, t, l) for d, o, t, l, _ in items], now)[:10]]
+                 for g in groups[:10]]
     except Exception as e:  # never block the run
         print("lead check failed:", e)
         leads = []
@@ -336,11 +340,14 @@ def main():
         canada = []
     out = {"checked": now.isoformat(), "checkedLabel": w.eastern(now), "stories": stories,
            "wire": [r["row"] for r in rows], "blogs": blog_times(page), "leads": leads, "canada": canada}
+    # the code runs the page (Hannah, Tue Oct 27, 2026): auto top stories, Watch clips, U.S. front pages
+    import autopilot
+    out.update(autopilot.run(page, items, groups, breaking, now, imgdir, prev))
     os.makedirs(root, exist_ok=True)
     with open(a.out, "w", encoding="utf-8") as fh:
         json.dump(out, fh, ensure_ascii=False, indent=1)
     # keep only the photos still in use
-    used = {os.path.basename(s["photo"]["src"]) for s in stories if s.get("photo")}
+    used = {os.path.basename(s["photo"]["src"]) for s in stories + (out.get("auto") or {}).get("stories", []) if s.get("photo")}
     for f in glob.glob(os.path.join(imgdir, "*.jpg")):
         if os.path.basename(f) not in used:
             os.remove(f)

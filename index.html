@@ -1,4 +1,17 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}#autoBreaking .ab-story + .ab-story { margin-top: 26px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,.28); }
+#autoBreaking .ab-second h2 { font-size: clamp(22px, 2.8vw, 32px); }
+#autoBreaking .first a, #autoBreaking h2 a { color: inherit; }
+#autoBreaking .ab-cr { opacity: .8; font-size: 14px; }
+#autoBreaking .ab-reps { margin: 0 0 6px; }
+#autoBreaking .ab-reps summary { cursor: pointer; font-weight: 600; font-size: 15px; min-height: 44px; display: flex; align-items: center; }
+#autoBreaking .ab-reps ol { list-style: none; margin: 4px 0 0; padding: 0; }
+#autoBreaking .ab-reps li { padding: 7px 0; border-top: 1px solid rgba(255,255,255,.18); font-size: 15px; line-height: 1.4; }
+#autoBreaking .ab-reps time { display: inline-block; min-width: 108px; opacity: .8; font-size: 13px; }
+#autoBreaking .ab-reps a { color: #FFFFFF; }
+#autoBreaking .ab-reps .o { opacity: .8; font-size: 13px; }
+#autoBreaking .bart-cap { margin: 8px 0 14px; }
+#autoBreaking .ab-note { margin: 16px 0 0; font-size: 13px; opacity: .8; }
+</style></head><body>
 <title>Palindrome News</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1352,6 +1365,7 @@ header.site { border-bottom: 0; }
         </div>
       </div>
     </section>
+    <section class="breaking tap" id="autoBreaking" aria-label="Top stories, updated automatically" hidden></section>
 
     <section class="livecov" id="liveCoverage" aria-label="Live coverage now" hidden>
       <div class="bk-chan" id="bkChannels" hidden></div>
@@ -1511,7 +1525,7 @@ header.site { border-bottom: 0; }
     </div>
     <div class="fronts-us">
       <h3>What America's newsrooms are leading with</h3>
-      <p>The top story on each front page at 6:35 p.m. ET Tuesday, in our words, with the story’s own picture so you see where you’re going. Tap to read it there.</p>
+      <p id="ledesNote">The top story on each front page at 6:35 p.m. ET Tuesday, in our words, with the story’s own picture so you see where you’re going. Tap to read it there.</p>
       <div class="ledes" id="ledes"></div>
     </div>
   </section>
@@ -4652,6 +4666,7 @@ header.site { border-bottom: 0; }
     showVids(b.dataset.v);
   }));
   showVids('all');
+  window.PAL_vids = vids; window.PAL_showVids = () => showVids(curV || 'all');
 
   // What America's newsrooms are leading with (read Tue Oct 27, 6:46 a.m. ET). img = the story's own picture (its share image), so readers see where they're going.
   const ledes = [
@@ -4663,7 +4678,9 @@ header.site { border-bottom: 0; }
     { o: 'NBC News', h: 'Exit polls show no clear winner in Israel’s first national election since the Oct. 7 attacks', u: 'https://www.nbcnews.com/world/israel/netanyahu-battles-stay-power-voters-head-polls-rcna605876', img: 'https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-10/261027-tel-aviv-2-rs-18cb5e.jpg', w: 'Updated Tue 5:25 p.m.' },
   ];
   const ledeHost = (u) => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch (e) { return ''; } };
-  $('ledes').innerHTML = ledes.map((x) => { const src = (USE_LOCAL && LOCAL[x.img]) || x.img; return '<article class="lede"><span class="lthumb" aria-hidden="true"><span class="lsite"><b>' + esc(x.o) + '</b></span>' + (src ? '<img src="' + esc(src) + '" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">' : '') + '<span class="lurl">' + esc(ledeHost(x.u)) + '</span></span><span class="o">' + esc(x.o) + (x.w ? ' <span class="lw">· ' + esc(x.w) + '</span>' : '') + '</span><a href="' + esc(x.u) + '" target="_blank" rel="noopener">' + esc(x.h) + '</a><span class="lgo">Opens on ' + esc(ledeHost(x.u)) + ' &#8599;</span></article>'; }).join('');
+  function renderLedes(list) { $('ledes').innerHTML = list.map((x) => { const src = (USE_LOCAL && LOCAL[x.img]) || x.img; return '<article class="lede"><span class="lthumb" aria-hidden="true"><span class="lsite"><b>' + esc(x.o) + '</b></span>' + (src ? '<img src="' + esc(src) + '" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">' : '') + '<span class="lurl">' + esc(ledeHost(x.u)) + '</span></span><span class="o">' + esc(x.o) + (x.w ? ' <span class="lw">· ' + esc(x.w) + '</span>' : '') + '</span><a href="' + esc(x.u) + '" target="_blank" rel="noopener">' + esc(x.h) + '</a><span class="lgo">Opens on ' + esc(ledeHost(x.u)) + ' &#8599;</span></article>'; }).join(''); }
+  renderLedes(ledes);
+  window.PAL_ledes = { render: renderLedes };
 
   // From every direction (angles described in our words)
   const dirs = [
@@ -5907,7 +5924,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     if (!got.length || Date.now() - Date.parse(got[0].d.checked) > STALE_MS) { if (got.length) console.warn('autoupdate: live/auto.json is over 3 hours old; check the Auto update workflow on GitHub Actions'); return; }
     const fresh = !AUTO || AUTO.d.checked !== got[0].d.checked;
     AUTO = got[0];
-    if (fresh) { blogs(); wire(); if (window.PAL_eventRender) try { window.PAL_eventRender(); } catch (e) {} if (window.PAL_renderFronts) try { window.PAL_renderFronts(); if (window.PAL_oneStoryOnePlace) window.PAL_oneStoryOnePlace(); } catch (e) { console.warn(e); } }
+    if (fresh) { blogs(); wire(); try { autoTop(); } catch (e) { console.warn('autoTop', e); } try { clips(); ledes(); stamp(); } catch (e) { console.warn('autopilot', e); } if (window.PAL_eventRender) try { window.PAL_eventRender(); } catch (e) {} if (window.PAL_renderFronts) try { window.PAL_renderFronts(); if (window.PAL_oneStoryOnePlace) window.PAL_oneStoryOnePlace(); } catch (e) { console.warn(e); } }
     paint();
   }
   function blogs() {
@@ -5926,6 +5943,55 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     if (!add.length) return;
     latest.unshift.apply(latest, add);
     try { window.PAL_renderWire(); } catch (e) {}
+  }
+
+  // ===== The code runs the page (Hannah, Tue Oct 27, 2026: "I dont want to rely on claude to run my site. I want the
+  // code to do it"). tools/autopilot.py, every 10 minutes on GitHub Actions.
+  // Top stories: when the hand-written top story has had no development for 3 hours (AUTO.d.auto.takeover), the two
+  // biggest stories right now take its place, each with the newest report's own headline and summary, credited and
+  // linked, "First reported by", the outlet's own photo and caption, and every newsroom carrying it.
+  function autoTop() {
+    const A = AUTO.d.auto, sec = document.getElementById('autoBreaking'), bk = document.getElementById('breaking');
+    if (!sec) return;
+    const list = A && A.takeover ? (A.stories || []).slice(0, 2) : [];
+    if (!list.length) { sec.hidden = true; sec.innerHTML = ''; if (bk && bk.dataset.autoHidden) { bk.hidden = false; delete bk.dataset.autoHidden; } return; }
+    if (bk && !bk.hidden) { bk.hidden = true; bk.dataset.autoHidden = '1'; }
+    const a = (u, t) => '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + t + '</a>';
+    sec.innerHTML = list.map((s, i) => {
+      const ph = s.photo ? '<div class="bart"><span class="ph"><img src="' + esc(AUTO.base + s.photo.src) + '" alt="' + esc(s.photo.alt || '') + '" decoding="async" onerror="this.closest(\'.bart\').remove()"></span></div><p class="bart-cap">' + esc(s.photo.caption) + '</p>' : '';
+      const recent = Date.now() - Date.parse(s.newest) < 3600000;
+      const firstLine = s.first && s.first.url !== s.url ? '<br>First reported by ' + a(s.first.url, esc(s.first.outlet)) + ' · ' + esc(s.first.t) : '';
+      const reps = (s.reports || []).map((r) => '<li><time>' + esc(r.t) + '</time>' + a(r.url, esc(r.title)) + ' <span class="o">' + esc(r.outlet) + ' &#8599;</span></li>').join('');
+      return '<article class="ab-story' + (i ? ' ab-second' : '') + '">' + ph + '<span class="tag">' + (recent ? 'Breaking' : 'Developing') + '</span>'
+        + '<h2>' + a(s.url, esc(s.title)) + '</h2>'
+        + '<p class="first">LATEST ' + a(s.url, esc(s.outlet)) + ' · ' + esc(s.t) + firstLine + '</p>'
+        + (s.summary ? '<p class="bk-dek">' + esc(s.summary) + ' <span class="ab-cr">— ' + esc(s.outlet) + '</span></p>' : '')
+        + '<details class="ab-reps"' + (i ? '' : ' open') + '><summary>' + s.outlets + ' newsrooms on this story</summary><ol>' + reps + '</ol></details>'
+        + '</article>';
+    }).join('') + '<p class="ab-note">Picked and updated automatically at ' + esc(fmt(AUTO.d.checked)) + ' ET, by how many newsrooms carry each story and where it sits on National Newswatch and CBC News. Headlines and summaries are the outlets’ own.</p>';
+    sec.hidden = false;
+  }
+  // Watch: new uploads from the networks' official YouTube channels, Canadian and U.S. first, one per network, up to 12.
+  function clips() {
+    const V = window.PAL_vids; if (!V || !window.PAL_showVids) return;
+    for (let i = V.length - 1; i >= 0; i--) if (V[i].auto) V.splice(i, 1);
+    const have = new Set(V.map((v) => key(v.u))), per = {}, add = [];
+    (AUTO.d.clips || []).forEach((c) => { if (add.length < 12 && !have.has(key(c.u)) && !per[c.o]) { per[c.o] = 1; add.push(Object.assign({ w: '', auto: true }, c)); } });
+    V.unshift.apply(V, add);
+    try { window.PAL_showVids(); } catch (e) {}
+    const el = document.getElementById('vidsChecked'); if (el) { el.textContent = 'Clips checked ' + fmt(AUTO.d.checked) + ' ET'; el.hidden = false; }
+  }
+  // What America's newsrooms are leading with: the top story in each U.S. newsroom's top-stories feed, in its own words.
+  function ledes() {
+    const L = AUTO.d.ledes || []; if (L.length < 4 || !window.PAL_ledes) return;
+    window.PAL_ledes.render(L);
+    const n = document.getElementById('ledesNote');
+    if (n) n.textContent = 'The newest top story from each U.S. newsroom, in its own words, with the story’s own picture so you see where you’re going. Checked automatically at ' + fmt(AUTO.d.checked) + ' ET. Tap to read it there.';
+  }
+  function stamp() {
+    const b = [...document.querySelectorAll('b')].find((x) => /^Updated /.test(x.textContent) && x.style.fontSize === '11px'); if (!b) return;
+    const day = new Date(AUTO.d.checked).toLocaleDateString('en-CA', { weekday: 'long', timeZone: 'America/Toronto' });
+    b.textContent = 'Updated ' + fmt(AUTO.d.checked).replace('AM', 'a.m.').replace('PM', 'p.m.') + ' ET ' + day;
   }
   function photo(root, p) {
     const el = root.querySelector('.bart'); if (!el || !p || el.dataset.auto === p.src) return;

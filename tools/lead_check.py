@@ -94,9 +94,11 @@ def rank(items=None, now=None):
             if len(n & g["n"]) >= 2 or (len(n & g["n"]) >= 1 and len(k & g["k"]) >= 2) or len(k & g["k"]) >= 4:
                 break
         else:
-            g = {"n": set(), "k": set(), "outlets": set(), "bonus": 0, "why": [], "lead": (title, link, outlet), "newest": None}
+            g = {"n": set(), "k": set(), "outlets": set(), "bonus": 0, "why": [], "lead": (title, link, outlet), "newest": None, "rows": []}
             groups.append(g)
         g["n"] |= n; g["k"] |= k
+        if outlet and dt:
+            g["rows"].append((dt, outlet, title, link))
         if outlet:
             g["outlets"].add(outlet.replace(" (subscribers)", ""))
         if bonus and why not in g["why"]:
@@ -119,7 +121,7 @@ def rank(items=None, now=None):
         for m in merged:
             shared = {x for x in g["n"] & m["n"] if 2 <= freq[x] <= 4 and len(x) > 4 and x not in {"canada", "europe", "ottawa", "ontario", "alberta"}}
             if shared:
-                m["n"] |= g["n"]; m["k"] |= g["k"]; m["outlets"] |= g["outlets"]; m["bonus"] += g["bonus"]; m["why"] += g["why"]
+                m["n"] |= g["n"]; m["k"] |= g["k"]; m["outlets"] |= g["outlets"]; m["bonus"] += g["bonus"]; m["why"] += g["why"]; m["rows"] += g["rows"]
                 if g["newest"] and (m["newest"] is None or g["newest"] > m["newest"]):
                     m["newest"] = g["newest"]
                 break
@@ -135,7 +137,7 @@ def rank(items=None, now=None):
         for g in members:
             if g is top:
                 continue
-            top["n"] |= g["n"]; top["k"] |= g["k"]; top["outlets"] |= g["outlets"]; top["bonus"] += g["bonus"]; top["why"] += g["why"]
+            top["n"] |= g["n"]; top["k"] |= g["k"]; top["outlets"] |= g["outlets"]; top["bonus"] += g["bonus"]; top["why"] += g["why"]; top["rows"] += g["rows"]
             if g["newest"] and (top["newest"] is None or g["newest"] > top["newest"]):
                 top["newest"] = g["newest"]
             groups.remove(g)
