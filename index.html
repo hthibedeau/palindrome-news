@@ -6089,7 +6089,9 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
   function autoTop() {
     const A = AUTO.d.auto, sec = document.getElementById('autoBreaking'), bk = document.getElementById('breaking');
     if (!sec) return;
-    const list = A && A.takeover ? (A.stories || []).slice(0, 2) : [];
+    // a story whose own Breaking event is showing right now is told there, so the next candidate takes its place
+    const evShown = (() => { const e = document.getElementById('bkEvent'); return e && !e.hidden ? e.dataset.evid || '' : ''; })();
+    const list = A && A.takeover ? (A.stories || []).filter((s) => !(evShown && (s.events || []).indexOf(evShown) > -1)).slice(0, 2) : [];
     if (!list.length) { sec.hidden = true; sec.innerHTML = ''; if (bk && bk.dataset.autoHidden) { bk.hidden = false; delete bk.dataset.autoHidden; } return; }
     if (bk && !bk.hidden) { bk.hidden = true; bk.dataset.autoHidden = '1'; }
     const a = (u, t) => '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + t + '</a>';
@@ -6104,7 +6106,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
         + (s.summary ? '<p class="bk-dek">' + esc(s.summary) + ' <span class="ab-cr">— ' + esc(s.outlet) + '</span></p>' : '')
         + '<details class="ab-reps"' + (i ? '' : ' open') + '><summary>What each newsroom reports · ' + (s.independent || s.outlets) + ' independent newsrooms</summary><ol>' + reps + '</ol></details>'
         + '</article>';
-    }).join('') + '<p class="ab-note">Picked and updated automatically at ' + esc(fmt(AUTO.d.checked)) + ' ET, by how many newsrooms carry each story and where it sits on National Newswatch and CBC News. Headlines and summaries are the outlets’ own.</p>';
+    }).join('') + '<p class="ab-note">Picked and updated automatically at ' + esc(fmt(AUTO.d.checked)) + ' ET, by how many newsrooms carry each story and where it sits on National Newswatch and CBC News, with stories that touch Canada first: a story from abroad with no Canadian tie gives way to one that has one. Headlines and summaries are the outlets’ own.</p>';
     sec.hidden = false;
   }
   // Watch: new uploads from the networks' official YouTube channels, Canadian and U.S. first, one per network, up to 12.

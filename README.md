@@ -54,6 +54,7 @@ Everything shown is the outlets' own: headlines, summaries, captions, times and 
 The page script (`PAL_orderTop` in `index.html`) keeps this order by itself, whatever is showing:
 
 1. The two Breaking/Developing top stories (the automatic pair, or the hand-written top story and any hand-written Breaking event).
+   The automatic pair is picked by `pick_by_canada()` in `tools/autopilot.py` (Hannah, Oct 28: "If there are Canadian ties to a top story, that should be there instead"). Up to 8 ranked candidates are built. A story from another country with no Canadian tie in the news gives way to the next-ranked story that is Canadian or has a tie. U.S. political stories count as tied when the Canada–U.S. relationship is in the news. Running themes like Canada and the U.S. are split into their separate stories, so a Canada–U.S. story can lead, one per theme in the top pair.
 2. The Canada desk, "Across Canada": today's stories province by province.
 3. A scheduled live broadcast the code has promoted to the event slot, then Live coverage, then everything else.
 

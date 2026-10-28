@@ -35,6 +35,7 @@ import photo_scan as ps  # noqa: E402
 TAKEOVER_HOURS = 3      # hand-written top story with nothing new for this long gives way to the auto top story
 BREAKING_MIN = 60       # newest report within this many minutes: "Breaking"; otherwise "Developing"
 MIN_OUTLETS = 3         # an auto story needs at least this many newsrooms
+CANDIDATES = 8          # top-story candidates built each run; the two shown are picked by pick_by_canada()
 CLIP_HOURS = 36
 WEAK = set("""here's here’s what what's why how who when watch live breaking update updates opinion analysis says said new
 canada canadian canadians ottawa u.s us america american trump carney the a this that it's state states department
@@ -165,6 +166,9 @@ def core_rows(g):
     import gap_check as gc
     from collections import Counter
     rows = sorted({r[3].split("?")[0]: r for r in g["rows"] if _ok(r[1], r[3], r[2]) and not SPORT.search(r[2] + " " + r[3])}.values(), reverse=True)
+    if g.get("theme") and rows:  # one story split out of a running theme (_split_themes): its reports already agree
+        kc = Counter(x for r in rows for x in gc.keys(r[2]) | gc.names(r[2]) if x not in WEAK)
+        return rows, {x for x, n in kc.most_common(6) if n >= 2} or {x for x, n in kc.most_common(3)}
     freq = Counter(x for r in rows for x in gc.names(r[2]) if x not in WEAK)
     if not freq or freq.most_common(1)[0][1] < 3:
         return None
@@ -242,6 +246,37 @@ def build_story(g, now, imgdir, prev):
     }
 
 
+def _split_themes(groups):
+    """A running theme (e.g. Canada and the U.S.) is ranked as one group but holds many separate stories. Split it into
+    its own stories (reports with near-identical headlines), biggest first, each keeping the theme's rank, so the
+    Canada-U.S. stories of the day can be top stories (Hannah, Wed Oct 28: "so much coming out about the Canada-US
+    relationship"). Only stories that name Canada are kept from a Canada theme."""
+    import gap_check as gc
+    out = []
+    for g in groups:
+        if not g.get("theme"):
+            out.append(g)
+            continue
+        clusters = []
+        for r in sorted(g["rows"], reverse=True):
+            k = gc.keys(r[2])
+            for c in clusters:
+                if len(k & c["k"]) >= 3 or re.sub(r"\W", "", r[2].lower()) == c["t"]:
+                    c["rows"].append(r)
+                    c["k"] |= k
+                    break
+            else:
+                clusters.append({"rows": [r], "k": set(k), "t": re.sub(r"\W", "", r[2].lower())})
+        subs = []
+        for c in clusters:
+            if not any(CAN_TIE.search(r[2]) for r in c["rows"]):
+                continue
+            subs.append({"rows": c["rows"], "n": set().union(*(gc.names(r[2]) for r in c["rows"])), "score": g["score"], "theme": g["theme"]})
+        subs.sort(key=lambda c: len({r[1] for r in c["rows"]}), reverse=True)
+        out += subs[:3]
+    return out
+
+
 def auto_stories(groups, page, breaking, now, imgdir, prev):
     """The two biggest stories, built from the outlets' own reports. Skips a story already in the Breaking segment
     unless the hand-written top story is stale (then the auto version replaces it)."""
@@ -253,12 +288,14 @@ def auto_stories(groups, page, breaking, now, imgdir, prev):
         if words:
             rxs.append((st, re.compile("|".join(re.escape(x) for x in words), re.I)))
     out = []
-    for g in groups[:12]:
+    for g in _split_themes(groups[:16]):
         hits = [st for st, rx in rxs if sum(1 for r in g["rows"] if rx.search(r[2])) >= 2]
         on_top = any(st["where"].startswith("Top") for st in hits)
-        on_event = any(not st["where"].startswith("Top") for st in hits)
-        if on_event or (on_top and not stale):
+        events = [st["where"].split("UPNEXT ")[-1].rstrip(")") for st in hits if not st["where"].startswith("Top")]
+        if on_top and not stale:
             continue  # the page already carries it, kept current by hand
+        # A story with its own Breaking event stays a candidate: the page drops it from the top pair only while that
+        # event is actually showing (otherwise the biggest story could vanish from the top of the page altogether).
         try:
             s = build_story(g, now, imgdir, prev)
         except Exception as e:
@@ -266,9 +303,11 @@ def auto_stories(groups, page, breaking, now, imgdir, prev):
             s = None
         if s:
             s["replaces_top"] = on_top
+            s["events"] = events
+            s["theme"] = g.get("theme") or ""
             out.append(s)
-        if len(out) >= 2:
-            break
+        if len(out) >= CANDIDATES:
+            break  # more than two: pick_by_canada() keeps the two with Canadian ties first
     return {"takeover": bool(stale and out), "stale_since": lastdev.isoformat() if lastdev else None, "stories": out}
 
 
@@ -997,6 +1036,65 @@ def canadian_angle_live(items, now, res):
     return out
 
 
+def canada_tie(s, items, now, eds, papers, otr, canus_):
+    """'canadian' (a Canadian story), 'tie' (from another country, with a Canadian angle in the news) or 'none'."""
+    import autoupdate as au
+    title = s.get("title", "")
+    if CAN_TIE.search(title + " " + s.get("summary", "")):
+        return "canadian"
+    recent = _recent(items, now)
+    own = {r["url"] for r in s.get("reports", [])}
+    mine = [x for x in recent if x[3] in own]
+    if mine and sum(1 for x in mine if CAN_TIE.search(x[2])) * 2 >= len(mine):
+        return "canadian"
+    if _angle(title, s.get("words") or [], mine, recent, eds, papers, otr, _pool(canus_), (s.get("words") or [])[:4]):
+        return "tie"
+    foreign = US_STORY.search(title) or (mine and sum(1 for x in mine if FOREIGN_SRC.search(x[3]) or au.US.search(x[1]) or au.WORLDO.search(x[1])) / len(mine) >= FOREIGN_SHARE)
+    return "none" if foreign else "canadian"
+
+
+def pick_by_canada(auto, items, now, eds, papers, otr, canus_):
+    """Hannah, Wed Oct 28, 2026: "If there are Canadian ties to a top story, that should be there instead ... the
+    Bolsonaro story does not have any Canadian ties, but the JD Vance has multiple. I would switch those out"
+    ("especially with so much coming out about the Canada-US relationship"). Of the ranked candidates, the two top
+    stories are the highest-ranked ones that are Canadian or tied to Canada (U.S. political stories count when the
+    Canada-U.S. relationship is in the news); a story from another country with no Canadian tie only fills a slot
+    when nothing else qualifies."""
+    cands = (auto or {}).get("stories") or []
+    for s in cands:
+        try:
+            s["canada"] = canada_tie(s, items, now, eds, papers, otr, canus_)
+        except Exception as e:
+            print("canada tie failed:", e)
+            s["canada"] = "canadian"
+    # first: the Canada-U.S. relationship and stories from abroad with a Canadian tie; then other Canadian stories;
+    # last: stories from abroad with no Canadian tie. Within each, the ranking order (newsrooms, Newswatch, CBC).
+    def canus_story(s):
+        text = s["title"] + " " + " ".join(r["title"] for r in s.get("reports", [])[:6])
+        return bool(CANUS.search(text) or (CAN_TIE.search(text) and US_TIE.search(text)))
+    for s in cands:
+        s["canus"] = canus_story(s)
+    tier = lambda s: 2 if s["canada"] == "none" else 0
+    ranked = sorted(cands, key=tier)  # stable: keeps the ranking order (newsrooms, Newswatch, CBC) within each tier
+    # one story per running theme in the top pair, so Canada-U.S. leads without crowding out everything else
+    # (the rest of the day's Canada-U.S. stories are in the Canada and the U.S. section and the Canadian angle sidebars)
+    seen_t, top2, rest = set(), [], []
+    for s in ranked:
+        t = s.get("theme")
+        if len(top2) < 2 and not (t and t in seen_t):
+            top2.append(s)
+            if t:
+                seen_t.add(t)
+        else:
+            rest.append(s)
+    ranked = top2 + rest
+    # keep spares so the page can step past a story whose own Breaking event is showing
+    auto["stories"] = ranked[:2] + [s for s in ranked[2:4] if tier(s) < 2 and any(x.get("events") for x in ranked[:2])]
+    auto["passed_over"] = [{"title": s["title"], "url": s["url"]} for s in cands if tier(s) == 2 and s not in ranked[:2]]
+    print("top stories:", " | ".join(f"{s['title'][:50]} [{s['canada']}{' canus' if s['canus'] else ''}]" for s in cands), "->", [s["key"] for s in auto["stories"]])
+    return auto
+
+
 # ===== Most read across Canada: built from the newsrooms' own most-read / trending lists (whichever publish one on
 # their front page), ranked by how high and how widely each story sits on them.
 MOST_READ_SITES = [
@@ -1278,6 +1376,12 @@ def run(page, items, groups, breaking, now, imgdir, prev):
         except Exception as e:  # never block the run
             print(f"autopilot {name} failed:", e)
             res[name] = prev.get(name) or ({} if name in ("auto", "canus", "mostread") else None if name == "brief" else [])
+    try:  # the two top stories: Canadian ties first
+        res["auto"] = pick_by_canada(res.get("auto") or {}, items, now, res.get("eds"), res.get("papers"), res.get("otr"), res.get("canus"))
+    except Exception as e:
+        print("autopilot pick failed:", e)
+        if res.get("auto"):
+            res["auto"]["stories"] = (res["auto"].get("stories") or [])[:2]
     a = res.get("auto") or {}
     named = [(st["name"], re.compile("|".join(re.escape(x) for x in words), re.I)) for st, words in breaking if words]
     named += [(s_["title"][:60], re.compile(r"\b(" + "|".join(re.escape(x) for x in s_["words"]) + r")\b", re.I), 2) for s_ in a.get("stories", []) if s_.get("words")]
