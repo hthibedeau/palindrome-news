@@ -601,7 +601,7 @@ def on_the_record(page, now):
 
 # ===== Live video, by itself (Hannah: "the new television of this century"): streams that are live NOW on the networks'
 # official YouTube channels, and the ones they have scheduled, named by story. 24-hour channel streams go in one line.
-ALWAYS_ON = re.compile(r"24/7|🔴|English \| Live|News Live\b|LIVE:? Latest|live stream of|livestream|Live News|Breaking News Live|news channel", re.I)
+ALWAYS_ON = re.compile(r"24/7|🔴|English \| Live|English Live|News NOW\b|^Watch .* live\b|News Live\b|LIVE:? Latest|live stream of|livestream|Live News|Breaking News Live|news channel", re.I)
 
 
 EVENT = re.compile(r"news conference|press conference|briefing|address|speech|speaks|statement|debate|Question Period|hearing|"
@@ -658,12 +658,26 @@ def sched_time(txt):
 
 
 def name_story(title, named):
-    for name, rx in named:
-        if rx.search(title):
+    for nm in named:
+        name, rx, need = (nm + (1,))[:3]
+        if len({m.group(0).lower() for m in rx.finditer(title)}) >= need:
             return name
     t = re.sub(r"^(LIVE|WATCH LIVE|LIVE NOW)\s*[:|-]\s*", "", title, flags=re.I)
     t = re.split(r"\s+[|–—]\s+", t)[0]
     return t[:70]
+
+
+# Live-only channels, besides CHANNELS: U.S. live-event networks, government channels (each checked against the
+# channel's own name on YouTube; the PM's is the one pm.gc.ca links to) and more world networks.
+LIVE_EXTRA = [
+    ("Prime Minister of Canada", "@CanadianPM", "ca"),
+    ("LiveNOW from FOX", "@LiveNOWFOX", "us"), ("NewsNation", "@NewsNation", "us"), ("MS NOW", "@MSNOW", "us"),
+    ("Scripps News", "@ScrippsNews", "us"), ("Forbes Breaking News", "@ForbesBreakingNews", "us"),
+    ("The White House", "@WhiteHouse", "us"), ("U.S. Department of State", "@StateDept", "us"),
+    ("FRANCE 24 English", "channel/UCQfwfsi5VrQ8yKZ-UWmAEFg", "world"), ("euronews", "@euronews", "world"),
+    ("ABC News (Australia)", "@abcnewsaustralia", "world"), ("CNA", "channel/UC83jt4dlz1Gjl58fzQrrKZg", "world"),
+    ("10 Downing Street", "@10DowningStreet", "world"), ("NATO", "@NATO", "world"),
+]
 
 
 def live_video(page, named, now):
@@ -673,11 +687,16 @@ def live_video(page, named, now):
     def one(ch):
         net, addr, region = ch
         try:
+            if ch in LIVE_EXTRA:
+                x = curl("https://www.youtube.com/" + addr)
+                if clean(ps.meta(x, "og:title")).lower() != net.lower():
+                    print(f"live: skipped {net}: not the official channel name")
+                    return net, region, []
             return net, region, yt_streams(addr)
         except Exception:
             return net, region, []
     with ThreadPoolExecutor(8) as ex:
-        got = list(ex.map(one, CHANNELS))
+        got = list(ex.map(one, CHANNELS + LIVE_EXTRA))
     for net, region, streams in got:
         for st in streams[:12]:
             if re.search(r"#shorts|\bNFL\b|\bNBA\b|\bNHL\b|\bMLB\b|highlights", st["title"], re.I):
@@ -687,7 +706,7 @@ def live_video(page, named, now):
             if st["state"] == "live":
                 item["watching"] = st["watching"]
                 (res["always"] if ALWAYS_ON.search(st["title"]) else res["now"]).append(item)
-            elif st["state"] == "upcoming" and len(res["upcoming"]) < 24 and (EVENT.search(st["title"]) or any(rx.search(st["title"]) for _, rx in named)):
+            elif st["state"] == "upcoming" and len(res["upcoming"]) < 24 and (EVENT.search(st["title"]) or any(nm[1].search(st["title"]) for nm in named)):
                 t = sched_time(st.get("sched", ""))
                 if t and 0 < (t - now).total_seconds() < 36 * 3600:
                     item["when"] = t.isoformat()
@@ -695,7 +714,12 @@ def live_video(page, named, now):
     order = {"ca": 0, "us": 1, "world": 2}
     res["now"].sort(key=lambda i: order[i["r"]])
     res["upcoming"].sort(key=lambda i: i["when"])
-    res["always"] = [{"net": i["net"], "url": i["url"]} for i in res["always"]][:8]
+    seen_net, alw = set(), []
+    for i in res["always"]:
+        if i["net"] not in seen_net:
+            seen_net.add(i["net"])
+            alw.append({"net": i["net"], "url": i["url"]})
+    res["always"] = alw[:10]
     return res
 
 
@@ -889,6 +913,34 @@ def smaller(items, page, now, imgdir):
     return out
 
 
+# ===== Live blogs, by themselves: any newsroom's live-updates page in the feeds (last 6 hours), named by story.
+LIVE_BLOG = re.compile(r"live updates|live blog|liveblog|as it happened|\blive:|^live\b|— live|- live$|live coverage|live results", re.I)
+
+
+def live_blogs(items, named, now):
+    import autoupdate as au
+    out, seen = [], set()
+    for dt, outlet, title, link, k in items:
+        if (now - dt).total_seconds() > 6 * 3600 or not au.ok_item(outlet, link) or au.FRENCH.search(outlet):
+            continue
+        if not (LIVE_BLOG.search(title) or re.search(r"/live(blog|-updates|-blog)?/|liveblog|live-updates|/live$", link)):
+            continue
+        if VIDEO.search(link) or SPORT.search(title + " " + link):
+            continue
+        story = name_story(title, named)
+        key = (au.clean_outlet(outlet), story)
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append({"net": au.clean_outlet(outlet), "story": story, "title": clean(title), "url": link, "updated": dt.isoformat()})
+    named_first = [o for o in out if any(nm[1].search(o["title"]) for nm in named)]
+    out = (named_first + [o for o in out if o not in named_first])[:12]
+    with ThreadPoolExecutor(6) as ex:  # a picture for every tile: the blog's own share image
+        for o, info in zip(out, ex.map(lambda o: page_info(o["url"]), out)):
+            o["img"] = (info or {}).get("img", "")
+    return out
+
+
 def run(page, items, groups, breaking, now, imgdir, prev):
     res = {}
     for name, f in [("auto", lambda: auto_stories(groups, page, breaking, now, imgdir, (prev.get("auto") or {}).get("stories", []))),
@@ -905,13 +957,14 @@ def run(page, items, groups, breaking, now, imgdir, prev):
             res[name] = prev.get(name) or ({} if name in ("auto", "canus", "mostread") else None if name == "brief" else [])
     a = res.get("auto") or {}
     named = [(st["name"], re.compile("|".join(re.escape(x) for x in words), re.I)) for st, words in breaking if words]
-    named += [(s_["title"][:60], re.compile("|".join(re.escape(x) for x in s_["words"]), re.I)) for s_ in a.get("stories", []) if s_.get("words")]
-    for name, f in [("live", lambda: live_video(page, named, now)), ("pm", lambda: pm_itinerary(now))]:
+    named += [(s_["title"][:60], re.compile(r"\b(" + "|".join(re.escape(x) for x in s_["words"]) + r")\b", re.I), 2) for s_ in a.get("stories", []) if s_.get("words")]
+    for name, f in [("live", lambda: live_video(page, named, now)), ("pm", lambda: pm_itinerary(now)), ("blogs_auto", lambda: live_blogs(items, named, now))]:
         try:
             res[name] = f()
         except Exception as e:
             print(f"autopilot {name} failed:", e)
             res[name] = prev.get(name) or ({} if name == "live" else [])
+    print(f"autopilot live blogs: {len(res.get('blogs_auto') or [])}")
     try:
         keyed = [("top" if st["where"].startswith("Top") else st["where"].split("UPNEXT ")[-1].rstrip(")"), words, set()) for st, words in breaking]
         keyed += [(s_["key"], s_.get("words") or [], {r["url"] for r in s_["reports"]}) for s_ in a.get("stories", [])]

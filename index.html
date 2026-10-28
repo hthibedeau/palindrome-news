@@ -6134,9 +6134,11 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     [L, C].forEach((arr) => { for (let i = arr.length - 1; i >= 0; i--) if (arr[i].auto) arr.splice(i, 1); });
     const until = new Date(Date.parse(AUTO.d.checked) + 25 * 60000).toISOString();
     const have = new Set(L.concat(C).map((x) => x.url));
-    (V.now || []).forEach((x) => { if (!have.has(x.url)) L.push({ kind: 'video', story: x.story, net: x.net, what: 'Live on YouTube: ' + x.title + (x.watching ? ' · ' + x.watching + ' watching' : ''), url: x.url, updated: AUTO.d.checked, until, img: x.img, auto: true }); });
+    (V.now || []).forEach((x) => { if (!have.has(x.url)) L.push({ kind: 'video', story: x.story, net: x.net, what: 'Live on YouTube: ' + x.title.replace(/^\s*(LIVE|WATCH LIVE|LIVE NOW)\s*[:|-]\s*/i, '') + (x.watching ? ' · ' + x.watching + ' watching' : ''), url: x.url, updated: AUTO.d.checked, until, img: x.img, auto: true }); });
     (V.upcoming || []).forEach((x) => { if (!have.has(x.url)) C.push({ story: x.story, net: x.net, what: x.title, where: 'YouTube', when: x.when, until: new Date(Date.parse(x.when) + 90 * 60000).toISOString(), url: x.url, img: x.img, auto: true }); });
     (AUTO.d.pm || []).forEach((x) => C.push(Object.assign({ until: new Date(Date.parse(x.when) + 45 * 60000).toISOString(), auto: true }, x)));
+    const haveK = new Set(L.concat(C).map((x) => key(x.url))), blogNets = new Set(L.filter((x) => x.kind === 'updates').map((x) => x.net));
+    (AUTO.d.blogs_auto || []).forEach((x) => { if (!haveK.has(key(x.url)) && !blogNets.has(x.net) && blogNets.add(x.net)) L.push({ kind: 'updates', story: x.story, net: x.net, what: x.title, url: x.url, updated: x.updated, img: x.img, auto: true }); });
     if (AL) { const nets = new Set(AL.map((a) => a[0])); (V.always || []).forEach((x) => { const n = x.net + ' (live on YouTube)'; if (!nets.has(x.net) && !nets.has(n)) { nets.add(n); AL.push([n, x.url]); } }); }
     if (window.PAL_liveCoverageRender) try { window.PAL_liveCoverageRender(); } catch (e) { console.warn('live', e); }
   }
