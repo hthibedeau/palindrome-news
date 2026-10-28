@@ -1243,6 +1243,27 @@ header.site { border-bottom: 0; }
 @media (hover: hover) { .tab-more > summary:hover, .dev-bgd > summary:hover, .bk-folded > summary:hover { filter: brightness(.95); text-decoration: underline; text-underline-offset: 3px; } }
 .tab-more > summary:focus-visible, .dev-bgd > summary:focus-visible, .bk-folded > summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
 @media (prefers-reduced-motion: reduce) { .tab-more > summary::before, .dev-bgd > summary::before, .bk-folded > summary::before { transition: none; } }
+/* Top stories with pizzazz */
+.breaking { background: radial-gradient(120% 140% at 0% 0%, #8E2448 0%, #7A1F3D 38%, #4A1745 72%, #2B1B54 100%); box-shadow: 0 18px 40px -18px rgba(43,27,84,.65); position: relative; overflow: hidden; }
+.breaking.top { background: radial-gradient(120% 140% at 0% 0%, #4B2F86 0%, #2B1B54 60%, #1E1240 100%); }
+.breaking .bart, .breaking .ev-media .bart { border-radius: 8px !important; overflow: hidden; box-shadow: 0 12px 28px -12px rgba(0,0,0,.55); }
+.breaking .bart img { transition: transform 1.2s ease; }
+@media (hover: hover) { .breaking .bart:hover img { transform: scale(1.04); } }
+.breaking h2 a, .breaking h2 { text-wrap: balance; }
+.cov { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 4px 0 14px; position: relative; z-index: 3; }
+.cov .cov-n { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: #F6E1E8; margin-right: 4px; }
+.cov .cov-n b { font-size: 15px; color: #FFFFFF; letter-spacing: 0; margin-right: 2px; }
+.cov .cov-o { display: inline-flex; align-items: center; min-height: 30px; padding: 3px 11px; border-radius: 999px; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.22); color: #FFFFFF; font-size: 13px; font-weight: 600; text-decoration: none; transition: background .2s; }
+.cov .cov-o:hover { background: rgba(255,255,255,.24); }
+.cov .cov-more { font-size: 12px; color: #F6E1E8; }
+.fresh { display: inline-flex; align-items: center; gap: 7px; padding: 4px 10px; border-radius: 999px; background: rgba(15,11,25,.35); color: #FFFFFF; font-size: 12px; font-weight: 700; letter-spacing: .04em; vertical-align: middle; margin-left: 8px; position: relative; z-index: 3; }
+.fresh i { width: 8px; height: 8px; border-radius: 50%; background: #F2A7C3; display: inline-block; }
+.fresh.hot i { background: #FF6B8E; box-shadow: 0 0 0 0 rgba(255,107,142,.7); animation: freshPulse 1.8s infinite; }
+@keyframes freshPulse { 0% { box-shadow: 0 0 0 0 rgba(255,107,142,.7); } 70% { box-shadow: 0 0 0 9px rgba(255,107,142,0); } 100% { box-shadow: 0 0 0 0 rgba(255,107,142,0); } }
+@media (prefers-reduced-motion: reduce) { .fresh.hot i { animation: none; } .breaking .bart img { transition: none; } }
+.breaking .auto-news { border-left-color: #F2A7C3 !important; background: rgba(15,11,25,.28) !important; }
+.breaking .auto-news h4 { color: #F7C6D8 !important; }
+.rel-box { background: rgba(15,11,25,.22); border-radius: 8px; padding: 6px 14px 8px !important; border-top: 0 !important; }
 </style>
 
 <header class="site" id="top">
@@ -5972,7 +5993,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     const fresh = !AUTO || AUTO.d.checked !== got[0].d.checked;
     AUTO = got[0];
     deadLinks();
-    if (fresh) { blogs(); wire(); try { autoTop(); } catch (e) { console.warn('autoTop', e); } try { clips(); ledes(); stamp(); papers(); eds(); canus(); brief(); bds(); otr(); live(); related(); mostRead(); smaller(); } catch (e) { console.warn('autopilot', e); } if (window.PAL_eventRender) try { window.PAL_eventRender(); } catch (e) {} if (window.PAL_renderFronts) try { window.PAL_renderFronts(); if (window.PAL_oneStoryOnePlace) window.PAL_oneStoryOnePlace(); } catch (e) { console.warn(e); } }
+    if (fresh) { blogs(); wire(); try { autoTop(); } catch (e) { console.warn('autoTop', e); } try { clips(); ledes(); stamp(); papers(); eds(); canus(); brief(); bds(); otr(); live(); related(); mostRead(); smaller(); dazzle(); } catch (e) { console.warn('autopilot', e); } if (window.PAL_eventRender) try { window.PAL_eventRender(); } catch (e) {} if (window.PAL_renderFronts) try { window.PAL_renderFronts(); if (window.PAL_oneStoryOnePlace) window.PAL_oneStoryOnePlace(); } catch (e) { console.warn(e); } }
     paint();
   }
   function blogs() {
@@ -6177,6 +6198,55 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     ol.innerHTML = S.map((x) => '<li class="tap"><a class="snimg" href="' + esc(x.u) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + (x.img ? '<img src="' + esc(x.img) + '" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">' : '') + '</a><div class="snt"><span class="snk"><b>' + esc(x.o) + '</b><span>' + esc(x.region) + ' </span>' + (x.arctic ? '<span class="arc">Arctic</span>' : '') + '</span><h3><a class="card-link" href="' + esc(x.u) + '" target="_blank" rel="noopener">' + esc(x.h) + '</a></h3>' + (x.desc ? '<p>' + esc(x.desc) + '</p>' : '') + '<span class="snw">' + esc(x.t) + '</span></div></li>').join('');
     const n = document.getElementById('snNote'); if (n) n.textContent = 'Today’s top five from independent and northern newsrooms, the Arctic first. Checked automatically at ' + fmt(AUTO.d.checked) + ' ET.';
   }
+
+  // ===== Top stories with pizzazz (Hannah, Tue Oct 27: "give the top stories more pizzazz and make them appealing to
+  // someone collecting news from an aggregator"). On every top story, by itself:
+  //  - "Covered by N newsrooms": a strip of the outlets reporting it, each a one-tap link to that outlet's own report;
+  //  - a live "Updated N min ago" pill from the newest report, pulsing while the story is fresh.
+  const HOSTS = { 'cbc.ca': 'CBC News', 'ctvnews.ca': 'CTV News', 'globalnews.ca': 'Global News', 'cp24.com': 'CP24', 'citynews.ca': 'CityNews',
+    'thestar.com': 'Toronto Star', 'nationalpost.com': 'National Post', 'theglobeandmail.com': 'The Globe and Mail', 'bnnbloomberg.ca': 'BNN Bloomberg',
+    'torontosun.com': 'Toronto Sun', 'ottawacitizen.com': 'Ottawa Citizen', 'calgaryherald.com': 'Calgary Herald', 'edmontonjournal.com': 'Edmonton Journal',
+    'vancouversun.com': 'Vancouver Sun', 'timescolonist.com': 'Times Colonist', 'winnipegfreepress.com': 'Winnipeg Free Press', 'thetyee.ca': 'The Tyee',
+    'dailyhive.com': 'Daily Hive', 'narcity.com': 'Narcity', 'nationalobserver.com': 'National Observer', 'aptnnews.ca': 'APTN News', 'cpac.ca': 'CPAC',
+    'thecanadianpress.com': 'The Canadian Press', 'castanet.net': 'Castanet', 'nunatsiaq.com': 'Nunatsiaq News', 'cabinradio.ca': 'Cabin Radio',
+    'apnews.com': 'AP', 'reuters.com': 'Reuters', 'cbsnews.com': 'CBS News', 'nbcnews.com': 'NBC News', 'abcnews.com': 'ABC News', 'abcnews.go.com': 'ABC News',
+    'pbs.org': 'PBS', 'npr.org': 'NPR', 'foxnews.com': 'Fox News', 'cnn.com': 'CNN', 'thehill.com': 'The Hill', 'axios.com': 'Axios', 'politico.com': 'Politico',
+    'nytimes.com': 'The New York Times', 'washingtonpost.com': 'The Washington Post', 'wsj.com': 'The Wall Street Journal', 'bbc.co.uk': 'BBC News', 'bbc.com': 'BBC News',
+    'theguardian.com': 'The Guardian', 'aljazeera.com': 'Al Jazeera', 'euronews.com': 'Euronews', 'kyivindependent.com': 'Kyiv Independent', 'canada.ca': 'Government of Canada',
+    'pm.gc.ca': 'Prime Minister', 'alberta.ca': 'Government of Alberta', 'ourcommons.ca': 'House of Commons', 'whitehouse.gov': 'The White House', 'todayinbc.com': 'Today in B.C.' };
+  const outletOf = (u) => { try { const h = new URL(u).hostname.replace(/^www\.|^amp\./, ''); const k = Object.keys(HOSTS).find((d) => h === d || h.endsWith('.' + d)); return k ? HOSTS[k] : ''; } catch (e) { return ''; } };
+  function agoText(ms) { const m = Math.max(0, Math.round((Date.now() - ms) / 60000)); return m < 1 ? 'just now' : m < 60 ? m + ' min ago' : m < 1440 ? Math.floor(m / 60) + ' hr' + (m % 60 >= 1 ? ' ' + (m % 60) + ' min' : '') + ' ago' : ''; }
+  function dazzle() {
+    const roots = [document.getElementById('breaking'), document.querySelector('#bkEvent:not([hidden])')].concat([...document.querySelectorAll('#autoBreaking .ab-story')]);
+    roots.forEach((root) => {
+      if (!root || root.hidden || root.offsetParent === null) return;
+      const h2 = root.querySelector('h2'); if (!h2) return;
+      // the newsrooms on this story: every outlet linked in it, the outlet's own report (skip connected stories)
+      const by = new Map();
+      root.querySelectorAll('a[href^="http"]').forEach((a) => { if (a.closest('.rel-box, .cov')) return; const o = outletOf(a.href); if (o && !by.has(o)) by.set(o, a.href); });
+      const auto = (AUTO.d.stories || []).find((x) => (x.key === 'top' && root.id === 'breaking') || (root.id === 'bkEvent' && root.dataset.evid === x.key));
+      ((auto && auto.reports) || []).forEach((r) => { if (r.outlet && !by.has(r.outlet)) by.set(r.outlet, r.url); });
+      let cov = root.querySelector('.cov');
+      if (by.size >= 2) {
+        if (!cov) { cov = document.createElement('div'); cov.className = 'cov'; h2.after(cov); }
+        const list = [...by.entries()], show = list.slice(0, 8);
+        cov.innerHTML = '<span class="cov-n"><b>' + list.length + '</b> newsrooms on this story</span>' + show.map(([o, u]) => '<a class="cov-o" href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(o) + '</a>').join('') + (list.length > 8 ? '<span class="cov-more">+' + (list.length - 8) + ' more</span>' : '');
+      }
+      // live "Updated N min ago" from the newest dated report on the story
+      let newest = Date.parse(root.dataset.lastdev || '') || 0;
+      ((auto && auto.reports) || []).forEach((r) => { const t = Date.parse(r.iso); if (t > newest) newest = t; });
+      root.querySelectorAll('.tl time[datetime], time[datetime]').forEach((t) => { const v = Date.parse(t.getAttribute('datetime')); if (v > newest && v <= Date.now()) newest = v; });
+      if (root.classList.contains('ab-story')) { const a = (AUTO.d.auto && AUTO.d.auto.stories || []).find((x) => x.key === root.dataset.key); if (a) newest = Math.max(newest, Date.parse(a.newest) || 0); }
+      let pill = root.querySelector('.fresh');
+      const txt = newest ? agoText(newest) : '';
+      if (txt) {
+        if (!pill) { pill = document.createElement('span'); pill.className = 'fresh'; const tag = root.querySelector('.ev-tag') || root.querySelector('.tag'); if (tag) (tag.classList.contains('ev-tag') ? tag.appendChild(pill) : tag.after(pill)); else h2.before(pill); }
+        pill.classList.toggle('hot', Date.now() - newest < 3 * 3600e3);
+        pill.innerHTML = '<i></i>Updated ' + esc(txt);
+      } else if (pill) pill.remove();
+    });
+  }
+  setInterval(() => { if (AUTO) dazzle(); }, 60000);
   function photo(root, p) {
     const el = root.querySelector('.bart'); if (!el || !p || el.dataset.auto === p.src) return;
     // a photo the editors set later than the auto photo was posted stays (data-photo-set)
@@ -6214,9 +6284,10 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     });
   }
   const ev = document.getElementById('bkEvent');
-  if (ev && window.MutationObserver) new MutationObserver((ms) => { if (ms.some((m) => [...m.addedNodes].some((n) => !(n.classList && (n.classList.contains('rel-box') || n.classList.contains('auto-news')))))) { paint(); if (AUTO) related(); } }).observe(ev, { childList: true });
+  if (ev && window.MutationObserver) new MutationObserver((ms) => { if (ms.some((m) => [...m.addedNodes].some((n) => !(n.classList && (n.classList.contains('rel-box') || n.classList.contains('auto-news') || n.classList.contains('cov') || n.classList.contains('fresh')))))) { paint(); if (AUTO) { related(); dazzle(); } } }).observe(ev, { childList: true });
   setTimeout(load, 1500); setInterval(load, 120000);
-  let rz; window.addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(() => { if (AUTO) { paint(); related(); } }, 400); });
+  let rz; window.addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(() => { if (AUTO) { paint(); related(); dazzle(); } }, 400); });
+  setTimeout(() => { if (AUTO) dazzle(); }, 4000);
   window.PAL_autoupdate = { load, get data() { return AUTO && AUTO.d; } };
 })();
 </script>
