@@ -1264,6 +1264,19 @@ header.site { border-bottom: 0; }
 .breaking .auto-news { border-left-color: #F2A7C3 !important; background: rgba(15,11,25,.28) !important; }
 .breaking .auto-news h4 { color: #F7C6D8 !important; }
 .rel-box { background: rgba(15,11,25,.22); border-radius: 8px; padding: 6px 14px 8px !important; border-top: 0 !important; }
+.bk-chan .chan-cell { display: flex; flex-direction: column; background: rgba(15, 11, 25, .28); border-radius: 4px; scroll-snap-align: start; min-width: 0; }
+.bk-chan .chan-cell > .chan { background: none; flex: 1 1 auto; }
+.chan-also { display: flex; flex-wrap: wrap; align-items: center; gap: 5px; padding: 0 8px 8px; }
+.chan-also span { width: 100%; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; opacity: .8; color: #FFFFFF; }
+.chan-also a { display: inline-flex; align-items: center; min-height: 30px; padding: 2px 10px; border-radius: 999px; background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.25); color: #FFFFFF; font-size: 12px; font-weight: 600; text-decoration: none; }
+.chan-also a.off { background: rgba(242,167,195,.22); border-color: rgba(242,167,195,.5); }
+.chan-reps { padding: 0 8px 8px; color: #FFFFFF; }
+.chan-reps summary { cursor: pointer; min-height: 32px; display: flex; align-items: center; font-size: 12px; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+.chan-reps ol { list-style: none; margin: 0; padding: 0; }
+.chan-reps li { padding: 6px 0; border-top: 1px solid rgba(255,255,255,.16); font-size: 13px; line-height: 1.35; }
+.chan-reps li a { color: #FFFFFF; }
+.chan-reps li span { display: block; font-size: 11px; opacity: .75; }
+@media (max-width: 560px) { .bk-chan .chan-row > .chan-cell { scroll-snap-align: start; } }
 </style>
 
 <header class="site" id="top">
@@ -2620,7 +2633,10 @@ header.site { border-bottom: 0; }
       const evStory = ((window.PAL_UPNEXT || []).find((e) => bkNames[1] && bkNames[1].indexOf(String(e.h || '').toLowerCase().slice(0, 30)) === 0) || {}).story || '';
       const inBreaking = (c) => { const st = String(c.story || '').replace(/^the\s+/i, '').toLowerCase(); return !!st && ((bkNames[0] && (st.indexOf(bkNames[0]) === 0 || bkNames[0].indexOf(st) === 0)) || (evStory && st.indexOf(evStory.toLowerCase()) === 0)); };
       const later = up.filter((c) => now < Date.parse(c.when) && !inBreaking(c));
-      const tile = (c, badge, cls, meta, go) => '<a class="chan" href="' + esc(c.url) + '" target="_blank" rel="noopener">' + pic(c, badge, cls) + '<span class="chan-story">' + esc(c.story) + '</span><span class="chan-net">' + esc(c.net) + '</span><span class="chan-what">' + esc(c.what) + '</span>' + (meta ? '<span class="chan-meta">' + meta + '</span>' : '') + '<span class="chan-go">' + go + ' &#8599;</span></a>';
+      const tile0 = (c, badge, cls, meta, go) => '<a class="chan" href="' + esc(c.url) + '" target="_blank" rel="noopener">' + pic(c, badge, cls) + '<span class="chan-story">' + esc(c.story) + '</span><span class="chan-net">' + esc(c.net) + '</span><span class="chan-what">' + esc(c.what) + '</span>' + (meta ? '<span class="chan-meta">' + meta + '</span>' : '') + '<span class="chan-go">' + go + ' &#8599;</span></a>';
+      const tile = (c, badge, cls, meta, go) => '<div class="chan-cell">' + tile0(c, badge, cls, meta, go) +
+        (c.also && c.also.length ? '<div class="chan-also"><span>Also live on</span>' + c.also.map((a) => '<a href="' + esc(a.url) + '" target="_blank" rel="noopener"' + (a.official ? ' class="off"' : '') + '>' + esc(a.net.replace(' - Banque du Canada', '')) + '</a>').join('') + '</div>' : '') +
+        (c.reports && c.reports.length ? '<details class="chan-reps"><summary>' + c.reports.length + ' newsrooms reporting it</summary><ol>' + c.reports.map((r) => '<li><a href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(r.title) + '</a> <span>' + esc(r.outlet) + ' · ' + esc(r.t) + '</span></li>').join('') + '</ol></details>' : '') + '</div>';
       const nowTiles = onNow.map((c) => tile(c, 'LIVE VIDEO', 'v', 'On now' + (c.where ? ' · ' + esc(c.where) : ''), 'Watch live')).concat(live.map((c) => c.kind === 'video'
         ? tile(c, 'LIVE VIDEO', 'v', '', 'Watch live')
         : c.kind === 'official' ? tile(c, 'OFFICIAL SOURCE', 'u', c.updated ? 'Checked ' + esc(fmtT(new Date(c.updated))) + ' ET' : '', 'Open the official page')
@@ -6156,8 +6172,8 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     [L, C].forEach((arr) => { for (let i = arr.length - 1; i >= 0; i--) if (arr[i].auto) arr.splice(i, 1); });
     const until = new Date(Date.parse(AUTO.d.checked) + 25 * 60000).toISOString();
     const have = new Set(L.concat(C).map((x) => x.url));
-    (V.now || []).forEach((x) => { if (!have.has(x.url)) L.push({ kind: 'video', story: x.story, net: x.net, what: 'Live on YouTube: ' + x.title.replace(/^\s*(LIVE|WATCH LIVE|LIVE NOW)\s*[:|-]\s*/i, '') + (x.watching ? ' · ' + x.watching + ' watching' : ''), url: x.url, updated: AUTO.d.checked, until, img: x.img, auto: true }); });
-    (V.upcoming || []).forEach((x) => { if (!have.has(x.url)) C.push({ story: x.story, net: x.net, what: x.title, where: 'YouTube', when: x.when, until: new Date(Date.parse(x.when) + 90 * 60000).toISOString(), url: x.url, img: x.img, auto: true }); });
+    (V.now || []).forEach((x) => { if (!have.has(x.url)) L.push({ kind: 'video', story: x.story, net: x.net, what: (x.url.indexOf('youtube.com') > -1 ? 'Live on YouTube: ' : 'Live: ') + x.title.replace(/^\s*(LIVE|WATCH LIVE|LIVE NOW)\s*(@\s*[\d:]+\s*ET)?\s*[:|-]\s*/i, '') + (x.watching ? ' · ' + x.watching + ' watching' : ''), url: x.url, updated: AUTO.d.checked, until, img: x.img, also: x.also, reports: x.reports, auto: true }); });
+    (V.upcoming || []).forEach((x) => { if (!have.has(x.url)) C.push({ story: x.story, net: x.net, what: x.title.replace(/^\s*(LIVE|WATCH LIVE|LIVE NOW)\s*(@\s*[\d:]+\s*ET)?\s*[:|-]\s*/i, ''), where: x.url.indexOf('youtube.com') > -1 ? 'YouTube' : '', when: x.when, until: new Date(Date.parse(x.when) + 90 * 60000).toISOString(), url: x.url, img: x.img, also: x.also, reports: x.reports, auto: true }); });
     (AUTO.d.pm || []).forEach((x) => C.push(Object.assign({ until: new Date(Date.parse(x.when) + 45 * 60000).toISOString(), auto: true }, x)));
     const haveK = new Set(L.concat(C).map((x) => key(x.url))), blogNets = new Set(L.filter((x) => x.kind === 'updates').map((x) => x.net));
     (AUTO.d.blogs_auto || []).forEach((x) => { if (!haveK.has(key(x.url)) && !blogNets.has(x.net) && blogNets.add(x.net)) L.push({ kind: 'updates', story: x.story, net: x.net, what: x.title, url: x.url, updated: x.updated, img: x.img, auto: true }); });

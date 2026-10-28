@@ -662,7 +662,7 @@ def name_story(title, named):
         name, rx, need = (nm + (1,))[:3]
         if len({m.group(0).lower() for m in rx.finditer(title)}) >= need:
             return name
-    t = re.sub(r"^(LIVE|WATCH LIVE|LIVE NOW)\s*[:|-]\s*", "", title, flags=re.I)
+    t = re.sub(r"^(LIVE|WATCH LIVE|LIVE NOW)\s*(@\s*[\d:]+\s*(?:a\.?m\.?|p\.?m\.?)?\s*[EPMCA]T)?\s*[:|-]\s*", "", title, flags=re.I)
     t = re.split(r"\s+[|–—]\s+", t)[0]
     return t[:70]
 
@@ -670,7 +670,8 @@ def name_story(title, named):
 # Live-only channels, besides CHANNELS: U.S. live-event networks, government channels (each checked against the
 # channel's own name on YouTube; the PM's is the one pm.gc.ca links to) and more world networks.
 LIVE_EXTRA = [
-    ("Prime Minister of Canada", "@CanadianPM", "ca"),
+    ("Prime Minister of Canada", "@CanadianPM", "ca"), ("BNN Bloomberg", "@BNNBloomberg", "ca"),
+    ("Bank of Canada - Banque du Canada", "channel/UCY4EvEbIox0M4JuEsu5OKnQ", "ca"), ("Federal Reserve", "@federalreserve", "us"),
     ("LiveNOW from FOX", "@LiveNOWFOX", "us"), ("NewsNation", "@NewsNation", "us"), ("MS NOW", "@MSNOW", "us"),
     ("Scripps News", "@ScrippsNews", "us"), ("Forbes Breaking News", "@ForbesBreakingNews", "us"),
     ("The White House", "@WhiteHouse", "us"), ("U.S. Department of State", "@StateDept", "us"),
@@ -711,8 +712,16 @@ def live_video(page, named, now):
                 if t and 0 < (t - now).total_seconds() < 36 * 3600:
                     item["when"] = t.isoformat()
                     res["upcoming"].append(item)
+    try:
+        for ev in ctv_events(now):
+            ev["story"] = name_story(ev["title"], named)
+            res["now" if ev.get("live") and not ev.get("when") else "upcoming"].append(ev)
+    except Exception as e:
+        print("live: CTV events failed:", e)
+    res["now"] = group_events(res["now"], live=True)
+    res["upcoming"] = group_events(res["upcoming"], live=False)
     order = {"ca": 0, "us": 1, "world": 2}
-    res["now"].sort(key=lambda i: order[i["r"]])
+    res["now"].sort(key=lambda i: (-len(i.get("also", [])), order[i["r"]]))
     res["upcoming"].sort(key=lambda i: i["when"])
     seen_net, alw = set(), []
     for i in res["always"]:
@@ -968,6 +977,144 @@ def live_blogs(items, named, now):
     return out
 
 
+# ===== Every place an event is live (Hannah, Wed Oct 28: "there has to be more places the bank of canada is coming up
+# live"). The same event on several networks becomes ONE tile with every place to watch it: Canadian networks first
+# (CTV before CBC), then the institution's own webcast.
+NET_ORDER = ["CTV News", "CBC News", "Global News", "CPAC", "CP24", "BNN Bloomberg", "CityNews", "APTN News", "Prime Minister of Canada",
+             "Bank of Canada - Banque du Canada"]
+OFFICIAL_WEBCASTS = [
+    (re.compile(r"Bank of Canada|Macklem|Banque du Canada", re.I), "Bank of Canada webcast", "https://www.bankofcanada.ca/press/speeches/webcasts/"),
+    (re.compile(r"Federal Reserve|\bFed\b|FOMC|Warsh|Powell", re.I), "Federal Reserve live broadcast", "https://www.federalreserve.gov/live-broadcast.htm"),
+    (re.compile(r"Question Period|House of Commons|Commons committee", re.I), "House of Commons (ParlVU)", "https://parlvu.parl.gc.ca/Harmony/en/"),
+    (re.compile(r"White House|press secretary|Leavitt", re.I), "The White House live", "https://www.whitehouse.gov/live/"),
+]
+EVENT_STOP = set("""live watch news full coverage special stream streaming update updates latest breaking today tonight video
+the a an and of on in at to for with as by from is are be will his her their after before about over says ctv cbc global
+need know what's here's how what why who everything impact could would should this that these your you top headlines
+day week year new more most first last get gets""".split())
+
+
+def institution(text):
+    for i, (rx, name, url) in enumerate(OFFICIAL_WEBCASTS):
+        if rx.search(text):
+            return i
+    return None
+
+
+def event_words(title):
+    import unicodedata
+    title = "".join(c for c in unicodedata.normalize("NFKD", title) if not unicodedata.combining(c))
+    t = re.sub(r"[^\w\s'’.-]", " ", title.lower())
+    return {w_ for w_ in re.findall(r"[a-zà-ÿ][\w'’.-]+", t) if len(w_) > 2 and w_ not in EVENT_STOP}
+
+
+def group_events(items, live):
+    groups = []
+    for it in items:
+        ws = event_words(it["title"])
+        inst = institution(it["title"] + " " + it["net"])
+        proper = {w_ for w_ in event_words(" ".join(re.findall(r"\b[A-ZÀ-Ý][\wÀ-ÿ'’-]{4,}", it["title"])))}
+        t = datetime.fromisoformat(it["when"]) if it.get("when") else None
+        for g in groups:
+            close = (t is None and g["t"] is None) if live else (t and g["t"] and abs((t - g["t"]).total_seconds()) <= 2 * 3600)
+            shared = ws & g["w"]
+            same = len(shared) >= 3 or (len(shared) >= 2 and shared & (proper | g["p"])) or (inst is not None and inst == g["i"])
+            if close and same:
+                g["p"] |= proper
+                g["items"].append(it)
+                g["w"] |= ws
+                break
+        else:
+            groups.append({"w": set(ws), "t": t, "items": [it], "i": inst, "p": proper})
+    out = []
+    for g in groups:
+        its = sorted(g["items"], key=lambda i: NET_ORDER.index(i["net"]) if i["net"] in NET_ORDER else 50)
+        main = dict(its[0])
+        if not main.get("img"):
+            main["img"] = next((i["img"] for i in its if i.get("img")), "")
+        also, seen = [], {main["net"]}
+        for i in its[1:]:
+            if i["net"] not in seen:
+                seen.add(i["net"])
+                also.append({"net": i["net"], "url": i["url"]})
+        text = " ".join(i["title"] for i in its)
+        for rx, name, url in OFFICIAL_WEBCASTS:
+            if rx.search(text) and name not in seen:
+                also.append({"net": name, "url": url, "official": True})
+                break
+        if also:
+            main["also"] = also
+        if not live:
+            main["when"] = min(i["when"] for i in its)
+        out.append(main)
+    return out
+
+
+def ctv_events(now):
+    """CTV's own live event pages (ctvnews.ca/video/live/), e.g. 'LIVE 10:30 ET: Bank of Canada governor ...'. CTV's
+    reusable 'LIVEn digital channel' slots are skipped: they keep saying live and later play something else."""
+    x = curl("https://www.ctvnews.ca/video/live/")
+    out, seen = [], set()
+    for m in re.finditer(r'"canonical_url":"(/video/live/(\d{4})/(\d\d)/(\d\d)/(live-[^"/]+)/)"', x):
+        path, y, mo, d, slug = m.groups()
+        if path in seen or "digital-channel" in slug or "news-channel" in slug:
+            continue
+        seen.add(path)
+        day = datetime(int(y), int(mo), int(d))
+        if (now.replace(tzinfo=None) - day).days > 1:
+            continue
+        url = "https://www.ctvnews.ca" + path
+        info = page_info(url)
+        title = clean(re.sub(r"\s*\|\s*CTV News.*$", "", ps.meta(curl(url), "og:title") or "")) or slug.replace("-", " ").capitalize()
+        tm = re.match(r"live-(\d{1,2})(\d\d)-(et|pt|mt|ct|at)-", slug)
+        loc = now - timedelta(hours=4 if _dst(now) else 5)
+        y, mo, d = loc.year, loc.month, loc.day  # CTV posts an event page the day before; the time is today's
+        ev = {"net": "CTV News", "r": "ca", "title": title, "url": url, "img": info.get("img", "")}
+        if tm:
+            h, mi = int(tm.group(1)), int(tm.group(2))
+            h = h + 12 if h < 7 else h  # "130" is 1:30 p.m.
+            off = {"et": 4, "at": 3, "ct": 5, "mt": 6, "pt": 7}[tm.group(3)] + (0 if _dst(now) else 1)
+            when = datetime(int(y), int(mo), int(d), h, mi, tzinfo=timezone.utc) + timedelta(hours=off)
+            if when > now:
+                ev["when"] = when.isoformat()
+            elif (now - when).total_seconds() < 2 * 3600:
+                ev["live"] = True
+            else:
+                continue
+        else:
+            continue  # no time in the address: can't be sure it is today's event
+        out.append(ev)
+    return out
+
+
+def attach_reports(lv, items, now):
+    """Every newsroom telling the story of each live event (Hannah, Wed Oct 28: "other outlets have the story ... it
+    checks and adds other places telling the story too"): reports from the last 18 hours on the same event, newest
+    report from each newsroom, their own headlines, one tap to each."""
+    import autoupdate as au
+    for ev in (lv.get("now") or []) + (lv.get("upcoming") or []):
+        text = ev["title"] + " " + " ".join(a["net"] for a in ev.get("also", []))
+        ws = event_words(ev["title"]) - {"announce", "announces", "holds", "speaks", "discusses", "decision", "conference", "press"}
+        inst = institution(text)
+        got, seen = [], set()
+        for dt, outlet, title, link, k in items:
+            if (now - dt).total_seconds() > 18 * 3600:
+                break
+            o = au.clean_outlet(outlet)
+            if o in seen or not au.ok_item(outlet, link) or au.FRENCH.search(o) or VIDEO.search(link) or au.OPINION.search(title + " " + link):
+                continue
+            tw = event_words(title)
+            hit = len(tw & ws) >= 3 or (inst is not None and institution(title) == inst and len(tw & ws) >= 1)
+            if not hit:
+                continue
+            seen.add(o)
+            got.append({"outlet": o, "title": clean(title), "url": link, "t": w.eastern(dt), "iso": dt.isoformat()})
+            if len(got) >= 8:
+                break
+        if got:
+            ev["reports"] = got
+
+
 def run(page, items, groups, breaking, now, imgdir, prev):
     res = {}
     for name, f in [("auto", lambda: auto_stories(groups, page, breaking, now, imgdir, (prev.get("auto") or {}).get("stories", []))),
@@ -991,6 +1138,10 @@ def run(page, items, groups, breaking, now, imgdir, prev):
         except Exception as e:
             print(f"autopilot {name} failed:", e)
             res[name] = prev.get(name) or ({} if name == "live" else [])
+    try:
+        attach_reports(res.get("live") or {}, items, now)
+    except Exception as e:
+        print("autopilot live reports failed:", e)
     print(f"autopilot live blogs: {len(res.get('blogs_auto') or [])}")
     try:
         keyed = [("top" if st["where"].startswith("Top") else st["where"].split("UPNEXT ")[-1].rstrip(")"), words, set(), st["name"]) for st, words in breaking]
