@@ -765,8 +765,35 @@ def related(items, stories, now, eds, papers, groups=()):
     out = {}
     gidx = {r[3]: i for i, g in enumerate(groups) for r in g.get("rows", [])}
     recent = [x for x in items if (now - x[0]).total_seconds() < 48 * 3600 and au.ok_item(x[1], x[3]) and not au.FRENCH.search(x[1])]
-    for key, words, own in stories:
+    import lead_check
+    themes = {t[0]: (t[2], t[3]) for t in lead_check.THEMES}
+    for st_ in stories:
+        key, words, own = st_[:3]
+        name = st_[3] if len(st_) > 3 else ""
         if not words:
+            continue
+        if name in themes:
+            # a running theme (e.g. Canada and the U.S.): everything on both sides of it is connected
+            ra, rb = themes[name]
+            rx0 = re.compile("|".join(re.escape(x) for x in words), re.I)
+            picked, used = [], set()
+            for dt, outlet, title, link, k in recent:
+                if not (ra.search(title) and rb.search(title)) or au.OPINION.search(title + " " + link) or VIDEO.search(link) or SPORT.search(title):
+                    continue
+                g_ = gidx.get(link)
+                if g_ is not None and g_ in used:
+                    continue
+                if g_ is not None:
+                    used.add(g_)
+                if any(re.sub(r"\W", "", p_["title"].lower()) == re.sub(r"\W", "", title.lower()) for p_ in picked):
+                    continue
+                picked.append({"t": w.eastern(dt), "iso": dt.isoformat(), "outlet": au.clean_outlet(outlet), "title": clean(title), "url": link, "tie": name})
+                if len(picked) >= 8:
+                    break
+            views = [{"outlet": e[0], "kind": e[1], "title": e[2], "url": e[3]} for e in (eds or []) if ra.search(e[2]) and rb.search(e[2])][:2]
+            views += [{"outlet": p_["inst"], "kind": "Think tank", "title": p_["t"], "url": p_["u"]} for p_ in (papers or []) if ra.search(p_["t"]) and rb.search(p_["t"])][:2]
+            if picked or views:
+                out[key] = {"ties": [name], "stories": picked, "views": views}
             continue
         rx = re.compile("|".join(re.escape(x) for x in words), re.I)
         # an auto story is exactly its own reports; a hand-written story is every report naming it
@@ -966,7 +993,7 @@ def run(page, items, groups, breaking, now, imgdir, prev):
             res[name] = prev.get(name) or ({} if name == "live" else [])
     print(f"autopilot live blogs: {len(res.get('blogs_auto') or [])}")
     try:
-        keyed = [("top" if st["where"].startswith("Top") else st["where"].split("UPNEXT ")[-1].rstrip(")"), words, set()) for st, words in breaking]
+        keyed = [("top" if st["where"].startswith("Top") else st["where"].split("UPNEXT ")[-1].rstrip(")"), words, set(), st["name"]) for st, words in breaking]
         keyed += [(s_["key"], s_.get("words") or [], {r["url"] for r in s_["reports"]}) for s_ in a.get("stories", [])]
         res["related"] = related(items, keyed, now, res.get("eds"), res.get("papers"), groups)
     except Exception as e:
