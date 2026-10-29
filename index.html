@@ -6075,7 +6075,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     const fresh = !AUTO || AUTO.d.checked !== got[0].d.checked;
     AUTO = got[0];
     deadLinks();
-    if (fresh) { blogs(); wire(); try { autoTop(); if (window.PAL_orderTop) window.PAL_orderTop(); } catch (e) { console.warn('autoTop', e); } try { clips(); ledes(); stamp(); papers(); eds(); canus(); brief(); bds(); otr(); live(); related(); try { canAngle(); canAngleLive(); } catch (e) { console.warn('canAngle', e); } mostRead(); smaller(); dazzle(); } catch (e) { console.warn('autopilot', e); } if (window.PAL_eventRender) try { window.PAL_eventRender(); } catch (e) {} if (window.PAL_renderFronts) try { window.PAL_renderFronts(); if (window.PAL_oneStoryOnePlace) window.PAL_oneStoryOnePlace(); } catch (e) { console.warn(e); } }
+    if (fresh) { blogs(); wire(); try { autoTop(); if (window.PAL_orderTop) window.PAL_orderTop(); } catch (e) { console.warn('autoTop', e); } try { clips(); ledes(); stamp(); papers(); eds(); canus(); try { geoHide(); } catch (e) { console.warn('geo', e); } brief(); bds(); otr(); live(); related(); try { canAngle(); canAngleLive(); } catch (e) { console.warn('canAngle', e); } mostRead(); smaller(); dazzle(); } catch (e) { console.warn('autopilot', e); } if (window.PAL_eventRender) try { window.PAL_eventRender(); } catch (e) {} if (window.PAL_renderFronts) try { window.PAL_renderFronts(); if (window.PAL_oneStoryOnePlace) window.PAL_oneStoryOnePlace(); } catch (e) { console.warn(e); } }
     paint();
   }
   function blogs() {
@@ -6182,6 +6182,23 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     E.list.length = 0; A.forEach((r) => E.list.push([r[0], r[1], r[2], r[3]])); E.render();
   }
   // Canada and the U.S.: the newest reports on the relationship, and how U.S. newsrooms are covering Canada.
+  // Videos the uploader does not allow in Canada (tools/autopilot.py checks YouTube's allowed-countries list on every
+  // run): removed from the page wherever they appear, so a reader never taps into "not available in your country".
+  let geoObs = null;
+  function geoHide() {
+    const B = new Set((AUTO.d && AUTO.d.geo_blocked) || []); if (!B.size) return;
+    const idOf = (u) => (/(?:youtube(?:-nocookie)?\.com\/(?:watch\?v=|embed\/|live\/)|youtu\.be\/)([A-Za-z0-9_-]{11})/.exec(u || '') || [])[1];
+    const run = () => {
+      document.querySelectorAll('a[href*="youtu"], iframe[src*="youtu"], [data-href*="youtu"], [data-url*="youtu"]').forEach((el) => {
+        const id = idOf(el.getAttribute('href') || el.getAttribute('src') || el.dataset.href || el.dataset.url); if (!id || !B.has(id)) return;
+        const box = el.closest('.bk-player, .vid, .clk, .media-row, .lv-tile, .live-tile, li, article') || el;
+        if (box.matches('section, main, body')) { el.remove(); return; }
+        box.remove();
+      });
+    };
+    run();
+    if (!geoObs) { let t = 0; geoObs = new MutationObserver(() => { clearTimeout(t); t = setTimeout(run, 300); }); geoObs.observe(document.body, { childList: true, subtree: true }); }
+  }
   function canus() {
     const el = document.getElementById('canusAuto'), C = AUTO.d.canus; if (!el || !C) return;
     const li = (r) => '<li><time>' + esc(r.t) + '</time><a href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(r.title) + '</a> <span class="o">' + esc(r.outlet) + ' &#8599;</span></li>';

@@ -366,6 +366,47 @@ def age_minutes(parts):
     return None
 
 
+# Hannah, Wed Oct 28, 2026: "I went to watch the BBC News, but it says the uploader wouldn't allow this in our country.
+# If that is the case, don't make it available on the website." Every YouTube clip and live stream is checked against
+# the countries its uploader allows (YouTube's own availableCountries list on the video's page). Not allowed in Canada:
+# never shown. Readers are in Canada; these runs are not, so the list is what decides, never this run's own access.
+GEO_CACHE = {}
+
+
+def yt_in_canada(vid):
+    """'ok', 'blocked' (the uploader does not allow it in Canada) or 'unknown' (YouTube's page could not be read)."""
+    if vid in GEO_CACHE:
+        return GEO_CACHE[vid]
+    x = curl(f"https://www.youtube.com/watch?v={vid}&hl=en&gl=CA")
+    res = "unknown"
+    if x:
+        m = re.search(r'"availableCountries":\[([^\]]*)\]', x)
+        ps_ = re.search(r'"playabilityStatus":\{"status":"(\w+)"(?:,"reason":"([^"]*)")?', x)
+        status, reason = (ps_.group(1), ps_.group(2) or "") if ps_ else ("", "")
+        if m and m.group(1).strip():
+            res = "ok" if '"CA"' in m.group(1) else "blocked"
+        elif re.search(r"not (?:made this video )?available in your country|blocked it in your country|not available in your country", x, re.I) or re.search(r"country", reason, re.I):
+            res = "blocked"  # blocked by country with no list given: never risk sending a reader to it
+        elif status in ("OK", "LIVE_STREAM_OFFLINE") or '"isLiveContent"' in x or '"videoDetails"' in x:
+            res = "ok"
+        if status in ("ERROR", "UNPLAYABLE") and not re.search(r"country", reason, re.I) and res != "blocked":
+            res = "blocked" if re.search(r"private|removed|unavailable|terminated", reason, re.I) else res
+    GEO_CACHE[vid] = res
+    return res
+
+
+def geo_filter(items, key, label):
+    """Drop the items whose video the uploader does not allow in Canada. `key` gives each item's video id."""
+    ids = [key(i) for i in items]
+    with ThreadPoolExecutor(8) as ex:
+        verdicts = dict(zip(ids, ex.map(lambda v: yt_in_canada(v) if v else "ok", ids)))
+    kept = [i for i in items if verdicts.get(key(i)) != "blocked"]
+    for i in items:
+        if verdicts.get(key(i)) == "blocked":
+            print(f"{label}: dropped (not available in Canada): {i.get('o') or i.get('net')}: {(i.get('t') or i.get('title') or '')[:70]}")
+    return kept
+
+
 def clips(page, prev_clips, now):
     import network_youtube as ny
     have = set(re.findall(r"youtube\.com/watch\?v=([A-Za-z0-9_-]{11})", page))
@@ -401,6 +442,12 @@ def clips(page, prev_clips, now):
     with ThreadPoolExecutor(8) as ex:
         for got in ex.map(one, CHANNELS):
             out += got
+    for c in out:  # a clip already checked on an earlier run keeps its verdict
+        if prev.get(c["id"], {}).get("geo") in ("ok", "blocked"):
+            GEO_CACHE.setdefault(c["id"], prev[c["id"]]["geo"])
+    out = geo_filter(out, lambda c: c["id"], "clips")
+    for c in out:
+        c["geo"] = GEO_CACHE.get(c["id"], "unknown")
     order = {"ca": 0, "us": 1, "world": 2}
     out.sort(key=lambda c: (order[c["r"]], c["added"]), reverse=False)
     return out
@@ -774,6 +821,9 @@ def live_video(page, named, now):
             res["now" if ev.get("live") and not ev.get("when") else "upcoming"].append(ev)
     except Exception as e:
         print("live: CTV events failed:", e)
+    vid_of = lambda i: (re.search(r"[?&]v=([A-Za-z0-9_-]{11})", i.get("url", "")) or [None, None])[1]
+    for k in ("now", "always", "upcoming"):  # live streams the uploader blocks in Canada are never offered
+        res[k] = geo_filter(res[k], vid_of, "live")
     res["now"] = group_events(res["now"], live=True)
     res["upcoming"] = group_events(res["upcoming"], live=False)
     order = {"ca": 0, "us": 1, "world": 2}
@@ -1477,6 +1527,22 @@ def run(page, items, groups, breaking, now, imgdir, prev):
     except Exception as e:
         print("autopilot bds failed:", e)
         res["bds"] = prev.get("bds") or []
+    # Every YouTube video named anywhere on the page (hand-written live boxes, Watch entries, timelines): the ones whose
+    # uploader does not allow them in Canada go in geo_blocked, and the page removes them (geoHide in index.html).
+    try:
+        prevgeo = prev.get("geo") or {}
+        ids = sorted(set(re.findall(r"(?:youtube(?:-nocookie)?\.com/(?:watch\?v=|embed/|live/)|youtu\.be/)([A-Za-z0-9_-]{11})", page)))
+        for v in ids:
+            if prevgeo.get(v, {}).get("v") in ("ok", "blocked") and (now - datetime.fromisoformat(prevgeo[v]["at"])).total_seconds() < 6 * 3600:
+                GEO_CACHE.setdefault(v, prevgeo[v]["v"])
+        with ThreadPoolExecutor(8) as ex:
+            verdicts = dict(zip(ids, ex.map(yt_in_canada, ids)))
+        res["geo"] = {v: {"v": r, "at": prevgeo.get(v, {}).get("at") if v in prevgeo and prevgeo[v].get("v") == r else now.isoformat()} for v, r in verdicts.items()}
+        res["geo_blocked"] = sorted(v for v, r in GEO_CACHE.items() if r == "blocked")
+        print(f"autopilot geo: {len(ids)} videos on the page, blocked in Canada: {res['geo_blocked']}")
+    except Exception as e:
+        print("autopilot geo failed:", e)
+        res["geo"], res["geo_blocked"] = prev.get("geo") or {}, prev.get("geo_blocked") or []
     print(f"autopilot: {len(a.get('stories', []))} auto stories (takeover {a.get('takeover')}), {len(res['clips'])} clips, {len(res['ledes'])} U.S. ledes, "
           f"{len(res['papers'])} papers, {len(res['eds'])} editorials, canus {len((res['canus'] or {}).get('talks', []))}/{len((res['canus'] or {}).get('usmedia', []))}, brief {bool(res['brief'])}, {len(res['bds'])} breakdowns, {len(res['otr'])} on the record, live {len((res['live'] or {}).get('now', []))} now / {len((res['live'] or {}).get('upcoming', []))} upcoming, PM events {len(res['pm'])}, related for {len(res['related'])} stories, most read {len((res['mostread'] or {}).get('list', []))} from {len((res['mostread'] or {}).get('sites', []))} sites, smaller {len(res['smaller'])}")
     return res

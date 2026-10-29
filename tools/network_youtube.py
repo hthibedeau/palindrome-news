@@ -154,6 +154,12 @@ def prepare(a):
         up = dt.date.fromisoformat(a.date)
     except ValueError:
         return print("REFUSED --date must be YYYY-MM-DD (the upload date shown on the watch page)")
+    try:  # never a video the uploader blocks in Canada (Hannah, Wed Oct 28, 2026)
+        import autopilot
+        if autopilot.yt_in_canada(vid) == "blocked":
+            return print("REFUSED the uploader does not allow this video in Canada")
+    except Exception as e:
+        print("note: could not check where the video is allowed:", e)
     today = eastern_today()
     age = (today - up).days
     if age < 0 or age > MAX_AGE_DAYS:
