@@ -985,12 +985,11 @@ def related(items, stories, now, eds, papers, groups=()):
             ra, rb = themes[name]
             rx0 = re.compile("|".join(re.escape(x) for x in words), re.I)
             own_rows = [x for x in recent if x[3] in own]
-            own_keys = {k_ for x in own_rows[:1] for k_ in gc.keys(x[2])}
             picked, used = [], set()
             for dt, outlet, title, link, k in recent:
                 if not (ra.search(title) and rb.search(title)) or au.OPINION.search(title + " " + link) or VIDEO.search(link) or SPORT.search(title):
                     continue
-                if link in own or any(same_report(title, x[2]) for x in own_rows) or len(gc.keys(title) & own_keys) >= 4:
+                if link in own or any(same_report(title, x[2]) or len(gc.keys(title) & gc.keys(x[2])) >= 4 for x in own_rows):
                     continue  # the story's own reports, or the same report from another newsroom: already listed under it
                 g_ = gidx.get(link)
                 if g_ is not None and g_ in used:
@@ -1243,10 +1242,12 @@ ROUTINE_LIVE = re.compile(r"Question Period|Top Headlines|News Live|24/7|Daily B
 
 
 def _live_theme(title):
+    """The running theme a live stream belongs to: its other side named (EU, von der Leyen...) plus Canada, a Canadian
+    leader OR a Canadian place ("Von der Leyen, Costa arrive in Montreal" is the Canada-EU summit)."""
     try:
         import lead_check as lc
         for tname, _, ra, rb in lc.THEMES:
-            if ra.search(title) and rb.search(title):
+            if rb.search(title) and (ra.search(title) or CAN_TIE.search(title)):
                 return tname
     except Exception:
         pass
@@ -1281,18 +1282,39 @@ def promote_live(res, now):
             if theme and s.get("theme") == theme:
                 n = 10
             else:
-                text = s["title"] + " " + " ".join(r["title"] for r in s.get("reports", [])[:8])
+                text = s["title"] + " " + " ".join(r["title"] for r in s.get("reports", []))
                 n = len(ew & (event_words(text) - EVENT_KIND_STOP)) + 3 * len(ev_urls & {r["url"] for r in s.get("reports", [])})
             if n > best_n:
                 best, best_n = s, n
         if best is None or best_n < 2:
             continue
         hits.append((best, e, state))
-    for s, e, state in hits:
-        if s.get("live") and s["live"]["state"] == "now" and state == "soon":
+    # every stream on the story (Hannah, Thu Oct 29, 2026: "there are live videos that should be attached to the canada
+    # eu summit"): on air now first, then coming up; the first is the big live bar, the rest are listed under it
+    for s in cands:
+        s.pop("live", None); s.pop("live_more", None)
+    for s, e, state in sorted(hits, key=lambda h: (h[2] != "now", h[1].get("when") or "")):
+        item = {"state": state, "net": e.get("net", ""), "url": e.get("url", ""),
+                "title": re.sub(r"^\s*(?:🔴\s*)?(?:WATCH LIVE|LIVE NOW|LIVE)\s*[:|\-–—]\s*", "", e.get("title", ""), flags=re.I).replace(" | LIVE", ""),
+                "img": e.get("img", ""), "when": e.get("when", ""), "also": e.get("also", [])[:6]}
+        if not s.get("live"):
+            s["live"] = item
+        elif item["url"] != s["live"]["url"]:
+            s.setdefault("live_more", []).append(item)
+    clips_ = res.get("clips") or []
+    for s in cands:
+        if s["canada"] == "none":
             continue
-        s["live"] = {"state": state, "net": e.get("net", ""), "url": e.get("url", ""), "title": re.sub(r"^\s*(?:🔴\s*)?(?:WATCH LIVE|LIVE NOW|LIVE)\s*[:|\-–—]\s*", "", e.get("title", ""), flags=re.I),
-                     "img": e.get("img", ""), "when": e.get("when", ""), "also": e.get("also", [])[:6]}
+        th = s.get("theme") if s.get("theme") and s["theme"] not in SPLIT_THEMES else ""
+        text = s["title"] + " " + " ".join(r["title"] for r in s.get("reports", []))
+        sw = event_words(text) - EVENT_KIND_STOP
+        vids = []
+        for c in clips_:
+            t = c.get("t", "")
+            if (th and _live_theme(t) == th) or (not th and len(sw & (event_words(t) - EVENT_KIND_STOP)) >= 3):
+                vids.append({"net": c["o"], "url": c["u"], "title": t, "img": c.get("img", ""), "rec": bool(c.get("rec")), "up": c.get("up", "")})
+        if vids:
+            s["videos"] = vids[:4]
     for s in cands:
         if s.get("live"):
             s["weight"] = (s.get("weight") or 0) + (LIVE_NOW_BOOST if s["live"]["state"] == "now" else LIVE_SOON_BOOST)

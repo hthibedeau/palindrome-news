@@ -178,6 +178,13 @@ main { padding-block: 32px 8px; display: flex; flex-direction: column; gap: 56px
 .ab-live b { font-size: 14px; color: var(--accent); }
 .ab-live.on b { color: #E0242F; }
 .ab-live-what { font-size: 14px; line-height: 1.35; overflow-wrap: anywhere; }
+.ab-vids { margin: 4px 0 10px; position: relative; z-index: 2; }
+.ab-vids-h { margin: 0 0 4px; font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--title); }
+.ab-vids ol { margin: 0; padding: 0; list-style: none; display: grid; gap: 4px; }
+.ab-vids li { font-size: 14px; line-height: 1.4; }
+.ab-vids .rk { font-size: 10px; font-weight: 700; letter-spacing: .08em; margin-right: 6px; color: var(--muted); }
+.ab-vids .rk.on { color: #E0242F; }
+.ab-vids .o { color: var(--muted); font-size: 12px; }
 .ab-live-also { margin: 0 0 8px; font-size: 13px; color: var(--muted); }
 .ab-live-also a { position: relative; z-index: 2; }
 @media (max-width: 420px) { .ab-live img { width: 84px; } }
@@ -6141,8 +6148,12 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
           + '<span class="ab-live-what">' + (onAir ? 'Watch: ' : '') + esc(L.title) + '</span></span></a>'
           + (L.also && L.also.length ? '<p class="ab-live-also">Also carrying it: ' + L.also.map((x) => a(x.url, esc(x.net))).join(' · ') + '</p>' : '')
         : '';
+      // more live streams on this story, and the day's recordings from the networks (a broadcast that has ended)
+      const more = (s.live_more || []).map((x) => '<li><span class="rk' + (x.state === 'now' ? ' on' : '') + '">' + (x.state === 'now' ? 'LIVE VIDEO' : 'COMING UP' + (x.when ? ' ' + esc(fmt(x.when)) + ' ET' : '')) + '</span>' + a(x.url, esc(x.title)) + ' <span class="o">' + esc(x.net) + ' &#8599;</span></li>').join('')
+        + (s.videos || []).map((x) => '<li><span class="rk">' + (x.rec ? 'RECORDING' : 'VIDEO') + '</span>' + a(x.url, esc(x.title)) + ' <span class="o">' + esc(x.net) + (x.rec ? ' · the broadcast has ended' : '') + ' &#8599;</span></li>').join('');
+      const moreBox = more ? '<div class="ab-vids"><p class="ab-vids-h">' + (s.live_more && s.live_more.length ? 'More live video on this story' : 'Video on this story') + '</p><ol>' + more + '</ol></div>' : '';
       return '<article class="ab-story' + (i ? ' ab-second' : '') + '" data-key="' + esc(s.key) + '">' + ph + '<span class="tag">' + (onAir || recent ? 'Breaking' : 'Developing') + '</span>'
-        + '<h2>' + a(s.url, esc(s.title)) + '</h2>' + liveBar
+        + '<h2>' + a(s.url, esc(s.title)) + '</h2>' + liveBar + moreBox
         + '<p class="first">LATEST ' + a(s.url, esc(s.outlet)) + ' · ' + esc(s.t) + firstLine + '</p>'
         + (s.summary ? '<p class="bk-dek">' + esc(s.summary) + ' <span class="ab-cr">— ' + esc(s.outlet) + '</span></p>' : '')
         + '<details class="ab-reps"' + (i ? '' : ' open') + '><summary>What each newsroom reports · ' + (s.independent || s.outlets) + ' independent newsrooms</summary><ol>' + reps + '</ol></details>'
