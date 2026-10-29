@@ -111,6 +111,21 @@ def same_report(t1, t2):
     return bool(a and b) and len(a & b) / len(a | b) >= 0.75
 
 
+WIRE_NAMES = {"The Canadian Press", "The Associated Press", "Reuters", "AFP", "Bloomberg News"}
+# primary sources: the people and institutions themselves, not a newsroom's account of them
+PRIMARY = re.compile(r"https?://(?:[\w-]+\.)*(?:pm\.gc\.ca|canada\.ca|gc\.ca|parl\.ca|ourcommons\.ca|sencanada\.ca|bankofcanada\.ca|"
+                     r"elections\.ca|ontario\.ca|alberta\.ca|quebec\.ca|gov\.[a-z]{2}\.ca|gnb\.ca|novascotia\.ca|gov\.nl\.ca|"
+                     r"princeedwardisland\.ca|manitoba\.ca|saskatchewan\.ca|yukon\.ca|gov\.nu\.ca|toronto\.ca|montreal\.ca|"
+                     r"whitehouse\.gov|state\.gov|[a-z]+\.gov|europa\.eu|consilium\.europa\.eu|gov\.uk|un\.org|nato\.int|"
+                     r"newswire\.ca|elysee\.fr|bundesregierung\.de)(?:/|$)", re.I)
+PRIMARY_NAME = re.compile(r"Prime Minister|Government of|Office of|White House|European Commission|European Council|Bank of Canada|"
+                          r"House of Commons|Elections |City of |Ministry|Department of", re.I)
+
+
+def is_primary(r):
+    return bool(PRIMARY.search(r[3]) or PRIMARY_NAME.search(r[1]))
+
+
 def report_groups(reps):
     """The reports grouped by who really wrote them (Hannah, Wed Oct 28 and Thu Oct 29, 2026: one Canadian Press story
     run by the Times Colonist, CKOM, the Toronto Star and Global News under different headlines is ONE report; CTV News,
@@ -126,6 +141,18 @@ def report_groups(reps):
             i = parent[i]
         return i
     src = [source_of(r) for r in reps]
+    # a wire's reporter under a newsroom's name (Global News ran David Baxter's Canadian Press story with only his name)
+    wire_people = {}
+    for r, sr in zip(reps, src):
+        if sr in WIRE_NAMES:
+            for nm in (INFO_CACHE.get(r[3]) or {}).get("people", []):
+                wire_people[nm] = sr
+    for i, r in enumerate(reps):
+        if src[i] not in WIRE_NAMES and not is_primary(r):
+            hit = [wire_people[nm] for nm in (INFO_CACHE.get(r[3]) or {}).get("people", []) if nm in wire_people]
+            if hit:
+                src[i] = hit[0]
+                (INFO_CACHE.setdefault(r[3], {}))["wire"] = hit[0]
     desc = [_words((INFO_CACHE.get(r[3]) or {}).get("desc", "")) for r in reps]
     for i in range(n):
         for j in range(i + 1, n):
@@ -137,7 +164,29 @@ def report_groups(reps):
     groups = {}
     for i in range(n):
         groups.setdefault(find(i), []).append(reps[i])
-    return [groups[k] for k in sorted(groups, key=lambda k: min(reps.index(r) for r in groups[k]))]
+    # Hannah, Thu Oct 29, 2026: of the repeats, the one posted first leads ("take the one that was posted first"),
+    # and a primary source (the Prime Minister's site, a government, the EU) comes first in the list.
+    out = [sorted(g, key=lambda r: r[0]) for g in groups.values()]
+    out.sort(key=lambda g: (not any(is_primary(r) for r in g), -max(r[0] for r in g).timestamp()))
+    for g in out:
+        g.sort(key=lambda r: (not is_primary(r), r[0]))
+    return out
+
+
+def dedupe_reports(reports):
+    """A list of report dicts ({outlet, title, url, iso, ...}) with repeats folded into the first-posted one ("copies"),
+    primary sources first."""
+    tup = [(datetime.fromisoformat(r["iso"]), r["outlet"], r["title"], r["url"], r) for r in reports if r.get("iso")]
+    if len(tup) < 2:
+        return reports
+    out = []
+    for g in report_groups(tup):
+        d = dict(g[0][4])
+        d["primary"] = is_primary(g[0])
+        if len(g) > 1:
+            d["copies"] = [{"outlet": x[1], "url": x[3]} for x in g[1:]]
+        out.append(d)
+    return out
 
 
 def independent(reps):
@@ -149,6 +198,25 @@ WIRE_NAME = [("The Canadian Press", re.compile(r"\bThe Canadian Press\b|\bCanadi
              ("The Associated Press", re.compile(r"\bAssociated Press\b|\bThe AP\b")),
              ("Reuters", re.compile(r"\bReuters\b")), ("AFP", re.compile(r"\bAgence France-Presse\b|\bAFP\b")),
              ("Bloomberg News", re.compile(r"\bBloomberg News\b"))]
+
+
+OWN_STAFF = re.compile(r"\b(?:[A-Z][\w.]+\.(?:ca|com) )?(?:journalist|reporter|correspondent|producer|anchor|staff writer|bureau chief|editor)\b", re.I)
+
+
+def people_of_page(x):
+    """The names in the page's author fields ("David Baxter, The Canadian Press" -> "david baxter")."""
+    out = set()
+    for m in re.finditer(r'"(?:author|creator|byline)"\s*:\s*', x):
+        for n in re.findall(r'"name"\s*:\s*"([^"]{3,80})"|^"([^"]{3,80})"$', _json_value(x, m.end())):
+            n = (n[0] or n[1]).split(",")[0].strip().lower()
+            if re.fullmatch(r"[a-zà-ÿ'’.-]+(?: [a-zà-ÿ'’.-]+){1,3}", n) and not re.search(r"press|news|staff|reuters|agence|wire|desk", n):
+                out.add(n)
+    v = ps.meta(x, "author")
+    for n in re.split(r",| and ", v or ""):
+        n = n.strip().lower()
+        if re.fullmatch(r"[a-zà-ÿ'’.-]+(?: [a-zà-ÿ'’.-]+){1,3}", n) and not re.search(r"press|news|staff|reuters|agence|wire|desk", n):
+            out.add(n)
+    return sorted(out)
 
 
 def _json_value(x, i, limit=1500):
@@ -195,6 +263,10 @@ def wire_of_page(x, why=None):
     fields += [re.sub(r"<[^>]+>", " ", f_) for f_ in re.findall(r'class="[^"]*(?:byline|author|source|credit|attribution)[^"]*"[^>]*>(.{0,400}?)</(?:div|p|span|a|li)>', x, re.S)[:10]]
     signoff = re.search(r"This (?:report|story) (?:by|from) The Canadian Press was first published|\(The Canadian Press\)\s*</p>|^\s*[A-Z][A-Z .]+\s+[—–-]\s+.{0,40}\(AP\)", x, re.M)
     text = " ".join(fields)
+    if OWN_STAFF.search(text) and not re.search(r"^\W*(?:\[?\{?\W*\"@type\W+\w+\W+name\W+)?(?:The Canadian Press|The Associated Press|Reuters|AFP)\b", text):
+        if why is not None:
+            why.append("own staff: " + OWN_STAFF.search(text).group(0))
+        return ""  # its own journalists wrote it, with wire material added: the newsroom's own report
     for name, rx in WIRE_NAME:
         m = rx.search(text)
         if m:
@@ -237,6 +309,7 @@ def _page_info(url):
     why = []
     info["wire"] = wire_of_page(x, why)
     info["by"] = (why[0] if why else "")[:120]
+    info["people"] = people_of_page(x)
     acc = []
     for b in ps.ld_blocks(x):
         ps.walk(b, acc)
@@ -378,7 +451,7 @@ def build_story(g, now, imgdir, prev):
         "reports": [{"t": w.eastern(r[0]), "iso": r[0].isoformat(), "outlet": au.clean_outlet(r[1]), "title": clean(r[2]), "url": r[3],
                      "desc": descs.get(r[3], "")} for r in reps[:14]],
         # one entry per independent report; copies listed under it ("also run by")
-        "sources": [{"t": w.eastern(g_[0][0]), "outlet": au.clean_outlet(g_[0][1]), "title": clean(g_[0][2]), "url": g_[0][3],
+        "sources": [{"t": w.eastern(g_[0][0]), "primary": is_primary(g_[0]), "outlet": au.clean_outlet(g_[0][1]), "title": clean(g_[0][2]), "url": g_[0][3],
                      "desc": descs.get(g_[0][3], "") or (INFO_CACHE.get(g_[0][3]) or {}).get("desc", ""),
                      "wire": source_of(g_[0]) if source_of(g_[0]) in [n_ for n_, _ in WIRE_NAME] else "",
                      "by": [{"outlet": au.clean_outlet(x[1]), "src": source_of(x), "byline": (INFO_CACHE.get(x[3]) or {}).get("by", "")} for x in g_],

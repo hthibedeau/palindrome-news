@@ -341,6 +341,11 @@ def main():
                 continue
             seen_o.add(o)
             cov.append({"outlet": o, "url": link, "iso": dt.isoformat(), "t": w.eastern(dt)})
+        try:  # repeats folded into the first-posted report, primary sources first (Hannah, Thu Oct 29, 2026)
+            import autopilot
+            reps = autopilot.dedupe_reports(reps)
+        except Exception as e:
+            print("dedupe failed:", e)
         stories.append({"key": key, "name": st["name"], "since": since.isoformat() if since else None, "reports": reps, "photo": photo, "coverage": cov})
         print(f"{st['name']}: {len(reps)} newer report(s); photo {'NEW ' + photo['src'] if photo else 'none newer'}")
 

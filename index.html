@@ -17,6 +17,7 @@
 #autoBreaking .ab-reps time { display: inline-block; min-width: 108px; opacity: .8; font-size: 13px; }
 #autoBreaking .ab-reps a { color: #FFFFFF; }
 #autoBreaking .ab-reps .o { opacity: .8; font-size: 13px; }
+#autoBreaking .ab-prim { display: inline-block; margin-right: 8px; padding: 1px 8px; border-radius: 999px; background: #FFFFFF; color: #2B1B54; font-size: 11px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; vertical-align: 1px; }
 #autoBreaking .ab-also { margin: 3px 0 0; font-size: 13px; opacity: .85; }
 #autoBreaking .ab-also a { color: #FFFFFF; position: relative; z-index: 2; }
 #autoBreaking .bart-cap { margin: 8px 0 14px; }
@@ -6160,7 +6161,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       const firstLine = s.first && s.first.url !== s.url ? '<br>First reported by ' + a(s.first.url, esc(s.first.outlet)) + ' · ' + esc(s.first.t) : '';
       // one line per independent report; a wire story or same-owner copy is listed once, with who else ran it
       // (Hannah, Thu Oct 29, 2026: one CP story run by six papers is one source, not six)
-      const reps = (s.sources || s.reports || []).map((r) => '<li><time>' + esc(r.t) + '</time>' + a(r.url, esc(r.title)) + ' <span class="o">' + esc(r.outlet) + (r.wire && r.wire !== r.outlet ? ' · ' + esc(r.wire) + ' story' : '') + ' &#8599;</span>'
+      const reps = (s.sources || s.reports || []).map((r) => '<li' + (r.primary ? ' class="ab-primary"' : '') + '><time>' + esc(r.t) + '</time>' + (r.primary ? '<span class="ab-prim">Primary source</span>' : '') + a(r.url, esc(r.title)) + ' <span class="o">' + esc(r.outlet) + (r.wire && r.wire !== r.outlet ? ' · ' + esc(r.wire) + ' story' : '') + ' &#8599;</span>'
         + (r.desc && r.url !== s.url ? '<p class="ab-d">' + esc(r.desc) + '</p>' : '')
         + (r.copies && r.copies.length ? '<p class="ab-also">Also run by ' + r.copies.map((c) => a(c.url, esc(c.outlet))).join(', ') + '</p>' : '') + '</li>').join('');
       const nInd = s.sources ? s.sources.length : (s.independent || s.outlets);
@@ -6202,7 +6203,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     const s = ((AUTO.d.auto && AUTO.d.auto.more) || []).find((x) => !shown.has(x.key));
     if (!stale || !s) { if (art.dataset.auto) { art.innerHTML = LEAD_ORIG; delete art.dataset.auto; delete art.dataset.key; } return; }
     const a = (u, t, extra) => '<a' + (extra || '') + ' href="' + esc(u) + '" target="_blank" rel="noopener">' + t + '</a>';
-    const outs = []; (s.reports || []).forEach((r) => { if (!outs.some((o) => o.outlet === r.outlet)) outs.push(r); });
+    const outs = []; (s.sources || s.reports || []).forEach((r) => { if (!outs.some((o) => o.outlet === r.outlet)) outs.push(r); });
     const label = s.theme || (s.canada === 'canadian' ? 'Canada' : 'World');
     art.dataset.auto = '1'; art.dataset.key = s.key;
     art.innerHTML = (s.photo ? '<div class="art hero-art"><span class="ph"><img src="' + esc(AUTO.base + s.photo.src) + '" alt="' + esc(s.photo.alt || '') + '" decoding="async" onerror="this.closest(\'.art\').remove()"><span class="credit">' + esc(s.photo.outlet || '') + '</span></span></div>' : '')
@@ -6547,7 +6548,8 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       if (!reps.length) return;
       const box = document.createElement('div'); box.className = 'auto-news';
       box.innerHTML = '<h4>Newest reports <span>· checked automatically ' + esc(fmt(AUTO.d.checked)) + ' ET</span></h4><ol>'
-        + reps.map((r) => '<li><time>' + esc(r.t.replace(/^\w+ /, '')) + '</time><a href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(r.title) + '</a> <span class="o">' + esc(r.outlet) + ' &#8599;</span></li>').join('')
+        + reps.map((r) => '<li><time>' + esc(r.t.replace(/^\w+ /, '')) + '</time>' + (r.primary ? '<b>Primary source · </b>' : '') + '<a href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(r.title) + '</a> <span class="o">' + esc(r.outlet) + ' &#8599;</span>'
+          + (r.copies && r.copies.length ? '<br><small>Also run by ' + r.copies.map((c) => '<a href="' + esc(c.url) + '" target="_blank" rel="noopener">' + esc(c.outlet) + '</a>').join(', ') + '</small>' : '') + '</li>').join('')
         + '</ol>';
       const bt = root.querySelector(':scope > .bk-text');
       const sum = root.querySelector('.bk-sum') || root.querySelector('.bk-dek') || root.querySelector('h2');
