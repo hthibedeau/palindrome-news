@@ -1213,6 +1213,20 @@ def pick_by_canada(auto, items, now, eds, papers, otr, canus_, mostread=None):
         return bool(CANUS.search(text) or (CAN_TIE.search(text) and US_TIE.search(text)))
     for s in cands:
         s["canus"] = canus_story(s)
+    # every candidate gets its running theme from its own headline too, so one event never takes two top spots
+    # (the Canada-EU summit came through as two stories, Wed Oct 28, 2026)
+    try:
+        import lead_check as lc
+        for s in cands:
+            if not s.get("theme"):
+                for tname, _, ra, rb in lc.THEMES:
+                    if tname in SPLIT_THEMES:
+                        continue
+                    if ra.search(s["title"]) and rb.search(s["title"]):
+                        s["theme"] = tname
+                        break
+    except Exception as e:
+        print("theme match failed:", e)
     # What Canadians are reading (Hannah, Wed Oct 28, 2026: "look at ... top 5 popular stories on other Canadian websites
     # to judge what our top stories should be"): each candidate scores from the most-read lists it is on, higher for a
     # higher rank and for more sites. Within each tier, the most-read stories go first; then the newsroom ranking.
@@ -1258,7 +1272,8 @@ def pick_by_canada(auto, items, now, eds, papers, otr, canus_, mostread=None):
     # the next biggest stories (with a Canadian tie), for the lead slot under the top two when its hand-written story
     # goes stale (Hannah, Wed Oct 28, 2026: "go through the whole page to ensure we have the top news at the top ...
     # update regularly")
-    auto["more"] = [s for s in ranked[2:] if tier(s) < 2 and s not in auto["stories"]][:3]
+    top_themes = {s.get("theme") for s in auto["stories"][:2] if s.get("theme")}
+    auto["more"] = [s for s in ranked[2:] if tier(s) < 2 and s not in auto["stories"] and not (s.get("theme") and s["theme"] in top_themes)][:3]
     auto["passed_over"] = [{"title": s["title"], "url": s["url"]} for s in cands if tier(s) == 2 and s not in ranked[:2]]
     # why each story is or isn't at the top (Hannah: "why is that not at the top of the news?")
     auto["considered"] = [{"title": s["title"], "url": s["url"], "rank": n + 1, "weight": s.get("weight"), "score": s.get("score"), "independent": s.get("independent"), "most_read": s["popular"],
