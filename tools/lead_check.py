@@ -47,6 +47,12 @@ THEMES = [
     ("Canada and the U.S.", "Canada and the U.S.",
      re.compile(r"\b(Canad\w*|Carney|Ottawa|Joly|LeBlanc|Champagne|Anand|Ford|Poilievre|premiers?)\b", re.I),
      re.compile(r"\b(Trump|U\.?S\.?|American|Americans|Washington|White House|Hoekstra|Lutnick|Greer|embassy|midterms?|tariffs?|CUSMA|USMCA|trade war|51st state|Clinton|Rubio|Vance|Turkey|Türkiye|Turkiye|Turkish|Erdogan|Erdoğan|Ankara)\b")),  # the Turkey trip is covered on the page as part of the Canada-U.S. trade theme
+    # Hannah, Wed Oct 28, 2026: the Canada-EU summit had "a lot of different reporting" but never reached the top,
+    # because each angle (the associate-membership title, Quebec's empty chair, the summit itself) was its own group.
+    # One event, so it stays ONE story (it is not split back up like the Canada-U.S. theme; see autopilot.SPLIT_THEMES).
+    ("Canada and the EU", "Canada and the EU",
+     re.compile(r"\b(Canad\w*|Carney|Ottawa|Anand|LeBlanc|Champagne|Quebec|Québec|premiers?|Plamondon|PQ)\b", re.I),
+     re.compile(r"\b(EU|European Union|European Commission|European Council|von der Leyen|António Costa|Antonio Costa|Brussels|Canada-EU|Canada–EU)\b")),
 ]
 
 

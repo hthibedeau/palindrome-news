@@ -260,6 +260,9 @@ def build_story(g, now, imgdir, prev):
     }
 
 
+SPLIT_THEMES = {"Canada and the U.S."}  # running themes made of many separate stories
+
+
 def _split_themes(groups):
     """A running theme (e.g. Canada and the U.S.) is ranked as one group but holds many separate stories. Split it into
     its own stories (reports with near-identical headlines), biggest first, each keeping the theme's rank, so the
@@ -268,8 +271,8 @@ def _split_themes(groups):
     import gap_check as gc
     out = []
     for g in groups:
-        if not g.get("theme"):
-            out.append(g)
+        if not g.get("theme") or g["theme"] not in SPLIT_THEMES:
+            out.append(g)  # an ordinary story, or a theme that is one event (the Canada-EU summit): kept whole
             continue
         clusters = []
         for r in sorted(g["rows"], reverse=True):

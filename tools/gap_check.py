@@ -36,10 +36,30 @@ def toks(t):
     return [x for x in re.findall(r"[A-Za-zÀ-ÿ'’.-]+", t)]
 
 
+ALIAS = [(re.compile(r"\bEuropean (?:Union|Commission|Council)\b|\bEuropean Union's\b"), "eu"),
+         (re.compile(r"\bParti Qu[ée]b[ée]cois\b"), "pq")]
+ACRONYM = re.compile(r"^[A-Z][A-Z0-9]{1,5}$")
+
+
 def names(t):
-    """Capitalized words that are not the first word (people, places, organizations), lowercased."""
+    """Capitalized words that are not the first word (people, places, organizations), lowercased. Also: abbreviations
+    anywhere (EU, PQ, NATO), the parts of joined names ("Canada-EU" -> canada-eu, eu) and the short form of a long
+    name (European Union -> eu), so headlines about one story in different words still group (Hannah, Wed Oct 28, 2026:
+    the Canada-EU summit was split into pieces because "EU" was never read as a name)."""
     ws = toks(t)
-    return {x.strip(".’'").lower() for i, x in enumerate(ws) if i > 0 and x[:1].isupper() and len(x) > 2 and x.lower().strip(".") not in STOP}
+    out = {x.strip(".’'").lower() for i, x in enumerate(ws) if i > 0 and x[:1].isupper() and len(x) > 2 and x.lower().strip(".") not in STOP}
+    for x in ws:
+        x = x.strip(".’'")
+        parts = [x] + (x.split("-") if "-" in x else [])
+        for p_ in parts:
+            if ACRONYM.match(p_) and p_.lower() not in STOP:
+                out.add(p_.lower())
+            elif p_ is not x and p_[:1].isupper() and len(p_) > 2 and p_.lower() not in STOP:
+                out.add(p_.lower())
+    for rx, short in ALIAS:
+        if rx.search(t):
+            out.add(short)
+    return out
 
 
 def keys(t):
