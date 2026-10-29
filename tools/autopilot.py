@@ -1280,6 +1280,13 @@ def us_election_breaking(s):
     return bool(US_ELECTION.search(text) and (US_STORY.search(text) or US_TIE.search(text)) and not CAN_TIE.search(s.get("title", "")))
 
 
+# the kind of event a headline is about: the same Canadian place plus the same kind of event is the same story
+# ("Gillingham wins another term as Winnipeg mayor" = "Winnipeg election results: Mayor and councillors")
+EVENT_KIND = set("""mayor mayoral election elections vote votes voters ballot council councillors premier budget strike strikes
+lockout fire fires wildfire wildfires crash collision shooting stabbing storm flood flooding evacuation evacuated
+referendum tariff tariffs trade layoffs layoff water outage closure""".split())
+
+
 def popularity(s, mostread):
     """How high and how widely a story sits on Canadian newsrooms' most-read lists (0 when it is on none)."""
     import gap_check as gc
@@ -1296,7 +1303,9 @@ def popularity(s, mostread):
         n = words(m["h"])
         shared = n & mine
         place_or_name = {x for x in shared if x[:1].isalpha() and (CAN_TIE.search(x.title()) or x in {y.lower() for y in gc.names(s["title"])})}
-        if len(shared) >= 3 or (n and len(shared) >= max(2, len(n) // 2)) or (place_or_name and len(shared) >= 2):
+        raw = lambda t: set(re.findall(r"[a-z]+", t.lower()))
+        same_kind = EVENT_KIND & raw(m["h"]) & raw(" ".join([s["title"]] + [r["title"] for r in s.get("reports", [])[:8]]))
+        if len(shared) >= 3 or (n and len(shared) >= max(2, len(n) // 2)) or (place_or_name and (len(shared) >= 2 or same_kind)):
             score += sum(6 - min(5, o[1]) for o in m.get("o", []))
     return score
 
