@@ -473,6 +473,9 @@ def geo_filter(items, key, label, keep_unknown=None):
     return kept
 
 
+UPLOADS = []  # every upload in the last 24 hours from the networks' official channels (for videos on top stories)
+
+
 def clips(page, prev_clips, now):
     import network_youtube as ny
     have = set(re.findall(r"youtube\.com/watch\?v=([A-Za-z0-9_-]{11})", page))
@@ -491,8 +494,11 @@ def clips(page, prev_clips, now):
         got = []
         for vid, title, parts, dur in ups:
             mins = age_minutes(parts)
-            if not vid or mins is None or mins > CLIP_HOURS * 60 or SKIP_CLIP.search(title) or vid in have:
-                continue
+            if vid and mins is not None and mins <= 24 * 60 and not SKIP_CLIP.search(title):
+                UPLOADS.append({"o": net, "u": f"https://www.youtube.com/watch?v={vid}", "id": vid, "t": clean(title), "img": f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg",
+                                "rec": bool(re.match(r"\s*(?:🔴\s*)?(?:LIVE|Live|WATCH LIVE|Watch live)\b", title)), "mins": mins})
+            if not vid or mins is None or mins > CLIP_HOURS * 60 or SKIP_CLIP.search(title) or vid in have or len(got) >= CLIPS_PER_NET:
+                continue  # Watch shows CLIPS_PER_NET per network; the rest still count for videos on top stories (UPLOADS)
             if re.fullmatch(r"\d+:\d\d:\d\d", dur or "") and int(dur.split(":")[0]) >= 3:
                 continue  # a long livestream recording, not a clip
             up = now - timedelta(minutes=mins)
@@ -504,8 +510,6 @@ def clips(page, prev_clips, now):
                         "u": f"https://www.youtube.com/watch?v={vid}", "img": f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg",
                         "up": (up - timedelta(hours=4 if _dst(up) else 5)).date().isoformat(),
                         "added": p.get("added") or now.isoformat(), "pic": "globe"})
-            if len(got) >= CLIPS_PER_NET:
-                break
         return got
 
     with ThreadPoolExecutor(8) as ex:
@@ -795,6 +799,10 @@ def yt_streams(addr):
                 md = v.get("metadata", {}).get("lockupMetadataViewModel", {})
                 title = clean(md.get("title", {}).get("content", ""))
                 state = "live" if "BADGE_STYLE_LIVE" in j else ("upcoming" if "Scheduled for" in j or '"Upcoming"' in j else "")
+                if not state:
+                    ago = re.search(r'Streamed (\d+) (minute|hour)s? ago', j)
+                    if ago and (int(ago.group(1)) if ago.group(2) == "minute" else int(ago.group(1)) * 60) <= 12 * 60:
+                        state = "ended"
                 watching = (re.search(r'"content": ?"([\d.,K]+) watching"', j) or [None, ""])[1]
                 sched = (re.search(r'Scheduled for ([0-9/]+, [0-9:]+(?:\\u202f|\s)?[AP]M)', j) or [None, ""])[1].replace("\\u202f", " ")
                 if state:
@@ -853,6 +861,9 @@ LIVE_EXTRA = [
 ]
 
 
+ENDED = []  # streams that ended in the last 12 hours (recordings)
+
+
 def live_video(page, named, now):
     import network_youtube as ny
     res = {"now": [], "upcoming": [], "always": []}
@@ -876,6 +887,9 @@ def live_video(page, named, now):
                 continue
             item = {"net": net, "r": region, "title": st["title"], "url": f"https://www.youtube.com/watch?v={st['id']}",
                     "img": f"https://i.ytimg.com/vi/{st['id']}/hqdefault.jpg", "story": name_story(st["title"], named)}
+            if st["state"] == "ended":
+                ENDED.append(dict(item, rec=True, o=net, u=item["url"], t=re.sub(r"^\s*(?:🔴\s*)?(?:WATCH LIVE|LIVE NOW|LIVE)\s*[:|\-–—]\s*", "", st["title"], flags=re.I)))
+                continue
             if st["state"] == "live":
                 item["watching"] = st["watching"]
                 (res["always"] if ALWAYS_ON.search(st["title"]) else res["now"]).append(item)
@@ -1301,7 +1315,12 @@ def promote_live(res, now):
             s["live"] = item
         elif item["url"] != s["live"]["url"]:
             s.setdefault("live_more", []).append(item)
-    clips_ = res.get("clips") or []
+    pool, seen_u = [], set()
+    for c in ENDED + UPLOADS + (res.get("clips") or []):
+        if c.get("u") and c["u"] not in seen_u:
+            seen_u.add(c["u"]); pool.append(c)
+    pool = geo_filter(pool, lambda c: (re.search(r"[?&]v=([A-Za-z0-9_-]{11})", c["u"]) or [None, None])[1], "story videos")
+    clips_ = pool
     for s in cands:
         if s["canada"] == "none":
             continue
