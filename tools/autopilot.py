@@ -984,7 +984,8 @@ def _angle(name, words, mine, recent, eds, papers, otr, pool, anchor_words=None)
         for x in pool:  # the Canada-U.S. relationship today, newest first
             if len(picked) >= ANGLE_MAX:
                 break
-            add(x["iso"], x["t"], x["outlet"], x["title"], x["url"], "Canada and the U.S.")
+            if US_TIE.search(x["title"]) or re.search(r"CUSMA|USMCA|Hoekstra|Washington", x["title"]):  # really about the U.S.
+                add(x["iso"], x["t"], x["outlet"], x["title"], x["url"], "Canada and the U.S.")
     official = [{"outlet": p_["name"], "title": p_["hed"], "url": p_["href"], "t": p_["date"]} for p_ in (otr or [])
                 if p_.get("cat") in ("pm", "mp") and about(p_["hed"] + " " + p_.get("summary", ""))][:2]
     views = [{"outlet": e[0], "kind": e[1], "title": e[2], "url": e[3]} for e in (eds or []) if about(e[2]) and CAN_TIE.search(e[2])][:2]
