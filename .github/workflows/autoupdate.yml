@@ -42,6 +42,20 @@ jobs:
                 -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" -H "Accept: application/vnd.github+json" \
                 https://api.github.com/repos/${{ github.repository }}/pages/builds || true
             fi
+            # A new brief edition: record it in Hannah's voice now (Hannah, Thu Oct 29, 2026: "why does my 60 second
+            # brief sound like a robot?"). Only when no voice recording is already running or waiting.
+            ed_auto=$(python3 -c "import json;print((json.load(open('live/auto.json')).get('brief') or {}).get('edition',''))" 2>/dev/null)
+            ed_voice=$(python3 -c "import json;print(json.load(open('live/brief.json')).get('edition',''))" 2>/dev/null)
+            if [ -n "$ed_auto" ] && [ "$ed_auto" != "$ed_voice" ]; then
+              busy=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" -H "Accept: application/vnd.github+json" \
+                "https://api.github.com/repos/${{ github.repository }}/actions/workflows/brief.yml/runs?per_page=5" \
+                | python3 -c "import json,sys;print(sum(r['status'] in ('queued','in_progress','waiting','pending') for r in json.load(sys.stdin).get('workflow_runs',[])))")
+              if [ "$busy" = "0" ]; then
+                curl -s -o /dev/null -w "voice brief requested for $ed_auto: %{http_code}\n" -X POST \
+                  -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" -H "Accept: application/vnd.github+json" \
+                  https://api.github.com/repos/${{ github.repository }}/actions/workflows/brief.yml/dispatches -d '{"ref":"main"}'
+              fi
+            fi
             next=$(( start + 600 ))
             [ $next -ge $end ] && break
             now=$(date +%s); [ $next -gt $now ] && sleep $(( next - now ))

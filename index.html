@@ -6314,9 +6314,15 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     }
     // Hannah's voice (tools/brief_voice.py): the recording and its script, when it is for the newest edition
     const A = AUTO.d.brief;
-    if (VOICE && VOICE.audio && A && VOICE.edition === A.edition && B.audio !== VOICE.base + VOICE.audio) {
-      B.lines.length = 0; VOICE.lines.forEach((l) => B.lines.push(l)); B.auto = true; B.edition = VOICE.edition; B.audio = VOICE.base + VOICE.audio;
-      const n = document.getElementById('audioNote'); if (n) n.textContent = 'Hannah Thibedeau on the top stories · ' + VOICE.edition + ', each credited to the newsroom that reported it. About a minute.';
+    // Hannah's voice whenever there is a recording from the last 12 hours, even while the newest edition is still being
+    // recorded (10-15 minutes after the edition changes; the update starts it by itself). Never the device's robot voice
+    // instead of hers (Hannah, Thu Oct 29, 2026).
+    const vAge = VOICE && VOICE.at ? Date.now() - Date.parse(VOICE.at) : (VOICE && A && VOICE.edition.replace(/ \w+,/, ',') === A.edition.replace(/ \w+,/, ',') ? 0 : Infinity);
+    const current = VOICE && A && VOICE.edition === A.edition;
+    if (VOICE && VOICE.audio && (current || vAge < 12 * 3600e3)) {
+      if (B.audio !== VOICE.base + VOICE.audio) { B.lines.length = 0; VOICE.lines.forEach((l) => B.lines.push(l)); B.auto = true; B.edition = VOICE.edition; B.audio = VOICE.base + VOICE.audio; }
+      const n = document.getElementById('audioNote');
+      if (n) n.textContent = 'Hannah Thibedeau on the top stories · ' + VOICE.edition + ', each credited to the newsroom that reported it. About a minute.' + (current ? '' : ' The ' + A.edition.replace(/,.*$/, '') + ' edition is being recorded now.');
       return;
     }
     if (!A || !A.lines || A.edition === B.edition) return;

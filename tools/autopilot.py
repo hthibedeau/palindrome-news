@@ -859,7 +859,7 @@ def canus(items, now):
 def brief(groups, now):
     import autoupdate as au
     loc = now - timedelta(hours=4 if _dst(now) else 5)
-    part = "morning" if loc.hour < 12 else ("evening" if loc.hour < 21 else "night")
+    part = "morning" if loc.hour < 12 else ("afternoon" if loc.hour < 17 else ("evening" if loc.hour < 21 else "night"))
     edition = f"{loc:%A} {part}, {loc:%B} {loc.day}"
     ca, other = [], []
     for g in groups[:16]:
@@ -873,7 +873,7 @@ def brief(groups, now):
     stories = (ca[:4] + other[:3])[:6]
     if len(stories) < 3:
         return None
-    lines = [("Good morning." if part == "morning" else "Good evening.") + " I’m Hannah Thibedeau, and this is your Palindrome News brief."]
+    lines = [{"morning": "Good morning.", "afternoon": "Good afternoon."}.get(part, "Good evening.") + " I’m Hannah Thibedeau, and this is your Palindrome News brief."]
     lines += [x.replace("'", "’") for x in stories]
     lines.append("That’s your brief. We’ll keep watching, so you don’t have to.")
     return {"edition": edition, "lines": lines}

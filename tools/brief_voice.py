@@ -105,7 +105,8 @@ def main():
     rel = f"live/audio/brief-{slug(brief['edition'])}.mp3"
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", lst, "-ac", "1", "-b:a", "64k",
                     os.path.join(root, rel)], check=True)
-    json.dump({"edition": brief["edition"], "lines": brief["lines"], "audio": rel}, open(a.out, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    from datetime import datetime as _dt, timezone as _tz
+    json.dump({"edition": brief["edition"], "lines": brief["lines"], "audio": rel, "at": _dt.now(_tz.utc).isoformat()}, open(a.out, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     for f in sorted(glob.glob(os.path.join(root, "live", "audio", "*.mp3")), key=os.path.getmtime)[:-3]:
         os.remove(f)
     print("VOICE_OK", rel)
