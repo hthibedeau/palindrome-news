@@ -1,4 +1,4 @@
-# Checks every outlet link on the page every hour and writes live/links.json; the page hides anything whose link is
+# Checks every outlet link on the page every hour (and that every outlet button opens that outlet's own page) and writes live/links.json; the page hides anything whose link is
 # dead (404/410 on two checks in a row). Hannah, Tue Oct 27, 2026: the code runs the site, not Claude.
 name: Link check
 on:
@@ -18,11 +18,18 @@ jobs:
       - uses: actions/checkout@v4
       - name: Check every link on the page
         run: python3 tools/linkcheck.py --page index.html --out live/links.json
+      # Hannah, Wed Oct 28, 2026: "I need the links to always go to the right page." Keeps the tap guard in the page and
+      # taps every outlet button and label at phone and desktop width; results in live/taps.json.
+      - name: Tap every outlet button and label
+        run: |
+          pip install -q playwright && python3 -m playwright install --with-deps chromium >/dev/null
+          python3 tools/tap_check.py --install --page index.html
+          python3 tools/tap_check.py --page index.html --out live/taps.json
       - name: Commit and push
         run: |
           git config user.name "palindrome-autoupdate"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add live/links.json
+          git add live/links.json live/taps.json index.html
           if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
           git commit -m "Link check ($(TZ=America/Toronto date '+%a %-I:%M %p ET'))"
           for i in 1 2 3 4 5; do

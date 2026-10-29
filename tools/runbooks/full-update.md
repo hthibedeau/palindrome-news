@@ -223,3 +223,5 @@ Rules (Hannah's):
 9. If nothing meaningful changed after the wide search, do not publish or commit; end with "No new developments." and the list of outlets you checked.
 
 Finish with a short plain-language list of what changed, each with its source link, the outlets you checked for the top story, then the real website link on its own line: https://hthibedeau.github.io/palindrome-news/
+
+> **Every tap goes to the right outlet (Hannah, Wed Oct 28, 2026: "I need the links to always go to the right page").** A label that names an outlet (an outlet chip, a source line, "Read at …", "Watch live on …") is always a link to that outlet's own report, never plain text inside a tappable card. The page's tap guard (tools/tap_guard.js, installed in index.html between the PAL-TAP-GUARD markers) repairs or disarms a wrong one for readers, and the hourly Link check runs `python3 tools/tap_check.py --page index.html`, which taps every outlet label at 390 and 1280 wide and writes live/taps.json. Before publishing by hand, run it too and fix anything it reports in the page itself.
