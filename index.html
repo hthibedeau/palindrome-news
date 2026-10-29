@@ -170,9 +170,12 @@ main { padding-block: 32px 8px; display: flex; flex-direction: column; gap: 56px
 .pill { font-size: 12px; font-weight: 600; background: var(--pill); color: var(--ink); padding: 3px 8px; border-radius: 4px; }
 .row-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 18px; font-size: 14px; color: var(--muted); margin-bottom: 18px; }
 .row-meta a { color: var(--accent); font-weight: 600; }
-.chips-static { display: flex; flex-wrap: wrap; gap: 8px; }
-.chips-static span { font-size: 13px; border: 1px solid var(--chipline); background: var(--surface); padding: 5px 10px; border-radius: 999px; }
-.chips-static span.more { border: 0; background: none; color: var(--muted); }
+/* Outlet chips sit above a card's stretched link, so each one opens its own outlet, never the card's headline link. */
+.chips-static { display: flex; flex-wrap: wrap; gap: 8px; position: relative; z-index: 2; }
+.chips-static a { color: inherit; text-decoration: none; }
+@media (hover: hover) { .chips-static a:not(.more):hover { border-color: var(--accent); } }
+.chips-static span, .chips-static a { font-size: 13px; border: 1px solid var(--chipline); background: var(--surface); padding: 5px 10px; border-radius: 999px; }
+.chips-static .more { border: 0; background: none; color: var(--muted); }
 .rail { flex: 1 1 300px; min-width: 0; }
 .rail article { padding: 16px 0; border-bottom: 1px solid var(--line); }
 .rail h3 { margin: 6px 0 6px; font-family: var(--serif); font-weight: 500; font-size: 22px; line-height: 1.25; }
@@ -1469,7 +1472,7 @@ header.site { border-bottom: 0; }
       <h1><a class="card-link" href="https://www.ctvnews.ca/world/trumps-tariffs/article/pm-carney-says-us-is-coming-closer-to-our-position-in-trade-war-as-talks-gain-momentum/" target="_blank" rel="noopener">Carney says the U.S. is ‘coming closer to our position’ as trade talks gain momentum, but he can’t guarantee Trump will honour a deal</a></h1>
       <p class="dek">“Canada’s ready to sign an agreement that is in the interests of Canadians … with very clear bottom lines, red lines,” Carney said Monday after a meeting of First Nations leaders and first ministers in Ottawa; asked how he knows Trump will sign in pen, he said, “I don’t know that.” Government and industry sources told CTV News the White House has considerable appetite for a deal before next week’s midterms (<a href="https://www.ctvnews.ca/world/trumps-tariffs/article/pm-carney-says-us-is-coming-closer-to-our-position-in-trade-war-as-talks-gain-momentum/" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline">CTV News</a>). Last week, the U.S. Embassy’s fact sheet listed remarks by Industry Minister Mélanie Joly, Ontario Premier Doug Ford and others as attempts to influence the Nov. 3 vote; Carney replied that the U.S. “initiated a series of trade actions” and Ford said he has “no interest at all interfering in American elections” (<a href="https://www.cbc.ca/news/politics/canada-us-embassy-alleged-election-interference-9.7390549" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline">CBC News</a>). It names 11 people charged or sentenced for illegally voting in U.S. elections but gives no evidence tying them to Ottawa (<a href="https://www.aljazeera.com/news/2026/10/21/us-accuses-canada-of-election-interference-ahead-of-midterms" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline">Al Jazeera</a>). Carney says he spoke with Trump Wednesday morning and “did address some of the issues around trade” (<a href="https://www.ctvnews.ca/politics/article/pm-carney-trump-spoke-this-morning-for-quite-some-time-addressed-some-of-the-issues-around-trade/" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline">CTV News</a>); former president Bill Clinton said of Trump’s treatment of Canada, “I’m tired of treating our allies like they’re dirt” (<a href="https://www.ctvnews.ca/world/trumps-tariffs/article/bill-clinton-calls-pm-carney-a-longtime-friend-says-us-treated-canada-like-dirt/" target="_blank" rel="noopener" style="position: relative; z-index: 2; text-decoration: underline">CTV News</a>).</p>
       <div class="row-meta"><span class="meter-slot" data-n="8"></span><span class="ts">Updated Mon 6:47 p.m.</span><span style="color: var(--accent); font-weight: 600">Latest report &#8599;</span></div>
-      <div class="chips-static"><span>CBC News</span><span>CTV News</span><span>The Canadian Press</span><span>Al Jazeera</span><span>The Associated Press</span><span>The Hill Times</span><span class="more">+3 more</span></div>
+      <div class="chips-static"><a href="https://www.cbc.ca/news/politics/trade-talks-intensifying-no-deal-in-sight-9.7396332" target="_blank" rel="noopener">CBC News</a><a href="https://www.ctvnews.ca/world/trumps-tariffs/article/pm-carney-says-us-is-coming-closer-to-our-position-in-trade-war-as-talks-gain-momentum/" target="_blank" rel="noopener">CTV News</a><a href="https://www.cp24.com/news/canada/2026/10/27/there-has-been-limited-progress-in-canada-us-trade-talks-canadian-official/" target="_blank" rel="noopener">The Canadian Press</a><a href="https://www.aljazeera.com/news/2026/10/21/us-accuses-canada-of-election-interference-ahead-of-midterms" target="_blank" rel="noopener">Al Jazeera</a><a href="https://abcnews.com/Business/wireStory/carney-trump-moving-closer-canadas-trade-demands-midterms-137585685" target="_blank" rel="noopener">The Associated Press</a><a href="https://www.hilltimes.com/2026/10/21/canada-should-continue-to-speak-loudly-and-clearly-despite-u-s-envoys-interference-claims-say-former-diplomats-and-ex-mp/522696/" target="_blank" rel="noopener">The Hill Times</a><a class="more" href="#canus">+3 more in Canada and the U.S.</a></div>
     </article>
     <aside class="latest" aria-label="Latest updates">
       <p class="label">The wire <span class="live"><i aria-hidden="true"></i>Live</span></p>
@@ -5200,10 +5203,22 @@ header.site { border-bottom: 0; }
     });
   })();
 
+  // Outlet chips: a chip names an outlet, so a tap must open that outlet's own report, never the card's headline link.
+  // Any chip written without a link is linked to the first report in the same card (or the Canada–U.S. section) credited to that outlet.
+  try {
+    document.querySelectorAll('.chips-static span:not(.more)').forEach((sp) => {
+      const name = sp.textContent.trim(), key = name.replace(/^The /, '').toLowerCase();
+      const scope = [sp.closest('article, .tap, section'), document.getElementById('canus')].filter(Boolean);
+      let hit = null;
+      for (const sc of scope) { hit = [...sc.querySelectorAll('a[href^="http"]')].find((a) => !a.closest('.chips-static') && a.textContent.toLowerCase().includes(key)); if (hit) break; }
+      if (!hit) return;
+      const a = document.createElement('a'); a.href = hit.href; a.target = '_blank'; a.rel = 'noopener'; a.textContent = name; sp.replaceWith(a);
+    });
+  } catch (e) { console.warn('chips', e); }
   // Sources list, built from every outlet the page links to
   try {
     const seen = new Set();
-    document.querySelectorAll('.srcs li a b, .chips-static span, .fm, .meta strong, .mr .outlets a, .read .src a, .ed .src, .paper .inst, .media-row .src, .vid .src, .lede .o').forEach((el) => {
+    document.querySelectorAll('.srcs li a b, .chips-static span, .chips-static a:not(.more), .fm, .meta strong, .mr .outlets a, .read .src a, .ed .src, .paper .inst, .media-row .src, .vid .src, .lede .o').forEach((el) => {
       const t = el.textContent.replace(/^#\d+\s*/, '').replace(/^(Read (at|on)|Read)\s+/, '').replace(/\s*[·↗].*$/, '').trim();
       t.split(/,\s*/).forEach((n) => { n = n.trim(); if (n && n.length < 40 && !/^\d|^@|^See it|^On |^the report|^Instagram$|^Front Burner$|^Good Talk$|outlets|of 6|Verified|Developing|Oct|p\.m\.|Today|Tonight|Watch|This week|Breakdown|Updated|\+/.test(n)) seen.add(n); });
     });
