@@ -3,7 +3,15 @@
 #autoBreaking .first a, #autoBreaking h2 a { color: inherit; }
 #autoBreaking .ab-cr { opacity: .8; font-size: 14px; }
 #autoBreaking .ab-reps { margin: 0 0 6px; }
-#autoBreaking .ab-reps summary { cursor: pointer; font-weight: 600; font-size: 15px; min-height: 44px; display: flex; align-items: center; }
+#autoBreaking .ab-reps summary { cursor: pointer; font-weight: 600; font-size: 15px; min-height: 44px; display: flex; align-items: center; justify-content: space-between; gap: 12px; list-style: none; position: relative; z-index: 2; }
+#autoBreaking .ab-reps summary::-webkit-details-marker { display: none; }
+#autoBreaking .ab-reps-tog { flex: 0 0 auto; display: inline-flex; align-items: center; gap: 4px; padding: 4px 12px; border: 1px solid rgba(255,255,255,.55); border-radius: 999px; font-size: 13px; }
+#autoBreaking .ab-reps-tog svg { transition: transform .2s; }
+#autoBreaking .ab-reps[open] .ab-reps-tog svg { transform: rotate(180deg); }
+#autoBreaking .ab-reps .o2, #autoBreaking .ab-reps[open] .o1 { display: none; }
+#autoBreaking .ab-reps[open] .o2 { display: inline; }
+#autoBreaking .ab-reps summary:focus-visible { outline: 3px solid #F6E1E8; outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { #autoBreaking .ab-reps-tog svg { transition: none; } }
 #autoBreaking .ab-reps ol { list-style: none; margin: 4px 0 0; padding: 0; }
 #autoBreaking .ab-reps li { padding: 7px 0; border-top: 1px solid rgba(255,255,255,.18); font-size: 15px; line-height: 1.4; }
 #autoBreaking .ab-reps time { display: inline-block; min-width: 108px; opacity: .8; font-size: 13px; }
@@ -6125,6 +6133,16 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
   // Top stories: when the hand-written top story has had no development for 3 hours (AUTO.d.auto.takeover), the two
   // biggest stories right now take its place, each with the newest report's own headline and summary, credited and
   // linked, "First reported by", the outlet's own photo and caption, and every newsroom carrying it.
+  // "What each newsroom reports" opens and closes with a tap on its header (Hannah, Thu Oct 29, 2026), and keeps the
+  // reader's choice for each story when the page refreshes itself every 10 minutes.
+  const REPS = new Map();
+  try { JSON.parse(sessionStorage.getItem('pal-reps') || '[]').forEach(([k, v]) => REPS.set(k, v)); } catch (e) {}
+  function repsOpen(key, dflt) { return REPS.has(key) ? REPS.get(key) : dflt; }
+  document.addEventListener('toggle', (e) => {
+    const d = e.target; if (!d.matches || !d.matches('details.ab-reps') || !d.dataset.key) return;
+    REPS.set(d.dataset.key, d.open);
+    try { sessionStorage.setItem('pal-reps', JSON.stringify([...REPS].slice(-40))); } catch (e2) {}
+  }, true);
   function autoTop() {
     const A = AUTO.d.auto, sec = document.getElementById('autoBreaking'), bk = document.getElementById('breaking');
     if (!sec) return;
@@ -6156,7 +6174,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
         + '<h2>' + a(s.url, esc(s.title)) + '</h2>' + liveBar + moreBox
         + '<p class="first">LATEST ' + a(s.url, esc(s.outlet)) + ' · ' + esc(s.t) + firstLine + '</p>'
         + (s.summary ? '<p class="bk-dek">' + esc(s.summary) + ' <span class="ab-cr">— ' + esc(s.outlet) + '</span></p>' : '')
-        + '<details class="ab-reps"' + (i ? '' : ' open') + '><summary>What each newsroom reports · ' + (s.independent || s.outlets) + ' independent newsrooms</summary><ol>' + reps + '</ol></details>'
+        + '<details class="ab-reps" data-key="' + esc(s.key) + '"' + (repsOpen(s.key, !i) ? ' open' : '') + '><summary><span class="ab-reps-t">What each newsroom reports · ' + (s.independent || s.outlets) + ' independent newsrooms</span><span class="ab-reps-tog"><span class="o1">Show</span><span class="o2">Hide</span><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></summary><ol>' + reps + '</ol></details>'
         + '</article>';
     }).join('') + '<p class="ab-note">Picked and updated automatically at ' + esc(fmt(AUTO.d.checked)) + ' ET, by how many newsrooms carry each story and where it sits on National Newswatch and CBC News, with stories that touch Canada first: a story from abroad with no Canadian tie gives way to one that has one. Headlines and summaries are the outlets’ own.</p>';
     sec.hidden = false;
