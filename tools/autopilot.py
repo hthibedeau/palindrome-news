@@ -953,6 +953,19 @@ def pm_itinerary(now):
 # ===== Related stories (Hannah, Tue Oct 27: "for the top stories, find other stories that would tie to that one and
 # add it in"): for each top story, the newest reports on the people, places and issues that run through it, which are
 # not the story itself. One per related story, newest first, plus analysis and opinion that names it.
+PLACES = re.compile(r"^(canada|ottawa|toronto|montreal|vancouver|calgary|edmonton|winnipeg|halifax|quebec|ontario|alberta|manitoba|"
+                    r"saskatchewan|nova|scotia|brunswick|newfoundland|labrador|yukon|nunavut|regina|saskatoon|victoria|hamilton|"
+                    r"london|paris|berlin|brussels|rome|madrid|washington|york|chicago|california|texas|florida|beijing|moscow|"
+                    r"kyiv|ukraine|russia|china|india|israel|gaza|iran|europe|european|america|american|africa|asia|north|south|"
+                    r"east|west|central|island|islands|city|county|province|state|states)$", re.I)
+
+
+def is_place(t):
+    """A city, province, country or region: never enough on its own to connect two stories."""
+    t = t.replace("’s", "").replace("'s", "")
+    return bool(PLACES.match(t) or CAN_TIE.fullmatch(t[:1].upper() + t[1:]))
+
+
 def related(items, stories, now, eds, papers, groups=()):
     import autoupdate as au
     import gap_check as gc
@@ -975,6 +988,8 @@ def related(items, stories, now, eds, papers, groups=()):
             for dt, outlet, title, link, k in recent:
                 if not (ra.search(title) and rb.search(title)) or au.OPINION.search(title + " " + link) or VIDEO.search(link) or SPORT.search(title):
                     continue
+                if link in own:
+                    continue  # the story's own reports are already listed under it
                 g_ = gidx.get(link)
                 if g_ is not None and g_ in used:
                     continue
@@ -1007,13 +1022,26 @@ def related(items, stories, now, eds, papers, groups=()):
         if not ties:
             continue
         trx = re.compile(r"\b(" + "|".join(re.escape(t[:1].upper() + t[1:]) for t in ties) + r")\b")
+        # Hannah, Thu Oct 29, 2026: "All the 'Connected to this story' do not actually connect to canada eu." The summit
+        # is in Montreal, so "Montreal" was a tie and every Montreal story (a strike vote, a car crash) was "connected".
+        # A connected story must share a person, organization or issue with this one, not just a place, and share at
+        # least one more of its names or key words.
+        story_words = {x for x in topkeys | set(co) | {k_ for x in mine for k_ in gc.keys(x[2])} if x not in WEAK}
+        def connected(title):
+            found = {m_.group(1).lower() for m_ in trx.finditer(title)}
+            people = {t for t in found if not is_place(t)}
+            if not people:
+                return False
+            extra = ({n.replace("’s", "").replace("'s", "") for n in gc.names(title)} | gc.keys(title)) & story_words
+            return len(found) >= 2 or len(extra - found) >= 1
         picked, seen, used_groups = [], [], set()
         for dt, outlet, title, link, k in recent:
             if rx.search(title) or link in own or au.OPINION.search(title + " " + link) or SPORT.search(title + " " + link) or VIDEO.search(link):
                 continue
             m = trx.search(title)
-            if not m:
+            if not m or not connected(title):
                 continue
+            m = next((m_ for m_ in trx.finditer(title) if not is_place(m_.group(1).lower())), m)
             if gidx.get(link) in own_groups or gidx.get(link) in used_groups:
                 continue
             if len(gc.keys(title) & topkeys) >= 2 or len({n.replace("’s", "").replace("'s", "") for n in gc.names(title)} & topnames) >= 2:
@@ -1027,10 +1055,10 @@ def related(items, stories, now, eds, papers, groups=()):
             picked.append({"t": w.eastern(dt), "iso": dt.isoformat(), "outlet": au.clean_outlet(outlet), "title": clean(title), "url": link, "tie": m.group(1)})
             if len(picked) >= 5:
                 break
-        views = [{"outlet": e[0], "kind": e[1], "title": e[2], "url": e[3]} for e in (eds or []) if rx.search(e[2]) or trx.search(e[2])][:2]
-        views += [{"outlet": p_["inst"], "kind": "Think tank", "title": p_["t"], "url": p_["u"]} for p_ in (papers or []) if rx.search(p_["t"]) or trx.search(p_["t"])][:2]
+        views = [{"outlet": e[0], "kind": e[1], "title": e[2], "url": e[3]} for e in (eds or []) if rx.search(e[2]) or connected(e[2])][:2]
+        views += [{"outlet": p_["inst"], "kind": "Think tank", "title": p_["t"], "url": p_["u"]} for p_ in (papers or []) if rx.search(p_["t"]) or connected(p_["t"])][:2]
         if picked or views:
-            out[key] = {"ties": ties, "stories": picked, "views": views}
+            out[key] = {"ties": [t for t in ties if not is_place(t)] or ties, "stories": picked, "views": views}
     return out
 
 
@@ -1741,7 +1769,8 @@ def run(page, items, groups, breaking, now, imgdir, prev):
     print(f"autopilot live blogs: {len(res.get('blogs_auto') or [])}")
     try:
         keyed = [("top" if st["where"].startswith("Top") else st["where"].split("UPNEXT ")[-1].rstrip(")"), words, set(), st["name"]) for st, words in breaking]
-        keyed += [(s_["key"], s_.get("words") or [], {r["url"] for r in s_["reports"]}) for s_ in a.get("stories", []) + a.get("more", [])]
+        keyed += [(s_["key"], s_.get("words") or [], {r["url"] for r in s_["reports"]}) + ((s_["theme"],) if s_.get("theme") and s_["theme"] not in SPLIT_THEMES else ())
+                  for s_ in a.get("stories", []) + a.get("more", [])]
         res["related"] = related(items, keyed, now, res.get("eds"), res.get("papers"), groups)
     except Exception as e:
         print("autopilot related failed:", e)
