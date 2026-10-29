@@ -34,6 +34,7 @@ import photo_scan as ps  # noqa: E402
 
 TAKEOVER_HOURS = 3      # hand-written top story with nothing new for this long gives way to the auto top story
 BREAKING_MIN = 60       # newest report within this many minutes: "Breaking"; otherwise "Developing"
+CANADIAN_WEIGHT = 8    # a Canadian story's edge over a story from abroad of the same size
 MIN_OUTLETS = 3         # an auto story needs at least this many INDEPENDENT newsrooms (wire copies count once)
 BREAKING_INDEPENDENT = 4  # "Breaking" also needs at least this many independent newsrooms
 CANDIDATES = 8          # top-story candidates built each run; the two shown are picked by pick_by_canada()
@@ -1226,7 +1227,20 @@ def pick_by_canada(auto, items, now, eds, papers, otr, canus_, mostread=None):
         if s["us_election"] and s["canada"] == "none":
             s["canada"] = "tie"
     tier = lambda s: 2 if s["canada"] == "none" else 0
-    ranked = sorted(cands, key=lambda s: (tier(s), -s["popular"]))  # stable: ties keep the ranking order
+    # Within the tier: how big the story is right now. Newsroom coverage and National Newswatch / CBC placement (the
+    # group's score), what Canadians are reading (most-read lists, weighted), and a Canadian story ahead of a story from
+    # abroad of the same size (Hannah, Wed Oct 28, 2026: Winnipeg's new mayor and the Canada-EU summit were sitting below
+    # a smaller foreign story). A big story from abroad with a real Canadian angle (6 Canadians hurt in Spain) can still lead.
+    def weight(s):
+        w = (s.get("score") or 0) + 2 * s["popular"] + min(s.get("independent") or 0, 10)
+        if s["canada"] == "canadian":
+            w += CANADIAN_WEIGHT
+        if s.get("us_election"):
+            w += 4
+        return w
+    for s in cands:
+        s["weight"] = weight(s)
+    ranked = sorted(cands, key=lambda s: (tier(s), -s["weight"]))  # stable: ties keep the ranking order
     # one story per running theme in the top pair, so Canada-U.S. leads without crowding out everything else
     # (the rest of the day's Canada-U.S. stories are in the Canada and the U.S. section and the Canadian angle sidebars)
     seen_t, top2, rest = set(), [], []
@@ -1247,7 +1261,7 @@ def pick_by_canada(auto, items, now, eds, papers, otr, canus_, mostread=None):
     auto["more"] = [s for s in ranked[2:] if tier(s) < 2 and s not in auto["stories"]][:3]
     auto["passed_over"] = [{"title": s["title"], "url": s["url"]} for s in cands if tier(s) == 2 and s not in ranked[:2]]
     # why each story is or isn't at the top (Hannah: "why is that not at the top of the news?")
-    auto["considered"] = [{"title": s["title"], "url": s["url"], "rank": n + 1, "independent": s.get("independent"), "most_read": s["popular"],
+    auto["considered"] = [{"title": s["title"], "url": s["url"], "rank": n + 1, "weight": s.get("weight"), "score": s.get("score"), "independent": s.get("independent"), "most_read": s["popular"],
                            "canada": s["canada"], "theme": s.get("theme") or "", "top": s in ranked[:2]} for n, s in enumerate(ranked)] + (auto.get("considered") or [])
     print("top stories:", " | ".join(f"{s['title'][:50]} [{s['canada']}{' canus' if s['canus'] else ''}{' us-election' if s.get('us_election') else ''} read:{s['popular']}]" for s in cands), "->", [s["key"] for s in auto["stories"]])
     return auto
@@ -1271,13 +1285,18 @@ def popularity(s, mostread):
     import gap_check as gc
     if not mostread or not mostread.get("list"):
         return 0
+    def words(t):  # names and key words, possessives folded in ("Winnipeg's" is Winnipeg)
+        t = re.sub(r"(\w)['’]s\b", r"\1", t)
+        return {x for x in gc.names(t) | gc.keys(t) if x.lower() not in WEAK}
     mine = set()
-    for t in [s["title"]] + [r["title"] for r in s.get("reports", [])[:6]]:
-        mine |= {x for x in gc.names(t) | gc.keys(t) if x.lower() not in WEAK}
+    for t in [s["title"]] + [r["title"] for r in s.get("reports", [])[:8]]:
+        mine |= words(t)
     score = 0
     for m in mostread["list"]:
-        n = {x for x in gc.names(m["h"]) | gc.keys(m["h"]) if x.lower() not in WEAK}
-        if len(n & mine) >= 3 or (n and len(n & mine) >= max(2, len(n) // 2)):
+        n = words(m["h"])
+        shared = n & mine
+        place_or_name = {x for x in shared if x[:1].isalpha() and (CAN_TIE.search(x.title()) or x in {y.lower() for y in gc.names(s["title"])})}
+        if len(shared) >= 3 or (n and len(shared) >= max(2, len(n) // 2)) or (place_or_name and len(shared) >= 2):
             score += sum(6 - min(5, o[1]) for o in m.get("o", []))
     return score
 
