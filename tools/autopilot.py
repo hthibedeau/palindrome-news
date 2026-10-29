@@ -984,12 +984,14 @@ def related(items, stories, now, eds, papers, groups=()):
             # a running theme (e.g. Canada and the U.S.): everything on both sides of it is connected
             ra, rb = themes[name]
             rx0 = re.compile("|".join(re.escape(x) for x in words), re.I)
+            own_rows = [x for x in recent if x[3] in own]
+            own_keys = {k_ for x in own_rows[:1] for k_ in gc.keys(x[2])}
             picked, used = [], set()
             for dt, outlet, title, link, k in recent:
                 if not (ra.search(title) and rb.search(title)) or au.OPINION.search(title + " " + link) or VIDEO.search(link) or SPORT.search(title):
                     continue
-                if link in own:
-                    continue  # the story's own reports are already listed under it
+                if link in own or any(same_report(title, x[2]) for x in own_rows) or len(gc.keys(title) & own_keys) >= 4:
+                    continue  # the story's own reports, or the same report from another newsroom: already listed under it
                 g_ = gidx.get(link)
                 if g_ is not None and g_ in used:
                     continue
