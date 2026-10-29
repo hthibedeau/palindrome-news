@@ -1612,6 +1612,9 @@ def _select(auto, cands, ranked, tier):
                 seen_t.add(t)
         else:
             rest.append(s)
+    # the newer development leads when the two are close (within 8 points): the top of the page is the latest news
+    if len(top2) == 2 and (top2[0].get("weight") or 0) - (top2[1].get("weight") or 0) <= 8 and (top2[1].get("newest") or "") > (top2[0].get("newest") or ""):
+        top2.reverse()
     ranked = top2 + rest
     # keep spares so the page can step past a story whose own Breaking event is showing
     auto["stories"] = ranked[:2] + [s for s in ranked[2:4] if tier(s) < 2 and any(x.get("events") for x in ranked[:2])]
@@ -1683,7 +1686,16 @@ def pick_by_canada(auto, items, now, eds, papers, otr, canus_, mostread=None):
     # abroad of the same size (Hannah, Wed Oct 28, 2026: Winnipeg's new mayor and the Canada-EU summit were sitting below
     # a smaller foreign story). A big story from abroad with a real Canadian angle (6 Canadians hurt in Spain) can still lead.
     def weight(s):
-        w = (s.get("score") or 0) + 2 * s["popular"] + min(s.get("independent") or 0, 10)
+        # Hannah, Thu Oct 29, 2026: "If the newest report is on the Canada EU summit why is Carney Cleveland-Cliffs on
+        # top?" One most-read list could outweigh everything, and a story's newest development counted for nothing.
+        # Now: most-read is capped, the breadth of coverage counts (every newsroom carrying it, copies included, up to 6),
+        # and a fresh development counts (newest report under 1 h: +6, under 3 h: +3, nothing new for 6 h: -4).
+        try:
+            age = (now - datetime.fromisoformat(s["newest"])).total_seconds() / 3600
+        except Exception:
+            age = 99
+        fresh = 6 if age < 1 else 3 if age < 3 else -4 if age >= 6 else 0
+        w = (s.get("score") or 0) + min(s["popular"], 8) + min(s.get("independent") or 0, 10) + min((s.get("carriers") or 0) / 2, 6) + fresh
         if s["canada"] == "canadian":
             w += CANADIAN_WEIGHT
         if s.get("us_election"):
