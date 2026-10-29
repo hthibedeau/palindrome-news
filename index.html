@@ -17,6 +17,8 @@
 #autoBreaking .ab-reps time { display: inline-block; min-width: 108px; opacity: .8; font-size: 13px; }
 #autoBreaking .ab-reps a { color: #FFFFFF; }
 #autoBreaking .ab-reps .o { opacity: .8; font-size: 13px; }
+#autoBreaking .ab-also { margin: 3px 0 0; font-size: 13px; opacity: .85; }
+#autoBreaking .ab-also a { color: #FFFFFF; position: relative; z-index: 2; }
 #autoBreaking .bart-cap { margin: 8px 0 14px; }
 #autoBreaking .ab-note { margin: 16px 0 0; font-size: 13px; opacity: .8; }
 .cu-auto { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 8px 28px; margin: 0 0 22px; }
@@ -6156,7 +6158,12 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       const ph = s.photo ? '<div class="bart"><span class="ph"><img src="' + esc(AUTO.base + s.photo.src) + '" alt="' + esc(s.photo.alt || '') + '" decoding="async" onerror="this.closest(\'.bart\').remove()"></span></div><p class="bart-cap">' + esc(s.photo.caption) + '</p>' : '';
       const recent = Date.now() - Date.parse(s.newest) < 3600000;
       const firstLine = s.first && s.first.url !== s.url ? '<br>First reported by ' + a(s.first.url, esc(s.first.outlet)) + ' · ' + esc(s.first.t) : '';
-      const reps = (s.reports || []).map((r) => '<li><time>' + esc(r.t) + '</time>' + a(r.url, esc(r.title)) + ' <span class="o">' + esc(r.outlet) + ' &#8599;</span>' + (r.desc && r.url !== s.url ? '<p class="ab-d">' + esc(r.desc) + '</p>' : '') + '</li>').join('');
+      // one line per independent report; a wire story or same-owner copy is listed once, with who else ran it
+      // (Hannah, Thu Oct 29, 2026: one CP story run by six papers is one source, not six)
+      const reps = (s.sources || s.reports || []).map((r) => '<li><time>' + esc(r.t) + '</time>' + a(r.url, esc(r.title)) + ' <span class="o">' + esc(r.outlet) + (r.wire && r.wire !== r.outlet ? ' · ' + esc(r.wire) + ' story' : '') + ' &#8599;</span>'
+        + (r.desc && r.url !== s.url ? '<p class="ab-d">' + esc(r.desc) + '</p>' : '')
+        + (r.copies && r.copies.length ? '<p class="ab-also">Also run by ' + r.copies.map((c) => a(c.url, esc(c.outlet))).join(', ') + '</p>' : '') + '</li>').join('');
+      const nInd = s.sources ? s.sources.length : (s.independent || s.outlets);
       // A Canadian event on this story live now, or coming up (tools/autopilot.py promote_live): what is on, who is
       // carrying it, its picture, and the other places carrying it (Hannah, Thu Oct 29, 2026).
       const L = s.live, onAir = L && L.state === 'now';
@@ -6174,7 +6181,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
         + '<h2>' + a(s.url, esc(s.title)) + '</h2>' + liveBar + moreBox
         + '<p class="first">LATEST ' + a(s.url, esc(s.outlet)) + ' · ' + esc(s.t) + firstLine + '</p>'
         + (s.summary ? '<p class="bk-dek">' + esc(s.summary) + ' <span class="ab-cr">— ' + esc(s.outlet) + '</span></p>' : '')
-        + '<details class="ab-reps" data-key="' + esc(s.key) + '"' + (repsOpen(s.key, !i) ? ' open' : '') + '><summary><span class="ab-reps-t">What each newsroom reports · ' + (s.independent || s.outlets) + ' independent newsrooms</span><span class="ab-reps-tog"><span class="o1">Show</span><span class="o2">Hide</span><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></summary><ol>' + reps + '</ol></details>'
+        + '<details class="ab-reps" data-key="' + esc(s.key) + '"' + (repsOpen(s.key, !i) ? ' open' : '') + '><summary><span class="ab-reps-t">What each newsroom reports · ' + nInd + ' independent report' + (nInd === 1 ? '' : 's') + '</span><span class="ab-reps-tog"><span class="o1">Show</span><span class="o2">Hide</span><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></summary><ol>' + reps + '</ol></details>'
         + '</article>';
     }).join('') + '<p class="ab-note">Picked and updated automatically at ' + esc(fmt(AUTO.d.checked)) + ' ET, by how many newsrooms carry each story and where it sits on National Newswatch and CBC News, with stories that touch Canada first: a story from abroad with no Canadian tie gives way to one that has one. Headlines and summaries are the outlets’ own.</p>';
     sec.hidden = false;
@@ -6202,7 +6209,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       + '<div style="display: flex; align-items: center; gap: 12px"><span class="eyebrow">' + esc(label) + '</span><span class="pill">Developing</span></div>'
       + '<h1>' + a(s.url, esc(s.title), ' class="card-link"') + '</h1>'
       + (s.summary ? '<p class="dek">' + esc(s.summary) + ' (' + a(s.url, esc(s.outlet), ' style="position: relative; z-index: 2; text-decoration: underline"') + ')</p>' : '')
-      + '<div class="row-meta"><span class="ts">Updated ' + esc(s.t) + '</span><span>' + (s.independent || s.outlets) + ' independent newsrooms</span><span style="color: var(--accent); font-weight: 600">Latest report &#8599;</span></div>'
+      + '<div class="row-meta"><span class="ts">Updated ' + esc(s.t) + '</span><span>' + (s.sources ? s.sources.length : (s.independent || s.outlets)) + ' independent reports</span><span style="color: var(--accent); font-weight: 600">Latest report &#8599;</span></div>'
       + '<div class="chips-static">' + outs.slice(0, 7).map((r) => a(r.url, esc(r.outlet))).join('') + '</div>';
   }
   // Watch: new uploads from the networks' official YouTube channels, Canadian and U.S. first, one per network, up to 12.
@@ -6489,7 +6496,8 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
         const same = (a, b) => { if (!a || !b) return false; const A = words(a), B = words(b); let n = 0; A.forEach((x) => { if (B.has(x)) n++; }); return n / (A.size + B.size - n) >= 0.75; };
         const reportsOnly = [];
         [...by.values()].forEach((v) => { if (!reportsOnly.some((k) => same(k, v[2]))) reportsOnly.push(v[2] || Math.random()); });
-        const nRep = reportsOnly.length;
+        const autoS = root.classList.contains('ab-story') ? (AUTO.d.auto && AUTO.d.auto.stories || []).find((x) => x.key === root.dataset.key) : null;
+        const nRep = autoS && autoS.sources ? autoS.sources.length : reportsOnly.length;
         const lead = nRep < list.length
           ? '<b>' + nRep + '</b> independent report' + (nRep === 1 ? '' : 's') + ' in the last 24 hours, carried by ' + list.length + ' newsrooms'
           : '<b>' + list.length + '</b> newsrooms in the last 24 hours';

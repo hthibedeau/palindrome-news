@@ -111,16 +111,72 @@ def same_report(t1, t2):
     return bool(a and b) and len(a & b) / len(a | b) >= 0.75
 
 
+def report_groups(reps):
+    """The reports grouped by who really wrote them (Hannah, Wed Oct 28 and Thu Oct 29, 2026: one Canadian Press story
+    run by the Times Colonist, CKOM, the Toronto Star and Global News under different headlines is ONE report; CTV News,
+    CP24 and BNN Bloomberg running CTV's page is ONE report). Two reports are the same when they have the same source
+    (the wire named in the page's byline, else the owner: Bell, Postmedia, Corus ...), the same headline, or the same
+    opening sentence. Returns a list of groups (lists of reps), in the order of their first report."""
+    n = len(reps)
+    parent = list(range(n))
+
+    def find(i):
+        while parent[i] != i:
+            parent[i] = parent[parent[i]]
+            i = parent[i]
+        return i
+    src = [source_of(r) for r in reps]
+    desc = [_words((INFO_CACHE.get(r[3]) or {}).get("desc", "")) for r in reps]
+    for i in range(n):
+        for j in range(i + 1, n):
+            same = src[i] == src[j] or same_report(reps[i][2], reps[j][2])
+            if not same and len(desc[i]) >= 8 and len(desc[j]) >= 8:
+                same = len(desc[i] & desc[j]) / len(desc[i] | desc[j]) >= 0.6  # the same opening sentence: one report
+            if same:
+                parent[find(j)] = find(i)
+    groups = {}
+    for i in range(n):
+        groups.setdefault(find(i), []).append(reps[i])
+    return [groups[k] for k in sorted(groups, key=lambda k: min(reps.index(r) for r in groups[k]))]
+
+
 def independent(reps):
-    """How many independent newsrooms: one per owner, and copies of the same wire report count once (Hannah, Wed Oct 28:
-    one Canadian Press report run by CTV News, BNN Bloomberg, the Times Colonist and CKOM is ONE report, not four)."""
-    kept, owners = [], set()
-    for r in reps:
-        if any(same_report(r[2], k) for k in kept):
-            continue
-        kept.append(r[2])
-        owners.add(owner(r[1]))
-    return len(owners)
+    """How many independent reports: wire copies and same-owner outlets count once (report_groups)."""
+    return len(report_groups(list(reps)))
+
+
+WIRE_NAME = [("The Canadian Press", re.compile(r"\bThe Canadian Press\b|\bCanadian Press\b|La Presse Canadienne")),
+             ("The Associated Press", re.compile(r"\bAssociated Press\b|\bThe AP\b")),
+             ("Reuters", re.compile(r"\bReuters\b")), ("AFP", re.compile(r"\bAgence France-Presse\b|\bAFP\b")),
+             ("Bloomberg News", re.compile(r"\bBloomberg News\b"))]
+
+
+def wire_of_page(x):
+    """The wire service that wrote this article, from the page's own author / byline / source fields (not the body
+    text, which may merely quote a wire): 'The Canadian Press', 'The Associated Press', ... or ''."""
+    fields = []
+    for b in re.findall(r'<script[^>]+application/ld\+json[^>]*>(.*?)</script>', x, re.S):
+        fields += re.findall(r'"(?:author|creator|sourceOrganization|publisher|provider)"\s*:\s*(\{[^{}]*\}|\[[^\]]*\]|"[^"]*")', b)
+    for name in ("author", "article:author", "byl", "byline", "dc.creator", "parsely-author", "sailthru.author", "article:content_tier"):
+        v = ps.meta(x, name)
+        if v:
+            fields.append(v)
+    fields += re.findall(r'class="[^"]*(?:byline|author|c-byline|article-author|source)[^"]*"[^>]*>(.{0,300}?)</', x, re.S)[:6]
+    text = " ".join(fields)
+    for name, rx in WIRE_NAME:
+        if rx.search(text):
+            return name
+    return ""
+
+
+def source_of(r):
+    """Who really reported this: the wire service when the page says it is a wire story, otherwise the owner group."""
+    o = r[1]
+    m = re.search(r"\((?:via )?(The Canadian Press|Canadian Press|The Associated Press|Associated Press|AP|Reuters|AFP)\)|^(The Canadian Press|The Associated Press|Reuters|AFP) via ", o)
+    if m:
+        return {"Canadian Press": "The Canadian Press", "Associated Press": "The Associated Press", "AP": "The Associated Press"}.get(m.group(1) or m.group(2), m.group(1) or m.group(2))
+    info = INFO_CACHE.get(r[3]) or {}
+    return info.get("wire") or owner(o)
 
 
 def page_info(url):
@@ -137,6 +193,7 @@ def _page_info(url):
         return {}
     info = {"desc": clean(ps.meta(x, "og:description") or ps.meta(x, "description")),
             "img": clean(ps.meta(x, "og:image")), "alt": clean(ps.meta(x, "og:image:alt")), "caption": "", "credit": ""}
+    info["wire"] = wire_of_page(x)
     acc = []
     for b in ps.ld_blocks(x):
         ps.walk(b, acc)
@@ -192,13 +249,13 @@ def core_rows(g):
     if g.get("theme") and rows:  # one story split out of a running theme (_split_themes): its reports already agree
         kc = Counter(x for r in rows for x in gc.keys(r[2]) | gc.names(r[2]) if x not in WEAK)
         return rows, {x for x, n in kc.most_common(6) if n >= 2} or {x for x, n in kc.most_common(3)}
-    freq = Counter(x for r in rows for x in gc.names(r[2]) if x not in WEAK)
+    freq = Counter(x for r in rows for x in gc.names(r[2]) if x not in WEAK and not is_place(x))  # a city is not a story
     if not freq or freq.most_common(1)[0][1] < 3:
         return None
     anchor = freq.most_common(1)[0][0]
-    co = Counter(x for r in rows if anchor in gc.names(r[2]) for x in gc.names(r[2]) if x not in WEAK)
+    co = Counter(x for r in rows if anchor in gc.names(r[2]) for x in gc.names(r[2]) if x not in WEAK and not is_place(x))
     core = {anchor} | {x for x, n in co.items() if n >= 2}
-    return [r for r in rows if anchor in gc.names(r[2]) or len(gc.names(r[2]) & core) >= 2], core
+    return [r for r in rows if anchor in gc.names(r[2]) or len({x for x in gc.names(r[2]) if not is_place(x)} & core) >= 2], core
 
 
 WHY = ""  # why the last build_story() returned nothing (recorded for live/auto.json "considered")
@@ -221,6 +278,9 @@ def build_story(g, now, imgdir, prev):
     for r in rows:  # newest report from each newsroom
         per.setdefault(au.clean_outlet(r[1]), r)
     reps = sorted(per.values(), reverse=True)
+    if len(reps) >= MIN_OUTLETS:
+        with ThreadPoolExecutor(8) as ex:  # each report's own page: who wrote it, its opening sentence
+            list(ex.map(lambda r: page_info(r[3]), reps[:14]))
     if len(reps) < MIN_OUTLETS or independent(reps) < MIN_OUTLETS:
         WHY = f"only {independent(reps)} independent report(s) ({len(reps)} sites)"
         return None  # one wire report republished by several sites is one report, not a top story
@@ -274,6 +334,11 @@ def build_story(g, now, imgdir, prev):
         "independent": independent(reps),
         "reports": [{"t": w.eastern(r[0]), "iso": r[0].isoformat(), "outlet": au.clean_outlet(r[1]), "title": clean(r[2]), "url": r[3],
                      "desc": descs.get(r[3], "")} for r in reps[:14]],
+        # one entry per independent report; copies listed under it ("also run by")
+        "sources": [{"t": w.eastern(g_[0][0]), "outlet": au.clean_outlet(g_[0][1]), "title": clean(g_[0][2]), "url": g_[0][3],
+                     "desc": descs.get(g_[0][3], "") or (INFO_CACHE.get(g_[0][3]) or {}).get("desc", ""),
+                     "wire": source_of(g_[0]) if source_of(g_[0]) in [n_ for n_, _ in WIRE_NAME] else "",
+                     "copies": [{"outlet": au.clean_outlet(x[1]), "url": x[3]} for x in g_[1:]]} for g_ in report_groups(reps[:14])],
     }
 
 
