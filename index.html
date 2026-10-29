@@ -6368,11 +6368,11 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       const h2 = root.querySelector('h2'); if (!h2) return;
       // the newsrooms on this story: every outlet linked in it, the outlet's own report (skip connected stories)
       // only newsrooms with a report from the last 24 hours (Hannah: no old news in this strip), newest first
-      const DAY = 24 * 3600e3, by = new Map(), add = (o, u, t) => { if (o && u && t && Date.now() - t < DAY && t <= Date.now() + 6e5 && (!by.has(o) || by.get(o)[1] < t)) by.set(o, [u, t]); };
+      const DAY = 24 * 3600e3, by = new Map(), add = (o, u, t, title) => { if (o && u && t && Date.now() - t < DAY && t <= Date.now() + 6e5 && (!by.has(o) || by.get(o)[1] < t)) by.set(o, [u, t, title || (by.get(o) || [])[2] || '']); };
       const auto = (AUTO.d.stories || []).find((x) => (x.key === 'top' && root.id === 'breaking') || (root.id === 'bkEvent' && root.dataset.evid === x.key));
-      ((auto && auto.coverage) || []).forEach((r) => add(r.outlet, r.url, Date.parse(r.iso)));
-      ((auto && auto.reports) || []).forEach((r) => add(r.outlet, r.url, Date.parse(r.iso)));
-      if (root.classList.contains('ab-story')) { const a = (AUTO.d.auto && AUTO.d.auto.stories || []).find((x) => x.key === root.dataset.key); ((a && a.reports) || []).forEach((r) => add(r.outlet, r.url, Date.parse(r.iso))); }
+      ((auto && auto.coverage) || []).forEach((r) => add(r.outlet, r.url, Date.parse(r.iso), r.title));
+      ((auto && auto.reports) || []).forEach((r) => add(r.outlet, r.url, Date.parse(r.iso), r.title));
+      if (root.classList.contains('ab-story')) { const a = (AUTO.d.auto && AUTO.d.auto.stories || []).find((x) => x.key === root.dataset.key); ((a && a.reports) || []).forEach((r) => add(r.outlet, r.url, Date.parse(r.iso), r.title)); }
       // links on the page that carry their own time (timeline lines, credit lines)
       root.querySelectorAll('a[href^="http"]').forEach((a) => { if (a.closest('.rel-box, .can-box, .cov')) return; const holder = a.closest('li, p, div'); const tm = holder && holder.querySelector('time'); const t = tm ? (Date.parse(tm.getAttribute('datetime') || '') || labelMs(tm.textContent.trim())) : NaN; if (!isNaN(t)) add(outletOf(a.href), a.href, t); });
       let cov = root.querySelector('.cov');
@@ -6380,7 +6380,16 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       if (by.size >= 2) {
         if (!cov) { cov = document.createElement('div'); cov.className = 'cov'; h2.after(cov); }
         const list = [...by.entries()].sort((x, y) => y[1][1] - x[1][1]).map(([o, v]) => [o, v[0]]), show = list.slice(0, 8);
-        cov.innerHTML = '<span class="cov-n"><b>' + list.length + '</b> newsrooms in the last 24 hours</span>' + show.map(([o, u]) => '<a class="cov-o" href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(o) + '</a>').join('') + (list.length > 8 ? '<span class="cov-more">+' + (list.length - 8) + ' more</span>' : '');
+        // Copies of one wire report (the same headline on several sites) count once (Hannah, Wed Oct 28, 2026).
+        const words = (t) => new Set(t.toLowerCase().replace(/’/g, "'").match(/[a-z0-9]+/g) || []);
+        const same = (a, b) => { if (!a || !b) return false; const A = words(a), B = words(b); let n = 0; A.forEach((x) => { if (B.has(x)) n++; }); return n / (A.size + B.size - n) >= 0.75; };
+        const reportsOnly = [];
+        [...by.values()].forEach((v) => { if (!reportsOnly.some((k) => same(k, v[2]))) reportsOnly.push(v[2] || Math.random()); });
+        const nRep = reportsOnly.length;
+        const lead = nRep < list.length
+          ? '<b>' + nRep + '</b> independent report' + (nRep === 1 ? '' : 's') + ' in the last 24 hours, carried by ' + list.length + ' newsrooms'
+          : '<b>' + list.length + '</b> newsrooms in the last 24 hours';
+        cov.innerHTML = '<span class="cov-n">' + lead + '</span>' + show.map(([o, u]) => '<a class="cov-o" href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(o) + '</a>').join('') + (list.length > 8 ? '<span class="cov-more">+' + (list.length - 8) + ' more</span>' : '');
       }
       // live "Updated N min ago" from the newest dated report on the story
       let newest = Date.parse(root.dataset.lastdev || '') || 0;

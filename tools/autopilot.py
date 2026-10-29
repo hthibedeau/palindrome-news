@@ -34,7 +34,8 @@ import photo_scan as ps  # noqa: E402
 
 TAKEOVER_HOURS = 3      # hand-written top story with nothing new for this long gives way to the auto top story
 BREAKING_MIN = 60       # newest report within this many minutes: "Breaking"; otherwise "Developing"
-MIN_OUTLETS = 3         # an auto story needs at least this many newsrooms
+MIN_OUTLETS = 3         # an auto story needs at least this many INDEPENDENT newsrooms (wire copies count once)
+BREAKING_INDEPENDENT = 4  # "Breaking" also needs at least this many independent newsrooms
 CANDIDATES = 8          # top-story candidates built each run; the two shown are picked by pick_by_canada()
 CLIP_HOURS = 36
 WEAK = set("""here's here’s what what's why how who when watch live breaking update updates opinion analysis says said new
@@ -97,14 +98,26 @@ def owner(outlet):
     return o
 
 
+def _words(t):
+    return set(re.findall(r"[a-z0-9]+", t.lower().replace("’", "'"))) - {"the", "a", "an", "s", "of", "to", "in", "on", "as", "and", "for"}
+
+
+def same_report(t1, t2):
+    """Two headlines that are the same wire report republished (punctuation, curly quotes or a word or two changed)."""
+    if re.sub(r"\W", "", t1.lower()) == re.sub(r"\W", "", t2.lower()):
+        return True
+    a, b = _words(t1), _words(t2)
+    return bool(a and b) and len(a & b) / len(a | b) >= 0.75
+
+
 def independent(reps):
-    """How many independent newsrooms: one per owner, and copies of the same wire headline count once."""
-    seen_t, owners = set(), set()
+    """How many independent newsrooms: one per owner, and copies of the same wire report count once (Hannah, Wed Oct 28:
+    one Canadian Press report run by CTV News, BNN Bloomberg, the Times Colonist and CKOM is ONE report, not four)."""
+    kept, owners = [], set()
     for r in reps:
-        t = re.sub(r"\W", "", r[2].lower())
-        if t in seen_t:
+        if any(same_report(r[2], k) for k in kept):
             continue
-        seen_t.add(t)
+        kept.append(r[2])
         owners.add(owner(r[1]))
     return len(owners)
 
@@ -192,8 +205,8 @@ def build_story(g, now, imgdir, prev):
     for r in rows:  # newest report from each newsroom
         per.setdefault(au.clean_outlet(r[1]), r)
     reps = sorted(per.values(), reverse=True)
-    if len(reps) < MIN_OUTLETS:
-        return None
+    if len(reps) < MIN_OUTLETS or independent(reps) < MIN_OUTLETS:
+        return None  # one wire report republished by several sites is one report, not a top story
     first = min(rows)
     names = sorted(core or g["n"], key=len, reverse=True)[:6]
     key = "auto-" + hashlib.md5(first[3].encode()).hexdigest()[:8]
@@ -234,8 +247,9 @@ def build_story(g, now, imgdir, prev):
             seen_d.add(k)
             descs[r[3]] = d if len(d) <= 300 else d[:300].rsplit(" ", 1)[0] + "…"
     return {
-        "key": key, "words": names, "score": g["score"], "outlets": len(per),
-        "tag": "Breaking" if (now - newest).total_seconds() < BREAKING_MIN * 60 else "Developing",
+        "key": key, "words": names, "score": g["score"], "outlets": independent(reps), "carriers": len(per),
+        # Breaking only when several newsrooms are reporting it on their own and the newest is under an hour old
+        "tag": "Breaking" if independent(reps) >= BREAKING_INDEPENDENT and (now - newest).total_seconds() < BREAKING_MIN * 60 else "Developing",
         "title": clean(lead[2]), "url": lead[3], "outlet": au.clean_outlet(lead[1]), "t": w.eastern(lead[0]), "iso": lead[0].isoformat(),
         "summary": info.get("desc", ""),
         "first": {"outlet": au.clean_outlet(first[1]), "url": first[3], "t": w.eastern(first[0]), "title": clean(first[2])},
@@ -546,7 +560,7 @@ def brief(groups, now):
     for g in groups[:16]:
         got = core_rows(g)
         rows = [r for r in (got[0] if got else []) if not VIDEO.search(r[3] + " " + r[2])]
-        if len({au.clean_outlet(r[1]) for r in rows}) < MIN_OUTLETS:
+        if independent(rows) < MIN_OUTLETS:
             continue
         r = rows[0]
         line = f"{au.clean_outlet(r[1])} reports: {clean(r[2]).rstrip('.')}."
@@ -1053,7 +1067,7 @@ def canada_tie(s, items, now, eds, papers, otr, canus_):
     return "none" if foreign else "canadian"
 
 
-def pick_by_canada(auto, items, now, eds, papers, otr, canus_):
+def pick_by_canada(auto, items, now, eds, papers, otr, canus_, mostread=None):
     """Hannah, Wed Oct 28, 2026: "If there are Canadian ties to a top story, that should be there instead ... the
     Bolsonaro story does not have any Canadian ties, but the JD Vance has multiple. I would switch those out"
     ("especially with so much coming out about the Canada-US relationship"). Of the ranked candidates, the two top
@@ -1074,8 +1088,13 @@ def pick_by_canada(auto, items, now, eds, papers, otr, canus_):
         return bool(CANUS.search(text) or (CAN_TIE.search(text) and US_TIE.search(text)))
     for s in cands:
         s["canus"] = canus_story(s)
+    # What Canadians are reading (Hannah, Wed Oct 28, 2026: "look at ... top 5 popular stories on other Canadian websites
+    # to judge what our top stories should be"): each candidate scores from the most-read lists it is on, higher for a
+    # higher rank and for more sites. Within each tier, the most-read stories go first; then the newsroom ranking.
+    for s in cands:
+        s["popular"] = popularity(s, mostread)
     tier = lambda s: 2 if s["canada"] == "none" else 0
-    ranked = sorted(cands, key=tier)  # stable: keeps the ranking order (newsrooms, Newswatch, CBC) within each tier
+    ranked = sorted(cands, key=lambda s: (tier(s), -s["popular"]))  # stable: ties keep the ranking order
     # one story per running theme in the top pair, so Canada-U.S. leads without crowding out everything else
     # (the rest of the day's Canada-U.S. stories are in the Canada and the U.S. section and the Canadian angle sidebars)
     seen_t, top2, rest = set(), [], []
@@ -1091,8 +1110,24 @@ def pick_by_canada(auto, items, now, eds, papers, otr, canus_):
     # keep spares so the page can step past a story whose own Breaking event is showing
     auto["stories"] = ranked[:2] + [s for s in ranked[2:4] if tier(s) < 2 and any(x.get("events") for x in ranked[:2])]
     auto["passed_over"] = [{"title": s["title"], "url": s["url"]} for s in cands if tier(s) == 2 and s not in ranked[:2]]
-    print("top stories:", " | ".join(f"{s['title'][:50]} [{s['canada']}{' canus' if s['canus'] else ''}]" for s in cands), "->", [s["key"] for s in auto["stories"]])
+    print("top stories:", " | ".join(f"{s['title'][:50]} [{s['canada']}{' canus' if s['canus'] else ''} read:{s['popular']}]" for s in cands), "->", [s["key"] for s in auto["stories"]])
     return auto
+
+
+def popularity(s, mostread):
+    """How high and how widely a story sits on Canadian newsrooms' most-read lists (0 when it is on none)."""
+    import gap_check as gc
+    if not mostread or not mostread.get("list"):
+        return 0
+    mine = set()
+    for t in [s["title"]] + [r["title"] for r in s.get("reports", [])[:6]]:
+        mine |= {x for x in gc.names(t) | gc.keys(t) if x.lower() not in WEAK}
+    score = 0
+    for m in mostread["list"]:
+        n = {x for x in gc.names(m["h"]) | gc.keys(m["h"]) if x.lower() not in WEAK}
+        if len(n & mine) >= 3 or (n and len(n & mine) >= max(2, len(n) // 2)):
+            score += sum(6 - min(5, o[1]) for o in m.get("o", []))
+    return score
 
 
 # ===== Most read across Canada: built from the newsrooms' own most-read / trending lists (whichever publish one on
@@ -1377,7 +1412,7 @@ def run(page, items, groups, breaking, now, imgdir, prev):
             print(f"autopilot {name} failed:", e)
             res[name] = prev.get(name) or ({} if name in ("auto", "canus", "mostread") else None if name == "brief" else [])
     try:  # the two top stories: Canadian ties first
-        res["auto"] = pick_by_canada(res.get("auto") or {}, items, now, res.get("eds"), res.get("papers"), res.get("otr"), res.get("canus"))
+        res["auto"] = pick_by_canada(res.get("auto") or {}, items, now, res.get("eds"), res.get("papers"), res.get("otr"), res.get("canus"), res.get("mostread"))
     except Exception as e:
         print("autopilot pick failed:", e)
         if res.get("auto"):
