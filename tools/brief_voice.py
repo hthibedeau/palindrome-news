@@ -58,6 +58,19 @@ def best_window(src, want=10.0):
     return (best[1], best[2] - best[1]) if best else (0.0, want)
 
 
+GREETS = {"Good morning.": "good-morning", "Good afternoon.": "good-afternoon", "Good evening.": "good-evening"}
+SIGNOFF = "signoff"  # "That's your brief. We'll keep watching, so you don't have to."
+STYLE = "brief-read"  # Hannah reading a whole brief on air, 30-60 seconds: the best reference for her delivery
+
+
+def clip(name):
+    """Hannah's own recording called <name>.m4a/.mp3/.wav in tools/voice-samples, or None."""
+    for f in glob.glob(os.path.join(SAMPLES, name + ".*")):
+        if re.search(r"\.(m4a|mp3|wav|aac|ogg|flac|caf|mp4|mov)$", f, re.I):
+            return f
+    return None
+
+
 INTRO = os.path.join(SAMPLES, "intro.m4a")  # Hannah saying "I'm Hannah Thibedeau, and this is your Palindrome News brief."
 INTRO_LINE = re.compile(r"I[’']m Hannah Thibedeau, and this is your Palindrome News brief\.?\s*$")
 
@@ -78,7 +91,10 @@ def clip_len(p):
 def reference_wav(tmp):
     """About 10 seconds of Hannah for the model to copy: her brief opening (intro.m4a, her on-air delivery) first,
     then her steadiest stretch of the longer recording to make up the rest (Hannah, Thu Oct 29, 2026)."""
-    files = sorted(f for f in glob.glob(os.path.join(SAMPLES, "*")) if re.search(r"\.(m4a|mp3|wav|aac|ogg|flac|caf|mp4|mov)$", f, re.I) and f != INTRO)
+    own = {INTRO} | {clip(n) for n in list(GREETS.values()) + [SIGNOFF]}
+    files = sorted(f for f in glob.glob(os.path.join(SAMPLES, "*")) if re.search(r"\.(m4a|mp3|wav|aac|ogg|flac|caf|mp4|mov)$", f, re.I) and f not in own)
+    if clip(STYLE):  # her own brief read: the delivery to copy
+        files = [clip(STYLE)] + [f for f in files if f != clip(STYLE)]
     if not files and not os.path.exists(INTRO):
         return None
     out = os.path.join(tmp, "ref.wav")
@@ -170,7 +186,10 @@ def main():
     # The opening in Hannah's own recorded voice: only the greeting before it is generated
     if os.path.exists(INTRO) and lines and INTRO_LINE.search(lines[0]):
         greet = INTRO_LINE.sub("", lines[0]).strip()
-        if greet:
+        if greet and clip(GREETS.get(greet, "")):
+            p = os.path.join(tmp, "greet.wav"); trimmed(clip(GREETS[greet]), p, model.sr); parts.append(p)
+            print("greeting: Hannah's own recording", flush=True)
+        elif greet:
             wav = model.generate(speakable(greet), audio_prompt_path=ref, exaggeration=0.5, cfg_weight=0.3)
             p = os.path.join(tmp, "greet.wav"); torchaudio.save(p, wav, model.sr); parts.append(p)
         real = os.path.join(tmp, "intro_real.wav")
@@ -178,6 +197,11 @@ def main():
         parts.append(real)
         lines = lines[1:]
         print("opening: Hannah's own recording", flush=True)
+    tail = None
+    if lines and clip(SIGNOFF) and re.match(r"That[’']s your brief", lines[-1]):
+        tail = os.path.join(tmp, "zz_signoff.wav"); trimmed(clip(SIGNOFF), tail, model.sr)
+        lines = lines[:-1]
+        print("sign-off: Hannah's own recording", flush=True)
     chunks = passages([speakable(x) for x in lines])
     for i, text in enumerate(chunks):
         # settings that scored closest to Hannah in tests on her own recording (Thu Oct 29, 2026)
@@ -186,6 +210,8 @@ def main():
         torchaudio.save(p, wav, model.sr)
         parts.append(p)
         print(f"passage {i + 1}/{len(chunks)} done", flush=True)
+    if tail:
+        parts.append(tail)
     # join with a short pause between lines, then mp3
     lst = os.path.join(tmp, "list.txt")
     gap = os.path.join(tmp, "gap.wav")
