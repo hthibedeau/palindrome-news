@@ -1012,8 +1012,19 @@ def on_the_record(page, now):
 ALWAYS_ON = re.compile(r"24/7|🔴|English \| Live|English Live|News NOW\b|^Watch .* live\b|News Live\b|LIVE:? Latest|live stream of|livestream|Live News|Breaking News Live|news channel", re.I)
 
 
-EVENT = re.compile(r"news conference|press conference|briefing|address|speech|speaks|statement|debate|Question Period|hearing|"
-                   r"testif|vote|results|election|announce|funeral|memorial|summit|ceremony|rally|town hall|update on", re.I)
+EVENT = re.compile(r"news conference|press conference|briefing|address|speech|speaks|statement|"
+                   r"(?:leaders['’]?|candidates['’]?|mayoral|Senate|gubernatorial|governor['’]?s?|presidential|vice[- ]presidential|leadership|televised|French-language|English-language) debate|debate night|"
+                   r"Question Period|hearing|testif|vote|results|election|announce|funeral|memorial|summit|ceremony|rally|town hall|update on", re.I)
+# Commentary is not live news (Hannah, Thu Oct 29, 2026: "what is news nation and why did you decide it should be
+# breaking?" - a NewsNation panel, "Is criticism of Abdul El-Sayed Islamophobic? Debate with ..." became the Breaking event).
+COMMENTARY = re.compile(r"\?\s*(?:[|:–—-].*)?$|\bdebate with\b|\bpanel\b|\breacts?\b|\breaction\b|\bpodcast\b|\bexplained\b|\bexplainer\b|"
+                        r"\bdiscuss(?:es|ion)?\b|\banalysis\b|\bopinion\b|\bQ&A\b|\byour questions\b|\bcall-in\b|\bshow\b|\bepisode\b|"
+                        r"\bfull episode\b|\bmonologue\b|\binterview with\b|\bsits down with\b|\bweighs in\b|\bwatch party\b|\bpreview\b", re.I)
+# A scheduled stream may become the Breaking event only when it is news a Canadian reader is waiting for: an official
+# Canadian event (the Prime Minister, a premier, a minister, the Bank of Canada, police, the House outside routine
+# Question Period), or the live event of a story already at the top (promote_live marks those).
+OFFICIAL_EVENT = re.compile(r"news conference|press conference|statement|announce|address|briefing|results|"
+                            r"(?:leaders['’]?|candidates['’]?) debate|update on|testif|hearing", re.I)
 
 
 def yt_streams(addr):
@@ -1115,8 +1126,10 @@ def live_video(page, named, now):
         got = list(ex.map(one, CHANNELS + LIVE_EXTRA))
     for net, region, streams in got:
         for st in streams[:12]:
-            if re.search(r"#shorts|\bNFL\b|\bNBA\b|\bNHL\b|\bMLB\b|highlights", st["title"], re.I):
+            if re.search(r"#shorts|\bNFL\b|\bNBA\b|\bNHL\b|\bMLB\b|\bWNBA\b|highlights", st["title"], re.I):
                 continue
+            if COMMENTARY.search(re.sub(r"\s*[|–—-]\s*(?:LIVE|Live).*$", "", st["title"])) and not ALWAYS_ON.search(st["title"]):
+                continue  # a talk show or panel, not a live news event
             item = {"net": net, "r": region, "title": st["title"], "url": f"https://www.youtube.com/watch?v={st['id']}",
                     "img": f"https://i.ytimg.com/vi/{st['id']}/hqdefault.jpg", "story": name_story(st["title"], named)}
             if st["state"] == "ended":
@@ -1129,6 +1142,8 @@ def live_video(page, named, now):
                 t = sched_time(st.get("sched", ""))
                 if t and 0 < (t - now).total_seconds() < 36 * 3600:
                     item["when"] = t.isoformat()
+                    item["breaking"] = bool(region == "ca" and CAN_TIE.search(st["title"] + " " + net) and OFFICIAL_EVENT.search(st["title"])
+                                            and not re.search(r"Question Period", st["title"], re.I))
                     res["upcoming"].append(item)
     try:
         for ev in ctv_events(now):
@@ -1539,6 +1554,9 @@ def promote_live(res, now):
     # eu summit"): on air now first, then coming up; the first is the big live bar, the rest are listed under it
     for s in cands:
         s.pop("live", None); s.pop("live_more", None)
+    for s, e, state in hits:
+        if state == "soon" and s in auto.get("stories", [])[:2] + [x for x in cands if x.get("live")]:
+            e["breaking"] = True  # the live event of a top story
     for s, e, state in sorted(hits, key=lambda h: (h[2] != "now", h[1].get("when") or "")):
         item = {"state": state, "net": e.get("net", ""), "url": e.get("url", ""),
                 "title": re.sub(r"^\s*(?:🔴\s*)?(?:WATCH LIVE|LIVE NOW|LIVE)\s*[:|\-–—]\s*", "", e.get("title", ""), flags=re.I).replace(" | LIVE", ""),

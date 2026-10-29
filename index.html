@@ -31,8 +31,15 @@
 .cu-auto-note { grid-column: 1 / -1; margin: 4px 0 0; font-size: 12px; opacity: .75; }
 #autoBreaking .ab-d { margin: 4px 0 0; font-size: 14px; line-height: 1.45; color: #F6E1E8; }
 .rel-box { margin: 10px 0 16px; border-top: 1px solid rgba(255,255,255,.25); padding-top: 6px; }
-.rel-box summary { cursor: pointer; font-weight: 700; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; min-height: 44px; display: flex; align-items: center; gap: 6px; }
-.rel-box summary span { font-weight: 400; opacity: .8; font-size: 13px; }
+.rel-box summary { cursor: pointer; font-weight: 700; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; min-height: 44px; display: flex; align-items: center; justify-content: space-between; gap: 12px; list-style: none; position: relative; z-index: 2; }
+.rel-box summary::-webkit-details-marker { display: none; }
+.rel-box summary .rel-t span { font-weight: 400; opacity: .8; font-size: 13px; }
+.rel-box .ab-reps-tog { flex: 0 0 auto; display: inline-flex; align-items: center; gap: 4px; padding: 4px 12px; border: 1px solid rgba(255,255,255,.55); border-radius: 999px; font-size: 13px; letter-spacing: 0; text-transform: none; font-weight: 600; }
+.rel-box .ab-reps-tog svg { transition: transform .2s; }
+.rel-box[open] .ab-reps-tog svg { transform: rotate(180deg); }
+.rel-box .o2, .rel-box[open] .o1 { display: none; }
+.rel-box[open] .o2 { display: inline; }
+.rel-box summary:focus-visible { outline: 3px solid #F6E1E8; outline-offset: 2px; }
 .rel-box ol { list-style: none; margin: 0; padding: 0; }
 .rel-box li { padding: 7px 0; border-top: 1px solid rgba(255,255,255,.15); font-size: 15px; line-height: 1.4; }
 .rel-box time, .rel-box .rk { display: inline-block; min-width: 100px; font-size: 12px; opacity: .8; }
@@ -3173,7 +3180,10 @@ header.site { border-bottom: 0; }
     // Safety net: any scheduled live coverage in COMING (not already shown in the top slot) with no UPNEXT entry
     // still becomes the Breaking event, built from its COMING items. A proper UPNEXT entry always takes precedence.
     const autoEvents = () => {
-      const list = (typeof COMING !== 'undefined' ? COMING : []).filter((c) => !c.top && c.story && c.when && !UPNEXT.some((e) => c.story.indexOf(e.story) === 0));
+      // Only news makes a Breaking event (Hannah, Thu Oct 29, 2026: a NewsNation talk-show panel became one): an editor's
+      // own COMING entry, the Prime Minister's media events, or a stream the update code marked as a Canadian official
+      // event or the live event of a top story (x.breaking). Other streams stay under "Coming up live" only.
+      const list = (typeof COMING !== 'undefined' ? COMING : []).filter((c) => !c.top && c.story && c.when && (!c.auto || c.bk) && !UPNEXT.some((e) => c.story.indexOf(e.story) === 0));
       const by = {}; list.forEach((c) => { (by[c.story] = by[c.story] || []).push(c); });
       return Object.keys(by).map((k) => {
         const its = by[k].slice().sort((a, b) => Date.parse(a.when) - Date.parse(b.when)), first = its[0];
@@ -6142,7 +6152,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
   try { JSON.parse(sessionStorage.getItem('pal-reps') || '[]').forEach(([k, v]) => REPS.set(k, v)); } catch (e) {}
   function repsOpen(key, dflt) { return REPS.has(key) ? REPS.get(key) : dflt; }
   document.addEventListener('toggle', (e) => {
-    const d = e.target; if (!d.matches || !d.matches('details.ab-reps') || !d.dataset.key) return;
+    const d = e.target; if (!d.matches || !d.matches('details.ab-reps, details.rel-box') || !d.dataset.key) return;
     REPS.set(d.dataset.key, d.open);
     try { sessionStorage.setItem('pal-reps', JSON.stringify([...REPS].slice(-40))); } catch (e2) {}
   }, true);
@@ -6358,8 +6368,8 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     const until = new Date(Date.parse(AUTO.d.checked) + 25 * 60000).toISOString();
     const have = new Set(L.concat(C).map((x) => x.url));
     (V.now || []).forEach((x) => { if (!have.has(x.url)) L.push({ kind: 'video', story: x.story, net: x.net, what: (x.url.indexOf('youtube.com') > -1 ? 'Live on YouTube: ' : 'Live: ') + x.title.replace(/^\s*(LIVE|WATCH LIVE|LIVE NOW)\s*(@\s*[\d:]+\s*ET)?\s*[:|-]\s*/i, '') + (x.watching ? ' · ' + x.watching + ' watching' : ''), url: x.url, updated: AUTO.d.checked, until, img: x.img, also: x.also, reports: x.reports, auto: true }); });
-    (V.upcoming || []).forEach((x) => { if (!have.has(x.url)) C.push({ story: x.story, net: x.net, what: x.title.replace(/^\s*(LIVE|WATCH LIVE|LIVE NOW)\s*(@\s*[\d:]+\s*ET)?\s*[:|-]\s*/i, ''), where: x.url.indexOf('youtube.com') > -1 ? 'YouTube' : '', when: x.when, until: new Date(Date.parse(x.when) + 90 * 60000).toISOString(), url: x.url, img: x.img, also: x.also, reports: x.reports, auto: true }); });
-    (AUTO.d.pm || []).forEach((x) => C.push(Object.assign({ until: new Date(Date.parse(x.when) + 45 * 60000).toISOString(), auto: true }, x)));
+    (V.upcoming || []).forEach((x) => { if (!have.has(x.url)) C.push({ bk: !!x.breaking, story: x.story, net: x.net, what: x.title.replace(/^\s*(LIVE|WATCH LIVE|LIVE NOW)\s*(@\s*[\d:]+\s*ET)?\s*[:|-]\s*/i, ''), where: x.url.indexOf('youtube.com') > -1 ? 'YouTube' : '', when: x.when, until: new Date(Date.parse(x.when) + 90 * 60000).toISOString(), url: x.url, img: x.img, also: x.also, reports: x.reports, auto: true }); });
+    (AUTO.d.pm || []).forEach((x) => C.push(Object.assign({ until: new Date(Date.parse(x.when) + 45 * 60000).toISOString(), auto: true, bk: true }, x)));
     const haveK = new Set(L.concat(C).map((x) => key(x.url))), blogNets = new Set(L.filter((x) => x.kind === 'updates').map((x) => x.net));
     (AUTO.d.blogs_auto || []).forEach((x) => { if (!haveK.has(key(x.url)) && !blogNets.has(x.net) && blogNets.add(x.net)) L.push({ kind: 'updates', story: x.story, net: x.net, what: x.title, url: x.url, updated: x.updated, img: x.img, auto: true }); });
     if (AL) { const nets = new Set(AL.map((a) => a[0])); (V.always || []).forEach((x) => { const n = x.net + ' (live on YouTube)'; if (!nets.has(x.net) && !nets.has(n)) { nets.add(n); AL.push([n, x.url]); } }); }
@@ -6377,8 +6387,10 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       const items = (r.stories || []).map((x) => '<li><time>' + esc(x.t) + '</time>' + a(x.url, esc(x.title)) + ' <span class="o">' + esc(x.outlet) + ' &#8599;</span></li>').join('')
         + (r.views || []).map((x) => '<li><span class="rk">' + esc(x.kind) + '</span>' + a(x.url, esc(x.title)) + ' <span class="o">' + esc(x.outlet) + ' &#8599;</span></li>').join('');
       if (!items) return;
-      const box = document.createElement('details'); box.className = 'rel-box'; box.open = true;
-      box.innerHTML = '<summary>Connected to this story <span>· ' + esc((r.ties || []).slice(0, 3).map((t) => t.charAt(0).toUpperCase() + t.slice(1)).join(', ')) + '</span></summary><ol>' + items + '</ol>';
+      // opens and closes with a Show/Hide button (Hannah, Thu Oct 29, 2026), and keeps the reader's choice per story
+      const box = document.createElement('details'); box.className = 'rel-box'; box.dataset.key = 'rel-' + k; box.open = repsOpen('rel-' + k, true);
+      box.innerHTML = '<summary><span class="rel-t">Connected to this story <span>· ' + esc((r.ties || []).slice(0, 3).map((t) => t.charAt(0).toUpperCase() + t.slice(1)).join(', ')) + '</span></span>'
+        + '<span class="ab-reps-tog"><span class="o1">Show</span><span class="o2">Hide</span><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></summary><ol>' + items + '</ol>';
       // Wide screens with the photo on the left (iPad, desktop): fill the right-hand column under the tabs, never leave it empty
       const bt = root.querySelector(':scope > .bk-text');
       const twoCol = bt && getComputedStyle(bt).gridTemplateColumns.split(' ').length > 1;
