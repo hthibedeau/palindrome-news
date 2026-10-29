@@ -171,6 +171,16 @@ main { padding-block: 32px 8px; display: flex; flex-direction: column; gap: 56px
 .row-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 18px; font-size: 14px; color: var(--muted); margin-bottom: 18px; }
 .row-meta a { color: var(--accent); font-weight: 600; }
 /* Outlet chips sit above a card's stretched link, so each one opens its own outlet, never the card's headline link. */
+.ab-live { display: flex; gap: 12px; align-items: center; margin: 10px 0 6px; padding: 10px 12px; border-radius: 6px; background: var(--soft); color: var(--ink); text-decoration: none; border-left: 4px solid var(--accent); }
+.ab-live.on { border-left-color: #E0242F; }
+.ab-live img { width: 112px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 4px; flex: 0 0 auto; }
+.ab-live > span { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.ab-live b { font-size: 14px; color: var(--accent); }
+.ab-live.on b { color: #E0242F; }
+.ab-live-what { font-size: 14px; line-height: 1.35; overflow-wrap: anywhere; }
+.ab-live-also { margin: 0 0 8px; font-size: 13px; color: var(--muted); }
+.ab-live-also a { position: relative; z-index: 2; }
+@media (max-width: 420px) { .ab-live img { width: 84px; } }
 .chips-static { display: flex; flex-wrap: wrap; gap: 8px; position: relative; z-index: 2; }
 .chips-static a { color: inherit; text-decoration: none; }
 @media (hover: hover) { .chips-static a:not(.more):hover { border-color: var(--accent); } }
@@ -6122,8 +6132,17 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       const recent = Date.now() - Date.parse(s.newest) < 3600000;
       const firstLine = s.first && s.first.url !== s.url ? '<br>First reported by ' + a(s.first.url, esc(s.first.outlet)) + ' · ' + esc(s.first.t) : '';
       const reps = (s.reports || []).map((r) => '<li><time>' + esc(r.t) + '</time>' + a(r.url, esc(r.title)) + ' <span class="o">' + esc(r.outlet) + ' &#8599;</span>' + (r.desc && r.url !== s.url ? '<p class="ab-d">' + esc(r.desc) + '</p>' : '') + '</li>').join('');
-      return '<article class="ab-story' + (i ? ' ab-second' : '') + '" data-key="' + esc(s.key) + '">' + ph + '<span class="tag">' + (recent ? 'Breaking' : 'Developing') + '</span>'
-        + '<h2>' + a(s.url, esc(s.title)) + '</h2>'
+      // A Canadian event on this story live now, or coming up (tools/autopilot.py promote_live): what is on, who is
+      // carrying it, its picture, and the other places carrying it (Hannah, Thu Oct 29, 2026).
+      const L = s.live, onAir = L && L.state === 'now';
+      const liveBar = L && L.url ? '<a class="ab-live' + (onAir ? ' on' : '') + '" href="' + esc(L.url) + '" target="_blank" rel="noopener">'
+          + (L.img ? '<img src="' + esc(L.img) + '" alt="" referrerpolicy="no-referrer" onerror="this.remove()">' : '')
+          + '<span><b>' + (onAir ? '&#9654; Live now on ' + esc(L.net) : 'Coming up live' + (L.when ? ', ' + esc(fmt(L.when)) + ' ET' : '') + ' on ' + esc(L.net)) + ' &#8599;</b>'
+          + '<span class="ab-live-what">' + (onAir ? 'Watch: ' : '') + esc(L.title) + '</span></span></a>'
+          + (L.also && L.also.length ? '<p class="ab-live-also">Also carrying it: ' + L.also.map((x) => a(x.url, esc(x.net))).join(' · ') + '</p>' : '')
+        : '';
+      return '<article class="ab-story' + (i ? ' ab-second' : '') + '" data-key="' + esc(s.key) + '">' + ph + '<span class="tag">' + (onAir || recent ? 'Breaking' : 'Developing') + '</span>'
+        + '<h2>' + a(s.url, esc(s.title)) + '</h2>' + liveBar
         + '<p class="first">LATEST ' + a(s.url, esc(s.outlet)) + ' · ' + esc(s.t) + firstLine + '</p>'
         + (s.summary ? '<p class="bk-dek">' + esc(s.summary) + ' <span class="ab-cr">— ' + esc(s.outlet) + '</span></p>' : '')
         + '<details class="ab-reps"' + (i ? '' : ' open') + '><summary>What each newsroom reports · ' + (s.independent || s.outlets) + ' independent newsrooms</summary><ol>' + reps + '</ol></details>'

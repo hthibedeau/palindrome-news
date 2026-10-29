@@ -180,6 +180,15 @@ def core_rows(g):
     import gap_check as gc
     from collections import Counter
     rows = sorted({r[3].split("?")[0]: r for r in g["rows"] if _ok(r[1], r[3], r[2]) and not SPORT.search(r[2] + " " + r[3])}.values(), reverse=True)
+    if g.get("theme") and g["theme"] not in SPLIT_THEMES and rows:
+        # a theme kept whole (one event, e.g. the Canada-EU summit): only reports that name the event's other side.
+        # A Montreal murder story was grouped in through "Montreal" and became the summit's headline (Thu Oct 29, 2026).
+        try:
+            import lead_check as lc
+            rb = next(t[3] for t in lc.THEMES if t[0] == g["theme"])
+            rows = [r for r in rows if rb.search(r[2])]
+        except StopIteration:
+            pass
     if g.get("theme") and rows:  # one story split out of a running theme (_split_themes): its reports already agree
         kc = Counter(x for r in rows for x in gc.keys(r[2]) | gc.names(r[2]) if x not in WEAK)
         return rows, {x for x, n in kc.most_common(6) if n >= 2} or {x for x, n in kc.most_common(3)}
@@ -1192,6 +1201,113 @@ def canada_tie(s, items, now, eds, papers, otr, canus_):
     return "none" if foreign else "canadian"
 
 
+# ===== A Canadian event happening live is the top news (Hannah, Thu Oct 29, 2026: "the breaking news is still not
+# focussing on canada. The european commission president was speaking in montreal and there was news that could have
+# been built around that"). After the live streams are found: an event on air now, or due within LIVE_SOON_HOURS, that
+# is Canadian (names Canada, a Canadian place or leader) or belongs to a Canadian running theme (Canada and the EU) and
+# matches a top-story candidate lifts that story: on air now -> Breaking and LIVE_NOW_BOOST; coming up -> LIVE_SOON_BOOST
+# (an announced statement on the top story is the top news until it happens). The story then carries the live link:
+# what is on, who is carrying it, the picture, and every other place carrying it.
+LIVE_NOW_BOOST, LIVE_SOON_BOOST, LIVE_SOON_HOURS = 20, 8, 3
+ROUTINE_LIVE = re.compile(r"Question Period|Top Headlines|News Live|24/7|Daily Briefing|Morning Brief|spacewalk|weather|traffic", re.I)
+
+
+def _live_theme(title):
+    try:
+        import lead_check as lc
+        for tname, _, ra, rb in lc.THEMES:
+            if ra.search(title) and rb.search(title):
+                return tname
+    except Exception:
+        pass
+    return ""
+
+
+def promote_live(res, now):
+    if not LAST_PICK:
+        return
+    auto, cands, tier = LAST_PICK
+    lv = res.get("live") or {}
+    events = [(e, "now") for e in lv.get("now") or []]
+    for e in lv.get("upcoming") or []:
+        try:
+            t = datetime.fromisoformat(e["when"])
+        except Exception:
+            continue
+        if 0 < (t - now).total_seconds() < LIVE_SOON_HOURS * 3600:
+            events.append((e, "soon"))
+    hits = []
+    for e, state in events:
+        title = e.get("title", "")
+        theme = _live_theme(title)
+        if ROUTINE_LIVE.search(title) or not (CAN_TIE.search(title) or theme):
+            continue
+        ew = event_words(title) - EVENT_KIND_STOP
+        ev_urls = {r["url"] for r in e.get("reports") or []}
+        best, best_n = None, 0
+        for s in cands:
+            if s["canada"] == "none":
+                continue
+            if theme and s.get("theme") == theme:
+                n = 10
+            else:
+                text = s["title"] + " " + " ".join(r["title"] for r in s.get("reports", [])[:8])
+                n = len(ew & (event_words(text) - EVENT_KIND_STOP)) + 3 * len(ev_urls & {r["url"] for r in s.get("reports", [])})
+            if n > best_n:
+                best, best_n = s, n
+        if best is None or best_n < 2:
+            continue
+        hits.append((best, e, state))
+    for s, e, state in hits:
+        if s.get("live") and s["live"]["state"] == "now" and state == "soon":
+            continue
+        s["live"] = {"state": state, "net": e.get("net", ""), "url": e.get("url", ""), "title": re.sub(r"^\s*(?:🔴\s*)?(?:WATCH LIVE|LIVE NOW|LIVE)\s*[:|\-–—]\s*", "", e.get("title", ""), flags=re.I),
+                     "img": e.get("img", ""), "when": e.get("when", ""), "also": e.get("also", [])[:6]}
+    for s in cands:
+        if s.get("live"):
+            s["weight"] = (s.get("weight") or 0) + (LIVE_NOW_BOOST if s["live"]["state"] == "now" else LIVE_SOON_BOOST)
+            if s["live"]["state"] == "now":
+                s["tag"] = "Breaking"
+    if not hits:
+        return
+    ranked = sorted(cands, key=lambda s: (tier(s), -(s.get("weight") or 0)))
+    _select(auto, cands, ranked, tier)
+    print("live lifts:", [(s["title"][:50], s["live"]["state"], s["live"]["title"][:50]) for s, e, st in hits], "-> top:", [s["title"][:50] for s in auto["stories"][:2]])
+
+
+EVENT_KIND_STOP = set("speaks speak speech remarks holds hold news conference press announcement announces live watch statement update".split())
+
+
+def _select(auto, cands, ranked, tier):
+    """The top two (one per running theme), the spares, the lead slot (more) and the record of why (considered)."""
+    global LAST_PICK
+    LAST_PICK = (auto, cands, tier)
+    seen_t, top2, rest = set(), [], []
+    for s in ranked:
+        t = s.get("theme")
+        if len(top2) < 2 and not (t and t in seen_t):
+            top2.append(s)
+            if t:
+                seen_t.add(t)
+        else:
+            rest.append(s)
+    ranked = top2 + rest
+    # keep spares so the page can step past a story whose own Breaking event is showing
+    auto["stories"] = ranked[:2] + [s for s in ranked[2:4] if tier(s) < 2 and any(x.get("events") for x in ranked[:2])]
+    # the next biggest stories (with a Canadian tie), for the lead slot under the top two when its hand-written story
+    # goes stale (Hannah, Wed Oct 28, 2026: "go through the whole page to ensure we have the top news at the top ...
+    # update regularly")
+    top_themes = {s.get("theme") for s in auto["stories"][:2] if s.get("theme")}
+    auto["more"] = [s for s in ranked[2:] if tier(s) < 2 and s not in auto["stories"] and not (s.get("theme") and s["theme"] in top_themes)][:3]
+    auto["passed_over"] = [{"title": s["title"], "url": s["url"]} for s in cands if tier(s) == 2 and s not in ranked[:2]]
+    # why each story is or isn't at the top (Hannah: "why is that not at the top of the news?")
+    auto["considered"] = [{"title": s["title"], "url": s["url"], "rank": n + 1, "live": (s.get("live") or {}).get("title", ""), "weight": s.get("weight"), "score": s.get("score"), "independent": s.get("independent"), "most_read": s["popular"],
+                           "canada": s["canada"], "theme": s.get("theme") or "", "top": s in ranked[:2]} for n, s in enumerate(ranked)] + [c for c in (auto.get("considered") or []) if "rank" not in c]
+
+
+LAST_PICK = None
+
+
 def pick_by_canada(auto, items, now, eds, papers, otr, canus_, mostread=None):
     """Hannah, Wed Oct 28, 2026: "If there are Canadian ties to a top story, that should be there instead ... the
     Bolsonaro story does not have any Canadian ties, but the JD Vance has multiple. I would switch those out"
@@ -1257,27 +1373,7 @@ def pick_by_canada(auto, items, now, eds, papers, otr, canus_, mostread=None):
     ranked = sorted(cands, key=lambda s: (tier(s), -s["weight"]))  # stable: ties keep the ranking order
     # one story per running theme in the top pair, so Canada-U.S. leads without crowding out everything else
     # (the rest of the day's Canada-U.S. stories are in the Canada and the U.S. section and the Canadian angle sidebars)
-    seen_t, top2, rest = set(), [], []
-    for s in ranked:
-        t = s.get("theme")
-        if len(top2) < 2 and not (t and t in seen_t):
-            top2.append(s)
-            if t:
-                seen_t.add(t)
-        else:
-            rest.append(s)
-    ranked = top2 + rest
-    # keep spares so the page can step past a story whose own Breaking event is showing
-    auto["stories"] = ranked[:2] + [s for s in ranked[2:4] if tier(s) < 2 and any(x.get("events") for x in ranked[:2])]
-    # the next biggest stories (with a Canadian tie), for the lead slot under the top two when its hand-written story
-    # goes stale (Hannah, Wed Oct 28, 2026: "go through the whole page to ensure we have the top news at the top ...
-    # update regularly")
-    top_themes = {s.get("theme") for s in auto["stories"][:2] if s.get("theme")}
-    auto["more"] = [s for s in ranked[2:] if tier(s) < 2 and s not in auto["stories"] and not (s.get("theme") and s["theme"] in top_themes)][:3]
-    auto["passed_over"] = [{"title": s["title"], "url": s["url"]} for s in cands if tier(s) == 2 and s not in ranked[:2]]
-    # why each story is or isn't at the top (Hannah: "why is that not at the top of the news?")
-    auto["considered"] = [{"title": s["title"], "url": s["url"], "rank": n + 1, "weight": s.get("weight"), "score": s.get("score"), "independent": s.get("independent"), "most_read": s["popular"],
-                           "canada": s["canada"], "theme": s.get("theme") or "", "top": s in ranked[:2]} for n, s in enumerate(ranked)] + (auto.get("considered") or [])
+    _select(auto, cands, ranked, tier)
     print("top stories:", " | ".join(f"{s['title'][:50]} [{s['canada']}{' canus' if s['canus'] else ''}{' us-election' if s.get('us_election') else ''} read:{s['popular']}]" for s in cands), "->", [s["key"] for s in auto["stories"]])
     return auto
 
@@ -1637,6 +1733,11 @@ def run(page, items, groups, breaking, now, imgdir, prev):
         attach_reports(res.get("live") or {}, items, now)
     except Exception as e:
         print("autopilot live reports failed:", e)
+    try:  # a Canadian event live now (or due soon) lifts its story to the top as Breaking, with the live link
+        promote_live(res, now)
+        a = res.get("auto") or {}
+    except Exception as e:
+        print("autopilot live promotion failed:", e)
     print(f"autopilot live blogs: {len(res.get('blogs_auto') or [])}")
     try:
         keyed = [("top" if st["where"].startswith("Top") else st["where"].split("UPNEXT ")[-1].rstrip(")"), words, set(), st["name"]) for st, words in breaking]
