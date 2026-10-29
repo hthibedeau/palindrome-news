@@ -189,12 +189,15 @@ def main():
     # join with a short pause between lines, then mp3
     lst = os.path.join(tmp, "list.txt")
     gap = os.path.join(tmp, "gap.wav")
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "lavfi", "-i", f"anullsrc=r={model.sr}:cl=mono", "-t", "0.5", gap], check=True)
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "lavfi", "-i", f"anullsrc=r={model.sr}:cl=mono", "-t", "0.5", "-c:a", "pcm_s16le", gap], check=True)
     with open(lst, "w") as f:
         short = os.path.join(tmp, "gap_short.wav")
-        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "lavfi", "-i", f"anullsrc=r={model.sr}:cl=mono", "-t", "0.2", short], check=True)
-        for p in parts:
-            f.write(f"file '{p}'\nfile '{short if p.endswith('greet.wav') else gap}'\n")  # "Good afternoon." runs straight on
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "lavfi", "-i", f"anullsrc=r={model.sr}:cl=mono", "-t", "0.2", "-c:a", "pcm_s16le", short], check=True)
+        for k, p in enumerate(parts):
+            # every piece in one format (16-bit, 24 kHz, mono): the model's audio and Hannah's own clip differ otherwise
+            q = os.path.join(tmp, f"norm{k:02d}.wav")
+            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", p, "-ac", "1", "-ar", str(model.sr), "-c:a", "pcm_s16le", q], check=True)
+            f.write(f"file '{q}'\nfile '{short if p.endswith('greet.wav') else gap}'\n")  # "Good afternoon." runs straight on
     os.makedirs(os.path.join(root, "live", "audio"), exist_ok=True)
     rel = f"live/audio/brief-{slug(brief['edition'])}.mp3"
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", lst, "-ac", "1", "-af", "loudnorm=I=-16:TP=-1.5",
