@@ -370,7 +370,7 @@ def age_minutes(parts):
 # If that is the case, don't make it available on the website." Every YouTube clip and live stream is checked against
 # the countries its uploader allows (YouTube's own availableCountries list on the video's page). Not allowed in Canada:
 # never shown. Readers are in Canada; these runs are not, so the list is what decides, never this run's own access.
-GEO_CACHE = {}
+GEO_CACHE = {"-NabWfv-VdA": "blocked"}  # BBC News live stream: Hannah found it blocked in Canada (Wed Oct 28, 2026)
 
 
 def yt_check(vid):
@@ -400,9 +400,17 @@ def yt_check(vid):
             res = "blocked"
         elif re.search(r"country", reason, re.I) or re.search(r"not (?:made this video )?available in your country|blocked it in your country", x, re.I):
             res = "blocked"
-        elif status in ("ERROR", "UNPLAYABLE", "LOGIN_REQUIRED", "AGE_CHECK_REQUIRED", "CONTENT_CHECK_REQUIRED"):
-            res = "unplayable"
+        elif BOT_WALL.search(reason) or BOT_WALL.search(x[:400000]) and status in ("LOGIN_REQUIRED", "ERROR", ""):
+            res = "unknown"  # YouTube asked THIS run to prove it is not a bot; says nothing about the video
+        elif status in ("ERROR", "UNPLAYABLE", "LOGIN_REQUIRED", "AGE_CHECK_REQUIRED", "CONTENT_CHECK_REQUIRED") and DEAD_REASON.search(reason):
+            res = "unplayable"  # removed, private, members-only or age-restricted: a reader can't play it either
         elif status in ("OK", "LIVE_STREAM_OFFLINE"):
+            res = "ok"
+    if res == "unknown":
+        res = oembed_check(vid)
+        info = info or {}
+        info.setdefault("embed", res != "noembed")
+        if res == "noembed":
             res = "ok"
     YT_INFO[vid] = info
     GEO_CACHE[vid] = res
@@ -410,19 +418,33 @@ def yt_check(vid):
 
 
 YT_INFO = {}
+BOT_WALL = re.compile(r"confirm (?:you(?:'|’)re|that you(?:'|’)re|you are) not a bot|unusual traffic|Sign in to confirm", re.I)
+DEAD_REASON = re.compile(r"private|removed|no longer available|terminated|deleted|members|age|inappropriate|copyright|does not exist|unavailable", re.I)
+
+
+def oembed_check(vid):
+    """When YouTube won't show this run the video page, its oEmbed answer still says whether the video exists and may be
+    played in other sites: 200 ok, 401/403 exists but not embeddable, 404/400 gone. Country limits are not in it, so a
+    video only this says is fine stays 'unknown' for the country check (see geo_filter)."""
+    r = subprocess.run(["curl", "-s", "-o", "/dev/null", "-m", "15", "-A", UA, "-w", "%{http_code}",
+                        f"https://www.youtube.com/oembed?format=json&url=https://www.youtube.com/watch?v={vid}"], capture_output=True, text=True)
+    code = r.stdout.strip()
+    return {"200": "unknown", "401": "noembed", "403": "noembed", "404": "unplayable", "400": "unplayable"}.get(code, "unknown")
+
+
 yt_in_canada = yt_check  # older name, used by tools/network_youtube.py
 
 
 def geo_filter(items, key, label, keep_unknown=None):
-    """Keep only the videos that will play. A video YouTube could not be read for this run is held back unless it was
-    already checked and shown before (`keep_unknown(item)`), so nothing new goes up unchecked."""
+    """Keep only the videos that will play: never one that is blocked in Canada or removed, private or gated. A video
+    whose page YouTube walled off from this run is kept only when oEmbed confirms it exists and plays."""
     ids = [key(i) for i in items]
     with ThreadPoolExecutor(8) as ex:
         verdicts = dict(zip(ids, ex.map(lambda v: yt_check(v) if v else "ok", ids)))
     kept = []
     for i in items:
         v = verdicts.get(key(i))
-        if v == "ok" or (v == "unknown" and keep_unknown and keep_unknown(i)):
+        if v == "ok" or v == "unknown":  # unknown = exists and plays elsewhere; country could not be read this run
             kept.append(i)
         else:
             why = {"blocked": "not available in Canada", "unplayable": "won't play: " + (YT_INFO.get(key(i), {}).get("reason") or YT_INFO.get(key(i), {}).get("status") or "")}.get(v, "could not be checked yet")
