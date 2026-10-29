@@ -151,21 +151,62 @@ WIRE_NAME = [("The Canadian Press", re.compile(r"\bThe Canadian Press\b|\bCanadi
              ("Bloomberg News", re.compile(r"\bBloomberg News\b"))]
 
 
-def wire_of_page(x):
-    """The wire service that wrote this article, from the page's own author / byline / source fields (not the body
-    text, which may merely quote a wire): 'The Canadian Press', 'The Associated Press', ... or ''."""
+def _json_value(x, i, limit=1500):
+    """The JSON value starting at x[i] (a string, object or array), just that value, so text after it never counts."""
+    if i >= len(x):
+        return ""
+    if x[i] == '"':
+        j = i + 1
+        while j < len(x) and j - i < limit and not (x[j] == '"' and x[j - 1] != "\\"):
+            j += 1
+        return x[i: j + 1]
+    if x[i] not in "{[":
+        return ""
+    depth, j, in_str = 0, i, False
+    while j < len(x) and j - i < limit:
+        c = x[j]
+        if in_str:
+            if c == '"' and x[j - 1] != "\\":
+                in_str = False
+        elif c == '"':
+            in_str = True
+        elif c in "{[":
+            depth += 1
+        elif c in "}]":
+            depth -= 1
+            if depth == 0:
+                return x[i: j + 1]
+        j += 1
+    return x[i: j]
+
+
+def wire_of_page(x, why=None):
+    """The wire service that wrote this article, from the page's own author / byline / source / credit fields and the
+    wire's own sign-off (every Canadian Press story ends "This report by The Canadian Press was first published ..."),
+    never from a quote in the body: 'The Canadian Press', 'The Associated Press', ... or ''. `why` (a list) gets the text
+    that decided it, for the record in live/auto.json."""
     fields = []
-    for b in re.findall(r'<script[^>]+application/ld\+json[^>]*>(.*?)</script>', x, re.S):
-        fields += re.findall(r'"(?:author|creator|sourceOrganization|publisher|provider)"\s*:\s*(\{[^{}]*\}|\[[^\]]*\]|"[^"]*")', b)
-    for name in ("author", "article:author", "byl", "byline", "dc.creator", "parsely-author", "sailthru.author", "article:content_tier"):
+    for m in re.finditer(r'"(?:author|creator|sourceOrganization|provider|copyrightHolder|byline)"\s*:\s*', x):
+        fields.append(re.sub(r'"(?:image|logo|url|sameAs)"\s*:\s*("[^"]*"|\{[^}]*\})', "", _json_value(x, m.end())))
+    for name in ("author", "article:author", "byl", "byline", "dc.creator", "parsely-author", "sailthru.author", "cXenseParse:author", "article:publisher_source"):
         v = ps.meta(x, name)
         if v:
             fields.append(v)
-    fields += re.findall(r'class="[^"]*(?:byline|author|c-byline|article-author|source)[^"]*"[^>]*>(.{0,300}?)</', x, re.S)[:6]
+    fields += [re.sub(r"<[^>]+>", " ", f_) for f_ in re.findall(r'class="[^"]*(?:byline|author|source|credit|attribution)[^"]*"[^>]*>(.{0,400}?)</(?:div|p|span|a|li)>', x, re.S)[:10]]
+    signoff = re.search(r"This (?:report|story) (?:by|from) The Canadian Press was first published|\(The Canadian Press\)\s*</p>|^\s*[A-Z][A-Z .]+\s+[—–-]\s+.{0,40}\(AP\)", x, re.M)
     text = " ".join(fields)
     for name, rx in WIRE_NAME:
-        if rx.search(text):
+        m = rx.search(text)
+        if m:
+            if why is not None:
+                why.append(text[max(0, m.start() - 40): m.end() + 20].strip())
             return name
+    if signoff:
+        if why is not None:
+            why.append(signoff.group(0)[:80])
+        return "The Associated Press" if "(AP)" in signoff.group(0) else "The Canadian Press"
+    if why is not None:
+        why.append(re.sub(r"\s+", " ", text)[:120])
     return ""
 
 
@@ -193,7 +234,9 @@ def _page_info(url):
         return {}
     info = {"desc": clean(ps.meta(x, "og:description") or ps.meta(x, "description")),
             "img": clean(ps.meta(x, "og:image")), "alt": clean(ps.meta(x, "og:image:alt")), "caption": "", "credit": ""}
-    info["wire"] = wire_of_page(x)
+    why = []
+    info["wire"] = wire_of_page(x, why)
+    info["by"] = (why[0] if why else "")[:120]
     acc = []
     for b in ps.ld_blocks(x):
         ps.walk(b, acc)
@@ -338,6 +381,7 @@ def build_story(g, now, imgdir, prev):
         "sources": [{"t": w.eastern(g_[0][0]), "outlet": au.clean_outlet(g_[0][1]), "title": clean(g_[0][2]), "url": g_[0][3],
                      "desc": descs.get(g_[0][3], "") or (INFO_CACHE.get(g_[0][3]) or {}).get("desc", ""),
                      "wire": source_of(g_[0]) if source_of(g_[0]) in [n_ for n_, _ in WIRE_NAME] else "",
+                     "by": [{"outlet": au.clean_outlet(x[1]), "src": source_of(x), "byline": (INFO_CACHE.get(x[3]) or {}).get("by", "")} for x in g_],
                      "copies": [{"outlet": au.clean_outlet(x[1]), "url": x[3]} for x in g_[1:]]} for g_ in report_groups(reps[:14])],
     }
 
