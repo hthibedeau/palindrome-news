@@ -6080,7 +6080,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     const fresh = !AUTO || AUTO.d.checked !== got[0].d.checked;
     AUTO = got[0];
     deadLinks();
-    if (fresh) { blogs(); wire(); try { autoTop(); if (window.PAL_orderTop) window.PAL_orderTop(); } catch (e) { console.warn('autoTop', e); } try { clips(); ledes(); stamp(); papers(); eds(); canus(); try { geoHide(); } catch (e) { console.warn('geo', e); } brief(); bds(); otr(); live(); related(); try { canAngle(); canAngleLive(); } catch (e) { console.warn('canAngle', e); } mostRead(); smaller(); dazzle(); } catch (e) { console.warn('autopilot', e); } if (window.PAL_eventRender) try { window.PAL_eventRender(); } catch (e) {} if (window.PAL_renderFronts) try { window.PAL_renderFronts(); if (window.PAL_oneStoryOnePlace) window.PAL_oneStoryOnePlace(); } catch (e) { console.warn(e); } }
+    if (fresh) { blogs(); wire(); try { autoTop(); if (window.PAL_orderTop) window.PAL_orderTop(); try { leadAuto(); } catch (e) { console.warn('lead', e); } } catch (e) { console.warn('autoTop', e); } try { clips(); ledes(); stamp(); papers(); eds(); canus(); try { geoHide(); } catch (e) { console.warn('geo', e); } brief(); bds(); otr(); live(); related(); try { canAngle(); canAngleLive(); } catch (e) { console.warn('canAngle', e); } mostRead(); smaller(); dazzle(); } catch (e) { console.warn('autopilot', e); } if (window.PAL_eventRender) try { window.PAL_eventRender(); } catch (e) {} if (window.PAL_renderFronts) try { window.PAL_renderFronts(); if (window.PAL_oneStoryOnePlace) window.PAL_oneStoryOnePlace(); } catch (e) { console.warn(e); } }
     paint();
   }
   function blogs() {
@@ -6092,7 +6092,9 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     const latest = window.PAL_latest; if (!latest || !window.PAL_renderWire) return;
     for (let i = latest.length - 1; i >= 0; i--) if (latest[i].auto) latest.splice(i, 1);
     const have = new Set(latest.map((r) => key(r[4])));
-    const newest = Math.max.apply(null, latest.map((r) => labelMs(r[0])).filter((x) => !isNaN(x)).concat([0]));
+    // the newest hand-written item is the top one; a week-old "Wed 10:29 p.m." further down must never be read as tonight
+    // (that froze the wire on Tuesday's items, Wed Oct 28, 2026)
+    const top = latest.find((r) => !r.auto), newest = top ? (labelMs(top[0]) || 0) : 0;
     const add = (AUTO.d.wire || []).filter((r) => Date.parse(r[5]) > newest && !have.has(key(r[4])) && !document.querySelector('#breaking a[href="' + CSS.escape(r[4]) + '"]'))
       .sort((a, b) => Date.parse(b[5]) - Date.parse(a[5]))
       .map((r) => { const row = [r[0], r[1], r[2], r[3], r[4]]; row.auto = true; return row; });
@@ -6128,6 +6130,32 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
         + '</article>';
     }).join('') + '<p class="ab-note">Picked and updated automatically at ' + esc(fmt(AUTO.d.checked)) + ' ET, by how many newsrooms carry each story and where it sits on National Newswatch and CBC News, with stories that touch Canada first: a story from abroad with no Canadian tie gives way to one that has one. Headlines and summaries are the outlets’ own.</p>';
     sec.hidden = false;
+  }
+  // The lead slot under the top two (Hannah, Wed Oct 28, 2026: "ensure we have the top news at the top ... update
+  // regularly"): when its hand-written story has not been updated for LEAD_STALE_HOURS, the next biggest story from the
+  // automatic ranking takes the slot (Canadian stories and stories with a Canadian tie first), with its own photo,
+  // headline, summary, every newsroom's report and, for a story from abroad, the Canadian angle beside it.
+  const LEAD_STALE_HOURS = 12;
+  let LEAD_ORIG = null;
+  function leadAuto() {
+    const art = document.querySelector('section.lead > article'); if (!art) return;
+    if (LEAD_ORIG === null) LEAD_ORIG = art.innerHTML;
+    const ts = (art.querySelector('.row-meta .ts') || {}).textContent || '';
+    const upd = labelMs(ts.replace(/^Updated\s+/, ''));
+    const stale = isNaN(upd) || Date.now() - upd > LEAD_STALE_HOURS * 3600e3;
+    const shown = new Set(((AUTO.d.auto && AUTO.d.auto.takeover && AUTO.d.auto.stories) || []).slice(0, 2).map((x) => x.key));
+    const s = ((AUTO.d.auto && AUTO.d.auto.more) || []).find((x) => !shown.has(x.key));
+    if (!stale || !s) { if (art.dataset.auto) { art.innerHTML = LEAD_ORIG; delete art.dataset.auto; delete art.dataset.key; } return; }
+    const a = (u, t, extra) => '<a' + (extra || '') + ' href="' + esc(u) + '" target="_blank" rel="noopener">' + t + '</a>';
+    const outs = []; (s.reports || []).forEach((r) => { if (!outs.some((o) => o.outlet === r.outlet)) outs.push(r); });
+    const label = s.theme || (s.canada === 'canadian' ? 'Canada' : 'World');
+    art.dataset.auto = '1'; art.dataset.key = s.key;
+    art.innerHTML = (s.photo ? '<div class="art hero-art"><span class="ph"><img src="' + esc(AUTO.base + s.photo.src) + '" alt="' + esc(s.photo.alt || '') + '" decoding="async" onerror="this.closest(\'.art\').remove()"><span class="credit">' + esc(s.photo.outlet || '') + '</span></span></div>' : '')
+      + '<div style="display: flex; align-items: center; gap: 12px"><span class="eyebrow">' + esc(label) + '</span><span class="pill">Developing</span></div>'
+      + '<h1>' + a(s.url, esc(s.title), ' class="card-link"') + '</h1>'
+      + (s.summary ? '<p class="dek">' + esc(s.summary) + ' (' + a(s.url, esc(s.outlet), ' style="position: relative; z-index: 2; text-decoration: underline"') + ')</p>' : '')
+      + '<div class="row-meta"><span class="ts">Updated ' + esc(s.t) + '</span><span>' + (s.independent || s.outlets) + ' independent newsrooms</span><span style="color: var(--accent); font-weight: 600">Latest report &#8599;</span></div>'
+      + '<div class="chips-static">' + outs.slice(0, 7).map((r) => a(r.url, esc(r.outlet))).join('') + '</div>';
   }
   // Watch: new uploads from the networks' official YouTube channels, Canadian and U.S. first, one per network, up to 12.
   function clips() {
@@ -6306,7 +6334,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     const C = AUTO.d.canangle || {};
     document.querySelectorAll('.can-box').forEach((b) => b.remove());
     Object.keys(C).forEach((k) => {
-      const root = k === 'top' ? document.getElementById('breaking') : document.querySelector('#bkEvent[data-evid="' + CSS.escape(k) + '"]') || document.querySelector('#autoBreaking [data-key="' + CSS.escape(k) + '"]');
+      const root = k === 'top' ? document.getElementById('breaking') : document.querySelector('#bkEvent[data-evid="' + CSS.escape(k) + '"]') || document.querySelector('#autoBreaking [data-key="' + CSS.escape(k) + '"]') || document.querySelector('section.lead > article[data-key="' + CSS.escape(k) + '"]');
       if (!root || root.hidden) return;
       const c = C[k], a = (u, t) => '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + t + '</a>';
       const items = (c.official || []).map((x) => '<li><span class="rk">Official</span>' + a(x.url, esc(x.title)) + ' <span class="o">' + esc(x.outlet) + ' &#8599;</span></li>').join('')
@@ -6316,6 +6344,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       const box = document.createElement('aside'); box.className = 'can-box'; box.setAttribute('aria-label', 'The Canadian angle');
       box.innerHTML = '<h4>' + LEAF + 'The Canadian angle</h4><p class="can-sub">' + (c.us ? 'How this story, and the Canada–U.S. relationship today, reach Canada' : 'How this story reaches Canada') + '</p><ol>' + items + '</ol>'
         + '<p class="can-note">Found automatically at ' + esc(fmt(AUTO.d.checked)) + ' ET. Headlines are the outlets’ own.</p>';
+      if (root.closest('section.lead')) { const d = root.querySelector('.dek') || root.querySelector('h1'); if (d) d.after(box); else root.appendChild(box); return; }
       if (root.classList.contains('ab-story')) {  // wide screens: floated beside the headline; phones: under the summary
         const wide = window.matchMedia('(min-width: 960px)').matches && root.offsetWidth >= 800, tag = root.querySelector(':scope > .tag'), after = root.querySelector(':scope > .bk-dek') || root.querySelector(':scope > .first');
         if (wide && tag) tag.before(box); else if (after) after.after(box); else root.appendChild(box);

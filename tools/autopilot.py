@@ -191,21 +191,28 @@ def core_rows(g):
     return [r for r in rows if anchor in gc.names(r[2]) or len(gc.names(r[2]) & core) >= 2], core
 
 
+WHY = ""  # why the last build_story() returned nothing (recorded for live/auto.json "considered")
+
+
 def build_story(g, now, imgdir, prev):
     import autoupdate as au
     import gap_check as gc
     from collections import Counter
+    global WHY
     got = core_rows(g)
     if not got or not got[0]:
+        WHY = "its headlines don't share a name often enough to be sure they are one story"
         return None
     rows, core = got
     if not rows:
+        WHY = "no usable reports"
         return None
     per = {}
     for r in rows:  # newest report from each newsroom
         per.setdefault(au.clean_outlet(r[1]), r)
     reps = sorted(per.values(), reverse=True)
     if len(reps) < MIN_OUTLETS or independent(reps) < MIN_OUTLETS:
+        WHY = f"only {independent(reps)} independent report(s) ({len(reps)} sites)"
         return None  # one wire report republished by several sites is one report, not a top story
     first = min(rows)
     names = sorted(core or g["n"], key=len, reverse=True)[:6]
@@ -304,12 +311,14 @@ def auto_stories(groups, page, breaking, now, imgdir, prev):
     for st, words in breaking:
         if words:
             rxs.append((st, re.compile("|".join(re.escape(x) for x in words), re.I)))
-    out = []
+    out, considered = [], []
     for g in _split_themes(groups[:16]):
+        lead_t = (g.get("lead") or [""])[0] if g.get("lead") else (sorted(g.get("rows") or [], reverse=True)[:1] or [("", "", "")])[0][2]
         hits = [st for st, rx in rxs if sum(1 for r in g["rows"] if rx.search(r[2])) >= 2]
         on_top = any(st["where"].startswith("Top") for st in hits)
         events = [st["where"].split("UPNEXT ")[-1].rstrip(")") for st in hits if not st["where"].startswith("Top")]
         if on_top and not stale:
+            considered.append({"title": lead_t, "score": g.get("score"), "why": "already the hand-written top story"})
             continue  # the page already carries it, kept current by hand
         # A story with its own Breaking event stays a candidate: the page drops it from the top pair only while that
         # event is actually showing (otherwise the biggest story could vanish from the top of the page altogether).
@@ -318,6 +327,8 @@ def auto_stories(groups, page, breaking, now, imgdir, prev):
         except Exception as e:
             print("auto story failed:", e)
             s = None
+        if not s:
+            considered.append({"title": lead_t, "score": g.get("score"), "why": "not built: " + (WHY or "error")})
         if s:
             s["replaces_top"] = on_top
             s["events"] = events
@@ -325,7 +336,7 @@ def auto_stories(groups, page, breaking, now, imgdir, prev):
             out.append(s)
         if len(out) >= CANDIDATES:
             break  # more than two: pick_by_canada() keeps the two with Canadian ties first
-    return {"takeover": bool(stale and out), "stale_since": lastdev.isoformat() if lastdev else None, "stories": out}
+    return {"takeover": bool(stale and out), "stale_since": lastdev.isoformat() if lastdev else None, "stories": out, "considered": considered}
 
 
 def yt_uploads(addr):
@@ -1230,7 +1241,14 @@ def pick_by_canada(auto, items, now, eds, papers, otr, canus_, mostread=None):
     ranked = top2 + rest
     # keep spares so the page can step past a story whose own Breaking event is showing
     auto["stories"] = ranked[:2] + [s for s in ranked[2:4] if tier(s) < 2 and any(x.get("events") for x in ranked[:2])]
+    # the next biggest stories (with a Canadian tie), for the lead slot under the top two when its hand-written story
+    # goes stale (Hannah, Wed Oct 28, 2026: "go through the whole page to ensure we have the top news at the top ...
+    # update regularly")
+    auto["more"] = [s for s in ranked[2:] if tier(s) < 2 and s not in auto["stories"]][:3]
     auto["passed_over"] = [{"title": s["title"], "url": s["url"]} for s in cands if tier(s) == 2 and s not in ranked[:2]]
+    # why each story is or isn't at the top (Hannah: "why is that not at the top of the news?")
+    auto["considered"] = [{"title": s["title"], "url": s["url"], "rank": n + 1, "independent": s.get("independent"), "most_read": s["popular"],
+                           "canada": s["canada"], "theme": s.get("theme") or "", "top": s in ranked[:2]} for n, s in enumerate(ranked)] + (auto.get("considered") or [])
     print("top stories:", " | ".join(f"{s['title'][:50]} [{s['canada']}{' canus' if s['canus'] else ''}{' us-election' if s.get('us_election') else ''} read:{s['popular']}]" for s in cands), "->", [s["key"] for s in auto["stories"]])
     return auto
 
@@ -1579,7 +1597,7 @@ def run(page, items, groups, breaking, now, imgdir, prev):
     print(f"autopilot live blogs: {len(res.get('blogs_auto') or [])}")
     try:
         keyed = [("top" if st["where"].startswith("Top") else st["where"].split("UPNEXT ")[-1].rstrip(")"), words, set(), st["name"]) for st, words in breaking]
-        keyed += [(s_["key"], s_.get("words") or [], {r["url"] for r in s_["reports"]}) for s_ in a.get("stories", [])]
+        keyed += [(s_["key"], s_.get("words") or [], {r["url"] for r in s_["reports"]}) for s_ in a.get("stories", []) + a.get("more", [])]
         res["related"] = related(items, keyed, now, res.get("eds"), res.get("papers"), groups)
     except Exception as e:
         print("autopilot related failed:", e)
