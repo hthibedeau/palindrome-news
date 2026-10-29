@@ -942,7 +942,7 @@ def _angle(name, words, mine, recent, eds, papers, otr, pool, anchor_words=None)
     from collections import Counter
     if CAN_TIE.search(name + " " + " ".join(words)):
         return None  # a Canadian story already
-    is_us = bool(US_STORY.search(name))  # the headline itself is about the U.S.
+    is_us = bool(US_STORY.search(name) or US_ELECTION.search(name))  # the headline itself is about the U.S. (or its election)
     if not is_us:
         if len(mine) < 2 or sum(1 for x in mine if FOREIGN_SRC.search(x[3]) or au.US.search(x[1]) or au.WORLDO.search(x[1])) / len(mine) < FOREIGN_SHARE:
             return None  # a story from another country runs on world desks and foreign newsrooms; this one doesn't
@@ -980,7 +980,7 @@ def _angle(name, words, mine, recent, eds, papers, otr, pool, anchor_words=None)
             continue
         add(dt.isoformat(), w.eastern(dt), au.clean_outlet(outlet), title, link)
     specific = len(picked)
-    if is_us and US_POLITICS.search(name):
+    if is_us and (US_POLITICS.search(name) or US_ELECTION.search(name)):
         for x in pool:  # the Canada-U.S. relationship today, newest first
             if len(picked) >= ANGLE_MAX:
                 break
@@ -1093,6 +1093,14 @@ def pick_by_canada(auto, items, now, eds, papers, otr, canus_, mostread=None):
     # higher rank and for more sites. Within each tier, the most-read stories go first; then the newsroom ranking.
     for s in cands:
         s["popular"] = popularity(s, mostread)
+    # Hannah, Wed Oct 28, 2026: "Any American story that is breaking for the election could go to the top two and attach
+    # the Canadian angle to it." A Breaking U.S. election story (Breaking already means 4+ independent newsrooms and a
+    # report in the last hour) competes for the top two like a Canadian story; its Canadian angle box is built by
+    # canadian_angle() (the Canadian reports on it, then the Canada-U.S. relationship today).
+    for s in cands:
+        s["us_election"] = us_election_breaking(s)
+        if s["us_election"] and s["canada"] == "none":
+            s["canada"] = "tie"
     tier = lambda s: 2 if s["canada"] == "none" else 0
     ranked = sorted(cands, key=lambda s: (tier(s), -s["popular"]))  # stable: ties keep the ranking order
     # one story per running theme in the top pair, so Canada-U.S. leads without crowding out everything else
@@ -1110,8 +1118,21 @@ def pick_by_canada(auto, items, now, eds, papers, otr, canus_, mostread=None):
     # keep spares so the page can step past a story whose own Breaking event is showing
     auto["stories"] = ranked[:2] + [s for s in ranked[2:4] if tier(s) < 2 and any(x.get("events") for x in ranked[:2])]
     auto["passed_over"] = [{"title": s["title"], "url": s["url"]} for s in cands if tier(s) == 2 and s not in ranked[:2]]
-    print("top stories:", " | ".join(f"{s['title'][:50]} [{s['canada']}{' canus' if s['canus'] else ''} read:{s['popular']}]" for s in cands), "->", [s["key"] for s in auto["stories"]])
+    print("top stories:", " | ".join(f"{s['title'][:50]} [{s['canada']}{' canus' if s['canus'] else ''}{' us-election' if s.get('us_election') else ''} read:{s['popular']}]" for s in cands), "->", [s["key"] for s in auto["stories"]])
     return auto
+
+
+US_ELECTION = re.compile(r"\b(midterms?|elections?|Election (?:Day|Night)|ballots?|polls? (?:close|closed|open|opened)|exit polls?|"
+                         r"vote counts?|projected (?:winner|to win)|wins? (?:re-?election|the race|the seat|control)|concedes?|"
+                         r"(?:Senate|House|governor['’]?s?) (?:race|seat|control|majority)|recount|electoral|early voting|voters?)\b", re.I)
+
+
+def us_election_breaking(s):
+    """A Breaking story about the U.S. election (not a Canadian one)."""
+    if s.get("tag") != "Breaking":
+        return False
+    text = s.get("title", "") + " " + " ".join(r["title"] for r in s.get("reports", [])[:6])
+    return bool(US_ELECTION.search(text) and (US_STORY.search(text) or US_TIE.search(text)) and not CAN_TIE.search(s.get("title", "")))
 
 
 def popularity(s, mostread):
