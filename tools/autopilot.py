@@ -373,37 +373,60 @@ def age_minutes(parts):
 GEO_CACHE = {}
 
 
-def yt_in_canada(vid):
-    """'ok', 'blocked' (the uploader does not allow it in Canada) or 'unknown' (YouTube's page could not be read)."""
+def yt_check(vid):
+    """Will this YouTube video actually play for a reader in Canada? (Hannah, Wed Oct 28, 2026: "in the code, check the
+    video to make sure it will run before you put it on the site.") Read from the video's own YouTube page:
+      ok         plays (status OK, not private or removed, no sign-in or age gate, allowed in Canada)
+      blocked    the uploader does not allow it in Canada
+      unplayable removed, private, members-only, age-restricted (needs a sign-in) or otherwise won't play
+      unknown    YouTube's page could not be read this run
+    Also records, in YT_INFO[vid]: live (on air now), offline (a stream that is not on air), embed (can play inside our page)."""
     if vid in GEO_CACHE:
         return GEO_CACHE[vid]
-    x = curl(f"https://www.youtube.com/watch?v={vid}&hl=en&gl=CA")
+    x = ""
+    for _ in range(2):
+        x = curl(f"https://www.youtube.com/watch?v={vid}&hl=en&gl=CA")
+        if '"playabilityStatus"' in x:
+            break
     res = "unknown"
-    if x:
+    info = {}
+    if '"playabilityStatus"' in x:
         m = re.search(r'"availableCountries":\[([^\]]*)\]', x)
         ps_ = re.search(r'"playabilityStatus":\{"status":"(\w+)"(?:,"reason":"([^"]*)")?', x)
         status, reason = (ps_.group(1), ps_.group(2) or "") if ps_ else ("", "")
-        if m and m.group(1).strip():
-            res = "ok" if '"CA"' in m.group(1) else "blocked"
-        elif re.search(r"not (?:made this video )?available in your country|blocked it in your country|not available in your country", x, re.I) or re.search(r"country", reason, re.I):
-            res = "blocked"  # blocked by country with no list given: never risk sending a reader to it
-        elif status in ("OK", "LIVE_STREAM_OFFLINE") or '"isLiveContent"' in x or '"videoDetails"' in x:
+        info = {"live": '"isLiveNow":true' in x or '"isLive":true' in x, "offline": status == "LIVE_STREAM_OFFLINE",
+                "embed": '"playableInEmbed":false' not in x, "status": status, "reason": reason}
+        if m and m.group(1).strip() and '"CA"' not in m.group(1):
+            res = "blocked"
+        elif re.search(r"country", reason, re.I) or re.search(r"not (?:made this video )?available in your country|blocked it in your country", x, re.I):
+            res = "blocked"
+        elif status in ("ERROR", "UNPLAYABLE", "LOGIN_REQUIRED", "AGE_CHECK_REQUIRED", "CONTENT_CHECK_REQUIRED"):
+            res = "unplayable"
+        elif status in ("OK", "LIVE_STREAM_OFFLINE"):
             res = "ok"
-        if status in ("ERROR", "UNPLAYABLE") and not re.search(r"country", reason, re.I) and res != "blocked":
-            res = "blocked" if re.search(r"private|removed|unavailable|terminated", reason, re.I) else res
+    YT_INFO[vid] = info
     GEO_CACHE[vid] = res
     return res
 
 
-def geo_filter(items, key, label):
-    """Drop the items whose video the uploader does not allow in Canada. `key` gives each item's video id."""
+YT_INFO = {}
+yt_in_canada = yt_check  # older name, used by tools/network_youtube.py
+
+
+def geo_filter(items, key, label, keep_unknown=None):
+    """Keep only the videos that will play. A video YouTube could not be read for this run is held back unless it was
+    already checked and shown before (`keep_unknown(item)`), so nothing new goes up unchecked."""
     ids = [key(i) for i in items]
     with ThreadPoolExecutor(8) as ex:
-        verdicts = dict(zip(ids, ex.map(lambda v: yt_in_canada(v) if v else "ok", ids)))
-    kept = [i for i in items if verdicts.get(key(i)) != "blocked"]
+        verdicts = dict(zip(ids, ex.map(lambda v: yt_check(v) if v else "ok", ids)))
+    kept = []
     for i in items:
-        if verdicts.get(key(i)) == "blocked":
-            print(f"{label}: dropped (not available in Canada): {i.get('o') or i.get('net')}: {(i.get('t') or i.get('title') or '')[:70]}")
+        v = verdicts.get(key(i))
+        if v == "ok" or (v == "unknown" and keep_unknown and keep_unknown(i)):
+            kept.append(i)
+        else:
+            why = {"blocked": "not available in Canada", "unplayable": "won't play: " + (YT_INFO.get(key(i), {}).get("reason") or YT_INFO.get(key(i), {}).get("status") or "")}.get(v, "could not be checked yet")
+            print(f"{label}: held back ({why}): {i.get('o') or i.get('net')}: {(i.get('t') or i.get('title') or '')[:70]}")
     return kept
 
 
@@ -431,7 +454,10 @@ def clips(page, prev_clips, now):
                 continue  # a long livestream recording, not a clip
             up = now - timedelta(minutes=mins)
             p = prev.get(vid, {})
-            got.append({"id": vid, "r": region, "o": net, "t": clean(title), "d": dur if re.fullmatch(r"\d{1,2}:\d\d(:\d\d)?", dur or "") else "",
+            rec = bool(re.match(r"\s*(?:🔴\s*)?(?:LIVE|Live|WATCH LIVE|Watch live)\b\s*(?:@[^:|]*)?[:|\-–—]", title))
+            if rec:  # "Live: …" on a finished upload is a recording of a stream that has ended, not live
+                title = re.sub(r"^\s*(?:🔴\s*)?(?:LIVE|Live|WATCH LIVE|Watch live)\b\s*(?:@[^:|]*)?[:|\-–—]\s*", "", title)
+            got.append({"id": vid, "r": region, "o": net, "t": clean(title), "rec": rec, "d": dur if re.fullmatch(r"\d{1,2}:\d\d(:\d\d)?", dur or "") else "",
                         "u": f"https://www.youtube.com/watch?v={vid}", "img": f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg",
                         "up": (up - timedelta(hours=4 if _dst(up) else 5)).date().isoformat(),
                         "added": p.get("added") or now.isoformat(), "pic": "globe"})
@@ -445,7 +471,7 @@ def clips(page, prev_clips, now):
     for c in out:  # a clip already checked on an earlier run keeps its verdict
         if prev.get(c["id"], {}).get("geo") in ("ok", "blocked"):
             GEO_CACHE.setdefault(c["id"], prev[c["id"]]["geo"])
-    out = geo_filter(out, lambda c: c["id"], "clips")
+    out = geo_filter(out, lambda c: c["id"], "clips", keep_unknown=lambda c: prev.get(c["id"], {}).get("geo") == "ok")
     for c in out:
         c["geo"] = GEO_CACHE.get(c["id"], "unknown")
     order = {"ca": 0, "us": 1, "world": 2}
@@ -822,8 +848,19 @@ def live_video(page, named, now):
     except Exception as e:
         print("live: CTV events failed:", e)
     vid_of = lambda i: (re.search(r"[?&]v=([A-Za-z0-9_-]{11})", i.get("url", "")) or [None, None])[1]
-    for k in ("now", "always", "upcoming"):  # live streams the uploader blocks in Canada are never offered
+    for k in ("now", "always", "upcoming"):  # only streams that will play in Canada
         res[k] = geo_filter(res[k], vid_of, "live")
+    for k in ("now", "always"):  # "live" must mean on air right now
+        keep = []
+        for i in res[k]:
+            inf = YT_INFO.get(vid_of(i) or "", {})
+            if vid_of(i) and inf and inf.get("offline"):
+                print(f"live: dropped (not on air): {i['net']}: {i['title'][:70]}")
+                continue
+            if inf and not inf.get("embed", True):
+                i["noembed"] = True  # plays on YouTube, but not inside our page: the page links to it instead
+            keep.append(i)
+        res[k] = keep
     res["now"] = group_events(res["now"], live=True)
     res["upcoming"] = group_events(res["upcoming"], live=False)
     order = {"ca": 0, "us": 1, "world": 2}
@@ -1307,6 +1344,7 @@ def smaller(items, page, now, imgdir):
 
 
 # ===== Live blogs, by themselves: any newsroom's live-updates page in the feeds (last 6 hours), named by story.
+LIVE_BLOG_HOURS = 3  # a live blog with no new post for this long is not live (the page uses the same number)
 LIVE_BLOG = re.compile(r"live updates|live blog|liveblog|as it happened|\blive:|^live\b|— live|- live$|live coverage|live results", re.I)
 
 
@@ -1326,8 +1364,19 @@ def live_blogs(items, named, now):
             continue
         seen.add(key)
         out.append({"net": au.clean_outlet(outlet), "story": story, "title": clean(title), "url": link, "updated": dt.isoformat()})
+    out = [o for o in out if not au.BLOG_CLOSED.search(o["title"])]  # "– as it happened": the blog is over
     named_first = [o for o in out if any(nm[1].search(o["title"]) for nm in named)]
-    out = (named_first + [o for o in out if o not in named_first])[:12]
+    out = (named_first + [o for o in out if o not in named_first])[:16]
+
+    def state(o):  # the blog's own newest post and whether it has ended
+        x = curl(o["url"])
+        return au.blog_state(x, now) if x else {"updated": None, "ended": False}
+    with ThreadPoolExecutor(6) as ex:
+        for o, st in zip(out, ex.map(state, out)):
+            o["ended"] = st["ended"]
+            if st["updated"]:
+                o["updated"] = st["updated"]
+    out = [o for o in out if not o["ended"] and (now - datetime.fromisoformat(o["updated"])).total_seconds() < LIVE_BLOG_HOURS * 3600][:12]
     with ThreadPoolExecutor(6) as ex:  # a picture for every tile: the blog's own share image
         for o, info in zip(out, ex.map(lambda o: page_info(o["url"]), out)):
             o["img"] = (info or {}).get("img", "")
@@ -1538,8 +1587,9 @@ def run(page, items, groups, breaking, now, imgdir, prev):
         with ThreadPoolExecutor(8) as ex:
             verdicts = dict(zip(ids, ex.map(yt_in_canada, ids)))
         res["geo"] = {v: {"v": r, "at": prevgeo.get(v, {}).get("at") if v in prevgeo and prevgeo[v].get("v") == r else now.isoformat()} for v, r in verdicts.items()}
-        res["geo_blocked"] = sorted(v for v, r in GEO_CACHE.items() if r == "blocked")
-        print(f"autopilot geo: {len(ids)} videos on the page, blocked in Canada: {res['geo_blocked']}")
+        res["geo_blocked"] = sorted(v for v, r in GEO_CACHE.items() if r in ("blocked", "unplayable"))
+        res["noembed"] = sorted(v for v, inf in YT_INFO.items() if inf and not inf.get("embed", True))
+        print(f"autopilot video check: {len(ids)} videos on the page; won't play in Canada: {res['geo_blocked']}; no embedding: {res['noembed']}")
     except Exception as e:
         print("autopilot geo failed:", e)
         res["geo"], res["geo_blocked"] = prev.get("geo") or {}, prev.get("geo_blocked") or []

@@ -156,8 +156,10 @@ def prepare(a):
         return print("REFUSED --date must be YYYY-MM-DD (the upload date shown on the watch page)")
     try:  # never a video the uploader blocks in Canada (Hannah, Wed Oct 28, 2026)
         import autopilot
-        if autopilot.yt_in_canada(vid) == "blocked":
-            return print("REFUSED the uploader does not allow this video in Canada")
+        v = autopilot.yt_check(vid)
+        if v != "ok":  # Hannah: check the video will run before it goes on the site
+            return print({"blocked": "REFUSED the uploader does not allow this video in Canada",
+                          "unplayable": "REFUSED the video won't play (removed, private, or needs a sign-in)"}.get(v, "REFUSED could not confirm the video plays; try again"))
     except Exception as e:
         print("note: could not check where the video is allowed:", e)
     today = eastern_today()

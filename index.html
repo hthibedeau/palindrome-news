@@ -2659,7 +2659,7 @@ header.site { border-bottom: 0; }
     const pic = (c, badge, cls) => '<span class="chan-pic" data-net="' + esc(c.net) + '"><img alt="" referrerpolicy="no-referrer" data-tries="' + esc(JSON.stringify([c.file, USE_LOCAL && c.blob, c.img].filter(Boolean))) + '"><span class="chan-badge ' + cls + '">' + badge + '</span></span>';
     const render = () => {
       const now = Date.now();
-      const live = LIVENOW.filter((c) => c.kind === 'video' || c.kind === 'official' ? !(c.until && now > Date.parse(c.until)) : (!c.updated || now - Date.parse(c.updated) < 6 * 3600e3))
+      const live = LIVENOW.filter((c) => c.kind === 'video' || c.kind === 'official' ? !(c.until && now > Date.parse(c.until)) : (!c.ended && !!c.updated && now - Date.parse(c.updated) < 3 * 3600e3))  // a live blog: a real post in the last 3 hours and not ended
         // Hannah: live video always above live blogs; official sources last
         .sort((x, y) => ({ video: 0, updates: 1, official: 2 }[x.kind] ?? 1) - ({ video: 0, updates: 1, official: 2 }[y.kind] ?? 1));
       const up = COMING.filter((c) => now < (Date.parse(c.until || c.when) || 0)).sort((x, y) => Date.parse(x.when) - Date.parse(y.when));
@@ -2673,10 +2673,10 @@ header.site { border-bottom: 0; }
       const tile = (c, badge, cls, meta, go) => '<div class="chan-cell">' + tile0(c, badge, cls, meta, go) +
         (c.also && c.also.length ? '<div class="chan-also"><span>Also live on</span>' + c.also.map((a) => '<a href="' + esc(a.url) + '" target="_blank" rel="noopener"' + (a.official ? ' class="off"' : '') + '>' + esc(a.net.replace(' - Banque du Canada', '')) + '</a>').join('') + '</div>' : '') +
         (c.reports && c.reports.length ? '<details class="chan-reps"><summary>' + c.reports.length + ' newsrooms reporting it</summary><ol>' + c.reports.map((r) => '<li><a href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(r.title) + '</a> <span>' + esc(r.outlet) + ' · ' + esc(r.t) + '</span></li>').join('') + '</ol></details>' : '') + '</div>';
-      const nowTiles = onNow.map((c) => tile(c, 'LIVE VIDEO', 'v', 'On now' + (c.where ? ' · ' + esc(c.where) : ''), 'Watch live')).concat(live.map((c) => c.kind === 'video'
-        ? tile(c, 'LIVE VIDEO', 'v', '', 'Watch live')
+      const nowTiles = onNow.map((c) => tile(c, 'LIVE VIDEO', 'v', 'Live video · on now' + (c.where ? ' · ' + esc(c.where) : ''), 'Watch the live video')).concat(live.map((c) => c.kind === 'video'
+        ? tile(c, 'LIVE VIDEO', 'v', '', 'Watch the live video')
         : c.kind === 'official' ? tile(c, 'OFFICIAL SOURCE', 'u', c.updated ? 'Checked ' + esc(fmtT(new Date(c.updated))) + ' ET' : '', 'Open the official page')
-        : tile(c, 'LIVE UPDATES', 'u', c.updated ? 'Newest post ' + esc(fmtT(new Date(c.updated))) + ' ET' : '', 'Follow live'))).join('');
+        : tile(c, 'LIVE BLOG', 'u', c.updated ? 'Live blog · newest post ' + esc(fmtT(new Date(c.updated))) + ' ET' : 'Live blog', 'Read the live blog'))).join('');
       const laterTiles = later.map((c) => tile(c, esc(when(new Date(c.when)).toUpperCase()), 'c', (c.approx ? 'About ' + esc(when(new Date(c.when))).replace(/^(Tonight|Today)/, (m) => m.toLowerCase()) : esc(when(new Date(c.when)))) + (c.local ? ' (' + esc(c.local) + ')' : '') + (c.where ? ' · ' + esc(c.where) : ''), c.url.indexOf('youtube.com') > -1 ? 'Set a reminder on YouTube' : 'How to watch')).join('');
       const sec = document.getElementById('liveCoverage');
       if (!nowTiles && !laterTiles) { box.hidden = true; if (sec) sec.hidden = true; return; }
@@ -3080,7 +3080,7 @@ header.site { border-bottom: 0; }
   // viewer"). For any Breaking story, whatever it is: a bright bar with every live video or live blog on that story,
   // each button saying exactly where it goes (network, kind, site, last update). Sources: LIVENOW (video until it
   // ends; live blogs updated within LIVE_BLOG_HOURS), COMING items on air now, and LIVE when it is live.
-  const LIVE_BLOG_HOURS = 6;
+  const LIVE_BLOG_HOURS = 3;  // Hannah, Wed Oct 28, 2026: a blog with no new post for 3 hours, or one that has ended, is not live
   window.PAL_onAir = function (storyName) {
     const now = Date.now(), Tm = (x) => Date.parse(x || '');
     const key = (x) => String(x || '').replace(/^the\s+/i, '').toLowerCase().trim();
@@ -3105,7 +3105,7 @@ header.site { border-bottom: 0; }
       const pic = (USE_LOCAL && (l.blob || LOCAL[l.file] || LOCAL[l.img])) || l.file || l.img || '';
       if (l.kind === 'video') { if (now <= (Tm(l.until) || Tm(l.updated) + 2 * 3600000) && !out.some((o) => o.url === l.url)) out.push({ video: true, net: l.net, what: l.what || '', url: l.url, site: host(l.url), note: 'on now', pic }); }
       else if (l.kind === 'official') { if (now <= (Tm(l.until) || Tm(l.updated) + 24 * 3600000)) out.push({ official: true, net: l.net, what: l.what || '', url: l.url, site: host(l.url), note: l.note || ('checked ' + t(Tm(l.updated)) + ' ET'), pic }); }
-      else if (now - Tm(l.updated) <= LIVE_BLOG_HOURS * 3600000) out.push({ video: false, net: l.net, what: l.what || '', url: l.url, site: host(l.url), note: 'updated ' + t(Tm(l.updated)) + ' ET', pic, t: Tm(l.updated) });
+      else if (!l.ended && now - Tm(l.updated) <= LIVE_BLOG_HOURS * 3600000) out.push({ video: false, net: l.net, what: l.what || '', url: l.url, site: host(l.url), note: 'updated ' + t(Tm(l.updated)) + ' ET', pic, t: Tm(l.updated) });
     });
     // video first, then live blogs newest first, then official (primary) sources
     const rank = (x) => x.video ? 0 : x.soon ? 0.5 : x.official ? 2 : 1;
@@ -3126,7 +3126,7 @@ header.site { border-bottom: 0; }
       + [['Live broadcasts', items.filter((x) => x.video)], ['Coming up live', items.filter((x) => x.soon)], ['Live blogs', items.filter((x) => !x.video && !x.official && !x.soon)], ['Official sources', items.filter((x) => x.official)]]
         .filter(([, g]) => g.length).map(([name, g]) => '<div class="oa-group"><p class="oa-gh">' + name + '</p><div class="oa-go">' + g.slice(0, 6).map((x) => '<a class="oa-btn' + (x.video ? '' : x.soon ? ' soon' : x.official ? ' off' : ' alt') + (x.pic ? ' has-pic' : '') + '" href="' + esc2(x.url) + '" target="_blank" rel="noopener">'
         + (x.pic ? '<span class="oa-pic"><img src="' + esc2(x.pic) + '" alt="" loading="lazy" onerror="this.parentNode.remove()">' + (x.video ? '<i aria-hidden="true">&#9654;</i>' : '') + '</span>' : '')
-        + '<span class="oa-txt"><b>' + (x.video ? '&#9654; Watch live on ' : x.soon ? '<span class="oa-clock" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>Watch on ' : x.official ? 'Official: ' : x.cover ? 'Follow the coverage on ' : 'Live updates on ') + esc2(x.net) + ' &#8599;</b>'
+        + '<span class="oa-txt"><b>' + (x.video ? '&#9654; Watch live video on ' : x.soon ? '<span class="oa-clock" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>Watch on ' : x.official ? 'Official: ' : x.cover ? 'Follow the coverage on ' : 'Live blog on ') + esc2(x.net) + ' &#8599;</b>'
         + ((x.official || x.soon) && x.what ? '<span class="oa-sub">' + esc2(x.what) + '</span>' : '')
         + '<small>' + esc2((x.video ? 'Live video · ' : x.soon ? 'Live at ' : x.official ? 'Primary source · ' : x.cover ? '' : 'Live blog · ') + x.note + ' · opens ' + x.site) + '</small></span></a>').join('') + '</div></div>').join('') + '</div>';
   };
@@ -4788,8 +4788,8 @@ header.site { border-bottom: 0; }
     const list = all.filter(vNew).sort((a, b) => Date.parse(b.added) - Date.parse(a.added)).concat(all.filter((v) => !vNew(v)));
     $('vids').innerHTML = list.map((v) => '<article class="vid"><a class="vt" href="' + esc(v.u) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + (MEDIA[slotId(v.u)] ? shot(slotId(v.u)) : v.img ? photo(v.img, v.pic, v.t, v.o) : netCard(v)) +
       '<span class="pb' + (v.live ? ' live' : '') + '">' + (v.live ? 'Live' : v.d ? esc(v.d) : 'Video') + '</span></a>' +
-      '<a class="bigplay" href="' + esc(vurl(v.u)) + '" target="_blank" rel="noopener" aria-label="Play on ' + esc(v.o) + ': ' + esc(v.t) + '"><svg width="30" height="30" viewBox="0 0 24 24" fill="#2B1B54" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></a>' +
-      '<span class="src">' + (vNew(v) ? '<b class="vnew">New</b>' : '') + esc(v.o) + ' <span class="plays">· plays on their site &#8599;</span></span><h3><a href="' + esc(v.u) + '" target="_blank" rel="noopener">' + esc(v.t) + '</a></h3><span class="when">' + esc(vDay(v)) + '</span>' + addBtn(slotId(v.u)) + '</article>').join('');
+      '<a class="bigplay" href="' + esc(vurl(v.u)) + '" target="_blank" rel="noopener" aria-label="Play on ' + esc(v.o) + ': ' + esc(vTitle(v)) + '"><svg width="30" height="30" viewBox="0 0 24 24" fill="#2B1B54" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></a>' +
+      '<span class="src">' + (vNew(v) ? '<b class="vnew">New</b>' : '') + esc(v.o) + ' <span class="plays">· ' + (vRec(v) ? 'recording of a live stream that has ended · ' : '') + 'plays on their site &#8599;</span></span><h3><a href="' + esc(v.u) + '" target="_blank" rel="noopener">' + esc(vTitle(v)) + '</a></h3><span class="when">' + esc(vDay(v)) + '</span>' + addBtn(slotId(v.u)) + '</article>').join('');
     wirePhotos();
   }
   document.querySelectorAll('.vfilters button').forEach((b) => b.addEventListener('click', () => {
@@ -4797,6 +4797,11 @@ header.site { border-bottom: 0; }
     showVids(b.dataset.v);
   }));
   showVids('all');
+  // A Watch clip titled "Live: …" is a recording once the stream is over (Hannah, Wed Oct 28, 2026: say whether it is
+  // live video or not): the "Live:" goes, and the card says it is a recording of a live stream that has ended.
+  function recRx() { return /^\s*(?:🔴\s*)?(?:LIVE|Live|WATCH LIVE|Watch live)\b\s*(?:@[^:|]*)?[:|\-–—]\s*/; }
+  function vRec(v) { return !!(v.rec || recRx().test(v.t || '')); }
+  function vTitle(v) { return String(v.t || '').replace(recRx(), ''); }
   window.PAL_vids = vids; window.PAL_showVids = () => showVids(curV || 'all');
 
   // What America's newsrooms are leading with (read Tue Oct 27, 6:46 a.m. ET). img = the story's own picture (its share image), so readers see where they're going.
@@ -6080,7 +6085,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
   }
   function blogs() {
     const L = window.PAL_LIVENOW || [];
-    (AUTO.d.blogs || []).forEach((b) => { const x = L.find((l) => key(l.url) === key(b.url)); if (x && (!x.updated || Date.parse(b.updated) > Date.parse(x.updated))) x.updated = b.updated; });
+    (AUTO.d.blogs || []).forEach((b) => { const x = L.find((l) => key(l.url) === key(b.url)); if (!x) return; if (b.updated) x.updated = b.updated; if (b.ended) x.ended = true; });  // the blog's own newest post, and whether it has ended (tools/autoupdate.py blog_state)
     if (window.PAL_liveCoverageRender) try { window.PAL_liveCoverageRender(); } catch (e) {}
   }
   function wire() {
@@ -6182,15 +6187,20 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     E.list.length = 0; A.forEach((r) => E.list.push([r[0], r[1], r[2], r[3]])); E.render();
   }
   // Canada and the U.S.: the newest reports on the relationship, and how U.S. newsrooms are covering Canada.
-  // Videos the uploader does not allow in Canada (tools/autopilot.py checks YouTube's allowed-countries list on every
-  // run): removed from the page wherever they appear, so a reader never taps into "not available in your country".
+  // Videos that won't play for a reader in Canada (tools/autopilot.py yt_check, every run: blocked in Canada, removed,
+  // private or needing a sign-in) are removed wherever they appear; one that can't play inside our page becomes a link.
   let geoObs = null;
   function geoHide() {
-    const B = new Set((AUTO.d && AUTO.d.geo_blocked) || []); if (!B.size) return;
+    const B = new Set((AUTO.d && AUTO.d.geo_blocked) || []), NE = new Set((AUTO.d && AUTO.d.noembed) || []); if (!B.size && !NE.size) return;
     const idOf = (u) => (/(?:youtube(?:-nocookie)?\.com\/(?:watch\?v=|embed\/|live\/)|youtu\.be\/)([A-Za-z0-9_-]{11})/.exec(u || '') || [])[1];
     const run = () => {
       document.querySelectorAll('a[href*="youtu"], iframe[src*="youtu"], [data-href*="youtu"], [data-url*="youtu"]').forEach((el) => {
-        const id = idOf(el.getAttribute('href') || el.getAttribute('src') || el.dataset.href || el.dataset.url); if (!id || !B.has(id)) return;
+        const id = idOf(el.getAttribute('href') || el.getAttribute('src') || el.dataset.href || el.dataset.url); if (!id) return;
+        if (!B.has(id) && NE.has(id) && el.tagName === 'IFRAME') {  // plays on YouTube but not inside our page: a link instead
+          const a = document.createElement('a'); a.href = 'https://www.youtube.com/watch?v=' + id; a.target = '_blank'; a.rel = 'noopener';
+          a.className = 'bk-noembed'; a.textContent = '▶ Watch on YouTube (this video plays only on YouTube) ↗'; el.replaceWith(a); return;
+        }
+        if (!B.has(id)) return;
         const box = el.closest('.bk-player, .vid, .clk, .media-row, .lv-tile, .live-tile, li, article') || el;
         if (box.matches('section, main, body')) { el.remove(); return; }
         box.remove();

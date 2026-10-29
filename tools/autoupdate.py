@@ -172,17 +172,49 @@ def best_photo(page, st, since, now, outdir, skip):
     return None
 
 
+BLOG_CLOSED = re.compile(r"as it happened|this (?:live )?(?:page|blog) is (?:now )?closed|live coverage (?:has )?ended|we(?:'|’)ve (?:now )?(?:ended|closed|paused) (?:our|this) live|"
+                         r"we(?:'|’)re (?:now )?(?:ending|closing|pausing) (?:our|this) live|(?:our|this) live (?:coverage|blog|page) (?:has )?(?:now )?(?:ended|closed)|"
+                         r"thank you for following (?:our|this|along)|that(?:'|’)s (?:it|all) for (?:our|this|today(?:'|’)s) live", re.I)
+
+
+def blog_state(x, now=None):
+    """A live blog's real state, from the blog itself (Hannah, Wed Oct 28, 2026: "One of the live updates on the
+    Israeli election ended 7 hours ago. That's not live."): the time of its newest POST (the page's "modified" time can
+    change with no new post), and whether it has ended (a coverage end time already past, or the blog saying it closed).
+    Returns {"updated": iso or None, "ended": bool}."""
+    now = now or datetime.now(timezone.utc)
+    ok = lambda d: d and d <= now + timedelta(minutes=5)
+    posts = []
+    for blk in re.findall(r'"liveBlogUpdate"\s*:\s*(\[.*?\])\s*[,}]', x, re.S):
+        posts += [ps.to_utc(v) for v in re.findall(r'"datePublished"\s*:\s*"([^"]+)"', blk)]
+    posts += [ps.to_utc(v) for v in re.findall(r'<time[^>]*datetime="([^"]+)"[^>]*>', x)][:40]
+    posts = [d for d in posts if ok(d)]
+    mods = [ps.to_utc(v) for v in re.findall(r'"dateModified"\s*:\s*"([^"]+)"', x)]
+    mods += [ps.to_utc(v) for v in re.findall(r'property="article:modified_time" content="([^"]+)"', x)]
+    mods = [d for d in mods if ok(d)]
+    newest = max(posts) if posts else (max(mods) if mods else None)
+    ends = [ps.to_utc(v) for v in re.findall(r'"coverageEndTime"\s*:\s*"([^"]+)"', x)]
+    ended = any(d and d <= now for d in ends)
+    title = " ".join(re.findall(r"<title>(.*?)</title>|property=\"og:title\" content=\"([^\"]+)\"", x)[0]) if re.search(r"<title>|og:title", x) else ""
+    head = re.sub(r"<[^>]+>", " ", x[:200000])
+    if BLOG_CLOSED.search(title) or re.search(r'"coverageEndTime"', x) and ended:
+        ended = True
+    elif BLOG_CLOSED.search(head[:60000]) and not (newest and (now - newest).total_seconds() < 1800):
+        ended = True  # the blog says it has closed, and nothing was posted after that
+    return {"updated": newest.isoformat() if newest else None, "ended": ended}
+
+
 def blog_times(page):
     i = page.find("  const LIVENOW = [")
     blk = page[i: page.find("\n  ];", i)] if i >= 0 else ""
     out = []
     for url in re.findall(r"kind: 'updates',[^\n]*?url: '([^']+)'", blk):
         x = ps.curl(url) or ""
-        ds = [ps.to_utc(v) for v in re.findall(r'"dateModified"\s*:\s*"([^"]+)"', x)]
-        ds += [ps.to_utc(v) for v in re.findall(r'property="article:modified_time" content="([^"]+)"', x)]
-        ds = [d for d in ds if d and d <= datetime.now(timezone.utc) + timedelta(minutes=5)]
-        if ds:
-            out.append({"url": url, "updated": max(ds).isoformat()})
+        if not x:
+            continue
+        st = blog_state(x)
+        if st["updated"] or st["ended"]:
+            out.append({"url": url, "updated": st["updated"], "ended": st["ended"]})
     return out
 
 
