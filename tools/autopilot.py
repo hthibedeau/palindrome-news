@@ -856,6 +856,42 @@ def canus(items, now):
 
 
 # ===== The 60-second brief, by itself: the biggest stories now, each attributed to the newsroom whose headline it reads.
+DATELINE = re.compile(r"^\s*(?:[A-Z][A-Z .'’-]{2,40}(?:,\s*[A-Z][\w.]+)?\s*(?:\((?:AP|CP|Reuters|AFP)\)\s*)?[—–-]+\s*)")
+LIVE_HEAD = re.compile(r"^(?:LIVE(?: UPDATES)?|Live updates?|Live|WATCH|Watch|Video|Analysis|Opinion)\s*[:|—–-]\s*|\s*[:|—–-]\s*(?:live updates?|live)\s*$|\.?\s*Live updates? here\.?$|\blive updates?:\s*", re.I)
+SAYS = re.compile(r"\b(?:says?|said|reports?|reported|according to|told)\b", re.I)
+
+
+def spoken_line(rows, group):
+    """One brief line as Hannah would say it on air (Hannah, Thu Oct 29, 2026: "It still doesn't sound like my voice"):
+    a full sentence from the newsroom's own opening line, not a headline, credited at the end the way a newsreader
+    does ("..., The Canadian Press reports."), to the wire that wrote it when it is a wire story."""
+    import autoupdate as au
+    r = max(group, key=lambda x: x[0])  # the newest copy: wire stories are updated through the day
+    credit = source_of(group[0]) if source_of(group[0]) in WIRE_NAMES else source_of(r)
+    credit = credit if credit in WIRE_NAMES else au.clean_outlet(r[1]).split(" / ")[0]
+    info = page_info(r[3]) or {}
+    desc = DATELINE.sub("", info.get("desc") or "").strip()
+    first = re.split(r"(?<=[.?!])\s+(?=[A-Z“\"])", desc)[0] if desc else ""
+    words_ = len(first.split())
+    import gap_check as gc
+    on_topic = len((gc.keys(first) | gc.names(first)) & (gc.keys(r[2]) | gc.names(r[2]))) >= 2  # news, not a teaser
+    if 8 <= words_ <= 38 and on_topic and not re.search(r"\?$|^(?:Here|This|Watch|Listen|Read|Click|Sign|Get|Subscribe)\b", first):
+        sent = first.rstrip(" .")
+    else:
+        sent = LIVE_HEAD.sub("", clean(r[2])).strip(" .:")
+    sent = re.sub(r"(^|[\s(“\"])'", r"\1‘", sent).replace("'", "’")  # opening single quotes the right way round
+    closing = ""
+    m = re.search(r'[.,]?\s*(["”])$', sent)
+    if m:
+        sent, closing = sent[: m.start()].rstrip(" .,"), "”"
+    elif sent.count('"') % 2 or sent.count("“") > sent.count("”"):
+        closing = "”"  # a quote the summary cut off: close it
+    sent = sent.replace('"', "“", 1) if sent.count('"') == 1 else sent
+    if SAYS.search(sent[-40:]):
+        return sent + "." + closing
+    return f"{sent},{closing} {credit} reports."
+
+
 def brief(groups, now):
     import autoupdate as au
     loc = now - timedelta(hours=4 if _dst(now) else 5)
@@ -865,16 +901,22 @@ def brief(groups, now):
     for g in groups[:16]:
         got = core_rows(g)
         rows = [r for r in (got[0] if got else []) if not VIDEO.search(r[3] + " " + r[2])]
-        if independent(rows) < MIN_OUTLETS:
+        if len(rows) < MIN_OUTLETS:
             continue
-        r = rows[0]
-        line = f"{au.clean_outlet(r[1])} reports: {clean(r[2]).rstrip('.')}."
+        with ThreadPoolExecutor(6) as ex:
+            list(ex.map(lambda r: page_info(r[3]), rows[:10]))
+        groups_ = report_groups(rows[:10])
+        if len(groups_) < MIN_OUTLETS:
+            continue
+        # the most widely carried report (the wire story run everywhere, else the first posted)
+        lead = max(groups_, key=lambda x: (len(x), -x[0][0].timestamp()))
+        line = spoken_line(rows, lead)
         (ca if au.CANADA.search(" ".join(x[2] for x in rows[:4])) else other).append(line)
     stories = (ca[:4] + other[:3])[:6]
     if len(stories) < 3:
         return None
     lines = [{"morning": "Good morning.", "afternoon": "Good afternoon."}.get(part, "Good evening.") + " I’m Hannah Thibedeau, and this is your Palindrome News brief."]
-    lines += [x.replace("'", "’") for x in stories]
+    lines += stories
     lines.append("That’s your brief. We’ll keep watching, so you don’t have to.")
     return {"edition": edition, "lines": lines}
 
