@@ -14,6 +14,24 @@
 @media (prefers-reduced-motion: reduce) { #autoBreaking .ab-reps-tog svg { transition: none; } }
 /* One design for the three panels on a top story (Hannah, Thu Oct 29, 2026: "I like the way you have a box around
    connected to this story. do that for what each newsroom reports too so it looks more cohesive ... make it stand out") */
+/* Canadian sections stand out (Hannah, Thu Oct 29, 2026: "make every canadian section stand out in some way ... it
+   has to be written into the code"). markCanada() in the page script decides which sections are Canadian. */
+:root { --ca-red: #D80621; --ca-tint: rgba(216, 6, 33, .045); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --ca-red: #FF5A6B; --ca-tint: rgba(255, 90, 107, .07); } }
+:root[data-theme="dark"] { --ca-red: #FF5A6B; --ca-tint: rgba(255, 90, 107, .07); }
+.ca-sec { background: linear-gradient(var(--ca-tint), var(--ca-tint)); box-shadow: 0 0 0 16px var(--ca-tint); border-radius: 2px; }
+.ca-sec > .band-head, .ca-sec.front > h3, #sec-canada > h3 { border-top-color: var(--ca-red) !important; }
+.ca-sec > .band-head { border-top-width: 4px; }
+.ca-sec.front > h3 { border-top: 4px solid var(--ca-red); padding-top: 10px; justify-content: flex-start; align-items: center; }
+.ca-sec.front > h3 > small { margin-left: auto; }
+#sec-canada.ca-sec > h3 { border-top: 4px solid var(--ca-red) !important; }
+.ca-name .ca-leaf { margin-right: .2em; }
+.ca-name .ca-leaf { width: .8em; height: .8em; vertical-align: -.05em; }
+.ca-leaf { width: .95em; height: .95em; color: var(--ca-red); flex: 0 0 auto; vertical-align: -.1em; margin-right: .35em; }
+.ca-mark { display: inline-flex; align-items: center; }
+.ca-chip { display: inline-flex; align-items: center; gap: 5px; padding: 3px 9px; border-radius: 999px; background: #D80621; color: #FFFFFF; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; vertical-align: middle; margin-left: 8px; }
+.ca-chip .ca-leaf { color: #FFFFFF; margin: 0; width: 12px; height: 12px; }
+@media (max-width: 560px) { .ca-sec { box-shadow: 0 0 0 10px var(--ca-tint); } }
 .ab-reps, .rel-box, .ab-vids { background: rgba(15,11,25,.30) !important; border: 1px solid rgba(255,255,255,.16) !important; border-left: 4px solid #F2A7C3 !important;
   border-radius: 10px; padding: 4px 14px 10px !important; margin: 14px 0 !important; }
 .ab-vids { padding-top: 10px !important; }
@@ -6138,7 +6156,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     const fresh = !AUTO || AUTO.d.checked !== got[0].d.checked;
     AUTO = got[0];
     deadLinks();
-    if (fresh) { blogs(); wire(); try { autoTop(); if (window.PAL_orderTop) window.PAL_orderTop(); try { leadAuto(); } catch (e) { console.warn('lead', e); } } catch (e) { console.warn('autoTop', e); } try { clips(); ledes(); stamp(); papers(); eds(); canus(); try { geoHide(); } catch (e) { console.warn('geo', e); } brief(); bds(); otr(); live(); related(); try { canAngle(); canAngleLive(); } catch (e) { console.warn('canAngle', e); } mostRead(); smaller(); dazzle(); } catch (e) { console.warn('autopilot', e); } if (window.PAL_eventRender) try { window.PAL_eventRender(); } catch (e) {} if (window.PAL_renderFronts) try { window.PAL_renderFronts(); if (window.PAL_oneStoryOnePlace) window.PAL_oneStoryOnePlace(); } catch (e) { console.warn(e); } }
+    if (fresh) { blogs(); wire(); try { autoTop(); if (window.PAL_orderTop) window.PAL_orderTop(); try { leadAuto(); } catch (e) { console.warn('lead', e); } } catch (e) { console.warn('autoTop', e); } try { clips(); ledes(); stamp(); papers(); eds(); canus(); try { geoHide(); } catch (e) { console.warn('geo', e); } try { markCanada(); } catch (e) { console.warn('canada', e); } brief(); bds(); otr(); live(); related(); try { canAngle(); canAngleLive(); } catch (e) { console.warn('canAngle', e); } mostRead(); smaller(); dazzle(); } catch (e) { console.warn('autopilot', e); } if (window.PAL_eventRender) try { window.PAL_eventRender(); } catch (e) {} if (window.PAL_renderFronts) try { window.PAL_renderFronts(); if (window.PAL_oneStoryOnePlace) window.PAL_oneStoryOnePlace(); } catch (e) { console.warn(e); } }
     paint();
   }
   function blogs() {
@@ -6324,6 +6342,50 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     run();
     if (!geoObs) { let t = 0; geoObs = new MutationObserver(() => { clearTimeout(t); t = setTimeout(run, 300); }); geoObs.observe(document.body, { childList: true, subtree: true }); }
   }
+
+  // ===== Canadian sections stand out (Hannah, Thu Oct 29, 2026). A section is Canadian when it is Canadian by design
+  // (CA_ALWAYS) or when most of its links (60% or more, at least 4) go to Canadian newsrooms or governments. It gets a red
+  // maple leaf by its title, a Canada-red rule and a faint red tint; a Canadian top story gets a red "Canada" label.
+  // Runs on load and after every automatic update, so a mixed section (Business, World) is marked on days it is mostly Canadian.
+  const CA_ALWAYS = ['sec-canada', 'sec-politics', 'smaller', 'canus', 'mostread'];
+  const CA_NEVER = ['brief', 'developed', 'autoBreaking', 'breaking', 'bkEvent', 'liveCoverage', 'video', 'sponsors', 'about', 'newsletter', 'corrections', 'board', 'godeeper', 'sec-us', 'sec-world'];
+  const CA_COM = /(^|\.)(thestar|theglobeandmail|nationalpost|financialpost|torontosun|ottawacitizen|calgaryherald|edmontonjournal|vancouversun|montrealgazette|theprovince|leaderpost|thestarphoenix|winnipegfreepress|timescolonist|nationalobserver|hilltimes|cp24|globalnews|bnnbloomberg|ctvnews|nunatsiaq|yukon-news|nnsl|cabinradio|saltwire|castanet|ckom|cjme|medicinehatnews|lethbridgeherald|dailyhive|thecanadianpress|iheartradio|chch|cheknews|paherald|panow|insauga|readthemaple|sudbury|todayinbc)\.com$/;
+  const LEAF_SVG = '<svg class="ca-leaf" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2l1.6 3.2 1.8-.9-.6 4.3 2.4-2.3.6 1.6 3-.6-1 3.1 1.4.8-4.6 3.8.5 1.6-4.4-.8v4.7h-1.4v-4.7l-4.4.8.5-1.6L3 11.2l1.4-.8-1-3.1 3 .6.6-1.6 2.4 2.3-.6-4.3 1.8.9z"/></svg>';
+  const CA_TIE = /\b(Canad\w*|Ottawa|Carney|Poilievre|Ontario|Quebec|Québec|Alberta|British Columbia|B\.C\.|Manitoba|Saskatchewan|Nova Scotia|New Brunswick|Newfoundland|P\.E\.I\.|Yukon|Nunavut|N\.W\.T\.|Toronto|Montreal|Vancouver|Calgary|Edmonton|Winnipeg|Halifax|Ford|Eby|Legault|Danielle Smith|Kinew|RCMP|Stelco|Hoekstra)\b/;
+  function isCanadianUrl(u) { try { const h = new URL(u, location.href).hostname.replace(/^www\./, ''); return /\.ca$/.test(h) || CA_COM.test(h); } catch (e) { return false; } }
+  function markCanada() {
+    const secs = [...document.querySelectorAll('main section[id], section[id], .front[id]')];
+    secs.forEach((sec) => {
+      const id = sec.id;
+      if (!id || CA_NEVER.includes(id) || sec.closest('#autoBreaking, #breaking, #bkEvent')) return;
+      let ca = CA_ALWAYS.includes(id);
+      if (!ca) {
+        const links = [...sec.querySelectorAll('a[href^="http"]')].filter((a) => !/youtube\.com|youtu\.be/.test(a.href));
+        const n = links.length, c = links.filter((a) => isCanadianUrl(a.href)).length;
+        ca = n >= 4 && c / n >= 0.6;
+      }
+      sec.classList.toggle('ca-sec', ca);
+      const h = sec.matches('.front') ? sec.querySelector(':scope > h3') : sec.querySelector(':scope > .band-head h2, :scope > h2, :scope .band-head h2');
+      if (!h) return;
+      const at = h.querySelector('.ca-name') || h;  // the Canada desk: beside "Across Canada", not on its own line
+      const has = at.querySelector(':scope > .ca-leaf');
+      if (ca && !has) at.insertAdjacentHTML('afterbegin', LEAF_SVG);
+      if (!ca && has) has.remove();
+    });
+    // a Canadian top story: its own red "Canada" label beside Breaking / Developing
+    const A = (AUTO && AUTO.d && AUTO.d.auto && AUTO.d.auto.stories) || [];
+    document.querySelectorAll('#autoBreaking .ab-story').forEach((art) => {
+      const s = A.find((x) => x.key === art.dataset.key), tag = art.querySelector(':scope > .tag');
+      const want = !!(s && s.canada === 'canadian' && CA_TIE.test([s.title, s.summary].concat((s.reports || []).slice(0, 4).map((r) => r.title)).join(' '))), chip = art.querySelector(':scope > .ca-chip');
+      if (want && !chip && tag) tag.insertAdjacentHTML('afterend', '<span class="ca-chip">' + LEAF_SVG + 'Canada</span>');
+      if (!want && chip) chip.remove();
+    });
+  }
+  // again whenever the page redraws a section (the desks and top stories are drawn after load and on every update)
+  let caBusy = false, caT = 0;
+  const caRun = () => { if (caBusy) return; caBusy = true; try { markCanada(); } catch (e) { console.warn('canada', e); } setTimeout(() => { caBusy = false; }, 50); };
+  setTimeout(caRun, 800);
+  new MutationObserver(() => { if (caBusy) return; clearTimeout(caT); caT = setTimeout(caRun, 400); }).observe(document.body, { childList: true, subtree: true });
   function canus() {
     const el = document.getElementById('canusAuto'), C = AUTO.d.canus; if (!el || !C) return;
     const li = (r) => '<li><time>' + esc(r.t) + '</time><a href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(r.title) + '</a> <span class="o">' + esc(r.outlet) + ' &#8599;</span></li>';

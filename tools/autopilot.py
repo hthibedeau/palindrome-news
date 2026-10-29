@@ -1488,7 +1488,9 @@ def canada_tie(s, items, now, eds, papers, otr, canus_):
     if _angle(title, s.get("words") or [], mine, recent, eds, papers, otr, _pool(canus_), (s.get("words") or [])[:4]):
         return "tie"
     foreign = US_STORY.search(title) or (mine and sum(1 for x in mine if FOREIGN_SRC.search(x[3]) or au.US.search(x[1]) or au.WORLDO.search(x[1])) / len(mine) >= FOREIGN_SHARE)
-    return "none" if foreign else "canadian"
+    # a story that names no Canadian person, place or institution is not Canadian, even when only Canadian newsrooms
+    # carry it (Patrick Stewart's death was labelled and ranked as Canadian, Thu Oct 29, 2026): "general", no Canadian edge
+    return "none" if foreign else "general"
 
 
 # ===== A Canadian event happening live is the top news (Hannah, Thu Oct 29, 2026: "the breaking news is still not
