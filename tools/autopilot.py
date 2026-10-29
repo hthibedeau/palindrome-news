@@ -878,7 +878,15 @@ def spoken_line(rows, group):
     if 8 <= words_ <= 38 and on_topic and not re.search(r"\?$|^(?:Here|This|Watch|Listen|Read|Click|Sign|Get|Subscribe)\b", first):
         sent = first.rstrip(" .")
     else:
-        sent = LIVE_HEAD.sub("", clean(r[2])).strip(" .:")
+        # the news headline the other newsrooms agree with, not a feature or teaser headline
+        pool = [x for x in (rows or group) if not LIVE_HEAD.search(x[2])] or list(rows or group)
+        kk = lambda t: {k_ for k_ in gc.keys(t) | gc.names(t) if k_ not in WEAK}
+        best = max(pool, key=lambda x: (sum(len(kk(x[2]) & kk(y[2])) for y in pool if y is not x), -len(x[2])))
+        sent = LIVE_HEAD.sub("", clean(best[2])).strip(" .:")
+        r = best
+        credit = source_of(best) if source_of(best) in WIRE_NAMES else au.clean_outlet(best[1]).split(" / ")[0]
+        sent = re.sub(r"(^|[\s(“\"])'", r"\1‘", sent).replace("'", "’")
+        return f"{sent}, {credit} reports."
     sent = re.sub(r"(^|[\s(“\"])'", r"\1‘", sent).replace("'", "’")  # opening single quotes the right way round
     closing = ""
     m = re.search(r'[.,]?\s*(["”])$', sent)

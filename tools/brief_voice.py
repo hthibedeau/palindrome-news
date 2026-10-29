@@ -58,12 +58,45 @@ def best_window(src, want=10.0):
     return (best[1], best[2] - best[1]) if best else (0.0, want)
 
 
+INTRO = os.path.join(SAMPLES, "intro.m4a")  # Hannah saying "I'm Hannah Thibedeau, and this is your Palindrome News brief."
+INTRO_LINE = re.compile(r"I[’']m Hannah Thibedeau, and this is your Palindrome News brief\.?\s*$")
+
+
+def trimmed(src, dst, tmp_rate=24000):
+    """A clip with its silent edges removed, mono 24 kHz, steady level."""
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", src, "-ac", "1", "-ar", str(tmp_rate), "-af",
+                    "silenceremove=start_periods=1:start_threshold=-40dB:start_silence=0.08,areverse,"
+                    "silenceremove=start_periods=1:start_threshold=-40dB:start_silence=0.12,areverse,loudnorm=I=-20:TP=-2", dst], check=True)
+    return dst
+
+
+def clip_len(p):
+    r = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", p], capture_output=True, text=True)
+    return float(r.stdout.strip() or 0)
+
+
 def reference_wav(tmp):
-    files = sorted(f for f in glob.glob(os.path.join(SAMPLES, "*")) if re.search(r"\.(m4a|mp3|wav|aac|ogg|flac|caf|mp4|mov)$", f, re.I))
-    if not files:
+    """About 10 seconds of Hannah for the model to copy: her brief opening (intro.m4a, her on-air delivery) first,
+    then her steadiest stretch of the longer recording to make up the rest (Hannah, Thu Oct 29, 2026)."""
+    files = sorted(f for f in glob.glob(os.path.join(SAMPLES, "*")) if re.search(r"\.(m4a|mp3|wav|aac|ogg|flac|caf|mp4|mov)$", f, re.I) and f != INTRO)
+    if not files and not os.path.exists(INTRO):
         return None
     out = os.path.join(tmp, "ref.wav")
-    st, dur = best_window(files[0])
+    intro = trimmed(INTRO, os.path.join(tmp, "intro_ref.wav")) if os.path.exists(INTRO) else None
+    have = clip_len(intro) if intro else 0
+    if not files:
+        return intro
+    st, dur = best_window(files[0], want=max(4.0, 10.5 - have))
+    if intro:
+        body = os.path.join(tmp, "body_ref.wav")
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{max(0, st - 0.05):.2f}", "-i", files[0], "-t", f"{dur + 0.15:.2f}",
+                        "-ac", "1", "-ar", "24000", "-af", "loudnorm=I=-20:TP=-2", body], check=True)
+        gap = os.path.join(tmp, "ref_gap.wav")
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "lavfi", "-i", "anullsrc=r=24000:cl=mono", "-t", "0.3", gap], check=True)
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", intro, "-i", gap, "-i", body, "-filter_complex", "[0][1][2]concat=n=3:v=0:a=1", out], check=True)
+        print(f"reference: intro.m4a ({have:.1f}s) + {os.path.basename(files[0])} {st:.1f}s for {dur:.1f}s", flush=True)
+        return out
+    print(f"reference: {os.path.basename(files[0])} {st:.1f}s for {dur:.1f}s", flush=True)
     print(f"reference: {os.path.basename(files[0])} {st:.1f}s for {dur:.1f}s", flush=True)
     # mono 24 kHz, her best ~10 seconds, at a steady level
     r = subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{max(0, st - 0.05):.2f}", "-i", files[0], "-t", f"{dur + 0.15:.2f}",
@@ -133,7 +166,19 @@ def main():
     torch.set_num_threads(max(1, os.cpu_count() or 1))
     model = ChatterboxTTS.from_pretrained(device="cpu")
     parts = []
-    chunks = passages([speakable(x) for x in brief["lines"]])
+    lines = list(brief["lines"])
+    # The opening in Hannah's own recorded voice: only the greeting before it is generated
+    if os.path.exists(INTRO) and lines and INTRO_LINE.search(lines[0]):
+        greet = INTRO_LINE.sub("", lines[0]).strip()
+        if greet:
+            wav = model.generate(speakable(greet), audio_prompt_path=ref, exaggeration=0.5, cfg_weight=0.3)
+            p = os.path.join(tmp, "greet.wav"); torchaudio.save(p, wav, model.sr); parts.append(p)
+        real = os.path.join(tmp, "intro_real.wav")
+        trimmed(INTRO, real, model.sr)
+        parts.append(real)
+        lines = lines[1:]
+        print("opening: Hannah's own recording", flush=True)
+    chunks = passages([speakable(x) for x in lines])
     for i, text in enumerate(chunks):
         # settings that scored closest to Hannah in tests on her own recording (Thu Oct 29, 2026)
         wav = model.generate(text, audio_prompt_path=ref, exaggeration=0.5, cfg_weight=0.3)
@@ -146,8 +191,10 @@ def main():
     gap = os.path.join(tmp, "gap.wav")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "lavfi", "-i", f"anullsrc=r={model.sr}:cl=mono", "-t", "0.5", gap], check=True)
     with open(lst, "w") as f:
+        short = os.path.join(tmp, "gap_short.wav")
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "lavfi", "-i", f"anullsrc=r={model.sr}:cl=mono", "-t", "0.2", short], check=True)
         for p in parts:
-            f.write(f"file '{p}'\nfile '{gap}'\n")
+            f.write(f"file '{p}'\nfile '{short if p.endswith('greet.wav') else gap}'\n")  # "Good afternoon." runs straight on
     os.makedirs(os.path.join(root, "live", "audio"), exist_ok=True)
     rel = f"live/audio/brief-{slug(brief['edition'])}.mp3"
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", lst, "-ac", "1", "-af", "loudnorm=I=-16:TP=-1.5",
