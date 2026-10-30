@@ -45,6 +45,10 @@ TOP_MAX = 3
 THIRD_FRESH_HOURS = 3   # the third story needs a report this recent ...
 THIRD_WEIGHT = 0.6      # ... and either a live event, Breaking-level coverage, or this share of the second story's weight
 MIN_THEME_OUTLETS = 2   # a running event Hannah named (lead_check.THEMES, e.g. the Canada-EU summit): two newsrooms
+# Stories Hannah is working on, kept at the top of the page until the time given (Eastern), whatever the ranking says,
+# as long as there is reporting on them (Hannah, Fri Oct 30, 2026: "I was working on the EU story and I can't see it
+# now"). Key: a running event's name in lead_check.THEMES. Add one to keep a story up; it lets go by itself.
+KEEP_TOP = {"Canada and the EU": "2026-10-30T23:59:00-04:00"}
 CLIP_HOURS = 36
 WEAK = set("""here's here’s what what's why how who when watch live breaking update updates opinion analysis says said new
 canada canadian canadians ottawa u.s us america american trump carney the a this that it's state states department
@@ -1661,6 +1665,29 @@ def _select(auto, cands, ranked, tier):
     # the newer development leads when the two are close (within 8 points): the top of the page is the latest news
     if len(top2) == 2 and (top2[0].get("weight") or 0) - (top2[1].get("weight") or 0) <= 8 and (top2[1].get("newest") or "") > (top2[0].get("newest") or ""):
         top2.reverse()
+    # a story Hannah is working on (KEEP_TOP) stays at the top while it has reporting
+    from datetime import datetime as _dt, timezone as _tz
+    for name in active_keeps(_dt.now(_tz.utc)):
+        k = next((s for s in top2 if s.get("theme") == name), None)
+        if k:  # already up: it leads
+            top2.remove(k); top2.insert(0, k)
+            continue
+        k = next((s for s in rest if s.get("theme") == name), None)
+        if k:
+            rest.remove(k)
+            if len(top2) >= TOP_MAX:
+                rest.insert(0, top2.pop())
+            top2.insert(0, k)
+    # a Canadian story with a live event on it, on air now or coming up within LIVE_SOON_HOURS (a news conference, an
+    # address, a vote), is always at the top until the event is over (Hannah, Fri Oct 30, 2026: "there's a press
+    # conference coming up at 12:30, so not sure why it disappeared. Write it into the code.")
+    for k in [x for x in rest if x.get("live") and tier(x) == 0]:
+        if any(t is k for t in top2):
+            continue
+        rest.remove(k)
+        if len(top2) >= TOP_MAX:
+            rest.insert(0, top2.pop())
+        top2.insert(0 if k["live"].get("state") == "now" else min(1, len(top2)), k)
     # a third top story when one more is big enough on its own (third_worthy), on any day
     if len(top2) == 2:
         for s in list(rest):
@@ -1677,7 +1704,7 @@ def _select(auto, cands, ranked, tier):
     # goes stale (Hannah, Wed Oct 28, 2026: "go through the whole page to ensure we have the top news at the top ...
     # update regularly")
     top_themes = {s.get("theme") for s in auto["stories"][:n_top] if s.get("theme")}
-    auto["more"] = [s for s in ranked[2:] if tier(s) < 2 and s not in auto["stories"] and not (s.get("theme") and s["theme"] in top_themes)][:3]
+    auto["more"] = [s for s in ranked[n_top:] if tier(s) < 2 and s not in auto["stories"] and not (s.get("theme") and s["theme"] in top_themes)][:3]
     auto["passed_over"] = [{"title": s["title"], "url": s["url"]} for s in cands if tier(s) == 2 and s not in ranked[:n_top]]
     # why each story is or isn't at the top (Hannah: "why is that not at the top of the news?")
     auto["considered"] = [{"title": s["title"], "url": s["url"], "rank": n + 1, "live": (s.get("live") or {}).get("title", ""), "weight": s.get("weight"), "score": s.get("score"), "independent": s.get("independent"), "most_read": s["popular"],
@@ -1760,7 +1787,10 @@ def pick_by_canada(auto, items, now, eds, papers, otr, canus_, mostread=None):
         s["us_election"] = us_election_breaking(s)
         if s["us_election"] and s["canada"] == "none":
             s["canada"] = "tie"
-    tier = lambda s: 2 if s["canada"] == "none" else 0
+    # Canadian stories first (Hannah, Fri Oct 30, 2026: the Canada-EU summit "should stay up top because it's
+    # Canadian"): tier 0 is Canadian news, the Canada-U.S. relationship and a Breaking U.S. election story (which gets
+    # its Canadian angle); tier 1 is news from abroad with a Canadian tie, and general news; tier 2, no Canadian tie.
+    tier = lambda s: 2 if s["canada"] == "none" else (0 if s["canada"] == "canadian" or s.get("canus") or s.get("us_election") else 1)
     # Within the tier: how big the story is right now. Newsroom coverage and National Newswatch / CBC placement (the
     # group's score), what Canadians are reading (most-read lists, weighted), and a Canadian story ahead of a story from
     # abroad of the same size (Hannah, Wed Oct 28, 2026: Winnipeg's new mayor and the Canada-EU summit were sitting below
@@ -2113,8 +2143,52 @@ def attach_reports(lv, items, now):
             ev["reports"] = got
 
 
+def gather_themes(items, groups, now):
+    """A running event (lead_check.THEMES, kept whole) is one story however it is reported. Every report in the feed
+    whose headline names both sides of the event goes into its group, and the event gets a group of its own when the
+    ranking split it into scraps too small to build (the Canada-EU summit dropped off the top that way, Fri Oct 30)."""
+    try:
+        import lead_check as lc
+    except Exception:
+        return groups
+    groups = list(groups)
+    for name, _, ra, rb in lc.THEMES:
+        if name in SPLIT_THEMES:
+            continue
+        rows = [(d, o, t, l) for d, o, t, l, _ in items if ra.search(t) and rb.search(t) and (now - d).total_seconds() < 24 * 3600]
+        if not rows:
+            continue
+        g = next((x for x in groups if x.get("theme") == name), None)
+        if g is None:
+            keep = name in active_keeps(now)
+            if len({o for _, o, _, _ in rows}) < MIN_THEME_OUTLETS:
+                continue
+            at = 0 if keep else min(len(groups), 8)
+            sc = (groups[0]["score"] + 1) if (keep and groups) else (groups[at - 1]["score"] if at and groups else 1)
+            g = {"rows": [], "theme": name, "score": sc, "n": set(), "lead": (rows[0][2], rows[0][3], rows[0][1])}
+            groups.insert(at, g)
+        have = {r[3] for r in g["rows"]}
+        g["rows"] = list(g["rows"]) + [r for r in rows if r[3] not in have]
+    return groups
+
+
+def active_keeps(now):
+    out = set()
+    for name, until in KEEP_TOP.items():
+        try:
+            if datetime.fromisoformat(until) > now:
+                out.add(name)
+        except Exception:
+            pass
+    return out
+
+
 def run(page, items, groups, breaking, now, imgdir, prev):
     res = {}
+    try:
+        groups = gather_themes(items, groups, now)
+    except Exception as e:
+        print("gather themes failed:", e)
     for name, f in [("auto", lambda: auto_stories(groups, page, breaking, now, imgdir, (prev.get("auto") or {}).get("stories", []))),
                     ("clips", lambda: clips(page, prev.get("clips", []), now)),
                     ("ledes", lambda: ledes(now, prev.get("ledes", []))),
