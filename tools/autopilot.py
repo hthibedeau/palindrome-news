@@ -114,7 +114,13 @@ def same_report(t1, t2):
     if re.sub(r"\W", "", t1.lower()) == re.sub(r"\W", "", t2.lower()):
         return True
     a, b = _words(t1), _words(t2)
-    return bool(a and b) and len(a & b) / len(a | b) >= 0.75
+    if not (a and b):
+        return False
+    # short headlines on the same news share most of their words even when written separately ("Star Trek actor
+    # Patrick Stewart dead at 86" at CBC, "Patrick Stewart, 'Star Trek: The Next Generation' actor, dead at 86" at
+    # Global): they must match almost exactly to count as one report
+    need = 0.9 if min(len(a), len(b)) < 9 else 0.75
+    return len(a & b) / len(a | b) >= need
 
 
 WIRE_NAMES = {"The Canadian Press", "The Associated Press", "Reuters", "AFP", "Bloomberg News"}
