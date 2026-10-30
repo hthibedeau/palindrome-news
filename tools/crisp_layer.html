@@ -42,6 +42,16 @@
 #autoBreaking .cr-fold:not(.cr-open) li:nth-child(n+4) { display: none; }
 #autoBreaking .cr-fold:not(.cr-open) .ab-d, #autoBreaking .cr-fold:not(.cr-open) .ab-also { display: none; }
 #autoBreaking .cr-more { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; margin: 4px 0 8px; padding: 0 14px; border: 1px solid rgba(255, 255, 255, .45); border-radius: 999px; background: none; color: #FFFFFF; font: 600 13px/1 inherit; cursor: pointer; position: relative; z-index: 3; }
+/* Tighter list headings (Hannah, Fri Oct 30, 2026: "put ... show all 8 stories to the side. Take out the additional
+   8 stories and Canada and the EU, just to make it tighter"): the heading on one line, the Show all button beside it,
+   no count pill and no topic line under it. */
+#autoBreaking .ab-story .rel-box .pn-n, #autoBreaking .ab-story .rel-box .pn-sub, #autoBreaking .ab-story .ab-reps .pn-n { display: none !important; }
+#autoBreaking .ab-story .cr-fold { position: relative; }
+#autoBreaking .ab-story .cr-fold > summary { padding-right: 104px; min-height: 34px !important; display: flex !important; align-items: center; white-space: nowrap; font-size: 12.5px !important; letter-spacing: .04em; overflow: hidden; }
+#autoBreaking .ab-story .cr-fold > summary svg { display: none !important; }
+#autoBreaking .ab-story .cr-fold > .cr-more { font-size: 12.5px !important; padding: 0 10px !important; }
+#autoBreaking .ab-story .cr-fold > summary * { white-space: nowrap; }
+#autoBreaking .ab-story .cr-fold > .cr-more { position: absolute; top: 12px; right: 0; margin: 0 !important; min-height: 32px; padding: 0 12px; white-space: nowrap; }
 /* 3. the videos as cards you swipe sideways */
 #autoBreaking .ab-vids ol { display: flex !important; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 2px 0 10px !important; margin: 0 !important; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
 #autoBreaking .ab-vids ol::-webkit-scrollbar { display: none; }
@@ -82,7 +92,7 @@
     const items = box.querySelectorAll('ol > li'); if (items.length <= 3) return;
     box.classList.add('cr-fold'); box.open = true;
     const b = document.createElement('button'); b.type = 'button'; b.className = 'cr-more';
-    const closed = 'Show all ' + items.length + ' ' + label + ' ▾', opened = 'Show fewer ▴';
+    const closed = 'Show all ' + items.length + ' ▾', opened = 'Show fewer ▴';
     b.textContent = closed;
     b.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); const on = box.classList.toggle('cr-open'); b.textContent = on ? opened : closed; });
     // the button sits at the top of the list, under its heading (Hannah, Fri Oct 30, 2026: "the show all eight stories
