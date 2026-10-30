@@ -32,29 +32,32 @@
 .ca-chip { display: inline-flex; align-items: center; gap: 5px; padding: 3px 9px; border-radius: 999px; background: #D80621; color: #FFFFFF; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; vertical-align: middle; margin-left: 8px; }
 .ca-chip .ca-leaf { color: #FFFFFF; margin: 0; width: 12px; height: 12px; }
 @media (max-width: 560px) { .ca-sec { box-shadow: 0 0 0 10px var(--ca-tint); } }
-/* The Canadian angle (Hannah, Thu Oct 29, 2026: "the red ribbon with some gold in it"): a Canada-red ribbon edged in
-   gold with a gold maple leaf, over a see-through panel so the story's own colour shows through (no white, no black).
-   Gold for the times and outlets, a fine gold frame, serif headlines. Same in light and dark mode. */
-.can-box { padding: 0 !important; border: 1px solid rgba(231, 194, 125, .55) !important; border-left: 1px solid rgba(231, 194, 125, .55) !important; border-radius: 10px !important;
-  background: rgba(255, 255, 255, .07) !important; color: #FFFFFF !important; overflow: hidden; box-shadow: 0 6px 20px rgba(20, 5, 15, .25); margin: 16px 0 18px !important; }
-.can-box .can-head { background: linear-gradient(135deg, #C8102E, #9E0B22); border-bottom: 2px solid #E7C27D; padding: 9px 14px 8px; }
-.can-box h4 { color: #FFFFFF !important; font-size: 12px !important; letter-spacing: .18em !important; margin: 0 !important; gap: 8px !important; }
-.can-box h4 svg { width: 17px !important; height: 17px !important; }
-.can-box h4 svg path { fill: #E7C27D; }
-.can-box .can-sub { margin: 2px 0 0 !important; color: #F3D9A4 !important; font-family: var(--serif); font-style: italic; font-size: 14px !important; }
-.can-box .can-body { padding: 2px 14px 8px; position: relative; }
+/* The Canadian angle (Hannah, Thu Oct 29, 2026: "the red ribbon with some gold in it" ... "it still doesn't seem to
+   stand out"): a solid Canada-red card framed in gold, so it reads at a glance against the purple story; a gold
+   header with a large maple leaf; white serif headlines; gold times and outlets. Same in light and dark mode. */
+.can-box { padding: 0 !important; border: 2px solid #E7C27D !important; border-radius: 12px !important;
+  background: linear-gradient(160deg, #D0122E 0%, #A80C24 55%, #8A0A1E 100%) !important; color: #FFFFFF !important; overflow: hidden;
+  box-shadow: 0 0 0 4px rgba(231, 194, 125, .18), 0 10px 28px rgba(20, 0, 10, .45); margin: 18px 0 20px !important; }
+.can-box .can-head { background: none; border-bottom: 1px solid rgba(231, 194, 125, .6); padding: 12px 16px 10px; display: grid; grid-template-columns: 38px 1fr; column-gap: 12px; row-gap: 1px; align-items: center; }
+.can-box .can-head::before { grid-row: 1 / span 2; }
+.can-box .can-head > h4, .can-box .can-head > .can-sub { grid-column: 2; }
+.can-box .can-head::before { content: ""; flex: 0 0 auto; width: 38px; height: 38px; border-radius: 50%; background: #E7C27D url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23A80C24' d='M12 2l1.6 3.2 1.8-.9-.6 4.3 2.4-2.3.6 1.6 3-.6-1 3.1 1.4.8-4.6 3.8.5 1.6-4.4-.8v4.7h-1.4v-4.7l-4.4.8.5-1.6L3 11.2l1.4-.8-1-3.1 3 .6.6-1.6 2.4 2.3-.6-4.3 1.8.9z'/%3E%3C/svg%3E") center / 24px no-repeat; box-shadow: 0 0 0 3px rgba(255,255,255,.18); }
+.can-box h4 { color: #F3D9A4 !important; font-size: 14px !important; letter-spacing: .2em !important; margin: 0 !important; gap: 8px !important; }
+.can-box h4 svg { display: none !important; }
+.can-box .can-sub { margin: 2px 0 0 !important; color: #FFFFFF !important; font-family: var(--serif); font-style: italic; font-size: 15px !important; opacity: .95; }
+.can-box .can-body { padding: 2px 16px 10px; position: relative; }
 .can-box .can-body > * { position: relative; }
-.can-box li { border-top: 1px solid rgba(231, 194, 125, .28) !important; padding: 10px 0 !important; }
+.can-box li { border-top: 1px solid rgba(231, 194, 125, .35) !important; padding: 11px 0 !important; }
 .can-box li:first-child { border-top: 0 !important; }
-.can-box li a { font-family: var(--serif); font-size: 16px; line-height: 1.3; color: #FFFFFF !important; text-decoration: none !important; }
-.can-box li:first-child a { font-size: 18px; font-weight: 600; }
+.can-box li a { font-family: var(--serif); font-size: 17px; line-height: 1.3; color: #FFFFFF !important; text-decoration: none !important; }
+.can-box li:first-child a { font-size: 20px; font-weight: 600; }
 @media (hover: hover) { .can-box li a:hover { text-decoration: underline !important; text-decoration-color: #E7C27D; text-underline-offset: 3px; } }
-.can-box time, .can-box .rk { display: block !important; min-width: 0 !important; margin-bottom: 2px; font-size: 11px !important; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: #E7C27D !important; }
+.can-box time, .can-box .rk { display: block !important; min-width: 0 !important; margin-bottom: 3px; font-size: 11px !important; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #F3D9A4 !important; }
 .can-box .rk.us { color: #F3D9A4 !important; display: inline !important; }
-.can-box .o { font-variant: small-caps; letter-spacing: .05em; font-size: 13px !important; color: #F3D9A4 !important; white-space: nowrap; }
-.can-box .can-note { margin: 6px 0 0 !important; padding-top: 8px; border-top: 1px solid rgba(231, 194, 125, .28); font-size: 11px !important; color: rgba(255, 255, 255, .65) !important; }
+.can-box .o { font-variant: small-caps; letter-spacing: .05em; font-size: 14px !important; color: #F3D9A4 !important; white-space: nowrap; }
+.can-box .can-note { margin: 6px 0 0 !important; padding-top: 8px; border-top: 1px solid rgba(231, 194, 125, .35); font-size: 11px !important; color: rgba(255, 255, 255, .75) !important; }
 /* outside a dark story band (e.g. the lead slot on a light page), the same ribbon over a deep wine panel */
-section.lead .can-box { background: #4A1630 !important; }
+
 .can-mini { background: rgba(74, 22, 48, .92) !important; color: #FFFFFF !important; border-left: 3px solid #E7C27D !important; }
 .can-mini summary { color: #E7C27D !important; } .can-mini li a { color: #FFFFFF !important; } .can-mini li .o, .can-mini summary span { color: #F3D9A4 !important; }
 .can-mini li { border-top-color: rgba(231, 194, 125, .25) !important; }
