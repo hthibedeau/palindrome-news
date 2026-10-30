@@ -9,3 +9,13 @@ Optional clips that make the brief more fully hers (name the file exactly; any o
 - signoff: "That's your brief. We'll keep watching, so you don't have to."
 - brief-read: Hannah reading a whole brief (a few stories) on air, 30-60 seconds; it becomes the reference the voice
   model copies her delivery from, ahead of hannah.m4a
+
+Fri Oct 30, 2026 — Hannah's full recording, cut into:
+- open-morning / open-afternoon / open-evening: the whole opening line, greeting + "I'm Hannah Thibedeau, and this is your
+  Palindrome News brief.", exactly as she said it (night briefs use open-evening)
+- good-morning / good-afternoon / good-evening: the greetings alone
+- credit-the-canadian-press / credit-cbc-news / credit-ctv-news / credit-the-associated-press: "… reports." in her voice;
+  a story credited to one of these ends with her real credit. Add more as credit-<outlet-name>.m4a (e.g. credit-global-news)
+- signoff: "That's your brief. We'll keep watching, so you don't have to."
+- brief-read: her four stories read on air (the stumble removed). The voice model copies her delivery from her best
+  ~12 seconds of it, nothing else.

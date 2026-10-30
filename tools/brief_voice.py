@@ -91,13 +91,19 @@ def clip_len(p):
 def reference_wav(tmp):
     """About 10 seconds of Hannah for the model to copy: her brief opening (intro.m4a, her on-air delivery) first,
     then her steadiest stretch of the longer recording to make up the rest (Hannah, Thu Oct 29, 2026)."""
-    own = {INTRO} | {clip(n) for n in list(GREETS.values()) + [SIGNOFF]}
+    own = {INTRO} | {clip(n) for n in list(GREETS.values()) + [SIGNOFF]} | set(glob.glob(os.path.join(SAMPLES, "open-*"))) | set(glob.glob(os.path.join(SAMPLES, "credit-*")))
     files = sorted(f for f in glob.glob(os.path.join(SAMPLES, "*")) if re.search(r"\.(m4a|mp3|wav|aac|ogg|flac|caf|mp4|mov)$", f, re.I) and f not in own)
     if clip(STYLE):  # her own brief read: the delivery to copy
         files = [clip(STYLE)] + [f for f in files if f != clip(STYLE)]
     if not files and not os.path.exists(INTRO):
         return None
     out = os.path.join(tmp, "ref.wav")
+    if clip(STYLE):  # her brief read (Fri Oct 30, 2026): her best ~10 seconds of story delivery, nothing else
+        st, dur = best_window(clip(STYLE), want=10.5)
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{max(0, st - 0.05):.2f}", "-i", clip(STYLE), "-t", f"{dur + 0.15:.2f}",
+                        "-ac", "1", "-ar", "24000", "-af", "loudnorm=I=-20:TP=-2", out], check=True)
+        print(f"reference: brief-read.m4a {st:.1f}s for {dur:.1f}s", flush=True)
+        return out
     intro = trimmed(INTRO, os.path.join(tmp, "intro_ref.wav")) if os.path.exists(INTRO) else None
     have = clip_len(intro) if intro else 0
     if not files:
@@ -181,49 +187,75 @@ def main():
         return print("VOICE_SKIPPED voice model not installed:", e)
     torch.set_num_threads(max(1, os.cpu_count() or 1))
     model = ChatterboxTTS.from_pretrained(device="cpu")
-    parts = []
+    parts, gaps = [], []   # gaps[k]: the pause after parts[k], in seconds
+
+    def add(p, pause=0.5):
+        parts.append(p); gaps.append(pause)
+
+    def real(name, tag):
+        p = os.path.join(tmp, f"{len(parts):02d}_{tag}.wav")
+        trimmed(clip(name), p, model.sr)
+        return p
+
+    def say(text, tag):
+        wav = model.generate(text, audio_prompt_path=ref, exaggeration=0.5, cfg_weight=0.3)
+        p = os.path.join(tmp, f"{len(parts):02d}_{tag}.wav")
+        torchaudio.save(p, wav, model.sr)
+        return p
     lines = list(brief["lines"])
-    # The opening in Hannah's own recorded voice: only the greeting before it is generated
-    if os.path.exists(INTRO) and lines and INTRO_LINE.search(lines[0]):
+    # The opening in Hannah's own voice (Fri Oct 30, 2026 recording): the whole "Good afternoon. I'm Hannah Thibedeau,
+    # and this is your Palindrome News brief." as she said it, else her greeting + her intro
+    if lines and INTRO_LINE.search(lines[0]):
         greet = INTRO_LINE.sub("", lines[0]).strip()
-        if greet and clip(GREETS.get(greet, "")):
-            p = os.path.join(tmp, "greet.wav"); trimmed(clip(GREETS[greet]), p, model.sr); parts.append(p)
-            print("greeting: Hannah's own recording", flush=True)
-        elif greet:
-            wav = model.generate(speakable(greet), audio_prompt_path=ref, exaggeration=0.5, cfg_weight=0.3)
-            p = os.path.join(tmp, "greet.wav"); torchaudio.save(p, wav, model.sr); parts.append(p)
-        real = os.path.join(tmp, "intro_real.wav")
-        trimmed(INTRO, real, model.sr)
-        parts.append(real)
+        part = {"Good morning.": "morning", "Good afternoon.": "afternoon"}.get(greet, "evening")
+        if clip("open-" + part):
+            add(real("open-" + part, "open"), 0.6)
+            print("opening: Hannah's own recording (open-%s)" % part, flush=True)
+        else:
+            if greet and clip(GREETS.get(greet, "")):
+                add(real(GREETS[greet], "greet"), 0.2)
+            elif greet:
+                add(say(speakable(greet), "greet"), 0.2)
+            if os.path.exists(INTRO):
+                p = os.path.join(tmp, "intro_real.wav"); trimmed(INTRO, p, model.sr); add(p, 0.6)
         lines = lines[1:]
-        print("opening: Hannah's own recording", flush=True)
     tail = None
     if lines and clip(SIGNOFF) and re.match(r"That[’']s your brief", lines[-1]):
-        tail = os.path.join(tmp, "zz_signoff.wav"); trimmed(clip(SIGNOFF), tail, model.sr)
+        tail = SIGNOFF
         lines = lines[:-1]
-        print("sign-off: Hannah's own recording", flush=True)
-    chunks = passages([speakable(x) for x in lines])
-    for i, text in enumerate(chunks):
-        # settings that scored closest to Hannah in tests on her own recording (Thu Oct 29, 2026)
-        wav = model.generate(text, audio_prompt_path=ref, exaggeration=0.5, cfg_weight=0.3)
-        p = os.path.join(tmp, f"{i:02d}.wav")
-        torchaudio.save(p, wav, model.sr)
-        parts.append(p)
-        print(f"passage {i + 1}/{len(chunks)} done", flush=True)
+    # Each story: the sentence in her copied voice, then the credit in her real voice when she has recorded it
+    # ("…, The Canadian Press reports." -> generated sentence + credit-the-canadian-press.m4a)
+    for i, line in enumerate(lines):
+        m = re.match(r"^(.*?),?\s*([”\"]?)\s*((?:The )?[A-Z][\w.&’' -]{1,40}?) reports\.\s*$", line)
+        cname = "credit-" + slug(m.group(3)) if m else ""
+        if m and clip(cname):
+            body = m.group(1).rstrip(" ,") + (m.group(2) or "") + "."
+            add(say(speakable(body), f"s{i}"), 0.3)
+            add(real(cname, f"c{i}"), 0.65)
+            print(f"story {i + 1}/{len(lines)}: her own credit ({cname})", flush=True)
+        else:
+            add(say(speakable(line), f"s{i}"), 0.65)
+            print(f"story {i + 1}/{len(lines)} done", flush=True)
     if tail:
-        parts.append(tail)
+        add(real(SIGNOFF, "signoff"), 0.0)
+        print("sign-off: Hannah's own recording", flush=True)
     # join with a short pause between lines, then mp3
     lst = os.path.join(tmp, "list.txt")
     gap = os.path.join(tmp, "gap.wav")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "lavfi", "-i", f"anullsrc=r={model.sr}:cl=mono", "-t", "0.5", "-c:a", "pcm_s16le", gap], check=True)
     with open(lst, "w") as f:
-        short = os.path.join(tmp, "gap_short.wav")
-        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "lavfi", "-i", f"anullsrc=r={model.sr}:cl=mono", "-t", "0.2", "-c:a", "pcm_s16le", short], check=True)
+        pauses = {}
         for k, p in enumerate(parts):
-            # every piece in one format (16-bit, 24 kHz, mono): the model's audio and Hannah's own clip differ otherwise
+            # every piece in one format (16-bit, 24 kHz, mono) and one loudness, so her real clips and the copied voice match
             q = os.path.join(tmp, f"norm{k:02d}.wav")
-            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", p, "-ac", "1", "-ar", str(model.sr), "-c:a", "pcm_s16le", q], check=True)
-            f.write(f"file '{q}'\nfile '{short if p.endswith('greet.wav') else gap}'\n")  # "Good afternoon." runs straight on
+            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", p, "-ac", "1", "-ar", str(model.sr), "-af", "loudnorm=I=-20:TP=-2", "-ar", str(model.sr), "-c:a", "pcm_s16le", q], check=True)
+            f.write(f"file '{q}'\n")
+            g_ = gaps[k]
+            if g_ > 0:
+                if g_ not in pauses:
+                    pauses[g_] = os.path.join(tmp, f"pause{int(g_ * 100)}.wav")
+                    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "lavfi", "-i", f"anullsrc=r={model.sr}:cl=mono", "-t", str(g_), "-c:a", "pcm_s16le", pauses[g_]], check=True)
+                f.write(f"file '{pauses[g_]}'\n")
     os.makedirs(os.path.join(root, "live", "audio"), exist_ok=True)
     rel = f"live/audio/brief-{slug(brief['edition'])}.mp3"
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", lst, "-ac", "1", "-af", "loudnorm=I=-16:TP=-1.5",
