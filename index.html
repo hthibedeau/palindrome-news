@@ -7082,12 +7082,14 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
 (function () {
   const root = document.getElementById('autoBreaking'); if (!root) return;
   let busy = false;
-  function fold(box, label) {
+  function fold(box, label, always) {
     if (!box || box.classList.contains('cr-fold')) return;
-    const items = box.querySelectorAll('ol > li'); if (items.length <= 3) return;
+    // What each newsroom reports always has the button (Hannah, Fri Oct 30, 2026), even with three reports or fewer:
+    // folded, it shows each newsroom's headline; open, it adds what each one reports and who else ran it
+    const items = box.querySelectorAll('ol > li'); if (!items.length || (items.length <= 3 && !always)) return;
     box.classList.add('cr-fold'); box.open = true;
     const b = document.createElement('button'); b.type = 'button'; b.className = 'cr-more';
-    const closed = 'Show all ' + items.length + ' ▾', opened = 'Show fewer ▴';
+    const closed = (items.length > 3 ? 'Show all ' + items.length : 'Show all') + ' ▾', opened = 'Show fewer ▴';
     b.textContent = closed;
     b.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); const on = box.classList.toggle('cr-open'); b.textContent = on ? opened : closed; });
     // the button sits at the top of the list, under its heading (Hannah, Fri Oct 30, 2026: "the show all eight stories
@@ -7136,7 +7138,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
           }
         }
         // 1. fold the long lists
-        fold(art.querySelector(':scope > .rel-box'), 'stories'); fold(art.querySelector(':scope > .ab-reps'), 'reports');
+        fold(art.querySelector(':scope > .rel-box'), 'stories'); fold(art.querySelector(':scope > .ab-reps'), 'reports', true);
         // 3. video cards
         art.querySelectorAll(':scope > .ab-vids li').forEach((li) => {
           if (li.querySelector('.cr-thumb')) return;
