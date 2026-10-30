@@ -5006,23 +5006,31 @@ header.site { border-bottom: 0; }
 
   // Wall of clocks
   const clocks = [
-    ['Vancouver', 'America/Vancouver', 'B.C. votes', 'https://www.cbc.ca/news/canada/british-columbia/livestory/bc-municipal-election-results-live-updates-october-17-2026-9.7376955', false],
-    ['Edmonton', 'America/Edmonton', 'Wainwright', 'https://www.ctvnews.ca/edmonton/article/four-dead-dozens-wounded-in-cfb-wainwright-fire-pm-says-live-here/', true],
-    ['Ottawa', 'America/Toronto', 'Parliament', 'https://www.ctvnews.ca/politics/article/we-do-need-people-immigration-minister-teases-immigration-levels-will-be-going-up/', false],
-    ['Washington', 'America/New_York', 'Midterms', 'https://kentuckylantern.com/2026/10/17/trump-parachutes-to-ky-to-stump-for-republicans-in-safe-seats-give-gop-nod-in-tight-race/', false],
-    ['Kyiv', 'Europe/Kyiv', 'Power grid', 'https://www.newsweek.com/zelensky-russia-energy-attack-trump-sanctions-waiver-12583734', false],
-    ['Tehran', 'Asia/Tehran', 'Hormuz', 'https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats', false]
+    ['Vancouver', 'America/Vancouver', '', '', false],
+    ['Edmonton', 'America/Edmonton', '', '', false],
+    ['Ottawa', 'America/Toronto', '', '', false],
+    ['Washington', 'America/New_York', '', '', false],
+    ['Kyiv', 'Europe/Kyiv', '', '', false],
+    ['Tehran', 'Asia/Tehran', '', '', false]
   ];
   const lat = (u) => { try { return latestOf(u); } catch (e) { return u; } };
   function drawClocks() {
-    $('clocks').innerHTML = clocks.map(([c, tz, w, h, hot]) => {
+    $('clocks').innerHTML = clocks.map(([c, tz, w, h, hot, tip]) => {
       let t = '';
       try { t = new Date().toLocaleTimeString('en-CA', { hour: 'numeric', minute: '2-digit', timeZone: tz }).replace(/\s?([ap])\.?m\.?/i, ' <small>$1.m.</small>'); } catch (e) {}
-      return '<div class="clk' + (hot ? ' hot' : '') + '"><span class="city">' + esc(c) + '</span><span class="t">' + t + '</span><a class="cgo" href="' + esc(lat(h)) + '" target="_blank" rel="noopener">' + esc(w) + '</a></div>';
+      return '<div class="clk' + (hot ? ' hot' : '') + '"><span class="city">' + esc(c) + '</span><span class="t">' + t + '</span>' + (w && h ? '<a class="cgo" href="' + esc(lat(h)) + '" target="_blank" rel="noopener"' + (tip ? ' title="' + esc(tip) + '"' : '') + '>' + esc(w) + '</a>' : '') + '</div>';
     }).join('');
   }
   drawClocks();
   setInterval(drawClocks, 30000);
+  // each city's word comes from the news every run (tools/autopilot.py clock_topics; Hannah, Fri Oct 30, 2026: "The
+  // descriptors are out"): the topic of the biggest story there now, linked to its newest report, red when breaking.
+  // A city with no news in the last 18 hours shows only its time.
+  window.PAL_clocks = (C) => {
+    if (!Array.isArray(C)) return;
+    clocks.forEach((row) => { const c = C.find((x) => x.city === row[0]); row[2] = c ? c.w : ''; row[3] = c ? c.u : ''; row[4] = !!(c && c.hot); row[5] = c ? c.title + ' (' + c.outlet + ', ' + c.t + ')' : ''; });
+    drawClocks();
+  };
 
   // Story board
   const board = [
@@ -6258,7 +6266,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     const fresh = !AUTO || AUTO.d.checked !== got[0].d.checked;
     AUTO = got[0];
     deadLinks();
-    if (fresh) { blogs(); wire(); try { autoTop(); if (window.PAL_orderTop) window.PAL_orderTop(); try { leadAuto(); } catch (e) { console.warn('lead', e); } } catch (e) { console.warn('autoTop', e); } try { clips(); ledes(); stamp(); papers(); eds(); canus(); try { geoHide(); } catch (e) { console.warn('geo', e); } try { markCanada(); } catch (e) { console.warn('canada', e); } brief(); bds(); otr(); live(); related(); try { canAngle(); canAngleLive(); } catch (e) { console.warn('canAngle', e); } mostRead(); smaller(); dazzle(); } catch (e) { console.warn('autopilot', e); } if (window.PAL_eventRender) try { window.PAL_eventRender(); } catch (e) {} if (window.PAL_renderFronts) try { window.PAL_renderFronts(); if (window.PAL_oneStoryOnePlace) window.PAL_oneStoryOnePlace(); } catch (e) { console.warn(e); } }
+    if (fresh) { try { if (window.PAL_clocks && AUTO.d.clocks) window.PAL_clocks(AUTO.d.clocks); } catch (e) { console.warn('clocks', e); } blogs(); wire(); try { autoTop(); if (window.PAL_orderTop) window.PAL_orderTop(); try { leadAuto(); } catch (e) { console.warn('lead', e); } } catch (e) { console.warn('autoTop', e); } try { clips(); ledes(); stamp(); papers(); eds(); canus(); try { geoHide(); } catch (e) { console.warn('geo', e); } try { markCanada(); } catch (e) { console.warn('canada', e); } brief(); bds(); otr(); live(); related(); try { canAngle(); canAngleLive(); } catch (e) { console.warn('canAngle', e); } mostRead(); smaller(); dazzle(); } catch (e) { console.warn('autopilot', e); } if (window.PAL_eventRender) try { window.PAL_eventRender(); } catch (e) {} if (window.PAL_renderFronts) try { window.PAL_renderFronts(); if (window.PAL_oneStoryOnePlace) window.PAL_oneStoryOnePlace(); } catch (e) { console.warn(e); } }
     paint();
   }
   function blogs() {

@@ -2197,6 +2197,91 @@ def attach_reports(lv, items, now):
             ev["reports"] = got
 
 
+# The wall of clocks at the top of the page (Hannah, Fri Oct 30, 2026: "Vancouver, Edmonton, Ottawa, Washington,
+# Kyiv, Tehran. The descriptors are out. BC votes is old. Wainwright is old."). Every run, each city's word is the
+# topic of the biggest story there in the last CLOCK_HOURS, linked to its newest report; red when it is breaking. A city
+# with no news in that time shows only its time, never an old word.
+CLOCK_HOURS = 18
+CLOCK_CITIES = [  # city, the news that belongs to it
+    ("Vancouver", r"\b(B\.?C\.?|British Columbia|Vancouver|Victoria|Surrey|Burnaby|Richmond|Kelowna|Kamloops|Nanaimo|Abbotsford|Eby|Rustad)\b"),
+    ("Edmonton", r"\b(Alberta|Albertans?|Edmonton|Calgary|Red Deer|Lethbridge|Fort McMurray|Danielle Smith|Nenshi)\b"),
+    ("Ottawa", r"\b(Ottawa|Parliament|House of Commons|Senate of Canada|Carney|Poilievre|federal government|Liberals?|Conservatives|NDP|Bloc|Hill Times|Champagne|Anand|LeBlanc|Joly)\b"),
+    ("Washington", r"\b(Washington|White House|Trump|Vance|Congress|Senate|House Republicans|House Democrats|Pentagon|Supreme Court|midterms?|Election Day|U\.S\. election)\b"),
+    ("Kyiv", r"\b(Ukraine|Ukrainians?|Kyiv|Kiev|Zelensky|Zelenskyy|Kharkiv|Odesa|Dnipro|Lviv|Zaporizhzhia|Donbas|Donetsk|Kherson|Sumy)\b"),
+    ("Tehran", r"\b(Iran|Iranian|Tehran|Hormuz|Khamenei|Pezeshkian|Araghchi|IRGC)\b"),
+]
+# short topic words, checked in order against the story's headlines; the first that fits names the story
+CLOCK_TOPICS = [
+    (r"\b(Hormuz)\b", "Hormuz"), (r"\b(EU|European Union|von der Leyen)\b", "Canada–EU"), (r"\bsummit\b", "Summit"), (r"\bmidterms?\b", "Midterms"),
+    (r"\b(astronauts?|space station|Artemis|NASA|launch)\b", "Space"), (r"\b(privacy|data breach|hack\w*|cyber\w*)\b", "Privacy"),
+    (r"\b(by-?election|election|vote|votes|voting|ballots?|referendum|polls? close)\b", "{vote}"), (r"\bbudget\b", "Budget"), (r"\bfall economic statement\b", "Economic update"),
+    (r"\b(tariffs?|trade war|CUSMA|USMCA)\b", "Tariffs"), (r"\btrade\b", "Trade"),
+    (r"\b(ceasefire|truce)\b", "Ceasefire"), (r"\b(peace talks|talks)\b", "Talks"), (r"\bsanctions?\b", "Sanctions"),
+    (r"\b(power grid|energy|blackouts?|power plant)\b", "Power grid"), (r"\bdrones?\b", "Drone strikes"), (r"\bmissiles?\b", "Missile strikes"),
+    (r"\b(strikes?|attacks?|shelling|bombard\w*)\b", "Attacks"), (r"\bnuclear\b", "Nuclear"), (r"\b(oil|tankers?|shipping)\b", "Oil and shipping"),
+    (r"\b(wildfires?|fires?|blaze)\b", "Fire"), (r"\b(floods?|flooding)\b", "Flooding"), (r"\b(storm|snow|blizzard|hurricane)\b", "Storm"),
+    (r"\b(earthquake|quake)\b", "Earthquake"), (r"\b(shooting|shot dead|gunman)\b", "Shooting"), (r"\b(homicide|murder\w*|killed|death of|found dead|police|RCMP)\b", "Police"), (r"\b(stabbing|stabbed)\b", "Stabbing"),
+    (r"\b(protests?|rally|rallies|march)\b", "Protests"), (r"\b(strike mandate|walkout|lockout|on strike|union)\b", "Labour"),
+    (r"\b(trial|court|judge|verdict|sentenced|charged|charges)\b", "In court"), (r"\b(indicted|investigat\w*|probe)\b", "Investigation"),
+    (r"\b(inflation|interest rates?|rate cut|GDP|economy|jobs report|unemployment)\b", "Economy"),
+    (r"\b(hospital|health|doctors|nurses|vaccine|outbreak)\b", "Health"), (r"\b(housing|rent|homeless\w*)\b", "Housing"),
+    (r"\b(immigration|immigrants?|refugees?|deport\w*|ICE)\b", "Immigration"), (r"\b(bike lanes?|transit|highway|traffic)\b", "Transportation"),
+    (r"\b(school|teachers|students|universit\w+)\b", "Education"), (r"\b(budget|deficit|spending)\b", "Spending"),
+]
+
+
+def clock_topics(items, groups, now):
+    import autoupdate as au
+    out = []
+    for city, rx_ in CLOCK_CITIES:
+        rx = re.compile(rx_)
+        best = None
+        # the biggest story there: the highest-ranked story group with a recent headline about the place ...
+        # (the most newsrooms carrying it; features, analysis and opinion don't count)
+        top_n = 0
+        for g in (groups or [])[:40]:
+            rows = [r for r in g.get("rows") or [] if rx.search(r[2]) and (now - r[0]).total_seconds() < CLOCK_HOURS * 3600
+                    and not SPORT.search(r[2] + " " + r[3]) and not au.OPINION.search(r[2] + " " + r[3])
+                    and not re.match(r"\s*(Investigation|Analysis|Opinion|Explainer|Feature|Podcast|Watch|Video)\b\s*[:|]", r[2], re.I)]
+            n = len({au.clean_outlet(r[1]) for r in rows})
+            if n > top_n:
+                best, top_n = sorted(rows, reverse=True), n
+        # ... or else the newest headline about it in the feed
+        if not best:
+            rows = sorted([(d, o, t, l) for d, o, t, l, _ in items if rx.search(t) and (now - d).total_seconds() < CLOCK_HOURS * 3600
+                           and not SPORT.search(t + " " + l) and not au.OPINION.search(t + " " + l)], reverse=True)
+            best = rows[:1]
+        if not best:
+            continue
+        text = " ".join(r[2] for r in best[:6])
+        word = ""
+        for t_ in (best[0][2], text):  # the newest headline names it; failing that, the story's other headlines
+            for trx, name in CLOCK_TOPICS:
+                if re.search(trx, t_, re.I if not trx.startswith("\\b(EU") else 0):
+                    word = name
+                    break
+            if word:
+                break
+        if word == "{vote}":
+            word = "Election" if re.search(r"\belection\b", text, re.I) else "Referendum" if re.search(r"referendum", text, re.I) else "The vote"
+        if not word:  # the story's own leading name, as the headlines write it (a person, a company, a place)
+            from collections import Counter
+            c = Counter()
+            for r in best[:6]:
+                for m in re.finditer(r"(?<!^)(?<![.:?!] )\b([A-Z][\w’'.-]+(?: [A-Z][\w’'.-]+){0,2})", r[2]):
+                    x = m.group(1).strip(".’'")
+                    if not rx.search(x) and len(x) <= 22 and x not in ("Canada", "Canadian", "Canadians", "The", "A", "U.S.", "CBC", "CTV"):
+                        c[x] += 1
+            word = c.most_common(1)[0][0] if c else ""
+        if not word:
+            continue
+        lead = best[0]
+        outlets = {au.clean_outlet(r[1]) for r in best}
+        out.append({"city": city, "w": word, "u": lead[3], "title": clean(lead[2]), "outlet": au.clean_outlet(lead[1]), "t": w.eastern(lead[0]),
+                    "hot": (now - lead[0]).total_seconds() < 3600 and len(outlets) >= 3})
+    return out
+
+
 def gather_themes(items, groups, now):
     """A running event (lead_check.THEMES, kept whole) is one story however it is reported. Every report in the feed
     whose headline names both sides of the event goes into its group, and the event gets a group of its own when the
@@ -2249,7 +2334,8 @@ def run(page, items, groups, breaking, now, imgdir, prev):
                     ("papers", lambda: papers(page, now)), ("eds", lambda: editorials(page, now)),
                     ("canus", lambda: canus(items, now)), ("brief", lambda: brief(groups, now)),
                     ("otr", lambda: on_the_record(page, now)), ("mostread", lambda: most_read(now)),
-                    ("smaller", lambda: smaller(items, page, now, imgdir))]:
+                    ("smaller", lambda: smaller(items, page, now, imgdir)),
+                    ("clocks", lambda: clock_topics(items, groups, now))]:
         try:
             res[name] = f()
         except Exception as e:  # never block the run
