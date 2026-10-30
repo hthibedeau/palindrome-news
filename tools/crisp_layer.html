@@ -1,0 +1,155 @@
+<style id="crisp">
+/* Crisper Breaking and Developing (Hannah, Fri Oct 30, 2026: "What else would you suggest to make it crisper and
+   cleaner ... and visually appealing to the eye"). Shorter stories, the live strip up top, one line of tags, a byline,
+   the photo credit on the photo, fewer boxes, swipeable video cards, and a compact second story. */
+#autoBreaking .ab-story { position: relative; }
+/* 6. the photo credit sits on the photo */
+#autoBreaking .bart { position: relative; }
+#autoBreaking .bart > .cr-credit { position: absolute; right: 8px; bottom: 8px; z-index: 2; max-width: 70%; padding: 2px 8px; border-radius: 4px; background: rgba(10, 6, 20, .62); color: #FFFFFF; font-size: 11px; line-height: 1.4; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#autoBreaking .ab-story > .bart-cap.cr-moved { margin: -6px 0 14px !important; font-size: 12px !important; line-height: 1.4; opacity: .75; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+#autoBreaking .ab-second > .bart-cap { display: none !important; }
+#autoBreaking .ab-story > .bart { margin-bottom: 14px; }
+/* 4. one line of tags */
+#autoBreaking .cr-tags { display: flex; align-items: center; gap: 8px; flex-wrap: nowrap; overflow: hidden; margin: 0 0 10px; }
+#autoBreaking .cr-tags > * { flex: 0 0 auto; margin: 0 !important; white-space: nowrap; }
+#autoBreaking .cr-tags .fresh { font-size: 12px !important; padding: 3px 9px !important; }
+/* the headline and subheadline */
+#autoBreaking .ab-story > h2 { margin: 0 0 8px; }
+#autoBreaking .ab-sub { margin: 0 0 8px !important; }
+#autoBreaking .ab-sub .ab-cr { display: none; }
+/* 5. the byline: who has it latest, who had it first, how many newsrooms */
+#autoBreaking .cr-byline { margin: 0 0 16px; font-size: 13px; line-height: 1.5; color: #F6E1E8; }
+#autoBreaking .cr-byline a { color: #FFFFFF; font-weight: 600; text-decoration: none; position: relative; z-index: 2; }
+#autoBreaking .cr-byline .sep { opacity: .5; margin: 0 6px; }
+#autoBreaking .ab-story > .cov, #autoBreaking .ab-story > .first { display: none !important; }
+/* 2. the live strip right under the byline */
+#autoBreaking .cr-live { margin: 0 0 18px; border-radius: 10px; overflow: hidden; background: #FFFFFF; box-shadow: 0 6px 18px rgba(10, 0, 20, .3); }
+#autoBreaking .cr-live .ab-live { margin: 0 !important; border: 0 !important; border-radius: 0 !important; background: none !important; padding: 10px 12px !important; }
+#autoBreaking .cr-live .ab-live b { color: #B3122B !important; font-size: 15px !important; }
+#autoBreaking .cr-live .ab-live.on b { color: #D0122E !important; }
+#autoBreaking .cr-live .ab-live-what { color: #2B1B54 !important; font-size: 14px; }
+#autoBreaking .cr-live .ab-live-also { margin: 0 !important; padding: 7px 12px 9px; border-top: 1px solid #EEE6EF; font-size: 12px; color: #5F5878 !important; }
+#autoBreaking .cr-live .ab-live-also a { color: #2B1B54 !important; font-weight: 600; }
+#autoBreaking .cr-count { display: inline-block; margin-left: 6px; padding: 1px 7px; border-radius: 999px; background: #D0122E; color: #FFFFFF; font-size: 11px; font-weight: 700; letter-spacing: .04em; vertical-align: 1px; }
+/* 7. fewer boxes: the lists sit on the background with thin dividers; only the live strip and the Canadian angle are boxes */
+#autoBreaking .ab-story .ab-reps, #autoBreaking .ab-story .rel-box, #autoBreaking .ab-story .ab-vids { background: none !important; border: 0 !important; border-top: 1px solid rgba(255, 255, 255, .22) !important; border-radius: 0 !important; box-shadow: none !important; padding: 12px 0 4px !important; margin: 0 0 12px !important; }
+#autoBreaking .ab-story .ab-reps-tog { display: none !important; }
+#autoBreaking .ab-story .rel-box > summary, #autoBreaking .ab-story .ab-reps > summary { pointer-events: none; min-height: 0 !important; margin-bottom: 4px; }
+#autoBreaking .ab-story .rel-box li, #autoBreaking .ab-story .ab-reps li { border-top: 1px solid rgba(255, 255, 255, .12) !important; padding: 8px 0 !important; }
+#autoBreaking .ab-story .rel-box li:first-child, #autoBreaking .ab-story .ab-reps li:first-child { border-top: 0 !important; }
+#autoBreaking .ab-story .rel-box time, #autoBreaking .ab-story .ab-reps time { display: block !important; min-width: 0 !important; font-size: 11px !important; letter-spacing: .06em; text-transform: uppercase; opacity: .7; margin-bottom: 2px; }
+/* 1. fold the long lists: three lines, then "Show all" */
+#autoBreaking .cr-fold:not(.cr-open) li:nth-child(n+4) { display: none; }
+#autoBreaking .cr-fold:not(.cr-open) .ab-d, #autoBreaking .cr-fold:not(.cr-open) .ab-also { display: none; }
+#autoBreaking .cr-more { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; margin: 4px 0 0; padding: 0 14px; border: 1px solid rgba(255, 255, 255, .45); border-radius: 999px; background: none; color: #FFFFFF; font: 600 13px/1 inherit; cursor: pointer; position: relative; z-index: 3; }
+/* 3. the videos as cards you swipe sideways */
+#autoBreaking .ab-vids ol { display: flex !important; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 2px 0 10px !important; margin: 0 !important; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+#autoBreaking .ab-vids ol::-webkit-scrollbar { display: none; }
+#autoBreaking .ab-vids li { flex: 0 0 64%; max-width: 260px; scroll-snap-align: start; display: flex; flex-direction: column; gap: 6px; padding: 0 !important; border: 0 !important; border-radius: 10px; overflow: hidden; background: rgba(255, 255, 255, .08); }
+#autoBreaking .ab-vids .cr-thumb { position: relative; aspect-ratio: 16 / 9; background: linear-gradient(140deg, #5B2350, #2A1438); display: flex; align-items: center; justify-content: center; }
+#autoBreaking .ab-vids .cr-thumb img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+#autoBreaking .ab-vids .cr-thumb .cr-play { position: relative; width: 40px; height: 40px; border-radius: 50%; background: rgba(255, 255, 255, .92); display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 10px rgba(0, 0, 0, .3); }
+#autoBreaking .ab-vids .cr-thumb .cr-play::after { content: ""; margin-left: 3px; border-style: solid; border-width: 8px 0 8px 13px; border-color: transparent transparent transparent #B3122B; }
+#autoBreaking .ab-vids .cr-thumb .rk { position: absolute; left: 8px; top: 8px; margin: 0 !important; }
+#autoBreaking .ab-vids li > a { padding: 0 10px; font-size: 14px; line-height: 1.35; font-weight: 600; color: #FFFFFF; text-decoration: none; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+#autoBreaking .ab-vids li > .o { padding: 0 10px 10px; font-size: 12px; opacity: .75; }
+/* 8. the second story, compact: a small photo beside the headline, the rest a tap away */
+@media (max-width: 959px) {
+#autoBreaking .ab-second { display: grid; grid-template-columns: 1fr 112px; column-gap: 14px; align-items: start; }
+#autoBreaking .ab-second > * { grid-column: 1 / -1; }
+#autoBreaking .ab-second > .cr-tags { grid-column: 1; grid-row: 1; }
+#autoBreaking .ab-second > h2 { grid-column: 1; grid-row: 2; font-size: 21px !important; line-height: 1.2; }
+#autoBreaking .ab-second > .bart { grid-column: 2; grid-row: 1 / span 2; margin: 0 !important; border-radius: 8px; overflow: hidden; }
+#autoBreaking .ab-second > .bart .ph, #autoBreaking .ab-second > .bart img { aspect-ratio: 1 / 1; object-fit: cover; height: auto; }
+}
+@media (max-width: 959px) { #autoBreaking .ab-second > .bart > .cr-credit { display: none; } }
+#autoBreaking .ab-second .cr-tags .fresh { display: none; }
+#autoBreaking .ab-second .cr-tags { flex-wrap: wrap; row-gap: 6px; }
+#autoBreaking .ab-second:not(.cr-open) > :not(.bart):not(.cr-tags):not(h2):not(.ab-sub):not(.cr-byline):not(.cr-full) { display: none !important; }
+#autoBreaking .ab-second .ab-sub { font-size: 15px !important; }
+#autoBreaking .cr-full { justify-self: start; }
+#autoBreaking .ab-note { display: none; }
+@media (min-width: 960px) {
+  #autoBreaking .ab-vids li { flex-basis: 220px; }
+}
+</style>
+<script id="crisp-js">
+(function () {
+  const root = document.getElementById('autoBreaking'); if (!root) return;
+  let busy = false;
+  function fold(box, label) {
+    if (!box || box.classList.contains('cr-fold')) return;
+    const items = box.querySelectorAll('ol > li'); if (items.length <= 3) return;
+    box.classList.add('cr-fold'); box.open = true;
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'cr-more';
+    const closed = 'Show all ' + items.length + ' ' + label + ' ▾', opened = 'Show fewer ▴';
+    b.textContent = closed;
+    b.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); const on = box.classList.toggle('cr-open'); b.textContent = on ? opened : closed; });
+    box.appendChild(b);
+  }
+  function crisp() {
+    if (busy) return; busy = true;
+    try {
+      root.querySelectorAll('.ab-story').forEach((art, idx) => {
+        // 6. photo credit on the photo
+        const bart = art.querySelector(':scope > .bart'), cap = art.querySelector(':scope > .bart-cap');
+        if (bart && cap && !cap.classList.contains('cr-moved')) { const c = document.createElement('span'); c.className = 'cr-credit'; const t = cap.textContent.trim(), m = t.match(/(?:\(([^)]*)\)\s*)?[—-]\s*via\s+(.+)$/); c.textContent = m ? (m[1] ? m[1] + ' · ' : '') + m[2] : t; bart.appendChild(c); cap.classList.add('cr-moved'); const rest = m ? t.slice(0, m.index).trim() : ''; if (!rest || /^Photo\.?$/i.test(rest)) cap.style.display = 'none'; else cap.textContent = rest; }
+        // 4. one line of tags
+        const h2 = art.querySelector(':scope > h2'); if (!h2) return;
+        let tags = art.querySelector(':scope > .cr-tags');
+        if (!tags) { tags = document.createElement('div'); tags.className = 'cr-tags'; h2.before(tags); }
+        art.querySelectorAll(':scope > .tag, :scope > .fresh, :scope > .ca-chip').forEach((x) => tags.appendChild(x));
+        const fr = tags.querySelector('.fresh'); if (fr) fr.childNodes.forEach((n) => { if (n.nodeType === 3) n.textContent = n.textContent.replace(/Newest report\s*/i, ''); });
+        // 5. the byline
+        const sub = art.querySelector(':scope > .ab-sub');
+        if (!art.querySelector(':scope > .cr-byline')) {
+          const first = art.querySelector(':scope > .first'), cov = art.querySelector(':scope > .cov'), reps = art.querySelector(':scope > .ab-reps');
+          const by = document.createElement('p'); by.className = 'cr-byline';
+          const parts = [];
+          if (first) { const links = first.querySelectorAll('a'); const txt = first.textContent;
+            const lt = (txt.match(/LATEST[^·]*·\s*([^\n]*?)(?:First reported|$)/) || [])[1];
+            const ft = (txt.match(/First reported by[^·]*·\s*(.*)$/) || [])[1];
+            if (links[0]) parts.push('Latest: <a href="' + links[0].href + '" target="_blank" rel="noopener">' + links[0].textContent + '</a>' + (lt ? ' ' + lt.trim() : ''));
+            if (links[1]) parts.push('First: <a href="' + links[1].href + '" target="_blank" rel="noopener">' + links[1].textContent + '</a>' + (ft ? ' ' + ft.trim() : '')); }
+          const n = reps && (reps.querySelector('.pn-n') || {}).textContent; if (n) parts.push(n.trim());
+          if (parts.length) { by.innerHTML = parts.join('<span class="sep">·</span>'); (sub || h2).after(by); }
+        }
+        const by = art.querySelector(':scope > .cr-byline');
+        // 2. the live strip right under the byline
+        const live = art.querySelector(':scope > .ab-live');
+        if (live && !art.querySelector(':scope > .cr-live')) {
+          const box = document.createElement('div'); box.className = 'cr-live'; (by || sub || h2).after(box); box.appendChild(live);
+          const also = art.querySelector(':scope > .ab-live-also'); if (also) box.appendChild(also);
+          const m = live.textContent.match(/(\d{1,2}):(\d{2})\s*([ap])\.?m/i);
+          if (m && !live.classList.contains('on')) {
+            const b = live.querySelector('b'), now = new Date(), et = new Date(now.toLocaleString('en-US', { timeZone: 'America/Toronto' }));
+            let h = +m[1] % 12 + (/p/i.test(m[3]) ? 12 : 0); const t = new Date(et); t.setHours(h, +m[2], 0, 0);
+            const mins = Math.round((t - et) / 60000);
+            if (b && mins > 0 && mins < 600) { const c = document.createElement('span'); c.className = 'cr-count'; c.textContent = mins < 60 ? 'in ' + mins + ' min' : 'in ' + Math.floor(mins / 60) + ' h ' + (mins % 60) + ' min'; b.appendChild(c); }
+          }
+        }
+        // 1. fold the long lists
+        fold(art.querySelector(':scope > .rel-box'), 'stories'); fold(art.querySelector(':scope > .ab-reps'), 'reports');
+        // 3. video cards
+        art.querySelectorAll(':scope > .ab-vids li').forEach((li) => {
+          if (li.querySelector('.cr-thumb')) return;
+          const a = li.querySelector('a'), rk = li.querySelector('.rk'); if (!a) return;
+          const th = document.createElement('a'); th.className = 'cr-thumb'; th.href = a.href; th.target = '_blank'; th.rel = 'noopener'; th.setAttribute('aria-hidden', 'true'); th.tabIndex = -1;
+          const yt = (a.href.match(/(?:youtu\.be\/|v=)([\w-]{11})/) || [])[1];
+          th.innerHTML = (yt ? '<img src="https://i.ytimg.com/vi/' + yt + '/mqdefault.jpg" alt="" onerror="this.remove()">' : '') + '<span class="cr-play"></span>';
+          if (rk) th.appendChild(rk); li.prepend(th);
+        });
+        // 8. the second story, compact
+        if (art.classList.contains('ab-second') && !art.querySelector(':scope > .cr-full')) {
+          const b = document.createElement('button'); b.type = 'button'; b.className = 'cr-more cr-full'; b.textContent = 'Full story ▾';
+          b.addEventListener('click', (e) => { e.preventDefault(); const on = art.classList.toggle('cr-open'); b.textContent = on ? 'Less ▴' : 'Full story ▾'; });
+          art.appendChild(b);
+        }
+      });
+    } catch (e) { console.warn('crisp', e); }
+    setTimeout(() => { busy = false; }, 60);
+  }
+  crisp(); setTimeout(crisp, 1500); setTimeout(crisp, 4000);
+  new MutationObserver(() => { if (!busy) { clearTimeout(crisp.t); crisp.t = setTimeout(crisp, 120); } }).observe(root, { childList: true, subtree: true });
+})();
+</script>
