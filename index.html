@@ -182,6 +182,13 @@ a.snimg { display: block; }
 .ca-leaf { width: 1.05em !important; height: 1.05em !important; vertical-align: -.15em !important; }
 .ca-sec > .band-head, .ca-sec.front > h3, #sec-canada.ca-sec > h3, #sec-canada > h3 { border-top-width: 2px !important; border-top-color: var(--ca-red) !important; }
 .ca-chip { background: var(--ca-red) !important; letter-spacing: .04em !important; text-transform: none !important; font-size: 12px !important; font-weight: 600 !important; }
+/* The "Canada" label on a Breaking story (Hannah's screenshot, Fri Oct 30, 2026): in dark mode the raspberry turned pale
+   pink and the white word and tiny leaf washed out. On the dark story band it is now a white pill with raspberry type and
+   a full-size leaf, matching the white Breaking tag beside it, in light and dark mode alike. Hannah: "this one shouldn't
+   have veins in it and needs to be more distinguishable ... but I love it in the other ones": a solid leaf in the label only. */
+.ca-chip .ca-leaf path { mask: none !important; -webkit-mask: none !important; }
+#autoBreaking .ca-chip, .breaking .ca-chip, .bk-event .ca-chip { background: #FFFFFF !important; color: #9C2F48 !important; font-size: 13px !important; font-weight: 700 !important; padding: 4px 12px 4px 9px !important; gap: 6px !important; }
+#autoBreaking .ca-chip .ca-leaf, .breaking .ca-chip .ca-leaf, .bk-event .ca-chip .ca-leaf { color: #B23A55 !important; width: 20px !important; height: 20px !important; opacity: 1 !important; vertical-align: -.2em !important; }
 .can-box { background: #FBF1F4 !important; color: #2B1B54 !important; border: 0 !important; border-left: 4px solid #B23A55 !important;
   box-shadow: 0 8px 22px rgba(20, 0, 20, .35) !important; }
 .can-box .can-head { border-bottom: 1px solid rgba(178, 58, 85, .22) !important; }
