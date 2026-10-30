@@ -1,6 +1,6 @@
 {
- "checked": "2026-10-30T06:22:04.411375+00:00",
- "checkedLabel": "Fri 2:22 a.m.",
+ "checked": "2026-10-30T06:32:04.816658+00:00",
+ "checkedLabel": "Fri 2:32 a.m.",
  "stories": [
   {
    "key": "top",
@@ -61,6 +61,24 @@
   }
  ],
  "wire": [
+  [
+   "Fri 2:30 a.m.",
+   "U.S.",
+   "Trump visits South Carolina, Peltola speaks out and more from the trail",
+   "CBS News",
+   "https://www.cbsnews.com/live-updates/2026-elections-midtems-house-senate-trump/",
+   "2026-10-30T06:30:36+00:00",
+   1
+  ],
+  [
+   "Fri 2:28 a.m.",
+   "World",
+   "Australian court says mushroom poison murderer should never be released from prison",
+   "CBC News",
+   "https://www.cbc.ca/news/world/erin-patterson-mushroom-poison-murder-prison-9.7402361",
+   "2026-10-30T06:28:46.726000+00:00",
+   2
+  ],
   [
    "Fri 2:10 a.m.",
    "World",
@@ -140,7 +158,7 @@
    "The Guardian",
    "https://www.theguardian.com/australia-news/2026/oct/29/erin-patterson-mushroom-murders-appeal-ruling-ntwnfb",
    "2026-10-30T05:31:26+00:00",
-   2
+   1
   ],
   [
    "Fri 1:25 a.m.",
@@ -163,7 +181,7 @@
   [
    "Fri 1:15 a.m.",
    "World",
-   "Crypto giant Binance hit by hack suspected to be largest in history",
+   "Crypto giant Binance hit by $6.3bn hack suspected to be largest in history",
    "BBC News",
    "https://www.bbc.co.uk/news/articles/cwg7xp8kx4v5o?at_medium=RSS&at_campaign=rss",
    "2026-10-30T05:15:16+00:00",
@@ -224,15 +242,6 @@
    1
   ],
   [
-   "Fri 1:00 a.m.",
-   "U.S.",
-   "Trump visits South Carolina, Peltola speaks out and more from the trail",
-   "CBS News",
-   "https://www.cbsnews.com/live-updates/2026-elections-midtems-house-senate-trump/",
-   "2026-10-30T05:00:02+00:00",
-   1
-  ],
-  [
    "Fri 12:56 a.m.",
    "Latest",
    "3 dead in midair crash of 2 helicopters near Oregon airport: Sheriff",
@@ -276,15 +285,6 @@
    "https://www.nbcnews.com/pop-culture/pop-culture-news/patrick-stewart-ian-mckellen-friendship-surpassed-stage-screen-rcna606446",
    "2026-10-30T04:19:49+00:00",
    2
-  ],
-  [
-   "Fri 12:14 a.m.",
-   "U.S.",
-   "A midterm crossroads for both parties eyeing the beginning of the end of the Trump era",
-   "The Canadian Press (via Winnipeg Free Press)",
-   "https://www.winnipegfreepress.com/world/2026/10/29/a-midterm-crossroads-for-both-parties-eyeing-the-beginning-of-the-end-of-the-trump-era",
-   "2026-10-30T04:14:41+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -353,28 +353,10 @@
   },
   {
    "score": 11,
-   "title": "Criminal probe, Trump administration protest: Explaining Alaska's Dan Sullivan ballot controversy",
-   "url": "https://www.cbc.ca/news/world/us-alaska-dan-sullivan-midterms-controversy-9.7400742",
+   "title": "Trump visits South Carolina, Peltola speaks out and more from the trail",
+   "url": "https://www.cbsnews.com/live-updates/2026-elections-midtems-house-senate-trump/",
    "outlets": 9,
    "why": [],
-   "theme": ""
-  },
-  {
-   "score": 10,
-   "title": "Crypto giant Binance hit by hack suspected to be largest in history",
-   "url": "https://www.bbc.co.uk/news/articles/cwg7xp8kx4v5o?at_medium=RSS&at_campaign=rss",
-   "outlets": 8,
-   "why": [],
-   "theme": ""
-  },
-  {
-   "score": 9,
-   "title": "Star Trek actor Patrick Stewart dead at 86",
-   "url": "https://www.cbc.ca/news/entertainment/star-trek-patrick-stewart-dead-9.7401818",
-   "outlets": 6,
-   "why": [
-    "CBC News front #2"
-   ],
    "theme": ""
   },
   {
@@ -385,6 +367,14 @@
    "why": [
     "CBC News front #5"
    ],
+   "theme": ""
+  },
+  {
+   "score": 9,
+   "title": "Crypto giant Binance hit by $6.3bn hack suspected to be largest in history",
+   "url": "https://www.bbc.co.uk/news/articles/cwg7xp8kx4v5o?at_medium=RSS&at_campaign=rss",
+   "outlets": 7,
+   "why": [],
    "theme": ""
   },
   {
@@ -404,6 +394,16 @@
    "url": "https://abcnews.com/US/2-helicopters-collide-mid-air-oregon-airport-faa/story?id=137690382",
    "outlets": 6,
    "why": [],
+   "theme": ""
+  },
+  {
+   "score": 7,
+   "title": "Star Trek actor Patrick Stewart dead at 86",
+   "url": "https://www.cbc.ca/news/entertainment/star-trek-patrick-stewart-dead-9.7401818",
+   "outlets": 4,
+   "why": [
+    "CBC News front #2"
+   ],
    "theme": ""
   },
   {
@@ -472,18 +472,18 @@
   "stale_since": "2026-10-28T00:15:00+00:00",
   "stories": [
    {
-    "key": "auto-6ae134d1",
+    "key": "auto-44de653f",
     "words": [
      "mckellen",
-     "patrick",
      "stewart",
+     "patrick",
      "star",
      "trek",
      "ian"
     ],
-    "score": 9,
-    "outlets": 5,
-    "carriers": 5,
+    "score": 7,
+    "outlets": 4,
+    "carriers": 4,
     "tag": "Developing",
     "title": "Patrick Stewart and Ian McKellen: A friendship that surpassed the stage and screen",
     "url": "https://www.nbcnews.com/pop-culture/pop-culture-news/patrick-stewart-ian-mckellen-friendship-surpassed-stage-screen-rcna606446",
@@ -492,21 +492,21 @@
     "iso": "2026-10-30T04:19:49+00:00",
     "summary": "“He wore his heart on his sleeve, which made him a man to rely on, to admire and in my case, love,” McKellen said in a statement on Stewart’s death.",
     "first": {
-     "outlet": "ABC News",
-     "url": "https://abcnews.com/video/137689806/",
-     "t": "Thu 8:26 p.m.",
-     "title": "WATCH: Remembering Patrick Stewart in his own words"
+     "outlet": "CBS News",
+     "url": "https://www.cbsnews.com/video/walking-through-sir-patrick-stewarts-career-celebrated-thespian-star-trek-icon/",
+     "t": "Thu 9:09 p.m.",
+     "title": "Walking through Patrick Stewart's career, from celebrated thespian to \"Star Trek\" icon"
     },
     "newest": "2026-10-30T04:19:49+00:00",
     "photo": {
-     "src": "live/img/auto-6ae134d1-db6aa6a889.jpg",
+     "src": "live/img/auto-44de653f-db6aa6a889.jpg",
      "orig": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-10/261029-patrick-stewart-ian-mckellen-split-ww-1749-6809ec.jpg",
      "caption": "Photo — via NBC News",
      "alt": "Patrick Stewart and Ian McKellen: A friendship that surpassed the stage and screen",
      "outlet": "NBC News",
      "url": "https://www.nbcnews.com/pop-culture/pop-culture-news/patrick-stewart-ian-mckellen-friendship-surpassed-stage-screen-rcna606446"
     },
-    "independent": 5,
+    "independent": 4,
     "reports": [
      {
       "t": "Fri 12:19 a.m.",
@@ -539,14 +539,6 @@
       "title": "Patrick Stewart, best known for \"Star Trek\" and \"X-Men,\" dies at 86",
       "url": "https://www.cbsnews.com/news/patrick-stewart-dies-age-86-star-trek-actor/",
       "desc": "Patrick Stewart starred on stage and screen across his decadeslong acting career. He died at his home on Wednesday."
-     },
-     {
-      "t": "Thu 8:26 p.m.",
-      "iso": "2026-10-30T00:26:15+00:00",
-      "outlet": "ABC News",
-      "title": "WATCH: Remembering Patrick Stewart in his own words",
-      "url": "https://abcnews.com/video/137689806/",
-      "desc": "As tributes pour in for Sir Patrick Stewart, World News Tonight remembers his interview with Diane Sawyer – sharing how theater became his safe space and his home."
      }
     ],
     "sources": [
@@ -617,23 +609,6 @@
        }
       ],
       "copies": []
-     },
-     {
-      "t": "Thu 8:26 p.m.",
-      "primary": false,
-      "outlet": "ABC News",
-      "title": "WATCH: Remembering Patrick Stewart in his own words",
-      "url": "https://abcnews.com/video/137689806/",
-      "desc": "As tributes pour in for Sir Patrick Stewart, World News Tonight remembers his interview with Diane Sawyer – sharing how theater became his safe space and his home.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "ABC News",
-        "src": "ABC News",
-        "byline": "ABC News"
-       }
-      ],
-      "copies": []
      }
     ],
     "replaces_top": false,
@@ -643,7 +618,7 @@
     "canus": false,
     "popular": 3,
     "us_election": false,
-    "weight": 22.5,
+    "weight": 19.0,
     "videos": [
      {
       "net": "Sky News",
@@ -670,10 +645,10 @@
       "up": ""
      },
      {
-      "net": "CP24",
-      "url": "https://www.youtube.com/watch?v=RWQoOSTMMFg",
-      "title": "Patrick Stewart created a ‘bridge’ between Shakespeare and pop culture: critic",
-      "img": "https://i.ytimg.com/vi/RWQoOSTMMFg/hqdefault.jpg",
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=h1JPHhaJQjs",
+      "title": "Star Trek, X-Men actor Patrick Stewart dead at 86",
+      "img": "https://i.ytimg.com/vi/h1JPHhaJQjs/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -865,9 +840,9 @@
     "url": "https://www.nbcnews.com/pop-culture/pop-culture-news/patrick-stewart-ian-mckellen-friendship-surpassed-stage-screen-rcna606446",
     "rank": 1,
     "live": "",
-    "weight": 22.5,
-    "score": 9,
-    "independent": 5,
+    "weight": 19.0,
+    "score": 7,
+    "independent": 4,
     "most_read": 3,
     "canada": "tie",
     "theme": "",
@@ -887,12 +862,12 @@
     "top": true
    },
    {
-    "title": "Crypto giant Binance hit by hack suspected to be largest in history",
+    "title": "Crypto giant Binance hit by $6.3bn hack suspected to be largest in history",
     "url": "https://www.bbc.co.uk/news/articles/cwg7xp8kx4v5o?at_medium=RSS&at_campaign=rss",
     "rank": 3,
     "live": "",
-    "weight": 20.5,
-    "score": 10,
+    "weight": 19.5,
+    "score": 9,
     "independent": 5,
     "most_read": 0,
     "canada": "none",
@@ -933,7 +908,7 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Criminal probe, Trump administration protest: Explaining Alaska's Dan Sullivan ballot controversy",
+    "title": "Trump visits South Carolina, Peltola speaks out and more from the trail",
     "score": 11,
     "why": "not built: only 2 independent report(s) (4 sites)"
    },
@@ -950,11 +925,6 @@
    {
     "title": "Hitting the fan: London council angers residents with removal of 700 dog-waste bins",
     "score": 6,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Alberta’s Smith faces political test as UCP debate land acknowledgements, transgender policies",
-    "score": 5,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
@@ -976,12 +946,17 @@
     "title": "'No sugar-coating it': NDP ex-ministers admit frustration at snap election blunder",
     "score": 4,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Simpsons fans turn local bar into Moe's Tavern | The Moment",
+    "score": 4,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
   ],
   "more": [],
   "passed_over": [
    {
-    "title": "Crypto giant Binance hit by hack suspected to be largest in history",
+    "title": "Crypto giant Binance hit by $6.3bn hack suspected to be largest in history",
     "url": "https://www.bbc.co.uk/news/articles/cwg7xp8kx4v5o?at_medium=RSS&at_campaign=rss"
    },
    {
@@ -1051,7 +1026,7 @@
    "id": "venfeoe3wKQ",
    "r": "ca",
    "o": "Global News",
-   "t": "Why is Carney government investing $1.6B in Toronto-based AI company",
+   "t": "Canada to invest $1.6B in Toronto-based AI company 'Cohere'",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=venfeoe3wKQ",
@@ -1093,7 +1068,7 @@
    "id": "WLFtJLGDX5M",
    "r": "ca",
    "o": "CP24",
-   "t": "Ontario tables fall economic statement with deficit growing to $16.9B",
+   "t": "Ontario tables fall economic statement",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=WLFtJLGDX5M",
@@ -1308,7 +1283,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=INNqgWQNZDQ",
    "img": "https://i.ytimg.com/vi/INNqgWQNZDQ/hqdefault.jpg",
-   "up": "2026-10-30",
+   "up": "2026-10-29",
    "added": "2026-10-30T03:35:20.405997+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1317,12 +1292,12 @@
    "id": "Lc_tz-za0U4",
    "r": "us",
    "o": "CNN",
-   "t": "Netanyahu officially loses his majority in Israeli election: What's next",
+   "t": "Final Israeli election results confirm no clear winner: What's next",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=Lc_tz-za0U4",
    "img": "https://i.ytimg.com/vi/Lc_tz-za0U4/hqdefault.jpg",
-   "up": "2026-10-30",
+   "up": "2026-10-29",
    "added": "2026-10-30T03:35:20.405997+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1541,7 +1516,7 @@
    "id": "oNaiP5rNAwg",
    "r": "world",
    "o": "BBC News",
-   "t": "Dan Sullivan v Dan Sullivan: Did Democrats try to confuse voters? | BBC News",
+   "t": "Why are two Dan Sullivans running in the midterms? | BBC News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=oNaiP5rNAwg",
@@ -1569,7 +1544,7 @@
    "id": "StF-nQgROgc",
    "r": "world",
    "o": "BBC News",
-   "t": "Why is England still in drought - and how long will it last? | BBC News",
+   "t": "How close is England to running out of water? | BBC News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=StF-nQgROgc",
@@ -1597,7 +1572,7 @@
    "id": "_NDysXa1G-M",
    "r": "world",
    "o": "Sky News",
-   "t": "How concerned are experts that AI could design a bioweapon?",
+   "t": "Could artificial intelligence really wipe out humanity by using a bioweapon?",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=_NDysXa1G-M",
@@ -1611,11 +1586,11 @@
  "ledes": [
   {
    "o": "CBS News",
-   "h": "Iran claims 4 tankers hit mines in Strait of Hormuz",
-   "u": "https://www.cbsnews.com/live-updates/iran-war-donald-trump-qatar-mediators-new-proposal-end-war/",
-   "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/10/29/43ea1302-6cd2-4794-9ff2-dc505c81a3ce/thumbnail/1200x630/ea7fdcf9643acbe842100ba27da5fb78/gettyimages-2293188953.jpg",
-   "w": "Fri 1:42 a.m.",
-   "iso": "2026-10-30T05:42:22+00:00"
+   "h": "Trump visits South Carolina, Peltola speaks out and more from the trail",
+   "u": "https://www.cbsnews.com/live-updates/2026-elections-midtems-house-senate-trump/",
+   "img": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/10/29/a5262467-963e-46a7-8cb5-b22e68e96762/thumbnail/1200x630g2/e6729b1c45d503a2e20ce441133603c4/ap26302587742978.jpg",
+   "w": "Fri 2:30 a.m.",
+   "iso": "2026-10-30T06:30:36+00:00"
   },
   {
    "o": "ABC News",
@@ -1987,9 +1962,9 @@
   "edition": "Friday morning, October 30",
   "lines": [
    "Good morning. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
-   "Crypto giant Binance hit by hack suspected to be largest in history, BBC News reports.",
-   "Sir Patrick Stewart: Actor who moved effortlessly between Star Trek and Shakespeare, BBC News reports.",
+   "‘Largest bank heist in history’: Binance hack rocks crypto industry, Euronews reports.",
    "Two helicopters carrying a total of three people collided in mid-air Thursday near a small airport southwest of Portland, Oregon, forcing the closure of a key highway, authorities said.",
+   "Sir Patrick Stewart: Actor who moved effortlessly between Star Trek and Shakespeare, BBC News reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
   ]
  },
@@ -2288,14 +2263,14 @@
     "url": "https://www.youtube.com/watch?v=gIiI7o_jyC8",
     "img": "https://i.ytimg.com/vi/gIiI7o_jyC8/hqdefault.jpg",
     "story": "Trump rallies in South Carolina, DOJ-FBI fraud announcement, Brewers w",
-    "watching": "327",
+    "watching": "320",
     "reports": [
      {
       "outlet": "CBS News",
       "title": "Trump visits South Carolina, Peltola speaks out and more from the trail",
       "url": "https://www.cbsnews.com/live-updates/2026-elections-midtems-house-senate-trump/",
-      "t": "Fri 1:00 a.m.",
-      "iso": "2026-10-30T05:00:02+00:00"
+      "t": "Fri 2:30 a.m.",
+      "iso": "2026-10-30T06:30:36+00:00"
      },
      {
       "outlet": "Fox News",
@@ -2320,7 +2295,7 @@
     "url": "https://www.youtube.com/watch?v=3lUGOR0SRFg",
     "img": "https://i.ytimg.com/vi/3lUGOR0SRFg/hqdefault.jpg",
     "story": "Crypto industry suffers 'largest bank heist in human history'",
-    "watching": "204",
+    "watching": "243",
     "reports": [
      {
       "outlet": "Euronews",
@@ -2460,7 +2435,7 @@
   }
  },
  "canangle": {
-  "auto-6ae134d1": {
+  "auto-44de653f": {
    "story": "Patrick Stewart and Ian McKellen: A friendship that surpassed the stage and screen",
    "us": false,
    "specific": 1,
@@ -2534,6 +2509,51 @@
   }
  },
  "canangle_live": {
+  "https://www.cbsnews.com/live-updates/2026-elections-midtems-house-senate-trump/": {
+   "story": "Trump visits South Carolina, Peltola speaks out and more from the trail",
+   "us": true,
+   "specific": 0,
+   "stories": [
+    {
+     "t": "Thu 7:08 p.m.",
+     "iso": "2026-10-29T23:08:31.242000+00:00",
+     "outlet": "CBC News",
+     "title": "How is the trade war with Canada impacting U.S. voters?",
+     "url": "https://www.cbc.ca/player/play/video/9.7402175",
+     "ca": true,
+     "tie": "Canada and the U.S."
+    },
+    {
+     "t": "Thu 5:26 p.m.",
+     "iso": "2026-10-29T21:26:46+00:00",
+     "outlet": "CP24",
+     "title": "Ontario deficit grows to $16.9 billion as trade war with U.S. drags on",
+     "url": "https://www.cp24.com/politics/queens-park/2026/10/29/ontario-deficit-grows-to-169-billion-as-trade-war-with-us-drags-on/",
+     "ca": true,
+     "tie": "Canada and the U.S."
+    },
+    {
+     "t": "Thu 4:19 p.m.",
+     "iso": "2026-10-29T20:19:52+00:00",
+     "outlet": "Canada's National Observer",
+     "title": "Ontario projects record $16.9-billion deficit, blames US tariffs",
+     "url": "https://www.nationalobserver.com/2026/10/29/news/ontario-projects-record-169-billion-deficit-blames-us-tariffs",
+     "ca": false,
+     "tie": "Canada and the U.S."
+    },
+    {
+     "t": "Wed 11:11 a.m.",
+     "iso": "2026-10-28T15:11:10+00:00",
+     "outlet": "Global News",
+     "title": "Canada not near trade deal with U.S. before midterms, Carney says",
+     "url": "https://globalnews.ca/news/12124110/mark-carney-trade-deal-not-right-now-us-midterms/",
+     "ca": true,
+     "tie": "Canada and the U.S."
+    }
+   ],
+   "official": [],
+   "views": []
+  },
   "https://abcnews.com/Politics/doj-issues-grand-jury-subpoenas-election-officials-california/story?id=137689807": {
    "story": "DOJ issues grand jury subpoenas to election officials in California",
    "us": true,
