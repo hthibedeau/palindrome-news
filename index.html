@@ -6340,7 +6340,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     if (!sec) return;
     // a story whose own Breaking event is showing right now is told there, so the next candidate takes its place
     const evShown = (() => { const e = document.getElementById('bkEvent'); return e && !e.hidden ? e.dataset.evid || '' : ''; })();
-    const list = A && A.takeover ? (A.stories || []).filter((s) => !(evShown && (s.events || []).indexOf(evShown) > -1)).slice(0, 2) : [];
+    const list = A && A.takeover ? (A.stories || []).filter((s) => !(evShown && (s.events || []).indexOf(evShown) > -1)).slice(0, A.top_n || 2) : [];  // two top stories, three when tools/autopilot.py finds a third big enough (top_n)
     if (!list.length) { sec.hidden = true; sec.innerHTML = ''; if (bk && bk.dataset.autoHidden) { bk.hidden = false; delete bk.dataset.autoHidden; } return; }
     if (bk && !bk.hidden) { bk.hidden = true; bk.dataset.autoHidden = '1'; }
     const a = (u, t) => '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + t + '</a>';
@@ -6389,7 +6389,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     const ts = (art.querySelector('.row-meta .ts') || {}).textContent || '';
     const upd = labelMs(ts.replace(/^Updated\s+/, ''));
     const stale = isNaN(upd) || Date.now() - upd > LEAD_STALE_HOURS * 3600e3;
-    const shown = new Set(((AUTO.d.auto && AUTO.d.auto.takeover && AUTO.d.auto.stories) || []).slice(0, 2).map((x) => x.key));
+    const shown = new Set(((AUTO.d.auto && AUTO.d.auto.takeover && AUTO.d.auto.stories) || []).slice(0, (AUTO.d.auto && AUTO.d.auto.top_n) || 2).map((x) => x.key));
     const s = ((AUTO.d.auto && AUTO.d.auto.more) || []).find((x) => !shown.has(x.key));
     if (!stale || !s) { if (art.dataset.auto) { art.innerHTML = LEAD_ORIG; delete art.dataset.auto; delete art.dataset.key; } return; }
     const a = (u, t, extra) => '<a' + (extra || '') + ' href="' + esc(u) + '" target="_blank" rel="noopener">' + t + '</a>';

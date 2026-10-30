@@ -38,6 +38,13 @@ CANADIAN_WEIGHT = 8    # a Canadian story's edge over a story from abroad of the
 MIN_OUTLETS = 3         # an auto story needs at least this many INDEPENDENT newsrooms (wire copies count once)
 BREAKING_INDEPENDENT = 4  # "Breaking" also needs at least this many independent newsrooms
 CANDIDATES = 8          # top-story candidates built each run; the two shown are picked by pick_by_canada()
+# A third top story (Hannah, Fri Oct 30, 2026: "the Canada EU story should be up in the top along with the two current
+# breaking news stories. It is okay to have three as well ... not just for today, but other days as well"). The top of
+# the page holds two stories, and a third when one more is big enough on its own: see third_worthy().
+TOP_MAX = 3
+THIRD_FRESH_HOURS = 3   # the third story needs a report this recent ...
+THIRD_WEIGHT = 0.6      # ... and either a live event, Breaking-level coverage, or this share of the second story's weight
+MIN_THEME_OUTLETS = 2   # a running event Hannah named (lead_check.THEMES, e.g. the Canada-EU summit): two newsrooms
 CLIP_HOURS = 36
 WEAK = set("""here's here’s what what's why how who when watch live breaking update updates opinion analysis says said new
 canada canadian canadians ottawa u.s us america american trump carney the a this that it's state states department
@@ -424,7 +431,10 @@ def build_story(g, now, imgdir, prev):
     if len(reps) >= MIN_OUTLETS:
         with ThreadPoolExecutor(8) as ex:  # each report's own page: who wrote it, its opening sentence
             list(ex.map(lambda r: page_info(r[3]), reps[:14]))
-    if len(reps) < MIN_OUTLETS or independent(reps) < MIN_OUTLETS:
+    # a running event already named in lead_check.THEMES (one event, kept whole) is known news: two independent
+    # newsrooms are enough to keep it a candidate (the Canada-EU summit fell off the top with two, Fri Oct 30, 2026)
+    need = MIN_THEME_OUTLETS if g.get("theme") and g["theme"] not in SPLIT_THEMES else MIN_OUTLETS
+    if len(reps) < need or independent(reps) < need:
         WHY = f"only {independent(reps)} independent report(s) ({len(reps)} sites)"
         return None  # one wire report republished by several sites is one report, not a top story
     first = min(rows)
@@ -1591,7 +1601,7 @@ def promote_live(res, now):
     for s in cands:
         s.pop("live", None); s.pop("live_more", None)
     for s, e, state in hits:
-        if state == "soon" and s in auto.get("stories", [])[:2] + [x for x in cands if x.get("live")]:
+        if state == "soon" and s in auto.get("stories", [])[:auto.get("top_n") or 2] + [x for x in cands if x.get("live")]:
             e["breaking"] = True  # the live event of a top story
     for s, e, state in sorted(hits, key=lambda h: (h[2] != "now", h[1].get("when") or "")):
         item = {"state": state, "net": e.get("net", ""), "url": e.get("url", ""),
@@ -1629,7 +1639,7 @@ def promote_live(res, now):
         return
     ranked = sorted(cands, key=lambda s: (tier(s), -(s.get("weight") or 0)))
     _select(auto, cands, ranked, tier)
-    print("live lifts:", [(s["title"][:50], s["live"]["state"], s["live"]["title"][:50]) for s, e, st in hits], "-> top:", [s["title"][:50] for s in auto["stories"][:2]])
+    print("live lifts:", [(s["title"][:50], s["live"]["state"], s["live"]["title"][:50]) for s, e, st in hits], "-> top:", [s["title"][:50] for s in auto["stories"][:auto.get("top_n") or 2]])
 
 
 EVENT_KIND_STOP = set("speaks speak speech remarks holds hold news conference press announcement announces live watch statement update".split())
@@ -1651,21 +1661,55 @@ def _select(auto, cands, ranked, tier):
     # the newer development leads when the two are close (within 8 points): the top of the page is the latest news
     if len(top2) == 2 and (top2[0].get("weight") or 0) - (top2[1].get("weight") or 0) <= 8 and (top2[1].get("newest") or "") > (top2[0].get("newest") or ""):
         top2.reverse()
+    # a third top story when one more is big enough on its own (third_worthy), on any day
+    if len(top2) == 2:
+        for s in list(rest):
+            if third_worthy(s, top2, tier):
+                top2.append(s)
+                rest.remove(s)
+                break
     ranked = top2 + rest
+    n_top = len(top2)
+    auto["top_n"] = n_top  # how many of auto["stories"] the page shows at the top; the rest are spares
     # keep spares so the page can step past a story whose own Breaking event is showing
-    auto["stories"] = ranked[:2] + [s for s in ranked[2:4] if tier(s) < 2 and any(x.get("events") for x in ranked[:2])]
+    auto["stories"] = ranked[:n_top] + [s for s in ranked[n_top:n_top + 2] if tier(s) < 2 and any(x.get("events") for x in ranked[:n_top])]
     # the next biggest stories (with a Canadian tie), for the lead slot under the top two when its hand-written story
     # goes stale (Hannah, Wed Oct 28, 2026: "go through the whole page to ensure we have the top news at the top ...
     # update regularly")
-    top_themes = {s.get("theme") for s in auto["stories"][:2] if s.get("theme")}
+    top_themes = {s.get("theme") for s in auto["stories"][:n_top] if s.get("theme")}
     auto["more"] = [s for s in ranked[2:] if tier(s) < 2 and s not in auto["stories"] and not (s.get("theme") and s["theme"] in top_themes)][:3]
-    auto["passed_over"] = [{"title": s["title"], "url": s["url"]} for s in cands if tier(s) == 2 and s not in ranked[:2]]
+    auto["passed_over"] = [{"title": s["title"], "url": s["url"]} for s in cands if tier(s) == 2 and s not in ranked[:n_top]]
     # why each story is or isn't at the top (Hannah: "why is that not at the top of the news?")
     auto["considered"] = [{"title": s["title"], "url": s["url"], "rank": n + 1, "live": (s.get("live") or {}).get("title", ""), "weight": s.get("weight"), "score": s.get("score"), "independent": s.get("independent"), "most_read": s["popular"],
-                           "canada": s["canada"], "theme": s.get("theme") or "", "top": s in ranked[:2]} for n, s in enumerate(ranked)] + [c for c in (auto.get("considered") or []) if "rank" not in c]
+                           "canada": s["canada"], "theme": s.get("theme") or "", "top": s in ranked[:n_top]} for n, s in enumerate(ranked)] + [c for c in (auto.get("considered") or []) if "rank" not in c]
 
 
 LAST_PICK = None
+
+
+def third_worthy(s, top2, tier):
+    """Is this story big enough to be a third top story? It must be Canadian or tied to Canada, not the same running
+    event as a top story, have a report in the last THIRD_FRESH_HOURS, and then any one of: a live event on it (on air
+    now, or coming up within LIVE_SOON_HOURS), Breaking-level coverage (BREAKING_INDEPENDENT newsrooms), or a weight of
+    at least THIRD_WEIGHT of the second story's. On a quiet day nothing qualifies and the top stays at two."""
+    from datetime import datetime, timezone
+    if tier(s) >= 2:
+        return False
+    themes = {t.get("theme") for t in top2 if t.get("theme")}
+    if s.get("theme") and s["theme"] in themes:
+        return False
+    try:
+        age = (datetime.now(timezone.utc) - datetime.fromisoformat(s.get("newest") or "")).total_seconds()
+    except Exception:
+        return False
+    if age > THIRD_FRESH_HOURS * 3600 and not s.get("live"):
+        return False
+    if s.get("live"):
+        return True
+    if (s.get("independent") or 0) >= BREAKING_INDEPENDENT:
+        return True
+    w2 = top2[-1].get("weight") or 0
+    return w2 > 0 and (s.get("weight") or 0) >= THIRD_WEIGHT * w2
 
 
 def pick_by_canada(auto, items, now, eds, papers, otr, canus_, mostread=None):
