@@ -48,7 +48,26 @@ MIN_THEME_OUTLETS = 2   # a running event Hannah named (lead_check.THEMES, e.g. 
 # Stories Hannah is working on, kept at the top of the page until the time given (Eastern), whatever the ranking says,
 # as long as there is reporting on them (Hannah, Fri Oct 30, 2026: "I was working on the EU story and I can't see it
 # now"). Key: a running event's name in lead_check.THEMES. Add one to keep a story up; it lets go by itself.
-KEEP_TOP = {"Canada and the EU": "2026-10-30T23:59:00-04:00"}
+KEEP_TOP = {}  # e.g. {"Canada and the EU": "2026-10-30T23:59:00-04:00"}; normally empty: top_rule() decides
+# THE RULE FOR THE TOP OF THE PAGE (Hannah, Fri Oct 30, 2026: "If it's Canadian and it's breaking, it should be on the
+# top. If it's big international that is landing on every page, it should be the top news story. There has to be a
+# rule in the code for what makes it the top news story.") One place, in order; see top_rule(). It gathers the rules
+# built over the week (Canadian ties first, Oct 28; a Breaking U.S. election story can go in the top two, Oct 28;
+# the newest development on top, Oct 29; live events, Oct 29-30; a third story, Oct 30).
+BIG_WORLD_INDEPENDENT = 7   # "big international": at least this many independent newsrooms ...
+BIG_WORLD_CARRIERS = 15     # ... carried by at least this many newsrooms in all (it is on every front page) ...
+BIG_WORLD_FRESH_HOURS = 2   # ... with a report this recent
+CANADIAN_FRESH_HOURS = 6    # a Canadian story still developing: a report this recent
+TOP_RULES = [  # (number, name) shown in live/auto.json "considered", so it is always clear why a story is where it is
+    (1, "Canadian and breaking"),
+    (2, "Big international story, on every front page"),
+    (3, "Breaking U.S. election story (with its Canadian angle)"),
+    (4, "Canadian, with a live event coming up"),
+    (5, "Canadian, still developing"),
+    (6, "From abroad, tied to Canada"),
+    (7, "Canadian, older"),
+    (8, "No Canadian tie"),
+]
 CLIP_HOURS = 36
 WEAK = set("""here's here’s what what's why how who when watch live breaking update updates opinion analysis says said new
 canada canadian canadians ottawa u.s us america american trump carney the a this that it's state states department
@@ -1641,7 +1660,7 @@ def promote_live(res, now):
                 s["tag"] = "Breaking"
     if not hits:
         return
-    ranked = sorted(cands, key=lambda s: (tier(s), -(s.get("weight") or 0)))
+    ranked = sorted(cands, key=rank_key)
     _select(auto, cands, ranked, tier)
     print("live lifts:", [(s["title"][:50], s["live"]["state"], s["live"]["title"][:50]) for s, e, st in hits], "-> top:", [s["title"][:50] for s in auto["stories"][:auto.get("top_n") or 2]])
 
@@ -1663,7 +1682,7 @@ def _select(auto, cands, ranked, tier):
         else:
             rest.append(s)
     # the newer development leads when the two are close (within 8 points): the top of the page is the latest news
-    if len(top2) == 2 and (top2[0].get("weight") or 0) - (top2[1].get("weight") or 0) <= 8 and (top2[1].get("newest") or "") > (top2[0].get("newest") or ""):
+    if len(top2) == 2 and top_rule(top2[0]) == top_rule(top2[1]) and (top2[0].get("weight") or 0) - (top2[1].get("weight") or 0) <= 8 and (top2[1].get("newest") or "") > (top2[0].get("newest") or ""):
         top2.reverse()
     # a story Hannah is working on (KEEP_TOP) stays at the top while it has reporting
     from datetime import datetime as _dt, timezone as _tz
@@ -1687,7 +1706,7 @@ def _select(auto, cands, ranked, tier):
         rest.remove(k)
         if len(top2) >= TOP_MAX:
             rest.insert(0, top2.pop())
-        top2.insert(0 if k["live"].get("state") == "now" else min(1, len(top2)), k)
+        top2.insert(len(top2) if len(top2) < TOP_MAX else TOP_MAX - 1, k)  # a slot, in rule order (it does not jump the lead)
     # a third top story when one more is big enough on its own (third_worthy), on any day
     if len(top2) == 2:
         for s in list(rest):
@@ -1708,10 +1727,45 @@ def _select(auto, cands, ranked, tier):
     auto["passed_over"] = [{"title": s["title"], "url": s["url"]} for s in cands if tier(s) == 2 and s not in ranked[:n_top]]
     # why each story is or isn't at the top (Hannah: "why is that not at the top of the news?")
     auto["considered"] = [{"title": s["title"], "url": s["url"], "rank": n + 1, "live": (s.get("live") or {}).get("title", ""), "weight": s.get("weight"), "score": s.get("score"), "independent": s.get("independent"), "most_read": s["popular"],
-                           "canada": s["canada"], "theme": s.get("theme") or "", "top": s in ranked[:n_top]} for n, s in enumerate(ranked)] + [c for c in (auto.get("considered") or []) if "rank" not in c]
+                           "canada": s["canada"], "theme": s.get("theme") or "", "top": s in ranked[:n_top],
+                           "rule": dict(TOP_RULES).get(top_rule(s), ""), "carriers": s.get("carriers")} for n, s in enumerate(ranked)] + [c for c in (auto.get("considered") or []) if "rank" not in c]
 
 
 LAST_PICK = None
+
+
+def top_rule(s, now=None):
+    """Which rule puts this story where it is (TOP_RULES): the lower the number, the higher on the page. Within one
+    rule, the bigger story (weight: coverage, Newswatch and CBC front placement, most-read, freshness) goes first,
+    and the newer development leads when two are close."""
+    now = now or datetime.now(timezone.utc)
+    try:
+        age = (now - datetime.fromisoformat(s.get("newest") or "")).total_seconds() / 3600
+    except Exception:
+        age = 99
+    canadian = s.get("canada") == "canadian" or bool(s.get("canus"))
+    live = (s.get("live") or {}).get("state")
+    breaking = s.get("tag") == "Breaking" or live == "now"  # Breaking: 4+ independent newsrooms, a report in the last hour
+    if canadian and breaking:
+        return 1
+    if (not canadian and (s.get("independent") or 0) >= BIG_WORLD_INDEPENDENT and (s.get("carriers") or 0) >= BIG_WORLD_CARRIERS
+            and age < BIG_WORLD_FRESH_HOURS):
+        return 2
+    if s.get("us_election"):
+        return 3
+    if canadian and live == "soon":
+        return 4
+    if canadian and age < CANADIAN_FRESH_HOURS:
+        return 5
+    if s.get("canada") in ("tie", "general"):
+        return 6
+    if canadian:
+        return 7
+    return 8
+
+
+def rank_key(s):
+    return (top_rule(s), -(s.get("weight") or 0))
 
 
 def third_worthy(s, top2, tier):
@@ -1813,7 +1867,7 @@ def pick_by_canada(auto, items, now, eds, papers, otr, canus_, mostread=None):
         return w
     for s in cands:
         s["weight"] = weight(s)
-    ranked = sorted(cands, key=lambda s: (tier(s), -s["weight"]))  # stable: ties keep the ranking order
+    ranked = sorted(cands, key=rank_key)  # THE RULE (top_rule), then the bigger story; stable: ties keep the ranking order
     # one story per running theme in the top pair, so Canada-U.S. leads without crowding out everything else
     # (the rest of the day's Canada-U.S. stories are in the Canada and the U.S. section and the Canadian angle sidebars)
     _select(auto, cands, ranked, tier)
