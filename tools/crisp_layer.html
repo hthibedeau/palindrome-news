@@ -41,7 +41,7 @@
 /* 1. fold the long lists: three lines, then "Show all" */
 #autoBreaking .cr-fold:not(.cr-open) li:nth-child(n+4) { display: none; }
 #autoBreaking .cr-fold:not(.cr-open) .ab-d, #autoBreaking .cr-fold:not(.cr-open) .ab-also { display: none; }
-#autoBreaking .cr-more { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; margin: 4px 0 0; padding: 0 14px; border: 1px solid rgba(255, 255, 255, .45); border-radius: 999px; background: none; color: #FFFFFF; font: 600 13px/1 inherit; cursor: pointer; position: relative; z-index: 3; }
+#autoBreaking .cr-more { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; margin: 4px 0 8px; padding: 0 14px; border: 1px solid rgba(255, 255, 255, .45); border-radius: 999px; background: none; color: #FFFFFF; font: 600 13px/1 inherit; cursor: pointer; position: relative; z-index: 3; }
 /* 3. the videos as cards you swipe sideways */
 #autoBreaking .ab-vids ol { display: flex !important; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 2px 0 10px !important; margin: 0 !important; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
 #autoBreaking .ab-vids ol::-webkit-scrollbar { display: none; }
@@ -85,7 +85,9 @@
     const closed = 'Show all ' + items.length + ' ' + label + ' ▾', opened = 'Show fewer ▴';
     b.textContent = closed;
     b.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); const on = box.classList.toggle('cr-open'); b.textContent = on ? opened : closed; });
-    box.appendChild(b);
+    // the button sits at the top of the list, under its heading (Hannah, Fri Oct 30, 2026: "the show all eight stories
+    // and show fewer should be at the top, not at the bottom")
+    const head = box.querySelector(':scope > summary'); if (head) head.after(b); else box.prepend(b);
   }
   function crisp() {
     if (busy) return; busy = true;
