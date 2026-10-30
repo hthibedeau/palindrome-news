@@ -1390,6 +1390,7 @@ header.site { border-bottom: 0; }
 .cov .cov-o { display: inline-flex; align-items: center; min-height: 30px; padding: 3px 11px; border-radius: 999px; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.22); color: #FFFFFF; font-size: 13px; font-weight: 600; text-decoration: none; transition: background .2s; }
 .cov .cov-o:hover { background: rgba(255,255,255,.24); }
 .cov .cov-more { font-size: 12px; color: #F6E1E8; }
+.cov .cov-o small { font-size: 11px; opacity: .75; margin-left: 4px; }
 .fresh { display: inline-flex; align-items: center; gap: 7px; padding: 4px 10px; border-radius: 999px; background: rgba(15,11,25,.35); color: #FFFFFF; font-size: 12px; font-weight: 700; letter-spacing: .04em; vertical-align: middle; margin-left: 8px; position: relative; z-index: 3; }
 .fresh i { width: 8px; height: 8px; border-radius: 50%; background: #F2A7C3; display: inline-block; }
 .fresh.hot i { background: #FF6B8E; box-shadow: 0 0 0 0 rgba(255,107,142,.7); animation: freshPulse 1.8s infinite; }
@@ -6492,6 +6493,10 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       const root = k === 'top' ? document.getElementById('breaking') : document.querySelector('#bkEvent[data-evid="' + CSS.escape(k) + '"]') || document.querySelector('#autoBreaking [data-key="' + CSS.escape(k) + '"]');
       if (!root || root.hidden) return;
       const r = R[k], a = (u, t) => '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + t + '</a>';
+      const nu = (u) => String(u || '').split('#')[0].split('?')[0].replace(/^https?:\/\/(www\.|amp\.|m\.)?/, '').replace(/\/$/, '');
+      const S0 = (AUTO.d.auto && AUTO.d.auto.stories || []).concat((AUTO.d.auto && AUTO.d.auto.more) || []).find((x) => x.key === k);
+      const mineU = new Set(((S0 && S0.reports) || []).map((x) => nu(x.url)).concat(((S0 && S0.sources) || []).flatMap((x) => [nu(x.url)].concat((x.copies || []).map((c) => nu(c.url))))));
+      r.stories = (r.stories || []).filter((x) => !mineU.has(nu(x.url)));
       const items = (r.stories || []).map((x) => '<li><time>' + esc(x.t) + '</time>' + a(x.url, esc(x.title)) + ' <span class="o">' + esc(x.outlet) + ' &#8599;</span></li>').join('')
         + (r.views || []).map((x) => '<li><span class="rk">' + esc(x.kind) + '</span>' + a(x.url, esc(x.title)) + ' <span class="o">' + esc(x.outlet) + ' &#8599;</span></li>').join('');
       if (!items) return;
@@ -6603,6 +6608,12 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     'pm.gc.ca': 'Prime Minister', 'alberta.ca': 'Government of Alberta', 'ourcommons.ca': 'House of Commons', 'whitehouse.gov': 'The White House', 'todayinbc.com': 'Today in B.C.' };
   const outletOf = (u) => { try { const h = new URL(u).hostname.replace(/^www\.|^amp\./, ''); const k = Object.keys(HOSTS).find((d) => h === d || h.endsWith('.' + d)); return k ? HOSTS[k] : ''; } catch (e) { return ''; } };
   function agoText(ms) { const m = Math.max(0, Math.round((Date.now() - ms) / 60000)); return m < 1 ? 'just now' : m < 60 ? m + ' min ago' : m < 1440 ? Math.floor(m / 60) + ' hr' + (m % 60 >= 1 ? ' ' + (m % 60) + ' min' : '') + ' ago' : ''; }
+  // The owner group of a newsroom: same-owner outlets are one newsroom for counting reports (mirror of OWNERS in tools/autopilot.py)
+  const PAL_OWNERS = [[/^(CTV|CP24|BNN Bloomberg|Bell Media|iHeartRadio)/, 'Bell'], [/^(CityNews|CityTV|680 NEWS|Sportsnet)/, 'Rogers'], [/^Global News/, 'Corus'],
+    [/^(National Post|Financial Post|Toronto Sun|Ottawa Citizen|Calgary Herald|Edmonton Journal|Vancouver Sun|The Province|Montreal Gazette|Leader-Post|StarPhoenix|Windsor Star|London Free Press)/, 'Postmedia'],
+    [/^(Toronto Star|Hamilton Spectator|Waterloo Region Record)/, 'Torstar'], [/^(Canada['’]s )?National Observer/, 'Observer'], [/^(CBC|Radio-Canada)/, 'CBC'],
+    [/^(Medicine Hat News|Lethbridge Herald)/, 'Alta'], [/^(CKOM|CJME|paNOW)/, 'Rawlco'], [/^(Times Colonist)/, 'Glacier']];
+  function palOwner(o) { o = String(o || '').replace(/ \(.*\)$/, ''); const m = PAL_OWNERS.find(([rx]) => rx.test(o)); return m ? m[1] : o; }
   function dazzle() {
     const roots = [document.getElementById('breaking'), document.querySelector('#bkEvent:not([hidden])')].concat([...document.querySelectorAll('#autoBreaking .ab-story')]);
     roots.forEach((root) => {
@@ -6621,18 +6632,31 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       if (by.size < 2 && cov) { cov.remove(); cov = null; }
       if (by.size >= 2) {
         if (!cov) { cov = document.createElement('div'); cov.className = 'cov'; h2.after(cov); }
-        const list = [...by.entries()].sort((x, y) => y[1][1] - x[1][1]).map(([o, v]) => [o, v[0]]), show = list.slice(0, 8);
-        // Copies of one wire report (the same headline on several sites) count once (Hannah, Wed Oct 28, 2026).
-        const words = (t) => new Set(t.toLowerCase().replace(/’/g, "'").match(/[a-z0-9]+/g) || []);
+        // One chip per independent report (Hannah, Thu Oct 29, 2026: "CTV, CP24, BNN, CityNews Montreal and CityNews are
+        // ALL the same story ... we dont need the repetition"). Same-owner newsrooms (Bell: CTV, CP24, BNN; Rogers: every
+        // CityNews; Postmedia ...), name variants ("National Observer" / "Canada's National Observer"), the same article
+        // and copies of one headline are one report; the first one posted is the chip, the rest are named on hover.
+        const words = (t) => new Set(String(t || '').toLowerCase().replace(/’/g, "'").match(/[a-z0-9]+/g) || []);
         const same = (a, b) => { if (!a || !b) return false; const A = words(a), B = words(b); let n = 0; A.forEach((x) => { if (B.has(x)) n++; }); return n / (A.size + B.size - n) >= 0.75; };
-        const reportsOnly = [];
-        [...by.values()].forEach((v) => { if (!reportsOnly.some((k) => same(k, v[2]))) reportsOnly.push(v[2] || Math.random()); });
+        const nurl = (u) => String(u || '').split('#')[0].split('?')[0].replace(/^https?:\/\/(www\.|amp\.|m\.)?/, '').replace(/\/$/, '');
         const autoS = root.classList.contains('ab-story') ? (AUTO.d.auto && AUTO.d.auto.stories || []).find((x) => x.key === root.dataset.key) : null;
-        const nRep = autoS && autoS.sources ? autoS.sources.length : reportsOnly.length;
-        const lead = nRep < list.length
-          ? '<b>' + nRep + '</b> independent report' + (nRep === 1 ? '' : 's') + ' in the last 24 hours, carried by ' + list.length + ' newsrooms'
-          : '<b>' + list.length + '</b> newsrooms in the last 24 hours';
-        cov.innerHTML = '<span class="cov-n">' + lead + '</span>' + show.map(([o, u]) => '<a class="cov-o" href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(o) + '</a>').join('') + (list.length > 8 ? '<span class="cov-more">+' + (list.length - 8) + ' more</span>' : '');
+        let groups;
+        if (autoS && autoS.sources) {
+          groups = autoS.sources.map((r) => ({ o: r.outlet, u: r.url, t: Date.parse(r.iso || '') || 0, also: (r.copies || []).map((c) => c.outlet) }));
+        } else {
+          groups = [];
+          [...by.entries()].sort((x, y) => x[1][1] - y[1][1]).forEach(([o, v]) => {   // oldest first: the first posted leads
+            const g = groups.find((g_) => palOwner(g_.o) === palOwner(o) || nurl(g_.u) === nurl(v[0]) || same(g_.title, v[2]));
+            if (g) { if (g.also.indexOf(o) < 0 && g.o !== o) g.also.push(o); } else groups.push({ o, u: v[0], t: v[1], title: v[2], also: [] });
+          });
+          groups.sort((x, y) => y.t - x.t);
+        }
+        const carriers = new Set(groups.flatMap((g) => [g.o].concat(g.also)).map((o) => o.replace(/^Canada['’]s /, ''))).size;
+        const nRep = groups.length, show = groups.slice(0, 8);
+        const lead = nRep < carriers
+          ? '<b>' + nRep + '</b> independent report' + (nRep === 1 ? '' : 's') + ' in the last 24 hours, carried by ' + carriers + ' newsrooms'
+          : '<b>' + nRep + '</b> newsrooms in the last 24 hours';
+        cov.innerHTML = '<span class="cov-n">' + lead + '</span>' + show.map((g) => '<a class="cov-o" href="' + esc(g.u) + '" target="_blank" rel="noopener"' + (g.also.length ? ' title="Also run by ' + esc(g.also.join(', ')) + '"' : '') + '>' + esc(g.o) + (g.also.length ? ' <small>+' + g.also.length + '</small>' : '') + '</a>').join('') + (nRep > 8 ? '<span class="cov-more">+' + (nRep - 8) + ' more</span>' : '');
       }
       // live "Updated N min ago" from the newest dated report on the story
       let newest = Date.parse(root.dataset.lastdev || '') || 0;

@@ -87,7 +87,13 @@ def clean(s):
 OWNERS = {"CTV News": "Bell", "CP24": "Bell", "BNN Bloomberg": "Bell", "CityNews": "Rogers", "Global News": "Corus",
           "National Post": "Postmedia", "Toronto Sun": "Postmedia", "Ottawa Citizen": "Postmedia", "Calgary Herald": "Postmedia",
           "Edmonton Journal": "Postmedia", "Vancouver Sun": "Postmedia", "The Province": "Postmedia", "Financial Post": "Postmedia",
-          "Toronto Star": "Torstar", "Times Colonist": "Glacier", "Winnipeg Free Press": "FP", "The Canadian Press": "CP"}
+          "Toronto Star": "Torstar", "Times Colonist": "Glacier", "Winnipeg Free Press": "FP", "The Canadian Press": "CP",
+          "Canada's National Observer": "Observer", "Canada’s National Observer": "Observer", "National Observer": "Observer",
+          "CTV": "Bell", "Bell Media": "Bell", "iHeartRadio": "Bell", "CityTV": "Rogers", "680 NEWS": "Rogers", "Sportsnet": "Rogers",
+          "Global ": "Corus", "Montreal Gazette": "Postmedia", "Leader-Post": "Postmedia", "StarPhoenix": "Postmedia",
+          "Windsor Star": "Postmedia", "London Free Press": "Postmedia", "Hamilton Spectator": "Torstar", "Waterloo Region Record": "Torstar",
+          "Medicine Hat News": "Alta Newspaper", "Lethbridge Herald": "Alta Newspaper", "CKOM": "Rawlco", "CJME": "Rawlco", "paNOW": "Rawlco",
+          "CBC": "CBC", "Radio-Canada": "CBC"}
 INFO_CACHE = {}
 
 
@@ -126,12 +132,27 @@ def is_primary(r):
     return bool(PRIMARY.search(r[3]) or PRIMARY_NAME.search(r[1]))
 
 
+def norm_url(u):
+    """An article link without tracking codes, #fragment, trailing slash or www/amp: the same article is one link."""
+    u = (u or "").split("#")[0]
+    base, _, q = u.partition("?")
+    keep = [p_ for p_ in q.split("&") if p_ and re.match(r"(?:id|p|story|article|v)=", p_)]
+    base = re.sub(r"^https?://(?:www\.|amp\.|m\.)?", "https://", base).rstrip("/")
+    return base + ("?" + "&".join(keep) if keep else "")
+
+
 def report_groups(reps):
     """The reports grouped by who really wrote them (Hannah, Wed Oct 28 and Thu Oct 29, 2026: one Canadian Press story
     run by the Times Colonist, CKOM, the Toronto Star and Global News under different headlines is ONE report; CTV News,
     CP24 and BNN Bloomberg running CTV's page is ONE report). Two reports are the same when they have the same source
     (the wire named in the page's byline, else the owner: Bell, Postmedia, Corus ...), the same headline, or the same
     opening sentence. Returns a list of groups (lists of reps), in the order of their first report."""
+    seen_u, uniq = set(), []
+    for r in reps:  # the same article twice (tracking codes): once
+        k_ = norm_url(r[3])
+        if k_ not in seen_u:
+            seen_u.add(k_); uniq.append(r)
+    reps = uniq
     n = len(reps)
     parent = list(range(n))
 
@@ -1245,13 +1266,18 @@ def related(items, stories, now, eds, papers, groups=()):
             # a running theme (e.g. Canada and the U.S.): everything on both sides of it is connected
             ra, rb = themes[name]
             rx0 = re.compile("|".join(re.escape(x) for x in words), re.I)
-            own_rows = [x for x in recent if x[3] in own]
+            own_n = {norm_url(u) for u in own}
+            own_rows = [x for x in recent if norm_url(x[3]) in own_n]
             picked, used = [], set()
             for dt, outlet, title, link, k in recent:
                 if not (ra.search(title) and rb.search(title)) or au.OPINION.search(title + " " + link) or VIDEO.search(link) or SPORT.search(title):
                     continue
-                if link in own or any(same_report(title, x[2]) or len(gc.keys(title) & gc.keys(x[2])) >= 4 for x in own_rows):
+                if norm_url(link) in own_n or any(same_report(title, x[2]) or len(gc.keys(title) & gc.keys(x[2])) >= 4 for x in own_rows):
                     continue  # the story's own reports, or the same report from another newsroom: already listed under it
+                # one entry per report: the same wire story or same-owner copy under another newsroom's name is skipped
+                if any(same_report(title, p_["title"]) or len(gc.keys(title) & gc.keys(p_["title"])) >= 4
+                       or (owner(au.clean_outlet(outlet)) == owner(p_["outlet"]) and len(gc.keys(title) & gc.keys(p_["title"])) >= 3) for p_ in picked):
+                    continue
                 g_ = gidx.get(link)
                 if g_ is not None and g_ in used:
                     continue
