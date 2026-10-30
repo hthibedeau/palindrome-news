@@ -61,6 +61,25 @@
 .can-mini { background: rgba(74, 22, 48, .92) !important; color: #FFFFFF !important; border-left: 3px solid #E7C27D !important; }
 .can-mini summary { color: #E7C27D !important; } .can-mini li a { color: #FFFFFF !important; } .can-mini li .o, .can-mini summary span { color: #F3D9A4 !important; }
 .can-mini li { border-top-color: rgba(231, 194, 125, .25) !important; }
+/* Condensed (Hannah, Thu Oct 29, 2026: "could you condense it more"): one-line header with a small medallion, tight
+   rows with the time inline, smaller headlines, the source note folded into one short line. Same red and gold. */
+.can-box { margin: 12px 0 14px !important; border-radius: 10px !important; box-shadow: 0 0 0 3px rgba(231, 194, 125, .16), 0 6px 18px rgba(20, 0, 10, .4); }
+.can-box .can-head { grid-template-columns: 24px auto 1fr !important; column-gap: 8px !important; padding: 7px 12px 6px !important; }
+.can-box .can-head::before { grid-row: auto !important; width: 24px !important; height: 24px !important; background-size: 15px !important; box-shadow: none !important; }
+.can-box .can-head > h4 { grid-column: 2 !important; font-size: 12px !important; letter-spacing: .16em !important; white-space: nowrap; }
+.can-box .can-head > .can-sub { grid-column: 3 !important; margin: 0 !important; font-size: 13px !important; opacity: .85; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.can-box .can-body { padding: 0 12px 6px !important; }
+.can-box li { padding: 7px 0 !important; line-height: 1.3; }
+.can-box time, .can-box .rk { display: inline !important; margin: 0 6px 0 0 !important; font-size: 10px !important; letter-spacing: .08em; }
+.can-box li a { font-size: 15px !important; }
+.can-box li:first-child a { font-size: 16px !important; font-weight: 600; }
+.can-box .o { font-size: 12px !important; }
+.can-box .can-note { margin: 2px 0 0 !important; padding-top: 5px !important; font-size: 10px !important; }
+@media (max-width: 420px) { .can-box .can-head > .can-sub { display: none; } }
+.can-box ol.can-few > li:nth-child(n+4) { display: none; }
+.can-box .can-more { display: inline-flex; align-items: center; min-height: 32px; margin: 2px 0 0; padding: 0 12px; border: 1px solid rgba(231, 194, 125, .7); border-radius: 999px; background: none; color: #F3D9A4; font: 600 12px var(--sans, system-ui); cursor: pointer; }
+.can-box .can-more:focus-visible { outline: 2px solid #F3D9A4; outline-offset: 2px; }
+.can-box li .rk.us { display: none !important; }  /* the subtitle already says "and the Canada-U.S. relationship" */
 .ab-reps, .rel-box, .ab-vids { background: rgba(15,11,25,.30) !important; border: 1px solid rgba(255,255,255,.16) !important; border-left: 4px solid #F2A7C3 !important;
   border-radius: 10px; padding: 4px 14px 10px !important; margin: 14px 0 !important; }
 .ab-vids { padding-top: 10px !important; }
@@ -6533,9 +6552,10 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
         + (c.stories || []).map((x) => '<li><time>' + esc(x.t) + '</time>' + (x.tie ? '<span class="rk us">' + esc(x.tie) + ' · </span>' : '') + a(x.url, esc(x.title)) + ' <span class="o">' + esc(x.outlet) + ' &#8599;</span></li>').join('')
         + (c.views || []).map((x) => '<li><span class="rk">' + esc(x.kind) + '</span>' + a(x.url, esc(x.title)) + ' <span class="o">' + esc(x.outlet) + ' &#8599;</span></li>').join('');
       if (!items) return;
+      const nItems = (c.official || []).length + (c.stories || []).length + (c.views || []).length;
       const box = document.createElement('aside'); box.className = 'can-box'; box.setAttribute('aria-label', 'The Canadian angle');
       box.innerHTML = '<div class="can-head"><h4>' + LEAF + 'The Canadian angle</h4><p class="can-sub">' + (c.us ? 'How this story, and the Canada–U.S. relationship today, reach Canada' : 'How this story reaches Canada') + '</p></div>'
-        + '<div class="can-body"><ol>' + items + '</ol><p class="can-note">Found automatically at ' + esc(fmt(AUTO.d.checked)) + ' ET. Headlines are the outlets’ own.</p></div>';
+        + '<div class="can-body"><ol class="' + (nItems > 3 ? 'can-few' : '') + '">' + items + '</ol>' + (nItems > 3 ? '<button type="button" class="can-more" aria-expanded="false" onclick="const o=this.previousElementSibling;const on=o.classList.toggle(\'can-few\');this.setAttribute(\'aria-expanded\',String(!on));this.textContent=on?\'Show ' + (nItems - 3) + ' more\':\'Show less\'">Show ' + (nItems - 3) + ' more</button>' : '') + '<p class="can-note">Checked ' + esc(fmt(AUTO.d.checked)) + ' ET · the outlets’ own headlines</p></div>';
       if (root.closest('section.lead')) { const d = root.querySelector('.dek') || root.querySelector('h1'); if (d) d.after(box); else root.appendChild(box); return; }
       if (root.classList.contains('ab-story')) {  // wide screens: floated beside the headline; phones: under the summary
         const wide = window.matchMedia('(min-width: 960px)').matches && root.offsetWidth >= 800, tag = root.querySelector(':scope > .tag'), after = root.querySelector(':scope > .bk-dek') || root.querySelector(':scope > .first');

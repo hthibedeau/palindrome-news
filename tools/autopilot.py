@@ -1420,8 +1420,10 @@ def _angle(name, words, mine, recent, eds, papers, otr, pool, anchor_words=None)
     def add(dt_iso, t, outlet, title, link, tie=""):
         n = gc.names(title) | gc.keys(title)
         base = re.sub(r"^(CityNews|CTV News|Global News|CBC News)\b.*", r"\1", outlet)  # one per network
-        if base in used or any(len(n & s_) >= 4 for s_ in seen) or any(re.sub(r"\W", "", p_["title"].lower()) == re.sub(r"\W", "", title.lower()) for p_ in picked):
-            return
+        kk = {k_ for k_ in gc.keys(title) | gc.names(title) if k_ not in WEAK}
+        if base in used or any(len(n & s_) >= 4 for s_ in seen) or any(re.sub(r"\W", "", p_["title"].lower()) == re.sub(r"\W", "", title.lower()) for p_ in picked) \
+                or any(same_report(title, p_["title"]) or len(kk & {k_ for k_ in gc.keys(p_["title"]) | gc.names(p_["title"]) if k_ not in WEAK}) >= 3 for p_ in picked):
+            return  # one line per story: "Ontario deficit hits record $16.9B" from three newsrooms is one line
         seen.append(n)
         used.add(base)
         picked.append({"t": t, "iso": dt_iso, "outlet": outlet, "title": clean(title), "url": link, "ca": bool(CAN_OUTLET.search(outlet)), "tie": tie})
