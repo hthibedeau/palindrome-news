@@ -1,6 +1,6 @@
 {
- "checked": "2026-10-31T05:55:48.772353+00:00",
- "checkedLabel": "Sat 1:55 a.m.",
+ "checked": "2026-10-31T06:05:48.699380+00:00",
+ "checkedLabel": "Sat 2:05 a.m.",
  "stories": [
   {
    "key": "top",
@@ -49,6 +49,15 @@
  ],
  "wire": [
   [
+   "Sat 1:48 a.m.",
+   "World",
+   "After the ‘martyr’s’ funeral: The families left behind by Yemen’s war",
+   "Al Jazeera",
+   "https://www.aljazeera.com/features/2026/10/31/after-the-martyrs-funeral-the-families-left-behind-by-yemens-war?traffic_source=rss",
+   "2026-10-31T05:48:25+00:00",
+   1
+  ],
+  [
    "Sat 1:44 a.m.",
    "World",
    "Spain train disaster clouds Sánchez chances of re-election",
@@ -64,6 +73,15 @@
    "The Canadian Press (via Winnipeg Free Press)",
    "https://www.winnipegfreepress.com/uncategorized/2026/10/31/scores-and-schedule-for-october-30-2026",
    "2026-10-31T05:39:46+00:00",
+   1
+  ],
+  [
+   "Sat 1:37 a.m.",
+   "World",
+   "Why are US, Russia and China racing to put nuclear reactors on the moon?",
+   "Al Jazeera",
+   "https://www.aljazeera.com/news/2026/10/31/why-are-us-russia-and-china-racing-to-put-nuclear-reactors-on-the-moon?traffic_source=rss",
+   "2026-10-31T05:37:51+00:00",
    1
   ],
   [
@@ -254,24 +272,6 @@
    "https://www.aljazeera.com/news/2026/10/31/us-execution-survivor-christa-pike-says-she-is-now-in-constant?traffic_source=rss",
    "2026-10-31T03:42:14+00:00",
    1
-  ],
-  [
-   "Fri 11:27 p.m.",
-   "World",
-   "Russia’s Novaya Gazeta ‘killed off’ after murders, arrests and pressure",
-   "Al Jazeera",
-   "https://www.aljazeera.com/video/newsfeed/2026/10/31/russias-novaya-gazeta-killed-off-after-murders-arrests-and-pressure?traffic_source=rss",
-   "2026-10-31T03:27:21+00:00",
-   1
-  ],
-  [
-   "Fri 11:00 p.m.",
-   "World",
-   "The cursed cruise: how the dream of never-ending luxury at sea became a nightmare",
-   "The Guardian",
-   "https://www.theguardian.com/news/ng-interactive/2026/oct/31/mv-odyssey-cruise-passengers-nightmare-stranded-cambodia",
-   "2026-10-31T03:00:31+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -317,6 +317,19 @@
    "theme": "Canada and the U.S."
   },
   {
+   "score": 14,
+   "title": "Russian return to ice hockey tournaments is ‘unwelcome,’ Carney says",
+   "url": "https://www.politico.com/news/2026/10/30/ruling-allowing-russia-back-in-ice-hockey-tournaments-is-unwelcome-mark-carney-says",
+   "outlets": 2,
+   "why": [
+    "National Newswatch #4",
+    "National Newswatch #6",
+    "National Newswatch #10",
+    "National Newswatch #18"
+   ],
+   "theme": ""
+  },
+  {
    "score": 13,
    "title": "Carney says, unequivocally, Canada seeking to become the EU's 1st associate member",
    "url": "https://www.cbc.ca/news/politics/european-union-canada-associate-member-von-der-leyen-9.7401989",
@@ -331,23 +344,20 @@
   },
   {
    "score": 11,
-   "title": "Russian return to ice hockey tournaments is ‘unwelcome,’ Carney says",
-   "url": "https://www.politico.com/news/2026/10/30/ruling-allowing-russia-back-in-ice-hockey-tournaments-is-unwelcome-mark-carney-says",
-   "outlets": 1,
-   "why": [
-    "National Newswatch #4",
-    "National Newswatch #6",
-    "National Newswatch #10",
-    "National Newswatch #18"
-   ],
-   "theme": ""
-  },
-  {
-   "score": 11,
    "title": "Trump tells voters to send El-Sayed ‘back to where he came from’",
    "url": "https://www.aljazeera.com/video/newsfeed/2026/10/31/trump-tells-voters-to-send-el-sayed-back-to-where-he-came?traffic_source=rss",
    "outlets": 9,
    "why": [],
+   "theme": ""
+  },
+  {
+   "score": 10,
+   "title": "Decision clearing path for Russia to join world juniors in Alberta is 'very unwelcome,' minister says",
+   "url": "https://www.cbc.ca/news/canada/russia-hockey-world-junior-championships-2027-canada-exploring-options-minister-says-9.7403796",
+   "outlets": 5,
+   "why": [
+    "CBC News front #5"
+   ],
    "theme": ""
   },
   {
@@ -386,16 +396,6 @@
    "outlets": 0,
    "why": [
     "National Newswatch #2"
-   ],
-   "theme": ""
-  },
-  {
-   "score": 5,
-   "title": "Decision clearing path for Russia to join world juniors in Alberta is 'very unwelcome,' minister says",
-   "url": "https://www.cbc.ca/news/canada/russia-hockey-world-junior-championships-2027-canada-exploring-options-minister-says-9.7403796",
-   "outlets": 2,
-   "why": [
-    "CBC News front #5"
    ],
    "theme": ""
   },
@@ -482,14 +482,24 @@
     "canus": true,
     "popular": 0,
     "us_election": false,
-    "weight": 5.5
+    "weight": 5.5,
+    "videos": [
+     {
+      "net": "Associated Press",
+      "url": "https://www.youtube.com/watch?v=QzIgcUrqo_I",
+      "title": "Carney seeks deal for Canada to become EU associate member as Trump reshapes alliances",
+      "img": "https://i.ytimg.com/vi/QzIgcUrqo_I/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     }
+    ]
    },
    {
     "key": "auto-27bd6978",
     "words": [
      "associate",
-     "european",
      "alliance",
+     "european",
      "future",
      "union",
      "eu"
@@ -949,7 +959,12 @@
    },
    {
     "title": "Russian return to ice hockey tournaments is ‘unwelcome,’ Carney says",
-    "score": 11,
+    "score": 14,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Decision clearing path for Russia to join world juniors in Alberta is 'very unwelcome,' minister says",
+    "score": 10,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
@@ -964,11 +979,6 @@
    },
    {
     "title": "Liberals jump ahead of Tories in fundraising as by-election calls loom",
-    "score": 5,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Decision clearing path for Russia to join world juniors in Alberta is 'very unwelcome,' minister says",
     "score": 5,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
@@ -1003,9 +1013,9 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "The country is connected. But is it secure?",
-    "score": 3,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+    "title": "Merz says Germany working to end Iran war that has cost Europe $112bn",
+    "score": 4,
+    "why": "not built: only 2 independent report(s) (3 sites)"
    }
   ],
   "top_n": 2,
@@ -1014,8 +1024,8 @@
     "key": "auto-f2be80e7",
     "words": [
      "justice",
-     "alaska",
      "senate",
+     "alaska",
      "dan"
     ],
     "score": 11,
@@ -1445,7 +1455,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=YAKJrEB7IQ4",
    "img": "https://i.ytimg.com/vi/YAKJrEB7IQ4/hqdefault.jpg",
-   "up": "2026-10-30",
+   "up": "2026-10-31",
    "added": "2026-10-31T03:38:22.058425+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1459,7 +1469,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=cTnofqFkahk",
    "img": "https://i.ytimg.com/vi/cTnofqFkahk/hqdefault.jpg",
-   "up": "2026-10-30",
+   "up": "2026-10-31",
    "added": "2026-10-31T03:38:22.058425+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1473,7 +1483,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=XzLga5YJbgQ",
    "img": "https://i.ytimg.com/vi/XzLga5YJbgQ/hqdefault.jpg",
-   "up": "2026-10-30",
+   "up": "2026-10-31",
    "added": "2026-10-31T03:53:15.192186+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1711,22 +1721,8 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=rmU-Fn5dKdM",
    "img": "https://i.ytimg.com/vi/rmU-Fn5dKdM/hqdefault.jpg",
-   "up": "2026-10-30",
-   "added": "2026-10-31T03:43:15.028644+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "-T2cDV9--z0",
-   "r": "us",
-   "o": "ABC News",
-   "t": "Data centers a key issue for Texas voters",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=-T2cDV9--z0",
-   "img": "https://i.ytimg.com/vi/-T2cDV9--z0/hqdefault.jpg",
    "up": "2026-10-31",
-   "added": "2026-10-31T04:03:14.987864+00:00",
+   "added": "2026-10-31T03:43:15.028644+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1741,20 +1737,6 @@
    "img": "https://i.ytimg.com/vi/GZVlK_OJJSQ/hqdefault.jpg",
    "up": "2026-10-31",
    "added": "2026-10-31T04:13:14.788893+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "H-ZBTZm-tDI",
-   "r": "us",
-   "o": "Associated Press",
-   "t": "Oleshky residents begin evacuation journey as local Ukraine-Russia truce holds",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=H-ZBTZm-tDI",
-   "img": "https://i.ytimg.com/vi/H-ZBTZm-tDI/hqdefault.jpg",
-   "up": "2026-10-31",
-   "added": "2026-10-31T05:32:08.510163+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1801,6 +1783,34 @@
    "geo": "unknown"
   },
   {
+   "id": "B_52oG6yPgM",
+   "r": "us",
+   "o": "ABC News",
+   "t": "FRIGHTLINE: From 'Wicked' to 'Practical Magic,' witches are having a moment",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=B_52oG6yPgM",
+   "img": "https://i.ytimg.com/vi/B_52oG6yPgM/hqdefault.jpg",
+   "up": "2026-10-31",
+   "added": "2026-10-31T06:05:48.699380+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "QzIgcUrqo_I",
+   "r": "us",
+   "o": "Associated Press",
+   "t": "Carney seeks deal for Canada to become EU associate member as Trump reshapes alliances",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=QzIgcUrqo_I",
+   "img": "https://i.ytimg.com/vi/QzIgcUrqo_I/hqdefault.jpg",
+   "up": "2026-10-31",
+   "added": "2026-10-31T06:05:48.699380+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
    "id": "y--fchKoVJM",
    "r": "world",
    "o": "Al Jazeera",
@@ -1815,20 +1825,6 @@
    "geo": "unknown"
   },
   {
-   "id": "VNslMg2kDog",
-   "r": "world",
-   "o": "Sky News",
-   "t": "Should the 'manosphere' be deemed a public health risk?",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=VNslMg2kDog",
-   "img": "https://i.ytimg.com/vi/VNslMg2kDog/hqdefault.jpg",
-   "up": "2026-10-30",
-   "added": "2026-10-30T20:57:30.418336+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "UyvliSl7Kl8",
    "r": "world",
    "o": "Sky News",
@@ -1839,20 +1835,6 @@
    "img": "https://i.ytimg.com/vi/UyvliSl7Kl8/hqdefault.jpg",
    "up": "2026-10-30",
    "added": "2026-10-30T21:01:44.684484+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "8YPtPR7mJdE",
-   "r": "world",
-   "o": "BBC News",
-   "t": "New clues on US-Iran diplomacy | BBC News",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=8YPtPR7mJdE",
-   "img": "https://i.ytimg.com/vi/8YPtPR7mJdE/hqdefault.jpg",
-   "up": "2026-10-30",
-   "added": "2026-10-30T23:01:32.359939+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1907,7 +1889,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=9Frq75pZo9E",
    "img": "https://i.ytimg.com/vi/9Frq75pZo9E/hqdefault.jpg",
-   "up": "2026-10-30",
+   "up": "2026-10-31",
    "added": "2026-10-31T03:28:21.707864+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1937,6 +1919,34 @@
    "img": "https://i.ytimg.com/vi/H3ZvAAasUg0/hqdefault.jpg",
    "up": "2026-10-30",
    "added": "2026-10-31T05:22:08.223207+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "2izq7nMcsa4",
+   "r": "world",
+   "o": "BBC News",
+   "t": "Indonesia pursues criminal charges against corporations responsible for wildfires | BBC News",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=2izq7nMcsa4",
+   "img": "https://i.ytimg.com/vi/2izq7nMcsa4/hqdefault.jpg",
+   "up": "2026-10-31",
+   "added": "2026-10-31T06:05:48.699380+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "-Xp_6jGteW4",
+   "r": "world",
+   "o": "Sky News",
+   "t": "The housing scheme accused of putting profits before vulnerable people",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=-Xp_6jGteW4",
+   "img": "https://i.ytimg.com/vi/-Xp_6jGteW4/hqdefault.jpg",
+   "up": "2026-10-31",
+   "added": "2026-10-31T06:05:48.699380+00:00",
    "pic": "globe",
    "geo": "unknown"
   }
@@ -2639,6 +2649,16 @@
    "img": "https://yukon-news.com/wp-content/uploads/sites/7/2026/10/260306-YKN-Yukon-Legislative-Assembly_01.jpg?w=1024"
   },
   {
+   "o": "Nelson Star",
+   "region": "Kootenays",
+   "arctic": false,
+   "h": "Bonny Lynn Fritz",
+   "u": "https://nelsonstar.com/2026/10/30/bonny-lynn-fritz/",
+   "t": "Sat 2:03 a.m.",
+   "desc": "In Loving Memory~ February 3, 1963 ~ October 27, 2026 It is with great sadness that we announce the passing of Bonny Lynn Fritz, who passed away peacefully in Nelson, […]",
+   "img": "https://nelsonstar.com/wp-content/uploads/sites/8/2026/10/Fritz2C20Bonny20photo.jpg?w=1024"
+  },
+  {
    "o": "Prince George Citizen",
    "region": "Northern B.C.",
    "arctic": false,
@@ -2647,16 +2667,6 @@
    "t": "Fri 11:30 p.m.",
    "desc": "Citra Logistics Ltd. borrowed $2 million from the Business Development Bank of Canada",
    "img": "https://www.vmcdn.ca/f/files/princegeorgematters/pgc-2026-03-20-court-of-appeal.png;w=1200;h=800;mode=crop"
-  },
-  {
-   "o": "CHEK News",
-   "region": "Vancouver Island",
-   "arctic": false,
-   "h": "Vancouver Island puzzle company showcases Canadian women’s art",
-   "u": "https://cheknews.ca/vancouver-island-puzzle-company-showcases-canadian-womens-art-1357988/",
-   "t": "Fri 9:56 p.m.",
-   "desc": "A Vancouver Island woman is seeing her puzzle business thrive, with designs all created by Canadian women.",
-   "img": "https://cheknews.ca/wp-content/uploads/2026/10/iwow-puzzle-3-e1793392407146.jpg"
   }
  ],
  "clocks": [
@@ -2671,11 +2681,11 @@
   },
   {
    "city": "Edmonton",
-   "w": "Jeff Rath",
-   "u": "https://www.cbc.ca/news/canada/calgary/alberta-separatist-jeff-rath-kicked-out-governing-united-conservative-party-9.7403521",
-   "title": "Alberta separatist Jeff Rath kicked out of governing United Conservative Party",
+   "w": "Russia",
+   "u": "https://www.cbc.ca/news/canada/russia-hockey-world-junior-championships-2027-canada-exploring-options-minister-says-9.7403796",
+   "title": "Decision clearing path for Russia to join world juniors in Alberta is 'very unwelcome,' minister says",
    "outlet": "CBC News",
-   "t": "Fri 7:16 p.m.",
+   "t": "Fri 8:56 p.m.",
    "hot": false
   },
   {
@@ -2685,7 +2695,7 @@
    "title": "Carney says, unequivocally, Canada seeking to become the EU's 1st associate member",
    "outlet": "CBC News",
    "t": "Sat 12:58 a.m.",
-   "hot": true
+   "hot": false
   },
   {
    "city": "Washington",
@@ -2707,11 +2717,11 @@
   },
   {
    "city": "Tehran",
-   "w": "Hormuz",
-   "u": "https://www.aljazeera.com/video/newsfeed/2026/10/31/iran-says-four-tankers-on-fire-after-striking-mines-in-hormuz?traffic_source=rss",
-   "title": "Iran says four tankers on fire after striking mines in Hormuz",
-   "outlet": "Al Jazeera",
-   "t": "Fri 11:55 p.m.",
+   "w": "Germany",
+   "u": "https://www.middleeasteye.net/live-blog/live-blog-update/merz-says-germany-working-end-iran-war-has-cost-europe-112bn",
+   "title": "Merz says Germany working to end Iran war that has cost Europe $112bn",
+   "outlet": "Middle East Eye",
+   "t": "Fri 10:06 p.m.",
    "hot": false
   }
  ],
@@ -2801,13 +2811,58 @@
  "pm": [],
  "blogs_auto": [
   {
-   "net": "Al Jazeera",
-   "story": "Iran war live: 4 tankers hit in Hormuz; Trump says conflict will end ‘",
-   "title": "Iran war live: 4 tankers hit in Hormuz; Trump says conflict will end ‘soon’",
-   "url": "https://www.aljazeera.com/news/liveblog/2026/10/31/iran-war-live-oil-tankers-hit-in-hormuz-trump-says-conflict-will-end-soon?traffic_source=rss",
-   "updated": "2026-10-31T05:56:22+00:00",
+   "net": "Middle East Eye",
+   "story": "Israeli air strikes target southern Lebanese town of Kfar Tebnit",
+   "title": "Israeli air strikes target southern Lebanese town of Kfar Tebnit",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-air-strikes-target-southern-lebanese-town-kfar-tebnit",
+   "updated": "2026-10-31T05:59:55+00:00",
    "ended": false,
-   "img": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-10-30T230320Z_1495036221_RC2YDOASHI7R_RTRMADP_3_IRAN-CRISIS-SHIPPING-HORMUZ-1793404633.jpg?resize=1920%2C1139"
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-10/000_D4F36DD.jpg"
+  },
+  {
+   "net": "Middle East Eye",
+   "story": "Palestinian journalist returns home after 15 months in Israeli detenti",
+   "title": "Palestinian journalist returns home after 15 months in Israeli detention",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-journalist-returns-home-after-15-months-israeli-detention",
+   "updated": "2026-10-31T05:26:15+00:00",
+   "ended": false,
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-10/000_D4F36DD.jpg"
+  },
+  {
+   "net": "Middle East Eye",
+   "story": "Iran warns of 'earth-shattering blow' as Araghchi slams Germany's war ",
+   "title": "Iran warns of 'earth-shattering blow' as Araghchi slams Germany's war stance",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-warns-earth-shattering-blow-araghchi-slams-germanys-war-stance",
+   "updated": "2026-10-31T04:58:52+00:00",
+   "ended": false,
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-10/000_D4F36DD.jpg"
+  },
+  {
+   "net": "Middle East Eye",
+   "story": "'We must be so strong that no dares covet our land', Pezeshkian says",
+   "title": "'We must be so strong that no dares covet our land', Pezeshkian says",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/we-must-be-so-strong-no-dares-covet-our-land-pezeshkian-says",
+   "updated": "2026-10-31T04:26:13+00:00",
+   "ended": false,
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-10/000_D4F36DD.jpg"
+  },
+  {
+   "net": "Middle East Eye",
+   "story": "Anyone attending, organising Palestine Action protest will be arrested",
+   "title": "Anyone attending, organising Palestine Action protest will be arrested, Metropolitan Police warns",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/anyone-attending-organising-palestine-action-protest-will-be-arrested",
+   "updated": "2026-10-31T03:45:09+00:00",
+   "ended": false,
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-10/000_D4F36DD.jpg"
+  },
+  {
+   "net": "Middle East Eye",
+   "story": "Hormuz shipping traffic remains 70% below pre-war levels, UKMTO says",
+   "title": "Hormuz shipping traffic remains 70% below pre-war levels, UKMTO says",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/hormuz-shipping-traffic-remains-70-below-pre-war-levels-ukmto-says",
+   "updated": "2026-10-31T03:16:51+00:00",
+   "ended": false,
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-10/000_D4F36DD.jpg"
   }
  ],
  "related": {
@@ -3091,53 +3146,17 @@
   }
  },
  "canangle_live": {
-  "https://www.aljazeera.com/news/liveblog/2026/10/31/iran-war-live-oil-tankers-hit-in-hormuz-trump-says-conflict-will-end-soon?traffic_source=rss": {
-   "story": "Iran war live: 4 tankers hit in Hormuz; Trump says conflict will end ‘soon’",
-   "us": true,
-   "specific": 5,
+  "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-journalist-returns-home-after-15-months-israeli-detention": {
+   "story": "Palestinian journalist returns home after 15 months in Israeli detention",
+   "us": false,
+   "specific": 1,
    "stories": [
     {
-     "t": "Sat 1:00 a.m.",
-     "iso": "2026-10-31T05:00:59.003000+00:00",
-     "outlet": "CBC News",
-     "title": "U.S. charges 5 more Canadians with voter fraud offences amid Trump administration crackdown",
-     "url": "https://www.cbc.ca/news/world/5-canadians-charged-us-voter-fraud-9.7403604",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Fri 10:39 p.m.",
-     "iso": "2026-10-31T02:39:25+00:00",
-     "outlet": "BBC News",
-     "title": "Trump's tariffs could shutter this Canadian town - its residents are fighting to save it",
-     "url": "https://www.bbc.co.uk/news/articles/cmly016ep243o?at_medium=RSS&at_campaign=rss",
-     "ca": false,
-     "tie": ""
-    },
-    {
-     "t": "Fri 7:35 p.m.",
-     "iso": "2026-10-30T23:35:05+00:00",
-     "outlet": "Politico",
-     "title": "Carney says he can wait out Trump for trade deal",
-     "url": "https://www.politico.com/news/2026/10/30/mark-carney-interview-trump-trade-deal-01144329",
-     "ca": false,
-     "tie": ""
-    },
-    {
-     "t": "Thu 1:49 p.m.",
-     "iso": "2026-10-29T17:49:47+00:00",
-     "outlet": "The Guardian",
-     "title": "Cuts like a knife: Canadian rocker Bryan Adams trolls Trump with new song",
-     "url": "https://www.theguardian.com/world/2026/oct/29/bryan-adams-donald-trump-song",
-     "ca": false,
-     "tie": ""
-    },
-    {
-     "t": "Thu 1:00 p.m.",
-     "iso": "2026-10-29T17:00:00+00:00",
+     "t": "Wed 4:00 a.m.",
+     "iso": "2026-10-28T08:00:00+00:00",
      "outlet": "Toronto Star",
-     "title": "Ontario deficit hits record $16.9B as Trump tariffs batter economy",
-     "url": "https://www.thestar.com/politics/provincial/ontario-deficit-hits-record-16-9b-as-trump-tariffs-batter-economy/article_888dcdb2-a46e-4677-9331-0c0f2e7d2d17.html",
+     "title": "Canada's vow to ban imports from Israeli settlements in the West Bank, explained",
+     "url": "https://www.thestar.com/news/canada/canada-s-vow-to-ban-imports-from-israeli-settlements-in-the-west-bank-explained/article_0c57fa0f-0a30-54ae-9778-4fb6bb215814.html",
      "ca": true,
      "tie": ""
     }
@@ -3628,8 +3647,8 @@
    "at": "2026-10-29T19:14:04.423397+00:00"
   },
   "A_p82aTTRbE": {
-   "v": "unplayable",
-   "at": "2026-10-31T05:55:48.772353+00:00"
+   "v": "ok",
+   "at": "2026-10-31T06:05:48.699380+00:00"
   },
   "AjJr_wCVx70": {
    "v": "unknown",
@@ -4205,14 +4224,16 @@
   }
  },
  "geo_blocked": [
-  "-NabWfv-VdA",
-  "A_p82aTTRbE"
+  "-NabWfv-VdA"
  ],
  "noembed": [
+  "A_p82aTTRbE",
+  "J3FV4iY8p5w",
   "L6qtnHZxwEw",
   "NuEr0Q_AS6U",
   "ldElU-Q5Qyo",
   "nfy6JJILPJI",
-  "t_HBrWb84eY"
+  "t_HBrWb84eY",
+  "wV8hRa0ARJ8"
  ]
 }
