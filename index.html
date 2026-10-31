@@ -930,6 +930,8 @@ header.site { border-bottom: 0; }
 .clocks .wrap::-webkit-scrollbar { display: none; }
 .clk { position: relative; flex: 1 0 auto; min-width: 128px; display: flex; flex-direction: column; gap: 1px; padding: 9px 16px; border-left: 1px solid var(--line); }
 .clk:first-child { border-left: 0; padding-left: 0; }
+.clk.clk-world { border-left: 2px solid var(--line); }  /* the world cities in the news, after Canada and Washington */
+@media (min-width: 900px) { .clk { flex: 1 1 0; min-width: 0; padding: 9px 12px; overflow: hidden; } .clk .t { font-size: 20px; } .clk .cgo { white-space: normal; } }  /* every clock fits on a wide screen */
 .clk .city { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
 .clk .t { font-family: var(--serif); font-size: 22px; font-weight: 600; line-height: 1.1; color: var(--title); font-variant-numeric: tabular-nums; }
 .clk .t small { font-family: var(--sans); font-size: 11px; font-weight: 600; color: var(--muted); margin-left: 3px; }
@@ -5005,20 +5007,23 @@ header.site { border-bottom: 0; }
   ];
 
   // Wall of clocks
+  // Every Canadian time zone and Washington, always; the world cities in the news are added by each update
+  // (tools/autopilot.py clock_topics, Hannah, Sat Oct 31, 2026)
   const clocks = [
     ['Vancouver', 'America/Vancouver', '', '', false],
     ['Edmonton', 'America/Edmonton', '', '', false],
+    ['Winnipeg', 'America/Winnipeg', '', '', false],
     ['Ottawa', 'America/Toronto', '', '', false],
-    ['Washington', 'America/New_York', '', '', false],
-    ['Kyiv', 'Europe/Kyiv', '', '', false],
-    ['Tehran', 'Asia/Tehran', '', '', false]
+    ['Halifax', 'America/Halifax', '', '', false],
+    ["St. John's", 'America/St_Johns', '', '', false],
+    ['Washington', 'America/New_York', '', '', false]
   ];
   const lat = (u) => { try { return latestOf(u); } catch (e) { return u; } };
   function drawClocks() {
-    $('clocks').innerHTML = clocks.map(([c, tz, w, h, hot, tip]) => {
+    $('clocks').innerHTML = clocks.map(([c, tz, w, h, hot, tip], i) => {
       let t = '';
       try { t = new Date().toLocaleTimeString('en-CA', { hour: 'numeric', minute: '2-digit', timeZone: tz }).replace(/\s?([ap])\.?m\.?/i, ' <small>$1.m.</small>'); } catch (e) {}
-      return '<div class="clk' + (hot ? ' hot' : '') + '"><span class="city">' + esc(c) + '</span><span class="t">' + t + '</span>' + (w && h ? '<a class="cgo" href="' + esc(lat(h)) + '" target="_blank" rel="noopener"' + (tip ? ' title="' + esc(tip) + '"' : '') + '>' + esc(w) + '</a>' : '') + '</div>';
+      return '<div class="clk' + (hot ? ' hot' : '') + (i && clocks[i - 1][0] === 'Washington' ? ' clk-world' : '') + '"><span class="city">' + esc(c) + '</span><span class="t">' + t + '</span>' + (w && h ? '<a class="cgo" href="' + esc(lat(h)) + '" target="_blank" rel="noopener"' + (tip ? ' title="' + esc(tip) + '"' : '') + '>' + esc(w) + '</a>' : '') + '</div>';
     }).join('');
   }
   drawClocks();
@@ -5028,7 +5033,9 @@ header.site { border-bottom: 0; }
   // A city with no news in the last 18 hours shows only its time.
   window.PAL_clocks = (C) => {
     if (!Array.isArray(C)) return;
-    clocks.forEach((row) => { const c = C.find((x) => x.city === row[0]); row[2] = c ? c.w : ''; row[3] = c ? c.u : ''; row[4] = !!(c && c.hot); row[5] = c ? c.title + ' (' + c.outlet + ', ' + c.t + ')' : ''; });
+    const row = (c) => [c.city, c.tz, c.w || '', c.u || '', !!c.hot, c.w ? c.title + ' (' + c.outlet + ', ' + c.t + ')' : ''];
+    if (C.length && C[0].tz) { clocks.length = 0; C.forEach((c) => clocks.push(row(c))); }  // the update's full set, in its order
+    else clocks.forEach((r) => { const c = C.find((x) => x.city === r[0]); r[2] = c ? c.w : ''; r[3] = c ? c.u : ''; r[4] = !!(c && c.hot); r[5] = c ? c.title + ' (' + c.outlet + ', ' + c.t + ')' : ''; });
     drawClocks();
   };
 

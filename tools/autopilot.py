@@ -2345,16 +2345,46 @@ def attach_reports(lv, items, now):
 # topic of the biggest story there in the last CLOCK_HOURS, linked to its newest report; red when it is breaking. A city
 # with no news in that time shows only its time, never an old word.
 CLOCK_HOURS = 18
-CLOCK_CITIES = [  # city, the news that belongs to it
-    ("Vancouver", r"\b(B\.?C\.?|British Columbia|Vancouver|Victoria|Surrey|Burnaby|Richmond|Kelowna|Kamloops|Nanaimo|Abbotsford|Eby|Rustad)\b"),
-    ("Edmonton", r"\b(Alberta|Albertans?|Edmonton|Calgary|Red Deer|Lethbridge|Fort McMurray|Danielle Smith|Nenshi)\b"),
-    ("Ottawa", r"\b(Ottawa|Parliament|House of Commons|Senate of Canada|Carney|Poilievre|federal government|Liberals?|Conservatives|NDP|Bloc|Hill Times|Champagne|Anand|LeBlanc|Joly)\b"),
-    ("Washington", r"\b(Washington|White House|Trump|Vance|Congress|Senate|House Republicans|House Democrats|Pentagon|Supreme Court|midterms?|Election Day|U\.S\. election)\b"),
-    ("Kyiv", r"\b(Ukraine|Ukrainians?|Kyiv|Kiev|Zelensky|Zelenskyy|Kharkiv|Odesa|Dnipro|Lviv|Zaporizhzhia|Donbas|Donetsk|Kherson|Sumy)\b"),
-    ("Tehran", r"\b(Iran|Iranian|Tehran|Hormuz|Khamenei|Pezeshkian|Araghchi|IRGC)\b"),
+# Hannah, Sat Oct 31, 2026: every Canadian time zone and Washington always; then the world cities where the day's
+# biggest international stories are, chosen by the news on every update (WORLD_CLOCKS, at most WORLD_CLOCK_MAX).
+# Yellowknife keeps Edmonton's time and Iqaluit keeps Ottawa's, so their news counts for those clocks too.
+CLOCK_CITIES = [  # city, time zone, the news that belongs to it
+    ("Vancouver", "America/Vancouver", r"\b(B\.?C\.?|British Columbia|Vancouver|Victoria|Surrey|Burnaby|Richmond|Kelowna|Kamloops|Nanaimo|Abbotsford|Prince George|Eby|Rustad|Yukon|Whitehorse)\b"),
+    ("Edmonton", "America/Edmonton", r"\b(Alberta|Albertans?|Edmonton|Calgary|Red Deer|Lethbridge|Medicine Hat|Fort McMurray|Danielle Smith|Nenshi|N\.W\.T\.|Northwest Territories|Yellowknife)\b"),
+    ("Winnipeg", "America/Winnipeg", r"\b(Manitoba|Manitobans?|Winnipeg|Brandon|Thompson|Kinew|Saskatchewan|Saskatoon|Regina|Prince Albert|Scott Moe|Moe government)\b"),
+    ("Ottawa", "America/Toronto", r"\b(Ottawa|Parliament|House of Commons|Senate of Canada|Carney|Poilievre|federal government|Liberals?|Conservatives|NDP|Bloc|Hill Times|Champagne|Anand|LeBlanc|Joly|Nunavut|Iqaluit)\b"),
+    ("Halifax", "America/Halifax", r"\b(Nova Scotia|Nova Scotians?|Halifax|Dartmouth|Cape Breton|Sydney, N\.S\.|Tim Houston|New Brunswick|Fredericton|Moncton|Saint John|Susan Holt|P\.E\.I\.|Prince Edward Island|Charlottetown)\b"),
+    ("St. John's", "America/St_Johns", r"\b(Newfoundland|Labrador|N\.L\.|St\. John's|St\. John’s|Corner Brook|Gander|Happy Valley-Goose Bay)\b"),
+    ("Washington", "America/New_York", r"\b(Washington|White House|Trump|Vance|Congress|Senate|House Republicans|House Democrats|Pentagon|Supreme Court|midterms?|Election Day|U\.S\. election)\b"),
+]
+WORLD_CLOCK_MAX = 3
+WORLD_CLOCK_MIN_OUTLETS = 3   # a world city needs a story this many newsrooms are carrying
+WORLD_CLOCKS = [  # city, time zone, the news that belongs to it
+    ("Kyiv", "Europe/Kyiv", r"\b(Ukraine|Ukrainians?|Kyiv|Kiev|Zelensky|Zelenskyy|Kharkiv|Odesa|Dnipro|Lviv|Zaporizhzhia|Donbas|Donetsk|Kherson|Sumy|Oleshky)\b"),
+    ("Moscow", "Europe/Moscow", r"\b(Kremlin|Putin|Moscow|Lavrov|Peskov)\b"),
+    ("Tehran", "Asia/Tehran", r"\b(Iran|Iranian|Tehran|Hormuz|Khamenei|Pezeshkian|Araghchi|IRGC)\b"),
+    ("Jerusalem", "Asia/Jerusalem", r"\b(Israel|Israeli|Netanyahu|Jerusalem|Tel Aviv|Gaza|West Bank|Hamas|Hezbollah)\b"),
+    ("Brussels", "Europe/Brussels", r"\b(EU|European Union|European Commission|von der Leyen|Brussels|NATO|Rutte)\b"),
+    ("London", "Europe/London", r"\b(U\.?K\.?|Britain|British|London|Starmer|Downing Street|King Charles|Westminster|Scotland|Wales)\b"),
+    ("Paris", "Europe/Paris", r"\b(France|French|Paris|Macron|Élysée|Elysee)\b"),
+    ("Berlin", "Europe/Berlin", r"\b(Germany|German|Berlin|Merz|Bundestag)\b"),
+    ("Beijing", "Asia/Shanghai", r"\b(China|Chinese|Beijing|Xi Jinping|Xi|Shanghai|Hong Kong|Taiwan|Taipei)\b"),
+    ("Tokyo", "Asia/Tokyo", r"\b(Japan|Japanese|Tokyo|Takaichi)\b"),
+    ("Seoul", "Asia/Seoul", r"\b(South Korea|North Korea|Korean|Seoul|Pyongyang|Kim Jong)\b"),
+    ("New Delhi", "Asia/Kolkata", r"\b(India|Indian|New Delhi|Delhi|Modi|Mumbai)\b"),
+    ("Mexico City", "America/Mexico_City", r"\b(Mexico|Mexican|Sheinbaum|Mexico City)\b"),
+    ("Caracas", "America/Caracas", r"\b(Venezuela|Venezuelan|Caracas|Maduro|Machado)\b"),
+    ("Havana", "America/Havana", r"\b(Cuba|Cuban|Havana)\b"),
+    ("Brasília", "America/Sao_Paulo", r"\b(Brazil|Brazilian|Brasília|Lula|Bolsonaro|São Paulo|Rio)\b"),
+    ("Cairo", "Africa/Cairo", r"\b(Egypt|Egyptian|Cairo|Sisi|Sudan|Khartoum)\b"),
+    ("Nairobi", "Africa/Nairobi", r"\b(Kenya|Kenyan|Nairobi|Ethiopia|Somalia)\b"),
+    ("Sydney", "Australia/Sydney", r"\b(Australia|Australian|Sydney|Canberra|Albanese|Melbourne)\b"),
 ]
 # short topic words, checked in order against the story's headlines; the first that fits names the story
 CLOCK_TOPICS = [
+    (r"\b(time zone|daylight time|daylight saving|clocks? (?:go|fall|spring)|time change|standard time)\b", "Time change"),
+    (r"\b(emissions?|climate|carbon|pipeline|oilsands|oil sands|EVs?|electric vehicles?)\b", "Climate"),
+    (r"\b(hiring|jobs?|layoffs?|laid off|workers)\b", "Jobs"), (r"\b(mayor|city council|councillors?|municipal)\b", "City hall"),
     (r"\b(Hormuz)\b", "Hormuz"), (r"\b(EU|European Union|von der Leyen)\b", "Canada–EU"), (r"\bsummit\b", "Summit"), (r"\bmidterms?\b", "Midterms"),
     (r"\b(astronauts?|space station|Artemis|NASA|launch)\b", "Space"), (r"\b(privacy|data breach|hack\w*|cyber\w*)\b", "Privacy"),
     (r"\b(by-?election|election|vote|votes|voting|ballots?|referendum|polls? close)\b", "{vote}"), (r"\bbudget\b", "Budget"), (r"\bfall economic statement\b", "Economic update"),
@@ -2373,55 +2403,91 @@ CLOCK_TOPICS = [
 ]
 
 
+def _clock_story(city, rx, items, groups, now):
+    """The biggest story in a city's news in the last CLOCK_HOURS (the most newsrooms carrying it), and how many carry it."""
+    import autoupdate as au
+    best, top_n = None, 0
+    for g in (groups or [])[:40]:
+        rows = [r for r in g.get("rows") or [] if rx.search(r[2]) and (now - r[0]).total_seconds() < CLOCK_HOURS * 3600
+                and not SPORT.search(r[2] + " " + r[3]) and not au.OPINION.search(r[2] + " " + r[3]) and not NOT_NEWS.search(r[2] + " " + r[3])
+                and not re.match(r"\s*(Investigation|Analysis|Opinion|Explainer|Feature|Podcast|Watch|Video)\b\s*[:|]", r[2], re.I)]
+        n = len({au.clean_outlet(r[1]) for r in rows})
+        if n > top_n:
+            best, top_n = sorted(rows, reverse=True), n
+    if not best:  # or else the newest headline about it in the feed
+        rows = sorted([(d, o, t, l) for d, o, t, l, _ in items if rx.search(t) and (now - d).total_seconds() < CLOCK_HOURS * 3600
+                       and not SPORT.search(t + " " + l) and not au.OPINION.search(t + " " + l) and not NOT_NEWS.search(t + " " + l)], reverse=True)
+        best, top_n = rows[:1], (1 if rows else 0)
+    return best or [], top_n
+
+
+def _clock_word(best, rx):
+    text = " ".join(r[2] for r in best[:6])
+    word = ""
+    for t_ in (best[0][2], text):  # the newest headline names it; failing that, the story's other headlines
+        for trx, name in CLOCK_TOPICS:
+            if re.search(trx, t_, re.I if not trx.startswith("\\b(EU") else 0):
+                word = name
+                break
+        if word:
+            break
+    if word == "{vote}":
+        word = "Election" if re.search(r"\belection\b", text, re.I) else "Referendum" if re.search(r"referendum", text, re.I) else "The vote"
+    if not word:  # the story's own leading name, as the headlines write it (a person, a company, a place)
+        from collections import Counter
+        c = Counter()
+        for r in best[:6]:
+            for m in re.finditer(r"(?<!^)(?<![.:?!] )\b([A-Z][\w’'.-]+(?: [A-Z][\w’'.-]+){0,2})", r[2]):
+                x = m.group(1).strip(".’'")
+                x = re.sub(r"[’']s$", "", x)
+                if (not rx.search(x) and 4 <= len(x) <= 22 and "." not in x and x.lower() not in CLOCK_NOT_NAMES):
+                    c[x] += 1
+        word = c.most_common(1)[0][0] if c else ""
+    return word
+
+
+# never a city's word on its own: places, outlets and everyday capitalized words
+CLOCK_NOT_NAMES = {"canada", "canadian", "canadians", "the", "city", "province", "provincial", "federal", "government", "police",
+                   "news", "cbc", "ctv", "global", "here", "what", "why", "how", "this", "these", "new", "first", "north", "south",
+                   "east", "west", "update", "live", "watch", "breaking", "report", "says", "monday", "tuesday", "wednesday",
+                   "thursday", "friday", "saturday", "sunday", "november", "october", "december"}
+
+
 def clock_topics(items, groups, now):
     import autoupdate as au
-    out = []
-    for city, rx_ in CLOCK_CITIES:
-        rx = re.compile(rx_)
-        best = None
-        # the biggest story there: the highest-ranked story group with a recent headline about the place ...
-        # (the most newsrooms carrying it; features, analysis and opinion don't count)
-        top_n = 0
-        for g in (groups or [])[:40]:
-            rows = [r for r in g.get("rows") or [] if rx.search(r[2]) and (now - r[0]).total_seconds() < CLOCK_HOURS * 3600
-                    and not SPORT.search(r[2] + " " + r[3]) and not au.OPINION.search(r[2] + " " + r[3])
-                    and not re.match(r"\s*(Investigation|Analysis|Opinion|Explainer|Feature|Podcast|Watch|Video)\b\s*[:|]", r[2], re.I)]
-            n = len({au.clean_outlet(r[1]) for r in rows})
-            if n > top_n:
-                best, top_n = sorted(rows, reverse=True), n
-        # ... or else the newest headline about it in the feed
-        if not best:
-            rows = sorted([(d, o, t, l) for d, o, t, l, _ in items if rx.search(t) and (now - d).total_seconds() < CLOCK_HOURS * 3600
-                           and not SPORT.search(t + " " + l) and not au.OPINION.search(t + " " + l)], reverse=True)
-            best = rows[:1]
-        if not best:
-            continue
-        text = " ".join(r[2] for r in best[:6])
-        word = ""
-        for t_ in (best[0][2], text):  # the newest headline names it; failing that, the story's other headlines
-            for trx, name in CLOCK_TOPICS:
-                if re.search(trx, t_, re.I if not trx.startswith("\\b(EU") else 0):
-                    word = name
-                    break
-            if word:
-                break
-        if word == "{vote}":
-            word = "Election" if re.search(r"\belection\b", text, re.I) else "Referendum" if re.search(r"referendum", text, re.I) else "The vote"
-        if not word:  # the story's own leading name, as the headlines write it (a person, a company, a place)
-            from collections import Counter
-            c = Counter()
-            for r in best[:6]:
-                for m in re.finditer(r"(?<!^)(?<![.:?!] )\b([A-Z][\w’'.-]+(?: [A-Z][\w’'.-]+){0,2})", r[2]):
-                    x = m.group(1).strip(".’'")
-                    if not rx.search(x) and len(x) <= 22 and x not in ("Canada", "Canadian", "Canadians", "The", "A", "U.S.", "CBC", "CTV"):
-                        c[x] += 1
-            word = c.most_common(1)[0][0] if c else ""
-        if not word:
-            continue
+
+    def entry(city, tz, best, word, world):
         lead = best[0]
         outlets = {au.clean_outlet(r[1]) for r in best}
-        out.append({"city": city, "w": word, "u": lead[3], "title": clean(lead[2]), "outlet": au.clean_outlet(lead[1]), "t": w.eastern(lead[0]),
-                    "hot": (now - lead[0]).total_seconds() < 3600 and len(outlets) >= 3})
+        return {"city": city, "tz": tz, "world": world, "w": word, "u": lead[3], "title": clean(lead[2]), "outlet": au.clean_outlet(lead[1]),
+                "t": w.eastern(lead[0]), "hot": (now - lead[0]).total_seconds() < 3600 and len(outlets) >= 3}
+    out, used = [], set()
+    for city, tz, rx_ in CLOCK_CITIES:  # Canada's six time zones and Washington: always shown (a city with no news: time only)
+        rx = re.compile(rx_)
+        best, _ = _clock_story(city, rx, items, groups, now)
+        word = _clock_word(best, rx) if best else ""
+        if best and word:
+            out.append(entry(city, tz, best, word, False))
+            used.add(best[0][3])
+        else:
+            out.append({"city": city, "tz": tz, "world": False, "w": "", "u": "", "hot": False})
+    # the world: the cities with the most-covered stories right now, at most WORLD_CLOCK_MAX, never the same story twice
+    cands = []
+    for city, tz, rx_ in WORLD_CLOCKS:
+        rx = re.compile(rx_)
+        best, n = _clock_story(city, rx, items, groups, now)
+        if not best or n < WORLD_CLOCK_MIN_OUTLETS or best[0][3] in used:
+            continue
+        word = _clock_word(best, rx)
+        if word:
+            cands.append((n, (now - best[0][0]).total_seconds(), city, tz, best, word))
+    for n, _, city, tz, best, word in sorted(cands, key=lambda c: (-c[0], c[1])):
+        if len([o for o in out if o.get("world")]) >= WORLD_CLOCK_MAX:
+            break
+        if best[0][3] in used:
+            continue
+        used.add(best[0][3])
+        out.append(entry(city, tz, best, word, True))
     return out
 
 
