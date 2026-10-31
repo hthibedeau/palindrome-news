@@ -1,6 +1,4 @@
-<!doctype html><html><head>
-<script>/* tools/trim_layer.html: front page or a section's own page */(function(){var v=new URLSearchParams(location.search).get('view');document.documentElement.classList.add(v?'pal-view':'pal-home');})();</script>
-<meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}#autoBreaking .ab-story + .ab-story { margin-top: 26px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,.28); }
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}#autoBreaking .ab-story + .ab-story { margin-top: 26px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,.28); }
 #autoBreaking .ab-second h2 { font-size: clamp(22px, 2.8vw, 32px); }
 #autoBreaking .first a, #autoBreaking h2 a { color: inherit; }
 #autoBreaking .ab-cr { opacity: .8; font-size: 14px; }
@@ -1538,6 +1536,7 @@ header.site { border-bottom: 0; }
     </div>
     <nav class="sections" aria-label="Sections">
       <a href="#top" aria-current="page">Top stories</a>
+      <a href="#board">Story board</a>
       <a href="#sec-canada">Canada</a>
       <a href="#sec-politics">Politics</a>
       <a href="#sec-business">Business &amp; Economy</a>
@@ -1548,7 +1547,7 @@ header.site { border-bottom: 0; }
       <a href="#smaller">Smaller newsrooms</a>
       <a href="#breakdown">Breakdown</a>
       <a href="#video">Watch</a>
-      <a href="#comingUp">Coming up</a>
+      <a href="#ahead">What to watch</a>
       <a href="#mostread">Most read</a>
       <a href="#reading">Today's reading</a>
       <a href="#ontherecord">On the record</a>
@@ -1562,7 +1561,7 @@ header.site { border-bottom: 0; }
   <div class="wrap">
     <a class="mini" href="#top" tabindex="-1">Palindrome <em>N</em></a>
     <nav aria-label="Sections">
-      <a href="#breakdown" tabindex="-1">Breakdown</a><a href="#video" tabindex="-1">Watch</a><a href="#comingUp" tabindex="-1">Coming up</a><a href="#sec-canada" tabindex="-1">Canada</a><a href="#sec-politics" tabindex="-1">Politics</a><a href="#sec-business" tabindex="-1">Business</a><a href="#sec-world" tabindex="-1">World</a><a href="#canus" tabindex="-1">Canada &amp; U.S.</a><a href="#usmedia" tabindex="-1">U.S. media on Canada</a><a href="#sec-us" tabindex="-1">U.S.</a><a href="#smaller" tabindex="-1">Smaller newsrooms</a><a href="#mostread" tabindex="-1">Most read</a><a href="#reading" tabindex="-1">Reading</a><a href="#ontherecord" tabindex="-1">On the record</a><a href="#editorials" tabindex="-1">Editorials</a><a href="#godeeper" tabindex="-1">Go deeper</a>
+      <a href="#breakdown" tabindex="-1">Breakdown</a><a href="#video" tabindex="-1">Watch</a><a href="#ahead" tabindex="-1">What to watch</a><a href="#sec-canada" tabindex="-1">Canada</a><a href="#sec-politics" tabindex="-1">Politics</a><a href="#sec-business" tabindex="-1">Business</a><a href="#sec-world" tabindex="-1">World</a><a href="#canus" tabindex="-1">Canada &amp; U.S.</a><a href="#usmedia" tabindex="-1">U.S. media on Canada</a><a href="#sec-us" tabindex="-1">U.S.</a><a href="#smaller" tabindex="-1">Smaller newsrooms</a><a href="#mostread" tabindex="-1">Most read</a><a href="#reading" tabindex="-1">Reading</a><a href="#ontherecord" tabindex="-1">On the record</a><a href="#editorials" tabindex="-1">Editorials</a><a href="#godeeper" tabindex="-1">Go deeper</a>
     </nav>
     <span class="now"><span class="live"><i aria-hidden="true"></i></span><span id="clock2">5:15 p.m.</span> ET</span>
   </div>
@@ -1716,7 +1715,7 @@ header.site { border-bottom: 0; }
   </section>
 
   <section id="ahead" aria-labelledby="er-h" style="scroll-margin-top: 64px">
-    <div class="band-head"><h2 id="er-h">Listen</h2><p>Today's top stories, read aloud in about a minute. The dates ahead are in Coming up, near the top of the page.</p></div>
+    <div class="band-head"><h2 id="er-h">What to watch</h2><p>The dates and decisions coming up, and today's top stories read aloud in a minute.</p></div>
     <div class="desk">
       <div class="ahead-audio">
         <div class="audio" id="audio">
@@ -2574,7 +2573,7 @@ header.site { border-bottom: 0; }
   <div class="wrap">
     <div class="about"><div class="name">Palindrome News</div>We link to original publishers and never republish full articles. Summaries are brief and neutral. If something is wrong, tell us.</div>
     <nav aria-label="Footer">
-      <a href="#methodology">Methodology</a><a href="#sources">Sources</a><a href="?view=corrections">Corrections</a><a href="#contact">Contact &amp; takedowns</a><a href="#privacy">Privacy</a><a href="#sponsorship-policy">Sponsorship policy</a><a href="#sponsor-services">Sponsor services</a>
+      <a href="#methodology">Methodology</a><a href="#sources">Sources</a><a href="#corrections">Corrections</a><a href="#contact">Contact &amp; takedowns</a><a href="#privacy">Privacy</a><a href="#sponsorship-policy">Sponsorship policy</a><a href="#sponsor-services">Sponsor services</a>
     </nav>
   </div>
 </footer>
@@ -7472,8 +7471,6 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
   // see the US election or the budget at the top yet, or close to the top"). The page draws its sections after load,
   // so the spot is kept as they appear.
   function place(sec) {
-    // inside the one "Coming up" section when it is on the page (tools/trim_layer.html, Hannah, Sat Oct 31, 2026)
-    const cu = document.querySelector('#comingUp .cu-big'); if (cu) { if (sec.parentElement !== cu) cu.append(sec); return; }
     const d = document.getElementById('sec-canada'), a = document.getElementById('autoBreaking');
     if (d) { if (d.previousElementSibling !== sec) d.before(sec); }
     else if (a && a.nextElementSibling !== sec) a.after(sec);
@@ -7483,171 +7480,4 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
 })();
 </script>
 <!-- end week layer -->
-<!-- a lighter front page: sections moved to their own pages, long sections capped, one "Coming up" (Hannah, Sat Oct 31, 2026); source: tools/trim_layer.html -->
-<style id="trim-css">
-/* A lighter front page (Hannah, Sat Oct 31, 2026: "there's too much on it"). The settings are PAL_TRIM in trim-js.
-   1. Own pages: Corrections & updates, Story board and How each story developed leave the front page. Each opens on
-      its own at index.html?view=<name>, linked from the footer.
-   2. Caps: The day so far shows its 5 stories nearest to six sources; Think tanks shows its 3 newest papers. A
-      "See all" link opens the full list at ?view=day or ?view=thinktanks.
-   3. One "Coming up": The big week ahead, Coming up live and the What to watch dates, in one section above the
-      Canada desk. */
-html.pal-home #corrections, html.pal-home #board, html.pal-home #developed { display: none !important; }
-.pal-cap, .pal-vhide, .pal-moved { display: none !important; }
-.pal-seeall { margin: 14px 0 4px; font-size: 15px; font-weight: 700; }
-.pal-seeall a { color: var(--wine); text-decoration: none; }
-.pal-seeall a:hover { text-decoration: underline; }
-.pal-back { margin: 18px 0 6px; font-size: 14px; font-weight: 700; letter-spacing: .04em; }
-.pal-back a { color: var(--wine); text-decoration: none; }
-html.pal-view main.wrap { min-height: 60vh; }
-html.pal-home #fronts .front > h3 > small { display: none; }   /* "12 stories" counts the full list, which is on its own page */
-#comingUp { margin: 28px 0 8px; scroll-margin-top: 64px; }
-#comingUp #bigWeek { margin: 0 0 8px; }
-#comingUp #bigWeek > .band-head { display: none; }
-#comingUp .cu-sub { margin: 22px 0 10px; font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--wine); }
-#comingUp .cu-live { border-radius: 10px; padding: 14px 14px 4px; }
-#comingUp .cu-live .chan-h:first-child { display: none; }
-#comingUp .cu-dates ol { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr)); column-gap: 28px; }
-#comingUp .cu-dates li b a { color: inherit; }
-#ahead aside.watch { display: none !important; }
-#ahead .desk { grid-template-columns: minmax(0, 1fr) !important; }
-</style>
-<script id="trim-js">
-(function () {
-  // The settings, in one place. Change a number or a list here and the page follows it on every update.
-  const PAL_TRIM = {
-    ownPage: { corrections: 'Corrections & updates', board: 'Story board', developed: 'How each story developed' },
-    caps: { day: 5, thinktanks: 3 },   // The day so far (stories nearest to six sources), Think tanks (newest papers)
-    viewNames: { day: 'The day so far', thinktanks: 'Think tanks & white papers' }
-  };
-  window.PAL_TRIM = PAL_TRIM;
-  const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-  const root = document.documentElement;
-  const view = (new URLSearchParams(location.search).get('view') || '').toLowerCase();
-  const daySec = () => { const h = document.getElementById('day-h'); return h && h.closest('section'); };
-  const target = () => view === 'day' ? daySec() : document.getElementById(view);
-  const known = view && (PAL_TRIM.ownPage[view] || PAL_TRIM.viewNames[view]);
-  if (known) { root.classList.remove('pal-home'); root.classList.add('pal-view'); document.title = (PAL_TRIM.ownPage[view] || PAL_TRIM.viewNames[view]) + ' · Palindrome News'; }
-  else root.classList.add('pal-home');
-  const front = location.pathname;   // the front page, without ?view
-  const viewLink = (v) => front + '?view=' + v;
-  let busy = false;
-
-  // A page of its own: only the chosen section shows, with the masthead, a way back and the footer.
-  function viewPage() {
-    const t = target(); if (!t) return;
-    t.classList.remove('pal-vhide');
-    for (let n = t; n && n !== document.body; n = n.parentElement) {
-      n.classList.remove('pal-vhide', 'pal-cap');
-      [...n.parentElement.children].forEach((s) => {
-        if (s === n || /^(HEADER|FOOTER|SCRIPT|STYLE|LINK|META|TITLE)$/.test(s.tagName) || s.id === 'stick' || s.id === 'srch') return;
-        if (n.parentElement === document.body && s.classList.contains('clocks')) return;
-        s.classList.add('pal-vhide');
-      });
-    }
-    if (!t.querySelector(':scope > .pal-back')) t.insertAdjacentHTML('afterbegin', '<p class="pal-back"><a href="' + esc(front) + '">← Palindrome News front page</a></p>');
-  }
-
-  // The day so far: the stories nearest to six independent outlets first, page order after that.
-  function capDay() {
-    const sec = daySec(); if (!sec) return;
-    const arts = [...sec.querySelectorAll('#fronts article.fs')];
-    arts.forEach((a) => a.classList.remove('pal-cap'));
-    sec.querySelectorAll('#fronts .front').forEach((f) => f.classList.remove('pal-cap'));
-    const shown = arts.filter((a) => a.getClientRects().length > 0);
-    const n = (a) => { const m = a.querySelector('.meter'); return m ? m.querySelectorAll('.segs i.on').length : 0; };
-    let note = sec.querySelector(':scope > .pal-seeall');
-    if (view === 'day') { if (note) note.remove(); return; }
-    const keep = new Set(shown.map((a, i) => [a, n(a), i]).sort((x, y) => y[1] - x[1] || x[2] - y[2]).slice(0, PAL_TRIM.caps.day).map((x) => x[0]));
-    shown.forEach((a) => { if (!keep.has(a)) a.classList.add('pal-cap'); });
-    sec.querySelectorAll('#fronts .front').forEach((f) => { if (![...f.querySelectorAll('article.fs')].some((a) => keep.has(a))) f.classList.add('pal-cap'); });
-    const more = shown.length - keep.size;
-    if (more > 0) {
-      if (!note) { note = document.createElement('p'); note.className = 'pal-seeall'; sec.append(note); }
-      const html = '<a href="' + esc(viewLink('day')) + '">See all ' + shown.length + ' stories in The day so far →</a>';
-      if (note.innerHTML !== html) note.innerHTML = html;
-    } else if (note) note.remove();
-  }
-
-  // Think tanks & white papers: the newest papers only (the list is already newest first).
-  function capPapers() {
-    const sec = document.getElementById('thinktanks'); if (!sec) return;
-    const grid = sec.querySelector('.grid'); if (!grid) return;
-    const papers = [...grid.querySelectorAll(':scope > a.paper')];
-    papers.forEach((p) => p.classList.remove('pal-cap'));
-    let note = sec.querySelector(':scope > .pal-seeall');
-    const shown = papers.filter((p) => p.getClientRects().length);
-    if (view === 'thinktanks') { if (note) note.remove(); return; }
-    shown.slice(PAL_TRIM.caps.thinktanks).forEach((p) => p.classList.add('pal-cap'));
-    if (shown.length > PAL_TRIM.caps.thinktanks) {
-      if (!note) { note = document.createElement('p'); note.className = 'pal-seeall'; grid.after(note); }
-      const html = '<a href="' + esc(viewLink('thinktanks')) + '">See all ' + shown.length + ' papers →</a>';
-      if (note.innerHTML !== html) note.innerHTML = html;
-    } else if (note) note.remove();
-  }
-
-  // One "Coming up": the big week ahead, then Coming up live, then the other dates ahead (no repeats).
-  const md = (txt) => { const m = String(txt).match(/\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+(\d{1,2})/i); return m ? m[1].slice(0, 3).toLowerCase() + ' ' + (+m[2]) : ''; };
-  const stems = (txt) => new Set((String(txt).toLowerCase().match(/[a-z]{5,}/g) || []).map((w) => w.slice(0, 6)));
-  const strip = (node) => { node.removeAttribute('id'); node.querySelectorAll('[id]').forEach((x) => x.removeAttribute('id')); return node; };
-  function comingUp() {
-    if (view) return;
-    const canada = document.getElementById('sec-canada'), auto = document.getElementById('autoBreaking');
-    let cu = document.getElementById('comingUp');
-    if (!cu) {
-      cu = document.createElement('section'); cu.id = 'comingUp'; cu.className = 'ruled'; cu.setAttribute('aria-labelledby', 'cu-h');
-      cu.innerHTML = '<div class="band-head"><h2 id="cu-h">Coming up</h2><p>The big scheduled events, live coverage on its way and the other dates ahead. Every line links to the newsroom that reported it.</p></div><div class="cu-big"></div><div class="cu-livewrap"></div><div class="cu-dateswrap"></div>';
-    }
-    if (canada) { if (canada.previousElementSibling !== cu) canada.before(cu); }
-    else if (auto && auto.nextElementSibling !== cu) auto.after(cu);
-    // 1. the big week ahead (built by week-js) goes inside
-    const bw = document.getElementById('bigWeek'), big = cu.querySelector('.cu-big');
-    if (bw && bw.parentElement !== big) big.append(bw);
-    const bigOn = bw && !bw.hidden;
-    // 2. Coming up live, out of the Live coverage band
-    const lw = cu.querySelector('.cu-livewrap'); let liveHTML = '';
-    const lc = document.getElementById('bkChannels');
-    if (lc) {
-      [...lc.querySelectorAll(':scope > .chan-h')].forEach((h) => {
-        if (!/^\s*coming up live/i.test(h.textContent)) return;
-        const row = h.nextElementSibling && h.nextElementSibling.classList.contains('chan-row') ? h.nextElementSibling : null;
-        h.classList.add('pal-moved'); if (row) { row.classList.add('pal-moved'); liveHTML += strip(row.cloneNode(true)).outerHTML.replace(/\bpal-moved\b/g, ''); }
-      });
-    }
-    const liveNew = liveHTML ? '<h3 class="cu-sub">Coming up live</h3><div class="livecov cu-live"><div class="bk-chan">' + liveHTML + '</div></div>' : '';
-    if (lw.dataset.h !== liveNew) { lw.innerHTML = liveNew; lw.dataset.h = liveNew; }
-    // 3. the What to watch dates, less any already in the big week ahead
-    const cards = bigOn ? [...bw.querySelectorAll('.bw-card')].map((c) => ({ d: md(c.querySelector('.bw-when') && c.querySelector('.bw-when').textContent), w: stems(c.querySelector('h3') && c.querySelector('h3').textContent) })) : [];
-    const items = [...document.querySelectorAll('#ahead aside.watch ol > li')].filter((li) => !li.hidden).filter((li) => {
-      const d = md(li.querySelector('.when') && li.querySelector('.when').textContent), w = stems(li.querySelector('.what b') ? li.querySelector('.what b').textContent : li.textContent);
-      return !cards.some((c) => c.d && c.d === d && [...w].some((x) => c.w.has(x)));
-    });
-    const dw = cu.querySelector('.cu-dateswrap');
-    const datesNew = items.length ? '<h3 class="cu-sub">' + (bigOn || liveHTML ? 'Also ahead' : 'The dates ahead') + '</h3><div class="watch cu-dates"><ol>' + items.map((li) => strip(li.cloneNode(true)).outerHTML).join('') + '</ol></div>' : '';
-    if (dw.dataset.h !== datesNew) { dw.innerHTML = datesNew; dw.dataset.h = datesNew; }
-    cu.hidden = !(bigOn || liveHTML || items.length);
-  }
-
-  function run() {
-    if (busy) return; busy = true;
-    try { if (known) viewPage(); } catch (e) { console.warn('trim view', e); }
-    try { capDay(); } catch (e) { console.warn('trim day', e); }
-    try { capPapers(); } catch (e) { console.warn('trim papers', e); }
-    try { comingUp(); } catch (e) { console.warn('trim coming up', e); }
-    setTimeout(() => { busy = false; }, 0);
-  }
-  // Links to the pages that left the front page, in the footer (and the old in-page jumps sent there).
-  function links() {
-    document.querySelectorAll('a[href="#corrections"], a[href="#board"], a[href="#developed"]').forEach((a) => { a.href = viewLink(a.getAttribute('href').slice(1)); });
-    document.querySelectorAll('a[href="#ahead"]').forEach((a) => { a.setAttribute('href', '#comingUp'); if (/what to watch/i.test(a.textContent)) a.textContent = 'Coming up'; });
-    const fn = document.querySelector('footer nav[aria-label="Footer"]');
-    if (fn) Object.keys(PAL_TRIM.ownPage).forEach((v) => { if (!fn.querySelector('a[href$="?view=' + v + '"]')) fn.insertAdjacentHTML('beforeend', '<a href="' + esc(viewLink(v)) + '">' + esc(PAL_TRIM.ownPage[v]) + '</a>'); });
-  }
-  links();
-  run(); setTimeout(run, 300); setInterval(run, 60000);
-  new MutationObserver(() => { if (!busy) { clearTimeout(run.t); run.t = setTimeout(run, 250); } })
-    .observe(document.body, { childList: true, subtree: true, characterData: true });
-})();
-</script>
-<!-- end trim layer -->
 </body></html>

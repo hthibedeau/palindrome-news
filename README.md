@@ -49,14 +49,6 @@ Everything shown is the outlets' own: headlines, summaries, captions, times and 
 
 **House rule (Hannah, Oct 27, 2026): everything she asks for is built into the code.** Any new feature or rule goes into `tools/` and the page script so it runs by itself, never as a task someone has to repeat. The runbooks in `tools/runbooks/` describe the older hand-run process. Claude's scheduled tasks for the site are paused; Claude now works only when Hannah asks for something.
 
-## A lighter front page (Hannah, Sat Oct 31, 2026)
-
-Hannah: "there's too much on it." `tools/trim_layer.html` (copied into the end of `index.html`) keeps the front page short by itself, on every load and every update. The settings are `PAL_TRIM` at the top of its script:
-
-- **Their own pages.** Corrections & updates, Story board and How each story developed are off the front page. Each opens on its own at `index.html?view=corrections`, `?view=board` and `?view=developed`, linked from the footer. The Story board is out of the top menu.
-- **Capped.** The day so far shows its 5 stories nearest to six sources, with "See all" (`?view=day`). Think tanks & white papers shows its 3 newest papers, with "See all" (`?view=thinktanks`).
-- **One "Coming up".** The big week ahead, Coming up live (taken out of the Live coverage band) and the What to watch dates are one section above the Canada desk. Dates already in the big week ahead are not repeated. The 60-second brief stays where it was, under the heading "Listen".
-
 ## News judgment: is this the top story? (Hannah, Sat Oct 31, 2026)
 
 Before ranking, the code asks the question an editor asks at the morning meeting: who is this story for? It answers it from what the newsrooms themselves published (`news_judgment()` in `tools/autopilot.py`, explained in full in the NEWS JUDGMENT note above it).
