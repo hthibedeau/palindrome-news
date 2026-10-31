@@ -167,3 +167,15 @@
   new MutationObserver(() => { if (!busy) { clearTimeout(crisp.t); crisp.t = setTimeout(crisp, 120); } }).observe(root, { childList: true, subtree: true });
 })();
 </script>
+<style id="front-wide">
+/* A newspaper front on a wide screen (iPad, desktop; Hannah, Sat Oct 31, 2026: "the page doesn't seem to utilize all of
+   the space ... on my ipad"): the lead story on the left, the second and third stories stacked in the right column,
+   with no gaps under a short story. */
+@media (min-width: 960px) {
+  #autoBreaking { align-items: start; grid-auto-flow: row dense; }
+  #autoBreaking > .ab-story:not(.ab-second) { grid-column: 1; grid-row: 1 / span 6; }
+  #autoBreaking > .ab-story.ab-second { grid-column: 2; margin-top: 0 !important; padding-top: 0 !important; border-top: 0 !important; }
+  #autoBreaking > .ab-story.ab-second + .ab-story.ab-second { margin-top: 26px !important; padding-top: 22px !important; border-top: 1px solid rgba(255,255,255,.28) !important; }
+  #autoBreaking > .ab-note { grid-column: 1 / -1; }
+}
+</style>
