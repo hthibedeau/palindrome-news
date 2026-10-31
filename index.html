@@ -7376,7 +7376,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
 <script id="week-js">
 (function () {
   // Two lists that keep themselves current, every time the page loads and every 2 minutes:
-  //  1. The big week ahead (tools/autopilot.py big_week), placed right under the Canada desk, with a countdown.
+  //  1. The big week ahead (tools/autopilot.py big_week), right after the top stories, with a countdown.
   //  2. Canada and the U.S.: "What comes next" drops an item the day after its date has passed, and "This week" keeps
   //     the last THIS_WEEK_DAYS days only, with the newest Canada-U.S. reports added at the top (Hannah, Sat Oct 31, 2026: "Once
   //     Tuesday, October 27th is over, it should come off that list").
@@ -7401,9 +7401,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     const live = E.filter((e) => { const d = new Date(e.date + 'T00:00:00'); const days = Math.round((d - today) / 864e5); e._days = days; e._d = d; return days >= -1 && days <= 8; });
     if (!live.length) { if (sec) sec.hidden = true; return; }
     if (!sec) { sec = document.createElement('section'); sec.id = 'bigWeek'; sec.className = 'ruled'; sec.setAttribute('aria-labelledby', 'bw-h'); }
-    const desk = document.getElementById('sec-canada');
-    if (desk && desk.nextElementSibling !== sec) desk.after(sec);
-    else if (!desk && !sec.parentNode) { const a = document.getElementById('autoBreaking'); if (a) a.after(sec); }
+    place(sec);
     const count = (n) => n === 0 ? '<span class="bw-count today">Today</span>' : n === -1 ? '<span class="bw-count">Yesterday</span>' : n === 1 ? '<span class="bw-count">Tomorrow</span>' : '<span class="bw-count">In ' + n + ' days</span>';
     sec.innerHTML = '<div class="band-head"><h2 id="bw-h">The big week ahead</h2><p>The scheduled events the news is building to, with the newest reports on each. Every line links to the newsroom that reported it.</p></div><div class="bw-grid">'
       + live.map((e) => '<article class="bw-card"><div class="bw-when">' + esc(label(e._d)) + count(e._days) + '</div><h3>' + esc(e.name) + '</h3>'
@@ -7447,8 +7445,15 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     try { canusLists(D); } catch (e) { console.warn('canus lists', e); }
   }
   setTimeout(load, 200); setInterval(load, 120000);
-  // the Canada desk is drawn after load: keep the big week right under it
-  new MutationObserver(() => { const s = document.getElementById('bigWeek'), d = document.getElementById('sec-canada'); if (s && d && d.nextElementSibling !== s) d.after(s); })
+  // near the top: right after the top stories, just above the Canada desk (Hannah, Sat Oct 31, 2026: "I still don't
+  // see the US election or the budget at the top yet, or close to the top"). The page draws its sections after load,
+  // so the spot is kept as they appear.
+  function place(sec) {
+    const d = document.getElementById('sec-canada'), a = document.getElementById('autoBreaking');
+    if (d) { if (d.previousElementSibling !== sec) d.before(sec); }
+    else if (a && a.nextElementSibling !== sec) a.after(sec);
+  }
+  new MutationObserver(() => { const s = document.getElementById('bigWeek'); if (s) place(s); })
     .observe(document.body, { childList: true, subtree: true });
 })();
 </script>
