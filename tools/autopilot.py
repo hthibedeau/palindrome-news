@@ -1311,7 +1311,7 @@ def is_place(t):
 
 # not news for "Connected to this story": games and scores, entertainment, sponsored and promotional posts
 NOT_NEWS = re.compile(r"\b(beats?|beat|defeats?|edges?|blanks?|exhibition|worlds|playoffs?|hockey|NHL|NBA|MLB|NFL|MLS|WNBA|PWHL|soccer|"
-                      r"goals?|score[sd]?|rocker|song|album|concert|movie|film|actor|actress|singer|celebrity|trolls?|"
+                      r"goals?|score[sd]?|rocker|songs?|albums?|concerts?|movies?|films?|actors?|actress|singers?|celebrit\w+|trolls?|horror|"
                       r"Top Pick|Investment Conference|sponsored|partner content|press release|newswire)\b|/sports?/|/entertainment/|/sponsored", re.I)
 
 
@@ -2069,7 +2069,35 @@ SMALL = [("Nunatsiaq News", "Nunavut", True), ("Cabin Radio", "N.W.T.", True), (
          ("IndigiNews", "Indigenous", False), ("The Narwhal", "Environment", False), ("The Tyee", "British Columbia", False),
          ("Halifax Examiner", "Nova Scotia", False), ("Canada's National Observer", "National", False),
          ("Lethbridge Herald", "Alberta", False), ("Medicine Hat News", "Alberta", False), ("CKOM / PAnow", "Saskatchewan", False)]
-SMALL_FEEDS = [("Yellowknifer (NNSL)", "https://www.nnsl.com/feed/", "N.W.T.", True), ("APTN News", "https://www.aptnnews.ca/feed/", "Indigenous", False)]
+SMALL_FEEDS = [("Yellowknifer (NNSL)", "https://www.nnsl.com/feed/", "N.W.T.", True), ("APTN News", "https://www.aptnnews.ca/feed/", "Indigenous", False),
+               # more small and independent newsrooms across the country (Hannah, Fri Oct 30, 2026: "in the smaller
+               # newsrooms bring in other small newsroom stories"); only their own local reporting counts (see smaller())
+               ("Nunatsiaq News", "https://nunatsiaq.com/feed/", "Nunavut", True), ("Cabin Radio", "https://cabinradio.ca/feed/", "N.W.T.", True),
+               ("The Local", "https://thelocal.to/feed/", "Toronto", False), ("The Breach", "https://breachmedia.ca/feed/", "National", False),
+               ("The Coast", "https://www.thecoast.ca/feed/", "Halifax", False), ("CHEK News", "https://cheknews.ca/feed/", "Vancouver Island", False),
+               ("The Discourse", "https://thediscourse.ca/feed", "Vancouver Island", False), ("Taproot Edmonton", "https://edmonton.taproot.news/feed", "Edmonton", False),
+               ("Northern Ontario Business", "https://www.northernontariobusiness.com/rss", "Northern Ontario", False),
+               ("SooToday", "https://www.sootoday.com/rss", "Sault Ste. Marie", False), ("BayToday", "https://www.baytoday.ca/rss", "North Bay", False),
+               ("TimminsToday", "https://www.timminstoday.com/rss", "Timmins", False), ("Thunder Bay Newswatch", "https://www.tbnewswatch.com/rss", "Thunder Bay", False),
+               ("GuelphToday", "https://www.guelphtoday.com/rss", "Guelph", False), ("Prince George Citizen", "https://www.princegeorgecitizen.com/rss", "Northern B.C.", False),
+               ("Nelson Star", "https://www.nelsonstar.com/feed/", "Kootenays", False), ("Moose Jaw Today", "https://www.moosejawtoday.com/rss", "Saskatchewan", False),
+               ("Eagle Feather News", "https://www.eaglefeathernews.com/feed", "Indigenous", False), ("Ku'ku'kwes News", "https://kukukwes.com/feed/", "Indigenous", False),
+               ("NB Media Co-op", "https://nbmediacoop.org/feed/", "New Brunswick", False), ("The Independent", "https://theindependent.ca/feed/", "Newfoundland and Labrador", False),
+               ("The Rover", "https://therover.ca/feed/", "Montreal", False), ("SaltWire", "https://www.saltwire.com/feed", "Atlantic Canada", False)]
+SMALL_ARCTIC_MAX = 3
+# game results a local site files as local news (Thunder Bay's "T-Wolves earn series split with shootout win")
+SMALL_GAME = re.compile(r"\b(shootout|overtime|series split|road win|home win|win over|wins? (?:at|against)|loss to|falls? to|"
+                        r"double-header|tournament|playoffs?|championship|semifinal|final score|goalie|hat trick|touchdown|"
+                        r"T-Wolves|Walleye|Lakehead Thunderwolves|Wolverines|Huskies|Rams|Bisons|Pandas|Golden Bears|"
+                        r"debuts?|home opener|season opener|rookies?|roster|lineup|head coach|draft pick|signs with|trade deadline|"
+                        r"Blades|Rush|Riders|Roughriders|Oilers|Flames|Canucks|Jets|Leafs|Senators|Canadiens|Raptors|Blue Jays|Whitecaps|"
+                        r"Stampeders|Elks|Argos|Tiger-Cats|Redblacks|Alouettes|Hitmen|Wheat Kings|Pats|Warriors|Broncos|Raiders|Cougars|"
+                        r"Giants|Royals|Rockets|Silvertips|Rebels|Tigers|Hurricanes|Americans|Winterhawks|Thunderbirds|Mooseheads|Islanders|"
+                        r"Sea Dogs|Wildcats|Eagles|Screaming Eagles|Voltigeurs|Remparts|Saguenéens|Olympiques|Foreurs|Huskies|Phoenix|Drakkar|Armada|Titan)\b")
+# a small newsroom's republished wire, national or world copy, sports, letters and commentary are not its own reporting
+SMALL_SKIP = re.compile(r"/(national|world|canada|provincial-national|business|national-business|national-sports|local-sports|sports?|"
+                        r"opinion|letters?|commentary|columns?|sponsored|news-releases?|press-releases?|obituaries|entertainment)(-news)?/|"
+                        r"^\s*(LETTER|COMMENTARY|OPINION|EDITORIAL|COLUMN|News release|Press release)\b|\bObituar", re.I)
 
 
 def smaller(items, page, now, imgdir):
@@ -2088,15 +2116,31 @@ def smaller(items, page, now, imgdir):
         except Exception:
             pass
     pool = [p_ for p_ in pool if not au.OPINION.search(p_[2] + " " + p_[3]) and not SPORT.search(p_[2] + " " + p_[3])
-            and not re.search(r"/community/|/events?/|obituar|horoscope|Please Advise", p_[2] + " " + p_[3], re.I)]
+            and not re.search(r"/community/|/events?/|obituar|horoscope|Please Advise", p_[2] + " " + p_[3], re.I)
+            and not SMALL_SKIP.search(p_[3]) and not SMALL_SKIP.search(p_[2]) and not NOT_NEWS.search(p_[2] + " " + p_[3]) and not SMALL_GAME.search(p_[2])]
     from collections import Counter
-    copies = Counter(re.sub(r"\W", "", x[2].lower()) for x in items)
-    pool = [p_ for p_ in pool if copies[re.sub(r"\W", "", p_[2].lower())] <= 1 and "/national-news/" not in p_[3]]  # their own stories, not wire copy
+    # their own stories, not wire copy: a headline that any other newsroom (big or small) also ran is someone else's
+    nm = lambda t: re.sub(r"\W", "", t.lower())[:70]
+    copies = Counter(t for _, t in {(au.clean_outlet(x[1]), nm(x[2])) for x in items} | {(p_[1], nm(p_[2])) for p_ in pool})
+    pool = [p_ for p_ in pool if copies[nm(p_[2])] <= 1]
+    seen_l = set()
+    pool = [p_ for p_ in pool if not (p_[3] in seen_l or seen_l.add(p_[3]))]
     pool.sort(key=lambda p_: (not p_[5], -p_[0].timestamp()))  # Arctic first, then newest
-    out, used = [], set()
+    out, used, regions = [], set(), set()
+    # one story per newsroom and, while there is choice, one per region, so the five come from across the country
+    first_pass = []
+    for p_ in pool:
+        if p_[1] not in {q[1] for q in first_pass} and (p_[4] not in {q[4] for q in first_pass} or p_[5]):
+            first_pass.append(p_)
+    pool = first_pass + [p_ for p_ in pool if p_ not in first_pass]
+    n_arc = 0
     for dt, o, title, link, reg, arc in pool:
         if o in used:
             continue
+        # the North leads, but keeps room for the rest of the country: at most SMALL_ARCTIC_MAX of the five
+        if arc and n_arc >= SMALL_ARCTIC_MAX and len(pool) > 5:
+            continue
+        n_arc += 1 if arc else 0
         info = page_info(link)
         used.add(o)
         out.append({"o": o, "region": reg, "arctic": arc, "h": clean(title), "u": link, "t": w.eastern(dt),
