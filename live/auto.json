@@ -1,6 +1,6 @@
 {
- "checked": "2026-10-31T09:23:06.559013+00:00",
- "checkedLabel": "Sat 5:23 a.m.",
+ "checked": "2026-10-31T09:33:07.028180+00:00",
+ "checkedLabel": "Sat 5:33 a.m.",
  "stories": [
   {
    "key": "top",
@@ -67,6 +67,15 @@
    1
   ],
   [
+   "Sat 5:13 a.m.",
+   "World",
+   "Cost of living protests  to spread to Germany and reignite in France on Halloween",
+   "The Guardian",
+   "https://www.theguardian.com/world/2026/oct/30/cost-of-living-protests-to-spread-to-germany-and-reignite-in-france-on-halloween",
+   "2026-10-31T09:13:22+00:00",
+   1
+  ],
+  [
    "Sat 5:01 a.m.",
    "World",
    "Turkey throws its former foreign minister's name into the race for next UN chief",
@@ -86,19 +95,19 @@
   ],
   [
    "Sat 5:00 a.m.",
-   "Latest",
-   "Daylight saving time ends Sunday. Here’s what to know as clocks ‘fall back’",
+   "Politics",
+   "Democrats in key battlegrounds throw Joe Biden under the bus on the border",
    "NBC News",
-   "https://www.nbcnews.com/news/us-news/daylight-saving-time-ends-2026-when-november-1-what-know-rcna606619",
+   "https://www.nbcnews.com/politics/2026-election/2026-democratic-candidates-throw-joe-biden-bus-border-security-rcna603228",
    "2026-10-31T09:00:40+00:00",
    1
   ],
   [
    "Sat 5:00 a.m.",
-   "Politics",
-   "2026 Democratic candidates throw Joe Biden under the bus on the border",
+   "Latest",
+   "Daylight saving time ends Sunday. Here’s what to know as clocks ‘fall back’",
    "NBC News",
-   "https://www.nbcnews.com/politics/2026-election/2026-democratic-candidates-throw-joe-biden-bus-border-security-rcna603228",
+   "https://www.nbcnews.com/news/us-news/daylight-saving-time-ends-2026-when-november-1-what-know-rcna606619",
    "2026-10-31T09:00:40+00:00",
    1
   ],
@@ -118,7 +127,7 @@
    "Toronto Star",
    "https://www.thestar.com/initiatives/santa-claus-fund/how-a-family-dinner-game-helped-me-see-the-christmas-spirit-in-halloween/article_14c05455-d070-416d-97df-0ee1dc58b12a.html",
    "2026-10-31T09:00:00+00:00",
-   5
+   4
   ],
   [
    "Sat 5:00 a.m.",
@@ -263,15 +272,6 @@
    "https://www.cbc.ca/news/science/lithium-battery-fires-consumer-safety-9.7401515",
    "2026-10-31T08:00:00+00:00",
    1
-  ],
-  [
-   "Sat 4:00 a.m.",
-   "Canada",
-   "'No one is safe' as Ebola outbreak surges to more than 10,000 cases, Africa's top doctor warns Canada",
-   "CBC News",
-   "https://www.cbc.ca/news/health/africa-top-doctor-ebola-9.7403252",
-   "2026-10-31T08:00:00+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -309,7 +309,7 @@
    "outlets": 2,
    "why": [
     "National Newswatch #1",
-    "National Newswatch #4",
+    "National Newswatch #5",
     "National Newswatch #6",
     "National Newswatch #8",
     "CBC News front #5"
@@ -322,7 +322,7 @@
    "url": "https://www.politico.com/news/2026/10/30/ruling-allowing-russia-back-in-ice-hockey-tournaments-is-unwelcome-mark-carney-says",
    "outlets": 0,
    "why": [
-    "National Newswatch #5",
+    "National Newswatch #4",
     "National Newswatch #7",
     "National Newswatch #11",
     "National Newswatch #20"
@@ -352,6 +352,14 @@
    "theme": ""
   },
   {
+   "score": 8,
+   "title": "Cost of living protests  to spread to Germany and reignite in France on Halloween",
+   "url": "https://www.theguardian.com/world/2026/oct/30/cost-of-living-protests-to-spread-to-germany-and-reignite-in-france-on-halloween",
+   "outlets": 6,
+   "why": [],
+   "theme": ""
+  },
+  {
    "score": 7,
    "title": "'No one is safe' as Ebola outbreak surges to more than 10,000 cases, Africa's top doctor warns Canada",
    "url": "https://www.cbc.ca/news/health/africa-top-doctor-ebola-9.7403252",
@@ -359,14 +367,6 @@
    "why": [
     "CBC News front #3"
    ],
-   "theme": ""
-  },
-  {
-   "score": 7,
-   "title": "How a family dinner game helped me see the Christmas spirit in Halloween",
-   "url": "https://www.thestar.com/initiatives/santa-claus-fund/how-a-family-dinner-game-helped-me-see-the-christmas-spirit-in-halloween/article_14c05455-d070-416d-97df-0ee1dc58b12a.html",
-   "outlets": 5,
-   "why": [],
    "theme": ""
   },
   {
@@ -402,8 +402,8 @@
   },
   {
    "score": 6,
-   "title": "Hundreds evacuated from Russian-occupied Oleshky during rare Ukraine ceasefire",
-   "url": "https://www.bbc.co.uk/news/articles/c60me298k1yeo?at_medium=RSS&at_campaign=rss",
+   "title": "Lavrov denies Kyiv Independent reporting on Russian push for Putin-Zelensky phone call",
+   "url": "https://kyivindependent.com/lavrov-denies-kyiv-independent-reporting-on-russian-push-for-putin-zelensky-phone-call/",
    "outlets": 4,
    "why": [],
    "theme": ""
@@ -876,35 +876,44 @@
    {
     "key": "auto-cbcc9814",
     "words": [
-     "halloween"
+     "halloween",
+     "france"
     ],
-    "score": 7,
-    "outlets": 4,
-    "carriers": 4,
+    "score": 8,
+    "outlets": 5,
+    "carriers": 5,
     "tag": "Breaking",
-    "title": "How a family dinner game helped me see the Christmas spirit in Halloween",
-    "url": "https://www.thestar.com/initiatives/santa-claus-fund/how-a-family-dinner-game-helped-me-see-the-christmas-spirit-in-halloween/article_14c05455-d070-416d-97df-0ee1dc58b12a.html",
-    "outlet": "Toronto Star",
-    "t": "Sat 5:00 a.m.",
-    "iso": "2026-10-31T09:00:00+00:00",
-    "summary": "One dad’s defence of Halloween — and what it taught him about community, giving and the Santa Claus Fund.",
+    "title": "Cost of living protests to spread to Germany and reignite in France on Halloween",
+    "url": "https://www.theguardian.com/world/2026/oct/30/cost-of-living-protests-to-spread-to-germany-and-reignite-in-france-on-halloween",
+    "outlet": "The Guardian",
+    "t": "Sat 5:13 a.m.",
+    "iso": "2026-10-31T09:13:22+00:00",
+    "summary": "Activists call for people to make their anger known over poor public services including education and housing",
     "first": {
      "outlet": "Euronews",
      "url": "https://www.euronews.com/2026/10/31/france-to-deploy-70000-security-personnel-as-it-prepares-for-halloween-protests",
      "t": "Sat 2:31 a.m.",
      "title": "Curfews, 70,000 police and Halloween fears: France braces for fresh protests"
     },
-    "newest": "2026-10-31T09:00:00+00:00",
+    "newest": "2026-10-31T09:13:22+00:00",
     "photo": {
-     "src": "live/img/auto-cbcc9814-2c31f70c8f.jpg",
-     "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/d/62/d6298ddc-b7b9-582a-8fa3-7cb52bec46ab/6ae4b03f72590.image.jpg?crop=1662%2C873%2C0%2C187&resize=1200%2C630&order=crop%2Cresize",
-     "caption": "Photo — via Toronto Star",
-     "alt": "How a family dinner game helped me see the Christmas spirit in Halloween",
-     "outlet": "Toronto Star",
-     "url": "https://www.thestar.com/initiatives/santa-claus-fund/how-a-family-dinner-game-helped-me-see-the-christmas-spirit-in-halloween/article_14c05455-d070-416d-97df-0ee1dc58b12a.html"
+     "src": "live/img/auto-cbcc9814-372d7d70a8.jpg",
+     "orig": "https://i.guim.co.uk/img/media/f9bcca919390196c72d4b51a3bee7cfc21271ac9/356_0_6772_5418/master/6772.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c0336ea9aba00dca6f64e878b7b979db",
+     "caption": "Photo — via The Guardian",
+     "alt": "Cost of living protests  to spread to Germany and reignite in France on Halloween",
+     "outlet": "The Guardian",
+     "url": "https://www.theguardian.com/world/2026/oct/30/cost-of-living-protests-to-spread-to-germany-and-reignite-in-france-on-halloween"
     },
-    "independent": 4,
+    "independent": 5,
     "reports": [
+     {
+      "t": "Sat 5:13 a.m.",
+      "iso": "2026-10-31T09:13:22+00:00",
+      "outlet": "The Guardian",
+      "title": "Cost of living protests to spread to Germany and reignite in France on Halloween",
+      "url": "https://www.theguardian.com/world/2026/oct/30/cost-of-living-protests-to-spread-to-germany-and-reignite-in-france-on-halloween",
+      "desc": "Activists call for people to make their anger known over poor public services including education and housing"
+     },
      {
       "t": "Sat 5:00 a.m.",
       "iso": "2026-10-31T09:00:00+00:00",
@@ -939,6 +948,23 @@
      }
     ],
     "sources": [
+     {
+      "t": "Sat 5:13 a.m.",
+      "primary": false,
+      "outlet": "The Guardian",
+      "title": "Cost of living protests to spread to Germany and reignite in France on Halloween",
+      "url": "https://www.theguardian.com/world/2026/oct/30/cost-of-living-protests-to-spread-to-germany-and-reignite-in-france-on-halloween",
+      "desc": "Activists call for people to make their anger known over poor public services including education and housing",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "The Guardian",
+        "src": "The Guardian",
+        "byline": "[{\"@type\":\"Person\",\"name\":\"Deborah Cole\",},{\"@type\":\"Person\",\"name\":\"Jon Henley\",}] \"Deborah Cole,Jon Henley\" \"Deborah C"
+       }
+      ],
+      "copies": []
+     },
      {
       "t": "Sat 5:00 a.m.",
       "primary": false,
@@ -1015,7 +1041,136 @@
     "canus": false,
     "popular": 0,
     "us_election": false,
-    "weight": 19.0
+    "weight": 21.5
+   },
+   {
+    "key": "auto-407d9d00",
+    "words": [
+     "russian"
+    ],
+    "score": 6,
+    "outlets": 3,
+    "carriers": 3,
+    "tag": "Developing",
+    "title": "Lavrov denies Kyiv Independent reporting on Russian push for Putin-Zelensky phone call",
+    "url": "https://kyivindependent.com/lavrov-denies-kyiv-independent-reporting-on-russian-push-for-putin-zelensky-phone-call/",
+    "outlet": "Kyiv Independent",
+    "t": "Sat 5:23 a.m.",
+    "iso": "2026-10-31T09:23:59+00:00",
+    "summary": "\"Don't trust them,\" Russian Foreign Minister Sergey Lavrov said when asked about the reports.",
+    "first": {
+     "outlet": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/10/31/are-houthis-using-russian-satellites-as-saudi-arabia-faces-hits?traffic_source=rss",
+     "t": "Sat 4:08 a.m.",
+     "title": "Are Houthis using Russian satellites as Saudi Arabia fends off strikes?"
+    },
+    "newest": "2026-10-31T09:23:59+00:00",
+    "photo": {
+     "src": "live/img/auto-407d9d00-6bd6ab7545.jpg",
+     "orig": "https://assets.kyivindependent.com/content/images/2026/09/GettyImages-2293664132_20260915-101150.jpg",
+     "caption": "Photo — via Kyiv Independent",
+     "alt": "Lavrov denies Kyiv Independent reporting on Russian push for Putin-Zelensky phone call",
+     "outlet": "Kyiv Independent",
+     "url": "https://kyivindependent.com/lavrov-denies-kyiv-independent-reporting-on-russian-push-for-putin-zelensky-phone-call/"
+    },
+    "independent": 3,
+    "reports": [
+     {
+      "t": "Sat 5:23 a.m.",
+      "iso": "2026-10-31T09:23:59+00:00",
+      "outlet": "Kyiv Independent",
+      "title": "Lavrov denies Kyiv Independent reporting on Russian push for Putin-Zelensky phone call",
+      "url": "https://kyivindependent.com/lavrov-denies-kyiv-independent-reporting-on-russian-push-for-putin-zelensky-phone-call/",
+      "desc": "\"Don't trust them,\" Russian Foreign Minister Sergey Lavrov said when asked about the reports."
+     },
+     {
+      "t": "Sat 4:49 a.m.",
+      "iso": "2026-10-31T08:49:35+00:00",
+      "outlet": "BBC News",
+      "title": "Hundreds evacuated from Russian-occupied Oleshky during rare Ukraine ceasefire",
+      "url": "https://www.bbc.co.uk/news/articles/c60me298k1yeo?at_medium=RSS&at_campaign=rss",
+      "desc": "Hundreds of people are also understood to have stayed in the front-line town, despite the dangers."
+     },
+     {
+      "t": "Sat 4:08 a.m.",
+      "iso": "2026-10-31T08:08:30+00:00",
+      "outlet": "Al Jazeera",
+      "title": "Are Houthis using Russian satellites as Saudi Arabia fends off strikes?",
+      "url": "https://www.aljazeera.com/news/2026/10/31/are-houthis-using-russian-satellites-as-saudi-arabia-faces-hits?traffic_source=rss",
+      "desc": "Analysts say the seizure of state arsenals, external backing and extensive military evolution has helped the Houthis."
+     }
+    ],
+    "sources": [
+     {
+      "t": "Sat 5:23 a.m.",
+      "primary": false,
+      "outlet": "Kyiv Independent",
+      "title": "Lavrov denies Kyiv Independent reporting on Russian push for Putin-Zelensky phone call",
+      "url": "https://kyivindependent.com/lavrov-denies-kyiv-independent-reporting-on-russian-push-for-putin-zelensky-phone-call/",
+      "desc": "\"Don't trust them,\" Russian Foreign Minister Sergey Lavrov said when asked about the reports.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Kyiv Independent",
+        "src": "Kyiv Independent",
+        "byline": "own staff: Reporter"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Sat 4:49 a.m.",
+      "primary": false,
+      "outlet": "BBC News",
+      "title": "Hundreds evacuated from Russian-occupied Oleshky during rare Ukraine ceasefire",
+      "url": "https://www.bbc.co.uk/news/articles/c60me298k1yeo?at_medium=RSS&at_campaign=rss",
+      "desc": "Hundreds of people are also understood to have stayed in the front-line town, despite the dangers.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "BBC News",
+        "src": "BBC News",
+        "byline": "[{\"@type\":\"Person\",\"name\":\"Dan Johnson\"},{\"@type\":\"Person\",\"name\":\"Olga Malchevska\"},{\"@type\":\"Person\",\"name\":\"Laura Goz"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Sat 4:08 a.m.",
+      "primary": false,
+      "outlet": "Al Jazeera",
+      "title": "Are Houthis using Russian satellites as Saudi Arabia fends off strikes?",
+      "url": "https://www.aljazeera.com/news/2026/10/31/are-houthis-using-russian-satellites-as-saudi-arabia-faces-hits?traffic_source=rss",
+      "desc": "Analysts say the seizure of state arsenals, external backing and extensive military evolution has helped the Houthis.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Al Jazeera",
+        "src": "Al Jazeera",
+        "byline": "{\"@type\":\"Person\",\"name\":\"Priyanka Shankar\",} Priyanka Shankar Add Al Jazeera on Google By "
+       }
+      ],
+      "copies": []
+     }
+    ],
+    "replaces_top": false,
+    "events": [],
+    "theme": "",
+    "canada": "tie",
+    "canus": false,
+    "popular": 0,
+    "us_election": false,
+    "weight": 16.5,
+    "videos": [
+     {
+      "net": "DW News",
+      "url": "https://www.youtube.com/watch?v=RBo55Dh5uq0",
+      "title": "Rare ceasefire: Ukraine and Russia evacuate civilians from Oleshky | DW News",
+      "img": "https://i.ytimg.com/vi/RBo55Dh5uq0/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     }
+    ]
    }
   ],
   "considered": [
@@ -1035,19 +1190,34 @@
     "carriers": 16
    },
    {
-    "title": "How a family dinner game helped me see the Christmas spirit in Halloween",
-    "url": "https://www.thestar.com/initiatives/santa-claus-fund/how-a-family-dinner-game-helped-me-see-the-christmas-spirit-in-halloween/article_14c05455-d070-416d-97df-0ee1dc58b12a.html",
+    "title": "Cost of living protests to spread to Germany and reignite in France on Halloween",
+    "url": "https://www.theguardian.com/world/2026/oct/30/cost-of-living-protests-to-spread-to-germany-and-reignite-in-france-on-halloween",
     "rank": 2,
     "live": "",
-    "weight": 19.0,
-    "score": 7,
-    "independent": 4,
+    "weight": 21.5,
+    "score": 8,
+    "independent": 5,
     "most_read": 0,
     "canada": "tie",
     "theme": "",
     "top": true,
     "rule": "From abroad, tied to Canada",
-    "carriers": 4
+    "carriers": 5
+   },
+   {
+    "title": "Lavrov denies Kyiv Independent reporting on Russian push for Putin-Zelensky phone call",
+    "url": "https://kyivindependent.com/lavrov-denies-kyiv-independent-reporting-on-russian-push-for-putin-zelensky-phone-call/",
+    "rank": 3,
+    "live": "",
+    "weight": 16.5,
+    "score": 6,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "tie",
+    "theme": "",
+    "top": true,
+    "rule": "From abroad, tied to Canada",
+    "carriers": 3
    },
    {
     "title": "U.S. charges 5 more Canadians with voter fraud offences amid Trump administration crackdown",
@@ -1090,11 +1260,6 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Hundreds evacuated from Russian-occupied Oleshky during rare Ukraine ceasefire",
-    "score": 6,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
     "title": "Liberals jump ahead of Tories in fundraising as by-election calls loom",
     "score": 5,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
@@ -1125,7 +1290,7 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
   ],
-  "top_n": 2,
+  "top_n": 3,
   "more": [],
   "passed_over": []
  },
@@ -1223,7 +1388,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=YAKJrEB7IQ4",
    "img": "https://i.ytimg.com/vi/YAKJrEB7IQ4/hqdefault.jpg",
-   "up": "2026-10-31",
+   "up": "2026-10-30",
    "added": "2026-10-31T03:38:22.058425+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1237,7 +1402,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=cTnofqFkahk",
    "img": "https://i.ytimg.com/vi/cTnofqFkahk/hqdefault.jpg",
-   "up": "2026-10-31",
+   "up": "2026-10-30",
    "added": "2026-10-31T03:38:22.058425+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1295,6 +1460,34 @@
    "img": "https://i.ytimg.com/vi/G9zM_KbrekA/hqdefault.jpg",
    "up": "2026-10-31",
    "added": "2026-10-31T05:22:08.223207+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "Nm3Z5qdGz84",
+   "r": "ca",
+   "o": "CPAC",
+   "t": "What Closer Ties With The EU Looks Like",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=Nm3Z5qdGz84",
+   "img": "https://i.ytimg.com/vi/Nm3Z5qdGz84/hqdefault.jpg",
+   "up": "2026-10-30",
+   "added": "2026-10-31T09:33:07.028180+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "4Nu-2MMqIxM",
+   "r": "ca",
+   "o": "CPAC",
+   "t": "Conservative MP Dan Albas comments on Roberts Bank Terminal 2 project – October 30, 2026",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=4Nu-2MMqIxM",
+   "img": "https://i.ytimg.com/vi/4Nu-2MMqIxM/hqdefault.jpg",
+   "up": "2026-10-30",
+   "added": "2026-10-31T09:33:07.028180+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1481,20 +1674,6 @@
    "geo": "unknown"
   },
   {
-   "id": "MOpFcqAcrlM",
-   "r": "us",
-   "o": "Fox News",
-   "t": "Ken Paxton: Talarico's 'lying to the public'",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=MOpFcqAcrlM",
-   "img": "https://i.ytimg.com/vi/MOpFcqAcrlM/hqdefault.jpg",
-   "up": "2026-10-31",
-   "added": "2026-10-31T07:35:08.856683+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "psR40CBmR9c",
    "r": "us",
    "o": "Associated Press",
@@ -1551,6 +1730,48 @@
    "geo": "unknown"
   },
   {
+   "id": "9wVvkVd7hos",
+   "r": "us",
+   "o": "PBS NewsHour",
+   "t": "Inside a Ukrainian city hit by Russian drones during the Starlink disruption",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=9wVvkVd7hos",
+   "img": "https://i.ytimg.com/vi/9wVvkVd7hos/hqdefault.jpg",
+   "up": "2026-10-30",
+   "added": "2026-10-31T09:33:07.028180+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "25PA9JPFS9o",
+   "r": "us",
+   "o": "PBS NewsHour",
+   "t": "What Israel's election deadlock means for Netanyahu and the region",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=25PA9JPFS9o",
+   "img": "https://i.ytimg.com/vi/25PA9JPFS9o/hqdefault.jpg",
+   "up": "2026-10-30",
+   "added": "2026-10-31T09:33:07.028180+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "IRTFjtYHng0",
+   "r": "us",
+   "o": "Fox News",
+   "t": "Stephen Miller: This is an attempt to disenfranchise Alaska’s voters",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=IRTFjtYHng0",
+   "img": "https://i.ytimg.com/vi/IRTFjtYHng0/hqdefault.jpg",
+   "up": "2026-10-31",
+   "added": "2026-10-31T09:33:07.028180+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
    "id": "lOnYUMxff6g",
    "r": "world",
    "o": "BBC News",
@@ -1601,22 +1822,8 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=9Frq75pZo9E",
    "img": "https://i.ytimg.com/vi/9Frq75pZo9E/hqdefault.jpg",
-   "up": "2026-10-31",
-   "added": "2026-10-31T03:28:21.707864+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "q0crjoBtlZQ",
-   "r": "world",
-   "o": "DW News",
-   "t": "G20 cancels group photo after Europe snubs Russia's Lavrov | DW News",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=q0crjoBtlZQ",
-   "img": "https://i.ytimg.com/vi/q0crjoBtlZQ/hqdefault.jpg",
    "up": "2026-10-30",
-   "added": "2026-10-31T05:22:08.223207+00:00",
+   "added": "2026-10-31T03:28:21.707864+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1689,6 +1896,20 @@
    "added": "2026-10-31T08:49:16.355100+00:00",
    "pic": "globe",
    "geo": "unknown"
+  },
+  {
+   "id": "nbyUNvXuHyw",
+   "r": "world",
+   "o": "DW News",
+   "t": "How Trump's oil grab could derail his Venezuela takeover plans | DW News",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=nbyUNvXuHyw",
+   "img": "https://i.ytimg.com/vi/nbyUNvXuHyw/hqdefault.jpg",
+   "up": "2026-10-31",
+   "added": "2026-10-31T09:33:07.028180+00:00",
+   "pic": "globe",
+   "geo": "unknown"
   }
  ],
  "ledes": [
@@ -1710,11 +1931,11 @@
   },
   {
    "o": "NBC News",
-   "h": "Judge orders Trump administration to stop threatening election officials with criminal charges",
-   "u": "https://www.nbcnews.com/politics/2026-election/judge-orders-trump-administration-stop-threatening-election-officials-rcna606659",
-   "img": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-10/261030-voting-minn-aa-0946-99ae34.jpg",
-   "w": "Fri 10:19 p.m.",
-   "iso": "2026-10-31T02:19:44+00:00"
+   "h": "Democrats in key battlegrounds throw Joe Biden under the bus on the border",
+   "u": "https://www.nbcnews.com/politics/2026-election/2026-democratic-candidates-throw-joe-biden-bus-border-security-rcna603228",
+   "img": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-10/261030-Talarico-Hamilton-Cognetti-ch-0959-930075.jpg",
+   "w": "Sat 5:00 a.m.",
+   "iso": "2026-10-31T09:00:40+00:00"
   },
   {
    "o": "PBS News",
@@ -2096,6 +2317,7 @@
    "A U.S. food distributor is suing the Trump administration over 50 per cent tariffs on Canadian goods, arguing the levies are illegal and threaten its business and Canadian suppliers, CBC News reports.",
    "Canada, European Union close Montreal summit with ‘alliance for the future’ pact, CP24 reports.",
    "Mass protests are expected to sweep across France this Saturday, coinciding with Halloween celebrations as authorities deploy a major security operation. #EuropeNews, Euronews reports.",
+   "Are Houthis using Russian satellites as Saudi Arabia fends off strikes?, Al Jazeera reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
   ]
  },
@@ -2444,11 +2666,11 @@
   {
    "city": "Kyiv",
    "w": "Ceasefire",
-   "u": "https://www.bbc.co.uk/news/articles/c60me298k1yeo?at_medium=RSS&at_campaign=rss",
-   "title": "Hundreds evacuated from Russian-occupied Oleshky during rare Ukraine ceasefire",
-   "outlet": "BBC News",
-   "t": "Sat 4:49 a.m.",
-   "hot": false
+   "u": "https://kyivindependent.com/lavrov-denies-kyiv-independent-reporting-on-russian-push-for-putin-zelensky-phone-call/",
+   "title": "Lavrov denies Kyiv Independent reporting on Russian push for Putin-Zelensky phone call",
+   "outlet": "Kyiv Independent",
+   "t": "Sat 5:23 a.m.",
+   "hot": true
   },
   {
    "city": "Tehran",
@@ -2469,7 +2691,7 @@
     "url": "https://www.youtube.com/watch?v=HKwyLEEtduk",
     "img": "https://i.ytimg.com/vi/HKwyLEEtduk/hqdefault.jpg",
     "story": "Mornings with Jones",
-    "watching": "537"
+    "watching": "474"
    }
   ],
   "upcoming": [
@@ -2678,7 +2900,7 @@
  },
  "canangle": {
   "auto-cbcc9814": {
-   "story": "How a family dinner game helped me see the Christmas spirit in Halloween",
+   "story": "Cost of living protests  to spread to Germany and reignite in France on Halloween",
    "us": false,
    "specific": 1,
    "stories": [
@@ -2688,6 +2910,24 @@
      "outlet": "CTV News",
      "title": "Not-too-spooky weather in store for Halloween in Calgary",
      "url": "https://www.ctvnews.ca/calgary/article/not-too-spooky-weather-in-store-for-halloween-in-calgary/",
+     "ca": true,
+     "tie": ""
+    }
+   ],
+   "official": [],
+   "views": []
+  },
+  "auto-407d9d00": {
+   "story": "Lavrov denies Kyiv Independent reporting on Russian push for Putin-Zelensky phone call",
+   "us": false,
+   "specific": 1,
+   "stories": [
+    {
+     "t": "Fri 7:13 p.m.",
+     "iso": "2026-10-30T23:13:11+00:00",
+     "outlet": "CP24",
+     "title": "Anand says she called out Russian counterpart invited by U.S. to G20 ministerial",
+     "url": "https://www.cp24.com/news/canada/2026/10/30/anand-says-she-called-out-russian-counterpart-invited-by-us-to-g20-ministerial/",
      "ca": true,
      "tie": ""
     }
@@ -2805,19 +3045,19 @@
    "official": [],
    "views": []
   },
-  "https://www.nbcnews.com/politics/2026-election/judge-orders-trump-administration-stop-threatening-election-officials-rcna606659": {
-   "story": "Judge orders Trump administration to stop threatening election officials with criminal charges",
+  "https://www.nbcnews.com/politics/2026-election/2026-democratic-candidates-throw-joe-biden-bus-border-security-rcna603228": {
+   "story": "Democrats in key battlegrounds throw Joe Biden under the bus on the border",
    "us": true,
-   "specific": 5,
+   "specific": 0,
    "stories": [
     {
-     "t": "Sat 1:00 a.m.",
-     "iso": "2026-10-31T05:00:59.003000+00:00",
-     "outlet": "CBC News",
-     "title": "U.S. charges 5 more Canadians with voter fraud offences amid Trump administration crackdown",
-     "url": "https://www.cbc.ca/news/world/5-canadians-charged-us-voter-fraud-9.7403604",
+     "t": "Sat 5:00 a.m.",
+     "iso": "2026-10-31T09:00:00+00:00",
+     "outlet": "CTV News",
+     "title": "Carney ramps up trade diversification efforts with Canada-U.S. deal still out",
+     "url": "https://www.ctvnews.ca/world/trumps-tariffs/article/carney-ramps-up-trade-diversification-efforts-with-canada-us-deal-still-out/",
      "ca": true,
-     "tie": ""
+     "tie": "Canada and the U.S."
     },
     {
      "t": "Fri 10:39 p.m.",
@@ -2826,7 +3066,7 @@
      "title": "Trump's tariffs could shutter this Canadian town - its residents are fighting to save it",
      "url": "https://www.bbc.co.uk/news/articles/cmly016ep243o?at_medium=RSS&at_campaign=rss",
      "ca": false,
-     "tie": ""
+     "tie": "Canada and the U.S."
     },
     {
      "t": "Fri 7:35 p.m.",
@@ -2835,25 +3075,25 @@
      "title": "Carney says he can wait out Trump for trade deal",
      "url": "https://www.politico.com/news/2026/10/30/mark-carney-interview-trump-trade-deal-01144329",
      "ca": false,
-     "tie": ""
-    },
-    {
-     "t": "Fri 3:08 p.m.",
-     "iso": "2026-10-30T19:08:50+00:00",
-     "outlet": "CP24",
-     "title": "These Canadians have been accused of voting illegally in U.S. elections. They’re not the only ones",
-     "url": "https://www.cp24.com/news/world/2026/10/30/two-canadians-illegally-voted-in-midterm-and-presidential-elections-us-attorneys-office-says/",
-     "ca": true,
-     "tie": ""
+     "tie": "Canada and the U.S."
     },
     {
      "t": "Fri 12:41 p.m.",
      "iso": "2026-10-30T16:41:57+00:00",
-     "outlet": "BNN Bloomberg",
+     "outlet": "CP24",
      "title": "U.S. midterms 101: Who holds the cards in the Canada-U.S. trade war?",
-     "url": "https://www.bnnbloomberg.ca/business/politics/2026/10/30/us-midterms-101-who-holds-the-cards-in-the-canada-us-trade-war/",
+     "url": "https://www.cp24.com/news/canada/2026/10/30/us-midterms-101-who-holds-the-cards-in-the-canada-us-trade-war/",
      "ca": true,
-     "tie": ""
+     "tie": "Canada and the U.S."
+    },
+    {
+     "t": "Fri 4:00 a.m.",
+     "iso": "2026-10-30T08:00:00+00:00",
+     "outlet": "CBC News",
+     "title": "Facing a potential $40M US tariff bill, this American importer is suing Trump to end some tariffs on Canada",
+     "url": "https://www.cbc.ca/news/world/gellert-global-group-suing-trump-tariffs-9.7402197?cmp=rss",
+     "ca": true,
+     "tie": "Canada and the U.S."
     }
    ],
    "official": [],
