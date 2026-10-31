@@ -61,14 +61,23 @@ CANADIAN_FRESH_HOURS = 6    # a Canadian story still developing: a report this r
 TOP_RULES = [  # (number, name) shown in live/auto.json "considered", so it is always clear why a story is where it is
     (1, "Canadian and breaking"),
     (2, "Big international story, on every front page"),
-    (3, "Big Canadian exclusive: a major newsroom's interview or scoop (shown as Exclusive)"),
-    (4, "Breaking U.S. election story (with its Canadian angle)"),
-    (5, "Canadian, with a live event coming up"),
-    (6, "Canadian, still developing"),
-    (7, "From abroad, tied to Canada"),
-    (8, "Canadian, older"),
-    (9, "No Canadian tie"),
+    (3, "Breaking news from abroad that Canadian newsrooms are carrying"),
+    (4, "Big Canadian exclusive: a major newsroom's interview or scoop (shown as Exclusive)"),
+    (5, "Breaking U.S. election story (with its Canadian angle)"),
+    (6, "Canadian, with a live event coming up"),
+    (7, "Canadian, still developing"),
+    (8, "From abroad, tied to Canada"),
+    (9, "Canadian, older"),
+    (10, "No Canadian tie"),
 ]
+# Rule 3 (Hannah, Sat Oct 31, 2026: "why is the Trump lawsuit not at the top? It's the latest breaking news"): a story
+# from abroad, just reported (newest report under BREAKING_ABROAD_MINUTES) by BREAKING_INDEPENDENT_ABROAD newsrooms or
+# more on their own, with Canadian newsrooms among those carrying it. It leads while it is fresh, then drops back.
+CANADIAN_OUTLET = re.compile(r"^(CBC|CTV|Global News|Toronto Star|The Star|National Post|Financial Post|The Canadian Press|CP24|CityNews|BNN|"
+                             r"The Globe|Ottawa Citizen|Montreal Gazette|Vancouver Sun|Calgary Herald|Edmonton Journal|Toronto Sun|Winnipeg Free Press|"
+                             r"Times Colonist|The Hub|iPolitics|Maclean|Canada's National Observer|The Logic|Radio-Canada|La Presse)", re.I)
+BREAKING_ABROAD_MINUTES = 60
+BREAKING_INDEPENDENT_ABROAD = 3
 # BIG CANADIAN EXCLUSIVES (Hannah, Fri Oct 30, 2026, on Politico's Carney interview: "how do we ensure in the code that
 # big news like that ends up in breaking"). One newsroom's own interview or scoop is not Breaking (several newsrooms
 # reporting on their own: Hannah, Oct 29), so it goes at the top labelled "Exclusive", credited to the newsroom that
@@ -93,7 +102,11 @@ CLIP_HOURS = 36
 WEAK = set("""here's here’s what what's why how who when watch live breaking update updates opinion analysis says said new
 canada canadian canadians ottawa u.s us america american trump carney the a this that it's state states department
 president minister government police city court federal provincial premier mayor report reports""".split())
-SPORT = re.compile(r"football|basketball|baseball|\bNHL\b|\bNFL\b|\bNBA\b|\bMLB\b|World Series|Stanley Cup|Blue Jays|Maple Leafs|Raptors|quarterback|/sports?/", re.I)
+SPORT = re.compile(r"football|basketball|baseball|soccer|hockey|\bNHL\b|\bNFL\b|\bNBA\b|\bMLB\b|\bMLS\b|\bCFL\b|\bNCAA\b|\bPWHL\b|\bWNBA\b|"
+                   r"World Series|Stanley Cup|Grey Cup|Blue Jays|Maple Leafs|Raptors|quarterback|"
+                   # game stories that name no sport (Hannah, Sat Oct 31, 2026: "Cabana's long TD run, Kelly's 3 FGs" reached the top)
+                   r"\bTDs?\b|touchdowns?|\bFGs?\b|field goals?|rushing yards|\binnings?\b|home runs?|hat trick|power play|"
+                   r"\b(?:semifinal|quarterfinal|playoff|bowl) (?:game|win|loss)|\bwins? (?:\d+-\d+|in overtime)|\b\d+-\d+ (?:win|loss|victory)|/sports?/", re.I)
 FRENCH_TEXT = re.compile(r"\b(les|des|une|pour|avec|dans|sur|qui|est|au|aux|du)\b.*\b(les|des|une|pour|avec|dans|sur|qui|est|au|aux|du)\b", re.I)
 PARTY = set("liberal liberals conservative conservatives ndp bloc green greens party parties caucus".split())
 VIDEO = re.compile(r"/videos?/|/player/|/watch|^Watch:|^WATCH:|^Video:", re.I)
@@ -1747,6 +1760,14 @@ def _select(auto, cands, ranked, tier):
         if len(top2) >= TOP_MAX:
             rest.insert(0, top2.pop())
         top2.insert(len(top2) if len(top2) < TOP_MAX else TOP_MAX - 1, k)  # a slot, in rule order (it does not jump the lead)
+    # Canada is always at the top (Hannah: Canadian ties first): when the first two are both from abroad, the third
+    # slot goes to the biggest Canadian story, whatever its size
+    is_ca = lambda x: top_rule(x) in (1, 4, 6, 7) or x.get("canada") == "canadian"
+    if len(top2) == 2 and not any(is_ca(x) for x in top2):
+        k = next((x for x in rest if is_ca(x) and top_rule(x) <= 9 and not SPORT.search(x.get("title") or "")), None)
+        if k:
+            rest.remove(k)
+            top2.append(k)
     # a third top story when one more is big enough on its own (third_worthy), on any day
     if len(top2) == 2:
         for s in list(rest):
@@ -1962,9 +1983,13 @@ def top_rule(s, now=None):
         age = (now - datetime.fromisoformat(s.get("newest") or "")).total_seconds() / 3600
     except Exception:
         age = 99
-    canadian = s.get("canada") == "canadian" or bool(s.get("canus"))
+    # Canadian: the story itself is, or its own headline ties Canada and the U.S. (a report among many that mentions
+    # Canada does not make a story from abroad Canadian: the Oleshky evacuation ranked as "Canadian and breaking")
+    canadian = s.get("canada") == "canadian" or (bool(s.get("canus")) and bool(CAN_TIE.search(s.get("title") or "")))
+    if SPORT.search((s.get("title") or "") + " " + (s.get("url") or "")):
+        return 10  # no sports at the top (Hannah's rule)
     if s.get("judgment") == "local":  # NEWS JUDGMENT: a story for one community is not a top story
-        return 8 if canadian else 9
+        return 9 if canadian else 10
     live = (s.get("live") or {}).get("state")
     breaking = s.get("tag") == "Breaking" or live == "now"  # Breaking: 4+ independent newsrooms, a report in the last hour
     if canadian and breaking:
@@ -1972,23 +1997,32 @@ def top_rule(s, now=None):
     if (not canadian and (s.get("independent") or 0) >= BIG_WORLD_INDEPENDENT and (s.get("carriers") or 0) >= BIG_WORLD_CARRIERS
             and age < BIG_WORLD_FRESH_HOURS):
         return 2
-    if s.get("scoop") and age < SCOOP_HOURS:
+    if (not canadian and age * 60 < BREAKING_ABROAD_MINUTES and (s.get("independent") or 0) >= BREAKING_INDEPENDENT_ABROAD
+            and any(CANADIAN_OUTLET.search(r.get("outlet") or "") for r in (s.get("reports") or []))):
         return 3
-    if s.get("us_election"):
+    if s.get("scoop") and age < SCOOP_HOURS:
         return 4
-    if canadian and live == "soon":
+    if s.get("us_election"):
         return 5
-    if canadian and age < CANADIAN_FRESH_HOURS:
+    if canadian and live == "soon":
         return 6
-    if s.get("canada") in ("tie", "general"):
+    if canadian and age < CANADIAN_FRESH_HOURS:
         return 7
-    if canadian:
+    if s.get("canada") in ("tie", "general"):
         return 8
-    return 9
+    if canadian:
+        return 9
+    return 10
 
 
 def rank_key(s):
-    return (top_rule(s), -(s.get("weight") or 0))
+    r = top_rule(s)
+    if r == 3:  # breaking news from abroad: the latest development leads (Hannah: "It's the latest breaking news")
+        try:
+            return (r, -datetime.fromisoformat(s.get("newest") or "").timestamp())
+        except Exception:
+            pass
+    return (r, -(s.get("weight") or 0))
 
 
 def third_worthy(s, top2, tier):
@@ -1997,7 +2031,7 @@ def third_worthy(s, top2, tier):
     now, or coming up within LIVE_SOON_HOURS), Breaking-level coverage (BREAKING_INDEPENDENT newsrooms), or a weight of
     at least THIRD_WEIGHT of the second story's. On a quiet day nothing qualifies and the top stays at two."""
     from datetime import datetime, timezone
-    if tier(s) >= 2 or s.get("judgment") == "local":
+    if tier(s) >= 2 or s.get("judgment") == "local" or top_rule(s) >= 9 or SPORT.search((s.get("title") or "") + " " + (s.get("url") or "")):
         return False
     themes = {t.get("theme") for t in top2 if t.get("theme")}
     if s.get("theme") and s["theme"] in themes:
@@ -2675,6 +2709,11 @@ BIG_QUERIES = {"Federal budget": ["federal budget Champagne", "Budget 2026 Canad
                "U.S. midterm elections": ["U.S. midterms Canada", "midterm elections 2026", "midterms Senate House races"]}
 BIG_SEARCH_SKIP = re.compile(r"msn\.com|yahoo\.com|news\.google|bing\.com|aol\.com|newsbreak|/opinion|/life/|/style/|/sports?/|/video/|/podcasts?/", re.I)
 # searched coverage only from established newsrooms (their own sites)
+BIG_SUMMARY_LOOKS = 30
+# stories that belong on an event's card even when they don't name it (Hannah, Sat Oct 31, 2026: "for midterms also
+# include the Canada-US stuff in there. It's vital."): the Canada-U.S. relationship, the trade war and the border
+BIG_ALSO = {"U.S. midterm elections": CANUS}
+BIG_REPORTS = 10  # reports kept per card (the card shows two, Show all opens the rest)  # stories per event whose summaries are read when the headline alone doesn't say
 BIG_SEARCH_TRUSTED = re.compile(r"(?:^|\.|//)(cbc\.ca|ctvnews\.ca|globalnews\.ca|thestar\.com|theglobeandmail\.com|nationalpost\.com|financialpost\.com|"
     r"cp24\.com|citynews\.ca|bnnbloomberg\.ca|thecanadianpress\.com|ipolitics\.ca|hilltimes\.com|thehub\.ca|macleans\.ca|nationalobserver\.com|"
     r"thelogic\.co|ottawacitizen\.com|montrealgazette\.com|vancouversun\.com|calgaryherald\.com|edmontonjournal\.com|torontosun\.com|"
@@ -2686,6 +2725,20 @@ BIG_SEARCH_TRUSTED = re.compile(r"(?:^|\.|//)(cbc\.ca|ctvnews\.ca|globalnews\.ca
 BIG_OFFICIAL_FEEDS = [("Government of Canada", "https://api.io.canada.ca/io-server/gc/news/en/v2?sort=publishedDate&orderBy=desc&pick=100&format=atom"),
                       ("Prime Minister of Canada", "https://www.pm.gc.ca/en/news.rss"), ("The White House", "https://www.whitehouse.gov/feed/")]
 BIG_KINDS = r"(?:federal budget|provincial budget|budget|election|by-?election|vote|referendum|throne speech|fall economic statement|economic update|summit|rate decision|interest rate announcement|ruling|verdict|sentencing)"
+# scheduled events found in the news by themselves (Hannah, Sat Oct 31, 2026: "add in other stories as well if you see
+# them scheduled for the week"): what the headlines say is happening, and the name the card gets. A date can be written
+# as a date ("Nov. 5") or a day ("on Monday", "this weekend", "tomorrow"), counted from the day the report was published.
+BIG_DETECT = [
+    ("Clocks fall back", r"clocks? (?:fall|falling|go|going|turn|turning) back|daylight (?:saving )?time ends|end of daylight|gain an hour|time change|new time zone"),
+    ("{place} budget", r"(?:federal |provincial )?budget(?! cuts)"), ("{place} election", r"(?:by-?)?election(?! results)"),
+    ("{place} vote", r"referendum|strike vote|ratification vote"), ("Throne speech", r"throne speech|speech from the throne"),
+    ("Fall economic statement", r"fall economic statement|economic update"), ("Bank of Canada rate decision", r"Bank of Canada[^.]{0,40}(?:rate|decision)|rate decision"),
+    ("U.S. Federal Reserve decision", r"(?:Fed|Federal Reserve)[^.]{0,30}(?:decision|meeting|rate)"), ("Jobs report", r"jobs report|labour force survey|unemployment (?:rate|numbers) (?:out|due)"),
+    ("{place} summit", r"summit"), ("{place} strike deadline", r"strike deadline|could strike|strike (?:as early as|could begin)|walk off the job"),
+    ("{place} trial", r"trial (?:begins|starts|opens|set)|sentencing|verdict"), ("{place} ruling", r"(?:Supreme Court|court) (?:ruling|decision) (?:due|expected)"),
+    ("{place} launch", r"launch (?:window|set|scheduled)|lift-?off"),
+]
+WEEKDAYS = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
 MONTHS = {m: i for i, m in enumerate(["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"], 1)}
 
 
@@ -2752,35 +2805,66 @@ def big_week(items, now, prev=()):
     events = [(n, datetime.strptime(d, "%Y-%m-%d").date(), what, re.compile(a, re.I), re.compile(b, re.I), True) for n, d, what, a, b in BIG_EVENTS]
     # found in the news: "<kind> ... on|set for|scheduled for <Month> <day>" in several newsrooms' headlines
     found = Counter()
-    rx_date = re.compile(r"\b(" + BIG_KINDS + r")\b[^.?!]{0,60}?\b(?:on|set for|scheduled for|due|coming|slated for|to be (?:tabled|released|delivered|held) on)\s+"
-                         r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?\s+(\d{1,2})\b", re.I)
+    from zoneinfo import ZoneInfo as _Z
+    rx_when = re.compile(r"\b(?:on|this|next|by|set for|scheduled for|due|slated for|starting|until|before)?\s*"
+                         r"(?:(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?\s+(\d{1,2})\b|(Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday)\b|"
+                         r"(this weekend|tomorrow|tonight|next week))", re.I)
     who = {}
     for dt, outlet, title, link, _ in items:
-        if (now - dt).total_seconds() > 14 * 86400:
+        if (now - dt).total_seconds() > 10 * 86400:
             continue
-        m = rx_date.search(title)
-        if not m:
+        for tmpl, krx in BIG_DETECT:
+            km = re.search(r"\b(?:" + krx + r")", title, re.I)
+            if not km:
+                continue
+            m = rx_when.search(title)
+            if not m or not m.group(0).strip():
+                continue
+            pub = dt.astimezone(_Z("America/Toronto")).date()
+            if m.group(1):
+                try:
+                    d = pub.replace(month=MONTHS[m.group(1)[:3].lower()], day=int(m.group(2)))
+                except ValueError:
+                    continue
+                if d < pub - timedelta(days=3):
+                    d = d.replace(year=d.year + 1)
+            elif m.group(3):
+                d = pub + timedelta(days=(WEEKDAYS.index(m.group(3).lower()) - pub.weekday()) % 7 or 7)
+            else:
+                w_ = m.group(4).lower()
+                d = pub + timedelta(days=1) if w_ in ("tomorrow",) else pub if w_ == "tonight" else (
+                    pub + timedelta(days=(6 - pub.weekday()) % 7) if w_ == "this weekend" else pub + timedelta(days=7 - pub.weekday()))
+            if "{place}" in tmpl:
+                place = next((p_ for p_ in re.findall(r"\b([A-Z][a-zé]+(?:\s[A-Z][a-zé]+)?|B\.C\.|N\.S\.|N\.B\.|P\.E\.I\.|N\.L\.|U\.S\.)", title)
+                              if p_.lower() not in WEEKDAYS and not re.match(r"(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)", p_) and p_ not in ("The", "What", "How", "Why", "Here")), "")
+                if not place:
+                    continue
+                name = tmpl.replace("{place}", place)
+            else:
+                name = tmpl
+            key = (name, d)
+            found[key] += 1
+            who.setdefault(key, set()).add(au.clean_outlet(outlet))
+            who.setdefault(("rx",) + key, krx)
+            break
+    # one event can be dated a day apart by different newsrooms ("Saturday night into Sunday", "this weekend"):
+    # reports of the same event within a day of each other count together, on the date most of them give
+    merged = {}
+    for (name, d), n in sorted(found.items(), key=lambda x: -x[1]):
+        k = next((k_ for k_ in merged if k_[0] == name and abs((k_[1] - d).days) <= 1), None)
+        if k is None:
+            merged[(name, d)] = set(who[(name, d)]); who.setdefault(("rx", name, d), who[("rx", name, d)])
+        else:
+            merged[k] |= who[(name, d)]
+    for (name, d), outs in merged.items():
+        who[(name, d)] = outs
+    for (name, d) in list(merged):
+        if len(who[(name, d)]) < BIG_MIN_OUTLETS:
             continue
-        mon, day = MONTHS[m.group(2)[:3].lower()], int(m.group(3))
-        try:
-            d = today.replace(month=mon, day=day)
-        except ValueError:
-            continue
-        if d < today - timedelta(days=BIG_DAYS_AFTER):
-            d = d.replace(year=d.year + 1)
-        kind = m.group(1).lower()
-        key = (kind, d)
-        found[key] += 1
-        who.setdefault(key, set()).add(au.clean_outlet(outlet))
-        who.setdefault(("t",) + key, title)
-    for (kind, d), n in found.items():
-        if len(who[(kind, d)]) < BIG_MIN_OUTLETS or any(e[1] == d and re.search(kind.split()[-1], e[0], re.I) for e in events):
-            continue
-        t = who[("t", kind, d)]
-        place = re.findall(r"\b([A-Z][a-z]+(?: [A-Z][a-z]+)?)\b", t)
-        name = (place[0] + " " if place and place[0].lower() not in kind else "") + kind
-        events.append((name[:1].upper() + name[1:], d, "", re.compile(r"\b" + re.escape(kind.split()[-1]) + r"\b", re.I),
-                       re.compile("|".join(re.escape(p_) for p_ in place[:3]) or kind), False))
+        if any(re.search(re.escape(name.split()[-1]), e[0], re.I) and abs((e[1] - d).days) <= 1 for e in events):
+            continue  # already a card (the budget, the midterms)
+        krx = who[("rx", name, d)]
+        events.append((name, d, "", re.compile(r"\b(?:" + krx + r")", re.I), re.compile(r".", re.S), False))
     official_pool = []
     for who, url in BIG_OFFICIAL_FEEDS:
         try:
@@ -2793,8 +2877,32 @@ def big_week(items, now, prev=()):
         if days > BIG_DAYS_BEFORE or days < -BIG_DAYS_AFTER:
             continue
         reps, seen, seen_t = [], set(), set()
+        # a story is about the event when its headline says so, or, for a major newsroom's story whose headline names
+        # one side of it, when its own summary does (Hannah, Sat Oct 31, 2026, on Politico's Carney interview: "where's
+        # that big story by Politico? ... Why is it not written into the code?" Its headline doesn't say "midterms";
+        # its summary does: "just days before the U.S. midterm elections")
+        looks = [0]
+
+        also = BIG_ALSO.get(name)
+
+        def about(title, link, outlet):
+            if ra.search(title) and rb.search(title):
+                return True
+            if also is not None and also.search(title) and CAN_TIE.search(title):
+                return True
+            if not (ra.search(title) or rb.search(title)) or au.clean_outlet(outlet) not in SCOOP_OUTLETS:
+                return False
+            # a summary already in hand (the feed's own, or read earlier this run) costs nothing; reading a page does
+            desc = (rich_item(link) or {}).get("desc") or (INFO_CACHE.get(link) or {}).get("desc", "")
+            if not desc:
+                if looks[0] >= BIG_SUMMARY_LOOKS:
+                    return False
+                looks[0] += 1
+                desc = (page_info(link) or {}).get("desc", "")
+            text = title + " " + desc
+            return bool(ra.search(text) and rb.search(text))
         for dt, outlet, title, link, _ in sorted(items, key=lambda x: x[0], reverse=True):
-            if (now - dt).total_seconds() > 5 * 86400 or not (ra.search(title) and rb.search(title)):
+            if (now - dt).total_seconds() > 5 * 86400 or not about(title, link, outlet):
                 continue
             o = au.clean_outlet(outlet)
             k = re.sub(r"\W", "", title.lower())[:60]
@@ -2803,9 +2911,12 @@ def big_week(items, now, prev=()):
                     or SPORT.search(title + " " + link) or NOT_NEWS.search(title + " " + link) or VIDEO.search(link)):
                 continue
             seen.add(o); seen_t.add(k)
+            desc = (INFO_CACHE.get(link) or {}).get("desc") or (RICH.get(link.split("?")[0]) or {}).get("desc", "")
             reps.append({"t": w.eastern(dt), "iso": dt.isoformat(), "outlet": o.replace(" (subscribers)", "") + (" (subscribers)" if globe else ""),
-                         "title": clean(title), "url": link, "canada": bool(CAN_TIE.search(title)), "paywall": globe})
-            if len(reps) >= 6:
+                         "title": clean(title), "url": link, "canada": bool(CAN_TIE.search(title + " " + desc)), "paywall": globe,
+                         # a newsroom's own interview or scoop: labelled Exclusive and listed first
+                         "exclusive": o in SCOOP_OUTLETS and bool(SCOOP_SIGNAL.search(title + " " + link.replace("-", " ") + " " + desc))})
+            if len(reps) >= 40:
                 break
         # searched coverage: newest reports join the list, older ones become earlier coverage (below)
         searched = []
@@ -2818,16 +2929,20 @@ def big_week(items, now, prev=()):
         for dt, o, title, link in sorted(searched, key=lambda x: x[0], reverse=True):
             k = re.sub(r"\W", "", title.lower())[:60]
             if ((now - dt).total_seconds() > 5 * 86400 or link.split("?")[0] in have_u or k in seen_t or o in seen
-                    or not (ra.search(title) and rb.search(title)) or NOT_NEWS.search(title) or len(reps) >= 8):
+                    or not (ra.search(title) and rb.search(title) or (also is not None and also.search(title) and CAN_TIE.search(title)))
+                    or NOT_NEWS.search(title)):
                 continue
             globe = "theglobeandmail.com" in link
             seen.add(o); seen_t.add(k); have_u.add(link.split("?")[0])
             reps.append({"t": w.eastern(dt), "iso": dt.isoformat(), "outlet": o + (" (subscribers)" if globe else ""), "title": title, "url": link,
                          "canada": bool(CAN_TIE.search(title)), "paywall": globe})
+        # the order: a newsroom's own exclusive first, then the Canadian angle, newest first within each; the Globe last
         reps.sort(key=lambda r: r["iso"], reverse=True)
         if not CAN_TIE.search(name):
             reps.sort(key=lambda r: not r["canada"])
+        reps.sort(key=lambda r: not r.get("exclusive"))
         reps.sort(key=lambda r: r.get("paywall", False))
+        reps = reps[:BIG_REPORTS]
         # an event found in the news needs two reports; one named in BIG_EVENTS shows from its date alone
         if len(reps) < (0 if named else 2):
             continue
@@ -2846,7 +2961,7 @@ def big_week(items, now, prev=()):
             if len(official) >= 4:
                 break
         # earlier coverage: reports older than the newest ones, up to BIG_BACK_DAYS ago, one per newsroom
-        shown = {r["url"] for r in reps[:5]}
+        shown = {r["url"] for r in reps}
         back, seen_b = [], set()
         for dt, o, title, link in sorted(searched, key=lambda x: x[0], reverse=True):
             age = (now - dt).total_seconds()
@@ -2892,7 +3007,16 @@ def big_week(items, now, prev=()):
         back.sort(key=lambda r: r.get("iso", ""), reverse=True)
         back = back[:6]
         back.sort(key=lambda r: r.get("paywall", False))
-        out.append({"name": name, "date": d.isoformat(), "what": what, "days": days, "reports": reps[:8], "official": official, "earlier": back})
+        # one line per wire story: the same headline from two newsrooms is one report (Hannah, Thu Oct 29, 2026)
+        def _one(lst):
+            seen_h, keep = set(), []
+            for r in lst:
+                h = re.sub(r"\W", "", r["title"].lower())[:50]
+                if h not in seen_h:
+                    seen_h.add(h); keep.append(r)
+            return keep
+        reps, back = _one(reps), _one([b for b in back if re.sub(r"\W", "", b["title"].lower())[:50] not in {re.sub(r"\W", "", r["title"].lower())[:50] for r in reps}])
+        out.append({"name": name, "date": d.isoformat(), "what": what, "days": days, "reports": reps[:BIG_REPORTS], "official": official, "earlier": back})
     out.sort(key=lambda e: e["date"])
     return out[:BIG_MAX]
 

@@ -16,6 +16,7 @@
 #bigWeek li .o { margin-left: 4px; font-size: 11.5px; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; color: var(--wine); white-space: nowrap; }
 #bigWeek li .o::before { content: "\2014\00a0"; font-weight: 400; color: var(--muted); }
 #bigWeek li .ca { display: inline-block; margin-right: 6px; padding: 0 7px; border-radius: 999px; background: #B23A55; color: #FFFFFF; font-size: 10.5px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; vertical-align: 1px; }
+#bigWeek li .ex { display: inline-block; margin-right: 6px; padding: 0 7px; border-radius: 999px; background: #D0122E; color: #FFFFFF; font-size: 10.5px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; vertical-align: 1px; }
 #bigWeek .bw-soon { margin: 6px 0 4px; font-size: 14px; color: var(--muted); font-style: italic; }
 /* more than two reports on a card: the first two, and a Show all / Show fewer button (Hannah, Sat Oct 31, 2026) */
 #bigWeek .bw-fold:not(.bw-open) > li:nth-child(n+3) { display: none; }
@@ -76,7 +77,7 @@
           // official sources first (the event's own site, government releases), then the newest reports, then earlier
           // coverage; two reports show, and Show all opens the rest with the earlier coverage (Hannah, Sat Oct 31, 2026)
           const R = e.reports || [], B = e.earlier || [], O = e.official || [];
-          const item = (r) => '<li><time>' + esc(r.t) + '</time>' + (r.canada && !/Canad|budget/i.test(e.name) ? '<span class="ca">Canada</span>' : '') + '<a href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(r.title) + '</a><span class="o">' + esc(r.outlet) + ' &#8599;</span></li>';
+          const item = (r) => '<li><time>' + esc(r.t) + '</time>' + (r.exclusive ? '<span class="ex">Exclusive</span>' : '') + (r.canada && !/Canad|budget/i.test(e.name) ? '<span class="ca">Canada</span>' : '') + '<a href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(r.title) + '</a><span class="o">' + esc(r.outlet) + ' &#8599;</span></li>';
           const n = R.length + B.length;
           return (O.length ? '<ul class="bw-off">' + O.map((o) => '<li><span class="bw-prim' + (o.site ? ' site' : '') + '">' + (o.site ? 'Official site' : 'Primary source') + '</span>' + (o.t ? '<time>' + esc(o.t) + '</time>' : '') + '<a href="' + esc(o.url) + '" target="_blank" rel="noopener">' + esc(o.title) + '</a><span class="o">' + esc(o.who) + ' &#8599;</span></li>').join('') + '</ul>' : '')
             + (n > 2 ? '<button type="button" class="bw-more" aria-expanded="false" data-n="' + n + '">Show all ' + n + ' \u25BE</button>' : '')
