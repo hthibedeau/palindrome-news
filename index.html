@@ -220,6 +220,10 @@ a.snimg { display: block; }
 </style>
 </head><body>
 <title>Palindrome News</title>
+<meta name="description" content="News from every direction. One clear perspective. Your personal newsroom: see it all and go straight to the source.">
+<meta property="og:title" content="Palindrome News">
+<meta property="og:description" content="News from every direction. One clear perspective. Your personal newsroom: see it all and go straight to the source.">
+<meta name="twitter:card" content="summary">
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -291,6 +295,9 @@ header.site { background: var(--surface); border-bottom: 1px solid var(--line); 
 .motto::before, .motto::after { content: ""; flex: 1 1 0; height: 1px; background: var(--rule); }
 .motto span { font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--body); }
 .byline { margin-top: 10px; font-size: 13px; color: var(--muted); }
+/* Second line under the motto (Hannah, Oct 31, 2026). The motto above it always stays. */
+.promise { margin: 8px auto 0; max-width: 620px; font-family: "Newsreader", Georgia, serif; font-style: italic; font-size: 17px; line-height: 1.35; color: var(--wine); }
+@media (max-width: 600px) { .promise { font-size: 15px; padding: 0 16px; } }
 nav.sections { display: flex; gap: 2px; overflow-x: auto; border-top: 3px double var(--rule); scrollbar-width: none; }
 nav.sections::-webkit-scrollbar { display: none; }
 @media (min-width: 900px) { nav.sections { justify-content: center; } }
@@ -1517,6 +1524,7 @@ header.site { border-bottom: 0; }
         <span class="stamp" id="stamp" hidden>Late edition</span>
         <a class="logo" href="#top">Palindrome <em>News</em></a>
         <div class="motto"><span>News from every direction. One clear perspective.</span></div>
+        <p class="promise">Your personal newsroom. See it all and go straight to the source.</p>
         <div class="byline">Founded and edited by Hannah Thibedeau</div>
       </div>
       <div class="ear ear-r"><b>Our standard</b><span class="big">Six sources</span><span>No summary runs until six independent outlets report it</span></div>

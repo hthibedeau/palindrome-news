@@ -166,6 +166,7 @@ Rules (Hannah's):
 - Promote a new story to a breakdown only when 6 independent newsrooms report it (wire copies count once). Aim for 3 to 5 full breakdowns. Each new breakdown needs a real photo from its reporting (grab_picture.py, stored as an asset and mapped in LOCAL).
 
 ## House rules (Hannah's)
+0. THE MASTHEAD LINES ARE PERMANENT (Hannah, Sat Oct 31, 2026: "please never get rid of news from every direction, one clear perspective"). The motto "News from every direction. One clear perspective." (div.motto) always stays, and under it the line "Your personal newsroom. See it all and go straight to the source." (p.promise). Never remove, replace or reword either one in any run.
 1. Six-source rule: "Verified" and a full breakdown only with 6 independent newsrooms (same owner counts as one). If every outlet only relays one party's claim, keep it labelled unconfirmed and say so.
 2. Every story link goes to the newest, fullest report (via STORY); every story shows the latest report on top and who reported it first below.
 3. U.S. stories lead with American newsrooms (AP, CBS, NBC, ABC, CNN, Fox, PBS, NPR, Axios, The Hill, CNBC, local U.S. papers and stations). Canadian stories lead with Canadian newsrooms.
