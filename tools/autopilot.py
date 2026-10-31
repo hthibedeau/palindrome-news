@@ -2659,11 +2659,51 @@ BIG_EVENTS = [  # name, date (Eastern), what it is, the headlines about it (both
     ("Federal budget", "2026-11-05", "Finance Minister François-Philippe Champagne tables Ottawa's budget",
      r"\bbudget\b", r"\b(federal|Champagne|Carney|Ottawa|Liberals?|PBO|parliamentary budget officer|deficit|fall budget|budget day|finance minister|tax breaks?)\b"),
 ]
+# Each card also carries (Hannah, Sat Oct 31, 2026: "there's stuff from the government website, there are news stories
+# from the past. Make sure these go in"): the official sources first (government news releases, statements and the
+# event's own official site, BIG_OFFICIAL), then the newest reports, then earlier coverage from up to BIG_BACK_DAYS ago.
+BIG_BACK_DAYS = 30
+BIG_OFFICIAL = {  # an event's own official site, always listed first: event name -> [(who, url, what)]
+    "Federal budget": [("Department of Finance Canada", "https://budget.canada.ca/", "The official budget site, where the budget is published on budget day")],
+    "U.S. midterm elections": [("U.S. Election Assistance Commission", "https://www.eac.gov/", "The U.S. federal agency for elections: voting dates, results and how Americans vote")],
+}
+BIG_OFFICIAL_FEEDS = [("Government of Canada", "https://api.io.canada.ca/io-server/gc/news/en/v2?sort=publishedDate&orderBy=desc&pick=100&format=atom"),
+                      ("Prime Minister of Canada", "https://www.pm.gc.ca/en/news.rss"), ("The White House", "https://www.whitehouse.gov/feed/")]
 BIG_KINDS = r"(?:federal budget|provincial budget|budget|election|by-?election|vote|referendum|throne speech|fall economic statement|economic update|summit|rate decision|interest rate announcement|ruling|verdict|sentencing)"
 MONTHS = {m: i for i, m in enumerate(["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"], 1)}
 
 
-def big_week(items, now):
+def _day_label(dt):
+    """"Oct. 20" (Eastern): earlier reports need the date, not just the weekday."""
+    from zoneinfo import ZoneInfo
+    e = dt.astimezone(ZoneInfo("America/Toronto"))
+    m = ["Jan.", "Feb.", "March", "April", "May", "June", "July", "Aug.", "Sept.", "Oct.", "Nov.", "Dec."][e.month - 1]
+    return f"{m} {e.day}"
+
+
+def _feed_entries(who, url):
+    """(date, who, title, link) from an RSS or Atom feed (the Government of Canada's news feed is Atom); for a
+    Government of Canada item, "who" is the department that issued it."""
+    from email.utils import parsedate_to_datetime
+    x = curl(url) or ""
+    out = []
+    for it in re.findall(r"<(?:item|entry)\b[^>]*>(.*?)</(?:item|entry)>", x, re.S):
+        g = lambda k: _h.unescape(re.sub(r"<!\[CDATA\[|\]\]>", "", (re.search(r"<" + k + r"\b[^>]*>(.*?)</" + k + ">", it, re.S) or [None, ""])[1])).strip()
+        title = clean(re.sub(r"<[^>]+>", " ", g("title")))
+        link = g("link") or (re.search(r'<link[^>]*href="([^"]+)"', it) or [None, ""])[1]
+        ds = g("pubDate") or g("updated") or g("published")
+        try:
+            dt = parsedate_to_datetime(ds) if re.match(r"[A-Z][a-z]{2},", ds) else datetime.fromisoformat(ds.replace("Z", "+00:00"))
+            dt = dt.astimezone(timezone.utc)
+        except Exception:
+            continue
+        dept = g("name") if "<author>" in it else ""
+        if title and link:
+            out.append((dt, dept or who, title, link))
+    return out
+
+
+def big_week(items, now, prev=()):
     import autoupdate as au
     from collections import Counter
     from zoneinfo import ZoneInfo
@@ -2701,6 +2741,12 @@ def big_week(items, now):
         name = (place[0] + " " if place and place[0].lower() not in kind else "") + kind
         events.append((name[:1].upper() + name[1:], d, "", re.compile(r"\b" + re.escape(kind.split()[-1]) + r"\b", re.I),
                        re.compile("|".join(re.escape(p_) for p_ in place[:3]) or kind), False))
+    official_pool = []
+    for who, url in BIG_OFFICIAL_FEEDS:
+        try:
+            official_pool += _feed_entries(who, url)
+        except Exception as e:
+            print("big week official feed failed:", who, e)
     out = []
     for name, d, what, ra, rb, named in events:
         days = (d - today).days
@@ -2728,7 +2774,55 @@ def big_week(items, now):
         if not CAN_TIE.search(name):
             reps.sort(key=lambda r: not r["canada"])
         reps.sort(key=lambda r: r.get("paywall", False))  # the Globe last
-        out.append({"name": name, "date": d.isoformat(), "what": what, "days": days, "reports": reps[:5]})
+        # the official sources: the event's own site, then government releases and statements about it (last BIG_BACK_DAYS)
+        official = [{"who": who, "url": url, "title": what_, "t": "", "site": True} for who, url, what_ in BIG_OFFICIAL.get(name, [])]
+        seen_o = set()
+        for dt, who, title, link in sorted(official_pool, reverse=True):
+            if (now - dt).total_seconds() > BIG_BACK_DAYS * 86400 or not (ra.search(title) and rb.search(title)) or link in seen_o:
+                continue
+            seen_o.add(link)
+            official.append({"who": who, "url": link, "title": clean(title), "t": _day_label(dt), "iso": dt.isoformat()})
+            if len(official) >= 4:
+                break
+        # earlier coverage: reports older than the newest ones, up to BIG_BACK_DAYS ago, one per newsroom
+        shown = {r["url"] for r in reps[:5]}
+        back, seen_b = [], set()
+        for dt, outlet, title, link, _ in sorted(items, key=lambda x: x[0], reverse=True):
+            age = (now - dt).total_seconds()
+            if age <= 5 * 86400 or age > BIG_BACK_DAYS * 86400 or link in shown or not (ra.search(title) and rb.search(title)):
+                continue
+            o = au.clean_outlet(outlet)
+            globe = "theglobeandmail.com" in link
+            k = re.sub(r"\W", "", title.lower())[:60]
+            if (o in seen_b or k in seen_t or (not globe and not au.ok_item(outlet, link)) or au.OPINION.search(title + " " + link)
+                    or SPORT.search(title + " " + link) or NOT_NEWS.search(title + " " + link) or VIDEO.search(link)):
+                continue
+            seen_b.add(o); seen_t.add(k)
+            back.append({"t": _day_label(dt), "iso": dt.isoformat(), "outlet": o.replace(" (subscribers)", "") + (" (subscribers)" if globe else ""),
+                         "title": clean(title), "url": link, "paywall": globe})
+            if len(back) >= 5:
+                break
+        # keep what earlier updates found: reports and releases the feeds no longer carry stay with the event
+        old = next((p_ for p_ in prev or [] if p_.get("name") == name and p_.get("date") == d.isoformat()), None)
+        if old:
+            have = {r["url"] for r in reps[:5]} | {r["url"] for r in back}
+            for r in (old.get("reports") or []) + (old.get("earlier") or []):
+                try:
+                    age = (now - datetime.fromisoformat(r["iso"])).total_seconds()
+                except Exception:
+                    continue
+                if r["url"] in have or age > BIG_BACK_DAYS * 86400 or (age <= 5 * 86400 and r in (old.get("reports") or [])):
+                    continue
+                r = dict(r, t=_day_label(datetime.fromisoformat(r["iso"])))
+                if len([b for b in back if b["outlet"] == r["outlet"]]) < 2:
+                    back.append(r); have.add(r["url"])
+            have_o = {o["url"] for o in official}
+            official += [o for o in (old.get("official") or []) if o["url"] not in have_o and not o.get("site")]
+            official = official[:5]
+        back.sort(key=lambda r: r.get("iso", ""), reverse=True)
+        back = back[:6]
+        back.sort(key=lambda r: r.get("paywall", False))
+        out.append({"name": name, "date": d.isoformat(), "what": what, "days": days, "reports": reps[:5], "official": official, "earlier": back})
     out.sort(key=lambda e: e["date"])
     return out[:BIG_MAX]
 
@@ -2787,7 +2881,7 @@ def run(page, items, groups, breaking, now, imgdir, prev):
                     ("otr", lambda: on_the_record(page, now)), ("mostread", lambda: most_read(now)),
                     ("smaller", lambda: smaller(items, page, now, imgdir)),
                     ("clocks", lambda: clock_topics(items, groups, now)),
-                    ("bigweek", lambda: big_week(items, now))]:
+                    ("bigweek", lambda: big_week(items, now, prev.get("bigweek") or []))]:
         try:
             res[name] = f()
         except Exception as e:  # never block the run
