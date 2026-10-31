@@ -108,6 +108,16 @@ FEEDS = [
     # Playbook newsletter page and its feed refuse automated reading (403); this is Politico's Canada news feed, the
     # stories its Ottawa bureau files (e.g. its Carney interview, Oct 30).
     ("Politico", "https://rss.politico.com/canada.xml"),
+    # CBC's regional desks, so every clock at the top has its region's news (Hannah, Sat Oct 31, 2026: "my clocks aren't
+    # working again"): Winnipeg and St. John's had little or nothing in the feeds
+    ("CBC News", "https://www.cbc.ca/webfeed/rss/rss-canada-newfoundland"),
+    ("CBC News", "https://www.cbc.ca/webfeed/rss/rss-canada-manitoba"),
+    ("CBC News", "https://www.cbc.ca/webfeed/rss/rss-canada-saskatchewan"),
+    ("CBC News", "https://www.cbc.ca/webfeed/rss/rss-canada-novascotia"),
+    ("CBC News", "https://www.cbc.ca/webfeed/rss/rss-canada-newbrunswick"),
+    ("CBC News", "https://www.cbc.ca/webfeed/rss/rss-canada-pei"),
+    ("CBC News", "https://www.cbc.ca/webfeed/rss/rss-canada-north"),
+    ("VOCM", "https://vocm.com/feed/"),
     ("Fox News", "https://moxie.foxnews.com/google-publisher/latest.xml"),  # added by source_discovery.py 2026-10-20
     ("Euronews", "https://www.euronews.com/rss"),  # added by source_discovery.py 2026-10-20
     ("The Japan Times", "https://www.japantimes.co.jp/feed/"),  # added by source_discovery.py 2026-10-20

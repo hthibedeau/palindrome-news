@@ -2487,6 +2487,14 @@ CLOCK_CITIES = [  # city, time zone, the news that belongs to it
     ("St. John's", "America/St_Johns", r"\b(Newfoundland|Labrador|N\.L\.|St\. John's|St\. John’s|Corner Brook|Gander|Happy Valley-Goose Bay)\b"),
     ("Washington", "America/New_York", r"\b(Washington|White House|Trump|Vance|Congress|Senate|House Republicans|House Democrats|Pentagon|Supreme Court|midterms?|Election Day|U\.S\. election)\b"),
 ]
+# a region's own desk pages count for its clock even when the headline doesn't name the place
+CLOCK_PATHS = {"Vancouver": r"/british-columbia/|/bc/|/vancouver/|vancouversun\.com|timescolonist\.com|cheknews\.ca",
+               "Edmonton": r"/edmonton/|/calgary/|/alberta/|edmontonjournal\.com|calgaryherald\.com|cabinradio\.ca",
+               "Winnipeg": r"/manitoba/|/saskatchewan/|/saskatoon/|/regina/|winnipegfreepress\.com/local|winnipeg\.citynews\.ca/(?:local|\d{4})",
+               "Ottawa": r"/ottawa/|ottawacitizen\.com|nunatsiaq\.com",
+               "Halifax": r"/nova-scotia/|/novascotia/|/new-brunswick/|/newbrunswick/|/pei/|/prince-edward-island/|halifax\.citynews|halifaxexaminer\.ca",
+               "St. John's": r"/newfoundland-labrador/|/newfoundland/|vocm\.com/(?:2\d{3}/)?.*(?:n-?l|newfoundland|labrador|st-johns)"}
+CLOCK_FALLBACK_HOURS = 36  # a region with nothing in CLOCK_HOURS: its newest story from up to this long ago
 WORLD_CLOCK_MAX = 3
 WORLD_CLOCK_MIN_OUTLETS = 3   # a world city needs a story this many newsrooms are carrying
 WORLD_CLOCKS = [  # city, time zone, the news that belongs to it
@@ -2514,14 +2522,17 @@ WORLD_CLOCKS = [  # city, time zone, the news that belongs to it
 CLOCK_TOPICS = [
     (r"\b(time zone|daylight time|daylight saving|clocks? (?:go|fall|spring)|time change|standard time)\b", "Time change"),
     (r"\b(emissions?|climate|carbon|pipeline|oilsands|oil sands|EVs?|electric vehicles?)\b", "Climate"),
+    (r"\b(tentative (?:deal|agreement)|bargaining|contract talks|strike vote|strike deadline|union|walkout|lockout|on strike)\b", "Labour"),
     (r"\b(hiring|jobs?|layoffs?|laid off|workers)\b", "Jobs"), (r"\b(mayor|city council|councillors?|municipal)\b", "City hall"),
     (r"\b(Hormuz)\b", "Hormuz"), (r"\b(EU|European Union|von der Leyen)\b", "Canada–EU"), (r"\bsummit\b", "Summit"), (r"\bmidterms?\b", "Midterms"),
-    (r"\b(astronauts?|space station|Artemis|NASA|launch)\b", "Space"), (r"\b(privacy|data breach|hack\w*|cyber\w*)\b", "Privacy"),
+    (r"\b(astronauts?|space station|Artemis|NASA|rocket launch)\b", "Space"),
+    (r"\b(whales?|fisheries|fishery|fishing|fishermen|lobster|crab|cod)\b", "Fisheries"),
+    (r"\b(rain|fog|wind warning|weather|forecast|heat warning|cold snap|freezing)\b", "Weather"), (r"\b(privacy|data breach|hack\w*|cyber\w*)\b", "Privacy"),
     (r"\b(by-?election|election|vote|votes|voting|ballots?|referendum|polls? close)\b", "{vote}"), (r"\bbudget\b", "Budget"), (r"\bfall economic statement\b", "Economic update"),
     (r"\b(tariffs?|trade war|CUSMA|USMCA)\b", "Tariffs"), (r"\btrade\b", "Trade"),
     (r"\b(ceasefire|truce)\b", "Ceasefire"), (r"\b(peace talks|talks)\b", "Talks"), (r"\bsanctions?\b", "Sanctions"),
     (r"\b(power grid|energy|blackouts?|power plant)\b", "Power grid"), (r"\bdrones?\b", "Drone strikes"), (r"\bmissiles?\b", "Missile strikes"),
-    (r"\b(strikes?|attacks?|shelling|bombard\w*)\b", "Attacks"), (r"\bnuclear\b", "Nuclear"), (r"\b(oil|tankers?|shipping)\b", "Oil and shipping"),
+    (r"\b(strikes?|attacks?|shelling|bombard\w*|rockets?|hits (?:a |an )?(?:plant|refinery|depot|base|port))\b", "Attacks"), (r"\bnuclear\b", "Nuclear"), (r"\b(oil|tankers?|shipping)\b", "Oil and shipping"),
     (r"\b(wildfires?|fires?|blaze)\b", "Fire"), (r"\b(floods?|flooding)\b", "Flooding"), (r"\b(storm|snow|blizzard|hurricane)\b", "Storm"),
     (r"\b(earthquake|quake)\b", "Earthquake"), (r"\b(shooting|shot dead|gunman)\b", "Shooting"), (r"\b(homicide|murder\w*|killed|death of|found dead|police|RCMP)\b", "Police"), (r"\b(stabbing|stabbed)\b", "Stabbing"),
     (r"\b(protests?|rally|rallies|march)\b", "Protests"), (r"\b(strike mandate|walkout|lockout|on strike|union)\b", "Labour"),
@@ -2536,17 +2547,26 @@ CLOCK_TOPICS = [
 def _clock_story(city, rx, items, groups, now):
     """The biggest story in a city's news in the last CLOCK_HOURS (the most newsrooms carrying it), and how many carry it."""
     import autoupdate as au
+    prx = re.compile(CLOCK_PATHS[city], re.I) if city in CLOCK_PATHS else None
+    rx0 = rx
+
+    class _RX:  # the headline names the place, or the report is from the region's own desk
+        def search(self, t, link=""):
+            return rx0.search(t) or (prx is not None and link and prx.search(link))
     best, top_n = None, 0
     for g in (groups or [])[:40]:
-        rows = [r for r in g.get("rows") or [] if rx.search(r[2]) and (now - r[0]).total_seconds() < CLOCK_HOURS * 3600
+        rows = [r for r in g.get("rows") or [] if (rx.search(r[2]) or (prx is not None and prx.search(r[3]))) and (now - r[0]).total_seconds() < CLOCK_HOURS * 3600
                 and not SPORT.search(r[2] + " " + r[3]) and not au.OPINION.search(r[2] + " " + r[3]) and not NOT_NEWS.search(r[2] + " " + r[3])
                 and not re.match(r"\s*(Investigation|Analysis|Opinion|Explainer|Feature|Podcast|Watch|Video)\b\s*[:|]", r[2], re.I)]
         n = len({au.clean_outlet(r[1]) for r in rows})
         if n > top_n:
             best, top_n = sorted(rows, reverse=True), n
-    if not best:  # or else the newest headline about it in the feed
-        rows = sorted([(d, o, t, l) for d, o, t, l, _ in items if rx.search(t) and (now - d).total_seconds() < CLOCK_HOURS * 3600
-                       and not SPORT.search(t + " " + l) and not au.OPINION.search(t + " " + l) and not NOT_NEWS.search(t + " " + l)], reverse=True)
+    for hours in (CLOCK_HOURS, CLOCK_FALLBACK_HOURS):  # or else the newest headline about it in the feed
+        if best:
+            break
+        rows = sorted([(d, o, t, l) for d, o, t, l, _ in items if (rx.search(t) or (prx is not None and prx.search(l))) and (now - d).total_seconds() < hours * 3600
+                       and not SPORT.search(t + " " + l) and not au.OPINION.search(t + " " + l) and not NOT_NEWS.search(t + " " + l)
+                       and not re.search(r"/(sports?|opinion|entertainment|life|arts)/", l)], reverse=True)
         best, top_n = rows[:1], (1 if rows else 0)
     return best or [], top_n
 
@@ -2577,7 +2597,7 @@ def _clock_word(best, rx):
 
 
 # never a city's word on its own: places, outlets and everyday capitalized words
-CLOCK_NOT_NAMES = {"canada", "canadian", "canadians", "the", "city", "province", "provincial", "federal", "government", "police",
+CLOCK_NOT_NAMES = {"much", "many", "more", "most", "some", "after", "before", "over", "under", "canada", "canadian", "canadians", "the", "city", "province", "provincial", "federal", "government", "police",
                    "news", "cbc", "ctv", "global", "here", "what", "why", "how", "this", "these", "new", "first", "north", "south",
                    "east", "west", "update", "live", "watch", "breaking", "report", "says", "monday", "tuesday", "wednesday",
                    "thursday", "friday", "saturday", "sunday", "november", "october", "december"}
