@@ -453,6 +453,14 @@ def core_rows(g):
     return [r for r in rows if anchor in gc.names(r[2]) or len({x for x in gc.names(r[2]) if not is_place(x)} & core) >= 2], core
 
 
+# a government page that is the event itself, not a story about it: speeches, statements, readouts, news releases
+OFFICIAL_DOC = re.compile(r"pm\.gc\.ca/.*/(speeches|statements|readouts|news-releases|news)/|canada\.ca/.*/news/|news\.ontario\.ca|"
+                          r"gov\.bc\.ca/.*/news|alberta\.ca/release|quebec\.ca/.*/nouvelles|whitehouse\.gov/(briefings|remarks|presidential-actions)", re.I)
+# a site's stock sharing graphic, not a photo of the event (the PM site's grey "Speech" card, logos, placeholders)
+GENERIC_IMG = re.compile(r"override_sharing|PM_Speech|PM_Statement|PM_Readout|PM_News|default[-_]?(share|social|og)|og[-_]?default|"
+                         r"social[-_]?share[-_]?default|placeholder|/logos?[/_.-]|logo\.(png|jpg|svg)|fallback", re.I)
+
+
 WHY = ""  # why the last build_story() returned nothing (recorded for live/auto.json "considered")
 
 
@@ -486,17 +494,21 @@ def build_story(g, now, imgdir, prev):
     names = sorted(core or g["n"], key=len, reverse=True)[:6]
     key = "auto-" + hashlib.md5(first[3].encode()).hexdigest()[:8]
     old = next((s for s in prev if s.get("first", {}).get("url") == first[3]), None)
-    # headline and summary: the newest report that has its own summary
+    # headline and summary: the newest report that has its own summary. A speech, statement, readout or news release
+    # from a government site is the primary source, listed first under the story, but the headline, summary and photo
+    # come from a newsroom's story built out of it (Hannah, Fri Oct 30, 2026: "when there is a speech, take a story
+    # built out of it. the screen shot is dull ... grey screen with speech written on it").
     lead, info = reps[0], {}
-    for r in [x for x in reps if not VIDEO.search(x[3] + " " + x[2])][:5]:
+    news_reps = [x for x in reps if not OFFICIAL_DOC.search(x[3]) and not is_primary(x)] or reps
+    for r in [x for x in news_reps if not VIDEO.search(x[3] + " " + x[2])][:5]:
         pi = page_info(r[3])
         if len(pi.get("desc", "")) >= 40:
             lead, info = r, pi
             break
     photo = None
-    for r in [lead] + [x for x in reps[:6] if x is not lead]:
+    for r in [lead] + [x for x in news_reps[:6] if x is not lead]:
         pi = info if r is lead else page_info(r[3])
-        if not pi.get("img"):
+        if not pi.get("img") or GENERIC_IMG.search(pi["img"]):
             continue
         if old and old.get("photo") and old["photo"].get("orig") == pi["img"] and os.path.exists(os.path.join(imgdir, os.path.basename(old["photo"]["src"]))):
             photo = old["photo"]
