@@ -1,6 +1,6 @@
 {
- "checked": "2026-10-31T22:26:39.659840+00:00",
- "checkedLabel": "Sat 6:26 p.m.",
+ "checked": "2026-10-31T22:32:35.084834+00:00",
+ "checkedLabel": "Sat 6:32 p.m.",
  "stories": [
   {
    "key": "top",
@@ -50,11 +50,15 @@
     {
      "t": "Sat 1:14 p.m.",
      "iso": "2026-10-31T17:14:37+00:00",
-     "outlet": "Toronto Star",
-     "title": "London police arrest 139 people outside US Embassy for supporting banned pro-Palestinian group",
-     "url": "https://www.thestar.com/news/world/europe/dozens-arrested-outside-us-embassy-in-london-for-supporting-proscribed-pro-palestinian-group/article_7c8e756b-d7ba-5026-a154-a77d0b130286.html",
+     "outlet": "CityNews Winnipeg",
+     "title": "Dozens arrested outside US Embassy in London for supporting proscribed pro-Palestinian group",
+     "url": "https://winnipeg.citynews.ca/2026/10/31/dozens-arrested-outside-us-embassy-in-london-for-supporting-proscribed-pro-palestinian-group/",
      "primary": false,
      "copies": [
+      {
+       "outlet": "CityNews",
+       "url": "https://toronto.citynews.ca/2026/10/31/dozens-arrested-outside-us-embassy-in-london-for-supporting-proscribed-pro-palestinian-group/"
+      },
       {
        "outlet": "CTV News",
        "url": "https://www.ctvnews.ca/world/article/london-police-arrest-139-people-outside-us-embassy-for-supporting-banned-pro-palestinian-group/"
@@ -75,14 +79,6 @@
      "outlet": "CBS News",
      "title": "Pro-Palestinian protesters arrested outside U.S. Embassy in London",
      "url": "https://www.cbsnews.com/news/dozens-arrested-us-embassy-london-pro-palestinian-group/",
-     "primary": false
-    },
-    {
-     "t": "Sat 1:14 p.m.",
-     "iso": "2026-10-31T17:14:37+00:00",
-     "outlet": "CityNews Winnipeg",
-     "title": "Dozens arrested outside US Embassy in London for supporting proscribed pro-Palestinian group",
-     "url": "https://winnipeg.citynews.ca/2026/10/31/dozens-arrested-outside-us-embassy-in-london-for-supporting-proscribed-pro-palestinian-group/",
      "primary": false
     }
    ],
@@ -109,6 +105,15 @@
  ],
  "wire": [
   [
+   "Sat 6:29 p.m.",
+   "Latest",
+   "Idaho State rallies past Utah Tech with 2 late defensive TDs, 34-27",
+   "The Canadian Press (via Winnipeg Free Press)",
+   "https://www.winnipegfreepress.com/uncategorized/2026/10/31/idaho-state-rallies-past-utah-tech-with-2-late-defensive-tds-34-27",
+   "2026-10-31T22:29:52+00:00",
+   1
+  ],
+  [
    "Sat 6:25 p.m.",
    "U.S.",
    "2026 elections live updates: Trump supports Republicans with telerallies",
@@ -133,7 +138,7 @@
    "PBS NewsHour",
    "https://www.pbs.org/newshour/politics/attorneys-for-alaska-say-meritless-trump-demand-to-set-aside-senate-ballots-not-even-possible",
    "2026-10-31T22:22:29+00:00",
-   4
+   3
   ],
   [
    "Sat 6:20 p.m.",
@@ -142,7 +147,7 @@
    "CTV News",
    "https://www.ctvnews.ca/world/article/mamdani-says-trump-agrees-to-grant-visa-to-mother-of-ghanian-teen-killed-in-bronx-shooting/",
    "2026-10-31T22:20:52+00:00",
-   4
+   2
   ],
   [
    "Sat 6:20 p.m.",
@@ -286,7 +291,7 @@
    "CBC News",
    "https://www.cbc.ca/news/world/trump-jeffrey-epstein-lawsuit-dismissed-9.7404357",
    "2026-10-31T21:44:38.427000+00:00",
-   8
+   7
   ],
   [
    "Sat 5:40 p.m.",
@@ -304,15 +309,6 @@
    "Al Jazeera",
    "https://www.aljazeera.com/news/2026/10/31/legal-filing-questions-trumps-claims-of-non-citizen-voting-in-california?traffic_source=rss",
    "2026-10-31T21:38:54+00:00",
-   1
-  ],
-  [
-   "Sat 5:35 p.m.",
-   "World",
-   "Rubio says the US government did not facilitate Bolsonaro’s flight to the US",
-   "Toronto Star",
-   "https://www.thestar.com/news/world/united-states/rubio-says-the-us-government-did-not-facilitate-bolsonaro-s-flight-to-the-us/article_ed037b74-51e0-52fb-893b-f6f5b16efa33.html",
-   "2026-10-31T21:35:49+00:00",
    1
   ],
   [
@@ -363,16 +359,6 @@
  ],
  "leads": [
   {
-   "score": 16,
-   "title": "Judge throws out Trump suit against Wall Street Journal over Epstein letter",
-   "url": "https://www.cbc.ca/news/world/trump-jeffrey-epstein-lawsuit-dismissed-9.7404357",
-   "outlets": 11,
-   "why": [
-    "CBC News front #3"
-   ],
-   "theme": ""
-  },
-  {
    "score": 15,
    "title": "Carney says he can wait out Trump for trade deal",
    "url": "https://www.politico.com/news/2026/10/30/mark-carney-interview-trump-trade-deal-01144329",
@@ -387,9 +373,19 @@
   },
   {
    "score": 15,
+   "title": "Judge throws out Trump suit against Wall Street Journal over Epstein letter",
+   "url": "https://www.cbc.ca/news/world/trump-jeffrey-epstein-lawsuit-dismissed-9.7404357",
+   "outlets": 10,
+   "why": [
+    "CBC News front #3"
+   ],
+   "theme": ""
+  },
+  {
+   "score": 14,
    "title": "Palestine Action supporters arrested outside US embassy in London",
    "url": "https://www.aljazeera.com/video/newsfeed/2026/10/31/aje-onl-nf_palestine-action-supporters-arrested-in-london-311026?traffic_source=rss",
-   "outlets": 13,
+   "outlets": 12,
    "why": [],
    "theme": ""
   },
@@ -410,24 +406,6 @@
    "theme": ""
   },
   {
-   "score": 10,
-   "title": "Suspect identified in Toronto home invasion where residents were shot, attacked with hammer",
-   "url": "https://www.cbc.ca/news/canada/toronto/bridle-path-neighbourhood-home-invasion-toronto-police-update-9.7404151",
-   "outlets": 5,
-   "why": [
-    "CBC News front #6"
-   ],
-   "theme": ""
-  },
-  {
-   "score": 9,
-   "title": "Attorneys for Alaska say 'meritless' Trump demand to set aside Senate ballots 'not even possible'",
-   "url": "https://www.pbs.org/newshour/politics/attorneys-for-alaska-say-meritless-trump-demand-to-set-aside-senate-ballots-not-even-possible",
-   "outlets": 7,
-   "why": [],
-   "theme": ""
-  },
-  {
    "score": 8,
    "title": "Satisfaction with Carney touches 70% for the first time: is ‘bridge’ politics beating ‘wedge’ politics?",
    "url": "https://bruce728.substack.com/p/satisfaction-with-carney-touches",
@@ -441,8 +419,8 @@
   },
   {
    "score": 8,
-   "title": "Canada's Roussel grabs two medals at short track speedskating World Tour event",
-   "url": "https://www.timescolonist.com/national-sports/canadas-roussel-grabs-two-medals-at-short-track-speedskating-world-tour-event-12964790",
+   "title": "Attorneys for Alaska say 'meritless' Trump demand to set aside Senate ballots 'not even possible'",
+   "url": "https://www.pbs.org/newshour/politics/attorneys-for-alaska-say-meritless-trump-demand-to-set-aside-senate-ballots-not-even-possible",
    "outlets": 6,
    "why": [],
    "theme": ""
@@ -452,6 +430,24 @@
    "title": "Toronto cyclists protest Ontario's bike lane removals at Queen's Park",
    "url": "https://www.ctvnews.ca/toronto/politics/queens-park/article/toronto-cyclists-protest-ontarios-bike-lane-removals-at-queens-park/",
    "outlets": 6,
+   "why": [],
+   "theme": ""
+  },
+  {
+   "score": 7,
+   "title": "Suspect identified in Toronto home invasion where residents were shot, attacked with hammer",
+   "url": "https://www.cbc.ca/news/canada/toronto/bridle-path-neighbourhood-home-invasion-toronto-police-update-9.7404151",
+   "outlets": 2,
+   "why": [
+    "CBC News front #6"
+   ],
+   "theme": ""
+  },
+  {
+   "score": 7,
+   "title": "Elections Alberta recommends 2027 vote be delayed as gerrymandering accusations fly",
+   "url": "https://www.ctvnews.ca/edmonton/alberta-legislature/article/elections-alberta-recommends-2027-vote-be-delayed-as-gerrymandering-accusations-fly/",
+   "outlets": 5,
    "why": [],
    "theme": ""
   }
@@ -643,15 +639,14 @@
   "stale_since": "2026-10-28T00:15:00+00:00",
   "stories": [
    {
-    "key": "auto-89254266",
+    "key": "auto-0bdb41f6",
     "words": [
-     "talarico",
      "senate",
      "alaska"
     ],
-    "score": 9,
+    "score": 8,
     "outlets": 3,
-    "carriers": 5,
+    "carriers": 4,
     "tag": "Developing",
     "title": "Attorneys for Alaska say 'meritless' Trump demand to set aside Senate ballots 'not even possible'",
     "url": "https://www.pbs.org/newshour/politics/attorneys-for-alaska-say-meritless-trump-demand-to-set-aside-senate-ballots-not-even-possible",
@@ -660,15 +655,15 @@
     "iso": "2026-10-31T22:22:29+00:00",
     "summary": "The Department of Justice on Friday added a request that the judge separate all ballots showing votes for the second Dan Sullivan until it can be determined whether voters were fooled into wasting their votes for a spoiler candidate.",
     "first": {
-     "outlet": "Toronto Star",
-     "url": "https://www.thestar.com/news/world/united-states/paxton-and-talarico-tussle-for-texas-senate-seat-trump-to-campaign-virtually-instead-of-in-person/article_d658d734-f9f5-5246-a2f9-2470e0229506.html",
-     "t": "Sat 3:03 p.m.",
-     "title": "Paxton and Talarico tussle for Texas Senate seat as Trump campaigns via telephone",
-     "iso": "2026-10-31T19:03:00+00:00"
+     "outlet": "PBS NewsHour",
+     "url": "https://www.pbs.org/newshour/politics/fbi-visits-dan-j-sullivan-donor-in-candidates-hometown-as-alaska-senate-inquiry-widens",
+     "t": "Sat 3:50 p.m.",
+     "title": "FBI visits Dan J. Sullivan donor in candidate's hometown as Alaska Senate inquiry widens",
+     "iso": "2026-10-31T19:50:16+00:00"
     },
     "newest": "2026-10-31T22:22:29+00:00",
     "photo": {
-     "src": "live/img/auto-89254266-a85e1bc165.jpg",
+     "src": "live/img/auto-0bdb41f6-a85e1bc165.jpg",
      "orig": "https://d3i6fh83elv35t.cloudfront.net/static/2026/10/2026-10-31T033022Z_272937822_RC2SDOAFQW00_RTRMADP_3_USA-ELECTION-ALASKA-1024x675.jpg",
      "caption": "Photo — via PBS NewsHour",
      "alt": "Attorneys for Alaska say 'meritless' Trump demand to set aside Senate ballots 'not even possible'",
@@ -708,31 +703,18 @@
       "title": "Attorneys for Alaska say 'meritless' Trump demand to set aside Senate ballots 'not even possible'",
       "url": "https://www.timescolonist.com/world-news/attorneys-for-alaska-say-meritless-trump-demand-to-set-aside-senate-ballots-not-even-possible-12964630",
       "desc": "ANCHORAGE, Alaska (AP) — Alaska's Republican-run state government on Saturday urged a federal judge to dismiss a lawsuit filed at President Donald Trump's direction to stop the certification of a possible Democratic win in that state's pivotal U.S."
-     },
-     {
-      "t": "Sat 3:56 p.m.",
-      "iso": "2026-10-31T19:56:00+00:00",
-      "outlet": "Toronto Star",
-      "title": "Attorneys for Alaska say 'meritless' Trump demand to set aside Senate ballots 'not even possible'",
-      "url": "https://www.thestar.com/news/world/united-states/attorneys-for-alaska-say-meritless-trump-demand-to-set-aside-senate-ballots-not-even-possible/article_daecc6d0-6b29-5866-842d-3e655fd657ad.html",
-      "desc": ""
      }
     ],
     "sources": [
      {
       "t": "Sat 3:56 p.m.",
       "primary": false,
-      "outlet": "Toronto Star",
+      "outlet": "Times Colonist",
       "title": "Attorneys for Alaska say 'meritless' Trump demand to set aside Senate ballots 'not even possible'",
-      "url": "https://www.thestar.com/news/world/united-states/attorneys-for-alaska-say-meritless-trump-demand-to-set-aside-senate-ballots-not-even-possible/article_daecc6d0-6b29-5866-842d-3e655fd657ad.html",
-      "desc": "ANCHORAGE, Alaska (AP) — Alaska's Republican-run state government on Saturday urged a federal judge to dismiss a lawsuit filed at President Donald Trump's direction to stop the certification of a",
+      "url": "https://www.timescolonist.com/world-news/attorneys-for-alaska-say-meritless-trump-demand-to-set-aside-senate-ballots-not-even-possible-12964630",
+      "desc": "ANCHORAGE, Alaska (AP) — Alaska's Republican-run state government on Saturday urged a federal judge to dismiss a lawsuit filed at President Donald Trump's direction to stop the certification of a possible Democratic win in that state's pivotal U.S.",
       "wire": "The Associated Press",
       "by": [
-       {
-        "outlet": "Toronto Star",
-        "src": "The Associated Press",
-        "byline": "\"Nicholas Riccardi And Becky Bohrer The Associated Press\" \"Nicholas Riccardi"
-       },
        {
         "outlet": "Times Colonist",
         "src": "The Associated Press",
@@ -745,10 +727,6 @@
        }
       ],
       "copies": [
-       {
-        "outlet": "Times Colonist",
-        "url": "https://www.timescolonist.com/world-news/attorneys-for-alaska-say-meritless-trump-demand-to-set-aside-senate-ballots-not-even-possible-12964630"
-       },
        {
         "outlet": "PBS NewsHour",
         "url": "https://www.pbs.org/newshour/politics/attorneys-for-alaska-say-meritless-trump-demand-to-set-aside-senate-ballots-not-even-possible"
@@ -798,8 +776,8 @@
     "popular": 0,
     "us_election": false,
     "judgment": "national",
-    "judgment_why": "National: affects many people; carried beyond one city.",
-    "weight": 28.5,
+    "judgment_why": "National: affects many people; carried by a few newsrooms.",
+    "weight": 27.0,
     "videos": [
      {
       "net": "CBS News",
@@ -818,18 +796,18 @@
       "up": ""
      },
      {
-      "net": "PBS NewsHour",
-      "url": "https://www.youtube.com/watch?v=altYpOGnJ24",
-      "title": "WATCH: Trump calls reporter 'disgusting' when questioned about not traveling to Kansas",
-      "img": "https://i.ytimg.com/vi/altYpOGnJ24/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
       "net": "CNN",
       "url": "https://www.youtube.com/watch?v=h0-g75w75e4",
       "title": "Why Iowa Dem Senate candidate has 'no interest' in calls to impeach Trump",
       "img": "https://i.ytimg.com/vi/h0-g75w75e4/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "Bloomberg",
+      "url": "https://www.youtube.com/watch?v=XUUZbm3jqdo",
+      "title": "DOJ Ramps Up Criminal Probe Amid Tight Alaska Senate Race",
+      "img": "https://i.ytimg.com/vi/XUUZbm3jqdo/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1033,17 +1011,17 @@
     "url": "https://www.pbs.org/newshour/politics/attorneys-for-alaska-say-meritless-trump-demand-to-set-aside-senate-ballots-not-even-possible",
     "rank": 1,
     "live": "",
-    "weight": 28.5,
-    "score": 9,
+    "weight": 27.0,
+    "score": 8,
     "independent": 3,
     "most_read": 0,
     "canada": "tie",
     "theme": "",
     "top": true,
     "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
-    "carriers": 5,
+    "carriers": 4,
     "judgment": "national",
-    "why_judged": "National: affects many people; carried beyond one city."
+    "why_judged": "National: affects many people; carried by a few newsrooms."
    },
    {
     "title": "Youth-led protests sweep across France, Europe for a 3rd weekend",
@@ -1080,11 +1058,6 @@
     "why_judged": "National: affects many people; carried across the country (national desks)."
    },
    {
-    "title": "Judge throws out Trump suit against Wall Street Journal over Epstein letter",
-    "score": 16,
-    "why": "not built: only 2 independent report(s) (7 sites)"
-   },
-   {
     "title": "Canada is in the U.S. midterm spotlight. Will the results be a blessing or a curse?",
     "score": 15,
     "why": "not built: only 1 independent report(s) (1 sites)"
@@ -1095,22 +1068,17 @@
     "why": "not built: only 1 independent report(s) (1 sites)"
    },
    {
-    "title": "Palestine Action supporters arrested outside US embassy in London",
+    "title": "Judge throws out Trump suit against Wall Street Journal over Epstein letter",
     "score": 15,
-    "why": "not built: only 2 independent report(s) (11 sites)"
+    "why": "not built: only 2 independent report(s) (6 sites)"
    },
    {
-    "title": "Suspect identified in Toronto home invasion where residents were shot, attacked with hammer",
-    "score": 10,
-    "why": "not built: only 2 independent report(s) (3 sites)"
+    "title": "Palestine Action supporters arrested outside US embassy in London",
+    "score": 14,
+    "why": "not built: only 2 independent report(s) (10 sites)"
    },
    {
     "title": "Satisfaction with Carney touches 70% for the first time: is ‘bridge’ politics beating ‘wedge’ politics?",
-    "score": 8,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Canada's Roussel grabs two medals at short track speedskating World Tour event",
     "score": 8,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
@@ -1120,14 +1088,19 @@
     "why": "not built: only 1 independent report(s) (5 sites)"
    },
    {
+    "title": "Suspect identified in Toronto home invasion where residents were shot, attacked with hammer",
+    "score": 7,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
     "title": "Elections Alberta recommends 2027 vote be delayed as gerrymandering accusations fly",
     "score": 7,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Over 40 per cent of names on DOJ list of alleged noncitizens are not on Calif. voter rolls, analysis finds",
+    "title": "Canada's Roussel grabs two medals at short track speedskating World Tour event",
     "score": 7,
-    "why": "not built: only 1 independent report(s) (5 sites)"
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
     "title": "Alberta woman accused of sex with 15-year-old guilty of sexual assault",
@@ -1145,9 +1118,14 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Mamdani says Trump agrees to grant visa to mother of Ghanian teen killed in Bronx shooting",
+    "title": "Stabbing in North York sends woman to hospital with critical injuries",
     "score": 6,
-    "why": "not built: only 1 independent report(s) (4 sites)"
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Shootings kill 2 at Halloween Spirit stores in California, Michigan",
+    "score": 6,
+    "why": "not built: only 2 independent report(s) (4 sites)"
    }
   ],
   "top_n": 2,
@@ -1567,20 +1545,6 @@
    "geo": "unknown"
   },
   {
-   "id": "NnV4jJZnWag",
-   "r": "us",
-   "o": "Fox News",
-   "t": "'BUNCH OF BS': Alaska voters SLAM Dems over alleged ballot scheme",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=NnV4jJZnWag",
-   "img": "https://i.ytimg.com/vi/NnV4jJZnWag/hqdefault.jpg",
-   "up": "2026-10-31",
-   "added": "2026-10-31T20:34:55.967867+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "ZI9EmGVcF5Q",
    "r": "us",
    "o": "Fox News",
@@ -1633,6 +1597,20 @@
    "img": "https://i.ytimg.com/vi/QJz1FwpI6lg/hqdefault.jpg",
    "up": "2026-10-31",
    "added": "2026-10-31T22:26:39.659840+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "QhT87W7c-rg",
+   "r": "us",
+   "o": "Fox News",
+   "t": "'Decoy Dan' could face 'SERIOUS FEDERAL TROUBLE,' NRSC chair warns",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=QhT87W7c-rg",
+   "img": "https://i.ytimg.com/vi/QhT87W7c-rg/hqdefault.jpg",
+   "up": "2026-10-31",
+   "added": "2026-10-31T22:32:35.084834+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1738,7 +1716,7 @@
    "id": "VtlR5QoPpww",
    "r": "world",
    "o": "Sky News",
-   "t": "What would a slavery apology mean to black Britons?",
+   "t": "'It's a first step': What a slavery apology would mean to Britain's Black communities",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=VtlR5QoPpww",
@@ -1820,11 +1798,11 @@
   },
   {
    "o": "NPR",
-   "h": "France seethes again as youth-led protests sweep Europe",
-   "u": "https://www.npr.org/2026/10/31/g-s1-151121/france-seethes-again-as-youth-led-protests-sweep-europe",
-   "img": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/7542x4242+0+361/resize/1400/quality/85/format/webp/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F84%2F42%2F30374004412bbfde4b4826b0b2dc%2Ffrance.jpg",
-   "w": "Sat 3:30 p.m.",
-   "iso": "2026-10-31T19:30:19+00:00"
+   "h": "Mixed economic forecast weighs heavy ahead of midterms",
+   "u": "https://www.npr.org/2026/10/31/nx-s1-6022285/mixed-economic-forecast-weighs-heavy-ahead-of-midterms",
+   "img": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
+   "w": "Sat 5:14 p.m.",
+   "iso": "2026-10-31T21:14:35+00:00"
   },
   {
    "o": "The Hill",
@@ -1844,19 +1822,6 @@
   }
  ],
  "papers": [
-  {
-   "inst": "Frontier Centre for Public Policy",
-   "place": "Winnipeg",
-   "kind": "Publication",
-   "by": "",
-   "date": "Oct. 31, 2026",
-   "d": "2026-10-31",
-   "pic": "chart",
-   "u": "https://frontiercentre.org/2026/10/31/wab-kinew-wants-the-indian-act-gone-heres-how-ottawa-can-do-it/?utm_source=rss&utm_medium=rss&utm_campaign=wab-kinew-wants-the-indian-act-gone-heres-how-ottawa-can-do-it",
-   "t": "Wab Kinew wants the Indian Act gone. Here’s how Ottawa can do it",
-   "g": "Frontier’s Marco Navarro-Génie proposes three initial steps toward abolishing the Indian Act: a firm deadline, First Nations land ownership and interim legal protections. Drawing on Frontier research, he argues reform must secure autonomy without leaving communities exposed.",
-   "auto": true
-  },
   {
    "inst": "Macdonald-Laurier Institute",
    "place": "Ottawa",
@@ -1975,19 +1940,6 @@
    "auto": true
   },
   {
-   "inst": "Frontier Centre for Public Policy",
-   "place": "Winnipeg",
-   "kind": "Publication",
-   "by": "",
-   "date": "Oct. 29, 2026",
-   "d": "2026-10-29",
-   "pic": "chart",
-   "u": "https://frontiercentre.org/2026/10/29/frontier-centre-for-public-policy-welcomes-calls-to-abolish-indian-act/?utm_source=rss&utm_medium=rss&utm_campaign=frontier-centre-for-public-policy-welcomes-calls-to-abolish-indian-act",
-   "t": "Frontier Centre for Public Policy welcomes calls to abolish Indian Act",
-   "g": "",
-   "auto": true
-  },
-  {
    "inst": "Heritage Foundation",
    "place": "Washington",
    "kind": "Publication",
@@ -2024,6 +1976,32 @@
    "u": "https://www.lowyinstitute.org/the-interpreter/almost-a-million-extra-mines-on-the-dmz-and-it-s-not-about-war",
    "t": "Almost a million extra mines on the DMZ – and it’s not about war",
    "g": "North Korea’s buildup along the DMZ is designed to entrench sovereignty, not launch an attack.",
+   "auto": true
+  },
+  {
+   "inst": "Lowy Institute",
+   "place": "Sydney",
+   "kind": "Publication",
+   "by": "",
+   "date": "Oct. 29, 2026",
+   "d": "2026-10-29",
+   "pic": "chart",
+   "u": "https://www.lowyinstitute.org/the-interpreter/russia-gives-indonesia-no-third-pole-at-sea",
+   "t": "Russia gives Indonesia no third pole at sea",
+   "g": "Moscow can’t counter Beijing for Jakarta: it relies on China and backs its South China Sea stance.",
+   "auto": true
+  },
+  {
+   "inst": "Broadbent Institute",
+   "place": "Ottawa",
+   "kind": "Publication",
+   "by": "",
+   "date": "Oct. 28, 2026",
+   "d": "2026-10-28",
+   "pic": "chart",
+   "u": "https://broadbentinstitute.ca/major-projects-staple-trap/",
+   "t": "Canada wants to build big. But are we building the right things?",
+   "g": "Broadbent Research Fellow Brendan Haley was interviewed on CBC Radio's Cost of Living with Paul Haavardsrud to warn against the 'Staple Trap': Canada's continued and deepening economic reliance on extractive commodities. The post Canada wants to build big. But are we building the right things? appeared first on…",
    "auto": true
   }
  ],
@@ -2476,22 +2454,19 @@
    "city": "St. John's",
    "tz": "America/St_Johns",
    "world": false,
-   "w": "Brook Royals Sit",
-   "u": "https://vocm.com/2026/10/31/corner-brook-royals-sit-out-season-as-league-shrinks-to-three-teams/",
-   "title": "Corner Brook Royals Sit Out Season as League Shrinks to Three Teams",
-   "outlet": "VOCM",
-   "t": "Sat 3:02 p.m.",
+   "w": "",
+   "u": "",
    "hot": false
   },
   {
    "city": "Halifax",
    "tz": "America/Halifax",
    "world": false,
-   "w": "Fisheries",
-   "u": "https://www.thestar.com/news/canada/nova-scotia/n-s-court-orders-more-detailed-allegations-in-10m-illegal-lobster-lawsuit/article_ee448800-621a-5162-b1e9-c80d01ffb854.html",
-   "title": "N.S. court orders more detailed allegations in $10M illegal lobster lawsuit",
-   "outlet": "Toronto Star",
-   "t": "Sat 2:22 p.m.",
+   "w": "Tantramar",
+   "u": "https://www.cbc.ca/news/canada/new-brunswick/they-live-on-in-memory-veterans-banner-project-9.7404380?cmp=rss",
+   "title": "Veterans’ stories written by their families collected in new Tantramar book",
+   "outlet": "CBC News",
+   "t": "Sat 5:06 p.m.",
    "hot": false
   },
   {
@@ -2585,116 +2560,6 @@
  ],
  "bigweek": [
   {
-   "name": "Clocks fall back",
-   "date": "2026-11-01",
-   "what": "",
-   "days": 1,
-   "reports": [
-    {
-     "t": "Sat 2:38 p.m.",
-     "iso": "2026-10-31T18:38:31+00:00",
-     "outlet": "CTV News",
-     "title": "B.C.'s new time zone could cause confusion, from calendars to medical appointments",
-     "url": "https://www.ctvnews.ca/vancouver/article/bcs-new-time-zone-could-cause-confusion-from-calendars-to-medical-appointments/",
-     "canada": true,
-     "paywall": false,
-     "exclusive": false
-    },
-    {
-     "t": "Sat 2:03 p.m.",
-     "iso": "2026-10-31T18:03:11.933000+00:00",
-     "outlet": "CBC News",
-     "title": "More Canadian provinces are ditching the time change. But did they pick the wrong option?",
-     "url": "https://www.cbc.ca/news/canada/daylight-saving-time-canada-health-9.7399791",
-     "canada": true,
-     "paywall": false,
-     "exclusive": false
-    },
-    {
-     "t": "Sat 10:53 a.m.",
-     "iso": "2026-10-31T14:53:31+00:00",
-     "outlet": "Telegraph-Journal",
-     "title": "Half of Canada dumps seasonal time changes. N.B. won't follow suit",
-     "url": "https://tj.news/new-brunswick/half-of-canada-dumps-seasonal-time-changes-n-b-wont-follow-suit",
-     "canada": true,
-     "paywall": false,
-     "exclusive": false
-    },
-    {
-     "t": "Sat 10:00 a.m.",
-     "iso": "2026-10-31T14:00:16+00:00",
-     "outlet": "Vancouver Sun",
-     "title": "Aggravation? 'Absolutely': How B.C.'s time change affects businesses on both sides of the border",
-     "url": "https://vancouversun.com/news/local-news/how-bc-time-change-affects-businesses-us-border",
-     "canada": true,
-     "paywall": false,
-     "exclusive": false
-    },
-    {
-     "t": "Sat 8:00 a.m.",
-     "iso": "2026-10-31T12:00:08+00:00",
-     "outlet": "Lethbridge Herald",
-     "title": "Clocks from coast to coast to coast: A breakdown of time change rules across Canada",
-     "url": "https://lethbridgeherald.com/news/national-news/2026/10/31/clocks-from-coast-to-coast-to-coast-a-breakdown-of-time-change-rules-across-canada/",
-     "canada": true,
-     "paywall": false,
-     "exclusive": false
-    },
-    {
-     "t": "Sat 5:58 a.m.",
-     "iso": "2026-10-31T09:58:05+00:00",
-     "outlet": "CP24",
-     "title": "What you need to know about clocks falling back this weekend in Ontario",
-     "url": "https://www.cp24.com/local/toronto/2026/10/31/what-you-need-to-know-about-clocks-falling-back-this-weekend-in-ontario/",
-     "canada": true,
-     "paywall": false,
-     "exclusive": false
-    },
-    {
-     "t": "Fri 7:24 p.m.",
-     "iso": "2026-10-30T23:24:34+00:00",
-     "outlet": "Global News",
-     "title": "B.C.’s non-time change could impact technology and travel",
-     "url": "https://globalnews.ca/news/12128115/bc-non-time-change-impact-technology-travel/",
-     "canada": true,
-     "paywall": false,
-     "exclusive": false
-    },
-    {
-     "t": "Sat 4:31 p.m.",
-     "iso": "2026-10-31T20:31:36+00:00",
-     "outlet": "CityNews Montreal",
-     "title": "Quebecers gain an hour of sleep on Saturday night into Sunday",
-     "url": "https://montreal.citynews.ca/2026/10/31/quebecers-gain-hour-of-sleep-on-saturday-night-into-sunday/",
-     "canada": false,
-     "paywall": false,
-     "exclusive": false
-    },
-    {
-     "t": "Sat 1:01 p.m.",
-     "iso": "2026-10-31T17:01:42+00:00",
-     "outlet": "VOCM",
-     "title": "Clocks Turn Back by One Hour Tonight",
-     "url": "https://vocm.com/2026/10/31/clocks-turn-back-by-one-hour-tonight/",
-     "canada": false,
-     "paywall": false,
-     "exclusive": false
-    },
-    {
-     "t": "Fri 7:38 a.m.",
-     "iso": "2026-10-30T11:38:13+00:00",
-     "outlet": "BNN Bloomberg",
-     "title": "Business groups clock hurdles as time change comes to an end in some regions",
-     "url": "https://www.bnnbloomberg.ca/business/2026/10/30/business-groups-clock-hurdles-as-time-change-comes-to-an-end-in-some-regions/",
-     "canada": false,
-     "paywall": false,
-     "exclusive": false
-    }
-   ],
-   "official": [],
-   "earlier": []
-  },
-  {
    "name": "U.S. midterm elections",
    "date": "2026-11-03",
    "what": "The United States votes for Congress, governors and more",
@@ -2771,6 +2636,16 @@
      "exclusive": false
     },
     {
+     "t": "Thu 1:00 p.m.",
+     "iso": "2026-10-29T17:00:00+00:00",
+     "outlet": "Toronto Star",
+     "title": "Ontario deficit hits record $16.9B as Trump tariffs batter economy",
+     "url": "https://www.thestar.com/politics/provincial/ontario-deficit-hits-record-16-9b-as-trump-tariffs-batter-economy/article_888dcdb2-a46e-4677-9331-0c0f2e7d2d17.html",
+     "canada": true,
+     "paywall": false,
+     "exclusive": false
+    },
+    {
      "t": "Thu 5:45 a.m.",
      "iso": "2026-10-29T09:45:12+00:00",
      "outlet": "The Logic",
@@ -2781,24 +2656,13 @@
      "exclusive": false
     },
     {
-     "t": "Sat 6:22 p.m.",
-     "iso": "2026-10-31T22:22:29+00:00",
-     "outlet": "PBS NewsHour",
-     "title": "Attorneys for Alaska say 'meritless' Trump demand to set aside Senate ballots 'not even possible'",
-     "url": "https://www.pbs.org/newshour/politics/attorneys-for-alaska-say-meritless-trump-demand-to-set-aside-senate-ballots-not-even-possible",
-     "canada": false,
-     "paywall": false,
-     "exclusive": false
-    },
-    {
-     "t": "Sat 5:56 p.m.",
-     "iso": "2026-10-31T21:56:00+00:00",
-     "outlet": "CBS News",
-     "title": "DOJ calls Alaska Senate allegations \"troubling,\" asks to segregate ballots",
-     "url": "https://www.cbsnews.com/news/alaska-us-attorney-senate-race-two-dan-sullivans/",
-     "canada": false,
-     "paywall": false,
-     "exclusive": false
+     "t": "Wed 11:41 p.m.",
+     "iso": "2026-10-29T03:41:00+00:00",
+     "outlet": "The Hub",
+     "title": "Carney says Canada not ready to sign U.S. trade deal as midterms near",
+     "url": "https://thehub.ca/2026/10/29/carney-says-canada-not-ready-to-sign-u-s-trade-deal-as-midterms-near/",
+     "canada": true,
+     "paywall": false
     }
    ],
    "official": [
@@ -2902,6 +2766,14 @@
     },
     {
      "t": "Oct. 20",
+     "iso": "2026-10-20T07:45:00+00:00",
+     "outlet": "iPolitics",
+     "title": "Federal budget to be tabled on Nov. 5",
+     "url": "https://www.ipolitics.ca/2026/10/20/federal-budget-to-be-tabled-on-nov-5/",
+     "paywall": false
+    },
+    {
+     "t": "Oct. 20",
      "iso": "2026-10-20T11:54:00+00:00",
      "outlet": "The Globe and Mail (subscribers)",
      "title": "Federal budget to be released on Nov. 5, Champagne says",
@@ -2919,7 +2791,7 @@
    "iso": "2026-10-31T21:34:42+00:00",
    "title": "London police arrest 139 people outside U.S. Embassy for supporting banned pro-Palestinian group",
    "summary": "London police said they arrested 139 people at a protest outside the U.S. Embassy on Saturday in support of the banned group Palestine Action.",
-   "outlet": "CTV News, CP24, Al Jazeera, The Guardian, CBS News, Toronto Star",
+   "outlet": "CTV News, CP24, Al Jazeera, The Guardian, CBS News, CityNews Winnipeg",
    "url": "https://www.ctvnews.ca/world/article/london-police-arrest-139-people-outside-us-embassy-for-supporting-banned-pro-palestinian-group/",
    "img": "https://www.ctvnews.ca/resizer/v2/JPA2AQRJKTVGBFUEQ6THWDRCWI.jpg?smart=true&auth=fb30b4be0978a2b60c64fbcfd722066ed87c15b0fd6794f21e918a3fa5bca5cd&width=1200&height=630"
   },
@@ -2963,7 +2835,7 @@
    "iso": "2026-10-31T22:22:29+00:00",
    "title": "Attorneys for Alaska say 'meritless' Trump demand to set aside Senate ballots 'not even possible'",
    "summary": "The Department of Justice on Friday added a request that the judge separate all ballots showing votes for the second Dan Sullivan until it can be determined whether voters were fooled into wasting their votes for a spoiler candidate.",
-   "outlet": "PBS NewsHour, CBS News, Fox News, Times Colonist, Toronto Star, CTV News",
+   "outlet": "PBS NewsHour, CBS News, Fox News, Times Colonist, CTV News, CP24",
    "url": "https://www.pbs.org/newshour/politics/attorneys-for-alaska-say-meritless-trump-demand-to-set-aside-senate-ballots-not-even-possible",
    "img": "https://d3i6fh83elv35t.cloudfront.net/static/2026/10/2026-10-31T033022Z_272937822_RC2SDOAFQW00_RTRMADP_3_USA-ELECTION-ALASKA-1024x675.jpg"
   },
@@ -2981,28 +2853,6 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Sat 5:31 p.m.",
-   "iso": "2026-10-31T21:31:53+00:00",
-   "title": "Over 40 per cent of names on DOJ list of alleged noncitizens are not on Calif. voter rolls, analysis finds",
-   "summary": "More than 4 in 10 names flagged as possible noncitizen voters in California by the Trump administration cannot be found on the state’s voter rolls, according to a legal filing Saturday by an immigrant-rights group.",
-   "outlet": "CTV News, CP24, Times Colonist, PBS NewsHour, Toronto Star",
-   "url": "https://www.ctvnews.ca/world/article/over-40-per-cent-of-names-on-doj-list-of-alleged-noncitizens-are-not-on-calif-voter-rolls-analysis-finds/",
-   "img": "https://www.ctvnews.ca/resizer/v2/MZABNV6MIXYA2DSRX65NXVCKBQ.jpg?smart=true&auth=4b9466724a4a59e0508981e4829ba3fe70c65e8398a45150c143b75723f60003&width=1200&height=630"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Sat 6:20 p.m.",
-   "iso": "2026-10-31T22:20:52+00:00",
-   "title": "Mamdani says Trump agrees to grant visa to mother of Ghanian teen killed in Bronx shooting",
-   "summary": "New York City Mayor Zohran Mamdani said on Saturday in a social media post that after talking to U.S. President Donald Trump, he has agreed to grant a visa to the mother of a 15-year-old immigrant from Ghana who was shot to death earlier this week.",
-   "outlet": "CTV News, CP24, Toronto Star, The Canadian Press (via Winnipeg Free Press)",
-   "url": "https://www.ctvnews.ca/world/article/mamdani-says-trump-agrees-to-grant-visa-to-mother-of-ghanian-teen-killed-in-bronx-shooting/",
-   "img": "https://www.ctvnews.ca/resizer/v2/ZDJDZRTFDFTMZX243ATH4U3KWE.jpg?smart=true&auth=4e2e579d890c7faafd9c5a9fda16e74f6e57054357f8f16449bfc43d50e11382&width=1200&height=630"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
    "t": "Sat 5:40 p.m.",
    "iso": "2026-10-31T21:40:21+00:00",
    "title": "Shootings kill 2 at Halloween Spirit stores in California, Michigan",
@@ -3010,6 +2860,28 @@
    "outlet": "CBS News, CTV News, CP24, ABC News",
    "url": "https://www.cbsnews.com/news/spirit-halloween-store-shooting-fairfield-california/",
    "img": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/10/25/6cdbd361-3101-46a0-aff9-df00272fb6e9/thumbnail/1200x630/03eba56ba61de9b28a281ffd57eaff1c/gettyimages-2247565902.jpg"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Sat 5:31 p.m.",
+   "iso": "2026-10-31T21:31:53+00:00",
+   "title": "Over 40 per cent of names on DOJ list of alleged noncitizens are not on Calif. voter rolls, analysis finds",
+   "summary": "More than 4 in 10 names flagged as possible noncitizen voters in California by the Trump administration cannot be found on the state’s voter rolls, according to a legal filing Saturday by an immigrant-rights group.",
+   "outlet": "CTV News, CP24, Times Colonist, PBS NewsHour",
+   "url": "https://www.ctvnews.ca/world/article/over-40-per-cent-of-names-on-doj-list-of-alleged-noncitizens-are-not-on-calif-voter-rolls-analysis-finds/",
+   "img": "https://www.ctvnews.ca/resizer/v2/MZABNV6MIXYA2DSRX65NXVCKBQ.jpg?smart=true&auth=4b9466724a4a59e0508981e4829ba3fe70c65e8398a45150c143b75723f60003&width=1200&height=630"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Sat 4:31 p.m.",
+   "iso": "2026-10-31T20:31:39+00:00",
+   "title": "Iran’s leader says response to attack would have no ‘geographic limit’",
+   "summary": "Iran's supreme leader has threatened an immediate response to a potential attack — one without “geographic limits” — as diplomatic efforts continue try to to reduce the threat of a return to all-out war.",
+   "outlet": "CKOM / PAnow, CTV News, CP24",
+   "url": "https://www.ckom.com/2026/10/31/irans-leader-says-response-to-attack-would-have-no-geographic-limit/",
+   "img": "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/648/files/2026/10/iran-ap-103126.jpg"
   },
   {
    "desk": "politics",
@@ -3164,7 +3036,7 @@
     "url": "https://www.youtube.com/watch?v=O_xDTLIv-FI",
     "img": "https://i.ytimg.com/vi/O_xDTLIv-FI/hqdefault.jpg",
     "story": "Attorneys for Alaska say 'meritless' Trump demand to set asi",
-    "watching": "578",
+    "watching": "557",
     "reports": [
      {
       "outlet": "CBS News",
@@ -3203,7 +3075,7 @@
     "url": "https://www.youtube.com/watch?v=lhETyqyCY5Q",
     "img": "https://i.ytimg.com/vi/lhETyqyCY5Q/hqdefault.jpg",
     "story": "Hundreds of thousands across Europe take part in anti-government prote",
-    "watching": "300",
+    "watching": "287",
     "reports": [
      {
       "outlet": "CBC News",
@@ -3360,7 +3232,7 @@
   }
  },
  "canangle": {
-  "auto-89254266": {
+  "auto-0bdb41f6": {
    "story": "Attorneys for Alaska say 'meritless' Trump demand to set aside Senate ballots 'not even possible'",
    "us": true,
    "specific": 0,
@@ -3449,20 +3321,20 @@
      "tie": ""
     },
     {
-     "t": "Sat 10:52 a.m.",
-     "iso": "2026-10-31T14:52:00+00:00",
-     "outlet": "VOCM",
-     "title": "Rain, Fog to Dampen Halloween Across Much of Newfoundland",
-     "url": "https://vocm.com/2026/10/31/315225/",
-     "ca": false,
-     "tie": ""
-    },
-    {
      "t": "Sat 10:51 a.m.",
      "iso": "2026-10-31T14:51:38+00:00",
      "outlet": "CP24",
      "title": "U.S.-Canada tensions may not change, despite U.S. midterm results",
      "url": "https://www.cp24.com/politics/2026/10/31/the-outcome-of-the-us-midterms-may-not-relieve-us-canada-tensions/",
+     "ca": true,
+     "tie": ""
+    },
+    {
+     "t": "Sat 6:00 a.m.",
+     "iso": "2026-10-31T10:00:07+00:00",
+     "outlet": "CityNews Ottawa",
+     "title": "No matter what happens in the midterms, Canada-U.S. tensions are likely to remain",
+     "url": "https://ottawa.citynews.ca/2026/10/31/no-matter-what-happens-in-the-midterms-canada-u-s-tensions-are-likely-to-remain/",
      "ca": true,
      "tie": ""
     }
@@ -3754,33 +3626,6 @@
    "official": [],
    "views": []
   },
-  "https://www.npr.org/2026/10/31/g-s1-151121/france-seethes-again-as-youth-led-protests-sweep-europe": {
-   "story": "France seethes again as youth-led protests sweep Europe",
-   "us": false,
-   "specific": 2,
-   "stories": [
-    {
-     "t": "Sat 5:00 a.m.",
-     "iso": "2026-10-31T09:00:00+00:00",
-     "outlet": "CP24",
-     "title": "Nova Scotia photographer’s new book explores how Canada and Europe honour Canadian war dead",
-     "url": "https://www.cp24.com/news/canada/2026/11/01/nova-scotia-photographers-new-book-explores-how-canada-and-europe-honour-canadian-war-dead/",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Fri 7:35 p.m.",
-     "iso": "2026-10-30T23:35:05+00:00",
-     "outlet": "Politico",
-     "title": "Carney brushes back Trump on trade, Europe and Russia",
-     "url": "https://www.politico.com/news/2026/10/30/mark-carney-interview-trump-trade-deal-01144329",
-     "ca": false,
-     "tie": ""
-    }
-   ],
-   "official": [],
-   "views": []
-  },
   "https://thehill.com/homenews/campaign/6186460-rogers-claims-early-ballot-lead/": {
    "story": "Mike Rogers claims he's ahead by 7 percent on ballots returned so far ‘by our models’",
    "us": true,
@@ -3838,44 +3683,8 @@
   "https://www.politico.com/news/2026/10/31/conservative-pastors-sermons-talarico-hamilton-christian-01143604": {
    "story": "As Democrats preach faith, conservative pastors condemn their campaigns from the pulpit",
    "us": true,
-   "specific": 5,
+   "specific": 1,
    "stories": [
-    {
-     "t": "Sat 10:51 a.m.",
-     "iso": "2026-10-31T14:51:38+00:00",
-     "outlet": "CP24",
-     "title": "U.S.-Canada tensions may not change, despite U.S. midterm results",
-     "url": "https://www.cp24.com/politics/2026/10/31/the-outcome-of-the-us-midterms-may-not-relieve-us-canada-tensions/",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Sat 6:00 a.m.",
-     "iso": "2026-10-31T10:00:07+00:00",
-     "outlet": "CityNews Ottawa",
-     "title": "No matter what happens in the midterms, Canada-U.S. tensions are likely to remain",
-     "url": "https://ottawa.citynews.ca/2026/10/31/no-matter-what-happens-in-the-midterms-canada-u-s-tensions-are-likely-to-remain/",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Sat 4:00 a.m.",
-     "iso": "2026-10-31T08:00:00+00:00",
-     "outlet": "CBC News",
-     "title": "Canada is in the U.S. midterm spotlight. Will the results be a blessing or a curse?",
-     "url": "https://www.cbc.ca/news/politics/us-midterms-canada-trade-war-9.7403117?cmp=rss",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Fri 12:41 p.m.",
-     "iso": "2026-10-30T16:41:57+00:00",
-     "outlet": "BNN Bloomberg",
-     "title": "U.S. midterms 101: Who holds the cards in the Canada-U.S. trade war?",
-     "url": "https://www.bnnbloomberg.ca/business/politics/2026/10/30/us-midterms-101-who-holds-the-cards-in-the-canada-us-trade-war/",
-     "ca": true,
-     "tie": ""
-    },
     {
      "t": "Thu 5:45 a.m.",
      "iso": "2026-10-29T09:45:12+00:00",
@@ -3887,14 +3696,7 @@
     }
    ],
    "official": [],
-   "views": [
-    {
-     "outlet": "Toronto Sun",
-     "kind": "Editorial",
-     "title": "Mark Carney weighs in on U.S. midterms",
-     "url": "https://torontosun.com/opinion/editorials/mark-carney-weighs-in-u-s-midterms"
-    }
-   ]
+   "views": []
   }
  },
  "bds": [],
