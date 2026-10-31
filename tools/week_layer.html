@@ -95,6 +95,8 @@
   // see the US election or the budget at the top yet, or close to the top"). The page draws its sections after load,
   // so the spot is kept as they appear.
   function place(sec) {
+    // inside the one "Coming up" section when it is on the page (tools/trim_layer.html, Hannah, Sat Oct 31, 2026)
+    const cu = document.querySelector('#comingUp .cu-big'); if (cu) { if (sec.parentElement !== cu) cu.append(sec); return; }
     const d = document.getElementById('sec-canada'), a = document.getElementById('autoBreaking');
     if (d) { if (d.previousElementSibling !== sec) d.before(sec); }
     else if (a && a.nextElementSibling !== sec) a.after(sec);
