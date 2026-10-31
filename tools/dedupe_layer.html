@@ -1,0 +1,89 @@
+<style id="dedupe">
+/* No repeats between the two lists (Hannah, Sat Oct 31, 2026: "there are repetitive reports ... I still like connected
+   to this story"). Both lists stay. Connected drops anything on the same angle as a newsroom report above it, and two
+   connected reports on the same angle become one line with every newsroom that has it. */
+#autoBreaking .dd-also { display: block; margin-top: 4px; font-size: 12.5px; opacity: .85; }
+#autoBreaking .dd-also a { color: #FFFFFF; font-weight: 600; text-decoration: none; position: relative; z-index: 2; }
+#autoBreaking .dd-gone { display: none !important; }
+/* The newsroom's name stands apart from the headline (Hannah, Sat Oct 31, 2026: "when it has the source at the end ...
+   it needs to stand out differently than what the title is. Right now, it all blends together"): on its own line under
+   the headline, in small bold capitals and the site's blush pink, in both lists. */
+#autoBreaking .ab-story .rel-box li .o, #autoBreaking .ab-story .ab-reps li .o, #autoBreaking .dd-also a {
+  display: block; margin-top: 3px; font-size: 11.5px !important; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+  color: #F2B8C6 !important; opacity: 1 !important; font-variant: normal; }
+#autoBreaking .dd-also { color: #F2B8C6; font-size: 11.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+#autoBreaking .dd-also a { display: inline; margin: 0; }
+#autoBreaking .ab-story .rel-box li > a, #autoBreaking .ab-story .ab-reps li > a { font-size: 16px; line-height: 1.35; }
+</style>
+<script id="dedupe-js">
+(function () {
+  const root = document.getElementById('autoBreaking'); if (!root) return;
+  const GENERIC = new Set(('canada canadian canadians carney prime minister says said could would will with from that this they their about after over into than more ' +
+    'what here know year years week today new news live updates update report reports amid under ahead also just been have has were being ' +
+    'european union summit montreal leaders leader talks deal deals ottawa trump u.s. united states american americans midterms').split(' '));
+  const toks = (t) => new Set((String(t).toLowerCase().match(/[a-zà-ÿ][a-zà-ÿ'’-]{3,}/g) || []).filter((w) => !GENERIC.has(w.replace(/['’]s$/, ''))).map((w) => w.replace(/['’]s$/, '').slice(0, 6)));
+  const shared = (a, b) => { let n = 0; a.forEach((w) => { if (b.has(w)) n++; }); return n; };
+  const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  let busy = false;
+  function run() {
+    if (busy) return; busy = true;
+    try {
+      root.querySelectorAll('.ab-story').forEach((art) => {
+        const rel = art.querySelector(':scope > .rel-box'), reps = art.querySelector(':scope > .ab-reps');
+        if (!rel || rel.dataset.dd) return;
+        const head = (li) => (li.querySelector('a') || {}).textContent || '';
+        const mine = [...(reps ? reps.querySelectorAll('ol > li') : [])].map((li) => toks(head(li))).concat([toks((art.querySelector(':scope > h2') || {}).textContent || '')]);
+        // words most of the story's reports share name the event itself; an angle is what is left
+        const freq = {}; mine.forEach((s) => s.forEach((w) => { freq[w] = (freq[w] || 0) + 1; }));
+        const common = new Set(Object.keys(freq).filter((w) => mine.length >= 3 && freq[w] / mine.length > 0.6));
+        const strip = (s) => new Set([...s].filter((w) => !common.has(w)));
+        const mineK = mine.map(strip);
+        const kept = [];
+        [...rel.querySelectorAll('ol > li')].forEach((li) => {
+          const k = strip(toks(head(li)));
+          // the same angle as a newsroom report above: already there
+          if (mineK.some((m) => shared(k, m) >= 2)) { li.classList.add('dd-gone'); return; }
+          // the same angle as a connected report already kept: one line, every newsroom on it
+          const twin = kept.find((x) => shared(k, x.k) >= 2);
+          if (twin) {
+            li.classList.add('dd-gone');
+            const a = li.querySelector('a'), o = (li.querySelector('.o') || {}).textContent || '';
+            if (a) {
+              let also = twin.li.querySelector('.dd-also');
+              if (!also) { also = document.createElement('span'); also.className = 'dd-also'; also.innerHTML = 'Also: '; twin.li.appendChild(also); }
+              else also.insertAdjacentHTML('beforeend', ' · ');
+              also.insertAdjacentHTML('beforeend', '<a href="' + esc(a.href) + '" target="_blank" rel="noopener" title="' + esc(a.textContent) + '">' + esc(o.replace(/\s*↗\s*$/, '').trim()) + ' &#8599;</a>');
+            }
+            twin.k.forEach && k.forEach((w) => twin.k.add(w));
+            return;
+          }
+          kept.push({ li, k });
+        });
+        rel.dataset.dd = '1';
+        // nothing different left: the box goes; otherwise the Show all button counts what is left
+        if (!kept.length) { rel.classList.add('dd-gone'); return; }
+        const b = rel.querySelector('.cr-more');
+        rel.querySelectorAll('ol > li.dd-gone').forEach((li) => li.remove());
+        if (b) {
+          const n = kept.length, nb = b.cloneNode(false);  // a fresh button that counts what is left
+          rel.classList.remove('cr-open');
+          if (n <= 3) { b.remove(); rel.classList.remove('cr-fold'); }
+          else {
+            const closed = 'Show all ' + n + ' ▾', opened = 'Show fewer ▴'; nb.textContent = closed;
+            nb.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); const on = rel.classList.toggle('cr-open'); nb.textContent = on ? opened : closed; });
+            b.replaceWith(nb);
+          }
+        }
+      });
+    } catch (e) { console.warn('dedupe', e); }
+    setTimeout(() => { busy = false; }, 60);
+  }
+  setTimeout(run, 2500); setTimeout(run, 6000);
+  new MutationObserver(() => { if (!busy) { clearTimeout(run.t); run.t = setTimeout(run, 300); } }).observe(root, { childList: true, subtree: true });
+})();
+</script>
+<style id="dedupe-head">
+/* the list heading and its Show all button fit side by side on a phone */
+#autoBreaking .ab-story .cr-fold > summary { padding-right: 96px !important; font-size: 12px !important; letter-spacing: .03em !important; }
+#autoBreaking .ab-story .cr-fold > .cr-more { font-size: 12px !important; padding: 0 9px !important; min-height: 30px !important; }
+</style>
