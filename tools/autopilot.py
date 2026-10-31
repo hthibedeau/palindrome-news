@@ -3055,6 +3055,89 @@ def big_week(items, now, prev=()):
     return out[:BIG_MAX]
 
 
+# ===== The day so far: the Politics, Business & Economy and World desks, filled from today's news on every update
+# (Hannah, Sat Oct 31, 2026: "Why is the day so far section so old? Last Thursday, last Tuesday"; they were a list
+# written by hand on Tuesday). Each desk: the stories of the last DESK_HOURS, most newsrooms first, each with its
+# newsroom's own headline, summary and photo; the outlet bar counts the newsrooms carrying it.
+DESK_HOURS, DESK_MAX, DESK_INFO_LOOKS = 24, 8, 36
+DESK_BUSINESS = re.compile(r"\b(econom\w*|inflation|GDP|jobs report|unemployment|interest rates?|rate (?:cut|hike|decision)|Bank of Canada|"
+                           r"Federal Reserve|stocks?|TSX|stock market|S&P|Nasdaq|markets?|earnings|profits?|revenue|shares|investors?|layoffs?|"
+                           r"lays? off|job cuts|tariffs?|trade (?:deal|war|talks)|exports?|imports?|housing market|home sales|mortgage|"
+                           r"oil prices?|gas prices|loonie|dollar|deficit|debt|budget|bankrupt\w*|merger|acquisition|takeover|"
+                           r"employment|strike mandate|contract talks|food prices|cost of living)\b", re.I)
+DESK_POLITICS = re.compile(r"\b(Parliament|House of Commons|Senate|MPs?|MPPs?|MLAs?|minister|ministers|cabinet|Carney|Poilievre|Liberals?|"
+                           r"Conservatives?|NDP|Bloc|Green Party|premier|legislature|Queen's Park|National Assembly|by-?election|throne speech|"
+                           r"question period|federal government|Ottawa says|Elections Canada|PMO|caucus|leadership race|opposition)\b", re.I)
+DESK_PICS = {"politics": "parliament", "business": "chart", "world": "globe"}
+# a Canadian place in a headline, including the short forms ("Puslinch, Ont.") the main Canada test does not know
+CANADA_PLACE = re.compile(r"\b(Ont\.|Que\.|B\.C\.|Alta\.|Sask\.|Man\.|N\.S\.|N\.B\.|P\.E\.I\.|N\.L\.|N\.W\.T\.|Ontario|Quebec|Québec|"
+                          r"British Columbia|Alberta|Saskatchewan|Manitoba|Nova Scotia|New Brunswick|Prince Edward Island|Newfoundland|Labrador|"
+                          r"Yukon|Nunavut|Northwest Territories|Toronto|Montreal|Montréal|Vancouver|Calgary|Edmonton|Ottawa|Winnipeg|Halifax|"
+                          r"Regina|Saskatoon|Victoria, B\.C\.|Hamilton|Mississauga|Brampton|Quebec City|Gatineau|Iqaluit|Yellowknife|Whitehorse|"
+                          r"Queen's Park|OPP|RCMP|SQ)(?![\w])")
+
+
+def desks(items, groups, now):
+    import autoupdate as au
+    out, looks, used = [], [0], set()
+    # the story groups, then single reports from the main newsrooms that no group holds (on a quiet day a desk would
+    # otherwise be nearly empty)
+    grouped = {r[3] for g in groups or [] for r in g.get("rows") or []}
+    singles = [{"rows": [(d, o, t, l)]} for d, o, t, l, _ in items if l not in grouped and (now - d).total_seconds() < DESK_HOURS * 3600
+               and (CANADIAN_OUTLET.search(au.clean_outlet(o)) or re.match(r"(Reuters|Associated Press|AP|BBC|The Guardian|Al Jazeera|NPR|CBS|NBC|ABC News|Politico|Bloomberg)", au.clean_outlet(o)))]
+    for g in list(groups or []) + singles:
+        rows = [r for r in g.get("rows") or [] if (now - r[0]).total_seconds() < DESK_HOURS * 3600]
+        rows = [r for r in rows if not SPORT.search(r[2] + " " + r[3]) and not au.OPINION.search(r[2] + " " + r[3])
+                and not NOT_NEWS.search(r[2] + " " + r[3]) and not VIDEO.search(r[3]) and not au.FRENCH.search(r[1])]
+        if not rows:
+            continue
+        rows.sort(key=lambda r: r[0], reverse=True)
+        outlets = []
+        for r in rows:
+            o = au.clean_outlet(r[1]).replace(" (subscribers)", "")
+            if o not in outlets:
+                outlets.append(o)
+        text = " ".join(r[2] for r in rows[:6])
+        lead = next((r for r in rows if "theglobeandmail.com" not in r[3] and au.ok_item(r[1], r[3])), None)
+        if not lead:
+            continue
+        canadian = bool(CAN_TIE.search(text) or CANADA_PLACE.search(text))
+        # the desk comes from the story's own headline: politics (Canadian), business and the economy, the world
+        if canadian and DESK_POLITICS.search(lead[2]):
+            desk = "politics"
+        elif DESK_BUSINESS.search(lead[2]) and not re.search(r"\b(dies|died|killed|dead|shooting|crash|wounded|fight|police|RCMP|"
+                                                             r"charged|arrest\w*|home invasion|lawsuit against|court)\b", lead[2], re.I):
+            desk = "business"
+        elif canadian and DESK_POLITICS.search(text):
+            desk = "politics"
+        elif not canadian:
+            desk = "world"
+        else:
+            continue  # a Canadian story that is not politics or business: the Canada desk has it
+        key = re.sub(r"\W", "", lead[2].lower())[:50]
+        if key in used:
+            continue
+        used.add(key)
+        out.append({"desk": desk, "n": len(outlets), "rows": rows, "lead": lead, "outlets": outlets})
+    # most newsrooms first, then newest; DESK_MAX per desk
+    out.sort(key=lambda x: (-x["n"], -x["lead"][0].timestamp()))
+    per, final = {}, []
+    for x in out:
+        if per.get(x["desk"], 0) >= DESK_MAX:
+            continue
+        info = {}
+        if looks[0] < DESK_INFO_LOOKS:
+            looks[0] += 1
+            info = page_info(x["lead"][3]) or {}
+        desc = info.get("desc") or ""
+        per[x["desk"]] = per.get(x["desk"], 0) + 1
+        lead = x["lead"]
+        src = ", ".join([au.clean_outlet(lead[1]).replace(" (subscribers)", "")] + [o for o in x["outlets"] if o != au.clean_outlet(lead[1])][:5])
+        final.append({"desk": x["desk"], "pic": DESK_PICS[x["desk"]], "t": w.eastern(lead[0]), "iso": lead[0].isoformat(), "title": clean(lead[2]),
+                      "summary": desc if len(desc) >= 40 else "", "outlet": src, "url": lead[3], "img": info.get("img", "")})
+    return final
+
+
 def gather_themes(items, groups, now):
     """A running event (lead_check.THEMES, kept whole) is one story however it is reported. Every report in the feed
     whose headline names both sides of the event goes into its group, and the event gets a group of its own when the
@@ -3109,7 +3192,8 @@ def run(page, items, groups, breaking, now, imgdir, prev):
                     ("otr", lambda: on_the_record(page, now)), ("mostread", lambda: most_read(now)),
                     ("smaller", lambda: smaller(items, page, now, imgdir)),
                     ("clocks", lambda: clock_topics(items, groups, now)),
-                    ("bigweek", lambda: big_week(items, now, prev.get("bigweek") or []))]:
+                    ("bigweek", lambda: big_week(items, now, prev.get("bigweek") or [])),
+                    ("desks", lambda: desks(items, groups, now))]:
         try:
             res[name] = f()
         except Exception as e:  # never block the run

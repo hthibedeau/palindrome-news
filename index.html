@@ -3566,7 +3566,15 @@ header.site { border-bottom: 0; }
     const autoCa = ((window.PAL_autoupdate && window.PAL_autoupdate.data && window.PAL_autoupdate.data.canada) || [])
       .filter((r) => isToday(r.t) && !stories.some((x) => x[6] === r.url))
       .map((r) => ['city', 'Canada', '', r.title, r.summary, r.outlet, r.url, r.img || '', r.t, r.region]);
-    const all = stories.filter((x) => x[1] !== 'Canada' || isToday(x[8])).concat(autoCa);
+    // Politics, Business & Economy and World: today's stories from each update (tools/autopilot.py desks; Hannah,
+    // Sat Oct 31, 2026: "Why is the day so far section so old?"). The hand-written list only fills in on a day the update
+    // has nothing, and only with stories from today: never last week's news.
+    const D = (window.PAL_autoupdate && window.PAL_autoupdate.data && window.PAL_autoupdate.data.desks) || [];
+    const NAME = { politics: 'Politics', business: 'Business & Economy', world: 'World' };
+    const autoDesk = D.filter((r) => isToday(r.t) && Date.now() - Date.parse(r.iso) < 30 * 3600e3)
+      .map((r) => [r.pic || 'globe', NAME[r.desk], '', r.title, r.summary || '', r.outlet, r.url, r.img || '', r.t, '']);
+    const covered = new Set(autoDesk.map((x) => x[1]));
+    const all = stories.filter((x) => isToday(x[8]) && !covered.has(x[1])).concat(autoCa, autoDesk);
     // newest first on the Canada desk, so the freshest story leads
     const ord = (x) => { const m = /(\d{1,2}):(\d{2}) ([ap])/.exec(x[8] || ''); return m ? (+m[1] % 12 + (m[3] === 'p' ? 12 : 0)) * 60 + +m[2] : -1; };
     const ca = all.filter((x) => x[1] === 'Canada').sort((p, q) => ord(q) - ord(p));
