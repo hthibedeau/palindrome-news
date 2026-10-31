@@ -57,6 +57,17 @@ Hannah: "there's too much on it." `tools/trim_layer.html` (copied into the end o
 - **Capped.** The day so far shows its 5 stories nearest to six sources, with "See all" (`?view=day`). Think tanks & white papers shows its 3 newest papers, with "See all" (`?view=thinktanks`).
 - **One "Coming up".** The big week ahead, Coming up live (taken out of the Live coverage band) and the What to watch dates are one section above the Canada desk. Dates already in the big week ahead are not repeated. The 60-second brief stays where it was, under the heading "Listen".
 
+## News judgment: is this the top story? (Hannah, Sat Oct 31, 2026)
+
+Before ranking, the code asks the question an editor asks at the morning meeting: who is this story for? It answers it from what the newsrooms themselves published (`news_judgment()` in `tools/autopilot.py`, explained in full in the NEWS JUDGMENT note above it).
+
+1. **How many people does it affect?** Many: Ottawa or a province, the economy, prices, trade, Canada in the world, elections, strikes, health care, housing, the military, disasters, or a tragedy with many victims. Few: a single crime, arrest, court date, crash or fire.
+2. **How many people will want to read it?** It counts the national desks carrying it and how many cities' newsrooms chose to run it. A story only on one city's local desks is a story for that city.
+
+A story that touches few people and is read in one city is **Local**. It stays in the Canada desk and the other sections, but it is never a top story. A story that scores high on both is **National** and gets a lift. Each candidate's verdict and the reason are in `live/auto.json` under "considered".
+
+Example: "Toronto man identified as suspect in Bridle Path home invasion" (one crime, Toronto desks only) is Local. "Canada-EU associate membership talks" (Canada's trade and place in the world, in newsrooms in seven cities) is National, and the top story.
+
 ## Page order (Hannah, Wed Oct 28, 2026)
 
 The page script (`PAL_orderTop` in `index.html`) keeps this order by itself, whatever is showing:

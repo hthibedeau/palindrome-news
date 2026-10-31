@@ -1722,7 +1722,7 @@ def _select(auto, cands, ranked, tier):
         else:
             rest.append(s)
     # the newer development leads when the two are close (within 8 points): the top of the page is the latest news
-    if len(top2) == 2 and top_rule(top2[0]) == top_rule(top2[1]) and (top2[0].get("weight") or 0) - (top2[1].get("weight") or 0) <= 8 and (top2[1].get("newest") or "") > (top2[0].get("newest") or ""):
+    if len(top2) == 2 and top_rule(top2[0]) == top_rule(top2[1]) and top2[0].get("judgment") == top2[1].get("judgment") and (top2[0].get("weight") or 0) - (top2[1].get("weight") or 0) <= 8 and (top2[1].get("newest") or "") > (top2[0].get("newest") or ""):
         top2.reverse()
     # a story Hannah is working on (KEEP_TOP) stays at the top while it has reporting
     from datetime import datetime as _dt, timezone as _tz
@@ -1740,7 +1740,7 @@ def _select(auto, cands, ranked, tier):
     # a Canadian story with a live event on it, on air now or coming up within LIVE_SOON_HOURS (a news conference, an
     # address, a vote), is always at the top until the event is over (Hannah, Fri Oct 30, 2026: "there's a press
     # conference coming up at 12:30, so not sure why it disappeared. Write it into the code.")
-    for k in [x for x in rest if x.get("live") and tier(x) == 0]:
+    for k in [x for x in rest if x.get("live") and tier(x) == 0 and x.get("judgment") != "local"]:
         if any(t is k for t in top2):
             continue
         rest.remove(k)
@@ -1768,7 +1768,7 @@ def _select(auto, cands, ranked, tier):
     # why each story is or isn't at the top (Hannah: "why is that not at the top of the news?")
     auto["considered"] = [{"title": s["title"], "url": s["url"], "rank": n + 1, "live": (s.get("live") or {}).get("title", ""), "weight": s.get("weight"), "score": s.get("score"), "independent": s.get("independent"), "most_read": s["popular"],
                            "canada": s["canada"], "theme": s.get("theme") or "", "top": s in ranked[:n_top],
-                           "rule": dict(TOP_RULES).get(top_rule(s), ""), "carriers": s.get("carriers")} for n, s in enumerate(ranked)] + [c for c in (auto.get("considered") or []) if "rank" not in c]
+                           "rule": dict(TOP_RULES).get(top_rule(s), ""), "carriers": s.get("carriers"), "judgment": s.get("judgment"), "why_judged": s.get("judgment_why")} for n, s in enumerate(ranked)] + [c for c in (auto.get("considered") or []) if "rank" not in c]
 
 
 LAST_PICK = None
@@ -1831,6 +1831,128 @@ def scoops(items, cands, now, imgdir):
     return []
 
 
+# ---------------------------------------------------------------------------------------------------------------------
+# NEWS JUDGMENT: how we decide whether a story belongs at the top (Hannah, Sat Oct 31, 2026)
+#
+# Hannah: "When thinking what the top story is, try to think how many people will this story affect or who will be
+# interested in it ... A Toronto man identified in a Bridle Path [home invasion], for example? Or would it be Canada EU
+# associate membership? ... it's not just how many people it affects, but think about how many people would be
+# interested in this story ... write something that explains, okay, this is how we would make a judgment, an editorial
+# judgment in a newsroom."
+#
+# This is the question an editor asks at the morning meeting before anything else: who is this story for? A story
+# goes to the top of a national front page when it matters to a lot of people across the country, either because it
+# changes something in their lives or because people everywhere will want to read it. Two questions, answered from what
+# the newsrooms themselves have published (the code never guesses beyond that):
+#
+#   1. HOW MANY PEOPLE DOES IT AFFECT? (impact)
+#      - Many (2 points): it changes something for the whole country or a large part of it: what Ottawa or a province
+#        decides, the economy, prices, jobs, trade and tariffs, Canada's place in the world (the EU, the U.S., NATO),
+#        elections and referendums, strikes that stop a service people use, health care, housing, immigration, the
+#        military, war, disasters, outbreaks, evacuations, or a tragedy with many victims.
+#      - Some (1 point): neither of those.
+#      - Few (0 points): it is one incident touching a few people, usually in one place: a single crime, an arrest or a
+#        suspect named, a court date, a crash, a house fire, a missing person. These matter to the people involved and
+#        to their community, and they belong in the local news, not at the top of a national front page.
+#
+#   2. HOW MANY PEOPLE WILL WANT TO READ IT? (interest)
+#      The best evidence is what other newsrooms did with it.
+#      - Across the country (2 points): national desks carry it (cbc.ca/news/canada, ctvnews.ca/canada, politics,
+#        business, world), or newsrooms in three or more cities chose to run it.
+#      - Some (1 point): one national desk, or two cities.
+#      - One city (0 points): only the local desks of one city have it (cbc.ca/news/canada/toronto, ctvnews.ca/toronto,
+#        toronto.citynews.ca, cp24.com/local). Readers elsewhere in Canada are not looking for it.
+#      Most-read lists already count separately in the story's weight (popularity), so a story Canadians are actually
+#      reading still rises.
+#
+#   THE VERDICT, from the two scores added up (0 to 4):
+#      - National (3-4): a top story. It gets a lift in the ranking (JUDGMENT_WEIGHT["national"]).
+#      - Regional (1-2): can be a top story on its size and freshness, as before.
+#      - Local (0): not a top story. It cannot be the lead by being newer than a bigger story, cannot take a third top
+#        spot, and drops below every national and regional story (rule 8, "Canadian, older", at best). It still runs in
+#        the Canada desk and the other sections.
+#
+#   Example, Sat Oct 31, 2026, 11 a.m.:
+#      "Toronto man, 23, identified as suspect in Bridle Path home invasion": a single crime (few people affected, 0),
+#        carried only by Toronto desks of CBC, CTV, CityNews and CP24 (one city, 0) -> Local. Not the top story.
+#      "Canada-EU associate membership talks": Canada's trade and place in the world (many affected, 2), on CTV's
+#        national desk and CityNews in seven cities (across the country, 2) -> National. The top story.
+#
+# Every candidate's verdict and the reason for it are written into live/auto.json ("considered"), so it is always clear
+# why a story is or isn't at the top. To change how the code judges, change the word lists or the numbers below.
+# ---------------------------------------------------------------------------------------------------------------------
+JUDGMENT_WEIGHT = {"national": 8, "regional": 0, "local": -10}
+IMPACT_MANY = re.compile(
+    r"\b(federal|Parliament|House of Commons|Senate|senators?|prime minister|Carney|Poilievre|cabinet|premiers?|"
+    r"budget|deficit|tariffs?|trade|CUSMA|USMCA|treaty|accord|associate membership|European Union|\bEU\b|NATO|G7|G20|"
+    r"United Nations|Bank of Canada|interest rates?|inflation|recession|economy|economic|GDP|jobs report|unemployment|"
+    r"layoffs?|cost of living|prices|housing|rent|mortgages?|immigration|refugees?|health[- ]care|hospitals?|pharmacare|"
+    r"nationwide|national|across Canada|all Canadians|Canadians|referendum|elections?|by-elections?|strike|lockout|"
+    r"Canada Post|Air Canada|WestJet|VIA Rail|CN Rail|CPKC|pipeline|military|Canadian Armed Forces|CFB|soldiers|war|"
+    r"invasion|ceasefire|sanctions|outbreak|pandemic|vaccines?|recall|wildfires?|hurricane|earthquake|floods?|"
+    r"state of emergency|evacuat\w+|Supreme Court|Charter)\b", re.I)
+IMPACT_FEW = re.compile(
+    r"\b(identified|charged|arrested|arrest|suspects?|stabb\w*|shooting|shot|homicide|murder\w*|manslaughter|body|remains|"
+    r"missing|wanted|home invasion|break-in|robbery|carjack\w*|collision|crash|pedestrian|cyclist|struck|house fire|"
+    r"fire at|police (?:say|seek|investigat\w+|identify)|court|sentenced|sentencing|bail|trial|pleads?|obituary|"
+    r"neighbourhood|Bridle Path)\b", re.I)
+MANY_VICTIMS = re.compile(
+    r"\b(?:\d{2,}|[3-9]|three|four|five|six|seven|eight|nine|ten|dozens?|several|multiple|hundreds?)\s+(?:people\s+)?"
+    r"(?:dead|killed|deaths|die|died|injured|hurt|victims|missing)\b|\bmass (?:shooting|casualt\w+|stabbing)\b|"
+    r"\bexplosion\b|\bterror\w*\b", re.I)
+LOCAL_DESK = re.compile(  # the city a report comes from, when it is a city desk (group 1, 2, 3 or 4)
+    r"cbc\.ca/news/canada/([a-z-]+)/|ctvnews\.ca/([a-z-]+)/article|//([a-z]+)\.citynews\.ca|cp24\.com/local/([a-z-]+)", re.I)
+NATIONAL_DESK = re.compile(
+    r"cbc\.ca/news/(?:politics|business|world|health|science|climate)|cbc\.ca/news/canada/[\w-]*\d|"
+    r"ctvnews\.ca/(?:canada|politics|business|world|health|climate)/|globalnews\.ca/news/|theglobeandmail\.com/(?:canada|politics|business|world)|"
+    r"nationalpost\.com/news/(?:canada|politics|world)|thestar\.com/(?:news/canada|politics|business|news/world)|"
+    r"cp24\.com/news/(?:canada|world)|thecanadianpress\.com|apnews\.com|reuters\.com|ici\.radio-canada\.ca|ledevoir\.com|"
+    r"politico\.com|bnnbloomberg\.ca", re.I)
+CBC_CITY_WORDS = {"politics", "business", "world", "health", "science", "climate", "arts", "entertainment", "technology"}
+
+
+def news_judgment(s):
+    """The editorial judgment (see NEWS JUDGMENT above): how many people a story affects, how many will want to read it,
+    and the verdict, with the reason in plain words. Sets s["judgment"] and s["judgment_why"]."""
+    reports = s.get("reports") or []
+    title = s.get("title") or ""
+    text = title + " " + " ".join(r.get("title", "") for r in reports[:8])
+    # 1. how many people it affects
+    # a word for a single incident wins over a big-story word inside it ("home invasion" is not an "invasion")
+    many = lambda t: bool(IMPACT_MANY.search(IMPACT_FEW.sub(" ", t)))
+    many_titles = sum(1 for r in reports[:8] if many(r.get("title", "")))
+    if MANY_VICTIMS.search(text) or many(title) or many_titles >= 2:
+        impact, i_why = 2, "affects many people"
+    elif IMPACT_FEW.search(title):
+        impact, i_why = 0, "a single incident touching a few people"
+    else:
+        impact, i_why = 1, "affects some people"
+    # 2. how many people will want to read it: national desks, and how many cities' newsrooms chose to run it
+    cities, national = set(), 0
+    for r in reports:
+        u = r.get("url") or ""
+        m = LOCAL_DESK.search(u)
+        city = next((g for g in (m.groups() if m else ()) if g), "")
+        if city and city.lower() not in CBC_CITY_WORDS and city.lower() not in ("canada", "news", "www"):
+            cities.add(city.lower())
+        elif NATIONAL_DESK.search(u):
+            national += 1
+        elif "cp24.com" in u:
+            cities.add("toronto")
+    if national >= 2 or len(cities) >= 3:
+        interest, n_why = 2, "carried across the country" + (f" ({len(cities)} cities)" if len(cities) >= 3 else " (national desks)")
+    elif national == 1 or len(cities) == 2:
+        interest, n_why = 1, "carried beyond one city"
+    elif cities:
+        interest, n_why = 0, "carried only by " + next(iter(cities)).title() + " desks"
+    else:
+        interest, n_why = 1, "carried by a few newsrooms"
+    total = impact + interest
+    s["judgment"] = "national" if total >= 3 else "local" if total == 0 else "regional"
+    s["judgment_why"] = f"{s['judgment'].title()}: {i_why}; {n_why}."
+    return s["judgment"]
+
+
 def top_rule(s, now=None):
     """Which rule puts this story where it is (TOP_RULES): the lower the number, the higher on the page. Within one
     rule, the bigger story (weight: coverage, Newswatch and CBC front placement, most-read, freshness) goes first,
@@ -1841,6 +1963,8 @@ def top_rule(s, now=None):
     except Exception:
         age = 99
     canadian = s.get("canada") == "canadian" or bool(s.get("canus"))
+    if s.get("judgment") == "local":  # NEWS JUDGMENT: a story for one community is not a top story
+        return 8 if canadian else 9
     live = (s.get("live") or {}).get("state")
     breaking = s.get("tag") == "Breaking" or live == "now"  # Breaking: 4+ independent newsrooms, a report in the last hour
     if canadian and breaking:
@@ -1873,7 +1997,7 @@ def third_worthy(s, top2, tier):
     now, or coming up within LIVE_SOON_HOURS), Breaking-level coverage (BREAKING_INDEPENDENT newsrooms), or a weight of
     at least THIRD_WEIGHT of the second story's. On a quiet day nothing qualifies and the top stays at two."""
     from datetime import datetime, timezone
-    if tier(s) >= 2:
+    if tier(s) >= 2 or s.get("judgment") == "local":
         return False
     themes = {t.get("theme") for t in top2 if t.get("theme")}
     if s.get("theme") and s["theme"] in themes:
@@ -1963,8 +2087,14 @@ def pick_by_canada(auto, items, now, eds, papers, otr, canus_, mostread=None):
             w += CANADIAN_WEIGHT
         if s.get("us_election"):
             w += 4
+        w += JUDGMENT_WEIGHT.get(s.get("judgment"), 0)  # NEWS JUDGMENT: how many people it affects and will want to read it
         return w
     for s in cands:
+        try:
+            news_judgment(s)
+        except Exception as e:
+            print("news judgment failed:", e)
+            s["judgment"], s["judgment_why"] = "regional", "Regional: not judged (error)."
         s["weight"] = weight(s)
     ranked = sorted(cands, key=rank_key)  # THE RULE (top_rule), then the bigger story; stable: ties keep the ranking order
     # one story per running theme in the top pair, so Canada-U.S. leads without crowding out everything else
