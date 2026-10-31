@@ -1,6 +1,6 @@
 {
- "checked": "2026-10-31T14:01:09.254871+00:00",
- "checkedLabel": "Sat 10:01 a.m.",
+ "checked": "2026-10-31T14:06:31.958788+00:00",
+ "checkedLabel": "Sat 10:06 a.m.",
  "stories": [
   {
    "key": "top",
@@ -56,6 +56,15 @@
  ],
  "wire": [
   [
+   "Sat 10:02 a.m.",
+   "U.S.",
+   "El-Sayed asks fellow Democrat Stevens not to attend final campaign events",
+   "CBS News",
+   "https://www.cbsnews.com/news/abdul-el-sayed-haley-stevens-feud-michigan-senate/",
+   "2026-10-31T14:02:41+00:00",
+   2
+  ],
+  [
    "Sat 9:55 a.m.",
    "Canada",
    "Why Toronto’s municipal election turnout beat the provincial average",
@@ -63,15 +72,6 @@
    "https://globalnews.ca/news/12128680/toronto-election-voter-turnout/",
    "2026-10-31T13:55:19+00:00",
    4
-  ],
-  [
-   "Sat 9:50 a.m.",
-   "U.S.",
-   "El-Sayed and Stevens feud ahead of key Michigan Senate race",
-   "CBS News",
-   "https://www.cbsnews.com/news/abdul-el-sayed-haley-stevens-feud-michigan-senate/",
-   "2026-10-31T13:50:36+00:00",
-   2
   ],
   [
    "Sat 9:50 a.m.",
@@ -89,7 +89,7 @@
    "BBC News",
    "https://www.bbc.co.uk/news/articles/cqx2818elrnzo?at_medium=RSS&at_campaign=rss",
    "2026-10-31T13:45:34+00:00",
-   7
+   6
   ],
   [
    "Sat 9:43 a.m.",
@@ -116,7 +116,7 @@
    "Global News",
    "https://globalnews.ca/news/12128674/whale-spotted-st-lawrence/",
    "2026-10-31T13:36:44+00:00",
-   4
+   6
   ],
   [
    "Sat 9:35 a.m.",
@@ -360,14 +360,6 @@
    "theme": ""
   },
   {
-   "score": 11,
-   "title": "B.C.'s new time zone could cause confusion, from calendars to medical appointments",
-   "url": "https://www.narcity.com/new-b-c-time-zone-could-cause-calendar-chaos",
-   "outlets": 9,
-   "why": [],
-   "theme": ""
-  },
-  {
    "score": 9,
    "title": "This Texas midterm race has huge stakes, both for Donald Trump and the country",
    "url": "https://www.cbc.ca/news/world/midterms-texas-us-senate-trump-ken-paxton-james-talarico-9.7399751",
@@ -375,6 +367,14 @@
    "why": [
     "CBC News front #1"
    ],
+   "theme": ""
+  },
+  {
+   "score": 9,
+   "title": "B.C.'s new time zone could cause confusion, from calendars to medical appointments",
+   "url": "https://www.narcity.com/new-b-c-time-zone-could-cause-calendar-chaos",
+   "outlets": 9,
+   "why": [],
    "theme": ""
   },
   {
@@ -395,23 +395,33 @@
   },
   {
    "score": 8,
-   "title": "Iranian leader threatens response to potential attack as fears of war mount, and other Mideast news",
-   "url": "https://www.thestar.com/news/world/middle-east/mideast-leaders-call-for-calm-as-fears-mount-of-a-renewed-war-in-the-region-and-other-mideast-news/article_58d02608-a96c-52c1-8b84-c2ff579df3e1.html",
-   "outlets": 8,
+   "title": "North Atlantic right whale spotted entangled in gear",
+   "url": "https://globalnews.ca/news/12128674/whale-spotted-st-lawrence/",
+   "outlets": 6,
    "why": [],
    "theme": ""
   }
  ],
  "canada": [
   {
-   "t": "Sat 9:55 a.m.",
-   "iso": "2026-10-31T13:55:19+00:00",
+   "t": "Sat 10:04 a.m.",
+   "iso": "2026-10-31T14:04:46.106000+00:00",
    "region": "Ontario",
-   "title": "Why Toronto’s municipal election turnout beat the provincial average",
-   "summary": "Unofficial results collected by the Association of Municipalities of Ontario show 46 per cent of those eligible to vote in Toronto did so in this week's municipal election.",
-   "outlet": "Global News, CP24, CityNews",
-   "url": "https://globalnews.ca/news/12128680/toronto-election-voter-turnout/",
-   "img": "https://globalnews.ca/wp-content/uploads/2026/10/Toronto-election-e1793454891543.jpg?quality=65&strip=all&w=720&h=379&crop=1"
+   "title": "Toronto police to provide update on Bridle Path home invasion investigation",
+   "summary": "Toronto police will be updating the public at 10 a.m. Saturday on the investigation into the home invasion that took place in the Bridle Path neighbourhood earlier this week.",
+   "outlet": "CBC News, CP24, Global News",
+   "url": "https://www.cbc.ca/news/canada/toronto/bridle-path-neighbourhood-home-invasion-toronto-police-update-9.7404151",
+   "img": "https://i.cbc.ca/ais/b32a1fb1-e3e7-4df9-83ce-197411afd440,1793284816593/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C4032%2C2268%29%3BResize%3D620"
+  },
+  {
+   "t": "Sat 10:00 a.m.",
+   "iso": "2026-10-31T14:00:00+00:00",
+   "region": "B.C.",
+   "title": "Which B.C. neighbourhoods will get the most trick-or-treaters this Halloween?",
+   "summary": "CBC British Columbia and Simon Fraser University's City Program are teaming up once again to run our annual treat count — where we look at how much candy you gave out to trick-or-treaters and what you gave them, all displayed on an interactive map.",
+   "outlet": "CBC News",
+   "url": "https://www.cbc.ca/news/canada/british-columbia/bc-british-columbia-halloween-treat-count-2026-9.7400544",
+   "img": "https://i.cbc.ca/ais/8ebc0930-6d4c-4d33-bf1b-b491d88ee6ab,1793370345391/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C310%2C5828%2C3278%29%3BResize%3D620"
   },
   {
    "t": "Sat 9:36 a.m.",
@@ -907,34 +917,34 @@
     "weight": 45,
     "videos": [
      {
+      "net": "CTV News",
+      "url": "https://www.youtube.com/watch?v=bVu4crT0i9M",
+      "title": "Carney pledges 'greater affordability' in EU partnership | CTV National News for Oct. 30, 2026",
+      "img": "https://i.ytimg.com/vi/bVu4crT0i9M/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CPAC",
+      "url": "https://www.youtube.com/watch?v=Le1o0pArYn4",
+      "title": "PM Carney meets with European Union leaders in Montréal – October 30, 2026",
+      "img": "https://i.ytimg.com/vi/Le1o0pArYn4/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CPAC",
+      "url": "https://www.youtube.com/watch?v=3caa5nbl6B8",
+      "title": "PM Carney hosts business roundtable with European Union leaders – October 29, 2026",
+      "img": "https://i.ytimg.com/vi/3caa5nbl6B8/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
       "net": "CBC News",
       "url": "https://www.youtube.com/watch?v=cC2KHglDAVE",
       "title": "Will Canadians get behind Canada's pursuit of associate membership in the EU? | Power & Politics",
       "img": "https://i.ytimg.com/vi/cC2KHglDAVE/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CBC News",
-      "url": "https://www.youtube.com/watch?v=H5AYatiKbfU",
-      "title": "What can we expect from the Canada-EU 'alliance for the future’? | Power & Politics",
-      "img": "https://i.ytimg.com/vi/H5AYatiKbfU/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CBC News",
-      "url": "https://www.youtube.com/watch?v=9ZxaAwOurOg",
-      "title": "Reporter Roundtable: Quebec Premier boycotts Canada-EU summit | Power & Politics",
-      "img": "https://i.ytimg.com/vi/9ZxaAwOurOg/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CBC News",
-      "url": "https://www.youtube.com/watch?v=BeFMTsTusRk",
-      "title": "EU wants 'deeper relationship' with Canada, no matter the name: Kaja Kallas | Power & Politics",
-      "img": "https://i.ytimg.com/vi/BeFMTsTusRk/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -949,7 +959,7 @@
     ],
     "score": 11,
     "outlets": 3,
-    "carriers": 8,
+    "carriers": 7,
     "tag": "Developing",
     "title": "Residents evacuated from Russian-occupied Oleshky reach Ukraine after localized ceasefire",
     "url": "https://www.timescolonist.com/world-news/residents-evacuated-from-russian-occupied-oleshky-reach-ukraine-after-localized-ceasefire-12964114",
@@ -1015,20 +1025,12 @@
       "desc": "CHERNIHIV OBLAST — Evacuees from the Russian-occupied city of Oleshky have reached Ukrainian-controlled territory on Oct. 31 after an arduous 19-hour journey. The city's residents, who had been trapped in a worsening humanitarian crisis for months on end, arrived to an emotional reception at the…"
      },
      {
-      "t": "Sat 8:05 a.m.",
-      "iso": "2026-10-31T12:05:48+00:00",
-      "outlet": "Euronews",
-      "title": "Evacuees from Russian-occupied Oleshky arrive in Ukraine amid localised truce between Kyiv and Moscow",
-      "url": "https://www.euronews.com/2026/10/31/oleshky-evacuees-arrive-in-belarus-amid-localised-truce-between-kyiv-and-moscow",
-      "desc": "It comes as Ukrainian President Volodymyr Zelenskyy said around 280,000 Ukrainian households had been left without power after Russian strikes overnight. #EuropeNews"
-     },
-     {
       "t": "Sat 6:53 a.m.",
       "iso": "2026-10-31T10:53:55+00:00",
       "outlet": "Al Jazeera",
       "title": "Hundreds from Russian-occupied Oleshky land in Belarus en route to Ukraine",
       "url": "https://www.aljazeera.com/news/2026/10/31/hundreds-from-russian-occupied-oleshky-land-in-belarus-en-route-to-ukraine?traffic_source=rss",
-      "desc": "Four planes transporting evacuees from the war-ravaged city have arrived in Belarus's Gomel."
+      "desc": "Four planes transporting evacuees from the war-ravaged city arrived in Belarus's Gomel earlier on Saturday."
      },
      {
       "t": "Sat 5:40 a.m.",
@@ -1055,11 +1057,6 @@
         "byline": "\"Derek Gatopoulos The Associated Press\" \"Derek Gatopoulos"
        },
        {
-        "outlet": "Euronews",
-        "src": "The Associated Press",
-        "byline": "] Nathan Rennolds Copyright 2026 The Associated Press. All rights reserve"
-       },
-       {
         "outlet": "CBC News",
         "src": "The Associated Press",
         "byline": "\"photoURL\":\"\"},\"recentContent\":{}} \"The Associated Press\" \"Reuters\" \"Reuters"
@@ -1081,10 +1078,6 @@
        }
       ],
       "copies": [
-       {
-        "outlet": "Euronews",
-        "url": "https://www.euronews.com/2026/10/31/oleshky-evacuees-arrive-in-belarus-amid-localised-truce-between-kyiv-and-moscow"
-       },
        {
         "outlet": "CBC News",
         "url": "https://www.cbc.ca/news/world/evacuees-oleshky-belarus-ukraine-9.7404117"
@@ -1126,7 +1119,7 @@
       "outlet": "Al Jazeera",
       "title": "Hundreds from Russian-occupied Oleshky land in Belarus en route to Ukraine",
       "url": "https://www.aljazeera.com/news/2026/10/31/hundreds-from-russian-occupied-oleshky-land-in-belarus-en-route-to-ukraine?traffic_source=rss",
-      "desc": "Four planes transporting evacuees from the war-ravaged city have arrived in Belarus's Gomel.",
+      "desc": "Four planes transporting evacuees from the war-ravaged city arrived in Belarus's Gomel earlier on Saturday.",
       "wire": "",
       "by": [
        {
@@ -1145,21 +1138,13 @@
     "canus": false,
     "popular": 0,
     "us_election": false,
-    "weight": 24.0,
+    "weight": 23.5,
     "videos": [
      {
       "net": "Associated Press",
       "url": "https://www.youtube.com/watch?v=mmg2FR6Txvs",
       "title": "Civilians from Russian-occupied Oleshky arrive in Belarus on their way to Ukraine",
       "img": "https://i.ytimg.com/vi/mmg2FR6Txvs/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "Associated Press",
-      "url": "https://www.youtube.com/watch?v=H-ZBTZm-tDI",
-      "title": "Oleshky residents begin evacuation journey as local Ukraine-Russia truce holds",
-      "img": "https://i.ytimg.com/vi/H-ZBTZm-tDI/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
@@ -1203,7 +1188,7 @@
     "url": "https://www.timescolonist.com/world-news/residents-evacuated-from-russian-occupied-oleshky-reach-ukraine-after-localized-ceasefire-12964114",
     "rank": 2,
     "live": "",
-    "weight": 24.0,
+    "weight": 23.5,
     "score": 11,
     "independent": 3,
     "most_read": 0,
@@ -1211,7 +1196,7 @@
     "theme": "",
     "top": true,
     "rule": "From abroad, tied to Canada",
-    "carriers": 8
+    "carriers": 7
    },
    {
     "title": "No matter what happens in the midterms, Canada-U.S. tensions are likely to remain",
@@ -1239,12 +1224,12 @@
     "why": "not built: only 1 independent report(s) (10 sites)"
    },
    {
-    "title": "B.C.'s new time zone could cause confusion, from calendars to medical appointments",
-    "score": 11,
+    "title": "This Texas midterm race has huge stakes, both for Donald Trump and the country",
+    "score": 9,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "This Texas midterm race has huge stakes, both for Donald Trump and the country",
+    "title": "B.C.'s new time zone could cause confusion, from calendars to medical appointments",
     "score": 9,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
@@ -1259,9 +1244,14 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
+    "title": "North Atlantic right whale spotted entangled in gear",
+    "score": 8,
+    "why": "not built: only 2 independent report(s) (6 sites)"
+   },
+   {
     "title": "Iranian leader threatens response to potential attack as fears of war mount, and other Mideast news",
     "score": 8,
-    "why": "not built: only 1 independent report(s) (8 sites)"
+    "why": "not built: only 2 independent report(s) (8 sites)"
    },
    {
     "title": "France and Germany braced for unrest with hundreds of demonstrations planned – Europe live",
@@ -1274,19 +1264,14 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "North Atlantic right whale spotted entangled in gear",
-    "score": 6,
-    "why": "not built: only 2 independent report(s) (4 sites)"
-   },
-   {
     "title": "Liberals jump ahead of Tories in fundraising as by-election calls loom",
     "score": 5,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Midterm Updates: El-Sayed, Stevens feud lights up campaign amid final push",
+    "title": "El-Sayed asks fellow Democrat Stevens not to attend final campaign events",
     "score": 5,
-    "why": "not built: only 2 independent report(s) (2 sites)"
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
     "title": "Nova Scotia man charged with child sexual abuse offences",
@@ -1569,7 +1554,7 @@
    "id": "m9cOcr9a-WI",
    "r": "us",
    "o": "CBS News",
-   "t": "John Thune’s bid to deliver for Trump and save the GOP majority",
+   "t": "John Thune faces a defining test as Senate GOP leader",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=m9cOcr9a-WI",
@@ -1692,20 +1677,6 @@
    "geo": "unknown"
   },
   {
-   "id": "RoAoaB8tFkw",
-   "r": "us",
-   "o": "Bloomberg",
-   "t": "Haunted Attractions Help Revive Neighborhoods",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=RoAoaB8tFkw",
-   "img": "https://i.ytimg.com/vi/RoAoaB8tFkw/hqdefault.jpg",
-   "up": "2026-10-31",
-   "added": "2026-10-31T13:41:08.893082+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "jYtc4keGRFg",
    "r": "us",
    "o": "Bloomberg",
@@ -1772,6 +1743,20 @@
    "img": "https://i.ytimg.com/vi/FEAVNOnCN7M/hqdefault.jpg",
    "up": "2026-10-31",
    "added": "2026-10-31T14:01:09.254871+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "HndwoC6Tmbo",
+   "r": "us",
+   "o": "Bloomberg",
+   "t": "The AI Backlash Uniting Voters",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=HndwoC6Tmbo",
+   "img": "https://i.ytimg.com/vi/HndwoC6Tmbo/hqdefault.jpg",
+   "up": "2026-10-31",
+   "added": "2026-10-31T14:06:31.958788+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1891,7 +1876,7 @@
    "id": "-JpcWiX555Q",
    "r": "world",
    "o": "Reuters",
-   "t": "Judge blocks Trump administration threats to election officials | Reuters World News",
+   "t": "Trump election fight, UK weighs slavery apology, Air Force One flyover | Reuters World News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=-JpcWiX555Q",
@@ -1951,11 +1936,11 @@
   },
   {
    "o": "Fox News",
-   "h": "Bill Belichick is a free agent after breakup with 25-year-old girlfriend, Halloween costumes & groceries",
-   "u": "https://www.foxnews.com/outkick-sports/bill-belichick-free-agent-breakup-25-year-old-girlfriend-halloween-costumes-groceries",
-   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2025/09/bill-belichick-jordon-hudson-field.jpg",
-   "w": "Sat 9:30 a.m.",
-   "iso": "2026-10-31T13:30:24+00:00"
+   "h": "CodePink leader adds muscle to well-funded fight to ban restaurant delicacy",
+   "u": "https://www.foxnews.com/politics/codepink-leader-adds-muscle-well-funded-fight-ban-restaurant-delicacy",
+   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/10/dc-foie-gras-ban-far-left-activist-investigation.jpg",
+   "w": "Sat 9:53 a.m.",
+   "iso": "2026-10-31T13:53:26+00:00"
   },
   {
    "o": "NPR",
@@ -1967,11 +1952,11 @@
   },
   {
    "o": "The Hill",
-   "h": "Trump administration attempts to bypass restrictions on sending Afghan refugees to Afghanistan: Reports",
-   "u": "https://thehill.com/homenews/administration/6186030-trump-afghan-refugees-afghanistan/",
+   "h": "Ricketts leads independent candidate Osborn by 6 points in latest Nebraska Senate poll",
+   "u": "https://thehill.com/homenews/campaign/6186054-ricketts-osborn-nebraska-senate/",
    "img": "",
-   "w": "Sat 9:26 a.m.",
-   "iso": "2026-10-31T13:26:26+00:00"
+   "w": "Sat 10:03 a.m.",
+   "iso": "2026-10-31T14:03:52+00:00"
   },
   {
    "o": "Politico",
@@ -2325,6 +2310,22 @@
    "date": "Oct 31",
    "platform": "Official statement",
    "handle": "news.un.org",
+   "hed": "DPR Korea: Isolation deepens even as the country changes, says UN rights official",
+   "summary": "The Democratic People’s Republic of Korea (DPRK) is building factories and hospitals, rolling out smartphones and mobile banking, and passing new laws at an unprecedented rate. But its people are more cut off from the outside world than at…",
+   "href": "https://news.un.org/feed/view/en/story/2026/10/1168690",
+   "report": false,
+   "iso": "2026-10-31T12:00:00+00:00",
+   "auto": true
+  },
+  {
+   "cat": "intl",
+   "media": "none",
+   "initials": "UN",
+   "name": "United Nations",
+   "role": "UN News",
+   "date": "Oct 31",
+   "platform": "Official statement",
+   "handle": "news.un.org",
    "hed": "Somalia looks to the future as the UN's political mission closes",
    "summary": "“The story of the UN's political engagement in Somalia has been one of persistence, partnership and adaptation,” Raisedon Zenenga, the UN Secretary-General's Deputy Special Representative for Somalia has said, as three decades of UN…",
    "href": "https://news.un.org/feed/view/en/story/2026/10/1168714",
@@ -2427,32 +2428,33 @@
    "report": false,
    "iso": "2026-10-30T16:15:00+00:00",
    "auto": true
-  },
-  {
-   "cat": "intl",
-   "media": "none",
-   "initials": "UN",
-   "name": "United Nations",
-   "role": "UN News",
-   "date": "Oct 30",
-   "platform": "Official statement",
-   "handle": "news.un.org",
-   "hed": "World News in Brief: 300,000 displaced in Lebanon, Türk ‘deeply concerned’ over Novaya Gazeta closure, $50 million refugee appeal, World Cities Day",
-   "summary": "More than 300,000 people displaced since early March remain internally displaced in Lebanon, where the humanitarian crisis is “far from over,” according to the UN’s aid coordination office (OCHA).",
-   "href": "https://news.un.org/feed/view/en/story/2026/10/1168713",
-   "report": false,
-   "iso": "2026-10-30T12:00:00+00:00",
-   "auto": true
   }
  ],
  "mostread": {
   "sites": [
+   "Toronto Star",
    "Winnipeg Free Press",
    "Global News",
    "Nunatsiaq News",
    "Daily Hive"
   ],
   "list": [
+   {
+    "h": "Toronto CEO speaks out after he and daughters shot in ‘horrific and violent’ Bridle Path home invasion",
+    "u": "https://www.thestar.com/news/gta/police-still-searching-for-suspects-in-violent-bridle-path-home-invasion-that-left-4-family-members-injured/article_dd829678-fa6f-4c6a-a70e-1306f9948086.html",
+    "o": [
+     [
+      "Toronto Star",
+      1,
+      "https://www.thestar.com/news/gta/police-still-searching-for-suspects-in-violent-bridle-path-home-invasion-that-left-4-family-members-injured/article_dd829678-fa6f-4c6a-a70e-1306f9948086.html"
+     ],
+     [
+      "Global News",
+      4,
+      "https://globalnews.ca/news/12128478/violent-toronto-home-invasion-terrifying-ceo-family/"
+     ]
+    ]
+   },
    {
     "h": "How permanent daylight time could affect Manitobans' health and businesses",
     "u": "https://www.winnipegfreepress.com/breakingnews/2026/10/30/permanent-daylight-time-manitoba-health-businesses",
@@ -2498,6 +2500,17 @@
     ]
    },
    {
+    "h": "Loblaw chair Galen Weston says grocers ‘cannot control prices,’ jokes he was ‘traumatized’ by public outrage",
+    "u": "https://www.thestar.com/business/loblaws-chair-galen-weston-says-grocers-cannot-control-prices-was-traumatized-by-heightened-public-sentiment/article_90544014-bd38-4dfb-ae39-5d1a38d5c751.html",
+    "o": [
+     [
+      "Toronto Star",
+      2,
+      "https://www.thestar.com/business/loblaws-chair-galen-weston-says-grocers-cannot-control-prices-was-traumatized-by-heightened-public-sentiment/article_90544014-bd38-4dfb-ae39-5d1a38d5c751.html"
+     ]
+    ]
+   },
+   {
     "h": "Bet on Noah Redden to play role in Winnipeg’s political future",
     "u": "https://www.winnipegfreepress.com/local/2026/10/30/noah-redden-winnipeg-election-results",
     "o": [
@@ -2531,35 +2544,13 @@
     ]
    },
    {
-    "h": "Cybersecurity incident disrupts southern Manitoba school division",
-    "u": "https://www.winnipegfreepress.com/breakingnews/2026/10/30/garden-valley-school-division-cybersecurity-incident",
+    "h": "Trespasser halts subway train for 30 minutes on Prince Edward Viaduct over Don Valley",
+    "u": "https://www.thestar.com/news/gta/trespasser-halts-subway-train-for-30-minutes-on-prince-edward-viaduct-over-don-valley/article_843970f7-4483-4894-b9a7-19c45f663e87.html",
     "o": [
      [
-      "Winnipeg Free Press",
+      "Toronto Star",
       3,
-      "https://www.winnipegfreepress.com/breakingnews/2026/10/30/garden-valley-school-division-cybersecurity-incident"
-     ]
-    ]
-   },
-   {
-    "h": "Will Russia be allowed at the World Juniors? Mixed messages after court ruling Canada Oct 30 5 min read",
-    "u": "https://globalnews.ca/news/12127311/hockey-canada-seeks-clarity-on-russias-return/",
-    "o": [
-     [
-      "Global News",
-      3,
-      "https://globalnews.ca/news/12127311/hockey-canada-seeks-clarity-on-russias-return/"
-     ]
-    ]
-   },
-   {
-    "h": "Qikiqtarjuaq man forfeits right to jury trial after sleeping in",
-    "u": "https://nunatsiaq.com/stories/article/qikiqtarjuaq-man-forfeits-right-to-jury-trial-after-sleeping-in/",
-    "o": [
-     [
-      "Nunatsiaq News",
-      3,
-      "https://nunatsiaq.com/stories/article/qikiqtarjuaq-man-forfeits-right-to-jury-trial-after-sleeping-in/"
+      "https://www.thestar.com/news/gta/trespasser-halts-subway-train-for-30-minutes-on-prince-edward-viaduct-over-don-valley/article_843970f7-4483-4894-b9a7-19c45f663e87.html"
      ]
     ]
    }
@@ -2682,7 +2673,7 @@
     "url": "https://www.youtube.com/watch?v=wvdtxXE5n0o",
     "img": "https://i.ytimg.com/vi/wvdtxXE5n0o/hqdefault.jpg",
     "story": "Police provide update on \"terrifying\" home invasion in affluent Toront",
-    "watching": "57",
+    "watching": "83",
     "reports": [
      {
       "outlet": "CBC News",
@@ -2722,38 +2713,13 @@
     ]
    },
    {
-    "net": "Bloomberg",
-    "r": "us",
-    "title": "Tech Stock Selloff, Trump Midterm Push, Israel Fallout | Bloomberg This Weekend: Oct 31st, 2026",
-    "url": "https://www.youtube.com/watch?v=5lKIW85jDDY",
-    "img": "https://i.ytimg.com/vi/5lKIW85jDDY/hqdefault.jpg",
-    "story": "Tech Stock Selloff, Trump Midterm Push, Israel Fallout",
-    "watching": "235",
-    "reports": [
-     {
-      "outlet": "CP24",
-      "title": "TSX falls 600 points amid tech stock selloff on both sides of the border",
-      "url": "https://www.cp24.com/news/money/2026/10/30/sptsx-composite-down-nearly-700-points-us-stock-markets-also-fall/",
-      "t": "Fri 5:02 p.m.",
-      "iso": "2026-10-30T21:02:47+00:00"
-     },
-     {
-      "outlet": "BNN Bloomberg",
-      "title": "TSX falls 600 points amid tech stock selloff on both sides of the border",
-      "url": "https://www.bnnbloomberg.ca/markets/2026/10/30/sptsx-composite-down-nearly-700-points-us-stock-markets-also-fall/",
-      "t": "Fri 5:02 p.m.",
-      "iso": "2026-10-30T21:02:47+00:00"
-     }
-    ]
-   },
-   {
     "net": "LiveNOW from FOX",
     "r": "us",
     "title": "LIVE: California Spirit Halloween shooting, Midterm elections, Alaska Senate race probe, top stories",
     "url": "https://www.youtube.com/watch?v=O_xDTLIv-FI",
     "img": "https://i.ytimg.com/vi/O_xDTLIv-FI/hqdefault.jpg",
     "story": "California Spirit Halloween shooting, Midterm elections, Alaska Senate",
-    "watching": "571",
+    "watching": "570",
     "reports": [
      {
       "outlet": "Fox News",
@@ -2813,7 +2779,7 @@
     "url": "https://www.youtube.com/watch?v=qL0wnGz_-wg",
     "img": "https://i.ytimg.com/vi/qL0wnGz_-wg/hqdefault.jpg",
     "story": "France facing more protests as marchers gather in Paris",
-    "watching": "288"
+    "watching": "273"
    }
   ],
   "upcoming": [
@@ -2878,7 +2844,7 @@
    "story": "France and Germany braced for unrest with hundreds of demonstrations p",
    "title": "France and Germany braced for unrest with hundreds of demonstrations planned – Europe live",
    "url": "https://www.theguardian.com/world/live/2026/oct/31/france-germany-protests-paris-europe-latest-news-updates",
-   "updated": "2026-10-31T14:04:28+00:00",
+   "updated": "2026-10-31T14:07:07+00:00",
    "ended": false,
    "img": "https://i.guim.co.uk/img/media/f9f7507a6177e3a3d0cd9ea0ed7f44b07f739f79/568_0_4958_3967/master/4958.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=7c98a1833f6c26c45461301e70b4675e"
   },
@@ -3133,60 +3099,6 @@
      "url": "https://www.cp24.com/news/canada/2026/10/30/us-midterms-101-who-holds-the-cards-in-the-canada-us-trade-war/",
      "ca": true,
      "tie": "Canada and the U.S."
-    }
-   ],
-   "official": [],
-   "views": []
-  },
-  "https://www.youtube.com/watch?v=5lKIW85jDDY": {
-   "story": "Tech Stock Selloff, Trump Midterm Push, Israel Fallout | Bloomberg This Weekend: Oct 31st, 2026",
-   "us": true,
-   "specific": 5,
-   "stories": [
-    {
-     "t": "Sat 7:28 a.m.",
-     "iso": "2026-10-31T11:28:19+00:00",
-     "outlet": "CTV News",
-     "title": "The outcome of the U.S. midterms may not relieve U.S.-Canada tensions",
-     "url": "https://www.ctvnews.ca/politics/article/the-outcome-of-the-us-midterms-may-not-relieve-us-canada-tensions/",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Sat 6:00 a.m.",
-     "iso": "2026-10-31T10:00:07+00:00",
-     "outlet": "Toronto Star",
-     "title": "No matter what happens in the midterms, Canada-U.S. tensions are likely to remain",
-     "url": "https://www.thestar.com/news/canada/no-matter-what-happens-in-the-midterms-canada-u-s-tensions-are-likely-to-remain/article_eef6e7d0-2282-5e3a-9bdf-50f230147a02.html",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Sat 5:58 a.m.",
-     "iso": "2026-10-31T09:58:05+00:00",
-     "outlet": "CP24",
-     "title": "Clocks fall back an hour this weekend for most of Ontario. Here’s what you need to know.",
-     "url": "https://www.cp24.com/local/toronto/2026/10/30/clocks-fall-back-an-hour-this-weekend-for-most-of-ontario-heres-what-you-need-to-know/",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Sat 4:00 a.m.",
-     "iso": "2026-10-31T08:00:00+00:00",
-     "outlet": "CBC News",
-     "title": "Canada is in the U.S. midterm spotlight. Will the results be a blessing or a curse?",
-     "url": "https://www.cbc.ca/news/politics/us-midterms-canada-trade-war-9.7403117?cmp=rss",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Fri 12:41 p.m.",
-     "iso": "2026-10-30T16:41:57+00:00",
-     "outlet": "BNN Bloomberg",
-     "title": "U.S. midterms 101: Who holds the cards in the Canada-U.S. trade war?",
-     "url": "https://www.bnnbloomberg.ca/business/politics/2026/10/30/us-midterms-101-who-holds-the-cards-in-the-canada-us-trade-war/",
-     "ca": true,
-     "tie": ""
     }
    ],
    "official": [],
@@ -3516,8 +3428,8 @@
    "official": [],
    "views": []
   },
-  "https://thehill.com/homenews/administration/6186030-trump-afghan-refugees-afghanistan/": {
-   "story": "Trump administration attempts to bypass restrictions on sending Afghan refugees to Afghanistan: Reports",
+  "https://thehill.com/homenews/campaign/6186054-ricketts-osborn-nebraska-senate/": {
+   "story": "Ricketts leads independent candidate Osborn by 6 points in latest Nebraska Senate poll",
    "us": true,
    "specific": 0,
    "stories": [
@@ -4310,7 +4222,6 @@
   "c9v26lW7-j4",
   "ldElU-Q5Qyo",
   "nfy6JJILPJI",
-  "t_HBrWb84eY",
-  "wV8hRa0ARJ8"
+  "t_HBrWb84eY"
  ]
 }
