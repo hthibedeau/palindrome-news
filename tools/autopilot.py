@@ -1482,6 +1482,11 @@ TOPIC = re.compile(r"\b(midterms?|elections?|tariffs?|trade (?:deal|talks|war)|b
                    r"defen[cs]e|NATO|Golden Dome|fentanyl|immigration|CUSMA|USMCA)\b", re.I)
 
 
+# a U.S. story about a person's own affairs (a lawsuit, a scandal, a trial, a health scare) is not about Canada-U.S. relations
+PERSONAL_US = re.compile(r"\b(lawsuit|sues|sued|defamation|libel|Epstein|indicted|indictment|trial|verdict|scandal|affair|divorce|"
+                         r"health|hospital|birthday|memoir|book|pardon(?:s|ed)?)\b", re.I)
+
+
 def _angle(name, words, mine, recent, eds, papers, otr, pool, anchor_words=None):
     """The Canadian angle for one story from another country, or None. `mine` = the story's own reports."""
     import autoupdate as au
@@ -1536,7 +1541,10 @@ def _angle(name, words, mine, recent, eds, papers, otr, pool, anchor_words=None)
             continue
         add(dt.isoformat(), w.eastern(dt), au.clean_outlet(outlet), title, link)
     specific = len(picked)
-    if is_us and (US_POLITICS.search(name) or US_ELECTION.search(name)):
+    # the Canada-U.S. relationship today, only for a U.S. story that touches it: trade, tariffs, the border, defence,
+    # energy, immigration, the election (Hannah, Sat Oct 31, 2026: "there isn't really a Canadian angle to the Trump
+    # lawsuit. Why would that be pulled in?" A story is not about Canada because Trump's name is in it)
+    if is_us and (US_ELECTION.search(name) or (US_POLITICS.search(name) and TOPIC.search(name))) and not PERSONAL_US.search(name):
         for x in pool:  # the Canada-U.S. relationship today, newest first
             if len(picked) >= ANGLE_MAX:
                 break
