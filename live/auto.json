@@ -1,6 +1,6 @@
 {
- "checked": "2026-10-31T01:24:34.332707+00:00",
- "checkedLabel": "Fri 9:24 p.m.",
+ "checked": "2026-10-31T01:28:45.534087+00:00",
+ "checkedLabel": "Fri 9:28 p.m.",
  "stories": [
   {
    "key": "top",
@@ -277,7 +277,7 @@
  "blogs": [
   {
    "url": "https://www.thestar.com/news/gta/toronto-election-results-live/article_3ec1c84c-3d92-4440-b764-ac02c6602fb0.html",
-   "updated": "2026-10-30T23:56:03+00:00",
+   "updated": "2026-10-31T00:30:22+00:00",
    "ended": true
   },
   {
@@ -318,10 +318,10 @@
    "theme": "Canada and the U.S."
   },
   {
-   "score": 30,
+   "score": 27,
    "title": "Carney says, unequivocally, Canada seeking to become the EU's 1st associate member",
    "url": "https://www.cbc.ca/news/politics/european-union-canada-associate-member-von-der-leyen-9.7401989",
-   "outlets": 17,
+   "outlets": 12,
    "why": [
     "National Newswatch #7",
     "CBC News front #1",
@@ -592,13 +592,13 @@
     "key": "auto-f75e0ced",
     "words": [
      "associate",
-     "european",
      "alliance",
+     "european",
      "future",
      "union",
      "eu"
     ],
-    "score": 30,
+    "score": 27,
     "outlets": 12,
     "carriers": 18,
     "tag": "Breaking",
@@ -936,7 +936,7 @@
     "theme": "Canada and the EU",
     "canada": "canadian",
     "canus": false,
-    "popular": 0,
+    "popular": 3,
     "us_election": false,
     "weight": 60,
     "videos": [
@@ -1322,10 +1322,10 @@
     "key": "auto-9c533e84",
     "words": [
      "alaskan",
-     "senate",
      "alaska",
-     "dan",
+     "senate",
      "gop",
+     "dan",
      "doj"
     ],
     "score": 17,
@@ -1603,9 +1603,9 @@
     "rank": 1,
     "live": "",
     "weight": 60,
-    "score": 30,
+    "score": 27,
     "independent": 12,
-    "most_read": 0,
+    "most_read": 3,
     "canada": "canadian",
     "theme": "Canada and the EU",
     "top": true,
@@ -1658,24 +1658,9 @@
     "carriers": 7
    },
    {
-    "title": "Gen Z protests reach Germany as over 160,000 expected at Halloween rallies",
-    "url": "https://www.ctvnews.ca/world/article/gen-z-protests-reach-germany-as-over-160000-expected-at-halloween-rallies/",
-    "rank": 5,
-    "live": "",
-    "weight": 19.0,
-    "score": 8,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "tie",
-    "theme": "",
-    "top": false,
-    "rule": "From abroad, tied to Canada",
-    "carriers": 4
-   },
-   {
     "title": "\"Face the Nation with Margaret Brennan\" guests for Nov. 1, 2026",
     "url": "https://www.cbsnews.com/news/face-the-nation-guests-for-11-01-2026/",
-    "rank": 6,
+    "rank": 5,
     "live": "",
     "weight": 18.5,
     "score": 8,
@@ -1686,6 +1671,21 @@
     "top": false,
     "rule": "From abroad, tied to Canada",
     "carriers": 3
+   },
+   {
+    "title": "Gen Z protests reach Germany as over 160,000 expected at Halloween rallies",
+    "url": "https://www.ctvnews.ca/world/article/gen-z-protests-reach-germany-as-over-160000-expected-at-halloween-rallies/",
+    "rank": 6,
+    "live": "",
+    "weight": 17.0,
+    "score": 6,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "tie",
+    "theme": "",
+    "top": false,
+    "rule": "From abroad, tied to Canada",
+    "carriers": 4
    },
    {
     "title": "Incoming councillor calls for safety improvements on Main Street",
@@ -1755,6 +1755,16 @@
    {
     "title": "Poilievre’s Brantford candidate choice prompts Conservative departures",
     "score": 7,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Family of real estate CEO wounded in Toronto home invasion, officials say",
+    "score": 7,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Decision clearing path for Russia to join world juniors in Alberta is 'very unwelcome,' minister says",
+    "score": 6,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
   ],
@@ -1952,22 +1962,141 @@
     "weight": 24.5,
     "videos": [
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=53KFoO6z3MA",
-      "title": "Danielle Smith under fire after leaked texts point to collusion with separatist leader Jeffrey Rath",
-      "img": "https://i.ytimg.com/vi/53KFoO6z3MA/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
       "net": "CityNews",
       "url": "https://www.youtube.com/watch?v=GZ8VOv3vs3Q",
       "title": "Alberta separatist leader Jeffrey Rath kicked out of UCP, refunded AGM ticket",
       "img": "https://i.ytimg.com/vi/GZ8VOv3vs3Q/hqdefault.jpg",
       "rec": false,
       "up": ""
+     },
+     {
+      "net": "Global News",
+      "url": "https://www.youtube.com/watch?v=53KFoO6z3MA",
+      "title": "Danielle Smith under fire after leaked texts point to collusion with separatist leader Jeffrey Rath",
+      "img": "https://i.ytimg.com/vi/53KFoO6z3MA/hqdefault.jpg",
+      "rec": false,
+      "up": ""
      }
     ]
+   },
+   {
+    "key": "auto-74f7113f",
+    "words": [
+     "nation"
+    ],
+    "score": 8,
+    "outlets": 3,
+    "carriers": 3,
+    "tag": "Developing",
+    "title": "\"Face the Nation with Margaret Brennan\" guests for Nov. 1, 2026",
+    "url": "https://www.cbsnews.com/news/face-the-nation-guests-for-11-01-2026/",
+    "outlet": "CBS News",
+    "t": "Fri 8:51 p.m.",
+    "iso": "2026-10-31T00:51:24+00:00",
+    "summary": "This week's guests include Treasury Secretary Scott Bessent, independent Sen. Bernie Sanders and Democratic Gov. Josh Shapiro of Pennsylvania.",
+    "first": {
+     "outlet": "CBC News",
+     "url": "https://www.cbc.ca/news/canada/toronto/live-nation-relocates-backstreet-boys-fans-to-cheaper-obstructed-seats-9.7403274",
+     "t": "Fri 7:24 p.m.",
+     "title": "Some Backstreet Boys fans consider refund after Live Nation relocates them to cheaper, still-obstructed seats"
+    },
+    "newest": "2026-10-31T00:51:24+00:00",
+    "photo": {
+     "src": "live/img/auto-74f7113f-6006b99988.jpg",
+     "orig": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/10/30/7edf4947-2780-4406-a16c-f51f635836da/thumbnail/1200x630g1/eac61b528423869a094ede014b9a355f/gettyimages-2298479374.jpg",
+     "caption": "Photo — via CBS News",
+     "alt": "\"Face the Nation with Margaret Brennan\" guests for Nov. 1, 2026",
+     "outlet": "CBS News",
+     "url": "https://www.cbsnews.com/news/face-the-nation-guests-for-11-01-2026/"
+    },
+    "independent": 3,
+    "reports": [
+     {
+      "t": "Fri 8:51 p.m.",
+      "iso": "2026-10-31T00:51:24+00:00",
+      "outlet": "CBS News",
+      "title": "\"Face the Nation with Margaret Brennan\" guests for Nov. 1, 2026",
+      "url": "https://www.cbsnews.com/news/face-the-nation-guests-for-11-01-2026/",
+      "desc": "This week's guests include Treasury Secretary Scott Bessent, independent Sen. Bernie Sanders and Democratic Gov. Josh Shapiro of Pennsylvania."
+     },
+     {
+      "t": "Fri 8:23 p.m.",
+      "iso": "2026-10-31T00:23:45+00:00",
+      "outlet": "CTV News",
+      "title": "‘Game changer’: Housing plan coming to First Nation in Alberta",
+      "url": "https://www.ctvnews.ca/edmonton/article/game-changer-housing-plan-coming-to-first-nation-in-alberta/",
+      "desc": "A First Nation southwest of Edmonton is looking to address its residence wait list with the announcement of what officials call a “major housing development” this year."
+     },
+     {
+      "t": "Fri 7:24 p.m.",
+      "iso": "2026-10-30T23:24:39.841000+00:00",
+      "outlet": "CBC News",
+      "title": "Some Backstreet Boys fans consider refund after Live Nation relocates them to cheaper, still-obstructed seats",
+      "url": "https://www.cbc.ca/news/canada/toronto/live-nation-relocates-backstreet-boys-fans-to-cheaper-obstructed-seats-9.7403274",
+      "desc": "Some Backstreet Boys fans attending one of the group’s Toronto shows aren’t happy with their seat change after Live Nation relocated fans who unknowingly bought tickets that had an obstructed view."
+     }
+    ],
+    "sources": [
+     {
+      "t": "Fri 8:51 p.m.",
+      "primary": false,
+      "outlet": "CBS News",
+      "title": "\"Face the Nation with Margaret Brennan\" guests for Nov. 1, 2026",
+      "url": "https://www.cbsnews.com/news/face-the-nation-guests-for-11-01-2026/",
+      "desc": "This week's guests include Treasury Secretary Scott Bessent, independent Sen. Bernie Sanders and Democratic Gov. Josh Shapiro of Pennsylvania.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "CBS News",
+        "src": "CBS News",
+        "byline": ""
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Fri 8:23 p.m.",
+      "primary": false,
+      "outlet": "CTV News",
+      "title": "‘Game changer’: Housing plan coming to First Nation in Alberta",
+      "url": "https://www.ctvnews.ca/edmonton/article/game-changer-housing-plan-coming-to-first-nation-in-alberta/",
+      "desc": "A First Nation southwest of Edmonton is looking to address its residence wait list with the announcement of what officials call a “major housing development” this year.",
+      "wire": "The Canadian Press",
+      "by": [
+       {
+        "outlet": "CTV News",
+        "src": "The Canadian Press",
+        "byline": "n\" \"Kimberley Johnson\" \"Joshua Marano\" \"The Canadian Press\" \"Denise Roberts\" \""
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Fri 7:24 p.m.",
+      "primary": false,
+      "outlet": "CBC News",
+      "title": "Some Backstreet Boys fans consider refund after Live Nation relocates them to cheaper, still-obstructed seats",
+      "url": "https://www.cbc.ca/news/canada/toronto/live-nation-relocates-backstreet-boys-fans-to-cheaper-obstructed-seats-9.7403274",
+      "desc": "Some Backstreet Boys fans attending one of the group’s Toronto shows aren’t happy with their seat change after Live Nation relocated fans who unknowingly bought tickets that had an obstructed view.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "CBC News",
+        "src": "CBC",
+        "byline": "own staff: Journalist"
+       }
+      ],
+      "copies": []
+     }
+    ],
+    "replaces_top": false,
+    "events": [],
+    "theme": "",
+    "canada": "general",
+    "canus": false,
+    "popular": 0,
+    "us_election": false,
+    "weight": 18.5
    },
    {
     "key": "auto-2f5e7303",
@@ -1975,7 +2104,7 @@
      "halloween",
      "germany"
     ],
-    "score": 8,
+    "score": 6,
     "outlets": 3,
     "carriers": 4,
     "tag": "Developing",
@@ -2105,126 +2234,7 @@
     "canus": false,
     "popular": 0,
     "us_election": false,
-    "weight": 19.0
-   },
-   {
-    "key": "auto-74f7113f",
-    "words": [
-     "nation"
-    ],
-    "score": 8,
-    "outlets": 3,
-    "carriers": 3,
-    "tag": "Developing",
-    "title": "\"Face the Nation with Margaret Brennan\" guests for Nov. 1, 2026",
-    "url": "https://www.cbsnews.com/news/face-the-nation-guests-for-11-01-2026/",
-    "outlet": "CBS News",
-    "t": "Fri 8:51 p.m.",
-    "iso": "2026-10-31T00:51:24+00:00",
-    "summary": "This week's guests include Treasury Secretary Scott Bessent, independent Sen. Bernie Sanders and Democratic Gov. Josh Shapiro of Pennsylvania.",
-    "first": {
-     "outlet": "CBC News",
-     "url": "https://www.cbc.ca/news/canada/toronto/live-nation-relocates-backstreet-boys-fans-to-cheaper-obstructed-seats-9.7403274",
-     "t": "Fri 7:24 p.m.",
-     "title": "Some Backstreet Boys fans consider refund after Live Nation relocates them to cheaper, still-obstructed seats"
-    },
-    "newest": "2026-10-31T00:51:24+00:00",
-    "photo": {
-     "src": "live/img/auto-74f7113f-6006b99988.jpg",
-     "orig": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/10/30/7edf4947-2780-4406-a16c-f51f635836da/thumbnail/1200x630g1/eac61b528423869a094ede014b9a355f/gettyimages-2298479374.jpg",
-     "caption": "Photo — via CBS News",
-     "alt": "\"Face the Nation with Margaret Brennan\" guests for Nov. 1, 2026",
-     "outlet": "CBS News",
-     "url": "https://www.cbsnews.com/news/face-the-nation-guests-for-11-01-2026/"
-    },
-    "independent": 3,
-    "reports": [
-     {
-      "t": "Fri 8:51 p.m.",
-      "iso": "2026-10-31T00:51:24+00:00",
-      "outlet": "CBS News",
-      "title": "\"Face the Nation with Margaret Brennan\" guests for Nov. 1, 2026",
-      "url": "https://www.cbsnews.com/news/face-the-nation-guests-for-11-01-2026/",
-      "desc": "This week's guests include Treasury Secretary Scott Bessent, independent Sen. Bernie Sanders and Democratic Gov. Josh Shapiro of Pennsylvania."
-     },
-     {
-      "t": "Fri 8:23 p.m.",
-      "iso": "2026-10-31T00:23:45+00:00",
-      "outlet": "CTV News",
-      "title": "‘Game changer’: Housing plan coming to First Nation in Alberta",
-      "url": "https://www.ctvnews.ca/edmonton/article/game-changer-housing-plan-coming-to-first-nation-in-alberta/",
-      "desc": "A First Nation southwest of Edmonton is looking to address its residence wait list with the announcement of what officials call a “major housing development” this year."
-     },
-     {
-      "t": "Fri 7:24 p.m.",
-      "iso": "2026-10-30T23:24:39.841000+00:00",
-      "outlet": "CBC News",
-      "title": "Some Backstreet Boys fans consider refund after Live Nation relocates them to cheaper, still-obstructed seats",
-      "url": "https://www.cbc.ca/news/canada/toronto/live-nation-relocates-backstreet-boys-fans-to-cheaper-obstructed-seats-9.7403274",
-      "desc": "Some Backstreet Boys fans attending one of the group’s Toronto shows aren’t happy with their seat change after Live Nation relocated fans who unknowingly bought tickets that had an obstructed view."
-     }
-    ],
-    "sources": [
-     {
-      "t": "Fri 8:51 p.m.",
-      "primary": false,
-      "outlet": "CBS News",
-      "title": "\"Face the Nation with Margaret Brennan\" guests for Nov. 1, 2026",
-      "url": "https://www.cbsnews.com/news/face-the-nation-guests-for-11-01-2026/",
-      "desc": "This week's guests include Treasury Secretary Scott Bessent, independent Sen. Bernie Sanders and Democratic Gov. Josh Shapiro of Pennsylvania.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "CBS News",
-        "src": "CBS News",
-        "byline": ""
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Fri 8:23 p.m.",
-      "primary": false,
-      "outlet": "CTV News",
-      "title": "‘Game changer’: Housing plan coming to First Nation in Alberta",
-      "url": "https://www.ctvnews.ca/edmonton/article/game-changer-housing-plan-coming-to-first-nation-in-alberta/",
-      "desc": "A First Nation southwest of Edmonton is looking to address its residence wait list with the announcement of what officials call a “major housing development” this year.",
-      "wire": "The Canadian Press",
-      "by": [
-       {
-        "outlet": "CTV News",
-        "src": "The Canadian Press",
-        "byline": "n\" \"Kimberley Johnson\" \"Joshua Marano\" \"The Canadian Press\" \"Denise Roberts\" \""
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Fri 7:24 p.m.",
-      "primary": false,
-      "outlet": "CBC News",
-      "title": "Some Backstreet Boys fans consider refund after Live Nation relocates them to cheaper, still-obstructed seats",
-      "url": "https://www.cbc.ca/news/canada/toronto/live-nation-relocates-backstreet-boys-fans-to-cheaper-obstructed-seats-9.7403274",
-      "desc": "Some Backstreet Boys fans attending one of the group’s Toronto shows aren’t happy with their seat change after Live Nation relocated fans who unknowingly bought tickets that had an obstructed view.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "CBC News",
-        "src": "CBC",
-        "byline": "own staff: Journalist"
-       }
-      ],
-      "copies": []
-     }
-    ],
-    "replaces_top": false,
-    "events": [],
-    "theme": "",
-    "canada": "general",
-    "canus": false,
-    "popular": 0,
-    "us_election": false,
-    "weight": 18.5
+    "weight": 17.0
    }
   ],
   "passed_over": [
@@ -3055,6 +3065,32 @@
    "auto": true
   },
   {
+   "inst": "Frontier Centre for Public Policy",
+   "place": "Winnipeg",
+   "kind": "Publication",
+   "by": "",
+   "date": "Oct. 29, 2026",
+   "d": "2026-10-29",
+   "pic": "chart",
+   "u": "https://frontiercentre.org/2026/10/29/frontier-centre-for-public-policy-welcomes-calls-to-abolish-indian-act/?utm_source=rss&utm_medium=rss&utm_campaign=frontier-centre-for-public-policy-welcomes-calls-to-abolish-indian-act",
+   "t": "Frontier Centre for Public Policy welcomes calls to abolish Indian Act",
+   "g": "",
+   "auto": true
+  },
+  {
+   "inst": "Frontier Centre for Public Policy",
+   "place": "Winnipeg",
+   "kind": "Publication",
+   "by": "",
+   "date": "Oct. 29, 2026",
+   "d": "2026-10-29",
+   "pic": "chart",
+   "u": "https://frontiercentre.org/2026/10/29/ending-the-indian-act-frontiers-twelve-essential-works/?utm_source=rss&utm_medium=rss&utm_campaign=ending-the-indian-act-frontiers-twelve-essential-works",
+   "t": "Ending the Indian Act: Frontier’s Twelve Essential Works",
+   "g": "On October 26, 2026, at a meeting in Ottawa with Prime Minister Mark Carney, the premiers and chiefs of the Assembly of First Nations, Manitoba Premier Wab Kinew declared that it is time to abolish the Indian Act, which he described as race-based, racist and patriarchal legislation. The Prime Minister said he is open…",
+   "auto": true
+  },
+  {
    "inst": "Heritage Foundation",
    "place": "Washington",
    "kind": "Publication",
@@ -3066,42 +3102,9 @@
    "t": "Crime Is Down: Why Leadership Matters",
    "g": "For years, Americans were told by the left that rising crime was either exaggerated, the result of poverty, caused by COVID, or simply the unavoidable cost of modern life. None of those assertions is true. Victims, police officers, prosecutors, and families living in high-crime neighborhoods knew better. They…",
    "auto": true
-  },
-  {
-   "inst": "Heritage Foundation",
-   "place": "Washington",
-   "kind": "Publication",
-   "by": "",
-   "date": "Oct. 29, 2026",
-   "d": "2026-10-29",
-   "pic": "chart",
-   "u": "https://www.heritage.org/progressivism/commentary/no-mamdani-socialism-does-not-increase-affordability",
-   "t": "No, Mamdani, Socialism Does Not Increase Affordability",
-   "g": "Of the many inane comments that socialists have made this year, the one that democracy is “the building block of socialism” might be the most absurd. Who made the comment? You guessed it: New York City’s boy genius, Mayor Zohran Mamdani. In a recent episode of “This Past Weekend,” Mr. Mamdani discussed socialism’s…",
-   "auto": true
-  },
-  {
-   "inst": "Lowy Institute",
-   "place": "Sydney",
-   "kind": "Publication",
-   "by": "",
-   "date": "Oct. 29, 2026",
-   "d": "2026-10-29",
-   "pic": "chart",
-   "u": "https://www.lowyinstitute.org/the-interpreter/almost-a-million-extra-mines-on-the-dmz-and-it-s-not-about-war",
-   "t": "Almost a million extra mines on the DMZ – and it’s not about war",
-   "g": "North Korea’s buildup along the DMZ is designed to entrench sovereignty, not launch an attack.",
-   "auto": true
   }
  ],
  "eds": [
-  [
-   "Toronto Star",
-   "Opinion",
-   "Theo Moudakis on Canada's new role in the E.U.",
-   "https://www.thestar.com/opinion/editorial-cartoons/theo-moudakis-on-canada-s-new-role-in-the-e-u/article_693b9be6-e44d-41ad-a1be-927d53ea14eb.html",
-   "2026-10-30T10:00:00+00:00"
-  ],
   [
    "National Post",
    "Column · Terry Newman",
@@ -3164,6 +3167,13 @@
    "California transplants in Texas are voting Democrat, and they see no irony in it",
    "https://www.foxnews.com/opinion/david-marcus-california-transplants-texas-voting-democrat-see-no-irony",
    "2026-10-30T23:31:35+00:00"
+  ],
+  [
+   "The Wall Street Journal (subscribers)",
+   "Opinion",
+   "When Jews Ruled the Basketball Court",
+   "https://www.wsj.com/opinion/when-jews-ruled-the-basketball-court-206270e3?mod=rss_opinion",
+   "2026-10-30T21:46:00+00:00"
   ]
  ],
  "canus": {
@@ -3218,11 +3228,11 @@
     "url": "https://www.nationalobserver.com/2026/10/29/news/ontario-projects-record-169-billion-deficit-blames-us-tariffs"
    },
    {
-    "t": "Thu 1:00 p.m.",
-    "iso": "2026-10-29T17:00:00+00:00",
-    "outlet": "Toronto Star",
-    "title": "Ontario deficit hits record $16.9B as Trump tariffs batter economy",
-    "url": "https://www.thestar.com/politics/provincial/ontario-deficit-hits-record-16-9b-as-trump-tariffs-batter-economy/article_888dcdb2-a46e-4677-9331-0c0f2e7d2d17.html"
+    "t": "Wed 12:39 p.m.",
+    "iso": "2026-10-28T16:39:32+00:00",
+    "outlet": "CBC News",
+    "title": "Canada not in a 'position right now' to agree to U.S. trade deal, Carney says",
+    "url": "https://www.cbc.ca/news/politics/carney-us-trade-9.7399627?cmp=rss"
    }
   ],
   "usmedia": [
@@ -3396,7 +3406,6 @@
   "sites": [
    "Toronto Star",
    "Winnipeg Free Press",
-   "The Tyee",
    "Global News",
    "Nunatsiaq News",
    "Daily Hive"
@@ -3421,17 +3430,6 @@
       "Winnipeg Free Press",
       1,
       "https://www.winnipegfreepress.com/featured/2026/10/28/winnipeg-election-results-school-trustees"
-     ]
-    ]
-   },
-   {
-    "h": "Elizabeth Holmes Reminds Me of Danielle Smith. It’s Eerie",
-    "u": "https://thetyee.ca/Culture/2026/10/30/Elizabeth-Holmes-Reminds-Me-of-Danielle-Smith/",
-    "o": [
-     [
-      "The Tyee",
-      1,
-      "https://thetyee.ca/Culture/2026/10/30/Elizabeth-Holmes-Reminds-Me-of-Danielle-Smith/"
      ]
     ]
    },
@@ -3480,17 +3478,6 @@
     ]
    },
    {
-    "h": "Inside the NDP’s Epic Snap Election Defeat",
-    "u": "https://thetyee.ca/News/2026/10/30/Inside-NDP-Snap-Election-Defeat/",
-    "o": [
-     [
-      "The Tyee",
-      2,
-      "https://thetyee.ca/News/2026/10/30/Inside-NDP-Snap-Election-Defeat/"
-     ]
-    ]
-   },
-   {
     "h": "Canada needs a ‘good mix’ of new tech like drones, AI: NATO commander",
     "u": "https://globalnews.ca/news/12127659/canadian-military-drone-technology-nato/",
     "o": [
@@ -3509,6 +3496,28 @@
       "Nunatsiaq News",
       2,
       "https://nunatsiaq.com/stories/article/coast-guard-prepares-to-survey-arctic-using-israeli-made-drone/"
+     ]
+    ]
+   },
+   {
+    "h": "New Korean Tim Hortons is way more Canadian than your local Tims",
+    "u": "https://dailyhive.com/vancouver/tim-hortons-korea-canada-menu",
+    "o": [
+     [
+      "Daily Hive",
+      2,
+      "https://dailyhive.com/vancouver/tim-hortons-korea-canada-menu"
+     ]
+    ]
+   },
+   {
+    "h": "Toronto CEO speaks out after he and daughters shot in ‘horrific and violent’ Bridle Path home invasion",
+    "u": "https://www.thestar.com/news/gta/police-still-searching-for-suspects-in-violent-bridle-path-home-invasion-that-left-4-family-members-injured/article_dd829678-fa6f-4c6a-a70e-1306f9948086.html",
+    "o": [
+     [
+      "Toronto Star",
+      3,
+      "https://www.thestar.com/news/gta/police-still-searching-for-suspects-in-violent-bridle-path-home-invasion-that-left-4-family-members-injured/article_dd829678-fa6f-4c6a-a70e-1306f9948086.html"
      ]
     ]
    }
@@ -3631,7 +3640,7 @@
     "url": "https://www.youtube.com/watch?v=zFhsBARQx4o",
     "img": "https://i.ytimg.com/vi/zFhsBARQx4o/hqdefault.jpg",
     "story": "Trump speaks at Florida midterm rally as Election Day nears",
-    "watching": "1K",
+    "watching": "1.1K",
     "also": [
      {
       "net": "Fox News",
@@ -3650,7 +3659,7 @@
     "url": "https://www.youtube.com/watch?v=4TgKwV9GsEQ",
     "img": "https://i.ytimg.com/vi/4TgKwV9GsEQ/hqdefault.jpg",
     "story": "With four days to go, Trump campaigns in FL for Republican candidates",
-    "watching": "326"
+    "watching": "288"
    }
   ],
   "upcoming": [
@@ -3684,7 +3693,7 @@
    },
    {
     "net": "CNN",
-    "url": "https://www.youtube.com/watch?v=GotlA1KKWoo"
+    "url": "https://www.youtube.com/watch?v=yD2DZt0lq24"
    },
    {
     "net": "Bloomberg",
@@ -3715,7 +3724,7 @@
    "story": "Iran war live: Oil tankers hit in Hormuz; Trump says conflict will end",
    "title": "Iran war live: Oil tankers hit in Hormuz; Trump says conflict will end soon",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/31/iran-war-live-oil-tankers-hit-in-hormuz-trump-says-conflict-will-end-soon?traffic_source=rss",
-   "updated": "2026-10-31T01:21:01+00:00",
+   "updated": "2026-10-31T01:30:00+00:00",
    "ended": false,
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-10-30T230320Z_1495036221_RC2YDOASHI7R_RTRMADP_3_IRAN-CRISIS-SHIPPING-HORMUZ-1793404633.jpg?resize=1920%2C1139"
   }
@@ -3844,14 +3853,6 @@
      "title": "Carney says Canada is working to become an 'associate member' as he hosts EU leaders in Montreal",
      "url": "https://www.cbc.ca/news/politics/european-union-canada-associate-member-von-der-leyen-9.7400922?cmp=rss",
      "tie": "Canada and the EU"
-    },
-    {
-     "t": "Thu 10:15 a.m.",
-     "iso": "2026-10-29T14:15:00+00:00",
-     "outlet": "Toronto Star",
-     "title": "Mark Carney embraces EU's 'associate membership' label for Canada",
-     "url": "https://www.thestar.com/politics/federal/eu-chief-von-der-leyen-pushes-canada-as-associate-member/article_6081acb6-1567-4ea2-8dff-d7fdf04ddce8.html",
-     "tie": "Canada and the EU"
     }
    ],
    "views": []
@@ -3926,7 +3927,7 @@
   "https://www.aljazeera.com/news/liveblog/2026/10/31/iran-war-live-oil-tankers-hit-in-hormuz-trump-says-conflict-will-end-soon?traffic_source=rss": {
    "story": "Iran war live: Oil tankers hit in Hormuz; Trump says conflict will end soon",
    "us": true,
-   "specific": 3,
+   "specific": 2,
    "stories": [
     {
      "t": "Fri 8:25 p.m.",
@@ -3947,15 +3948,6 @@
      "tie": ""
     },
     {
-     "t": "Thu 1:00 p.m.",
-     "iso": "2026-10-29T17:00:00+00:00",
-     "outlet": "Toronto Star",
-     "title": "Ontario deficit hits record $16.9B as Trump tariffs batter economy",
-     "url": "https://www.thestar.com/politics/provincial/ontario-deficit-hits-record-16-9b-as-trump-tariffs-batter-economy/article_888dcdb2-a46e-4677-9331-0c0f2e7d2d17.html",
-     "ca": true,
-     "tie": ""
-    },
-    {
      "t": "Fri 12:41 p.m.",
      "iso": "2026-10-30T16:41:57+00:00",
      "outlet": "CP24",
@@ -3971,6 +3963,15 @@
      "title": "Ontario deficit grows to $16.9 billion as trade war with U.S. drags on",
      "url": "https://www.bnnbloomberg.ca/business/politics/2026/10/29/ontario-deficit-grows-to-169-billion-as-trade-war-with-us-drags-on/",
      "ca": true,
+     "tie": "Canada and the U.S."
+    },
+    {
+     "t": "Thu 4:19 p.m.",
+     "iso": "2026-10-29T20:19:52+00:00",
+     "outlet": "Canada's National Observer",
+     "title": "Ontario projects record $16.9-billion deficit, blames US tariffs",
+     "url": "https://www.nationalobserver.com/2026/10/29/news/ontario-projects-record-169-billion-deficit-blames-us-tariffs",
+     "ca": false,
      "tie": "Canada and the U.S."
     }
    ],
@@ -4034,7 +4035,7 @@
   "https://www.youtube.com/watch?v=4TgKwV9GsEQ": {
    "story": "With four days to go, Trump campaigns in FL for Republican candidates",
    "us": true,
-   "specific": 4,
+   "specific": 3,
    "stories": [
     {
      "t": "Fri 8:25 p.m.",
@@ -4064,20 +4065,20 @@
      "tie": ""
     },
     {
-     "t": "Thu 1:00 p.m.",
-     "iso": "2026-10-29T17:00:00+00:00",
-     "outlet": "Toronto Star",
-     "title": "Ontario deficit hits record $16.9B as Trump tariffs batter economy",
-     "url": "https://www.thestar.com/politics/provincial/ontario-deficit-hits-record-16-9b-as-trump-tariffs-batter-economy/article_888dcdb2-a46e-4677-9331-0c0f2e7d2d17.html",
-     "ca": true,
-     "tie": ""
-    },
-    {
      "t": "Fri 12:41 p.m.",
      "iso": "2026-10-30T16:41:57+00:00",
      "outlet": "CP24",
      "title": "U.S. midterms 101: Who holds the cards in the Canada-U.S. trade war?",
      "url": "https://www.cp24.com/news/canada/2026/10/30/us-midterms-101-who-holds-the-cards-in-the-canada-us-trade-war/",
+     "ca": true,
+     "tie": "Canada and the U.S."
+    },
+    {
+     "t": "Thu 5:26 p.m.",
+     "iso": "2026-10-29T21:26:46+00:00",
+     "outlet": "BNN Bloomberg",
+     "title": "Ontario deficit grows to $16.9 billion as trade war with U.S. drags on",
+     "url": "https://www.bnnbloomberg.ca/business/politics/2026/10/29/ontario-deficit-grows-to-169-billion-as-trade-war-with-us-drags-on/",
      "ca": true,
      "tie": "Canada and the U.S."
     }
@@ -4187,7 +4188,7 @@
   "https://www.npr.org/2026/10/30/nx-s1-6022578/minors-pregnant-migrant-texas-trump": {
    "story": "Despite concerns, the Trump administration still sends pregnant migrant minors to south Texas",
    "us": true,
-   "specific": 3,
+   "specific": 2,
    "stories": [
     {
      "t": "Fri 8:25 p.m.",
@@ -4208,15 +4209,6 @@
      "tie": ""
     },
     {
-     "t": "Thu 1:00 p.m.",
-     "iso": "2026-10-29T17:00:00+00:00",
-     "outlet": "Toronto Star",
-     "title": "Ontario deficit hits record $16.9B as Trump tariffs batter economy",
-     "url": "https://www.thestar.com/politics/provincial/ontario-deficit-hits-record-16-9b-as-trump-tariffs-batter-economy/article_888dcdb2-a46e-4677-9331-0c0f2e7d2d17.html",
-     "ca": true,
-     "tie": ""
-    },
-    {
      "t": "Fri 12:41 p.m.",
      "iso": "2026-10-30T16:41:57+00:00",
      "outlet": "CP24",
@@ -4232,6 +4224,15 @@
      "title": "Ontario deficit grows to $16.9 billion as trade war with U.S. drags on",
      "url": "https://www.bnnbloomberg.ca/business/politics/2026/10/29/ontario-deficit-grows-to-169-billion-as-trade-war-with-us-drags-on/",
      "ca": true,
+     "tie": "Canada and the U.S."
+    },
+    {
+     "t": "Thu 4:19 p.m.",
+     "iso": "2026-10-29T20:19:52+00:00",
+     "outlet": "Canada's National Observer",
+     "title": "Ontario projects record $16.9-billion deficit, blames US tariffs",
+     "url": "https://www.nationalobserver.com/2026/10/29/news/ontario-projects-record-169-billion-deficit-blames-us-tariffs",
+     "ca": false,
      "tie": "Canada and the U.S."
     }
    ],
@@ -4978,7 +4979,6 @@
   "c9v26lW7-j4",
   "ldElU-Q5Qyo",
   "nfy6JJILPJI",
-  "t_HBrWb84eY",
-  "wV8hRa0ARJ8"
+  "t_HBrWb84eY"
  ]
 }
