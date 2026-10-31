@@ -1,6 +1,6 @@
 {
- "checked": "2026-10-31T04:47:13.588115+00:00",
- "checkedLabel": "Sat 12:47 a.m.",
+ "checked": "2026-10-31T04:57:13.516933+00:00",
+ "checkedLabel": "Sat 12:57 a.m.",
  "stories": [
   {
    "key": "top",
@@ -48,6 +48,15 @@
   }
  ],
  "wire": [
+  [
+   "Sat 12:41 a.m.",
+   "World",
+   "US jails two Chinese nationals for spying",
+   "Al Jazeera",
+   "https://www.aljazeera.com/news/2026/10/31/us-jails-two-chinese-nationals-for-spying?traffic_source=rss",
+   "2026-10-31T04:41:32+00:00",
+   1
+  ],
   [
    "Sat 12:32 a.m.",
    "World",
@@ -146,15 +155,6 @@
    "https://www.aljazeera.com/video/newsfeed/2026/10/31/iran-says-four-tankers-on-fire-after-striking-mines-in-hormuz?traffic_source=rss",
    "2026-10-31T03:55:48+00:00",
    1
-  ],
-  [
-   "Fri 11:46 p.m.",
-   "Latest",
-   "Scott Clifton and Tamara Tunie earn lead acting Daytime Emmys. 'General Hospital' wins again",
-   "Times Colonist",
-   "https://www.timescolonist.com/the-mix/scott-clifton-and-tamara-tunie-earn-lead-acting-daytime-emmys-general-hospital-wins-again-12963754",
-   "2026-10-31T03:46:57+00:00",
-   2
   ],
   [
    "Fri 11:42 p.m.",
@@ -316,14 +316,6 @@
    "theme": "Canada and the U.S."
   },
   {
-   "score": 17,
-   "title": "FBI visits Dan J. Sullivan donor in candidate’s home town as Alaska Senate inquiry widens",
-   "url": "https://www.winnipegfreepress.com/world/2026/10/30/fbi-visits-dan-j-sullivan-donor-in-candidates-home-town-as-alaska-senate-inquiry-widens",
-   "outlets": 21,
-   "why": [],
-   "theme": ""
-  },
-  {
    "score": 15,
    "title": "Carney says, unequivocally, Canada seeking to become the EU's 1st associate member",
    "url": "https://www.cbc.ca/news/politics/european-union-canada-associate-member-von-der-leyen-9.7401989",
@@ -335,6 +327,14 @@
     "National Newswatch #17"
    ],
    "theme": "Canada and the EU"
+  },
+  {
+   "score": 13,
+   "title": "FBI visits Dan J. Sullivan donor in candidate’s home town as Alaska Senate inquiry widens",
+   "url": "https://www.winnipegfreepress.com/world/2026/10/30/fbi-visits-dan-j-sullivan-donor-in-candidates-home-town-as-alaska-senate-inquiry-widens",
+   "outlets": 11,
+   "why": [],
+   "theme": ""
   },
   {
    "score": 11,
@@ -484,18 +484,421 @@
     "weight": 9.5
    },
    {
+    "key": "auto-5818c324",
+    "words": [
+     "justice",
+     "alaska",
+     "senate",
+     "dan"
+    ],
+    "score": 13,
+    "outlets": 4,
+    "carriers": 7,
+    "tag": "Breaking",
+    "title": "FBI visits Dan J. Sullivan donor in candidate’s home town as Alaska Senate inquiry widens",
+    "url": "https://www.winnipegfreepress.com/world/2026/10/30/fbi-visits-dan-j-sullivan-donor-in-candidates-home-town-as-alaska-senate-inquiry-widens",
+    "outlet": "The Canadian Press (via Winnipeg Free Press)",
+    "t": "Sat 12:19 a.m.",
+    "iso": "2026-10-31T04:19:48+00:00",
+    "summary": "ANCHORAGE, Alaska (AP) — The FBI on Friday began reaching out to donors of Dan J. Sullivan asking about potential deception, as federal authorities ramped up their investigation over the U.S. Senate candidate in Alaska who shares a name with the Republican incumbent.",
+    "first": {
+     "outlet": "The Hill",
+     "url": "https://thehill.com/homenews/campaign/6185743-rnc-chair-predicts-midterm-wins/",
+     "t": "Fri 7:42 p.m.",
+     "title": "RNC chair predicts GOP Senate wins in Alaska, Texas, 3 other battlegrounds"
+    },
+    "newest": "2026-10-31T04:19:48+00:00",
+    "photo": {
+     "src": "live/img/auto-5818c324-5dd66deefe.jpg",
+     "orig": "https://www.ctvnews.ca/resizer/v2/C56M46YWGPP26H6NEP455BUM64.jpg?smart=true&auth=3aa21de9834dad4ef8452d30338e61bb46dc89f42061e7373fd6819c1e2dbc2e&width=1200&height=630",
+     "caption": "A sample election ballot is displayed in Anchorage, Alaska, on Friday, Oct. 23, 2026. (AP Photo/Haven Daley). — via CTV News",
+     "alt": "A sample election ballot is displayed in Anchorage, Alaska, on Friday, Oct. 23, 2026. (AP Photo/Haven Daley)",
+     "outlet": "CTV News",
+     "url": "https://www.ctvnews.ca/world/article/criminal-probe-underway-in-alaskan-senate-race-controversy/"
+    },
+    "independent": 4,
+    "reports": [
+     {
+      "t": "Sat 12:19 a.m.",
+      "iso": "2026-10-31T04:19:48+00:00",
+      "outlet": "The Canadian Press (via Winnipeg Free Press)",
+      "title": "FBI visits Dan J. Sullivan donor in candidate’s home town as Alaska Senate inquiry widens",
+      "url": "https://www.winnipegfreepress.com/world/2026/10/30/fbi-visits-dan-j-sullivan-donor-in-candidates-home-town-as-alaska-senate-inquiry-widens",
+      "desc": "ANCHORAGE, Alaska (AP) — The FBI on Friday began reaching out to donors of Dan J. Sullivan asking about potential deception, as federal authorities ramped up their investigation over the U.S. Senate candidate in Alaska who shares a name with the Republican incumbent."
+     },
+     {
+      "t": "Fri 9:27 p.m.",
+      "iso": "2026-10-31T01:27:11+00:00",
+      "outlet": "CTV News",
+      "title": "U.S. Justice Department seeks to isolate Alaska ballots as criminal probe underway over Senate candidate",
+      "url": "https://www.ctvnews.ca/world/article/criminal-probe-underway-in-alaskan-senate-race-controversy/",
+      "desc": "The top U.S. federal prosecutor in Alaska confirmed a criminal investigation related to an alleged scheme to confuse voters by putting a U.S. Senate candidate on the ballot with the same name as the Republican incumbent."
+     },
+     {
+      "t": "Fri 9:27 p.m.",
+      "iso": "2026-10-31T01:27:11+00:00",
+      "outlet": "CP24",
+      "title": "U.S. Justice Department seeks to isolate Alaska ballots as criminal probe underway over Senate candidate",
+      "url": "https://www.cp24.com/news/world/2026/10/30/criminal-probe-underway-in-alaskan-senate-race-controversy/",
+      "desc": ""
+     },
+     {
+      "t": "Fri 9:01 p.m.",
+      "iso": "2026-10-31T01:01:52+00:00",
+      "outlet": "Times Colonist",
+      "title": "Justice Department seeks to isolate Alaska ballots as criminal probe underway over Senate candidate",
+      "url": "https://www.timescolonist.com/world-news/justice-department-seeks-to-isolate-alaska-ballots-as-criminal-probe-underway-over-senate-candidate-12962520",
+      "desc": ""
+     },
+     {
+      "t": "Fri 8:55 p.m.",
+      "iso": "2026-10-31T00:55:07+00:00",
+      "outlet": "CBS News",
+      "title": "DOJ calls Alaska Senate allegations \"troubling,\" asks to segregate ballots",
+      "url": "https://www.cbsnews.com/news/alaska-us-attorney-senate-race-two-dan-sullivans/",
+      "desc": "The top federal prosecutor in Alaska did not specify what crimes are being investigated by the Justice Department, saying he's \"not making any assumptions on whether a crime has been committed or not.\""
+     },
+     {
+      "t": "Fri 8:29 p.m.",
+      "iso": "2026-10-31T00:29:58+00:00",
+      "outlet": "BBC News",
+      "title": "Alaska Senate candidate denies knowing about alleged plot to put two Dan Sullivans on ballot",
+      "url": "https://www.bbc.co.uk/news/articles/cmwyq2gg1yzzo?at_medium=RSS&at_campaign=rss",
+      "desc": "The incumbent Republican running for re-election and allies have accused the Democrats of trying to confuse voters by recruiting a second Dan Sullivan to also stand in the race."
+     },
+     {
+      "t": "Fri 7:42 p.m.",
+      "iso": "2026-10-30T23:42:47+00:00",
+      "outlet": "The Hill",
+      "title": "RNC chair predicts GOP Senate wins in Alaska, Texas, 3 other battlegrounds",
+      "url": "https://thehill.com/homenews/campaign/6185743-rnc-chair-predicts-midterm-wins/",
+      "desc": ""
+     }
+    ],
+    "sources": [
+     {
+      "t": "Fri 9:01 p.m.",
+      "primary": false,
+      "outlet": "Times Colonist",
+      "title": "Justice Department seeks to isolate Alaska ballots as criminal probe underway over Senate candidate",
+      "url": "https://www.timescolonist.com/world-news/justice-department-seeks-to-isolate-alaska-ballots-as-criminal-probe-underway-over-senate-candidate-12962520",
+      "desc": "ANCHORAGE, Alaska (AP) — The U.S.",
+      "wire": "The Associated Press",
+      "by": [
+       {
+        "outlet": "Times Colonist",
+        "src": "The Associated Press",
+        "byline": "r, Joshua Goodman And Becky Bohrer, The Associated Press\" \r\n             \r\nA"
+       },
+       {
+        "outlet": "CTV News",
+        "src": "The Canadian Press",
+        "byline": "n\" \"Joshua Marano\" \"Robin Della Corte\" \"The Canadian Press\" \"Karyn Mulcahy\" \"B"
+       },
+       {
+        "outlet": "CP24",
+        "src": "The Associated Press",
+        "byline": "\"@type\": \"Person\",\n      \"name\": \"The  Associated Press\",\n      \n    }\n  ]"
+       },
+       {
+        "outlet": "The Canadian Press (via Winnipeg Free Press)",
+        "src": "The Associated Press",
+        "byline": "\": \"Joshua Goodman And Jim Mustian, The Associated Press\"\n\t\t\t} [{\"@type\":\"Pe"
+       }
+      ],
+      "copies": [
+       {
+        "outlet": "CTV News",
+        "url": "https://www.ctvnews.ca/world/article/criminal-probe-underway-in-alaskan-senate-race-controversy/"
+       },
+       {
+        "outlet": "CP24",
+        "url": "https://www.cp24.com/news/world/2026/10/30/criminal-probe-underway-in-alaskan-senate-race-controversy/"
+       },
+       {
+        "outlet": "The Canadian Press (via Winnipeg Free Press)",
+        "url": "https://www.winnipegfreepress.com/world/2026/10/30/fbi-visits-dan-j-sullivan-donor-in-candidates-home-town-as-alaska-senate-inquiry-widens"
+       }
+      ]
+     },
+     {
+      "t": "Fri 8:55 p.m.",
+      "primary": false,
+      "outlet": "CBS News",
+      "title": "DOJ calls Alaska Senate allegations \"troubling,\" asks to segregate ballots",
+      "url": "https://www.cbsnews.com/news/alaska-us-attorney-senate-race-two-dan-sullivans/",
+      "desc": "The top federal prosecutor in Alaska did not specify what crimes are being investigated by the Justice Department, saying he's \"not making any assumptions on whether a crime has been committed or not.\"",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "CBS News",
+        "src": "CBS News",
+        "byline": "own staff: reporter"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Fri 8:29 p.m.",
+      "primary": false,
+      "outlet": "BBC News",
+      "title": "Alaska Senate candidate denies knowing about alleged plot to put two Dan Sullivans on ballot",
+      "url": "https://www.bbc.co.uk/news/articles/cmwyq2gg1yzzo?at_medium=RSS&at_campaign=rss",
+      "desc": "The incumbent Republican running for re-election and allies have accused the Democrats of trying to confuse voters by recruiting a second Dan Sullivan to also stand in the race.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "BBC News",
+        "src": "BBC News",
+        "byline": "[{\"@type\":\"Person\",\"name\":\"Ana Faguy\"},{\"@type\":\"Person\",\"name\":\"Kayla Epstein\"}] https://www.facebook.com/bbcnews"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Fri 7:42 p.m.",
+      "primary": false,
+      "outlet": "The Hill",
+      "title": "RNC chair predicts GOP Senate wins in Alaska, Texas, 3 other battlegrounds",
+      "url": "https://thehill.com/homenews/campaign/6185743-rnc-chair-predicts-midterm-wins/",
+      "desc": "px-captcha",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "The Hill",
+        "src": "The Hill",
+        "byline": ""
+       }
+      ],
+      "copies": []
+     }
+    ],
+    "replaces_top": false,
+    "events": [],
+    "theme": "",
+    "canada": "tie",
+    "canus": false,
+    "popular": 0,
+    "us_election": true,
+    "weight": 30.5,
+    "videos": [
+     {
+      "net": "Fox News",
+      "url": "https://www.youtube.com/watch?v=FwBh_n7Hqms",
+      "title": "DOJ holds press conference on Alaska Senate ballot probe",
+      "img": "https://i.ytimg.com/vi/FwBh_n7Hqms/hqdefault.jpg",
+      "rec": true,
+      "up": ""
+     },
+     {
+      "net": "Reuters",
+      "url": "https://www.youtube.com/watch?v=t3Z7Gn7Lhxw",
+      "title": "Texas Republican Senate candidate Paxton campaigns in Houston",
+      "img": "https://i.ytimg.com/vi/t3Z7Gn7Lhxw/hqdefault.jpg",
+      "rec": true,
+      "up": ""
+     },
+     {
+      "net": "MS NOW",
+      "url": "https://www.youtube.com/watch?v=1Ib6G26Musw",
+      "title": "DOJ holds presser on Alaska Senate race with midterms four days away.",
+      "img": "https://i.ytimg.com/vi/1Ib6G26Musw/hqdefault.jpg",
+      "rec": true,
+      "up": ""
+     },
+     {
+      "net": "CBS News",
+      "url": "https://www.youtube.com/watch?v=_lVqN9ngEsg",
+      "title": "Trump campaigns in Florida, Alaska voters react to Dan Sullivan investigation, more | The Takeout",
+      "img": "https://i.ytimg.com/vi/_lVqN9ngEsg/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     }
+    ]
+   }
+  ],
+  "considered": [
+   {
+    "title": "Carney says he can wait out Trump for trade deal",
+    "url": "https://www.politico.com/news/2026/10/30/mark-carney-interview-trump-trade-deal-01144329",
+    "rank": 1,
+    "live": "",
+    "weight": 9.5,
+    "score": 0,
+    "independent": 1,
+    "most_read": 0,
+    "canada": "canadian",
+    "theme": "",
+    "top": true,
+    "rule": "Big Canadian exclusive: a major newsroom's interview or scoop (shown as Exclusive)",
+    "carriers": 1
+   },
+   {
+    "title": "FBI visits Dan J. Sullivan donor in candidate’s home town as Alaska Senate inquiry widens",
+    "url": "https://www.winnipegfreepress.com/world/2026/10/30/fbi-visits-dan-j-sullivan-donor-in-candidates-home-town-as-alaska-senate-inquiry-widens",
+    "rank": 2,
+    "live": "",
+    "weight": 30.5,
+    "score": 13,
+    "independent": 4,
+    "most_read": 0,
+    "canada": "tie",
+    "theme": "",
+    "top": true,
+    "rule": "Breaking U.S. election story (with its Canadian angle)",
+    "carriers": 7
+   },
+   {
+    "title": "Carney pursuing ‘associate’ EU membership",
+    "url": "https://www.ctvnews.ca/politics/article/carney-pursuing-associate-eu-membership/",
+    "rank": 3,
+    "live": "",
+    "weight": 47,
+    "score": 15,
+    "independent": 12,
+    "most_read": 8,
+    "canada": "canadian",
+    "theme": "Canada and the EU",
+    "top": false,
+    "rule": "Canadian, still developing",
+    "carriers": 17
+   },
+   {
+    "title": "Judge orders DOJ to stop trying to \"intimidate\" California election officials",
+    "url": "https://www.cbsnews.com/news/judge-orders-doj-stop-threaten-intimidate-california-election-officials/",
+    "rank": 4,
+    "live": "",
+    "weight": 12.5,
+    "score": 5,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "tie",
+    "theme": "",
+    "top": false,
+    "rule": "From abroad, tied to Canada",
+    "carriers": 3
+   },
+   {
+    "title": "\"Face the Nation with Margaret Brennan\" guests for Nov. 1, 2026",
+    "url": "https://www.cbsnews.com/news/face-the-nation-guests-for-11-01-2026/",
+    "rank": 5,
+    "live": "",
+    "weight": 10.5,
+    "score": 6,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "general",
+    "theme": "",
+    "top": false,
+    "rule": "From abroad, tied to Canada",
+    "carriers": 3
+   },
+   {
+    "title": "Gen Z protests reach Germany as over 160,000 expected at Halloween rallies",
+    "url": "https://www.ctvnews.ca/world/article/gen-z-protests-reach-germany-as-over-160000-expected-at-halloween-rallies/",
+    "rank": 6,
+    "live": "",
+    "weight": 10.0,
+    "score": 5,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "tie",
+    "theme": "",
+    "top": false,
+    "rule": "From abroad, tied to Canada",
+    "carriers": 4
+   },
+   {
+    "title": "Why North Korea's 'elite' hackers are the prime suspect in major Binance hack",
+    "url": "https://www.bbc.co.uk/news/articles/ck9dz3v7z7v3o?at_medium=RSS&at_campaign=rss",
+    "rank": 7,
+    "live": "",
+    "weight": 20.0,
+    "score": 8,
+    "independent": 4,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": false,
+    "rule": "No Canadian tie",
+    "carriers": 4
+   },
+   {
+    "title": "Trump's tariffs could shutter this Canadian town - its residents are fighting to save it",
+    "score": 21,
+    "why": "not built: only 1 independent report(s) (1 sites)"
+   },
+   {
+    "title": "This quaint little town is Canada's Cotswolds and feels like a trip to rural England",
+    "score": 21,
+    "why": "not built: only 1 independent report(s) (1 sites)"
+   },
+   {
+    "title": "U.S. charges 5 more Canadians with voter fraud offences amid Trump administration crackdown",
+    "score": 21,
+    "why": "not built: only 1 independent report(s) (1 sites)"
+   },
+   {
+    "title": "Russian return to ice hockey tournaments is ‘unwelcome,’ Carney says",
+    "score": 11,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Poilievre’s Brantford candidate choice prompts Conservative departures",
+    "score": 6,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Liberals jump ahead of Tories in fundraising as by-election calls loom",
+    "score": 5,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Decision clearing path for Russia to join world juniors in Alberta is 'very unwelcome,' minister says",
+    "score": 5,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Scott Clifton and Tamara Tunie earn lead acting Daytime Emmys. 'General Hospital' wins again",
+    "score": 5,
+    "why": "not built: only 2 independent report(s) (3 sites)"
+   },
+   {
+    "title": "Victim of violent home invasion in Toronto's Bridle Path neighbourhood says family is 'traumatized'",
+    "score": 4,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Riot police deployed to Poland’s constitutional court after judge suspended",
+    "score": 4,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Meet the ‘socialist’ progressive Democrats likely on their way to Congress",
+    "score": 4,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "From salmonberry harvests to traditional tattoos, Native American culture is spotlighted in November",
+    "score": 4,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   }
+  ],
+  "top_n": 2,
+  "more": [
+   {
     "key": "auto-27bd6978",
     "words": [
      "associate",
-     "alliance",
      "european",
+     "alliance",
      "future",
      "union",
      "eu"
     ],
     "score": 15,
     "outlets": 12,
-    "carriers": 18,
+    "carriers": 17,
     "tag": "Developing",
     "title": "Carney pursuing ‘associate’ EU membership",
     "url": "https://www.ctvnews.ca/politics/article/carney-pursuing-associate-eu-membership/",
@@ -601,14 +1004,6 @@
       "desc": ""
      },
      {
-      "t": "Fri 5:30 p.m.",
-      "iso": "2026-10-30T21:30:00+00:00",
-      "outlet": "Toronto Star",
-      "title": "How Canada's new pact with the European Union might affect you",
-      "url": "https://www.thestar.com/news/canada/how-canada-s-new-pact-with-the-european-union-might-affect-you/article_0ebe554d-9e47-5dcc-9f30-e20334a61a70.html",
-      "desc": ""
-     },
-     {
       "t": "Fri 4:20 p.m.",
       "iso": "2026-10-30T20:20:29+00:00",
       "outlet": "The Logic",
@@ -630,6 +1025,14 @@
       "outlet": "The Guardian",
       "title": "Canada and EU announce new alliance open to like-minded countries",
       "url": "https://www.theguardian.com/world/2026/oct/30/canada-european-union-alliance",
+      "desc": ""
+     },
+     {
+      "t": "Fri 3:25 p.m.",
+      "iso": "2026-10-30T19:25:06+00:00",
+      "outlet": "PBS NewsHour",
+      "title": "Canada is taking steps toward becoming European Union's first associate member",
+      "url": "https://www.pbs.org/newshour/world/canada-is-taking-steps-toward-becoming-european-unions-first-associate-member",
       "desc": ""
      }
     ],
@@ -654,17 +1057,12 @@
      {
       "t": "Fri 5:30 p.m.",
       "primary": false,
-      "outlet": "Toronto Star",
-      "title": "How Canada's new pact with the European Union might affect you",
-      "url": "https://www.thestar.com/news/canada/how-canada-s-new-pact-with-the-european-union-might-affect-you/article_0ebe554d-9e47-5dcc-9f30-e20334a61a70.html",
-      "desc": "OTTAWA - Canada's new partnership with the European Union is meant to provide benefits to people on both continents.",
+      "outlet": "CityNews Vancouver",
+      "title": "How Canada’s new pact with the European Union might affect you",
+      "url": "https://vancouver.citynews.ca/2026/10/30/how-canadas-new-pact-with-the-european-union-might-affect-you/",
+      "desc": "Canada's new partnership with the European Union is meant to provide benefits to people on both continents.",
       "wire": "The Canadian Press",
       "by": [
-       {
-        "outlet": "Toronto Star",
-        "src": "The Canadian Press",
-        "byline": "\"Dylan Robertson The Canadian Press\" \"Dylan Robertson <"
-       },
        {
         "outlet": "CityNews Vancouver",
         "src": "The Canadian Press",
@@ -697,10 +1095,6 @@
        }
       ],
       "copies": [
-       {
-        "outlet": "CityNews Vancouver",
-        "url": "https://vancouver.citynews.ca/2026/10/30/how-canadas-new-pact-with-the-european-union-might-affect-you/"
-       },
        {
         "outlet": "CityNews",
         "url": "https://toronto.citynews.ca/2026/10/30/how-canadas-new-pact-with-the-european-union-might-affect-you/"
@@ -824,6 +1218,23 @@
        }
       ],
       "copies": []
+     },
+     {
+      "t": "Fri 3:25 p.m.",
+      "primary": false,
+      "outlet": "PBS NewsHour",
+      "title": "Canada is taking steps toward becoming European Union's first associate member",
+      "url": "https://www.pbs.org/newshour/world/canada-is-taking-steps-toward-becoming-european-unions-first-associate-member",
+      "desc": "Prime Minister Mark Carney said he would attend a meeting of European leaders in June to conclude negotiations on the proposed relationship.",
+      "wire": "The Associated Press",
+      "by": [
+       {
+        "outlet": "PBS NewsHour",
+        "src": "The Associated Press",
+        "byline": "Rob Gillies, Associated Press"
+       }
+      ],
+      "copies": []
      }
     ],
     "replaces_top": false,
@@ -868,167 +1279,7 @@
       "up": ""
      }
     ]
-   }
-  ],
-  "considered": [
-   {
-    "title": "Carney says he can wait out Trump for trade deal",
-    "url": "https://www.politico.com/news/2026/10/30/mark-carney-interview-trump-trade-deal-01144329",
-    "rank": 1,
-    "live": "",
-    "weight": 9.5,
-    "score": 0,
-    "independent": 1,
-    "most_read": 0,
-    "canada": "canadian",
-    "theme": "",
-    "top": true,
-    "rule": "Big Canadian exclusive: a major newsroom's interview or scoop (shown as Exclusive)",
-    "carriers": 1
    },
-   {
-    "title": "Carney pursuing ‘associate’ EU membership",
-    "url": "https://www.ctvnews.ca/politics/article/carney-pursuing-associate-eu-membership/",
-    "rank": 2,
-    "live": "",
-    "weight": 47,
-    "score": 15,
-    "independent": 12,
-    "most_read": 8,
-    "canada": "canadian",
-    "theme": "Canada and the EU",
-    "top": true,
-    "rule": "Canadian, still developing",
-    "carriers": 18
-   },
-   {
-    "title": "Judge orders DOJ to stop trying to \"intimidate\" California election officials",
-    "url": "https://www.cbsnews.com/news/judge-orders-doj-stop-threaten-intimidate-california-election-officials/",
-    "rank": 3,
-    "live": "",
-    "weight": 12.5,
-    "score": 5,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "tie",
-    "theme": "",
-    "top": false,
-    "rule": "From abroad, tied to Canada",
-    "carriers": 3
-   },
-   {
-    "title": "\"Face the Nation with Margaret Brennan\" guests for Nov. 1, 2026",
-    "url": "https://www.cbsnews.com/news/face-the-nation-guests-for-11-01-2026/",
-    "rank": 4,
-    "live": "",
-    "weight": 10.5,
-    "score": 6,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "general",
-    "theme": "",
-    "top": false,
-    "rule": "From abroad, tied to Canada",
-    "carriers": 3
-   },
-   {
-    "title": "Gen Z protests reach Germany as over 160,000 expected at Halloween rallies",
-    "url": "https://www.ctvnews.ca/world/article/gen-z-protests-reach-germany-as-over-160000-expected-at-halloween-rallies/",
-    "rank": 5,
-    "live": "",
-    "weight": 10.0,
-    "score": 5,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "tie",
-    "theme": "",
-    "top": false,
-    "rule": "From abroad, tied to Canada",
-    "carriers": 4
-   },
-   {
-    "title": "Why North Korea's 'elite' hackers are the prime suspect in major Binance hack",
-    "url": "https://www.bbc.co.uk/news/articles/ck9dz3v7z7v3o?at_medium=RSS&at_campaign=rss",
-    "rank": 6,
-    "live": "",
-    "weight": 20.0,
-    "score": 8,
-    "independent": 4,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "rule": "No Canadian tie",
-    "carriers": 4
-   },
-   {
-    "title": "Trump's tariffs could shutter this Canadian town - its residents are fighting to save it",
-    "score": 21,
-    "why": "not built: only 1 independent report(s) (1 sites)"
-   },
-   {
-    "title": "This quaint little town is Canada's Cotswolds and feels like a trip to rural England",
-    "score": 21,
-    "why": "not built: only 1 independent report(s) (1 sites)"
-   },
-   {
-    "title": "U.S. charges 5 more Canadians with voter fraud offences amid Trump administration crackdown",
-    "score": 21,
-    "why": "not built: only 1 independent report(s) (1 sites)"
-   },
-   {
-    "title": "FBI visits Dan J. Sullivan donor in candidate’s home town as Alaska Senate inquiry widens",
-    "score": 17,
-    "why": "not built: only 2 independent report(s) (13 sites)"
-   },
-   {
-    "title": "Russian return to ice hockey tournaments is ‘unwelcome,’ Carney says",
-    "score": 11,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Poilievre’s Brantford candidate choice prompts Conservative departures",
-    "score": 6,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Liberals jump ahead of Tories in fundraising as by-election calls loom",
-    "score": 5,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Decision clearing path for Russia to join world juniors in Alberta is 'very unwelcome,' minister says",
-    "score": 5,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Scott Clifton and Tamara Tunie earn lead acting Daytime Emmys. 'General Hospital' wins again",
-    "score": 5,
-    "why": "not built: only 2 independent report(s) (3 sites)"
-   },
-   {
-    "title": "Victim of violent home invasion in Toronto's Bridle Path neighbourhood says family is 'traumatized'",
-    "score": 4,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Riot police deployed to Poland’s constitutional court after judge suspended",
-    "score": 4,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Meet the ‘socialist’ progressive Democrats likely on their way to Congress",
-    "score": 4,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "From salmonberry harvests to traditional tattoos, Native American culture is spotlighted in November",
-    "score": 4,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   }
-  ],
-  "top_n": 2,
-  "more": [
    {
     "key": "auto-3fe8dce5",
     "words": [
@@ -1266,144 +1517,6 @@
     "popular": 0,
     "us_election": false,
     "weight": 10.5
-   },
-   {
-    "key": "auto-22f08cb4",
-    "words": [
-     "halloween",
-     "germany"
-    ],
-    "score": 5,
-    "outlets": 3,
-    "carriers": 4,
-    "tag": "Developing",
-    "title": "Gen Z protests reach Germany as over 160,000 expected at Halloween rallies",
-    "url": "https://www.ctvnews.ca/world/article/gen-z-protests-reach-germany-as-over-160000-expected-at-halloween-rallies/",
-    "outlet": "CTV News",
-    "t": "Fri 8:35 p.m.",
-    "iso": "2026-10-31T00:35:39+00:00",
-    "summary": "More than 160,000 people across Germany are expected to join demonstrations on Saturday, organizers say, as a youth-led movement inspired by protests elsewhere in Europe takes to the streets to demand better education and lower living costs.",
-    "first": {
-     "outlet": "CBS News",
-     "url": "https://www.cbsnews.com/video/heavy-rain-expected-ahead-of-halloween-weekend-in-southwest/",
-     "t": "Fri 7:55 p.m.",
-     "title": "Heavy rain expected ahead of Halloween weekend in Southwest"
-    },
-    "newest": "2026-10-31T00:35:39+00:00",
-    "photo": {
-     "src": "live/img/auto-22f08cb4-e91d01405e.jpg",
-     "orig": "https://www.ctvnews.ca/resizer/v2/6K6ATJTMCZCNDJHJVGHQK4FAVU.jpg?smart=true&auth=00786b7e3ed128b3d391707b9ceafbd448d498cae183ecc66db248a70b17e196&width=1200&height=630",
-     "caption": "A person holds a sign that reads: \"Solidarity with French Youth\", at a demonstration under the slogan \"Solidarity with Students in France\", in Berlin, Saturday Oct. 17, 2026. (Carsten Koall/dpa via AP). — via CTV News",
-     "alt": "A person holds a sign that reads: \"Solidarity with French Youth\", at a demonstration under the slogan \"Solidarity with Students in France\", in Berlin, Saturday ",
-     "outlet": "CTV News",
-     "url": "https://www.ctvnews.ca/world/article/gen-z-protests-reach-germany-as-over-160000-expected-at-halloween-rallies/"
-    },
-    "independent": 3,
-    "reports": [
-     {
-      "t": "Fri 8:35 p.m.",
-      "iso": "2026-10-31T00:35:39+00:00",
-      "outlet": "CTV News",
-      "title": "Gen Z protests reach Germany as over 160,000 expected at Halloween rallies",
-      "url": "https://www.ctvnews.ca/world/article/gen-z-protests-reach-germany-as-over-160000-expected-at-halloween-rallies/",
-      "desc": "More than 160,000 people across Germany are expected to join demonstrations on Saturday, organizers say, as a youth-led movement inspired by protests elsewhere in Europe takes to the streets to demand better education and lower living costs."
-     },
-     {
-      "t": "Fri 8:35 p.m.",
-      "iso": "2026-10-31T00:35:39+00:00",
-      "outlet": "CP24",
-      "title": "Gen Z protests reach Germany as over 160,000 expected at Halloween rallies",
-      "url": "https://www.cp24.com/news/world/2026/10/31/gen-z-protests-reach-germany-as-over-160000-expected-at-halloween-rallies/",
-      "desc": ""
-     },
-     {
-      "t": "Fri 8:17 p.m.",
-      "iso": "2026-10-31T00:17:35+00:00",
-      "outlet": "Al Jazeera",
-      "title": "Germany and France brace for protests on Halloween weekend",
-      "url": "https://www.aljazeera.com/news/2026/10/31/germany-and-france-brace-for-protests-on-halloween-weekend?traffic_source=rss",
-      "desc": "A wave of youth-led protests has swept Europe, with demonstrators denouncing rising prices and a lack of prospects."
-     },
-     {
-      "t": "Fri 7:55 p.m.",
-      "iso": "2026-10-30T23:55:03+00:00",
-      "outlet": "CBS News",
-      "title": "Heavy rain expected ahead of Halloween weekend in Southwest",
-      "url": "https://www.cbsnews.com/video/heavy-rain-expected-ahead-of-halloween-weekend-in-southwest/",
-      "desc": "At least four tornadoes touched down Thursday near Uvalde, Texas, and there's more bad weather ahead this Halloween weekend, especially in the Southwest. Chief Meteorologist Rob Marciano has more."
-     }
-    ],
-    "sources": [
-     {
-      "t": "Fri 8:35 p.m.",
-      "primary": false,
-      "outlet": "CTV News",
-      "title": "Gen Z protests reach Germany as over 160,000 expected at Halloween rallies",
-      "url": "https://www.ctvnews.ca/world/article/gen-z-protests-reach-germany-as-over-160000-expected-at-halloween-rallies/",
-      "desc": "More than 160,000 people across Germany are expected to join demonstrations on Saturday, organizers say, as a youth-led movement inspired by protests elsewhere in Europe takes to the streets to demand better education and lower living costs.",
-      "wire": "The Canadian Press",
-      "by": [
-       {
-        "outlet": "CTV News",
-        "src": "The Canadian Press",
-        "byline": "n\" \"Joshua Marano\" \"Robin Della Corte\" \"The Canadian Press\" \"Karyn Mulcahy\" \"B"
-       },
-       {
-        "outlet": "CP24",
-        "src": "Reuters",
-        "byline": "\"@type\": \"Person\",\n      \"name\": \"Reuters Staff\","
-       }
-      ],
-      "copies": [
-       {
-        "outlet": "CP24",
-        "url": "https://www.cp24.com/news/world/2026/10/31/gen-z-protests-reach-germany-as-over-160000-expected-at-halloween-rallies/"
-       }
-      ]
-     },
-     {
-      "t": "Fri 8:17 p.m.",
-      "primary": false,
-      "outlet": "Al Jazeera",
-      "title": "Germany and France brace for protests on Halloween weekend",
-      "url": "https://www.aljazeera.com/news/2026/10/31/germany-and-france-brace-for-protests-on-halloween-weekend?traffic_source=rss",
-      "desc": "A wave of youth-led protests has swept Europe, with demonstrators denouncing rising prices and a lack of prospects.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Al Jazeera",
-        "src": "Al Jazeera",
-        "byline": "{\"@type\":\"Person\",\"name\":\"Al Jazeera Staff\",} Al Jazeera Staff Add Al Jazeera on Google By "
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Fri 7:55 p.m.",
-      "primary": false,
-      "outlet": "CBS News",
-      "title": "Heavy rain expected ahead of Halloween weekend in Southwest",
-      "url": "https://www.cbsnews.com/video/heavy-rain-expected-ahead-of-halloween-weekend-in-southwest/",
-      "desc": "At least four tornadoes touched down Thursday near Uvalde, Texas, and there's more bad weather ahead this Halloween weekend, especially in the Southwest. Chief Meteorologist Rob Marciano has more.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "CBS News",
-        "src": "CBS News",
-        "byline": ""
-       }
-      ],
-      "copies": []
-     }
-    ],
-    "replaces_top": false,
-    "events": [],
-    "theme": "",
-    "canada": "tie",
-    "canus": false,
-    "popular": 0,
-    "us_election": false,
-    "weight": 10.0
    }
   ],
   "passed_over": [
@@ -1908,7 +2021,7 @@
    "id": "VNslMg2kDog",
    "r": "world",
    "o": "Sky News",
-   "t": "Is the 'manosphere' as dangerous as smoking?",
+   "t": "Should the 'manosphere' be deemed a public health risk?",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=VNslMg2kDog",
@@ -2443,6 +2556,7 @@
    "Judge orders Trump administration to stop threatening election officials, NBC News reports.",
    "Canada, European Union close Montreal summit with ‘alliance for the future’ pact, CP24 reports.",
    "Some Backstreet Boys fans attending one of the group’s Toronto shows aren’t happy with their seat change after Live Nation relocated fans who unknowingly bought tickets that had an obstructed view, CBC News reports.",
+   "The FBI on Friday began reaching out to donors of Dan J, The Associated Press reports.",
    "What to know about the $6.3B hack on Binance, likely the biggest-ever crypto theft, The Associated Press reports.",
    "Judge orders DOJ to stop trying to \"intimidate\" California election officials, CBS News reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
@@ -2543,6 +2657,38 @@
    "href": "https://www.pm.gc.ca/en/news/statements/2026/10/30/joint-statement-canada-and-european-union-building-together-alliance",
    "report": false,
    "iso": "2026-10-30T16:15:00+00:00",
+   "auto": true
+  },
+  {
+   "cat": "intl",
+   "media": "none",
+   "initials": "UN",
+   "name": "United Nations",
+   "role": "UN News",
+   "date": "Oct 30",
+   "platform": "Official statement",
+   "handle": "news.un.org",
+   "hed": "World News in Brief: 300,000 displaced in Lebanon, Türk ‘deeply concerned’ over Novaya Gazeta closure, $50 million refugee appeal, World Cities Day",
+   "summary": "More than 300,000 people displaced since early March remain internally displaced in Lebanon, where the humanitarian crisis is “far from over,” according to the UN’s aid coordination office (OCHA).",
+   "href": "https://news.un.org/feed/view/en/story/2026/10/1168713",
+   "report": false,
+   "iso": "2026-10-30T12:00:00+00:00",
+   "auto": true
+  },
+  {
+   "cat": "intl",
+   "media": "none",
+   "initials": "UN",
+   "name": "United Nations",
+   "role": "UN News",
+   "date": "Oct 30",
+   "platform": "Official statement",
+   "handle": "news.un.org",
+   "hed": "Ukraine: Oleshky ceasefire offers ‘hope’ for civilians as attacks on aid vehicles continue",
+   "summary": "Each day the ceasefire in Oleshky holds means hope for civilians in the city, the UN’s top humanitarian official said, stressing that those wishing to leave must be able to do so safely and voluntarily.",
+   "href": "https://news.un.org/feed/view/en/story/2026/10/1168712",
+   "report": false,
+   "iso": "2026-10-30T12:00:00+00:00",
    "auto": true
   }
  ],
@@ -2745,11 +2891,11 @@
   },
   {
    "city": "Ottawa",
-   "w": "Russian",
-   "u": "https://www.ctvnews.ca/politics/article/anand-says-she-called-out-russian-counterpart-invited-by-us-to-g20-ministerial/",
-   "title": "Anand says she called out Russian counterpart invited by U.S. to G20 ministerial",
-   "outlet": "CTV News",
-   "t": "Fri 7:13 p.m.",
+   "w": "Canada–EU",
+   "u": "https://www.cbc.ca/news/politics/european-union-canada-associate-member-von-der-leyen-9.7401989",
+   "title": "Carney says, unequivocally, Canada seeking to become the EU's 1st associate member",
+   "outlet": "CBC News",
+   "t": "Fri 8:51 p.m.",
    "hot": false
   },
   {
@@ -2764,10 +2910,10 @@
   {
    "city": "Kyiv",
    "w": "Missile strikes",
-   "u": "https://www.theguardian.com/world/2026/oct/31/ukraines-zelenskyy-praises-us-over-21bn-patriot-missile-deal-but-warns-it-could-take-years",
-   "title": "Ukraine’s Zelenskyy praises US over $2.1bn Patriot missile deal but warns it could take years",
-   "outlet": "The Guardian",
-   "t": "Fri 10:18 p.m.",
+   "u": "https://www.aljazeera.com/news/2026/10/31/us-greenlights-2-1bn-patriot-missile-sale-to-ukraine?traffic_source=rss",
+   "title": "US greenlights $2.1bn Patriot missile sale to Ukraine",
+   "outlet": "Al Jazeera",
+   "t": "Sat 12:51 a.m.",
    "hot": false
   },
   {
@@ -2842,6 +2988,10 @@
     "url": "https://www.youtube.com/watch?v=QB5BNdBFujE"
    },
    {
+    "net": "Sky News",
+    "url": "https://www.youtube.com/watch?v=umLWFz4izTM"
+   },
+   {
     "net": "DW News",
     "url": "https://www.youtube.com/watch?v=LuKwFajn37U"
    },
@@ -2856,10 +3006,6 @@
    {
     "net": "FRANCE 24 English",
     "url": "https://www.youtube.com/watch?v=HvZt-nh9sGg"
-   },
-   {
-    "net": "euronews",
-    "url": "https://www.youtube.com/watch?v=pykpO5kQJ98"
    }
   ]
  },
@@ -2870,7 +3016,7 @@
    "story": "Iran war live: 4 tankers hit in Hormuz; Trump says conflict will end s",
    "title": "Iran war live: 4 tankers hit in Hormuz; Trump says conflict will end soon",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/31/iran-war-live-oil-tankers-hit-in-hormuz-trump-says-conflict-will-end-soon?traffic_source=rss",
-   "updated": "2026-10-31T04:42:09+00:00",
+   "updated": "2026-10-31T04:56:37+00:00",
    "ended": false,
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-10-30T230320Z_1495036221_RC2YDOASHI7R_RTRMADP_3_IRAN-CRISIS-SHIPPING-HORMUZ-1793404633.jpg?resize=1920%2C1139"
   },
@@ -3149,20 +3295,66 @@
      "title": "Carney says Canada is working to become an 'associate member' as he hosts EU leaders in Montreal",
      "url": "https://www.cbc.ca/news/politics/european-union-canada-associate-member-von-der-leyen-9.7400922?cmp=rss",
      "tie": "Canada and the EU"
-    },
-    {
-     "t": "Thu 10:15 a.m.",
-     "iso": "2026-10-29T14:15:00+00:00",
-     "outlet": "Toronto Star",
-     "title": "Mark Carney embraces EU's 'associate membership' label for Canada",
-     "url": "https://www.thestar.com/politics/federal/eu-chief-von-der-leyen-pushes-canada-as-associate-member/article_6081acb6-1567-4ea2-8dff-d7fdf04ddce8.html",
-     "tie": "Canada and the EU"
     }
    ],
    "views": []
   }
  },
  "canangle": {
+  "auto-5818c324": {
+   "story": "FBI visits Dan J. Sullivan donor in candidate’s home town as Alaska Senate inquiry widens",
+   "us": true,
+   "specific": 1,
+   "stories": [
+    {
+     "t": "Thu 9:47 a.m.",
+     "iso": "2026-10-29T13:47:36+00:00",
+     "outlet": "Halifax Examiner",
+     "title": "Police board passes Becky Kent’s motion to write justice minister about RCMP’s changes to satellite offices",
+     "url": "https://www.halifaxexaminer.ca/government/city-hall/police-board-passes-becky-kents-motion-to-write-justice-minister-about-rcmps-changes-to-satellite-offices/",
+     "ca": false,
+     "tie": ""
+    },
+    {
+     "t": "Fri 10:39 p.m.",
+     "iso": "2026-10-31T02:39:25+00:00",
+     "outlet": "BBC News",
+     "title": "Trump's tariffs could shutter this Canadian town - its residents are fighting to save it",
+     "url": "https://www.bbc.co.uk/news/articles/cmly016ep243o?at_medium=RSS&at_campaign=rss",
+     "ca": false,
+     "tie": "Canada and the U.S."
+    },
+    {
+     "t": "Fri 7:35 p.m.",
+     "iso": "2026-10-30T23:35:05+00:00",
+     "outlet": "Politico",
+     "title": "Carney says he can wait out Trump for trade deal",
+     "url": "https://www.politico.com/news/2026/10/30/mark-carney-interview-trump-trade-deal-01144329",
+     "ca": false,
+     "tie": "Canada and the U.S."
+    },
+    {
+     "t": "Fri 12:41 p.m.",
+     "iso": "2026-10-30T16:41:57+00:00",
+     "outlet": "CP24",
+     "title": "U.S. midterms 101: Who holds the cards in the Canada-U.S. trade war?",
+     "url": "https://www.cp24.com/news/canada/2026/10/30/us-midterms-101-who-holds-the-cards-in-the-canada-us-trade-war/",
+     "ca": true,
+     "tie": "Canada and the U.S."
+    },
+    {
+     "t": "Fri 4:00 a.m.",
+     "iso": "2026-10-30T08:00:00+00:00",
+     "outlet": "CBC News",
+     "title": "Facing a potential $40M US tariff bill, this American importer is suing Trump to end some tariffs on Canada",
+     "url": "https://www.cbc.ca/news/world/gellert-global-group-suing-trump-tariffs-9.7402197?cmp=rss",
+     "ca": true,
+     "tie": "Canada and the U.S."
+    }
+   ],
+   "official": [],
+   "views": []
+  },
   "auto-3fe8dce5": {
    "story": "Judge blocks DOJ from threatening election officials over noncitizen voting claims",
    "us": true,
@@ -3216,31 +3408,13 @@
    ],
    "official": [],
    "views": []
-  },
-  "auto-22f08cb4": {
-   "story": "Gen Z protests reach Germany as over 160,000 expected at Halloween rallies",
-   "us": false,
-   "specific": 1,
-   "stories": [
-    {
-     "t": "Fri 10:38 p.m.",
-     "iso": "2026-10-31T02:38:36+00:00",
-     "outlet": "CTV News",
-     "title": "Not-too-spooky weather in store for Halloween in Calgary",
-     "url": "https://www.ctvnews.ca/calgary/article/not-too-spooky-weather-in-store-for-halloween-in-calgary/",
-     "ca": true,
-     "tie": ""
-    }
-   ],
-   "official": [],
-   "views": []
   }
  },
  "canangle_live": {
   "https://www.aljazeera.com/news/liveblog/2026/10/31/iran-war-live-oil-tankers-hit-in-hormuz-trump-says-conflict-will-end-soon?traffic_source=rss": {
    "story": "Iran war live: 4 tankers hit in Hormuz; Trump says conflict will end soon",
    "us": true,
-   "specific": 5,
+   "specific": 4,
    "stories": [
     {
      "t": "Fri 10:39 p.m.",
@@ -3279,13 +3453,13 @@
      "tie": ""
     },
     {
-     "t": "Thu 1:00 p.m.",
-     "iso": "2026-10-29T17:00:00+00:00",
-     "outlet": "Toronto Star",
-     "title": "Ontario deficit hits record $16.9B as Trump tariffs batter economy",
-     "url": "https://www.thestar.com/politics/provincial/ontario-deficit-hits-record-16-9b-as-trump-tariffs-batter-economy/article_888dcdb2-a46e-4677-9331-0c0f2e7d2d17.html",
+     "t": "Fri 12:41 p.m.",
+     "iso": "2026-10-30T16:41:57+00:00",
+     "outlet": "CP24",
+     "title": "U.S. midterms 101: Who holds the cards in the Canada-U.S. trade war?",
+     "url": "https://www.cp24.com/news/canada/2026/10/30/us-midterms-101-who-holds-the-cards-in-the-canada-us-trade-war/",
      "ca": true,
-     "tie": ""
+     "tie": "Canada and the U.S."
     }
    ],
    "official": [],
@@ -3571,7 +3745,7 @@
   "https://www.npr.org/2026/10/30/nx-s1-6022578/minors-pregnant-migrant-texas-trump": {
    "story": "Despite concerns, the Trump administration still sends pregnant migrant minors to south Texas",
    "us": true,
-   "specific": 5,
+   "specific": 4,
    "stories": [
     {
      "t": "Fri 10:39 p.m.",
@@ -3610,20 +3784,138 @@
      "tie": ""
     },
     {
-     "t": "Thu 1:00 p.m.",
-     "iso": "2026-10-29T17:00:00+00:00",
-     "outlet": "Toronto Star",
-     "title": "Ontario deficit hits record $16.9B as Trump tariffs batter economy",
-     "url": "https://www.thestar.com/politics/provincial/ontario-deficit-hits-record-16-9b-as-trump-tariffs-batter-economy/article_888dcdb2-a46e-4677-9331-0c0f2e7d2d17.html",
+     "t": "Fri 12:41 p.m.",
+     "iso": "2026-10-30T16:41:57+00:00",
+     "outlet": "CP24",
+     "title": "U.S. midterms 101: Who holds the cards in the Canada-U.S. trade war?",
+     "url": "https://www.cp24.com/news/canada/2026/10/30/us-midterms-101-who-holds-the-cards-in-the-canada-us-trade-war/",
      "ca": true,
-     "tie": ""
+     "tie": "Canada and the U.S."
     }
    ],
    "official": [],
    "views": []
   }
  },
- "bds": [],
+ "bds": [
+  {
+   "id": "bd-auto-27bd6978",
+   "auto": true,
+   "desk": "Canada",
+   "status": "Developing",
+   "at": "2026-10-31T00:30:38+00:00",
+   "exact": true,
+   "img": "live/img/auto-27bd6978-8010de5817.jpg",
+   "credit": "via CTV News",
+   "pic": "globe",
+   "h": "Carney pursuing ‘associate’ EU membership",
+   "lede": "Canada and the European Union have pledged to deepen their security, digital and scholastic relationships, pushed by what they’ve described as a destabilized international order.",
+   "newl": "Now carried by 12 independent newsrooms.",
+   "rows": [
+    [
+     "Prime Minister of Canada",
+     "Good afternoon, everyone. Welcome to a historic day.President von der Leyen, President Costa, on behalf of all Canadians, I’d like to thank you for your vision and your leadership – and to your commissioners and their teams for their focus and delivery.We are here in Montréal, a city that, for…",
+     [
+      1
+     ]
+    ],
+    [
+     "CTV News",
+     "Canada and the European Union have pledged to deepen their security, digital and scholastic relationships, pushed by what they’ve described as a destabilized international order.",
+     [
+      2
+     ]
+    ],
+    [
+     "CBC News",
+     "Canada has agreed to become an associate member of the European Union. Power & Politics hears from Canada's ambassador-designate to the EU, Jonathan Wilkinson, on what the new agreement means.",
+     [
+      6
+     ]
+    ],
+    [
+     "CityNews Vancouver",
+     "Canada's new partnership with the European Union is meant to provide benefits to people on both continents.",
+     [
+      8
+     ]
+    ]
+   ],
+   "src": [
+    [
+     "Prime Minister of Canada",
+     "Prime Minister Carney delivers remarks to conclude the Canada-European Union Summit",
+     "https://www.pm.gc.ca/en/news/speeches/2026/10/30/prime-minister-carney-delivers-remarks-conclude-canada-european-union"
+    ],
+    [
+     "CTV News",
+     "Carney pursuing ‘associate’ EU membership",
+     "https://www.ctvnews.ca/politics/article/carney-pursuing-associate-eu-membership/"
+    ],
+    [
+     "CP24",
+     "Carney pursuing ‘associate’ EU membership",
+     "https://www.cp24.com/news/canada/2026/10/30/carney-pursuing-associate-eu-membership/"
+    ],
+    [
+     "BNN Bloomberg",
+     "Carney pursuing ‘associate’ EU membership",
+     "https://www.bnnbloomberg.ca/business/politics/2026/10/30/carney-pursuing-associate-eu-membership/"
+    ],
+    [
+     "Canada's National Observer",
+     "Canada, EU launch 'alliance for the future' with critical minerals investment",
+     "https://www.nationalobserver.com/2026/10/30/news/canada-eu-launch-alliance-future-critical-minerals-investment"
+    ],
+    [
+     "CBC News",
+     "What can we expect from the Canada-EU 'alliance for the future’?",
+     "https://www.cbc.ca/player/play/video/9.7403772"
+    ],
+    [
+     "National Post",
+     "Afternoon front page: Canada and EU launch ‘Alliance for the Future’; Father of family shot on Toronto’s Bridle Path confirms horrific details; A painfully inconclusive election result for Israel; and more",
+     "https://nationalpost.com/editors/afternoon-front-page-canada-and-eu-launch-alliance-for-the-future-father-of-family-shot-on-torontos-bridle-path-confirms-horrific-details-a-painfully-inconclusive-election-resul"
+    ],
+    [
+     "CityNews Vancouver",
+     "How Canada’s new pact with the European Union might affect you",
+     "https://vancouver.citynews.ca/2026/10/30/how-canadas-new-pact-with-the-european-union-might-affect-you/"
+    ],
+    [
+     "CityNews",
+     "How Canada’s new pact with the European Union might affect you",
+     "https://toronto.citynews.ca/2026/10/30/how-canadas-new-pact-with-the-european-union-might-affect-you/"
+    ],
+    [
+     "CKOM / PAnow",
+     "How Canada’s new pact with the European Union might affect you",
+     "https://www.ckom.com/2026/10/30/how-canadas-new-pact-with-the-european-union-might-affect-you/"
+    ],
+    [
+     "The Logic",
+     "Canada and EU announce ‘ever-closer association’ to bolster economic security",
+     "https://thelogic.co/news/canada-eu-security-measures/"
+    ],
+    [
+     "Al Jazeera",
+     "EU and Canada seek deeper ties amid worsening global uncertainty",
+     "https://www.aljazeera.com/news/2026/10/30/eu-and-canada-seek-deeper-ties-amid-worsening-global-uncertainty?traffic_source=rss"
+    ],
+    [
+     "The Guardian",
+     "Canada and EU announce new alliance open to like-minded countries",
+     "https://www.theguardian.com/world/2026/oct/30/canada-european-union-alliance"
+    ],
+    [
+     "PBS NewsHour",
+     "Canada is taking steps toward becoming European Union's first associate member",
+     "https://www.pbs.org/newshour/world/canada-is-taking-steps-toward-becoming-european-unions-first-associate-member"
+    ]
+   ],
+   "lead": 2
+  }
+ ],
  "geo": {
   "-YVOgH-f4qQ": {
    "v": "unknown",
