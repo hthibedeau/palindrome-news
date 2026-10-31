@@ -1,0 +1,110 @@
+<style id="coverage">
+/* One list, grouped by angle (Hannah, Sat Oct 31, 2026: "connected to this story, and then what each newsroom reports,
+   there are repetitive reports"). "The coverage": the primary source first, then one line per angle of the story with
+   every newsroom reporting it side by side. "Connected to this story" keeps only different stories that tie in. */
+#autoBreaking .ab-story.cv-on > .ab-reps, #autoBreaking .ab-story.cv-on > .rel-box { display: none !important; }
+#autoBreaking .cv { position: relative; border-top: 1px solid rgba(255, 255, 255, .22); padding: 12px 0 4px; margin: 0 0 12px; }
+#autoBreaking .cv-h { display: flex; align-items: center; justify-content: space-between; gap: 10px; min-height: 34px; margin: 0 0 4px;
+  font-size: 12.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #FFFFFF; }
+#autoBreaking .cv ol { list-style: none; margin: 0; padding: 0; }
+#autoBreaking .cv li { padding: 9px 0; border-top: 1px solid rgba(255, 255, 255, .12); }
+#autoBreaking .cv li:first-child { border-top: 0; }
+#autoBreaking .cv:not(.cv-open) li:nth-child(n+6) { display: none; }
+#autoBreaking .cv .cv-angle { display: block; font-size: 16px; line-height: 1.35; color: #FFFFFF; }
+#autoBreaking .cv .cv-angle a { color: #FFFFFF; text-decoration: none; position: relative; z-index: 2; }
+#autoBreaking .cv .cv-who { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 6px; }
+#autoBreaking .cv .cv-who a { display: inline-flex; align-items: center; min-height: 28px; padding: 2px 10px; border-radius: 999px;
+  background: rgba(255, 255, 255, .12); border: 1px solid rgba(255, 255, 255, .25); color: #FFFFFF; font-size: 12.5px; font-weight: 600;
+  text-decoration: none; position: relative; z-index: 2; }
+#autoBreaking .cv .cv-who a:hover { background: rgba(255, 255, 255, .24); }
+#autoBreaking .cv .cv-who time { font-size: 11px; letter-spacing: .06em; text-transform: uppercase; opacity: .7; margin-right: 2px; }
+#autoBreaking .cv .cv-prim { display: inline-block; margin: 0 8px 4px 0; padding: 1px 8px; border-radius: 999px; background: #FFFFFF; color: #2B1B54;
+  font-size: 11px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; vertical-align: 1px; }
+#autoBreaking .cv .cv-n { font-size: 11px; font-weight: 700; letter-spacing: .04em; opacity: .75; }
+#autoBreaking .cv .cr-more { position: static !important; margin: 0 !important; }
+#autoBreaking .cv-tag { display: inline-block; margin-right: 6px; font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #F6E1E8; opacity: .85; }
+</style>
+<script id="coverage-js">
+(function () {
+  const root = document.getElementById('autoBreaking'); if (!root) return;
+  const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  // words that name the event itself, not an angle of it
+  const GENERIC = new Set(('canada canadian canadians carney prime minister says said could would will with from that this they their about after over into than more ' +
+    'what here know year years week today new news live updates update report reports amid under ahead also just been have has were being ' +
+    'european union summit montreal leaders leader talks deal deals ottawa trump u.s. united states american americans midterms').split(' '));
+  const stem = (w) => w.replace(/['’]s$/, '').slice(0, 7);
+  const toks = (t) => new Set((String(t).toLowerCase().match(/[a-zà-ÿ][a-zà-ÿ'’-]{3,}/g) || []).filter((w) => !GENERIC.has(w.replace(/['’]s$/, ''))).map(stem));
+  function cluster(items) {
+    // items: {title, outlet, url, t, iso, primary}; words common to most of the items are the story itself, not an angle
+    const all = items.map((x) => toks(x.title)), freq = {};
+    all.forEach((s) => s.forEach((w) => { freq[w] = (freq[w] || 0) + 1; }));
+    const common = new Set(Object.keys(freq).filter((w) => items.length >= 4 && freq[w] / items.length > 0.6));
+    const groups = [];
+    items.forEach((x, i) => {
+      const k = new Set([...all[i]].filter((w) => !common.has(w)));
+      let best = null, bestN = 0;
+      groups.forEach((g) => { let n = 0; k.forEach((w) => { if (g.k.has(w)) n++; }); if (n > bestN) { best = g; bestN = n; } });
+      if (best && bestN >= 1 && !x.primary && !best.primary) { best.items.push(x); k.forEach((w) => best.k.add(w)); }
+      else groups.push({ items: [x], k, primary: !!x.primary });
+    });
+    return groups;
+  }
+  function line(g, label) {
+    const its = g.items.slice().sort((a, b) => (a.iso < b.iso ? 1 : -1));
+    const per = []; its.forEach((x) => { if (!per.some((p) => p.outlet === x.outlet)) per.push(x); });
+    // the angle is named by its most typical headline: the one sharing the most words with the others
+    const tk = its.map((x) => toks(x.title));
+    let head = its[0], hb = -1;
+    its.forEach((x, i) => { let n = 0; tk.forEach((o, j) => { if (j !== i) o.forEach((w) => { if (tk[i].has(w)) n++; }); }); if (n > hb) { hb = n; head = x; } });
+    return '<li>' + (g.primary ? '<span class="cv-prim">Primary source</span>' : label ? '<span class="cv-tag">' + esc(label) + '</span>' : '')
+      + '<span class="cv-angle"><a href="' + esc(head.url) + '" target="_blank" rel="noopener">' + esc(head.title) + '</a></span>'
+      + '<span class="cv-who"><time>' + esc((its[0].t || '').replace(/^\w+ /, '')) + '</time>'
+      + per.map((x) => '<a href="' + esc(x.url) + '" target="_blank" rel="noopener" title="' + esc(x.title) + '">' + esc(x.outlet) + ' &#8599;</a>').join('')
+      + (per.length > 1 ? '<span class="cv-n">' + per.length + ' newsrooms</span>' : '') + '</span></li>';
+  }
+  function box(title, groups, cls, label) {
+    const d = document.createElement('div'); d.className = 'cv ' + cls;
+    d.innerHTML = '<div class="cv-h"><span>' + esc(title) + '</span></div><ol>' + groups.map((g) => line(g, label)).join('') + '</ol>';
+    if (groups.length > 5) {
+      const b = document.createElement('button'); b.type = 'button'; b.className = 'cr-more';
+      const closed = 'Show all ' + groups.length + ' ▾', opened = 'Show fewer ▴'; b.textContent = closed;
+      b.addEventListener('click', (e) => { e.preventDefault(); const on = d.classList.toggle('cv-open'); b.textContent = on ? opened : closed; });
+      d.querySelector('.cv-h').appendChild(b);
+    }
+    return d;
+  }
+  let D = null, busy = false;
+  function build() {
+    if (!D || busy) return; busy = true;
+    try {
+      const A = (D.auto && D.auto.stories) || [], R = D.related || {};
+      root.querySelectorAll('.ab-story').forEach((art) => {
+        if (art.querySelector(':scope > .cv')) return;
+        const s = A.find((x) => x.key === art.dataset.key); if (!s) return;
+        const rel = (R[s.key] || {}).stories || [];
+        const isoOf = {}; (s.reports || []).forEach((r) => { isoOf[r.url] = r.iso; });
+        const own = (s.sources || s.reports || []).map((r) => ({ title: r.title, outlet: r.outlet, url: r.url, t: r.t, iso: r.iso || isoOf[r.url] || '', primary: !!r.primary }));
+        // a running event's other reports are the same event: they join the coverage; anything else stays connected
+        const sameEvent = (x) => s.theme && x.tie === s.theme;
+        const cov = own.concat(rel.filter(sameEvent).map((r) => ({ title: r.title, outlet: r.outlet, url: r.url, t: r.t, iso: r.iso || '' })));
+        const seen = new Set(), uniq = cov.filter((x) => { const k = x.url.split('?')[0]; if (seen.has(k)) return false; seen.add(k); return true; });
+        const groups = cluster(uniq).sort((a, b) => (b.primary - a.primary) || (b.items.length - a.items.length));
+        // connected: only different stories, never an angle already in the coverage
+        const covK = new Set(); groups.forEach((g) => g.k.forEach((w) => covK.add(w)));
+        const other = rel.filter((x) => !sameEvent(x)).map((r) => ({ title: r.title, outlet: r.outlet, url: r.url, t: r.t, iso: r.iso || '' }))
+          .filter((x) => { const k = toks(x.title); let n = 0; k.forEach((w) => { if (covK.has(w)) n++; }); return n < 2; });
+        const og = cluster(other);
+        const after = art.querySelector(':scope > .ab-reps') || art.querySelector(':scope > .rel-box') || art.querySelector(':scope > .cr-byline');
+        if (!after || !groups.length) return;
+        const covBox = box('The coverage', groups, 'cv-cov');
+        after.before(covBox);
+        if (og.length) covBox.after(box('Connected to this story', og, 'cv-rel'));
+        art.classList.add('cv-on');
+      });
+    } catch (e) { console.warn('coverage', e); }
+    setTimeout(() => { busy = false; }, 60);
+  }
+  fetch('live/auto.json?t=' + Date.now(), { cache: 'no-store' }).then((r) => r.json()).then((d) => { D = d; build(); setTimeout(build, 1500); setTimeout(build, 4000); }).catch(() => {});
+  new MutationObserver(() => { if (!busy) { clearTimeout(build.t); build.t = setTimeout(build, 150); } }).observe(root, { childList: true, subtree: true });
+})();
+</script>
