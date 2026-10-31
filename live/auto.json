@@ -1,6 +1,6 @@
 {
- "checked": "2026-10-31T05:22:08.223207+00:00",
- "checkedLabel": "Sat 1:22 a.m.",
+ "checked": "2026-10-31T05:32:08.510163+00:00",
+ "checkedLabel": "Sat 1:32 a.m.",
  "stories": [
   {
    "key": "top",
@@ -49,6 +49,15 @@
  ],
  "wire": [
   [
+   "Sat 1:14 a.m.",
+   "World",
+   "The dachshund is the muse in an exhibition showcasing the sausage dog's history in art",
+   "Toronto Star",
+   "https://www.thestar.com/news/world/europe/the-dachshund-is-the-muse-in-an-exhibition-showcasing-the-sausage-dog-s-history-in-art/article_b2e4d331-cbd9-55cd-ac86-5ea362ee8af8.html",
+   "2026-10-31T05:14:12+00:00",
+   1
+  ],
+  [
    "Sat 1:12 a.m.",
    "World",
    "Karl Bushby's 28-year walk across the world is ending. A look at the trek, by the numbers",
@@ -74,6 +83,24 @@
    "https://www.thestar.com/news/world/middle-east/this-jewish-ex-cop-will-represent-an-islamist-party-in-israel-s-newly-elected-parliament/article_9737ed66-8df5-58da-b279-adcd3bbf51eb.html",
    "2026-10-31T05:08:09+00:00",
    1
+  ],
+  [
+   "Sat 1:07 a.m.",
+   "World",
+   "Mohammed Deif, rare footage and October 7 documents",
+   "Al Jazeera",
+   "https://www.aljazeera.com/video/newsfeed/2026/10/31/mohammed-deif-rare-footage-and-october-7-documents?traffic_source=rss",
+   "2026-10-31T05:07:34+00:00",
+   1
+  ],
+  [
+   "Sat 1:07 a.m.",
+   "U.S.",
+   "Trump tells voters to send El-Sayed ‘back to where he came from’",
+   "Al Jazeera",
+   "https://www.aljazeera.com/video/newsfeed/2026/10/31/trump-tells-voters-to-send-el-sayed-back-to-where-he-came?traffic_source=rss",
+   "2026-10-31T05:07:25+00:00",
+   2
   ],
   [
    "Sat 1:06 a.m.",
@@ -245,33 +272,6 @@
    "https://www.cbsnews.com/news/judge-orders-doj-stop-threaten-intimidate-california-election-officials/",
    "2026-10-31T02:50:32+00:00",
    2
-  ],
-  [
-   "Fri 10:46 p.m.",
-   "Politics",
-   "Haley Stevens and Abdul El-Sayed clash over Israel ad ahead of planned rally together",
-   "NBC News",
-   "https://www.nbcnews.com/politics/2026-election/haley-stevens-abdul-el-sayed-clash-israel-ad-ahead-sunday-rally-rcna606657",
-   "2026-10-31T02:46:41+00:00",
-   1
-  ],
-  [
-   "Fri 10:44 p.m.",
-   "World",
-   "Hundreds evacuated from Melania-brokered ceasefire town of Oleshky",
-   "Al Jazeera",
-   "https://www.aljazeera.com/video/newsfeed/2026/10/31/hundreds-evacuated-from-melania-brokered-ceasefire-town-of-oleshky?traffic_source=rss",
-   "2026-10-31T02:44:38+00:00",
-   1
-  ],
-  [
-   "Fri 10:39 p.m.",
-   "Canada",
-   "Trump's tariffs could shutter this Canadian town - its residents are fighting to save it",
-   "BBC News",
-   "https://www.bbc.co.uk/news/articles/cmly016ep243o?at_medium=RSS&at_campaign=rss",
-   "2026-10-31T02:39:25+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -317,10 +317,10 @@
    "theme": "Canada and the U.S."
   },
   {
-   "score": 17,
+   "score": 16,
    "title": "Carney says, unequivocally, Canada seeking to become the EU's 1st associate member",
    "url": "https://www.cbc.ca/news/politics/european-union-canada-associate-member-von-der-leyen-9.7401989",
-   "outlets": 5,
+   "outlets": 4,
    "why": [
     "National Newswatch #7",
     "CBC News front #4",
@@ -328,6 +328,14 @@
     "National Newswatch #17"
    ],
    "theme": "Canada and the EU"
+  },
+  {
+   "score": 12,
+   "title": "Trump tells voters to send El-Sayed ‘back to where he came from’",
+   "url": "https://www.aljazeera.com/video/newsfeed/2026/10/31/trump-tells-voters-to-send-el-sayed-back-to-where-he-came?traffic_source=rss",
+   "outlets": 10,
+   "why": [],
+   "theme": ""
   },
   {
    "score": 11,
@@ -340,14 +348,6 @@
     "National Newswatch #10",
     "National Newswatch #18"
    ],
-   "theme": ""
-  },
-  {
-   "score": 11,
-   "title": "FBI visits Dan J. Sullivan donor in candidate's home town as Alaska Senate inquiry widens",
-   "url": "https://www.thestar.com/news/world/united-states/fbi-visits-dan-j-sullivan-donor-in-candidate-s-home-town-as-alaska-senate-inquiry-widens/article_50a34b95-573b-5ecf-a0fa-245497f3ae0d.html",
-   "outlets": 9,
-   "why": [],
    "theme": ""
   },
   {
@@ -494,9 +494,9 @@
      "union",
      "eu"
     ],
-    "score": 17,
-    "outlets": 12,
-    "carriers": 18,
+    "score": 16,
+    "outlets": 11,
+    "carriers": 17,
     "tag": "Developing",
     "title": "Carney pursuing ‘associate’ EU membership",
     "url": "https://www.ctvnews.ca/politics/article/carney-pursuing-associate-eu-membership/",
@@ -519,7 +519,7 @@
      "outlet": "CTV News",
      "url": "https://www.ctvnews.ca/politics/article/carney-pursuing-associate-eu-membership/"
     },
-    "independent": 12,
+    "independent": 11,
     "reports": [
      {
       "t": "Fri 8:30 p.m.",
@@ -618,19 +618,19 @@
       "desc": ""
      },
      {
-      "t": "Fri 4:00 p.m.",
-      "iso": "2026-10-30T20:00:10+00:00",
-      "outlet": "Al Jazeera",
-      "title": "EU and Canada seek deeper ties amid worsening global uncertainty",
-      "url": "https://www.aljazeera.com/news/2026/10/30/eu-and-canada-seek-deeper-ties-amid-worsening-global-uncertainty?traffic_source=rss",
-      "desc": ""
-     },
-     {
       "t": "Fri 3:42 p.m.",
       "iso": "2026-10-30T19:42:15+00:00",
       "outlet": "The Guardian",
       "title": "Canada and EU announce new alliance open to like-minded countries",
       "url": "https://www.theguardian.com/world/2026/oct/30/canada-european-union-alliance",
+      "desc": ""
+     },
+     {
+      "t": "Fri 3:25 p.m.",
+      "iso": "2026-10-30T19:25:06+00:00",
+      "outlet": "PBS NewsHour",
+      "title": "Canada is taking steps toward becoming European Union's first associate member",
+      "url": "https://www.pbs.org/newshour/world/canada-is-taking-steps-toward-becoming-european-unions-first-associate-member",
       "desc": ""
      }
     ],
@@ -793,23 +793,6 @@
       "copies": []
      },
      {
-      "t": "Fri 4:00 p.m.",
-      "primary": false,
-      "outlet": "Al Jazeera",
-      "title": "EU and Canada seek deeper ties amid worsening global uncertainty",
-      "url": "https://www.aljazeera.com/news/2026/10/30/eu-and-canada-seek-deeper-ties-amid-worsening-global-uncertainty?traffic_source=rss",
-      "desc": "Both sides signed a digital trade deal, as Trump's trade threats push Washington's allies to seek closer ties elsewhere.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Al Jazeera",
-        "src": "Al Jazeera",
-        "byline": "{\"@type\":\"Person\",\"name\":\"Al Jazeera Staff\",} Al Jazeera Staff Add Al Jazeera on Google By "
-       }
-      ],
-      "copies": []
-     },
-     {
       "t": "Fri 3:42 p.m.",
       "primary": false,
       "outlet": "The Guardian",
@@ -825,6 +808,23 @@
        }
       ],
       "copies": []
+     },
+     {
+      "t": "Fri 3:25 p.m.",
+      "primary": false,
+      "outlet": "PBS NewsHour",
+      "title": "Canada is taking steps toward becoming European Union's first associate member",
+      "url": "https://www.pbs.org/newshour/world/canada-is-taking-steps-toward-becoming-european-unions-first-associate-member",
+      "desc": "Prime Minister Mark Carney said he would attend a meeting of European leaders in June to conclude negotiations on the proposed relationship.",
+      "wire": "The Associated Press",
+      "by": [
+       {
+        "outlet": "PBS NewsHour",
+        "src": "The Associated Press",
+        "byline": "Rob Gillies, Associated Press"
+       }
+      ],
+      "copies": []
      }
     ],
     "replaces_top": false,
@@ -834,7 +834,7 @@
     "canus": false,
     "popular": 0,
     "us_election": false,
-    "weight": 41,
+    "weight": 40,
     "videos": [
      {
       "net": "CBC News",
@@ -874,11 +874,11 @@
     "key": "auto-5818c324",
     "words": [
      "justice",
-     "alaska",
      "senate",
+     "alaska",
      "dan"
     ],
-    "score": 11,
+    "score": 12,
     "outlets": 4,
     "carriers": 6,
     "tag": "Developing",
@@ -1050,7 +1050,7 @@
     "canus": false,
     "popular": 0,
     "us_election": false,
-    "weight": 21.0,
+    "weight": 22.0,
     "videos": [
      {
       "net": "Fox News",
@@ -1108,23 +1108,23 @@
     "url": "https://www.ctvnews.ca/politics/article/carney-pursuing-associate-eu-membership/",
     "rank": 2,
     "live": "",
-    "weight": 41,
-    "score": 17,
-    "independent": 12,
+    "weight": 40,
+    "score": 16,
+    "independent": 11,
     "most_read": 0,
     "canada": "canadian",
     "theme": "Canada and the EU",
     "top": true,
     "rule": "Canadian, still developing",
-    "carriers": 18
+    "carriers": 17
    },
    {
     "title": "FBI visits Dan J. Sullivan donor in candidate's home town as Alaska Senate inquiry widens",
     "url": "https://www.thestar.com/news/world/united-states/fbi-visits-dan-j-sullivan-donor-in-candidate-s-home-town-as-alaska-senate-inquiry-widens/article_50a34b95-573b-5ecf-a0fa-245497f3ae0d.html",
     "rank": 3,
     "live": "",
-    "weight": 21.0,
-    "score": 11,
+    "weight": 22.0,
+    "score": 12,
     "independent": 4,
     "most_read": 0,
     "canada": "tie",
@@ -1633,7 +1633,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=YAKJrEB7IQ4",
    "img": "https://i.ytimg.com/vi/YAKJrEB7IQ4/hqdefault.jpg",
-   "up": "2026-10-31",
+   "up": "2026-10-30",
    "added": "2026-10-31T03:38:22.058425+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1647,7 +1647,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=cTnofqFkahk",
    "img": "https://i.ytimg.com/vi/cTnofqFkahk/hqdefault.jpg",
-   "up": "2026-10-31",
+   "up": "2026-10-30",
    "added": "2026-10-31T03:38:22.058425+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1863,20 +1863,6 @@
    "geo": "unknown"
   },
   {
-   "id": "EUETumdLtdk",
-   "r": "us",
-   "o": "Associated Press",
-   "t": "Jewish and Palestinian citizens in Israel react to the election results",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=EUETumdLtdk",
-   "img": "https://i.ytimg.com/vi/EUETumdLtdk/hqdefault.jpg",
-   "up": "2026-10-30",
-   "added": "2026-10-31T01:38:46.063204+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "kxB2HqO-u7I",
    "r": "us",
    "o": "NBC News",
@@ -1915,20 +1901,6 @@
    "img": "https://i.ytimg.com/vi/UlBQDI7jrjk/hqdefault.jpg",
    "up": "2026-10-30",
    "added": "2026-10-31T02:54:01.111899+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "aoKjs6-EE94",
-   "r": "us",
-   "o": "Fox News",
-   "t": "Gutfeld: There are 2 SCANDALS going on",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=aoKjs6-EE94",
-   "img": "https://i.ytimg.com/vi/aoKjs6-EE94/hqdefault.jpg",
-   "up": "2026-10-31",
-   "added": "2026-10-31T03:38:22.058425+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1989,6 +1961,34 @@
    "geo": "unknown"
   },
   {
+   "id": "LoY0-J38guY",
+   "r": "us",
+   "o": "Fox News",
+   "t": "‘DECOY DAN’: Brit Hume breaks down DOJ investigation into Alaska ballot controversy",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=LoY0-J38guY",
+   "img": "https://i.ytimg.com/vi/LoY0-J38guY/hqdefault.jpg",
+   "up": "2026-10-31",
+   "added": "2026-10-31T05:32:08.510163+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "H-ZBTZm-tDI",
+   "r": "us",
+   "o": "Associated Press",
+   "t": "Oleshky residents begin evacuation journey as local Ukraine-Russia truce holds",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=H-ZBTZm-tDI",
+   "img": "https://i.ytimg.com/vi/H-ZBTZm-tDI/hqdefault.jpg",
+   "up": "2026-10-31",
+   "added": "2026-10-31T05:32:08.510163+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
    "id": "y--fchKoVJM",
    "r": "world",
    "o": "Al Jazeera",
@@ -2006,7 +2006,7 @@
    "id": "VNslMg2kDog",
    "r": "world",
    "o": "Sky News",
-   "t": "Should the 'manosphere' be deemed a public health risk?",
+   "t": "Is the 'manosphere' as dangerous as smoking?",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=VNslMg2kDog",
@@ -2095,7 +2095,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=9Frq75pZo9E",
    "img": "https://i.ytimg.com/vi/9Frq75pZo9E/hqdefault.jpg",
-   "up": "2026-10-31",
+   "up": "2026-10-30",
    "added": "2026-10-31T03:28:21.707864+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -2381,6 +2381,13 @@
  ],
  "eds": [
   [
+   "Toronto Star",
+   "Opinion",
+   "Theo Moudakis on Canada's new role in the E.U.",
+   "https://www.thestar.com/opinion/editorial-cartoons/theo-moudakis-on-canada-s-new-role-in-the-e-u/article_693b9be6-e44d-41ad-a1be-927d53ea14eb.html",
+   "2026-10-30T10:00:00+00:00"
+  ],
+  [
    "National Post",
    "Column · Terry Newman",
    "Standing alone is brave, actually",
@@ -2442,13 +2449,6 @@
    "California transplants in Texas are voting Democrat, and they see no irony in it",
    "https://www.foxnews.com/opinion/david-marcus-california-transplants-texas-voting-democrat-see-no-irony",
    "2026-10-30T23:31:35+00:00"
-  ],
-  [
-   "The Wall Street Journal (subscribers)",
-   "Opinion",
-   "Pepper…and Salt",
-   "https://www.wsj.com/opinion/pepperand-salt-1ce8a679?mod=rss_opinion",
-   "2026-10-31T04:30:00+00:00"
   ]
  ],
  "canus": {
@@ -2879,11 +2879,11 @@
   {
    "city": "Washington",
    "w": "The vote",
-   "u": "https://www.thestar.com/news/world/united-states/fbi-visits-dan-j-sullivan-donor-in-candidate-s-home-town-as-alaska-senate-inquiry-widens/article_50a34b95-573b-5ecf-a0fa-245497f3ae0d.html",
-   "title": "FBI visits Dan J. Sullivan donor in candidate's home town as Alaska Senate inquiry widens",
-   "outlet": "Toronto Star",
-   "t": "Sat 12:19 a.m.",
-   "hot": false
+   "u": "https://www.aljazeera.com/video/newsfeed/2026/10/31/trump-tells-voters-to-send-el-sayed-back-to-where-he-came?traffic_source=rss",
+   "title": "Trump tells voters to send El-Sayed ‘back to where he came from’",
+   "outlet": "Al Jazeera",
+   "t": "Sat 1:07 a.m.",
+   "hot": true
   },
   {
    "city": "Tehran",
@@ -2973,8 +2973,8 @@
     "url": "https://www.youtube.com/watch?v=hWNN_REXBx0"
    },
    {
-    "net": "FRANCE 24 English",
-    "url": "https://www.youtube.com/watch?v=HvZt-nh9sGg"
+    "net": "euronews",
+    "url": "https://www.youtube.com/watch?v=pykpO5kQJ98"
    }
   ]
  },
@@ -2982,8 +2982,8 @@
  "blogs_auto": [
   {
    "net": "Al Jazeera",
-   "story": "Iran war live: 4 tankers hit in Hormuz; Trump says conflict will end s",
-   "title": "Iran war live: 4 tankers hit in Hormuz; Trump says conflict will end soon",
+   "story": "Iran war live: 4 tankers hit in Hormuz; Trump says conflict will end ‘",
+   "title": "Iran war live: 4 tankers hit in Hormuz; Trump says conflict will end ‘soon’",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/31/iran-war-live-oil-tankers-hit-in-hormuz-trump-says-conflict-will-end-soon?traffic_source=rss",
    "updated": "2026-10-31T05:22:29+00:00",
    "ended": false,
@@ -3290,7 +3290,7 @@
  },
  "canangle_live": {
   "https://www.aljazeera.com/news/liveblog/2026/10/31/iran-war-live-oil-tankers-hit-in-hormuz-trump-says-conflict-will-end-soon?traffic_source=rss": {
-   "story": "Iran war live: 4 tankers hit in Hormuz; Trump says conflict will end soon",
+   "story": "Iran war live: 4 tankers hit in Hormuz; Trump says conflict will end ‘soon’",
    "us": true,
    "specific": 5,
    "stories": [
@@ -4406,12 +4406,10 @@
   "-NabWfv-VdA"
  ],
  "noembed": [
-  "0bLqaqPAt_k",
   "A_p82aTTRbE",
   "J3FV4iY8p5w",
   "L6qtnHZxwEw",
   "NuEr0Q_AS6U",
-  "c9v26lW7-j4",
   "ldElU-Q5Qyo",
   "nfy6JJILPJI",
   "t_HBrWb84eY",
