@@ -7341,4 +7341,106 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
 })();
 </script>
 <!-- end dedupe layer -->
+<!-- the big week ahead under the Canada desk; Canada and the U.S. lists that keep themselves current (Hannah, Sat Oct 31, 2026); source: tools/week_layer.html -->
+<style id="bigweek-css">
+/* The big week ahead, right under the Canada desk (Hannah, Sat Oct 31, 2026): tools/autopilot.py big_week */
+#bigWeek { margin: 28px 0 8px; scroll-margin-top: 64px; }
+#bigWeek .bw-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+#bigWeek .bw-card { background: var(--surface); border: 1px solid var(--line); border-top: 4px solid var(--wine); border-radius: 10px; padding: 14px 16px 10px; }
+#bigWeek .bw-when { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--wine); }
+#bigWeek .bw-count { display: inline-block; padding: 2px 9px; border-radius: 999px; background: var(--wine); color: #FFFFFF; letter-spacing: .04em; }
+#bigWeek .bw-count.today { background: #D0122E; }
+#bigWeek h3 { margin: 6px 0 2px; font-family: var(--serif); font-size: 24px; line-height: 1.15; color: var(--title); }
+#bigWeek .bw-what { margin: 0 0 8px; font-size: 14px; color: var(--muted); }
+#bigWeek ol { list-style: none; margin: 0; padding: 0; }
+#bigWeek li { padding: 8px 0; border-top: 1px solid var(--line); font-size: 15px; line-height: 1.4; }
+#bigWeek li a { color: var(--ink); text-decoration: none; }
+#bigWeek li a:hover { text-decoration: underline; }
+#bigWeek li time { display: block; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+#bigWeek li .o { margin-left: 4px; font-size: 11.5px; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; color: var(--wine); white-space: nowrap; }
+#bigWeek li .o::before { content: "\2014\00a0"; font-weight: 400; color: var(--muted); }
+#bigWeek li .ca { display: inline-block; margin-right: 6px; padding: 0 7px; border-radius: 999px; background: #B23A55; color: #FFFFFF; font-size: 10.5px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; vertical-align: 1px; }
+#bigWeek .bw-soon { margin: 6px 0 4px; font-size: 14px; color: var(--muted); font-style: italic; }
+#bigWeek .bw-note { margin: 10px 0 0; font-size: 12px; color: var(--muted); }
+</style>
+<script id="week-js">
+(function () {
+  // Two lists that keep themselves current, every time the page loads and every 2 minutes:
+  //  1. The big week ahead (tools/autopilot.py big_week), placed right under the Canada desk, with a countdown.
+  //  2. Canada and the U.S.: "What comes next" drops an item the day after its date has passed, and "This week" keeps
+  //     the last THIS_WEEK_DAYS days only, with the newest Canada-U.S. reports added at the top (Hannah, Sat Oct 31, 2026: "Once
+  //     Tuesday, October 27th is over, it should come off that list").
+  const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const THIS_WEEK_DAYS = 3;  // "This week" keeps today and the two days before: a day's items come off once it is over
+  const MON = { jan: 0, feb: 1, mar: 2, apr: 3, may: 4, jun: 5, jul: 6, aug: 7, sep: 8, oct: 9, nov: 10, dec: 11 };
+  function todayET() { const p = new Date().toLocaleDateString('en-CA', { timeZone: 'America/Toronto' }).split('-'); return new Date(+p[0], +p[1] - 1, +p[2]); }
+  // the last date written in a label like "Tue Oct. 27", "Thu Oct. 29–Fri Oct. 30" or "Fri Jan. 1, 2027"
+  function lastDate(txt, today, future) {
+    const m = [...String(txt).matchAll(/\b(Jan|Feb|Mar|Apr|May|June?|July?|Aug|Sept?|Oct|Nov|Dec)[a-z]*\.?\s+(\d{1,2})(?:,\s*(\d{4}))?/gi)];
+    if (!m.length) return null;
+    const x = m[m.length - 1], mo = MON[x[1].slice(0, 3).toLowerCase()];
+    let y = x[3] ? +x[3] : today.getFullYear();
+    let d = new Date(y, mo, +x[2]);
+    if (!x[3]) { const diff = (d - today) / 864e5; if (future && diff < -180) d = new Date(y + 1, mo, +x[2]); if (!future && diff > 180) d = new Date(y - 1, mo, +x[2]); }
+    return d;
+  }
+  const label = (d) => d.toLocaleDateString('en-CA', { weekday: 'short' }) + ' ' + d.toLocaleDateString('en-US', { month: 'short' }).replace(/^(\w{3})$/, '$1.').replace('May.', 'May') + ' ' + d.getDate();
+  function bigWeek(D) {
+    const E = (D && D.bigweek) || [], today = todayET();
+    let sec = document.getElementById('bigWeek');
+    const live = E.filter((e) => { const d = new Date(e.date + 'T00:00:00'); const days = Math.round((d - today) / 864e5); e._days = days; e._d = d; return days >= -1 && days <= 8; });
+    if (!live.length) { if (sec) sec.hidden = true; return; }
+    if (!sec) { sec = document.createElement('section'); sec.id = 'bigWeek'; sec.className = 'ruled'; sec.setAttribute('aria-labelledby', 'bw-h'); }
+    const desk = document.getElementById('sec-canada');
+    if (desk && desk.nextElementSibling !== sec) desk.after(sec);
+    else if (!desk && !sec.parentNode) { const a = document.getElementById('autoBreaking'); if (a) a.after(sec); }
+    const count = (n) => n === 0 ? '<span class="bw-count today">Today</span>' : n === -1 ? '<span class="bw-count">Yesterday</span>' : n === 1 ? '<span class="bw-count">Tomorrow</span>' : '<span class="bw-count">In ' + n + ' days</span>';
+    sec.innerHTML = '<div class="band-head"><h2 id="bw-h">The big week ahead</h2><p>The scheduled events the news is building to, with the newest reports on each. Every line links to the newsroom that reported it.</p></div><div class="bw-grid">'
+      + live.map((e) => '<article class="bw-card"><div class="bw-when">' + esc(label(e._d)) + count(e._days) + '</div><h3>' + esc(e.name) + '</h3>'
+        + (e.what ? '<p class="bw-what">' + esc(e.what) + '</p>' : '')
+        + (e.reports && e.reports.length ? '<ol>' + e.reports.map((r) => '<li><time>' + esc(r.t) + '</time>' + (r.canada && !/Canad|budget/i.test(e.name) ? '<span class="ca">Canada</span>' : '') + '<a href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(r.title) + '</a><span class="o">' + esc(r.outlet) + ' &#8599;</span></li>').join('') + '</ol>'
+          : '<p class="bw-soon">Coverage builds through the week. The newest reports appear here as they are published.</p>')
+        + '</article>').join('') + '</div><p class="bw-note">Checked automatically ' + esc(new Date(D.checked).toLocaleTimeString('en-CA', { hour: 'numeric', minute: '2-digit', timeZone: 'America/Toronto' })) + ' ET.</p>';
+    sec.hidden = false;
+  }
+  function canusLists(D) {
+    const cu = document.getElementById('canus'); if (!cu) return;
+    const today = todayET();
+    // What comes next: an item whose (last) date has passed comes off; "Watching" items stay
+    cu.querySelectorAll('.cu-next > li').forEach((li) => {
+      const d = lastDate((li.querySelector('.cu-when') || {}).textContent || '', today, true);
+      if (d && d < today) li.remove();
+    });
+    // This week: the last 7 days only
+    const wk = [...cu.querySelectorAll('.cu-col')].map((c) => c.querySelector('ol.cu-list:not(.cu-next):not(.cu-tl)')).find(Boolean);
+    if (!wk) return;
+    wk.querySelectorAll(':scope > li').forEach((li) => {
+      const d = lastDate((li.querySelector('.cu-when') || {}).textContent || '', today, false);
+      if (d && (today - d) / 864e5 > THIS_WEEK_DAYS - 1) li.remove();
+    });
+    // ... with the newest Canada-U.S. reports from the update added at the top, newest first
+    const T = ((D && D.canus && D.canus.talks) || []).filter((r) => r.iso && (Date.now() - Date.parse(r.iso)) < THIS_WEEK_DAYS * 864e5);
+    const have = new Set([...wk.querySelectorAll('a')].map((a) => a.href.split('?')[0]));
+    wk.querySelectorAll(':scope > li.cu-auto-li').forEach((li) => li.remove());
+    const add = T.filter((r) => !have.has(r.url.split('?')[0])).slice(0, 5).reverse();
+    add.forEach((r) => {
+      const d = new Date(Date.parse(r.iso)); const et = new Date(d.toLocaleString('en-US', { timeZone: 'America/Toronto' }));
+      wk.insertAdjacentHTML('afterbegin', '<li class="cu-auto-li"><span class="cu-when">' + esc(label(et)) + '</span><p><b>' + esc(r.title) + '</b></p><small><a href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(r.outlet) + '</a></small></li>');
+    });
+    const p = cu.querySelector('.band-head p');
+    if (p && D && D.checked) p.innerHTML = p.innerHTML.replace(/Updated [^.]*?\d{1,2}:\d{2} [ap]\.m\. ET\.|Checked automatically [^.]*? ET\./, 'Checked automatically ' + esc(new Date(D.checked).toLocaleString('en-CA', { weekday: 'long', hour: 'numeric', minute: '2-digit', timeZone: 'America/Toronto' }).replace(',', '')) + ' ET.');
+  }
+  let D = null;
+  async function load() {
+    try { const r = await fetch('live/auto.json?t=' + Date.now(), { cache: 'no-store' }); if (r.ok) D = await r.json(); } catch (e) {}
+    try { bigWeek(D); } catch (e) { console.warn('bigweek', e); }
+    try { canusLists(D); } catch (e) { console.warn('canus lists', e); }
+  }
+  setTimeout(load, 200); setInterval(load, 120000);
+  // the Canada desk is drawn after load: keep the big week right under it
+  new MutationObserver(() => { const s = document.getElementById('bigWeek'), d = document.getElementById('sec-canada'); if (s && d && d.nextElementSibling !== s) d.after(s); })
+    .observe(document.body, { childList: true, subtree: true });
+})();
+</script>
+<!-- end week layer -->
 </body></html>

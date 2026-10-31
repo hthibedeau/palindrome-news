@@ -2491,6 +2491,94 @@ def clock_topics(items, groups, now):
     return out
 
 
+# ===== The big week ahead (Hannah, Sat Oct 31, 2026: "With big news stories like the midterms next week, like the
+# budget next week, they should move up under the Canada desk"). A scheduled event that newsrooms are already covering
+# gets its own package right under the Canada desk from BIG_DAYS_BEFORE days before until BIG_DAYS_AFTER day after:
+# its date and a countdown, and the newest reports on it, one per newsroom. Two kinds:
+#   - BIG_EVENTS, named here once their date is set (budget days, elections, summits);
+#   - found in the news by itself: headlines that give a date for a budget, election, vote, throne speech, economic
+#     statement, summit, interest rate decision or ruling, carried by BIG_MIN_OUTLETS newsrooms or more.
+BIG_DAYS_BEFORE, BIG_DAYS_AFTER, BIG_MIN_OUTLETS, BIG_MAX = 8, 1, 3, 3
+BIG_EVENTS = [  # name, date (Eastern), what it is, the headlines about it (both must match: the event and its place)
+    ("U.S. midterm elections", "2026-11-03", "The United States votes for Congress, governors and more",
+     r"\b(midterms?|Election Day|early voting|House races?|Senate races?|battleground|ballots?)\b", r"\b(U\.?S\.?|American|Americans|Trump|Republicans?|Democrats?|GOP|Congress|Senate|House)\b"),
+    ("Federal budget", "2026-11-05", "Finance Minister François-Philippe Champagne tables Ottawa's budget",
+     r"\bbudget\b", r"\b(federal|Champagne|Carney|Ottawa|Liberals?|PBO|parliamentary budget officer|deficit|fall budget|budget day|finance minister|tax breaks?)\b"),
+]
+BIG_KINDS = r"(?:federal budget|provincial budget|budget|election|by-?election|vote|referendum|throne speech|fall economic statement|economic update|summit|rate decision|interest rate announcement|ruling|verdict|sentencing)"
+MONTHS = {m: i for i, m in enumerate(["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"], 1)}
+
+
+def big_week(items, now):
+    import autoupdate as au
+    from collections import Counter
+    from zoneinfo import ZoneInfo
+    et = ZoneInfo("America/Toronto")
+    today = now.astimezone(et).date()
+    events = [(n, datetime.strptime(d, "%Y-%m-%d").date(), what, re.compile(a, re.I), re.compile(b, re.I), True) for n, d, what, a, b in BIG_EVENTS]
+    # found in the news: "<kind> ... on|set for|scheduled for <Month> <day>" in several newsrooms' headlines
+    found = Counter()
+    rx_date = re.compile(r"\b(" + BIG_KINDS + r")\b[^.?!]{0,60}?\b(?:on|set for|scheduled for|due|coming|slated for|to be (?:tabled|released|delivered|held) on)\s+"
+                         r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?\s+(\d{1,2})\b", re.I)
+    who = {}
+    for dt, outlet, title, link, _ in items:
+        if (now - dt).total_seconds() > 14 * 86400:
+            continue
+        m = rx_date.search(title)
+        if not m:
+            continue
+        mon, day = MONTHS[m.group(2)[:3].lower()], int(m.group(3))
+        try:
+            d = today.replace(month=mon, day=day)
+        except ValueError:
+            continue
+        if d < today - timedelta(days=BIG_DAYS_AFTER):
+            d = d.replace(year=d.year + 1)
+        kind = m.group(1).lower()
+        key = (kind, d)
+        found[key] += 1
+        who.setdefault(key, set()).add(au.clean_outlet(outlet))
+        who.setdefault(("t",) + key, title)
+    for (kind, d), n in found.items():
+        if len(who[(kind, d)]) < BIG_MIN_OUTLETS or any(e[1] == d and re.search(kind.split()[-1], e[0], re.I) for e in events):
+            continue
+        t = who[("t", kind, d)]
+        place = re.findall(r"\b([A-Z][a-z]+(?: [A-Z][a-z]+)?)\b", t)
+        name = (place[0] + " " if place and place[0].lower() not in kind else "") + kind
+        events.append((name[:1].upper() + name[1:], d, "", re.compile(r"\b" + re.escape(kind.split()[-1]) + r"\b", re.I),
+                       re.compile("|".join(re.escape(p_) for p_ in place[:3]) or kind), False))
+    out = []
+    for name, d, what, ra, rb, named in events:
+        days = (d - today).days
+        if days > BIG_DAYS_BEFORE or days < -BIG_DAYS_AFTER:
+            continue
+        reps, seen, seen_t = [], set(), set()
+        for dt, outlet, title, link, _ in sorted(items, key=lambda x: x[0], reverse=True):
+            if (now - dt).total_seconds() > 5 * 86400 or not (ra.search(title) and rb.search(title)):
+                continue
+            o = au.clean_outlet(outlet)
+            k = re.sub(r"\W", "", title.lower())[:60]
+            globe = "theglobeandmail.com" in link  # the Globe for its subscribers, never first (Hannah's rule)
+            if (o in seen or k in seen_t or (not globe and not au.ok_item(outlet, link)) or au.OPINION.search(title + " " + link)
+                    or SPORT.search(title + " " + link) or NOT_NEWS.search(title + " " + link) or VIDEO.search(link)):
+                continue
+            seen.add(o); seen_t.add(k)
+            reps.append({"t": w.eastern(dt), "iso": dt.isoformat(), "outlet": o.replace(" (subscribers)", "") + (" (subscribers)" if globe else ""),
+                         "title": clean(title), "url": link, "canada": bool(CAN_TIE.search(title)), "paywall": globe})
+            if len(reps) >= 6:
+                break
+        # an event found in the news needs two reports; one named in BIG_EVENTS shows from its date alone
+        if len(reps) < (0 if named else 2):
+            continue
+        # a story from abroad: the Canadian angle first among its reports
+        if not CAN_TIE.search(name):
+            reps.sort(key=lambda r: not r["canada"])
+        reps.sort(key=lambda r: r.get("paywall", False))  # the Globe last
+        out.append({"name": name, "date": d.isoformat(), "what": what, "days": days, "reports": reps[:5]})
+    out.sort(key=lambda e: e["date"])
+    return out[:BIG_MAX]
+
+
 def gather_themes(items, groups, now):
     """A running event (lead_check.THEMES, kept whole) is one story however it is reported. Every report in the feed
     whose headline names both sides of the event goes into its group, and the event gets a group of its own when the
@@ -2544,7 +2632,8 @@ def run(page, items, groups, breaking, now, imgdir, prev):
                     ("canus", lambda: canus(items, now)), ("brief", lambda: brief(groups, now)),
                     ("otr", lambda: on_the_record(page, now)), ("mostread", lambda: most_read(now)),
                     ("smaller", lambda: smaller(items, page, now, imgdir)),
-                    ("clocks", lambda: clock_topics(items, groups, now))]:
+                    ("clocks", lambda: clock_topics(items, groups, now)),
+                    ("bigweek", lambda: big_week(items, now))]:
         try:
             res[name] = f()
         except Exception as e:  # never block the run
