@@ -2667,10 +2667,50 @@ BIG_OFFICIAL = {  # an event's own official site, always listed first: event nam
     "Federal budget": [("Department of Finance Canada", "https://budget.canada.ca/", "The official budget site, where the budget is published on budget day")],
     "U.S. midterm elections": [("U.S. Election Assistance Commission", "https://www.eac.gov/", "The U.S. federal agency for elections: voting dates, results and how Americans vote")],
 }
+# Past coverage is searched for, not waited for (Hannah, Sat Oct 31, 2026: "Where are the previous stories on the federal
+# budget? Why do I have to keep asking you to put stories into a feed? This needs to be written into the code"). Each
+# update searches Bing News for every event (BIG_QUERIES, or the event's name), keeps only links to the newsroom's own
+# site (never a copy on MSN or Yahoo), and adds what matches the event to its newest reports and earlier coverage.
+BIG_QUERIES = {"Federal budget": ["federal budget Champagne", "Budget 2026 Canada", "federal budget November 5", "Champagne budget deficit"],
+               "U.S. midterm elections": ["U.S. midterms Canada", "midterm elections 2026", "midterms Senate House races"]}
+BIG_SEARCH_SKIP = re.compile(r"msn\.com|yahoo\.com|news\.google|bing\.com|aol\.com|newsbreak|/opinion|/life/|/style/|/sports?/|/video/|/podcasts?/", re.I)
+# searched coverage only from established newsrooms (their own sites)
+BIG_SEARCH_TRUSTED = re.compile(r"(?:^|\.|//)(cbc\.ca|ctvnews\.ca|globalnews\.ca|thestar\.com|theglobeandmail\.com|nationalpost\.com|financialpost\.com|"
+    r"cp24\.com|citynews\.ca|bnnbloomberg\.ca|thecanadianpress\.com|ipolitics\.ca|hilltimes\.com|thehub\.ca|macleans\.ca|nationalobserver\.com|"
+    r"thelogic\.co|ottawacitizen\.com|montrealgazette\.com|vancouversun\.com|calgaryherald\.com|edmontonjournal\.com|torontosun\.com|"
+    r"winnipegfreepress\.com|timescolonist\.com|durhamradionews\.com|castanet\.net|cheknews\.ca|saltwire\.com|thetyee\.ca|halifaxexaminer\.ca|"
+    r"lethbridgeherald\.com|reuters\.com|apnews\.com|bloomberg\.com|politico\.com|nytimes\.com|washingtonpost\.com|wsj\.com|theguardian\.com|"
+    r"bbc\.co\.uk|bbc\.com|aljazeera\.com|npr\.org|cnn\.com|nbcnews\.com|cbsnews\.com|abcnews\.go\.com|abcnews\.com|axios\.com|thehill\.com|"
+    r"foxnews\.com|pbs\.org|ft\.com|economist\.com|usatoday\.com|latimes\.com|time\.com|newsweek\.com|france24\.com|dw\.com|euronews\.com|"
+    r"kyivindependent\.com|timesofisrael\.com)(?:/|$)", re.I)
 BIG_OFFICIAL_FEEDS = [("Government of Canada", "https://api.io.canada.ca/io-server/gc/news/en/v2?sort=publishedDate&orderBy=desc&pick=100&format=atom"),
                       ("Prime Minister of Canada", "https://www.pm.gc.ca/en/news.rss"), ("The White House", "https://www.whitehouse.gov/feed/")]
 BIG_KINDS = r"(?:federal budget|provincial budget|budget|election|by-?election|vote|referendum|throne speech|fall economic statement|economic update|summit|rate decision|interest rate announcement|ruling|verdict|sentencing)"
 MONTHS = {m: i for i, m in enumerate(["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"], 1)}
+
+
+def _news_search(q):
+    """Bing News results for a search: (date, newsroom, headline, the newsroom's own link)."""
+    import time, urllib.parse
+    from email.utils import parsedate_to_datetime
+    for attempt in range(3):
+        x = curl("https://www.bing.com/news/search?q=" + urllib.parse.quote(q) + "&format=rss&setlang=en-ca&cc=CA") or ""
+        its = re.findall(r"<item>(.*?)</item>", x, re.S)
+        if its:
+            break
+        time.sleep(1.5)
+    out = []
+    for it in its:
+        g = lambda k: _h.unescape((re.search(r"<" + k + r">(.*?)</" + k + ">", it, re.S) or [None, ""])[1]).strip()
+        u = urllib.parse.parse_qs(urllib.parse.urlparse(g("link")).query).get("url", [""])[0] or g("link")
+        src = re.sub(r"\s+on MSN$", "", g("News:Source")).replace("CBC.ca", "CBC News")
+        try:
+            dt = parsedate_to_datetime(g("pubDate")).astimezone(timezone.utc)
+        except Exception:
+            continue
+        if u and src and not BIG_SEARCH_SKIP.search(u) and BIG_SEARCH_TRUSTED.search(u):
+            out.append((dt, src, clean(g("title")), u))
+    return out
 
 
 def _day_label(dt):
@@ -2767,6 +2807,27 @@ def big_week(items, now, prev=()):
                          "title": clean(title), "url": link, "canada": bool(CAN_TIE.search(title)), "paywall": globe})
             if len(reps) >= 6:
                 break
+        # searched coverage: newest reports join the list, older ones become earlier coverage (below)
+        searched = []
+        for q in BIG_QUERIES.get(name, [name]):
+            try:
+                searched += _news_search(q)
+            except Exception as e:
+                print("big week search failed:", q, e)
+        have_u = {r["url"].split("?")[0] for r in reps}
+        for dt, o, title, link in sorted(searched, key=lambda x: x[0], reverse=True):
+            k = re.sub(r"\W", "", title.lower())[:60]
+            if ((now - dt).total_seconds() > 5 * 86400 or link.split("?")[0] in have_u or k in seen_t or o in seen
+                    or not (ra.search(title) and rb.search(title)) or NOT_NEWS.search(title) or len(reps) >= 8):
+                continue
+            globe = "theglobeandmail.com" in link
+            seen.add(o); seen_t.add(k); have_u.add(link.split("?")[0])
+            reps.append({"t": w.eastern(dt), "iso": dt.isoformat(), "outlet": o + (" (subscribers)" if globe else ""), "title": title, "url": link,
+                         "canada": bool(CAN_TIE.search(title)), "paywall": globe})
+        reps.sort(key=lambda r: r["iso"], reverse=True)
+        if not CAN_TIE.search(name):
+            reps.sort(key=lambda r: not r["canada"])
+        reps.sort(key=lambda r: r.get("paywall", False))
         # an event found in the news needs two reports; one named in BIG_EVENTS shows from its date alone
         if len(reps) < (0 if named else 2):
             continue
@@ -2787,6 +2848,15 @@ def big_week(items, now, prev=()):
         # earlier coverage: reports older than the newest ones, up to BIG_BACK_DAYS ago, one per newsroom
         shown = {r["url"] for r in reps[:5]}
         back, seen_b = [], set()
+        for dt, o, title, link in sorted(searched, key=lambda x: x[0], reverse=True):
+            age = (now - dt).total_seconds()
+            k = re.sub(r"\W", "", title.lower())[:60]
+            if (age <= 5 * 86400 or age > BIG_BACK_DAYS * 86400 or link in shown or k in seen_t or o in seen_b
+                    or not (ra.search(title) and rb.search(title)) or NOT_NEWS.search(title)):
+                continue
+            globe = "theglobeandmail.com" in link
+            seen_b.add(o); seen_t.add(k)
+            back.append({"t": _day_label(dt), "iso": dt.isoformat(), "outlet": o + (" (subscribers)" if globe else ""), "title": title, "url": link, "paywall": globe})
         for dt, outlet, title, link, _ in sorted(items, key=lambda x: x[0], reverse=True):
             age = (now - dt).total_seconds()
             if age <= 5 * 86400 or age > BIG_BACK_DAYS * 86400 or link in shown or not (ra.search(title) and rb.search(title)):
@@ -2822,7 +2892,7 @@ def big_week(items, now, prev=()):
         back.sort(key=lambda r: r.get("iso", ""), reverse=True)
         back = back[:6]
         back.sort(key=lambda r: r.get("paywall", False))
-        out.append({"name": name, "date": d.isoformat(), "what": what, "days": days, "reports": reps[:5], "official": official, "earlier": back})
+        out.append({"name": name, "date": d.isoformat(), "what": what, "days": days, "reports": reps[:8], "official": official, "earlier": back})
     out.sort(key=lambda e: e["date"])
     return out[:BIG_MAX]
 
