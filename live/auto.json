@@ -1,6 +1,6 @@
 {
- "checked": "2026-10-31T06:50:19.667047+00:00",
- "checkedLabel": "Sat 2:50 a.m.",
+ "checked": "2026-10-31T07:00:20.133283+00:00",
+ "checkedLabel": "Sat 3:00 a.m.",
  "stories": [
   {
    "key": "top",
@@ -317,7 +317,7 @@
    "theme": "Canada and the U.S."
   },
   {
-   "score": 13,
+   "score": 11,
    "title": "Carney says, unequivocally, Canada seeking to become the EU's 1st associate member",
    "url": "https://www.cbc.ca/news/politics/european-union-canada-associate-member-von-der-leyen-9.7401989",
    "outlets": 1,
@@ -361,14 +361,6 @@
    "theme": ""
   },
   {
-   "score": 7,
-   "title": "U.S., South Korea and Japan vow ‘complete’ denuclearization of North Korea",
-   "url": "https://www.japantimes.co.jp/news/2026/10/31/asia-pacific/politics/north-korea-denuclearization-vow/",
-   "outlets": 5,
-   "why": [],
-   "theme": ""
-  },
-  {
    "score": 6,
    "title": "Poilievre’s Brantford candidate choice prompts Conservative departures",
    "url": "https://www.chch.com/chch-news/poilievres-brantford-candidate-choice-prompts-conservative-departures/",
@@ -377,6 +369,14 @@
     "National Newswatch #16",
     "CBC News front #2"
    ],
+   "theme": ""
+  },
+  {
+   "score": 6,
+   "title": "U.S., South Korea and Japan vow ‘complete’ denuclearization of North Korea",
+   "url": "https://www.japantimes.co.jp/news/2026/10/31/asia-pacific/politics/north-korea-denuclearization-vow/",
+   "outlets": 4,
+   "why": [],
    "theme": ""
   },
   {
@@ -391,24 +391,33 @@
   },
   {
    "score": 5,
-   "title": "Some Backstreet Boys fans consider refund after Live Nation relocates them to cheaper, still-obstructed seats",
-   "url": "https://www.cbc.ca/news/canada/toronto/live-nation-relocates-backstreet-boys-fans-to-cheaper-obstructed-seats-9.7403274",
-   "outlets": 2,
-   "why": [
-    "CBC News front #6"
-   ],
-   "theme": ""
-  },
-  {
-   "score": 5,
    "title": "France to deploy 70,000 security personnel as it prepares for Halloween protests",
    "url": "https://www.euronews.com/2026/10/31/france-to-deploy-70000-security-personnel-as-it-prepares-for-halloween-protests",
    "outlets": 3,
    "why": [],
    "theme": ""
+  },
+  {
+   "score": 5,
+   "title": "Trump tells voters to send El-Sayed ‘back to where he came from’",
+   "url": "https://www.aljazeera.com/video/newsfeed/2026/10/31/trump-tells-voters-to-send-el-sayed-back-to-where-he-came?traffic_source=rss",
+   "outlets": 3,
+   "why": [],
+   "theme": ""
   }
  ],
- "canada": [],
+ "canada": [
+  {
+   "t": "Sat 3:00 a.m.",
+   "iso": "2026-10-31T07:00:47+00:00",
+   "region": "Manitoba",
+   "title": "Longtime school trustee Derek Dabee had ‘boundless energy,’ made people feel heard",
+   "summary": "Derek (Deva) Dabee wasn’t shy, be it on a stranger’s doorstep, in front of a camera or otherwise.",
+   "outlet": "Winnipeg Free Press",
+   "url": "https://www.winnipegfreepress.com/local/2026/10/31/derek-dabee-winnipeg-school-trustee-obituary",
+   "img": ""
+  }
+ ],
  "auto": {
   "takeover": true,
   "stale_since": "2026-10-28T00:15:00+00:00",
@@ -498,13 +507,13 @@
     "key": "auto-7924e4e8",
     "words": [
      "comey",
-     "fbi",
-     "doj"
+     "doj",
+     "fbi"
     ],
     "score": 9,
     "outlets": 5,
     "carriers": 6,
-    "tag": "Breaking",
+    "tag": "Developing",
     "title": "Federal judge blocks Trump DOJ threats against election workers ahead of 2026 midterms",
     "url": "https://www.foxnews.com/politics/federal-judge-blocks-trump-doj-threats-against-election-workers-ahead-2026-midterms",
     "outlet": "Fox News",
@@ -680,8 +689,8 @@
     "canada": "tie",
     "canus": false,
     "popular": 0,
-    "us_election": true,
-    "weight": 27.0,
+    "us_election": false,
+    "weight": 20.0,
     "videos": [
      {
       "net": "PBS NewsHour",
@@ -739,14 +748,14 @@
     "url": "https://www.foxnews.com/politics/federal-judge-blocks-trump-doj-threats-against-election-workers-ahead-2026-midterms",
     "rank": 2,
     "live": "",
-    "weight": 27.0,
+    "weight": 20.0,
     "score": 9,
     "independent": 5,
     "most_read": 0,
     "canada": "tie",
     "theme": "",
     "top": true,
-    "rule": "Breaking U.S. election story (with its Canadian angle)",
+    "rule": "From abroad, tied to Canada",
     "carriers": 6
    },
    {
@@ -754,8 +763,8 @@
     "url": "https://www.ctvnews.ca/politics/article/carney-pursuing-associate-eu-membership/",
     "rank": 3,
     "live": "",
-    "weight": 33,
-    "score": 13,
+    "weight": 31,
+    "score": 11,
     "independent": 11,
     "most_read": 0,
     "canada": "canadian",
@@ -790,22 +799,17 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "U.S., South Korea and Japan vow ‘complete’ denuclearization of North Korea",
-    "score": 7,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
     "title": "Poilievre’s Brantford candidate choice prompts Conservative departures",
     "score": 6,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Liberals jump ahead of Tories in fundraising as by-election calls loom",
-    "score": 5,
+    "title": "U.S., South Korea and Japan vow ‘complete’ denuclearization of North Korea",
+    "score": 6,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Some Backstreet Boys fans consider refund after Live Nation relocates them to cheaper, still-obstructed seats",
+    "title": "Liberals jump ahead of Tories in fundraising as by-election calls loom",
     "score": 5,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
@@ -817,6 +821,11 @@
    {
     "title": "Trump tells voters to send El-Sayed ‘back to where he came from’",
     "score": 5,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Some Backstreet Boys fans consider refund after Live Nation relocates them to cheaper, still-obstructed seats",
+    "score": 4,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
@@ -851,13 +860,13 @@
     "key": "auto-27bd6978",
     "words": [
      "associate",
-     "alliance",
      "european",
+     "alliance",
      "future",
      "union",
      "eu"
     ],
-    "score": 13,
+    "score": 11,
     "outlets": 11,
     "carriers": 17,
     "tag": "Developing",
@@ -1197,7 +1206,7 @@
     "canus": false,
     "popular": 0,
     "us_election": false,
-    "weight": 33,
+    "weight": 31,
     "videos": [
      {
       "net": "Global News",
@@ -1330,7 +1339,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=YAKJrEB7IQ4",
    "img": "https://i.ytimg.com/vi/YAKJrEB7IQ4/hqdefault.jpg",
-   "up": "2026-10-30",
+   "up": "2026-10-31",
    "added": "2026-10-31T03:38:22.058425+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1344,7 +1353,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=cTnofqFkahk",
    "img": "https://i.ytimg.com/vi/cTnofqFkahk/hqdefault.jpg",
-   "up": "2026-10-30",
+   "up": "2026-10-31",
    "added": "2026-10-31T03:38:22.058425+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1358,7 +1367,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=XzLga5YJbgQ",
    "img": "https://i.ytimg.com/vi/XzLga5YJbgQ/hqdefault.jpg",
-   "up": "2026-10-30",
+   "up": "2026-10-31",
    "added": "2026-10-31T03:53:15.192186+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1402,6 +1411,34 @@
    "img": "https://i.ytimg.com/vi/G9zM_KbrekA/hqdefault.jpg",
    "up": "2026-10-31",
    "added": "2026-10-31T05:22:08.223207+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "Nm3Z5qdGz84",
+   "r": "ca",
+   "o": "CPAC",
+   "t": "What Closer Ties With The EU Looks Like",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=Nm3Z5qdGz84",
+   "img": "https://i.ytimg.com/vi/Nm3Z5qdGz84/hqdefault.jpg",
+   "up": "2026-10-30",
+   "added": "2026-10-31T07:00:20.133283+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "4Nu-2MMqIxM",
+   "r": "ca",
+   "o": "CPAC",
+   "t": "Conservative MP Dan Albas comments on Roberts Bank Terminal 2 project – October 30, 2026",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=4Nu-2MMqIxM",
+   "img": "https://i.ytimg.com/vi/4Nu-2MMqIxM/hqdefault.jpg",
+   "up": "2026-10-30",
+   "added": "2026-10-31T07:00:20.133283+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1504,34 +1541,6 @@
    "geo": "unknown"
   },
   {
-   "id": "biE_-YkChqc",
-   "r": "us",
-   "o": "Bloomberg",
-   "t": "Intel Suffers Worst Stock Thrashing in Decades on Weak Forecast",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=biE_-YkChqc",
-   "img": "https://i.ytimg.com/vi/biE_-YkChqc/hqdefault.jpg",
-   "up": "2026-10-30",
-   "added": "2026-10-31T00:20:43.008740+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "mTW0OYXnqnk",
-   "r": "us",
-   "o": "Bloomberg",
-   "t": "New Balance CEO Joe Preston on NYC Marathon Partnership",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=mTW0OYXnqnk",
-   "img": "https://i.ytimg.com/vi/mTW0OYXnqnk/hqdefault.jpg",
-   "up": "2026-10-30",
-   "added": "2026-10-31T00:20:43.008740+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "5QJRLtY5Sjo",
    "r": "us",
    "o": "NBC News",
@@ -1596,7 +1605,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=rmU-Fn5dKdM",
    "img": "https://i.ytimg.com/vi/rmU-Fn5dKdM/hqdefault.jpg",
-   "up": "2026-10-30",
+   "up": "2026-10-31",
    "added": "2026-10-31T03:43:15.028644+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1700,20 +1709,6 @@
    "geo": "unknown"
   },
   {
-   "id": "UyvliSl7Kl8",
-   "r": "world",
-   "o": "Sky News",
-   "t": "‘Women were disposable to him’ - Brand trial enters closing stages | Episode 13",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=UyvliSl7Kl8",
-   "img": "https://i.ytimg.com/vi/UyvliSl7Kl8/hqdefault.jpg",
-   "up": "2026-10-30",
-   "added": "2026-10-30T21:01:44.684484+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "lOnYUMxff6g",
    "r": "world",
    "o": "BBC News",
@@ -1764,7 +1759,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=9Frq75pZo9E",
    "img": "https://i.ytimg.com/vi/9Frq75pZo9E/hqdefault.jpg",
-   "up": "2026-10-30",
+   "up": "2026-10-31",
    "added": "2026-10-31T03:28:21.707864+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1822,6 +1817,20 @@
    "img": "https://i.ytimg.com/vi/-Xp_6jGteW4/hqdefault.jpg",
    "up": "2026-10-31",
    "added": "2026-10-31T06:05:48.699380+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "J0HIxIgnDgs",
+   "r": "world",
+   "o": "Sky News",
+   "t": "‘I think everyone is waking up': has Trump lost the midterms?",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=J0HIxIgnDgs",
+   "img": "https://i.ytimg.com/vi/J0HIxIgnDgs/hqdefault.jpg",
+   "up": "2026-10-31",
+   "added": "2026-10-31T07:00:20.133283+00:00",
    "pic": "globe",
    "geo": "unknown"
   }
@@ -2078,6 +2087,13 @@
  ],
  "eds": [
   [
+   "Toronto Star",
+   "Opinion",
+   "Theo Moudakis on Canada's new role in the E.U.",
+   "https://www.thestar.com/opinion/editorial-cartoons/theo-moudakis-on-canada-s-new-role-in-the-e-u/article_693b9be6-e44d-41ad-a1be-927d53ea14eb.html",
+   "2026-10-30T10:00:00+00:00"
+  ],
+  [
    "National Post",
    "Column · Terry Newman",
    "Standing alone is brave, actually",
@@ -2139,13 +2155,6 @@
    "California transplants in Texas are voting Democrat, and they see no irony in it",
    "https://www.foxnews.com/opinion/david-marcus-california-transplants-texas-voting-democrat-see-no-irony",
    "2026-10-30T23:31:35+00:00"
-  ],
-  [
-   "The Wall Street Journal (subscribers)",
-   "Opinion",
-   "Pepper…and Salt",
-   "https://www.wsj.com/opinion/pepperand-salt-1ce8a679?mod=rss_opinion",
-   "2026-10-31T04:30:00+00:00"
   ]
  ],
  "canus": {
@@ -2501,14 +2510,14 @@
    "img": "https://nelsonstar.com/wp-content/uploads/sites/8/2026/10/Fritz2C20Bonny20photo.jpg?w=1024"
   },
   {
-   "o": "Prince George Citizen",
-   "region": "Northern B.C.",
+   "o": "CHEK News",
+   "region": "Vancouver Island",
    "arctic": false,
-   "h": "Prince George industrial properties at the centre of loan dispute",
-   "u": "https://www.princegeorgecitizen.com/local-news/prince-george-industrial-properties-at-the-centre-of-loan-dispute-12917765",
-   "t": "Fri 11:30 p.m.",
-   "desc": "Citra Logistics Ltd. borrowed $2 million from the Business Development Bank of Canada",
-   "img": "https://www.vmcdn.ca/f/files/princegeorgematters/pgc-2026-03-20-court-of-appeal.png;w=1200;h=800;mode=crop"
+   "h": "Vancouver Island puzzle company showcases Canadian women’s art",
+   "u": "https://cheknews.ca/vancouver-island-puzzle-company-showcases-canadian-womens-art-1357988/",
+   "t": "Fri 9:56 p.m.",
+   "desc": "A Vancouver Island woman is seeing her puzzle business thrive, with designs all created by Canadian women.",
+   "img": "https://cheknews.ca/wp-content/uploads/2026/10/iwow-puzzle-3-e1793392407146.jpg"
   }
  ],
  "clocks": [
@@ -2541,11 +2550,11 @@
   },
   {
    "city": "Washington",
-   "w": "The vote",
-   "u": "https://www.thestar.com/news/world/united-states/fbi-visits-dan-j-sullivan-donor-in-candidate-s-home-town-as-alaska-senate-inquiry-widens/article_50a34b95-573b-5ecf-a0fa-245497f3ae0d.html",
-   "title": "FBI visits Dan J. Sullivan donor in candidate's home town as Alaska Senate inquiry widens",
-   "outlet": "Toronto Star",
-   "t": "Sat 12:19 a.m.",
+   "w": "In court",
+   "u": "https://www.cbc.ca/news/world/5-canadians-charged-us-voter-fraud-9.7403604",
+   "title": "U.S. charges 5 more Canadians with voter fraud offences amid Trump administration crackdown",
+   "outlet": "CBC News",
+   "t": "Sat 1:00 a.m.",
    "hot": false
   },
   {
@@ -2568,7 +2577,17 @@
   }
  ],
  "live": {
-  "now": [],
+  "now": [
+   {
+    "net": "Sky News",
+    "r": "world",
+    "title": "Mornings with Jones | Saturday 31 October",
+    "url": "https://www.youtube.com/watch?v=HKwyLEEtduk",
+    "img": "https://i.ytimg.com/vi/HKwyLEEtduk/hqdefault.jpg",
+    "story": "Mornings with Jones",
+    "watching": "79"
+   }
+  ],
   "upcoming": [
    {
     "net": "Bloomberg",
@@ -2633,6 +2652,10 @@
     "url": "https://www.youtube.com/watch?v=umLWFz4izTM"
    },
    {
+    "net": "DW News",
+    "url": "https://www.youtube.com/watch?v=LuKwFajn37U"
+   },
+   {
     "net": "Al Jazeera",
     "url": "https://www.youtube.com/watch?v=gCNeDWCI0vo"
    },
@@ -2643,10 +2666,6 @@
    {
     "net": "FRANCE 24 English",
     "url": "https://www.youtube.com/watch?v=HvZt-nh9sGg"
-   },
-   {
-    "net": "euronews",
-    "url": "https://www.youtube.com/watch?v=pykpO5kQJ98"
    }
   ]
  },
