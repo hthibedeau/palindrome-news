@@ -2478,13 +2478,13 @@ CLOCK_HOURS = 18
 # Hannah, Sat Oct 31, 2026: every Canadian time zone and Washington always; then the world cities where the day's
 # biggest international stories are, chosen by the news on every update (WORLD_CLOCKS, at most WORLD_CLOCK_MAX).
 # Yellowknife keeps Edmonton's time and Iqaluit keeps Ottawa's, so their news counts for those clocks too.
-CLOCK_CITIES = [  # city, time zone, the news that belongs to it
-    ("Vancouver", "America/Vancouver", r"\b(B\.?C\.?|British Columbia|Vancouver|Victoria|Surrey|Burnaby|Richmond|Kelowna|Kamloops|Nanaimo|Abbotsford|Prince George|Eby|Rustad|Yukon|Whitehorse)\b"),
-    ("Edmonton", "America/Edmonton", r"\b(Alberta|Albertans?|Edmonton|Calgary|Red Deer|Lethbridge|Medicine Hat|Fort McMurray|Danielle Smith|Nenshi|N\.W\.T\.|Northwest Territories|Yellowknife)\b"),
-    ("Winnipeg", "America/Winnipeg", r"\b(Manitoba|Manitobans?|Winnipeg|Brandon|Thompson|Kinew|Saskatchewan|Saskatoon|Regina|Prince Albert|Scott Moe|Moe government)\b"),
-    ("Ottawa", "America/Toronto", r"\b(Ottawa|Parliament|House of Commons|Senate of Canada|Carney|Poilievre|federal government|Liberals?|Conservatives|NDP|Bloc|Hill Times|Champagne|Anand|LeBlanc|Joly|Nunavut|Iqaluit)\b"),
-    ("Halifax", "America/Halifax", r"\b(Nova Scotia|Nova Scotians?|Halifax|Dartmouth|Cape Breton|Sydney, N\.S\.|Tim Houston|New Brunswick|Fredericton|Moncton|Saint John|Susan Holt|P\.E\.I\.|Prince Edward Island|Charlottetown)\b"),
+CLOCK_CITIES = [  # east to west, then Washington (Hannah, Sat Oct 31, 2026); city, time zone, its news
     ("St. John's", "America/St_Johns", r"\b(Newfoundland|Labrador|N\.L\.|St\. John's|St\. John’s|Corner Brook|Gander|Happy Valley-Goose Bay)\b"),
+    ("Halifax", "America/Halifax", r"\b(Nova Scotia|Nova Scotians?|Halifax|Dartmouth|Cape Breton|Sydney, N\.S\.|Tim Houston|New Brunswick|Fredericton|Moncton|Saint John|Susan Holt|P\.E\.I\.|Prince Edward Island|Charlottetown)\b"),
+    ("Ottawa", "America/Toronto", r"\b(Ottawa|Parliament|House of Commons|Senate of Canada|Carney|Poilievre|federal government|Liberals?|Conservatives|NDP|Bloc|Hill Times|Champagne|Anand|LeBlanc|Joly|Nunavut|Iqaluit)\b"),
+    ("Winnipeg", "America/Winnipeg", r"\b(Manitoba|Manitobans?|Winnipeg|Brandon|Thompson|Kinew|Saskatchewan|Saskatoon|Regina|Prince Albert|Scott Moe|Moe government)\b"),
+    ("Edmonton", "America/Edmonton", r"\b(Alberta|Albertans?|Edmonton|Calgary|Red Deer|Lethbridge|Medicine Hat|Fort McMurray|Danielle Smith|Nenshi|N\.W\.T\.|Northwest Territories|Yellowknife)\b"),
+    ("Vancouver", "America/Vancouver", r"\b(B\.?C\.?|British Columbia|Vancouver|Victoria|Surrey|Burnaby|Richmond|Kelowna|Kamloops|Nanaimo|Abbotsford|Prince George|Eby|Rustad|Yukon|Whitehorse)\b"),
     ("Washington", "America/New_York", r"\b(Washington|White House|Trump|Vance|Congress|Senate|House Republicans|House Democrats|Pentagon|Supreme Court|midterms?|Election Day|U\.S\. election)\b"),
 ]
 # a region's own desk pages count for its clock even when the headline doesn't name the place
@@ -2631,14 +2631,18 @@ def clock_topics(items, groups, now):
         word = _clock_word(best, rx)
         if word:
             cands.append((n, (now - best[0][0]).total_seconds(), city, tz, best, word))
+    world = []
     for n, _, city, tz, best, word in sorted(cands, key=lambda c: (-c[0], c[1])):
-        if len([o for o in out if o.get("world")]) >= WORLD_CLOCK_MAX:
+        if len(world) >= WORLD_CLOCK_MAX:
             break
         if best[0][3] in used:
             continue
         used.add(best[0][3])
-        out.append(entry(city, tz, best, word, True))
-    return out
+        world.append(entry(city, tz, best, word, True))
+    # the world cities in the same east-to-west order as Canada's: the one furthest ahead in time first
+    from zoneinfo import ZoneInfo
+    world.sort(key=lambda c: -now.astimezone(ZoneInfo(c["tz"])).utcoffset().total_seconds())
+    return out + world
 
 
 # ===== The big week ahead (Hannah, Sat Oct 31, 2026: "With big news stories like the midterms next week, like the

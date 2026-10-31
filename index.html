@@ -5043,13 +5043,13 @@ header.site { border-bottom: 0; }
   // Wall of clocks
   // Every Canadian time zone and Washington, always; the world cities in the news are added by each update
   // (tools/autopilot.py clock_topics, Hannah, Sat Oct 31, 2026)
-  const clocks = [
-    ['Vancouver', 'America/Vancouver', '', '', false],
-    ['Edmonton', 'America/Edmonton', '', '', false],
-    ['Winnipeg', 'America/Winnipeg', '', '', false],
-    ['Ottawa', 'America/Toronto', '', '', false],
-    ['Halifax', 'America/Halifax', '', '', false],
+  const clocks = [  // east to west, then Washington (Hannah, Sat Oct 31, 2026)
     ["St. John's", 'America/St_Johns', '', '', false],
+    ['Halifax', 'America/Halifax', '', '', false],
+    ['Ottawa', 'America/Toronto', '', '', false],
+    ['Winnipeg', 'America/Winnipeg', '', '', false],
+    ['Edmonton', 'America/Edmonton', '', '', false],
+    ['Vancouver', 'America/Vancouver', '', '', false],
     ['Washington', 'America/New_York', '', '', false]
   ];
   const lat = (u) => { try { return latestOf(u); } catch (e) { return u; } };
@@ -5071,7 +5071,12 @@ header.site { border-bottom: 0; }
   window.PAL_clocks = (C) => {
     if (!Array.isArray(C)) return;
     const row = (c) => [c.city, c.tz, c.w || '', c.u || '', !!c.hot, c.w ? c.title + ' (' + c.outlet + ', ' + c.t + ')' : ''];
-    if (C.length && C[0].tz) { clocks.length = 0; C.forEach((c) => clocks.push(row(c))); }  // the update's full set, in its order
+    if (C.length && C[0].tz) {  // the update's full set: Canada east to west, Washington, then the world cities east to west
+      const EW = ["St. John's", 'Halifax', 'Ottawa', 'Winnipeg', 'Edmonton', 'Vancouver', 'Washington'];
+      const off = (tz) => { try { const d = new Date(); return (new Date(d.toLocaleString('en-US', { timeZone: tz })) - new Date(d.toLocaleString('en-US', { timeZone: 'UTC' }))); } catch (e) { return 0; } };
+      const home = EW.map((n) => C.find((c) => c.city === n)).filter(Boolean), world = C.filter((c) => EW.indexOf(c.city) < 0).sort((a, b) => off(b.tz) - off(a.tz));
+      clocks.length = 0; home.concat(world).forEach((c) => clocks.push(row(c)));
+    }
     else clocks.forEach((r) => { const c = C.find((x) => x.city === r[0]); r[2] = c ? c.w : ''; r[3] = c ? c.u : ''; r[4] = !!(c && c.hot); r[5] = c ? c.title + ' (' + c.outlet + ', ' + c.t + ')' : ''; });
     try { localStorage.setItem('pal-clocks', JSON.stringify({ at: Date.now(), C })); } catch (e) {}
     drawClocks();
