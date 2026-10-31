@@ -457,11 +457,13 @@ def core_rows(g):
     if g.get("theme") and rows:  # one story split out of a running theme (_split_themes): its reports already agree
         kc = Counter(x for r in rows for x in gc.keys(r[2]) | gc.names(r[2]) if x not in WEAK)
         return rows, {x for x, n in kc.most_common(6) if n >= 2} or {x for x, n in kc.most_common(3)}
-    freq = Counter(x for r in rows for x in gc.names(r[2]) if x not in WEAK and not is_place(x))  # a city is not a story
+    # a city is not a story, and neither is an everyday word: "Wall Street" and "Oxford Street" are not one story
+    # (Hannah, Sat Oct 31, 2026: a Halifax fire was grouped into the Trump-Wall Street Journal lawsuit)
+    freq = Counter(x for r in rows for x in gc.names(r[2]) if x not in WEAK and not is_place(x) and x not in ANGLE_COMMON)
     if not freq or freq.most_common(1)[0][1] < 3:
         return None
     anchor = freq.most_common(1)[0][0]
-    co = Counter(x for r in rows if anchor in gc.names(r[2]) for x in gc.names(r[2]) if x not in WEAK and not is_place(x))
+    co = Counter(x for r in rows if anchor in gc.names(r[2]) for x in gc.names(r[2]) if x not in WEAK and not is_place(x) and x not in ANGLE_COMMON)
     core = {anchor} | {x for x, n in co.items() if n >= 2}
     return [r for r in rows if anchor in gc.names(r[2]) or len({x for x in gc.names(r[2]) if not is_place(x)} & core) >= 2], core
 
@@ -1458,6 +1460,10 @@ CAN_OUTLET = re.compile(r"^(CBC|CTV|Global News|The Canadian Press|Toronto Star|
 FOREIGN_SRC = re.compile(r"/(world|international|us-news|us|europe|asia|africa|middle-east|americas|global-news-world)/|bbc\.|aljazeera|euronews|apnews\.com/article|reuters\.com/world", re.I)
 FOREIGN_SHARE = 0.4  # a story is "from another country" when at least this share of its reports run on world desks or foreign newsrooms
 ANGLE_MAX = 5
+# everyday words that never tie a story to another on their own
+ANGLE_COMMON = set("""street road avenue city town wall journal post times news press herald star sun mail globe report reports
+world national park lake river hill bay north south east west new old first last fire police court house home school
+centre center hospital office board council market bank group company family man woman people""".split())
 
 
 # U.S. stories: the Canadian angle is also the Canada-U.S. relationship itself (Hannah, Wed Oct 28: "there are many
@@ -1493,9 +1499,16 @@ def _angle(name, words, mine, recent, eds, papers, otr, pool, anchor_words=None)
     anchor = re.compile(r"\b(" + "|".join(re.escape(x) for x in aw) + r")\b", re.I) if aw else None
     topics = {m.group(1).lower().rstrip("s") for m in TOPIC.finditer(name + " " + " ".join(x[2] for x in mine[:6]))}
 
+    head = name.lower()
+
     def about(title):
         nm = {n.replace("’s", "").replace("'s", "") for n in gc.names(title)}
-        if anchor and anchor.search(title):
+        # tied to the story by its key words only when two of them are in the headline, or one that is in the story's
+        # own headline and is not an everyday word (Hannah, Sat Oct 31, 2026: a Halifax fire on "Oxford Street" was the
+        # Canadian angle on the Trump-Wall Street Journal lawsuit because "street" was one of the story's key words)
+        hits = {m.group(1).lower() for m in anchor.finditer(title)} if anchor else set()
+        hits -= ANGLE_COMMON
+        if len(hits) >= 2 or any(len(h) >= 5 and re.search(r"\b" + re.escape(h) + r"\b", head) for h in hits):
             return True
         if len(nm & top) >= 2:
             return not is_us or bool(US_TIE.search(title))
