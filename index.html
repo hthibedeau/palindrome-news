@@ -7187,6 +7187,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
   font-size: 11.5px !important; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; line-height: 1.4;
   color: #FF9FBD !important; opacity: 1 !important; font-variant: normal; text-decoration: none; }
 #autoBreaking .ab-story .rel-box li .o::before, #autoBreaking .ab-story .ab-reps li .o::before { content: "\2014\00a0"; font-weight: 400; color: rgba(255, 255, 255, .55); }
+#autoBreaking .ab-story .rel-box li .o, #autoBreaking .ab-story .ab-reps li .o { white-space: nowrap !important; }  /* the name never splits */
 #autoBreaking .dd-also { display: inline; margin-left: 2px; font-size: 11px; color: #F2B8C6; }
 #autoBreaking .dd-also a { margin-left: 4px; }
 #autoBreaking .ab-story .rel-box li > a, #autoBreaking .ab-story .ab-reps li > a { font-size: 16px; line-height: 1.35; }
@@ -7263,5 +7264,61 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
 #autoBreaking .ab-story .cr-fold > summary { padding-right: 96px !important; font-size: 12px !important; letter-spacing: .03em !important; }
 #autoBreaking .ab-story .cr-fold > .cr-more { font-size: 12px !important; padding: 0 9px !important; min-height: 30px !important; }
 </style>
+
+<script id="dedupe-fit">
+(function () {
+  // The newsroom's name on the same line as the end of the headline (Hannah, Sat Oct 31, 2026: "try to always fit the
+  // newsroom names on the same line. So if you have to make it smaller, the font, it's okay"): if it would drop to a
+  // line of its own, its type gets smaller step by step (down to 9.5px), then a shorter form of the name is tried the
+  // same way; if nothing fits, the short name stays readable at full size.
+  const root = document.getElementById('autoBreaking'); if (!root) return;
+  const SHORT = [[/^Canada's National Observer/i, 'National Observer'], [/\s*·\s*The Canadian Press story/i, ' · CP'], [/\s*·\s*Associated Press story/i, ' · AP'],
+    [/\s*·\s*Reuters story/i, ' · Reuters'], [/^The Canadian Press/i, 'CP'], [/^Prime Minister of Canada/i, 'PM of Canada'], [/^Government of Canada/i, 'Gov. of Canada'],
+    [/^The New York Times/i, 'NYT'], [/^The Washington Post/i, 'Wash. Post'], [/^The Wall Street Journal/i, 'WSJ'], [/^CityNews /i, 'CityNews '], [/ News$/i, '']];
+  function sameLine(o) {
+    const prev = o.previousElementSibling && o.previousElementSibling.tagName === 'A' ? o.previousElementSibling : o.parentElement.querySelector('a');
+    if (!prev) return true;
+    const r = prev.getClientRects(); if (!r.length) return true;
+    const last = r[r.length - 1], me = o.getClientRects(); if (!me.length) return true;
+    return Math.abs(me[0].top - last.top) < 6 && me[me.length - 1].right <= o.closest('li').getBoundingClientRect().right + 1;
+  }
+  let busy = false;
+  function fit() {
+    if (busy) return; busy = true;
+    try {
+      root.querySelectorAll('.ab-story .rel-box li .o, .ab-story .ab-reps li .o').forEach((o) => {
+        if (o.offsetParent === null) return;
+        if (!o.dataset.full) o.dataset.full = o.textContent;
+        const a = o.parentElement.querySelector('a');
+        if (a) a.style.removeProperty('font-size');
+        let short = o.dataset.full; SHORT.forEach(([rx, rep]) => { short = short.replace(rx, rep); });
+        // shortest: a local station without its city (CityNews Winnipeg -> CityNews), the wire credit as CP/AP
+        const shortest = short.replace(/^(CityNews|CTV News|CTV|Global News|Global|CBC News|CBC|CP24|Postmedia)\s+(?!·)[A-Z][\w.'-]+(?:\s+[A-Z][\w.'-]+)?/, '$1');
+        const tries = [...new Set([o.dataset.full, short, shortest])];
+        let done = false;
+        for (const t of tries) {
+          o.textContent = t;
+          for (let px = 11.5; px >= 9.5 && !done; px -= 0.5) { o.style.setProperty('font-size', px + 'px', 'important'); done = sameLine(o); }
+          if (done) break;
+        }
+        // still no room: the headline in that row gets a little smaller too (down to 14px), with the short name at 10px
+        if (!done && a) {
+          o.textContent = tries[tries.length - 1]; o.style.setProperty('font-size', '10px', 'important');
+          for (let hp = 15.5; hp >= 14 && !done; hp -= 0.5) { a.style.setProperty('font-size', hp + 'px', 'important'); done = sameLine(o); }
+          if (!done) a.style.removeProperty('font-size');
+        }
+        // nothing fits beside the headline: the short name at full size, readable, on the next line
+        if (!done) { o.textContent = tries[tries.length - 1]; o.style.removeProperty('font-size'); }
+        if (o.textContent !== o.dataset.full) o.title = o.dataset.full.replace(/\s*↗\s*$/, '');
+      });
+    } catch (e) { console.warn('fit', e); }
+    setTimeout(() => { busy = false; }, 60);
+  }
+  setTimeout(fit, 3000); setTimeout(fit, 7000);
+  let rz; window.addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(fit, 250); });
+  root.addEventListener('click', (e) => { if (e.target.closest('.cr-more')) setTimeout(fit, 50); });
+  new MutationObserver(() => { if (!busy) { clearTimeout(fit.t); fit.t = setTimeout(fit, 400); } }).observe(root, { childList: true, subtree: true });
+})();
+</script>
 <!-- end dedupe layer -->
 </body></html>
