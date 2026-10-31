@@ -1,6 +1,6 @@
 {
- "checked": "2026-10-31T05:42:08.449978+00:00",
- "checkedLabel": "Sat 1:42 a.m.",
+ "checked": "2026-10-31T05:52:08.722091+00:00",
+ "checkedLabel": "Sat 1:52 a.m.",
  "stories": [
   {
    "key": "top",
@@ -48,6 +48,15 @@
   }
  ],
  "wire": [
+  [
+   "Sat 1:44 a.m.",
+   "World",
+   "Spain train disaster clouds Sánchez chances of re-election",
+   "BBC News",
+   "https://www.bbc.co.uk/news/articles/cmeweppr990qo?at_medium=RSS&at_campaign=rss",
+   "2026-10-31T05:44:21+00:00",
+   1
+  ],
   [
    "Sat 1:39 a.m.",
    "Latest",
@@ -109,7 +118,7 @@
    "Al Jazeera",
    "https://www.aljazeera.com/video/newsfeed/2026/10/31/trump-tells-voters-to-send-el-sayed-back-to-where-he-came?traffic_source=rss",
    "2026-10-31T05:07:25+00:00",
-   2
+   1
   ],
   [
    "Sat 1:06 a.m.",
@@ -263,15 +272,6 @@
    "https://www.theguardian.com/news/ng-interactive/2026/oct/31/mv-odyssey-cruise-passengers-nightmare-stranded-cambodia",
    "2026-10-31T03:00:31+00:00",
    1
-  ],
-  [
-   "Fri 10:51 p.m.",
-   "World",
-   "Ebola death toll in DR Congo passes 5,000",
-   "Al Jazeera",
-   "https://www.aljazeera.com/news/2026/10/31/ebola-death-toll-in-dr-congo-passes-5000?traffic_source=rss",
-   "2026-10-31T02:51:52+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -330,14 +330,6 @@
    "theme": "Canada and the EU"
   },
   {
-   "score": 12,
-   "title": "Trump tells voters to send El-Sayed ‘back to where he came from’",
-   "url": "https://www.aljazeera.com/video/newsfeed/2026/10/31/trump-tells-voters-to-send-el-sayed-back-to-where-he-came?traffic_source=rss",
-   "outlets": 10,
-   "why": [],
-   "theme": ""
-  },
-  {
    "score": 11,
    "title": "Russian return to ice hockey tournaments is ‘unwelcome,’ Carney says",
    "url": "https://www.politico.com/news/2026/10/30/ruling-allowing-russia-back-in-ice-hockey-tournaments-is-unwelcome-mark-carney-says",
@@ -351,10 +343,10 @@
    "theme": ""
   },
   {
-   "score": 7,
-   "title": "DMG Blockchain Solutions Issues Statement Regarding the Binance Security Incident and Provides Update on Patents Granted",
-   "url": "https://financialpost.com/globe-newswire/dmg-blockchain-solutions-issues-statement-regarding-the-binance-security-incident-and-provides-update-on-patents-granted",
-   "outlets": 5,
+   "score": 11,
+   "title": "Trump tells voters to send El-Sayed ‘back to where he came from’",
+   "url": "https://www.aljazeera.com/video/newsfeed/2026/10/31/trump-tells-voters-to-send-el-sayed-back-to-where-he-came?traffic_source=rss",
+   "outlets": 9,
    "why": [],
    "theme": ""
   },
@@ -380,6 +372,14 @@
    "theme": ""
   },
   {
+   "score": 6,
+   "title": "DMG Blockchain Solutions Issues Statement Regarding the Binance Security Incident and Provides Update on Patents Granted",
+   "url": "https://financialpost.com/globe-newswire/dmg-blockchain-solutions-issues-statement-regarding-the-binance-security-incident-and-provides-update-on-patents-granted",
+   "outlets": 4,
+   "why": [],
+   "theme": ""
+  },
+  {
    "score": 5,
    "title": "Liberals jump ahead of Tories in fundraising as by-election calls loom",
    "url": "https://www.theglobeandmail.com/politics/article-liberal-conservative-fundraising-by-elections-carney-poilievre/",
@@ -401,8 +401,8 @@
   },
   {
    "score": 5,
-   "title": "Scott Clifton and Tamara Tunie earn lead acting Daytime Emmys. 'General Hospital' wins again",
-   "url": "https://www.timescolonist.com/the-mix/scott-clifton-and-tamara-tunie-earn-lead-acting-daytime-emmys-general-hospital-wins-again-12963754",
+   "title": "From the trenches to the track, Ukraine’s amputee athletes join international endurance race",
+   "url": "https://www.thestar.com/news/world/europe/from-the-trenches-to-the-track-ukraine-s-amputee-athletes-join-international-endurance-race/article_55863367-2c84-5f14-a205-3163101f5797.html",
    "outlets": 3,
    "why": [],
    "theme": ""
@@ -487,16 +487,16 @@
    {
     "key": "auto-27bd6978",
     "words": [
+     "associate",
      "european",
      "alliance",
-     "summit",
      "future",
      "union",
      "eu"
     ],
     "score": 13,
-    "outlets": 10,
-    "carriers": 16,
+    "outlets": 11,
+    "carriers": 17,
     "tag": "Developing",
     "title": "Carney pursuing ‘associate’ EU membership",
     "url": "https://www.ctvnews.ca/politics/article/carney-pursuing-associate-eu-membership/",
@@ -519,7 +519,7 @@
      "outlet": "CTV News",
      "url": "https://www.ctvnews.ca/politics/article/carney-pursuing-associate-eu-membership/"
     },
-    "independent": 10,
+    "independent": 11,
     "reports": [
      {
       "t": "Fri 8:30 p.m.",
@@ -869,18 +869,168 @@
       "up": ""
      }
     ]
+   }
+  ],
+  "considered": [
+   {
+    "title": "Carney says he can wait out Trump for trade deal",
+    "url": "https://www.politico.com/news/2026/10/30/mark-carney-interview-trump-trade-deal-01144329",
+    "rank": 1,
+    "live": "",
+    "weight": 5.5,
+    "score": 0,
+    "independent": 1,
+    "most_read": 0,
+    "canada": "canadian",
+    "theme": "",
+    "top": true,
+    "rule": "Big Canadian exclusive: a major newsroom's interview or scoop (shown as Exclusive)",
+    "carriers": 1
    },
    {
-    "key": "auto-5818c324",
+    "title": "Carney pursuing ‘associate’ EU membership",
+    "url": "https://www.ctvnews.ca/politics/article/carney-pursuing-associate-eu-membership/",
+    "rank": 2,
+    "live": "",
+    "weight": 37,
+    "score": 13,
+    "independent": 11,
+    "most_read": 0,
+    "canada": "canadian",
+    "theme": "Canada and the EU",
+    "top": true,
+    "rule": "Canadian, still developing",
+    "carriers": 17
+   },
+   {
+    "title": "FBI visits Dan J. Sullivan donor in candidate's home town as Alaska Senate inquiry widens",
+    "url": "https://www.thestar.com/news/world/united-states/fbi-visits-dan-j-sullivan-donor-in-candidate-s-home-town-as-alaska-senate-inquiry-widens/article_50a34b95-573b-5ecf-a0fa-245497f3ae0d.html",
+    "rank": 3,
+    "live": "",
+    "weight": 19.5,
+    "score": 11,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "tie",
+    "theme": "",
+    "top": false,
+    "rule": "From abroad, tied to Canada",
+    "carriers": 5
+   },
+   {
+    "title": "\"Face the Nation with Margaret Brennan\" guests for Nov. 1, 2026",
+    "url": "https://www.cbsnews.com/news/face-the-nation-guests-for-11-01-2026/",
+    "rank": 4,
+    "live": "",
+    "weight": 10.5,
+    "score": 6,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "general",
+    "theme": "",
+    "top": false,
+    "rule": "From abroad, tied to Canada",
+    "carriers": 3
+   },
+   {
+    "title": "Gen Z protests reach Germany as over 160,000 expected at Halloween rallies",
+    "url": "https://www.ctvnews.ca/world/article/gen-z-protests-reach-germany-as-over-160000-expected-at-halloween-rallies/",
+    "rank": 5,
+    "live": "",
+    "weight": 9.0,
+    "score": 4,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "tie",
+    "theme": "",
+    "top": false,
+    "rule": "From abroad, tied to Canada",
+    "carriers": 4
+   },
+   {
+    "title": "U.S. charges 5 more Canadians with voter fraud offences amid Trump administration crackdown",
+    "score": 23,
+    "why": "not built: only 1 independent report(s) (1 sites)"
+   },
+   {
+    "title": "Trump's tariffs could shutter this Canadian town - its residents are fighting to save it",
+    "score": 23,
+    "why": "not built: only 1 independent report(s) (1 sites)"
+   },
+   {
+    "title": "This quaint little town is Canada's Cotswolds and feels like a trip to rural England",
+    "score": 23,
+    "why": "not built: only 1 independent report(s) (1 sites)"
+   },
+   {
+    "title": "Russian return to ice hockey tournaments is ‘unwelcome,’ Carney says",
+    "score": 11,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Poilievre’s Brantford candidate choice prompts Conservative departures",
+    "score": 6,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "DMG Blockchain Solutions Issues Statement Regarding the Binance Security Incident and Provides Update on Patents Granted",
+    "score": 6,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Liberals jump ahead of Tories in fundraising as by-election calls loom",
+    "score": 5,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Decision clearing path for Russia to join world juniors in Alberta is 'very unwelcome,' minister says",
+    "score": 5,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "From the trenches to the track, Ukraine’s amputee athletes join international endurance race",
+    "score": 5,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Evacuated Oleshky residents begin the long journey out of the war-ravaged region",
+    "score": 4,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "The dachshund is the muse in an exhibition showcasing the sausage dog's history in art",
+    "score": 4,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Karl Bushby's 28-year walk across the world is ending. A look at the trek, by the numbers",
+    "score": 4,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "In 28 years of walking, Karl Bushby has overcome jungle, desert and red tape. Now he's nearly home",
+    "score": 4,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Meet the 'socialist' progressive Democrats likely on their way to Congress",
+    "score": 4,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   }
+  ],
+  "top_n": 2,
+  "more": [
+   {
+    "key": "auto-f2be80e7",
     "words": [
      "justice",
-     "senate",
      "alaska",
+     "senate",
      "dan"
     ],
-    "score": 12,
-    "outlets": 4,
-    "carriers": 6,
+    "score": 11,
+    "outlets": 3,
+    "carriers": 5,
     "tag": "Developing",
     "title": "FBI visits Dan J. Sullivan donor in candidate's home town as Alaska Senate inquiry widens",
     "url": "https://www.thestar.com/news/world/united-states/fbi-visits-dan-j-sullivan-donor-in-candidate-s-home-town-as-alaska-senate-inquiry-widens/article_50a34b95-573b-5ecf-a0fa-245497f3ae0d.html",
@@ -889,21 +1039,21 @@
     "iso": "2026-10-31T04:19:48+00:00",
     "summary": "ANCHORAGE, Alaska (AP) — The FBI on Friday began reaching out to donors of Dan J. Sullivan asking about potential deception, as federal authorities ramped up their investigation over the",
     "first": {
-     "outlet": "The Hill",
-     "url": "https://thehill.com/homenews/campaign/6185743-rnc-chair-predicts-midterm-wins/",
-     "t": "Fri 7:42 p.m.",
-     "title": "RNC chair predicts GOP Senate wins in Alaska, Texas, 3 other battlegrounds"
+     "outlet": "CBS News",
+     "url": "https://www.cbsnews.com/news/abdul-el-sayed-haley-stevens-feud-michigan-senate/",
+     "t": "Fri 8:17 p.m.",
+     "title": "El-Sayed and Stevens feud ahead of key Michigan Senate race"
     },
     "newest": "2026-10-31T04:19:48+00:00",
     "photo": {
-     "src": "live/img/auto-5818c324-0fbf1d01bb.jpg",
+     "src": "live/img/auto-f2be80e7-0fbf1d01bb.jpg",
      "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/9/d9/9d9a6b9b-821e-534e-9aeb-25e477770680/6a84794cdba03.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize",
      "caption": "Photo — via Toronto Star",
      "alt": "FBI visits Dan J. Sullivan donor in candidate's home town as Alaska Senate inquiry widens",
      "outlet": "Toronto Star",
      "url": "https://www.thestar.com/news/world/united-states/fbi-visits-dan-j-sullivan-donor-in-candidate-s-home-town-as-alaska-senate-inquiry-widens/article_50a34b95-573b-5ecf-a0fa-245497f3ae0d.html"
     },
-    "independent": 4,
+    "independent": 3,
     "reports": [
      {
       "t": "Sat 12:19 a.m.",
@@ -944,14 +1094,6 @@
       "title": "Alaska Senate candidate denies knowing about alleged plot to put two Dan Sullivans on ballot",
       "url": "https://www.bbc.co.uk/news/articles/cmwyq2gg1yzzo?at_medium=RSS&at_campaign=rss",
       "desc": "The incumbent Republican running for re-election and allies have accused the Democrats of trying to confuse voters by recruiting a second Dan Sullivan to also stand in the race."
-     },
-     {
-      "t": "Fri 7:42 p.m.",
-      "iso": "2026-10-30T23:42:47+00:00",
-      "outlet": "The Hill",
-      "title": "RNC chair predicts GOP Senate wins in Alaska, Texas, 3 other battlegrounds",
-      "url": "https://thehill.com/homenews/campaign/6185743-rnc-chair-predicts-midterm-wins/",
-      "desc": ""
      }
     ],
     "sources": [
@@ -1024,23 +1166,6 @@
        }
       ],
       "copies": []
-     },
-     {
-      "t": "Fri 7:42 p.m.",
-      "primary": false,
-      "outlet": "The Hill",
-      "title": "RNC chair predicts GOP Senate wins in Alaska, Texas, 3 other battlegrounds",
-      "url": "https://thehill.com/homenews/campaign/6185743-rnc-chair-predicts-midterm-wins/",
-      "desc": "px-captcha",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "The Hill",
-        "src": "The Hill",
-        "byline": ""
-       }
-      ],
-      "copies": []
      }
     ],
     "replaces_top": false,
@@ -1050,21 +1175,13 @@
     "canus": false,
     "popular": 0,
     "us_election": false,
-    "weight": 22.0,
+    "weight": 19.5,
     "videos": [
      {
       "net": "Fox News",
       "url": "https://www.youtube.com/watch?v=FwBh_n7Hqms",
       "title": "DOJ holds press conference on Alaska Senate ballot probe",
       "img": "https://i.ytimg.com/vi/FwBh_n7Hqms/hqdefault.jpg",
-      "rec": true,
-      "up": ""
-     },
-     {
-      "net": "Reuters",
-      "url": "https://www.youtube.com/watch?v=t3Z7Gn7Lhxw",
-      "title": "Texas Republican Senate candidate Paxton campaigns in Houston",
-      "img": "https://i.ytimg.com/vi/t3Z7Gn7Lhxw/hqdefault.jpg",
       "rec": true,
       "up": ""
      },
@@ -1083,159 +1200,17 @@
       "img": "https://i.ytimg.com/vi/_lVqN9ngEsg/hqdefault.jpg",
       "rec": false,
       "up": ""
+     },
+     {
+      "net": "CBS News",
+      "url": "https://www.youtube.com/watch?v=62M3xXekNkw",
+      "title": "Alaska voters weigh in on Dan Sullivan controversy as DOJ investigates",
+      "img": "https://i.ytimg.com/vi/62M3xXekNkw/hqdefault.jpg",
+      "rec": false,
+      "up": ""
      }
     ]
-   }
-  ],
-  "considered": [
-   {
-    "title": "Carney says he can wait out Trump for trade deal",
-    "url": "https://www.politico.com/news/2026/10/30/mark-carney-interview-trump-trade-deal-01144329",
-    "rank": 1,
-    "live": "",
-    "weight": 5.5,
-    "score": 0,
-    "independent": 1,
-    "most_read": 0,
-    "canada": "canadian",
-    "theme": "",
-    "top": true,
-    "rule": "Big Canadian exclusive: a major newsroom's interview or scoop (shown as Exclusive)",
-    "carriers": 1
    },
-   {
-    "title": "Carney pursuing ‘associate’ EU membership",
-    "url": "https://www.ctvnews.ca/politics/article/carney-pursuing-associate-eu-membership/",
-    "rank": 2,
-    "live": "",
-    "weight": 37,
-    "score": 13,
-    "independent": 10,
-    "most_read": 0,
-    "canada": "canadian",
-    "theme": "Canada and the EU",
-    "top": true,
-    "rule": "Canadian, still developing",
-    "carriers": 16
-   },
-   {
-    "title": "FBI visits Dan J. Sullivan donor in candidate's home town as Alaska Senate inquiry widens",
-    "url": "https://www.thestar.com/news/world/united-states/fbi-visits-dan-j-sullivan-donor-in-candidate-s-home-town-as-alaska-senate-inquiry-widens/article_50a34b95-573b-5ecf-a0fa-245497f3ae0d.html",
-    "rank": 3,
-    "live": "",
-    "weight": 22.0,
-    "score": 12,
-    "independent": 4,
-    "most_read": 0,
-    "canada": "tie",
-    "theme": "",
-    "top": true,
-    "rule": "From abroad, tied to Canada",
-    "carriers": 6
-   },
-   {
-    "title": "\"Face the Nation with Margaret Brennan\" guests for Nov. 1, 2026",
-    "url": "https://www.cbsnews.com/news/face-the-nation-guests-for-11-01-2026/",
-    "rank": 4,
-    "live": "",
-    "weight": 10.5,
-    "score": 6,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "general",
-    "theme": "",
-    "top": false,
-    "rule": "From abroad, tied to Canada",
-    "carriers": 3
-   },
-   {
-    "title": "Why North Korea's 'elite' hackers are the prime suspect in major Binance hack",
-    "url": "https://www.bbc.co.uk/news/articles/ck9dz3v7z7v3o?at_medium=RSS&at_campaign=rss",
-    "rank": 5,
-    "live": "",
-    "weight": 14.5,
-    "score": 7,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "rule": "No Canadian tie",
-    "carriers": 3
-   },
-   {
-    "title": "U.S. charges 5 more Canadians with voter fraud offences amid Trump administration crackdown",
-    "score": 23,
-    "why": "not built: only 1 independent report(s) (1 sites)"
-   },
-   {
-    "title": "Trump's tariffs could shutter this Canadian town - its residents are fighting to save it",
-    "score": 23,
-    "why": "not built: only 1 independent report(s) (1 sites)"
-   },
-   {
-    "title": "This quaint little town is Canada's Cotswolds and feels like a trip to rural England",
-    "score": 23,
-    "why": "not built: only 1 independent report(s) (1 sites)"
-   },
-   {
-    "title": "Russian return to ice hockey tournaments is ‘unwelcome,’ Carney says",
-    "score": 11,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Poilievre’s Brantford candidate choice prompts Conservative departures",
-    "score": 6,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Liberals jump ahead of Tories in fundraising as by-election calls loom",
-    "score": 5,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Decision clearing path for Russia to join world juniors in Alberta is 'very unwelcome,' minister says",
-    "score": 5,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Scott Clifton and Tamara Tunie earn lead acting Daytime Emmys. 'General Hospital' wins again",
-    "score": 5,
-    "why": "not built: only 2 independent report(s) (3 sites)"
-   },
-   {
-    "title": "Evacuated Oleshky residents begin the long journey out of the war-ravaged region",
-    "score": 4,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "The dachshund is the muse in an exhibition showcasing the sausage dog's history in art",
-    "score": 4,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Karl Bushby's 28-year walk across the world is ending. A look at the trek, by the numbers",
-    "score": 4,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "In 28 years of walking, Karl Bushby has overcome jungle, desert and red tape. Now he's nearly home",
-    "score": 4,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "From the trenches to the track, Ukraine’s amputee athletes join international endurance race",
-    "score": 4,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Meet the 'socialist' progressive Democrats likely on their way to Congress",
-    "score": 4,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   }
-  ],
-  "top_n": 3,
-  "more": [
    {
     "key": "auto-74f7113f",
     "words": [
@@ -1354,14 +1329,147 @@
     "popular": 0,
     "us_election": false,
     "weight": 10.5
+   },
+   {
+    "key": "auto-22f08cb4",
+    "words": [
+     "halloween",
+     "germany"
+    ],
+    "score": 4,
+    "outlets": 3,
+    "carriers": 4,
+    "tag": "Developing",
+    "title": "Gen Z protests reach Germany as over 160,000 expected at Halloween rallies",
+    "url": "https://www.ctvnews.ca/world/article/gen-z-protests-reach-germany-as-over-160000-expected-at-halloween-rallies/",
+    "outlet": "CTV News",
+    "t": "Fri 8:35 p.m.",
+    "iso": "2026-10-31T00:35:39+00:00",
+    "summary": "More than 160,000 people across Germany are expected to join demonstrations on Saturday, organizers say, as a youth-led movement inspired by protests elsewhere in Europe takes to the streets to demand better education and lower living costs.",
+    "first": {
+     "outlet": "CBS News",
+     "url": "https://www.cbsnews.com/video/heavy-rain-expected-ahead-of-halloween-weekend-in-southwest/",
+     "t": "Fri 7:55 p.m.",
+     "title": "Heavy rain expected ahead of Halloween weekend in Southwest"
+    },
+    "newest": "2026-10-31T00:35:39+00:00",
+    "photo": {
+     "src": "live/img/auto-22f08cb4-e91d01405e.jpg",
+     "orig": "https://www.ctvnews.ca/resizer/v2/6K6ATJTMCZCNDJHJVGHQK4FAVU.jpg?smart=true&auth=00786b7e3ed128b3d391707b9ceafbd448d498cae183ecc66db248a70b17e196&width=1200&height=630",
+     "caption": "A person holds a sign that reads: \"Solidarity with French Youth\", at a demonstration under the slogan \"Solidarity with Students in France\", in Berlin, Saturday Oct. 17, 2026. (Carsten Koall/dpa via AP). — via CTV News",
+     "alt": "A person holds a sign that reads: \"Solidarity with French Youth\", at a demonstration under the slogan \"Solidarity with Students in France\", in Berlin, Saturday ",
+     "outlet": "CTV News",
+     "url": "https://www.ctvnews.ca/world/article/gen-z-protests-reach-germany-as-over-160000-expected-at-halloween-rallies/"
+    },
+    "independent": 3,
+    "reports": [
+     {
+      "t": "Fri 8:35 p.m.",
+      "iso": "2026-10-31T00:35:39+00:00",
+      "outlet": "CTV News",
+      "title": "Gen Z protests reach Germany as over 160,000 expected at Halloween rallies",
+      "url": "https://www.ctvnews.ca/world/article/gen-z-protests-reach-germany-as-over-160000-expected-at-halloween-rallies/",
+      "desc": "More than 160,000 people across Germany are expected to join demonstrations on Saturday, organizers say, as a youth-led movement inspired by protests elsewhere in Europe takes to the streets to demand better education and lower living costs."
+     },
+     {
+      "t": "Fri 8:35 p.m.",
+      "iso": "2026-10-31T00:35:39+00:00",
+      "outlet": "CP24",
+      "title": "Gen Z protests reach Germany as over 160,000 expected at Halloween rallies",
+      "url": "https://www.cp24.com/news/world/2026/10/31/gen-z-protests-reach-germany-as-over-160000-expected-at-halloween-rallies/",
+      "desc": ""
+     },
+     {
+      "t": "Fri 8:17 p.m.",
+      "iso": "2026-10-31T00:17:35+00:00",
+      "outlet": "Al Jazeera",
+      "title": "Germany and France brace for protests on Halloween weekend",
+      "url": "https://www.aljazeera.com/news/2026/10/31/germany-and-france-brace-for-protests-on-halloween-weekend?traffic_source=rss",
+      "desc": "A wave of youth-led protests has swept Europe, with demonstrators denouncing rising prices and a lack of prospects."
+     },
+     {
+      "t": "Fri 7:55 p.m.",
+      "iso": "2026-10-30T23:55:03+00:00",
+      "outlet": "CBS News",
+      "title": "Heavy rain expected ahead of Halloween weekend in Southwest",
+      "url": "https://www.cbsnews.com/video/heavy-rain-expected-ahead-of-halloween-weekend-in-southwest/",
+      "desc": "At least four tornadoes touched down Thursday near Uvalde, Texas, and there's more bad weather ahead this Halloween weekend, especially in the Southwest. Chief Meteorologist Rob Marciano has more."
+     }
+    ],
+    "sources": [
+     {
+      "t": "Fri 8:35 p.m.",
+      "primary": false,
+      "outlet": "CTV News",
+      "title": "Gen Z protests reach Germany as over 160,000 expected at Halloween rallies",
+      "url": "https://www.ctvnews.ca/world/article/gen-z-protests-reach-germany-as-over-160000-expected-at-halloween-rallies/",
+      "desc": "More than 160,000 people across Germany are expected to join demonstrations on Saturday, organizers say, as a youth-led movement inspired by protests elsewhere in Europe takes to the streets to demand better education and lower living costs.",
+      "wire": "The Canadian Press",
+      "by": [
+       {
+        "outlet": "CTV News",
+        "src": "The Canadian Press",
+        "byline": "n\" \"Joshua Marano\" \"Robin Della Corte\" \"The Canadian Press\" \"Karyn Mulcahy\" \"B"
+       },
+       {
+        "outlet": "CP24",
+        "src": "Reuters",
+        "byline": "\"@type\": \"Person\",\n      \"name\": \"Reuters Staff\","
+       }
+      ],
+      "copies": [
+       {
+        "outlet": "CP24",
+        "url": "https://www.cp24.com/news/world/2026/10/31/gen-z-protests-reach-germany-as-over-160000-expected-at-halloween-rallies/"
+       }
+      ]
+     },
+     {
+      "t": "Fri 8:17 p.m.",
+      "primary": false,
+      "outlet": "Al Jazeera",
+      "title": "Germany and France brace for protests on Halloween weekend",
+      "url": "https://www.aljazeera.com/news/2026/10/31/germany-and-france-brace-for-protests-on-halloween-weekend?traffic_source=rss",
+      "desc": "A wave of youth-led protests has swept Europe, with demonstrators denouncing rising prices and a lack of prospects.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Al Jazeera",
+        "src": "Al Jazeera",
+        "byline": "{\"@type\":\"Person\",\"name\":\"Al Jazeera Staff\",} Al Jazeera Staff Add Al Jazeera on Google By "
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Fri 7:55 p.m.",
+      "primary": false,
+      "outlet": "CBS News",
+      "title": "Heavy rain expected ahead of Halloween weekend in Southwest",
+      "url": "https://www.cbsnews.com/video/heavy-rain-expected-ahead-of-halloween-weekend-in-southwest/",
+      "desc": "At least four tornadoes touched down Thursday near Uvalde, Texas, and there's more bad weather ahead this Halloween weekend, especially in the Southwest. Chief Meteorologist Rob Marciano has more.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "CBS News",
+        "src": "CBS News",
+        "byline": ""
+       }
+      ],
+      "copies": []
+     }
+    ],
+    "replaces_top": false,
+    "events": [],
+    "theme": "",
+    "canada": "tie",
+    "canus": false,
+    "popular": 0,
+    "us_election": false,
+    "weight": 9.0
    }
   ],
-  "passed_over": [
-   {
-    "title": "Why North Korea's 'elite' hackers are the prime suspect in major Binance hack",
-    "url": "https://www.bbc.co.uk/news/articles/ck9dz3v7z7v3o?at_medium=RSS&at_campaign=rss"
-   }
-  ]
+  "passed_over": []
  },
  "clips": [
   {
@@ -1513,7 +1621,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=XzLga5YJbgQ",
    "img": "https://i.ytimg.com/vi/XzLga5YJbgQ/hqdefault.jpg",
-   "up": "2026-10-31",
+   "up": "2026-10-30",
    "added": "2026-10-31T03:53:15.192186+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1781,34 +1889,6 @@
    "img": "https://i.ytimg.com/vi/GZVlK_OJJSQ/hqdefault.jpg",
    "up": "2026-10-31",
    "added": "2026-10-31T04:13:14.788893+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "0sojro__b4g",
-   "r": "us",
-   "o": "Fox News",
-   "t": "PREPARING FOR WAR: All midterm eyes on Alaska's 'Decoy Dan' uproar",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=0sojro__b4g",
-   "img": "https://i.ytimg.com/vi/0sojro__b4g/hqdefault.jpg",
-   "up": "2026-10-31",
-   "added": "2026-10-31T04:37:13.589866+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "LoY0-J38guY",
-   "r": "us",
-   "o": "Fox News",
-   "t": "‘DECOY DAN’: Brit Hume breaks down DOJ investigation into Alaska ballot controversy",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=LoY0-J38guY",
-   "img": "https://i.ytimg.com/vi/LoY0-J38guY/hqdefault.jpg",
-   "up": "2026-10-31",
-   "added": "2026-10-31T05:32:08.510163+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2394,7 +2474,6 @@
    "Canada, European Union close Montreal summit with ‘alliance for the future’ pact, CP24 reports.",
    "Some Backstreet Boys fans attending one of the group’s Toronto shows aren’t happy with their seat change after Live Nation relocated fans who unknowingly bought tickets that had an obstructed view, CBC News reports.",
    "The FBI on Friday began reaching out to donors of Dan J, The Canadian Press reports.",
-   "How hard is it to recover the $6 billion stolen from Binance?, CBS News reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
   ]
  },
@@ -2738,6 +2817,15 @@
    "hot": true
   },
   {
+   "city": "Kyiv",
+   "w": "Ceasefire",
+   "u": "https://www.thestar.com/news/world/europe/from-the-trenches-to-the-track-ukraine-s-amputee-athletes-join-international-endurance-race/article_55863367-2c84-5f14-a205-3163101f5797.html",
+   "title": "From the trenches to the track, Ukraine’s amputee athletes join international endurance race",
+   "outlet": "Toronto Star",
+   "t": "Sat 1:02 a.m.",
+   "hot": true
+  },
+  {
    "city": "Tehran",
    "w": "Hormuz",
    "u": "https://www.aljazeera.com/video/newsfeed/2026/10/31/iran-says-four-tankers-on-fire-after-striking-mines-in-hormuz?traffic_source=rss",
@@ -2837,7 +2925,7 @@
    "story": "Iran war live: 4 tankers hit in Hormuz; Trump says conflict will end ‘",
    "title": "Iran war live: 4 tankers hit in Hormuz; Trump says conflict will end ‘soon’",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/31/iran-war-live-oil-tankers-hit-in-hormuz-trump-says-conflict-will-end-soon?traffic_source=rss",
-   "updated": "2026-10-31T05:35:57+00:00",
+   "updated": "2026-10-31T05:49:16+00:00",
    "ended": false,
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-10-30T230320Z_1495036221_RC2YDOASHI7R_RTRMADP_3_IRAN-CRISIS-SHIPPING-HORMUZ-1793404633.jpg?resize=1920%2C1139"
   }
@@ -3067,7 +3155,7 @@
   }
  },
  "canangle": {
-  "auto-5818c324": {
+  "auto-f2be80e7": {
    "story": "FBI visits Dan J. Sullivan donor in candidate's home town as Alaska Senate inquiry widens",
    "us": true,
    "specific": 1,
@@ -3116,6 +3204,24 @@
      "url": "https://www.cbc.ca/news/world/gellert-global-group-suing-trump-tariffs-9.7402197?cmp=rss",
      "ca": true,
      "tie": "Canada and the U.S."
+    }
+   ],
+   "official": [],
+   "views": []
+  },
+  "auto-22f08cb4": {
+   "story": "Gen Z protests reach Germany as over 160,000 expected at Halloween rallies",
+   "us": false,
+   "specific": 1,
+   "stories": [
+    {
+     "t": "Fri 10:38 p.m.",
+     "iso": "2026-10-31T02:38:36+00:00",
+     "outlet": "CTV News",
+     "title": "Not-too-spooky weather in store for Halloween in Calgary",
+     "url": "https://www.ctvnews.ca/calgary/article/not-too-spooky-weather-in-store-for-halloween-in-calgary/",
+     "ca": true,
+     "tie": ""
     }
    ],
    "official": [],
