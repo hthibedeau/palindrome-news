@@ -6015,7 +6015,10 @@ function etAgeMs(label) {
   });
   const items = [...document.querySelectorAll('#breaking .tl li')];
   const topBtn = document.querySelector('#breaking .bk-dev-btn');
-  if (items.length) {
+  // the hand-written top story's timeline only while that story is current (Hannah, Sat Oct 31, 2026: "Why is BC dog
+  // rescuer killed in Ukraine still in the news lineup?"); the top stories of the day get theirs from devAuto() below
+  const bkEl = document.getElementById('breaking'), bkCurrent = bkEl && !(Date.now() - Date.parse(bkEl.dataset.lastdev || '') > 3 * 3600e3);
+  if (items.length && bkCurrent) {
     const name = (document.getElementById('breaking').dataset.story || 'the top story').trim();
     blocks.push({ id: 'developed-top', name: name, back: '#breaking', html: items.map((li) => '<li>' + li.innerHTML + '</li>').join(''), bg: window.PAL_TOP_BACKGROUND || [] });
   } else if (topBtn) topBtn.hidden = true;
@@ -7501,4 +7504,39 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
 })();
 </script>
 <!-- end week layer -->
+<!-- How this developed for the top stories of the day (Hannah, Sat Oct 31, 2026) -->
+<script id="dev-auto">
+(function devAuto() {
+  // "How this developed" for the top stories on the page now (tools/autopilot.py auto stories): each story's reports,
+  // newest first, each the newsroom's own headline, credited and linked (Hannah, Sat Oct 31, 2026).
+  const esc = (x) => String(x == null ? '' : x).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const SHOW = 3;
+  async function run() {
+    let D = null;
+    try { const r = await fetch('live/auto.json?t=' + Date.now(), { cache: 'no-store' }); if (r.ok) D = await r.json(); } catch (e) {}
+    const A = D && D.auto; const sec = document.getElementById('developed'), wrap = document.getElementById('devBlocks');
+    if (!A || !sec || !wrap) return;
+    const list = (A.stories || []).slice(0, A.top_n || 2);
+    wrap.querySelectorAll('.dev-block.dev-auto').forEach((b) => b.remove());
+    const open = new Set(JSON.parse(sessionStorage.getItem('pal-dev-open') || '[]'));
+    list.slice().reverse().forEach((st) => {
+      const reps = (st.reports || []).slice().sort((a, b) => (a.iso < b.iso ? 1 : -1));
+      if (reps.length < 2) return;
+      const id = 'developed-' + st.key;
+      const blk = document.createElement('div'); blk.className = 'dev-block dev-auto'; blk.id = id; blk.style.scrollMarginTop = '64px';
+      blk.innerHTML = '<h3 class="dev-name">' + esc(st.title) + '</h3><ol class="dev-list">' + reps.map((r) => '<li><time>' + esc(r.t) + '</time>' + esc(r.title) + ' (<a href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(r.outlet) + '</a>)</li>').join('') + '</ol>';
+      const ol = blk.querySelector('ol'), lis = [...ol.children];
+      const btn = document.createElement('button'); btn.type = 'button'; btn.className = 'dev-more';
+      const set = (o) => { blk.classList.toggle('open', o); lis.forEach((li, i) => { li.hidden = !o && i >= SHOW; }); btn.setAttribute('aria-expanded', String(o));
+        btn.innerHTML = o ? 'Show less <span aria-hidden="true">&#9652;</span>' : (lis.length > SHOW ? 'Show all ' + lis.length + ' updates' : 'Show in full') + ' <span aria-hidden="true">&#9662;</span>'; };
+      btn.addEventListener('click', () => { const o = !blk.classList.contains('open'); set(o);
+        try { const k = new Set(JSON.parse(sessionStorage.getItem('pal-dev-open') || '[]')); o ? k.add(id) : k.delete(id); sessionStorage.setItem('pal-dev-open', JSON.stringify([...k])); } catch (e) {} });
+      set(open.has(id)); ol.after(btn);
+      wrap.prepend(blk);
+    });
+    if (wrap.children.length) sec.hidden = false;
+  }
+  setTimeout(run, 800); setInterval(run, 120000);
+})();
+</script>
 </body></html>
