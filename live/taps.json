@@ -1,13 +1,13 @@
 {
- "checked": "2026-10-31T14:00:47.304230+00:00",
- "labels": 283,
+ "checked": "2026-10-31T14:56:57.605220+00:00",
+ "labels": 272,
  "problems": [],
  "guard": {
   "fixed": [
    {
-    "label": "CBS News",
-    "was": "(card link) cbsnews.com",
-    "now": "https://www.cbsnews.com/news/abdul-el-sayed-haley-stevens-feud-michigan-senate/"
+    "label": "CP24 ↗",
+    "was": "(card link) timescolonist.com",
+    "now": "https://www.cp24.com/news/canada/2026/10/30/anand-says-she-called-out-russian-counterpart-invited-by-us-to-g20-ministerial/"
    },
    {
     "label": "ABC News",
@@ -20,12 +20,22 @@
     "now": "https://www.nbcnews.com/politics/2026-election/2026-democratic-candidates-throw-joe-biden-bus-border-security-rcna603228"
    },
    {
+    "label": "NPR",
+    "was": "(card link) npr.org",
+    "now": "https://www.npr.org/2026/10/31/nx-s1-6024423/criminal-probe-alaska-senate-candidate"
+   },
+   {
     "label": "The Hill",
     "was": "(card link) thehill.com",
-    "now": "https://thehill.com/homenews/administration/6186030-trump-afghan-refugees-afghanistan/"
+    "now": "https://thehill.com/homenews/administration/6186090-trump-triumphal-arch-lawsuit/"
    }
   ],
-  "disabled": [],
+  "disabled": [
+   {
+    "label": "Time change",
+    "href": "https://www.thestar.com/news/canada/british-columbia/b-c-s-new-time-zone-could-cause-confusion-from-calendars-to-medical-appointments/article_9637bef8-58c9-5c30-9cca-aa894fee1c19.html"
+   }
+  ],
   "lifted": [
    {
     "label": "The Canadian Press · Radio-Canada · CBC News",
