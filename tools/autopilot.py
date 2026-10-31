@@ -61,13 +61,34 @@ CANADIAN_FRESH_HOURS = 6    # a Canadian story still developing: a report this r
 TOP_RULES = [  # (number, name) shown in live/auto.json "considered", so it is always clear why a story is where it is
     (1, "Canadian and breaking"),
     (2, "Big international story, on every front page"),
-    (3, "Breaking U.S. election story (with its Canadian angle)"),
-    (4, "Canadian, with a live event coming up"),
-    (5, "Canadian, still developing"),
-    (6, "From abroad, tied to Canada"),
-    (7, "Canadian, older"),
-    (8, "No Canadian tie"),
+    (3, "Big Canadian exclusive: a major newsroom's interview or scoop (shown as Exclusive)"),
+    (4, "Breaking U.S. election story (with its Canadian angle)"),
+    (5, "Canadian, with a live event coming up"),
+    (6, "Canadian, still developing"),
+    (7, "From abroad, tied to Canada"),
+    (8, "Canadian, older"),
+    (9, "No Canadian tie"),
 ]
+# BIG CANADIAN EXCLUSIVES (Hannah, Fri Oct 30, 2026, on Politico's Carney interview: "how do we ensure in the code that
+# big news like that ends up in breaking"). One newsroom's own interview or scoop is not Breaking (several newsrooms
+# reporting on their own: Hannah, Oct 29), so it goes at the top labelled "Exclusive", credited to the newsroom that
+# has it, until others report it (then it is an ordinary story) or SCOOP_HOURS pass. It qualifies when all of these hold:
+#   - a major newsroom (SCOOP_OUTLETS) has it, published in the last SCOOP_HOURS;
+#   - it is an interview or a scoop (SCOOP_SIGNAL, in the headline, the address or the summary);
+#   - it is about someone at the top of Canadian public life (SCOOP_WHO) or the Canada-U.S. relationship.
+SCOOP_HOURS = 8
+SCOOP_OUTLETS = {"Politico", "CBC News", "CTV News", "Global News", "Toronto Star", "National Post", "The Canadian Press", "Reuters",
+                 "Associated Press", "Bloomberg", "BNN Bloomberg", "The New York Times", "The Wall Street Journal", "The Washington Post",
+                 "Axios", "BBC News", "Financial Times", "The Hill", "Radio-Canada", "La Presse", "Maclean's", "The Logic"}
+SCOOP_SIGNAL = re.compile(r"\b(exclusive|interview|interviewed|told (?:POLITICO|CBC|CTV|Global|the Star|Reuters|Bloomberg|The Canadian Press)|"
+                          r"tells (?:POLITICO|CBC|CTV|Global|the Star|Reuters|Bloomberg)|in an interview|sources say|sources tell|"
+                          r"documents (?:show|obtained|reveal)|obtained by|has learned|learned that|first reported)\b", re.I)
+SCOOP_WHO = re.compile(r"\b(Carney|prime minister|Poilievre|Freeland|Anand|Champagne|LeBlanc|Joly|McGuinty|Hoekstra|"
+                       r"Danielle Smith|Doug Ford|David Eby|Eby|Legault|Plamondon|Wab Kinew|Houston|premiers?)\b", re.I)
+SCOOP_CANUS = re.compile(r"\b(Canada|Canadian|Ottawa)\b.*\b(Trump|U\.?S\.?|Washington|tariffs?|trade deal|CUSMA|USMCA)\b|"
+                         r"\b(Trump|U\.?S\.?|Washington|tariffs?|trade deal|CUSMA|USMCA)\b.*\b(Canada|Canadian|Ottawa)\b", re.I)
+# feeds whose items carry the article's own summary and picture, for newsrooms whose pages refuse automated reading
+RICH_FEEDS = ["https://rss.politico.com/canada.xml", "https://rss.politico.com/politics-news.xml", "https://rss.politico.com/congress.xml"]
 CLIP_HOURS = 36
 WEAK = set("""here's here’s what what's why how who when watch live breaking update updates opinion analysis says said new
 canada canadian canadians ottawa u.s us america american trump carney the a this that it's state states department
@@ -1735,6 +1756,60 @@ def _select(auto, cands, ranked, tier):
 LAST_PICK = None
 
 
+RICH = {}
+
+
+def rich_item(url):
+    """The feed's own summary, picture, caption and credit for an article (RICH_FEEDS), when its page can't be read."""
+    if not RICH:
+        for f in RICH_FEEDS:
+            x = curl(f)
+            for it in re.findall(r"<item>(.*?)</item>", x or "", re.S):
+                g = lambda k: _h.unescape(re.sub(r"<!\[CDATA\[|\]\]>", "", (re.search(r"<" + k + r"[^>]*>(.*?)</" + k + ">", it, re.S) or [None, ""])[1])).strip()
+                link = g("link")
+                img = (re.search(r'<media:content[^>]*url="([^"]+)"', it) or [None, ""])[1]
+                RICH[link.split("?")[0]] = {"desc": clean(g("description")), "img": img, "caption": clean(g("media:title")),
+                                           "credit": clean(g("media:credit")), "by": clean(g("dc:creator")).replace("By ", "")}
+        RICH.setdefault("_loaded", {})
+    return RICH.get(url.split("?")[0]) or {}
+
+
+def scoops(items, cands, now, imgdir):
+    """Big Canadian exclusives (see SCOOP_OUTLETS above): at most one, the newest, as a top-story candidate."""
+    import autoupdate as au
+    covered = {r.get("url", "").split("?")[0] for c in cands for r in (c.get("reports") or [])} | {c.get("url", "").split("?")[0] for c in cands}
+    for dt, outlet, title, link, _ in sorted(items, key=lambda x: x[0], reverse=True):
+        if (now - dt).total_seconds() > SCOOP_HOURS * 3600 or dt > now + timedelta(minutes=10):
+            continue
+        o = au.clean_outlet(outlet)
+        if o not in SCOOP_OUTLETS or link.split("?")[0] in covered or SPORT.search(title + " " + link) or au.OPINION.search(title + " " + link):
+            continue
+        info = dict(rich_item(link)) or {}
+        if not info.get("desc"):
+            info.update({k: v for k, v in page_info(link).items() if v})
+        text = title + " " + link.replace("-", " ") + " " + info.get("desc", "")
+        if not SCOOP_SIGNAL.search(text) or not (SCOOP_WHO.search(title + " " + info.get("desc", "")) or SCOOP_CANUS.search(title + " " + info.get("desc", ""))):
+            continue
+        key = "scoop-" + hashlib.md5(link.encode()).hexdigest()[:8]
+        photo = None
+        if info.get("img"):
+            src = save_photo(info["img"], imgdir, key)
+            if src:
+                cap = info.get("caption") or ""
+                credit = info.get("credit") or ""
+                photo = {"src": src, "orig": info["img"], "caption": (cap.rstrip(".") + "." if cap else "Photo") + (f" ({credit})" if credit else "") + f" — via {o}",
+                         "alt": cap[:160] or title, "outlet": o, "url": link}
+        rep_ = {"t": w.eastern(dt), "iso": dt.isoformat(), "outlet": o, "title": clean(title), "url": link, "desc": info.get("desc", "")}
+        return [{
+            "key": key, "words": [], "score": 0, "outlets": 1, "carriers": 1, "independent": 1, "scoop": True, "tag": "Exclusive",
+            "title": clean(title), "url": link, "outlet": o, "t": w.eastern(dt), "iso": dt.isoformat(), "summary": info.get("desc", ""),
+            "first": {"outlet": o, "url": link, "t": w.eastern(dt), "title": clean(title)}, "newest": dt.isoformat(), "photo": photo,
+            "reports": [rep_], "sources": [dict(rep_, primary=False, wire="", by=[{"outlet": o, "src": o, "byline": info.get("by", "")}], copies=[])],
+            "theme": "",
+        }]
+    return []
+
+
 def top_rule(s, now=None):
     """Which rule puts this story where it is (TOP_RULES): the lower the number, the higher on the page. Within one
     rule, the bigger story (weight: coverage, Newswatch and CBC front placement, most-read, freshness) goes first,
@@ -1752,17 +1827,19 @@ def top_rule(s, now=None):
     if (not canadian and (s.get("independent") or 0) >= BIG_WORLD_INDEPENDENT and (s.get("carriers") or 0) >= BIG_WORLD_CARRIERS
             and age < BIG_WORLD_FRESH_HOURS):
         return 2
-    if s.get("us_election"):
+    if s.get("scoop") and age < SCOOP_HOURS:
         return 3
-    if canadian and live == "soon":
+    if s.get("us_election"):
         return 4
-    if canadian and age < CANADIAN_FRESH_HOURS:
+    if canadian and live == "soon":
         return 5
-    if s.get("canada") in ("tie", "general"):
+    if canadian and age < CANADIAN_FRESH_HOURS:
         return 6
-    if canadian:
+    if s.get("canada") in ("tie", "general"):
         return 7
-    return 8
+    if canadian:
+        return 8
+    return 9
 
 
 def rank_key(s):
@@ -2342,6 +2419,16 @@ def run(page, items, groups, breaking, now, imgdir, prev):
         except Exception as e:  # never block the run
             print(f"autopilot {name} failed:", e)
             res[name] = prev.get(name) or ({} if name in ("auto", "canus", "mostread") else None if name == "brief" else [])
+    try:  # a big Canadian exclusive joins the candidates (SCOOP_OUTLETS above)
+        a_ = res.get("auto") or {}
+        sc = scoops(items, a_.get("stories") or [], now, imgdir)
+        if sc:
+            a_.setdefault("stories", []).extend(sc)
+            a_["takeover"] = True if a_.get("takeover") is None else a_["takeover"]
+            res["auto"] = a_
+            print("exclusive:", sc[0]["outlet"], sc[0]["title"][:80])
+    except Exception as e:
+        print("exclusive check failed:", e)
     try:  # the two top stories: Canadian ties first
         res["auto"] = pick_by_canada(res.get("auto") or {}, items, now, res.get("eds"), res.get("papers"), res.get("otr"), res.get("canus"), res.get("mostread"))
     except Exception as e:
