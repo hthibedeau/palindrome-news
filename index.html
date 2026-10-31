@@ -7398,6 +7398,13 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
 #bigWeek li .o::before { content: "\2014\00a0"; font-weight: 400; color: var(--muted); }
 #bigWeek li .ca { display: inline-block; margin-right: 6px; padding: 0 7px; border-radius: 999px; background: #B23A55; color: #FFFFFF; font-size: 10.5px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; vertical-align: 1px; }
 #bigWeek .bw-soon { margin: 6px 0 4px; font-size: 14px; color: var(--muted); font-style: italic; }
+/* more than two reports on a card: the first two, and a Show all / Show fewer button (Hannah, Sat Oct 31, 2026) */
+#bigWeek .bw-fold:not(.bw-open) > li:nth-child(n+3) { display: none; }
+#bigWeek .bw-card { position: relative; }
+#bigWeek .bw-more { position: absolute; top: 12px; right: 14px; margin: 0; min-height: 30px; padding: 0 12px; border: 1px solid var(--wine); border-radius: 999px; background: none;
+  color: var(--wine); font: 600 12.5px/1 inherit; cursor: pointer; }
+#bigWeek .bw-more:hover { background: var(--wine); color: #FFFFFF; }
+#bigWeek .bw-more:focus-visible { outline: 2px solid var(--wine); outline-offset: 2px; }
 #bigWeek .bw-note { margin: 10px 0 0; font-size: 12px; color: var(--muted); }
 </style>
 <script id="week-js">
@@ -7430,12 +7437,15 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     if (!sec) { sec = document.createElement('section'); sec.id = 'bigWeek'; sec.className = 'ruled'; sec.setAttribute('aria-labelledby', 'bw-h'); }
     place(sec);
     const count = (n) => n === 0 ? '<span class="bw-count today">Today</span>' : n === -1 ? '<span class="bw-count">Yesterday</span>' : n === 1 ? '<span class="bw-count">Tomorrow</span>' : '<span class="bw-count">In ' + n + ' days</span>';
+    const wasOpen = [...sec.querySelectorAll('.bw-card')].filter((c) => c.querySelector('.bw-fold.bw-open')).map((c) => c.querySelector('h3').textContent);
     sec.innerHTML = '<div class="band-head"><h2 id="bw-h">The big week ahead</h2><p>The scheduled events the news is building to, with the newest reports on each. Every line links to the newsroom that reported it.</p></div><div class="bw-grid">'
       + live.map((e) => '<article class="bw-card"><div class="bw-when">' + esc(label(e._d)) + count(e._days) + '</div><h3>' + esc(e.name) + '</h3>'
         + (e.what ? '<p class="bw-what">' + esc(e.what) + '</p>' : '')
-        + (e.reports && e.reports.length ? '<ol>' + e.reports.map((r) => '<li><time>' + esc(r.t) + '</time>' + (r.canada && !/Canad|budget/i.test(e.name) ? '<span class="ca">Canada</span>' : '') + '<a href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(r.title) + '</a><span class="o">' + esc(r.outlet) + ' &#8599;</span></li>').join('') + '</ol>'
+        + (e.reports && e.reports.length > 2 ? '<button type="button" class="bw-more" aria-expanded="false" data-n="' + e.reports.length + '">Show all ' + e.reports.length + ' \u25BE</button>' : '')
+        + (e.reports && e.reports.length ? '<ol class="bw-fold">' + e.reports.map((r) => '<li><time>' + esc(r.t) + '</time>' + (r.canada && !/Canad|budget/i.test(e.name) ? '<span class="ca">Canada</span>' : '') + '<a href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(r.title) + '</a><span class="o">' + esc(r.outlet) + ' &#8599;</span></li>').join('') + '</ol>'
           : '<p class="bw-soon">Coverage builds through the week. The newest reports appear here as they are published.</p>')
         + '</article>').join('') + '</div><p class="bw-note">Checked automatically ' + esc(new Date(D.checked).toLocaleTimeString('en-CA', { hour: 'numeric', minute: '2-digit', timeZone: 'America/Toronto' })) + ' ET.</p>';
+    sec.querySelectorAll('.bw-card').forEach((c) => { if (wasOpen.indexOf((c.querySelector('h3') || {}).textContent) > -1) { const b = c.querySelector('.bw-more'); if (b) b.click(); } });
     sec.hidden = false;
   }
   function canusLists(D) {
@@ -7465,6 +7475,12 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     const p = cu.querySelector('.band-head p');
     if (p && D && D.checked) p.innerHTML = p.innerHTML.replace(/Updated [^.]*?\d{1,2}:\d{2} [ap]\.m\. ET\.|Checked automatically [^.]*? ET\./, 'Checked automatically ' + esc(new Date(D.checked).toLocaleString('en-CA', { weekday: 'long', hour: 'numeric', minute: '2-digit', timeZone: 'America/Toronto' }).replace(',', '')) + ' ET.');
   }
+  document.addEventListener('click', (ev) => {
+    const b = ev.target.closest && ev.target.closest('#bigWeek .bw-more'); if (!b) return;
+    const ol = b.closest('.bw-card').querySelector('.bw-fold'); if (!ol) return;
+    const on = ol.classList.toggle('bw-open'); b.setAttribute('aria-expanded', String(on));
+    b.textContent = on ? 'Show fewer \u25B4' : 'Show all ' + b.dataset.n + ' \u25BE';
+  });
   let D = null;
   async function load() {
     try { const r = await fetch('live/auto.json?t=' + Date.now(), { cache: 'no-store' }); if (r.ok) D = await r.json(); } catch (e) {}
