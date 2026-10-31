@@ -100,6 +100,10 @@ FEEDS = [
     ("Medicine Hat News", "https://medicinehatnews.com/feed/"),  # added by source_discovery.py 2026-10-20
     ("NBC News", "https://www.nbcnews.com/feed/"),  # added by source_discovery.py 2026-10-20
     ("The Hill", "https://thehill.com/feed/"),  # added by source_discovery.py 2026-10-20
+    # Politico (Hannah, Fri Oct 30, 2026: "do we use politico as a source?"): its U.S. politics and Congress feeds.
+    # Politico Europe and the Ottawa Playbook refuse automated reading (403), so they are not listed.
+    ("Politico", "https://rss.politico.com/politics-news.xml"),
+    ("Politico", "https://rss.politico.com/congress.xml"),
     ("Fox News", "https://moxie.foxnews.com/google-publisher/latest.xml"),  # added by source_discovery.py 2026-10-20
     ("Euronews", "https://www.euronews.com/rss"),  # added by source_discovery.py 2026-10-20
     ("The Japan Times", "https://www.japantimes.co.jp/feed/"),  # added by source_discovery.py 2026-10-20

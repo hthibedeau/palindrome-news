@@ -101,6 +101,7 @@ US_FEEDS = [
     ("Fox News", "https://moxie.foxnews.com/google-publisher/latest.xml"),
     ("NPR", "https://feeds.npr.org/1001/rss.xml"),
     ("The Hill", "https://thehill.com/homenews/feed/"),
+    ("Politico", "https://rss.politico.com/politics-news.xml"),
 ]
 
 
