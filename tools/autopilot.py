@@ -1309,6 +1309,12 @@ def is_place(t):
     return bool(PLACES.match(t) or CAN_TIE.fullmatch(t[:1].upper() + t[1:]))
 
 
+# not news for "Connected to this story": games and scores, entertainment, sponsored and promotional posts
+NOT_NEWS = re.compile(r"\b(beats?|beat|defeats?|edges?|blanks?|exhibition|worlds|playoffs?|hockey|NHL|NBA|MLB|NFL|MLS|WNBA|PWHL|soccer|"
+                      r"goals?|score[sd]?|rocker|song|album|concert|movie|film|actor|actress|singer|celebrity|trolls?|"
+                      r"Top Pick|Investment Conference|sponsored|partner content|press release|newswire)\b|/sports?/|/entertainment/|/sponsored", re.I)
+
+
 def related(items, stories, now, eds, papers, groups=()):
     import autoupdate as au
     import gap_check as gc
@@ -1331,7 +1337,7 @@ def related(items, stories, now, eds, papers, groups=()):
             own_rows = [x for x in recent if norm_url(x[3]) in own_n]
             picked, used = [], set()
             for dt, outlet, title, link, k in recent:
-                if not (ra.search(title) and rb.search(title)) or au.OPINION.search(title + " " + link) or VIDEO.search(link) or SPORT.search(title):
+                if not (ra.search(title) and rb.search(title)) or au.OPINION.search(title + " " + link) or VIDEO.search(link) or SPORT.search(title) or NOT_NEWS.search(title + " " + link):
                     continue
                 if norm_url(link) in own_n or any(same_report(title, x[2]) or len(gc.keys(title) & gc.keys(x[2])) >= 4 for x in own_rows):
                     continue  # the story's own reports, or the same report from another newsroom: already listed under it
@@ -1801,7 +1807,10 @@ def scoops(items, cands, now, imgdir):
                          "alt": cap[:160] or title, "outlet": o, "url": link}
         rep_ = {"t": w.eastern(dt), "iso": dt.isoformat(), "outlet": o, "title": clean(title), "url": link, "desc": info.get("desc", "")}
         return [{
-            "key": key, "words": [], "score": 0, "outlets": 1, "carriers": 1, "independent": 1, "scoop": True, "tag": "Exclusive",
+            "key": key, "words": [x for x in re.findall(r"\b[A-Z][a-z]{3,}\b", title)][:4] or ["Canada"], "score": 0, "outlets": 1, "carriers": 1, "independent": 1, "scoop": True, "tag": "Exclusive",
+            # an exclusive on Canada and the U.S. is the hub for the day's other Canada-U.S. news (Hannah, Fri Oct 30, 2026:
+            # "This could tie all other American cdn news"): "Connected to this story" lists them
+            "hub": "Canada and the U.S." if SCOOP_CANUS.search(title + " " + info.get("desc", "")) else "",
             "title": clean(title), "url": link, "outlet": o, "t": w.eastern(dt), "iso": dt.isoformat(), "summary": info.get("desc", ""),
             "first": {"outlet": o, "url": link, "t": w.eastern(dt), "title": clean(title)}, "newest": dt.isoformat(), "photo": photo,
             "reports": [rep_], "sources": [dict(rep_, primary=False, wire="", by=[{"outlet": o, "src": o, "byline": info.get("by", "")}], copies=[])],
@@ -2456,7 +2465,7 @@ def run(page, items, groups, breaking, now, imgdir, prev):
     print(f"autopilot live blogs: {len(res.get('blogs_auto') or [])}")
     try:
         keyed = [("top" if st["where"].startswith("Top") else st["where"].split("UPNEXT ")[-1].rstrip(")"), words, set(), st["name"]) for st, words in breaking]
-        keyed += [(s_["key"], s_.get("words") or [], {r["url"] for r in s_["reports"]}) + ((s_["theme"],) if s_.get("theme") and s_["theme"] not in SPLIT_THEMES else ())
+        keyed += [(s_["key"], s_.get("words") or [], {r["url"] for r in s_["reports"]}) + ((s_["theme"],) if s_.get("theme") and s_["theme"] not in SPLIT_THEMES else (s_["hub"],) if s_.get("hub") else ())
                   for s_ in a.get("stories", []) + a.get("more", [])]
         res["related"] = related(items, keyed, now, res.get("eds"), res.get("papers"), groups)
     except Exception as e:
