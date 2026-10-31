@@ -101,9 +101,13 @@ FEEDS = [
     ("NBC News", "https://www.nbcnews.com/feed/"),  # added by source_discovery.py 2026-10-20
     ("The Hill", "https://thehill.com/feed/"),  # added by source_discovery.py 2026-10-20
     # Politico (Hannah, Fri Oct 30, 2026: "do we use politico as a source?"): its U.S. politics and Congress feeds.
-    # Politico Europe and the Ottawa Playbook refuse automated reading (403), so they are not listed.
+    # Politico Europe and the Ottawa Playbook newsletter refuse automated reading (403), so they are not listed.
     ("Politico", "https://rss.politico.com/politics-news.xml"),
     ("Politico", "https://rss.politico.com/congress.xml"),
+    # Politico's Canada coverage (Hannah, Fri Oct 30, 2026: "also add in Politico's canada playbook"). The Ottawa
+    # Playbook newsletter page and its feed refuse automated reading (403); this is Politico's Canada news feed, the
+    # stories its Ottawa bureau files (e.g. its Carney interview, Oct 30).
+    ("Politico", "https://rss.politico.com/canada.xml"),
     ("Fox News", "https://moxie.foxnews.com/google-publisher/latest.xml"),  # added by source_discovery.py 2026-10-20
     ("Euronews", "https://www.euronews.com/rss"),  # added by source_discovery.py 2026-10-20
     ("The Japan Times", "https://www.japantimes.co.jp/feed/"),  # added by source_discovery.py 2026-10-20
