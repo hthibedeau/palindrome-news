@@ -1635,6 +1635,19 @@ header.site { border-bottom: 0; }
         </div>
       </div>
     </section>
+    <script>
+      // The hand-written top story only shows while it is current (Hannah, Sat Oct 31, 2026: "every time I pull down to
+      // refresh, I see the old story of the BC dog rescuer"). Older than 3 hours (TAKEOVER_HOURS in tools/autopilot.py),
+      // it is hidden from the first moment, before the automatic top stories arrive; if they never arrive, it comes back.
+      (function () {
+        var b = document.getElementById('breaking'); if (!b) return;
+        var t = Date.parse(b.getAttribute('data-lastdev') || '');
+        if (!(Date.now() - t < 3 * 3600e3)) {
+          b.hidden = true; b.dataset.autoHidden = '1';
+          setTimeout(function () { var a = document.getElementById('autoBreaking'); if (b.dataset.autoHidden && (!a || a.hidden || !a.children.length)) { b.hidden = false; delete b.dataset.autoHidden; } }, 15000);
+        }
+      })();
+    </script>
     <section class="breaking tap" id="autoBreaking" aria-label="Top stories, updated automatically" hidden></section>
 
     <section class="livecov" id="liveCoverage" aria-label="Live coverage now" hidden>
@@ -6843,7 +6856,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
   }
   const ev = document.getElementById('bkEvent');
   if (ev && window.MutationObserver) new MutationObserver((ms) => { if (ms.some((m) => [...m.addedNodes].some((n) => !(n.classList && (n.classList.contains('rel-box') || n.classList.contains('can-box') || n.classList.contains('auto-news') || n.classList.contains('cov') || n.classList.contains('fresh')))))) { paint(); if (AUTO) { related(); canAngle(); dazzle(); } } }).observe(ev, { childList: true });
-  setTimeout(load, 1500); setInterval(load, 120000);
+  setTimeout(load, 50); setInterval(load, 120000);  // the top stories as soon as the page opens (was 1.5 s; Sat Oct 31)
   let rz; window.addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(() => { if (AUTO) { paint(); related(); canAngle(); dazzle(); } }, 400); });
   setTimeout(() => { if (AUTO) dazzle(); }, 4000);
   window.PAL_autoupdate = { load, get data() { return AUTO && AUTO.d; } };
