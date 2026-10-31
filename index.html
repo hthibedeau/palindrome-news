@@ -940,6 +940,13 @@ header.site { border-bottom: 0; }
 .clk { position: relative; flex: 1 0 auto; min-width: 128px; display: flex; flex-direction: column; gap: 1px; padding: 9px 16px; border-left: 1px solid var(--line); }
 .clk:first-child { border-left: 0; padding-left: 0; }
 .clk.clk-world { border-left: 2px solid var(--line); }  /* the world cities in the news, after Canada and Washington */
+/* On a phone the clocks slide sideways (Hannah, Sat Oct 31, 2026: "I liked it when you had it as a slide effect"),
+   with a soft fade at the right edge while there are more clocks to slide to, the world cities at the end. */
+@media (max-width: 899px) {
+  .clocks .wrap { scroll-snap-type: x proximity; -webkit-overflow-scrolling: touch; }
+  .clk { scroll-snap-align: start; }
+  .clocks .wrap.more { -webkit-mask-image: linear-gradient(to right, #000 82%, transparent); mask-image: linear-gradient(to right, #000 82%, transparent); }
+}
 @media (min-width: 900px) { .clk { flex: 1 1 0; min-width: 0; padding: 9px 12px; overflow: hidden; } .clk .t { font-size: 20px; } .clk .cgo { white-space: normal; } }  /* every clock fits on a wide screen */
 .clk .city { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
 .clk .t { font-family: var(--serif); font-size: 22px; font-weight: 600; line-height: 1.1; color: var(--title); font-variant-numeric: tabular-nums; }
@@ -5056,6 +5063,9 @@ header.site { border-bottom: 0; }
   }
   drawClocks();
   setInterval(drawClocks, 30000);
+  // the fade at the right edge shows while there are more clocks to slide to
+  (function () { const w = $('clocks'); if (!w) return; const f = () => w.classList.toggle('more', w.scrollLeft + w.clientWidth < w.scrollWidth - 4);
+    w.addEventListener('scroll', f, { passive: true }); window.addEventListener('resize', f); setInterval(f, 1000); f(); })();
   // each city's word comes from the news every run (tools/autopilot.py clock_topics; Hannah, Fri Oct 30, 2026: "The
   // descriptors are out"): the topic of the biggest story there now, linked to its newest report, red when breaking.
   // A city with no news in the last 18 hours shows only its time.
