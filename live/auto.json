@@ -1,6 +1,6 @@
 {
- "checked": "2026-10-31T03:18:22.438855+00:00",
- "checkedLabel": "Fri 11:18 p.m.",
+ "checked": "2026-10-31T03:28:21.707864+00:00",
+ "checkedLabel": "Fri 11:28 p.m.",
  "stories": [
   {
    "key": "top",
@@ -49,6 +49,24 @@
  ],
  "wire": [
   [
+   "Fri 11:16 p.m.",
+   "Latest",
+   "Tulane rallies from 10-point deficit, beats Charlotte 38-31 in OT",
+   "The Canadian Press (via Winnipeg Free Press)",
+   "https://www.winnipegfreepress.com/uncategorized/2026/10/30/tulane-rallies-from-10-point-deficit-beats-charlotte-38-31-in-ot",
+   "2026-10-31T03:16:50+00:00",
+   1
+  ],
+  [
+   "Fri 11:00 p.m.",
+   "World",
+   "The cursed cruise: how the dream of never-ending luxury at sea became a nightmare",
+   "The Guardian",
+   "https://www.theguardian.com/news/ng-interactive/2026/oct/31/mv-odyssey-cruise-passengers-nightmare-stranded-cambodia",
+   "2026-10-31T03:00:31+00:00",
+   1
+  ],
+  [
    "Fri 10:51 p.m.",
    "World",
    "Ebola death toll in DR Congo passes 5,000",
@@ -74,6 +92,15 @@
    "https://www.aljazeera.com/video/newsfeed/2026/10/31/hundreds-evacuated-from-melania-brokered-ceasefire-town-of-oleshky?traffic_source=rss",
    "2026-10-31T02:44:38+00:00",
    1
+  ],
+  [
+   "Fri 10:42 p.m.",
+   "Latest",
+   "Tamara Tunie wins Daytime Emmy lead actress honor in a triumphant return to soaps",
+   "Times Colonist",
+   "https://www.timescolonist.com/the-mix/tamara-tunie-wins-daytime-emmy-lead-actress-honor-in-a-triumphant-return-to-soaps-12963754",
+   "2026-10-31T02:42:27+00:00",
+   2
   ],
   [
    "Fri 10:39 p.m.",
@@ -245,33 +272,6 @@
    "https://www.aljazeera.com/news-analysis/2026/10/31/fake-polls-expose-vulnerabilities-in-us-elections-ahead-of-midterms?traffic_source=rss",
    "2026-10-31T01:26:34+00:00",
    1
-  ],
-  [
-   "Fri 9:23 p.m.",
-   "World",
-   "Dog walker threatened with gun during ICE arrest in North Hollywood",
-   "Al Jazeera",
-   "https://www.aljazeera.com/video/newsfeed/2026/10/31/dog-walker-threatened-with-gun-during-ice-arrest-in-north-hollywood?traffic_source=rss",
-   "2026-10-31T01:23:59+00:00",
-   2
-  ],
-  [
-   "Fri 9:14 p.m.",
-   "Latest",
-   "'Wall of smoke': Plaintiff recalls wildfire anxiety in youth-led climate trial",
-   "CTV News",
-   "https://www.ctvnews.ca/climate-and-environment/article/wall-of-smoke-plaintiff-recalls-wildfire-anxiety-in-youth-led-climate-trial/",
-   "2026-10-31T01:14:49+00:00",
-   3
-  ],
-  [
-   "Fri 9:10 p.m.",
-   "Latest",
-   "U.S. set to deport Afghan refugees to Pakistan, despite risk they’ll be returned to Taliban",
-   "NBC News",
-   "https://www.nbcnews.com/news/us-news/trump-administration-set-deport-afghan-refugees-pakistan-rcna606059",
-   "2026-10-31T01:10:30+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -340,14 +340,6 @@
    "theme": ""
   },
   {
-   "score": 9,
-   "title": "Ottawa lists Roberts Bank port expansion in B.C. as project of national interest",
-   "url": "https://www.timescolonist.com/the-mix/ottawa-lists-roberts-bank-port-expansion-in-bc-as-project-of-national-interest-12963653",
-   "outlets": 7,
-   "why": [],
-   "theme": ""
-  },
-  {
    "score": 8,
    "title": "Russian return to ice hockey tournaments is ‘unwelcome,’ Carney says",
    "url": "https://www.politico.com/news/2026/10/30/ruling-allowing-russia-back-in-ice-hockey-tournaments-is-unwelcome-mark-carney-says",
@@ -372,6 +364,14 @@
    "title": "Polish president turns plane around, police deployed outside top court during stand-off",
    "url": "https://www.ctvnews.ca/world/article/polish-president-cuts-senegal-trip-short-as-top-court-chief-suspended/",
    "outlets": 5,
+   "why": [],
+   "theme": ""
+  },
+  {
+   "score": 7,
+   "title": "Ottawa lists Roberts Bank port expansion in B.C. as project of national interest",
+   "url": "https://www.timescolonist.com/the-mix/ottawa-lists-roberts-bank-port-expansion-in-bc-as-project-of-national-interest-12963653",
+   "outlets": 7,
    "why": [],
    "theme": ""
   },
@@ -1010,9 +1010,9 @@
     "theme": "Canada and the EU",
     "canada": "canadian",
     "canus": false,
-    "popular": 7,
+    "popular": 0,
     "us_election": false,
-    "weight": 64,
+    "weight": 57,
     "videos": [
      {
       "net": "CBC News",
@@ -1070,10 +1070,10 @@
     "url": "https://www.ctvnews.ca/politics/article/carney-pursuing-associate-eu-membership/",
     "rank": 2,
     "live": "",
-    "weight": 64,
+    "weight": 57,
     "score": 30,
     "independent": 12,
-    "most_read": 7,
+    "most_read": 0,
     "canada": "canadian",
     "theme": "Canada and the EU",
     "top": true,
@@ -1081,27 +1081,12 @@
     "carriers": 18
    },
    {
-    "title": "Violent Toronto home invasion was ‘terrifying,’ real estate CEO says as police seek suspects",
-    "url": "https://globalnews.ca/news/12128478/violent-toronto-home-invasion-terrifying-ceo-family/",
-    "rank": 3,
-    "live": "",
-    "weight": 27.5,
-    "score": 5,
-    "independent": 3,
-    "most_read": 7,
-    "canada": "canadian",
-    "theme": "",
-    "top": false,
-    "rule": "Canadian, still developing",
-    "carriers": 3
-   },
-   {
     "title": "Ottawa lists Roberts Bank port expansion in B.C. as project of national interest",
     "url": "https://www.timescolonist.com/the-mix/ottawa-lists-roberts-bank-port-expansion-in-bc-as-project-of-national-interest-12963653",
-    "rank": 4,
+    "rank": 3,
     "live": "",
-    "weight": 26.0,
-    "score": 9,
+    "weight": 24.0,
+    "score": 7,
     "independent": 3,
     "most_read": 0,
     "canada": "canadian",
@@ -1109,6 +1094,21 @@
     "top": false,
     "rule": "Canadian, still developing",
     "carriers": 6
+   },
+   {
+    "title": "Violent Toronto home invasion was ‘terrifying,’ real estate CEO says as police seek suspects",
+    "url": "https://globalnews.ca/news/12128478/violent-toronto-home-invasion-terrifying-ceo-family/",
+    "rank": 4,
+    "live": "",
+    "weight": 23.5,
+    "score": 5,
+    "independent": 3,
+    "most_read": 3,
+    "canada": "canadian",
+    "theme": "",
+    "top": false,
+    "rule": "Canadian, still developing",
+    "carriers": 3
    },
    {
     "title": "Gen Z protests reach Germany as over 160,000 expected at Halloween rallies",
@@ -1206,12 +1206,12 @@
     "why": "not built: only 2 independent report(s) (3 sites)"
    },
    {
-    "title": "Decision clearing path for Russia to join world juniors in Alberta is 'very unwelcome,' minister says",
-    "score": 4,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+    "title": "Graphika finds China-linked Spamouflage accounts posing as U.S. voters on X",
+    "score": 5,
+    "why": "not built: only 1 independent report(s) (3 sites)"
    },
    {
-    "title": "Judge orders DOJ to stop trying to \"intimidate\" California election officials",
+    "title": "Decision clearing path for Russia to join world juniors in Alberta is 'very unwelcome,' minister says",
     "score": 4,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
@@ -1219,166 +1219,13 @@
   "top_n": 2,
   "more": [
    {
-    "key": "auto-668226a7",
-    "words": [
-     "ceo"
-    ],
-    "score": 5,
-    "outlets": 3,
-    "carriers": 3,
-    "tag": "Developing",
-    "title": "Violent Toronto home invasion was ‘terrifying,’ real estate CEO says as police seek suspects",
-    "url": "https://globalnews.ca/news/12128478/violent-toronto-home-invasion-terrifying-ceo-family/",
-    "outlet": "Global News",
-    "t": "Fri 9:46 p.m.",
-    "iso": "2026-10-31T01:46:14+00:00",
-    "summary": "MAC Group CEO David Morton says his family is recovering after a violent Bridle Path home invasion left three relatives shot and all four attacked with a hammer.",
-    "first": {
-     "outlet": "BBC News",
-     "url": "https://www.bbc.co.uk/news/articles/c6ewepng9ky5o?at_medium=RSS&at_campaign=rss",
-     "t": "Fri 6:13 p.m.",
-     "title": "Manhunt under way after Toronto CEO and family violently attacked in home invasion"
-    },
-    "newest": "2026-10-31T01:46:14+00:00",
-    "photo": {
-     "src": "live/img/auto-668226a7-8a9aaeb94f.jpg",
-     "orig": "https://globalnews.ca/wp-content/uploads/2026/10/8358fac4c662a6ab4d4a7f2e4bac1b1085d53a6071f90f0f69436dd1f3ee6231.jpg?quality=65&strip=all&w=720&h=379&crop=1",
-     "caption": "Police officers work at the scene of a home invasion in the Bridle Path neighbourhood in Toronto, on Thursday, Oct. 29, 2026. — via Global News",
-     "alt": "Police officers work at the scene of a home invasion in the Bridle Path neighbourhood in Toronto, on Thursday, Oct. 29, 2026.",
-     "outlet": "Global News",
-     "url": "https://globalnews.ca/news/12128478/violent-toronto-home-invasion-terrifying-ceo-family/"
-    },
-    "independent": 3,
-    "reports": [
-     {
-      "t": "Fri 9:46 p.m.",
-      "iso": "2026-10-31T01:46:14+00:00",
-      "outlet": "Global News",
-      "title": "Violent Toronto home invasion was ‘terrifying,’ real estate CEO says as police seek suspects",
-      "url": "https://globalnews.ca/news/12128478/violent-toronto-home-invasion-terrifying-ceo-family/",
-      "desc": "MAC Group CEO David Morton says his family is recovering after a violent Bridle Path home invasion left three relatives shot and all four attacked with a hammer."
-     },
-     {
-      "t": "Fri 9:13 p.m.",
-      "iso": "2026-10-31T01:13:15+00:00",
-      "outlet": "CBS News",
-      "title": "Family of real estate CEO wounded in Toronto home invasion, officials say",
-      "url": "https://www.cbsnews.com/news/real-estate-ceo-family-wounded-toronto-home-invasion/",
-      "desc": "A search is underway for three armed men who broke into a mansion in Toronto, Canada, belonging to a real estate CEO in the early morning hours Thursday and attacked and injured the family inside, authorities said."
-     },
-     {
-      "t": "Fri 6:13 p.m.",
-      "iso": "2026-10-30T22:13:46+00:00",
-      "outlet": "BBC News",
-      "title": "Manhunt under way after Toronto CEO and family violently attacked in home invasion",
-      "url": "https://www.bbc.co.uk/news/articles/c6ewepng9ky5o?at_medium=RSS&at_campaign=rss",
-      "desc": "The real estate mogul and his two daughters were shot, while his wife was assaulted with a hammer, in an attack that has shocked the city."
-     }
-    ],
-    "sources": [
-     {
-      "t": "Fri 9:46 p.m.",
-      "primary": false,
-      "outlet": "Global News",
-      "title": "Violent Toronto home invasion was ‘terrifying,’ real estate CEO says as police seek suspects",
-      "url": "https://globalnews.ca/news/12128478/violent-toronto-home-invasion-terrifying-ceo-family/",
-      "desc": "MAC Group CEO David Morton says his family is recovering after a violent Bridle Path home invasion left three relatives shot and all four attacked with a hammer.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Global News",
-        "src": "Corus",
-        "byline": "{\"@type\":\"Person\",\"name\":\"Alessia Simona Maratta\",} By Alessia Simona Maratta Global News Posted October 30, 2026 9:46 p"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Fri 9:13 p.m.",
-      "primary": false,
-      "outlet": "CBS News",
-      "title": "Family of real estate CEO wounded in Toronto home invasion, officials say",
-      "url": "https://www.cbsnews.com/news/real-estate-ceo-family-wounded-toronto-home-invasion/",
-      "desc": "A search is underway for three armed men who broke into a mansion in Toronto, Canada, belonging to a real estate CEO in the early morning hours Thursday and attacked and injured the family inside, authorities said.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "CBS News",
-        "src": "CBS News",
-        "byline": "own staff: journalist"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Fri 6:13 p.m.",
-      "primary": false,
-      "outlet": "BBC News",
-      "title": "Manhunt under way after Toronto CEO and family violently attacked in home invasion",
-      "url": "https://www.bbc.co.uk/news/articles/c6ewepng9ky5o?at_medium=RSS&at_campaign=rss",
-      "desc": "The real estate mogul and his two daughters were shot, while his wife was assaulted with a hammer, in an attack that has shocked the city.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "BBC News",
-        "src": "BBC News",
-        "byline": "[{\"@type\":\"Person\",\"name\":\"Nadine Yousif\"}] https://www.facebook.com/bbcnews"
-       }
-      ],
-      "copies": []
-     }
-    ],
-    "replaces_top": false,
-    "events": [],
-    "theme": "",
-    "canada": "canadian",
-    "canus": false,
-    "popular": 7,
-    "us_election": false,
-    "weight": 27.5,
-    "videos": [
-     {
-      "net": "CTV News",
-      "url": "https://www.youtube.com/watch?v=06e7-bU_RJQ",
-      "title": "Family releases statement following violent Bridle Path home invasion",
-      "img": "https://i.ytimg.com/vi/06e7-bU_RJQ/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CP24",
-      "url": "https://www.youtube.com/watch?v=QcmT6ykXo58",
-      "title": "Family releases statement following violent Bridle Path home invasion",
-      "img": "https://i.ytimg.com/vi/QcmT6ykXo58/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CP24",
-      "url": "https://www.youtube.com/watch?v=Lt3lIT5mkWs",
-      "title": "Toronto family speaks out following Bridle Path home invasion | CP24 Live at Five for Oct. 30, 2026",
-      "img": "https://i.ytimg.com/vi/Lt3lIT5mkWs/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CP24",
-      "url": "https://www.youtube.com/watch?v=Cf7PDS1QUlw",
-      "title": "Father, 2 daughters shot in violent Toronto home invasion | CTV News Toronto at Six for Oct. 29 2026",
-      "img": "https://i.ytimg.com/vi/Cf7PDS1QUlw/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     }
-    ]
-   },
-   {
     "key": "auto-15d1f5a1",
     "words": [
      "roberts",
      "bank",
      "b.c"
     ],
-    "score": 9,
+    "score": 7,
     "outlets": 3,
     "carriers": 6,
     "tag": "Developing",
@@ -1542,7 +1389,7 @@
     "canus": false,
     "popular": 0,
     "us_election": false,
-    "weight": 26.0,
+    "weight": 24.0,
     "videos": [
      {
       "net": "CPAC",
@@ -1553,10 +1400,10 @@
       "up": ""
      },
      {
-      "net": "CTV News",
-      "url": "https://www.youtube.com/watch?v=k54SQOOFyIM",
-      "title": "Ottawa lists port expansion for fast-tracking",
-      "img": "https://i.ytimg.com/vi/k54SQOOFyIM/hqdefault.jpg",
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=p7WQ7Ctpo3E",
+      "title": "Ottawa lists B.C. terminal as 'project of national interest' | Hanomansing Live",
+      "img": "https://i.ytimg.com/vi/p7WQ7Ctpo3E/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
@@ -1569,10 +1416,163 @@
       "up": ""
      },
      {
-      "net": "CBC News",
-      "url": "https://www.youtube.com/watch?v=p7WQ7Ctpo3E",
-      "title": "Ottawa lists B.C. terminal as 'project of national interest' | Hanomansing Live",
-      "img": "https://i.ytimg.com/vi/p7WQ7Ctpo3E/hqdefault.jpg",
+      "net": "CTV News",
+      "url": "https://www.youtube.com/watch?v=k54SQOOFyIM",
+      "title": "Ottawa lists port expansion for fast-tracking",
+      "img": "https://i.ytimg.com/vi/k54SQOOFyIM/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     }
+    ]
+   },
+   {
+    "key": "auto-668226a7",
+    "words": [
+     "ceo"
+    ],
+    "score": 5,
+    "outlets": 3,
+    "carriers": 3,
+    "tag": "Developing",
+    "title": "Violent Toronto home invasion was ‘terrifying,’ real estate CEO says as police seek suspects",
+    "url": "https://globalnews.ca/news/12128478/violent-toronto-home-invasion-terrifying-ceo-family/",
+    "outlet": "Global News",
+    "t": "Fri 9:46 p.m.",
+    "iso": "2026-10-31T01:46:14+00:00",
+    "summary": "MAC Group CEO David Morton says his family is recovering after a violent Bridle Path home invasion left three relatives shot and all four attacked with a hammer.",
+    "first": {
+     "outlet": "BBC News",
+     "url": "https://www.bbc.co.uk/news/articles/c6ewepng9ky5o?at_medium=RSS&at_campaign=rss",
+     "t": "Fri 6:13 p.m.",
+     "title": "Manhunt under way after Toronto CEO and family violently attacked in home invasion"
+    },
+    "newest": "2026-10-31T01:46:14+00:00",
+    "photo": {
+     "src": "live/img/auto-668226a7-8a9aaeb94f.jpg",
+     "orig": "https://globalnews.ca/wp-content/uploads/2026/10/8358fac4c662a6ab4d4a7f2e4bac1b1085d53a6071f90f0f69436dd1f3ee6231.jpg?quality=65&strip=all&w=720&h=379&crop=1",
+     "caption": "Police officers work at the scene of a home invasion in the Bridle Path neighbourhood in Toronto, on Thursday, Oct. 29, 2026. — via Global News",
+     "alt": "Police officers work at the scene of a home invasion in the Bridle Path neighbourhood in Toronto, on Thursday, Oct. 29, 2026.",
+     "outlet": "Global News",
+     "url": "https://globalnews.ca/news/12128478/violent-toronto-home-invasion-terrifying-ceo-family/"
+    },
+    "independent": 3,
+    "reports": [
+     {
+      "t": "Fri 9:46 p.m.",
+      "iso": "2026-10-31T01:46:14+00:00",
+      "outlet": "Global News",
+      "title": "Violent Toronto home invasion was ‘terrifying,’ real estate CEO says as police seek suspects",
+      "url": "https://globalnews.ca/news/12128478/violent-toronto-home-invasion-terrifying-ceo-family/",
+      "desc": "MAC Group CEO David Morton says his family is recovering after a violent Bridle Path home invasion left three relatives shot and all four attacked with a hammer."
+     },
+     {
+      "t": "Fri 9:13 p.m.",
+      "iso": "2026-10-31T01:13:15+00:00",
+      "outlet": "CBS News",
+      "title": "Family of real estate CEO wounded in Toronto home invasion, officials say",
+      "url": "https://www.cbsnews.com/news/real-estate-ceo-family-wounded-toronto-home-invasion/",
+      "desc": "A search is underway for three armed men who broke into a mansion in Toronto, Canada, belonging to a real estate CEO in the early morning hours Thursday and attacked and injured the family inside, authorities said."
+     },
+     {
+      "t": "Fri 6:13 p.m.",
+      "iso": "2026-10-30T22:13:46+00:00",
+      "outlet": "BBC News",
+      "title": "Manhunt under way after Toronto CEO and family violently attacked in home invasion",
+      "url": "https://www.bbc.co.uk/news/articles/c6ewepng9ky5o?at_medium=RSS&at_campaign=rss",
+      "desc": "The real estate mogul and his two daughters were shot, while his wife was assaulted with a hammer, in an attack that has shocked the city."
+     }
+    ],
+    "sources": [
+     {
+      "t": "Fri 9:46 p.m.",
+      "primary": false,
+      "outlet": "Global News",
+      "title": "Violent Toronto home invasion was ‘terrifying,’ real estate CEO says as police seek suspects",
+      "url": "https://globalnews.ca/news/12128478/violent-toronto-home-invasion-terrifying-ceo-family/",
+      "desc": "MAC Group CEO David Morton says his family is recovering after a violent Bridle Path home invasion left three relatives shot and all four attacked with a hammer.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Global News",
+        "src": "Corus",
+        "byline": "{\"@type\":\"Person\",\"name\":\"Alessia Simona Maratta\",} By Alessia Simona Maratta Global News Posted October 30, 2026 9:46 p"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Fri 9:13 p.m.",
+      "primary": false,
+      "outlet": "CBS News",
+      "title": "Family of real estate CEO wounded in Toronto home invasion, officials say",
+      "url": "https://www.cbsnews.com/news/real-estate-ceo-family-wounded-toronto-home-invasion/",
+      "desc": "A search is underway for three armed men who broke into a mansion in Toronto, Canada, belonging to a real estate CEO in the early morning hours Thursday and attacked and injured the family inside, authorities said.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "CBS News",
+        "src": "CBS News",
+        "byline": "own staff: journalist"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Fri 6:13 p.m.",
+      "primary": false,
+      "outlet": "BBC News",
+      "title": "Manhunt under way after Toronto CEO and family violently attacked in home invasion",
+      "url": "https://www.bbc.co.uk/news/articles/c6ewepng9ky5o?at_medium=RSS&at_campaign=rss",
+      "desc": "The real estate mogul and his two daughters were shot, while his wife was assaulted with a hammer, in an attack that has shocked the city.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "BBC News",
+        "src": "BBC News",
+        "byline": "[{\"@type\":\"Person\",\"name\":\"Nadine Yousif\"}] https://www.facebook.com/bbcnews"
+       }
+      ],
+      "copies": []
+     }
+    ],
+    "replaces_top": false,
+    "events": [],
+    "theme": "",
+    "canada": "canadian",
+    "canus": false,
+    "popular": 3,
+    "us_election": false,
+    "weight": 23.5,
+    "videos": [
+     {
+      "net": "CP24",
+      "url": "https://www.youtube.com/watch?v=QcmT6ykXo58",
+      "title": "Family releases statement following violent Bridle Path home invasion",
+      "img": "https://i.ytimg.com/vi/QcmT6ykXo58/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CP24",
+      "url": "https://www.youtube.com/watch?v=Lt3lIT5mkWs",
+      "title": "Toronto family speaks out following Bridle Path home invasion | CP24 Live at Five for Oct. 30, 2026",
+      "img": "https://i.ytimg.com/vi/Lt3lIT5mkWs/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CP24",
+      "url": "https://www.youtube.com/watch?v=Cf7PDS1QUlw",
+      "title": "Father, 2 daughters shot in violent Toronto home invasion | CTV News Toronto at Six for Oct. 29 2026",
+      "img": "https://i.ytimg.com/vi/Cf7PDS1QUlw/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CP24",
+      "url": "https://www.youtube.com/watch?v=wGmn1fguwHk",
+      "title": "Lawyer explains self-defense laws in Canada after violent home invasion",
+      "img": "https://i.ytimg.com/vi/wGmn1fguwHk/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1883,7 +1883,7 @@
    "id": "zStQpfLa3DI",
    "r": "ca",
    "o": "Global News",
-   "t": "Fire experts question decision to continue training at CFB Wainwright despite nearby fire",
+   "t": "Was CFB Wainwright fire avoidable? What fire experts say",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=zStQpfLa3DI",
@@ -2202,20 +2202,6 @@
    "geo": "unknown"
   },
   {
-   "id": "BZLRzKj_91E",
-   "r": "world",
-   "o": "Al Jazeera",
-   "t": "Israeli siege on Hebron forces more than 530 families from their homes",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=BZLRzKj_91E",
-   "img": "https://i.ytimg.com/vi/BZLRzKj_91E/hqdefault.jpg",
-   "up": "2026-10-30",
-   "added": "2026-10-30T20:37:30.949182+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "y--fchKoVJM",
    "r": "world",
    "o": "Al Jazeera",
@@ -2233,7 +2219,7 @@
    "id": "VNslMg2kDog",
    "r": "world",
    "o": "Sky News",
-   "t": "Is the 'manosphere' as dangerous as smoking?",
+   "t": "Should the 'manosphere' be deemed a public health risk?",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=VNslMg2kDog",
@@ -2317,7 +2303,7 @@
    "id": "H3ZvAAasUg0",
    "r": "world",
    "o": "DW News",
-   "t": "AI and the growing challenge of political misinformation | DW News",
+   "t": "AI tools blur the lines in election campaigns | DW News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=H3ZvAAasUg0",
@@ -2331,13 +2317,27 @@
    "id": "q0crjoBtlZQ",
    "r": "world",
    "o": "DW News",
-   "t": "G20: Europe shuns Lavrov, but can it isolate Russia? | DW News",
+   "t": "G20 cancels group photo after Europe snubs Russia's Lavrov | DW News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=q0crjoBtlZQ",
    "img": "https://i.ytimg.com/vi/q0crjoBtlZQ/hqdefault.jpg",
    "up": "2026-10-30",
    "added": "2026-10-31T03:08:21.620641+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "9Frq75pZo9E",
+   "r": "world",
+   "o": "Al Jazeera",
+   "t": "Joint Russia-Ukraine convoy leaves occupied Oleshky to evacuate up to 750 civilians",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=9Frq75pZo9E",
+   "img": "https://i.ytimg.com/vi/9Frq75pZo9E/hqdefault.jpg",
+   "up": "2026-10-30",
+   "added": "2026-10-31T03:28:21.707864+00:00",
    "pic": "globe",
    "geo": "unknown"
   }
@@ -2594,13 +2594,6 @@
  ],
  "eds": [
   [
-   "Toronto Star",
-   "Opinion",
-   "Theo Moudakis on Canada's new role in the E.U.",
-   "https://www.thestar.com/opinion/editorial-cartoons/theo-moudakis-on-canada-s-new-role-in-the-e-u/article_693b9be6-e44d-41ad-a1be-927d53ea14eb.html",
-   "2026-10-30T10:00:00+00:00"
-  ],
-  [
    "National Post",
    "Column · Terry Newman",
    "Standing alone is brave, actually",
@@ -2662,6 +2655,13 @@
    "California transplants in Texas are voting Democrat, and they see no irony in it",
    "https://www.foxnews.com/opinion/david-marcus-california-transplants-texas-voting-democrat-see-no-irony",
    "2026-10-30T23:31:35+00:00"
+  ],
+  [
+   "The Wall Street Journal (subscribers)",
+   "Opinion",
+   "When Jews Ruled the Basketball Court",
+   "https://www.wsj.com/opinion/when-jews-ruled-the-basketball-court-206270e3?mod=rss_opinion",
+   "2026-10-30T21:46:00+00:00"
   ]
  ],
  "canus": {
@@ -2855,60 +2855,16 @@
    "report": false,
    "iso": "2026-10-30T16:15:00+00:00",
    "auto": true
-  },
-  {
-   "cat": "premier",
-   "media": "none",
-   "initials": "BC",
-   "name": "Government of B.C.",
-   "role": "Provincial government news",
-   "date": "Oct 28",
-   "platform": "Official statement",
-   "handle": "news.gov.bc.ca",
-   "hed": "BC Coroners Service announces inquest dates into death of Chase de Balinhard",
-   "summary": "A coroner’s inquest has been scheduled to examine the circumstances surrounding the death of Chase de Balinhard.",
-   "href": "https://news.gov.bc.ca/releases/2026PSSG0074-001132",
-   "report": false,
-   "iso": "2026-10-29T03:22:00+00:00",
-   "auto": true
   }
  ],
  "mostread": {
   "sites": [
-   "Toronto Star",
    "Winnipeg Free Press",
    "Global News",
    "Nunatsiaq News",
    "Daily Hive"
   ],
   "list": [
-   {
-    "h": "Toronto CEO speaks out after he and daughters shot in ‘horrific and violent’ Bridle Path home invasion",
-    "u": "https://www.thestar.com/news/gta/police-still-searching-for-suspects-in-violent-bridle-path-home-invasion-that-left-4-family-members-injured/article_dd829678-fa6f-4c6a-a70e-1306f9948086.html",
-    "o": [
-     [
-      "Toronto Star",
-      2,
-      "https://www.thestar.com/news/gta/police-still-searching-for-suspects-in-violent-bridle-path-home-invasion-that-left-4-family-members-injured/article_dd829678-fa6f-4c6a-a70e-1306f9948086.html"
-     ],
-     [
-      "Global News",
-      3,
-      "https://globalnews.ca/news/12128478/violent-toronto-home-invasion-terrifying-ceo-family/"
-     ]
-    ]
-   },
-   {
-    "h": "A Hamilton teacher retired to live on a never-ending cruise. After 2 years, it’s docked for good — and left her stranded",
-    "u": "https://www.thestar.com/news/gta/a-hamilton-teacher-retired-to-live-on-a-never-ending-cruise-after-2-years-it-s-docked-for-good-and-left-her-stranded/article_9b9d0ff6-106c-4a06-be5c-7d23fa6fd866.html",
-    "o": [
-     [
-      "Toronto Star",
-      1,
-      "https://www.thestar.com/news/gta/a-hamilton-teacher-retired-to-live-on-a-never-ending-cruise-after-2-years-it-s-docked-for-good-and-left-her-stranded/article_9b9d0ff6-106c-4a06-be5c-7d23fa6fd866.html"
-     ]
-    ]
-   },
    {
     "h": "Winnipeg election results: School trustees",
     "u": "https://www.winnipegfreepress.com/featured/2026/10/28/winnipeg-election-results-school-trustees",
@@ -2976,17 +2932,6 @@
     ]
    },
    {
-    "h": "I’m an American who thinks Donald Trump is destroying what our two countries share. I also think I know why he’s doing it",
-    "u": "https://www.thestar.com/opinion/contributors/i-m-an-american-who-thinks-trump-is-destroying-what-our-two-countries-share-i-also-think-i-know-why-he-s-doing-it/article_8c37495d-655f-4beb-a08f-2e131e44d1c0.html",
-    "o": [
-     [
-      "Toronto Star",
-      3,
-      "https://www.thestar.com/opinion/contributors/i-m-an-american-who-thinks-trump-is-destroying-what-our-two-countries-share-i-also-think-i-know-why-he-s-doing-it/article_8c37495d-655f-4beb-a08f-2e131e44d1c0.html"
-     ]
-    ]
-   },
-   {
     "h": "Nine fresh faces elected to city council",
     "u": "https://www.winnipegfreepress.com/breakingnews/2026/10/28/winnipeg-election-2026-new-city-councillors",
     "o": [
@@ -2994,6 +2939,39 @@
       "Winnipeg Free Press",
       3,
       "https://www.winnipegfreepress.com/breakingnews/2026/10/28/winnipeg-election-2026-new-city-councillors"
+     ]
+    ]
+   },
+   {
+    "h": "Violent Toronto home invasion was ‘terrifying,’ real estate CEO says as police seek suspects",
+    "u": "https://globalnews.ca/news/12128478/violent-toronto-home-invasion-terrifying-ceo-family/",
+    "o": [
+     [
+      "Global News",
+      3,
+      "https://globalnews.ca/news/12128478/violent-toronto-home-invasion-terrifying-ceo-family/"
+     ]
+    ]
+   },
+   {
+    "h": "Qikiqtarjuaq man forfeits right to jury trial after sleeping in",
+    "u": "https://nunatsiaq.com/stories/article/qikiqtarjuaq-man-forfeits-right-to-jury-trial-after-sleeping-in/",
+    "o": [
+     [
+      "Nunatsiaq News",
+      3,
+      "https://nunatsiaq.com/stories/article/qikiqtarjuaq-man-forfeits-right-to-jury-trial-after-sleeping-in/"
+     ]
+    ]
+   },
+   {
+    "h": "B.C. residents are iffy about a permanent Saturday Halloween",
+    "u": "https://dailyhive.com/vancouver/bc-halloween-permanent-saturday",
+    "o": [
+     [
+      "Daily Hive",
+      3,
+      "https://dailyhive.com/vancouver/bc-halloween-permanent-saturday"
      ]
     ]
    }
@@ -3153,10 +3131,6 @@
     "url": "https://www.youtube.com/watch?v=5vfaDsMhCF4"
    },
    {
-    "net": "CBS News",
-    "url": "https://www.youtube.com/watch?v=LakqyH8vmWg"
-   },
-   {
     "net": "NBC News",
     "url": "https://www.youtube.com/watch?v=GkQTef2ZDzk"
    },
@@ -3187,26 +3161,21 @@
    {
     "net": "LiveNOW from FOX",
     "url": "https://www.youtube.com/watch?v=hWNN_REXBx0"
+   },
+   {
+    "net": "FRANCE 24 English",
+    "url": "https://www.youtube.com/watch?v=HvZt-nh9sGg"
    }
   ]
  },
  "pm": [],
  "blogs_auto": [
   {
-   "net": "Middle East Eye",
-   "story": "Trump says 'there are talks', Tehran wants to talk",
-   "title": "Trump says 'there are talks', Tehran wants to talk",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-there-are-talks-tehran-wants-talk",
-   "updated": "2026-10-31T00:19:20+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/2026-10/000_D4F36DD.jpg"
-  },
-  {
    "net": "Al Jazeera",
    "story": "Iran war live: 4 tankers hit in Hormuz; Trump says conflict will end s",
    "title": "Iran war live: 4 tankers hit in Hormuz; Trump says conflict will end soon",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/31/iran-war-live-oil-tankers-hit-in-hormuz-trump-says-conflict-will-end-soon?traffic_source=rss",
-   "updated": "2026-10-31T03:17:41+00:00",
+   "updated": "2026-10-31T03:27:39+00:00",
    "ended": false,
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-10-30T230320Z_1495036221_RC2YDOASHI7R_RTRMADP_3_IRAN-CRISIS-SHIPPING-HORMUZ-1793404633.jpg?resize=1920%2C1139"
   },
@@ -3486,14 +3455,6 @@
      "title": "Carney says Canada is working to become an 'associate member' as he hosts EU leaders in Montreal",
      "url": "https://www.cbc.ca/news/politics/european-union-canada-associate-member-von-der-leyen-9.7400922?cmp=rss",
      "tie": "Canada and the EU"
-    },
-    {
-     "t": "Thu 10:15 a.m.",
-     "iso": "2026-10-29T14:15:00+00:00",
-     "outlet": "Toronto Star",
-     "title": "Mark Carney embraces EU's 'associate membership' label for Canada",
-     "url": "https://www.thestar.com/politics/federal/eu-chief-von-der-leyen-pushes-canada-as-associate-member/article_6081acb6-1567-4ea2-8dff-d7fdf04ddce8.html",
-     "tie": "Canada and the EU"
     }
    ],
    "views": []
@@ -3520,64 +3481,10 @@
   }
  },
  "canangle_live": {
-  "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-there-are-talks-tehran-wants-talk": {
-   "story": "Trump says 'there are talks', Tehran wants to talk",
-   "us": true,
-   "specific": 0,
-   "stories": [
-    {
-     "t": "Fri 10:39 p.m.",
-     "iso": "2026-10-31T02:39:25+00:00",
-     "outlet": "BBC News",
-     "title": "Trump's tariffs could shutter this Canadian town - its residents are fighting to save it",
-     "url": "https://www.bbc.co.uk/news/articles/cmly016ep243o?at_medium=RSS&at_campaign=rss",
-     "ca": false,
-     "tie": "Canada and the U.S."
-    },
-    {
-     "t": "Fri 7:35 p.m.",
-     "iso": "2026-10-30T23:35:05+00:00",
-     "outlet": "Politico",
-     "title": "Carney says he can wait out Trump for trade deal",
-     "url": "https://www.politico.com/news/2026/10/30/mark-carney-interview-trump-trade-deal-01144329",
-     "ca": false,
-     "tie": "Canada and the U.S."
-    },
-    {
-     "t": "Fri 12:41 p.m.",
-     "iso": "2026-10-30T16:41:57+00:00",
-     "outlet": "CP24",
-     "title": "U.S. midterms 101: Who holds the cards in the Canada-U.S. trade war?",
-     "url": "https://www.cp24.com/news/canada/2026/10/30/us-midterms-101-who-holds-the-cards-in-the-canada-us-trade-war/",
-     "ca": true,
-     "tie": "Canada and the U.S."
-    },
-    {
-     "t": "Fri 4:00 a.m.",
-     "iso": "2026-10-30T08:00:00+00:00",
-     "outlet": "CBC News",
-     "title": "Facing a potential $40M US tariff bill, this American importer is suing Trump to end some tariffs on Canada",
-     "url": "https://www.cbc.ca/news/world/gellert-global-group-suing-trump-tariffs-9.7402197?cmp=rss",
-     "ca": true,
-     "tie": "Canada and the U.S."
-    },
-    {
-     "t": "Thu 5:26 p.m.",
-     "iso": "2026-10-29T21:26:46+00:00",
-     "outlet": "BNN Bloomberg",
-     "title": "Ontario deficit grows to $16.9 billion as trade war with U.S. drags on",
-     "url": "https://www.bnnbloomberg.ca/business/politics/2026/10/29/ontario-deficit-grows-to-169-billion-as-trade-war-with-us-drags-on/",
-     "ca": true,
-     "tie": "Canada and the U.S."
-    }
-   ],
-   "official": [],
-   "views": []
-  },
   "https://www.aljazeera.com/news/liveblog/2026/10/31/iran-war-live-oil-tankers-hit-in-hormuz-trump-says-conflict-will-end-soon?traffic_source=rss": {
    "story": "Iran war live: 4 tankers hit in Hormuz; Trump says conflict will end soon",
    "us": true,
-   "specific": 5,
+   "specific": 4,
    "stories": [
     {
      "t": "Fri 10:39 p.m.",
@@ -3616,13 +3523,13 @@
      "tie": ""
     },
     {
-     "t": "Thu 1:00 p.m.",
-     "iso": "2026-10-29T17:00:00+00:00",
-     "outlet": "Toronto Star",
-     "title": "Ontario deficit hits record $16.9B as Trump tariffs batter economy",
-     "url": "https://www.thestar.com/politics/provincial/ontario-deficit-hits-record-16-9b-as-trump-tariffs-batter-economy/article_888dcdb2-a46e-4677-9331-0c0f2e7d2d17.html",
+     "t": "Fri 12:41 p.m.",
+     "iso": "2026-10-30T16:41:57+00:00",
+     "outlet": "CP24",
+     "title": "U.S. midterms 101: Who holds the cards in the Canada-U.S. trade war?",
+     "url": "https://www.cp24.com/news/canada/2026/10/30/us-midterms-101-who-holds-the-cards-in-the-canada-us-trade-war/",
      "ca": true,
-     "tie": ""
+     "tie": "Canada and the U.S."
     }
    ],
    "official": [],
@@ -3908,7 +3815,7 @@
   "https://www.npr.org/2026/10/30/nx-s1-6022578/minors-pregnant-migrant-texas-trump": {
    "story": "Despite concerns, the Trump administration still sends pregnant migrant minors to south Texas",
    "us": true,
-   "specific": 5,
+   "specific": 4,
    "stories": [
     {
      "t": "Fri 10:39 p.m.",
@@ -3947,13 +3854,13 @@
      "tie": ""
     },
     {
-     "t": "Thu 1:00 p.m.",
-     "iso": "2026-10-29T17:00:00+00:00",
-     "outlet": "Toronto Star",
-     "title": "Ontario deficit hits record $16.9B as Trump tariffs batter economy",
-     "url": "https://www.thestar.com/politics/provincial/ontario-deficit-hits-record-16-9b-as-trump-tariffs-batter-economy/article_888dcdb2-a46e-4677-9331-0c0f2e7d2d17.html",
+     "t": "Fri 12:41 p.m.",
+     "iso": "2026-10-30T16:41:57+00:00",
+     "outlet": "CP24",
+     "title": "U.S. midterms 101: Who holds the cards in the Canada-U.S. trade war?",
+     "url": "https://www.cp24.com/news/canada/2026/10/30/us-midterms-101-who-holds-the-cards-in-the-canada-us-trade-war/",
      "ca": true,
-     "tie": ""
+     "tie": "Canada and the U.S."
     }
    ],
    "official": [],
