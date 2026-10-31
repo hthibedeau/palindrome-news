@@ -5063,8 +5063,8 @@ header.site { border-bottom: 0; }
     if (!Array.isArray(C)) return;
     const row = (c) => [c.city, c.tz, c.w || '', c.u || '', !!c.hot, c.w ? c.title + ' (' + c.outlet + ', ' + c.t + ')' : ''];
     if (C.length && C[0].tz) { clocks.length = 0; C.forEach((c) => clocks.push(row(c))); }  // the update's full set, in its order
-    try { localStorage.setItem('pal-clocks', JSON.stringify({ at: Date.now(), C })); } catch (e) {}
     else clocks.forEach((r) => { const c = C.find((x) => x.city === r[0]); r[2] = c ? c.w : ''; r[3] = c ? c.u : ''; r[4] = !!(c && c.hot); r[5] = c ? c.title + ' (' + c.outlet + ', ' + c.t + ')' : ''; });
+    try { localStorage.setItem('pal-clocks', JSON.stringify({ at: Date.now(), C })); } catch (e) {}
     drawClocks();
   };
   // On a refresh, the last words seen (under 2 hours old) show at once, before the newest update arrives, so the clocks
