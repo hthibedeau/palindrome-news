@@ -78,6 +78,13 @@ CANADIAN_OUTLET = re.compile(r"^(CBC|CTV|Global News|Toronto Star|The Star|Natio
                              r"Times Colonist|The Hub|iPolitics|Maclean|Canada's National Observer|The Logic|Radio-Canada|La Presse)", re.I)
 BREAKING_ABROAD_MINUTES = 60
 BREAKING_INDEPENDENT_ABROAD = 3
+# A big story from abroad leads for at least BIG_ABROAD_HOURS from the moment it broke, even when no new report has
+# come in (Hannah, Sat Oct 31, 2026: "news from abroad, if it's big, can lead for at least an hour or two. If it's big
+# news and the public is learning something important from it, including Canadians"). Big: the news judgment calls it
+# national (it matters to many people and newsrooms across the country carry it), with BIG_ABROAD_INDEPENDENT
+# newsrooms reporting it on their own.
+BIG_ABROAD_HOURS = 2
+BIG_ABROAD_INDEPENDENT = 3
 # BIG CANADIAN EXCLUSIVES (Hannah, Fri Oct 30, 2026, on Politico's Carney interview: "how do we ensure in the code that
 # big news like that ends up in breaking"). One newsroom's own interview or scoop is not Breaking (several newsrooms
 # reporting on their own: Hannah, Oct 29), so it goes at the top labelled "Exclusive", credited to the newsroom that
@@ -554,7 +561,7 @@ def build_story(g, now, imgdir, prev):
         "tag": "Breaking" if independent(reps) >= BREAKING_INDEPENDENT and (now - newest).total_seconds() < BREAKING_MIN * 60 else "Developing",
         "title": clean(lead[2]), "url": lead[3], "outlet": au.clean_outlet(lead[1]), "t": w.eastern(lead[0]), "iso": lead[0].isoformat(),
         "summary": info.get("desc", ""),
-        "first": {"outlet": au.clean_outlet(first[1]), "url": first[3], "t": w.eastern(first[0]), "title": clean(first[2])},
+        "first": {"outlet": au.clean_outlet(first[1]), "url": first[3], "t": w.eastern(first[0]), "title": clean(first[2]), "iso": first[0].isoformat()},
         "newest": newest.isoformat(), "photo": photo,
         "independent": independent(reps),
         "reports": [{"t": w.eastern(r[0]), "iso": r[0].isoformat(), "outlet": au.clean_outlet(r[1]), "title": clean(r[2]), "url": r[3],
@@ -2018,8 +2025,14 @@ def top_rule(s, now=None):
     if (not canadian and (s.get("independent") or 0) >= BIG_WORLD_INDEPENDENT and (s.get("carriers") or 0) >= BIG_WORLD_CARRIERS
             and age < BIG_WORLD_FRESH_HOURS):
         return 2
-    if (not canadian and age * 60 < BREAKING_ABROAD_MINUTES and (s.get("independent") or 0) >= BREAKING_INDEPENDENT_ABROAD
-            and any(CANADIAN_OUTLET.search(r.get("outlet") or "") for r in (s.get("reports") or []))):
+    try:  # hours since the story broke: its first report
+        broke = (now - datetime.fromisoformat((s.get("first") or {}).get("iso") or min(r["iso"] for r in s.get("reports") or []))).total_seconds() / 3600
+    except Exception:
+        broke = 99
+    carried_here = any(CANADIAN_OUTLET.search(r.get("outlet") or "") for r in (s.get("reports") or []))
+    if not canadian and carried_here and (s.get("independent") or 0) >= BREAKING_INDEPENDENT_ABROAD and (
+            age * 60 < BREAKING_ABROAD_MINUTES  # just reported
+            or (broke < BIG_ABROAD_HOURS and s.get("judgment") == "national" and (s.get("independent") or 0) >= BIG_ABROAD_INDEPENDENT)):  # big: two hours
         return 3
     if s.get("scoop") and age < SCOOP_HOURS:
         return 4
