@@ -7179,13 +7179,15 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
 #autoBreaking .dd-also a { color: #FFFFFF; font-weight: 600; text-decoration: none; position: relative; z-index: 2; }
 #autoBreaking .dd-gone { display: none !important; }
 /* The newsroom's name stands apart from the headline (Hannah, Sat Oct 31, 2026: "when it has the source at the end ...
-   it needs to stand out differently than what the title is. Right now, it all blends together"): on its own line under
-   the headline, in small bold capitals and the site's blush pink, in both lists. */
+   it needs to stand out differently than what the title is. Right now, it all blends together" ... "I like it all in one
+   line, but make it stand out"): on the same line, at the end, as a small blush-pink tag in bold capitals, in both lists. */
 #autoBreaking .ab-story .rel-box li .o, #autoBreaking .ab-story .ab-reps li .o, #autoBreaking .dd-also a {
-  display: block; margin-top: 3px; font-size: 11.5px !important; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
-  color: #F2B8C6 !important; opacity: 1 !important; font-variant: normal; }
-#autoBreaking .dd-also { color: #F2B8C6; font-size: 11.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
-#autoBreaking .dd-also a { display: inline; margin: 0; }
+  display: inline; margin: 0 0 0 4px; padding: 0; background: none; border: 0; white-space: normal;
+  font-size: 11.5px !important; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; line-height: 1.4;
+  color: #FF9FBD !important; opacity: 1 !important; font-variant: normal; text-decoration: none; }
+#autoBreaking .ab-story .rel-box li .o::before, #autoBreaking .ab-story .ab-reps li .o::before { content: "\2014\00a0"; font-weight: 400; color: rgba(255, 255, 255, .55); }
+#autoBreaking .dd-also { display: inline; margin-left: 2px; font-size: 11px; color: #F2B8C6; }
+#autoBreaking .dd-also a { margin-left: 4px; }
 #autoBreaking .ab-story .rel-box li > a, #autoBreaking .ab-story .ab-reps li > a { font-size: 16px; line-height: 1.35; }
 </style>
 <script id="dedupe-js">
