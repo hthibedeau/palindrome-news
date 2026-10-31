@@ -1655,6 +1655,12 @@ header.site { border-bottom: 0; }
     </section>
   </div>
 
+  <style>section.lead:not(.ld-ready) > article { visibility: hidden; }</style>
+  <script>
+    // The lead slot shows nothing until the page knows whether its hand-written story is current (Hannah, Sat Oct 31,
+    // 2026: "I get a flash of the picture of Donald Trump and Carney from last week's news"); leadAuto() decides.
+    setTimeout(function () { var l = document.querySelector('section.lead'); if (l) l.classList.add('ld-ready'); }, 8000);
+  </script>
   <section class="lead" aria-label="Lead stories">
     <article class="tap">
       <div class="art hero-art" data-art="city" data-alt="Illustration of U.S. President Donald Trump and Prime Minister Mark Carney" data-photo="img/live/ctv-carney-trade-closer-1026.jpg" data-credit="CTV News"></div>
@@ -6419,7 +6425,10 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     const stale = isNaN(upd) || Date.now() - upd > LEAD_STALE_HOURS * 3600e3;
     const shown = new Set(((AUTO.d.auto && AUTO.d.auto.takeover && AUTO.d.auto.stories) || []).slice(0, (AUTO.d.auto && AUTO.d.auto.top_n) || 2).map((x) => x.key));
     const s = ((AUTO.d.auto && AUTO.d.auto.more) || []).find((x) => !shown.has(x.key));
-    if (!stale || !s) { if (art.dataset.auto) { art.innerHTML = LEAD_ORIG; delete art.dataset.auto; delete art.dataset.key; } return; }
+    const ready = () => { const l = art.closest('section.lead'); if (l) l.classList.add('ld-ready'); };
+    // a hand-written lead older than LEAD_STALE_HOURS with nothing to replace it is not shown: never last week's news
+    art.hidden = stale && !s;
+    if (!stale || !s) { if (art.dataset.auto) { art.innerHTML = LEAD_ORIG; delete art.dataset.auto; delete art.dataset.key; } ready(); return; }
     const a = (u, t, extra) => '<a' + (extra || '') + ' href="' + esc(u) + '" target="_blank" rel="noopener">' + t + '</a>';
     const outs = []; (s.sources || s.reports || []).forEach((r) => { if (!outs.some((o) => o.outlet === r.outlet)) outs.push(r); });
     const label = s.theme || (s.canada === 'canadian' ? 'Canada' : 'World');
@@ -6430,6 +6439,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       + (s.summary ? '<p class="dek">' + esc(s.summary) + ' (' + a(s.url, esc(s.outlet), ' style="position: relative; z-index: 2; text-decoration: underline"') + ')</p>' : '')
       + '<div class="row-meta"><span class="ts">Updated ' + esc(s.t) + '</span><span>' + (s.sources ? s.sources.length : (s.independent || s.outlets)) + ' independent reports</span><span style="color: var(--accent); font-weight: 600">Latest report &#8599;</span></div>'
       + '<div class="chips-static">' + outs.slice(0, 7).map((r) => a(r.url, esc(r.outlet))).join('') + '</div>';
+    ready();
   }
   // Watch: new uploads from the networks' official YouTube channels, Canadian and U.S. first, one per network, up to 12.
   function clips() {
