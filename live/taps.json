@@ -1,9 +1,14 @@
 {
- "checked": "2026-11-01T20:58:25.591000+00:00",
- "labels": 302,
+ "checked": "2026-11-01T21:56:24.162363+00:00",
+ "labels": 294,
  "problems": [],
  "guard": {
   "fixed": [
+   {
+    "label": "ABC News",
+    "was": "(card link) abcnews.com",
+    "now": "https://abcnews.com/US/learjet-9-aboard-crashes-palm-beach-florida-faa/story?id=137753599"
+   },
    {
     "label": "NBC News",
     "was": "(card link) nbcnews.com",
@@ -18,19 +23,9 @@
     "label": "The Hill",
     "was": "(card link) thehill.com",
     "now": "https://thehill.com/homenews/administration/6187284-ssa-irs-hatch-act-trump/"
-   },
-   {
-    "label": "Politico",
-    "was": "(card link) politico.com",
-    "now": "https://www.politico.com/news/2026/11/01/haley-stevens-endorses-mike-rogers-michigan-senate-01144698"
    }
   ],
-  "disabled": [
-   {
-    "label": "Time change",
-    "href": "https://www.cbc.ca/news/canada/nova-scotia/date-change-british-empire-1752-11-days-9.7404255"
-   }
-  ],
+  "disabled": [],
   "lifted": []
  }
 }
