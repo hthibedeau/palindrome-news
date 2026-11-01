@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-01T04:59:45.933936+00:00",
- "checkedLabel": "Sun 12:59 a.m.",
+ "checked": "2026-11-01T05:09:45.983991+00:00",
+ "checkedLabel": "Sun 1:09 a.m.",
  "stories": [
   {
    "key": "top",
@@ -55,6 +55,24 @@
   }
  ],
  "wire": [
+  [
+   "Sun 12:49 a.m.",
+   "World",
+   "UN demands investigation after staffer’s death in Houthi custody in Yemen",
+   "Al Jazeera",
+   "https://www.aljazeera.com/news/2026/11/1/un-demands-investigation-after-staffers-death-in-houthi-custody-in-yemen?traffic_source=rss",
+   "2026-11-01T04:49:15+00:00",
+   1
+  ],
+  [
+   "Sun 12:31 a.m.",
+   "World",
+   "France protests enter third week as police fire tear gas",
+   "Al Jazeera",
+   "https://www.aljazeera.com/video/newsfeed/2026/11/1/france-protests-teargas-police-clashes?traffic_source=rss",
+   "2026-11-01T04:31:24+00:00",
+   1
+  ],
   [
    "Sun 12:07 a.m.",
    "U.S.",
@@ -243,24 +261,6 @@
    "https://www.thestar.com/news/world/united-states/trump-administration-s-social-media-posts-ahead-of-elections-criticized-for-being-inflammatory/article_6b8f27c5-1018-53c8-87de-d91e47efd1fc.html",
    "2026-11-01T02:34:30+00:00",
    1
-  ],
-  [
-   "Sat 10:00 p.m.",
-   "Politics",
-   "Alaska officials ask judge to deny DOJ’s ‘impossible’ demand to set aside ballots",
-   "NBC News",
-   "https://www.nbcnews.com/politics/2026-election/alaska-officials-ask-judge-deny-trump-administrations-impossible-deman-rcna606765",
-   "2026-11-01T02:00:50+00:00",
-   1
-  ],
-  [
-   "Sat 9:59 p.m.",
-   "World",
-   "Shops looted as German cost of living protests turn violent",
-   "BBC News",
-   "https://www.bbc.co.uk/news/articles/cqj34gnd3n30o?at_medium=RSS&at_campaign=rss",
-   "2026-11-01T01:59:57+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -307,14 +307,6 @@
    "theme": "Canada and the U.S."
   },
   {
-   "score": 9,
-   "title": "Binance says 90% of losses from $6.3bn hack covered as FBI says North Korea behind attack",
-   "url": "https://www.theguardian.com/business/2026/nov/01/binance-losses-covered-hack-fbi-north-korea-cryptocurrency",
-   "outlets": 9,
-   "why": [],
-   "theme": ""
-  },
-  {
    "score": 8,
    "title": "Satisfaction with Carney touches 70% for the first time: is ‘bridge’ politics beating ‘wedge’ politics?",
    "url": "https://bruce728.substack.com/p/satisfaction-with-carney-touches",
@@ -324,6 +316,14 @@
     "National Newswatch #7",
     "National Newswatch #11"
    ],
+   "theme": ""
+  },
+  {
+   "score": 8,
+   "title": "Binance says 90% of losses from $6.3bn hack covered as FBI says North Korea behind attack",
+   "url": "https://www.theguardian.com/business/2026/nov/01/binance-losses-covered-hack-fbi-north-korea-cryptocurrency",
+   "outlets": 8,
+   "why": [],
    "theme": ""
   },
   {
@@ -364,27 +364,32 @@
   },
   {
    "score": 5,
-   "title": "Pedestrian in her 80s killed in Markham car crash",
-   "url": "https://toronto.citynews.ca/2026/10/31/pedestrian-in-her-80s-killed-in-markham-car-crash/",
-   "outlets": 3,
-   "why": [],
-   "theme": ""
-  },
-  {
-   "score": 5,
-   "title": "Angel Reese, Atlanta Dream fall short in Game 7 as Golden State Valkyries win first WNBA championship",
-   "url": "https://www.foxnews.com/outkick-sports/angel-reese-atlanta-dream-fall-short-game-7-golden-state-valkyries-win-first-wnba-championship",
-   "outlets": 3,
-   "why": [],
-   "theme": ""
-  },
-  {
-   "score": 5,
    "title": "Police clash with masked rioters after largely peaceful protests across France",
    "url": "https://www.theguardian.com/world/2026/oct/31/police-clash-rioters-after-largely-peaceful-protests-across-france",
    "outlets": 5,
    "why": [],
    "theme": ""
+  },
+  {
+   "score": 4,
+   "title": "Liberals jump ahead of Tories in fundraising as by-election calls loom",
+   "url": "https://www.theglobeandmail.com/politics/article-liberal-conservative-fundraising-by-elections-carney-poilievre/",
+   "outlets": 0,
+   "why": [
+    "National Newswatch #3"
+   ],
+   "theme": ""
+  },
+  {
+   "score": 4,
+   "title": "Can a New Canada-EU Relationship Stand the Tests of Time and Geopolitics?",
+   "url": "https://www.policymagazine.ca/can-a-new-canada-eu-relationship-stand-the-tests-of-time-and-geopolitics/",
+   "outlets": 0,
+   "why": [
+    "National Newswatch #15",
+    "National Newswatch #19"
+   ],
+   "theme": "Canada and the EU"
   }
  ],
  "canada": [
@@ -719,11 +724,11 @@
     "theme": "Canada and the EU",
     "canada": "canadian",
     "canus": false,
-    "popular": 4,
+    "popular": 0,
     "us_election": false,
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (3 cities).",
-    "weight": 25.0,
+    "weight": 21.0,
     "videos": [
      {
       "net": "CBC News",
@@ -742,18 +747,18 @@
       "up": ""
      },
      {
-      "net": "CPAC",
-      "url": "https://www.youtube.com/watch?v=Le1o0pArYn4",
-      "title": "PM Carney meets with European Union leaders in Montréal – October 30, 2026",
-      "img": "https://i.ytimg.com/vi/Le1o0pArYn4/hqdefault.jpg",
+      "net": "Global News",
+      "url": "https://www.youtube.com/watch?v=u-6zitQGoNg",
+      "title": "Beyond trade: Key takeaways from the Canada-EU summit in Montreal",
+      "img": "https://i.ytimg.com/vi/u-6zitQGoNg/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
       "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=u-6zitQGoNg",
-      "title": "Beyond trade: Key takeaways from the Canada-EU summit in Montreal",
-      "img": "https://i.ytimg.com/vi/u-6zitQGoNg/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=KH6-HowaSjs",
+      "title": "Quebec premier’s boycott of Canada-EU summit turns heads",
+      "img": "https://i.ytimg.com/vi/KH6-HowaSjs/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -783,10 +788,10 @@
     "url": "https://globalnews.ca/news/12128698/associate-eu-membership-for-canada/",
     "rank": 2,
     "live": "",
-    "weight": 25.0,
+    "weight": 21.0,
     "score": 4,
     "independent": 2,
-    "most_read": 4,
+    "most_read": 0,
     "canada": "canadian",
     "theme": "Canada and the EU",
     "top": true,
@@ -800,15 +805,15 @@
     "url": "https://www.theguardian.com/business/2026/nov/01/binance-losses-covered-hack-fbi-north-korea-cryptocurrency",
     "rank": 3,
     "live": "",
-    "weight": 30.5,
-    "score": 9,
+    "weight": 29.0,
+    "score": 8,
     "independent": 6,
     "most_read": 0,
     "canada": "none",
     "theme": "",
     "top": false,
     "rule": "No Canadian tie",
-    "carriers": 9,
+    "carriers": 8,
     "judgment": "national",
     "why_judged": "National: affects some people; carried across the country (national desks)."
    },
@@ -867,16 +872,6 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Pedestrian in her 80s killed in Markham car crash",
-    "score": 5,
-    "why": "not built: only 2 independent report(s) (3 sites)"
-   },
-   {
-    "title": "Angel Reese, Atlanta Dream fall short in Game 7 as Golden State Valkyries win first WNBA championship",
-    "score": 5,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
     "title": "Liberals jump ahead of Tories in fundraising as by-election calls loom",
     "score": 4,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
@@ -900,6 +895,16 @@
     "title": "India’s largest dam planned to counter China faces Indigenous revolt",
     "score": 4,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "New information challenges military’s account of deadly Wainwright fire",
+    "score": 3,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Indian Act abolition talk being used to ‘distract,’ says Senator Audette, NDP MP Gazan: ‘I’ve seen this game before’",
+    "score": 3,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
   ],
   "top_n": 2,
@@ -920,20 +925,6 @@
   ]
  },
  "clips": [
-  {
-   "id": "fIM8GI00-5Y",
-   "r": "ca",
-   "o": "CityNews",
-   "t": "Women's Health Circle aims to unite 500 donors for health research",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=fIM8GI00-5Y",
-   "img": "https://i.ytimg.com/vi/fIM8GI00-5Y/hqdefault.jpg",
-   "up": "2026-10-31",
-   "added": "2026-10-31T19:21:41.959591+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
   {
    "id": "4F9NmOorICk",
    "r": "ca",
@@ -1113,6 +1104,20 @@
    "img": "https://i.ytimg.com/vi/22BSzJAWQbQ/hqdefault.jpg",
    "up": "2026-11-01",
    "added": "2026-11-01T04:24:33.379840+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "eqISGLZPmTg",
+   "r": "ca",
+   "o": "CityNews",
+   "t": "Calgarians get dressed up for Wranglers’ Halloween hockey game",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=eqISGLZPmTg",
+   "img": "https://i.ytimg.com/vi/eqISGLZPmTg/hqdefault.jpg",
+   "up": "2026-11-01",
+   "added": "2026-11-01T05:09:45.983991+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1321,7 +1326,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=QSnEYIP8Ob8",
    "img": "https://i.ytimg.com/vi/QSnEYIP8Ob8/hqdefault.jpg",
-   "up": "2026-10-31",
+   "up": "2026-11-01",
    "added": "2026-11-01T03:39:15.533616+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1505,6 +1510,34 @@
    "img": "https://i.ytimg.com/vi/RNrLN9p5PRQ/hqdefault.jpg",
    "up": "2026-10-31",
    "added": "2026-11-01T02:53:07.544370+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "IlEn8rM1XyE",
+   "r": "world",
+   "o": "Al Jazeera",
+   "t": "Oleshky evacuees reach Ukraine and reunite with families as rare humanitarian mission ends",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=IlEn8rM1XyE",
+   "img": "https://i.ytimg.com/vi/IlEn8rM1XyE/hqdefault.jpg",
+   "up": "2026-11-01",
+   "added": "2026-11-01T05:09:45.983991+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "-FnzjwBU46Q",
+   "r": "world",
+   "o": "Al Jazeera",
+   "t": "US Midterms 2026: The country is about to get a new Congress. What do voters want? | This Is America",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=-FnzjwBU46Q",
+   "img": "https://i.ytimg.com/vi/-FnzjwBU46Q/hqdefault.jpg",
+   "up": "2026-10-31",
+   "added": "2026-11-01T05:09:45.983991+00:00",
    "pic": "globe",
    "geo": "unknown"
   }
@@ -2034,24 +2067,12 @@
  ],
  "mostread": {
   "sites": [
-   "Toronto Star",
    "Winnipeg Free Press",
    "Global News",
    "Nunatsiaq News",
    "Daily Hive"
   ],
   "list": [
-   {
-    "h": "Windsor’s Sandwich Town is booming as Americans flood in with money and apologies",
-    "u": "https://www.thestar.com/business/sandwich-town-feature/article_1a8539b1-aaae-4aa8-9a1b-e9d6d552ca28.html",
-    "o": [
-     [
-      "Toronto Star",
-      1,
-      "https://www.thestar.com/business/sandwich-town-feature/article_1a8539b1-aaae-4aa8-9a1b-e9d6d552ca28.html"
-     ]
-    ]
-   },
    {
     "h": "Walkout creates chaos at St. James Smitty’s",
     "u": "https://www.winnipegfreepress.com/breakingnews/2026/10/31/walkout-creates-chaos-at-st-james-smittys",
@@ -2097,33 +2118,6 @@
     ]
    },
    {
-    "h": "Suspect wanted in Bridle Path home invasion was treated and released from Toronto hospital, police say",
-    "u": "https://www.thestar.com/news/gta/bridle-path-home-invasion-suspect-identified-by-toronto-police/article_9e3b3c67-925f-4073-95d8-b072662f55dc.html",
-    "o": [
-     [
-      "Toronto Star",
-      3,
-      "https://www.thestar.com/news/gta/bridle-path-home-invasion-suspect-identified-by-toronto-police/article_9e3b3c67-925f-4073-95d8-b072662f55dc.html"
-     ],
-     [
-      "Global News",
-      4,
-      "https://globalnews.ca/news/12128691/toronto-home-invasion-suspect/"
-     ]
-    ]
-   },
-   {
-    "h": "Canadian students would get access to EU schools under new deal. Here’s what we know",
-    "u": "https://www.thestar.com/news/canada/canadian-students-would-get-access-to-eu-schools-under-new-deal-here-s-what-we-know/article_96e0827a-39c6-4a90-af46-b2e6af609cfe.html",
-    "o": [
-     [
-      "Toronto Star",
-      2,
-      "https://www.thestar.com/news/canada/canadian-students-would-get-access-to-eu-schools-under-new-deal-here-s-what-we-know/article_96e0827a-39c6-4a90-af46-b2e6af609cfe.html"
-     ]
-    ]
-   },
-   {
     "h": "Judge halts construction on housing project across from Granite Curling Club until he rules on city’s approval",
     "u": "https://www.winnipegfreepress.com/business/2026/10/30/judge-halts-any-construction-on-housing-project-across-from-curling-club-until-he-rules-on-citys-approval",
     "o": [
@@ -2153,6 +2147,39 @@
       "Nunatsiaq News",
       2,
       "https://nunatsiaq.com/stories/article/coast-guard-prepares-to-survey-arctic-using-israeli-made-drone/"
+     ]
+    ]
+   },
+   {
+    "h": "Urbanized B.C. homeowner wins $1,000 in dispute over children playing basketball",
+    "u": "https://dailyhive.com/vancouver/bc-homeowner-dispute-strata-basketball",
+    "o": [
+     [
+      "Daily Hive",
+      2,
+      "https://dailyhive.com/vancouver/bc-homeowner-dispute-strata-basketball"
+     ]
+    ]
+   },
+   {
+    "h": "Brandon manufacturer says Canadian steel in demand, but high costs, long delivery times hit hard",
+    "u": "https://www.winnipegfreepress.com/business/2026/10/31/manufacturers-face-double-whammy",
+    "o": [
+     [
+      "Winnipeg Free Press",
+      3,
+      "https://www.winnipegfreepress.com/business/2026/10/31/manufacturers-face-double-whammy"
+     ]
+    ]
+   },
+   {
+    "h": "Will Russia be allowed at the World Juniors? Mixed messages after court ruling Canada Oct 30 5 min read",
+    "u": "https://globalnews.ca/news/12127311/hockey-canada-seeks-clarity-on-russias-return/",
+    "o": [
+     [
+      "Global News",
+      3,
+      "https://globalnews.ca/news/12127311/hockey-canada-seeks-clarity-on-russias-return/"
      ]
     ]
    }
@@ -2215,8 +2242,11 @@
    "city": "St. John's",
    "tz": "America/St_Johns",
    "world": false,
-   "w": "",
-   "u": "",
+   "w": "Brook Royals Sit",
+   "u": "https://vocm.com/2026/10/31/corner-brook-royals-sit-out-season-as-league-shrinks-to-three-teams/",
+   "title": "Corner Brook Royals Sit Out Season as League Shrinks to Three Teams",
+   "outlet": "VOCM",
+   "t": "Sat 3:02 p.m.",
    "hot": false
   },
   {
@@ -2277,7 +2307,7 @@
    "title": "2026 elections live updates: Trump supports Republicans with telerallies",
    "outlet": "CBS News",
    "t": "Sun 12:07 a.m.",
-   "hot": true
+   "hot": false
   },
   {
    "city": "Seoul",
@@ -2314,6 +2344,115 @@
   }
  ],
  "bigweek": [
+  {
+   "name": "Clocks fall back",
+   "date": "2026-11-01",
+   "what": "",
+   "days": 0,
+   "reports": [
+    {
+     "t": "Sat 2:38 p.m.",
+     "iso": "2026-10-31T18:38:31+00:00",
+     "outlet": "CTV News",
+     "title": "B.C.'s new time zone could cause confusion, from calendars to medical appointments",
+     "url": "https://www.ctvnews.ca/vancouver/article/bcs-new-time-zone-could-cause-confusion-from-calendars-to-medical-appointments/",
+     "canada": true,
+     "paywall": false,
+     "exclusive": false
+    },
+    {
+     "t": "Sat 2:03 p.m.",
+     "iso": "2026-10-31T18:03:11.933000+00:00",
+     "outlet": "CBC News",
+     "title": "More Canadian provinces are ditching the time change. But did they pick the wrong option?",
+     "url": "https://www.cbc.ca/news/canada/daylight-saving-time-canada-health-9.7399791",
+     "canada": true,
+     "paywall": false,
+     "exclusive": false
+    },
+    {
+     "t": "Sat 10:53 a.m.",
+     "iso": "2026-10-31T14:53:31+00:00",
+     "outlet": "Telegraph-Journal",
+     "title": "Half of Canada dumps seasonal time changes. N.B. won't follow suit",
+     "url": "https://tj.news/new-brunswick/half-of-canada-dumps-seasonal-time-changes-n-b-wont-follow-suit",
+     "canada": true,
+     "paywall": false,
+     "exclusive": false
+    },
+    {
+     "t": "Sat 10:00 a.m.",
+     "iso": "2026-10-31T14:00:16+00:00",
+     "outlet": "Vancouver Sun",
+     "title": "Aggravation? 'Absolutely': How B.C.'s time change affects businesses on both sides of the border",
+     "url": "https://vancouversun.com/news/local-news/how-bc-time-change-affects-businesses-us-border",
+     "canada": true,
+     "paywall": false,
+     "exclusive": false
+    },
+    {
+     "t": "Sat 8:00 a.m.",
+     "iso": "2026-10-31T12:00:08+00:00",
+     "outlet": "Lethbridge Herald",
+     "title": "Clocks from coast to coast to coast: A breakdown of time change rules across Canada",
+     "url": "https://lethbridgeherald.com/news/national-news/2026/10/31/clocks-from-coast-to-coast-to-coast-a-breakdown-of-time-change-rules-across-canada/",
+     "canada": true,
+     "paywall": false,
+     "exclusive": false
+    },
+    {
+     "t": "Sat 5:58 a.m.",
+     "iso": "2026-10-31T09:58:05+00:00",
+     "outlet": "CP24",
+     "title": "What you need to know about clocks falling back this weekend in Ontario",
+     "url": "https://www.cp24.com/local/toronto/2026/10/31/what-you-need-to-know-about-clocks-falling-back-this-weekend-in-ontario/",
+     "canada": true,
+     "paywall": false,
+     "exclusive": false
+    },
+    {
+     "t": "Fri 7:24 p.m.",
+     "iso": "2026-10-30T23:24:34+00:00",
+     "outlet": "Global News",
+     "title": "B.C.’s non-time change could impact technology and travel",
+     "url": "https://globalnews.ca/news/12128115/bc-non-time-change-impact-technology-travel/",
+     "canada": true,
+     "paywall": false,
+     "exclusive": false
+    },
+    {
+     "t": "Sat 4:31 p.m.",
+     "iso": "2026-10-31T20:31:36+00:00",
+     "outlet": "CityNews Montreal",
+     "title": "Quebecers gain an hour of sleep on Saturday night into Sunday",
+     "url": "https://montreal.citynews.ca/2026/10/31/quebecers-gain-hour-of-sleep-on-saturday-night-into-sunday/",
+     "canada": false,
+     "paywall": false,
+     "exclusive": false
+    },
+    {
+     "t": "Sat 1:01 p.m.",
+     "iso": "2026-10-31T17:01:42+00:00",
+     "outlet": "VOCM",
+     "title": "Clocks Turn Back by One Hour Tonight",
+     "url": "https://vocm.com/2026/10/31/clocks-turn-back-by-one-hour-tonight/",
+     "canada": false,
+     "paywall": false,
+     "exclusive": false
+    },
+    {
+     "t": "Fri 10:00 p.m.",
+     "iso": "2026-10-31T02:00:00+00:00",
+     "outlet": "NBC News",
+     "title": "Daylight saving time ends Sunday. Here’s what to know as clocks ‘fall back.’",
+     "url": "https://www.nbcnews.com/news/us-news/daylight-saving-time-ends-2026-when-november-1-what-know-rcna606619",
+     "canada": false,
+     "paywall": false
+    }
+   ],
+   "official": [],
+   "earlier": []
+  },
   {
    "name": "U.S. midterm elections",
    "date": "2026-11-03",
@@ -2597,17 +2736,6 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Sat 11:11 p.m.",
-   "iso": "2026-11-01T03:11:31+00:00",
-   "title": "Pedestrian in her 80s killed in Markham car crash",
-   "summary": "An elderly pedestrian was killed Saturday after getting hit by a car in Markham, according to police.",
-   "outlet": "CityNews, CTV News, CP24",
-   "url": "https://toronto.citynews.ca/2026/10/31/pedestrian-in-her-80s-killed-in-markham-car-crash/",
-   "img": "https://toronto.citynews.ca/wp-content/blogs.dir/sites/10/2026/03/27/york-paramedics.jpg"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
    "t": "Sat 9:21 p.m.",
    "iso": "2026-11-01T01:21:21+00:00",
    "title": "Trump’s triumphal arch faces more opposition, with judge asking if desire is to ‘bedazzle’ D.C.",
@@ -2626,6 +2754,17 @@
    "outlet": "CTV News, CP24",
    "url": "https://www.ctvnews.ca/canada/royal-family/article/king-charles-iii-to-address-commonwealth-with-unflinching-honesty-amid-slavery-focus/",
    "img": "https://www.ctvnews.ca/resizer/v2/NE2TJO7XV5O5SM2F5PQBD2KNLY.jpg?smart=true&auth=efc68f136a6543b82c3addf4c0497c6bd334ca17b163924591dcefc3f1786ec9&width=1200&height=630"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Sat 8:02 p.m.",
+   "iso": "2026-11-01T00:02:50+00:00",
+   "title": "Man seriously injured in motorcycle crash near The Junction",
+   "summary": "A motorcycle crash near The Junction has sent one man to the hospital. The cause of the crash is unknown.",
+   "outlet": "CTV News, CP24",
+   "url": "https://www.ctvnews.ca/toronto/article/man-seriously-injured-in-motorcycle-crash-near-the-junction/",
+   "img": "https://www.ctvnews.ca/resizer/v2/YNBMI7HPLFD4ZCIB3N5W7LIKWA.jpg?smart=true&auth=57fe89b2e350f1bc00ee45ae2ea535b6411b7d2beca34fcbfec86bcc33f5a745&width=1200&height=630"
   },
   {
    "desk": "business",
@@ -2758,7 +2897,7 @@
     "url": "https://www.youtube.com/watch?v=O_xDTLIv-FI",
     "img": "https://i.ytimg.com/vi/O_xDTLIv-FI/hqdefault.jpg",
     "story": "Heidi Klum reveals Halloween costume as her iconic party mar",
-    "watching": "332",
+    "watching": "294",
     "reports": [
      {
       "outlet": "CTV News",
@@ -2853,7 +2992,7 @@
    "story": "Iran war live: Tehran eyes 2-day Hormuz plan; Trump says talks ‘going ",
    "title": "Iran war live: Tehran eyes 2-day Hormuz plan; Trump says talks ‘going fine’",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/1/iran-war-live-araghchi-says-talks-under-way-on-2-day-plan-to-reopen-hormuz?traffic_source=rss",
-   "updated": "2026-11-01T05:02:56+00:00",
+   "updated": "2026-11-01T05:06:01+00:00",
    "ended": false,
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-10-13T175309Z_313915325_RC2G2OAQZOP6_RTRMADP_3_IRAN-CRISIS-HORMUZ-1793505853_ddb929-1793505897.jpg?resize=1200%2C630&quality=80"
   }
@@ -3021,7 +3160,7 @@
   "auto-243e2420": {
    "story": "Heidi Klum reveals Halloween costume as her iconic party marks 25 years",
    "us": false,
-   "specific": 4,
+   "specific": 5,
    "stories": [
     {
      "t": "Sat 6:54 p.m.",
@@ -3048,6 +3187,15 @@
      "title": "Calgary families brave Halloween chill for day of spooky fun",
      "url": "https://calgaryherald.com/news/local-news/halloween-kicks-off-across-calgary",
      "ca": true,
+     "tie": ""
+    },
+    {
+     "t": "Sat 10:52 a.m.",
+     "iso": "2026-10-31T14:52:00+00:00",
+     "outlet": "VOCM",
+     "title": "Rain, Fog to Dampen Halloween Across Much of Newfoundland",
+     "url": "https://vocm.com/2026/10/31/315225/",
+     "ca": false,
      "tie": ""
     },
     {
@@ -3143,20 +3291,20 @@
      "tie": ""
     },
     {
+     "t": "Sat 10:52 a.m.",
+     "iso": "2026-10-31T14:52:00+00:00",
+     "outlet": "VOCM",
+     "title": "Rain, Fog to Dampen Halloween Across Much of Newfoundland",
+     "url": "https://vocm.com/2026/10/31/315225/",
+     "ca": false,
+     "tie": ""
+    },
+    {
      "t": "Sat 10:51 a.m.",
      "iso": "2026-10-31T14:51:38+00:00",
      "outlet": "CP24",
      "title": "U.S.-Canada tensions may not change, despite U.S. midterm results",
      "url": "https://www.cp24.com/politics/2026/10/31/the-outcome-of-the-us-midterms-may-not-relieve-us-canada-tensions/",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Sat 6:00 a.m.",
-     "iso": "2026-10-31T10:00:07+00:00",
-     "outlet": "CityNews Ottawa",
-     "title": "No matter what happens in the midterms, Canada-U.S. tensions are likely to remain",
-     "url": "https://ottawa.citynews.ca/2026/10/31/no-matter-what-happens-in-the-midterms-canada-u-s-tensions-are-likely-to-remain/",
      "ca": true,
      "tie": ""
     }
@@ -3490,13 +3638,13 @@
  },
  "bds": [
   {
-   "id": "bd-auto-35991440",
+   "id": "bd-auto-a1eec195",
    "auto": true,
    "desk": "United States",
    "status": "Developing",
    "at": "2026-11-01T02:41:34+00:00",
    "exact": true,
-   "img": "live/img/auto-35991440-70b1ce0bc4.jpg",
+   "img": "live/img/auto-a1eec195-70b1ce0bc4.jpg",
    "credit": "via The Guardian",
    "pic": "globe",
    "h": "Binance says 90% of losses from $6.3bn hack covered as FBI says North Korea behind attack",
@@ -3579,11 +3727,6 @@
      "CBS News",
      "$6.3 billion Binance hack likely work of North Korea, experts say",
      "https://www.cbsnews.com/news/binance-hack-north-korea/"
-    ],
-    [
-     "Toronto Star",
-     "FBI blames North Korea for stolen billions from Binance in biggest hack in history",
-     "https://www.thestar.com/news/world/united-states/fbi-blames-north-korea-for-stolen-billions-from-binance-in-biggest-hack-in-history/article_75f20bf3-e53f-5efe-815c-7d3bca841e79.html"
     ]
    ],
    "lead": 1
