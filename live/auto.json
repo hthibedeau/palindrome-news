@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-01T00:35:23.407161+00:00",
- "checkedLabel": "Sat 8:35 p.m.",
+ "checked": "2026-11-01T00:45:23.258362+00:00",
+ "checkedLabel": "Sat 8:45 p.m.",
  "stories": [
   {
    "key": "top",
@@ -108,6 +108,24 @@
   }
  ],
  "wire": [
+  [
+   "Sat 8:32 p.m.",
+   "U.S.",
+   "Pregnant woman killed, 6 others wounded in targeted shooting at California Spirit Halloween store, police say",
+   "CTV News",
+   "https://www.ctvnews.ca/world/article/pregnant-woman-killed-6-others-wounded-in-targeted-shooting-at-california-spirit-halloween-store-police-say/",
+   "2026-11-01T00:32:24+00:00",
+   2
+  ],
+  [
+   "Sat 8:32 p.m.",
+   "Canada",
+   "AFC Toronto scores 4-2 win over Ottawa Rapid in NSL semifinal",
+   "CTV News",
+   "https://www.ctvnews.ca/ottawa/article/afc-toronto-scores-4-2-win-over-ottawa-rapid-in-nsl-semifinal/",
+   "2026-11-01T00:32:09+00:00",
+   3
+  ],
   [
    "Sat 8:28 p.m.",
    "Latest",
@@ -314,24 +332,6 @@
    "https://www.ctvnews.ca/vancouver/article/man-and-great-dane-secure-flight-home-after-airline-initially-denied-boarding-at-yvr/",
    "2026-10-31T22:51:30+00:00",
    2
-  ],
-  [
-   "Sat 6:47 p.m.",
-   "Canada",
-   "Elections Alberta recommends 2027 vote be delayed as gerrymandering accusations fly",
-   "Global News",
-   "https://globalnews.ca/news/12128904/possible-delayed-albert-election/",
-   "2026-10-31T22:47:31+00:00",
-   4
-  ],
-  [
-   "Sat 6:43 p.m.",
-   "Latest",
-   "Election workers describe toll of DOJ threats in court filings",
-   "ABC News",
-   "https://abcnews.com/Politics/california-election-workers-describe-toll-doj-threats-court/story?id=137736879",
-   "2026-10-31T22:43:20+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -387,10 +387,10 @@
    "theme": ""
   },
   {
-   "score": 9,
+   "score": 10,
    "title": "Suspect identified in Toronto home invasion where residents were shot, attacked with hammer",
    "url": "https://www.cbc.ca/news/canada/toronto/bridle-path-neighbourhood-home-invasion-toronto-police-update-9.7404151",
-   "outlets": 4,
+   "outlets": 5,
    "why": [
     "CBC News front #6"
    ],
@@ -426,6 +426,14 @@
   },
   {
    "score": 8,
+   "title": "A third weekend of protests in France as youth-led rallies sweep Europe",
+   "url": "https://www.ctvnews.ca/world/article/a-third-weekend-of-protests-in-france-as-youth-led-rallies-sweep-europe/",
+   "outlets": 6,
+   "why": [],
+   "theme": ""
+  },
+  {
+   "score": 8,
    "title": "Newcomers, visitors from around the world attend Manito Ahbee Festival powwow",
    "url": "https://www.cbc.ca/news/canada/manitoba/hundreds-of-newcomers-manito-ahbee-festival-powwow-9.7404393?cmp=rss",
    "outlets": 6,
@@ -444,14 +452,6 @@
    "score": 7,
    "title": "FBI says North Korea behind $6 billion crypto theft from Binance",
    "url": "https://torontosun.com/news/world/binance-says-has-covered-90-of-6-3b-hack-losses",
-   "outlets": 5,
-   "why": [],
-   "theme": ""
-  },
-  {
-   "score": 7,
-   "title": "A third weekend of protests in France as youth-led rallies sweep Europe",
-   "url": "https://www.ctvnews.ca/world/article/a-third-weekend-of-protests-in-france-as-youth-led-rallies-sweep-europe/",
    "outlets": 5,
    "why": [],
    "theme": ""
@@ -1243,7 +1243,7 @@
    },
    {
     "title": "Suspect identified in Toronto home invasion where residents were shot, attacked with hammer",
-    "score": 9,
+    "score": 10,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
@@ -1257,6 +1257,11 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
+    "title": "A third weekend of protests in France as youth-led rallies sweep Europe",
+    "score": 8,
+    "why": "not built: only 2 independent report(s) (5 sites)"
+   },
+   {
     "title": "Newcomers, visitors from around the world attend Manito Ahbee Festival powwow",
     "score": 8,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
@@ -1267,19 +1272,14 @@
     "why": "not built: only 1 independent report(s) (3 sites)"
    },
    {
-    "title": "A third weekend of protests in France as youth-led rallies sweep Europe",
-    "score": 7,
-    "why": "not built: only 1 independent report(s) (4 sites)"
+    "title": "Pregnant woman killed, 6 others wounded in targeted shooting at California Spirit Halloween store, police say",
+    "score": 6,
+    "why": "not built: only 2 independent report(s) (3 sites)"
    },
    {
     "title": "Elections Alberta recommends 2027 vote be delayed as gerrymandering accusations fly",
     "score": 6,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Tusk defends overhaul of Poland’s constitutional court despite protests",
-    "score": 6,
-    "why": "not built: only 2 independent report(s) (3 sites)"
    },
    {
     "title": "How I faced down the ‘coalition coup’ — by Stephen Harper",
@@ -1888,7 +1888,7 @@
    "id": "rJYuiIBp4X8",
    "r": "us",
    "o": "CNN",
-   "t": "How Trump could still interfere with voting",
+   "t": "How Trump could still influence this election",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=rJYuiIBp4X8",
@@ -2172,11 +2172,11 @@
   },
   {
    "o": "Fox News",
-   "h": "Not even a chance at free tuition could get Maryland students in the seats for football Saturday",
-   "u": "https://www.foxnews.com/outkick-sports/not-even-chance-free-tuition-could-get-maryland-students-seats-football-saturday",
-   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/10/maryland-illinois.png",
-   "w": "Sat 8:15 p.m.",
-   "iso": "2026-11-01T00:15:34+00:00"
+   "h": "Patriots lose AJ Brown to injury again, rule out other offensive players ahead of matchup with division rival",
+   "u": "https://www.foxnews.com/outkick-sports/patriots-lose-aj-brown-injury-rule-out-offensive-players-division-rival",
+   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/06/aj-brown-patriots-gillette-stadium-fox-news-001.jpeg",
+   "w": "Sat 8:38 p.m.",
+   "iso": "2026-11-01T00:38:20+00:00"
   },
   {
    "o": "NPR",
@@ -2541,38 +2541,6 @@
  },
  "otr": [
   {
-   "cat": "intl",
-   "media": "none",
-   "initials": "UN",
-   "name": "United Nations",
-   "role": "UN News",
-   "date": "Oct 31",
-   "platform": "Official statement",
-   "handle": "news.un.org",
-   "hed": "‘They deserve to know the truth’: UN rights chief demands probe into staffer’s death in Houthi custody",
-   "summary": "The UN human rights chief on Saturday demanded an independent investigation into the death of a Yemeni colleague held by the Houthis for more than two years, whose family learned of his death only weeks after it happened.",
-   "href": "https://news.un.org/feed/view/en/story/2026/10/1168716",
-   "report": false,
-   "iso": "2026-10-31T12:00:00+00:00",
-   "auto": true
-  },
-  {
-   "cat": "intl",
-   "media": "none",
-   "initials": "UN",
-   "name": "United Nations",
-   "role": "UN News",
-   "date": "Oct 31",
-   "platform": "Official statement",
-   "handle": "news.un.org",
-   "hed": "Samarkand: A ‘living museum’ on the Silk Road grapples with a tourism boom",
-   "summary": "As the sun sets over Samarkand’s majestic Registan, its last rays glint across the turquoise mosaics. Dusk settles on the ancient square where great trade routes have crossed for centuries.",
-   "href": "https://news.un.org/feed/view/en/story/2026/10/1168711",
-   "report": false,
-   "iso": "2026-10-31T12:00:00+00:00",
-   "auto": true
-  },
-  {
    "cat": "premier",
    "media": "none",
    "initials": "ON",
@@ -2835,11 +2803,11 @@
    "o": "CHEK News",
    "region": "Vancouver Island",
    "arctic": false,
-   "h": "Island witches swap brooms for paddles to scare up food donations for Mustard Seed",
-   "u": "https://cheknews.ca/island-witches-swap-brooms-for-paddles-to-scare-up-food-donations-for-mustard-seed-1358212/",
-   "t": "Sat 7:39 p.m.",
-   "desc": "Around 40 people dressed in witches costumes paddled offshore Willows Beach Saturday for the 6th Annual Witches Paddle fundraiser for the Mustard Seed.",
-   "img": "https://cheknews.ca/wp-content/uploads/2026/10/Copy-of-Blank-background-for-pictures-2026-10-31T170451.215.png"
+   "h": "From high school to municipal hall: 18-year-old Rhys Walker-Shaw makes waves as Tofino’s youngest councillor",
+   "u": "https://cheknews.ca/from-high-school-halls-to-municipal-hall-18-year-old-rhys-walker-shaw-makes-waves-as-tofinos-youngest-councillor-1358198/",
+   "t": "Sat 8:38 p.m.",
+   "desc": "He is barely old enough to vote, let alone celebrate with a cold one at a local Tofino pub, but an 18-year-old in Tofino is stepping into a new acclaimed seat of political power, becoming one of the town's newest councillors.",
+   "img": "https://cheknews.ca/wp-content/uploads/2026/10/Copy-of-Blank-background-for-pictures-2026-10-31T173351.714.png"
   }
  ],
  "clocks": [
@@ -2847,11 +2815,8 @@
    "city": "St. John's",
    "tz": "America/St_Johns",
    "world": false,
-   "w": "Brook Royals Sit",
-   "u": "https://vocm.com/2026/10/31/corner-brook-royals-sit-out-season-as-league-shrinks-to-three-teams/",
-   "title": "Corner Brook Royals Sit Out Season as League Shrinks to Three Teams",
-   "outlet": "VOCM",
-   "t": "Sat 3:02 p.m.",
+   "w": "",
+   "u": "",
    "hot": false
   },
   {
@@ -2932,17 +2897,6 @@
    "hot": true
   },
   {
-   "city": "Brussels",
-   "tz": "Europe/Brussels",
-   "world": true,
-   "w": "Canada–EU",
-   "u": "https://globalnews.ca/news/12128698/associate-eu-membership-for-canada/",
-   "title": "‘Associate’ EU membership for Canada not a ‘short-term’ project: expert",
-   "outlet": "Global News",
-   "t": "Sat 10:54 a.m.",
-   "hot": false
-  },
-  {
    "city": "Paris",
    "tz": "Europe/Paris",
    "world": true,
@@ -2952,119 +2906,20 @@
    "outlet": "CTV News",
    "t": "Sat 7:45 p.m.",
    "hot": true
+  },
+  {
+   "city": "Brussels",
+   "tz": "Europe/Brussels",
+   "world": true,
+   "w": "Canada–EU",
+   "u": "https://globalnews.ca/news/12128698/associate-eu-membership-for-canada/",
+   "title": "‘Associate’ EU membership for Canada not a ‘short-term’ project: expert",
+   "outlet": "Global News",
+   "t": "Sat 10:54 a.m.",
+   "hot": false
   }
  ],
  "bigweek": [
-  {
-   "name": "Clocks fall back",
-   "date": "2026-11-01",
-   "what": "",
-   "days": 1,
-   "reports": [
-    {
-     "t": "Sat 2:38 p.m.",
-     "iso": "2026-10-31T18:38:31+00:00",
-     "outlet": "CTV News",
-     "title": "B.C.'s new time zone could cause confusion, from calendars to medical appointments",
-     "url": "https://www.ctvnews.ca/vancouver/article/bcs-new-time-zone-could-cause-confusion-from-calendars-to-medical-appointments/",
-     "canada": true,
-     "paywall": false,
-     "exclusive": false
-    },
-    {
-     "t": "Sat 2:03 p.m.",
-     "iso": "2026-10-31T18:03:11.933000+00:00",
-     "outlet": "CBC News",
-     "title": "More Canadian provinces are ditching the time change. But did they pick the wrong option?",
-     "url": "https://www.cbc.ca/news/canada/daylight-saving-time-canada-health-9.7399791",
-     "canada": true,
-     "paywall": false,
-     "exclusive": false
-    },
-    {
-     "t": "Sat 10:53 a.m.",
-     "iso": "2026-10-31T14:53:31+00:00",
-     "outlet": "Telegraph-Journal",
-     "title": "Half of Canada dumps seasonal time changes. N.B. won't follow suit",
-     "url": "https://tj.news/new-brunswick/half-of-canada-dumps-seasonal-time-changes-n-b-wont-follow-suit",
-     "canada": true,
-     "paywall": false,
-     "exclusive": false
-    },
-    {
-     "t": "Sat 10:00 a.m.",
-     "iso": "2026-10-31T14:00:16+00:00",
-     "outlet": "Vancouver Sun",
-     "title": "Aggravation? 'Absolutely': How B.C.'s time change affects businesses on both sides of the border",
-     "url": "https://vancouversun.com/news/local-news/how-bc-time-change-affects-businesses-us-border",
-     "canada": true,
-     "paywall": false,
-     "exclusive": false
-    },
-    {
-     "t": "Sat 8:00 a.m.",
-     "iso": "2026-10-31T12:00:08+00:00",
-     "outlet": "Lethbridge Herald",
-     "title": "Clocks from coast to coast to coast: A breakdown of time change rules across Canada",
-     "url": "https://lethbridgeherald.com/news/national-news/2026/10/31/clocks-from-coast-to-coast-to-coast-a-breakdown-of-time-change-rules-across-canada/",
-     "canada": true,
-     "paywall": false,
-     "exclusive": false
-    },
-    {
-     "t": "Sat 5:58 a.m.",
-     "iso": "2026-10-31T09:58:05+00:00",
-     "outlet": "CP24",
-     "title": "What you need to know about clocks falling back this weekend in Ontario",
-     "url": "https://www.cp24.com/local/toronto/2026/10/31/what-you-need-to-know-about-clocks-falling-back-this-weekend-in-ontario/",
-     "canada": true,
-     "paywall": false,
-     "exclusive": false
-    },
-    {
-     "t": "Fri 7:24 p.m.",
-     "iso": "2026-10-30T23:24:34+00:00",
-     "outlet": "Global News",
-     "title": "B.C.’s non-time change could impact technology and travel",
-     "url": "https://globalnews.ca/news/12128115/bc-non-time-change-impact-technology-travel/",
-     "canada": true,
-     "paywall": false,
-     "exclusive": false
-    },
-    {
-     "t": "Sat 4:31 p.m.",
-     "iso": "2026-10-31T20:31:36+00:00",
-     "outlet": "CityNews Montreal",
-     "title": "Quebecers gain an hour of sleep on Saturday night into Sunday",
-     "url": "https://montreal.citynews.ca/2026/10/31/quebecers-gain-hour-of-sleep-on-saturday-night-into-sunday/",
-     "canada": false,
-     "paywall": false,
-     "exclusive": false
-    },
-    {
-     "t": "Sat 1:01 p.m.",
-     "iso": "2026-10-31T17:01:42+00:00",
-     "outlet": "VOCM",
-     "title": "Clocks Turn Back by One Hour Tonight",
-     "url": "https://vocm.com/2026/10/31/clocks-turn-back-by-one-hour-tonight/",
-     "canada": false,
-     "paywall": false,
-     "exclusive": false
-    },
-    {
-     "t": "Fri 7:38 a.m.",
-     "iso": "2026-10-30T11:38:13+00:00",
-     "outlet": "BNN Bloomberg",
-     "title": "Business groups clock hurdles as time change comes to an end in some regions",
-     "url": "https://www.bnnbloomberg.ca/business/2026/10/30/business-groups-clock-hurdles-as-time-change-comes-to-an-end-in-some-regions/",
-     "canada": false,
-     "paywall": false,
-     "exclusive": false
-    }
-   ],
-   "official": [],
-   "earlier": []
-  },
   {
    "name": "U.S. midterm elections",
    "date": "2026-11-03",
@@ -3330,6 +3185,17 @@
   {
    "desk": "world",
    "pic": "globe",
+   "t": "Sat 7:45 p.m.",
+   "iso": "2026-10-31T23:45:52+00:00",
+   "title": "A third weekend of protests in France as youth-led rallies sweep Europe",
+   "summary": "Hundreds of thousands of protesters inspired by frustrated high school students took to the streets across France on Saturday in a third consecutive weekend of demonstrations over living costs and education.",
+   "outlet": "CTV News, CP24, CBC News, The Japan Times, Times Colonist",
+   "url": "https://www.ctvnews.ca/world/article/a-third-weekend-of-protests-in-france-as-youth-led-rallies-sweep-europe/",
+   "img": "https://www.ctvnews.ca/resizer/v2/VADNSNVIO6G3L32IW7S3Q22FYE.jpg?smart=true&auth=7a0cd1d49d5bbe811c5d48e97b4c90e26d3bfe0498c52fc57bba59dcc4893ad1&width=1200&height=630"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
    "t": "Sat 5:31 p.m.",
    "iso": "2026-10-31T21:31:53+00:00",
    "title": "Over 40 per cent of names on DOJ list of alleged noncitizens are not on Calif. voter rolls, analysis finds",
@@ -3341,13 +3207,13 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Sat 7:45 p.m.",
-   "iso": "2026-10-31T23:45:52+00:00",
-   "title": "A third weekend of protests in France as youth-led rallies sweep Europe",
-   "summary": "Hundreds of thousands of protesters inspired by frustrated high school students took to the streets across France on Saturday in a third consecutive weekend of demonstrations over living costs and education.",
-   "outlet": "CTV News, CP24, CBC News, Times Colonist",
-   "url": "https://www.ctvnews.ca/world/article/a-third-weekend-of-protests-in-france-as-youth-led-rallies-sweep-europe/",
-   "img": "https://www.ctvnews.ca/resizer/v2/VADNSNVIO6G3L32IW7S3Q22FYE.jpg?smart=true&auth=7a0cd1d49d5bbe811c5d48e97b4c90e26d3bfe0498c52fc57bba59dcc4893ad1&width=1200&height=630"
+   "t": "Sat 8:32 p.m.",
+   "iso": "2026-11-01T00:32:24+00:00",
+   "title": "Pregnant woman killed, 6 others wounded in targeted shooting at California Spirit Halloween store, police say",
+   "summary": "One person was killed and six others injured after a shooting inside a shopping mall at a Spirit Halloween store in Fairfield, California, on Friday night, police said.",
+   "outlet": "CTV News, CP24, CBS News, Toronto Star",
+   "url": "https://www.ctvnews.ca/world/article/pregnant-woman-killed-6-others-wounded-in-targeted-shooting-at-california-spirit-halloween-store-police-say/",
+   "img": "https://www.ctvnews.ca/resizer/v2/ACR447WHZNHFVBDD3NJABIQSQY.JPG?smart=true&auth=e775ef435e031e446bec663059b3ca6166ae3cfbddfc09807b4f3cfb5972cf84&width=1200&height=630"
   },
   {
    "desk": "world",
@@ -3370,17 +3236,6 @@
    "outlet": "CTV News, CP24, Narcity, Times Colonist",
    "url": "https://www.ctvnews.ca/toronto/politics/queens-park/article/toronto-cyclists-protest-ontarios-bike-lane-removals-at-queens-park/",
    "img": "https://www.ctvnews.ca/resizer/v2/Q6RLBQ73JZGIBAKTD2YR4SAFBU.jpg?smart=true&auth=f54630cee26d2470a2da75091bfc4e9e5184b0e484dbc9408bc7346d63e26626&width=1200&height=630"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Sat 6:43 p.m.",
-   "iso": "2026-10-31T22:43:09+00:00",
-   "title": "Tusk defends overhaul of Poland’s constitutional court despite protests",
-   "summary": "Prime minister says shake-up is vital to restore tribunal crippled by years of political disputes",
-   "outlet": "The Guardian, CTV News, CP24",
-   "url": "https://www.theguardian.com/world/2026/oct/31/donald-tusk-defends-overhaul-poland-constitutional-court-despite-protests",
-   "img": "https://i.guim.co.uk/img/media/3b129224829f45ad8165dd6ba27eac4f0f3868d3/1836_207_4200_3362/master/4200.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=5a3d5ff85a538ae7ebc0d53c0915947e"
   },
   {
    "desk": "business",
@@ -3524,28 +3379,28 @@
     "url": "https://www.youtube.com/watch?v=O_xDTLIv-FI",
     "img": "https://i.ytimg.com/vi/O_xDTLIv-FI/hqdefault.jpg",
     "story": "California Spirit Halloween shooting, Midterm elections, Alaska Senate",
-    "watching": "497",
+    "watching": "509",
     "reports": [
+     {
+      "outlet": "CTV News",
+      "title": "Pregnant woman killed, 6 others wounded in targeted shooting at California Spirit Halloween store, police say",
+      "url": "https://www.ctvnews.ca/world/article/pregnant-woman-killed-6-others-wounded-in-targeted-shooting-at-california-spirit-halloween-store-police-say/",
+      "t": "Sat 8:32 p.m.",
+      "iso": "2026-11-01T00:32:24+00:00"
+     },
+     {
+      "outlet": "CP24",
+      "title": "Pregnant woman killed, 6 others wounded in targeted shooting at California Spirit Halloween store, police say",
+      "url": "https://www.cp24.com/news/world/2026/11/01/pregnant-woman-killed-6-others-wounded-in-targeted-shooting-at-california-spirit-halloween-store-police-say/",
+      "t": "Sat 8:32 p.m.",
+      "iso": "2026-11-01T00:32:24+00:00"
+     },
      {
       "outlet": "CBS News",
       "title": "Shootings kill 2 at Halloween Spirit stores in California, Michigan",
       "url": "https://www.cbsnews.com/news/spirit-halloween-store-shooting-fairfield-california/",
       "t": "Sat 5:40 p.m.",
       "iso": "2026-10-31T21:40:21+00:00"
-     },
-     {
-      "outlet": "CTV News",
-      "title": "1 dead, 6 wounded in targeted shooting at California Spirit Halloween store, police say",
-      "url": "https://www.ctvnews.ca/world/article/1-dead-6-wounded-in-targeted-shooting-at-california-spirit-halloween-store-police-say/",
-      "t": "Sat 5:15 p.m.",
-      "iso": "2026-10-31T21:15:49+00:00"
-     },
-     {
-      "outlet": "CP24",
-      "title": "1 dead, 6 wounded in targeted shooting at California Spirit Halloween store, police say",
-      "url": "https://www.cp24.com/news/world/2026/10/31/1-dead-6-wounded-in-targeted-shooting-at-california-spirit-halloween-store-police-say/",
-      "t": "Sat 5:15 p.m.",
-      "iso": "2026-10-31T21:15:49+00:00"
      }
     ]
    }
@@ -3621,7 +3476,7 @@
    "story": "Iran war live: Araghchi says talks under way on 2-day plan to reopen H",
    "title": "Iran war live: Araghchi says talks under way on 2-day plan to reopen Hormuz",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/1/iran-war-live-araghchi-says-talks-under-way-on-2-day-plan-to-reopen-hormuz?traffic_source=rss",
-   "updated": "2026-11-01T00:30:43+00:00",
+   "updated": "2026-11-01T00:45:00+00:00",
    "ended": false,
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ae4b114-1793372436.jpg?resize=1920%2C1440"
   },
@@ -3732,8 +3587,8 @@
   },
   "auto-005a50f6": {
    "ties": [
-    "journal",
     "wall",
+    "journal",
     "street"
    ],
    "stories": [
@@ -3857,20 +3712,20 @@
      "tie": ""
     },
     {
-     "t": "Sat 10:52 a.m.",
-     "iso": "2026-10-31T14:52:00+00:00",
-     "outlet": "VOCM",
-     "title": "Rain, Fog to Dampen Halloween Across Much of Newfoundland",
-     "url": "https://vocm.com/2026/10/31/315225/",
-     "ca": false,
-     "tie": ""
-    },
-    {
      "t": "Sat 10:51 a.m.",
      "iso": "2026-10-31T14:51:38+00:00",
      "outlet": "CP24",
      "title": "U.S.-Canada tensions may not change, despite U.S. midterm results",
      "url": "https://www.cp24.com/politics/2026/10/31/the-outcome-of-the-us-midterms-may-not-relieve-us-canada-tensions/",
+     "ca": true,
+     "tie": ""
+    },
+    {
+     "t": "Sat 6:00 a.m.",
+     "iso": "2026-10-31T10:00:07+00:00",
+     "outlet": "CityNews Ottawa",
+     "title": "No matter what happens in the midterms, Canada-U.S. tensions are likely to remain",
+     "url": "https://ottawa.citynews.ca/2026/10/31/no-matter-what-happens-in-the-midterms-canada-u-s-tensions-are-likely-to-remain/",
      "ca": true,
      "tie": ""
     }
