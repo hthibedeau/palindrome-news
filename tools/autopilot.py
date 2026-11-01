@@ -1498,6 +1498,49 @@ TOPIC = re.compile(r"\b(midterms?|elections?|tariffs?|trade (?:deal|talks|war)|b
                    r"defen[cs]e|NATO|Golden Dome|fentanyl|immigration|CUSMA|USMCA)\b", re.I)
 
 
+# Party and political labels never tie two stories together on their own (Hannah, Sun Nov 1, 2026: the Michigan
+# Senate race story, "Stevens endorses Rogers amid rift with El-Sayed", got "Leader of Alberta Republican Party resigns,
+# remains committed to pro-independence" as its Canadian angle. "Why, oh why ... That has nothing to do with the
+# American story". The only thing shared was the word "Republican"). A Canadian angle must share the story's actual
+# subject: one of its people, places or issues, never just a party name, a title or a campaign word.
+ANGLE_LABELS = set("""republican republicans democrat democrats democratic gop party parties liberal liberals conservative
+conservatives progressive ndp bloc green greens libertarian independent independents caucus leader leaders leadership
+candidate candidates campaign campaigns race primary primaries nominee nomination endorse endorses endorsed endorsement
+rift feud split resign resigns resigned resignation join joins joined vote votes voters poll polls senator senators
+congressman congresswoman representative governor mayor premier member members seat seats""".split())
+# a party in Canada (the Alberta Republican Party, the Republican Party of Alberta, the Ontario NDP ...) is never the
+# American party, whatever its name
+CAN_PARTY = re.compile(r"\b(?:(?:Alberta|Canadian|Canada|Ontario|Quebec|Québec|B\.?C\.?|British Columbia|Manitoba|Saskatchewan|Nova Scotia|"
+                       r"New Brunswick|Newfoundland|P\.?E\.?I\.?|Maverick|Wildrose|Buffalo)\s+(?:Republican|Democratic|Conservative|Liberal|"
+                       r"Independence|Prosperity|United|Party)|(?:Republican|Democratic|Conservative|Liberal|Independence)\s+Party\s+of\s+"
+                       r"(?:Alberta|Canada|Ontario|Quebec|B\.?C\.?|British Columbia|Manitoba|Saskatchewan))\b", re.I)
+# the U.S. tie without the party words: "Republican" alone doesn't make a Canadian headline about the United States
+US_TIE_STRICT = re.compile(r"\b(U\.S\.|U\.S|US|United States|America|American|Americans|Washington|Trump|Vance|Hoekstra|White House|"
+                           r"Congress|Senate|midterms?|CUSMA|USMCA)\b")
+
+
+def angle_subjects(name, mine):
+    """The story's actual subject: the people, places and things named in its own headline and its reports, minus
+    labels and everyday words. "Stevens endorses Rogers amid rift with El-Sayed" -> stevens, rogers, el-sayed, michigan."""
+    import gap_check as gc
+    from collections import Counter
+    co = Counter(n.replace("’s", "").replace("'s", "") for x in mine for n in gc.names(x[2]))
+    subj = {n.replace("’s", "").replace("'s", "") for n in gc.names(name)}
+    subj |= {n for n, c in co.most_common(8) if c >= 2}
+    return {n for n in subj if len(n) > 2 and n not in ANGLE_LABELS and n not in GENERIC and n not in ANGLE_COMMON
+            and n not in WEAK and n not in PARTY and n not in OCCASION}
+
+
+def shares_subject(title, subjects):
+    """True when a headline names one of the story's own subjects (a person, place or thing), not just a label."""
+    if not subjects:
+        return False
+    import gap_check as gc
+    t = title.lower()
+    nm = {n.replace("’s", "").replace("'s", "") for n in gc.names(title)}
+    return bool(nm & subjects) or any(re.search(r"\b" + re.escape(x) + r"\b", t) for x in subjects if len(x) >= 5)
+
+
 # a U.S. story about a person's own affairs (a lawsuit, a scandal, a trial, a health scare) is not about Canada-U.S. relations
 PERSONAL_US = re.compile(r"\b(lawsuit|sues|sued|defamation|libel|Epstein|indicted|indictment|trial|verdict|scandal|affair|divorce|"
                          r"health|hospital|birthday|memoir|book|pardon(?:s|ed)?)\b", re.I)
@@ -1515,25 +1558,33 @@ def _angle(name, words, mine, recent, eds, papers, otr, pool, anchor_words=None)
         if len(mine) < 2 or sum(1 for x in mine if FOREIGN_SRC.search(x[3]) or au.US.search(x[1]) or au.WORLDO.search(x[1])) / len(mine) < FOREIGN_SHARE:
             return None  # a story from another country runs on world desks and foreign newsrooms; this one doesn't
     co = Counter(n.replace("’s", "").replace("'s", "") for x in mine for n in gc.names(x[2]))
-    top = {n for n, c in co.most_common(6) if c >= 2 and n not in GENERIC and (n not in WEAK or (n == "trump" and "trump" in name.lower())) and not CAN_TIE.search(n[:1].upper() + n[1:])}
-    aw = [x for x in (anchor_words or words) if x and x.lower() not in GENERIC]
+    # the story's six most-named subjects; party and campaign labels never take a place (they crowded out "Rogers")
+    top = set([n for n, c in co.most_common() if c >= 2 and n not in GENERIC and n not in ANGLE_LABELS and (n not in WEAK or (n == "trump" and "trump" in name.lower()))
+               and not CAN_TIE.search(n[:1].upper() + n[1:])][:6])
+    aw = [x for x in (anchor_words or words) if x and x.lower() not in GENERIC and x.lower() not in ANGLE_LABELS]
+    subjects = angle_subjects(name, mine)
     anchor = re.compile(r"\b(" + "|".join(re.escape(x) for x in aw) + r")\b", re.I) if aw else None
     topics = {m.group(1).lower().rstrip("s") for m in TOPIC.finditer(name + " " + " ".join(x[2] for x in mine[:6]))}
 
     head = name.lower()
 
     def about(title):
+        # a Canadian party ("Alberta Republican Party") is not the American one, and a label is not a subject:
+        # the headline must name something the story is actually about (one of its people, places or issues)
+        if is_us and CAN_PARTY.search(title) and not US_TIE_STRICT.search(title):
+            return False
         nm = {n.replace("’s", "").replace("'s", "") for n in gc.names(title)}
         # tied to the story by its key words only when two of them are in the headline, or one that is in the story's
         # own headline and is not an everyday word (Hannah, Sat Oct 31, 2026: a Halifax fire on "Oxford Street" was the
         # Canadian angle on the Trump-Wall Street Journal lawsuit because "street" was one of the story's key words)
         hits = {m.group(1).lower() for m in anchor.finditer(title)} if anchor else set()
-        hits -= ANGLE_COMMON
-        if len(hits) >= 2 or any(len(h) >= 5 and re.search(r"\b" + re.escape(h) + r"\b", head) for h in hits):
+        hits -= ANGLE_COMMON | ANGLE_LABELS
+        if (len(hits) >= 2 or any(len(h) >= 5 and re.search(r"\b" + re.escape(h) + r"\b", head) for h in hits)) and shares_subject(title, subjects):
             return True
         if len(nm & top) >= 2:
-            return not is_us or bool(US_TIE.search(title))
-        return is_us and bool(US_TIE.search(title)) and any(re.search(r"\b" + re.escape(t) + r"s?\b", title, re.I) for t in topics)  # same U.S. issue
+            return not is_us or bool(US_TIE_STRICT.search(title))
+        # the same U.S. issue (tariffs, the border, the election): the headline must really be about the United States
+        return is_us and bool(US_TIE_STRICT.search(title)) and any(re.search(r"\b" + re.escape(t) + r"s?\b", title, re.I) for t in topics)
 
     picked, seen, used = [], [], set()
 
