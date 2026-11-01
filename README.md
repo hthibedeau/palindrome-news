@@ -23,6 +23,13 @@ Both pages open directly in a web browser. They are previews: the live site will
 - Sponsors pay for the site but never choose or rank the news. Paid editorials are always labelled.
 - Breaking news means checking every source out there, not rechecking the same pages: national, local and hometown newsrooms, official sources and wires, every run. Names, photos and tributes of victims go on the page as soon as an outlet publishes them. See `tools/runbooks/BREAKING_SOURCES.md`.
 
+## Design preview (Hannah, Sun Nov 1, 2026)
+
+`preview-design.html` is the homepage with Chris T's design review applied on top (`tools/design_layer.html`): photo tiles when a picture fails, old stories and clips tucked under "Show older", unsold sponsor slots without placeholder text, a lighter lead panel with red kept for Breaking, navigation that fits with a More menu, a slimmer clock strip with every clock, long sections folded with "Show all" (nothing removed), a compact phone header with tabs and a menu, the source meter on the lead stories with a one-line legend, Back to top and a "Beta" badge. `index.html` is untouched.
+
+- Keep it: `python3 tools/build_design_preview.py --adopt` (puts the layer into index.html).
+- Drop it: `python3 tools/build_design_preview.py --drop`, then delete `tools/design_layer.html`.
+
 ## How the page updates itself: the code runs it
 
 Since Tue Oct 27, 2026, the site runs on code, not on Claude (Hannah: "I dont want to rely on claude to run my site. I want the code to do it"). Nothing needs a person or an AI to keep it current:

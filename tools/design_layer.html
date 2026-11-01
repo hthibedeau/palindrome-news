@@ -1,0 +1,473 @@
+<!-- DESIGN PREVIEW LAYER (Hannah, Sun Nov 1, 2026: "Should we try them and if i dont like it go back to what we have now?")
+     Chris T's design review of Nov 1, 2026, minus three points Hannah's own rules rule out:
+       - nothing leaves the homepage (#4): long sections fold closed with "Show all" instead;
+       - every clock stays (#8): the strip is slimmer instead;
+       - the motto stays (#10): smaller on phones instead.
+     This file is added ONLY to preview-design.html by tools/build_design_preview.py. index.html is untouched.
+     To adopt it: run the builder with --adopt. To drop it: delete preview-design.html and this file. -->
+<style id="dz">
+/* ---------- 13. one brand accent (purple), red only for Live and Breaking ---------- */
+:root { --dz-red: #C8102E; --dz-rule: #6A3FC8; --wine: #4B2F86; }
+:root[data-theme="dark"] { --dz-red: #FF6B7A; --dz-rule: #B9A2F5; --wine: #C9B6F7; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --dz-red: #FF6B7A; --dz-rule: #B9A2F5; --wine: #C9B6F7; } }
+/* timestamps go neutral grey, not purple */
+.ts, time, .when, .row-meta .ts, .bd-time, .wire time { color: var(--muted) !important; }
+/* 12. one kicker style: small spaced caps in the single accent */
+.eyebrow, p.label, .kicker, .band-head .kick, .front > h3 > small { color: var(--accent) !important; font-family: var(--sans) !important; font-style: normal !important;
+  font-weight: 700 !important; font-size: 11.5px !important; letter-spacing: .1em !important; text-transform: uppercase !important; }
+
+/* ---------- 6. the lead panel: off-white, a thin accent rule, a red Breaking tag ---------- */
+#autoBreaking.breaking, #breaking.breaking { background: var(--surface) !important; box-shadow: none !important; border: 1px solid var(--line);
+  border-top: 4px solid var(--dz-rule); color: var(--ink) !important; }
+#autoBreaking.breaking.dz-urgent, #breaking.breaking.dz-urgent { border-top-color: var(--dz-red); }
+#autoBreaking :is(h2, h3, h4, p, li, span, b, strong, small, summary, time, dt, dd, em, i, label, div, a:not(.btn)),
+#breaking :is(h2, h3, h4, p, li, span, b, strong, small, summary, time, dt, dd, em, i, label, div, a:not(.btn)) { color: inherit; }
+#autoBreaking h2, #autoBreaking h2 a, #breaking h2, #breaking h2 a { color: var(--title) !important; }
+#autoBreaking .ab-sub, #autoBreaking p, #breaking p { color: var(--body) !important; }
+#autoBreaking .cr-byline, #autoBreaking .cr-byline *, #autoBreaking .ab-reps time, #autoBreaking .rel-box time { color: var(--muted) !important; }
+#autoBreaking .cr-byline b, #autoBreaking .cr-byline a { color: var(--ink) !important; }
+#autoBreaking a[href^="http"]:not(.bigplay):not(.vt) :is(span, b), #autoBreaking .rel-box a, #autoBreaking .ab-reps a { color: var(--title) !important; }
+#autoBreaking :is(.rel-box, .ab-reps, .ab-vids) a[class*="src"], #autoBreaking :is(.rel-box, .ab-reps) a .src,
+#autoBreaking :is(.rel-box, .ab-reps) a + a, #autoBreaking :is(.rel-box,.ab-reps) [class*="out"] { color: var(--accent) !important; }
+#autoBreaking :is(.rel-box, .ab-reps, .ab-vids) { border-color: var(--line) !important; }
+#autoBreaking :is(.rel-box, .ab-reps) li, #autoBreaking :is(.rel-box, .ab-reps) > * { border-color: var(--line) !important; }
+#autoBreaking .ab-vids li { background: var(--soft) !important; }
+#autoBreaking .ab-vids li :is(h3, h4, p, a, span:not(.cr-thumb *)) { color: var(--ink) !important; }
+#autoBreaking .cr-more, #autoBreaking .ab-reps-tog, #autoBreaking .rel-box summary [class*="tog"], #autoBreaking summary [class*="tog"] {
+  color: var(--accent) !important; border-color: var(--chipline) !important; background: var(--surface) !important; }
+#autoBreaking summary, #autoBreaking summary * { color: var(--title) !important; }
+/* tags: Breaking is red, Developing is the accent, Canada keeps its own mark */
+#autoBreaking .cr-tags > *, #breaking .cr-tags > * { border: 1px solid var(--chipline) !important; background: var(--surface) !important; color: var(--muted) !important; }
+#autoBreaking .cr-tags > :first-child { background: var(--accent) !important; border-color: var(--accent) !important; color: #fff !important; }
+#autoBreaking .dz-urgent-tag, #autoBreaking .cr-tags > .dz-urgent-tag { background: var(--dz-red) !important; border-color: var(--dz-red) !important; color: #fff !important; }
+#autoBreaking .cr-tags > :first-child *, #autoBreaking .dz-urgent-tag * { color: #fff !important; }
+/* anything sitting on a photo keeps its white text */
+#autoBreaking .bart :is(span, b, small, a, div), #autoBreaking .cr-thumb :is(span, b, small), #autoBreaking .bart > .cr-credit,
+#breaking .bart :is(span, b, small, a, div) { color: #fff !important; }
+/* the Canadian angle box keeps its own frame */
+#autoBreaking .can-box { color: var(--ink); }
+
+/* ---------- 5. no dead space beside the lead: "Connected to this story" fills the column under the second story ---------- */
+#autoBreaking .ab-second > .rel-box.dz-moved { margin-top: 18px; }
+#autoBreaking#autoBreaking .o, #autoBreaking#autoBreaking .o * { color: var(--accent) !important; }
+#autoBreaking svg { color: var(--accent); }
+#autoBreaking .bart svg, #autoBreaking .cr-thumb svg, #autoBreaking .bigplay svg { color: #fff; }
+#autoBreaking :is(.rel-box, .ab-reps, .ab-vids, .cov) { background: transparent !important; box-shadow: none !important; }
+#autoBreaking :is(.rel-box, .ab-reps) { border: 0 !important; border-top: 1px solid var(--line) !important; border-radius: 0 !important; padding-left: 0 !important; padding-right: 0 !important; }
+#autoBreaking .ab-vids { border: 0 !important; padding-left: 0 !important; padding-right: 0 !important; }
+
+/* ---------- 1. images that don't load: a clean tile with the outlet's name, never an empty block ---------- */
+img { color: transparent; font-size: 0; }
+.dz-tile { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; padding: 10px; text-align: center;
+  background: var(--soft); border: 1px solid var(--line); color: var(--title) !important; font: 700 15px/1.2 var(--serif); z-index: 1; overflow: hidden; box-sizing: border-box; }
+.dz-tile small { font: 600 10.5px/1.2 var(--sans); letter-spacing: .1em; text-transform: uppercase; color: var(--muted) !important; }
+.dz-tile-host { position: relative; overflow: hidden; }
+.dz-tile-host.dz-sized { min-height: 120px; }
+
+/* ---------- 3. sponsor slots not yet sold ---------- */
+.dz-hide { display: none !important; }
+.dz-open-slot { padding: 14px 16px; border: 1px dashed var(--chipline); border-radius: 10px; color: var(--muted); font-size: 14px; line-height: 1.45; }
+.dz-open-slot a { color: var(--accent); font-weight: 600; }
+
+/* ---------- 7. navigation that fits: the rest goes under More ---------- */
+nav.sections, #stick nav { overflow: visible !important; flex-wrap: nowrap !important; }
+.dz-more { position: relative; flex: 0 0 auto; align-self: center; display: flex; align-items: center; margin-left: auto; }
+.dz-more > button { all: unset; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; font: inherit; color: inherit; letter-spacing: inherit;
+  text-transform: inherit; padding: inherit; white-space: nowrap; height: 100%; }
+nav.sections .dz-more > button { padding: 14px 12px; font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--title); }
+#stick .dz-more > button { padding: 0 10px; font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--title); }
+.dz-more > button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.dz-menu { position: absolute; right: 0; top: 100%; z-index: 60; min-width: 230px; max-height: 70vh; overflow: auto; padding: 6px; margin-top: 4px;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 12px 32px -12px rgba(31,22,56,.35); display: none; }
+.dz-more.open .dz-menu { display: block; }
+.dz-menu a { display: block !important; padding: 10px 12px !important; border-radius: 6px; text-transform: none !important; letter-spacing: 0 !important;
+  font: 500 15px/1.3 var(--sans) !important; color: var(--ink) !important; border: 0 !important; white-space: nowrap; }
+.dz-menu a:hover, .dz-menu a:focus-visible { background: var(--soft); }
+
+/* ---------- 8. every clock stays, in a slimmer strip ---------- */
+.clocks .clk { padding-top: 6px !important; padding-bottom: 6px !important; }
+.clocks .clk .city { font-size: 10px !important; }
+.clocks .clk .t { font-size: 17px !important; line-height: 1.15 !important; }
+.clocks .clk .cgo { font-size: 11.5px !important; }
+
+/* ---------- 4 + 11. long sections fold closed; everything stays on the page ---------- */
+.dz-fold { position: relative; overflow: hidden; max-height: var(--dz-h, 640px); }
+.dz-fold::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 150px; pointer-events: none;
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--bg) 0%, transparent), var(--bg) 78%); z-index: 3; }
+.dz-fold.dz-open { max-height: none; overflow: visible; padding-bottom: 64px; }
+.dz-fold.dz-open::after { display: none; }
+.dz-showall { position: absolute; left: 50%; bottom: 14px; transform: translateX(-50%); z-index: 4; display: inline-flex; align-items: center; gap: 8px;
+  min-height: 44px; padding: 0 20px; border-radius: 999px; border: 1px solid var(--chipline); background: var(--surface); color: var(--accent);
+  font: 600 14px/1 var(--sans); cursor: pointer; white-space: nowrap; box-shadow: 0 6px 18px -10px rgba(31,22,56,.4); }
+.dz-showall:hover { border-color: var(--accent); }
+.dz-showall:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.dz-fold.dz-open .dz-showall { bottom: 10px; }
+/* Watch: older clips tuck under "Earlier clips" */
+.vid.dz-old, .dz-aged { display: none !important; }
+.dz-aged-open > .dz-aged { display: revert !important; }
+.dz-aged-btn { margin: 4px 0 18px; }
+#video.dz-old-open .vid.dz-old { display: revert !important; }
+.dz-earlier { display: inline-flex; align-items: center; min-height: 40px; margin: 10px 0 0; padding: 0 16px; border: 1px solid var(--chipline);
+  border-radius: 999px; background: var(--surface); color: var(--accent); font: 600 13.5px/1 var(--sans); cursor: pointer; }
+
+/* ---------- 14. the source meter, explained once ---------- */
+.dz-legend { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin: 0 0 14px; padding: 8px 12px; border-radius: 8px; background: var(--soft);
+  color: var(--body); font: 500 13px/1.4 var(--sans); }
+.dz-legend .meter { margin: 0; }
+#autoBreaking .meter { white-space: nowrap; }
+#autoBreaking .meter .segs i { background: var(--line); }
+#autoBreaking .meter .segs i.on { background: var(--accent); }
+
+/* ---------- Back to top, and the phone's Daily Brief button ---------- */
+.dz-top { position: fixed; right: 16px; bottom: 18px; z-index: 70; width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--chipline);
+  background: var(--surface); color: var(--accent); display: flex; align-items: center; justify-content: center; cursor: pointer;
+  box-shadow: 0 8px 22px -10px rgba(31,22,56,.45); opacity: 0; pointer-events: none; transition: opacity .2s; }
+.dz-top.show { opacity: 1; pointer-events: auto; }
+.dz-top:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.dz-brief { display: none; }
+.dz-burger, .dz-drawer, .dz-tabs { display: none; }
+
+/* ---------- 9, 10, 11 on phones ---------- */
+@media (max-width: 700px) {
+  header.site .wrap { position: relative; }
+  header.site .topline { position: absolute; top: 10px; left: 16px; right: 16px; height: 44px; margin: 0 !important; padding: 0 !important; border: 0 !important;
+    display: flex !important; justify-content: space-between; align-items: center; pointer-events: none; z-index: 5; }
+  header.site .topline > * { pointer-events: auto; }
+  header.site .topline .dateline { display: none !important; }
+  header.site .topline .tools { margin-left: auto; display: flex !important; gap: 0 !important; }
+  header.site .topline .tools .theme, header.site .topline .tools > a.btn { display: none !important; }
+  header.site #searchBtn { width: 44px; height: 44px; padding: 0; justify-content: center; border-color: transparent; background: none; }
+  .dz-burger { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 0; background: none; color: var(--title);
+    cursor: pointer; pointer-events: auto; border-radius: 8px; }
+  .dz-burger:focus-visible { outline: 2px solid var(--accent); }
+  header.site .masthead { padding-top: 12px !important; padding-bottom: 6px !important; margin: 0 !important; }
+  header.site .masthead .ear { display: none !important; }
+  header.site .plate { padding: 0 44px; }
+  header.site .logo { font-size: 34px !important; line-height: 1.05 !important; }
+  header.site .motto { margin: 4px 0 0 !important; }
+  header.site .motto::before, header.site .motto::after { display: none !important; }
+  header.site .motto span { font-size: 9.5px !important; letter-spacing: .06em !important; white-space: nowrap; padding: 0 !important; }
+  header.site .promise { font-size: 12.5px !important; margin: 2px 0 0 !important; line-height: 1.3 !important; }
+  header.site .byline { font-size: 11px !important; margin: 2px 0 0 !important; }
+  header.site nav.sections { display: none !important; }
+  /* Top / Canada / U.S. / World / Watch: the phone's tabs */
+  .dz-tabs { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; padding: 8px 16px; margin: 8px -16px 0; border-top: 1px solid var(--line);
+    -webkit-mask-image: linear-gradient(to right, #000 88%, transparent); mask-image: linear-gradient(to right, #000 88%, transparent); }
+  .dz-tabs::-webkit-scrollbar { display: none; }
+  .dz-tabs a, .dz-tabs button { flex: 0 0 auto; display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 999px;
+    border: 1px solid var(--chipline); background: var(--surface); color: var(--title); font: 600 14px/1 var(--sans); text-decoration: none; cursor: pointer; }
+  .dz-tabs a[aria-current="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+  /* clocks: one swipeable row */
+  .clocks .wrap { display: flex !important; flex-wrap: nowrap !important; overflow-x: auto; scrollbar-width: none;
+    -webkit-mask-image: linear-gradient(to right, #000 85%, transparent); mask-image: linear-gradient(to right, #000 85%, transparent); }
+  .clocks .wrap::-webkit-scrollbar { display: none; }
+  .clocks .clk { flex: 0 0 auto !important; width: auto !important; min-width: 96px; }
+  /* the menu */
+  .dz-drawer { position: fixed; inset: 0; z-index: 90; background: rgba(15,11,25,.45); }
+  .dz-drawer.open { display: block; }
+  .dz-drawer .dz-panel { position: absolute; top: 0; left: 0; bottom: 0; width: min(86vw, 340px); background: var(--surface); overflow-y: auto;
+    padding: 14px 16px 28px; box-sizing: border-box; box-shadow: 8px 0 30px -12px rgba(0,0,0,.4); }
+  .dz-panel .dz-x { float: right; width: 44px; height: 44px; border: 0; background: none; color: var(--title); font-size: 26px; cursor: pointer; }
+  .dz-panel .dz-date { font: 500 13px/1.5 var(--sans); color: var(--muted); margin: 10px 0 12px; }
+  .dz-panel .dz-date .live { color: var(--dz-red); font-weight: 600; }
+  .dz-panel .theme { display: inline-flex !important; margin: 0 0 14px; }
+  .dz-panel h4 { font: 700 11.5px/1 var(--sans); letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin: 14px 0 6px; }
+  .dz-panel nav a { display: block; padding: 11px 4px; border-bottom: 1px solid var(--line); color: var(--ink); font: 500 16px/1.3 var(--sans); text-decoration: none; }
+  .dz-brief { display: flex; position: fixed; left: 12px; right: 74px; bottom: 14px; z-index: 69; min-height: 46px; align-items: center; justify-content: center;
+    border-radius: 999px; background: var(--btn); color: var(--btn-ink) !important; font: 600 15px/1 var(--sans); text-decoration: none;
+    box-shadow: 0 8px 22px -10px rgba(31,22,56,.55); transition: opacity .2s, transform .2s; }
+  .dz-brief.hide { opacity: 0; transform: translateY(20px); pointer-events: none; }
+  .dz-top { bottom: 14px; }
+  /* the lead panel's extras on a phone */
+}
+@media (max-width: 380px) { header.site .motto span { font-size: 8.6px !important; letter-spacing: .04em !important; } }
+@media print { .dz-top, .dz-brief, .dz-showall, .dz-drawer { display: none !important; } .dz-fold { max-height: none !important; } .dz-fold::after { display: none; } }
+</style>
+<script id="dz-js">
+(() => {
+  const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const mob = matchMedia('(max-width: 700px)');
+  const store = { get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }, set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} } };
+
+  /* Quick win: "Preview edition" becomes "Beta" */
+  function badge() { $$('header.site .topline span, header.site .topline b').forEach((el) => { if (el.children.length === 0 && /^\s*preview edition\s*$/i.test(el.textContent)) el.textContent = 'Beta'; }); }
+
+  /* 7. navigation that fits: whatever doesn't fit goes under More */
+  function fitNav(nav) {
+    if (!nav || nav.offsetParent === null) return;
+    let more = $('.dz-more', nav);
+    if (more) { $$('.dz-menu a', more).forEach((a) => nav.insertBefore(a, more)); }
+    else {
+      more = document.createElement('div'); more.className = 'dz-more';
+      more.innerHTML = '<button type="button" aria-expanded="false" aria-haspopup="true">More <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="dz-menu" role="menu"></div>';
+      nav.appendChild(more);
+      const btn = more.firstChild;
+      btn.addEventListener('click', (e) => { e.stopPropagation(); const o = more.classList.toggle('open'); btn.setAttribute('aria-expanded', o); });
+      document.addEventListener('click', () => { more.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); });
+      more.addEventListener('keydown', (e) => { if (e.key === 'Escape') { more.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); btn.focus(); } });
+      $('.dz-menu', more).addEventListener('click', () => more.classList.remove('open'));
+    }
+    const menu = $('.dz-menu', more);
+    const links = () => $$(':scope > a', nav);
+    const right = () => { const r = nav.getBoundingClientRect(); let lim = r.right; const sib = nav.nextElementSibling; if (sib && sib.offsetParent && sib.getBoundingClientRect().left > r.left) lim = Math.min(lim, sib.getBoundingClientRect().left); return lim + 1; };
+    more.style.display = '';
+    let guard = 40;
+    while (guard-- > 0) {
+      const ls = links(); if (!ls.length) break;
+      if (more.getBoundingClientRect().right <= right() && nav.scrollWidth <= nav.clientWidth + 1) break;
+      menu.insertBefore(ls[ls.length - 1], menu.firstChild);
+    }
+    $$('a', menu).forEach((a) => { a.setAttribute('role', 'menuitem'); a.removeAttribute('tabindex'); });
+    more.style.display = menu.children.length ? '' : 'none';
+  }
+  function navs() { fitNav($('header.site nav.sections')); fitNav($('#stick nav')); }
+
+  /* 9 + 11. the phone header: logo, search and a menu; tabs for Top / Canada / U.S. / World / Watch */
+  function phoneHeader() {
+    const head = $('header.site .wrap'); if (!head || $('.dz-burger')) return;
+    const burger = document.createElement('button');
+    burger.type = 'button'; burger.className = 'dz-burger'; burger.setAttribute('aria-label', 'Menu'); burger.setAttribute('aria-expanded', 'false');
+    burger.innerHTML = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>';
+    const topline = $('.topline', head); topline.insertBefore(burger, topline.firstChild);
+    const drawer = document.createElement('div'); drawer.className = 'dz-drawer'; drawer.setAttribute('role', 'dialog'); drawer.setAttribute('aria-label', 'Menu');
+    drawer.innerHTML = '<div class="dz-panel"><button type="button" class="dz-x" aria-label="Close menu">&times;</button><div class="dz-date"></div><div class="dz-theme-slot"></div><h4>Sections</h4><nav aria-label="All sections"></nav></div>';
+    document.body.appendChild(drawer);
+    const fillNav = () => { const n = $('nav', drawer); n.innerHTML = ''; [...$$('header.site nav.sections a')].forEach((a) => { const c = document.createElement('a'); c.href = a.getAttribute('href'); c.textContent = a.textContent.trim(); n.appendChild(c); }); const b = document.createElement('a'); b.href = '#newsletter'; b.textContent = 'Get the Daily Brief'; n.appendChild(b); };
+    const open = () => { fillNav(); const d = $('.dz-date', drawer); const today = $('#today'), clock = $('#clock'); d.innerHTML = (today ? today.textContent : '') + (clock ? ' · ' + clock.textContent + ' ET' : '') + '<br><span class="live">● Live · updated around the clock</span>'; drawer.classList.add('open'); burger.setAttribute('aria-expanded', 'true'); $('.dz-x', drawer).focus(); };
+    const close = () => { drawer.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); };
+    burger.addEventListener('click', open);
+    drawer.addEventListener('click', (e) => { if (e.target === drawer || e.target.closest('.dz-x') || e.target.closest('nav a')) close(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && drawer.classList.contains('open')) { close(); burger.focus(); } });
+    // the Light/Dark switch lives in the menu on a phone and goes back to the top bar on a wide screen
+    const theme = $('header.site .theme'), tools = $('header.site .tools'), slot = $('.dz-theme-slot', drawer);
+    const place = () => { if (!theme) return; if (mob.matches) slot.appendChild(theme); else if (theme.parentNode !== tools) tools.insertBefore(theme, tools.firstChild); };
+    place(); mob.addEventListener ? mob.addEventListener('change', place) : mob.addListener(place);
+    // tabs
+    const tabs = document.createElement('nav'); tabs.className = 'dz-tabs'; tabs.setAttribute('aria-label', 'Jump to');
+    const T = [['Top', '#top'], ['Canada', '#sec-canada'], ['U.S.', '#sec-us'], ['World', '#sec-world'], ['Watch', '#video'], ['Canada & U.S.', '#canus']];
+    T.forEach(([t, h], i) => { if (h !== '#top' && !document.querySelector(h)) return; const a = document.createElement('a'); a.href = h; a.textContent = t; if (!i) a.setAttribute('aria-current', 'true'); tabs.appendChild(a); });
+    const mb = document.createElement('button'); mb.type = 'button'; mb.textContent = 'All sections'; mb.addEventListener('click', open); tabs.appendChild(mb);
+    tabs.addEventListener('click', (e) => { const a = e.target.closest('a'); if (!a) return; $$('a', tabs).forEach((x) => x.removeAttribute('aria-current')); a.setAttribute('aria-current', 'true'); const id = a.getAttribute('href'); const t = id === '#top' ? null : document.querySelector(id); if (t) { const f = t.closest('.dz-fold') || t; if (f.classList.contains('dz-fold') && !f.classList.contains('dz-open')) toggleFold(f, true); } });
+    head.appendChild(tabs);
+    // sticky Daily Brief button + back to top
+    const brief = document.createElement('a'); brief.className = 'dz-brief'; brief.href = '#newsletter'; brief.textContent = 'Get the Daily Brief'; document.body.appendChild(brief);
+    const top = document.createElement('button'); top.type = 'button'; top.className = 'dz-top'; top.setAttribute('aria-label', 'Back to top');
+    top.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>';
+    top.addEventListener('click', () => { scrollTo({ top: 0, behavior: 'smooth' }); });
+    document.body.appendChild(top);
+    const nl = $('#newsletter');
+    const onScroll = () => { const y = scrollY; top.classList.toggle('show', y > 1200); const nearNl = nl && nl.getBoundingClientRect().top < innerHeight; brief.classList.toggle('hide', y < 500 || nearNl); };
+    addEventListener('scroll', onScroll, { passive: true }); onScroll();
+  }
+
+  /* 4 + 11. long sections fold closed with "Show all"; nothing leaves the page */
+  const FOLD = { developed: [520, 420], video: [560, 640], ahead: [480, 460], dayso: [560, 520], canus: [900, 760], 'sec-us': [760, 640], mostread: [560, 560],
+    reading: [440, 440], ontherecord: [560, 520], editorials: [600, 560], thinktanks: [700, 600], board: [520, 480], corrections: [420, 400], godeeper: [460, 440],
+    liveCoverage: [760, 700], 'sec-canada': [1250, 1100], smaller: [600, 560] };
+  function sectionName(sec) { const h = $('h2, h3', sec); return h ? h.textContent.replace(/\s+/g, ' ').trim().replace(/\d+ stories.*$/, '').slice(0, 40) : 'section'; }
+  function toggleFold(sec, force) {
+    const open = force !== undefined ? force : !sec.classList.contains('dz-open');
+    sec.classList.toggle('dz-open', open);
+    const b = $(':scope > .dz-showall', sec); if (b) { b.setAttribute('aria-expanded', open); b.firstChild.textContent = open ? 'Show less ' : 'Show all of ' + sectionName(sec) + ' '; b.lastChild.style.transform = open ? 'rotate(180deg)' : ''; }
+    store.set('dz-fold-' + (sec.id || sec.dataset.dzKey), open ? '1' : '0');
+  }
+  function folds() {
+    const day = $$('main section').find((s) => !s.id && /^The day so far/.test(($('h2', s) || {}).textContent || '')); if (day) day.dataset.dzKey = 'dayso';
+    Object.entries(FOLD).forEach(([id, [dh, mh]]) => {
+      const sec = id === 'dayso' ? day : document.getElementById(id); if (!sec || sec.hidden || sec.offsetParent === null) return;
+      const lim = mob.matches ? mh : dh; sec.style.setProperty('--dz-h', lim + 'px');
+      if (sec.classList.contains('dz-fold')) { if (!$(':scope > .dz-showall', sec)) addBtn(sec); return; }
+      if (sec.scrollHeight < lim * 1.25) return;
+      sec.classList.add('dz-fold'); addBtn(sec);
+      if (store.get('dz-fold-' + (sec.id || sec.dataset.dzKey)) === '1') toggleFold(sec, true);
+    });
+  }
+  function addBtn(sec) {
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'dz-showall'; b.setAttribute('aria-expanded', 'false');
+    b.innerHTML = 'Show all of ' + sectionName(sec) + ' <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>';
+    b.firstChild.textContent = 'Show all of ' + sectionName(sec) + ' ';
+    b.addEventListener('click', () => { const was = sec.classList.contains('dz-open'); toggleFold(sec); if (was) sec.scrollIntoView({ block: 'start' }); });
+    sec.appendChild(b); if (sec.classList.contains('dz-open')) toggleFold(sec, true);
+  }
+
+  /* 2. stale material ages out by itself */
+  const MON = { jan: 0, feb: 1, mar: 2, apr: 3, may: 4, jun: 5, jul: 6, aug: 7, sep: 8, oct: 9, nov: 10, dec: 11 };
+  function parseDay(t) {
+    t = (t || '').trim().toLowerCase(); const now = new Date();
+    if (/^(today|now|just now|new|live|\d+ (min|hr|hour)s? ago)/.test(t)) return now;
+    if (/^yesterday/.test(t)) return new Date(now - 864e5);
+    const m = t.match(/\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?\s+(\d{1,2})\b/); if (!m) return null;
+    let d = new Date(now.getFullYear(), MON[m[1]], +m[2], 23, 59); if (d - now > 30 * 864e5) d.setFullYear(d.getFullYear() - 1); return d;
+  }
+  function staleWatch() {
+    const sec = $('#video'), list = $('#vids'); if (!sec || !list) return;
+    let n = 0;
+    $$('.vid', list).forEach((v) => { const w = $('.when', v); const d = w && parseDay(w.textContent); const old = !!(d && Date.now() - d > 3 * 864e5); v.classList.toggle('dz-old', old); if (old) n++; });
+    let b = $('.dz-earlier', sec);
+    if (!n) { if (b) b.remove(); return; }
+    if (!b) { b = document.createElement('button'); b.type = 'button'; b.className = 'dz-earlier'; b.addEventListener('click', () => { const o = sec.classList.toggle('dz-old-open'); b.textContent = o ? 'Hide earlier clips' : b.dataset.label; }); list.after(b); }
+    b.dataset.label = 'Show ' + n + ' earlier clip' + (n > 1 ? 's' : '') + ' (more than 3 days old)';
+    if (!sec.classList.contains('dz-old-open') && b.textContent !== b.dataset.label) b.textContent = b.dataset.label;
+  }
+  function staleTop() {
+    // a hand-written Breaking story with nothing new for 12 hours leaves the top (the Breaking template's 12-hour rule)
+    $$('section.breaking[data-lastdev], section.breaking[data-since]').forEach((s) => {
+      if (s.id === 'autoBreaking') return;
+      const t = Date.parse(s.dataset.lastdev || s.dataset.since); if (!t) return;
+      if (Date.now() - t > 12 * 36e5) s.classList.add('dz-hide'); else s.classList.remove('dz-hide');
+    });
+    // "Breaking" in the newest hour gets the red rule; otherwise the accent
+    const ab = $('#autoBreaking');
+    if (ab) {
+      let any = false;
+      $$('.cr-tags > :first-child', ab).forEach((tag) => { const u = /breaking/i.test(tag.textContent); tag.classList.toggle('dz-urgent-tag', u); any = any || u; });
+      ab.classList.toggle('dz-urgent', any);
+    }
+    // labels that name a past morning ("Today's ranking (Monday morning)") follow the real check time
+    const note = $$('#mostread p.fine').find((p) => /\((Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday) (morning|afternoon|evening)\)/.test(p.textContent));
+    if (note && window.__dzAuto && window.__dzAuto.mostread) note.innerHTML = note.innerHTML.replace(/\((Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday) (morning|afternoon|evening)\)/, '(checked ' + (window.__dzAuto.checkedLabel || 'today') + ')');
+  }
+
+  /* 2b. cards whose own time is more than two days old tuck under "Show older stories" (the page never shows a week-old story as news) */
+  const WD = { sun: 0, mon: 1, tue: 2, wed: 3, thu: 4, fri: 5, sat: 6 };
+  function ageDays(txt) {
+    const now = new Date();
+    const m = txt.match(/(Sun|Mon|Tue|Wed|Thu|Fri|Sat)[a-z]*\.?,? (\d{1,2})(?::(\d{2}))? ?([ap])\.m\./);
+    if (m) {
+      let d = (now.getDay() - WD[m[1].toLowerCase()] + 7) % 7;
+      if (d === 0) { let h = +m[2] % 12 + (m[4] === 'p' ? 12 : 0); if (h * 60 + (+m[3] || 0) > now.getHours() * 60 + now.getMinutes() + 30) d = 7; }
+      return d;
+    }
+    const p = parseDay((txt.match(/(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.? \d{1,2}(?!\d)/) || [''])[0]);
+    return p ? Math.floor((now - p) / 864e5) + 1 : null;
+  }
+  const AGED = ['#usLead', '#usList', '#reads', '#record', '#mrList', '#editorialList'];
+  function agedCards() {
+    AGED.forEach((sel) => {
+      const box = $(sel); if (!box) return;
+      const kids = [...box.children].filter((k) => !k.classList.contains('dz-aged-btn'));
+      let n = 0;
+      kids.forEach((k) => { const a = ageDays(k.textContent); const old = a !== null && a >= 2; k.classList.toggle('dz-aged', old); if (old) n++; });
+      let b = box.nextElementSibling && box.nextElementSibling.classList.contains('dz-aged-btn') ? box.nextElementSibling : null;
+      if (!n) { if (b) b.remove(); box.classList.remove('dz-aged-open'); return; }
+      const label = (n === kids.length ? 'Nothing new here in the last two days. ' : '') + 'Show ' + n + ' older stor' + (n > 1 ? 'ies' : 'y') + ' (more than 2 days old)';
+      if (!b) { b = document.createElement('button'); b.type = 'button'; b.className = 'dz-earlier dz-aged-btn'; b.addEventListener('click', () => { const o = box.classList.toggle('dz-aged-open'); b.textContent = o ? 'Hide older stories' : b.dataset.label; }); box.after(b); }
+      b.dataset.label = label; if (!box.classList.contains('dz-aged-open') && b.textContent !== label) b.textContent = label;
+    });
+  }
+
+  /* 3. sponsor slots that aren't sold yet stay built but don't show placeholder text */
+  const PH = /\[(SPONSOR NAME|PRESENTING SPONSOR|Sponsor message goes here|Sponsored editorial headline|YOUR PRICE)\]/;
+  function sponsors() {
+    $$('.sponsor-strip').forEach((s) => { if (PH.test(s.textContent)) s.classList.add('dz-hide'); });
+    $$('aside.paid').forEach((a) => {
+      const items = $$('.item', a).filter((i) => PH.test(i.textContent)); if (!items.length) return;
+      items.forEach((i) => i.classList.add('dz-hide'));
+      if (!$('.dz-open-slot', a)) { const p = document.createElement('div'); p.className = 'dz-open-slot'; p.innerHTML = 'Space for a labelled paid editorial. <a href="#sponsors">Talk to us about it &rarr;</a>'; items[0].before(p); }
+    });
+    const sp = $('#sponsors');
+    if (sp) {
+      const slots = $$('.slot', sp).filter((s) => PH.test(s.textContent)); slots.forEach((s) => s.classList.add('dz-hide'));
+      if (slots.length && !$('.dz-open-slot', sp)) { const p = document.createElement('div'); p.className = 'dz-open-slot'; p.innerHTML = 'Presenting and supporting sponsorships are open. Sponsors never choose or rank the news.'; (slots[0].closest('.main') || slots[0].parentNode).prepend(p); }
+    }
+    $$('dd, li').forEach((el) => { if (/\[YOUR PRICE\]/.test(el.textContent)) el.innerHTML = el.innerHTML.replace(/\[YOUR PRICE\]/g, 'price on request'); });
+  }
+
+  /* 1. pictures that fail become a clean tile with the outlet's name */
+  const HOSTS = { 'cbc.ca': 'CBC News', 'ctvnews.ca': 'CTV News', 'globalnews.ca': 'Global News', 'theglobeandmail.com': 'The Globe and Mail', 'thestar.com': 'Toronto Star',
+    'nationalpost.com': 'National Post', 'citynews.ca': 'CityNews', 'cp24.com': 'CP24', 'aljazeera.com': 'Al Jazeera', 'cbsnews.com': 'CBS News', 'nbcnews.com': 'NBC News',
+    'abcnews.go.com': 'ABC News', 'pbs.org': 'PBS NewsHour', 'cnn.com': 'CNN', 'foxnews.com': 'Fox News', 'apnews.com': 'AP', 'reuters.com': 'Reuters', 'bbc.com': 'BBC News',
+    'theguardian.com': 'The Guardian', 'politico.com': 'Politico', 'thetyee.ca': 'The Tyee', 'aptnnews.ca': 'APTN News', 'nunatsiaq.com': 'Nunatsiaq News', 'cabinradio.ca': 'Cabin Radio' };
+  function outletFor(el) {
+    const c = el.closest('[data-credit]'); if (c && c.dataset.credit) return c.dataset.credit;
+    for (const host of [el.closest('a, .ph, .bart, .art'), el.closest('article, li, .vid, .card, .clk, .item')].filter(Boolean)) {
+      const cr = $('.credit, .cr-credit, .src b, .src, .out, .outlet, .fm-src, .o', host);
+      if (cr && cr.textContent.trim()) return cr.textContent.replace(/·.*$/, '').replace(/^New/, '').replace(/↗/g, '').trim().slice(0, 40);
+    }
+    const art = el.closest('article, li, .card'); if (art) { const fm = $$('.fm + *, .fs-src, div:last-child', art).map((x) => x.textContent.trim()).find((t) => t && t.length < 60 && !/of 6|outlets|\d:\d/.test(t)); if (fm) return fm.split('·')[0].trim(); }
+    const a = el.closest('a[href^="http"]') || $('a[href^="http"]', el.closest('article, li') || el);
+    if (a) { try { const h = new URL(a.href).hostname.replace(/^www\./, ''); const k = Object.keys(HOSTS).find((d) => h === d || h.endsWith('.' + d)); return k ? HOSTS[k] : h; } catch (e) {} }
+    return 'Palindrome News';
+  }
+  function tile(box, el) {
+    if (!box || $(':scope > .dz-tile', box)) return;
+    const t = document.createElement('span'); t.className = 'dz-tile'; t.setAttribute('aria-hidden', 'true');
+    t.innerHTML = (box.offsetWidth >= 160 ? '<small>Photo unavailable</small>' : '') + outletFor(el || box).replace(/[<>&]/g, '');
+    box.classList.add('dz-tile-host'); if (box.offsetHeight < 60) box.classList.add('dz-sized'); box.appendChild(t);
+  }
+  function onImgFail(img) {
+    if (img.closest('.dz-tile-host') && $(':scope > .dz-tile', img.closest('.dz-tile-host'))) return;
+    const box = img.parentElement; img.style.visibility = 'hidden'; tile(box, img);
+  }
+  // a picture that turns up late after all replaces its tile
+  document.addEventListener('load', (e) => { const t = e.target; if (!t || t.tagName !== 'IMG' || !t.naturalWidth) return; const host = t.closest('.dz-tile-host'); if (host) { const tl = $(':scope > .dz-tile', host); if (tl) tl.remove(); host.classList.remove('dz-tile-host', 'dz-sized'); t.style.visibility = ''; } }, true);
+  const seen = new WeakMap();
+  function slowImages() {
+    // still loading 8 seconds after it came into view: show the tile meanwhile
+    $$('img').forEach((img) => {
+      if (img.complete || !img.offsetParent) return;
+      const r = img.getBoundingClientRect(); if (r.bottom < 0 || r.top > innerHeight * 1.5) return;
+      const t0 = seen.get(img); if (!t0) { seen.set(img, Date.now()); return; }
+      if (Date.now() - t0 > 8000) onImgFail(img);
+    });
+  }
+  addEventListener('scroll', () => { clearTimeout(slowImages.t); slowImages.t = setTimeout(slowImages, 250); }, { passive: true });
+  setInterval(slowImages, 3000);
+  document.addEventListener('error', (e) => { const t = e.target; if (t && t.tagName === 'IMG') setTimeout(() => { if (!t.naturalWidth) onImgFail(t); }, 1500); }, true);
+  function imageSweep() {
+    $$('img').forEach((img) => { if (img.complete && img.naturalWidth === 0 && img.getAttribute('src') && img.offsetParent && img.loading !== 'lazy') onImgFail(img); });
+    $$('img').forEach((img) => { if (img.complete && img.naturalWidth === 0 && img.getAttribute('src') && img.offsetParent && img.getBoundingClientRect().top < innerHeight * 2) onImgFail(img); });
+    // a photo box with nothing in it at all (no picture, no drawing): give it the tile
+    $$('[data-photo], .art, .bart, .ph').forEach((b) => {
+      if (!b.offsetParent || b.offsetHeight < 40 || $(':scope > .dz-tile', b)) return;
+      if (b.getBoundingClientRect().top > innerHeight * 2) return;
+      const ok = $$('img', b).some((i) => i.naturalWidth > 0) || $('svg, canvas, video, iframe', b) || getComputedStyle(b).backgroundImage.includes('url(');
+      if (!ok && !$$('img', b).some((i) => !i.complete)) tile(b, b);
+    });
+  }
+  /* quick win: lazy-load everything below the first screen */
+  function lazy() { $$('img:not([loading])').forEach((i) => { if (i.getBoundingClientRect().top > innerHeight * 1.5) { i.loading = 'lazy'; i.decoding = 'async'; } }); }
+
+  /* 5. the lead's "Connected to this story" fills the empty column under the second story on wide screens */
+  function leadFill() {
+    const ab = $('#autoBreaking'); if (!ab || ab.offsetParent === null) return;
+    const stories = $$(':scope > .ab-story', ab); if (stories.length < 2) return;
+    const [first, second] = stories;
+    const side = Math.abs(second.getBoundingClientRect().top - first.getBoundingClientRect().top) < 40 && innerWidth >= 900;
+    const moved = $(':scope > .rel-box.dz-moved', second);
+    if (side && !moved) { const r = $(':scope > .rel-box', first); if (r) { r.classList.add('dz-moved'); r.style.setProperty('display', 'block', 'important'); second.appendChild(r); } }
+    else if (!side && moved) { const anchor = $(':scope > .ab-vids, :scope > .ab-reps', first); moved.classList.remove('dz-moved'); moved.style.removeProperty('display'); anchor ? first.insertBefore(moved, anchor) : first.appendChild(moved); }
+  }
+
+  /* 14. the source meter on every lead story, explained once */
+  function meterHTML(n) { let s = ''; for (let i = 0; i < 6; i++) s += '<i' + (i < n ? ' class="on"' : '') + '></i>'; return '<span class="meter ' + (n >= 6 ? 'ok' : 'dev') + '" title="' + n + ' of 6 independent outlets"><span class="segs" aria-hidden="true">' + s + '</span>' + (n >= 6 ? n + ' outlets <span class="st">Verified</span>' : n + ' of 6 <span class="st">Developing</span>') + '</span>'; }
+  function meters() {
+    $$('#autoBreaking .cr-byline').forEach((b) => {
+      if ($('.meter', b)) return;
+      const w = document.createTreeWalker(b, NodeFilter.SHOW_TEXT); let n;
+      while ((n = w.nextNode())) { const m = n.textContent.match(/(\d+) independent reports?/); if (m) { const sp = document.createElement('span'); sp.innerHTML = meterHTML(+m[1]); n.textContent = n.textContent.replace(m[0], ''); n.after(sp.firstChild); break; } }
+    });
+    if ($('.dz-legend')) return;
+    const first = $$('.meter').find((m) => m.offsetParent); if (!first) return;
+    const host = first.closest('section, .front'); if (!host) return;
+    const lg = document.createElement('p'); lg.className = 'dz-legend';
+    lg.innerHTML = meterHTML(6) + '<span>How many independent newsrooms have confirmed a story. At six, it is verified and gets our full summary; below six, it is Developing.</span>';
+    const head = $('.band-head, h2, h3', host); if (head) head.after(lg); else host.prepend(lg);
+  }
+
+  /* keep it all applied as the page refreshes itself every 2 minutes */
+  function run() { try { badge(); sponsors(); staleTop(); staleWatch(); agedCards(); leadFill(); meters(); navs(); folds(); imageSweep(); lazy(); } catch (e) { console.warn('design layer', e); } }
+  const origFetch = window.fetch;
+  if (origFetch) window.fetch = function (u) { const p = origFetch.apply(this, arguments); try { if (String(u).includes('auto.json')) p.then((r) => r.clone().json()).then((j) => { window.__dzAuto = j; setTimeout(run, 400); }).catch(() => {}); } catch (e) {} return p; };
+  let timer = null; const later = () => { clearTimeout(timer); timer = setTimeout(run, 300); };
+  const start = () => {
+    phoneHeader(); run();
+    new MutationObserver((ms) => { if (ms.some((m) => !(m.target.closest && (m.target.closest('.dz-menu, .dz-drawer, .dz-tabs, #clocks, .clk, .clock, #clock'))))) later(); })
+      .observe(document.querySelector('main') || document.body, { childList: true, subtree: true });
+    addEventListener('resize', later); mob.addEventListener ? mob.addEventListener('change', () => { $$('.dz-fold').forEach((s) => { const k = s.id || s.dataset.dzKey; const v = FOLD[k]; if (v) s.style.setProperty('--dz-h', (mob.matches ? v[1] : v[0]) + 'px'); }); later(); }) : 0;
+    setInterval(run, 60000);
+    addEventListener('load', () => setTimeout(run, 800));
+  };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
+})();
+</script>
