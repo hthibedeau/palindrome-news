@@ -7601,6 +7601,13 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
 .eyebrow, p.label, .kicker, .band-head .kick, .front > h3 > small { color: var(--accent) !important; font-family: var(--sans) !important; font-style: normal !important;
   font-weight: 700 !important; font-size: 11.5px !important; letter-spacing: .1em !important; text-transform: uppercase !important; }
 
+/* more of 12 + 13: region and topic labels share the kicker style; dates go grey; outlet names take the one accent;
+   the clock cities lose their red (red is kept for Live and Breaking) */
+.fs-region, span.k, .snk b, .snk span:not(.arc) { color: var(--accent) !important; font: 700 11.5px/1.3 var(--sans) !important; letter-spacing: .1em !important; text-transform: uppercase !important; }
+.cu-when, #ahead .when, .bw-card time { color: var(--muted) !important; }
+.clocks .clk .city { color: var(--muted) !important; }
+#ledes#ledes .o, #ledes#ledes .o *, #bigWeek#bigWeek .o, #canus#canus .o { color: var(--accent) !important; }
+
 /* ---------- 6. the lead panel: off-white, a thin accent rule, a red Breaking tag ---------- */
 #autoBreaking.breaking, #breaking.breaking { background: var(--surface) !important; box-shadow: none !important; border: 1px solid var(--line);
   border-top: 4px solid var(--dz-rule); color: var(--ink) !important; }
@@ -7694,6 +7701,12 @@ nav.sections .dz-more > button { padding: 14px 12px; font-size: 13px; font-weigh
 #video.dz-old-open .vid.dz-old { display: revert !important; }
 .dz-earlier { display: inline-flex; align-items: center; min-height: 40px; margin: 10px 0 0; padding: 0 16px; border: 1px solid var(--chipline);
   border-radius: 999px; background: var(--surface); color: var(--accent); font: 600 13.5px/1 var(--sans); cursor: pointer; }
+
+/* the wire runs full width when the lead block above it has nothing to show, in two columns on wide screens */
+section.lead.dz-wire-only > aside.latest { grid-column: 1 / -1; border-left: 0 !important; padding-left: 0 !important; }
+@media (min-width: 900px) { section.lead.dz-wire-only #latestList { columns: 2; column-gap: 40px; } section.lead.dz-wire-only #latestList > li { break-inside: avoid; } }
+
+#breakdown .dz-empty { margin: 6px 0 0; color: var(--muted); font: italic 400 16px/1.5 var(--serif); }
 
 /* ---------- 14. the source meter, explained once ---------- */
 .dz-legend { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin: 0 0 14px; padding: 8px 12px; border-radius: 8px; background: var(--soft);
@@ -8033,15 +8046,23 @@ nav.sections .dz-more > button { padding: 14px 12px; font-size: 13px; font-weigh
       while ((n = w.nextNode())) { const m = n.textContent.match(/(\d+) independent reports?/); if (m) { const sp = document.createElement('span'); sp.innerHTML = meterHTML(+m[1]); n.textContent = n.textContent.replace(m[0], ''); n.after(sp.firstChild); break; } }
     });
     if ($('.dz-legend')) return;
-    const first = $$('.meter').find((m) => m.offsetParent); if (!first) return;
-    const host = first.closest('section, .front'); if (!host) return;
+    // once, under the Canada desk heading, where the meters first appear in a row
+    const desk = $('#sec-canada'); const head = desk && $(':scope > h3', desk); if (!head) return;
     const lg = document.createElement('p'); lg.className = 'dz-legend';
-    lg.innerHTML = meterHTML(6) + '<span>How many independent newsrooms have confirmed a story. At six, it is verified and gets our full summary; below six, it is Developing.</span>';
-    const head = $('.band-head, h2, h3', host); if (head) head.after(lg); else host.prepend(lg);
+    lg.innerHTML = meterHTML(6) + '<span>The source meter: how many independent newsrooms have confirmed a story. At six it is verified and gets our full summary; below six it is Developing.</span>';
+    head.after(lg);
   }
 
+  function emptyBreakdown() {
+    const box = $('#bds'); if (!box) return; const empty = !box.children.length || !box.textContent.trim();
+    let n = $('#breakdown .dz-empty');
+    if (empty && !n) { n = document.createElement('p'); n.className = 'dz-empty'; n.textContent = 'No other story has reached six independent newsrooms yet today. When one does, its breakdown appears here by itself.'; box.after(n); }
+    else if (!empty && n) n.remove();
+  }
+  function wireWide() { const l = $('section.lead'); if (!l) return; const a = $(':scope > article', l); l.classList.toggle('dz-wire-only', !a || getComputedStyle(a).display === 'none'); }
+
   /* keep it all applied as the page refreshes itself every 2 minutes */
-  function run() { try { badge(); sponsors(); staleTop(); staleWatch(); agedCards(); leadFill(); meters(); navs(); folds(); imageSweep(); lazy(); } catch (e) { console.warn('design layer', e); } }
+  function run() { try { badge(); sponsors(); staleTop(); staleWatch(); agedCards(); leadFill(); wireWide(); emptyBreakdown(); meters(); navs(); folds(); imageSweep(); lazy(); } catch (e) { console.warn('design layer', e); } }
   const origFetch = window.fetch;
   if (origFetch) window.fetch = function (u) { const p = origFetch.apply(this, arguments); try { if (String(u).includes('auto.json')) p.then((r) => r.clone().json()).then((j) => { window.__dzAuto = j; setTimeout(run, 400); }).catch(() => {}); } catch (e) {} return p; };
   let timer = null; const later = () => { clearTimeout(timer); timer = setTimeout(run, 300); };
