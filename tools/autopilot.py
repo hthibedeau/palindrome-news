@@ -466,13 +466,13 @@ def core_rows(g):
         return rows, {x for x, n in kc.most_common(6) if n >= 2} or {x for x, n in kc.most_common(3)}
     # a city is not a story, and neither is an everyday word: "Wall Street" and "Oxford Street" are not one story
     # (Hannah, Sat Oct 31, 2026: a Halifax fire was grouped into the Trump-Wall Street Journal lawsuit)
-    freq = Counter(x for r in rows for x in gc.names(r[2]) if x not in WEAK and not is_place(x) and x not in ANGLE_COMMON)
+    freq = Counter(x for r in rows for x in gc.names(r[2]) if x not in WEAK and not is_place(x) and x not in ANGLE_COMMON and x not in OCCASION)
     if not freq or freq.most_common(1)[0][1] < 3:
         return None
     anchor = freq.most_common(1)[0][0]
-    co = Counter(x for r in rows if anchor in gc.names(r[2]) for x in gc.names(r[2]) if x not in WEAK and not is_place(x) and x not in ANGLE_COMMON)
+    co = Counter(x for r in rows if anchor in gc.names(r[2]) for x in gc.names(r[2]) if x not in WEAK and not is_place(x) and x not in ANGLE_COMMON and x not in OCCASION)
     core = {anchor} | {x for x, n in co.items() if n >= 2}
-    return [r for r in rows if anchor in gc.names(r[2]) or len({x for x in gc.names(r[2]) if not is_place(x)} & core) >= 2], core
+    return [r for r in rows if anchor in gc.names(r[2]) or len({x for x in gc.names(r[2]) if not is_place(x) and x not in OCCASION} & core) >= 2], core
 
 
 # a government page that is the event itself, not a story about it: speeches, statements, readouts, news releases
@@ -1471,6 +1471,15 @@ ANGLE_MAX = 5
 ANGLE_COMMON = set("""street road avenue city town wall journal post times news press herald star sun mail globe report reports
 world national park lake river hill bay north south east west new old first last fire police court house home school
 centre center hospital office board council market bank group company family man woman people""".split())
+# holidays and seasons: a day on the calendar is not a story. "Halloween" tied a Quebec needles-in-chocolate story to
+# Heidi Klum's costume, Martha Stewart and U.S. shootings, then pulled an Al Jazeera anniversary video into it
+# (Hannah, Sun Nov 1, 2026: "whatever is in the code that did that needs to come out")
+OCCASION = set("""halloween christmas easter thanksgiving hanukkah diwali ramadan eid passover new-year year's canada-day
+remembrance labour labor victoria family-day valentine valentine's mother's father's holiday holidays weekend summer winter
+spring fall autumn season festive""".split())
+# words that say nothing about which story a video is about ("marks 30 years", "East")
+CLIP_GENERIC = ANGLE_COMMON | OCCASION | set("""years year marks mark anniversary decades decade months days hours watch video
+clip full latest""".split())
 
 
 # U.S. stories: the Canadian angle is also the Canada-U.S. relationship itself (Hannah, Wed Oct 28: "there are many
@@ -1725,12 +1734,19 @@ def promote_live(res, now):
         if s["canada"] == "none":
             continue
         th = s.get("theme") if s.get("theme") and s["theme"] not in SPLIT_THEMES else ""
-        text = s["title"] + " " + " ".join(r["title"] for r in s.get("reports", []))
-        sw = event_words(text) - EVENT_KIND_STOP
+        # a video belongs to a story only when it is about the story itself: matched against the story's own headline
+        # and first report (not every report grouped under it), it must name one of the story's own key names and share
+        # three real words with it. Matching on the whole group put "Al Jazeera marks 30 years of transforming news in
+        # Middle East" under the Quebec needles-in-Halloween-chocolate story through "marks", "years" and "East"
+        # (Hannah, Sun Nov 1, 2026).
+        text = s["title"] + " " + (s.get("first") or {}).get("title", "")
+        sw = event_words(text) - EVENT_KIND_STOP - CLIP_GENERIC
+        own = {x.lower() for x in s.get("words") or []} - CLIP_GENERIC
         vids = []
         for c in clips_:
             t = c.get("t", "")
-            if (th and _live_theme(t) == th) or (not th and len(sw & (event_words(t) - EVENT_KIND_STOP)) >= 3):
+            cw = event_words(t) - EVENT_KIND_STOP - CLIP_GENERIC
+            if (th and _live_theme(t) == th) or (not th and own and cw & own and len(sw & cw) >= 3):
                 vids.append({"net": c["o"], "url": c["u"], "title": t, "img": c.get("img", ""), "rec": bool(c.get("rec")), "up": c.get("up", "")})
         if vids:
             s["videos"] = vids[:4]
