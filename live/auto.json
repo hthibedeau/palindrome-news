@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-01T06:21:37.361605+00:00",
- "checkedLabel": "Sun 1:21 a.m.",
+ "checked": "2026-11-01T06:31:37.904532+00:00",
+ "checkedLabel": "Sun 1:31 a.m.",
  "stories": [
   {
    "key": "top",
@@ -56,6 +56,33 @@
  ],
  "wire": [
   [
+   "Sun 1:30 a.m.",
+   "World",
+   "Shops looted as German cost of living protests turn violent",
+   "BBC News",
+   "https://www.bbc.co.uk/news/articles/cqj34gnd3n30o?at_medium=RSS&at_campaign=rss",
+   "2026-11-01T06:30:59+00:00",
+   1
+  ],
+  [
+   "Sun 1:27 a.m.",
+   "U.S.",
+   "No. 20 Boise State rallies to beat Texas State 46-45 after blowing a 25-point halftime lead",
+   "The Canadian Press (via Winnipeg Free Press)",
+   "https://www.winnipegfreepress.com/uncategorized/2026/11/01/no-20-boise-state-rallies-to-beat-texas-state-46-45-after-blowing-a-25-point-halftime-lead",
+   "2026-11-01T06:27:15+00:00",
+   1
+  ],
+  [
+   "Sun 1:20 a.m.",
+   "World",
+   "Indian forces tighten security in Delhi ahead of big opposition protest",
+   "The Guardian",
+   "https://www.theguardian.com/world/2026/nov/01/india-opposition-protest-rally-delhi",
+   "2026-11-01T06:20:58+00:00",
+   1
+  ],
+  [
    "Sun 1:07 a.m.",
    "Latest",
    "Jackson Arnold throws 3 TD passes, UNLV hands Northern Illinois its 10th straight loss, 31-24",
@@ -92,15 +119,6 @@
    1
   ],
   [
-   "Sun 1:36 a.m.",
-   "World",
-   "From Italy to Croatia, a warming climate threatens prized white truffles",
-   "Toronto Star",
-   "https://www.thestar.com/news/world/europe/from-italy-to-croatia-a-warming-climate-threatens-prized-white-truffles/article_38855b37-315a-5dff-8cd2-c0dbdf1d0d30.html",
-   "2026-11-01T05:36:08+00:00",
-   2
-  ],
-  [
    "Sun 1:25 a.m.",
    "World",
    "‘Like Kashmir’: How a toxic marble dump yard became a tourist spot in India",
@@ -122,10 +140,10 @@
    "Sun 1:05 a.m.",
    "World",
    "Bulgarians vote in a presidential runoff marked by regional security threats",
-   "Toronto Star",
-   "https://www.thestar.com/news/world/europe/bulgarians-vote-in-a-presidential-runoff-marked-by-regional-security-threats/article_14214702-53d5-5caa-93ef-9e53af8bcebb.html",
+   "The Canadian Press (via Winnipeg Free Press)",
+   "https://www.winnipegfreepress.com/world/2026/11/01/bulgarians-vote-in-a-presidential-runoff-marked-by-regional-security-threats",
    "2026-11-01T05:05:52+00:00",
-   2
+   1
   ],
   [
    "Sun 12:49 a.m.",
@@ -164,15 +182,6 @@
    1
   ],
   [
-   "Sun 12:04 a.m.",
-   "World",
-   "AP News in Brief at 12:04 a.m. EDT",
-   "The Canadian Press (via Winnipeg Free Press)",
-   "https://www.winnipegfreepress.com/world/2026/10/31/ap-news-in-brief-at-1204-a-m-edt-1029",
-   "2026-11-01T04:04:29+00:00",
-   1
-  ],
-  [
    "Sat 11:54 p.m.",
    "Latest",
    "Iran's supreme leader warns U.S., Israel against new attacks",
@@ -207,15 +216,6 @@
    "https://www.aljazeera.com/news/2026/11/1/ukrainian-evacuees-from-russian-occupied-oleshky-reunite-with-family?traffic_source=rss",
    "2026-11-01T03:37:23+00:00",
    1
-  ],
-  [
-   "Sat 11:24 p.m.",
-   "World",
-   "What we know about latest efforts to end US war on Iran",
-   "Al Jazeera",
-   "https://www.aljazeera.com/video/newsfeed/2026/11/1/iran-wrap-iran-latest-developments-011126?traffic_source=rss",
-   "2026-11-01T03:24:02+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -247,10 +247,10 @@
  ],
  "leads": [
   {
-   "score": 20,
+   "score": 19,
    "title": "Carney says he can wait out Trump for trade deal",
    "url": "https://www.politico.com/news/2026/10/30/mark-carney-interview-trump-trade-deal-01144329",
-   "outlets": 4,
+   "outlets": 3,
    "why": [
     "National Newswatch #1",
     "CBC News front #5",
@@ -271,6 +271,14 @@
     "National Newswatch #7",
     "National Newswatch #11"
    ],
+   "theme": ""
+  },
+  {
+   "score": 7,
+   "title": "No. 20 Boise State rallies to beat Texas State 46-45 after blowing a 25-point halftime lead",
+   "url": "https://www.winnipegfreepress.com/uncategorized/2026/11/01/no-20-boise-state-rallies-to-beat-texas-state-46-45-after-blowing-a-25-point-halftime-lead",
+   "outlets": 5,
+   "why": [],
    "theme": ""
   },
   {
@@ -337,16 +345,6 @@
     "National Newswatch #19"
    ],
    "theme": "Canada and the EU"
-  },
-  {
-   "score": 4,
-   "title": "More Canadian provinces are ditching the time change. But did they pick the wrong option?",
-   "url": "https://www.cbc.ca/news/canada/daylight-saving-time-canada-health-9.7399791",
-   "outlets": 1,
-   "why": [
-    "CBC News front #1"
-   ],
-   "theme": ""
   }
  ],
  "canada": [
@@ -505,7 +503,7 @@
     "us_election": false,
     "judgment": "national",
     "judgment_why": "National: affects some people; carried across the country (national desks).",
-    "weight": 25.0,
+    "weight": 22.0,
     "videos": [
      {
       "net": "NBC News",
@@ -526,209 +524,188 @@
     ]
    },
    {
-    "key": "auto-c0889af7",
+    "key": "auto-1675f1e4",
     "words": [
-     "membership",
-     "short-term",
-     "associate",
-     "project",
-     "expert",
-     "eu"
+     "binance",
+     "korea",
+     "fbi"
     ],
-    "score": 4,
-    "outlets": 2,
+    "score": 7,
+    "outlets": 4,
     "carriers": 6,
     "tag": "Developing",
-    "title": "‘Associate’ EU membership for Canada not a ‘short-term’ project: expert",
-    "url": "https://globalnews.ca/news/12128698/associate-eu-membership-for-canada/",
-    "outlet": "Global News",
-    "t": "Sat 10:54 a.m.",
-    "iso": "2026-10-31T14:54:14+00:00",
-    "summary": "Carney said Ottawa and Brussels are working toward the \"deepest possible partnership short of accession\" that would see Canada become the EU's \"first associate member.\"",
+    "title": "North Korea fires off cluster bomb warheads in latest ‘major’ weapons test",
+    "url": "https://www.japantimes.co.jp/news/2026/11/01/asia-pacific/north-korea-cluster-bomb-warhead/",
+    "outlet": "The Japan Times",
+    "t": "Sun 12:12 a.m.",
+    "iso": "2026-11-01T04:12:00+00:00",
+    "summary": "Pyongyang claimed the warhead is “capable of turning into ashes a target area of 12 to 13 hectares.”",
     "first": {
-     "outlet": "Toronto Star",
-     "url": "https://www.thestar.com/news/canada/associate-eu-membership-for-canada-not-a-short-term-project-expert/article_e0d96f46-0e2d-576e-88df-8ce2e2d682ff.html",
-     "t": "Sat 6:00 a.m.",
-     "title": "'Associate' EU membership for Canada not a 'short-term' project: expert",
-     "iso": "2026-10-31T10:00:00+00:00"
+     "outlet": "BNN Bloomberg",
+     "url": "https://www.bnnbloomberg.ca/business/international/2026/11/01/fbi-blames-north-korea-for-stolen-billions-from-binance-in-biggest-hack-in-history/",
+     "t": "Sat 9:51 p.m.",
+     "title": "FBI blames North Korea for stolen billions from Binance in biggest hack in history",
+     "iso": "2026-11-01T01:51:47+00:00"
     },
-    "newest": "2026-10-31T14:54:14+00:00",
+    "newest": "2026-11-01T04:12:00+00:00",
     "photo": {
-     "src": "live/img/auto-c0889af7-48a2321086.jpg",
-     "orig": "https://globalnews.ca/wp-content/uploads/2026/10/EU-summit-2-e1793458357136.jpg?quality=65&strip=all&w=720&h=379&crop=1",
-     "caption": "Prime Minister Mark Carney, third from left, and European Commission President Ursula von der Leyen, third from right, attend a meeting with Canadian and European Union delegates at the EU-Canada summit in Montreal on Friday, Oct. 30, 2026. — via Global News",
-     "alt": "Prime Minister Mark Carney, third from left, and European Commission President Ursula von der Leyen, third from right, attend a meeting with Canadian and Europe",
-     "outlet": "Global News",
-     "url": "https://globalnews.ca/news/12128698/associate-eu-membership-for-canada/"
+     "src": "live/img/auto-1675f1e4-d2823acb24.jpg",
+     "orig": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/01/571673.JPG?v=3.1",
+     "caption": "Photo — via The Japan Times",
+     "alt": "North Korea fires off cluster bomb warheads in latest ‘major’ weapons test",
+     "outlet": "The Japan Times",
+     "url": "https://www.japantimes.co.jp/news/2026/11/01/asia-pacific/north-korea-cluster-bomb-warhead/"
     },
-    "independent": 2,
+    "independent": 4,
     "reports": [
      {
-      "t": "Sat 10:54 a.m.",
-      "iso": "2026-10-31T14:54:14+00:00",
-      "outlet": "Global News",
-      "title": "‘Associate’ EU membership for Canada not a ‘short-term’ project: expert",
-      "url": "https://globalnews.ca/news/12128698/associate-eu-membership-for-canada/",
-      "desc": "Carney said Ottawa and Brussels are working toward the \"deepest possible partnership short of accession\" that would see Canada become the EU's \"first associate member.\""
+      "t": "Sun 12:12 a.m.",
+      "iso": "2026-11-01T04:12:00+00:00",
+      "outlet": "The Japan Times",
+      "title": "North Korea fires off cluster bomb warheads in latest ‘major’ weapons test",
+      "url": "https://www.japantimes.co.jp/news/2026/11/01/asia-pacific/north-korea-cluster-bomb-warhead/",
+      "desc": "Pyongyang claimed the warhead is “capable of turning into ashes a target area of 12 to 13 hectares.”"
      },
      {
-      "t": "Sat 10:52 a.m.",
-      "iso": "2026-10-31T14:52:19+00:00",
+      "t": "Sat 10:41 p.m.",
+      "iso": "2026-11-01T02:41:34+00:00",
+      "outlet": "The Guardian",
+      "title": "Binance says 90% of losses from $6.3bn hack covered as FBI says North Korea behind attack",
+      "url": "https://www.theguardian.com/business/2026/nov/01/binance-losses-covered-hack-fbi-north-korea-cryptocurrency",
+      "desc": "Cryptocurrency exchange says withdrawals expected to resume on Sunday as FBI blames North Korean state-sponsored group TraderTraitor"
+     },
+     {
+      "t": "Sat 10:28 p.m.",
+      "iso": "2026-11-01T02:28:38+00:00",
+      "outlet": "Al Jazeera",
+      "title": "FBI blames North Korea for record $6.3bn crypto heist from Binance",
+      "url": "https://www.aljazeera.com/news/2026/11/1/fbi-blames-north-korea-for-record-6-3bn-crypto-heist?traffic_source=rss",
+      "desc": "Crypto firm Binance says it has covered 90 percent of losses from the multibillion-dollar hack."
+     },
+     {
+      "t": "Sat 9:51 p.m.",
+      "iso": "2026-11-01T01:51:47+00:00",
+      "outlet": "CTV News",
+      "title": "FBI blames North Korea for stolen billions from Binance in biggest hack in history",
+      "url": "https://www.ctvnews.ca/business/article/fbi-blames-north-korea-for-stolen-billions-from-binance-in-biggest-hack-in-history/",
+      "desc": "The theft of billions of dollars from Binance within a matter of minutes, the biggest crypto heist in history, was orchestrated by North Korean hackers, the FBI said Saturday."
+     },
+     {
+      "t": "Sat 9:51 p.m.",
+      "iso": "2026-11-01T01:51:47+00:00",
       "outlet": "CP24",
-      "title": "Associate EU membership talks will be no walk in the park for Canada: expert",
-      "url": "https://www.cp24.com/news/canada/2026/10/31/canada-eu-associate-membership-talks-could-get-complicated-expert/",
-      "desc": "Prime Minister Mark Carney has laid out a timeline that would see Canada sign an agreement on a new partnership with the European Union in the next seven months, if all goes well."
-     },
-     {
-      "t": "Sat 7:00 a.m.",
-      "iso": "2026-10-31T11:00:00+00:00",
-      "outlet": "Toronto Star",
-      "title": "Canadian students would get access to EU schools under new deal. Here's what we know",
-      "url": "https://www.thestar.com/news/canada/canadian-students-would-get-access-to-eu-schools-under-new-deal-here-s-what-we-know/article_96e0827a-39c6-4a90-af46-b2e6af609cfe.html",
-      "desc": "Students could get access to exchanges, academic opportunities through participation in the funding program."
-     },
-     {
-      "t": "Sat 6:00 a.m.",
-      "iso": "2026-10-31T10:00:14+00:00",
-      "outlet": "CityNews Ottawa",
-      "title": "‘Associate’ EU membership for Canada not a ‘short-term’ project: expert",
-      "url": "https://ottawa.citynews.ca/2026/10/31/associate-eu-membership-for-canada-not-a-short-term-project-expert/",
-      "desc": "OTTAWA — Prime Minister Mark Carney has laid out a timeline that would see Canada sign an agreement on a new partnership with the European Union in the next seven months, if all goes well."
-     },
-     {
-      "t": "Sat 6:00 a.m.",
-      "iso": "2026-10-31T10:00:14+00:00",
-      "outlet": "CityNews Edmonton",
-      "title": "‘Associate’ EU membership for Canada not a ‘short-term’ project: expert",
-      "url": "https://edmonton.citynews.ca/2026/10/31/associate-eu-membership-for-canada-not-a-short-term-project-expert/",
+      "title": "FBI blames North Korea for stolen billions from Binance in biggest hack in history",
+      "url": "https://www.cp24.com/news/money/2026/11/01/fbi-blames-north-korea-for-stolen-billions-from-binance-in-biggest-hack-in-history/",
       "desc": ""
      },
      {
-      "t": "Sat 6:00 a.m.",
-      "iso": "2026-10-31T10:00:14+00:00",
-      "outlet": "CityNews Calgary",
-      "title": "‘Associate’ EU membership for Canada not a ‘short-term’ project: expert",
-      "url": "https://calgary.citynews.ca/2026/10/31/associate-eu-membership-for-canada-not-a-short-term-project-expert/",
+      "t": "Sat 9:51 p.m.",
+      "iso": "2026-11-01T01:51:47+00:00",
+      "outlet": "BNN Bloomberg",
+      "title": "FBI blames North Korea for stolen billions from Binance in biggest hack in history",
+      "url": "https://www.bnnbloomberg.ca/business/international/2026/11/01/fbi-blames-north-korea-for-stolen-billions-from-binance-in-biggest-hack-in-history/",
       "desc": ""
      }
     ],
     "sources": [
      {
-      "t": "Sat 6:00 a.m.",
+      "t": "Sun 12:12 a.m.",
       "primary": false,
-      "outlet": "CityNews Ottawa",
-      "title": "‘Associate’ EU membership for Canada not a ‘short-term’ project: expert",
-      "url": "https://ottawa.citynews.ca/2026/10/31/associate-eu-membership-for-canada-not-a-short-term-project-expert/",
-      "desc": "OTTAWA — Prime Minister Mark Carney has laid out a timeline that would see Canada sign an agreement on a new partnership with the European Union in the next seven months, if all goes well.",
+      "outlet": "The Japan Times",
+      "title": "North Korea fires off cluster bomb warheads in latest ‘major’ weapons test",
+      "url": "https://www.japantimes.co.jp/news/2026/11/01/asia-pacific/north-korea-cluster-bomb-warhead/",
+      "desc": "Pyongyang claimed the warhead is “capable of turning into ashes a target area of 12 to 13 hectares.”",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "The Japan Times",
+        "src": "The Japan Times",
+        "byline": "own staff: STAFF WRITER"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Sat 10:41 p.m.",
+      "primary": false,
+      "outlet": "The Guardian",
+      "title": "Binance says 90% of losses from $6.3bn hack covered as FBI says North Korea behind attack",
+      "url": "https://www.theguardian.com/business/2026/nov/01/binance-losses-covered-hack-fbi-north-korea-cryptocurrency",
+      "desc": "Cryptocurrency exchange says withdrawals expected to resume on Sunday as FBI blames North Korean state-sponsored group TraderTraitor",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "The Guardian",
+        "src": "The Guardian",
+        "byline": "own staff: reporter"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Sat 10:28 p.m.",
+      "primary": false,
+      "outlet": "Al Jazeera",
+      "title": "FBI blames North Korea for record $6.3bn crypto heist from Binance",
+      "url": "https://www.aljazeera.com/news/2026/11/1/fbi-blames-north-korea-for-record-6-3bn-crypto-heist?traffic_source=rss",
+      "desc": "Crypto firm Binance says it has covered 90 percent of losses from the multibillion-dollar hack.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Al Jazeera",
+        "src": "Al Jazeera",
+        "byline": "{\"@type\":\"Person\",\"name\":\"Al Jazeera Staff\",} Al Jazeera Staff Add Al Jazeera on Google By "
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Sat 9:51 p.m.",
+      "primary": false,
+      "outlet": "CTV News",
+      "title": "FBI blames North Korea for stolen billions from Binance in biggest hack in history",
+      "url": "https://www.ctvnews.ca/business/article/fbi-blames-north-korea-for-stolen-billions-from-binance-in-biggest-hack-in-history/",
+      "desc": "The theft of billions of dollars from Binance within a matter of minutes, the biggest crypto heist in history, was orchestrated by North Korean hackers, the FBI said Saturday.",
       "wire": "The Canadian Press",
       "by": [
        {
-        "outlet": "CityNews Ottawa",
+        "outlet": "CTV News",
         "src": "The Canadian Press",
-        "byline": "on/fede01291c2e6f3f5fe805acc41a6fdf\"}] \"The Canadian Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews Edmonton",
-        "src": "The Canadian Press",
-        "byline": "on/fede01291c2e6f3f5fe805acc41a6fdf\"}] \"The Canadian Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews Calgary",
-        "src": "The Canadian Press",
-        "byline": "on/fede01291c2e6f3f5fe805acc41a6fdf\"}] \"The Canadian Press\" News Staff \n\t\t\tBy"
+        "byline": "\"Jennifer Heudes\" \"Paul Hollingsworth\" \"The Canadian Press\" \"Charles Lefebvre\""
        },
        {
         "outlet": "CP24",
-        "src": "The Canadian Press",
-        "byline": "\"@type\": \"Person\",\n      \"name\": \"The Canadian Press\",\n      \n    }\n  ]"
+        "src": "The Associated Press",
+        "byline": "\"@type\": \"Person\",\n      \"name\": \"The  Associated Press\",\n      \n    }\n  ]"
        },
        {
-        "outlet": "Global News",
-        "src": "Corus",
-        "byline": "\"Staff\" Name Rich B Rich Anonymous Rich Pete Anonymous Rich Serguei semine "
+        "outlet": "BNN Bloomberg",
+        "src": "The Associated Press",
+        "byline": "\"@type\": \"Person\",\n      \"name\": \"The  Associated Press\",\n      \n    }\n  ]"
        }
       ],
       "copies": [
        {
-        "outlet": "CityNews Edmonton",
-        "url": "https://edmonton.citynews.ca/2026/10/31/associate-eu-membership-for-canada-not-a-short-term-project-expert/"
-       },
-       {
-        "outlet": "CityNews Calgary",
-        "url": "https://calgary.citynews.ca/2026/10/31/associate-eu-membership-for-canada-not-a-short-term-project-expert/"
-       },
-       {
         "outlet": "CP24",
-        "url": "https://www.cp24.com/news/canada/2026/10/31/canada-eu-associate-membership-talks-could-get-complicated-expert/"
+        "url": "https://www.cp24.com/news/money/2026/11/01/fbi-blames-north-korea-for-stolen-billions-from-binance-in-biggest-hack-in-history/"
        },
        {
-        "outlet": "Global News",
-        "url": "https://globalnews.ca/news/12128698/associate-eu-membership-for-canada/"
+        "outlet": "BNN Bloomberg",
+        "url": "https://www.bnnbloomberg.ca/business/international/2026/11/01/fbi-blames-north-korea-for-stolen-billions-from-binance-in-biggest-hack-in-history/"
        }
       ]
-     },
-     {
-      "t": "Sat 7:00 a.m.",
-      "primary": false,
-      "outlet": "Toronto Star",
-      "title": "Canadian students would get access to EU schools under new deal. Here's what we know",
-      "url": "https://www.thestar.com/news/canada/canadian-students-would-get-access-to-eu-schools-under-new-deal-here-s-what-we-know/article_96e0827a-39c6-4a90-af46-b2e6af609cfe.html",
-      "desc": "Students could get access to exchanges, academic opportunities through participation in the funding program.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Toronto Star",
-        "src": "Torstar",
-        "byline": "own staff: Reporter"
-       }
-      ],
-      "copies": []
      }
     ],
     "replaces_top": false,
     "events": [],
-    "theme": "Canada and the EU",
-    "canada": "canadian",
+    "theme": "",
+    "canada": "none",
     "canus": false,
     "popular": 0,
     "us_election": false,
     "judgment": "national",
-    "judgment_why": "National: affects many people; carried across the country (3 cities).",
-    "weight": 21.0,
-    "videos": [
-     {
-      "net": "CPAC",
-      "url": "https://www.youtube.com/watch?v=Le1o0pArYn4",
-      "title": "PM Carney meets with European Union leaders in Montréal – October 30, 2026",
-      "img": "https://i.ytimg.com/vi/Le1o0pArYn4/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CBC News",
-      "url": "https://www.youtube.com/watch?v=cC2KHglDAVE",
-      "title": "Will Canadians get behind Canada's pursuit of associate membership in the EU? | Power & Politics",
-      "img": "https://i.ytimg.com/vi/cC2KHglDAVE/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CBC News",
-      "url": "https://www.youtube.com/watch?v=H5AYatiKbfU",
-      "title": "What can we expect from the Canada-EU 'alliance for the future’? | Power & Politics",
-      "img": "https://i.ytimg.com/vi/H5AYatiKbfU/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CityNews",
-      "url": "https://www.youtube.com/watch?v=tQUbP2UiKPA",
-      "title": "Canada Post resumes parcel service at all EU countries",
-      "img": "https://i.ytimg.com/vi/tQUbP2UiKPA/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     }
-    ]
+    "judgment_why": "National: affects some people; carried across the country (national desks).",
+    "weight": 25.0
    }
   ],
   "considered": [
@@ -737,7 +714,7 @@
     "url": "https://www.timescolonist.com/the-mix/heidi-klum-reveals-halloween-costume-as-her-iconic-party-marks-25-years-12965246",
     "rank": 1,
     "live": "",
-    "weight": 25.0,
+    "weight": 22.0,
     "score": 6,
     "independent": 3,
     "most_read": 0,
@@ -750,26 +727,9 @@
     "why_judged": "National: affects some people; carried across the country (national desks)."
    },
    {
-    "title": "‘Associate’ EU membership for Canada not a ‘short-term’ project: expert",
-    "url": "https://globalnews.ca/news/12128698/associate-eu-membership-for-canada/",
-    "rank": 2,
-    "live": "",
-    "weight": 21.0,
-    "score": 4,
-    "independent": 2,
-    "most_read": 0,
-    "canada": "canadian",
-    "theme": "Canada and the EU",
-    "top": true,
-    "rule": "Canadian, older",
-    "carriers": 6,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (3 cities)."
-   },
-   {
     "title": "North Korea fires off cluster bomb warheads in latest ‘major’ weapons test",
     "url": "https://www.japantimes.co.jp/news/2026/11/01/asia-pacific/north-korea-cluster-bomb-warhead/",
-    "rank": 3,
+    "rank": 2,
     "live": "",
     "weight": 25.0,
     "score": 7,
@@ -777,7 +737,7 @@
     "most_read": 0,
     "canada": "none",
     "theme": "",
-    "top": false,
+    "top": true,
     "rule": "No Canadian tie",
     "carriers": 6,
     "judgment": "national",
@@ -786,7 +746,7 @@
    {
     "title": "Haley Stevens advised to stay away from Abdul El-Sayed campaign events to limit ‘distractions’",
     "url": "https://www.theguardian.com/us-news/2026/oct/31/abdul-el-sayed-haley-stevens-disinvited-from-events",
-    "rank": 4,
+    "rank": 3,
     "live": "",
     "weight": 12.5,
     "score": 5,
@@ -802,12 +762,17 @@
    },
    {
     "title": "Canada is in the U.S. midterm spotlight. Will the results be a blessing or a curse?",
-    "score": 20,
+    "score": 19,
     "why": "not built: only 1 independent report(s) (1 sites)"
    },
    {
     "title": "Satisfaction with Carney touches 70% for the first time: is ‘bridge’ politics beating ‘wedge’ politics?",
     "score": 8,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "No. 20 Boise State rallies to beat Texas State 46-45 after blowing a 25-point halftime lead",
+    "score": 7,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
@@ -824,6 +789,11 @@
     "title": "Liberals jump ahead of Tories in fundraising as by-election calls loom",
     "score": 4,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Can a New Canada-EU Relationship Stand the Tests of Time and Geopolitics?",
+    "score": 4,
+    "why": "not built: only 1 independent report(s) (5 sites)"
    },
    {
     "title": "More Canadian provinces are ditching the time change. But did they pick the wrong option?",
@@ -851,23 +821,14 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "From Italy to Croatia, a warming climate threatens prized white truffles",
-    "score": 4,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Bulgarians vote in a presidential runoff marked by regional security threats",
-    "score": 4,
+    "title": "New information challenges military’s account of deadly Wainwright fire",
+    "score": 3,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
   ],
   "top_n": 2,
   "more": [],
   "passed_over": [
-   {
-    "title": "North Korea fires off cluster bomb warheads in latest ‘major’ weapons test",
-    "url": "https://www.japantimes.co.jp/news/2026/11/01/asia-pacific/north-korea-cluster-bomb-warhead/"
-   },
    {
     "title": "Haley Stevens advised to stay away from Abdul El-Sayed campaign events to limit ‘distractions’",
     "url": "https://www.theguardian.com/us-news/2026/oct/31/abdul-el-sayed-haley-stevens-disinvited-from-events"
@@ -921,7 +882,7 @@
    "id": "q1VQ-EDCDLo",
    "r": "ca",
    "o": "APTN News",
-   "t": "Under the Evergreens: What happened to Dawn Carisse? | APTN Investigates",
+   "t": "Under the Evergreens: Disappearances at an Ontario psychiatric hospital | APTN Investigates",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=q1VQ-EDCDLo",
@@ -991,7 +952,7 @@
    "id": "mrTOpTAbZkc",
    "r": "ca",
    "o": "Global News",
-   "t": "Global National: Oct. 31, 2026 | G20 talks expose division over Russia's war in Ukraine",
+   "t": "Global National: Oct. 31, 2026 | Russia-Ukraine war divides G20 foreign ministers at Atlanta talks",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=mrTOpTAbZkc",
@@ -1355,7 +1316,7 @@
    "id": "FhkBoV85WbQ",
    "r": "world",
    "o": "BBC News",
-   "t": "Fake AI ads are ruining elections - Are you being fooled? | BBC News",
+   "t": "What happens when voters can't tell fact from fiction? | BBC News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=FhkBoV85WbQ",
@@ -1744,13 +1705,6 @@
  ],
  "eds": [
   [
-   "Toronto Star",
-   "Opinion",
-   "I'm married to a pastor. When 'Death of a Pastor's Wife' came out, I couldn't look away",
-   "https://www.thestar.com/opinion/contributors/i-m-married-to-a-pastor-when-death-of-a-pastor-s-wife-came-out-i-couldn-t-look-away/article_97408110-1fa4-46d5-b867-d53620af61ba.html",
-   "2026-10-31T11:00:00+00:00"
-  ],
-  [
    "Toronto Sun",
    "Editorial",
    "Mark Carney weighs in on U.S. midterms",
@@ -1812,6 +1766,13 @@
    "MAGA won the party. It just lost the math",
    "https://www.washingtonexaminer.com/op-eds/4780325/future-of-republican-party-maga/",
    "2026-10-31T18:00:00+00:00"
+  ],
+  [
+   "The Guardian",
+   "Opinion",
+   "Hear me out: maybe Norway should give Melania Trump the Nobel peace prize | Arwa Mahdawi",
+   "https://www.theguardian.com/commentisfree/2026/oct/31/norway-melania-trump-nobel-peace-prize",
+   "2026-10-31T12:00:44+00:00"
   ]
  ],
  "canus": {
@@ -1879,45 +1840,13 @@
   "edition": "Sunday morning, November 1",
   "lines": [
    "Good morning. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
-   "Judge throws out Trump suit against Wall Street Journal over Epstein letter, The Associated Press reports.",
+   "Iran’s supreme leader warns U.S., Israel against new attacks, CBS News reports.",
    "The theft of billions of dollars from Binance within a matter of minutes, the biggest crypto heist in history, was orchestrated by North Korean hackers, the FBI said Saturday.",
    "One person was killed and six others injured after a shooting inside a shopping mall at a Spirit Halloween store in Fairfield, California, on Friday night, police said.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
   ]
  },
  "otr": [
-  {
-   "cat": "intl",
-   "media": "none",
-   "initials": "UN",
-   "name": "United Nations",
-   "role": "UN News",
-   "date": "Oct 31",
-   "platform": "Official statement",
-   "handle": "news.un.org",
-   "hed": "‘They deserve to know the truth’: UN rights chief demands probe into staffer’s death in Houthi custody",
-   "summary": "The UN human rights chief on Saturday demanded an independent investigation into the death of a Yemeni colleague held by the Houthis for more than two years, whose family learned of his death only weeks after it happened.",
-   "href": "https://news.un.org/feed/view/en/story/2026/10/1168716",
-   "report": false,
-   "iso": "2026-10-31T12:00:00+00:00",
-   "auto": true
-  },
-  {
-   "cat": "intl",
-   "media": "none",
-   "initials": "UN",
-   "name": "United Nations",
-   "role": "UN News",
-   "date": "Oct 31",
-   "platform": "Official statement",
-   "handle": "news.un.org",
-   "hed": "Samarkand: A ‘living museum’ on the Silk Road grapples with a tourism boom",
-   "summary": "As the sun sets over Samarkand’s majestic Registan, its last rays glint across the turquoise mosaics. Dusk settles on the ancient square where great trade routes have crossed for centuries.",
-   "href": "https://news.un.org/feed/view/en/story/2026/10/1168711",
-   "report": false,
-   "iso": "2026-10-31T12:00:00+00:00",
-   "auto": true
-  },
   {
    "cat": "mp",
    "media": "none",
@@ -2003,7 +1932,7 @@
     ]
    },
    {
-    "h": "Canada echoes U.S. ‘mass casualty event’ warning for Moscow Canada echoes U.S. ‘mass casualty event’ warning for Moscow The U.S. Embassy in Moscow has issued an alert regarding a threat of a “mass casualty event” at the Tsaritsyno Museum Reserve in Moscow.",
+    "h": "Canada echoes U.S. ‘mass casualty event’ warning for Moscow Canada echoes U.S. ‘mass casualty event’ warning for Moscow The U.S. Embassy in Moscow has issued an alert regarding a threat of a “mass casualty event” at the Tsaritsyno Museum Reserve in Moscow. World Oct 31 1 min read",
     "u": "https://globalnews.ca/news/12128764/mass-casualty-threat-russia/",
     "o": [
      [
@@ -2337,13 +2266,14 @@
      "exclusive": false
     },
     {
-     "t": "Fri 10:00 p.m.",
-     "iso": "2026-10-31T02:00:00+00:00",
-     "outlet": "NBC News",
-     "title": "Daylight saving time ends Sunday. Here’s what to know as clocks ‘fall back.’",
-     "url": "https://www.nbcnews.com/news/us-news/daylight-saving-time-ends-2026-when-november-1-what-know-rcna606619",
+     "t": "Fri 7:38 a.m.",
+     "iso": "2026-10-30T11:38:13+00:00",
+     "outlet": "BNN Bloomberg",
+     "title": "Business groups clock hurdles as time change comes to an end in some regions",
+     "url": "https://www.bnnbloomberg.ca/business/2026/10/30/business-groups-clock-hurdles-as-time-change-comes-to-an-end-in-some-regions/",
      "canada": false,
-     "paywall": false
+     "paywall": false,
+     "exclusive": false
     }
    ],
    "official": [],
@@ -2608,28 +2538,6 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Sun 1:50 a.m.",
-   "iso": "2026-11-01T05:50:59+00:00",
-   "title": "From Italy to Croatia, a warming climate threatens prized white truffles",
-   "summary": "ALBA, Italy (AP) — Guided by the beam of a flashlight, Tino Marolo follows his dog Stella through the darkness of a Piedmont woodland, searching for one of Italy’s most prized culinary treasures hidden beneath the soil.",
-   "outlet": "Times Colonist, Toronto Star",
-   "url": "https://www.timescolonist.com/the-mix/from-italy-to-croatia-a-warming-climate-threatens-prized-white-truffles-12965254",
-   "img": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/5e9ffa47c30194d44508b33c0b277a349c0f50dba7484119100c905a2b8306d1.jpg;w=1200;h=800;mode=crop"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Sun 1:05 a.m.",
-   "iso": "2026-11-01T05:05:52+00:00",
-   "title": "Bulgarians vote in a presidential runoff marked by regional security threats",
-   "summary": "SOFIA, Bulgaria (AP) — Bulgarians voted on Sunday in a presidential runoff marked by regional security threats and economic worries at home.",
-   "outlet": "Toronto Star, The Canadian Press (via Winnipeg Free Press)",
-   "url": "https://www.thestar.com/news/world/europe/bulgarians-vote-in-a-presidential-runoff-marked-by-regional-security-threats/article_14214702-53d5-5caa-93ef-9e53af8bcebb.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/c/5b/c5b82922-c2a0-5e2f-867c-c303718c948a/6ae6c9a90a75f.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
    "t": "Sat 11:56 p.m.",
    "iso": "2026-11-01T03:56:49+00:00",
    "title": "Haley Stevens advised to stay away from Abdul El-Sayed campaign events to limit ‘distractions’",
@@ -2661,15 +2569,48 @@
    "img": "https://www.ctvnews.ca/resizer/v2/NE2TJO7XV5O5SM2F5PQBD2KNLY.jpg?smart=true&auth=efc68f136a6543b82c3addf4c0497c6bd334ca17b163924591dcefc3f1786ec9&width=1200&height=630"
   },
   {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Sun 1:30 a.m.",
+   "iso": "2026-11-01T06:30:59+00:00",
+   "title": "Shops looted as German cost of living protests turn violent",
+   "summary": "The protests in cities across Germany - including Berlin, Hamburg and Frankfurt - came on the same day hundreds of thousands also protested in France.",
+   "outlet": "BBC News",
+   "url": "https://www.bbc.co.uk/news/articles/cqj34gnd3n30o?at_medium=RSS&at_campaign=rss",
+   "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/d1d6/live/e39b2030-d58f-11f1-b151-73ae9f7607e8.jpg"
+  },
+  {
    "desk": "world",
    "pic": "globe",
-   "t": "Sun 1:03 a.m.",
-   "iso": "2026-11-01T06:03:57+00:00",
-   "title": "Democrats are used to heartbreak in Texas - could Talarico turn the tide?",
-   "summary": "The state's $500m Senate race may be the most closely watched in the US midterms, and is about far more than control of Congress.",
-   "outlet": "BBC News",
-   "url": "https://www.bbc.co.uk/news/articles/cmy0r2y6zeddo?at_medium=RSS&at_campaign=rss",
-   "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/f303/live/84cce500-d54b-11f1-bcb7-8f812b44c2e5.jpg"
+   "t": "Sun 1:26 a.m.",
+   "iso": "2026-11-01T06:26:05+00:00",
+   "title": "Hooray for Houdini: Budapest celebrates 100th anniversary of escape artist's death",
+   "summary": "An event honouring the greatest escape artist and most influential magician of all time has brought Harry Houdini's only living descendant, his brother's grandchild, to Budapest. The centenary for the former \"King of Shackles\" is also being celebrated by a film festival and an artwork.",
+   "outlet": "Euronews",
+   "url": "https://www.euronews.com/2026/11/01/hooray-for-houdini-budapest-celebrates-100th-anniversary-of-escape-artists-death",
+   "img": "https://images.euronews.com/articles/stories/09/97/30/10/1200x675_cmsv2_8be15daa-1678-5146-ab03-d67219145fa5-9973010.jpg"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Sun 1:24 a.m.",
+   "iso": "2026-11-01T06:24:07+00:00",
+   "title": "For vegans, it’s not just what’s on the dinner plate, but also what happens after the dinner date",
+   "summary": "AMSTERDAM (AP) — Worries about the environment and concerns about animal welfare are on the rise, and on World Vegan Day, some are looking for alternatives not just at the dining table but also in the bedroom.",
+   "outlet": "The Canadian Press (via Winnipeg Free Press)",
+   "url": "https://www.winnipegfreepress.com/arts-and-life/life/2026/11/01/for-vegans-its-not-just-whats-on-the-dinner-plate-but-also-what-happens-after-the-dinner-date",
+   "img": ""
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Sun 1:20 a.m.",
+   "iso": "2026-11-01T06:20:58+00:00",
+   "title": "Indian forces tighten security in Delhi ahead of big opposition protest",
+   "summary": "Opposition says hundreds of thousands of people expected to participate in march demanding election chief resign over voter list changes",
+   "outlet": "The Guardian",
+   "url": "https://www.theguardian.com/world/2026/nov/01/india-opposition-protest-rally-delhi",
+   "img": "https://i.guim.co.uk/img/media/d60e9fd994f652f80f1c66f36e90440bb9f71ccd/1155_169_4342_3473/master/4342.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=1e8e741759ceb759391b64f10e2f3046"
   },
   {
    "desk": "business",
@@ -2681,17 +2622,6 @@
    "outlet": "The Guardian",
    "url": "https://www.theguardian.com/society/2026/nov/01/high-street-slot-farms-budget-tax-rise-business-rates-bingo-licence-loophole",
    "img": "https://i.guim.co.uk/img/media/74447e5d4f5ad2b62edb20f02734b1ad2e4db383/719_0_6713_5373/master/6713.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=710f1d4bf36886cd1f9d3d50d80a6edc"
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Sat 9:59 p.m.",
-   "iso": "2026-11-01T01:59:57+00:00",
-   "title": "Shops looted as German cost of living protests turn violent",
-   "summary": "Police in Frankfurt say \"violent riots\" took place in the city centre, with unrest also reported in Berlin, Hamburg and Cologne.",
-   "outlet": "BBC News",
-   "url": "https://www.bbc.co.uk/news/articles/cqj34gnd3n30o?at_medium=RSS&at_campaign=rss",
-   "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/d1d6/live/e39b2030-d58f-11f1-b151-73ae9f7607e8.jpg"
   },
   {
    "desk": "business",
@@ -2802,7 +2732,7 @@
     "url": "https://www.youtube.com/watch?v=O_xDTLIv-FI",
     "img": "https://i.ytimg.com/vi/O_xDTLIv-FI/hqdefault.jpg",
     "story": "Heidi Klum reveals Halloween costume as her iconic party mar",
-    "watching": "274",
+    "watching": "265",
     "reports": [
      {
       "outlet": "CTV News",
@@ -2977,78 +2907,6 @@
      "url": "https://www.atlanticcouncil.org/insight-impact/in-the-news/chalecki-quoted-in-washington-tariff-trade-letter-on-the-uss-use-of-smoot-hawley-law-to-impose-tariffs-on-canada/"
     }
    ]
-  },
-  "auto-c0889af7": {
-   "ties": [
-    "Canada and the EU"
-   ],
-   "stories": [
-    {
-     "t": "Fri 8:30 p.m.",
-     "iso": "2026-10-31T00:30:38+00:00",
-     "outlet": "Prime Minister of Canada",
-     "title": "Prime Minister Carney delivers remarks to conclude the Canada-European Union Summit",
-     "url": "https://www.pm.gc.ca/en/news/speeches/2026/10/30/prime-minister-carney-delivers-remarks-conclude-canada-european-union",
-     "tie": "Canada and the EU"
-    },
-    {
-     "t": "Fri 7:34 p.m.",
-     "iso": "2026-10-30T23:34:48+00:00",
-     "outlet": "CP24",
-     "title": "Carney pursuing ‘associate’ EU membership",
-     "url": "https://www.cp24.com/news/canada/2026/10/30/carney-pursuing-associate-eu-membership/",
-     "tie": "Canada and the EU"
-    },
-    {
-     "t": "Fri 7:27 p.m.",
-     "iso": "2026-10-30T23:27:23+00:00",
-     "outlet": "Canada's National Observer",
-     "title": "Canada, EU launch 'alliance for the future' with critical minerals investment",
-     "url": "https://www.nationalobserver.com/2026/10/30/news/canada-eu-launch-alliance-future-critical-minerals-investment",
-     "tie": "Canada and the EU"
-    },
-    {
-     "t": "Fri 7:26 p.m.",
-     "iso": "2026-10-30T23:26:05+00:00",
-     "outlet": "Canada's National Observer",
-     "title": "Canada’s EU deal opens doors, and these companies could cash in",
-     "url": "https://www.nationalobserver.com/2026/10/30/analysis/canadas-eu-deal-opens-doors-these-companies-could-cash",
-     "tie": "Canada and the EU"
-    },
-    {
-     "t": "Fri 6:20 p.m.",
-     "iso": "2026-10-30T22:20:36+00:00",
-     "outlet": "CP24",
-     "title": "How Canada's new pact with the European Union might affect you",
-     "url": "https://www.cp24.com/news/canada/2026/10/30/how-canadas-new-pact-with-the-european-union-might-affect-you/",
-     "tie": "Canada and the EU"
-    },
-    {
-     "t": "Fri 5:41 p.m.",
-     "iso": "2026-10-30T21:41:25+00:00",
-     "outlet": "CBC News",
-     "title": "Canada finding 'solutions' on EU carbon tariff threat: Carney",
-     "url": "https://www.cbc.ca/news/politics/canada-eu-summit-carbon-tariff-threat-carney-von-der-leyen-9.7403599?cmp=rss",
-     "tie": "Canada and the EU"
-    },
-    {
-     "t": "Fri 4:58 p.m.",
-     "iso": "2026-10-30T20:58:10+00:00",
-     "outlet": "BNN Bloomberg",
-     "title": "Canada, European Union close Montreal summit with ‘alliance for the future’ pact",
-     "url": "https://www.bnnbloomberg.ca/business/politics/2026/10/30/canada-european-union-close-montreal-summit-with-alliance-for-the-future-pact/",
-     "tie": "Canada and the EU"
-    },
-    {
-     "t": "Fri 4:20 p.m.",
-     "iso": "2026-10-30T20:20:29+00:00",
-     "outlet": "The Logic",
-     "title": "Canada and EU announce ‘ever-closer association’ to bolster economic security",
-     "url": "https://thelogic.co/news/canada-eu-security-measures/",
-     "tie": "Canada and the EU"
-    }
-   ],
-   "views": []
   }
  },
  "canangle": {
@@ -3294,7 +3152,7 @@
   "https://www.pbs.org/newshour/politics/attorneys-for-alaska-say-meritless-trump-demand-to-set-aside-senate-ballots-not-even-possible": {
    "story": "Attorneys for Alaska say 'meritless' Trump demand to set aside Senate ballots 'not even possible'",
    "us": true,
-   "specific": 5,
+   "specific": 4,
    "stories": [
     {
      "t": "Sat 1:00 a.m.",
@@ -3333,13 +3191,13 @@
      "tie": ""
     },
     {
-     "t": "Thu 1:00 p.m.",
-     "iso": "2026-10-29T17:00:00+00:00",
-     "outlet": "Toronto Star",
-     "title": "Ontario deficit hits record $16.9B as Trump tariffs batter economy",
-     "url": "https://www.thestar.com/politics/provincial/ontario-deficit-hits-record-16-9b-as-trump-tariffs-batter-economy/article_888dcdb2-a46e-4677-9331-0c0f2e7d2d17.html",
+     "t": "Sat 1:44 p.m.",
+     "iso": "2026-10-31T17:44:40+00:00",
+     "outlet": "CTV News",
+     "title": "Carney ramps up trade diversification efforts with Canada-U.S. deal still out",
+     "url": "https://www.ctvnews.ca/world/trumps-tariffs/article/carney-ramps-up-trade-diversification-efforts-with-canada-us-deal-still-out/",
      "ca": true,
-     "tie": ""
+     "tie": "Canada and the U.S."
     }
    ],
    "official": [],
