@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-01T01:11:23.184022+00:00",
- "checkedLabel": "Sat 9:11 p.m.",
+ "checked": "2026-11-01T01:21:22.987199+00:00",
+ "checkedLabel": "Sat 9:21 p.m.",
  "stories": [
   {
    "key": "top",
@@ -50,15 +50,11 @@
     {
      "t": "Sat 1:14 p.m.",
      "iso": "2026-10-31T17:14:37+00:00",
-     "outlet": "CityNews Winnipeg",
-     "title": "Dozens arrested outside US Embassy in London for supporting proscribed pro-Palestinian group",
-     "url": "https://winnipeg.citynews.ca/2026/10/31/dozens-arrested-outside-us-embassy-in-london-for-supporting-proscribed-pro-palestinian-group/",
+     "outlet": "Toronto Star",
+     "title": "London police arrest 139 people outside US Embassy for supporting banned pro-Palestinian group",
+     "url": "https://www.thestar.com/news/world/europe/dozens-arrested-outside-us-embassy-in-london-for-supporting-proscribed-pro-palestinian-group/article_7c8e756b-d7ba-5026-a154-a77d0b130286.html",
      "primary": false,
      "copies": [
-      {
-       "outlet": "CityNews",
-       "url": "https://toronto.citynews.ca/2026/10/31/dozens-arrested-outside-us-embassy-in-london-for-supporting-proscribed-pro-palestinian-group/"
-      },
       {
        "outlet": "CTV News",
        "url": "https://www.ctvnews.ca/world/article/london-police-arrest-139-people-outside-us-embassy-for-supporting-banned-pro-palestinian-group/"
@@ -71,6 +67,14 @@
      "outlet": "The Guardian",
      "title": "Almost 140 arrested at protest against Palestine Action ban outside US embassy in London",
      "url": "https://www.theguardian.com/uk-news/2026/oct/31/protest-against-palestine-action-ban-outside-us-embassy-in-london",
+     "primary": false
+    },
+    {
+     "t": "Sat 1:14 p.m.",
+     "iso": "2026-10-31T17:14:37+00:00",
+     "outlet": "CityNews Winnipeg",
+     "title": "Dozens arrested outside US Embassy in London for supporting proscribed pro-Palestinian group",
+     "url": "https://winnipeg.citynews.ca/2026/10/31/dozens-arrested-outside-us-embassy-in-london-for-supporting-proscribed-pro-palestinian-group/",
      "primary": false
     }
    ],
@@ -112,6 +116,15 @@
    "CBS News",
    "https://www.cbsnews.com/news/residents-evacuated-oleshky-arrive-ukraine-temporary-us-brokered-ceasefire/",
    "2026-11-01T01:05:02+00:00",
+   1
+  ],
+  [
+   "Sat 9:03 p.m.",
+   "Latest",
+   "Former nurse finds new calling caring for the dead",
+   "CBS News",
+   "https://www.cbsnews.com/video/former-nurse-finds-new-calling-caring-for-the-dead/",
+   "2026-11-01T01:03:52+00:00",
    1
   ],
   [
@@ -311,15 +324,6 @@
    "https://www.bbc.co.uk/news/articles/c60qk92dvlwgo?at_medium=RSS&at_campaign=rss",
    "2026-11-01T00:12:07+00:00",
    1
-  ],
-  [
-   "Sat 8:02 p.m.",
-   "Latest",
-   "Man seriously injured in motorcycle crash near The Junction",
-   "CTV News",
-   "https://www.ctvnews.ca/toronto/article/man-seriously-injured-in-motorcycle-crash-near-the-junction/",
-   "2026-11-01T00:02:50+00:00",
-   2
   ]
  ],
  "blogs": [
@@ -365,13 +369,21 @@
    "theme": "Canada and the U.S."
   },
   {
-   "score": 15,
+   "score": 16,
    "title": "Judge throws out Trump suit against Wall Street Journal over Epstein letter",
    "url": "https://www.cbc.ca/news/world/trump-jeffrey-epstein-lawsuit-dismissed-9.7404357",
-   "outlets": 10,
+   "outlets": 11,
    "why": [
     "CBC News front #5"
    ],
+   "theme": ""
+  },
+  {
+   "score": 11,
+   "title": "Video shows immigration agents detaining man in North Hollywood",
+   "url": "https://www.cbsnews.com/news/north-hollywood-ice-arrest-gun-pointed-at-bystander/",
+   "outlets": 9,
+   "why": [],
    "theme": ""
   },
   {
@@ -385,17 +397,17 @@
    "theme": ""
   },
   {
-   "score": 9,
-   "title": "French police clash with some protesters again as demonstrations continue",
-   "url": "https://www.cbsnews.com/news/france-protests-paris-police-clash-demonstrators-halloween/",
-   "outlets": 7,
+   "score": 10,
+   "title": "Alaska Senate candidate denies knowing about alleged plot to put two Dan Sullivans on ballot",
+   "url": "https://www.bbc.co.uk/news/articles/cmwyq2gg1yzzo?at_medium=RSS&at_campaign=rss",
+   "outlets": 8,
    "why": [],
    "theme": ""
   },
   {
    "score": 9,
-   "title": "Alaska Senate candidate denies knowing about alleged plot to put two Dan Sullivans on ballot",
-   "url": "https://www.bbc.co.uk/news/articles/cmwyq2gg1yzzo?at_medium=RSS&at_campaign=rss",
+   "title": "French police clash with some protesters again as demonstrations continue",
+   "url": "https://www.cbsnews.com/news/france-protests-paris-police-clash-demonstrators-halloween/",
    "outlets": 7,
    "why": [],
    "theme": ""
@@ -429,19 +441,13 @@
    "theme": ""
   },
   {
-   "score": 7,
-   "title": "Dupuis seventh in women's short program at Figure Skating Grand Prix in Kelowna",
-   "url": "https://www.timescolonist.com/national-sports/dupuis-seventh-in-womens-short-program-at-figure-skating-grand-prix-in-kelowna-12964993",
-   "outlets": 5,
-   "why": [],
-   "theme": ""
-  },
-  {
-   "score": 6,
-   "title": "Residents evacuated from Russia-occupied city back in Ukraine",
-   "url": "https://www.cbsnews.com/news/residents-evacuated-oleshky-arrive-ukraine-temporary-us-brokered-ceasefire/",
-   "outlets": 4,
-   "why": [],
+   "score": 5,
+   "title": "How I faced down the ‘coalition coup’ — by Stephen Harper",
+   "url": "https://nationalpost.com/longreads/exclusive-excerpt-stephen-harper-memoir/",
+   "outlets": 0,
+   "why": [
+    "National Newswatch #2"
+   ],
    "theme": ""
   }
  ],
@@ -634,13 +640,13 @@
    {
     "key": "auto-0bdb41f6",
     "words": [
-     "senate",
      "alaska",
+     "senate",
      "dan"
     ],
-    "score": 9,
+    "score": 10,
     "outlets": 5,
-    "carriers": 6,
+    "carriers": 7,
     "tag": "Breaking",
     "title": "Alaska Senate candidate denies knowing about alleged plot to put two Dan Sullivans on ballot",
     "url": "https://www.bbc.co.uk/news/articles/cmwyq2gg1yzzo?at_medium=RSS&at_campaign=rss",
@@ -713,6 +719,14 @@
       "title": "Attorneys for Alaska say 'meritless' Trump demand to set aside Senate ballots 'not even possible'",
       "url": "https://www.timescolonist.com/world-news/attorneys-for-alaska-say-meritless-trump-demand-to-set-aside-senate-ballots-not-even-possible-12964630",
       "desc": "ANCHORAGE, Alaska (AP) — Alaska's Republican-run state government on Saturday urged a federal judge to dismiss a lawsuit filed at President Donald Trump's direction to stop the certification of a possible Democratic win in that state's pivotal U.S."
+     },
+     {
+      "t": "Sat 3:56 p.m.",
+      "iso": "2026-10-31T19:56:00+00:00",
+      "outlet": "Toronto Star",
+      "title": "Attorneys for Alaska say 'meritless' Trump demand to set aside Senate ballots 'not even possible'",
+      "url": "https://www.thestar.com/news/world/united-states/attorneys-for-alaska-say-meritless-trump-demand-to-set-aside-senate-ballots-not-even-possible/article_daecc6d0-6b29-5866-842d-3e655fd657ad.html",
+      "desc": ""
      }
     ],
     "sources": [
@@ -753,12 +767,17 @@
      {
       "t": "Sat 3:56 p.m.",
       "primary": false,
-      "outlet": "Times Colonist",
+      "outlet": "Toronto Star",
       "title": "Attorneys for Alaska say 'meritless' Trump demand to set aside Senate ballots 'not even possible'",
-      "url": "https://www.timescolonist.com/world-news/attorneys-for-alaska-say-meritless-trump-demand-to-set-aside-senate-ballots-not-even-possible-12964630",
-      "desc": "ANCHORAGE, Alaska (AP) — Alaska's Republican-run state government on Saturday urged a federal judge to dismiss a lawsuit filed at President Donald Trump's direction to stop the certification of a possible Democratic win in that state's pivotal U.S.",
+      "url": "https://www.thestar.com/news/world/united-states/attorneys-for-alaska-say-meritless-trump-demand-to-set-aside-senate-ballots-not-even-possible/article_daecc6d0-6b29-5866-842d-3e655fd657ad.html",
+      "desc": "ANCHORAGE, Alaska (AP) — Alaska's Republican-run state government on Saturday urged a federal judge to dismiss a lawsuit filed at President Donald Trump's direction to stop the certification of a",
       "wire": "The Associated Press",
       "by": [
+       {
+        "outlet": "Toronto Star",
+        "src": "The Associated Press",
+        "byline": "\"Nicholas Riccardi And Becky Bohrer The Associated Press\" \"Nicholas Riccardi"
+       },
        {
         "outlet": "Times Colonist",
         "src": "The Associated Press",
@@ -771,6 +790,10 @@
        }
       ],
       "copies": [
+       {
+        "outlet": "Times Colonist",
+        "url": "https://www.timescolonist.com/world-news/attorneys-for-alaska-say-meritless-trump-demand-to-set-aside-senate-ballots-not-even-possible-12964630"
+       },
        {
         "outlet": "PBS NewsHour",
         "url": "https://www.pbs.org/newshour/politics/attorneys-for-alaska-say-meritless-trump-demand-to-set-aside-senate-ballots-not-even-possible"
@@ -820,8 +843,8 @@
     "popular": 0,
     "us_election": true,
     "judgment": "national",
-    "judgment_why": "National: affects many people; carried by a few newsrooms.",
-    "weight": 35.0,
+    "judgment_why": "National: affects many people; carried beyond one city.",
+    "weight": 36.5,
     "videos": [
      {
       "net": "CBS News",
@@ -858,226 +881,10 @@
     ]
    },
    {
-    "key": "auto-dd12e8f3",
-    "words": [
-     "epstein"
-    ],
-    "score": 15,
-    "outlets": 4,
-    "carriers": 8,
-    "tag": "Breaking",
-    "title": "Trump loses legal battle over Epstein-linked Wall Street Journal case",
-    "url": "https://www.aljazeera.com/news/2026/10/31/trump-loses-legal-battle-over-epstein-linked-wall-street-journal-case?traffic_source=rss",
-    "outlet": "Al Jazeera",
-    "t": "Sat 6:36 p.m.",
-    "iso": "2026-10-31T22:36:41+00:00",
-    "summary": "Judge permanently drops Trump's $10bn WSJ lawsuit, ruling he failed to prove actual malice in the newspaper's reporting.",
-    "first": {
-     "outlet": "NBC News",
-     "url": "https://www.nbcnews.com/politics/donald-trump/judge-dismisses-trump-10-billion-defamation-suit-jeffrey-epstein-wsj-rcna591049",
-     "t": "Sat 5:09 p.m.",
-     "title": "Judge dismisses Trump’s $10 billion defamation suit over Jeffrey Epstein birthday card story",
-     "iso": "2026-10-31T21:09:34+00:00"
-    },
-    "newest": "2026-11-01T00:24:31+00:00",
-    "photo": {
-     "src": "live/img/auto-dd12e8f3-cb4523bbb9.jpg",
-     "orig": "https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6ae65b07d012e-1793481479.jpg?resize=1920%2C1440",
-     "caption": "Trump loses legal battle over Epstein-linked Wall Street Journal case. — via Al Jazeera",
-     "alt": "Trump loses legal battle over Epstein-linked Wall Street Journal case",
-     "outlet": "Al Jazeera",
-     "url": "https://www.aljazeera.com/news/2026/10/31/trump-loses-legal-battle-over-epstein-linked-wall-street-journal-case?traffic_source=rss"
-    },
-    "independent": 4,
-    "reports": [
-     {
-      "t": "Sat 8:24 p.m.",
-      "iso": "2026-11-01T00:24:31+00:00",
-      "outlet": "Toronto Sun",
-      "title": "U.S. judge dismisses Trump lawsuit against Wall Steet Journal over Epstein letter",
-      "url": "https://torontosun.com/news/world/u-s-judge-dismisses-trump-lawsuit-against-wall-steet-journal-over-epstein-letter",
-      "desc": ""
-     },
-     {
-      "t": "Sat 6:36 p.m.",
-      "iso": "2026-10-31T22:36:41+00:00",
-      "outlet": "Al Jazeera",
-      "title": "Trump loses legal battle over Epstein-linked Wall Street Journal case",
-      "url": "https://www.aljazeera.com/news/2026/10/31/trump-loses-legal-battle-over-epstein-linked-wall-street-journal-case?traffic_source=rss",
-      "desc": "Judge permanently drops Trump's $10bn WSJ lawsuit, ruling he failed to prove actual malice in the newspaper's reporting."
-     },
-     {
-      "t": "Sat 5:54 p.m.",
-      "iso": "2026-10-31T21:54:00+00:00",
-      "outlet": "Times Colonist",
-      "title": "'Grasping at straws': Judge dismisses Trump suit against Wall Street Journal over Epstein letter",
-      "url": "https://www.timescolonist.com/world-news/grasping-at-straws-judge-dismisses-trump-suit-against-wall-street-journal-over-epstein-letter-12964629",
-      "desc": "Saying the president was “grasping at straws,” a federal judge on Saturday threw out Donald Trump’s $10 billion lawsuit against The Wall Street Journal and media mogul Rupert Murdoch over a story reporting on his ties to Jeffrey Epstein . U.S."
-     },
-     {
-      "t": "Sat 5:44 p.m.",
-      "iso": "2026-10-31T21:44:38.427000+00:00",
-      "outlet": "CBC News",
-      "title": "Judge throws out Trump suit against Wall Street Journal over Epstein letter",
-      "url": "https://www.cbc.ca/news/world/trump-jeffrey-epstein-lawsuit-dismissed-9.7404357",
-      "desc": "Saying the president was \"grasping at straws,\" a U.S. federal judge on Saturday threw out Donald Trump's $10-billion lawsuit against the Wall Street Journal and media mogul Rupert Murdoch over a story reporting on his ties to wealthy financier Jeffrey Epstein."
-     },
-     {
-      "t": "Sat 5:32 p.m.",
-      "iso": "2026-10-31T21:32:54+00:00",
-      "outlet": "PBS NewsHour",
-      "title": "Judge dismisses Trump suit against Wall Street Journal over Epstein birthday letter",
-      "url": "https://www.pbs.org/newshour/politics/judge-dismisses-trump-suit-against-wall-street-journal-over-epstein-birthday-letter",
-      "desc": "U.S. District Judge Darrin Gayles in Miami dismissed the suit with prejudice, ruling that the president did not prove the defendants made defamatory statements with actual malice as required by law."
-     },
-     {
-      "t": "Sat 5:22 p.m.",
-      "iso": "2026-10-31T21:22:14+00:00",
-      "outlet": "CTV News",
-      "title": "Trump lawsuit against Wall Street Journal over Epstein birthday letter is dismissed with prejudice",
-      "url": "https://www.ctvnews.ca/world/article/trump-lawsuit-against-wall-street-journal-over-epstein-birthday-letter-is-dismissed-with-prejudice/",
-      "desc": "A U.S. federal judge on Saturday threw out U.S. President Donald Trump’s multibillion-dollar lawsuit against The Wall Street Journal and media mogul Rupert Murdoch over a story reporting on his ties to wealthy financier Jeffrey Epstein."
-     },
-     {
-      "t": "Sat 5:22 p.m.",
-      "iso": "2026-10-31T21:22:14+00:00",
-      "outlet": "CP24",
-      "title": "Trump lawsuit against Wall Street Journal over Epstein birthday letter is dismissed with prejudice",
-      "url": "https://www.cp24.com/news/world/2026/10/31/trump-lawsuit-against-wall-street-journal-over-epstein-birthday-letter-is-dismissed-with-prejudice/",
-      "desc": ""
-     },
-     {
-      "t": "Sat 5:09 p.m.",
-      "iso": "2026-10-31T21:09:34+00:00",
-      "outlet": "NBC News",
-      "title": "Judge dismisses Trump’s $10 billion defamation suit over Jeffrey Epstein birthday card story",
-      "url": "https://www.nbcnews.com/politics/donald-trump/judge-dismisses-trump-10-billion-defamation-suit-jeffrey-epstein-wsj-rcna591049",
-      "desc": "Trump said he was defamed by a Wall Street Journal report about a 50th-birthday card to Epstein that the Journal attributed to Trump."
-     }
-    ],
-    "sources": [
-     {
-      "t": "Sat 8:24 p.m.",
-      "primary": false,
-      "outlet": "Toronto Sun",
-      "title": "U.S. judge dismisses Trump lawsuit against Wall Steet Journal over Epstein letter",
-      "url": "https://torontosun.com/news/world/u-s-judge-dismisses-trump-lawsuit-against-wall-steet-journal-over-epstein-letter",
-      "desc": "",
-      "wire": "AFP",
-      "by": [
-       {
-        "outlet": "Toronto Sun",
-        "src": "AFP",
-        "byline": "[{\"@type\": \"Person\", \"name\": \"AFP\", \"alternateName\":"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Sat 6:36 p.m.",
-      "primary": false,
-      "outlet": "Al Jazeera",
-      "title": "Trump loses legal battle over Epstein-linked Wall Street Journal case",
-      "url": "https://www.aljazeera.com/news/2026/10/31/trump-loses-legal-battle-over-epstein-linked-wall-street-journal-case?traffic_source=rss",
-      "desc": "Judge permanently drops Trump's $10bn WSJ lawsuit, ruling he failed to prove actual malice in the newspaper's reporting.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Al Jazeera",
-        "src": "Al Jazeera",
-        "byline": "{\"@type\":\"Person\",\"name\":\"Al Jazeera Staff\",} Al Jazeera Staff Add Al Jazeera on Google By "
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Sat 5:22 p.m.",
-      "primary": false,
-      "outlet": "CTV News",
-      "title": "Trump lawsuit against Wall Street Journal over Epstein birthday letter is dismissed with prejudice",
-      "url": "https://www.ctvnews.ca/world/article/trump-lawsuit-against-wall-street-journal-over-epstein-birthday-letter-is-dismissed-with-prejudice/",
-      "desc": "A U.S. federal judge on Saturday threw out U.S. President Donald Trump’s multibillion-dollar lawsuit against The Wall Street Journal and media mogul Rupert Murdoch over a story reporting on his ties to wealthy financier Jeffrey Epstein.",
-      "wire": "The Canadian Press",
-      "by": [
-       {
-        "outlet": "CTV News",
-        "src": "The Canadian Press",
-        "byline": "\"Jennifer Heudes\" \"Paul Hollingsworth\" \"The Canadian Press\" \"Charles Lefebvre\""
-       },
-       {
-        "outlet": "CP24",
-        "src": "The Associated Press",
-        "byline": "\"@type\": \"Person\",\n      \"name\": \"The  Associated Press\",\n      \n    }\n  ]"
-       },
-       {
-        "outlet": "PBS NewsHour",
-        "src": "The Associated Press",
-        "byline": "Dave Collins, Associated Press"
-       },
-       {
-        "outlet": "CBC News",
-        "src": "The Associated Press",
-        "byline": "\"photoURL\":\"\"},\"recentContent\":{}} \"The Associated Press\" \"Reuters\" \"Reuters"
-       },
-       {
-        "outlet": "Times Colonist",
-        "src": "The Associated Press",
-        "byline": "\"Dave Collins, The Associated Press\" \r\n             \r\nD"
-       }
-      ],
-      "copies": [
-       {
-        "outlet": "CP24",
-        "url": "https://www.cp24.com/news/world/2026/10/31/trump-lawsuit-against-wall-street-journal-over-epstein-birthday-letter-is-dismissed-with-prejudice/"
-       },
-       {
-        "outlet": "PBS NewsHour",
-        "url": "https://www.pbs.org/newshour/politics/judge-dismisses-trump-suit-against-wall-street-journal-over-epstein-birthday-letter"
-       },
-       {
-        "outlet": "CBC News",
-        "url": "https://www.cbc.ca/news/world/trump-jeffrey-epstein-lawsuit-dismissed-9.7404357"
-       },
-       {
-        "outlet": "Times Colonist",
-        "url": "https://www.timescolonist.com/world-news/grasping-at-straws-judge-dismisses-trump-suit-against-wall-street-journal-over-epstein-letter-12964629"
-       }
-      ]
-     },
-     {
-      "t": "Sat 5:09 p.m.",
-      "primary": false,
-      "outlet": "NBC News",
-      "title": "Judge dismisses Trump’s $10 billion defamation suit over Jeffrey Epstein birthday card story",
-      "url": "https://www.nbcnews.com/politics/donald-trump/judge-dismisses-trump-10-billion-defamation-suit-jeffrey-epstein-wsj-rcna591049",
-      "desc": "Trump said he was defamed by a Wall Street Journal report about a 50th-birthday card to Epstein that the Journal attributed to Trump.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "NBC News",
-        "src": "NBC News",
-        "byline": "own staff: Reporter"
-       }
-      ],
-      "copies": []
-     }
-    ],
-    "replaces_top": false,
-    "events": [],
-    "theme": "",
-    "canada": "none",
-    "canus": false,
-    "popular": 0,
-    "us_election": false,
-    "judgment": "national",
-    "judgment_why": "National: affects some people; carried across the country (national desks).",
-    "weight": 37.0
-   },
-   {
     "key": "auto-c0889af7",
     "words": [
-     "membership",
      "short-term",
+     "membership",
      "associate",
      "project",
      "expert",
@@ -1133,7 +940,7 @@
       "outlet": "Toronto Star",
       "title": "Canadian students would get access to EU schools under new deal. Here's what we know",
       "url": "https://www.thestar.com/news/canada/canadian-students-would-get-access-to-eu-schools-under-new-deal-here-s-what-we-know/article_96e0827a-39c6-4a90-af46-b2e6af609cfe.html",
-      "desc": ""
+      "desc": "Students could get access to exchanges, academic opportunities through participation in the funding program."
      },
      {
       "t": "Sat 6:00 a.m.",
@@ -1221,13 +1028,13 @@
       "outlet": "Toronto Star",
       "title": "Canadian students would get access to EU schools under new deal. Here's what we know",
       "url": "https://www.thestar.com/news/canada/canadian-students-would-get-access-to-eu-schools-under-new-deal-here-s-what-we-know/article_96e0827a-39c6-4a90-af46-b2e6af609cfe.html",
-      "desc": "",
+      "desc": "Students could get access to exchanges, academic opportunities through participation in the funding program.",
       "wire": "",
       "by": [
        {
         "outlet": "Toronto Star",
         "src": "Torstar",
-        "byline": ""
+        "byline": "own staff: Reporter"
        }
       ],
       "copies": []
@@ -1238,41 +1045,41 @@
     "theme": "Canada and the EU",
     "canada": "canadian",
     "canus": false,
-    "popular": 0,
+    "popular": 4,
     "us_election": false,
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (3 cities).",
-    "weight": 21.0,
+    "weight": 25.0,
     "videos": [
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=u-6zitQGoNg",
-      "title": "Beyond trade: Key takeaways from the Canada-EU summit in Montreal",
-      "img": "https://i.ytimg.com/vi/u-6zitQGoNg/hqdefault.jpg",
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=cC2KHglDAVE",
+      "title": "Will Canadians get behind Canada's pursuit of associate membership in the EU? | Power & Politics",
+      "img": "https://i.ytimg.com/vi/cC2KHglDAVE/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=KH6-HowaSjs",
-      "title": "Quebec premier’s boycott of Canada-EU summit turns heads",
-      "img": "https://i.ytimg.com/vi/KH6-HowaSjs/hqdefault.jpg",
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=H5AYatiKbfU",
+      "title": "What can we expect from the Canada-EU 'alliance for the future’? | Power & Politics",
+      "img": "https://i.ytimg.com/vi/H5AYatiKbfU/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=CqqXhieYYG0",
-      "title": "Global National: Oct. 29, 2026 | Is Canada joining the EU?",
-      "img": "https://i.ytimg.com/vi/CqqXhieYYG0/hqdefault.jpg",
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=9ZxaAwOurOg",
+      "title": "Reporter Roundtable: Quebec Premier boycotts Canada-EU summit | Power & Politics",
+      "img": "https://i.ytimg.com/vi/9ZxaAwOurOg/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "CPAC",
-      "url": "https://www.youtube.com/watch?v=Le1o0pArYn4",
-      "title": "PM Carney meets with European Union leaders in Montréal – October 30, 2026",
-      "img": "https://i.ytimg.com/vi/Le1o0pArYn4/hqdefault.jpg",
+      "net": "CityNews",
+      "url": "https://www.youtube.com/watch?v=tQUbP2UiKPA",
+      "title": "Canada Post resumes parcel service at all EU countries",
+      "img": "https://i.ytimg.com/vi/tQUbP2UiKPA/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1285,44 +1092,27 @@
     "url": "https://www.bbc.co.uk/news/articles/cmwyq2gg1yzzo?at_medium=RSS&at_campaign=rss",
     "rank": 1,
     "live": "",
-    "weight": 35.0,
-    "score": 9,
+    "weight": 36.5,
+    "score": 10,
     "independent": 5,
     "most_read": 0,
     "canada": "tie",
     "theme": "",
     "top": true,
     "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
-    "carriers": 6,
+    "carriers": 7,
     "judgment": "national",
-    "why_judged": "National: affects many people; carried by a few newsrooms."
-   },
-   {
-    "title": "Trump loses legal battle over Epstein-linked Wall Street Journal case",
-    "url": "https://www.aljazeera.com/news/2026/10/31/trump-loses-legal-battle-over-epstein-linked-wall-street-journal-case?traffic_source=rss",
-    "rank": 2,
-    "live": "",
-    "weight": 37.0,
-    "score": 15,
-    "independent": 4,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": true,
-    "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
-    "carriers": 8,
-    "judgment": "national",
-    "why_judged": "National: affects some people; carried across the country (national desks)."
+    "why_judged": "National: affects many people; carried beyond one city."
    },
    {
     "title": "‘Associate’ EU membership for Canada not a ‘short-term’ project: expert",
     "url": "https://globalnews.ca/news/12128698/associate-eu-membership-for-canada/",
-    "rank": 3,
+    "rank": 2,
     "live": "",
-    "weight": 21.0,
+    "weight": 25.0,
     "score": 4,
     "independent": 2,
-    "most_read": 0,
+    "most_read": 4,
     "canada": "canadian",
     "theme": "Canada and the EU",
     "top": true,
@@ -1332,9 +1122,43 @@
     "why_judged": "National: affects many people; carried across the country (3 cities)."
    },
    {
+    "title": "Trump loses legal battle over Epstein-linked Wall Street Journal case",
+    "url": "https://www.aljazeera.com/news/2026/10/31/trump-loses-legal-battle-over-epstein-linked-wall-street-journal-case?traffic_source=rss",
+    "rank": 3,
+    "live": "",
+    "weight": 38.5,
+    "score": 16,
+    "independent": 4,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": false,
+    "rule": "No Canadian tie",
+    "carriers": 9,
+    "judgment": "national",
+    "why_judged": "National: affects some people; carried across the country (national desks)."
+   },
+   {
+    "title": "$6.3 billion Binance hack likely work of North Korea, experts say",
+    "url": "https://www.cbsnews.com/news/binance-hack-north-korea/",
+    "rank": 4,
+    "live": "",
+    "weight": 27.0,
+    "score": 11,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": false,
+    "rule": "No Canadian tie",
+    "carriers": 4,
+    "judgment": "national",
+    "why_judged": "National: affects some people; carried across the country (national desks)."
+   },
+   {
     "title": "El-Sayed asks fellow Democrat Stevens not to attend final campaign events",
     "url": "https://www.cbsnews.com/news/abdul-el-sayed-haley-stevens-feud-michigan-senate/",
-    "rank": 4,
+    "rank": 5,
     "live": "",
     "weight": 15.5,
     "score": 5,
@@ -1347,23 +1171,6 @@
     "carriers": 3,
     "judgment": "regional",
     "why_judged": "Regional: affects some people; carried by a few newsrooms."
-   },
-   {
-    "title": "$6.3 billion Binance hack likely work of North Korea, experts say",
-    "url": "https://www.cbsnews.com/news/binance-hack-north-korea/",
-    "rank": 5,
-    "live": "",
-    "weight": 13.5,
-    "score": 6,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "rule": "No Canadian tie",
-    "carriers": 3,
-    "judgment": "regional",
-    "why_judged": "Regional: affects some people; carried beyond one city."
    },
    {
     "title": "Canada is in the U.S. midterm spotlight. Will the results be a blessing or a curse?",
@@ -1396,17 +1203,12 @@
     "why": "not built: only 2 independent report(s) (5 sites)"
    },
    {
-    "title": "Dupuis seventh in women's short program at Figure Skating Grand Prix in Kelowna",
-    "score": 7,
-    "why": "not built: only 2 independent report(s) (3 sites)"
-   },
-   {
-    "title": "Residents evacuated from Russia-occupied city back in Ukraine",
-    "score": 6,
+    "title": "How I faced down the ‘coalition coup’ — by Stephen Harper",
+    "score": 5,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "How I faced down the ‘coalition coup’ — by Stephen Harper",
+    "title": "Residents evacuated from Russia-occupied city back in Ukraine",
     "score": 5,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
@@ -1416,14 +1218,23 @@
     "why": "not built: only 2 independent report(s) (3 sites)"
    },
    {
+    "title": "Dupuis seventh in women's short program at Figure Skating Grand Prix in Kelowna",
+    "score": 5,
+    "why": "not built: only 2 independent report(s) (3 sites)"
+   },
+   {
     "title": "Liberals jump ahead of Tories in fundraising as by-election calls loom",
     "score": 4,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
   ],
-  "top_n": 3,
+  "top_n": 2,
   "more": [],
   "passed_over": [
+   {
+    "title": "Trump loses legal battle over Epstein-linked Wall Street Journal case",
+    "url": "https://www.aljazeera.com/news/2026/10/31/trump-loses-legal-battle-over-epstein-linked-wall-street-journal-case?traffic_source=rss"
+   },
    {
     "title": "$6.3 billion Binance hack likely work of North Korea, experts say",
     "url": "https://www.cbsnews.com/news/binance-hack-north-korea/"
@@ -1537,7 +1348,7 @@
    "id": "q1VQ-EDCDLo",
    "r": "ca",
    "o": "APTN News",
-   "t": "Under the Evergreens: What happened to Dawn Carisse? | APTN Investigates",
+   "t": "Under the Evergreens: Disappearances at an Ontario psychiatric hospital | APTN Investigates",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=q1VQ-EDCDLo",
@@ -1880,6 +1691,34 @@
    "img": "https://i.ytimg.com/vi/RT5Ub6Qv-uo/hqdefault.jpg",
    "up": "2026-10-31",
    "added": "2026-11-01T00:35:23.407161+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "rJYuiIBp4X8",
+   "r": "us",
+   "o": "CNN",
+   "t": "How Trump could still interfere with voting",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=rJYuiIBp4X8",
+   "img": "https://i.ytimg.com/vi/rJYuiIBp4X8/hqdefault.jpg",
+   "up": "2026-10-31",
+   "added": "2026-11-01T01:21:22.987199+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "WGdsnNSmu3c",
+   "r": "us",
+   "o": "CNN",
+   "t": "TX & KS' historic swings, GOP's cratering odds & much more | Enten election roundup",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=WGdsnNSmu3c",
+   "img": "https://i.ytimg.com/vi/WGdsnNSmu3c/hqdefault.jpg",
+   "up": "2026-10-31",
+   "added": "2026-11-01T01:21:22.987199+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2420,8 +2259,8 @@
   "lines": [
    "Good evening. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
    "Judge dismisses Trump suit against Wall Street Journal over Epstein birthday letter, The Associated Press reports.",
+   "New York (AP) — The theft of billions of dollars from Binance within a matter of minutes, the biggest crypto heist in history, was orchestrated by North Korean hackers, the, The Associated Press reports.",
    "Attorneys for Alaska say ‘meritless’ Trump demand to set aside Senate ballots ‘not even possible’, The Associated Press reports.",
-   "FBI says North Korea behind $6 billion crypto theft from Binance, AFP reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
   ]
  },
@@ -2557,12 +2396,24 @@
  ],
  "mostread": {
   "sites": [
+   "Toronto Star",
    "Winnipeg Free Press",
    "Global News",
    "Nunatsiaq News",
    "Daily Hive"
   ],
   "list": [
+   {
+    "h": "Windsor’s Sandwich Town is booming as Americans flood in with money and apologies",
+    "u": "https://www.thestar.com/business/sandwich-town-feature/article_1a8539b1-aaae-4aa8-9a1b-e9d6d552ca28.html",
+    "o": [
+     [
+      "Toronto Star",
+      1,
+      "https://www.thestar.com/business/sandwich-town-feature/article_1a8539b1-aaae-4aa8-9a1b-e9d6d552ca28.html"
+     ]
+    ]
+   },
    {
     "h": "Walkout creates chaos at St. James Smitty’s",
     "u": "https://www.winnipegfreepress.com/breakingnews/2026/10/31/walkout-creates-chaos-at-st-james-smittys",
@@ -2608,6 +2459,17 @@
     ]
    },
    {
+    "h": "Canadian students would get access to EU schools under new deal. Here’s what we know",
+    "u": "https://www.thestar.com/news/canada/canadian-students-would-get-access-to-eu-schools-under-new-deal-here-s-what-we-know/article_96e0827a-39c6-4a90-af46-b2e6af609cfe.html",
+    "o": [
+     [
+      "Toronto Star",
+      2,
+      "https://www.thestar.com/news/canada/canadian-students-would-get-access-to-eu-schools-under-new-deal-here-s-what-we-know/article_96e0827a-39c6-4a90-af46-b2e6af609cfe.html"
+     ]
+    ]
+   },
+   {
     "h": "Judge halts construction on housing project across from Granite Curling Club until he rules on city’s approval",
     "u": "https://www.winnipegfreepress.com/business/2026/10/30/judge-halts-any-construction-on-housing-project-across-from-curling-club-until-he-rules-on-citys-approval",
     "o": [
@@ -2648,28 +2510,6 @@
       "Daily Hive",
       2,
       "https://dailyhive.com/vancouver/bc-homeowner-dispute-strata-basketball"
-     ]
-    ]
-   },
-   {
-    "h": "Brandon manufacturer says Canadian steel in demand, but high costs, long delivery times hit hard",
-    "u": "https://www.winnipegfreepress.com/business/2026/10/31/manufacturers-face-double-whammy",
-    "o": [
-     [
-      "Winnipeg Free Press",
-      3,
-      "https://www.winnipegfreepress.com/business/2026/10/31/manufacturers-face-double-whammy"
-     ]
-    ]
-   },
-   {
-    "h": "Will Russia be allowed at the World Juniors? Mixed messages after court ruling Canada Oct 30 5 min read",
-    "u": "https://globalnews.ca/news/12127311/hockey-canada-seeks-clarity-on-russias-return/",
-    "o": [
-     [
-      "Global News",
-      3,
-      "https://globalnews.ca/news/12127311/hockey-canada-seeks-clarity-on-russias-return/"
      ]
     ]
    }
@@ -2754,11 +2594,11 @@
    "city": "Ottawa",
    "tz": "America/Toronto",
    "world": false,
-   "w": "The vote",
-   "u": "https://www.ctvnews.ca/kitchener/article/liberal-party-announces-its-candidate-for-brantford-brant-south-byelection/",
-   "title": "Liberal Party announces its candidate for Brantford-Brant South byelection",
-   "outlet": "CTV News",
-   "t": "Sat 4:07 p.m.",
+   "w": "Winnipeg’s North End",
+   "u": "https://winnipeg.citynews.ca/2026/10/31/ottawa-funds-sewage-treatment-plant-upgrades-winnipeg/",
+   "title": "Ottawa commits $500m for sewage treatment plant upgrades in Winnipeg’s North End",
+   "outlet": "CityNews Winnipeg",
+   "t": "Sat 4:41 p.m.",
    "hot": false
   },
   {
@@ -3017,16 +2857,6 @@
      "exclusive": false
     },
     {
-     "t": "Thu 1:00 p.m.",
-     "iso": "2026-10-29T17:00:00+00:00",
-     "outlet": "Toronto Star",
-     "title": "Ontario deficit hits record $16.9B as Trump tariffs batter economy",
-     "url": "https://www.thestar.com/politics/provincial/ontario-deficit-hits-record-16-9b-as-trump-tariffs-batter-economy/article_888dcdb2-a46e-4677-9331-0c0f2e7d2d17.html",
-     "canada": true,
-     "paywall": false,
-     "exclusive": false
-    },
-    {
      "t": "Thu 5:45 a.m.",
      "iso": "2026-10-29T09:45:12+00:00",
      "outlet": "The Logic",
@@ -3035,6 +2865,15 @@
      "canada": true,
      "paywall": false,
      "exclusive": false
+    },
+    {
+     "t": "Wed 11:41 p.m.",
+     "iso": "2026-10-29T03:41:00+00:00",
+     "outlet": "The Hub",
+     "title": "Carney says Canada not ready to sign U.S. trade deal as midterms near",
+     "url": "https://thehub.ca/2026/10/29/carney-says-canada-not-ready-to-sign-u-s-trade-deal-as-midterms-near/",
+     "canada": true,
+     "paywall": false
     },
     {
      "t": "Sat 8:46 p.m.",
@@ -3182,6 +3021,17 @@
   {
    "desk": "world",
    "pic": "globe",
+   "t": "Sat 8:44 p.m.",
+   "iso": "2026-11-01T00:44:00+00:00",
+   "title": "Video shows immigration agents detaining man in North Hollywood",
+   "summary": "Los Angeles leaders are speaking out after video captured the moments when a U.S. Immigration and Customs Enforcement agent pointed a gun at a bystander as a different man was detained in North Hollywood on Friday.",
+   "outlet": "CBS News, Toronto Sun, Toronto Star, CBC News, BBC News, CTV News",
+   "url": "https://www.cbsnews.com/news/north-hollywood-ice-arrest-gun-pointed-at-bystander/",
+   "img": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/10/31/e57c58d6-0713-4625-8c86-22abbe8a0b97/thumbnail/1200x630/fdc3989b356c076df309356876df504d/screenshot-2026-10-30-at-6-47-29-pm.png"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
    "t": "Sat 8:46 p.m.",
    "iso": "2026-11-01T00:46:12+00:00",
    "title": "Alaska Senate candidate denies knowing about alleged plot to put two Dan Sullivans on ballot",
@@ -3200,39 +3050,6 @@
    "outlet": "CBS News, CTV News, CP24, CBC News, The Japan Times, Times Colonist",
    "url": "https://www.cbsnews.com/news/france-protests-paris-police-clash-demonstrators-halloween/",
    "img": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/10/31/6a753158-27b2-4cb5-aa83-5fb83644bbcf/thumbnail/1200x630/86a3db30604a2df1edb48bfc598db737/gettyimages-2302323367.jpg"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Sat 9:05 p.m.",
-   "iso": "2026-11-01T01:05:02+00:00",
-   "title": "Residents evacuated from Russia-occupied city back in Ukraine",
-   "summary": "The civilians traveled by bus and plane through Russia and Belarus before returning to Ukraine, following a deal brokered by U.S. first lady Melania Trump.",
-   "outlet": "CBS News, Al Jazeera, BBC News, The Guardian",
-   "url": "https://www.cbsnews.com/news/residents-evacuated-oleshky-arrive-ukraine-temporary-us-brokered-ceasefire/",
-   "img": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/10/31/288f5f2d-589f-437c-ad15-6ab2dba6180d/thumbnail/1200x630/5ca719676736375f679ec801938cec0c/gettyimages-2302322375.jpg"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Sat 7:52 p.m.",
-   "iso": "2026-10-31T23:52:18+00:00",
-   "title": "FBI says North Korea behind $6 billion crypto theft from Binance",
-   "summary": "",
-   "outlet": "Toronto Sun, CBS News, CBC News, BBC News",
-   "url": "https://torontosun.com/news/world/binance-says-has-covered-90-of-6-3b-hack-losses",
-   "img": ""
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Sat 6:37 p.m.",
-   "iso": "2026-10-31T22:37:21+00:00",
-   "title": "Woman stabbed in North York; SIU called after Orillia man injured during wellness check",
-   "summary": "",
-   "outlet": "Toronto Sun, CTV News, CP24, CityNews",
-   "url": "https://torontosun.com/news/local-news/woman-stabbed-in-north-york-siu-called-after-orillia-man-injured-during-wellness-check",
-   "img": ""
   },
   {
    "desk": "world",
@@ -3266,6 +3083,28 @@
    "outlet": "CTV News, CP24, Narcity, Times Colonist",
    "url": "https://www.ctvnews.ca/toronto/politics/queens-park/article/toronto-cyclists-protest-ontarios-bike-lane-removals-at-queens-park/",
    "img": "https://www.ctvnews.ca/resizer/v2/Q6RLBQ73JZGIBAKTD2YR4SAFBU.jpg?smart=true&auth=f54630cee26d2470a2da75091bfc4e9e5184b0e484dbc9408bc7346d63e26626&width=1200&height=630"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Sat 9:05 p.m.",
+   "iso": "2026-11-01T01:05:02+00:00",
+   "title": "Residents evacuated from Russia-occupied city back in Ukraine",
+   "summary": "The civilians traveled by bus and plane through Russia and Belarus before returning to Ukraine, following a deal brokered by U.S. first lady Melania Trump.",
+   "outlet": "CBS News, Al Jazeera, BBC News",
+   "url": "https://www.cbsnews.com/news/residents-evacuated-oleshky-arrive-ukraine-temporary-us-brokered-ceasefire/",
+   "img": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/10/31/288f5f2d-589f-437c-ad15-6ab2dba6180d/thumbnail/1200x630/5ca719676736375f679ec801938cec0c/gettyimages-2302322375.jpg"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Sat 8:53 p.m.",
+   "iso": "2026-11-01T00:53:26+00:00",
+   "title": "El-Sayed asks fellow Democrat Stevens not to attend final campaign events",
+   "summary": "Stevens has demanded El-Sayed condemn an outside group's ad and apologize for comments he made about Israel. El-Sayed said Stevens is \"intent on relitigating\" their primary.",
+   "outlet": "CBS News, The Hill, The Guardian",
+   "url": "https://www.cbsnews.com/news/abdul-el-sayed-haley-stevens-feud-michigan-senate/",
+   "img": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/08/04/1d9befa1-8616-4220-90f0-ba7370f33b5f/thumbnail/1200x630g2/3fa0e6eb952c96010caba5af5cf42c54/el-sayed-stevens.jpg"
   },
   {
    "desk": "business",
@@ -3409,7 +3248,7 @@
     "url": "https://www.youtube.com/watch?v=O_xDTLIv-FI",
     "img": "https://i.ytimg.com/vi/O_xDTLIv-FI/hqdefault.jpg",
     "story": "Alaska Senate candidate denies knowing about alleged plot to",
-    "watching": "521",
+    "watching": "523",
     "reports": [
      {
       "outlet": "CTV News",
@@ -3515,7 +3354,7 @@
    "story": "Iran war live: Araghchi says talks under way on 2-day plan to reopen H",
    "title": "Iran war live: Araghchi says talks under way on 2-day plan to reopen Hormuz",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/1/iran-war-live-araghchi-says-talks-under-way-on-2-day-plan-to-reopen-hormuz?traffic_source=rss",
-   "updated": "2026-11-01T01:00:00+00:00",
+   "updated": "2026-11-01T01:23:55+00:00",
    "ended": false,
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ae4b114-1793372436.jpg?resize=1920%2C1440"
   },
@@ -3623,24 +3462,6 @@
      "url": "https://www.atlanticcouncil.org/insight-impact/in-the-news/chalecki-quoted-in-washington-tariff-trade-letter-on-the-uss-use-of-smoot-hawley-law-to-impose-tariffs-on-canada/"
     }
    ]
-  },
-  "auto-dd12e8f3": {
-   "ties": [
-    "wall",
-    "journal",
-    "street"
-   ],
-   "stories": [
-    {
-     "t": "Fri 4:24 p.m.",
-     "iso": "2026-10-30T20:24:37+00:00",
-     "outlet": "BNN Bloomberg",
-     "title": "Wall Street drops to its worst day since June after the sell-off for tech stocks deepens",
-     "url": "https://www.bnnbloomberg.ca/markets/2026/10/30/the-sell-off-for-tech-stocks-deepens-and-drags-wall-street-toward-its-worst-day-since-june/",
-     "tie": "Wall"
-    }
-   ],
-   "views": []
   },
   "auto-c0889af7": {
    "ties": [
