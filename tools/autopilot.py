@@ -2630,6 +2630,30 @@ CLOCK_PATHS = {"Vancouver": r"/british-columbia/|/bc/|/vancouver/|vancouversun\.
                "Halifax": r"/nova-scotia/|/novascotia/|/new-brunswick/|/newbrunswick/|/pei/|/prince-edward-island/|halifax\.citynews|halifaxexaminer\.ca",
                "St. John's": r"/newfoundland-labrador/|/newfoundland/|vocm\.com/(?:2\d{3}/)?.*(?:n-?l|newfoundland|labrador|st-johns)"}
 CLOCK_FALLBACK_HOURS = 36  # a region with nothing in CLOCK_HOURS: its newest story from up to this long ago
+# Every Canadian clock and Washington always carries a clickable story (Hannah, Sun Nov 1, 2026: "In every region in the
+# clock, there should be a clickable story. Ottawa doesn't have one. How is that even possible? Write it in the code").
+# Ottawa had a story, but every name in its headline (Carney, Champagne, the Liberals) is one of the words that place a
+# story in Ottawa, so no topic word was found and the clock was left bare. Now, in order, until a clock has a story:
+#   1. the region's biggest stories, then its newest headlines, each tried until one gets a topic word;
+#   2. the same stories with a looser word (the leading name even if it is the place's own, e.g. "Carney");
+#   3. the wider region (CLOCK_WIDER: Ottawa's clock keeps Eastern time, so Ontario and Quebec news counts) over
+#      CLOCK_LAST_HOURS, so a quiet day never leaves a clock with only a time;
+#   4. the region's own name as the word, on its newest story.
+# A story already on another clock is used again only when a region has nothing else.
+CLOCK_LAST_HOURS = (72, 168)
+CLOCK_WIDER = {
+    "Ottawa": r"\b(Ontario|Ontarians?|Toronto|Queen's Park|Queen’s Park|Doug Ford|Ford government|Hamilton|Mississauga|Brampton|Kingston|Sudbury|Thunder Bay|London, Ont|Windsor|Quebec|Québec|Quebecers?|Montreal|Montréal|Legault|Gatineau|Sherbrooke|Laval|Canada|Canadian|Canadians|RCMP|Statistics Canada|Bank of Canada)\b",
+    "Halifax": r"\b(Atlantic Canada|Maritimes?|Maritimers?)\b",
+    "St. John's": r"\b(Atlantic Canada|Newfoundlanders?)\b",
+    "Winnipeg": r"\b(Prairies?|Nunavut|Churchill)\b",
+    "Edmonton": r"\b(Prairies?|Western Canada|the West)\b",
+    "Vancouver": r"\b(Pacific|Western Canada|Yukoners?)\b",
+    "Washington": r"\b(U\.S\.|United States|Americans?|Republicans?|Democrats?)\b",
+}
+CLOCK_PATHS_WIDER = {"Ottawa": r"/toronto/|/ontario/|/montreal/|/quebec/|/politics/|thestar\.com/(?:news|politics)|montrealgazette\.com|cp24\.com|/canada/(?!british|calgary|edmonton|manitoba|saskatchewan|nova-scotia|newfoundland|new-brunswick|north|pei)",
+                     "Washington": r"/us-news/|/us/|/u-s/|/world/us|/politics/(?=.*(?:trump|congress|senate))"}
+CLOCK_PLACE_WORD = {"Ottawa": "Parliament Hill", "Washington": "White House", "St. John's": "N.L.", "Halifax": "Maritimes",
+                    "Winnipeg": "Prairies", "Edmonton": "Alberta", "Vancouver": "B.C."}
 WORLD_CLOCK_MAX = 3
 WORLD_CLOCK_MIN_OUTLETS = 3   # a world city needs a story this many newsrooms are carrying
 WORLD_CLOCKS = [  # city, time zone, the news that belongs to it
@@ -2706,7 +2730,55 @@ def _clock_story(city, rx, items, groups, now):
     return best or [], top_n
 
 
-def _clock_word(best, rx):
+def _clock_candidates(city, rx, items, groups, now, wider=False):
+    """Every story that can sit on a region's clock, best first: the biggest stories in its news (most newsrooms), then
+    its newest headlines over longer and longer windows. With wider=True, the region's wider area (CLOCK_WIDER)."""
+    import autoupdate as au
+    if wider:
+        rx = re.compile(CLOCK_WIDER.get(city, r"(?!)"))
+        prx = re.compile(CLOCK_PATHS_WIDER[city], re.I) if city in CLOCK_PATHS_WIDER else None
+    else:
+        prx = re.compile(CLOCK_PATHS[city], re.I) if city in CLOCK_PATHS else None
+
+    def fits(t, l):
+        return (rx.search(t) or (prx is not None and prx.search(l))) and not SPORT.search(t + " " + l) and not au.OPINION.search(t + " " + l) \
+            and not NOT_NEWS.search(t + " " + l) and not re.search(r"/(sports?|opinion|entertainment|life|arts)/", l) \
+            and not re.match(r"\s*(Investigation|Analysis|Opinion|Explainer|Feature|Podcast|Watch|Video)\b\s*[:|]", t, re.I)
+    out = []
+    for g in (groups or [])[:60]:
+        rows = sorted([r for r in g.get("rows") or [] if fits(r[2], r[3]) and (now - r[0]).total_seconds() < CLOCK_HOURS * 3600], reverse=True)
+        if rows:
+            out.append((len({au.clean_outlet(r[1]) for r in rows}), rows))
+    out = [rows for _, rows in sorted(out, key=lambda x: (-x[0], -x[1][0][0].timestamp()))]
+    seen = {rows[0][3] for rows in out}
+    for hours in (CLOCK_HOURS, CLOCK_FALLBACK_HOURS) + CLOCK_LAST_HOURS:
+        for d, o, t, l, _ in sorted([x for x in items if (now - x[0]).total_seconds() < hours * 3600], reverse=True):
+            if l not in seen and fits(t, l):
+                seen.add(l)
+                out.append([(d, o, t, l)])
+    return out
+
+
+def _clock_word(best, rx, loose=False):
+    """The topic word for a clock. loose=True also accepts the place's own names ("Carney", "Ford") and, last of all,
+    the headline's first strong word, so a clock that has a story always has a word to click."""
+    word = _clock_word_strict(best, rx)
+    if word or not loose:
+        return word
+    from collections import Counter
+    c = Counter()
+    for r in best[:6]:
+        for m in re.finditer(r"\b([A-Z][\w’'.-]+(?: [A-Z][\w’'.-]+){0,2})", r[2]):
+            x = re.sub(r"[’']s$", "", m.group(1).strip(".’'"))
+            if 3 <= len(x) <= 22 and x.lower() not in CLOCK_NOT_NAMES and not re.fullmatch(r"(?:A|An|The|In|On|At|As|For|To|Of|And|But|How|Why|What|Who|When)", x):
+                c[x] += 1
+    if c:
+        return c.most_common(1)[0][0]
+    words = [x for x in re.findall(r"[A-Za-z][\w’'-]{4,}", best[0][2]) if x.lower() not in CLOCK_NOT_NAMES]
+    return words[0].capitalize() if words else ""
+
+
+def _clock_word_strict(best, rx):
     text = " ".join(r[2] for r in best[:6])
     word = ""
     for t_ in (best[0][2], text):  # the newest headline names it; failing that, the story's other headlines
@@ -2747,15 +2819,31 @@ def clock_topics(items, groups, now):
         return {"city": city, "tz": tz, "world": world, "w": word, "u": lead[3], "title": clean(lead[2]), "outlet": au.clean_outlet(lead[1]),
                 "t": w.eastern(lead[0]), "hot": (now - lead[0]).total_seconds() < 3600 and len(outlets) >= 3}
     out, used = [], set()
-    for city, tz, rx_ in CLOCK_CITIES:  # Canada's six time zones and Washington: always shown (a city with no news: time only)
+    for city, tz, rx_ in CLOCK_CITIES:  # Canada's six time zones and Washington: always shown, always with a story
         rx = re.compile(rx_)
-        best, _ = _clock_story(city, rx, items, groups, now)
-        word = _clock_word(best, rx) if best else ""
-        if best and word:
-            out.append(entry(city, tz, best, word, False))
-            used.add(best[0][3])
-        else:
+        own = _clock_candidates(city, rx, items, groups, now)
+        wide = _clock_candidates(city, rx, items, groups, now, wider=True)
+        pick = None
+        for loose, cands, rx_w in ((False, own, rx), (True, own, rx), (False, wide, re.compile(CLOCK_WIDER.get(city, r"(?!)"))), (True, wide, rx)):
+            for best in cands:
+                if best[0][3] in used:
+                    continue
+                word = _clock_word(best, rx_w, loose=loose)
+                if word:
+                    pick = (best, word)
+                    break
+            if pick:
+                break
+        if not pick:  # nothing new anywhere: the region's newest story, even if another clock has it, under the region's name
+            for best in own + wide:
+                pick = (best, _clock_word(best, rx, loose=True) or CLOCK_PLACE_WORD.get(city, city))
+                break
+        if pick:
+            out.append(entry(city, tz, pick[0], pick[1], False))
+            used.add(pick[0][0][3])
+        else:  # only when the feeds themselves failed: never an empty link
             out.append({"city": city, "tz": tz, "world": False, "w": "", "u": "", "hot": False})
+            print(f"autopilot clocks: no story at all for {city} (the feeds may have failed)")
     # the world: the cities with the most-covered stories right now, at most WORLD_CLOCK_MAX, never the same story twice
     cands = []
     for city, tz, rx_ in WORLD_CLOCKS:
@@ -3266,6 +3354,11 @@ def run(page, items, groups, breaking, now, imgdir, prev):
         except Exception as e:  # never block the run
             print(f"autopilot {name} failed:", e)
             res[name] = prev.get(name) or ({} if name in ("auto", "canus", "mostread") else None if name == "brief" else [])
+    try:  # a clock left without a story (the feeds failed for that region) keeps its last story rather than go bare
+        last = {c.get("city"): c for c in (prev.get("clocks") or []) if c.get("u")}
+        res["clocks"] = [last.get(c["city"], c) if not c.get("u") and not c.get("world") else c for c in (res.get("clocks") or [])]
+    except Exception as e:
+        print("autopilot clocks keep-last failed:", e)
     try:  # a big Canadian exclusive joins the candidates (SCOOP_OUTLETS above)
         a_ = res.get("auto") or {}
         sc = scoops(items, a_.get("stories") or [], now, imgdir)
