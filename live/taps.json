@@ -1,18 +1,28 @@
 {
- "checked": "2026-11-01T19:10:00.669885+00:00",
- "labels": 297,
+ "checked": "2026-11-01T19:56:53.741379+00:00",
+ "labels": 305,
  "problems": [],
  "guard": {
   "fixed": [
    {
-    "label": "CTV News ↗",
-    "was": "(card link) thestar.com",
-    "now": "https://www.ctvnews.ca/winnipeg/article/fog-advisory-issued-for-western-manitoba/"
-   },
-   {
     "label": "NBC News",
     "was": "(card link) nbcnews.com",
-    "now": "https://www.nbcnews.com/politics/2026-election/tim-scott-dodges-accept-election-results-alaska-senate-race-sullivan-rcna606813"
+    "now": "https://www.nbcnews.com/politics/2026-election/federal-judge-dismisses-trump-attempt-ballots-alaska-senate-race-rcna606838"
+   },
+   {
+    "label": "Toronto Star",
+    "was": "(card link) nbcnews.com",
+    "now": "https://www.thestar.com/opinion/contributors/donald-trump-continues-to-daydream-about-swallowing-canada-whole/article_bacd8a25-6f78-4ded-aa25-20e3914ed5ec.html"
+   },
+   {
+    "label": "PBS News",
+    "was": "(card link) pbs.org",
+    "now": "https://www.pbs.org/newshour/politics/watch-live-trump-rallies-in-iowa-as-part-of-final-push-before-election-day"
+   },
+   {
+    "label": "The Hill",
+    "was": "(card link) thehill.com",
+    "now": "https://thehill.com/homenews/campaign/6187152-dnc-defends-michigan-alaska-candidates/"
    },
    {
     "label": "Politico",
@@ -20,7 +30,12 @@
     "now": "https://www.politico.com/news/2026/11/01/haley-stevens-endorses-mike-rogers-michigan-senate-01144698"
    }
   ],
-  "disabled": [],
+  "disabled": [
+   {
+    "label": "Time change",
+    "href": "https://www.cbc.ca/news/canada/nova-scotia/date-change-british-empire-1752-11-days-9.7404255"
+   }
+  ],
   "lifted": []
  }
 }
