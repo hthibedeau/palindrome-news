@@ -24,7 +24,8 @@ from datetime import datetime, timezone
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import wire_scan as w  # noqa: E402
 
-SKIP = r"\b(NHL|NFL|MLB|NBA|CFL|MLS|Leafs|Oilers|Flames|Canucks|Jets|Senators|Canadiens|Raptors|Blue Jays|Argonauts|Steelers|horoscope|recipe|Wordle|crossword|podcast|deals?|shopping|best .* to buy)\b"
+SKIP = r"\b(NHL|NFL|MLB|NBA|CFL|MLS|Leafs|Oilers|Flames|Canucks|Jets|Senators|Canadiens|Raptors|Blue Jays|Argonauts|Steelers|horoscope|recipe|Wordle|crossword|podcast|(?<!trade )(?<!peace )(?<!a )(?<!the )(?<!no )(?<!budget )(?<!ceasefire )deals? (?:of the|on|for|under|we found|you can)|best deals?|shopping|best .* to buy)\b"
+# Hannah, Mon Nov 2, 2026: "deal" alone dropped every trade-deal headline (the Carney-Trump call). Only shopping deals are skipped.
 STOP = set("""the a an and or of in on at to for from with after before over under into as by is are was were be been
 says say said will would could can may new news live update updates video watch what why how who when where this that
 these those its their his her they them it not no more than about after amid over up down out off one two three four

@@ -29,7 +29,8 @@ import os
 import re
 import subprocess
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
@@ -44,9 +45,19 @@ OPINION = re.compile(r"/opinion|/columnists?/|/editorials?/|\| ?Opinion|^Opinion
 # Running themes: a headline belongs to a theme when it matches BOTH patterns. Add a theme whenever a story keeps
 # coming back under different headlines.
 THEMES = [
+    # Hannah, Mon Nov 2, 2026: "there is new budget news that is not showing at the top". Budget week brings many
+    # headlines from different angles (Poilievre's asks, child care, the North, what to expect); they are ONE story, so
+    # they rank together and can reach the top. It comes before Canada and the U.S. so "budget ... amid U.S. trade war"
+    # is counted as budget news. One event: never split (autopilot.SPLIT_THEMES).
+    ("Federal budget", "Federal budget",
+     re.compile(r"\b(federal|Ottawa|Champagne|Carney|Poilievre|Liberals?|Canad\w*|Budget 2026)\b", re.I),
+     re.compile(r"\b(budget)\b(?!\s+(?:airline|travel|hotel|friendly))", re.I)),
+    # Hannah, Mon Nov 2, 2026: the Carney-Trump call never reached the top while a train crash in Spain ("4 Americans
+    # and 1 Canadian") and a Zelensky-Turkey story were being counted as Canada-U.S. news. The U.S. side must now be the
+    # U.S. government or the trade fight itself, never just the word "American(s)", and the finished Turkey trip is out.
     ("Canada and the U.S.", "Canada and the U.S.",
      re.compile(r"\b(Canad\w*|Carney|Ottawa|Joly|LeBlanc|Champagne|Anand|Ford|Poilievre|premiers?)\b", re.I),
-     re.compile(r"\b(Trump|U\.?S\.?|American|Americans|Washington|White House|Hoekstra|Lutnick|Greer|embassy|midterms?|tariffs?|CUSMA|USMCA|trade war|51st state|Clinton|Rubio|Vance|Turkey|Türkiye|Turkiye|Turkish|Erdogan|Erdoğan|Ankara)\b")),  # the Turkey trip is covered on the page as part of the Canada-U.S. trade theme
+     re.compile(r"\b(Trump|U\.S\.|US|Washington|White House|Hoekstra|Lutnick|Greer|midterms?|tariffs?|CUSMA|USMCA|trade war|trade deal|trade talks|Keystone|51st state|Rubio|Vance)\b")),
     # Hannah, Wed Oct 28, 2026: the Canada-EU summit had "a lot of different reporting" but never reached the top,
     # because each angle (the associate-membership title, Quebec's empty chair, the summit itself) was its own group.
     # One event, so it stays ONE story (it is not split back up like the Canada-U.S. theme; see autopilot.SPLIT_THEMES).
@@ -54,6 +65,30 @@ THEMES = [
      re.compile(r"\b(Canad\w*|Carney|Ottawa|Anand|LeBlanc|Champagne|Quebec|Québec|premiers?|Plamondon|PQ)\b", re.I),
      re.compile(r"\b(EU|European Union|European Commission|European Council|von der Leyen|António Costa|Antonio Costa|Brussels|Canada-EU|Canada–EU)\b")),
 ]
+
+
+# Hannah, Mon Nov 2, 2026 (and Sun Nov 1: a shared party name is never a Canadian angle): a party or a nationality is not
+# a story. "Canadians favour Democrats" (a Canadian poll) and "Democrats condemn Haley Stevens" (Michigan) were fused into
+# one 40-headline story that then led the page. These words never join two headlines on their own.
+GENERIC_NAMES = {"democrats", "democrat", "democratic", "republicans", "republican", "gop", "liberals", "liberal",
+                 "conservatives", "conservative", "ndp", "canadians", "canadian", "americans", "american", "u.s", "us",
+                 "senate", "house", "congress", "federal", "mps", "tories"}
+
+
+def _names(t):
+    return gc.names(t) - GENERIC_NAMES
+
+
+def window_start(now):
+    """How far back the ranking reads. Normally the last 6 hours. Overnight little is published, so from midnight to
+    11 a.m. Eastern the window reaches back to noon the day before (Hannah, Mon Nov 2, 2026: the Carney-Trump call,
+    reported Sunday afternoon and evening, had dropped out of the ranking by morning while the page kept a stale lead).
+    A story from last night still has to beat the morning's news: fresh reports score higher in pick_by_canada()."""
+    et = now.astimezone(ZoneInfo("America/Toronto"))
+    if et.hour < 11:
+        start = (et - timedelta(days=1)).replace(hour=12, minute=0, second=0, microsecond=0)
+        return start.astimezone(timezone.utc)
+    return now - timedelta(hours=6)
 
 
 def nn_bonus(i):
@@ -89,13 +124,14 @@ def rank(items=None, now=None):
         got = [x for x in w.front(o, u, m, b) if not OPINION.search(x[3]) and "LIVE" not in x[2]]
         fronts[o] = got[:6]
         items += got
-    rows = [x for x in items if x[0] and 0 <= (now - x[0]).total_seconds() < 6 * 3600 and not re.search(gc.SKIP, x[2], re.I)
+    since = window_start(now)
+    rows = [x for x in items if x[0] and since <= x[0] <= now + timedelta(minutes=10) and not re.search(gc.SKIP, x[2], re.I)
             and not OPINION.search(x[3] + " " + x[2]) and not SOFT.search(x[2] + " " + x[3])
             and not re.search(r"jackpot|Lotto|died of natural causes", x[2], re.I)]
     groups = []
 
     def place(title, link, outlet, dt, bonus, why):
-        n, k = gc.names(title), gc.keys(title)
+        n, k = _names(title), gc.keys(title)
         for g in groups:
             if len(n & g["n"]) >= 2 or (len(n & g["n"]) >= 1 and len(k & g["k"]) >= 2) or len(k & g["k"]) >= 4:
                 break
@@ -134,21 +170,36 @@ def rank(items=None, now=None):
         else:
             merged.append(g)
     groups[:] = merged
-    # third pass: themes. Every group whose headline matches both sides of a theme folds into one story.
+    # third pass: themes. Every HEADLINE that matches both sides of a theme goes to that theme's story, wherever the
+    # first two passes put it (Hannah, Mon Nov 2, 2026: the budget reports and the Carney-Trump call were sitting
+    # inside other stories, so they never counted). Groups whose own lead matches the theme fold in whole, with their
+    # National Newswatch and CBC placement. Headlines that don't match stay where they were.
+    def fits(t, ra, rb):
+        return bool(ra.search(t) and rb.search(t))
     for tname, _, ra, rb in THEMES:
-        members = [g for g in groups if ra.search(g["lead"][0]) and rb.search(g["lead"][0])]
-        if len(members) < 2:
+        free = [g for g in groups if not g.get("theme")]  # a headline already in one theme's story stays there
+        whole = [g for g in free if fits(g["lead"][0], ra, rb)]
+        rows = [r for g in free for r in g["rows"] if fits(r[2], ra, rb)]
+        if len({r[1] for r in rows}) < 2 and len(whole) < 2:
             continue
-        top = max(members, key=lambda g: (g["bonus"], len(g["outlets"])))
-        for g in members:
-            if g is top:
-                continue
-            top["n"] |= g["n"]; top["k"] |= g["k"]; top["outlets"] |= g["outlets"]; top["bonus"] += g["bonus"]; top["why"] += g["why"]; top["rows"] += g["rows"]
-            if g["newest"] and (top["newest"] is None or g["newest"] > top["newest"]):
-                top["newest"] = g["newest"]
-            groups.remove(g)
+        top = {"n": set(), "k": set(), "outlets": set(), "bonus": 0, "why": [], "lead": None, "newest": None, "rows": rows}
+        for g in free:
+            g["rows"] = [r for r in g["rows"] if not fits(r[2], ra, rb)]  # the rest of its headlines stay where they were
+            if g in whole:  # its National Newswatch / CBC placement was earned by a headline on this theme
+                top["bonus"] += g["bonus"]; top["why"] += g["why"]; g["bonus"] = 0; g["why"] = []
+            g["outlets"] = {r[1].replace(" (subscribers)", "") for r in g["rows"]}
+            g["newest"] = max((r[0] for r in g["rows"]), default=None)
+        lead_from = max(whole, key=lambda g: len(g["rows"])) if whole else None
+        r0 = max(rows) if rows else None
+        top["lead"] = lead_from["lead"] if lead_from else (r0[2], r0[3], r0[1])
+        for r in rows:
+            top["n"] |= _names(r[2]); top["k"] |= gc.keys(r[2])
+        top["outlets"] = {r[1].replace(" (subscribers)", "") for r in rows}
+        top["newest"] = r0[0] if r0 else None
         top["theme"] = tname
-        top["parts"] = len(members)
+        top["parts"] = len(rows)
+        groups.append(top)
+    groups[:] = [g for g in groups if g["rows"] or g["bonus"]]
     for g in groups:
         g["bonus"] = min(g["bonus"], 16)  # many Newswatch spots help, but one theme can't run away with the page
         g["score"] = g["bonus"] + min(len(g["outlets"]), 15) + (2 if g["newest"] and (now - g["newest"]).total_seconds() < 7200 else 0)

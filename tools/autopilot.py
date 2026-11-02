@@ -266,7 +266,15 @@ def report_groups(reps):
     # Hannah, Thu Oct 29, 2026: of the repeats, the one posted first leads ("take the one that was posted first"),
     # and a primary source (the Prime Minister's site, a government, the EU) comes first in the list.
     out = [sorted(g, key=lambda r: r[0]) for g in groups.values()]
-    out.sort(key=lambda g: (not any(is_primary(r) for r in g), -max(r[0] for r in g).timestamp()))
+    # Hannah, Mon Nov 2, 2026: "Top news should overtake an old press release from the department." A primary source
+    # leads only while it is news: within 12 hours of the newest news report. An older release takes its place by time.
+    news_t = [r[0] for r in reps if not is_primary(r)]
+    newest_news = max(news_t) if news_t else None
+
+    def leads_as_primary(g):
+        prim = [r[0] for r in g if is_primary(r)]
+        return bool(prim) and (newest_news is None or (newest_news - max(prim)).total_seconds() <= 12 * 3600)
+    out.sort(key=lambda g: (not leads_as_primary(g), -max(r[0] for r in g).timestamp()))
     for g in out:
         g.sort(key=lambda r: (not is_primary(r), r[0]))
     return out
@@ -575,7 +583,9 @@ def build_story(g, now, imgdir, prev):
     }
 
 
-SPLIT_THEMES = {"Canada and the U.S."}  # running themes made of many separate stories
+SPLIT_THEMES = {"Canada and the U.S."}
+# the Canada-U.S. trade talks themselves: one story inside the Canada-U.S. theme, whatever the headline's wording
+TALKS = re.compile(r"\b(trade (?:talks|deal|negotiations?|agreement)|(?:a|the|new) deal\b|very close|good conversation|re-?engage\w*|negotiat\w+|Lutnick|LeBlanc|Hoekstra|Greer|CUSMA|USMCA|Keystone)", re.I)  # running themes made of many separate stories
 
 
 def _split_themes(groups):
@@ -590,8 +600,15 @@ def _split_themes(groups):
             out.append(g)  # an ordinary story, or a theme that is one event (the Canada-EU summit): kept whole
             continue
         clusters = []
+        # Hannah, Mon Nov 2, 2026: the Carney-Trump call, Trump's "very close to a deal" and the Lutnick report are one
+        # story (the trade talks) told in different words; they are kept together, not split into one-outlet pieces.
+        talks = {"rows": [], "k": set(), "t": "__talks__"}
+        clusters.append(talks)
         for r in sorted(g["rows"], reverse=True):
             k = gc.keys(r[2])
+            if TALKS.search(r[2]):
+                talks["rows"].append(r); talks["k"] |= k
+                continue
             for c in clusters:
                 if len(k & c["k"]) >= 3 or re.sub(r"\W", "", r[2].lower()) == c["t"]:
                     c["rows"].append(r)
@@ -601,7 +618,7 @@ def _split_themes(groups):
                 clusters.append({"rows": [r], "k": set(k), "t": re.sub(r"\W", "", r[2].lower())})
         subs = []
         for c in clusters:
-            if not any(CAN_TIE.search(r[2]) for r in c["rows"]):
+            if not c["rows"] or not any(CAN_TIE.search(r[2]) for r in c["rows"]):
                 continue
             subs.append({"rows": c["rows"], "n": set().union(*(gc.names(r[2]) for r in c["rows"])), "score": g["score"], "theme": g["theme"]})
         subs.sort(key=lambda c: len({r[1] for r in c["rows"]}), reverse=True)

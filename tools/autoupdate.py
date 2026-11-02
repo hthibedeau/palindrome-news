@@ -48,7 +48,7 @@ FRENCH = re.compile(r"Radio-Canada|La Presse|Le Devoir|Journal de Montréal|TVA 
 US = re.compile(r"CBS|ABC News|NBC|PBS|Fox News|The Hill\b", re.I)
 WORLDO = re.compile(r"Al Jazeera|BBC|Guardian|Euronews|Japan Times|Kyiv Independent|Middle East Eye", re.I)
 OPINION = re.compile(r"^[A-Z][\w.'’-]+ [A-Z][\w.'’-]+: |\| ?Opinion|^Opinion[:|]|/opinion/|/editorials?/|/columnists?/|/letters/", re.I)
-SOFT = re.compile(r"jackpot|\bcaptain\b|signs with|rugby|hockey|soccer|golf|tennis|playoffs?|season opener|lotto|lottery|recipe|horoscope|Birkin|photography competition|burger|deals?\b|sale\b|celebrity|royal family|"
+SOFT = re.compile(r"jackpot|\bcaptain\b|signs with|rugby|hockey|soccer|golf|tennis|playoffs?|season opener|lotto|lottery|recipe|horoscope|Birkin|photography competition|burger|\bbest deals?\b|\bdeals? (?:of the|on|for|under|we found|you can)\b|\bon sale\b|\bsale\b(?! of)|celebrity|royal family|"
                   r"/(arts?|culture|entertainment|lifestyle|life|style|food|travel|shopping|sports?|wellness|living|fashion|movies|music|tv)/", re.I)
 DESKS = re.compile(r"^(CBC News|CTV News|Global News|The Canadian Press|Toronto Star|National Post|APTN News|Prime Minister|"
                    r"Bank of Canada|CBS News|ABC News|NBC News|PBS NewsHour|BBC News|Al Jazeera|The Guardian)", re.I)
@@ -87,10 +87,19 @@ def _safe(f, args):
         return []
 
 
+CORP_RELEASE = re.compile(r"/press-releases?/|/news-releases?/(?!.*(?:gc\.ca|canada\.ca|gov))|newswire\.ca|globenewswire\.com|"
+                          r"prnewswire\.com|businesswire\.com|accesswire\.com|/partner-content/|/sponsored", re.I)
+
+
 def ok_item(outlet, link):
     if "theglobeandmail.com" in link or "subscribers" in outlet or FRENCH.search(outlet):
         return False
     if "yahoo.com" in link and "Canadian Press" not in outlet:
+        return False
+    # Hannah, Mon Nov 2, 2026: a company's paid press release (BNN Bloomberg's /press-releases/, the newswires) is not
+    # news and never a story; a mining release took over the Silver Cross Mother story's headline. Government releases
+    # come in through their own official feeds, not through this filter.
+    if CORP_RELEASE.search(link):
         return False
     return not re.search(r"(twitter|x|instagram|linkedin)\.com/", link)
 
