@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-02T09:45:55.829568+00:00",
- "checkedLabel": "Mon 4:45 a.m.",
+ "checked": "2026-11-02T09:55:55.815156+00:00",
+ "checkedLabel": "Mon 4:55 a.m.",
  "stories": [
   {
    "key": "top",
@@ -62,6 +62,24 @@
  ],
  "wire": [
   [
+   "Mon 4:48 a.m.",
+   "U.S.",
+   "All 9 aboard killed after plane crashes in Florida, officials say",
+   "CBC News",
+   "https://www.cbc.ca/news/world/florida-plane-crash-9.7404996",
+   "2026-11-02T09:48:42.520000+00:00",
+   2
+  ],
+  [
+   "Mon 4:43 a.m.",
+   "World",
+   "Saudi-led coalition intercepts a missile as fighting rages in Yemen’s al-Jawf",
+   "Al Jazeera",
+   "https://www.aljazeera.com/news/2026/11/2/saudi-led-coalition-intercepts-a-missile-as-fighting-rages-in-yemens-al-jawf?traffic_source=rss",
+   "2026-11-02T09:43:59+00:00",
+   2
+  ],
+  [
    "Mon 4:35 a.m.",
    "World",
    "Nuclear radiation in Russia, Ukraine? No, just hacked warning alerts",
@@ -86,15 +104,6 @@
    "The Guardian",
    "https://www.theguardian.com/tv-and-radio/2026/nov/02/john-leeson-doctor-who-k9-dies",
    "2026-11-02T09:13:42+00:00",
-   1
-  ],
-  [
-   "Mon 4:10 a.m.",
-   "U.S.",
-   "Nine killed as small jet crashes on Florida street",
-   "BBC News",
-   "https://www.bbc.co.uk/news/articles/cm369yy7lw73o?at_medium=RSS&at_campaign=rss",
-   "2026-11-02T09:10:19+00:00",
    1
   ],
   [
@@ -137,10 +146,10 @@
    "Mon 4:00 a.m.",
    "Canada",
    "Political betrayal, Canada trade war: Why Michigan is a Senate race to watch",
-   "Toronto Star",
-   "https://www.thestar.com/news/canada/political-betrayal-canada-trade-war-why-michigan-is-a-senate-race-to-watch/article_0ecc419f-020c-578f-b1be-608dd697687d.html",
+   "The Canadian Press (via Winnipeg Free Press)",
+   "https://www.winnipegfreepress.com/business/2026/11/02/political-betrayal-canada-trade-war-why-michigan-is-a-senate-race-to-watch",
    "2026-11-02T09:00:25+00:00",
-   7
+   8
   ],
   [
    "Mon 4:00 a.m.",
@@ -190,7 +199,7 @@
   [
    "Mon 4:00 a.m.",
    "Canada",
-   "Canada had more than 220 gambler suicides in last decade — but no inquests",
+   "'We often try suicide:' The hidden cost of problem gambling in Canada",
    "CBC News",
    "https://www.cbc.ca/news/investigates/gambling-addiction-suicide-inquests-canada-australia-uk-9.7402747?cmp=rss",
    "2026-11-02T09:00:00+00:00",
@@ -276,15 +285,6 @@
    "https://www.aljazeera.com/news/2026/11/2/how-the-presidents-party-has-fared-in-every-us-midterm-election-since-1946?traffic_source=rss",
    "2026-11-02T08:05:03+00:00",
    1
-  ],
-  [
-   "Mon 3:04 a.m.",
-   "World",
-   "Argentina’s Milei pitches a regulation-free AI haven at the end of the world",
-   "Toronto Star",
-   "https://www.thestar.com/news/world/americas/argentina-s-milei-pitches-a-regulation-free-ai-haven-at-the-end-of-the-world/article_7e8486a8-f76e-50b5-aed7-01054db5043a.html",
-   "2026-11-02T08:04:32+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -316,10 +316,10 @@
  ],
  "leads": [
   {
-   "score": 31,
+   "score": 21,
    "title": "Canadians dislike Trump - more than Putin, Kim Jong Un, Xi Jinping and Elon Musk",
    "url": "https://bruce728.substack.com/p/canadians-dislike-trump-more-than",
-   "outlets": 13,
+   "outlets": 3,
    "why": [
     "National Newswatch #1",
     "National Newswatch #2",
@@ -337,6 +337,14 @@
     "National Newswatch #8",
     "National Newswatch #20"
    ],
+   "theme": ""
+  },
+  {
+   "score": 13,
+   "title": "Aipac is now a toxic brand. The Michigan Senate race is only one example",
+   "url": "https://www.middleeasteye.net/Aipac-is-now-a-toxic-brand-and-even-Trump-supporters-dont-want-its-money",
+   "outlets": 11,
+   "why": [],
    "theme": ""
   },
   {
@@ -398,21 +406,11 @@
   },
   {
    "score": 6,
-   "title": "Canada had more than 220 gambler suicides in last decade — but no inquests",
+   "title": "'We often try suicide:' The hidden cost of problem gambling in Canada",
    "url": "https://www.cbc.ca/news/investigates/gambling-addiction-suicide-inquests-canada-australia-uk-9.7402747",
    "outlets": 1,
    "why": [
     "CBC News front #3"
-   ],
-   "theme": ""
-  },
-  {
-   "score": 6,
-   "title": "Economic frustration set to boil over in midterm elections",
-   "url": "https://www.cbc.ca/news/business/midterm-trump-tariffs-9.7403268",
-   "outlets": 1,
-   "why": [
-    "CBC News front #4"
    ],
    "theme": ""
   }
@@ -480,18 +478,291 @@
   }
  ],
  "auto": {
-  "takeover": false,
+  "takeover": true,
   "stale_since": "2026-10-28T00:15:00+00:00",
-  "stories": [],
+  "stories": [
+   {
+    "key": "auto-b64256ba",
+    "words": [
+     "michigan",
+     "senate"
+    ],
+    "score": 13,
+    "outlets": 3,
+    "carriers": 9,
+    "tag": "Developing",
+    "title": "Aipac is now a toxic brand. The Michigan Senate race is only one example",
+    "url": "https://www.middleeasteye.net/Aipac-is-now-a-toxic-brand-and-even-Trump-supporters-dont-want-its-money",
+    "outlet": "Middle East Eye",
+    "t": "Mon 4:16 a.m.",
+    "iso": "2026-11-02T09:16:02+00:00",
+    "summary": "The pro-Israel lobbying group has worked tirelessly to portray an apartheid regime that is committing genocide as a warm and friendly country - US voters have finally wised up",
+    "first": {
+     "outlet": "BBC News",
+     "url": "https://www.bbc.co.uk/news/videos/cqvgjljj74n8o?at_medium=RSS&at_campaign=rss",
+     "t": "Sun 11:40 p.m.",
+     "title": "How a Democrat in Michigan rocked the party days before the US midterms",
+     "iso": "2026-11-02T04:40:00+00:00"
+    },
+    "newest": "2026-11-02T09:16:02+00:00",
+    "photo": {
+     "src": "live/img/auto-b64256ba-fc67ada102.jpg",
+     "orig": "https://www.middleeasteye.net/sites/default/files/images-story/Michigan%20Democratic%20Senate%20candidate%20Dr.%20Abdul%20El-Sayed%20speaks%20to%20supporters%20on%201%20November%2C%202026%20in%20Michigan%20%28AFP%29.jpg",
+     "caption": "Photo — via Middle East Eye",
+     "alt": "Aipac is now a toxic brand. The Michigan Senate race is only one example",
+     "outlet": "Middle East Eye",
+     "url": "https://www.middleeasteye.net/Aipac-is-now-a-toxic-brand-and-even-Trump-supporters-dont-want-its-money"
+    },
+    "independent": 3,
+    "reports": [
+     {
+      "t": "Mon 4:16 a.m.",
+      "iso": "2026-11-02T09:16:02+00:00",
+      "outlet": "Middle East Eye",
+      "title": "Aipac is now a toxic brand. The Michigan Senate race is only one example",
+      "url": "https://www.middleeasteye.net/Aipac-is-now-a-toxic-brand-and-even-Trump-supporters-dont-want-its-money",
+      "desc": "The pro-Israel lobbying group has worked tirelessly to portray an apartheid regime that is committing genocide as a warm and friendly country - US voters have finally wised up"
+     },
+     {
+      "t": "Mon 4:01 a.m.",
+      "iso": "2026-11-02T09:01:21+00:00",
+      "outlet": "Narcity",
+      "title": "Political betrayal, Canada trade war: Why Michigan is a Senate race to watch",
+      "url": "https://www.narcity.com/michiganders-ready-to-vote-after-stunning-weekend",
+      "desc": "Michiganders ready to vote after stunning weekend"
+     },
+     {
+      "t": "Mon 4:00 a.m.",
+      "iso": "2026-11-02T09:00:25+00:00",
+      "outlet": "Times Colonist",
+      "title": "Political betrayal, Canada trade war: Why Michigan is a Senate race to watch",
+      "url": "https://www.timescolonist.com/the-mix/political-betrayal-canada-trade-war-why-michigan-is-a-senate-race-to-watch-12966678",
+      "desc": "DETROIT — Michelle Taylor gasped and shook her head in disbelief."
+     },
+     {
+      "t": "Mon 4:00 a.m.",
+      "iso": "2026-11-02T09:00:25+00:00",
+      "outlet": "The Canadian Press (via Winnipeg Free Press)",
+      "title": "Political betrayal, Canada trade war: Why Michigan is a Senate race to watch",
+      "url": "https://www.winnipegfreepress.com/business/2026/11/02/political-betrayal-canada-trade-war-why-michigan-is-a-senate-race-to-watch",
+      "desc": ""
+     },
+     {
+      "t": "Mon 4:00 a.m.",
+      "iso": "2026-11-02T09:00:25+00:00",
+      "outlet": "Medicine Hat News",
+      "title": "Political betrayal, Canada trade war: Why Michigan is a Senate race to watch",
+      "url": "https://medicinehatnews.com/news/national-news/2026/11/02/political-betrayal-canada-trade-war-why-michigan-is-a-senate-race-to-watch/",
+      "desc": "DETROIT — Michelle Taylor gasped and shook her head in disbelief. Outside a church where she was waiting to hear Democrat Abdul El-Sayed speak on Sunday, the longtime Detroit resident watched an unimaginable party fracture in a race that could ultimately decide who controls power on Capitol Hill.…"
+     },
+     {
+      "t": "Mon 4:00 a.m.",
+      "iso": "2026-11-02T09:00:25+00:00",
+      "outlet": "Lethbridge Herald",
+      "title": "Political betrayal, Canada trade war: Why Michigan is a Senate race to watch",
+      "url": "https://lethbridgeherald.com/news/national-news/2026/11/02/political-betrayal-canada-trade-war-why-michigan-is-a-senate-race-to-watch/",
+      "desc": ""
+     },
+     {
+      "t": "Mon 4:00 a.m.",
+      "iso": "2026-11-02T09:00:25+00:00",
+      "outlet": "CKOM / PAnow",
+      "title": "Political betrayal, Canada trade war: Why Michigan is a Senate race to watch",
+      "url": "https://www.ckom.com/2026/11/02/political-betrayal-canada-trade-war-why-michigan-is-a-senate-race-to-watch/",
+      "desc": ""
+     },
+     {
+      "t": "Mon 4:00 a.m.",
+      "iso": "2026-11-02T09:00:00+00:00",
+      "outlet": "Toronto Star",
+      "title": "Political betrayal, Canada trade war: Why Michigan is a Senate race to watch",
+      "url": "https://www.thestar.com/news/canada/political-betrayal-canada-trade-war-why-michigan-is-a-senate-race-to-watch/article_0ecc419f-020c-578f-b1be-608dd697687d.html",
+      "desc": "Democrat Abdul El-Sayed's former opponent in the U.S. Senate primary, Haley Stevens, endorsed Republican Mike Rogers with less than 48 hours to go before election day."
+     },
+     {
+      "t": "Sun 11:40 p.m.",
+      "iso": "2026-11-02T04:40:00+00:00",
+      "outlet": "BBC News",
+      "title": "How a Democrat in Michigan rocked the party days before the US midterms",
+      "url": "https://www.bbc.co.uk/news/videos/cqvgjljj74n8o?at_medium=RSS&at_campaign=rss",
+      "desc": ""
+     }
+    ],
+    "sources": [
+     {
+      "t": "Mon 4:16 a.m.",
+      "primary": false,
+      "outlet": "Middle East Eye",
+      "title": "Aipac is now a toxic brand. The Michigan Senate race is only one example",
+      "url": "https://www.middleeasteye.net/Aipac-is-now-a-toxic-brand-and-even-Trump-supporters-dont-want-its-money",
+      "desc": "The pro-Israel lobbying group has worked tirelessly to portray an apartheid regime that is committing genocide as a warm and friendly country - US voters have finally wised up",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Middle East Eye",
+        "src": "Middle East Eye",
+        "byline": "{ \"@type\": \"Person\", \"@id\": \"Middle East Eye\", \"name\": \"Mitchell Plitnick\", } \"Mitchell Plitnick\" https://www.facebook.c"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Mon 4:00 a.m.",
+      "primary": false,
+      "outlet": "Toronto Star",
+      "title": "Political betrayal, Canada trade war: Why Michigan is a Senate race to watch",
+      "url": "https://www.thestar.com/news/canada/political-betrayal-canada-trade-war-why-michigan-is-a-senate-race-to-watch/article_0ecc419f-020c-578f-b1be-608dd697687d.html",
+      "desc": "Democrat Abdul El-Sayed's former opponent in the U.S. Senate primary, Haley Stevens, endorsed Republican Mike Rogers with less than 48 hours to go before election day.",
+      "wire": "The Canadian Press",
+      "by": [
+       {
+        "outlet": "Toronto Star",
+        "src": "The Canadian Press",
+        "byline": "\"Kelly Geraldine Malone The Canadian Press\" \"Kelly Geraldine M"
+       },
+       {
+        "outlet": "Times Colonist",
+        "src": "The Canadian Press",
+        "byline": "\"Kelly Geraldine Malone, The Canadian Press\" \r\n             \r\nK"
+       },
+       {
+        "outlet": "The Canadian Press (via Winnipeg Free Press)",
+        "src": "The Canadian Press",
+        "byline": "\",\n\t\t\t\t\"name\": \"Kelly Geraldine Malone, The Canadian Press\"\n\t\t\t} [{\"@type\":\"Pe"
+       },
+       {
+        "outlet": "Medicine Hat News",
+        "src": "The Canadian Press",
+        "byline": "{\"name\":\"Canadian Press\",\"@id\":\"https:\\/\\/m"
+       },
+       {
+        "outlet": "Lethbridge Herald",
+        "src": "The Canadian Press",
+        "byline": "{\"name\":\"Canadian Press\",\"@id\":\"https:\\/\\/l"
+       },
+       {
+        "outlet": "CKOM / PAnow",
+        "src": "The Canadian Press",
+        "byline": "[{\"@type\":\"Person\",\"name\":\"The Canadian Press\"}] \"The Canadian Pr"
+       },
+       {
+        "outlet": "Narcity",
+        "src": "The Canadian Press",
+        "byline": "ma.org\",\"@type\":\"Person\",\"description\":\"The Canadian Press is Canada&#39;s tru"
+       }
+      ],
+      "copies": [
+       {
+        "outlet": "Times Colonist",
+        "url": "https://www.timescolonist.com/the-mix/political-betrayal-canada-trade-war-why-michigan-is-a-senate-race-to-watch-12966678"
+       },
+       {
+        "outlet": "The Canadian Press (via Winnipeg Free Press)",
+        "url": "https://www.winnipegfreepress.com/business/2026/11/02/political-betrayal-canada-trade-war-why-michigan-is-a-senate-race-to-watch"
+       },
+       {
+        "outlet": "Medicine Hat News",
+        "url": "https://medicinehatnews.com/news/national-news/2026/11/02/political-betrayal-canada-trade-war-why-michigan-is-a-senate-race-to-watch/"
+       },
+       {
+        "outlet": "Lethbridge Herald",
+        "url": "https://lethbridgeherald.com/news/national-news/2026/11/02/political-betrayal-canada-trade-war-why-michigan-is-a-senate-race-to-watch/"
+       },
+       {
+        "outlet": "CKOM / PAnow",
+        "url": "https://www.ckom.com/2026/11/02/political-betrayal-canada-trade-war-why-michigan-is-a-senate-race-to-watch/"
+       },
+       {
+        "outlet": "Narcity",
+        "url": "https://www.narcity.com/michiganders-ready-to-vote-after-stunning-weekend"
+       }
+      ]
+     },
+     {
+      "t": "Sun 11:40 p.m.",
+      "primary": false,
+      "outlet": "BBC News",
+      "title": "How a Democrat in Michigan rocked the party days before the US midterms",
+      "url": "https://www.bbc.co.uk/news/videos/cqvgjljj74n8o?at_medium=RSS&at_campaign=rss",
+      "desc": "BBC's Nada Tawfik visited Detroit, Michigan where the party spat unfolded.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "BBC News",
+        "src": "BBC News",
+        "byline": ""
+       }
+      ],
+      "copies": []
+     }
+    ],
+    "replaces_top": false,
+    "events": [],
+    "theme": "",
+    "canada": "canadian",
+    "canus": true,
+    "popular": 0,
+    "us_election": false,
+    "judgment": "national",
+    "judgment_why": "National: affects many people; carried beyond one city.",
+    "weight": 42.5,
+    "videos": [
+     {
+      "net": "Sky News",
+      "url": "https://www.youtube.com/watch?v=HqfSpx-hCTk",
+      "title": "Democrat accused of 'betrayal' after backing Republican candidate in Michigan Senate race | Mornings",
+      "img": "https://i.ytimg.com/vi/HqfSpx-hCTk/hqdefault.jpg",
+      "rec": true,
+      "up": ""
+     },
+     {
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=ZgaSgaG6-pY",
+      "title": "Democrat Haley Stevens endorses GOP's Mike Rogers in Michigan Senate race, 2 days before election",
+      "img": "https://i.ytimg.com/vi/ZgaSgaG6-pY/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "ABC News",
+      "url": "https://www.youtube.com/watch?v=pWhsfNprTMo",
+      "title": "Democrat Haley Stevens endorses Republican Mike Rogers in Michigan Senate race",
+      "img": "https://i.ytimg.com/vi/pWhsfNprTMo/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "Associated Press",
+      "url": "https://www.youtube.com/watch?v=_o7WDRhkw2s",
+      "title": "Trump lashes out at Abdul El-Sayed as Michigan senate race heats up",
+      "img": "https://i.ytimg.com/vi/_o7WDRhkw2s/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     }
+    ]
+   }
+  ],
   "considered": [
    {
-    "title": "Political betrayal, Canada trade war: Why Michigan is a Senate race to watch",
-    "score": 31,
-    "why": "not built: only 1 independent report(s) (7 sites)"
+    "title": "Aipac is now a toxic brand. The Michigan Senate race is only one example",
+    "url": "https://www.middleeasteye.net/Aipac-is-now-a-toxic-brand-and-even-Trump-supporters-dont-want-its-money",
+    "rank": 1,
+    "live": "",
+    "weight": 42.5,
+    "score": 13,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "canadian",
+    "theme": "",
+    "top": true,
+    "rule": "Canadian, still developing",
+    "carriers": 9,
+    "judgment": "national",
+    "why_judged": "National: affects many people; carried beyond one city."
    },
    {
     "title": "Canada's next budget to be unveiled this week amid U.S. trade war, economic uncertainty",
-    "score": 31,
+    "score": 21,
     "why": "not built: only 1 independent report(s) (1 sites)"
    },
    {
@@ -525,17 +796,17 @@
     "why": "not built: only 1 independent report(s) (5 sites)"
    },
    {
+    "title": "Canada seeks full participation in the EU’s Erasmus+ program",
+    "score": 7,
+    "why": "not built: only 1 independent report(s) (5 sites)"
+   },
+   {
     "title": "TD tried to make grieving mom pay $38K in student debt after daughter died of cancer",
     "score": 6,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Canada seeks full participation in the EU’s Erasmus+ program",
-    "score": 6,
-    "why": "not built: only 1 independent report(s) (5 sites)"
-   },
-   {
-    "title": "Canada had more than 220 gambler suicides in last decade — but no inquests",
+    "title": "'We often try suicide:' The hidden cost of problem gambling in Canada",
     "score": 6,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
@@ -550,27 +821,22 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
+    "title": "All 9 aboard killed after plane crashes in Florida, officials say",
+    "score": 5,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
     "title": "Crash that killed 4 teens in Puslinch, Ont., an 'unimaginable tragedy': police",
     "score": 4,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Nine killed as small jet crashes on Florida street",
-    "score": 4,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Q&A: Your questions about earning a CPA designation answered by a real-life Vancouver CPA",
-    "score": 4,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Where things stand on Iran after a tense weekend",
+    "title": "Saudi-led coalition intercepts a missile as fighting rages in Yemen’s al-Jawf",
     "score": 4,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
   ],
-  "top_n": 0,
+  "top_n": 1,
   "more": [],
   "passed_over": []
  },
@@ -724,7 +990,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=2Kc_7QZ1SfA",
    "img": "https://i.ytimg.com/vi/2Kc_7QZ1SfA/hqdefault.jpg",
-   "up": "2026-11-02",
+   "up": "2026-11-01",
    "added": "2026-11-02T04:48:37.510994+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1139,11 +1405,11 @@
  "ledes": [
   {
    "o": "CBS News",
-   "h": "Push for U.S.-Iran deal punctuated by threats to resume fighting",
-   "u": "https://www.cbsnews.com/live-updates/iran-war-us-trump-negotiations-midterms/",
-   "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/02/5b50364e-0415-4ef6-b5ef-c4459c66b44f/thumbnail/1200x630/77e1482bc12ef3b23dfaad04aba513a2/gettyimages-2302492549.jpg",
-   "w": "Mon 4:09 a.m.",
-   "iso": "2026-11-02T09:09:03+00:00"
+   "h": "Robots strut their stuff, race up sacred China mountain",
+   "u": "https://www.cbsnews.com/news/robots-race-china-mountain-eggs-watermelons/",
+   "img": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/11/02/2e93ab95-3ebe-47ed-aef7-7ab144da861d/thumbnail/1200x630/8b448a9b0a6fb13caa1491d9a16f43cb/gettyimages-2303076313.jpg",
+   "w": "Mon 4:56 a.m.",
+   "iso": "2026-11-02T09:56:09+00:00"
   },
   {
    "o": "ABC News",
@@ -1179,11 +1445,11 @@
   },
   {
    "o": "NPR",
-   "h": "UN's peacekeeping mission in disputed Western Sahara ends after 35 years",
-   "u": "https://www.npr.org/2026/11/02/nx-s1-6026050/uns-peacekeeping-western-sahara-ends",
-   "img": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/8351x4697+0+435/resize/1400/quality/85/format/webp/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F30%2F4e%2Fde1f3e074a53adb6510217f3e291%2Fap26305659609431.jpg",
-   "w": "Mon 2:19 a.m.",
-   "iso": "2026-11-02T07:19:35+00:00"
+   "h": "Morning news brief",
+   "u": "https://www.npr.org/2026/11/02/nx-s1-6023084/morning-news-brief",
+   "img": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
+   "w": "Mon 4:42 a.m.",
+   "iso": "2026-11-02T09:42:20+00:00"
   },
   {
    "o": "The Hill",
@@ -1846,11 +2112,11 @@
    "city": "Washington",
    "tz": "America/New_York",
    "world": false,
-   "w": "Midterms",
-   "u": "https://abcnews.com/Politics/live-updates/midterm-elections-2026-1-week-high-stakes-elections/?id=137578278",
-   "title": "Midterm elections live updates: Trump to deliver remarks, join tele-rallies on Monday",
-   "outlet": "ABC News",
-   "t": "Mon 4:04 a.m.",
+   "w": "Tariffs",
+   "u": "https://www.middleeasteye.net/Aipac-is-now-a-toxic-brand-and-even-Trump-supporters-dont-want-its-money",
+   "title": "Aipac is now a toxic brand. The Michigan Senate race is only one example",
+   "outlet": "Middle East Eye",
+   "t": "Mon 4:16 a.m.",
    "hot": true
   },
   {
@@ -1953,31 +2219,31 @@
      "paywall": false
     },
     {
+     "t": "Mon 4:45 a.m.",
+     "iso": "2026-11-02T09:45:00+00:00",
+     "outlet": "Politico",
+     "title": "Chuck Schumer’s leadership hopes run through the midterms",
+     "url": "https://www.politico.com/news/2026/11/02/chuck-schumer-democratic-leader-midterms-01144492",
+     "canada": false,
+     "paywall": false,
+     "exclusive": false
+    },
+    {
+     "t": "Mon 4:16 a.m.",
+     "iso": "2026-11-02T09:16:02+00:00",
+     "outlet": "Middle East Eye",
+     "title": "Aipac is now a toxic brand. The Michigan Senate race is only one example",
+     "url": "https://www.middleeasteye.net/Aipac-is-now-a-toxic-brand-and-even-Trump-supporters-dont-want-its-money",
+     "canada": false,
+     "paywall": false,
+     "exclusive": false
+    },
+    {
      "t": "Mon 4:04 a.m.",
      "iso": "2026-11-02T09:04:23+00:00",
      "outlet": "ABC News",
      "title": "Midterm elections live updates: Trump to deliver remarks, join tele-rallies on Monday",
      "url": "https://abcnews.com/Politics/live-updates/midterm-elections-2026-1-week-high-stakes-elections/?id=137578278",
-     "canada": false,
-     "paywall": false,
-     "exclusive": false
-    },
-    {
-     "t": "Mon 4:02 a.m.",
-     "iso": "2026-11-02T09:02:56.479000+00:00",
-     "outlet": "CBC News",
-     "title": "5 reasons why the Democrats might not take control of Congress in U.S. midterms",
-     "url": "https://www.cbc.ca/news/world/us-midterm-elections-democrats-republicans-trump-9.7403495",
-     "canada": false,
-     "paywall": false,
-     "exclusive": false
-    },
-    {
-     "t": "Mon 3:05 a.m.",
-     "iso": "2026-11-02T08:05:03+00:00",
-     "outlet": "Al Jazeera",
-     "title": "How the president’s party has fared in every US midterm election since 1946",
-     "url": "https://www.aljazeera.com/news/2026/11/2/how-the-presidents-party-has-fared-in-every-us-midterm-election-since-1946?traffic_source=rss",
      "canada": false,
      "paywall": false,
      "exclusive": false
@@ -2171,13 +2437,13 @@
   {
    "desk": "politics",
    "pic": "parliament",
-   "t": "Mon 4:04 a.m.",
-   "iso": "2026-11-02T09:04:23+00:00",
-   "title": "Midterm elections live updates: Trump to deliver remarks, join tele-rallies on Monday",
-   "summary": "President Donald Trump is scheduled to appear at the Reflecting Pool on Monday.",
-   "outlet": "ABC News, Narcity, Toronto Star, Times Colonist, The Canadian Press (via Winnipeg Free Press), Medicine Hat News",
-   "url": "https://abcnews.com/Politics/live-updates/midterm-elections-2026-1-week-high-stakes-elections/?id=137578278",
-   "img": "https://i.abcnewsfe.com/a/d203d4d7-f5a1-441c-8168-8fb40e76ae86/trump--main_1793609890478_hpMain_16x9.jpg?w=1600"
+   "t": "Mon 4:16 a.m.",
+   "iso": "2026-11-02T09:16:02+00:00",
+   "title": "Aipac is now a toxic brand. The Michigan Senate race is only one example",
+   "summary": "The pro-Israel lobbying group has worked tirelessly to portray an apartheid regime that is committing genocide as a warm and friendly country - US voters have finally wised up",
+   "outlet": "Middle East Eye, Narcity, Times Colonist, The Canadian Press (via Winnipeg Free Press), Medicine Hat News, Lethbridge Herald",
+   "url": "https://www.middleeasteye.net/Aipac-is-now-a-toxic-brand-and-even-Trump-supporters-dont-want-its-money",
+   "img": "https://www.middleeasteye.net/sites/default/files/images-story/Michigan%20Democratic%20Senate%20candidate%20Dr.%20Abdul%20El-Sayed%20speaks%20to%20supporters%20on%201%20November%2C%202026%20in%20Michigan%20%28AFP%29.jpg"
   },
   {
    "desk": "politics",
@@ -2226,13 +2492,24 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Mon 4:10 a.m.",
-   "iso": "2026-11-02T09:10:19+00:00",
-   "title": "Nine killed as small jet crashes on Florida street",
-   "summary": "Transportation Secretary Sean Duffy described the crash, which happened near President Trump's Mar-a-Lago resort, as a \"horrific tragedy\".",
-   "outlet": "BBC News, CBS News",
-   "url": "https://www.bbc.co.uk/news/articles/cm369yy7lw73o?at_medium=RSS&at_campaign=rss",
-   "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/5800/live/cf28de00-d691-11f1-93e1-3b657b665bcf.jpg"
+   "t": "Mon 4:54 a.m.",
+   "iso": "2026-11-02T09:54:06.907000+00:00",
+   "title": "All 9 aboard killed after plane crashes in Florida, officials say",
+   "summary": "A business jet carrying nine people nosedived into a South Florida neighbourhood on Sunday and erupted into a giant fireball that appeared to just miss homes before crashing near a busy roadway. All passengers on board were killed, U.S. Transportation Secretary Sean Duffy said.",
+   "outlet": "CBC News, BBC News, CBS News",
+   "url": "https://www.cbc.ca/news/world/florida-plane-crash-9.7404996",
+   "img": "https://i.cbc.ca/ais/ca089c64-d82e-4707-a819-b9ae94962647,1793568085732/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C139%2C2669%2C1501%29%3BResize%3D620"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Mon 4:43 a.m.",
+   "iso": "2026-11-02T09:43:59+00:00",
+   "title": "Saudi-led coalition intercepts a missile as fighting rages in Yemen’s al-Jawf",
+   "summary": "Houthi-affiliated media report that seven people were wounded in strikes on the city of Hodeidah.",
+   "outlet": "Al Jazeera, Middle East Eye",
+   "url": "https://www.aljazeera.com/news/2026/11/2/saudi-led-coalition-intercepts-a-missile-as-fighting-rages-in-yemens-al-jawf?traffic_source=rss",
+   "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-09-15T161837Z_683006544_RC2SJNA85FI2_RTRMADP_3_IRAN-CRISIS-YEMEN-HOUTHI-1793607431.jpg?resize=1920%2C1440"
   },
   {
    "desk": "world",
@@ -2279,17 +2556,6 @@
    "img": "https://i.abcnewsfe.com/a/a586a08b-2bfe-4172-9571-281909240efa/wirestory_ee023847bbed3a06eab68d047dd361d3_16x9.jpg?w=1600"
   },
   {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Mon 1:28 a.m.",
-   "iso": "2026-11-02T06:28:01+00:00",
-   "title": "Shadowy Indian election ‘consultants’ add US midterms to global footprint",
-   "summary": "India's election consultants are exporting covert campaign tactics to manipulate elections worldwide, including the US.",
-   "outlet": "Al Jazeera, The Japan Times",
-   "url": "https://www.aljazeera.com/features/2026/11/2/shadowy-indian-election-consultants-add-us-midterms-to-global-footprint?traffic_source=rss",
-   "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/GettyImages-2176097801-1793597597.jpg?resize=1920%2C1440"
-  },
-  {
    "desk": "business",
    "pic": "chart",
    "t": "Mon 12:13 a.m.",
@@ -2306,10 +2572,10 @@
    "t": "Mon 4:22 a.m.",
    "iso": "2026-11-02T09:22:08+00:00",
    "title": "In the news today: clocks stay put, trade deal nears, Michigan race to watch",
-   "summary": "Here is a roundup of stories from The Canadian Press designed to bring you up to speed …",
-   "outlet": "The Canadian Press (via Winnipeg Free Press)",
-   "url": "https://www.winnipegfreepress.com/canada/2026/11/02/in-the-news-today-clocks-stay-put-trade-deal-nears-michigan-race-to-watch",
-   "img": ""
+   "summary": "Here is a roundup of stories from The Canadian Press designed to bring you up to speed … Parents cheer, businesses brace as Western Canada ditches the time change Canadians woke up on Sunday to a brand new time zone map.",
+   "outlet": "Times Colonist",
+   "url": "https://www.timescolonist.com/national-news/in-the-news-today-clocks-stay-put-trade-deal-nears-michigan-race-to-watch-12966704",
+   "img": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/66a8c49e55836b5cc84643212436a8215f447907b12b4c43f3478c5528a376b9.jpg;w=1200;h=800;mode=crop"
   },
   {
    "desk": "business",
@@ -2350,7 +2616,7 @@
    "t": "Mon 12:33 a.m.",
    "iso": "2026-11-02T05:33:07+00:00",
    "title": "Asian shares are mixed and US futures advance, while oil prices retreat",
-   "summary": "HONG KONG (AP) — Asian shares were mixed and oil prices retreated Monday, falling sharply on renewed hopes for progress in diplomatic efforts between the U.S. and Iran.",
+   "summary": "HONG KONG (AP) — Global shares were mixed and oil prices retreated Monday, falling sharply on renewed hopes for progress in diplomatic efforts between the U.S. and Iran.",
    "outlet": "Toronto Star",
    "url": "https://www.thestar.com/news/world/asian-shares-mostly-advance-but-tech-stocks-remain-volatile-while-oil-sinks-3-3/article_ec7d95ce-bd5d-58b8-9034-f8588476d0a5.html",
    "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/6/9e/69ed11cd-e92d-57d0-b249-443cb9456fb1/6ae821073f2ab.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
@@ -2416,10 +2682,10 @@
    "t": "Sun 1:13 p.m.",
    "iso": "2026-11-01T18:13:00+00:00",
    "title": "Giving fabric a new life: Quebec business tailors a new role in the circular economy",
-   "summary": "",
+   "summary": "A Quebec-based company is tailoring itself a place in the upcycling industry by breathing new life into discarded fabric — and it has no plans to slow down.",
    "outlet": "Toronto Star",
    "url": "https://www.thestar.com/news/canada/quebec/giving-fabric-a-new-life-quebec-business-tailors-a-new-role-in-the-circular-economy/article_bc1c38b5-d623-56a2-91f9-864af5543681.html",
-   "img": ""
+   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/7/08/70894e92-294e-5d22-ba88-c5ac7e70545c/6ae781a771544.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
   },
   {
    "desk": "business",
@@ -2442,7 +2708,7 @@
     "url": "https://www.youtube.com/watch?v=xDIp4s-I984",
     "img": "https://i.ytimg.com/vi/xDIp4s-I984/hqdefault.jpg",
     "story": "Trump midterm events, Election updates, Iran war latest, Florida plane",
-    "watching": "312",
+    "watching": "314",
     "reports": [
      {
       "outlet": "CBS News",
@@ -2450,6 +2716,13 @@
       "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-diplomacy-threat-resume-attacks/",
       "t": "Sun 11:15 p.m.",
       "iso": "2026-11-02T04:15:00+00:00"
+     },
+     {
+      "outlet": "Middle East Eye",
+      "title": "Trump says Iran war will end ‘very soon, one way or the other’",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-iran-war-will-end-very-soon-one-way-or-other",
+      "t": "Sun 5:47 p.m.",
+      "iso": "2026-11-01T22:47:37+00:00"
      },
      {
       "outlet": "Toronto Sun",
@@ -2467,74 +2740,7 @@
     "url": "https://www.youtube.com/watch?v=PPkA6j3XCzc",
     "img": "https://i.ytimg.com/vi/PPkA6j3XCzc/hqdefault.jpg",
     "story": "Energy leaders, policymakers and industry executives meet for ADIPEC",
-    "watching": "8"
-   },
-   {
-    "net": "Sky News",
-    "r": "world",
-    "title": "Democrat accused of 'betrayal' after backing Republican candidate in Michigan Senate race | Mornings",
-    "url": "https://www.youtube.com/watch?v=HqfSpx-hCTk",
-    "img": "https://i.ytimg.com/vi/HqfSpx-hCTk/hqdefault.jpg",
-    "story": "Democrat accused of 'betrayal' after backing Republican candidate in M",
-    "watching": "596",
-    "reports": [
-     {
-      "outlet": "Narcity",
-      "title": "Political betrayal, Canada trade war: Why Michigan is a Senate race to watch",
-      "url": "https://www.narcity.com/michiganders-ready-to-vote-after-stunning-weekend",
-      "t": "Mon 4:01 a.m.",
-      "iso": "2026-11-02T09:01:21+00:00"
-     },
-     {
-      "outlet": "Toronto Star",
-      "title": "Political betrayal, Canada trade war: Why Michigan is a Senate race to watch",
-      "url": "https://www.thestar.com/news/canada/political-betrayal-canada-trade-war-why-michigan-is-a-senate-race-to-watch/article_0ecc419f-020c-578f-b1be-608dd697687d.html",
-      "t": "Mon 4:00 a.m.",
-      "iso": "2026-11-02T09:00:25+00:00"
-     },
-     {
-      "outlet": "Times Colonist",
-      "title": "Political betrayal, Canada trade war: Why Michigan is a Senate race to watch",
-      "url": "https://www.timescolonist.com/the-mix/political-betrayal-canada-trade-war-why-michigan-is-a-senate-race-to-watch-12966678",
-      "t": "Mon 4:00 a.m.",
-      "iso": "2026-11-02T09:00:25+00:00"
-     },
-     {
-      "outlet": "The Canadian Press (via Winnipeg Free Press)",
-      "title": "Political betrayal, Canada trade war: Why Michigan is a Senate race to watch",
-      "url": "https://www.winnipegfreepress.com/business/2026/11/02/political-betrayal-canada-trade-war-why-michigan-is-a-senate-race-to-watch",
-      "t": "Mon 4:00 a.m.",
-      "iso": "2026-11-02T09:00:25+00:00"
-     },
-     {
-      "outlet": "Medicine Hat News",
-      "title": "Political betrayal, Canada trade war: Why Michigan is a Senate race to watch",
-      "url": "https://medicinehatnews.com/news/national-news/2026/11/02/political-betrayal-canada-trade-war-why-michigan-is-a-senate-race-to-watch/",
-      "t": "Mon 4:00 a.m.",
-      "iso": "2026-11-02T09:00:25+00:00"
-     },
-     {
-      "outlet": "Lethbridge Herald",
-      "title": "Political betrayal, Canada trade war: Why Michigan is a Senate race to watch",
-      "url": "https://lethbridgeherald.com/news/national-news/2026/11/02/political-betrayal-canada-trade-war-why-michigan-is-a-senate-race-to-watch/",
-      "t": "Mon 4:00 a.m.",
-      "iso": "2026-11-02T09:00:25+00:00"
-     },
-     {
-      "outlet": "CKOM / PAnow",
-      "title": "Political betrayal, Canada trade war: Why Michigan is a Senate race to watch",
-      "url": "https://www.ckom.com/2026/11/02/political-betrayal-canada-trade-war-why-michigan-is-a-senate-race-to-watch/",
-      "t": "Mon 4:00 a.m.",
-      "iso": "2026-11-02T09:00:25+00:00"
-     },
-     {
-      "outlet": "CBC News",
-      "title": "'Despicable betrayal': Democrats stunned after Michigan congresswoman endorses Republican for Senate",
-      "url": "https://www.cbc.ca/news/world/abdul-el-sayed-haley-stevens-9.7404925",
-      "t": "Sun 10:33 p.m.",
-      "iso": "2026-11-02T03:33:45.765000+00:00"
-     }
-    ]
+    "watching": "12"
    }
   ],
   "upcoming": [
@@ -2625,21 +2831,30 @@
     "url": "https://www.youtube.com/watch?v=LuKwFajn37U"
    },
    {
+    "net": "Al Jazeera",
+    "url": "https://www.youtube.com/watch?v=gCNeDWCI0vo"
+   },
+   {
     "net": "LiveNOW from FOX",
     "url": "https://www.youtube.com/watch?v=C96oohpWBGw"
    },
    {
     "net": "FRANCE 24 English",
     "url": "https://www.youtube.com/watch?v=HvZt-nh9sGg"
-   },
-   {
-    "net": "euronews",
-    "url": "https://www.youtube.com/watch?v=pykpO5kQJ98"
    }
   ]
  },
  "pm": [],
  "blogs_auto": [
+  {
+   "net": "The Guardian",
+   "story": "Burnham declines to say net migration still too high as Mahmood prepar",
+   "title": "Burnham declines to say net migration still too high as Mahmood prepares to unveil tougher settlement rules – UK politics live",
+   "url": "https://www.theguardian.com/politics/live/2026/nov/02/andy-burnham-shabana-mahmood-migration-indefinite-leave-to-remain-care-workers-uk-politics-latest-news",
+   "updated": "2026-11-02T09:57:19+00:00",
+   "ended": false,
+   "img": "https://i.guim.co.uk/img/media/766598dd15fb1923afa8a58c4e17bfbc730c8ab7/637_0_4630_3704/master/4630.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=c38eeddac17927f57b275fab74bca56c"
+  },
   {
    "net": "CBS News",
    "story": "Push for U.S.-Iran deal punctuated by threats to resume fighting",
@@ -2663,9 +2878,36 @@
    "story": "Ukraine and Russia say emergency air-raid warning systems hit by cyber",
    "title": "Ukraine and Russia say emergency air-raid warning systems hit by cyber-hacks – Europe live",
    "url": "https://www.theguardian.com/world/live/2026/nov/02/ukraine-russia-emergency-warning-systems-hack-zelenskyy-streeting-eu-latest-news-updates",
-   "updated": "2026-11-02T09:46:07+00:00",
+   "updated": "2026-11-02T09:57:57+00:00",
    "ended": false,
    "img": "https://i.guim.co.uk/img/media/f835b03f39010a4f3c8a6df1496ccafd81b8bba8/500_0_5000_4000/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=e3130d9d82710d99286cd0e1c5ccff8b"
+  },
+  {
+   "net": "Middle East Eye",
+   "story": "Morning update",
+   "title": "Morning update",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-658",
+   "updated": "2026-11-02T07:42:51+00:00",
+   "ended": false,
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Mourners%20wait%20next%20to%20the%20bodies%20of%20Palestinians%20who%20were%20killed%20in%20an%20Israeli%20strike%20that%20targeted%20Gaza%20City%27s%20Al-Remal%20neighbourhood%20earlier%20in%20the%20day%2C%20at%20Shifa%20Hospital%20in%20Gaza%20City%20on%201%20November%202026%20%28AFP%29.jpg"
+  },
+  {
+   "net": "Middle East Eye",
+   "story": "Saudi-led coalition says it destroyed Houthi missile targeting kingdom",
+   "title": "Saudi-led coalition says it destroyed Houthi missile targeting kingdom's southern region",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-says-it-destroyed-houthi-missile-targeting-kingdoms",
+   "updated": "2026-11-02T07:13:31+00:00",
+   "ended": false,
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Mourners%20wait%20next%20to%20the%20bodies%20of%20Palestinians%20who%20were%20killed%20in%20an%20Israeli%20strike%20that%20targeted%20Gaza%20City%27s%20Al-Remal%20neighbourhood%20earlier%20in%20the%20day%2C%20at%20Shifa%20Hospital%20in%20Gaza%20City%20on%201%20November%202026%20%28AFP%29.jpg"
+  },
+  {
+   "net": "Middle East Eye",
+   "story": "Israeli forces have withdrawn from Hebron, governor says",
+   "title": "Israeli forces have withdrawn from Hebron, governor says",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-have-withdrawn-hebron-governor-says",
+   "updated": "2026-11-02T07:07:20+00:00",
+   "ended": false,
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Mourners%20wait%20next%20to%20the%20bodies%20of%20Palestinians%20who%20were%20killed%20in%20an%20Israeli%20strike%20that%20targeted%20Gaza%20City%27s%20Al-Remal%20neighbourhood%20earlier%20in%20the%20day%2C%20at%20Shifa%20Hospital%20in%20Gaza%20City%20on%201%20November%202026%20%28AFP%29.jpg"
   }
  ],
  "related": {
@@ -2680,6 +2922,14 @@
      "outlet": "Narcity",
      "title": "Political betrayal, Canada trade war: Why Michigan is a Senate race to watch",
      "url": "https://www.narcity.com/michiganders-ready-to-vote-after-stunning-weekend",
+     "tie": "Canada and the U.S."
+    },
+    {
+     "t": "Mon 4:00 a.m.",
+     "iso": "2026-11-02T09:00:00+00:00",
+     "outlet": "CBC News",
+     "title": "Canada's next budget to be unveiled this week amid U.S. trade war, economic uncertainty",
+     "url": "https://www.cbc.ca/news/politics/budget-carney-affordability-investments-9.7404193?cmp=rss",
      "tie": "Canada and the U.S."
     },
     {
@@ -2729,14 +2979,6 @@
      "title": "Canada echoes U.S. ‘mass casualty event’ warning for Moscow",
      "url": "https://globalnews.ca/news/12128764/mass-casualty-threat-russia/",
      "tie": "Canada and the U.S."
-    },
-    {
-     "t": "Sat 1:44 p.m.",
-     "iso": "2026-10-31T17:44:40+00:00",
-     "outlet": "CP24",
-     "title": "Carney ramps up trade diversification efforts with Canada-U.S. deal still out",
-     "url": "https://www.cp24.com/news/canada/2026/10/31/carney-ramps-up-trade-diversification-efforts-with-canada-us-deal-still-out/",
-     "tie": "Canada and the U.S."
     }
    ],
    "views": [
@@ -2749,7 +2991,62 @@
    ]
   }
  },
- "canangle": {},
+ "canangle": {
+  "auto-b64256ba": {
+   "story": "Aipac is now a toxic brand. The Michigan Senate race is only one example",
+   "us": true,
+   "specific": 2,
+   "stories": [
+    {
+     "t": "Mon 4:01 a.m.",
+     "iso": "2026-11-02T09:01:21+00:00",
+     "outlet": "Narcity",
+     "title": "Political betrayal, Canada trade war: Why Michigan is a Senate race to watch",
+     "url": "https://www.narcity.com/michiganders-ready-to-vote-after-stunning-weekend",
+     "ca": false,
+     "tie": ""
+    },
+    {
+     "t": "Mon 4:00 a.m.",
+     "iso": "2026-11-02T09:00:00+00:00",
+     "outlet": "CBC News",
+     "title": "Canada's next budget to be unveiled this week amid U.S. trade war, economic uncertainty",
+     "url": "https://www.cbc.ca/news/politics/budget-carney-affordability-investments-9.7404193?cmp=rss",
+     "ca": true,
+     "tie": ""
+    },
+    {
+     "t": "Sun 5:10 p.m.",
+     "iso": "2026-11-01T22:10:57+00:00",
+     "outlet": "CTV News",
+     "title": "Trump says Canada-U.S. ‘very close’ to having a deal, following PM Carney saying they had a ‘good conversation’",
+     "url": "https://www.ctvnews.ca/world/trumps-tariffs/article/trump-says-canada-us-very-close-to-having-a-deal-following-pm-carney-saying-they-had-a-good-conversation/",
+     "ca": true,
+     "tie": "Canada and the U.S."
+    },
+    {
+     "t": "Sun 1:00 p.m.",
+     "iso": "2026-11-01T18:00:43+00:00",
+     "outlet": "PBS NewsHour",
+     "title": "Canada's Carney reports progress in trade talks with U.S. and Trump talks up 'concept' of a deal",
+     "url": "https://www.pbs.org/newshour/world/canadian-prime-minister-carney-reports-progress-in-trade-talks-with-trump-days-before-u-s-midterms",
+     "ca": false,
+     "tie": "Canada and the U.S."
+    },
+    {
+     "t": "Sun 12:14 p.m.",
+     "iso": "2026-11-01T17:14:12+00:00",
+     "outlet": "Global News",
+     "title": "Carney says Canada, U.S. working in coming weeks towards trade deal",
+     "url": "https://globalnews.ca/news/12129201/mark-carney-us-trade-deal-talks-ongoing/",
+     "ca": true,
+     "tie": "Canada and the U.S."
+    }
+   ],
+   "official": [],
+   "views": []
+  }
+ },
  "canangle_live": {
   "https://abcnews.com/Politics/live-updates/midterm-elections-2026-1-week-high-stakes-elections/?id=137578278": {
    "story": "Midterm elections live updates: Trump to deliver remarks, join tele-rallies on Monday",
@@ -2834,60 +3131,6 @@
      "outlet": "Narcity",
      "title": "Political betrayal, Canada trade war: Why Michigan is a Senate race to watch",
      "url": "https://www.narcity.com/michiganders-ready-to-vote-after-stunning-weekend",
-     "ca": false,
-     "tie": "Canada and the U.S."
-    },
-    {
-     "t": "Sun 12:14 p.m.",
-     "iso": "2026-11-01T17:14:12+00:00",
-     "outlet": "Global News",
-     "title": "Carney says Canada, U.S. working in coming weeks towards trade deal",
-     "url": "https://globalnews.ca/news/12129201/mark-carney-us-trade-deal-talks-ongoing/",
-     "ca": true,
-     "tie": "Canada and the U.S."
-    }
-   ],
-   "official": [],
-   "views": []
-  },
-  "https://www.youtube.com/watch?v=HqfSpx-hCTk": {
-   "story": "Democrat accused of 'betrayal' after backing Republican candidate in Michigan Senate race | Mornings",
-   "us": true,
-   "specific": 1,
-   "stories": [
-    {
-     "t": "Mon 4:01 a.m.",
-     "iso": "2026-11-02T09:01:21+00:00",
-     "outlet": "Narcity",
-     "title": "Political betrayal, Canada trade war: Why Michigan is a Senate race to watch",
-     "url": "https://www.narcity.com/michiganders-ready-to-vote-after-stunning-weekend",
-     "ca": false,
-     "tie": ""
-    },
-    {
-     "t": "Mon 4:00 a.m.",
-     "iso": "2026-11-02T09:00:00+00:00",
-     "outlet": "CBC News",
-     "title": "Canada's next budget to be unveiled this week amid U.S. trade war, economic uncertainty",
-     "url": "https://www.cbc.ca/news/politics/budget-carney-affordability-investments-9.7404193?cmp=rss",
-     "ca": true,
-     "tie": "Canada and the U.S."
-    },
-    {
-     "t": "Sun 5:10 p.m.",
-     "iso": "2026-11-01T22:10:57+00:00",
-     "outlet": "CTV News",
-     "title": "Trump says Canada-U.S. ‘very close’ to having a deal, following PM Carney saying they had a ‘good conversation’",
-     "url": "https://www.ctvnews.ca/world/trumps-tariffs/article/trump-says-canada-us-very-close-to-having-a-deal-following-pm-carney-saying-they-had-a-good-conversation/",
-     "ca": true,
-     "tie": "Canada and the U.S."
-    },
-    {
-     "t": "Sun 1:00 p.m.",
-     "iso": "2026-11-01T18:00:43+00:00",
-     "outlet": "PBS NewsHour",
-     "title": "Canada's Carney reports progress in trade talks with U.S. and Trump talks up 'concept' of a deal",
-     "url": "https://www.pbs.org/newshour/world/canadian-prime-minister-carney-reports-progress-in-trade-talks-with-trump-days-before-u-s-midterms",
      "ca": false,
      "tie": "Canada and the U.S."
     },
