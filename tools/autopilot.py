@@ -59,6 +59,8 @@ BIG_WORLD_CARRIERS = 15     # ... carried by at least this many newsrooms in all
 BIG_WORLD_FRESH_HOURS = 2   # ... with a report this recent
 CANADIAN_FRESH_HOURS = 6    # a Canadian story still developing: a report this recent
 TOP_RULES = [  # (number, name) shown in live/auto.json "considered", so it is always clear why a story is where it is
+    (0, "Today is the day of a major scheduled event (election day, budget day): it leads all day, with its Canadian angle"),
+    (0.5, "Leading other newsrooms' front pages (Canadian ones among them): the story everyone is leading with"),
     (1, "Canadian and breaking"),
     (2, "Big international story, on every front page"),
     (3, "Breaking news from abroad that Canadian newsrooms are carrying"),
@@ -1759,7 +1761,8 @@ def promote_live(res, now):
     for e, state in events:
         title = e.get("title", "")
         theme = _live_theme(title)
-        if ROUTINE_LIVE.search(title) or not (CAN_TIE.search(title) or theme):
+        us_ev = any(c.get("event_us") for c in cands) and bool(US_ELECTION.search(title))  # election night coverage
+        if ROUTINE_LIVE.search(title) or not (CAN_TIE.search(title) or theme or us_ev):
             continue
         ew = event_words(title) - EVENT_KIND_STOP
         ev_urls = {r["url"] for r in e.get("reports") or []}
@@ -1768,6 +1771,8 @@ def promote_live(res, now):
             if s["canada"] == "none":
                 continue
             if theme and s.get("theme") == theme:
+                n = 10
+            elif us_ev and s.get("event_us"):
                 n = 10
             else:
                 text = s["title"] + " " + " ".join(r["title"] for r in s.get("reports", []))
@@ -1901,6 +1906,7 @@ def _select(auto, cands, ranked, tier):
     # why each story is or isn't at the top (Hannah: "why is that not at the top of the news?")
     auto["considered"] = [{"title": s["title"], "url": s["url"], "rank": n + 1, "live": (s.get("live") or {}).get("title", ""), "weight": s.get("weight"), "score": s.get("score"), "independent": s.get("independent"), "most_read": s["popular"],
                            "canada": s["canada"], "theme": s.get("theme") or "", "top": s in ranked[:n_top],
+                           "fronts": s.get("fronts", 0), "fronts_who": s.get("fronts_who", []),
                            "rule": dict(TOP_RULES).get(top_rule(s), ""), "carriers": s.get("carriers"), "judgment": s.get("judgment"), "why_judged": s.get("judgment_why")} for n, s in enumerate(ranked)] + [c for c in (auto.get("considered") or []) if "rank" not in c]
 
 
@@ -2104,6 +2110,11 @@ def top_rule(s, now=None):
         return 9 if canadian else 10
     live = (s.get("live") or {}).get("state")
     breaking = s.get("tag") == "Breaking" or live == "now"  # Breaking: 4+ independent newsrooms, a report in the last hour
+    if s.get("event_day"):
+        return 0  # EVENT DAY (Hannah, Tue Nov 3, 2026): election day / budget day leads, whatever else is breaking
+    if ((s.get("fronts") or 0) >= FRONT_CONSENSUS and (s.get("fronts_ca") or 0) >= FRONT_CONSENSUS_CA
+            and s.get("judgment") != "local" and not SPORT.search((s.get("title") or "") + " " + (s.get("url") or ""))):
+        return 0.5  # the story every other newsroom is leading with (Hannah, Tue Nov 3, 2026)
     if canadian and breaking:
         return 1
     if (not canadian and (s.get("independent") or 0) >= BIG_WORLD_INDEPENDENT and (s.get("carriers") or 0) >= BIG_WORLD_CARRIERS
@@ -2114,7 +2125,10 @@ def top_rule(s, now=None):
     except Exception:
         broke = 99
     carried_here = any(CANADIAN_OUTLET.search(r.get("outlet") or "") for r in (s.get("reports") or []))
-    if not canadian and carried_here and (s.get("independent") or 0) >= BREAKING_INDEPENDENT_ABROAD and (
+    # Rule 3 is for news from abroad that matters to many people: a REGIONAL story (an escaped prisoner caught in
+    # Tennessee) never leads the page just because it is fresh (Hannah, Tue Nov 3, 2026: "Why is our lead ... a
+    # convicted murderer who escaped a complex in Tennessee?"). It needs the news judgment "national".
+    if not canadian and carried_here and s.get("judgment") == "national" and (s.get("independent") or 0) >= BREAKING_INDEPENDENT_ABROAD and (
             age * 60 < BREAKING_ABROAD_MINUTES  # just reported
             or (broke < BIG_ABROAD_HOURS and s.get("judgment") == "national" and (s.get("independent") or 0) >= BIG_ABROAD_INDEPENDENT)):  # big: two hours
         return 3
@@ -2213,9 +2227,22 @@ def pick_by_canada(auto, items, now, eds, papers, otr, canus_, mostread=None):
     # report in the last hour) competes for the top two like a Canadian story; its Canadian angle box is built by
     # canadian_angle() (the Canadian reports on it, then the Canada-U.S. relationship today).
     for s in cands:
-        s["us_election"] = us_election_breaking(s)
+        s["us_election"] = us_election_breaking(s) or bool(s.get("event_us"))
         if s["us_election"] and s["canada"] == "none":
             s["canada"] = "tie"
+        if s.get("event_day"):  # a big scheduled event matters to Canada (the U.S. midterms, the federal budget)
+            s["canus"] = s["canus"] or bool(s.get("event_us"))
+            if s["canada"] == "none":
+                s["canada"] = "tie"
+        # how many other newsrooms' front pages lead with it (FRONT_PAGES)
+        s["fronts"], s["fronts_ca"], s["fronts_who"] = front_count(s, FRONTS)
+    # one event, one top slot: other candidates about today's event join its theme, so they don't take a second slot
+    # (the first run had the midterms twice at the top); they stay in its reports and in the Canadian angle
+    for ev in [c for c in cands if c.get("event_day")]:
+        ev["theme"] = ev["event_day"]
+        for s in cands:
+            if s is not ev and not s.get("event_day") and _front_match(ev, s.get("title") or ""):
+                s["theme"] = ev["event_day"]
     # Canadian stories first (Hannah, Fri Oct 30, 2026: the Canada-EU summit "should stay up top because it's
     # Canadian"): tier 0 is Canadian news, the Canada-U.S. relationship and a Breaking U.S. election story (which gets
     # its Canadian angle); tier 1 is news from abroad with a Canadian tie, and general news; tier 2, no Canadian tie.
@@ -2247,6 +2274,10 @@ def pick_by_canada(auto, items, now, eds, papers, otr, canus_, mostread=None):
         except Exception as e:
             print("news judgment failed:", e)
             s["judgment"], s["judgment_why"] = "regional", "Regional: not judged (error)."
+        if s.get("event_day") or (s.get("fronts") or 0) >= FRONT_CONSENSUS:
+            s["judgment"] = "national"
+            s["judgment_why"] = ("National: " + s["event_day"] + " is today." if s.get("event_day") else
+                                 f"National: leading {s['fronts']} front pages ({', '.join(s['fronts_who'][:6])}).")
         s["weight"] = weight(s)
     ranked = sorted(cands, key=rank_key)  # THE RULE (top_rule), then the bigger story; stable: ties keep the ranking order
     # one story per running theme in the top pair, so Canada-U.S. leads without crowding out everything else
@@ -3231,6 +3262,192 @@ def big_week(items, now, prev=()):
 # (Hannah, Sat Oct 31, 2026: "Why is the day so far section so old? Last Thursday, last Tuesday"; they were a list
 # written by hand on Tuesday). Each desk: the stories of the last DESK_HOURS, most newsrooms first, each with its
 # newsroom's own headline, summary and photo; the outlet bar counts the newsrooms carrying it.
+# ===== EVENT DAY (Hannah, Tue Nov 3, 2026, U.S. midterms day, when an escaped Tennessee prisoner was leading the page:
+# "Today's is an obvious lead. We have to have a code that always recognizes something like this.") A big scheduled
+# event that everyone knows is coming (an election, a federal budget: BIG_EVENTS above) is the top story ON ITS DAY,
+# whatever else is breaking, from EVENT_DAY_FROM (Eastern) on the day until the hour given in EVENT_DAY_UNTIL the day
+# after (an election's results run into the next morning). The ranking alone missed it: election coverage is hundreds
+# of different race-by-race headlines, never one cluster of matching headlines, so it never became a "story".
+# The top story is built straight from the event's own coverage: the newest report on it is the headline, every
+# newsroom covering it is listed, and the Canadian angle (Canadian reports on it, Canada-U.S. stories) comes with it.
+EVENT_DAY_FROM = 5          # 5 a.m. Eastern on the day
+EVENT_DAY_UNTIL = {"U.S. midterm elections": 12}   # hours into the next day it keeps leading (results); default 0 (midnight)
+EVENT_DAY_TAG = {"U.S. midterm elections": "Election Day"}  # the tag over the headline (default: "Today")
+EVENT_WHOLE = re.compile(r"\b(Election Day|America votes|Americans (?:vote|head to|go to|cast)|voters (?:head|go) to|polls? (?:open|close|closing)|"
+                         r"control (?:of|for) (?:Congress|the House|the Senate)|midterm (?:results|elections?)|election results|budget day|tables? (?:the )?budget|"
+                         r"what to watch|live updates|results)\b", re.I)
+EVENT_DAY_US = re.compile(r"\bU\.?S\.?\b|American|midterm|Congress|White House", re.I)  # a U.S. event: it gets the U.S. election treatment
+
+
+# ===== WHAT EVERY OTHER NEWSROOM IS LEADING WITH (Hannah, Tue Nov 3, 2026: "it should also be looking at what the big
+# story is across other websites. If I go across every other website, it's the top story. How can it not be for us?")
+# Each run reads the top of the front pages below (the first FRONT_TOP headlines, in page order). A story at the top
+# of FRONT_CONSENSUS front pages or more, FRONT_CONSENSUS_CA of them Canadian, is the top news: rule 0.5, right after
+# an event day, ahead of anything else breaking. live/auto.json "fronts" records what each front page led with.
+FRONT_PAGES = [  # (newsroom, front page, Canadian?)
+    ("CBC News", "https://www.cbc.ca/news", True), ("CTV News", "https://www.ctvnews.ca/", True), ("Global News", "https://globalnews.ca/", True),
+    ("Toronto Star", "https://www.thestar.com/", True), ("National Post", "https://nationalpost.com/", True), ("CityNews", "https://toronto.citynews.ca/", True),
+    ("The Globe and Mail", "https://www.theglobeandmail.com/", True), ("CP24", "https://www.cp24.com/", True), ("BNN Bloomberg", "https://www.bnnbloomberg.ca/", True),
+    ("CNN", "https://www.cnn.com/", False), ("NBC News", "https://www.nbcnews.com/", False), ("CBS News", "https://www.cbsnews.com/", False),
+    ("ABC News", "https://abcnews.go.com/", False), ("The New York Times", "https://www.nytimes.com/", False), ("The Washington Post", "https://www.washingtonpost.com/", False),
+    ("Politico", "https://www.politico.com/", False), ("BBC News", "https://www.bbc.com/news", False), ("The Guardian", "https://www.theguardian.com/international", False),
+    ("NPR", "https://www.npr.org/", False), ("Fox News", "https://www.foxnews.com/", False),
+]
+FRONT_TOP = 6            # headlines read from the top of each front page
+FRONT_CONSENSUS = 6      # front pages a story must lead (be in their top FRONT_TOP) ...
+FRONT_CONSENSUS_CA = 2   # ... with at least this many Canadian ones
+FRONT_SKIP = re.compile(r"^(subscribe|sign in|log in|newsletters?|watch live|live tv|listen|podcasts?|games?|crossword|more|menu|search|"
+                        r"skip to|advertisement|sponsored|opinion|sections?|top stories|latest|most (?:read|popular)|trending)\b", re.I)
+
+
+def front_pages():
+    """[{"o": newsroom, "ca": bool, "h": [the first FRONT_TOP headlines, in page order]}] for the front pages that loaded."""
+    def one(f):
+        o, url, ca = f
+        x = curl(url) or ""
+        if len(x) < 5000:
+            return None
+        x = re.sub(r"(?is)<(script|style|noscript|svg|nav|header|footer)\b.*?</\1>", " ", x)
+        heads, seen = [], set()
+        for m in re.finditer(r"(?is)<(h1|h2|h3)\b[^>]*>(.*?)</\1>", x):
+            t = clean(re.sub(r"<[^>]+>", " ", m.group(2)))
+            k = t.lower()
+            if len(t) < 25 or len(t) > 220 or FRONT_SKIP.search(t) or k in seen:
+                continue
+            seen.add(k)
+            heads.append(t)
+            if len(heads) >= FRONT_TOP:
+                break
+        return {"o": o, "ca": ca, "h": heads} if heads else None
+    with ThreadPoolExecutor(10) as ex:
+        return [r for r in ex.map(one, FRONT_PAGES) if r]
+
+
+def _front_match(s, head):
+    """Is this front-page headline about story s? An event day matches its event; otherwise two shared names or key
+    words with the story's own headline and first reports."""
+    import gap_check as gc
+    if s.get("event_day"):
+        ev = next((e for e in BIG_EVENTS if e[0] == s["event_day"]), None)
+        if ev and re.search(ev[3], head, re.I) and re.search(ev[4], head, re.I):
+            return True
+        return bool(s.get("event_us") and (US_ELECTION.search(head) or re.search(r"\bAmerica votes\b|\bvotes?\b|\bpolls\b|\bmidterm", head, re.I))
+                    and US_TIE.search(head))
+    mine = set()
+    for t in [s.get("title") or ""] + [r["title"] for r in (s.get("reports") or [])[:4]]:
+        mine |= {x for x in gc.names(t) | gc.keys(t) if x not in WEAK}
+    theirs = {x for x in gc.names(head) | gc.keys(head) if x not in WEAK}
+    shared = mine & theirs
+    return len(shared) >= 2 and any(x in gc.names("The " + head) for x in shared)  # "The ": a name leading the headline counts
+
+
+def front_count(s, fronts):
+    """(front pages leading with story s, Canadian ones among them, their names)"""
+    hit = [f for f in fronts or [] if any(_front_match(s, h) for h in f["h"])]
+    return len(hit), sum(1 for f in hit if f["ca"]), [f["o"] for f in hit]
+
+
+FRONTS = []  # this run's front pages (set by run())
+
+
+def event_day_stories(bigweek, items, now, imgdir, prev):
+    import autoupdate as au
+    from zoneinfo import ZoneInfo
+    et = ZoneInfo("America/Toronto")
+    loc = now.astimezone(et)
+    out = []
+    for name, d, what, a, b in BIG_EVENTS:
+        day = datetime.strptime(d, "%Y-%m-%d").date()
+        start = datetime(day.year, day.month, day.day, EVENT_DAY_FROM, tzinfo=et)
+        end = datetime(day.year, day.month, day.day, tzinfo=et) + timedelta(days=1, hours=EVENT_DAY_UNTIL.get(name, 0))
+        if not (start <= loc < end):
+            continue
+        ra, rb = re.compile(a, re.I), re.compile(b, re.I)
+        card = next((c for c in bigweek or [] if c.get("name") == name), {}) or {}
+        # every report on the event in the last 24 hours, from the feeds (newest first), one per newsroom
+        rows, seen = [], set()
+        for dt, outlet, title, link, _ in sorted(items, key=lambda x: x[0], reverse=True):
+            if (now - dt).total_seconds() > 24 * 3600 or not (ra.search(title) and rb.search(title)):
+                continue
+            o = au.clean_outlet(outlet)
+            if (o in seen or au.OPINION.search(title + " " + link) or SPORT.search(title + " " + link) or VIDEO.search(link)
+                    or ("theglobeandmail.com" not in link and not au.ok_item(outlet, link))):
+                continue
+            seen.add(o)
+            rows.append((dt, outlet, title, link))
+        # the card's reports (searched coverage, the Canadian angle) join them
+        for r in card.get("reports") or []:
+            try:
+                dt = datetime.fromisoformat(r["iso"])
+            except Exception:
+                continue
+            o = au.clean_outlet(r["outlet"].replace(" (subscribers)", ""))
+            if o in seen or (now - dt).total_seconds() > 36 * 3600:
+                continue
+            seen.add(o)
+            rows.append((dt, r["outlet"], r["title"], r["url"]))
+        if not rows:
+            continue
+        rows.sort(key=lambda r: r[0], reverse=True)
+        free = [r for r in rows if "theglobeandmail.com" not in r[3]] or rows  # the Globe never first (Hannah's rule)
+        with ThreadPoolExecutor(8) as ex:
+            list(ex.map(lambda r: page_info(r[3]), free[:8]))
+        # the headline: the newest report about the event AS A WHOLE (Americans vote, control of Congress), not one race
+        # in it ("DOJ ramps up probe of Alaska Senate race" led on the first run); a narrower report only if none
+        whole = [r for r in free if EVENT_WHOLE.search(r[2])]
+        free = whole + [r for r in free if r not in whole]
+        lead, info = free[0], {}
+        for r in free[:6]:  # the newest such report with its own summary is the headline
+            pi = page_info(r[3]) or {}
+            if len(pi.get("desc", "")) >= 40:
+                lead, info = r, pi
+                break
+        key = "event-" + re.sub(r"\W+", "-", name.lower()).strip("-") + "-" + d
+        old = next((s for s in prev if s.get("key") == key), None)
+        photo = None
+        for r in [lead] + [x for x in free[:6] if x is not lead]:
+            pi = info if r is lead else (page_info(r[3]) or {})
+            if not pi.get("img") or GENERIC_IMG.search(pi["img"]):
+                continue
+            if old and old.get("photo") and old["photo"].get("orig") == pi["img"] and os.path.exists(os.path.join(imgdir, os.path.basename(old["photo"]["src"]))):
+                photo = old["photo"]
+                break
+            src = save_photo(pi["img"], imgdir, key)
+            if not src:
+                continue
+            o = au.clean_outlet(r[1])
+            cap, credit = pi.get("caption") or pi.get("alt") or "", pi.get("credit") or ""
+            photo = {"src": src, "orig": pi["img"], "caption": (cap.rstrip(".") + "." if cap else "Photo") + (f" ({credit})" if credit else "") + f" — via {o}",
+                     "alt": cap[:160] or r[2], "outlet": o, "url": r[3]}
+            break
+        # the reports: the newest first, then the Canadian angle (Canadian reports on the event), then the rest
+        can = [r for r in rows if CAN_TIE.search(r[2]) and r is not lead]
+        rest = [r for r in rows if r is not lead and r not in can]
+        ordered = [lead] + rest[:5] + can[:5] + rest[5:9]
+        ordered = sorted(ordered[:1], key=lambda r: 0) + [r for r in ordered[1:] if "theglobeandmail.com" not in r[3]] + [r for r in ordered[1:] if "theglobeandmail.com" in r[3]]
+        first = min(rows)
+        desc = lambda u: ((INFO_CACHE.get(u) or {}).get("desc") or "")[:300]
+        official = [{"t": x.get("t") or "", "primary": True, "outlet": x.get("who", ""), "title": x.get("title", ""), "url": x.get("url", ""),
+                     "desc": "", "wire": "", "by": [], "copies": []} for x in card.get("official") or []]
+        tag = EVENT_DAY_TAG.get(name, "Today")
+        out.append({
+            "key": key, "event_day": name, "event_tag": tag + " · " + name if tag != name else tag,
+            "event_us": bool(EVENT_DAY_US.search(name)), "event_date": d,
+            "words": [w_ for w_ in re.findall(r"[A-Za-z][\w.]+", name) if len(w_) > 3][:4] + ["midterms" if "midterm" in name.lower() else name.split()[-1]],
+            "score": 100, "outlets": independent(rows), "carriers": len(rows), "independent": independent(rows),
+            "tag": "Breaking", "title": clean(lead[2]), "url": lead[3], "outlet": au.clean_outlet(lead[1]), "t": w.eastern(lead[0]), "iso": lead[0].isoformat(),
+            "summary": info.get("desc", "") or what,
+            "first": {"outlet": au.clean_outlet(first[1]), "url": first[3], "t": w.eastern(first[0]), "title": clean(first[2]), "iso": first[0].isoformat()},
+            "newest": rows[0][0].isoformat(), "photo": photo,
+            "reports": [{"t": w.eastern(r[0]), "iso": r[0].isoformat(), "outlet": au.clean_outlet(r[1]), "title": clean(r[2]), "url": r[3], "desc": desc(r[3])} for r in ordered[:14]],
+            "sources": official + [{"t": w.eastern(r[0]), "primary": is_primary(r), "outlet": au.clean_outlet(r[1]), "title": clean(r[2]), "url": r[3],
+                                    "desc": desc(r[3]), "wire": "", "by": [], "copies": []} for r in ordered[:14]],
+            "events": [], "replaces_top": False, "theme": "",
+        })
+        print(f"event day: {name} leads ({len(rows)} newsrooms; headline: {lead[2][:70]})")
+    return out
+
+
 DESK_HOURS, DESK_MAX, DESK_INFO_LOOKS = 24, 8, 36
 DESK_BUSINESS = re.compile(r"\b(econom\w*|inflation|GDP|jobs report|unemployment|interest rates?|rate (?:cut|hike|decision)|Bank of Canada|"
                            r"Federal Reserve|stocks?|TSX|stock market|S&P|Nasdaq|markets?|earnings|profits?|revenue|shares|investors?|layoffs?|"
@@ -3386,6 +3603,24 @@ def run(page, items, groups, breaking, now, imgdir, prev):
             print("exclusive:", sc[0]["outlet"], sc[0]["title"][:80])
     except Exception as e:
         print("exclusive check failed:", e)
+    global FRONTS
+    try:  # what every other newsroom is leading with (FRONT_PAGES)
+        FRONTS = front_pages()
+        res["fronts"] = FRONTS
+        print(f"front pages read: {len(FRONTS)} of {len(FRONT_PAGES)}")
+    except Exception as e:
+        print("front pages failed:", e)
+        FRONTS = []
+    try:  # EVENT DAY: election day, budget day lead the page all day (BIG_EVENTS, EVENT_DAY_UNTIL)
+        a_ = res.get("auto") or {}
+        ev = event_day_stories(res.get("bigweek") or [], items, now, imgdir, (prev.get("auto") or {}).get("stories", []))
+        if ev:
+            a_.setdefault("stories", [])
+            a_["stories"] = ev + a_["stories"]
+            a_["takeover"] = True  # the event leads, over a hand-written top story too
+            res["auto"] = a_
+    except Exception as e:
+        print("event day failed:", e)
     try:  # the two top stories: Canadian ties first
         res["auto"] = pick_by_canada(res.get("auto") or {}, items, now, res.get("eds"), res.get("papers"), res.get("otr"), res.get("canus"), res.get("mostread"))
     except Exception as e:
