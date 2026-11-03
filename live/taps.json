@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-03T23:06:19.897071+00:00",
- "labels": 304,
+ "checked": "2026-11-03T23:58:17.819108+00:00",
+ "labels": 343,
  "problems": [],
  "guard": {
   "fixed": [
@@ -12,12 +12,17 @@
    {
     "label": "NBC News",
     "was": "(card link) nbcnews.com",
-    "now": "https://www.nbcnews.com/politics/2026-election/democrats-republicans-battle-for-house-trump-washington-midterm-rcna605760"
+    "now": "https://www.nbcnews.com/politics/2026-election/exit-poll-trump-midterms-voters-economy-disapproval-rcna607045"
    },
    {
     "label": "PBS News",
     "was": "(card link) pbs.org",
-    "now": "https://www.pbs.org/newshour/politics/trump-and-the-high-cost-of-living-loom-over-california-governors-race-between-becerra-and-hilton"
+    "now": "https://www.pbs.org/newshour/politics/ap-voter-poll-the-economy-and-the-state-of-democracy-are-voters-top-issues"
+   },
+   {
+    "label": "NPR",
+    "was": "(card link) npr.org",
+    "now": "https://www.npr.org/2026/11/03/nx-s1-6026666/what-democrats-plan-to-prioritize-if-they-retake-the-house"
    },
    {
     "label": "Politico",
@@ -26,6 +31,11 @@
    }
   ],
   "disabled": [],
-  "lifted": []
+  "lifted": [
+   {
+    "label": "ABC News",
+    "cardOpens": "abcnews.comhttps"
+   }
+  ]
  }
 }
