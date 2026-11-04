@@ -3573,7 +3573,7 @@ def proj_race(call):
     """Which race a call is about, so each network's call on it sits on one line: chamber control first."""
     c = call.lower()
     win = r"(?:win|wins|won|keep|keeps|kept|hold|holds|held|retain|retains|take|takes|took|flip|flips|flipped)\s+(?:back\s+)?"
-    for k, rx in (("Control of the House", win + r"(?:control of (?:the )?(?:u\.s\. )?house|(?:the )?house(?: majority)?\b)"),
+    for k, rx in (("Control of the House", win + r"(?:control of (?:the )?(?:u\.s\. )?house|(?:the )?house(?: majority)?\b(?! seats?| districts?| races?| ?\d))"),  # "flips House seat" is one race, not control
                   ("Control of the Senate", win + r"(?:control of (?:the )?(?:u\.s\. )?senate|(?:the )?senate(?: majority)?\b(?! seat| race))"),
                   ("Control of Congress", win + r"control of congress"),
                   ("The next government", r"(?:majority|minority) government|will form (?:the )?government")):

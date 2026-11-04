@@ -25,7 +25,7 @@
 #autoBreaking .pj-new .pj-net::before { content: ""; display: inline-block; width: 6px; height: 6px; margin-right: 5px; border-radius: 50%; background: #ff4d6d; vertical-align: middle; }
 #autoBreaking .ab-proj .pj-extra { display: none; }
 #autoBreaking .ab-proj.pj-all .pj-extra { display: block; }
-#autoBreaking .pj-toggle { display: inline-flex; align-items: center; gap: 6px; min-height: 40px; margin: 8px 0 2px; padding: 8px 16px; border-radius: 999px; border: 1px solid rgba(255,255,255,.45); background: rgba(255,255,255,.1); color: #fff; font: 700 14px/1 inherit; font-family: inherit; cursor: pointer; }
+#autoBreaking .pj-toggle { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; margin: 0 0 0 auto; text-transform: none; letter-spacing: 0; padding: 8px 16px; border-radius: 999px; border: 1px solid rgba(255,255,255,.45); background: rgba(255,255,255,.1); color: #fff; font: 700 14px/1 inherit; font-family: inherit; cursor: pointer; }
 #autoBreaking .pj-toggle:hover { background: rgba(255,255,255,.18); }
 #autoBreaking .pj-toggle:focus-visible { outline: 3px solid #F6E1E8; outline-offset: 2px; }
 #autoBreaking .pj-toggle .o2 { display: none; }
@@ -6524,12 +6524,14 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
         const li = (p) => '<li' + (fresh(p) ? ' class="pj-new"' : '') + '><span class="pj-net">' + (p.named ? esc(p.net) + ' projects' : 'Reported by ' + esc(p.net)) + '</span>'
           + '<q>' + a(p.url, esc(p.call)) + '</q><time>' + esc(p.t) + ' ET' + (fresh(p) ? ' · <b>New</b>' : '') + '</time>'
           + (p.via ? '<span class="pj-via">via ' + esc(p.via) + '</span>' : '') + '</li>';
-        return '<div class="ab-proj' + (window.PAL_pjAll ? ' pj-all' : '') + '"><p class="ab-proj-h"><span class="pj-dot" aria-hidden="true"></span>Projections: who is calling what <span class="pn-n">' + P.length + ' call' + (P.length === 1 ? '' : 's') + ', ' + new Set(P.map((p) => p.net)).size + ' newsrooms</span></p>'
+        return '<div class="ab-proj' + (window.PAL_pjAll ? ' pj-all' : '') + '"><p class="ab-proj-h"><span class="pj-dot" aria-hidden="true"></span>Projections: who is calling what <span class="pn-n">' + P.length + ' call' + (P.length === 1 ? '' : 's') + ', ' + new Set(P.map((p) => p.net)).size + ' newsrooms</span>'
+          // Show more / Show fewer, up in the heading (Hannah, Tue Nov 3, 2026); the reader's choice is kept through each refresh
+          + (races.length > PJ_OPEN ? '<button type="button" class="pj-toggle" aria-expanded="' + (window.PAL_pjAll ? 'true' : 'false') + '" onclick="const b=this.closest(\'.ab-proj\');const on=b.classList.toggle(\'pj-all\');window.PAL_pjAll=on;this.setAttribute(\'aria-expanded\',on);if(!on)b.scrollIntoView({block:\'nearest\'})">'
+            + '<span class="o1">Show more · ' + (races.length - PJ_OPEN) + ' races</span><span class="o2">Show fewer</span><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>' : '') + '</p>'
           + races.slice(0, PJ_OPEN).map((r) => '<div class="pj-race"><p class="pj-r">' + esc(r) + '</p><ol>' + byRace[r].calls.map(li).join('') + '</ol></div>').join('')
           // Show more / Show fewer (Hannah, Tue Nov 3, 2026); the reader's choice is kept through each refresh
           + (races.length > PJ_OPEN ? races.slice(PJ_OPEN).map((r) => '<div class="pj-race pj-extra"><p class="pj-r">' + esc(r) + '</p><ol>' + byRace[r].calls.map(li).join('') + '</ol></div>').join('')
-            + '<button type="button" class="pj-toggle" aria-expanded="' + (window.PAL_pjAll ? 'true' : 'false') + '" onclick="const b=this.closest(\'.ab-proj\');const on=b.classList.toggle(\'pj-all\');window.PAL_pjAll=on;this.setAttribute(\'aria-expanded\',on);if(!on)b.scrollIntoView({block:\'nearest\'})">'
-            + '<span class="o1">Show more: ' + (races.length - PJ_OPEN) + ' more races</span><span class="o2">Show fewer</span><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>' : '')
+            : '')
           + '<p class="pj-note">Each call is the network’s own, in its own words, linked to where it was made. A projection is not a final result.</p></div>';
       })() : '';
       return '<article class="ab-story' + (i ? ' ab-second' : '') + (s.proj_lead ? ' ab-projlead' : '') + '" data-key="' + esc(s.key) + '">' + ph + '<span class="tag">' + (s.event_tag ? esc(s.event_tag) : s.scoop ? 'Exclusive · ' + esc(s.outlet) : onAir || recent ? 'Breaking' : 'Developing') + '</span>'
