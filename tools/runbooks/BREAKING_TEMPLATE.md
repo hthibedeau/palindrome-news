@@ -130,3 +130,6 @@ On a big news day (an event day, or a story leading 6+ front pages), the big sto
 - a story from abroad goes back among the other stories.
 On a wide screen the lone big story uses the full width: photo, headline, summary and live links on the left; the Canadian angle, the projections and Connected to this story beside them (soloLayout in index.html). Phones keep one column. Live coverage follows right under it.
 A photo with a branded overlay (the Guardian's "Live" banner) is never used as the story's photo.
+
+## A fresh picture on a Breaking story (Hannah, Tue Nov 3, 2026)
+Every top story's photo changes every 30 minutes (PHOTO_ROTATE_MINUTES) to another real news photo from the story's own reports: a newer report's photo first, then one not shown recently. Each keeps its own caption and credit. Branded graphics and logos are never used. With only one usable photo, it stays. Code: `pick_photo()` in tools/autopilot.py.

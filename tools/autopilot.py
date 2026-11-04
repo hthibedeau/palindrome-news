@@ -430,6 +430,63 @@ def _page_info(url):
     return info
 
 
+# ===== A FRESH PICTURE ON A BREAKING STORY (Hannah, Tue Nov 3, 2026, U.S. Election Night: "should also try to change
+# the photograph in the top picture periodically in a breaking news story.")
+# Every top story's photo is chosen by pick_photo(). It keeps a photo for PHOTO_ROTATE_MINUTES, then moves to another
+# real news photo from the story's own reports: a newer report's photo first, then one not shown recently, so readers
+# see the story change through the day. Each photo keeps its own caption and credit, linked to its newsroom. Branded
+# graphics and logos (GENERIC_IMG) are never used. With only one usable photo, it stays.
+PHOTO_ROTATE_MINUTES = 30
+PHOTO_SEEN_KEEP = 10
+
+
+def pick_photo(key, rows, old, imgdir, now, first_info=None):
+    """rows: the story's reports, best first (row[1] outlet, row[2] title, row[3] url). Returns (photo, seen list)."""
+    import autoupdate as au
+    old = old or {}
+    cur = old.get("photo") or None
+    seen = list(old.get("photo_seen") or ([cur["orig"]] if cur and cur.get("orig") else []))
+    cands = []
+    for i, r in enumerate(rows[:8]):
+        pi = (first_info if i == 0 and first_info else None) or page_info(r[3]) or {}
+        img = pi.get("img")
+        if not img or GENERIC_IMG.search(img) or any(c[2] == img for c in cands):
+            continue
+        cands.append((r, pi, img))
+    if not cands:
+        return cur, seen
+    since = None
+    try:
+        since = datetime.fromisoformat(cur.get("since")) if cur and cur.get("since") else None
+    except Exception:
+        since = None
+    cur_ok = bool(cur and cur.get("src") and os.path.exists(os.path.join(imgdir, os.path.basename(cur["src"]))) and not GENERIC_IMG.search(cur.get("orig") or ""))
+    due = not cur_ok or since is None or (now - since).total_seconds() >= PHOTO_ROTATE_MINUTES * 60
+    if not due:
+        if not cur.get("since"):
+            cur["since"] = now.isoformat()
+        return cur, seen
+    # the next photo: one never shown on this story (newest report first), else the one shown longest ago
+    order = [c for c in cands if c[2] not in seen] or sorted([c for c in cands if not cur or c[2] != cur.get("orig")],
+                                                             key=lambda c: seen.index(c[2]) if c[2] in seen else -1)
+    if not order:
+        if cur_ok:
+            cur["since"] = now.isoformat()
+            return cur, seen
+        order = cands
+    for r, pi, img in order:
+        src = save_photo(img, imgdir, key)
+        if not src:
+            continue
+        o = au.clean_outlet(r[1])
+        cap, credit = pi.get("caption") or pi.get("alt") or "", pi.get("credit") or ""
+        photo = {"src": src, "orig": img, "caption": (cap.rstrip(".") + "." if cap else "Photo") + (f" ({credit})" if credit else "") + f" — via {o}",
+                 "alt": cap[:160] or r[2], "outlet": o, "url": r[3], "since": now.isoformat()}
+        seen = [x for x in seen if x != img] + [img]
+        return photo, seen[-PHOTO_SEEN_KEEP:]
+    return (cur if cur_ok else None), seen
+
+
 def save_photo(src, outdir, tag):
     try:
         from PIL import Image
@@ -537,23 +594,8 @@ def build_story(g, now, imgdir, prev):
         if len(pi.get("desc", "")) >= 40:
             lead, info = r, pi
             break
-    photo = None
-    for r in [lead] + [x for x in news_reps[:6] if x is not lead]:
-        pi = info if r is lead else page_info(r[3])
-        if not pi.get("img") or GENERIC_IMG.search(pi["img"]):
-            continue
-        if old and old.get("photo") and old["photo"].get("orig") == pi["img"] and os.path.exists(os.path.join(imgdir, os.path.basename(old["photo"]["src"]))):
-            photo = old["photo"]
-            break
-        src = save_photo(pi["img"], imgdir, key)
-        if not src:
-            continue
-        outlet = au.clean_outlet(r[1])
-        cap = pi.get("caption") or pi.get("alt") or ""
-        credit = pi.get("credit") or ""
-        caption = (cap.rstrip(".") + "." if cap else "Photo") + (f" ({credit})" if credit else "") + f" — via {outlet}"
-        photo = {"src": src, "orig": pi["img"], "caption": caption, "alt": cap[:160] or r[2], "outlet": outlet, "url": r[3]}
-        break
+    # A FRESH PICTURE ON A BREAKING STORY: a new photo from the story's reports every PHOTO_ROTATE_MINUTES
+    photo, photo_seen = pick_photo(key, [lead] + [x for x in news_reps[:7] if x is not lead], old, imgdir, datetime.now(timezone.utc), info)
     newest = reps[0][0]
     # What each newsroom reports: every outlet's own lead sentence (og:description), side by side
     with ThreadPoolExecutor(6) as ex:
@@ -572,7 +614,7 @@ def build_story(g, now, imgdir, prev):
         "title": clean(lead[2]), "url": lead[3], "outlet": au.clean_outlet(lead[1]), "t": w.eastern(lead[0]), "iso": lead[0].isoformat(),
         "summary": info.get("desc", ""),
         "first": {"outlet": au.clean_outlet(first[1]), "url": first[3], "t": w.eastern(first[0]), "title": clean(first[2]), "iso": first[0].isoformat()},
-        "newest": newest.isoformat(), "photo": photo,
+        "newest": newest.isoformat(), "photo": photo, "photo_seen": photo_seen,
         "independent": independent(reps),
         "reports": [{"t": w.eastern(r[0]), "iso": r[0].isoformat(), "outlet": au.clean_outlet(r[1]), "title": clean(r[2]), "url": r[3],
                      "desc": descs.get(r[3], "")} for r in reps[:14]],
@@ -3738,22 +3780,8 @@ def event_day_stories(bigweek, items, now, imgdir, prev):
         key = "event-" + re.sub(r"\W+", "-", name.lower()).strip("-") + "-" + d
         STORY_MATCH[key] = (ra, rb)  # the event matches only by its own two-part test (ONE STORY, ITS OWN SUBJECT)
         old = next((s for s in prev if s.get("key") == key), None)
-        photo = None
-        for r in [lead] + [x for x in free[:6] if x is not lead]:
-            pi = info if r is lead else (page_info(r[3]) or {})
-            if not pi.get("img") or GENERIC_IMG.search(pi["img"]):
-                continue
-            if old and old.get("photo") and old["photo"].get("orig") == pi["img"] and os.path.exists(os.path.join(imgdir, os.path.basename(old["photo"]["src"]))):
-                photo = old["photo"]
-                break
-            src = save_photo(pi["img"], imgdir, key)
-            if not src:
-                continue
-            o = au.clean_outlet(r[1])
-            cap, credit = pi.get("caption") or pi.get("alt") or "", pi.get("credit") or ""
-            photo = {"src": src, "orig": pi["img"], "caption": (cap.rstrip(".") + "." if cap else "Photo") + (f" ({credit})" if credit else "") + f" — via {o}",
-                     "alt": cap[:160] or r[2], "outlet": o, "url": r[3]}
-            break
+        # A FRESH PICTURE ON A BREAKING STORY: a new photo from the newest reports every PHOTO_ROTATE_MINUTES
+        photo, photo_seen = pick_photo(key, [lead] + [x for x in free[:7] if x is not lead], old, imgdir, now, info)
         # the reports: the newest first, then the Canadian angle (Canadian reports on the event), then the rest
         can = [r for r in rows if CAN_TIE.search(r[2]) and r is not lead]
         rest = [r for r in rows if r is not lead and r not in can]
@@ -3774,7 +3802,7 @@ def event_day_stories(bigweek, items, now, imgdir, prev):
             "tag": "Breaking", "title": clean(lead[2]), "url": lead[3], "outlet": au.clean_outlet(lead[1]), "t": w.eastern(lead[0]), "iso": lead[0].isoformat(),
             "summary": info.get("desc", "") or what,
             "first": {"outlet": au.clean_outlet(first[1]), "url": first[3], "t": w.eastern(first[0]), "title": clean(first[2]), "iso": first[0].isoformat()},
-            "newest": rows[0][0].isoformat(), "photo": photo,
+            "newest": rows[0][0].isoformat(), "photo": photo, "photo_seen": photo_seen,
             "reports": [{"t": w.eastern(r[0]), "iso": r[0].isoformat(), "outlet": au.clean_outlet(r[1]), "title": clean(r[2]), "url": r[3], "desc": desc(r[3])} for r in ordered[:14]],
             "sources": official + [{"t": w.eastern(r[0]), "primary": is_primary(r), "outlet": au.clean_outlet(r[1]), "title": clean(r[2]), "url": r[3],
                                     "desc": desc(r[3]), "wire": "", "by": [], "copies": []} for r in ordered[:14]],
