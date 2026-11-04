@@ -7865,4 +7865,200 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
   #autoBreaking.solo .ab-story::after { content: ""; display: block; clear: both; }
 }
 </style>
+<!-- cmb:start -->
+<style id="cmb">
+/* ONE PLACE FOR EACH THING (Hannah, Wed Nov 4, 2026: "there is also a lot of duplication on the page. What would you
+   suggest combining to make the page even stronger" ... "do that and then I want to look at it. Be prepared to go back
+   to this if I dont"). A preview layer: index.html is untouched until she adopts it (tools/build_combine_preview.py). */
+.cmb-dup, .cmb-old, .cmb-off { display: none !important; }
+#bigWeek.cmb-stay { margin-top: 0; }
+#bigWeek.cmb-stay > .band-head h2 { display: none; }
+.cmb-sec { margin: 40px 0; }
+.cmb-sec > .band-head { margin-bottom: 14px; }
+.cmb-sec > .band-head h2 { font-family: var(--serif) !important; font-weight: 500 !important; font-size: clamp(28px, 3.4vw, 34px) !important; letter-spacing: -.01em !important; text-transform: none !important; color: var(--title); }
+.cmb-tabs { display: flex; gap: 6px; flex-wrap: wrap; margin: 0 0 18px; padding: 0; border-bottom: 1px solid var(--line); }
+.cmb-tabs button { font: 600 13.5px/1 var(--sans); letter-spacing: .04em; text-transform: uppercase; color: var(--muted);
+  background: none; border: 0; border-bottom: 3px solid transparent; padding: 11px 12px 10px; margin-bottom: -1px; cursor: pointer; }
+.cmb-tabs button[aria-selected="true"] { color: var(--title); border-bottom-color: var(--accent); }
+.cmb-tabs button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.cmb-tabs .n { font-weight: 500; opacity: .7; margin-left: 4px; }
+.cmb-panel[hidden] { display: none !important; }
+/* the merged sections keep their own description; their big heading is now the tab */
+.cmb-panel > section { margin: 0 !important; padding-top: 0 !important; border-top: 0 !important; }
+.cmb-panel > section > .band-head h2 { display: none; }
+.cmb-panel > section > .band-head { margin-bottom: 12px; border-top: 0 !important; padding-top: 0 !important; }
+.cmb-panel > section > .band-head p { margin: 0; color: var(--muted); }
+/* the timeline inside the top story */
+#autoBreaking .cmb-tl { margin-top: 22px; border-top: 1px solid rgba(255,255,255,.18); padding-top: 14px; }
+#autoBreaking .cmb-tl > summary { cursor: pointer; font: 700 13px/1.3 var(--sans); letter-spacing: .08em; text-transform: uppercase; color: #fff; list-style: none; }
+#autoBreaking .cmb-tl > summary::-webkit-details-marker { display: none; }
+#autoBreaking .cmb-tl > summary::after { content: ' ▾'; }
+#autoBreaking .cmb-tl[open] > summary::after { content: ' ▴'; }
+#autoBreaking .cmb-tl #developed { margin: 10px 0 0; padding: 0; background: none; border: 0; color: inherit; }
+#autoBreaking .cmb-tl #developed .band-head { display: none; }
+#autoBreaking .cmb-tl #developed, #autoBreaking .cmb-tl #developed * { color: inherit; }
+#autoBreaking .cmb-tl #developed a { color: #fff; }
+#autoBreaking .cmb-tl #developed .dev-more { background: rgba(255,255,255,.12) !important; color: #fff !important; border: 1px solid rgba(255,255,255,.45) !important; }
+/* corrections: one line in the footer area that opens the full log */
+#corrections.cmb-folded > :not(.band-head) { display: none; }
+#corrections.cmb-folded .band-head p { display: none; }
+#corrections.cmb-folded { padding-top: 14px !important; padding-bottom: 14px !important; margin: 20px 0 !important; }
+#corrections.cmb-folded .band-head h2 { font-size: 18px !important; }
+.cmb-cx-open { font: 600 13px/1 var(--sans); color: var(--accent); background: none; border: 1px solid var(--chipline); border-radius: 999px; padding: 8px 14px; cursor: pointer; }
+.cmb-badge { position: fixed; left: 12px; bottom: 12px; z-index: 50; font: 700 11px/1 var(--sans); letter-spacing: .06em; text-transform: uppercase;
+  background: var(--title); color: var(--bg); padding: 7px 10px; border-radius: 6px; opacity: .85; pointer-events: none; }
+@media (max-width: 640px) { .cmb-tabs { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; } .cmb-tabs button { white-space: nowrap; padding: 10px 9px 9px; font-size: 12.5px; } }
+</style>
+<script id="cmb-js">
+(() => {
+  const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  let AUTO = null;
+
+  // ---- what the top story already shows: its links (YouTube by video) and its headlines (wire copies count once)
+  const yt = (u) => { const m = String(u).match(/(?:youtube\.com\/(?:watch\?(?:.*&)?v=|live\/|embed\/)|youtu\.be\/)([\w-]{11})/); return m ? 'yt:' + m[1] : ''; };
+  const ukey = (u) => { try { const y = yt(u); if (y) return y; const x = new URL(u, location.href); return (x.host.replace(/^www\./, '') + x.pathname).replace(/\/$/, '').toLowerCase(); } catch (e) { return ''; } };
+  const hkey = (t) => (t || '').toLowerCase().replace(/[‘’'"“”]/g, '').replace(/[^a-z0-9]+/g, ' ').trim().slice(0, 70);
+  function topKeys() {
+    const top = $('#autoBreaking'); const u = new Set(), h = new Set();
+    if (!top) return { u, h };
+    $$('a[href]', top).forEach((a) => { if (a.closest('.cmb-tl')) return; const k = ukey(a.href); if (k && /^https?:/.test(a.href)) u.add(k); const t = hkey(a.textContent); if (t.length > 30) h.add(t); });
+    return { u, h };
+  }
+
+  // 1. ONE MIDTERMS PACKAGE (any big story): other sections leave out what the top story already shows
+  const SCOPES = ['#bigWeek', '#canus', '#sec-us', '#liveCoverage', '#bkEvent', '#video'];
+  function dedupe() {
+    const { u, h } = topKeys(); if (!u.size) return;
+    $$('.cmb-dup').forEach((x) => x.classList.remove('cmb-dup'));
+    // the live event strip: its video is already in the top story
+    const bk = $('#bkEvent'); if (bk && $$('a[href]', bk).some((a) => u.has(ukey(a.href)))) bk.classList.add('cmb-dup');
+    SCOPES.forEach((sel) => { const sc = $(sel); if (!sc) return;
+      $$('a[href]', sc).forEach((a) => {
+        if (!/^https?:/.test(a.href)) return;
+        const hit = u.has(ukey(a.href)) || h.has(hkey(a.textContent));
+        if (!hit) return;
+        let it = a.closest('li, .chan-cell, tr');
+        if (!it || !sc.contains(it)) { const c = a.closest('article, figure, .lede, .tile'); it = c && sc.contains(c) && $$('a[href^="http"]', c).length <= 3 ? c : null; }
+        if (it && it !== sc) it.classList.add('cmb-dup');
+      });
+    });
+    // a list left empty hides with its heading (Live coverage now, This week ...)
+    $$('ol, ul, .chan-row').forEach((l) => { if (!SCOPES.some((s) => l.closest(s))) return;
+      const kids = [...l.children]; const empty = kids.length && kids.every((k) => k.classList.contains('cmb-dup'));
+      l.classList.toggle('cmb-dup', empty);
+      const head = l.previousElementSibling; if (head && /^(H3|P)$/.test(head.tagName) && (head.classList.contains('chan-h') || head.tagName === 'H3')) head.classList.toggle('cmb-dup', empty); });
+    // The big week ahead: an event that is over and is the top story now is told there, not twice
+    const topEv = AUTO && AUTO.auto && (AUTO.auto.stories || [])[0] && AUTO.auto.stories[0].event_day;
+    $$('#bigWeek .bw-card').forEach((c) => { const n = ($('h3', c) || {}).textContent || ''; const ev = ((AUTO && AUTO.bigweek) || []).find((e) => e.name === n.trim());
+      c.classList.toggle('cmb-dup', !!(ev && ev.days < 0 && topEv === ev.name)); });
+  }
+
+  // 2. "How this developed" goes into the top story, as its timeline
+  function timeline() {
+    const dev = $('#developed'), top = $('#autoBreaking'); if (!dev || !top) return;
+    let d = $('.cmb-tl', top);
+    if (!d) { const host = $('.ab-story', top) || top; d = document.createElement('details'); d.className = 'cmb-tl';
+      d.innerHTML = '<summary>How this developed · full timeline</summary>'; host.appendChild(d); }
+    if (dev.parentElement !== d) d.appendChild(dev);
+    d.hidden = !$$('.dev-list li', dev).length;
+  }
+
+  // 3–5. Tabbed sections: one heading, the merged sections as tabs, each keeping its own description and links
+  // stay: a section the page itself keeps in a set place (The big week ahead sits just above the Canada desk); it is not
+  // moved, the tab shows or hides it where it is, and the tabbed section sits right before it
+  function tabs(id, title, sub, parts, anchor, stay) {
+    const items = parts.map(([label, sel]) => [label, $(sel)]).filter((p) => p[1]);
+    if (items.length < 2) return;
+    let sec = document.getElementById(id);
+    const at = $(anchor) || items[0][1];
+    if (!sec) {
+      sec = document.createElement('section'); sec.id = id; sec.className = 'cmb-sec ruled';
+      sec.innerHTML = `<div class="band-head"><h2>${title}</h2><p>${sub}</p></div><div class="cmb-tabs" role="tablist"></div>`;
+      sec._active = items[0][1].id;
+    }
+    if (stay ? at.previousElementSibling !== sec : !sec.isConnected) at.parentElement.insertBefore(sec, at);
+    const bar = $('.cmb-tabs', sec);
+    items.forEach(([label, el]) => {
+      if (!$(`.cmb-tabs button[data-for="${el.id}"]`, sec)) {
+        const b = document.createElement('button'); b.type = 'button'; b.setAttribute('role', 'tab'); b.dataset.for = el.id; b.innerHTML = label;
+        b.addEventListener('click', () => show(sec, el.id)); bar.appendChild(b); }
+      if (stay && el === at) { el.classList.add('cmb-panel', 'cmb-stay'); el.dataset.for = el.id; return; }
+      let p = sec.querySelector(`.cmb-panel[data-for="${el.id}"]`);
+      if (!p) { p = document.createElement('div'); p.className = 'cmb-panel'; p.dataset.for = el.id; p.setAttribute('role', 'tabpanel'); sec.appendChild(p); }
+      if (el.parentElement !== p) p.appendChild(el);
+    });
+    sec._items = items.map((x) => x[1]);
+    show(sec, sec._active);
+  }
+  function show(sec, id) {
+    sec._active = id;
+    $$('.cmb-panel', sec).forEach((p) => { p.hidden = p.dataset.for !== id; });
+    (sec._items || []).filter((el) => el.classList.contains('cmb-stay')).forEach((el) => el.classList.toggle('cmb-off', el.id !== id));
+    $$('.cmb-tabs button', sec).forEach((b) => b.setAttribute('aria-selected', String(b.dataset.for === id)));
+  }
+  // the menu's links to a merged section open its tab
+  function follow(hash) { const t = hash && document.getElementById(hash.slice(1)); if (!t) return; const p = t.closest('.cmb-panel'); if (!p) return;
+    const sec = p.classList.contains('cmb-stay') ? p.previousElementSibling : p.closest('.cmb-sec'); if (sec && sec.classList.contains('cmb-sec')) show(sec, p.dataset.for); }
+  document.addEventListener('click', (e) => { const a = e.target.closest('a[href^="#"]'); if (a) follow(a.getAttribute('href')); }, true);
+  addEventListener('hashchange', () => follow(location.hash));
+
+  // Go deeper: podcasts older than a week age out by themselves; a tab with nothing left goes
+  function ageOut() {
+    const now = new Date();
+    $$('#godeeper .media-row').forEach((r) => { const m = r.textContent.match(/Posted (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]* (\d{1,2})/);
+      if (!m) return; const d = new Date(`${m[1]} ${m[2]}, ${now.getFullYear()}`); if (d > now) d.setFullYear(now.getFullYear() - 1);
+      r.classList.toggle('cmb-old', (now - d) / 864e5 > 7); });
+    const gd = $('#godeeper'); if (!gd) return; const left = $$('.media-row', gd).filter((r) => !r.classList.contains('cmb-old')).length;
+    const b = $('.cmb-tabs button[data-for="godeeper"]'); if (b) b.hidden = !left;
+    if (!left && b && b.getAttribute('aria-selected') === 'true') { const s = b.closest('.cmb-sec'); const first = $('.cmb-tabs button:not([hidden])', s); if (first) show(s, first.dataset.for); }
+  }
+  // tab counts
+  function counts() {
+    const n = (sel, items) => { const b = $(`.cmb-tabs button[data-for="${sel}"]`); if (!b) return; const k = items.filter((x) => !x.classList.contains('cmb-dup') && !x.classList.contains('cmb-old')).length;
+      let s = $('.n', b); if (!s) { s = document.createElement('span'); s.className = 'n'; b.appendChild(s); } s.textContent = k ? k : ''; };
+    n('ahead', $$('#ahead .watch li')); n('board', $$('#boardBody > tr')); n('editorials', $$('#editorialList > a')); n('thinktanks', $$('#thinktanks article, #thinktanks .tt-card'));
+    n('mostread', $$('#mrList > li')); n('reading', $$('#reads > article')); n('godeeper', $$('#godeeper .media-row'));
+  }
+
+  // 6. Corrections & updates: one line near the footer that opens the full log
+  function corrections() {
+    const cx = $('#corrections'); if (!cx || cx.dataset.cmb) return; cx.dataset.cmb = '1'; cx.classList.add('cmb-folded');
+    const all = $('.log-more', cx); const n = (all && (all.textContent.match(/\d[\d,]*/) || [])[0]) || $$('.log > li', cx).length;
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'cmb-cx-open'; b.textContent = `See all ${n} updates ▾`;
+    b.addEventListener('click', () => { const o = cx.classList.toggle('cmb-folded'); b.textContent = o ? `See all ${n} updates ▾` : 'Hide the log ▴'; });
+    $('.band-head', cx).appendChild(b);
+  }
+
+  function run() {
+    try {
+      timeline();
+      dedupe();
+      tabs('cmb-coming', 'Coming up', 'The scheduled events the news is building to, the dates and decisions ahead, and every story in progress.',
+        [['This week', '#bigWeek'], ['Dates &amp; decisions', '#ahead'], ['Story board', '#board']], '#bigWeek', true);
+      tabs('cmb-opinion', 'Opinion &amp; analysis', 'The day’s editorials and columns, and new papers from think tanks across the spectrum. We don’t write any of it.',
+        [['Editorials', '#editorials'], ['Think tanks', '#thinktanks']], '#editorials');
+      tabs('cmb-read', 'Read &amp; listen', 'What Canadians are reading, the editor’s picks from other newsrooms, and podcasts on this week’s big stories.',
+        [['Most read', '#mostread'], ['Today’s reading', '#reading'], ['Podcasts', '#godeeper']], '#mostread');
+      ageOut(); counts(); corrections();
+    } catch (e) { console.warn('combine layer', e); }
+  }
+  // "Dates & decisions" keeps the 60-second brief player where What to watch was: it moves out ahead of the tabs
+  function briefOut() { const a = $('#ahead .ahead-audio'), sec = $('#cmb-coming'); if (a && sec && !a.dataset.cmb) { a.dataset.cmb = '1'; sec.parentElement.insertBefore(a, sec); } }
+
+  const origFetch = window.fetch;
+  if (origFetch) window.fetch = function (u) { const p = origFetch.apply(this, arguments); try { if (String(u).includes('auto.json')) p.then((r) => r.clone().json()).then((j) => { AUTO = j; setTimeout(run, 500); }).catch(() => {}); } catch (e) {} return p; };
+  let t = null, busy = false; const later = () => { if (busy) return; clearTimeout(t); t = setTimeout(() => { busy = true; run(); briefOut(); setTimeout(() => { busy = false; }, 100); }, 350); };
+  const start = () => {
+    if (/preview-combined/.test(location.pathname)) { const bdg = document.createElement('div'); bdg.className = 'cmb-badge'; bdg.textContent = 'Preview · combined sections'; document.body.appendChild(bdg); }
+    try { origFetch && origFetch.call(window, 'live/auto.json', { cache: 'no-store' }).then((r) => r.json()).then((j) => { AUTO = AUTO || j; later(); }).catch(() => {}); } catch (e) {}
+    later(); setTimeout(later, 1500); setTimeout(later, 5000); setInterval(later, 60000);
+    new MutationObserver((ms) => { if (ms.some((m) => !(m.target.closest && m.target.closest('#clocks, .clk, .clock, .cmb-tabs')))) later(); })
+      .observe(document.querySelector('main') || document.body, { childList: true, subtree: true });
+    if (location.hash) setTimeout(() => follow(location.hash), 2000);
+  };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
+})();
+</script>
+
+<!-- cmb:end -->
 </body></html>

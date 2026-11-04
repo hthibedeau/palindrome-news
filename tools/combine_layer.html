@@ -181,7 +181,7 @@
   if (origFetch) window.fetch = function (u) { const p = origFetch.apply(this, arguments); try { if (String(u).includes('auto.json')) p.then((r) => r.clone().json()).then((j) => { AUTO = j; setTimeout(run, 500); }).catch(() => {}); } catch (e) {} return p; };
   let t = null, busy = false; const later = () => { if (busy) return; clearTimeout(t); t = setTimeout(() => { busy = true; run(); briefOut(); setTimeout(() => { busy = false; }, 100); }, 350); };
   const start = () => {
-    const bdg = document.createElement('div'); bdg.className = 'cmb-badge'; bdg.textContent = 'Preview · combined sections'; document.body.appendChild(bdg);
+    if (/preview-combined/.test(location.pathname)) { const bdg = document.createElement('div'); bdg.className = 'cmb-badge'; bdg.textContent = 'Preview · combined sections'; document.body.appendChild(bdg); }
     try { origFetch && origFetch.call(window, 'live/auto.json', { cache: 'no-store' }).then((r) => r.json()).then((j) => { AUTO = AUTO || j; later(); }).catch(() => {}); } catch (e) {}
     later(); setTimeout(later, 1500); setTimeout(later, 5000); setInterval(later, 60000);
     new MutationObserver((ms) => { if (ms.some((m) => !(m.target.closest && m.target.closest('#clocks, .clk, .clock, .cmb-tabs')))) later(); })
