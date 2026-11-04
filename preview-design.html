@@ -3603,7 +3603,10 @@ header.site { border-bottom: 0; }
     const ca = all.filter((x) => x[1] === 'Canada').sort((p, q) => ord(q) - ord(p));
     // the lead is today's most widely carried Canada story (ties: the newest); the rest newest first
     const nsrc = (x) => String(x[5] || '').split(',').length;
-    const li = ca.reduce((b, x, i) => (nsrc(x) > nsrc(ca[b]) ? i : b), 0);
+    // BIG NEWS DAY (Hannah, Tue Nov 3, 2026): a Canadian top story moved off the top (an exclusive, say) leads the desk
+    const movedCa = new Set(((window.PAL_autoupdate && window.PAL_autoupdate.data && window.PAL_autoupdate.data.canada) || []).filter((r) => r.moved).map((r) => r.url));
+    const mi = ca.findIndex((x) => movedCa.has(x[6]));
+    const li = mi > -1 ? mi : ca.reduce((b, x, i) => (nsrc(x) > nsrc(ca[b]) ? i : b), 0);
     if (ca.length) ca.unshift(ca.splice(li, 1)[0]);
     const sorted = ca.concat(all.filter((x) => x[1] !== 'Canada'));
     const placed = sorted.map(([pic, topic, badge, h, s, src, link, img, time, region]) => [pic, topic, h, s, src, link, img, time, region || '']).concat(extra);
@@ -6446,6 +6449,27 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     t = (brk > 80 ? t.slice(0, brk) : t.replace(/\s+\S*$/, '')).replace(/[\s,;:—–-]+$/, '') + '…';
     return { t, o: fall.o, u: fall.u };
   }
+  // BIG NEWS DAY LAYOUT (Hannah, Tue Nov 3, 2026: "make the main breaking news page look better and easier to read"):
+  // when the big story stands alone at the top (tools/autopilot.py moves the other top stories into its Canadian angle
+  // and the Canada desk), it uses the full width on a wide screen: the photo, headline, summary and live links on the
+  // left; beside them, the Canadian angle, the projections and Connected to this story. Phones keep one column.
+  function soloLayout() {
+    const sec = document.getElementById('autoBreaking'); if (!sec || !sec.classList.contains('solo')) return;
+    if (!window.matchMedia('(min-width: 960px)').matches) return;
+    const art = sec.querySelector(':scope > .ab-story'); if (!art) return;
+    let side = art.querySelector(':scope > .ab-side');
+    if (!side) { side = document.createElement('div'); side.className = 'ab-side'; }
+    if (art.firstElementChild !== side) art.prepend(side);
+    ['.can-box', '.ab-proj', '.rel-box'].forEach((q) => { const el = art.querySelector(q); if (el && el.parentNode !== side) side.appendChild(el); });
+    // keep the order: Canadian angle, projections, connected
+    ['.can-box', '.ab-proj', '.rel-box'].map((q) => side.querySelector(':scope > ' + q)).filter(Boolean).forEach((el) => side.appendChild(el));
+  }
+  window.PAL_soloLayout = soloLayout;
+  (function watchSolo() {
+    const sec = document.getElementById('autoBreaking'); if (!sec || !window.MutationObserver) return;
+    let t = 0; new MutationObserver(() => { clearTimeout(t); t = setTimeout(soloLayout, 60); }).observe(sec, { childList: true, subtree: true });
+    window.addEventListener('resize', () => { clearTimeout(t); t = setTimeout(soloLayout, 200); });
+  })();
   function autoTop() {
     const A = AUTO.d.auto, sec = document.getElementById('autoBreaking'), bk = document.getElementById('breaking');
     if (!sec) return;
@@ -6505,7 +6529,9 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
         + '</article>';
     }).join('') + '<p class="ab-note">Picked and updated automatically at ' + esc(fmt(AUTO.d.checked)) + ' ET, by how many newsrooms carry each story and where it sits on National Newswatch and CBC News, with stories that touch Canada first: a story from abroad with no Canadian tie gives way to one that has one. Headlines and summaries are the outlets’ own.</p>';
     sec.hidden = false;
+    sec.classList.toggle('solo', list.length === 1);  // a big news day: the big story stands alone (Nov 3, 2026)
     if (window.PAL_orderTop) window.PAL_orderTop();  // Live coverage under the Breaking story (Nov 3, 2026)
+    soloLayout();
   }
   // The lead slot under the top two (Hannah, Wed Oct 28, 2026: "ensure we have the top news at the top ... update
   // regularly"): when its hand-written story has not been updated for LEAD_STALE_HOURS, the next biggest story from the
@@ -7647,6 +7673,14 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
   #autoBreaking > .ab-note { grid-column: 1 / -1; }
   /* Live coverage under the Breaking story (Nov 3, 2026): the full width, right below the lead story */
   #autoBreaking > .livecov.lc-under { grid-column: 1 / -1; grid-row: 7; margin-top: 18px; }
+  /* BIG NEWS DAY: the big story alone, full width; its boxes beside it (Nov 3, 2026) */
+  #autoBreaking.solo > .ab-story:not(.ab-second) { grid-column: 1 / -1; grid-row: auto; }
+  #autoBreaking.solo > .livecov.lc-under { grid-row: auto; }
+  #autoBreaking.solo .ab-story > .ab-side { float: right; width: 40%; margin: 0 0 18px 34px; display: flex; flex-direction: column; gap: 16px; }
+  #autoBreaking.solo .ab-story > .ab-side > * { margin: 0 !important; max-width: none !important; width: auto !important; float: none !important; }
+  #autoBreaking.solo .ab-story > :not(.ab-side) { margin-right: calc(40% + 34px) !important; }
+  #autoBreaking.solo .ab-story > h2 { font-size: clamp(34px, 3.6vw, 50px); }
+  #autoBreaking.solo .ab-story::after { content: ""; display: block; clear: both; }
 }
 </style>
 <!-- dz:start -->
