@@ -101,3 +101,15 @@ Before publishing, check it like a reader on a phone (390 wide) and a wide scree
 
 ## Order under the photo (Hannah, Wed Oct 21, 2026)
 For both Breaking stories: the photo comes first, then its caption, then the headline, then the latest summary. The page code does this for the top slot and the event box; do not move the headline back beside the photo.
+
+## Big news days: one story, its own subject (Hannah, Tue Nov 3, 2026)
+- A country, place or nationality (U.S., Americans, Canada, Washington, Ottawa ...) is never a match word, and nor is an everyday word (election, budget, live). Two stories that only share a country are not the same story. Code: `subject_words()` and `on_subject()` in tools/autopilot.py.
+- A big scheduled event (BIG_EVENTS) matches only by its own two-part test (the event AND its country), held in STORY_MATCH. Opinion, analysis and think-tank papers join it only by that test.
+- Why: The Hub's "There are no consequences: Why Jewish Canadians are leaving for the U.S." showed under the midterms story because "U.S." was a match word.
+
+## Projections are always Breaking (Hannah, Tue Nov 3, 2026)
+- On an election's day, every run reads the networks' own pages (PROJ_PAGES: CNN, NBC, CBS, ABC, Fox, AP, NYT, Washington Post, MS NOW, CNBC, NPR, Decision Desk HQ, Politico, The Hill, CBC, CTV, Global) and the feeds for race calls: `projections()`.
+- Each call is quoted in the network's own words, credited to the network that made it, and linked to where it was made. A call that names no network is "Reported by <newsroom>", never credited to anyone else.
+- The newest big call (control of a chamber or a government, then Senate seats and governors) leads the election story for 3 hours as "Breaking · <network> projection", with "Projection by <network> · <time>" under the headline and who else has made the same call.
+- "Projections: who is calling what" lists every call by race, one line per network, newest marked New. A projection is not a final result.
+- Checks: `python3 tools/test_story_match.py`.

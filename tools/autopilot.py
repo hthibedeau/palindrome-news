@@ -1359,7 +1359,44 @@ PLACES = re.compile(r"^(canada|ottawa|toronto|montreal|vancouver|calgary|edmonto
 def is_place(t):
     """A city, province, country or region: never enough on its own to connect two stories."""
     t = t.replace("’s", "").replace("'s", "")
-    return bool(PLACES.match(t) or CAN_TIE.fullmatch(t[:1].upper() + t[1:]))
+    return bool(PLACES.match(t) or COUNTRY.fullmatch(t) or CAN_TIE.fullmatch(t[:1].upper() + t[1:]))
+
+
+# ===== ONE STORY, ITS OWN SUBJECT (Hannah, Tue Nov 3, 2026, U.S. Election Night: The Hub's opinion piece "'There are
+# no consequences': Why Jewish Canadians are leaving for the U.S." showed under the midterms story. "That story has
+# nothing to do with the election. Why is it pulled into the big election story? Fix the code for something like this.")
+# The election's match words were "U.S.", "midterm", "elections": the country's name alone pulled it in.
+# THE RULE, for every story and above all on a big news day, when one story is huge and everything seems to touch it:
+#   1. A country, place or nationality (U.S., America, Americans, Canada, Canadians, Washington, Ottawa ...) is never
+#      a match word. Two stories that share only a country are not the same story.
+#   2. Everyday words (election, elections, budget, live, news ...) are never a match word on their own either.
+#   3. A big scheduled event (BIG_EVENTS) matches only by its own two-part test: the event itself (midterms, Election
+#      Day, ballots, Senate races ...) AND its country, the same test that builds its coverage. STORY_MATCH holds it.
+#   4. Opinion, analysis and think-tank papers join a story only when their headline is about that story's subject,
+#      by the same tests. A column that merely mentions the country is left in Editorials, where it belongs.
+COUNTRY = re.compile(r"(?i)(U\.?S\.?A?\.?|United States|America|Americans?|Canad(?:a|ian|ians)|Britain|British|U\.?K\.?|"
+                     r"Europe|European|EU|China|Chinese|Mexico|Mexican|Washington|Ottawa|Beijing|London|Paris)")
+STORY_MATCH = {}  # story key -> (topic regex, country regex) for a big event: set by event_day_stories()
+
+
+def subject_words(words):
+    """A story's match words without countries, places and everyday words (THE RULE above). If nothing is left,
+    the words without countries and places; never an empty list when the story had a real word."""
+    keep = [x for x in words if x and not is_place(x.strip(".")) and not COUNTRY.fullmatch(x) and not COUNTRY.fullmatch(x.strip("."))]
+    strong = [x for x in keep if x.lower() not in GENERIC and x.lower() not in WEAK]
+    return strong or keep
+
+
+def on_subject(key, words):
+    """A test for one story: True when a headline is about that story's own subject (THE RULE above)."""
+    if key in STORY_MATCH:
+        ra, rb = STORY_MATCH[key]
+        return lambda t: bool(ra.search(t) and rb.search(t))
+    ws = subject_words(words)
+    if not ws:
+        return lambda t: False
+    rx = re.compile(r"\b(" + "|".join(re.escape(x) for x in ws) + r")(?!\w)", re.I)
+    return lambda t: bool(rx.search(t))
 
 
 # not news for "Connected to this story": games and scores, entertainment, sponsored and promotional posts
@@ -1413,11 +1450,16 @@ def related(items, stories, now, eds, papers, groups=()):
             if picked or views:
                 out[key] = {"ties": [name], "stories": picked, "views": views}
             continue
-        rx = re.compile("|".join(re.escape(x) for x in words), re.I)
+        # its own subject only: never a country, a place or an everyday word (ONE STORY, ITS OWN SUBJECT, above)
+        about = on_subject(key, words)
+        sw = subject_words(words) or ["\x00"]
+        rx = re.compile("|".join(re.escape(x) for x in sw), re.I)
         # an auto story is exactly its own reports; a hand-written story is every report naming it
-        mine = [x for x in recent if x[3] in own] if own else [x for x in recent if rx.search(x[2])]
-        if own:
-            rx = re.compile("|".join(re.escape(x) for x in words[:3]), re.I)
+        mine = [x for x in recent if x[3] in own] if own else [x for x in recent if about(x[2])]
+        if own and key not in STORY_MATCH:
+            sw3 = subject_words(words[:3]) or sw
+            rx = re.compile("|".join(re.escape(x) for x in sw3), re.I)
+            about = lambda t, _r=rx: bool(_r.search(t))
         co = Counter(n.replace("’s", "").replace("'s", "") for x in mine for n in gc.names(x[2]))
         co = Counter({n: c for n, c in co.items() if n not in WEAK and n not in PARTY and not rx.search(n)})
         def proper(n):  # capitalized somewhere other than the first word: a name, not "Drone kills…"
@@ -1444,7 +1486,7 @@ def related(items, stories, now, eds, papers, groups=()):
             return len(found) >= 2 or len(extra - found) >= 1
         picked, seen, used_groups = [], [], set()
         for dt, outlet, title, link, k in recent:
-            if rx.search(title) or link in own or au.OPINION.search(title + " " + link) or SPORT.search(title + " " + link) or VIDEO.search(link):
+            if about(title) or link in own or au.OPINION.search(title + " " + link) or SPORT.search(title + " " + link) or VIDEO.search(link):
                 continue
             m = trx.search(title)
             if not m or not connected(title):
@@ -1463,8 +1505,9 @@ def related(items, stories, now, eds, papers, groups=()):
             picked.append({"t": w.eastern(dt), "iso": dt.isoformat(), "outlet": au.clean_outlet(outlet), "title": clean(title), "url": link, "tie": m.group(1)})
             if len(picked) >= 5:
                 break
-        views = [{"outlet": e[0], "kind": e[1], "title": e[2], "url": e[3]} for e in (eds or []) if rx.search(e[2]) or connected(e[2])][:2]
-        views += [{"outlet": p_["inst"], "kind": "Think tank", "title": p_["t"], "url": p_["u"]} for p_ in (papers or []) if rx.search(p_["t"]) or connected(p_["t"])][:2]
+        # opinion and analysis: about this story's own subject, never just its country (Hannah, Nov 3, 2026)
+        views = [{"outlet": e[0], "kind": e[1], "title": e[2], "url": e[3]} for e in (eds or []) if about(e[2]) or connected(e[2])][:2]
+        views += [{"outlet": p_["inst"], "kind": "Think tank", "title": p_["t"], "url": p_["u"]} for p_ in (papers or []) if about(p_["t"]) or connected(p_["t"])][:2]
         if picked or views:
             out[key] = {"ties": [t for t in ties if not is_place(t)] or ties, "stories": picked, "views": views}
     return out
@@ -2926,7 +2969,11 @@ def clock_topics(items, groups, now):
 BIG_DAYS_BEFORE, BIG_DAYS_AFTER, BIG_MIN_OUTLETS, BIG_MAX = 8, 1, 3, 3
 BIG_EVENTS = [  # name, date (Eastern), what it is, the headlines about it (both must match: the event and its place)
     ("U.S. midterm elections", "2026-11-03", "The United States votes for Congress, governors and more",
-     r"\b(midterms?|Election Day|early voting|House races?|Senate races?|battleground|ballots?)\b", r"\b(U\.?S\.?|American|Americans|Trump|Republicans?|Democrats?|GOP|Congress|Senate|House)\b"),
+     r"\b(midterms?|Election (?:Day|Night)|early voting|House races?|Senate races?|battleground|ballots?|"
+     # election-night results never say "midterms" (Nov 3, 2026: "Democrats will win control of the House, CNN projects")
+     r"control (?:of|for) (?:the )?(?:House|Senate|Congress)|(?:House|Senate) (?:majority|seats?|elections?)|special elections?|projected|projection|"
+     r"(?:CNN|NBC|CBS|ABC|Fox|AP|NBC News|CBS News|ABC News|Fox News|Decision Desk(?: HQ)?|Associated Press|DDHQ)(?:['’]s Decision Desk)? projects|"
+     r"wins? (?:re-?election|the race|the seat|control)|flips?|concedes?|race call|election results)\b", r"\b(U\.?S\.?|American|Americans|Trump|Republicans?|Democrats?|GOP|Congress|Senate|House)\b"),
     ("Federal budget", "2026-11-05", "Finance Minister François-Philippe Champagne tables Ottawa's budget",
      r"\bbudget\b", r"\b(federal|Champagne|Carney|Ottawa|Liberals?|PBO|parliamentary budget officer|deficit|fall budget|budget day|finance minister|tax breaks?)\b"),
 ]
@@ -3350,6 +3397,184 @@ def front_count(s, fronts):
 FRONTS = []  # this run's front pages (set by run())
 
 
+# ===== PROJECTIONS (Hannah, Tue Nov 3, 2026, U.S. Election Night, as CNN projected the Democrats win the House:
+# "When there are projections from different networks or websites, put them up on the page and site where they're
+# from." Then: "those projections should always be breaking, quoting where they come from.")
+# On an election day (any EVENT DAY election, American or Canadian), every run reads the networks' own pages and the
+# feeds for race calls. Each call is kept exactly as the network worded it, with WHO is projecting it (CNN, NBC News,
+# The Associated Press, Fox News, Decision Desk HQ ...), a link straight to the call, and when we first saw it.
+#   - A projection is always Breaking: the newest big call (control of the House, Senate or a government first, then a
+#     Senate seat or governor, then the rest) becomes the election story's headline, quoted and credited:
+#     "Democrats will win control of the House, CNN projects", tagged "Breaking · CNN projection".
+#   - Every call goes in "Projections: who is calling what" on the story, one line per network per race, so readers
+#     see when CNN has called something that NBC or the AP has not yet.
+#   - A call with no network named in it ("Andrews projected to win") is credited to the newsroom that published it
+#     ("projected, reports The Hill"), never to a network that did not make it.
+#   - live/auto.json "projections" keeps every call for PROJ_KEEP_HOURS.
+PROJ_KEEP_HOURS = 24
+PROJ_BREAKING_HOURS = 3   # a call leads the election story as Breaking this long after we first see it
+PROJ_PAGES = [  # (network, page): their home and election pages, where the calls go up first
+    ("CNN", "https://www.cnn.com/"), ("CNN", "https://www.cnn.com/politics"), ("NBC News", "https://www.nbcnews.com/"),
+    ("NBC News", "https://www.nbcnews.com/politics"), ("CBS News", "https://www.cbsnews.com/"), ("ABC News", "https://abcnews.go.com/"),
+    ("Fox News", "https://www.foxnews.com/"), ("Fox News", "https://www.foxnews.com/politics"), ("The Associated Press", "https://apnews.com/"),
+    ("The New York Times", "https://www.nytimes.com/"), ("The Washington Post", "https://www.washingtonpost.com/"),
+    ("MS NOW", "https://www.ms.now/"), ("CNBC", "https://www.cnbc.com/politics/"), ("NPR", "https://www.npr.org/"),
+    ("Decision Desk HQ", "https://decisiondeskhq.com/"), ("Politico", "https://www.politico.com/"), ("The Hill", "https://thehill.com/"),
+    ("CBC News", "https://www.cbc.ca/news"), ("CTV News", "https://www.ctvnews.ca/"), ("Global News", "https://globalnews.ca/"),
+]
+PROJ_NETS = (r"CNN(?:['’]s Decision Desk)?|NBC News|NBC|CBS News|CBS|ABC News|ABC|Fox News(?: Decision Desk)?|Fox|"
+             r"The Associated Press|Associated Press|AP|Decision Desk HQ|DDHQ|MS NOW|MSNBC|CNBC|The New York Times|"
+             r"The Washington Post|NPR|Edison Research|CBC News|CBC|CTV News|CTV|Global News|Radio-Canada")
+PROJ_VERB = r"(?:projects|projected|has projected|calls|has called|declares|race call)"
+PROJ_AFTER = re.compile(r"^(?P<call>.{12,220}?)[,;:—–-]?\s+(?:according to\s+)?(?P<net>" + PROJ_NETS + r")\s+" + PROJ_VERB + r"\.?$", re.I)
+PROJ_BEFORE = re.compile(r"^(?P<net>" + PROJ_NETS + r")\s+(?:projects|projection|calls|declares)\s*[:,—–-]?\s*(?:that\s+)?(?P<call>.{12,220})$", re.I)
+PROJ_PLAIN = re.compile(r"\b(projected (?:to win|winner|to flip|to hold|to keep|to retain)|is projected|are projected|wins? control|"
+                        r"will (?:win|keep|retain|hold|flip) (?:control|the (?:House|Senate|seat))|flips?\b.*\b(?:seat|House|Senate)|"
+                        r"(?:Liberal|Conservative|NDP|Bloc) (?:majority|minority) government)\b", re.I)
+PROJ_SKIP = re.compile(r"\b(forecast|odds|poll(?:s|ing)?|could|might|may|would|if |what if|how |why |prediction|predicts|on (?:the )?brink|"
+                       r"hopes?|on track|push(?:es)? for|pushing|leads?|leading|ahead in|react|reacts|ask |here['’]s|what keeps|bid to|aims?|seeks?|"
+                       r"battle|fight|eyes|expects?|expected|likely|one day out|day before|watch:|explainer|analysis|opinion|"
+                       r"projects? \$|projects? (?:billion|million)|infrastructure|housing projects?)", re.I)
+NET_NAME = {"cnn": "CNN", "cnn's decision desk": "CNN", "cnn’s decision desk": "CNN", "nbc": "NBC News", "cbs": "CBS News", "abc": "ABC News",
+            "fox": "Fox News", "fox news decision desk": "Fox News", "ap": "The Associated Press", "associated press": "The Associated Press",
+            "ddhq": "Decision Desk HQ", "msnbc": "MS NOW", "cbc": "CBC News", "ctv": "CTV News"}
+
+
+def _net(n):
+    k = n.strip().lower()
+    return NET_NAME.get(k) or next((x for x in [n.strip()] if x), "")
+
+
+def parse_projection(text, outlet):
+    """{"call", "net", "named"} when a headline is a race call, else None. The call is the network's own words."""
+    t = clean(text).strip(" .")
+    if len(t) < 20 or len(t) > 240 or PROJ_SKIP.search(t):
+        return None
+    m = PROJ_AFTER.match(t)
+    if m:
+        return {"call": t, "net": _net(m.group("net")), "named": True}
+    m = PROJ_BEFORE.match(t)
+    if m:
+        return {"call": t, "net": _net(m.group("net")), "named": True}
+    if PROJ_PLAIN.search(t) and (US_ELECTION.search(t) or re.search(r"\b(House|Senate|governor|seat|majority|minority|government)\b", t, re.I)):
+        return {"call": t, "net": outlet, "named": False}
+    return None
+
+
+def proj_race(call):
+    """Which race a call is about, so each network's call on it sits on one line: chamber control first."""
+    c = call.lower()
+    win = r"(?:win|wins|won|keep|keeps|kept|hold|holds|held|retain|retains|take|takes|took|flip|flips|flipped)\s+(?:back\s+)?"
+    for k, rx in (("Control of the House", win + r"(?:control of (?:the )?(?:u\.s\. )?house|(?:the )?house(?: majority)?\b)"),
+                  ("Control of the Senate", win + r"(?:control of (?:the )?(?:u\.s\. )?senate|(?:the )?senate(?: majority)?\b(?! seat| race))"),
+                  ("Control of Congress", win + r"control of congress"),
+                  ("The next government", r"(?:majority|minority) government|will form (?:the )?government")):
+        if re.search(rx, c):
+            return k
+    st = US_STATE.search(call)
+    office = re.search(r"\b(Senate|House|governor|gubernatorial|mayor|attorney general|Sen(?=\.)|Gov(?=\.))\b", call, re.I)
+    dist = re.search(r"\b(\d{1,2})(?:st|nd|rd|th)?[- ]district\b|\bdistrict (\d{1,2})\b", call, re.I)
+    if st and office:
+        o = office.group(1).title().replace("Gubernatorial", "Governor").replace("Senate", "Sen").replace("Sen", "Senate").replace("Gov", "Governor").replace("Governorernor", "Governor")
+        return st.group(1) + " · " + o + (" district " + (dist.group(1) or dist.group(2)) if dist and o == "House" else "")
+    import gap_check as gc
+    nets = {x.lower() for x in re.findall(r"[A-Za-z]+", PROJ_NETS)} | {"decision", "desk", "projects", "projected"}
+    nm = sorted(n for n in gc.names(call) if n not in WEAK and n not in PARTY and n not in ANGLE_LABELS and len(n) > 2 and n.strip("’'s") not in nets)
+    return " ".join(nm[:3]).title() or call[:60]  # no state named: the people and places in the call
+
+
+US_STATE = re.compile(r"\b(Alabama|Alaska|Arizona|Arkansas|California|Colorado|Connecticut|Delaware|Florida|Georgia|Hawaii|Idaho|Illinois|"
+                      r"Indiana|Iowa|Kansas|Kentucky|Louisiana|Maine|Maryland|Massachusetts|Michigan|Minnesota|Mississippi|Missouri|"
+                      r"Montana|Nebraska|Nevada|New Hampshire|New Jersey|New Mexico|New York|North Carolina|North Dakota|Ohio|Oklahoma|"
+                      r"Oregon|Pennsylvania|Rhode Island|South Carolina|South Dakota|Tennessee|Texas|Utah|Vermont|Virginia|Washington state|"
+                      r"West Virginia|Wisconsin|Wyoming)\b")
+
+
+def proj_weight(race, call):
+    """Biggest call first: chamber control or a government, then a Senate seat or governor, then the rest."""
+    if race.startswith("Control of") or race == "The next government":
+        return 3
+    if re.search(r"\b(Senate|governor|gubernatorial)\b", call, re.I):
+        return 2
+    return 1
+
+
+def projections(items, now, prev):
+    """Every race call on the networks' pages and in the feeds: [{race, call, net, named, via, url, seen, iso, w}],
+    newest first, one per network per race. `prev` = last run's list, so a call keeps the time we first saw it."""
+    import autoupdate as au
+    old = {(p_["net"], p_["race"]): p_ for p_ in prev or []}
+    found = {}
+
+    def add(call, net, named, via, url, when):
+        race = proj_race(call)
+        k = (net, race)
+        o = old.get(k)
+        seen = o["seen"] if o and o.get("call") == call else (when or now).isoformat()
+        cur = found.get(k)
+        if cur and cur["seen"] >= seen:
+            return
+        found[k] = {"race": race, "call": call, "net": net, "named": named, "via": via if via != net else "", "url": url,
+                    "seen": seen, "t": w.eastern(datetime.fromisoformat(seen)), "w": proj_weight(race, call)}
+
+    def page(p_):
+        net, url = p_
+        x = curl(url) or ""
+        if len(x) < 3000:
+            return []
+        out = []
+        body = re.sub(r"(?is)<(script|style|noscript|svg)\b.*?</\1>", " ", x)
+        for m in re.finditer(r">([^<>]{20,240})<", body):
+            txt = clean(m.group(1))
+            pr = parse_projection(txt, net)
+            if not pr:
+                continue
+            hrefs = re.findall(r'href="([^"#]+(?:#[^"]*)?)"', body[max(0, m.start() - 4000):m.start()])
+            link = _h.unescape(hrefs[-1]) if hrefs else url
+            if link.startswith("//"):
+                link = "https:" + link
+            elif link.startswith("/"):
+                link = re.match(r"https?://[^/]+", url).group(0) + link
+            if not link.startswith("http"):
+                continue
+            out.append((pr, net, link))
+        return out
+
+    with ThreadPoolExecutor(10) as ex:
+        for res_ in ex.map(page, PROJ_PAGES):
+            for pr, via, link in res_:
+                add(pr["call"], pr["net"], pr["named"], via, link, None)
+    for dt, outlet, title, link, _ in items:  # the feeds: a call reported by another newsroom keeps who made it
+        if (now - dt).total_seconds() > PROJ_KEEP_HOURS * 3600:
+            continue
+        o_ = au.clean_outlet(outlet)
+        pr = parse_projection(title, o_)
+        if pr:
+            add(pr["call"], pr["net"], pr["named"], o_, link, dt)
+    for k, o in old.items():  # calls from earlier runs stay up for PROJ_KEEP_HOURS
+        if k not in found and (now - datetime.fromisoformat(o["seen"])).total_seconds() < PROJ_KEEP_HOURS * 3600:
+            found[k] = o
+    return sorted(found.values(), key=lambda p_: p_["seen"], reverse=True)
+
+
+def lead_with_projection(story, calls, now):
+    """A projection is always Breaking: the newest of the biggest calls in the last PROJ_BREAKING_HOURS becomes the
+    election story's headline, in the network's own words and credited to it."""
+    story["projections"] = calls[:40]
+    fresh = [p_ for p_ in calls if p_.get("named") and (now - datetime.fromisoformat(p_["seen"])).total_seconds() < PROJ_BREAKING_HOURS * 3600]
+    if not fresh:
+        return story
+    top = max(fresh, key=lambda p_: (p_["w"], p_["seen"]))
+    # the line under it: who else has made the same call, by name (never the old "polls are closing" summary)
+    same = [p_["net"] for p_ in calls if p_["race"] == top["race"] and p_["net"] != top["net"]]
+    others = ", ".join(same[:-1]) + (" and " if len(same) > 1 else "") + same[-1] if same else ""
+    story["summary"] = (others + (" also report" if len(same) > 1 else " also reports") + " it. " if others else "No other network had made this call when we checked. ") \
+        + f"{len(calls)} race calls from {len({p_['net'] for p_ in calls})} newsrooms are listed below, each in the network's own words."
+    story.update({"title": top["call"], "url": top["url"], "outlet": top["net"], "t": top["t"], "iso": top["seen"],
+                  "tag": "Breaking", "event_tag": "Breaking · " + top["net"] + " projection", "proj_lead": top})
+    return story
+
+
 def event_day_stories(bigweek, items, now, imgdir, prev):
     import autoupdate as au
     from zoneinfo import ZoneInfo
@@ -3403,6 +3628,7 @@ def event_day_stories(bigweek, items, now, imgdir, prev):
                 lead, info = r, pi
                 break
         key = "event-" + re.sub(r"\W+", "-", name.lower()).strip("-") + "-" + d
+        STORY_MATCH[key] = (ra, rb)  # the event matches only by its own two-part test (ONE STORY, ITS OWN SUBJECT)
         old = next((s for s in prev if s.get("key") == key), None)
         photo = None
         for r in [lead] + [x for x in free[:6] if x is not lead]:
@@ -3433,7 +3659,9 @@ def event_day_stories(bigweek, items, now, imgdir, prev):
         out.append({
             "key": key, "event_day": name, "event_tag": tag + " · " + name if tag != name else tag,
             "event_us": bool(EVENT_DAY_US.search(name)), "event_date": d,
-            "words": [w_ for w_ in re.findall(r"[A-Za-z][\w.]+", name) if len(w_) > 3][:4] + ["midterms" if "midterm" in name.lower() else name.split()[-1]],
+            # never "U.S." or "elections": a country or an everyday word pulled unrelated stories in (Nov 3, 2026)
+            "words": subject_words([w_ for w_ in re.findall(r"[A-Za-z][\w.]+", name) if len(w_) > 3][:4] + ["midterms" if "midterm" in name.lower() else name.split()[-1]]),
+            "match": [a, b],
             "score": 100, "outlets": independent(rows), "carriers": len(rows), "independent": independent(rows),
             "tag": "Breaking", "title": clean(lead[2]), "url": lead[3], "outlet": au.clean_outlet(lead[1]), "t": w.eastern(lead[0]), "iso": lead[0].isoformat(),
             "summary": info.get("desc", "") or what,
@@ -3614,6 +3842,17 @@ def run(page, items, groups, breaking, now, imgdir, prev):
     try:  # EVENT DAY: election day, budget day lead the page all day (BIG_EVENTS, EVENT_DAY_UNTIL)
         a_ = res.get("auto") or {}
         ev = event_day_stories(res.get("bigweek") or [], items, now, imgdir, (prev.get("auto") or {}).get("stories", []))
+        # PROJECTIONS: on an election's day, every network's race calls, credited, and the newest big one leads as Breaking
+        elex = [s_ for s_ in ev if s_.get("event_us") or re.search(r"election|vote|referendum", s_.get("event_day", ""), re.I)]
+        if elex:
+            try:
+                res["projections"] = projections(items, now, prev.get("projections") or [])
+                print(f"projections: {len(res['projections'])} calls ({', '.join(sorted({p_['net'] for p_ in res['projections']}))})")
+                for s_ in elex:
+                    lead_with_projection(s_, res["projections"], now)
+            except Exception as e:
+                print("projections failed:", e)
+                res["projections"] = prev.get("projections") or []
         if ev:
             a_.setdefault("stories", [])
             a_["stories"] = ev + a_["stories"]
