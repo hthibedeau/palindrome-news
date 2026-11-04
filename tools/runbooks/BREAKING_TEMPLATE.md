@@ -133,3 +133,10 @@ A photo with a branded overlay (the Guardian's "Live" banner) is never used as t
 
 ## A fresh picture on a Breaking story (Hannah, Tue Nov 3, 2026)
 Every top story's photo changes every 30 minutes (PHOTO_ROTATE_MINUTES) to another real news photo from the story's own reports: a newer report's photo first, then one not shown recently. Each keeps its own caption and credit. Branded graphics and logos are never used. With only one usable photo, it stays. Code: `pick_photo()` in tools/autopilot.py.
+
+## The photo reel: one photo dissolves into the next (Hannah, Wed Nov 4, 2026)
+When a Breaking or top story has more than one real news photo, the top photo dissolves from one to the next instead of standing still: each photo holds about 8 seconds, then fades into the next over about 2 seconds, and each gets its own slow push in (the "slow move"). The caption under the photo and the credit on it change with every photo, so each picture always shows its own source ("— via <outlet>"). Small dots on the photo show how many there are; a tap on a dot goes to that photo. It pauses while the reader hovers on it, while it is off screen and while the tab is hidden, and keeps its place when the page redraws. A photo that fails to load is dropped; with only one good photo, it stays still.
+- Automatic top stories: `pick_reel()` in tools/autopilot.py writes `photos` (up to REEL_SIZE = 4: the lead photo, then one per newsroom from the newest reports, each with its caption and credit) into live/auto.json.
+- Hand-written top slot (section#breaking): every captioned photo in `more` in topSlotImage() joins the reel.
+- Breaking event (#bkEvent): `photo` plus every captioned photo in the UPNEXT entry's `photos`.
+- Code: `PAL_reel` in index.html, styles under "THE PHOTO REEL".

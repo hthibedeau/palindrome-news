@@ -1168,6 +1168,29 @@ header.site { border-bottom: 0; }
 }
 @keyframes kb1 { from { transform: scale(1) translate(0, 0); } to { transform: scale(1.12) translate(-2%, -1.5%); } }
 @keyframes kb2 { from { transform: scale(1.02); } to { transform: scale(1.1) translate(1.5%, -1%); } }
+/* THE PHOTO REEL (Hannah, Wed Nov 4, 2026: "could it ... dissolve" from one top photo to another, keep "the slow move",
+   and "still have to have the source"). PAL_reel stacks the story's photos and dissolves from one to the next; each
+   photo gets its own slow push in, and its caption and credit change with it. Dots show how many photos there are. */
+.bart.has-reel { position: relative; }
+.bart > .reel { position: absolute; inset: 0; z-index: 0; display: block; background: #2B1B54; }
+.bart > .reel > .reel-slide { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 1.8s ease-in-out; }
+.bart > .reel > .reel-slide.on { opacity: 1; }
+.bart > .reel > .reel-slide img { animation: none !important; transition: none !important; transform-origin: 60% 40%; }
+@media (prefers-reduced-motion: no-preference) {
+  .bart > .reel > .reel-slide.live img { animation: reelA var(--reel-move, 12s) ease-out forwards !important; animation-delay: var(--reel-at, 0s) !important; }
+  .bart > .reel > .reel-slide.live.alt img { animation-name: reelB !important; transform-origin: 35% 45%; }
+}
+@keyframes reelA { from { transform: scale(1.02); } to { transform: scale(1.12) translate(1.5%, -1%); } }
+@keyframes reelB { from { transform: scale(1.12) translate(-1.5%, 1%); } to { transform: scale(1.03); } }
+.bart > .reel-dots { position: absolute; left: 10px; bottom: 9px; z-index: 3; display: flex; gap: 2px; padding: 0 4px; border-radius: 99px; background: rgba(10, 6, 20, .45); }
+.bart > .reel-dots button { width: 22px; height: 22px; padding: 0; border: 0; background: none; cursor: pointer; display: grid; place-items: center; }
+.bart > .reel-dots button::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: rgba(255, 255, 255, .5); transition: background .4s, transform .4s; }
+.bart > .reel-dots button[aria-current="true"]::before { background: #FFFFFF; transform: scale(1.25); }
+.bart > .reel-dots button:focus-visible { outline: 2px solid #FFFFFF; outline-offset: -2px; border-radius: 50%; }
+.bart > .cr-credit, .bart > .ph .credit { z-index: 2; }
+.bart-cap.reel-cap { transition: opacity .35s ease; }
+.bart-cap.reel-cap.reel-out { opacity: 0; }
+@media (max-width: 959px) { #autoBreaking .ab-second > .bart > .reel-dots { display: none; } }
 .hero-art, .breaking .bart, .bd .bdimg, .us-lead .fimg, .fs .fimg, .vid .vt { overflow: hidden; }
 
 /* Every jump lands below the bar that follows you down the page */
@@ -2952,6 +2975,99 @@ header.site { border-bottom: 0; }
     apply(); setInterval(apply, 60000);
   })();
 
+  // ===== THE PHOTO REEL (Hannah, Wed Nov 4, 2026: "In the top photo, could it scroll from one top photo to another if
+  // there are multiple photos? Maybe not scroll, but dissolve. And I also like the slow move ... But it would still have
+  // to have the source"). PAL_reel(el, photos, id) takes a Breaking story's .bart and its photos ({src, caption, alt}),
+  // waits until at least two of them really load, then dissolves from one to the next every REEL_HOLD, each with its own
+  // slow push in. The caption under the photo (and the credit on it) changes with each photo, so every picture always
+  // shows its own source. A photo that fails is dropped; with fewer than two, the single photo stays as it was.
+  // The reel keeps its place when the page redraws (PAL_reelState), pauses while the reader hovers on it, while it is
+  // off screen and while the tab is hidden, and the dots let a reader go to any photo.
+  (function () {
+    const REEL_HOLD = 8000, REEL_FADE = 1800, ST = window.PAL_reelState = window.PAL_reelState || {};
+    const q = (x) => String(x == null ? '' : x).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+    const local = (u) => { try { return (USE_LOCAL && LOCAL[u]) || u; } catch (e) { return u; } };
+    const split = (t) => { const m = t.match(/(?:\(([^)]*)\)\s*)?[—-]\s*via\s+(.+)$/); return m ? { credit: (m[1] ? m[1] + ' · ' : '') + m[2], rest: m.index ? t.slice(0, m.index).trim() : '' } : { credit: t, rest: '' }; };
+    function caption(el, p, fade) {
+      let cap = el.nextElementSibling;
+      if (!cap || !cap.classList.contains('bart-cap')) { cap = document.createElement('p'); cap.className = 'bart-cap'; el.after(cap); }
+      cap.classList.add('reel-cap');
+      const put = () => {
+        const t = p.caption || '';
+        if (cap.classList.contains('cr-moved')) {  // the crisp layer shows the credit on the photo, the rest under it
+          const sp = split(t), cr = el.querySelector(':scope > .cr-credit');
+          if (cr) cr.textContent = sp.credit;
+          cap.textContent = sp.rest; cap.style.display = !sp.rest || /^Photo\.?$/i.test(sp.rest) ? 'none' : '';
+        } else cap.textContent = t;
+        cap.classList.remove('reel-out');
+      };
+      if (fade && cap.textContent) { cap.classList.add('reel-out'); setTimeout(put, 350); } else put();
+    }
+    window.PAL_reel = function (el, photos, id) {
+      if (!el || !el.isConnected) return;
+      const seen = {}, list = (photos || []).filter((p) => p && p.src && !seen[p.src] && (seen[p.src] = 1));
+      if (list.length < 2) return;
+      id = id || list[0].src;
+      const sig = id + '|' + list.map((p) => p.src).join('|');
+      if (el.dataset.reelSig === sig) return;
+      el.dataset.reelSig = sig;
+      // load every photo first; the reel starts once two or more are good (or after 6 seconds with what has loaded)
+      const ok = new Array(list.length).fill(null);
+      let left = list.length, started = false;
+      const go = () => {
+        if (started || !el.isConnected || el.dataset.reelSig !== sig) return;
+        const good = list.filter((p, k) => ok[k]);
+        if (good.length < 2) return;
+        started = true; build(good.map((p) => Object.assign({}, p, { u: ok[list.indexOf(p)] })));
+      };
+      list.forEach((p, k) => {
+        const tries = [local(p.src), p.src].filter((u, j, a) => a.indexOf(u) === j);
+        const next = () => { const u = tries.shift(); if (!u) { if (--left === 0) go(); return; } const im = new Image(); im.referrerPolicy = 'no-referrer'; im.onload = () => { if (!im.naturalWidth) return next(); ok[k] = u; if (--left === 0) go(); }; im.onerror = next; im.src = u; };
+        next();
+      });
+      setTimeout(go, 6000);
+      function build(good) {
+        const st = ST[id] = ST[id] || { i: 0, t0: Date.now() };
+        if (st.src) { const j = good.findIndex((p) => p.src === st.src); st.i = j > -1 ? j : 0; if (j < 0) st.t0 = Date.now(); }
+        st.i = st.i % good.length;
+        el.querySelectorAll(':scope > .reel, :scope > .reel-dots').forEach((x) => x.remove());
+        const old = el.querySelector(':scope > .ph'); if (old) old.remove();
+        el.removeAttribute('data-art');
+        const box = document.createElement('span'); box.className = 'reel';
+        box.innerHTML = good.map((p, k) => '<span class="ph reel-slide' + (k % 2 ? ' alt' : '') + '"><img src="' + q(p.u) + '" alt="' + q(p.alt || '') + '" decoding="async" referrerpolicy="no-referrer"></span>').join('');
+        box.style.setProperty('--reel-move', ((REEL_HOLD + 2 * REEL_FADE) / 1000) + 's');
+        el.prepend(box);
+        const dots = document.createElement('span'); dots.className = 'reel-dots';
+        dots.innerHTML = good.map((p, k) => '<button type="button" aria-label="Photo ' + (k + 1) + ' of ' + good.length + '"></button>').join('');
+        el.appendChild(dots);
+        el.classList.add('has-reel');
+        const slides = [...box.children], btns = [...dots.children];
+        const show = (k, fade) => {
+          const prev = slides[st.i];
+          st.i = k; st.src = good[k].src;
+          const s = slides[k];
+          if (fade) { s.classList.remove('live'); void s.offsetWidth; st.t0 = Date.now(); s.style.removeProperty('--reel-at'); }
+          else s.style.setProperty('--reel-at', -Math.min((Date.now() - st.t0) / 1000, (REEL_HOLD + 2 * REEL_FADE) / 1000) + 's');  // a redraw continues the same slow move
+          slides.forEach((x) => { if (x !== s && x !== prev) x.classList.remove('live'); });
+          s.classList.add('live', 'on');
+          if (prev && prev !== s) prev.classList.remove('on');  // fades out still moving
+          btns.forEach((b, j) => b.setAttribute('aria-current', j === k ? 'true' : 'false'));
+          caption(el, good[k], fade);
+        };
+        show(st.i, false);
+        let hover = false, inView = true;
+        el.addEventListener('mouseenter', () => { hover = true; });
+        el.addEventListener('mouseleave', () => { hover = false; });
+        if ('IntersectionObserver' in window) new IntersectionObserver((es) => { inView = es[es.length - 1].isIntersecting; }).observe(el);
+        btns.forEach((b, j) => b.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); if (j !== st.i) show(j, true); }));
+        const timer = setInterval(() => {
+          if (!box.isConnected) { clearInterval(timer); return; }
+          if (hover || !inView || document.hidden) { return; }
+          if (Date.now() - st.t0 >= REEL_HOLD + REEL_FADE) show((st.i + 1) % good.length, true);
+        }, 500);
+      }
+    };
+  })();
   // ===== Hannah's rule: a Breaking story ALWAYS shows a real image. imageChain tries each candidate picture in turn
   // (the stored copy first, then the outlet's original) and moves to the next when one fails to load; only if every
   // candidate fails does the illustration show. Candidates: the story's own photo, then the screen grabs of its latest
@@ -3495,6 +3611,8 @@ header.site { border-bottom: 0; }
         .concat(nets.map((c) => ({ src: c.file, credit: c.net })), nets.map((c) => ({ src: c.img, credit: c.net })))
         .concat((typeof LIVENOW !== 'undefined' ? LIVENOW : []).filter((l) => (l.story || '').indexOf(ev.story.split(' ')[0]) === 0).map((l) => ({ src: l.file || l.img, credit: l.net })));
       imageChain(box.querySelector('.bart'), pics, 'ballot', ev.alt || ev.h);
+      // THE PHOTO REEL (Nov 4, 2026): the event's own captioned news photos dissolve one into the next
+      if (window.PAL_reel) window.PAL_reel(box.querySelector('.bart'), [{ src: ev.photo, caption: ev.caption, alt: ev.alt }].concat(ev.photos || []).filter((p) => p && p.src && p.caption), 'ev-' + (box.dataset.evid || ev.h));
       box.hidden = false;
       if (window.PAL_oneStoryOnePlace) window.PAL_oneStoryOnePlace();
       if (window.PAL_liveCoverageRender && !box.dataset.bandDone) { box.dataset.bandDone = '1'; window.PAL_liveCoverageRender(); }
@@ -3505,8 +3623,11 @@ header.site { border-bottom: 0; }
   (function topSlotImage() {
     const bk = document.getElementById('breaking'); if (!bk) return;
     const bart = bk.querySelector('.bk-side .bart') || bk.querySelector('.bart'); if (!bart) return;
-    const own = { src: bart.dataset.photo, credit: bart.dataset.credit, caption: bart.dataset.caption };
-    imageChain(bart, [own, { src: "img/live/sookenewsmirror-jesse-adams-1027.jpg", credit: "Jesse Adams/Facebook, via Sooke News Mirror", caption: "Adams in a photo he posted in August. (Jesse Adams/Facebook) — via Sooke News Mirror" }]);
+    const own = { src: bart.dataset.photo, credit: bart.dataset.credit, caption: bart.dataset.caption, alt: bart.dataset.alt };
+    // every captioned news photo listed here dissolves into the next (THE PHOTO REEL, Nov 4, 2026)
+    const more = [{ src: "img/live/sookenewsmirror-jesse-adams-1027.jpg", credit: "Jesse Adams/Facebook, via Sooke News Mirror", caption: "Adams in a photo he posted in August. (Jesse Adams/Facebook) — via Sooke News Mirror" }];
+    imageChain(bart, [own].concat(more));
+    if (window.PAL_reel) window.PAL_reel(bart, [own].concat(more).filter((p) => p.src && p.caption), 'top-' + (bk.dataset.story || bart.dataset.photo || ''));
   })();
 
   // Breaking news takes over the Daily Brief slot
@@ -6545,6 +6666,8 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
         + '</article>';
     }).join('') + '<p class="ab-note">Picked and updated automatically at ' + esc(fmt(AUTO.d.checked)) + ' ET, by how many newsrooms carry each story and where it sits on National Newswatch and CBC News, with stories that touch Canada first: a story from abroad with no Canadian tie gives way to one that has one. Headlines and summaries are the outlets’ own.</p>';
     sec.hidden = false;
+    // THE PHOTO REEL (Nov 4, 2026): every photo tools/autopilot.py found for the story dissolves into the next
+    if (window.PAL_reel) list.forEach((s) => { if (!s.photos || s.photos.length < 2) return; const art = sec.querySelector('.ab-story[data-key="' + CSS.escape(s.key) + '"]'); if (art) window.PAL_reel(art.querySelector(':scope > .bart'), s.photos.map((p) => ({ src: AUTO.base + p.src, caption: p.caption, alt: p.alt })), s.key); });
     sec.classList.toggle('solo', list.length === 1);  // a big news day: the big story stands alone (Nov 3, 2026)
     if (window.PAL_orderTop) window.PAL_orderTop();  // Live coverage under the Breaking story (Nov 3, 2026)
     soloLayout();

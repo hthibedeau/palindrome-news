@@ -490,7 +490,45 @@ def pick_photo(key, rows, old, imgdir, now, first_info=None):
     return (cur if cur_ok else None), seen
 
 
+# ===== THE PHOTO REEL (Hannah, Wed Nov 4, 2026: "In the top photo, could it ... dissolve" from one photo to another
+# "if there are multiple photos ... I also like the slow move ... But it would still have to have the source").
+# pick_reel() gives each top story up to REEL_SIZE real news photos from its own reports: the lead photo first, then
+# one per newsroom, newest reports first. Each keeps its own caption, credit and newsroom. The page (PAL_reel in
+# index.html) dissolves from one to the next, each with its slow move, and changes the caption and credit with it.
+REEL_SIZE = 4
+
+
+def pick_reel(key, rows, photo, imgdir, first_info=None):
+    if not photo or not photo.get("src"):
+        return []
+    import autoupdate as au
+    pkey = lambda u: re.sub(r"\?.*$", "", ps.key(ps.best_src(u)) if u else "").lower()
+    reel, keys, outlets = [dict((k, photo.get(k)) for k in ("src", "caption", "alt", "outlet", "url"))], {pkey(photo.get("orig") or "")}, {photo.get("outlet")}
+    for i, r in enumerate(rows[:PHOTO_LOOK]):
+        if len(reel) >= REEL_SIZE:
+            break
+        o = au.clean_outlet(r[1])
+        if o in outlets:
+            continue
+        pi = (first_info if i == 0 and first_info else None) or page_info(r[3]) or {}
+        img = pi.get("img")
+        if not img or GENERIC_IMG.search(img) or pkey(img) in keys:
+            continue
+        src = save_photo(img, imgdir, key)
+        if not src:
+            continue
+        cap, credit = pi.get("caption") or pi.get("alt") or "", pi.get("credit") or ""
+        reel.append({"src": src, "caption": (cap.rstrip(".") + "." if cap else "From: " + clean(r[2]).rstrip(".") + ".") + (f" ({credit})" if credit else "") + f" — via {o}",
+                     "alt": cap[:160] or clean(r[2]), "outlet": o, "url": r[3]})
+        keys.add(pkey(img))
+        outlets.add(o)
+    return reel
+
+
 def save_photo(src, outdir, tag):
+    fn = f"{tag}-{hashlib.md5(src.encode()).hexdigest()[:10]}.jpg"
+    if os.path.exists(os.path.join(outdir, fn)):
+        return "live/img/" + fn  # already saved: no need to download it again
     try:
         from PIL import Image
         import io
@@ -599,6 +637,7 @@ def build_story(g, now, imgdir, prev):
             break
     # A FRESH PICTURE ON A BREAKING STORY: a new photo from the story's reports every PHOTO_ROTATE_MINUTES
     photo, photo_seen = pick_photo(key, [lead] + [x for x in news_reps if x is not lead], old, imgdir, datetime.now(timezone.utc), info)
+    photos = pick_reel(key, [lead] + [x for x in news_reps if x is not lead], photo, imgdir, info)
     newest = reps[0][0]
     # What each newsroom reports: every outlet's own lead sentence (og:description), side by side
     with ThreadPoolExecutor(6) as ex:
@@ -617,7 +656,7 @@ def build_story(g, now, imgdir, prev):
         "title": clean(lead[2]), "url": lead[3], "outlet": au.clean_outlet(lead[1]), "t": w.eastern(lead[0]), "iso": lead[0].isoformat(),
         "summary": info.get("desc", ""),
         "first": {"outlet": au.clean_outlet(first[1]), "url": first[3], "t": w.eastern(first[0]), "title": clean(first[2]), "iso": first[0].isoformat()},
-        "newest": newest.isoformat(), "photo": photo, "photo_seen": photo_seen,
+        "newest": newest.isoformat(), "photo": photo, "photo_seen": photo_seen, "photos": photos,
         "independent": independent(reps),
         "reports": [{"t": w.eastern(r[0]), "iso": r[0].isoformat(), "outlet": au.clean_outlet(r[1]), "title": clean(r[2]), "url": r[3],
                      "desc": descs.get(r[3], "")} for r in reps[:14]],
@@ -3951,6 +3990,7 @@ def event_day_stories(bigweek, items, now, imgdir, prev):
         old = next((s for s in prev if s.get("key") == key), None)
         # A FRESH PICTURE ON A BREAKING STORY: a new photo from the newest reports every PHOTO_ROTATE_MINUTES
         photo, photo_seen = pick_photo(key, [lead] + [x for x in free if x is not lead], old, imgdir, now, info)
+        photos = pick_reel(key, [lead] + [x for x in free if x is not lead], photo, imgdir, info)
         # the reports: the newest first, then the Canadian angle (Canadian reports on the event), then the rest
         can = [r for r in rows if CAN_TIE.search(r[2]) and r is not lead]
         rest = [r for r in rows if r is not lead and r not in can]
@@ -3972,7 +4012,7 @@ def event_day_stories(bigweek, items, now, imgdir, prev):
             "tag": "Top story" if aftermath else "Breaking", "title": clean(lead[2]), "url": lead[3], "outlet": au.clean_outlet(lead[1]), "t": w.eastern(lead[0]), "iso": lead[0].isoformat(),
             "summary": info.get("desc", "") or what,
             "first": {"outlet": au.clean_outlet(first[1]), "url": first[3], "t": w.eastern(first[0]), "title": clean(first[2]), "iso": first[0].isoformat()},
-            "newest": rows[0][0].isoformat(), "photo": photo, "photo_seen": photo_seen,
+            "newest": rows[0][0].isoformat(), "photo": photo, "photo_seen": photo_seen, "photos": photos,
             "reports": [{"t": w.eastern(r[0]), "iso": r[0].isoformat(), "outlet": au.clean_outlet(r[1]), "title": clean(r[2]), "url": r[3], "desc": desc(r[3])} for r in ordered[:14]],
             "sources": official + [{"t": w.eastern(r[0]), "primary": is_primary(r), "outlet": au.clean_outlet(r[1]), "title": clean(r[2]), "url": r[3],
                                     "desc": desc(r[3]), "wire": "", "by": [], "copies": []} for r in ordered[:14]],
