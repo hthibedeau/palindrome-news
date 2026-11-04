@@ -505,6 +505,10 @@ def pick_photo(key, rows, old, imgdir, now, first_info=None):
 # FIRST, then photos of people the headline names, then one per newsroom, newest reports first. Each keeps its own caption, credit and newsroom. The page (PAL_reel in
 # index.html) dissolves from one to the next, each with its slow move, and changes the caption and credit with it.
 REEL_SIZE = 4
+ORG_NOUNS = {"bank", "nation", "first", "council", "band", "party", "university", "college", "hospital", "school", "company",
+             "corporation", "group", "ministry", "department", "agency", "service", "force", "court", "city", "county", "province",
+             "association", "union", "federation", "foundation", "institute", "club", "credit", "commission", "board", "authority",
+             "government", "office", "police", "army", "navy", "airline", "airport", "railway", "pipeline", "news", "network"}
 PARTY_WORDS = {"democrats", "democrat", "democratic", "republicans", "republican", "gop", "liberals", "liberal", "conservatives",
                "conservative", "ndp", "bloc", "greens", "house", "senate", "congress", "parliament", "commons", "speaker", "minister",
                "premier", "president", "prime", "mayor", "leader", "midterm", "midterms", "budget", "election", "elections"}
@@ -589,13 +593,19 @@ def pick_reel(key, rows, photo, imgdir, first_info=None):
     # someone the headline names. With fewer than two photos that match, the headline's own photo stands alone.
     from collections import Counter
     titles = [_subject(clean(r[2])) for r in rows]
-    common = {w for w, n in Counter(w for t in titles for w in t).items() if len(titles) >= 4 and n >= 0.3 * len(titles)}
+    # the words every report on a big EVENT shares ("midterm", "Democrats") say nothing about this headline; on an
+    # ordinary story they are its subject, so they count (Nov 4, 2026: "Mississaugas" matched nothing otherwise)
+    common = {w for w, n in Counter(w for t in titles for w in t).items() if len(titles) >= 4 and n >= 0.3 * len(titles)} if key in STORY_MATCH else set()
     stem = lambda w: re.sub(r"(?:ies|es|s)$", "", w.lower())
     distinct = {stem(w) for w in hsub - common if len(w) > 3 and not COUNTRY.fullmatch(w)}
     for grp in TOPIC_KIN:
         if distinct & grp:
             distinct |= grp
     people_named = set()  # filled once the headline's people are known (below)
+    phrase = {}  # each word of a capitalized name of several words -> that whole name
+    for m in re.finditer(r"[A-Z][\w'’.-]*(?:(?:\s+(?:of|the|de|du|la|and|&))*\s+[A-Z][\w'’.-]*)+", head):
+        for w in re.findall(r"[A-Za-z\u00C0-\u00FF'’-]{3,}", m.group(0)):
+            phrase[stem(w)] = m.group(0).lower()
     def matches(*texts):
         t = " ".join(x or "" for x in texts)
         words = {stem(w) for w in re.findall(r"[A-Za-zÀ-ÿ'’-]{3,}", t)}
@@ -608,7 +618,11 @@ def pick_reel(key, rows, photo, imgdir, first_info=None):
     # happened to the scroll?" Mike Johnson's photos were dropped because "Johnson" is in most of the story's reports).
     # People: capitalized words after the first word that are not parties, chambers or common words of the story.
     first = (re.findall(r"[A-Za-zÀ-ÿ'’-]+", head) or [""])[0].lower()
-    people = {n for n in names if n not in PARTY_WORDS and not (n == first and n in {c.lower() for c in common} and n not in hsub)}
+    # a word inside the name of an organization, a nation or a place ("First Nations Bank", "Mississaugas of the
+    # Credit") is not a person (Nov 4, 2026: a pipeline photo joined the First Nations Bank story through "Nations")
+    org_words = {stem(w) for ph in set(phrase.values()) if ORG_NOUNS & {stem(x) for x in ph.split()} for w in ph.split()}
+    people = {n for n in names if n not in PARTY_WORDS and stem(n) not in ORG_NOUNS and stem(n) not in org_words
+              and not (n == first and n in {c.lower() for c in common} and n not in hsub)}
     names = {n for n in names if n not in {c.lower() for c in common}} | {n for n in people if len(n) > 3}
     people_named |= {n for n in people if len(n) > 3}
     cands = []  # (rank, order, entry, imgkey, capkey)
@@ -633,13 +647,15 @@ def pick_reel(key, rows, photo, imgdir, first_info=None):
             # nothing in that headline or the photo's address says it is unsuitable (Nov 4, 2026: the scroll came back)
             t = clean(r[2])
             tw = {stem(w) for w in re.findall(r"[A-Za-z\u00C0-\u00FF'’-]{3,}", t)}
-            if not (len(distinct & tw) >= 2 or any(re.search(r"\b" + re.escape(n) + r"\b", t.lower()) for n in people_named)) or unfit_photo(t):
+            # a name of several words ("First Nations Bank") counts once: a pipeline story sharing only "First
+            # Nations" is not about the First Nations Bank (Nov 4, 2026)
+            if not (len({phrase.get(w, w) for w in distinct & tw}) >= 2 or any(re.search(r"\b" + re.escape(n) + r"\b", t.lower()) for n in people_named)) or unfit_photo(t):
                 return
         src = save_photo(img, imgdir, key)
-        if not src:
-            return
+        if not src or _graphic(os.path.join(imgdir, os.path.basename(src))):
+            return  # a logo or flat graphic is never a slide, not even the headline's own
         full = (cap.rstrip(".") + "." if cap else "From: " + clean(r[2]).rstrip(".") + ".") + (f" ({credit})" if credit else "") + f" — via {o}"
-        if rank > 0 and names and any(re.search(r"\b" + re.escape(n) + r"\b", (cap + " " + (pi.get("alt") or "")).lower()) for n in names):
+        if rank > 0 and people_named and any(re.search(r"\b" + re.escape(n) + r"\b", (cap + " " + (pi.get("alt") or "")).lower()) for n in people_named):
             rank = 1  # the photo shows someone the headline names
         cands.append((rank, order, {"src": src, "orig": img, "caption": full, "alt": cap[:160] or clean(r[2]), "outlet": o, "url": r[3]}, pkey(img), capkey(cap)))
 
@@ -647,7 +663,7 @@ def pick_reel(key, rows, photo, imgdir, first_info=None):
         pi = (first_info if i == 0 and first_info else None) or page_info(r[3]) or {}
         # what the PICTURE shows must match the headline (its caption), not only the report it came with
         if i and not matches(pi.get("caption"), pi.get("alt"), "" if pi.get("caption") else clean(r[2])) and not (
-                names and any(re.search(r"\b" + re.escape(n) + r"\b", ((pi.get("caption") or "") + " " + (pi.get("alt") or "")).lower()) for n in names)):
+                people_named and any(re.search(r"\b" + re.escape(n) + r"\b", ((pi.get("caption") or "") + " " + (pi.get("alt") or "")).lower()) for n in people_named)):
             continue  # EVERY PHOTO MATCHES THE HEADLINE
         add(0 if i == 0 else 3, i, pi.get("img"), pi, r)
     # MORE PHOTOS FOR THE REEL (Hannah, Wed Nov 4, 2026: "what happened to the scroll you created?"): beyond the
@@ -683,6 +699,19 @@ def pick_reel(key, rows, photo, imgdir, first_info=None):
             ck.add(c)
         outlets[e["outlet"]] = outlets.get(e["outlet"], 0) + 1
     return reel
+
+
+def _graphic(path):
+    """True for a logo, wordmark or other flat graphic rather than a news photo: mostly plain white or a handful of
+    colours (Hannah, Wed Nov 4, 2026: the carousel showed the First Nations Bank of Canada's logo)."""
+    try:
+        from PIL import Image
+        px = list(Image.open(path).convert("RGB").resize((64, 64)).getdata())
+    except Exception:
+        return False
+    white = sum(1 for r, g, b in px if r > 235 and g > 235 and b > 235) / len(px)
+    colours = len({(r // 16, g // 16, b // 16) for r, g, b in px})
+    return white > 0.5 or colours < 90
 
 
 def _look(path):
