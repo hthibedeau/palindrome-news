@@ -3004,9 +3004,14 @@ header.site { border-bottom: 0; }
       };
       if (fade && cap.textContent) { cap.classList.add('reel-out'); setTimeout(put, 350); } else put();
     }
+    // NO UNSUITABLE PICTURES (Hannah, Wed Nov 4, 2026): the same check as UNFIT_PHOTO in tools/autopilot.py, as a
+    // second safety net: a photo whose caption says it shows children, weapons or militia, bodies or blood, or
+    // propaganda staging (caricatures, effigies, flag burning) never shows in a Breaking photo.
+    const UNFIT = /\b(boys?|girls?|child(?:ren)?|kids?|toddlers?|bab(?:y|ies)|infants?|minors?|teen(?:ager)?s?|schoolchildren|pupils|students?|youths?|juveniles?|son|daughter|camouflage|militia|militants?|fighters?|paramilitary|berets?|rifles?|guns?|gunmen|weapons?|armed|ammunition|grenades?|military parade|parade of|troops march|bod(?:y|ies)|corpses?|dead|killed|blood(?:y|ied)?|wounded|injured|casualt(?:y|ies)|coffins?|graves?|morgue|gore|caricatures?|effig(?:y|ies)|death to|chant(?:s|ed|ing)? slogans|rally marking|hostages?|execution)\b|\bburn(?:s|ed|ing)? (?:a |an |the )?(?:u\.?s\.?|american|israeli|canadian)? ?flags?\b|\banti-(?:u\.?s\.?|american|israeli) rally\b/i;
+    window.PAL_photoUnfit = (p) => !!p && UNFIT.test([p.caption, p.alt].filter(Boolean).join(' '));
     window.PAL_reel = function (el, photos, id) {
       if (!el || !el.isConnected) return;
-      const seen = {}, list = (photos || []).filter((p) => p && p.src && !seen[p.src] && (seen[p.src] = 1));
+      const seen = {}, list = (photos || []).filter((p) => p && p.src && !window.PAL_photoUnfit(p) && !seen[p.src] && (seen[p.src] = 1));
       if (list.length < 2) return;
       id = id || list[0].src;
       const sig = id + '|' + list.map((p) => p.src).join('|');
@@ -6612,6 +6617,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     if (bk && !bk.hidden) { bk.hidden = true; bk.dataset.autoHidden = '1'; }
     const a = (u, t) => '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + t + '</a>';
     sec.innerHTML = list.map((s, i) => {
+      if (s.photo && window.PAL_photoUnfit && window.PAL_photoUnfit(s.photo)) s.photo = (s.photos || []).find((p) => !window.PAL_photoUnfit(p)) || null;  // NO UNSUITABLE PICTURES
       const ph = s.photo ? '<div class="bart"><span class="ph"><img src="' + esc(AUTO.base + s.photo.src) + '" alt="' + esc(s.photo.alt || '') + '" decoding="async" onerror="this.closest(\'.bart\').remove()"></span></div><p class="bart-cap">' + esc(s.photo.caption) + '</p>' : '';
       const recent = Date.now() - Date.parse(s.newest) < 3600000;
       const firstLine = s.first && s.first.url !== s.url ? '<br>First reported by ' + a(s.first.url, esc(s.first.outlet)) + ' · ' + esc(s.first.t) : '';
