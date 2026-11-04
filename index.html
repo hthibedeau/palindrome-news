@@ -110,6 +110,7 @@
 .can-box .can-note { margin: 2px 0 0 !important; padding-top: 5px !important; font-size: 10px !important; }
 @media (max-width: 420px) { .can-box .can-head > .can-sub { display: none; } }
 .can-box ol.can-few > li:nth-child(n+4) { display: none; }
+.can-box ol.can-few5 > li:nth-child(n+6) { display: none; }
 .can-box .can-more { display: inline-flex; align-items: center; min-height: 32px; margin: 2px 0 0; padding: 0 12px; border: 1px solid rgba(231, 194, 125, .7); border-radius: 999px; background: none; color: #F3D9A4; font: 600 12px var(--sans, system-ui); cursor: pointer; }
 .can-box .can-more:focus-visible { outline: 2px solid #F3D9A4; outline-offset: 2px; }
 .can-box li .rk.us { display: none !important; }  /* the subtitle already says "and the Canada-U.S. relationship" */
@@ -6536,10 +6537,11 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
             : '')
           + '<p class="pj-note">Each call is the network’s own, in its own words, linked to where it was made. A projection is not a final result.</p></div>';
       })() : '';
-      return '<article class="ab-story' + (i ? ' ab-second' : '') + (s.proj_lead ? ' ab-projlead' : '') + '" data-key="' + esc(s.key) + '">' + ph + '<span class="tag">' + (s.event_tag ? esc(s.event_tag) : s.scoop ? 'Exclusive · ' + esc(s.outlet) : onAir || recent ? 'Breaking' : 'Developing') + '</span>'
-        + '<h2>' + a(s.url, esc(s.title)) + '</h2>' + (s.proj_lead ? '<p class="ab-projsrc">Projection by ' + a(s.proj_lead.url, esc(s.proj_lead.net)) + ' · ' + esc(s.proj_lead.t) + ' ET</p>' : '') + (sub ? '<p class="ab-sub">' + esc(sub.t) + (sub.own ? '' : ' <span class="ab-cr">— ' + a(sub.u, esc(sub.o)) + '</span>') + '</p>' : '') + projBox + liveBar + moreBox
+      return '<article class="ab-story' + (i ? ' ab-second' : '') + (s.proj_lead ? ' ab-projlead' : '') + (s.aftermath ? ' ab-after' : '') + '" data-key="' + esc(s.key) + '">' + ph + '<span class="tag">' + (s.event_tag ? esc(s.event_tag) : s.scoop ? 'Exclusive · ' + esc(s.outlet) : onAir || recent ? 'Breaking' : 'Developing') + '</span>'
+        + '<h2>' + a(s.url, esc(s.title)) + '</h2>' + (s.proj_lead ? '<p class="ab-projsrc">Projection by ' + a(s.proj_lead.url, esc(s.proj_lead.net)) + ' · ' + esc(s.proj_lead.t) + ' ET</p>' : '') + (sub ? '<p class="ab-sub">' + esc(sub.t) + (sub.own ? '' : ' <span class="ab-cr">— ' + a(sub.u, esc(sub.o)) + '</span>') + '</p>' : '') + (s.aftermath ? '' : projBox) + liveBar + moreBox
         + '<p class="first">LATEST ' + a(s.url, esc(s.outlet)) + ' · ' + esc(s.t) + firstLine + '</p>'
         + '<details class="ab-reps" data-key="' + esc(s.key) + '"' + (repsOpen(s.key, !i) ? ' open' : '') + '><summary><span class="ab-reps-t"><svg class="pn-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h13v14H6a2 2 0 0 1-2-2V5zm13 4h3v8a2 2 0 0 1-2 2h-1M7 8h7M7 11h7M7 14h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>What each newsroom reports <span class="pn-n">' + nInd + ' independent report' + (nInd === 1 ? '' : 's') + '</span></span><span class="ab-reps-tog"><span class="o1">Show</span><span class="o2">Hide</span><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></summary><ol>' + reps + '</ol></details>'
+        + (s.aftermath ? projBox : '')  // THE MORNING AFTER (Hannah, Wed Nov 4, 2026): "Results: who called what can move down", under the reports
         + '</article>';
     }).join('') + '<p class="ab-note">Picked and updated automatically at ' + esc(fmt(AUTO.d.checked)) + ' ET, by how many newsrooms carry each story and where it sits on National Newswatch and CBC News, with stories that touch Canada first: a story from abroad with no Canadian tie gives way to one that has one. Headlines and summaries are the outlets’ own.</p>';
     sec.hidden = false;
@@ -6819,15 +6821,19 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
         + (c.views || []).map((x) => '<li><span class="rk">' + esc(x.kind) + '</span>' + a(x.url, esc(x.title)) + ' <span class="o">' + esc(x.outlet) + ' &#8599;</span></li>').join('');
       if (!items) return;
       const nItems = (c.official || []).length + (c.stories || []).length + (c.views || []).length;
+      const SHOW = root.classList && root.classList.contains('ab-after') ? 5 : 3, FEW = SHOW === 5 ? 'can-few5' : 'can-few';  // the morning after: more of the Canadian angle open at first
       const box = document.createElement('aside'); box.className = 'can-box'; box.setAttribute('aria-label', 'The Canadian angle');
       box.innerHTML = '<div class="can-head"><h4>' + LEAF + 'The Canadian angle</h4><p class="can-sub">' + (c.us ? 'How this story, and the Canada–U.S. relationship today, reach Canada' : 'How this story reaches Canada') + '</p></div>'
-        + '<div class="can-body"><ol class="' + (nItems > 3 ? 'can-few' : '') + '">' + items + '</ol>' + (nItems > 3 ? '<button type="button" class="can-more" aria-expanded="false" onclick="const o=this.previousElementSibling;const on=o.classList.toggle(\'can-few\');this.setAttribute(\'aria-expanded\',String(!on));this.textContent=on?\'Show ' + (nItems - 3) + ' more\':\'Show less\'">Show ' + (nItems - 3) + ' more</button>' : '') + '<p class="can-note">Checked ' + esc(fmt(AUTO.d.checked)) + ' ET · the outlets’ own headlines</p></div>';
+        + '<div class="can-body"><ol class="' + (nItems > SHOW ? FEW : '') + '">' + items + '</ol>' + (nItems > SHOW ? '<button type="button" class="can-more" aria-expanded="false" onclick="const o=this.previousElementSibling;const on=o.classList.toggle(\'' + FEW + '\');this.setAttribute(\'aria-expanded\',String(!on));this.textContent=on?\'Show ' + (nItems - SHOW) + ' more\':\'Show less\'">Show ' + (nItems - SHOW) + ' more</button>' : '') + '<p class="can-note">Checked ' + esc(fmt(AUTO.d.checked)) + ' ET · the outlets’ own headlines</p></div>';
       if (root.closest('section.lead')) { const d = root.querySelector('.dek') || root.querySelector('h1'); if (d) d.after(box); else root.appendChild(box); return; }
       if (root.classList.contains('ab-story')) {  // wide screens: floated beside the headline; phones: under the headline and its subheadline
         const wide = window.matchMedia('(min-width: 960px)').matches && root.offsetWidth >= 800, tag = root.querySelector(':scope > .tag'), after = root.querySelector(':scope > .ab-sub') || root.querySelector(':scope > .bk-dek') || root.querySelector(':scope > .first');
         // right under the headline, its live link and its newsroom strip, ahead of the video and report lists, so
         // the Canadian angle is one of the first things a reader sees (Hannah, Thu Oct 29, 2026: "needs to stand out more")
         const lead = root.querySelector(':scope > .ab-vids') || root.querySelector(':scope > .first');
+        // THE MORNING AFTER (Hannah, Wed Nov 4, 2026: "The Canadian angle really needs to move up because there's a lot of
+        // big Canadian angles to this story"): right under the headline and its subheadline, ahead of live links and video
+        if (root.classList.contains('ab-after')) { const h = root.querySelector(':scope > .ab-sub') || root.querySelector(':scope > h2'); if (wide && tag) tag.before(box); else if (h) h.after(box); else root.appendChild(box); return; }
         if (wide && tag) tag.before(box); else if (lead) lead.before(box); else if (after) after.after(box); else root.appendChild(box);
         return;
       }
