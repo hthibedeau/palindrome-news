@@ -6668,7 +6668,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     }).join('') + '<p class="ab-note">Picked and updated automatically at ' + esc(fmt(AUTO.d.checked)) + ' ET, by how many newsrooms carry each story and where it sits on National Newswatch and CBC News, with stories that touch Canada first: a story from abroad with no Canadian tie gives way to one that has one. Headlines and summaries are the outlets’ own.</p>';
     sec.hidden = false;
     // THE PHOTO REEL (Nov 4, 2026): every photo tools/autopilot.py found for the story dissolves into the next
-    if (window.PAL_reel) list.forEach((s) => { if (!s.photos || s.photos.length < 2) return; const art = sec.querySelector('.ab-story[data-key="' + CSS.escape(s.key) + '"]'); if (art) window.PAL_reel(art.querySelector(':scope > .bart'), s.photos.map((p) => ({ src: AUTO.base + p.src, caption: p.caption, alt: p.alt })), s.key); });
+    if (window.PAL_reel) list.forEach((s) => { if (!s.photos || s.photos.length < 2) return; const art = sec.querySelector('.ab-story[data-key="' + CSS.escape(s.key) + '"]'); if (art) window.PAL_reel(art.querySelector(':scope > .bart'), s.photos.map((p) => ({ src: AUTO.base + p.src, caption: p.caption, alt: p.alt })), s.key + '|' + s.url); });  // a new headline starts the reel on its own photo
     sec.classList.toggle('solo', list.length === 1);  // a big news day: the big story stands alone (Nov 3, 2026)
     if (window.PAL_orderTop) window.PAL_orderTop();  // Live coverage under the Breaking story (Nov 3, 2026)
     soloLayout();
