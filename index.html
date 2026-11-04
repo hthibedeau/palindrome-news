@@ -7443,6 +7443,10 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
             if (b && mins > 0 && mins < 600) { const c = document.createElement('span'); c.className = 'cr-count'; c.textContent = mins < 60 ? 'in ' + mins + ' min' : 'in ' + Math.floor(mins / 60) + ' h ' + (mins % 60) + ' min'; b.appendChild(c); }
           }
         }
+        // the story's other live video goes right under its live strip (Hannah, Wed Nov 4, 2026: "The live video on this
+        // story needs to go below live now on CBC News"), ahead of the Canadian angle and the related stories
+        const crl = art.querySelector(':scope > .cr-live'), vids = art.querySelector(':scope > .ab-vids');
+        if (crl && vids && crl.nextElementSibling !== vids) crl.after(vids);
         // 1. fold the long lists
         fold(art.querySelector(':scope > .rel-box'), 'stories'); fold(art.querySelector(':scope > .ab-reps'), 'reports', true);
         // 3. video cards
