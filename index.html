@@ -1171,26 +1171,26 @@ header.site { border-bottom: 0; }
 /* THE PHOTO REEL (Hannah, Wed Nov 4, 2026: "could it ... dissolve" from one top photo to another, keep "the slow move",
    and "still have to have the source"). PAL_reel stacks the story's photos and dissolves from one to the next; each
    photo gets its own slow push in, and its caption and credit change with it. Dots show how many photos there are. */
-.bart.has-reel { position: relative; }
-.bart > .reel { position: absolute; inset: 0; z-index: 0; display: block; background: #2B1B54; }
-.bart > .reel > .reel-slide { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 1.8s ease-in-out; }
-.bart > .reel > .reel-slide.on { opacity: 1; }
-.bart > .reel > .reel-slide img { animation: none !important; transition: none !important; transform-origin: 60% 40%; }
+.has-reel { position: relative; }
+.has-reel > .reel { position: absolute; inset: 0; z-index: 0; display: block; background: #2B1B54; }
+.has-reel > .reel > .reel-slide { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 1.8s ease-in-out; }
+.has-reel > .reel > .reel-slide.on { opacity: 1; }
+.has-reel > .reel > .reel-slide img { animation: none !important; transition: none !important; transform-origin: 60% 40%; }
 @media (prefers-reduced-motion: no-preference) {
-  .bart > .reel > .reel-slide.live img { animation: reelA var(--reel-move, 12s) ease-out forwards !important; animation-delay: var(--reel-at, 0s) !important; }
-  .bart > .reel > .reel-slide.live.alt img { animation-name: reelB !important; transform-origin: 35% 45%; }
+  .has-reel > .reel > .reel-slide.live img { animation: reelA var(--reel-move, 12s) ease-out forwards !important; animation-delay: var(--reel-at, 0s) !important; }
+  .has-reel > .reel > .reel-slide.live.alt img { animation-name: reelB !important; transform-origin: 35% 45%; }
 }
 @keyframes reelA { from { transform: scale(1.02); } to { transform: scale(1.12) translate(1.5%, -1%); } }
 @keyframes reelB { from { transform: scale(1.12) translate(-1.5%, 1%); } to { transform: scale(1.03); } }
-.bart > .reel-dots { position: absolute; left: 10px; bottom: 9px; z-index: 3; display: flex; gap: 2px; padding: 0 4px; border-radius: 99px; background: rgba(10, 6, 20, .45); }
-.bart > .reel-dots button { width: 22px; height: 22px; padding: 0; border: 0; background: none; cursor: pointer; display: grid; place-items: center; }
-.bart > .reel-dots button::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: rgba(255, 255, 255, .5); transition: background .4s, transform .4s; }
-.bart > .reel-dots button[aria-current="true"]::before { background: #FFFFFF; transform: scale(1.25); }
-.bart > .reel-dots button:focus-visible { outline: 2px solid #FFFFFF; outline-offset: -2px; border-radius: 50%; }
-.bart > .cr-credit, .bart > .ph .credit { z-index: 2; }
+.has-reel > .reel-dots { position: absolute; left: 10px; bottom: 9px; z-index: 3; display: flex; gap: 2px; padding: 0 4px; border-radius: 99px; background: rgba(10, 6, 20, .45); }
+.has-reel > .reel-dots button { width: 22px; height: 22px; padding: 0; border: 0; background: none; cursor: pointer; display: grid; place-items: center; }
+.has-reel > .reel-dots button::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: rgba(255, 255, 255, .5); transition: background .4s, transform .4s; }
+.has-reel > .reel-dots button[aria-current="true"]::before { background: #FFFFFF; transform: scale(1.25); }
+.has-reel > .reel-dots button:focus-visible { outline: 2px solid #FFFFFF; outline-offset: -2px; border-radius: 50%; }
+.bart > .cr-credit, .bart > .ph .credit, .has-reel > .cr-credit { z-index: 2; }
 .bart-cap.reel-cap { transition: opacity .35s ease; }
 .bart-cap.reel-cap.reel-out { opacity: 0; }
-@media (max-width: 959px) { #autoBreaking .ab-second > .bart > .reel-dots { display: none; } }
+@media (max-width: 959px) { #autoBreaking .ab-second > .has-reel > .reel-dots { display: none; } }
 .hero-art, .breaking .bart, .bd .bdimg, .us-lead .fimg, .fs .fimg, .vid .vt { overflow: hidden; }
 
 /* Every jump lands below the bar that follows you down the page */
@@ -6706,6 +6706,9 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       + (s.summary ? '<p class="dek">' + esc(s.summary) + ' (' + a(s.url, esc(s.outlet), ' style="position: relative; z-index: 2; text-decoration: underline"') + ')</p>' : '')
       + '<div class="row-meta"><span class="ts">Updated ' + esc(s.t) + '</span><span>' + (s.sources ? s.sources.length : (s.independent || s.outlets)) + ' independent reports</span><span style="color: var(--accent); font-weight: 600">Latest report &#8599;</span></div>'
       + '<div class="chips-static">' + outs.slice(0, 7).map((r) => a(r.url, esc(r.outlet))).join('') + '</div>';
+    // THE PHOTO REEL ON THE TOP STORY, ALL THE TIME (Hannah, Wed Nov 4, 2026: "I like this carousel for the top news
+    // story all the time. put it into the code"): the lead story gets it too when it is the automatic top story
+    if (window.PAL_reel && s.photos && s.photos.length > 1) window.PAL_reel(art.querySelector('.hero-art'), s.photos.map((p) => ({ src: AUTO.base + p.src, caption: p.caption, alt: p.alt })), s.key + '|' + s.url);
     ready();
   }
   // Watch: new uploads from the networks' official YouTube channels, Canadian and U.S. first, one per network, up to 12.

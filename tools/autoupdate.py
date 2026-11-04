@@ -422,6 +422,12 @@ def main():
     # keep only the photos still in use
     used = {os.path.basename(s["photo"]["src"]) for s in stories + (out.get("auto") or {}).get("stories", []) if s.get("photo")}
     used |= {os.path.basename(b["img"]) for b in out.get("bds") or [] if b.get("img")}
+    # and every photo in a top story's photo reel (Hannah, Wed Nov 4, 2026: the carousel on the top story all the time;
+    # before this, the reel's other photos were deleted here and the carousel stopped after one update)
+    au_ = out.get("auto") or {}
+    used |= {os.path.basename(p["src"]) for s in stories + (au_.get("stories") or []) + [m for m in (au_.get("more") or []) if isinstance(m, dict)]
+             for p in (s.get("photos") or []) if isinstance(p, dict) and p.get("src")}
+    used |= {os.path.basename(m["photo"]["src"]) for m in (au_.get("more") or []) if isinstance(m, dict) and m.get("photo")}
     for f in glob.glob(os.path.join(imgdir, "*.jpg")):
         if os.path.basename(f) not in used:
             os.remove(f)
