@@ -30,6 +30,20 @@ Both pages open directly in a web browser. They are previews: the live site will
 - Keep it: `python3 tools/build_design_preview.py --adopt` (puts the layer into index.html).
 - Drop it: `python3 tools/build_design_preview.py --drop`, then delete `tools/design_layer.html`.
 
+## Combined sections preview (Hannah, Wed Nov 4, 2026)
+
+"There is also a lot of duplication on the page ... do that and then I want to look at it. Be prepared to go back to this if I dont." `preview-combined.html` is the homepage with `tools/combine_layer.html` on top. `index.html` is untouched, and the auto-update keeps the preview in step with it.
+
+- **One package for the big story.** Anything the top story already shows (same article, same wire headline, same live video) is left out of The big week ahead, Canada and the U.S., United States, Live coverage, Watch and the live-event strip. An event that is over and is the top story drops out of The big week ahead.
+- **How this developed** is the top story's own timeline, folded under it.
+- **Coming up**: The big week ahead, What to watch (Dates & decisions) and Story board as tabs. The 60-second brief player stays just above it.
+- **Opinion & analysis**: Editorials and Think tanks as tabs. **Read & listen**: Most read, Today's reading and Podcasts (Go deeper) as tabs; podcasts older than a week age out, and an empty tab goes.
+- **Corrections & updates** folds to one line, "See all … updates", which opens the full log.
+- Menu links to a merged section open its tab. Nothing is removed from the page.
+
+- Keep it: `python3 tools/build_combine_preview.py --adopt` (puts the layer into index.html).
+- Drop it: `python3 tools/build_combine_preview.py --drop`, then delete `tools/combine_layer.html`.
+
 ## How the page updates itself: the code runs it
 
 Since Tue Oct 27, 2026, the site runs on code, not on Claude (Hannah: "I dont want to rely on claude to run my site. I want the code to do it"). Nothing needs a person or an AI to keep it current:

@@ -36,8 +36,11 @@ jobs:
             python3 tools/autoupdate.py --page index.html --out live/auto.json || echo "pass failed"
             # the design preview (Hannah, Nov 1, 2026) stays in step with the homepage until she decides on it
             [ -f tools/design_layer.html ] && [ -f preview-design.html ] && python3 tools/build_design_preview.py || true
+            # the combined-sections preview (Hannah, Nov 4, 2026) too, until she keeps it or drops it
+            [ -f tools/combine_layer.html ] && [ -f preview-combined.html ] && python3 tools/build_combine_preview.py || true
             git add -A live
             [ -f preview-design.html ] && git add preview-design.html || true
+            [ -f preview-combined.html ] && git add preview-combined.html || true
             if ! git diff --cached --quiet; then
               git commit -q -m "Auto update: newest reports, photos and wire ($(TZ=America/Toronto date '+%a %-I:%M %p ET'))"
               for i in 1 2 3; do git pull -q --rebase -X theirs origin main && git push -q origin HEAD:main && break; sleep 5; done
