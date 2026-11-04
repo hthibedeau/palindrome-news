@@ -6517,7 +6517,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       // them up on the page and site where they're from" / "those projections should always be breaking, quoting
       // where they come from"): every network's race call, in its own words, credited and linked; the biggest races
       // first, newest first within them. tools/autopilot.py projections() finds them; the newest big call leads.
-      const P = s.projections || [], PJ_OPEN = 2, PJ_CALLS = 2;  // shown at first: the 2 biggest races, 2 calls each (Hannah, Nov 3, 2026: "still too many"); the rest behind Show more
+      const P = s.projections || [], PJ_OPEN = 1, PJ_CALLS = 2;  // shown at first: just the top two calls, on the biggest race (Hannah, Nov 3, 2026: "still too many"); the rest behind Show more
       const projBox = P.length ? (() => {
         const byRace = {}; P.forEach((p) => { (byRace[p.race] = byRace[p.race] || { w: p.w, calls: [] }).calls.push(p); byRace[p.race].w = Math.max(byRace[p.race].w, p.w); });
         const races = Object.keys(byRace).sort((x, y) => (byRace[y].w - byRace[x].w) || (byRace[y].calls[0].seen > byRace[x].calls[0].seen ? 1 : -1));
