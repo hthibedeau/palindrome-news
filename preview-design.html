@@ -6853,7 +6853,10 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       const k2 = (u) => /youtube\.com\/watch/.test(u) ? u.replace(/^https?:\/\/(www\.|m\.)?/, '').replace(/&.*$/, '') : key(u);
       const byKey = {}; Object.keys(C).forEach((u) => { byKey[k2(u)] = C[u]; });
       const a = (u, t) => '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + t + '</a>';
-      document.querySelectorAll('#bkChannels .chan-cell, #ledes article.lede').forEach((cell) => {
+      // Never on the Live coverage tiles (Hannah, Tue Nov 3, 2026: "In the live coverage now, I don't think the Canadian
+      // angle is necessary. Those can all come out."): only What America's newsrooms are leading with keeps it.
+      document.querySelectorAll('#bkChannels .can-mini, #liveCoverage .can-mini').forEach((b) => b.remove());
+      document.querySelectorAll('#ledes article.lede').forEach((cell) => {
         const main = cell.querySelector(':scope > a.chan') || cell.querySelector('h3 a[href], h4 a[href], a[href]'); if (!main) return;
         const c = byKey[k2(main.href)]; if (!c) return;
         const items = (c.official || []).map((x) => '<li><span class="rk">Official</span>' + a(x.url, esc(x.title)) + ' <span class="o">' + esc(x.outlet) + '</span></li>').join('')
@@ -6867,7 +6870,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       });
     } finally { canBusy = false; }
   }
-  if (window.MutationObserver) ['bkChannels', 'ledes'].forEach((id) => { const el = document.getElementById(id); if (el) new MutationObserver((ms) => { if (!canBusy && ms.some((m) => [...m.addedNodes].some((n) => !(n.classList && n.classList.contains('can-mini'))))) canAngleLive(); }).observe(el, { childList: true }); });
+  if (window.MutationObserver) ['ledes'].forEach((id) => { const el = document.getElementById(id); if (el) new MutationObserver((ms) => { if (!canBusy && ms.some((m) => [...m.addedNodes].some((n) => !(n.classList && n.classList.contains('can-mini'))))) canAngleLive(); }).observe(el, { childList: true }); });
 
   // Most read across Canada, from the newsrooms' own most-read and trending lists (tools/autopilot.py most_read).
   function mostRead() {
