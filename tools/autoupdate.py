@@ -412,6 +412,10 @@ def main():
     # the code runs the page (Hannah, Tue Oct 27, 2026): auto top stories, Watch clips, U.S. front pages
     import autopilot
     out.update(autopilot.run(page, items, groups, breaking, now, imgdir, prev))
+    try:  # BIG NEWS DAY: a Canadian top story moved off the top leads the Canada desk
+        autopilot.place_moved_canada(out)
+    except Exception as e:
+        print("moved to Canada desk failed:", e)
     os.makedirs(root, exist_ok=True)
     with open(a.out, "w", encoding="utf-8") as fh:
         json.dump(out, fh, ensure_ascii=False, indent=1)

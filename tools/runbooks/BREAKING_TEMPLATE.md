@@ -122,3 +122,11 @@ The page lines itself up this way whenever the lead story is Breaking. Nothing h
 4. **The Canada desk**, then the rest of the page.
 
 On a big news day (an event day, or a story leading 6+ front pages), a third top story must be national news with Breaking-level coverage (4+ newsrooms) or a live event: `big_news_day()` and `third_worthy()` in tools/autopilot.py. A story whose reports don't share its headline's subject (unrelated headlines grouped by a word like "Nation") is never a top story: `coherent()`. Why: "Alleged attack on One Nation supporter not believed to be politically motivated" (an Australian story, grouped with two First Nations stories from B.C. and Saskatchewan) sat beside the U.S. election results.
+
+## Big news day: the big story stands alone (Hannah, Tue Nov 3, 2026)
+On a big news day (an event day, or a story leading 6+ front pages), the big story is the only top story, so the top is easy to read. The other top stories move, they are not lost (`_select` in tools/autopilot.py, auto["moved"]):
+- a Canada-U.S. story goes first in the big story's Canadian angle box (e.g. "PM Carney says Canada-U.S. trade talks have intensified");
+- any other Canadian story, an exclusive included, leads the Canada desk (e.g. the Toronto Star's exclusive on threats against Carney);
+- a story from abroad goes back among the other stories.
+On a wide screen the lone big story uses the full width: photo, headline, summary and live links on the left; the Canadian angle, the projections and Connected to this story beside them (soloLayout in index.html). Phones keep one column. Live coverage follows right under it.
+A photo with a branded overlay (the Guardian's "Live" banner) is never used as the story's photo.

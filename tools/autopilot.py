@@ -489,7 +489,7 @@ def core_rows(g):
 OFFICIAL_DOC = re.compile(r"pm\.gc\.ca/.*/(speeches|statements|readouts|news-releases|news)/|canada\.ca/.*/news/|news\.ontario\.ca|"
                           r"gov\.bc\.ca/.*/news|alberta\.ca/release|quebec\.ca/.*/nouvelles|whitehouse\.gov/(briefings|remarks|presidential-actions)", re.I)
 # a site's stock sharing graphic, not a photo of the event (the PM site's grey "Speech" card, logos, placeholders)
-GENERIC_IMG = re.compile(r"override_sharing|PM_Speech|PM_Statement|PM_Readout|PM_News|default[-_]?(share|social|og)|og[-_]?default|"
+GENERIC_IMG = re.compile(r"overlay-base64|PM_Speech|PM_Statement|PM_Readout|PM_News|default[-_]?(share|social|og)|og[-_]?default|"
                          r"social[-_]?share[-_]?default|placeholder|/logos?[/_.-]|logo\.(png|jpg|svg)|fallback", re.I)
 
 
@@ -1938,6 +1938,28 @@ def _select(auto, cands, ranked, tier):
                 top2.append(s)
                 rest.remove(s)
                 break
+    # BIG NEWS DAY: THE BIG STORY STANDS ALONE (Hannah, Tue Nov 3, 2026, U.S. Election Night: "on a big breaking news
+    # story like this, while I really like the exclusive Toronto Star story, I would move that down into Canadian News
+    # Today. And then also, the PM Carney says Canada trade talks have intensified. I would move that into the Canadian
+    # angle. This would be on big news days like today, and a good way to organize it.")
+    # On a big news day (big_news_day: an event day, or a story leading FRONT_CONSENSUS front pages), the big story is
+    # the only top story, so the top of the page is easy to read. The other top stories are not lost, they move:
+    #   - a Canada-U.S. story (canus) goes to the top of the big story's Canadian angle box;
+    #   - any other Canadian story (an exclusive included) goes to the top of the Canada desk ("Across Canada");
+    #   - a story from abroad goes back among the other stories.
+    # auto["moved"] records each move; run() and tools/autoupdate.py place them.
+    auto["moved"] = []
+    if top2 and big_news_day(top2[:1]):
+        for s in top2[1:]:
+            to = "canangle" if s.get("canus") else "canada" if s.get("canada") == "canadian" else ""
+            if to:
+                auto["moved"].append({"to": to, "key": s.get("key"), "title": s.get("title"), "url": s.get("url"), "outlet": s.get("outlet"),
+                                      "t": s.get("t"), "iso": s.get("iso") or s.get("newest"), "summary": s.get("summary") or "",
+                                      "img": ((s.get("photo") or {}).get("orig") or ""), "scoop": bool(s.get("scoop")), "into": top2[0].get("key")})
+            rest.insert(0, s)
+        top2 = top2[:1]
+    moved_keys = {m["key"] for m in auto["moved"]}
+    rest = [s for s in rest if s.get("key") not in moved_keys] + [s for s in rest if s.get("key") in moved_keys]
     ranked = top2 + rest
     n_top = len(top2)
     auto["top_n"] = n_top  # how many of auto["stories"] the page shows at the top; the rest are spares
@@ -1947,7 +1969,8 @@ def _select(auto, cands, ranked, tier):
     # goes stale (Hannah, Wed Oct 28, 2026: "go through the whole page to ensure we have the top news at the top ...
     # update regularly")
     top_themes = {s.get("theme") for s in auto["stories"][:n_top] if s.get("theme")}
-    auto["more"] = [s for s in ranked[n_top:] if tier(s) < 2 and s not in auto["stories"] and not (s.get("theme") and s["theme"] in top_themes)][:3]
+    auto["more"] = [s for s in ranked[n_top:] if tier(s) < 2 and s not in auto["stories"] and not (s.get("theme") and s["theme"] in top_themes)
+                    and s.get("key") not in moved_keys][:3]  # a moved story is told in its new place, not again in the lead slot
     auto["passed_over"] = [{"title": s["title"], "url": s["url"]} for s in cands if tier(s) == 2 and s not in ranked[:n_top]]
     # why each story is or isn't at the top (Hannah: "why is that not at the top of the news?")
     auto["considered"] = [{"title": s["title"], "url": s["url"], "rank": n + 1, "live": (s.get("live") or {}).get("title", ""), "weight": s.get("weight"), "score": s.get("score"), "independent": s.get("independent"), "most_read": s["popular"],
@@ -2239,6 +2262,29 @@ def coherent(s):
         if len(head & _subject(r.get("title") or "")) >= 2:
             outs.add(r.get("outlet"))
     return len(outs)
+
+
+def place_moved_angle(res):
+    """BIG NEWS DAY: each Canada-U.S. story moved off the top goes first in the big story's Canadian angle box."""
+    for m in ((res.get("auto") or {}).get("moved") or []):
+        if m["to"] != "canangle" or not m.get("into"):
+            continue
+        box = res.setdefault("canangle", {}).setdefault(m["into"], {"story": "", "us": True, "specific": 0, "stories": [], "official": [], "views": []})
+        box["stories"] = [x for x in box.get("stories", []) if x.get("url") != m["url"]]
+        box["stories"].insert(0, {"t": m["t"], "iso": m["iso"], "outlet": m["outlet"], "title": m["title"], "url": m["url"],
+                                  "ca": True, "tie": "Canada and the U.S.", "moved": True})
+
+
+def place_moved_canada(out):
+    """BIG NEWS DAY: each Canadian story moved off the top goes first on the Canada desk (live/auto.json "canada")."""
+    for m in ((out.get("auto") or {}).get("moved") or []):
+        if m["to"] != "canada":
+            continue
+        ca = [x for x in out.get("canada") or [] if x.get("url") != m["url"]]
+        ca.insert(0, {"t": m["t"], "iso": m["iso"], "region": "Exclusive · " + m["outlet"] if m.get("scoop") else "National",
+                      "title": m["title"], "summary": m.get("summary") or "", "outlet": m["outlet"], "url": m["url"],
+                      "img": m.get("img") or "", "moved": True})
+        out["canada"] = ca
 
 
 def big_news_day(top2):
@@ -3488,6 +3534,9 @@ PROJ_VERB = r"(?:projects|projected|has projected|calls|has called|declares|race
 PROJ_AFTER = re.compile(r"^(?P<call>.{12,220}?)[,;:—–-]?\s+(?:according to\s+)?(?P<net>" + PROJ_NETS + r")\s+" + PROJ_VERB + r"\.?$", re.I)
 PROJ_BEFORE = re.compile(r"^(?P<net>" + PROJ_NETS + r")\s+(?:projects|projection|calls|declares)\s*[:,—–-]?\s*(?:that\s+)?(?P<call>.{12,220})$", re.I)
 PROJ_PLAIN = re.compile(r"\b(projected (?:to win|winner|to flip|to hold|to keep|to retain)|is projected|are projected|wins? control|"
+                        # a result in plain words (Hannah, Nov 3, 2026: "Susan Collins has survived")
+                        r"survives?|holds? (?:on|off)|re-?elected|wins? (?:a )?(?:second|third|fourth|fifth|sixth|seventh|new) term|"
+                        r"wins? .{0,40}?(?:Senate|House|governor['’]?s?|gubernatorial) (?:race|seat|election|contest)|defeats .{3,40}? (?:in|for) .{0,30}?(?:Senate|House|governor)|"
                         r"will (?:win|keep|retain|hold|flip) (?:control|the (?:House|Senate|seat))|flips?\b.*\b(?:seat|House|Senate)|"
                         r"(?:Liberal|Conservative|NDP|Bloc) (?:majority|minority) government)\b", re.I)
 PROJ_SKIP = re.compile(r"\b(forecast|odds|poll(?:s|ing)?|could|might|may|would|if |what if|how |why |prediction|predicts|on (?:the )?brink|"
@@ -3954,6 +4003,7 @@ def run(page, items, groups, breaking, now, imgdir, prev):
         res["related"] = prev.get("related") or {}
     try:  # the Canadian angle on top stories from another country (sidebar on the page)
         res["canangle"] = canadian_angle(items, keyed, now, res.get("eds"), res.get("papers"), res.get("otr"), res.get("canus"))
+        place_moved_angle(res)  # BIG NEWS DAY: a Canada-U.S. top story moves into the big story's Canadian angle
         res["canangle_live"] = canadian_angle_live(items, now, res)
     except Exception as e:
         print("autopilot canangle failed:", e)
