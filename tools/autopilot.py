@@ -492,36 +492,69 @@ def pick_photo(key, rows, old, imgdir, now, first_info=None):
 
 # ===== THE PHOTO REEL (Hannah, Wed Nov 4, 2026: "In the top photo, could it ... dissolve" from one photo to another
 # "if there are multiple photos ... I also like the slow move ... But it would still have to have the source").
-# pick_reel() gives each top story up to REEL_SIZE real news photos from its own reports: the lead photo first, then
-# one per newsroom, newest reports first. Each keeps its own caption, credit and newsroom. The page (PAL_reel in
+# pick_reel() gives each top story up to REEL_SIZE real news photos from its own reports: THE HEADLINE'S OWN PHOTO
+# FIRST, then photos of people the headline names, then one per newsroom, newest reports first. Each keeps its own caption, credit and newsroom. The page (PAL_reel in
 # index.html) dissolves from one to the next, each with its slow move, and changes the caption and credit with it.
 REEL_SIZE = 4
 
 
 def pick_reel(key, rows, photo, imgdir, first_info=None):
-    if not photo or not photo.get("src"):
+    """rows: the story's reports, the HEADLINE'S OWN REPORT FIRST (row[1] outlet, row[2] title, row[3] url).
+    THE HEADLINE'S PICTURE ALWAYS LEADS THE REEL (Hannah, Wed Nov 4, 2026: the headline said "LeBlanc says U.S. midterm
+    results won't change Ottawa's plans to diversify trade" but "you never show the image of LeBlanc. That has to be in
+    the carousel ... it has to be written in the code"). So, in this order:
+      1. the photo of the report the headline comes from;
+      2. any photo whose caption names someone in the headline (e.g. LeBlanc);
+      3. the story's rotating photo (pick_photo), then the other reports' photos, newest first.
+    Only reports about the headline's own subject give photos (two shared subject words, or the event's own test), and
+    the same picture run by two newsrooms (same caption) appears once."""
+    if not rows:
         return []
     import autoupdate as au
     pkey = lambda u: re.sub(r"\?.*$", "", ps.key(ps.best_src(u)) if u else "").lower()
-    reel, keys, outlets = [dict((k, photo.get(k)) for k in ("src", "caption", "alt", "outlet", "url"))], {pkey(photo.get("orig") or "")}, {photo.get("outlet")}
-    for i, r in enumerate(rows[:PHOTO_LOOK]):
-        if len(reel) >= REEL_SIZE:
-            break
-        o = au.clean_outlet(r[1])
-        if o in outlets:
-            continue
-        pi = (first_info if i == 0 and first_info else None) or page_info(r[3]) or {}
-        img = pi.get("img")
-        if not img or GENERIC_IMG.search(img) or pkey(img) in keys:
-            continue
+    capkey = lambda c: re.sub(r"\W+", "", re.sub(r"\s*[—-]\s*via\s+.*$", "", c or "").lower())[:90]
+    head = clean(rows[0][2])
+    hsub = _subject(head)
+    test = on_subject(key, []) if key in STORY_MATCH else (lambda t: False)
+    about = lambda t: test(t) or len(hsub & _subject(t)) >= 2
+    # the people and names in the headline: capitalized words that are not places, countries or everyday words
+    names = {w.lower() for w in re.findall(r"\b[A-Z][A-Za-zÀ-ÿ'’-]{2,}", head)
+             if not is_place(w) and not COUNTRY.fullmatch(w) and w.lower() not in GENERIC and w.lower() not in WEAK}
+    names = {re.sub(r"['’]s$", "", n) for n in names}
+    cands = []  # (rank, order, entry, imgkey, capkey)
+
+    def add(rank, order, img, pi, r):
+        if not img or GENERIC_IMG.search(img):
+            return
         src = save_photo(img, imgdir, key)
         if not src:
-            continue
+            return
+        o = au.clean_outlet(r[1])
         cap, credit = pi.get("caption") or pi.get("alt") or "", pi.get("credit") or ""
-        reel.append({"src": src, "caption": (cap.rstrip(".") + "." if cap else "From: " + clean(r[2]).rstrip(".") + ".") + (f" ({credit})" if credit else "") + f" — via {o}",
-                     "alt": cap[:160] or clean(r[2]), "outlet": o, "url": r[3]})
-        keys.add(pkey(img))
-        outlets.add(o)
+        full = (cap.rstrip(".") + "." if cap else "From: " + clean(r[2]).rstrip(".") + ".") + (f" ({credit})" if credit else "") + f" — via {o}"
+        if rank > 0 and names and any(re.search(r"\b" + re.escape(n) + r"\b", (cap + " " + (pi.get("alt") or "")).lower()) for n in names):
+            rank = 1  # the photo shows someone the headline names
+        cands.append((rank, order, {"src": src, "caption": full, "alt": cap[:160] or clean(r[2]), "outlet": o, "url": r[3]}, pkey(img), capkey(cap)))
+
+    for i, r in enumerate(rows[:PHOTO_LOOK]):
+        if i and not about(clean(r[2])):
+            continue
+        pi = (first_info if i == 0 and first_info else None) or page_info(r[3]) or {}
+        add(0 if i == 0 else 3, i, pi.get("img"), pi, r)
+    if photo and photo.get("src"):
+        cands.append((2, -1, dict((k, photo.get(k)) for k in ("src", "caption", "alt", "outlet", "url")), pkey(photo.get("orig") or ""),
+                      capkey(re.sub(r"^From: .*", "", photo.get("caption") or ""))))
+    reel, ik, ck, outlets = [], set(), set(), {}
+    for rank, order, e, k, c in sorted(cands, key=lambda x: (x[0], x[1])):
+        if len(reel) >= REEL_SIZE:
+            break
+        if k in ik or (c and c in ck) or (rank >= 2 and outlets.get(e["outlet"], 0) >= 1):
+            continue
+        reel.append(e)
+        ik.add(k)
+        if c:
+            ck.add(c)
+        outlets[e["outlet"]] = outlets.get(e["outlet"], 0) + 1
     return reel
 
 
