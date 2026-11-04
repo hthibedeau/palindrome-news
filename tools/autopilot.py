@@ -413,7 +413,8 @@ def _page_info(url):
     x = curl(url)
     if not x:
         return {}
-    info = {"desc": clean(ps.meta(x, "og:description") or ps.meta(x, "description")),
+    info = {"site": clean(ps.meta(x, "og:site_name")), "title": clean(ps.meta(x, "og:title")),
+            "desc": clean(ps.meta(x, "og:description") or ps.meta(x, "description")),
             "img": clean(ps.meta(x, "og:image")), "alt": clean(ps.meta(x, "og:image:alt")), "caption": "", "credit": ""}
     why = []
     info["wire"] = wire_of_page(x, why)
@@ -498,6 +499,9 @@ def pick_photo(key, rows, old, imgdir, now, first_info=None):
 # FIRST, then photos of people the headline names, then one per newsroom, newest reports first. Each keeps its own caption, credit and newsroom. The page (PAL_reel in
 # index.html) dissolves from one to the next, each with its slow move, and changes the caption and credit with it.
 REEL_SIZE = 4
+PARTY_WORDS = {"democrats", "democrat", "democratic", "republicans", "republican", "gop", "liberals", "liberal", "conservatives",
+               "conservative", "ndp", "bloc", "greens", "house", "senate", "congress", "parliament", "commons", "speaker", "minister",
+               "premier", "president", "prime", "mayor", "leader", "midterm", "midterms", "budget", "election", "elections"}
 
 # ===== NO UNSUITABLE PICTURES (Hannah, Wed Nov 4, 2026: "That photo of the boys wearing camouflage and Trump in the
 # background is inappropriate. You need to make sure pictures like that don't make it into the scroll.")
@@ -563,13 +567,22 @@ def pick_reel(key, rows, photo, imgdir, first_info=None):
     for grp in TOPIC_KIN:
         if distinct & grp:
             distinct |= grp
+    people_named = set()  # filled once the headline's people are known (below)
     def matches(*texts):
-        words = {stem(w) for w in re.findall(r"[A-Za-zÀ-ÿ'’-]{3,}", " ".join(t or "" for t in texts))}
-        return bool(distinct & words)
+        t = " ".join(x or "" for x in texts)
+        words = {stem(w) for w in re.findall(r"[A-Za-zÀ-ÿ'’-]{3,}", t)}
+        return bool(distinct & words) or any(re.search(r"\b" + re.escape(n) + r"\b", t.lower()) for n in people_named)
     # the people and names in the headline: capitalized words that are not places, countries or everyday words
     names = {w.lower() for w in re.findall(r"\b[A-Z][A-Za-zÀ-ÿ'’-]{2,}", head)
              if not is_place(w) and not COUNTRY.fullmatch(w) and w.lower() not in GENERIC and w.lower() not in WEAK}
-    names = {re.sub(r"['’]s$", "", n) for n in names} - {c.lower() for c in common}
+    names = {re.sub(r"['’]s$", "", n) for n in names}
+    # a PERSON the headline names always counts, even when every report names them (Hannah, Wed Nov 4, 2026: "what
+    # happened to the scroll?" Mike Johnson's photos were dropped because "Johnson" is in most of the story's reports).
+    # People: capitalized words after the first word that are not parties, chambers or common words of the story.
+    first = (re.findall(r"[A-Za-zÀ-ÿ'’-]+", head) or [""])[0].lower()
+    people = {n for n in names if n not in PARTY_WORDS and not (n == first and n in {c.lower() for c in common} and n not in hsub)}
+    names = {n for n in names if n not in {c.lower() for c in common}} | {n for n in people if len(n) > 3}
+    people_named |= {n for n in people if len(n) > 3}
     cands = []  # (rank, order, entry, imgkey, capkey)
 
     def add(rank, order, img, pi, r):
@@ -580,7 +593,13 @@ def pick_reel(key, rows, photo, imgdir, first_info=None):
         if unfit_photo(cap, pi.get("alt"), img):
             return  # NO UNSUITABLE PICTURES
         if rank > 0 and re.sub(r"\W+", "", cap.lower()) in ("", re.sub(r"\W+", "", clean(r[2]).lower())):
-            return  # no description of what is in it: it cannot be checked, so only the headline's own photo may lack one
+            # no description of the picture: it may join only when its report is plainly about the same thing as the
+            # headline (two of the headline's distinctive words, or a person the headline names, in its headline) and
+            # nothing in that headline or the photo's address says it is unsuitable (Nov 4, 2026: the scroll came back)
+            t = clean(r[2])
+            tw = {stem(w) for w in re.findall(r"[A-Za-z\u00C0-\u00FF'’-]{3,}", t)}
+            if not (len(distinct & tw) >= 2 or any(re.search(r"\b" + re.escape(n) + r"\b", t.lower()) for n in people_named)) or unfit_photo(t):
+                return
         src = save_photo(img, imgdir, key)
         if not src:
             return
@@ -592,25 +611,55 @@ def pick_reel(key, rows, photo, imgdir, first_info=None):
     for i, r in enumerate(rows[:PHOTO_LOOK]):
         pi = (first_info if i == 0 and first_info else None) or page_info(r[3]) or {}
         # what the PICTURE shows must match the headline (its caption), not only the report it came with
-        if i and not matches(pi.get("caption"), pi.get("alt")) and not (
+        if i and not matches(pi.get("caption"), pi.get("alt"), "" if pi.get("caption") else clean(r[2])) and not (
                 names and any(re.search(r"\b" + re.escape(n) + r"\b", ((pi.get("caption") or "") + " " + (pi.get("alt") or "")).lower()) for n in names)):
             continue  # EVERY PHOTO MATCHES THE HEADLINE
         add(0 if i == 0 else 3, i, pi.get("img"), pi, r)
+    # MORE PHOTOS FOR THE REEL (Hannah, Wed Nov 4, 2026: "what happened to the scroll you created?"): beyond the
+    # story's own reports, any article read this run whose photo caption matches the headline (the same person, the
+    # same subject) can join, credited to its own newsroom and linked to its article.
+    if len([c for c in cands if c[0] < 9]) < REEL_SIZE:
+        mine = {r[3] for r in rows}
+        for url, pi in list(INFO_CACHE.items()):
+            if url in mine or not pi or not pi.get("img") or not pi.get("caption"):
+                continue
+            if not matches(pi.get("caption"), pi.get("alt")):
+                continue
+            site = pi.get("site") or re.sub(r"^www\.", "", re.sub(r"^https?://([^/]+).*", r"\1", url))
+            add(4, 99, pi["img"], pi, (None, site, pi.get("title") or pi.get("caption"), url))
     if photo and photo.get("src") and matches(photo.get("caption"), photo.get("alt")) and not unfit_photo(photo.get("caption"), photo.get("alt"), photo.get("orig")) and not (photo.get("caption") or "").startswith("From: "):
         cands.append((2, -1, dict((k, photo.get(k)) for k in ("src", "orig", "caption", "alt", "outlet", "url")), pkey(photo.get("orig") or ""),
                       capkey(re.sub(r"^From: .*", "", photo.get("caption") or ""))))
-    reel, ik, ck, outlets = [], set(), set(), {}
+    reel, ik, ck, outlets, looks = [], set(), set(), {}, []
     for rank, order, e, k, c in sorted(cands, key=lambda x: (x[0], x[1])):
         if len(reel) >= REEL_SIZE:
             break
         if k in ik or (c and c in ck) or (rank >= 2 and outlets.get(e["outlet"], 0) >= 1):
             continue
+        # the same wire photo run by several newsrooms at other sizes: compared by how it looks, shown once
+        h = _look(os.path.join(imgdir, os.path.basename(e["src"])))
+        if h is not None and any(bin(h ^ x).count("1") <= 8 for x in looks):
+            continue
+        if h is not None:
+            looks.append(h)
         reel.append(e)
         ik.add(k)
         if c:
             ck.add(c)
         outlets[e["outlet"]] = outlets.get(e["outlet"], 0) + 1
     return reel
+
+
+def _look(path):
+    """A 64-bit picture fingerprint (average hash), so the same photo at another size or crop counts once."""
+    try:
+        from PIL import Image
+        im = Image.open(path).convert("L").resize((8, 8))
+        px = list(im.getdata())
+        avg = sum(px) / 64
+        return sum(1 << i for i, v in enumerate(px) if v > avg)
+    except Exception:
+        return None
 
 
 def save_photo(src, outdir, tag):
