@@ -105,6 +105,7 @@
     if (busy) return; busy = true;
     try {
       root.querySelectorAll('.ab-story').forEach((art, idx) => {
+        if (art.classList.contains('ab-lead-more')) return;  // the lead story's lower boxes, moved to the right column (balance)
         // 6. photo credit on the photo
         const bart = art.querySelector(':scope > .bart'), cap = art.querySelector(':scope > .bart-cap');
         if (bart && cap && !cap.classList.contains('cr-moved')) { const c = document.createElement('span'); c.className = 'cr-credit'; const t = cap.textContent.trim(), m = t.match(/(?:\(([^)]*)\)\s*)?[—-]\s*via\s+(.+)$/); c.textContent = m ? (m[1] ? m[1] + ' · ' : '') + m[2] : t; bart.appendChild(c); cap.classList.add('cr-moved'); const rest = m ? t.slice(0, m.index).trim() : ''; if (!rest || /^Photo\.?$/i.test(rest)) cap.style.display = 'none'; else cap.textContent = rest; }
@@ -164,9 +165,31 @@
           art.appendChild(b);
         }
       });
+      balance();
     } catch (e) { console.warn('crisp', e); }
     setTimeout(() => { busy = false; }, 60);
   }
+  // NO EMPTY HALF ON A WIDE SCREEN (Hannah, Wed Nov 4, 2026, on her iPad: "Can't you make this look better?"): with the
+  // lead story on the left and the other top stories on the right, the right column ended long before the lead story,
+  // leaving the right half of the screen empty. The lead story's lower boxes (Connected to this story, What each
+  // newsroom reports, Results: who called what) now continue in the right column, under the other top stories.
+  // Phones, and a big news day's story standing alone, keep one column: the boxes go back into the story.
+  function balance() {
+    const lead = root.querySelector(':scope > .ab-story:not(.ab-second):not(.ab-lead-more)');
+    let more = root.querySelector(':scope > .ab-lead-more');
+    const seconds = root.querySelectorAll(':scope > .ab-second');
+    const wide = window.matchMedia('(min-width: 960px)').matches && !root.classList.contains('solo') && seconds.length;
+    if (wide && lead) {
+      if (!more) { more = document.createElement('div'); more.className = 'ab-story ab-lead-more'; }
+      const last = seconds[seconds.length - 1]; if (last.nextElementSibling !== more) last.after(more);
+      ['.rel-box', '.ab-reps', '.ab-proj'].forEach((sel) => { const x = lead.querySelector(':scope > ' + sel); if (x) more.appendChild(x); });
+      if (!more.children.length) more.remove();
+    } else if (more) {
+      if (lead) [...more.children].forEach((x) => lead.appendChild(x));
+      more.remove();
+    }
+  }
+  window.addEventListener('resize', () => { clearTimeout(balance.t); balance.t = setTimeout(crisp, 200); });
   crisp(); setTimeout(crisp, 1500); setTimeout(crisp, 4000);
   new MutationObserver(() => { if (!busy) { clearTimeout(crisp.t); crisp.t = setTimeout(crisp, 120); } }).observe(root, { childList: true, subtree: true });
 })();
@@ -181,5 +204,8 @@
   #autoBreaking > .ab-story.ab-second { grid-column: 2; margin-top: 0 !important; padding-top: 0 !important; border-top: 0 !important; }
   #autoBreaking > .ab-story.ab-second + .ab-story.ab-second { margin-top: 26px !important; padding-top: 22px !important; border-top: 1px solid rgba(255,255,255,.28) !important; }
   #autoBreaking > .ab-note { grid-column: 1 / -1; }
+  /* the lead story's lower boxes continue in the right column, under the other top stories (Nov 4, 2026, iPad) */
+  #autoBreaking > .ab-story.ab-lead-more { grid-column: 2; grid-row: auto; margin-top: 26px !important; padding-top: 22px !important; border-top: 1px solid rgba(255,255,255,.28) !important; }
+  #autoBreaking > .ab-story.ab-lead-more > :first-child { margin-top: 0 !important; border-top: 0 !important; padding-top: 0 !important; }
 }
 </style>
