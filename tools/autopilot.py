@@ -2329,6 +2329,89 @@ def place_moved_canada(out):
         out["canada"] = ca
 
 
+# ===== THE CANADIAN ANGLE, SEARCHED (Hannah, Tue Nov 3, 2026: "Is there anything more that you can find in the Canadian
+# angle? When was the last time that was checked?") The feeds alone missed CTV's "U.S.-Canada tensions may not change,
+# despite U.S. midterm results", CP24's live page "Canada watches" and The Logic's analysis. Every update now also
+# searches the news for the big story's Canadian angle (ANGLE_QUERIES; for other U.S. events, "<event> Canada") and
+# adds what it finds: reports to the list, analysis and opinion as "Analysis". Newest first; checked every update.
+ANGLE_QUERIES = {"U.S. midterm elections": ["midterms Canada", "midterm results Canada", "midterms Carney", "what the midterms mean for Canada",
+                                            "U.S. election Canada trade"]}
+ANGLE_SEARCH_HOURS = 48
+# the Canadian newsrooms' own U.S. election and Canada-U.S. pages, read every update for the Canadian angle
+ANGLE_PAGES = {"U.S. midterm elections": [("CTV News", "https://www.ctvnews.ca/world/america-votes/"), ("CTV News", "https://www.ctvnews.ca/world/trumps-tariffs/"),
+                                          ("BNN Bloomberg", "https://www.bnnbloomberg.ca/tariffs/"), ("CBC News", "https://www.cbc.ca/news/world"),
+                                          ("Global News", "https://globalnews.ca/us-news/"), ("CP24", "https://www.cp24.com/news/world/"),
+                                          ("Toronto Star", "https://www.thestar.com/news/world/united-states/"), ("National Post", "https://nationalpost.com/news/world")]}
+
+
+def _angle_pages(name, now):
+    """(date, newsroom, headline, link) from the Canadian newsrooms' own pages: links whose words tie Canada to the U.S. vote."""
+    from urllib.parse import urljoin
+    cands = []
+    for o, url in ANGLE_PAGES.get(name, []):
+        x = curl(url) or ""
+        for m in re.finditer(r'<a\b[^>]*href="([^"#]+)"[^>]*>(.*?)</a>', x, re.S):
+            link, text = urljoin(url, _h.unescape(m.group(1))), clean(re.sub(r"<[^>]+>", " ", m.group(2)))
+            words = text + " " + link.replace("-", " ")
+            if len(text) < 25 or not re.search(r"/(?:article|news|tariffs|world|politics|business)/", link) or not CAN_TIE.search(words):
+                continue
+            if not (US_ELECTION.search(words) or re.search(r"\bmidterms?\b|\bU\.?S\.?\b|\bTrump\b", words)):
+                continue
+            if not any(c[2] == link for c in cands):
+                cands.append((o, text, link))
+    out = []
+    for o, text, link in cands[:12]:
+        x = curl(link) or ""
+        t = ps.meta(x, "article:published_time") or (re.search(r'"datePublished"\s*:\s*"([^"]+)"', x) or [None, ""])[1]
+        try:
+            dt = datetime.fromisoformat(t.replace("Z", "+00:00")).astimezone(timezone.utc)
+        except Exception:
+            continue
+        title = clean(ps.meta(x, "og:title") or text)
+        title = re.sub(r"\s*[|–-]\s*(CTV News|CBC News|Global News|BNN Bloomberg|CP24|Toronto Star|National Post)\s*$", "", title)
+        out.append((dt, o, title, link))
+    return out
+
+
+def angle_search(res, now):
+    import autoupdate as au
+    a = res.get("auto") or {}
+    for st in a.get("stories", [])[:a.get("top_n") or 1]:
+        if not (st.get("event_day") and st.get("event_us")):
+            continue
+        box = res.setdefault("canangle", {}).setdefault(st["key"], {"story": st["event_day"], "us": True, "specific": 0, "stories": [], "official": [], "views": []})
+        have = {x.get("url", "").split("?")[0] for x in box.get("stories", []) + box.get("views", [])}
+        found = []
+        for q in ANGLE_QUERIES.get(st["event_day"], [st["event_day"] + " Canada"]):
+            try:
+                found += _news_search(q)
+            except Exception as e:
+                print("angle search failed:", q, e)
+        try:
+            found += _angle_pages(st["event_day"], now)
+        except Exception as e:
+            print("angle pages failed:", e)
+        added = 0
+        for dt, o, title, link in sorted(found, key=lambda x: x[0], reverse=True):
+            u = link.split("?")[0]
+            if u in have or (now - dt).total_seconds() > ANGLE_SEARCH_HOURS * 3600 or dt > now + timedelta(minutes=10):
+                continue
+            if not (CAN_TIE.search(title) and (US_TIE.search(title) or US_ELECTION.search(title))) or SPORT.search(title) or NOT_NEWS.search(title):
+                continue
+            if any(same_report(title, x.get("title", "")) for x in box["stories"] + box["views"]):
+                continue
+            have.add(u)
+            if au.OPINION.search(title + " " + link) or re.search(r"/analysis/|/opinion/|/commentary/|/columns?/", link, re.I):
+                box["views"].append({"outlet": o, "kind": "Analysis", "title": clean(title), "url": link})
+            else:
+                box["stories"].append({"t": w.eastern(dt), "iso": dt.isoformat(), "outlet": o, "title": clean(title), "url": link, "ca": bool(CAN_OUTLET.search(o)), "tie": "", "searched": True})
+            added += 1
+        moved = [x for x in box["stories"] if x.get("moved")]
+        box["stories"] = moved + sorted([x for x in box["stories"] if not x.get("moved")], key=lambda x: x.get("iso") or "", reverse=True)
+        box["checked"] = now.isoformat()
+        print(f"Canadian angle search: {added} added to {st['event_day']}")
+
+
 def big_news_day(top2):
     """An event day, or a story leading front pages across the country and abroad."""
     return any(t.get("event_day") or (t.get("fronts") or 0) >= FRONT_CONSENSUS for t in top2)
@@ -4032,6 +4115,7 @@ def run(page, items, groups, breaking, now, imgdir, prev):
     try:  # the Canadian angle on top stories from another country (sidebar on the page)
         res["canangle"] = canadian_angle(items, keyed, now, res.get("eds"), res.get("papers"), res.get("otr"), res.get("canus"))
         place_moved_angle(res)  # BIG NEWS DAY: a Canada-U.S. top story moves into the big story's Canadian angle
+        angle_search(res, now)  # THE CANADIAN ANGLE, SEARCHED: what the feeds missed
         res["canangle_live"] = canadian_angle_live(items, now, res)
     except Exception as e:
         print("autopilot canangle failed:", e)
