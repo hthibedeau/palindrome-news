@@ -51,5 +51,28 @@ for head in ["Hakeem Jeffries says Democrats are on ‘brink’ of winning House
              "Democrats flip GOP seats as party pushes for House control"]:
     check(ap.parse_projection(head, "NBC News") is None, f"not a call: {head[:60]}")
 
+# 3. THE MORNING AFTER (Hannah, Wed Nov 4, 2026): the results headline leads, not overnight race calls or market side stories
+from datetime import datetime as _dt
+from zoneinfo import ZoneInfo as _Z
+_et = _Z("America/Toronto"); _since = _dt(2026, 11, 4, 5, tzinfo=_et)
+ap.FRONTS = [{"o": "CBC News", "ca": True, "h": ["U.S. midterms: Democrat leaders to detail next steps after taking Congress in blue wave"]},
+             {"o": "CTV News", "ca": True, "h": ["Blue wave crashes over American politics in midterm that rebukes Trump policies"]}]
+_rows = [(_dt(2026, 11, 4, 10, 18, tzinfo=_et), "CBS News", "Stocks soar after Democrats take control of Congress", "https://www.cbsnews.com/a"),
+         (_dt(2026, 11, 4, 10, 10, tzinfo=_et), "NBC News", "El-Sayed wins Michigan Senate seat, NBC News projects", "https://www.nbcnews.com/b"),
+         (_dt(2026, 11, 4, 9, 47, tzinfo=_et), "CTV News", "Blue wave crashes over American politics in midterm that rebukes Trump policies", "https://www.ctvnews.ca/c"),
+         (_dt(2026, 11, 3, 19, 0, tzinfo=_et), "CBC News", "Polls close in key states: what to watch tonight", "https://www.cbc.ca/d")]
+_ev = ap.BIG_EVENTS[0]
+_pick = ap.morning_headline(_rows, re.compile(_ev[3], re.I), re.compile(_ev[4], re.I), _since)
+check(bool(_pick) and _pick[1] == "CTV News", "the morning after, the results headline leads (not stocks, one race or last night)")
+check(not ap.big_news_day([{"event_day": _ev[0], "aftermath": True, "fronts": 12}]), "the morning after, the event no longer stands alone")
+check(ap.big_news_day([{"event_day": _ev[0]}]), "on the night, the event stands alone")
+_st = {"aftermath": True, "after_since": _since.isoformat(), "title": "kept"}
+_calls = [{"race": "Michigan · Senate", "call": "El-Sayed wins Michigan Senate seat, NBC News projects", "net": "NBC News", "named": True, "via": "",
+           "url": "https://www.nbcnews.com/b", "seen": _dt(2026, 11, 4, 10, 10, tzinfo=_et).isoformat(), "t": "Wed 10:10 a.m.", "w": 2},
+          {"race": "Control of the House", "call": "Democrats will win control of the House, CNN projects", "net": "CNN", "named": True, "via": "",
+           "url": "https://www.cnn.com/x", "seen": _dt(2026, 11, 3, 23, 0, tzinfo=_et).isoformat(), "t": "Tue 11:00 p.m.", "w": 3}]
+ap.lead_with_projection(_st, _calls, _dt(2026, 11, 4, 10, 30, tzinfo=_et))
+check(_st["title"] == "kept" and _st.get("tag") != "Breaking", "the morning after, a single race call or last night's call never leads as Breaking")
+
 print("\nall passed" if not fails else f"\n{fails} failed")
 sys.exit(1 if fails else 0)

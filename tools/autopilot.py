@@ -2416,8 +2416,9 @@ def angle_search(res, now):
 
 
 def big_news_day(top2):
-    """An event day, or a story leading front pages across the country and abroad."""
-    return any(t.get("event_day") or (t.get("fronts") or 0) >= FRONT_CONSENSUS for t in top2)
+    """An event day, or a story leading front pages across the country and abroad. Not the morning after an event
+    (THE MORNING AFTER): its results share the top with the day's other big stories."""
+    return any(not t.get("aftermath") and (t.get("event_day") or (t.get("fronts") or 0) >= FRONT_CONSENSUS) for t in top2)
 
 
 def third_worthy(s, top2, tier):
@@ -3551,7 +3552,36 @@ def big_week(items, now, prev=()):
 # The top story is built straight from the event's own coverage: the newest report on it is the headline, every
 # newsroom covering it is listed, and the Canadian angle (Canadian reports on it, Canada-U.S. stories) comes with it.
 EVENT_DAY_FROM = 5          # 5 a.m. Eastern on the day
-EVENT_DAY_UNTIL = {"U.S. midterm elections": 12}   # hours into the next day it keeps leading (results); default 0 (midnight)
+EVENT_DAY_UNTIL = {"U.S. midterm elections": 24}   # hours into the next day it stays a top story (results); default 0 (midnight)
+
+# ===== THE MORNING AFTER (Hannah, Wed Nov 4, 2026, the morning after the U.S. midterms: "The day after a big breaking
+# news story like the US election, it should go from the projected stuff, because the breaking that is over, to all of
+# the big news stories that are out there ... People will wake up in the morning and want to see, okay, what is the
+# headline from the event?")
+# From MORNING_AFTER_HOUR (Eastern) the day after any big event (BIG_EVENTS) until its window ends:
+#   - The night is over. The event's story is no longer Breaking and no longer a race-by-race projection. Its headline
+#     is THE headline from the event, the big picture the newsrooms are leading with this morning ("Democrats take
+#     Congress in blue wave"), picked by morning_headline(): a report from the feeds about the whole result, backed by
+#     what the front pages lead with (FRONTS), newest morning reports first, never a single race, never last night's
+#     "polls close" or "what to watch". No such report yet: the biggest call (control of a chamber or a government).
+#   - Its tag is EVENT_AFTER_TAG ("Results · U.S. midterm elections"), not "Breaking", so Live coverage goes back to its
+#     own band and the page is no longer laid out as a big news day.
+#   - It no longer stands alone: big_news_day() ignores it, so the day's other big stories (Canadian first) come back
+#     to the top beside it, ranked as usual.
+#   - A single race call ("El-Sayed wins Michigan Senate seat") never leads again. Only a NEW call on control of a
+#     chamber or a government, in the last PROJ_BREAKING_HOURS, can make it Breaking again.
+#   - The projections box stays, retitled "Results: who called what", biggest races first.
+MORNING_AFTER_HOUR = 5      # 5 a.m. Eastern the day after
+EVENT_AFTER_TAG = {"U.S. midterm elections": "Results"}  # default: "The day after"
+EVENT_RESULT = re.compile(r"\b(control of (?:Congress|the House|the Senate|both chambers)|(?:take|takes|took|taking|win|wins|won|winning|keep|keeps|kept|"
+                          r"lose|loses|lost|losing|flip|flips|flipped|retake|retakes|retook|hold|holds|held|sweep|sweeps|swept)\s+(?:back\s+)?(?:control of\s+)?"
+                          r"(?:the\s+)?(?:U\.S\.\s+)?(?:House|Senate|Congress|both chambers|both houses)|blue wave|red wave|landslide|sweep|"
+                          r"(?:midterm|election) (?:results|defeat|victory|win|loss|rout|takeaways)|what (?:the|this|it) .{0,50}means|takeaways|next steps|"
+                          r"the morning after|aftermath|concedes?|majority|budget (?:at a glance|highlights|what you need to know)|deficit)\b", re.I)
+EVENT_SIDE = re.compile(r"\b(stocks?|Dow|TSX|S&P|Nasdaq|markets?|shares|loonie|investors|step aside|steps down|in the news today|correspondent says)\b", re.I)
+EVENT_NIGHT_OF = re.compile(r"\b(polls? (?:open|opens|close|closes|closing)|what to watch|how to (?:watch|follow)|Election Day|America votes|"
+                            r"voters? (?:head|go|went|cast)|live (?:updates|results|blog)|tonight|as it happened|early results|"
+                            r"too early to call|exit polls?)\b", re.I)
 EVENT_DAY_TAG = {"U.S. midterm elections": "Election Day"}  # the tag over the headline (default: "Today")
 EVENT_WHOLE = re.compile(r"\b(Election Day|America votes|Americans (?:vote|head to|go to|cast)|voters (?:head|go) to|polls? (?:open|close|closing)|"
                          r"control (?:of|for) (?:Congress|the House|the Senate)|midterm (?:results|elections?)|election results|budget day|tables? (?:the )?budget|"
@@ -3798,6 +3828,16 @@ def lead_with_projection(story, calls, now):
     election story's headline, in the network's own words and credited to it."""
     story["projections"] = calls[:40]
     fresh = [p_ for p_ in calls if p_.get("named") and (now - datetime.fromisoformat(p_["seen"])).total_seconds() < PROJ_BREAKING_HOURS * 3600]
+    if story.get("aftermath"):  # THE MORNING AFTER: only a new call on control of a chamber or a government leads again
+        # ... and only a race first called this morning: last night's House call, reworded in a new report, is not news
+        first_seen = {}
+        for p_ in calls:
+            t_ = datetime.fromisoformat(p_["seen"])
+            first_seen[p_["race"]] = min(first_seen.get(p_["race"], t_), t_)
+        since = datetime.fromisoformat(story["after_since"]) if story.get("after_since") else now
+        fresh = [p_ for p_ in fresh if p_["w"] >= 3 and first_seen[p_["race"]] >= since]
+        if fresh:
+            story.pop("aftermath", None)  # Breaking again: it may stand alone, as on the night
     if not fresh:
         return story
     top = max(fresh, key=lambda p_: (p_["w"], p_["seen"]))
@@ -3809,6 +3849,40 @@ def lead_with_projection(story, calls, now):
     story.update({"title": top["call"], "url": top["url"], "outlet": top["net"], "t": top["t"], "iso": top["seen"],
                   "tag": "Breaking", "event_tag": "Breaking · " + top["net"] + " projection", "proj_lead": top})
     return story
+
+
+def morning_headline(rows, ra, rb, since):
+    """THE MORNING AFTER: the report that tells the whole result, the headline the newsrooms are leading with this
+    morning. rows: (dt, outlet, title, url), the Globe already last. None when no report tells the result yet."""
+    import autoupdate as au
+    stop = WEAK | {"about", "after", "what", "with", "from", "that", "this", "their", "will", "says", "over", "into"}
+    words = lambda t: {x for x in re.findall(r"[a-z][a-z'’]+", t.lower()) if len(x) > 3 and x not in stop}
+    # what the front pages lead with about the event (their top headlines that match it)
+    leads = [h for f in FRONTS or [] for h in f["h"][:3] if ra.search(h) or EVENT_RESULT.search(h)]
+    best, best_score = None, 0
+    for r in rows[:60]:
+        dt, title = r[0], r[2]
+        sc = 0
+        if EVENT_RESULT.search(title):
+            sc += 4
+        if EVENT_NIGHT_OF.search(title):
+            sc -= 5  # last night's coverage
+        if US_STATE.search(title) and not re.search(r"control|Congress|both chambers|majority|wave|sweep", title, re.I):
+            sc -= 3  # one race
+        if EVENT_SIDE.search(title):
+            sc -= 3  # a side angle (the markets, one person's role), not the result itself
+        mine = words(title)
+        sc += min(6, 2 * sum(1 for h in leads if len(mine & words(h)) >= 2))  # what the front pages are leading with
+        sc += min(2, sum(1 for x in rows if x is not r and x[2].strip().lower() == title.strip().lower()))  # run by several newsrooms
+        if dt >= since - timedelta(hours=3):
+            sc += 2  # written for the morning
+        if CAN_TIE.search(au.clean_outlet(r[1])) or re.search(r"\.ca/|cbc\.ca|ctvnews|globalnews|thestar\.com|nationalpost", r[3]):
+            sc += 1  # Canada first
+        if "theglobeandmail.com" in r[3]:
+            sc -= 2  # the Globe never first
+        if sc > best_score:
+            best, best_score = r, sc
+    return best if best_score >= 5 else None
 
 
 def event_day_stories(bigweek, items, now, imgdir, prev):
@@ -3863,6 +3937,15 @@ def event_day_stories(bigweek, items, now, imgdir, prev):
             if len(pi.get("desc", "")) >= 40:
                 lead, info = r, pi
                 break
+        # THE MORNING AFTER: the headline from the event, not the last race called overnight
+        after_since = datetime(day.year, day.month, day.day, MORNING_AFTER_HOUR, tzinfo=et) + timedelta(days=1)
+        aftermath = loc >= after_since
+        after_found = False
+        if aftermath:
+            best = morning_headline(free, ra, rb, after_since)
+            if best:
+                lead, after_found = best, True
+                info = page_info(lead[3]) or {}
         key = "event-" + re.sub(r"\W+", "-", name.lower()).strip("-") + "-" + d
         STORY_MATCH[key] = (ra, rb)  # the event matches only by its own two-part test (ONE STORY, ITS OWN SUBJECT)
         old = next((s for s in prev if s.get("key") == key), None)
@@ -3877,15 +3960,16 @@ def event_day_stories(bigweek, items, now, imgdir, prev):
         desc = lambda u: ((INFO_CACHE.get(u) or {}).get("desc") or "")[:300]
         official = [{"t": x.get("t") or "", "primary": True, "outlet": x.get("who", ""), "title": x.get("title", ""), "url": x.get("url", ""),
                      "desc": "", "wire": "", "by": [], "copies": []} for x in card.get("official") or []]
-        tag = EVENT_DAY_TAG.get(name, "Today")
+        tag = EVENT_AFTER_TAG.get(name, "The day after") if aftermath else EVENT_DAY_TAG.get(name, "Today")
         out.append({
+            "aftermath": aftermath, "after_since": after_since.isoformat(), "after_found": after_found,
             "key": key, "event_day": name, "event_tag": tag + " · " + name if tag != name else tag,
             "event_us": bool(EVENT_DAY_US.search(name)), "event_date": d,
             # never "U.S." or "elections": a country or an everyday word pulled unrelated stories in (Nov 3, 2026)
             "words": subject_words([w_ for w_ in re.findall(r"[A-Za-z][\w.]+", name) if len(w_) > 3][:4] + ["midterms" if "midterm" in name.lower() else name.split()[-1]]),
             "match": [a, b],
             "score": 100, "outlets": independent(rows), "carriers": len(rows), "independent": independent(rows),
-            "tag": "Breaking", "title": clean(lead[2]), "url": lead[3], "outlet": au.clean_outlet(lead[1]), "t": w.eastern(lead[0]), "iso": lead[0].isoformat(),
+            "tag": "Top story" if aftermath else "Breaking", "title": clean(lead[2]), "url": lead[3], "outlet": au.clean_outlet(lead[1]), "t": w.eastern(lead[0]), "iso": lead[0].isoformat(),
             "summary": info.get("desc", "") or what,
             "first": {"outlet": au.clean_outlet(first[1]), "url": first[3], "t": w.eastern(first[0]), "title": clean(first[2]), "iso": first[0].isoformat()},
             "newest": rows[0][0].isoformat(), "photo": photo, "photo_seen": photo_seen,
@@ -3894,7 +3978,7 @@ def event_day_stories(bigweek, items, now, imgdir, prev):
                                     "desc": desc(r[3]), "wire": "", "by": [], "copies": []} for r in ordered[:14]],
             "events": [], "replaces_top": False, "theme": "",
         })
-        print(f"event day: {name} leads ({len(rows)} newsrooms; headline: {lead[2][:70]})")
+        print(f"event day: {name} {'morning after' if aftermath else 'leads'} ({len(rows)} newsrooms; headline: {lead[2][:70]})")
     return out
 
 
@@ -4072,6 +4156,12 @@ def run(page, items, groups, breaking, now, imgdir, prev):
                 print(f"projections: {len(res['projections'])} calls ({', '.join(sorted({p_['net'] for p_ in res['projections']}))})")
                 for s_ in elex:
                     lead_with_projection(s_, res["projections"], now)
+                    if s_.get("aftermath") and not s_.get("after_found"):
+                        # THE MORNING AFTER, no report on the whole result yet: the biggest call leads, not the newest
+                        big = sorted([p_ for p_ in res["projections"] if p_["w"] >= 3], key=lambda p_: p_["seen"])
+                        if big:
+                            b_ = big[0]  # the first network to call it
+                            s_.update({"title": b_["call"], "url": b_["url"], "outlet": b_["net"], "t": b_["t"], "iso": b_["seen"]})
             except Exception as e:
                 print("projections failed:", e)
                 res["projections"] = prev.get("projections") or []
