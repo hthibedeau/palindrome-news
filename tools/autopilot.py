@@ -1886,9 +1886,11 @@ def _select(auto, cands, ranked, tier):
     global LAST_PICK
     LAST_PICK = (auto, cands, tier)
     seen_t, top2, rest = set(), [], []
+    # ONE STORY, NOT A PILE OF HEADLINES: a story that is really unrelated headlines grouped together never goes up top
+    ranked = [s for s in ranked if not s.get("incoherent")] + [s for s in ranked if s.get("incoherent")]
     for s in ranked:
         t = s.get("theme")
-        if len(top2) < 2 and not (t and t in seen_t):
+        if len(top2) < 2 and not (t and t in seen_t) and not s.get("incoherent"):
             top2.append(s)
             if t:
                 seen_t.add(t)
@@ -1924,7 +1926,8 @@ def _select(auto, cands, ranked, tier):
     # slot goes to the biggest Canadian story, whatever its size
     is_ca = lambda x: top_rule(x) in (1, 4, 6, 7) or x.get("canada") == "canadian"
     if len(top2) == 2 and not any(is_ca(x) for x in top2):
-        k = next((x for x in rest if is_ca(x) and top_rule(x) <= 9 and not SPORT.search(x.get("title") or "")), None)
+        k = next((x for x in rest if is_ca(x) and top_rule(x) <= 9 and not x.get("incoherent") and not SPORT.search(x.get("title") or "")
+                  and (not big_news_day(top2) or x.get("judgment") == "national")), None)
         if k:
             rest.remove(k)
             top2.append(k)
@@ -2200,6 +2203,49 @@ def rank_key(s):
     return (r, -(s.get("weight") or 0))
 
 
+# ===== ONE STORY, NOT A PILE OF HEADLINES (Hannah, Tue Nov 3, 2026, U.S. Election Night: "On a big news day like
+# today, we should not have stories like alleged attack on One Nation supporter not believed to be politically
+# motivated. Why would we even put that up there?") It was the third top story. Three things went wrong at once:
+#   1. It was not one story. An Australian police story (Victoria, Australia; One Nation is an Australian party) was
+#      grouped with a B.C. First Nation's forestry deal and a Saskatchewan First Nation's fight over a data centre,
+#      because "Nation" and "Coast" were shared words. The B.C. reports made it "Canadian", and the newest report,
+#      the Australian one, became the headline.
+#      Now: a story counts only the reports that share at least two real subject words with its own headline
+#      (coherent()). If fewer than two newsrooms are left, it is not a top story.
+#   2. A story from a foreign desk (/australia-news/, /world/ ...) is never "Canadian" because the reports wrongly
+#      grouped with it were.
+#   3. On a big news day (an event day, or a story leading FRONT_CONSENSUS front pages), a third top story must be
+#      national news (the news judgment), with Breaking-level coverage or a live event. A regional incident never
+#      sits beside the election.
+FOREIGN_DESK = re.compile(r"/(?:australia-news|world|international|us-news|uk-news|europe|asia|africa|americas|middle-east|"
+                          r"news/world|world-news|worldnews)/", re.I)
+SUBJECT_STOP = {"nation", "nations", "first", "coast", "police", "says", "said", "alleged", "allegedly", "attack", "report", "reports",
+                "people", "after", "over", "amid", "major", "deal", "news", "government", "canada", "canadian", "canadians"}
+
+
+def _subject(t):
+    import gap_check as gc
+    return {x.replace("’s", "").replace("'s", "") for x in gc.names(t) | gc.keys(t)} - WEAK - SUBJECT_STOP - GENERIC
+
+
+def coherent(s):
+    """The reports that are really about the story's headline: two shared subject words or more. Returns how many
+    different newsrooms that is, the headline's own included."""
+    head = _subject(s.get("title") or "")
+    outs = {s.get("outlet")}
+    for r in s.get("reports") or []:
+        if r.get("url") == s.get("url"):
+            continue
+        if len(head & _subject(r.get("title") or "")) >= 2:
+            outs.add(r.get("outlet"))
+    return len(outs)
+
+
+def big_news_day(top2):
+    """An event day, or a story leading front pages across the country and abroad."""
+    return any(t.get("event_day") or (t.get("fronts") or 0) >= FRONT_CONSENSUS for t in top2)
+
+
 def third_worthy(s, top2, tier):
     """Is this story big enough to be a third top story? It must be Canadian or tied to Canada, not the same running
     event as a top story, have a report in the last THIRD_FRESH_HOURS, and then any one of: a live event on it (on air
@@ -2208,6 +2254,10 @@ def third_worthy(s, top2, tier):
     from datetime import datetime, timezone
     if tier(s) >= 2 or s.get("judgment") == "local" or top_rule(s) >= 9 or SPORT.search((s.get("title") or "") + " " + (s.get("url") or "")):
         return False
+    if s.get("incoherent"):  # not one story (ONE STORY, NOT A PILE OF HEADLINES)
+        return False
+    if big_news_day(top2) and not (s.get("judgment") == "national" and (s.get("live") or (s.get("independent") or 0) >= BREAKING_INDEPENDENT)):
+        return False  # a big news day: only national news with Breaking-level coverage or a live event beside it
     themes = {t.get("theme") for t in top2 if t.get("theme")}
     if s.get("theme") and s["theme"] in themes:
         return False
@@ -2246,6 +2296,15 @@ def pick_by_canada(auto, items, now, eds, papers, otr, canus_, mostread=None):
         return bool(CANUS.search(text) or (CAN_TIE.search(text) and US_TIE.search(text)))
     for s in cands:
         s["canus"] = canus_story(s)
+        # ONE STORY, NOT A PILE OF HEADLINES: reports that only share a word like "Nation" are not this story
+        try:
+            n_ = coherent(s)
+            s["incoherent"] = bool(not s.get("event_day") and n_ < 2)
+            if s["incoherent"] or FOREIGN_DESK.search(s.get("url") or ""):
+                if s["canada"] == "canadian" and not CAN_TIE.search(s.get("title") or ""):
+                    s["canada"] = "none"  # its "Canadian" reports were other stories grouped with it by mistake
+        except Exception as e:
+            print("coherence check failed:", e)
     # every candidate gets its running theme from its own headline too, so one event never takes two top spots
     # (the Canada-EU summit came through as two stories, Wed Oct 28, 2026)
     try:

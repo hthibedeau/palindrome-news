@@ -113,3 +113,12 @@ For both Breaking stories: the photo comes first, then its caption, then the hea
 - The newest big call (control of a chamber or a government, then Senate seats and governors) leads the election story for 3 hours as "Breaking · <network> projection", with "Projection by <network> · <time>" under the headline and who else has made the same call.
 - "Projections: who is calling what" lists every call by race, one line per network, newest marked New. A projection is not a final result.
 - Checks: `python3 tools/test_story_match.py`.
+
+## The big-news-day lineup (Hannah, Tue Nov 3, 2026: "make a code for this for the next breaking news day")
+The page lines itself up this way whenever the lead story is Breaking. Nothing has to be done by hand.
+1. **The Breaking story**: photo, tag, headline, credit, the short line under it. On an election night, the newest network projection leads, plus "Projections: who is calling what".
+2. **Live coverage now**, right under it, full width, so readers can choose where to watch or read (PAL_orderTop in index.html). When the lead is no longer Breaking, it goes back to its own band after the Canada desk.
+3. **The other top stories** (the second, and a third only if it qualifies).
+4. **The Canada desk**, then the rest of the page.
+
+On a big news day (an event day, or a story leading 6+ front pages), a third top story must be national news with Breaking-level coverage (4+ newsrooms) or a live event: `big_news_day()` and `third_worthy()` in tools/autopilot.py. A story whose reports don't share its headline's subject (unrelated headlines grouped by a word like "Nation") is never a top story: `coherent()`. Why: "Alleged attack on One Nation supporter not believed to be politically motivated" (an Australian story, grouped with two First Nations stories from B.C. and Saskatchewan) sat beside the U.S. election results.
