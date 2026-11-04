@@ -437,7 +437,8 @@ def _page_info(url):
 # see the story change through the day. Each photo keeps its own caption and credit, linked to its newsroom. Branded
 # graphics and logos (GENERIC_IMG) are never used. With only one usable photo, it stays.
 PHOTO_ROTATE_MINUTES = 30
-PHOTO_SEEN_KEEP = 10
+PHOTO_SEEN_KEEP = 60  # every photo a story has shown, so none comes back
+PHOTO_LOOK = 14  # reports whose photos are considered
 
 
 def pick_photo(key, rows, old, imgdir, now, first_info=None):
@@ -447,7 +448,7 @@ def pick_photo(key, rows, old, imgdir, now, first_info=None):
     cur = old.get("photo") or None
     seen = list(old.get("photo_seen") or ([cur["orig"]] if cur and cur.get("orig") else []))
     cands = []
-    for i, r in enumerate(rows[:8]):
+    for i, r in enumerate(rows[:PHOTO_LOOK]):
         pi = (first_info if i == 0 and first_info else None) or page_info(r[3]) or {}
         img = pi.get("img")
         if not img or GENERIC_IMG.search(img) or any(c[2] == img for c in cands):
@@ -466,13 +467,14 @@ def pick_photo(key, rows, old, imgdir, now, first_info=None):
         if not cur.get("since"):
             cur["since"] = now.isoformat()
         return cur, seen
-    # the next photo: one never shown on this story (newest report first), else the one shown longest ago
-    order = [c for c in cands if c[2] not in seen] or sorted([c for c in cands if not cur or c[2] != cur.get("orig")],
-                                                             key=lambda c: seen.index(c[2]) if c[2] in seen else -1)
+    # the next photo: only one never shown on this story (Hannah, Nov 3, 2026: "that new photo you picked is one that
+    # I've already seen tonight"). The same picture at another size counts as shown. No new one: the current one stays.
+    pkey = lambda u: re.sub(r"\?.*$", "", ps.key(ps.best_src(u)) if u else "").lower()
+    shown = {pkey(u) for u in seen}
+    order = [c for c in cands if pkey(c[2]) not in shown]
     if not order:
         if cur_ok:
-            cur["since"] = now.isoformat()
-            return cur, seen
+            return cur, seen  # checked again next update
         order = cands
     for r, pi, img in order:
         src = save_photo(img, imgdir, key)
@@ -480,7 +482,8 @@ def pick_photo(key, rows, old, imgdir, now, first_info=None):
             continue
         o = au.clean_outlet(r[1])
         cap, credit = pi.get("caption") or pi.get("alt") or "", pi.get("credit") or ""
-        photo = {"src": src, "orig": img, "caption": (cap.rstrip(".") + "." if cap else "Photo") + (f" ({credit})" if credit else "") + f" — via {o}",
+        # no caption from the newsroom: say which report the photo is from, so readers know what they are looking at
+        photo = {"src": src, "orig": img, "caption": (cap.rstrip(".") + "." if cap else "From: " + clean(r[2]).rstrip(".") + ".") + (f" ({credit})" if credit else "") + f" — via {o}",
                  "alt": cap[:160] or r[2], "outlet": o, "url": r[3], "since": now.isoformat()}
         seen = [x for x in seen if x != img] + [img]
         return photo, seen[-PHOTO_SEEN_KEEP:]
@@ -595,7 +598,7 @@ def build_story(g, now, imgdir, prev):
             lead, info = r, pi
             break
     # A FRESH PICTURE ON A BREAKING STORY: a new photo from the story's reports every PHOTO_ROTATE_MINUTES
-    photo, photo_seen = pick_photo(key, [lead] + [x for x in news_reps[:7] if x is not lead], old, imgdir, datetime.now(timezone.utc), info)
+    photo, photo_seen = pick_photo(key, [lead] + [x for x in news_reps if x is not lead], old, imgdir, datetime.now(timezone.utc), info)
     newest = reps[0][0]
     # What each newsroom reports: every outlet's own lead sentence (og:description), side by side
     with ThreadPoolExecutor(6) as ex:
@@ -3864,7 +3867,7 @@ def event_day_stories(bigweek, items, now, imgdir, prev):
         STORY_MATCH[key] = (ra, rb)  # the event matches only by its own two-part test (ONE STORY, ITS OWN SUBJECT)
         old = next((s for s in prev if s.get("key") == key), None)
         # A FRESH PICTURE ON A BREAKING STORY: a new photo from the newest reports every PHOTO_ROTATE_MINUTES
-        photo, photo_seen = pick_photo(key, [lead] + [x for x in free[:7] if x is not lead], old, imgdir, now, info)
+        photo, photo_seen = pick_photo(key, [lead] + [x for x in free if x is not lead], old, imgdir, now, info)
         # the reports: the newest first, then the Canadian angle (Canadian reports on the event), then the rest
         can = [r for r in rows if CAN_TIE.search(r[2]) and r is not lead]
         rest = [r for r in rows if r is not lead and r not in can]
