@@ -416,6 +416,12 @@ def _page_info(url):
     info = {"site": clean(ps.meta(x, "og:site_name")), "title": clean(ps.meta(x, "og:title")),
             "desc": clean(ps.meta(x, "og:description") or ps.meta(x, "description")),
             "img": clean(ps.meta(x, "og:image")), "alt": clean(ps.meta(x, "og:image:alt")), "caption": "", "credit": ""}
+    # the article's own time, latest first (a front-page headline is used only with the time its newsroom gives it)
+    tm = ps.meta(x, "article:modified_time") or ps.meta(x, "article:published_time")
+    if not tm:
+        mt = re.search(r'"date(?:Modified|Published)"\s*:\s*"([^"]+)"', x)
+        tm = mt.group(1) if mt else ""
+    info["time"] = clean(tm)
     why = []
     info["wire"] = wire_of_page(x, why)
     info["by"] = (why[0] if why else "")[:120]
@@ -536,6 +542,28 @@ def unfit_photo(*texts):
     return bool(UNFIT_PHOTO.search(" ".join(t or "" for t in texts)))
 
 
+FILE_PHOTO_DAYS = 3
+_MONTHS = "January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sept?|Oct|Nov|Dec"
+
+
+def file_photo(cap, now=None):
+    """Does the caption date the picture more than FILE_PHOTO_DAYS before today ("June 16, 2026", "in 2023", "file photo")?"""
+    if not cap:
+        return False
+    now = now or datetime.now(timezone.utc)
+    if re.search(r"\b(?:file|archive) (?:photo|image|picture)\b|\(file\)|\bfile\b\s*\)", cap, re.I):
+        return True
+    for m in re.finditer(r"\b(" + _MONTHS + r")\.? (\d{1,2}),? (20\d\d)\b", cap):
+        try:
+            d = datetime.strptime(f"{m.group(1)[:3]} {m.group(2)} {m.group(3)}", "%b %d %Y").replace(tzinfo=timezone.utc)
+        except ValueError:
+            continue
+        if (now - d).days > FILE_PHOTO_DAYS:
+            return True
+    y = re.search(r"\b(?:in|on|from) (20\d\d)\b", cap)  # "Bella Coola, B.C., in 2023."
+    return bool(y and int(y.group(1)) < now.year)
+
+
 def pick_reel(key, rows, photo, imgdir, first_info=None):
     """rows: the story's reports, the HEADLINE'S OWN REPORT FIRST (row[1] outlet, row[2] title, row[3] url).
     THE HEADLINE'S PICTURE ALWAYS LEADS THE REEL (Hannah, Wed Nov 4, 2026: the headline said "LeBlanc says U.S. midterm
@@ -592,6 +620,13 @@ def pick_reel(key, rows, photo, imgdir, first_info=None):
         cap, credit = pi.get("caption") or pi.get("alt") or "", pi.get("credit") or ""
         if unfit_photo(cap, pi.get("alt"), img):
             return  # NO UNSUITABLE PICTURES
+        if file_photo(cap):
+            # NO OLD FILE PHOTOS AT THE TOP (Hannah, Wed Nov 4, 2026: the midterm results led with a photo of Carney and
+            # Trump "at the G7 summit ... on Tuesday, June 16, 2026"). A photo whose caption dates it days before today
+            # is a file photo: it never joins the reel, and even the headline's own goes behind any photo from today.
+            if rank > 0:
+                return
+            rank = 5
         if rank > 0 and re.sub(r"\W+", "", cap.lower()) in ("", re.sub(r"\W+", "", clean(r[2]).lower())):
             # no description of the picture: it may join only when its report is plainly about the same thing as the
             # headline (two of the headline's distinctive words, or a person the headline names, in its headline) and
@@ -2595,9 +2630,18 @@ def angle_search(res, now):
 
 
 def big_news_day(top2):
-    """An event day, or a story leading front pages across the country and abroad. Not the morning after an event
-    (THE MORNING AFTER): its results share the top with the day's other big stories."""
-    return any(not t.get("aftermath") and (t.get("event_day") or (t.get("fronts") or 0) >= FRONT_CONSENSUS) for t in top2)
+    """An event day, or a story leading front pages across the country and abroad.
+    The morning after an event (THE MORNING AFTER), its results share the top with the day's other big stories, UNLESS
+    the front pages are still leading with it: then it is still the biggest story there is, and it stands alone
+    (Hannah, Wed Nov 4, 2026, the day after the midterms, with 14 front pages here and abroad leading with the result:
+    "it doesnt look like a site with all the latest news on the biggest story in the globe")."""
+    def big(t):
+        fronts, fronts_ca = t.get("fronts") or 0, t.get("fronts_ca") or 0
+        leading = fronts >= FRONT_CONSENSUS and fronts_ca >= FRONT_CONSENSUS_CA
+        if t.get("aftermath"):
+            return leading
+        return bool(t.get("event_day")) or leading
+    return any(big(t) for t in top2)
 
 
 def third_worthy(s, top2, tier):
@@ -3758,6 +3802,14 @@ EVENT_RESULT = re.compile(r"\b(control of (?:Congress|the House|the Senate|both 
                           r"(?:midterm|election) (?:results|defeat|victory|win|loss|rout|takeaways)|what (?:the|this|it) .{0,50}means|takeaways|next steps|"
                           r"the morning after|aftermath|concedes?|majority|budget (?:at a glance|highlights|what you need to know)|deficit)\b", re.I)
 EVENT_SIDE = re.compile(r"\b(stocks?|Dow|TSX|S&P|Nasdaq|markets?|shares|loonie|investors|step aside|steps down|in the news today|correspondent says)\b", re.I)
+# a headline that states the result: who won or lost which chamber or government
+EVENT_RESULT_STATED = re.compile(r"\b(?:Democrats?|Republicans?|GOP|Dems|Trump(?:['’]s)? (?:party|Republicans))\b.{0,60}\b(?:take|takes|took|win|wins|won|"
+                                 r"retake|retakes|retook|seize|seizes|seized|sweep|sweeps|swept|flip|flips|flipped|control|controls|lose|loses|lost|keep|keeps|kept|hold|holds|held)\b"
+                                 r".{0,40}\b(?:Congress|House|Senate|both chambers|both houses)\b|\bcontrol of (?:the U\.?S\.? )?(?:Congress|the House and (?:the )?Senate|both chambers)\b", re.I)
+# a reaction or an angle on the event, not the event: someone's comment, the markets, what it means for someone
+EVENT_REACTION = re.compile(r"\b(says?|said|despite|reacts?|reaction|react|vindicat\w*|cartwheels|buoyed|cautious\w*|relief|hopes?|blames?|"
+                            r"what (?:it|this|the \w+(?: \w+)?) (?:could )?means? for|could mean|means for|for Canad\w*|Canadians?|Quebecers|"
+                            r"Albertans|stocks?|Dow|markets?|aluminum|tariffs?|ballroom|wealth)\b", re.I)
 EVENT_NIGHT_OF = re.compile(r"\b(polls? (?:open|opens|close|closes|closing)|what to watch|how to (?:watch|follow)|Election Day|America votes|"
                             r"voters? (?:head|go|went|cast)|live (?:updates|results|blog)|tonight|as it happened|early results|"
                             r"too early to call|exit polls?)\b", re.I)
@@ -3797,7 +3849,7 @@ def front_pages():
         if len(x) < 5000:
             return None
         x = re.sub(r"(?is)<(script|style|noscript|svg|nav|header|footer)\b.*?</\1>", " ", x)
-        heads, seen = [], set()
+        heads, links, seen = [], [], set()
         for m in re.finditer(r"(?is)<(h1|h2|h3)\b[^>]*>(.*?)</\1>", x):
             t = clean(re.sub(r"<[^>]+>", " ", m.group(2)))
             k = t.lower()
@@ -3805,11 +3857,36 @@ def front_pages():
                 continue
             seen.add(k)
             heads.append(t)
+            links.append(_front_link(x, m, url))
             if len(heads) >= FRONT_TOP:
                 break
-        return {"o": o, "ca": ca, "h": heads} if heads else None
+        return {"o": o, "ca": ca, "h": heads, "u": links} if heads else None
     with ThreadPoolExecutor(10) as ex:
         return [r for r in ex.map(one, FRONT_PAGES) if r]
+
+
+def _front_link(x, m, base):
+    """The article a front-page headline links to: a link inside the heading, or the link the heading sits in.
+    "" when there is none (the headline is then used for counting only, never as a headline on Palindrome)."""
+    from urllib.parse import urljoin
+    inner = re.search(r"(?is)<a\b[^>]*\bhref=[\"']([^\"'#]+)", m.group(2))
+    if not inner:
+        before = x[max(0, m.start() - 1500):m.start()]
+        a = before.rfind("<a ")
+        if a >= 0 and "</a>" not in before[a:]:
+            inner = re.search(r"(?is)\bhref=[\"']([^\"'#]+)", before[a:])
+    if not inner:
+        after = x[m.end():m.end() + 400]  # a card whose headline comes first and its link right after
+        inner = re.match(r"(?is)\s*(?:</[^>]+>\s*)*<a\b[^>]*\bhref=[\"']([^\"'#]+)", after)
+    if not inner:
+        return ""
+    u = urljoin(base, inner.group(1).strip())
+    return u if u.startswith("http") and len(urlparse_path(u)) > 12 else ""  # an article, not a section front
+
+
+def urlparse_path(u):
+    from urllib.parse import urlparse
+    return urlparse(u).path or ""
 
 
 def _front_match(s, head):
@@ -3909,12 +3986,15 @@ def parse_projection(text, outlet):
 def proj_race(call):
     """Which race a call is about, so each network's call on it sits on one line: chamber control first."""
     c = call.lower()
+    # one state's seat is one race, never control of a chamber ("Bonck wins House election for Hunt's Texas seat",
+    # Wed Nov 4, 2026, sat under "Control of the House"), unless the call itself says control or majority
+    one_seat = bool(US_STATE.search(call)) and re.search(r"\bseat\b|district", c) and not re.search(r"control|majority|both chambers", c)
     win = r"(?:win|wins|won|keep|keeps|kept|hold|holds|held|retain|retains|take|takes|took|flip|flips|flipped)\s+(?:back\s+)?"
-    for k, rx in (("Control of the House", win + r"(?:control of (?:the )?(?:u\.s\. )?house|(?:the )?house(?: majority)?\b(?! seats?| districts?| races?| ?\d))"),  # "flips House seat" is one race, not control
-                  ("Control of the Senate", win + r"(?:control of (?:the )?(?:u\.s\. )?senate|(?:the )?senate(?: majority)?\b(?! seat| race))"),
+    for k, rx in (("Control of the House", win + r"(?:control of (?:the )?(?:u\.s\. )?house|(?:the )?house(?: majority)?\b(?! seats?| districts?| races?| elections?| primar| special| ?\d))"),  # "flips House seat" is one race, not control
+                  ("Control of the Senate", win + r"(?:control of (?:the )?(?:u\.s\. )?senate|(?:the )?senate(?: majority)?\b(?! seats?| races?| elections?| primar| special))"),
                   ("Control of Congress", win + r"control of congress"),
                   ("The next government", r"(?:majority|minority) government|will form (?:the )?government")):
-        if re.search(rx, c):
+        if not one_seat and re.search(rx, c):
             return k
     st = US_STATE.search(call)
     office = re.search(r"\b(Senate|House|governor|gubernatorial|mayor|attorney general|Sen(?=\.)|Gov(?=\.))\b", call, re.I)
@@ -4038,10 +4118,35 @@ def morning_headline(rows, ra, rb, since):
     words = lambda t: {x for x in re.findall(r"[a-z][a-z'’]+", t.lower()) if len(x) > 3 and x not in stop}
     # what the front pages lead with about the event (their top headlines that match it)
     leads = [h for f in FRONTS or [] for h in f["h"][:3] if ra.search(h) or EVENT_RESULT.search(h)]
+    # THE RESULT ITSELF LEADS (Hannah, Wed Nov 4, 2026, the afternoon after the midterms: "it doesnt look like a site
+    # with all the latest news on the biggest story in the globe"). The page led with "Canada's focus 'hasn't changed'
+    # despite U.S. midterm blue wave, minister says" while CBS, the Guardian and the Star led with "Democrats take
+    # control of Congress". A reaction (someone says, despite, vindicates, reacts) belongs in the Canadian angle box,
+    # never as the headline of the event. The front pages' own lead headlines that state the result are candidates
+    # too, linked to their article, so the headline is what the big newsrooms are leading with.
+    fr = []
+    for f in FRONTS or []:
+        for i, h in enumerate(f["h"][:3]):
+            u = (f.get("u") or [""] * 9)[i] if i < len(f.get("u") or []) else ""
+            if u and EVENT_RESULT_STATED.search(h) and not EVENT_REACTION.search(h) and "theglobeandmail.com" not in u:
+                h = re.sub(r"^(?:Full report|Live|Analysis|Exclusive|Breaking|Updated?)\s+(?=[A-Z])", "", h)  # a kicker read into the headline
+                try:  # the time the newsroom gives the article; none given, not used (the code never guesses a time)
+                    dt_ = datetime.fromisoformat((page_info(u) or {}).get("time", "").replace("Z", "+00:00"))
+                    dt_ = dt_ if dt_.tzinfo else None
+                except Exception:
+                    dt_ = None
+                if dt_ and dt_ <= datetime.now(timezone.utc) + timedelta(minutes=10):
+                    fr.append((dt_, f["o"], h, u, "front"))
     best, best_score = None, 0
-    for r in rows[:60]:
+    for r in list(rows[:60]) + fr:
         dt, title = r[0], r[2]
         sc = 0
+        if EVENT_RESULT_STATED.search(title):
+            sc += 5  # it says who won what: "Democrats take control of Congress"
+        if EVENT_REACTION.search(title):
+            sc -= 6  # a reaction or an angle, not the result
+        if len(r) > 4 and r[4] == "front":
+            sc += 3  # a big newsroom's front-page lead right now
         if EVENT_RESULT.search(title):
             sc += 4
         if EVENT_NIGHT_OF.search(title):
@@ -4061,7 +4166,7 @@ def morning_headline(rows, ra, rb, since):
             sc -= 2  # the Globe never first
         if sc > best_score:
             best, best_score = r, sc
-    return best if best_score >= 5 else None
+    return best[:4] if best and best_score >= 5 else None
 
 
 def event_day_stories(bigweek, items, now, imgdir, prev):
@@ -4140,6 +4245,11 @@ def event_day_stories(bigweek, items, now, imgdir, prev):
         ordered = [lead] + rest[:5] + can[:5] + rest[5:9]
         ordered = sorted(ordered[:1], key=lambda r: 0) + [r for r in ordered[1:] if "theglobeandmail.com" not in r[3]] + [r for r in ordered[1:] if "theglobeandmail.com" in r[3]]
         first = min(rows)
+        if aftermath:  # the first to report the result, not an overnight markets story that named the event
+            told = [r for r in rows if (EVENT_RESULT_STATED.search(r[2]) or EVENT_RESULT.search(r[2])) and not EVENT_SIDE.search(r[2])
+                    and not EVENT_REACTION.search(r[2])
+                    and not (US_STATE.search(r[2]) and not re.search(r"control|Congress|both chambers|majority|wave|sweep", r[2], re.I))]  # not one race
+            first = min(told) if told else first
         desc = lambda u: ((INFO_CACHE.get(u) or {}).get("desc") or "")[:300]
         official = [{"t": x.get("t") or "", "primary": True, "outlet": x.get("who", ""), "title": x.get("title", ""), "url": x.get("url", ""),
                      "desc": "", "wire": "", "by": [], "copies": []} for x in card.get("official") or []]

@@ -67,6 +67,16 @@ A story that touches few people and is read in one city is **Local**. It stays i
 
 Example: "Toronto man identified as suspect in Bridle Path home invasion" (one crime, Toronto desks only) is Local. "Canada-EU associate membership talks" (Canada's trade and place in the world, in newsrooms in seven cities) is National, and the top story.
 
+## The biggest story leads like one (Hannah, Wed Nov 4, 2026)
+
+"It doesn't look like a site with all the latest news on the biggest story in the globe." The day after a big event, the code now:
+
+- **Keeps it alone at the top, full width,** while the front pages here and abroad still lead with it (six or more, two of them Canadian). When they move on, the day's other stories come back beside it. `big_news_day()` in `tools/autopilot.py`.
+- **Leads with the result itself** ("Midterm fallout begins after Democrats win control of Congress", CBS News), never a reaction ("minister says", "despite", "vindicates"), the markets or one race. The big newsrooms' own front-page leads are candidates, linked to their article and timed by the newsroom. Reactions stay in the Canadian angle. `morning_headline()`.
+- **Credits the first report of the result** as "First", not an overnight markets story.
+- **Never leads with an old file photo**: a caption dated days before today ("June 16, 2026", "in 2023", "file photo") goes behind any photo from today and never joins the reel. `file_photo()`.
+- **Files one state's seat under its race**, never under "Control of the House" in Results: who called what. `proj_race()`.
+
 ## Page order (Hannah, Wed Oct 28, 2026)
 
 The page script (`PAL_orderTop` in `index.html`) keeps this order by itself, whatever is showing:

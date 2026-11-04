@@ -64,7 +64,17 @@ _rows = [(_dt(2026, 11, 4, 10, 18, tzinfo=_et), "CBS News", "Stocks soar after D
 _ev = ap.BIG_EVENTS[0]
 _pick = ap.morning_headline(_rows, re.compile(_ev[3], re.I), re.compile(_ev[4], re.I), _since)
 check(bool(_pick) and _pick[1] == "CTV News", "the morning after, the results headline leads (not stocks, one race or last night)")
-check(not ap.big_news_day([{"event_day": _ev[0], "aftermath": True, "fronts": 12}]), "the morning after, the event no longer stands alone")
+check(not ap.big_news_day([{"event_day": _ev[0], "aftermath": True, "fronts": 3, "fronts_ca": 1}]), "the morning after, the event no longer stands alone")
+check(ap.big_news_day([{"event_day": _ev[0], "aftermath": True, "fronts": 12, "fronts_ca": 6}]),
+      "the day after, while the front pages here and abroad still lead with it, it stands alone (Nov 4, 2026)")
+_rows2 = [(_dt(2026, 11, 4, 15, 21, tzinfo=_et), "Global News", "Canada’s focus ‘hasn’t changed’ despite U.S. midterm blue wave, minister says", "https://globalnews.ca/e"),
+          (_dt(2026, 11, 4, 15, 40, tzinfo=_et), "Narcity", "Alberta Premier Smith says U.S. midterm results 'vindicate' her approach to tariffs", "https://www.narcity.com/f"),
+          (_dt(2026, 11, 4, 13, 0, tzinfo=_et), "CBS News", "Midterm fallout begins after Democrats win control of Congress", "https://www.cbsnews.com/g")]
+_pick2 = ap.morning_headline(_rows2, re.compile(_ev[3], re.I), re.compile(_ev[4], re.I), _since)
+check(bool(_pick2) and _pick2[1] == "CBS News", "the day after, the result leads, never a reaction ('minister says', 'vindicate')")
+check(ap.file_photo("Carney and Trump at the G7 summit in Evian-les-Bains, France, on Tuesday, June 16, 2026.", _dt(2026, 11, 4, tzinfo=_et)),
+      "a photo dated months ago is a file photo")
+check(ap.proj_race("Bonck wins House election for Hunt’s Texas seat") == "Texas · House", "one state's House seat is not control of the House")
 check(ap.big_news_day([{"event_day": _ev[0]}]), "on the night, the event stands alone")
 _st = {"aftermath": True, "after_since": _since.isoformat(), "title": "kept"}
 _calls = [{"race": "Michigan · Senate", "call": "El-Sayed wins Michigan Senate seat, NBC News projects", "net": "NBC News", "named": True, "via": "",
