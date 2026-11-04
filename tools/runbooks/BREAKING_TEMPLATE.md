@@ -141,3 +141,9 @@ When a Breaking or top story has more than one real news photo, the top photo di
 - Hand-written top slot (section#breaking): every captioned photo in `more` in topSlotImage() joins the reel.
 - Breaking event (#bkEvent): `photo` plus every captioned photo in the UPNEXT entry's `photos`.
 - Code: `PAL_reel` in index.html, styles under "THE PHOTO REEL".
+
+## Every photo matches the headline, and nothing unsuitable (Hannah, Wed Nov 4, 2026)
+- **It matches the headline.** Under "Tariff relief for Canada not guaranteed after Democrats sweep U.S. midterm elections" the reel showed a rally in Iran: "it just simply doesn't match the headline". Belonging to the same big story is not enough. Beyond the headline's own photo, a photo joins only when its caption (what the picture shows) has the headline's distinctive words, not the words most of the story's reports share like "midterm", counting close kin (TOPIC_KIN: a tariff headline matches "trade"), or names someone the headline names. The story's main photo is the reel's first, the headline's own picture. With no other photo that matches, the headline's photo stands alone.
+- **Nothing unsuitable.** "That photo of the boys wearing camouflage and Trump in the background is inappropriate." A photo is never used, in the reel or as the main photo, when its caption or alt text shows children, weapons, militia or soldiers on parade, bodies, blood or the wounded, coffins, or propaganda staging (caricatures, effigies, flag burning, slogans at a rally against a country). A photo with no description cannot be checked, so only the headline's own photo may lack one.
+- Code: `UNFIT_PHOTO`, `unfit_photo()`, `TOPIC_KIN` and `pick_reel()` in tools/autopilot.py; the page repeats the check (`PAL_photoUnfit` in index.html) as a second safety net.
+

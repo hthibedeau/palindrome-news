@@ -453,6 +453,8 @@ def pick_photo(key, rows, old, imgdir, now, first_info=None):
         img = pi.get("img")
         if not img or GENERIC_IMG.search(img) or any(c[2] == img for c in cands):
             continue
+        if unfit_photo(pi.get("caption"), pi.get("alt"), img):
+            continue  # NO UNSUITABLE PICTURES (Nov 4, 2026)
         cands.append((r, pi, img))
     if not cands:
         return cur, seen
@@ -461,7 +463,7 @@ def pick_photo(key, rows, old, imgdir, now, first_info=None):
         since = datetime.fromisoformat(cur.get("since")) if cur and cur.get("since") else None
     except Exception:
         since = None
-    cur_ok = bool(cur and cur.get("src") and os.path.exists(os.path.join(imgdir, os.path.basename(cur["src"]))) and not GENERIC_IMG.search(cur.get("orig") or ""))
+    cur_ok = bool(cur and cur.get("src") and os.path.exists(os.path.join(imgdir, os.path.basename(cur["src"]))) and not GENERIC_IMG.search(cur.get("orig") or "") and not unfit_photo(cur.get("caption"), cur.get("alt"), cur.get("orig")))
     due = not cur_ok or since is None or (now - since).total_seconds() >= PHOTO_ROTATE_MINUTES * 60
     if not due:
         if not cur.get("since"):
@@ -497,6 +499,38 @@ def pick_photo(key, rows, old, imgdir, now, first_info=None):
 # index.html) dissolves from one to the next, each with its slow move, and changes the caption and credit with it.
 REEL_SIZE = 4
 
+# ===== NO UNSUITABLE PICTURES (Hannah, Wed Nov 4, 2026: "That photo of the boys wearing camouflage and Trump in the
+# background is inappropriate. You need to make sure pictures like that don't make it into the scroll.")
+# A photo is checked by what its newsroom's caption and alt text say is in it. It is never used, in the reel or as the
+# story's main photo, when it shows: children (boys, girls, kids, students, babies ...); weapons, uniforms on
+# civilians or militia, or soldiers on parade; bodies, blood, the wounded, coffins or graves; or propaganda staging
+# (caricatures, effigies, burning flags, chanting crowds at a rally against a country). And because a picture with no
+# description cannot be checked, only the headline's own photo may lack one; every other photo in the reel needs a
+# real caption from its newsroom (its headline repeated as alt text does not count). The page applies the same check
+# (PAL_photoUnfit in index.html) as a second safety net.
+UNFIT_PHOTO = re.compile(
+    r"\b(boys?|girls?|child(?:ren)?|kids?|toddlers?|bab(?:y|ies)|infants?|minors?|teen(?:ager)?s?|schoolchildren|pupils|"
+    r"students?|youths?|juveniles?|son|daughter|"
+    r"camouflage|militia|militants?|fighters?|paramilitary|berets?|rifles?|guns?|gunmen|weapons?|armed|ammunition|grenades?|"
+    r"military parade|parade of|troops march|"
+    r"bod(?:y|ies)|corpses?|dead|killed|blood(?:y|ied)?|wounded|injured|casualt(?:y|ies)|coffins?|graves?|morgue|gore|"
+    r"caricatures?|effig(?:y|ies)|burn(?:s|ed|ing)? (?:a |an |the )?(?:u\.?s\.?|american|israeli|canadian)? ?flags?|"
+    r"death to|chant(?:s|ed|ing)? slogans|anti-(?:u\.?s\.?|american|israeli) rally|rally marking|hostages?|execution)\b",
+    re.I)
+
+
+# close kin for EVERY PHOTO MATCHES THE HEADLINE: a headline word in one group matches a photo with any word of it
+TOPIC_KIN = [{"tariff", "trade", "duti", "cusma", "usmca", "export", "import", "steel", "aluminum", "lumber"},
+             {"wildfire", "fire", "blaze", "firefighter", "evacuation", "evacuee"},
+             {"flood", "flooding", "storm", "hurricane", "rain"},
+             {"budget", "deficit", "spending", "finance"},
+             {"vote", "ballot", "election", "poll", "voter", "referendum"}]
+
+
+def unfit_photo(*texts):
+    """True when a photo's caption or alt text says it shows something not suitable for the top photo."""
+    return bool(UNFIT_PHOTO.search(" ".join(t or "" for t in texts)))
+
 
 def pick_reel(key, rows, photo, imgdir, first_info=None):
     """rows: the story's reports, the HEADLINE'S OWN REPORT FIRST (row[1] outlet, row[2] title, row[3] url).
@@ -515,34 +549,55 @@ def pick_reel(key, rows, photo, imgdir, first_info=None):
     capkey = lambda c: re.sub(r"\W+", "", re.sub(r"\s*[—-]\s*via\s+.*$", "", c or "").lower())[:90]
     head = clean(rows[0][2])
     hsub = _subject(head)
-    test = on_subject(key, []) if key in STORY_MATCH else (lambda t: False)
-    about = lambda t: test(t) or len(hsub & _subject(t)) >= 2
+    # EVERY PHOTO MATCHES THE HEADLINE (Hannah, Wed Nov 4, 2026: under "Tariff relief for Canada not guaranteed after
+    # Democrats sweep U.S. midterm elections" the reel showed a rally in Iran: "it just simply doesn't match the
+    # headline"). Belonging to the same big story is not enough. A photo joins only when the headline's DISTINCTIVE
+    # words (not the words most of the story's reports share, like "midterm" or "Democrats") are in its caption, which
+    # says what the picture shows (the report's headline alone is not enough), counting close kin (TOPIC_KIN: a tariff headline matches "trade"), or its caption names
+    # someone the headline names. With fewer than two photos that match, the headline's own photo stands alone.
+    from collections import Counter
+    titles = [_subject(clean(r[2])) for r in rows]
+    common = {w for w, n in Counter(w for t in titles for w in t).items() if len(titles) >= 4 and n >= 0.3 * len(titles)}
+    stem = lambda w: re.sub(r"(?:ies|es|s)$", "", w.lower())
+    distinct = {stem(w) for w in hsub - common if len(w) > 3 and not COUNTRY.fullmatch(w)}
+    for grp in TOPIC_KIN:
+        if distinct & grp:
+            distinct |= grp
+    def matches(*texts):
+        words = {stem(w) for w in re.findall(r"[A-Za-zÀ-ÿ'’-]{3,}", " ".join(t or "" for t in texts))}
+        return bool(distinct & words)
     # the people and names in the headline: capitalized words that are not places, countries or everyday words
     names = {w.lower() for w in re.findall(r"\b[A-Z][A-Za-zÀ-ÿ'’-]{2,}", head)
              if not is_place(w) and not COUNTRY.fullmatch(w) and w.lower() not in GENERIC and w.lower() not in WEAK}
-    names = {re.sub(r"['’]s$", "", n) for n in names}
+    names = {re.sub(r"['’]s$", "", n) for n in names} - {c.lower() for c in common}
     cands = []  # (rank, order, entry, imgkey, capkey)
 
     def add(rank, order, img, pi, r):
         if not img or GENERIC_IMG.search(img):
             return
+        o = au.clean_outlet(r[1])
+        cap, credit = pi.get("caption") or pi.get("alt") or "", pi.get("credit") or ""
+        if unfit_photo(cap, pi.get("alt"), img):
+            return  # NO UNSUITABLE PICTURES
+        if rank > 0 and re.sub(r"\W+", "", cap.lower()) in ("", re.sub(r"\W+", "", clean(r[2]).lower())):
+            return  # no description of what is in it: it cannot be checked, so only the headline's own photo may lack one
         src = save_photo(img, imgdir, key)
         if not src:
             return
-        o = au.clean_outlet(r[1])
-        cap, credit = pi.get("caption") or pi.get("alt") or "", pi.get("credit") or ""
         full = (cap.rstrip(".") + "." if cap else "From: " + clean(r[2]).rstrip(".") + ".") + (f" ({credit})" if credit else "") + f" — via {o}"
         if rank > 0 and names and any(re.search(r"\b" + re.escape(n) + r"\b", (cap + " " + (pi.get("alt") or "")).lower()) for n in names):
             rank = 1  # the photo shows someone the headline names
-        cands.append((rank, order, {"src": src, "caption": full, "alt": cap[:160] or clean(r[2]), "outlet": o, "url": r[3]}, pkey(img), capkey(cap)))
+        cands.append((rank, order, {"src": src, "orig": img, "caption": full, "alt": cap[:160] or clean(r[2]), "outlet": o, "url": r[3]}, pkey(img), capkey(cap)))
 
     for i, r in enumerate(rows[:PHOTO_LOOK]):
-        if i and not about(clean(r[2])):
-            continue
         pi = (first_info if i == 0 and first_info else None) or page_info(r[3]) or {}
+        # what the PICTURE shows must match the headline (its caption), not only the report it came with
+        if i and not matches(pi.get("caption"), pi.get("alt")) and not (
+                names and any(re.search(r"\b" + re.escape(n) + r"\b", ((pi.get("caption") or "") + " " + (pi.get("alt") or "")).lower()) for n in names)):
+            continue  # EVERY PHOTO MATCHES THE HEADLINE
         add(0 if i == 0 else 3, i, pi.get("img"), pi, r)
-    if photo and photo.get("src"):
-        cands.append((2, -1, dict((k, photo.get(k)) for k in ("src", "caption", "alt", "outlet", "url")), pkey(photo.get("orig") or ""),
+    if photo and photo.get("src") and matches(photo.get("caption"), photo.get("alt")) and not unfit_photo(photo.get("caption"), photo.get("alt"), photo.get("orig")) and not (photo.get("caption") or "").startswith("From: "):
+        cands.append((2, -1, dict((k, photo.get(k)) for k in ("src", "orig", "caption", "alt", "outlet", "url")), pkey(photo.get("orig") or ""),
                       capkey(re.sub(r"^From: .*", "", photo.get("caption") or ""))))
     reel, ik, ck, outlets = [], set(), set(), {}
     for rank, order, e, k, c in sorted(cands, key=lambda x: (x[0], x[1])):
@@ -671,6 +726,9 @@ def build_story(g, now, imgdir, prev):
     # A FRESH PICTURE ON A BREAKING STORY: a new photo from the story's reports every PHOTO_ROTATE_MINUTES
     photo, photo_seen = pick_photo(key, [lead] + [x for x in news_reps if x is not lead], old, imgdir, datetime.now(timezone.utc), info)
     photos = pick_reel(key, [lead] + [x for x in news_reps if x is not lead], photo, imgdir, info)
+    # the main photo is the reel's first: the headline's own picture (EVERY PHOTO MATCHES THE HEADLINE, Nov 4, 2026)
+    if photos:
+        photo = dict(photos[0], since=(photo or {}).get("since") if (photo or {}).get("src") == photos[0]["src"] else datetime.now(timezone.utc).isoformat())
     newest = reps[0][0]
     # What each newsroom reports: every outlet's own lead sentence (og:description), side by side
     with ThreadPoolExecutor(6) as ex:
@@ -4024,6 +4082,9 @@ def event_day_stories(bigweek, items, now, imgdir, prev):
         # A FRESH PICTURE ON A BREAKING STORY: a new photo from the newest reports every PHOTO_ROTATE_MINUTES
         photo, photo_seen = pick_photo(key, [lead] + [x for x in free if x is not lead], old, imgdir, now, info)
         photos = pick_reel(key, [lead] + [x for x in free if x is not lead], photo, imgdir, info)
+        # the main photo is the reel's first: the headline's own picture (EVERY PHOTO MATCHES THE HEADLINE, Nov 4, 2026)
+        if photos:
+            photo = dict(photos[0], since=(photo or {}).get("since") if (photo or {}).get("src") == photos[0]["src"] else datetime.now(timezone.utc).isoformat())
         # the reports: the newest first, then the Canadian angle (Canadian reports on the event), then the rest
         can = [r for r in rows if CAN_TIE.search(r[2]) and r is not lead]
         rest = [r for r in rows if r is not lead and r not in can]
