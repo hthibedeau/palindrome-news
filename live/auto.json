@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-05T10:19:55.655747+00:00",
- "checkedLabel": "Thu 5:19 a.m.",
+ "checked": "2026-11-05T10:25:49.343484+00:00",
+ "checkedLabel": "Thu 5:25 a.m.",
  "stories": [
   {
    "key": "top",
@@ -57,13 +57,31 @@
  ],
  "wire": [
   [
-   "Thu 5:17 a.m.",
+   "Thu 5:23 a.m.",
    "Latest",
    "Iran says U.S. election results show Americans reject the war",
    "CBS News",
    "https://www.cbsnews.com/live-updates/iran-war-us-trump-midterms-strait-of-hormuz/",
-   "2026-11-05T10:17:43+00:00",
-   14
+   "2026-11-05T10:23:08+00:00",
+   12
+  ],
+  [
+   "Thu 5:18 a.m.",
+   "World",
+   "Planes diverted as bomb threats to commercial flights reported across Europe – live",
+   "The Guardian",
+   "https://www.theguardian.com/world/live/2026/nov/05/aer-lingus-plane-bomb-threat-europe-latest-news-updates",
+   "2026-11-05T10:18:48+00:00",
+   2
+  ],
+  [
+   "Thu 5:18 a.m.",
+   "U.S.",
+   "Ohio and Texas went from red to blue in the midterms, but may not stay that way in 2028",
+   "CBC News",
+   "https://www.cbc.ca/news/world/texas-ohio-midterm-results-9.7409481",
+   "2026-11-05T10:18:07.533000+00:00",
+   1
   ],
   [
    "Thu 5:15 a.m.",
@@ -100,15 +118,6 @@
    "https://www.theguardian.com/us-news/live/2026/nov/05/midterm-elections-live-latest-updates-mississippi-senate-race",
    "2026-11-05T10:01:08+00:00",
    3
-  ],
-  [
-   "Thu 5:01 a.m.",
-   "World",
-   "Multiple planes diverted amid bomb threats to commercial flights across Europe – live",
-   "The Guardian",
-   "https://www.theguardian.com/world/live/2026/nov/05/aer-lingus-plane-bomb-threat-europe-latest-news-updates",
-   "2026-11-05T10:01:05+00:00",
-   2
   ],
   [
    "Thu 5:00 a.m.",
@@ -271,15 +280,6 @@
    "https://www.thestar.com/news/world/asia/japan-s-sony-reports-a-hefty-profit-on-the-back-of-its-blockbuster-spider-man-movie/article_ff7302c8-196a-52f6-b714-838952fe81f7.html",
    "2026-11-05T09:47:57+00:00",
    3
-  ],
-  [
-   "Thu 4:47 a.m.",
-   "World",
-   "Met settles claim brought by Palestine activist ‘treated like a criminal’ during arrest",
-   "The Guardian",
-   "https://www.theguardian.com/world/2026/nov/05/met-settles-claim-brought-by-palestine-activist-treated-like-a-criminal-during-arrest",
-   "2026-11-05T09:47:01+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -311,10 +311,10 @@
  ],
  "leads": [
   {
-   "score": 33,
+   "score": 30,
    "title": "Help with cost of living expected to be Mark Carney’s top priority in federal budget",
    "url": "https://www.thestar.com/politics/federal/help-with-cost-of-living-expected-to-be-mark-carney-s-top-priority-in-federal-budget/article_fcdc0ccf-8f96-460b-a333-2c6024b42c6e.html",
-   "outlets": 17,
+   "outlets": 12,
    "why": [
     "National Newswatch #1",
     "National Newswatch #13",
@@ -328,7 +328,7 @@
    "score": 21,
    "title": "Budget 2026: Affordability Tops Canadians’ Concerns as Threats from Trump and AI Rise, But Few Expect the Budget to Make Their Lives Better",
    "url": "https://abacusdata.ca/budget-2026-affordability-tops-canadians-concerns-as-threats-from-trump-and-ai-rise-but-few-expect-the-budget-to-make-their-lives-better/",
-   "outlets": 24,
+   "outlets": 23,
    "why": [
     "National Newswatch #19",
     "National Newswatch #20"
@@ -347,18 +347,6 @@
   },
   {
    "score": 19,
-   "title": "Mark Carney, the Commonwealth and Variable Geometry",
-   "url": "https://www.policymagazine.ca/mark-carney-the-commonwealth-and-variable-geometry/",
-   "outlets": 10,
-   "why": [
-    "National Newswatch #9",
-    "National Newswatch #10",
-    "CBC News front #2"
-   ],
-   "theme": ""
-  },
-  {
-   "score": 19,
    "title": "Ohio and Texas went from red to blue in the midterms, but may not stay that way in 2028",
    "url": "https://www.cbc.ca/news/world/texas-ohio-midterm-results-9.7409481",
    "outlets": 14,
@@ -368,10 +356,22 @@
    "theme": ""
   },
   {
+   "score": 18,
+   "title": "Mark Carney, the Commonwealth and Variable Geometry",
+   "url": "https://www.policymagazine.ca/mark-carney-the-commonwealth-and-variable-geometry/",
+   "outlets": 9,
+   "why": [
+    "National Newswatch #9",
+    "National Newswatch #10",
+    "CBC News front #2"
+   ],
+   "theme": ""
+  },
+  {
    "score": 17,
    "title": "Hong Kong activist Joshua Wong sentenced to 10 more years in prison",
    "url": "https://www.timescolonist.com/world-news/hong-kong-activist-joshua-wong-sentenced-to-10-more-years-in-prison-12982052",
-   "outlets": 20,
+   "outlets": 19,
    "why": [],
    "theme": ""
   },
@@ -392,22 +392,22 @@
    "theme": ""
   },
   {
-   "score": 10,
-   "title": "Senior Democratic congressman says party 'going to put an end' to Trump's tariffs",
-   "url": "https://www.cbc.ca/news/politics/trump-midterms-democrats-victory-carney-trade-9.7408838",
-   "outlets": 6,
-   "why": [
-    "National Newswatch #17"
-   ],
-   "theme": ""
-  },
-  {
    "score": 9,
    "title": "Majority of Canadians want fewer immigrants, temporary residents in 2027: Nanos",
    "url": "https://www.ctvnews.ca/canada/article/majority-of-canadians-want-fewer-immigrants-temporary-residents-in-2027-nanos/",
    "outlets": 2,
    "why": [
     "National Newswatch #2"
+   ],
+   "theme": ""
+  },
+  {
+   "score": 9,
+   "title": "It’s Morning in America. By all Means, Blame Canada.",
+   "url": "https://www.policymagazine.ca/its-morning-in-america-by-all-means-blame-canada/",
+   "outlets": 4,
+   "why": [
+    "National Newswatch #7"
    ],
    "theme": ""
   }
@@ -515,16 +515,6 @@
   },
   {
    "t": "Thu 4:00 a.m.",
-   "iso": "2026-11-05T09:00:13+00:00",
-   "region": "National",
-   "title": "Ghana thanks Carney for working to fix a ‘rigged global system’ for African countries",
-   "summary": "OTTAWA — Ghana's head of state praised Canada this week for advocating against what he called a \"rigged global system\" that keeps African countries trapped by debt and mired in climate chaos.",
-   "outlet": "CityNews, Winnipeg Free Press",
-   "url": "https://toronto.citynews.ca/2026/11/05/ghana-thanks-carney-for-working-to-fix-a-rigged-global-system-for-african-countries/",
-   "img": "https://toronto.citynews.ca/wp-content/blogs.dir/sites/10/2026/11/5eaa0a29dcfdf02bac54562efffa70a20f1e5b20a7d48c487e3d73ef3d598f47.jpg"
-  },
-  {
-   "t": "Thu 4:00 a.m.",
    "iso": "2026-11-05T09:00:09+00:00",
    "region": "National",
    "title": "Here’s what you need to know as the Liberals prepare to table Budget 2026",
@@ -597,16 +587,16 @@
      "\\b(federal|Champagne|Carney|Ottawa|Liberals?|PBO|parliamentary budget officer|deficit|fall budget|budget day|finance minister|tax breaks?)\\b"
     ],
     "score": 100,
-    "outlets": 8,
-    "carriers": 20,
-    "independent": 8,
+    "outlets": 7,
+    "carriers": 17,
+    "independent": 7,
     "tag": "Breaking",
-    "title": "Ottawa to Table Budget 2026 This Afternoon",
-    "url": "https://vocm.com/2026/11/05/315712/",
-    "outlet": "VOCM",
-    "t": "Thu 4:53 a.m.",
-    "iso": "2026-11-05T09:53:31+00:00",
-    "summary": "The federal budget comes down this afternoon and Prime Minister Mark Carney has already signaled - by choosing...",
+    "title": "In the news today: Liberals table budget, blue wave reaction, Kutryk spacewalk",
+    "url": "https://www.timescolonist.com/national-news/in-the-news-today-liberals-table-budget-blue-wave-reaction-kutryk-spacewalk-12982244",
+    "outlet": "Times Colonist",
+    "t": "Thu 4:20 a.m.",
+    "iso": "2026-11-05T09:20:25+00:00",
+    "summary": "Here is a roundup of stories from The Canadian Press designed to bring you up to speed … Here's what you need to know as the Liberals prepare to table Budget 2026 The federal Liberals will lay out next steps in their plan to fortify Canada's ec",
     "first": {
      "outlet": "APTN News",
      "url": "https://www.aptnnews.ca/national-news/afn-presses-ottawa-for-funded-plan-to-close-376b-infrastructure-gap-in-upcoming-federal-budget/",
@@ -616,26 +606,18 @@
     },
     "newest": "2026-11-05T10:00:00+00:00",
     "photo": {
-     "src": "live/img/event-federal-budget-2026-11-05-7358b38c78.jpg",
-     "orig": "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/900/files/2019/08/Parliament-Federal-Ottawa-Canada.jpg",
-     "caption": "From: Ottawa to Table Budget 2026 This Afternoon. — via VOCM",
-     "alt": "Ottawa to Table Budget 2026 This Afternoon",
-     "outlet": "VOCM",
-     "url": "https://vocm.com/2026/11/05/315712/",
-     "since": "2026-11-05T10:09:55.933640+00:00"
+     "src": "live/img/event-federal-budget-2026-11-05-a36fbf6423.jpg",
+     "orig": "https://www.narcity.com/media-library/a-look-at-what-s-in-the-news-for-today.jpg?id=68601048&width=1200&height=600&coordinates=0%2C155%2C0%2C155",
+     "caption": "From: In the news today: Liberals table budget, blue wave reaction, Kutryk spacewalk. — via Narcity",
+     "alt": "In the news today: Liberals table budget, blue wave reaction, Kutryk spacewalk",
+     "outlet": "Narcity",
+     "url": "https://www.narcity.com/a-look-at-whats-in-the-news-for-today-2678295584",
+     "since": "2026-11-05T10:30:16.324912+00:00"
     },
     "photo_seen": [
      "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/900/files/2019/08/Parliament-Federal-Ottawa-Canada.jpg"
     ],
     "photos": [
-     {
-      "src": "live/img/event-federal-budget-2026-11-05-7358b38c78.jpg",
-      "orig": "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/900/files/2019/08/Parliament-Federal-Ottawa-Canada.jpg",
-      "caption": "From: Ottawa to Table Budget 2026 This Afternoon. — via VOCM",
-      "alt": "Ottawa to Table Budget 2026 This Afternoon",
-      "outlet": "VOCM",
-      "url": "https://vocm.com/2026/11/05/315712/"
-     },
      {
       "src": "live/img/event-federal-budget-2026-11-05-a36fbf6423.jpg",
       "orig": "https://www.narcity.com/media-library/a-look-at-what-s-in-the-news-for-today.jpg?id=68601048&width=1200&height=600&coordinates=0%2C155%2C0%2C155",
@@ -647,12 +629,12 @@
     ],
     "reports": [
      {
-      "t": "Thu 4:53 a.m.",
-      "iso": "2026-11-05T09:53:31+00:00",
-      "outlet": "VOCM",
-      "title": "Ottawa to Table Budget 2026 This Afternoon",
-      "url": "https://vocm.com/2026/11/05/315712/",
-      "desc": "The federal budget comes down this afternoon and Prime Minister Mark Carney has already signaled - by choosing..."
+      "t": "Thu 4:20 a.m.",
+      "iso": "2026-11-05T09:20:25+00:00",
+      "outlet": "Times Colonist",
+      "title": "In the news today: Liberals table budget, blue wave reaction, Kutryk spacewalk",
+      "url": "https://www.timescolonist.com/national-news/in-the-news-today-liberals-table-budget-blue-wave-reaction-kutryk-spacewalk-12982244",
+      "desc": "Here is a roundup of stories from The Canadian Press designed to bring you up to speed … Here's what you need to know as the Liberals prepare to table Budget 2026 The federal Liberals will lay out next steps in their plan to fortify Canada's ec"
      },
      {
       "t": "Thu 4:20 a.m.",
@@ -665,14 +647,6 @@
      {
       "t": "Thu 4:20 a.m.",
       "iso": "2026-11-05T09:20:25+00:00",
-      "outlet": "Times Colonist",
-      "title": "In the news today: Liberals table budget, blue wave reaction, Kutryk spacewalk",
-      "url": "https://www.timescolonist.com/national-news/in-the-news-today-liberals-table-budget-blue-wave-reaction-kutryk-spacewalk-12982244",
-      "desc": "Here is a roundup of stories from The Canadian Press designed to bring you up to speed … Here's what you need to know as the Liberals prepare to table Budget 2026 The federal Liberals will lay out next steps in their plan to fortify Canada's ec"
-     },
-     {
-      "t": "Thu 4:20 a.m.",
-      "iso": "2026-11-05T09:20:25+00:00",
       "outlet": "The Canadian Press (via Winnipeg Free Press)",
       "title": "In the news today: Liberals table budget, blue wave reaction, Kutryk spacewalk",
       "url": "https://www.winnipegfreepress.com/canada/2026/11/05/in-the-news-today-liberals-table-budget-blue-wave-reaction-kutryk-spacewalk",
@@ -681,18 +655,26 @@
      {
       "t": "Thu 4:20 a.m.",
       "iso": "2026-11-05T09:20:25+00:00",
-      "outlet": "Medicine Hat News",
-      "title": "In the news today: Liberals table budget, blue wave reaction, Kutryk spacewalk",
-      "url": "https://medicinehatnews.com/news/national-news/2026/11/05/in-the-news-today-liberals-table-budget-blue-wave-reaction-kutryk-spacewalk/",
-      "desc": "Here is a roundup of stories from The Canadian Press designed to bring you up to speed … Here’s what you need to know as the Liberals prepare to table Budget 2026 The federal Liberals will lay out next steps in their plan to fortify Canada’s economy when the 2026 budget is tabled today. Finance"
-     },
-     {
-      "t": "Thu 4:20 a.m.",
-      "iso": "2026-11-05T09:20:25+00:00",
       "outlet": "Lethbridge Herald",
       "title": "In the news today: Liberals table budget, blue wave reaction, Kutryk spacewalk",
       "url": "https://lethbridgeherald.com/news/national-news/2026/11/05/in-the-news-today-liberals-table-budget-blue-wave-reaction-kutryk-spacewalk/",
       "desc": "Here is a roundup of stories from The Canadian Press designed to bring you up to speed … Here's what you need to know as the Liberals prepare to table"
+     },
+     {
+      "t": "Thu 4:20 a.m.",
+      "iso": "2026-11-05T09:20:25+00:00",
+      "outlet": "CKOM / PAnow",
+      "title": "In the news today: Liberals table budget, blue wave reaction, Kutryk spacewalk",
+      "url": "https://www.ckom.com/2026/11/05/in-the-news-today-liberals-table-budget-blue-wave-reaction-kutryk-spacewalk/",
+      "desc": "Here is a roundup of stories from The Canadian Press designed to bring you up to speed … Here's what you need to know as the Liberals prepare to table Budget 2026 The federal Liberals will lay out next steps in their plan to fortify Canada's economy wh..."
+     },
+     {
+      "t": "Thu 4:00 a.m.",
+      "iso": "2026-11-05T09:00:09+00:00",
+      "outlet": "CityNews Winnipeg",
+      "title": "Here’s what you need to know as the Liberals prepare to table Budget 2026",
+      "url": "https://winnipeg.citynews.ca/2026/11/05/heres-what-you-need-to-know-as-the-liberals-prepare-to-table-budget-2026/",
+      "desc": "OTTAWA — The federal Liberals are teeing up Thursday's budget as the government's next step toward fixing long-standing problems facing Canada's economy."
      },
      {
       "t": "Thu 5:00 a.m.",
@@ -716,7 +698,7 @@
       "outlet": "National Post",
       "title": "Carney’s 2026 federal budget to show much lower deficit, new figures suggest",
       "url": "https://nationalpost.com/news/canadian-politics/mark-carney-federal-budget-deficit-figures/",
-      "desc": ""
+      "desc": "New Finance Department data suggest that Ottawa is on pace to post a deficit much lower than the $66.9-billion predicted in the spring economic update"
      },
      {
       "t": "Wed 2:13 p.m.",
@@ -724,38 +706,38 @@
       "outlet": "CP24",
       "title": "Budget 2026 is about giving Canada a 'strong footing': Champagne",
       "url": "https://www.cp24.com/politics/2026/11/04/budget-2026-is-about-giving-canada-a-strong-footing-champagne/",
-      "desc": ""
+      "desc": "Finance Minister François-Philippe Champagne says Thursday’s federal budget is about giving Canada a “strong footing” to navigate a more volatile world."
      },
      {
-      "t": "Tue 6:15 p.m.",
-      "iso": "2026-11-03T23:15:07+00:00",
-      "outlet": "APTN News",
-      "title": "AFN presses Ottawa for funded plan to close $376B infrastructure gap in upcoming federal budget",
-      "url": "https://www.aptnnews.ca/national-news/afn-presses-ottawa-for-funded-plan-to-close-376b-infrastructure-gap-in-upcoming-federal-budget/",
-      "desc": ""
-     },
-     {
-      "t": "Thu 4:20 a.m.",
-      "iso": "2026-11-05T09:20:25+00:00",
-      "outlet": "CKOM / PAnow",
-      "title": "In the news today: Liberals table budget, blue wave reaction, Kutryk spacewalk",
-      "url": "https://www.ckom.com/2026/11/05/in-the-news-today-liberals-table-budget-blue-wave-reaction-kutryk-spacewalk/",
-      "desc": "Here is a roundup of stories from The Canadian Press designed to bring you up to speed … Here's what you need to know as the Liberals prepare to table Budget 2026 The federal Liberals will lay out next steps in their plan to fortify Canada's economy wh..."
+      "t": "Wed 11:56 a.m.",
+      "iso": "2026-11-04T16:56:22+00:00",
+      "outlet": "CityNews Ottawa",
+      "title": "Budget 2026 is about giving Canada a ‘strong footing’: Champagne",
+      "url": "https://ottawa.citynews.ca/2026/11/04/budget-2026-is-about-giving-canada-a-strong-footing-champagne/",
+      "desc": "Finance Minister François-Philippe Champagne says Thursday’s federal budget is about giving Canada a “strong footing” to navigate a more volatile world. The Liberal government’s 2026 budget is set to land a little over a day after voters delivered a sharp rebuke to President Donald Trump and the Rep"
      },
      {
       "t": "Thu 4:00 a.m.",
       "iso": "2026-11-05T09:00:09+00:00",
-      "outlet": "CityNews Winnipeg",
+      "outlet": "CityNews Halifax",
       "title": "Here’s what you need to know as the Liberals prepare to table Budget 2026",
-      "url": "https://winnipeg.citynews.ca/2026/11/05/heres-what-you-need-to-know-as-the-liberals-prepare-to-table-budget-2026/",
+      "url": "https://halifax.citynews.ca/2026/11/05/heres-what-you-need-to-know-as-the-liberals-prepare-to-table-budget-2026/",
       "desc": "OTTAWA — The federal Liberals are teeing up Thursday's budget as the government's next step toward fixing long-standing problems facing Canada's economy."
      },
      {
       "t": "Thu 4:00 a.m.",
       "iso": "2026-11-05T09:00:09+00:00",
-      "outlet": "CityNews Vancouver",
+      "outlet": "CityNews Edmonton",
       "title": "Here’s what you need to know as the Liberals prepare to table Budget 2026",
-      "url": "https://vancouver.citynews.ca/2026/11/05/heres-what-you-need-to-know-as-the-liberals-prepare-to-table-budget-2026/",
+      "url": "https://edmonton.citynews.ca/2026/11/05/heres-what-you-need-to-know-as-the-liberals-prepare-to-table-budget-2026/",
+      "desc": "OTTAWA — The federal Liberals are teeing up Thursday's budget as the government's next step toward fixing long-standing problems facing Canada's economy."
+     },
+     {
+      "t": "Thu 4:00 a.m.",
+      "iso": "2026-11-05T09:00:09+00:00",
+      "outlet": "CityNews",
+      "title": "Here’s what you need to know as the Liberals prepare to table Budget 2026",
+      "url": "https://toronto.citynews.ca/2026/11/05/heres-what-you-need-to-know-as-the-liberals-prepare-to-table-budget-2026/",
       "desc": "OTTAWA — The federal Liberals are teeing up Thursday's budget as the government's next step toward fixing long-standing problems facing Canada's economy."
      }
     ],
@@ -794,12 +776,12 @@
       "copies": []
      },
      {
-      "t": "Thu 4:53 a.m.",
+      "t": "Thu 4:20 a.m.",
       "primary": false,
-      "outlet": "VOCM",
-      "title": "Ottawa to Table Budget 2026 This Afternoon",
-      "url": "https://vocm.com/2026/11/05/315712/",
-      "desc": "The federal budget comes down this afternoon and Prime Minister Mark Carney has already signaled - by choosing...",
+      "outlet": "Times Colonist",
+      "title": "In the news today: Liberals table budget, blue wave reaction, Kutryk spacewalk",
+      "url": "https://www.timescolonist.com/national-news/in-the-news-today-liberals-table-budget-blue-wave-reaction-kutryk-spacewalk-12982244",
+      "desc": "Here is a roundup of stories from The Canadian Press designed to bring you up to speed … Here's what you need to know as the Liberals prepare to table Budget 2026 The federal Liberals will lay out next steps in their plan to fortify Canada's ec",
       "wire": "",
       "by": [],
       "copies": []
@@ -818,17 +800,6 @@
      {
       "t": "Thu 4:20 a.m.",
       "primary": false,
-      "outlet": "Times Colonist",
-      "title": "In the news today: Liberals table budget, blue wave reaction, Kutryk spacewalk",
-      "url": "https://www.timescolonist.com/national-news/in-the-news-today-liberals-table-budget-blue-wave-reaction-kutryk-spacewalk-12982244",
-      "desc": "Here is a roundup of stories from The Canadian Press designed to bring you up to speed … Here's what you need to know as the Liberals prepare to table Budget 2026 The federal Liberals will lay out next steps in their plan to fortify Canada's ec",
-      "wire": "",
-      "by": [],
-      "copies": []
-     },
-     {
-      "t": "Thu 4:20 a.m.",
-      "primary": false,
       "outlet": "The Canadian Press (via Winnipeg Free Press)",
       "title": "In the news today: Liberals table budget, blue wave reaction, Kutryk spacewalk",
       "url": "https://www.winnipegfreepress.com/canada/2026/11/05/in-the-news-today-liberals-table-budget-blue-wave-reaction-kutryk-spacewalk",
@@ -840,10 +811,10 @@
      {
       "t": "Thu 4:20 a.m.",
       "primary": false,
-      "outlet": "Medicine Hat News",
+      "outlet": "Lethbridge Herald",
       "title": "In the news today: Liberals table budget, blue wave reaction, Kutryk spacewalk",
-      "url": "https://medicinehatnews.com/news/national-news/2026/11/05/in-the-news-today-liberals-table-budget-blue-wave-reaction-kutryk-spacewalk/",
-      "desc": "Here is a roundup of stories from The Canadian Press designed to bring you up to speed … Here’s what you need to know as the Liberals prepare to table Budget 2026 The federal Liberals will lay out next steps in their plan to fortify Canada’s economy when the 2026 budget is tabled today. Finance",
+      "url": "https://lethbridgeherald.com/news/national-news/2026/11/05/in-the-news-today-liberals-table-budget-blue-wave-reaction-kutryk-spacewalk/",
+      "desc": "Here is a roundup of stories from The Canadian Press designed to bring you up to speed … Here's what you need to know as the Liberals prepare to table",
       "wire": "",
       "by": [],
       "copies": []
@@ -851,10 +822,21 @@
      {
       "t": "Thu 4:20 a.m.",
       "primary": false,
-      "outlet": "Lethbridge Herald",
+      "outlet": "CKOM / PAnow",
       "title": "In the news today: Liberals table budget, blue wave reaction, Kutryk spacewalk",
-      "url": "https://lethbridgeherald.com/news/national-news/2026/11/05/in-the-news-today-liberals-table-budget-blue-wave-reaction-kutryk-spacewalk/",
-      "desc": "Here is a roundup of stories from The Canadian Press designed to bring you up to speed … Here's what you need to know as the Liberals prepare to table",
+      "url": "https://www.ckom.com/2026/11/05/in-the-news-today-liberals-table-budget-blue-wave-reaction-kutryk-spacewalk/",
+      "desc": "Here is a roundup of stories from The Canadian Press designed to bring you up to speed … Here's what you need to know as the Liberals prepare to table Budget 2026 The federal Liberals will lay out next steps in their plan to fortify Canada's economy wh...",
+      "wire": "",
+      "by": [],
+      "copies": []
+     },
+     {
+      "t": "Thu 4:00 a.m.",
+      "primary": false,
+      "outlet": "CityNews Winnipeg",
+      "title": "Here’s what you need to know as the Liberals prepare to table Budget 2026",
+      "url": "https://winnipeg.citynews.ca/2026/11/05/heres-what-you-need-to-know-as-the-liberals-prepare-to-table-budget-2026/",
+      "desc": "OTTAWA — The federal Liberals are teeing up Thursday's budget as the government's next step toward fixing long-standing problems facing Canada's economy.",
       "wire": "",
       "by": [],
       "copies": []
@@ -887,7 +869,7 @@
       "outlet": "National Post",
       "title": "Carney’s 2026 federal budget to show much lower deficit, new figures suggest",
       "url": "https://nationalpost.com/news/canadian-politics/mark-carney-federal-budget-deficit-figures/",
-      "desc": "",
+      "desc": "New Finance Department data suggest that Ottawa is on pace to post a deficit much lower than the $66.9-billion predicted in the spring economic update",
       "wire": "",
       "by": [],
       "copies": []
@@ -898,29 +880,18 @@
       "outlet": "CP24",
       "title": "Budget 2026 is about giving Canada a 'strong footing': Champagne",
       "url": "https://www.cp24.com/politics/2026/11/04/budget-2026-is-about-giving-canada-a-strong-footing-champagne/",
-      "desc": "",
+      "desc": "Finance Minister François-Philippe Champagne says Thursday’s federal budget is about giving Canada a “strong footing” to navigate a more volatile world.",
       "wire": "",
       "by": [],
       "copies": []
      },
      {
-      "t": "Tue 6:15 p.m.",
+      "t": "Wed 11:56 a.m.",
       "primary": false,
-      "outlet": "APTN News",
-      "title": "AFN presses Ottawa for funded plan to close $376B infrastructure gap in upcoming federal budget",
-      "url": "https://www.aptnnews.ca/national-news/afn-presses-ottawa-for-funded-plan-to-close-376b-infrastructure-gap-in-upcoming-federal-budget/",
-      "desc": "",
-      "wire": "",
-      "by": [],
-      "copies": []
-     },
-     {
-      "t": "Thu 4:20 a.m.",
-      "primary": false,
-      "outlet": "CKOM / PAnow",
-      "title": "In the news today: Liberals table budget, blue wave reaction, Kutryk spacewalk",
-      "url": "https://www.ckom.com/2026/11/05/in-the-news-today-liberals-table-budget-blue-wave-reaction-kutryk-spacewalk/",
-      "desc": "Here is a roundup of stories from The Canadian Press designed to bring you up to speed … Here's what you need to know as the Liberals prepare to table Budget 2026 The federal Liberals will lay out next steps in their plan to fortify Canada's economy wh...",
+      "outlet": "CityNews Ottawa",
+      "title": "Budget 2026 is about giving Canada a ‘strong footing’: Champagne",
+      "url": "https://ottawa.citynews.ca/2026/11/04/budget-2026-is-about-giving-canada-a-strong-footing-champagne/",
+      "desc": "Finance Minister François-Philippe Champagne says Thursday’s federal budget is about giving Canada a “strong footing” to navigate a more volatile world. The Liberal government’s 2026 budget is set to land a little over a day after voters delivered a sharp rebuke to President Donald Trump and the Rep",
       "wire": "",
       "by": [],
       "copies": []
@@ -928,9 +899,9 @@
      {
       "t": "Thu 4:00 a.m.",
       "primary": false,
-      "outlet": "CityNews Winnipeg",
+      "outlet": "CityNews Halifax",
       "title": "Here’s what you need to know as the Liberals prepare to table Budget 2026",
-      "url": "https://winnipeg.citynews.ca/2026/11/05/heres-what-you-need-to-know-as-the-liberals-prepare-to-table-budget-2026/",
+      "url": "https://halifax.citynews.ca/2026/11/05/heres-what-you-need-to-know-as-the-liberals-prepare-to-table-budget-2026/",
       "desc": "OTTAWA — The federal Liberals are teeing up Thursday's budget as the government's next step toward fixing long-standing problems facing Canada's economy.",
       "wire": "",
       "by": [],
@@ -939,9 +910,20 @@
      {
       "t": "Thu 4:00 a.m.",
       "primary": false,
-      "outlet": "CityNews Vancouver",
+      "outlet": "CityNews Edmonton",
       "title": "Here’s what you need to know as the Liberals prepare to table Budget 2026",
-      "url": "https://vancouver.citynews.ca/2026/11/05/heres-what-you-need-to-know-as-the-liberals-prepare-to-table-budget-2026/",
+      "url": "https://edmonton.citynews.ca/2026/11/05/heres-what-you-need-to-know-as-the-liberals-prepare-to-table-budget-2026/",
+      "desc": "OTTAWA — The federal Liberals are teeing up Thursday's budget as the government's next step toward fixing long-standing problems facing Canada's economy.",
+      "wire": "",
+      "by": [],
+      "copies": []
+     },
+     {
+      "t": "Thu 4:00 a.m.",
+      "primary": false,
+      "outlet": "CityNews",
+      "title": "Here’s what you need to know as the Liberals prepare to table Budget 2026",
+      "url": "https://toronto.citynews.ca/2026/11/05/heres-what-you-need-to-know-as-the-liberals-prepare-to-table-budget-2026/",
       "desc": "OTTAWA — The federal Liberals are teeing up Thursday's budget as the government's next step toward fixing long-standing problems facing Canada's economy.",
       "wire": "",
       "by": [],
@@ -954,18 +936,19 @@
     "canada": "canadian",
     "canus": false,
     "incoherent": false,
-    "popular": 4,
+    "popular": 0,
     "us_election": false,
-    "fronts": 3,
-    "fronts_ca": 3,
+    "fronts": 4,
+    "fronts_ca": 4,
     "fronts_who": [
+     "CTV News",
      "Toronto Star",
      "National Post",
      "The Globe and Mail"
     ],
     "judgment": "national",
     "judgment_why": "National: Federal budget is today.",
-    "weight": 140,
+    "weight": 135,
     "videos": [
      {
       "net": "APTN News",
@@ -984,18 +967,18 @@
       "up": ""
      },
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=KRLXIbiyr8I",
-      "title": "What to expect from Carney government's second budget",
-      "img": "https://i.ytimg.com/vi/KRLXIbiyr8I/hqdefault.jpg",
+      "net": "CPAC",
+      "url": "https://www.youtube.com/watch?v=ngKh9FxWbQU",
+      "title": "Liberal MPs talk U.S. midterm results, federal budget – November 4, 2026",
+      "img": "https://i.ytimg.com/vi/ngKh9FxWbQU/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=pm1MNMbBzEM",
-      "title": "Canada immigration levels to be updated in Carney government's federal budget, sources say",
-      "img": "https://i.ytimg.com/vi/pm1MNMbBzEM/hqdefault.jpg",
+      "net": "CPAC",
+      "url": "https://www.youtube.com/watch?v=NJ-ZjNWcTbw",
+      "title": "Pierre Poilievre talks U.S. midterms, expectations for budget – November 4, 2026",
+      "img": "https://i.ytimg.com/vi/NJ-ZjNWcTbw/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1004,25 +987,26 @@
   ],
   "considered": [
    {
-    "title": "Ottawa to Table Budget 2026 This Afternoon",
-    "url": "https://vocm.com/2026/11/05/315712/",
+    "title": "In the news today: Liberals table budget, blue wave reaction, Kutryk spacewalk",
+    "url": "https://www.timescolonist.com/national-news/in-the-news-today-liberals-table-budget-blue-wave-reaction-kutryk-spacewalk-12982244",
     "rank": 1,
     "live": "",
-    "weight": 140,
+    "weight": 135,
     "score": 100,
-    "independent": 8,
-    "most_read": 4,
+    "independent": 7,
+    "most_read": 0,
     "canada": "canadian",
     "theme": "Federal budget",
     "top": true,
-    "fronts": 3,
+    "fronts": 4,
     "fronts_who": [
+     "CTV News",
      "Toronto Star",
      "National Post",
      "The Globe and Mail"
     ],
     "rule": "Today is the day of a major scheduled event (election day, budget day): it leads all day, with its Canadian angle",
-    "carriers": 20,
+    "carriers": 17,
     "judgment": "national",
     "why_judged": "National: Federal budget is today."
    },
@@ -1092,14 +1076,33 @@
      "BBC News"
     ],
     "rule": "Big international story, on every front page",
-    "carriers": 20,
+    "carriers": 19,
     "judgment": "regional",
     "why_judged": "Regional: a single incident touching a few people; carried across the country (8 cities)."
    },
    {
+    "title": "NASA astronauts cast US election votes from the International Space Station",
+    "url": "https://www.euronews.com/2026/11/05/nasa-astronauts-cast-us-election-votes-from-the-international-space-station",
+    "rank": 5,
+    "live": "",
+    "weight": 31.0,
+    "score": 7,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "canadian",
+    "theme": "",
+    "top": false,
+    "fronts": 0,
+    "fronts_who": [],
+    "rule": "Canadian, still developing",
+    "carriers": 4,
+    "judgment": "national",
+    "why_judged": "National: affects many people; carried across the country (national desks)."
+   },
+   {
     "title": "Officials release name of US Marine who died after training incident in Japan",
     "url": "https://abcnews.com/International/officials-release-us-marine-died-after-training-incident/story?id=137868269",
-    "rank": 5,
+    "rank": 6,
     "live": "",
     "weight": 17.5,
     "score": 7,
@@ -1118,32 +1121,33 @@
    {
     "title": "Help with cost of living expected to be Mark Carney's top priority in federal budget",
     "url": "https://www.thestar.com/politics/federal/help-with-cost-of-living-expected-to-be-mark-carney-s-top-priority-in-federal-budget/article_fcdc0ccf-8f96-460b-a333-2c6024b42c6e.html",
-    "rank": 6,
+    "rank": 7,
     "live": "",
-    "weight": 67,
-    "score": 33,
-    "independent": 6,
+    "weight": 62,
+    "score": 30,
+    "independent": 4,
     "most_read": 0,
     "canada": "canadian",
     "theme": "Federal budget",
     "top": false,
-    "fronts": 2,
+    "fronts": 3,
     "fronts_who": [
+     "CTV News",
      "Toronto Star",
      "National Post"
     ],
     "rule": "Canadian and breaking",
-    "carriers": 21,
+    "carriers": 16,
     "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (6 cities)."
+    "why_judged": "National: affects many people; carried across the country (5 cities)."
    },
    {
     "title": "Judges to hear Trump's appeal of 2024 criminal hush money conviction",
     "url": "https://abcnews.com/US/judges-hear-trumps-appeal-2024-criminal-hush-money/story?id=137859786",
-    "rank": 7,
+    "rank": 8,
     "live": "",
-    "weight": 34.0,
-    "score": 10,
+    "weight": 33.0,
+    "score": 9,
     "independent": 4,
     "most_read": 0,
     "canada": "tie",
@@ -1158,27 +1162,6 @@
     "carriers": 4,
     "judgment": "national",
     "why_judged": "National: affects many people; carried across the country (national desks)."
-   },
-   {
-    "title": "Bomb threat diverts Dublin-Rome flight to France",
-    "url": "https://www.aljazeera.com/news/2026/11/5/bomb-threat-diverts-dublin-rome-flight-to-france?traffic_source=rss",
-    "rank": 8,
-    "live": "",
-    "weight": 18.5,
-    "score": 8,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 1,
-    "fronts_who": [
-     "NBC News"
-    ],
-    "rule": "No Canadian tie",
-    "carriers": 3,
-    "judgment": "regional",
-    "why_judged": "Regional: affects some people; carried by a few newsrooms."
    },
    {
     "title": "‘The grift stops now’: Democratic midterm elections sweep brings in first Indigenous governor and senator in U.S. history",
@@ -1202,12 +1185,12 @@
    {
     "title": "Here's how the U.S. midterm election results could affect Canada",
     "score": 21,
-    "why": "not built: only 1 independent report(s) (13 sites)"
+    "why": "not built: only 1 independent report(s) (11 sites)"
    },
    {
     "title": "U.S. midterm results spark joy among Canadians but trust in America remains shaky",
     "score": 21,
-    "why": "not built: only 1 independent report(s) (7 sites)"
+    "why": "not built: only 1 independent report(s) (6 sites)"
    },
    {
     "title": "Alberta Premier Smith says U.S. midterms ‘vindication’ of her approach to tariffs",
@@ -1216,8 +1199,8 @@
    },
    {
     "title": "Mark Carney, the Commonwealth and Variable Geometry",
-    "score": 19,
-    "why": "not built: only 1 independent report(s) (7 sites)"
+    "score": 18,
+    "why": "not built: only 1 independent report(s) (6 sites)"
    },
    {
     "title": "Iconic Toronto concert series UnCovered celebrates 20 years with Bee Gees and The Beach Boys",
@@ -1238,6 +1221,11 @@
     "title": "It’s Morning in America. By all Means, Blame Canada.",
     "score": 9,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Bomb threat diverts Dublin-Rome flight to France",
+    "score": 8,
+    "why": "not built: only 2 independent report(s) (3 sites)"
    }
   ],
   "moved": [],
@@ -1275,7 +1263,7 @@
      "alt": "First lady Melania Trump speaks in the Rose Garden of the White House, Oct. 19, 2026, in Washington. (AP Photo/Mark Schiefelbein, File)",
      "outlet": "CTV News",
      "url": "https://www.ctvnews.ca/world/russia-ukraine-war/article/melania-trump-to-bring-russian-and-ukrainian-representatives-to-white-house-this-week/",
-     "since": "2026-11-05T10:22:03.765048+00:00"
+     "since": "2026-11-05T10:29:08.016760+00:00"
     },
     "photo_seen": [
      "https://www.ctvnews.ca/resizer/v2/TEVAV4NCW2QHWZXJFT7J7MHVQA.jpg?smart=true&auth=45ce60b5f6c25a56b022ebb287526d1aba0add5f3ec8dabb12de0124e23be98a&width=1200&height=630"
@@ -1487,7 +1475,7 @@
      "alt": "Republicans blame Trump for midterm losses as Democrats flip Congress",
      "outlet": "Fox News",
      "url": "https://www.foxnews.com/politics/republicans-turn-trump-after-devastating-midterm-losses-hand-democrats-control-congress",
-     "since": "2026-11-05T10:22:05.631112+00:00"
+     "since": "2026-11-05T10:29:08.383033+00:00"
     },
     "photo_seen": [
      "https://static.foxnews.com/foxnews.com/content/uploads/2026/10/donald-trump-florida.jpg"
@@ -1680,22 +1668,6 @@
     "weight": 37.5,
     "videos": [
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=cExocKFNQ_c",
-      "title": "Global National: Nov. 4, 2026 | Democrats seize control of US House, Senate in midterm elections",
-      "img": "https://i.ytimg.com/vi/cExocKFNQ_c/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=0zrFGZDxhnQ",
-      "title": "Trump in for a rough night as Democrats look to sweep 2026 US midterm elections",
-      "img": "https://i.ytimg.com/vi/0zrFGZDxhnQ/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
       "net": "CBC News",
       "url": "https://www.youtube.com/watch?v=0ZwJkDEJ3Wo",
       "title": "Midterms ‘bluenami’: The exact moment Trump lost control of Congress | About That",
@@ -1710,138 +1682,181 @@
       "img": "https://i.ytimg.com/vi/HOKW9pt50DY/hqdefault.jpg",
       "rec": false,
       "up": ""
+     },
+     {
+      "net": "CBS News",
+      "url": "https://www.youtube.com/watch?v=qvBuLeVJ7TM",
+      "title": "Voters rebuke Trump's agenda, carrying Democrats to House, Senate control",
+      "img": "https://i.ytimg.com/vi/qvBuLeVJ7TM/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "Global News",
+      "url": "https://www.youtube.com/watch?v=cExocKFNQ_c",
+      "title": "Global National: Nov. 4, 2026 | Democrats seize control of US House, Senate in midterm elections",
+      "img": "https://i.ytimg.com/vi/cExocKFNQ_c/hqdefault.jpg",
+      "rec": false,
+      "up": ""
      }
     ]
    },
    {
-    "key": "auto-ab582672",
+    "key": "auto-ffe4972f",
     "words": [
-     "marine",
-     "japan"
+     "agency",
+     "space",
+     "nasa"
     ],
     "score": 7,
     "outlets": 3,
-    "carriers": 3,
+    "carriers": 4,
     "tag": "Developing",
-    "title": "Officials release name of US Marine who died after training incident in Japan",
-    "url": "https://abcnews.com/International/officials-release-us-marine-died-after-training-incident/story?id=137868269",
-    "outlet": "ABC News",
-    "t": "Thu 4:29 a.m.",
-    "iso": "2026-11-05T09:29:23+00:00",
-    "summary": "Lance Cpl. Devin J. Hernandez, 25, of Maryland, died on Tuesday, officials said.",
+    "title": "NASA astronauts cast US election votes from the International Space Station",
+    "url": "https://www.euronews.com/2026/11/05/nasa-astronauts-cast-us-election-votes-from-the-international-space-station",
+    "outlet": "Euronews",
+    "t": "Thu 3:34 a.m.",
+    "iso": "2026-11-05T08:34:58+00:00",
+    "summary": "In a rare event, three American astronauts voted in Tuesday's US midterm elections from the International Space Station, using advanced links to send electronic ballots to officials on Earth.",
     "first": {
-     "outlet": "The Japan Times",
-     "url": "https://www.japantimes.co.jp/business/2026/11/05/companies/nidec-short-seller-corporate-governance/",
-     "t": "Wed 10:20 p.m.",
-     "title": "Nidec scandal exposes limits of Japan reform, short seller says",
-     "iso": "2026-11-05T03:20:00+00:00"
+     "outlet": "CBC News",
+     "url": "https://www.cbc.ca/news/politics/new-head-of-canadian-space-agency-9.7410061?cmp=rss",
+     "t": "Wed 8:38 p.m.",
+     "title": "Former NASA chief economist named new head of Canadian Space Agency",
+     "iso": "2026-11-05T01:38:41+00:00"
     },
-    "newest": "2026-11-05T09:29:23+00:00",
+    "newest": "2026-11-05T08:34:58+00:00",
     "photo": {
-     "src": "live/img/auto-ab582672-d905b5a3d2.jpg",
-     "orig": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/Camp-Schwab-japan-military-base-training.png",
-     "caption": "US Marine dies following training incident at Camp Schwab in Okinawa. — via Fox News",
-     "alt": "US Marine dies following training incident at Camp Schwab in Okinawa",
-     "outlet": "Fox News",
-     "url": "https://www.foxnews.com/world/us-marine-dies-training-incident-japan-military-base",
-     "since": "2026-11-05T10:22:17.545731+00:00"
+     "src": "live/img/auto-ffe4972f-8db7e33899.jpg",
+     "orig": "https://images.euronews.com/articles/stories/09/97/89/16/1200x675_cmsv2_d59a3fb9-8ad9-5db2-a002-cbcd6d4d780d-9978916.jpg",
+     "caption": "NASA astronauts cast US election votes from the International Space Station. — via Euronews",
+     "alt": "NASA astronauts cast US election votes from the International Space Station",
+     "outlet": "Euronews",
+     "url": "https://www.euronews.com/2026/11/05/nasa-astronauts-cast-us-election-votes-from-the-international-space-station",
+     "since": "2026-11-05T10:29:18.626503+00:00"
     },
     "photo_seen": [
-     "https://s.abcnews.com/images/General/Breaking-News-banner-abc-ps-181024_hpMain_16x9_992.jpg?w=1600"
+     "https://images.euronews.com/articles/stories/09/97/89/16/1200x675_cmsv2_d59a3fb9-8ad9-5db2-a002-cbcd6d4d780d-9978916.jpg"
     ],
     "photos": [
      {
-      "src": "live/img/auto-ab582672-d905b5a3d2.jpg",
-      "orig": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/Camp-Schwab-japan-military-base-training.png",
-      "caption": "US Marine dies following training incident at Camp Schwab in Okinawa. — via Fox News",
-      "alt": "US Marine dies following training incident at Camp Schwab in Okinawa",
-      "outlet": "Fox News",
-      "url": "https://www.foxnews.com/world/us-marine-dies-training-incident-japan-military-base"
+      "src": "live/img/auto-ffe4972f-8db7e33899.jpg",
+      "orig": "https://images.euronews.com/articles/stories/09/97/89/16/1200x675_cmsv2_d59a3fb9-8ad9-5db2-a002-cbcd6d4d780d-9978916.jpg",
+      "caption": "NASA astronauts cast US election votes from the International Space Station. — via Euronews",
+      "alt": "NASA astronauts cast US election votes from the International Space Station",
+      "outlet": "Euronews",
+      "url": "https://www.euronews.com/2026/11/05/nasa-astronauts-cast-us-election-votes-from-the-international-space-station"
      },
      {
-      "src": "live/img/auto-ab582672-972e2c1a9c.jpg",
-      "orig": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/05/572443.jpg?v=3.1",
-      "caption": "From: Police in Japan to share data on scam accounts with financial firms. — via The Japan Times",
-      "alt": "Police in Japan to share data on scam accounts with financial firms",
-      "outlet": "The Japan Times",
-      "url": "https://www.japantimes.co.jp/news/2026/11/05/japan/crime-legal/police-scam-account-data-network/"
+      "src": "live/img/auto-ffe4972f-bf1ab9ce4d.jpg",
+      "orig": "https://i.cbc.ca/ais/ca910d6c-cbb0-41ac-a562-82e097e5c2e6,1793842462538/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C149%2C3424%2C1926%29%3BResize%3D620",
+      "caption": "The Canadian Space Agency’s David Florida Laboratory is seen in Ottawa on March 16. Alexander MacDonald was named the agency's new president on Wednesday. (Justin Tang/The Canadian Press) — via CBC News",
+      "alt": "The Canadian Space Agency’s David Florida Laboratory is seen in Ottawa on March 16. Alexander MacDonald was named the agency's new president on Wednesday.",
+      "outlet": "CBC News",
+      "url": "https://www.cbc.ca/news/politics/new-head-of-canadian-space-agency-9.7410061?cmp=rss"
+     },
+     {
+      "src": "live/img/auto-ffe4972f-7eb561adde.jpg",
+      "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/2/a3/2a3eb52c-7e0a-524e-8a8b-5ee426c2bf5b/6aec0afb39be0.image.jpg?crop=1600%2C840%2C0%2C120&resize=1200%2C630&order=crop%2Cresize",
+      "caption": "From: Ex-NASA chief economist tapped as president of Canadian Space Agency. — via Toronto Star",
+      "alt": "Ex-NASA chief economist tapped as president of Canadian Space Agency",
+      "outlet": "Toronto Star",
+      "url": "https://www.thestar.com/news/canada/ex-nasa-chief-economist-tapped-as-president-of-canadian-space-agency/article_8d0891cb-7370-5ad4-89f9-d63386005941.html"
      }
     ],
     "independent": 3,
     "reports": [
      {
-      "t": "Thu 4:29 a.m.",
-      "iso": "2026-11-05T09:29:23+00:00",
-      "outlet": "ABC News",
-      "title": "Officials release name of US Marine who died after training incident in Japan",
-      "url": "https://abcnews.com/International/officials-release-us-marine-died-after-training-incident/story?id=137868269",
-      "desc": "Lance Cpl. Devin J. Hernandez, 25, of Maryland, died on Tuesday, officials said."
+      "t": "Thu 3:34 a.m.",
+      "iso": "2026-11-05T08:34:58+00:00",
+      "outlet": "Euronews",
+      "title": "NASA astronauts cast US election votes from the International Space Station",
+      "url": "https://www.euronews.com/2026/11/05/nasa-astronauts-cast-us-election-votes-from-the-international-space-station",
+      "desc": "In a rare event, three American astronauts voted in Tuesday's US midterm elections from the International Space Station, using advanced links to send electronic ballots to officials on Earth."
      },
      {
-      "t": "Thu 1:03 a.m.",
-      "iso": "2026-11-05T06:03:00+00:00",
-      "outlet": "The Japan Times",
-      "title": "Police in Japan to share data on scam accounts with financial firms",
-      "url": "https://www.japantimes.co.jp/news/2026/11/05/japan/crime-legal/police-scam-account-data-network/",
-      "desc": "Losses from special fraud nationwide are on track to exceed last year’s record high, the National Police Agency said."
+      "t": "Wed 11:44 p.m.",
+      "iso": "2026-11-05T04:44:55+00:00",
+      "outlet": "Toronto Star",
+      "title": "Ex-NASA chief economist tapped as president of Canadian Space Agency",
+      "url": "https://www.thestar.com/news/canada/ex-nasa-chief-economist-tapped-as-president-of-canadian-space-agency/article_8d0891cb-7370-5ad4-89f9-d63386005941.html",
+      "desc": "OTTAWA - NASA's first chief economist has been named president of the Canadian Space Agency."
      },
      {
-      "t": "Wed 11:38 p.m.",
-      "iso": "2026-11-05T04:38:44+00:00",
-      "outlet": "Fox News",
-      "title": "US Marine dies in training incident at Japan military base, officials say",
-      "url": "https://www.foxnews.com/world/us-marine-dies-training-incident-japan-military-base",
-      "desc": "A U.S. Marine with the 3rd Marine Division died during a training exercise at Camp Schwab in Okinawa, and the incident remains under investigation."
+      "t": "Wed 11:44 p.m.",
+      "iso": "2026-11-05T04:44:55+00:00",
+      "outlet": "CKOM / PAnow",
+      "title": "Ex-NASA chief economist tapped as president of Canadian Space Agency",
+      "url": "https://www.ckom.com/2026/11/04/ex-nasa-chief-economist-tapped-as-president-of-canadian-space-agency/",
+      "desc": "OTTAWA — NASA's first chief economist has been named president of the Canadian Space Agency. Industry Minister Mélanie Joly on Wednesday announced that Alexander MacDonald had been appointed to the role. A government news release says MacDonald helped ..."
+     },
+     {
+      "t": "Wed 8:38 p.m.",
+      "iso": "2026-11-05T01:38:41+00:00",
+      "outlet": "CBC News",
+      "title": "Former NASA chief economist named new head of Canadian Space Agency",
+      "url": "https://www.cbc.ca/news/politics/new-head-of-canadian-space-agency-9.7410061?cmp=rss",
+      "desc": "Alexander MacDonald was named the new president of the Canadian Space Agency late Wednesday evening."
      }
     ],
     "sources": [
      {
-      "t": "Thu 4:29 a.m.",
+      "t": "Thu 3:34 a.m.",
       "primary": false,
-      "outlet": "ABC News",
-      "title": "Officials release name of US Marine who died after training incident in Japan",
-      "url": "https://abcnews.com/International/officials-release-us-marine-died-after-training-incident/story?id=137868269",
-      "desc": "Lance Cpl. Devin J. Hernandez, 25, of Maryland, died on Tuesday, officials said.",
+      "outlet": "Euronews",
+      "title": "NASA astronauts cast US election votes from the International Space Station",
+      "url": "https://www.euronews.com/2026/11/05/nasa-astronauts-cast-us-election-votes-from-the-international-space-station",
+      "desc": "In a rare event, three American astronauts voted in Tuesday's US midterm elections from the International Space Station, using advanced links to send electronic ballots to officials on Earth.",
       "wire": "",
       "by": [
        {
-        "outlet": "ABC News",
-        "src": "ABC News",
-        "byline": "[{\"name\":\"Anthony Trotter\",,\"@type\":\"Person\"}] \"Anthony Trotter\" [{\"name\":\"Anthony Trotter\",,\"@type\":\"Person\"}] \"ABC New"
+        "outlet": "Euronews",
+        "src": "Euronews",
+        "byline": "[ { \"@type\": \"Person\", \"familyName\": \"Nabaa\", \"givenName\": \"Clara\", \"name\": \"Clara Nabaa\", , \"worksFor\": { \"@id\": \"https"
        }
       ],
       "copies": []
      },
      {
-      "t": "Thu 1:03 a.m.",
+      "t": "Wed 11:44 p.m.",
       "primary": false,
-      "outlet": "The Japan Times",
-      "title": "Police in Japan to share data on scam accounts with financial firms",
-      "url": "https://www.japantimes.co.jp/news/2026/11/05/japan/crime-legal/police-scam-account-data-network/",
-      "desc": "Losses from special fraud nationwide are on track to exceed last year’s record high, the National Police Agency said.",
-      "wire": "",
+      "outlet": "Toronto Star",
+      "title": "Ex-NASA chief economist tapped as president of Canadian Space Agency",
+      "url": "https://www.thestar.com/news/canada/ex-nasa-chief-economist-tapped-as-president-of-canadian-space-agency/article_8d0891cb-7370-5ad4-89f9-d63386005941.html",
+      "desc": "OTTAWA - NASA's first chief economist has been named president of the Canadian Space Agency.",
+      "wire": "The Canadian Press",
       "by": [
        {
-        "outlet": "The Japan Times",
-        "src": "The Japan Times",
-        "byline": "{ \"@type\": \"Organization\", \"name\": \"The Japan Times\" } { \"@type\": \"Organization\", \"name\": \"The Japan Times\", } No Author"
+        "outlet": "Toronto Star",
+        "src": "The Canadian Press",
+        "byline": "\"The Canadian Press\" \"<span class=\\\"byl"
+       },
+       {
+        "outlet": "CKOM / PAnow",
+        "src": "The Canadian Press",
+        "byline": "[{\"@type\":\"Person\",\"name\":\"The Canadian Press\"}] \"The Canadian Pr"
        }
       ],
-      "copies": []
+      "copies": [
+       {
+        "outlet": "CKOM / PAnow",
+        "url": "https://www.ckom.com/2026/11/04/ex-nasa-chief-economist-tapped-as-president-of-canadian-space-agency/"
+       }
+      ]
      },
      {
-      "t": "Wed 11:38 p.m.",
+      "t": "Wed 8:38 p.m.",
       "primary": false,
-      "outlet": "Fox News",
-      "title": "US Marine dies in training incident at Japan military base, officials say",
-      "url": "https://www.foxnews.com/world/us-marine-dies-training-incident-japan-military-base",
-      "desc": "A U.S. Marine with the 3rd Marine Division died during a training exercise at Camp Schwab in Okinawa, and the incident remains under investigation.",
+      "outlet": "CBC News",
+      "title": "Former NASA chief economist named new head of Canadian Space Agency",
+      "url": "https://www.cbc.ca/news/politics/new-head-of-canadian-space-agency-9.7410061?cmp=rss",
+      "desc": "Alexander MacDonald was named the new president of the Canadian Space Agency late Wednesday evening.",
       "wire": "",
       "by": [
        {
-        "outlet": "Fox News",
-        "src": "Fox News",
-        "byline": "{\"@id\":\"https://www.foxnews.com/person/m/landon-mion#author\",\"name\":\"Landon Mion\",} {\"@id\":\"https://www.foxnews.com/pers"
+        "outlet": "CBC News",
+        "src": "CBC",
+        "byline": "[{\"@type\":\"Person\",\"@id\":\"https://www.cbc.ca/author/darren-major-1.4462710/#author\",\"name\":\"Darren Major\",}] [{\"@type\":\""
        }
       ],
       "copies": []
@@ -1850,27 +1865,23 @@
     "replaces_top": false,
     "events": [],
     "theme": "",
-    "canada": "tie",
-    "canus": false,
+    "canada": "canadian",
+    "canus": true,
     "incoherent": false,
     "popular": 0,
     "us_election": false,
     "fronts": 0,
     "fronts_ca": 0,
     "fronts_who": [],
-    "judgment": "regional",
-    "judgment_why": "Regional: affects some people; carried by a few newsrooms.",
-    "weight": 17.5
+    "judgment": "national",
+    "judgment_why": "National: affects many people; carried across the country (national desks).",
+    "weight": 31.0
    }
   ],
   "passed_over": [
    {
     "title": "Hong Kong activist Joshua Wong sentenced to 10 more years in prison",
     "url": "https://www.timescolonist.com/world-news/hong-kong-activist-joshua-wong-sentenced-to-10-more-years-in-prison-12982052"
-   },
-   {
-    "title": "Bomb threat diverts Dublin-Rome flight to France",
-    "url": "https://www.aljazeera.com/news/2026/11/5/bomb-threat-diverts-dublin-rome-flight-to-france?traffic_source=rss"
    },
    {
     "title": "‘The grift stops now’: Democratic midterm elections sweep brings in first Indigenous governor and senator in U.S. history",
@@ -2062,16 +2073,16 @@
    "geo": "unknown"
   },
   {
-   "id": "kp1KLcEtp3Y",
+   "id": "ayDN1yU_uH8",
    "r": "ca",
    "o": "CTV News",
-   "t": "CTV Your Morning Calgary for November 3, 2026",
+   "t": "CTV News Calgary at 6 for November 4, 2026",
    "rec": false,
    "d": "",
-   "u": "https://www.youtube.com/watch?v=kp1KLcEtp3Y",
-   "img": "https://i.ytimg.com/vi/kp1KLcEtp3Y/hqdefault.jpg",
+   "u": "https://www.youtube.com/watch?v=ayDN1yU_uH8",
+   "img": "https://i.ytimg.com/vi/ayDN1yU_uH8/hqdefault.jpg",
    "up": "2026-11-05",
-   "added": "2026-11-05T10:19:55.655747+00:00",
+   "added": "2026-11-05T10:25:49.343484+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2252,7 +2263,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=9maXx2uqboA",
    "img": "https://i.ytimg.com/vi/9maXx2uqboA/hqdefault.jpg",
-   "up": "2026-11-05",
+   "up": "2026-11-04",
    "added": "2026-11-05T08:52:04.167181+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -2398,20 +2409,6 @@
    "geo": "unknown"
   },
   {
-   "id": "K2x1x7bkfPM",
-   "r": "world",
-   "o": "Reuters",
-   "t": "A Democrat Congress: Bet on deals and disputes with Trump says analyst",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=K2x1x7bkfPM",
-   "img": "https://i.ytimg.com/vi/K2x1x7bkfPM/hqdefault.jpg",
-   "up": "2026-11-05",
-   "added": "2026-11-05T08:01:23.237892+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "iQTuuSqtFi0",
    "r": "world",
    "o": "Sky News",
@@ -2492,6 +2489,20 @@
    "img": "https://i.ytimg.com/vi/x-VNZAVgwR0/hqdefault.jpg",
    "up": "2026-11-05",
    "added": "2026-11-05T10:19:55.655747+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "ckm_cVwNKzU",
+   "r": "world",
+   "o": "Reuters",
+   "t": "Why Trump's midterm blues mean short-term gain, long-term pain for China",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=ckm_cVwNKzU",
+   "img": "https://i.ytimg.com/vi/ckm_cVwNKzU/hqdefault.jpg",
+   "up": "2026-11-05",
+   "added": "2026-11-05T10:25:49.343484+00:00",
    "pic": "globe",
    "geo": "unknown"
   }
@@ -2603,19 +2614,6 @@
    "auto": true
   },
   {
-   "inst": "Fraser Institute",
-   "place": "Vancouver",
-   "kind": "Publication",
-   "by": "",
-   "date": "Nov. 4, 2026",
-   "d": "2026-11-04",
-   "pic": "chart",
-   "u": "https://www.fraserinstitute.org/commentary/bcs-postponed-pst-expansion-still-threatens-higher-tax-bills-families",
-   "t": "B.C.’s postponed PST expansion still threatens higher tax bills for families",
-   "g": "B.C.’s postponed PST expansion still threatens higher tax bills for families beng Wed, 11/04/2026 - 11:34 EST. READ TIME 2 MIN. The former Eby government postponed the planned expansion of British Columbia’s provincial sales tax (PST) shortly before the recent provincial election—and incoming premier Lorne Doerkson…",
-   "auto": true
-  },
-  {
    "inst": "Canadian Centre for Policy Alternatives",
    "place": "Ottawa",
    "kind": "Publication",
@@ -2626,45 +2624,6 @@
    "u": "https://www.policyalternatives.ca/news-research/canadas-federal-budget-is-about-to-give-billions-of-dollars-to-fossil-fuel-companies/",
    "t": "Canada’s federal budget is about to give billions of dollars to fossil fuel companies",
    "g": "The Productivity Mega-Deduction could have been an important piece of industrial strategy. Instead, it is a giveaway to resource extraction companies. The post Canada’s federal budget is about to give billions of dollars to fossil fuel companies appeared first on CCPA .",
-   "auto": true
-  },
-  {
-   "inst": "Frontier Centre for Public Policy",
-   "place": "Winnipeg",
-   "kind": "Publication",
-   "by": "",
-   "date": "Nov. 4, 2026",
-   "d": "2026-11-04",
-   "pic": "chart",
-   "u": "https://frontiercentre.org/2026/11/04/frontier-centre-urges-b-c-conservatives-to-overhaul-failing-provincial-policies/?utm_source=rss&utm_medium=rss&utm_campaign=frontier-centre-urges-b-c-conservatives-to-overhaul-failing-provincial-policies",
-   "t": "Frontier Centre urges B.C. Conservatives to overhaul failing provincial policies",
-   "g": "",
-   "auto": true
-  },
-  {
-   "inst": "AEI",
-   "place": "Washington",
-   "kind": "Publication",
-   "by": "",
-   "date": "Nov. 4, 2026",
-   "d": "2026-11-04",
-   "pic": "chart",
-   "u": "https://www.aei.org/economics/on-the-road-to-a-financial-market-crisis/",
-   "t": "On the Road to a Financial Market Crisis",
-   "g": "Rising interest rates at a time when the world economy is drowning in debt should be raising the alarm about the risk of a US and world financial market crisis in the not-too-distant future. The post On the Road to a Financial Market Crisis appeared first on American Enterprise Institute - AEI .",
-   "auto": true
-  },
-  {
-   "inst": "AEI",
-   "place": "Washington",
-   "kind": "Publication",
-   "by": "",
-   "date": "Nov. 4, 2026",
-   "d": "2026-11-04",
-   "pic": "chart",
-   "u": "https://www.aei.org/domestic-policy/the-right-not-to-speak-why-californias-social-media-warning-law-is-unconstitutional/",
-   "t": "The Right Not to Speak: Why California’s Social Media Warning Law Is Unconstitutional",
-   "g": "California and other states now are requiring social media platforms to convey subjective government warnings about the supposed dangers of platform usage. These laws likely violate the First Amendment’s unenumerated right not to be compelled to express state-sponsored viewpoints and thus needlessly squander taxpayer…",
    "auto": true
   },
   {
@@ -2744,16 +2703,61 @@
    "t": "Trump lost the midterms – not his grip on foreign policy",
    "g": "A repudiation at the ballot box hasn't resolved the uncertainty it brings Republicans.",
    "auto": true
+  },
+  {
+   "inst": "Lowy Institute",
+   "place": "Sydney",
+   "kind": "Publication",
+   "by": "",
+   "date": "Nov. 4, 2026",
+   "d": "2026-11-04",
+   "pic": "chart",
+   "u": "https://www.lowyinstitute.org/the-interpreter/apec-2026-let-s-get-back-to-the-future-on-trade",
+   "t": "APEC 2026: Let’s get back to the future on trade",
+   "g": "Global trade rules are stuck, but a 1990s APEC model offers Australia a practical way to build trust and momentum.",
+   "auto": true
+  },
+  {
+   "inst": "Macdonald-Laurier Institute",
+   "place": "Ottawa",
+   "kind": "Publication",
+   "by": "",
+   "date": "Nov. 3, 2026",
+   "d": "2026-11-03",
+   "pic": "chart",
+   "u": "https://macdonaldlaurier.ca/governments-always-find-a-crisis-to-justify-debt-yves-giroux-and-ian-campbell-for-inside-policy-talks/",
+   "t": "Governments always find a crisis to justify debt: Yves Giroux and Ian Campbell for Inside Policy Talks",
+   "g": "“A government that wants to spend will always find a crisis or a reason to spend beyond its means,” says former parliamentary budget officer Yves Giroux. The former federal budget […] The post Governments always find a crisis to justify debt: Yves Giroux and Ian Campbell for Inside Policy Talks appeared first on…",
+   "auto": true
+  },
+  {
+   "inst": "Macdonald-Laurier Institute",
+   "place": "Ottawa",
+   "kind": "Publication",
+   "by": "",
+   "date": "Nov. 3, 2026",
+   "d": "2026-11-03",
+   "pic": "chart",
+   "u": "https://macdonaldlaurier.ca/the-charter-revolution-revisited-judicial-power-and-the-case-for-democratic-renewal-in-canada/",
+   "t": "The Charter revolution revisited: Judicial power and the case for democratic renewal in Canada",
+   "g": "In July 2026, legal scholars from across the country met at the University of Calgary’s School of Public Policy to discuss Rainer Knopff and Ted Morton’s seminal book, The Charter […] The post The Charter revolution revisited: Judicial power and the case for democratic renewal in Canada appeared first on…",
+   "auto": true
+  },
+  {
+   "inst": "Peterson Institute",
+   "place": "Washington",
+   "kind": "Publication",
+   "by": "",
+   "date": "Nov. 3, 2026",
+   "d": "2026-11-03",
+   "pic": "chart",
+   "u": "https://www.piie.com/publications/policy-briefs/2026/it-time-revisit-santiago-principles-sovereign-wealth-funds",
+   "t": "It is time to revisit the Santiago Principles on sovereign wealth funds",
+   "g": "The Santiago Principles have played a critical role in strengthening the governance and transparency of sovereign wealth funds. They also helped ease concerns about SWFs before 2008 and supported the smooth functioning of global financial markets. Yet the global financial landscape has changed significantly over the…",
+   "auto": true
   }
  ],
  "eds": [
-  [
-   "Toronto Star",
-   "Opinion",
-   "Despite spending billions, Ontario is failing to solve family doctor shortage",
-   "https://www.thestar.com/opinion/contributors/despite-spending-billions-ontario-is-failing-to-solve-family-doctor-shortage/article_69687477-db8b-4c88-a6eb-06b0a813633e.html",
-   "2026-11-05T10:15:00+00:00"
-  ],
   [
    "Toronto Sun",
    "Editorial",
@@ -2816,6 +2820,13 @@
    "The GOP is wounded, not dead — but recovery has to start now",
    "https://www.foxnews.com/opinion/hugh-hewitt-gop-wounded-not-dead-recovery-has-start-now",
    "2026-11-05T09:00:59+00:00"
+  ],
+  [
+   "The Wall Street Journal (subscribers)",
+   "Opinion",
+   "Pepper…and Salt",
+   "https://www.wsj.com/opinion/pepperand-salt-6c81c92b?mod=rss_opinion",
+   "2026-11-05T05:00:00+00:00"
   ]
  ],
  "canus": {
@@ -2883,7 +2894,6 @@
   "edition": "Thursday morning, November 5",
   "lines": [
    "Good morning. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
-   "In the news today: Liberals table budget, blue wave reaction, Kutryk spacewalk, The Canadian Press reports.",
    "N.W.T., Indigenous groups begin co-design work for Indigenous wellness centre, CBC News reports.",
    "NASA’s first chief economist has been named president of the Canadian Space Agency, The Canadian Press reports.",
    "U.S. first lady Melania Trump will bring representatives from Russia and Ukraine to the White House on Thursday, after announcing a ceasefire in the city of Oleshky last month, The Canadian Press reports.",
@@ -3143,22 +3153,22 @@
    "img": "https://yukon-news.com/wp-content/uploads/sites/7/2026/11/261106-YKN-Sheep-Closure.jpg?w=480"
   },
   {
-   "o": "Canada's National Observer",
-   "region": "National",
+   "o": "Medicine Hat News",
+   "region": "Alberta",
    "arctic": false,
-   "h": "Why batteries, not gas plants, should be data centres’ first choice",
-   "u": "https://www.nationalobserver.com/2026/11/04/news/why-batteries-not-gas-plants-should-be-data-centres-first-choice",
-   "t": "Thu 3:55 a.m.",
-   "desc": "",
+   "h": "Transit service plans to promote kindness throughout community",
+   "u": "https://medicinehatnews.com/news/local-news/2026/11/05/transit-service-plans-to-promote-kindness-throughout-community/",
+   "t": "Thu 5:25 a.m.",
+   "desc": "newsdesk@medicinehatnews.com Next Friday the Medicine Hat Transit service will team up with the What Matters to Hatters Coalition to take part in an annual campaign to spread kindness to riders. In conjunction with World Kindness Day on Nov",
    "img": ""
   },
   {
-   "o": "The Tyee",
-   "region": "British Columbia",
+   "o": "SaltWire",
+   "region": "Atlantic Canada",
    "arctic": false,
-   "h": "Enemies of Public Health Care Roost in Toronto",
-   "u": "https://thetyee.ca/Analysis/2026/11/05/Enemies-Public-Health-Care-Roost-Toronto/",
-   "t": "Thu 3:40 a.m.",
+   "h": "Reasons to remember: ‘They knew they had to serve for their country'",
+   "u": "https://www.saltwire.com/nova-scotia/tri-county-vangaurd/reasons-to-remember-they-knew-they-had-to-serve-for-their-country",
+   "t": "Thu 5:15 a.m.",
    "desc": "",
    "img": ""
   }
@@ -3168,11 +3178,11 @@
    "city": "St. John's",
    "tz": "America/St_Johns",
    "world": false,
-   "w": "Attacks",
-   "u": "https://vocm.com/2026/11/05/no-more-bar-service-during-performances-at-st-johns-arts-and-culture-centre/",
-   "title": "No More Bar Service During Performances at St. John’s Arts and Culture Centre",
-   "outlet": "VOCM",
-   "t": "Thu 4:36 a.m.",
+   "w": "Oil and shipping",
+   "u": "https://www.thestar.com/news/canada/newfoundland-and-labrador/shell-drives-spike-in-oil-exploration-bids-off-the-coast-of-newfoundland/article_2876a728-42d0-546f-a533-236453480ef4.html",
+   "title": "Shell drives spike in oil exploration bids off the coast of Newfoundland",
+   "outlet": "Toronto Star",
+   "t": "Thu 4:00 a.m.",
    "hot": false
   },
   {
@@ -3191,10 +3201,10 @@
    "tz": "America/Toronto",
    "world": false,
    "w": "Budget",
-   "u": "https://www.thestar.com/politics/federal/help-with-cost-of-living-expected-to-be-mark-carney-s-top-priority-in-federal-budget/article_fcdc0ccf-8f96-460b-a333-2c6024b42c6e.html",
-   "title": "Help with cost of living expected to be Mark Carney's top priority in federal budget",
-   "outlet": "Toronto Star",
-   "t": "Thu 5:00 a.m.",
+   "u": "https://www.cbc.ca/news/politics/carney-second-federal-budget-lookahead-9.7409464",
+   "title": "What to watch for as Carney introduces his 2nd federal budget",
+   "outlet": "CBC News",
+   "t": "Thu 5:27 a.m.",
    "hot": true
   },
   {
@@ -3293,11 +3303,11 @@
      "exclusive": false
     },
     {
-     "t": "Thu 4:53 a.m.",
-     "iso": "2026-11-05T09:53:31+00:00",
-     "outlet": "VOCM",
-     "title": "Ottawa to Table Budget 2026 This Afternoon",
-     "url": "https://vocm.com/2026/11/05/315712/",
+     "t": "Thu 4:00 a.m.",
+     "iso": "2026-11-05T09:00:09+00:00",
+     "outlet": "Times Colonist",
+     "title": "Here's what you need to know as the Liberals prepare to table Budget 2026",
+     "url": "https://www.timescolonist.com/the-mix/heres-what-you-need-to-know-as-the-liberals-prepare-to-table-budget-2026-12982215",
      "canada": true,
      "paywall": false,
      "exclusive": false
@@ -3342,16 +3352,6 @@
      "exclusive": false
     },
     {
-     "t": "Tue 8:07 a.m.",
-     "iso": "2026-11-03T13:07:49+00:00",
-     "outlet": "BNN Bloomberg",
-     "title": "Carney government’s next immigration levels coming in federal budget",
-     "url": "https://www.bnnbloomberg.ca/business/politics/2026/11/03/carney-governments-next-immigration-levels-coming-in-federal-budget/",
-     "canada": true,
-     "paywall": false,
-     "exclusive": false
-    },
-    {
      "t": "Mon 3:26 p.m.",
      "iso": "2026-11-02T20:26:00+00:00",
      "outlet": "Winnipeg Free Press",
@@ -3371,11 +3371,20 @@
      "exclusive": false
     },
     {
-     "t": "Thu 4:00 a.m.",
-     "iso": "2026-11-05T09:00:09+00:00",
-     "outlet": "Times Colonist",
-     "title": "Here's what you need to know as the Liberals prepare to table Budget 2026",
-     "url": "https://www.timescolonist.com/the-mix/heres-what-you-need-to-know-as-the-liberals-prepare-to-table-budget-2026-12982215",
+     "t": "Wed 9:00 p.m.",
+     "iso": "2026-11-05T02:00:00+00:00",
+     "outlet": "The Star",
+     "title": "Federal budget live: Finance minister to table government’s spending plan this afternoon",
+     "url": "https://www.thestar.com/politics/federal/federal-budget-2026-live-updates/article_212ef27a-51b3-44b6-89ec-ed0b520678e5.html",
+     "canada": false,
+     "paywall": false
+    },
+    {
+     "t": "Wed 8:25 p.m.",
+     "iso": "2026-11-05T01:25:55+00:00",
+     "outlet": "CityNews",
+     "title": "Filipino community anticipates the release of the 2027 federal budget",
+     "url": "https://toronto.citynews.ca/2026/11/04/filipino-community-anticipates-the-release-of-the-2027-federal-budget/",
      "canada": false,
      "paywall": false,
      "exclusive": false
@@ -3460,13 +3469,13 @@
   {
    "desk": "politics",
    "pic": "parliament",
-   "t": "Thu 5:00 a.m.",
-   "iso": "2026-11-05T10:00:00+00:00",
-   "title": "Help with cost of living expected to be Mark Carney's top priority in federal budget",
-   "summary": "A $36-billion business tax break is coming. Will the budget also help Canadians struggling to afford groceries?",
-   "outlet": "Toronto Star, VOCM, CBC News, Narcity, Times Colonist, The Canadian Press (via Winnipeg Free Press)",
-   "url": "https://www.thestar.com/politics/federal/help-with-cost-of-living-expected-to-be-mark-carney-s-top-priority-in-federal-budget/article_fcdc0ccf-8f96-460b-a333-2c6024b42c6e.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/f/43/f436a45c-a868-52d5-8949-50a702f69a88/6aebaa42696c5.image.jpg?crop=1763%2C926%2C0%2C124&resize=1200%2C630&order=crop%2Cresize"
+   "t": "Thu 5:27 a.m.",
+   "iso": "2026-11-05T10:27:05.490000+00:00",
+   "title": "What to watch for as Carney introduces his 2nd federal budget",
+   "summary": "Prime Minister Mark Carney will deliver his second federal budget on Thursday as the Liberal government reveals next steps in its plan to support the country through an affordability crunch and the trade war.",
+   "outlet": "CBC News, Toronto Star, Narcity, Times Colonist, The Canadian Press (via Winnipeg Free Press), Lethbridge Herald",
+   "url": "https://www.cbc.ca/news/politics/carney-second-federal-budget-lookahead-9.7409464",
+   "img": "https://i.cbc.ca/ais/a5acd5e0-78ff-4cbc-bfc2-ddd7c3077951,1793824041003/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C275%2C5351%2C3009%29%3BResize%3D620"
   },
   {
    "desk": "world",
@@ -3482,13 +3491,13 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Thu 4:00 a.m.",
-   "iso": "2026-11-05T09:00:05+00:00",
-   "title": "Republicans turn on Trump after devastating midterm losses hand Democrats control of Congress",
-   "summary": "GOP insiders blame Trump after Election Night's blue tsunami flipped both chambers, with Democrats scoring seven Senate and 27 House pickups.",
-   "outlet": "Fox News, CBC News, Toronto Star, CBS News, BBC News, CTV News",
-   "url": "https://www.foxnews.com/politics/republicans-turn-trump-after-devastating-midterm-losses-hand-democrats-control-congress",
-   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/10/donald-trump-florida.jpg"
+   "t": "Thu 5:18 a.m.",
+   "iso": "2026-11-05T10:18:07.533000+00:00",
+   "title": "Ohio and Texas went from red to blue in the midterms, but may not stay that way in 2028",
+   "summary": "The Democrats flipping governorships and Senate seats in Texas and Ohio turned the states dramatically blue on election night. Some political observers say these wins don't necessarily mean the states will stay that colour, but they do reveal a new political reality — that they'll be electoral battlegrounds in the 2028 presidential election.",
+   "outlet": "CBC News, Fox News, Toronto Star, CBS News, BBC News, CTV News",
+   "url": "https://www.cbc.ca/news/world/texas-ohio-midterm-results-9.7409481",
+   "img": "https://i.cbc.ca/ais/3fbb59a5-1923-4746-8cfd-db123f6611af,1793850271961/full/max/0/default.jpg?im=Crop%2Crect%3D%28225%2C107%2C1822%2C1024%29%3BResize%3D620"
   },
   {
    "desk": "world",
@@ -3504,17 +3513,6 @@
   {
    "desk": "politics",
    "pic": "parliament",
-   "t": "Thu 4:01 a.m.",
-   "iso": "2026-11-05T09:01:19+00:00",
-   "title": "Ghana thanks Carney for working to fix a 'rigged global system' for African countries",
-   "summary": "Ghana praises Canada's work to fix 'rigged' world",
-   "outlet": "Narcity, Toronto Star, Times Colonist, Medicine Hat News, Lethbridge Herald, CityNews",
-   "url": "https://www.narcity.com/ghana-praises-canadas-work-to-fix-rigged-world",
-   "img": "https://www.narcity.com/media-library/ghana-praises-canada-s-work-to-fix-rigged-world.jpg?id=68601027&width=1200&height=600&coordinates=0%2C116%2C0%2C117"
-  },
-  {
-   "desk": "politics",
-   "pic": "parliament",
    "t": "Thu 3:40 a.m.",
    "iso": "2026-11-05T08:40:00+00:00",
    "title": "Enemies of Public Health Care Roost in Toronto",
@@ -3524,26 +3522,15 @@
    "img": ""
   },
   {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Thu 5:15 a.m.",
-   "iso": "2026-11-05T10:15:47+00:00",
-   "title": "Judges to hear Trump's appeal of 2024 criminal hush money conviction",
-   "summary": "Two and a half years after a jury convicted Donald Trump of 34 felony counts in his hush money case, the president's lawyers are seeking to have the verdict overturned.",
-   "outlet": "ABC News, Toronto Star, The Hill, CBC News, Kyiv Independent, SaltWire",
-   "url": "https://abcnews.com/US/judges-hear-trumps-appeal-2024-criminal-hush-money/story?id=137859786",
-   "img": "https://i.abcnewsfe.com/a/fd51852a-1848-491a-b0de-00f38b96f12a/donald-trump-1-rt-gmh-261104_1793814688050_hpMain_16x9.jpg?w=1600"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Thu 5:01 a.m.",
-   "iso": "2026-11-05T10:01:05+00:00",
-   "title": "Multiple planes diverted amid bomb threats to commercial flights across Europe – live",
-   "summary": "France confirms Dublin-Rome flight has landed in military base, while threats also reported in Italy, Bulgaria and Belgium",
-   "outlet": "The Guardian, Al Jazeera, Euronews, NBC News, Toronto Star, The Canadian Press (via Winnipeg Free Press)",
-   "url": "https://www.theguardian.com/world/live/2026/nov/05/aer-lingus-plane-bomb-threat-europe-latest-news-updates",
-   "img": "https://i.guim.co.uk/img/media/f88047fff40cd32f637f149cc85a181ed5d2d471/177_0_2183_1747/master/2183.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=6f88dc3bb25adf20296359cabdbb09c1"
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Thu 4:01 a.m.",
+   "iso": "2026-11-05T09:01:19+00:00",
+   "title": "Ghana thanks Carney for working to fix a 'rigged global system' for African countries",
+   "summary": "Ghana praises Canada's work to fix 'rigged' world",
+   "outlet": "Narcity, Toronto Star, Times Colonist, Lethbridge Herald, CityNews, CKOM / PAnow",
+   "url": "https://www.narcity.com/ghana-praises-canadas-work-to-fix-rigged-world",
+   "img": "https://www.narcity.com/media-library/ghana-praises-canada-s-work-to-fix-rigged-world.jpg?id=68601027&width=1200&height=600&coordinates=0%2C116%2C0%2C117"
   },
   {
    "desk": "world",
@@ -3552,9 +3539,31 @@
    "iso": "2026-11-04T20:31:41+00:00",
    "title": "Spy watchdog flags privacy risk from military’s online intelligence activities",
    "summary": "The review agency says information publicly available online can still raise privacy concerns when it's collected and analyzed by government organizations.",
-   "outlet": "Global News, CP24, Toronto Star, CityNews Ottawa, CityNews Halifax, CityNews",
+   "outlet": "Global News, CP24, Toronto Star, CityNews Ottawa, CityNews Halifax, CityNews Calgary",
    "url": "https://globalnews.ca/news/12136998/spy-watchdog-military-intelligence/",
    "img": "https://globalnews.ca/wp-content/uploads/2026/11/DND-spy-watchdog.jpg?quality=65&strip=all&w=720&h=379&crop=1"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Thu 4:50 a.m.",
+   "iso": "2026-11-05T09:50:08+00:00",
+   "title": "Bomb threat diverts Dublin-Rome flight to France",
+   "summary": "A separate incident has been reported in Bulgaria, amid a string of bomb threats disrupting air travel across Europe.",
+   "outlet": "Al Jazeera, Euronews, NBC News, Toronto Star, The Canadian Press (via Winnipeg Free Press), The Guardian",
+   "url": "https://www.aljazeera.com/news/2026/11/5/bomb-threat-diverts-dublin-rome-flight-to-france?traffic_source=rss",
+   "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6aec4ebd43ad7-1793871549.jpg?resize=1920%2C1440"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Thu 5:15 a.m.",
+   "iso": "2026-11-05T10:15:47+00:00",
+   "title": "Judges to hear Trump's appeal of 2024 criminal hush money conviction",
+   "summary": "Two and a half years after a jury convicted Donald Trump of 34 felony counts in his hush money case, the president's lawyers are seeking to have the verdict overturned.",
+   "outlet": "ABC News, Toronto Star, The Hill, CBC News, Kyiv Independent",
+   "url": "https://abcnews.com/US/judges-hear-trumps-appeal-2024-criminal-hush-money/story?id=137859786",
+   "img": "https://i.abcnewsfe.com/a/fd51852a-1848-491a-b0de-00f38b96f12a/donald-trump-1-rt-gmh-261104_1793814688050_hpMain_16x9.jpg?w=1600"
   },
   {
    "desk": "world",
@@ -3702,24 +3711,24 @@
   {
    "desk": "business",
    "pic": "chart",
-   "t": "Thu 4:53 a.m.",
-   "iso": "2026-11-05T09:53:11+00:00",
-   "title": "ABB enters Uzbekistan, bringing Azerbaijan’s digital banking expertise to a new market in Asia",
-   "summary": "ABB is expanding into Uzbekistan through the acquisition of Davr Bank, as regional financial institutions accelerate digital banking growth across Central Asia and emerging markets.",
-   "outlet": "Euronews",
-   "url": "https://www.euronews.com/2026/11/05/abb-enters-uzbekistan-bringing-azerbaijans-digital-banking-expertise-to-a-new-market-in-as",
-   "img": "https://images.euronews.com/articles/stories/09/98/09/45/1200x675_cmsv2_c192d811-6c9f-57b7-b71e-ae897664e6bd-9980945.jpg"
+   "t": "Thu 5:25 a.m.",
+   "iso": "2026-11-05T10:25:04+00:00",
+   "title": "School division shares update on trades program",
+   "summary": "newsdesk@medicinehatnews.com The Medicine Hat Public School Division released details this week of second-year programming in its dual-credit trades education program. The Prairie Sky Collegiate, a three-year trades program that offers students hands-on learning experiences within several different in-demand trades, has shared details on its Level 2 Transportation Trades program that has students learning about the",
+   "outlet": "Medicine Hat News",
+   "url": "https://medicinehatnews.com/news/local-news/2026/11/05/school-division-shares-update-on-trades-program/",
+   "img": ""
   },
   {
    "desk": "business",
    "pic": "chart",
-   "t": "Thu 4:50 a.m.",
-   "iso": "2026-11-05T09:50:00+00:00",
-   "title": "Nintendo’s net profit drops in Q2 as Switch 2 unit sales slow",
-   "summary": "The gaming giant is maintaining its net profit forecast of ¥310 billion for the full year despite the quarterly drop.",
-   "outlet": "The Japan Times",
-   "url": "https://www.japantimes.co.jp/business/2026/11/05/companies/nintendo-quarterly-net-profit-drops/",
-   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/05/572551.jpg?v=3.1"
+   "t": "Thu 5:21 a.m.",
+   "iso": "2026-11-05T10:21:17+00:00",
+   "title": "Rheinmetall shares plunge more than 17% after profit warning over order delays",
+   "summary": "German defence giant Rheinmetall warned of delays to military contracts and ammunition approvals, sending its shares down more than 17% in early trading on Thursday.",
+   "outlet": "Euronews",
+   "url": "https://www.euronews.com/2026/11/05/rheinmetall-shares-plunge-more-than-17-after-profit-warning-over-order-delays",
+   "img": "https://images.euronews.com/articles/stories/09/98/08/83/1200x675_cmsv2_081b638c-4716-5939-82a6-569f70c8cdb0-9980883.jpg"
   }
  ],
  "fronts": [
@@ -3750,17 +3759,17 @@
     "W5 Investigates: Alleged cult leader told followers they had been sexually abused",
     "Canada braces for Trump fallout as Democrats win big in U.S. midterms",
     "Majority of Canadians want fewer immigrants, temporary residents in 2027: Nanos",
-    "Researcher and mom shares how pregnancy affects the brain",
+    "A mysterious ‘U.S. Army’ barrel found in Canada worried officials. Now we have an update",
     "End of seasonal clock changes cause problems for some Microsoft users in Canada",
-    "A mysterious ‘U.S. Army’ barrel found in Canada worried officials. Now we have an update"
+    "Here's what you need to know as the Liberals prepare to table Budget 2026"
    ],
    "u": [
     "https://www.ctvnews.ca/canada/article/w5-investigates-alleged-cult-leader-told-followers-they-had-been-sexually-abused/",
     "https://www.ctvnews.ca/world/america-votes/article/canada-braces-for-trump-fallout-as-democrats-win-big-in-us-midterms/",
     "https://www.ctvnews.ca/canada/article/majority-of-canadians-want-fewer-immigrants-temporary-residents-in-2027-nanos/",
-    "https://www.ctvnews.ca/health/article/researcher-and-mom-shares-how-pregnancy-affects-the-brain/",
+    "https://www.ctvnews.ca/montreal/article/barrel-labeled-us-army-found-in-quebec-poses-no-threat-police-say/",
     "https://www.ctvnews.ca/canada/article/end-of-seasonal-clock-changes-cause-problems-for-some-microsoft-users-in-canada/",
-    "https://www.ctvnews.ca/montreal/article/barrel-labeled-us-army-found-in-quebec-poses-no-threat-police-say/"
+    "https://www.ctvnews.ca/politics/article/heres-what-you-need-to-know-as-the-liberals-prepare-to-table-budget-2026/"
    ]
   },
   {
@@ -3990,24 +3999,48 @@
    "ca": false,
    "h": [
     "NPR - Breaking News, Analysis, Music, Arts & Podcasts",
+    "Does the blue wave mean lower gasoline and diesel prices soon? Don't hold your breath",
+    "The South flexes political power in midterms, sets regional influence in 2028 election",
     "These 10 candidates for governor made history in the 2026 election",
     "6 takeaways from a jaw-dropping election night for Democrats",
-    "Republicans tried to gerrymander their way out of big congressional losses. It didn't work",
-    "See how Latinos, young voters and other demographic groups fueled Democrats' big wins",
-    "Historic wins for Democrats usher in a new era of divided government"
+    "Republicans tried to gerrymander their way out of big congressional losses. It didn't work"
    ],
    "u": [
     "",
+    "https://www.npr.org/2026/11/05/nx-s1-6029365/gas-diesel-price-congress-midterms",
+    "https://www.npr.org/2026/11/05/nx-s1-6029818/blue-wave-south-carolina-georgia-mississippi-texas",
     "https://www.npr.org/2026/11/04/nx-s1-6028546/governor-candidates-history-election-2026",
     "https://www.npr.org/2026/11/04/nx-s1-6022216/midterms-democrats-trump-republicans-analysis",
-    "https://www.npr.org/2026/11/04/nx-s1-6028588/redistricting-efforts-failed-republicans",
-    "https://www.npr.org/2026/11/04/nx-s1-6028080/voter-polls-midterms-demographics",
-    "https://www.npr.org/2026/11/03/g-s1-149526/2026-midterms-congress-balance-of-power"
+    "https://www.npr.org/2026/11/04/nx-s1-6028588/redistricting-efforts-failed-republicans"
    ]
   }
  ],
  "live": {
   "now": [
+   {
+    "net": "Associated Press",
+    "r": "us",
+    "title": "LIVE: Protests in France as trade unions hold nationwide strikes",
+    "url": "https://www.youtube.com/watch?v=U9hbGO5f3lU",
+    "img": "https://i.ytimg.com/vi/U9hbGO5f3lU/hqdefault.jpg",
+    "story": "Protests in France as trade unions hold nationwide strikes",
+    "watching": "12",
+    "also": [
+     {
+      "net": "Sky News",
+      "url": "https://www.youtube.com/watch?v=kBUjbTKizwo"
+     }
+    ],
+    "reports": [
+     {
+      "outlet": "Toronto Star",
+      "title": "French unions unite for nationwide strikes, piling more pressure on Macron's government",
+      "url": "https://www.thestar.com/news/world/europe/french-unions-unite-for-nationwide-strikes-piling-more-pressure-on-macron-s-government/article_8bb77bf9-f306-5777-8ad5-f56229d86114.html",
+      "t": "Thu 3:39 a.m.",
+      "iso": "2026-11-05T08:39:29+00:00"
+     }
+    ]
+   },
    {
     "net": "Fox News",
     "r": "us",
@@ -4015,7 +4048,7 @@
     "url": "https://www.youtube.com/watch?v=GvWSyescLv8",
     "img": "https://i.ytimg.com/vi/GvWSyescLv8/hqdefault.jpg",
     "story": "2026 Midterm Election Results",
-    "watching": "299",
+    "watching": "241",
     "reports": [
      {
       "outlet": "Toronto Star",
@@ -4028,13 +4061,6 @@
       "outlet": "Times Colonist",
       "title": "Here's how the U.S. midterm election results could affect Canada",
       "url": "https://www.timescolonist.com/national-news/heres-how-the-us-midterm-election-results-could-affect-canada-12982237",
-      "t": "Thu 4:00 a.m.",
-      "iso": "2026-11-05T09:00:06+00:00"
-     },
-     {
-      "outlet": "Medicine Hat News",
-      "title": "Here’s how the U.S. midterm election results could affect Canada",
-      "url": "https://medicinehatnews.com/news/national-news/2026/11/05/heres-how-the-u-s-midterm-election-results-could-affect-canada/",
       "t": "Thu 4:00 a.m.",
       "iso": "2026-11-05T09:00:06+00:00"
      },
@@ -4060,16 +4086,23 @@
       "iso": "2026-11-05T09:00:06+00:00"
      },
      {
-      "outlet": "CityNews Ottawa",
+      "outlet": "CityNews Montreal",
       "title": "Here’s how the U.S. midterm election results could affect Canada",
-      "url": "https://ottawa.citynews.ca/2026/11/05/heres-how-the-u-s-midterm-election-results-could-affect-canada/",
+      "url": "https://montreal.citynews.ca/2026/11/05/heres-how-the-u-s-midterm-election-results-could-affect-canada/",
       "t": "Thu 4:00 a.m.",
       "iso": "2026-11-05T09:00:06+00:00"
      },
      {
-      "outlet": "CityNews Montreal",
+      "outlet": "CityNews Halifax",
       "title": "Here’s how the U.S. midterm election results could affect Canada",
-      "url": "https://montreal.citynews.ca/2026/11/05/heres-how-the-u-s-midterm-election-results-could-affect-canada/",
+      "url": "https://halifax.citynews.ca/2026/11/05/heres-how-the-u-s-midterm-election-results-could-affect-canada/",
+      "t": "Thu 4:00 a.m.",
+      "iso": "2026-11-05T09:00:06+00:00"
+     },
+     {
+      "outlet": "CityNews Edmonton",
+      "title": "Here’s how the U.S. midterm election results could affect Canada",
+      "url": "https://edmonton.citynews.ca/2026/11/05/heres-how-the-u-s-midterm-election-results-could-affect-canada/",
       "t": "Thu 4:00 a.m.",
       "iso": "2026-11-05T09:00:06+00:00"
      }
@@ -4082,7 +4115,7 @@
     "url": "https://www.youtube.com/watch?v=3d6yyQdhxXU",
     "img": "https://i.ytimg.com/vi/3d6yyQdhxXU/hqdefault.jpg",
     "story": "French students, workers, pensioners protest in Marseille",
-    "watching": "10"
+    "watching": "15"
    },
    {
     "net": "Sky News",
@@ -4091,16 +4124,7 @@
     "url": "https://www.youtube.com/watch?v=vgYfBxyxIr0",
     "img": "https://i.ytimg.com/vi/vgYfBxyxIr0/hqdefault.jpg",
     "story": "Mark Rowley and Sadiq Khan face questions at London Assembly",
-    "watching": "16"
-   },
-   {
-    "net": "Sky News",
-    "r": "world",
-    "title": "Protests in France - as general strike takes place",
-    "url": "https://www.youtube.com/watch?v=kBUjbTKizwo",
-    "img": "https://i.ytimg.com/vi/kBUjbTKizwo/hqdefault.jpg",
-    "story": "Protests in France - as general strike takes place",
-    "watching": "586"
+    "watching": "47"
    }
   ],
   "upcoming": [
@@ -4129,7 +4153,7 @@
     "title": "CBC News special | Federal budget 2026",
     "url": "https://www.youtube.com/watch?v=7e4oPUe9PYM",
     "img": "https://i.ytimg.com/vi/7e4oPUe9PYM/hqdefault.jpg",
-    "story": "Ottawa to Table Budget 2026 This Afternoon",
+    "story": "In the news today: Liberals table budget, blue wave reaction",
     "when": "2026-11-05T21:00:00+00:00",
     "breaking": false,
     "also": [
@@ -4187,12 +4211,21 @@
  "blogs_auto": [
   {
    "net": "Toronto Star",
-   "story": "Ottawa to Table Budget 2026 This Afternoon",
+   "story": "In the news today: Liberals table budget, blue wave reaction",
    "title": "Federal budget live: Finance minister to table government's spending plan this afternoon",
    "url": "https://www.thestar.com/politics/federal/federal-budget-2026-live-updates/article_212ef27a-51b3-44b6-89ec-ed0b520678e5.html",
    "updated": "2026-11-05T10:18:49+00:00",
    "ended": false,
    "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/f/38/f385f038-24a1-505a-baa4-91aa9eb2ee64/6aea1f42aa41e.image.jpg?crop=1763%2C926%2C0%2C125&resize=1200%2C630&order=crop%2Cresize"
+  },
+  {
+   "net": "The Guardian",
+   "story": "Planes diverted as bomb threats to commercial flights reported across ",
+   "title": "Planes diverted as bomb threats to commercial flights reported across Europe – live",
+   "url": "https://www.theguardian.com/world/live/2026/nov/05/aer-lingus-plane-bomb-threat-europe-latest-news-updates",
+   "updated": "2026-11-05T10:27:19+00:00",
+   "ended": false,
+   "img": "https://i.guim.co.uk/img/media/ea6a1228985c75548960879b1e07ce091681abe5/322_234_1500_1200/master/1500.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=fe66ba562a291cd1cc858465b5aa87f5"
   },
   {
    "net": "Politico",
@@ -4315,6 +4348,14 @@
      "tie": "Federal budget"
     },
     {
+     "t": "Tue 6:15 p.m.",
+     "iso": "2026-11-03T23:15:07+00:00",
+     "outlet": "APTN News",
+     "title": "AFN presses Ottawa for funded plan to close $376B infrastructure gap in upcoming federal budget",
+     "url": "https://www.aptnnews.ca/national-news/afn-presses-ottawa-for-funded-plan-to-close-376b-infrastructure-gap-in-upcoming-federal-budget/",
+     "tie": "Federal budget"
+    },
+    {
      "t": "Tue 3:19 p.m.",
      "iso": "2026-11-03T20:19:34+00:00",
      "outlet": "CBC News",
@@ -4365,17 +4406,8 @@
   "auto-092661d8": {
    "story": "Ukraine: Russian drone and missile attack sparks fire in Kyiv region",
    "us": false,
-   "specific": 2,
+   "specific": 1,
    "stories": [
-    {
-     "t": "Thu 4:00 a.m.",
-     "iso": "2026-11-05T09:00:15+00:00",
-     "outlet": "VOCM",
-     "title": "November 5, 2026 – Should Russian sports teams be allowed to play in Canada?",
-     "url": "https://vocm.com/2026/11/05/315700/",
-     "ca": false,
-     "tie": ""
-    },
     {
      "t": "Wed 11:12 p.m.",
      "iso": "2026-11-05T04:12:37.887000+00:00",
@@ -4443,26 +4475,94 @@
    "official": [],
    "views": []
   },
-  "auto-ab582672": {
-   "story": "Officials release name of US Marine who died after training incident in Japan",
+  "auto-ffe4972f": {
+   "story": "NASA astronauts cast US election votes from the International Space Station",
    "us": true,
-   "specific": 1,
+   "specific": 5,
    "stories": [
     {
-     "t": "Thu 3:55 a.m.",
-     "iso": "2026-11-05T08:55:14+00:00",
-     "outlet": "Canada's National Observer",
-     "title": "Will Ottawa confirm expansion of the Saguenay–St. Lawrence Marine Park in 2026?",
-     "url": "https://www.nationalobserver.com/2026/11/04/news/will-ottawa-confirm-expansion-saguenay-st-lawrence-marine-park-2026",
+     "t": "Thu 4:00 a.m.",
+     "iso": "2026-11-05T09:00:06+00:00",
+     "outlet": "Toronto Star",
+     "title": "Here's how the U.S. midterm election results could affect Canada",
+     "url": "https://www.thestar.com/news/canada/here-s-how-the-u-s-midterm-election-results-could-affect-canada/article_13d0a035-2501-5c93-9faa-5ff8f5272940.html",
+     "ca": true,
+     "tie": ""
+    },
+    {
+     "t": "Wed 11:44 p.m.",
+     "iso": "2026-11-05T04:44:55+00:00",
+     "outlet": "CKOM / PAnow",
+     "title": "Ex-NASA chief economist tapped as president of Canadian Space Agency",
+     "url": "https://www.ckom.com/2026/11/04/ex-nasa-chief-economist-tapped-as-president-of-canadian-space-agency/",
      "ca": false,
+     "tie": ""
+    },
+    {
+     "t": "Wed 7:54 p.m.",
+     "iso": "2026-11-05T00:54:30+00:00",
+     "outlet": "CTV News",
+     "title": "How the U.S. midterm elections could impact Alberta",
+     "url": "https://www.ctvnews.ca/calgary/article/how-the-us-midterm-elections-could-impact-alberta/",
+     "ca": true,
+     "tie": ""
+    },
+    {
+     "t": "Wed 3:55 p.m.",
+     "iso": "2026-11-04T20:55:24+00:00",
+     "outlet": "CP24",
+     "title": "Trump’s Republicans lost the House and Senate in midterm elections. What could it mean for Canada?",
+     "url": "https://www.cp24.com/news/canada/2026/11/04/trumps-republicans-lost-the-house-and-senate-in-midterm-elections-what-could-it-mean-for-canada/",
+     "ca": true,
+     "tie": ""
+    },
+    {
+     "t": "Wed 3:13 p.m.",
+     "iso": "2026-11-04T20:13:43+00:00",
+     "outlet": "BNN Bloomberg",
+     "title": "U.S. election results could mark a turning point for Canadian aluminum",
+     "url": "https://www.bnnbloomberg.ca/business/2026/11/04/canadian-aluminum-industry-sees-hope-for-tariff-relief-after-us-midterm-elections/",
+     "ca": true,
      "tie": ""
     }
    ],
-   "official": [],
+   "official": [
+    {
+     "outlet": "Government of Canada",
+     "title": "Government of Canada announces new president for the Canadian Space Agency",
+     "url": "https://www.canada.ca/en/innovation-science-economic-development/news/2026/11/government-of-canada-announces-new-president-for-the-canadian-space-agency.html",
+     "t": "Nov 4"
+    }
+   ],
    "views": []
   }
  },
  "canangle_live": {
+  "https://www.theguardian.com/world/live/2026/nov/05/aer-lingus-plane-bomb-threat-europe-latest-news-updates": {
+   "story": "Planes diverted as bomb threats to commercial flights reported across Europe – live",
+   "us": false,
+   "specific": 1,
+   "stories": [
+    {
+     "t": "Wed 3:55 a.m.",
+     "iso": "2026-11-04T08:55:13+00:00",
+     "outlet": "Canada's National Observer",
+     "title": "Could an EU carbon tax undo Canada’s 'alliance for the future' with Europe?",
+     "url": "https://www.nationalobserver.com/2026/11/03/news/could-eu-carbon-tax-undo-canadas-alliance-future-europe",
+     "ca": false,
+     "tie": ""
+    }
+   ],
+   "official": [
+    {
+     "outlet": "Mark Carney",
+     "title": "Prime Minister Carney to travel to Europe and Asia to diversify Canada’s international partnerships, increase our trade, and attract new investment",
+     "url": "https://www.pm.gc.ca/en/news/news-releases/2026/11/04/prime-minister-carney-travel-europe-and-asia-diversify-canadas",
+     "t": "Nov 4"
+    }
+   ],
+   "views": []
+  },
   "https://www.politico.com/live-updates/2026/11/05/congress/house-gop-old-guard-in-for-fight-01151139": {
    "story": "Capitol agenda: House GOP’s old guard is in for a fight",
    "us": true,
@@ -4725,7 +4825,118 @@
    "views": []
   }
  },
- "bds": [],
+ "bds": [
+  {
+   "id": "bd-auto-fcc46a1e",
+   "auto": true,
+   "desk": "Canada",
+   "status": "Developing",
+   "at": "2026-11-05T09:01:48+00:00",
+   "exact": true,
+   "img": "live/img/auto-fcc46a1e-ea1400e36b.jpg",
+   "credit": "via Narcity",
+   "pic": "globe",
+   "h": "U.S. midterm results spark joy among Canadians but trust in America remains shaky",
+   "lede": "Canadians 'overjoyed' after U.S. midterm elections",
+   "newl": "Now carried by 6 independent newsrooms.",
+   "rows": [
+    [
+     "Narcity",
+     "Canadians 'overjoyed' after U.S. midterm elections",
+     [
+      1
+     ]
+    ],
+    [
+     "Toronto Star",
+     "TORONTO - Many Canadians welcome the Democratic sweep of U.S. Congress, but have mixed views on whether voters' strong rebuke of President Donald Trump's administration will change their attitude toward",
+     [
+      2
+     ]
+    ],
+    [
+     "CityNews Winnipeg",
+     "OTTAWA — Control of both chambers of the U.S. Congress will shift to the Democrats next year, after Tuesday's midterm elections saw a blue wave wash over even some of the most reliably Republican states.",
+     [
+      7
+     ]
+    ]
+   ],
+   "src": [
+    [
+     "Narcity",
+     "U.S. midterm results spark joy among Canadians but trust in America remains shaky",
+     "https://www.narcity.com/canadians-overjoyed-after-u-s-midterm-elections"
+    ],
+    [
+     "Toronto Star",
+     "U.S. midterm results spark joy among Canadians but trust in America remains shaky",
+     "https://www.thestar.com/news/canada/u-s-midterm-results-spark-joy-among-canadians-but-trust-in-america-remains-shaky/article_73e9dbbf-a4e5-52dc-8645-e27e657b4a9a.html"
+    ],
+    [
+     "Times Colonist",
+     "U.S. midterm results spark joy among Canadians but trust in America remains shaky",
+     "https://www.timescolonist.com/the-mix/us-midterm-results-spark-joy-among-canadians-but-trust-in-america-remains-shaky-12982212"
+    ],
+    [
+     "The Canadian Press (via Winnipeg Free Press)",
+     "U.S. midterm results spark joy among Canadians but trust in America remains shaky",
+     "https://www.winnipegfreepress.com/business/2026/11/05/u-s-midterm-results-spark-joy-among-canadians-but-trust-in-america-remains-shaky"
+    ],
+    [
+     "Lethbridge Herald",
+     "U.S. midterm results spark joy among Canadians but trust in America remains shaky",
+     "https://lethbridgeherald.com/news/national-news/2026/11/05/u-s-midterm-results-spark-joy-among-canadians-but-trust-in-america-remains-shaky/"
+    ],
+    [
+     "CKOM / PAnow",
+     "U.S. midterm results spark joy among Canadians but trust in America remains shaky",
+     "https://www.ckom.com/2026/11/05/u-s-midterm-results-spark-joy-among-canadians-but-trust-in-america-remains-shaky/"
+    ],
+    [
+     "CityNews Winnipeg",
+     "Here’s how the U.S. midterm election results could affect Canada",
+     "https://winnipeg.citynews.ca/2026/11/05/heres-how-the-u-s-midterm-election-results-could-affect-canada/"
+    ],
+    [
+     "CityNews Vancouver",
+     "Here’s how the U.S. midterm election results could affect Canada",
+     "https://vancouver.citynews.ca/2026/11/05/heres-how-the-u-s-midterm-election-results-could-affect-canada/"
+    ],
+    [
+     "CityNews Montreal",
+     "Here’s how the U.S. midterm election results could affect Canada",
+     "https://montreal.citynews.ca/2026/11/05/heres-how-the-u-s-midterm-election-results-could-affect-canada/"
+    ],
+    [
+     "CityNews Halifax",
+     "Here’s how the U.S. midterm election results could affect Canada",
+     "https://halifax.citynews.ca/2026/11/05/heres-how-the-u-s-midterm-election-results-could-affect-canada/"
+    ],
+    [
+     "CityNews Edmonton",
+     "Here’s how the U.S. midterm election results could affect Canada",
+     "https://edmonton.citynews.ca/2026/11/05/heres-how-the-u-s-midterm-election-results-could-affect-canada/"
+    ],
+    [
+     "CityNews Calgary",
+     "Here’s how the U.S. midterm election results could affect Canada",
+     "https://calgary.citynews.ca/2026/11/05/heres-how-the-u-s-midterm-election-results-could-affect-canada/"
+    ],
+    [
+     "CityNews",
+     "Here’s how the U.S. midterm election results could affect Canada",
+     "https://toronto.citynews.ca/2026/11/05/heres-how-the-u-s-midterm-election-results-could-affect-canada/"
+    ],
+    [
+     "CTV News",
+     "Canada braces for Trump fallout as Democrats win big in U.S. midterms",
+     "https://www.ctvnews.ca/world/america-votes/article/canada-braces-for-trump-fallout-as-democrats-win-big-in-us-midterms/"
+    ]
+   ],
+   "lead": 1
+  }
+ ],
  "geo": {
   "-YVOgH-f4qQ": {
    "v": "unknown",
@@ -4752,8 +4963,8 @@
    "at": "2026-10-29T02:33:18.869844+00:00"
   },
   "0bLqaqPAt_k": {
-   "v": "ok",
-   "at": "2026-11-04T04:29:38.186179+00:00"
+   "v": "unplayable",
+   "at": "2026-11-05T10:25:49.343484+00:00"
   },
   "0tRhtNBdSb0": {
    "v": "unknown",
@@ -4876,8 +5087,8 @@
    "at": "2026-10-29T19:14:04.423397+00:00"
   },
   "A_p82aTTRbE": {
-   "v": "ok",
-   "at": "2026-11-04T13:55:09.493961+00:00"
+   "v": "unplayable",
+   "at": "2026-11-05T10:25:49.343484+00:00"
   },
   "AjJr_wCVx70": {
    "v": "unknown",
@@ -5312,8 +5523,8 @@
    "at": "2026-10-29T02:33:18.869844+00:00"
   },
   "nfy6JJILPJI": {
-   "v": "ok",
-   "at": "2026-11-03T09:44:46.184724+00:00"
+   "v": "unplayable",
+   "at": "2026-11-05T10:25:49.343484+00:00"
   },
   "p0SJIuzrM0A": {
    "v": "unknown",
@@ -5453,17 +5664,14 @@
   }
  },
  "geo_blocked": [
-  "-NabWfv-VdA"
- ],
- "noembed": [
+  "-NabWfv-VdA",
   "0bLqaqPAt_k",
   "A_p82aTTRbE",
-  "J3FV4iY8p5w",
+  "mluaCvwcbuw",
+  "nfy6JJILPJI"
+ ],
+ "noembed": [
   "L6qtnHZxwEw",
-  "NuEr0Q_AS6U",
-  "c9v26lW7-j4",
-  "ldElU-Q5Qyo",
-  "nfy6JJILPJI",
-  "t_HBrWb84eY"
+  "c9v26lW7-j4"
  ]
 }
