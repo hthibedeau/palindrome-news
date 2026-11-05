@@ -7868,12 +7868,14 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
   #autoBreaking.solo .ab-story::after { content: ""; display: block; clear: both; }
 }
 </style>
+
+
 <!-- cmb:start -->
 <style id="cmb">
 /* ONE PLACE FOR EACH THING (Hannah, Wed Nov 4, 2026: "there is also a lot of duplication on the page. What would you
    suggest combining to make the page even stronger" ... "do that and then I want to look at it. Be prepared to go back
    to this if I dont"). A preview layer: index.html is untouched until she adopts it (tools/build_combine_preview.py). */
-.cmb-dup, .cmb-old, .cmb-off { display: none !important; }
+.cmb-dup, .cmb-old, .cmb-off, .cmb-merged, .cmb-twice { display: none !important; }
 #bigWeek.cmb-stay { margin-top: 0; }
 #bigWeek.cmb-stay > .band-head h2 { display: none; }
 .cmb-sec { margin: 40px 0; }
@@ -7956,6 +7958,40 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       c.classList.toggle('cmb-dup', !!(ev && ev.days < 0 && topEv === ev.name)); });
   }
 
+  // 1b. ONE LIST OF REPORTS IN THE TOP STORY (Hannah, Wed Nov 4, 2026, on "What each newsroom reports" and "Connected
+  // to this story": "These two segments seem repetitive"). Both lists are newsrooms' headlines on the same story, so
+  // they become one: "The latest from every newsroom", the primary source first, then newest first, each headline
+  // once (same article or same wire headline). Think-tank pieces keep their "Think tank" label.
+  const tmin = (t) => { const m = String(t || '').match(/(\d{1,2}):(\d{2})\s*([ap])\.?m/i); if (!m) return -1; let h = +m[1] % 12; if (/p/i.test(m[3])) h += 12; return h * 60 + +m[2]; };
+  const DAY = { sun: 0, mon: 1, tue: 2, wed: 3, thu: 4, fri: 5, sat: 6 };
+  function when(li) { const t = ($('time', li) || {}).textContent || ($('.rel-k, .kind', li) || {}).textContent || li.textContent.slice(0, 20);
+    const d = (String(t).match(/\b(sun|mon|tue|wed|thu|fri|sat)/i) || [])[1]; const today = new Date().getDay();
+    const back = d ? (today - DAY[d.toLowerCase()] + 7) % 7 : 0; const m = tmin(t); return m < 0 ? -1 : (7 - back) * 1440 + m; }
+  function oneList() {
+    $$('#autoBreaking .ab-story').forEach((st) => {
+      const reps = $('.ab-reps', st), rel = $('.rel-box', st); if (!reps || !rel) return;
+      const ol = $(':scope > ol', reps), rol = $('ol, ul', rel); if (!ol || !rol) return;
+      const seenU = new Set(), seenH = new Set();
+      [...ol.children].forEach((li) => { const a = $('a[href]', li); if (!a) return;
+        // the same wire headline from a second newsroom: one line, the second newsroom's name added to it
+        if (seenH.has(hkey(a.textContent)) && !li.classList.contains('ab-primary')) { const first = [...ol.children].find((x) => x !== li && hkey(($('a[href]', x) || {}).textContent) === hkey(a.textContent));
+          const o = $('.o', li); if (first && o && !first.querySelector(`[data-cmb-also="${o.textContent}"]`)) { const add = document.createElement('a'); add.className = 'o'; add.href = a.href; add.target = '_blank'; add.rel = 'noopener'; add.dataset.cmbAlso = o.textContent; add.textContent = o.textContent; ($('.o', first) || a).after(document.createTextNode(' '), add); }
+          li.remove(); return; }
+        seenU.add(ukey(a.href)); seenH.add(hkey(a.textContent)); });
+      [...rol.children].forEach((li) => { const a = $('a[href]', li); if (!a) return;
+        if (seenU.has(ukey(a.href)) || seenH.has(hkey(a.textContent))) { li.remove(); return; }
+        seenU.add(ukey(a.href)); seenH.add(hkey(a.textContent)); li.classList.add('cmb-from-rel'); ol.appendChild(li); });
+      const items = [...ol.children];
+      const prim = items.filter((li) => li.classList.contains('ab-primary'));
+      const rest = items.filter((li) => !prim.includes(li)).sort((a, b) => when(b) - when(a));
+      [...prim, ...rest].forEach((li) => ol.appendChild(li));
+      rel.classList.add('cmb-merged');
+      const t = $('.ab-reps-t', reps); if (t && !t.dataset.cmb) { t.dataset.cmb = '1'; const n = [...t.childNodes].find((x) => x.nodeType === 3 && /What each newsroom reports/.test(x.textContent)); if (n) n.textContent = 'The latest from every newsroom '; }
+      const k = $('.pn-n', reps); if (k) k.textContent = ol.children.length + ' reports';
+      const more = $(':scope > .cr-more', reps); if (more && /\d/.test(more.textContent)) more.textContent = more.textContent.replace(/\d+/, ol.children.length);
+    });
+  }
+
   // 2. "How this developed" goes into the top story, as its timeline
   function timeline() {
     const dev = $('#developed'), top = $('#autoBreaking'); if (!dev || !top) return;
@@ -8034,6 +8070,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
 
   function run() {
     try {
+      oneList();
       timeline();
       dedupe();
       tabs('cmb-coming', 'Coming up', 'The scheduled events the news is building to, the dates and decisions ahead, and every story in progress.',
