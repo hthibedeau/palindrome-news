@@ -1,23 +1,38 @@
 {
- "checked": "2026-11-05T04:20:55.104402+00:00",
- "labels": 262,
+ "checked": "2026-11-05T05:24:37.677801+00:00",
+ "labels": 209,
  "problems": [],
  "guard": {
   "fixed": [
    {
-    "label": "CBS News",
-    "was": "(card link) cbsnews.com",
-    "now": "https://www.cbsnews.com/live-updates/election-day-2026-midterms/"
+    "label": "Global News ↗",
+    "was": "(card link) foxnews.com",
+    "now": "https://globalnews.ca/news/12137608/danielle-smith-midterms-tariffs/"
+   },
+   {
+    "label": "CTV News ↗",
+    "was": "(card link) foxnews.com",
+    "now": "https://www.ctvnews.ca/world/america-votes/article/canada-braces-for-trump-fallout-as-democrats-win-big-in-us-midterms/"
+   },
+   {
+    "label": "CityNews Edmonton ↗",
+    "was": "(card link) foxnews.com",
+    "now": "https://edmonton.citynews.ca/2026/11/04/u-s-midterm-results-raise-hopes-in-alberta-for-an-ease-of-trade-tensions/"
+   },
+   {
+    "label": "CP24 ↗",
+    "was": "(card link) foxnews.com",
+    "now": "https://www.cp24.com/news/canada/2026/11/04/ottawa-publicly-cautious-privately-buoyed-by-us-midterm-results/"
+   },
+   {
+    "label": "BNN Bloomberg ↗",
+    "was": "(card link) foxnews.com",
+    "now": "https://www.bnnbloomberg.ca/tariffs/2026/11/04/trumps-republicans-lost-the-house-and-senate-in-midterm-elections-what-could-it-mean-for-canada/"
    },
    {
     "label": "PBS News",
     "was": "(card link) pbs.org",
     "now": "https://www.pbs.org/newshour/show/midterm-voters-rebuke-trump-handing-democrats-both-chambers-of-congress"
-   },
-   {
-    "label": "Fox News",
-    "was": "(card link) foxnews.com",
-    "now": "https://www.foxnews.com/media/charlamagne-tha-god-warns-democrats-dont-get-comfortable-after-winning-house-senate"
    },
    {
     "label": "NPR",
@@ -31,6 +46,15 @@
    }
   ],
   "disabled": [],
-  "lifted": []
+  "lifted": [
+   {
+    "label": "The Canadian Press · Radio-Canada · CBC News",
+    "cardOpens": "timescolonist.com"
+   },
+   {
+    "label": "The Canadian Press",
+    "cardOpens": "medicinehatnews.com"
+   }
+  ]
  }
 }
