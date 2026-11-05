@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-05T04:08:56.536701+00:00",
- "checkedLabel": "Wed 11:08 p.m.",
+ "checked": "2026-11-05T04:18:57.082845+00:00",
+ "checkedLabel": "Wed 11:18 p.m.",
  "stories": [
   {
    "key": "top",
@@ -49,13 +49,22 @@
  ],
  "wire": [
   [
+   "Wed 11:15 p.m.",
+   "U.S.",
+   "Midterm fallout begins after Democrats win control of Congress",
+   "CBS News",
+   "https://www.cbsnews.com/live-updates/election-day-2026-midterms/",
+   "2026-11-05T04:15:32+00:00",
+   8
+  ],
+  [
    "Wed 11:04 p.m.",
    "World",
    "Hong Kong pro-democracy activist Joshua Wong sentenced to 10 years in prison in national security case",
    "The Guardian",
    "https://www.theguardian.com/world/2026/nov/05/hong-kong-joshua-wong-sentenced-national-security-case",
    "2026-11-05T04:04:49+00:00",
-   7
+   6
   ],
   [
    "Wed 11:00 p.m.",
@@ -82,7 +91,7 @@
    "CBS News",
    "https://www.cbsnews.com/live-updates/senate-election-results-2026/",
    "2026-11-05T03:58:35+00:00",
-   5
+   1
   ],
   [
    "Wed 10:58 p.m.",
@@ -91,7 +100,7 @@
    "CBS News",
    "https://www.cbsnews.com/live-updates/house-election-results-2026/",
    "2026-11-05T03:58:16+00:00",
-   7
+   1
   ],
   [
    "Wed 10:55 p.m.",
@@ -109,7 +118,7 @@
    "BBC News",
    "https://www.bbc.co.uk/news/articles/crz98zqkz7z0o?at_medium=RSS&at_campaign=rss",
    "2026-11-05T03:47:56+00:00",
-   6
+   1
   ],
   [
    "Wed 10:41 p.m.",
@@ -155,15 +164,6 @@
    "https://globalnews.ca/news/12137615/ucp-riding-map-ndp-rigged/",
    "2026-11-05T03:24:11+00:00",
    2
-  ],
-  [
-   "Wed 10:22 p.m.",
-   "U.S.",
-   "Midterm fallout begins after Democrats win control of Congress",
-   "CBS News",
-   "https://www.cbsnews.com/live-updates/election-day-2026-midterms/",
-   "2026-11-05T03:22:51+00:00",
-   1
   ],
   [
    "Wed 10:21 p.m.",
@@ -303,13 +303,11 @@
  ],
  "leads": [
   {
-   "score": 19,
-   "title": "JD Vance blames Iran war for midterm thumping. Is he really blaming Trump?",
-   "url": "https://www.cbc.ca/news/world/trump-midterms-jd-vance-iran-war-9.7409264",
+   "score": 16,
+   "title": "Budget 2026: Affordability Tops Canadians’ Concerns as Threats from Trump and AI Rise, But Few Expect the Budget to Make Their Lives Better",
+   "url": "https://abacusdata.ca/budget-2026-affordability-tops-canadians-concerns-as-threats-from-trump-and-ai-rise-but-few-expect-the-budget-to-make-their-lives-better/",
    "outlets": 14,
-   "why": [
-    "CBC News front #1"
-   ],
+   "why": [],
    "theme": ""
   },
   {
@@ -332,8 +330,8 @@
   },
   {
    "score": 13,
-   "title": "Alberta Premier Smith says U.S. midterms ‘vindication’ of her approach to tariffs",
-   "url": "https://globalnews.ca/news/12137608/danielle-smith-midterms-tariffs/",
+   "title": "Budget 2026: Affordability Tops Canadians’ Concerns as Threats from Trump and AI Rise, But Few Expect the Budget to Make Their Lives Better",
+   "url": "https://abacusdata.ca/budget-2026-affordability-tops-canadians-concerns-as-threats-from-trump-and-ai-rise-but-few-expect-the-budget-to-make-their-lives-better/",
    "outlets": 5,
    "why": [
     "National Newswatch #15",
@@ -355,11 +353,15 @@
   },
   {
    "score": 10,
-   "title": "Democrats win House majority with Trump approval at historic low",
-   "url": "https://www.cbsnews.com/live-updates/house-election-results-2026/",
-   "outlets": 8,
-   "why": [],
-   "theme": ""
+   "title": "Budget 2026: Affordability Tops Canadians’ Concerns as Threats from Trump and AI Rise, But Few Expect the Budget to Make Their Lives Better",
+   "url": "https://abacusdata.ca/budget-2026-affordability-tops-canadians-concerns-as-threats-from-trump-and-ai-rise-but-few-expect-the-budget-to-make-their-lives-better/",
+   "outlets": 1,
+   "why": [
+    "National Newswatch #3",
+    "National Newswatch #14",
+    "CBC News front #1"
+   ],
+   "theme": "Federal budget"
   },
   {
    "score": 8,
@@ -387,8 +389,8 @@
   },
   {
    "score": 7,
-   "title": "Motorcade honours B.C. soldier killed in fire at CFB Wainwright",
-   "url": "https://www.cbc.ca/news/canada/british-columbia/motorcade-private-aidan-goulding-vancouver-9.7410048",
+   "title": "Democrat Teresa Benitez-Thompson wins election to U.S. House in Nevada's 2nd Congressional District",
+   "url": "https://www.thestar.com/news/world/united-states/democrat-teresa-benitez-thompson-wins-election-to-u-s-house-in-nevada-s-2nd-congressional-district/article_8a35ad94-4164-56eb-a113-f3eb0a82498a.html",
    "outlets": 5,
    "why": [],
    "theme": ""
@@ -599,15 +601,15 @@
      "\\b(U\\.?S\\.?|American|Americans|Trump|Republicans?|Democrats?|GOP|Congress|Senate|House)\\b"
     ],
     "score": 100,
-    "outlets": 23,
-    "carriers": 34,
-    "independent": 23,
+    "outlets": 22,
+    "carriers": 33,
+    "independent": 22,
     "tag": "Breaking",
     "title": "Midterm fallout begins after Democrats win control of Congress",
     "url": "https://www.cbsnews.com/live-updates/election-day-2026-midterms/",
     "outlet": "CBS News",
-    "t": "Wed 6:09 p.m.",
-    "iso": "2026-11-04T23:09:00-05:00",
+    "t": "Wed 6:15 p.m.",
+    "iso": "2026-11-04T23:15:32-05:00",
     "summary": "The impact of Democrats' sweeping victories in the 2026 midterm elections is already being felt in Washington. Follow live updates here.",
     "first": {
      "outlet": "Canada's National Observer",
@@ -616,7 +618,7 @@
      "title": "Blue wave crashes over American politics in midterm that rebukes Trump policies",
      "iso": "2026-11-04T11:33:55+00:00"
     },
-    "newest": "2026-11-05T03:58:49+00:00",
+    "newest": "2026-11-05T04:15:32+00:00",
     "photo": {
      "src": "live/img/event-u-s-midterm-elections-2026-11-03-196a683e2e.jpg",
      "orig": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/04/aab2faa6-9e5b-45e7-8988-22c1ff601f3d/thumbnail/1200x630g2/d56e3f9d8fbd290c6725f0280e144f70/ap26308594251394.jpg",
@@ -683,8 +685,16 @@
     ],
     "reports": [
      {
-      "t": "Wed 6:09 p.m.",
-      "iso": "2026-11-04T23:09:00-05:00",
+      "t": "Wed 6:15 p.m.",
+      "iso": "2026-11-04T23:15:32-05:00",
+      "outlet": "CBS News",
+      "title": "Midterm fallout begins after Democrats win control of Congress",
+      "url": "https://www.cbsnews.com/live-updates/election-day-2026-midterms/",
+      "desc": "The impact of Democrats' sweeping victories in the 2026 midterm elections is already being felt in Washington. Follow live updates here."
+     },
+     {
+      "t": "Wed 11:15 p.m.",
+      "iso": "2026-11-05T04:15:32+00:00",
       "outlet": "CBS News",
       "title": "Midterm fallout begins after Democrats win control of Congress",
       "url": "https://www.cbsnews.com/live-updates/election-day-2026-midterms/",
@@ -697,14 +707,6 @@
       "title": "US midterm elections 2026 live: Democratic lead grows in Mississippi Senate race as Republican blame game begins",
       "url": "https://www.theguardian.com/us-news/live/2026/nov/04/midterm-elections-results-senate-house-michigan-maine-mississippi-latest-updates",
       "desc": "Scott Colom leads Republican Cindy Hyde-Smith by 1,138 votes with 96% of the vote counted – a small but growing margin"
-     },
-     {
-      "t": "Wed 10:58 p.m.",
-      "iso": "2026-11-05T03:58:16+00:00",
-      "outlet": "CBS News",
-      "title": "Democrats win House majority with Trump approval at historic low",
-      "url": "https://www.cbsnews.com/live-updates/house-election-results-2026/",
-      "desc": "Democrats won control of the House in the 2026 midterm elections, CBS News projects, with victories in battleground districts across the country."
      },
      {
       "t": "Wed 10:40 p.m.",
@@ -779,20 +781,20 @@
       "desc": ""
      },
      {
-      "t": "Wed 8:52 p.m.",
-      "iso": "2026-11-05T01:52:57+00:00",
-      "outlet": "Middle East Eye",
-      "title": "Here's why US Republicans lost the midterms so badly",
-      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/heres-why-us-republicans-lost-midterms-so-badly",
-      "desc": ""
-     },
-     {
       "t": "Wed 8:44 p.m.",
       "iso": "2026-11-05T01:44:21+00:00",
       "outlet": "The Hill",
       "title": "Democrats flip open Arizona House seat",
       "url": "https://thehill.com/homenews/house/6190311-shah-wins-arizona-house-race/",
       "desc": "px-captcha"
+     },
+     {
+      "t": "Wed 7:13 p.m.",
+      "iso": "2026-11-05T00:13:45+00:00",
+      "outlet": "APTN News",
+      "title": "‘The grift stops now’: Democratic midterm elections sweep brings in first Indigenous governor and senator in U.S. history",
+      "url": "https://www.aptnnews.ca/national-news/the-grift-stops-now-democratic-midterm-elections-sweep-brings-in-first-indigenous-governor-and-senator-in-u-s-history/",
+      "desc": "The 2026 U.S. midterms resulted in several firsts, including the victories of Peggy Flanagan and Deb Haaland in Minnesota and New Mexico."
      }
     ],
     "sources": [
@@ -808,7 +810,18 @@
       "copies": []
      },
      {
-      "t": "Wed 6:09 p.m.",
+      "t": "Wed 6:15 p.m.",
+      "primary": false,
+      "outlet": "CBS News",
+      "title": "Midterm fallout begins after Democrats win control of Congress",
+      "url": "https://www.cbsnews.com/live-updates/election-day-2026-midterms/",
+      "desc": "The impact of Democrats' sweeping victories in the 2026 midterm elections is already being felt in Washington. Follow live updates here.",
+      "wire": "",
+      "by": [],
+      "copies": []
+     },
+     {
+      "t": "Wed 11:15 p.m.",
       "primary": false,
       "outlet": "CBS News",
       "title": "Midterm fallout begins after Democrats win control of Congress",
@@ -825,17 +838,6 @@
       "title": "US midterm elections 2026 live: Democratic lead grows in Mississippi Senate race as Republican blame game begins",
       "url": "https://www.theguardian.com/us-news/live/2026/nov/04/midterm-elections-results-senate-house-michigan-maine-mississippi-latest-updates",
       "desc": "Scott Colom leads Republican Cindy Hyde-Smith by 1,138 votes with 96% of the vote counted – a small but growing margin",
-      "wire": "",
-      "by": [],
-      "copies": []
-     },
-     {
-      "t": "Wed 10:58 p.m.",
-      "primary": false,
-      "outlet": "CBS News",
-      "title": "Democrats win House majority with Trump approval at historic low",
-      "url": "https://www.cbsnews.com/live-updates/house-election-results-2026/",
-      "desc": "Democrats won control of the House in the 2026 midterm elections, CBS News projects, with victories in battleground districts across the country.",
       "wire": "",
       "by": [],
       "copies": []
@@ -940,23 +942,23 @@
       "copies": []
      },
      {
-      "t": "Wed 8:52 p.m.",
-      "primary": false,
-      "outlet": "Middle East Eye",
-      "title": "Here's why US Republicans lost the midterms so badly",
-      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/heres-why-us-republicans-lost-midterms-so-badly",
-      "desc": "",
-      "wire": "",
-      "by": [],
-      "copies": []
-     },
-     {
       "t": "Wed 8:44 p.m.",
       "primary": false,
       "outlet": "The Hill",
       "title": "Democrats flip open Arizona House seat",
       "url": "https://thehill.com/homenews/house/6190311-shah-wins-arizona-house-race/",
       "desc": "px-captcha",
+      "wire": "",
+      "by": [],
+      "copies": []
+     },
+     {
+      "t": "Wed 7:13 p.m.",
+      "primary": false,
+      "outlet": "APTN News",
+      "title": "‘The grift stops now’: Democratic midterm elections sweep brings in first Indigenous governor and senator in U.S. history",
+      "url": "https://www.aptnnews.ca/national-news/the-grift-stops-now-democratic-midterm-elections-sweep-brings-in-first-indigenous-governor-and-senator-in-u-s-history/",
+      "desc": "The 2026 U.S. midterms resulted in several firsts, including the victories of Peggy Flanagan and Deb Haaland in Minnesota and New Mexico.",
       "wire": "",
       "by": [],
       "copies": []
@@ -1450,7 +1452,7 @@
     "live": "2026 Midterm Election Results",
     "weight": 159,
     "score": 100,
-    "independent": 23,
+    "independent": 22,
     "most_read": 5,
     "canada": "tie",
     "theme": "U.S. midterm elections",
@@ -1471,7 +1473,7 @@
      "NPR"
     ],
     "rule": "Today is the day of a major scheduled event (election day, budget day): it leads all day, with its Canadian angle",
-    "carriers": 34,
+    "carriers": 33,
     "judgment": "national",
     "why_judged": "National: U.S. midterm elections is today."
    },
@@ -1499,8 +1501,8 @@
     "url": "https://www.ctvnews.ca/world/article/republicans-quickly-turn-against-pete-hegseth-after-midterms-rout/",
     "rank": 3,
     "live": "",
-    "weight": 35.0,
-    "score": 19,
+    "weight": 32.0,
+    "score": 16,
     "independent": 3,
     "most_read": 0,
     "canada": "tie",
@@ -1525,8 +1527,8 @@
     "url": "https://toronto.citynews.ca/2026/11/04/filipino-community-anticipates-the-release-of-the-2027-federal-budget/",
     "rank": 4,
     "live": "",
-    "weight": 27.5,
-    "score": 7,
+    "weight": 30.5,
+    "score": 10,
     "independent": 4,
     "most_read": 0,
     "canada": "general",
@@ -1546,9 +1548,9 @@
     "url": "https://www.cbc.ca/news/canada/british-columbia/motorcade-private-aidan-goulding-vancouver-9.7410048",
     "rank": 5,
     "live": "",
-    "weight": 32.5,
-    "score": 7,
-    "independent": 4,
+    "weight": 30.0,
+    "score": 6,
+    "independent": 3,
     "most_read": 0,
     "canada": "canadian",
     "theme": "",
@@ -1556,7 +1558,7 @@
     "fronts": 0,
     "fronts_who": [],
     "rule": "Canadian, still developing",
-    "carriers": 5,
+    "carriers": 4,
     "judgment": "national",
     "why_judged": "National: affects many people; carried beyond one city."
    },
@@ -1586,11 +1588,6 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Democrats win House majority with Trump approval at historic low",
-    "score": 10,
-    "why": "not built: only 1 independent report(s) (2 sites)"
-   },
-   {
     "title": "Liberal leadership hopefuls touch on taxes in last debate before voting begins",
     "score": 8,
     "why": "not built: only 1 independent report(s) (5 sites)"
@@ -1616,12 +1613,12 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Valkyries celebrate WNBA championship with San Francisco and Oakland fans",
+    "title": "Russian hacker group claims to have posted B.C. school district information on dark web",
     "score": 6,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "JetBlue raises baggage fees for a second time as jet fuel prices stay elevated",
+    "title": "Valkyries celebrate WNBA championship with San Francisco and Oakland fans",
     "score": 6,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
@@ -1629,6 +1626,11 @@
     "title": "MPs voice support for recognizing Afghanistan, Gulf veterans for wartime service",
     "score": 6,
     "why": "not built: only 1 independent report(s) (5 sites)"
+   },
+   {
+    "title": "Private mansions, famous families, and hedging donors: tracking private hosts and repeat guests on the federal fundraising circuit",
+    "score": 5,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
   ],
   "moved": [
@@ -1651,14 +1653,14 @@
    {
     "key": "auto-4fb881f7",
     "words": [
+     "champagne",
      "watching",
-     "strong",
      "fiscal",
-     "giving",
+     "strong",
      "budget",
      "hawks"
     ],
-    "score": 7,
+    "score": 10,
     "outlets": 4,
     "carriers": 11,
     "tag": "Developing",
@@ -1683,7 +1685,7 @@
      "alt": "Filipino community anticipates the release of the 2027 federal budget",
      "outlet": "CityNews",
      "url": "https://toronto.citynews.ca/2026/11/04/filipino-community-anticipates-the-release-of-the-2027-federal-budget/",
-     "since": "2026-11-05T04:12:53.948623+00:00"
+     "since": "2026-11-05T04:21:21.537719+00:00"
     },
     "photo_seen": [
      "https://toronto.citynews.ca/wp-content/blogs.dir/sites/10/2026/11/05/OTNF-FILCOM-BUDGET-PROPOSAL-PIC9-2026OCT22-scaled.jpg"
@@ -1946,7 +1948,7 @@
     ],
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (3 cities).",
-    "weight": 27.5,
+    "weight": 30.5,
     "videos": [
      {
       "net": "CPAC",
@@ -1965,18 +1967,18 @@
       "up": ""
      },
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=KRLXIbiyr8I",
-      "title": "What to expect from Carney government's second budget",
-      "img": "https://i.ytimg.com/vi/KRLXIbiyr8I/hqdefault.jpg",
+      "net": "APTN News",
+      "url": "https://www.youtube.com/watch?v=1SYD1rby3wQ",
+      "title": "What the Assembly of First Nations wants in the 2026 federal budget",
+      "img": "https://i.ytimg.com/vi/1SYD1rby3wQ/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=pm1MNMbBzEM",
-      "title": "Canada immigration levels to be updated in Carney government's federal budget, sources say",
-      "img": "https://i.ytimg.com/vi/pm1MNMbBzEM/hqdefault.jpg",
+      "net": "APTN News",
+      "url": "https://www.youtube.com/watch?v=MXSBqdMI5Ho",
+      "title": "APTN National News: November 3, 2026 – Rally for NDTR victims, AFN addresses federal budget",
+      "img": "https://i.ytimg.com/vi/MXSBqdMI5Ho/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -2090,20 +2092,6 @@
    "geo": "unknown"
   },
   {
-   "id": "DDLJJMeWHO8",
-   "r": "ca",
-   "o": "CTV News",
-   "t": "20 injured in northern B.C. bus crash",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=DDLJJMeWHO8",
-   "img": "https://i.ytimg.com/vi/DDLJJMeWHO8/hqdefault.jpg",
-   "up": "2026-11-04",
-   "added": "2026-11-05T03:21:34.273931+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "OVfMOTjlOY8",
    "r": "ca",
    "o": "CPAC",
@@ -2184,6 +2172,20 @@
    "img": "https://i.ytimg.com/vi/EnHNKZtszIw/hqdefault.jpg",
    "up": "2026-11-04",
    "added": "2026-11-05T04:01:33.984402+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "rWM_ftdz-xQ",
+   "r": "ca",
+   "o": "CTV News",
+   "t": "U.S. political landscape poses impact on Canada's trade outlook | CTV National News for Nov. 4, 2026",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=rWM_ftdz-xQ",
+   "img": "https://i.ytimg.com/vi/rWM_ftdz-xQ/hqdefault.jpg",
+   "up": "2026-11-04",
+   "added": "2026-11-05T04:18:57.082845+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2289,7 +2291,7 @@
    "id": "_1G5Z8mu-kA",
    "r": "us",
    "o": "CNN",
-   "t": "'We were not immune to this wave': DeSantis on how the FL GOP survived",
+   "t": "The blue wave flipped seats across the US: How the Florida GOP survived",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=_1G5Z8mu-kA",
@@ -2314,24 +2316,10 @@
    "geo": "unknown"
   },
   {
-   "id": "gCCcdPCZNfY",
-   "r": "us",
-   "o": "CBS News",
-   "t": "What comes next as Democrats win House, Senate",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=gCCcdPCZNfY",
-   "img": "https://i.ytimg.com/vi/gCCcdPCZNfY/hqdefault.jpg",
-   "up": "2026-11-04",
-   "added": "2026-11-05T03:03:18.088224+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "WVRxYD45RA8",
    "r": "us",
    "o": "ABC News",
-   "t": "ABC World News Tonight with David Muir Full Broadcast - Nov. 4, 2026",
+   "t": "Trump acknowledges war’s impact on midterms: ABC World News Tonight with David Muir - Nov. 4, 2026",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=WVRxYD45RA8",
@@ -2352,20 +2340,6 @@
    "img": "https://i.ytimg.com/vi/v0zoi2T9OnU/hqdefault.jpg",
    "up": "2026-11-04",
    "added": "2026-11-05T03:03:18.088224+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "og-lZGzQ9jQ",
-   "r": "us",
-   "o": "CBS News",
-   "t": "Presidential historian calls Democrats' midterm wins \"history in the making\"",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=og-lZGzQ9jQ",
-   "img": "https://i.ytimg.com/vi/og-lZGzQ9jQ/hqdefault.jpg",
-   "up": "2026-11-04",
-   "added": "2026-11-05T03:21:34.273931+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2401,7 +2375,7 @@
    "id": "-xrVnzP73PM",
    "r": "us",
    "o": "CNN",
-   "t": "Zohran Mamdani & Bernie Sanders react to Dems' historic midterm wins",
+   "t": "NYC Mayor Mamdani on why Dems should work with Trump",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=-xrVnzP73PM",
@@ -3004,9 +2978,9 @@
   "lines": [
    "Good evening. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
    "Finance Minister François-Philippe Champagne says Thursday’s federal budget is about giving Canada a “strong footing” to navigate a more volatile world, The Canadian Press reports.",
+   "Motorcade escorts remains of soldier killed at CFB Wainwright to B.C. funeral home, Yukon News reports.",
    "Republicans quickly turn against Pete Hegseth after midterms rout, The Canadian Press reports.",
    "Wong, 30, has been imprisoned since 2020 and is the only activist in Hong Kong prosecuted twice under national security laws, The Associated Press reports.",
-   "Motorcade escorts remains of soldier killed at CFB Wainwright to B.C. funeral home, Yukon News reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
   ]
  },
@@ -3089,38 +3063,6 @@
    "href": "https://www.pm.gc.ca/en/news/news-releases/2026/11/04/prime-minister-carney-travel-europe-and-asia-diversify-canadas",
    "report": false,
    "iso": "2026-11-04T17:00:02+00:00",
-   "auto": true
-  },
-  {
-   "cat": "intl",
-   "media": "none",
-   "initials": "UN",
-   "name": "United Nations",
-   "role": "UN News",
-   "date": "Nov 4",
-   "platform": "Official statement",
-   "handle": "news.un.org",
-   "hed": "UN peacekeeping chief warns of ‘security vacuum’ as Blue Helmets leave Lebanon and Western Sahara",
-   "summary": "The UN’s peacekeeping chief warned on Wednesday that the withdrawal of “Blue Helmets” from Lebanon and Western Sahara risks leaving a dangerous security vacuum, while the Security Council remains divided over what, if anything, should…",
-   "href": "https://news.un.org/feed/view/en/story/2026/11/1168741",
-   "report": false,
-   "iso": "2026-11-04T12:00:00+00:00",
-   "auto": true
-  },
-  {
-   "cat": "intl",
-   "media": "none",
-   "initials": "UN",
-   "name": "United Nations",
-   "role": "UN News",
-   "date": "Nov 4",
-   "platform": "Official statement",
-   "handle": "news.un.org",
-   "hed": "Gunfire damages tents at Rafah displacement site in Gaza, as aid teams prepare for winter storms",
-   "summary": "Gunfire hit and damaged multiple tents at a displacement site in Gaza’s northern Rafah region on Tuesday, reportedly causing injuries and forcing a humanitarian partner to leave the area, the UN aid coordination office (OCHA) has said.",
-   "href": "https://news.un.org/feed/view/en/story/2026/11/1168740",
-   "report": false,
-   "iso": "2026-11-04T12:00:00+00:00",
    "auto": true
   },
   {
@@ -3384,11 +3326,11 @@
    "city": "Washington",
    "tz": "America/New_York",
    "world": false,
-   "w": "Election",
-   "u": "https://www.bbc.co.uk/news/articles/crz98zqkz7z0o?at_medium=RSS&at_campaign=rss",
-   "title": "Vance walks Trump tightrope with scathing election critique blaming Iran war",
-   "outlet": "BBC News",
-   "t": "Wed 10:47 p.m.",
+   "w": "Midterms",
+   "u": "https://www.cbsnews.com/live-updates/house-election-results-2026/",
+   "title": "Democrats win House majority with Trump approval at historic low",
+   "outlet": "CBS News",
+   "t": "Wed 10:58 p.m.",
    "hot": true
   },
   {
@@ -3400,6 +3342,17 @@
    "title": "Hong Kong pro-democracy activist Joshua Wong sentenced to 10 years in prison in national security case",
    "outlet": "The Guardian",
    "t": "Wed 11:04 p.m.",
+   "hot": true
+  },
+  {
+   "city": "Tehran",
+   "tz": "Asia/Tehran",
+   "world": true,
+   "w": "Election",
+   "u": "https://www.bbc.co.uk/news/articles/crz98zqkz7z0o?at_medium=RSS&at_campaign=rss",
+   "title": "Vance walks Trump tightrope with scathing election critique blaming Iran war",
+   "outlet": "BBC News",
+   "t": "Wed 10:47 p.m.",
    "hot": true
   },
   {
@@ -3769,13 +3722,13 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Wed 10:47 p.m.",
-   "iso": "2026-11-05T03:47:56+00:00",
-   "title": "Vance walks Trump tightrope with scathing election critique blaming Iran war",
-   "summary": "The vice-president's blunt assessment of Republican election defeat marked one of the sharpest breaks with a sitting president in recent memory.",
-   "outlet": "BBC News, CTV News, CP24, BNN Bloomberg, The Guardian, The Hill",
-   "url": "https://www.bbc.co.uk/news/articles/crz98zqkz7z0o?at_medium=RSS&at_campaign=rss",
-   "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/f611/live/a9e3b7f0-d8cb-11f1-91f1-d78b0d8c70b4.jpg"
+   "t": "Wed 10:58 p.m.",
+   "iso": "2026-11-05T03:58:16+00:00",
+   "title": "Democrats win House majority with Trump approval at historic low",
+   "summary": "Democrats won control of the House in the 2026 midterm elections, CBS News projects, with victories in battleground districts across the country.",
+   "outlet": "CBS News, BBC News, CTV News, CP24, BNN Bloomberg, Fox News",
+   "url": "https://www.cbsnews.com/live-updates/house-election-results-2026/",
+   "img": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/11/04/e0aa6645-c735-473e-ab3f-481fda3fd14c/thumbnail/1200x630g3/13efd6c48b9a8ae69b073a71f63d9c4c/gettyimages-2283164137.jpg"
   },
   {
    "desk": "business",
@@ -3798,17 +3751,6 @@
    "outlet": "The Guardian, BBC News, CBC News, Toronto Star, The Canadian Press (via Winnipeg Free Press), Times Colonist",
    "url": "https://www.theguardian.com/world/2026/nov/05/hong-kong-joshua-wong-sentenced-national-security-case",
    "img": "https://i.guim.co.uk/img/media/d9bf9f9b9523e26c98269088295afe0101408a09/745_0_4164_3333/master/4164.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c36e2cc17a44c66cca13673910e713a8"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Wed 10:58 p.m.",
-   "iso": "2026-11-05T03:58:16+00:00",
-   "title": "Democrats win House majority with Trump approval at historic low",
-   "summary": "Democrats won control of the House in the 2026 midterm elections, CBS News projects, with victories in battleground districts across the country.",
-   "outlet": "CBS News, CTV News, CP24, Fox News, BBC News, ABC News",
-   "url": "https://www.cbsnews.com/live-updates/house-election-results-2026/",
-   "img": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/11/04/e0aa6645-c735-473e-ab3f-481fda3fd14c/thumbnail/1200x630g3/13efd6c48b9a8ae69b073a71f63d9c4c/gettyimages-2283164137.jpg"
   },
   {
    "desk": "politics",
@@ -3897,6 +3839,17 @@
    "outlet": "NBC News, CTV News, CP24, Toronto Star",
    "url": "https://www.nbcnews.com/politics/congress/leon-black-sues-robert-garcia-alleging-defamation-epstein-comments-rcna607565",
    "img": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-11/261104-leon-black-vsb-2041-4a7a2f.jpg"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Wed 7:01 p.m.",
+   "iso": "2026-11-05T00:01:35+00:00",
+   "title": "No charges for Mountie who fractured Lake St. Martin man's face during arrest",
+   "summary": "Manitoba's police watchdog has declined to lay charges against an RCMP officer who struck a Lake St. Martin First Nation man in the face with a Taser multiple times, fracturing his face.",
+   "outlet": "CBC News, CP24, BNN Bloomberg, Toronto Star",
+   "url": "https://www.cbc.ca/news/canada/manitoba/no-charges-for-mountie-who-fractured-lake-st-martin-man-s-face-9.7409860?cmp=rss",
+   "img": "https://i.cbc.ca/ais/1.6986387,1715692092000/full/max/0/default.jpg?im=Crop%2Crect%3D%28740%2C1063%2C2341%2C1316%29%3BResize%3D620"
   },
   {
    "desk": "politics",
@@ -4011,13 +3964,13 @@
   {
    "desk": "politics",
    "pic": "parliament",
-   "t": "Wed 3:55 p.m.",
-   "iso": "2026-11-04T20:55:24+00:00",
-   "title": "Trump’s Republicans lost the House and Senate in midterm elections. What could it mean for Canada?",
-   "summary": "While Canada and the U.S. remain embroiled in an extended trade war, U.S. President Donald Trump suffered a huge domestic blow Tuesday, as the Democrats swept the midterm elections, taking control of both the Senate and the House of Representatives.",
+   "t": "Wed 5:10 p.m.",
+   "iso": "2026-11-04T22:10:27+00:00",
+   "title": "Carney government publicly cautious, privately buoyed by U.S. midterm results",
+   "summary": "Publicly, Prime Minister Mark Carney’s government is taking a cautious approach to the U.S. midterms election result. But privately, it’s buoyed and relieved.",
    "outlet": "CP24",
-   "url": "https://www.cp24.com/news/canada/2026/11/04/trumps-republicans-lost-the-house-and-senate-in-midterm-elections-what-could-it-mean-for-canada/",
-   "img": "https://www.cp24.com/resizer/v2/QHAKVBPTTBCS5D534NZHUWUDT4.JPG?smart=true&auth=7e1da6d68d7a3bfa843c475e6834dbe041b361cf7a3c275fff0b04a74d9177f2&width=1200&height=630"
+   "url": "https://www.cp24.com/news/canada/2026/11/04/ottawa-publicly-cautious-privately-buoyed-by-us-midterm-results/",
+   "img": "https://www.cp24.com/resizer/v2/KV5REBSVG4GCXIUEDYR73OLPUA.jpg?smart=true&auth=73331f13765015ef3549c82e34605197adb68c38144fce108a7d2d6acc3332f8&width=1200&height=630"
   }
  ],
  "fronts": [
@@ -4273,8 +4226,8 @@
     "US midterm elections 2026 live Democratic lead grows in Mississippi Senate race as Republican blame game begins",
     "Full report US voters rebuke Trump as Democrats win control of Congress in ‘blue wave’",
     "From Texas to Tehran How papers across the world reacted to ‘Dem-olition’ job on Trump in US midterms",
-    "Donald Trump Trump boasts about ‘magnificent’ ballroom day after Republican rout",
-    "JD Vance JD Vance says US war on Iran is ‘real reason’ Republicans lost midterm elections"
+    "Donald Trump President boasts about ‘magnificent’ ballroom day after Republican rout",
+    "JD Vance Vice-president says US war on Iran is ‘real reason’ Republicans lost midterm elections"
    ],
    "u": [
     "https://www.theguardian.com/us-news/us-midterm-elections-2026",
@@ -7828,83 +7781,6 @@
    "w": 2
   },
   {
-   "race": "South Carolina · Senate",
-   "call": "Democrat Annie Andrews wins US Senate election in South Carolina over Republican Darline Graham",
-   "net": "CKOM / PAnow",
-   "named": false,
-   "via": "",
-   "url": "https://www.ckom.com/2026/11/03/democrat-annie-andrews-wins-us-senate-election-in-south-carolina-over-republican-darline-graham/",
-   "seen": "2026-11-04T04:18:57+00:00",
-   "t": "Tue 11:18 p.m.",
-   "w": 2
-  },
-  {
-   "race": "Iowa · Senate",
-   "call": "Democrat Josh Turek flips Senate seat in Iowa",
-   "net": "The Hill",
-   "named": false,
-   "via": "",
-   "url": "https://thehill.com/homenews/campaign/6178947-democrat-josh-turek-flips-senate-seat-in-iowa-2026-midterms/",
-   "seen": "2026-11-04T04:18:35+00:00",
-   "t": "Tue 11:18 p.m.",
-   "w": 2
-  },
-  {
-   "race": "Texas · Senate",
-   "call": "Democrat James Talarico flips a US Senate seat in Texas and sends a shockwave through the GOP",
-   "net": "CKOM / PAnow",
-   "named": false,
-   "via": "",
-   "url": "https://www.ckom.com/2026/11/03/democrat-james-talarico-flips-a-us-senate-seat-in-texas-and-sends-a-shockwave-through-the-gop/",
-   "seen": "2026-11-04T04:17:16+00:00",
-   "t": "Tue 11:17 p.m.",
-   "w": 2
-  },
-  {
-   "race": "Alabama · Governor",
-   "call": "Tommy Tuberville wins Alabama governor’s race",
-   "net": "The Hill",
-   "named": false,
-   "via": "",
-   "url": "https://thehill.com/homenews/campaign/6189477-tuberville-wins-alabama-governor/",
-   "seen": "2026-11-04T04:15:26+00:00",
-   "t": "Tue 11:15 p.m.",
-   "w": 2
-  },
-  {
-   "race": "Ohio · Senate",
-   "call": "Sherrod Brown flips Senate seat in Ohio for Democrats by ousting Sen. Jon Husted",
-   "net": "CKOM / PAnow",
-   "named": false,
-   "via": "",
-   "url": "https://www.ckom.com/2026/11/03/sherrod-brown-flips-senate-seat-in-ohio-for-democrats-by-ousting-sen-jon-husted/",
-   "seen": "2026-11-04T04:14:07+00:00",
-   "t": "Tue 11:14 p.m.",
-   "w": 2
-  },
-  {
-   "race": "Minnesota · House",
-   "call": "Democrat Matt Little wins Minnesota House race to succeed Craig",
-   "net": "The Hill",
-   "named": false,
-   "via": "",
-   "url": "https://thehill.com/homenews/campaign/6182006-matt-little-wins-minnesota-congressional/",
-   "seen": "2026-11-04T04:13:54+00:00",
-   "t": "Tue 11:13 p.m.",
-   "w": 1
-  },
-  {
-   "race": "Ohio · Senate",
-   "call": "Democrat Sherrod Brown wins Ohio Senate race in major blow to Republicans",
-   "net": "The Guardian",
-   "named": false,
-   "via": "",
-   "url": "https://www.theguardian.com/us-news/2026/nov/03/sherrod-brown-jon-husted-ohio-senate",
-   "seen": "2026-11-04T04:13:24+00:00",
-   "t": "Tue 11:13 p.m.",
-   "w": 2
-  },
-  {
    "race": "Ohio · Senate",
    "call": "Democrat Sherrod Brown wins Ohio Senate race",
    "net": "NPR",
@@ -7912,160 +7788,6 @@
    "via": "",
    "url": "https://www.npr.org/2026/11/03/g-s1-148948/ohio-senate-race-sherrod-brown-jon-husted",
    "seen": "2026-11-04T04:12:50.456234+00:00",
-   "t": "Tue 11:12 p.m.",
-   "w": 2
-  },
-  {
-   "race": "Ohio · Senate",
-   "call": "Sherrod Brown wins Ohio Senate race, flipping seat for Democrats",
-   "net": "CBS News",
-   "named": false,
-   "via": "",
-   "url": "https://www.cbsnews.com/news/ohio-2026-senate-husted-brown/",
-   "seen": "2026-11-04T04:12:50.456234+00:00",
-   "t": "Tue 11:12 p.m.",
-   "w": 2
-  },
-  {
-   "race": "Senate",
-   "call": "Democrats notch key Senate pick-ups, CNN projects",
-   "net": "CNN",
-   "named": true,
-   "via": "",
-   "url": "https://www.cnn.com/2026/11/03/politics/live-news/midterm-election-congress?tab=senate",
-   "seen": "2026-11-04T04:12:50.456234+00:00",
-   "t": "Tue 11:12 p.m.",
-   "w": 2
-  },
-  {
-   "race": "California · Governor",
-   "call": "Former Health and Human Services Secretary Xavier Becerra wins California governor’s race",
-   "net": "NBC News",
-   "named": false,
-   "via": "",
-   "url": "https://www.nbcnews.com/politics/2026-election/xavier-becerra-california-governor-election-winner-democrat-rcna603367",
-   "seen": "2026-11-04T04:12:50.456234+00:00",
-   "t": "Tue 11:12 p.m.",
-   "w": 2
-  },
-  {
-   "race": "California · Governor",
-   "call": "Democrat Xavier Becerra wins California governor's race, CBS News projects",
-   "net": "CBS News",
-   "named": true,
-   "via": "",
-   "url": "https://www.cbsnews.com/sacramento/news/california-governor-election-xavier-becerra-steve-hilton/",
-   "seen": "2026-11-04T04:12:50.456234+00:00",
-   "t": "Tue 11:12 p.m.",
-   "w": 2
-  },
-  {
-   "race": "N.C S.C Senate",
-   "call": "Democrats flip pair of Senate seats in N.C. and S.C",
-   "net": "NPR",
-   "named": false,
-   "via": "",
-   "url": "https://www.npr.org/2026/11/03/nx-s1-5992757/election-day-live-updates-key-races",
-   "seen": "2026-11-04T04:12:50.456234+00:00",
-   "t": "Tue 11:12 p.m.",
-   "w": 2
-  },
-  {
-   "race": "District Ford Indiana’S",
-   "call": "Democrat J.D. Ford will flip Indiana’s 5th District, CNN projects",
-   "net": "CNN",
-   "named": true,
-   "via": "",
-   "url": "https://www.cnn.com/2026/11/03/politics/live-news/midterm-election-congress#cmw1lnl8c00163b75d6tcan31",
-   "seen": "2026-11-04T04:12:50.456234+00:00",
-   "t": "Tue 11:12 p.m.",
-   "w": 1
-  },
-  {
-   "race": "Alabama’S District Figures",
-   "call": "Democrat Shomari Figures will win reelection in Alabama’s 2nd District, CNN projects",
-   "net": "CNN",
-   "named": true,
-   "via": "",
-   "url": "https://www.cnn.com/2026/11/03/politics/live-news/midterm-election-congress#cmw1llp9e00103b75h7fwshfm",
-   "seen": "2026-11-04T04:12:50.456234+00:00",
-   "t": "Tue 11:12 p.m.",
-   "w": 1
-  },
-  {
-   "race": "The party needs a net gain of one more seat to win control o",
-   "call": "The party needs a net gain of one more seat to win control of the chamber",
-   "net": "NBC News",
-   "named": false,
-   "via": "",
-   "url": "https://www.nbcnews.com/politics/2026-election/republicans-fight-hold-senate-democrats-rcna605762",
-   "seen": "2026-11-04T04:12:50.456234+00:00",
-   "t": "Tue 11:12 p.m.",
-   "w": 1
-  },
-  {
-   "race": "Brown Husted Senate",
-   "call": "NBC News projects that Brown, who lost a re-election bid in 2024, will return to the Senate after defeating Husted, a Republican who was appointed to succeed JD Vance",
-   "net": "NBC News",
-   "named": true,
-   "via": "",
-   "url": "https://www.nbcnews.com/politics/2026-election/democrat-sherrod-brown-wins-ohio-senate-race-jon-husted-gop-rcna603317",
-   "seen": "2026-11-04T04:12:50.456234+00:00",
-   "t": "Tue 11:12 p.m.",
-   "w": 2
-  },
-  {
-   "race": "California · Governor",
-   "call": "Democrat Xavier Becerra wins California governor’s race",
-   "net": "MS NOW",
-   "named": false,
-   "via": "",
-   "url": "https://www.ms.now/liveblog/midterm-election-results-2026-live-updates#live-blog-1429999",
-   "seen": "2026-11-04T04:12:50.456234+00:00",
-   "t": "Tue 11:12 p.m.",
-   "w": 2
-  },
-  {
-   "race": "Iowa · Governor",
-   "call": "Democrat Rob Sand projected to win Iowa governor’s race",
-   "net": "MS NOW",
-   "named": false,
-   "via": "",
-   "url": "https://www.ms.now/liveblog/midterm-election-results-2026-live-updates#live-blog-1391711",
-   "seen": "2026-11-04T04:12:50.456234+00:00",
-   "t": "Tue 11:12 p.m.",
-   "w": 2
-  },
-  {
-   "race": "Ohio · Senate",
-   "call": "Democrat Sherrod Brown projected to win Ohio Senate race",
-   "net": "MS NOW",
-   "named": false,
-   "via": "",
-   "url": "https://www.ms.now/liveblog/midterm-election-results-2026-live-updates#live-blog-1391642",
-   "seen": "2026-11-04T04:12:50.456234+00:00",
-   "t": "Tue 11:12 p.m.",
-   "w": 2
-  },
-  {
-   "race": "Oregon · Governor",
-   "call": "Incumbent Tina Kotek wins Oregon governor’s race",
-   "net": "The Hill",
-   "named": false,
-   "via": "",
-   "url": "https://thehill.com/homenews/campaign/6180481-tina-kotek-oregon-governor-race/",
-   "seen": "2026-11-04T04:12:34+00:00",
-   "t": "Tue 11:12 p.m.",
-   "w": 2
-  },
-  {
-   "race": "California · Governor",
-   "call": "Democrat Xavier Becerra wins California governor's race, defeating Republican Steve Hilton",
-   "net": "PBS NewsHour",
-   "named": false,
-   "via": "",
-   "url": "https://www.pbs.org/newshour/politics/democrat-xavier-becerra-wins-california-governors-race-defeating-republican-steve-hilton",
-   "seen": "2026-11-04T04:12:28+00:00",
    "t": "Tue 11:12 p.m.",
    "w": 2
   },
@@ -8081,23 +7803,23 @@
    "w": 1
   },
   {
-   "race": "Senate Sununu",
-   "call": "Pappas wins U.S. Senate race, defeating Sununu in marquee matchup",
-   "net": "NPR",
-   "named": false,
-   "via": "",
-   "url": "https://www.nhpr.org/nh-news/2026-11-03/pappas-wins-u-s-senate-race-defeating-sununu-in-marquee-matchup?utm_source=npr.org&utm_medium=referral&utm_campaign=network_highlights",
-   "seen": "2026-11-04T03:42:50.856804+00:00",
-   "t": "Tue 10:42 p.m.",
-   "w": 2
-  },
-  {
    "race": "South Carolina · Senate",
    "call": "Democrat Annie Andrews wins South Carolina Senate race in major upset",
    "net": "NPR",
    "named": false,
    "via": "",
    "url": "https://www.npr.org/2026/11/03/g-s1-151666/south-carolina-senate-race-andrews-graham",
+   "seen": "2026-11-04T03:42:50.856804+00:00",
+   "t": "Tue 10:42 p.m.",
+   "w": 2
+  },
+  {
+   "race": "Senate Sununu",
+   "call": "Pappas wins U.S. Senate race, defeating Sununu in marquee matchup",
+   "net": "NPR",
+   "named": false,
+   "via": "",
+   "url": "https://www.nhpr.org/nh-news/2026-11-03/pappas-wins-u-s-senate-race-defeating-sununu-in-marquee-matchup?utm_source=npr.org&utm_medium=referral&utm_campaign=network_highlights",
    "seen": "2026-11-04T03:42:50.856804+00:00",
    "t": "Tue 10:42 p.m.",
    "w": 2
@@ -8112,7 +7834,7 @@
     "url": "https://www.youtube.com/watch?v=GvWSyescLv8",
     "img": "https://i.ytimg.com/vi/GvWSyescLv8/hqdefault.jpg",
     "story": "2026 Midterm Election Results",
-    "watching": "542",
+    "watching": "450",
     "reports": [
      {
       "outlet": "CityNews Winnipeg",
@@ -8167,6 +7889,10 @@
     "url": "https://www.youtube.com/watch?v=1w9CMPt0Sic"
    },
    {
+    "net": "NBC News",
+    "url": "https://www.youtube.com/watch?v=I0wBL9pgX3c"
+   },
+   {
     "net": "ABC News",
     "url": "https://www.youtube.com/watch?v=1ViVnrjVtQY"
    },
@@ -8193,39 +7919,17 @@
    {
     "net": "LiveNOW from FOX",
     "url": "https://www.youtube.com/watch?v=C96oohpWBGw"
-   },
-   {
-    "net": "FRANCE 24 English",
-    "url": "https://www.youtube.com/watch?v=HvZt-nh9sGg"
    }
   ]
  },
  "pm": [],
  "blogs_auto": [
   {
-   "net": "The Guardian",
-   "story": "US midterm elections 2026 live: Democratic lead grows in Mississippi S",
-   "title": "US midterm elections 2026 live: Democratic lead grows in Mississippi Senate race as Republican blame game begins",
-   "url": "https://www.theguardian.com/us-news/live/2026/nov/04/midterm-elections-results-senate-house-michigan-maine-mississippi-latest-updates",
-   "updated": "2026-11-05T03:58:49+00:00",
-   "ended": false,
-   "img": "https://i.guim.co.uk/img/media/4df18077e6ef6dbd140ed398cd00e92926713dc6/312_0_4859_3888/master/4859.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=383f7f5660022356113de506590c7eeb"
-  },
-  {
-   "net": "Middle East Eye",
-   "story": "Here's why US Republicans lost the midterms so badly",
-   "title": "Here's why US Republicans lost the midterms so badly",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/heres-why-us-republicans-lost-midterms-so-badly",
-   "updated": "2026-11-05T01:52:57+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/000_D6D94TK.jpg"
-  },
-  {
    "net": "Al Jazeera",
    "story": "Iran war live: Khamenei says US hostility will persist after midterms",
    "title": "Iran war live: Khamenei says US hostility will persist after midterms",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/5/iran-war-live-trump-admits-war-caused-election-loss-but-had-to-do-it?traffic_source=rss",
-   "updated": "2026-11-05T04:01:27+00:00",
+   "updated": "2026-11-05T04:18:32+00:00",
    "ended": false,
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/AFP__20261104__D6G26HH__v1__HighRes__IranUsIsraelWar-1793846826.jpg?resize=1920%2C1440"
   },
@@ -8234,27 +7938,9 @@
    "story": "Beau Lamarre-Condon trial live updates: accused double murderer gives ",
    "title": "Beau Lamarre-Condon trial live updates: accused double murderer gives evidence in high-profile case",
    "url": "https://www.theguardian.com/australia-news/live/2026/nov/05/beau-lamarre-condon-trial-former-police-accused-murder-case-jesse-baird-luke-davies-ntwnfb",
-   "updated": "2026-11-05T04:00:53+00:00",
+   "updated": "2026-11-05T04:21:30+00:00",
    "ended": false,
    "img": "https://i.guim.co.uk/img/media/ebfc885f7db8935002487a469a0f9baba836690e/317_347_2279_1823/master/2279.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=f2d39f962524b8b2cac57e0e727f2522"
-  },
-  {
-   "net": "Middle East Eye",
-   "story": "US hands out sanctions over accusations of supplying Iran with air def",
-   "title": "US hands out sanctions over accusations of supplying Iran with air defence systems",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-sanctions-hands-out-sanctions-over-accusations-supplying-iran-air",
-   "updated": "2026-11-05T02:40:07+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/000_D6D94TK.jpg"
-  },
-  {
-   "net": "Middle East Eye",
-   "story": "Saudi-led coalition hits in Yemen reportedly kill 20 people over past ",
-   "title": "Saudi-led coalition hits in Yemen reportedly kill 20 people over past day",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-hits-yemen-reportedly-kill-20-people-over-past-day",
-   "updated": "2026-11-05T02:00:08+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/000_D6D94TK.jpg"
   }
  ],
  "related": {
@@ -8269,6 +7955,14 @@
      "outlet": "Global News",
      "title": "Alberta Premier Smith says U.S. midterms ‘vindication’ of her approach to tariffs",
      "url": "https://globalnews.ca/news/12137608/danielle-smith-midterms-tariffs/",
+     "tie": "Canada and the U.S."
+    },
+    {
+     "t": "Wed 5:10 p.m.",
+     "iso": "2026-11-04T22:10:27+00:00",
+     "outlet": "CP24",
+     "title": "Carney government publicly cautious, privately buoyed by U.S. midterm results",
+     "url": "https://www.cp24.com/news/canada/2026/11/04/ottawa-publicly-cautious-privately-buoyed-by-us-midterm-results/",
      "tie": "Canada and the U.S."
     },
     {
@@ -8318,14 +8012,6 @@
      "title": "U.S. voters 'showed what they thought about President Trump,' Doug Ford says",
      "url": "https://www.thestar.com/politics/provincial/u-s-voters-showed-what-they-thought-about-president-trump-doug-ford-says/article_0a1e58de-9b01-4cf4-ac76-052503ab8d76.html",
      "tie": "Canada and the U.S."
-    },
-    {
-     "t": "Wed 2:38 p.m.",
-     "iso": "2026-11-04T19:38:18+00:00",
-     "outlet": "The Logic",
-     "title": "What the Democrats’ midterm sweep means for Canadian business",
-     "url": "https://thelogic.co/news/what-the-democrats-midterm-sweep-means-for-canadian-business/",
-     "tie": "Canada and the U.S."
     }
    ],
    "views": [
@@ -8340,28 +8026,11 @@
   "event-u-s-midterm-elections-2026-11-03": {
    "ties": [
     "democrats",
-    "mississippi",
     "senate",
-    "house",
+    "mississippi",
     "kospi"
    ],
    "stories": [
-    {
-     "t": "Wed 10:55 p.m.",
-     "iso": "2026-11-05T03:55:51+00:00",
-     "outlet": "CBS News",
-     "title": "Did Republican efforts to redistrict the House turn into a dummymander?",
-     "url": "https://www.cbsnews.com/news/dummymander-republican-redistricting-congress-trump/",
-     "tie": "House"
-    },
-    {
-     "t": "Wed 9:31 p.m.",
-     "iso": "2026-11-05T02:31:25+00:00",
-     "outlet": "Toronto Star",
-     "title": "Democrat Teresa Benitez-Thompson wins election to U.S. House in Nevada's 2nd Congressional District",
-     "url": "https://www.thestar.com/news/world/united-states/democrat-teresa-benitez-thompson-wins-election-to-u-s-house-in-nevada-s-2nd-congressional-district/article_8a35ad94-4164-56eb-a113-f3eb0a82498a.html",
-     "tie": "House"
-    },
     {
      "t": "Wed 8:43 p.m.",
      "iso": "2026-11-05T01:43:53+00:00",
@@ -8371,11 +8040,27 @@
      "tie": "Democrats"
     },
     {
+     "t": "Wed 8:05 p.m.",
+     "iso": "2026-11-05T01:05:53+00:00",
+     "outlet": "Politico",
+     "title": "Democrats prepare for something new in the House: Teamwork",
+     "url": "https://www.politico.com/news/2026/11/04/democrats-house-majority-agenda-01150963",
+     "tie": "Democrats"
+    },
+    {
      "t": "Wed 7:25 p.m.",
      "iso": "2026-11-05T00:25:43+00:00",
      "outlet": "Al Jazeera",
      "title": "Democrats won Congress. But can they deliver on their promises?",
      "url": "https://www.aljazeera.com/news/2026/11/5/democrats-won-congress-but-can-they-deliver-on-their-promises?traffic_source=rss",
+     "tie": "Democrats"
+    },
+    {
+     "t": "Wed 4:50 p.m.",
+     "iso": "2026-11-04T21:50:17+00:00",
+     "outlet": "PBS NewsHour",
+     "title": "Democrats win full control of more state governments and the Texas House",
+     "url": "https://www.pbs.org/newshour/politics/democrats-win-full-control-of-more-state-governments-and-the-texas-house",
      "tie": "Democrats"
     },
     {
@@ -8632,16 +8317,6 @@
      "searched": true
     },
     {
-     "t": "Wed 4:52 a.m.",
-     "iso": "2026-11-04T09:52:00+00:00",
-     "outlet": "iPolitics",
-     "title": "LeBlanc says Canada not changing its approach to negotiations in wake of midterm elections",
-     "url": "https://www.ipolitics.ca/2026/11/04/leblanc-says-canada-not-changing-its-approach-to-negotiations-in-wake-of-midterm-elections/",
-     "ca": true,
-     "tie": "",
-     "searched": true
-    },
-    {
      "t": "Tue 8:33 p.m.",
      "iso": "2026-11-04T01:33:07.295000+00:00",
      "outlet": "CTV News",
@@ -8664,118 +8339,10 @@
    ],
    "official": [],
    "views": [],
-   "checked": "2026-11-05T04:08:56.536701+00:00"
+   "checked": "2026-11-05T04:18:57.082845+00:00"
   }
  },
  "canangle_live": {
-  "https://www.theguardian.com/us-news/live/2026/nov/04/midterm-elections-results-senate-house-michigan-maine-mississippi-latest-updates": {
-   "story": "US midterm elections 2026 live: Democratic lead grows in Mississippi Senate race as Republican blame game begins",
-   "us": true,
-   "specific": 5,
-   "stories": [
-    {
-     "t": "Wed 10:16 p.m.",
-     "iso": "2026-11-05T03:16:06+00:00",
-     "outlet": "Global News",
-     "title": "Alberta Premier Smith says U.S. midterms ‘vindication’ of her approach to tariffs",
-     "url": "https://globalnews.ca/news/12137608/danielle-smith-midterms-tariffs/",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Wed 10:04 p.m.",
-     "iso": "2026-11-05T03:04:06+00:00",
-     "outlet": "CTV News",
-     "title": "Canada braces for Trump fallout as Democrats win big in U.S. midterms",
-     "url": "https://www.ctvnews.ca/world/america-votes/article/canada-braces-for-trump-fallout-as-democrats-win-big-in-us-midterms/",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Wed 8:25 p.m.",
-     "iso": "2026-11-05T01:25:19+00:00",
-     "outlet": "CityNews Edmonton",
-     "title": "U.S. midterm results raise hopes in Alberta for an ease of trade tensions",
-     "url": "https://edmonton.citynews.ca/2026/11/04/u-s-midterm-results-raise-hopes-in-alberta-for-an-ease-of-trade-tensions/",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Wed 6:30 p.m.",
-     "iso": "2026-11-04T23:30:00+00:00",
-     "outlet": "Toronto Star",
-     "title": "Carney government officials don't expect big change to trade talks after dramatic U.S. elections",
-     "url": "https://www.thestar.com/politics/carney-government-officials-don-t-expect-big-change-to-trade-talks-after-dramatic-u-s-elections/article_af472624-142b-40dc-8b9c-4dd80a0aff92.html",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Wed 5:10 p.m.",
-     "iso": "2026-11-04T22:10:27+00:00",
-     "outlet": "CP24",
-     "title": "Carney government publicly cautious, privately buoyed by U.S. midterm results",
-     "url": "https://www.cp24.com/news/canada/2026/11/04/ottawa-publicly-cautious-privately-buoyed-by-us-midterm-results/",
-     "ca": true,
-     "tie": ""
-    }
-   ],
-   "official": [],
-   "views": []
-  },
-  "https://www.middleeasteye.net/live-blog/live-blog-update/heres-why-us-republicans-lost-midterms-so-badly": {
-   "story": "Here's why US Republicans lost the midterms so badly",
-   "us": true,
-   "specific": 5,
-   "stories": [
-    {
-     "t": "Wed 10:16 p.m.",
-     "iso": "2026-11-05T03:16:06+00:00",
-     "outlet": "Global News",
-     "title": "Alberta Premier Smith says U.S. midterms ‘vindication’ of her approach to tariffs",
-     "url": "https://globalnews.ca/news/12137608/danielle-smith-midterms-tariffs/",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Wed 10:04 p.m.",
-     "iso": "2026-11-05T03:04:06+00:00",
-     "outlet": "CTV News",
-     "title": "Canada braces for Trump fallout as Democrats win big in U.S. midterms",
-     "url": "https://www.ctvnews.ca/world/america-votes/article/canada-braces-for-trump-fallout-as-democrats-win-big-in-us-midterms/",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Wed 8:25 p.m.",
-     "iso": "2026-11-05T01:25:19+00:00",
-     "outlet": "CityNews Edmonton",
-     "title": "U.S. midterm results raise hopes in Alberta for an ease of trade tensions",
-     "url": "https://edmonton.citynews.ca/2026/11/04/u-s-midterm-results-raise-hopes-in-alberta-for-an-ease-of-trade-tensions/",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Wed 5:10 p.m.",
-     "iso": "2026-11-04T22:10:27+00:00",
-     "outlet": "CP24",
-     "title": "Carney government publicly cautious, privately buoyed by U.S. midterm results",
-     "url": "https://www.cp24.com/news/canada/2026/11/04/ottawa-publicly-cautious-privately-buoyed-by-us-midterm-results/",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Wed 4:46 p.m.",
-     "iso": "2026-11-04T21:46:55+00:00",
-     "outlet": "Toronto Sun",
-     "title": "What U.S. midterm election results could mean for Canada",
-     "url": "https://torontosun.com/news/national/what-midterm-election-results-mean-for-canada",
-     "ca": false,
-     "tie": ""
-    }
-   ],
-   "official": [],
-   "views": []
-  },
   "https://www.aljazeera.com/news/liveblog/2026/11/5/iran-war-live-trump-admits-war-caused-election-loss-but-had-to-do-it?traffic_source=rss": {
    "story": "Iran war live: Khamenei says US hostility will persist after midterms",
    "us": true,
@@ -8824,60 +8391,6 @@
      "title": "What U.S. midterm election results could mean for Canada",
      "url": "https://torontosun.com/news/national/what-midterm-election-results-mean-for-canada",
      "ca": false,
-     "tie": ""
-    }
-   ],
-   "official": [],
-   "views": []
-  },
-  "https://www.middleeasteye.net/live-blog/live-blog-update/us-sanctions-hands-out-sanctions-over-accusations-supplying-iran-air": {
-   "story": "US hands out sanctions over accusations of supplying Iran with air defence systems",
-   "us": true,
-   "specific": 5,
-   "stories": [
-    {
-     "t": "Wed 10:16 p.m.",
-     "iso": "2026-11-05T03:16:06+00:00",
-     "outlet": "Global News",
-     "title": "Alberta Premier Smith says U.S. midterms ‘vindication’ of her approach to tariffs",
-     "url": "https://globalnews.ca/news/12137608/danielle-smith-midterms-tariffs/",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Wed 10:04 p.m.",
-     "iso": "2026-11-05T03:04:06+00:00",
-     "outlet": "CTV News",
-     "title": "Canada braces for Trump fallout as Democrats win big in U.S. midterms",
-     "url": "https://www.ctvnews.ca/world/america-votes/article/canada-braces-for-trump-fallout-as-democrats-win-big-in-us-midterms/",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Wed 8:25 p.m.",
-     "iso": "2026-11-05T01:25:19+00:00",
-     "outlet": "CityNews Edmonton",
-     "title": "U.S. midterm results raise hopes in Alberta for an ease of trade tensions",
-     "url": "https://edmonton.citynews.ca/2026/11/04/u-s-midterm-results-raise-hopes-in-alberta-for-an-ease-of-trade-tensions/",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Wed 6:30 p.m.",
-     "iso": "2026-11-04T23:30:00+00:00",
-     "outlet": "Toronto Star",
-     "title": "Carney government officials don't expect big change to trade talks after dramatic U.S. elections",
-     "url": "https://www.thestar.com/politics/carney-government-officials-don-t-expect-big-change-to-trade-talks-after-dramatic-u-s-elections/article_af472624-142b-40dc-8b9c-4dd80a0aff92.html",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Wed 5:10 p.m.",
-     "iso": "2026-11-04T22:10:27+00:00",
-     "outlet": "CP24",
-     "title": "Carney government publicly cautious, privately buoyed by U.S. midterm results",
-     "url": "https://www.cp24.com/news/canada/2026/11/04/ottawa-publicly-cautious-privately-buoyed-by-us-midterm-results/",
-     "ca": true,
      "tie": ""
     }
    ],
@@ -9919,8 +9432,7 @@
   }
  },
  "geo_blocked": [
-  "-NabWfv-VdA",
-  "mluaCvwcbuw"
+  "-NabWfv-VdA"
  ],
  "noembed": [
   "0bLqaqPAt_k",
