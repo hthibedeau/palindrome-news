@@ -84,5 +84,21 @@ _calls = [{"race": "Michigan · Senate", "call": "El-Sayed wins Michigan Senate 
 ap.lead_with_projection(_st, _calls, _dt(2026, 11, 4, 10, 30, tzinfo=_et))
 check(_st["title"] == "kept" and _st.get("tag") != "Breaking", "the morning after, a single race call or last night's call never leads as Breaking")
 
+
+# 3. CANADA LEADS (Hannah, Fri Nov 6, 2026): today's real top three, as the code had them
+tesla = {"title": "Musk says Tesla will end Cybertruck production next year", "canada": "none", "independent": 5, "tag": "Breaking", "judgment": "national"}
+arch = {"title": "Trump moves to make Oval Office a national monument to prevent future major changes", "canada": "none", "independent": 5, "tag": "Breaking", "judgment": "national"}
+budget = {"title": "Federal budget funds team to manage N.W.T. major projects", "canada": "canadian", "independent": 12, "tag": "Breaking", "judgment": "national", "theme": "Federal budget"}
+top = ap.canada_leads([tesla, arch, budget])
+check(top[0] is budget, "a Canadian story with 12 newsrooms leads over U.S. stories with 5")
+check(tesla["tag"] == "Developing" and arch["tag"] == "Developing", "a story from abroad with no Canadian tie and under six sources is not Breaking beside it")
+check(budget["tag"] == "Breaking", "the Canadian story keeps its Breaking tag")
+big = {"title": "Big world story", "canada": "none", "independent": 9, "tag": "Breaking", "judgment": "national"}
+small_ca = {"title": "Canadian story", "canada": "canadian", "independent": 4, "tag": "Breaking", "judgment": "national"}
+top = ap.canada_leads([big, small_ca])
+check(top[0] is big and big["tag"] == "Breaking", "a story from abroad with six sources or more keeps its place and tag")
+alone = [dict(tesla, tag="Breaking"), dict(arch, tag="Breaking")]
+check(ap.canada_leads(alone)[0]["tag"] == "Breaking", "with no Canadian story at the top, nothing changes")
+
 print("\nall passed" if not fails else f"\n{fails} failed")
 sys.exit(1 if fails else 0)

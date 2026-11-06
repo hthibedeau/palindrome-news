@@ -43,6 +43,13 @@ Both pages open directly in a web browser. They are previews: the live site will
 - Menu links to a merged section open its tab. Nothing is removed from the page.
 
 
+## Canada leads, and no empty panel (Hannah, Fri Nov 6, 2026)
+
+- **Canada leads.** At the top of the page, a story from abroad with no Canadian tie and fewer than six independent newsrooms never sits above a Canadian story, and it shows "Developing", not "Breaking", when that Canadian story has more coverage (`canada_leads()` in `tools/autopilot.py`). Why: Tesla ending the Cybertruck (5 newsrooms) led as Breaking over the federal budget (12 newsrooms, live on CPAC).
+- **A national headline for a national story.** A story with six or more independent newsrooms takes its headline from a national desk, not a city or regional angle ("what does it mean for B.C.?"); the local angles stay in its reports.
+- **No empty panel.** On a wide screen the two top columns stack on their own, so a short lead story no longer leaves an empty block beside the stories on the right (`place()` in `tools/crisp_layer.html`).
+- Checks: `python3 tools/test_story_match.py`.
+
 ## How the page updates itself: the code runs it
 
 Since Tue Oct 27, 2026, the site runs on code, not on Claude (Hannah: "I dont want to rely on claude to run my site. I want the code to do it"). Nothing needs a person or an AI to keep it current:

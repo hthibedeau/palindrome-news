@@ -37,6 +37,7 @@ BREAKING_MIN = 60       # newest report within this many minutes: "Breaking"; ot
 CANADIAN_WEIGHT = 8    # a Canadian story's edge over a story from abroad of the same size
 MIN_OUTLETS = 3         # an auto story needs at least this many INDEPENDENT newsrooms (wire copies count once)
 BREAKING_INDEPENDENT = 4  # "Breaking" also needs at least this many independent newsrooms
+SIX_SOURCES = 6          # the house standard (six independent newsrooms); see canada_leads()
 CANDIDATES = 8          # top-story candidates built each run; the two shown are picked by pick_by_canada()
 # A third top story (Hannah, Fri Oct 30, 2026: "the Canada EU story should be up in the top along with the two current
 # breaking news stories. It is okay to have three as well ... not just for today, but other days as well"). The top of
@@ -831,7 +832,15 @@ def build_story(g, now, imgdir, prev):
     # built out of it. the screen shot is dull ... grey screen with speech written on it").
     lead, info = reps[0], {}
     news_reps = [x for x in reps if not OFFICIAL_DOC.search(x[3]) and not is_primary(x)] or reps
-    for r in [x for x in news_reps if not VIDEO.search(x[3] + " " + x[2])][:5]:
+    # A NATIONAL HEADLINE FOR A NATIONAL STORY (Hannah, Fri Nov 6, 2026: the federal budget was led by "Federal budget
+    # promises: what does it mean for B.C.?", CityNews Vancouver's local angle, then by CBC North's N.W.T. angle). When a
+    # story has SIX_SOURCES independent newsrooms or more, its headline comes from a national desk if one has a summary;
+    # the city and regional angles stay in its list of reports.
+    looks = [x for x in news_reps if not VIDEO.search(x[3] + " " + x[2])]
+    if independent(reps) >= SIX_SOURCES:
+        nat = [x for x in looks if NATIONAL_DESK.search(x[3]) and not LOCAL_DESK.search(x[3])]
+        looks = nat[:5] + [x for x in looks if x not in nat]
+    for r in looks[:8]:
         pi = page_info(r[3])
         if len(pi.get("desc", "")) >= 40:
             lead, info = r, pi
@@ -2226,6 +2235,7 @@ def _select(auto, cands, ranked, tier):
                 top2.append(s)
                 rest.remove(s)
                 break
+    canada_leads(top2)
     # BIG NEWS DAY: THE BIG STORY STANDS ALONE (Hannah, Tue Nov 3, 2026, U.S. Election Night: "on a big breaking news
     # story like this, while I really like the exclusive Toronto Star story, I would move that down into Canadian News
     # Today. And then also, the PM Carney says Canada trade talks have intensified. I would move that into the Canadian
@@ -2658,6 +2668,33 @@ def angle_search(res, now):
         print(f"Canadian angle search: {added} added to {st['event_day']}")
 
 
+# CANADA LEADS (Hannah, Fri Nov 6, 2026, the day after the federal budget: Tesla ending the Cybertruck, a U.S. business
+# story with no Canadian tie and 5 newsrooms, led the page as "Breaking", with Trump's arch also "Breaking", while the
+# budget, 12 newsrooms and live CPAC coverage, came third). Among the stories at the top, a story from abroad with no
+# Canadian tie and fewer than SIX_SOURCES independent newsrooms (a wire report run by several sites counts once) never
+# sits above a Canadian story, and it is "Developing", not "Breaking", when that Canadian story has more independent
+# coverage. Everything else keeps its order. Checked by tools/test_story_match.py.
+def canada_leads(top):
+    ca = [x for x in top if x.get("canada") == "canadian" and x.get("judgment") != "local" and not x.get("incoherent")]
+    if not ca:
+        return top
+    best = max((x.get("independent") or 0) for x in ca)
+    weak = [x for x in top if x.get("canada") == "none" and (x.get("independent") or 0) < SIX_SOURCES
+            and not x.get("event_day") and not x.get("us_election")]
+    for x in weak:
+        if x.get("tag") == "Breaking" and (x.get("independent") or 0) < best:
+            x["tag"] = "Developing"
+            x["tag_why"] = (f"Developing, not Breaking: from abroad with no Canadian tie and {x.get('independent') or 0} independent "
+                            f"newsroom(s), under the six-source standard, while a Canadian story at the top has {best}.")
+    first_ca = min(top.index(x) for x in ca)
+    moved = [x for x in weak if top.index(x) < first_ca]
+    if moved:
+        keep = [x for x in top if x not in moved]
+        at = keep.index(next(x for x in keep if x in ca)) + 1
+        top[:] = keep[:at] + moved + keep[at:]
+    return top
+
+
 def big_news_day(top2):
     """An event day, or a story leading front pages across the country and abroad.
     The morning after an event (THE MORNING AFTER), its results share the top with the day's other big stories, UNLESS
@@ -2726,7 +2763,9 @@ def pick_by_canada(auto, items, now, eds, papers, otr, canus_, mostread=None):
         # ONE STORY, NOT A PILE OF HEADLINES: reports that only share a word like "Nation" are not this story
         try:
             n_ = coherent(s)
-            s["incoherent"] = bool(not s.get("event_day") and n_ < 2)
+            # a running theme (the federal budget) carried by SIX_SOURCES newsrooms is one story even when its newest
+            # headline is a narrow angle (the budget fell to the third slot on Fri Nov 6, 2026 for that reason)
+            s["incoherent"] = bool(not s.get("event_day") and not (s.get("theme") and (s.get("independent") or 0) >= SIX_SOURCES) and n_ < 2)
             if s["incoherent"] or FOREIGN_DESK.search(s.get("url") or ""):
                 if s["canada"] == "canadian" and not CAN_TIE.search(s.get("title") or ""):
                     s["canada"] = "none"  # its "Canadian" reports were other stories grouped with it by mistake
