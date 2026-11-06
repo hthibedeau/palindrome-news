@@ -97,6 +97,11 @@ big = {"title": "Big world story", "canada": "none", "independent": 9, "tag": "B
 small_ca = {"title": "Canadian story", "canada": "canadian", "independent": 4, "tag": "Breaking", "judgment": "national"}
 top = ap.canada_leads([big, small_ca])
 check(top[0] is big and big["tag"] == "Breaking", "a story from abroad with six sources or more keeps its place and tag")
+ams = {"title": "Protesters break into Microsoft data centre site in Amsterdam", "canada": "none", "independent": 3, "tag": "Developing", "judgment": "national"}
+jobs = {"title": "Unemployment rate rose to 6.7% in October, StatCan says", "canada": "canadian", "independent": 3, "tag": "Developing", "judgment": "national"}
+b2 = dict(budget, tag="Breaking")
+top = ap.canada_leads([b2, ams, jobs])
+check([x["title"] for x in top] == [b2["title"], jobs["title"], ams["title"]], "a small story from abroad goes below every Canadian story at the top")
 alone = [dict(tesla, tag="Breaking"), dict(arch, tag="Breaking")]
 check(ap.canada_leads(alone)[0]["tag"] == "Breaking", "with no Canadian story at the top, nothing changes")
 

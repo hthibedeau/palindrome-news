@@ -2686,11 +2686,12 @@ def canada_leads(top):
             x["tag"] = "Developing"
             x["tag_why"] = (f"Developing, not Breaking: from abroad with no Canadian tie and {x.get('independent') or 0} independent "
                             f"newsroom(s), under the six-source standard, while a Canadian story at the top has {best}.")
-    first_ca = min(top.index(x) for x in ca)
-    moved = [x for x in weak if top.index(x) < first_ca]
+    # below every Canadian story at the top (Canadian stories rank ahead of foreign ones: Hannah, Oct 30, 2026)
+    last_ca = max(top.index(x) for x in ca)
+    moved = [x for x in weak if top.index(x) < last_ca]
     if moved:
         keep = [x for x in top if x not in moved]
-        at = keep.index(next(x for x in keep if x in ca)) + 1
+        at = max(keep.index(x) for x in ca) + 1
         top[:] = keep[:at] + moved + keep[at:]
     return top
 
