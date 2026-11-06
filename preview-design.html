@@ -6665,7 +6665,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
             : '')
           + '<p class="pj-note">Each call is the network’s own, in its own words, linked to where it was made. A projection is not a final result.</p></div>';
       })() : '';
-      return '<article class="ab-story' + (i ? ' ab-second' : '') + (s.proj_lead ? ' ab-projlead' : '') + (s.aftermath ? ' ab-after' : '') + '" data-key="' + esc(s.key) + '">' + ph + '<span class="tag">' + (s.event_tag ? esc(s.event_tag) : s.scoop ? 'Exclusive · ' + esc(s.outlet) : onAir || recent ? 'Breaking' : 'Developing') + '</span>'
+      return '<article class="ab-story' + (i ? ' ab-second' : '') + (s.proj_lead ? ' ab-projlead' : '') + (s.aftermath ? ' ab-after' : '') + '" data-key="' + esc(s.key) + '">' + ph + '<span class="tag">' + (s.event_tag ? esc(s.event_tag) : s.scoop ? 'Exclusive · ' + esc(s.outlet) : onAir || (recent && !s.tag_why) ? 'Breaking' : 'Developing') + '</span>'
         + '<h2>' + a(s.url, esc(s.title)) + '</h2>' + (s.proj_lead ? '<p class="ab-projsrc">Projection by ' + a(s.proj_lead.url, esc(s.proj_lead.net)) + ' · ' + esc(s.proj_lead.t) + ' ET</p>' : '') + (sub ? '<p class="ab-sub">' + esc(sub.t) + (sub.own ? '' : ' <span class="ab-cr">— ' + a(sub.u, esc(sub.o)) + '</span>') + '</p>' : '') + (s.aftermath ? '' : projBox) + liveBar + moreBox
         + '<p class="first">LATEST ' + a(s.url, esc(s.outlet)) + ' · ' + esc(s.t) + firstLine + '</p>'
         + '<details class="ab-reps" data-key="' + esc(s.key) + '"' + (repsOpen(s.key, !i) ? ' open' : '') + '><summary><span class="ab-reps-t"><svg class="pn-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h13v14H6a2 2 0 0 1-2-2V5zm13 4h3v8a2 2 0 0 1-2 2h-1M7 8h7M7 11h7M7 14h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>What each newsroom reports <span class="pn-n">' + nInd + ' independent report' + (nInd === 1 ? '' : 's') + '</span></span><span class="ab-reps-tog"><span class="o1">Show</span><span class="o2">Hide</span><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></summary><ol>' + reps + '</ol></details>'
@@ -7499,6 +7499,50 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       if (lead) [...more.children].forEach((x) => lead.appendChild(x));
       more.remove();
     }
+    place(!!(wide && lead));
+  }
+  // NO EMPTY PANEL (Hannah, Fri Nov 6, 2026, a photo of her laptop: a big empty magenta panel under the lead story,
+  // beside three stories stacked on the right). A grid row is as tall as its tallest item, so a short lead story left
+  // the left column empty for screens. Now each column stacks on its own: the rows are 1px, each box spans its own
+  // height, and the other top stories and the lead's lower boxes go, in order, into whichever column is shorter. Live
+  // coverage and the note run full width under both. Phones and a big news day's story standing alone are untouched.
+  function place(on) {
+    const kids = [...root.children];
+    if (!on) {
+      root.classList.remove('pal-bal');
+      kids.forEach((e) => { e.style.gridRow = ''; e.style.gridColumn = ''; e.classList.remove('pal-left'); });
+      return;
+    }
+    const lead = root.querySelector(':scope > .ab-story:not(.ab-second):not(.ab-lead-more)');
+    root.classList.add('pal-bal');
+    const tall = (e) => {
+      const cs = getComputedStyle(e);
+      if (cs.display === 'none' || e.hidden) return 0;
+      return Math.ceil(e.getBoundingClientRect().height + (parseFloat(cs.marginTop) || 0) + (parseFloat(cs.marginBottom) || 0));
+    };
+    const col = [1, 1];
+    const put = (e, c) => {
+      const n = Math.max(1, tall(e));
+      e.classList.toggle('pal-left', c === 0 && e !== lead);
+      e.style.gridColumn = String(c + 1);
+      e.style.gridRow = col[c] + ' / span ' + n;
+      col[c] += n;
+    };
+    put(lead, 0);
+    kids.filter((e) => e.matches('.ab-second, .ab-lead-more')).forEach((e) => {
+      if (e.classList.contains('ab-lead-more') || e.classList.contains('pal-left')) e.classList.remove('pal-left');
+      put(e, col[0] < col[1] ? 0 : 1);
+    });
+    let r = Math.max(col[0], col[1]);
+    kids.filter((e) => e !== lead && !e.matches('.ab-second, .ab-lead-more')).forEach((e) => {
+      const n = tall(e);
+      if (!n) { e.style.gridRow = ''; e.style.gridColumn = ''; return; }
+      e.style.gridColumn = '1 / -1'; e.style.gridRow = r + ' / span ' + n; r += n;
+    });
+    if (!place.ro && window.ResizeObserver) {
+      place.ro = new ResizeObserver(() => { clearTimeout(place.t); place.t = setTimeout(() => place(root.classList.contains('pal-bal')), 60); });
+    }
+    if (place.ro) kids.forEach((e) => place.ro.observe(e));
   }
   window.addEventListener('resize', () => { clearTimeout(balance.t); balance.t = setTimeout(crisp, 200); });
   crisp(); setTimeout(crisp, 1500); setTimeout(crisp, 4000);
@@ -7506,6 +7550,15 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
 })();
 </script>
 <!-- end crisp layer -->
+<style id="front-balance">
+/* NO EMPTY PANEL (Hannah, Fri Nov 6, 2026): each top column stacks on its own; see place() in the crisp layer */
+@media (min-width: 960px) {
+  #autoBreaking.pal-bal { grid-auto-rows: 1px; row-gap: 0 !important; grid-auto-flow: row; }
+  #autoBreaking.pal-bal > .pal-left { margin-top: 26px !important; padding-top: 22px !important; border-top: 1px solid rgba(255,255,255,.28) !important; }
+  #autoBreaking.pal-bal > .livecov.lc-under { margin-top: 18px; }
+}
+</style>
+
 <!-- no repeats between Connected and What each newsroom reports; newsroom names stand out (Hannah, Sat Oct 31, 2026); source: tools/dedupe_layer.html -->
 <style id="dedupe">
 /* No repeats between the two lists (Hannah, Sat Oct 31, 2026: "there are repetitive reports ... I still like connected
