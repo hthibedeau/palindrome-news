@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-06T07:29:28.448220+00:00",
- "checkedLabel": "Fri 2:29 a.m.",
+ "checked": "2026-11-06T07:39:29.191168+00:00",
+ "checkedLabel": "Fri 2:39 a.m.",
  "stories": [
   {
    "key": "top",
@@ -37,6 +37,15 @@
   }
  ],
  "wire": [
+  [
+   "Fri 2:33 a.m.",
+   "World",
+   "Major construction ongoing near Iran missile bases, satellite images suggest",
+   "BBC News",
+   "https://www.bbc.co.uk/news/articles/ckjrwx1r2d5ro?at_medium=RSS&at_campaign=rss",
+   "2026-11-06T07:33:41+00:00",
+   1
+  ],
   [
    "Fri 2:27 a.m.",
    "World",
@@ -161,7 +170,7 @@
    "ABC News",
    "https://abcnews.com/US/4-colorado-officers-shot-1-fatally-after-gunfight/story?id=137902018",
    "2026-11-06T06:14:15+00:00",
-   2
+   1
   ],
   [
    "Fri 1:13 a.m.",
@@ -252,15 +261,6 @@
    "https://www.cbsnews.com/live-updates/midterm-election-results-2026-democrats-house-senate-trump/",
    "2026-11-06T05:39:44+00:00",
    2
-  ],
-  [
-   "Fri 12:39 a.m.",
-   "Latest",
-   "Data centers took a beating in the midterm elections",
-   "ABC News",
-   "https://abcnews.com/Technology/wireStory/data-centers-beating-midterm-elections-reckoning-ahead-tech-137902293",
-   "2026-11-06T05:39:30+00:00",
-   2
   ]
  ],
  "blogs": [
@@ -292,7 +292,7 @@
  ],
  "leads": [
   {
-   "score": 33,
+   "score": 31,
    "title": "Budget 2026: Affordability Tops Canadians’ Concerns as Threats from Trump and AI Rise, But Few Expect the Budget to Make Their Lives Better",
    "url": "https://abacusdata.ca/budget-2026-affordability-tops-canadians-concerns-as-threats-from-trump-and-ai-rise-but-few-expect-the-budget-to-make-their-lives-better/",
    "outlets": 26,
@@ -307,8 +307,8 @@
   },
   {
    "score": 14,
-   "title": "General Staff: Russia has lost 1,601,830 troops in Ukraine since Feb. 24, 2022",
-   "url": "https://kyivindependent.com/general-staff-russia-has-lost-1-601-830-troops-in-ukraine-since-feb-24-2022/",
+   "title": "Cracks emerge over Europe’s fragmented approach to Ukraine peace talks",
+   "url": "https://www.euronews.com/2026/11/06/cracks-emerge-over-europes-fragmented-approach-to-ukraine-peace-talks",
    "outlets": 12,
    "why": [],
    "theme": ""
@@ -358,14 +358,6 @@
    "theme": ""
   },
   {
-   "score": 10,
-   "title": "Israel’s President Herzog to name candidate to form government on Sunday",
-   "url": "https://www.aljazeera.com/news/2026/11/6/israels-herzog-to-name-a-candidate-to-form-government-on-sunday?traffic_source=rss",
-   "outlets": 8,
-   "why": [],
-   "theme": ""
-  },
-  {
    "score": 9,
    "title": "Health Canada approves Moderna's mRNA flu and flu-COVID combo vaccines",
    "url": "https://www.thestar.com/news/ontario/health-canada-approves-moderna-s-mrna-flu-and-flu-covid-combo-vaccines/article_93a1796d-933c-5ffd-a53a-d0da8162374b.html",
@@ -378,6 +370,14 @@
    "title": "Bank of Canada keeps 2 per cent inflation target in mandate renewal",
    "url": "https://www.nationalobserver.com/2026/11/05/news/bank-canada-keeps-2-cent-inflation-target-mandate-renewal",
    "outlets": 9,
+   "why": [],
+   "theme": ""
+  },
+  {
+   "score": 8,
+   "title": "M&S takes on John Lewis in Christmas ad battle with topless ‘shredded Santa’",
+   "url": "https://www.theguardian.com/lifeandstyle/2026/nov/06/marks-and-spencer-john-lewis-christmas-ad-battle-james-norton-lucy-punch-topless-santa",
+   "outlets": 6,
    "why": [],
    "theme": ""
   }
@@ -889,11 +889,11 @@
      "wilkinson",
      "ratifying",
      "brussels",
-     "removed",
      "summit",
+     "trade",
      "eu"
     ],
-    "score": 10,
+    "score": 9,
     "outlets": 2,
     "carriers": 3,
     "tag": "Developing",
@@ -1020,7 +1020,7 @@
     "fronts_who": [],
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (national desks).",
-    "weight": 25.5
+    "weight": 24.5
    }
   ],
   "considered": [
@@ -1073,8 +1073,8 @@
     "url": "https://www.ctvnews.ca/politics/article/brussels-removed-talk-of-ratifying-canada-trade-deal-in-eu-summit-text-wilkinson/",
     "rank": 3,
     "live": "",
-    "weight": 25.5,
-    "score": 10,
+    "weight": 24.5,
+    "score": 9,
     "independent": 2,
     "most_read": 0,
     "canada": "canadian",
@@ -1172,30 +1172,9 @@
     "why_judged": "Regional: affects some people; carried beyond one city."
    },
    {
-    "title": "Budget 2026: Liberals pin tax changes, billions in spending on 'economic sovereignty'",
-    "url": "https://www.timescolonist.com/the-mix/budget-2026-liberals-pin-tax-changes-billions-in-spending-on-economic-sovereignty-12985586",
-    "rank": 8,
-    "live": "",
-    "weight": 60,
-    "score": 33,
-    "independent": 14,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "Federal budget",
-    "top": false,
-    "fronts": 1,
-    "fronts_who": [
-     "National Post"
-    ],
-    "rule": "Big international story, on every front page",
-    "carriers": 26,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (3 cities)."
-   },
-   {
     "title": "Poilievre loses third senior aide in less than a year",
     "url": "https://www.ctvnews.ca/politics/article/poilievre-loses-third-senior-aide-in-less-than-a-year/",
-    "rank": 9,
+    "rank": 8,
     "live": "",
     "weight": 17.5,
     "score": 0,
@@ -1214,9 +1193,30 @@
     "why_judged": "National: affects many people; carried beyond one city."
    },
    {
-    "title": "Israel’s President Herzog to name candidate to form government on Sunday",
-    "score": 10,
-    "why": "not built: only 2 independent report(s) (3 sites)"
+    "title": "Budget 2026: Liberals pin tax changes, billions in spending on 'economic sovereignty'",
+    "url": "https://www.timescolonist.com/the-mix/budget-2026-liberals-pin-tax-changes-billions-in-spending-on-economic-sovereignty-12985586",
+    "rank": 9,
+    "live": "",
+    "weight": 58,
+    "score": 31,
+    "independent": 14,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "Federal budget",
+    "top": false,
+    "fronts": 1,
+    "fronts_who": [
+     "National Post"
+    ],
+    "rule": "No Canadian tie",
+    "carriers": 26,
+    "judgment": "national",
+    "why_judged": "National: affects many people; carried across the country (3 cities)."
+   },
+   {
+    "title": "Health Canada approves Moderna's mRNA flu and flu-COVID combo vaccines",
+    "score": 9,
+    "why": "not built: only 1 independent report(s) (9 sites)"
    }
   ],
   "moved": [],
@@ -1665,7 +1665,7 @@
    "id": "UdjSGrpjehI",
    "r": "us",
    "o": "CNN",
-   "t": "Byron Donalds: 'No sugar coating' GOP's rough night",
+   "t": "GOP winner in FL: 'No sugar coating' Dems' big night",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=UdjSGrpjehI",
@@ -1684,7 +1684,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=-DxPUUgdOGg",
    "img": "https://i.ytimg.com/vi/-DxPUUgdOGg/hqdefault.jpg",
-   "up": "2026-11-06",
+   "up": "2026-11-05",
    "added": "2026-11-06T04:40:38.680782+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1875,7 +1875,7 @@
    "id": "A9NODb6-DZQ",
    "r": "world",
    "o": "Sky News",
-   "t": "The Polar Vortex is collapsing - what will it mean for the UK?",
+   "t": "Why a sudden stratospheric warming event could change our winter",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=A9NODb6-DZQ",
@@ -1917,7 +1917,7 @@
    "id": "0iSgSTTEv60",
    "r": "world",
    "o": "Sky News",
-   "t": "How Melania Trump helped negotiate a brief Ukraine ceasefire",
+   "t": "Melania Trump says Oleshky ceasefire 'would not be possible' without Putin and Zelenskyy",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=0iSgSTTEv60",
@@ -1931,7 +1931,7 @@
    "id": "fUvtFGZWDVY",
    "r": "world",
    "o": "BBC News",
-   "t": "Can AI toys be trusted with bedtime stories? | BBC News",
+   "t": "Are AI Teddies safe? | BBC News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=fUvtFGZWDVY",
@@ -2530,7 +2530,7 @@
     ]
    },
    {
-    "h": "Stamp prices are going up for Canadians under Budget 2026 Consumer 9 hours 1 min read",
+    "h": "Stamp prices are going up for Canadians under Budget 2026 Consumer 10 hours 1 min read",
     "u": "https://globalnews.ca/news/12138831/stamp-prices-budget-2026/",
     "o": [
      [
@@ -2618,6 +2618,16 @@
    "img": "https://cdn.nunatsiaq.com/wp-content/uploads/2026/11/IMG_4229-scaled-1-2-1200x630.jpg"
   },
   {
+   "o": "SaltWire",
+   "region": "Atlantic Canada",
+   "arctic": false,
+   "h": "Early Friday morning St. John's fire damages home, destroys vehicle",
+   "u": "https://www.saltwire.com/newfoundland-labrador/fire-damages-home-destroys-vehicle",
+   "t": "Fri 2:37 a.m.",
+   "desc": "",
+   "img": ""
+  },
+  {
    "o": "Nelson Star",
    "region": "Kootenays",
    "arctic": false,
@@ -2626,16 +2636,6 @@
    "t": "Thu 10:38 p.m.",
    "desc": "1943 ~ 2026 It is with heavy hearts that we announce the passing of Morgan Gladdish of Nelson, BC. Husband, father, brother, grandfather and cowboy, he passed peacefully surrounded by […]",
    "img": "https://nelsonstar.com/wp-content/uploads/sites/8/2026/11/Morgan20Gladdish20photo201.jpg?w=374"
-  },
-  {
-   "o": "SooToday",
-   "region": "Sault Ste. Marie",
-   "arctic": false,
-   "h": "Crews respond to fire on Queen Street East",
-   "u": "https://www.sootoday.com/local-news/crews-respond-to-fire-on-queen-street-east-12986973",
-   "t": "Thu 9:54 p.m.",
-   "desc": "Traffic was blocked off in both directions near Shannon Road",
-   "img": "https://www.vmcdn.ca/f/files/sootoday/images/emergency/20261105-sault-fire.jpg;w=1200;h=800;mode=crop"
   }
  ],
  "clocks": [
@@ -2643,22 +2643,22 @@
    "city": "St. John's",
    "tz": "America/St_Johns",
    "world": false,
-   "w": "Oil and shipping",
-   "u": "https://www.timescolonist.com/the-mix/shell-leads-spike-in-oil-exploration-bids-off-the-east-coast-of-newfoundland-12982214",
-   "title": "Shell leads spike in oil exploration bids off the east coast of Newfoundland",
-   "outlet": "Times Colonist",
-   "t": "Fri 12:29 a.m.",
+   "w": "Fire",
+   "u": "https://www.saltwire.com/newfoundland-labrador/fire-damages-home-destroys-vehicle",
+   "title": "Early Friday morning St. John's fire damages home, destroys vehicle",
+   "outlet": "SaltWire",
+   "t": "Fri 2:37 a.m.",
    "hot": false
   },
   {
    "city": "Halifax",
    "tz": "America/Halifax",
    "world": false,
-   "w": "Weather",
-   "u": "https://www.cbc.ca/player/play/9.7411324?cmp=rss",
-   "title": "Clear the gutters, major rain in the forecast for Nova Scotia",
-   "outlet": "CBC News",
-   "t": "Thu 6:18 p.m.",
+   "w": "In court",
+   "u": "https://globalnews.ca/news/12138010/ndp-call-emergency-debate-ai-data-centre/",
+   "title": "NDP renews call for emergency debate on $10B Cape Breton AI data centre project",
+   "outlet": "Global News",
+   "t": "Thu 4:31 p.m.",
    "hot": false
   },
   {
@@ -2717,6 +2717,17 @@
    "hot": false
   },
   {
+   "city": "Beijing",
+   "tz": "Asia/Shanghai",
+   "world": true,
+   "w": "Hormuz",
+   "u": "https://www.aljazeera.com/news/2026/11/6/why-is-iran-exempting-india-china-qatar-iraq-from-hormuz-restrictions?traffic_source=rss",
+   "title": "Why is Iran exempting India, China, Qatar, Iraq from Hormuz restrictions?",
+   "outlet": "Al Jazeera",
+   "t": "Fri 1:06 a.m.",
+   "hot": false
+  },
+  {
    "city": "Tehran",
    "tz": "Asia/Tehran",
    "world": true,
@@ -2726,6 +2737,17 @@
    "outlet": "Al Jazeera",
    "t": "Fri 12:00 a.m.",
    "hot": false
+  },
+  {
+   "city": "Kyiv",
+   "tz": "Europe/Kyiv",
+   "world": true,
+   "w": "Talks",
+   "u": "https://www.euronews.com/2026/11/06/cracks-emerge-over-europes-fragmented-approach-to-ukraine-peace-talks",
+   "title": "Cracks emerge over Europe’s fragmented approach to Ukraine peace talks",
+   "outlet": "Euronews",
+   "t": "Fri 2:33 a.m.",
+   "hot": true
   }
  ],
  "bigweek": [
@@ -2933,6 +2955,17 @@
   {
    "desk": "world",
    "pic": "globe",
+   "t": "Fri 2:33 a.m.",
+   "iso": "2026-11-06T07:33:20+00:00",
+   "title": "Cracks emerge over Europe’s fragmented approach to Ukraine peace talks",
+   "summary": "Good morning. I’m Mared Gwyn, holding the newsletter pen again this Friday. In this edition: Meloni takes Brussels to task over its Ukraine peace strategy, and the European Commission is set to unveil its annual migration check-up. #EuropeToday",
+   "outlet": "Euronews, The Japan Times, Al Jazeera, Kyiv Independent, The Hill, PBS NewsHour",
+   "url": "https://www.euronews.com/2026/11/06/cracks-emerge-over-europes-fragmented-approach-to-ukraine-peace-talks",
+   "img": "https://images.euronews.com/articles/stories/09/98/20/67/1200x675_cmsv2_c7edd78c-9ffa-5221-8be9-b3d72f6ed5c6-9982067.jpg"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
    "t": "Fri 2:02 a.m.",
    "iso": "2026-11-06T07:02:21+00:00",
    "title": "Newsom moves to commute all California death sentences",
@@ -2940,17 +2973,6 @@
    "outlet": "CBS News, CTV News, CP24, The Japan Times, Al Jazeera, The Hill",
    "url": "https://www.cbsnews.com/news/gavin-newsom-california-death-row-commuted-life-in-prison/",
    "img": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/05/403cee2a-5bd3-4a25-a862-ce775c51ee57/thumbnail/1200x630g2/0ccd6ce212c51ba5df42eaab5dd8ade2/gettyimages-2292819865.jpg"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Fri 1:22 a.m.",
-   "iso": "2026-11-06T06:22:00+00:00",
-   "title": "U.S. midterms offer hope on new aid for Ukraine, analysts say",
-   "summary": "The Democratic sweep of the elections could also bring about greater scrutiny of U.S. President Donald Trump’s Russia policies.",
-   "outlet": "The Japan Times, Al Jazeera, Kyiv Independent, The Hill, PBS NewsHour, CP24",
-   "url": "https://www.japantimes.co.jp/news/2026/11/06/world/politics/midterms-hope-ukraine-russia/",
-   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/06/572738.jpg?v=3.1"
   },
   {
    "desk": "world",
@@ -2984,17 +3006,6 @@
    "outlet": "BBC News, Euronews, The Japan Times, CBS News, CBC News, CP24",
    "url": "https://www.bbc.co.uk/news/articles/cmn04705rd8jo?at_medium=RSS&at_campaign=rss",
    "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/7da8/live/a5c551d0-d996-11f1-9e72-375d6b1d1f05.jpg"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Fri 2:09 a.m.",
-   "iso": "2026-11-06T07:09:42+00:00",
-   "title": "Israel’s President Herzog to name candidate to form government on Sunday",
-   "summary": "Announcement comes after majority of Israeli lawmakers endorse Eisenkot over Netanyahu.",
-   "outlet": "Al Jazeera, Times Colonist, CBC News, Global News, SaltWire, The Guardian",
-   "url": "https://www.aljazeera.com/news/2026/11/6/israels-herzog-to-name-a-candidate-to-form-government-on-sunday?traffic_source=rss",
-   "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6aed512d29ac-1793937709.jpg?resize=1920%2C1440"
   },
   {
    "desk": "world",
@@ -3041,6 +3052,17 @@
    "img": "https://winnipeg.citynews.ca/wp-content/blogs.dir/sites/13/2026/07/682e37bda97e79f8a3d9ba8064dcec4584488848271af664b103b461c70cb0ee.jpg"
   },
   {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Thu 4:59 p.m.",
+   "iso": "2026-11-05T21:59:01+00:00",
+   "title": "Online magazine Salon, an early staple of internet discourse, announces it will shut down",
+   "summary": "WASHINGTON (AP) — Salon, one of the early internet's most influential websites that featured sharp voices and political and cultural journalism with a liberal sensibility, announced Thursday it would shut",
+   "outlet": "Toronto Star, CityNews Winnipeg, CityNews Ottawa, CityNews Montreal, CityNews Edmonton, CityNews Calgary",
+   "url": "https://www.thestar.com/news/online-magazine-salon-an-early-staple-of-internet-discourse-announces-it-will-shut-down/article_7e80a551-4aaf-56e5-a66f-2f840944c2a2.html",
+   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/3/8c/38ccd07a-2ad4-5c76-ae5a-2168e8927145/6aecfc657e98a.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
+  },
+  {
    "desk": "business",
    "pic": "chart",
    "t": "Thu 5:00 p.m.",
@@ -3061,6 +3083,17 @@
    "outlet": "The Hill, Toronto Star, CTV News, Global News, CP24",
    "url": "https://thehill.com/policy/defense/6203115-hegseth-tennessee-senate-seat-blackburn/",
    "img": ""
+  },
+  {
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Thu 8:52 p.m.",
+   "iso": "2026-11-06T01:52:30+00:00",
+   "title": "Moderna’s newest combo vaccine approved by Health Canada",
+   "summary": "Health Canada has authorized Moderna’s mRNA vaccine for influenza, as well as its combination mRNA vaccine for flu and COVID-19.",
+   "outlet": "CTV News, CP24, Global News, SaltWire, The Tyee",
+   "url": "https://www.ctvnews.ca/health/article/health-canada-approves-modernas-mrna-flu-and-flu-covid-combo-vaccines/",
+   "img": "https://www.ctvnews.ca/resizer/v2/VSYBW7FBY74DK6PFPS35AU6FFQ.jpg?smart=true&auth=5b8910c2fb9339f5549a01a138017bf981f5abd4f5bf4ff68b4bd6e1c561350b&width=1200&height=630"
   },
   {
    "desk": "politics",
@@ -3171,17 +3204,6 @@
    "outlet": "Toronto Star",
    "url": "https://www.thestar.com/politics/federal/carney-government-holds-immigration-targets-steady-allows-200-000-temporary-residents-to-apply-for-permanent-status/article_dabb1359-0a52-417e-b71e-4afaf82d52e0.html",
    "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/c/c7/cc749572-0607-5773-995c-1c4e51e3a901/6aecc445253af.image.jpg?crop=1763%2C926%2C0%2C124&resize=1200%2C630&order=crop%2Cresize"
-  },
-  {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Thu 7:04 p.m.",
-   "iso": "2026-11-06T00:04:04+00:00",
-   "title": "P.E.I. Green leader calls for vote of non-confidence in premier, PC government",
-   "summary": "A motion moved by the leader of the P.E.I. Green Party on Thursday says the House has no confidence in Prince Edward Island's premier or the Progressive Conservative government.",
-   "outlet": "CBC News",
-   "url": "https://www.cbc.ca/news/canada/prince-edward-island/pei-motion-no-confidence-green-pc-government-9.7411332?cmp=rss",
-   "img": "https://i.cbc.ca/ais/2e77e42c-719d-4466-a3cd-1e357977ef39,1793918346903/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1920%2C1080%29%3BResize%3D620"
   }
  ],
  "fronts": [
@@ -3475,7 +3497,7 @@
     "url": "https://www.youtube.com/watch?v=GvWSyescLv8",
     "img": "https://i.ytimg.com/vi/GvWSyescLv8/hqdefault.jpg",
     "story": "2026 Midterm Election Results",
-    "watching": "236"
+    "watching": "225"
    },
    {
     "net": "LiveNOW from FOX",
@@ -3484,7 +3506,7 @@
     "url": "https://www.youtube.com/watch?v=2Emp24rAosg",
     "img": "https://i.ytimg.com/vi/2Emp24rAosg/hqdefault.jpg",
     "story": "Shakeup on Capitol Hill, 6 killed in NYC lithium-ion fire, Georgia flo",
-    "watching": "242"
+    "watching": "254"
    },
    {
     "net": "Sky News",
@@ -3493,7 +3515,7 @@
     "url": "https://www.youtube.com/watch?v=VqBd0AUhv8k",
     "img": "https://i.ytimg.com/vi/VqBd0AUhv8k/hqdefault.jpg",
     "story": "Doomsday cult leader sentenced for 191 Shakahola murders",
-    "watching": "81"
+    "watching": "83"
    },
    {
     "net": "Sky News",
@@ -3502,7 +3524,7 @@
     "url": "https://www.youtube.com/watch?v=mb7EVfWKgLM",
     "img": "https://i.ytimg.com/vi/mb7EVfWKgLM/hqdefault.jpg",
     "story": "Russell Brand faces 'significant' jail term for rape",
-    "watching": "553",
+    "watching": "629",
     "reports": [
      {
       "outlet": "CP24",
@@ -3584,8 +3606,8 @@
  "related": {
   "auto-bdc104a4": {
    "ties": [
-    "wall",
-    "street"
+    "street",
+    "wall"
    ],
    "stories": [],
    "views": [
