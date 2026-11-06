@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-06T05:39:51.589787+00:00",
- "checkedLabel": "Fri 12:39 a.m.",
+ "checked": "2026-11-06T05:49:52.234509+00:00",
+ "checkedLabel": "Fri 12:49 a.m.",
  "stories": [
   {
    "key": "top",
@@ -38,18 +38,27 @@
  ],
  "wire": [
   [
-   "Fri 12:38 a.m.",
+   "Fri 12:39 a.m.",
    "U.S.",
    "Democrats flip more seats in Congress as GOP grapples with stunning losses",
    "CBS News",
    "https://www.cbsnews.com/live-updates/midterm-election-results-2026-democrats-house-senate-trump/",
-   "2026-11-06T05:38:59+00:00",
+   "2026-11-06T05:39:44+00:00",
    3
+  ],
+  [
+   "Fri 12:36 a.m.",
+   "World",
+   "1 officer killed and 3 wounded in a firefight with a suspect in Lakewood, Colorado",
+   "Toronto Star",
+   "https://www.thestar.com/news/world/united-states/1-officer-killed-and-3-wounded-in-a-firefight-with-a-suspect-in-lakewood-colorado/article_f01626ee-dbb8-549d-9495-5a1e211b70bf.html",
+   "2026-11-06T05:36:24+00:00",
+   2
   ],
   [
    "Fri 12:31 a.m.",
    "U.S.",
-   "Judge blocks construction of Trump's massive arch",
+   "Judge blocks construction of Trump's massive arch after federal agency approval",
    "BBC News",
    "https://www.bbc.co.uk/news/articles/cq99zd93ryvko?at_medium=RSS&at_campaign=rss",
    "2026-11-06T05:31:59+00:00",
@@ -134,7 +143,7 @@
    "Toronto Star",
    "https://www.thestar.com/news/world/united-states/republicans-rammed-through-supreme-court-nominees-now-democrats-will-have-the-votes-to-stop-them/article_a83e7c25-ff21-5a28-8620-142ce0eac4d4.html",
    "2026-11-06T05:06:46+00:00",
-   2
+   1
   ],
   [
    "Fri 12:06 a.m.",
@@ -252,15 +261,6 @@
    "https://www.ctvnews.ca/winnipeg/article/bombers-keeping-qb-plans-under-wraps-ahead-of-east-final-against-alouettes/",
    "2026-11-06T03:51:52+00:00",
    2
-  ],
-  [
-   "Thu 10:49 p.m.",
-   "World",
-   "Paraguay’s president impeached amid bank collapse crisis",
-   "Al Jazeera",
-   "https://www.aljazeera.com/video/newsfeed/2026/11/6/paraguays-president-impeached-amid-bank-collapse-crisis?traffic_source=rss",
-   "2026-11-06T03:49:33+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -295,7 +295,7 @@
    "score": 31,
    "title": "Budget 2026: Affordability Tops Canadians’ Concerns as Threats from Trump and AI Rise, But Few Expect the Budget to Make Their Lives Better",
    "url": "https://abacusdata.ca/budget-2026-affordability-tops-canadians-concerns-as-threats-from-trump-and-ai-rise-but-few-expect-the-budget-to-make-their-lives-better/",
-   "outlets": 26,
+   "outlets": 25,
    "why": [
     "National Newswatch #2",
     "National Newswatch #3",
@@ -343,7 +343,7 @@
   },
   {
    "score": 9,
-   "title": "Judge blocks construction of Trump's massive arch",
+   "title": "Judge blocks construction of Trump's massive arch after federal agency approval",
    "url": "https://www.bbc.co.uk/news/articles/cq99zd93ryvko?at_medium=RSS&at_campaign=rss",
    "outlets": 7,
    "why": [],
@@ -375,8 +375,8 @@
   },
   {
    "score": 8,
-   "title": "Shell leads spike in oil exploration bids off the east coast of Newfoundland",
-   "url": "https://www.timescolonist.com/the-mix/shell-leads-spike-in-oil-exploration-bids-off-the-east-coast-of-newfoundland-12982214",
+   "title": "Paraguay President Peña under investigation, faces removal from office over bank collapse",
+   "url": "https://www.timescolonist.com/the-mix/paraguay-president-pena-under-investigation-faces-removal-from-office-over-bank-collapse-12983416",
    "outlets": 6,
    "why": [],
    "theme": ""
@@ -407,7 +407,7 @@
     "outlets": 4,
     "carriers": 5,
     "tag": "Breaking",
-    "title": "Judge blocks construction of Trump's massive arch",
+    "title": "Judge blocks construction of Trump's massive arch after federal agency approval",
     "url": "https://www.bbc.co.uk/news/articles/cq99zd93ryvko?at_medium=RSS&at_campaign=rss",
     "outlet": "BBC News",
     "t": "Fri 12:31 a.m.",
@@ -473,7 +473,7 @@
       "t": "Fri 12:31 a.m.",
       "iso": "2026-11-06T05:31:59+00:00",
       "outlet": "BBC News",
-      "title": "Judge blocks construction of Trump's massive arch",
+      "title": "Judge blocks construction of Trump's massive arch after federal agency approval",
       "url": "https://www.bbc.co.uk/news/articles/cq99zd93ryvko?at_medium=RSS&at_campaign=rss",
       "desc": "The Trump administration had hoped the building of the 250-foot arch could begin as early as this week."
      },
@@ -515,7 +515,7 @@
       "t": "Fri 12:31 a.m.",
       "primary": false,
       "outlet": "BBC News",
-      "title": "Judge blocks construction of Trump's massive arch",
+      "title": "Judge blocks construction of Trump's massive arch after federal agency approval",
       "url": "https://www.bbc.co.uk/news/articles/cq99zd93ryvko?at_medium=RSS&at_campaign=rss",
       "desc": "The Trump administration had hoped the building of the 250-foot arch could begin as early as this week.",
       "wire": "",
@@ -598,9 +598,10 @@
     "incoherent": false,
     "popular": 0,
     "us_election": false,
-    "fronts": 1,
+    "fronts": 2,
     "fronts_ca": 0,
     "fronts_who": [
+     "NBC News",
      "NPR"
     ],
     "judgment": "national",
@@ -638,10 +639,11 @@
      "alt": "After cancer surgery, Pope Leo embarks on Latin America trip with a first stop in secular Uruguay",
      "outlet": "Toronto Star",
      "url": "https://www.thestar.com/news/world/americas/after-cancer-surgery-pope-leo-embarks-on-latin-america-trip-with-a-first-stop-in-secular-uruguay/article_6289b796-a55c-56d2-b30f-0972109cd6b2.html",
-     "since": "2026-11-06T05:17:36.579802+00:00"
+     "since": "2026-11-06T05:51:17.983572+00:00"
     },
     "photo_seen": [
-     "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/e/7f/e7f5199d-2e99-56b6-baf0-87641092beae/6aed61298ce3f.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
+     "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/e/7f/e7f5199d-2e99-56b6-baf0-87641092beae/6aed61298ce3f.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize",
+     "https://images.euronews.com/articles/stories/09/98/18/35/1200x675_cmsv2_240710af-ce7a-5be0-9945-7a1b32abb6a3-9981835.jpg"
     ],
     "photos": [
      {
@@ -795,11 +797,11 @@
    {
     "key": "auto-31e908da",
     "words": [
-     "wilkinson",
      "ratifying",
-     "brussels",
+     "wilkinson",
      "removed",
      "summit",
+     "trade",
      "eu"
     ],
     "score": 9,
@@ -934,7 +936,7 @@
   ],
   "considered": [
    {
-    "title": "Judge blocks construction of Trump's massive arch",
+    "title": "Judge blocks construction of Trump's massive arch after federal agency approval",
     "url": "https://www.bbc.co.uk/news/articles/cq99zd93ryvko?at_medium=RSS&at_campaign=rss",
     "rank": 1,
     "live": "",
@@ -945,8 +947,9 @@
     "canada": "none",
     "theme": "",
     "top": true,
-    "fronts": 1,
+    "fronts": 2,
     "fronts_who": [
+     "NBC News",
      "NPR"
     ],
     "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
@@ -999,9 +1002,9 @@
     "url": "https://www.aljazeera.com/news/2026/11/6/trump-issues-proclamation-declaring-oval-office-national-monument?traffic_source=rss",
     "rank": 4,
     "live": "",
-    "weight": 47.5,
+    "weight": 43.5,
     "score": 20,
-    "independent": 9,
+    "independent": 8,
     "most_read": 0,
     "canada": "none",
     "theme": "",
@@ -1012,7 +1015,7 @@
      "BBC News",
      "The Guardian"
     ],
-    "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
+    "rule": "No Canadian tie",
     "carriers": 9,
     "judgment": "national",
     "why_judged": "National: affects many people; carried across the country (national desks)."
@@ -1107,7 +1110,7 @@
     "live": "",
     "weight": 66,
     "score": 31,
-    "independent": 15,
+    "independent": 14,
     "most_read": 0,
     "canada": "canadian",
     "theme": "Federal budget",
@@ -1117,7 +1120,7 @@
      "CBC News"
     ],
     "rule": "Canadian, still developing",
-    "carriers": 26,
+    "carriers": 25,
     "judgment": "national",
     "why_judged": "National: affects many people; carried across the country (3 cities)."
    },
@@ -1134,11 +1137,6 @@
    {
     "title": "Bank of Canada keeps 2 per cent inflation target in mandate renewal",
     "score": 9,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Shell leads spike in oil exploration bids off the east coast of Newfoundland",
-    "score": 8,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
@@ -1235,12 +1233,12 @@
      "outlines",
      "billions",
      "carney's",
-     "budget",
-     "within"
+     "within",
+     "budget"
     ],
     "score": 31,
-    "outlets": 15,
-    "carriers": 26,
+    "outlets": 14,
+    "carriers": 25,
     "tag": "Developing",
     "title": "Yukon power grid, N.W.T. highway among major northern projects named in federal budget",
     "url": "https://www.cbc.ca/news/canada/north/yukon-power-grid-n-w-t-highway-among-major-northern-projects-named-in-federal-budget-9.7411597?cmp=rss",
@@ -1263,7 +1261,7 @@
      "alt": "The Mayo hydro facility in Yukon is among several northern infrastructure projects named in the latest federal budget, tabled Thursday.",
      "outlet": "CBC News",
      "url": "https://www.cbc.ca/news/canada/north/yukon-power-grid-n-w-t-highway-among-major-northern-projects-named-in-federal-budget-9.7411597?cmp=rss",
-     "since": "2026-11-06T05:40:52.985367+00:00"
+     "since": "2026-11-06T05:51:16.651398+00:00"
     },
     "photo_seen": [
      "https://i.cbc.ca/ais/1.7451439,1740784354000/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C64%2C1254%2C705%29%3BResize%3D620"
@@ -1278,7 +1276,7 @@
       "url": "https://www.cbc.ca/news/canada/north/yukon-power-grid-n-w-t-highway-among-major-northern-projects-named-in-federal-budget-9.7411597?cmp=rss"
      }
     ],
-    "independent": 15,
+    "independent": 14,
     "reports": [
      {
       "t": "Thu 9:56 p.m.",
@@ -1628,18 +1626,18 @@
       "up": ""
      },
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=diJh2vM9AVw",
-      "title": "Federal budget 2026: What we learned as Champagne, Poilievre debate Carney spending plan | FULL",
-      "img": "https://i.ytimg.com/vi/diJh2vM9AVw/hqdefault.jpg",
-      "rec": true,
-      "up": ""
-     },
-     {
       "net": "CityNews",
       "url": "https://www.youtube.com/watch?v=zmgG5-7V1MI",
       "title": "Federal budget 2026 special coverage on CityNews 24/7",
       "img": "https://i.ytimg.com/vi/zmgG5-7V1MI/hqdefault.jpg",
+      "rec": true,
+      "up": ""
+     },
+     {
+      "net": "CPAC",
+      "url": "https://www.youtube.com/watch?v=NRG3KVFG_64",
+      "title": "CPAC Special: Federal Budget 2026 – November 5, 2026",
+      "img": "https://i.ytimg.com/vi/NRG3KVFG_64/hqdefault.jpg",
       "rec": true,
       "up": ""
      }
@@ -1796,7 +1794,7 @@
    "id": "ranEEr4d5Zc",
    "r": "ca",
    "o": "CTV News",
-   "t": "Big Nickel Hockey Tournament underway | CTV News Northern Ontario at 6 p.m. Nov. 5, 2026",
+   "t": "Skeletal remains found in Timmins | CTV News Northern Ontario at 6 p.m. Nov. 5, 2026",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=ranEEr4d5Zc",
@@ -1824,7 +1822,7 @@
    "id": "AlySMJmSSDc",
    "r": "ca",
    "o": "Global News",
-   "t": "1 in 3 Canadian youth experienced dating violence: report",
+   "t": "New report reveals 1 in 3 Canadian youth experience violence from dating",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=AlySMJmSSDc",
@@ -2230,7 +2228,7 @@
    "id": "0iSgSTTEv60",
    "r": "world",
    "o": "Sky News",
-   "t": "Melania Trump says Oleshky ceasefire 'would not be possible' without Putin and Zelenskyy",
+   "t": "How Melania Trump helped negotiate a brief Ukraine ceasefire",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=0iSgSTTEv60",
@@ -2286,11 +2284,11 @@
  "ledes": [
   {
    "o": "CBS News",
-   "h": "Democrats flip more seats in Congress as GOP grapples with stunning losses",
-   "u": "https://www.cbsnews.com/live-updates/midterm-election-results-2026-democrats-house-senate-trump/",
-   "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/05/2daf0622-8721-4edd-b5da-d13ce703c80b/thumbnail/1200x630g2/c058e7adb1fdd87dc15b0b27abdfbf9b/gettyimages-2303511310.jpg",
-   "w": "Fri 12:39 a.m.",
-   "iso": "2026-11-06T05:39:44+00:00"
+   "h": "Judge blocks construction on Trump's 250-foot arch for now",
+   "u": "https://www.cbsnews.com/news/trump-arch-approval-national-capital-planning-commission/",
+   "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/05/c696b995-2ef3-4585-86f6-b4f0b38663a1/thumbnail/1200x630g2/8d84ab5b83c9da43c226190fefb974b1/screenshot-2026-11-05-at-1-22-21-pm.png",
+   "w": "Fri 12:50 a.m.",
+   "iso": "2026-11-06T05:50:25+00:00"
   },
   {
    "o": "ABC News",
@@ -3024,7 +3022,7 @@
    "title": "Trump issues proclamation declaring Oval Office national monument",
    "outlet": "Al Jazeera",
    "t": "Thu 11:48 p.m.",
-   "hot": true
+   "hot": false
   },
   {
    "city": "Tehran",
@@ -3046,17 +3044,6 @@
    "title": "Trump meets Russian envoy in Washington ahead of Ukraine peace talks, claims 'big, beautiful agreement' coming",
    "outlet": "Kyiv Independent",
    "t": "Thu 9:54 p.m.",
-   "hot": false
-  },
-  {
-   "city": "Mexico City",
-   "tz": "America/Mexico_City",
-   "world": true,
-   "w": "In court",
-   "u": "https://www.cbc.ca/news/canada/mexican-judge-bribe-ryan-wedding-9.7410789",
-   "title": "Mexican judge arrested over alleged $2M bribe to release Ryan Wedding's second-in-command",
-   "outlet": "CBC News",
-   "t": "Thu 10:45 p.m.",
    "hot": false
   }
  ],
@@ -3138,16 +3125,6 @@
      "exclusive": false
     },
     {
-     "t": "Thu 5:15 p.m.",
-     "iso": "2026-11-05T22:15:56+00:00",
-     "outlet": "VOCM",
-     "title": "‘Masters of Our Destiny:’ Aiding Affordability, Building Infrastructure, Supporting Defence, Ottawa Delivers 2026 Budget",
-     "url": "https://vocm.com/2026/11/05/masters-of-our-destiny-aiding-affordability-building-infrastructure-supporting-defence-ottawa-delivers-2026-budgetf/",
-     "canada": true,
-     "paywall": false,
-     "exclusive": false
-    },
-    {
      "t": "Thu 5:08 p.m.",
      "iso": "2026-11-05T22:08:41+00:00",
      "outlet": "Global News",
@@ -3163,6 +3140,16 @@
      "outlet": "Politico",
      "title": "Forget ‘elbows up.’ Carney has a new pitch for Canada's future.",
      "url": "https://www.politico.com/news/2026/11/05/canada-budget-masters-of-our-destiny-01152428",
+     "canada": true,
+     "paywall": false,
+     "exclusive": false
+    },
+    {
+     "t": "Thu 4:14 p.m.",
+     "iso": "2026-11-05T21:14:54+00:00",
+     "outlet": "The Logic",
+     "title": "Carmichael: Carney and Champagne’s budget sends the bond market a message",
+     "url": "https://thelogic.co/commentary/kevin-carmichael-federal-budget-2026-bond-market/",
      "canada": true,
      "paywall": false,
      "exclusive": false
@@ -3311,7 +3298,7 @@
    "pic": "globe",
    "t": "Fri 12:31 a.m.",
    "iso": "2026-11-06T05:31:59+00:00",
-   "title": "Judge blocks construction of Trump's massive arch",
+   "title": "Judge blocks construction of Trump's massive arch after federal agency approval",
    "summary": "The Trump administration had hoped the building of the 250-foot arch could begin as early as this week.",
    "outlet": "BBC News, Times Colonist, CBS News, ABC News, Fox News, PBS NewsHour",
    "url": "https://www.bbc.co.uk/news/articles/cq99zd93ryvko?at_medium=RSS&at_campaign=rss",
@@ -3356,10 +3343,10 @@
    "t": "Thu 4:59 p.m.",
    "iso": "2026-11-05T21:59:01+00:00",
    "title": "Online magazine Salon, an early staple of internet discourse, announces it will shut down",
-   "summary": "",
+   "summary": "WASHINGTON (AP) — Salon, one of the early internet's most influential websites that featured sharp voices and political and cultural journalism with a liberal sensibility, announced Thursday it would shut",
    "outlet": "Toronto Star, CityNews Winnipeg, CityNews Ottawa, CityNews Montreal, CityNews Edmonton, CityNews Calgary",
    "url": "https://www.thestar.com/news/online-magazine-salon-an-early-staple-of-internet-discourse-announces-it-will-shut-down/article_7e80a551-4aaf-56e5-a66f-2f840944c2a2.html",
-   "img": ""
+   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/3/8c/38ccd07a-2ad4-5c76-ae5a-2168e8927145/6aecfc657e98a.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
   },
   {
    "desk": "politics",
@@ -3373,17 +3360,6 @@
    "img": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/21cca8a0951b610b885f3f6a7e3dd1f3cf1efc06ebb0fdb1ba90f32faf458324.jpg;w=1200;h=800;mode=crop"
   },
   {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Thu 10:36 p.m.",
-   "iso": "2026-11-06T03:36:55+00:00",
-   "title": "Hegseth not in consideration for Tennessee Senate: Report",
-   "summary": "",
-   "outlet": "The Hill, Toronto Star, CTV News, Global News, CP24, VOCM",
-   "url": "https://thehill.com/policy/defense/6203115-hegseth-tennessee-senate-seat-blackburn/",
-   "img": ""
-  },
-  {
    "desk": "business",
    "pic": "chart",
    "t": "Thu 5:00 p.m.",
@@ -3393,6 +3369,17 @@
    "outlet": "CP24, BNN Bloomberg, CityNews Ottawa, CityNews Calgary, CityNews, Toronto Star",
    "url": "https://www.cp24.com/news/canada/2026/11/05/budget-raises-questions-about-defence-spending-targets-after-2030/",
    "img": "https://www.cp24.com/resizer/v2/FNYLSQZCEVF2DWGFQGCKHSW4XA.jpg?smart=true&auth=07776c569b006e104b140550e619c88a70141f32a6a4fe2da166be0a0f04dcef&width=1200&height=630"
+  },
+  {
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Thu 10:36 p.m.",
+   "iso": "2026-11-06T03:36:55+00:00",
+   "title": "Hegseth not in consideration for Tennessee Senate: Report",
+   "summary": "",
+   "outlet": "The Hill, Toronto Star, CTV News, Global News, CP24",
+   "url": "https://thehill.com/policy/defense/6203115-hegseth-tennessee-senate-seat-blackburn/",
+   "img": ""
   },
   {
    "desk": "politics",
@@ -3685,7 +3672,7 @@
     "How anger helped fuel Latino voter turnout and Democratic shift in Texas",
     "Why plunging tech stocks might be just what the market needed",
     "A district-level look at shifts across the House battlefield",
-    "Trump’s D.C.-area arch approved by federal planning commission as court battle looms",
+    "Judge blocks construction on Trump’s D.C.-area arch after commission’s approval",
     "Pete Hegseth strikes defiant tone in face of impeachment threat"
    ],
    "u": [
@@ -3807,7 +3794,7 @@
     "url": "https://www.youtube.com/watch?v=GvWSyescLv8",
     "img": "https://i.ytimg.com/vi/GvWSyescLv8/hqdefault.jpg",
     "story": "2026 Midterm Election Results",
-    "watching": "232",
+    "watching": "234",
     "reports": [
      {
       "outlet": "Canada's National Observer",
@@ -3825,7 +3812,7 @@
     "url": "https://www.youtube.com/watch?v=2Emp24rAosg",
     "img": "https://i.ytimg.com/vi/2Emp24rAosg/hqdefault.jpg",
     "story": "Shakeup on Capitol Hill, 6 killed in NYC lithium-ion fire, Georgia flo",
-    "watching": "271"
+    "watching": "284"
    },
    {
     "net": "Reuters",
@@ -3834,7 +3821,7 @@
     "url": "https://www.youtube.com/watch?v=psGg9QKR8Fs",
     "img": "https://i.ytimg.com/vi/psGg9QKR8Fs/hqdefault.jpg",
     "story": "Pope Leo departs Rome to visit South America",
-    "watching": "7",
+    "watching": "51",
     "reports": [
      {
       "outlet": "Toronto Star",
@@ -3852,7 +3839,7 @@
     "url": "https://www.youtube.com/watch?v=Ber_fjQ3u7I",
     "img": "https://i.ytimg.com/vi/Ber_fjQ3u7I/hqdefault.jpg",
     "story": "Russell Brand faces years in prison for raping one of his fans",
-    "watching": "236",
+    "watching": "241",
     "reports": [
      {
       "outlet": "CP24",
@@ -3915,7 +3902,7 @@
    "story": "Iran war live: Trump warns US may have to ‘destroy’ rest of Iran",
    "title": "Iran war live: Trump warns US may have to ‘destroy’ rest of Iran",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/6/iran-war-live-trump-warns-us-may-have-to-destroy-rest-of-iran?traffic_source=rss",
-   "updated": "2026-11-06T05:30:59+00:00",
+   "updated": "2026-11-06T05:45:39+00:00",
    "ended": false,
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/14414821-1793917435.jpg?resize=1920%2C1440"
   }
@@ -4017,60 +4004,6 @@
   },
   "https://www.youtube.com/watch?v=GvWSyescLv8": {
    "story": "2026 Midterm Election Results",
-   "us": true,
-   "specific": 5,
-   "stories": [
-    {
-     "t": "Thu 7:49 p.m.",
-     "iso": "2026-11-06T00:49:35+00:00",
-     "outlet": "CBC News",
-     "title": "Manitoba's pork industry hopeful after key states flipped from red to blue in U.S. midterms",
-     "url": "https://www.cbc.ca/news/canada/manitoba/manitoba-s-pork-industry-hopeful-after-key-states-flipped-in-u-s-midterms-9.7411295?cmp=rss",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Thu 2:07 p.m.",
-     "iso": "2026-11-05T19:07:31+00:00",
-     "outlet": "Global News",
-     "title": "Carney says Canada is ‘confident,’ focus not changing after U.S. midterms",
-     "url": "https://globalnews.ca/news/12138208/mark-carney-us-midterms/",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Thu 7:20 a.m.",
-     "iso": "2026-11-05T12:20:25+00:00",
-     "outlet": "Canada's National Observer",
-     "title": "Here's how the US midterm election results could affect Canada",
-     "url": "https://www.nationalobserver.com/2026/11/05/news/heres-how-us-midterm-election-results-could-affect-canada",
-     "ca": false,
-     "tie": ""
-    },
-    {
-     "t": "Thu 4:01 a.m.",
-     "iso": "2026-11-05T09:01:05+00:00",
-     "outlet": "Toronto Star",
-     "title": "U.S. midterm results spark joy among Canadians but trust in America remains shaky",
-     "url": "https://www.thestar.com/news/canada/u-s-midterm-results-spark-joy-among-canadians-but-trust-in-america-remains-shaky/article_73e9dbbf-a4e5-52dc-8645-e27e657b4a9a.html",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Thu 1:02 a.m.",
-     "iso": "2026-11-05T06:02:43+00:00",
-     "outlet": "BNN Bloomberg",
-     "title": "Canada braces for Trump fallout as Democrats win big in U.S. midterms",
-     "url": "https://www.bnnbloomberg.ca/business/international/2026/11/05/canada-braces-for-trump-fallout-as-democrats-win-big-in-us-midterms/",
-     "ca": true,
-     "tie": ""
-    }
-   ],
-   "official": [],
-   "views": []
-  },
-  "https://www.cbsnews.com/live-updates/midterm-election-results-2026-democrats-house-senate-trump/": {
-   "story": "Democrats flip more seats in Congress as GOP grapples with stunning losses",
    "us": true,
    "specific": 5,
    "stories": [
@@ -4227,7 +4160,7 @@
    "pic": "globe",
    "h": "Yukon power grid, N.W.T. highway among major northern projects named in federal budget",
    "lede": "Prime Minister Mark Carney's second budget, tabled Thursday, includes money for power infrastructure in the Yukon, a major highway project in the N.W.T., and community projects in Nunavut.",
-   "newl": "Now carried by 15 independent newsrooms.",
+   "newl": "Now carried by 14 independent newsrooms.",
    "rows": [
     [
      "CBC News",
@@ -4351,7 +4284,7 @@
    "pic": "globe",
    "h": "Trump issues proclamation declaring Oval Office national monument",
    "lede": "Following election losses, the signing marks Trump's third event of the week focused on signature renovation projects.",
-   "newl": "Now carried by 9 independent newsrooms.",
+   "newl": "Now carried by 8 independent newsrooms.",
    "rows": [
     [
      "Al Jazeera",
