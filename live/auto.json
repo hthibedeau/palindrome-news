@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-06T06:43:37.784066+00:00",
- "checkedLabel": "Fri 1:43 a.m.",
+ "checked": "2026-11-06T06:53:37.698751+00:00",
+ "checkedLabel": "Fri 1:53 a.m.",
  "stories": [
   {
    "key": "top",
@@ -37,6 +37,24 @@
   }
  ],
  "wire": [
+  [
+   "Fri 1:48 a.m.",
+   "Canada",
+   "‘Immediately stop using’: Thousands of items sold in Canada recalled due to fire and burn hazards",
+   "CTV News",
+   "https://www.ctvnews.ca/health/article/thousands-of-items-sold-in-canada-recalled-due-to-fire-and-burn-hazards/",
+   "2026-11-06T06:48:47+00:00",
+   2
+  ],
+  [
+   "Fri 1:36 a.m.",
+   "U.S.",
+   "Judge temporarily halts building work on Trump’s triumphal arch",
+   "The Guardian",
+   "https://www.theguardian.com/us-news/2026/nov/06/judge-temporarily-halts-work-trump-triumphal-arch-washington",
+   "2026-11-06T06:36:20+00:00",
+   1
+  ],
   [
    "Fri 1:26 a.m.",
    "World",
@@ -243,24 +261,6 @@
    "https://www.thestar.com/news/world/united-states/closing-arguments-expected-in-trial-of-ex-cop-accused-of-killing-sandra-birchmore/article_af89cdc6-3d94-50b9-b357-177ff96671e3.html",
    "2026-11-06T05:08:36+00:00",
    1
-  ],
-  [
-   "Fri 12:08 a.m.",
-   "World",
-   "What to know about Pope Leo XIV's trip to Uruguay, Argentina and Peru",
-   "Toronto Star",
-   "https://www.thestar.com/news/world/americas/what-to-know-about-pope-leo-xiv-s-trip-to-uruguay-argentina-and-peru/article_c12ee40a-e856-52d7-b483-dcd68b3e9738.html",
-   "2026-11-06T05:08:35+00:00",
-   1
-  ],
-  [
-   "Fri 12:07 a.m.",
-   "World",
-   "Uninsured and flooded out, a Colorado man worries if life will be normal again",
-   "Toronto Star",
-   "https://www.thestar.com/news/world/united-states/uninsured-and-flooded-out-a-colorado-man-worries-if-life-will-be-normal-again/article_26fb3b0c-7a98-57a9-893a-973f27406755.html",
-   "2026-11-06T05:07:01+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -295,7 +295,7 @@
    "score": 33,
    "title": "Budget 2026: Affordability Tops Canadians’ Concerns as Threats from Trump and AI Rise, But Few Expect the Budget to Make Their Lives Better",
    "url": "https://abacusdata.ca/budget-2026-affordability-tops-canadians-concerns-as-threats-from-trump-and-ai-rise-but-few-expect-the-budget-to-make-their-lives-better/",
-   "outlets": 27,
+   "outlets": 26,
    "why": [
     "National Newswatch #2",
     "National Newswatch #3",
@@ -306,7 +306,7 @@
    "theme": "Federal budget"
   },
   {
-   "score": 20,
+   "score": 18,
    "title": "Trump declares his redesigned Oval Office a national monument",
    "url": "https://www.cbc.ca/news/world/trump-midterms-oval-office-9.7411316",
    "outlets": 15,
@@ -330,14 +330,6 @@
    "title": "FEMA backlog causes delays in California infrastructure projects",
    "url": "https://www.cbsnews.com/losangeles/news/fema-backlog-causing-delays-in-southern-california-infrastructure-projects/",
    "outlets": 12,
-   "why": [],
-   "theme": ""
-  },
-  {
-   "score": 10,
-   "title": "Federal judge orders 14-day delay on any work beginning on Trump's monumental arch",
-   "url": "https://www.timescolonist.com/world-news/federal-judge-orders-14-day-delay-on-any-work-beginning-on-trumps-monumental-arch-12987060",
-   "outlets": 8,
    "why": [],
    "theme": ""
   },
@@ -380,9 +372,27 @@
    "outlets": 6,
    "why": [],
    "theme": ""
+  },
+  {
+   "score": 8,
+   "title": "Federal judge orders 14-day delay on any work beginning on Trump's monumental arch",
+   "url": "https://www.timescolonist.com/world-news/federal-judge-orders-14-day-delay-on-any-work-beginning-on-trumps-monumental-arch-12987060",
+   "outlets": 6,
+   "why": [],
+   "theme": ""
   }
  ],
  "canada": [
+  {
+   "t": "Fri 1:48 a.m.",
+   "iso": "2026-11-06T06:48:47+00:00",
+   "region": "Ontario",
+   "title": "‘Immediately stop using’: Thousands of items sold in Canada recalled due to fire and burn hazards",
+   "summary": "Four products sold in Canada are being recalled due to fire and burn hazards.",
+   "outlet": "CP24",
+   "url": "https://www.cp24.com/news/canada/2026/11/06/thousands-of-items-sold-in-canada-recalled-due-to-fire-and-burn-hazards/",
+   "img": "https://www.cp24.com/resizer/v2/UPI3ANC77JAYBO3KEG5U3BTB7Q.jpeg?smart=true&auth=538b2571348af40d55abcc23670c2c926f9c57148db8694f85ea81a3366ca3f9&width=1200&height=630"
+  },
   {
    "t": "Fri 1:07 a.m.",
    "iso": "2026-11-06T06:07:08.256000+00:00",
@@ -415,7 +425,7 @@
      "wilkinson",
      "brussels",
      "removed",
-     "summit",
+     "trade",
      "eu"
     ],
     "score": 9,
@@ -551,10 +561,10 @@
     "key": "auto-b54b1840",
     "words": [
      "cabinet",
-     "room",
-     "oval"
+     "oval",
+     "room"
     ],
-    "score": 20,
+    "score": 18,
     "outlets": 8,
     "carriers": 9,
     "tag": "Developing",
@@ -858,7 +868,7 @@
     ],
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (national desks).",
-    "weight": 43.5
+    "weight": 41.5
    }
   ],
   "considered": [
@@ -886,8 +896,8 @@
     "url": "https://www.aljazeera.com/news/2026/11/6/trump-issues-proclamation-declaring-oval-office-national-monument?traffic_source=rss",
     "rank": 2,
     "live": "",
-    "weight": 43.5,
-    "score": 20,
+    "weight": 41.5,
+    "score": 18,
     "independent": 8,
     "most_read": 0,
     "canada": "none",
@@ -909,9 +919,9 @@
     "url": "https://www.thestar.com/news/world/americas/after-cancer-surgery-pope-leo-embarks-on-latin-america-trip-with-a-first-stop-in-secular-uruguay/article_6289b796-a55c-56d2-b30f-0972109cd6b2.html",
     "rank": 3,
     "live": "",
-    "weight": 29.0,
+    "weight": 28.0,
     "score": 12,
-    "independent": 4,
+    "independent": 3,
     "most_read": 0,
     "canada": "none",
     "theme": "",
@@ -993,7 +1003,7 @@
     "live": "",
     "weight": 60,
     "score": 33,
-    "independent": 15,
+    "independent": 14,
     "most_read": 0,
     "canada": "none",
     "theme": "Federal budget",
@@ -1003,7 +1013,7 @@
      "National Post"
     ],
     "rule": "Big international story, on every front page",
-    "carriers": 27,
+    "carriers": 26,
     "judgment": "national",
     "why_judged": "National: affects many people; carried across the country (3 cities)."
    },
@@ -1012,8 +1022,8 @@
     "url": "https://www.timescolonist.com/world-news/federal-judge-orders-14-day-delay-on-any-work-beginning-on-trumps-monumental-arch-12987060",
     "rank": 8,
     "live": "",
-    "weight": 32.0,
-    "score": 10,
+    "weight": 30.0,
+    "score": 8,
     "independent": 5,
     "most_read": 0,
     "canada": "none",
@@ -1163,16 +1173,16 @@
     "url": "https://www.cbc.ca/news/world/california-newsom-death-row-commutation-9.7410993"
    },
    {
-    "title": "Federal judge orders 14-day delay on any work beginning on Trump's monumental arch",
-    "url": "https://www.timescolonist.com/world-news/federal-judge-orders-14-day-delay-on-any-work-beginning-on-trumps-monumental-arch-12987060"
-   },
-   {
     "title": "Nithya Raman ousts incumbent Karen Bass in LA mayor's race, CBS News projects",
     "url": "https://www.cbsnews.com/news/los-angeles-mayor-election-2026-nithya-raman-karen-bass/"
    },
    {
     "title": "Trump meets Russian envoy in Washington ahead of Ukraine peace talks, claims 'big, beautiful agreement' coming",
     "url": "https://kyivindependent.com/trump-meets-russian-envoy-in-washington-ahead-of-ukraine-peace-talks-claims-big-beautiful-agreement-coming/"
+   },
+   {
+    "title": "Federal judge orders 14-day delay on any work beginning on Trump's monumental arch",
+    "url": "https://www.timescolonist.com/world-news/federal-judge-orders-14-day-delay-on-any-work-beginning-on-trumps-monumental-arch-12987060"
    }
   ]
  },
@@ -1545,7 +1555,7 @@
    "id": "UdjSGrpjehI",
    "r": "us",
    "o": "CNN",
-   "t": "Byron Donalds: 'No sugar coating' GOP's rough night",
+   "t": "GOP winner in FL: 'No sugar coating' Dems' big night",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=UdjSGrpjehI",
@@ -1598,34 +1608,6 @@
    "geo": "unknown"
   },
   {
-   "id": "BKYYU-nOodQ",
-   "r": "us",
-   "o": "Bloomberg",
-   "t": "Asia Stocks Sell Off As AI Rout Deepens",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=BKYYU-nOodQ",
-   "img": "https://i.ytimg.com/vi/BKYYU-nOodQ/hqdefault.jpg",
-   "up": "2026-11-06",
-   "added": "2026-11-06T05:39:51.589787+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "cHYEGRR5QDA",
-   "r": "us",
-   "o": "Bloomberg",
-   "t": "China Tech Stocks Slide in Broad Market Rout",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=cHYEGRR5QDA",
-   "img": "https://i.ytimg.com/vi/cHYEGRR5QDA/hqdefault.jpg",
-   "up": "2026-11-06",
-   "added": "2026-11-06T06:13:37.463254+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "kJZ0D9kwe-k",
    "r": "us",
    "o": "Fox News",
@@ -1650,6 +1632,34 @@
    "img": "https://i.ytimg.com/vi/Bnj1T8BWwqA/hqdefault.jpg",
    "up": "2026-11-06",
    "added": "2026-11-06T06:23:37.940187+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "MCLOLS7PQnw",
+   "r": "us",
+   "o": "Bloomberg",
+   "t": "Midterms Fallout: Rubio Said to Weigh Future in Trump Administration",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=MCLOLS7PQnw",
+   "img": "https://i.ytimg.com/vi/MCLOLS7PQnw/hqdefault.jpg",
+   "up": "2026-11-06",
+   "added": "2026-11-06T06:53:37.698751+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "Q30pLqQ2tYI",
+   "r": "us",
+   "o": "Bloomberg",
+   "t": "Stocks Rout: AI Selloff Deepens as Japan, South Korea Tumble",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=Q30pLqQ2tYI",
+   "img": "https://i.ytimg.com/vi/Q30pLqQ2tYI/hqdefault.jpg",
+   "up": "2026-11-06",
+   "added": "2026-11-06T06:53:37.698751+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1752,24 +1762,10 @@
    "geo": "unknown"
   },
   {
-   "id": "GI92rl0ZOVI",
-   "r": "world",
-   "o": "Reuters",
-   "t": "Hegseth vows to fight any impeachment, defends Iran war",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=GI92rl0ZOVI",
-   "img": "https://i.ytimg.com/vi/GI92rl0ZOVI/hqdefault.jpg",
-   "up": "2026-11-06",
-   "added": "2026-11-06T05:05:56.485293+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "A9NODb6-DZQ",
    "r": "world",
    "o": "Sky News",
-   "t": "The Polar Vortex is collapsing - what will it mean for the UK?",
+   "t": "How an unprecedented event above the North Pole could affect our winter",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=A9NODb6-DZQ",
@@ -1790,6 +1786,20 @@
    "img": "https://i.ytimg.com/vi/e4C9jeNYl1U/hqdefault.jpg",
    "up": "2026-11-06",
    "added": "2026-11-06T06:43:37.784066+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "Bx3XmvEZAys",
+   "r": "world",
+   "o": "Reuters",
+   "t": "Tourism vs conservation: Indonesia's whale shark conundrum",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=Bx3XmvEZAys",
+   "img": "https://i.ytimg.com/vi/Bx3XmvEZAys/hqdefault.jpg",
+   "up": "2026-11-06",
+   "added": "2026-11-06T06:53:37.698751+00:00",
    "pic": "globe",
    "geo": "unknown"
   }
@@ -2126,6 +2136,13 @@
     "url": "https://www.ctvnews.ca/politics/article/brussels-removed-talk-of-ratifying-canada-trade-deal-in-eu-summit-text-wilkinson/"
    },
    {
+    "t": "Thu 4:15 p.m.",
+    "iso": "2026-11-05T21:15:00+00:00",
+    "outlet": "Toronto Star",
+    "title": "Federal budget pumps billions into Canadian culture amid trade war",
+    "url": "https://www.thestar.com/politics/federal/federal-budget-pumps-billions-into-canadian-culture-amid-trade-war/article_a3b3c5e5-fa3b-4ffc-b919-49a639355be5.html"
+   },
+   {
     "t": "Thu 3:17 p.m.",
     "iso": "2026-11-05T20:17:40+00:00",
     "outlet": "CP24",
@@ -2154,25 +2171,18 @@
     "url": "https://www.cbc.ca/player/play/video/9.7410094"
    },
    {
+    "t": "Wed 6:30 p.m.",
+    "iso": "2026-11-04T23:30:00+00:00",
+    "outlet": "Toronto Star",
+    "title": "Carney government officials don't expect big change to trade talks after dramatic U.S. elections",
+    "url": "https://www.thestar.com/politics/carney-government-officials-don-t-expect-big-change-to-trade-talks-after-dramatic-u-s-elections/article_af472624-142b-40dc-8b9c-4dd80a0aff92.html"
+   },
+   {
     "t": "Wed 3:52 p.m.",
     "iso": "2026-11-04T20:52:07+00:00",
     "outlet": "BNN Bloomberg",
     "title": "Alberta Premier Smith says U.S. midterm results 'vindicate' her approach to tariffs",
     "url": "https://www.bnnbloomberg.ca/business/politics/2026/11/04/alberta-premier-smith-says-us-midterm-results-vindicate-her-approach-to-tariffs/"
-   },
-   {
-    "t": "Wed 3:13 p.m.",
-    "iso": "2026-11-04T20:13:43+00:00",
-    "outlet": "BNN Bloomberg",
-    "title": "U.S. election results could mark a turning point for Canadian aluminum",
-    "url": "https://www.bnnbloomberg.ca/business/2026/11/04/canadian-aluminum-industry-sees-hope-for-tariff-relief-after-us-midterm-elections/"
-   },
-   {
-    "t": "Wed 1:02 p.m.",
-    "iso": "2026-11-04T18:02:31+00:00",
-    "outlet": "CBC News",
-    "title": "China extends tariff relief for Canadian canola, lobster and crab",
-    "url": "https://www.cbc.ca/news/politics/china-extends-tariff-relief-seafood-canola-9.7409066?cmp=rss"
    }
   ],
   "usmedia": []
@@ -2183,7 +2193,7 @@
    "Good morning. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
    "The Liberal government is arguing that tax changes, cultural supports and billions of dollars aimed at stoking investment in Budget 2026 will give Canada the freedom to shape its own future, The Canadian Press reports.",
    "Trump signs proclamation making Oval Office, Cabinet Room national monument, The Hill reports.",
-   "Activists gathered in Lima Thursday to call on Pope Leo XIV to expel sexual abusers from the Catholic church, demanding justice in a long-running scandal, ahead of his Latin America tour this week, AFP reports.",
+   "Pope Leo XIV is kicking off a three-nation tour of Latin America with a visit to Uruguay, the region’s least Catholic and most secular country, three weeks, The Associated Press reports.",
    "California Gov. Gavin Newsom plans to commute all death sentences, NBC News reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
   ]
@@ -2658,21 +2668,21 @@
      "exclusive": false
     },
     {
-     "t": "Thu 5:15 p.m.",
-     "iso": "2026-11-05T22:15:56+00:00",
-     "outlet": "VOCM",
-     "title": "‘Masters of Our Destiny:’ Aiding Affordability, Building Infrastructure, Supporting Defence, Ottawa Delivers 2026 Budget",
-     "url": "https://vocm.com/2026/11/05/masters-of-our-destiny-aiding-affordability-building-infrastructure-supporting-defence-ottawa-delivers-2026-budgetf/",
-     "canada": true,
-     "paywall": false,
-     "exclusive": false
-    },
-    {
      "t": "Thu 5:08 p.m.",
      "iso": "2026-11-05T22:08:41+00:00",
      "outlet": "Global News",
      "title": "Canada’s new immigration level plan revealed in Budget 2026",
      "url": "https://globalnews.ca/news/12138746/budget-2026-immigration-levels/",
+     "canada": true,
+     "paywall": false,
+     "exclusive": false
+    },
+    {
+     "t": "Thu 4:56 p.m.",
+     "iso": "2026-11-05T21:56:37+00:00",
+     "outlet": "Politico",
+     "title": "Forget ‘elbows up.’ Carney has a new pitch for Canada's future.",
+     "url": "https://www.politico.com/news/2026/11/05/canada-budget-masters-of-our-destiny-01152428",
      "canada": true,
      "paywall": false,
      "exclusive": false
@@ -2808,17 +2818,6 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Fri 12:58 a.m.",
-   "iso": "2026-11-06T05:58:56+00:00",
-   "title": "Federal judge orders 14-day delay on any work beginning on Trump's monumental arch",
-   "summary": "WASHINGTON (AP) — A federal judge late Thursday blocked the Trump administration from breaking ground on a towering memorial arch for 14 days. The temporary restraining order by U.S.",
-   "outlet": "Times Colonist, CBS News, BBC News, ABC News, Fox News, The Hill",
-   "url": "https://www.timescolonist.com/world-news/federal-judge-orders-14-day-delay-on-any-work-beginning-on-trumps-monumental-arch-12987060",
-   "img": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/88f2d8e33448ac9ccf790d3715eaf84b943565d3371213c43f883b7a183a15c0.jpg;w=1200;h=800;mode=crop"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
    "t": "Thu 9:37 p.m.",
    "iso": "2026-11-06T02:37:59+00:00",
    "title": "3 charged in scheme to use AI to impersonate CEOs and attorneys to steal $129 million",
@@ -2872,13 +2871,35 @@
    "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/3/8c/38ccd07a-2ad4-5c76-ae5a-2168e8927145/6aecfc657e98a.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
   },
   {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Fri 1:22 a.m.",
+   "iso": "2026-11-06T06:22:00+00:00",
+   "title": "U.S. midterms offer hope on new aid for Ukraine, analysts say",
+   "summary": "The Democratic sweep of the elections could also bring about greater scrutiny of U.S. President Donald Trump’s Russia policies.",
+   "outlet": "The Japan Times, Kyiv Independent, The Hill, PBS NewsHour, Al Jazeera, BBC News",
+   "url": "https://www.japantimes.co.jp/news/2026/11/06/world/politics/midterms-hope-ukraine-russia/",
+   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/06/572738.jpg?v=3.1"
+  },
+  {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Thu 5:00 p.m.",
+   "iso": "2026-11-05T22:00:02+00:00",
+   "title": "Budget raises questions about defence spending targets after 2030",
+   "summary": "The Liberal government’s new budget leaves unanswered a major accounting question about Ottawa’s plans to meet its 2035 NATO defence spending commitments.",
+   "outlet": "CP24, BNN Bloomberg, CityNews Ottawa, CityNews Calgary, CityNews, Toronto Star",
+   "url": "https://www.cp24.com/news/canada/2026/11/05/budget-raises-questions-about-defence-spending-targets-after-2030/",
+   "img": "https://www.cp24.com/resizer/v2/FNYLSQZCEVF2DWGFQGCKHSW4XA.jpg?smart=true&auth=07776c569b006e104b140550e619c88a70141f32a6a4fe2da166be0a0f04dcef&width=1200&height=630"
+  },
+  {
    "desk": "politics",
    "pic": "parliament",
    "t": "Thu 10:36 p.m.",
    "iso": "2026-11-06T03:36:55+00:00",
    "title": "Hegseth not in consideration for Tennessee Senate: Report",
    "summary": "",
-   "outlet": "The Hill, Toronto Star, CTV News, Global News, CP24, VOCM",
+   "outlet": "The Hill, Toronto Star, CTV News, Global News, CP24",
    "url": "https://thehill.com/policy/defense/6203115-hegseth-tennessee-senate-seat-blackburn/",
    "img": ""
   },
@@ -2914,17 +2935,6 @@
    "outlet": "Toronto Star, CityNews Vancouver, CKOM / PAnow, CTV News, CP24",
    "url": "https://www.thestar.com/news/canada/doerkson-backs-budget-hopes-for-big-cut-of-forestry-funds/article_7b33fc29-f016-592c-8f41-902545c3994f.html",
    "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/custom/image/f84403b8-7d76-11ee-9d02-a72a4951957f.png?resize=600%2C600"
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Thu 5:00 p.m.",
-   "iso": "2026-11-05T22:00:02+00:00",
-   "title": "Budget raises questions about defence spending targets after 2030",
-   "summary": "The Liberal government’s new budget leaves unanswered a major accounting question about Ottawa’s plans to meet its 2035 NATO defence spending commitments.",
-   "outlet": "CP24, BNN Bloomberg, CityNews Ottawa, CityNews Calgary, CityNews",
-   "url": "https://www.cp24.com/news/canada/2026/11/05/budget-raises-questions-about-defence-spending-targets-after-2030/",
-   "img": "https://www.cp24.com/resizer/v2/FNYLSQZCEVF2DWGFQGCKHSW4XA.jpg?smart=true&auth=07776c569b006e104b140550e619c88a70141f32a6a4fe2da166be0a0f04dcef&width=1200&height=630"
   },
   {
    "desk": "business",
@@ -3006,6 +3016,17 @@
   {
    "desk": "politics",
    "pic": "parliament",
+   "t": "Thu 8:00 p.m.",
+   "iso": "2026-11-06T01:00:00+00:00",
+   "title": "Carney government holds immigration targets steady, allows 200,000 temporary residents to apply for permanent status",
+   "summary": "The Carney government will hold immigration levels steady in the coming three years.",
+   "outlet": "Toronto Star",
+   "url": "https://www.thestar.com/politics/federal/carney-government-holds-immigration-targets-steady-allows-200-000-temporary-residents-to-apply-for-permanent-status/article_dabb1359-0a52-417e-b71e-4afaf82d52e0.html",
+   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/c/c7/cc749572-0607-5773-995c-1c4e51e3a901/6aecc445253af.image.jpg?crop=1763%2C926%2C0%2C124&resize=1200%2C630&order=crop%2Cresize"
+  },
+  {
+   "desk": "politics",
+   "pic": "parliament",
    "t": "Thu 7:04 p.m.",
    "iso": "2026-11-06T00:04:04+00:00",
    "title": "P.E.I. Green leader calls for vote of non-confidence in premier, PC government",
@@ -3013,17 +3034,6 @@
    "outlet": "CBC News",
    "url": "https://www.cbc.ca/news/canada/prince-edward-island/pei-motion-no-confidence-green-pc-government-9.7411332?cmp=rss",
    "img": "https://i.cbc.ca/ais/2e77e42c-719d-4466-a3cd-1e357977ef39,1793918346903/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1920%2C1080%29%3BResize%3D620"
-  },
-  {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Thu 6:42 p.m.",
-   "iso": "2026-11-05T23:42:34+00:00",
-   "title": "Mark Carney to appear in video played at Canadian citizenship ceremonies",
-   "summary": "",
-   "outlet": "Toronto Sun",
-   "url": "https://torontosun.com/news/national/mark-carney-appear-video-played-canadian-citizenship-ceremonies",
-   "img": ""
   }
  ],
  "fronts": [
@@ -3051,16 +3061,16 @@
    "o": "CTV News",
    "ca": true,
    "h": [
-    "Poilievre loses third senior aide in less than a year",
     "Carney government unveils $142B plan to boost economy, affordability in Budget 2026",
+    "Poilievre loses third senior aide in less than a year",
     "This U.S. county has more than 200 data centres. Here’s the advice it has for Alberta.",
     "Moderna’s newest combo vaccine approved by Health Canada",
     "Budget 2026: Here’s six things Canadians need to know",
     "Accused killer dies in jail after woman slain while on Zoom work meeting"
    ],
    "u": [
-    "https://www.ctvnews.ca/politics/article/poilievre-loses-third-senior-aide-in-less-than-a-year/",
     "https://www.ctvnews.ca/politics/article/carney-government-adds-142b-in-new-spending-to-spur-economic-growth-address-affordability/",
+    "https://www.ctvnews.ca/politics/article/poilievre-loses-third-senior-aide-in-less-than-a-year/",
     "https://www.ctvnews.ca/edmonton/article/this-us-county-has-more-than-200-data-centres-heres-the-advice-it-has-for-alberta/",
     "https://www.ctvnews.ca/health/article/health-canada-approves-modernas-mrna-flu-and-flu-covid-combo-vaccines/",
     "https://www.ctvnews.ca/politics/article/six-smaller-things-in-budget-2026-that-will-affect-canadians/",
@@ -3121,20 +3131,20 @@
    "o": "The Globe and Mail",
    "ca": true,
    "h": [
-    "A strange budget, as opaque as it is complacent",
+    "Ottawa plans to merge federal financing agencies, set up standalone sovereign wealth fund",
+    "Defence spending increases scaled back despite NATO commitments",
+    "$28-million proposed to support those affected by CFB Wainwright fire",
     "Ottawa bets spending boost will deliver future economic gains",
     "Budget highlights, from housing to business tax relief",
-    "Government plans to merge federal financing agencies, set up standalone sovereign wealth fund",
-    "Six ways the budget could affect your wallet",
-    "Ottawa proposes $28-million to support those affected by CFB Wainwright fire"
+    "A plan with more questions than answers"
    ],
    "u": [
-    "https://www.theglobeandmail.com/opinion/article-a-strange-budget-as-opaque-as-it-is-complacent/",
+    "https://www.theglobeandmail.com/business/article-federal-budget-2026-business-and-investment-takeaways/",
+    "https://www.theglobeandmail.com/politics/article-federal-budget-defence-spending-2026-canada/",
+    "https://www.theglobeandmail.com/politics/article-ottawa-28-million-federal-budget-support-cfb-wainwright-fire-canadian/",
     "https://www.theglobeandmail.com/canada/article-federal-budget-canada-2026-breakdown/",
     "https://www.theglobeandmail.com/canada/article-federal-budget-highlights-2026-canada/",
-    "https://www.theglobeandmail.com/business/article-federal-budget-2026-business-and-investment-takeaways/",
-    "https://www.theglobeandmail.com/business/article-how-the-federal-budget-will-affect-canadians-wallets/",
-    "https://www.theglobeandmail.com/politics/article-ottawa-28-million-federal-budget-support-cfb-wainwright-fire-canadian/"
+    "https://www.theglobeandmail.com/opinion/article-a-strange-budget-as-opaque-as-it-is-complacent/"
    ]
   },
   {
@@ -3317,7 +3327,7 @@
     "url": "https://www.youtube.com/watch?v=GvWSyescLv8",
     "img": "https://i.ytimg.com/vi/GvWSyescLv8/hqdefault.jpg",
     "story": "2026 Midterm Election Results",
-    "watching": "192"
+    "watching": "198"
    },
    {
     "net": "LiveNOW from FOX",
@@ -3326,16 +3336,60 @@
     "url": "https://www.youtube.com/watch?v=2Emp24rAosg",
     "img": "https://i.ytimg.com/vi/2Emp24rAosg/hqdefault.jpg",
     "story": "Shakeup on Capitol Hill, 6 killed in NYC lithium-ion fire, Georgia flo",
-    "watching": "234"
+    "watching": "262"
    },
    {
     "net": "Sky News",
     "r": "world",
-    "title": "Mornings | Friday 6 November 2026",
+    "title": "Russell Brand faces 'significant' jail term for rape | Mornings",
     "url": "https://www.youtube.com/watch?v=mb7EVfWKgLM",
     "img": "https://i.ytimg.com/vi/mb7EVfWKgLM/hqdefault.jpg",
-    "story": "Mornings",
-    "watching": "270"
+    "story": "Russell Brand faces 'significant' jail term for rape",
+    "watching": "458",
+    "reports": [
+     {
+      "outlet": "CP24",
+      "title": "Comedian Russell Brand found guilty of rape, faces jail time",
+      "url": "https://www.cp24.com/news/entertainment/2026/11/05/comedian-russell-brand-found-guilty-by-uk-court-of-rape-and-sexual-assaults/",
+      "t": "Thu 2:52 p.m.",
+      "iso": "2026-11-05T19:52:31+00:00"
+     },
+     {
+      "outlet": "The Guardian",
+      "title": "Police investigating two further rape allegations against Russell Brand",
+      "url": "https://www.theguardian.com/culture/2026/nov/05/russell-brand-detective-other-potential-victims",
+      "t": "Thu 2:17 p.m.",
+      "iso": "2026-11-05T19:17:40+00:00"
+     },
+     {
+      "outlet": "CBC News",
+      "title": "Russell Brand convicted of rape and sexual assault",
+      "url": "https://www.cbc.ca/news/entertainment/russell-brand-convicted-rape-sexual-assault-9.7410334",
+      "t": "Thu 1:35 p.m.",
+      "iso": "2026-11-05T18:35:59.197000+00:00"
+     },
+     {
+      "outlet": "Euronews",
+      "title": "British comedian Russell Brand found guilty of rape and three sexual assaults by London jury",
+      "url": "https://www.euronews.com/2026/11/05/british-comedian-russell-brand-found-guilty-of-rape-and-three-sexual-assaults-by-london-ju",
+      "t": "Thu 12:42 p.m.",
+      "iso": "2026-11-05T17:42:23+00:00"
+     },
+     {
+      "outlet": "The Hill",
+      "title": "Russell Brand found guilty of rape and sexual assault",
+      "url": "https://thehill.com/blogs/in-the-know/6200554-russell-brand-found-guilty-of-rape-and-sexual-assault/",
+      "t": "Thu 10:07 a.m.",
+      "iso": "2026-11-05T15:07:54+00:00"
+     },
+     {
+      "outlet": "CityNews Halifax",
+      "title": "Russell Brand convicted of rape and sexual assault",
+      "url": "https://halifax.citynews.ca/2026/11/05/russell-brand-has-been-convicted-of-rape-and-sexual-assault/",
+      "t": "Thu 9:19 a.m.",
+      "iso": "2026-11-05T14:19:57+00:00"
+     }
+    ]
    }
   ],
   "upcoming": [],
@@ -3420,21 +3474,21 @@
      "tie": ""
     },
     {
+     "t": "Thu 4:01 a.m.",
+     "iso": "2026-11-05T09:01:05+00:00",
+     "outlet": "Toronto Star",
+     "title": "U.S. midterm results spark joy among Canadians but trust in America remains shaky",
+     "url": "https://www.thestar.com/news/canada/u-s-midterm-results-spark-joy-among-canadians-but-trust-in-america-remains-shaky/article_73e9dbbf-a4e5-52dc-8645-e27e657b4a9a.html",
+     "ca": true,
+     "tie": ""
+    },
+    {
      "t": "Thu 1:02 a.m.",
      "iso": "2026-11-05T06:02:43+00:00",
      "outlet": "BNN Bloomberg",
      "title": "Canada braces for Trump fallout as Democrats win big in U.S. midterms",
      "url": "https://www.bnnbloomberg.ca/business/international/2026/11/05/canada-braces-for-trump-fallout-as-democrats-win-big-in-us-midterms/",
      "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Wed 2:38 p.m.",
-     "iso": "2026-11-04T19:38:18+00:00",
-     "outlet": "The Logic",
-     "title": "What the Democrats’ midterm sweep means for Canadian business",
-     "url": "https://thelogic.co/news/what-the-democrats-midterm-sweep-means-for-canadian-business/",
-     "ca": false,
      "tie": ""
     }
    ],
@@ -3465,11 +3519,11 @@
      "tie": "Canada and the U.S."
     },
     {
-     "t": "Wed 3:13 p.m.",
-     "iso": "2026-11-04T20:13:43+00:00",
-     "outlet": "BNN Bloomberg",
-     "title": "U.S. election results could mark a turning point for Canadian aluminum",
-     "url": "https://www.bnnbloomberg.ca/business/2026/11/04/canadian-aluminum-industry-sees-hope-for-tariff-relief-after-us-midterm-elections/",
+     "t": "Wed 6:30 p.m.",
+     "iso": "2026-11-04T23:30:00+00:00",
+     "outlet": "Toronto Star",
+     "title": "Carney government officials don't expect big change to trade talks after dramatic U.S. elections",
+     "url": "https://www.thestar.com/politics/carney-government-officials-don-t-expect-big-change-to-trade-talks-after-dramatic-u-s-elections/article_af472624-142b-40dc-8b9c-4dd80a0aff92.html",
      "ca": true,
      "tie": "Canada and the U.S."
     }
@@ -3491,7 +3545,7 @@
    "pic": "globe",
    "h": "Budget 2026: Liberals pin tax changes, billions in spending on 'economic sovereignty'",
    "lede": "OTTAWA — The Liberal government is arguing that tax changes, cultural supports and billions of dollars aimed at stoking investment in Budget 2026 will give Canada the freedom to shape its own future. Ottawa is proposing $142.",
-   "newl": "Now carried by 15 independent newsrooms.",
+   "newl": "Now carried by 14 independent newsrooms.",
    "rows": [
     [
      "Times Colonist",
@@ -3576,6 +3630,11 @@
      "https://winnipeg.citynews.ca/2026/11/05/mayor-gillingham-lauds-federal-budget-transitional-housing/"
     ],
     [
+     "Toronto Star",
+     "Mark Carney's budget bets Canadians will buy a story about sovereignty and pride",
+     "https://www.thestar.com/politics/political-opinion/mark-carney-s-2026-budget-bets-canadians-will-buy-a-story-about-sovereignty-and-pride/article_03f2d7b7-f026-492c-a5b9-c3e515f03e2a.html"
+    ],
+    [
      "Canada's National Observer",
      "Canada's budget fuels new nuclear power with billions but bypasses faster renewables",
      "https://www.nationalobserver.com/2026/11/05/news/canadas-budget-fuels-new-nuclear-power-billions-bypasses-faster-renewables"
@@ -3584,11 +3643,6 @@
      "CKOM / PAnow",
      "Federal budget promises support for CFB Wainwright soldiers, families after fire",
      "https://www.ckom.com/2026/11/05/federal-budget-promises-support-for-cfb-wainwright-soldiers-families-after-fire/"
-    ],
-    [
-     "Toronto Star",
-     "From forestry to food banks, what's in Budget 2026 for British Columbia?",
-     "https://www.thestar.com/news/canada/british-columbia/from-forestry-to-food-banks-what-s-in-budget-2026-for-british-columbia/article_696a05a1-1808-54f5-b40c-f335d28fb27c.html"
     ],
     [
      "CityNews Vancouver",
