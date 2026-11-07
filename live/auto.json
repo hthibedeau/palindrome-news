@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-07T06:04:50.564114+00:00",
- "checkedLabel": "Sat 1:04 a.m.",
+ "checked": "2026-11-07T06:14:50.585471+00:00",
+ "checkedLabel": "Sat 1:14 a.m.",
  "stories": [
   {
    "key": "top",
@@ -43,6 +43,24 @@
   }
  ],
  "wire": [
+  [
+   "Sat 1:00 a.m.",
+   "World",
+   "The end of Maga as we know it",
+   "The Guardian",
+   "https://www.theguardian.com/news/ng-interactive/2026/nov/07/the-end-of-maga-as-we-know-it",
+   "2026-11-07T06:00:05+00:00",
+   1
+  ],
+  [
+   "Sat 1:00 a.m.",
+   "World",
+   "US midterm results may help unite Israeli coalition to unseat Netanyahu",
+   "The Guardian",
+   "https://www.theguardian.com/world/2026/nov/07/us-midterm-results-may-help-unite-israeli-coalition-to-unseat-netanyahu",
+   "2026-11-07T06:00:04+00:00",
+   1
+  ],
   [
    "Sat 12:57 a.m.",
    "U.S.",
@@ -249,24 +267,6 @@
    "https://www.bbc.co.uk/news/articles/c68jzzvjgdy9o?at_medium=RSS&at_campaign=rss",
    "2026-11-07T03:25:00+00:00",
    1
-  ],
-  [
-   "Fri 10:22 p.m.",
-   "World",
-   "How the US midterm elections reflected resistance to data centres",
-   "Al Jazeera",
-   "https://www.aljazeera.com/economy/2026/11/7/how-the-us-midterm-elections-reflected-resistance-to-data-centres?traffic_source=rss",
-   "2026-11-07T03:22:41+00:00",
-   1
-  ],
-  [
-   "Fri 10:13 p.m.",
-   "Latest",
-   "One of Okanagan’s most colourful characters dies at 96",
-   "Global News",
-   "https://globalnews.ca/news/12140696/okanagans-colourful-character-dies-96-eddy-haymour/",
-   "2026-11-07T03:13:47+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -351,6 +351,16 @@
    "theme": "Canada and the U.S."
   },
   {
+   "score": 12,
+   "title": "It’s Morning in America. By all Means, Blame Canada.",
+   "url": "https://www.policymagazine.ca/its-morning-in-america-by-all-means-blame-canada/",
+   "outlets": 8,
+   "why": [
+    "National Newswatch #12"
+   ],
+   "theme": ""
+  },
+  {
    "score": 11,
    "title": "Cornell faculty vote no confidence in university's leadership",
    "url": "https://www.cbc.ca/news/world/cornell-university-leadership-no-confience-9.7413319",
@@ -372,16 +382,6 @@
    "url": "https://www.bbc.co.uk/news/articles/cq1j33w7d232o?at_medium=RSS&at_campaign=rss",
    "outlets": 10,
    "why": [],
-   "theme": ""
-  },
-  {
-   "score": 9,
-   "title": "It’s Morning in America. By all Means, Blame Canada.",
-   "url": "https://www.policymagazine.ca/its-morning-in-america-by-all-means-blame-canada/",
-   "outlets": 7,
-   "why": [
-    "National Newswatch #12"
-   ],
    "theme": ""
   },
   {
@@ -427,7 +427,7 @@
      "trump’s",
      "miller",
      "chief",
-     "white"
+     "staff"
     ],
     "score": 23,
     "outlets": 16,
@@ -881,6 +881,14 @@
       "up": ""
      },
      {
+      "net": "ABC News",
+      "url": "https://www.youtube.com/watch?v=v-AT7SV3-H0",
+      "title": "White House Chief of Staff Susie Wiles is exiting the White House",
+      "img": "https://i.ytimg.com/vi/v-AT7SV3-H0/hqdefault.jpg",
+      "rec": true,
+      "up": ""
+     },
+     {
       "net": "PBS NewsHour",
       "url": "https://www.youtube.com/watch?v=b-COotRXRa4",
       "title": "Trump departs White House after naming Stephen Miller as next chief of staff",
@@ -893,14 +901,6 @@
       "url": "https://www.youtube.com/watch?v=ha7VHfCDrEs",
       "title": "Trump speaks after announcing new White House chief of staff",
       "img": "https://i.ytimg.com/vi/ha7VHfCDrEs/hqdefault.jpg",
-      "rec": true,
-      "up": ""
-     },
-     {
-      "net": "Scripps News",
-      "url": "https://www.youtube.com/watch?v=TivR1aPk0-8",
-      "title": "Headlines: Stephen Miller announced as new WH Chief of Staff, and a rollercoaster day for markets",
-      "img": "https://i.ytimg.com/vi/TivR1aPk0-8/hqdefault.jpg",
       "rec": true,
       "up": ""
      }
@@ -955,9 +955,28 @@
     "why_judged": "National: affects many people; carried across the country (national desks)."
    },
    {
+    "title": "Pope Leo XIV arrives in Uruguay at start of South American tour less than a month after lung surgery",
+    "url": "https://www.timescolonist.com/world-news/pope-leo-xiv-arrives-in-uruguay-at-start-of-south-american-tour-less-than-a-month-after-lung-surgery-12990045",
+    "rank": 3,
+    "live": "",
+    "weight": 16.5,
+    "score": 12,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": false,
+    "fronts": 0,
+    "fronts_who": [],
+    "rule": "No Canadian tie",
+    "carriers": 3,
+    "judgment": "regional",
+    "why_judged": "Regional: affects some people; carried by a few newsrooms."
+   },
+   {
     "title": "Meghan Markle’s estranged father arrested and charged with possessing child sexual abuse materials",
     "url": "https://www.ctvnews.ca/world/article/meghan-markles-estranged-father-arrested-and-charged-with-possessing-child-sexual-abuse-materials/",
-    "rank": 3,
+    "rank": 4,
     "live": "",
     "weight": 14.0,
     "score": 9,
@@ -974,30 +993,11 @@
     "why_judged": "Regional: a single incident touching a few people; carried across the country (national desks)."
    },
    {
-    "title": "Pope Leo XIV arrives in Uruguay at start of South American tour less than a month after lung surgery",
-    "url": "https://www.timescolonist.com/world-news/pope-leo-xiv-arrives-in-uruguay-at-start-of-south-american-tour-less-than-a-month-after-lung-surgery-12990045",
-    "rank": 4,
-    "live": "",
-    "weight": 13.5,
-    "score": 9,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "No Canadian tie",
-    "carriers": 3,
-    "judgment": "regional",
-    "why_judged": "Regional: affects some people; carried by a few newsrooms."
-   },
-   {
     "title": "Carney says co-ordination, dedication, funding all needed to end homelessness",
     "url": "https://globalnews.ca/news/12140815/carney-says-co-ordination-dedication-funding-all-needed-to-end-homelessness/",
     "rank": 5,
     "live": "",
-    "weight": 17.5,
+    "weight": 13.5,
     "score": 0,
     "independent": 1,
     "most_read": 0,
@@ -1105,9 +1105,9 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Holy Cross defence dominates, Crusaders go back-to-back for Saskatoon 6A championship",
+    "title": "Polls close in a New Zealand election expected to be the tightest in years, with early results due",
     "score": 6,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+    "why": "not built: only 2 independent report(s) (4 sites)"
    }
   ],
   "moved": [
@@ -1162,7 +1162,7 @@
      "alt": "Federal budget looks to restore auditor general's access to privileged information",
      "outlet": "Toronto Star",
      "url": "https://www.thestar.com/politics/federal/federal-budget-looks-to-restore-auditor-general-s-access-to-privileged-information/article_6b142c92-ed8c-5ece-ad7e-539c510b62cd.html",
-     "since": "2026-11-07T06:06:35.854872+00:00"
+     "since": "2026-11-07T06:16:34.183818+00:00"
     },
     "photo_seen": [
      "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/0/f5/0f57b925-7230-52d3-9d56-f4c2dd55136e/6aee599cebaeb.image.jpg?crop=1685%2C885%2C0%2C97&resize=1200%2C630&order=crop%2Cresize"
@@ -1518,14 +1518,6 @@
       "up": ""
      },
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=ikR-4ZS_qL0",
-      "title": "\"Set Canada on a path to end homelessness\": Carney allocates $30B in budget to end homelessness",
-      "img": "https://i.ytimg.com/vi/ikR-4ZS_qL0/hqdefault.jpg",
-      "rec": true,
-      "up": ""
-     },
-     {
       "net": "CPAC",
       "url": "https://www.youtube.com/watch?v=AKWbm9Ue1jg",
       "title": "PM Carney visits Winnipeg to highlight budget measures for reducing homelessness – November 6, 2026",
@@ -1534,10 +1526,18 @@
       "up": ""
      },
      {
-      "net": "CPAC",
-      "url": "https://www.youtube.com/watch?v=fozdo1bmW7U",
-      "title": "What the Federal Budget Means for Canada’s Military",
-      "img": "https://i.ytimg.com/vi/fozdo1bmW7U/hqdefault.jpg",
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=OgaqPzZnLKU",
+      "title": "Federal budget proposes funding to help build, refurbish ice rinks | Hanomansing Live",
+      "img": "https://i.ytimg.com/vi/OgaqPzZnLKU/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=phzrZhO2EkA",
+      "title": "Political Pulse: Carney tables a budget, Trump’s policies cost him the midterms | Power & Politics",
+      "img": "https://i.ytimg.com/vi/phzrZhO2EkA/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1617,12 +1617,12 @@
     "fronts_who": [],
     "judgment": "national",
     "judgment_why": "National: affects many people; carried beyond one city.",
-    "weight": 17.5,
+    "weight": 13.5,
     "videos": [
      {
       "net": "Global News",
       "url": "https://www.youtube.com/watch?v=ikR-4ZS_qL0",
-      "title": "\"Set Canada on a path to end homelessness\": Carney allocates $30B in budget to end homelessness",
+      "title": "Carney touts $30B plan to end homelessness in Canada within 10 years | FULL",
       "img": "https://i.ytimg.com/vi/ikR-4ZS_qL0/hqdefault.jpg",
       "rec": true,
       "up": ""
@@ -1675,7 +1675,7 @@
      "alt": "The cybertruck. It has pointy edges, evocative of how futuristic vehicles were thought of in the 80s. Shown here on the streets of New York in August 2026",
      "outlet": "BBC News",
      "url": "https://www.bbc.co.uk/news/articles/cq1j33w7d232o?at_medium=RSS&at_campaign=rss",
-     "since": "2026-11-07T06:06:47.751414+00:00"
+     "since": "2026-11-07T06:16:46.089077+00:00"
     },
     "photo_seen": [
      "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/d7ce/live/3fc37350-d9f3-11f1-a701-fddedf244c16.jpg"
@@ -2040,20 +2040,6 @@
    "geo": "unknown"
   },
   {
-   "id": "00nWIl1xQOw",
-   "r": "ca",
-   "o": "CTV News",
-   "t": "Ontario trade minister targets U.S. tariffs with 3 January trips",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=00nWIl1xQOw",
-   "img": "https://i.ytimg.com/vi/00nWIl1xQOw/hqdefault.jpg",
-   "up": "2026-11-07",
-   "added": "2026-11-07T05:10:32.205126+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "r4766ognrzw",
    "r": "ca",
    "o": "CPAC",
@@ -2078,20 +2064,6 @@
    "img": "https://i.ytimg.com/vi/grR3CIaqpKg/hqdefault.jpg",
    "up": "2026-11-06",
    "added": "2026-11-07T05:10:32.205126+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "onmekrrItqM",
-   "r": "ca",
-   "o": "CTV News",
-   "t": "October jobs report: Canada loses 4,700 jobs, unemployment at 6.7%",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=onmekrrItqM",
-   "img": "https://i.ytimg.com/vi/onmekrrItqM/hqdefault.jpg",
-   "up": "2026-11-07",
-   "added": "2026-11-07T05:30:31.809216+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2292,20 +2264,6 @@
    "geo": "unknown"
   },
   {
-   "id": "YgsnLCNfG_0",
-   "r": "us",
-   "o": "Associated Press",
-   "t": "Pope Leo XIV opens his South America tour in Uruguay",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=YgsnLCNfG_0",
-   "img": "https://i.ytimg.com/vi/YgsnLCNfG_0/hqdefault.jpg",
-   "up": "2026-11-06",
-   "added": "2026-11-07T03:48:38.088071+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "n7bhuYLJNrw",
    "r": "us",
    "o": "NBC News",
@@ -2329,20 +2287,6 @@
    "u": "https://www.youtube.com/watch?v=HuzpXFnzbu4",
    "img": "https://i.ytimg.com/vi/HuzpXFnzbu4/hqdefault.jpg",
    "up": "2026-11-06",
-   "added": "2026-11-07T05:00:32.138656+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "a-LbvyquZKk",
-   "r": "us",
-   "o": "Fox News",
-   "t": "Gutfeld: Hillary adds Musk to her hit list",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=a-LbvyquZKk",
-   "img": "https://i.ytimg.com/vi/a-LbvyquZKk/hqdefault.jpg",
-   "up": "2026-11-07",
    "added": "2026-11-07T05:00:32.138656+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -2404,10 +2348,38 @@
    "geo": "unknown"
   },
   {
+   "id": "-_xwGNN9oac",
+   "r": "us",
+   "o": "Fox News",
+   "t": "Hockey star killed in crash involving illegal migrant is remembered by family, friends",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=-_xwGNN9oac",
+   "img": "https://i.ytimg.com/vi/-_xwGNN9oac/hqdefault.jpg",
+   "up": "2026-11-07",
+   "added": "2026-11-07T06:14:50.585471+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "9d9PpHfQ9Q4",
+   "r": "us",
+   "o": "Associated Press",
+   "t": "Australian grandma drives through Outback to distribute supplies",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=9d9PpHfQ9Q4",
+   "img": "https://i.ytimg.com/vi/9d9PpHfQ9Q4/hqdefault.jpg",
+   "up": "2026-11-07",
+   "added": "2026-11-07T06:14:50.585471+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
    "id": "yWSfhFMASDE",
    "r": "world",
    "o": "Al Jazeera",
-   "t": "The war nobody could spin: how Iran sank the Republicans | The Listening Post",
+   "t": "The Teflon’s gone: How Trump’s unconvincing Iran narrative lost him US midterms | The Listening Post",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=yWSfhFMASDE",
@@ -2482,7 +2454,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=PPLFLDrrxP0",
    "img": "https://i.ytimg.com/vi/PPLFLDrrxP0/hqdefault.jpg",
-   "up": "2026-11-07",
+   "up": "2026-11-06",
    "added": "2026-11-07T04:14:32.595524+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -2533,7 +2505,7 @@
    "id": "WZ6O7hOOsbU",
    "r": "world",
    "o": "Sky News",
-   "t": "The illegal weight-loss drug fuelling a dangerous online black market",
+   "t": "What's retatrutide? The illegal weight-loss drug sweeping social media",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=WZ6O7hOOsbU",
@@ -3413,6 +3385,17 @@
   {
    "desk": "world",
    "pic": "globe",
+   "t": "Sat 1:01 a.m.",
+   "iso": "2026-11-07T06:01:02+00:00",
+   "title": "Polls close in a New Zealand election expected to be the tightest in years, with early results due",
+   "summary": "WELLINGTON, New Zealand (AP) — Polling places closed on Saturday after the final day of voting in New Zealand’s election following a tense campaign that left the main contenders neck and neck with no clear route to victory for either.",
+   "outlet": "Times Colonist, The Canadian Press (via Winnipeg Free Press), CTV News, CP24",
+   "url": "https://www.timescolonist.com/world-news/polls-close-in-a-new-zealand-election-expected-to-be-the-tightest-in-years-with-early-results-due-12990587",
+   "img": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/0351b4430ab313553f7ba7b1dcbb280fcaad2352a3f8baad7d0b9494f016128f.jpg;w=1200;h=800;mode=crop"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
    "t": "Fri 6:50 p.m.",
    "iso": "2026-11-06T23:50:08+00:00",
    "title": "Cops bust Markham drug lab, seize $639G worth of narcotics",
@@ -3420,17 +3403,6 @@
    "outlet": "Toronto Sun, CityNews, VOCM, CP24",
    "url": "https://torontosun.com/news/local-news/cops-bust-markham-drug-lab-seize-639g-narcotics",
    "img": ""
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Fri 4:42 p.m.",
-   "iso": "2026-11-06T21:42:50+00:00",
-   "title": "Joly asks Competition Bureau to probe Stelco deal after CEO comments",
-   "summary": "Industry Minister Mélanie Joly is asking the Competition Bureau to examine whether Cleveland-Cliffs Inc. acted in bad faith when it acquired Stelco Inc.",
-   "outlet": "CP24, BNN Bloomberg, CBC News, Global News",
-   "url": "https://www.cp24.com/news/canada/2026/11/06/joly-asks-comp-bureau-to-probe-stelco-deal-after-ceo-comments/",
-   "img": "https://www.cp24.com/resizer/v2/Z2LQVKG73NGE5BOJNU7KCMMGHI.jpg?smart=true&auth=903fd4a5e53a047ef380931459eb6599cc6a373faad27098e8681ef0eaead5be&width=1200&height=630"
   },
   {
    "desk": "politics",
@@ -3625,26 +3597,6 @@
    ],
    "u": [
     ""
-   ]
-  },
-  {
-   "o": "Toronto Star",
-   "ca": true,
-   "h": [
-    "Toronto Star News - Breaking News Stories",
-    "Canada is adding 200,000 permanent resident spots. Here’s how it will work",
-    "Minister denies new law amounts to ‘stealth’ privatization for Toronto Hydro",
-    "Naming your attacker would be ‘unfair,’ Toronto judge tells sex assault victim before handing down ‘very low’ sentence",
-    "Melanie Joly asks Canadian Competition Bureau to probe Stelco as deadline arrives for layoffs lawsuit",
-    "U.S. slaps sanctions on Yonge Street crypto businesses, alleging they aided Iran’s regime"
-   ],
-   "u": [
-    "",
-    "https://www.thestar.com/news/canada/canada-is-adding-200-000-permanent-resident-spots-here-s-how-it-will-work/article_27ca8f45-b5ed-4b5d-987c-12c05bd68652.html",
-    "https://www.thestar.com/news/ontario/minister-denies-new-law-amounts-to-stealth-privatization-for-toronto-hydro/article_61e8a0ac-69a8-4b99-802f-e2ceecb2361e.html",
-    "https://www.thestar.com/news/gta/naming-your-attacker-would-be-unfair-toronto-judge-tells-sex-assault-victim-before-handing-down-very-low-sentence/article_b8db5d58-db23-4e21-a7e8-1e039d441d5f.html",
-    "https://www.thestar.com/business/joly-asks-canadian-competition-bureau-to-probe-stelco-as-deadline-for-layoffs-lawsuit-winds-down/article_b049a15a-f03d-40f5-92a2-cf4a7a2758a4.html",
-    "https://www.thestar.com/news/investigations/u-s-slaps-sanctions-on-yonge-street-crypto-businesses-alleging-they-aided-iran-s-regime/article_f3438a18-c799-4c91-b55d-515a91bf58ed.html"
    ]
   },
   {
@@ -3867,7 +3819,7 @@
     "url": "https://www.youtube.com/watch?v=lCipQTTo_o4",
     "img": "https://i.ytimg.com/vi/lCipQTTo_o4/hqdefault.jpg",
     "story": "Mornings",
-    "watching": "100"
+    "watching": "166"
    },
    {
     "net": "ABC News (Australia)",
@@ -3876,7 +3828,7 @@
     "url": "https://www.youtube.com/watch?v=7WSaK1JTQ04",
     "img": "https://i.ytimg.com/vi/7WSaK1JTQ04/hqdefault.jpg",
     "story": "New Zealand Election Coverage",
-    "watching": "718"
+    "watching": "980"
    }
   ],
   "upcoming": [],
@@ -3888,6 +3840,10 @@
    {
     "net": "NBC News",
     "url": "https://www.youtube.com/watch?v=4a4IWlRVth0"
+   },
+   {
+    "net": "ABC News",
+    "url": "https://www.youtube.com/watch?v=KQhNZQ_Uag8"
    },
    {
     "net": "CNN",
@@ -3916,10 +3872,6 @@
    {
     "net": "FRANCE 24 English",
     "url": "https://www.youtube.com/watch?v=HvZt-nh9sGg"
-   },
-   {
-    "net": "euronews",
-    "url": "https://www.youtube.com/watch?v=pykpO5kQJ98"
    }
   ]
  },
@@ -3967,15 +3919,6 @@
    "title": "'Crisis cannot be left unresolved': Qatar PM says mediation efforts continue",
    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/crisis-cannot-be-left-unresolved-qatar-pm-says-mediation-efforts",
    "updated": "2026-11-07T03:34:35+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/yemen-taiz-houthi-attack.jpg"
-  },
-  {
-   "net": "Middle East Eye",
-   "story": "US urges citizens across Middle East to exercise 'heightened caution'",
-   "title": "US urges citizens across Middle East to exercise 'heightened caution'",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-urges-citizens-across-middle-east-exercise-heightened-caution",
-   "updated": "2026-11-07T03:10:33+00:00",
    "ended": false,
    "img": "https://www.middleeasteye.net/sites/default/files/2026-11/yemen-taiz-houthi-attack.jpg"
   }
@@ -4193,33 +4136,6 @@
   }
  },
  "canangle_live": {
-  "https://www.middleeasteye.net/live-blog/live-blog-update/us-urges-citizens-across-middle-east-exercise-heightened-caution": {
-   "story": "US urges citizens across Middle East to exercise 'heightened caution'",
-   "us": true,
-   "specific": 2,
-   "stories": [
-    {
-     "t": "Fri 11:59 a.m.",
-     "iso": "2026-11-06T16:59:30+00:00",
-     "outlet": "CityNews Halifax",
-     "title": "Budget offers little new relief for middle-income Canadians struggling with costs",
-     "url": "https://halifax.citynews.ca/2026/11/06/budget-offers-little-new-relief-for-middle-income-canadians-struggling-with-costs/",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Fri 10:56 a.m.",
-     "iso": "2026-11-06T15:56:43+00:00",
-     "outlet": "CP24",
-     "title": "Gas and groceries: Budget measures on the table for middle-class Canadian families",
-     "url": "https://www.cp24.com/news/canada/2026/11/06/gas-and-groceries-budget-measures-on-the-table-for-middle-class-canadian-families/",
-     "ca": true,
-     "tie": ""
-    }
-   ],
-   "official": [],
-   "views": []
-  },
   "https://www.youtube.com/watch?v=7WSaK1JTQ04": {
    "story": "New Zealand Election Coverage | ABC NEWS",
    "us": true,
