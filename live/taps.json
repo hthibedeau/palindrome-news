@@ -1,14 +1,7 @@
 {
- "checked": "2026-11-07T06:07:48.783866+00:00",
- "labels": 171,
+ "checked": "2026-11-07T07:28:33.503061+00:00",
+ "labels": 179,
  "problems": [
-  {
-   "label": "Toronto Star",
-   "opens": "https://www.cbc.ca/news/canada/british-columbia/rainfall-warnings-bc-9.7411820",
-   "section": "developed",
-   "link": false,
-   "width": 390
-  },
   {
    "label": "The Hill",
    "opens": "https://www.cbc.ca/news/canada/british-columbia/rainfall-warnings-bc-9.7411820",
@@ -40,6 +33,26 @@
  ],
  "guard": {
   "fixed": [
+   {
+    "label": "Toronto Star ↗",
+    "was": "(card link) theguardian.com",
+    "now": "https://www.thestar.com/politics/carney-government-officials-don-t-expect-big-change-to-trade-talks-after-dramatic-u-s-elections/article_af472624-142b-40dc-8b9c-4dd80a0aff92.html"
+   },
+   {
+    "label": "CP24 ↗",
+    "was": "(card link) theguardian.com",
+    "now": "https://www.cp24.com/news/world/2026/11/06/pm-carney-welcomes-any-moves-to-restore-free-trade-hoekstra-predicts-deal-could-come-soon/"
+   },
+   {
+    "label": "Global News ↗",
+    "was": "(card link) theguardian.com",
+    "now": "https://globalnews.ca/news/12140323/carney-us-trade-democrats/"
+   },
+   {
+    "label": "CBC News ↗",
+    "was": "(card link) theguardian.com",
+    "now": "https://www.cbc.ca/player/play/video/9.7412481"
+   },
    {
     "label": "ABC News",
     "was": "(card link) abcnews.com",
