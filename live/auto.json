@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-07T19:45:43.908960+00:00",
- "checkedLabel": "Sat 2:45 p.m.",
+ "checked": "2026-11-07T19:51:24.932924+00:00",
+ "checkedLabel": "Sat 2:51 p.m.",
  "stories": [
   {
    "key": "top",
@@ -44,6 +44,15 @@
  ],
  "wire": [
   [
+   "Sat 2:45 p.m.",
+   "Latest",
+   "Collaros active for Blue Bombers in East final",
+   "Global News",
+   "https://globalnews.ca/news/12141305/collaros-active-for-blue-bombers-in-east-final/",
+   "2026-11-07T19:45:53+00:00",
+   1
+  ],
+  [
    "Sat 2:42 p.m.",
    "U.S.",
    "'Dana, please take the job!' - Trump asks UFC boss to be White House press secretary",
@@ -51,6 +60,15 @@
    "https://www.bbc.co.uk/news/articles/cvze47p9jeexo?at_medium=RSS&at_campaign=rss",
    "2026-11-07T19:42:46+00:00",
    4
+  ],
+  [
+   "Sat 2:40 p.m.",
+   "World",
+   "Gunman who opened fatal fire on Krakow market square had ‘radical’ far-right views",
+   "CTV News",
+   "https://www.ctvnews.ca/world/article/gunman-opens-fire-in-polish-city-of-krakow-killing-6-people-and-injuring-15/",
+   "2026-11-07T19:40:30+00:00",
+   8
   ],
   [
    "Sat 2:40 p.m.",
@@ -125,15 +143,6 @@
    1
   ],
   [
-   "Sat 2:30 p.m.",
-   "World",
-   "Polish defence minister calls Krakow shooting an 'act of terror' after 6 killed, 15 injured",
-   "CBC News",
-   "https://www.cbc.ca/news/world/krakow-poland-shooting-9.7413582",
-   "2026-11-07T19:30:32.215000+00:00",
-   8
-  ],
-  [
    "Sat 2:28 p.m.",
    "Latest",
    "Obesity: A ‘complex story’ beyond willpower, discipline",
@@ -150,6 +159,15 @@
    "https://globalnews.ca/news/12141285/albertas-hospital-triage-program-now-in-operation-danielle-smith/",
    "2026-11-07T19:24:28+00:00",
    5
+  ],
+  [
+   "Sat 2:24 p.m.",
+   "World",
+   "Malaysian king warns against defying house arrest order for ex-PM Najib",
+   "Al Jazeera",
+   "https://www.aljazeera.com/news/2026/11/7/malaysian-king-warns-against-defying-house-arrest-order-for-ex-pm-najib?traffic_source=rss",
+   "2026-11-07T19:24:21+00:00",
+   1
   ],
   [
    "Sat 2:20 p.m.",
@@ -249,30 +267,12 @@
    "https://www.cbsnews.com/news/this-week-on-sunday-morning-nov-8-2026/",
    "2026-11-07T18:35:15+00:00",
    1
-  ],
-  [
-   "Sat 1:35 p.m.",
-   "World",
-   "Paraguay’s ousted president charged over banking scandal",
-   "Al Jazeera",
-   "https://www.aljazeera.com/economy/2026/11/7/paraguays-ousted-president-charged-over-banking-scandal?traffic_source=rss",
-   "2026-11-07T18:35:15+00:00",
-   1
-  ],
-  [
-   "Sat 1:21 p.m.",
-   "Latest",
-   "Dana Holgorsen fired as Nebraska’s offensive coordinator after losing streak reaches 4 games",
-   "The Canadian Press (via Winnipeg Free Press)",
-   "https://www.winnipegfreepress.com/uncategorized/2026/11/07/dana-holgorsen-fired-as-nebraskas-offensive-coordinator-after-losing-streak-reaches-4-games",
-   "2026-11-07T18:21:58+00:00",
-   1
   ]
  ],
  "blogs": [
   {
    "url": "https://www.thestar.com/news/gta/toronto-election-results-live/article_3ec1c84c-3d92-4440-b764-ac02c6602fb0.html",
-   "updated": "2026-11-07T18:42:30+00:00",
+   "updated": "2026-11-07T19:40:05+00:00",
    "ended": true
   },
   {
@@ -314,9 +314,19 @@
    "score": 20,
    "title": "Polish defence minister calls Krakow shooting an 'act of terror' after 6 killed, 15 injured",
    "url": "https://www.cbc.ca/news/world/krakow-poland-shooting-9.7413582",
-   "outlets": 19,
+   "outlets": 18,
    "why": [
     "CBC News front #2"
+   ],
+   "theme": ""
+  },
+  {
+   "score": 16,
+   "title": "Former PM Trudeau takes on role at Oxford University",
+   "url": "https://www.ctvnews.ca/ottawa/article/former-pm-trudeau-takes-on-role-at-oxford-university/",
+   "outlets": 12,
+   "why": [
+    "National Newswatch #20"
    ],
    "theme": ""
   },
@@ -331,16 +341,6 @@
     "National Newswatch #11"
    ],
    "theme": "Federal budget"
-  },
-  {
-   "score": 14,
-   "title": "Former PM Trudeau takes on role at Oxford University",
-   "url": "https://www.ctvnews.ca/ottawa/article/former-pm-trudeau-takes-on-role-at-oxford-university/",
-   "outlets": 12,
-   "why": [
-    "National Newswatch #20"
-   ],
-   "theme": ""
   },
   {
    "score": 9,
@@ -361,10 +361,10 @@
    "theme": ""
   },
   {
-   "score": 8,
+   "score": 9,
    "title": "Quebec confirms infected cow as outbreak of raccoon rabies continues",
    "url": "https://globalnews.ca/news/12141204/rabies-outbreak-cow-quebec/",
-   "outlets": 8,
+   "outlets": 9,
    "why": [],
    "theme": ""
   },
@@ -388,14 +388,24 @@
   },
   {
    "score": 5,
-   "title": "Paraguay prosecutors charge impeached ex-president Peña, seek pre-trail detention",
-   "url": "https://www.cbc.ca/news/world/paraguay-prosecutors-charge-impeached-president-pena-detention-9.7413705",
+   "title": "Collaros active for Blue Bombers in East final",
+   "url": "https://globalnews.ca/news/12141305/collaros-active-for-blue-bombers-in-east-final/",
    "outlets": 3,
    "why": [],
    "theme": ""
   }
  ],
  "canada": [
+  {
+   "t": "Sat 2:48 p.m.",
+   "iso": "2026-11-07T19:48:12.271000+00:00",
+   "region": "Nova Scotia",
+   "title": "Protests across Nova Scotia oppose AI data centres",
+   "summary": "Nova Scotians rallied Saturday to oppose AI data centre construction.",
+   "outlet": "CBC News",
+   "url": "https://www.cbc.ca/news/canada/nova-scotia/data-centre-protests-nova-scotia-9.7413638",
+   "img": "https://i.cbc.ca/ais/6f81196b-1f62-4eb8-80db-ef670174810e,1794071539356/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C535%2C5712%2C3213%29%3BResize%3D620"
+  },
   {
    "t": "Sat 2:45 p.m.",
    "iso": "2026-11-07T19:45:53+00:00",
@@ -415,16 +425,6 @@
    "outlet": "CBC News",
    "url": "https://www.cbc.ca/news/canada/newfoundland-labrador/federal-homelessness-strategy-9.7413692",
    "img": "https://i.cbc.ca/ais/16109eb6-c029-49b7-93ab-6f97244e2217,1794076949479/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C285%2C5712%2C3213%29%3BResize%3D620"
-  },
-  {
-   "t": "Sat 2:28 p.m.",
-   "iso": "2026-11-07T19:28:50.394000+00:00",
-   "region": "Nova Scotia",
-   "title": "Protests across Nova Scotia oppose AI data centres",
-   "summary": "Nova Scotians rallied Saturday to oppose AI data centre construction.",
-   "outlet": "CBC News",
-   "url": "https://www.cbc.ca/news/canada/nova-scotia/data-centre-protests-nova-scotia-9.7413638",
-   "img": "https://i.cbc.ca/ais/6f81196b-1f62-4eb8-80db-ef670174810e,1794071539356/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C535%2C5712%2C3213%29%3BResize%3D620"
   },
   {
    "t": "Sat 2:28 p.m.",
@@ -592,8 +592,8 @@
      "calls"
     ],
     "score": 16,
-    "outlets": 9,
-    "carriers": 20,
+    "outlets": 7,
+    "carriers": 18,
     "tag": "Breaking",
     "title": "Aid sector calls out omission of foreign aid in federal budget",
     "url": "https://globalnews.ca/news/12141139/budget-2026-foreign-aid/",
@@ -639,7 +639,7 @@
       "url": "https://winnipeg.citynews.ca/2026/11/07/aid-sector-calls-out-lack-of-any-mention-of-foreign-aid-in-federal-budget/"
      }
     ],
-    "independent": 9,
+    "independent": 7,
     "reports": [
      {
       "t": "Sat 2:19 p.m.",
@@ -680,14 +680,6 @@
       "title": "Federal budget is ‘silent’ on foreign assistance: aid sector",
       "url": "https://www.cp24.com/news/world/2026/11/07/federal-budget-is-silent-on-foreign-assistance-aid-sector/",
       "desc": "Canada’s aid sector is expressing dismay over the first federal budget in more than 15 years to make no mention of foreign aid, and is calling on Ottawa to outline its vision in an upcoming foreign policy review."
-     },
-     {
-      "t": "Sat 7:00 a.m.",
-      "iso": "2026-11-07T12:00:00+00:00",
-      "outlet": "Toronto Star",
-      "title": "What Mark Carney’s budget reveals about the ridings Liberals want to keep and win",
-      "url": "https://www.thestar.com/politics/federal/what-mark-carney-s-budget-reveals-about-the-ridings-liberals-want-to-keep-and-win/article_b591b5e1-6e33-4ff5-83a1-2205e8ea67c4.html",
-      "desc": "Ridings of two floor-crossers to the Liberals got project funding in Thursday's budget, but so did Pierre Poilievre's."
      },
      {
       "t": "Sat 6:00 a.m.",
@@ -751,6 +743,14 @@
       "outlet": "CityNews",
       "title": "Aid sector calls out lack of any mention of foreign aid in federal budget",
       "url": "https://toronto.citynews.ca/2026/11/07/aid-sector-calls-out-lack-of-any-mention-of-foreign-aid-in-federal-budget/",
+      "desc": ""
+     },
+     {
+      "t": "Sat 6:00 a.m.",
+      "iso": "2026-11-07T11:00:00+00:00",
+      "outlet": "CBC News",
+      "title": "Farmers pleased with federal budget's proposed changes allowing land to be given to nieces, nephews tax-free",
+      "url": "https://www.cbc.ca/news/canada/manitoba/farm-rollover-budget-nieces-nephews-9.7413050?cmp=rss",
       "desc": ""
      }
     ],
@@ -898,18 +898,18 @@
       "copies": []
      },
      {
-      "t": "Sat 7:00 a.m.",
+      "t": "Sat 6:00 a.m.",
       "primary": false,
-      "outlet": "Toronto Star",
-      "title": "What Mark Carney’s budget reveals about the ridings Liberals want to keep and win",
-      "url": "https://www.thestar.com/politics/federal/what-mark-carney-s-budget-reveals-about-the-ridings-liberals-want-to-keep-and-win/article_b591b5e1-6e33-4ff5-83a1-2205e8ea67c4.html",
-      "desc": "Ridings of two floor-crossers to the Liberals got project funding in Thursday's budget, but so did Pierre Poilievre's.",
+      "outlet": "CBC News",
+      "title": "Farmers pleased with federal budget's proposed changes allowing land to be given to nieces, nephews tax-free",
+      "url": "https://www.cbc.ca/news/canada/manitoba/farm-rollover-budget-nieces-nephews-9.7413050?cmp=rss",
+      "desc": "Expanded tax rollover rules in the 2026 federal budget are set to allow Canadian farm families to pass land down to nieces and nephews tax-free, a move producers and industry experts call a game-changer for preserving family operations.",
       "wire": "",
       "by": [
        {
-        "outlet": "Toronto Star",
-        "src": "Torstar",
-        "byline": "own staff: producer"
+        "outlet": "CBC News",
+        "src": "CBC",
+        "byline": "own staff: Reporter"
        }
       ],
       "copies": []
@@ -927,8 +927,8 @@
     "fronts_ca": 0,
     "fronts_who": [],
     "judgment": "national",
-    "judgment_why": "National: affects many people; carried across the country (9 cities).",
-    "weight": 58,
+    "judgment_why": "National: affects many people; carried across the country (10 cities).",
+    "weight": 56,
     "videos": [
      {
       "net": "CPAC",
@@ -967,17 +967,17 @@
    {
     "key": "auto-8501a9e6",
     "words": [
+     "krakow",
      "polish",
-     "poland",
-     "krakow"
+     "poland"
     ],
     "score": 20,
     "outlets": 4,
     "carriers": 14,
     "tag": "Developing",
     "title": "Gunman who opened fatal fire on Krakow market square had ‘radical’ far-right views",
-    "url": "https://www.cp24.com/news/world/2026/11/07/gunfire-in-polish-city-of-krakow-leaves-6-dead-15-wounded/",
-    "outlet": "CP24",
+    "url": "https://www.ctvnews.ca/world/article/gunman-opens-fire-in-polish-city-of-krakow-killing-6-people-and-injuring-15/",
+    "outlet": "CTV News",
     "t": "Sat 2:40 p.m.",
     "iso": "2026-11-07T19:40:30+00:00",
     "summary": "Six people were killed and 15 wounded after a gunman opened fire Saturday afternoon in a busy market square in Krakow, authorities said, in what Poland ‘s defense minister called an “act of terror” on the people of the city.",
@@ -985,7 +985,7 @@
      "outlet": "Toronto Star",
      "url": "https://www.thestar.com/news/world/europe/deaths-and-injuries-reported-after-shots-were-fired-in-a-market-square-in-krakow-poland/article_00286c30-f0ab-507a-98e5-a9ead35cc070.html",
      "t": "Sat 10:10 a.m.",
-     "title": "Gunman who shot and killed 6 people in Krakow was fascinated with far-right views, minister says",
+     "title": "Gunman who killed 6 people in Krakow was fascinated with far-right views, minister says",
      "iso": "2026-11-07T15:10:00+00:00"
     },
     "newest": "2026-11-07T19:40:30+00:00",
@@ -1026,10 +1026,18 @@
      {
       "t": "Sat 2:40 p.m.",
       "iso": "2026-11-07T19:40:30+00:00",
+      "outlet": "CTV News",
+      "title": "Gunman who opened fatal fire on Krakow market square had ‘radical’ far-right views",
+      "url": "https://www.ctvnews.ca/world/article/gunman-opens-fire-in-polish-city-of-krakow-killing-6-people-and-injuring-15/",
+      "desc": "Six people were killed and 15 wounded after a gunman opened fire Saturday afternoon in a busy market square in Krakow, authorities said, in what Poland ‘s defense minister called an “act of terror” on the people of the city."
+     },
+     {
+      "t": "Sat 2:40 p.m.",
+      "iso": "2026-11-07T19:40:30+00:00",
       "outlet": "CP24",
       "title": "Gunman who opened fatal fire on Krakow market square had ‘radical’ far-right views",
       "url": "https://www.cp24.com/news/world/2026/11/07/gunfire-in-polish-city-of-krakow-leaves-6-dead-15-wounded/",
-      "desc": "Six people were killed and 15 wounded after a gunman opened fire Saturday afternoon in a busy market square in Krakow, authorities said, in what Poland ‘s defense minister called an “act of terror” on the people of the city."
+      "desc": ""
      },
      {
       "t": "Sat 2:40 p.m.",
@@ -1054,14 +1062,6 @@
       "title": "Polish defence minister calls Krakow shooting an 'act of terror' after 6 killed, 15 injured",
       "url": "https://www.cbc.ca/news/world/krakow-poland-shooting-9.7413582",
       "desc": "Polish Defence Minister Władysław Kosiniak-Kamysz called Saturday's fatal shooting in the city of Krakow an \"act of terror\" on its people after six were killed and 15 injured."
-     },
-     {
-      "t": "Sat 2:29 p.m.",
-      "iso": "2026-11-07T19:29:00+00:00",
-      "outlet": "CTV News",
-      "title": "Gunfire in Polish city of Krakow leaves 6 dead, 15 wounded",
-      "url": "https://www.ctvnews.ca/world/article/gunman-opens-fire-in-polish-city-of-krakow-killing-6-people-and-injuring-15/",
-      "desc": ""
      },
      {
       "t": "Sat 1:05 p.m.",
@@ -1131,7 +1131,7 @@
       "t": "Sat 10:10 a.m.",
       "iso": "2026-11-07T15:10:00+00:00",
       "outlet": "Toronto Star",
-      "title": "Gunman who shot and killed 6 people in Krakow was fascinated with far-right views, minister says",
+      "title": "Gunman who killed 6 people in Krakow was fascinated with far-right views, minister says",
       "url": "https://www.thestar.com/news/world/europe/deaths-and-injuries-reported-after-shots-were-fired-in-a-market-square-in-krakow-poland/article_00286c30-f0ab-507a-98e5-a9ead35cc070.html",
       "desc": ""
      }
@@ -1141,7 +1141,7 @@
       "t": "Sat 10:10 a.m.",
       "primary": false,
       "outlet": "Toronto Star",
-      "title": "Gunman who shot and killed 6 people in Krakow was fascinated with far-right views, minister says",
+      "title": "Gunman who killed 6 people in Krakow was fascinated with far-right views, minister says",
       "url": "https://www.thestar.com/news/world/europe/deaths-and-injuries-reported-after-shots-were-fired-in-a-market-square-in-krakow-poland/article_00286c30-f0ab-507a-98e5-a9ead35cc070.html",
       "desc": "The perpetrator was shot and wounded during a confrontation with police.",
       "wire": "The Associated Press",
@@ -1182,11 +1182,6 @@
         "byline": "Dazio and Beata Zawrzel \n\t\t\t\t\t\t\t\t\t\tThe Associated Press"
        },
        {
-        "outlet": "CTV News",
-        "src": "The Canadian Press",
-        "byline": "rzel\" \"\" \"\" \"\" \"\" \"\" \"\" \"mediaconvert\" \"The Canadian Press\" \"The Associated Pr"
-       },
-       {
         "outlet": "CBC News",
         "src": "The Associated Press",
         "byline": "\"photoURL\":\"\"},\"recentContent\":{}} \"The Associated Press\"  The Associated Pr"
@@ -1195,6 +1190,11 @@
         "outlet": "Times Colonist",
         "src": "The Associated Press",
         "byline": ", Stefanie Dazio And Beata Zawrzel, The Associated Press\" \r\n             \r\nC"
+       },
+       {
+        "outlet": "CTV News",
+        "src": "The Canadian Press",
+        "byline": "rzel\" \"\" \"\" \"\" \"\" \"\" \"\" \"mediaconvert\" \"The Canadian Press\" \"The Associated Pr"
        },
        {
         "outlet": "CP24",
@@ -1228,16 +1228,16 @@
         "url": "https://globalnews.ca/news/12141241/gunman-krakow-poland/"
        },
        {
-        "outlet": "CTV News",
-        "url": "https://www.ctvnews.ca/world/article/gunman-opens-fire-in-polish-city-of-krakow-killing-6-people-and-injuring-15/"
-       },
-       {
         "outlet": "CBC News",
         "url": "https://www.cbc.ca/news/world/krakow-poland-shooting-9.7413582"
        },
        {
         "outlet": "Times Colonist",
         "url": "https://www.timescolonist.com/world-news/gunman-who-shot-and-killed-6-people-in-krakow-was-fascinated-with-far-right-views-minister-says-12992495"
+       },
+       {
+        "outlet": "CTV News",
+        "url": "https://www.ctvnews.ca/world/article/gunman-opens-fire-in-polish-city-of-krakow-killing-6-people-and-injuring-15/"
        },
        {
         "outlet": "CP24",
@@ -1305,10 +1305,11 @@
     "incoherent": false,
     "popular": 0,
     "us_election": false,
-    "fronts": 4,
-    "fronts_ca": 2,
+    "fronts": 5,
+    "fronts_ca": 3,
     "fronts_who": [
      "CTV News",
+     "The Globe and Mail",
      "CP24",
      "NBC News",
      "BBC News"
@@ -1316,13 +1317,13 @@
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (4 cities).",
     "weight": 44,
-    "tag_why": "Developing, not Breaking: from abroad with no Canadian tie and 4 independent newsroom(s), under the six-source standard, while a Canadian story at the top has 9."
+    "tag_why": "Developing, not Breaking: from abroad with no Canadian tie and 4 independent newsroom(s), under the six-source standard, while a Canadian story at the top has 7."
    },
    {
     "key": "auto-872a71f0",
     "words": [
-     "trump’s",
      "stephen",
+     "trump’s",
      "miller"
     ],
     "score": 24,
@@ -1520,12 +1521,11 @@
     "incoherent": false,
     "popular": 4,
     "us_election": false,
-    "fronts": 3,
+    "fronts": 2,
     "fronts_ca": 0,
     "fronts_who": [
      "CBS News",
-     "The Guardian",
-     "NPR"
+     "The Guardian"
     ],
     "judgment": "national",
     "judgment_why": "National: affects many people; carried by a few newsrooms.",
@@ -1533,17 +1533,17 @@
     "videos": [
      {
       "net": "CBS News",
-      "url": "https://www.youtube.com/watch?v=vc-2VAdSpww",
-      "title": "Trump replaces Susie Wiles with Stephen Miller as chief of staff | Special Report",
-      "img": "https://i.ytimg.com/vi/vc-2VAdSpww/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=6ROYEhH1KxE",
+      "title": "Stephen Miller, Trump ally behind his most hardline policies, named White House chief of staff",
+      "img": "https://i.ytimg.com/vi/6ROYEhH1KxE/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=TJDsHSJCHyI",
-      "title": "Trump taps Stephen Miller as chief of staff: What it means for his post-midterms agenda",
-      "img": "https://i.ytimg.com/vi/TJDsHSJCHyI/hqdefault.jpg",
+      "net": "CBS News",
+      "url": "https://www.youtube.com/watch?v=vc-2VAdSpww",
+      "title": "Trump replaces Susie Wiles with Stephen Miller as chief of staff | Special Report",
+      "img": "https://i.ytimg.com/vi/vc-2VAdSpww/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
@@ -1556,10 +1556,10 @@
       "up": ""
      },
      {
-      "net": "NBC News",
-      "url": "https://www.youtube.com/watch?v=fXNsIbnoit8",
-      "title": "Trump names Stephen Miller as new Chief of Staff",
-      "img": "https://i.ytimg.com/vi/fXNsIbnoit8/hqdefault.jpg",
+      "net": "Global News",
+      "url": "https://www.youtube.com/watch?v=TJDsHSJCHyI",
+      "title": "Trump names Stephen Miller as his new chief of staff",
+      "img": "https://i.ytimg.com/vi/TJDsHSJCHyI/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1572,9 +1572,9 @@
     "url": "https://globalnews.ca/news/12141139/budget-2026-foreign-aid/",
     "rank": 1,
     "live": "",
-    "weight": 58,
+    "weight": 56,
     "score": 16,
-    "independent": 9,
+    "independent": 7,
     "most_read": 5,
     "canada": "canadian",
     "theme": "Federal budget",
@@ -1582,13 +1582,13 @@
     "fronts": 0,
     "fronts_who": [],
     "rule": "Canadian and breaking",
-    "carriers": 20,
+    "carriers": 18,
     "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (9 cities)."
+    "why_judged": "National: affects many people; carried across the country (10 cities)."
    },
    {
     "title": "Gunman who opened fatal fire on Krakow market square had ‘radical’ far-right views",
-    "url": "https://www.cp24.com/news/world/2026/11/07/gunfire-in-polish-city-of-krakow-leaves-6-dead-15-wounded/",
+    "url": "https://www.ctvnews.ca/world/article/gunman-opens-fire-in-polish-city-of-krakow-killing-6-people-and-injuring-15/",
     "rank": 2,
     "live": "",
     "weight": 44,
@@ -1598,9 +1598,10 @@
     "canada": "none",
     "theme": "",
     "top": true,
-    "fronts": 4,
+    "fronts": 5,
     "fronts_who": [
      "CTV News",
+     "The Globe and Mail",
      "CP24",
      "NBC News",
      "BBC News"
@@ -1622,11 +1623,10 @@
     "canada": "tie",
     "theme": "",
     "top": true,
-    "fronts": 3,
+    "fronts": 2,
     "fronts_who": [
      "CBS News",
-     "The Guardian",
-     "NPR"
+     "The Guardian"
     ],
     "rule": "From abroad, tied to Canada",
     "carriers": 5,
@@ -1634,30 +1634,9 @@
     "why_judged": "National: affects many people; carried by a few newsrooms."
    },
    {
-    "title": "'Peace is possible and we are called to build it' Pope Leo XIV says in Uruguay",
-    "url": "https://www.euronews.com/2026/11/07/peace-is-possible-and-we-are-called-to-build-it-pope-leo-xiv-says-in-uruguay",
-    "rank": 4,
-    "live": "",
-    "weight": 12.5,
-    "score": 5,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 1,
-    "fronts_who": [
-     "ABC News"
-    ],
-    "rule": "No Canadian tie",
-    "carriers": 3,
-    "judgment": "regional",
-    "why_judged": "Regional: affects some people; carried by a few newsrooms."
-   },
-   {
     "title": "The Hero on Highway 39",
     "url": "https://vancouver.citynews.ca/2026/11/07/highway-39-hero/",
-    "rank": 5,
+    "rank": 4,
     "live": "",
     "weight": 12.5,
     "score": 5,
@@ -1674,9 +1653,9 @@
     "why_judged": "Regional: affects some people; carried beyond one city."
    },
    {
-    "title": "Sunday on 60 Minutes: France on fire",
-    "url": "https://www.cbsnews.com/video/sunday-on-60-minutes-france-on-fire/",
-    "rank": 6,
+    "title": "Mélenchon presents party manifesto as social unrest continues across France",
+    "url": "https://www.euronews.com/2026/11/07/melenchon-presents-party-manifesto-as-social-unrest-continues-across-france",
+    "rank": 5,
     "live": "",
     "weight": 12.5,
     "score": 5,
@@ -1694,7 +1673,7 @@
    },
    {
     "title": "Former PM Trudeau takes on role at Oxford University",
-    "score": 14,
+    "score": 16,
     "why": "not built: only 1 independent report(s) (12 sites)"
    },
    {
@@ -1709,7 +1688,7 @@
    },
    {
     "title": "Quebec confirms infected cow as outbreak of raccoon rabies continues",
-    "score": 8,
+    "score": 9,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
@@ -1719,6 +1698,16 @@
    },
    {
     "title": "Canada's military is using Palantir software. What are the risks?",
+    "score": 5,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Collaros active for Blue Bombers in East final",
+    "score": 5,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Storm set to continue for much of Island in wake of outages, evacuations",
     "score": 5,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
@@ -1734,11 +1723,6 @@
    },
    {
     "title": "North Vancouver remains most expensive Canadian city for renters",
-    "score": 5,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "‘Novembre en couleur’: Montreal event uses art and music to bring people together",
     "score": 5,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
@@ -1776,7 +1760,7 @@
      "alt": "The Hero on Highway 39",
      "outlet": "CityNews Vancouver",
      "url": "https://vancouver.citynews.ca/2026/11/07/highway-39-hero/",
-     "since": "2026-11-07T19:48:07.505934+00:00"
+     "since": "2026-11-07T19:54:18.048705+00:00"
     },
     "photo_seen": [
      "https://vancouver.citynews.ca/wp-content/blogs.dir/sites/9/2026/11/07/Screenshot-2026-11-07-102552.png"
@@ -1903,12 +1887,12 @@
     "outlets": 3,
     "carriers": 3,
     "tag": "Developing",
-    "title": "Sunday on 60 Minutes: France on fire",
-    "url": "https://www.cbsnews.com/video/sunday-on-60-minutes-france-on-fire/",
-    "outlet": "CBS News",
-    "t": "Sat 1:17 p.m.",
-    "iso": "2026-11-07T18:17:00+00:00",
-    "summary": "",
+    "title": "Mélenchon presents party manifesto as social unrest continues across France",
+    "url": "https://www.euronews.com/2026/11/07/melenchon-presents-party-manifesto-as-social-unrest-continues-across-france",
+    "outlet": "Euronews",
+    "t": "Sat 11:04 a.m.",
+    "iso": "2026-11-07T16:04:41+00:00",
+    "summary": "In a post on X, Le Pen, the presidential candidate for the far-right National Rally party, hit out at what she called a \"plan to dismantle France\". #EuropeNews",
     "first": {
      "outlet": "Euronews",
      "url": "https://www.euronews.com/2026/11/07/melenchon-presents-party-manifesto-as-social-unrest-continues-across-france",
@@ -1918,25 +1902,25 @@
     },
     "newest": "2026-11-07T18:17:00+00:00",
     "photo": {
-     "src": "live/img/auto-c959c9ca-50efd778eb.jpg",
-     "orig": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/07/ef01a7a6-e94b-446f-ac23-c5eccfddba1f/thumbnail/1200x630/e301f15cfdea4968492ba662a826ad39/unrest.jpg",
-     "caption": "From: Sunday on 60 Minutes: France on fire. — via CBS News",
-     "alt": "Sunday on 60 Minutes: France on fire",
-     "outlet": "CBS News",
-     "url": "https://www.cbsnews.com/video/sunday-on-60-minutes-france-on-fire/",
-     "since": "2026-11-07T19:48:07.723094+00:00"
+     "src": "live/img/auto-c959c9ca-0bb8980b3a.jpg",
+     "orig": "https://images.euronews.com/articles/stories/09/98/34/88/1200x675_cmsv2_751a00e9-c8f0-5615-9ccd-3557c84bedaa-9983488.jpg",
+     "caption": "Mélenchon presents party manifesto as social unrest continues across France. — via Euronews",
+     "alt": "Mélenchon presents party manifesto as social unrest continues across France",
+     "outlet": "Euronews",
+     "url": "https://www.euronews.com/2026/11/07/melenchon-presents-party-manifesto-as-social-unrest-continues-across-france",
+     "since": "2026-11-07T19:54:18.216222+00:00"
     },
     "photo_seen": [
-     "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/07/ef01a7a6-e94b-446f-ac23-c5eccfddba1f/thumbnail/1200x630/e301f15cfdea4968492ba662a826ad39/unrest.jpg"
+     "https://images.euronews.com/articles/stories/09/98/34/88/1200x675_cmsv2_751a00e9-c8f0-5615-9ccd-3557c84bedaa-9983488.jpg"
     ],
     "photos": [
      {
-      "src": "live/img/auto-c959c9ca-50efd778eb.jpg",
-      "orig": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/07/ef01a7a6-e94b-446f-ac23-c5eccfddba1f/thumbnail/1200x630/e301f15cfdea4968492ba662a826ad39/unrest.jpg",
-      "caption": "From: Sunday on 60 Minutes: France on fire. — via CBS News",
-      "alt": "Sunday on 60 Minutes: France on fire",
-      "outlet": "CBS News",
-      "url": "https://www.cbsnews.com/video/sunday-on-60-minutes-france-on-fire/"
+      "src": "live/img/auto-c959c9ca-0bb8980b3a.jpg",
+      "orig": "https://images.euronews.com/articles/stories/09/98/34/88/1200x675_cmsv2_751a00e9-c8f0-5615-9ccd-3557c84bedaa-9983488.jpg",
+      "caption": "Mélenchon presents party manifesto as social unrest continues across France. — via Euronews",
+      "alt": "Mélenchon presents party manifesto as social unrest continues across France",
+      "outlet": "Euronews",
+      "url": "https://www.euronews.com/2026/11/07/melenchon-presents-party-manifesto-as-social-unrest-continues-across-france"
      },
      {
       "src": "live/img/auto-c959c9ca-6d7760c7b4.jpg",
@@ -1945,6 +1929,14 @@
       "alt": "Hundreds march in Pau, France against high living costs",
       "outlet": "Al Jazeera",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/hundreds-march-in-pau-france-against-high-living-costs?traffic_source=rss"
+     },
+     {
+      "src": "live/img/auto-c959c9ca-50efd778eb.jpg",
+      "orig": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/07/ef01a7a6-e94b-446f-ac23-c5eccfddba1f/thumbnail/1200x630/e301f15cfdea4968492ba662a826ad39/unrest.jpg",
+      "caption": "From: Sunday on 60 Minutes: France on fire. — via CBS News",
+      "alt": "Sunday on 60 Minutes: France on fire",
+      "outlet": "CBS News",
+      "url": "https://www.cbsnews.com/video/sunday-on-60-minutes-france-on-fire/"
      }
     ],
     "independent": 3,
@@ -1971,7 +1963,7 @@
       "outlet": "Euronews",
       "title": "Mélenchon presents party manifesto as social unrest continues across France",
       "url": "https://www.euronews.com/2026/11/07/melenchon-presents-party-manifesto-as-social-unrest-continues-across-france",
-      "desc": ""
+      "desc": "In a post on X, Le Pen, the presidential candidate for the far-right National Rally party, hit out at what she called a \"plan to dismantle France\". #EuropeNews"
      }
     ],
     "sources": [
@@ -2015,13 +2007,13 @@
       "outlet": "Euronews",
       "title": "Mélenchon presents party manifesto as social unrest continues across France",
       "url": "https://www.euronews.com/2026/11/07/melenchon-presents-party-manifesto-as-social-unrest-continues-across-france",
-      "desc": "",
+      "desc": "In a post on X, Le Pen, the presidential candidate for the far-right National Rally party, hit out at what she called a \"plan to dismantle France\". #EuropeNews",
       "wire": "",
       "by": [
        {
         "outlet": "Euronews",
         "src": "Euronews",
-        "byline": ""
+        "byline": "[ { \"@type\": \"Person\", \"familyName\": \"Kazakevich\", \"givenName\": \"Alexander\", \"name\": \"Alexander Kazakevich\", , \"worksFor"
        }
       ],
       "copies": []
@@ -2043,12 +2035,7 @@
     "weight": 12.5
    }
   ],
-  "passed_over": [
-   {
-    "title": "'Peace is possible and we are called to build it' Pope Leo XIV says in Uruguay",
-    "url": "https://www.euronews.com/2026/11/07/peace-is-possible-and-we-are-called-to-build-it-pope-leo-xiv-says-in-uruguay"
-   }
-  ]
+  "passed_over": []
  },
  "clips": [
   {
@@ -2181,7 +2168,7 @@
    "id": "TJDsHSJCHyI",
    "r": "ca",
    "o": "Global News",
-   "t": "Trump taps Stephen Miller as chief of staff: What it means for his post-midterms agenda",
+   "t": "Trump names Stephen Miller as his new chief of staff",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=TJDsHSJCHyI",
@@ -2433,7 +2420,7 @@
    "id": "mM17i1dCwEY",
    "r": "us",
    "o": "CNN",
-   "t": "75% of Americans on verge of being run by Dems as blue wave grows",
+   "t": "75% of Americans on verge of being run by Dems. Panel weighs in",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=mM17i1dCwEY",
@@ -2531,7 +2518,7 @@
    "id": "auSH41DSPFg",
    "r": "world",
    "o": "Sky News",
-   "t": "PM considers reforming rape trials to encourage more women to come forward",
+   "t": "Andy Burnham considers changes to rape trials after Russell Brand conviction",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=auSH41DSPFg",
@@ -2671,11 +2658,11 @@
  "ledes": [
   {
    "o": "CBS News",
-   "h": "More races called as Democratic majority comes into focus",
-   "u": "https://www.cbsnews.com/live-updates/midterm-election-results-2026-democrats-house-senate-trump/",
-   "img": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/07/bf8018d2-5186-4bd8-8439-bcc4c1a35a9f/thumbnail/1200x630/3e6c864a7e4a6a5e9d2705934d3e12b2/gettyimages-2303174457.jpg",
-   "w": "Sat 2:07 p.m.",
-   "iso": "2026-11-07T19:07:36+00:00"
+   "h": "Mass shooting in Polish market leaves at least 6 dead, 15 injured",
+   "u": "https://www.cbsnews.com/news/shooting-main-market-square-krakow-poland/",
+   "img": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/11/07/88f7487a-a080-4385-8c25-2257ea9cff91/thumbnail/1200x630/8b37ce25c3c1f0759c5d1734dfb60a90/gettyimages-2303483978.jpg",
+   "w": "Sat 2:51 p.m.",
+   "iso": "2026-11-07T19:51:43+00:00"
   },
   {
    "o": "ABC News",
@@ -2746,6 +2733,19 @@
    "u": "https://broadbentinstitute.ca/no-sovereignty-without-democracy/",
    "t": "There is No Nation-building Without Workers, No Sovereignty Without Democracy",
    "g": "Approval is not the same as confidence. When asked if the government’s Major Projects agenda will make their lives better, most Canadians do not believe so. The post There is No Nation-building Without Workers, No Sovereignty Without Democracy appeared first on Broadbent Institute .",
+   "auto": true
+  },
+  {
+   "inst": "Frontier Centre for Public Policy",
+   "place": "Winnipeg",
+   "kind": "Publication",
+   "by": "",
+   "date": "Nov. 7, 2026",
+   "d": "2026-11-07",
+   "pic": "chart",
+   "u": "https://frontiercentre.org/2026/11/07/want-my-vote-tell-me-what-you-stand-for/?utm_source=rss&utm_medium=rss&utm_campaign=want-my-vote-tell-me-what-you-stand-for",
+   "t": "Want my vote? Tell me what you stand for",
+   "g": "Low municipal voter turnout reflects more than public cynicism. Candidates who offer vague promises and smiling portraits give citizens little reason to vote. Winning their interest requires clear policies, honest answers and meaningful personal engagement.",
    "auto": true
   },
   {
@@ -2879,6 +2879,19 @@
    "auto": true
   },
   {
+   "inst": "Frontier Centre for Public Policy",
+   "place": "Winnipeg",
+   "kind": "Publication",
+   "by": "",
+   "date": "Nov. 5, 2026",
+   "d": "2026-11-05",
+   "pic": "chart",
+   "u": "https://frontiercentre.org/2026/11/05/canadas-dilemma-sovereignty-and-national-security/?utm_source=rss&utm_medium=rss&utm_campaign=canadas-dilemma-sovereignty-and-national-security",
+   "t": "Canada’s Dilemma: Sovereignty and National Security",
+   "g": "David Redman argues that Canada’s sovereignty depends on defending six national interests. Examining weaknesses across ten security functions, he calls for a national vision that restores military readiness, accountable government and protection of Canadians’ freedoms.",
+   "auto": true
+  },
+  {
    "inst": "Heritage Foundation",
    "place": "Washington",
    "kind": "Publication",
@@ -2889,32 +2902,6 @@
    "u": "https://www.heritage.org/border-security/commentary/midterm-scorecard-the-border-and-immigration",
    "t": "A Midterm Scorecard on the Border and Immigration",
    "g": "Codification of President Donald Trump’s immigration and border policies wasn’t done in two years, with a narrow Republican majority in both houses. After Tuesday, it may be a practical impossibility. But that’s nothing new: The last major immigration reform law passed in 1996 . These days, border and immigration…",
-   "auto": true
-  },
-  {
-   "inst": "Peterson Institute",
-   "place": "Washington",
-   "kind": "Publication",
-   "by": "",
-   "date": "Nov. 5, 2026",
-   "d": "2026-11-05",
-   "pic": "chart",
-   "u": "https://www.piie.com/blogs/realtime-economics/2026/piie-mourns-passing-beloved-colleague-gary-clyde-hufbauer",
-   "t": "PIIE mourns the passing of beloved colleague, Gary Clyde Hufbauer",
-   "g": "It is with profound sadness that I share the news that Gary Clyde Hufbauer, a pillar of the Peterson Institute for International Economics and a beloved colleague and friend to so many of us, passed away yesterday, November 4, peacefully and surrounded by his family. Gary was an extraordinary scholar and person. As…",
-   "auto": true
-  },
-  {
-   "inst": "Lowy Institute",
-   "place": "Sydney",
-   "kind": "Publication",
-   "by": "",
-   "date": "Nov. 5, 2026",
-   "d": "2026-11-05",
-   "pic": "chart",
-   "u": "https://www.lowyinstitute.org/the-interpreter/indonesia-s-national-hero-titles-and-the-politics-of-unresolved-violence",
-   "t": "Indonesia’s National Hero titles and the politics of unresolved violence",
-   "g": "Indonesia keeps honouring the victims of state violence only once their killers can no longer be prosecuted.",
    "auto": true
   }
  ],
@@ -3028,13 +3015,6 @@
     "url": "https://www.cbc.ca/news/politics/midterms-canada-tariffs-trade-war-canada-9.7410974?cmp=rss"
    },
    {
-    "t": "Thu 4:15 p.m.",
-    "iso": "2026-11-05T21:15:00+00:00",
-    "outlet": "Toronto Star",
-    "title": "Federal budget pumps billions into Canadian culture amid trade war",
-    "url": "https://www.thestar.com/politics/federal/federal-budget-pumps-billions-into-canadian-culture-amid-trade-war/article_a3b3c5e5-fa3b-4ffc-b919-49a639355be5.html"
-   },
-   {
     "t": "Thu 3:17 p.m.",
     "iso": "2026-11-05T20:17:40+00:00",
     "outlet": "BNN Bloomberg",
@@ -3063,7 +3043,7 @@
   "edition": "Saturday afternoon, November 7",
   "lines": [
    "Good afternoon. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
-   "Aid sector calls out lack of any mention of foreign aid in federal budget, Toronto Star reports.",
+   "Aid sector calls out lack of any mention of foreign aid in federal budget, The Canadian Press reports.",
    "Top Trump adviser Stephen Miller, who is set to take over the White House chief of staff role on Monday, has driven President Trump’s most controversial immigration policies during both of his administrations, CBS News reports.",
    "Gunman opens fire in Polish city of Krakow, killing 5 people and injuring at least 12, The Associated Press reports.",
    "A Terrace Bay man has been charged with stunt driving after OPP clocked a vehicle at 191 km/h in a 90 km/h zone on Highway 11/17 in Nipigon, The Canadian Press reports.",
@@ -3358,21 +3338,21 @@
    "tz": "America/Halifax",
    "world": false,
    "w": "Protests",
-   "u": "https://www.ctvnews.ca/atlantic/nova-scotia/article/protest-against-nova-scotias-proposed-ai-data-centre-held-in-halifax/",
-   "title": "Protests against Nova Scotia’s proposed AI data centre held across the province",
-   "outlet": "CTV News",
-   "t": "Sat 2:39 p.m.",
+   "u": "https://www.cbc.ca/news/canada/nova-scotia/data-centre-protests-nova-scotia-9.7413638",
+   "title": "Protests across Nova Scotia oppose AI data centres",
+   "outlet": "CBC News",
+   "t": "Sat 2:48 p.m.",
    "hot": true
   },
   {
    "city": "Ottawa",
    "tz": "America/Toronto",
    "world": false,
-   "w": "City hall",
-   "u": "https://www.ctvnews.ca/ottawa/article/a-lot-in-federal-budget-aligns-with-city-priorities-ottawa-mayor-says/",
-   "title": "‘A lot’ in federal budget aligns with city priorities, Ottawa mayor says",
-   "outlet": "CTV News",
-   "t": "Sat 7:09 a.m.",
+   "w": "Police",
+   "u": "https://www.cbc.ca/news/canada/ottawa/man-who-killed-brkti-berhe-guilty-of-1st-degree-murder-9.7413573",
+   "title": "Man convicted of murdering his ex's niece in front of her kids in Ottawa park",
+   "outlet": "CBC News",
+   "t": "Sat 2:28 p.m.",
    "hot": false
   },
   {
@@ -3447,35 +3427,35 @@
   {
    "desk": "business",
    "pic": "chart",
-   "t": "Sat 2:19 p.m.",
-   "iso": "2026-11-07T19:19:25+00:00",
-   "title": "Canada's 2026 federal budget sets out $50 billion for Indigenous communities over 10 years",
-   "summary": "Prime Minister Mark Carney's 2026 federal budget sets aside roughly $50 billion in funding for Indigenous communities over 10 years.",
-   "outlet": "Daily Hive, CTV News, Global News, Vancouver Sun, CP24, Toronto Star",
-   "url": "https://dailyhive.com/vancouver/canada-2026-federal-budget-indigenous-communities",
-   "img": "https://images-dh-production-baselayer.dailyhive.com/uploads/2025/12/first-nations-cowichan-valley-malahat-vancouver-island-f.jpg?format=auto"
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
    "t": "Sat 2:40 p.m.",
    "iso": "2026-11-07T19:40:30+00:00",
    "title": "Gunman who opened fatal fire on Krakow market square had ‘radical’ far-right views",
    "summary": "Six people were killed and 15 wounded after a gunman opened fire Saturday afternoon in a busy market square in Krakow, authorities said, in what Poland ‘s defense minister called an “act of terror” on the people of the city.",
-   "outlet": "CP24, BBC News, CBS News, Times Colonist, CBC News, CTV News",
-   "url": "https://www.cp24.com/news/world/2026/11/07/gunfire-in-polish-city-of-krakow-leaves-6-dead-15-wounded/",
-   "img": "https://www.cp24.com/resizer/v2/S5ABPFAK7ZGONHDOQR2BT2SGAY.jpg?smart=true&auth=27e25f1c097f84484f0ba8303035fe9cd71191ef3f692963fd80a67c12568ea9&width=1200&height=630"
+   "outlet": "CTV News, CP24, BBC News, CBS News, Times Colonist, CBC News",
+   "url": "https://www.ctvnews.ca/world/article/gunman-opens-fire-in-polish-city-of-krakow-killing-6-people-and-injuring-15/",
+   "img": "https://www.ctvnews.ca/resizer/v2/S5ABPFAK7ZGONHDOQR2BT2SGAY.jpg?smart=true&auth=27e25f1c097f84484f0ba8303035fe9cd71191ef3f692963fd80a67c12568ea9&width=1200&height=630"
+  },
+  {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Sat 2:19 p.m.",
+   "iso": "2026-11-07T19:19:25+00:00",
+   "title": "Canada's 2026 federal budget sets out $50 billion for Indigenous communities over 10 years",
+   "summary": "Prime Minister Mark Carney's 2026 federal budget sets aside roughly $50 billion in funding for Indigenous communities over 10 years.",
+   "outlet": "Daily Hive, CTV News, Global News, Vancouver Sun, CP24, CityNews Winnipeg",
+   "url": "https://dailyhive.com/vancouver/canada-2026-federal-budget-indigenous-communities",
+   "img": "https://images-dh-production-baselayer.dailyhive.com/uploads/2025/12/first-nations-cowichan-valley-malahat-vancouver-island-f.jpg?format=auto"
   },
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Sat 11:56 a.m.",
-   "iso": "2026-11-07T16:56:40.726000+00:00",
+   "t": "Sat 2:37 p.m.",
+   "iso": "2026-11-07T19:37:58+00:00",
    "title": "Justin Trudeau named distinguished fellow at Oxford's Blavatnik School of Government",
    "summary": "Former prime minister Justin Trudeau has joined England's Oxford University in a new role.",
-   "outlet": "CBC News, Toronto Star, Times Colonist, CityNews Winnipeg, CityNews Vancouver, CityNews Ottawa",
-   "url": "https://www.cbc.ca/news/canada/justin-trudeau-oxford-university-fellow-9.7413594",
-   "img": "https://i.cbc.ca/ais/ed819c3a-c987-42f1-be92-e60e80f1a1af,1794068536258/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C237%2C4000%2C2250%29%3BResize%3D620"
+   "outlet": "Times Colonist, CBC News, Toronto Star, CityNews Winnipeg, CityNews Vancouver, CityNews Ottawa",
+   "url": "https://www.timescolonist.com/national-news/justin-trudeau-named-distinguished-fellow-at-oxfords-blavatnik-school-of-government-12992519",
+   "img": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/598c0c21f09a1178b2cb18d85f53d403f2ec54fbb1d6256c8cdbc41aafda8c42.jpg;w=1200;h=800;mode=crop"
   },
   {
    "desk": "world",
@@ -3546,6 +3526,17 @@
   {
    "desk": "world",
    "pic": "globe",
+   "t": "Sat 2:45 p.m.",
+   "iso": "2026-11-07T19:45:53+00:00",
+   "title": "Collaros active for Blue Bombers in East final",
+   "summary": "The cat is out of the bag. Veteran quarterback Zach Collaros is active for the Winnipeg Blue Bombers in Saturday's East Division final.",
+   "outlet": "Global News, CityNews Montreal",
+   "url": "https://globalnews.ca/news/12141305/collaros-active-for-blue-bombers-in-east-final/",
+   "img": "https://globalnews.ca/wp-content/uploads/2026/11/6c37ec38a8204b6b1ce9da7c093179a2bad64d3713689ded08c573b2a25f192e.jpg?quality=65&strip=all&w=720&h=379&crop=1"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
    "t": "Sat 2:28 p.m.",
    "iso": "2026-11-07T19:28:59+00:00",
    "title": "Obesity: A ‘complex story’ beyond willpower, discipline",
@@ -3553,17 +3544,6 @@
    "outlet": "CTV News, CP24",
    "url": "https://www.ctvnews.ca/montreal/health/article/obesity-a-complex-story-beyond-willpower-discipline/",
    "img": "https://www.ctvnews.ca/resizer/v2/JANCVP4VZBDDVD2RLCRVDXQGZQ.jpg?smart=true&auth=d4059bd00683d1777e2a86b6c06804bbbccd81d090365adaf44805c50ce8808e&width=1200&height=630"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Sat 2:20 p.m.",
-   "iso": "2026-11-07T19:20:51+00:00",
-   "title": "N.Y. school bus driver arrested after five-year-old was dragged from being trapped in door: police",
-   "summary": "A school bus driver has been arrested in Clinton, New York after a five-year-old was dragged, when their backpack was caught in the vehicle’s doors.",
-   "outlet": "CTV News, CP24",
-   "url": "https://www.ctvnews.ca/world/article/school-bus-driver-arrested-after-students-backpack-caught-in-door-dragged/",
-   "img": "https://www.ctvnews.ca/resizer/v2/PDMLATVR7JAVZAQDP24RN22R4A.jpeg?smart=true&auth=0f58d5c69257770d13e7e4448a64ec81209a570ed00360bba60515661c7d296d&width=1200&height=630"
   },
   {
    "desk": "business",
@@ -3804,20 +3784,20 @@
    "o": "The Globe and Mail",
    "ca": true,
    "h": [
-    "Budget aims to simplify taxes, addressing corporate loss transfers and preferred shares",
-    "Goodbye, RRIFs? What Ottawa’s proposed ‘RRSP-for-life’ means for retirees",
+    "Ottawa aims to simplify taxes, addressing corporate loss transfers and preferred shares",
+    "Goodbye, RRIFs? What proposed ‘RRSP-for-life’ means for retirees",
     "Fiscal plan offers a glimpse of a post-Trump world with more than one problem to solve",
     "If Trump acts out on foreign policy, can Congress rein him in? Canada may not like the answer",
-    "Ottawa to expand CSIS’s powers to spy abroad",
-    "Tale of two outbreaks: Canada stamps out measles while cases grow in the U.S."
+    "Six people killed, 15 injured in Krakow main square shooting",
+    "Investors this week got a glimpse of what could go wrong"
    ],
    "u": [
     "https://www.theglobeandmail.com/business/article-federal-budget-corporate-tax-simplification-carney-champagne/",
     "https://www.theglobeandmail.com/investing/personal-finance/retirement/article-federal-budget-rrif-rrsp-for-life-retirement/",
     "https://www.theglobeandmail.com/politics/opinion/article-budget-2026-post-trump-world-with-more-than-one-problem-to-solve/",
     "https://www.theglobeandmail.com/world/article-if-donald-trump-acts-out-on-foreign-policy-can-congress-rein-him-in/",
-    "https://www.theglobeandmail.com/politics/article-ottawa-to-expand-csiss-powers-to-spy-abroad-foreign-intelligence/",
-    "https://www.theglobeandmail.com/canada/article-canada-stamps-out-measles-outbreak-while-cases-grow-in-us/"
+    "https://www.theglobeandmail.com/world/article-krakow-poland-shooting-main-market-square/",
+    "https://www.theglobeandmail.com/investing/markets/inside-the-market/article-technology-stock-market-crash-run-beginning-of-the-end/"
    ]
   },
   {
@@ -3935,7 +3915,7 @@
    "ca": false,
    "h": [
     "Gunman who killed six in Krakow believed to have been inspired by far-right ideology, minister says",
-    "What we know about Krakow mass shooting so far",
+    "What we know so far after Polish gunman in military clothing opens fire in Krakow",
     "Tens of thousands of tents flooded after heavy rains in Gaza",
     "UK cannot 'cherry pick' EU single market deal, Barnier tells BBC",
     "No clear winner after tight New Zealand general election",
@@ -3975,19 +3955,19 @@
    "ca": false,
    "h": [
     "NPR - Breaking News, Analysis, Music, Arts & Podcasts",
-    "The economy propelled Democrats to victory. What can they actually do about it?",
-    "No one knows how many ballots are outstanding in Mississippi's Senate race",
-    "A promising new medicine against heart disease fails unexpectedly",
     "Democrats plan to widen their probes of fatal ICE shootings",
-    "Stephen Miller will replace Susie Wiles as Trump's chief of staff"
+    "The economy propelled Democrats to victory. What can they actually do about it?",
+    "An unexpected activist emerged to help block a $5 billion data center in Maryland",
+    "A promising new medicine against heart disease fails unexpectedly",
+    "No one knows how many ballots are outstanding in Mississippi's Senate race"
    ],
    "u": [
     "",
-    "https://www.npr.org/2026/11/06/nx-s1-6026662/the-economy-propelled-democrats-to-victory-what-can-they-actually-do-about-it",
-    "https://www.npr.org/2026/11/06/nx-s1-6030645/mississippi-senate-results-provisional-ballots",
-    "https://www.npr.org/2026/11/07/nx-s1-6026379/lpa-drug-lipoproteina-heart-attack",
     "https://www.npr.org/2026/11/07/nx-s1-6029659/democrats-investigate-fatal-ice-shootings",
-    "https://www.npr.org/2026/11/06/nx-s1-6032795/stephen-miller-replace-susie-wiles-trumps-chief-of-staff"
+    "https://www.npr.org/2026/11/06/nx-s1-6026662/the-economy-propelled-democrats-to-victory-what-can-they-actually-do-about-it",
+    "https://www.npr.org/2026/11/07/nx-s1-6007770/data-centers-activist-moratorium",
+    "https://www.npr.org/2026/11/07/nx-s1-6026379/lpa-drug-lipoproteina-heart-attack",
+    "https://www.npr.org/2026/11/06/nx-s1-6030645/mississippi-senate-results-provisional-ballots"
    ]
   }
  ],
@@ -4000,7 +3980,7 @@
     "url": "https://www.youtube.com/watch?v=XtLl_wi6H3A",
     "img": "https://i.ytimg.com/vi/XtLl_wi6H3A/hqdefault.jpg",
     "story": "Trump-Iran latest, Midterm final results, Albania & France protests, C",
-    "watching": "914"
+    "watching": "919"
    }
   ],
   "upcoming": [],
@@ -4096,27 +4076,27 @@
      "tie": "Federal budget"
     },
     {
-     "t": "Fri 11:59 a.m.",
-     "iso": "2026-11-06T16:59:00+00:00",
-     "outlet": "Toronto Star",
-     "title": "Budget offers little new relief for middle-income Canadians struggling with costs",
-     "url": "https://www.thestar.com/politics/federal/budget-offers-little-new-relief-for-middle-income-canadians-struggling-with-costs/article_6740ef6e-c59e-5c2d-b1ed-ea35f66f5d9c.html",
-     "tie": "Federal budget"
-    },
-    {
-     "t": "Fri 11:49 a.m.",
-     "iso": "2026-11-06T16:49:31+00:00",
-     "outlet": "Toronto Star",
-     "title": "Manitoba Métis Federation 'appalled' by lack of Métis funding in federal budget",
-     "url": "https://www.thestar.com/news/canada/manitoba/manitoba-m-tis-federation-appalled-at-lack-of-m-tis-funding-in-federal-budget/article_2cb00407-f524-5bb7-9211-9e5c1bf67238.html",
-     "tie": "Federal budget"
-    },
-    {
      "t": "Fri 10:56 a.m.",
      "iso": "2026-11-06T15:56:43+00:00",
      "outlet": "BNN Bloomberg",
      "title": "Gas and groceries: Budget measures on the table for middle-class Canadian families",
      "url": "https://www.bnnbloomberg.ca/business/economics/2026/11/06/gas-and-groceries-budget-measures-on-the-table-for-middle-class-canadian-families/",
+     "tie": "Federal budget"
+    },
+    {
+     "t": "Fri 10:32 a.m.",
+     "iso": "2026-11-06T15:32:49+00:00",
+     "outlet": "CBC News",
+     "title": "Federal budget funds team to manage N.W.T. major projects",
+     "url": "https://www.cbc.ca/news/canada/north/federal-budget-funds-team-to-manage-n-w-t-major-projects-9.7411954?cmp=rss",
+     "tie": "Federal budget"
+    },
+    {
+     "t": "Fri 7:05 a.m.",
+     "iso": "2026-11-06T12:05:51+00:00",
+     "outlet": "Canada's National Observer",
+     "title": "Carney heads to Winnipeg to tout budget plan to end homelessness in 10 years",
+     "url": "https://www.nationalobserver.com/2026/11/06/news/carney-heads-winnipeg-tout-budget-plan-end-homelessness-10-years",
      "tie": "Federal budget"
     }
    ],
@@ -4632,8 +4612,8 @@
    "at": "2026-10-29T02:33:18.869844+00:00"
   },
   "c9v26lW7-j4": {
-   "v": "ok",
-   "at": "2026-11-07T11:43:59.419020+00:00"
+   "v": "unplayable",
+   "at": "2026-11-07T19:51:24.932924+00:00"
   },
   "cXN5OV4NYhI": {
    "v": "unknown",
@@ -4885,14 +4865,10 @@
   }
  },
  "geo_blocked": [
-  "-NabWfv-VdA"
+  "-NabWfv-VdA",
+  "c9v26lW7-j4"
  ],
  "noembed": [
-  "J3FV4iY8p5w",
-  "L6qtnHZxwEw",
-  "NuEr0Q_AS6U",
-  "c9v26lW7-j4",
-  "ldElU-Q5Qyo",
-  "t_HBrWb84eY"
+  "NuEr0Q_AS6U"
  ]
 }
