@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-07T04:24:32.643829+00:00",
- "checkedLabel": "Fri 11:24 p.m.",
+ "checked": "2026-11-07T04:34:32.748616+00:00",
+ "checkedLabel": "Fri 11:34 p.m.",
  "stories": [
   {
    "key": "top",
@@ -43,6 +43,15 @@
   }
  ],
  "wire": [
+  [
+   "Fri 11:25 p.m.",
+   "Latest",
+   "Kaufman-Renn scores 17 and No. 17 Kansas routs Middle Tennessee 89-45",
+   "The Canadian Press (via Winnipeg Free Press)",
+   "https://www.winnipegfreepress.com/uncategorized/2026/11/06/kaufman-renn-scores-17-and-no-17-kansas-routs-middle-tennessee-89-45",
+   "2026-11-07T04:25:10+00:00",
+   1
+  ],
   [
    "Fri 11:17 p.m.",
    "Latest",
@@ -107,15 +116,6 @@
    1
   ],
   [
-   "Fri 10:51 p.m.",
-   "Latest",
-   "Pinkins has 19 points as Ole Miss defeats Central Arkansas 92-60",
-   "The Canadian Press (via Winnipeg Free Press)",
-   "https://www.winnipegfreepress.com/uncategorized/2026/11/06/pinkins-has-19-points-as-ole-miss-defeats-central-arkansas-92-60",
-   "2026-11-07T03:51:57+00:00",
-   1
-  ],
-  [
    "Fri 10:31 p.m.",
    "U.S.",
    "Texas mayor instructs police to limit cooperation with ICE",
@@ -158,7 +158,7 @@
    "The Guardian",
    "https://www.theguardian.com/us-news/live/2026/nov/06/us-midterm-elections-2026-democrats-blue-wave-congress-latest-news-updates",
    "2026-11-07T03:02:26+00:00",
-   4
+   3
   ],
   [
    "Fri 9:49 p.m.",
@@ -221,7 +221,7 @@
    "CTV News",
    "https://www.ctvnews.ca/world/article/meghan-markles-estranged-father-arrested-and-charged-with-possessing-child-sexual-abuse-materials/",
    "2026-11-07T01:57:45+00:00",
-   4
+   2
   ],
   [
    "Fri 8:57 p.m.",
@@ -301,7 +301,7 @@
    "score": 20,
    "title": "Trump names Stephen Miller as new chief of staff, replacing Susie Wiles after midterm defeat",
    "url": "https://www.cbc.ca/news/world/trump-susie-wiles-9.7412558",
-   "outlets": 21,
+   "outlets": 20,
    "why": [
     "CBC News front #1"
    ],
@@ -1022,7 +1022,7 @@
      {
       "net": "Sky News",
       "url": "https://www.youtube.com/watch?v=ha7VHfCDrEs",
-      "title": "Trump speaks after announcing new White House chief of staff",
+      "title": "Trump announces new White House chief of staff after midterm defeats",
       "img": "https://i.ytimg.com/vi/ha7VHfCDrEs/hqdefault.jpg",
       "rec": true,
       "up": ""
@@ -1424,7 +1424,7 @@
      {
       "net": "CTV News",
       "url": "https://www.youtube.com/watch?v=36DmKOfkQcM",
-      "title": "FULL: Pierre Poilievre says Carney's budget will ‘make life more expensive’ for Canadians",
+      "title": "FULL: Pierre Poilievre responds to Carney's federal budget: ‘Economy collapsing in real time’",
       "img": "https://i.ytimg.com/vi/36DmKOfkQcM/hqdefault.jpg",
       "rec": true,
       "up": ""
@@ -1438,10 +1438,10 @@
       "up": ""
      },
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=7M_UKYz6Cps",
-      "title": "Global National: Nov. 6, 2026 | Carney touts budget plan to end homelessness",
-      "img": "https://i.ytimg.com/vi/7M_UKYz6Cps/hqdefault.jpg",
+      "net": "CPAC",
+      "url": "https://www.youtube.com/watch?v=fozdo1bmW7U",
+      "title": "What the Federal Budget Means for Canada’s Military",
+      "img": "https://i.ytimg.com/vi/fozdo1bmW7U/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1471,7 +1471,7 @@
      "The Guardian",
      "NPR"
     ],
-    "rule": "Big international story, on every front page",
+    "rule": "From abroad, tied to Canada",
     "carriers": 17,
     "judgment": "national",
     "why_judged": "National: leading 7 front pages (CBC News, NBC News, CBS News, ABC News, BBC News, The Guardian)."
@@ -1576,6 +1576,11 @@
     "why": "not built: only 1 independent report(s) (6 sites)"
    },
    {
+    "title": "Holy Cross defence dominates, Crusaders go back-to-back for Saskatoon 6A championship",
+    "score": 5,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
     "title": "US Justice Department drops bid to force California to set aside disputed ballots",
     "score": 5,
     "why": "not built: only 1 independent report(s) (3 sites)"
@@ -1586,19 +1591,14 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Diwali celebrations coincide with worsening air. Here’s how to stay safer",
-    "score": 5,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "McGill convicted murderer did not have fair process, his lawyer says",
-    "score": 5,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
     "title": "Meghan Markle’s estranged father arrested and charged with possessing child sexual abuse materials",
     "score": 5,
     "why": "not built: only 2 independent report(s) (3 sites)"
+   },
+   {
+    "title": "Stuck in neutral: Canadian opinion on immigration steady since March, with a majority still wanting fewer arrivals",
+    "score": 4,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
   ],
   "moved": [],
@@ -1691,7 +1691,7 @@
      {
       "net": "Global News",
       "url": "https://www.youtube.com/watch?v=7M_UKYz6Cps",
-      "title": "Global National: Nov. 6, 2026 | Carney touts budget plan to end homelessness",
+      "title": "Global National: Nov. 6, 2026 | How will Carney end homelessness with $30B?",
       "img": "https://i.ytimg.com/vi/7M_UKYz6Cps/hqdefault.jpg",
       "rec": false,
       "up": ""
@@ -1786,20 +1786,6 @@
    "geo": "unknown"
   },
   {
-   "id": "3CRoDTn_jpY",
-   "r": "ca",
-   "o": "CP24",
-   "t": "Toronto man convicted of 2018 van attack no longer seeking appeal",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=3CRoDTn_jpY",
-   "img": "https://i.ytimg.com/vi/3CRoDTn_jpY/hqdefault.jpg",
-   "up": "2026-11-06",
-   "added": "2026-11-07T01:26:18.667238+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "z2InvA9hByI",
    "r": "ca",
    "o": "CityNews",
@@ -1873,7 +1859,7 @@
    "id": "VnDPTI-vUNc",
    "r": "ca",
    "o": "Global News",
-   "t": "Tesla Cybertruck to end production next year",
+   "t": "Tesla is going to stop making Cybertrucks, Musk says",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=VnDPTI-vUNc",
@@ -1884,30 +1870,44 @@
    "geo": "unknown"
   },
   {
-   "id": "Tp49FAVyjvU",
+   "id": "yJCdJQaXSvo",
    "r": "ca",
    "o": "CTV News",
-   "t": "8 accept support referrals during Sudbury downtown enforcement",
+   "t": "London Knights face Saginaw Spirit in tight home game",
    "rec": false,
    "d": "",
-   "u": "https://www.youtube.com/watch?v=Tp49FAVyjvU",
-   "img": "https://i.ytimg.com/vi/Tp49FAVyjvU/hqdefault.jpg",
+   "u": "https://www.youtube.com/watch?v=yJCdJQaXSvo",
+   "img": "https://i.ytimg.com/vi/yJCdJQaXSvo/hqdefault.jpg",
    "up": "2026-11-06",
-   "added": "2026-11-07T04:14:32.595524+00:00",
+   "added": "2026-11-07T04:34:32.748616+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
   {
-   "id": "TpsmvAlK1l4",
+   "id": "Ex5FpFTDszg",
    "r": "ca",
    "o": "CTV News",
-   "t": "Federal budget aims to end homelessness in Canada within a decade | CTV National News for Nov.6 2026",
+   "t": "Sault family gets home for holidays through affordable ownership program",
    "rec": false,
    "d": "",
-   "u": "https://www.youtube.com/watch?v=TpsmvAlK1l4",
-   "img": "https://i.ytimg.com/vi/TpsmvAlK1l4/hqdefault.jpg",
+   "u": "https://www.youtube.com/watch?v=Ex5FpFTDszg",
+   "img": "https://i.ytimg.com/vi/Ex5FpFTDszg/hqdefault.jpg",
    "up": "2026-11-06",
-   "added": "2026-11-07T04:24:32.643829+00:00",
+   "added": "2026-11-07T04:34:32.748616+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "KBJZjabHp98",
+   "r": "ca",
+   "o": "CP24",
+   "t": "Two hospitalized after a stabbing in Oshawa leaving one seriously injured",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=KBJZjabHp98",
+   "img": "https://i.ytimg.com/vi/KBJZjabHp98/hqdefault.jpg",
+   "up": "2026-11-06",
+   "added": "2026-11-07T04:34:32.748616+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2066,20 +2066,6 @@
    "geo": "unknown"
   },
   {
-   "id": "Eers8GEdg6g",
-   "r": "us",
-   "o": "Fox News",
-   "t": "Kevin McCarthy: This steadies the ship",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=Eers8GEdg6g",
-   "img": "https://i.ytimg.com/vi/Eers8GEdg6g/hqdefault.jpg",
-   "up": "2026-11-06",
-   "added": "2026-11-07T02:54:08.149232+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "n7bhuYLJNrw",
    "r": "us",
    "o": "NBC News",
@@ -2097,7 +2083,7 @@
    "id": "vBUPhXyBJjc",
    "r": "us",
    "o": "ABC News",
-   "t": "ABC World News Tonight with David Muir Full Broadcast - Nov. 6, 2026",
+   "t": "Officials: Armed man arrested near White House: ABC World News Tonight with David Muir - Nov 6, 2026",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=vBUPhXyBJjc",
@@ -2178,16 +2164,30 @@
    "geo": "unknown"
   },
   {
-   "id": "aJyGz-02HzA",
+   "id": "7Hau_Q-vXUA",
    "r": "us",
-   "o": "Associated Press",
-   "t": "Vintage and classic cars take to the streets for annual rally",
+   "o": "Fox News",
+   "t": "Gutfeld: I have been DYING to hear this",
    "rec": false,
    "d": "",
-   "u": "https://www.youtube.com/watch?v=aJyGz-02HzA",
-   "img": "https://i.ytimg.com/vi/aJyGz-02HzA/hqdefault.jpg",
+   "u": "https://www.youtube.com/watch?v=7Hau_Q-vXUA",
+   "img": "https://i.ytimg.com/vi/7Hau_Q-vXUA/hqdefault.jpg",
    "up": "2026-11-06",
-   "added": "2026-11-07T04:14:32.595524+00:00",
+   "added": "2026-11-07T04:34:32.748616+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "U1eZWqCnSJk",
+   "r": "us",
+   "o": "Associated Press",
+   "t": "Paraguay Vice President Pedro Alliana is sworn in as president",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=U1eZWqCnSJk",
+   "img": "https://i.ytimg.com/vi/U1eZWqCnSJk/hqdefault.jpg",
+   "up": "2026-11-06",
+   "added": "2026-11-07T04:34:32.748616+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2223,7 +2223,7 @@
    "id": "yWSfhFMASDE",
    "r": "world",
    "o": "Al Jazeera",
-   "t": "The war nobody could spin: how Iran sank the Republicans | The Listening Post",
+   "t": "The Teflon’s gone: Republicans struggle to spin historic defeat in US midterms | The Listening Post",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=yWSfhFMASDE",
@@ -2335,11 +2335,11 @@
  "ledes": [
   {
    "o": "CBS News",
-   "h": "How 2 lifelong singles in the same town found each other",
-   "u": "https://www.cbsnews.com/news/michigan-lifelong-singles-marry-cardiac-rehab-bay-city/",
-   "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/07/1ef5068d-9535-4b52-9ea7-0aa064d9cb44/thumbnail/1200x630/38d5cf6568687859713b72b2169e0728/1794015541910.png",
-   "w": "Fri 8:57 p.m.",
-   "iso": "2026-11-07T01:57:18+00:00"
+   "h": "Trump shakes up team as Democratic majority comes into focus",
+   "u": "https://www.cbsnews.com/live-updates/midterm-election-results-2026-democrats-house-senate-trump/",
+   "img": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/06/d5a5e9ed-2e15-4cd1-a793-a7c1ae45e9cd/thumbnail/1200x630g2/380eb204a43d0bd745008f8d6df8d272/gettyimages-2301359347.jpg",
+   "w": "Fri 11:31 p.m.",
+   "iso": "2026-11-07T04:31:47+00:00"
   },
   {
    "o": "ABC News",
@@ -2584,13 +2584,6 @@
  ],
  "eds": [
   [
-   "Toronto Star",
-   "Opinion",
-   "Author Mandi Gray on the stand, this time as a defendant, at Steven Galloway defamation trial",
-   "https://www.thestar.com/opinion/star-columnists/author-mandi-gray-on-the-stand-this-time-as-a-defendant-at-steven-galloway-defamation-trial/article_3fa9e463-d10b-4bf1-b84f-c79ae0c210ce.html",
-   "2026-11-07T01:10:00+00:00"
-  ],
-  [
    "Toronto Sun",
    "Editorial",
    "Court creates shambles for juniors tourney",
@@ -2652,6 +2645,13 @@
    "Socialism means two wildly different things to Republicans and Democrats",
    "https://www.foxnews.com/opinion/lee-carter-socialism-means-two-wildly-different-things-republicans-democrats",
    "2026-11-06T12:50:47+00:00"
+  ],
+  [
+   "The Wall Street Journal (subscribers)",
+   "Opinion",
+   "The Job Market Message for Democrats",
+   "https://www.wsj.com/opinion/the-job-market-message-for-democrats-e29da106?mod=rss_opinion",
+   "2026-11-06T23:00:00+00:00"
   ]
  ],
  "canus": {
@@ -3057,12 +3057,12 @@
    "city": "Winnipeg",
    "tz": "America/Winnipeg",
    "world": false,
-   "w": "Police",
-   "u": "https://www.ctvnews.ca/winnipeg/article/another-winnipeg-7-eleven-set-to-close-its-doors/",
-   "title": "Another Winnipeg 7-Eleven set to close its doors",
-   "outlet": "CTV News",
-   "t": "Fri 6:59 p.m.",
-   "hot": false
+   "w": "Privacy",
+   "u": "https://www.ckom.com/2026/11/06/holy-cross-defence-dominates-crusaders-back-to-back-saskatoon-6a-championship/",
+   "title": "Holy Cross defence dominates, Crusaders go back-to-back for Saskatoon 6A championship",
+   "outlet": "CKOM / PAnow",
+   "t": "Fri 11:29 p.m.",
+   "hot": true
   },
   {
    "city": "Edmonton",
@@ -3442,17 +3442,6 @@
   {
    "desk": "politics",
    "pic": "parliament",
-   "t": "Fri 7:14 p.m.",
-   "iso": "2026-11-07T00:14:19+00:00",
-   "title": "Carney says co-ordination, dedication, funding all needed to end homelessness",
-   "summary": "Prime Minister Mark Carney says the federal government has learned from past mistakes as it sets out its ambitious aim of eliminating homelessness within 10 years.",
-   "outlet": "Global News, Canada's National Observer",
-   "url": "https://globalnews.ca/news/12140815/carney-says-co-ordination-dedication-funding-all-needed-to-end-homelessness/",
-   "img": "https://globalnews.ca/wp-content/uploads/2026/11/Still1106_00000.bmp?w=720&h=379&crop=1"
-  },
-  {
-   "desk": "politics",
-   "pic": "parliament",
    "t": "Fri 5:56 p.m.",
    "iso": "2026-11-06T22:56:46+00:00",
    "title": "PM Carney welcomes ‘any moves’ to restore free trade, Hoekstra predicts deal could come soon",
@@ -3493,6 +3482,17 @@
    "outlet": "CTV News",
    "url": "https://www.ctvnews.ca/business/article/canada-lost-4700-jobs-in-october-as-unemployment-rate-climbs-to-67/",
    "img": "https://www.ctvnews.ca/resizer/v2/S4HYKNP7AJDSBHAZNNW7BG7EOQ.jpg?smart=true&auth=499d02bf3bc8ce1a65fa084762e793edd7a75f11c07652bb9e5c0124d2268406&width=1200&height=630"
+  },
+  {
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Fri 7:14 p.m.",
+   "iso": "2026-11-07T00:14:19+00:00",
+   "title": "Carney says co-ordination, dedication, funding all needed to end homelessness",
+   "summary": "Prime Minister Mark Carney says the federal government has learned from past mistakes as it sets out its ambitious aim of eliminating homelessness within 10 years.",
+   "outlet": "Global News",
+   "url": "https://globalnews.ca/news/12140815/carney-says-co-ordination-dedication-funding-all-needed-to-end-homelessness/",
+   "img": "https://globalnews.ca/wp-content/uploads/2026/11/Still1106_00000.bmp?w=720&h=379&crop=1"
   },
   {
    "desk": "business",
@@ -3552,17 +3552,6 @@
   {
    "desk": "business",
    "pic": "chart",
-   "t": "Fri 5:34 p.m.",
-   "iso": "2026-11-06T22:34:01+00:00",
-   "title": "Highway cash thrills NWT leaders but they say budget gaps remain",
-   "summary": "This federal budget has the Northwest Territories' attention. We surveyed a range of leaders on the big-ticket items and some of the gaps they're worried about.",
-   "outlet": "Cabin Radio",
-   "url": "https://cabinradio.ca/319100/news/politics/federal-politics/highway-cash-thrills-nwt-leaders-but-they-say-budget-gaps-remain/",
-   "img": "https://cabinradio.ca/wp-content/uploads/2025/06/ADE-2025-4.jpeg"
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
    "t": "Fri 5:00 p.m.",
    "iso": "2026-11-06T22:00:03+00:00",
    "title": "News of the week: Feds have already reached most planned public service job cuts in a year; City of Ottawa settles $10M in personal-injury claims in first half of 2026; Parks Canada cuts will create 'open season' for poachers",
@@ -3570,6 +3559,17 @@
    "outlet": "Ottawa Citizen",
    "url": "https://ottawacitizen.com/news/local-news/news-of-the-week-feds-have-already-reached-most-planned-public-service-job-cuts-in-a-year-city-of-ottawa-settles-10m-in-personal-injury-claims-in-first-half-of-2026-parks-canada-cuts-will-create",
    "img": ""
+  },
+  {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Fri 4:57 p.m.",
+   "iso": "2026-11-06T21:57:58+00:00",
+   "title": "Relaxing foreign buyer ban would benefit B.C. housing market, expert says",
+   "summary": "The foreign homebuyers ban was launched on Jan. 1, 2023, when the Bank of Canada was aggressively raising interest rates and as other global economic factors weighed on homebuyers.",
+   "outlet": "Global News",
+   "url": "https://globalnews.ca/news/12140282/relaxing-foreign-buyer-ban-benefit-bc-housing-market-expert/",
+   "img": "https://globalnews.ca/wp-content/uploads/2023/01/20230116130152-03f264c402704c5ea8e1d97f6b1f7e58ad214fcbfa08323d5cef0695f4e211eb.jpg?quality=65&strip=all&w=720&h=379&crop=1"
   }
  ],
  "fronts": [
@@ -3778,7 +3778,7 @@
    "ca": false,
    "h": [
     "Secret Service finds man parked near White House with multiple firearms: Authorities",
-    "ABC News Live Prime With Linsey Davis",
+    "World News Tonight with David Muir",
     "Latino vote helped thwart Texas Republicans' redistricting effort",
     "Foster parent accused of murdering 10-year-old girl in her care: Officials",
     "Cornell faculty senate votes no-confidence in school's leadership",
@@ -3863,7 +3863,7 @@
     "url": "https://www.youtube.com/watch?v=GzNHGPqpyss",
     "img": "https://i.ytimg.com/vi/GzNHGPqpyss/hqdefault.jpg",
     "story": "Trump speaks in Florida, Denver officer killed, Stock Market drops, Ne",
-    "watching": "359",
+    "watching": "380",
     "reports": [
      {
       "outlet": "The Hill",
@@ -3891,10 +3891,6 @@
    {
     "net": "CBC News",
     "url": "https://www.youtube.com/watch?v=5vfaDsMhCF4"
-   },
-   {
-    "net": "CBS News",
-    "url": "https://www.youtube.com/watch?v=qnTjYpH1FOY"
    },
    {
     "net": "NBC News",
@@ -3927,6 +3923,10 @@
    {
     "net": "LiveNOW from FOX",
     "url": "https://www.youtube.com/watch?v=C96oohpWBGw"
+   },
+   {
+    "net": "FRANCE 24 English",
+    "url": "https://www.youtube.com/watch?v=HvZt-nh9sGg"
    }
   ]
  },
