@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-08T03:15:35.565052+00:00",
- "checkedLabel": "Sat 10:15 p.m.",
+ "checked": "2026-11-08T03:20:13.548109+00:00",
+ "checkedLabel": "Sat 10:20 p.m.",
  "stories": [
   {
    "key": "top",
@@ -30,6 +30,15 @@
   }
  ],
  "wire": [
+  [
+   "Sat 10:14 p.m.",
+   "Latest",
+   "1 dead, at least a dozen hurt after car strikes cyclists in North Carolina",
+   "CBS News",
+   "https://www.cbsnews.com/news/driver-crashes-into-cyclists-north-carolina/",
+   "2026-11-08T03:14:48+00:00",
+   1
+  ],
   [
    "Sat 10:08 p.m.",
    "Latest",
@@ -245,15 +254,6 @@
    "https://www.aljazeera.com/video/newsfeed/2026/11/8/polish-pm-calls-deadly-krakow-shooting-an-act-of?traffic_source=rss",
    "2026-11-08T00:50:28+00:00",
    2
-  ],
-  [
-   "Sat 7:43 p.m.",
-   "World",
-   "Paraguay's impeached ex-president charged with crimes linked to collapse of major bank",
-   "CBC News",
-   "https://www.cbc.ca/news/world/paraguay-prosecutors-charge-impeached-president-pena-detention-9.7413705",
-   "2026-11-08T00:43:00.938000+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -309,14 +309,6 @@
    "theme": ""
   },
   {
-   "score": 13,
-   "title": "What we know so far after Krakow gun attack",
-   "url": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
-   "outlets": 11,
-   "why": [],
-   "theme": ""
-  },
-  {
    "score": 12,
    "title": "Elks to face Alouettes in Grey Cup after beating Lions in West final",
    "url": "https://www.cbc.ca/sports/football/cfl/cfl-playoffs-bc-lions-edmonton-elks-west-final-9.7413798",
@@ -330,6 +322,14 @@
    "score": 12,
    "title": "Festival of Lights, Festival of Growth: A look at Diwali’s business impact in Canada",
    "url": "https://winnipeg.citynews.ca/2026/11/07/diwalis-business-impact-in-canada/",
+   "outlets": 10,
+   "why": [],
+   "theme": ""
+  },
+  {
+   "score": 12,
+   "title": "What we know so far after Krakow gun attack",
+   "url": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
    "outlets": 10,
    "why": [],
    "theme": ""
@@ -353,10 +353,10 @@
    "theme": ""
   },
   {
-   "score": 10,
+   "score": 9,
    "title": "It’s Morning in America. By all Means, Blame Canada.",
    "url": "https://www.policymagazine.ca/its-morning-in-america-by-all-means-blame-canada/",
-   "outlets": 6,
+   "outlets": 5,
    "why": [
     "National Newswatch #15"
    ],
@@ -810,7 +810,7 @@
     "canada": "tie",
     "canus": true,
     "incoherent": false,
-    "popular": 0,
+    "popular": 3,
     "us_election": false,
     "fronts": 7,
     "fronts_ca": 3,
@@ -825,7 +825,7 @@
     ],
     "judgment": "national",
     "judgment_why": "National: leading 7 front pages (CBC News, CTV News, CP24, NBC News, CBS News, ABC News).",
-    "weight": 34.5,
+    "weight": 37.5,
     "videos": [
      {
       "net": "CTV News",
@@ -852,10 +852,10 @@
     "url": "https://www.cbsnews.com/news/trump-offers-white-house-press-secretary-role-dana-white/",
     "rank": 1,
     "live": "",
-    "weight": 34.5,
+    "weight": 37.5,
     "score": 15,
     "independent": 5,
-    "most_read": 0,
+    "most_read": 3,
     "canada": "tie",
     "theme": "",
     "top": true,
@@ -879,8 +879,8 @@
     "url": "https://www.cp24.com/news/world/2026/11/07/polish-gunman-who-killed-6-people-in-krakow-has-ultranationalistic-views-minister-says/",
     "rank": 2,
     "live": "",
-    "weight": 34.0,
-    "score": 13,
+    "weight": 33.0,
+    "score": 12,
     "independent": 6,
     "most_read": 0,
     "canada": "none",
@@ -927,10 +927,10 @@
     "url": "https://www.cbc.ca/news/world/gadi-eisenkot-form-government-israel-9.7413714",
     "rank": 4,
     "live": "",
-    "weight": 22.5,
+    "weight": 25.5,
     "score": 10,
     "independent": 3,
-    "most_read": 0,
+    "most_read": 3,
     "canada": "none",
     "theme": "",
     "top": false,
@@ -1003,7 +1003,7 @@
    },
    {
     "title": "It’s Morning in America. By all Means, Blame Canada.",
-    "score": 10,
+    "score": 9,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
@@ -1070,7 +1070,7 @@
      "alt": "Toronto police are investigating a shooting in the area of The East Mall and Rathburn Road on Saturday, Nov. 7, 2026.",
      "outlet": "CTV News",
      "url": "https://www.ctvnews.ca/toronto/article/1-person-killed-in-etobicoke-shooting-at-least-2-suspects-sought/",
-     "since": "2026-11-08T03:17:19.139062+00:00"
+     "since": "2026-11-08T03:23:12.243293+00:00"
     },
     "photo_seen": [
      "https://www.ctvnews.ca/resizer/v2/FP6ZDXHPTRGHFCVWDW2CLKFPBI.png?smart=true&auth=3d829d9cd3e866cadefd5f6240c030881da186a36f578043dbb7dc2fa61bd1c2&width=1200&height=630"
@@ -1109,7 +1109,7 @@
       "outlet": "Toronto Star",
       "title": "Young man dead in afternoon shooting in Etobicoke, 2 suspects sought",
       "url": "https://www.thestar.com/news/gta/male-victim-critically-injured-in-afternoon-shooting-in-etobicoke/article_9abfa3b6-fb1a-4aa6-9a4a-ff205572c0fa.html",
-      "desc": ""
+      "desc": "The victim was most likely in his teens or 20s, Toronto police Insp. Jeff Allington told reporters near the scene Saturday night."
      },
      {
       "t": "Sat 6:44 p.m.",
@@ -1162,13 +1162,13 @@
       "outlet": "Toronto Star",
       "title": "Young man dead in afternoon shooting in Etobicoke, 2 suspects sought",
       "url": "https://www.thestar.com/news/gta/male-victim-critically-injured-in-afternoon-shooting-in-etobicoke/article_9abfa3b6-fb1a-4aa6-9a4a-ff205572c0fa.html",
-      "desc": "",
+      "desc": "The victim was most likely in his teens or 20s, Toronto police Insp. Jeff Allington told reporters near the scene Saturday night.",
       "wire": "",
       "by": [
        {
         "outlet": "Toronto Star",
         "src": "Torstar",
-        "byline": ""
+        "byline": "own staff: Reporter"
        }
       ],
       "copies": []
@@ -1239,10 +1239,10 @@
     "key": "auto-333e6377",
     "words": [
      "budget's",
-     "billion",
      "foreign",
-     "sector",
+     "billion",
      "budget",
+     "sector",
      "calls"
     ],
     "score": 16,
@@ -1270,7 +1270,7 @@
      "alt": "Budget offers little new relief for middle-income Canadians",
      "outlet": "CKOM / PAnow",
      "url": "https://www.ckom.com/2026/11/07/budget-offers-little-new-relief-for-middle-income-canadians/",
-     "since": "2026-11-08T03:17:10.318224+00:00"
+     "since": "2026-11-08T03:23:03.031546+00:00"
     },
     "photo_seen": [
      "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/648/files/2026/11/grocery-cp-110726.jpg"
@@ -1500,6 +1500,22 @@
     "weight": 42.5,
     "videos": [
      {
+      "net": "Global News",
+      "url": "https://www.youtube.com/watch?v=tS1zS-0oS2k",
+      "title": "Diving into the details of Budget 2026 and how Ottawa plans to ease the affordability crisis",
+      "img": "https://i.ytimg.com/vi/tS1zS-0oS2k/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "Global News",
+      "url": "https://www.youtube.com/watch?v=QT-A_LxHwJ4",
+      "title": "What does Canada’s business community think of the 2026 federal budget?",
+      "img": "https://i.ytimg.com/vi/QT-A_LxHwJ4/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
       "net": "CBC News",
       "url": "https://www.youtube.com/watch?v=OgaqPzZnLKU",
       "title": "Federal budget proposes funding to help build, refurbish ice rinks | Hanomansing Live",
@@ -1512,22 +1528,6 @@
       "url": "https://www.youtube.com/watch?v=phzrZhO2EkA",
       "title": "Political Pulse: Carney tables a budget, Trump’s policies cost him the midterms | Power & Politics",
       "img": "https://i.ytimg.com/vi/phzrZhO2EkA/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CBC News",
-      "url": "https://www.youtube.com/watch?v=gR9tk8dMcn8",
-      "title": "Breaking down the federal budget | The Current",
-      "img": "https://i.ytimg.com/vi/gR9tk8dMcn8/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CBC News",
-      "url": "https://www.youtube.com/watch?v=dRF4ND6Hmeg",
-      "title": "Carney's big federal budget bets | Front Burner",
-      "img": "https://i.ytimg.com/vi/dRF4ND6Hmeg/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1596,7 +1596,7 @@
    "id": "gdLqazgRJU0",
    "r": "ca",
    "o": "APTN News",
-   "t": "On the Outside: The challenges of life after incarceration | APTN Investigates",
+   "t": "On the Outside: What happens after incarceration? | APTN Investigates",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=gdLqazgRJU0",
@@ -1985,34 +1985,6 @@
    "geo": "unknown"
   },
   {
-   "id": "vZrjFkxazoM",
-   "r": "us",
-   "o": "CBS News",
-   "t": "Thousands continue to protest in France amid outrage over high cost of living",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=vZrjFkxazoM",
-   "img": "https://i.ytimg.com/vi/vZrjFkxazoM/hqdefault.jpg",
-   "up": "2026-11-07",
-   "added": "2026-11-08T02:35:36.407104+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "9SVvWyE1QQ4",
-   "r": "us",
-   "o": "CBS News",
-   "t": "Latino voters help carry Talarico, Hinojosa to victory in Texas amid outrage over ICE tactics",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=9SVvWyE1QQ4",
-   "img": "https://i.ytimg.com/vi/9SVvWyE1QQ4/hqdefault.jpg",
-   "up": "2026-11-07",
-   "added": "2026-11-08T02:35:36.407104+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "AiZ8F3gWCXM",
    "r": "us",
    "o": "Associated Press",
@@ -2086,7 +2058,7 @@
    "id": "Ph3pZDF0je0",
    "r": "world",
    "o": "Sky News",
-   "t": "Data centre the size of 247 pitches to be built in Lincolnshire",
+   "t": "Elsham villagers split over giant data centre go ahead",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=Ph3pZDF0je0",
@@ -2419,13 +2391,6 @@
  ],
  "eds": [
   [
-   "Toronto Star",
-   "Opinion",
-   "Patrick Corrigan's cartoon shows the spoils of a winning election campaign",
-   "https://www.thestar.com/opinion/editorial-cartoons/patrick-corrigan-s-cartoon-shows-the-spoils-of-a-winning-election-campaign/article_20239c1f-ed02-4b00-8aaf-b83449ecce30.html",
-   "2026-11-07T11:00:00+00:00"
-  ],
-  [
    "Toronto Sun",
    "Editorial",
    "Are Liberals repeating immigration blunders?",
@@ -2487,6 +2452,13 @@
    "Pepper…and Salt",
    "https://www.wsj.com/opinion/pepperand-salt-625a4119?mod=rss_opinion",
    "2026-11-07T05:00:00+00:00"
+  ],
+  [
+   "Washington Examiner",
+   "Opinion",
+   "Trump blames everyone but himself. So what else is new?",
+   "https://www.washingtonexaminer.com/op-eds/4793019/trump-blames-everyone-else-midterm-election-defeat/",
+   "2026-11-07T18:00:00+00:00"
   ]
  ],
  "canus": {
@@ -2649,7 +2621,6 @@
    "Toronto Star",
    "Winnipeg Free Press",
    "Global News",
-   "Nunatsiaq News",
    "Daily Hive"
   ],
   "list": [
@@ -2687,17 +2658,6 @@
     ]
    },
    {
-    "h": "‘There’s probably 10,000 reasons’: MLA Brian Koonoo resigns from cabinet",
-    "u": "https://nunatsiaq.com/stories/article/theres-probably-10000-reasons-mla-brian-koonoo-resigns-from-cabinet/",
-    "o": [
-     [
-      "Nunatsiaq News",
-      1,
-      "https://nunatsiaq.com/stories/article/theres-probably-10000-reasons-mla-brian-koonoo-resigns-from-cabinet/"
-     ]
-    ]
-   },
-   {
     "h": "Offside Ex-Vancouver Canucks goaltender is on fire with the Boston Bruins",
     "u": "https://dailyhive.com/vancouver/former-canucks-goaltender-boston-bruins",
     "o": [
@@ -2731,17 +2691,6 @@
     ]
    },
    {
-    "h": "NuBrew stops canning, blames regulatory changes",
-    "u": "https://nunatsiaq.com/stories/article/nubrew-stops-canning-blames-regulatory-changes/",
-    "o": [
-     [
-      "Nunatsiaq News",
-      2,
-      "https://nunatsiaq.com/stories/article/nubrew-stops-canning-blames-regulatory-changes/"
-     ]
-    ]
-   },
-   {
     "h": "Urbanized New ranking reveals B.C.'s most in-demand city for renters and it isn't Vancouver",
     "u": "https://dailyhive.com/vancouver/bc-in-demand-city-renters-not-vancouver",
     "o": [
@@ -2762,20 +2711,32 @@
       "https://www.thestar.com/business/personal-finance/what-the-proposed-new-rrsp-for-life-would-mean-for-canadians-and-their-taxes/article_582cce03-0f39-4e56-ae4e-a0c108203d5a.html"
      ]
     ]
+   },
+   {
+    "h": "Stephen Miller replaces Susie Wiles as Trump’s White House chief of staff after GOP’s midterm defeat",
+    "u": "https://www.winnipegfreepress.com/world/2026/11/06/susie-wiles-trumps-longest-serving-white-house-chief-of-staff-is-leaving-the-administration",
+    "o": [
+     [
+      "Winnipeg Free Press",
+      3,
+      "https://www.winnipegfreepress.com/world/2026/11/06/susie-wiles-trumps-longest-serving-white-house-chief-of-staff-is-leaving-the-administration"
+     ]
+    ]
+   },
+   {
+    "h": "Israel’s president taps opposition candidate Eisenkot to form government",
+    "u": "https://globalnews.ca/news/12141324/israels-president-taps-eisenkot/",
+    "o": [
+     [
+      "Global News",
+      3,
+      "https://globalnews.ca/news/12141324/israels-president-taps-eisenkot/"
+     ]
+    ]
    }
   ]
  },
  "smaller": [
-  {
-   "o": "Nunatsiaq News",
-   "region": "Nunavut",
-   "arctic": true,
-   "h": "Dialogue about Inuit-specific housing funding underway, says Indigenous Services Minister",
-   "u": "https://nunatsiaq.com/stories/article/dialogue-about-inuit-specific-housing-funding-underway-says-indigenous-services-minister/",
-   "t": "Sat 10:13 p.m.",
-   "desc": "Newspaper of record for Nunavut, and the Nunavik territory of Quebec",
-   "img": "https://cdn.nunatsiaq.com/wp-content/uploads/2026/11/IMG_4263-1200x630.jpeg"
-  },
   {
    "o": "Yukon News",
    "region": "Yukon",
@@ -2795,6 +2756,16 @@
    "t": "Sat 8:59 a.m.",
    "desc": "Theresie Tungilik celebrates Inuit resilience, identity and the wisdom of generations",
    "img": "https://yellowknifer.com/wp-content/uploads/sites/55/2026/11/Inuit20Day.jpg?w=618"
+  },
+  {
+   "o": "Cabin Radio",
+   "region": "N.W.T.",
+   "arctic": true,
+   "h": "What GNWT will do after investigation into ‘preventable’ Dehcho deaths",
+   "u": "https://cabinradio.ca/319136/news/health/what-gnwt-will-do-after-investigation-into-preventable-dehcho-deaths/",
+   "t": "Sat 7:06 a.m.",
+   "desc": "The GNWT accepted 18 recommendations from an investigation into three residents' deaths in 2025, but said it isn't in a position to make all of the changes yet.",
+   "img": "https://cabinradio.ca/wp-content/uploads/2024/07/IMG_4097.jpeg"
   },
   {
    "o": "SooToday",
@@ -2844,11 +2815,11 @@
    "city": "Ottawa",
    "tz": "America/Toronto",
    "world": false,
-   "w": "Housing",
-   "u": "https://nunatsiaq.com/stories/article/dialogue-about-inuit-specific-housing-funding-underway-says-indigenous-services-minister/",
-   "title": "Dialogue about Inuit-specific housing funding underway, says Indigenous Services Minister",
-   "outlet": "Nunatsiaq News",
-   "t": "Sat 10:13 p.m.",
+   "w": "Education",
+   "u": "https://www.ctvnews.ca/ottawa/article/prospective-students-explore-algonquin-college-at-fall-open-house/",
+   "title": "Prospective students explore Algonquin College at fall open house",
+   "outlet": "CTV News",
+   "t": "Sat 8:00 p.m.",
    "hot": false
   },
   {
@@ -3033,17 +3004,6 @@
   {
    "desk": "politics",
    "pic": "parliament",
-   "t": "Sat 10:13 p.m.",
-   "iso": "2026-11-08T03:13:40+00:00",
-   "title": "Dialogue about Inuit-specific housing funding underway, says Indigenous Services Minister",
-   "summary": "Newspaper of record for Nunavut, and the Nunavik territory of Quebec",
-   "outlet": "Nunatsiaq News",
-   "url": "https://nunatsiaq.com/stories/article/dialogue-about-inuit-specific-housing-funding-underway-says-indigenous-services-minister/",
-   "img": "https://cdn.nunatsiaq.com/wp-content/uploads/2026/11/IMG_4263-1200x630.jpeg"
-  },
-  {
-   "desk": "politics",
-   "pic": "parliament",
    "t": "Sat 6:09 p.m.",
    "iso": "2026-11-07T23:09:41+00:00",
    "title": "‘We can get it done’: Liberal MP touts Carney’s plan to end homelessness in 10 years",
@@ -3191,17 +3151,17 @@
     "Polish PM says Krakow shooter's family found dead inside home",
     "Dramatic river rescue unfolds as storm batters B.C. region",
     "Were you at these locations on Nov. 3? You may have been exposed to measles",
-    "CTV News wins 42 RTDNA Canada awards, including wins for CTVNews.ca and W5",
     "Trump offers UFC boss Dana White press secretary role",
-    "This province is facing massive protests over proposed AI data centres"
+    "Nurse faces discipline for allegedly offering to have sex with patient",
+    "Drone delivers life-saving food to chimps stranded in massive floods"
    ],
    "u": [
     "https://www.ctvnews.ca/world/article/polish-gunman-who-killed-6-people-in-krakow-has-ultranationalistic-views-minister-says/",
     "https://www.ctvnews.ca/vancouver/article/woman-rescued-from-fast-moving-metro-vancouver-river-during-bc-storm/",
     "https://www.ctvnews.ca/toronto/local/durham/article/were-you-at-these-locations-on-nov-3-you-may-have-been-exposed-to-measles/",
-    "https://www.ctvnews.ca/canada/article/ctv-news-wins-42-rtdna-canada-awards-including-wins-for-ctvnewsca-and-w5/",
     "https://www.ctvnews.ca/world/article/trump-offers-press-secretary-role-to-ufc-chief-dana-white/",
-    "https://www.ctvnews.ca/atlantic/nova-scotia/article/protest-against-nova-scotias-proposed-ai-data-centre-held-in-halifax/"
+    "https://www.ctvnews.ca/vancouver/article/bc-nurse-offered-to-have-sex-with-patient-regulator-alleges-in-protection-order/",
+    "https://www.ctvnews.ca/world/article/chimp-sanctuary-delivers-an-apes-food-by-drone-amid-florida-floods/"
    ]
   },
   {
@@ -3329,19 +3289,19 @@
    "ca": false,
    "h": [
     "7 charts that illustrate the scope of Democrats’ big 2026 wave",
-    "New crop of Senate Democrats calling for ‘generational change’ head for a clash over Schumer",
     "UFC head Dana White says he’ll meet with Trump Monday on press secretary offer",
     "Americans voted for change. Trump, so far, is delivering the same.",
     "Gunman who killed 9 in Poland held ‘ultranationalistic’ views, officials say",
-    "Israel’s president taps Gadi Eisenkot to form a government, in setback for Netanyahu"
+    "Israel’s president taps Gadi Eisenkot to form a government, in setback for Netanyahu",
+    "It’s the NFL’s midway point. What happened to all the Super Bowl contenders?"
    ],
    "u": [
     "https://www.nbcnews.com/politics/2026-election/7-charts-illustrate-scope-democrats-big-2026-wave-rcna607862",
-    "https://www.nbcnews.com/politics/2026-election/senate-democrats-clash-chuck-schumer-rcna607877",
     "https://www.nbcnews.com/politics/white-house/trump-offers-press-secretary-job-ufc-ceo-dana-white-rcna608039",
     "https://www.nbcnews.com/politics/white-house/americans-voted-change-trump-stephen-miller-dc-renovations-rcna607903",
     "https://www.nbcnews.com/world/europe/poland-krakow-shooting-rcna608001",
-    "https://www.nbcnews.com/world/israel/israels-president-taps-gadi-eisenkot-rcna608033"
+    "https://www.nbcnews.com/world/israel/israels-president-taps-gadi-eisenkot-rcna608033",
+    "https://www.nbcnews.com/sports/nfl/s-nfls-midway-point-happened-super-bowl-contenders-rcna607762"
    ]
   },
   {
@@ -3454,7 +3414,7 @@
     "url": "https://www.youtube.com/watch?v=XtLl_wi6H3A",
     "img": "https://i.ytimg.com/vi/XtLl_wi6H3A/hqdefault.jpg",
     "story": "Middle East latest, Trump White House updates, Melania Trump visits LS",
-    "watching": "461",
+    "watching": "489",
     "also": [
      {
       "net": "The White House live",
@@ -3575,7 +3535,7 @@
    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-claims-houthi-missile-destroyed-over-eastern",
    "updated": "2026-11-08T02:58:28+00:00",
    "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Untitled_0.jpg"
+   "img": "https://www.middleeasteye.net/sites/default/files/hormuz-oman-houthis-iran.jpg"
   },
   {
    "net": "Middle East Eye",
@@ -3584,7 +3544,7 @@
    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/uae-rescues-22-people-after-cargo-ship-caught-fire-sea-oman",
    "updated": "2026-11-08T02:21:21+00:00",
    "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Untitled_0.jpg"
+   "img": "https://www.middleeasteye.net/sites/default/files/hormuz-oman-houthis-iran.jpg"
   },
   {
    "net": "Middle East Eye",
@@ -3593,7 +3553,7 @@
    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-authorities-say-danger-passes-dammam-al-ahsa-and-abqaiq",
    "updated": "2026-11-08T02:09:58+00:00",
    "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Untitled_0.jpg"
+   "img": "https://www.middleeasteye.net/sites/default/files/hormuz-oman-houthis-iran.jpg"
   },
   {
    "net": "Middle East Eye",
@@ -3602,7 +3562,7 @@
    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/paraguays-pro-israel-former-president-taken-custody-over-banking-crisis",
    "updated": "2026-11-08T02:03:50+00:00",
    "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Untitled_0.jpg"
+   "img": "https://www.middleeasteye.net/sites/default/files/hormuz-oman-houthis-iran.jpg"
   },
   {
    "net": "Middle East Eye",
@@ -3611,7 +3571,7 @@
    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/french-ships-may-escort-pro-palestinian-civilian-flotillas-melenchon",
    "updated": "2026-11-08T01:39:55+00:00",
    "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Untitled_0.jpg"
+   "img": "https://www.middleeasteye.net/sites/default/files/hormuz-oman-houthis-iran.jpg"
   },
   {
    "net": "Middle East Eye",
@@ -3620,7 +3580,7 @@
    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/you-lost-war-and-election-irans-rezaei-warns-us-devastating-response",
    "updated": "2026-11-08T01:07:13+00:00",
    "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Untitled_0.jpg"
+   "img": "https://www.middleeasteye.net/sites/default/files/hormuz-oman-houthis-iran.jpg"
   },
   {
    "net": "Middle East Eye",
@@ -3629,14 +3589,14 @@
    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/centcom-sets-task-force-iron-gate-disrupt-irans-weapons-transfers",
    "updated": "2026-11-08T00:44:51+00:00",
    "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Untitled_0.jpg"
+   "img": "https://www.middleeasteye.net/sites/default/files/hormuz-oman-houthis-iran.jpg"
   },
   {
    "net": "Al Jazeera",
    "story": "Iran war live: US moves to block land supply routes; UAE rescues 22 sa",
    "title": "Iran war live: US moves to block land supply routes; UAE rescues 22 sailors",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/8/iran-war-live-explosions-hit-qeshm-us-moves-to-block-land-supply-routes?traffic_source=rss",
-   "updated": "2026-11-08T03:13:08+00:00",
+   "updated": "2026-11-08T03:23:19+00:00",
    "ended": false,
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-08T003844Z_1904518215_RC2CJOAU5F99_RTRMADP_3_IRAN-CRISIS-BLOCKADE-1794107413_532558-1794107549.jpg?resize=1200%2C630&quality=80"
   }
@@ -4498,8 +4458,8 @@
    "at": "2026-10-29T02:33:18.869844+00:00"
   },
   "c9v26lW7-j4": {
-   "v": "ok",
-   "at": "2026-11-07T20:01:25.450404+00:00"
+   "v": "unplayable",
+   "at": "2026-11-08T03:20:13.548109+00:00"
   },
   "cXN5OV4NYhI": {
    "v": "unknown",
@@ -4751,14 +4711,11 @@
   }
  },
  "geo_blocked": [
-  "-NabWfv-VdA"
+  "-NabWfv-VdA",
+  "c9v26lW7-j4"
  ],
  "noembed": [
-  "J3FV4iY8p5w",
-  "L6qtnHZxwEw",
   "NuEr0Q_AS6U",
-  "c9v26lW7-j4",
-  "ldElU-Q5Qyo",
   "t_HBrWb84eY"
  ]
 }
