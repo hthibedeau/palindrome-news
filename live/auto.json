@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-08T04:24:56.009582+00:00",
- "checkedLabel": "Sat 11:24 p.m.",
+ "checked": "2026-11-08T04:34:55.502802+00:00",
+ "checkedLabel": "Sat 11:34 p.m.",
  "stories": [
   {
    "key": "top",
@@ -32,12 +32,12 @@
  "wire": [
   [
    "Sat 11:20 p.m.",
-   "World",
-   "Earthquake hits central Japan, injuring more than 20 people",
-   "Al Jazeera",
-   "https://www.aljazeera.com/news/2026/11/8/earthquake-hits-central-japan-injuring-more-than-20-people?traffic_source=rss",
-   "2026-11-08T04:20:57+00:00",
-   2
+   "Latest",
+   "Assistant coach’s recovery motivates No. 16 Tennessee in 34-6 win over No. 8 Kentucky",
+   "The Canadian Press (via Winnipeg Free Press)",
+   "https://www.winnipegfreepress.com/uncategorized/2026/11/07/assistant-coachs-recovery-motivates-no-16-tennessee-in-34-6-win-over-no-8-kentucky",
+   "2026-11-08T04:20:32+00:00",
+   1
   ],
   [
    "Sat 11:17 p.m.",
@@ -268,14 +268,6 @@
  "leads": [
   {
    "score": 16,
-   "title": "Earthquake hits central Japan, injuring more than 20 people",
-   "url": "https://www.aljazeera.com/news/2026/11/8/earthquake-hits-central-japan-injuring-more-than-20-people?traffic_source=rss",
-   "outlets": 14,
-   "why": [],
-   "theme": ""
-  },
-  {
-   "score": 16,
    "title": "Budget 2026: Affordability Tops Canadians’ Concerns as Threats from Trump and AI Rise, But Few Expect the Budget to Make Their Lives Better",
    "url": "https://abacusdata.ca/budget-2026-affordability-tops-canadians-concerns-as-threats-from-trump-and-ai-rise-but-few-expect-the-budget-to-make-their-lives-better/",
    "outlets": 0,
@@ -288,6 +280,14 @@
     "CBC News front #3"
    ],
    "theme": "Federal budget"
+  },
+  {
+   "score": 14,
+   "title": "Magnitude 5.7 quake injures dozens in central Japan",
+   "url": "https://www.japantimes.co.jp/news/2026/11/08/japan/earthquake-aichi-sunday/",
+   "outlets": 12,
+   "why": [],
+   "theme": ""
   },
   {
    "score": 12,
@@ -452,7 +452,7 @@
    "summary": "Davis Alexander led his team back to the Grey Cup.",
    "outlet": "Global News",
    "url": "https://globalnews.ca/news/12141305/collaros-active-for-blue-bombers-in-east-final/",
-   "img": "https://globalnews.ca/wp-content/uploads/2026/11/5c91252d714351e87749ad422fbef7778c4994b0de234a9d77417e58fef718b7_9fd891.jpg?quality=65&strip=all&w=720&h=379&crop=1"
+   "img": "https://globalnews.ca/wp-content/uploads/2026/11/5c91252d714351e87749ad422fbef7778c4994b0de234a9d77417e58fef718b7_06b56b.jpg?quality=65&strip=all&w=720&h=379&crop=1"
   },
   {
    "t": "Sat 2:00 p.m.",
@@ -756,7 +756,7 @@
     "canada": "tie",
     "canus": true,
     "incoherent": false,
-    "popular": 0,
+    "popular": 3,
     "us_election": false,
     "fronts": 7,
     "fronts_ca": 2,
@@ -771,8 +771,16 @@
     ],
     "judgment": "national",
     "judgment_why": "National: leading 7 front pages (CTV News, CP24, NBC News, CBS News, ABC News, BBC News).",
-    "weight": 27.5,
+    "weight": 30.5,
     "videos": [
+     {
+      "net": "CBS News",
+      "url": "https://www.youtube.com/watch?v=6ROYEhH1KxE",
+      "title": "Stephen Miller, Trump ally behind his most hardline policies, named White House chief of staff",
+      "img": "https://i.ytimg.com/vi/6ROYEhH1KxE/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
      {
       "net": "CTV News",
       "url": "https://www.youtube.com/watch?v=qGzVi5CyPcI",
@@ -790,18 +798,10 @@
       "up": ""
      },
      {
-      "net": "CNN",
-      "url": "https://www.youtube.com/watch?v=PujlXYw5gCI",
-      "title": "Trump names Stephen Miller new White House chief of staff",
-      "img": "https://i.ytimg.com/vi/PujlXYw5gCI/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "C-SPAN",
-      "url": "https://www.youtube.com/watch?v=f-XrdC5IGxk",
-      "title": "President Trump on New White House Chief of Staff Stephen Miller: \"I wanted to make a change.\"",
-      "img": "https://i.ytimg.com/vi/f-XrdC5IGxk/hqdefault.jpg",
+      "net": "Associated Press",
+      "url": "https://www.youtube.com/watch?v=x8TBAEP1w8Q",
+      "title": "Trump replaces Susie Wiles with Stephen Miller as the White House chief of staff",
+      "img": "https://i.ytimg.com/vi/x8TBAEP1w8Q/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -814,10 +814,10 @@
     "url": "https://www.aljazeera.com/news/2026/11/8/trump-asks-ufc-chief-dana-white-to-be-white-house-press-secretary?traffic_source=rss",
     "rank": 1,
     "live": "",
-    "weight": 27.5,
+    "weight": 30.5,
     "score": 9,
     "independent": 5,
-    "most_read": 0,
+    "most_read": 3,
     "canada": "tie",
     "theme": "",
     "top": true,
@@ -837,28 +837,9 @@
     "why_judged": "National: leading 7 front pages (CTV News, CP24, NBC News, CBS News, ABC News, BBC News)."
    },
    {
-    "title": "Earthquake hits central Japan, injuring more than 20 people",
-    "url": "https://www.aljazeera.com/news/2026/11/8/earthquake-hits-central-japan-injuring-more-than-20-people?traffic_source=rss",
-    "rank": 2,
-    "live": "",
-    "weight": 39,
-    "score": 16,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
-    "carriers": 14,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (7 cities)."
-   },
-   {
     "title": "Polish PM says Krakow mass shooter’s family found dead inside home",
     "url": "https://www.ctvnews.ca/world/article/polish-gunman-who-killed-6-people-in-krakow-has-ultranationalistic-views-minister-says/",
-    "rank": 3,
+    "rank": 2,
     "live": "",
     "weight": 32.5,
     "score": 10,
@@ -875,7 +856,7 @@
      "NBC News",
      "BBC News"
     ],
-    "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
+    "rule": "No Canadian tie",
     "carriers": 7,
     "judgment": "national",
     "why_judged": "National: affects many people; carried across the country (national desks)."
@@ -883,7 +864,7 @@
    {
     "title": "Budget offers little new relief for middle-income Canadians",
     "url": "https://www.ckom.com/2026/11/07/budget-offers-little-new-relief-for-middle-income-canadians/",
-    "rank": 4,
+    "rank": 3,
     "live": "",
     "weight": 42.5,
     "score": 16,
@@ -898,6 +879,11 @@
     "carriers": 9,
     "judgment": "national",
     "why_judged": "National: affects many people; carried across the country (3 cities)."
+   },
+   {
+    "title": "Magnitude 5.7 quake injures dozens in central Japan",
+    "score": 14,
+    "why": "not built: only 2 independent report(s) (12 sites)"
    },
    {
     "title": "Elks to face Alouettes in Grey Cup after beating Lions in West final",
@@ -969,8 +955,8 @@
      "budget's",
      "foreign",
      "billion",
-     "sector",
      "budget",
+     "sector",
      "calls"
     ],
     "score": 16,
@@ -998,7 +984,7 @@
      "alt": "Budget offers little new relief for middle-income Canadians",
      "outlet": "CKOM / PAnow",
      "url": "https://www.ckom.com/2026/11/07/budget-offers-little-new-relief-for-middle-income-canadians/",
-     "since": "2026-11-08T04:26:46.186535+00:00"
+     "since": "2026-11-08T04:36:59.196776+00:00"
     },
     "photo_seen": [
      "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/648/files/2026/11/grocery-cp-110726.jpg"
@@ -1111,7 +1097,7 @@
        {
         "outlet": "Global News",
         "src": "The Canadian Press",
-        "byline": "\"Dylan Robertson\" Name Kernal PJ McLean Anonymous David Best Johnny Johnny Johnny Charlie E.C. "
+        "byline": "\"Dylan Robertson\" Name On The Side Lines Johnny Kernal PJ McLean Anonymous David Best Johnny Johnny Johnny "
        },
        {
         "outlet": "CTV News",
@@ -1238,16 +1224,8 @@
      {
       "net": "Global News",
       "url": "https://www.youtube.com/watch?v=tS1zS-0oS2k",
-      "title": "How can Budget 2026 tackle the affordability crisis?",
+      "title": "Diving into the details of Budget 2026 and how Ottawa plans to ease the affordability crisis",
       "img": "https://i.ytimg.com/vi/tS1zS-0oS2k/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=_c4gx8SSHt0",
-      "title": "US tech stocks plummet after midterm results as Canada unveils aggressive AI budget",
-      "img": "https://i.ytimg.com/vi/_c4gx8SSHt0/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
@@ -1258,15 +1236,19 @@
       "img": "https://i.ytimg.com/vi/QT-A_LxHwJ4/hqdefault.jpg",
       "rec": false,
       "up": ""
+     },
+     {
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=OgaqPzZnLKU",
+      "title": "Federal budget proposes funding to help build, refurbish ice rinks | Hanomansing Live",
+      "img": "https://i.ytimg.com/vi/OgaqPzZnLKU/hqdefault.jpg",
+      "rec": false,
+      "up": ""
      }
     ]
    }
   ],
   "passed_over": [
-   {
-    "title": "Earthquake hits central Japan, injuring more than 20 people",
-    "url": "https://www.aljazeera.com/news/2026/11/8/earthquake-hits-central-japan-injuring-more-than-20-people?traffic_source=rss"
-   },
    {
     "title": "Polish PM says Krakow mass shooter’s family found dead inside home",
     "url": "https://www.ctvnews.ca/world/article/polish-gunman-who-killed-6-people-in-krakow-has-ultranationalistic-views-minister-says/"
@@ -1373,20 +1355,6 @@
    "geo": "unknown"
   },
   {
-   "id": "8YTsRlNa_ak",
-   "r": "ca",
-   "o": "CityNews",
-   "t": "Alberta Premier says more triage teams in place following delays",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=8YTsRlNa_ak",
-   "img": "https://i.ytimg.com/vi/8YTsRlNa_ak/hqdefault.jpg",
-   "up": "2026-11-07",
-   "added": "2026-11-08T01:46:22.666299+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "eck9eDDnWh8",
    "r": "ca",
    "o": "CP24",
@@ -1404,27 +1372,13 @@
    "id": "0brf9IQ3NEg",
    "r": "ca",
    "o": "Global News",
-   "t": "Global National: Nov. 7, 2026 | Trump doubles down on his agenda following US midterms outcome",
+   "t": "Global National: Nov. 7, 2026 | Why Trump's new chief of staff may be bad for Canada",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=0brf9IQ3NEg",
    "img": "https://i.ytimg.com/vi/0brf9IQ3NEg/hqdefault.jpg",
    "up": "2026-11-07",
    "added": "2026-11-08T03:30:14.148300+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "qJPCQelVP8M",
-   "r": "ca",
-   "o": "CityNews",
-   "t": "Montreal Alouettes punch Grey Cup ticket with 33-23 win over Winnipeg",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=qJPCQelVP8M",
-   "img": "https://i.ytimg.com/vi/qJPCQelVP8M/hqdefault.jpg",
-   "up": "2026-11-07",
-   "added": "2026-11-08T03:50:13.552493+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1443,20 +1397,6 @@
    "geo": "unknown"
   },
   {
-   "id": "tujBwhQu_HM",
-   "r": "ca",
-   "o": "CTV News",
-   "t": "Canada’s snowbirds still heading to the U.S.",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=tujBwhQu_HM",
-   "img": "https://i.ytimg.com/vi/tujBwhQu_HM/hqdefault.jpg",
-   "up": "2026-11-07",
-   "added": "2026-11-08T04:14:55.917800+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "B3fCyKrSApM",
    "r": "ca",
    "o": "CTV News",
@@ -1467,6 +1407,20 @@
    "img": "https://i.ytimg.com/vi/B3fCyKrSApM/hqdefault.jpg",
    "up": "2026-11-07",
    "added": "2026-11-08T04:24:56.009582+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "an5xNoOQTgU",
+   "r": "ca",
+   "o": "CTV News",
+   "t": "Police describe Polish shooter as 25-year-old man with extremist views",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=an5xNoOQTgU",
+   "img": "https://i.ytimg.com/vi/an5xNoOQTgU/hqdefault.jpg",
+   "up": "2026-11-07",
+   "added": "2026-11-08T04:34:55.502802+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1558,7 +1512,7 @@
    "id": "ygXcIpI48mQ",
    "r": "us",
    "o": "CNN",
-   "t": "From Mamdani to MAGA: Reactions across the spectrum to midterm ‘blue-nami’",
+   "t": "From Mamdani to MAGA: Reactions to the midterm ‘blue-nami’",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=ygXcIpI48mQ",
@@ -1635,20 +1589,6 @@
    "img": "https://i.ytimg.com/vi/Yu0ejQ6CGrE/hqdefault.jpg",
    "up": "2026-11-07",
    "added": "2026-11-08T01:01:32.936231+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "5II60cDNSko",
-   "r": "us",
-   "o": "Fox News",
-   "t": "Rep James Comer: We shouldn’t be surprised by this",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=5II60cDNSko",
-   "img": "https://i.ytimg.com/vi/5II60cDNSko/hqdefault.jpg",
-   "up": "2026-11-07",
-   "added": "2026-11-08T01:36:22.704631+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1751,6 +1691,20 @@
    "geo": "unknown"
   },
   {
+   "id": "xBJUPoJZfVs",
+   "r": "us",
+   "o": "Fox News",
+   "t": "Democrats will have a RECKONING: Pollster",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=xBJUPoJZfVs",
+   "img": "https://i.ytimg.com/vi/xBJUPoJZfVs/hqdefault.jpg",
+   "up": "2026-11-07",
+   "added": "2026-11-08T04:34:55.502802+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
    "id": "OJsjPDq4ePE",
    "r": "world",
    "o": "Reuters",
@@ -1810,7 +1764,7 @@
    "id": "Ph3pZDF0je0",
    "r": "world",
    "o": "Sky News",
-   "t": "Elsham villagers split over giant data centre go ahead",
+   "t": "Data centre the size of 247 pitches to be built in Lincolnshire",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=Ph3pZDF0je0",
@@ -2279,7 +2233,6 @@
   "lines": [
    "Good evening. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
    "Aid sector calls out lack of any mention of foreign aid in federal budget, The Canadian Press reports.",
-   "A strong earthquake shook central Japan early Sunday, shattering store windows, causing people to flee buildings and leaving at least 22 people injured, according to local media.",
    "A Polish man with far-right views drove into a busy central square in Krakow on Saturday and opened fire, killing six people and injuring 15 others before police shot and wounded him, authorities said.",
    "Trump asks UFC chief Dana White to be White House press secretary, Al Jazeera reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
@@ -2401,24 +2354,12 @@
  ],
  "mostread": {
   "sites": [
-   "Toronto Star",
    "Winnipeg Free Press",
    "Global News",
    "Nunatsiaq News",
    "Daily Hive"
   ],
   "list": [
-   {
-    "h": "Costco’s secret: A Canadian expansion is coming — and this Quebec executive is leading the charge",
-    "u": "https://www.thestar.com/business/the-canadian-inside-costco/article_24f19f05-b477-4fff-b6b1-d8cd73893533.html",
-    "o": [
-     [
-      "Toronto Star",
-      1,
-      "https://www.thestar.com/business/the-canadian-inside-costco/article_24f19f05-b477-4fff-b6b1-d8cd73893533.html"
-     ]
-    ]
-   },
    {
     "h": "Amanda Wiecek didn’t believe the man who professed his love would harm her — until he pulled the trigger and shattered her life",
     "u": "https://www.winnipegfreepress.com/breakingnews/2026/11/06/domestic-violence-shooting-winnipeg-wellington-crescent",
@@ -2464,17 +2405,6 @@
     ]
    },
    {
-    "h": "An Ontario teen lived in this shed while under the watch of Children’s Aid. ‘Everybody knew, nobody cared’",
-    "u": "https://www.thestar.com/news/investigations/an-ontario-teen-lived-in-this-shed-while-under-the-watch-of-children-s-aid-everybody-knew-nobody-cared/article_c4721729-807b-4552-b79e-64d0d75e1b38.html",
-    "o": [
-     [
-      "Toronto Star",
-      2,
-      "https://www.thestar.com/news/investigations/an-ontario-teen-lived-in-this-shed-while-under-the-watch-of-children-s-aid-everybody-knew-nobody-cared/article_c4721729-807b-4552-b79e-64d0d75e1b38.html"
-     ]
-    ]
-   },
-   {
     "h": "Fortified bottle shop opens in Osborne Village",
     "u": "https://www.winnipegfreepress.com/business/2026/11/06/suds-and-safety-in-the-village",
     "o": [
@@ -2508,13 +2438,35 @@
     ]
    },
    {
-    "h": "What the proposed new ‘RRSP for life’ would mean for Canadians and their taxes",
-    "u": "https://www.thestar.com/business/personal-finance/what-the-proposed-new-rrsp-for-life-would-mean-for-canadians-and-their-taxes/article_582cce03-0f39-4e56-ae4e-a0c108203d5a.html",
+    "h": "Stephen Miller replaces Susie Wiles as Trump’s White House chief of staff after GOP’s midterm defeat",
+    "u": "https://www.winnipegfreepress.com/world/2026/11/06/susie-wiles-trumps-longest-serving-white-house-chief-of-staff-is-leaving-the-administration",
     "o": [
      [
-      "Toronto Star",
+      "Winnipeg Free Press",
       3,
-      "https://www.thestar.com/business/personal-finance/what-the-proposed-new-rrsp-for-life-would-mean-for-canadians-and-their-taxes/article_582cce03-0f39-4e56-ae4e-a0c108203d5a.html"
+      "https://www.winnipegfreepress.com/world/2026/11/06/susie-wiles-trumps-longest-serving-white-house-chief-of-staff-is-leaving-the-administration"
+     ]
+    ]
+   },
+   {
+    "h": "Israel’s president taps opposition candidate Eisenkot to form government",
+    "u": "https://globalnews.ca/news/12141324/israels-president-taps-eisenkot/",
+    "o": [
+     [
+      "Global News",
+      3,
+      "https://globalnews.ca/news/12141324/israels-president-taps-eisenkot/"
+     ]
+    ]
+   },
+   {
+    "h": "Cabinet to discuss Kitikmeot Inuit employment pilot project",
+    "u": "https://nunatsiaq.com/stories/article/cabinet-to-discuss-kitikmeot-inuit-employment-pilot-project/",
+    "o": [
+     [
+      "Nunatsiaq News",
+      3,
+      "https://nunatsiaq.com/stories/article/cabinet-to-discuss-kitikmeot-inuit-employment-pilot-project/"
      ]
     ]
    }
@@ -2655,10 +2607,10 @@
    "tz": "Asia/Tokyo",
    "world": true,
    "w": "Earthquake",
-   "u": "https://www.aljazeera.com/news/2026/11/8/earthquake-hits-central-japan-injuring-more-than-20-people?traffic_source=rss",
-   "title": "Earthquake hits central Japan, injuring more than 20 people",
-   "outlet": "Al Jazeera",
-   "t": "Sat 11:20 p.m.",
+   "u": "https://www.japantimes.co.jp/news/2026/11/08/japan/earthquake-aichi-sunday/",
+   "title": "Magnitude 5.7 quake injures dozens in central Japan",
+   "outlet": "The Japan Times",
+   "t": "Sat 10:35 p.m.",
    "hot": true
   },
   {
@@ -2689,13 +2641,13 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Sat 11:20 p.m.",
-   "iso": "2026-11-08T04:20:57+00:00",
-   "title": "Earthquake hits central Japan, injuring more than 20 people",
-   "summary": "The magnitude 5.7 quake hit Shizuoka prefecture, and authorities warn of possible strong aftershocks in coming days.",
-   "outlet": "Al Jazeera, The Japan Times, CTV News, CP24, Times Colonist, ABC News",
-   "url": "https://www.aljazeera.com/news/2026/11/8/earthquake-hits-central-japan-injuring-more-than-20-people?traffic_source=rss",
-   "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/getty_6aeff4aa83-1794110634.jpg?resize=1920%2C1440"
+   "t": "Sat 10:35 p.m.",
+   "iso": "2026-11-08T03:35:00+00:00",
+   "title": "Magnitude 5.7 quake injures dozens in central Japan",
+   "summary": "The quake struck at 1:04 am in Shizuoka Prefecture but no tsunami warning was issued.",
+   "outlet": "The Japan Times, CTV News, CP24, Times Colonist, ABC News, CityNews Winnipeg",
+   "url": "https://www.japantimes.co.jp/news/2026/11/08/japan/earthquake-aichi-sunday/",
+   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/08/572879.jpg?v=3.1"
   },
   {
    "desk": "business",
@@ -2748,7 +2700,7 @@
    "iso": "2026-11-08T01:10:15+00:00",
    "title": "1 person killed in Etobicoke shooting, at least 2 suspects sought",
    "summary": "Toronto police are investigating after a male victim was killed in a shooting in Etobicoke on Saturday afternoon.",
-   "outlet": "CTV News, CP24, Toronto Star, Toronto Sun",
+   "outlet": "CTV News, CP24, Toronto Sun",
    "url": "https://www.ctvnews.ca/toronto/article/1-person-killed-in-etobicoke-shooting-at-least-2-suspects-sought/",
    "img": "https://www.ctvnews.ca/resizer/v2/FP6ZDXHPTRGHFCVWDW2CLKFPBI.png?smart=true&auth=3d829d9cd3e866cadefd5f6240c030881da186a36f578043dbb7dc2fa61bd1c2&width=1200&height=630"
   },
@@ -2874,17 +2826,6 @@
    "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/44f1/live/699ff730-daab-11f1-93e1-3b657b665bcf.jpg"
   },
   {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Sat 10:11 a.m.",
-   "iso": "2026-11-07T15:11:00+00:00",
-   "title": "Inflation, housing, jobs and corporate earnings will dominate the business calendar this week",
-   "summary": "NEW YORK (AP) — Inflation updates dominate the calendar this week, along with a checkup on the housing market and more data on employment in the U.S.",
-   "outlet": "Toronto Star",
-   "url": "https://www.thestar.com/business/inflation-housing-jobs-and-corporate-earnings-will-dominate-the-business-calendar-this-week/article_6c35a2ef-908b-5695-8a81-53e4c94da734.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/e/7a/e7a66d97-18ab-5edc-9feb-d775568401a2/6aef40774fc39.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
-  },
-  {
    "desk": "politics",
    "pic": "parliament",
    "t": "Sat 9:56 a.m.",
@@ -2898,24 +2839,13 @@
   {
    "desk": "business",
    "pic": "chart",
-   "t": "Sat 9:35 a.m.",
-   "iso": "2026-11-07T14:35:00+00:00",
-   "title": "Berkshire Hathaway buys back $9.6 billion of its own stock but its profits declined",
-   "summary": "OMAHA, Neb. (AP) — Berkshire Hathaway repurchased $9.6 billion worth of its own shares in the third quarter, but Geico's numbers got worse as it invested more in ads and",
-   "outlet": "Toronto Star",
-   "url": "https://www.thestar.com/news/world/united-states/berkshire-hathaway-buys-back-9-6-billion-of-its-own-stock-but-its-profits-declined/article_64b319e0-392d-5778-94ab-f41238a14284.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/b/e0/be0b02ac-7815-4412-b224-dcc2e0235aa2/6aef838a6debf.image.jpg?crop=1400%2C735%2C0%2C112&resize=1200%2C630&order=crop%2Cresize"
-  },
-  {
-   "desk": "politics",
-   "pic": "parliament",
    "t": "Sat 7:00 a.m.",
-   "iso": "2026-11-07T12:00:00+00:00",
-   "title": "Mark Carney is trying to do what Justin Trudeau couldn't. Why his homelessness plan is being met with cautious optimism",
-   "summary": "The budget’s $30-billion commitment is being praised but experts and advocates say Ottawa will have to think creatively.",
-   "outlet": "Toronto Star",
-   "url": "https://www.thestar.com/news/canada/carney-is-trying-to-do-what-trudeau-couldn-t-why-his-homelessness-plan-is-being-met-with-cautious-optimism/article_19aebbf2-572c-4649-b592-60962ed50e07.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/8/65/8650e831-ea67-5f2c-948c-ef1473814f57/6aee69a28f32f.image.jpg?crop=1763%2C926%2C0%2C124&resize=1200%2C630&order=crop%2Cresize"
+   "iso": "2026-11-07T12:00:03+00:00",
+   "title": "Carmichael: Canada’s sovereignty needs more than a strong economy",
+   "summary": "Carney is spending billions on culture in pursuit of something that won’t show up on a balance sheet",
+   "outlet": "The Logic",
+   "url": "https://thelogic.co/commentary/kevin-carmichael-federal-budget-2026-economics-culture/",
+   "img": "https://thelogic.co/wp-content/uploads/2026/11/Norval_Morrisseau_National_Gallery-Ottawa-May_2017-P-Adrian_Wyld-CP175072781-1920x1280-1.jpeg"
   }
  ],
  "fronts": [
@@ -3106,17 +3036,17 @@
     "Trump told 60 Minutes to expect post-midterm firings",
     "These House and Senate midterm races don't have winners yet",
     "What Stephen Miller has pushed for while in Trump administration",
-    "Acton says she has \"no intention\" of speaking to Ramaswamy",
     "Trump says he offered UFC's Dana White the press secretary role",
-    "Israel's president taps opposition candidate Eisenkot to form a government"
+    "Israel's president taps opposition candidate Eisenkot to form a government",
+    "Mass shooting in Polish market leaves at least 6 dead, 15 injured"
    ],
    "u": [
     "https://www.cbsnews.com/news/trump-60-minutes-midterm-election-firings-susie-wiles/",
     "https://www.cbsnews.com/news/2026-midterm-election-house-senate-projections-toss-up/",
     "https://www.cbsnews.com/news/stephen-miller-chief-of-staff-trump-immigration-policies/",
-    "https://www.cbsnews.com/news/amy-acton-vivek-ramaswamy-ohio-governor-campaign-ad/",
     "https://www.cbsnews.com/news/trump-offers-white-house-press-secretary-role-dana-white/",
-    "https://www.cbsnews.com/news/israel-election-government-gadi-eisenkot-benjamin-netanyahu/"
+    "https://www.cbsnews.com/news/israel-election-government-gadi-eisenkot-benjamin-netanyahu/",
+    "https://www.cbsnews.com/news/shooting-main-market-square-krakow-poland/"
    ]
   },
   {
@@ -3209,7 +3139,7 @@
     "url": "https://www.youtube.com/watch?v=XtLl_wi6H3A",
     "img": "https://i.ytimg.com/vi/XtLl_wi6H3A/hqdefault.jpg",
     "story": "Middle East latest, Trump White House updates, Melania Trump visits LS",
-    "watching": "366",
+    "watching": "354",
     "also": [
      {
       "net": "The White House live",
@@ -3391,7 +3321,7 @@
    "story": "Iran war live: US moves to block land supply routes; UAE rescues 22 sa",
    "title": "Iran war live: US moves to block land supply routes; UAE rescues 22 sailors",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/8/iran-war-live-explosions-hit-qeshm-us-moves-to-block-land-supply-routes?traffic_source=rss",
-   "updated": "2026-11-08T04:22:16+00:00",
+   "updated": "2026-11-08T04:31:59+00:00",
    "ended": false,
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-08T003844Z_1904518215_RC2CJOAU5F99_RTRMADP_3_IRAN-CRISIS-BLOCKADE-1794107413_532558-1794107549.jpg?resize=1200%2C630&quality=80"
   }
