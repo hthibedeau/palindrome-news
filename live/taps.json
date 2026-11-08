@@ -1,28 +1,74 @@
 {
- "checked": "2026-11-08T10:08:40.699241+00:00",
- "labels": 225,
- "problems": [],
+ "checked": "2026-11-08T11:05:17.416691+00:00",
+ "labels": 181,
+ "problems": [
+  {
+   "label": "Toronto Star",
+   "opens": "https://www.cbc.ca/news/canada/london/hydro-one-planned-outage-9.7409672",
+   "section": "developed",
+   "link": false,
+   "width": 390
+  },
+  {
+   "label": "Euronews",
+   "opens": "https://www.cbc.ca/news/canada/london/hydro-one-planned-outage-9.7409672",
+   "section": "developed",
+   "link": false,
+   "width": 390
+  },
+  {
+   "label": "Times Colonist",
+   "opens": "https://www.cbc.ca/news/canada/london/hydro-one-planned-outage-9.7409672",
+   "section": "developed",
+   "link": false,
+   "width": 390
+  },
+  {
+   "label": "Euronews",
+   "opens": "https://www.cbc.ca/news/canada/london/hydro-one-planned-outage-9.7409672",
+   "section": "developed",
+   "link": false,
+   "width": 1280
+  },
+  {
+   "label": "Times Colonist",
+   "opens": "https://www.cbc.ca/news/canada/london/hydro-one-planned-outage-9.7409672",
+   "section": "developed",
+   "link": false,
+   "width": 1280
+  }
+ ],
  "guard": {
   "fixed": [
    {
-    "label": "Times Colonist ↗",
-    "was": "(card link) thestar.com",
-    "now": "https://www.timescolonist.com/national-sports/canada-red-beats-canada-white-for-bronze-us-wins-gold-at-u17-world-challenge-12993317"
+    "label": "CTV News ↗",
+    "was": "(card link) euronews.com",
+    "now": "https://www.ctvnews.ca/world/trumps-tariffs/article/are-canadian-snowbirds-flocking-back-during-the-us-trade-war-heres-what-data-says/"
    },
    {
-    "label": "CBS News",
-    "was": "(card link) cbsnews.com",
-    "now": "https://www.cbsnews.com/news/italy-giorgia-meloni-ukraine-russia-hack-data-leak/"
+    "label": "CBC News ↗",
+    "was": "(card link) euronews.com",
+    "now": "https://www.cbc.ca/news/canada/trump-tariffs-canadian-dairy-cheese-industry-9.7413227"
+   },
+   {
+    "label": "CP24 ↗",
+    "was": "(card link) euronews.com",
+    "now": "https://www.cp24.com/news/world/2026/11/06/pm-carney-welcomes-any-moves-to-restore-free-trade-hoekstra-predicts-deal-could-come-soon/"
+   },
+   {
+    "label": "Global News ↗",
+    "was": "(card link) euronews.com",
+    "now": "https://globalnews.ca/news/12140323/carney-us-trade-democrats/"
+   },
+   {
+    "label": "ABC News",
+    "was": "(card link) abcnews.com",
+    "now": "https://abcnews.com/International/live-updates/iran-live-updates-trump-good-call-netanyahu/?id=137762456"
    },
    {
     "label": "NBC News",
     "was": "(card link) nbcnews.com",
     "now": "https://www.nbcnews.com/politics/white-house/trump-offers-press-secretary-job-ufc-ceo-dana-white-rcna608039"
-   },
-   {
-    "label": "Fox News",
-    "was": "(card link) foxnews.com",
-    "now": "https://www.foxnews.com/politics/new-jersey-town-reveals-staggering-26m-theft-days-after-election-sparking-backlash"
    },
    {
     "label": "NPR",
