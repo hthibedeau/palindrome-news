@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-08T01:51:46.114522+00:00",
- "checkedLabel": "Sat 8:51 p.m.",
+ "checked": "2026-11-08T02:01:46.042003+00:00",
+ "checkedLabel": "Sat 9:01 p.m.",
  "stories": [
   {
    "key": "top",
@@ -31,6 +31,15 @@
  ],
  "wire": [
   [
+   "Sat 8:56 p.m.",
+   "Latest",
+   "Bisons coach takes pride in effort, despite loss",
+   "The Canadian Press (via Winnipeg Free Press)",
+   "https://www.winnipegfreepress.com/breakingnews/2026/11/07/bisons-coach-takes-pride-in-effort-despite-loss",
+   "2026-11-08T01:56:48+00:00",
+   1
+  ],
+  [
    "Sat 8:48 p.m.",
    "Latest",
    "No. 3 Utah stays perfect, ends Holy War skid against No. 7 BYU",
@@ -38,6 +47,15 @@
    "https://www.winnipegfreepress.com/uncategorized/2026/11/07/no-3-utah-stays-perfect-ends-holy-war-skid-against-no-7-byu",
    "2026-11-08T01:48:58+00:00",
    1
+  ],
+  [
+   "Sat 8:48 p.m.",
+   "Canada",
+   "Festival of Lights, Festival of Growth: A look at Diwali’s business impact in Canada",
+   "CityNews Winnipeg",
+   "https://winnipeg.citynews.ca/2026/11/07/diwalis-business-impact-in-canada/",
+   "2026-11-08T01:48:16+00:00",
+   8
   ],
   [
    "Sat 8:47 p.m.",
@@ -203,15 +221,6 @@
   ],
   [
    "Sat 7:50 p.m.",
-   "Latest",
-   "Vanderbilt holds off Mississippi State to win its first SEC game 25-23",
-   "The Canadian Press (via Winnipeg Free Press)",
-   "https://www.winnipegfreepress.com/uncategorized/2026/11/07/vanderbilt-holds-off-mississippi-state-to-win-its-first-sec-game-25-17",
-   "2026-11-08T00:50:46+00:00",
-   1
-  ],
-  [
-   "Sat 7:50 p.m.",
    "World",
    "Polish PM calls deadly Krakow shooting an act of ‘terrorism’",
    "Al Jazeera",
@@ -244,15 +253,6 @@
    "CBS News",
    "https://www.cbsnews.com/live-updates/senate-election-results-2026/",
    "2026-11-08T00:23:18+00:00",
-   1
-  ],
-  [
-   "Sat 7:18 p.m.",
-   "Latest",
-   "More races called as Democratic majority comes into focus",
-   "CBS News",
-   "https://www.cbsnews.com/live-updates/midterm-election-results-2026-democrats-house-senate-trump/",
-   "2026-11-08T00:18:04+00:00",
    1
   ]
  ],
@@ -351,10 +351,10 @@
    "theme": ""
   },
   {
-   "score": 8,
+   "score": 10,
    "title": "It’s Morning in America. By all Means, Blame Canada.",
    "url": "https://www.policymagazine.ca/its-morning-in-america-by-all-means-blame-canada/",
-   "outlets": 4,
+   "outlets": 6,
    "why": [
     "National Newswatch #15"
    ],
@@ -378,6 +378,16 @@
   }
  ],
  "canada": [
+  {
+   "t": "Sat 8:59 p.m.",
+   "iso": "2026-11-08T01:59:14.102000+00:00",
+   "region": "B.C.",
+   "title": "19-year-old woman killed in collision between e-scooter and transit bus in Vancouver",
+   "summary": "Police say a 19-year-old woman was killed in a collision between an e-scooter and a transit bus in downtown Vancouver on Saturday morning.",
+   "outlet": "CBC News, Vancouver Sun",
+   "url": "https://www.cbc.ca/news/canada/british-columbia/vancouver-e-scooter-fatality-bus-9.7413724",
+   "img": "https://i.cbc.ca/ais/300ed05a-acb7-4973-990c-88f9726c70be,1794102646315/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C378%2C4032%2C2268%29%3BResize%3D620"
+  },
   {
    "t": "Sat 8:19 p.m.",
    "iso": "2026-11-08T01:19:00.639000+00:00",
@@ -427,16 +437,6 @@
    "outlet": "CBC News",
    "url": "https://www.cbc.ca/news/canada/manitoba/winnipeg-indigenous-veterans-9.7413706",
    "img": "https://i.cbc.ca/ais/37ec6748-696e-49b8-bd38-f916ea1f528a,1794086149209/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C55%2C4032%2C2268%29%3BResize%3D620"
-  },
-  {
-   "t": "Sat 3:12 p.m.",
-   "iso": "2026-11-07T20:12:15.970000+00:00",
-   "region": "B.C.",
-   "title": "Woman killed in collision between e-scooter and transit bus in Vancouver",
-   "summary": "Police say a woman was killed in a collision between an e-scooter and a transit bus in downtown Vancouver on Saturday morning.",
-   "outlet": "CBC News, Vancouver Sun",
-   "url": "https://www.cbc.ca/news/canada/british-columbia/vancouver-e-scooter-fatality-bus-9.7413724",
-   "img": "https://i.cbc.ca/ais/1.6812765,1684429564000/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C310%2C6000%2C3375%29%3BResize%3D620"
   },
   {
    "t": "Sat 2:48 p.m.",
@@ -566,9 +566,9 @@
    {
     "key": "auto-fe222cb2",
     "words": [
-     "white",
-     "ufc's",
      "ufc’s",
+     "ufc's",
+     "white",
      "dana",
      "ufc"
     ],
@@ -597,10 +597,11 @@
      "alt": "U.S. President Donald Trump talks with UFC president and CEO Dana White at an event in Las Vegas on Aug. 5.",
      "outlet": "CBC News",
      "url": "https://www.cbc.ca/news/world/trump-press-secretary-ufc-dana-white-9.7413697",
-     "since": "2026-11-08T01:28:26.153987+00:00"
+     "since": "2026-11-08T02:03:47.907573+00:00"
     },
     "photo_seen": [
-     "https://i.cbc.ca/ais/609b2e1b-02ab-4129-bb7e-f244921f0764,1794099781929/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C5188%2C2918%29%3BResize%3D620"
+     "https://i.cbc.ca/ais/609b2e1b-02ab-4129-bb7e-f244921f0764,1794099781929/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C5188%2C2918%29%3BResize%3D620",
+     "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/8536/live/2fdfe760-dafd-11f1-b441-2b33b063138f.jpg"
     ],
     "photos": [
      {
@@ -1134,7 +1135,7 @@
    },
    {
     "title": "It’s Morning in America. By all Means, Blame Canada.",
-    "score": 8,
+    "score": 10,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
@@ -1159,12 +1160,12 @@
    },
    {
     "title": "Chimp sanctuary delivers an ape's food by drone amid Florida floods",
-    "score": 6,
+    "score": 5,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Parents speak out about school board supervision, funding levels at Toronto rally",
-    "score": 5,
+    "title": "Canada's military is using Palantir software. What are the risks?",
+    "score": 4,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
   ],
@@ -1201,7 +1202,7 @@
      "alt": "Toronto police are investigating a shooting in the area of The East Mall and Rathburn Road on Saturday, Nov. 7, 2026.",
      "outlet": "CTV News",
      "url": "https://www.ctvnews.ca/toronto/article/1-person-killed-in-etobicoke-shooting-at-least-2-suspects-sought/",
-     "since": "2026-11-08T01:54:24.132628+00:00"
+     "since": "2026-11-08T02:03:57.306471+00:00"
     },
     "photo_seen": [
      "https://www.ctvnews.ca/resizer/v2/FP6ZDXHPTRGHFCVWDW2CLKFPBI.png?smart=true&auth=3d829d9cd3e866cadefd5f6240c030881da186a36f578043dbb7dc2fa61bd1c2&width=1200&height=630"
@@ -1401,7 +1402,7 @@
      "alt": "Budget offers little new relief for middle-income Canadians",
      "outlet": "CKOM / PAnow",
      "url": "https://www.ckom.com/2026/11/07/budget-offers-little-new-relief-for-middle-income-canadians/",
-     "since": "2026-11-08T01:54:17.110857+00:00"
+     "since": "2026-11-08T02:03:49.793654+00:00"
     },
     "photo_seen": [
      "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/648/files/2026/11/grocery-cp-110726.jpg"
@@ -1514,7 +1515,7 @@
        {
         "outlet": "Global News",
         "src": "The Canadian Press",
-        "byline": "\"Dylan Robertson\" Name David Best Johnny Johnny Johnny Charlie E.C. Dean Harvey fw stanley James Kruger "
+        "byline": "\"Dylan Robertson\" Name Anonymous David Best Johnny Johnny Johnny Charlie E.C. Dean Harvey fw stanley "
        },
        {
         "outlet": "CTV News",
@@ -1641,24 +1642,24 @@
      {
       "net": "Global News",
       "url": "https://www.youtube.com/watch?v=QT-A_LxHwJ4",
-      "title": "Canada’s business community reacts to 2026 federal budget",
+      "title": "What does Canada’s business community think of the 2026 federal budget?",
       "img": "https://i.ytimg.com/vi/QT-A_LxHwJ4/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "APTN News",
-      "url": "https://www.youtube.com/watch?v=UhVU1wkrWeM",
-      "title": "APTN National News: November 7, 2026 – 2026 federal budget, Family speaks on NDTR incident",
-      "img": "https://i.ytimg.com/vi/UhVU1wkrWeM/hqdefault.jpg",
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=OgaqPzZnLKU",
+      "title": "Federal budget proposes funding to help build, refurbish ice rinks | Hanomansing Live",
+      "img": "https://i.ytimg.com/vi/OgaqPzZnLKU/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "APTN News",
-      "url": "https://www.youtube.com/watch?v=MZZhQNv_sXw",
-      "title": "Mixed reviews on federal budget when it comes to Indigenous spending | APTN News",
-      "img": "https://i.ytimg.com/vi/MZZhQNv_sXw/hqdefault.jpg",
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=phzrZhO2EkA",
+      "title": "Political Pulse: Carney tables a budget, Trump’s policies cost him the midterms | Power & Politics",
+      "img": "https://i.ytimg.com/vi/phzrZhO2EkA/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1745,7 +1746,7 @@
    "id": "09os5aecgUc",
    "r": "ca",
    "o": "Global News",
-   "t": "Why are protestors in Nova Scotia against Cape Breton's planned AI data centre?",
+   "t": "Growing pushback against planned AI data centre in Nova Scotia",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=09os5aecgUc",
@@ -1997,7 +1998,7 @@
    "id": "ygXcIpI48mQ",
    "r": "us",
    "o": "CNN",
-   "t": "From Mamdani to MAGA: Reactions to the midterm ‘blue-nami’",
+   "t": "From Mamdani to MAGA: Reactions across the spectrum to midterm ‘blue-nami’",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=ygXcIpI48mQ",
@@ -2095,7 +2096,7 @@
    "id": "HMNrBWKy2kQ",
    "r": "us",
    "o": "CNN",
-   "t": "Republicans try to diagnose midterm blowout & what's next",
+   "t": "After the ‘bluenami’, where do Republicans go from here?",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=HMNrBWKy2kQ",
@@ -2554,6 +2555,13 @@
  ],
  "eds": [
   [
+   "Toronto Star",
+   "Opinion",
+   "Patrick Corrigan's cartoon shows the spoils of a winning election campaign",
+   "https://www.thestar.com/opinion/editorial-cartoons/patrick-corrigan-s-cartoon-shows-the-spoils-of-a-winning-election-campaign/article_20239c1f-ed02-4b00-8aaf-b83449ecce30.html",
+   "2026-11-07T11:00:00+00:00"
+  ],
+  [
    "Toronto Sun",
    "Editorial",
    "Are Liberals repeating immigration blunders?",
@@ -2615,13 +2623,6 @@
    "Pepper…and Salt",
    "https://www.wsj.com/opinion/pepperand-salt-625a4119?mod=rss_opinion",
    "2026-11-07T05:00:00+00:00"
-  ],
-  [
-   "Washington Examiner",
-   "Opinion",
-   "Trump blames everyone but himself. So what else is new?",
-   "https://www.washingtonexaminer.com/op-eds/4793019/trump-blames-everyone-else-midterm-election-defeat/",
-   "2026-11-07T18:00:00+00:00"
   ]
  ],
  "canus": {
@@ -2686,7 +2687,7 @@
   "usmedia": []
  },
  "brief": {
-  "edition": "Saturday evening, November 7",
+  "edition": "Saturday night, November 7",
   "lines": [
    "Good evening. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
    "Trump says he’s asked UFC’s Dana White to be his press secretary. No one will say if he’s joking, The Associated Press reports.",
@@ -3154,6 +3155,17 @@
    "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/f6c3/live/95455f00-dac5-11f1-bda8-29fb69dbc026.jpg"
   },
   {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Sat 9:00 p.m.",
+   "iso": "2026-11-08T02:00:01+00:00",
+   "title": "Ontario has a magical Christmas village with a cobblestone market and sparkling lights",
+   "summary": "There's nothing quite like wandering through an enchanting Christmas village, sipping on a hot chocolate and taking in the festive sights.",
+   "outlet": "Narcity, Toronto Star, CBS News, CTV News, NBC News",
+   "url": "https://www.narcity.com/elora-christmas-market-2026-things-to-do",
+   "img": "https://www.narcity.com/media-library/woman-in-a-knit-hat-visits-a-snowy-holiday-market-with-lights-decorated-trees-and-wooden-stalls.jpg?id=68604464&width=1200&height=600&coordinates=0%2C36%2C0%2C36"
+  },
+  {
    "desk": "world",
    "pic": "globe",
    "t": "Sat 8:10 p.m.",
@@ -3167,17 +3179,6 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Sat 8:22 p.m.",
-   "iso": "2026-11-08T01:22:18+00:00",
-   "title": "Chimp sanctuary delivers an ape's food by drone amid Florida floods",
-   "summary": "A Florida chimpanzee sanctuary had to deliver food to one of its 200 apes by drone this week because the property was swamped by heavy rain. But the animals stayed safe, and the water finally was receding significantly on Saturday, the organization said.",
-   "outlet": "CTV News, CP24, The Guardian, Toronto Star",
-   "url": "https://www.ctvnews.ca/world/article/chimp-sanctuary-delivers-an-apes-food-by-drone-amid-florida-floods/",
-   "img": "https://www.ctvnews.ca/resizer/v2/FZDQJTPFNBFJFLC6WCYF6QPQNI.jpg?smart=true&auth=bd2f7d884216c4234c25cf536fa1c6280d5aafd2080d75483c307f9e94ed113f&width=1200&height=630"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
    "t": "Sat 6:05 p.m.",
    "iso": "2026-11-07T23:05:03+00:00",
    "title": "He's their man: Montrealers honour Leonard Cohen, ten years after his death",
@@ -3187,15 +3188,15 @@
    "img": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/3adea26d4ab6846d8be12f16b5889501d0e65167db2ec0e37c2f2a3c7b5e17ca.jpg;w=1200;h=800;mode=crop"
   },
   {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Sat 8:00 p.m.",
-   "iso": "2026-11-08T01:00:01+00:00",
-   "title": "This little Ontario Christmas market is nestled amid twinkling gardens and glowing trails",
-   "summary": "Looking for something extra enchanting to enjoy this holiday season? This Ontario destination is transforming into a winter wonderland complete with glowing trails and a cozy little market.",
-   "outlet": "Narcity, CTV News",
-   "url": "https://www.narcity.com/christmas-market-royal-botanical-gardens-tickets",
-   "img": "https://www.narcity.com/media-library/snowy-outdoor-holiday-market-with-illuminated-stalls-colorful-trees-and-visitors-strolling.jpg?id=68593044&width=1200&height=600&coordinates=0%2C12%2C0%2C12"
+   "desk": "world",
+   "pic": "globe",
+   "t": "Sat 8:22 p.m.",
+   "iso": "2026-11-08T01:22:18+00:00",
+   "title": "Chimp sanctuary delivers an ape's food by drone amid Florida floods",
+   "summary": "A Florida chimpanzee sanctuary had to deliver food to one of its 200 apes by drone this week because the property was swamped by heavy rain. But the animals stayed safe, and the water finally was receding significantly on Saturday, the organization said.",
+   "outlet": "CTV News, CP24, The Guardian",
+   "url": "https://www.ctvnews.ca/world/article/chimp-sanctuary-delivers-an-apes-food-by-drone-amid-florida-floods/",
+   "img": "https://www.ctvnews.ca/resizer/v2/FZDQJTPFNBFJFLC6WCYF6QPQNI.jpg?smart=true&auth=bd2f7d884216c4234c25cf536fa1c6280d5aafd2080d75483c307f9e94ed113f&width=1200&height=630"
   },
   {
    "desk": "politics",
@@ -3314,7 +3315,7 @@
    "ca": true,
    "h": [
     "CBC News - Latest Canada, World, Entertainment and Business News",
-    "Polish police say gunman kills 6 in 'act of terror'; 3 more dead found at suspect's home",
+    "3 bodies found in home of Krakow shooting suspect, Polish PM says, after 6 killed, 16 injured in city square",
     "UFC boss Dana White says he's meeting with Trump after press secretary job offer",
     "The age of AI warfare is here. Is Canada ready?",
     "What Ottawa's 'RRSP for life' plan means for Canadian seniors",
@@ -3364,19 +3365,19 @@
    "ca": true,
    "h": [
     "Toronto Star News - Breaking News Stories",
+    "An Ontario teen lived in this shed while under the watch of Children’s Aid. ‘Everybody knew, nobody cared’",
     "Canada’s new immigration targets: Who benefits and who loses out",
     "Mark Carney is trying to do what Justin Trudeau couldn’t. Why his homelessness plan is being met with cautious optimism",
     "Canada is adding 200,000 permanent resident spots. Here’s how it will work",
-    "Costco’s secret: A Canadian expansion is coming — and this Quebec executive is leading the charge",
-    "An Ontario teen lived in this shed while under the watch of Children’s Aid. ‘Everybody knew, nobody cared’"
+    "Costco’s secret: A Canadian expansion is coming — and this Quebec executive is leading the charge"
    ],
    "u": [
     "",
+    "https://www.thestar.com/news/investigations/an-ontario-teen-lived-in-this-shed-while-under-the-watch-of-children-s-aid-everybody-knew-nobody-cared/article_c4721729-807b-4552-b79e-64d0d75e1b38.html",
     "https://www.thestar.com/news/canada/canada-s-new-immigration-targets-who-benefits-and-who-loses-out/article_bd8d9255-5a0a-4b42-84aa-d93ccc590aa4.html",
     "https://www.thestar.com/news/canada/carney-is-trying-to-do-what-trudeau-couldn-t-why-his-homelessness-plan-is-being-met-with-cautious-optimism/article_19aebbf2-572c-4649-b592-60962ed50e07.html",
     "https://www.thestar.com/news/canada/canada-is-adding-200-000-permanent-resident-spots-here-s-how-it-will-work/article_27ca8f45-b5ed-4b5d-987c-12c05bd68652.html",
-    "https://www.thestar.com/business/the-canadian-inside-costco/article_24f19f05-b477-4fff-b6b1-d8cd73893533.html",
-    "https://www.thestar.com/news/investigations/an-ontario-teen-lived-in-this-shed-while-under-the-watch-of-children-s-aid-everybody-knew-nobody-cared/article_c4721729-807b-4552-b79e-64d0d75e1b38.html"
+    "https://www.thestar.com/business/the-canadian-inside-costco/article_24f19f05-b477-4fff-b6b1-d8cd73893533.html"
    ]
   },
   {
@@ -3473,18 +3474,18 @@
    "o": "NBC News",
    "ca": false,
    "h": [
-    "Americans voted for change. Trump, so far, is delivering the same.",
-    "UFC head Dana White says he’ll meet with Trump Monday on press secretary offer",
-    "New crop of Senate Democrats calling for ‘generational change’ head for a clash over Schumer",
     "7 charts that illustrate the scope of Democrats’ big 2026 wave",
+    "New crop of Senate Democrats calling for ‘generational change’ head for a clash over Schumer",
+    "UFC head Dana White says he’ll meet with Trump Monday on press secretary offer",
+    "Americans voted for change. Trump, so far, is delivering the same.",
     "Gunman who killed 9 in Poland held ‘ultranationalistic’ views, officials say",
     "Israel’s president taps Gadi Eisenkot to form a government, in setback for Netanyahu"
    ],
    "u": [
-    "https://www.nbcnews.com/politics/white-house/americans-voted-change-trump-stephen-miller-dc-renovations-rcna607903",
-    "https://www.nbcnews.com/politics/white-house/trump-offers-press-secretary-job-ufc-ceo-dana-white-rcna608039",
-    "https://www.nbcnews.com/politics/2026-election/senate-democrats-clash-chuck-schumer-rcna607877",
     "https://www.nbcnews.com/politics/2026-election/7-charts-illustrate-scope-democrats-big-2026-wave-rcna607862",
+    "https://www.nbcnews.com/politics/2026-election/senate-democrats-clash-chuck-schumer-rcna607877",
+    "https://www.nbcnews.com/politics/white-house/trump-offers-press-secretary-job-ufc-ceo-dana-white-rcna608039",
+    "https://www.nbcnews.com/politics/white-house/americans-voted-change-trump-stephen-miller-dc-renovations-rcna607903",
     "https://www.nbcnews.com/world/europe/poland-krakow-shooting-rcna608001",
     "https://www.nbcnews.com/world/israel/israels-president-taps-gadi-eisenkot-rcna608033"
    ]
@@ -3599,7 +3600,7 @@
     "url": "https://www.youtube.com/watch?v=XtLl_wi6H3A",
     "img": "https://i.ytimg.com/vi/XtLl_wi6H3A/hqdefault.jpg",
     "story": "Middle East latest, Trump White House updates, Melania Trump visits LS",
-    "watching": "596",
+    "watching": "557",
     "also": [
      {
       "net": "The White House live",
@@ -3754,7 +3755,7 @@
    "story": "Iran war live: Blasts heard in Qeshm; US moves to block land supply ro",
    "title": "Iran war live: Blasts heard in Qeshm; US moves to block land supply routes",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/8/iran-war-live-explosions-hit-qeshm-us-moves-to-block-land-supply-routes?traffic_source=rss",
-   "updated": "2026-11-08T01:52:52+00:00",
+   "updated": "2026-11-08T02:02:25+00:00",
    "ended": false,
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6aefb55c-1794094428.jpg?resize=1920%2C1440"
   },
@@ -3773,15 +3774,6 @@
    "title": "Bulk carrier and military forces involved in Gulf of Oman incident: UKMTO",
    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/bulk-carrier-and-military-forces-involved-gulf-oman-incident-ukmto",
    "updated": "2026-11-07T23:05:11+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Untitled_0.jpg"
-  },
-  {
-   "net": "Middle East Eye",
-   "story": "Israeli military issues orders to seize Palestinian land and uproot tr",
-   "title": "Israeli military issues orders to seize Palestinian land and uproot trees near Bethlehem",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-issues-orders-seize-palestinian-land-and-uproot-trees",
-   "updated": "2026-11-07T22:59:59+00:00",
    "ended": false,
    "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Untitled_0.jpg"
   }
@@ -4990,6 +4982,7 @@
   "J3FV4iY8p5w",
   "L6qtnHZxwEw",
   "NuEr0Q_AS6U",
+  "c9v26lW7-j4",
   "ldElU-Q5Qyo",
   "t_HBrWb84eY"
  ]
