@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-08T03:40:13.272210+00:00",
- "checkedLabel": "Sat 10:40 p.m.",
+ "checked": "2026-11-08T03:50:13.552493+00:00",
+ "checkedLabel": "Sat 10:50 p.m.",
  "stories": [
   {
    "key": "top",
@@ -30,6 +30,15 @@
   }
  ],
  "wire": [
+  [
+   "Sat 10:36 p.m.",
+   "World",
+   "Polish PM says Krakow mass shooter’s family found dead inside home",
+   "CTV News",
+   "https://www.ctvnews.ca/world/article/polish-gunman-who-killed-6-people-in-krakow-has-ultranationalistic-views-minister-says/",
+   "2026-11-08T03:36:11+00:00",
+   4
+  ],
   [
    "Sat 10:31 p.m.",
    "Latest",
@@ -245,15 +254,6 @@
    "https://www.theguardian.com/world/2026/nov/07/new-zealand-election-too-close-to-call-vote-count",
    "2026-11-08T01:00:48+00:00",
    1
-  ],
-  [
-   "Sat 8:00 p.m.",
-   "Canada",
-   "Parents speak out about school board supervision, funding levels at Toronto rally",
-   "Toronto Star",
-   "https://www.thestar.com/news/gta/parents-speak-out-about-school-board-supervision-funding-levels-at-toronto-rally/article_0d3041c8-9e84-4e8e-b4be-6c9060b4a431.html",
-   "2026-11-08T01:00:00+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -295,7 +295,7 @@
     "National Newswatch #11",
     "National Newswatch #6",
     "National Newswatch #8",
-    "CBC News front #2"
+    "CBC News front #3"
    ],
    "theme": "Federal budget"
   },
@@ -313,22 +313,14 @@
    "url": "https://www.cbc.ca/sports/football/cfl/cfl-playoffs-bc-lions-edmonton-elks-west-final-9.7413798",
    "outlets": 7,
    "why": [
-    "CBC News front #5"
+    "CBC News front #6"
    ],
    "theme": ""
   },
   {
-   "score": 12,
-   "title": "Festival of Lights, Festival of Growth: A look at Diwali’s business impact in Canada",
-   "url": "https://winnipeg.citynews.ca/2026/11/07/diwalis-business-impact-in-canada/",
-   "outlets": 10,
-   "why": [],
-   "theme": ""
-  },
-  {
    "score": 11,
-   "title": "What we know so far after Krakow gun attack",
-   "url": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
+   "title": "Polish PM says Krakow mass shooter’s family found dead inside home",
+   "url": "https://www.ctvnews.ca/world/article/polish-gunman-who-killed-6-people-in-krakow-has-ultranationalistic-views-minister-says/",
    "outlets": 9,
    "why": [],
    "theme": ""
@@ -352,10 +344,18 @@
    "theme": ""
   },
   {
-   "score": 9,
+   "score": 10,
+   "title": "Festival of Lights, Festival of Growth: A look at Diwali’s business impact in Canada",
+   "url": "https://winnipeg.citynews.ca/2026/11/07/diwalis-business-impact-in-canada/",
+   "outlets": 10,
+   "why": [],
+   "theme": ""
+  },
+  {
+   "score": 8,
    "title": "It’s Morning in America. By all Means, Blame Canada.",
    "url": "https://www.policymagazine.ca/its-morning-in-america-by-all-means-blame-canada/",
-   "outlets": 5,
+   "outlets": 4,
    "why": [
     "National Newswatch #15"
    ],
@@ -368,7 +368,7 @@
    "outlets": 1,
    "why": [
     "National Newswatch #18",
-    "CBC News front #1"
+    "CBC News front #5"
    ],
    "theme": ""
   },
@@ -811,20 +811,18 @@
     "incoherent": false,
     "popular": 3,
     "us_election": false,
-    "fronts": 8,
-    "fronts_ca": 3,
+    "fronts": 6,
+    "fronts_ca": 2,
     "fronts_who": [
-     "CBC News",
      "CTV News",
      "CP24",
      "NBC News",
-     "CBS News",
      "ABC News",
      "BBC News",
      "The Guardian"
     ],
     "judgment": "national",
-    "judgment_why": "National: leading 8 front pages (CBC News, CTV News, CP24, NBC News, CBS News, ABC News).",
+    "judgment_why": "National: leading 6 front pages (CTV News, CP24, NBC News, ABC News, BBC News, The Guardian).",
     "weight": 38.5,
     "videos": [
      {
@@ -844,18 +842,18 @@
       "up": ""
      },
      {
-      "net": "C-SPAN",
-      "url": "https://www.youtube.com/watch?v=f-XrdC5IGxk",
-      "title": "President Trump on New White House Chief of Staff Stephen Miller: \"I wanted to make a change.\"",
-      "img": "https://i.ytimg.com/vi/f-XrdC5IGxk/hqdefault.jpg",
+      "net": "CNN",
+      "url": "https://www.youtube.com/watch?v=PujlXYw5gCI",
+      "title": "Trump names Stephen Miller new White House chief of staff",
+      "img": "https://i.ytimg.com/vi/PujlXYw5gCI/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "Associated Press",
-      "url": "https://www.youtube.com/watch?v=x8TBAEP1w8Q",
-      "title": "Trump replaces Susie Wiles with Stephen Miller as the White House chief of staff",
-      "img": "https://i.ytimg.com/vi/x8TBAEP1w8Q/hqdefault.jpg",
+      "net": "C-SPAN",
+      "url": "https://www.youtube.com/watch?v=f-XrdC5IGxk",
+      "title": "President Trump on New White House Chief of Staff Stephen Miller: \"I wanted to make a change.\"",
+      "img": "https://i.ytimg.com/vi/f-XrdC5IGxk/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -875,13 +873,11 @@
     "canada": "tie",
     "theme": "",
     "top": true,
-    "fronts": 8,
+    "fronts": 6,
     "fronts_who": [
-     "CBC News",
      "CTV News",
      "CP24",
      "NBC News",
-     "CBS News",
      "ABC News",
      "BBC News",
      "The Guardian"
@@ -889,69 +885,66 @@
     "rule": "Leading other newsrooms' front pages (Canadian ones among them): the story everyone is leading with",
     "carriers": 7,
     "judgment": "national",
-    "why_judged": "National: leading 8 front pages (CBC News, CTV News, CP24, NBC News, CBS News, ABC News)."
+    "why_judged": "National: leading 6 front pages (CTV News, CP24, NBC News, ABC News, BBC News, The Guardian)."
    },
    {
     "title": "Polish PM says Krakow mass shooter’s family found dead inside home",
     "url": "https://www.cp24.com/news/world/2026/11/07/polish-gunman-who-killed-6-people-in-krakow-has-ultranationalistic-views-minister-says/",
     "rank": 2,
     "live": "",
-    "weight": 32.0,
+    "weight": 35.0,
     "score": 11,
     "independent": 6,
     "most_read": 0,
     "canada": "none",
     "theme": "",
     "top": false,
-    "fronts": 7,
+    "fronts": 5,
     "fronts_who": [
      "CTV News",
      "The Globe and Mail",
      "CP24",
      "NBC News",
-     "ABC News",
-     "BBC News",
-     "The Guardian"
+     "BBC News"
     ],
-    "rule": "Leading other newsrooms' front pages (Canadian ones among them): the story everyone is leading with",
+    "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
     "carriers": 8,
     "judgment": "national",
-    "why_judged": "National: leading 7 front pages (CTV News, The Globe and Mail, CP24, NBC News, ABC News, BBC News)."
+    "why_judged": "National: affects many people; carried across the country (national desks)."
    },
    {
     "title": "Israel's president asks Gadi Eisenkot, Netanyahu's rival, to form new government",
     "url": "https://www.cbc.ca/news/world/gadi-eisenkot-form-government-israel-9.7413714",
     "rank": 3,
     "live": "",
-    "weight": 25.5,
+    "weight": 17.5,
     "score": 10,
     "independent": 3,
     "most_read": 3,
     "canada": "none",
     "theme": "",
     "top": false,
-    "fronts": 6,
+    "fronts": 5,
     "fronts_who": [
      "National Post",
      "NBC News",
-     "CBS News",
      "ABC News",
      "BBC News",
      "The Guardian"
     ],
     "rule": "No Canadian tie",
     "carriers": 3,
-    "judgment": "national",
-    "why_judged": "National: leading 6 front pages (National Post, NBC News, CBS News, ABC News, BBC News, The Guardian)."
+    "judgment": "regional",
+    "why_judged": "Regional: affects some people; carried beyond one city."
    },
    {
     "title": "Budget offers little new relief for middle-income Canadians",
     "url": "https://www.ckom.com/2026/11/07/budget-offers-little-new-relief-for-middle-income-canadians/",
     "rank": 4,
     "live": "",
-    "weight": 42.5,
+    "weight": 41.0,
     "score": 16,
-    "independent": 5,
+    "independent": 4,
     "most_read": 5,
     "canada": "canadian",
     "theme": "Federal budget",
@@ -959,7 +952,7 @@
     "fronts": 0,
     "fronts_who": [],
     "rule": "Canadian, older",
-    "carriers": 9,
+    "carriers": 8,
     "judgment": "national",
     "why_judged": "National: affects many people; carried across the country (3 cities)."
    },
@@ -969,18 +962,18 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Festival of Lights, Festival of Growth: A look at Diwali’s business impact in Canada",
-    "score": 12,
-    "why": "not built: only 2 independent report(s) (9 sites)"
-   },
-   {
     "title": "A strong earthquake with a preliminary magnitude of 5.7 strikes Japan, meteorological agency says",
     "score": 11,
     "why": "not built: only 1 independent report(s) (11 sites)"
    },
    {
+    "title": "Festival of Lights, Festival of Growth: A look at Diwali’s business impact in Canada",
+    "score": 10,
+    "why": "not built: only 2 independent report(s) (9 sites)"
+   },
+   {
     "title": "It’s Morning in America. By all Means, Blame Canada.",
-    "score": 9,
+    "score": 8,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
@@ -994,12 +987,12 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "US military fires at cargo ship in Gulf of Oman",
-    "score": 5,
-    "why": "not built: only 2 independent report(s) (3 sites)"
+    "title": "Canada's military is using Palantir software. What are the risks?",
+    "score": 4,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Canada's military is using Palantir software. What are the risks?",
+    "title": "What Ottawa's 'RRSP for life' plan means for Canadian seniors",
     "score": 4,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
@@ -1014,12 +1007,12 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "What Ottawa's 'RRSP for life' plan means for Canadian seniors",
+    "title": "Receiver Steele and TE Schlepp connect for game winner in 3OT as Montana State beats Idaho State",
     "score": 4,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Receiver Steele and TE Schlepp connect for game winner in 3OT as Montana State beats Idaho State",
+    "title": "Sandfort’s 25 points help lead Nebraska past Providence 67-58",
     "score": 4,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
@@ -1031,15 +1024,15 @@
     "key": "auto-333e6377",
     "words": [
      "budget's",
-     "foreign",
      "billion",
+     "foreign",
      "sector",
      "budget",
      "calls"
     ],
     "score": 16,
-    "outlets": 5,
-    "carriers": 9,
+    "outlets": 4,
+    "carriers": 8,
     "tag": "Developing",
     "title": "Budget offers little new relief for middle-income Canadians",
     "url": "https://www.ckom.com/2026/11/07/budget-offers-little-new-relief-for-middle-income-canadians/",
@@ -1062,7 +1055,7 @@
      "alt": "Budget offers little new relief for middle-income Canadians",
      "outlet": "CKOM / PAnow",
      "url": "https://www.ckom.com/2026/11/07/budget-offers-little-new-relief-for-middle-income-canadians/",
-     "since": "2026-11-08T03:41:53.419950+00:00"
+     "since": "2026-11-08T03:51:51.567456+00:00"
     },
     "photo_seen": [
      "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/648/files/2026/11/grocery-cp-110726.jpg"
@@ -1077,7 +1070,7 @@
       "url": "https://www.ckom.com/2026/11/07/budget-offers-little-new-relief-for-middle-income-canadians/"
      }
     ],
-    "independent": 5,
+    "independent": 4,
     "reports": [
      {
       "t": "Sat 3:40 p.m.",
@@ -1128,14 +1121,6 @@
       "desc": "Canada’s aid sector is expressing dismay over the first federal budget in more than 15 years to make no mention of foreign aid, and is calling on Ottawa to outline its vision in an upcoming foreign policy review."
      },
      {
-      "t": "Sat 7:00 a.m.",
-      "iso": "2026-11-07T12:00:00+00:00",
-      "outlet": "Toronto Star",
-      "title": "What Mark Carney’s budget reveals about the ridings Liberals want to keep and win",
-      "url": "https://www.thestar.com/politics/federal/what-mark-carney-s-budget-reveals-about-the-ridings-liberals-want-to-keep-and-win/article_b591b5e1-6e33-4ff5-83a1-2205e8ea67c4.html",
-      "desc": "Ridings of two floor-crossers to the Liberals got project funding in Thursday's budget, but so did Pierre Poilievre's."
-     },
-     {
       "t": "Sat 6:00 a.m.",
       "iso": "2026-11-07T11:00:09+00:00",
       "outlet": "CityNews Halifax",
@@ -1149,7 +1134,7 @@
       "outlet": "CBC News",
       "title": "Farmers pleased with federal budget's proposed changes allowing land to be given to nieces, nephews tax-free",
       "url": "https://www.cbc.ca/news/canada/manitoba/farm-rollover-budget-nieces-nephews-9.7413050?cmp=rss",
-      "desc": ""
+      "desc": "Expanded tax rollover rules in the 2026 federal budget are set to allow Canadian farm families to pass land down to nieces and nephews tax-free, a move producers and industry experts call a game-changer for preserving family operations."
      }
     ],
     "sources": [
@@ -1242,23 +1227,6 @@
       "copies": []
      },
      {
-      "t": "Sat 7:00 a.m.",
-      "primary": false,
-      "outlet": "Toronto Star",
-      "title": "What Mark Carney’s budget reveals about the ridings Liberals want to keep and win",
-      "url": "https://www.thestar.com/politics/federal/what-mark-carney-s-budget-reveals-about-the-ridings-liberals-want-to-keep-and-win/article_b591b5e1-6e33-4ff5-83a1-2205e8ea67c4.html",
-      "desc": "Ridings of two floor-crossers to the Liberals got project funding in Thursday's budget, but so did Pierre Poilievre's.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Toronto Star",
-        "src": "Torstar",
-        "byline": "own staff: producer"
-       }
-      ],
-      "copies": []
-     },
-     {
       "t": "Sat 6:00 a.m.",
       "primary": false,
       "outlet": "CBC News",
@@ -1289,24 +1257,8 @@
     "fronts_who": [],
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (3 cities).",
-    "weight": 42.5,
+    "weight": 41.0,
     "videos": [
-     {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=tS1zS-0oS2k",
-      "title": "Diving into the details of Budget 2026 and how Ottawa plans to ease the affordability crisis",
-      "img": "https://i.ytimg.com/vi/tS1zS-0oS2k/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=QT-A_LxHwJ4",
-      "title": "Canada’s business community reacts to 2026 federal budget",
-      "img": "https://i.ytimg.com/vi/QT-A_LxHwJ4/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
      {
       "net": "CTV News",
       "url": "https://www.youtube.com/watch?v=CzNmzOdI2HY",
@@ -1320,6 +1272,22 @@
       "url": "https://www.youtube.com/watch?v=bhmO833D7kU",
       "title": "Mixed reaction from Albertans to federal budget | CTV News Edmonton at 11:30 for Nov. 6, 2026",
       "img": "https://i.ytimg.com/vi/bhmO833D7kU/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=OgaqPzZnLKU",
+      "title": "Federal budget proposes funding to help build, refurbish ice rinks | Hanomansing Live",
+      "img": "https://i.ytimg.com/vi/OgaqPzZnLKU/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=phzrZhO2EkA",
+      "title": "Political Pulse: Carney tables a budget, Trump’s policies cost him the midterms | Power & Politics",
+      "img": "https://i.ytimg.com/vi/phzrZhO2EkA/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1370,7 +1338,7 @@
    "id": "gdLqazgRJU0",
    "r": "ca",
    "o": "APTN News",
-   "t": "On the Outside: Their sentences are over, but their struggle is just beginning | APTN Investigates",
+   "t": "On the Outside: The challenges of life after incarceration | APTN Investigates",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=gdLqazgRJU0",
@@ -1479,20 +1447,6 @@
    "geo": "unknown"
   },
   {
-   "id": "KXXGT9fYgto",
-   "r": "ca",
-   "o": "CityNews",
-   "t": "Premier Smith defends $84 million cost of Alberta referendum",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=KXXGT9fYgto",
-   "img": "https://i.ytimg.com/vi/KXXGT9fYgto/hqdefault.jpg",
-   "up": "2026-11-07",
-   "added": "2026-11-08T01:46:22.666299+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "eck9eDDnWh8",
    "r": "ca",
    "o": "CP24",
@@ -1524,13 +1478,27 @@
    "id": "0brf9IQ3NEg",
    "r": "ca",
    "o": "Global News",
-   "t": "Global National: Nov. 7, 2026 | Why Trump's new chief of staff may be bad for Canada",
+   "t": "Global National: Nov. 7, 2026 | Trump's new Chief of Staff Miller may be bad news for Canada",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=0brf9IQ3NEg",
    "img": "https://i.ytimg.com/vi/0brf9IQ3NEg/hqdefault.jpg",
    "up": "2026-11-07",
    "added": "2026-11-08T03:30:14.148300+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "qJPCQelVP8M",
+   "r": "ca",
+   "o": "CityNews",
+   "t": "Montreal Alouettes punch Grey Cup ticket with 33-23 win over Winnipeg",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=qJPCQelVP8M",
+   "img": "https://i.ytimg.com/vi/qJPCQelVP8M/hqdefault.jpg",
+   "up": "2026-11-07",
+   "added": "2026-11-08T03:50:13.552493+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1783,6 +1751,34 @@
    "img": "https://i.ytimg.com/vi/cLvwAUfQR_4/hqdefault.jpg",
    "up": "2026-11-07",
    "added": "2026-11-08T03:30:14.148300+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "oGFZj0R1BdQ",
+   "r": "us",
+   "o": "PBS NewsHour",
+   "t": "How the world is reacting to America's midterm results",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=oGFZj0R1BdQ",
+   "img": "https://i.ytimg.com/vi/oGFZj0R1BdQ/hqdefault.jpg",
+   "up": "2026-11-06",
+   "added": "2026-11-08T03:50:13.552493+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "J-IJ3XU7tT8",
+   "r": "us",
+   "o": "PBS NewsHour",
+   "t": "PBS News Hour full episode, Nov. 6, 2026",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=J-IJ3XU7tT8",
+   "img": "https://i.ytimg.com/vi/J-IJ3XU7tT8/hqdefault.jpg",
+   "up": "2026-11-06",
+   "added": "2026-11-08T03:50:13.552493+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2292,20 +2288,6 @@
     "outlet": "CBC News",
     "title": "Republicans ran away from Trump's Canadian tariffs, but not far enough",
     "url": "https://www.cbc.ca/news/politics/midterms-canada-tariffs-trade-war-canada-9.7410974?cmp=rss"
-   },
-   {
-    "t": "Thu 4:15 p.m.",
-    "iso": "2026-11-05T21:15:00+00:00",
-    "outlet": "Toronto Star",
-    "title": "Federal budget pumps billions into Canadian culture amid trade war",
-    "url": "https://www.thestar.com/politics/federal/federal-budget-pumps-billions-into-canadian-culture-amid-trade-war/article_a3b3c5e5-fa3b-4ffc-b919-49a639355be5.html"
-   },
-   {
-    "t": "Wed 6:30 p.m.",
-    "iso": "2026-11-04T23:30:00+00:00",
-    "outlet": "Toronto Star",
-    "title": "Carney government officials don't expect big change to trade talks after dramatic U.S. elections",
-    "url": "https://www.thestar.com/politics/carney-government-officials-don-t-expect-big-change-to-trade-talks-after-dramatic-u-s-elections/article_af472624-142b-40dc-8b9c-4dd80a0aff92.html"
    }
   ],
   "usmedia": []
@@ -2314,7 +2296,7 @@
   "edition": "Saturday night, November 7",
   "lines": [
    "Good evening. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
-   "Aid sector calls out lack of any mention of foreign aid in federal budget, The Canadian Press reports.",
+   "Aid sector calls out omission of foreign aid in federal budget, The Canadian Press reports.",
    "Trump offers UFC boss Dana White press secretary role, The Canadian Press reports.",
    "A Polish man with far-right views drove into a busy central square in Krakow on Saturday and opened fire, killing six people and injuring 15 others before police shot and wounded him, authorities said.",
    "Israel’s president asks Gadi Eisenkot, Netanyahu’s rival, to form new government, The Associated Press reports.",
@@ -2387,6 +2369,22 @@
    "auto": true
   },
   {
+   "cat": "intl",
+   "media": "none",
+   "initials": "UN",
+   "name": "United Nations",
+   "role": "UN News",
+   "date": "Nov 7",
+   "platform": "Official statement",
+   "handle": "news.un.org",
+   "hed": "‘For the first time I have my own chair’: Gaza siblings find new freedom",
+   "summary": "In Gaza, 10-year-old Anas is one of three siblings born without legs and with only two fingers on each of their hands. They struggle to move around and perform daily activities like eating and writing independently.",
+   "href": "https://news.un.org/feed/view/en/story/2026/11/1168759",
+   "report": false,
+   "iso": "2026-11-07T12:00:00+00:00",
+   "auto": true
+  },
+  {
    "cat": "pm",
    "media": "none",
    "initials": "MC",
@@ -2400,6 +2398,22 @@
    "href": "https://www.pm.gc.ca/en/news/news-releases/2026/11/06/prime-minister-carney-launches-plan-put-canada-path-end-homelessness",
    "report": false,
    "iso": "2026-11-06T17:24:40+00:00",
+   "auto": true
+  },
+  {
+   "cat": "intl",
+   "media": "none",
+   "initials": "UN",
+   "name": "United Nations",
+   "role": "UN News",
+   "date": "Nov 6",
+   "platform": "Official statement",
+   "handle": "news.un.org",
+   "hed": "Afghanistan faces deepening humanitarian crisis amid sweeping rights restrictions",
+   "summary": "Afghanistan stands at a “difficult crossroad” more than five years after the Taliban returned to power, a senior UN official said on Friday. Relative stability and security are being undercut by a fragile economy, sweeping curbs on rights…",
+   "href": "https://news.un.org/feed/view/en/story/2026/11/1168758",
+   "report": false,
+   "iso": "2026-11-06T12:00:00+00:00",
    "auto": true
   }
  ],
@@ -2725,13 +2739,13 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Sat 8:47 p.m.",
-   "iso": "2026-11-08T01:47:41+00:00",
-   "title": "What we know so far after Krakow gun attack",
-   "summary": "Six people were killed in a random shooting in the city's main square, and three bodies were later found at the home of the attacker.",
-   "outlet": "BBC News, Times Colonist, ABC News, The Japan Times, CTV News, CP24",
-   "url": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
-   "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/f6c3/live/95455f00-dac5-11f1-bda8-29fb69dbc026.jpg"
+   "t": "Sat 10:36 p.m.",
+   "iso": "2026-11-08T03:36:11+00:00",
+   "title": "Polish PM says Krakow mass shooter’s family found dead inside home",
+   "summary": "A Polish man with far-right views drove into a busy central square in Krakow on Saturday and opened fire, killing six people and injuring 15 others before police shot and wounded him, authorities said.",
+   "outlet": "CTV News, CP24, BBC News, Times Colonist, ABC News, The Japan Times",
+   "url": "https://www.ctvnews.ca/world/article/polish-gunman-who-killed-6-people-in-krakow-has-ultranationalistic-views-minister-says/",
+   "img": "https://www.ctvnews.ca/resizer/v2/S5ABPFAK7ZGONHDOQR2BT2SGAY.jpg?smart=true&auth=27e25f1c097f84484f0ba8303035fe9cd71191ef3f692963fd80a67c12568ea9&width=1200&height=630"
   },
   {
    "desk": "world",
@@ -2894,19 +2908,19 @@
    "ca": true,
    "h": [
     "CBC News - Latest Canada, World, Entertainment and Business News",
-    "The age of AI warfare is here. Is Canada ready?",
-    "Russia has reportedly already used autonomous drones to deadly effect in Ukraine",
-    "Canada is relying on a controversial U.S. tech company for military software",
-    "Why Canada’s military deal with Palantir sparks sovereignty fears",
-    "UFC boss Dana White says he's meeting with Trump after press secretary job offer"
+    "What Ottawa's 'RRSP for life' plan means for Canadian seniors",
+    "Experts say the plan cuts complexity, but ignores bigger issues for many Canadian seniors",
+    "Your questions about this year's federal budget, answered",
+    "7 takeaways from the Carney government's 2nd budget",
+    "Will Canada’s $36B gamble fix its productivity problem? | About That"
    ],
    "u": [
     "",
-    "https://www.cbc.ca/news/canada/ai-drones-in-warfare-9.7407846",
+    "https://www.cbc.ca/news/business/rrsp-for-life-9.7412568",
     "",
-    "https://www.cbc.ca/news/politics/palantir-canadian-military-9.7409099",
-    "https://www.cbc.ca/player/play/video/9.7413008",
-    "https://www.cbc.ca/news/world/trump-press-secretary-ufc-dana-white-9.7413697"
+    "https://www.cbc.ca/news/canada/federal-budget-questions-answered-9.7412182",
+    "https://www.cbc.ca/news/politics/highlights-federal-liberal-budget-2026-9.7411046",
+    "https://www.cbc.ca/player/play/video/9.7413311"
    ]
   },
   {
@@ -3070,26 +3084,6 @@
    ]
   },
   {
-   "o": "CBS News",
-   "ca": false,
-   "h": [
-    "Trump told 60 Minutes to expect post-midterm firings",
-    "These House and Senate midterm races don't have winners yet",
-    "What Stephen Miller has pushed for while in Trump administration",
-    "Acton says she has \"no intention\" of speaking to Ramaswamy",
-    "Trump says he offered UFC's Dana White the press secretary role",
-    "Israel's president taps opposition candidate Eisenkot to form a government"
-   ],
-   "u": [
-    "https://www.cbsnews.com/news/trump-60-minutes-midterm-election-firings-susie-wiles/",
-    "https://www.cbsnews.com/news/2026-midterm-election-house-senate-projections-toss-up/",
-    "https://www.cbsnews.com/news/stephen-miller-chief-of-staff-trump-immigration-policies/",
-    "https://www.cbsnews.com/news/amy-acton-vivek-ramaswamy-ohio-governor-campaign-ad/",
-    "https://www.cbsnews.com/news/trump-offers-white-house-press-secretary-role-dana-white/",
-    "https://www.cbsnews.com/news/israel-election-government-gadi-eisenkot-benjamin-netanyahu/"
-   ]
-  },
-  {
    "o": "ABC News",
    "ca": false,
    "h": [
@@ -3179,7 +3173,7 @@
     "url": "https://www.youtube.com/watch?v=XtLl_wi6H3A",
     "img": "https://i.ytimg.com/vi/XtLl_wi6H3A/hqdefault.jpg",
     "story": "Middle East latest, Trump White House updates, Melania Trump visits LS",
-    "watching": "427",
+    "watching": "421",
     "also": [
      {
       "net": "The White House live",
@@ -3298,7 +3292,7 @@
    "story": "Iran war live: US moves to block land supply routes; UAE rescues 22 sa",
    "title": "Iran war live: US moves to block land supply routes; UAE rescues 22 sailors",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/8/iran-war-live-explosions-hit-qeshm-us-moves-to-block-land-supply-routes?traffic_source=rss",
-   "updated": "2026-11-08T03:31:16+00:00",
+   "updated": "2026-11-08T03:45:00+00:00",
    "ended": false,
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-08T003844Z_1904518215_RC2CJOAU5F99_RTRMADP_3_IRAN-CRISIS-BLOCKADE-1794107413_532558-1794107549.jpg?resize=1200%2C630&quality=80"
   }
@@ -3358,14 +3352,6 @@
      "tie": "Federal budget"
     },
     {
-     "t": "Fri 5:47 p.m.",
-     "iso": "2026-11-06T22:47:00+00:00",
-     "outlet": "Toronto Star",
-     "title": "Federal budget looks to restore auditor general's access to privileged information",
-     "url": "https://www.thestar.com/politics/federal/federal-budget-looks-to-restore-auditor-general-s-access-to-privileged-information/article_6b142c92-ed8c-5ece-ad7e-539c510b62cd.html",
-     "tie": "Federal budget"
-    },
-    {
      "t": "Fri 5:19 p.m.",
      "iso": "2026-11-06T22:19:54+00:00",
      "outlet": "Daily Hive",
@@ -3387,6 +3373,14 @@
      "outlet": "CBC News",
      "title": "‘Devil in the detail’ for how Ottawa’s budget could help long term: MUN economist",
      "url": "https://www.cbc.ca/news/canada/newfoundland-labrador/ottawa-budget-nl-9.7412197?cmp=rss",
+     "tie": "Federal budget"
+    },
+    {
+     "t": "Fri 12:56 p.m.",
+     "iso": "2026-11-06T17:56:19+00:00",
+     "outlet": "Global News",
+     "title": "Budget 2026 is proposing an ‘RRSP-for-life.’ Here’s what it means for you",
+     "url": "https://globalnews.ca/news/12139983/budget-2026-rrsp-for-life/",
      "tie": "Federal budget"
     }
    ],
@@ -3470,7 +3464,7 @@
    "auto": true,
    "desk": "World",
    "status": "Developing",
-   "at": "2026-11-08T01:47:41+00:00",
+   "at": "2026-11-08T03:36:11+00:00",
    "exact": true,
    "img": "live/img/auto-97704d8e-41d699142d.jpg",
    "credit": "via Al Jazeera",
@@ -3480,49 +3474,59 @@
    "newl": "Now carried by 6 independent newsrooms.",
    "rows": [
     [
+     "CTV News",
+     "A Polish man with far-right views drove into a busy central square in Krakow on Saturday and opened fire, killing six people and injuring 15 others before police shot and wounded him, authorities said.",
+     [
+      1
+     ]
+    ],
+    [
      "BBC News",
      "Six people were killed in a random shooting in the city's main square, and three bodies were later found at the home of the attacker.",
      [
-      1
+      3
      ]
     ],
     [
      "Times Colonist",
      "KRAKOW, Poland (AP) — A Polish man with far-right views drove into a busy central square in Krakow on Saturday and opened fire, killing six people and injuring 15 others before police shot and wounded him, authorities said.",
      [
-      2
+      4
      ]
     ],
     [
      "Al Jazeera",
      "Polish Prime Minister Donald Tusk describes a deadly shooting in Krakow that killed six people as an act of ‘terrorism’.",
      [
-      3
+      5
      ]
     ],
     [
      "NBC News",
      "Authorities in Poland say they are investigating a shooting on Saturday that left six people dead and at least a 15 injured in the main market square in Krakow, a cultural center of the historic city. NBC News’ Daniele Hamamdjian reports.",
      [
-      4
+      6
      ]
     ],
     [
      "The Japan Times",
      "The scenes of carnage in one of Poland’s main tourist attractions shocked a nation that has long viewed itself as safer than much of western Europe.",
      [
-      5
-     ]
-    ],
-    [
-     "CTV News",
-     "A Polish man with far-right views drove into a busy central square in Krakow on Saturday and opened fire, killing six people and injuring 15 others before police shot and wounded him, authorities said.",
-     [
-      6
+      7
      ]
     ]
    ],
    "src": [
+    [
+     "CTV News",
+     "Polish PM says Krakow mass shooter’s family found dead inside home",
+     "https://www.ctvnews.ca/world/article/polish-gunman-who-killed-6-people-in-krakow-has-ultranationalistic-views-minister-says/"
+    ],
+    [
+     "CP24",
+     "Polish PM says Krakow mass shooter’s family found dead inside home",
+     "https://www.cp24.com/news/world/2026/11/07/polish-gunman-who-killed-6-people-in-krakow-has-ultranationalistic-views-minister-says/"
+    ],
     [
      "BBC News",
      "What we know so far after Krakow gun attack",
@@ -3549,22 +3553,12 @@
      "https://www.japantimes.co.jp/news/2026/11/08/world/crime-legal/poland-krakow-mass-shooting/"
     ],
     [
-     "CTV News",
-     "Polish PM says Krakow mass shooter’s family found dead inside home",
-     "https://www.ctvnews.ca/world/article/polish-gunman-who-killed-6-people-in-krakow-has-ultranationalistic-views-minister-says/"
-    ],
-    [
-     "CP24",
-     "Polish PM says Krakow mass shooter’s family found dead inside home",
-     "https://www.cp24.com/news/world/2026/11/07/polish-gunman-who-killed-6-people-in-krakow-has-ultranationalistic-views-minister-says/"
-    ],
-    [
      "Euronews",
      "Poland: Footage shows people taking cover as a gunman opens fire in Krakow",
      "https://www.euronews.com/video/2026/11/07/poland-footage-shows-people-taking-cover-as-a-gunman-opens-fire-in-krakow"
     ]
    ],
-   "lead": 7
+   "lead": 2
   }
  ],
  "geo": {
