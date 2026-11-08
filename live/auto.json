@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-08T09:55:55.982568+00:00",
- "checkedLabel": "Sun 4:55 a.m.",
+ "checked": "2026-11-08T10:01:59.908621+00:00",
+ "checkedLabel": "Sun 5:01 a.m.",
  "stories": [
   {
    "key": "top",
@@ -30,6 +30,24 @@
   }
  ],
  "wire": [
+  [
+   "Sun 5:00 a.m.",
+   "Latest",
+   "Inside the Mississauga barbershop where haircuts, local art and comedy share the spotlight",
+   "Toronto Star",
+   "https://www.thestar.com/news/gta/li-heartbreak-hotel/article_7b100ab1-578a-4643-9e7b-94091fe4f54c.html",
+   "2026-11-08T10:00:00+00:00",
+   1
+  ],
+  [
+   "Sun 5:00 a.m.",
+   "Latest",
+   "Driver sought after man and his dog dragged, seriously injured in hit-and run",
+   "Toronto Star",
+   "https://www.thestar.com/news/gta/driver-sought-after-man-and-his-dog-dragged-seriously-injured-in-hit-and-run/article_6818386f-a75b-4a0d-bb04-2b5dc452422e.html",
+   "2026-11-08T10:00:00+00:00",
+   1
+  ],
   [
    "Sun 4:30 a.m.",
    "World",
@@ -236,24 +254,6 @@
    "https://www.aljazeera.com/features/2026/11/8/as-ai-data-centres-guzzle-energy-can-we-harness-waste-heat?traffic_source=rss",
    "2026-11-08T08:17:12+00:00",
    1
-  ],
-  [
-   "Sun 3:07 a.m.",
-   "U.S.",
-   "Staff at the US center for AI safety are reporting to the White House, raising independence concerns",
-   "Toronto Star",
-   "https://www.thestar.com/news/world/united-states/staff-at-the-us-center-for-ai-safety-are-reporting-to-the-white-house-raising-independence-concerns/article_b3df1671-69f8-5661-b859-072fda275097.html",
-   "2026-11-08T08:07:07+00:00",
-   2
-  ],
-  [
-   "Sun 3:00 a.m.",
-   "World",
-   "‘AI clog’: UK public bodies battle onslaught of chatbot-generated complaints",
-   "The Guardian",
-   "https://www.theguardian.com/technology/2026/nov/08/ai-clog-public-bodies-local-authorities-onslaught-chatbot-generated-correspondence",
-   "2026-11-08T08:00:36+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -285,10 +285,20 @@
  ],
  "leads": [
   {
-   "score": 23,
+   "score": 22,
+   "title": "Israel’s president taps opposition candidate Eisenkot to form a government, in setback for Netanyahu",
+   "url": "https://www.ctvnews.ca/world/article/israels-president-taps-opposition-candidate-eisenkot-to-form-a-government-in-setback-for-netanyahu/",
+   "outlets": 20,
+   "why": [
+    "National Newswatch #2"
+   ],
+   "theme": ""
+  },
+  {
+   "score": 22,
    "title": "What Mark Carney’s budget reveals about the ridings Liberals want to keep and win",
    "url": "https://www.thestar.com/politics/federal/what-mark-carney-s-budget-reveals-about-the-ridings-liberals-want-to-keep-and-win/article_b591b5e1-6e33-4ff5-83a1-2205e8ea67c4.html",
-   "outlets": 5,
+   "outlets": 4,
    "why": [
     "National Newswatch #1",
     "National Newswatch #10",
@@ -300,16 +310,6 @@
    "theme": "Federal budget"
   },
   {
-   "score": 22,
-   "title": "Israel’s president taps opposition candidate Eisenkot to form a government, in setback for Netanyahu",
-   "url": "https://www.ctvnews.ca/world/article/israels-president-taps-opposition-candidate-eisenkot-to-form-a-government-in-setback-for-netanyahu/",
-   "outlets": 20,
-   "why": [
-    "National Newswatch #2"
-   ],
-   "theme": ""
-  },
-  {
    "score": 17,
    "title": "Staff at the US center for AI safety are reporting to the White House, raising independence concerns",
    "url": "https://www.thestar.com/news/world/united-states/staff-at-the-us-center-for-ai-safety-are-reporting-to-the-white-house-raising-independence-concerns/article_b3df1671-69f8-5661-b859-072fda275097.html",
@@ -318,10 +318,10 @@
    "theme": ""
   },
   {
-   "score": 16,
+   "score": 15,
    "title": "Briton among six dead after gunman opens fire in Kraków market square",
    "url": "https://www.theguardian.com/world/2026/nov/07/krakow-poland-shooting-market-square-deaths-gunman",
-   "outlets": 14,
+   "outlets": 13,
    "why": [],
    "theme": ""
   },
@@ -350,10 +350,10 @@
    "theme": ""
   },
   {
-   "score": 9,
+   "score": 10,
    "title": "It’s Morning in America. By all Means, Blame Canada.",
    "url": "https://www.policymagazine.ca/its-morning-in-america-by-all-means-blame-canada/",
-   "outlets": 7,
+   "outlets": 8,
    "why": [
     "National Newswatch #15"
    ],
@@ -379,6 +379,36 @@
   }
  ],
  "canada": [
+  {
+   "t": "Sun 5:00 a.m.",
+   "iso": "2026-11-08T10:00:00+00:00",
+   "region": "Nova Scotia",
+   "title": "N.S. launches interactive atlas to guide health resources",
+   "summary": "Dalhousie University launched the Nova Scotia Health Atlas on Friday. The online, interactive map shows data related to many different health, environmental, social and demographic issues.",
+   "outlet": "CBC News",
+   "url": "https://www.cbc.ca/news/canada/nova-scotia/n-s-launches-interactive-atlas-to-guide-health-resources-9.7411882",
+   "img": "https://i.cbc.ca/ais/1.6745701,1678827288000/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1087%2C611%29%3BResize%3D620"
+  },
+  {
+   "t": "Sun 5:00 a.m.",
+   "iso": "2026-11-08T10:00:00+00:00",
+   "region": "Nova Scotia",
+   "title": "Kite flying in Ukraine: One N.S. veteran's mission to help children in a war zone",
+   "summary": "Seth Congdon had a 15-year military career. Now he's heading back into a warzone, to teach children skills to help them look up at the sky without a fear of drones and missiles.",
+   "outlet": "CBC News",
+   "url": "https://www.cbc.ca/news/canada/nova-scotia/altantic-voice-seth-congdon-kite-workshops-ukraine-9.7389652",
+   "img": "https://i.cbc.ca/ais/5a89375f-05a2-414e-b7a9-0191c6bf3362,1792756301138/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C264%2C2815%2C1583%29%3BResize%3D620"
+  },
+  {
+   "t": "Sun 5:00 a.m.",
+   "iso": "2026-11-08T10:00:00+00:00",
+   "region": "North",
+   "title": "Some bring hot tea, others spill it: Dawson City seniors getting healthy and having fun",
+   "summary": "Every Wednesday, a group of Dawson City seniors get together to hike the town's trails. It's a program organized by ElderActive and meant to get people together to socialize, and exercise during the winter months.",
+   "outlet": "CBC News",
+   "url": "https://www.cbc.ca/news/canada/north/some-bring-hot-tea-others-spill-it-dawson-city-seniors-getting-healthy-and-having-fun-9.7411261",
+   "img": "https://i.cbc.ca/ais/f877ef91-602e-4513-8bd2-6497e381c1f3,1793916173175/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C535%2C5712%2C3213%29%3BResize%3D620"
+  },
   {
    "t": "Sun 4:30 a.m.",
    "iso": "2026-11-08T09:30:00+00:00",
@@ -445,339 +475,16 @@
   "stale_since": "2026-10-28T00:15:00+00:00",
   "stories": [
    {
-    "key": "auto-333e6377",
-    "words": [
-     "budget's",
-     "foreign",
-     "sector",
-     "budget",
-     "comes",
-     "calls"
-    ],
-    "score": 23,
-    "outlets": 6,
-    "carriers": 10,
-    "tag": "Breaking",
-    "title": "Poilievre pans Liberal budget's $15M capital gains exemption, calls for 'simpler' plan",
-    "url": "https://www.cbc.ca/news/politics/poilievre-capital-gains-exemption-budget-2026-9.7413640",
-    "outlet": "CBC News",
-    "t": "Sun 4:00 a.m.",
-    "iso": "2026-11-08T09:00:00+00:00",
-    "summary": "Conservative Leader Pierre Poilievre is criticizing a key feature of the Carney government's latest budget, arguing the proposed $15-million capital gains exemption on the sale of qualifying shares from a Canadian company applies too narrowly, excluding key businesses.",
-    "first": {
-     "outlet": "CBC News",
-     "url": "https://www.cbc.ca/news/canada/manitoba/farm-rollover-budget-nieces-nephews-9.7413050?cmp=rss",
-     "t": "Sat 6:00 a.m.",
-     "title": "Farmers pleased with federal budget's proposed changes allowing land to be given to nieces, nephews tax-free",
-     "iso": "2026-11-07T11:00:00+00:00"
-    },
-    "newest": "2026-11-08T09:00:00+00:00",
-    "photo": {
-     "src": "live/img/auto-333e6377-02dce7a3a6.jpg",
-     "orig": "https://i.cbc.ca/ais/d45de024-aac7-44bf-a49e-64932033f138,1794071929697/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C506%2C7450%2C4190%29%3BResize%3D620",
-     "caption": "Conservative Leader Pierre Poilievre rises after the tabling of the federal budget in the House of Commons, in Ottawa on Thursday. (Justin Tang/The Canadian Press) — via CBC News",
-     "alt": "Conservative Leader Pierre Poilievre rises after the tabling of the federal budget in the House of Commons, in Ottawa on Thursday.",
-     "outlet": "CBC News",
-     "url": "https://www.cbc.ca/news/politics/poilievre-capital-gains-exemption-budget-2026-9.7413640",
-     "since": "2026-11-08T09:58:59.458709+00:00"
-    },
-    "photo_seen": [
-     "https://i.cbc.ca/ais/d45de024-aac7-44bf-a49e-64932033f138,1794071929697/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C506%2C7450%2C4190%29%3BResize%3D620"
-    ],
-    "photos": [
-     {
-      "src": "live/img/auto-333e6377-02dce7a3a6.jpg",
-      "orig": "https://i.cbc.ca/ais/d45de024-aac7-44bf-a49e-64932033f138,1794071929697/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C506%2C7450%2C4190%29%3BResize%3D620",
-      "caption": "Conservative Leader Pierre Poilievre rises after the tabling of the federal budget in the House of Commons, in Ottawa on Thursday. (Justin Tang/The Canadian Press) — via CBC News",
-      "alt": "Conservative Leader Pierre Poilievre rises after the tabling of the federal budget in the House of Commons, in Ottawa on Thursday.",
-      "outlet": "CBC News",
-      "url": "https://www.cbc.ca/news/politics/poilievre-capital-gains-exemption-budget-2026-9.7413640"
-     }
-    ],
-    "independent": 6,
-    "reports": [
-     {
-      "t": "Sun 4:00 a.m.",
-      "iso": "2026-11-08T09:00:00+00:00",
-      "outlet": "CBC News",
-      "title": "Poilievre pans Liberal budget's $15M capital gains exemption, calls for 'simpler' plan",
-      "url": "https://www.cbc.ca/news/politics/poilievre-capital-gains-exemption-budget-2026-9.7413640",
-      "desc": "Conservative Leader Pierre Poilievre is criticizing a key feature of the Carney government's latest budget, arguing the proposed $15-million capital gains exemption on the sale of qualifying shares from a Canadian company applies too narrowly, excluding key businesses."
-     },
-     {
-      "t": "Sun 3:30 a.m.",
-      "iso": "2026-11-08T08:30:22+00:00",
-      "outlet": "VOCM",
-      "title": "November 8, 2026 – What grade do you give the federal budget when it comes to helping Canadians with affordability?",
-      "url": "https://vocm.com/2026/11/08/316023/",
-      "desc": "Local News Now. Newfoundland and Labrador's News Leader."
-     },
-     {
-      "t": "Sat 3:40 p.m.",
-      "iso": "2026-11-07T20:40:30+00:00",
-      "outlet": "CKOM / PAnow",
-      "title": "Budget offers little new relief for middle-income Canadians",
-      "url": "https://www.ckom.com/2026/11/07/budget-offers-little-new-relief-for-middle-income-canadians/",
-      "desc": "While Ottawa earmarked more help for lower-income households, families with earnings above income-tested thresholds may be iced out as the government banks on economic growth to boost purchasing power."
-     },
-     {
-      "t": "Sat 2:19 p.m.",
-      "iso": "2026-11-07T19:19:25+00:00",
-      "outlet": "Daily Hive",
-      "title": "Canada's 2026 federal budget sets out $50 billion for Indigenous communities over 10 years",
-      "url": "https://dailyhive.com/vancouver/canada-2026-federal-budget-indigenous-communities",
-      "desc": "Prime Minister Mark Carney's 2026 federal budget sets aside roughly $50 billion in funding for Indigenous communities over 10 years."
-     },
-     {
-      "t": "Sat 12:08 p.m.",
-      "iso": "2026-11-07T17:08:50+00:00",
-      "outlet": "CTV News",
-      "title": "Federal budget brings major funding news for two Regina cultural institutions",
-      "url": "https://www.ctvnews.ca/regina/article/federal-budget-brings-major-funding-news-for-two-regina-cultural-institutions/",
-      "desc": "Saskatchewan is now getting its first national museum after the federal government announced plans to designate Regina’s RCMP Heritage Centre."
-     },
-     {
-      "t": "Sat 10:16 a.m.",
-      "iso": "2026-11-07T15:16:48+00:00",
-      "outlet": "Global News",
-      "title": "Aid sector calls out omission of foreign aid in federal budget",
-      "url": "https://globalnews.ca/news/12141139/budget-2026-foreign-aid/",
-      "desc": "The budget tabled Thursday by Prime Minister Mark Carney's government makes no mention of international assistance, foreign aid or international development."
-     },
-     {
-      "t": "Sat 10:00 a.m.",
-      "iso": "2026-11-07T15:00:22+00:00",
-      "outlet": "Vancouver Sun",
-      "title": "Federal budget's $6.5 billion commitment to forestry comes at 'critical time'",
-      "url": "https://vancouversun.com/news/local-news/federal-budgets-6-5-billion-commitment-to-forestry-comes-at-critical-time",
-      "desc": ""
-     },
-     {
-      "t": "Sat 7:39 a.m.",
-      "iso": "2026-11-07T12:39:31+00:00",
-      "outlet": "CP24",
-      "title": "Federal budget is ‘silent’ on foreign assistance: aid sector",
-      "url": "https://www.cp24.com/news/world/2026/11/07/federal-budget-is-silent-on-foreign-assistance-aid-sector/",
-      "desc": "Canada’s aid sector is expressing dismay over the first federal budget in more than 15 years to make no mention of foreign aid, and is calling on Ottawa to outline its vision in an upcoming foreign policy review."
-     },
-     {
-      "t": "Sat 7:00 a.m.",
-      "iso": "2026-11-07T12:00:00+00:00",
-      "outlet": "Toronto Star",
-      "title": "What Mark Carney’s budget reveals about the ridings Liberals want to keep and win",
-      "url": "https://www.thestar.com/politics/federal/what-mark-carney-s-budget-reveals-about-the-ridings-liberals-want-to-keep-and-win/article_b591b5e1-6e33-4ff5-83a1-2205e8ea67c4.html",
-      "desc": ""
-     },
-     {
-      "t": "Sat 6:00 a.m.",
-      "iso": "2026-11-07T11:00:09+00:00",
-      "outlet": "CityNews Halifax",
-      "title": "Aid sector calls out lack of any mention of foreign aid in federal budget",
-      "url": "https://halifax.citynews.ca/2026/11/07/aid-sector-calls-out-lack-of-any-mention-of-foreign-aid-in-federal-budget/",
-      "desc": ""
-     }
-    ],
-    "sources": [
-     {
-      "t": "Sun 4:00 a.m.",
-      "primary": false,
-      "outlet": "CBC News",
-      "title": "Poilievre pans Liberal budget's $15M capital gains exemption, calls for 'simpler' plan",
-      "url": "https://www.cbc.ca/news/politics/poilievre-capital-gains-exemption-budget-2026-9.7413640",
-      "desc": "Conservative Leader Pierre Poilievre is criticizing a key feature of the Carney government's latest budget, arguing the proposed $15-million capital gains exemption on the sale of qualifying shares from a Canadian company applies too narrowly, excluding key businesses.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "CBC News",
-        "src": "CBC",
-        "byline": "own staff: Producer"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Sun 3:30 a.m.",
-      "primary": false,
-      "outlet": "VOCM",
-      "title": "November 8, 2026 – What grade do you give the federal budget when it comes to helping Canadians with affordability?",
-      "url": "https://vocm.com/2026/11/08/316023/",
-      "desc": "Local News Now. Newfoundland and Labrador's News Leader.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "VOCM",
-        "src": "VOCM",
-        "byline": "[{\"@type\":\"Person\",\"name\":\"Mahalia Ardis\"}] \"Mahalia Ardis\" Mahalia Ardis "
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Sat 6:00 a.m.",
-      "primary": false,
-      "outlet": "CityNews Halifax",
-      "title": "Aid sector calls out lack of any mention of foreign aid in federal budget",
-      "url": "https://halifax.citynews.ca/2026/11/07/aid-sector-calls-out-lack-of-any-mention-of-foreign-aid-in-federal-budget/",
-      "desc": "OTTAWA — Canada's aid sector is expressing dismay over the first federal budget in more than 15 years to make no mention of foreign aid, and is calling on Ottawa to outline its vision in an upcoming foreign policy review.",
-      "wire": "The Canadian Press",
-      "by": [
-       {
-        "outlet": "CityNews Halifax",
-        "src": "The Canadian Press",
-        "byline": "3f5fe805acc41a6fdf\"}] \"Dylan Robertson, The Canadian Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CP24",
-        "src": "The Canadian Press",
-        "byline": "\"@type\": \"Person\",\n      \"name\": \"The Canadian Press\",\n      \n    }\n  ]"
-       },
-       {
-        "outlet": "Global News",
-        "src": "The Canadian Press",
-        "byline": "\"Dylan Robertson\" Name Damian aden holding On The Side Lines Johnny Kernal PJ McLean Anonymous David Best Johnny "
-       },
-       {
-        "outlet": "CTV News",
-        "src": "The Canadian Press",
-        "byline": "ington\" \"Joe Lofaro\" \"Olivia O'Malley\" \"The Canadian Press\" \"Hannah Kavanagh\""
-       },
-       {
-        "outlet": "CKOM / PAnow",
-        "src": "The Canadian Press",
-        "byline": "\"@type\":\"Person\",\"name\":\"Brett Bundale, The Canadian Press\"}] \"Brett Bundale,"
-       }
-      ],
-      "copies": [
-       {
-        "outlet": "CP24",
-        "url": "https://www.cp24.com/news/world/2026/11/07/federal-budget-is-silent-on-foreign-assistance-aid-sector/"
-       },
-       {
-        "outlet": "Global News",
-        "url": "https://globalnews.ca/news/12141139/budget-2026-foreign-aid/"
-       },
-       {
-        "outlet": "CTV News",
-        "url": "https://www.ctvnews.ca/regina/article/federal-budget-brings-major-funding-news-for-two-regina-cultural-institutions/"
-       },
-       {
-        "outlet": "CKOM / PAnow",
-        "url": "https://www.ckom.com/2026/11/07/budget-offers-little-new-relief-for-middle-income-canadians/"
-       }
-      ]
-     },
-     {
-      "t": "Sat 2:19 p.m.",
-      "primary": false,
-      "outlet": "Daily Hive",
-      "title": "Canada's 2026 federal budget sets out $50 billion for Indigenous communities over 10 years",
-      "url": "https://dailyhive.com/vancouver/canada-2026-federal-budget-indigenous-communities",
-      "desc": "Prime Minister Mark Carney's 2026 federal budget sets aside roughly $50 billion in funding for Indigenous communities over 10 years.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Daily Hive",
-        "src": "Daily Hive",
-        "byline": "[{\"@type\":\"Person\",\"name\":\"Kenneth Chan\",}] "
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Sat 10:00 a.m.",
-      "primary": false,
-      "outlet": "Vancouver Sun",
-      "title": "Federal budget's $6.5 billion commitment to forestry comes at 'critical time'",
-      "url": "https://vancouversun.com/news/local-news/federal-budgets-6-5-billion-commitment-to-forestry-comes-at-critical-time",
-      "desc": "",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Vancouver Sun",
-        "src": "Postmedia",
-        "byline": "[{\"@type\": \"Person\", \"name\": \"Derrick Penner\", \"alternateName\": \"depenner\", , , \"email\": \"depenner@postmedia.com\", \"desc"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Sat 7:00 a.m.",
-      "primary": false,
-      "outlet": "Toronto Star",
-      "title": "What Mark Carney’s budget reveals about the ridings Liberals want to keep and win",
-      "url": "https://www.thestar.com/politics/federal/what-mark-carney-s-budget-reveals-about-the-ridings-liberals-want-to-keep-and-win/article_b591b5e1-6e33-4ff5-83a1-2205e8ea67c4.html",
-      "desc": "Ridings of two floor-crossers to the Liberals got project funding in Thursday's budget, but so did Pierre Poilievre's.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Toronto Star",
-        "src": "Torstar",
-        "byline": "own staff: producer"
-       }
-      ],
-      "copies": []
-     }
-    ],
-    "replaces_top": false,
-    "events": [],
-    "theme": "Federal budget",
-    "canada": "canadian",
-    "canus": false,
-    "incoherent": false,
-    "popular": 5,
-    "us_election": false,
-    "fronts": 0,
-    "fronts_ca": 0,
-    "fronts_who": [],
-    "judgment": "national",
-    "judgment_why": "National: affects many people; carried across the country (national desks).",
-    "weight": 61.0,
-    "videos": [
-     {
-      "net": "CTV News",
-      "url": "https://www.youtube.com/watch?v=CzNmzOdI2HY",
-      "title": "Federal focuses outlined in budget earn London's praise | CTV News London at 11 for Nov. 6, 2026",
-      "img": "https://i.ytimg.com/vi/CzNmzOdI2HY/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CTV News",
-      "url": "https://www.youtube.com/watch?v=bhmO833D7kU",
-      "title": "Mixed reaction from Albertans to federal budget | CTV News Edmonton at 11:30 for Nov. 6, 2026",
-      "img": "https://i.ytimg.com/vi/bhmO833D7kU/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CBC News",
-      "url": "https://www.youtube.com/watch?v=OgaqPzZnLKU",
-      "title": "Federal budget proposes funding to help build, refurbish ice rinks | Hanomansing Live",
-      "img": "https://i.ytimg.com/vi/OgaqPzZnLKU/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CBC News",
-      "url": "https://www.youtube.com/watch?v=phzrZhO2EkA",
-      "title": "Political Pulse: Carney tables a budget, Trump’s policies cost him the midterms | Power & Politics",
-      "img": "https://i.ytimg.com/vi/phzrZhO2EkA/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     }
-    ]
-   },
-   {
     "key": "auto-67faf34b",
     "words": [
-     "poland",
      "krakow",
+     "poland",
      "pm"
     ],
-    "score": 16,
+    "score": 15,
     "outlets": 5,
     "carriers": 10,
-    "tag": "Developing",
+    "tag": "Breaking",
     "title": "What we know about the Krakow shooting that left six people dead",
     "url": "https://www.euronews.com/2026/11/08/what-we-know-about-the-krakow-shooting-that-left-six-people-dead",
     "outlet": "Euronews",
@@ -1072,8 +779,7 @@
     ],
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (national desks).",
-    "weight": 40.0,
-    "tag_why": "Developing, not Breaking: from abroad with no Canadian tie and 5 independent newsroom(s), under the six-source standard, while a Canadian story at the top has 6."
+    "weight": 39.0
    },
    {
     "key": "auto-9f6276b5",
@@ -1477,213 +1183,7 @@
       "up": ""
      }
     ]
-   }
-  ],
-  "considered": [
-   {
-    "title": "Poilievre pans Liberal budget's $15M capital gains exemption, calls for 'simpler' plan",
-    "url": "https://www.cbc.ca/news/politics/poilievre-capital-gains-exemption-budget-2026-9.7413640",
-    "rank": 1,
-    "live": "",
-    "weight": 61.0,
-    "score": 23,
-    "independent": 6,
-    "most_read": 5,
-    "canada": "canadian",
-    "theme": "Federal budget",
-    "top": true,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "Canadian and breaking",
-    "carriers": 10,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (national desks)."
    },
-   {
-    "title": "What we know about the Krakow shooting that left six people dead",
-    "url": "https://www.euronews.com/2026/11/08/what-we-know-about-the-krakow-shooting-that-left-six-people-dead",
-    "rank": 2,
-    "live": "",
-    "weight": 40.0,
-    "score": 16,
-    "independent": 5,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": true,
-    "fronts": 4,
-    "fronts_who": [
-     "CTV News",
-     "CP24",
-     "CBS News",
-     "BBC News"
-    ],
-    "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
-    "carriers": 10,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (national desks)."
-   },
-   {
-    "title": "Netanyahu rival Eisenkot to be tasked with forming new government following Israeli elections",
-    "url": "https://www.euronews.com/2026/11/08/netanyahu-rival-eisenkot-to-be-tasked-with-forming-new-government-following-israeli-electi",
-    "rank": 3,
-    "live": "",
-    "weight": 47,
-    "score": 22,
-    "independent": 5,
-    "most_read": 3,
-    "canada": "tie",
-    "theme": "",
-    "top": true,
-    "fronts": 6,
-    "fronts_who": [
-     "National Post",
-     "NBC News",
-     "CBS News",
-     "ABC News",
-     "BBC News",
-     "The Guardian"
-    ],
-    "rule": "From abroad, tied to Canada",
-    "carriers": 19,
-    "judgment": "national",
-    "why_judged": "National: leading 6 front pages (National Post, NBC News, CBS News, ABC News, BBC News, The Guardian)."
-   },
-   {
-    "title": "Italy's leader blames pro-Russian hackers for personal data leaks",
-    "url": "https://www.cbsnews.com/news/italy-giorgia-meloni-ukraine-russia-hack-data-leak/",
-    "rank": 4,
-    "live": "",
-    "weight": 18.0,
-    "score": 6,
-    "independent": 4,
-    "most_read": 0,
-    "canada": "tie",
-    "theme": "",
-    "top": false,
-    "fronts": 1,
-    "fronts_who": [
-     "The Guardian"
-    ],
-    "rule": "From abroad, tied to Canada",
-    "carriers": 4,
-    "judgment": "regional",
-    "why_judged": "Regional: affects some people; carried only by Toronto desks."
-   },
-   {
-    "title": "U.S. military says it fired on commercial vessel in Gulf of Oman after it attempted to breach blockade",
-    "url": "https://www.ctvnews.ca/world/article/us-military-says-it-fired-on-commercial-vessel-in-gulf-of-oman-after-it-attempted-to-breach-blockade/",
-    "rank": 5,
-    "live": "",
-    "weight": 34.0,
-    "score": 14,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "No Canadian tie",
-    "carriers": 12,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (7 cities)."
-   },
-   {
-    "title": "Earthquake hits central Japan, injuring more than 20 people",
-    "url": "https://www.aljazeera.com/news/2026/11/8/earthquake-hits-central-japan-injuring-more-than-20-people?traffic_source=rss",
-    "rank": 6,
-    "live": "",
-    "weight": 30,
-    "score": 13,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "No Canadian tie",
-    "carriers": 13,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (7 cities)."
-   },
-   {
-    "title": "Staff at the US center for AI safety are reporting to the White House, raising independence concerns",
-    "url": "https://www.thestar.com/news/world/united-states/staff-at-the-us-center-for-ai-safety-are-reporting-to-the-white-house-raising-independence-concerns/article_b3df1671-69f8-5661-b859-072fda275097.html",
-    "rank": 7,
-    "live": "",
-    "weight": 41,
-    "score": 17,
-    "independent": 7,
-    "most_read": 0,
-    "canada": "tie",
-    "theme": "",
-    "top": false,
-    "fronts": 7,
-    "fronts_who": [
-     "CTV News",
-     "CP24",
-     "NBC News",
-     "CBS News",
-     "ABC News",
-     "BBC News",
-     "The Guardian"
-    ],
-    "rule": "Leading other newsrooms' front pages (Canadian ones among them): the story everyone is leading with",
-    "carriers": 19,
-    "judgment": "national",
-    "why_judged": "National: leading 7 front pages (CTV News, CP24, NBC News, CBS News, ABC News, BBC News)."
-   },
-   {
-    "title": "Festival of Lights, Festival of Growth: A look at Diwali’s business impact in Canada",
-    "score": 11,
-    "why": "not built: only 2 independent report(s) (9 sites)"
-   },
-   {
-    "title": "It’s Morning in America. By all Means, Blame Canada.",
-    "score": 9,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Trump’s choice of Stephen Miller as Chief of Staff is making the Democrats’ great week, even better.",
-    "score": 7,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Kao Miura wins men’s figure skating title and completes Japanese sweep at Cup of China",
-    "score": 7,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Alexander says Bombers player taunted about late father in Alouettes' East final win",
-    "score": 7,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "What needs to happen for Canada to join Europe's flagship student exchange program?",
-    "score": 6,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "How the Democrats' midterm wave shows a path back to the presidency",
-    "score": 6,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Injured Wainwright soldiers benefit from cutting-edge Canadian burn research",
-    "score": 6,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Freshwater species are at risk. A new global threat map could help save some from brink of extinction",
-    "score": 6,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   }
-  ],
-  "moved": [],
-  "top_n": 3,
-  "more": [
    {
     "key": "auto-60a3ba6e",
     "words": [
@@ -1714,7 +1214,7 @@
      "alt": "Italy's leader blames pro-Russian hackers for personal data leaks",
      "outlet": "CBS News",
      "url": "https://www.cbsnews.com/news/italy-giorgia-meloni-ukraine-russia-hack-data-leak/",
-     "since": "2026-11-08T09:59:20.177858+00:00"
+     "since": "2026-11-08T10:05:04.063220+00:00"
     },
     "photo_seen": [
      "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/08/bd6c0b97-abfd-41de-a06c-370473e61868/thumbnail/1200x630/595cbb6d59cdb1247ae2f22deac3be36/gettyimages-2302910186.jpg"
@@ -1874,13 +1374,219 @@
     "judgment": "regional",
     "judgment_why": "Regional: affects some people; carried only by Toronto desks.",
     "weight": 18.0
+   }
+  ],
+  "considered": [
+   {
+    "title": "What we know about the Krakow shooting that left six people dead",
+    "url": "https://www.euronews.com/2026/11/08/what-we-know-about-the-krakow-shooting-that-left-six-people-dead",
+    "rank": 1,
+    "live": "",
+    "weight": 39.0,
+    "score": 15,
+    "independent": 5,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": true,
+    "fronts": 4,
+    "fronts_who": [
+     "CTV News",
+     "CP24",
+     "CBS News",
+     "BBC News"
+    ],
+    "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
+    "carriers": 10,
+    "judgment": "national",
+    "why_judged": "National: affects many people; carried across the country (national desks)."
    },
+   {
+    "title": "Netanyahu rival Eisenkot to be tasked with forming new government following Israeli elections",
+    "url": "https://www.euronews.com/2026/11/08/netanyahu-rival-eisenkot-to-be-tasked-with-forming-new-government-following-israeli-electi",
+    "rank": 2,
+    "live": "",
+    "weight": 47,
+    "score": 22,
+    "independent": 5,
+    "most_read": 3,
+    "canada": "tie",
+    "theme": "",
+    "top": true,
+    "fronts": 6,
+    "fronts_who": [
+     "National Post",
+     "NBC News",
+     "CBS News",
+     "ABC News",
+     "BBC News",
+     "The Guardian"
+    ],
+    "rule": "From abroad, tied to Canada",
+    "carriers": 19,
+    "judgment": "national",
+    "why_judged": "National: leading 6 front pages (National Post, NBC News, CBS News, ABC News, BBC News, The Guardian)."
+   },
+   {
+    "title": "Italy's leader blames pro-Russian hackers for personal data leaks",
+    "url": "https://www.cbsnews.com/news/italy-giorgia-meloni-ukraine-russia-hack-data-leak/",
+    "rank": 3,
+    "live": "",
+    "weight": 18.0,
+    "score": 6,
+    "independent": 4,
+    "most_read": 0,
+    "canada": "tie",
+    "theme": "",
+    "top": true,
+    "fronts": 1,
+    "fronts_who": [
+     "The Guardian"
+    ],
+    "rule": "From abroad, tied to Canada",
+    "carriers": 4,
+    "judgment": "regional",
+    "why_judged": "Regional: affects some people; carried only by Toronto desks."
+   },
+   {
+    "title": "U.S. military says it fired on commercial vessel in Gulf of Oman after it attempted to breach blockade",
+    "url": "https://www.ctvnews.ca/world/article/us-military-says-it-fired-on-commercial-vessel-in-gulf-of-oman-after-it-attempted-to-breach-blockade/",
+    "rank": 4,
+    "live": "",
+    "weight": 34.0,
+    "score": 14,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": false,
+    "fronts": 0,
+    "fronts_who": [],
+    "rule": "No Canadian tie",
+    "carriers": 12,
+    "judgment": "national",
+    "why_judged": "National: affects many people; carried across the country (7 cities)."
+   },
+   {
+    "title": "Earthquake hits central Japan, injuring more than 20 people",
+    "url": "https://www.aljazeera.com/news/2026/11/8/earthquake-hits-central-japan-injuring-more-than-20-people?traffic_source=rss",
+    "rank": 5,
+    "live": "",
+    "weight": 30,
+    "score": 13,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": false,
+    "fronts": 0,
+    "fronts_who": [],
+    "rule": "No Canadian tie",
+    "carriers": 13,
+    "judgment": "national",
+    "why_judged": "National: affects many people; carried across the country (7 cities)."
+   },
+   {
+    "title": "Staff at the US center for AI safety are reporting to the White House, raising independence concerns",
+    "url": "https://www.thestar.com/news/world/united-states/staff-at-the-us-center-for-ai-safety-are-reporting-to-the-white-house-raising-independence-concerns/article_b3df1671-69f8-5661-b859-072fda275097.html",
+    "rank": 6,
+    "live": "",
+    "weight": 41,
+    "score": 17,
+    "independent": 7,
+    "most_read": 0,
+    "canada": "tie",
+    "theme": "",
+    "top": false,
+    "fronts": 7,
+    "fronts_who": [
+     "CTV News",
+     "CP24",
+     "NBC News",
+     "CBS News",
+     "ABC News",
+     "BBC News",
+     "The Guardian"
+    ],
+    "rule": "Leading other newsrooms' front pages (Canadian ones among them): the story everyone is leading with",
+    "carriers": 19,
+    "judgment": "national",
+    "why_judged": "National: leading 7 front pages (CTV News, CP24, NBC News, CBS News, ABC News, BBC News)."
+   },
+   {
+    "title": "Poilievre pans Liberal budget's $15M capital gains exemption, calls for 'simpler' plan",
+    "url": "https://www.cbc.ca/news/politics/poilievre-capital-gains-exemption-budget-2026-9.7413640",
+    "rank": 7,
+    "live": "",
+    "weight": 55.5,
+    "score": 22,
+    "independent": 5,
+    "most_read": 5,
+    "canada": "canadian",
+    "theme": "Federal budget",
+    "top": false,
+    "fronts": 0,
+    "fronts_who": [],
+    "rule": "Canadian, still developing",
+    "carriers": 9,
+    "judgment": "national",
+    "why_judged": "National: affects many people; carried across the country (national desks)."
+   },
+   {
+    "title": "Festival of Lights, Festival of Growth: A look at Diwali’s business impact in Canada",
+    "score": 11,
+    "why": "not built: only 2 independent report(s) (9 sites)"
+   },
+   {
+    "title": "It’s Morning in America. By all Means, Blame Canada.",
+    "score": 10,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Trump’s choice of Stephen Miller as Chief of Staff is making the Democrats’ great week, even better.",
+    "score": 7,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Kao Miura wins men’s figure skating title and completes Japanese sweep at Cup of China",
+    "score": 7,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Alexander says Bombers player taunted about late father in Alouettes' East final win",
+    "score": 7,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "What needs to happen for Canada to join Europe's flagship student exchange program?",
+    "score": 6,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "How the Democrats' midterm wave shows a path back to the presidency",
+    "score": 6,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Injured Wainwright soldiers benefit from cutting-edge Canadian burn research",
+    "score": 6,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Freshwater species are at risk. A new global threat map could help save some from brink of extinction",
+    "score": 6,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   }
+  ],
+  "moved": [],
+  "top_n": 3,
+  "more": [
    {
     "key": "auto-d2c3b619",
     "words": [
-     "white",
      "ufc's",
      "ufc’s",
+     "white",
      "dana",
      "ufc"
     ],
@@ -1909,10 +1615,10 @@
      "alt": "Staff at the US center for AI safety are reporting to the White House, raising independence concerns",
      "outlet": "Toronto Star",
      "url": "https://www.thestar.com/news/world/united-states/staff-at-the-us-center-for-ai-safety-are-reporting-to-the-white-house-raising-independence-concerns/article_b3df1671-69f8-5661-b859-072fda275097.html",
-     "since": "2026-11-08T09:59:07.251422+00:00"
+     "since": "2026-11-08T10:04:51.019346+00:00"
     },
     "photo_seen": [
-     "https://i.cbc.ca/ais/609b2e1b-02ab-4129-bb7e-f244921f0764,1794099781929/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C5188%2C2918%29%3BResize%3D620"
+     "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/f/45/f45e2f6a-07cc-52a2-8a69-f9d52cf072bc/6af02e5b0b6b7.image.jpg?crop=1920%2C1008%2C0%2C35&resize=1200%2C630&order=crop%2Cresize"
     ],
     "photos": [
      {
@@ -2026,7 +1732,7 @@
       "t": "Sat 4:39 p.m.",
       "iso": "2026-11-07T21:39:10+00:00",
       "outlet": "NBC News",
-      "title": "UFC head Dana White says he’ll meet with Trump Monday on press secretary offer",
+      "title": "UFC’s Dana White says he will meet Trump on Monday to discuss press secretary offer",
       "url": "https://www.nbcnews.com/politics/white-house/trump-offers-press-secretary-job-ufc-ceo-dana-white-rcna608039",
       "desc": ""
      },
@@ -2227,7 +1933,7 @@
       "t": "Sat 4:39 p.m.",
       "primary": false,
       "outlet": "NBC News",
-      "title": "UFC head Dana White says he’ll meet with Trump Monday on press secretary offer",
+      "title": "UFC’s Dana White says he will meet Trump on Monday to discuss press secretary offer",
       "url": "https://www.nbcnews.com/politics/white-house/trump-offers-press-secretary-job-ufc-ceo-dana-white-rcna608039",
       "desc": "Trump’s previous press secretary, Katie Zacharia, left the role in October after just five days on the job.",
       "wire": "",
@@ -2289,10 +1995,308 @@
       "up": ""
      },
      {
-      "net": "CNN",
-      "url": "https://www.youtube.com/watch?v=PujlXYw5gCI",
-      "title": "Trump names Stephen Miller new White House chief of staff",
-      "img": "https://i.ytimg.com/vi/PujlXYw5gCI/hqdefault.jpg",
+      "net": "Associated Press",
+      "url": "https://www.youtube.com/watch?v=_ebBq80nFgI",
+      "title": "UFC's Dana White confirms talks with Trump over White House press secretary job",
+      "img": "https://i.ytimg.com/vi/_ebBq80nFgI/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     }
+    ]
+   },
+   {
+    "key": "auto-333e6377",
+    "words": [
+     "budget's",
+     "billion",
+     "foreign",
+     "budget",
+     "sector",
+     "calls"
+    ],
+    "score": 22,
+    "outlets": 5,
+    "carriers": 9,
+    "tag": "Developing",
+    "title": "Poilievre pans Liberal budget's $15M capital gains exemption, calls for 'simpler' plan",
+    "url": "https://www.cbc.ca/news/politics/poilievre-capital-gains-exemption-budget-2026-9.7413640",
+    "outlet": "CBC News",
+    "t": "Sun 4:00 a.m.",
+    "iso": "2026-11-08T09:00:00+00:00",
+    "summary": "Conservative Leader Pierre Poilievre is criticizing a key feature of the Carney government's latest budget, arguing the proposed $15-million capital gains exemption on the sale of qualifying shares from a Canadian company applies too narrowly, excluding key businesses.",
+    "first": {
+     "outlet": "CBC News",
+     "url": "https://www.cbc.ca/news/canada/manitoba/farm-rollover-budget-nieces-nephews-9.7413050?cmp=rss",
+     "t": "Sat 6:00 a.m.",
+     "title": "Farmers pleased with federal budget's proposed changes allowing land to be given to nieces, nephews tax-free",
+     "iso": "2026-11-07T11:00:00+00:00"
+    },
+    "newest": "2026-11-08T09:00:00+00:00",
+    "photo": {
+     "src": "live/img/auto-333e6377-02dce7a3a6.jpg",
+     "orig": "https://i.cbc.ca/ais/d45de024-aac7-44bf-a49e-64932033f138,1794071929697/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C506%2C7450%2C4190%29%3BResize%3D620",
+     "caption": "Conservative Leader Pierre Poilievre rises after the tabling of the federal budget in the House of Commons, in Ottawa on Thursday. (Justin Tang/The Canadian Press) — via CBC News",
+     "alt": "Conservative Leader Pierre Poilievre rises after the tabling of the federal budget in the House of Commons, in Ottawa on Thursday.",
+     "outlet": "CBC News",
+     "url": "https://www.cbc.ca/news/politics/poilievre-capital-gains-exemption-budget-2026-9.7413640",
+     "since": "2026-11-08T09:58:59.458709+00:00"
+    },
+    "photo_seen": [
+     "https://i.cbc.ca/ais/d45de024-aac7-44bf-a49e-64932033f138,1794071929697/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C506%2C7450%2C4190%29%3BResize%3D620"
+    ],
+    "photos": [
+     {
+      "src": "live/img/auto-333e6377-02dce7a3a6.jpg",
+      "orig": "https://i.cbc.ca/ais/d45de024-aac7-44bf-a49e-64932033f138,1794071929697/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C506%2C7450%2C4190%29%3BResize%3D620",
+      "caption": "Conservative Leader Pierre Poilievre rises after the tabling of the federal budget in the House of Commons, in Ottawa on Thursday. (Justin Tang/The Canadian Press) — via CBC News",
+      "alt": "Conservative Leader Pierre Poilievre rises after the tabling of the federal budget in the House of Commons, in Ottawa on Thursday.",
+      "outlet": "CBC News",
+      "url": "https://www.cbc.ca/news/politics/poilievre-capital-gains-exemption-budget-2026-9.7413640"
+     }
+    ],
+    "independent": 5,
+    "reports": [
+     {
+      "t": "Sun 4:00 a.m.",
+      "iso": "2026-11-08T09:00:00+00:00",
+      "outlet": "CBC News",
+      "title": "Poilievre pans Liberal budget's $15M capital gains exemption, calls for 'simpler' plan",
+      "url": "https://www.cbc.ca/news/politics/poilievre-capital-gains-exemption-budget-2026-9.7413640",
+      "desc": "Conservative Leader Pierre Poilievre is criticizing a key feature of the Carney government's latest budget, arguing the proposed $15-million capital gains exemption on the sale of qualifying shares from a Canadian company applies too narrowly, excluding key businesses."
+     },
+     {
+      "t": "Sat 3:40 p.m.",
+      "iso": "2026-11-07T20:40:30+00:00",
+      "outlet": "CKOM / PAnow",
+      "title": "Budget offers little new relief for middle-income Canadians",
+      "url": "https://www.ckom.com/2026/11/07/budget-offers-little-new-relief-for-middle-income-canadians/",
+      "desc": "While Ottawa earmarked more help for lower-income households, families with earnings above income-tested thresholds may be iced out as the government banks on economic growth to boost purchasing power."
+     },
+     {
+      "t": "Sat 2:19 p.m.",
+      "iso": "2026-11-07T19:19:25+00:00",
+      "outlet": "Daily Hive",
+      "title": "Canada's 2026 federal budget sets out $50 billion for Indigenous communities over 10 years",
+      "url": "https://dailyhive.com/vancouver/canada-2026-federal-budget-indigenous-communities",
+      "desc": "Prime Minister Mark Carney's 2026 federal budget sets aside roughly $50 billion in funding for Indigenous communities over 10 years."
+     },
+     {
+      "t": "Sat 12:08 p.m.",
+      "iso": "2026-11-07T17:08:50+00:00",
+      "outlet": "CTV News",
+      "title": "Federal budget brings major funding news for two Regina cultural institutions",
+      "url": "https://www.ctvnews.ca/regina/article/federal-budget-brings-major-funding-news-for-two-regina-cultural-institutions/",
+      "desc": "Saskatchewan is now getting its first national museum after the federal government announced plans to designate Regina’s RCMP Heritage Centre."
+     },
+     {
+      "t": "Sat 10:16 a.m.",
+      "iso": "2026-11-07T15:16:48+00:00",
+      "outlet": "Global News",
+      "title": "Aid sector calls out omission of foreign aid in federal budget",
+      "url": "https://globalnews.ca/news/12141139/budget-2026-foreign-aid/",
+      "desc": "The budget tabled Thursday by Prime Minister Mark Carney's government makes no mention of international assistance, foreign aid or international development."
+     },
+     {
+      "t": "Sat 10:00 a.m.",
+      "iso": "2026-11-07T15:00:22+00:00",
+      "outlet": "Vancouver Sun",
+      "title": "Federal budget's $6.5 billion commitment to forestry comes at 'critical time'",
+      "url": "https://vancouversun.com/news/local-news/federal-budgets-6-5-billion-commitment-to-forestry-comes-at-critical-time",
+      "desc": ""
+     },
+     {
+      "t": "Sat 7:39 a.m.",
+      "iso": "2026-11-07T12:39:31+00:00",
+      "outlet": "CP24",
+      "title": "Federal budget is ‘silent’ on foreign assistance: aid sector",
+      "url": "https://www.cp24.com/news/world/2026/11/07/federal-budget-is-silent-on-foreign-assistance-aid-sector/",
+      "desc": "Canada’s aid sector is expressing dismay over the first federal budget in more than 15 years to make no mention of foreign aid, and is calling on Ottawa to outline its vision in an upcoming foreign policy review."
+     },
+     {
+      "t": "Sat 7:00 a.m.",
+      "iso": "2026-11-07T12:00:00+00:00",
+      "outlet": "Toronto Star",
+      "title": "What Mark Carney’s budget reveals about the ridings Liberals want to keep and win",
+      "url": "https://www.thestar.com/politics/federal/what-mark-carney-s-budget-reveals-about-the-ridings-liberals-want-to-keep-and-win/article_b591b5e1-6e33-4ff5-83a1-2205e8ea67c4.html",
+      "desc": "Ridings of two floor-crossers to the Liberals got project funding in Thursday's budget, but so did Pierre Poilievre's."
+     },
+     {
+      "t": "Sat 6:00 a.m.",
+      "iso": "2026-11-07T11:00:09+00:00",
+      "outlet": "CityNews Halifax",
+      "title": "Aid sector calls out lack of any mention of foreign aid in federal budget",
+      "url": "https://halifax.citynews.ca/2026/11/07/aid-sector-calls-out-lack-of-any-mention-of-foreign-aid-in-federal-budget/",
+      "desc": ""
+     }
+    ],
+    "sources": [
+     {
+      "t": "Sun 4:00 a.m.",
+      "primary": false,
+      "outlet": "CBC News",
+      "title": "Poilievre pans Liberal budget's $15M capital gains exemption, calls for 'simpler' plan",
+      "url": "https://www.cbc.ca/news/politics/poilievre-capital-gains-exemption-budget-2026-9.7413640",
+      "desc": "Conservative Leader Pierre Poilievre is criticizing a key feature of the Carney government's latest budget, arguing the proposed $15-million capital gains exemption on the sale of qualifying shares from a Canadian company applies too narrowly, excluding key businesses.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "CBC News",
+        "src": "CBC",
+        "byline": "own staff: Producer"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Sat 6:00 a.m.",
+      "primary": false,
+      "outlet": "CityNews Halifax",
+      "title": "Aid sector calls out lack of any mention of foreign aid in federal budget",
+      "url": "https://halifax.citynews.ca/2026/11/07/aid-sector-calls-out-lack-of-any-mention-of-foreign-aid-in-federal-budget/",
+      "desc": "OTTAWA — Canada's aid sector is expressing dismay over the first federal budget in more than 15 years to make no mention of foreign aid, and is calling on Ottawa to outline its vision in an upcoming foreign policy review.",
+      "wire": "The Canadian Press",
+      "by": [
+       {
+        "outlet": "CityNews Halifax",
+        "src": "The Canadian Press",
+        "byline": "3f5fe805acc41a6fdf\"}] \"Dylan Robertson, The Canadian Press\" News Staff \n\t\t\tBy"
+       },
+       {
+        "outlet": "CP24",
+        "src": "The Canadian Press",
+        "byline": "\"@type\": \"Person\",\n      \"name\": \"The Canadian Press\",\n      \n    }\n  ]"
+       },
+       {
+        "outlet": "Global News",
+        "src": "The Canadian Press",
+        "byline": "\"Dylan Robertson\" Name Damian aden holding On The Side Lines Johnny Kernal PJ McLean Anonymous David Best Johnny "
+       },
+       {
+        "outlet": "CTV News",
+        "src": "The Canadian Press",
+        "byline": "ington\" \"Joe Lofaro\" \"Olivia O'Malley\" \"The Canadian Press\" \"Hannah Kavanagh\""
+       },
+       {
+        "outlet": "CKOM / PAnow",
+        "src": "The Canadian Press",
+        "byline": "\"@type\":\"Person\",\"name\":\"Brett Bundale, The Canadian Press\"}] \"Brett Bundale,"
+       }
+      ],
+      "copies": [
+       {
+        "outlet": "CP24",
+        "url": "https://www.cp24.com/news/world/2026/11/07/federal-budget-is-silent-on-foreign-assistance-aid-sector/"
+       },
+       {
+        "outlet": "Global News",
+        "url": "https://globalnews.ca/news/12141139/budget-2026-foreign-aid/"
+       },
+       {
+        "outlet": "CTV News",
+        "url": "https://www.ctvnews.ca/regina/article/federal-budget-brings-major-funding-news-for-two-regina-cultural-institutions/"
+       },
+       {
+        "outlet": "CKOM / PAnow",
+        "url": "https://www.ckom.com/2026/11/07/budget-offers-little-new-relief-for-middle-income-canadians/"
+       }
+      ]
+     },
+     {
+      "t": "Sat 2:19 p.m.",
+      "primary": false,
+      "outlet": "Daily Hive",
+      "title": "Canada's 2026 federal budget sets out $50 billion for Indigenous communities over 10 years",
+      "url": "https://dailyhive.com/vancouver/canada-2026-federal-budget-indigenous-communities",
+      "desc": "Prime Minister Mark Carney's 2026 federal budget sets aside roughly $50 billion in funding for Indigenous communities over 10 years.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Daily Hive",
+        "src": "Daily Hive",
+        "byline": "[{\"@type\":\"Person\",\"name\":\"Kenneth Chan\",}] "
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Sat 10:00 a.m.",
+      "primary": false,
+      "outlet": "Vancouver Sun",
+      "title": "Federal budget's $6.5 billion commitment to forestry comes at 'critical time'",
+      "url": "https://vancouversun.com/news/local-news/federal-budgets-6-5-billion-commitment-to-forestry-comes-at-critical-time",
+      "desc": "",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Vancouver Sun",
+        "src": "Postmedia",
+        "byline": "[{\"@type\": \"Person\", \"name\": \"Derrick Penner\", \"alternateName\": \"depenner\", , , \"email\": \"depenner@postmedia.com\", \"desc"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Sat 7:00 a.m.",
+      "primary": false,
+      "outlet": "Toronto Star",
+      "title": "What Mark Carney’s budget reveals about the ridings Liberals want to keep and win",
+      "url": "https://www.thestar.com/politics/federal/what-mark-carney-s-budget-reveals-about-the-ridings-liberals-want-to-keep-and-win/article_b591b5e1-6e33-4ff5-83a1-2205e8ea67c4.html",
+      "desc": "Ridings of two floor-crossers to the Liberals got project funding in Thursday's budget, but so did Pierre Poilievre's.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Toronto Star",
+        "src": "Torstar",
+        "byline": "own staff: producer"
+       }
+      ],
+      "copies": []
+     }
+    ],
+    "replaces_top": false,
+    "events": [],
+    "theme": "Federal budget",
+    "canada": "canadian",
+    "canus": false,
+    "incoherent": true,
+    "popular": 5,
+    "us_election": false,
+    "fronts": 0,
+    "fronts_ca": 0,
+    "fronts_who": [],
+    "judgment": "national",
+    "judgment_why": "National: affects many people; carried across the country (national desks).",
+    "weight": 55.5,
+    "videos": [
+     {
+      "net": "Global News",
+      "url": "https://www.youtube.com/watch?v=tS1zS-0oS2k",
+      "title": "Diving into the details of Budget 2026 and how Ottawa plans to ease the affordability crisis",
+      "img": "https://i.ytimg.com/vi/tS1zS-0oS2k/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "Global News",
+      "url": "https://www.youtube.com/watch?v=QT-A_LxHwJ4",
+      "title": "Canada’s business community reacts to 2026 federal budget",
+      "img": "https://i.ytimg.com/vi/QT-A_LxHwJ4/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CTV News",
+      "url": "https://www.youtube.com/watch?v=CzNmzOdI2HY",
+      "title": "Federal focuses outlined in budget earn London's praise | CTV News London at 11 for Nov. 6, 2026",
+      "img": "https://i.ytimg.com/vi/CzNmzOdI2HY/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CTV News",
+      "url": "https://www.youtube.com/watch?v=bhmO833D7kU",
+      "title": "Mixed reaction from Albertans to federal budget | CTV News Edmonton at 11:30 for Nov. 6, 2026",
+      "img": "https://i.ytimg.com/vi/bhmO833D7kU/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -2343,7 +2347,7 @@
    "id": "gdLqazgRJU0",
    "r": "ca",
    "o": "APTN News",
-   "t": "On the Outside: What happens after incarceration? | APTN Investigates",
+   "t": "On the Outside: The challenges of life after incarceration | APTN Investigates",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=gdLqazgRJU0",
@@ -2483,7 +2487,7 @@
    "id": "0brf9IQ3NEg",
    "r": "ca",
    "o": "Global News",
-   "t": "Global National: Nov. 7, 2026 | Trump doubles down on his agenda following US midterms outcome",
+   "t": "Global National: Nov. 7, 2026 | Why Trump's new chief of staff may be bad for Canada",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=0brf9IQ3NEg",
@@ -2497,7 +2501,7 @@
    "id": "26rMXkNcQrQ",
    "r": "ca",
    "o": "Global News",
-   "t": "Protecting Palestine's oldest olive tree amid West Bank settler violence",
+   "t": "Former Israeli military officials condemn West Bank settler violence, help Palestinian olive farms",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=26rMXkNcQrQ",
@@ -2830,20 +2834,6 @@
    "geo": "unknown"
   },
   {
-   "id": "mg0ojfRhX8o",
-   "r": "world",
-   "o": "DW News",
-   "t": "Krakow shooting suspect 'fascinated by far right' | DW News",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=mg0ojfRhX8o",
-   "img": "https://i.ytimg.com/vi/mg0ojfRhX8o/hqdefault.jpg",
-   "up": "2026-11-07",
-   "added": "2026-11-08T02:21:46.263555+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "3W--LN6a05I",
    "r": "world",
    "o": "Sky News",
@@ -2875,7 +2865,7 @@
    "id": "TUyFLq-ciDI",
    "r": "world",
    "o": "Sky News",
-   "t": "Remembrance Sunday: Retired army nurse reflects on service and sacrifice",
+   "t": "'It's a special bond': Army veteran on what Remembrance means",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=TUyFLq-ciDI",
@@ -2917,13 +2907,27 @@
    "id": "MxvXe1t2QFk",
    "r": "world",
    "o": "BBC News",
-   "t": "Is Meta building an AI robot for your home? | BBC News",
+   "t": "Mark Zuckerberg wants AI walking around your home, do you? | BBC News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=MxvXe1t2QFk",
    "img": "https://i.ytimg.com/vi/MxvXe1t2QFk/hqdefault.jpg",
    "up": "2026-11-08",
    "added": "2026-11-08T09:35:55.566206+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "5EuaoVzzvWs",
+   "r": "world",
+   "o": "DW News",
+   "t": "Russia vs Europe: The three fronts of gray-zone warfare | DW News",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=5EuaoVzzvWs",
+   "img": "https://i.ytimg.com/vi/5EuaoVzzvWs/hqdefault.jpg",
+   "up": "2026-11-08",
+   "added": "2026-11-08T10:01:59.908621+00:00",
    "pic": "globe",
    "geo": "unknown"
   }
@@ -2971,11 +2975,11 @@
   },
   {
    "o": "NPR",
-   "h": "UFC's Dana White says he will meet with Trump Monday over offer to be White House press secretary",
-   "u": "https://www.npr.org/2026/11/08/nx-s1-6033900/ufc-dana-white-trump-white-house-press-secretary",
-   "img": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4492x2527+0+341/resize/1400/quality/85/format/webp/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F8c%2Ffa%2F3f790b7e481ea32d03d42cae34fe%2Fap26311730542307.jpg",
-   "w": "Sun 2:35 a.m.",
-   "iso": "2026-11-08T07:35:29+00:00"
+   "h": "How Gen Z voters helped fuel a blue wave for Democrats",
+   "u": "https://www.npr.org/2026/11/08/nx-s1-6032829/gen-z-voters-midterm-elections",
+   "img": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/7917x4453+0+412/resize/1400/quality/85/format/webp/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F70%2Fa7%2F31e1b4de4a5e8fe803acc18eb67a%2Fgettyimages-2303442594.jpg",
+   "w": "Sun 5:00 a.m.",
+   "iso": "2026-11-08T10:00:00+00:00"
   },
   {
    "o": "The Hill",
@@ -3006,6 +3010,19 @@
    "u": "https://broadbentinstitute.ca/no-sovereignty-without-democracy/",
    "t": "There is No Nation-building Without Workers, No Sovereignty Without Democracy",
    "g": "Approval is not the same as confidence. When asked if the government’s Major Projects agenda will make their lives better, most Canadians do not believe so. The post There is No Nation-building Without Workers, No Sovereignty Without Democracy appeared first on Broadbent Institute .",
+   "auto": true
+  },
+  {
+   "inst": "Frontier Centre for Public Policy",
+   "place": "Winnipeg",
+   "kind": "Publication",
+   "by": "",
+   "date": "Nov. 7, 2026",
+   "d": "2026-11-07",
+   "pic": "chart",
+   "u": "https://frontiercentre.org/2026/11/07/want-my-vote-tell-me-what-you-stand-for/?utm_source=rss&utm_medium=rss&utm_campaign=want-my-vote-tell-me-what-you-stand-for",
+   "t": "Want my vote? Tell me what you stand for",
+   "g": "Low municipal voter turnout reflects more than public cynicism. Candidates who offer vague promises and smiling portraits give citizens little reason to vote. Winning their interest requires clear policies, honest answers and meaningful personal engagement.",
    "auto": true
   },
   {
@@ -3163,29 +3180,9 @@
    "t": "Carney’s long-awaited national security framework contains nothing new: Christopher Coates in the National Post",
    "g": "This article originally appeared in the National Post. By Christopher Coates, November 5, 2026 Last week, the federal government issued “The Plan for a Stronger Canada – National Security for […] The post Carney’s long-awaited national security framework contains nothing new: Christopher Coates in the National Post…",
    "auto": true
-  },
-  {
-   "inst": "Heritage Foundation",
-   "place": "Washington",
-   "kind": "Publication",
-   "by": "",
-   "date": "Nov. 5, 2026",
-   "d": "2026-11-05",
-   "pic": "chart",
-   "u": "https://www.heritage.org/border-security/commentary/midterm-scorecard-the-border-and-immigration",
-   "t": "A Midterm Scorecard on the Border and Immigration",
-   "g": "Codification of President Donald Trump’s immigration and border policies wasn’t done in two years, with a narrow Republican majority in both houses. After Tuesday, it may be a practical impossibility. But that’s nothing new: The last major immigration reform law passed in 1996 . These days, border and immigration…",
-   "auto": true
   }
  ],
  "eds": [
-  [
-   "Toronto Star",
-   "Opinion",
-   "Patrick Corrigan's cartoon shows the spoils of a winning election campaign",
-   "https://www.thestar.com/opinion/editorial-cartoons/patrick-corrigan-s-cartoon-shows-the-spoils-of-a-winning-election-campaign/article_20239c1f-ed02-4b00-8aaf-b83449ecce30.html",
-   "2026-11-07T11:00:00+00:00"
-  ],
   [
    "Toronto Sun",
    "Editorial",
@@ -3248,6 +3245,13 @@
    "Put your money where your mouth is: Prediction markets won the midterms",
    "https://www.foxnews.com/opinion/stu-burguiere-put-your-money-where-your-mouth-is-prediction-markets-won-midterms",
    "2026-11-07T19:35:41+00:00"
+  ],
+  [
+   "The Wall Street Journal (subscribers)",
+   "Opinion",
+   "Pepper…and Salt",
+   "https://www.wsj.com/opinion/pepperand-salt-625a4119?mod=rss_opinion",
+   "2026-11-07T05:00:00+00:00"
   ]
  ],
  "canus": {
@@ -3614,11 +3618,11 @@
    "city": "St. John's",
    "tz": "America/St_Johns",
    "world": false,
-   "w": "Labour",
-   "u": "https://vocm.com/2026/11/08/city-of-corner-brook-in-talks-of-resuming-face-to-face-conversations-civic-centre-lockout-drags-into-week-three/",
-   "title": "City of Corner Brook in Talks of Resuming Face-to-Face Conversations, Civic Centre Lockout Drags into Week Three",
-   "outlet": "VOCM",
-   "t": "Sun 4:43 a.m.",
+   "w": "Housing",
+   "u": "https://www.cbc.ca/news/canada/newfoundland-labrador/federal-homelessness-strategy-9.7413692?cmp=rss",
+   "title": "Joanne Thompson says homelessness can end in 10 years — but it requires collaboration",
+   "outlet": "CBC News",
+   "t": "Sat 2:29 p.m.",
    "hot": false
   },
   {
@@ -3785,7 +3789,7 @@
    "iso": "2026-11-08T09:00:00+00:00",
    "title": "Poilievre pans Liberal budget's $15M capital gains exemption, calls for 'simpler' plan",
    "summary": "Conservative Leader Pierre Poilievre is criticizing a key feature of the Carney government's latest budget, arguing the proposed $15-million capital gains exemption on the sale of qualifying shares from a Canadian company applies too narrowly, excluding key businesses.",
-   "outlet": "CBC News, VOCM, CKOM / PAnow, Daily Hive, CTV News, Global News",
+   "outlet": "CBC News, CKOM / PAnow, Daily Hive, CTV News, Global News, Vancouver Sun",
    "url": "https://www.cbc.ca/news/politics/poilievre-capital-gains-exemption-budget-2026-9.7413640",
    "img": "https://i.cbc.ca/ais/d45de024-aac7-44bf-a49e-64932033f138,1794071929697/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C506%2C7450%2C4190%29%3BResize%3D620"
   },
@@ -3823,17 +3827,6 @@
    "img": "https://www.ctvnews.ca/resizer/v2/FP6ZDXHPTRGHFCVWDW2CLKFPBI.png?smart=true&auth=3d829d9cd3e866cadefd5f6240c030881da186a36f578043dbb7dc2fa61bd1c2&width=1200&height=630"
   },
   {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Sat 10:13 p.m.",
-   "iso": "2026-11-08T03:13:40+00:00",
-   "title": "Dialogue about Inuit-specific housing funding underway, says Indigenous Services Minister",
-   "summary": "Newspaper of record for Nunavut, and the Nunavik territory of Quebec",
-   "outlet": "Nunatsiaq News, VOCM",
-   "url": "https://nunatsiaq.com/stories/article/dialogue-about-inuit-specific-housing-funding-underway-says-indigenous-services-minister/",
-   "img": "https://cdn.nunatsiaq.com/wp-content/uploads/2026/11/IMG_4263-1200x630.jpeg"
-  },
-  {
    "desk": "business",
    "pic": "chart",
    "t": "Sun 4:00 a.m.",
@@ -3843,6 +3836,17 @@
    "outlet": "CBC News",
    "url": "https://www.cbc.ca/news/canada/trump-tariffs-canadian-dairy-cheese-industry-9.7413227",
    "img": "https://i.cbc.ca/ais/e5c62dff-e9eb-4947-851a-54a11e449b1a,1794011827660/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C216%2C5000%2C2812%29%3BResize%3D620"
+  },
+  {
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Sat 10:13 p.m.",
+   "iso": "2026-11-08T03:13:40+00:00",
+   "title": "Dialogue about Inuit-specific housing funding underway, says Indigenous Services Minister",
+   "summary": "Newspaper of record for Nunavut, and the Nunavik territory of Quebec",
+   "outlet": "Nunatsiaq News",
+   "url": "https://nunatsiaq.com/stories/article/dialogue-about-inuit-specific-housing-funding-underway-says-indigenous-services-minister/",
+   "img": "https://cdn.nunatsiaq.com/wp-content/uploads/2026/11/IMG_4263-1200x630.jpeg"
   },
   {
    "desk": "politics",
@@ -3991,20 +3995,20 @@
    "o": "CTV News",
    "ca": true,
    "h": [
+    "‘Deficits are lower, that’s a fact’: Finance minister defends budget",
+    "Are Canadian snowbirds flocking back during the U.S. trade war? Here’s what data says",
     "Polish PM says Krakow shooter's family found dead inside home",
     "Dramatic river rescue unfolds as storm batters B.C. region",
     "Were you at these locations on Nov. 3? You may have been exposed to measles",
-    "Trump offers UFC boss Dana White press secretary role",
-    "Nurse faces discipline for allegedly offering to have sex with patient",
-    "Drone delivers life-saving food to chimps stranded in massive floods"
+    "Trump offers UFC boss Dana White press secretary role"
    ],
    "u": [
+    "https://www.ctvnews.ca/politics/article/deficits-are-lower-thats-a-fact-finance-minister-defends-budget/",
+    "https://www.ctvnews.ca/world/trumps-tariffs/article/are-canadian-snowbirds-flocking-back-during-the-us-trade-war-heres-what-data-says/",
     "https://www.ctvnews.ca/world/article/polish-gunman-who-killed-6-people-in-krakow-has-ultranationalistic-views-minister-says/",
     "https://www.ctvnews.ca/vancouver/article/woman-rescued-from-fast-moving-metro-vancouver-river-during-bc-storm/",
     "https://www.ctvnews.ca/toronto/local/durham/article/were-you-at-these-locations-on-nov-3-you-may-have-been-exposed-to-measles/",
-    "https://www.ctvnews.ca/world/article/trump-offers-press-secretary-role-to-ufc-chief-dana-white/",
-    "https://www.ctvnews.ca/vancouver/article/bc-nurse-offered-to-have-sex-with-patient-regulator-alleges-in-protection-order/",
-    "https://www.ctvnews.ca/world/article/chimp-sanctuary-delivers-an-apes-food-by-drone-amid-florida-floods/"
+    "https://www.ctvnews.ca/world/article/trump-offers-press-secretary-role-to-ufc-chief-dana-white/"
    ]
   },
   {
@@ -4257,7 +4261,7 @@
     "url": "https://www.youtube.com/watch?v=XtLl_wi6H3A",
     "img": "https://i.ytimg.com/vi/XtLl_wi6H3A/hqdefault.jpg",
     "story": "Middle East latest, Trump White House updates, Melania Trump visits LS",
-    "watching": "246",
+    "watching": "240",
     "also": [
      {
       "net": "The White House live",
@@ -4382,6 +4386,23 @@
   }
  ],
  "related": {
+  "auto-d2c3b619": {
+   "ties": [
+    "dana",
+    "house"
+   ],
+   "stories": [
+    {
+     "t": "Fri 8:49 p.m.",
+     "iso": "2026-11-07T01:49:38+00:00",
+     "outlet": "The Hill",
+     "title": "Wahab beats fellow Democrat in heated race for Swalwell’s House seat",
+     "url": "https://thehill.com/homenews/campaign/6182641-aisha-wahab-eric-swalwell-california-house-seat-democrat-miderms-2026/",
+     "tie": "House"
+    }
+   ],
+   "views": []
+  },
   "auto-333e6377": {
    "ties": [
     "Federal budget"
@@ -4466,23 +4487,6 @@
      "url": "https://cdhowe.org/publication/ottawa-spent-the-windfall-and-left-canadians-with-the-deficit-budget-2026-review/"
     }
    ]
-  },
-  "auto-d2c3b619": {
-   "ties": [
-    "dana",
-    "house"
-   ],
-   "stories": [
-    {
-     "t": "Fri 8:49 p.m.",
-     "iso": "2026-11-07T01:49:38+00:00",
-     "outlet": "The Hill",
-     "title": "Wahab beats fellow Democrat in heated race for Swalwell’s House seat",
-     "url": "https://thehill.com/homenews/campaign/6182641-aisha-wahab-eric-swalwell-california-house-seat-democrat-miderms-2026/",
-     "tie": "House"
-    }
-   ],
-   "views": []
   }
  },
  "canangle": {
@@ -4686,19 +4690,55 @@
    "official": [],
    "views": []
   },
-  "https://www.npr.org/2026/11/08/nx-s1-6033900/ufc-dana-white-trump-white-house-press-secretary": {
-   "story": "UFC's Dana White says he will meet with Trump Monday over offer to be White House press secretary",
+  "https://www.npr.org/2026/11/08/nx-s1-6032829/gen-z-voters-midterm-elections": {
+   "story": "How Gen Z voters helped fuel a blue wave for Democrats",
    "us": true,
    "specific": 1,
    "stories": [
     {
-     "t": "Sat 11:48 p.m.",
-     "iso": "2026-11-08T04:48:47+00:00",
-     "outlet": "Times Colonist",
-     "title": "Canada Red beats Canada White for bronze, U.S. wins gold at U17 World Challenge",
-     "url": "https://www.timescolonist.com/national-sports/canada-red-beats-canada-white-for-bronze-us-wins-gold-at-u17-world-challenge-12993317",
-     "ca": true,
+     "t": "Fri 6:32 a.m.",
+     "iso": "2026-11-06T11:32:04+00:00",
+     "outlet": "Canada's National Observer",
+     "title": "Former Quebec diplomat sees opportunity to rebuild energy ties after US midterms",
+     "url": "https://www.nationalobserver.com/2026/11/06/news/former-quebec-diplomat-sees-opportunity-rebuild-energy-ties-after-us-midterms",
+     "ca": false,
      "tie": ""
+    },
+    {
+     "t": "Sun 4:00 a.m.",
+     "iso": "2026-11-08T09:00:00+00:00",
+     "outlet": "CBC News",
+     "title": "How Trump's tariffs are threatening to spoil the success of Canadian cheese",
+     "url": "https://www.cbc.ca/news/canada/trump-tariffs-canadian-dairy-cheese-industry-9.7413227",
+     "ca": true,
+     "tie": "Canada and the U.S."
+    },
+    {
+     "t": "Fri 5:56 p.m.",
+     "iso": "2026-11-06T22:56:46+00:00",
+     "outlet": "CP24",
+     "title": "PM Carney welcomes ‘any moves’ to restore free trade, Hoekstra predicts deal could come soon",
+     "url": "https://www.cp24.com/news/world/2026/11/06/pm-carney-welcomes-any-moves-to-restore-free-trade-hoekstra-predicts-deal-could-come-soon/",
+     "ca": true,
+     "tie": "Canada and the U.S."
+    },
+    {
+     "t": "Fri 3:12 p.m.",
+     "iso": "2026-11-06T20:12:05+00:00",
+     "outlet": "Global News",
+     "title": "Carney says he’s yet to talk to Democrats on tariffs: ‘Short answer is no’",
+     "url": "https://globalnews.ca/news/12140323/carney-us-trade-democrats/",
+     "ca": true,
+     "tie": "Canada and the U.S."
+    },
+    {
+     "t": "Wed 6:30 p.m.",
+     "iso": "2026-11-04T23:30:00+00:00",
+     "outlet": "Toronto Star",
+     "title": "Carney government officials don't expect big change to trade talks after dramatic U.S. elections",
+     "url": "https://www.thestar.com/politics/carney-government-officials-don-t-expect-big-change-to-trade-talks-after-dramatic-u-s-elections/article_af472624-142b-40dc-8b9c-4dd80a0aff92.html",
+     "ca": true,
+     "tie": "Canada and the U.S."
     }
    ],
    "official": [],
@@ -4811,7 +4851,7 @@
     ],
     [
      "NBC News",
-     "UFC head Dana White says he’ll meet with Trump Monday on press secretary offer",
+     "UFC’s Dana White says he will meet Trump on Monday to discuss press secretary offer",
      "https://www.nbcnews.com/politics/white-house/trump-offers-press-secretary-job-ufc-ceo-dana-white-rcna608039"
     ],
     [
@@ -5568,9 +5608,7 @@
   "-NabWfv-VdA"
  ],
  "noembed": [
-  "J3FV4iY8p5w",
   "L6qtnHZxwEw",
-  "NuEr0Q_AS6U",
   "c9v26lW7-j4",
   "ldElU-Q5Qyo",
   "t_HBrWb84eY"
