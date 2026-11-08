@@ -1,9 +1,29 @@
 {
- "checked": "2026-11-08T01:34:21.519260+00:00",
- "labels": 195,
- "problems": [],
+ "checked": "2026-11-08T03:13:50.667036+00:00",
+ "labels": 188,
+ "problems": [
+  {
+   "label": "BBC News",
+   "opens": "https://www.cbc.ca/news/canada/toronto/person-dead-shooting-etobicoke-9.7413897",
+   "section": "developed",
+   "link": false,
+   "width": 390
+  },
+  {
+   "label": "BBC News",
+   "opens": "https://www.cbc.ca/news/canada/toronto/person-dead-shooting-etobicoke-9.7413897",
+   "section": "developed",
+   "link": false,
+   "width": 1280
+  }
+ ],
  "guard": {
   "fixed": [
+   {
+    "label": "CBS News",
+    "was": "(card link) cbsnews.com",
+    "now": "https://www.cbsnews.com/news/this-week-on-sunday-morning-nov-8-2026/"
+   },
    {
     "label": "ABC News",
     "was": "(card link) abcnews.com",
@@ -13,11 +33,6 @@
     "label": "NBC News",
     "was": "(card link) nbcnews.com",
     "now": "https://www.nbcnews.com/politics/white-house/trump-offers-press-secretary-job-ufc-ceo-dana-white-rcna608039"
-   },
-   {
-    "label": "PBS News",
-    "was": "(card link) pbs.org",
-    "now": "https://www.pbs.org/newshour/world/what-is-diwali-the-festival-of-lights-and-how-is-it-celebrated"
    }
   ],
   "disabled": [],
