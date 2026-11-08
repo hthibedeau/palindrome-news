@@ -273,3 +273,8 @@ Finish with a short plain-language list of what changed, each with its source li
 > Condensed (Thu Oct 29, 2026: "could you condense it more"): one-line header with a small gold medallion (subtitle hidden on phones), the time inline before each headline, 15–16px headlines, at most 3 lines shown with a "Show N more" button, a one-line source note. The angle lists one line per story (autopilot._angle: a headline sharing 3+ names/key words with one already listed is skipped).
 
 > **The brief in Hannah's own voice (Fri Oct 30, 2026 recording).** Every brief opens with her real recorded opening for the edition, every story credited to The Canadian Press, CBC News, CTV News or The Associated Press ends with her real "… reports.", and every brief ends with her real sign-off. Only the story sentences are generated, copying her delivery from brief-read.m4a. In tests the result scored 0.987 against her own voice (her own two halves score 0.984; the old brief 0.939).
+
+## What to watch fills itself (Hannah, Sun Nov 8, 2026)
+- The "Coming up" list is built by the page from AHEAD_ANNUAL (dates every year: Remembrance Day, Dec. 6, Sept. 30) and AHEAD_DATED (scheduled events) in index.html, plus any hand-written items.
+- Each item shows up to 60 days ahead (Remembrance Day 30), reads "Today" / "Tomorrow" on the day, and drops off after its last day.
+- Every run: add any newly announced date (rate decisions, Statistics Canada releases, House sittings, summits, elections, leaders' visits) to AHEAD_DATED with its source link. tools/freshness_check.py warns when the calendar runs out within 45 days.

@@ -114,12 +114,22 @@ def main():
         if kind == "updates" and h is not None and 1.5 < h < 24:
             todo.append(f"LIVE BLOG {net} ({story}): `updated` is {h:.1f} h old. Read the blog's newest post time and update it, or drop it if the blog has stopped.")
     # what to watch
-    for until, name in re.findall(r'<li data-until="([^"]*)"><span class="when">[^<]*</span><span class="what"><b><a[^>]*>([^<]*)</a>', s):
+    for until, name in re.findall(r'<li data-until="([^"]*)"[^>]*><span class="when">[^<]*</span><span class="what"><b><a[^>]*>([^<]*)</a>', s):
         try:
             if datetime.fromisoformat(until).astimezone(timezone.utc) < datetime.now(timezone.utc):
                 todo.append(f"WHAT TO WATCH: '{name}' has passed. Remove it and add what is next.")
         except ValueError:
             pass
+    # Hannah, Nov 8, 2026: What to watch fills itself from AHEAD_DATED (and AHEAD_ANNUAL) in index.html; keep the
+    # dated calendar stocked at least 45 days ahead with the next scheduled events, each linked to its source.
+    dated = re.findall(r"start: '(\d{4}-\d{2}-\d{2})'", s[s.find('const AHEAD_DATED'): s.find('(function aheadCalendar')])
+    if dated:
+        last = max(datetime.fromisoformat(d) for d in dated)
+        if last < datetime.now() + timedelta(days=45):
+            todo.append(f"WHAT TO WATCH: AHEAD_DATED in index.html runs out on {last:%b %d}. Add the next scheduled events "
+                        "(Bank of Canada and Fed decisions, Statistics Canada releases, House sittings, summits, elections, visits), each linked to its source.")
+    else:
+        todo.append("WHAT TO WATCH: AHEAD_DATED is missing from index.html.")
     if "<li><span class=\"when\">" in s[s.find('aside class="watch"'): s.find('</aside>', s.find('aside class="watch"'))]:
         todo.append("WHAT TO WATCH: an item has no data-until date; give every item one so it drops off by itself.")
     # Hannah: "I need the program to continually scan for the latest news. The Wainwright story is not the most up to
