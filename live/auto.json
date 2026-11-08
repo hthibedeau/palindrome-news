@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-08T06:47:31.104510+00:00",
- "checkedLabel": "Sun 1:47 a.m.",
+ "checked": "2026-11-08T06:57:30.472142+00:00",
+ "checkedLabel": "Sun 1:57 a.m.",
  "stories": [
   {
    "key": "top",
@@ -205,16 +205,6 @@
    "theme": ""
   },
   {
-   "score": 20,
-   "title": "UFC boss Dana White says he's meeting with Trump after press secretary job offer",
-   "url": "https://www.cbc.ca/news/world/trump-press-secretary-ufc-dana-white-9.7413697",
-   "outlets": 21,
-   "why": [
-    "CBC News front #3"
-   ],
-   "theme": ""
-  },
-  {
    "score": 19,
    "title": "What Mark Carney’s budget reveals about the ridings Liberals want to keep and win",
    "url": "https://www.thestar.com/politics/federal/what-mark-carney-s-budget-reveals-about-the-ridings-liberals-want-to-keep-and-win/article_b591b5e1-6e33-4ff5-83a1-2205e8ea67c4.html",
@@ -227,6 +217,16 @@
     "National Newswatch #8"
    ],
    "theme": "Federal budget"
+  },
+  {
+   "score": 18,
+   "title": "UFC boss Dana White says he's meeting with Trump after press secretary job offer",
+   "url": "https://www.cbc.ca/news/world/trump-press-secretary-ufc-dana-white-9.7413697",
+   "outlets": 21,
+   "why": [
+    "CBC News front #3"
+   ],
+   "theme": ""
   },
   {
    "score": 16,
@@ -242,16 +242,6 @@
    "url": "https://www.aljazeera.com/news/2026/11/8/earthquake-hits-central-japan-injuring-more-than-20-people?traffic_source=rss",
    "outlets": 14,
    "why": [],
-   "theme": ""
-  },
-  {
-   "score": 12,
-   "title": "Elks to face Alouettes in Grey Cup after beating Lions in West final",
-   "url": "https://www.cbc.ca/sports/football/cfl/cfl-playoffs-bc-lions-edmonton-elks-west-final-9.7413798",
-   "outlets": 7,
-   "why": [
-    "CBC News front #6"
-   ],
    "theme": ""
   },
   {
@@ -281,6 +271,16 @@
    "theme": ""
   },
   {
+   "score": 10,
+   "title": "Elks to face Alouettes in Grey Cup after beating Lions in West final",
+   "url": "https://www.cbc.ca/sports/football/cfl/cfl-playoffs-bc-lions-edmonton-elks-west-final-9.7413798",
+   "outlets": 7,
+   "why": [
+    "CBC News front #6"
+   ],
+   "theme": ""
+  },
+  {
    "score": 7,
    "title": "The Kremlin hopes the US election shake-up won't shift Trump's negotiations on Ukraine",
    "url": "https://www.thestar.com/news/world/europe/the-kremlin-hopes-the-us-election-shake-up-won-t-shift-trump-s-negotiations-on-ukraine/article_fdf7c594-cd0e-5fa4-bc79-ea395b6cc869.html",
@@ -297,13 +297,13 @@
    {
     "key": "auto-d2c3b619",
     "words": [
-     "ufc's",
-     "white",
      "ufc’s",
+     "white",
+     "ufc's",
      "dana",
      "ufc"
     ],
-    "score": 20,
+    "score": 18,
     "outlets": 7,
     "carriers": 19,
     "tag": "Developing",
@@ -684,7 +684,7 @@
     ],
     "judgment": "national",
     "judgment_why": "National: leading 7 front pages (CTV News, CP24, NBC News, CBS News, ABC News, BBC News).",
-    "weight": 44,
+    "weight": 42,
     "videos": [
      {
       "net": "CTV News",
@@ -719,8 +719,8 @@
     "url": "https://www.cbc.ca/news/world/trump-press-secretary-ufc-dana-white-9.7413697",
     "rank": 1,
     "live": "",
-    "weight": 44,
-    "score": 20,
+    "weight": 42,
+    "score": 18,
     "independent": 7,
     "most_read": 0,
     "canada": "tie",
@@ -761,9 +761,30 @@
     "why_judged": "Regional: affects many people; carried only by Toronto desks."
    },
    {
+    "title": "1 person killed in Etobicoke shooting, at least 2 suspects sought",
+    "url": "https://www.ctvnews.ca/toronto/article/1-person-killed-in-etobicoke-shooting-at-least-2-suspects-sought/",
+    "rank": 3,
+    "live": "",
+    "weight": 9.5,
+    "score": 5,
+    "independent": 4,
+    "most_read": 0,
+    "canada": "canadian",
+    "theme": "",
+    "top": false,
+    "fronts": 1,
+    "fronts_who": [
+     "CP24"
+    ],
+    "rule": "Canadian, older",
+    "carriers": 5,
+    "judgment": "local",
+    "why_judged": "Local: a single incident touching a few people; carried only by Toronto desks."
+   },
+   {
     "title": "Israel's president asks Gadi Eisenkot, Netanyahu's rival, to form new government",
     "url": "https://www.cbc.ca/news/world/gadi-eisenkot-form-government-israel-9.7413714",
-    "rank": 3,
+    "rank": 4,
     "live": "",
     "weight": 39,
     "score": 20,
@@ -789,7 +810,7 @@
    {
     "title": "Polish PM says Krakow mass shooter’s family found dead inside home",
     "url": "https://www.cp24.com/news/world/2026/11/07/polish-gunman-who-killed-6-people-in-krakow-has-ultranationalistic-views-minister-says/",
-    "rank": 4,
+    "rank": 5,
     "live": "",
     "weight": 35.0,
     "score": 16,
@@ -814,7 +835,7 @@
    {
     "title": "Earthquake hits central Japan, injuring more than 20 people",
     "url": "https://www.aljazeera.com/news/2026/11/8/earthquake-hits-central-japan-injuring-more-than-20-people?traffic_source=rss",
-    "rank": 5,
+    "rank": 6,
     "live": "",
     "weight": 34,
     "score": 14,
@@ -833,7 +854,7 @@
    {
     "title": "Budget offers little new relief for middle-income Canadians",
     "url": "https://www.ckom.com/2026/11/07/budget-offers-little-new-relief-for-middle-income-canadians/",
-    "rank": 6,
+    "rank": 7,
     "live": "",
     "weight": 45.5,
     "score": 19,
@@ -848,11 +869,6 @@
     "carriers": 9,
     "judgment": "national",
     "why_judged": "National: affects many people; carried across the country (3 cities)."
-   },
-   {
-    "title": "Elks to face Alouettes in Grey Cup after beating Lions in West final",
-    "score": 12,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
     "title": "It’s Morning in America. By all Means, Blame Canada.",
@@ -870,6 +886,11 @@
     "why": "not built: only 2 independent report(s) (11 sites)"
    },
    {
+    "title": "Elks to face Alouettes in Grey Cup after beating Lions in West final",
+    "score": 10,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
     "title": "Plane clips truck during emergency landing on busy Florida road",
     "score": 7,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
@@ -883,11 +904,6 @@
     "title": "The age of AI warfare has dawned. Is Canada ready?",
     "score": 6,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Drone attack on Colombian army base kills three soldiers and wounds 16",
-    "score": 6,
-    "why": "not built: only 2 independent report(s) (4 sites)"
    },
    {
     "title": "Province-wide protests call for moratorium on AI data centre proposals in N.S.",
@@ -933,7 +949,7 @@
      "alt": "Hackers claim leaked Russian data reveals up to 450,000 war-related deaths in Ukraine",
      "outlet": "Kyiv Independent",
      "url": "https://kyivindependent.com/hackers-claim-leaked-russian-data-reveals-up-to-450-000-war-related-deaths-in-ukraine/",
-     "since": "2026-11-08T06:49:11.408346+00:00"
+     "since": "2026-11-08T06:59:36.383847+00:00"
     },
     "photo_seen": [
      "https://assets.kyivindependent.com/content/images/2025/10/GettyImages-2194638070.jpg"
@@ -1085,6 +1101,201 @@
     "weight": 9.0
    },
    {
+    "key": "auto-f4e22bec",
+    "words": [
+     "etobicoke"
+    ],
+    "score": 5,
+    "outlets": 4,
+    "carriers": 5,
+    "tag": "Developing",
+    "title": "1 person killed in Etobicoke shooting, at least 2 suspects sought",
+    "url": "https://www.ctvnews.ca/toronto/article/1-person-killed-in-etobicoke-shooting-at-least-2-suspects-sought/",
+    "outlet": "CTV News",
+    "t": "Sat 8:10 p.m.",
+    "iso": "2026-11-08T01:10:15+00:00",
+    "summary": "Toronto police are investigating after a male victim was killed in a shooting in Etobicoke on Saturday afternoon.",
+    "first": {
+     "outlet": "CityNews",
+     "url": "https://toronto.citynews.ca/2026/11/07/man-injured-in-west-end-shooting/",
+     "t": "Sat 5:22 p.m.",
+     "title": "One man dead in Etobicoke shooting",
+     "iso": "2026-11-07T22:22:19+00:00"
+    },
+    "newest": "2026-11-08T01:10:15+00:00",
+    "photo": {
+     "src": "live/img/auto-f4e22bec-24254c140e.jpg",
+     "orig": "https://www.ctvnews.ca/resizer/v2/FP6ZDXHPTRGHFCVWDW2CLKFPBI.png?smart=true&auth=3d829d9cd3e866cadefd5f6240c030881da186a36f578043dbb7dc2fa61bd1c2&width=1200&height=630",
+     "caption": "Toronto police are investigating a shooting in the area of The East Mall and Rathburn Road on Saturday, Nov. 7, 2026. — via CTV News",
+     "alt": "Toronto police are investigating a shooting in the area of The East Mall and Rathburn Road on Saturday, Nov. 7, 2026.",
+     "outlet": "CTV News",
+     "url": "https://www.ctvnews.ca/toronto/article/1-person-killed-in-etobicoke-shooting-at-least-2-suspects-sought/",
+     "since": "2026-11-08T06:59:39.523319+00:00"
+    },
+    "photo_seen": [
+     "https://www.ctvnews.ca/resizer/v2/FP6ZDXHPTRGHFCVWDW2CLKFPBI.png?smart=true&auth=3d829d9cd3e866cadefd5f6240c030881da186a36f578043dbb7dc2fa61bd1c2&width=1200&height=630"
+    ],
+    "photos": [
+     {
+      "src": "live/img/auto-f4e22bec-24254c140e.jpg",
+      "orig": "https://www.ctvnews.ca/resizer/v2/FP6ZDXHPTRGHFCVWDW2CLKFPBI.png?smart=true&auth=3d829d9cd3e866cadefd5f6240c030881da186a36f578043dbb7dc2fa61bd1c2&width=1200&height=630",
+      "caption": "Toronto police are investigating a shooting in the area of The East Mall and Rathburn Road on Saturday, Nov. 7, 2026. — via CTV News",
+      "alt": "Toronto police are investigating a shooting in the area of The East Mall and Rathburn Road on Saturday, Nov. 7, 2026.",
+      "outlet": "CTV News",
+      "url": "https://www.ctvnews.ca/toronto/article/1-person-killed-in-etobicoke-shooting-at-least-2-suspects-sought/"
+     }
+    ],
+    "independent": 4,
+    "reports": [
+     {
+      "t": "Sat 8:10 p.m.",
+      "iso": "2026-11-08T01:10:15+00:00",
+      "outlet": "CTV News",
+      "title": "1 person killed in Etobicoke shooting, at least 2 suspects sought",
+      "url": "https://www.ctvnews.ca/toronto/article/1-person-killed-in-etobicoke-shooting-at-least-2-suspects-sought/",
+      "desc": "Toronto police are investigating after a male victim was killed in a shooting in Etobicoke on Saturday afternoon."
+     },
+     {
+      "t": "Sat 8:10 p.m.",
+      "iso": "2026-11-08T01:10:15+00:00",
+      "outlet": "CP24",
+      "title": "1 person killed in Etobicoke shooting, at least 2 suspects sought",
+      "url": "https://www.cp24.com/local/toronto/2026/11/08/1-person-killed-in-etobicoke-shooting-at-least-2-suspects-sought/",
+      "desc": ""
+     },
+     {
+      "t": "Sat 6:55 p.m.",
+      "iso": "2026-11-07T23:55:00+00:00",
+      "outlet": "Toronto Star",
+      "title": "Young man dead in afternoon shooting in Etobicoke, 2 suspects sought",
+      "url": "https://www.thestar.com/news/gta/male-victim-critically-injured-in-afternoon-shooting-in-etobicoke/article_9abfa3b6-fb1a-4aa6-9a4a-ff205572c0fa.html",
+      "desc": "The victim was most likely in his teens or 20s, Toronto police Insp. Jeff Allington told reporters near the scene Saturday night."
+     },
+     {
+      "t": "Sat 6:44 p.m.",
+      "iso": "2026-11-07T23:44:20+00:00",
+      "outlet": "Toronto Sun",
+      "title": "Male shot in Etobicoke dies in hospital: Cops",
+      "url": "https://torontosun.com/news/local-news/male-hospital-etobicoke-shooting",
+      "desc": ""
+     },
+     {
+      "t": "Sat 5:22 p.m.",
+      "iso": "2026-11-07T22:22:19+00:00",
+      "outlet": "CityNews",
+      "title": "One man dead in Etobicoke shooting",
+      "url": "https://toronto.citynews.ca/2026/11/07/man-injured-in-west-end-shooting/",
+      "desc": "Toronto police are searching for two suspects following a fatal shooting in the west end."
+     }
+    ],
+    "sources": [
+     {
+      "t": "Sat 8:10 p.m.",
+      "primary": false,
+      "outlet": "CTV News",
+      "title": "1 person killed in Etobicoke shooting, at least 2 suspects sought",
+      "url": "https://www.ctvnews.ca/toronto/article/1-person-killed-in-etobicoke-shooting-at-least-2-suspects-sought/",
+      "desc": "Toronto police are investigating after a male victim was killed in a shooting in Etobicoke on Saturday afternoon.",
+      "wire": "The Canadian Press",
+      "by": [
+       {
+        "outlet": "CTV News",
+        "src": "The Canadian Press",
+        "byline": "\"Stephen Hunt\" \"William Eltherington\" \"The Canadian Press\" \"Joe Lofaro\" \"Oliv"
+       },
+       {
+        "outlet": "CP24",
+        "src": "The Canadian Press",
+        "byline": "[ { \"@type\": \"Person\", \"name\": \"Bryann Aguilar\", } ] \"Bryann Aguilar\" \"Bryann Aguilar\" \"\" \"\" \"\" \"\" \"\" \"\" \"mediaconvert\" "
+       }
+      ],
+      "copies": [
+       {
+        "outlet": "CP24",
+        "url": "https://www.cp24.com/local/toronto/2026/11/08/1-person-killed-in-etobicoke-shooting-at-least-2-suspects-sought/"
+       }
+      ]
+     },
+     {
+      "t": "Sat 6:55 p.m.",
+      "primary": false,
+      "outlet": "Toronto Star",
+      "title": "Young man dead in afternoon shooting in Etobicoke, 2 suspects sought",
+      "url": "https://www.thestar.com/news/gta/male-victim-critically-injured-in-afternoon-shooting-in-etobicoke/article_9abfa3b6-fb1a-4aa6-9a4a-ff205572c0fa.html",
+      "desc": "The victim was most likely in his teens or 20s, Toronto police Insp. Jeff Allington told reporters near the scene Saturday night.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Toronto Star",
+        "src": "Torstar",
+        "byline": "own staff: Reporter"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Sat 6:44 p.m.",
+      "primary": false,
+      "outlet": "Toronto Sun",
+      "title": "Male shot in Etobicoke dies in hospital: Cops",
+      "url": "https://torontosun.com/news/local-news/male-hospital-etobicoke-shooting",
+      "desc": "",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Toronto Sun",
+        "src": "Postmedia",
+        "byline": "own staff: producer"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Sat 5:22 p.m.",
+      "primary": false,
+      "outlet": "CityNews",
+      "title": "One man dead in Etobicoke shooting",
+      "url": "https://toronto.citynews.ca/2026/11/07/man-injured-in-west-end-shooting/",
+      "desc": "Toronto police are searching for two suspects following a fatal shooting in the west end.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "CityNews",
+        "src": "Rogers",
+        "byline": "[{\"@id\":\"https://toronto.citynews.ca/#/schema/person/image/87fefe3a99ecb5e022a866d00a324628\"}] \"john-marchesan\" John Mar"
+       }
+      ],
+      "copies": []
+     }
+    ],
+    "replaces_top": false,
+    "events": [],
+    "theme": "",
+    "canada": "canadian",
+    "canus": false,
+    "incoherent": false,
+    "popular": 0,
+    "us_election": false,
+    "fronts": 1,
+    "fronts_ca": 1,
+    "fronts_who": [
+     "CP24"
+    ],
+    "judgment": "local",
+    "judgment_why": "Local: a single incident touching a few people; carried only by Toronto desks.",
+    "weight": 9.5,
+    "videos": [
+     {
+      "net": "CP24",
+      "url": "https://www.youtube.com/watch?v=2mmOh8AffnA",
+      "title": "One dead after Etobicoke shooting",
+      "img": "https://i.ytimg.com/vi/2mmOh8AffnA/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     }
+    ]
+   },
+   {
     "key": "auto-333e6377",
     "words": [
      "budget's",
@@ -1119,7 +1330,7 @@
      "alt": "Budget offers little new relief for middle-income Canadians",
      "outlet": "CKOM / PAnow",
      "url": "https://www.ckom.com/2026/11/07/budget-offers-little-new-relief-for-middle-income-canadians/",
-     "since": "2026-11-08T06:49:01.425458+00:00"
+     "since": "2026-11-08T06:59:22.789035+00:00"
     },
     "photo_seen": [
      "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/648/files/2026/11/grocery-cp-110726.jpg"
@@ -1350,33 +1561,33 @@
     "videos": [
      {
       "net": "Global News",
+      "url": "https://www.youtube.com/watch?v=7M_UKYz6Cps",
+      "title": "Global National: Nov. 6, 2026 | Carney touts budget plan to end homelessness",
+      "img": "https://i.ytimg.com/vi/7M_UKYz6Cps/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "Global News",
       "url": "https://www.youtube.com/watch?v=tS1zS-0oS2k",
-      "title": "Diving into the details of Budget 2026 and how Ottawa plans to ease the affordability crisis",
+      "title": "How Carney's Budget 2026 affects your wallet",
       "img": "https://i.ytimg.com/vi/tS1zS-0oS2k/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
       "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=QT-A_LxHwJ4",
-      "title": "Budget 2026: Business community has mixed reactions to Carney’s financial roadmap",
-      "img": "https://i.ytimg.com/vi/QT-A_LxHwJ4/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=_c4gx8SSHt0",
+      "title": "US tech stocks plummet after midterm results as Canada unveils aggressive AI budget",
+      "img": "https://i.ytimg.com/vi/_c4gx8SSHt0/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
       "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=TcfWVjaykmI",
-      "title": "“Enough is enough”: Poilievre attacks Carney’s immigration policy in 2026 budget",
-      "img": "https://i.ytimg.com/vi/TcfWVjaykmI/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CityNews",
-      "url": "https://www.youtube.com/watch?v=KFspIY3F4Z0",
-      "title": "Calgary outreach groups react to federal budget plan to end homelessness within 10 years",
-      "img": "https://i.ytimg.com/vi/KFspIY3F4Z0/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=QT-A_LxHwJ4",
+      "title": "What does Canada’s business community think of the 2026 federal budget?",
+      "img": "https://i.ytimg.com/vi/QT-A_LxHwJ4/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1431,7 +1642,7 @@
    "id": "gdLqazgRJU0",
    "r": "ca",
    "o": "APTN News",
-   "t": "On the Outside: The challenges of life after incarceration | APTN Investigates",
+   "t": "On the Outside: Their sentences are over, but their struggle is just beginning | APTN Investigates",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=gdLqazgRJU0",
@@ -1571,7 +1782,7 @@
    "id": "0brf9IQ3NEg",
    "r": "ca",
    "o": "Global News",
-   "t": "Global National: Nov. 7, 2026 | Trump's new Chief of Staff Miller may be bad news for Canada",
+   "t": "Global National: Nov. 7, 2026 | Why Trump's new chief of staff may be bad for Canada",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=0brf9IQ3NEg",
@@ -1585,7 +1796,7 @@
    "id": "26rMXkNcQrQ",
    "r": "ca",
    "o": "Global News",
-   "t": "Protecting Palestine's oldest olive tree amid West Bank settler violence",
+   "t": "Former Israeli military officials condemn West Bank settler violence, help Palestinian olive farms",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=26rMXkNcQrQ",
@@ -1683,7 +1894,7 @@
    "id": "ygXcIpI48mQ",
    "r": "us",
    "o": "CNN",
-   "t": "From Mamdani to MAGA: Reactions across the spectrum to midterm ‘blue-nami’",
+   "t": "From Mamdani to MAGA: Reactions to the midterm ‘blue-nami’",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=ygXcIpI48mQ",
@@ -1739,7 +1950,7 @@
    "id": "HMNrBWKy2kQ",
    "r": "us",
    "o": "CNN",
-   "t": "After the ‘bluenami’, where do Republicans go from here?",
+   "t": "Republicans try to diagnose midterm blowout & what's next",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=HMNrBWKy2kQ",
@@ -2005,7 +2216,7 @@
    "id": "Sc-tdCEbJz8",
    "r": "world",
    "o": "Sky News",
-   "t": "How one unidentified soldier came to represent Britain's war dead",
+   "t": "Why kings and queens walk around the Unknown Warrior's grave‌",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=Sc-tdCEbJz8",
@@ -2268,6 +2479,13 @@
  ],
  "eds": [
   [
+   "Toronto Star",
+   "Opinion",
+   "Patrick Corrigan's cartoon shows the spoils of a winning election campaign",
+   "https://www.thestar.com/opinion/editorial-cartoons/patrick-corrigan-s-cartoon-shows-the-spoils-of-a-winning-election-campaign/article_20239c1f-ed02-4b00-8aaf-b83449ecce30.html",
+   "2026-11-07T11:00:00+00:00"
+  ],
+  [
    "Toronto Sun",
    "Editorial",
    "Are Liberals repeating immigration blunders?",
@@ -2329,13 +2547,6 @@
    "Pepper…and Salt",
    "https://www.wsj.com/opinion/pepperand-salt-625a4119?mod=rss_opinion",
    "2026-11-07T05:00:00+00:00"
-  ],
-  [
-   "Washington Examiner",
-   "Opinion",
-   "Trump blames everyone but himself. So what else is new?",
-   "https://www.washingtonexaminer.com/op-eds/4793019/trump-blames-everyone-else-midterm-election-defeat/",
-   "2026-11-07T18:00:00+00:00"
   ]
  ],
  "canus": {
@@ -2403,8 +2614,8 @@
   "edition": "Sunday morning, November 8",
   "lines": [
    "Good morning. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
-   "Trump says he’s asked UFC’s Dana White to be his press secretary. No one will say if he’s joking, The Associated Press reports.",
    "Aid sector calls out lack of any mention of foreign aid in federal budget, The Canadian Press reports.",
+   "Trump says he’s asked UFC’s Dana White to be his press secretary. No one will say if he’s joking, The Associated Press reports.",
    "Israel’s president has tapped opposition candidate Gadi Eisenkot to form a new government, in another setback for Prime Minister Benjamin Netanyahu, The Associated Press reports.",
    "A Polish man with far-right views drove into a busy central square in Krakow on Saturday and opened fire, killing six people and injuring 15 others before police shot and wounded him, authorities said.",
    "A strong earthquake shook central Japan early Sunday, shattering store windows, causing people to flee buildings and leaving at least 22 people injured, according to local media.",
@@ -3268,7 +3479,7 @@
    "o": "BBC News",
    "ca": false,
    "h": [
-    "Six killed in Krakow shooting, as three more bodies found in suspect's home",
+    "Six killed in Krakow 'far-right' shooting, as three more bodies found in suspect's home",
     "What we know so far after Krakow gun attack",
     "Israel's president tasks opposition leader Eisenkot with forming government",
     "The Trump coalition is shattered - what will Republicans do now?",
@@ -3334,7 +3545,7 @@
     "url": "https://www.youtube.com/watch?v=XtLl_wi6H3A",
     "img": "https://i.ytimg.com/vi/XtLl_wi6H3A/hqdefault.jpg",
     "story": "Middle East latest, Trump White House updates, Melania Trump visits LS",
-    "watching": "323",
+    "watching": "299",
     "also": [
      {
       "net": "The White House live",
@@ -3425,6 +3636,10 @@
     "url": "https://www.youtube.com/watch?v=QB5BNdBFujE"
    },
    {
+    "net": "Sky News",
+    "url": "https://www.youtube.com/watch?v=umLWFz4izTM"
+   },
+   {
     "net": "DW News",
     "url": "https://www.youtube.com/watch?v=LuKwFajn37U"
    },
@@ -3439,10 +3654,6 @@
    {
     "net": "FRANCE 24 English",
     "url": "https://www.youtube.com/watch?v=HvZt-nh9sGg"
-   },
-   {
-    "net": "euronews",
-    "url": "https://www.youtube.com/watch?v=pykpO5kQJ98"
    }
   ]
  },
