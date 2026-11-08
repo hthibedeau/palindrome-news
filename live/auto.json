@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-08T09:12:22.827517+00:00",
- "checkedLabel": "Sun 4:12 a.m.",
+ "checked": "2026-11-08T09:15:56.206573+00:00",
+ "checkedLabel": "Sun 4:15 a.m.",
  "stories": [
   {
    "key": "top",
@@ -31,12 +31,39 @@
  ],
  "wire": [
   [
+   "Sun 4:09 a.m.",
+   "World",
+   "Briton among six dead after gunman opens fire in Kraków market square",
+   "The Guardian",
+   "https://www.theguardian.com/world/2026/nov/07/krakow-poland-shooting-market-square-deaths-gunman",
+   "2026-11-08T09:09:35+00:00",
+   1
+  ],
+  [
    "Sun 4:01 a.m.",
    "World",
    "How the Democrats' midterm wave shows a path back to the presidency",
    "CBC News",
    "https://www.cbc.ca/news/world/us-midterms-trump-democrats-2028-9.7411206",
    "2026-11-08T09:01:09.557000+00:00",
+   1
+  ],
+  [
+   "Sun 4:00 a.m.",
+   "World",
+   "Psychiatrists and paediatricians among specialists most likely to charge ‘extreme’ fees, thinktank finds",
+   "The Guardian",
+   "https://www.theguardian.com/australia-news/2026/nov/08/psychiatrists-paediatricians-extreme-specialist-fees-health-australia",
+   "2026-11-08T09:00:35+00:00",
+   1
+  ],
+  [
+   "Sun 4:00 a.m.",
+   "World",
+   "Pope’s visit to Argentina sets up showdown with ‘hyper-capitalist’ Milei",
+   "The Guardian",
+   "https://www.theguardian.com/world/2026/nov/08/popes-visit-to-argentina-sets-up-showdown-with-hyper-capitalist-milei",
+   "2026-11-08T09:00:35+00:00",
    1
   ],
   [
@@ -76,31 +103,13 @@
    1
   ],
   [
-   "Sun 3:57 a.m.",
-   "World",
-   "Rent-a-grandchild: Businesses offering companions to elderly grow in India",
-   "Al Jazeera",
-   "https://www.aljazeera.com/news/2026/11/8/rent-a-grandchild-businesses-offering-companions-to-elderly-grow-in-india?traffic_source=rss",
-   "2026-11-08T08:57:49+00:00",
-   1
-  ],
-  [
-   "Sun 3:56 a.m.",
-   "World",
-   "‘Don’t bring your camera’: Filmmakers face extortion in Lagos",
-   "Al Jazeera",
-   "https://www.aljazeera.com/news/2026/11/8/dont-bring-your-camera-filmmakers-face-extortion-in-lagos?traffic_source=rss",
-   "2026-11-08T08:56:04+00:00",
-   1
-  ],
-  [
    "Sun 3:53 a.m.",
    "Latest",
    "Iran live updates: Saudis say Houthi missiles targeted Riyadh, US disables ship",
    "ABC News",
    "https://abcnews.com/International/live-updates/iran-live-updates-trump-good-call-netanyahu/?id=137762456",
    "2026-11-08T08:53:46+00:00",
-   3
+   2
   ],
   [
    "Sun 3:51 a.m.",
@@ -245,15 +254,6 @@
    "https://www.theguardian.com/us-news/ng-interactive/2026/nov/08/trump-midterms-voters-mirror-world",
    "2026-11-08T07:00:34+00:00",
    1
-  ],
-  [
-   "Sun 2:00 a.m.",
-   "Business",
-   "Banana producers in Latin America want better pay to cope with effects of climate crisis",
-   "The Guardian",
-   "https://www.theguardian.com/business/2026/nov/08/banana-producers-in-latin-america-want-better-pay-to-cope-with-effects-of-climate-crisis",
-   "2026-11-08T07:00:34+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -285,10 +285,20 @@
  ],
  "leads": [
   {
-   "score": 23,
+   "score": 22,
+   "title": "Israel’s president taps opposition candidate Eisenkot to form a government, in setback for Netanyahu",
+   "url": "https://www.ctvnews.ca/world/article/israels-president-taps-opposition-candidate-eisenkot-to-form-a-government-in-setback-for-netanyahu/",
+   "outlets": 20,
+   "why": [
+    "National Newswatch #2"
+   ],
+   "theme": ""
+  },
+  {
+   "score": 22,
    "title": "What Mark Carney’s budget reveals about the ridings Liberals want to keep and win",
    "url": "https://www.thestar.com/politics/federal/what-mark-carney-s-budget-reveals-about-the-ridings-liberals-want-to-keep-and-win/article_b591b5e1-6e33-4ff5-83a1-2205e8ea67c4.html",
-   "outlets": 5,
+   "outlets": 4,
    "why": [
     "National Newswatch #1",
     "National Newswatch #10",
@@ -300,16 +310,6 @@
    "theme": "Federal budget"
   },
   {
-   "score": 22,
-   "title": "Israel’s president taps opposition candidate Eisenkot to form a government, in setback for Netanyahu",
-   "url": "https://www.ctvnews.ca/world/article/israels-president-taps-opposition-candidate-eisenkot-to-form-a-government-in-setback-for-netanyahu/",
-   "outlets": 21,
-   "why": [
-    "National Newswatch #2"
-   ],
-   "theme": ""
-  },
-  {
    "score": 17,
    "title": "Staff at the US center for AI safety are reporting to the White House, raising independence concerns",
    "url": "https://www.thestar.com/news/world/united-states/staff-at-the-us-center-for-ai-safety-are-reporting-to-the-white-house-raising-independence-concerns/article_b3df1671-69f8-5661-b859-072fda275097.html",
@@ -319,8 +319,8 @@
   },
   {
    "score": 15,
-   "title": "What we know about the Krakow shooting that left six people dead",
-   "url": "https://www.euronews.com/2026/11/08/what-we-know-about-the-krakow-shooting-that-left-six-people-dead",
+   "title": "Briton among six dead after gunman opens fire in Kraków market square",
+   "url": "https://www.theguardian.com/world/2026/nov/07/krakow-poland-shooting-market-square-deaths-gunman",
    "outlets": 13,
    "why": [],
    "theme": ""
@@ -330,14 +330,6 @@
    "title": "US military attacks cargo ship in the Gulf of Oman",
    "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/us-military-attacks-cargo-ship-in-the-gulf-of-oman?traffic_source=rss",
    "outlets": 12,
-   "why": [],
-   "theme": ""
-  },
-  {
-   "score": 13,
-   "title": "Iran live updates: Saudis say Houthi missiles targeted Riyadh, US disables ship",
-   "url": "https://abcnews.com/International/live-updates/iran-live-updates-trump-good-call-netanyahu/?id=137762456",
-   "outlets": 11,
    "why": [],
    "theme": ""
   },
@@ -359,22 +351,30 @@
   },
   {
    "score": 10,
-   "title": "Trump’s choice of Stephen Miller as Chief of Staff is making the Democrats’ great week, even better.",
-   "url": "https://bruce728.substack.com/p/trumps-choice-of-stephen-miller-as",
-   "outlets": 5,
-   "why": [
-    "National Newswatch #7"
-   ],
-   "theme": ""
-  },
-  {
-   "score": 10,
    "title": "It’s Morning in America. By all Means, Blame Canada.",
    "url": "https://www.policymagazine.ca/its-morning-in-america-by-all-means-blame-canada/",
    "outlets": 8,
    "why": [
     "National Newswatch #15"
    ],
+   "theme": ""
+  },
+  {
+   "score": 9,
+   "title": "Trump’s choice of Stephen Miller as Chief of Staff is making the Democrats’ great week, even better.",
+   "url": "https://bruce728.substack.com/p/trumps-choice-of-stephen-miller-as",
+   "outlets": 4,
+   "why": [
+    "National Newswatch #7"
+   ],
+   "theme": ""
+  },
+  {
+   "score": 7,
+   "title": "Kao Miura wins men’s figure skating title and completes Japanese sweep at Cup of China",
+   "url": "https://www.winnipegfreepress.com/uncategorized/2026/11/08/kao-miura-wins-mens-figure-skating-title-and-completes-japanese-sweep-at-cup-of-china",
+   "outlets": 5,
+   "why": [],
    "theme": ""
   }
  ],
@@ -424,329 +424,6 @@
   "takeover": true,
   "stale_since": "2026-10-28T00:15:00+00:00",
   "stories": [
-   {
-    "key": "auto-333e6377",
-    "words": [
-     "budget's",
-     "foreign",
-     "sector",
-     "budget",
-     "comes",
-     "calls"
-    ],
-    "score": 23,
-    "outlets": 6,
-    "carriers": 10,
-    "tag": "Breaking",
-    "title": "Poilievre pans Liberal budget's $15M capital gains exemption, calls for 'simpler' plan",
-    "url": "https://www.cbc.ca/news/politics/poilievre-capital-gains-exemption-budget-2026-9.7413640",
-    "outlet": "CBC News",
-    "t": "Sun 4:00 a.m.",
-    "iso": "2026-11-08T09:00:00+00:00",
-    "summary": "Conservative Leader Pierre Poilievre is criticizing a key feature of the Carney government's latest budget, arguing the proposed $15-million capital gains exemption on the sale of qualifying shares from a Canadian company applies too narrowly, excluding key businesses.",
-    "first": {
-     "outlet": "CBC News",
-     "url": "https://www.cbc.ca/news/canada/manitoba/farm-rollover-budget-nieces-nephews-9.7413050?cmp=rss",
-     "t": "Sat 6:00 a.m.",
-     "title": "Farmers pleased with federal budget's proposed changes allowing land to be given to nieces, nephews tax-free",
-     "iso": "2026-11-07T11:00:00+00:00"
-    },
-    "newest": "2026-11-08T09:00:00+00:00",
-    "photo": {
-     "src": "live/img/auto-333e6377-02dce7a3a6.jpg",
-     "orig": "https://i.cbc.ca/ais/d45de024-aac7-44bf-a49e-64932033f138,1794071929697/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C506%2C7450%2C4190%29%3BResize%3D620",
-     "caption": "Conservative Leader Pierre Poilievre rises after the tabling of the federal budget in the House of Commons, in Ottawa on Thursday. (Justin Tang/The Canadian Press) — via CBC News",
-     "alt": "Conservative Leader Pierre Poilievre rises after the tabling of the federal budget in the House of Commons, in Ottawa on Thursday.",
-     "outlet": "CBC News",
-     "url": "https://www.cbc.ca/news/politics/poilievre-capital-gains-exemption-budget-2026-9.7413640",
-     "since": "2026-11-08T09:13:33.909859+00:00"
-    },
-    "photo_seen": [
-     "https://globalnews.ca/wp-content/uploads/2026/11/Anand-e1794064594276.jpg?quality=65&strip=all&w=720&h=379&crop=1"
-    ],
-    "photos": [
-     {
-      "src": "live/img/auto-333e6377-02dce7a3a6.jpg",
-      "orig": "https://i.cbc.ca/ais/d45de024-aac7-44bf-a49e-64932033f138,1794071929697/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C506%2C7450%2C4190%29%3BResize%3D620",
-      "caption": "Conservative Leader Pierre Poilievre rises after the tabling of the federal budget in the House of Commons, in Ottawa on Thursday. (Justin Tang/The Canadian Press) — via CBC News",
-      "alt": "Conservative Leader Pierre Poilievre rises after the tabling of the federal budget in the House of Commons, in Ottawa on Thursday.",
-      "outlet": "CBC News",
-      "url": "https://www.cbc.ca/news/politics/poilievre-capital-gains-exemption-budget-2026-9.7413640"
-     }
-    ],
-    "independent": 6,
-    "reports": [
-     {
-      "t": "Sun 4:00 a.m.",
-      "iso": "2026-11-08T09:00:00+00:00",
-      "outlet": "CBC News",
-      "title": "Poilievre pans Liberal budget's $15M capital gains exemption, calls for 'simpler' plan",
-      "url": "https://www.cbc.ca/news/politics/poilievre-capital-gains-exemption-budget-2026-9.7413640",
-      "desc": "Conservative Leader Pierre Poilievre is criticizing a key feature of the Carney government's latest budget, arguing the proposed $15-million capital gains exemption on the sale of qualifying shares from a Canadian company applies too narrowly, excluding key businesses."
-     },
-     {
-      "t": "Sun 3:30 a.m.",
-      "iso": "2026-11-08T08:30:22+00:00",
-      "outlet": "VOCM",
-      "title": "November 8, 2026 – What grade do you give the federal budget when it comes to helping Canadians with affordability?",
-      "url": "https://vocm.com/2026/11/08/316023/",
-      "desc": "Local News Now. Newfoundland and Labrador's News Leader."
-     },
-     {
-      "t": "Sat 3:40 p.m.",
-      "iso": "2026-11-07T20:40:30+00:00",
-      "outlet": "CKOM / PAnow",
-      "title": "Budget offers little new relief for middle-income Canadians",
-      "url": "https://www.ckom.com/2026/11/07/budget-offers-little-new-relief-for-middle-income-canadians/",
-      "desc": "While Ottawa earmarked more help for lower-income households, families with earnings above income-tested thresholds may be iced out as the government banks on economic growth to boost purchasing power."
-     },
-     {
-      "t": "Sat 2:19 p.m.",
-      "iso": "2026-11-07T19:19:25+00:00",
-      "outlet": "Daily Hive",
-      "title": "Canada's 2026 federal budget sets out $50 billion for Indigenous communities over 10 years",
-      "url": "https://dailyhive.com/vancouver/canada-2026-federal-budget-indigenous-communities",
-      "desc": "Prime Minister Mark Carney's 2026 federal budget sets aside roughly $50 billion in funding for Indigenous communities over 10 years."
-     },
-     {
-      "t": "Sat 12:08 p.m.",
-      "iso": "2026-11-07T17:08:50+00:00",
-      "outlet": "CTV News",
-      "title": "Federal budget brings major funding news for two Regina cultural institutions",
-      "url": "https://www.ctvnews.ca/regina/article/federal-budget-brings-major-funding-news-for-two-regina-cultural-institutions/",
-      "desc": "Saskatchewan is now getting its first national museum after the federal government announced plans to designate Regina’s RCMP Heritage Centre."
-     },
-     {
-      "t": "Sat 10:16 a.m.",
-      "iso": "2026-11-07T15:16:48+00:00",
-      "outlet": "Global News",
-      "title": "Aid sector calls out omission of foreign aid in federal budget",
-      "url": "https://globalnews.ca/news/12141139/budget-2026-foreign-aid/",
-      "desc": "The budget tabled Thursday by Prime Minister Mark Carney's government makes no mention of international assistance, foreign aid or international development."
-     },
-     {
-      "t": "Sat 10:00 a.m.",
-      "iso": "2026-11-07T15:00:22+00:00",
-      "outlet": "Vancouver Sun",
-      "title": "Federal budget's $6.5 billion commitment to forestry comes at 'critical time'",
-      "url": "https://vancouversun.com/news/local-news/federal-budgets-6-5-billion-commitment-to-forestry-comes-at-critical-time",
-      "desc": ""
-     },
-     {
-      "t": "Sat 7:39 a.m.",
-      "iso": "2026-11-07T12:39:31+00:00",
-      "outlet": "CP24",
-      "title": "Federal budget is ‘silent’ on foreign assistance: aid sector",
-      "url": "https://www.cp24.com/news/world/2026/11/07/federal-budget-is-silent-on-foreign-assistance-aid-sector/",
-      "desc": "Canada’s aid sector is expressing dismay over the first federal budget in more than 15 years to make no mention of foreign aid, and is calling on Ottawa to outline its vision in an upcoming foreign policy review."
-     },
-     {
-      "t": "Sat 7:00 a.m.",
-      "iso": "2026-11-07T12:00:00+00:00",
-      "outlet": "Toronto Star",
-      "title": "What Mark Carney’s budget reveals about the ridings Liberals want to keep and win",
-      "url": "https://www.thestar.com/politics/federal/what-mark-carney-s-budget-reveals-about-the-ridings-liberals-want-to-keep-and-win/article_b591b5e1-6e33-4ff5-83a1-2205e8ea67c4.html",
-      "desc": ""
-     },
-     {
-      "t": "Sat 6:00 a.m.",
-      "iso": "2026-11-07T11:00:09+00:00",
-      "outlet": "CityNews Halifax",
-      "title": "Aid sector calls out lack of any mention of foreign aid in federal budget",
-      "url": "https://halifax.citynews.ca/2026/11/07/aid-sector-calls-out-lack-of-any-mention-of-foreign-aid-in-federal-budget/",
-      "desc": ""
-     }
-    ],
-    "sources": [
-     {
-      "t": "Sun 4:00 a.m.",
-      "primary": false,
-      "outlet": "CBC News",
-      "title": "Poilievre pans Liberal budget's $15M capital gains exemption, calls for 'simpler' plan",
-      "url": "https://www.cbc.ca/news/politics/poilievre-capital-gains-exemption-budget-2026-9.7413640",
-      "desc": "Conservative Leader Pierre Poilievre is criticizing a key feature of the Carney government's latest budget, arguing the proposed $15-million capital gains exemption on the sale of qualifying shares from a Canadian company applies too narrowly, excluding key businesses.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "CBC News",
-        "src": "CBC",
-        "byline": "own staff: Producer"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Sun 3:30 a.m.",
-      "primary": false,
-      "outlet": "VOCM",
-      "title": "November 8, 2026 – What grade do you give the federal budget when it comes to helping Canadians with affordability?",
-      "url": "https://vocm.com/2026/11/08/316023/",
-      "desc": "Local News Now. Newfoundland and Labrador's News Leader.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "VOCM",
-        "src": "VOCM",
-        "byline": "[{\"@type\":\"Person\",\"name\":\"Mahalia Ardis\"}] \"Mahalia Ardis\" Mahalia Ardis "
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Sat 6:00 a.m.",
-      "primary": false,
-      "outlet": "CityNews Halifax",
-      "title": "Aid sector calls out lack of any mention of foreign aid in federal budget",
-      "url": "https://halifax.citynews.ca/2026/11/07/aid-sector-calls-out-lack-of-any-mention-of-foreign-aid-in-federal-budget/",
-      "desc": "OTTAWA — Canada's aid sector is expressing dismay over the first federal budget in more than 15 years to make no mention of foreign aid, and is calling on Ottawa to outline its vision in an upcoming foreign policy review.",
-      "wire": "The Canadian Press",
-      "by": [
-       {
-        "outlet": "CityNews Halifax",
-        "src": "The Canadian Press",
-        "byline": "3f5fe805acc41a6fdf\"}] \"Dylan Robertson, The Canadian Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CP24",
-        "src": "The Canadian Press",
-        "byline": "\"@type\": \"Person\",\n      \"name\": \"The Canadian Press\",\n      \n    }\n  ]"
-       },
-       {
-        "outlet": "Global News",
-        "src": "The Canadian Press",
-        "byline": "\"Dylan Robertson\" Name Damian aden holding On The Side Lines Johnny Kernal PJ McLean Anonymous David Best Johnny "
-       },
-       {
-        "outlet": "CTV News",
-        "src": "The Canadian Press",
-        "byline": "ington\" \"Joe Lofaro\" \"Olivia O'Malley\" \"The Canadian Press\" \"Hannah Kavanagh\""
-       },
-       {
-        "outlet": "CKOM / PAnow",
-        "src": "The Canadian Press",
-        "byline": "\"@type\":\"Person\",\"name\":\"Brett Bundale, The Canadian Press\"}] \"Brett Bundale,"
-       }
-      ],
-      "copies": [
-       {
-        "outlet": "CP24",
-        "url": "https://www.cp24.com/news/world/2026/11/07/federal-budget-is-silent-on-foreign-assistance-aid-sector/"
-       },
-       {
-        "outlet": "Global News",
-        "url": "https://globalnews.ca/news/12141139/budget-2026-foreign-aid/"
-       },
-       {
-        "outlet": "CTV News",
-        "url": "https://www.ctvnews.ca/regina/article/federal-budget-brings-major-funding-news-for-two-regina-cultural-institutions/"
-       },
-       {
-        "outlet": "CKOM / PAnow",
-        "url": "https://www.ckom.com/2026/11/07/budget-offers-little-new-relief-for-middle-income-canadians/"
-       }
-      ]
-     },
-     {
-      "t": "Sat 2:19 p.m.",
-      "primary": false,
-      "outlet": "Daily Hive",
-      "title": "Canada's 2026 federal budget sets out $50 billion for Indigenous communities over 10 years",
-      "url": "https://dailyhive.com/vancouver/canada-2026-federal-budget-indigenous-communities",
-      "desc": "Prime Minister Mark Carney's 2026 federal budget sets aside roughly $50 billion in funding for Indigenous communities over 10 years.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Daily Hive",
-        "src": "Daily Hive",
-        "byline": "[{\"@type\":\"Person\",\"name\":\"Kenneth Chan\",}] "
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Sat 10:00 a.m.",
-      "primary": false,
-      "outlet": "Vancouver Sun",
-      "title": "Federal budget's $6.5 billion commitment to forestry comes at 'critical time'",
-      "url": "https://vancouversun.com/news/local-news/federal-budgets-6-5-billion-commitment-to-forestry-comes-at-critical-time",
-      "desc": "",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Vancouver Sun",
-        "src": "Postmedia",
-        "byline": "[{\"@type\": \"Person\", \"name\": \"Derrick Penner\", \"alternateName\": \"depenner\", , , \"email\": \"depenner@postmedia.com\", \"desc"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Sat 7:00 a.m.",
-      "primary": false,
-      "outlet": "Toronto Star",
-      "title": "What Mark Carney’s budget reveals about the ridings Liberals want to keep and win",
-      "url": "https://www.thestar.com/politics/federal/what-mark-carney-s-budget-reveals-about-the-ridings-liberals-want-to-keep-and-win/article_b591b5e1-6e33-4ff5-83a1-2205e8ea67c4.html",
-      "desc": "Ridings of two floor-crossers to the Liberals got project funding in Thursday's budget, but so did Pierre Poilievre's.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Toronto Star",
-        "src": "Torstar",
-        "byline": "own staff: producer"
-       }
-      ],
-      "copies": []
-     }
-    ],
-    "replaces_top": false,
-    "events": [],
-    "theme": "Federal budget",
-    "canada": "canadian",
-    "canus": false,
-    "incoherent": false,
-    "popular": 5,
-    "us_election": false,
-    "fronts": 0,
-    "fronts_ca": 0,
-    "fronts_who": [],
-    "judgment": "national",
-    "judgment_why": "National: affects many people; carried across the country (national desks).",
-    "weight": 61.0,
-    "videos": [
-     {
-      "net": "CBC News",
-      "url": "https://www.youtube.com/watch?v=OgaqPzZnLKU",
-      "title": "Federal budget proposes funding to help build, refurbish ice rinks | Hanomansing Live",
-      "img": "https://i.ytimg.com/vi/OgaqPzZnLKU/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CBC News",
-      "url": "https://www.youtube.com/watch?v=phzrZhO2EkA",
-      "title": "Political Pulse: Carney tables a budget, Trump’s policies cost him the midterms | Power & Politics",
-      "img": "https://i.ytimg.com/vi/phzrZhO2EkA/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CBC News",
-      "url": "https://www.youtube.com/watch?v=gR9tk8dMcn8",
-      "title": "Breaking down the federal budget | The Current",
-      "img": "https://i.ytimg.com/vi/gR9tk8dMcn8/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CBC News",
-      "url": "https://www.youtube.com/watch?v=dRF4ND6Hmeg",
-      "title": "Carney's big federal budget bets | Front Burner",
-      "img": "https://i.ytimg.com/vi/dRF4ND6Hmeg/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     }
-    ]
-   },
    {
     "key": "auto-9f6276b5",
     "words": [
@@ -1125,18 +802,18 @@
     "weight": 50,
     "videos": [
      {
-      "net": "CBC News",
-      "url": "https://www.youtube.com/watch?v=imo7fxV3_d0",
-      "title": "Israel's president chooses Gadi Eisenkot, Netanyahu's rival, to form new government",
-      "img": "https://i.ytimg.com/vi/imo7fxV3_d0/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
       "net": "CTV News",
       "url": "https://www.youtube.com/watch?v=zCLavslGxlA",
       "title": "Israeli President Herzog names Netanyahu opponent to form new government",
       "img": "https://i.ytimg.com/vi/zCLavslGxlA/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=imo7fxV3_d0",
+      "title": "Israel's president chooses Gadi Eisenkot, Netanyahu's rival, to form new government",
+      "img": "https://i.ytimg.com/vi/imo7fxV3_d0/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
@@ -1149,32 +826,299 @@
       "up": ""
      }
     ]
+   },
+   {
+    "key": "auto-da15605b",
+    "words": [
+     "gulf",
+     "oman"
+    ],
+    "score": 14,
+    "outlets": 3,
+    "carriers": 12,
+    "tag": "Developing",
+    "title": "U.S. military says it fired on commercial vessel in Gulf of Oman after it attempted to breach blockade",
+    "url": "https://www.ctvnews.ca/world/article/us-military-says-it-fired-on-commercial-vessel-in-gulf-of-oman-after-it-attempted-to-breach-blockade/",
+    "outlet": "CTV News",
+    "t": "Sat 5:14 p.m.",
+    "iso": "2026-11-07T22:14:10+00:00",
+    "summary": "U.S. Central Command said late Saturday it disabled a St. Kitts-flagged ship after it ignored multiple warnings and attempted to leave the region after visiting an Iranian port.",
+    "first": {
+     "outlet": "Toronto Star",
+     "url": "https://www.thestar.com/news/world/middle-east/us-military-says-it-fired-on-commercial-vessel-in-gulf-of-oman-after-it-attempted-to-breach-blockade/article_33c8cfdd-04be-5ea3-a711-2379dd38f4be.html",
+     "t": "Sat 4:07 p.m.",
+     "title": "US military says it fired on commercial vessel in Gulf of Oman after it attempted to breach blockade",
+     "iso": "2026-11-07T21:07:00+00:00"
+    },
+    "newest": "2026-11-08T08:24:37+00:00",
+    "photo": {
+     "src": "live/img/auto-da15605b-427db2378c.jpg",
+     "orig": "https://www.ctvnews.ca/resizer/v2/2U3AOKCWL6BYRXYK75DFV654SM.jpg?smart=true&auth=58a1b3ffbd2cf9df7bcbab390800dcba19b4304a403fc7678f69d43ea0a529a5&width=1200&height=630",
+     "caption": "A bird flies low over the water as cargo ships lie at anchor in the Strait of Hormuz off Bandar Abbas, Iran, early Saturday, Oct. 24, 2026. (Amirhosein Khorgooi/ISNA via AP). — via CTV News",
+     "alt": "A bird flies low over the water as cargo ships lie at anchor in the Strait of Hormuz off Bandar Abbas, Iran, early Saturday, Oct. 24, 2026. (Amirhosein Khorgooi",
+     "outlet": "CTV News",
+     "url": "https://www.ctvnews.ca/world/article/us-military-says-it-fired-on-commercial-vessel-in-gulf-of-oman-after-it-attempted-to-breach-blockade/",
+     "since": "2026-11-08T09:19:00.238952+00:00"
+    },
+    "photo_seen": [
+     "https://www.ctvnews.ca/resizer/v2/2U3AOKCWL6BYRXYK75DFV654SM.jpg?smart=true&auth=58a1b3ffbd2cf9df7bcbab390800dcba19b4304a403fc7678f69d43ea0a529a5&width=1200&height=630"
+    ],
+    "photos": [],
+    "independent": 3,
+    "reports": [
+     {
+      "t": "Sun 3:24 a.m.",
+      "iso": "2026-11-08T08:24:37+00:00",
+      "outlet": "Al Jazeera",
+      "title": "US military attacks cargo ship in the Gulf of Oman",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/us-military-attacks-cargo-ship-in-the-gulf-of-oman?traffic_source=rss",
+      "desc": "The US military says it has fired on and disabled a St. Kitts-flagged cargo ship in the Gulf of Oman."
+     },
+     {
+      "t": "Sat 8:45 p.m.",
+      "iso": "2026-11-08T01:45:13+00:00",
+      "outlet": "The Hill",
+      "title": "US military fires at cargo ship in Gulf of Oman",
+      "url": "https://thehill.com/policy/defense/6206359-us-military-disables-oman-vessel/",
+      "desc": ""
+     },
+     {
+      "t": "Sat 5:14 p.m.",
+      "iso": "2026-11-07T22:14:10+00:00",
+      "outlet": "CTV News",
+      "title": "U.S. military says it fired on commercial vessel in Gulf of Oman after it attempted to breach blockade",
+      "url": "https://www.ctvnews.ca/world/article/us-military-says-it-fired-on-commercial-vessel-in-gulf-of-oman-after-it-attempted-to-breach-blockade/",
+      "desc": "U.S. Central Command said late Saturday it disabled a St. Kitts-flagged ship after it ignored multiple warnings and attempted to leave the region after visiting an Iranian port."
+     },
+     {
+      "t": "Sat 5:14 p.m.",
+      "iso": "2026-11-07T22:14:10+00:00",
+      "outlet": "CP24",
+      "title": "U.S. military says it fired on commercial vessel in Gulf of Oman after it attempted to breach blockade",
+      "url": "https://www.cp24.com/news/world/2026/11/07/us-military-says-it-fired-on-commercial-vessel-in-gulf-of-oman-after-it-attempted-to-breach-blockade/",
+      "desc": ""
+     },
+     {
+      "t": "Sat 4:07 p.m.",
+      "iso": "2026-11-07T21:07:16+00:00",
+      "outlet": "CityNews Winnipeg",
+      "title": "US military says it fired on commercial vessel in Gulf of Oman after it attempted to breach blockade",
+      "url": "https://winnipeg.citynews.ca/2026/11/07/us-military-says-it-fired-on-commercial-vessel-in-gulf-of-oman-after-it-attempted-to-breach-blockade/",
+      "desc": "JERUSALEM (AP) — U.S. Central Command said late Saturday it disabled a St. Kitts-flagged ship after it ignored multiple warnings and attempted to leave the region after visiting an Iranian port."
+     },
+     {
+      "t": "Sat 4:07 p.m.",
+      "iso": "2026-11-07T21:07:16+00:00",
+      "outlet": "CityNews Vancouver",
+      "title": "US military says it fired on commercial vessel in Gulf of Oman after it attempted to breach blockade",
+      "url": "https://vancouver.citynews.ca/2026/11/07/us-military-says-it-fired-on-commercial-vessel-in-gulf-of-oman-after-it-attempted-to-breach-blockade/",
+      "desc": ""
+     },
+     {
+      "t": "Sat 4:07 p.m.",
+      "iso": "2026-11-07T21:07:16+00:00",
+      "outlet": "CityNews Ottawa",
+      "title": "US military says it fired on commercial vessel in Gulf of Oman after it attempted to breach blockade",
+      "url": "https://ottawa.citynews.ca/2026/11/07/us-military-says-it-fired-on-commercial-vessel-in-gulf-of-oman-after-it-attempted-to-breach-blockade/",
+      "desc": ""
+     },
+     {
+      "t": "Sat 4:07 p.m.",
+      "iso": "2026-11-07T21:07:16+00:00",
+      "outlet": "CityNews Montreal",
+      "title": "US military says it fired on commercial vessel in Gulf of Oman after it attempted to breach blockade",
+      "url": "https://montreal.citynews.ca/2026/11/07/us-military-says-it-fired-on-commercial-vessel-in-gulf-of-oman-after-it-attempted-to-breach-blockade/",
+      "desc": ""
+     },
+     {
+      "t": "Sat 4:07 p.m.",
+      "iso": "2026-11-07T21:07:16+00:00",
+      "outlet": "CityNews Edmonton",
+      "title": "US military says it fired on commercial vessel in Gulf of Oman after it attempted to breach blockade",
+      "url": "https://edmonton.citynews.ca/2026/11/07/us-military-says-it-fired-on-commercial-vessel-in-gulf-of-oman-after-it-attempted-to-breach-blockade/",
+      "desc": ""
+     },
+     {
+      "t": "Sat 4:07 p.m.",
+      "iso": "2026-11-07T21:07:16+00:00",
+      "outlet": "CityNews Calgary",
+      "title": "US military says it fired on commercial vessel in Gulf of Oman after it attempted to breach blockade",
+      "url": "https://calgary.citynews.ca/2026/11/07/us-military-says-it-fired-on-commercial-vessel-in-gulf-of-oman-after-it-attempted-to-breach-blockade/",
+      "desc": ""
+     },
+     {
+      "t": "Sat 4:07 p.m.",
+      "iso": "2026-11-07T21:07:16+00:00",
+      "outlet": "CityNews",
+      "title": "US military says it fired on commercial vessel in Gulf of Oman after it attempted to breach blockade",
+      "url": "https://toronto.citynews.ca/2026/11/07/us-military-says-it-fired-on-commercial-vessel-in-gulf-of-oman-after-it-attempted-to-breach-blockade/",
+      "desc": ""
+     },
+     {
+      "t": "Sat 4:07 p.m.",
+      "iso": "2026-11-07T21:07:00+00:00",
+      "outlet": "Toronto Star",
+      "title": "US military says it fired on commercial vessel in Gulf of Oman after it attempted to breach blockade",
+      "url": "https://www.thestar.com/news/world/middle-east/us-military-says-it-fired-on-commercial-vessel-in-gulf-of-oman-after-it-attempted-to-breach-blockade/article_33c8cfdd-04be-5ea3-a711-2379dd38f4be.html",
+      "desc": ""
+     }
+    ],
+    "sources": [
+     {
+      "t": "Sun 3:24 a.m.",
+      "primary": false,
+      "outlet": "Al Jazeera",
+      "title": "US military attacks cargo ship in the Gulf of Oman",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/us-military-attacks-cargo-ship-in-the-gulf-of-oman?traffic_source=rss",
+      "desc": "The US military says it has fired on and disabled a St. Kitts-flagged cargo ship in the Gulf of Oman.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Al Jazeera",
+        "src": "Al Jazeera",
+        "byline": " NewsFeed Add Al Jazeera on Google"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Sat 8:45 p.m.",
+      "primary": false,
+      "outlet": "The Hill",
+      "title": "US military fires at cargo ship in Gulf of Oman",
+      "url": "https://thehill.com/policy/defense/6206359-us-military-disables-oman-vessel/",
+      "desc": "px-captcha",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "The Hill",
+        "src": "The Hill",
+        "byline": ""
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Sat 4:07 p.m.",
+      "primary": false,
+      "outlet": "Toronto Star",
+      "title": "US military says it fired on commercial vessel in Gulf of Oman after it attempted to breach blockade",
+      "url": "https://www.thestar.com/news/world/middle-east/us-military-says-it-fired-on-commercial-vessel-in-gulf-of-oman-after-it-attempted-to-breach-blockade/article_33c8cfdd-04be-5ea3-a711-2379dd38f4be.html",
+      "desc": "JERUSALEM (AP) — U.S. Central Command said late Saturday it disabled a St. Kitts-flagged ship after it ignored multiple warnings and attempted to leave the region after visiting an Iranian",
+      "wire": "The Associated Press",
+      "by": [
+       {
+        "outlet": "Toronto Star",
+        "src": "The Associated Press",
+        "byline": "\"The Associated Press\" \"The Associated Pr"
+       },
+       {
+        "outlet": "CityNews Winnipeg",
+        "src": "The Associated Press",
+        "byline": "ede01291c2e6f3f5fe805acc41a6fdf\"}] \"The Associated Press,\" News Staff \n\t\t\tBy"
+       },
+       {
+        "outlet": "CityNews Vancouver",
+        "src": "The Associated Press",
+        "byline": "ede01291c2e6f3f5fe805acc41a6fdf\"}] \"The Associated Press,\" News Staff \n\t\t\tBy"
+       },
+       {
+        "outlet": "CityNews Ottawa",
+        "src": "The Associated Press",
+        "byline": "ede01291c2e6f3f5fe805acc41a6fdf\"}] \"The Associated Press,\" News Staff \n\t\t\tBy"
+       },
+       {
+        "outlet": "CityNews Montreal",
+        "src": "The Associated Press",
+        "byline": "ede01291c2e6f3f5fe805acc41a6fdf\"}] \"The Associated Press,\" News Staff \n\t\t\tBy"
+       },
+       {
+        "outlet": "CityNews Edmonton",
+        "src": "The Associated Press",
+        "byline": "ede01291c2e6f3f5fe805acc41a6fdf\"}] \"The Associated Press,\" News Staff \n\t\t\tBy"
+       },
+       {
+        "outlet": "CityNews Calgary",
+        "src": "The Associated Press",
+        "byline": "ede01291c2e6f3f5fe805acc41a6fdf\"}] \"The Associated Press,\" News Staff \n\t\t\tBy"
+       },
+       {
+        "outlet": "CityNews",
+        "src": "The Associated Press",
+        "byline": "ede01291c2e6f3f5fe805acc41a6fdf\"}] \"The Associated Press,\" News Staff \n\t\t\tBy"
+       },
+       {
+        "outlet": "CTV News",
+        "src": "The Canadian Press",
+        "byline": "ington\" \"Joe Lofaro\" \"Olivia O'Malley\" \"The Canadian Press\" \"Hannah Kavanagh\""
+       },
+       {
+        "outlet": "CP24",
+        "src": "The Associated Press",
+        "byline": "\"@type\": \"Person\",\n      \"name\": \"The  Associated Press\",\n      \n    }\n  ]"
+       }
+      ],
+      "copies": [
+       {
+        "outlet": "CityNews Winnipeg",
+        "url": "https://winnipeg.citynews.ca/2026/11/07/us-military-says-it-fired-on-commercial-vessel-in-gulf-of-oman-after-it-attempted-to-breach-blockade/"
+       },
+       {
+        "outlet": "CityNews Vancouver",
+        "url": "https://vancouver.citynews.ca/2026/11/07/us-military-says-it-fired-on-commercial-vessel-in-gulf-of-oman-after-it-attempted-to-breach-blockade/"
+       },
+       {
+        "outlet": "CityNews Ottawa",
+        "url": "https://ottawa.citynews.ca/2026/11/07/us-military-says-it-fired-on-commercial-vessel-in-gulf-of-oman-after-it-attempted-to-breach-blockade/"
+       },
+       {
+        "outlet": "CityNews Montreal",
+        "url": "https://montreal.citynews.ca/2026/11/07/us-military-says-it-fired-on-commercial-vessel-in-gulf-of-oman-after-it-attempted-to-breach-blockade/"
+       },
+       {
+        "outlet": "CityNews Edmonton",
+        "url": "https://edmonton.citynews.ca/2026/11/07/us-military-says-it-fired-on-commercial-vessel-in-gulf-of-oman-after-it-attempted-to-breach-blockade/"
+       },
+       {
+        "outlet": "CityNews Calgary",
+        "url": "https://calgary.citynews.ca/2026/11/07/us-military-says-it-fired-on-commercial-vessel-in-gulf-of-oman-after-it-attempted-to-breach-blockade/"
+       },
+       {
+        "outlet": "CityNews",
+        "url": "https://toronto.citynews.ca/2026/11/07/us-military-says-it-fired-on-commercial-vessel-in-gulf-of-oman-after-it-attempted-to-breach-blockade/"
+       },
+       {
+        "outlet": "CTV News",
+        "url": "https://www.ctvnews.ca/world/article/us-military-says-it-fired-on-commercial-vessel-in-gulf-of-oman-after-it-attempted-to-breach-blockade/"
+       },
+       {
+        "outlet": "CP24",
+        "url": "https://www.cp24.com/news/world/2026/11/07/us-military-says-it-fired-on-commercial-vessel-in-gulf-of-oman-after-it-attempted-to-breach-blockade/"
+       }
+      ]
+     }
+    ],
+    "replaces_top": false,
+    "events": [],
+    "theme": "",
+    "canada": "none",
+    "canus": false,
+    "incoherent": false,
+    "popular": 0,
+    "us_election": false,
+    "fronts": 0,
+    "fronts_ca": 0,
+    "fronts_who": [],
+    "judgment": "national",
+    "judgment_why": "National: affects many people; carried across the country (7 cities).",
+    "weight": 37.0
    }
   ],
   "considered": [
    {
-    "title": "Poilievre pans Liberal budget's $15M capital gains exemption, calls for 'simpler' plan",
-    "url": "https://www.cbc.ca/news/politics/poilievre-capital-gains-exemption-budget-2026-9.7413640",
-    "rank": 1,
-    "live": "",
-    "weight": 61.0,
-    "score": 23,
-    "independent": 6,
-    "most_read": 5,
-    "canada": "canadian",
-    "theme": "Federal budget",
-    "top": true,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "Canadian and breaking",
-    "carriers": 10,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (national desks)."
-   },
-   {
     "title": "Netanyahu rival Eisenkot to be tasked with forming new government following Israeli elections",
     "url": "https://www.euronews.com/2026/11/08/netanyahu-rival-eisenkot-to-be-tasked-with-forming-new-government-following-israeli-electi",
-    "rank": 2,
+    "rank": 1,
     "live": "",
     "weight": 50,
     "score": 22,
@@ -1200,7 +1144,7 @@
    {
     "title": "U.S. military says it fired on commercial vessel in Gulf of Oman after it attempted to breach blockade",
     "url": "https://www.ctvnews.ca/world/article/us-military-says-it-fired-on-commercial-vessel-in-gulf-of-oman-after-it-attempted-to-breach-blockade/",
-    "rank": 3,
+    "rank": 2,
     "live": "",
     "weight": 37.0,
     "score": 14,
@@ -1208,7 +1152,7 @@
     "most_read": 0,
     "canada": "none",
     "theme": "",
-    "top": false,
+    "top": true,
     "fronts": 0,
     "fronts_who": [],
     "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
@@ -1219,7 +1163,7 @@
    {
     "title": "What we know about the Krakow shooting that left six people dead",
     "url": "https://www.euronews.com/2026/11/08/what-we-know-about-the-krakow-shooting-that-left-six-people-dead",
-    "rank": 4,
+    "rank": 3,
     "live": "",
     "weight": 36.0,
     "score": 15,
@@ -1243,7 +1187,7 @@
    {
     "title": "Earthquake hits central Japan, injuring more than 20 people",
     "url": "https://www.aljazeera.com/news/2026/11/8/earthquake-hits-central-japan-injuring-more-than-20-people?traffic_source=rss",
-    "rank": 5,
+    "rank": 4,
     "live": "",
     "weight": 30,
     "score": 13,
@@ -1262,7 +1206,7 @@
    {
     "title": "Staff at the US center for AI safety are reporting to the White House, raising independence concerns",
     "url": "https://www.thestar.com/news/world/united-states/staff-at-the-us-center-for-ai-safety-are-reporting-to-the-white-house-raising-independence-concerns/article_b3df1671-69f8-5661-b859-072fda275097.html",
-    "rank": 6,
+    "rank": 5,
     "live": "",
     "weight": 41,
     "score": 17,
@@ -1287,9 +1231,23 @@
     "why_judged": "National: leading 7 front pages (CTV News, CP24, NBC News, CBS News, ABC News, BBC News)."
    },
    {
-    "title": "Iran live updates: Saudis say Houthi missiles targeted Riyadh, US disables ship",
-    "score": 13,
-    "why": "not built: only 2 independent report(s) (6 sites)"
+    "title": "Poilievre pans Liberal budget's $15M capital gains exemption, calls for 'simpler' plan",
+    "url": "https://www.cbc.ca/news/politics/poilievre-capital-gains-exemption-budget-2026-9.7413640",
+    "rank": 6,
+    "live": "",
+    "weight": 58.5,
+    "score": 22,
+    "independent": 5,
+    "most_read": 5,
+    "canada": "canadian",
+    "theme": "Federal budget",
+    "top": false,
+    "fronts": 0,
+    "fronts_who": [],
+    "rule": "Canadian and breaking",
+    "carriers": 9,
+    "judgment": "national",
+    "why_judged": "National: affects many people; carried across the country (national desks)."
    },
    {
     "title": "Festival of Lights, Festival of Growth: A look at Diwali’s business impact in Canada",
@@ -1297,13 +1255,13 @@
     "why": "not built: only 2 independent report(s) (9 sites)"
    },
    {
-    "title": "Trump’s choice of Stephen Miller as Chief of Staff is making the Democrats’ great week, even better.",
+    "title": "It’s Morning in America. By all Means, Blame Canada.",
     "score": 10,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "It’s Morning in America. By all Means, Blame Canada.",
-    "score": 10,
+    "title": "Trump’s choice of Stephen Miller as Chief of Staff is making the Democrats’ great week, even better.",
+    "score": 9,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
@@ -1315,6 +1273,16 @@
     "title": "Alexander says Bombers player taunted about late father in Alouettes' East final win",
     "score": 7,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "How Trump's tariffs are threatening to spoil the success of Canadian cheese",
+    "score": 7,
+    "why": "not built: only 1 independent report(s) (1 sites)"
+   },
+   {
+    "title": "Abdul El-Sayed slams Trump’s tariff war with Canada",
+    "score": 7,
+    "why": "not built: only 1 independent report(s) (1 sites)"
    },
    {
     "title": "What needs to happen for Canada to join Europe's flagship student exchange program?",
@@ -1343,9 +1311,9 @@
    {
     "key": "auto-d2c3b619",
     "words": [
-     "ufc's",
-     "white",
      "ufc’s",
+     "white",
+     "ufc's",
      "dana",
      "ufc"
     ],
@@ -1374,7 +1342,7 @@
      "alt": "Staff at the US center for AI safety are reporting to the White House, raising independence concerns",
      "outlet": "Toronto Star",
      "url": "https://www.thestar.com/news/world/united-states/staff-at-the-us-center-for-ai-safety-are-reporting-to-the-white-house-raising-independence-concerns/article_b3df1671-69f8-5661-b859-072fda275097.html",
-     "since": "2026-11-08T09:13:37.765383+00:00"
+     "since": "2026-11-08T09:18:54.572831+00:00"
     },
     "photo_seen": [
      "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/f/45/f45e2f6a-07cc-52a2-8a69-f9d52cf072bc/6af02e5b0b6b7.image.jpg?crop=1920%2C1008%2C0%2C35&resize=1200%2C630&order=crop%2Cresize"
@@ -1613,7 +1581,7 @@
        {
         "outlet": "CTV News",
         "src": "The Canadian Press",
-        "byline": "\"Stephen Hunt\" \"William Eltherington\" \"The Canadian Press\" \"Joe Lofaro\" \"Oliv"
+        "byline": "ington\" \"Joe Lofaro\" \"Olivia O'Malley\" \"The Canadian Press\" \"Hannah Kavanagh\""
        },
        {
         "outlet": "CP24",
@@ -1762,16 +1730,310 @@
       "up": ""
      }
     ]
+   },
+   {
+    "key": "auto-333e6377",
+    "words": [
+     "budget's",
+     "foreign",
+     "billion",
+     "budget",
+     "sector",
+     "calls"
+    ],
+    "score": 22,
+    "outlets": 5,
+    "carriers": 9,
+    "tag": "Breaking",
+    "title": "Poilievre pans Liberal budget's $15M capital gains exemption, calls for 'simpler' plan",
+    "url": "https://www.cbc.ca/news/politics/poilievre-capital-gains-exemption-budget-2026-9.7413640",
+    "outlet": "CBC News",
+    "t": "Sun 4:00 a.m.",
+    "iso": "2026-11-08T09:00:00+00:00",
+    "summary": "Conservative Leader Pierre Poilievre is criticizing a key feature of the Carney government's latest budget, arguing the proposed $15-million capital gains exemption on the sale of qualifying shares from a Canadian company applies too narrowly, excluding key businesses.",
+    "first": {
+     "outlet": "CBC News",
+     "url": "https://www.cbc.ca/news/canada/manitoba/farm-rollover-budget-nieces-nephews-9.7413050?cmp=rss",
+     "t": "Sat 6:00 a.m.",
+     "title": "Farmers pleased with federal budget's proposed changes allowing land to be given to nieces, nephews tax-free",
+     "iso": "2026-11-07T11:00:00+00:00"
+    },
+    "newest": "2026-11-08T09:00:00+00:00",
+    "photo": {
+     "src": "live/img/auto-333e6377-02dce7a3a6.jpg",
+     "orig": "https://i.cbc.ca/ais/d45de024-aac7-44bf-a49e-64932033f138,1794071929697/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C506%2C7450%2C4190%29%3BResize%3D620",
+     "caption": "Conservative Leader Pierre Poilievre rises after the tabling of the federal budget in the House of Commons, in Ottawa on Thursday. (Justin Tang/The Canadian Press) — via CBC News",
+     "alt": "Conservative Leader Pierre Poilievre rises after the tabling of the federal budget in the House of Commons, in Ottawa on Thursday.",
+     "outlet": "CBC News",
+     "url": "https://www.cbc.ca/news/politics/poilievre-capital-gains-exemption-budget-2026-9.7413640",
+     "since": "2026-11-08T09:13:33.909859+00:00"
+    },
+    "photo_seen": [
+     "https://globalnews.ca/wp-content/uploads/2026/11/Anand-e1794064594276.jpg?quality=65&strip=all&w=720&h=379&crop=1"
+    ],
+    "photos": [
+     {
+      "src": "live/img/auto-333e6377-02dce7a3a6.jpg",
+      "orig": "https://i.cbc.ca/ais/d45de024-aac7-44bf-a49e-64932033f138,1794071929697/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C506%2C7450%2C4190%29%3BResize%3D620",
+      "caption": "Conservative Leader Pierre Poilievre rises after the tabling of the federal budget in the House of Commons, in Ottawa on Thursday. (Justin Tang/The Canadian Press) — via CBC News",
+      "alt": "Conservative Leader Pierre Poilievre rises after the tabling of the federal budget in the House of Commons, in Ottawa on Thursday.",
+      "outlet": "CBC News",
+      "url": "https://www.cbc.ca/news/politics/poilievre-capital-gains-exemption-budget-2026-9.7413640"
+     }
+    ],
+    "independent": 5,
+    "reports": [
+     {
+      "t": "Sun 4:00 a.m.",
+      "iso": "2026-11-08T09:00:00+00:00",
+      "outlet": "CBC News",
+      "title": "Poilievre pans Liberal budget's $15M capital gains exemption, calls for 'simpler' plan",
+      "url": "https://www.cbc.ca/news/politics/poilievre-capital-gains-exemption-budget-2026-9.7413640",
+      "desc": "Conservative Leader Pierre Poilievre is criticizing a key feature of the Carney government's latest budget, arguing the proposed $15-million capital gains exemption on the sale of qualifying shares from a Canadian company applies too narrowly, excluding key businesses."
+     },
+     {
+      "t": "Sat 3:40 p.m.",
+      "iso": "2026-11-07T20:40:30+00:00",
+      "outlet": "CKOM / PAnow",
+      "title": "Budget offers little new relief for middle-income Canadians",
+      "url": "https://www.ckom.com/2026/11/07/budget-offers-little-new-relief-for-middle-income-canadians/",
+      "desc": "While Ottawa earmarked more help for lower-income households, families with earnings above income-tested thresholds may be iced out as the government banks on economic growth to boost purchasing power."
+     },
+     {
+      "t": "Sat 2:19 p.m.",
+      "iso": "2026-11-07T19:19:25+00:00",
+      "outlet": "Daily Hive",
+      "title": "Canada's 2026 federal budget sets out $50 billion for Indigenous communities over 10 years",
+      "url": "https://dailyhive.com/vancouver/canada-2026-federal-budget-indigenous-communities",
+      "desc": "Prime Minister Mark Carney's 2026 federal budget sets aside roughly $50 billion in funding for Indigenous communities over 10 years."
+     },
+     {
+      "t": "Sat 12:08 p.m.",
+      "iso": "2026-11-07T17:08:50+00:00",
+      "outlet": "CTV News",
+      "title": "Federal budget brings major funding news for two Regina cultural institutions",
+      "url": "https://www.ctvnews.ca/regina/article/federal-budget-brings-major-funding-news-for-two-regina-cultural-institutions/",
+      "desc": "Saskatchewan is now getting its first national museum after the federal government announced plans to designate Regina’s RCMP Heritage Centre."
+     },
+     {
+      "t": "Sat 10:16 a.m.",
+      "iso": "2026-11-07T15:16:48+00:00",
+      "outlet": "Global News",
+      "title": "Aid sector calls out omission of foreign aid in federal budget",
+      "url": "https://globalnews.ca/news/12141139/budget-2026-foreign-aid/",
+      "desc": "The budget tabled Thursday by Prime Minister Mark Carney's government makes no mention of international assistance, foreign aid or international development."
+     },
+     {
+      "t": "Sat 10:00 a.m.",
+      "iso": "2026-11-07T15:00:22+00:00",
+      "outlet": "Vancouver Sun",
+      "title": "Federal budget's $6.5 billion commitment to forestry comes at 'critical time'",
+      "url": "https://vancouversun.com/news/local-news/federal-budgets-6-5-billion-commitment-to-forestry-comes-at-critical-time",
+      "desc": ""
+     },
+     {
+      "t": "Sat 7:39 a.m.",
+      "iso": "2026-11-07T12:39:31+00:00",
+      "outlet": "CP24",
+      "title": "Federal budget is ‘silent’ on foreign assistance: aid sector",
+      "url": "https://www.cp24.com/news/world/2026/11/07/federal-budget-is-silent-on-foreign-assistance-aid-sector/",
+      "desc": "Canada’s aid sector is expressing dismay over the first federal budget in more than 15 years to make no mention of foreign aid, and is calling on Ottawa to outline its vision in an upcoming foreign policy review."
+     },
+     {
+      "t": "Sat 7:00 a.m.",
+      "iso": "2026-11-07T12:00:00+00:00",
+      "outlet": "Toronto Star",
+      "title": "What Mark Carney’s budget reveals about the ridings Liberals want to keep and win",
+      "url": "https://www.thestar.com/politics/federal/what-mark-carney-s-budget-reveals-about-the-ridings-liberals-want-to-keep-and-win/article_b591b5e1-6e33-4ff5-83a1-2205e8ea67c4.html",
+      "desc": "Ridings of two floor-crossers to the Liberals got project funding in Thursday's budget, but so did Pierre Poilievre's."
+     },
+     {
+      "t": "Sat 6:00 a.m.",
+      "iso": "2026-11-07T11:00:09+00:00",
+      "outlet": "CityNews Halifax",
+      "title": "Aid sector calls out lack of any mention of foreign aid in federal budget",
+      "url": "https://halifax.citynews.ca/2026/11/07/aid-sector-calls-out-lack-of-any-mention-of-foreign-aid-in-federal-budget/",
+      "desc": ""
+     }
+    ],
+    "sources": [
+     {
+      "t": "Sun 4:00 a.m.",
+      "primary": false,
+      "outlet": "CBC News",
+      "title": "Poilievre pans Liberal budget's $15M capital gains exemption, calls for 'simpler' plan",
+      "url": "https://www.cbc.ca/news/politics/poilievre-capital-gains-exemption-budget-2026-9.7413640",
+      "desc": "Conservative Leader Pierre Poilievre is criticizing a key feature of the Carney government's latest budget, arguing the proposed $15-million capital gains exemption on the sale of qualifying shares from a Canadian company applies too narrowly, excluding key businesses.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "CBC News",
+        "src": "CBC",
+        "byline": "own staff: Producer"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Sat 6:00 a.m.",
+      "primary": false,
+      "outlet": "CityNews Halifax",
+      "title": "Aid sector calls out lack of any mention of foreign aid in federal budget",
+      "url": "https://halifax.citynews.ca/2026/11/07/aid-sector-calls-out-lack-of-any-mention-of-foreign-aid-in-federal-budget/",
+      "desc": "OTTAWA — Canada's aid sector is expressing dismay over the first federal budget in more than 15 years to make no mention of foreign aid, and is calling on Ottawa to outline its vision in an upcoming foreign policy review.",
+      "wire": "The Canadian Press",
+      "by": [
+       {
+        "outlet": "CityNews Halifax",
+        "src": "The Canadian Press",
+        "byline": "3f5fe805acc41a6fdf\"}] \"Dylan Robertson, The Canadian Press\" News Staff \n\t\t\tBy"
+       },
+       {
+        "outlet": "CP24",
+        "src": "The Canadian Press",
+        "byline": "\"@type\": \"Person\",\n      \"name\": \"The Canadian Press\",\n      \n    }\n  ]"
+       },
+       {
+        "outlet": "Global News",
+        "src": "The Canadian Press",
+        "byline": "\"Dylan Robertson\" Name Damian aden holding On The Side Lines Johnny Kernal PJ McLean Anonymous David Best Johnny "
+       },
+       {
+        "outlet": "CTV News",
+        "src": "The Canadian Press",
+        "byline": "ington\" \"Joe Lofaro\" \"Olivia O'Malley\" \"The Canadian Press\" \"Hannah Kavanagh\""
+       },
+       {
+        "outlet": "CKOM / PAnow",
+        "src": "The Canadian Press",
+        "byline": "\"@type\":\"Person\",\"name\":\"Brett Bundale, The Canadian Press\"}] \"Brett Bundale,"
+       }
+      ],
+      "copies": [
+       {
+        "outlet": "CP24",
+        "url": "https://www.cp24.com/news/world/2026/11/07/federal-budget-is-silent-on-foreign-assistance-aid-sector/"
+       },
+       {
+        "outlet": "Global News",
+        "url": "https://globalnews.ca/news/12141139/budget-2026-foreign-aid/"
+       },
+       {
+        "outlet": "CTV News",
+        "url": "https://www.ctvnews.ca/regina/article/federal-budget-brings-major-funding-news-for-two-regina-cultural-institutions/"
+       },
+       {
+        "outlet": "CKOM / PAnow",
+        "url": "https://www.ckom.com/2026/11/07/budget-offers-little-new-relief-for-middle-income-canadians/"
+       }
+      ]
+     },
+     {
+      "t": "Sat 2:19 p.m.",
+      "primary": false,
+      "outlet": "Daily Hive",
+      "title": "Canada's 2026 federal budget sets out $50 billion for Indigenous communities over 10 years",
+      "url": "https://dailyhive.com/vancouver/canada-2026-federal-budget-indigenous-communities",
+      "desc": "Prime Minister Mark Carney's 2026 federal budget sets aside roughly $50 billion in funding for Indigenous communities over 10 years.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Daily Hive",
+        "src": "Daily Hive",
+        "byline": "[{\"@type\":\"Person\",\"name\":\"Kenneth Chan\",}] "
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Sat 10:00 a.m.",
+      "primary": false,
+      "outlet": "Vancouver Sun",
+      "title": "Federal budget's $6.5 billion commitment to forestry comes at 'critical time'",
+      "url": "https://vancouversun.com/news/local-news/federal-budgets-6-5-billion-commitment-to-forestry-comes-at-critical-time",
+      "desc": "",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Vancouver Sun",
+        "src": "Postmedia",
+        "byline": "[{\"@type\": \"Person\", \"name\": \"Derrick Penner\", \"alternateName\": \"depenner\", , , \"email\": \"depenner@postmedia.com\", \"desc"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Sat 7:00 a.m.",
+      "primary": false,
+      "outlet": "Toronto Star",
+      "title": "What Mark Carney’s budget reveals about the ridings Liberals want to keep and win",
+      "url": "https://www.thestar.com/politics/federal/what-mark-carney-s-budget-reveals-about-the-ridings-liberals-want-to-keep-and-win/article_b591b5e1-6e33-4ff5-83a1-2205e8ea67c4.html",
+      "desc": "Ridings of two floor-crossers to the Liberals got project funding in Thursday's budget, but so did Pierre Poilievre's.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Toronto Star",
+        "src": "Torstar",
+        "byline": "own staff: producer"
+       }
+      ],
+      "copies": []
+     }
+    ],
+    "replaces_top": false,
+    "events": [],
+    "theme": "Federal budget",
+    "canada": "canadian",
+    "canus": false,
+    "incoherent": true,
+    "popular": 5,
+    "us_election": false,
+    "fronts": 0,
+    "fronts_ca": 0,
+    "fronts_who": [],
+    "judgment": "national",
+    "judgment_why": "National: affects many people; carried across the country (national desks).",
+    "weight": 58.5,
+    "videos": [
+     {
+      "net": "CTV News",
+      "url": "https://www.youtube.com/watch?v=CzNmzOdI2HY",
+      "title": "Federal focuses outlined in budget earn London's praise | CTV News London at 11 for Nov. 6, 2026",
+      "img": "https://i.ytimg.com/vi/CzNmzOdI2HY/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CTV News",
+      "url": "https://www.youtube.com/watch?v=bhmO833D7kU",
+      "title": "Mixed reaction from Albertans to federal budget | CTV News Edmonton at 11:30 for Nov. 6, 2026",
+      "img": "https://i.ytimg.com/vi/bhmO833D7kU/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=OgaqPzZnLKU",
+      "title": "Federal budget proposes funding to help build, refurbish ice rinks | Hanomansing Live",
+      "img": "https://i.ytimg.com/vi/OgaqPzZnLKU/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=phzrZhO2EkA",
+      "title": "Political Pulse: Carney tables a budget, Trump’s policies cost him the midterms | Power & Politics",
+      "img": "https://i.ytimg.com/vi/phzrZhO2EkA/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     }
+    ]
    }
   ],
   "passed_over": [
    {
     "title": "What we know about the Krakow shooting that left six people dead",
     "url": "https://www.euronews.com/2026/11/08/what-we-know-about-the-krakow-shooting-that-left-six-people-dead"
-   },
-   {
-    "title": "U.S. military says it fired on commercial vessel in Gulf of Oman after it attempted to breach blockade",
-    "url": "https://www.ctvnews.ca/world/article/us-military-says-it-fired-on-commercial-vessel-in-gulf-of-oman-after-it-attempted-to-breach-blockade/"
    },
    {
     "title": "Earthquake hits central Japan, injuring more than 20 people",
@@ -1966,7 +2228,7 @@
    "id": "26rMXkNcQrQ",
    "r": "ca",
    "o": "Global News",
-   "t": "Protecting Palestine's oldest olive tree amid West Bank settler violence",
+   "t": "Former Israeli military officials condemn West Bank settler violence, help Palestinian olive farms",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=26rMXkNcQrQ",
@@ -2330,7 +2592,7 @@
    "id": "3W--LN6a05I",
    "r": "world",
    "o": "Sky News",
-   "t": "'The information field is destroyed': Russia's last independent newspaper closes",
+   "t": "The end of Russia's last independent newspaper",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=3W--LN6a05I",
@@ -2729,6 +2991,13 @@
     "url": "https://www.cbc.ca/news/canada/trump-tariffs-canadian-dairy-cheese-industry-9.7413227"
    },
    {
+    "t": "Sat 3:44 p.m.",
+    "iso": "2026-11-07T20:44:34+00:00",
+    "outlet": "Al Jazeera",
+    "title": "Abdul El-Sayed slams Trump’s tariff war with Canada",
+    "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/abdul-el-sayed-slams-trumps-tariff-war-with-canada?traffic_source=rss"
+   },
+   {
     "t": "Fri 5:56 p.m.",
     "iso": "2026-11-06T22:56:46+00:00",
     "outlet": "CP24",
@@ -2769,13 +3038,6 @@
     "outlet": "Toronto Star",
     "title": "Federal budget pumps billions into Canadian culture amid trade war",
     "url": "https://www.thestar.com/politics/federal/federal-budget-pumps-billions-into-canadian-culture-amid-trade-war/article_a3b3c5e5-fa3b-4ffc-b919-49a639355be5.html"
-   },
-   {
-    "t": "Wed 6:30 p.m.",
-    "iso": "2026-11-04T23:30:00+00:00",
-    "outlet": "Toronto Star",
-    "title": "Carney government officials don't expect big change to trade talks after dramatic U.S. elections",
-    "url": "https://www.thestar.com/politics/carney-government-officials-don-t-expect-big-change-to-trade-talks-after-dramatic-u-s-elections/article_af472624-142b-40dc-8b9c-4dd80a0aff92.html"
    }
   ],
   "usmedia": []
@@ -2858,22 +3120,6 @@
    "auto": true
   },
   {
-   "cat": "intl",
-   "media": "none",
-   "initials": "UN",
-   "name": "United Nations",
-   "role": "UN News",
-   "date": "Nov 7",
-   "platform": "Official statement",
-   "handle": "news.un.org",
-   "hed": "‘For the first time I have my own chair’: Gaza siblings find new freedom",
-   "summary": "In Gaza, 10-year-old Anas is one of three siblings born without legs and with only two fingers on each of their hands. They struggle to move around and perform daily activities like eating and writing independently.",
-   "href": "https://news.un.org/feed/view/en/story/2026/11/1168759",
-   "report": false,
-   "iso": "2026-11-07T12:00:00+00:00",
-   "auto": true
-  },
-  {
    "cat": "pm",
    "media": "none",
    "initials": "MC",
@@ -2887,22 +3133,6 @@
    "href": "https://www.pm.gc.ca/en/news/news-releases/2026/11/06/prime-minister-carney-launches-plan-put-canada-path-end-homelessness",
    "report": false,
    "iso": "2026-11-06T17:24:40+00:00",
-   "auto": true
-  },
-  {
-   "cat": "intl",
-   "media": "none",
-   "initials": "UN",
-   "name": "United Nations",
-   "role": "UN News",
-   "date": "Nov 6",
-   "platform": "Official statement",
-   "handle": "news.un.org",
-   "hed": "Afghanistan faces deepening humanitarian crisis amid sweeping rights restrictions",
-   "summary": "Afghanistan stands at a “difficult crossroad” more than five years after the Taliban returned to power, a senior UN official said on Friday. Relative stability and security are being undercut by a fragile economy, sweeping curbs on rights…",
-   "href": "https://news.un.org/feed/view/en/story/2026/11/1168758",
-   "report": false,
-   "iso": "2026-11-06T12:00:00+00:00",
    "auto": true
   }
  ],
@@ -3199,7 +3429,7 @@
    "iso": "2026-11-08T08:51:38+00:00",
    "title": "Netanyahu rival Eisenkot to be tasked with forming new government following Israeli elections",
    "summary": "In Israel, a candidate tasked with forming a new government has 28 days to carry out the job. The president is able to extend this by a maximum of 14 days before giving the mandate to someone else.",
-   "outlet": "Euronews, Middle East Eye, CBC News, The Japan Times, BBC News, CTV News",
+   "outlet": "Euronews, CBC News, The Japan Times, BBC News, CTV News, CP24",
    "url": "https://www.euronews.com/2026/11/08/netanyahu-rival-eisenkot-to-be-tasked-with-forming-new-government-following-israeli-electi",
    "img": "https://images.euronews.com/articles/stories/09/98/42/77/1200x675_cmsv2_cacaa2c9-8b72-54f0-8972-3f0359bbbcbf-9984277.jpg"
   },
@@ -3228,24 +3458,13 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Sun 3:53 a.m.",
-   "iso": "2026-11-08T08:53:46+00:00",
-   "title": "Iran live updates: Saudis say Houthi missiles targeted Riyadh, US disables ship",
-   "summary": "President Donald Trump announced \"major combat operations\" against Iran on Feb. 28.",
-   "outlet": "ABC News, Al Jazeera, Middle East Eye, BBC News, Toronto Star, CKOM / PAnow",
-   "url": "https://abcnews.com/International/live-updates/iran-live-updates-trump-good-call-netanyahu/?id=137762456",
-   "img": "https://i.abcnewsfe.com/a/d4f481ab-1228-4900-bd2c-a104b9068d78/Royadh-file-DB-261108_1794126805575_hpMain_16x9.jpg?w=1600"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Sun 3:04 a.m.",
-   "iso": "2026-11-08T08:04:19+00:00",
-   "title": "What we know about the Krakow shooting that left six people dead",
-   "summary": "Police said the bodies of the suspect's 53-year-old father, 52-year-old mother and 21-year-old sister had also been found at his home. #EuropeNews",
-   "outlet": "Euronews, BBC News, The Guardian, CTV News, CP24, Times Colonist",
-   "url": "https://www.euronews.com/2026/11/08/what-we-know-about-the-krakow-shooting-that-left-six-people-dead",
-   "img": "https://images.euronews.com/articles/stories/09/98/40/75/1200x675_cmsv2_5c11ac26-ae77-584d-a8a7-d71f1c6d2888-9984075.jpg"
+   "t": "Sun 4:09 a.m.",
+   "iso": "2026-11-08T09:09:35+00:00",
+   "title": "Briton among six dead after gunman opens fire in Kraków market square",
+   "summary": "Three more people found dead at home of suspect, who minister says held ‘ultra-nationalistic’ views",
+   "outlet": "The Guardian, Euronews, BBC News, CTV News, CP24, Times Colonist",
+   "url": "https://www.theguardian.com/world/2026/nov/07/krakow-poland-shooting-market-square-deaths-gunman",
+   "img": "https://i.guim.co.uk/img/media/3d8244fe8422d5c0105861b7f544fc699f6bec58/1148_0_5909_4727/master/5909.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=1677e0f3e52eb0a27a5232ebe1a589f6"
   },
   {
    "desk": "world",
@@ -3265,7 +3484,7 @@
    "iso": "2026-11-08T09:00:00+00:00",
    "title": "Poilievre pans Liberal budget's $15M capital gains exemption, calls for 'simpler' plan",
    "summary": "Conservative Leader Pierre Poilievre is criticizing a key feature of the Carney government's latest budget, arguing the proposed $15-million capital gains exemption on the sale of qualifying shares from a Canadian company applies too narrowly, excluding key businesses.",
-   "outlet": "CBC News, VOCM, CKOM / PAnow, Daily Hive, CTV News, Global News",
+   "outlet": "CBC News, CKOM / PAnow, Daily Hive, CTV News, Global News, Vancouver Sun",
    "url": "https://www.cbc.ca/news/politics/poilievre-capital-gains-exemption-budget-2026-9.7413640",
    "img": "https://i.cbc.ca/ais/d45de024-aac7-44bf-a49e-64932033f138,1794071929697/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C506%2C7450%2C4190%29%3BResize%3D620"
   },
@@ -3292,15 +3511,15 @@
    "img": ""
   },
   {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Sat 10:13 p.m.",
-   "iso": "2026-11-08T03:13:40+00:00",
-   "title": "Dialogue about Inuit-specific housing funding underway, says Indigenous Services Minister",
-   "summary": "Newspaper of record for Nunavut, and the Nunavik territory of Quebec",
-   "outlet": "Nunatsiaq News, VOCM",
-   "url": "https://nunatsiaq.com/stories/article/dialogue-about-inuit-specific-housing-funding-underway-says-indigenous-services-minister/",
-   "img": "https://cdn.nunatsiaq.com/wp-content/uploads/2026/11/IMG_4263-1200x630.jpeg"
+   "desk": "world",
+   "pic": "globe",
+   "t": "Sat 8:10 p.m.",
+   "iso": "2026-11-08T01:10:15+00:00",
+   "title": "1 person killed in Etobicoke shooting, at least 2 suspects sought",
+   "summary": "Toronto police are investigating after a male victim was killed in a shooting in Etobicoke on Saturday afternoon.",
+   "outlet": "CTV News, CP24, Toronto Star, Toronto Sun, CityNews",
+   "url": "https://www.ctvnews.ca/toronto/article/1-person-killed-in-etobicoke-shooting-at-least-2-suspects-sought/",
+   "img": "https://www.ctvnews.ca/resizer/v2/FP6ZDXHPTRGHFCVWDW2CLKFPBI.png?smart=true&auth=3d829d9cd3e866cadefd5f6240c030881da186a36f578043dbb7dc2fa61bd1c2&width=1200&height=630"
   },
   {
    "desk": "business",
@@ -3312,6 +3531,17 @@
    "outlet": "CBC News",
    "url": "https://www.cbc.ca/news/canada/trump-tariffs-canadian-dairy-cheese-industry-9.7413227",
    "img": "https://i.cbc.ca/ais/e5c62dff-e9eb-4947-851a-54a11e449b1a,1794011827660/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C216%2C5000%2C2812%29%3BResize%3D620"
+  },
+  {
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Sat 10:13 p.m.",
+   "iso": "2026-11-08T03:13:40+00:00",
+   "title": "Dialogue about Inuit-specific housing funding underway, says Indigenous Services Minister",
+   "summary": "Newspaper of record for Nunavut, and the Nunavik territory of Quebec",
+   "outlet": "Nunatsiaq News",
+   "url": "https://nunatsiaq.com/stories/article/dialogue-about-inuit-specific-housing-funding-underway-says-indigenous-services-minister/",
+   "img": "https://cdn.nunatsiaq.com/wp-content/uploads/2026/11/IMG_4263-1200x630.jpeg"
   },
   {
    "desk": "politics",
@@ -3726,7 +3956,7 @@
     "url": "https://www.youtube.com/watch?v=XtLl_wi6H3A",
     "img": "https://i.ytimg.com/vi/XtLl_wi6H3A/hqdefault.jpg",
     "story": "Middle East latest, Trump White House updates, Melania Trump visits LS",
-    "watching": "236",
+    "watching": "239",
     "also": [
      {
       "net": "The White House live",
@@ -3800,7 +4030,7 @@
     "url": "https://www.youtube.com/watch?v=h6AQFDOMC6I",
     "img": "https://i.ytimg.com/vi/h6AQFDOMC6I/hqdefault.jpg",
     "story": "Sunday Morning with... Mark Urban",
-    "watching": "656"
+    "watching": "666"
    }
   ],
   "upcoming": [],
@@ -3857,54 +4087,26 @@
    "updated": "2026-11-08T08:55:11+00:00",
    "ended": false,
    "img": "https://i.abcnewsfe.com/a/d4f481ab-1228-4900-bd2c-a104b9068d78/Royadh-file-DB-261108_1794126805575_hpMain_16x9.jpg?w=1600"
-  },
-  {
-   "net": "Middle East Eye",
-   "story": "Morning update",
-   "title": "Morning update",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-664",
-   "updated": "2026-11-08T08:00:10+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/hormuz-oman-houthis-iran.jpg"
-  },
-  {
-   "net": "Middle East Eye",
-   "story": "Palestinian injured, six others detained during raids in West Bank",
-   "title": "Palestinian injured, six others detained during raids in West Bank",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-injured-six-others-detained-during-raids-west-bank",
-   "updated": "2026-11-08T07:45:00+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/hormuz-oman-houthis-iran.jpg"
-  },
-  {
-   "net": "Middle East Eye",
-   "story": "Aramco building damaged as Houthis target Riyadh, report says",
-   "title": "Aramco building damaged as Houthis target Riyadh, report says",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/aramco-building-damaged-houthis-target-riyadh-report-says",
-   "updated": "2026-11-08T07:22:18+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/hormuz-oman-houthis-iran.jpg"
-  },
-  {
-   "net": "Middle East Eye",
-   "story": "UK petition seeking Gaza genocide inquiry nears parliament debate thre",
-   "title": "UK petition seeking Gaza genocide inquiry nears parliament debate threshold",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/uk-petition-seeking-gaza-genocide-inquiry-nears-100000-target",
-   "updated": "2026-11-08T06:46:09+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/hormuz-oman-houthis-iran.jpg"
-  },
-  {
-   "net": "Middle East Eye",
-   "story": "Coalition forces says four Houthi missiles destroyed over Saudi airspa",
-   "title": "Coalition forces says four Houthi missiles destroyed over Saudi airspace",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/coalition-forces-says-four-houthi-missiles-destroyed-over-saudi-airspace",
-   "updated": "2026-11-08T06:16:34+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/hormuz-oman-houthis-iran.jpg"
   }
  ],
  "related": {
+  "auto-d2c3b619": {
+   "ties": [
+    "dana",
+    "house"
+   ],
+   "stories": [
+    {
+     "t": "Fri 8:49 p.m.",
+     "iso": "2026-11-07T01:49:38+00:00",
+     "outlet": "The Hill",
+     "title": "Wahab beats fellow Democrat in heated race for Swalwell’s House seat",
+     "url": "https://thehill.com/homenews/campaign/6182641-aisha-wahab-eric-swalwell-california-house-seat-democrat-miderms-2026/",
+     "tie": "House"
+    }
+   ],
+   "views": []
+  },
   "auto-333e6377": {
    "ties": [
     "Federal budget"
@@ -3989,23 +4191,6 @@
      "url": "https://cdhowe.org/publication/ottawa-spent-the-windfall-and-left-canadians-with-the-deficit-budget-2026-review/"
     }
    ]
-  },
-  "auto-d2c3b619": {
-   "ties": [
-    "dana",
-    "house"
-   ],
-   "stories": [
-    {
-     "t": "Fri 8:49 p.m.",
-     "iso": "2026-11-07T01:49:38+00:00",
-     "outlet": "The Hill",
-     "title": "Wahab beats fellow Democrat in heated race for Swalwell’s House seat",
-     "url": "https://thehill.com/homenews/campaign/6182641-aisha-wahab-eric-swalwell-california-house-seat-democrat-miderms-2026/",
-     "tie": "House"
-    }
-   ],
-   "views": []
   }
  },
  "canangle": {
@@ -4033,6 +4218,15 @@
      "tie": "Canada and the U.S."
     },
     {
+     "t": "Sat 3:44 p.m.",
+     "iso": "2026-11-07T20:44:34+00:00",
+     "outlet": "Al Jazeera",
+     "title": "Abdul El-Sayed slams Trump’s tariff war with Canada",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/abdul-el-sayed-slams-trumps-tariff-war-with-canada?traffic_source=rss",
+     "ca": false,
+     "tie": "Canada and the U.S."
+    },
+    {
      "t": "Fri 5:56 p.m.",
      "iso": "2026-11-06T22:56:46+00:00",
      "outlet": "CP24",
@@ -4047,15 +4241,6 @@
      "outlet": "Global News",
      "title": "Carney says he’s yet to talk to Democrats on tariffs: ‘Short answer is no’",
      "url": "https://globalnews.ca/news/12140323/carney-us-trade-democrats/",
-     "ca": true,
-     "tie": "Canada and the U.S."
-    },
-    {
-     "t": "Wed 6:30 p.m.",
-     "iso": "2026-11-04T23:30:00+00:00",
-     "outlet": "Toronto Star",
-     "title": "Carney government officials don't expect big change to trade talks after dramatic U.S. elections",
-     "url": "https://www.thestar.com/politics/carney-government-officials-don-t-expect-big-change-to-trade-talks-after-dramatic-u-s-elections/article_af472624-142b-40dc-8b9c-4dd80a0aff92.html",
      "ca": true,
      "tie": "Canada and the U.S."
     }
@@ -4095,24 +4280,6 @@
      "title": "Canada Red beats Canada White for bronze, U.S. wins gold at U17 World Challenge",
      "url": "https://www.timescolonist.com/national-sports/canada-red-beats-canada-white-for-bronze-us-wins-gold-at-u17-world-challenge-12993317",
      "ca": true,
-     "tie": ""
-    }
-   ],
-   "official": [],
-   "views": []
-  },
-  "https://abcnews.com/International/live-updates/iran-live-updates-trump-good-call-netanyahu/?id=137762456": {
-   "story": "Iran live updates: US disables another ship trying to breach the Iran naval blockade",
-   "us": true,
-   "specific": 1,
-   "stories": [
-    {
-     "t": "Thu 7:20 a.m.",
-     "iso": "2026-11-05T12:20:25+00:00",
-     "outlet": "Canada's National Observer",
-     "title": "Here's how the US midterm election results could affect Canada",
-     "url": "https://www.nationalobserver.com/2026/11/05/news/heres-how-us-midterm-election-results-could-affect-canada",
-     "ca": false,
      "tie": ""
     }
    ],
@@ -4161,6 +4328,15 @@
      "tie": "Canada and the U.S."
     },
     {
+     "t": "Sat 3:44 p.m.",
+     "iso": "2026-11-07T20:44:34+00:00",
+     "outlet": "Al Jazeera",
+     "title": "Abdul El-Sayed slams Trump’s tariff war with Canada",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/abdul-el-sayed-slams-trumps-tariff-war-with-canada?traffic_source=rss",
+     "ca": false,
+     "tie": "Canada and the U.S."
+    },
+    {
      "t": "Fri 5:56 p.m.",
      "iso": "2026-11-06T22:56:46+00:00",
      "outlet": "CP24",
@@ -4175,15 +4351,6 @@
      "outlet": "Global News",
      "title": "Carney says he’s yet to talk to Democrats on tariffs: ‘Short answer is no’",
      "url": "https://globalnews.ca/news/12140323/carney-us-trade-democrats/",
-     "ca": true,
-     "tie": "Canada and the U.S."
-    },
-    {
-     "t": "Wed 6:30 p.m.",
-     "iso": "2026-11-04T23:30:00+00:00",
-     "outlet": "Toronto Star",
-     "title": "Carney government officials don't expect big change to trade talks after dramatic U.S. elections",
-     "url": "https://www.thestar.com/politics/carney-government-officials-don-t-expect-big-change-to-trade-talks-after-dramatic-u-s-elections/article_af472624-142b-40dc-8b9c-4dd80a0aff92.html",
      "ca": true,
      "tie": "Canada and the U.S."
     }
@@ -5073,9 +5240,6 @@
   "-NabWfv-VdA"
  ],
  "noembed": [
-  "J3FV4iY8p5w",
-  "L6qtnHZxwEw",
-  "NuEr0Q_AS6U",
   "ldElU-Q5Qyo",
   "t_HBrWb84eY"
  ]
