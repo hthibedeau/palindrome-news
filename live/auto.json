@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-08T05:33:30.869625+00:00",
- "checkedLabel": "Sun 12:33 a.m.",
+ "checked": "2026-11-08T05:43:30.882378+00:00",
+ "checkedLabel": "Sun 12:43 a.m.",
  "stories": [
   {
    "key": "top",
@@ -136,7 +136,7 @@
    "CTV News",
    "https://www.ctvnews.ca/edmonton/article/edmonton-elks-advance-to-grey-cup-for-1st-time-since-2015/",
    "2026-11-08T03:25:22+00:00",
-   4
+   3
   ],
   [
    "Sat 10:14 p.m.",
@@ -181,24 +181,6 @@
    "The Guardian",
    "https://www.theguardian.com/global-development/2026/nov/08/uyghurs-thailand-china-forced-deportation",
    "2026-11-08T03:00:28+00:00",
-   1
-  ],
-  [
-   "Sat 9:34 p.m.",
-   "World",
-   "Cold blast brings springtime snow to alpine regions as temperatures plummet across Australia’s south-east",
-   "The Guardian",
-   "https://www.theguardian.com/australia-news/2026/nov/08/australia-weather-cold-blast-springtime-snow-thredbo-perisher-hotham-victoria-tasmania-el-nino",
-   "2026-11-08T02:34:19+00:00",
-   1
-  ],
-  [
-   "Sat 9:34 p.m.",
-   "World",
-   "US launches task force to disrupt Iran’s land-based supply routes",
-   "Al Jazeera",
-   "https://www.aljazeera.com/news/2026/11/8/us-launches-task-force-to-disrupt-irans-land-based-supply-routes?traffic_source=rss",
-   "2026-11-08T02:34:04+00:00",
    1
   ]
  ],
@@ -273,10 +255,10 @@
    "theme": ""
   },
   {
-   "score": 15,
+   "score": 14,
    "title": "Polish PM says Krakow mass shooter’s family found dead inside home",
    "url": "https://www.ctvnews.ca/world/article/polish-gunman-who-killed-6-people-in-krakow-has-ultranationalistic-views-minister-says/",
-   "outlets": 13,
+   "outlets": 14,
    "why": [],
    "theme": ""
   },
@@ -366,10 +348,11 @@
      "alt": "U.S. President Donald Trump talks with UFC president and CEO Dana White at an event in Las Vegas on Aug. 5.",
      "outlet": "CBC News",
      "url": "https://www.cbc.ca/news/world/trump-press-secretary-ufc-dana-white-9.7413697",
-     "since": "2026-11-08T05:10:44.112875+00:00"
+     "since": "2026-11-08T05:45:02.898193+00:00"
     },
     "photo_seen": [
-     "https://i.cbc.ca/ais/609b2e1b-02ab-4129-bb7e-f244921f0764,1794099781929/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C5188%2C2918%29%3BResize%3D620"
+     "https://i.cbc.ca/ais/609b2e1b-02ab-4129-bb7e-f244921f0764,1794099781929/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C5188%2C2918%29%3BResize%3D620",
+     "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/893a0a761ed635b35357b3c86ed76571a14699e20337fc2e0b80449f8ba7d01b.jpg;w=1200;h=800;mode=crop"
     ],
     "photos": [
      {
@@ -788,14 +771,35 @@
     "why_judged": "Regional: affects many people; carried only by Toronto desks."
    },
    {
-    "title": "Israel's president asks Gadi Eisenkot, Netanyahu's rival, to form new government",
-    "url": "https://www.cbc.ca/news/world/gadi-eisenkot-form-government-israel-9.7413714",
+    "title": "1 person killed in Etobicoke shooting, at least 2 suspects sought",
+    "url": "https://www.ctvnews.ca/toronto/article/1-person-killed-in-etobicoke-shooting-at-least-2-suspects-sought/",
     "rank": 3,
     "live": "",
-    "weight": 40,
+    "weight": 9.5,
+    "score": 5,
+    "independent": 4,
+    "most_read": 0,
+    "canada": "canadian",
+    "theme": "",
+    "top": false,
+    "fronts": 1,
+    "fronts_who": [
+     "CP24"
+    ],
+    "rule": "Canadian, older",
+    "carriers": 5,
+    "judgment": "local",
+    "why_judged": "Local: a single incident touching a few people; carried only by Toronto desks."
+   },
+   {
+    "title": "Israel's president asks Gadi Eisenkot, Netanyahu's rival, to form new government",
+    "url": "https://www.cbc.ca/news/world/gadi-eisenkot-form-government-israel-9.7413714",
+    "rank": 4,
+    "live": "",
+    "weight": 43,
     "score": 20,
     "independent": 6,
-    "most_read": 0,
+    "most_read": 3,
     "canada": "none",
     "theme": "",
     "top": false,
@@ -812,31 +816,6 @@
     "carriers": 19,
     "judgment": "national",
     "why_judged": "National: leading 6 front pages (National Post, NBC News, CBS News, ABC News, BBC News, The Guardian)."
-   },
-   {
-    "title": "Polish PM says Krakow mass shooter’s family found dead inside home",
-    "url": "https://www.cp24.com/news/world/2026/11/07/polish-gunman-who-killed-6-people-in-krakow-has-ultranationalistic-views-minister-says/",
-    "rank": 4,
-    "live": "",
-    "weight": 37.0,
-    "score": 15,
-    "independent": 6,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 5,
-    "fronts_who": [
-     "CTV News",
-     "The Globe and Mail",
-     "CP24",
-     "NBC News",
-     "BBC News"
-    ],
-    "rule": "No Canadian tie",
-    "carriers": 10,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (national desks)."
    },
    {
     "title": "Earthquake hits central Japan, injuring more than 20 people",
@@ -858,9 +837,34 @@
     "why_judged": "National: affects many people; carried across the country (7 cities)."
    },
    {
+    "title": "Polish PM says Krakow mass shooter’s family found dead inside home",
+    "url": "https://www.cp24.com/news/world/2026/11/07/polish-gunman-who-killed-6-people-in-krakow-has-ultranationalistic-views-minister-says/",
+    "rank": 6,
+    "live": "",
+    "weight": 36.0,
+    "score": 14,
+    "independent": 6,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": false,
+    "fronts": 5,
+    "fronts_who": [
+     "CTV News",
+     "The Globe and Mail",
+     "CP24",
+     "NBC News",
+     "BBC News"
+    ],
+    "rule": "No Canadian tie",
+    "carriers": 10,
+    "judgment": "national",
+    "why_judged": "National: affects many people; carried across the country (national desks)."
+   },
+   {
     "title": "Budget offers little new relief for middle-income Canadians",
     "url": "https://www.ckom.com/2026/11/07/budget-offers-little-new-relief-for-middle-income-canadians/",
-    "rank": 6,
+    "rank": 7,
     "live": "",
     "weight": 45.5,
     "score": 19,
@@ -920,11 +924,6 @@
     "title": "Want to fly to the moon? NASA is looking for new astronauts to help grow its Artemis program",
     "score": 6,
     "why": "not built: only 1 independent report(s) (6 sites)"
-   },
-   {
-    "title": "What Ottawa's 'RRSP for life' plan means for Canadian seniors",
-    "score": 5,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
   ],
   "moved": [],
@@ -960,7 +959,7 @@
      "alt": "Hackers claim leaked Russian data reveals up to 450,000 war-related deaths in Ukraine",
      "outlet": "Kyiv Independent",
      "url": "https://kyivindependent.com/hackers-claim-leaked-russian-data-reveals-up-to-450-000-war-related-deaths-in-ukraine/",
-     "since": "2026-11-08T05:35:44.637228+00:00"
+     "since": "2026-11-08T05:45:07.804196+00:00"
     },
     "photo_seen": [
      "https://assets.kyivindependent.com/content/images/2025/10/GettyImages-2194638070.jpg"
@@ -1112,13 +1111,208 @@
     "weight": 15.0
    },
    {
+    "key": "auto-f4e22bec",
+    "words": [
+     "etobicoke"
+    ],
+    "score": 5,
+    "outlets": 4,
+    "carriers": 5,
+    "tag": "Developing",
+    "title": "1 person killed in Etobicoke shooting, at least 2 suspects sought",
+    "url": "https://www.ctvnews.ca/toronto/article/1-person-killed-in-etobicoke-shooting-at-least-2-suspects-sought/",
+    "outlet": "CTV News",
+    "t": "Sat 8:10 p.m.",
+    "iso": "2026-11-08T01:10:15+00:00",
+    "summary": "Toronto police are investigating after a male victim was killed in a shooting in Etobicoke on Saturday afternoon.",
+    "first": {
+     "outlet": "CityNews",
+     "url": "https://toronto.citynews.ca/2026/11/07/man-injured-in-west-end-shooting/",
+     "t": "Sat 5:22 p.m.",
+     "title": "One man dead in Etobicoke shooting",
+     "iso": "2026-11-07T22:22:19+00:00"
+    },
+    "newest": "2026-11-08T01:10:15+00:00",
+    "photo": {
+     "src": "live/img/auto-f4e22bec-24254c140e.jpg",
+     "orig": "https://www.ctvnews.ca/resizer/v2/FP6ZDXHPTRGHFCVWDW2CLKFPBI.png?smart=true&auth=3d829d9cd3e866cadefd5f6240c030881da186a36f578043dbb7dc2fa61bd1c2&width=1200&height=630",
+     "caption": "Toronto police are investigating a shooting in the area of The East Mall and Rathburn Road on Saturday, Nov. 7, 2026. — via CTV News",
+     "alt": "Toronto police are investigating a shooting in the area of The East Mall and Rathburn Road on Saturday, Nov. 7, 2026.",
+     "outlet": "CTV News",
+     "url": "https://www.ctvnews.ca/toronto/article/1-person-killed-in-etobicoke-shooting-at-least-2-suspects-sought/",
+     "since": "2026-11-08T05:45:15.317999+00:00"
+    },
+    "photo_seen": [
+     "https://www.ctvnews.ca/resizer/v2/FP6ZDXHPTRGHFCVWDW2CLKFPBI.png?smart=true&auth=3d829d9cd3e866cadefd5f6240c030881da186a36f578043dbb7dc2fa61bd1c2&width=1200&height=630"
+    ],
+    "photos": [
+     {
+      "src": "live/img/auto-f4e22bec-24254c140e.jpg",
+      "orig": "https://www.ctvnews.ca/resizer/v2/FP6ZDXHPTRGHFCVWDW2CLKFPBI.png?smart=true&auth=3d829d9cd3e866cadefd5f6240c030881da186a36f578043dbb7dc2fa61bd1c2&width=1200&height=630",
+      "caption": "Toronto police are investigating a shooting in the area of The East Mall and Rathburn Road on Saturday, Nov. 7, 2026. — via CTV News",
+      "alt": "Toronto police are investigating a shooting in the area of The East Mall and Rathburn Road on Saturday, Nov. 7, 2026.",
+      "outlet": "CTV News",
+      "url": "https://www.ctvnews.ca/toronto/article/1-person-killed-in-etobicoke-shooting-at-least-2-suspects-sought/"
+     }
+    ],
+    "independent": 4,
+    "reports": [
+     {
+      "t": "Sat 8:10 p.m.",
+      "iso": "2026-11-08T01:10:15+00:00",
+      "outlet": "CTV News",
+      "title": "1 person killed in Etobicoke shooting, at least 2 suspects sought",
+      "url": "https://www.ctvnews.ca/toronto/article/1-person-killed-in-etobicoke-shooting-at-least-2-suspects-sought/",
+      "desc": "Toronto police are investigating after a male victim was killed in a shooting in Etobicoke on Saturday afternoon."
+     },
+     {
+      "t": "Sat 8:10 p.m.",
+      "iso": "2026-11-08T01:10:15+00:00",
+      "outlet": "CP24",
+      "title": "1 person killed in Etobicoke shooting, at least 2 suspects sought",
+      "url": "https://www.cp24.com/local/toronto/2026/11/08/1-person-killed-in-etobicoke-shooting-at-least-2-suspects-sought/",
+      "desc": ""
+     },
+     {
+      "t": "Sat 6:55 p.m.",
+      "iso": "2026-11-07T23:55:00+00:00",
+      "outlet": "Toronto Star",
+      "title": "Young man dead in afternoon shooting in Etobicoke, 2 suspects sought",
+      "url": "https://www.thestar.com/news/gta/male-victim-critically-injured-in-afternoon-shooting-in-etobicoke/article_9abfa3b6-fb1a-4aa6-9a4a-ff205572c0fa.html",
+      "desc": "The victim was most likely in his teens or 20s, Toronto police Insp. Jeff Allington told reporters near the scene Saturday night."
+     },
+     {
+      "t": "Sat 6:44 p.m.",
+      "iso": "2026-11-07T23:44:20+00:00",
+      "outlet": "Toronto Sun",
+      "title": "Male shot in Etobicoke dies in hospital: Cops",
+      "url": "https://torontosun.com/news/local-news/male-hospital-etobicoke-shooting",
+      "desc": ""
+     },
+     {
+      "t": "Sat 5:22 p.m.",
+      "iso": "2026-11-07T22:22:19+00:00",
+      "outlet": "CityNews",
+      "title": "One man dead in Etobicoke shooting",
+      "url": "https://toronto.citynews.ca/2026/11/07/man-injured-in-west-end-shooting/",
+      "desc": "Toronto police are searching for two suspects following a fatal shooting in the west end."
+     }
+    ],
+    "sources": [
+     {
+      "t": "Sat 8:10 p.m.",
+      "primary": false,
+      "outlet": "CTV News",
+      "title": "1 person killed in Etobicoke shooting, at least 2 suspects sought",
+      "url": "https://www.ctvnews.ca/toronto/article/1-person-killed-in-etobicoke-shooting-at-least-2-suspects-sought/",
+      "desc": "Toronto police are investigating after a male victim was killed in a shooting in Etobicoke on Saturday afternoon.",
+      "wire": "The Canadian Press",
+      "by": [
+       {
+        "outlet": "CTV News",
+        "src": "The Canadian Press",
+        "byline": "\"Stephen Hunt\" \"William Eltherington\" \"The Canadian Press\" \"Joe Lofaro\" \"Oliv"
+       },
+       {
+        "outlet": "CP24",
+        "src": "The Canadian Press",
+        "byline": "[ { \"@type\": \"Person\", \"name\": \"Bryann Aguilar\", } ] \"Bryann Aguilar\" \"Bryann Aguilar\" \"\" \"\" \"\" \"\" \"\" \"\" \"mediaconvert\" "
+       }
+      ],
+      "copies": [
+       {
+        "outlet": "CP24",
+        "url": "https://www.cp24.com/local/toronto/2026/11/08/1-person-killed-in-etobicoke-shooting-at-least-2-suspects-sought/"
+       }
+      ]
+     },
+     {
+      "t": "Sat 6:55 p.m.",
+      "primary": false,
+      "outlet": "Toronto Star",
+      "title": "Young man dead in afternoon shooting in Etobicoke, 2 suspects sought",
+      "url": "https://www.thestar.com/news/gta/male-victim-critically-injured-in-afternoon-shooting-in-etobicoke/article_9abfa3b6-fb1a-4aa6-9a4a-ff205572c0fa.html",
+      "desc": "The victim was most likely in his teens or 20s, Toronto police Insp. Jeff Allington told reporters near the scene Saturday night.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Toronto Star",
+        "src": "Torstar",
+        "byline": "own staff: Reporter"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Sat 6:44 p.m.",
+      "primary": false,
+      "outlet": "Toronto Sun",
+      "title": "Male shot in Etobicoke dies in hospital: Cops",
+      "url": "https://torontosun.com/news/local-news/male-hospital-etobicoke-shooting",
+      "desc": "",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Toronto Sun",
+        "src": "Postmedia",
+        "byline": "own staff: producer"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Sat 5:22 p.m.",
+      "primary": false,
+      "outlet": "CityNews",
+      "title": "One man dead in Etobicoke shooting",
+      "url": "https://toronto.citynews.ca/2026/11/07/man-injured-in-west-end-shooting/",
+      "desc": "Toronto police are searching for two suspects following a fatal shooting in the west end.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "CityNews",
+        "src": "Rogers",
+        "byline": "[{\"@id\":\"https://toronto.citynews.ca/#/schema/person/image/87fefe3a99ecb5e022a866d00a324628\"}] \"john-marchesan\" John Mar"
+       }
+      ],
+      "copies": []
+     }
+    ],
+    "replaces_top": false,
+    "events": [],
+    "theme": "",
+    "canada": "canadian",
+    "canus": false,
+    "incoherent": false,
+    "popular": 0,
+    "us_election": false,
+    "fronts": 1,
+    "fronts_ca": 1,
+    "fronts_who": [
+     "CP24"
+    ],
+    "judgment": "local",
+    "judgment_why": "Local: a single incident touching a few people; carried only by Toronto desks.",
+    "weight": 9.5,
+    "videos": [
+     {
+      "net": "CP24",
+      "url": "https://www.youtube.com/watch?v=2mmOh8AffnA",
+      "title": "One dead after Etobicoke shooting",
+      "img": "https://i.ytimg.com/vi/2mmOh8AffnA/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     }
+    ]
+   },
+   {
     "key": "auto-333e6377",
     "words": [
      "budget's",
      "billion",
      "foreign",
-     "budget",
      "sector",
+     "budget",
      "calls"
     ],
     "score": 19,
@@ -1146,7 +1340,7 @@
      "alt": "Budget offers little new relief for middle-income Canadians",
      "outlet": "CKOM / PAnow",
      "url": "https://www.ckom.com/2026/11/07/budget-offers-little-new-relief-for-middle-income-canadians/",
-     "since": "2026-11-08T05:35:41.466982+00:00"
+     "since": "2026-11-08T05:45:03.978511+00:00"
     },
     "photo_seen": [
      "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/648/files/2026/11/grocery-cp-110726.jpg"
@@ -1376,34 +1570,34 @@
     "weight": 45.5,
     "videos": [
      {
-      "net": "APTN News",
-      "url": "https://www.youtube.com/watch?v=UhVU1wkrWeM",
-      "title": "APTN National News: November 7, 2026 – 2026 federal budget, Family speaks on NDTR incident",
-      "img": "https://i.ytimg.com/vi/UhVU1wkrWeM/hqdefault.jpg",
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=OgaqPzZnLKU",
+      "title": "Federal budget proposes funding to help build, refurbish ice rinks | Hanomansing Live",
+      "img": "https://i.ytimg.com/vi/OgaqPzZnLKU/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "APTN News",
-      "url": "https://www.youtube.com/watch?v=MZZhQNv_sXw",
-      "title": "Mixed reviews on federal budget when it comes to Indigenous spending | APTN News",
-      "img": "https://i.ytimg.com/vi/MZZhQNv_sXw/hqdefault.jpg",
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=phzrZhO2EkA",
+      "title": "Political Pulse: Carney tables a budget, Trump’s policies cost him the midterms | Power & Politics",
+      "img": "https://i.ytimg.com/vi/phzrZhO2EkA/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "APTN News",
-      "url": "https://www.youtube.com/watch?v=FPJBHq8fktY",
-      "title": "How Atlantic First Nations will be affected by the federal budget | APTN News",
-      "img": "https://i.ytimg.com/vi/FPJBHq8fktY/hqdefault.jpg",
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=gR9tk8dMcn8",
+      "title": "Breaking down the federal budget | The Current",
+      "img": "https://i.ytimg.com/vi/gR9tk8dMcn8/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "APTN News",
-      "url": "https://www.youtube.com/watch?v=DGeOTeCNQlQ",
-      "title": "AFN national chief speaks on comments made about Métis people, federal budget | APTN News",
-      "img": "https://i.ytimg.com/vi/DGeOTeCNQlQ/hqdefault.jpg",
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=dRF4ND6Hmeg",
+      "title": "Carney's big federal budget bets | Front Burner",
+      "img": "https://i.ytimg.com/vi/dRF4ND6Hmeg/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1458,7 +1652,7 @@
    "id": "gdLqazgRJU0",
    "r": "ca",
    "o": "APTN News",
-   "t": "On the Outside: The challenges of life after incarceration | APTN Investigates",
+   "t": "On the Outside: What happens after incarceration? | APTN Investigates",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=gdLqazgRJU0",
@@ -1567,20 +1761,6 @@
    "geo": "unknown"
   },
   {
-   "id": "LNocuTAm9x4",
-   "r": "ca",
-   "o": "CTV News",
-   "t": "Manitoba farmers hope to mitigate future losses after continued flooding",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=LNocuTAm9x4",
-   "img": "https://i.ytimg.com/vi/LNocuTAm9x4/hqdefault.jpg",
-   "up": "2026-11-07",
-   "added": "2026-11-08T04:59:25.774789+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "GIp2OLqQ9Lk",
    "r": "ca",
    "o": "CTV News",
@@ -1591,6 +1771,48 @@
    "img": "https://i.ytimg.com/vi/GIp2OLqQ9Lk/hqdefault.jpg",
    "up": "2026-11-08",
    "added": "2026-11-08T05:09:26.143240+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "tfPVQrqVZ_M",
+   "r": "ca",
+   "o": "CTV News",
+   "t": "Canadian snowbirds heading to the U.S. for the winter | CTV National News for Nov. 7, 2026",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=tfPVQrqVZ_M",
+   "img": "https://i.ytimg.com/vi/tfPVQrqVZ_M/hqdefault.jpg",
+   "up": "2026-11-08",
+   "added": "2026-11-08T05:43:30.882378+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "0brf9IQ3NEg",
+   "r": "ca",
+   "o": "Global News",
+   "t": "Global National: Nov. 7, 2026 | Trump's new Chief of Staff Miller may be bad news for Canada",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=0brf9IQ3NEg",
+   "img": "https://i.ytimg.com/vi/0brf9IQ3NEg/hqdefault.jpg",
+   "up": "2026-11-07",
+   "added": "2026-11-08T05:43:30.882378+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "26rMXkNcQrQ",
+   "r": "ca",
+   "o": "Global News",
+   "t": "Former Israeli military officials condemn West Bank settler violence, help Palestinian olive farms",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=26rMXkNcQrQ",
+   "img": "https://i.ytimg.com/vi/26rMXkNcQrQ/hqdefault.jpg",
+   "up": "2026-11-07",
+   "added": "2026-11-08T05:43:30.882378+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1682,7 +1904,7 @@
    "id": "ygXcIpI48mQ",
    "r": "us",
    "o": "CNN",
-   "t": "From Mamdani to MAGA: Reactions to the midterm ‘blue-nami’",
+   "t": "From Mamdani to MAGA: Reactions across the spectrum to midterm ‘blue-nami’",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=ygXcIpI48mQ",
@@ -2267,13 +2489,6 @@
  ],
  "eds": [
   [
-   "Toronto Star",
-   "Opinion",
-   "Patrick Corrigan's cartoon shows the spoils of a winning election campaign",
-   "https://www.thestar.com/opinion/editorial-cartoons/patrick-corrigan-s-cartoon-shows-the-spoils-of-a-winning-election-campaign/article_20239c1f-ed02-4b00-8aaf-b83449ecce30.html",
-   "2026-11-07T11:00:00+00:00"
-  ],
-  [
    "Toronto Sun",
    "Editorial",
    "Are Liberals repeating immigration blunders?",
@@ -2335,6 +2550,13 @@
    "Pepper…and Salt",
    "https://www.wsj.com/opinion/pepperand-salt-625a4119?mod=rss_opinion",
    "2026-11-07T05:00:00+00:00"
+  ],
+  [
+   "Washington Examiner",
+   "Opinion",
+   "Trump blames everyone but himself. So what else is new?",
+   "https://www.washingtonexaminer.com/op-eds/4793019/trump-blames-everyone-else-midterm-election-defeat/",
+   "2026-11-07T18:00:00+00:00"
   ]
  ],
  "canus": {
@@ -2526,24 +2748,12 @@
  ],
  "mostread": {
   "sites": [
-   "Toronto Star",
    "Winnipeg Free Press",
    "Global News",
    "Nunatsiaq News",
    "Daily Hive"
   ],
   "list": [
-   {
-    "h": "Costco’s secret: A Canadian expansion is coming — and this Quebec executive is leading the charge",
-    "u": "https://www.thestar.com/business/the-canadian-inside-costco/article_24f19f05-b477-4fff-b6b1-d8cd73893533.html",
-    "o": [
-     [
-      "Toronto Star",
-      1,
-      "https://www.thestar.com/business/the-canadian-inside-costco/article_24f19f05-b477-4fff-b6b1-d8cd73893533.html"
-     ]
-    ]
-   },
    {
     "h": "Amanda Wiecek didn’t believe the man who professed his love would harm her — until he pulled the trigger and shattered her life",
     "u": "https://www.winnipegfreepress.com/breakingnews/2026/11/06/domestic-violence-shooting-winnipeg-wellington-crescent",
@@ -2589,17 +2799,6 @@
     ]
    },
    {
-    "h": "An Ontario teen lived in this shed while under the watch of Children’s Aid. ‘Everybody knew, nobody cared’",
-    "u": "https://www.thestar.com/news/investigations/an-ontario-teen-lived-in-this-shed-while-under-the-watch-of-children-s-aid-everybody-knew-nobody-cared/article_c4721729-807b-4552-b79e-64d0d75e1b38.html",
-    "o": [
-     [
-      "Toronto Star",
-      2,
-      "https://www.thestar.com/news/investigations/an-ontario-teen-lived-in-this-shed-while-under-the-watch-of-children-s-aid-everybody-knew-nobody-cared/article_c4721729-807b-4552-b79e-64d0d75e1b38.html"
-     ]
-    ]
-   },
-   {
     "h": "Unifor says it thinks Stellantis has sold Brampton assembly plant",
     "u": "https://www.winnipegfreepress.com/business/2026/11/06/unifor-says-it-thinks-stellantis-has-sold-brampton-assembly-plant",
     "o": [
@@ -2633,13 +2832,35 @@
     ]
    },
    {
-    "h": "What the proposed new ‘RRSP for life’ would mean for Canadians and their taxes",
-    "u": "https://www.thestar.com/business/personal-finance/what-the-proposed-new-rrsp-for-life-would-mean-for-canadians-and-their-taxes/article_582cce03-0f39-4e56-ae4e-a0c108203d5a.html",
+    "h": "Hasty decision on permanent daylight time may haunt Kinew government",
+    "u": "https://www.winnipegfreepress.com/opinion/editorials/2026/11/07/now-wait-just-a-second-or-an-hour",
     "o": [
      [
-      "Toronto Star",
+      "Winnipeg Free Press",
       3,
-      "https://www.thestar.com/business/personal-finance/what-the-proposed-new-rrsp-for-life-would-mean-for-canadians-and-their-taxes/article_582cce03-0f39-4e56-ae4e-a0c108203d5a.html"
+      "https://www.winnipegfreepress.com/opinion/editorials/2026/11/07/now-wait-just-a-second-or-an-hour"
+     ]
+    ]
+   },
+   {
+    "h": "Israel’s president taps opposition candidate Eisenkot to form government",
+    "u": "https://globalnews.ca/news/12141324/israels-president-taps-eisenkot/",
+    "o": [
+     [
+      "Global News",
+      3,
+      "https://globalnews.ca/news/12141324/israels-president-taps-eisenkot/"
+     ]
+    ]
+   },
+   {
+    "h": "Cabinet to discuss Kitikmeot Inuit employment pilot project",
+    "u": "https://nunatsiaq.com/stories/article/cabinet-to-discuss-kitikmeot-inuit-employment-pilot-project/",
+    "o": [
+     [
+      "Nunatsiaq News",
+      3,
+      "https://nunatsiaq.com/stories/article/cabinet-to-discuss-kitikmeot-inuit-employment-pilot-project/"
      ]
     ]
    }
@@ -2724,11 +2945,11 @@
    "city": "Ottawa",
    "tz": "America/Toronto",
    "world": false,
-   "w": "Education",
-   "u": "https://www.ctvnews.ca/ottawa/article/prospective-students-explore-algonquin-college-at-fall-open-house/",
-   "title": "Prospective students explore Algonquin College at fall open house",
-   "outlet": "CTV News",
-   "t": "Sat 8:00 p.m.",
+   "w": "Housing",
+   "u": "https://nunatsiaq.com/stories/article/dialogue-about-inuit-specific-housing-funding-underway-says-indigenous-services-minister/",
+   "title": "Dialogue about Inuit-specific housing funding underway, says Indigenous Services Minister",
+   "outlet": "Nunatsiaq News",
+   "t": "Sat 10:13 p.m.",
    "hot": false
   },
   {
@@ -2847,17 +3068,6 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Sat 8:45 p.m.",
-   "iso": "2026-11-08T01:45:13+00:00",
-   "title": "US military fires at cargo ship in Gulf of Oman",
-   "summary": "",
-   "outlet": "The Hill, CTV News, CP24, CityNews Winnipeg, CityNews Vancouver, CityNews Ottawa",
-   "url": "https://thehill.com/policy/defense/6206359-us-military-disables-oman-vessel/",
-   "img": ""
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
    "t": "Sat 10:36 p.m.",
    "iso": "2026-11-08T03:36:11+00:00",
    "title": "Polish PM says Krakow mass shooter’s family found dead inside home",
@@ -2865,6 +3075,17 @@
    "outlet": "CTV News, CP24, BBC News, Times Colonist, ABC News, The Japan Times",
    "url": "https://www.ctvnews.ca/world/article/polish-gunman-who-killed-6-people-in-krakow-has-ultranationalistic-views-minister-says/",
    "img": "https://www.ctvnews.ca/resizer/v2/S5ABPFAK7ZGONHDOQR2BT2SGAY.jpg?smart=true&auth=27e25f1c097f84484f0ba8303035fe9cd71191ef3f692963fd80a67c12568ea9&width=1200&height=630"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Sat 8:45 p.m.",
+   "iso": "2026-11-08T01:45:13+00:00",
+   "title": "US military fires at cargo ship in Gulf of Oman",
+   "summary": "",
+   "outlet": "The Hill, CTV News, CP24, CityNews Winnipeg, CityNews Vancouver, CityNews Ottawa",
+   "url": "https://thehill.com/policy/defense/6206359-us-military-disables-oman-vessel/",
+   "img": ""
   },
   {
    "desk": "business",
@@ -2883,10 +3104,10 @@
    "t": "Sun 12:04 a.m.",
    "iso": "2026-11-08T05:04:20+00:00",
    "title": "The Kremlin hopes the US election shake-up won't shift Trump's negotiations on Ukraine",
-   "summary": "",
+   "summary": "The Republicans’ defeat in the U.S. midterm elections was watched closely in Russia, where some observers are predicting it could herald more support for Ukraine when the Democrats take over",
    "outlet": "Toronto Star, The Canadian Press (via Winnipeg Free Press), Kyiv Independent, CityNews, The Hill, PBS NewsHour",
    "url": "https://www.thestar.com/news/world/europe/the-kremlin-hopes-the-us-election-shake-up-won-t-shift-trump-s-negotiations-on-ukraine/article_fdf7c594-cd0e-5fa4-bc79-ea395b6cc869.html",
-   "img": ""
+   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/8/56/85608293-11be-5ec1-b306-1062d12b6a6f/6af004331d1b1.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
   },
   {
    "desk": "world",
@@ -2917,7 +3138,7 @@
    "iso": "2026-11-08T03:13:40+00:00",
    "title": "Dialogue about Inuit-specific housing funding underway, says Indigenous Services Minister",
    "summary": "Newspaper of record for Nunavut, and the Nunavik territory of Quebec",
-   "outlet": "Nunatsiaq News",
+   "outlet": "Nunatsiaq News, VOCM",
    "url": "https://nunatsiaq.com/stories/article/dialogue-about-inuit-specific-housing-funding-underway-says-indigenous-services-minister/",
    "img": "https://cdn.nunatsiaq.com/wp-content/uploads/2026/11/IMG_4263-1200x630.jpeg"
   },
@@ -3334,7 +3555,7 @@
     "url": "https://www.youtube.com/watch?v=XtLl_wi6H3A",
     "img": "https://i.ytimg.com/vi/XtLl_wi6H3A/hqdefault.jpg",
     "story": "Middle East latest, Trump White House updates, Melania Trump visits LS",
-    "watching": "339",
+    "watching": "356",
     "also": [
      {
       "net": "The White House live",
@@ -3373,7 +3594,7 @@
      },
      {
       "outlet": "The Japan Times",
-      "title": "Trump taps UFC boss as press secretary, urges criminal probes into Democrats",
+      "title": "Trump taps UFC boss as press secretary and urges criminal probes into Democrats",
       "url": "https://www.japantimes.co.jp/news/2026/11/08/world/politics/trump-ufc-press-secretary/",
       "t": "Sat 6:17 p.m.",
       "iso": "2026-11-07T23:17:00+00:00"
@@ -3453,7 +3674,7 @@
    "story": "Iran war live: US moves to block land supply routes; UAE rescues 22 sa",
    "title": "Iran war live: US moves to block land supply routes; UAE rescues 22 sailors",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/8/iran-war-live-explosions-hit-qeshm-us-moves-to-block-land-supply-routes?traffic_source=rss",
-   "updated": "2026-11-08T05:30:00+00:00",
+   "updated": "2026-11-08T05:44:33+00:00",
    "ended": false,
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-08T003844Z_1904518215_RC2CJOAU5F99_RTRMADP_3_IRAN-CRISIS-BLOCKADE-1794107413_532558-1794107549.jpg?resize=1200%2C630&quality=80"
   }
@@ -4594,7 +4815,10 @@
   "-NabWfv-VdA"
  ],
  "noembed": [
+  "J3FV4iY8p5w",
   "L6qtnHZxwEw",
-  "NuEr0Q_AS6U"
+  "NuEr0Q_AS6U",
+  "ldElU-Q5Qyo",
+  "t_HBrWb84eY"
  ]
 }
