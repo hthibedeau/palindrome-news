@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-08T02:21:46.263555+00:00",
- "checkedLabel": "Sat 9:21 p.m.",
+ "checked": "2026-11-08T02:31:45.242810+00:00",
+ "checkedLabel": "Sat 9:31 p.m.",
  "stories": [
   {
    "key": "top",
@@ -30,6 +30,24 @@
   }
  ],
  "wire": [
+  [
+   "Sat 9:29 p.m.",
+   "Latest",
+   "U.S. expands naval blockade to include task force on disrupting ground transport",
+   "CBS News",
+   "https://www.cbsnews.com/live-updates/iran-war-trump-us-strait-hormuz-persian-gulf/",
+   "2026-11-08T02:29:42+00:00",
+   1
+  ],
+  [
+   "Sat 9:24 p.m.",
+   "Canada",
+   "CTV News wins 42 RTDNA Canada awards, including wins for CTVNews.ca and W5",
+   "CTV News",
+   "https://www.ctvnews.ca/canada/article/ctv-news-wins-42-rtdna-canada-awards-including-wins-for-ctvnewsca-and-w5/",
+   "2026-11-08T02:24:37+00:00",
+   2
+  ],
   [
    "Sat 9:16 p.m.",
    "Latest",
@@ -157,15 +175,6 @@
    2
   ],
   [
-   "Sat 8:21 p.m.",
-   "Latest",
-   "Lyons runs for career-high 216 yards and Czeremcha kicks late FG to lift FIU over Missouri State",
-   "The Canadian Press (via Winnipeg Free Press)",
-   "https://www.winnipegfreepress.com/uncategorized/2026/11/07/lyons-runs-for-career-high-216-yards-and-czeremcha-kicks-late-fg-to-lift-fiu-over-missouri-state",
-   "2026-11-08T01:21:55+00:00",
-   1
-  ],
-  [
    "Sat 8:10 p.m.",
    "Latest",
    "1 person killed in Etobicoke shooting, at least 2 suspects sought",
@@ -244,16 +253,7 @@
    "Al Jazeera",
    "https://www.aljazeera.com/video/newsfeed/2026/11/8/polish-pm-calls-deadly-krakow-shooting-an-act-of?traffic_source=rss",
    "2026-11-08T00:50:28+00:00",
-   4
-  ],
-  [
-   "Sat 7:43 p.m.",
-   "World",
-   "Paraguay's impeached ex-president charged with crimes linked to collapse of major bank",
-   "CBC News",
-   "https://www.cbc.ca/news/world/paraguay-prosecutors-charge-impeached-president-pena-detention-9.7413705",
-   "2026-11-08T00:43:00.938000+00:00",
-   1
+   3
   ]
  ],
  "blogs": [
@@ -320,6 +320,14 @@
   },
   {
    "score": 14,
+   "title": "US military fires at cargo ship in Gulf of Oman",
+   "url": "https://thehill.com/policy/defense/6206359-us-military-disables-oman-vessel/",
+   "outlets": 12,
+   "why": [],
+   "theme": ""
+  },
+  {
+   "score": 14,
    "title": "A strong earthquake with a preliminary magnitude of 5.7 strikes Japan, meteorological agency says",
    "url": "https://www.ctvnews.ca/world/article/a-strong-earthquake-with-a-preliminary-magnitude-of-57-strikes-japan-meteorological-agency-says/",
    "outlets": 12,
@@ -330,14 +338,6 @@
    "score": 13,
    "title": "What we know so far after Krakow gun attack",
    "url": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
-   "outlets": 11,
-   "why": [],
-   "theme": ""
-  },
-  {
-   "score": 13,
-   "title": "US military fires at cargo ship in Gulf of Oman",
-   "url": "https://thehill.com/policy/defense/6206359-us-military-disables-oman-vessel/",
    "outlets": 11,
    "why": [],
    "theme": ""
@@ -456,7 +456,7 @@
    "summary": "Davis Alexander led his team back to the Grey Cup.",
    "outlet": "Global News",
    "url": "https://globalnews.ca/news/12141305/collaros-active-for-blue-bombers-in-east-final/",
-   "img": "https://globalnews.ca/wp-content/uploads/2026/11/5c91252d714351e87749ad422fbef7778c4994b0de234a9d77417e58fef718b7.jpg?quality=65&strip=all&w=720&h=379&crop=1"
+   "img": "https://globalnews.ca/wp-content/uploads/2026/11/5c91252d714351e87749ad422fbef7778c4994b0de234a9d77417e58fef718b7_9fd891.jpg?quality=65&strip=all&w=720&h=379&crop=1"
   },
   {
    "t": "Sat 2:00 p.m.",
@@ -1004,9 +1004,8 @@
     "canada": "none",
     "theme": "",
     "top": false,
-    "fronts": 8,
+    "fronts": 7,
     "fronts_who": [
-     "CBC News",
      "CTV News",
      "The Globe and Mail",
      "CP24",
@@ -1018,12 +1017,31 @@
     "rule": "Leading other newsrooms' front pages (Canadian ones among them): the story everyone is leading with",
     "carriers": 8,
     "judgment": "national",
-    "why_judged": "National: leading 8 front pages (CBC News, CTV News, The Globe and Mail, CP24, NBC News, ABC News)."
+    "why_judged": "National: leading 7 front pages (CTV News, The Globe and Mail, CP24, NBC News, ABC News, BBC News)."
+   },
+   {
+    "title": "U.S. military says it fired on commercial vessel in Gulf of Oman after it attempted to breach blockade",
+    "url": "https://www.ctvnews.ca/world/article/us-military-says-it-fired-on-commercial-vessel-in-gulf-of-oman-after-it-attempted-to-breach-blockade/",
+    "rank": 3,
+    "live": "",
+    "weight": 37.0,
+    "score": 14,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": false,
+    "fronts": 0,
+    "fronts_who": [],
+    "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
+    "carriers": 12,
+    "judgment": "national",
+    "why_judged": "National: affects many people; carried across the country (7 cities)."
    },
    {
     "title": "1 person killed in Etobicoke shooting, at least 2 suspects sought",
     "url": "https://www.ctvnews.ca/toronto/article/1-person-killed-in-etobicoke-shooting-at-least-2-suspects-sought/",
-    "rank": 3,
+    "rank": 4,
     "live": "",
     "weight": 14.5,
     "score": 7,
@@ -1044,11 +1062,11 @@
    {
     "title": "Israel's president asks Gadi Eisenkot, Netanyahu's rival, to form new government",
     "url": "https://www.cbc.ca/news/world/gadi-eisenkot-form-government-israel-9.7413714",
-    "rank": 4,
+    "rank": 5,
     "live": "",
-    "weight": 36.5,
+    "weight": 35.0,
     "score": 15,
-    "independent": 6,
+    "independent": 5,
     "most_read": 0,
     "canada": "none",
     "theme": "",
@@ -1062,14 +1080,14 @@
      "BBC News"
     ],
     "rule": "No Canadian tie",
-    "carriers": 9,
+    "carriers": 8,
     "judgment": "national",
     "why_judged": "National: affects some people; carried across the country (national desks)."
    },
    {
     "title": "Budget offers little new relief for middle-income Canadians",
     "url": "https://www.ckom.com/2026/11/07/budget-offers-little-new-relief-for-middle-income-canadians/",
-    "rank": 5,
+    "rank": 6,
     "live": "",
     "weight": 47.5,
     "score": 17,
@@ -1089,11 +1107,6 @@
     "title": "A strong earthquake with a preliminary magnitude of 5.7 strikes Japan, meteorological agency says",
     "score": 14,
     "why": "not built: only 1 independent report(s) (12 sites)"
-   },
-   {
-    "title": "US military fires at cargo ship in Gulf of Oman",
-    "score": 13,
-    "why": "not built: only 2 independent report(s) (11 sites)"
    },
    {
     "title": "Festival of Lights, Festival of Growth: A look at Diwali’s business impact in Canada",
@@ -1121,22 +1134,22 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
+    "title": "Two experienced skydivers die after midair collision entangles their parachutes",
+    "score": 5,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
     "title": "Canada's military is using Palantir software. What are the risks?",
     "score": 4,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
+    "title": "LifeLabs in B.C. ordered to pay $32K for misgendering transgender, non-binary patients: Human Rights Tribunal",
+    "score": 4,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
     "title": "What Ottawa's 'RRSP for life' plan means for Canadian seniors",
-    "score": 4,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Protests across Nova Scotia oppose AI data centres",
-    "score": 4,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Regional gaps in safe sport rules remain a 'major' concern for Canada's sport integrity agency",
     "score": 4,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
@@ -1174,7 +1187,7 @@
      "alt": "Toronto police are investigating a shooting in the area of The East Mall and Rathburn Road on Saturday, Nov. 7, 2026.",
      "outlet": "CTV News",
      "url": "https://www.ctvnews.ca/toronto/article/1-person-killed-in-etobicoke-shooting-at-least-2-suspects-sought/",
-     "since": "2026-11-08T02:23:29.818238+00:00"
+     "since": "2026-11-08T02:33:05.210745+00:00"
     },
     "photo_seen": [
      "https://www.ctvnews.ca/resizer/v2/FP6ZDXHPTRGHFCVWDW2CLKFPBI.png?smart=true&auth=3d829d9cd3e866cadefd5f6240c030881da186a36f578043dbb7dc2fa61bd1c2&width=1200&height=630"
@@ -1343,8 +1356,8 @@
     "key": "auto-333e6377",
     "words": [
      "budget's",
-     "foreign",
      "billion",
+     "foreign",
      "budget",
      "sector",
      "calls"
@@ -1374,7 +1387,7 @@
      "alt": "Budget offers little new relief for middle-income Canadians",
      "outlet": "CKOM / PAnow",
      "url": "https://www.ckom.com/2026/11/07/budget-offers-little-new-relief-for-middle-income-canadians/",
-     "since": "2026-11-08T02:23:23.367169+00:00"
+     "since": "2026-11-08T02:32:55.751411+00:00"
     },
     "photo_seen": [
      "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/648/files/2026/11/grocery-cp-110726.jpg"
@@ -1604,34 +1617,34 @@
     "weight": 47.5,
     "videos": [
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=7M_UKYz6Cps",
-      "title": "Global National: Nov. 6, 2026 | Carney touts budget plan to end homelessness",
-      "img": "https://i.ytimg.com/vi/7M_UKYz6Cps/hqdefault.jpg",
+      "net": "CityNews",
+      "url": "https://www.youtube.com/watch?v=KFspIY3F4Z0",
+      "title": "Calgary outreach groups react to federal budget plan to end homelessness within 10 years",
+      "img": "https://i.ytimg.com/vi/KFspIY3F4Z0/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=tS1zS-0oS2k",
-      "title": "How Carney's Budget 2026 affects your wallet",
-      "img": "https://i.ytimg.com/vi/tS1zS-0oS2k/hqdefault.jpg",
+      "net": "CityNews",
+      "url": "https://www.youtube.com/watch?v=9KJA7Z7GSTE",
+      "title": "First Nations, Métis leaders react to federal budget",
+      "img": "https://i.ytimg.com/vi/9KJA7Z7GSTE/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=QT-A_LxHwJ4",
-      "title": "Canada’s business community reacts to 2026 federal budget",
-      "img": "https://i.ytimg.com/vi/QT-A_LxHwJ4/hqdefault.jpg",
+      "net": "APTN News",
+      "url": "https://www.youtube.com/watch?v=UhVU1wkrWeM",
+      "title": "APTN National News: November 7, 2026 – 2026 federal budget, Family speaks on NDTR incident",
+      "img": "https://i.ytimg.com/vi/UhVU1wkrWeM/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "CTV News",
-      "url": "https://www.youtube.com/watch?v=CzNmzOdI2HY",
-      "title": "Federal focuses outlined in budget earn London's praise | CTV News London at 11 for Nov. 6, 2026",
-      "img": "https://i.ytimg.com/vi/CzNmzOdI2HY/hqdefault.jpg",
+      "net": "APTN News",
+      "url": "https://www.youtube.com/watch?v=MZZhQNv_sXw",
+      "title": "Mixed reviews on federal budget when it comes to Indigenous spending | APTN News",
+      "img": "https://i.ytimg.com/vi/MZZhQNv_sXw/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1642,6 +1655,10 @@
    {
     "title": "Israel's president asks Gadi Eisenkot, Netanyahu's rival, to form new government",
     "url": "https://www.cbc.ca/news/world/gadi-eisenkot-form-government-israel-9.7413714"
+   },
+   {
+    "title": "U.S. military says it fired on commercial vessel in Gulf of Oman after it attempted to breach blockade",
+    "url": "https://www.ctvnews.ca/world/article/us-military-says-it-fired-on-commercial-vessel-in-gulf-of-oman-after-it-attempted-to-breach-blockade/"
    },
    {
     "title": "Polish PM says Krakow mass shooter’s family found dead inside home",
@@ -1710,7 +1727,7 @@
    "id": "09os5aecgUc",
    "r": "ca",
    "o": "Global News",
-   "t": "Why are protestors in Nova Scotia against Cape Breton's planned AI data centre?",
+   "t": "Growing pushback against planned AI data centre in Nova Scotia",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=09os5aecgUc",
@@ -1724,7 +1741,7 @@
    "id": "gdLqazgRJU0",
    "r": "ca",
    "o": "APTN News",
-   "t": "On the Outside: What happens after incarceration? | APTN Investigates",
+   "t": "On the Outside: The challenges of life after incarceration | APTN Investigates",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=gdLqazgRJU0",
@@ -1766,7 +1783,7 @@
    "id": "26rMXkNcQrQ",
    "r": "ca",
    "o": "Global News",
-   "t": "Protecting Palestine's oldest olive tree amid West Bank settler violence",
+   "t": "Former Israeli military officials condemn West Bank settler violence, help Palestinian olive farms",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=26rMXkNcQrQ",
@@ -1987,34 +2004,6 @@
    "geo": "unknown"
   },
   {
-   "id": "vZrjFkxazoM",
-   "r": "us",
-   "o": "CBS News",
-   "t": "Thousands continue to protest in France amid outrage over high cost of living",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=vZrjFkxazoM",
-   "img": "https://i.ytimg.com/vi/vZrjFkxazoM/hqdefault.jpg",
-   "up": "2026-11-07",
-   "added": "2026-11-08T00:07:16.359052+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "9SVvWyE1QQ4",
-   "r": "us",
-   "o": "CBS News",
-   "t": "Latino voters help carry Talarico, Hinojosa to victory in Texas amid outrage over ICE tactics",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=9SVvWyE1QQ4",
-   "img": "https://i.ytimg.com/vi/9SVvWyE1QQ4/hqdefault.jpg",
-   "up": "2026-11-07",
-   "added": "2026-11-08T00:07:16.359052+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "frnVKdsjROE",
    "r": "us",
    "o": "NBC News",
@@ -2186,7 +2175,7 @@
    "id": "Ph3pZDF0je0",
    "r": "world",
    "o": "Sky News",
-   "t": "Opinions divided as huge Lincolnshire data centre due to start construction in 2027",
+   "t": "Data centre the size of 247 pitches to be built in Lincolnshire",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=Ph3pZDF0je0",
@@ -2270,11 +2259,11 @@
  "ledes": [
   {
    "o": "CBS News",
-   "h": "This week on \"Sunday Morning\" (Nov. 8)",
-   "u": "https://www.cbsnews.com/news/this-week-on-sunday-morning-nov-8-2026/",
-   "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/05/f8eb5a59-fe89-4530-b151-874e73b942f0/thumbnail/1200x630g8/d69670ecc72e887855d989a74bba94a9/pauley-okeeffe-sun.jpg",
-   "w": "Sat 9:16 p.m.",
-   "iso": "2026-11-08T02:16:45+00:00"
+   "h": "U.S. expands naval blockade to include task force on disrupting ground transport",
+   "u": "https://www.cbsnews.com/live-updates/iran-war-trump-us-strait-hormuz-persian-gulf/",
+   "img": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/11/07/7b783dcb-c262-43f1-bb70-4053ccc1a0f9/thumbnail/1200x630/794dd8c2f97817e8798a75fa02c765a4/gettyimages-2303905406.jpg",
+   "w": "Sat 9:29 p.m.",
+   "iso": "2026-11-08T02:29:42+00:00"
   },
   {
    "o": "ABC News",
@@ -2302,11 +2291,11 @@
   },
   {
    "o": "Fox News",
-   "h": "Reggie Jackson calls out antisemitism in native Pennsylvania, likens it to 'racism I experienced in the 1960s'",
-   "u": "https://www.foxnews.com/outkick-sports/reggie-jackson-calls-out-antisemitism-native-pennsylvania-likens-racism-experienced-1960s",
-   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/04/reggie-jackson-baseball-hall-fame-fox-news-001.jpeg",
-   "w": "Sat 8:55 p.m.",
-   "iso": "2026-11-08T01:55:32+00:00"
+   "h": "Boston College scores on bizarre 'Ring-Around-The-Rosie' homage to 'The Longest Yard'",
+   "u": "https://www.foxnews.com/outkick-sports/boston-college-scores-bizarre-ring-around-rosie-homage-longest-yard",
+   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/bc-mean-machine.png",
+   "w": "Sat 9:17 p.m.",
+   "iso": "2026-11-08T02:17:46+00:00"
   },
   {
    "o": "NPR",
@@ -2657,8 +2646,8 @@
    "Trump says he’s asked UFC’s Dana White to be his press secretary. No one will say if he’s joking, The Associated Press reports.",
    "Aid sector calls out lack of any mention of foreign aid in federal budget, The Canadian Press reports.",
    "Israel’s president has tapped opposition candidate Gadi Eisenkot to form a new government, in another setback for Prime Minister Benjamin Netanyahu, The Associated Press reports.",
+   "US military says it fired on commercial vessel in Gulf of Oman after it attempted to breach blockade, The Associated Press reports.",
    "A Polish man with far-right views drove into a busy central square in Krakow on Saturday and opened fire, killing six people and injuring 15 others before police shot and wounded him, authorities said.",
-   "Toronto police are investigating after a male victim was killed in a shooting in Etobicoke on Saturday afternoon, The Canadian Press reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
   ]
  },
@@ -3066,6 +3055,17 @@
   {
    "desk": "world",
    "pic": "globe",
+   "t": "Sat 8:45 p.m.",
+   "iso": "2026-11-08T01:45:13+00:00",
+   "title": "US military fires at cargo ship in Gulf of Oman",
+   "summary": "",
+   "outlet": "The Hill, Middle East Eye, CTV News, CP24, CityNews Winnipeg, CityNews Vancouver",
+   "url": "https://thehill.com/policy/defense/6206359-us-military-disables-oman-vessel/",
+   "img": ""
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
    "t": "Sat 8:08 p.m.",
    "iso": "2026-11-08T01:08:15+00:00",
    "title": "A strong earthquake with a preliminary magnitude of 5.7 strikes Japan, meteorological agency says",
@@ -3073,17 +3073,6 @@
    "outlet": "CTV News, CP24, Times Colonist, ABC News, Toronto Star, CityNews Winnipeg",
    "url": "https://www.ctvnews.ca/world/article/a-strong-earthquake-with-a-preliminary-magnitude-of-57-strikes-japan-meteorological-agency-says/",
    "img": "https://www.ctvnews.ca/resizer/v2/R5B7K2YFMB25C66HGVMISXGRHI.jpg?smart=true&auth=804cc5b701a4db3c09421f1dd6b8f4f6cbd4312c5c943a7f9da41e833be0c68b&width=1200&height=630"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Sat 8:45 p.m.",
-   "iso": "2026-11-08T01:45:13+00:00",
-   "title": "US military fires at cargo ship in Gulf of Oman",
-   "summary": "",
-   "outlet": "The Hill, CTV News, CP24, CityNews Winnipeg, CityNews Vancouver, CityNews Ottawa",
-   "url": "https://thehill.com/policy/defense/6206359-us-military-disables-oman-vessel/",
-   "img": ""
   },
   {
    "desk": "world",
@@ -3136,20 +3125,20 @@
    "iso": "2026-11-07T23:05:03+00:00",
    "title": "He's their man: Montrealers honour Leonard Cohen, ten years after his death",
    "summary": "MONTREAL — Juan Merchan has made a ritual of coming to Leonard Cohen's grave in since he first arrived to Montreal in 2017.",
-   "outlet": "Times Colonist, CTV News, Toronto Star, CityNews Montreal",
+   "outlet": "Times Colonist, CTV News, CityNews Montreal, Toronto Star",
    "url": "https://www.timescolonist.com/the-mix/hes-their-man-montrealers-honour-leonard-cohen-ten-years-after-his-death-12993018",
    "img": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/3adea26d4ab6846d8be12f16b5889501d0e65167db2ec0e37c2f2a3c7b5e17ca.jpg;w=1200;h=800;mode=crop"
   },
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Sat 7:13 p.m.",
-   "iso": "2026-11-08T00:13:38+00:00",
-   "title": "Ben James builds four-shot lead to close in on first PGA Tour title",
-   "summary": "LOS CABOS, Mexico (AP) — Ben James made the most of another 36-hole lead with birdies on his opening three holes that propelled him to a 6-under 66 and a four-shot lead Saturday in the World Wide Technology Championship as he closes in on his first P",
-   "outlet": "Times Colonist, Fox News, NBC News",
-   "url": "https://www.timescolonist.com/national-sports/ben-james-builds-four-shot-lead-to-close-in-on-first-pga-tour-title-12993352",
-   "img": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/cfa4f31a3c9a1ac70671fcc56bea5cb958423f7d047646e9936355c8c6cb7281.jpg;w=1200;h=800;mode=crop"
+   "t": "Sat 9:13 p.m.",
+   "iso": "2026-11-08T02:13:43+00:00",
+   "title": "Two experienced skydivers die after midair collision entangles their parachutes",
+   "summary": "The two skydivers collided midair at about 150 feet during an organized skydive in Southern California, entangling their parachutes.",
+   "outlet": "Fox News, CTV News, CP24",
+   "url": "https://www.foxnews.com/us/two-experienced-skydivers-die-midair-collision-entangles-parachutes",
+   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/person-skydives-dubai-tandem-instructor.jpg"
   },
   {
    "desk": "politics",
@@ -3256,10 +3245,10 @@
    "t": "Sat 9:35 a.m.",
    "iso": "2026-11-07T14:35:00+00:00",
    "title": "Berkshire Hathaway buys back $9.6 billion of its own stock but its profits declined",
-   "summary": "OMAHA, Neb. (AP) — Berkshire Hathaway repurchased $9.6 billion worth of its own shares in the third quarter, but Geico's numbers got worse as it invested more in ads and",
+   "summary": "",
    "outlet": "Toronto Star",
    "url": "https://www.thestar.com/news/world/united-states/berkshire-hathaway-buys-back-9-6-billion-of-its-own-stock-but-its-profits-declined/article_64b319e0-392d-5778-94ab-f41238a14284.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/b/e0/be0b02ac-7815-4412-b224-dcc2e0235aa2/6aef838a6debf.image.jpg?crop=1400%2C735%2C0%2C112&resize=1200%2C630&order=crop%2Cresize"
+   "img": ""
   },
   {
    "desk": "politics",
@@ -3279,39 +3268,39 @@
    "ca": true,
    "h": [
     "CBC News - Latest Canada, World, Entertainment and Business News",
-    "Polish police say gunman kills 6 in 'act of terror'; 3 more dead found at suspect's home",
-    "UFC boss Dana White says he's meeting with Trump after press secretary job offer",
     "The age of AI warfare is here. Is Canada ready?",
-    "What Ottawa's 'RRSP for life' plan means for Canadian seniors",
-    "Protests across Nova Scotia oppose AI data centres"
+    "Russia has reportedly already used autonomous drones to deadly effect in Ukraine",
+    "Canada is relying on a controversial U.S. tech company for military software",
+    "Why Canada’s military deal with Palantir sparks sovereignty fears",
+    "UFC boss Dana White says he's meeting with Trump after press secretary job offer"
    ],
    "u": [
     "",
-    "https://www.cbc.ca/news/world/krakow-poland-shooting-9.7413582",
-    "https://www.cbc.ca/news/world/trump-press-secretary-ufc-dana-white-9.7413697",
     "https://www.cbc.ca/news/canada/ai-drones-in-warfare-9.7407846",
-    "https://www.cbc.ca/news/business/rrsp-for-life-9.7412568",
-    "https://www.cbc.ca/news/canada/nova-scotia/data-centre-protests-nova-scotia-9.7413638"
+    "",
+    "https://www.cbc.ca/news/politics/palantir-canadian-military-9.7409099",
+    "https://www.cbc.ca/player/play/video/9.7413008",
+    "https://www.cbc.ca/news/world/trump-press-secretary-ufc-dana-white-9.7413697"
    ]
   },
   {
    "o": "CTV News",
    "ca": true,
    "h": [
-    "Trump offers UFC boss Dana White press secretary role",
-    "Were you at these locations on Nov. 3? You may have been exposed to measles",
-    "Dramatic river rescue unfolds as storm batters B.C. region",
     "Polish PM says Krakow shooter's family found dead inside home",
-    "This province is facing massive protests over proposed AI data centres",
-    "Chimp sanctuary delivers an ape's food by drone amid Florida floods"
+    "Dramatic river rescue unfolds as storm batters B.C. region",
+    "CTV News wins 42 RTDNA Canada awards, including wins for CTVNews.ca and W5",
+    "Were you at these locations on Nov. 3? You may have been exposed to measles",
+    "Trump offers UFC boss Dana White press secretary role",
+    "This province is facing massive protests over proposed AI data centres"
    ],
    "u": [
-    "https://www.ctvnews.ca/world/article/trump-offers-press-secretary-role-to-ufc-chief-dana-white/",
-    "https://www.ctvnews.ca/toronto/local/durham/article/were-you-at-these-locations-on-nov-3-you-may-have-been-exposed-to-measles/",
-    "https://www.ctvnews.ca/vancouver/article/woman-rescued-from-fast-moving-metro-vancouver-river-during-bc-storm/",
     "https://www.ctvnews.ca/world/article/polish-gunman-who-killed-6-people-in-krakow-has-ultranationalistic-views-minister-says/",
-    "https://www.ctvnews.ca/atlantic/nova-scotia/article/protest-against-nova-scotias-proposed-ai-data-centre-held-in-halifax/",
-    "https://www.ctvnews.ca/world/article/chimp-sanctuary-delivers-an-apes-food-by-drone-amid-florida-floods/"
+    "https://www.ctvnews.ca/vancouver/article/woman-rescued-from-fast-moving-metro-vancouver-river-during-bc-storm/",
+    "https://www.ctvnews.ca/canada/article/ctv-news-wins-42-rtdna-canada-awards-including-wins-for-ctvnewsca-and-w5/",
+    "https://www.ctvnews.ca/toronto/local/durham/article/were-you-at-these-locations-on-nov-3-you-may-have-been-exposed-to-measles/",
+    "https://www.ctvnews.ca/world/article/trump-offers-press-secretary-role-to-ufc-chief-dana-white/",
+    "https://www.ctvnews.ca/atlantic/nova-scotia/article/protest-against-nova-scotias-proposed-ai-data-centre-held-in-halifax/"
    ]
   },
   {
@@ -3520,18 +3509,18 @@
    "h": [
     "Poland Six dead after gunman opens fire in Kraków market square, with three more victims found at suspect’s home",
     "New Zealand election 2026 New Zealand faces weeks of uncertainty with election ‘too close to call’",
-    "Comment NZ’s two major parties are flatlining as dispirited voters seek transformational change",
+    "Comment National and Labour crash and burn as dispirited voters jump ship to minor parties",
     "US Trump says he asked Dana White, UFC boss, to be his new White House press secretary",
-    "Trump administration Trump faces criticism for ‘dangerous’ Stephen Miller appointment as White House chief of staff",
-    "Analysis Trump’s elevation of Stephen Miller is a middle finger to millions of voters"
+    "Analysis Trump’s elevation of Stephen Miller is a middle finger to millions of voters",
+    "Not a pretty sight Trump’s ‘beautiful’ Republican men flop at midterms"
    ],
    "u": [
     "",
     "",
     "https://www.theguardian.com/world/2026/nov/08/nz-election-2026-national-labour-rejection-by-voters",
     "",
-    "https://www.theguardian.com/us-news/2026/nov/07/stephen-miller-democrats-react",
-    "https://www.theguardian.com/us-news/2026/nov/07/trump-stephen-miller-midterms"
+    "https://www.theguardian.com/us-news/2026/nov/07/trump-stephen-miller-midterms",
+    "https://www.theguardian.com/us-news/2026/nov/07/trump-republican-candidates-struggled-midterm-election-results"
    ]
   },
   {
@@ -3564,7 +3553,7 @@
     "url": "https://www.youtube.com/watch?v=XtLl_wi6H3A",
     "img": "https://i.ytimg.com/vi/XtLl_wi6H3A/hqdefault.jpg",
     "story": "Middle East latest, Trump White House updates, Melania Trump visits LS",
-    "watching": "505",
+    "watching": "472",
     "also": [
      {
       "net": "The White House live",
@@ -3679,11 +3668,74 @@
  "pm": [],
  "blogs_auto": [
   {
+   "net": "Middle East Eye",
+   "story": "UAE rescues 22 people from burning cargo ship in Sea of Oman",
+   "title": "UAE rescues 22 people from burning cargo ship in Sea of Oman",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/uae-rescues-22-people-after-cargo-ship-caught-fire-sea-oman",
+   "updated": "2026-11-08T02:21:21+00:00",
+   "ended": false,
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Untitled_0.jpg"
+  },
+  {
+   "net": "Middle East Eye",
+   "story": "Saudi authorities say danger passes in Dammam, al-Ahsa and Abqaiq",
+   "title": "Saudi authorities say danger passes in Dammam, al-Ahsa and Abqaiq",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-authorities-say-danger-passes-dammam-al-ahsa-and-abqaiq",
+   "updated": "2026-11-08T02:09:58+00:00",
+   "ended": false,
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Untitled_0.jpg"
+  },
+  {
+   "net": "Middle East Eye",
+   "story": "Paraguay's pro-Israel former president taken into custody over banking",
+   "title": "Paraguay's pro-Israel former president taken into custody over banking crisis",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/paraguays-pro-israel-former-president-taken-custody-over-banking-crisis",
+   "updated": "2026-11-08T02:03:50+00:00",
+   "ended": false,
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Untitled_0.jpg"
+  },
+  {
+   "net": "Middle East Eye",
+   "story": "French ships may escort pro-Palestinian civilian flotillas, Mélenchon ",
+   "title": "French ships may escort pro-Palestinian civilian flotillas, Mélenchon says",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/french-ships-may-escort-pro-palestinian-civilian-flotillas-melenchon",
+   "updated": "2026-11-08T01:39:55+00:00",
+   "ended": false,
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Untitled_0.jpg"
+  },
+  {
+   "net": "Middle East Eye",
+   "story": "'You lost war and election': Iran's Rezaei warns US of 'devastating re",
+   "title": "'You lost war and election': Iran's Rezaei warns US of 'devastating response'",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/you-lost-war-and-election-irans-rezaei-warns-us-devastating-response",
+   "updated": "2026-11-08T01:07:13+00:00",
+   "ended": false,
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Untitled_0.jpg"
+  },
+  {
+   "net": "Middle East Eye",
+   "story": "Centcom sets up 'Task Force Iron Gate' to disrupt Iran’s weapons trans",
+   "title": "Centcom sets up 'Task Force Iron Gate' to disrupt Iran’s weapons transfers",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/centcom-sets-task-force-iron-gate-disrupt-irans-weapons-transfers",
+   "updated": "2026-11-08T00:44:51+00:00",
+   "ended": false,
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Untitled_0.jpg"
+  },
+  {
+   "net": "Middle East Eye",
+   "story": "Yemen and Lebanon to work towards halting Hezbollah support for Houthi",
+   "title": "Yemen and Lebanon to work towards halting Hezbollah support for Houthis, minister says",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/yemen-and-lebanon-work-towards-halting-hezbollah-support-houthis",
+   "updated": "2026-11-08T00:14:15+00:00",
+   "ended": false,
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Untitled_0.jpg"
+  },
+  {
    "net": "Al Jazeera",
    "story": "Iran war live: Blasts heard in Qeshm; US moves to block land supply ro",
    "title": "Iran war live: Blasts heard in Qeshm; US moves to block land supply routes",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/8/iran-war-live-explosions-hit-qeshm-us-moves-to-block-land-supply-routes?traffic_source=rss",
-   "updated": "2026-11-08T02:19:30+00:00",
+   "updated": "2026-11-08T02:30:00+00:00",
    "ended": false,
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6aefb55c-1794094428.jpg?resize=1920%2C1440"
   }
@@ -3796,6 +3848,60 @@
   }
  },
  "canangle_live": {
+  "https://www.middleeasteye.net/live-blog/live-blog-update/you-lost-war-and-election-irans-rezaei-warns-us-devastating-response": {
+   "story": "'You lost war and election': Iran's Rezaei warns US of 'devastating response'",
+   "us": true,
+   "specific": 1,
+   "stories": [
+    {
+     "t": "Thu 7:20 a.m.",
+     "iso": "2026-11-05T12:20:25+00:00",
+     "outlet": "Canada's National Observer",
+     "title": "Here's how the US midterm election results could affect Canada",
+     "url": "https://www.nationalobserver.com/2026/11/05/news/heres-how-us-midterm-election-results-could-affect-canada",
+     "ca": false,
+     "tie": ""
+    },
+    {
+     "t": "Sat 3:44 p.m.",
+     "iso": "2026-11-07T20:44:34+00:00",
+     "outlet": "Al Jazeera",
+     "title": "Abdul El-Sayed slams Trump’s tariff war with Canada",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/abdul-el-sayed-slams-trumps-tariff-war-with-canada?traffic_source=rss",
+     "ca": false,
+     "tie": "Canada and the U.S."
+    },
+    {
+     "t": "Fri 5:56 p.m.",
+     "iso": "2026-11-06T22:56:46+00:00",
+     "outlet": "CP24",
+     "title": "PM Carney welcomes ‘any moves’ to restore free trade, Hoekstra predicts deal could come soon",
+     "url": "https://www.cp24.com/news/world/2026/11/06/pm-carney-welcomes-any-moves-to-restore-free-trade-hoekstra-predicts-deal-could-come-soon/",
+     "ca": true,
+     "tie": "Canada and the U.S."
+    },
+    {
+     "t": "Fri 3:12 p.m.",
+     "iso": "2026-11-06T20:12:05+00:00",
+     "outlet": "Global News",
+     "title": "Carney says he’s yet to talk to Democrats on tariffs: ‘Short answer is no’",
+     "url": "https://globalnews.ca/news/12140323/carney-us-trade-democrats/",
+     "ca": true,
+     "tie": "Canada and the U.S."
+    },
+    {
+     "t": "Fri 1:59 p.m.",
+     "iso": "2026-11-06T18:59:33.793000+00:00",
+     "outlet": "CBC News",
+     "title": "Carney says he hasn't talked with Democrats about tariffs but 'welcomes' any progress toward a deal",
+     "url": "https://www.cbc.ca/player/play/video/9.7412481",
+     "ca": true,
+     "tie": "Canada and the U.S."
+    }
+   ],
+   "official": [],
+   "views": []
+  },
   "https://www.youtube.com/watch?v=XtLl_wi6H3A": {
    "story": "Middle East latest, Trump White House updates, Melania Trump visits LSU-Alabama game, more",
    "us": true,
@@ -3814,45 +3920,18 @@
    "official": [],
    "views": []
   },
-  "https://www.cbsnews.com/news/this-week-on-sunday-morning-nov-8-2026/": {
-   "story": "This week on \"Sunday Morning\" (Nov. 8)",
-   "us": false,
-   "specific": 1,
-   "stories": [
-    {
-     "t": "Sat 3:39 p.m.",
-     "iso": "2026-11-07T20:39:43+00:00",
-     "outlet": "CityNews Vancouver",
-     "title": "Early Saturday morning e-scooter crash results in fatality in Vancouver",
-     "url": "https://vancouver.citynews.ca/2026/11/07/e-scooter-fatal-collision/",
-     "ca": true,
-     "tie": ""
-    }
-   ],
-   "official": [],
-   "views": []
-  },
   "https://abcnews.com/International/live-updates/iran-live-updates-trump-good-call-netanyahu/?id=137762456": {
    "story": "Iran live updates: US disables another ship trying to breach the Iran naval blockade",
    "us": true,
-   "specific": 2,
+   "specific": 1,
    "stories": [
     {
-     "t": "Fri 6:32 a.m.",
-     "iso": "2026-11-06T11:32:04+00:00",
+     "t": "Thu 7:20 a.m.",
+     "iso": "2026-11-05T12:20:25+00:00",
      "outlet": "Canada's National Observer",
-     "title": "Former Quebec diplomat sees opportunity to rebuild energy ties after US midterms",
-     "url": "https://www.nationalobserver.com/2026/11/06/news/former-quebec-diplomat-sees-opportunity-rebuild-energy-ties-after-us-midterms",
+     "title": "Here's how the US midterm election results could affect Canada",
+     "url": "https://www.nationalobserver.com/2026/11/05/news/heres-how-us-midterm-election-results-could-affect-canada",
      "ca": false,
-     "tie": ""
-    },
-    {
-     "t": "Thu 4:01 a.m.",
-     "iso": "2026-11-05T09:01:05+00:00",
-     "outlet": "Toronto Star",
-     "title": "U.S. midterm results spark joy among Canadians but trust in America remains shaky",
-     "url": "https://www.thestar.com/news/canada/u-s-midterm-results-spark-joy-among-canadians-but-trust-in-america-remains-shaky/article_73e9dbbf-a4e5-52dc-8645-e27e657b4a9a.html",
-     "ca": true,
      "tie": ""
     }
    ],
@@ -3879,112 +3958,6 @@
   }
  },
  "bds": [
-  {
-   "id": "bd-auto-86e65c72",
-   "auto": true,
-   "desk": "World",
-   "status": "Developing",
-   "at": "2026-11-07T23:50:26.485000+00:00",
-   "exact": true,
-   "img": "live/img/auto-86e65c72-8291d82fc4.jpg",
-   "credit": "via CBC News",
-   "pic": "globe",
-   "h": "Israel's president asks Gadi Eisenkot, Netanyahu's rival, to form new government",
-   "lede": "Israel's president has tapped opposition candidate Gadi Eisenkot to form a new government, in another setback for Prime Minister Benjamin Netanyahu.",
-   "newl": "Now carried by 6 independent newsrooms.",
-   "rows": [
-    [
-     "CBC News",
-     "Israel's president has tapped opposition candidate Gadi Eisenkot to form a new government, in another setback for Prime Minister Benjamin Netanyahu.",
-     [
-      1
-     ]
-    ],
-    [
-     "The Japan Times",
-     "Israel’s president on Saturday chose Gadi Eisenkot, Prime Minister Benjamin Netanyahu’s strongest rival, to try to form a new government.",
-     [
-      2
-     ]
-    ],
-    [
-     "BBC News",
-     "Neither PM Benjamin Netanyahu's bloc nor that of his rival secured a majority in last week's election.",
-     [
-      3
-     ]
-    ],
-    [
-     "CTV News",
-     "Israeli President Isaac Herzog said Saturday night that he was giving opposition candidate Gadi Eisenkot the first opportunity to form a governing coalition following elections on Oct. 27.",
-     [
-      4
-     ]
-    ],
-    [
-     "CBS News",
-     "Gadi Eisenkot, a former military chief, ran against Prime Minister Benjamin Netanyahu, but neither won a clear majority.",
-     [
-      7
-     ]
-    ],
-    [
-     "PBS NewsHour",
-     "Neither Eisenkot nor Netanyahu won a clear majority in the vote. But in marathon discussions with the president this week, representatives from most of Israel’s main parties recommended Eisenkot be tasked with assembling a new government.",
-     [
-      8
-     ]
-    ]
-   ],
-   "src": [
-    [
-     "CBC News",
-     "Israel's president asks Gadi Eisenkot, Netanyahu's rival, to form new government",
-     "https://www.cbc.ca/news/world/gadi-eisenkot-form-government-israel-9.7413714"
-    ],
-    [
-     "The Japan Times",
-     "Israeli president picks Gadi Eisenkot, Netanyahu rival, to try to form government",
-     "https://www.japantimes.co.jp/news/2026/11/08/world/politics/israel-president-gadi-eisenkot-government/"
-    ],
-    [
-     "BBC News",
-     "Israel's president tasks opposition leader Eisenkot with forming government",
-     "https://www.bbc.co.uk/news/articles/cmy8367lj5xlo?at_medium=RSS&at_campaign=rss"
-    ],
-    [
-     "CTV News",
-     "Israel’s president taps opposition candidate Eisenkot to form a government, in setback for Netanyahu",
-     "https://www.ctvnews.ca/world/article/israels-president-taps-opposition-candidate-eisenkot-to-form-a-government-in-setback-for-netanyahu/"
-    ],
-    [
-     "CP24",
-     "Israel’s president taps opposition candidate Eisenkot to form a government, in setback for Netanyahu",
-     "https://www.cp24.com/news/world/2026/11/07/israels-president-taps-opposition-candidate-eisenkot-to-form-a-government-in-setback-for-netanyahu/"
-    ],
-    [
-     "The Hill",
-     "Israeli president picks Netanyahu’s rival Eisenkot to form new government",
-     "https://thehill.com/policy/international/6206234-herzog-appoints-eisenkot-form-government/"
-    ],
-    [
-     "CBS News",
-     "Israel's president taps opposition candidate Eisenkot to form a government",
-     "https://www.cbsnews.com/news/israel-election-government-gadi-eisenkot-benjamin-netanyahu/"
-    ],
-    [
-     "PBS NewsHour",
-     "Israel's president taps opposition candidate Eisenkot to form a government, in setback for Netanyahu",
-     "https://www.pbs.org/newshour/world/israels-president-taps-opposition-candidate-eisenkot-to-form-a-government-in-setback-for-netanyahu"
-    ],
-    [
-     "Al Jazeera",
-     "Israel’s president picks Eisenkot over Netanyahu to form next government",
-     "https://www.aljazeera.com/news/2026/11/7/israels-president-picks-eisenkot-over-netanyahu-to-form-next-government?traffic_source=rss"
-    ]
-   ],
-   "lead": 1
-  },
   {
    "id": "bd-auto-97704d8e",
    "auto": true,
