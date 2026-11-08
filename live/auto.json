@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-08T11:42:55.383765+00:00",
- "checkedLabel": "Sun 6:42 a.m.",
+ "checked": "2026-11-08T11:52:56.231780+00:00",
+ "checkedLabel": "Sun 6:52 a.m.",
  "stories": [
   {
    "key": "top",
@@ -31,6 +31,15 @@
  ],
  "wire": [
   [
+   "Sun 6:43 a.m.",
+   "Latest",
+   "Pope wraps up Uruguay visit and heads to most fraught stop of his tour in Argentina",
+   "ABC News",
+   "https://abcnews.com/International/wireStory/pope-wraps-uruguay-visit-heads-fraught-stop-tour-137951348",
+   "2026-11-08T11:43:44+00:00",
+   3
+  ],
+  [
    "Sun 6:35 a.m.",
    "Latest",
    "Deadly mass shooting in Poland investigated as terror act, prosecutor says",
@@ -38,15 +47,6 @@
    "https://abcnews.com/International/deadly-mass-shooting-poland-investigated-terror-act-prosecutor/story?id=137951543",
    "2026-11-08T11:35:48+00:00",
    1
-  ],
-  [
-   "Sun 6:33 a.m.",
-   "Latest",
-   "Pope wraps up Uruguay visit and heads to most fraught stop of his tour in Argentina",
-   "ABC News",
-   "https://abcnews.com/International/wireStory/pope-wraps-uruguay-visit-heads-fraught-stop-tour-137951348",
-   "2026-11-08T11:33:04+00:00",
-   3
   ],
   [
    "Sun 6:26 a.m.",
@@ -858,8 +858,8 @@
    {
     "key": "auto-da15605b",
     "words": [
-     "oman",
-     "gulf"
+     "gulf",
+     "oman"
     ],
     "score": 15,
     "outlets": 4,
@@ -1175,7 +1175,221 @@
     "judgment_why": "National: affects many people; carried across the country (7 cities).",
     "weight": 39,
     "tag_why": "Developing, not Breaking: from abroad with no Canadian tie and 4 independent newsroom(s), under the six-source standard, while a Canadian story at the top has 7."
+   }
+  ],
+  "considered": [
+   {
+    "title": "Poilievre pans Liberal budget's $15M capital gains exemption, calls for 'simpler' plan",
+    "url": "https://www.cbc.ca/news/politics/poilievre-capital-gains-exemption-budget-2026-9.7413640",
+    "rank": 1,
+    "live": "",
+    "weight": 56.5,
+    "score": 21,
+    "independent": 7,
+    "most_read": 5,
+    "canada": "canadian",
+    "theme": "Federal budget",
+    "top": true,
+    "fronts": 0,
+    "fronts_who": [],
+    "rule": "Canadian, still developing",
+    "carriers": 9,
+    "judgment": "national",
+    "why_judged": "National: affects many people; carried across the country (national desks)."
    },
+   {
+    "title": "US forces strike commercial vessel in Gulf of Oman after crew 'ignored repeated warnings'",
+    "url": "https://www.euronews.com/2026/11/08/us-forces-strike-commercial-vessel-in-gulf-of-oman-after-crew-ignored-repeated-warnings",
+    "rank": 2,
+    "live": "",
+    "weight": 39,
+    "score": 15,
+    "independent": 4,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": true,
+    "fronts": 0,
+    "fronts_who": [],
+    "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
+    "carriers": 13,
+    "judgment": "national",
+    "why_judged": "National: affects many people; carried across the country (7 cities)."
+   },
+   {
+    "title": "Netanyahu rival Eisenkot to be tasked with forming new government following Israeli elections",
+    "url": "https://www.euronews.com/2026/11/08/netanyahu-rival-eisenkot-to-be-tasked-with-forming-new-government-following-israeli-electi",
+    "rank": 3,
+    "live": "",
+    "weight": 36,
+    "score": 17,
+    "independent": 5,
+    "most_read": 0,
+    "canada": "tie",
+    "theme": "",
+    "top": false,
+    "fronts": 6,
+    "fronts_who": [
+     "National Post",
+     "NBC News",
+     "CBS News",
+     "ABC News",
+     "The Guardian",
+     "NPR"
+    ],
+    "rule": "From abroad, tied to Canada",
+    "carriers": 19,
+    "judgment": "national",
+    "why_judged": "National: leading 6 front pages (National Post, NBC News, CBS News, ABC News, The Guardian, NPR)."
+   },
+   {
+    "title": "UFC boss Dana White says he's meeting with Trump after press secretary job offer",
+    "url": "https://www.cbc.ca/news/world/trump-press-secretary-ufc-dana-white-9.7413697",
+    "rank": 4,
+    "live": "",
+    "weight": 37,
+    "score": 15,
+    "independent": 8,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": false,
+    "fronts": 5,
+    "fronts_who": [
+     "NBC News",
+     "CBS News",
+     "ABC News",
+     "BBC News",
+     "The Guardian"
+    ],
+    "rule": "No Canadian tie",
+    "carriers": 18,
+    "judgment": "national",
+    "why_judged": "National: affects some people; carried across the country (4 cities)."
+   },
+   {
+    "title": "Earthquake hits central Japan, injuring more than 20 people",
+    "url": "https://www.aljazeera.com/news/2026/11/8/earthquake-hits-central-japan-injuring-more-than-20-people?traffic_source=rss",
+    "rank": 5,
+    "live": "",
+    "weight": 25.0,
+    "score": 12,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": false,
+    "fronts": 0,
+    "fronts_who": [],
+    "rule": "No Canadian tie",
+    "carriers": 12,
+    "judgment": "national",
+    "why_judged": "National: affects many people; carried across the country (7 cities)."
+   },
+   {
+    "title": "Iran live updates: Saudis say Houthi missiles targeted Riyadh, Aramco tower damaged",
+    "url": "https://abcnews.com/International/live-updates/iran-live-updates-trump-good-call-netanyahu/?id=137762456",
+    "rank": 6,
+    "live": "",
+    "weight": 19.0,
+    "score": 8,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": false,
+    "fronts": 1,
+    "fronts_who": [
+     "ABC News"
+    ],
+    "rule": "No Canadian tie",
+    "carriers": 4,
+    "judgment": "regional",
+    "why_judged": "Regional: affects some people; carried beyond one city."
+   },
+   {
+    "title": "What we know so far after Krakow gun attack",
+    "url": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
+    "rank": 7,
+    "live": "",
+    "weight": 35.0,
+    "score": 13,
+    "independent": 4,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": false,
+    "fronts": 4,
+    "fronts_who": [
+     "CTV News",
+     "CP24",
+     "CBS News",
+     "BBC News"
+    ],
+    "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
+    "carriers": 8,
+    "judgment": "national",
+    "why_judged": "National: affects many people; carried across the country (national desks)."
+   },
+   {
+    "title": "Americans in Canada hope for closer ties between two countries after midterms",
+    "score": 18,
+    "why": "not built: only 1 independent report(s) (4 sites)"
+   },
+   {
+    "title": "Are Canadian snowbirds flocking back during the U.S. trade war? Here’s what data says",
+    "score": 18,
+    "why": "not built: only 1 independent report(s) (3 sites)"
+   },
+   {
+    "title": "How Trump's tariffs are threatening to spoil the success of Canadian cheese",
+    "score": 18,
+    "why": "not built: only 1 independent report(s) (1 sites)"
+   },
+   {
+    "title": "‘Deficits are lower, that’s a fact’: Finance minister defends budget",
+    "score": 14,
+    "why": "not built: only 2 independent report(s) (3 sites)"
+   },
+   {
+    "title": "Injured Wainwright soldiers benefit from cutting-edge Canadian burn research",
+    "score": 13,
+    "why": "not built: only 2 independent report(s) (8 sites)"
+   },
+   {
+    "title": "Trump’s choice of Stephen Miller as Chief of Staff is making the Democrats’ great week, even better.",
+    "score": 12,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Festival of Lights, Festival of Growth: A look at Diwali’s business impact in Canada",
+    "score": 10,
+    "why": "not built: only 2 independent report(s) (9 sites)"
+   },
+   {
+    "title": "Pope wraps up Uruguay visit and heads to most fraught stop of his tour in Argentina",
+    "score": 9,
+    "why": "not built: only 2 independent report(s) (6 sites)"
+   },
+   {
+    "title": "North Vancouver woman rescued after being swept into fast-moving water in B.C. storm.",
+    "score": 9,
+    "why": "not built: only 1 independent report(s) (2 sites)"
+   },
+   {
+    "title": "It’s Morning in America. By all Means, Blame Canada.",
+    "score": 6,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Residents of this North York neighbourhood are demanding a traffic light after an eight-year-old girl was struck by a driver",
+    "score": 6,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   }
+  ],
+  "moved": [],
+  "top_n": 2,
+  "more": [
    {
     "key": "auto-9f6276b5",
     "words": [
@@ -1540,32 +1754,33 @@
     "incoherent": false,
     "popular": 0,
     "us_election": false,
-    "fronts": 5,
+    "fronts": 6,
     "fronts_ca": 1,
     "fronts_who": [
      "National Post",
      "NBC News",
      "CBS News",
      "ABC News",
-     "The Guardian"
+     "The Guardian",
+     "NPR"
     ],
     "judgment": "national",
-    "judgment_why": "National: affects many people; carried across the country (3 cities).",
-    "weight": 39,
+    "judgment_why": "National: leading 6 front pages (National Post, NBC News, CBS News, ABC News, The Guardian, NPR).",
+    "weight": 36,
     "videos": [
-     {
-      "net": "CBC News",
-      "url": "https://www.youtube.com/watch?v=imo7fxV3_d0",
-      "title": "Israel's president chooses Gadi Eisenkot, Netanyahu's rival, to form new government",
-      "img": "https://i.ytimg.com/vi/imo7fxV3_d0/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
      {
       "net": "CTV News",
       "url": "https://www.youtube.com/watch?v=zCLavslGxlA",
       "title": "Israeli President Herzog names Netanyahu opponent to form new government",
       "img": "https://i.ytimg.com/vi/zCLavslGxlA/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=imo7fxV3_d0",
+      "title": "Israel's president chooses Gadi Eisenkot, Netanyahu's rival, to form new government",
+      "img": "https://i.ytimg.com/vi/imo7fxV3_d0/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
@@ -1588,222 +1803,10 @@
     ]
    }
   ],
-  "considered": [
-   {
-    "title": "Poilievre pans Liberal budget's $15M capital gains exemption, calls for 'simpler' plan",
-    "url": "https://www.cbc.ca/news/politics/poilievre-capital-gains-exemption-budget-2026-9.7413640",
-    "rank": 1,
-    "live": "",
-    "weight": 56.5,
-    "score": 21,
-    "independent": 7,
-    "most_read": 5,
-    "canada": "canadian",
-    "theme": "Federal budget",
-    "top": true,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "Canadian, still developing",
-    "carriers": 9,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (national desks)."
-   },
-   {
-    "title": "US forces strike commercial vessel in Gulf of Oman after crew 'ignored repeated warnings'",
-    "url": "https://www.euronews.com/2026/11/08/us-forces-strike-commercial-vessel-in-gulf-of-oman-after-crew-ignored-repeated-warnings",
-    "rank": 2,
-    "live": "",
-    "weight": 39,
-    "score": 15,
-    "independent": 4,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": true,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
-    "carriers": 13,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (7 cities)."
-   },
-   {
-    "title": "Netanyahu rival Eisenkot to be tasked with forming new government following Israeli elections",
-    "url": "https://www.euronews.com/2026/11/08/netanyahu-rival-eisenkot-to-be-tasked-with-forming-new-government-following-israeli-electi",
-    "rank": 3,
-    "live": "",
-    "weight": 39,
-    "score": 17,
-    "independent": 5,
-    "most_read": 0,
-    "canada": "tie",
-    "theme": "",
-    "top": true,
-    "fronts": 5,
-    "fronts_who": [
-     "National Post",
-     "NBC News",
-     "CBS News",
-     "ABC News",
-     "The Guardian"
-    ],
-    "rule": "From abroad, tied to Canada",
-    "carriers": 19,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (3 cities)."
-   },
-   {
-    "title": "Earthquake hits central Japan, injuring more than 20 people",
-    "url": "https://www.aljazeera.com/news/2026/11/8/earthquake-hits-central-japan-injuring-more-than-20-people?traffic_source=rss",
-    "rank": 4,
-    "live": "",
-    "weight": 25.0,
-    "score": 12,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "No Canadian tie",
-    "carriers": 12,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (7 cities)."
-   },
-   {
-    "title": "Iran live updates: Saudis say Houthi missiles targeted Riyadh, Aramco tower damaged",
-    "url": "https://abcnews.com/International/live-updates/iran-live-updates-trump-good-call-netanyahu/?id=137762456",
-    "rank": 5,
-    "live": "",
-    "weight": 19.0,
-    "score": 8,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 1,
-    "fronts_who": [
-     "ABC News"
-    ],
-    "rule": "No Canadian tie",
-    "carriers": 4,
-    "judgment": "regional",
-    "why_judged": "Regional: affects some people; carried beyond one city."
-   },
-   {
-    "title": "What we know so far after Krakow gun attack",
-    "url": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
-    "rank": 6,
-    "live": "",
-    "weight": 35.0,
-    "score": 13,
-    "independent": 4,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 4,
-    "fronts_who": [
-     "CTV News",
-     "CP24",
-     "CBS News",
-     "BBC News"
-    ],
-    "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
-    "carriers": 8,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (national desks)."
-   },
-   {
-    "title": "Staff at the US center for AI safety are reporting to the White House, raising independence concerns",
-    "url": "https://www.thestar.com/news/world/united-states/staff-at-the-us-center-for-ai-safety-are-reporting-to-the-white-house-raising-independence-concerns/article_b3df1671-69f8-5661-b859-072fda275097.html",
-    "rank": 7,
-    "live": "",
-    "weight": 36,
-    "score": 15,
-    "independent": 7,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 5,
-    "fronts_who": [
-     "NBC News",
-     "CBS News",
-     "ABC News",
-     "BBC News",
-     "The Guardian"
-    ],
-    "rule": "No Canadian tie",
-    "carriers": 18,
-    "judgment": "national",
-    "why_judged": "National: affects some people; carried across the country (4 cities)."
-   },
-   {
-    "title": "Americans in Canada hope for closer ties between two countries after midterms",
-    "score": 18,
-    "why": "not built: only 1 independent report(s) (4 sites)"
-   },
-   {
-    "title": "Are Canadian snowbirds flocking back during the U.S. trade war? Here’s what data says",
-    "score": 18,
-    "why": "not built: only 1 independent report(s) (3 sites)"
-   },
-   {
-    "title": "How Trump's tariffs are threatening to spoil the success of Canadian cheese",
-    "score": 18,
-    "why": "not built: only 1 independent report(s) (1 sites)"
-   },
-   {
-    "title": "‘Deficits are lower, that’s a fact’: Finance minister defends budget",
-    "score": 14,
-    "why": "not built: only 2 independent report(s) (3 sites)"
-   },
-   {
-    "title": "Injured Wainwright soldiers benefit from cutting-edge Canadian burn research",
-    "score": 13,
-    "why": "not built: only 2 independent report(s) (8 sites)"
-   },
-   {
-    "title": "Trump’s choice of Stephen Miller as Chief of Staff is making the Democrats’ great week, even better.",
-    "score": 12,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Festival of Lights, Festival of Growth: A look at Diwali’s business impact in Canada",
-    "score": 10,
-    "why": "not built: only 2 independent report(s) (9 sites)"
-   },
-   {
-    "title": "Pope wraps up Uruguay visit and heads to most fraught stop of his tour in Argentina",
-    "score": 9,
-    "why": "not built: only 2 independent report(s) (6 sites)"
-   },
-   {
-    "title": "North Vancouver woman rescued after being swept into fast-moving water in B.C. storm.",
-    "score": 9,
-    "why": "not built: only 1 independent report(s) (2 sites)"
-   },
-   {
-    "title": "It’s Morning in America. By all Means, Blame Canada.",
-    "score": 6,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Residents of this North York neighbourhood are demanding a traffic light after an eight-year-old girl was struck by a driver",
-    "score": 6,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   }
-  ],
-  "moved": [],
-  "top_n": 3,
-  "more": [],
   "passed_over": [
    {
-    "title": "Staff at the US center for AI safety are reporting to the White House, raising independence concerns",
-    "url": "https://www.thestar.com/news/world/united-states/staff-at-the-us-center-for-ai-safety-are-reporting-to-the-white-house-raising-independence-concerns/article_b3df1671-69f8-5661-b859-072fda275097.html"
+    "title": "UFC boss Dana White says he's meeting with Trump after press secretary job offer",
+    "url": "https://www.cbc.ca/news/world/trump-press-secretary-ufc-dana-white-9.7413697"
    },
    {
     "title": "What we know so far after Krakow gun attack",
@@ -1978,7 +1981,7 @@
    "id": "0brf9IQ3NEg",
    "r": "ca",
    "o": "Global News",
-   "t": "Global National: Nov. 7, 2026 | Why Trump's new chief of staff may be bad for Canada",
+   "t": "Global National: Nov. 7, 2026 | Trump doubles down on his agenda following US midterms outcome",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=0brf9IQ3NEg",
@@ -2006,7 +2009,7 @@
    "id": "XgDPKpn8M1U",
    "r": "ca",
    "o": "CTV News",
-   "t": "Safe Ride Home Sudbury launches 2026 campaign",
+   "t": "Safe Ride Home Sudbury needs volunteer drivers for holiday season",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=XgDPKpn8M1U",
@@ -2311,34 +2314,6 @@
    "geo": "unknown"
   },
   {
-   "id": "NQ1_oUFD5Io",
-   "r": "world",
-   "o": "BBC News",
-   "t": "Krakow shooting leaves six dead, including British citizen | BBC News",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=NQ1_oUFD5Io",
-   "img": "https://i.ytimg.com/vi/NQ1_oUFD5Io/hqdefault.jpg",
-   "up": "2026-11-08",
-   "added": "2026-11-08T09:12:22.827517+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "MxvXe1t2QFk",
-   "r": "world",
-   "o": "BBC News",
-   "t": "Mark Zuckerberg wants AI walking around your home, do you? | BBC News",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=MxvXe1t2QFk",
-   "img": "https://i.ytimg.com/vi/MxvXe1t2QFk/hqdefault.jpg",
-   "up": "2026-11-08",
-   "added": "2026-11-08T09:35:55.566206+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "5EuaoVzzvWs",
    "r": "world",
    "o": "DW News",
@@ -2356,7 +2331,7 @@
    "id": "C9ebupvqyQ0",
    "r": "world",
    "o": "Sky News",
-   "t": "Russell Brand case: Lisa Nandy warns similar behaviour could still be happening today",
+   "t": "Russell Brand case: 'I'm asking media and entertainment organisations to step up', minister says",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=C9ebupvqyQ0",
@@ -2412,7 +2387,7 @@
    "id": "FRzjPGT1wFA",
    "r": "world",
    "o": "DW News",
-   "t": "What Europe risks by buying Putin's gas again | The Dip Podcast",
+   "t": "What Trump’s Russian gas proposal could cost Europe | The Dip Podcast",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=FRzjPGT1wFA",
@@ -2426,7 +2401,7 @@
    "id": "NSX3uN1GHmE",
    "r": "world",
    "o": "Sky News",
-   "t": "Remembrance Sunday: King leads memorial service at Cenotaph",
+   "t": "Remembrance Sunday: King Charles leads two-minute silence at Cenotaph",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=NSX3uN1GHmE",
@@ -2438,14 +2413,6 @@
   }
  ],
  "ledes": [
-  {
-   "o": "CBS News",
-   "h": "More than 600,000 left with no power in Ukraine after strikes, authorities say",
-   "u": "https://www.cbsnews.com/news/ukraine-russia-war-strike-power/",
-   "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/08/914c5c9d-2702-4e08-86f2-144f1c169260/thumbnail/1200x630/7d10fb0d3d480c2ac49bed315c09ec04/gettyimages-2303644593.jpg",
-   "w": "Sun 6:20 a.m.",
-   "iso": "2026-11-08T11:20:29+00:00"
-  },
   {
    "o": "ABC News",
    "h": "Iran live updates: US disables another ship trying to breach the Iran naval blockade",
@@ -2480,9 +2447,9 @@
   },
   {
    "o": "NPR",
-   "h": "A desert stirs to life: Chile's Atacama erupts in its biggest floral display in decades",
-   "u": "https://www.npr.org/2026/11/08/nx-s1-6023812/chile-desert-el-nino",
-   "img": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4000x2250+0+374/resize/1400/quality/85/format/webp/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F44%2F27%2F4d4fe4984450a672595971ed542a%2Fdesert-bloom-t-merino-87.jpg",
+   "h": "Climate change is altering the colors we see in the world: an illustrated journey",
+   "u": "https://www.npr.org/2026/11/08/nx-s1-5393776/color-climate-change-coral-lakes",
+   "img": "",
    "w": "Sun 6:00 a.m.",
    "iso": "2026-11-08T11:00:00+00:00"
   },
@@ -2681,13 +2648,6 @@
  ],
  "eds": [
   [
-   "Toronto Star",
-   "Opinion",
-   "In this Graeme MacKay cartoon, Donald Trump's changes hats",
-   "https://www.thestar.com/opinion/editorial-cartoons/in-this-graeme-mackay-cartoon-donald-trump-s-changes-hats/article_6d929a55-d321-4222-a1bb-d45bad454ee1.html",
-   "2026-11-08T11:00:00+00:00"
-  ],
-  [
    "Toronto Sun",
    "Editorial",
    "Are Liberals repeating immigration blunders?",
@@ -2725,9 +2685,9 @@
   [
    "The Globe and Mail (subscribers)",
    "Editorial",
-   "A time change that sets back Canadians",
-   "https://www.theglobeandmail.com/opinion/editorials/article-a-time-change-that-sets-back-canadians/",
-   "2026-11-07T11:45:00+00:00"
+   "The sad story of Canada’s last captive whales",
+   "https://www.theglobeandmail.com/opinion/editorials/article-canada-last-captive-whales/",
+   "2026-11-08T11:45:00+00:00"
   ],
   [
    "The Hub",
@@ -2749,6 +2709,13 @@
    "Put your money where your mouth is: Prediction markets won the midterms",
    "https://www.foxnews.com/opinion/stu-burguiere-put-your-money-where-your-mouth-is-prediction-markets-won-midterms",
    "2026-11-07T19:35:41+00:00"
+  ],
+  [
+   "Washington Examiner",
+   "Editorial",
+   "California votes to stay unaffordable",
+   "https://www.washingtonexaminer.com/opinion/editorials/4795375/california-votes-to-stay-unaffordable/",
+   "2026-11-08T10:00:00+00:00"
   ]
  ],
  "canus": {
@@ -2819,7 +2786,7 @@
    "Aid sector calls out omission of foreign aid in federal budget, Global News reports.",
    "In Israel, a candidate tasked with forming a new government has 28 days to carry out the job, The Associated Press reports.",
    "US military says it fired on commercial vessel in Gulf of Oman after it attempted to breach blockade, The Associated Press reports.",
-   "With public anxiety growing over mounting reports about out-of-control artificial intelligence agents, the tiny U.S. government division charged with assessing the safety of new AI offerings, The Associated Press reports.",
+   "Trump and White have forged a close relationship over the years, with Trump a regular attendee at UFC events and White having spoken at a number of the president’s rallies, The Associated Press reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
   ]
  },
@@ -3209,10 +3176,10 @@
    "t": "Sun 3:07 a.m.",
    "iso": "2026-11-08T08:07:07+00:00",
    "title": "Staff at the US center for AI safety are reporting to the White House, raising independence concerns",
-   "summary": "SAN FRANCISCO (AP) — With public anxiety growing over mounting reports about out-of-control artificial intelligence agents, the tiny U.S. government division charged with assessing the safety of new AI offerings",
+   "summary": "",
    "outlet": "Toronto Star, Euronews, Al Jazeera, CBS News, CBC News, BBC News",
    "url": "https://www.thestar.com/news/world/united-states/staff-at-the-us-center-for-ai-safety-are-reporting-to-the-white-house-raising-independence-concerns/article_b3df1671-69f8-5661-b859-072fda275097.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/f/45/f45e2f6a-07cc-52a2-8a69-f9d52cf072bc/6af02e5b0b6b7.image.jpg?crop=1920%2C1008%2C0%2C35&resize=1200%2C630&order=crop%2Cresize"
+   "img": ""
   },
   {
    "desk": "world",
@@ -3261,8 +3228,8 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Sun 6:33 a.m.",
-   "iso": "2026-11-08T11:33:04+00:00",
+   "t": "Sun 6:43 a.m.",
+   "iso": "2026-11-08T11:43:44+00:00",
    "title": "Pope wraps up Uruguay visit and heads to most fraught stop of his tour in Argentina",
    "summary": "Pope Leo XIV is wrapping up his visit to Uruguay by marking an important Catholic feast day that is tied to the country’s independence",
    "outlet": "ABC News, Toronto Star, The Guardian, CTV News, CP24, Euronews",
@@ -3498,6 +3465,26 @@
    ]
   },
   {
+   "o": "Toronto Star",
+   "ca": true,
+   "h": [
+    "Toronto Star News - Breaking News Stories",
+    "An Ontario teen lived in this shed while under the watch of Children’s Aid. ‘Everybody knew, nobody cared’",
+    "Canada’s new immigration targets: Who benefits and who loses out",
+    "Mark Carney is trying to do what Justin Trudeau couldn’t. Why his homelessness plan is being met with cautious optimism",
+    "Canada is adding 200,000 permanent resident spots. Here’s how it will work",
+    "Costco’s secret: A Canadian expansion is coming — and this Quebec executive is leading the charge"
+   ],
+   "u": [
+    "",
+    "https://www.thestar.com/news/investigations/an-ontario-teen-lived-in-this-shed-while-under-the-watch-of-children-s-aid-everybody-knew-nobody-cared/article_c4721729-807b-4552-b79e-64d0d75e1b38.html",
+    "https://www.thestar.com/news/canada/canada-s-new-immigration-targets-who-benefits-and-who-loses-out/article_bd8d9255-5a0a-4b42-84aa-d93ccc590aa4.html",
+    "https://www.thestar.com/news/canada/carney-is-trying-to-do-what-trudeau-couldn-t-why-his-homelessness-plan-is-being-met-with-cautious-optimism/article_19aebbf2-572c-4649-b592-60962ed50e07.html",
+    "https://www.thestar.com/news/canada/canada-is-adding-200-000-permanent-resident-spots-here-s-how-it-will-work/article_27ca8f45-b5ed-4b5d-987c-12c05bd68652.html",
+    "https://www.thestar.com/business/the-canadian-inside-costco/article_24f19f05-b477-4fff-b6b1-d8cd73893533.html"
+   ]
+  },
+  {
    "o": "National Post",
    "ca": true,
    "h": [
@@ -3654,7 +3641,7 @@
     "Killing of six people in Krakow square 'constitutes terrorist offence', says Polish prosecutor",
     "How the deadly shooting in Krakow unfolded",
     "The Trump coalition is shattered - what will Republicans do now?",
-    "King leads two-minute silence at Remembrance Sunday service as Burnham lays wreath",
+    "Thousands of veterans march past Cenotaph on Remembrance Sunday after King leads two-minute silence",
     "'Flat', 'tired', 'cynical': Unusually gloomy Kiwis deliver New Zealand's tightest election in years",
     "'Dana, please take the job!' - Trump asks UFC boss to be White House press secretary"
    ],
@@ -3694,17 +3681,17 @@
     "NPR - Breaking News, Analysis, Music, Arts & Podcasts",
     "How Gen Z voters helped fuel a blue wave for Democrats",
     "The economy propelled Democrats to victory. What can they actually do about it?",
-    "A promising new medicine against heart disease fails unexpectedly",
+    "Israel's president taps opposition candidate, not Netanyahu, to form a government",
     "Democrats plan to widen their probes of fatal ICE shootings",
-    "No one knows how many ballots are outstanding in Mississippi's Senate race"
+    "A promising new medicine against heart disease fails unexpectedly"
    ],
    "u": [
     "",
     "https://www.npr.org/2026/11/08/nx-s1-6032829/gen-z-voters-midterm-elections",
     "https://www.npr.org/2026/11/06/nx-s1-6026662/the-economy-propelled-democrats-to-victory-what-can-they-actually-do-about-it",
-    "https://www.npr.org/2026/11/07/nx-s1-6026379/lpa-drug-lipoproteina-heart-attack",
+    "https://www.npr.org/2026/11/07/g-s1-152536/netanyahu-israel-government-eisenkot-herzog",
     "https://www.npr.org/2026/11/07/nx-s1-6029659/democrats-investigate-fatal-ice-shootings",
-    "https://www.npr.org/2026/11/06/nx-s1-6030645/mississippi-senate-results-provisional-ballots"
+    "https://www.npr.org/2026/11/07/nx-s1-6026379/lpa-drug-lipoproteina-heart-attack"
    ]
   }
  ],
@@ -3717,7 +3704,7 @@
     "url": "https://www.youtube.com/watch?v=XtLl_wi6H3A",
     "img": "https://i.ytimg.com/vi/XtLl_wi6H3A/hqdefault.jpg",
     "story": "Middle East latest, Trump White House updates, Melania Trump visits LS",
-    "watching": "274",
+    "watching": "289",
     "also": [
      {
       "net": "The White House live",
@@ -3791,7 +3778,7 @@
     "url": "https://www.youtube.com/watch?v=acWUVnnpoeg",
     "img": "https://i.ytimg.com/vi/acWUVnnpoeg/hqdefault.jpg",
     "story": "King Charles leads Remembrance Sunday service",
-    "watching": "3K"
+    "watching": "3.1K"
    }
   ],
   "upcoming": [
@@ -3844,8 +3831,8 @@
     "url": "https://www.youtube.com/watch?v=C96oohpWBGw"
    },
    {
-    "net": "FRANCE 24 English",
-    "url": "https://www.youtube.com/watch?v=HvZt-nh9sGg"
+    "net": "euronews",
+    "url": "https://www.youtube.com/watch?v=pykpO5kQJ98"
    }
   ]
  },
@@ -4058,24 +4045,6 @@
    ],
    "official": [],
    "views": []
-  },
-  "https://www.cbsnews.com/news/ukraine-russia-war-strike-power/": {
-   "story": "More than 600,000 left with no power in Ukraine after strikes, authorities say",
-   "us": false,
-   "specific": 1,
-   "stories": [
-    {
-     "t": "Fri 5:11 p.m.",
-     "iso": "2026-11-06T22:11:41+00:00",
-     "outlet": "CBC News",
-     "title": "Canada's foreign minister urges G7 to turn up heat on Putin after deadly Ukraine strike",
-     "url": "https://www.cbc.ca/news/politics/anand-ukraine-russia-war-civilian-deaths-9.7412923?cmp=rss",
-     "ca": true,
-     "tie": ""
-    }
-   ],
-   "official": [],
-   "views": []
   }
  },
  "bds": [
@@ -4086,20 +4055,13 @@
    "status": "Developing",
    "at": "2026-11-08T08:07:07+00:00",
    "exact": true,
-   "img": "live/img/auto-d2c3b619-66f6f13d5d.jpg",
-   "credit": "via Toronto Star",
+   "img": "live/img/auto-d2c3b619-7206ffe4f6.jpg",
+   "credit": "via CBC News",
    "pic": "globe",
-   "h": "Staff at the US center for AI safety are reporting to the White House, raising independence concerns",
-   "lede": "SAN FRANCISCO (AP) — With public anxiety growing over mounting reports about out-of-control artificial intelligence agents, the tiny U.S. government division charged with assessing the safety of new AI offerings",
-   "newl": "Now carried by 7 independent newsrooms.",
+   "h": "UFC boss Dana White says he's meeting with Trump after press secretary job offer",
+   "lede": "U.S. President Donald Trump said Saturday that he has offered the job of White House press secretary to his friend and UFC boss Dana White, an announcement unconventional even for the norm-busting president. White said Saturday that he plans to meet with Trump on Monday at the White House.",
+   "newl": "Now carried by 8 independent newsrooms.",
    "rows": [
-    [
-     "Toronto Star",
-     "SAN FRANCISCO (AP) — With public anxiety growing over mounting reports about out-of-control artificial intelligence agents, the tiny U.S. government division charged with assessing the safety of new AI offerings",
-     [
-      1
-     ]
-    ],
     [
      "Euronews",
      "Trump and White have forged a close relationship over the years, with Trump a regular attendee at UFC events and White having spoken at a number of the president's rallies.",
@@ -4133,6 +4095,13 @@
      "It was unclear how genuine the president's offer was, although White later said he would travel to Washington for them to meet.",
      [
       6
+     ]
+    ],
+    [
+     "CTV News",
+     "U.S. President Donald Trump said Saturday he was offering a press secretary role to mixed martial arts executive and “violent fighter” Dana White.",
+     [
+      7
      ]
     ]
    ],
@@ -4208,7 +4177,7 @@
      "https://montreal.citynews.ca/2026/11/07/trump-says-hes-asked-ufcs-dana-white-to-be-his-press-secretary-no-one-will-say-if-hes-joking/"
     ]
    ],
-   "lead": 1
+   "lead": 5
   }
  ],
  "geo": {
