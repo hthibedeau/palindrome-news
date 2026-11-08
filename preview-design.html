@@ -1783,12 +1783,7 @@ header.site { border-bottom: 0; }
       <aside class="watch" aria-label="What to watch">
         <h3>Coming up</h3>
         <ol>
-          <li data-until="2026-10-27T23:59:00-04:00"><span class="when">Oct. 27</span><span class="what"><b><a class="card-link" href="https://www.cbsnews.com/news/trump-endorses-israel-prime-minister-benjamin-netanyahu-reelection/" target="_blank" rel="noopener">Israel votes</a></b><span>Netanyahu, now endorsed by Trump, faces a tight race.</span></span></li>
-          <li data-until="2026-10-29T23:59:00-04:00"><span class="when">Oct. 29</span><span class="what"><b><a class="card-link" href="https://www.elections.ab.ca/resources/media/news-releases/2026-10-19-2/" target="_blank" rel="noopener">Alberta referendum: official results</a></b><span>Elections Alberta says the official results of the Oct. 19 vote come on Oct. 29.</span></span></li>
-          <li data-until="2026-10-30T23:59:00-04:00"><span class="when">Oct. 30</span><span class="what"><b><a class="card-link" href="https://www.bnnbloomberg.ca/tariffs/2026/10/23/trump-to-remove-50-tariffs-on-some-canadian-goods-heres-what-we-know/" target="_blank" rel="noopener">New U.S. tariff list for Canadian goods</a></b><span>The White House’s reshuffled list of Canadian goods under the 50 per cent tariff takes effect, BNN Bloomberg reports.</span></span></li>
-          <li data-until="2026-11-04T06:00:00-05:00"><span class="when">Nov. 3</span><span class="what"><b><a class="card-link" href="https://www.axios.com/2026/10/18/trump-approval-polls-maga-gop-midterms-2026" target="_blank" rel="noopener">U.S. midterms</a></b><span>Control of Congress, and with it Trump’s room to act on trade and Canada.</span></span></li>
-          <li data-until="2026-11-05T23:59:00-05:00"><span class="when">Nov. 5</span><span class="what"><b><a class="card-link" href="https://www.cbc.ca/news/politics/liberal-government-budget-2026-9.7388623" target="_blank" rel="noopener">Federal budget</a></b><span>Finance Minister François-Philippe Champagne tables Prime Minister Mark Carney’s second budget, two days after the U.S. midterms.</span></span></li>
-          <li data-until="2026-11-30T23:59:00-05:00"><span class="when">November</span><span class="what"><b><a class="card-link" href="https://www.ctvnews.ca/politics/article/immigration-minister-says-immigration-levels-will-be-going-up-heres-what-that-means/" target="_blank" rel="noopener">Immigration levels plan</a></b><span>The minister has signalled the targets will rise.</span></span></li>
+          <li data-until="2026-11-30T23:59:00-05:00" data-start="2026-11-28"><span class="when">November</span><span class="what"><b><a class="card-link" href="https://immigration.ca/?p=333749" target="_blank" rel="noopener">Immigration levels plan in full</a></b><span>The budget held targets at 380,000 permanent residents and 370,000 new temporary residents a year to 2029; the details come with the minister’s annual report to Parliament.</span></span></li>
         </ol>
       </aside>
     </div>
@@ -3771,6 +3766,107 @@ header.site { border-bottom: 0; }
   window.PAL_renderFronts = renderFronts;
   // What to watch: an item disappears by itself once its date has passed (data-until), so nothing old stays up
   document.querySelectorAll('aside.watch li[data-until]').forEach((x) => { if (Date.now() > Date.parse(x.dataset.until)) x.hidden = true; });
+  // What to watch, Hannah, Sun Nov 8, 2026: "is there nothing more in November and December you can add in? ... this
+  // November 11th is Remembrance Day. That should be in there. Write it in the code."
+  // The list now fills itself from two calendars, on top of the hand-written items above:
+  //   AHEAD_ANNUAL — dates that come back every year (Remembrance Day ...), worked out for the current year by the page;
+  //   AHEAD_DATED  — scheduled events with a fixed date (rate decisions, Statistics Canada releases, summits, by-elections,
+  //                  the House calendar). Add new ones here the moment they are announced, each linked to its source.
+  // An item shows from `show` days before it starts (default AHEAD_DAYS) and drops off by itself after its last day.
+  // On its day it reads "Today", the day before "Tomorrow". Everything is sorted by date with the hand-written items.
+  // tools/freshness_check.py warns when AHEAD_DATED runs out of dates more than 45 days ahead.
+  const AHEAD_DAYS = 60;
+  const AHEAD_ANNUAL = [
+    { m: 11, d: 11, show: 30, title: 'Remembrance Day', url: 'https://legion.ca/remembrance/remembrance-day/the-national-ceremony',
+      note: 'The Royal Canadian Legion’s National Remembrance Day Ceremony at the National War Memorial in Ottawa, 10:30 a.m. ET, with two minutes of silence at 11 a.m. Ceremonies at cenotaphs across Canada.' },
+    { m: 12, d: 6, title: 'National Day of Remembrance and Action on Violence Against Women', url: 'https://www.canada.ca/en/women-gender-equality/commemorations-celebrations/16-days/national-day-remembrance.html',
+      note: 'Marks the murder of 14 women at Polytechnique Montréal on Dec. 6, 1989.', since: 1989 },
+    { m: 9, d: 30, title: 'National Day for Truth and Reconciliation', url: 'https://www.canada.ca/en/canadian-heritage/campaigns/national-day-truth-reconciliation.html',
+      note: 'Honours the lost children and survivors of residential schools, their families and communities.' }
+  ];
+  const AHEAD_DATED = [
+    { start: '2026-11-09', end: '2026-11-20', title: 'COP31 climate summit', url: 'https://www.unccd.int/index.php/events/other/2026-un-climate-change-conference-cop31',
+      note: 'The UN climate conference in Antalya, Türkiye. World leaders meet Nov. 11–12.' },
+    { start: '2026-11-16', title: 'MPs back in the House of Commons', url: 'https://www.ourcommons.ca/en/sitting-calendar',
+      note: 'The House returns from a week-long break, with the budget still before it.' },
+    { start: '2026-11-16', title: 'Inflation for October', url: 'https://www150.statcan.gc.ca/n1/release-diffusion/2026-eng.pdf',
+      note: 'Statistics Canada’s consumer price index, 8:30 a.m. ET.' },
+    { start: '2026-11-17', end: '2026-11-19', title: 'APEC leaders in Shenzhen', url: 'https://www.sz.gov.cn/en_szgov/news/infocus/APEC2026/News/content/post_12977146.html',
+      note: 'The CEO Summit opens Nov. 17; Asia-Pacific leaders meet Nov. 18–19 in China.' },
+    { start: '2026-11-30', title: 'Economy: third-quarter GDP', url: 'https://www150.statcan.gc.ca/n1/release-diffusion/2026-eng.pdf',
+      note: 'Statistics Canada’s first full read on the economy from July to September.' },
+    { start: '2026-12-04', title: 'Jobs for November', url: 'https://www150.statcan.gc.ca/n1/release-diffusion/2026-eng.pdf',
+      note: 'Statistics Canada’s Labour Force Survey.' },
+    { start: '2026-12-07', title: 'Six federal byelections', url: 'https://www.pm.gc.ca/en/news/news-releases/2026/11/01/prime-minister-carney-announces-elections',
+      note: 'Brantford—Brant South and Scarborough North in Ontario, three Quebec ridings including Laurier—Sainte-Marie, and one in Saskatchewan.' },
+    { start: '2026-12-09', title: 'Bank of Canada rate decision', url: 'https://www.bankofcanada.ca/2025/08/bank-canada-publishes-2026-schedule-policy-interest-rate-announcements-other-major-publications/',
+      note: 'The last interest rate announcement of the year, 9:45 a.m. ET.' },
+    { start: '2026-12-09', title: 'U.S. Federal Reserve rate decision', url: 'https://www.federalreserve.gov/newsevents/2026-december.htm',
+      note: 'Decision at 2 p.m. ET, with new economic projections and a news conference.' },
+    { start: '2026-12-11', end: '2026-12-12', title: 'Modi expected in Canada', url: 'https://theprint.in/diplomacy/modi-canada-visit-dates-being-finalised-mea-says-after-indian-high-commission-in-ottawa-said-11-12-dec/3074112/',
+      note: 'India’s High Commission says Toronto and Ottawa on these dates; New Delhi says they are still being finalised. A trade deal (CEPA) is on the agenda.' },
+    { start: '2026-12-14', title: 'Inflation for November', url: 'https://www150.statcan.gc.ca/n1/release-diffusion/2026-eng.pdf',
+      note: 'Statistics Canada’s consumer price index, 8:30 a.m. ET.' },
+    { start: '2026-12-14', end: '2026-12-15', title: 'G20 summit near Miami', url: 'https://www.cityofdoral.com/Elected-officials/Christi-Fraga/Doral-at-the-Center-of-G20',
+      note: 'Trump hosts G20 leaders at his Doral resort in Florida.' },
+    { start: '2026-12-16', title: 'Last House sitting of 2026', url: 'https://www.ourcommons.ca/en/sitting-calendar',
+      note: 'The final day on the House of Commons calendar before the holiday break.' },
+    { start: '2027-01-27', title: 'Bank of Canada rate decision', url: 'https://www.bankofcanada.ca/press/upcoming-events/',
+      note: 'The first interest rate announcement of 2027, with the Monetary Policy Report, 9:45 a.m. ET.' }
+  ];
+  (function aheadCalendar() {
+    const list = document.querySelector('aside.watch ol');
+    if (!list) return;
+    const MON = ['Jan.', 'Feb.', 'March', 'April', 'May', 'June', 'July', 'Aug.', 'Sept.', 'Oct.', 'Nov.', 'Dec.'];
+    const pad = (n) => String(n).padStart(2, '0');
+    // Eastern offset for a date: daylight time from the second Sunday in March to the first Sunday in November
+    const etOff = (y, m, d) => {
+      const nth = (mon, k) => { const f = new Date(Date.UTC(y, mon - 1, 1)).getUTCDay(); return 1 + ((7 - f) % 7) + 7 * (k - 1); };
+      const v = m * 100 + d;
+      return (v >= 300 + nth(3, 2) && v < 1100 + nth(11, 1)) ? '-04:00' : '-05:00';
+    };
+    const at = (iso, end) => { const [y, m, d] = iso.split('-').map(Number); return Date.parse(iso + (end ? 'T23:59:00' : 'T00:00:00') + etOff(y, m, d)); };
+    const nowET = new Date(Date.now() + (Number(etOff(new Date().getUTCFullYear(), new Date().getUTCMonth() + 1, new Date().getUTCDate()).slice(0, 3)) * 3600000));
+    const todayISO = nowET.getUTCFullYear() + '-' + pad(nowET.getUTCMonth() + 1) + '-' + pad(nowET.getUTCDate());
+    const tmr = new Date(nowET.getTime() + 86400000);
+    const tomorrowISO = tmr.getUTCFullYear() + '-' + pad(tmr.getUTCMonth() + 1) + '-' + pad(tmr.getUTCDate());
+    const label = (s, e) => {
+      if (s === todayISO && (!e || e === s)) return 'Today';
+      if (s === tomorrowISO && (!e || e === s)) return 'Tomorrow';
+      const [, sm, sd] = s.split('-').map(Number);
+      if (!e || e === s) return MON[sm - 1] + ' ' + sd;
+      const [, em, ed] = e.split('-').map(Number);
+      if (s <= todayISO) return 'Now, to ' + MON[em - 1] + ' ' + ed;
+      return sm === em ? MON[sm - 1] + ' ' + sd + '–' + ed : MON[sm - 1] + ' ' + sd + '–' + MON[em - 1] + ' ' + ed;
+    };
+    const items = AHEAD_DATED.slice();
+    const y0 = nowET.getUTCFullYear();
+    [y0, y0 + 1].forEach((y) => AHEAD_ANNUAL.forEach((a) => {
+      const iso = y + '-' + pad(a.m) + '-' + pad(a.d);
+      items.push(Object.assign({}, a, { start: iso, note: a.since ? a.note + ' That was ' + (y - a.since) + ' years ago.' : a.note }));
+    }));
+    const esc = (t) => String(t).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+    const have = Array.from(list.querySelectorAll('li b')).map((b) => b.textContent.trim().toLowerCase());
+    const now = Date.now();
+    items.forEach((it) => {
+      const until = at(it.end || it.start, true), from = at(it.start) - (it.show || AHEAD_DAYS) * 86400000;
+      if (now > until || now < from) return;
+      if (have.some((h) => h.includes(it.title.toLowerCase()) || it.title.toLowerCase().includes(h))) return;
+      const li = document.createElement('li');
+      li.dataset.until = new Date(until).toISOString();
+      li.dataset.start = it.start;
+      li.dataset.cal = '1';
+      li.innerHTML = '<span class="when">' + esc(label(it.start, it.end)) + '</span><span class="what"><b><a class="card-link" href="' + esc(it.url) +
+        '" target="_blank" rel="noopener">' + esc(it.title) + '</a></b><span>' + esc(it.note) + '</span></span>';
+      list.appendChild(li);
+    });
+    // passed items drop off; everything sorted by its start date (hand-written items by data-start, else their last day)
+    const key = (li) => li.dataset.start ? at(li.dataset.start) : Date.parse(li.dataset.until || '') || 0;
+    Array.from(list.children).sort((a, b) => key(a) - key(b)).forEach((li) => {
+      if (li.dataset.until && now > Date.parse(li.dataset.until)) li.hidden = true;
+      list.appendChild(li);
+    });
+  })();
   // Hannah: "Canada stories need to come after the top two breaking and developing stories all the time".
   // The Canada desk is moved out of the section fronts to sit right after the Breaking/Developing stories in the top
   // slot (before Live coverage and everything else), whatever those stories are.
