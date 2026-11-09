@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-09T07:08:21.031791+00:00",
- "checkedLabel": "Mon 2:08 a.m.",
+ "checked": "2026-11-09T07:18:21.207872+00:00",
+ "checkedLabel": "Mon 2:18 a.m.",
  "stories": [
   {
    "key": "top",
@@ -38,22 +38,22 @@
  ],
  "wire": [
   [
+   "Mon 2:17 a.m.",
+   "Latest",
+   "Gunman who carried out Poland mass shooting has died, police say",
+   "CBS News",
+   "https://www.cbsnews.com/news/poland-mourns-krakow-mass-shooting-victims-terrorism-probe/",
+   "2026-11-09T07:17:59+00:00",
+   3
+  ],
+  [
    "Mon 2:06 a.m.",
    "World",
    "Krakow shooting suspect has died in hospital, police say",
    "BBC News",
    "https://www.bbc.co.uk/news/articles/c6y434dw8319o?at_medium=RSS&at_campaign=rss",
    "2026-11-09T07:06:58+00:00",
-   6
-  ],
-  [
-   "Mon 2:04 a.m.",
-   "Latest",
-   "Gunman who carried out Poland mass shooting has died, police say",
-   "CBS News",
-   "https://www.cbsnews.com/news/poland-mourns-krakow-mass-shooting-victims-terrorism-probe/",
-   "2026-11-09T07:04:41+00:00",
-   2
+   5
   ],
   [
    "Mon 2:00 a.m.",
@@ -71,6 +71,15 @@
    "The Canadian Press (via Winnipeg Free Press)",
    "https://www.winnipegfreepress.com/arts-and-life/2026/11/09/interesting-choice-of-words",
    "2026-11-09T07:00:11+00:00",
+   1
+  ],
+  [
+   "Mon 2:00 a.m.",
+   "World",
+   "‘It’s a feeling of being screwed over’: once-quiet village despairs over ‘monster’ warehouse",
+   "The Guardian",
+   "https://www.theguardian.com/uk-news/2026/nov/09/astley-village-despair-monster-warehouse-inquiry",
+   "2026-11-09T07:00:03+00:00",
    1
   ],
   [
@@ -252,15 +261,6 @@
    "https://www.thestar.com/news/world/united-states/a-utah-judge-is-expected-to-set-a-trial-date-in-charlie-kirk-s-killing/article_248416b3-e1a9-55ef-af2c-f76aff96c496.html",
    "2026-11-09T05:04:43+00:00",
    1
-  ],
-  [
-   "Mon 12:04 a.m.",
-   "World",
-   "He fought France's far right for half a century. Now Melenchon's presidential bid may hand it power",
-   "Toronto Star",
-   "https://www.thestar.com/news/world/europe/he-fought-france-s-far-right-for-half-a-century-now-melenchon-s-presidential-bid-may-hand-it-power/article_bdf87f08-6f00-5a2a-82c4-f8e2817990c8.html",
-   "2026-11-09T05:04:41+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -295,7 +295,7 @@
    "score": 23,
    "title": "Trump’s choice of Stephen Miller as Chief of Staff is making the Democrats’ great week, even better.",
    "url": "https://bruce728.substack.com/p/trumps-choice-of-stephen-miller-as",
-   "outlets": 25,
+   "outlets": 26,
    "why": [
     "National Newswatch #7",
     "CBC News front #1"
@@ -324,10 +324,10 @@
    "theme": "Canada and the U.S."
   },
   {
-   "score": 13,
+   "score": 14,
    "title": "Poilievre pans Liberal budget's $15M capital gains exemption, calls for 'simpler' plan",
    "url": "https://www.cbc.ca/news/politics/poilievre-capital-gains-exemption-budget-2026-9.7413640",
-   "outlets": 2,
+   "outlets": 3,
    "why": [
     "National Newswatch #3",
     "National Newswatch #4",
@@ -335,14 +335,6 @@
     "National Newswatch #10"
    ],
    "theme": "Federal budget"
-  },
-  {
-   "score": 11,
-   "title": "Krakow shooting suspect has died in hospital, police say",
-   "url": "https://www.bbc.co.uk/news/articles/c6y434dw8319o?at_medium=RSS&at_campaign=rss",
-   "outlets": 9,
-   "why": [],
-   "theme": ""
   },
   {
    "score": 11,
@@ -357,6 +349,14 @@
    "title": "Trump and U.S. Justice Department stand defiant as Democrats ready an investigative blitz",
    "url": "https://www.ctvnews.ca/world/article/trump-and-us-justice-department-stand-defiant-as-democrats-ready-an-investigative-blitz/",
    "outlets": 11,
+   "why": [],
+   "theme": ""
+  },
+  {
+   "score": 9,
+   "title": "Krakow shooting suspect has died in hospital, police say",
+   "url": "https://www.bbc.co.uk/news/articles/c6y434dw8319o?at_medium=RSS&at_campaign=rss",
+   "outlets": 7,
    "why": [],
    "theme": ""
   },
@@ -406,7 +406,7 @@
     "words": [
      "krakow"
     ],
-    "score": 11,
+    "score": 9,
     "outlets": 4,
     "carriers": 5,
     "tag": "Breaking",
@@ -603,13 +603,21 @@
     ],
     "judgment": "national",
     "judgment_why": "National: affects many people; carried beyond one city.",
-    "weight": 31.5,
+    "weight": 29.5,
     "videos": [
      {
-      "net": "NBC News",
-      "url": "https://www.youtube.com/watch?v=Joh-vTVKJRg",
-      "title": "6 killed, 15 injured in shooting at main market square of Krakow, Poland",
-      "img": "https://i.ytimg.com/vi/Joh-vTVKJRg/hqdefault.jpg",
+      "net": "euronews",
+      "url": "https://www.youtube.com/watch?v=HX7sv42jANs",
+      "title": "Poland in shock after deadly Krakow attack, Ukraine peace talks in UAE | Europe Today #206",
+      "img": "https://i.ytimg.com/vi/HX7sv42jANs/hqdefault.jpg",
+      "rec": true,
+      "up": ""
+     },
+     {
+      "net": "Global News",
+      "url": "https://www.youtube.com/watch?v=vLFhLiMrAZw",
+      "title": "At least 6 killed in shooting in Polish city of Krakow, police say",
+      "img": "https://i.ytimg.com/vi/vLFhLiMrAZw/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
@@ -622,18 +630,10 @@
       "up": ""
      },
      {
-      "net": "BBC News",
-      "url": "https://www.youtube.com/watch?v=-1h0A8X10Ic",
-      "title": "Five killed and dozen more injured in Krakow shooting, police say | BBC News",
-      "img": "https://i.ytimg.com/vi/-1h0A8X10Ic/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "Bloomberg",
-      "url": "https://www.youtube.com/watch?v=_VQIVPgzkWU",
-      "title": "Poland Probes Krakow Shooting as Terrorism",
-      "img": "https://i.ytimg.com/vi/_VQIVPgzkWU/hqdefault.jpg",
+      "net": "NBC News",
+      "url": "https://www.youtube.com/watch?v=Joh-vTVKJRg",
+      "title": "6 killed, 15 injured in shooting at main market square of Krakow, Poland",
+      "img": "https://i.ytimg.com/vi/Joh-vTVKJRg/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -860,8 +860,8 @@
     "url": "https://www.timescolonist.com/world-news/police-say-the-24-year-old-who-fatally-shot-6-people-in-a-krakow-square-has-died-in-the-hospital-12994740",
     "rank": 1,
     "live": "",
-    "weight": 31.5,
-    "score": 11,
+    "weight": 29.5,
+    "score": 9,
     "independent": 4,
     "most_read": 0,
     "canada": "tie",
@@ -969,9 +969,9 @@
     "url": "https://www.ctvnews.ca/calgary/article/premier-praises-federal-budget-for-major-project-development-proposed-tax-changes/",
     "rank": 6,
     "live": "",
-    "weight": 20.0,
-    "score": 13,
-    "independent": 2,
+    "weight": 22.5,
+    "score": 14,
+    "independent": 3,
     "most_read": 0,
     "canada": "none",
     "theme": "Federal budget",
@@ -979,7 +979,7 @@
     "fronts": 0,
     "fronts_who": [],
     "rule": "No Canadian tie",
-    "carriers": 2,
+    "carriers": 3,
     "judgment": "national",
     "why_judged": "National: affects many people; carried beyond one city."
    },
@@ -1206,7 +1206,7 @@
    "id": "VKmBv1FZvfc",
    "r": "ca",
    "o": "Global News",
-   "t": "One person killed after tree falls on 2 cars after another major BC storm",
+   "t": "Deadly storm with high winds downs trees in BC, killing 1",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=VKmBv1FZvfc",
@@ -1220,7 +1220,7 @@
    "id": "vkMGD3idaXw",
    "r": "ca",
    "o": "Global News",
-   "t": "Global National: Nov. 8, 2026 | Funeral service held for Pte. Goulding, killed in Wainwright fire",
+   "t": "Global National: Nov. 8, 2026 | CFB Wainwright victim Pte. Aidan Goulding laid to rest in Vancouver",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=vkMGD3idaXw",
@@ -1234,7 +1234,7 @@
    "id": "KbBoWZXYW2M",
    "r": "us",
    "o": "CNN",
-   "t": "Blanche: Dems should be ‘very worried’ about Trump's threat",
+   "t": "Blanche: Dems should be ‘very worried’ after Trump ordered DOJ probe",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=KbBoWZXYW2M",
@@ -1323,7 +1323,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=XEVqm_4Dyqc",
    "img": "https://i.ytimg.com/vi/XEVqm_4Dyqc/hqdefault.jpg",
-   "up": "2026-11-09",
+   "up": "2026-11-08",
    "added": "2026-11-09T04:13:56.556762+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1337,7 +1337,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=hiVNNLoIGzs",
    "img": "https://i.ytimg.com/vi/hiVNNLoIGzs/hqdefault.jpg",
-   "up": "2026-11-09",
+   "up": "2026-11-08",
    "added": "2026-11-09T04:23:56.592070+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1511,20 +1511,6 @@
    "geo": "unknown"
   },
   {
-   "id": "xPqkxkiYGMo",
-   "r": "world",
-   "o": "Reuters",
-   "t": "'Sorely needed': Israelis hope for change as Eisenkot to form government",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=xPqkxkiYGMo",
-   "img": "https://i.ytimg.com/vi/xPqkxkiYGMo/hqdefault.jpg",
-   "up": "2026-11-08",
-   "added": "2026-11-09T03:49:41.193693+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "DXCWxTmEAOE",
    "r": "world",
    "o": "BBC News",
@@ -1591,6 +1577,20 @@
    "img": "https://i.ytimg.com/vi/uOOMWRwOvHo/hqdefault.jpg",
    "up": "2026-11-09",
    "added": "2026-11-09T07:02:01.061410+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "QgGUHJx2IxI",
+   "r": "world",
+   "o": "Reuters",
+   "t": "Central American migrants cheer Trump's midterm losses",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=QgGUHJx2IxI",
+   "img": "https://i.ytimg.com/vi/QgGUHJx2IxI/hqdefault.jpg",
+   "up": "2026-11-09",
+   "added": "2026-11-09T07:18:21.207872+00:00",
    "pic": "globe",
    "geo": "unknown"
   }
@@ -1983,10 +1983,11 @@
   "edition": "Monday morning, November 9",
   "lines": [
    "Good morning. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
+   "Conservative Leader Pierre Poilievre is criticizing a key feature of the Carney government’s latest budget, arguing the proposed $15-million capital gains exemption on the sale of qualifying shares from a Canadian company applies too narrowly, excluding key businesses, CBC News reports.",
    "The 24-year-old who opened fire in a city square in Poland, killing six people and wounding 15 on Saturday, died in the hospital Monday morning, police said.",
    "For the Canadian Armed Forces veteran and Royal Canadian Legion Branch 101 president, remembering that service is also an opportunity to honour his Métis heritage, The Canadian Press reports.",
    "Trump says he was just kidding about making UFC’s Dana White his press secretary, The Associated Press reports.",
-   "President Donald Trump called Jensen Huang a “fine person” and said he should stay on as the chief executive officer of Nvidia Corp. after the executive admitted having an affair, AFP reports.",
+   "Nvidia announced Sunday it is launching an independent investigation into its chief executive and founder, Jensen Huang, over concerns he was the “target of a foreign intelligence effort,” The Canadian Press reports.",
    "Pope Leo XIV delivered a diplomatic but subtly strong critique of Argentine President Javier Milei’s austerity measures and libertarian agenda as he arrived Sunday in Argentina, insisting that political leaders must put people, not the economy, first, The Associated Press reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
   ]
@@ -2266,11 +2267,11 @@
    "city": "St. John's",
    "tz": "America/St_Johns",
    "world": false,
-   "w": "Nain",
-   "u": "https://www.cbc.ca/news/canada/newfoundland-labrador/missing-boaters-from-nain-found-safe-by-search-and-rescue-team-9.7414147?cmp=rss",
-   "title": "Missing boaters from Nain found safe by search and rescue team",
-   "outlet": "CBC News",
-   "t": "Sun 10:35 a.m.",
+   "w": "Safe",
+   "u": "https://vocm.com/2026/11/08/316083/",
+   "title": "UPDATE: Two Missing Boaters Located Safe in Labrador",
+   "outlet": "VOCM",
+   "t": "Sun 2:11 p.m.",
    "hot": false
   },
   {
@@ -2333,21 +2334,21 @@
    "tz": "America/New_York",
    "world": false,
    "w": "Midterms",
-   "u": "https://www.japantimes.co.jp/news/2026/11/09/world/politics/g7-allies-trump-midterm-paris/",
-   "title": "G7 allies to assess impact of Trump’s midterm setback at Paris talks",
-   "outlet": "The Japan Times",
-   "t": "Mon 1:24 a.m.",
+   "u": "https://vocm.com/2026/11/09/marco-rubio-defends-trumps-iran-war-after-republicans-lose-control-of-congress/",
+   "title": "Marco Rubio Defends Trump’s Iran War After Republicans Lose Control of Congress",
+   "outlet": "VOCM",
+   "t": "Mon 1:50 a.m.",
    "hot": true
   },
   {
    "city": "Beijing",
    "tz": "Asia/Shanghai",
    "world": true,
-   "w": "Investigation",
-   "u": "https://www.japantimes.co.jp/business/2026/11/09/tech/nvidia-board-spying-ceo-affair/",
-   "title": "Nvidia CEO’s affair engulfs AI giant in Chinese spying probe",
-   "outlet": "The Japan Times",
-   "t": "Mon 1:35 a.m.",
+   "w": "Summit",
+   "u": "https://www.euronews.com/2026/11/09/donald-trump-plans-to-meet-vladimir-putin-and-xi-jinping-in-china-to-discuss-ending-iran-w",
+   "title": "Donald Trump plans to meet Vladimir Putin and Xi Jinping in China to discuss ending Iran war",
+   "outlet": "Euronews",
+   "t": "Mon 2:08 a.m.",
    "hot": true
   },
   {
@@ -2362,10 +2363,10 @@
    "hot": false
   },
   {
-   "city": "Tehran",
-   "tz": "Asia/Tehran",
+   "city": "Kyiv",
+   "tz": "Europe/Kyiv",
    "world": true,
-   "w": "Nuclear",
+   "w": "Midterms",
    "u": "https://www.thestar.com/news/world/europe/rubio-will-discuss-iran-ukraine-ai-and-more-with-g7-allies-in-france/article_1281a83e-9079-5bb7-a37d-617aae8f1324.html",
    "title": "Rubio will discuss Iran, Ukraine, AI and more with G7 allies in France",
    "outlet": "Toronto Star",
@@ -2376,26 +2377,26 @@
  "bigweek": [],
  "desks": [
   {
-   "desk": "us",
-   "pic": "podium",
-   "t": "Mon 1:24 a.m.",
-   "iso": "2026-11-09T06:24:00+00:00",
-   "title": "G7 allies to assess impact of Trump’s midterm setback at Paris talks",
-   "summary": "Diplomats signaled the results could narrow Trump’s room for maneuver but warned against expecting a return to traditional U.S. multilateralism.",
-   "outlet": "The Japan Times, Toronto Star, Al Jazeera, The Guardian, Kyiv Independent, CBC News",
-   "url": "https://www.japantimes.co.jp/news/2026/11/09/world/politics/g7-allies-trump-midterm-paris/",
-   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/09/573002.JPG?v=3.1"
+   "desk": "world",
+   "pic": "globe",
+   "t": "Mon 1:50 a.m.",
+   "iso": "2026-11-09T06:50:30+00:00",
+   "title": "Marco Rubio Defends Trump’s Iran War After Republicans Lose Control of Congress",
+   "summary": "",
+   "outlet": "VOCM, The Japan Times, Toronto Star, Al Jazeera, The Guardian, Kyiv Independent",
+   "url": "https://vocm.com/2026/11/09/marco-rubio-defends-trumps-iran-war-after-republicans-lose-control-of-congress/",
+   "img": ""
   },
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Mon 1:35 a.m.",
-   "iso": "2026-11-09T06:35:00+00:00",
-   "title": "Nvidia CEO’s affair engulfs AI giant in Chinese spying probe",
-   "summary": "In a memo to employees, Jensen Huang left no doubt that the chip colossus was embroiled in a crisis like none before in its three-decade history.",
-   "outlet": "The Japan Times, Euronews, CBS News, CBC News, BBC News, Toronto Sun",
-   "url": "https://www.japantimes.co.jp/business/2026/11/09/tech/nvidia-board-spying-ceo-affair/",
-   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/09/572922.jpg?v=3.1"
+   "t": "Mon 2:08 a.m.",
+   "iso": "2026-11-09T07:08:26+00:00",
+   "title": "Donald Trump plans to meet Vladimir Putin and Xi Jinping in China to discuss ending Iran war",
+   "summary": "US President Donald Trump said he would possibly meet with Vladimir Putin and Xi Jinping in China to discuss \"denuclearisation\" and how to end the Iran war.",
+   "outlet": "Euronews, The Japan Times, CBS News, The Hill, CBC News, BBC News",
+   "url": "https://www.euronews.com/2026/11/09/donald-trump-plans-to-meet-vladimir-putin-and-xi-jinping-in-china-to-discuss-ending-iran-w",
+   "img": "https://images.euronews.com/articles/stories/09/98/49/38/1200x675_cmsv2_74fe1d88-f105-5d3a-9497-6d747bdc1997-9984938.jpg"
   },
   {
    "desk": "us",
@@ -2407,17 +2408,6 @@
    "outlet": "CTV News, CP24, PBS NewsHour, CityNews Winnipeg, CityNews Vancouver, CityNews Ottawa",
    "url": "https://www.ctvnews.ca/world/article/trump-and-us-justice-department-stand-defiant-as-democrats-ready-an-investigative-blitz/",
    "img": "https://www.ctvnews.ca/resizer/v2/QSPQIY7CU67LEY64TLNCQA6NKU.jpg?smart=true&auth=01e5291c7eccd8abd005ce4500072ffb1942b9ca20d91b03bb0ed52e99837714&width=1200&height=630"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Mon 2:06 a.m.",
-   "iso": "2026-11-09T07:06:58+00:00",
-   "title": "Krakow shooting suspect has died in hospital, police say",
-   "summary": "At least six people were killed in the shooting, and three bodies of the suspect's family members were found at their home.",
-   "outlet": "BBC News, CBS News, Euronews, The Guardian, ABC News, Times Colonist",
-   "url": "https://www.bbc.co.uk/news/articles/c6y434dw8319o?at_medium=RSS&at_campaign=rss",
-   "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/b131/live/b7c6ce50-dc06-11f1-b6f4-7b86d13131ad.jpg"
   },
   {
    "desk": "world",
@@ -2497,6 +2487,17 @@
    "img": "https://www.ctvnews.ca/resizer/v2/4XVDFHKUM5GVPN7ZVX62COREKM.png?smart=true&auth=fcd61cf2efbdbf95c84afaac5cc340b7483bf6729510a1c1e06fdc07563d75d2&width=1200&height=630"
   },
   {
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Sun 4:45 p.m.",
+   "iso": "2026-11-08T21:45:49+00:00",
+   "title": "Premier praises federal budget for major project development, proposed tax changes",
+   "summary": "Premier Danielle Smith weighed in on the federal budget Saturday, giving a thumbs-up to the commitment to major project development as well as tax changes that she hopes will spur investment from the private sector.",
+   "outlet": "CTV News, CBC News, VOCM",
+   "url": "https://www.ctvnews.ca/calgary/article/premier-praises-federal-budget-for-major-project-development-proposed-tax-changes/",
+   "img": "https://www.ctvnews.ca/resizer/v2/XYTL6QH43PWFMLPCQDZWDIBXLM.png?smart=true&auth=6b1f47ebf4d8f5622c01858aaae69436740ebc3badc38831e760cc73951c9143&width=1200&height=630"
+  },
+  {
    "desk": "us",
    "pic": "podium",
    "t": "Mon 12:52 a.m.",
@@ -2521,17 +2522,6 @@
   {
    "desk": "politics",
    "pic": "parliament",
-   "t": "Sun 4:45 p.m.",
-   "iso": "2026-11-08T21:45:49+00:00",
-   "title": "Premier praises federal budget for major project development, proposed tax changes",
-   "summary": "Premier Danielle Smith weighed in on the federal budget Saturday, giving a thumbs-up to the commitment to major project development as well as tax changes that she hopes will spur investment from the private sector.",
-   "outlet": "CTV News, CBC News",
-   "url": "https://www.ctvnews.ca/calgary/article/premier-praises-federal-budget-for-major-project-development-proposed-tax-changes/",
-   "img": "https://www.ctvnews.ca/resizer/v2/XYTL6QH43PWFMLPCQDZWDIBXLM.png?smart=true&auth=6b1f47ebf4d8f5622c01858aaae69436740ebc3badc38831e760cc73951c9143&width=1200&height=630"
-  },
-  {
-   "desk": "politics",
-   "pic": "parliament",
    "t": "Sun 4:23 p.m.",
    "iso": "2026-11-08T21:23:58+00:00",
    "title": "Immigration minister ‘deeply shocked’ by 100 cases of alleged fraud",
@@ -2539,6 +2529,17 @@
    "outlet": "CTV News, Global News",
    "url": "https://www.ctvnews.ca/montreal/article/immigration-minister-deeply-shocked-by-100-cases-of-alleged-fraud/",
    "img": "https://www.ctvnews.ca/resizer/v2/UIKXASTJ7VD3PBFEZNAW3MZM5I.JPG?smart=true&auth=4feb73006f99078dcf4a315acf5ef67a9832314e2ceaf868fdb30ec2c1340a2d&width=1200&height=630"
+  },
+  {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Mon 2:07 a.m.",
+   "iso": "2026-11-09T07:07:00+00:00",
+   "title": "Philippine economic slump worsens on Iran war, bad weather",
+   "summary": "The slowdown is raising questions about the central bank’s rate-hike cycle and heaping pressure on President Ferdinand Marcos Jr.",
+   "outlet": "The Japan Times",
+   "url": "https://www.japantimes.co.jp/business/2026/11/09/economy/philippines-economy-iran-war-weather/",
+   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/09/573018.jpg?v=3.1"
   },
   {
    "desk": "us",
@@ -2596,6 +2597,17 @@
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/AFP__20260615__B73N9NQ__v1__MidRes__JapanEconomyStocks-1794187121_2f3992-1794191621.jpg?resize=1200%2C630&quality=80"
   },
   {
+   "desk": "us",
+   "pic": "podium",
+   "t": "Sun 10:56 p.m.",
+   "iso": "2026-11-09T03:56:11+00:00",
+   "title": "Bernie Sanders warns Democrats not to spend all their time investigating Trump",
+   "summary": "Sen. Bernie Sanders warned Democrats not to spend all their time investigating the Trump administration, urging the party to prioritize affordability and working-class families.",
+   "outlet": "Fox News",
+   "url": "https://www.foxnews.com/politics/bernie-sanders-warns-democrats-not-spend-all-time-investigating-trump",
+   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/09/bernie-sanders-trump-split.jpg"
+  },
+  {
    "desk": "business",
    "pic": "chart",
    "t": "Sun 5:46 p.m.",
@@ -2638,17 +2650,6 @@
    "outlet": "Telegraph-Journal",
    "url": "https://tj.news/new-brunswick/national-park-workers-facing-job-cuts-including-in-n-b",
    "img": ""
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Sun 7:45 a.m.",
-   "iso": "2026-11-08T12:45:00+00:00",
-   "title": "Voters demanded economic relief. Trump and Democrats face tough choices on how to deliver",
-   "summary": "WASHINGTON (AP) — Voters have sent a strong election-year message to the new Democratic congressional majority and President Donald Trump: Repair the damage inflation has done to the economy.",
-   "outlet": "Toronto Star",
-   "url": "https://www.thestar.com/news/world/united-states/voters-demanded-economic-relief-trump-and-democrats-face-tough-choices-on-how-to-deliver/article_1d7b1a1d-dbce-5a15-8cfb-2f140f8d70c2.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/1/45/14571beb-c6e9-5400-8804-93abcf8a5e36/6af06ffb09833.image.jpg?crop=1440%2C756%2C0%2C162&resize=1200%2C630&order=crop%2Cresize"
   }
  ],
  "reads": [
@@ -2934,18 +2935,18 @@
    "o": "The Guardian",
    "ca": false,
    "h": [
+    "Business live Nvidia ‘honeytrap’ scandal rocks AI industry as tech stocks recover from slump",
     "Nvidia Nvidia opens investigation after report CEO Jensen Huang was target of foreign intelligence",
     "Israel Gadi Eisenkot reaches out to Netanyahu allies as he strives to form government",
     "Video Israelis and Palestinians react as Eisenkot given mandate to form government",
     "Poland Kraków shooting suspect who killed six has died, say police in Poland",
-    "New Zealand Opportunity party takes aim at populist politics as it prepares to enter parliament",
-    "US Trump tells 60 Minutes that deportation policy was ‘too tough’"
+    "New Zealand Opportunity party takes aim at populist politics as it prepares to enter parliament"
    ],
    "u": [
     "",
+    "https://www.theguardian.com/us-news/2026/nov/08/nvidia-jensen-huang-investigation",
     "",
     "https://www.theguardian.com/world/video/2026/nov/08/israelis-and-palestinians-react-as-eisenkot-given-mandate-to-form-government-video",
-    "",
     "",
     ""
    ]
@@ -2980,7 +2981,7 @@
     "url": "https://www.youtube.com/watch?v=71Eq2VrASig",
     "img": "https://i.ytimg.com/vi/71Eq2VrASig/hqdefault.jpg",
     "story": "Trump returns to White House, Midterm results, Iran war latest, more t",
-    "watching": "227",
+    "watching": "245",
     "also": [
      {
       "net": "The White House live",
@@ -2989,6 +2990,13 @@
      }
     ],
     "reports": [
+     {
+      "outlet": "Euronews",
+      "title": "Donald Trump plans to meet Vladimir Putin and Xi Jinping in China to discuss ending Iran war",
+      "url": "https://www.euronews.com/2026/11/09/donald-trump-plans-to-meet-vladimir-putin-and-xi-jinping-in-china-to-discuss-ending-iran-w",
+      "t": "Mon 2:08 a.m.",
+      "iso": "2026-11-09T07:08:26+00:00"
+     },
      {
       "outlet": "Al Jazeera",
       "title": "A joke or test? Why Trump floated UFC’s Dana White as his press secretary",
@@ -3037,13 +3045,6 @@
       "url": "https://www.theguardian.com/us-news/2026/nov/08/trump-dana-white-press-secretary",
       "t": "Sun 8:10 p.m.",
       "iso": "2026-11-09T01:10:55+00:00"
-     },
-     {
-      "outlet": "CTV News",
-      "title": "Trump says he was just kidding about making UFC's Dana White his press secretary",
-      "url": "https://www.ctvnews.ca/world/article/trump-says-he-was-just-kidding-about-making-ufcs-dana-white-his-press-secretary/",
-      "t": "Sun 7:36 p.m.",
-      "iso": "2026-11-09T00:36:12+00:00"
      }
     ]
    },
@@ -3069,31 +3070,6 @@
       "url": "https://medicinehatnews.com/entertainment/entertainment-news/2026/11/08/russell-brand-facing-significant-prison-term-for-rape-and-sexual-assaults/",
       "t": "Mon 12:06 a.m.",
       "iso": "2026-11-09T05:06:04+00:00"
-     }
-    ]
-   },
-   {
-    "net": "euronews",
-    "r": "world",
-    "title": "LIVE: Poland in shock after deadly Krakow attack, Ukraine peace talks in UAE | Europe Today #206",
-    "url": "https://www.youtube.com/watch?v=HX7sv42jANs",
-    "img": "https://i.ytimg.com/vi/HX7sv42jANs/hqdefault.jpg",
-    "story": "Poland in shock after deadly Krakow attack, Ukraine peace talks in UAE",
-    "watching": "26",
-    "reports": [
-     {
-      "outlet": "CBC News",
-      "title": "Poland in mourning after deadly mass shooting in Krakow",
-      "url": "https://www.cbc.ca/news/world/krakow-shooting-attack-far-right-9.7414042",
-      "t": "Sun 2:11 p.m.",
-      "iso": "2026-11-08T19:11:56.522000+00:00"
-     },
-     {
-      "outlet": "Kyiv Independent",
-      "title": "Europe to participate in Abu Dhabi peace talks, French foreign minister says",
-      "url": "https://kyivindependent.com/europeans-will-participate-in-abu-dhabi-peace-talks-french-foreign-minister-says/",
-      "t": "Sun 9:15 a.m.",
-      "iso": "2026-11-08T14:15:47+00:00"
      }
     ]
    }
@@ -3371,10 +3347,10 @@
      ]
     ],
     [
-     "Toronto Star",
-     "President Donald Trump called Jensen Huang a “fine person” and said he should stay on as the chief executive officer of Nvidia Corp. after the executive admitted having an affair",
+     "Global News",
+     "The board said it has confidence in Jensen Huage and his leadership team, and would provide further updates as appropriate. He will remain as CEO.",
      [
-      6
+      7
      ]
     ]
    ],
@@ -3459,8 +3435,8 @@
    "at": "2026-10-29T02:33:18.869844+00:00"
   },
   "0bLqaqPAt_k": {
-   "v": "unplayable",
-   "at": "2026-11-09T07:08:21.031791+00:00"
+   "v": "ok",
+   "at": "2026-11-09T07:18:21.207872+00:00"
   },
   "0tRhtNBdSb0": {
    "v": "unknown",
@@ -3907,8 +3883,8 @@
    "at": "2026-10-29T02:33:18.869844+00:00"
   },
   "c9v26lW7-j4": {
-   "v": "unplayable",
-   "at": "2026-11-09T07:08:21.031791+00:00"
+   "v": "ok",
+   "at": "2026-11-09T07:18:21.207872+00:00"
   },
   "cXN5OV4NYhI": {
    "v": "unknown",
@@ -4160,9 +4136,15 @@
   }
  },
  "geo_blocked": [
-  "-NabWfv-VdA",
-  "0bLqaqPAt_k",
-  "c9v26lW7-j4"
+  "-NabWfv-VdA"
  ],
- "noembed": []
+ "noembed": [
+  "0bLqaqPAt_k",
+  "J3FV4iY8p5w",
+  "L6qtnHZxwEw",
+  "NuEr0Q_AS6U",
+  "c9v26lW7-j4",
+  "ldElU-Q5Qyo",
+  "t_HBrWb84eY"
+ ]
 }
