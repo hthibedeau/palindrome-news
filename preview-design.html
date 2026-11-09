@@ -7503,7 +7503,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     const b = document.createElement('button'); b.type = 'button'; b.className = 'cr-more';
     const closed = (items.length > 3 ? 'Show all ' + items.length : 'Show all') + ' ▾', opened = 'Show fewer ▴';
     b.textContent = closed;
-    b.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); const on = box.classList.toggle('cr-open'); b.textContent = on ? opened : closed; });
+    b.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); if (e.isTrusted) box.dataset.user = '1'; const on = box.classList.toggle('cr-open'); b.textContent = on ? opened : closed; });
     // the button sits at the top of the list, under its heading (Hannah, Fri Oct 30, 2026: "the show all eight stories
     // and show fewer should be at the top, not at the bottom")
     const head = box.querySelector(':scope > summary'); if (head) head.after(b); else box.prepend(b);
@@ -7568,7 +7568,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
         // 8. the second story, compact
         if (art.classList.contains('ab-second') && !art.querySelector(':scope > .cr-full')) {
           const b = document.createElement('button'); b.type = 'button'; b.className = 'cr-more cr-full'; b.textContent = 'Full story ▾';
-          b.addEventListener('click', (e) => { e.preventDefault(); const on = art.classList.toggle('cr-open'); b.textContent = on ? 'Less ▴' : 'Full story ▾'; });
+          b.addEventListener('click', (e) => { e.preventDefault(); if (e.isTrusted) art.dataset.user = '1'; const on = art.classList.toggle('cr-open'); b.textContent = on ? 'Less ▴' : 'Full story ▾'; });
           art.appendChild(b);
         }
       });
@@ -7616,6 +7616,23 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       if (cs.display === 'none' || e.hidden) return 0;
       return Math.ceil(e.getBoundingClientRect().height + (parseFloat(cs.marginTop) || 0) + (parseFloat(cs.marginBottom) || 0));
     };
+    // NO EMPTY SPACE, Hannah, Sun Nov 8, 2026, on her iPad ("why is there so much empty space. We have worked on this
+    // multiple times now"): the old rule dropped each box into whichever column was shorter at that moment, so the
+    // lead's newsroom list could land on the already-long right side and leave a screen of empty colour under the lead.
+    // Now every way of splitting the other stories and the lead's lower boxes between the two columns is tried (each
+    // column keeps the page order) and the split with the most even bottoms wins. Whatever gap is left is then filled
+    // from the short column's own content: its folded "What each newsroom reports" list or a top story's "Full story"
+    // opens by itself when that brings the two columns closer. A reader's own tap is never undone.
+    const items = kids.filter((e) => e.matches('.ab-second, .ab-lead-more'));
+    const hs = items.map((e) => Math.max(1, tall(e)));
+    const leadH = Math.max(1, tall(lead));
+    let best = null;
+    for (let m = 0; m < (1 << items.length); m++) {
+      let L = leadH, R = 0;
+      items.forEach((e, i) => { if (m & (1 << i)) L += hs[i]; else R += hs[i]; });
+      const gap = Math.abs(L - R) + (R === 0 ? 100000 : 0);  // never leave the right column empty
+      if (!best || gap < best.gap) best = { m, gap };
+    }
     const col = [1, 1];
     const put = (e, c) => {
       const n = Math.max(1, tall(e));
@@ -7625,10 +7642,34 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       col[c] += n;
     };
     put(lead, 0);
-    kids.filter((e) => e.matches('.ab-second, .ab-lead-more')).forEach((e) => {
-      if (e.classList.contains('ab-lead-more') || e.classList.contains('pal-left')) e.classList.remove('pal-left');
-      put(e, col[0] < col[1] ? 0 : 1);
-    });
+    items.forEach((e, i) => { e.classList.remove('pal-left'); put(e, (best.m & (1 << i)) ? 0 : 1); });
+    // fill what is left from the short column itself
+    if (!place.filling) {
+      const shortC = col[0] < col[1] ? 0 : 1, gap = Math.abs(col[0] - col[1]);
+      if (gap > 120) {
+        const inShort = [lead].concat(items).filter((e) => (e.style.gridColumn === String(shortC + 1)));
+        const tries = []; let opened = false;
+        inShort.forEach((e) => {
+          const reps = e.querySelector('.ab-reps.cr-fold:not(.cr-open):not([data-user])');
+          if (reps) tries.push(reps.querySelector(':scope > .cr-more'));
+          if (e.classList.contains('ab-second') && !e.classList.contains('cr-open') && !e.dataset.user) tries.push(e.querySelector(':scope > .cr-full'));
+        });
+        place.filling = true;
+        try {
+          for (const b of tries) {
+            if (!b) continue;
+            const box = b.closest('.ab-story, .ab-reps'), host = b.closest('#autoBreaking > *');
+            const before = tall(host); b.click(); const grow = tall(host) - before;
+            const now = Math.abs(col[0] - col[1]);
+            if (grow <= 0 || Math.abs(now - grow) >= now) { b.click(); continue; }  // it would not even things out: back as it was
+            box.dataset.auto = '1'; opened = true;
+            col[shortC] += grow;
+            if (Math.abs(col[0] - col[1]) <= 120) break;
+          }
+        } finally { place.filling = false; }
+        if (opened) setTimeout(() => place(root.classList.contains('pal-bal')), 30);
+      }
+    }
     let r = Math.max(col[0], col[1]);
     kids.filter((e) => e !== lead && !e.matches('.ab-second, .ab-lead-more')).forEach((e) => {
       const n = tall(e);
