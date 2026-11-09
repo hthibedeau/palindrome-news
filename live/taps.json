@@ -1,21 +1,31 @@
 {
- "checked": "2026-11-09T15:20:24.597355+00:00",
- "labels": 218,
+ "checked": "2026-11-09T16:27:28.852490+00:00",
+ "labels": 202,
  "problems": [],
  "guard": {
   "fixed": [
    {
     "label": "NBC News",
     "was": "https://www.today.com/video/nvidia-ceo-had-affair-with-chinese-spy-intelligence-officials-say-273120325951",
-    "now": "https://www.nbcnews.com/world/united-kingdom/russell-brand-sentenced-years-british-jail-rcna607799"
+    "now": "https://www.youtube.com/watch?v=bEgAnGqLZZY"
+   },
+   {
+    "label": "CBC News ↗",
+    "was": "(card link) thestar.com",
+    "now": "https://www.cbc.ca/news/science/canada-un-climate-summit-cop31-9.7413260"
    },
    {
     "label": "NBC News",
     "was": "https://www.today.com/video/nvidia-ceo-had-affair-with-chinese-spy-intelligence-officials-say-273120325951",
-    "now": "https://www.nbcnews.com/world/united-kingdom/russell-brand-sentenced-years-british-jail-rcna607799"
+    "now": "https://www.youtube.com/watch?v=bEgAnGqLZZY"
    }
   ],
-  "disabled": [],
+  "disabled": [
+   {
+    "label": "NBC News",
+    "href": "https://www.today.com/video/nvidia-ceo-had-affair-with-chinese-spy-intelligence-officials-say-273120325951"
+   }
+  ],
   "lifted": []
  }
 }
