@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-09T07:38:20.873499+00:00",
- "checkedLabel": "Mon 2:38 a.m.",
+ "checked": "2026-11-09T07:48:20.732632+00:00",
+ "checkedLabel": "Mon 2:48 a.m.",
  "stories": [
   {
    "key": "top",
@@ -38,13 +38,22 @@
  ],
  "wire": [
   [
+   "Mon 2:29 a.m.",
+   "U.S.",
+   "Trump says he thinks he will meet with Xi, Putin, set to discuss ending war on iran",
+   "Middle East Eye",
+   "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-he-thinks-he-will-meet-xi-putin-set-discuss-ending-war-iran",
+   "2026-11-09T07:29:25+00:00",
+   2
+  ],
+  [
    "Mon 2:26 a.m.",
    "World",
    "Krakow shooting suspect has died in hospital, police say",
    "BBC News",
    "https://www.bbc.co.uk/news/articles/c6y434dw8319o?at_medium=RSS&at_campaign=rss",
    "2026-11-09T07:26:09+00:00",
-   8
+   9
   ],
   [
    "Mon 2:21 a.m.",
@@ -252,15 +261,6 @@
    "https://www.thestar.com/news/world/united-states/school-closures-are-accelerating-in-us-but-more-financial-pain-lies-ahead/article_b5aeddbc-0dd8-507d-bb0a-df19ce35cfac.html",
    "2026-11-09T05:09:18+00:00",
    1
-  ],
-  [
-   "Mon 12:08 a.m.",
-   "U.S.",
-   "Trump says 'too tough' deportation policies hurt him in the midterms",
-   "ABC News",
-   "https://abcnews.com/US/trump-tough-deportation-policies-hurt-midterms/story?id=137963657",
-   "2026-11-09T05:08:56+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -295,7 +295,7 @@
    "score": 23,
    "title": "Trump’s choice of Stephen Miller as Chief of Staff is making the Democrats’ great week, even better.",
    "url": "https://bruce728.substack.com/p/trumps-choice-of-stephen-miller-as",
-   "outlets": 27,
+   "outlets": 28,
    "why": [
     "National Newswatch #7",
     "CBC News front #1"
@@ -303,10 +303,10 @@
    "theme": ""
   },
   {
-   "score": 18,
+   "score": 19,
    "title": "Nvidia probes whether CEO Jensen Huang targeted by foreign intelligence as he admits affair",
    "url": "https://www.cbc.ca/news/world/nvidia-investigation-ceo-jensen-huang-foreign-intelligence-9.7414358",
-   "outlets": 13,
+   "outlets": 14,
    "why": [
     "CBC News front #2"
    ],
@@ -337,10 +337,10 @@
    "theme": "Federal budget"
   },
   {
-   "score": 12,
+   "score": 13,
    "title": "Krakow shooting suspect has died in hospital, police say",
    "url": "https://www.bbc.co.uk/news/articles/c6y434dw8319o?at_medium=RSS&at_campaign=rss",
-   "outlets": 10,
+   "outlets": 11,
    "why": [],
    "theme": ""
   },
@@ -349,6 +349,14 @@
    "title": "Trump and U.S. Justice Department stand defiant as Democrats ready an investigative blitz",
    "url": "https://www.ctvnews.ca/world/article/trump-and-us-justice-department-stand-defiant-as-democrats-ready-an-investigative-blitz/",
    "outlets": 11,
+   "why": [],
+   "theme": ""
+  },
+  {
+   "score": 9,
+   "title": "Revealed: The most affordable European ski resorts to try this winter",
+   "url": "https://www.euronews.com/2026/11/09/revealed-the-most-affordable-european-ski-resorts-to-try-this-winter",
+   "outlets": 7,
    "why": [],
    "theme": ""
   },
@@ -376,14 +384,6 @@
    "why": [
     "CBC News front #4"
    ],
-   "theme": ""
-  },
-  {
-   "score": 7,
-   "title": "Burnham’s homelessness pledge to ‘get everyone in for Christmas’ in jeopardy",
-   "url": "https://www.theguardian.com/society/2026/nov/09/burnham-homelessness-pledge-rough-sleeping-england",
-   "outlets": 7,
-   "why": [],
    "theme": ""
   }
  ],
@@ -606,25 +606,15 @@
     "fronts_who": [],
     "judgment": "national",
     "judgment_why": "National: affects some people; carried across the country (3 cities).",
-    "weight": 25.5,
-    "videos": [
-     {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=J9g3v6oDkvQ",
-      "title": "Honouring the sacrifices of First Nations, Metis, Inuit peoples on Indigenous Veterans Day",
-      "img": "https://i.ytimg.com/vi/J9g3v6oDkvQ/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     }
-    ]
+    "weight": 25.5
    },
    {
     "key": "auto-5949a035",
     "words": [
      "miller",
      "white",
-     "ufc’s",
      "ufc's",
+     "ufc’s",
      "dana"
     ],
     "score": 23,
@@ -1039,7 +1029,7 @@
      "CTV News",
      "NBC News"
     ],
-    "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
+    "rule": "No Canadian tie",
     "carriers": 17,
     "judgment": "national",
     "why_judged": "National: affects some people; carried across the country (6 cities)."
@@ -1049,9 +1039,9 @@
     "url": "https://www.cbc.ca/news/world/nvidia-investigation-ceo-jensen-huang-foreign-intelligence-9.7414358",
     "rank": 3,
     "live": "",
-    "weight": 38.5,
-    "score": 18,
-    "independent": 8,
+    "weight": 41.0,
+    "score": 19,
+    "independent": 9,
     "most_read": 0,
     "canada": "none",
     "theme": "",
@@ -1065,7 +1055,7 @@
      "NPR"
     ],
     "rule": "No Canadian tie",
-    "carriers": 9,
+    "carriers": 10,
     "judgment": "national",
     "why_judged": "National: affects some people; carried across the country (national desks)."
    },
@@ -1074,8 +1064,8 @@
     "url": "https://abcnews.com/International/suspect-deadly-poland-shooting-dies-hospital-police/story?id=137966778",
     "rank": 4,
     "live": "",
-    "weight": 32.0,
-    "score": 12,
+    "weight": 33.0,
+    "score": 13,
     "independent": 4,
     "most_read": 0,
     "canada": "none",
@@ -1092,23 +1082,23 @@
     "why_judged": "National: affects many people; carried by a few newsrooms."
    },
    {
-    "title": "Trump-Xi-Putin trilateral summit moves closer to reality",
-    "url": "https://www.japantimes.co.jp/news/2026/11/09/asia-pacific/politics/trump-xi-putin-summit-apec/",
+    "title": "Pope Leo delivers stinging rebuke of Milei’s austerity measures during Argentina visit",
+    "url": "https://www.theguardian.com/world/2026/nov/09/pope-leo-argentina-visit-speech-javier-milei-austerity",
     "rank": 5,
     "live": "",
-    "weight": 26.0,
-    "score": 6,
-    "independent": 4,
+    "weight": 20.5,
+    "score": 7,
+    "independent": 3,
     "most_read": 0,
-    "canada": "tie",
+    "canada": "none",
     "theme": "",
     "top": false,
     "fronts": 0,
     "fronts_who": [],
-    "rule": "From abroad, tied to Canada",
-    "carriers": 4,
+    "rule": "No Canadian tie",
+    "carriers": 5,
     "judgment": "national",
-    "why_judged": "National: affects many people; carried by a few newsrooms."
+    "why_judged": "National: affects many people; carried across the country (national desks)."
    },
    {
     "title": "Premier praises federal budget for major project development, proposed tax changes",
@@ -1145,17 +1135,17 @@
     "why": "not built: only 1 independent report(s) (11 sites)"
    },
    {
+    "title": "Revealed: The most affordable European ski resorts to try this winter",
+    "score": 9,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
     "title": "Smog blankets New Delhi as Diwali firecrackers worsen air quality",
     "score": 9,
     "why": "not built: only 2 independent report(s) (8 sites)"
    },
    {
     "title": "Norway says it has been bumped by the IIHF to allow Russia to compete at world juniors in Canada",
-    "score": 7,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Burnham’s homelessness pledge to ‘get everyone in for Christmas’ in jeopardy",
     "score": 7,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
@@ -1175,193 +1165,19 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
+    "title": "It’s Morning in America. By all Means, Blame Canada.",
+    "score": 6,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
     "title": "Israel’s president taps opposition candidate Eisenkot to form a government, in setback for Netanyahu",
     "score": 6,
     "why": "not built: only 2 independent report(s) (4 sites)"
-   },
-   {
-    "title": "Pizzeria destroyed in 4th suspicious fire to hit Ormstown, Que., in recent months",
-    "score": 6,
-    "why": "not built: only 2 independent report(s) (3 sites)"
    }
   ],
   "moved": [],
   "top_n": 2,
-  "more": [
-   {
-    "key": "auto-19c7d79f",
-    "words": [
-     "putin"
-    ],
-    "score": 6,
-    "outlets": 4,
-    "carriers": 4,
-    "tag": "Breaking",
-    "title": "Trump-Xi-Putin trilateral summit moves closer to reality",
-    "url": "https://www.japantimes.co.jp/news/2026/11/09/asia-pacific/politics/trump-xi-putin-summit-apec/",
-    "outlet": "The Japan Times",
-    "t": "Sun 9:33 p.m.",
-    "iso": "2026-11-09T02:33:00+00:00",
-    "summary": "U.S. President Donald Trump said talks with China’s Xi Jinping and Russia’s Vladimir Putin were likely to be held at next week’s APEC summit.",
-    "first": {
-     "outlet": "Al Jazeera",
-     "url": "https://www.aljazeera.com/news/liveblog/2026/11/9/iran-war-live-trump-says-land-blockade-in-effect-drone-cuts-power-in-iraq?traffic_source=rss",
-     "t": "Sun 7:00 p.m.",
-     "title": "Iran war live: Trump to talk to Xi, Putin about Tehran, ‘denuclearisation’",
-     "iso": "2026-11-09T00:00:34+00:00"
-    },
-    "newest": "2026-11-09T07:29:25+00:00",
-    "photo": {
-     "src": "live/img/auto-19c7d79f-0f6698416a.jpg",
-     "orig": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/09/572971.JPG?v=3.1",
-     "caption": "From: Trump-Xi-Putin trilateral summit moves closer to reality. — via The Japan Times",
-     "alt": "Trump-Xi-Putin trilateral summit moves closer to reality",
-     "outlet": "The Japan Times",
-     "url": "https://www.japantimes.co.jp/news/2026/11/09/asia-pacific/politics/trump-xi-putin-summit-apec/",
-     "since": "2026-11-09T07:41:29.684586+00:00"
-    },
-    "photo_seen": [
-     "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/09/572971.JPG?v=3.1"
-    ],
-    "photos": [
-     {
-      "src": "live/img/auto-19c7d79f-0f6698416a.jpg",
-      "orig": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/09/572971.JPG?v=3.1",
-      "caption": "From: Trump-Xi-Putin trilateral summit moves closer to reality. — via The Japan Times",
-      "alt": "Trump-Xi-Putin trilateral summit moves closer to reality",
-      "outlet": "The Japan Times",
-      "url": "https://www.japantimes.co.jp/news/2026/11/09/asia-pacific/politics/trump-xi-putin-summit-apec/"
-     },
-     {
-      "src": "live/img/auto-19c7d79f-26e60fb9d6.jpg",
-      "orig": "https://www.aljazeera.com/wp-content/uploads/2026/11/AFP__20261107__D6QA2BU__v1__HighRes__UsPoliticsTrump-1794202023.jpg?resize=1920%2C1440",
-      "caption": "Trump says he expects to talk to Xi, Putin about Iran war at China summit. — via Al Jazeera",
-      "alt": "Trump says he expects to talk to Xi, Putin about Iran war at China summit",
-      "outlet": "Al Jazeera",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/11/9/iran-war-live-trump-says-land-blockade-in-effect-drone-cuts-power-in-iraq?traffic_source=rss"
-     }
-    ],
-    "independent": 4,
-    "reports": [
-     {
-      "t": "Mon 2:29 a.m.",
-      "iso": "2026-11-09T07:29:25+00:00",
-      "outlet": "Middle East Eye",
-      "title": "Trump says he thinks he will meet with Xi, Putin, set to discuss ending war on iran",
-      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-he-thinks-he-will-meet-xi-putin-set-discuss-ending-war-iran",
-      "desc": ""
-     },
-     {
-      "t": "Sun 9:41 p.m.",
-      "iso": "2026-11-09T02:41:43+00:00",
-      "outlet": "The Hill",
-      "title": "Trump says ‘hatred’ between Zelensky, Putin is main obstacle to ending war",
-      "url": "https://thehill.com/homenews/6207193-trump-blames-zelensky-putin-hatred/",
-      "desc": ""
-     },
-     {
-      "t": "Sun 9:33 p.m.",
-      "iso": "2026-11-09T02:33:00+00:00",
-      "outlet": "The Japan Times",
-      "title": "Trump-Xi-Putin trilateral summit moves closer to reality",
-      "url": "https://www.japantimes.co.jp/news/2026/11/09/asia-pacific/politics/trump-xi-putin-summit-apec/",
-      "desc": "U.S. President Donald Trump said talks with China’s Xi Jinping and Russia’s Vladimir Putin were likely to be held at next week’s APEC summit."
-     },
-     {
-      "t": "Sun 7:00 p.m.",
-      "iso": "2026-11-09T00:00:34+00:00",
-      "outlet": "Al Jazeera",
-      "title": "Iran war live: Trump to talk to Xi, Putin about Tehran, ‘denuclearisation’",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/11/9/iran-war-live-trump-says-land-blockade-in-effect-drone-cuts-power-in-iraq?traffic_source=rss",
-      "desc": "Trump says Iran land blockade is now in effect, as Tehran threatens to 'rain down hell' if US resumes attacks."
-     }
-    ],
-    "sources": [
-     {
-      "t": "Mon 2:29 a.m.",
-      "primary": false,
-      "outlet": "Middle East Eye",
-      "title": "Trump says he thinks he will meet with Xi, Putin, set to discuss ending war on iran",
-      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-he-thinks-he-will-meet-xi-putin-set-discuss-ending-war-iran",
-      "desc": "",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Middle East Eye",
-        "src": "Middle East Eye",
-        "byline": "https://www.facebook.com/middleeasteye/"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Sun 9:41 p.m.",
-      "primary": false,
-      "outlet": "The Hill",
-      "title": "Trump says ‘hatred’ between Zelensky, Putin is main obstacle to ending war",
-      "url": "https://thehill.com/homenews/6207193-trump-blames-zelensky-putin-hatred/",
-      "desc": "px-captcha",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "The Hill",
-        "src": "The Hill",
-        "byline": ""
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Sun 9:33 p.m.",
-      "primary": false,
-      "outlet": "The Japan Times",
-      "title": "Trump-Xi-Putin trilateral summit moves closer to reality",
-      "url": "https://www.japantimes.co.jp/news/2026/11/09/asia-pacific/politics/trump-xi-putin-summit-apec/",
-      "desc": "U.S. President Donald Trump said talks with China’s Xi Jinping and Russia’s Vladimir Putin were likely to be held at next week’s APEC summit.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "The Japan Times",
-        "src": "The Japan Times",
-        "byline": "own staff: STAFF WRITER"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Sun 7:00 p.m.",
-      "primary": false,
-      "outlet": "Al Jazeera",
-      "title": "Iran war live: Trump to talk to Xi, Putin about Tehran, ‘denuclearisation’",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/11/9/iran-war-live-trump-says-land-blockade-in-effect-drone-cuts-power-in-iraq?traffic_source=rss",
-      "desc": "Trump says Iran land blockade is now in effect, as Tehran threatens to 'rain down hell' if US resumes attacks.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Al Jazeera",
-        "src": "Al Jazeera",
-        "byline": "[{\"@type\":\"Person\",\"name\":\"Fiona Kelliher\",},{\"@type\":\"Person\",\"name\":\"Edna Mohamed\",},{\"@type\":\"Person\",\"name\":\"Priyank"
-       }
-      ],
-      "copies": []
-     }
-    ],
-    "replaces_top": false,
-    "events": [],
-    "theme": "",
-    "canada": "tie",
-    "canus": false,
-    "incoherent": true,
-    "popular": 0,
-    "us_election": false,
-    "fronts": 0,
-    "fronts_ca": 0,
-    "fronts_who": [],
-    "judgment": "national",
-    "judgment_why": "National: affects many people; carried by a few newsrooms.",
-    "weight": 26.0
-   }
-  ],
+  "more": [],
   "passed_over": [
    {
     "title": "Nvidia probes whether CEO Jensen Huang targeted by foreign intelligence as he admits affair",
@@ -1374,6 +1190,10 @@
    {
     "title": "Suspect in deadly Poland shooting dies in hospital, police say",
     "url": "https://abcnews.com/International/suspect-deadly-poland-shooting-dies-hospital-police/story?id=137966778"
+   },
+   {
+    "title": "Pope Leo delivers stinging rebuke of Milei’s austerity measures during Argentina visit",
+    "url": "https://www.theguardian.com/world/2026/nov/09/pope-leo-argentina-visit-speech-javier-milei-austerity"
    }
   ]
  },
@@ -1382,7 +1202,7 @@
    "id": "gdLqazgRJU0",
    "r": "ca",
    "o": "APTN News",
-   "t": "On the Outside: What happens after incarceration? | APTN Investigates",
+   "t": "On the Outside: The challenges of life after incarceration | APTN Investigates",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=gdLqazgRJU0",
@@ -1494,7 +1314,7 @@
    "id": "VKmBv1FZvfc",
    "r": "ca",
    "o": "Global News",
-   "t": "One dead after deadly storm brings powerful winds, heavy rain to BC",
+   "t": "One person killed after tree falls on 2 cars after another major BC storm",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=VKmBv1FZvfc",
@@ -1519,10 +1339,38 @@
    "geo": "unknown"
   },
   {
+   "id": "om1pZHkCO5M",
+   "r": "ca",
+   "o": "CBC News",
+   "t": "UFC boss Dana White says he's meeting with Trump after U.S. press secretary job offer",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=om1pZHkCO5M",
+   "img": "https://i.ytimg.com/vi/om1pZHkCO5M/hqdefault.jpg",
+   "up": "2026-11-08",
+   "added": "2026-11-09T07:48:20.732632+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "TSl1VlL1KQ8",
+   "r": "ca",
+   "o": "CBC News",
+   "t": "3 dead found in Krakow shooting suspect's family home: Polish authorities",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=TSl1VlL1KQ8",
+   "img": "https://i.ytimg.com/vi/TSl1VlL1KQ8/hqdefault.jpg",
+   "up": "2026-11-08",
+   "added": "2026-11-09T07:48:20.732632+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
    "id": "KbBoWZXYW2M",
    "r": "us",
    "o": "CNN",
-   "t": "Blanche: Dems should be ‘very worried’ about Trump's threat",
+   "t": "Blanche: Dems should be ‘very worried’ after Trump ordered DOJ probe",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=KbBoWZXYW2M",
@@ -1659,20 +1507,6 @@
    "geo": "unknown"
   },
   {
-   "id": "gTaHaSijCoo",
-   "r": "us",
-   "o": "Bloomberg",
-   "t": "Rubio Plays Down Chances of Breakthrough in Iran Talks",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=gTaHaSijCoo",
-   "img": "https://i.ytimg.com/vi/gTaHaSijCoo/hqdefault.jpg",
-   "up": "2026-11-09",
-   "added": "2026-11-09T06:52:01.279694+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "PNLPrFhJypI",
    "r": "us",
    "o": "Fox News",
@@ -1739,6 +1573,20 @@
    "img": "https://i.ytimg.com/vi/hga7pFusjVc/hqdefault.jpg",
    "up": "2026-11-09",
    "added": "2026-11-09T07:08:21.031791+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "az-jQyfNlxM",
+   "r": "us",
+   "o": "Bloomberg",
+   "t": "Jensen Huang’s Affair with Suspected Chinese Spy Adds New Risks to AI Trade",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=az-jQyfNlxM",
+   "img": "https://i.ytimg.com/vi/az-jQyfNlxM/hqdefault.jpg",
+   "up": "2026-11-09",
+   "added": "2026-11-09T07:48:20.732632+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1816,7 +1664,7 @@
    "id": "es4fybm0bP0",
    "r": "world",
    "o": "Sky News",
-   "t": "Rape victim says justice system failed her after teenage attacker avoids prison",
+   "t": "'There's no justice': Rape victim challenges sentencing of young offenders‌",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=es4fybm0bP0",
@@ -1830,7 +1678,7 @@
    "id": "YbvZkg2s4qE",
    "r": "world",
    "o": "Sky News",
-   "t": "US Marines use drones to track Russian warships and shadow fleet vessels",
+   "t": "US Marines use surveillance drones to monitor Russian activity off Finland",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=YbvZkg2s4qE",
@@ -2135,6 +1983,13 @@
  ],
  "eds": [
   [
+   "Toronto Star",
+   "Opinion",
+   "Democrats got their second chance. Here’s how not to blow it",
+   "https://www.thestar.com/opinion/contributors/democrats-got-their-second-chance-here-s-how-not-to-blow-it/article_724ccbad-6339-46c3-9c4d-9a368d8562ef.html",
+   "2026-11-08T11:00:00+00:00"
+  ],
+  [
    "Toronto Sun",
    "Editorial",
    "Stop wallowing in sins of the past",
@@ -2248,13 +2103,6 @@
     "outlet": "CBC News",
     "title": "Republicans ran away from Trump's Canadian tariffs, but not far enough",
     "url": "https://www.cbc.ca/news/politics/midterms-canada-tariffs-trade-war-canada-9.7410974?cmp=rss"
-   },
-   {
-    "t": "Thu 4:15 p.m.",
-    "iso": "2026-11-05T21:15:00+00:00",
-    "outlet": "Toronto Star",
-    "title": "Federal budget pumps billions into Canadian culture amid trade war",
-    "url": "https://www.thestar.com/politics/federal/federal-budget-pumps-billions-into-canadian-culture-amid-trade-war/article_a3b3c5e5-fa3b-4ffc-b919-49a639355be5.html"
    }
   ],
   "usmedia": [
@@ -2329,22 +2177,6 @@
    "auto": true
   },
   {
-   "cat": "intl",
-   "media": "none",
-   "initials": "UN",
-   "name": "United Nations",
-   "role": "UN News",
-   "date": "Nov 8",
-   "platform": "Official statement",
-   "handle": "news.un.org",
-   "hed": "Beyond the broken glass: The human cost of the 1938 November Pogrom",
-   "summary": "On his way to school in Vienna on the morning of 10 November 1938, eight-year-old Arthur Schneier watched his synagogue burn while firefighters and police officers stood by “rejoicing”.",
-   "href": "https://news.un.org/feed/view/en/story/2026/11/1168756",
-   "report": false,
-   "iso": "2026-11-08T12:00:00+00:00",
-   "auto": true
-  },
-  {
    "cat": "premier",
    "media": "none",
    "initials": "ON",
@@ -2358,22 +2190,6 @@
    "href": "https://news.ontario.ca/en/release/1008255/ontario_celebrates_agricultural_excellence",
    "report": false,
    "iso": "2026-11-07T18:05:00+00:00",
-   "auto": true
-  },
-  {
-   "cat": "intl",
-   "media": "none",
-   "initials": "UN",
-   "name": "United Nations",
-   "role": "UN News",
-   "date": "Nov 7",
-   "platform": "Official statement",
-   "handle": "news.un.org",
-   "hed": "‘For the first time I have my own chair’: Gaza siblings find new freedom",
-   "summary": "In Gaza, 10-year-old Anas is one of three siblings born without legs and with only two fingers on each of their hands. They struggle to move around and perform daily activities like eating and writing independently.",
-   "href": "https://news.un.org/feed/view/en/story/2026/11/1168759",
-   "report": false,
-   "iso": "2026-11-07T12:00:00+00:00",
    "auto": true
   }
  ],
@@ -2621,10 +2437,10 @@
    "tz": "America/New_York",
    "world": false,
    "w": "Midterms",
-   "u": "https://vocm.com/2026/11/09/marco-rubio-defends-trumps-iran-war-after-republicans-lose-control-of-congress/",
-   "title": "Marco Rubio Defends Trump’s Iran War After Republicans Lose Control of Congress",
-   "outlet": "VOCM",
-   "t": "Mon 1:50 a.m.",
+   "u": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-he-thinks-he-will-meet-xi-putin-set-discuss-ending-war-iran",
+   "title": "Trump says he thinks he will meet with Xi, Putin, set to discuss ending war on iran",
+   "outlet": "Middle East Eye",
+   "t": "Mon 2:29 a.m.",
    "hot": true
   },
   {
@@ -2650,15 +2466,15 @@
    "hot": false
   },
   {
-   "city": "Kyiv",
-   "tz": "Europe/Kyiv",
+   "city": "Tehran",
+   "tz": "Asia/Tehran",
    "world": true,
-   "w": "Midterms",
-   "u": "https://www.thestar.com/news/world/europe/rubio-will-discuss-iran-ukraine-ai-and-more-with-g7-allies-in-france/article_1281a83e-9079-5bb7-a37d-617aae8f1324.html",
-   "title": "Rubio will discuss Iran, Ukraine, AI and more with G7 allies in France",
-   "outlet": "Toronto Star",
-   "t": "Mon 12:03 a.m.",
-   "hot": false
+   "w": "Nuclear",
+   "u": "https://vocm.com/2026/11/09/marco-rubio-defends-trumps-iran-war-after-republicans-lose-control-of-congress/",
+   "title": "Marco Rubio Defends Trump’s Iran War After Republicans Lose Control of Congress",
+   "outlet": "VOCM",
+   "t": "Mon 1:50 a.m.",
+   "hot": true
   }
  ],
  "bigweek": [],
@@ -2666,13 +2482,13 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Mon 1:50 a.m.",
-   "iso": "2026-11-09T06:50:30+00:00",
-   "title": "Marco Rubio Defends Trump’s Iran War After Republicans Lose Control of Congress",
-   "summary": "Secretary of State Marco Rubio defended President Donald Trump's decision to wage war against Iran on Sunday, November 8, saying the military campaign...",
-   "outlet": "VOCM, Middle East Eye, The Japan Times, Toronto Star, Al Jazeera, The Guardian",
-   "url": "https://vocm.com/2026/11/09/marco-rubio-defends-trumps-iran-war-after-republicans-lose-control-of-congress/",
-   "img": "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/4023/files/2026/11/866075750-1200x675.jpg"
+   "t": "Mon 2:29 a.m.",
+   "iso": "2026-11-09T07:29:25+00:00",
+   "title": "Trump says he thinks he will meet with Xi, Putin, set to discuss ending war on iran",
+   "summary": "",
+   "outlet": "Middle East Eye, Euronews, VOCM, The Japan Times, Toronto Star, Al Jazeera",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-he-thinks-he-will-meet-xi-putin-set-discuss-ending-war-iran",
+   "img": "https://www.middleeasteye.net/sites/default/files/hormuz-oman-houthis-iran.jpg"
   },
   {
    "desk": "world",
@@ -2681,9 +2497,20 @@
    "iso": "2026-11-09T06:35:00+00:00",
    "title": "Nvidia CEO’s affair engulfs AI giant in Chinese spying probe",
    "summary": "In a memo to employees, Jensen Huang left no doubt that the chip colossus was embroiled in a crisis like none before in its three-decade history.",
-   "outlet": "The Japan Times, CBS News, CBC News, BBC News, Toronto Sun, The Guardian",
+   "outlet": "The Japan Times, Euronews, CBS News, CBC News, BBC News, Toronto Sun",
    "url": "https://www.japantimes.co.jp/business/2026/11/09/tech/nvidia-board-spying-ceo-affair/",
    "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/09/572922.jpg?v=3.1"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Mon 2:26 a.m.",
+   "iso": "2026-11-09T07:26:09+00:00",
+   "title": "Krakow shooting suspect has died in hospital, police say",
+   "summary": "At least six people were killed in the shooting, and three bodies of the suspect's family members were found at their home.",
+   "outlet": "BBC News, ABC News, CBS News, Euronews, NBC News, Times Colonist",
+   "url": "https://www.bbc.co.uk/news/articles/c6y434dw8319o?at_medium=RSS&at_campaign=rss",
+   "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/b131/live/b7c6ce50-dc06-11f1-b6f4-7b86d13131ad.jpg"
   },
   {
    "desk": "us",
@@ -2695,17 +2522,6 @@
    "outlet": "CTV News, CP24, PBS NewsHour, CityNews Winnipeg, CityNews Vancouver, CityNews Ottawa",
    "url": "https://www.ctvnews.ca/world/article/trump-and-us-justice-department-stand-defiant-as-democrats-ready-an-investigative-blitz/",
    "img": "https://www.ctvnews.ca/resizer/v2/QSPQIY7CU67LEY64TLNCQA6NKU.jpg?smart=true&auth=01e5291c7eccd8abd005ce4500072ffb1942b9ca20d91b03bb0ed52e99837714&width=1200&height=630"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Mon 2:26 a.m.",
-   "iso": "2026-11-09T07:26:09+00:00",
-   "title": "Krakow shooting suspect has died in hospital, police say",
-   "summary": "At least six people were killed in the shooting, and three bodies of the suspect's family members were found at their home.",
-   "outlet": "BBC News, ABC News, CBS News, NBC News, Times Colonist, Al Jazeera",
-   "url": "https://www.bbc.co.uk/news/articles/c6y434dw8319o?at_medium=RSS&at_campaign=rss",
-   "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/b131/live/b7c6ce50-dc06-11f1-b6f4-7b86d13131ad.jpg"
   },
   {
    "desk": "world",
@@ -2743,6 +2559,17 @@
   {
    "desk": "world",
    "pic": "globe",
+   "t": "Mon 12:30 a.m.",
+   "iso": "2026-11-09T05:30:37+00:00",
+   "title": "Pope delivers veiled rebuke of Milei's austerity measures",
+   "summary": "Pope Leo made the comments as he arrived in Argentina on the second leg of his Latin America tour.",
+   "outlet": "BBC News, The Guardian, CTV News, CP24, PBS NewsHour, Euronews",
+   "url": "https://www.bbc.co.uk/news/articles/ckj0l082jqzvo?at_medium=RSS&at_campaign=rss",
+   "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/3d83/live/ef505e30-dbf8-11f1-93e1-3b657b665bcf.jpg"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
    "t": "Sun 3:41 p.m.",
    "iso": "2026-11-08T20:41:37+00:00",
    "title": "Collision between 2 trains in Egypt kills 7 and injures at least 125",
@@ -2750,17 +2577,6 @@
    "outlet": "CTV News, CP24, BBC News, CBC News, The Guardian, PBS NewsHour",
    "url": "https://www.ctvnews.ca/world/article/collision-between-2-trains-in-egypt-kills-7-and-injures-at-least-125/",
    "img": "https://www.ctvnews.ca/resizer/v2/GV37UVVWU7IC4WVNL5TNBOKVXM.jpg?smart=true&auth=7e3ff73a5bb4a905b2b7d35b9965cb6649275dd0328f32ffd32667cb5946bd80&width=1200&height=630"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Mon 12:30 a.m.",
-   "iso": "2026-11-09T05:30:37+00:00",
-   "title": "Pope delivers veiled rebuke of Milei's austerity measures",
-   "summary": "Pope Leo made the comments as he arrived in Argentina on the second leg of his Latin America tour.",
-   "outlet": "BBC News, The Guardian, CTV News, CP24, PBS NewsHour",
-   "url": "https://www.bbc.co.uk/news/articles/ckj0l082jqzvo?at_medium=RSS&at_campaign=rss",
-   "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/3d83/live/ef505e30-dbf8-11f1-93e1-3b657b665bcf.jpg"
   },
   {
    "desk": "business",
@@ -3147,7 +2963,7 @@
     "Trump says deportations were ‘too tough’ and hurt him in midterms",
     "The Democrats’ landslide victory explained in two maps and five charts",
     "Democrats won big on Election Day. But can they agree on AI?",
-    "Nvidia opens investigation after CEO Jensen Huang was targeted by Chinese intelligence"
+    "Nvidia opens investigation after CEO Jensen Huang’s affair with alleged Chinese spy"
    ],
    "u": [
     "https://www.nbcnews.com/politics/congress/house-minority-leader-hakeem-jeffries-hard-yes-impeaching-hegseth-rcna608137",
@@ -3222,19 +3038,19 @@
    "o": "The Guardian",
    "ca": false,
    "h": [
+    "Business live Nvidia ‘honeytrap’ scandal rocks AI industry as tech stocks recover from slump",
+    "Nvidia Nvidia opens investigation after report CEO Jensen Huang was target of foreign intelligence",
     "Environment ‘A new age of climate extremes’: Earth accumulating heat at accelerating rate",
     "Live Cop31: world leaders gather for crucial climate crisis talks",
     "Cop31 Cop31 must deliver climate progress that people can see is real, host says",
-    "Business live Nvidia ‘honeytrap’ scandal rocks AI industry as tech stocks recover from slump",
-    "Nvidia Nvidia opens investigation after report CEO Jensen Huang was target of foreign intelligence",
     "Israel Gadi Eisenkot reaches out to Netanyahu allies as he strives to form government"
    ],
    "u": [
     "",
+    "https://www.theguardian.com/us-news/2026/nov/08/nvidia-jensen-huang-investigation",
+    "",
     "https://www.theguardian.com/environment/live/2026/nov/09/cop31-climate-crisis-talks-turkey-latest-news-updates",
     "https://www.theguardian.com/environment/2026/nov/08/cop31-climate-summit-deliver-progress-real-host-says",
-    "",
-    "https://www.theguardian.com/us-news/2026/nov/08/nvidia-jensen-huang-investigation",
     ""
    ]
   },
@@ -3268,7 +3084,7 @@
     "url": "https://www.youtube.com/watch?v=71Eq2VrASig",
     "img": "https://i.ytimg.com/vi/71Eq2VrASig/hqdefault.jpg",
     "story": "Trump returns to White House, Midterm results, Iran war latest, more t",
-    "watching": "261",
+    "watching": "252",
     "also": [
      {
       "net": "The White House live",
@@ -3342,7 +3158,7 @@
     "url": "https://www.youtube.com/watch?v=rQeLyrWiFKc",
     "img": "https://i.ytimg.com/vi/rQeLyrWiFKc/hqdefault.jpg",
     "story": "Russell Brand faces sentencing after being found guilty of rape",
-    "watching": "1.3K",
+    "watching": "1.2K",
     "reports": [
      {
       "outlet": "Times Colonist",
@@ -3472,26 +3288,7 @@
   }
  ],
  "related": {},
- "canangle": {
-  "auto-19c7d79f": {
-   "story": "Trump says he thinks he will meet with Xi, Putin, set to discuss ending war on iran",
-   "us": true,
-   "specific": 1,
-   "stories": [
-    {
-     "t": "Fri 5:11 p.m.",
-     "iso": "2026-11-06T22:11:41+00:00",
-     "outlet": "CBC News",
-     "title": "Canada's foreign minister urges G7 to turn up heat on Putin after deadly Ukraine strike",
-     "url": "https://www.cbc.ca/news/politics/anand-ukraine-russia-war-civilian-deaths-9.7412923?cmp=rss",
-     "ca": true,
-     "tie": ""
-    }
-   ],
-   "official": [],
-   "views": []
-  }
- },
+ "canangle": {},
  "canangle_live": {
   "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-he-thinks-he-will-meet-xi-putin-set-discuss-ending-war-iran": {
    "story": "Trump says he thinks he will meet with Xi, Putin, set to discuss ending war on iran",
@@ -3697,59 +3494,64 @@
    "auto": true,
    "desk": "United States",
    "status": "Developing",
-   "at": "2026-11-09T04:30:38+00:00",
+   "at": "2026-11-09T04:39:48+00:00",
    "exact": true,
    "img": "live/img/auto-0a7689fa-0a4ef8efab.jpg",
    "credit": "via CBC News",
    "pic": "globe",
    "h": "Nvidia probes whether CEO Jensen Huang targeted by foreign intelligence as he admits affair",
    "lede": "Top Republican lawmakers ​in the U.S. House of ​Representatives have called on Jensen Huang to brief Congress this month about a New York ​Times report in October alleging he had a close relationship with a ‌Chinese businesswoman who passed information to Beijing.",
-   "newl": "Now carried by 8 independent newsrooms.",
+   "newl": "Now carried by 9 independent newsrooms.",
    "rows": [
+    [
+     "Euronews",
+     "Jensen Huang, CEO of US tech giant Nvidia, is being investigated by the company's board after reports that Huang was the “target of a foreign intelligence effort.” Huang admitted to having an intimate relationship with a business executive who is alleged to have been spying on behalf of China.",
+     [
+      1
+     ]
+    ],
     [
      "CBS News",
      "The board of Nvidia said it had no reason to believe that the company's secrets or national security were compromised.",
      [
-      1
+      2
      ]
     ],
     [
      "Al Jazeera",
      "Donald Trump has defended Nvidia CEO Jensen Huang, who admitted to an affair with a woman suspected of spying for China.",
      [
-      2
+      3
      ]
     ],
     [
      "CBC News",
      "Top Republican lawmakers ​in the U.S. House of ​Representatives have called on Jensen Huang to brief Congress this month about a New York ​Times report in October alleging he had a close relationship with a ‌Chinese businesswoman who passed information to Beijing.",
      [
-      3
+      4
      ]
     ],
     [
      "The Guardian",
      "CEO allegedly ‌had a close relationship ‌with a Chinese businesswoman who passed information to ‌Beijing",
      [
-      4
+      5
      ]
     ],
     [
      "Toronto Star",
      "President Donald Trump called Jensen Huang a “fine person” and said he should stay on as the chief executive officer of Nvidia Corp. after the executive admitted having an affair",
      [
-      5
-     ]
-    ],
-    [
-     "Global News",
-     "The board said it has confidence in Jensen Huage and his leadership team, and would provide further updates as appropriate. He will remain as CEO.",
-     [
       6
      ]
     ]
    ],
    "src": [
+    [
+     "Euronews",
+     "Nvidia investigates whether its own CEO Jensen Huang over affair with alleged Chinese spy",
+     "https://www.euronews.com/2026/11/09/nvidia-investigates-whether-ceo-jensen-huang-was-targeted-by-chinese-spy-following-alleged"
+    ],
     [
      "CBS News",
      "Nvidia investigates CEO Jensen Huang over Chinese espionage concerns",
@@ -3796,7 +3598,7 @@
      "https://www.nbcnews.com/tech/tech-news/nvidia-ceo-jensen-huang-investigation-rcna608148"
     ]
    ],
-   "lead": 3
+   "lead": 4
   }
  ],
  "geo": {
