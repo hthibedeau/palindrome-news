@@ -50,6 +50,17 @@ Both pages open directly in a web browser. They are previews: the live site will
 - **No empty panel.** On a wide screen the two top columns stack on their own, so a short lead story no longer leaves an empty block beside the stories on the right (`place()` in `tools/crisp_layer.html`).
 - Checks: `python3 tools/test_story_match.py`.
 
+## Nothing outdated (Hannah, Sun Nov 8, 2026)
+
+"There seems to be a lot of outdated stories on the website. Can you make that better and fix it in the code." Sections that were written by hand weeks ago now age out by themselves and fill from each update:
+
+- **Watch** shows clips from the last two days, newest first. Every clip's day comes from the clip itself (upload date, time added, or the date in its web address), so an Oct. 18 clip can never say "Today". Older clips wait behind "Show older clips". Each update now adds up to 30 new clips, three per network.
+- **United States** is a desk filled by each update: today's American stories, most newsrooms first (`desks()` in `tools/autopilot.py`, desk `us`). The hand-written list shows only for two days after it was written (`US_WRITTEN` in index.html). The same story told twice on a desk counts once.
+- **Today's reading**: the editor's picks show for three days; after that, today's long reads from Canadian newsrooms (analysis, explainers, investigations, features, never opinion: `reads()` in `tools/autopilot.py`).
+- **Canada and the U.S.**: the band says when the newest reports were checked and when the trade figures were last reviewed. "How U.S. media see Canada" folds cards older than five days into "Earlier U.S. coverage"; more U.S. newsrooms are read for it.
+- **Most read** leaves out articles more than a week old, even when they sit on a newsroom's most-read list.
+- **Editorials** and **Most read** no longer show one day's hand-written intro or fine print.
+
 ## How the page updates itself: the code runs it
 
 Since Tue Oct 27, 2026, the site runs on code, not on Claude (Hannah: "I dont want to rely on claude to run my site. I want the code to do it"). Nothing needs a person or an AI to keep it current:

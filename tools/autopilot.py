@@ -1266,7 +1266,11 @@ def editorials(page, now):
 CANUS = re.compile(r"CUSMA|USMCA|tariff|softwood|Hoekstra|LeBlanc|trade (?:talks|deal|war)|51st state|Canada-U\.S\.|Canada–U\.S\.|"
                    r"Canadian (?:steel|aluminum|lumber|dairy)|Keystone|NORAD|border", re.I)
 CANADA_WORD = re.compile(r"\bCanad(?:a|ian|ians|a's|a’s)\b|\bCarney\b|\bOttawa\b|\bAlberta\b|\bQuebec\b|\bOntario\b|\bToronto\b|\bB\.C\.\b|British Columbia")
-US_OUTLETS = re.compile(r"^(CBS News|ABC News|NBC News|PBS NewsHour|Fox News|The Hill|NPR|Axios|CNN|The Associated Press)", re.I)
+# (Sun Nov 8, 2026: the list found nothing for days, so "How U.S. media see Canada" sat on Oct. 24-27 cards; more U.S. newsrooms)
+US_OUTLETS = re.compile(r"^(CBS News|ABC News|NBC News|PBS News\w*|Fox News|Fox Business|The Hill|NPR|Axios|CNN|CNBC|The Associated Press|"
+                        r"Politico|Bloomberg|The Washington Post|Washington Post|The New York Times|New York Times|The Wall Street Journal|"
+                        r"Wall Street Journal|USA Today|Newsweek|MS NOW|MSNBC|NewsNation|The Atlantic|Time|Deseret News|Washington Examiner|"
+                        r"The Daily Beast|Semafor|Breitbart|National Review|The Free Press)\b", re.I)
 
 
 def canus(items, now):
@@ -1278,7 +1282,7 @@ def canus(items, now):
         t = re.sub(r"\W", "", title.lower())
         if t in seen:
             continue
-        if US_OUTLETS.search(outlet) and CANADA_WORD.search(title):
+        if US_OUTLETS.search(au.clean_outlet(outlet)) and CANADA_WORD.search(title) and not SPORT.search(title + " " + link):
             seen.add(t)
             usm.append({"t": w.eastern(dt), "iso": dt.isoformat(), "outlet": au.clean_outlet(outlet), "title": clean(title), "url": link})
         elif CANUS.search(title) and (CANADA_WORD.search(title) or "Hoekstra" in title or "CUSMA" in title) and not au.FRENCH.search(outlet):
@@ -2912,6 +2916,25 @@ MOST_READ_SITES = [
 NOT_STORY = re.compile(r"subscribe|sign in|newsletter|horoscope|crossword|obituar|contest|/sponsored|/partners?/|lotto|lottery", re.I)
 
 
+MOST_READ_DAYS = 7
+
+
+def url_age_days(u, now):
+    """How old a story is by the date in its own web address (/2026/06/17/, 20260617, /2026/jun/17/), None when it has none."""
+    m = re.search(r"/(20\d\d)/(\d{1,2})/(\d{1,2})/", u) or re.search(r"(?<!\d)(20\d\d)(\d\d)(\d\d)(?!\d)", u)
+    if m:
+        y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3))
+    else:
+        m = re.search(r"/(20\d\d)/(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*/(\d{1,2})/", u, re.I)
+        if not m:
+            return None
+        y, mo, d = int(m.group(1)), "janfebmaraprmayjunjulaugsepoctnovdec".index(m.group(2).lower()[:3]) // 3 + 1, int(m.group(3))
+    try:
+        return (now.date() - datetime(y, mo, d).date()).days
+    except ValueError:
+        return None
+
+
 def most_read_list(name, url):
     x = curl(url)
     host = url.split("/")[2]
@@ -2938,6 +2961,10 @@ def most_read(now):
     with ThreadPoolExecutor(8) as ex:
         lists = [x for x in ex.map(lambda f: most_read_list(*f), MOST_READ_SITES) if x[1]]
     stories = []
+    # an evergreen piece months old can sit on a newsroom's most-read list; Most read shows only stories from the last
+    # MOST_READ_DAYS (Hannah, Sun Nov 8, 2026: outdated stories; The Tyee's list had a June article)
+    lists = [(o, [(u, t) for u, t in rows if (url_age_days(u, now) or 0) <= MOST_READ_DAYS]) for o, rows in lists]
+    lists = [(o, rows) for o, rows in lists if rows]
     for outlet, rows in lists:
         for rank, (u, t) in enumerate(rows, 1):
             n = gc.names(t) | gc.keys(t)
@@ -4344,7 +4371,8 @@ def event_day_stories(bigweek, items, now, imgdir, prev):
     return out
 
 
-DESK_HOURS, DESK_MAX, DESK_INFO_LOOKS = 24, 8, 36
+DESK_HOURS, DESK_MAX, DESK_INFO_LOOKS = 24, 8, 40
+DESK_MAX_US = 6
 DESK_BUSINESS = re.compile(r"\b(econom\w*|inflation|GDP|jobs report|unemployment|interest rates?|rate (?:cut|hike|decision)|Bank of Canada|"
                            r"Federal Reserve|stocks?|TSX|stock market|S&P|Nasdaq|markets?|earnings|profits?|revenue|shares|investors?|layoffs?|"
                            r"lays? off|job cuts|tariffs?|trade (?:deal|war|talks)|exports?|imports?|housing market|home sales|mortgage|"
@@ -4353,13 +4381,37 @@ DESK_BUSINESS = re.compile(r"\b(econom\w*|inflation|GDP|jobs report|unemployment
 DESK_POLITICS = re.compile(r"\b(Parliament|House of Commons|Senate|MPs?|MPPs?|MLAs?|minister|ministers|cabinet|Carney|Poilievre|Liberals?|"
                            r"Conservatives?|NDP|Bloc|Green Party|premier|legislature|Queen's Park|National Assembly|by-?election|throne speech|"
                            r"question period|federal government|Ottawa says|Elections Canada|PMO|caucus|leadership race|opposition)\b", re.I)
-DESK_PICS = {"politics": "parliament", "business": "chart", "world": "globe"}
+DESK_PICS = {"politics": "parliament", "business": "chart", "world": "globe", "us": "podium"}
+# The United States desk is filled from today's news too (Hannah, Sun Nov 8, 2026: "there seems to be a lot of outdated
+# stories on the website ... fix it in the code"; the U.S. section was a hand-written list from Oct 18-19 still saying
+# "15 days before the midterms" five days after them). A story that is not Canadian and is about American politics,
+# courts, government or a U.S. place goes on the U.S. desk, unless its headline is about another country (Iran, Ukraine
+# ...), which keeps it on the World desk.
+US_DESK = re.compile(r"\b(Trump|Vance|Rubio|Hegseth|Bessent|Lutnick|White House|Congress|Senate|House (?:Democrats?|Republicans?|Speaker)|"
+                     r"GOP|Republicans?|Democrats?|midterms?|Supreme Court|Pentagon|FBI|DOJ|Justice Department|ICE|National Guard|"
+                     r"U\.S\.|United States|Americans?|Washington|New York|California|Texas|Florida|Ohio|Georgia|Michigan|Pennsylvania|"
+                     r"Arizona|Nevada|Wisconsin|Minnesota|Illinois|Chicago|Los Angeles|Virginia|Carolina|Alaska|Maine|Kentucky|"
+                     r"Tennessee|Louisiana|Alabama|Colorado|Oregon|Kansas|Missouri|Massachusetts|Boston|New Jersey|Philadelphia|"
+                     r"Seattle|Atlanta|Dallas|Houston|Miami|Detroit)\b")
+FOREIGN_SUBJECT = re.compile(r"\b(Iran\w*|Israel\w*|Gaza|Palestin\w+|Ukrain\w+|Russia\w*|Putin|Zelensk\w+|China|Chinese|Beijing|Taiwan|"
+                             r"Venezuela\w*|Cuba\w*|Mexic\w+|India\w*|Pakistan\w*|Japan\w*|Korea\w*|Syria\w*|Lebanon|Saudi\w*|"
+                             r"Europe\w*|EU|NATO|U\.?K\.?|Brit\w+|France|French|German\w*|Poland|Polish|Argentin\w+|Brazil\w*|Pope|"
+                             r"Vatican|Africa\w*|Sudan\w*|Nigeria\w*|Australia\w*|Hamas|Hezbollah|Houthi\w*|Greenland|Panama)\b")
 # a Canadian place in a headline, including the short forms ("Puslinch, Ont.") the main Canada test does not know
 CANADA_PLACE = re.compile(r"\b(Ont\.|Que\.|B\.C\.|Alta\.|Sask\.|Man\.|N\.S\.|N\.B\.|P\.E\.I\.|N\.L\.|N\.W\.T\.|Ontario|Quebec|Québec|"
                           r"British Columbia|Alberta|Saskatchewan|Manitoba|Nova Scotia|New Brunswick|Prince Edward Island|Newfoundland|Labrador|"
                           r"Yukon|Nunavut|Northwest Territories|Toronto|Montreal|Montréal|Vancouver|Calgary|Edmonton|Ottawa|Winnipeg|Halifax|"
                           r"Regina|Saskatoon|Victoria, B\.C\.|Hamilton|Mississauga|Brampton|Quebec City|Gatineau|Iqaluit|Yellowknife|Whitehorse|"
                           r"Queen's Park|OPP|RCMP|SQ)(?![\w])")
+
+
+DESK_STOP = set("""the a an and or of to in on for with as at by from after over says say said will would could may might has have had
+is are was were be been its it his her their this that new more than into about amid not no but who what why how up out too""".split())
+
+
+def desk_words(t):
+    ws = re.findall(r"[a-z0-9]+(?:'[a-z]+)?", t.lower().replace("’", "'").replace("‘", "'"))
+    return {re.sub(r"(?<=[a-z]{4})s$", "", x) for x in ws if x not in DESK_STOP and len(x) > 2}
 
 
 def desks(items, groups, now):
@@ -4395,6 +4447,8 @@ def desks(items, groups, now):
             desk = "business"
         elif canadian and DESK_POLITICS.search(text):
             desk = "politics"
+        elif not canadian and US_DESK.search(lead[2]) and not FOREIGN_SUBJECT.search(lead[2]):
+            desk = "us"
         elif not canadian:
             desk = "world"
         else:
@@ -4402,13 +4456,22 @@ def desks(items, groups, now):
         key = re.sub(r"\W", "", lead[2].lower())[:50]
         if key in used:
             continue
+        # the same story told twice ("Trump says deportations were 'too tough'" / "Trump admits immigration enforcement
+        # may have been too 'tough'") is one story: the one with more newsrooms stays (Sun Nov 8, 2026)
+        words = desk_words(lead[2])
+        twin = next((x for x in out if x["desk"] == desk and len(words & x["words"]) >= max(3, 0.5 * min(len(words), len(x["words"])))), None)
+        if twin:
+            if len(outlets) > twin["n"]:
+                out.remove(twin)
+            else:
+                continue
         used.add(key)
-        out.append({"desk": desk, "n": len(outlets), "rows": rows, "lead": lead, "outlets": outlets})
+        out.append({"desk": desk, "n": len(outlets), "rows": rows, "lead": lead, "outlets": outlets, "words": words})
     # most newsrooms first, then newest; DESK_MAX per desk
     out.sort(key=lambda x: (-x["n"], -x["lead"][0].timestamp()))
     per, final = {}, []
     for x in out:
-        if per.get(x["desk"], 0) >= DESK_MAX:
+        if per.get(x["desk"], 0) >= (DESK_MAX_US if x["desk"] == "us" else DESK_MAX):
             continue
         info = {}
         if looks[0] < DESK_INFO_LOOKS:
@@ -4421,6 +4484,52 @@ def desks(items, groups, now):
         final.append({"desk": x["desk"], "pic": DESK_PICS[x["desk"]], "t": w.eastern(lead[0]), "iso": lead[0].isoformat(), "title": clean(lead[2]),
                       "summary": desc if len(desc) >= 40 else "", "outlet": src, "url": lead[3], "img": info.get("img", "")})
     return final
+
+
+# ===== Today's reading, filled from today's news (Hannah, Sun Nov 8, 2026: "a lot of outdated stories on the website";
+# the reading list was the editor's picks from Oct 18-19). Long reads from Canadian newsrooms in the last READS_HOURS:
+# analysis, explainers, investigations and features, never opinion (Editorials has that), each with the outlet's own
+# headline, summary, byline (when the page states one) and picture. The page shows the editor's own picks while they are
+# from the last few days, and these the rest of the time.
+READS_HOURS, READS_MAX = 36, 4
+# (a headline that only reports an investigation, "Police investigate ...", is news, not a long read)
+LONG_READ = re.compile(r"(/analysis/|/explainer|/investigates/|/features?/|/longform|/in-depth|/the-big-story|/magazine/|/first-person|"
+                       r"^analysis\b|\banalysis:|\bexplainer\b|\bin[- ]depth\b|\bwhat (?:you|we) need to know\b|\bhow .{3,40} became\b|"
+                       r"\bthe story behind\b|\binside the\b)", re.I)
+LONG_READ_OUTLETS = re.compile(r"^(The Walrus|Maclean|The Narwhal|The Tyee|Canada's National Observer|National Observer|The Logic|The Hub|"
+                               r"Policy Options|IndigiNews|The Local|Hakai)", re.I)
+
+
+def short(t, n):
+    t = t.strip()
+    return t if len(t) <= n else t[:n].rsplit(" ", 1)[0].rstrip(",;:—–- ") + "…"
+
+
+def reads(items, page, now):
+    import autoupdate as au
+    out, seen = [], set()
+    cands = sorted(items, key=lambda r: r[0], reverse=True)
+    for dt, outlet, title, link, _ in cands:
+        if len(out) >= READS_MAX:
+            break
+        if (now - dt).total_seconds() > READS_HOURS * 3600 or link in page or not au.ok_item(outlet, link):
+            continue
+        o = au.clean_outlet(outlet)
+        if not (CANADIAN_OUTLET.search(o) or LONG_READ_OUTLETS.search(o)) or au.FRENCH.search(outlet):
+            continue
+        if au.OPINION.search(title + " " + link) or SPORT.search(title + " " + link) or VIDEO.search(link):
+            continue
+        if not (LONG_READ.search(link) or LONG_READ.search(title) or LONG_READ_OUTLETS.search(o)):
+            continue
+        key = re.sub(r"\W", "", title.lower())[:50]
+        if key in seen:
+            continue
+        seen.add(key)
+        info = page_info(link) or {}
+        out.append({"pic": "city", "author": "", "outlet": o.replace(" (subscribers)", ""),
+                    "date": w.eastern(dt), "iso": dt.isoformat(), "hed": clean(re.sub(r"^(?:ANALYSIS|Analysis)\s*[:|]\s*", "", title)),
+                    "href": link, "img": info.get("img", ""), "dek": short(info.get("desc") or "", 200), "auto": True})
+    return out
 
 
 def gather_themes(items, groups, now):
@@ -4478,7 +4587,7 @@ def run(page, items, groups, breaking, now, imgdir, prev):
                     ("smaller", lambda: smaller(items, page, now, imgdir)),
                     ("clocks", lambda: clock_topics(items, groups, now)),
                     ("bigweek", lambda: big_week(items, now, prev.get("bigweek") or [])),
-                    ("desks", lambda: desks(items, groups, now))]:
+                    ("desks", lambda: desks(items, groups, now)), ("reads", lambda: reads(items, page, now))]:
         try:
             res[name] = f()
         except Exception as e:  # never block the run

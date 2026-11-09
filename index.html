@@ -197,6 +197,12 @@ a.snimg { display: block; }
 .can-box .rk.us { color: #B0141E; font-weight: 700; }
 @media (prefers-color-scheme: dark) { .can-mini { background: #E3CFC2; color: #4A1520; } .can-mini li a { color: #4A1520; } }  /* ivory, never black (Hannah, Thu Oct 29, 2026) */
 @media (prefers-color-scheme: dark) {  .can-box .can-sub, .can-box time, .can-box .rk, .can-box .o, .can-box .can-note { color: #B9AFB2; } }
+.vids-older{display:block;margin:14px auto 0;padding:8px 16px;border:1px solid var(--rule,#d8d2e4);border-radius:999px;background:transparent;color:var(--accent,#5B2A86);font:600 13px/1.2 inherit;cursor:pointer}
+.vids-older[hidden]{display:none}
+.us-wait{margin:8px 0 4px;color:var(--muted,#5f5870);font-size:15px}
+.read .dek{display:block;font-size:13px;line-height:1.4;color:var(--muted,#5f5870);margin-top:4px}
+.um-earlier{margin-top:10px}.um-earlier>summary{cursor:pointer;font-weight:600;color:var(--accent,#5B2A86);font-size:14px}
+.um-now{font-size:14px;color:var(--muted,#5f5870);margin:6px 0}
 </style><style id="ca-newsroom">
 /* Canada, newsroom style not government style (Hannah, Fri Oct 30, 2026: "With the Canadian flag, can you make it
    less government looking, the Canada section?"). The official flag red (#D80621), the stiff flag leaf, the red-and-white
@@ -3941,11 +3947,25 @@ header.site { border-bottom: 0; }
     {"pic": "ballot", "author": "Craig Ellingson", "outlet": "CTV News", "date": "Oct 18, 2026", "hed": "From booze to daylight saving and equalization: A history of Alberta’s provincial referendums", "href": "https://www.ctvnews.ca/edmonton/alberta-referendum/article/from-booze-to-daylight-saving-and-equalization-a-history-of-albertas-provincial-referendums/", "img": "https://www.ctvnews.ca/resizer/v2/4KCGBQIBDVHHHLCXD2MLLAPCWQ.jpg?smart=true&auth=2f4b9695f952c29d1ceafc7093e9e6e8dae4adbd25b082e9559607d1d2fd1cd3&width=1200&height=630"},
     {"pic": "forest", "author": "Karen Bartko", "outlet": "Global News", "date": "Oct 18, 2026", "hed": "Fire at CFB Wainwright wasn’t a concern — until a rapid ‘uncommon’ shift in wind", "href": "https://globalnews.ca/news/12107062/cfb-wainwright-fire-what-we-know/", "img": "https://globalnews.ca/wp-content/uploads/2026/10/CP177109408.jpg?quality=65&strip=all&w=720&h=379&crop=1"}
   ];
-  $('reads').innerHTML = reads.map((r) =>
+  // Today's reading (Hannah, Sun Nov 8, 2026: "a lot of outdated stories on the website"; these picks were from
+  // Oct. 18-19). The editor's picks show while they are from the last READS_DAYS; otherwise each update's long reads
+  // from Canadian newsrooms take their place (tools/autopilot.py reads: analysis, explainers, investigations and
+  // features, never opinion), drawn by PAL_reads.
+  const READS_DAYS = 3;
+  const readFresh = (r) => { const t = Date.parse(r.iso || r.date); return !isNaN(t) && Date.now() - t < READS_DAYS * 864e5; };
+  function renderReads(list) {
+    $('reads').innerHTML = list.map((r) =>
     '<article class="read"><a class="pic" href="' + esc(r.href) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + (r.photo && PHOTOS[r.photo] ? '<img src="' + PHOTOS[r.photo] + '" alt="" width="300" height="300" style="width: 100%; height: 100%; object-fit: cover; display: block">' : r.img ? photo(r.img, r.pic, r.hed) : grabbed(r.href) ? photo(grabbed(r.href), r.pic, r.hed) : art(r.pic, r.hed)) + '<span class="tag">' + esc(r.outlet) + '</span></a>' +
-    '<div class="txt"><span class="author">' + esc(r.author) + '</span>' +
-    '<a class="hed" href="' + esc(r.href) + '" target="_blank" rel="noopener">' + esc(r.hed) + '</a>' +
-    '<span class="src"><span>' + esc(r.date.replace(', 2026', '')) + '</span><a href="' + esc(r.href) + '" target="_blank" rel="noopener">' + (r.via ? 'Read on ' + esc(r.via) : 'Read at ' + esc(r.outlet)) + ' &#8599;</a></span></div></article>').join('');
+    '<div class="txt">' + (r.author ? '<span class="author">' + esc(r.author) + '</span>' : '') +
+    '<a class="hed" href="' + esc(r.href) + '" target="_blank" rel="noopener">' + esc(r.hed) + '</a>' + (r.dek ? '<span class="dek">' + esc(r.dek) + '</span>' : '') +
+    '<span class="src"><span>' + esc(String(r.date || '').replace(', 2026', '')) + '</span><a href="' + esc(r.href) + '" target="_blank" rel="noopener">' + (r.via ? 'Read on ' + esc(r.via) : 'Read at ' + esc(r.outlet)) + ' &#8599;</a></span></div></article>').join('');
+    const hp = $('reads').parentElement.querySelector('.band-head p');
+    if (hp) hp.textContent = list.some((r) => r.auto) ? 'Today’s long reads from Canadian newsrooms. Every link goes to the original.' : 'Picked by the editor from other newsrooms. Every link goes to the original.';
+    const f = $('reads').parentElement.querySelector('.fine');
+    if (f) f.textContent = list.some((r) => r.auto) ? 'Long reads from Canadian newsrooms: analysis, explainers, investigations and features. Each picture is the article’s own, credited to the outlet. Checked automatically.' : 'Images are each article\'s own preview picture, credited to the outlet.';
+  }
+  window.PAL_reads = { render: renderReads, editor: reads.filter(readFresh) };
+  renderReads(reads.filter(readFresh));
 
   // Fill every fixed image slot in the page
   document.querySelectorAll('[data-art]').forEach((el) => { el.innerHTML = el.dataset.photo ? photo(el.dataset.photo, el.dataset.art, el.dataset.alt, el.dataset.credit) : art(el.dataset.art, el.dataset.alt); });
@@ -5027,7 +5047,7 @@ header.site { border-bottom: 0; }
     ['#4B2F8F', 'Hill Times podcast · The Hill Times', 'Minister Eleanor Olszewski weighs in on the Alberta referendum', 'Posted Oct 16 · at The Hill Times', 'https://www.hilltimes.com/podcast/minister-eleanor-olszewski-weighs-in-on-the-alberta-referendum/']
   ].map(([tint, s, t, w, h]) => row('wave', tint, mic.replace('width="20" height="20"', 'width="16" height="16"'), s, t, w, 'Listen', h)).join('');
 
-  // United States desk (real stories, Oct 18–19, 2026)
+  // United States desk, written by hand (real stories, Oct 18–19, 2026); shown only while fresh, see US_WRITTEN below
   const us = [
     {"pic": "podium", "topic": "Midterms", "h": "Trump’s approval hits new lows 15 days before the midterms", "s": "Weekend polls put his approval at 33% (Washington Post-ABC-Ipsos), 34% (NBC) and 36% (Fox), with Democrats ahead by 8 to 10 points on the House vote and cost of living his weakest issue. Republicans in close races are playing down their ties to him while trying to keep his base engaged.", "src": "Axios, ABC News, The Washington Post, NBC News, The Hill, MS NOW", "credit": "Aïda Amer/Axios; photo: Justin Sullivan/Getty Images", "link": "https://www.axios.com/2026/10/18/trump-approval-polls-maga-gop-midterms-2026", "img": "https://images.axios.com/PCgZbHO4bod6lRrf4aS5ZKkGJr0=/0x0:1920x1080/1366x768/2026/07/30/1785432593632.jpeg", "time": "Sun 5:46 p.m."},
     {"pic": "podium", "topic": "Courts", "h": "Supreme Court won’t revive plea deals for accused 9/11 plotters", "s": "", "src": "Associated Press, CBS News, CNN, NBC News, The Hill, Bloomberg", "credit": "J. Scott Applewhite/AP Photo", "link": "https://www.cbsnews.com/news/supreme-court-khalid-sheikh-mohammed-911-appeal/", "img": "https://cmg-cmg-tv-10040-prod.cdn.arcpublishing.com/resizer/v2/https%3A%2F%2Fcloudfront-us-east-1.images.arcpublishing.com%2Fcmg%2FRGGZW7DTGA25RDNWTYZEHHFOR4.jpg?auth=fe9a3a9569f41432a7dcbee73cdf77a577ee51bb3d92930e9ed2d519d41a0e5d&width=1200&height=630&smart=true", "time": "Mon 10:07 a.m."},
@@ -5036,12 +5056,28 @@ header.site { border-bottom: 0; }
     {"pic": "ballot", "topic": "Texas", "h": "Early voting opens in Texas with the Talarico–Paxton Senate race a toss-up", "s": "", "src": "CBS Texas, CBS News, CNN, The Dallas Morning News, Houston Public Media", "credit": "CBS Texas", "link": "https://www.cbsnews.com/texas/news/texas-senate-race-early-voting-starts/", "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/10/16/15afbaed-e524-4177-9418-9497d9cdb474/thumbnail/1200x630/3647ced12703848d209d7b1c726a587a/paxton-talarico.png", "time": "Mon a.m."}
   ];
   const usMeta = (x) => '<div class="fm">' + meter(x.src.split(',').length) + '<span class="ts">' + esc(x.time) + '</span>' + '</div><div class="fm">' + esc(x.src) + '</div>';
-  const usOpen = us;
-  const L = usOpen[0];
-  $('usLead').innerHTML = '<article class="us-lead"><a class="fimg" href="' + esc(L.link) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + photo(L.img, L.pic, L.h, L.credit || L.src.split(',')[0]) + '</a>' +
-    '<span class="eyebrow">' + esc(L.topic) + '</span><h3><a href="' + esc(L.link) + '" target="_blank" rel="noopener">' + esc(L.h) + '</a></h3><p>' + esc(L.s) + '</p>' + usMeta(L) + '</article>';
-  $('usList').innerHTML = usOpen.slice(1).map((x) => '<article class="fs"><a class="thumbs" href="' + esc(x.link) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + photo(x.img, x.pic, x.h, x.credit || x.src.split(',')[0]) + '</a>' +
-    '<span class="eyebrow">' + esc(x.topic) + '</span><h4><a href="' + esc(x.link) + '" target="_blank" rel="noopener">' + esc(x.h) + '</a></h4>' + usMeta(x) + '</article>').join('');
+  // The U.S. desk (Hannah, Sun Nov 8, 2026: "there seems to be a lot of outdated stories on the website ... fix it in
+  // the code"). The list above was written by hand on US_WRITTEN and its times ("Mon 10:07 a.m.") only make sense that
+  // week. It now shows only while it is from the last US_FRESH_DAYS; after that the U.S. desk comes from each update
+  // (live/auto.json desks, desk "us": today's American stories, most newsrooms first, each the newsroom's own headline,
+  // summary and picture), drawn by PAL_renderUS below.
+  const US_WRITTEN = '2026-10-19', US_FRESH_DAYS = 2;
+  const usFresh = Date.now() - Date.parse(US_WRITTEN + 'T23:59:59-04:00') < US_FRESH_DAYS * 864e5;
+  function renderUS(list) {
+    if (!list || !list.length) {
+      $('usLead').innerHTML = '<p class="us-wait">Today’s top American stories are on their way with the next update. Meanwhile, see what America’s newsrooms are leading with, below.</p>';
+      $('usList').innerHTML = '';
+      return;
+    }
+    const L = list[0];
+    $('usLead').innerHTML = '<article class="us-lead"><a class="fimg" href="' + esc(L.link) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + photo(L.img, L.pic, L.h, L.credit || L.src.split(',')[0]) + '</a>' +
+      '<span class="eyebrow">' + esc(L.topic) + '</span><h3><a href="' + esc(L.link) + '" target="_blank" rel="noopener">' + esc(L.h) + '</a></h3>' + (L.s ? '<p>' + esc(L.s) + '</p>' : '') + usMeta(L) + '</article>';
+    $('usList').innerHTML = list.slice(1).map((x) => '<article class="fs"><a class="thumbs" href="' + esc(x.link) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + photo(x.img, x.pic, x.h, x.credit || x.src.split(',')[0]) + '</a>' +
+      '<span class="eyebrow">' + esc(x.topic) + '</span><h4><a href="' + esc(x.link) + '" target="_blank" rel="noopener">' + esc(x.h) + '</a></h4>' + usMeta(x) + '</article>').join('');
+    try { wirePhotos(); } catch (e) {}
+  }
+  window.PAL_renderUS = renderUS;
+  renderUS(usFresh ? us : []);
   // Countdown to the U.S. midterms, Nov. 3, 2026
   try {
     const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/Toronto' }));
@@ -5262,14 +5298,40 @@ header.site { border-bottom: 0; }
   const netCard = (v) => '<span class="netcard" style="--nc:' + (NETCOL[v.o] || '#2B1B54') + '"><b>' + esc(v.o) + '</b></span>';
   // Day labels come from the upload date (up), so "Today" is never stale after midnight
   const etYmd = (d) => new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Toronto', year: 'numeric', month: '2-digit', day: '2-digit' }).format(d);
+  // A clip's day (Hannah, Sun Nov 8, 2026: "a lot of outdated stories on the website"; Watch showed Oct. 18 clips
+  // labelled "Today", because the label was typed in by hand the day the clip was added). The day now always comes from
+  // the clip itself: its upload date (up), the time it was added, or the date in its own web address (/2026/10/18/,
+  // 20261017). A clip with no date at all gets no day label rather than a wrong one.
+  function clipDay(v) {
+    if (v.up && /^\d{4}-\d\d-\d\d$/.test(v.up)) return v.up;
+    if (v.added && !isNaN(Date.parse(v.added))) return etYmd(new Date(v.added));
+    const m = /(20\d\d)[\/-](\d\d)[\/-](\d\d)(?!\d)/.exec(v.u || '') || /[\/-](20\d\d)(\d\d)(\d\d)(?!\d)/.exec(v.u || '') || /[\/_](2\d)(\d\d)(\d\d)_/.exec(v.img || '');
+    if (!m) return '';
+    const y = m[1].length === 2 ? '20' + m[1] : m[1];
+    return +m[2] >= 1 && +m[2] <= 12 && +m[3] >= 1 && +m[3] <= 31 ? y + '-' + m[2] + '-' + m[3] : '';
+  }
+  // how many days old a clip is (Eastern dates), Infinity when it has no date
+  function clipAge(v) {
+    const d = clipDay(v); if (!d) return Infinity;
+    const [y, m, dd] = d.split('-').map(Number), [ty, tm, td] = etYmd(new Date()).split('-').map(Number);
+    return Math.round((Date.UTC(ty, tm - 1, td) - Date.UTC(y, m - 1, dd)) / 864e5);
+  }
   function vDay(v) {
-    if (!v.up) return v.w;
+    const up = clipDay(v);
+    if (!up) return '';
     const today = etYmd(new Date()), yest = etYmd(new Date(Date.now() - 864e5));
-    if (v.up === today) return 'Today';
-    if (v.up === yest) return 'Yesterday';
-    const [y, m, d] = v.up.split('-').map(Number);
+    // the clip's own time of day is kept only when the clip is from today ("Today, 10:45 a.m.")
+    const tod = /,\s*(\d{1,2}(?::\d\d)?\s*[ap]\.m\.|noon)$/.exec(v.w || '');
+    if (up === today) return 'Today' + (tod ? ', ' + tod[1] : '');
+    if (up === yest) return 'Yesterday';
+    const [y, m, d] = up.split('-').map(Number);
     return ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'][m - 1] + ' ' + d;
   }
+  // Watch shows the last WATCH_DAYS days of clips, newest first. Older clips (and clips with no date) wait behind
+  // "Show older clips", so nothing is lost, but nothing old sits among today's news. On a thin day the newest older
+  // clips top the list up to WATCH_MIN, each with its real date.
+  const WATCH_DAYS = 2, WATCH_MIN = 8;
+  let vOlderOpen = false;
   const vNew = (v) => v.added && Date.now() - Date.parse(v.added) < 3 * 36e5 && Date.now() >= Date.parse(v.added);
   (function vidsStamp() {
     const el = $('vidsChecked'), t = Date.parse(VIDS_CHECKED);
@@ -5280,11 +5342,23 @@ header.site { border-bottom: 0; }
   function showVids(r) {
     curV = r;
     const all = vids.filter((v) => r === 'all' || (r === 'midterms' ? v.m : r === 'life' ? v.k === 'life' : v.r === r));
-    const list = all.filter(vNew).sort((a, b) => Date.parse(b.added) - Date.parse(a.added)).concat(all.filter((v) => !vNew(v)));
+    // newest day first; within a day, new clips first, then the order they were added
+    const byDay = (a, b) => (clipDay(b) || '').localeCompare(clipDay(a) || '') || (vNew(b) - vNew(a)) || (Date.parse(b.added || 0) || 0) - (Date.parse(a.added || 0) || 0);
+    const ranked = all.map((v, i) => [v, i]).sort((p, q) => byDay(p[0], q[0]) || p[1] - q[1]).map((x) => x[0]);
+    let recent = ranked.filter((v) => clipAge(v) <= WATCH_DAYS), older = ranked.filter((v) => clipAge(v) > WATCH_DAYS);
+    if (recent.length < WATCH_MIN) { const top = older.slice(0, WATCH_MIN - recent.length); recent = recent.concat(top); older = older.slice(top.length); }
+    const list = vOlderOpen ? recent.concat(older) : recent;
     $('vids').innerHTML = list.map((v) => '<article class="vid"><a class="vt" href="' + esc(v.u) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + (MEDIA[slotId(v.u)] ? shot(slotId(v.u)) : v.img ? photo(v.img, v.pic, v.t, v.o) : netCard(v)) +
       '<span class="pb' + (v.live ? ' live' : '') + '">' + (v.live ? 'Live' : v.d ? esc(v.d) : 'Video') + '</span></a>' +
       '<a class="bigplay" href="' + esc(vurl(v.u)) + '" target="_blank" rel="noopener" aria-label="Play on ' + esc(v.o) + ': ' + esc(vTitle(v)) + '"><svg width="30" height="30" viewBox="0 0 24 24" fill="#2B1B54" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></a>' +
       '<span class="src">' + (vNew(v) ? '<b class="vnew">New</b>' : '') + esc(v.o) + ' <span class="plays">· ' + (vRec(v) ? 'recording of a live stream that has ended · ' : '') + 'plays on their site &#8599;</span></span><h3><a href="' + esc(v.u) + '" target="_blank" rel="noopener">' + esc(vTitle(v)) + '</a></h3><span class="when">' + esc(vDay(v)) + '</span>' + addBtn(slotId(v.u)) + '</article>').join('');
+    // the older clips, one tap away
+    let ob = $('vidsOlder');
+    if (!ob) { ob = document.createElement('button'); ob.id = 'vidsOlder'; ob.type = 'button'; ob.className = 'vids-older'; $('vids').after(ob);
+      ob.addEventListener('click', () => { vOlderOpen = !vOlderOpen; showVids(curV || 'all'); if (!vOlderOpen) $('video').scrollIntoView({ block: 'start' }); }); }
+    ob.hidden = !older.length;
+    ob.textContent = vOlderOpen ? 'Show fewer clips ▴' : 'Show older clips (' + older.length + ') ▾';
+    ob.setAttribute('aria-expanded', String(vOlderOpen));
     wirePhotos();
   }
   document.querySelectorAll('.vfilters button').forEach((b) => b.addEventListener('click', () => {
@@ -6603,7 +6677,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     const fresh = !AUTO || AUTO.d.checked !== got[0].d.checked;
     AUTO = got[0];
     deadLinks();
-    if (fresh) { try { if (window.PAL_clocks && AUTO.d.clocks) window.PAL_clocks(AUTO.d.clocks); } catch (e) { console.warn('clocks', e); } blogs(); wire(); try { autoTop(); if (window.PAL_orderTop) window.PAL_orderTop(); try { leadAuto(); } catch (e) { console.warn('lead', e); } } catch (e) { console.warn('autoTop', e); } try { clips(); ledes(); stamp(); papers(); eds(); canus(); try { geoHide(); } catch (e) { console.warn('geo', e); } try { markCanada(); } catch (e) { console.warn('canada', e); } brief(); bds(); otr(); live(); related(); try { canAngle(); canAngleLive(); } catch (e) { console.warn('canAngle', e); } mostRead(); smaller(); dazzle(); } catch (e) { console.warn('autopilot', e); } if (window.PAL_eventRender) try { window.PAL_eventRender(); } catch (e) {} if (window.PAL_renderFronts) try { window.PAL_renderFronts(); if (window.PAL_oneStoryOnePlace) window.PAL_oneStoryOnePlace(); } catch (e) { console.warn(e); } }
+    if (fresh) { try { if (window.PAL_clocks && AUTO.d.clocks) window.PAL_clocks(AUTO.d.clocks); } catch (e) { console.warn('clocks', e); } blogs(); wire(); try { autoTop(); if (window.PAL_orderTop) window.PAL_orderTop(); try { leadAuto(); } catch (e) { console.warn('lead', e); } } catch (e) { console.warn('autoTop', e); } try { clips(); ledes(); stamp(); papers(); eds(); canus(); try { usDesk(); } catch (e) { console.warn('us desk', e); } try { reads(); } catch (e) { console.warn('reads', e); } try { geoHide(); } catch (e) { console.warn('geo', e); } try { markCanada(); } catch (e) { console.warn('canada', e); } brief(); bds(); otr(); live(); related(); try { canAngle(); canAngleLive(); } catch (e) { console.warn('canAngle', e); } mostRead(); smaller(); dazzle(); } catch (e) { console.warn('autopilot', e); } if (window.PAL_eventRender) try { window.PAL_eventRender(); } catch (e) {} if (window.PAL_renderFronts) try { window.PAL_renderFronts(); if (window.PAL_oneStoryOnePlace) window.PAL_oneStoryOnePlace(); } catch (e) { console.warn(e); } }
     paint();
   }
   function blogs() {
@@ -6807,12 +6881,13 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     if (window.PAL_reel && s.photos && s.photos.length > 1) window.PAL_reel(art.querySelector('.hero-art'), s.photos.map((p) => ({ src: AUTO.base + p.src, caption: p.caption, alt: p.alt })), s.key + '|' + s.url);
     ready();
   }
-  // Watch: new uploads from the networks' official YouTube channels, Canadian and U.S. first, one per network, up to 12.
+  // Watch: new uploads from the networks' official YouTube channels, Canadian and U.S. first, up to three per network, up to 30.
   function clips() {
     const V = window.PAL_vids; if (!V || !window.PAL_showVids) return;
     for (let i = V.length - 1; i >= 0; i--) if (V[i].auto) V.splice(i, 1);
     const have = new Set(V.map((v) => v.u)), per = {}, add = [];
-    (AUTO.d.clips || []).forEach((c) => { if (add.length < 12 && !have.has(c.u) && !per[c.o]) { per[c.o] = 1; add.push(Object.assign({ w: '', auto: true }, c)); } });
+    // (Sun Nov 8, 2026: up to 30 of the newest, three per network, so today's clips fill Watch instead of last month's)
+    (AUTO.d.clips || []).forEach((c) => { if (add.length < 30 && !have.has(c.u) && (per[c.o] || 0) < 3) { per[c.o] = (per[c.o] || 0) + 1; add.push(Object.assign({ w: '', auto: true }, c)); } });
     V.unshift.apply(V, add);
     try { window.PAL_showVids(); } catch (e) {}
     const el = document.getElementById('vidsChecked'); if (el) { el.textContent = 'Clips checked ' + fmt(AUTO.d.checked) + ' ET'; el.hidden = false; }
@@ -6863,6 +6938,29 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
   function eds() {
     const E = window.PAL_eds, A = AUTO.d.eds || []; if (!E || A.length < 5) return;
     E.list.length = 0; A.forEach((r) => E.list.push([r[0], r[1], r[2], r[3]])); E.render();
+    // the intro no longer names one day's subjects (it said "Today: Alberta's vote, Trump, Stelco and France" for weeks)
+    const p = document.querySelector('#editorials .band-head p');
+    if (p) p.textContent = 'We don’t write editorials. We pick the day’s best from other outlets. Checked automatically at ' + fmt(AUTO.d.checked) + ' ET.';
+  }
+  // Today's reading: the editor's picks while fresh, otherwise today's long reads from each update
+  function reads() {
+    const R = window.PAL_reads, A = (AUTO.d.reads || []).filter((r) => Date.now() - Date.parse(r.iso) < 48 * 3600e3);
+    if (!R) return;
+    if (R.editor.length >= 2) return;
+    if (A.length) R.render(R.editor.concat(A).slice(0, 4));
+  }
+  // The U.S. desk: today's American stories from each update (tools/autopilot.py desks, desk "us"; Hannah, Sun Nov 8,
+  // 2026: the hand-written U.S. stories were three weeks old). Only stories from the last 30 hours; most newsrooms first.
+  const US_TOPIC = [[/\bmidterms?|election|ballot|voters?|polls?\b/i, 'Politics'], [/\bSupreme Court|judge|court|lawsuit|indict|trial|charged\b/i, 'Courts'],
+    [/\bCongress|Senate|House|impeach/i, 'Congress'], [/\bWhite House|Trump|Vance|administration/i, 'White House'],
+    [/\btariffs?|econom|stocks?|markets?|Fed\b|Federal Reserve|jobs|inflation|prices?\b/i, 'Business'], [/\bshooting|killed|police|fire|storm|hurricane|crash/i, 'News']];
+  function usDesk() {
+    if (!window.PAL_renderUS) return;
+    const D = ((AUTO.d.desks || []).filter((r) => r.desk === 'us' && Date.now() - Date.parse(r.iso) < 30 * 3600e3));
+    if (!D.length) return;  // keeps what is there (the hand-written list while fresh, or the "on their way" line)
+    window.PAL_renderUS(D.map((r) => ({ pic: r.pic || 'podium', topic: (US_TOPIC.find(([rx]) => rx.test(r.title)) || [0, 'United States'])[1],
+      h: r.title, s: r.summary || '', src: r.outlet, credit: String(r.outlet || '').split(',')[0], link: r.url, img: r.img || '', time: r.t })));
+    const c = document.getElementById('usCount'); if (c && !/midterms in/.test(c.textContent)) c.textContent = 'Today’s top American stories, with the same six-source meter. Checked automatically at ' + fmt(AUTO.d.checked) + ' ET.';
   }
   // Canada and the U.S.: the newest reports on the relationship, and how U.S. newsrooms are covering Canada.
   // Videos that won't play for a reader in Canada (tools/autopilot.py yt_check, every run: blocked in Canada, removed,
@@ -6938,6 +7036,42 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     const html = part('Newest on trade and the border', C.talks) + part('U.S. newsrooms on Canada', C.usmedia);
     el.innerHTML = html ? html + '<p class="cu-auto-note">Checked automatically at ' + esc(fmt(AUTO.d.checked)) + ' ET. Headlines are the newsrooms’ own.</p>' : '';
     el.hidden = !html;
+    // (Hannah, Sun Nov 8, 2026: outdated stories) the band's "Updated <day>" line was typed by hand on Oct. 27; it now
+    // says when the newest reports were checked, and that the trade-war figures below were last reviewed on that day.
+    const head = document.querySelector('#canus .band-head p');
+    if (head && html) {
+      if (!head.dataset.orig) head.dataset.orig = head.textContent;
+      const m = /Updated ([A-Z][a-z]+day, [A-Z][a-z]+\.? \d{1,2})/.exec(head.dataset.orig);
+      head.textContent = 'Where the trade war stands, what changed this week, and what comes next. Every line links to the newsroom that reported it. Newest reports checked automatically at ' + fmt(AUTO.d.checked) + ' ET' + (m ? '; the figures below were last reviewed ' + m[1].replace(/^[A-Z][a-z]+day, /, '') + '.' : '.');
+    }
+    usLensAge();
+  }
+  // How U.S. media see Canada: the hand-written cards older than USLENS_DAYS fold into "Earlier U.S. coverage", with the
+  // summary written about them; the newest U.S. coverage of Canada is in the automatic list above it.
+  const USLENS_DAYS = 5;
+  function usLensAge() {
+    const lens = document.getElementById('usmedia'); if (!lens || lens.dataset.aged) return;
+    const ul = lens.querySelector(':scope > ul'); if (!ul) return;
+    const MON = { Jan: 0, Feb: 1, Mar: 2, Apr: 3, May: 4, June: 5, Jun: 5, July: 6, Jul: 6, Aug: 7, Sept: 8, Sep: 8, Oct: 9, Nov: 10, Dec: 11 };
+    const yr = new Date().getFullYear();
+    const old = [...ul.children].filter((li) => {
+      const m = /([A-Z][a-z]{2,4})\.? (\d{1,2})/.exec((li.querySelector('time') || {}).textContent || '');
+      if (!m || MON[m[1]] === undefined) return false;
+      let t = new Date(yr, MON[m[1]], +m[2]).getTime(); if (t > Date.now() + 864e5) t = new Date(yr - 1, MON[m[1]], +m[2]).getTime();
+      return Date.now() - t > USLENS_DAYS * 864e5;
+    });
+    if (!old.length) return;
+    lens.dataset.aged = '1';
+    const d = document.createElement('details'); d.className = 'um-earlier';
+    d.innerHTML = '<summary>Earlier U.S. coverage (' + old.length + ')</summary>';
+    const sum = lens.querySelector('.um-sum');
+    if (old.length === ul.children.length && sum) d.appendChild(sum);
+    const ul2 = document.createElement('ul'); old.forEach((li) => ul2.appendChild(li)); d.appendChild(ul2);
+    ul.after(d);
+    if (!ul.children.length) {
+      const has = ((AUTO.d.canus || {}).usmedia || []).length;
+      ul.outerHTML = '<p class="um-now">' + (has ? 'The newest U.S. coverage of Canada is in “U.S. newsrooms on Canada”, above.' : 'No new American coverage of Canada in the last few days.') + '</p>';
+    }
   }
   // The 60-second brief: when the written brief is from an earlier edition, the code's brief takes over, each story
   // attributed to the newsroom whose headline it reads, read aloud by the device.
@@ -7110,6 +7244,8 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     const M = window.PAL_mostRead, A = AUTO.d.mostread; if (!M || !A || !A.list || A.list.length < 5) return;
     M.list.length = 0; A.list.forEach((x) => M.list.push(x)); M.render();
     const n = document.getElementById('mrNote'); if (n) n.textContent = 'Ranked from the most-read and trending lists of ' + A.sites.join(', ') + '. Checked automatically at ' + fmt(AUTO.d.checked) + ' ET.';
+    // the fine print under the list was written for one Monday morning's ranking (Sun Nov 8, 2026: outdated text)
+    const fp = document.querySelector('#mostread > .fine'); if (fp) fp.hidden = true;
   }
   // Smaller newsrooms: today's top five from independent and northern newsrooms, the Arctic first (their own words).
   function smaller() {
