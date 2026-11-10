@@ -2201,7 +2201,7 @@ def promote_live(res, now):
                 s["tag"] = "Breaking"
     if not hits:
         return
-    ranked = sorted(cands, key=rank_key)
+    ranked = breaking_holds(sorted(cands, key=rank_key))
     _select(auto, cands, ranked, tier)
     print("live lifts:", [(s["title"][:50], s["live"]["state"], s["live"]["title"][:50]) for s, e, st in hits], "-> top:", [s["title"][:50] for s in auto["stories"][:auto.get("top_n") or 2]])
 
@@ -2305,7 +2305,7 @@ def _select(auto, cands, ranked, tier):
     auto["considered"] = [{"title": s["title"], "url": s["url"], "rank": n + 1, "live": (s.get("live") or {}).get("title", ""), "weight": s.get("weight"), "score": s.get("score"), "independent": s.get("independent"), "most_read": s["popular"],
                            "canada": s["canada"], "theme": s.get("theme") or "", "top": s in ranked[:n_top],
                            "fronts": s.get("fronts", 0), "fronts_who": s.get("fronts_who", []),
-                           "rule": dict(TOP_RULES).get(top_rule(s), ""), "carriers": s.get("carriers"), "judgment": s.get("judgment"), "why_judged": s.get("judgment_why")} for n, s in enumerate(ranked)] + [c for c in (auto.get("considered") or []) if "rank" not in c]
+                           "rule": s.get("held_top") or dict(TOP_RULES).get(top_rule(s), ""), "carriers": s.get("carriers"), "judgment": s.get("judgment"), "why_judged": s.get("judgment_why")} for n, s in enumerate(ranked)] + [c for c in (auto.get("considered") or []) if "rank" not in c]
 
 
 LAST_PICK = None
@@ -2543,6 +2543,34 @@ def top_rule(s, now=None):
     if canadian:
         return 9
     return 10
+
+
+# BREAKING HOLDS THE TOP (Hannah, Mon Nov 9, 2026: the Nvidia story, leading 9 front pages but with no report in two
+# hours, pushed the Breaking Massie-Hegseth story, 8 independent reports and a report 20 minutes old, off the top; she
+# agreed to this rule). A story that is still Breaking (several newsrooms reporting on their own, a report in the last
+# hour, or live now) keeps its place above a story ranked up only for leading other newsrooms' front pages (rule 0.5),
+# unless that story leads at least BREAKING_FRONTS_FACTOR times as many front pages. An event day (rule 0) still leads.
+BREAKING_FRONTS_FACTOR = 2
+
+
+def breaking_holds(ranked, now=None):
+    now = now or datetime.now(timezone.utc)
+    out = list(ranked)
+    for b in list(out):
+        live_now = (b.get("live") or {}).get("state") == "now"
+        if not (b.get("tag") == "Breaking" or live_now) or b.get("judgment") == "local" or top_rule(b, now) <= 0.5:
+            continue
+        i = out.index(b)
+        above = [f for f in out[:i] if top_rule(f, now) == 0.5 and not f.get("event_day")
+                 and (f.get("fronts") or 0) < BREAKING_FRONTS_FACTOR * max(1, b.get("fronts") or 0)]
+        if above:
+            j = out.index(above[0])
+            out.pop(i)
+            out.insert(j, b)
+            b["held_top"] = (f"Still Breaking (newest report {w.eastern(datetime.fromisoformat(b['newest']))}), so it stays above "
+                             f"\"{above[0]['title'][:60]}\", which leads {above[0].get('fronts') or 0} front pages to its {b.get('fronts') or 0}: "
+                             f"not twice as many") if b.get("newest") else "Still Breaking"
+    return out
 
 
 def rank_key(s):
@@ -2879,7 +2907,7 @@ def pick_by_canada(auto, items, now, eds, papers, otr, canus_, mostread=None):
             s["judgment_why"] = ("National: " + s["event_day"] + " is today." if s.get("event_day") else
                                  f"National: leading {s['fronts']} front pages ({', '.join(s['fronts_who'][:6])}).")
         s["weight"] = weight(s)
-    ranked = sorted(cands, key=rank_key)  # THE RULE (top_rule), then the bigger story; stable: ties keep the ranking order
+    ranked = breaking_holds(sorted(cands, key=rank_key))  # THE RULE (top_rule), then the bigger story; a Breaking story holds the top (breaking_holds)
     # one story per running theme in the top pair, so Canada-U.S. leads without crowding out everything else
     # (the rest of the day's Canada-U.S. stories are in the Canada and the U.S. section and the Canadian angle sidebars)
     _select(auto, cands, ranked, tier)

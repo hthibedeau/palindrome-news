@@ -81,6 +81,10 @@ Both pages open directly in a web browser. They are previews: the live site will
 
 "If you have to subscribe to the page, put it later", then "Change to hard paywalls." Hard paywalls only, sites with no free articles (`PAYWALL` in tools/autopilot.py: The Globe and Mail, The Logic, The Hill Times, The Wall Street Journal, the Financial Times, The Economist, Bloomberg.com, Barron's, The Athletic, The Times). Metered sites that give some free articles (the Toronto Star, the Postmedia papers, The New York Times, The Washington Post) count as free. A subscription page is never the headline's link when a free report exists; in every list of reports it comes after the free ones, marked "subscribers", still one tap away. Of newsrooms running the same wire story, a free one leads. The page applies the same order to its lists (`PAL_subsLater` in index.html). A story with only a subscription report still links to it.
 
+## Breaking holds the top (Hannah, Mon Nov 9, 2026)
+
+The Nvidia story, leading 9 front pages but with no new report in two hours, had pushed the Breaking Massie-Hegseth story (8 independent reports, a report 20 minutes old) off the top, because "leading other newsrooms' front pages" outranked everything. Hannah agreed to this rule: a story that is still Breaking (a report in the last hour, or live now) stays above a story ranked up for its front pages, unless that story leads at least twice as many front pages (`breaking_holds()` and `BREAKING_FRONTS_FACTOR` in tools/autopilot.py). An event day still leads. The reason shows in live/auto.json "considered".
+
 ## How the page updates itself: the code runs it
 
 Since Tue Oct 27, 2026, the site runs on code, not on Claude (Hannah: "I dont want to rely on claude to run my site. I want the code to do it"). Nothing needs a person or an AI to keep it current:
