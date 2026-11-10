@@ -8514,79 +8514,55 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
 </script>
 
 <!-- cmb:end -->
-<!-- solo-balance:start -->
-<script id="solo-balance">
-// NO HALF-EMPTY PAGE WHEN ONE STORY STANDS ALONE (Hannah, Mon Nov 9, 2026, a photo of her iPad: "Half the page is
-// blank. We've gone through this multiple times. Make it look really good."). On a big news day the lead story runs
-// full width: photo, headline and summary on the left, the Canadian angle and Connected to this story in a column on
-// the right. That right column ended halfway down, beside the long newsroom list on the left, so the right half of the
-// screen was empty colour. Now, on a wide screen (iPad, laptop), the two columns are measured after every update:
-//   1. "The latest from every newsroom" moves into the right column (under the Canadian angle, above Connected) when
-//      that brings the two bottoms closer together;
-//   2. if the right column is still clearly shorter, the list opens by itself (Show all) — but only if that evens
-//      things out, and never against a reader's own tap.
-// It goes back where it was on a phone, or when the story no longer stands alone. Nothing is removed.
-(function () {
-  const root = document.getElementById('autoBreaking'); if (!root) return;
-  const GAP = 16, SLACK = 120;
-  const wide = () => window.matchMedia('(min-width: 960px)').matches;
-  const box = (e) => { if (!e) return null; const cs = getComputedStyle(e); if (cs.display === 'none' || e.hidden) return null; return e.getBoundingClientRect(); };
-  let busy = false, t = 0;
-  function cols(art, side) {
-    const top = art.getBoundingClientRect().top; let left = 0;
-    [...art.children].forEach((e) => { if (e === side) return; const r = box(e); if (r && r.height) left = Math.max(left, r.bottom - top); });
-    const s = box(side); return { left, right: s ? s.bottom - top : 0 };
-  }
-  function undo() {
-    root.querySelectorAll('.ab-side > .sb-moved').forEach((x) => { const a = x.closest('.ab-story'); x.classList.remove('sb-moved'); if (a) a.appendChild(x); });
-  }
-  function run() {
-    if (busy) return; busy = true;
-    try {
-      const art = root.querySelector(':scope > .ab-story'), side = art && art.querySelector(':scope > .ab-side');
-      if (!root.classList.contains('solo') || !wide() || !side || root.hidden) { undo(); return; }
-      const reps = art.querySelector('.ab-reps'), rel = art.querySelector('.rel-box');
-      // wait until the other layers have folded the list and de-duplicated Connected
-      if ((!reps || !reps.classList.contains('cr-fold') || (rel && !rel.dataset.dd)) && (run.tries = (run.tries || 0) + 1) < 10) { clearTimeout(t); t = setTimeout(run, 400); return; }
-      run.tries = 0; if (!reps) return;
-      let c = cols(art, side);
-      // 1. move the newsroom list across when it evens the columns
-      if (reps.parentNode !== side && c.left - c.right > SLACK) {
-        const h = reps.getBoundingClientRect().height + GAP;
-        if (Math.abs((c.left - h) - (c.right + h)) < c.left - c.right) {
-          reps.classList.add('sb-moved');
-          if (rel && rel.parentNode === side) rel.before(reps); else side.appendChild(reps);
-          c = cols(art, side);
-        }
-      } else if (reps.parentNode === side && c.right - c.left > SLACK && reps.classList.contains('sb-moved')) {
-        // the right column grew past the left (a long Canadian angle, projections): the list goes back
-        reps.classList.remove('sb-moved'); art.appendChild(reps); c = cols(art, side);
-      }
-      // 2. still a gap on the right: open the list if that evens things out
-      if (reps.parentNode === side && c.left - c.right > SLACK && !reps.classList.contains('cr-open') && !reps.dataset.user) {
-        const b = reps.querySelector(':scope > .cr-more');
-        if (b) {
-          const before = c.left - c.right; b.click(); const n = cols(art, side);
-          if (Math.abs(n.left - n.right) >= before) b.click(); else reps.dataset.auto = '1';
-        }
-      }
-    } catch (e) { console.warn('solo-balance', e); }
-    finally { setTimeout(() => { busy = false; }, 80); }
-  }
-  const later = (ms) => { clearTimeout(t); t = setTimeout(run, ms); };
-  new MutationObserver(() => { if (!busy) later(450); }).observe(root, { childList: true, subtree: true, attributes: true, attributeFilter: ['class', 'hidden'] });
-  window.addEventListener('resize', () => later(300));
-  window.addEventListener('load', () => later(300));
-  later(1200); setTimeout(run, 4500);
-  window.PAL_soloBalance = run;
-})();
-</script>
-<style id="solo-balance-css">
+<!-- solo-front:start -->
+<style id="solo-front">
+/* A NEWSPAPER FRONT WHEN ONE BIG STORY STANDS ALONE (Hannah, Mon Nov 9, 2026, on her iPad: "Half the page is blank ...
+   Make it look really good", then "still isnt the most appealing"). On a wide screen (iPad, laptop) the lone big story
+   is laid out like a front page instead of two uneven columns:
+     1. the tags, the headline across the full width, the subheadline and the byline, so the story reads first;
+     2. the live strip and live video, if any (live coverage stays right under the breaking story);
+     3. the photo on the left, the Canadian angle and Connected to this story beside it, the photo cut to exactly the
+        height of that column, so the two always end together and nothing is left blank;
+     4. "The latest from every newsroom" across the full width, three reports side by side (with no Canadian angle in
+        the edition, it goes beside the photo instead, under Connected).
+   With no photo, the Canadian angle and Connected sit side by side across the width. Phones keep one column. Pure
+   layout: nothing is moved out of the story or removed. */
 @media (min-width: 960px) {
-  /* the newsroom list in the right column keeps its own look; its "Show all" stays in its heading */
-  #autoBreaking.solo .ab-story > .ab-side > .ab-reps { border-top: 1px solid rgba(255,255,255,.16) !important; padding-top: 14px !important; }
-  #autoBreaking.solo .ab-story > .ab-side > .ab-reps li { font-size: 15.5px; }
+  #autoBreaking.solo > .ab-story:not(.ab-second) { display: grid !important; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); column-gap: 32px; row-gap: 0; align-items: start; }
+  #autoBreaking.solo > .ab-story:not(.ab-second)::after { display: none !important; }
+  #autoBreaking.solo > .ab-story:not(.ab-second) > * { grid-column: 1 / -1; margin-right: 0 !important; min-width: 0; }
+  /* 1. the story first */
+  #autoBreaking.solo > .ab-story > .cr-tags { grid-row: 1; margin: 0 0 14px !important; }
+  #autoBreaking.solo > .ab-story > h2 { grid-row: 2; font-size: clamp(40px, 4.4vw, 62px) !important; line-height: 1.04 !important; letter-spacing: -.018em; margin: 0 0 16px !important; max-width: none !important; text-wrap: balance; }
+  #autoBreaking.solo > .ab-story > .ab-sub { grid-row: 3; font-size: clamp(18px, 1.6vw, 21px) !important; line-height: 1.45 !important; max-width: 62ch; margin: 0 0 12px !important; opacity: .95; }
+  #autoBreaking.solo > .ab-story > .cr-byline { grid-row: 4; max-width: none !important; margin: 0 0 24px !important; padding-bottom: 22px; border-bottom: 1px solid rgba(255,255,255,.22); }
+  /* 2. live */
+  #autoBreaking.solo > .ab-story > .cr-live { grid-row: 5; margin: 0 0 20px !important; }
+  #autoBreaking.solo > .ab-story > .ab-vids { grid-row: 6; margin: 0 0 22px !important; }
+  /* 3. photo beside the Canadian angle, ending together */
+  #autoBreaking.solo > .ab-story > .bart { grid-column: 1; grid-row: 7; align-self: stretch; aspect-ratio: auto !important; min-height: 300px; max-width: none !important; margin: 0 !important; border-radius: 10px; overflow: hidden; }
+  #autoBreaking.solo > .ab-story > .bart > .ph, #autoBreaking.solo > .ab-story > .bart > .ph > img, #autoBreaking.solo > .ab-story > .bart > img { display: block; width: 100%; height: 100% !important; aspect-ratio: auto !important; object-fit: cover; }
+  #autoBreaking.solo > .ab-story > .bart > .ph { position: absolute; inset: 0; }
+  #autoBreaking.solo > .ab-story > .bart-cap { grid-column: 1; grid-row: 8; margin: 8px 0 0 !important; max-width: none; }
+  #autoBreaking.solo > .ab-story > .ab-side { grid-column: 2; grid-row: 7; float: none !important; width: auto !important; margin: 0 !important; display: flex; flex-direction: column; gap: 16px; }
+  #autoBreaking.solo > .ab-story > .ab-side > .rel-box { margin: 0 !important; }
+  #autoBreaking.solo > .ab-story:not(:has(> .bart)) > .ab-side { grid-column: 1 / -1; flex-direction: row; align-items: flex-start; }
+  #autoBreaking.solo > .ab-story:not(:has(> .bart)) > .ab-side > * { flex: 1 1 0; min-width: 0; }
+  /* 4. every newsroom, across the width */
+  #autoBreaking.solo > .ab-story > .ab-reps { grid-row: 9; margin: 28px 0 0 !important; padding-top: 18px !important; border-top: 1px solid rgba(255,255,255,.22) !important; }
+  #autoBreaking.solo > .ab-story > .ab-reps > ol { display: grid !important; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 28px; margin-top: 6px; }
+  #autoBreaking.solo > .ab-story > .ab-reps > ol > li { margin: 0 !important; }
+  /* no Canadian angle in this edition: the newsroom list goes beside the photo, under Connected, so the right column
+     still reaches the bottom of the photo */
+  #autoBreaking.solo > .ab-story:has(> .bart):not(:has(.can-box)) > .bart { grid-row: 7 / 9; }
+  #autoBreaking.solo > .ab-story:has(> .bart):not(:has(.can-box)) > .bart-cap { grid-row: 9; }
+  #autoBreaking.solo > .ab-story:has(> .bart):not(:has(.can-box)) > .ab-reps { grid-column: 2; grid-row: 8; margin: 16px 0 0 !important; }
+  #autoBreaking.solo > .ab-story:has(> .bart):not(:has(.can-box)) > .ab-reps > ol { grid-template-columns: 1fr !important; }
+}
+@media (min-width: 960px) and (max-width: 1099px) {
+  #autoBreaking.solo > .ab-story > .ab-reps > ol { grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 20px; }
+  #autoBreaking.solo > .ab-story > .ab-reps > ol > li { font-size: 15px; }
 }
 </style>
-<!-- solo-balance:end -->
+<!-- solo-front:end -->
 </body></html>

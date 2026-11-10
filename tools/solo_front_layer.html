@@ -1,0 +1,51 @@
+<!-- solo-front:start -->
+<style id="solo-front">
+/* A NEWSPAPER FRONT WHEN ONE BIG STORY STANDS ALONE (Hannah, Mon Nov 9, 2026, on her iPad: "Half the page is blank ...
+   Make it look really good", then "still isnt the most appealing"). On a wide screen (iPad, laptop) the lone big story
+   is laid out like a front page instead of two uneven columns:
+     1. the tags, the headline across the full width, the subheadline and the byline, so the story reads first;
+     2. the live strip and live video, if any (live coverage stays right under the breaking story);
+     3. the photo on the left, the Canadian angle and Connected to this story beside it, the photo cut to exactly the
+        height of that column, so the two always end together and nothing is left blank;
+     4. "The latest from every newsroom" across the full width, three reports side by side (with no Canadian angle in
+        the edition, it goes beside the photo instead, under Connected).
+   With no photo, the Canadian angle and Connected sit side by side across the width. Phones keep one column. Pure
+   layout: nothing is moved out of the story or removed. */
+@media (min-width: 960px) {
+  #autoBreaking.solo > .ab-story:not(.ab-second) { display: grid !important; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); column-gap: 32px; row-gap: 0; align-items: start; }
+  #autoBreaking.solo > .ab-story:not(.ab-second)::after { display: none !important; }
+  #autoBreaking.solo > .ab-story:not(.ab-second) > * { grid-column: 1 / -1; margin-right: 0 !important; min-width: 0; }
+  /* 1. the story first */
+  #autoBreaking.solo > .ab-story > .cr-tags { grid-row: 1; margin: 0 0 14px !important; }
+  #autoBreaking.solo > .ab-story > h2 { grid-row: 2; font-size: clamp(40px, 4.4vw, 62px) !important; line-height: 1.04 !important; letter-spacing: -.018em; margin: 0 0 16px !important; max-width: none !important; text-wrap: balance; }
+  #autoBreaking.solo > .ab-story > .ab-sub { grid-row: 3; font-size: clamp(18px, 1.6vw, 21px) !important; line-height: 1.45 !important; max-width: 62ch; margin: 0 0 12px !important; opacity: .95; }
+  #autoBreaking.solo > .ab-story > .cr-byline { grid-row: 4; max-width: none !important; margin: 0 0 24px !important; padding-bottom: 22px; border-bottom: 1px solid rgba(255,255,255,.22); }
+  /* 2. live */
+  #autoBreaking.solo > .ab-story > .cr-live { grid-row: 5; margin: 0 0 20px !important; }
+  #autoBreaking.solo > .ab-story > .ab-vids { grid-row: 6; margin: 0 0 22px !important; }
+  /* 3. photo beside the Canadian angle, ending together */
+  #autoBreaking.solo > .ab-story > .bart { grid-column: 1; grid-row: 7; align-self: stretch; aspect-ratio: auto !important; min-height: 300px; max-width: none !important; margin: 0 !important; border-radius: 10px; overflow: hidden; }
+  #autoBreaking.solo > .ab-story > .bart > .ph, #autoBreaking.solo > .ab-story > .bart > .ph > img, #autoBreaking.solo > .ab-story > .bart > img { display: block; width: 100%; height: 100% !important; aspect-ratio: auto !important; object-fit: cover; }
+  #autoBreaking.solo > .ab-story > .bart > .ph { position: absolute; inset: 0; }
+  #autoBreaking.solo > .ab-story > .bart-cap { grid-column: 1; grid-row: 8; margin: 8px 0 0 !important; max-width: none; }
+  #autoBreaking.solo > .ab-story > .ab-side { grid-column: 2; grid-row: 7; float: none !important; width: auto !important; margin: 0 !important; display: flex; flex-direction: column; gap: 16px; }
+  #autoBreaking.solo > .ab-story > .ab-side > .rel-box { margin: 0 !important; }
+  #autoBreaking.solo > .ab-story:not(:has(> .bart)) > .ab-side { grid-column: 1 / -1; flex-direction: row; align-items: flex-start; }
+  #autoBreaking.solo > .ab-story:not(:has(> .bart)) > .ab-side > * { flex: 1 1 0; min-width: 0; }
+  /* 4. every newsroom, across the width */
+  #autoBreaking.solo > .ab-story > .ab-reps { grid-row: 9; margin: 28px 0 0 !important; padding-top: 18px !important; border-top: 1px solid rgba(255,255,255,.22) !important; }
+  #autoBreaking.solo > .ab-story > .ab-reps > ol { display: grid !important; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 28px; margin-top: 6px; }
+  #autoBreaking.solo > .ab-story > .ab-reps > ol > li { margin: 0 !important; }
+  /* no Canadian angle in this edition: the newsroom list goes beside the photo, under Connected, so the right column
+     still reaches the bottom of the photo */
+  #autoBreaking.solo > .ab-story:has(> .bart):not(:has(.can-box)) > .bart { grid-row: 7 / 9; }
+  #autoBreaking.solo > .ab-story:has(> .bart):not(:has(.can-box)) > .bart-cap { grid-row: 9; }
+  #autoBreaking.solo > .ab-story:has(> .bart):not(:has(.can-box)) > .ab-reps { grid-column: 2; grid-row: 8; margin: 16px 0 0 !important; }
+  #autoBreaking.solo > .ab-story:has(> .bart):not(:has(.can-box)) > .ab-reps > ol { grid-template-columns: 1fr !important; }
+}
+@media (min-width: 960px) and (max-width: 1099px) {
+  #autoBreaking.solo > .ab-story > .ab-reps > ol { grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 20px; }
+  #autoBreaking.solo > .ab-story > .ab-reps > ol > li { font-size: 15px; }
+}
+</style>
+<!-- solo-front:end -->
