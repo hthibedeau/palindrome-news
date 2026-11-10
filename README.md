@@ -67,7 +67,7 @@ Both pages open directly in a web browser. They are previews: the live site will
 
 ## Watch this story (Hannah, Mon Nov 9, 2026)
 
-"Under the top news story, can you put a watch section like we have below, but just include the watch of that story." Under each top story, "Watch this story" shows the same Watch cards, only for that story: clips from the last two days whose titles share two of the story's words, or one of its names (Hegseth, Massie) that isn't an everyday political word. A clip appears under only one story. `PAL_storyWatch` in index.html; it redraws whenever the top stories or the clips update. Each tap goes straight to the clip on the network's site.
+"Under the top news story, can you put a watch section like we have below, but just include the watch of that story." Under each top story and its photo (before the reports), "Watch this story" shows the same Watch cards, only for that story, in a row that scrolls sideways like Watch below: clips from the last two days whose titles share two of the story's words, or one of its names (Hegseth, Massie) that isn't an everyday political word. A clip appears under only one story. `PAL_storyWatch` in index.html; it redraws whenever the top stories or the clips update. Each tap goes straight to the clip on the network's site.
 
 ## How the page updates itself: the code runs it
 

@@ -208,7 +208,8 @@ a.snimg { display: block; }
 .ab-watch{grid-column:1/-1;margin:16px 0 4px;padding-top:12px;border-top:1px solid rgba(255,255,255,.18);position:relative;z-index:2}
 .ab-watch-h{display:flex;align-items:center;gap:8px;margin:0 0 10px;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#FFFFFF}
 .ab-watch-h .pn-ic{width:18px;height:18px}
-.ab-watch .vids{grid-auto-columns:min(240px,70vw);gap:14px}
+.ab-watch .vids{grid-auto-columns:min(260px,74vw);gap:18px;overflow-x:auto;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.55) transparent;padding-bottom:10px}
+.ab-watch .vids::-webkit-scrollbar{height:8px}.ab-watch .vids::-webkit-scrollbar-thumb{background:rgba(255,255,255,.45);border-radius:4px}
 #autoBreaking .ab-watch .vid .bigplay{position:absolute!important;top:0!important;left:0!important;width:100%!important;aspect-ratio:16/9;display:flex!important;align-items:center;justify-content:center;margin:0!important}
 #autoBreaking .ab-watch .vid .vt{position:relative!important;display:block!important}
 .ab-watch .vid .src,.ab-watch .vid .when,.ab-watch .vid .plays{color:#F6E1E8}
@@ -5421,17 +5422,23 @@ header.site { border-bottom: 0; }
       const art = sec.querySelector('.ab-story[data-key="' + CSS.escape(st.key) + '"]'); if (!art) return;
       const words = new Set((st.words || []).map((x) => String(x).toLowerCase()));
       const names = new Set((String(st.title || '').match(/\b[A-Z][a-z’'-]{3,}/g) || []).map((x) => x.toLowerCase().replace(/[’']s$/, '')).filter((x) => !SW_COMMON.has(x)));
-      const hits = vids.filter((v) => {
+      // every clip the update found, not only the 30 shown in Watch, so the row has all the story's clips to scroll through
+      const extra = (((window.PAL_autoupdate && window.PAL_autoupdate.data && window.PAL_autoupdate.data.clips) || [])
+        .filter((c) => !vids.some((v) => v.u === c.u)).map((c) => Object.assign({ w: '', auto: true }, c)));
+      const hits = vids.concat(extra).filter((v) => {
         if (used.has(v.u) || clipAge(v) > WATCH_DAYS) return false;
         const t = new Set(String(v.t || '').toLowerCase().match(/[a-z0-9]+/g) || []);
         const shared = [...words].filter((x) => t.has(x));
         return shared.length >= 2 || shared.some((x) => names.has(x) && !SW_COMMON.has(x)) || [...names].some((x) => x.length >= 5 && t.has(x));
-      }).sort((a, b) => (clipDay(b) || '').localeCompare(clipDay(a) || '') || (Date.parse(b.added || 0) || 0) - (Date.parse(a.added || 0) || 0)).slice(0, 8);
+      }).sort((a, b) => (clipDay(b) || '').localeCompare(clipDay(a) || '') || (Date.parse(b.added || 0) || 0) - (Date.parse(a.added || 0) || 0)).slice(0, 16);
       if (!hits.length) return;
       hits.forEach((v) => used.add(v.u));
       const box = document.createElement('div'); box.className = 'ab-watch';
       box.innerHTML = '<p class="ab-watch-h"><svg class="pn-ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10 9.5v5l4.5-2.5z" fill="currentColor"/></svg>Watch this story <span class="pn-n">' + hits.length + (hits.length === 1 ? ' clip' : ' clips') + '</span></p><div class="vids">' + hits.map(vidCard).join('') + '</div>';
-      art.appendChild(box);
+      // under the story and its photo (Hannah, Mon Nov 9, 2026: "put it underneath the top story and top photo"):
+      // after the headline, summary, photo and caption, before the list of reports
+      const reps = art.querySelector(':scope > .ab-reps');
+      if (reps) art.insertBefore(box, reps); else art.appendChild(box);
     });
     try { wirePhotos(); } catch (e) {}
   };
@@ -8595,6 +8602,10 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
      still reaches the bottom of the photo */
   #autoBreaking.solo > .ab-story:has(> .bart):not(:has(.can-box)) > .bart { grid-row: 7 / 9; }
   #autoBreaking.solo > .ab-story:has(> .bart):not(:has(.can-box)) > .bart-cap { grid-row: 9; }
+  /* Watch this story: under the photo and its caption, then the reports (Mon Nov 9, 2026) */
+  #autoBreaking.solo > .ab-story > .ab-watch { grid-column: 1 / -1; grid-row: 9; margin: 26px 0 0 !important; }
+  #autoBreaking.solo > .ab-story:has(> .ab-watch) > .ab-reps { grid-row: 10; }
+  #autoBreaking.solo > .ab-story:has(> .bart):not(:has(.can-box)) > .ab-watch { grid-row: 10; }
   #autoBreaking.solo > .ab-story:has(> .bart):not(:has(.can-box)) > .ab-reps { grid-column: 2; grid-row: 8; margin: 16px 0 0 !important; }
   #autoBreaking.solo > .ab-story:has(> .bart):not(:has(.can-box)) > .ab-reps > ol { grid-template-columns: 1fr !important; }
 }
