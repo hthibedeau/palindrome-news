@@ -2606,8 +2606,11 @@ def breaking_holds(ranked, now=None):
         if not (b.get("tag") == "Breaking" or live_now) or b.get("judgment") == "local" or top_rule(b, now) <= 0.5:
             continue
         i = out.index(b)
+        # a story from abroad never holds above the Canadian story leading Canada's front pages (Hannah, Tue Nov 10,
+        # 2026: the Hegseth story held above the Stellantis plant sale, 6 Canadian front pages to its 1)
         above = [f for f in out[:i] if top_rule(f, now) == 0.5 and not f.get("event_day")
-                 and (f.get("fronts") or 0) < BREAKING_FRONTS_FACTOR * max(1, b.get("fronts") or 0)]
+                 and (f.get("fronts") or 0) < BREAKING_FRONTS_FACTOR * max(1, b.get("fronts") or 0)
+                 and not (b.get("outled_ca") and f.get("canada") == "canadian")]
         if above:
             j = out.index(above[0])
             out.pop(i)
