@@ -243,7 +243,8 @@ def todays_canada(page, now, links, per_region=2, total=18):
     import html as _h
     import canada_scan as cs
     day = w.eastern(now).split()[0]
-    rows = [r for r in cs.collect(18, now) if w.eastern(r[0]).split()[0] == day]
+    all_rows = [r for r in cs.collect(18, now) if w.eastern(r[0]).split()[0] == day]
+    rows = list(all_rows)
     rows = [r for r in rows if r[4].split("?")[0].rstrip("/") not in links and not FRENCH.search(r[2])
             and not OPINION.search(r[3] + " " + r[4]) and not SOFT.search(r[3] + " " + r[4]) and not re.search(gc.SKIP, r[3], re.I)
             and not re.search(r"/community/|jackpot|Lotto", r[3] + " " + r[4], re.I)]
@@ -269,9 +270,23 @@ def todays_canada(page, now, links, per_region=2, total=18):
             region = reg
         seen_words.append(ws)
         per[region] = per.get(region, 0) + 1
-        src = ", ".join([outlet] + sorted(o for o in others if not FRENCH.search(o))[:2])
+        # independent reports, not newsrooms (Hannah, Mon Nov 9, 2026: "a lot of them use Associated Press story"): the
+        # other newsrooms' reports are read for their bylines, and one wire story run by several counts once
+        # ("Global News + CP24 (CP)"); a comma separates independent reports
+        peers = [(r[0], r[2], r[3], r[4]) for r in all_rows if r[2] != outlet and r[2] in others and len(ws & cs.words(r[3])) >= 3
+                 and not FRENCH.search(r[2])][:6]
+        try:
+            import autopilot as ap
+            ap.INFO_CACHE.setdefault(url, {"wire": ap.wire_of_page(x), "desc": desc, "people": ap.people_of_page(x)})
+            from concurrent.futures import ThreadPoolExecutor as _TP
+            with _TP(6) as ex:
+                list(ex.map(ap.page_info, [p_[3] for p_ in peers]))
+            label, n_ind = ap.grouped_outlets([(dt, outlet, title, url)] + peers, (dt, outlet, title, url))
+            src = ", ".join(label.split(", ")[:3])
+        except Exception:
+            src, n_ind = ", ".join([outlet] + sorted(o for o in others if not FRENCH.search(o))[:2]), None
         out.append({"t": w.eastern(dt), "iso": dt.isoformat(), "region": "National" if region == "Canada" else region,
-                    "title": _h.unescape(title), "summary": desc, "outlet": src, "url": url, "img": _h.unescape(img)})
+                    "title": _h.unescape(title), "summary": desc, "outlet": src, "n": n_ind, "url": url, "img": _h.unescape(img)})
         if len(out) >= total:
             break
     out.sort(key=lambda r: r["iso"], reverse=True)

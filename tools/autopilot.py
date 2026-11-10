@@ -398,6 +398,15 @@ def source_of(r):
     m = re.search(r"\((?:via )?(The Canadian Press|Canadian Press|The Associated Press|Associated Press|AP|Reuters|AFP)\)|^(The Canadian Press|The Associated Press|Reuters|AFP) via ", o)
     if m:
         return {"Canadian Press": "The Canadian Press", "Associated Press": "The Associated Press", "AP": "The Associated Press"}.get(m.group(1) or m.group(2), m.group(1) or m.group(2))
+    # the wire's own address on a newsroom's site (ABC News runs AP copy at /wireStory/, Yahoo at /ap-..., the Star's
+    # and CP24's wire sections) or the wire's own site
+    u = r[3]
+    if re.search(r"apnews\.com/|/wireStory/|/ap-[a-z0-9-]+|[?&]src=ap\b", u):
+        return "The Associated Press"
+    if re.search(r"reuters\.com/", u):
+        return "Reuters"
+    if re.search(r"thecanadianpress\.com/", u):
+        return "The Canadian Press"
     info = INFO_CACHE.get(r[3]) or {}
     return info.get("wire") or owner(o)
 
@@ -4373,6 +4382,7 @@ def event_day_stories(bigweek, items, now, imgdir, prev):
 
 DESK_HOURS, DESK_MAX, DESK_INFO_LOOKS = 24, 8, 40
 DESK_MAX_US = 6
+DESK_BYLINES = 220
 DESK_BUSINESS = re.compile(r"\b(econom\w*|inflation|GDP|jobs report|unemployment|interest rates?|rate (?:cut|hike|decision)|Bank of Canada|"
                            r"Federal Reserve|stocks?|TSX|stock market|S&P|Nasdaq|markets?|earnings|profits?|revenue|shares|investors?|layoffs?|"
                            r"lays? off|job cuts|tariffs?|trade (?:deal|war|talks)|exports?|imports?|housing market|home sales|mortgage|"
@@ -4412,6 +4422,36 @@ is are was were be been its it his her their this that new more than into about 
 def desk_words(t):
     ws = re.findall(r"[a-z0-9]+(?:'[a-z]+)?", t.lower().replace("’", "'").replace("‘", "'"))
     return {re.sub(r"(?<=[a-z]{4})s$", "", x) for x in ws if x not in DESK_STOP and len(x) > 2}
+
+
+WIRE_SHORT = {"The Associated Press": "AP", "The Canadian Press": "CP", "Reuters": "Reuters", "AFP": "AFP", "Bloomberg News": "Bloomberg"}
+
+
+def grouped_outlets(rows, lead):
+    """The newsrooms on a story, grouped by who really wrote each report (Hannah, Mon Nov 9, 2026: "Some you count as a
+    independent report are not, because a lot of them use Associated Press story"). One wire story run by CTV News, CP24
+    and the Toronto Star is one report: "CTV News + CP24 + Toronto Star (AP)". Returns (the outlets line, with a comma
+    between independent reports and "+" between newsrooms running the same one, lead's report first; the number of
+    independent reports). Needs page_info for the rows (their bylines) in INFO_CACHE first."""
+    import autoupdate as au
+    rows = sorted(rows, key=lambda r: (r[3] != lead[3], r[0]))
+    groups = report_groups([tuple(r[:4]) for r in rows])
+    groups.sort(key=lambda g: not any(r[3] == lead[3] for r in g))
+    labels = []
+    for g in groups:
+        outs = []
+        for r in sorted(g, key=lambda r: r[3] != lead[3]):
+            o = au.clean_outlet(r[1]).replace(" (subscribers)", "")
+            o = re.sub(r"\s*\((?:via )?[^)]*\)$", "", o) if re.search(r"\((?:via )?(?:The )?(?:Canadian|Associated) Press\)", o) else o
+            if o not in outs:
+                outs.append(o)
+        src = source_of(g[0])
+        wire = WIRE_SHORT.get(src, "")
+        lab = " + ".join(outs[:4]) + (" + %d more" % (len(outs) - 4) if len(outs) > 4 else "")
+        if wire and not re.search(r"Press|Reuters|AFP|Bloomberg", lab):
+            lab += " (" + wire + ")"
+        labels.append(lab)
+    return ", ".join(labels), len(groups)
 
 
 def desks(items, groups, now):
@@ -4469,6 +4509,20 @@ def desks(items, groups, now):
         out.append({"desk": desk, "n": len(outlets), "rows": rows, "lead": lead, "outlets": outlets, "words": words})
     # most newsrooms first, then newest; DESK_MAX per desk
     out.sort(key=lambda x: (-x["n"], -x["lead"][0].timestamp()))
+    # INDEPENDENT REPORTS, NOT NEWSROOMS (Mon Nov 9, 2026): read the bylines of the reports on the stories in the running
+    # (up to DESK_BYLINES pages), so a wire story run by several newsrooms counts once, then rank by independent reports
+    pick, per0 = [], {}
+    for x in out:
+        cap = (DESK_MAX_US if x["desk"] == "us" else DESK_MAX) + 3
+        if per0.get(x["desk"], 0) < cap:
+            per0[x["desk"]] = per0.get(x["desk"], 0) + 1
+            pick.append(x)
+    urls = [r[3] for x in pick for r in x["rows"][:8] if r[3] not in INFO_CACHE][:DESK_BYLINES]
+    with ThreadPoolExecutor(12) as ex:
+        list(ex.map(page_info, urls))
+    for x in pick:
+        x["label"], x["n"] = grouped_outlets(x["rows"][:12], x["lead"])
+    out = sorted(pick, key=lambda x: (-x["n"], -x["lead"][0].timestamp()))
     per, final = {}, []
     for x in out:
         if per.get(x["desk"], 0) >= (DESK_MAX_US if x["desk"] == "us" else DESK_MAX):
@@ -4480,9 +4534,10 @@ def desks(items, groups, now):
         desc = info.get("desc") or ""
         per[x["desk"]] = per.get(x["desk"], 0) + 1
         lead = x["lead"]
-        src = ", ".join([au.clean_outlet(lead[1]).replace(" (subscribers)", "")] + [o for o in x["outlets"] if o != au.clean_outlet(lead[1])][:5])
+        # comma between independent reports, "+" between newsrooms that ran the same one ("CTV News + CP24 (AP)")
+        src = x["label"]
         final.append({"desk": x["desk"], "pic": DESK_PICS[x["desk"]], "t": w.eastern(lead[0]), "iso": lead[0].isoformat(), "title": clean(lead[2]),
-                      "summary": desc if len(desc) >= 40 else "", "outlet": src, "url": lead[3], "img": info.get("img", "")})
+                      "summary": desc if len(desc) >= 40 else "", "outlet": src, "n": x["n"], "url": lead[3], "img": info.get("img", "")})
     return final
 
 

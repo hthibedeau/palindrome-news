@@ -73,6 +73,10 @@ Both pages open directly in a web browser. They are previews: the live site will
 
 "At the top where it says 8 independent reports, when you touch that, could it take you down to the screen where it says what each newsroom reports?" On every top story, the lead story and a hand-written Breaking story, the report count ("8 independent reports ↓") is a link: one tap opens that story's "What each newsroom reports" list, shows all of it, and scrolls down to it (`goReps` in index.html).
 
+## Independent reports, not newsrooms (Hannah, Mon Nov 9, 2026)
+
+"Some you count as a independent report are not, because a lot of them use Associated Press story." The Politics, Business, World, U.S. and Canada desks now read the byline of each newsroom's report (`grouped_outlets()` in tools/autopilot.py, and the Canada desk in tools/autoupdate.py), the same way the top stories do: one wire story run by several newsrooms counts once. The outlets line shows it: a comma between independent reports, "+" between newsrooms that ran the same one, with the wire named ("Toronto Star + ABC News + CTV News + CP24 (AP)"). The six-source meter and the ranking count independent reports. A wire's own address on a newsroom's site (/wireStory/, apnews.com) counts as the wire's report too.
+
 ## How the page updates itself: the code runs it
 
 Since Tue Oct 27, 2026, the site runs on code, not on Claude (Hannah: "I dont want to rely on claude to run my site. I want the code to do it"). Nothing needs a person or an AI to keep it current:

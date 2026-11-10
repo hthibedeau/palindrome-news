@@ -3793,7 +3793,7 @@ header.site { border-bottom: 0; }
         list.map(([pic, , h, sum, src, link, img, time, region], i) => {
           const n = src.split(',').length;
           return '<article class="fs' + (i === 0 ? ' top' : img ? ' th' : '') + '">' +
-            (i === 0 ? '<a class="fimg" href="' + esc(link) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + photo(img, pic, h, src.split(',')[0]) + '</a>' : '') +
+            (i === 0 ? '<a class="fimg" href="' + esc(link) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + photo(img, pic, h, src.split(/,| \+ | \(/)[0]) + '</a>' : '') +
             (i > 0 && img ? '<a class="fthumb" href="' + esc(link) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + photo(img, pic, h) + '</a>' : '') +
             (region ? '<span class="fs-region">' + esc(region) + '</span>' : '') +
             '<h4><a href="' + esc(link) + '" target="_blank" rel="noopener">' + esc(h) + '</a></h4>' +
@@ -5120,9 +5120,9 @@ header.site { border-bottom: 0; }
       return;
     }
     const L = list[0];
-    $('usLead').innerHTML = '<article class="us-lead"><a class="fimg" href="' + esc(L.link) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + photo(L.img, L.pic, L.h, L.credit || L.src.split(',')[0]) + '</a>' +
+    $('usLead').innerHTML = '<article class="us-lead"><a class="fimg" href="' + esc(L.link) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + photo(L.img, L.pic, L.h, L.credit || L.src.split(/,| \+ | \(/)[0]) + '</a>' +
       '<span class="eyebrow">' + esc(L.topic) + '</span><h3><a href="' + esc(L.link) + '" target="_blank" rel="noopener">' + esc(L.h) + '</a></h3>' + (L.s ? '<p>' + esc(L.s) + '</p>' : '') + usMeta(L) + '</article>';
-    $('usList').innerHTML = list.slice(1).map((x) => '<article class="fs"><a class="thumbs" href="' + esc(x.link) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + photo(x.img, x.pic, x.h, x.credit || x.src.split(',')[0]) + '</a>' +
+    $('usList').innerHTML = list.slice(1).map((x) => '<article class="fs"><a class="thumbs" href="' + esc(x.link) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + photo(x.img, x.pic, x.h, x.credit || x.src.split(/,| \+ | \(/)[0]) + '</a>' +
       '<span class="eyebrow">' + esc(x.topic) + '</span><h4><a href="' + esc(x.link) + '" target="_blank" rel="noopener">' + esc(x.h) + '</a></h4>' + usMeta(x) + '</article>').join('');
     try { wirePhotos(); } catch (e) {}
   }
@@ -7102,7 +7102,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     const NAME = { politics: 'Politics', business: 'Business', world: 'World', us: 'U.S.' }, per = {};
     (AUTO.d.desks || []).filter((r) => Date.now() - Date.parse(r.iso) < 30 * 3600e3).forEach((r) => {
       if ((per[r.desk] = (per[r.desk] || 0) + 1) > 2) return;
-      add(r.title, r.url, NAME[r.desk] || 'News', String(r.outlet || '').split(',').length, 'Latest: ' + String(r.outlet).split(',')[0] + ' · ' + r.t);
+      add(r.title, r.url, NAME[r.desk] || 'News', r.n || String(r.outlet || '').split(',').length, 'Latest: ' + String(r.outlet).split(/,| \+ | \(/)[0] + ' · ' + r.t);
     });
     if (rows.length) window.PAL_board(rows.slice(0, 12));
   }
@@ -7123,7 +7123,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     const D = ((AUTO.d.desks || []).filter((r) => r.desk === 'us' && Date.now() - Date.parse(r.iso) < 30 * 3600e3));
     if (!D.length) return;  // keeps what is there (the hand-written list while fresh, or the "on their way" line)
     window.PAL_renderUS(D.map((r) => ({ pic: r.pic || 'podium', topic: (US_TOPIC.find(([rx]) => rx.test(r.title)) || [0, 'United States'])[1],
-      h: r.title, s: r.summary || '', src: r.outlet, credit: String(r.outlet || '').split(',')[0], link: r.url, img: r.img || '', time: r.t })));
+      h: r.title, s: r.summary || '', src: r.outlet, credit: String(r.outlet || '').split(/,| \+ | \(/)[0], link: r.url, img: r.img || '', time: r.t })));
     const c = document.getElementById('usCount'); if (c && !/midterms in/.test(c.textContent)) c.textContent = 'Today’s top American stories, with the same six-source meter. Checked automatically at ' + fmt(AUTO.d.checked) + ' ET.';
   }
   // Canada and the U.S.: the newest reports on the relationship, and how U.S. newsrooms are covering Canada.
