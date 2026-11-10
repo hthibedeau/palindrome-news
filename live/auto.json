@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-10T04:52:35.383979+00:00",
- "checkedLabel": "Mon 11:52 p.m.",
+ "checked": "2026-11-10T05:02:35.838378+00:00",
+ "checkedLabel": "Tue 12:02 a.m.",
  "stories": [
   {
    "key": "top",
@@ -20,25 +20,8 @@
   {
    "key": "maid-bill-2026-10-27",
    "name": "MAID bill",
-   "since": "2026-11-03T21:23:00+00:00",
-   "reports": [
-    {
-     "t": "Mon 5:53 p.m.",
-     "iso": "2026-11-09T22:53:44+00:00",
-     "outlet": "CBC News",
-     "title": "Sask. introduces 'provincial safeguards' on MAID, mostly replicating new federal amendments",
-     "url": "https://www.cbc.ca/news/canada/saskatchewan/maid-regulations-2026-9.7415096?cmp=rss",
-     "primary": false
-    },
-    {
-     "t": "Mon 5:21 p.m.",
-     "iso": "2026-11-09T22:21:24+00:00",
-     "outlet": "CTV News",
-     "title": "Saskatchewan introduces MAID legislation reflecting federal rules",
-     "url": "https://www.ctvnews.ca/regina/article/saskatchewan-introduces-maid-legislation-reflecting-federal-rules/",
-     "primary": false
-    }
-   ],
+   "since": "2026-11-10T21:23:00+00:00",
+   "reports": [],
    "photo": {
     "src": "live/img/citynews-maid-bill-1028-2015.jpg",
     "orig": "https://ottawa.citynews.ca/wp-content/blogs.dir/sites/4/2026/10/9aec6364c7b5973c7e6e47cb34a93a9c6ad95fd3090b0f03795be5c291f54a62-1-1024x675.jpg",
@@ -73,6 +56,15 @@
   }
  ],
  "wire": [
+  [
+   "Mon 11:51 p.m.",
+   "World",
+   "Sydney private school accused of sexual abuse should be banned from enrolling new students, inquiry says",
+   "The Guardian",
+   "https://www.theguardian.com/australia-news/2026/nov/10/redeemer-baptist-school-sexual-abuse-inquiry-ntwnfb",
+   "2026-11-10T04:51:39+00:00",
+   1
+  ],
   [
    "Mon 11:44 p.m.",
    "World",
@@ -288,15 +280,6 @@
    "https://www.aljazeera.com/news/2026/11/10/russia-ukraine-and-us-to-meet-as-zelenskyy-claims-battlefield-successes?traffic_source=rss",
    "2026-11-10T02:45:14+00:00",
    3
-  ],
-  [
-   "Mon 9:40 p.m.",
-   "World",
-   "U.S. sues Lyft, alleges it denied rides to passengers with service dogs and wheelchairs",
-   "CTV News",
-   "https://www.ctvnews.ca/world/article/us-sues-lyft-alleges-it-denied-rides-to-passengers-with-service-dogs-and-wheelchairs/",
-   "2026-11-10T02:40:53+00:00",
-   3
   ]
  ],
  "blogs": [
@@ -328,28 +311,31 @@
  ],
  "leads": [
   {
-   "score": 15,
-   "title": "Massie: ‘High probability’ Hegseth won’t make it to the end of the year",
-   "url": "https://thehill.com/policy/defense/6209701-massie-impeaches-hegseth/",
-   "outlets": 13,
-   "why": [],
-   "theme": ""
-  },
-  {
-   "score": 14,
-   "title": "Could Nvidia survive without its ultra-powerful CEO, Jensen Huang?",
-   "url": "https://www.cbc.ca/news/business/nvidia-survive-without-jensen-huang-ceo-9.7415544",
-   "outlets": 9,
+   "score": 22,
+   "title": "Canadian exports are up, but the number of companies exporting? Not so much. Here’s why",
+   "url": "https://www.begiant.ca/stories/ideas/federal-budget-2026-trade-exports-ports",
+   "outlets": 18,
    "why": [
+    "National Newswatch #19",
     "CBC News front #1"
    ],
    "theme": ""
   },
   {
-   "score": 10,
+   "score": 19,
+   "title": "Trump’s choice of Stephen Miller as Chief of Staff is making the Democrats’ great week, even better.",
+   "url": "https://bruce728.substack.com/p/trumps-choice-of-stephen-miller-as",
+   "outlets": 19,
+   "why": [
+    "National Newswatch #11"
+   ],
+   "theme": ""
+  },
+  {
+   "score": 16,
    "title": "Carney government considers lifting ban on offshore oil and gas exploration in the Western Arctic",
    "url": "https://t.co/bCSFlMmYRp",
-   "outlets": 2,
+   "outlets": 8,
    "why": [
     "National Newswatch #1"
    ],
@@ -366,6 +352,43 @@
    "theme": ""
   },
   {
+   "score": 9,
+   "title": "Trump says more US attacks on Iran 'highly unlikely'",
+   "url": "https://www.bbc.co.uk/news/articles/cq5yny4nl2d3o?at_medium=RSS&at_campaign=rss",
+   "outlets": 7,
+   "why": [],
+   "theme": ""
+  },
+  {
+   "score": 8,
+   "title": "Hope is finally back in America, and did the U.S. just leave Canadian Conservatives behind?",
+   "url": "https://www.hilltimes.com/2026/11/09/did-the-u-s-just-leave-canadian-conservatives-behind/525005/",
+   "outlets": 3,
+   "why": [
+    "National Newswatch #7",
+    "National Newswatch #17"
+   ],
+   "theme": ""
+  },
+  {
+   "score": 8,
+   "title": "Premier Doug Ford suggests 'ass whooping' for 2 boys connected to alleged assault of Hamilton cadet leader",
+   "url": "https://www.cbc.ca/news/canada/hamilton/doug-ford-alleged-cadet-leader-assault-hamilton-9.7415639",
+   "outlets": 5,
+   "why": [
+    "CBC News front #5"
+   ],
+   "theme": ""
+  },
+  {
+   "score": 8,
+   "title": "NTSB recovers cockpit voice recorder from Learjet crash site in Florida",
+   "url": "https://www.foxnews.com/us/ntsb-recovers-cockpit-voice-recorder-learjet-crash-site-florida",
+   "outlets": 8,
+   "why": [],
+   "theme": ""
+  },
+  {
    "score": 7,
    "title": "Federal government budgets record $12M for Justin Trudeau's archives",
    "url": "https://www.cbc.ca/news/politics/trudeau-harper-library-archives-9.7413258",
@@ -377,254 +400,25 @@
    "theme": ""
   },
   {
-   "score": 6,
-   "title": "NTSB recovers cockpit voice recorder from Learjet crash site in Florida",
-   "url": "https://www.foxnews.com/us/ntsb-recovers-cockpit-voice-recorder-learjet-crash-site-florida",
-   "outlets": 6,
+   "score": 7,
+   "title": "Tahaad Pettiford scores 26 to help Auburn pull away for 75-53 victory over Appalachian State",
+   "url": "https://www.winnipegfreepress.com/uncategorized/2026/11/09/tahaad-pettiford-scores-26-to-help-auburn-pull-away-for-75-53-victory-over-appalachian-state",
+   "outlets": 5,
    "why": [],
-   "theme": ""
-  },
-  {
-   "score": 6,
-   "title": "Mark Carney’s budget is one for the boys",
-   "url": "https://www.thestar.com/politics/political-opinion/mark-carney-s-budget-is-one-for-the-boys/article_399183b4-15b1-410f-8b61-4012ee2f85ee.html",
-   "outlets": 2,
-   "why": [
-    "National Newswatch #12",
-    "National Newswatch #13"
-   ],
-   "theme": "Federal budget"
-  },
-  {
-   "score": 5,
-   "title": "A ‘complete missed opportunity’ — Conservative MPs criticize party’s caucus retreat",
-   "url": "https://www.ipolitics.ca/2026/11/09/a-complete-missed-opportunity-conservative-mps-criticize-partys-caucus-retreat/",
-   "outlets": 0,
-   "why": [
-    "National Newswatch #2"
-   ],
-   "theme": ""
-  },
-  {
-   "score": 5,
-   "title": "Hope is finally back in America, and did the U.S. just leave Canadian Conservatives behind?",
-   "url": "https://www.hilltimes.com/2026/11/09/did-the-u-s-just-leave-canadian-conservatives-behind/525005/",
-   "outlets": 0,
-   "why": [
-    "National Newswatch #7",
-    "National Newswatch #17"
-   ],
-   "theme": ""
-  },
-  {
-   "score": 5,
-   "title": "Culture minister insists Canada will eventually force streaming giants to pay fair share for CanCon",
-   "url": "https://www.ctvnews.ca/politics/article/culture-minister-insists-canada-will-eventually-force-streaming-giants-to-pay-fair-share-for-cancon/",
-   "outlets": 3,
-   "why": [
-    "National Newswatch #9"
-   ],
    "theme": ""
   }
  ],
  "canada": [
   {
-   "t": "Mon 9:59 p.m.",
-   "iso": "2026-11-10T02:59:34.123000+00:00",
-   "region": "B.C.",
-   "title": "B.C. Conservatives gain 1 more seat, kicking out incumbent NDP MLA after final count",
-   "summary": "Conservative candidate David Xie has snatched the Burnaby South-Metrotown riding from NDP incumbent Paul Choi, winning by 64 votes, following the final vote count.",
-   "outlet": "CBC News, Vancouver Sun",
-   "n": 2,
-   "url": "https://www.cbc.ca/news/canada/british-columbia/david-xie-bc-conservative-elected-9.7415041",
-   "img": "https://i.cbc.ca/ais/69f767ef-c033-485e-8c87-9b7f1e9d91ba,1794245622238/full/max/0/default.jpg?im=Crop%2Crect%3D%2882%2C0%2C1005%2C565%29%3BResize%3D620"
-  },
-  {
-   "t": "Mon 9:58 p.m.",
-   "iso": "2026-11-10T02:58:07.515000+00:00",
-   "region": "Manitoba",
-   "title": "Arrest made after poppy donation box stolen in Brandon, Man.",
-   "summary": "A man was arrested after about $1,000 was stolen from a poppy donation box last week, Brandon police say.",
-   "outlet": "CBC News",
-   "n": 1,
-   "url": "https://www.cbc.ca/news/canada/manitoba/poppy-donation-box-brandon-police-theft-9.7415979",
-   "img": "https://i.cbc.ca/ais/31cdf169-8187-49c0-ae20-7ac8fd314edd,1730498086000/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1919%2C1079%29%3BResize%3D620"
-  },
-  {
-   "t": "Mon 9:47 p.m.",
-   "iso": "2026-11-10T02:47:57+00:00",
-   "region": "B.C.",
-   "title": "B.C. MP’s misfiled dinner expense raises questions about oversight",
-   "summary": "The expense was approved in 2024 and was not questioned until independent journalist Isaac Peltz posted about it on Instagram recently.",
-   "outlet": "Global News",
-   "n": 1,
-   "url": "https://globalnews.ca/news/12143830/bc-mp-misfiled-dinner-expense-raises-questions-oversight-taxpayer-spending/",
-   "img": "https://globalnews.ca/wp-content/uploads/2022/08/20220812140844-62f69f71c14535d5ccb78e02jpeg.jpg?quality=65&strip=all&w=720&h=379&crop=1"
-  },
-  {
-   "t": "Mon 8:45 p.m.",
-   "iso": "2026-11-10T01:45:08.041000+00:00",
-   "region": "Ontario",
-   "title": "Honda Canada announces plans to retool Alliston, Ont., plant for hybrid production",
-   "summary": "Honda Canada says it will retool its manufacturing facilities in Alliston, Ont., to expand production of hybrid-electric and gasoline-powered vehicles. The Japanese automaker announced Monday it is partnering with the federal and provincial governments to fund plant upgrades, including the reintroduction of engine manufacturing, with an initial $166-million investment.",
-   "outlet": "CBC News + Global News (CP), CP24",
-   "n": 2,
-   "url": "https://www.cbc.ca/news/canada/toronto/honda-alliston-plant-hybrid-production-9.7415303",
-   "img": "https://i.cbc.ca/ais/1.7510523,1744742306000/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C606%2C4800%2C2700%29%3BResize%3D620"
-  },
-  {
-   "t": "Mon 8:41 p.m.",
-   "iso": "2026-11-10T01:41:31.780000+00:00",
-   "region": "Alberta",
-   "title": "Canadian Armed Forces sending nurses to Alberta to help treat CFB Wainwright survivors",
-   "summary": "The Canadian Armed Forces are sending 15 registered nurses to Alberta to help support the treatment of patients after last month’s fire at CFB Wainwright.",
-   "outlet": "CBC News, CP24 (CP)",
-   "n": 2,
-   "url": "https://www.cbc.ca/news/canada/edmonton/canadian-armed-forces-alberta-cfb-wainwright-nurses-9.7415815",
-   "img": "https://i.cbc.ca/ais/da2367e5-2af5-435c-a228-4c604d2ebadc,1794274368155/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C430%2C8256%2C4644%29%3BResize%3D620"
-  },
-  {
-   "t": "Mon 8:39 p.m.",
-   "iso": "2026-11-10T01:39:49.687000+00:00",
-   "region": "Ontario",
-   "title": "Roshel to buy Stellantis assembly plant in Brampton for undisclosed amount, automaker says",
-   "summary": "Canadian armoured vehicle maker Roshel Inc. will buy the Stellantis assembly plant in Brampton, Ont., the automaker announced Monday.",
-   "outlet": "CBC News + CityNews + Global News (CP), CP24",
-   "n": 2,
-   "url": "https://www.cbc.ca/news/canada/toronto/stellantis-brampton-plant-9.7415345",
-   "img": "https://i.cbc.ca/ais/f9615960-97d4-4df5-9bda-9db1583503c1,1794252363643/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C457%2C4800%2C2700%29%3BResize%3D620"
-  },
-  {
-   "t": "Mon 7:37 p.m.",
-   "iso": "2026-11-10T00:37:23.189000+00:00",
-   "region": "Quebec",
-   "title": "Montreal to set up emergency shelter trailers for Notre-Dame encampment this winter",
-   "summary": "The City of Montreal is hoping residents living in the homeless encampment along Notre-Dame Street E. will move from their tents into a new transition shelter opening on the strip.",
-   "outlet": "CBC News",
-   "n": 1,
-   "url": "https://www.cbc.ca/news/canada/montreal/montreal-emergency-homeless-shelters-notre-dame-encampment-9.7414902",
-   "img": "https://i.cbc.ca/ais/0d6b44e1-90c8-4dd0-8f70-006e591ac715,1794248344449/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C93%2C4032%2C2268%29%3BResize%3D620"
-  },
-  {
-   "t": "Mon 7:28 p.m.",
-   "iso": "2026-11-10T00:28:10.934000+00:00",
-   "region": "Manitoba",
-   "title": "Thompson will be home to Manitoba's latest Huddle youth support site",
-   "summary": "A new youth service group — the first of its kind in northern Manitoba — will open in Thompson early next year. The city will soon be home to a Huddle, a group that provides health, education, social supports and other programs.",
-   "outlet": "CBC News",
-   "n": 1,
-   "url": "https://www.cbc.ca/news/canada/manitoba/thompson-huddle-youth-services-opening-9.7415715",
-   "img": "https://i.cbc.ca/ais/4852de06-a78d-47f5-ace2-f42c249c0cec,1794264899878/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C535%2C5712%2C3213%29%3BResize%3D620"
-  },
-  {
-   "t": "Mon 6:56 p.m.",
-   "iso": "2026-11-09T23:56:40.523000+00:00",
-   "region": "N.L.",
-   "title": "N.L. Housing Corporation to run new transitional housing program",
-   "summary": "The Newfoundland and Labrador government has cancelled its third request for proposals to replace the Horizons at 106 transitional housing program and will now run its own program.",
-   "outlet": "CBC News",
-   "n": 1,
-   "url": "https://www.cbc.ca/news/canada/newfoundland-labrador/nlhc-transitional-housing-9.7415811",
-   "img": "https://i.cbc.ca/ais/8db884ee-9c41-4af7-bef9-b5d4d9e72fc3,1794267340300/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1920%2C1080%29%3BResize%3D620"
-  },
-  {
-   "t": "Mon 6:45 p.m.",
-   "iso": "2026-11-09T23:45:39.083000+00:00",
-   "region": "Quebec",
-   "title": "After deaths of 2 brothers, Quebec coroner calls for improvements to REM station fence",
-   "summary": "A Quebec coroner says the REM light-rail network might have to re-evaluate the penetration-resistant fence around Du Quartier station in Brossard, after two young men were fatally hit by a train there about a year ago.",
-   "outlet": "CBC News",
-   "n": 1,
-   "url": "https://www.cbc.ca/news/canada/montreal/quebec-coroner-report-death-brochu-brothers-rem-brossard-9.7415319",
-   "img": "https://i.cbc.ca/ais/d0d2ad96-ad2b-486a-9098-474704819e9a,1763814954349/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1693%2C952%29%3BResize%3D620"
-  },
-  {
-   "t": "Mon 6:31 p.m.",
-   "iso": "2026-11-09T23:31:32.730000+00:00",
-   "region": "Alberta",
-   "title": "Alberta plans to spend $39M to more than double the number of urgent care centres in province",
-   "summary": "The Alberta government is putting $39 million over three years toward planning nine new urgent care centres, which it says will ease pressure on crowded emergency rooms and reduce travel times for many patients.",
-   "outlet": "CBC News, Global News",
-   "n": 2,
-   "url": "https://www.cbc.ca/news/canada/edmonton/alberta-urgent-care-centres-investment-9.7415632",
-   "img": "https://i.cbc.ca/ais/af18b0cc-55fb-474a-ab1f-cadf3daf43e9,1794270563961/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1920%2C1080%29%3BResize%3D620"
-  },
-  {
-   "t": "Mon 6:03 p.m.",
-   "iso": "2026-11-09T23:03:55+00:00",
+   "t": "Mon 1:31 p.m.",
+   "iso": "2026-11-09T18:31:43+00:00",
    "region": "National",
-   "title": "‘Where is the accountability?’: Nunavut’s child advocate says territory’s protection issues aren’t being addressed",
-   "summary": "Jane Bates, Nunavut's child advocate says the territory's system of protecting vulnerable children isn't being properly addressed.",
-   "outlet": "APTN News",
-   "n": 1,
-   "url": "https://www.aptnnews.ca/national-news/where-is-the-accountability-nunavuts-child-advocate-says-territorys-protection-issues-arent-being-addressed/",
-   "img": "https://www.aptnnews.ca/wp-content/uploads/2026/03/Nunavut-legislature-Iqaluit7.jpg"
-  },
-  {
-   "t": "Mon 5:53 p.m.",
-   "iso": "2026-11-09T22:53:44.553000+00:00",
-   "region": "Saskatchewan",
-   "title": "Sask. introduces 'provincial safeguards' on MAID, mostly replicating new federal amendments",
-   "summary": "Health Minister Jeremy Cockrill says the provincial amendments would also strengthen \"conscientious objection\" protections for health-care professionals opposed to MAID.",
-   "outlet": "CBC News",
-   "n": 1,
-   "url": "https://www.cbc.ca/news/canada/saskatchewan/maid-regulations-2026-9.7415096",
-   "img": "https://i.cbc.ca/ais/2c7a87c2-ec56-4b0f-8446-a1170bb94ddd,1794242992949/full/max/0/default.jpg?im=Crop%2Crect%3D%28407%2C819%2C5365%2C3017%29%3BResize%3D620"
-  },
-  {
-   "t": "Mon 5:49 p.m.",
-   "iso": "2026-11-09T22:49:31.739000+00:00",
-   "region": "New Brunswick",
-   "title": "N.B. has to 'get aggressive,' Holt says as she releases new export strategy",
-   "summary": "The Holt government announced a plan Monday that aims to boost New Brunswick export markets and increase international export revenue by nearly 16 per cent over the next four years, and by 60 per cent interprovincially.",
-   "outlet": "CBC News",
-   "n": 1,
-   "url": "https://www.cbc.ca/news/canada/new-brunswick/new-brunswick-government-announces-plan-for-diversifying-export-markets-9.7415548",
-   "img": "https://i.cbc.ca/ais/a5114aee-e7c9-4aee-af80-a6ae1673f103,1794260526581/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1920%2C1080%29%3BResize%3D620"
-  },
-  {
-   "t": "Mon 5:30 p.m.",
-   "iso": "2026-11-09T22:30:32.807000+00:00",
-   "region": "North",
-   "title": "Wekweètì, N.W.T., told to boil drinking water after water pump's 'critical mechanical failure'",
-   "summary": "The N.W.T.'s chief environmental health officer has issued a boil-water advisory for Wekweètì after a pump that supplies the water treatment plant failed.",
-   "outlet": "CBC News",
-   "n": 1,
-   "url": "https://www.cbc.ca/news/canada/north/wekweeti-n-w-t-told-to-boil-drinking-water-after-water-pump-s-critical-mechanical-failure-9.7415617",
-   "img": "https://i.cbc.ca/ais/6ea6d57a-bc46-4f63-82be-71d7e58ce3f3,1794261275128/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C270%2C5184%2C2916%29%3BResize%3D620"
-  },
-  {
-   "t": "Mon 4:35 p.m.",
-   "iso": "2026-11-09T21:35:06+00:00",
-   "region": "National",
-   "title": "Chiefs question motive behind Indian Act talks after meeting with Carney, premiers",
-   "summary": "First Nations chiefs say their meeting with the prime minister and premiers was overshadowed by talk of abolishing the Indian Act.",
-   "outlet": "APTN News + CP24 (CP)",
-   "n": 1,
-   "url": "https://www.aptnnews.ca/national-news/chiefs-question-motive-behind-indian-act-talks-after-meeting-with-carney-premiers/",
-   "img": "https://www.aptnnews.ca/wp-content/uploads/2026/10/FNFM-MEETING-2026-HS.jpg"
-  },
-  {
-   "t": "Mon 3:27 p.m.",
-   "iso": "2026-11-09T20:27:08+00:00",
-   "region": "Nova Scotia",
-   "title": "FBI tip about child sexual exploitation leads to charges in Nova Scotia",
-   "summary": "RCMP say a Tennessee-based investigation identified a Halifax-area man who is believed to have posted child sexual abuse and exploitation material online.",
-   "outlet": "Global News, CBC News",
-   "n": 2,
-   "url": "https://globalnews.ca/news/12143202/fbi-tip-about-child-sexual-exploitation-leads-to-charges-in-nova-scotia/",
-   "img": "https://globalnews.ca/wp-content/uploads/2026/10/d9a21b83f8ba8f6080de35e4502a5d641e724c1d5ebf2422e0f29a3ae96e2a7a_dd0c8a.jpg?quality=65&strip=all&w=720&h=379&crop=1"
-  },
-  {
-   "t": "Mon 7:26 a.m.",
-   "iso": "2026-11-09T12:26:29+00:00",
-   "region": "Nova Scotia",
-   "title": "New report says living wage now $30 an hour in Halifax",
-   "summary": "Northern Nova Scotia experienced sharpest living wage increase, rising 9.8% from $25.50 in 2025 to $28 this year.",
-   "outlet": "Halifax Examiner, CBC News",
-   "n": 2,
-   "url": "https://www.halifaxexaminer.ca/equity/new-report-says-living-wage-now-30-an-hour-in-halifax/",
-   "img": "https://www.halifaxexaminer.ca/wp-content/uploads/2026/11/Behnam-Norouzi.png"
+   "title": "Shoe store employee charged after alleged $72K theft from CrossIron Mills",
+   "summary": "A Calgary man is facing multiple charges after more than $70,000 in cash and merchandise allegedly went missing from a store at CrossIron Mills. RCMP began investigating on Oct. 28 after the Famous Footwear store reported significant inventory and cash shortages. An internal review allegedly found a current employee had taken about $50,000 worth of […]",
+   "outlet": "CityNews Calgary",
+   "url": "https://calgary.citynews.ca/2026/11/09/crossiron-theft-charges-airdrie-rcmp/",
+   "img": "https://calgary.citynews.ca/wp-content/blogs.dir/sites/8/2026/11/09/Untitled-November-09-2026-at-11.21.55-1.png",
+   "moved": true
   }
  ],
  "auto": {
@@ -632,327 +426,18 @@
   "stale_since": "2026-10-28T00:15:00+00:00",
   "stories": [
    {
-    "key": "auto-48582301",
-    "words": [
-     "republican",
-     "secretary",
-     "hegseth",
-     "defence",
-     "pete"
-    ],
-    "score": 15,
-    "outlets": 7,
-    "carriers": 7,
-    "tag": "Breaking",
-    "title": "Republican congressman to force impeachment vote on Defence Secretary Hegseth",
-    "url": "https://www.bbc.co.uk/news/articles/cwr5y58jjp8ro?at_medium=RSS&at_campaign=rss",
-    "outlet": "BBC News",
-    "t": "Mon 8:38 p.m.",
-    "iso": "2026-11-10T01:38:49+00:00",
-    "summary": "The effort will likely fail, but Representative Thomas Massie wants to push Trump to fire Hegseth before Democrats can launch their own impeachment process next year.",
-    "first": {
-     "outlet": "CBC News",
-     "url": "https://www.cbc.ca/news/world/hegaseth-impeachment-motion-thomas-massie-9.7415356",
-     "t": "Mon 6:16 p.m.",
-     "title": "U.S. House Republican moves to force vote on impeaching Pete Hegseth",
-     "iso": "2026-11-09T23:16:21.413000+00:00"
-    },
-    "newest": "2026-11-10T04:00:33+00:00",
-    "photo": {
-     "src": "live/img/auto-48582301-d1c7ad34ec.jpg",
-     "orig": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/0303/live/c8a877f0-dc7e-11f1-93e1-3b657b665bcf.png",
-     "caption": "Thomas Massie (left) and Pete Hegseth. — via BBC News",
-     "alt": "Thomas Massie (left) and Pete Hegseth",
-     "outlet": "BBC News",
-     "url": "https://www.bbc.co.uk/news/articles/cwr5y58jjp8ro?at_medium=RSS&at_campaign=rss",
-     "since": "2026-11-10T04:44:20.072660+00:00"
-    },
-    "photo_seen": [
-     "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/0303/live/c8a877f0-dc7e-11f1-93e1-3b657b665bcf.png"
-    ],
-    "photos": [
-     {
-      "src": "live/img/auto-48582301-d1c7ad34ec.jpg",
-      "orig": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/0303/live/c8a877f0-dc7e-11f1-93e1-3b657b665bcf.png",
-      "caption": "Thomas Massie (left) and Pete Hegseth. — via BBC News",
-      "alt": "Thomas Massie (left) and Pete Hegseth",
-      "outlet": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cwr5y58jjp8ro?at_medium=RSS&at_campaign=rss"
-     },
-     {
-      "src": "live/img/auto-48582301-4f200e39dd.jpg",
-      "orig": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1794280529.jpg?resize=1620%2C1080&quality=80",
-      "caption": "Newly-elected Democrats react to Hegseth impeachment bid. — via Al Jazeera",
-      "alt": "Newly-elected Democrats react to Hegseth impeachment bid",
-      "outlet": "Al Jazeera",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/10/newly-elected-democrats-react-to-hegseth-impeachment-bid?traffic_source=rss"
-     },
-     {
-      "src": "live/img/auto-48582301-543bc9d47a.jpg",
-      "orig": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/10/82d54921-2824-4701-aaad-9e34e970f366/thumbnail/1200x630/91dd932a6683e53204e240204d656fd6/cbsn-fusion-trump-defends-hegseth-as-massie-moves-for-impeachment-thumbnail.jpg",
-      "caption": "From: Trump defends Hegseth as Massie moves for impeachment. — via CBS News",
-      "alt": "Trump defends Hegseth as Massie moves for impeachment",
-      "outlet": "CBS News",
-      "url": "https://www.cbsnews.com/video/trump-defends-hegseth-as-massie-moves-for-impeachment/"
-     },
-     {
-      "src": "live/img/auto-48582301-e34ca38b63.jpg",
-      "orig": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-11/261109-dana-white-donald-trump-ew-536p-d44faa.jpg",
-      "caption": "From: Trump defends Pete Hegseth at surprise news briefing with Dana White. — via NBC News",
-      "alt": "Trump defends Pete Hegseth at surprise news briefing with Dana White",
-      "outlet": "NBC News",
-      "url": "https://www.nbcnews.com/politics/white-house/trump-defends-jensen-huang-pete-hegseth-press-briefing-ufc-dana-white-rcna608446"
-     }
-    ],
-    "independent": 7,
-    "reports": [
-     {
-      "t": "Mon 11:00 p.m.",
-      "iso": "2026-11-10T04:00:33+00:00",
-      "outlet": "The Hill",
-      "title": "Massie: ‘High probability’ Hegseth won’t make it to the end of the year",
-      "url": "https://thehill.com/policy/defense/6209701-massie-impeaches-hegseth/",
-      "desc": ""
-     },
-     {
-      "t": "Mon 10:16 p.m.",
-      "iso": "2026-11-10T03:16:44+00:00",
-      "outlet": "Al Jazeera",
-      "title": "Newly-elected Democrats react to Hegseth impeachment bid",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/10/newly-elected-democrats-react-to-hegseth-impeachment-bid?traffic_source=rss",
-      "desc": "Newly-elected Democrats say holding Defense Secretary Pete Hegseth accountable, will be a priority in the next Congress."
-     },
-     {
-      "t": "Mon 10:00 p.m.",
-      "iso": "2026-11-10T03:00:40+00:00",
-      "outlet": "The Guardian",
-      "title": "Donald Trump doubles down on defense of Pete Hegseth and attacks fresh effort to impeach him – as it happened",
-      "url": "https://www.theguardian.com/us-news/live/2026/nov/09/donald-trump-stephen-miller-immigration-midterms-iran-qatar-economy-latest-news-updates",
-      "desc": ""
-     },
-     {
-      "t": "Mon 9:36 p.m.",
-      "iso": "2026-11-10T02:36:00+00:00",
-      "outlet": "CBS News",
-      "title": "Trump defends Hegseth as Massie moves for impeachment",
-      "url": "https://www.cbsnews.com/video/trump-defends-hegseth-as-massie-moves-for-impeachment/",
-      "desc": "GOP Rep. Thomas Massie on Monday introduced new articles of impeachment against Defense Secretary Pete Hegseth. CBS News' Taurean Small and Olivia Rinaldi have more on that and all the top news from Washington."
-     },
-     {
-      "t": "Mon 9:00 p.m.",
-      "iso": "2026-11-10T02:00:00+00:00",
-      "outlet": "CBC News",
-      "title": "The National | U.S. Republican moves to impeach Hegseth",
-      "url": "https://www.cbc.ca/player/play/video/9.4236164",
-      "desc": "Nov. 9, 2026 | An outgoing Republican representative introduces articles of impeachment against embattled U.S. Secretary of War Pete Hegseth. Stellantis sells a major Ontario assembly plant to a Canadian armoured vehicle maker. And, Nvidia CEO Jensen Huang is investigated for his affair with an…"
-     },
-     {
-      "t": "Mon 8:38 p.m.",
-      "iso": "2026-11-10T01:38:49+00:00",
-      "outlet": "BBC News",
-      "title": "Republican congressman to force impeachment vote on Defence Secretary Hegseth",
-      "url": "https://www.bbc.co.uk/news/articles/cwr5y58jjp8ro?at_medium=RSS&at_campaign=rss",
-      "desc": "The effort will likely fail, but Representative Thomas Massie wants to push Trump to fire Hegseth before Democrats can launch their own impeachment process next year."
-     },
-     {
-      "t": "Mon 7:14 p.m.",
-      "iso": "2026-11-10T00:14:06+00:00",
-      "outlet": "NBC News",
-      "title": "Trump defends Pete Hegseth at surprise news briefing with Dana White",
-      "url": "https://www.nbcnews.com/politics/white-house/trump-defends-jensen-huang-pete-hegseth-press-briefing-ufc-dana-white-rcna608446",
-      "desc": "The president said he would stand by Defense Secretary Pete Hegseth if he’s impeached."
-     }
-    ],
-    "sources": [
-     {
-      "t": "Mon 11:00 p.m.",
-      "primary": false,
-      "outlet": "The Hill",
-      "title": "Massie: ‘High probability’ Hegseth won’t make it to the end of the year",
-      "url": "https://thehill.com/policy/defense/6209701-massie-impeaches-hegseth/",
-      "desc": "px-captcha",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "The Hill",
-        "src": "The Hill",
-        "byline": ""
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Mon 10:16 p.m.",
-      "primary": false,
-      "outlet": "Al Jazeera",
-      "title": "Newly-elected Democrats react to Hegseth impeachment bid",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/10/newly-elected-democrats-react-to-hegseth-impeachment-bid?traffic_source=rss",
-      "desc": "Newly-elected Democrats say holding Defense Secretary Pete Hegseth accountable, will be a priority in the next Congress.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Al Jazeera",
-        "src": "Al Jazeera",
-        "byline": " NewsFeed Add Al Jazeera on Google"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Mon 10:00 p.m.",
-      "primary": false,
-      "outlet": "The Guardian",
-      "title": "Donald Trump doubles down on defense of Pete Hegseth and attacks fresh effort to impeach him – as it happened",
-      "url": "https://www.theguardian.com/us-news/live/2026/nov/09/donald-trump-stephen-miller-immigration-midterms-iran-qatar-economy-latest-news-updates",
-      "desc": "This live blog is now closed.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "The Guardian",
-        "src": "The Guardian",
-        "byline": "[{\"@type\":\"Person\",\"name\":\"Shrai Popat\",},{\"@type\":\"Person\",\"name\":\"Tom Ambrose\",},{\"@type\":\"Person\",\"name\":\"Anna Betts\""
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Mon 9:36 p.m.",
-      "primary": false,
-      "outlet": "CBS News",
-      "title": "Trump defends Hegseth as Massie moves for impeachment",
-      "url": "https://www.cbsnews.com/video/trump-defends-hegseth-as-massie-moves-for-impeachment/",
-      "desc": "GOP Rep. Thomas Massie on Monday introduced new articles of impeachment against Defense Secretary Pete Hegseth. CBS News' Taurean Small and Olivia Rinaldi have more on that and all the top news from Washington.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "CBS News",
-        "src": "CBS News",
-        "byline": ""
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Mon 9:00 p.m.",
-      "primary": false,
-      "outlet": "CBC News",
-      "title": "The National | U.S. Republican moves to impeach Hegseth",
-      "url": "https://www.cbc.ca/player/play/video/9.4236164",
-      "desc": "Nov. 9, 2026 | An outgoing Republican representative introduces articles of impeachment against embattled U.S. Secretary of War Pete Hegseth. Stellantis sells a major Ontario assembly plant to a Canadian armoured vehicle maker. And, Nvidia CEO Jensen Huang is investigated for his affair with an…",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "CBC News",
-        "src": "CBC",
-        "byline": "{\"profile\":{\"title\":\"\",\"name\":\"\",\"biography\":\"\",\"sourceId\":\"\",,\"links\":null,\"photoURL\":\"\"},\"recentContent\":{}} \"\" "
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Mon 8:38 p.m.",
-      "primary": false,
-      "outlet": "BBC News",
-      "title": "Republican congressman to force impeachment vote on Defence Secretary Hegseth",
-      "url": "https://www.bbc.co.uk/news/articles/cwr5y58jjp8ro?at_medium=RSS&at_campaign=rss",
-      "desc": "The effort will likely fail, but Representative Thomas Massie wants to push Trump to fire Hegseth before Democrats can launch their own impeachment process next year.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "BBC News",
-        "src": "BBC News",
-        "byline": "[{\"@type\":\"Person\",\"name\":\"Ana Faguy\"},{\"@type\":\"Person\",\"name\":\"Max Matza\"}] https://www.facebook.com/bbcnews"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Mon 7:14 p.m.",
-      "primary": false,
-      "outlet": "NBC News",
-      "title": "Trump defends Pete Hegseth at surprise news briefing with Dana White",
-      "url": "https://www.nbcnews.com/politics/white-house/trump-defends-jensen-huang-pete-hegseth-press-briefing-ufc-dana-white-rcna608446",
-      "desc": "The president said he would stand by Defense Secretary Pete Hegseth if he’s impeached.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "NBC News",
-        "src": "NBC News",
-        "byline": "own staff: reporter"
-       }
-      ],
-      "copies": []
-     }
-    ],
-    "replaces_top": false,
-    "events": [],
-    "theme": "",
-    "canada": "tie",
-    "canus": false,
-    "incoherent": false,
-    "popular": 0,
-    "us_election": false,
-    "fronts": 5,
-    "fronts_ca": 1,
-    "fronts_who": [
-     "The Globe and Mail",
-     "NBC News",
-     "CBS News",
-     "The Guardian",
-     "NPR"
-    ],
-    "judgment": "regional",
-    "judgment_why": "Regional: affects some people; carried by a few newsrooms.",
-    "weight": 31.5,
-    "held_top": "Still Breaking (newest report Mon 11:00 p.m.), so it stays above \"Could Nvidia survive without its ultra-powerful CEO, Jensen \", which leads 9 front pages to its 5: not twice as many",
-    "videos": [
-     {
-      "net": "CBC News",
-      "url": "https://www.youtube.com/watch?v=N8_VDg8MhuM",
-      "title": "Republican congressman speaks about his effort to impeach Pete Hegseth",
-      "img": "https://i.ytimg.com/vi/N8_VDg8MhuM/hqdefault.jpg",
-      "rec": true,
-      "up": ""
-     },
-     {
-      "net": "PBS NewsHour",
-      "url": "https://www.youtube.com/watch?v=faweL0xlwAE",
-      "title": "House returns after blowout election as Hegseth impeachment vote, funding deadline loom",
-      "img": "https://i.ytimg.com/vi/faweL0xlwAE/hqdefault.jpg",
-      "rec": true,
-      "up": ""
-     },
-     {
-      "net": "PBS NewsHour",
-      "url": "https://www.youtube.com/watch?v=MUiCmNlzS08",
-      "title": "Rep. Hakeem Jeffries speaks as Hegseth faces looming impeachment vote",
-      "img": "https://i.ytimg.com/vi/MUiCmNlzS08/hqdefault.jpg",
-      "rec": true,
-      "up": ""
-     },
-     {
-      "net": "PBS NewsHour",
-      "url": "https://www.youtube.com/watch?v=bEgAnGqLZZY",
-      "title": "Hegseth speaks at the Naval War College as possible impeachment vote looms",
-      "img": "https://i.ytimg.com/vi/bEgAnGqLZZY/hqdefault.jpg",
-      "rec": true,
-      "up": ""
-     }
-    ]
-   },
-   {
-    "key": "auto-2fdd3866",
+    "key": "auto-6b7519e9",
     "words": [
      "jensen",
      "nvidia",
-     "fbi",
+     "huang",
      "ceo",
-     "ai"
+     "fbi"
     ],
-    "score": 14,
-    "outlets": 6,
-    "carriers": 7,
-    "tag": "Breaking",
+    "score": 22,
+    "outlets": 10,
+    "carriers": 14,
+    "tag": "Developing",
     "title": "Could Nvidia survive without its ultra-powerful CEO, Jensen Huang?",
     "url": "https://www.cbc.ca/news/business/nvidia-survive-without-jensen-huang-ceo-9.7415544",
     "outlet": "CBC News",
@@ -960,28 +445,28 @@
     "iso": "2026-11-09T23:49:15.088000+00:00",
     "summary": "Nvidia CEO Jensen Huang has helmed the company since starting it in 1993, guiding it from a graphics card maker to the AI behemoth it is today. But with an investigation now underway into whether Huang was the target of a foreign intelligence effort and no clear successor in sight, analysts say a change at the top — if it were deemed necessary — would be massive.",
     "first": {
-     "outlet": "PBS NewsHour",
-     "url": "https://www.pbs.org/newshour/politics/watch-trump-says-fbi-is-looking-into-nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-agent",
-     "t": "Mon 6:04 p.m.",
-     "title": "WATCH: Trump says FBI is looking into Nvidia CEO Jensen Huang's affair with alleged Chinese agent",
-     "iso": "2026-11-09T23:04:24+00:00"
+     "outlet": "Global News",
+     "url": "https://globalnews.ca/news/12142612/nvidia-affair-china-espionage-explainer/",
+     "t": "Mon 1:44 p.m.",
+     "title": "Nvidia’s CEO is facing a suspected spy affair scandal. Here’s what we know so far",
+     "iso": "2026-11-09T18:44:58+00:00"
     },
     "newest": "2026-11-10T03:58:13+00:00",
     "photo": {
-     "src": "live/img/auto-2fdd3866-4d468dbad1.jpg",
+     "src": "live/img/auto-6b7519e9-4d468dbad1.jpg",
      "orig": "https://i.cbc.ca/ais/0bfe1330-a386-4097-895d-d022682c21c2,1794259823722/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C113%2C4432%2C2493%29%3BResize%3D620",
      "caption": "Nvidia CEO Jensen Huang delivers his keynote on the company's GTC event in Berlin, Germany, on Oct. 21. As the CEO is investigated to determine whether he was targeted by a foreign intelligence effort, analysts worry what the future would look like for Nvidia if Huang had to step down. (Markus Schreiber/Associated Press) — via CBC News",
      "alt": "Nvidia CEO Jensen Huang delivers his keynote on the company's GTC event in Berlin, Germany, on Oct. 21. As the CEO is investigated to determine whether he was t",
      "outlet": "CBC News",
      "url": "https://www.cbc.ca/news/business/nvidia-survive-without-jensen-huang-ceo-9.7415544",
-     "since": "2026-11-10T04:55:02.056550+00:00"
+     "since": "2026-11-10T05:04:26.098873+00:00"
     },
     "photo_seen": [
-     "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/f773/live/9c28e680-dc95-11f1-a701-fddedf244c16.jpg"
+     "https://i.cbc.ca/ais/0bfe1330-a386-4097-895d-d022682c21c2,1794259823722/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C113%2C4432%2C2493%29%3BResize%3D620"
     ],
     "photos": [
      {
-      "src": "live/img/auto-2fdd3866-4d468dbad1.jpg",
+      "src": "live/img/auto-6b7519e9-4d468dbad1.jpg",
       "orig": "https://i.cbc.ca/ais/0bfe1330-a386-4097-895d-d022682c21c2,1794259823722/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C113%2C4432%2C2493%29%3BResize%3D620",
       "caption": "Nvidia CEO Jensen Huang delivers his keynote on the company's GTC event in Berlin, Germany, on Oct. 21. As the CEO is investigated to determine whether he was targeted by a foreign intelligence effort, analysts worry what the future would look like for Nvidia if Huang had to step down. (Markus Schreiber/Associated Press) — via CBC News",
       "alt": "Nvidia CEO Jensen Huang delivers his keynote on the company's GTC event in Berlin, Germany, on Oct. 21. As the CEO is investigated to determine whether he was t",
@@ -989,7 +474,7 @@
       "url": "https://www.cbc.ca/news/business/nvidia-survive-without-jensen-huang-ceo-9.7415544"
      },
      {
-      "src": "live/img/auto-2fdd3866-4f66d003a3.jpg",
+      "src": "live/img/auto-6b7519e9-4f66d003a3.jpg",
       "orig": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/f773/live/9c28e680-dc95-11f1-a701-fddedf244c16.jpg",
       "caption": "A composite image of Donald Trump on the right and Jensen Huang on the left. — via BBC News",
       "alt": "A composite image of Donald Trump on the right and Jensen Huang on the left",
@@ -997,7 +482,7 @@
       "url": "https://www.bbc.co.uk/news/articles/cqg7x7dpvym8o?at_medium=RSS&at_campaign=rss"
      },
      {
-      "src": "live/img/auto-2fdd3866-e6007ae827.jpg",
+      "src": "live/img/auto-6b7519e9-e6007ae827.jpg",
       "orig": "https://www.aljazeera.com/wp-content/uploads/2026/11/AP26312766429671-1794269980_6f5909-1794270127.jpg?resize=1200%2C630&quality=80",
       "caption": "Trump says FBI probing Nvidia CEO Huang’s affair with alleged spy. — via Al Jazeera",
       "alt": "Trump says FBI probing Nvidia CEO Huang’s affair with alleged spy",
@@ -1005,15 +490,15 @@
       "url": "https://www.aljazeera.com/economy/2026/11/10/trump-says-fbi-probing-nvidia-ceos-affair-with-alleged-spy?traffic_source=rss"
      },
      {
-      "src": "live/img/auto-2fdd3866-926e381a14.jpg",
-      "orig": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/10/573132.jpg?v=3.1",
-      "caption": "From: Google escalates Nvidia rivalry with specialized versions of AI chips. — via The Japan Times",
-      "alt": "Google escalates Nvidia rivalry with specialized versions of AI chips",
-      "outlet": "The Japan Times",
-      "url": "https://www.japantimes.co.jp/business/2026/11/10/tech/google-nvidia-rivalry-ai-chips/"
+      "src": "live/img/auto-6b7519e9-2f68cbf0fb.jpg",
+      "orig": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/10/d7ec5583-2287-429e-aec8-d5c1546288e9/thumbnail/1200x630/1de514942ed72a684421d3469a07c4fe/cbsn-fusion-trump-says-jensen-huang-no-idea-spy-thumbnail.jpg",
+      "caption": "From: Trump says Jensen Huang told him he had \"no idea she was a spy\" amid Chinese intel allegations. — via CBS News",
+      "alt": "Trump says Jensen Huang told him he had \"no idea she was a spy\" amid Chinese intel allegations",
+      "outlet": "CBS News",
+      "url": "https://www.cbsnews.com/video/trump-says-jensen-huang-no-idea-spy/"
      }
     ],
-    "independent": 6,
+    "independent": 10,
     "reports": [
      {
       "t": "Mon 10:58 p.m.",
@@ -1024,20 +509,12 @@
       "desc": "The US president said he spoke with Jensen Huang on Monday and asked him about the affair with the alleged spy."
      },
      {
-      "t": "Mon 8:44 p.m.",
-      "iso": "2026-11-10T01:44:00+00:00",
-      "outlet": "The Japan Times",
-      "title": "Google escalates Nvidia rivalry with specialized versions of AI chips",
-      "url": "https://www.japantimes.co.jp/business/2026/11/10/tech/google-nvidia-rivalry-ai-chips/",
-      "desc": "This year’s introduction of two new tensor processing units marks an acceleration in product development for Google’s chip unit."
-     },
-     {
-      "t": "Mon 8:04 p.m.",
-      "iso": "2026-11-10T01:04:57+00:00",
+      "t": "Mon 9:04 p.m.",
+      "iso": "2026-11-10T02:04:00+00:00",
       "outlet": "CBS News",
-      "title": "Nvidia investigates CEO Jensen Huang over Chinese spy concerns",
-      "url": "https://www.cbsnews.com/news/nvidia-jensen-huang-investigation-china-intelligence/",
-      "desc": "The board of Nvidia said it had no reason to believe that the company's secrets or national security were compromised."
+      "title": "Trump says Jensen Huang told him he had \"no idea she was a spy\" amid Chinese intel allegations",
+      "url": "https://www.cbsnews.com/video/trump-says-jensen-huang-no-idea-spy/",
+      "desc": ""
      },
      {
       "t": "Mon 7:59 p.m.",
@@ -1056,6 +533,14 @@
       "desc": "US president says he believes CEO Jensen Huang had no knowledge of woman's alleged work for Chinese intelligence."
      },
      {
+      "t": "Mon 6:55 p.m.",
+      "iso": "2026-11-09T23:55:35+00:00",
+      "outlet": "PBS NewsHour",
+      "title": "Nvidia's Jensen Huang faces scrutiny over alleged affair with Chinese spy",
+      "url": "https://www.pbs.org/newshour/show/nvidias-jensen-huang-faces-scrutiny-over-alleged-affair-with-chinese-spy",
+      "desc": "Lawmakers, investors and tech leaders are assessing bombshell revelations about Nvidia founder and CEO Jensen Huang. Huang admitted to an affair with a woman accused of being a Chinese spy. Nvidia designs chips and processors that power artificial intelligence and underpin much of the enormous…"
+     },
+     {
       "t": "Mon 6:49 p.m.",
       "iso": "2026-11-09T23:49:15.088000+00:00",
       "outlet": "CBC News",
@@ -1064,24 +549,85 @@
       "desc": "Nvidia CEO Jensen Huang has helmed the company since starting it in 1993, guiding it from a graphics card maker to the AI behemoth it is today. But with an investigation now underway into whether Huang was the target of a foreign intelligence effort and no clear successor in sight, analysts say a…"
      },
      {
-      "t": "Mon 6:45 p.m.",
-      "iso": "2026-11-09T23:45:32+00:00",
-      "outlet": "PBS NewsHour",
-      "title": "How the Nvidia revelations could ripple through the AI industry and global economy",
-      "url": "https://www.pbs.org/newshour/show/what-china-stands-to-gain-from-nvidias-ceos-alleged-affair-with-spy-2",
-      "desc": "To discuss the national security risks of Nvidia's CEO having an affair with a possible foreign intelligence agent, Amna Nawaz spoke with Christopher Johnson. He spent 20 years in the U.S. intelligence community focusing on China. He now runs his own consulting firm, China Strategies Group."
+      "t": "Mon 5:58 p.m.",
+      "iso": "2026-11-09T22:58:51+00:00",
+      "outlet": "CP24",
+      "title": "Nvidia CEO admits to affair with woman suspected of being spy for China",
+      "url": "https://www.cp24.com/news/money/2026/11/09/nvidia-ceo-admits-to-affair-with-woman-suspected-of-being-spy-for-china/",
+      "desc": "China denied on Monday there was a spy plot attempt to ensnare Nvidia CEO Jensen Huang, calling the spying allegations unsubstantiated and a smear campaign against Beijing."
+     },
+     {
+      "t": "Mon 5:58 p.m.",
+      "iso": "2026-11-09T22:58:51+00:00",
+      "outlet": "BNN Bloomberg",
+      "title": "Nvidia CEO admits to affair with woman suspected of being spy for China",
+      "url": "https://www.bnnbloomberg.ca/business/international/2026/11/09/nvidia-ceo-admits-to-affair-with-woman-suspected-of-being-spy-for-china/",
+      "desc": ""
+     },
+     {
+      "t": "Mon 5:25 p.m.",
+      "iso": "2026-11-09T22:25:07+00:00",
+      "outlet": "NBC News",
+      "title": "Trump says FBI is investigating Nvidia CEO’s relationship with alleged Chinese spy",
+      "url": "https://www.nbcnews.com/business/corporations/trump-fbi-probe-nvidia-jensen-huang-spy-rcna608439",
+      "desc": ""
+     },
+     {
+      "t": "Mon 5:14 p.m.",
+      "iso": "2026-11-09T22:14:00+00:00",
+      "outlet": "The Japan Times",
+      "title": "Nvidia scandal creates risks for whole AI industry, not just CEO",
+      "url": "https://www.japantimes.co.jp/business/2026/11/10/tech/nvidia-scandal-ai-industry-ceo/",
+      "desc": ""
+     },
+     {
+      "t": "Mon 2:34 p.m.",
+      "iso": "2026-11-09T19:34:00+00:00",
+      "outlet": "Toronto Star",
+      "title": "What we know - and what we don't - as Nvidia investigates an alleged spy plot involving its CEO",
+      "url": "https://www.thestar.com/news/world/united-states/what-we-know-and-what-we-don-t-as-nvidia-investigates-an-alleged-spy-plot-involving-its-ceo/article_3f9b208f-d2cc-55ef-b5b8-2c28845ddca4.html",
+      "desc": ""
+     },
+     {
+      "t": "Mon 2:28 p.m.",
+      "iso": "2026-11-09T19:28:35+00:00",
+      "outlet": "CTV News",
+      "title": "Nvidia shares tumble after investigation into CEO Jensen Huang",
+      "url": "https://www.ctvnews.ca/business/article/internal-probe-into-ceo-jensen-huang-and-foreign-intelligence-weighs-on-high-flying-nvidia-shares/",
+      "desc": ""
+     },
+     {
+      "t": "Mon 1:57 p.m.",
+      "iso": "2026-11-09T18:57:33+00:00",
+      "outlet": "Euronews",
+      "title": "How could the Jensen Huang 'spy' scandal affect Nvidia's future?",
+      "url": "https://www.euronews.com/video/2026/11/09/how-could-the-jensen-huang-spy-scandal-affect-nvidias-future",
+      "desc": ""
+     },
+     {
+      "t": "Mon 1:44 p.m.",
+      "iso": "2026-11-09T18:44:58+00:00",
+      "outlet": "Global News",
+      "title": "Nvidia’s CEO is facing a suspected spy affair scandal. Here’s what we know so far",
+      "url": "https://globalnews.ca/news/12142612/nvidia-affair-china-espionage-explainer/",
+      "desc": ""
      }
     ],
     "sources": [
      {
-      "t": "Mon 7:59 p.m.",
+      "t": "Mon 2:28 p.m.",
       "primary": false,
-      "outlet": "Toronto Sun",
-      "title": "FBI probing Nvidia boss’ alleged affair with Chinese spy, Donald Trump says",
-      "url": "https://torontosun.com/news/world/fbi-probing-nvidia-boss-affair-chinese-spying",
-      "desc": "",
+      "outlet": "CTV News",
+      "title": "Nvidia shares tumble after investigation into CEO Jensen Huang",
+      "url": "https://www.ctvnews.ca/business/article/internal-probe-into-ceo-jensen-huang-and-foreign-intelligence-weighs-on-high-flying-nvidia-shares/",
+      "desc": "Shares of Nvidia tumbled five per cent at the opening bell after the computer chip maker opened an investigation into reports of “foreign intelligence effort.”",
       "wire": "The Canadian Press",
       "by": [
+       {
+        "outlet": "CTV News",
+        "src": "The Canadian Press",
+        "byline": "te\" \"Robin Della Corte\" \"Angela Amato\" \"The Canadian Press\" \"Sean Mott\" \"Laure"
+       },
        {
         "outlet": "Toronto Sun",
         "src": "The Canadian Press",
@@ -1095,41 +641,28 @@
       ],
       "copies": [
        {
+        "outlet": "Toronto Sun",
+        "url": "https://torontosun.com/news/world/fbi-probing-nvidia-boss-affair-chinese-spying"
+       },
+       {
         "outlet": "BBC News",
         "url": "https://www.bbc.co.uk/news/articles/cqg7x7dpvym8o?at_medium=RSS&at_campaign=rss"
        }
       ]
      },
      {
-      "t": "Mon 8:44 p.m.",
-      "primary": false,
-      "outlet": "The Japan Times",
-      "title": "Google escalates Nvidia rivalry with specialized versions of AI chips",
-      "url": "https://www.japantimes.co.jp/business/2026/11/10/tech/google-nvidia-rivalry-ai-chips/",
-      "desc": "This year’s introduction of two new tensor processing units marks an acceleration in product development for Google’s chip unit.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "The Japan Times",
-        "src": "The Japan Times",
-        "byline": "[ { \"@type\":\"Person\", \"name\":\"Dina Bass\" } ] { \"@type\": \"Organization\", \"name\": \"The Japan Times\", } Dina Bass https://w"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Mon 8:04 p.m.",
+      "t": "Mon 9:04 p.m.",
       "primary": false,
       "outlet": "CBS News",
-      "title": "Nvidia investigates CEO Jensen Huang over Chinese spy concerns",
-      "url": "https://www.cbsnews.com/news/nvidia-jensen-huang-investigation-china-intelligence/",
-      "desc": "The board of Nvidia said it had no reason to believe that the company's secrets or national security were compromised.",
+      "title": "Trump says Jensen Huang told him he had \"no idea she was a spy\" amid Chinese intel allegations",
+      "url": "https://www.cbsnews.com/video/trump-says-jensen-huang-no-idea-spy/",
+      "desc": "",
       "wire": "",
       "by": [
        {
         "outlet": "CBS News",
         "src": "CBS News",
-        "byline": "own staff: editor"
+        "byline": ""
        }
       ],
       "copies": []
@@ -1152,6 +685,23 @@
       "copies": []
      },
      {
+      "t": "Mon 6:55 p.m.",
+      "primary": false,
+      "outlet": "PBS NewsHour",
+      "title": "Nvidia's Jensen Huang faces scrutiny over alleged affair with Chinese spy",
+      "url": "https://www.pbs.org/newshour/show/nvidias-jensen-huang-faces-scrutiny-over-alleged-affair-with-chinese-spy",
+      "desc": "Lawmakers, investors and tech leaders are assessing bombshell revelations about Nvidia founder and CEO Jensen Huang. Huang admitted to an affair with a woman accused of being a Chinese spy. Nvidia designs chips and processors that power artificial intelligence and underpin much of the enormous…",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "PBS NewsHour",
+        "src": "PBS NewsHour",
+        "byline": "[{\"@type\":\"Person\",\"name\":\"William Brangham\"},{\"@type\":\"Person\",\"name\":\"Sonia Kopelev\"}] By — William Brangham William B"
+       }
+      ],
+      "copies": []
+     },
+     {
       "t": "Mon 6:49 p.m.",
       "primary": false,
       "outlet": "CBC News",
@@ -1169,18 +719,105 @@
       "copies": []
      },
      {
-      "t": "Mon 6:45 p.m.",
+      "t": "Mon 2:34 p.m.",
       "primary": false,
-      "outlet": "PBS NewsHour",
-      "title": "How the Nvidia revelations could ripple through the AI industry and global economy",
-      "url": "https://www.pbs.org/newshour/show/what-china-stands-to-gain-from-nvidias-ceos-alleged-affair-with-spy-2",
-      "desc": "To discuss the national security risks of Nvidia's CEO having an affair with a possible foreign intelligence agent, Amna Nawaz spoke with Christopher Johnson. He spent 20 years in the U.S. intelligence community focusing on China. He now runs his own consulting firm, China Strategies Group.",
+      "outlet": "Toronto Star",
+      "title": "What we know - and what we don't - as Nvidia investigates an alleged spy plot involving its CEO",
+      "url": "https://www.thestar.com/news/world/united-states/what-we-know-and-what-we-don-t-as-nvidia-investigates-an-alleged-spy-plot-involving-its-ceo/article_3f9b208f-d2cc-55ef-b5b8-2c28845ddca4.html",
+      "desc": "Stunning allegations of a spy plot have prompted Nvidia to investigate whether its founder and CEO, Jensen Huang, was the target of a “foreign intelligence effort.\"",
+      "wire": "The Associated Press",
+      "by": [
+       {
+        "outlet": "Toronto Star",
+        "src": "The Associated Press",
+        "byline": "\"Wyatte Grantham-philips The Associated Press\" \"Wyatte Grantham-p"
+       },
+       {
+        "outlet": "CP24",
+        "src": "The Associated Press",
+        "byline": "\"@type\": \"Person\",\n      \"name\": \"The  Associated Press\",\n      \n    }\n  ]"
+       },
+       {
+        "outlet": "BNN Bloomberg",
+        "src": "The Associated Press",
+        "byline": "\"@type\": \"Person\",\n      \"name\": \"The  Associated Press\",\n      \n    }\n  ]"
+       }
+      ],
+      "copies": [
+       {
+        "outlet": "CP24",
+        "url": "https://www.cp24.com/news/money/2026/11/09/nvidia-ceo-admits-to-affair-with-woman-suspected-of-being-spy-for-china/"
+       },
+       {
+        "outlet": "BNN Bloomberg",
+        "url": "https://www.bnnbloomberg.ca/business/international/2026/11/09/nvidia-ceo-admits-to-affair-with-woman-suspected-of-being-spy-for-china/"
+       }
+      ]
+     },
+     {
+      "t": "Mon 5:25 p.m.",
+      "primary": false,
+      "outlet": "NBC News",
+      "title": "Trump says FBI is investigating Nvidia CEO’s relationship with alleged Chinese spy",
+      "url": "https://www.nbcnews.com/business/corporations/trump-fbi-probe-nvidia-jensen-huang-spy-rcna608439",
+      "desc": "The president said Huang “had absolutely no idea that the person in question was a spy.”",
       "wire": "",
       "by": [
        {
-        "outlet": "PBS NewsHour",
-        "src": "PBS NewsHour",
-        "byline": "[{\"@type\":\"Person\",\"name\":\"Geoff Bennett\"},{\"@type\":\"Person\",\"name\":\"Molly Mazilu\"},{\"@type\":\"Person\",\"name\":\"Bridget Cr"
+        "outlet": "NBC News",
+        "src": "NBC News",
+        "byline": "own staff: Reporter"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Mon 5:14 p.m.",
+      "primary": false,
+      "outlet": "The Japan Times",
+      "title": "Nvidia scandal creates risks for whole AI industry, not just CEO",
+      "url": "https://www.japantimes.co.jp/business/2026/11/10/tech/nvidia-scandal-ai-industry-ceo/",
+      "desc": "The chipmaker’s shares slid as much as 8.8%, at one point erasing nearly $400 billion in market valuation, after CEO Jensen Huang disclosed his infidelity.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "The Japan Times",
+        "src": "The Japan Times",
+        "byline": "[ { \"@type\":\"Person\", \"name\":\"Ian King\" } ] { \"@type\": \"Organization\", \"name\": \"The Japan Times\", } Ian King https://www"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Mon 1:57 p.m.",
+      "primary": false,
+      "outlet": "Euronews",
+      "title": "How could the Jensen Huang 'spy' scandal affect Nvidia's future?",
+      "url": "https://www.euronews.com/video/2026/11/09/how-could-the-jensen-huang-spy-scandal-affect-nvidias-future",
+      "desc": "Video. Nvidia CEO Jensen Huang faces a board investigation over alleged Chinese intelligence links involving a business executive he had an affair with. The allegations raise concerns over security breaches and the future of the world's leading AI chipmaker.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Euronews",
+        "src": "Euronews",
+        "byline": "Ilaria Federico"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Mon 1:44 p.m.",
+      "primary": false,
+      "outlet": "Global News",
+      "title": "Nvidia’s CEO is facing a suspected spy affair scandal. Here’s what we know so far",
+      "url": "https://globalnews.ca/news/12142612/nvidia-affair-china-espionage-explainer/",
+      "desc": "Huang also has a close relationship with President Donald Trump and has pushed Trump to ease export restrictions on Nvidia chips to China.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Global News",
+        "src": "Corus",
+        "byline": "{\"@type\":\"Person\",\"name\":\"Sean Previl\",} Name Johnny Johnny Johnny Johnny Jimbo Anon Anonymous Dave Ben "
        }
       ],
       "copies": []
@@ -1209,43 +846,18 @@
     ],
     "judgment": "national",
     "judgment_why": "National: leading 9 front pages (CBC News, Global News, The Globe and Mail, NBC News, CBS News, ABC News).",
-    "weight": 37.5
+    "weight": 49
    }
   ],
   "considered": [
    {
-    "title": "Republican congressman to force impeachment vote on Defence Secretary Hegseth",
-    "url": "https://www.bbc.co.uk/news/articles/cwr5y58jjp8ro?at_medium=RSS&at_campaign=rss",
-    "rank": 1,
-    "live": "",
-    "weight": 31.5,
-    "score": 15,
-    "independent": 7,
-    "most_read": 0,
-    "canada": "tie",
-    "theme": "",
-    "top": true,
-    "fronts": 5,
-    "fronts_who": [
-     "The Globe and Mail",
-     "NBC News",
-     "CBS News",
-     "The Guardian",
-     "NPR"
-    ],
-    "rule": "Still Breaking (newest report Mon 11:00 p.m.), so it stays above \"Could Nvidia survive without its ultra-powerful CEO, Jensen \", which leads 9 front pages to its 5: not twice as many",
-    "carriers": 7,
-    "judgment": "regional",
-    "why_judged": "Regional: affects some people; carried by a few newsrooms."
-   },
-   {
     "title": "Could Nvidia survive without its ultra-powerful CEO, Jensen Huang?",
     "url": "https://www.cbc.ca/news/business/nvidia-survive-without-jensen-huang-ceo-9.7415544",
-    "rank": 2,
+    "rank": 1,
     "live": "",
-    "weight": 37.5,
-    "score": 14,
-    "independent": 6,
+    "weight": 49,
+    "score": 22,
+    "independent": 10,
     "most_read": 0,
     "canada": "none",
     "theme": "",
@@ -1263,17 +875,69 @@
      "NPR"
     ],
     "rule": "Leading other newsrooms' front pages (Canadian ones among them): the story everyone is leading with",
-    "carriers": 7,
+    "carriers": 14,
     "judgment": "national",
     "why_judged": "National: leading 9 front pages (CBC News, Global News, The Globe and Mail, NBC News, CBS News, ABC News)."
    },
    {
-    "title": "Federal budget promises relief for Yukoners, but local rollout remains unclear",
-    "url": "https://yukon-news.com/2026/11/09/federal-budget-offers-yukon-relief-but-local-rollout-remains-unclear/",
+    "title": "Rep. Thomas Massie launches bid to impeach U.S. Defense Secretary Pete Hegseth",
+    "url": "https://www.cp24.com/news/world/2026/11/09/hegseth-announces-rare-press-conference-to-discuss-expected-impeachment-resolution-in-congress/",
+    "rank": 2,
+    "live": "",
+    "weight": 42.0,
+    "score": 19,
+    "independent": 8,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": false,
+    "fronts": 6,
+    "fronts_who": [
+     "The Globe and Mail",
+     "NBC News",
+     "CBS News",
+     "BBC News",
+     "The Guardian",
+     "NPR"
+    ],
+    "rule": "No Canadian tie",
+    "carriers": 8,
+    "judgment": "national",
+    "why_judged": "National: leading 6 front pages (The Globe and Mail, NBC News, CBS News, BBC News, The Guardian, NPR)."
+   },
+   {
+    "title": "Iran live updates: Trump says Hegseth has 'won the war in Iran'",
+    "url": "https://abcnews.com/International/live-updates/iran-live-updates-americans-tired-forever-wars-araghchi/?id=137967256",
     "rank": 3,
     "live": "",
-    "weight": 21.5,
-    "score": 6,
+    "weight": 17.5,
+    "score": 9,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": false,
+    "fronts": 6,
+    "fronts_who": [
+     "The Globe and Mail",
+     "CBS News",
+     "ABC News",
+     "BBC News",
+     "The Guardian",
+     "NPR"
+    ],
+    "rule": "No Canadian tie",
+    "carriers": 3,
+    "judgment": "national",
+    "why_judged": "National: leading 6 front pages (The Globe and Mail, CBS News, ABC News, BBC News, The Guardian, NPR)."
+   },
+   {
+    "title": "Federal budget promises relief for Yukoners, but local rollout remains unclear",
+    "url": "https://yukon-news.com/2026/11/09/federal-budget-offers-yukon-relief-but-local-rollout-remains-unclear/",
+    "rank": 4,
+    "live": "",
+    "weight": 22.0,
+    "score": 7,
     "independent": 4,
     "most_read": 0,
     "canada": "none",
@@ -1282,13 +946,32 @@
     "fronts": 0,
     "fronts_who": [],
     "rule": "No Canadian tie",
-    "carriers": 7,
+    "carriers": 6,
     "judgment": "national",
     "why_judged": "National: affects many people; carried across the country (4 cities)."
    },
    {
+    "title": "Shoe store employee charged after alleged $72K theft from CrossIron Mills",
+    "url": "https://calgary.citynews.ca/2026/11/09/crossiron-theft-charges-airdrie-rcmp/",
+    "rank": 5,
+    "live": "",
+    "weight": 6.5,
+    "score": 8,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "canadian",
+    "theme": "",
+    "top": false,
+    "fronts": 0,
+    "fronts_who": [],
+    "rule": "Canadian, older",
+    "carriers": 3,
+    "judgment": "local",
+    "why_judged": "Local: a single incident touching a few people; carried only by Calgary desks."
+   },
+   {
     "title": "Carney government considers lifting ban on offshore oil and gas exploration in the Western Arctic",
-    "score": 10,
+    "score": 16,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
@@ -1297,12 +980,42 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
+    "title": "Hope is finally back in America, and did the U.S. just leave Canadian Conservatives behind?",
+    "score": 8,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Premier Doug Ford suggests 'ass whooping' for 2 boys connected to alleged assault of Hamilton cadet leader",
+    "score": 8,
+    "why": "not built: only 2 independent report(s) (3 sites)"
+   },
+   {
     "title": "Federal government budgets record $12M for Justin Trudeau's archives",
     "score": 7,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "NTSB recovers cockpit voice recorder from Learjet crash site in Florida",
+    "title": "Tahaad Pettiford scores 26 to help Auburn pull away for 75-53 victory over Appalachian State",
+    "score": 7,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Explosions reported near Russian aircraft repair plant in Novgorod Oblast as drones target occupied Crimea",
+    "score": 7,
+    "why": "not built: only 2 independent report(s) (2 sites)"
+   },
+   {
+    "title": "Honda Canada announces plans to retool Alliston, Ont., plant for hybrid production",
+    "score": 7,
+    "why": "not built: only 1 independent report(s) (7 sites)"
+   },
+   {
+    "title": "Federal Tracker: Liberals 44%, Conservatives 31%; Carney Approval at 65%",
+    "score": 6,
+    "why": "not built: only 1 independent report(s) (3 sites)"
+   },
+   {
+    "title": "Russia's top independent newspaper closes under relentless government pressure",
     "score": 6,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
@@ -1310,52 +1023,34 @@
     "title": "A ‘complete missed opportunity’ — Conservative MPs criticize party’s caucus retreat",
     "score": 5,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Hope is finally back in America, and did the U.S. just leave Canadian Conservatives behind?",
-    "score": 5,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Culture minister insists Canada will eventually force streaming giants to pay fair share for CanCon",
-    "score": 5,
-    "why": "not built: only 1 independent report(s) (3 sites)"
-   },
-   {
-    "title": "Russia's top independent newspaper closes under relentless government pressure",
-    "score": 5,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Premier Doug Ford suggests 'ass whooping' for 2 boys connected to alleged assault of Hamilton cadet leader",
-    "score": 5,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Machinists union calls on Schumer to step aside as leader",
-    "score": 5,
-    "why": "not built: only 2 independent report(s) (2 sites)"
-   },
-   {
-    "title": "Todd Russell, Beaconsfield mine collapse survivor, dies aged 54 due to illness",
-    "score": 5,
-    "why": "not built: only 2 independent report(s) (2 sites)"
-   },
-   {
-    "title": "Faced with influx, prosecutor in Washington says he lacks resources to defend immigration cases",
-    "score": 5,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Carney Recruits Bridgewater Co-CIO to Run Canada Sovereign Wealth Fund",
-    "score": 4,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
   ],
-  "moved": [],
-  "top_n": 2,
+  "moved": [
+   {
+    "to": "canada",
+    "key": "auto-6afc3e96",
+    "title": "Shoe store employee charged after alleged $72K theft from CrossIron Mills",
+    "url": "https://calgary.citynews.ca/2026/11/09/crossiron-theft-charges-airdrie-rcmp/",
+    "outlet": "CityNews Calgary",
+    "t": "Mon 1:31 p.m.",
+    "iso": "2026-11-09T18:31:43+00:00",
+    "summary": "A Calgary man is facing multiple charges after more than $70,000 in cash and merchandise allegedly went missing from a store at CrossIron Mills. RCMP began investigating on Oct. 28 after the Famous Footwear store reported significant inventory and cash shortages. An internal review allegedly found a current employee had taken about $50,000 worth of […]",
+    "img": "https://calgary.citynews.ca/wp-content/blogs.dir/sites/8/2026/11/09/Untitled-November-09-2026-at-11.21.55-1.png",
+    "scoop": false,
+    "into": "auto-6b7519e9"
+   }
+  ],
+  "top_n": 1,
   "more": [],
   "passed_over": [
+   {
+    "title": "Rep. Thomas Massie launches bid to impeach U.S. Defense Secretary Pete Hegseth",
+    "url": "https://www.cp24.com/news/world/2026/11/09/hegseth-announces-rare-press-conference-to-discuss-expected-impeachment-resolution-in-congress/"
+   },
+   {
+    "title": "Iran live updates: Trump says Hegseth has 'won the war in Iran'",
+    "url": "https://abcnews.com/International/live-updates/iran-live-updates-americans-tired-forever-wars-araghchi/?id=137967256"
+   },
    {
     "title": "Federal budget promises relief for Yukoners, but local rollout remains unclear",
     "url": "https://yukon-news.com/2026/11/09/federal-budget-offers-yukon-relief-but-local-rollout-remains-unclear/"
@@ -1532,6 +1227,20 @@
    "geo": "unknown"
   },
   {
+   "id": "nNttLxAgcaM",
+   "r": "ca",
+   "o": "CPAC",
+   "t": "Federal ministers and China’s vice premier speak about deepening economic ties – November 9, 2026",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=nNttLxAgcaM",
+   "img": "https://i.ytimg.com/vi/nNttLxAgcaM/hqdefault.jpg",
+   "up": "2026-11-09",
+   "added": "2026-11-10T05:02:35.838378+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
    "id": "SoUu0bTs-rg",
    "r": "us",
    "o": "Bloomberg",
@@ -1658,24 +1367,10 @@
    "geo": "unknown"
   },
   {
-   "id": "f4jLmH1jhbA",
-   "r": "us",
-   "o": "NBC News",
-   "t": "NBC Nightly News with Tom Llamas Full Episode - Nov. 9",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=f4jLmH1jhbA",
-   "img": "https://i.ytimg.com/vi/f4jLmH1jhbA/hqdefault.jpg",
-   "up": "2026-11-09",
-   "added": "2026-11-10T03:11:35.752412+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "zHAoXX4nJWc",
    "r": "us",
    "o": "CNN",
-   "t": "Ohio Gov-elect Amy Acton on her childhood, an ‘era of change’ & more",
+   "t": "Gov-elect Acton: ‘My childhood made me want to stop suffering’",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=zHAoXX4nJWc",
@@ -1742,20 +1437,6 @@
    "geo": "unknown"
   },
   {
-   "id": "UboCdt95ICA",
-   "r": "us",
-   "o": "Fox News",
-   "t": "BREAKING: California voters reject billionaire tax",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=UboCdt95ICA",
-   "img": "https://i.ytimg.com/vi/UboCdt95ICA/hqdefault.jpg",
-   "up": "2026-11-09",
-   "added": "2026-11-10T04:17:26.680045+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "BolPH2HOEqw",
    "r": "us",
    "o": "NBC News",
@@ -1812,16 +1493,30 @@
    "geo": "unknown"
   },
   {
-   "id": "uNu6AzuwXsU",
-   "r": "world",
-   "o": "Reuters",
-   "t": "Was Nvidia CEO Jensen Huang targeted by foreign intelligence? | Reuters World News",
+   "id": "3aAMTqxZfPs",
+   "r": "us",
+   "o": "NBC News",
+   "t": "ICE takes 8-year-old boy into custody during San Diego check-in",
    "rec": false,
    "d": "",
-   "u": "https://www.youtube.com/watch?v=uNu6AzuwXsU",
-   "img": "https://i.ytimg.com/vi/uNu6AzuwXsU/hqdefault.jpg",
+   "u": "https://www.youtube.com/watch?v=3aAMTqxZfPs",
+   "img": "https://i.ytimg.com/vi/3aAMTqxZfPs/hqdefault.jpg",
    "up": "2026-11-09",
-   "added": "2026-11-09T21:51:41.331670+00:00",
+   "added": "2026-11-10T05:02:35.838378+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "iB4Dy-bsyuQ",
+   "r": "us",
+   "o": "Fox News",
+   "t": "Greg Gutfeld: They seem like a fun bunch",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=iB4Dy-bsyuQ",
+   "img": "https://i.ytimg.com/vi/iB4Dy-bsyuQ/hqdefault.jpg",
+   "up": "2026-11-09",
+   "added": "2026-11-10T05:02:35.838378+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1927,7 +1622,7 @@
    "id": "aU_fQ5kKFVY",
    "r": "world",
    "o": "BBC News",
-   "t": "Did China honeytrap a major US tech boss for AI secrets? | BBC News",
+   "t": "Did an AI world leader get honeytrapped by a Chinese spy? | BBC News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=aU_fQ5kKFVY",
@@ -1948,6 +1643,20 @@
    "img": "https://i.ytimg.com/vi/9C_P10rublk/hqdefault.jpg",
    "up": "2026-11-09",
    "added": "2026-11-10T03:37:26.836555+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "mF-9JFQrP1I",
+   "r": "world",
+   "o": "Reuters",
+   "t": "Market Talk: Nvidia must address succession plan on earnings call",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=mF-9JFQrP1I",
+   "img": "https://i.ytimg.com/vi/mF-9JFQrP1I/hqdefault.jpg",
+   "up": "2026-11-09",
+   "added": "2026-11-10T05:02:35.838378+00:00",
    "pic": "globe",
    "geo": "unknown"
   }
@@ -2204,13 +1913,6 @@
  ],
  "eds": [
   [
-   "Toronto Star",
-   "Opinion",
-   "News Clarification for Nov. 10",
-   "https://www.thestar.com/opinion/corrections/news-clarification-for-nov-10/article_be9e9a35-b631-4a43-b14a-0910cf498b74.html",
-   "2026-11-09T20:37:00+00:00"
-  ],
-  [
    "Toronto Sun",
    "Editorial",
    "Don’t trust the feds on China",
@@ -2272,6 +1974,13 @@
    "Jensen Huang owes America an apology, and Nvidia owes investors answers",
    "https://www.foxnews.com/opinion/rebecca-grant-jensen-huang-owes-america-apology-nvidia-owes-investors-answers",
    "2026-11-09T21:56:52+00:00"
+  ],
+  [
+   "The Wall Street Journal (subscribers)",
+   "Opinion",
+   "Pepper…and Salt",
+   "https://www.wsj.com/opinion/pepperand-salt-a3aa6399?mod=rss_opinion",
+   "2026-11-10T05:00:00+00:00"
   ]
  ],
  "canus": {
@@ -2336,12 +2045,13 @@
   "usmedia": []
  },
  "brief": {
-  "edition": "Monday night, November 9",
+  "edition": "Tuesday morning, November 10",
   "lines": [
-   "Good evening. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
+   "Good morning. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
    "Can Canada afford Carney’s budget?, CityNews Vancouver reports.",
-   "US congressman files resolution to impeach Defence Secretary Pete Hegseth, Al Jazeera reports.",
-   "The US president said he spoke with Jensen Huang on Monday and asked him about the affair with the alleged spy, The Canadian Press reports.",
+   "Nvidia investigates CEO Jensen Huang over Chinese spy concerns, CBS News reports.",
+   "Rep. Thomas Massie launches bid to impeach U.S. Defense Secretary Pete Hegseth, The Associated Press reports.",
+   "A Calgary man is facing charges after allegedly stealing a large amount of cash and merchandise from a store where he worked, CTV News reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
   ]
  },
@@ -2445,24 +2155,12 @@
  ],
  "mostread": {
   "sites": [
-   "Toronto Star",
    "Winnipeg Free Press",
    "Global News",
    "Nunatsiaq News",
    "Daily Hive"
   ],
   "list": [
-   {
-    "h": "Toronto Pearson looks to displaced Stellantis workers to fill growing labour needs",
-    "u": "https://www.thestar.com/news/gta/toronto-pearson-looks-to-displaced-stellantis-workers-to-fill-growing-labour-needs/article_dd8450f6-27bd-4015-9cbd-827e8a1d78d3.html",
-    "o": [
-     [
-      "Toronto Star",
-      1,
-      "https://www.thestar.com/news/gta/toronto-pearson-looks-to-displaced-stellantis-workers-to-fill-growing-labour-needs/article_dd8450f6-27bd-4015-9cbd-827e8a1d78d3.html"
-     ]
-    ]
-   },
    {
     "h": "Montreal QB accuses Winnipeg lineman of taunts about late father",
     "u": "https://www.winnipegfreepress.com/breakingnews/2026/11/07/montreal-qb-accuses-winnipeg-lineman-of-taunts-about-late-father",
@@ -2508,17 +2206,6 @@
     ]
    },
    {
-    "h": "Family of woman killed on Highway 401 wants tougher drunk-driving sentences: ‘This needs to stop’",
-    "u": "https://www.thestar.com/news/gta/this-needs-to-stop-family-of-woman-killed-on-highway-401-wants-tougher-drunk-driving-sentences/article_0bfb1308-3ea3-4083-a49a-d99a250e03ea.html",
-    "o": [
-     [
-      "Toronto Star",
-      2,
-      "https://www.thestar.com/news/gta/this-needs-to-stop-family-of-woman-killed-on-highway-401-wants-tougher-drunk-driving-sentences/article_0bfb1308-3ea3-4083-a49a-d99a250e03ea.html"
-     ]
-    ]
-   },
-   {
     "h": "No shirt, no shoes, no kids: Winnipeg restaurateur proposes under-15 ban",
     "u": "https://www.winnipegfreepress.com/business/2026/11/07/no-shirt-no-shoes-no-kids",
     "o": [
@@ -2552,13 +2239,35 @@
     ]
    },
    {
-    "h": "The move toward renting is growing among Canada’s retirees. Here’s how to make it work financially",
-    "u": "https://www.thestar.com/business/personal-finance/the-move-toward-renting-is-growing-among-canada-s-retirees-here-s-how-to-make-it-work-financially/article_c21998cd-1715-4f95-a939-18e9221d62d4.html",
+    "h": "West St. Paul using surveillance cameras made by Chinese company banned in Canada over national security concerns",
+    "u": "https://www.winnipegfreepress.com/breakingnews/2026/11/08/are-the-watchers-being-watched-in-west-st-paul",
     "o": [
      [
-      "Toronto Star",
+      "Winnipeg Free Press",
       3,
-      "https://www.thestar.com/business/personal-finance/the-move-toward-renting-is-growing-among-canada-s-retirees-here-s-how-to-make-it-work-financially/article_c21998cd-1715-4f95-a939-18e9221d62d4.html"
+      "https://www.winnipegfreepress.com/breakingnews/2026/11/08/are-the-watchers-being-watched-in-west-st-paul"
+     ]
+    ]
+   },
+   {
+    "h": "Stellantis signs deal with Roshel to sell idled Brampton, Ont., assembly plant",
+    "u": "https://globalnews.ca/news/12143427/stellantis-roshel-brampton-assembly-plant-deal/",
+    "o": [
+     [
+      "Global News",
+      3,
+      "https://globalnews.ca/news/12143427/stellantis-roshel-brampton-assembly-plant-deal/"
+     ]
+    ]
+   },
+   {
+    "h": "Cabinet to discuss Kitikmeot Inuit employment pilot project",
+    "u": "https://nunatsiaq.com/stories/article/cabinet-to-discuss-kitikmeot-inuit-employment-pilot-project/",
+    "o": [
+     [
+      "Nunatsiaq News",
+      3,
+      "https://nunatsiaq.com/stories/article/cabinet-to-discuss-kitikmeot-inuit-employment-pilot-project/"
      ]
     ]
    }
@@ -2632,11 +2341,11 @@
    "city": "Halifax",
    "tz": "America/Halifax",
    "world": false,
-   "w": "Budget",
-   "u": "https://halifax.citynews.ca/2026/11/09/federal-budget-liberals-carney-big-story-podcast/",
-   "title": "Can Canada afford Carney’s budget?",
-   "outlet": "CityNews Halifax",
-   "t": "Mon 7:13 a.m.",
+   "w": "Jobs",
+   "u": "https://www.cp24.com/news/canada/2026/11/09/nova-scotia-mother-son-business-teaches-life-lessons-beyond-the-handbags/",
+   "title": "Nova Scotia mother-son business teaches life lessons beyond the handbags",
+   "outlet": "CP24",
+   "t": "Mon 5:12 p.m.",
    "hot": false
   },
   {
@@ -2665,11 +2374,11 @@
    "city": "Edmonton",
    "tz": "America/Edmonton",
    "world": false,
-   "w": "Bearspaw",
-   "u": "https://globalnews.ca/news/12143697/calgary-water-restrictions-usage-november-2026/",
-   "title": "Calgary water use remains in ‘green zone’ as Bearspaw feeder main work progresses",
-   "outlet": "Global News",
-   "t": "Mon 6:58 p.m.",
+   "w": "Health",
+   "u": "https://edmonton.citynews.ca/2026/11/09/military-sending-15-nurses-to-alberta-to-help-treat-injured-wainwright-soldiers/",
+   "title": "Military sending 15 nurses to Alberta to help treat injured Wainwright soldiers",
+   "outlet": "CityNews Edmonton",
+   "t": "Mon 4:37 p.m.",
    "hot": false
   },
   {
@@ -2703,6 +2412,17 @@
    "title": "Trump says FBI investigating Nvidia boss's affair with alleged Chinese spy",
    "outlet": "BBC News",
    "t": "Mon 10:58 p.m.",
+   "hot": false
+  },
+  {
+   "city": "Tehran",
+   "tz": "Asia/Tehran",
+   "world": true,
+   "w": "Attacks",
+   "u": "https://www.bbc.co.uk/news/articles/cq5yny4nl2d3o?at_medium=RSS&at_campaign=rss",
+   "title": "Trump says more US attacks on Iran 'highly unlikely'",
+   "outlet": "BBC News",
+   "t": "Mon 11:09 p.m.",
    "hot": true
   },
   {
@@ -2744,6 +2464,42 @@
    "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/f773/live/9c28e680-dc95-11f1-a701-fddedf244c16.jpg"
   },
   {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Mon 11:09 p.m.",
+   "iso": "2026-11-10T04:09:16+00:00",
+   "title": "Trump says more US attacks on Iran 'highly unlikely'",
+   "summary": "The president says the US is keeping \"status quo\" with Iran but remains “locked and loaded” should the situation in the Middle East change.",
+   "outlet": "BBC News, The Hill, ABC News, Al Jazeera, Toronto Star (AP)",
+   "n": 5,
+   "url": "https://www.bbc.co.uk/news/articles/cq5yny4nl2d3o?at_medium=RSS&at_campaign=rss",
+   "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/6017/live/b94816e0-dca5-11f1-b441-2b33b063138f.jpg"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Mon 10:36 p.m.",
+   "iso": "2026-11-10T03:36:00+00:00",
+   "title": "Explosions reported near Russian aircraft repair plant in Novgorod Oblast as drones target occupied Crimea",
+   "summary": "The attack may have targeted the 123rd Aircraft Repair Plant in the town of Staraya Russa, according to the Exilenova+ Telegram monitoring channel. The facility specializes in repairing and maintaining Russian military transport aircraft.",
+   "outlet": "Kyiv Independent, Prime Minister of Canada, The Japan Times (Reuters), The Guardian, CP24 (AP)",
+   "n": 5,
+   "url": "https://kyivindependent.com/explosions-reported-near-russian-aircraft-repair-plant-in-novgorod-oblast-as-drones-target-occupied-crimea/",
+   "img": "https://assets.kyivindependent.com/content/images/2026/11/GettyImages-2287489727_20261110-034208_20261110-034230.jpg"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Mon 7:19 p.m.",
+   "iso": "2026-11-10T00:19:24+00:00",
+   "title": "Charlamagne tha God calls out Dave Chappelle's Kirk comments, wouldn't wish them 'on my worst enemy'",
+   "summary": "Charlamagne Tha God said on \"The Breakfast Club\" that he doesn't \"find the humor\" in Dave Chappelle's joke about feeling \"better\" after Charlie Kirk's assassination.",
+   "outlet": "Fox News, BBC News, NBC News, CBC News (Reuters), CP24",
+   "n": 5,
+   "url": "https://www.foxnews.com/media/charlamagne-tha-god-calls-out-dave-chappelles-kirk-comments-wouldnt-wish-them-on-my-worst-enemy",
+   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/charlamagne-dave-chappelle.jpg"
+  },
+  {
    "desk": "us",
    "pic": "podium",
    "t": "Mon 10:42 p.m.",
@@ -2756,13 +2512,25 @@
    "img": "https://i.cbc.ca/ais/ee0571a2-40e9-4390-93d2-047e548f6d0e,1794279726628/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C213%2C4092%2C2301%29%3BResize%3D620"
   },
   {
+   "desk": "us",
+   "pic": "podium",
+   "t": "Mon 9:08 p.m.",
+   "iso": "2026-11-10T02:08:49+00:00",
+   "title": "NTSB recovers cockpit voice recorder from Learjet crash site in Florida",
+   "summary": "The NTSB recovered the cockpit voice recorder from the Learjet 60 crash site near Greenacres, Florida, as investigators probe the cause of the incident.",
+   "outlet": "Fox News, CTV News + Toronto Star + ABC News + CP24 (CP), The Hill, CityNews Calgary",
+   "n": 4,
+   "url": "https://www.foxnews.com/us/ntsb-recovers-cockpit-voice-recorder-learjet-crash-site-florida",
+   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/florida-plane-crash-voice-recorder.png"
+  },
+  {
    "desk": "business",
    "pic": "chart",
    "t": "Mon 6:43 p.m.",
    "iso": "2026-11-09T23:43:00+00:00",
    "title": "Federal budget promises relief for Yukoners, but local rollout remains unclear",
    "summary": "Billions in national spending target housing, power grids and grocery bills, yet northern communities await eligibility details.",
-   "outlet": "Yukon News, Toronto Star + CP24 (CP), CBC News, CityNews Vancouver + CityNews Ottawa + CityNews Halifax",
+   "outlet": "Yukon News, CP24 (CP), CBC News, CityNews Vancouver + CityNews Ottawa + CityNews Halifax",
    "n": 4,
    "url": "https://yukon-news.com/2026/11/09/federal-budget-offers-yukon-relief-but-local-rollout-remains-unclear/",
    "img": "https://yukon-news.com/wp-content/uploads/sites/7/2026/11/261113-YKN-Fed-budget.jpg?w=1024"
@@ -2774,33 +2542,9 @@
    "iso": "2026-11-10T04:07:30+00:00",
    "title": "Machinists union calls on Schumer to step aside as leader",
    "summary": "",
-   "outlet": "Politico, The Hill, Toronto Star (AP)",
+   "outlet": "Politico, The Hill, Toronto Star",
    "n": 3,
    "url": "https://www.politico.com/live-updates/2026/11/09/congress/union-sours-on-schumer-01157983",
-   "img": ""
-  },
-  {
-   "desk": "us",
-   "pic": "podium",
-   "t": "Mon 9:52 p.m.",
-   "iso": "2026-11-10T02:52:35+00:00",
-   "title": "Faced with influx, prosecutor in Washington says he lacks resources to defend immigration cases",
-   "summary": "Faced with an influx of petitions by people alleging they’re being unlawfully detained by federal immigration authorities, the U.S. Attorney’s Office for the Western District of Washington said Monday that it no longer has the manpower to defend every case and will let judges rule without government opposition.",
-   "outlet": "CTV News + Toronto Star + CP24 (AP), The Hill, PBS NewsHour",
-   "n": 3,
-   "url": "https://www.ctvnews.ca/world/article/faced-with-influx-prosecutor-in-washington-says-he-lacks-resources-to-defend-immigration-cases/",
-   "img": "https://www.ctvnews.ca/resizer/v2/4DRUZM46TF5UVUKLDL2TPICDHU.jpg?smart=true&auth=115fe0a04e907b7c35776fbc1289bf39a5f53461290c10fc7c7a5b1a332a8f20&width=1200&height=630"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Mon 6:47 p.m.",
-   "iso": "2026-11-09T23:47:08+00:00",
-   "title": "Recount flips squeaker election night win for NDP in Burnaby South-Metrotown to Conservatives",
-   "summary": "",
-   "outlet": "Vancouver Sun, PBS NewsHour, Fox News",
-   "n": 3,
-   "url": "https://vancouversun.com/news/elections-bc-recount-flips-squeaker-election-night-win-for-ndp-in-burnaby-south-metrotown-to-conservatives",
    "img": ""
   },
   {
@@ -2810,58 +2554,46 @@
    "iso": "2026-11-10T03:47:33+00:00",
    "title": "Todd Russell, Beaconsfield mine collapse survivor, dies aged 54 due to illness",
    "summary": "Tasmanian premier Jeremy Rockliff led the tributes for Russell, who earlier this month returned home to ‘see out his days’",
-   "outlet": "The Guardian + Times Colonist (AP), CBS News",
-   "n": 2,
+   "outlet": "The Guardian + Times Colonist (AP), CBS News, The Guardian",
+   "n": 3,
    "url": "https://www.theguardian.com/australia-news/2026/nov/10/todd-russell-dies-beaconsfield-mine-collapse-survivor-death-illness-aged-54",
    "img": "https://i.guim.co.uk/img/media/9b143c92c9a4ed57fdb4fed5bd631a8251922862/0_0_2257_1806/master/2257.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=ec76426a16a517a9d37a30851861c863"
   },
   {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Mon 10:36 p.m.",
-   "iso": "2026-11-10T03:36:00+00:00",
-   "title": "Explosions reported near Russian aircraft repair plant in Novgorod Oblast as drones target occupied Crimea",
-   "summary": "The attack may have targeted the 123rd Aircraft Repair Plant in the town of Staraya Russa, according to the Exilenova+ Telegram monitoring channel. The facility specializes in repairing and maintaining Russian military transport aircraft.",
-   "outlet": "Kyiv Independent, The Japan Times (Reuters)",
-   "n": 2,
-   "url": "https://kyivindependent.com/explosions-reported-near-russian-aircraft-repair-plant-in-novgorod-oblast-as-drones-target-occupied-crimea/",
-   "img": "https://assets.kyivindependent.com/content/images/2026/11/GettyImages-2287489727_20261110-034208_20261110-034230.jpg"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Mon 10:06 p.m.",
-   "iso": "2026-11-10T03:06:46+00:00",
-   "title": "How North Korean defectors view Kim Jong Un's daughter as his possible successor",
-   "summary": "SEOUL, South Korea (AP) — The teenage daughter of North Korean leader Kim Jong Un has drawn intense international media attention as their frequent public appearances together fuel speculation that",
-   "outlet": "Toronto Star (AP), CityNews",
-   "n": 2,
-   "url": "https://www.thestar.com/news/world/asia/how-north-korean-defectors-view-kim-jong-un-s-daughter-as-his-possible-successor/article_0c5adca0-a362-5daa-9506-7e0dab21b47c.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/2/98/298c9c57-1dbc-51f5-a6ca-70fcc3e540d1/6af28b0aa3f7d.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Mon 9:18 p.m.",
+   "iso": "2026-11-10T02:18:54+00:00",
+   "title": "No charges after Manitoba Mountie allows dog to bite man without warning",
+   "summary": "Manitoba’s police oversight agency says no charges will be laid after an officer gave no warning before allowing a police dog to bite a man experiencing a mental health crisis. However, the Independent Investigation Unit of Manitoba says in its report that the Dauphin RCMP officer’s actions on June 3, 2025, were concerning and that […]",
+   "outlet": "CityNews Winnipeg (CP), CBC News, APTN News",
+   "n": 3,
+   "url": "https://winnipeg.citynews.ca/2026/11/09/no-charges-after-manitoba-mountie-allows-dog-to-bite-man-without-warning/",
+   "img": "https://winnipeg.citynews.ca/wp-content/blogs.dir/sites/13/2024/02/17/RCMP-Generic-Police-CityNews.png"
   },
   {
    "desk": "us",
    "pic": "podium",
-   "t": "Mon 9:08 p.m.",
-   "iso": "2026-11-10T02:08:49+00:00",
-   "title": "NTSB recovers cockpit voice recorder from Learjet crash site in Florida",
-   "summary": "The NTSB recovered the cockpit voice recorder from the Learjet 60 crash site near Greenacres, Florida, as investigators probe the cause of the incident.",
-   "outlet": "Fox News, Toronto Star + ABC News + CTV News + CP24 (AP)",
-   "n": 2,
-   "url": "https://www.foxnews.com/us/ntsb-recovers-cockpit-voice-recorder-learjet-crash-site-florida",
-   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/florida-plane-crash-voice-recorder.png"
+   "t": "Mon 8:18 p.m.",
+   "iso": "2026-11-10T01:18:38+00:00",
+   "title": "Court filing alleges Trump adviser received cash, luxury gifts from foreign interests",
+   "summary": "",
+   "outlet": "Politico, The Hill, NBC News",
+   "n": 3,
+   "url": "https://www.politico.com/news/2026/11/09/lawsuit-alex-bruesewitz-foreign-entities-derek-utley-01157561",
+   "img": ""
   },
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Mon 8:55 p.m.",
-   "iso": "2026-11-10T01:55:22+00:00",
-   "title": "Qantas to outsource 850 local jobs with most roles moving to India",
-   "summary": "The Australian airline said the move was aimed at modernising its IT systems and noted the impact of AI.",
-   "outlet": "BBC News, The Guardian",
-   "n": 2,
-   "url": "https://www.bbc.co.uk/news/articles/cry838v4qzvyo?at_medium=RSS&at_campaign=rss",
-   "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/47eb/live/926fac30-dca6-11f1-86c1-89409a3a3bd9.jpg"
+   "t": "Mon 7:54 p.m.",
+   "iso": "2026-11-10T00:54:39+00:00",
+   "title": "FDA warns of rare vision-loss side effect from GLP-1 drugs",
+   "summary": "The Food and Drug Administration is adding a new warning about possible rare cases of vision loss reported with GLP-1 drugs like Ozempic, Wegovy and other brands.",
+   "outlet": "CBS News, The Hill, Toronto Star",
+   "n": 3,
+   "url": "https://www.cbsnews.com/news/glp-1-vision-loss-side-effect-warning-fda/",
+   "img": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/11/09/cc3360a3-9472-451b-9b70-8dd2d919b96f/thumbnail/1200x630/d5e0110400871c166edd8e54cc6ee744/gettyimages-2279484907.jpg"
   },
   {
    "desk": "politics",
@@ -2870,10 +2602,58 @@
    "iso": "2026-11-10T00:53:23.770000+00:00",
    "title": "Premier Doug Ford suggests 'ass whooping' for 2 boys connected to alleged assault of Hamilton cadet leader",
    "summary": "Ontario Premier Doug Ford commented on an alleged assault in Hamilton, saying the parents of two boys police say were involved should \"give your kids a little ass whooping in the wood shed.\"",
-   "outlet": "CBC News, Toronto Sun",
-   "n": 2,
+   "outlet": "CBC News, Toronto Sun, CityNews + CTV News + CP24 (CP)",
+   "n": 3,
    "url": "https://www.cbc.ca/news/canada/hamilton/doug-ford-alleged-cadet-leader-assault-hamilton-9.7415639",
    "img": "https://i.cbc.ca/ais/73e57f57-d9f0-474d-af16-f73df3c53f3a,1794260660552/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C829%2C7965%2C4480%29%3BResize%3D620"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Mon 6:28 p.m.",
+   "iso": "2026-11-09T23:28:53+00:00",
+   "title": "Judge denies motion to dismiss Lindsay Clancy's murder case",
+   "summary": "The ruling means the case can move forward, possibly with reduced charges in a new trial.",
+   "outlet": "BBC News, Toronto Star + CP24 + PBS NewsHour (AP), CBC News (Reuters)",
+   "n": 3,
+   "url": "https://www.bbc.co.uk/news/articles/ck1l3le7q29vo?at_medium=RSS&at_campaign=rss",
+   "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/f13d/live/216524b0-dc7f-11f1-ba95-5f07efd49f42.jpg"
+  },
+  {
+   "desk": "us",
+   "pic": "podium",
+   "t": "Mon 4:49 p.m.",
+   "iso": "2026-11-09T21:49:56+00:00",
+   "title": "Should star Ohio State wide receiver Jeremiah Smith sit out the rest of the season after Buckeyes loss?",
+   "summary": "Damien Harris says Jeremiah Smith played his last snap at Ohio State as the Buckeyes' collapse from No 2 puts their playoff hopes on life support.",
+   "outlet": "Fox News, NBC News, The Hill",
+   "n": 3,
+   "url": "https://www.foxnews.com/outkick-sports/should-star-ohio-state-wide-receiver-jeremiah-smith-sit-out-rest-season-after-buckeyes-loss",
+   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/jeremiah-smith-ohio-state-buckeyes-los-angeles-fox-news_.jpg"
+  },
+  {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Mon 9:21 p.m.",
+   "iso": "2026-11-10T02:21:14+00:00",
+   "title": "Scammers target potential Christmas market vendors in B.C.",
+   "summary": "Potential vendors say scammers are targeting them, claiming to offer coveted spots at B.C. Christmas markets.",
+   "outlet": "CTV News (CP), Daily Hive",
+   "n": 2,
+   "url": "https://www.ctvnews.ca/vancouver/article/scammers-target-potential-christmas-market-vendors-in-bc/",
+   "img": "https://www.ctvnews.ca/resizer/v2/QH4WYDZD45BNPL7WLQWFA2XH5M.jpeg?smart=true&auth=f301f90299e30b2942fa987964880ffd56b5b3718cefe41d1ff468bf0b1fa2a1&width=1200&height=630"
+  },
+  {
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Mon 1:01 p.m.",
+   "iso": "2026-11-09T18:01:10.523000+00:00",
+   "title": "Top U.S. hedge fund executive named CEO of Canada's new sovereign wealth fund",
+   "summary": "A top executive at one of the world's largest hedge funds is leaving her job in the U.S. to become the CEO of one of the Carney government's hallmark projects.",
+   "outlet": "CBC News, BNN Bloomberg",
+   "n": 2,
+   "url": "https://www.cbc.ca/news/politics/karen-karniol-tambour-sovereign-wealth-fund-9.7415155",
+   "img": "https://i.cbc.ca/ais/1a6ac331-6702-45ae-bc1e-78f902ef4b7a,1794246140623/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C178%2C3744%2C2106%29%3BResize%3D620"
   },
   {
    "desk": "business",
@@ -2926,26 +2706,14 @@
   {
    "desk": "us",
    "pic": "podium",
-   "t": "Mon 10:06 p.m.",
-   "iso": "2026-11-10T03:06:00+00:00",
-   "title": "Honda to spend $3 billion on new hybrid car plant in Ohio",
-   "summary": "The automaker announced on Monday the new plant will start production in 2029 and expand its output by 240,000 vehicles a year.",
-   "outlet": "The Japan Times",
+   "t": "Mon 9:52 p.m.",
+   "iso": "2026-11-10T02:52:35+00:00",
+   "title": "Faced with influx, prosecutor in Washington says he lacks resources to defend immigration cases",
+   "summary": "Faced with an influx of petitions by people alleging they’re being unlawfully detained by federal immigration authorities, the U.S. Attorney’s Office for the Western District of Washington said Monday that it no longer has the manpower to defend every case and will let judges rule without government opposition.",
+   "outlet": "CTV News + Toronto Star + CP24 (AP)",
    "n": 1,
-   "url": "https://www.japantimes.co.jp/business/2026/11/10/companies/honda-new-hybrid-plant-ohio/",
-   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/10/573103.jpg?v=3.1"
-  },
-  {
-   "desk": "us",
-   "pic": "podium",
-   "t": "Mon 10:00 p.m.",
-   "iso": "2026-11-10T03:00:27+00:00",
-   "title": "These House and Senate midterm races don't have winners yet",
-   "summary": "Democrats won sizable House and Senate majorities in the 2026 midterm elections, but the exact margins are unclear because some races haven't been projected yet. Here's where the results stand.",
-   "outlet": "CBS News",
-   "n": 1,
-   "url": "https://www.cbsnews.com/news/2026-midterm-election-house-senate-projections-toss-up/",
-   "img": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/06/667a4797-39a5-4c70-a171-bcfd7f1e4a45/thumbnail/1200x630/4d41d1d95739a51ae20bd00da6602d23/ap26308193367952.jpg"
+   "url": "https://www.ctvnews.ca/world/article/faced-with-influx-prosecutor-in-washington-says-he-lacks-resources-to-defend-immigration-cases/",
+   "img": "https://www.ctvnews.ca/resizer/v2/4DRUZM46TF5UVUKLDL2TPICDHU.jpg?smart=true&auth=115fe0a04e907b7c35776fbc1289bf39a5f53461290c10fc7c7a5b1a332a8f20&width=1200&height=630"
   },
   {
    "desk": "politics",
@@ -2957,19 +2725,7 @@
    "outlet": "Global News",
    "n": 1,
    "url": "https://globalnews.ca/news/12143830/bc-mp-misfiled-dinner-expense-raises-questions-oversight-taxpayer-spending/",
-   "img": ""
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Mon 9:40 p.m.",
-   "iso": "2026-11-10T02:40:53+00:00",
-   "title": "U.S. sues Lyft, alleges it denied rides to passengers with service dogs and wheelchairs",
-   "summary": "The US Justice Department sued Lyft LYFT.O on Monday, alleging the ride-hailing ​services provider discriminated against passengers with disabilities, including those who use service animals and mobility devices such as stowable wheelchairs.",
-   "outlet": "CTV News + CP24 + BNN Bloomberg",
-   "n": 1,
-   "url": "https://www.ctvnews.ca/world/article/us-sues-lyft-alleges-it-denied-rides-to-passengers-with-service-dogs-and-wheelchairs/",
-   "img": "https://www.ctvnews.ca/resizer/v2/RXTCZXZZ4UMPH7DHPF3MSGF76Y.jpg?smart=true&auth=3e9e3d7df772fce9bc75bb1c83fb0f2b70e29b3777ed48689c46f361ec7d4466&width=1200&height=630"
+   "img": "https://globalnews.ca/wp-content/uploads/2022/08/20220812140844-62f69f71c14535d5ccb78e02jpeg.jpg?quality=65&strip=all&w=720&h=379&crop=1"
   },
   {
    "desk": "politics",
@@ -2978,22 +2734,10 @@
    "iso": "2026-11-10T02:23:34+00:00",
    "title": "Chiefs question motive behind Indian Act talks after meeting with Carney, premiers",
    "summary": "First Nations chiefs who attended a closed-door meeting with Prime Minister Mark Carney and premiers last month say their concerns were overshadowed by Manitoba Premier Wab Kinew’s call for the abolition of the Indian Act. One chief also criticized Carney’s tone as he responded to a comment about how the United States works with Indigenous […]",
-   "outlet": "CityNews Winnipeg (CP)",
+   "outlet": "CityNews Winnipeg + CP24 + APTN News (CP)",
    "n": 1,
    "url": "https://winnipeg.citynews.ca/2026/11/09/chiefs-question-motive-behind-indian-act-talks-after-meeting-with-carney-premiers/",
    "img": "https://winnipeg.citynews.ca/wp-content/blogs.dir/sites/13/5a5tvl1y.png"
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Mon 9:21 p.m.",
-   "iso": "2026-11-10T02:21:14+00:00",
-   "title": "Scammers target potential Christmas market vendors in B.C.",
-   "summary": "Potential vendors say scammers are targeting them, claiming to offer coveted spots at B.C. Christmas markets.",
-   "outlet": "CTV News (CP)",
-   "n": 1,
-   "url": "https://www.ctvnews.ca/vancouver/article/scammers-target-potential-christmas-market-vendors-in-bc/",
-   "img": "https://www.ctvnews.ca/resizer/v2/QH4WYDZD45BNPL7WLQWFA2XH5M.jpeg?smart=true&auth=f301f90299e30b2942fa987964880ffd56b5b3718cefe41d1ff468bf0b1fa2a1&width=1200&height=630"
   },
   {
    "desk": "business",
@@ -3026,7 +2770,7 @@
    "iso": "2026-11-10T01:19:49+00:00",
    "title": "Environmental economist tells trial Canada has limited power to alter climate change",
    "summary": "An environmental economist testifying at Canada’s first youth-led climate trial says the country has a limited ability to affect the climate inside its borders as it is largely determined by the choices of other countries.",
-   "outlet": "CTV News + Canada's National Observer",
+   "outlet": "CTV News + CBC News + Canada's National Observer (CP)",
    "n": 1,
    "url": "https://www.ctvnews.ca/vancouver/article/environmental-economist-tells-trial-canada-has-limited-power-to-alter-climate-change/",
    "img": "https://www.ctvnews.ca/resizer/v2/ILQJZCT2YRVNOYACZT5CCG3RV4.jpg?smart=true&auth=da1e31b56744e5701ad6183d5b5d2d3b27f3e7a63dae4cc1122abb7b8e701653&width=1200&height=630"
@@ -3054,30 +2798,6 @@
    "n": 1,
    "url": "https://www.cbc.ca/news/politics/federal-government-consultant-spending-9.7415657",
    "img": "https://i.cbc.ca/ais/049abfd1-b860-49e6-9075-31b4d8c7fe5b,1794262989601/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C557%2C7895%2C4440%29%3BResize%3D620"
-  },
-  {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Mon 5:45 p.m.",
-   "iso": "2026-11-09T22:45:44+00:00",
-   "title": "N.L. premier sidesteps question about minister's claim that media 'twists' stories",
-   "summary": "Newfoundland and Labrador Premier Tony Wakeham says he values the media but is stopping short of saying whether he stands by claims made by a minister who said the media twists stories.",
-   "outlet": "CP24 (CP)",
-   "n": 1,
-   "url": "https://www.cp24.com/news/canada/2026/11/09/nl-premier-sidesteps-question-about-ministers-claim-that-media-twists-stories/",
-   "img": "https://www.cp24.com/resizer/v2/RP33ZKQFM4PT56L2ZDREPXWSXE.jpg?smart=true&auth=7ac805dfd414838c29f78135e122300e284f861f660778c02d9cb5c242fc38cb&width=1200&height=630"
-  },
-  {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Mon 4:57 p.m.",
-   "iso": "2026-11-09T21:57:30+00:00",
-   "title": "Throw phone in garbage, Manitoba premier says in provocative critique of Big Tech",
-   "summary": "Manitoba Premier Wab Kinew told a democracy summit the best thing we can do to strengthen our democracy and children's education is to \"all throw our phones in the garbage.\"",
-   "outlet": "CBC News",
-   "n": 1,
-   "url": "https://www.cbc.ca/news/canada/manitoba/premier-kinew-big-tech-criticism-9.7415210?cmp=rss",
-   "img": "https://i.cbc.ca/ais/fc446501-ce7d-4b3c-8ef0-bc83f6e95677,1794257565474/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1920%2C1080%29%3BResize%3D620"
   }
  ],
  "reads": [
@@ -3398,7 +3118,7 @@
    "ca": false,
    "h": [
     "Iran live updates: Trump says Hegseth has 'won the war in Iran'",
-    "World News Tonight with David Muir",
+    "Good Morning America First Look",
     "Investigators recover the voice recorder from a jet crash in Florida that killed 9",
     "Oregon home fire with e-bike caused by multiple lithium ion batteries: Officials",
     "Trump says Nvidia CEO told him he 'didn't know' he was involved with alleged spy",
@@ -3419,16 +3139,16 @@
    "h": [
     "Trump says FBI investigating Nvidia boss's affair with alleged Chinese spy",
     "Zoe Kleinman: Nvidia CEO's affair will cause ripples across US and beyond",
-    "'Cruise for life' ship seized in Singapore",
-    "Trump says more US attacks on Iran 'highly unlikely'",
+    "'Baffling but brilliant' post-apocalyptic novel The End of Everything wins Booker Prize",
     "Epstein associate who still runs model agency 'put me in danger' says abuse survivor",
-    "Ukraine peace talks resume with 'some flexibility' by warring sides, US officials say"
+    "The superpower battle over energy – and what it means for your bills",
+    "Republican congressman to force impeachment vote on Defence Secretary Hegseth"
    ],
    "u": [
     "https://www.bbc.com/news/articles/cqg7x7dpvym8o",
     "",
-    "https://www.bbc.com/news/articles/cqr7y7myer53o",
-    "https://www.bbc.com/news/articles/cq5yny4nl2d3o",
+    "https://www.bbc.com/news/articles/cw0737kv52lko",
+    "",
     "",
     ""
    ]
@@ -3483,7 +3203,7 @@
     "url": "https://www.youtube.com/watch?v=71Eq2VrASig",
     "img": "https://i.ytimg.com/vi/71Eq2VrASig/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "226",
+    "watching": "228",
     "rolling": true
    }
   ],
@@ -3575,10 +3295,6 @@
     "url": "https://www.youtube.com/watch?v=QB5BNdBFujE"
    },
    {
-    "net": "Sky News",
-    "url": "https://www.youtube.com/watch?v=umLWFz4izTM"
-   },
-   {
     "net": "DW News",
     "url": "https://www.youtube.com/watch?v=LuKwFajn37U"
    },
@@ -3589,6 +3305,10 @@
    {
     "net": "LiveNOW from FOX",
     "url": "https://www.youtube.com/watch?v=C96oohpWBGw"
+   },
+   {
+    "net": "FRANCE 24 English",
+    "url": "https://www.youtube.com/watch?v=HvZt-nh9sGg"
    }
   ]
  },
@@ -3608,15 +3328,16 @@
    "story": "Iran war live: Iran demands US ‘surrender’ to its conditions",
    "title": "Iran war live: Iran demands US ‘surrender’ to its conditions",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/9/iran-war-live-trump-says-war-effectively-over-iran-demands-surrender?traffic_source=rss",
-   "updated": "2026-11-10T04:45:00+00:00",
+   "updated": "2026-11-10T05:00:00+00:00",
    "ended": false,
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6af255420496-1794266434_707447-1794267064.jpg?resize=1200%2C630&quality=80"
   }
  ],
  "related": {
-  "auto-2fdd3866": {
+  "auto-6b7519e9": {
    "ties": [
-    "huang"
+    "chinese",
+    "china"
    ],
    "stories": [],
    "views": [
@@ -3713,7 +3434,109 @@
    "views": []
   }
  },
- "bds": [],
+ "bds": [
+  {
+   "id": "bd-auto-b2091cc0",
+   "auto": true,
+   "desk": "United States",
+   "status": "Developing",
+   "at": "2026-11-10T04:00:33+00:00",
+   "exact": true,
+   "img": "live/img/auto-b2091cc0-8847b15551.jpg",
+   "credit": "via CP24",
+   "pic": "globe",
+   "h": "Rep. Thomas Massie launches bid to impeach U.S. Defense Secretary Pete Hegseth",
+   "lede": "Facing an expected impeachment resolution in Congress, Defense Secretary Pete Hegseth said he’s eager to litigate the policy choices that he and President Donald Trump have made in Iran and Venezuela.",
+   "newl": "Now carried by 8 independent newsrooms.",
+   "rows": [
+    [
+     "Al Jazeera",
+     "Newly-elected Democrats say holding Defense Secretary Pete Hegseth accountable, will be a priority in the next Congress.",
+     [
+      2
+     ]
+    ],
+    [
+     "CBS News",
+     "GOP Rep. Thomas Massie on Monday introduced new articles of impeachment against Defense Secretary Pete Hegseth. CBS News' Taurean Small and Olivia Rinaldi have more on that and all the top news from Washington.",
+     [
+      4
+     ]
+    ],
+    [
+     "CBC News",
+     "Nov. 9, 2026 | An outgoing Republican representative introduces articles of impeachment against embattled U.S. Secretary of War Pete Hegseth. Stellantis sells a major Ontario assembly plant to a Canadian armoured vehicle maker. And, Nvidia CEO Jensen Huang is investigated for his affair with an…",
+     [
+      5
+     ]
+    ],
+    [
+     "BBC News",
+     "The effort will likely fail, but Representative Thomas Massie wants to push Trump to fire Hegseth before Democrats can launch their own impeachment process next year.",
+     [
+      6
+     ]
+    ],
+    [
+     "NBC News",
+     "The president said he would stand by Defense Secretary Pete Hegseth if he’s impeached.",
+     [
+      7
+     ]
+    ],
+    [
+     "CP24",
+     "Facing an expected impeachment resolution in Congress, Defense Secretary Pete Hegseth said he’s eager to litigate the policy choices that he and President Donald Trump have made in Iran and Venezuela.",
+     [
+      8
+     ]
+    ]
+   ],
+   "src": [
+    [
+     "The Hill",
+     "Massie: ‘High probability’ Hegseth won’t make it to the end of the year",
+     "https://thehill.com/policy/defense/6209701-massie-impeaches-hegseth/"
+    ],
+    [
+     "Al Jazeera",
+     "Newly-elected Democrats react to Hegseth impeachment bid",
+     "https://www.aljazeera.com/video/newsfeed/2026/11/10/newly-elected-democrats-react-to-hegseth-impeachment-bid?traffic_source=rss"
+    ],
+    [
+     "The Guardian",
+     "Donald Trump doubles down on defense of Pete Hegseth and attacks fresh effort to impeach him – as it happened",
+     "https://www.theguardian.com/us-news/live/2026/nov/09/donald-trump-stephen-miller-immigration-midterms-iran-qatar-economy-latest-news-updates"
+    ],
+    [
+     "CBS News",
+     "Trump defends Hegseth as Massie moves for impeachment",
+     "https://www.cbsnews.com/video/trump-defends-hegseth-as-massie-moves-for-impeachment/"
+    ],
+    [
+     "CBC News",
+     "The National | U.S. Republican moves to impeach Hegseth",
+     "https://www.cbc.ca/player/play/video/9.4236164"
+    ],
+    [
+     "BBC News",
+     "Republican congressman to force impeachment vote on Defence Secretary Hegseth",
+     "https://www.bbc.co.uk/news/articles/cwr5y58jjp8ro?at_medium=RSS&at_campaign=rss"
+    ],
+    [
+     "NBC News",
+     "Trump defends Pete Hegseth at surprise news briefing with Dana White",
+     "https://www.nbcnews.com/politics/white-house/trump-defends-jensen-huang-pete-hegseth-press-briefing-ufc-dana-white-rcna608446"
+    ],
+    [
+     "CP24",
+     "Rep. Thomas Massie launches bid to impeach U.S. Defense Secretary Pete Hegseth",
+     "https://www.cp24.com/news/world/2026/11/09/hegseth-announces-rare-press-conference-to-discuss-expected-impeachment-resolution-in-congress/"
+    ]
+   ],
+   "lead": 8
+  }
+ ],
  "geo": {
   "-YVOgH-f4qQ": {
    "v": "unknown",
