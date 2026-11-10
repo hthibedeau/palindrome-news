@@ -204,6 +204,7 @@ a.snimg { display: block; }
 .um-earlier{margin-top:10px}.um-earlier>summary{cursor:pointer;font-weight:600;color:var(--accent,#5B2A86);font-size:14px}
 .um-now{font-size:14px;color:var(--muted,#5f5870);margin:6px 0}
 .cu-asof{display:inline-block;margin-left:8px;font-size:12px;font-weight:600;color:var(--muted,#5f5870);letter-spacing:.02em}
+.vfilters button[hidden]{display:none}
 </style><style id="ca-newsroom">
 /* Canada, newsroom style not government style (Hannah, Fri Oct 30, 2026: "With the Canadian flag, can you make it
    less government looking, the Canada section?"). The official flag red (#D80621), the stiff flag leaf, the red-and-white
@@ -1768,7 +1769,7 @@ header.site { border-bottom: 0; }
       <button type="button" data-v="all" aria-pressed="true">All</button>
       <button type="button" data-v="ca" aria-pressed="false">Canada</button>
       <button type="button" data-v="us" aria-pressed="false">United States</button>
-      <button type="button" data-v="midterms" aria-pressed="false">U.S. midterms</button>
+      <button type="button" data-v="midterms" data-until="2026-11-06" aria-pressed="false">U.S. midterms</button>
       <button type="button" data-v="life" aria-pressed="false">Arts &amp; life</button>
       <button type="button" data-v="world" aria-pressed="false">World</button>
     </div>
@@ -5397,6 +5398,18 @@ header.site { border-bottom: 0; }
     ob.setAttribute('aria-expanded', String(vOlderOpen));
     wirePhotos();
   }
+  // An event's own Watch button goes once the event is over (Hannah, Mon Nov 9, 2026: "in watch the button for US
+  // midterms is still there. I dont think it needs to be anymore"): a button for an event carries data-until, the last
+  // Eastern date it is needed, and hides after it. Give the next event's button (an election, a summit) a data-until too.
+  // If the hidden button was selected, Watch goes back to All.
+  window.PAL_vfAge = function () {
+    const today = etYmd(new Date());
+    document.querySelectorAll('.vfilters button').forEach((b) => {
+      b.hidden = !!(b.dataset.until && today > b.dataset.until);
+      if (b.hidden && b.getAttribute('aria-pressed') === 'true') { const all = document.querySelector('.vfilters button[data-v="all"]'); if (all) all.click(); }
+    });
+  };
+  window.PAL_vfAge();
   document.querySelectorAll('.vfilters button').forEach((b) => b.addEventListener('click', () => {
     document.querySelectorAll('.vfilters button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
     showVids(b.dataset.v);
@@ -6939,6 +6952,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     (AUTO.d.clips || []).forEach((c) => { if (add.length < 30 && !have.has(c.u) && (per[c.o] || 0) < 3) { per[c.o] = (per[c.o] || 0) + 1; add.push(Object.assign({ w: '', auto: true }, c)); } });
     V.unshift.apply(V, add);
     try { window.PAL_showVids(); } catch (e) {}
+    try { window.PAL_vfAge && window.PAL_vfAge(); } catch (e) {}
     const el = document.getElementById('vidsChecked'); if (el) { el.textContent = 'Clips checked ' + fmt(AUTO.d.checked) + ' ET'; el.hidden = false; }
   }
   // What America's newsrooms are leading with: the top story in each U.S. newsroom's top-stories feed, in its own words.
