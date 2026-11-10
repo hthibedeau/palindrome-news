@@ -205,6 +205,7 @@ a.snimg { display: block; }
 .um-earlier{margin-top:10px}.um-earlier>summary{cursor:pointer;font-weight:600;color:var(--accent,#5B2A86);font-size:14px}
 .um-now{font-size:14px;color:var(--muted,#5f5870);margin:6px 0}
 .cu-asof{display:inline-block;margin-left:8px;font-size:12px;font-weight:600;color:var(--muted,#5f5870);letter-spacing:.02em}
+.vfilters button[hidden]{display:none}
 </style><style id="ca-newsroom">
 /* Canada, newsroom style not government style (Hannah, Fri Oct 30, 2026: "With the Canadian flag, can you make it
    less government looking, the Canada section?"). The official flag red (#D80621), the stiff flag leaf, the red-and-white
@@ -1769,7 +1770,7 @@ header.site { border-bottom: 0; }
       <button type="button" data-v="all" aria-pressed="true">All</button>
       <button type="button" data-v="ca" aria-pressed="false">Canada</button>
       <button type="button" data-v="us" aria-pressed="false">United States</button>
-      <button type="button" data-v="midterms" aria-pressed="false">U.S. midterms</button>
+      <button type="button" data-v="midterms" data-until="2026-11-06" aria-pressed="false">U.S. midterms</button>
       <button type="button" data-v="life" aria-pressed="false">Arts &amp; life</button>
       <button type="button" data-v="world" aria-pressed="false">World</button>
     </div>
@@ -5067,11 +5068,22 @@ header.site { border-bottom: 0; }
   const mic = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>';
   const play = '<svg width="18" height="18" viewBox="0 0 24 24" fill="#FFF" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>';
   const row = (pic, tint, ico, s, t, w, go, href) => '<a class="media-row" href="' + esc(href) + '" target="_blank" rel="noopener"><span class="ico">' + (grabbed(href) ? photo(grabbed(href), pic, s, '').replace('<span class="ph"', '<span class="ph bg"') : art(pic, s, tint).replace('<svg', '<svg class="bg"')) + '<span class="glyph">' + ico + '</span></span><span class="txt"><span class="src">' + esc(s) + '</span><span class="ttl">' + esc(t) + '</span><span class="when">' + esc(w) + '</span></span><span class="go">' + go + ' &#8599;</span></a>';
-  $('listen').innerHTML = [
+  // (Mon Nov 9, 2026: "I want all news updated") the hand-written episodes show only while they are from the last
+  // PODS_DAYS; each update brings the newest episodes of Canada's news podcasts (tools/autopilot.py podcasts, AUTO pods)
+  const PODS_DAYS = 7, PODS_WRITTEN = '2026-10-19';
+  const podRows = (L) => L.map(([tint, s, t, w, h]) => row('wave', tint, mic.replace('width="20" height="20"', 'width="16" height="16"'), s, t, w, 'Listen', h)).join('');
+  window.PAL_pods = (L) => {
+    $('listen').innerHTML = podRows(L);
+    // each show's own cover picture, when the feed gives one
+    $('listen').querySelectorAll('a.media-row').forEach((a, i) => { const src = L[i] && L[i][5], ico = a.querySelector('.ico');
+      if (src && ico) ico.innerHTML = '<img src="' + esc(src) + '" alt="" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;border-radius:inherit" onerror="this.remove()">'; });
+  };
+  const podsHand = [
     ['#2B1B54', 'Front Burner · CBC Podcasts', 'CFB Wainwright tragedy + the final Alberta referendum push', 'Posted Oct 19 · on CBC Listen', 'https://www.cbc.ca/radio/frontburner/cfb-wainwright-tragedy-the-final-alberta-referendum-push-9.7386278'],
     ['#7A1F3D', 'The Decibel · The Globe and Mail', 'The history of Alberta separatism', 'Posted Oct 19 · at The Globe and Mail', 'https://www.theglobeandmail.com/podcasts/the-decibel/article-the-history-of-alberta-separatism/'],
     ['#4B2F8F', 'Hill Times podcast · The Hill Times', 'Minister Eleanor Olszewski weighs in on the Alberta referendum', 'Posted Oct 16 · at The Hill Times', 'https://www.hilltimes.com/podcast/minister-eleanor-olszewski-weighs-in-on-the-alberta-referendum/']
-  ].map(([tint, s, t, w, h]) => row('wave', tint, mic.replace('width="20" height="20"', 'width="16" height="16"'), s, t, w, 'Listen', h)).join('');
+  ];
+  $('listen').innerHTML = Date.now() - Date.parse(PODS_WRITTEN + 'T23:59:00-04:00') < PODS_DAYS * 864e5 ? podRows(podsHand) : '<p class="us-wait">This week’s news podcasts are on their way with the next update.</p>';
 
   // United States desk, written by hand (real stories, Oct 18–19, 2026); shown only while fresh, see US_WRITTEN below
   const us = [
@@ -5387,6 +5399,18 @@ header.site { border-bottom: 0; }
     ob.setAttribute('aria-expanded', String(vOlderOpen));
     wirePhotos();
   }
+  // An event's own Watch button goes once the event is over (Hannah, Mon Nov 9, 2026: "in watch the button for US
+  // midterms is still there. I dont think it needs to be anymore"): a button for an event carries data-until, the last
+  // Eastern date it is needed, and hides after it. Give the next event's button (an election, a summit) a data-until too.
+  // If the hidden button was selected, Watch goes back to All.
+  window.PAL_vfAge = function () {
+    const today = etYmd(new Date());
+    document.querySelectorAll('.vfilters button').forEach((b) => {
+      b.hidden = !!(b.dataset.until && today > b.dataset.until);
+      if (b.hidden && b.getAttribute('aria-pressed') === 'true') { const all = document.querySelector('.vfilters button[data-v="all"]'); if (all) all.click(); }
+    });
+  };
+  window.PAL_vfAge();
   document.querySelectorAll('.vfilters button').forEach((b) => b.addEventListener('click', () => {
     document.querySelectorAll('.vfilters button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
     showVids(b.dataset.v);
@@ -5488,8 +5512,16 @@ header.site { border-bottom: 0; }
   ];
   const BOARDLINK = {"WAINWRIGHT": "https://www.ctvnews.ca/edmonton/article/four-dead-dozens-wounded-in-cfb-wainwright-fire-pm-says-live-here/", "ALBERTA-VOTE": "https://www.cbc.ca/news/canada/edmonton/livestory/alberta-referendum-results-live-updates-separatism-october-19-2026-9.7387777?id=9.7387777.16997", "FRANCE": "https://www.aljazeera.com/news/liveblog/2026/10/19/france-protests-live-macron-admits-failures-after-days-of-violent-unrest?update=5061903", "CPI": "https://www.ctvnews.ca/business/inflation/article/higher-gas-prices-drove-inflation-up-to-31-in-september-statcan/", "STELLANTIS": "https://www.cbc.ca/news/canada/windsor/unifor-stellantis-favour-strike-mandate-9.7386680", "PEEL-CARS": "https://www.ctvnews.ca/toronto/article/peel-police-to-reveal-results-of-investigation-into-carjackings-high-end-vehicle-thefts/", "BC-VOTE": "https://medicinehatnews.com/news/national-news/2026/10/18/eby-asking-green-voters-to-support-b-c-ndp-to-defeat-conservatives/", "HAINES": "https://www.pbs.org/newshour/world/australian-lawmaker-critically-injured-by-car-is-no-accident-prime-minister-says", "KENYA-CULT": "https://www.ctvnews.ca/world/article/kenyan-cult-leader-faces-verdict-over-191-starvation-deaths/", "US-POLLS": "https://www.axios.com/2026/10/18/trump-approval-polls-maga-gop-midterms-2026", "SCOTUS-911": "https://www.cbsnews.com/news/supreme-court-khalid-sheikh-mohammed-911-appeal/", "DC-GUARD": "https://fox5dc.com/news/national-guard-member-shot-dc", "NETANYAHU": "https://www.cbsnews.com/news/trump-endorses-israel-prime-minister-benjamin-netanyahu-reelection/", "ST-PETE": "https://www.aljazeera.com/news/2026/10/19/ukrainian-drone-attack-on-russias-st-petersburg-kills-1-hits-energy-sites", "HORMUZ": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tehran-says-netanyahu-seeks-more-war-yemen-fighting-flares"};
   const label = { verified: 'Verified', confirming: 'Confirming', watching: 'Watching', developing: 'Developing' };
-  $('boardBody').innerHTML = board.map(([slug, h, href, desk, st, n, next]) =>
-    '<tr><td class="slug">' + esc(slug) + '</td><td><a href="' + esc(BOARDLINK[slug] || href) + '"' + (BOARDLINK[slug] ? ' target="_blank" rel="noopener"' : '') + '>' + esc(h) + ' &#8599;</a></td><td class="desk-c">' + esc(desk) + '</td><td><span class="stp ' + st + '">' + label[st] + '</span></td><td>' + meter(n) + '</td><td class="next">' + esc(next) + '</td></tr>').join('');
+  // (Mon Nov 9, 2026: "I want all news updated") the board was the stories of Oct. 17-20. Each update now builds it from
+  // the stories the page is carrying: the top stories, then the biggest story on each desk (PAL_board). The hand-written
+  // board shows only while it is from the last BOARD_DAYS.
+  const BOARD_WRITTEN = '2026-10-20', BOARD_DAYS = 2;
+  function renderBoard(B) {
+    $('boardBody').innerHTML = B.map(([slug, h, href, desk, st, n, next]) =>
+    '<tr><td class="slug">' + esc(slug) + '</td><td><a href="' + esc(BOARDLINK[slug] || href) + '"' + (BOARDLINK[slug] || /^https?:/.test(href) ? ' target="_blank" rel="noopener"' : '') + '>' + esc(h) + ' &#8599;</a></td><td class="desk-c">' + esc(desk) + '</td><td><span class="stp ' + st + '">' + label[st] + '</span></td><td>' + meter(n) + '</td><td class="next">' + esc(next) + '</td></tr>').join('');
+  }
+  window.PAL_board = renderBoard;
+  renderBoard(Date.now() - Date.parse(BOARD_WRITTEN + 'T23:59:00-04:00') < BOARD_DAYS * 864e5 ? board : []);
 
   // Edition by time of day; late edition stamp after 10 p.m.
   try {
@@ -6703,7 +6735,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     const fresh = !AUTO || AUTO.d.checked !== got[0].d.checked;
     AUTO = got[0];
     deadLinks();
-    if (fresh) { try { if (window.PAL_clocks && AUTO.d.clocks) window.PAL_clocks(AUTO.d.clocks); } catch (e) { console.warn('clocks', e); } blogs(); wire(); try { autoTop(); if (window.PAL_orderTop) window.PAL_orderTop(); try { leadAuto(); } catch (e) { console.warn('lead', e); } } catch (e) { console.warn('autoTop', e); } try { clips(); ledes(); stamp(); papers(); eds(); canus(); try { usDesk(); } catch (e) { console.warn('us desk', e); } try { reads(); } catch (e) { console.warn('reads', e); } try { geoHide(); } catch (e) { console.warn('geo', e); } try { markCanada(); } catch (e) { console.warn('canada', e); } brief(); bds(); otr(); live(); related(); try { canAngle(); canAngleLive(); } catch (e) { console.warn('canAngle', e); } mostRead(); smaller(); dazzle(); } catch (e) { console.warn('autopilot', e); } if (window.PAL_eventRender) try { window.PAL_eventRender(); } catch (e) {} if (window.PAL_renderFronts) try { window.PAL_renderFronts(); if (window.PAL_oneStoryOnePlace) window.PAL_oneStoryOnePlace(); } catch (e) { console.warn(e); } }
+    if (fresh) { try { if (window.PAL_clocks && AUTO.d.clocks) window.PAL_clocks(AUTO.d.clocks); } catch (e) { console.warn('clocks', e); } blogs(); wire(); try { autoTop(); if (window.PAL_orderTop) window.PAL_orderTop(); try { leadAuto(); } catch (e) { console.warn('lead', e); } } catch (e) { console.warn('autoTop', e); } try { clips(); ledes(); stamp(); papers(); eds(); canus(); try { usDesk(); } catch (e) { console.warn('us desk', e); } try { pods(); } catch (e) { console.warn('pods', e); } try { storyBoard(); } catch (e) { console.warn('board', e); } try { reads(); } catch (e) { console.warn('reads', e); } try { geoHide(); } catch (e) { console.warn('geo', e); } try { markCanada(); } catch (e) { console.warn('canada', e); } brief(); bds(); otr(); live(); related(); try { canAngle(); canAngleLive(); } catch (e) { console.warn('canAngle', e); } mostRead(); smaller(); dazzle(); } catch (e) { console.warn('autopilot', e); } if (window.PAL_eventRender) try { window.PAL_eventRender(); } catch (e) {} if (window.PAL_renderFronts) try { window.PAL_renderFronts(); if (window.PAL_oneStoryOnePlace) window.PAL_oneStoryOnePlace(); } catch (e) { console.warn(e); } }
     paint();
   }
   function blogs() {
@@ -6921,6 +6953,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     (AUTO.d.clips || []).forEach((c) => { if (add.length < 30 && !have.has(c.u) && (per[c.o] || 0) < 3) { per[c.o] = (per[c.o] || 0) + 1; add.push(Object.assign({ w: '', auto: true }, c)); } });
     V.unshift.apply(V, add);
     try { window.PAL_showVids(); } catch (e) {}
+    try { window.PAL_vfAge && window.PAL_vfAge(); } catch (e) {}
     const el = document.getElementById('vidsChecked'); if (el) { el.textContent = 'Clips checked ' + fmt(AUTO.d.checked) + ' ET'; el.hidden = false; }
   }
   // What America's newsrooms are leading with: the top story in each U.S. newsroom's top-stories feed, in its own words.
@@ -6972,6 +7005,30 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     // the intro no longer names one day's subjects (it said "Today: Alberta's vote, Trump, Stelco and France" for weeks)
     const p = document.querySelector('#editorials .band-head p');
     if (p) p.textContent = 'We don’t write editorials. We pick the day’s best from other outlets. Checked automatically at ' + fmt(AUTO.d.checked) + ' ET.';
+  }
+  // Go deeper: the newest episodes of Canada's news podcasts
+  function pods() {
+    const P = (AUTO.d.pods || []).filter((x) => Date.now() - Date.parse(x.iso) < 5 * 864e5);
+    if (!window.PAL_pods || !P.length) return;
+    const tints = ['#2B1B54', '#7A1F3D', '#4B2F8F', '#5B2A86', '#3A2466'];
+    window.PAL_pods(P.map((x, i) => [tints[i % tints.length], x.show + ' · ' + x.net, x.title, 'Posted ' + x.t + ' · on ' + x.net, x.u, x.img || '']));
+  }
+  // Story board: what the page is carrying now, top stories first, then the biggest story on each desk
+  function storyBoard() {
+    if (!window.PAL_board) return;
+    const A = AUTO.d.auto || {}, rows = [], seen = new Set();
+    const slug = (t) => (t.replace(/[‘’'"“”]/g, '').match(/\b[A-Z][\w.-]+/g) || t.split(' ')).filter((x) => !/^(The|A|An|In|On|At|After|As|U\.S\.|US|Canada|Canadian|Canadians|New|Rep\.?|Sen\.?|Premier|Prime|Minister|President|Mayor|Chief|Judge|Federal|Former|Top|Donald|Mark|Doug|Pierre|Pete|Thomas|Police|Here|How|Why|What|Who|When|Will|Is)$/.test(x)).slice(0, 2).join('-').toUpperCase().replace(/[^A-Z0-9-]/g, '').slice(0, 18) || 'STORY';
+    const add = (title, url, desk, n, next) => {
+      const k = String(title).toLowerCase().slice(0, 40); if (!title || seen.has(k)) return; seen.add(k);
+      rows.push([slug(title), title, url, desk, n >= 6 ? 'verified' : n >= 3 ? 'confirming' : 'developing', n, next]);
+    };
+    (A.stories || []).concat(A.more || []).forEach((x) => add(x.title, x.url, x.theme || (x.canada === 'canadian' ? 'Canada' : /\b(Trump|Hegseth|Vance|Rubio|White House|Congress|Senate|House|Republicans?|Democrats?|Pentagon|Supreme Court|U\.S\.|Americans?)\b/.test(x.title) && !/\b(Iran|Israel|Gaza|Ukrain\w*|Russia\w*|China|Venezuela)\b/.test(x.title) ? 'U.S.' : 'World'), (x.sources || []).length || x.independent || x.outlets || 1, 'Latest: ' + x.outlet + ' · ' + x.t));
+    const NAME = { politics: 'Politics', business: 'Business', world: 'World', us: 'U.S.' }, per = {};
+    (AUTO.d.desks || []).filter((r) => Date.now() - Date.parse(r.iso) < 30 * 3600e3).forEach((r) => {
+      if ((per[r.desk] = (per[r.desk] || 0) + 1) > 2) return;
+      add(r.title, r.url, NAME[r.desk] || 'News', String(r.outlet || '').split(',').length, 'Latest: ' + String(r.outlet).split(',')[0] + ' · ' + r.t);
+    });
+    if (rows.length) window.PAL_board(rows.slice(0, 12));
   }
   // Today's reading: the editor's picks while fresh, otherwise today's long reads from each update
   function reads() {
@@ -8458,81 +8515,57 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
 </script>
 
 <!-- cmb:end -->
-<!-- solo-balance:start -->
-<script id="solo-balance">
-// NO HALF-EMPTY PAGE WHEN ONE STORY STANDS ALONE (Hannah, Mon Nov 9, 2026, a photo of her iPad: "Half the page is
-// blank. We've gone through this multiple times. Make it look really good."). On a big news day the lead story runs
-// full width: photo, headline and summary on the left, the Canadian angle and Connected to this story in a column on
-// the right. That right column ended halfway down, beside the long newsroom list on the left, so the right half of the
-// screen was empty colour. Now, on a wide screen (iPad, laptop), the two columns are measured after every update:
-//   1. "The latest from every newsroom" moves into the right column (under the Canadian angle, above Connected) when
-//      that brings the two bottoms closer together;
-//   2. if the right column is still clearly shorter, the list opens by itself (Show all) — but only if that evens
-//      things out, and never against a reader's own tap.
-// It goes back where it was on a phone, or when the story no longer stands alone. Nothing is removed.
-(function () {
-  const root = document.getElementById('autoBreaking'); if (!root) return;
-  const GAP = 16, SLACK = 120;
-  const wide = () => window.matchMedia('(min-width: 960px)').matches;
-  const box = (e) => { if (!e) return null; const cs = getComputedStyle(e); if (cs.display === 'none' || e.hidden) return null; return e.getBoundingClientRect(); };
-  let busy = false, t = 0;
-  function cols(art, side) {
-    const top = art.getBoundingClientRect().top; let left = 0;
-    [...art.children].forEach((e) => { if (e === side) return; const r = box(e); if (r && r.height) left = Math.max(left, r.bottom - top); });
-    const s = box(side); return { left, right: s ? s.bottom - top : 0 };
-  }
-  function undo() {
-    root.querySelectorAll('.ab-side > .sb-moved').forEach((x) => { const a = x.closest('.ab-story'); x.classList.remove('sb-moved'); if (a) a.appendChild(x); });
-  }
-  function run() {
-    if (busy) return; busy = true;
-    try {
-      const art = root.querySelector(':scope > .ab-story'), side = art && art.querySelector(':scope > .ab-side');
-      if (!root.classList.contains('solo') || !wide() || !side || root.hidden) { undo(); return; }
-      const reps = art.querySelector('.ab-reps'), rel = art.querySelector('.rel-box');
-      // wait until the other layers have folded the list and de-duplicated Connected
-      if ((!reps || !reps.classList.contains('cr-fold') || (rel && !rel.dataset.dd)) && (run.tries = (run.tries || 0) + 1) < 10) { clearTimeout(t); t = setTimeout(run, 400); return; }
-      run.tries = 0; if (!reps) return;
-      let c = cols(art, side);
-      // 1. move the newsroom list across when it evens the columns
-      if (reps.parentNode !== side && c.left - c.right > SLACK) {
-        const h = reps.getBoundingClientRect().height + GAP;
-        if (Math.abs((c.left - h) - (c.right + h)) < c.left - c.right) {
-          reps.classList.add('sb-moved');
-          if (rel && rel.parentNode === side) rel.before(reps); else side.appendChild(reps);
-          c = cols(art, side);
-        }
-      } else if (reps.parentNode === side && c.right - c.left > SLACK && reps.classList.contains('sb-moved')) {
-        // the right column grew past the left (a long Canadian angle, projections): the list goes back
-        reps.classList.remove('sb-moved'); art.appendChild(reps); c = cols(art, side);
-      }
-      // 2. still a gap on the right: open the list if that evens things out
-      if (reps.parentNode === side && c.left - c.right > SLACK && !reps.classList.contains('cr-open') && !reps.dataset.user) {
-        const b = reps.querySelector(':scope > .cr-more');
-        if (b) {
-          const before = c.left - c.right; b.click(); const n = cols(art, side);
-          if (Math.abs(n.left - n.right) >= before) b.click(); else reps.dataset.auto = '1';
-        }
-      }
-    } catch (e) { console.warn('solo-balance', e); }
-    finally { setTimeout(() => { busy = false; }, 80); }
-  }
-  const later = (ms) => { clearTimeout(t); t = setTimeout(run, ms); };
-  new MutationObserver(() => { if (!busy) later(450); }).observe(root, { childList: true, subtree: true, attributes: true, attributeFilter: ['class', 'hidden'] });
-  window.addEventListener('resize', () => later(300));
-  window.addEventListener('load', () => later(300));
-  later(1200); setTimeout(run, 4500);
-  window.PAL_soloBalance = run;
-})();
-</script>
-<style id="solo-balance-css">
+<!-- solo-front:start -->
+<style id="solo-front">
+/* A NEWSPAPER FRONT WHEN ONE BIG STORY STANDS ALONE (Hannah, Mon Nov 9, 2026, on her iPad: "Half the page is blank ...
+   Make it look really good", then "still isnt the most appealing"). On a wide screen (iPad, laptop) the lone big story
+   is laid out like a front page instead of two uneven columns:
+     1. the tags, the headline across the full width, the subheadline and the byline, so the story reads first;
+     2. the live strip and live video, if any (live coverage stays right under the breaking story);
+     3. the photo on the left, the Canadian angle and Connected to this story beside it, the photo cut to exactly the
+        height of that column, so the two always end together and nothing is left blank;
+     4. "The latest from every newsroom" across the full width, three reports side by side (with no Canadian angle in
+        the edition, it goes beside the photo instead, under Connected).
+   With no photo, the Canadian angle and Connected sit side by side across the width. Phones keep one column. Pure
+   layout: nothing is moved out of the story or removed. */
 @media (min-width: 960px) {
-  /* the newsroom list in the right column keeps its own look; its "Show all" stays in its heading */
-  #autoBreaking.solo .ab-story > .ab-side > .ab-reps { border-top: 1px solid rgba(255,255,255,.16) !important; padding-top: 14px !important; }
-  #autoBreaking.solo .ab-story > .ab-side > .ab-reps li { font-size: 15.5px; }
+  #autoBreaking.solo > .ab-story:not(.ab-second) { display: grid !important; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); column-gap: 32px; row-gap: 0; align-items: start; }
+  #autoBreaking.solo > .ab-story:not(.ab-second)::after { display: none !important; }
+  #autoBreaking.solo > .ab-story:not(.ab-second) > * { grid-column: 1 / -1; margin-right: 0 !important; min-width: 0; }
+  /* 1. the story first */
+  #autoBreaking.solo > .ab-story > .cr-tags { grid-row: 1; margin: 0 0 14px !important; }
+  #autoBreaking.solo > .ab-story > h2 { grid-row: 2; font-size: clamp(40px, 4.4vw, 62px) !important; line-height: 1.04 !important; letter-spacing: -.018em; margin: 0 0 16px !important; max-width: none !important; text-wrap: balance; }
+  #autoBreaking.solo > .ab-story > .ab-sub { grid-row: 3; font-size: clamp(18px, 1.6vw, 21px) !important; line-height: 1.45 !important; max-width: 62ch; margin: 0 0 12px !important; opacity: .95; }
+  #autoBreaking.solo > .ab-story > .cr-byline { grid-row: 4; max-width: none !important; margin: 0 0 24px !important; padding-bottom: 22px; border-bottom: 1px solid rgba(255,255,255,.22); }
+  /* 2. live */
+  #autoBreaking.solo > .ab-story > .cr-live { grid-row: 5; margin: 0 0 20px !important; }
+  #autoBreaking.solo > .ab-story > .ab-vids { grid-row: 6; margin: 0 0 22px !important; }
+  /* 3. photo beside the Canadian angle, ending together */
+  #autoBreaking.solo > .ab-story > .bart { grid-column: 1; grid-row: 7; align-self: stretch; aspect-ratio: auto !important; min-height: 300px; max-width: none !important; margin: 0 !important; border-radius: 10px; overflow: hidden; }
+  #autoBreaking.solo > .ab-story > .bart > .ph, #autoBreaking.solo > .ab-story > .bart > .ph > img, #autoBreaking.solo > .ab-story > .bart > img { display: block; width: 100%; height: 100% !important; aspect-ratio: auto !important; object-fit: cover; }
+  #autoBreaking.solo > .ab-story > .bart > .ph { position: absolute; inset: 0; }
+  #autoBreaking.solo > .ab-story > .bart-cap { grid-column: 1; grid-row: 8; margin: 8px 0 0 !important; max-width: none; }
+  #autoBreaking.solo > .ab-story > .ab-side { grid-column: 2; grid-row: 7; float: none !important; width: auto !important; margin: 0 !important; display: flex; flex-direction: column; gap: 16px; }
+  #autoBreaking.solo > .ab-story > .ab-side > .rel-box { margin: 0 !important; }
+  #autoBreaking.solo > .ab-story:not(:has(> .bart)) > .ab-side { grid-column: 1 / -1; flex-direction: row; align-items: flex-start; }
+  #autoBreaking.solo > .ab-story:not(:has(> .bart)) > .ab-side > * { flex: 1 1 0; min-width: 0; }
+  /* 4. every newsroom, across the width */
+  #autoBreaking.solo > .ab-story > .ab-reps { grid-row: 9; margin: 28px 0 0 !important; padding-top: 18px !important; border-top: 1px solid rgba(255,255,255,.22) !important; }
+  #autoBreaking.solo > .ab-story > .ab-reps > ol { display: grid !important; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 28px; margin-top: 6px; }
+  #autoBreaking.solo > .ab-story > .ab-reps > ol > li { margin: 0 !important; }
+  /* no Canadian angle in this edition: the newsroom list goes beside the photo, under Connected, so the right column
+     still reaches the bottom of the photo */
+  #autoBreaking.solo > .ab-story:has(> .bart):not(:has(.can-box)) > .bart { grid-row: 7 / 9; }
+  #autoBreaking.solo > .ab-story:has(> .bart):not(:has(.can-box)) > .bart-cap { grid-row: 9; }
+  #autoBreaking.solo > .ab-story:has(> .bart):not(:has(.can-box)) > .ab-reps { grid-column: 2; grid-row: 8; margin: 16px 0 0 !important; }
+  #autoBreaking.solo > .ab-story:has(> .bart):not(:has(.can-box)) > .ab-reps > ol { grid-template-columns: 1fr !important; }
+}
+@media (min-width: 960px) and (max-width: 1099px) {
+  #autoBreaking.solo > .ab-story > .ab-reps > ol { grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 20px; }
+  #autoBreaking.solo > .ab-story > .ab-reps > ol > li { font-size: 15px; }
 }
 </style>
-<!-- solo-balance:end -->
+<!-- solo-front:end -->
 <!-- dz:start -->
 <!-- DESIGN PREVIEW LAYER (Hannah, Sun Nov 1, 2026: "Should we try them and if i dont like it go back to what we have now?")
      Chris T's design review of Nov 1, 2026, minus three points Hannah's own rules rule out:
