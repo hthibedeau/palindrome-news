@@ -220,6 +220,11 @@ a.snimg { display: block; }
 .cov-n{cursor:pointer;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;position:relative;z-index:3}
 .reps-flash{outline:2px solid #F2A7C3;outline-offset:6px;border-radius:6px}
 .subs-tag{display:inline-block;margin-left:6px;padding:0 6px;border:1px solid currentColor;border-radius:4px;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;opacity:.75;vertical-align:1px}
+#autoBreaking .ab-second .ab-watch{margin-top:14px}
+#autoBreaking .ab-second .ab-watch .vids{grid-auto-columns:min(190px,56vw);gap:12px}
+#autoBreaking .ab-second .ab-watch .vid h3,#autoBreaking .ab-second .ab-watch .vid h3 a{font-size:13px}
+#autoBreaking .ab-second .ab-watch .vid .bigplay svg{transform:scale(.8)}
+#autoBreaking .ab-second .ab-watch-h{font-size:12px}
 </style><style id="ca-newsroom">
 /* Canada, newsroom style not government style (Hannah, Fri Oct 30, 2026: "With the Canadian flag, can you make it
    less government looking, the Canada section?"). The official flag red (#D80621), the stiff flag leaf, the red-and-white
@@ -5466,13 +5471,15 @@ header.site { border-bottom: 0; }
   // first, from the last two days. A clip belongs to the story when its title shares two of the story's own words, or
   // one of its names (Hegseth, Massie) that isn't an everyday political word (Trump, Carney, Republican ...).
   const SW_COMMON = new Set('trump carney republican republicans democrat democrats liberal liberals conservative conservatives ndp canada canadian canadians american americans president minister prime government house senate congress ottawa washington federal provincial premier police court news live video update says'.split(' '));
+  // everyday words that start a headline with a capital ("Could Nvidia survive ...") are not names
+  const SW_PLAIN = new Set('could would should what when where which while why how after with without from this that these those their there here about over under into says said will more most first last report reports watch video update could does have than then they them what'.split(' '));
   window.PAL_storyWatch = function (sec, stories) {
     sec.querySelectorAll('.ab-watch').forEach((x) => x.remove());
     const used = new Set();
     (stories || []).forEach((st) => {
       const art = sec.querySelector('.ab-story[data-key="' + CSS.escape(st.key) + '"]'); if (!art) return;
       const words = new Set((st.words || []).map((x) => String(x).toLowerCase()));
-      const names = new Set((String(st.title || '').match(/\b[A-Z][a-z’'-]{3,}/g) || []).map((x) => x.toLowerCase().replace(/[’']s$/, '')).filter((x) => !SW_COMMON.has(x)));
+      const names = new Set((String(st.title || '').match(/\b[A-Z][a-z’'-]{3,}/g) || []).map((x) => x.toLowerCase().replace(/[’']s$/, '')).filter((x) => !SW_COMMON.has(x) && !SW_PLAIN.has(x)));
       // every clip the update found, not only the 30 shown in Watch, so the row has all the story's clips to scroll through
       const extra = (((window.PAL_autoupdate && window.PAL_autoupdate.data && window.PAL_autoupdate.data.clips) || [])
         .filter((c) => !vids.some((v) => v.u === c.u)).map((c) => Object.assign({ w: '', auto: true }, c)));
@@ -7802,7 +7809,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
 @media (max-width: 959px) { #autoBreaking .ab-second > .bart > .cr-credit { display: none; } }
 #autoBreaking .ab-second .cr-tags .fresh { display: none; }
 #autoBreaking .ab-second .cr-tags { flex-wrap: wrap; row-gap: 6px; }
-#autoBreaking .ab-second:not(.cr-open) > :not(.bart):not(.cr-tags):not(h2):not(.ab-sub):not(.cr-byline):not(.cr-full) { display: none !important; }
+#autoBreaking .ab-second:not(.cr-open) > :not(.bart):not(.cr-tags):not(h2):not(.ab-sub):not(.cr-byline):not(.cr-full):not(.ab-watch) { display: none !important; }
 #autoBreaking .ab-second .ab-sub { font-size: 15px !important; }
 #autoBreaking .cr-full { justify-self: start; }
 #autoBreaking .ab-note { display: none; }
