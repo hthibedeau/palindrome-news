@@ -59,6 +59,7 @@ Both pages open directly in a web browser. They are previews: the live site will
 - **Today's reading**: the editor's picks show for three days; after that, today's long reads from Canadian newsrooms (analysis, explainers, investigations, features, never opinion: `reads()` in `tools/autopilot.py`).
 - **Canada and the U.S.**: the band says when the newest reports were checked and when the trade figures were last reviewed. "How U.S. media see Canada" folds cards older than five days into "Earlier U.S. coverage"; more U.S. newsrooms are read for it.
 - **Most read** leaves out articles more than a week old, even when they sit on a newsroom's most-read list.
+- **Weekday labels are not dates** (Mon Nov 9, 2026: "look how old this story is ... It has been on the site for a long time"). The Oct. 26 Carney lead said only "Updated Mon 6:47 p.m.", so it came back as new every Monday. A hand-written story now counts as current only when it carries a real recent date (`data-updated`, or the date in one of its links: `PAL_handFresh` in index.html). The lead slot, the hand-written desk stories and the wire all use it.
 - **Editorials** and **Most read** no longer show one day's hand-written intro or fine print.
 
 ## How the page updates itself: the code runs it
