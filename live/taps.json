@@ -1,9 +1,36 @@
 {
- "checked": "2026-11-10T07:39:13.254318+00:00",
- "labels": 168,
- "problems": [],
+ "checked": "2026-11-10T09:14:26.670835+00:00",
+ "labels": 173,
+ "problems": [
+  {
+   "label": "The Guardian",
+   "opens": "https://www.cbc.ca/news/canada/toronto/ford-government-public-safety-poll-9.7415407",
+   "section": "developed",
+   "link": false,
+   "width": 390
+  },
+  {
+   "label": "CBS News",
+   "opens": "https://www.cbc.ca/news/canada/toronto/ford-government-public-safety-poll-9.7415407",
+   "section": "developed",
+   "link": false,
+   "width": 390
+  },
+  {
+   "label": "PBS NewsHour",
+   "opens": "https://www.cbc.ca/news/canada/toronto/ford-government-public-safety-poll-9.7415407",
+   "section": "developed",
+   "link": false,
+   "width": 390
+  }
+ ],
  "guard": {
   "fixed": [
+   {
+    "label": "CBS News",
+    "was": "(card link) cbsnews.com",
+    "now": "https://www.cbsnews.com/news/us-russia-ukraine-war-talks-peace-abu-dhabi-deal/"
+   },
    {
     "label": "PBS News",
     "was": "(card link) pbs.org",
@@ -15,7 +42,12 @@
     "now": "https://www.npr.org/2026/11/09/g-s1-151625/california-billionaire-tax-referendum"
    }
   ],
-  "disabled": [],
+  "disabled": [
+   {
+    "label": "The Hill Timessubscribers",
+    "href": "https://www.hilltimes.com/2026/10/21/canada-should-continue-to-speak-loudly-and-clearly-despite-u-s-envoys-interference-claims-say-former-diplomats-and-ex-mp/522696/"
+   }
+  ],
   "lifted": []
  }
 }
