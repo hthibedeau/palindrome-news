@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-10T05:52:52.380235+00:00",
- "checkedLabel": "Tue 12:52 a.m.",
+ "checked": "2026-11-10T06:02:51.774647+00:00",
+ "checkedLabel": "Tue 1:02 a.m.",
  "stories": [
   {
    "key": "top",
@@ -322,7 +322,7 @@
    "theme": ""
   },
   {
-   "score": 22,
+   "score": 20,
    "title": "Canadian exports are up, but the number of companies exporting? Not so much. Here’s why",
    "url": "https://www.begiant.ca/stories/ideas/federal-budget-2026-trade-exports-ports",
    "outlets": 16,
@@ -373,8 +373,26 @@
   },
   {
    "score": 7,
+   "title": "Federal Tracker: Liberals 44%, Conservatives 31%; Carney Approval at 65%",
+   "url": "https://press.liaisonstrategies.ca/federal-tracker-liberals-44-conservatives-31-carney-approval-at-65-november-9-2026/",
+   "outlets": 4,
+   "why": [
+    "National Newswatch #4"
+   ],
+   "theme": ""
+  },
+  {
+   "score": 7,
    "title": "Honda Canada announces plans to retool Alliston, Ont., plant for hybrid production",
    "url": "https://www.cbc.ca/news/canada/toronto/honda-alliston-plant-hybrid-production-9.7415303",
+   "outlets": 7,
+   "why": [],
+   "theme": ""
+  },
+  {
+   "score": 7,
+   "title": "Premier Doug Ford suggests 'ass whooping' for 2 boys connected to alleged assault of Hamilton cadet leader",
+   "url": "https://www.cbc.ca/news/canada/hamilton/doug-ford-alleged-cadet-leader-assault-hamilton-9.7415639",
    "outlets": 7,
    "why": [],
    "theme": ""
@@ -389,38 +407,18 @@
     "National Newswatch #13"
    ],
    "theme": "Federal budget"
-  },
-  {
-   "score": 6,
-   "title": "Federal Tracker: Liberals 44%, Conservatives 31%; Carney Approval at 65%",
-   "url": "https://press.liaisonstrategies.ca/federal-tracker-liberals-44-conservatives-31-carney-approval-at-65-november-9-2026/",
-   "outlets": 3,
-   "why": [
-    "National Newswatch #4"
-   ],
-   "theme": ""
-  },
-  {
-   "score": 6,
-   "title": "Russia's top independent newspaper closes under relentless government pressure",
-   "url": "https://www.cbc.ca/news/world/novoya-gazeta-russia-media-newspaper-closes-putin-9.7414787",
-   "outlets": 3,
-   "why": [
-    "CBC News front #6"
-   ],
-   "theme": ""
   }
  ],
  "canada": [
   {
-   "t": "Mon 1:31 p.m.",
-   "iso": "2026-11-09T18:31:43+00:00",
+   "t": "Mon 7:53 p.m.",
+   "iso": "2026-11-10T00:53:23.770000+00:00",
    "region": "National",
-   "title": "Shoe store employee charged after alleged $72K theft from CrossIron Mills",
-   "summary": "A Calgary man is facing multiple charges after more than $70,000 in cash and merchandise allegedly went missing from a store at CrossIron Mills. RCMP began investigating on Oct. 28 after the Famous Footwear store reported significant inventory and cash shortages. An internal review allegedly found a current employee had taken about $50,000 worth of […]",
-   "outlet": "CityNews Calgary",
-   "url": "https://calgary.citynews.ca/2026/11/09/crossiron-theft-charges-airdrie-rcmp/",
-   "img": "https://calgary.citynews.ca/wp-content/blogs.dir/sites/8/2026/11/09/Untitled-November-09-2026-at-11.21.55-1.png",
+   "title": "Premier Doug Ford suggests 'ass whooping' for 2 boys connected to alleged assault of Hamilton cadet leader",
+   "summary": "Ontario Premier Doug Ford commented on an alleged assault in Hamilton, saying the parents of two boys police say were involved should \"give your kids a little ass whooping in the wood shed.\"",
+   "outlet": "CBC News",
+   "url": "https://www.cbc.ca/news/canada/hamilton/doug-ford-alleged-cadet-leader-assault-hamilton-9.7415639",
+   "img": "https://i.cbc.ca/ais/73e57f57-d9f0-474d-af16-f73df3c53f3a,1794260660552/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C829%2C7965%2C4480%29%3BResize%3D620",
    "moved": true
   }
  ],
@@ -431,13 +429,13 @@
    {
     "key": "auto-6b7519e9",
     "words": [
-     "nvidia",
      "jensen",
+     "nvidia",
      "huang",
-     "fbi",
-     "ceo"
+     "ceo",
+     "fbi"
     ],
-    "score": 22,
+    "score": 20,
     "outlets": 9,
     "carriers": 12,
     "tag": "Developing",
@@ -779,7 +777,7 @@
        {
         "outlet": "Global News",
         "src": "Corus",
-        "byline": "{\"@type\":\"Person\",\"name\":\"Sean Previl\",} Name Johnny Johnny Johnny Johnny Jimbo Anon Anonymous Dave Ben "
+        "byline": "{\"@type\":\"Person\",\"name\":\"Sean Previl\",} Name Johnny Johnny Johnny Johnny Johnny Jimbo Anon Anonymous Dave "
        }
       ],
       "copies": []
@@ -793,11 +791,10 @@
     "incoherent": false,
     "popular": 0,
     "us_election": false,
-    "fronts": 9,
-    "fronts_ca": 3,
+    "fronts": 8,
+    "fronts_ca": 2,
     "fronts_who": [
      "CBC News",
-     "Global News",
      "The Globe and Mail",
      "NBC News",
      "CBS News",
@@ -807,8 +804,8 @@
      "NPR"
     ],
     "judgment": "national",
-    "judgment_why": "National: leading 9 front pages (CBC News, Global News, The Globe and Mail, NBC News, CBS News, ABC News).",
-    "weight": 48.0
+    "judgment_why": "National: leading 8 front pages (CBC News, The Globe and Mail, NBC News, CBS News, ABC News, BBC News).",
+    "weight": 46.0
    }
   ],
   "considered": [
@@ -817,17 +814,16 @@
     "url": "https://www.cbc.ca/news/business/nvidia-survive-without-jensen-huang-ceo-9.7415544",
     "rank": 1,
     "live": "",
-    "weight": 48.0,
-    "score": 22,
+    "weight": 46.0,
+    "score": 20,
     "independent": 9,
     "most_read": 0,
     "canada": "none",
     "theme": "",
     "top": true,
-    "fronts": 9,
+    "fronts": 8,
     "fronts_who": [
      "CBC News",
-     "Global News",
      "The Globe and Mail",
      "NBC News",
      "CBS News",
@@ -839,74 +835,12 @@
     "rule": "Leading other newsrooms' front pages (Canadian ones among them): the story everyone is leading with",
     "carriers": 12,
     "judgment": "national",
-    "why_judged": "National: leading 9 front pages (CBC News, Global News, The Globe and Mail, NBC News, CBS News, ABC News)."
-   },
-   {
-    "title": "Rep. Thomas Massie launches bid to impeach U.S. Defense Secretary Pete Hegseth",
-    "url": "https://www.cp24.com/news/world/2026/11/09/hegseth-announces-rare-press-conference-to-discuss-expected-impeachment-resolution-in-congress/",
-    "rank": 2,
-    "live": "",
-    "weight": 48.5,
-    "score": 22,
-    "independent": 10,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 4,
-    "fronts_who": [
-     "The Globe and Mail",
-     "NBC News",
-     "CBS News",
-     "NPR"
-    ],
-    "rule": "No Canadian tie",
-    "carriers": 11,
-    "judgment": "national",
-    "why_judged": "National: affects some people; carried across the country (national desks)."
-   },
-   {
-    "title": "One Nation dumps Victorian election candidate who praised Adolf Hitler as ‘GOAT’",
-    "url": "https://www.theguardian.com/australia-news/2026/nov/10/one-nation-dumps-franco-guardiani-praised-hitler-victoria-elections-ntwnfb",
-    "rank": 3,
-    "live": "",
-    "weight": 20.5,
-    "score": 5,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "tie",
-    "theme": "",
-    "top": false,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "From abroad, tied to Canada",
-    "carriers": 3,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried beyond one city."
-   },
-   {
-    "title": "Federal budget promises relief for Yukoners, but local rollout remains unclear",
-    "url": "https://yukon-news.com/2026/11/09/federal-budget-offers-yukon-relief-but-local-rollout-remains-unclear/",
-    "rank": 4,
-    "live": "",
-    "weight": 18.0,
-    "score": 7,
-    "independent": 4,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "Federal budget",
-    "top": false,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "No Canadian tie",
-    "carriers": 6,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (4 cities)."
+    "why_judged": "National: leading 8 front pages (CBC News, The Globe and Mail, NBC News, CBS News, ABC News, BBC News)."
    },
    {
     "title": "Shoe store employee charged after alleged $72K theft from CrossIron Mills",
     "url": "https://calgary.citynews.ca/2026/11/09/crossiron-theft-charges-airdrie-rcmp/",
-    "rank": 5,
+    "rank": 2,
     "live": "",
     "weight": 6.5,
     "score": 8,
@@ -921,6 +855,68 @@
     "carriers": 3,
     "judgment": "local",
     "why_judged": "Local: a single incident touching a few people; carried only by Calgary desks."
+   },
+   {
+    "title": "Rep. Thomas Massie launches bid to impeach U.S. Defense Secretary Pete Hegseth",
+    "url": "https://www.cp24.com/news/world/2026/11/09/hegseth-announces-rare-press-conference-to-discuss-expected-impeachment-resolution-in-congress/",
+    "rank": 3,
+    "live": "",
+    "weight": 39.0,
+    "score": 22,
+    "independent": 9,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": false,
+    "fronts": 4,
+    "fronts_who": [
+     "The Globe and Mail",
+     "NBC News",
+     "CBS News",
+     "NPR"
+    ],
+    "rule": "No Canadian tie",
+    "carriers": 10,
+    "judgment": "regional",
+    "why_judged": "Regional: affects some people; carried beyond one city."
+   },
+   {
+    "title": "Federal budget promises relief for Yukoners, but local rollout remains unclear",
+    "url": "https://yukon-news.com/2026/11/09/federal-budget-offers-yukon-relief-but-local-rollout-remains-unclear/",
+    "rank": 4,
+    "live": "",
+    "weight": 18.5,
+    "score": 7,
+    "independent": 4,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "Federal budget",
+    "top": false,
+    "fronts": 0,
+    "fronts_who": [],
+    "rule": "No Canadian tie",
+    "carriers": 7,
+    "judgment": "national",
+    "why_judged": "National: affects many people; carried across the country (4 cities)."
+   },
+   {
+    "title": "Premier Doug Ford suggests 'ass whooping' for 2 boys connected to alleged assault of Hamilton cadet leader",
+    "url": "https://www.cbc.ca/news/canada/hamilton/doug-ford-alleged-cadet-leader-assault-hamilton-9.7415639",
+    "rank": 5,
+    "live": "",
+    "weight": 28.0,
+    "score": 7,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "canadian",
+    "theme": "",
+    "top": false,
+    "fronts": 0,
+    "fronts_who": [],
+    "rule": "Canadian, still developing",
+    "carriers": 4,
+    "judgment": "national",
+    "why_judged": "National: affects many people; carried beyond one city."
    },
    {
     "title": "Carney government considers lifting ban on offshore oil and gas exploration in the Western Arctic",
@@ -938,14 +934,14 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
+    "title": "Federal Tracker: Liberals 44%, Conservatives 31%; Carney Approval at 65%",
+    "score": 7,
+    "why": "not built: only 1 independent report(s) (4 sites)"
+   },
+   {
     "title": "Honda Canada announces plans to retool Alliston, Ont., plant for hybrid production",
     "score": 7,
     "why": "not built: only 1 independent report(s) (7 sites)"
-   },
-   {
-    "title": "Federal Tracker: Liberals 44%, Conservatives 31%; Carney Approval at 65%",
-    "score": 6,
-    "why": "not built: only 1 independent report(s) (3 sites)"
    },
    {
     "title": "Russia's top independent newspaper closes under relentless government pressure",
@@ -981,14 +977,14 @@
   "moved": [
    {
     "to": "canada",
-    "key": "auto-6afc3e96",
-    "title": "Shoe store employee charged after alleged $72K theft from CrossIron Mills",
-    "url": "https://calgary.citynews.ca/2026/11/09/crossiron-theft-charges-airdrie-rcmp/",
-    "outlet": "CityNews Calgary",
-    "t": "Mon 1:31 p.m.",
-    "iso": "2026-11-09T18:31:43+00:00",
-    "summary": "A Calgary man is facing multiple charges after more than $70,000 in cash and merchandise allegedly went missing from a store at CrossIron Mills. RCMP began investigating on Oct. 28 after the Famous Footwear store reported significant inventory and cash shortages. An internal review allegedly found a current employee had taken about $50,000 worth of […]",
-    "img": "https://calgary.citynews.ca/wp-content/blogs.dir/sites/8/2026/11/09/Untitled-November-09-2026-at-11.21.55-1.png",
+    "key": "auto-636e4a05",
+    "title": "Premier Doug Ford suggests 'ass whooping' for 2 boys connected to alleged assault of Hamilton cadet leader",
+    "url": "https://www.cbc.ca/news/canada/hamilton/doug-ford-alleged-cadet-leader-assault-hamilton-9.7415639",
+    "outlet": "CBC News",
+    "t": "Mon 7:53 p.m.",
+    "iso": "2026-11-10T00:53:23.770000+00:00",
+    "summary": "Ontario Premier Doug Ford commented on an alleged assault in Hamilton, saying the parents of two boys police say were involved should \"give your kids a little ass whooping in the wood shed.\"",
+    "img": "https://i.cbc.ca/ais/73e57f57-d9f0-474d-af16-f73df3c53f3a,1794260660552/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C829%2C7965%2C4480%29%3BResize%3D620",
     "scoop": false,
     "into": "auto-6b7519e9"
    }
@@ -996,116 +992,134 @@
   "top_n": 1,
   "more": [
    {
-    "key": "auto-272f2a27",
+    "key": "auto-6afc3e96",
     "words": [
-     "nation"
+     "crossiron",
+     "mills"
     ],
-    "score": 5,
+    "score": 8,
     "outlets": 3,
     "carriers": 3,
     "tag": "Developing",
-    "title": "One Nation dumps Victorian election candidate who praised Adolf Hitler as ‘GOAT’",
-    "url": "https://www.theguardian.com/australia-news/2026/nov/10/one-nation-dumps-franco-guardiani-praised-hitler-victoria-elections-ntwnfb",
-    "outlet": "The Guardian",
-    "t": "Mon 11:44 p.m.",
-    "iso": "2026-11-10T04:44:32+00:00",
-    "summary": "Party disendorses Preston candidate Franco Guardiani after social media posts emerge",
+    "title": "Shoe store employee charged after alleged $72K theft from CrossIron Mills",
+    "url": "https://calgary.citynews.ca/2026/11/09/crossiron-theft-charges-airdrie-rcmp/",
+    "outlet": "CityNews Calgary",
+    "t": "Mon 1:31 p.m.",
+    "iso": "2026-11-09T18:31:43+00:00",
+    "summary": "A Calgary man is facing multiple charges after more than $70,000 in cash and merchandise allegedly went missing from a store at CrossIron Mills. RCMP began investigating on Oct. 28 after the Famous Footwear store reported significant inventory and cash shortages. An internal review allegedly found a current employee had taken about $50,000 worth of […]",
     "first": {
-     "outlet": "Toronto Star",
-     "url": "https://www.thestar.com/news/canada/british-columbia/alberta-first-nation-claims-b-c-hydroelectric-projects-violate-treaty-rights/article_d10e5379-b271-5a08-9550-a7d7fa9bc622.html",
-     "t": "Mon 4:10 p.m.",
-     "title": "Alberta First Nation claims B.C. hydroelectric projects violate treaty rights",
-     "iso": "2026-11-09T21:10:21+00:00"
+     "outlet": "CTV News",
+     "url": "https://www.ctvnews.ca/calgary/article/employee-allegedly-stole-72k-in-cash-merchandise-from-crossiron-mills-store/",
+     "t": "Mon 12:43 p.m.",
+     "title": "Employee allegedly stole $72K in cash, merchandise from CrossIron Mills store",
+     "iso": "2026-11-09T17:43:10+00:00"
     },
-    "newest": "2026-11-10T04:44:32+00:00",
+    "newest": "2026-11-09T20:45:49+00:00",
     "photo": {
-     "src": "live/img/auto-272f2a27-a859f5ba4e.jpg",
-     "orig": "https://i.cbc.ca/ais/869551ba-612b-487c-9e9f-1f852c953016,1794257977877/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C3184%2C1791%29%3BResize%3D620",
-     "caption": "Jared Josiah Smith leaves the courthouse in Burton on Monday after his sentencing was put off until Nov. 20. (Ian Curran/CBC) — via CBC News",
-     "alt": "Jared Josiah Smith leaves the courthouse in Burton on Monday after his sentencing was put off until Nov. 20.",
-     "outlet": "CBC News",
-     "url": "https://www.cbc.ca/news/canada/new-brunswick/jared-smith-sentencing-postponed-sheri-sabattis-9.7415500?cmp=rss",
-     "since": "2026-11-10T05:55:59.530909+00:00"
+     "src": "live/img/auto-6afc3e96-581c6bf7fb.jpg",
+     "orig": "https://calgary.citynews.ca/wp-content/blogs.dir/sites/8/2026/11/09/Untitled-November-09-2026-at-11.21.55-1.png",
+     "caption": "From: Shoe store employee charged after alleged $72K theft from CrossIron Mills. — via CityNews Calgary",
+     "alt": "Shoe store employee charged after alleged $72K theft from CrossIron Mills",
+     "outlet": "CityNews Calgary",
+     "url": "https://calgary.citynews.ca/2026/11/09/crossiron-theft-charges-airdrie-rcmp/",
+     "since": "2026-11-10T06:04:21.812435+00:00"
     },
     "photo_seen": [
-     "https://i.cbc.ca/ais/869551ba-612b-487c-9e9f-1f852c953016,1794257977877/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C3184%2C1791%29%3BResize%3D620"
+     "https://calgary.citynews.ca/wp-content/blogs.dir/sites/8/2026/11/09/Untitled-November-09-2026-at-11.21.55-1.png"
     ],
-    "photos": [],
+    "photos": [
+     {
+      "src": "live/img/auto-6afc3e96-581c6bf7fb.jpg",
+      "orig": "https://calgary.citynews.ca/wp-content/blogs.dir/sites/8/2026/11/09/Untitled-November-09-2026-at-11.21.55-1.png",
+      "caption": "From: Shoe store employee charged after alleged $72K theft from CrossIron Mills. — via CityNews Calgary",
+      "alt": "Shoe store employee charged after alleged $72K theft from CrossIron Mills",
+      "outlet": "CityNews Calgary",
+      "url": "https://calgary.citynews.ca/2026/11/09/crossiron-theft-charges-airdrie-rcmp/"
+     },
+     {
+      "src": "live/img/auto-6afc3e96-febe4c67bc.jpg",
+      "orig": "https://www.ctvnews.ca/resizer/v2/ZOQHCJ2KPZFDHMWOEV4I6DZPSE.jpg?smart=true&auth=8489119492d3589a47422eed629521f9ed8c0bc8afcca77cbca6b5f0a5f73341&width=1200&height=630",
+      "caption": "A Calgary man is facing charges after allegedly stealing a large amount of cash and merchandise from Famous Footwear in CrossIron Mills mall. (RCMP handout). — via CTV News",
+      "alt": "A Calgary man is facing charges after allegedly stealing a large amount of cash and merchandise from Famous Footwear in CrossIron Mills mall. (RCMP handout)",
+      "outlet": "CTV News",
+      "url": "https://www.ctvnews.ca/calgary/article/employee-allegedly-stole-72k-in-cash-merchandise-from-crossiron-mills-store/"
+     }
+    ],
     "independent": 3,
     "reports": [
      {
-      "t": "Mon 11:44 p.m.",
-      "iso": "2026-11-10T04:44:32+00:00",
-      "outlet": "The Guardian",
-      "title": "One Nation dumps Victorian election candidate who praised Adolf Hitler as ‘GOAT’",
-      "url": "https://www.theguardian.com/australia-news/2026/nov/10/one-nation-dumps-franco-guardiani-praised-hitler-victoria-elections-ntwnfb",
-      "desc": "Party disendorses Preston candidate Franco Guardiani after social media posts emerge"
+      "t": "Mon 3:45 p.m.",
+      "iso": "2026-11-09T20:45:49+00:00",
+      "outlet": "The Hill",
+      "title": "Former Florida news anchor to succeed embattled Mills in House",
+      "url": "https://thehill.com/homenews/campaign/6150175-elijah-wins-florida-house-election/",
+      "desc": ""
      },
      {
-      "t": "Mon 5:02 p.m.",
-      "iso": "2026-11-09T22:02:30+00:00",
-      "outlet": "CBC News",
-      "title": "Sentencing delayed for man who pleaded guilty to killing Oromocto First Nation woman",
-      "url": "https://www.cbc.ca/news/canada/new-brunswick/jared-smith-sentencing-postponed-sheri-sabattis-9.7415500?cmp=rss",
-      "desc": "Sentencing of a man who pleaded guilty to manslaughter in the death of an Oromocto First Nation woman has been postponed after the judge found problems in a Crown and defence recommendation for a 10-year sentence."
+      "t": "Mon 1:31 p.m.",
+      "iso": "2026-11-09T18:31:43+00:00",
+      "outlet": "CityNews Calgary",
+      "title": "Shoe store employee charged after alleged $72K theft from CrossIron Mills",
+      "url": "https://calgary.citynews.ca/2026/11/09/crossiron-theft-charges-airdrie-rcmp/",
+      "desc": "A Calgary man is facing multiple charges after more than $70,000 in cash and merchandise allegedly went missing from a store at CrossIron Mills. RCMP began investigating on Oct. 28 after the Famous Footwear store reported significant inventory and cash shortages. An internal review allegedly found…"
      },
      {
-      "t": "Mon 4:10 p.m.",
-      "iso": "2026-11-09T21:10:21+00:00",
-      "outlet": "Toronto Star",
-      "title": "Alberta First Nation claims B.C. hydroelectric projects violate treaty rights",
-      "url": "https://www.thestar.com/news/canada/british-columbia/alberta-first-nation-claims-b-c-hydroelectric-projects-violate-treaty-rights/article_d10e5379-b271-5a08-9550-a7d7fa9bc622.html",
-      "desc": "VANCOUVER - The Athabasca Chipewyan First Nation in Alberta is suing the British Columbia and federal governments and BC Hydro, alleging that provincial dam projects were built without regard for"
+      "t": "Mon 12:43 p.m.",
+      "iso": "2026-11-09T17:43:10+00:00",
+      "outlet": "CTV News",
+      "title": "Employee allegedly stole $72K in cash, merchandise from CrossIron Mills store",
+      "url": "https://www.ctvnews.ca/calgary/article/employee-allegedly-stole-72k-in-cash-merchandise-from-crossiron-mills-store/",
+      "desc": "A Calgary man is facing charges after allegedly stealing a large amount of cash and merchandise from a store where he worked."
      }
     ],
     "sources": [
      {
-      "t": "Mon 11:44 p.m.",
+      "t": "Mon 3:45 p.m.",
       "primary": false,
-      "outlet": "The Guardian",
-      "title": "One Nation dumps Victorian election candidate who praised Adolf Hitler as ‘GOAT’",
-      "url": "https://www.theguardian.com/australia-news/2026/nov/10/one-nation-dumps-franco-guardiani-praised-hitler-victoria-elections-ntwnfb",
-      "desc": "Party disendorses Preston candidate Franco Guardiani after social media posts emerge",
+      "outlet": "The Hill",
+      "title": "Former Florida news anchor to succeed embattled Mills in House",
+      "url": "https://thehill.com/homenews/campaign/6150175-elijah-wins-florida-house-election/",
+      "desc": "px-captcha",
       "wire": "",
       "by": [
        {
-        "outlet": "The Guardian",
-        "src": "The Guardian",
-        "byline": "[{\"@type\":\"Person\",\"name\":\"Henry Belot\",}] \"Henry Belot\" \"Henry Belot\" https://www.theguardian.com/profile/henry-belot"
+        "outlet": "The Hill",
+        "src": "The Hill",
+        "byline": ""
        }
       ],
       "copies": []
      },
      {
-      "t": "Mon 5:02 p.m.",
+      "t": "Mon 1:31 p.m.",
       "primary": false,
-      "outlet": "CBC News",
-      "title": "Sentencing delayed for man who pleaded guilty to killing Oromocto First Nation woman",
-      "url": "https://www.cbc.ca/news/canada/new-brunswick/jared-smith-sentencing-postponed-sheri-sabattis-9.7415500?cmp=rss",
-      "desc": "Sentencing of a man who pleaded guilty to manslaughter in the death of an Oromocto First Nation woman has been postponed after the judge found problems in a Crown and defence recommendation for a 10-year sentence.",
+      "outlet": "CityNews Calgary",
+      "title": "Shoe store employee charged after alleged $72K theft from CrossIron Mills",
+      "url": "https://calgary.citynews.ca/2026/11/09/crossiron-theft-charges-airdrie-rcmp/",
+      "desc": "A Calgary man is facing multiple charges after more than $70,000 in cash and merchandise allegedly went missing from a store at CrossIron Mills. RCMP began investigating on Oct. 28 after the Famous Footwear store reported significant inventory and cash shortages. An internal review allegedly found…",
       "wire": "",
       "by": [
        {
-        "outlet": "CBC News",
-        "src": "CBC",
-        "byline": "own staff: journalist"
+        "outlet": "CityNews Calgary",
+        "src": "Rogers",
+        "byline": "[{\"@id\":\"https://calgary.citynews.ca/#/schema/person/4d60a2839f1904bc7f3701d4970fc130\"}] \"leoernewein\" Leo Ernewein By L"
        }
       ],
       "copies": []
      },
      {
-      "t": "Mon 4:10 p.m.",
+      "t": "Mon 12:43 p.m.",
       "primary": false,
-      "outlet": "Toronto Star",
-      "title": "Alberta First Nation claims B.C. hydroelectric projects violate treaty rights",
-      "url": "https://www.thestar.com/news/canada/british-columbia/alberta-first-nation-claims-b-c-hydroelectric-projects-violate-treaty-rights/article_d10e5379-b271-5a08-9550-a7d7fa9bc622.html",
-      "desc": "VANCOUVER - The Athabasca Chipewyan First Nation in Alberta is suing the British Columbia and federal governments and BC Hydro, alleging that provincial dam projects were built without regard for",
-      "wire": "The Canadian Press",
+      "outlet": "CTV News",
+      "title": "Employee allegedly stole $72K in cash, merchandise from CrossIron Mills store",
+      "url": "https://www.ctvnews.ca/calgary/article/employee-allegedly-stole-72k-in-cash-merchandise-from-crossiron-mills-store/",
+      "desc": "A Calgary man is facing charges after allegedly stealing a large amount of cash and merchandise from a store where he worked.",
+      "wire": "",
       "by": [
        {
-        "outlet": "Toronto Star",
-        "src": "The Canadian Press",
-        "byline": "\"The Canadian Press\" \"<span class=\\\"byl"
+        "outlet": "CTV News",
+        "src": "Bell",
+        "byline": "own staff: Journalist"
        }
       ],
       "copies": []
@@ -1114,17 +1128,17 @@
     "replaces_top": false,
     "events": [],
     "theme": "",
-    "canada": "tie",
+    "canada": "canadian",
     "canus": false,
-    "incoherent": true,
+    "incoherent": false,
     "popular": 0,
     "us_election": false,
     "fronts": 0,
     "fronts_ca": 0,
     "fronts_who": [],
-    "judgment": "national",
-    "judgment_why": "National: affects many people; carried beyond one city.",
-    "weight": 20.5
+    "judgment": "local",
+    "judgment_why": "Local: a single incident touching a few people; carried only by Calgary desks.",
+    "weight": 6.5
    }
   ],
   "passed_over": [
@@ -1274,7 +1288,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=jG8MMjCct3U",
    "img": "https://i.ytimg.com/vi/jG8MMjCct3U/hqdefault.jpg",
-   "up": "2026-11-09",
+   "up": "2026-11-10",
    "added": "2026-11-10T04:17:26.680045+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1288,7 +1302,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=-4nriWdbDo4",
    "img": "https://i.ytimg.com/vi/-4nriWdbDo4/hqdefault.jpg",
-   "up": "2026-11-09",
+   "up": "2026-11-10",
    "added": "2026-11-10T04:52:35.383979+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1302,7 +1316,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=m132YHfIpck",
    "img": "https://i.ytimg.com/vi/m132YHfIpck/hqdefault.jpg",
-   "up": "2026-11-09",
+   "up": "2026-11-10",
    "added": "2026-11-10T04:52:35.383979+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1423,7 +1437,7 @@
    "id": "zHAoXX4nJWc",
    "r": "us",
    "o": "CNN",
-   "t": "Gov-elect Acton: ‘My childhood made me want to stop suffering’",
+   "t": "Ohio Gov-elect Amy Acton on her childhood, an ‘era of change’ & more",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=zHAoXX4nJWc",
@@ -1484,7 +1498,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=Z_IOjKOc_hU",
    "img": "https://i.ytimg.com/vi/Z_IOjKOc_hU/hqdefault.jpg",
-   "up": "2026-11-09",
+   "up": "2026-11-10",
    "added": "2026-11-10T04:17:26.680045+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1498,7 +1512,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=BolPH2HOEqw",
    "img": "https://i.ytimg.com/vi/BolPH2HOEqw/hqdefault.jpg",
-   "up": "2026-11-09",
+   "up": "2026-11-10",
    "added": "2026-11-10T04:32:35.846857+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1512,7 +1526,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=mLUY-cKzYtA",
    "img": "https://i.ytimg.com/vi/mLUY-cKzYtA/hqdefault.jpg",
-   "up": "2026-11-09",
+   "up": "2026-11-10",
    "added": "2026-11-10T04:32:35.846857+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1526,7 +1540,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=SA_2Ce-_lhk",
    "img": "https://i.ytimg.com/vi/SA_2Ce-_lhk/hqdefault.jpg",
-   "up": "2026-11-09",
+   "up": "2026-11-10",
    "added": "2026-11-10T04:52:35.383979+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1540,7 +1554,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=3aAMTqxZfPs",
    "img": "https://i.ytimg.com/vi/3aAMTqxZfPs/hqdefault.jpg",
-   "up": "2026-11-09",
+   "up": "2026-11-10",
    "added": "2026-11-10T05:02:35.838378+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1554,22 +1568,8 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=iB4Dy-bsyuQ",
    "img": "https://i.ytimg.com/vi/iB4Dy-bsyuQ/hqdefault.jpg",
-   "up": "2026-11-09",
+   "up": "2026-11-10",
    "added": "2026-11-10T05:02:35.838378+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "Sbjx-6R3Bn4",
-   "r": "us",
-   "o": "Associated Press",
-   "t": "Russell Brand gets 10 1/2 years in prison for rape and sexual assault",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=Sbjx-6R3Bn4",
-   "img": "https://i.ytimg.com/vi/Sbjx-6R3Bn4/hqdefault.jpg",
-   "up": "2026-11-09",
-   "added": "2026-11-10T05:17:52.839287+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1602,16 +1602,16 @@
    "geo": "unknown"
   },
   {
-   "id": "Z5f-fyfBGuU",
-   "r": "world",
-   "o": "Sky News",
-   "t": "Tech firms must be fined 'billions' to curb AI and social media risks, says whistleblower",
+   "id": "JzZKL07gamg",
+   "r": "us",
+   "o": "Associated Press",
+   "t": "Congress returns to a changed Washington after GOP's election wipeout",
    "rec": false,
    "d": "",
-   "u": "https://www.youtube.com/watch?v=Z5f-fyfBGuU",
-   "img": "https://i.ytimg.com/vi/Z5f-fyfBGuU/hqdefault.jpg",
-   "up": "2026-11-09",
-   "added": "2026-11-09T22:47:26.514279+00:00",
+   "u": "https://www.youtube.com/watch?v=JzZKL07gamg",
+   "img": "https://i.ytimg.com/vi/JzZKL07gamg/hqdefault.jpg",
+   "up": "2026-11-10",
+   "added": "2026-11-10T06:02:51.774647+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1626,20 +1626,6 @@
    "img": "https://i.ytimg.com/vi/AefO8b5amiU/hqdefault.jpg",
    "up": "2026-11-09",
    "added": "2026-11-09T23:13:58.295240+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "G4ov8Lp1L5I",
-   "r": "world",
-   "o": "DW News",
-   "t": "Trump's midterm disaster: Are Republicans turning against him? | DW News",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=G4ov8Lp1L5I",
-   "img": "https://i.ytimg.com/vi/G4ov8Lp1L5I/hqdefault.jpg",
-   "up": "2026-11-09",
-   "added": "2026-11-10T01:04:10.944881+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1689,27 +1675,13 @@
    "id": "aU_fQ5kKFVY",
    "r": "world",
    "o": "BBC News",
-   "t": "How an affair spy scandal could impact the US-China AI arms race | BBC News",
+   "t": "Did China honeytrap a major US tech boss for AI secrets? | BBC News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=aU_fQ5kKFVY",
    "img": "https://i.ytimg.com/vi/aU_fQ5kKFVY/hqdefault.jpg",
    "up": "2026-11-09",
    "added": "2026-11-10T03:11:35.752412+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "9C_P10rublk",
-   "r": "world",
-   "o": "DW News",
-   "t": "Republicans turn on US defense secretary | DW News",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=9C_P10rublk",
-   "img": "https://i.ytimg.com/vi/9C_P10rublk/hqdefault.jpg",
-   "up": "2026-11-09",
-   "added": "2026-11-10T03:37:26.836555+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1738,6 +1710,20 @@
    "img": "https://i.ytimg.com/vi/dbP1H4JlcsE/hqdefault.jpg",
    "up": "2026-11-10",
    "added": "2026-11-10T05:47:52.396222+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "7-9en_yW5Q0",
+   "r": "world",
+   "o": "Sky News",
+   "t": "I was mauled by a dog: Why are attacks getting worse?",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=7-9en_yW5Q0",
+   "img": "https://i.ytimg.com/vi/7-9en_yW5Q0/hqdefault.jpg",
+   "up": "2026-11-10",
+   "added": "2026-11-10T06:02:51.774647+00:00",
    "pic": "globe",
    "geo": "unknown"
   }
@@ -1994,6 +1980,13 @@
  ],
  "eds": [
   [
+   "Toronto Star",
+   "Opinion",
+   "News Clarification for Nov. 10",
+   "https://www.thestar.com/opinion/corrections/news-clarification-for-nov-10/article_be9e9a35-b631-4a43-b14a-0910cf498b74.html",
+   "2026-11-09T20:37:00+00:00"
+  ],
+  [
    "Toronto Sun",
    "Editorial",
    "Don’t trust the feds on China",
@@ -2055,13 +2048,6 @@
    "Jensen Huang owes America an apology, and Nvidia owes investors answers",
    "https://www.foxnews.com/opinion/rebecca-grant-jensen-huang-owes-america-apology-nvidia-owes-investors-answers",
    "2026-11-09T21:56:52+00:00"
-  ],
-  [
-   "The Wall Street Journal (subscribers)",
-   "Opinion",
-   "Pepper…and Salt",
-   "https://www.wsj.com/opinion/pepperand-salt-a3aa6399?mod=rss_opinion",
-   "2026-11-10T05:00:00+00:00"
   ]
  ],
  "canus": {
@@ -2130,8 +2116,7 @@
   "lines": [
    "Good morning. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
    "Can Canada afford Carney’s budget?, CityNews Vancouver reports.",
-   "The Athabasca Chipewyan First Nation in Alberta is suing the British Columbia and federal governments and BC Hydro, alleging that provincial dam projects were built without regard for, The Canadian Press reports.",
-   "Republican congressman to force impeachment vote on Defence Secretary Hegseth, BBC News reports.",
+   "Rep. Thomas Massie launches bid to impeach U.S. Defense Secretary Pete Hegseth, The Associated Press reports.",
    "Nvidia investigates CEO Jensen Huang over Chinese spy concerns, CBS News reports.",
    "A Calgary man is facing charges after allegedly stealing a large amount of cash and merchandise from a store where he worked, CTV News reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
@@ -2233,28 +2218,48 @@
    "report": false,
    "iso": "2026-11-09T15:00:00+00:00",
    "auto": true
+  },
+  {
+   "cat": "intl",
+   "media": "none",
+   "initials": "UN",
+   "name": "United Nations",
+   "role": "UN News",
+   "date": "Nov 9",
+   "platform": "Official statement",
+   "handle": "news.un.org",
+   "hed": "At least 56 migrants die in weekend shipwrecks off Senegal and Greece",
+   "summary": "At least 56 people died in a series of shipwrecks off Senegal and Greece over the weekend, the International Organization for Migration (IOM) said on Monday, calling it a stark reminder of the deadly risks they face on the Atlantic and…",
+   "href": "https://news.un.org/feed/view/en/story/2026/11/1168769",
+   "report": false,
+   "iso": "2026-11-09T12:00:00+00:00",
+   "auto": true
+  },
+  {
+   "cat": "intl",
+   "media": "none",
+   "initials": "UN",
+   "name": "United Nations",
+   "role": "UN News",
+   "date": "Nov 9",
+   "platform": "Official statement",
+   "handle": "news.un.org",
+   "hed": "World News in Brief: El Niño’s $11 trillion price tag, Mozambique and Yemen updates",
+   "summary": "The El Niño extreme weather pattern could cost the global economy up to $11 trillion and seriously impact food security, said the UN agency tackling rural poverty in developing countries on Monday.",
+   "href": "https://news.un.org/feed/view/en/story/2026/11/1168768",
+   "report": false,
+   "iso": "2026-11-09T12:00:00+00:00",
+   "auto": true
   }
  ],
  "mostread": {
   "sites": [
-   "Toronto Star",
    "Winnipeg Free Press",
    "Global News",
    "Nunatsiaq News",
    "Daily Hive"
   ],
   "list": [
-   {
-    "h": "Toronto Pearson looks to displaced Stellantis workers to fill growing labour needs",
-    "u": "https://www.thestar.com/news/gta/toronto-pearson-looks-to-displaced-stellantis-workers-to-fill-growing-labour-needs/article_dd8450f6-27bd-4015-9cbd-827e8a1d78d3.html",
-    "o": [
-     [
-      "Toronto Star",
-      1,
-      "https://www.thestar.com/news/gta/toronto-pearson-looks-to-displaced-stellantis-workers-to-fill-growing-labour-needs/article_dd8450f6-27bd-4015-9cbd-827e8a1d78d3.html"
-     ]
-    ]
-   },
    {
     "h": "Hellebuyck not playing against Jets, Devils GM says",
     "u": "https://www.winnipegfreepress.com/breakingnews/2026/11/08/hellebuyck-not-playing-against-jets-devils-gm-says",
@@ -2300,17 +2305,6 @@
     ]
    },
    {
-    "h": "Family of woman killed on Highway 401 wants tougher drunk-driving sentences: ‘This needs to stop’",
-    "u": "https://www.thestar.com/news/gta/this-needs-to-stop-family-of-woman-killed-on-highway-401-wants-tougher-drunk-driving-sentences/article_0bfb1308-3ea3-4083-a49a-d99a250e03ea.html",
-    "o": [
-     [
-      "Toronto Star",
-      2,
-      "https://www.thestar.com/news/gta/this-needs-to-stop-family-of-woman-killed-on-highway-401-wants-tougher-drunk-driving-sentences/article_0bfb1308-3ea3-4083-a49a-d99a250e03ea.html"
-     ]
-    ]
-   },
-   {
     "h": "Route 90 mayor’s next priority",
     "u": "https://www.winnipegfreepress.com/breakingnews/2026/11/09/route-90-mayors-next-priority",
     "o": [
@@ -2344,13 +2338,35 @@
     ]
    },
    {
-    "h": "The move toward renting is growing among Canada’s retirees. Here’s how to make it work financially",
-    "u": "https://www.thestar.com/business/personal-finance/the-move-toward-renting-is-growing-among-canada-s-retirees-here-s-how-to-make-it-work-financially/article_c21998cd-1715-4f95-a939-18e9221d62d4.html",
+    "h": "Snow problem: one in five plow jobs vacant within Manitoba government",
+    "u": "https://www.winnipegfreepress.com/breakingnews/2026/11/09/snow-problem-one-in-five-plow-jobs-vacant-within-manitoba-government",
     "o": [
      [
-      "Toronto Star",
+      "Winnipeg Free Press",
       3,
-      "https://www.thestar.com/business/personal-finance/the-move-toward-renting-is-growing-among-canada-s-retirees-here-s-how-to-make-it-work-financially/article_c21998cd-1715-4f95-a939-18e9221d62d4.html"
+      "https://www.winnipegfreepress.com/breakingnews/2026/11/09/snow-problem-one-in-five-plow-jobs-vacant-within-manitoba-government"
+     ]
+    ]
+   },
+   {
+    "h": "Stellantis signs deal with Roshel to sell idled Brampton, Ont., assembly plant",
+    "u": "https://globalnews.ca/news/12143427/stellantis-roshel-brampton-assembly-plant-deal/",
+    "o": [
+     [
+      "Global News",
+      3,
+      "https://globalnews.ca/news/12143427/stellantis-roshel-brampton-assembly-plant-deal/"
+     ]
+    ]
+   },
+   {
+    "h": "Cabinet to discuss Kitikmeot Inuit employment pilot project",
+    "u": "https://nunatsiaq.com/stories/article/cabinet-to-discuss-kitikmeot-inuit-employment-pilot-project/",
+    "o": [
+     [
+      "Nunatsiaq News",
+      3,
+      "https://nunatsiaq.com/stories/article/cabinet-to-discuss-kitikmeot-inuit-employment-pilot-project/"
      ]
     ]
    }
@@ -2468,11 +2484,11 @@
    "city": "Vancouver",
    "tz": "America/Vancouver",
    "world": false,
-   "w": "Storm",
-   "u": "https://www.ctvnews.ca/vancouver/vancouver-island/article/vancouver-island-supports-ukraine-planning-to-return-to-the-war-torn-country-this-spring/",
-   "title": "Vancouver Island Supports Ukraine planning to return to the war torn country this spring",
+   "w": "Climate",
+   "u": "https://www.ctvnews.ca/vancouver/article/environmental-economist-tells-trial-canada-has-limited-power-to-alter-climate-change/",
+   "title": "Environmental economist tells trial Canada has limited power to alter climate change",
    "outlet": "CTV News",
-   "t": "Mon 9:03 p.m.",
+   "t": "Mon 8:19 p.m.",
    "hot": false
   },
   {
@@ -2535,6 +2551,18 @@
    "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/f773/live/9c28e680-dc95-11f1-a701-fddedf244c16.jpg"
   },
   {
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Tue 12:28 a.m.",
+   "iso": "2026-11-10T05:28:00+00:00",
+   "title": "G7 diplomats speak out on Taiwan as China ramps up military drills",
+   "summary": "Taiwan said Tuesday that Beijing is carrying out “area denial” drills in the western Pacific involving an aircraft carrier and other naval formations.",
+   "outlet": "The Japan Times, The Japan Times (Reuters), Toronto Star + CityNews + CKOM / PAnow (CP), Politico, Toronto Star",
+   "n": 5,
+   "url": "https://www.japantimes.co.jp/news/2026/11/10/japan/politics/japan-g7-china-taiwan-military/",
+   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/10/573157.JPG?v=3.1"
+  },
+  {
    "desk": "world",
    "pic": "globe",
    "t": "Mon 7:19 p.m.",
@@ -2595,16 +2623,16 @@
    "img": ""
   },
   {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Mon 6:47 p.m.",
-   "iso": "2026-11-09T23:47:08+00:00",
-   "title": "Recount flips squeaker election night win for NDP in Burnaby South-Metrotown to Conservatives",
-   "summary": "",
-   "outlet": "Vancouver Sun, PBS NewsHour, Fox News, ABC News",
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Mon 7:53 p.m.",
+   "iso": "2026-11-10T00:53:23.770000+00:00",
+   "title": "Premier Doug Ford suggests 'ass whooping' for 2 boys connected to alleged assault of Hamilton cadet leader",
+   "summary": "Ontario Premier Doug Ford commented on an alleged assault in Hamilton, saying the parents of two boys police say were involved should \"give your kids a little ass whooping in the wood shed.\"",
+   "outlet": "CBC News, Toronto Sun, Toronto Star, CityNews Halifax + CityNews + CTV News + CP24 (CP)",
    "n": 4,
-   "url": "https://vancouversun.com/news/elections-bc-recount-flips-squeaker-election-night-win-for-ndp-in-burnaby-south-metrotown-to-conservatives",
-   "img": ""
+   "url": "https://www.cbc.ca/news/canada/hamilton/doug-ford-alleged-cadet-leader-assault-hamilton-9.7415639",
+   "img": "https://i.cbc.ca/ais/73e57f57-d9f0-474d-af16-f73df3c53f3a,1794260660552/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C829%2C7965%2C4480%29%3BResize%3D620"
   },
   {
    "desk": "business",
@@ -2613,7 +2641,7 @@
    "iso": "2026-11-09T23:43:00+00:00",
    "title": "Federal budget promises relief for Yukoners, but local rollout remains unclear",
    "summary": "Billions in national spending target housing, power grids and grocery bills, yet northern communities await eligibility details.",
-   "outlet": "Yukon News, CP24 (CP), CBC News, CityNews Vancouver + CityNews Ottawa + CityNews Halifax",
+   "outlet": "Yukon News, Toronto Star + CP24, CBC News, CityNews Vancouver + CityNews Ottawa + CityNews Halifax",
    "n": 4,
    "url": "https://yukon-news.com/2026/11/09/federal-budget-offers-yukon-relief-but-local-rollout-remains-unclear/",
    "img": "https://yukon-news.com/wp-content/uploads/sites/7/2026/11/261113-YKN-Fed-budget.jpg?w=1024"
@@ -2667,18 +2695,6 @@
    "img": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/11/09/cc3360a3-9472-451b-9b70-8dd2d919b96f/thumbnail/1200x630/d5e0110400871c166edd8e54cc6ee744/gettyimages-2279484907.jpg"
   },
   {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Mon 7:53 p.m.",
-   "iso": "2026-11-10T00:53:23.770000+00:00",
-   "title": "Premier Doug Ford suggests 'ass whooping' for 2 boys connected to alleged assault of Hamilton cadet leader",
-   "summary": "Ontario Premier Doug Ford commented on an alleged assault in Hamilton, saying the parents of two boys police say were involved should \"give your kids a little ass whooping in the wood shed.\"",
-   "outlet": "CBC News, Toronto Sun, CityNews + CTV News + CP24 (CP)",
-   "n": 3,
-   "url": "https://www.cbc.ca/news/canada/hamilton/doug-ford-alleged-cadet-leader-assault-hamilton-9.7415639",
-   "img": "https://i.cbc.ca/ais/73e57f57-d9f0-474d-af16-f73df3c53f3a,1794260660552/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C829%2C7965%2C4480%29%3BResize%3D620"
-  },
-  {
    "desk": "world",
    "pic": "globe",
    "t": "Mon 6:28 p.m.",
@@ -2713,6 +2729,30 @@
    "n": 2,
    "url": "https://www.ctvnews.ca/vancouver/article/scammers-target-potential-christmas-market-vendors-in-bc/",
    "img": "https://www.ctvnews.ca/resizer/v2/QH4WYDZD45BNPL7WLQWFA2XH5M.jpeg?smart=true&auth=f301f90299e30b2942fa987964880ffd56b5b3718cefe41d1ff468bf0b1fa2a1&width=1200&height=630"
+  },
+  {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Mon 7:50 p.m.",
+   "iso": "2026-11-10T00:50:13+00:00",
+   "title": "Feds extend tariff relief program for Canadian firms",
+   "summary": "Sask. mining and energy firms get a boost as Ottawa extends its tariff relief program on U.S. imports, expanding duty remissions to include vital non-steel equipment used in resource extraction.",
+   "outlet": "CKOM / PAnow + Toronto Star + CP24 + BNN Bloomberg + 1 more, Toronto Star",
+   "n": 2,
+   "url": "https://www.ckom.com/2026/11/09/feds-extend-tariff-relief-program-for-canadian-firms/",
+   "img": "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/648/files/2026/11/truck-cp-110926.jpg"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Mon 5:14 p.m.",
+   "iso": "2026-11-09T22:14:37+00:00",
+   "title": "Pope meets with clergy abuse survivors in Argentina",
+   "summary": "During private meetings with survivors, Pope Leo XIV pledged to reinforce safeguards and listen to victims.",
+   "outlet": "Al Jazeera, CP24 + Toronto Star (AP)",
+   "n": 2,
+   "url": "https://www.aljazeera.com/news/2026/11/9/pope-meets-with-clergy-abuse-survivors-in-argentina?traffic_source=rss",
+   "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6af22a11c35e0-1794255377.jpg?resize=1920%2C1440"
   },
   {
    "desk": "politics",
@@ -2817,7 +2857,7 @@
    "iso": "2026-11-10T02:23:34+00:00",
    "title": "Chiefs question motive behind Indian Act talks after meeting with Carney, premiers",
    "summary": "First Nations chiefs who attended a closed-door meeting with Prime Minister Mark Carney and premiers last month say their concerns were overshadowed by Manitoba Premier Wab Kinew’s call for the abolition of the Indian Act. One chief also criticized Carney’s tone as he responded to a comment about how the United States works with Indigenous […]",
-   "outlet": "CityNews Winnipeg + CP24 + APTN News (CP)",
+   "outlet": "CityNews Winnipeg + Toronto Star + CP24 + APTN News (CP)",
    "n": 1,
    "url": "https://winnipeg.citynews.ca/2026/11/09/chiefs-question-motive-behind-indian-act-talks-after-meeting-with-carney-premiers/",
    "img": "https://winnipeg.citynews.ca/wp-content/blogs.dir/sites/13/5a5tvl1y.png"
@@ -2847,18 +2887,6 @@
    "img": "https://www.ctvnews.ca/resizer/v2/L5IOZH2VEJEVLCMGXNYJMPEV7M.png?smart=true&auth=d7bf0c7a42677708b3a16e5ab49836108e118a1431530e781ae75c7b5ccc3fc2&width=1200&height=630"
   },
   {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Mon 8:19 p.m.",
-   "iso": "2026-11-10T01:19:49+00:00",
-   "title": "Environmental economist tells trial Canada has limited power to alter climate change",
-   "summary": "An environmental economist testifying at Canada’s first youth-led climate trial says the country has a limited ability to affect the climate inside its borders as it is largely determined by the choices of other countries.",
-   "outlet": "CTV News + CBC News + Canada's National Observer (CP)",
-   "n": 1,
-   "url": "https://www.ctvnews.ca/vancouver/article/environmental-economist-tells-trial-canada-has-limited-power-to-alter-climate-change/",
-   "img": "https://www.ctvnews.ca/resizer/v2/ILQJZCT2YRVNOYACZT5CCG3RV4.jpg?smart=true&auth=da1e31b56744e5701ad6183d5b5d2d3b27f3e7a63dae4cc1122abb7b8e701653&width=1200&height=630"
-  },
-  {
    "desk": "politics",
    "pic": "parliament",
    "t": "Mon 6:51 p.m.",
@@ -2869,18 +2897,6 @@
    "n": 1,
    "url": "https://www.ctvnews.ca/politics/article/culture-minister-insists-canada-will-eventually-force-streaming-giants-to-pay-fair-share-for-cancon/",
    "img": "https://www.ctvnews.ca/resizer/v2/5Z3P2SUKXF7ULZ54ENQO5RMWW4.jpg?smart=true&auth=e38e47f4cc7ec1b1b350e3c89e176171858594e47955a9e59ed84b8f61522854&width=1200&height=630"
-  },
-  {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Mon 5:55 p.m.",
-   "iso": "2026-11-09T22:55:06.586000+00:00",
-   "title": "Carney government spent over $19B on external consultants in its first year",
-   "summary": "The federal government spent more than $19 billion on external consultants last year, despite a promise to cut back on its use of outside contractors.",
-   "outlet": "CBC News",
-   "n": 1,
-   "url": "https://www.cbc.ca/news/politics/federal-government-consultant-spending-9.7415657",
-   "img": "https://i.cbc.ca/ais/049abfd1-b860-49e6-9075-31b4d8c7fe5b,1794262989601/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C557%2C7895%2C4440%29%3BResize%3D620"
   }
  ],
  "reads": [
@@ -3032,17 +3048,17 @@
    "h": [
     "Add Global News to Home Screen Close",
     "Transferring money between accounts is about to get faster in Canada",
-    "Norway says it has been bumped for Russia to compete at world juniors in Canada",
-    "‘I love our country’ Nvidia CEO regrets affair with alleged China spy",
-    "Russell Brand sentenced to more than 10 years in prison",
-    "15 soldiers on ventilators, 9 critical after deadly CFB Wainwright fire"
+    "15 soldiers on ventilators, 9 critical after deadly CFB Wainwright fire",
+    "Sweden says it won’t play Russia at world juniors as Norway faces losing spot",
+    "Carney reveals first CEO of Canada Strong Fund for sovereign wealth",
+    "Feds wrote off $4.5B in COVID benefit repayments in 2025: auditor general"
    ],
    "u": [
     "",
     "",
     "",
     "",
-    "",
+    "https://globalnews.ca/news/12142782/carney-canada-strong-fund-ceo/",
     ""
    ]
   },
@@ -3201,19 +3217,19 @@
    "ca": false,
    "h": [
     "Iran live updates: Trump says Hegseth has 'won the war in Iran'",
-    "Good Morning America First Look",
     "Investigators recover the voice recorder from a jet crash in Florida that killed 9",
     "Oregon home fire with e-bike caused by multiple lithium ion batteries: Officials",
     "Trump says Nvidia CEO told him he 'didn't know' he was involved with alleged spy",
-    "Trial for man accused of murdering Charlie Kirk set to begin in mid-2028, judge rules"
+    "Trial for man accused of murdering Charlie Kirk set to begin in mid-2028, judge rules",
+    "Judge denies Lindsay Clancy's motion to dismiss case"
    ],
    "u": [
     "https://abcnews.com/International/live-updates/iran-live-updates-americans-tired-forever-wars-araghchi/?id=137967256",
-    "",
     "https://abcnews.com/Business/wireStory/investigators-recover-voice-recorder-jet-crash-florida-killed-137995963",
     "https://abcnews.com/video/137992121/",
     "https://abcnews.com/Technology/nvidia-announces-investigation-ceo-amid-foreign-intelligence-target/story?id=137959091",
-    "https://abcnews.com/US/judge-expected-set-trial-date-man-accused-murdering/story?id=137916405"
+    "https://abcnews.com/US/judge-expected-set-trial-date-man-accused-murdering/story?id=137916405",
+    "https://abcnews.com/US/judge-denies-lindsay-clancys-motion-dismiss-case/story?id=137987186"
    ]
   },
   {
@@ -3286,8 +3302,47 @@
     "url": "https://www.youtube.com/watch?v=71Eq2VrASig",
     "img": "https://i.ytimg.com/vi/71Eq2VrASig/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "231",
+    "watching": "224",
     "rolling": true
+   },
+   {
+    "net": "Sky News",
+    "r": "world",
+    "title": "Trump says there is \"positive momentum\" towards an end to the Iran war | Mornings",
+    "url": "https://www.youtube.com/watch?v=vEmX6Ofu1kQ",
+    "img": "https://i.ytimg.com/vi/vEmX6Ofu1kQ/hqdefault.jpg",
+    "story": "Trump says there is \"positive momentum\" towards an end to the Iran war",
+    "watching": "262",
+    "reports": [
+     {
+      "outlet": "ABC News",
+      "title": "Iran live updates: Trump says Hegseth has 'won the war in Iran'",
+      "url": "https://abcnews.com/International/live-updates/iran-live-updates-americans-tired-forever-wars-araghchi/?id=137967256",
+      "t": "Mon 5:33 p.m.",
+      "iso": "2026-11-09T22:33:32+00:00"
+     },
+     {
+      "outlet": "Al Jazeera",
+      "title": "After meeting Qatar PM, Trump calls Iran war ‘effectively over’ militarily",
+      "url": "https://www.aljazeera.com/news/2026/11/9/trump-calls-iran-war-effectively-over-after-talks-with-qatar-pm?traffic_source=rss",
+      "t": "Mon 5:31 p.m.",
+      "iso": "2026-11-09T22:31:19+00:00"
+     },
+     {
+      "outlet": "Toronto Star",
+      "title": "Trump after meeting with Qatari PM says he believes war with Iran is militarily 'effectively over'",
+      "url": "https://www.thestar.com/news/world/united-states/trump-after-meeting-with-qatari-pm-says-he-believes-war-with-iran-is-militarily-effectively-over/article_c2f00056-52e9-56fc-851c-918b8aff6e39.html",
+      "t": "Mon 4:59 p.m.",
+      "iso": "2026-11-09T21:59:00+00:00"
+     },
+     {
+      "outlet": "The Hill",
+      "title": "Trump: ‘A lot of people didn’t like’ Vance comments blaming midterm losses on Iran war",
+      "url": "https://thehill.com/homenews/administration/6207449-donald-trump-jd-vance-iran-war-gop-midterm-losses/",
+      "t": "Mon 7:56 a.m.",
+      "iso": "2026-11-09T12:56:05+00:00"
+     }
+    ]
    }
   ],
   "upcoming": [
@@ -3405,15 +3460,6 @@
    "updated": "2026-11-10T04:07:30+00:00",
    "ended": false,
    "img": ""
-  },
-  {
-   "net": "Al Jazeera",
-   "story": "Iran war live: Iran demands US ‘surrender’ to its conditions",
-   "title": "Iran war live: Iran demands US ‘surrender’ to its conditions",
-   "url": "https://www.aljazeera.com/news/liveblog/2026/11/9/iran-war-live-trump-says-war-effectively-over-iran-demands-surrender?traffic_source=rss",
-   "updated": "2026-11-10T05:45:00+00:00",
-   "ended": false,
-   "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6af255420496-1794266434_707447-1794267064.jpg?resize=1200%2C630&quality=80"
   }
  ],
  "related": {
@@ -3433,53 +3479,7 @@
    ]
   }
  },
- "canangle": {
-  "auto-272f2a27": {
-   "story": "One Nation dumps Victorian election candidate who praised Adolf Hitler as ‘GOAT’",
-   "us": true,
-   "specific": 1,
-   "stories": [
-    {
-     "t": "Mon 4:10 p.m.",
-     "iso": "2026-11-09T21:10:21+00:00",
-     "outlet": "Toronto Star",
-     "title": "Alberta First Nation claims B.C. hydroelectric projects violate treaty rights",
-     "url": "https://www.thestar.com/news/canada/british-columbia/alberta-first-nation-claims-b-c-hydroelectric-projects-violate-treaty-rights/article_d10e5379-b271-5a08-9550-a7d7fa9bc622.html",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Mon 6:23 p.m.",
-     "iso": "2026-11-09T23:23:18.629000+00:00",
-     "outlet": "CBC News",
-     "title": "Tariffs are not in the common interest of Canada or the U.S.: former premier",
-     "url": "https://www.cbc.ca/player/play/video/9.7415646",
-     "ca": true,
-     "tie": "Canada and the U.S."
-    },
-    {
-     "t": "Mon 5:19 p.m.",
-     "iso": "2026-11-09T22:19:52+00:00",
-     "outlet": "Global News",
-     "title": "Canada extends tariff relief program beyond U.S. steel imports",
-     "url": "https://globalnews.ca/news/12143554/canada-tariff-relief-steel-imports-other-goods/",
-     "ca": true,
-     "tie": "Canada and the U.S."
-    },
-    {
-     "t": "Sun 7:41 a.m.",
-     "iso": "2026-11-08T12:41:04+00:00",
-     "outlet": "BNN Bloomberg",
-     "title": "Are Canadian snowbirds flocking back during the U.S. trade war? Here’s what data says",
-     "url": "https://www.bnnbloomberg.ca/tariffs/2026/11/08/are-canadian-snowbirds-flocking-back-during-the-us-trade-war-heres-what-data-says/",
-     "ca": true,
-     "tie": "Canada and the U.S."
-    }
-   ],
-   "official": [],
-   "views": []
-  }
- },
+ "canangle": {},
  "canangle_live": {
   "https://www.pbs.org/newshour/show/nvidias-jensen-huang-faces-scrutiny-over-alleged-affair-with-chinese-spy": {
    "story": "Nvidia's Jensen Huang faces scrutiny over alleged affair with Chinese spy",
@@ -3549,7 +3549,7 @@
    "pic": "globe",
    "h": "Rep. Thomas Massie launches bid to impeach U.S. Defense Secretary Pete Hegseth",
    "lede": "Facing an expected impeachment resolution in Congress, Defense Secretary Pete Hegseth said he’s eager to litigate the policy choices that he and President Donald Trump have made in Iran and Venezuela.",
-   "newl": "Now carried by 10 independent newsrooms.",
+   "newl": "Now carried by 9 independent newsrooms.",
    "rows": [
     [
      "Al Jazeera",
@@ -3644,11 +3644,6 @@
      "PBS NewsHour",
      "WATCH: Rep. Massie speaks after filing Hegseth impeachment resolution",
      "https://www.pbs.org/newshour/politics/watch-live-rep-massie-speaks-after-filing-hegseth-impeachment-resolution"
-    ],
-    [
-     "Global News",
-     "Pete Hegseth hit with impeachment articles from Republican congressman",
-     "https://globalnews.ca/news/12143270/pete-hegseth-impeachment-articles-republican-thomas-massie/"
     ]
    ],
    "lead": 8
@@ -4385,6 +4380,7 @@
   "4yU_RBjlbPY"
  ],
  "noembed": [
+  "4jGsUPMTCFA",
   "J3FV4iY8p5w",
   "L6qtnHZxwEw",
   "NuEr0Q_AS6U",
