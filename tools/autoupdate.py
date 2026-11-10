@@ -248,7 +248,9 @@ def todays_canada(page, now, links, per_region=2, total=18):
     rows = [r for r in rows if r[4].split("?")[0].rstrip("/") not in links and not FRENCH.search(r[2])
             and not OPINION.search(r[3] + " " + r[4]) and not SOFT.search(r[3] + " " + r[4]) and not re.search(gc.SKIP, r[3], re.I)
             and not re.search(r"/community/|jackpot|Lotto", r[3] + " " + r[4], re.I)]
-    rows.sort(key=lambda r: (-len(r[5]), -r[0].timestamp()))
+    import autopilot as _ap
+    # a subscription page goes later (Hannah, Mon Nov 9, 2026): of two reports on the same story, the free one leads
+    rows.sort(key=lambda r: (-len(r[5]), _ap.paywalled(r[4]), -r[0].timestamp()))
     out, per, seen_words = [], {}, []
     for dt, region, outlet, title, url, others in rows:
         ws = cs.words(title)

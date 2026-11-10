@@ -218,6 +218,7 @@ a.snimg { display: block; }
 .to-reps{color:inherit;font-weight:600;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;cursor:pointer;position:relative;z-index:3}
 .cov-n{cursor:pointer;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;position:relative;z-index:3}
 .reps-flash{outline:2px solid #F2A7C3;outline-offset:6px;border-radius:6px}
+.subs-tag{display:inline-block;margin-left:6px;padding:0 6px;border:1px solid currentColor;border-radius:4px;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;opacity:.75;vertical-align:1px}
 </style><style id="ca-newsroom">
 /* Canada, newsroom style not government style (Hannah, Fri Oct 30, 2026: "With the Canadian flag, can you make it
    less government looking, the Canada section?"). The official flag red (#D80621), the stiff flag leaf, the red-and-white
@@ -5414,6 +5415,23 @@ header.site { border-bottom: 0; }
     ob.setAttribute('aria-expanded', String(vOlderOpen));
     wirePhotos();
   }
+  // SUBSCRIPTION PAGES GO LATER (Hannah, Mon Nov 9, 2026: "If you have to subscribe to the page, put it later"). In every
+  // list of reports on a story (What each newsroom reports, Connected to this story, the newsroom chips), a report
+  // behind a subscription wall moves after the free ones and says "subscribers", still one tap away. Same list as
+  // PAYWALL in tools/autopilot.py, which also keeps them from being the headline's link.
+  const PAYWALL_RX = /(?:^|\/\/|\.)(theglobeandmail\.com|thestar\.com|nationalpost\.com|financialpost\.com|calgaryherald\.com|edmontonjournal\.com|ottawacitizen\.com|vancouversun\.com|theprovince\.com|montrealgazette\.com|windsorstar\.com|lfpress\.com|leaderpost\.com|thestarphoenix\.com|winnipegfreepress\.com|thelogic\.co|hilltimes\.com|nytimes\.com|wsj\.com|washingtonpost\.com|bloomberg\.com|ft\.com|economist\.com|theatlantic\.com|newyorker\.com|thetimes\.co\.uk|telegraph\.co\.uk|barrons\.com|businessinsider\.com|latimes\.com|bostonglobe\.com|theathletic\.com)(?:\/|$)/i;
+  window.PAL_paywalled = (u) => { try { return PAYWALL_RX.test(new URL(u, location.href).hostname + '/'); } catch (e) { return false; } };
+  window.PAL_subsLater = function (root) {
+    (root || document).querySelectorAll('#autoBreaking .ab-reps ol, #autoBreaking .rel-box ol, #autoBreaking .rel-box ul, .chips-static, #breaking .reps, #bkEvent .reps, .bd .srcs ol').forEach((list) => {
+      const items = [...list.children];
+      const pay = items.filter((li) => { const a = li.matches('a') ? li : li.querySelector('a[href^="http"]'); return a && window.PAL_paywalled(a.href); });
+      if (!pay.length || pay.length === items.length) return;
+      pay.forEach((li) => {
+        list.appendChild(li);
+        if (!li.querySelector('.subs-tag') && !/subscriber/i.test(li.textContent)) { const t = document.createElement('span'); t.className = 'subs-tag'; t.textContent = 'subscribers'; li.appendChild(t); }
+      });
+    });
+  };
   // THE REPORT COUNT GOES TO THE REPORTS (Hannah, Mon Nov 9, 2026: "At the top where it says 8 independent reports,
   // when you touch that, could it take you down to the screen where it says what each newsroom reports?"). Any count of
   // reports on a story (.to-reps, and the "N independent reports" line of a hand-written Breaking story) opens that
@@ -6981,6 +6999,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     if (window.PAL_orderTop) window.PAL_orderTop();  // Live coverage under the Breaking story (Nov 3, 2026)
     soloLayout();
     try { if (window.PAL_storyWatch) window.PAL_storyWatch(sec, list); } catch (e) { console.warn('story watch', e); }
+    try { if (window.PAL_subsLater) [0, 1500, 4000].forEach((ms) => setTimeout(() => window.PAL_subsLater(), ms)); } catch (e) {}
   }
   // The lead slot under the top two (Hannah, Wed Oct 28, 2026: "ensure we have the top news at the top ... update
   // regularly"): when its hand-written story has not been updated for LEAD_STALE_HOURS, the next biggest story from the

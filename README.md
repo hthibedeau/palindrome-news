@@ -77,6 +77,10 @@ Both pages open directly in a web browser. They are previews: the live site will
 
 "Some you count as a independent report are not, because a lot of them use Associated Press story." The Politics, Business, World, U.S. and Canada desks now read the byline of each newsroom's report (`grouped_outlets()` in tools/autopilot.py, and the Canada desk in tools/autoupdate.py), the same way the top stories do: one wire story run by several newsrooms counts once. The outlets line shows it: a comma between independent reports, "+" between newsrooms that ran the same one, with the wire named ("Toronto Star + ABC News + CTV News + CP24 (AP)"). The six-source meter and the ranking count independent reports. A wire's own address on a newsroom's site (/wireStory/, apnews.com) counts as the wire's report too.
 
+## Subscription pages go later (Hannah, Mon Nov 9, 2026)
+
+"If you have to subscribe to the page, put it later." First said for The Globe and Mail; now for every site that asks readers to subscribe (`PAYWALL` in tools/autopilot.py: the Globe, the Toronto Star, National Post and the Postmedia papers, the Winnipeg Free Press, The Logic, The Hill Times, The New York Times, The Wall Street Journal, The Washington Post, Bloomberg.com and others). A subscription page is never the headline's link when a free report exists; in every list of reports it comes after the free ones, marked "subscribers", still one tap away. Of newsrooms running the same wire story, a free one leads. The page applies the same order to its lists (`PAL_subsLater` in index.html). A story with only a subscription report still links to it.
+
 ## How the page updates itself: the code runs it
 
 Since Tue Oct 27, 2026, the site runs on code, not on Claude (Hannah: "I dont want to rely on claude to run my site. I want the code to do it"). Nothing needs a person or an AI to keep it current:

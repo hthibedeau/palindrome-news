@@ -199,6 +199,26 @@ def same_report(t1, t2):
 
 
 WIRE_NAMES = {"The Canadian Press", "The Associated Press", "Reuters", "AFP", "Bloomberg News"}
+
+# SUBSCRIPTION PAGES GO LATER (Hannah, Mon Nov 9, 2026: "If you have to subscribe to the page, put it later"; first said
+# for The Globe and Mail). A report behind a subscription wall is never the headline's link or the first report under a
+# story when a free one exists: free reports first, subscription reports after them, still one tap away for
+# subscribers. Hard paywalls and the papers that ask readers to subscribe after a few free articles.
+PAYWALL = re.compile(r"(?:^|//|\.)(theglobeandmail\.com|thestar\.com|nationalpost\.com|financialpost\.com|calgaryherald\.com|"
+                     r"edmontonjournal\.com|ottawacitizen\.com|vancouversun\.com|theprovince\.com|montrealgazette\.com|windsorstar\.com|"
+                     r"lfpress\.com|leaderpost\.com|thestarphoenix\.com|winnipegfreepress\.com|thelogic\.co|hilltimes\.com|"
+                     r"nytimes\.com|wsj\.com|washingtonpost\.com|bloomberg\.com|ft\.com|economist\.com|theatlantic\.com|newyorker\.com|"
+                     r"thetimes\.co\.uk|telegraph\.co\.uk|barrons\.com|businessinsider\.com|latimes\.com|bostonglobe\.com|"
+                     r"theathletic\.com|politico\.com/pro|lapresse\.ca/abonnement)(?:/|$)", re.I)
+
+
+def paywalled(url):
+    return bool(PAYWALL.search(url or ""))
+
+
+def free_first(rows, url_of=lambda r: r[3]):
+    """The same list, free reports first, subscription reports after (each keeping its order)."""
+    return [r for r in rows if not paywalled(url_of(r))] + [r for r in rows if paywalled(url_of(r))]
 # primary sources: the people and institutions themselves, not a newsroom's account of them
 PRIMARY = re.compile(r"https?://(?:[\w-]+\.)*(?:pm\.gc\.ca|canada\.ca|gc\.ca|parl\.ca|ourcommons\.ca|sencanada\.ca|bankofcanada\.ca|"
                      r"elections\.ca|ontario\.ca|alberta\.ca|quebec\.ca|gov\.[a-z]{2}\.ca|gnb\.ca|novascotia\.ca|gov\.nl\.ca|"
@@ -279,7 +299,8 @@ def report_groups(reps):
         return bool(prim) and (newest_news is None or (newest_news - max(prim)).total_seconds() <= 12 * 3600)
     out.sort(key=lambda g: (not leads_as_primary(g), -max(r[0] for r in g).timestamp()))
     for g in out:
-        g.sort(key=lambda r: (not is_primary(r), r[0]))
+        g.sort(key=lambda r: (not is_primary(r), paywalled(r[3]), r[0]))  # a free copy leads its group
+    out.sort(key=lambda g: all(paywalled(r[3]) for r in g))  # subscription-only reports after the free ones (stable)
     return out
 
 
@@ -821,7 +842,7 @@ def build_story(g, now, imgdir, prev):
     per = {}
     for r in rows:  # newest report from each newsroom
         per.setdefault(au.clean_outlet(r[1]), r)
-    reps = sorted(per.values(), reverse=True)
+    reps = free_first(sorted(per.values(), reverse=True))  # newest first, subscription pages after the free ones
     if len(reps) >= MIN_OUTLETS:
         with ThreadPoolExecutor(8) as ex:  # each report's own page: who wrote it, its opening sentence
             list(ex.map(lambda r: page_info(r[3]), reps[:14]))
@@ -860,7 +881,7 @@ def build_story(g, now, imgdir, prev):
     # the main photo is the reel's first: the headline's own picture (EVERY PHOTO MATCHES THE HEADLINE, Nov 4, 2026)
     if photos:
         photo = dict(photos[0], since=(photo or {}).get("since") if (photo or {}).get("src") == photos[0]["src"] else datetime.now(timezone.utc).isoformat())
-    newest = reps[0][0]
+    newest = max(r[0] for r in reps)
     # What each newsroom reports: every outlet's own lead sentence (og:description), side by side
     with ThreadPoolExecutor(6) as ex:
         infos = list(ex.map(lambda r: page_info(r[3]), reps[:8]))
@@ -3752,7 +3773,7 @@ def big_week(items, now, prev=()):
                 continue
             o = au.clean_outlet(outlet)
             k = re.sub(r"\W", "", title.lower())[:60]
-            globe = "theglobeandmail.com" in link  # the Globe for its subscribers, never first (Hannah's rule)
+            globe = paywalled(link)  # a subscription page: for subscribers, never first (Hannah's rule)
             if (o in seen or k in seen_t or (not globe and not au.ok_item(outlet, link)) or au.OPINION.search(title + " " + link)
                     or SPORT.search(title + " " + link) or NOT_NEWS.search(title + " " + link) or VIDEO.search(link)):
                 continue
@@ -3778,7 +3799,7 @@ def big_week(items, now, prev=()):
                     or not (ra.search(title) and rb.search(title) or (also is not None and also.search(title) and CAN_TIE.search(title)))
                     or NOT_NEWS.search(title)):
                 continue
-            globe = "theglobeandmail.com" in link
+            globe = paywalled(link)
             seen.add(o); seen_t.add(k); have_u.add(link.split("?")[0])
             reps.append({"t": w.eastern(dt), "iso": dt.isoformat(), "outlet": o + (" (subscribers)" if globe else ""), "title": title, "url": link,
                          "canada": bool(CAN_TIE.search(title)), "paywall": globe})
@@ -3815,7 +3836,7 @@ def big_week(items, now, prev=()):
             if (age <= 5 * 86400 or age > BIG_BACK_DAYS * 86400 or link in shown or k in seen_t or o in seen_b
                     or not (ra.search(title) and rb.search(title)) or NOT_NEWS.search(title)):
                 continue
-            globe = "theglobeandmail.com" in link
+            globe = paywalled(link)
             seen_b.add(o); seen_t.add(k)
             back.append({"t": _day_label(dt), "iso": dt.isoformat(), "outlet": o + (" (subscribers)" if globe else ""), "title": title, "url": link, "paywall": globe})
         for dt, outlet, title, link, _ in sorted(items, key=lambda x: x[0], reverse=True):
@@ -3823,7 +3844,7 @@ def big_week(items, now, prev=()):
             if age <= 5 * 86400 or age > BIG_BACK_DAYS * 86400 or link in shown or not (ra.search(title) and rb.search(title)):
                 continue
             o = au.clean_outlet(outlet)
-            globe = "theglobeandmail.com" in link
+            globe = paywalled(link)
             k = re.sub(r"\W", "", title.lower())[:60]
             if (o in seen_b or k in seen_t or (not globe and not au.ok_item(outlet, link)) or au.OPINION.search(title + " " + link)
                     or SPORT.search(title + " " + link) or NOT_NEWS.search(title + " " + link) or VIDEO.search(link)):
@@ -4267,8 +4288,8 @@ def morning_headline(rows, ra, rb, since):
             sc += 2  # written for the morning
         if CAN_TIE.search(au.clean_outlet(r[1])) or re.search(r"\.ca/|cbc\.ca|ctvnews|globalnews|thestar\.com|nationalpost", r[3]):
             sc += 1  # Canada first
-        if "theglobeandmail.com" in r[3]:
-            sc -= 2  # the Globe never first
+        if paywalled(r[3]):
+            sc -= 2  # a subscription page never first
         if sc > best_score:
             best, best_score = r, sc
     return best[:4] if best and best_score >= 5 else None
@@ -4313,7 +4334,7 @@ def event_day_stories(bigweek, items, now, imgdir, prev):
         if not rows:
             continue
         rows.sort(key=lambda r: r[0], reverse=True)
-        free = [r for r in rows if "theglobeandmail.com" not in r[3]] or rows  # the Globe never first (Hannah's rule)
+        free = [r for r in rows if not paywalled(r[3])] or rows  # a subscription page never first (Hannah's rule)
         with ThreadPoolExecutor(8) as ex:
             list(ex.map(lambda r: page_info(r[3]), free[:8]))
         # the headline: the newest report about the event AS A WHOLE (Americans vote, control of Congress), not one race
@@ -4348,7 +4369,7 @@ def event_day_stories(bigweek, items, now, imgdir, prev):
         can = [r for r in rows if CAN_TIE.search(r[2]) and r is not lead]
         rest = [r for r in rows if r is not lead and r not in can]
         ordered = [lead] + rest[:5] + can[:5] + rest[5:9]
-        ordered = sorted(ordered[:1], key=lambda r: 0) + [r for r in ordered[1:] if "theglobeandmail.com" not in r[3]] + [r for r in ordered[1:] if "theglobeandmail.com" in r[3]]
+        ordered = ordered[:1] + free_first(ordered[1:])
         first = min(rows)
         if aftermath:  # the first to report the result, not an overnight markets story that named the event
             told = [r for r in rows if (EVENT_RESULT_STATED.search(r[2]) or EVENT_RESULT.search(r[2])) and not EVENT_SIDE.search(r[2])
@@ -4440,7 +4461,7 @@ def grouped_outlets(rows, lead):
     labels = []
     for g in groups:
         outs = []
-        for r in sorted(g, key=lambda r: r[3] != lead[3]):
+        for r in sorted(g, key=lambda r: (r[3] != lead[3], paywalled(r[3]))):
             o = au.clean_outlet(r[1]).replace(" (subscribers)", "")
             o = re.sub(r"\s*\((?:via )?[^)]*\)$", "", o) if re.search(r"\((?:via )?(?:The )?(?:Canadian|Associated) Press\)", o) else o
             if o not in outs:
@@ -4450,6 +4471,8 @@ def grouped_outlets(rows, lead):
         lab = " + ".join(outs[:4]) + (" + %d more" % (len(outs) - 4) if len(outs) > 4 else "")
         if wire and not re.search(r"Press|Reuters|AFP|Bloomberg", lab):
             lab += " (" + wire + ")"
+        if all(paywalled(r[3]) for r in g):
+            lab += " (subscribers)"  # after the free reports (report_groups puts it there)
         labels.append(lab)
     return ", ".join(labels), len(groups)
 
@@ -4475,7 +4498,7 @@ def desks(items, groups, now):
             if o not in outlets:
                 outlets.append(o)
         text = " ".join(r[2] for r in rows[:6])
-        lead = next((r for r in rows if "theglobeandmail.com" not in r[3] and au.ok_item(r[1], r[3])), None)
+        lead = next((r for r in free_first(rows) if "theglobeandmail.com" not in r[3] and au.ok_item(r[1], r[3])), None)
         if not lead:
             continue
         canadian = bool(CAN_TIE.search(text) or CANADA_PLACE.search(text))
