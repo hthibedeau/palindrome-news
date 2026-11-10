@@ -1472,6 +1472,9 @@ def on_the_record(page, now):
 
 # ===== Live video, by itself (Hannah: "the new television of this century"): streams that are live NOW on the networks'
 # official YouTube channels, and the ones they have scheduled, named by story. 24-hour channel streams go in one line.
+ROLLING_HOURS = 3
+# a title that is a rundown of several stories: three or more items in a list, or one ending "... and more" / "latest"
+ROLLING_TITLE = re.compile(r"(?:[^,]+,){2,}[^,]*\b(?:more|latest)\b\s*$|(?:[^,]+,){3,}", re.I)
 ALWAYS_ON = re.compile(r"24/7|🔴|English \| Live|English Live|News NOW\b|^Watch .* live\b|News Live\b|LIVE:? Latest|live stream of|livestream|Live News|Breaking News Live|news channel", re.I)
 
 
@@ -1600,7 +1603,24 @@ def live_video(page, named, now):
                 continue
             if st["state"] == "live":
                 item["watching"] = st["watching"]
-                (res["always"] if ALWAYS_ON.search(st["title"]) else res["now"]).append(item)
+                # A ROLLING NEWS STREAM IS NOT ONE EVENT (Hannah, Mon Nov 9, 2026: "In live coverage now, it says Trump
+                # gives White House briefing, but it's really Hakeem Jeffries now up. Why is that wrong?"). LiveNOW from
+                # FOX titled its all-evening stream with the rundown it started with ("LIVE: Trump gives White House
+                # briefing, Iran war, ... more"); the briefing had ended hours before. A stream whose title lists a
+                # rundown, or that has been on air for over ROLLING_HOURS, is rolling coverage: it goes with the 24-hour
+                # channels (watch the channel live), never named as the event on air now.
+                rolling = bool(ROLLING_TITLE.search(st["title"]))
+                # (a long hearing, debate, trial or sitting is one event however long it runs)
+                if not rolling and not ALWAYS_ON.search(st["title"]) and not re.search(
+                        r"hearing|testif|debate|sitting|session|Question Period|House of Commons|Senate|trial|vote|funeral|ceremony", st["title"], re.I):
+                    try:
+                        began = start_time(st["id"])
+                        rolling = bool(began and (now - began).total_seconds() > ROLLING_HOURS * 3600)
+                    except Exception:
+                        pass
+                if rolling:
+                    print(f"live: rolling coverage, not one event: {net}: {st['title'][:70]}")
+                (res["always"] if rolling or ALWAYS_ON.search(st["title"]) else res["now"]).append(item)
             elif st["state"] == "upcoming" and len(res["upcoming"]) < 24 and (EVENT.search(st["title"]) or any(nm[1].search(st["title"]) for nm in named)):
                 t = sched_time(st.get("sched", ""))
                 if t and 0 < (t - now).total_seconds() < 36 * 3600:

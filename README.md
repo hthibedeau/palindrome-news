@@ -85,6 +85,10 @@ Both pages open directly in a web browser. They are previews: the live site will
 
 The Nvidia story, leading 9 front pages but with no new report in two hours, had pushed the Breaking Massie-Hegseth story (8 independent reports, a report 20 minutes old) off the top, because "leading other newsrooms' front pages" outranked everything. Hannah agreed to this rule: a story that is still Breaking (a report in the last hour, or live now) stays above a story ranked up for its front pages, unless that story leads at least twice as many front pages (`breaking_holds()` and `BREAKING_FRONTS_FACTOR` in tools/autopilot.py). An event day still leads. The reason shows in live/auto.json "considered".
 
+## A rolling news stream is not one event (Hannah, Mon Nov 9, 2026)
+
+"In live coverage now, it says Trump gives White House briefing, but it's really Hakeem Jeffries now up." LiveNOW from FOX kept the rundown it started with as the title of its all-evening stream. A live stream whose title is a rundown of several stories, or that has been on air more than three hours (a hearing, debate, trial or sitting excepted), is rolling coverage: it is listed with the 24-hour news channels, never named as the event on air now (`ROLLING_TITLE`, `ROLLING_HOURS` in tools/autopilot.py).
+
 ## How the page updates itself: the code runs it
 
 Since Tue Oct 27, 2026, the site runs on code, not on Claude (Hannah: "I dont want to rely on claude to run my site. I want the code to do it"). Nothing needs a person or an AI to keep it current:
