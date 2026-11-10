@@ -214,6 +214,10 @@ a.snimg { display: block; }
 #autoBreaking .ab-watch .vid .vt{position:relative!important;display:block!important}
 .ab-watch .vid .src,.ab-watch .vid .when,.ab-watch .vid .plays{color:#F6E1E8}
 .ab-watch .vid h3,.ab-watch .vid h3 a{color:#FFFFFF;font-size:15px;line-height:1.3}
+#autoBreaking .cr-byline a.to-reps{text-decoration:underline}
+.to-reps{color:inherit;font-weight:600;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;cursor:pointer;position:relative;z-index:3}
+.cov-n{cursor:pointer;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;position:relative;z-index:3}
+.reps-flash{outline:2px solid #F2A7C3;outline-offset:6px;border-radius:6px}
 </style><style id="ca-newsroom">
 /* Canada, newsroom style not government style (Hannah, Fri Oct 30, 2026: "With the Canadian flag, can you make it
    less government looking, the Canada section?"). The official flag red (#D80621), the stiff flag leaf, the red-and-white
@@ -5410,6 +5414,33 @@ header.site { border-bottom: 0; }
     ob.setAttribute('aria-expanded', String(vOlderOpen));
     wirePhotos();
   }
+  // THE REPORT COUNT GOES TO THE REPORTS (Hannah, Mon Nov 9, 2026: "At the top where it says 8 independent reports,
+  // when you touch that, could it take you down to the screen where it says what each newsroom reports?"). Any count of
+  // reports on a story (.to-reps, and the "N independent reports" line of a hand-written Breaking story) opens that
+  // story's list of every newsroom's report, shows all of it, and scrolls to it, below the sticky section bar.
+  function goReps(el) {
+    const story = el.closest('.ab-story, section.lead > article, #breaking, #bkEvent, article') || document;
+    if (story.classList && story.classList.contains('ab-second') && !story.classList.contains('cr-open')) { const f = story.querySelector(':scope > .cr-full'); if (f) f.click(); }
+    let target = story.querySelector('details.ab-reps');
+    if (target) {
+      target.open = true;
+      if (target.classList.contains('cr-fold') && !target.classList.contains('cr-open')) { const more = target.querySelector('.cr-more'); if (more) more.click(); }
+    } else {
+      const tog = [...story.querySelectorAll('.tog[aria-controls]')].find((b) => /newsroom/i.test(b.textContent));
+      if (tog) { if (tog.getAttribute('aria-expanded') !== 'true') tog.click(); target = document.getElementById(tog.getAttribute('aria-controls')) || tog; }
+      else target = story.querySelector('.cov, .chips-static, .srcs');
+    }
+    if (!target) return;
+    const bars = [...document.querySelectorAll('header, nav, .sticky')].filter((n) => /sticky|fixed/.test(getComputedStyle(n).position) && n.getBoundingClientRect().top <= 1);
+    const off = bars.reduce((m, n) => Math.max(m, n.getBoundingClientRect().bottom), 0) + 12;
+    window.scrollTo({ top: target.getBoundingClientRect().top + scrollY - Math.max(off, 70), behavior: 'smooth' });
+    target.classList.add('reps-flash'); setTimeout(() => target.classList.remove('reps-flash'), 1600);
+  }
+  document.addEventListener('click', (e) => {
+    const el = e.target.closest && e.target.closest('.to-reps, .cov-n');
+    if (!el) return;
+    e.preventDefault(); e.stopPropagation(); goReps(el);
+  }, true);
   // WATCH THIS STORY (Hannah, Mon Nov 9, 2026: "Under the top news story, can you put a watch section like we have
   // below, but just include the watch of that story"). Under each top story: the Watch cards for that story only, newest
   // first, from the last two days. A clip belongs to the story when its title shares two of the story's own words, or
@@ -6981,7 +7012,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       + '<div style="display: flex; align-items: center; gap: 12px"><span class="eyebrow">' + esc(label) + '</span><span class="pill">Developing</span></div>'
       + '<h1>' + a(s.url, esc(s.title), ' class="card-link"') + '</h1>'
       + (s.summary ? '<p class="dek">' + esc(s.summary) + ' (' + a(s.url, esc(s.outlet), ' style="position: relative; z-index: 2; text-decoration: underline"') + ')</p>' : '')
-      + '<div class="row-meta"><span class="ts">Updated ' + esc(s.t) + '</span><span>' + (s.sources ? s.sources.length : (s.independent || s.outlets)) + ' independent reports</span><span style="color: var(--accent); font-weight: 600">Latest report &#8599;</span></div>'
+      + '<div class="row-meta"><span class="ts">Updated ' + esc(s.t) + '</span><a href="#" class="to-reps" title="See every newsroom’s report">' + (s.sources ? s.sources.length : (s.independent || s.outlets)) + ' independent reports &#8595;</a><span style="color: var(--accent); font-weight: 600">Latest report &#8599;</span></div>'
       + '<div class="chips-static">' + outs.slice(0, 7).map((r) => a(r.url, esc(r.outlet))).join('') + '</div>';
     // THE PHOTO REEL ON THE TOP STORY, ALL THE TIME (Hannah, Wed Nov 4, 2026: "I like this carousel for the top news
     // story all the time. put it into the code"): the lead story gets it too when it is the automatic top story
@@ -7801,7 +7832,8 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
             const ft = (txt.match(/First reported by[^·]*·\s*(.*)$/) || [])[1];
             if (links[0]) parts.push('Latest: <a href="' + links[0].href + '" target="_blank" rel="noopener">' + links[0].textContent + '</a>' + (lt ? ' ' + lt.trim() : ''));
             if (links[1]) parts.push('First: <a href="' + links[1].href + '" target="_blank" rel="noopener">' + links[1].textContent + '</a>' + (ft ? ' ' + ft.trim() : '')); }
-          const n = reps && (reps.querySelector('.pn-n') || {}).textContent; if (n) parts.push(n.trim());
+          // the report count takes the reader to the list of every newsroom's report (Hannah, Mon Nov 9, 2026)
+          const n = reps && (reps.querySelector('.pn-n') || {}).textContent; if (n) parts.push('<a href="#" class="to-reps" title="See what each newsroom reports">' + n.trim().replace(/[<>&]/g, '') + ' &#8595;</a>');
           if (parts.length) { by.innerHTML = parts.join('<span class="sep">·</span>'); (sub || h2).after(by); }
         }
         const by = art.querySelector(':scope > .cr-byline');

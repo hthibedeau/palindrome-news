@@ -69,6 +69,10 @@ Both pages open directly in a web browser. They are previews: the live site will
 
 "Under the top news story, can you put a watch section like we have below, but just include the watch of that story." Under each top story and its photo (before the reports), "Watch this story" shows the same Watch cards, only for that story, in a row that scrolls sideways like Watch below: clips from the last two days whose titles share two of the story's words, or one of its names (Hegseth, Massie) that isn't an everyday political word. A clip appears under only one story. `PAL_storyWatch` in index.html; it redraws whenever the top stories or the clips update. Each tap goes straight to the clip on the network's site.
 
+## The report count goes to the reports (Hannah, Mon Nov 9, 2026)
+
+"At the top where it says 8 independent reports, when you touch that, could it take you down to the screen where it says what each newsroom reports?" On every top story, the lead story and a hand-written Breaking story, the report count ("8 independent reports ↓") is a link: one tap opens that story's "What each newsroom reports" list, shows all of it, and scrolls down to it (`goReps` in index.html).
+
 ## How the page updates itself: the code runs it
 
 Since Tue Oct 27, 2026, the site runs on code, not on Claude (Hannah: "I dont want to rely on claude to run my site. I want the code to do it"). Nothing needs a person or an AI to keep it current:
