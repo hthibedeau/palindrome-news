@@ -48,7 +48,9 @@ FRENCH = re.compile(r"Radio-Canada|La Presse|Le Devoir|Journal de Montréal|TVA 
 US = re.compile(r"CBS|ABC News|NBC|PBS|Fox News|The Hill\b", re.I)
 WORLDO = re.compile(r"Al Jazeera|BBC|Guardian|Euronews|Japan Times|Kyiv Independent|Middle East Eye", re.I)
 OPINION = re.compile(r"^[A-Z][\w.'’-]+ [A-Z][\w.'’-]+: |\| ?Opinion|^Opinion[:|]|/opinion/|/editorials?/|/columnists?/|/letters/", re.I)
-SOFT = re.compile(r"jackpot|\bcaptain\b|signs with|rugby|hockey|soccer|golf|tennis|playoffs?|season opener|lotto|lottery|recipe|horoscope|Birkin|photography competition|burger|\bbest deals?\b|\bdeals? (?:of the|on|for|under|we found|you can)\b|\bon sale\b|\bsale\b(?! of)|celebrity|royal family|"
+# "sale" alone is NOT shopping: "Stellantis plant sale" is the day's top Canadian story (Hannah, Tue Nov 10, 2026: the
+# old rule threw out every "plant sale" headline, so Stellantis never reached the top). Only shopping sales count.
+SOFT = re.compile(r"jackpot|\bcaptain\b|signs with|rugby|hockey|soccer|golf|tennis|playoffs?|season opener|lotto|lottery|recipe|horoscope|Birkin|photography competition|burger|\bbest deals?\b|\bdeals? (?:of the|on|for|under|we found|you can)\b|\bon sale\b|\b(?:flash|clearance|holiday|Black Friday|Boxing Day|Cyber Monday|Prime Day|warehouse|garage|yard|bake|end-of-season|semi-annual|anniversary|biggest|best) sales?\b|\bsale (?:ends|event)\b|celebrity|royal family|"
                   r"/(arts?|culture|entertainment|lifestyle|life|style|food|travel|shopping|sports?|wellness|living|fashion|movies|music|tv)/", re.I)
 DESKS = re.compile(r"^(CBC News|CTV News|Global News|The Canadian Press|Toronto Star|National Post|APTN News|Prime Minister|"
                    r"Bank of Canada|CBS News|ABC News|NBC News|PBS NewsHour|BBC News|Al Jazeera|The Guardian)", re.I)

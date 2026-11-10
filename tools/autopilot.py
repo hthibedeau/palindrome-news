@@ -63,6 +63,7 @@ TOP_RULES = [  # (number, name) shown in live/auto.json "considered", so it is a
     (0, "Today is the day of a major scheduled event (election day, budget day): it leads all day, with its Canadian angle"),
     (0.5, "Leading other newsrooms' front pages (Canadian ones among them): the story everyone is leading with"),
     (1, "Canadian and breaking"),
+    (1.5, "Canadian, leading the most Canadian front pages: the story Canada's newsrooms are leading with"),
     (2, "Big international story, on every front page"),
     (3, "Breaking news from abroad that Canadian newsrooms are carrying"),
     (4, "Big Canadian exclusive: a major newsroom's interview or scoop (shown as Exclusive)"),
@@ -1876,7 +1877,15 @@ def related(items, stories, now, eds, papers, groups=()):
 CAN_TIE = re.compile(r"\b(Canad(?:a|ian|ians|a's|a’s)|Ottawa|Carney|Anand|Global Affairs|Poilievre|RCMP|CSIS|Canadian Armed Forces|"
                      r"Ontario|Quebec|Québec|Alberta|British Columbia|B\.C\.|Manitoba|Saskatchewan|Nova Scotia|New Brunswick|"
                      r"P\.E\.I\.|Newfoundland|Yukon|Nunavut|N\.W\.T\.|Toronto|Montreal|Vancouver|Calgary|Edmonton|Winnipeg|Halifax|"
-                     r"Doug Ford|Legault|David Eby|Danielle Smith|Olivia Chow|Hoekstra)(?!\w)")
+                     r"Doug Ford|Legault|David Eby|Danielle Smith|Olivia Chow|Hoekstra|"
+                     # more Canadian places and institutions (Hannah, Tue Nov 10, 2026: the Stellantis Brampton plant sale was
+                     # marked "from abroad" because Brampton, Unifor and Joly were missing; ambiguous names like Windsor,
+                     # Hamilton, London and Surrey stay out)
+                     r"Brampton|Mississauga|Oshawa|Kitchener|Waterloo, Ont|Windsor, Ont|Regina|Saskatoon|Kelowna|Gatineau|Sudbury|"
+                     r"Thunder Bay|Moncton|Fredericton|Charlottetown|Iqaluit|Yellowknife|Whitehorse|Unifor|Mélanie Joly|Joly|"
+                     r"Parliament Hill|Queen's Park|Queen’s Park|Bloc Québécois|NDP|"
+                     r"Lethbridge|Red Deer|Medicine Hat|Grande Prairie|Fort McMurray|Kamloops|Nanaimo|Prince George|Abbotsford|"
+                     r"Chilliwack|Sherbrooke|Trois-Rivières|Laval|Longueuil|Markham|Vaughan|Guelph|Barrie|Sault Ste\. Marie|Timmins)(?!\w)")
 CAN_OUTLET = re.compile(r"^(CBC|CTV|Global News|The Canadian Press|Toronto Star|National Post|CityNews|CP24|APTN|CPAC|"
                         r"Ottawa Citizen|Calgary Herald|Edmonton Journal|Vancouver Sun|Winnipeg Free Press|Times Colonist|"
                         r"The Tyee|Hill Times|iPolitics|BNN|Financial Post|Prime Minister|Government of Canada)", re.I)
@@ -2173,7 +2182,14 @@ def promote_live(res, now):
                 n = 10
             else:
                 text = s["title"] + " " + " ".join(r["title"] for r in s.get("reports", []))
-                n = len(ew & (event_words(text) - EVENT_KIND_STOP)) + 3 * len(ev_urls & {r["url"] for r in s.get("reports", [])})
+                tw = event_words(text) - EVENT_KIND_STOP
+                # a leader's name alone never ties a stream to a story (Hannah, Tue Nov 10, 2026: "Carney holds news
+                # conference in Montreal", an arts-centre announcement, was hung on the Stellantis story through
+                # "Carney"): when the stream names its subject (Montreal, Stellantis ...), the story must share it
+                core = ew - LEADER_NAMES
+                if core and not (core & tw):
+                    continue
+                n = len(ew & tw) + 3 * len(ev_urls & {r["url"] for r in s.get("reports", [])})
             if n > best_n:
                 best, best_n = s, n
         if best is None or best_n < 2:
@@ -2232,6 +2248,7 @@ def promote_live(res, now):
     print("live lifts:", [(s["title"][:50], s["live"]["state"], s["live"]["title"][:50]) for s, e, st in hits], "-> top:", [s["title"][:50] for s in auto["stories"][:auto.get("top_n") or 2]])
 
 
+LEADER_NAMES = set("carney poilievre trump ford smith eby legault moe kinew houston holt furey singh blanchet joly champagne anand leblanc pm prime minister premier leader mark pierre doug".split())
 EVENT_KIND_STOP = set("speaks speak speech remarks holds hold news conference press announcement announces live watch statement update".split())
 
 
@@ -2536,11 +2553,13 @@ def top_rule(s, now=None):
     breaking = s.get("tag") == "Breaking" or live == "now"  # Breaking: 4+ independent newsrooms, a report in the last hour
     if s.get("event_day"):
         return 0  # EVENT DAY (Hannah, Tue Nov 3, 2026): election day / budget day leads, whatever else is breaking
-    if ((s.get("fronts") or 0) >= FRONT_CONSENSUS and (s.get("fronts_ca") or 0) >= FRONT_CONSENSUS_CA
+    if ((s.get("fronts") or 0) >= FRONT_CONSENSUS and (s.get("fronts_ca") or 0) >= FRONT_CONSENSUS_CA and not s.get("outled_ca")
             and s.get("judgment") != "local" and not SPORT.search((s.get("title") or "") + " " + (s.get("url") or ""))):
         return 0.5  # the story every other newsroom is leading with (Hannah, Tue Nov 3, 2026)
     if canadian and breaking:
         return 1
+    if canadian and s.get("leads_ca"):  # Hannah, Tue Nov 10, 2026: the Stellantis plant sale, on 4 Canadian front pages
+        return 1.5
     if (not canadian and (s.get("independent") or 0) >= BIG_WORLD_INDEPENDENT and (s.get("carriers") or 0) >= BIG_WORLD_CARRIERS
             and age < BIG_WORLD_FRESH_HOURS):
         return 2
@@ -2789,7 +2808,7 @@ def big_news_day(top2):
     "it doesnt look like a site with all the latest news on the biggest story in the globe")."""
     def big(t):
         fronts, fronts_ca = t.get("fronts") or 0, t.get("fronts_ca") or 0
-        leading = fronts >= FRONT_CONSENSUS and fronts_ca >= FRONT_CONSENSUS_CA
+        leading = fronts >= FRONT_CONSENSUS and fronts_ca >= FRONT_CONSENSUS_CA and not t.get("outled_ca")
         if t.get("aftermath"):
             return leading
         return bool(t.get("event_day")) or leading
@@ -2851,7 +2870,12 @@ def pick_by_canada(auto, items, now, eds, papers, otr, canus_, mostread=None):
             n_ = coherent(s)
             # a running theme (the federal budget) carried by SIX_SOURCES newsrooms is one story even when its newest
             # headline is a narrow angle (the budget fell to the third slot on Fri Nov 6, 2026 for that reason)
-            s["incoherent"] = bool(not s.get("event_day") and not (s.get("theme") and (s.get("independent") or 0) >= SIX_SOURCES) and n_ < 2)
+            # A one-event theme (Canadian auto jobs, the budget, Canada-EU) is coherent by construction: a headline only
+            # joins it by matching both sides of the theme (Hannah, Tue Nov 10, 2026: the Stellantis story was marked
+            # "incoherent" because Poilievre's, the Roshel CEO's and Unifor's headlines use different words, and fell
+            # under a Lethbridge obituary). The split Canada-U.S. theme is still checked.
+            one_event = bool(s.get("theme") and s["theme"] not in SPLIT_THEMES and (s.get("independent") or 0) >= 2)
+            s["incoherent"] = bool(not s.get("event_day") and not one_event and not (s.get("theme") and (s.get("independent") or 0) >= SIX_SOURCES) and n_ < 2)
             if s["incoherent"] or FOREIGN_DESK.search(s.get("url") or ""):
                 if s["canada"] == "canadian" and not CAN_TIE.search(s.get("title") or ""):
                     s["canada"] = "none"  # its "Canadian" reports were other stories grouped with it by mistake
@@ -2890,6 +2914,20 @@ def pick_by_canada(auto, items, now, eds, papers, otr, canus_, mostread=None):
                 s["canada"] = "tie"
         # how many other newsrooms' front pages lead with it (FRONT_PAGES)
         s["fronts"], s["fronts_ca"], s["fronts_who"] = front_count(s, FRONTS)
+    # CANADA'S FRONT PAGES DECIDE CANADA'S BIG NEWS (Hannah, Tue Nov 10, 2026: "The top news story today in Canada would
+    # be Stellantis"). A story from abroad led 7 front pages, 5 of them American, so it counted as "the story everyone
+    # is leading with" and pushed the Stellantis plant sale, leading 4 Canadian front pages, off the top. A story from
+    # abroad is not that story while a Canadian one leads more Canadian front pages; it is simply news from abroad.
+    best_ca = max([c.get("fronts_ca") or 0 for c in cands if c.get("canada") == "canadian" and c.get("judgment") != "local"] or [0])
+    for s in cands:
+        if s.get("canada") != "canadian" and not s.get("event_day") and best_ca > (s.get("fronts_ca") or 0):
+            s["outled_ca"] = best_ca
+    # ... and the Canadian story leading the most Canadian front pages (at least LEADS_CA_MIN) ranks just under
+    # "Canadian and breaking", above news from abroad, even between updates (rule 1.5)
+    for s in cands:
+        if (s.get("canada") == "canadian" and s.get("judgment") != "local" and best_ca >= LEADS_CA_MIN
+                and (s.get("fronts_ca") or 0) == best_ca and not SPORT.search(s.get("title") or "")):
+            s["leads_ca"] = True
     # one event, one top slot: other candidates about today's event join its theme, so they don't take a second slot
     # (the first run had the midterms twice at the top); they stay in its reports and in the Canadian angle
     for ev in [c for c in cands if c.get("event_day")]:
@@ -4013,6 +4051,7 @@ FRONT_PAGES = [  # (newsroom, front page, Canadian?)
 ]
 FRONT_TOP = 6            # headlines read from the top of each front page
 FRONT_CONSENSUS = 6      # front pages a story must lead (be in their top FRONT_TOP) ...
+LEADS_CA_MIN = 3         # Canadian front pages the leading Canadian story needs for rule 1.5
 FRONT_CONSENSUS_CA = 2   # ... with at least this many Canadian ones
 FRONT_SKIP = re.compile(r"^(subscribe|sign in|log in|newsletters?|watch live|live tv|listen|podcasts?|games?|crossword|more|menu|search|"
                         r"skip to|advertisement|sponsored|opinion|sections?|top stories|latest|most (?:read|popular)|trending)\b", re.I)

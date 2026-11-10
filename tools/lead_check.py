@@ -52,6 +52,15 @@ THEMES = [
     ("Federal budget", "Federal budget",
      re.compile(r"\b(federal|Ottawa|Champagne|Carney|Poilievre|Liberals?|Canad\w*|Budget 2026)\b", re.I),
      re.compile(r"\b(budget)\b(?!\s+(?:airline|travel|hotel|friendly))", re.I)),
+    # Hannah, Tue Nov 10, 2026: "The top news story today in Canada would be Stellantis, especially with Pierre
+    # Poilievre live." The Brampton plant sale came through as separate pieces (CP's Roshel CEO story, CTV's interview,
+    # Unifor's reaction, Poilievre's call to fire Joly), none big enough to lead. Stellantis, Roshel, Unifor and the
+    # other automakers' Canadian plants are ONE running story: Canadian auto jobs. Comes before Canada and the U.S. so
+    # "Stellantis ... tariffs" counts here. One story: never split. As in the other themes, the second pattern is the
+    # specific side, so a live stream joins only when it names Stellantis, Roshel, Unifor... (not just "Carney").
+    ("Canadian auto jobs", "Canadian auto jobs",
+     re.compile(r"\b(Brampton|Windsor|Ingersoll|Oshawa|Alliston|Ontario|Canad\w*|Ottawa|Joly|Carney|Poilievre|Ford|Payne|Unifor|Roshel|plant|workers?|jobs?|layoffs?|strike|sale|sell|sold|autoworkers?|auto)\b", re.I),
+     re.compile(r"\b(Stellantis|Roshel|Unifor|Brampton Assembly|Windsor Assembly|CAMI|Ingersoll|GM Oshawa|Oshawa Assembly|Honda Canada|Toyota Canada|Alliston)\b", re.I)),
     # Hannah, Mon Nov 2, 2026: the Carney-Trump call never reached the top while a train crash in Spain ("4 Americans
     # and 1 Canadian") and a Zelensky-Turkey story were being counted as Canada-U.S. news. The U.S. side must now be the
     # U.S. government or the trade fight itself, never just the word "American(s)", and the finished Turkey trip is out.
