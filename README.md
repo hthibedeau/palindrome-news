@@ -127,3 +127,7 @@ The claude.ai preview blocks images hosted on other websites, so outlet photos a
 `tools/grab_picture.py <link> <out.jpg>` gets a picture for any story, post or video: the page's own share image if it has one, otherwise a screen grab of the top of the page. X (Twitter) pages are not grabbed; their posts use X's official embed on the live site.
 
 On the record cards carry `data-embed` (the original post link) and `data-platform`. On the live site these are swapped for each platform's official embed (X, Instagram, LinkedIn, Truth Social), so posts show exactly as published without scraping.
+
+## No half-empty page when one story stands alone (Hannah, Mon Nov 9, 2026)
+
+"Half the page is blank. We've gone through this multiple times." On a big news day the lead story runs full width with the Canadian angle and Connected to this story beside it; that right column ended halfway down, beside the long newsroom list. Now, on a wide screen, the two columns are measured after every update: "The latest from every newsroom" moves into the right column (under the Canadian angle, above Connected) when that evens the bottoms, and opens by itself if the right side is still short (never against a reader's tap). Phones are unchanged. Code: `tools/solo_balance_layer.html`, in index.html between `<!-- solo-balance:start -->` and `<!-- solo-balance:end -->`. The no-repeats check between the two lists now also runs beside a lone big story.
