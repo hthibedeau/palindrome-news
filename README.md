@@ -87,7 +87,7 @@ The Nvidia story, leading 9 front pages but with no new report in two hours, had
 
 ## A rolling news stream is not one event (Hannah, Mon Nov 9, 2026)
 
-"In live coverage now, it says Trump gives White House briefing, but it's really Hakeem Jeffries now up." LiveNOW from FOX kept the rundown it started with as the title of its all-evening stream. A live stream whose title is a rundown of several stories, or that has been on air more than three hours (a hearing, debate, trial or sitting excepted), is rolling coverage: it is listed with the 24-hour news channels, never named as the event on air now (`ROLLING_TITLE`, `ROLLING_HOURS` in tools/autopilot.py).
+"In live coverage now, it says Trump gives White House briefing, but it's really Hakeem Jeffries now up." LiveNOW from FOX kept the rundown it started with as the title of its all-evening stream. A live stream whose title is a rundown of several stories, or that has been on air more than three hours (a hearing, debate, trial or sitting excepted), is rolling coverage: it stays among the live videos with its picture ("I like having that live video in there though"), labelled "Rolling live news coverage, as it happens", never named as the event on air now or tied to a story (`ROLLING_TITLE`, `ROLLING_HOURS` in tools/autopilot.py).
 
 ## How the page updates itself: the code runs it
 

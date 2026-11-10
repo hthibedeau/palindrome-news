@@ -1575,7 +1575,7 @@ ENDED = []  # streams that ended in the last 12 hours (recordings)
 
 def live_video(page, named, now):
     import network_youtube as ny
-    res = {"now": [], "upcoming": [], "always": []}
+    res = {"now": [], "upcoming": [], "always": [], "rolling": []}
 
     def one(ch):
         net, addr, region = ch
@@ -1619,8 +1619,13 @@ def live_video(page, named, now):
                     except Exception:
                         pass
                 if rolling:
+                    # (Hannah, Mon Nov 9, 2026: "I like having that live video in there though") the stream stays among
+                    # the live videos, with its picture, but says only what it is: the network's rolling live coverage
                     print(f"live: rolling coverage, not one event: {net}: {st['title'][:70]}")
-                (res["always"] if rolling or ALWAYS_ON.search(st["title"]) else res["now"]).append(item)
+                    res["rolling"].append(dict(item, title="Rolling live news coverage, as it happens",
+                                               story="Live news, as it happens", rolling=True))
+                    continue
+                (res["always"] if ALWAYS_ON.search(st["title"]) else res["now"]).append(item)
             elif st["state"] == "upcoming" and len(res["upcoming"]) < 24 and (EVENT.search(st["title"]) or any(nm[1].search(st["title"]) for nm in named)):
                 t = sched_time(st.get("sched", ""))
                 if t and 0 < (t - now).total_seconds() < 36 * 3600:
@@ -1648,7 +1653,8 @@ def live_video(page, named, now):
                 i["noembed"] = True  # plays on YouTube, but not inside our page: the page links to it instead
             keep.append(i)
         res[k] = keep
-    res["now"] = group_events(res["now"], live=True)
+    res["rolling"] = geo_filter(res["rolling"], vid_of, "live")
+    res["now"] = group_events(res["now"], live=True) + res.pop("rolling")  # rolling streams: never grouped with an event
     res["upcoming"] = group_events(res["upcoming"], live=False)
     order = {"ca": 0, "us": 1, "world": 2}
     res["now"].sort(key=lambda i: (-len(i.get("also", [])), order[i["r"]]))
@@ -2140,7 +2146,7 @@ def promote_live(res, now):
         return
     auto, cands, tier = LAST_PICK
     lv = res.get("live") or {}
-    events = [(e, "now") for e in lv.get("now") or []]
+    events = [(e, "now") for e in lv.get("now") or [] if not e.get("rolling")]  # rolling coverage is not a story's event
     for e in lv.get("upcoming") or []:
         try:
             t = datetime.fromisoformat(e["when"])
@@ -3301,7 +3307,7 @@ def attach_reports(lv, items, now):
     checks and adds other places telling the story too"): reports from the last 18 hours on the same event, newest
     report from each newsroom, their own headlines, one tap to each."""
     import autoupdate as au
-    for ev in (lv.get("now") or []) + (lv.get("upcoming") or []):
+    for ev in [e for e in (lv.get("now") or []) if not e.get("rolling")] + (lv.get("upcoming") or []):
         text = ev["title"] + " " + " ".join(a["net"] for a in ev.get("also", []))
         ws = event_words(ev["title"]) - {"announce", "announces", "holds", "speaks", "discusses", "decision", "conference", "press"}
         inst = institution(text)
