@@ -5417,9 +5417,10 @@ header.site { border-bottom: 0; }
   }
   // SUBSCRIPTION PAGES GO LATER (Hannah, Mon Nov 9, 2026: "If you have to subscribe to the page, put it later"). In every
   // list of reports on a story (What each newsroom reports, Connected to this story, the newsroom chips), a report
-  // behind a subscription wall moves after the free ones and says "subscribers", still one tap away. Same list as
+  // behind a hard paywall moves after the free ones and says "subscribers", still one tap away ("Change to hard
+  // paywalls", Mon Nov 9, 2026: metered sites like the Toronto Star count as free). Same list as
   // PAYWALL in tools/autopilot.py, which also keeps them from being the headline's link.
-  const PAYWALL_RX = /(?:^|\/\/|\.)(theglobeandmail\.com|thestar\.com|nationalpost\.com|financialpost\.com|calgaryherald\.com|edmontonjournal\.com|ottawacitizen\.com|vancouversun\.com|theprovince\.com|montrealgazette\.com|windsorstar\.com|lfpress\.com|leaderpost\.com|thestarphoenix\.com|winnipegfreepress\.com|thelogic\.co|hilltimes\.com|nytimes\.com|wsj\.com|washingtonpost\.com|bloomberg\.com|ft\.com|economist\.com|theatlantic\.com|newyorker\.com|thetimes\.co\.uk|telegraph\.co\.uk|barrons\.com|businessinsider\.com|latimes\.com|bostonglobe\.com|theathletic\.com)(?:\/|$)/i;
+  const PAYWALL_RX = /(?:^|\/\/|\.)(theglobeandmail\.com|thelogic\.co|hilltimes\.com|wsj\.com|ft\.com|economist\.com|bloomberg\.com|barrons\.com|theathletic\.com|thetimes\.co\.uk|thetimes\.com)(?:\/|$)/i;
   window.PAL_paywalled = (u) => { try { return PAYWALL_RX.test(new URL(u, location.href).hostname + '/'); } catch (e) { return false; } };
   window.PAL_subsLater = function (root) {
     (root || document).querySelectorAll('#autoBreaking .ab-reps ol, #autoBreaking .rel-box ol, #autoBreaking .rel-box ul, .chips-static, #breaking .reps, #bkEvent .reps, .bd .srcs ol').forEach((list) => {

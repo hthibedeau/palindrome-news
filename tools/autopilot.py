@@ -201,15 +201,12 @@ def same_report(t1, t2):
 WIRE_NAMES = {"The Canadian Press", "The Associated Press", "Reuters", "AFP", "Bloomberg News"}
 
 # SUBSCRIPTION PAGES GO LATER (Hannah, Mon Nov 9, 2026: "If you have to subscribe to the page, put it later"; first said
-# for The Globe and Mail). A report behind a subscription wall is never the headline's link or the first report under a
-# story when a free one exists: free reports first, subscription reports after them, still one tap away for
-# subscribers. Hard paywalls and the papers that ask readers to subscribe after a few free articles.
-PAYWALL = re.compile(r"(?:^|//|\.)(theglobeandmail\.com|thestar\.com|nationalpost\.com|financialpost\.com|calgaryherald\.com|"
-                     r"edmontonjournal\.com|ottawacitizen\.com|vancouversun\.com|theprovince\.com|montrealgazette\.com|windsorstar\.com|"
-                     r"lfpress\.com|leaderpost\.com|thestarphoenix\.com|winnipegfreepress\.com|thelogic\.co|hilltimes\.com|"
-                     r"nytimes\.com|wsj\.com|washingtonpost\.com|bloomberg\.com|ft\.com|economist\.com|theatlantic\.com|newyorker\.com|"
-                     r"thetimes\.co\.uk|telegraph\.co\.uk|barrons\.com|businessinsider\.com|latimes\.com|bostonglobe\.com|"
-                     r"theathletic\.com|politico\.com/pro|lapresse\.ca/abonnement)(?:/|$)", re.I)
+# for The Globe and Mail; then "Change to hard paywalls"). A report behind a hard paywall (no free articles: subscribe
+# to read) is never the headline's link or the first report under a story when a free one exists: free reports first,
+# hard-paywall reports after them, still one tap away for subscribers. Metered sites that give some free articles (the
+# Toronto Star, Postmedia papers, The New York Times, The Washington Post) are treated as free.
+PAYWALL = re.compile(r"(?:^|//|\.)(theglobeandmail\.com|thelogic\.co|hilltimes\.com|wsj\.com|ft\.com|economist\.com|"
+                     r"bloomberg\.com|barrons\.com|theathletic\.com|thetimes\.co\.uk|thetimes\.com|politico\.com/pro)(?:/|$)", re.I)
 
 
 def paywalled(url):
