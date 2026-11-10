@@ -5066,11 +5066,22 @@ header.site { border-bottom: 0; }
   const mic = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>';
   const play = '<svg width="18" height="18" viewBox="0 0 24 24" fill="#FFF" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>';
   const row = (pic, tint, ico, s, t, w, go, href) => '<a class="media-row" href="' + esc(href) + '" target="_blank" rel="noopener"><span class="ico">' + (grabbed(href) ? photo(grabbed(href), pic, s, '').replace('<span class="ph"', '<span class="ph bg"') : art(pic, s, tint).replace('<svg', '<svg class="bg"')) + '<span class="glyph">' + ico + '</span></span><span class="txt"><span class="src">' + esc(s) + '</span><span class="ttl">' + esc(t) + '</span><span class="when">' + esc(w) + '</span></span><span class="go">' + go + ' &#8599;</span></a>';
-  $('listen').innerHTML = [
+  // (Mon Nov 9, 2026: "I want all news updated") the hand-written episodes show only while they are from the last
+  // PODS_DAYS; each update brings the newest episodes of Canada's news podcasts (tools/autopilot.py podcasts, AUTO pods)
+  const PODS_DAYS = 7, PODS_WRITTEN = '2026-10-19';
+  const podRows = (L) => L.map(([tint, s, t, w, h]) => row('wave', tint, mic.replace('width="20" height="20"', 'width="16" height="16"'), s, t, w, 'Listen', h)).join('');
+  window.PAL_pods = (L) => {
+    $('listen').innerHTML = podRows(L);
+    // each show's own cover picture, when the feed gives one
+    $('listen').querySelectorAll('a.media-row').forEach((a, i) => { const src = L[i] && L[i][5], ico = a.querySelector('.ico');
+      if (src && ico) ico.innerHTML = '<img src="' + esc(src) + '" alt="" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;border-radius:inherit" onerror="this.remove()">'; });
+  };
+  const podsHand = [
     ['#2B1B54', 'Front Burner · CBC Podcasts', 'CFB Wainwright tragedy + the final Alberta referendum push', 'Posted Oct 19 · on CBC Listen', 'https://www.cbc.ca/radio/frontburner/cfb-wainwright-tragedy-the-final-alberta-referendum-push-9.7386278'],
     ['#7A1F3D', 'The Decibel · The Globe and Mail', 'The history of Alberta separatism', 'Posted Oct 19 · at The Globe and Mail', 'https://www.theglobeandmail.com/podcasts/the-decibel/article-the-history-of-alberta-separatism/'],
     ['#4B2F8F', 'Hill Times podcast · The Hill Times', 'Minister Eleanor Olszewski weighs in on the Alberta referendum', 'Posted Oct 16 · at The Hill Times', 'https://www.hilltimes.com/podcast/minister-eleanor-olszewski-weighs-in-on-the-alberta-referendum/']
-  ].map(([tint, s, t, w, h]) => row('wave', tint, mic.replace('width="20" height="20"', 'width="16" height="16"'), s, t, w, 'Listen', h)).join('');
+  ];
+  $('listen').innerHTML = Date.now() - Date.parse(PODS_WRITTEN + 'T23:59:00-04:00') < PODS_DAYS * 864e5 ? podRows(podsHand) : '<p class="us-wait">This week’s news podcasts are on their way with the next update.</p>';
 
   // United States desk, written by hand (real stories, Oct 18–19, 2026); shown only while fresh, see US_WRITTEN below
   const us = [
@@ -5487,8 +5498,16 @@ header.site { border-bottom: 0; }
   ];
   const BOARDLINK = {"WAINWRIGHT": "https://www.ctvnews.ca/edmonton/article/four-dead-dozens-wounded-in-cfb-wainwright-fire-pm-says-live-here/", "ALBERTA-VOTE": "https://www.cbc.ca/news/canada/edmonton/livestory/alberta-referendum-results-live-updates-separatism-october-19-2026-9.7387777?id=9.7387777.16997", "FRANCE": "https://www.aljazeera.com/news/liveblog/2026/10/19/france-protests-live-macron-admits-failures-after-days-of-violent-unrest?update=5061903", "CPI": "https://www.ctvnews.ca/business/inflation/article/higher-gas-prices-drove-inflation-up-to-31-in-september-statcan/", "STELLANTIS": "https://www.cbc.ca/news/canada/windsor/unifor-stellantis-favour-strike-mandate-9.7386680", "PEEL-CARS": "https://www.ctvnews.ca/toronto/article/peel-police-to-reveal-results-of-investigation-into-carjackings-high-end-vehicle-thefts/", "BC-VOTE": "https://medicinehatnews.com/news/national-news/2026/10/18/eby-asking-green-voters-to-support-b-c-ndp-to-defeat-conservatives/", "HAINES": "https://www.pbs.org/newshour/world/australian-lawmaker-critically-injured-by-car-is-no-accident-prime-minister-says", "KENYA-CULT": "https://www.ctvnews.ca/world/article/kenyan-cult-leader-faces-verdict-over-191-starvation-deaths/", "US-POLLS": "https://www.axios.com/2026/10/18/trump-approval-polls-maga-gop-midterms-2026", "SCOTUS-911": "https://www.cbsnews.com/news/supreme-court-khalid-sheikh-mohammed-911-appeal/", "DC-GUARD": "https://fox5dc.com/news/national-guard-member-shot-dc", "NETANYAHU": "https://www.cbsnews.com/news/trump-endorses-israel-prime-minister-benjamin-netanyahu-reelection/", "ST-PETE": "https://www.aljazeera.com/news/2026/10/19/ukrainian-drone-attack-on-russias-st-petersburg-kills-1-hits-energy-sites", "HORMUZ": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tehran-says-netanyahu-seeks-more-war-yemen-fighting-flares"};
   const label = { verified: 'Verified', confirming: 'Confirming', watching: 'Watching', developing: 'Developing' };
-  $('boardBody').innerHTML = board.map(([slug, h, href, desk, st, n, next]) =>
-    '<tr><td class="slug">' + esc(slug) + '</td><td><a href="' + esc(BOARDLINK[slug] || href) + '"' + (BOARDLINK[slug] ? ' target="_blank" rel="noopener"' : '') + '>' + esc(h) + ' &#8599;</a></td><td class="desk-c">' + esc(desk) + '</td><td><span class="stp ' + st + '">' + label[st] + '</span></td><td>' + meter(n) + '</td><td class="next">' + esc(next) + '</td></tr>').join('');
+  // (Mon Nov 9, 2026: "I want all news updated") the board was the stories of Oct. 17-20. Each update now builds it from
+  // the stories the page is carrying: the top stories, then the biggest story on each desk (PAL_board). The hand-written
+  // board shows only while it is from the last BOARD_DAYS.
+  const BOARD_WRITTEN = '2026-10-20', BOARD_DAYS = 2;
+  function renderBoard(B) {
+    $('boardBody').innerHTML = B.map(([slug, h, href, desk, st, n, next]) =>
+    '<tr><td class="slug">' + esc(slug) + '</td><td><a href="' + esc(BOARDLINK[slug] || href) + '"' + (BOARDLINK[slug] || /^https?:/.test(href) ? ' target="_blank" rel="noopener"' : '') + '>' + esc(h) + ' &#8599;</a></td><td class="desk-c">' + esc(desk) + '</td><td><span class="stp ' + st + '">' + label[st] + '</span></td><td>' + meter(n) + '</td><td class="next">' + esc(next) + '</td></tr>').join('');
+  }
+  window.PAL_board = renderBoard;
+  renderBoard(Date.now() - Date.parse(BOARD_WRITTEN + 'T23:59:00-04:00') < BOARD_DAYS * 864e5 ? board : []);
 
   // Edition by time of day; late edition stamp after 10 p.m.
   try {
@@ -6702,7 +6721,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     const fresh = !AUTO || AUTO.d.checked !== got[0].d.checked;
     AUTO = got[0];
     deadLinks();
-    if (fresh) { try { if (window.PAL_clocks && AUTO.d.clocks) window.PAL_clocks(AUTO.d.clocks); } catch (e) { console.warn('clocks', e); } blogs(); wire(); try { autoTop(); if (window.PAL_orderTop) window.PAL_orderTop(); try { leadAuto(); } catch (e) { console.warn('lead', e); } } catch (e) { console.warn('autoTop', e); } try { clips(); ledes(); stamp(); papers(); eds(); canus(); try { usDesk(); } catch (e) { console.warn('us desk', e); } try { reads(); } catch (e) { console.warn('reads', e); } try { geoHide(); } catch (e) { console.warn('geo', e); } try { markCanada(); } catch (e) { console.warn('canada', e); } brief(); bds(); otr(); live(); related(); try { canAngle(); canAngleLive(); } catch (e) { console.warn('canAngle', e); } mostRead(); smaller(); dazzle(); } catch (e) { console.warn('autopilot', e); } if (window.PAL_eventRender) try { window.PAL_eventRender(); } catch (e) {} if (window.PAL_renderFronts) try { window.PAL_renderFronts(); if (window.PAL_oneStoryOnePlace) window.PAL_oneStoryOnePlace(); } catch (e) { console.warn(e); } }
+    if (fresh) { try { if (window.PAL_clocks && AUTO.d.clocks) window.PAL_clocks(AUTO.d.clocks); } catch (e) { console.warn('clocks', e); } blogs(); wire(); try { autoTop(); if (window.PAL_orderTop) window.PAL_orderTop(); try { leadAuto(); } catch (e) { console.warn('lead', e); } } catch (e) { console.warn('autoTop', e); } try { clips(); ledes(); stamp(); papers(); eds(); canus(); try { usDesk(); } catch (e) { console.warn('us desk', e); } try { pods(); } catch (e) { console.warn('pods', e); } try { storyBoard(); } catch (e) { console.warn('board', e); } try { reads(); } catch (e) { console.warn('reads', e); } try { geoHide(); } catch (e) { console.warn('geo', e); } try { markCanada(); } catch (e) { console.warn('canada', e); } brief(); bds(); otr(); live(); related(); try { canAngle(); canAngleLive(); } catch (e) { console.warn('canAngle', e); } mostRead(); smaller(); dazzle(); } catch (e) { console.warn('autopilot', e); } if (window.PAL_eventRender) try { window.PAL_eventRender(); } catch (e) {} if (window.PAL_renderFronts) try { window.PAL_renderFronts(); if (window.PAL_oneStoryOnePlace) window.PAL_oneStoryOnePlace(); } catch (e) { console.warn(e); } }
     paint();
   }
   function blogs() {
@@ -6971,6 +6990,30 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     // the intro no longer names one day's subjects (it said "Today: Alberta's vote, Trump, Stelco and France" for weeks)
     const p = document.querySelector('#editorials .band-head p');
     if (p) p.textContent = 'We don’t write editorials. We pick the day’s best from other outlets. Checked automatically at ' + fmt(AUTO.d.checked) + ' ET.';
+  }
+  // Go deeper: the newest episodes of Canada's news podcasts
+  function pods() {
+    const P = (AUTO.d.pods || []).filter((x) => Date.now() - Date.parse(x.iso) < 5 * 864e5);
+    if (!window.PAL_pods || !P.length) return;
+    const tints = ['#2B1B54', '#7A1F3D', '#4B2F8F', '#5B2A86', '#3A2466'];
+    window.PAL_pods(P.map((x, i) => [tints[i % tints.length], x.show + ' · ' + x.net, x.title, 'Posted ' + x.t + ' · on ' + x.net, x.u, x.img || '']));
+  }
+  // Story board: what the page is carrying now, top stories first, then the biggest story on each desk
+  function storyBoard() {
+    if (!window.PAL_board) return;
+    const A = AUTO.d.auto || {}, rows = [], seen = new Set();
+    const slug = (t) => (t.replace(/[‘’'"“”]/g, '').match(/\b[A-Z][\w.-]+/g) || t.split(' ')).filter((x) => !/^(The|A|An|In|On|At|After|As|U\.S\.|US|Canada|Canadian|Canadians|New|Rep\.?|Sen\.?|Premier|Prime|Minister|President|Mayor|Chief|Judge|Federal|Former|Top|Donald|Mark|Doug|Pierre|Pete|Thomas|Police|Here|How|Why|What|Who|When|Will|Is)$/.test(x)).slice(0, 2).join('-').toUpperCase().replace(/[^A-Z0-9-]/g, '').slice(0, 18) || 'STORY';
+    const add = (title, url, desk, n, next) => {
+      const k = String(title).toLowerCase().slice(0, 40); if (!title || seen.has(k)) return; seen.add(k);
+      rows.push([slug(title), title, url, desk, n >= 6 ? 'verified' : n >= 3 ? 'confirming' : 'developing', n, next]);
+    };
+    (A.stories || []).concat(A.more || []).forEach((x) => add(x.title, x.url, x.theme || (x.canada === 'canadian' ? 'Canada' : /\b(Trump|Hegseth|Vance|Rubio|White House|Congress|Senate|House|Republicans?|Democrats?|Pentagon|Supreme Court|U\.S\.|Americans?)\b/.test(x.title) && !/\b(Iran|Israel|Gaza|Ukrain\w*|Russia\w*|China|Venezuela)\b/.test(x.title) ? 'U.S.' : 'World'), (x.sources || []).length || x.independent || x.outlets || 1, 'Latest: ' + x.outlet + ' · ' + x.t));
+    const NAME = { politics: 'Politics', business: 'Business', world: 'World', us: 'U.S.' }, per = {};
+    (AUTO.d.desks || []).filter((r) => Date.now() - Date.parse(r.iso) < 30 * 3600e3).forEach((r) => {
+      if ((per[r.desk] = (per[r.desk] || 0) + 1) > 2) return;
+      add(r.title, r.url, NAME[r.desk] || 'News', String(r.outlet || '').split(',').length, 'Latest: ' + String(r.outlet).split(',')[0] + ' · ' + r.t);
+    });
+    if (rows.length) window.PAL_board(rows.slice(0, 12));
   }
   // Today's reading: the editor's picks while fresh, otherwise today's long reads from each update
   function reads() {

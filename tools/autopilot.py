@@ -3037,7 +3037,7 @@ def smaller(items, page, now, imgdir):
         except Exception:
             pass
     pool = [p_ for p_ in pool if not au.OPINION.search(p_[2] + " " + p_[3]) and not SPORT.search(p_[2] + " " + p_[3])
-            and not re.search(r"/community/|/events?/|obituar|horoscope|Please Advise", p_[2] + " " + p_[3], re.I)
+            and not re.search(r"/community/|/events?/|obituar|horoscope|Please Advise", p_[2] + " " + p_[3], re.I) and au.ok_item(p_[1], p_[3])
             and not SMALL_SKIP.search(p_[3]) and not SMALL_SKIP.search(p_[2]) and not NOT_NEWS.search(p_[2] + " " + p_[3]) and not SMALL_GAME.search(p_[2])]
     from collections import Counter
     # their own stories, not wire copy: a headline that any other newsroom (big or small) also ran is someone else's
@@ -4532,6 +4532,52 @@ def reads(items, page, now):
     return out
 
 
+# ===== Go deeper: the newest episodes of Canada's news podcasts (Hannah, Mon Nov 9, 2026: "I want all news updated";
+# the list was three Oct. 16-19 episodes). One episode per show, from the last PODS_DAYS, newest first, each with the
+# show's own title, picture and summary, linked to the show's own page where the episode is posted.
+PODS_DAYS, PODS_MAX = 4, 5
+PODCASTS = [("Front Burner", "CBC Podcasts", "https://www.cbc.ca/podcasting/includes/frontburner.xml"),
+            ("The House", "CBC Radio", "https://www.cbc.ca/podcasting/includes/thehouse.xml"),
+            ("Power & Politics", "CBC News", "https://www.cbc.ca/podcasting/includes/cbcpowerandpolitics.xml"),
+            ("As It Happens", "CBC Radio", "https://www.cbc.ca/podcasting/includes/asithappens.xml"),
+            ("What on Earth?", "CBC Radio", "https://www.cbc.ca/podcasting/includes/whatonearth.xml")]
+
+
+def podcast_feed(show, net, url, now):
+    from email.utils import parsedate_to_datetime
+    x = curl(url)
+    if "<item" not in x:
+        return None
+    ch = x[:x.find("<item")]
+    home = (re.search(r"<link>\s*(https?://[^<\s]+)", ch) or [None, url])[1]
+    for it in re.findall(r"<item\b.*?</item>", x, re.S)[:3]:
+        get = lambda tag: (re.search(r"<" + tag + r"\b[^>]*>(.*?)</" + tag + ">", it, re.S) or [None, ""])[1]
+        try:
+            dt = parsedate_to_datetime(get("pubDate").strip().replace(" EST", " -0500").replace(" EDT", " -0400"))
+        except Exception:
+            continue
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        if (now - dt).total_seconds() > PODS_DAYS * 86400:
+            return None
+        title = clean(_h.unescape(re.sub(r"<!\[CDATA\[|\]\]>", "", get("title"))))
+        if not title or re.search(r"\b(trailer|rebroadcast|best of|encore)\b", title, re.I):
+            continue
+        dek = clean(_h.unescape(re.sub(r"<[^>]+>", " ", re.sub(r"<!\[CDATA\[|\]\]>", "", get("description")))))
+        dek = re.split(r"\s(?:For transcripts|Subscribe|Listen to)\b", dek)[0]
+        link = (re.search(r"<link>\s*(https?://[^<\s]+)", it) or [None, home])[1]
+        img = (re.search(r'<itunes:image\s+href="([^"]+)"', it) or re.search(r'<itunes:image\s+href="([^"]+)"', ch) or [None, ""])[1]
+        return {"show": show, "net": net, "title": title, "dek": short(dek, 180), "iso": dt.isoformat(), "t": w.eastern(dt),
+                "u": link, "img": img}
+    return None
+
+
+def podcasts(now):
+    with ThreadPoolExecutor(5) as ex:
+        got = [x for x in ex.map(lambda f: podcast_feed(*f, now), PODCASTS) if x]
+    return sorted(got, key=lambda x: x["iso"], reverse=True)[:PODS_MAX]
+
+
 def gather_themes(items, groups, now):
     """A running event (lead_check.THEMES, kept whole) is one story however it is reported. Every report in the feed
     whose headline names both sides of the event goes into its group, and the event gets a group of its own when the
@@ -4587,7 +4633,7 @@ def run(page, items, groups, breaking, now, imgdir, prev):
                     ("smaller", lambda: smaller(items, page, now, imgdir)),
                     ("clocks", lambda: clock_topics(items, groups, now)),
                     ("bigweek", lambda: big_week(items, now, prev.get("bigweek") or [])),
-                    ("desks", lambda: desks(items, groups, now)), ("reads", lambda: reads(items, page, now))]:
+                    ("desks", lambda: desks(items, groups, now)), ("reads", lambda: reads(items, page, now)), ("pods", lambda: podcasts(now))]:
         try:
             res[name] = f()
         except Exception as e:  # never block the run

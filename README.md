@@ -60,6 +60,9 @@ Both pages open directly in a web browser. They are previews: the live site will
 - **Canada and the U.S.**: the band says when the newest reports were checked and when the trade figures were last reviewed. "How U.S. media see Canada" folds cards older than five days into "Earlier U.S. coverage"; more U.S. newsrooms are read for it.
 - **Most read** leaves out articles more than a week old, even when they sit on a newsroom's most-read list.
 - **Weekday labels are not dates** (Mon Nov 9, 2026: "look how old this story is ... It has been on the site for a long time"). The Oct. 26 Carney lead said only "Updated Mon 6:47 p.m.", so it came back as new every Monday. A hand-written story now counts as current only when it carries a real recent date (`data-updated`, or the date in one of its links: `PAL_handFresh` in index.html). The lead slot, the hand-written desk stories and the wire all use it.
+- **Go deeper** fills from the newest episodes of Canada's news podcasts (Front Burner, The House, Power & Politics, As It Happens, What on Earth?) every update, with each show's own picture: `podcasts()` in tools/autopilot.py. The hand-written episodes show only for a week. (Mon Nov 9, 2026: "I want all news updated")
+- **Story board** is built every update from the stories the page is carrying: the top stories, then the biggest stories on each desk.
+- **Obituaries, memorial notices and classifieds** are never news (`NOT_NEWS_PAGE` in tools/autoupdate.py); a SooToday "In memoriam" notice had shown in Smaller newsrooms.
 - **Editorials** and **Most read** no longer show one day's hand-written intro or fine print.
 
 ## How the page updates itself: the code runs it

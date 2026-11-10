@@ -101,7 +101,15 @@ def ok_item(outlet, link):
     # come in through their own official feeds, not through this filter.
     if CORP_RELEASE.search(link):
         return False
+    # (Hannah, Mon Nov 9, 2026: "I want all news updated") obituaries, memorial notices and classifieds are not news:
+    # SooToday's "In memoriam" notices showed in Smaller newsrooms as a story
+    if NOT_NEWS_PAGE.search(link):
+        return False
     return not re.search(r"(twitter|x|instagram|linkedin)\.com/", link)
+
+
+NOT_NEWS_PAGE = re.compile(r"/(in-memoriam|obituar(?:y|ies)|obits?|memorials?|death-notices?|classifieds?|announcements|horoscopes?|"
+                           r"contests?|sponsored(?:-content)?|partner-content|brandvoice|advertorial)(?:/|-|$)", re.I)
 
 
 def clean_outlet(o):
