@@ -205,6 +205,14 @@ a.snimg { display: block; }
 .um-now{font-size:14px;color:var(--muted,#5f5870);margin:6px 0}
 .cu-asof{display:inline-block;margin-left:8px;font-size:12px;font-weight:600;color:var(--muted,#5f5870);letter-spacing:.02em}
 .vfilters button[hidden]{display:none}
+.ab-watch{grid-column:1/-1;margin:16px 0 4px;padding-top:12px;border-top:1px solid rgba(255,255,255,.18);position:relative;z-index:2}
+.ab-watch-h{display:flex;align-items:center;gap:8px;margin:0 0 10px;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#FFFFFF}
+.ab-watch-h .pn-ic{width:18px;height:18px}
+.ab-watch .vids{grid-auto-columns:min(240px,70vw);gap:14px}
+#autoBreaking .ab-watch .vid .bigplay{position:absolute!important;top:0!important;left:0!important;width:100%!important;aspect-ratio:16/9;display:flex!important;align-items:center;justify-content:center;margin:0!important}
+#autoBreaking .ab-watch .vid .vt{position:relative!important;display:block!important}
+.ab-watch .vid .src,.ab-watch .vid .when,.ab-watch .vid .plays{color:#F6E1E8}
+.ab-watch .vid h3,.ab-watch .vid h3 a{color:#FFFFFF;font-size:15px;line-height:1.3}
 </style><style id="ca-newsroom">
 /* Canada, newsroom style not government style (Hannah, Fri Oct 30, 2026: "With the Canadian flag, can you make it
    less government looking, the Canada section?"). The official flag red (#D80621), the stiff flag leaf, the red-and-white
@@ -5376,6 +5384,12 @@ header.site { border-bottom: 0; }
     el.textContent = 'Clips checked ' + new Date(t).toLocaleTimeString('en-US', { timeZone: 'America/Toronto', hour: 'numeric', minute: '2-digit' }).replace('AM', 'a.m.').replace('PM', 'p.m.') + ' ET';
     el.hidden = false;
   })();
+  // one Watch card (used by Watch and by "Watch this story" under the top story)
+  function vidCard(v) { return '<article class="vid"><a class="vt" href="' + esc(v.u) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + (MEDIA[slotId(v.u)] ? shot(slotId(v.u)) : v.img ? photo(v.img, v.pic, v.t, v.o) : netCard(v)) +
+      '<span class="pb' + (v.live ? ' live' : '') + '">' + (v.live ? 'Live' : v.d ? esc(v.d) : 'Video') + '</span></a>' +
+      '<a class="bigplay" href="' + esc(vurl(v.u)) + '" target="_blank" rel="noopener" aria-label="Play on ' + esc(v.o) + ': ' + esc(vTitle(v)) + '"><svg width="30" height="30" viewBox="0 0 24 24" fill="#2B1B54" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></a>' +
+      '<span class="src">' + (vNew(v) ? '<b class="vnew">New</b>' : '') + esc(v.o) + ' <span class="plays">· ' + (vRec(v) ? 'recording of a live stream that has ended · ' : '') + 'plays on their site &#8599;</span></span><h3><a href="' + esc(v.u) + '" target="_blank" rel="noopener">' + esc(vTitle(v)) + '</a></h3><span class="when">' + esc(vDay(v)) + '</span>' + addBtn(slotId(v.u)) + '</article>'; }
+  window.PAL_vidCard = vidCard;
   function showVids(r) {
     curV = r;
     const all = vids.filter((v) => r === 'all' || (r === 'midterms' ? v.m : r === 'life' ? v.k === 'life' : v.r === r));
@@ -5385,10 +5399,7 @@ header.site { border-bottom: 0; }
     let recent = ranked.filter((v) => clipAge(v) <= WATCH_DAYS), older = ranked.filter((v) => clipAge(v) > WATCH_DAYS);
     if (recent.length < WATCH_MIN) { const top = older.slice(0, WATCH_MIN - recent.length); recent = recent.concat(top); older = older.slice(top.length); }
     const list = vOlderOpen ? recent.concat(older) : recent;
-    $('vids').innerHTML = list.map((v) => '<article class="vid"><a class="vt" href="' + esc(v.u) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + (MEDIA[slotId(v.u)] ? shot(slotId(v.u)) : v.img ? photo(v.img, v.pic, v.t, v.o) : netCard(v)) +
-      '<span class="pb' + (v.live ? ' live' : '') + '">' + (v.live ? 'Live' : v.d ? esc(v.d) : 'Video') + '</span></a>' +
-      '<a class="bigplay" href="' + esc(vurl(v.u)) + '" target="_blank" rel="noopener" aria-label="Play on ' + esc(v.o) + ': ' + esc(vTitle(v)) + '"><svg width="30" height="30" viewBox="0 0 24 24" fill="#2B1B54" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></a>' +
-      '<span class="src">' + (vNew(v) ? '<b class="vnew">New</b>' : '') + esc(v.o) + ' <span class="plays">· ' + (vRec(v) ? 'recording of a live stream that has ended · ' : '') + 'plays on their site &#8599;</span></span><h3><a href="' + esc(v.u) + '" target="_blank" rel="noopener">' + esc(vTitle(v)) + '</a></h3><span class="when">' + esc(vDay(v)) + '</span>' + addBtn(slotId(v.u)) + '</article>').join('');
+    $('vids').innerHTML = list.map(vidCard).join('');
     // the older clips, one tap away
     let ob = $('vidsOlder');
     if (!ob) { ob = document.createElement('button'); ob.id = 'vidsOlder'; ob.type = 'button'; ob.className = 'vids-older'; $('vids').after(ob);
@@ -5398,6 +5409,32 @@ header.site { border-bottom: 0; }
     ob.setAttribute('aria-expanded', String(vOlderOpen));
     wirePhotos();
   }
+  // WATCH THIS STORY (Hannah, Mon Nov 9, 2026: "Under the top news story, can you put a watch section like we have
+  // below, but just include the watch of that story"). Under each top story: the Watch cards for that story only, newest
+  // first, from the last two days. A clip belongs to the story when its title shares two of the story's own words, or
+  // one of its names (Hegseth, Massie) that isn't an everyday political word (Trump, Carney, Republican ...).
+  const SW_COMMON = new Set('trump carney republican republicans democrat democrats liberal liberals conservative conservatives ndp canada canadian canadians american americans president minister prime government house senate congress ottawa washington federal provincial premier police court news live video update says'.split(' '));
+  window.PAL_storyWatch = function (sec, stories) {
+    sec.querySelectorAll('.ab-watch').forEach((x) => x.remove());
+    const used = new Set();
+    (stories || []).forEach((st) => {
+      const art = sec.querySelector('.ab-story[data-key="' + CSS.escape(st.key) + '"]'); if (!art) return;
+      const words = new Set((st.words || []).map((x) => String(x).toLowerCase()));
+      const names = new Set((String(st.title || '').match(/\b[A-Z][a-z’'-]{3,}/g) || []).map((x) => x.toLowerCase().replace(/[’']s$/, '')).filter((x) => !SW_COMMON.has(x)));
+      const hits = vids.filter((v) => {
+        if (used.has(v.u) || clipAge(v) > WATCH_DAYS) return false;
+        const t = new Set(String(v.t || '').toLowerCase().match(/[a-z0-9]+/g) || []);
+        const shared = [...words].filter((x) => t.has(x));
+        return shared.length >= 2 || shared.some((x) => names.has(x) && !SW_COMMON.has(x)) || [...names].some((x) => x.length >= 5 && t.has(x));
+      }).sort((a, b) => (clipDay(b) || '').localeCompare(clipDay(a) || '') || (Date.parse(b.added || 0) || 0) - (Date.parse(a.added || 0) || 0)).slice(0, 8);
+      if (!hits.length) return;
+      hits.forEach((v) => used.add(v.u));
+      const box = document.createElement('div'); box.className = 'ab-watch';
+      box.innerHTML = '<p class="ab-watch-h"><svg class="pn-ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10 9.5v5l4.5-2.5z" fill="currentColor"/></svg>Watch this story <span class="pn-n">' + hits.length + (hits.length === 1 ? ' clip' : ' clips') + '</span></p><div class="vids">' + hits.map(vidCard).join('') + '</div>';
+      art.appendChild(box);
+    });
+    try { wirePhotos(); } catch (e) {}
+  };
   // An event's own Watch button goes once the event is over (Hannah, Mon Nov 9, 2026: "in watch the button for US
   // midterms is still there. I dont think it needs to be anymore"): a button for an event carries data-until, the last
   // Eastern date it is needed, and hides after it. Give the next event's button (an election, a summit) a data-until too.
@@ -6905,6 +6942,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     sec.classList.toggle('solo', list.length === 1);  // a big news day: the big story stands alone (Nov 3, 2026)
     if (window.PAL_orderTop) window.PAL_orderTop();  // Live coverage under the Breaking story (Nov 3, 2026)
     soloLayout();
+    try { if (window.PAL_storyWatch) window.PAL_storyWatch(sec, list); } catch (e) { console.warn('story watch', e); }
   }
   // The lead slot under the top two (Hannah, Wed Oct 28, 2026: "ensure we have the top news at the top ... update
   // regularly"): when its hand-written story has not been updated for LEAD_STALE_HOURS, the next biggest story from the
@@ -6953,6 +6991,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     V.unshift.apply(V, add);
     try { window.PAL_showVids(); } catch (e) {}
     try { window.PAL_vfAge && window.PAL_vfAge(); } catch (e) {}
+    try { const sec = document.getElementById('autoBreaking'); if (sec && !sec.hidden && window.PAL_storyWatch && AUTO.d.auto) window.PAL_storyWatch(sec, (AUTO.d.auto.stories || []).slice(0, AUTO.d.auto.top_n || 2)); } catch (e) {}
     const el = document.getElementById('vidsChecked'); if (el) { el.textContent = 'Clips checked ' + fmt(AUTO.d.checked) + ' ET'; el.hidden = false; }
   }
   // What America's newsrooms are leading with: the top story in each U.S. newsroom's top-stories feed, in its own words.
