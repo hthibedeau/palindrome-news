@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-10T04:07:27.067092+00:00",
- "checkedLabel": "Mon 11:07 p.m.",
+ "checked": "2026-11-10T04:17:26.680045+00:00",
+ "checkedLabel": "Mon 11:17 p.m.",
  "stories": [
   {
    "key": "top",
@@ -74,6 +74,24 @@
  ],
  "wire": [
   [
+   "Mon 11:09 p.m.",
+   "U.S.",
+   "Trump says more US attacks on Iran 'highly unlikely'",
+   "BBC News",
+   "https://www.bbc.co.uk/news/articles/cq5yny4nl2d3o?at_medium=RSS&at_campaign=rss",
+   "2026-11-10T04:09:16+00:00",
+   2
+  ],
+  [
+   "Mon 11:06 p.m.",
+   "Latest",
+   "Brampton man who pleaded guilty to murdering girlfriend, then shot himself, confined to wheelchair",
+   "Global News",
+   "https://globalnews.ca/news/12143617/brampton-man-murder-girlfriend-shot-himself-wheelchair/",
+   "2026-11-10T04:06:46+00:00",
+   1
+  ],
+  [
    "Mon 11:03 p.m.",
    "U.S.",
    "Haggerty leads Texas A&M’s high-scoring ways with 108-67 win",
@@ -102,10 +120,10 @@
   ],
   [
    "Mon 10:49 p.m.",
-   "World",
+   "Business",
    "Asian stocks rise after technology shares advance on Wall Street",
-   "Toronto Star",
-   "https://www.thestar.com/news/world/asian-stocks-rise-after-technology-shares-advance-on-wall-street/article_e4525e60-ad13-59e0-a57b-cd23651dcc12.html",
+   "The Canadian Press (via Winnipeg Free Press)",
+   "https://www.winnipegfreepress.com/business/2026/11/09/asian-stocks-rise-after-technology-shares-advance-on-wall-street",
    "2026-11-10T03:49:04+00:00",
    2
   ],
@@ -200,15 +218,6 @@
    1
   ],
   [
-   "Mon 10:15 p.m.",
-   "Latest",
-   "Rain delays the toss in the 3rd cricket ODI between New Zealand and India",
-   "The Canadian Press (via Winnipeg Free Press)",
-   "https://www.winnipegfreepress.com/uncategorized/2026/11/09/rain-delays-the-toss-in-the-3rd-cricket-odi-between-new-zealand-and-india",
-   "2026-11-10T03:15:57+00:00",
-   1
-  ],
-  [
    "Mon 10:07 p.m.",
    "World",
    "Beau Lamarre-Condon denies stalking Jesse Baird as double murder trial continues",
@@ -233,7 +242,7 @@
    "The Guardian",
    "https://www.theguardian.com/us-news/live/2026/nov/09/donald-trump-stephen-miller-immigration-midterms-iran-qatar-economy-latest-news-updates",
    "2026-11-10T03:00:40+00:00",
-   3
+   2
   ],
   [
    "Mon 10:00 p.m.",
@@ -288,15 +297,6 @@
    "https://www.ctvnews.ca/world/article/us-sues-lyft-alleges-it-denied-rides-to-passengers-with-service-dogs-and-wheelchairs/",
    "2026-11-10T02:40:53+00:00",
    3
-  ],
-  [
-   "Mon 9:38 p.m.",
-   "U.S.",
-   "Trump says Iran war is 'effectively over' militarily with further strikes unlikely",
-   "BBC News",
-   "https://www.bbc.co.uk/news/articles/cq5yny4nl2d3o?at_medium=RSS&at_campaign=rss",
-   "2026-11-10T02:38:00+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -329,17 +329,17 @@
  "leads": [
   {
    "score": 17,
-   "title": "Massie: ‘High probability’ Hegseth won’t make it to the end of the year",
-   "url": "https://thehill.com/policy/defense/6209701-massie-impeaches-hegseth/",
+   "title": "Trump says more US attacks on Iran 'highly unlikely'",
+   "url": "https://www.bbc.co.uk/news/articles/cq5yny4nl2d3o?at_medium=RSS&at_campaign=rss",
    "outlets": 15,
    "why": [],
    "theme": ""
   },
   {
-   "score": 15,
+   "score": 14,
    "title": "Could Nvidia survive without its ultra-powerful CEO, Jensen Huang?",
    "url": "https://www.cbc.ca/news/business/nvidia-survive-without-jensen-huang-ceo-9.7415544",
-   "outlets": 10,
+   "outlets": 9,
    "why": [
     "CBC News front #1"
    ],
@@ -363,14 +363,6 @@
    "why": [
     "CBC News front #2"
    ],
-   "theme": ""
-  },
-  {
-   "score": 8,
-   "title": "NTSB recovers cockpit voice recorder from Learjet crash site in Florida",
-   "url": "https://www.foxnews.com/us/ntsb-recovers-cockpit-voice-recorder-learjet-crash-site-florida",
-   "outlets": 6,
-   "why": [],
    "theme": ""
   },
   {
@@ -400,6 +392,14 @@
    "why": [
     "National Newswatch #4"
    ],
+   "theme": ""
+  },
+  {
+   "score": 6,
+   "title": "NTSB recovers cockpit voice recorder from Learjet crash site in Florida",
+   "url": "https://www.foxnews.com/us/ntsb-recovers-cockpit-voice-recorder-learjet-crash-site-florida",
+   "outlets": 6,
+   "why": [],
    "theme": ""
   },
   {
@@ -633,8 +633,8 @@
     "words": [
      "republican",
      "secretary",
-     "hegseth",
      "defence",
+     "hegseth",
      "massie",
      "pete"
     ],
@@ -957,12 +957,12 @@
    {
     "key": "auto-996587c2",
     "words": [
-     "jensen",
      "nvidia",
-     "ceo",
-     "fbi"
+     "jensen",
+     "fbi",
+     "ceo"
     ],
-    "score": 15,
+    "score": 14,
     "outlets": 6,
     "carriers": 7,
     "tag": "Breaking",
@@ -1223,7 +1223,7 @@
     ],
     "judgment": "national",
     "judgment_why": "National: leading 9 front pages (CBC News, Global News, The Globe and Mail, NBC News, CBS News, ABC News).",
-    "weight": 38.5
+    "weight": 37.5
    }
   ],
   "considered": [
@@ -1257,8 +1257,8 @@
     "url": "https://www.cbc.ca/news/business/nvidia-survive-without-jensen-huang-ceo-9.7415544",
     "rank": 2,
     "live": "",
-    "weight": 38.5,
-    "score": 15,
+    "weight": 37.5,
+    "score": 14,
     "independent": 6,
     "most_read": 0,
     "canada": "none",
@@ -1311,11 +1311,6 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "NTSB recovers cockpit voice recorder from Learjet crash site in Florida",
-    "score": 8,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
     "title": "Federal government budgets record $12M for Justin Trudeau's archives",
     "score": 7,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
@@ -1327,6 +1322,11 @@
    },
    {
     "title": "Federal Tracker: Liberals 44%, Conservatives 31%; Carney Approval at 65%",
+    "score": 6,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "NTSB recovers cockpit voice recorder from Learjet crash site in Florida",
     "score": 6,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
@@ -1356,14 +1356,14 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
+    "title": "Machinists union calls on Schumer to step aside as leader",
+    "score": 5,
+    "why": "not built: only 2 independent report(s) (2 sites)"
+   },
+   {
     "title": "Haggerty leads Texas A&M’s high-scoring ways with 108-67 win",
     "score": 5,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Todd Russell, Beaconsfield mine collapse survivor, dies aged 54 due to illness",
-    "score": 5,
-    "why": "not built: only 2 independent report(s) (2 sites)"
    }
   ],
   "moved": [],
@@ -1430,20 +1430,6 @@
    "img": "https://i.ytimg.com/vi/-lTkEETpoqI/hqdefault.jpg",
    "up": "2026-11-09",
    "added": "2026-11-10T01:20:10.985459+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "Tu44ea2x108",
-   "r": "ca",
-   "o": "CityNews",
-   "t": "More support needed for residents impact by New Westminster apartment fire",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=Tu44ea2x108",
-   "img": "https://i.ytimg.com/vi/Tu44ea2x108/hqdefault.jpg",
-   "up": "2026-11-09",
-   "added": "2026-11-10T01:30:11.152411+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1556,6 +1542,20 @@
    "img": "https://i.ytimg.com/vi/ljlH5Ok2Hts/hqdefault.jpg",
    "up": "2026-11-09",
    "added": "2026-11-10T04:07:27.067092+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "jG8MMjCct3U",
+   "r": "ca",
+   "o": "CityNews",
+   "t": "Stellantis signs deal with Roshel to sell Brampton Assembly Plant",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=jG8MMjCct3U",
+   "img": "https://i.ytimg.com/vi/jG8MMjCct3U/hqdefault.jpg",
+   "up": "2026-11-09",
+   "added": "2026-11-10T04:17:26.680045+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1714,20 +1714,6 @@
    "geo": "unknown"
   },
   {
-   "id": "j26rnlBMZto",
-   "r": "us",
-   "o": "Fox News",
-   "t": "Watters: This is just Dems feeding their base a SCALP",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=j26rnlBMZto",
-   "img": "https://i.ytimg.com/vi/j26rnlBMZto/hqdefault.jpg",
-   "up": "2026-11-09",
-   "added": "2026-11-10T03:01:35.713971+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "f4jLmH1jhbA",
    "r": "us",
    "o": "NBC News",
@@ -1812,20 +1798,6 @@
    "geo": "unknown"
   },
   {
-   "id": "vEFxbxluotI",
-   "r": "us",
-   "o": "ABC News",
-   "t": "Gov. Sarah Huckabee Sanders on Trump, the press, and her new book",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=vEFxbxluotI",
-   "img": "https://i.ytimg.com/vi/vEFxbxluotI/hqdefault.jpg",
-   "up": "2026-11-09",
-   "added": "2026-11-10T03:47:27.330335+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "qVTkVRj0veY",
    "r": "us",
    "o": "ABC News",
@@ -1840,10 +1812,38 @@
    "geo": "unknown"
   },
   {
+   "id": "Z_IOjKOc_hU",
+   "r": "us",
+   "o": "ABC News",
+   "t": "Inside the revolution to get troops into tip-top shape",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=Z_IOjKOc_hU",
+   "img": "https://i.ytimg.com/vi/Z_IOjKOc_hU/hqdefault.jpg",
+   "up": "2026-11-09",
+   "added": "2026-11-10T04:17:26.680045+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "UboCdt95ICA",
+   "r": "us",
+   "o": "Fox News",
+   "t": "BREAKING: California voters reject billionaire tax",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=UboCdt95ICA",
+   "img": "https://i.ytimg.com/vi/UboCdt95ICA/hqdefault.jpg",
+   "up": "2026-11-09",
+   "added": "2026-11-10T04:17:26.680045+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
    "id": "uNu6AzuwXsU",
    "r": "world",
    "o": "Reuters",
-   "t": "Was Nvidia CEO Jensen Huang targeted by foreign intelligence? | Reuters World News",
+   "t": "Why is NATO worried ahead of Russia-Ukraine peace talks? | Reuters World News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=uNu6AzuwXsU",
@@ -1857,7 +1857,7 @@
    "id": "Z5f-fyfBGuU",
    "r": "world",
    "o": "Sky News",
-   "t": "Tech firms must be fined 'billions' to curb AI and social media risks, says whistleblower",
+   "t": "Ministers must 'fight' tech giants to curb AI and social media risks, says whistleblower",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=Z5f-fyfBGuU",
@@ -1955,7 +1955,7 @@
    "id": "aU_fQ5kKFVY",
    "r": "world",
    "o": "BBC News",
-   "t": "Did China honeytrap a major US tech boss for AI secrets? | BBC News",
+   "t": "Did an AI world leader get honeytrapped by a Chinese spy? | BBC News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=aU_fQ5kKFVY",
@@ -2716,11 +2716,11 @@
    "tz": "America/New_York",
    "world": false,
    "w": "Attacks",
-   "u": "https://thehill.com/homenews/administration/6209668-trump-defends-hegseth-impeachment/",
-   "title": "Trump says Hegseth should be praised, not impeached",
-   "outlet": "The Hill",
-   "t": "Mon 10:05 p.m.",
-   "hot": false
+   "u": "https://www.bbc.co.uk/news/articles/cq5yny4nl2d3o?at_medium=RSS&at_campaign=rss",
+   "title": "Trump says more US attacks on Iran 'highly unlikely'",
+   "outlet": "BBC News",
+   "t": "Mon 11:09 p.m.",
+   "hot": true
   },
   {
    "city": "Beijing",
@@ -2731,17 +2731,6 @@
    "title": "Trump says FBI investigating Nvidia boss's affair with alleged Chinese spy",
    "outlet": "BBC News",
    "t": "Mon 10:58 p.m.",
-   "hot": true
-  },
-  {
-   "city": "New Delhi",
-   "tz": "Asia/Kolkata",
-   "world": true,
-   "w": "Weather",
-   "u": "https://www.winnipegfreepress.com/uncategorized/2026/11/09/rain-delays-the-toss-in-the-3rd-cricket-odi-between-new-zealand-and-india",
-   "title": "Rain delays the toss in the 3rd cricket ODI between New Zealand and India",
-   "outlet": "The Canadian Press (via Winnipeg Free Press)",
-   "t": "Mon 10:15 p.m.",
    "hot": true
   },
   {
@@ -2759,16 +2748,16 @@
  "bigweek": [],
  "desks": [
   {
-   "desk": "us",
-   "pic": "podium",
-   "t": "Mon 11:00 p.m.",
-   "iso": "2026-11-10T04:00:33+00:00",
-   "title": "Massie: ‘High probability’ Hegseth won’t make it to the end of the year",
-   "summary": "",
-   "outlet": "The Hill, The Guardian, Al Jazeera, Kyiv Independent, The Japan Times, CTV News (CP), CTV News, BBC News, CBC News",
+   "desk": "world",
+   "pic": "globe",
+   "t": "Mon 11:09 p.m.",
+   "iso": "2026-11-10T04:09:16+00:00",
+   "title": "Trump says more US attacks on Iran 'highly unlikely'",
+   "summary": "The president says the US is keeping \"status quo\" with Iran but remains “locked and loaded” should the situation in the Middle East change.",
+   "outlet": "BBC News, The Hill, The Guardian, Al Jazeera, Kyiv Independent, The Japan Times, CTV News (CP), CTV News, CBC News",
    "n": 9,
-   "url": "https://thehill.com/policy/defense/6209701-massie-impeaches-hegseth/",
-   "img": ""
+   "url": "https://www.bbc.co.uk/news/articles/cq5yny4nl2d3o?at_medium=RSS&at_campaign=rss",
+   "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/6017/live/b94816e0-dca5-11f1-b441-2b33b063138f.jpg"
   },
   {
    "desk": "world",
@@ -2809,13 +2798,13 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Mon 10:15 p.m.",
-   "iso": "2026-11-10T03:15:57+00:00",
-   "title": "Rain delays the toss in the 3rd cricket ODI between New Zealand and India",
-   "summary": "HAMILTON, New Zealand (AP) — Rain has delayed the start of the third one-day cricket international between New Zealand and India Tuesday at Seddon Park.",
-   "outlet": "The Canadian Press (via Winnipeg Free Press), BBC News, The Guardian",
+   "t": "Mon 11:07 p.m.",
+   "iso": "2026-11-10T04:07:30+00:00",
+   "title": "Machinists union calls on Schumer to step aside as leader",
+   "summary": "",
+   "outlet": "Politico, The Hill, Toronto Star (AP)",
    "n": 3,
-   "url": "https://www.winnipegfreepress.com/uncategorized/2026/11/09/rain-delays-the-toss-in-the-3rd-cricket-odi-between-new-zealand-and-india",
+   "url": "https://www.politico.com/live-updates/2026/11/09/congress/union-sours-on-schumer-01157983",
    "img": ""
   },
   {
@@ -2833,18 +2822,6 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Mon 7:34 p.m.",
-   "iso": "2026-11-10T00:34:22+00:00",
-   "title": "Chris Van Hollen not closing the door on Schumer challenge",
-   "summary": "",
-   "outlet": "Politico, The Hill, Toronto Star (AP)",
-   "n": 3,
-   "url": "https://www.politico.com/live-updates/2026/11/09/congress/van-hollen-is-still-thinking-01157732",
-   "img": ""
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
    "t": "Mon 6:47 p.m.",
    "iso": "2026-11-09T23:47:08+00:00",
    "title": "Recount flips squeaker election night win for NDP in Burnaby South-Metrotown to Conservatives",
@@ -2853,18 +2830,6 @@
    "n": 3,
    "url": "https://vancouversun.com/news/elections-bc-recount-flips-squeaker-election-night-win-for-ndp-in-burnaby-south-metrotown-to-conservatives",
    "img": ""
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Mon 6:28 p.m.",
-   "iso": "2026-11-09T23:28:53+00:00",
-   "title": "Judge denies motion to dismiss Lindsay Clancy's murder case",
-   "summary": "The ruling means the case can move forward, possibly with reduced charges in a new trial.",
-   "outlet": "BBC News, PBS NewsHour (AP), CBC News (Reuters)",
-   "n": 3,
-   "url": "https://www.bbc.co.uk/news/articles/ck1l3le7q29vo?at_medium=RSS&at_campaign=rss",
-   "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/f13d/live/216524b0-dc7f-11f1-ba95-5f07efd49f42.jpg"
   },
   {
    "desk": "world",
@@ -2915,6 +2880,18 @@
    "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/florida-plane-crash-voice-recorder.png"
   },
   {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Mon 8:55 p.m.",
+   "iso": "2026-11-10T01:55:22+00:00",
+   "title": "Qantas to outsource 850 local jobs with most roles moving to India",
+   "summary": "The Australian airline said the move was aimed at modernising its IT systems and noted the impact of AI.",
+   "outlet": "BBC News, The Guardian",
+   "n": 2,
+   "url": "https://www.bbc.co.uk/news/articles/cry838v4qzvyo?at_medium=RSS&at_campaign=rss",
+   "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/47eb/live/926fac30-dca6-11f1-86c1-89409a3a3bd9.jpg"
+  },
+  {
    "desk": "politics",
    "pic": "parliament",
    "t": "Mon 7:53 p.m.",
@@ -2945,10 +2922,10 @@
    "iso": "2026-11-10T03:49:04+00:00",
    "title": "Asian stocks rise after technology shares advance on Wall Street",
    "summary": "HONG KONG (AP) — Asian stocks advanced Tuesday after U.S. stocks rallied, recovering most of their big losses from last week.",
-   "outlet": "Toronto Star + The Canadian Press (via Winnipeg Free Press)",
+   "outlet": "The Canadian Press (via Winnipeg Free Press) + Toronto Star",
    "n": 1,
-   "url": "https://www.thestar.com/news/world/asian-stocks-rise-after-technology-shares-advance-on-wall-street/article_e4525e60-ad13-59e0-a57b-cd23651dcc12.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/6/21/6219c0e6-4ebf-5992-bbd0-9cf9654fc700/6af295970137d.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
+   "url": "https://www.winnipegfreepress.com/business/2026/11/09/asian-stocks-rise-after-technology-shares-advance-on-wall-street",
+   "img": ""
   },
   {
    "desk": "business",
@@ -2973,6 +2950,18 @@
    "n": 1,
    "url": "https://www.winnipegfreepress.com/uncategorized/2026/11/09/jason-crowe-jr-sets-missouri-single-game-freshman-scoring-record-in-96-58-rout-of-siu-edwardsville",
    "img": ""
+  },
+  {
+   "desk": "us",
+   "pic": "podium",
+   "t": "Mon 10:06 p.m.",
+   "iso": "2026-11-10T03:06:00+00:00",
+   "title": "Honda to spend $3 billion on new hybrid car plant in Ohio",
+   "summary": "The automaker announced on Monday the new plant will start production in 2029 and expand its output by 240,000 vehicles a year.",
+   "outlet": "The Japan Times",
+   "n": 1,
+   "url": "https://www.japantimes.co.jp/business/2026/11/10/companies/honda-new-hybrid-plant-ohio/",
+   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/10/573103.jpg?v=3.1"
   },
   {
    "desk": "politics",
@@ -3065,7 +3054,7 @@
    "iso": "2026-11-10T00:50:13+00:00",
    "title": "Feds extend tariff relief program for Canadian firms",
    "summary": "Sask. mining and energy firms get a boost as Ottawa extends its tariff relief program on U.S. imports, expanding duty remissions to include vital non-steel equipment used in resource extraction.",
-   "outlet": "CKOM / PAnow + CP24 + BNN Bloomberg + Global News",
+   "outlet": "CKOM / PAnow + Global News (CP)",
    "n": 1,
    "url": "https://www.ckom.com/2026/11/09/feds-extend-tariff-relief-program-for-canadian-firms/",
    "img": "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/648/files/2026/11/truck-cp-110926.jpg"
@@ -3459,7 +3448,7 @@
     "Trump says FBI investigating Nvidia boss's affair with alleged Chinese spy",
     "Zoe Kleinman: Nvidia CEO's affair will cause ripples across US and beyond",
     "'Cruise for life' ship seized in Singapore",
-    "Trump says Iran war is 'effectively over' militarily with further strikes unlikely",
+    "Trump says more US attacks on Iran 'highly unlikely'",
     "Epstein associate who still runs model agency 'put me in danger' says abuse survivor",
     "Ukraine peace talks resume with 'some flexibility' by warring sides, US officials say"
    ],
@@ -3522,7 +3511,7 @@
     "url": "https://www.youtube.com/watch?v=71Eq2VrASig",
     "img": "https://i.ytimg.com/vi/71Eq2VrASig/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "243",
+    "watching": "228",
     "rolling": true
    }
   ],
@@ -3540,6 +3529,10 @@
      {
       "net": "C-SPAN",
       "url": "https://www.youtube.com/watch?v=IPS-usnDhMc"
+     },
+     {
+      "net": "Forbes Breaking News",
+      "url": "https://www.youtube.com/watch?v=tu6j0RRdvfQ"
      }
     ],
     "reports": [
@@ -3630,16 +3623,50 @@
  "pm": [],
  "blogs_auto": [
   {
+   "net": "Politico",
+   "story": "Machinists union calls on Schumer to step aside as leader",
+   "title": "Machinists union calls on Schumer to step aside as leader",
+   "url": "https://www.politico.com/live-updates/2026/11/09/congress/union-sours-on-schumer-01157983",
+   "updated": "2026-11-10T04:07:30+00:00",
+   "ended": false,
+   "img": ""
+  },
+  {
    "net": "Al Jazeera",
    "story": "Iran war live: Iran demands US ‘surrender’ to its conditions",
    "title": "Iran war live: Iran demands US ‘surrender’ to its conditions",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/9/iran-war-live-trump-says-war-effectively-over-iran-demands-surrender?traffic_source=rss",
-   "updated": "2026-11-10T04:00:00+00:00",
+   "updated": "2026-11-10T04:15:00+00:00",
    "ended": false,
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6af255420496-1794266434_707447-1794267064.jpg?resize=1200%2C630&quality=80"
   }
  ],
  "related": {
+  "auto-cf87bac3": {
+   "ties": [
+    "hegseth",
+    "pete",
+    "massie"
+   ],
+   "stories": [
+    {
+     "t": "Mon 6:00 a.m.",
+     "iso": "2026-11-09T11:00:00+00:00",
+     "outlet": "The Hill",
+     "title": "Pete Hegseth? Haley Stevens? Hakeem Jeffries faces slew of lame-duck challenges",
+     "url": "https://thehill.com/the-120/6205327-jeffries-democrat-house-majority-tests/",
+     "tie": "Pete"
+    }
+   ],
+   "views": [
+    {
+     "outlet": "C.D. Howe Institute",
+     "kind": "Think tank",
+     "title": "Making Sense of Defence Spending and Canada’s NATO Pledge in Budget 2026",
+     "url": "https://cdhowe.org/publication/making-sense-of-defence-spending-and-canadas-nato-pledge-in-budget-2026/"
+    }
+   ]
+  },
   "auto-996587c2": {
    "ties": [
     "huang"
