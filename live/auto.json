@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-10T07:08:54.468609+00:00",
- "checkedLabel": "Tue 2:08 a.m.",
+ "checked": "2026-11-10T07:18:54.983370+00:00",
+ "checkedLabel": "Tue 2:18 a.m.",
  "stories": [
   {
    "key": "top",
@@ -57,6 +57,15 @@
  ],
  "wire": [
   [
+   "Tue 2:16 a.m.",
+   "Business",
+   "China’s trade surplus soars past $1 trillion as AI boom powers exports",
+   "The Japan Times",
+   "https://www.japantimes.co.jp/business/2026/11/10/tech/china-trade-surplus-1-trillion-ai/",
+   "2026-11-10T07:16:00+00:00",
+   2
+  ],
+  [
    "Tue 2:05 a.m.",
    "World",
    "Australia tightens AI oversight rules after OpenAI government breach",
@@ -72,6 +81,15 @@
    "ABC News",
    "https://abcnews.com/Politics/californias-prop-40-billionaires-tax-measure-rejected-ap/story?id=137999519",
    "2026-11-10T07:02:19+00:00",
+   1
+  ],
+  [
+   "Tue 2:00 a.m.",
+   "Business",
+   "Author Jojo Moyes among UK travellers at risk of EU ban amid digital border system glitches",
+   "The Guardian",
+   "https://www.theguardian.com/business/2026/nov/10/jojo-moyes-uk-travellers-eu-ban-digital-border-system-ees",
+   "2026-11-10T07:00:32+00:00",
    1
   ],
   [
@@ -262,24 +280,6 @@
    "https://www.aljazeera.com/video/newsfeed/2026/11/10/polands-political-rivals-join-march-of-silence-for-shooting-victims?traffic_source=rss",
    "2026-11-10T05:12:54+00:00",
    1
-  ],
-  [
-   "Tue 12:11 a.m.",
-   "U.S.",
-   "Hegseth is set for his first Pentagon news briefing since May as he faces possible impeachment",
-   "Toronto Star",
-   "https://www.thestar.com/news/world/united-states/hegseth-is-set-for-his-first-pentagon-news-briefing-since-may-as-he-faces-possible-impeachment/article_18b7252a-c2a3-5073-a074-b09ce81fe5ac.html",
-   "2026-11-10T05:11:50+00:00",
-   1
-  ],
-  [
-   "Tue 12:08 a.m.",
-   "World",
-   "Pope Leo draws 2.5 million people during historic Argentina Mass",
-   "Al Jazeera",
-   "https://www.aljazeera.com/video/newsfeed/2026/11/10/pope-leo-draws-2-5-million-people-during-historic-argentina-mass?traffic_source=rss",
-   "2026-11-10T05:08:30+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -341,12 +341,22 @@
    "theme": ""
   },
   {
-   "score": 13,
+   "score": 12,
    "title": "Carney government considers lifting ban on offshore oil and gas exploration in the Western Arctic",
    "url": "https://t.co/bCSFlMmYRp",
-   "outlets": 5,
+   "outlets": 4,
    "why": [
     "National Newswatch #1"
+   ],
+   "theme": ""
+  },
+  {
+   "score": 12,
+   "title": "California voters reject proposed billionaire tax",
+   "url": "https://www.cbc.ca/news/world/california-billionaire-tax-rejected-9.7415985",
+   "outlets": 7,
+   "why": [
+    "CBC News front #3"
    ],
    "theme": ""
   },
@@ -363,30 +373,10 @@
   },
   {
    "score": 8,
-   "title": "California voters reject proposed billionaire tax",
-   "url": "https://www.cbc.ca/news/world/california-billionaire-tax-rejected-9.7415985",
-   "outlets": 5,
-   "why": [
-    "CBC News front #3"
-   ],
-   "theme": ""
-  },
-  {
-   "score": 8,
    "title": "U.S. aircraft evacuated from second U.K. base due to Iran threat, WSJ reports",
    "url": "https://www.japantimes.co.jp/news/2026/11/10/world/us-uk-base-evacuated-iran/",
    "outlets": 6,
    "why": [],
-   "theme": ""
-  },
-  {
-   "score": 7,
-   "title": "Federal Tracker: Liberals 44%, Conservatives 31%; Carney Approval at 65%",
-   "url": "https://press.liaisonstrategies.ca/federal-tracker-liberals-44-conservatives-31-carney-approval-at-65-november-9-2026/",
-   "outlets": 4,
-   "why": [
-    "National Newswatch #4"
-   ],
    "theme": ""
   },
   {
@@ -401,6 +391,14 @@
    "score": 7,
    "title": "Honda Canada announces plans to retool Alliston, Ont., plant for hybrid production",
    "url": "https://www.cbc.ca/news/canada/toronto/honda-alliston-plant-hybrid-production-9.7415303",
+   "outlets": 7,
+   "why": [],
+   "theme": ""
+  },
+  {
+   "score": 7,
+   "title": "Court filing alleges Trump adviser received cash, luxury gifts from foreign interests",
+   "url": "https://www.politico.com/news/2026/11/09/lawsuit-alex-bruesewitz-foreign-entities-derek-utley-01157561",
    "outlets": 7,
    "why": [],
    "theme": ""
@@ -849,8 +847,8 @@
     "why_judged": "Regional: affects some people; carried beyond one city."
    },
    {
-    "title": "Trump after meeting with Qatari PM says he believes war with Iran is militarily 'effectively over'",
-    "url": "https://www.thestar.com/news/world/united-states/trump-after-meeting-with-qatari-pm-says-he-believes-war-with-iran-is-militarily-effectively-over/article_c2f00056-52e9-56fc-851c-918b8aff6e39.html",
+    "title": "Trump signals ‘positive momentum’ with Iran after meeting Qatari PM",
+    "url": "https://www.aljazeera.com/video/newsfeed/2026/11/10/trump-signals-positive-momentum-with-iran-after-meeting-qatari-pm?traffic_source=rss",
     "rank": 5,
     "live": "",
     "weight": 18.0,
@@ -868,9 +866,28 @@
     "why_judged": "National: affects many people; carried beyond one city."
    },
    {
+    "title": "Australia tightens AI oversight rules after OpenAI government breach",
+    "url": "https://www.aljazeera.com/news/2026/11/10/australia-tightens-ai-oversight-rules-after-openai-government-breach?traffic_source=rss",
+    "rank": 6,
+    "live": "",
+    "weight": 16.5,
+    "score": 6,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": false,
+    "fronts": 0,
+    "fronts_who": [],
+    "rule": "No Canadian tie",
+    "carriers": 3,
+    "judgment": "regional",
+    "why_judged": "Regional: affects some people; carried beyond one city."
+   },
+   {
     "title": "Supreme Court clears the way for border wall construction in Texas’s Big Bend to resume",
     "url": "https://www.thestar.com/news/world/united-states/supreme-court-clears-the-way-for-border-wall-construction-in-texas-s-big-bend-to-resume/article_0f1d2981-0c74-59cb-a9a9-2a73314c9315.html",
-    "rank": 6,
+    "rank": 7,
     "live": "",
     "weight": 8.0,
     "score": 7,
@@ -887,33 +904,11 @@
     "why_judged": "Regional: a single incident touching a few people; carried beyond one city."
    },
    {
-    "title": "Taiwan says China is conducting ‘area denial’ drills in Western Pacific",
-    "url": "https://www.japantimes.co.jp/news/2026/11/10/asia-pacific/taiwan-china-area-denial-pacific/",
-    "rank": 7,
-    "live": "",
-    "weight": 25.5,
-    "score": 13,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "tie",
-    "theme": "",
-    "top": false,
-    "fronts": 2,
-    "fronts_who": [
-     "Toronto Star",
-     "The Globe and Mail"
-    ],
-    "rule": "From abroad, tied to Canada",
-    "carriers": 3,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried beyond one city."
-   },
-   {
     "title": "Federal budget promises relief for Yukoners, but local rollout remains unclear",
     "url": "https://yukon-news.com/2026/11/09/federal-budget-offers-yukon-relief-but-local-rollout-remains-unclear/",
     "rank": 8,
     "live": "",
-    "weight": 18.5,
+    "weight": 18.0,
     "score": 7,
     "independent": 4,
     "most_read": 0,
@@ -923,9 +918,19 @@
     "fronts": 0,
     "fronts_who": [],
     "rule": "No Canadian tie",
-    "carriers": 7,
+    "carriers": 6,
     "judgment": "national",
     "why_judged": "National: affects many people; carried across the country (4 cities)."
+   },
+   {
+    "title": "Carney government considers lifting ban on offshore oil and gas exploration in the Western Arctic",
+    "score": 12,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "California voters reject proposed billionaire tax",
+    "score": 12,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
     "title": "Hope is finally back in America, and did the U.S. just leave Canadian Conservatives behind?",
@@ -933,19 +938,19 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "California voters reject proposed billionaire tax",
-    "score": 8,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Federal Tracker: Liberals 44%, Conservatives 31%; Carney Approval at 65%",
-    "score": 7,
-    "why": "not built: only 1 independent report(s) (4 sites)"
-   },
-   {
     "title": "Honda Canada announces plans to retool Alliston, Ont., plant for hybrid production",
     "score": 7,
     "why": "not built: only 1 independent report(s) (7 sites)"
+   },
+   {
+    "title": "Federal Tracker: Liberals 44%, Conservatives 31%; Carney Approval at 65%",
+    "score": 6,
+    "why": "not built: only 1 independent report(s) (3 sites)"
+   },
+   {
+    "title": "Russia's top independent newspaper closes under relentless government pressure",
+    "score": 6,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
   ],
   "moved": [],
@@ -982,7 +987,7 @@
      "alt": "Shoe store employee charged after alleged $72K theft from CrossIron Mills",
      "outlet": "CityNews Calgary",
      "url": "https://calgary.citynews.ca/2026/11/09/crossiron-theft-charges-airdrie-rcmp/",
-     "since": "2026-11-10T07:10:39.807968+00:00"
+     "since": "2026-11-10T07:20:36.851698+00:00"
     },
     "photo_seen": [
      "https://calgary.citynews.ca/wp-content/blogs.dir/sites/8/2026/11/09/Untitled-November-09-2026-at-11.21.55-1.png"
@@ -1099,157 +1104,6 @@
     "judgment": "local",
     "judgment_why": "Local: a single incident touching a few people; carried only by Calgary desks.",
     "weight": 5.5
-   },
-   {
-    "key": "auto-25fb7dda",
-    "words": [
-     "western"
-    ],
-    "score": 13,
-    "outlets": 3,
-    "carriers": 3,
-    "tag": "Developing",
-    "title": "Taiwan says China is conducting ‘area denial’ drills in Western Pacific",
-    "url": "https://www.japantimes.co.jp/news/2026/11/10/asia-pacific/taiwan-china-area-denial-pacific/",
-    "outlet": "The Japan Times",
-    "t": "Mon 10:46 p.m.",
-    "iso": "2026-11-10T03:46:00+00:00",
-    "summary": "Taiwan last week reported a rise in the number of Chinese air force aircraft around the island, though Beijing has not formally declared any drills.",
-    "first": {
-     "outlet": "Euronews",
-     "url": "https://www.euronews.com/2026/11/09/a-huge-explosion-at-a-steel-factory-in-western-turkey-has-left-at-least-17-people-dead-and",
-     "t": "Mon 3:14 p.m.",
-     "title": "A huge explosion at a steel factory in Western Turkey has left at least 17 people dead and 13 injured",
-     "iso": "2026-11-09T20:14:35+00:00"
-    },
-    "newest": "2026-11-10T03:46:00+00:00",
-    "photo": {
-     "src": "live/img/auto-25fb7dda-550c4f51c0.jpg",
-     "orig": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/10/573114.JPG?v=3.1",
-     "caption": "From: Taiwan says China is conducting ‘area denial’ drills in Western Pacific. — via The Japan Times",
-     "alt": "Taiwan says China is conducting ‘area denial’ drills in Western Pacific",
-     "outlet": "The Japan Times",
-     "url": "https://www.japantimes.co.jp/news/2026/11/10/asia-pacific/taiwan-china-area-denial-pacific/",
-     "since": "2026-11-10T07:10:37.447043+00:00"
-    },
-    "photo_seen": [
-     "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/10/573114.JPG?v=3.1"
-    ],
-    "photos": [
-     {
-      "src": "live/img/auto-25fb7dda-550c4f51c0.jpg",
-      "orig": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/10/573114.JPG?v=3.1",
-      "caption": "From: Taiwan says China is conducting ‘area denial’ drills in Western Pacific. — via The Japan Times",
-      "alt": "Taiwan says China is conducting ‘area denial’ drills in Western Pacific",
-      "outlet": "The Japan Times",
-      "url": "https://www.japantimes.co.jp/news/2026/11/10/asia-pacific/taiwan-china-area-denial-pacific/"
-     },
-     {
-      "src": "live/img/auto-25fb7dda-bd2b3d73b4.jpg",
-      "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/e/7f/e7f23ef0-bfa7-5c30-b2d8-06723c4a40bc/6af23bd2441fa.image.jpg?crop=1763%2C926%2C0%2C124&resize=1200%2C630&order=crop%2Cresize",
-      "caption": "From: Carney government considers lifting ban on offshore oil and gas exploration in the Western Arctic. — via Toronto Star",
-      "alt": "Carney government considers lifting ban on offshore oil and gas exploration in the Western Arctic",
-      "outlet": "Toronto Star",
-      "url": "https://www.thestar.com/politics/political-opinion/carney-government-considers-lifting-ban-on-offshore-oil-and-gas-exploration-in-the-western-arctic/article_9956a8e2-ad64-4dd0-be53-5710b1e5401b.html"
-     }
-    ],
-    "independent": 3,
-    "reports": [
-     {
-      "t": "Mon 10:46 p.m.",
-      "iso": "2026-11-10T03:46:00+00:00",
-      "outlet": "The Japan Times",
-      "title": "Taiwan says China is conducting ‘area denial’ drills in Western Pacific",
-      "url": "https://www.japantimes.co.jp/news/2026/11/10/asia-pacific/taiwan-china-area-denial-pacific/",
-      "desc": "Taiwan last week reported a rise in the number of Chinese air force aircraft around the island, though Beijing has not formally declared any drills."
-     },
-     {
-      "t": "Mon 4:45 p.m.",
-      "iso": "2026-11-09T21:45:00+00:00",
-      "outlet": "Toronto Star",
-      "title": "Carney government considers lifting ban on offshore oil and gas exploration in the Western Arctic",
-      "url": "https://www.thestar.com/politics/political-opinion/carney-government-considers-lifting-ban-on-offshore-oil-and-gas-exploration-in-the-western-arctic/article_9956a8e2-ad64-4dd0-be53-5710b1e5401b.html",
-      "desc": "The Carney government confirmed it is considering ‘potentially lifting the current moratorium on Arctic offshore oil and gas exploration in the Western Arctic.’"
-     },
-     {
-      "t": "Mon 3:14 p.m.",
-      "iso": "2026-11-09T20:14:35+00:00",
-      "outlet": "Euronews",
-      "title": "A huge explosion at a steel factory in Western Turkey has left at least 17 people dead and 13 injured",
-      "url": "https://www.euronews.com/2026/11/09/a-huge-explosion-at-a-steel-factory-in-western-turkey-has-left-at-least-17-people-dead-and",
-      "desc": "The explosion occurred when a crane lifting a boiler collapsed into a large industrial furnace, causing a huge fire. #EuropeNews"
-     }
-    ],
-    "sources": [
-     {
-      "t": "Mon 10:46 p.m.",
-      "primary": false,
-      "outlet": "The Japan Times",
-      "title": "Taiwan says China is conducting ‘area denial’ drills in Western Pacific",
-      "url": "https://www.japantimes.co.jp/news/2026/11/10/asia-pacific/taiwan-china-area-denial-pacific/",
-      "desc": "Taiwan last week reported a rise in the number of Chinese air force aircraft around the island, though Beijing has not formally declared any drills.",
-      "wire": "Reuters",
-      "by": [
-       {
-        "outlet": "The Japan Times",
-        "src": "Reuters",
-        "byline": "By  Ben Blanchard Reuters \n           By  Tom"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Mon 4:45 p.m.",
-      "primary": false,
-      "outlet": "Toronto Star",
-      "title": "Carney government considers lifting ban on offshore oil and gas exploration in the Western Arctic",
-      "url": "https://www.thestar.com/politics/political-opinion/carney-government-considers-lifting-ban-on-offshore-oil-and-gas-exploration-in-the-western-arctic/article_9956a8e2-ad64-4dd0-be53-5710b1e5401b.html",
-      "desc": "The Carney government confirmed it is considering ‘potentially lifting the current moratorium on Arctic offshore oil and gas exploration in the Western Arctic.’",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Toronto Star",
-        "src": "Torstar",
-        "byline": "own staff: bureau chief"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Mon 3:14 p.m.",
-      "primary": false,
-      "outlet": "Euronews",
-      "title": "A huge explosion at a steel factory in Western Turkey has left at least 17 people dead and 13 injured",
-      "url": "https://www.euronews.com/2026/11/09/a-huge-explosion-at-a-steel-factory-in-western-turkey-has-left-at-least-17-people-dead-and",
-      "desc": "The explosion occurred when a crane lifting a boiler collapsed into a large industrial furnace, causing a huge fire. #EuropeNews",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Euronews",
-        "src": "Euronews",
-        "byline": "[ { \"@type\": \"Person\", \"familyName\": \"Kirchheim\", \"givenName\": \"Anna\", \"name\": \"Anna Kirchheim\", , \"worksFor\": { \"@id\": "
-       }
-      ],
-      "copies": []
-     }
-    ],
-    "replaces_top": false,
-    "events": [],
-    "theme": "",
-    "canada": "tie",
-    "canus": false,
-    "incoherent": true,
-    "popular": 0,
-    "us_election": false,
-    "fronts": 2,
-    "fronts_ca": 2,
-    "fronts_who": [
-     "Toronto Star",
-     "The Globe and Mail"
-    ],
-    "judgment": "national",
-    "judgment_why": "National: affects many people; carried beyond one city.",
-    "weight": 25.5
    }
   ],
   "passed_over": [
@@ -1262,8 +1116,8 @@
     "url": "https://abcnews.com/International/wireStory/g7-attention-paris-turns-ukraine-us-mediated-talks-138001993"
    },
    {
-    "title": "Trump after meeting with Qatari PM says he believes war with Iran is militarily 'effectively over'",
-    "url": "https://www.thestar.com/news/world/united-states/trump-after-meeting-with-qatari-pm-says-he-believes-war-with-iran-is-militarily-effectively-over/article_c2f00056-52e9-56fc-851c-918b8aff6e39.html"
+    "title": "Trump signals ‘positive momentum’ with Iran after meeting Qatari PM",
+    "url": "https://www.aljazeera.com/video/newsfeed/2026/11/10/trump-signals-positive-momentum-with-iran-after-meeting-qatari-pm?traffic_source=rss"
    },
    {
     "title": "Supreme Court clears the way for border wall construction in Texas’s Big Bend to resume",
@@ -1272,6 +1126,10 @@
    {
     "title": "Federal budget promises relief for Yukoners, but local rollout remains unclear",
     "url": "https://yukon-news.com/2026/11/09/federal-budget-offers-yukon-relief-but-local-rollout-remains-unclear/"
+   },
+   {
+    "title": "Australia tightens AI oversight rules after OpenAI government breach",
+    "url": "https://www.aljazeera.com/news/2026/11/10/australia-tightens-ai-oversight-rules-after-openai-government-breach?traffic_source=rss"
    }
   ]
  },
@@ -1383,7 +1241,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=jG8MMjCct3U",
    "img": "https://i.ytimg.com/vi/jG8MMjCct3U/hqdefault.jpg",
-   "up": "2026-11-10",
+   "up": "2026-11-09",
    "added": "2026-11-10T04:17:26.680045+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1607,7 +1465,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=Z_IOjKOc_hU",
    "img": "https://i.ytimg.com/vi/Z_IOjKOc_hU/hqdefault.jpg",
-   "up": "2026-11-10",
+   "up": "2026-11-09",
    "added": "2026-11-10T04:17:26.680045+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1669,34 +1527,6 @@
    "geo": "unknown"
   },
   {
-   "id": "PL1YCa69P1Q",
-   "r": "us",
-   "o": "Associated Press",
-   "t": "NAACP says no legal issues in Mississippi as vote count continues in close Senate race",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=PL1YCa69P1Q",
-   "img": "https://i.ytimg.com/vi/PL1YCa69P1Q/hqdefault.jpg",
-   "up": "2026-11-10",
-   "added": "2026-11-10T05:27:52.396499+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "ebM1qGUZ0j0",
-   "r": "us",
-   "o": "Fox News",
-   "t": "Kayleigh McEnany: I had absolute RAGE over this",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=ebM1qGUZ0j0",
-   "img": "https://i.ytimg.com/vi/ebM1qGUZ0j0/hqdefault.jpg",
-   "up": "2026-11-10",
-   "added": "2026-11-10T05:47:52.396222+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "JzZKL07gamg",
    "r": "us",
    "o": "Associated Press",
@@ -1735,6 +1565,34 @@
    "img": "https://i.ytimg.com/vi/zOkE9v1SgU0/hqdefault.jpg",
    "up": "2026-11-10",
    "added": "2026-11-10T06:32:51.895840+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "Gb9tkezMoQs",
+   "r": "us",
+   "o": "Fox News",
+   "t": "NVIDIA UNDER FIRE over CEO's relationship with suspected spy",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=Gb9tkezMoQs",
+   "img": "https://i.ytimg.com/vi/Gb9tkezMoQs/hqdefault.jpg",
+   "up": "2026-11-10",
+   "added": "2026-11-10T07:18:54.983370+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "f8O7ahJKC94",
+   "r": "us",
+   "o": "Associated Press",
+   "t": "EU anti-piracy naval force patrols the Gulf of Aden",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=f8O7ahJKC94",
+   "img": "https://i.ytimg.com/vi/f8O7ahJKC94/hqdefault.jpg",
+   "up": "2026-11-10",
+   "added": "2026-11-10T07:18:54.983370+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1784,7 +1642,7 @@
    "id": "aU_fQ5kKFVY",
    "r": "world",
    "o": "BBC News",
-   "t": "How an affair spy scandal could impact the US-China AI arms race | BBC News",
+   "t": "Did an AI world leader get honeytrapped by a Chinese spy? | BBC News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=aU_fQ5kKFVY",
@@ -1826,7 +1684,7 @@
    "id": "G4ov8Lp1L5I",
    "r": "world",
    "o": "DW News",
-   "t": "Trump loses Congress: Is his grip on Republicans weakening? | DW News",
+   "t": "Trump's midterm disaster: Are Republicans turning against him? | DW News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=G4ov8Lp1L5I",
@@ -1854,7 +1712,7 @@
    "id": "AZ6XZBtDJGA",
    "r": "world",
    "o": "Sky News",
-   "t": "Trump and the art of losing",
+   "t": "Trump and the art of losing | Trump 100",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=AZ6XZBtDJGA",
@@ -2266,7 +2124,6 @@
   "edition": "Tuesday morning, November 10",
   "lines": [
    "Good morning. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
-   "Taiwan says China is conducting ‘area denial’ drills in Western Pacific, Reuters reports.",
    "Can Canada afford Carney’s budget?, CityNews Vancouver reports.",
    "Republican congressman to force impeachment vote on Defence Secretary Hegseth, BBC News reports.",
    "Nvidia investigates CEO Jensen Huang over Chinese spy concerns, CBS News reports.",
@@ -2636,11 +2493,11 @@
    "city": "Vancouver",
    "tz": "America/Vancouver",
    "world": false,
-   "w": "Climate",
-   "u": "https://www.ctvnews.ca/vancouver/article/environmental-economist-tells-trial-canada-has-limited-power-to-alter-climate-change/",
-   "title": "Environmental economist tells trial Canada has limited power to alter climate change",
+   "w": "Storm",
+   "u": "https://www.ctvnews.ca/vancouver/vancouver-island/article/vancouver-island-supports-ukraine-planning-to-return-to-the-war-torn-country-this-spring/",
+   "title": "Vancouver Island Supports Ukraine planning to return to the war torn country this spring",
    "outlet": "CTV News",
-   "t": "Mon 8:19 p.m.",
+   "t": "Mon 9:03 p.m.",
    "hot": false
   },
   {
@@ -2715,16 +2572,16 @@
    "img": "https://images.euronews.com/articles/stories/09/98/63/86/1200x675_cmsv2_ec884b53-877a-5837-b8bc-b54cacbcae89-9986386.jpg"
   },
   {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Tue 12:28 a.m.",
-   "iso": "2026-11-10T05:28:00+00:00",
-   "title": "G7 diplomats speak out on Taiwan as China ramps up military drills",
-   "summary": "Taiwan said Tuesday that Beijing is carrying out “area denial” drills in the western Pacific involving an aircraft carrier and other naval formations.",
-   "outlet": "The Japan Times, The Japan Times (Reuters), Toronto Star, BBC News, Euronews, CP24 (AP)",
-   "n": 6,
-   "url": "https://www.japantimes.co.jp/news/2026/11/10/japan/politics/japan-g7-china-taiwan-military/",
-   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/10/573157.JPG?v=3.1"
+   "desk": "us",
+   "pic": "podium",
+   "t": "Tue 2:11 a.m.",
+   "iso": "2026-11-10T07:11:16+00:00",
+   "title": "California voters reject one-off billionaire wealth tax US media predicts",
+   "summary": "The measure was seen as a key test for the global campaign against inequality, but warnings that the super-rich would leave the state won out.",
+   "outlet": "Euronews, Toronto Star + CBC News + Times Colonist (AP), CBS News, The Guardian, NBC News",
+   "n": 5,
+   "url": "https://www.euronews.com/2026/11/10/california-voters-reject-one-off-billionaire-wealth-tax-us-media-predicts",
+   "img": "https://images.euronews.com/articles/stories/09/98/65/88/1200x675_cmsv2_2268e51f-0e64-5f4f-b77c-0e0426ab6cfa-9986588.jpg"
   },
   {
    "desk": "world",
@@ -2733,10 +2590,22 @@
    "iso": "2026-11-10T06:49:00+00:00",
    "title": "U.S. aircraft evacuated from second U.K. base due to Iran threat, WSJ reports",
    "summary": "The withdrawal comes weeks after the U.S. removed its bombers from RAF Fairford airbase over a suspected Iran-linked security incident.",
-   "outlet": "The Japan Times (Reuters), The Guardian, Middle East Eye, The Hill, Toronto Star (AP)",
+   "outlet": "The Japan Times (Reuters), The Guardian, Middle East Eye, The Hill, Toronto Star",
    "n": 5,
    "url": "https://www.japantimes.co.jp/news/2026/11/10/world/us-uk-base-evacuated-iran/",
    "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/10/573179.JPG?v=3.1"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Tue 12:28 a.m.",
+   "iso": "2026-11-10T05:28:00+00:00",
+   "title": "G7 diplomats speak out on Taiwan as China ramps up military drills",
+   "summary": "Taiwan said Tuesday that Beijing is carrying out “area denial” drills in the western Pacific involving an aircraft carrier and other naval formations.",
+   "outlet": "The Japan Times, The Japan Times (Reuters), BBC News, Euronews, CP24 (AP)",
+   "n": 5,
+   "url": "https://www.japantimes.co.jp/news/2026/11/10/japan/politics/japan-g7-china-taiwan-military/",
+   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/10/573157.JPG?v=3.1"
   },
   {
    "desk": "world",
@@ -2789,18 +2658,6 @@
   {
    "desk": "us",
    "pic": "podium",
-   "t": "Mon 10:42 p.m.",
-   "iso": "2026-11-10T03:42:53.182000+00:00",
-   "title": "California voters reject proposed billionaire tax",
-   "summary": "California voters have rejected a proposed one-time tax on the net worth of billionaires in the state following a contentious ballot fight that generated huge spending by some prominent tech leaders eager to stop their taxes from going up. one-time tax on state billionaires' fortunes",
-   "outlet": "CBC News + Toronto Star (AP), CBS News, The Guardian, NBC News",
-   "n": 4,
-   "url": "https://www.cbc.ca/news/world/california-billionaire-tax-rejected-9.7415985",
-   "img": "https://i.cbc.ca/ais/ee0571a2-40e9-4390-93d2-047e548f6d0e,1794279726628/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C213%2C4092%2C2301%29%3BResize%3D620"
-  },
-  {
-   "desk": "us",
-   "pic": "podium",
    "t": "Mon 9:08 p.m.",
    "iso": "2026-11-10T02:08:49+00:00",
    "title": "NTSB recovers cockpit voice recorder from Learjet crash site in Florida",
@@ -2817,7 +2674,7 @@
    "iso": "2026-11-09T23:43:00+00:00",
    "title": "Federal budget promises relief for Yukoners, but local rollout remains unclear",
    "summary": "Billions in national spending target housing, power grids and grocery bills, yet northern communities await eligibility details.",
-   "outlet": "Yukon News, Toronto Star + CP24 (CP), CBC News, CityNews Vancouver + CityNews Ottawa + CityNews Halifax",
+   "outlet": "Yukon News, CP24 (CP), CBC News, CityNews Vancouver + CityNews Ottawa + CityNews Halifax",
    "n": 4,
    "url": "https://yukon-news.com/2026/11/09/federal-budget-offers-yukon-relief-but-local-rollout-remains-unclear/",
    "img": "https://yukon-news.com/wp-content/uploads/sites/7/2026/11/261113-YKN-Fed-budget.jpg?w=1024"
@@ -2835,18 +2692,6 @@
    "img": ""
   },
   {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Mon 10:45 p.m.",
-   "iso": "2026-11-10T03:45:47+00:00",
-   "title": "Russell Brand is sentenced to 10 1/2 years in British prison for rape and sexual assault",
-   "summary": "LONDON (AP) — Russell Brand was sentenced Monday to 10 1/2 years in prison for raping one woman and sexually assaulting three others during a time when his bawdy behavior was indulged and celebrated during his rise to stardom.",
-   "outlet": "Times Colonist (AP), CBS News, The Guardian",
-   "n": 3,
-   "url": "https://www.timescolonist.com/the-mix/russell-brand-is-sentenced-to-10-12-years-in-british-prison-for-rape-and-sexual-assault-12994719",
-   "img": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/b9eab8d7fa08edd5064ded294532a627e5839c5130bcb88315ebdad0f74488ca.jpg;w=1200;h=800;mode=crop"
-  },
-  {
    "desk": "politics",
    "pic": "parliament",
    "t": "Mon 9:18 p.m.",
@@ -2857,18 +2702,6 @@
    "n": 3,
    "url": "https://winnipeg.citynews.ca/2026/11/09/no-charges-after-manitoba-mountie-allows-dog-to-bite-man-without-warning/",
    "img": "https://winnipeg.citynews.ca/wp-content/blogs.dir/sites/13/2024/02/17/RCMP-Generic-Police-CityNews.png"
-  },
-  {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Mon 7:53 p.m.",
-   "iso": "2026-11-10T00:53:23.770000+00:00",
-   "title": "Premier Doug Ford suggests 'ass whooping' for 2 boys connected to alleged assault of Hamilton cadet leader",
-   "summary": "Ontario Premier Doug Ford commented on an alleged assault in Hamilton, saying the parents of two boys police say were involved should \"give your kids a little ass whooping in the wood shed.\"",
-   "outlet": "CBC News, Toronto Star, CityNews Halifax + CityNews + CTV News + CP24 (CP)",
-   "n": 3,
-   "url": "https://www.cbc.ca/news/canada/hamilton/doug-ford-alleged-cadet-leader-assault-hamilton-9.7415639",
-   "img": "https://i.cbc.ca/ais/73e57f57-d9f0-474d-af16-f73df3c53f3a,1794260660552/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C829%2C7965%2C4480%29%3BResize%3D620"
   },
   {
    "desk": "business",
@@ -2883,16 +2716,16 @@
    "img": "https://www.ctvnews.ca/resizer/v2/QH4WYDZD45BNPL7WLQWFA2XH5M.jpeg?smart=true&auth=f301f90299e30b2942fa987964880ffd56b5b3718cefe41d1ff468bf0b1fa2a1&width=1200&height=630"
   },
   {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Mon 7:50 p.m.",
-   "iso": "2026-11-10T00:50:13+00:00",
-   "title": "Feds extend tariff relief program for Canadian firms",
-   "summary": "Sask. mining and energy firms get a boost as Ottawa extends its tariff relief program on U.S. imports, expanding duty remissions to include vital non-steel equipment used in resource extraction.",
-   "outlet": "CKOM / PAnow + Toronto Star + CP24 + BNN Bloomberg + 1 more, Toronto Star",
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Mon 7:53 p.m.",
+   "iso": "2026-11-10T00:53:23.770000+00:00",
+   "title": "Premier Doug Ford suggests 'ass whooping' for 2 boys connected to alleged assault of Hamilton cadet leader",
+   "summary": "Ontario Premier Doug Ford commented on an alleged assault in Hamilton, saying the parents of two boys police say were involved should \"give your kids a little ass whooping in the wood shed.\"",
+   "outlet": "CBC News, CityNews + CTV News + CP24 (CP)",
    "n": 2,
-   "url": "https://www.ckom.com/2026/11/09/feds-extend-tariff-relief-program-for-canadian-firms/",
-   "img": "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/648/files/2026/11/truck-cp-110926.jpg"
+   "url": "https://www.cbc.ca/news/canada/hamilton/doug-ford-alleged-cadet-leader-assault-hamilton-9.7415639",
+   "img": "https://i.cbc.ca/ais/73e57f57-d9f0-474d-af16-f73df3c53f3a,1794260660552/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C829%2C7965%2C4480%29%3BResize%3D620"
   },
   {
    "desk": "us",
@@ -2933,6 +2766,18 @@
   {
    "desk": "business",
    "pic": "chart",
+   "t": "Tue 2:16 a.m.",
+   "iso": "2026-11-10T07:16:00+00:00",
+   "title": "China’s trade surplus soars past $1 trillion as AI boom powers exports",
+   "summary": "The surplus highlight Beijing’s growing reliance on overseas demand to support an economy hobbled by subdued consumption and a property slump.",
+   "outlet": "The Japan Times + Euronews",
+   "n": 1,
+   "url": "https://www.japantimes.co.jp/business/2026/11/10/tech/china-trade-surplus-1-trillion-ai/",
+   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/10/573185.JPG?v=3.1"
+  },
+  {
+   "desk": "business",
+   "pic": "chart",
    "t": "Tue 1:00 a.m.",
    "iso": "2026-11-10T06:00:30+00:00",
    "title": "Young people in UK hit by ‘low-gear economy’, warns Bank of England deputy",
@@ -2953,18 +2798,6 @@
    "n": 1,
    "url": "https://www.theguardian.com/australia-news/2026/nov/10/mortgage-holders-confidence-crashes-to-lowest-level-since-1994-as-year-that-feels-like-a-recession-looms",
    "img": "https://i.guim.co.uk/img/media/289812e06aede7107a4afb76060410def2af7240/623_0_6203_4965/master/6203.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=1b269c1661c5bd690af9557f90e0fa4f"
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Mon 11:29 p.m.",
-   "iso": "2026-11-10T04:29:31+00:00",
-   "title": "China's trade surplus surpasses $1 trillion as AI boom powers exports",
-   "summary": "China's trade surplus ballooned to more than $1 trillion in October, official data showed on Tuesday, reaching the milestone even earlier than last year's record-breaking sum.",
-   "outlet": "Euronews",
-   "n": 1,
-   "url": "https://www.euronews.com/2026/11/10/chinas-trade-surplus-surpasses-1-trillion-as-ai-boom-powers-exports",
-   "img": "https://images.euronews.com/articles/stories/09/98/63/87/1200x675_cmsv2_a3e4e7c2-502d-5a4b-a001-e48cdfa8a174-9986387.jpg"
   },
   {
    "desk": "business",
@@ -3021,7 +2854,7 @@
    "iso": "2026-11-10T02:23:34+00:00",
    "title": "Chiefs question motive behind Indian Act talks after meeting with Carney, premiers",
    "summary": "First Nations chiefs who attended a closed-door meeting with Prime Minister Mark Carney and premiers last month say their concerns were overshadowed by Manitoba Premier Wab Kinew’s call for the abolition of the Indian Act. One chief also criticized Carney’s tone as he responded to a comment about how the United States works with Indigenous […]",
-   "outlet": "CityNews Winnipeg + Toronto Star + CP24 + APTN News (CP)",
+   "outlet": "CityNews Winnipeg + CP24 + APTN News (CP)",
    "n": 1,
    "url": "https://winnipeg.citynews.ca/2026/11/09/chiefs-question-motive-behind-indian-act-talks-after-meeting-with-carney-premiers/",
    "img": "https://winnipeg.citynews.ca/wp-content/blogs.dir/sites/13/5a5tvl1y.png"
@@ -3039,6 +2872,18 @@
    "img": "https://www.ctvnews.ca/resizer/v2/L5IOZH2VEJEVLCMGXNYJMPEV7M.png?smart=true&auth=d7bf0c7a42677708b3a16e5ab49836108e118a1431530e781ae75c7b5ccc3fc2&width=1200&height=630"
   },
   {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Mon 8:19 p.m.",
+   "iso": "2026-11-10T01:19:49+00:00",
+   "title": "Environmental economist tells trial Canada has limited power to alter climate change",
+   "summary": "An environmental economist testifying at Canada’s first youth-led climate trial says the country has a limited ability to affect the climate inside its borders as it is largely determined by the choices of other countries.",
+   "outlet": "CTV News + CBC News + Canada's National Observer (CP)",
+   "n": 1,
+   "url": "https://www.ctvnews.ca/vancouver/article/environmental-economist-tells-trial-canada-has-limited-power-to-alter-climate-change/",
+   "img": "https://www.ctvnews.ca/resizer/v2/ILQJZCT2YRVNOYACZT5CCG3RV4.jpg?smart=true&auth=da1e31b56744e5701ad6183d5b5d2d3b27f3e7a63dae4cc1122abb7b8e701653&width=1200&height=630"
+  },
+  {
    "desk": "politics",
    "pic": "parliament",
    "t": "Mon 6:51 p.m.",
@@ -3049,6 +2894,18 @@
    "n": 1,
    "url": "https://www.ctvnews.ca/politics/article/culture-minister-insists-canada-will-eventually-force-streaming-giants-to-pay-fair-share-for-cancon/",
    "img": "https://www.ctvnews.ca/resizer/v2/5Z3P2SUKXF7ULZ54ENQO5RMWW4.jpg?smart=true&auth=e38e47f4cc7ec1b1b350e3c89e176171858594e47955a9e59ed84b8f61522854&width=1200&height=630"
+  },
+  {
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Mon 5:55 p.m.",
+   "iso": "2026-11-09T22:55:06.586000+00:00",
+   "title": "Carney government spent over $19B on external consultants in its first year",
+   "summary": "The federal government spent more than $19 billion on external consultants last year, despite a promise to cut back on its use of outside contractors.",
+   "outlet": "CBC News",
+   "n": 1,
+   "url": "https://www.cbc.ca/news/politics/federal-government-consultant-spending-9.7415657",
+   "img": "https://i.cbc.ca/ais/049abfd1-b860-49e6-9075-31b4d8c7fe5b,1794262989601/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C557%2C7895%2C4440%29%3BResize%3D620"
   }
  ],
  "reads": [
@@ -3448,22 +3305,13 @@
  "live": {
   "now": [
    {
-    "net": "Associated Press",
-    "r": "us",
-    "title": "LIVE: Day 2 of G7 foreign ministers’ meeting in Paris",
-    "url": "https://www.youtube.com/watch?v=aw9KoM-jt2k",
-    "img": "https://i.ytimg.com/vi/aw9KoM-jt2k/hqdefault.jpg",
-    "story": "Day 2 of G7 foreign ministers’ meeting in Paris",
-    "watching": "73"
-   },
-   {
     "net": "LiveNOW from FOX",
     "r": "us",
     "title": "Rolling live news coverage, as it happens",
     "url": "https://www.youtube.com/watch?v=71Eq2VrASig",
     "img": "https://i.ytimg.com/vi/71Eq2VrASig/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "210",
+    "watching": "198",
     "rolling": true
    },
    {
@@ -3473,7 +3321,7 @@
     "url": "https://www.youtube.com/watch?v=jQ-3gcLKqjk",
     "img": "https://i.ytimg.com/vi/jQ-3gcLKqjk/hqdefault.jpg",
     "story": "Day 2 of COP31 summit in Turkey's Antalya",
-    "watching": "15"
+    "watching": "11"
    },
    {
     "net": "Sky News",
@@ -3482,7 +3330,7 @@
     "url": "https://www.youtube.com/watch?v=vEmX6Ofu1kQ",
     "img": "https://i.ytimg.com/vi/vEmX6Ofu1kQ/hqdefault.jpg",
     "story": "Trump says there is \"positive momentum\" towards an end to the Iran war",
-    "watching": "505",
+    "watching": "521",
     "reports": [
      {
       "outlet": "Middle East Eye",
@@ -3504,52 +3352,6 @@
       "url": "https://www.thestar.com/news/world/united-states/trump-after-meeting-with-qatari-pm-says-he-believes-war-with-iran-is-militarily-effectively-over/article_c2f00056-52e9-56fc-851c-918b8aff6e39.html",
       "t": "Mon 4:59 p.m.",
       "iso": "2026-11-09T21:59:00+00:00"
-     }
-    ]
-   },
-   {
-    "net": "euronews",
-    "r": "world",
-    "title": "LIVE: EU joins Ukraine peace talks in Abu Dhabi | Europe Today #207",
-    "url": "https://www.youtube.com/watch?v=Y5zT6T1CRts",
-    "img": "https://i.ytimg.com/vi/Y5zT6T1CRts/hqdefault.jpg",
-    "story": "EU joins Ukraine peace talks in Abu Dhabi",
-    "watching": "38",
-    "reports": [
-     {
-      "outlet": "ABC News",
-      "title": "G7 attention turns to Ukraine while US-mediated talks get underway in Abu Dhabi",
-      "url": "https://abcnews.com/International/wireStory/g7-attention-paris-turns-ukraine-us-mediated-talks-138001993",
-      "t": "Tue 1:57 a.m.",
-      "iso": "2026-11-10T06:57:41+00:00"
-     },
-     {
-      "outlet": "Euronews",
-      "title": "Who's who from Ukraine and Russia at the Abu Dhabi peace talks?",
-      "url": "https://www.euronews.com/2026/11/10/whos-who-from-ukraine-and-russia-at-the-abu-dhabi-peace-talks",
-      "t": "Tue 1:00 a.m.",
-      "iso": "2026-11-10T06:00:41+00:00"
-     },
-     {
-      "outlet": "Toronto Star",
-      "title": "Past talks involving Russia and Ukraine have yielded little progress toward peace",
-      "url": "https://www.thestar.com/news/world/europe/past-talks-involving-russia-and-ukraine-have-yielded-little-progress-toward-peace/article_aef6d351-f889-5815-b231-9a6e974b39f2.html",
-      "t": "Tue 12:23 a.m.",
-      "iso": "2026-11-10T05:23:59+00:00"
-     },
-     {
-      "outlet": "The Guardian",
-      "title": "US officials seek ‘final end’ to Russia-Ukraine war as Abu Dhabi talks begin",
-      "url": "https://www.theguardian.com/world/2026/nov/10/us-officials-russia-ukraine-war-abu-dhabi-talks",
-      "t": "Tue 12:00 a.m.",
-      "iso": "2026-11-10T05:00:29+00:00"
-     },
-     {
-      "outlet": "BBC News",
-      "title": "Ukraine peace talks resume with 'some flexibility' by warring sides, US officials say",
-      "url": "https://www.bbc.co.uk/news/articles/cqpvgvrpjvv8o?at_medium=RSS&at_campaign=rss",
-      "t": "Mon 7:09 p.m.",
-      "iso": "2026-11-10T00:09:49+00:00"
      }
     ]
    }
@@ -3723,50 +3525,13 @@
    ]
   }
  },
- "canangle": {
-  "auto-25fb7dda": {
-   "story": "Taiwan says China is conducting ‘area denial’ drills in Western Pacific",
-   "us": false,
-   "specific": 2,
-   "stories": [
-    {
-     "t": "Mon 4:45 p.m.",
-     "iso": "2026-11-09T21:45:00+00:00",
-     "outlet": "Toronto Star",
-     "title": "Carney government considers lifting ban on offshore oil and gas exploration in the Western Arctic",
-     "url": "https://www.thestar.com/politics/political-opinion/carney-government-considers-lifting-ban-on-offshore-oil-and-gas-exploration-in-the-western-arctic/article_9956a8e2-ad64-4dd0-be53-5710b1e5401b.html",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Mon 1:38 p.m.",
-     "iso": "2026-11-09T18:38:59+00:00",
-     "outlet": "CityNews Vancouver",
-     "title": "Sale could bring Times Colonist, Western Canada’s oldest daily, ‘home’ to Victoria",
-     "url": "https://vancouver.citynews.ca/2026/11/09/sale-could-bring-times-colonist-western-canadas-oldest-daily-home-to-victoria/",
-     "ca": true,
-     "tie": ""
-    }
-   ],
-   "official": [],
-   "views": []
-  }
- },
+ "canangle": {},
  "canangle_live": {
   "https://www.middleeasteye.net/live-blog/live-blog-update/arab-vote-israeli-elections": {
    "story": "The Arab vote in the Israeli elections",
    "us": true,
-   "specific": 1,
+   "specific": 0,
    "stories": [
-    {
-     "t": "Mon 1:30 p.m.",
-     "iso": "2026-11-09T18:30:00+00:00",
-     "outlet": "Toronto Star",
-     "title": "Doug Ford blames tariffs for Republican losses in U.S. midterm elections",
-     "url": "https://www.thestar.com/politics/provincial/doug-ford-blames-tariffs-for-republican-losses-in-u-s-midterm-elections/article_bd6a834f-e106-41c6-ade3-c5fa57ed1c7f.html",
-     "ca": true,
-     "tie": ""
-    },
     {
      "t": "Mon 6:23 p.m.",
      "iso": "2026-11-09T23:23:18.629000+00:00",
@@ -3809,48 +3574,6 @@
      "outlet": "CBC News",
      "title": "New Brunswick's giant duck 'out in the middle of nowhere'",
      "url": "https://www.cbc.ca/news/canada/new-brunswick/nb-giant-rock-duck-oromocto-lake-9.7396471?cmp=rss",
-     "ca": true,
-     "tie": ""
-    }
-   ],
-   "official": [],
-   "views": []
-  },
-  "https://www.youtube.com/watch?v=aw9KoM-jt2k": {
-   "story": "Day 2 of G7 foreign ministers’ meeting in Paris",
-   "us": false,
-   "specific": 0,
-   "stories": [],
-   "official": [
-    {
-     "outlet": "Mark Carney",
-     "title": "Joint declaration on Paris call for AI safety and security",
-     "url": "https://www.pm.gc.ca/en/news/statements/2026/11/09/joint-declaration-paris-call-ai-safety-and-security",
-     "t": "Nov 9"
-    }
-   ],
-   "views": []
-  },
-  "https://www.youtube.com/watch?v=Y5zT6T1CRts": {
-   "story": "EU joins Ukraine peace talks in Abu Dhabi | Europe Today #207",
-   "us": false,
-   "specific": 2,
-   "stories": [
-    {
-     "t": "Mon 9:03 p.m.",
-     "iso": "2026-11-10T02:03:08+00:00",
-     "outlet": "CTV News",
-     "title": "Vancouver Island Supports Ukraine planning to return to the war torn country this spring",
-     "url": "https://www.ctvnews.ca/vancouver/vancouver-island/article/vancouver-island-supports-ukraine-planning-to-return-to-the-war-torn-country-this-spring/",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Sun 4:00 a.m.",
-     "iso": "2026-11-08T09:00:00+00:00",
-     "outlet": "CBC News",
-     "title": "What needs to happen for Canada to join Europe's flagship student exchange program?",
-     "url": "https://www.cbc.ca/news/politics/erasmus-students-youth-european-union-9.7408763?cmp=rss",
      "ca": true,
      "tie": ""
     }
