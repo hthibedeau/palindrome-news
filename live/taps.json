@@ -1,17 +1,20 @@
 {
- "checked": "2026-11-11T13:38:19.332760+00:00",
- "labels": 236,
- "problems": [
-  {
-   "label": "NBC News",
-   "opens": "https://www.today.com/video/house-republicans-block-motion-to-impeach-pete-hegseth-273259589897",
-   "section": "breakdown",
-   "link": false,
-   "width": 1280
-  }
- ],
+ "checked": "2026-11-11T16:45:52.053249+00:00",
+ "labels": 240,
+ "problems": [],
  "guard": {
-  "fixed": [],
+  "fixed": [
+   {
+    "label": "NBC News",
+    "was": "(card link) nbcnews.com",
+    "now": "https://www.nbcnews.com/politics/2026-election/maria-elvira-salazar-gop-florida-house-election-win-trump-clash-rcna603377"
+   },
+   {
+    "label": "NPR",
+    "was": "(card link) npr.org",
+    "now": "https://www.npr.org/2026/11/11/nx-s1-6036790/swing-voters-swing-states-democrats-congress"
+   }
+  ],
   "disabled": [],
   "lifted": []
  }
