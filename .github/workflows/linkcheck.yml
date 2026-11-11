@@ -22,7 +22,19 @@ jobs:
       # taps every outlet button and label at phone and desktop width; results in live/taps.json.
       - name: Tap every outlet button and label
         run: |
-          pip install -q playwright && python3 -m playwright install --with-deps chromium >/dev/null
+          pip install -q playwright
+          # Wed Nov 11, 2026: Ubuntu's package server (security.ubuntu.com) went unreachable and the whole check failed on
+          # installing extra fonts. Try the full install twice (5 min cap each); if Ubuntu is still down, install just the
+          # browser (the runner already has what it needs to run it) so the check still runs.
+          ok=0
+          for i in 1 2; do
+            if timeout 300 python3 -m playwright install --with-deps chromium >/dev/null; then ok=1; break; fi
+            echo "Full browser install failed (try $i), retrying"; sleep 20
+          done
+          if [ "$ok" = 0 ]; then
+            echo "Ubuntu package server unreachable; installing the browser on its own"
+            python3 -m playwright install chromium >/dev/null
+          fi
           python3 tools/tap_check.py --install --page index.html
           python3 tools/tap_check.py --page index.html --out live/taps.json
       - name: Commit and push
