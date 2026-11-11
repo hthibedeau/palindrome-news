@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-11T01:43:27.032690+00:00",
- "checkedLabel": "Tue 8:43 p.m.",
+ "checked": "2026-11-11T01:53:26.407838+00:00",
+ "checkedLabel": "Tue 8:53 p.m.",
  "stories": [
   {
    "key": "top",
@@ -30,6 +30,15 @@
   }
  ],
  "wire": [
+  [
+   "Tue 8:42 p.m.",
+   "U.S.",
+   "Thomas Haugh records double-double as Florida defeats Florida St. for 6th straight time, 81-72",
+   "The Canadian Press (via Winnipeg Free Press)",
+   "https://www.winnipegfreepress.com/uncategorized/2026/11/10/thomas-haugh-records-double-double-as-florida-defeats-florida-st-for-6th-straight-time-81-72",
+   "2026-11-11T01:42:52+00:00",
+   1
+  ],
   [
    "Tue 8:30 p.m.",
    "Latest",
@@ -110,15 +119,6 @@
    "https://www.nbcnews.com/world/united-kingdom/us-charges-3-men-plotting-multiple-terrorist-attacks-planned-attack-uk-rcna608647",
    "2026-11-11T01:22:54+00:00",
    2
-  ],
-  [
-   "Tue 8:21 p.m.",
-   "U.S.",
-   "Pentagon declares ‘total victory’ after House Republicans block effort to impeach Pete Hegseth – US politics live",
-   "The Guardian",
-   "https://www.theguardian.com/us-news/live/2026/nov/10/donald-trump-pete-hegseth-thomas-massie-republicans-iran-war-impeachment-midterms-latest-news-updates",
-   "2026-11-11T01:21:13+00:00",
-   14
   ],
   [
    "Tue 8:20 p.m.",
@@ -244,7 +244,7 @@
    "CBS News",
    "https://www.cbsnews.com/news/jensen-huang-affair-nvidia-ceo-dilemma/",
    "2026-11-11T01:02:52+00:00",
-   2
+   1
   ],
   [
    "Tue 8:01 p.m.",
@@ -286,48 +286,35 @@
  "leads": [
   {
    "score": 26,
-   "title": "Canadians warming to China, India as Trump’s tariffs push Ottawa toward the Indo-Pacific",
-   "url": "https://angusreid.org/canadians-warming-to-china-india-as-trumps-tariffs-push-ottawa-toward-the-indo-pacific/",
-   "outlets": 20,
-   "why": [
-    "National Newswatch #6",
-    "National Newswatch #8",
-    "CBC News front #6"
-   ],
-   "theme": ""
-  },
-  {
-   "score": 22,
-   "title": "Stellantis auto plant closure in Brampton a 'betrayal' to all Canadians, Carney says",
-   "url": "https://www.cbc.ca/news/politics/stellantis-poilievre-joly-job-fire-9.7416427",
-   "outlets": 6,
-   "why": [
-    "National Newswatch #1",
-    "National Newswatch #2",
-    "National Newswatch #5",
-    "National Newswatch #20"
-   ],
-   "theme": "Canadian auto jobs"
-  },
-  {
-   "score": 20,
    "title": "Republicans block impeachment push against Pete Hegseth",
    "url": "https://www.cbc.ca/news/world/hegseth-impeachment-resolution-reaction-9.7416083",
-   "outlets": 16,
+   "outlets": 18,
    "why": [
-    "CBC News front #2"
+    "CBC News front #2",
+    "CBC News front #5",
+    "CBC News front #3"
    ],
    "theme": ""
   },
   {
-   "score": 15,
-   "title": "More than a dozen private companies loaning workers to Major Projects Office: document",
-   "url": "https://www.cbc.ca/news/politics/private-company-workers-major-projects-office-9.7416899",
-   "outlets": 9,
-   "why": [
-    "National Newswatch #3"
-   ],
+   "score": 17,
+   "title": "Thomas Haugh records double-double as Florida defeats Florida St. for 6th straight time, 81-72",
+   "url": "https://www.winnipegfreepress.com/uncategorized/2026/11/10/thomas-haugh-records-double-double-as-florida-defeats-florida-st-for-6th-straight-time-81-72",
+   "outlets": 17,
+   "why": [],
    "theme": ""
+  },
+  {
+   "score": 17,
+   "title": "Stellantis auto plant closure in Brampton a 'betrayal' to all Canadians, Carney says",
+   "url": "https://www.cbc.ca/news/politics/stellantis-poilievre-joly-job-fire-9.7416427",
+   "outlets": 5,
+   "why": [
+    "National Newswatch #2",
+    "National Newswatch #3",
+    "National Newswatch #5"
+   ],
+   "theme": "Canadian auto jobs"
   },
   {
    "score": 14,
@@ -339,9 +326,30 @@
   },
   {
    "score": 13,
+   "title": "More than a dozen private companies loaning workers to Major Projects Office: document",
+   "url": "https://www.cbc.ca/news/politics/private-company-workers-major-projects-office-9.7416899",
+   "outlets": 8,
+   "why": [
+    "National Newswatch #8"
+   ],
+   "theme": ""
+  },
+  {
+   "score": 12,
+   "title": "Tensions between PM, Quebec premier continue to flare in new tiff over U.S. relations",
+   "url": "https://www.cbc.ca/news/canada/montreal/st-pierre-plamondon-carney-canada-us-trade-9.7417092",
+   "outlets": 1,
+   "why": [
+    "National Newswatch #1",
+    "CBC News front #1"
+   ],
+   "theme": ""
+  },
+  {
+   "score": 12,
    "title": "Meghan Markle's father cut off ankle monitor, prosecutors say",
    "url": "https://www.cbsnews.com/news/thomas-markle-ordered-psychiatric-exam-meghan-markle-father/",
-   "outlets": 11,
+   "outlets": 10,
    "why": [],
    "theme": ""
   },
@@ -363,24 +371,10 @@
   },
   {
    "score": 9,
-   "title": "First Nations Bank CEO says federal budget is a ‘generational’ opportunity for First Nations",
-   "url": "https://www.aptnnews.ca/national-news/first-nations-bank-ceo-says-federal-budget-is-a-generational-opportunity-for-first-nations/",
-   "outlets": 3,
-   "why": [
-    "National Newswatch #13",
-    "National Newswatch #14"
-   ],
-   "theme": "Federal budget"
-  },
-  {
-   "score": 8,
-   "title": "Hope is finally back in America, and did the U.S. just leave Canadian Conservatives behind?",
-   "url": "https://www.hilltimes.com/2026/11/09/did-the-u-s-just-leave-canadian-conservatives-behind/525005/",
-   "outlets": 2,
-   "why": [
-    "National Newswatch #11",
-    "National Newswatch #18"
-   ],
+   "title": "Nvidia's trillion-dollar bind: Can it afford to lose Jensen Huang?",
+   "url": "https://www.cbsnews.com/news/jensen-huang-affair-nvidia-ceo-dilemma/",
+   "outlets": 7,
+   "why": [],
    "theme": ""
   }
  ],
@@ -621,10 +615,11 @@
      "alt": "Kristina Craig is the executive director of the Yukon Anti-Poverty Coalition. Responding to the federal plan to end homelessness in Canada within a decade, she ",
      "outlet": "CBC News",
      "url": "https://www.cbc.ca/news/canada/north/yukon-reacts-federal-budget-9.7417424?cmp=rss",
-     "since": "2026-11-11T01:19:57.984292+00:00"
+     "since": "2026-11-11T01:55:55.756121+00:00"
     },
     "photo_seen": [
-     "https://www.aptnnews.ca/wp-content/uploads/2026/11/Bill-Lomax-FNBC.jpg"
+     "https://www.aptnnews.ca/wp-content/uploads/2026/11/Bill-Lomax-FNBC.jpg",
+     "https://i.cbc.ca/ais/45c48014-1b4c-4fc5-bea6-2cb33edd500c,1794353762425/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C75%2C5712%2C3213%29%3BResize%3D620"
     ],
     "photos": [
      {
@@ -812,15 +807,15 @@
     "key": "auto-e59b7655",
     "words": [
      "stellantis",
-     "betrayal",
-     "assembly",
      "brampton",
-     "enforce",
+     "assembly",
+     "betrayal",
+     "rights",
      "plant"
     ],
-    "score": 22,
-    "outlets": 5,
-    "carriers": 9,
+    "score": 17,
+    "outlets": 4,
+    "carriers": 8,
     "tag": "Developing",
     "title": "Windsor reacts to sale of Brampton Assembly Plant",
     "url": "https://www.ctvnews.ca/windsor/article/windsor-reacts-to-sale-of-brampton-assembly-plant/",
@@ -843,10 +838,11 @@
      "alt": "Unifor members rally outside the idled Stellantis assembly plant in Brampton, Ont., on Tuesday, Nov. 10, 2026. THE CANADIAN PRESS/Arlyn McAdorey",
      "outlet": "CTV News",
      "url": "https://www.ctvnews.ca/windsor/article/windsor-reacts-to-sale-of-brampton-assembly-plant/",
-     "since": "2026-11-11T01:19:54.975288+00:00"
+     "since": "2026-11-11T01:55:50.773197+00:00"
     },
     "photo_seen": [
-     "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/8/cc/8cc7e66c-2d8c-5ca9-8ec2-bf9550b711af/6af378b221e25.image.jpg?crop=1763%2C926%2C0%2C124&resize=1200%2C630&order=crop%2Cresize"
+     "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/8/cc/8cc7e66c-2d8c-5ca9-8ec2-bf9550b711af/6af378b221e25.image.jpg?crop=1763%2C926%2C0%2C124&resize=1200%2C630&order=crop%2Cresize",
+     "https://www.ctvnews.ca/resizer/v2/3LJGJBOAWTW6ITJDRHEZ4LKP54.jpg?smart=true&auth=ef5352e712cbe28dd9948cade86dcf9c0df36cb0cfa40a3c3799c078732161b1&width=1200&height=630"
     ],
     "photos": [
      {
@@ -874,7 +870,7 @@
       "url": "https://www.cbc.ca/news/politics/stellantis-poilievre-joly-job-fire-9.7416427?cmp=rss"
      }
     ],
-    "independent": 5,
+    "independent": 4,
     "reports": [
      {
       "t": "Tue 6:08 p.m.",
@@ -891,14 +887,6 @@
       "title": "Windsor reacts to sale of Brampton Assembly Plant",
       "url": "https://www.ctvnews.ca/windsor/article/windsor-reacts-to-sale-of-brampton-assembly-plant/",
       "desc": "Brampton hasn’t built a vehicle since 2023, but now, it’s being sold and the news is hitting home in Windsor."
-     },
-     {
-      "t": "Tue 5:00 p.m.",
-      "iso": "2026-11-10T22:00:00+00:00",
-      "outlet": "Toronto Star",
-      "title": "Stellantis must pay back 'every penny' it got from Ottawa, Pierre Poilievre says",
-      "url": "https://www.thestar.com/politics/federal/stellantis-must-pay-back-every-penny-it-got-from-ottawa-pierre-poilievre-says/article_3ec06406-466a-4c6e-a2dc-e982f63a436e.html",
-      "desc": "A company spokesperson would not disclose how much money would be returned to Ottawa following the sale of the plant to a Canadian armoured vehicle manufacturer."
      },
      {
       "t": "Tue 4:57 p.m.",
@@ -946,7 +934,7 @@
       "outlet": "Global News",
       "title": "Stellantis’ agreement to sell Brampton plant a ‘betrayal,’ Carney says",
       "url": "https://globalnews.ca/news/12144343/stellantis-sale-to-roshel-canada/",
-      "desc": ""
+      "desc": "Prime Minister Mark Carney said Tuesday that Stellantis' agreement to sell its Brampton auto assembly plant is a \"betrayal\" to Canadians."
      }
     ],
     "sources": [
@@ -1022,23 +1010,6 @@
       ]
      },
      {
-      "t": "Tue 5:00 p.m.",
-      "primary": false,
-      "outlet": "Toronto Star",
-      "title": "Stellantis must pay back 'every penny' it got from Ottawa, Pierre Poilievre says",
-      "url": "https://www.thestar.com/politics/federal/stellantis-must-pay-back-every-penny-it-got-from-ottawa-pierre-poilievre-says/article_3ec06406-466a-4c6e-a2dc-e982f63a436e.html",
-      "desc": "A company spokesperson would not disclose how much money would be returned to Ottawa following the sale of the plant to a Canadian armoured vehicle manufacturer.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Toronto Star",
-        "src": "Torstar",
-        "byline": "own staff: reporter"
-       }
-      ],
-      "copies": []
-     },
-     {
       "t": "Tue 12:02 p.m.",
       "primary": false,
       "outlet": "CBC News",
@@ -1067,7 +1038,7 @@
        {
         "outlet": "Global News",
         "src": "Corus",
-        "byline": "{\"@type\":\"Person\",\"name\":\"Ariel Rabinovitch\",} Name David Deep Kumar Alexa Behara Anonymous Johnny Johnny Johnny Johnny "
+        "byline": "{\"@type\":\"Person\",\"name\":\"Ariel Rabinovitch\",} Name Colt Vikram David Deep Kumar Alexa Behara Anonymous Johnny Johnny Jo"
        }
       ],
       "copies": []
@@ -1093,7 +1064,7 @@
     "leads_ca": true,
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (national desks).",
-    "weight": 55.5,
+    "weight": 49.0,
     "videos": [
      {
       "net": "CBC News",
@@ -1106,7 +1077,7 @@
      {
       "net": "Global News",
       "url": "https://www.youtube.com/watch?v=-DH6XTYAUtA",
-      "title": "\"Unacceptable\": Carney blasts Stellantis over decision to sell plant in Ontario",
+      "title": "\"Betrayal of the workers\": Carney calls Stellantis decision to sell Brampton plant \"unacceptable\"",
       "img": "https://i.ytimg.com/vi/-DH6XTYAUtA/hqdefault.jpg",
       "rec": true,
       "up": ""
@@ -1114,7 +1085,7 @@
      {
       "net": "Global News",
       "url": "https://www.youtube.com/watch?v=ZL1zSUHtjJo",
-      "title": "Poilievre demands Joly resign after Stellantis agrees to sell idled Brampton assembly plant | FULL",
+      "title": "\"Deserve their damn jobs\": Poilievre demands Joly’s resignation after Stellantis sells plant | FULL",
       "img": "https://i.ytimg.com/vi/ZL1zSUHtjJo/hqdefault.jpg",
       "rec": true,
       "up": ""
@@ -1128,7 +1099,216 @@
       "up": ""
      }
     ]
+   }
+  ],
+  "considered": [
+   {
+    "title": "Mixed reaction in Yukon to the latest federal budget",
+    "url": "https://www.cbc.ca/news/canada/north/yukon-reacts-federal-budget-9.7417424?cmp=rss",
+    "rank": 1,
+    "live": "",
+    "weight": 37.5,
+    "score": 9,
+    "independent": 4,
+    "most_read": 0,
+    "canada": "canadian",
+    "theme": "Federal budget",
+    "top": true,
+    "fronts": 0,
+    "fronts_who": [],
+    "rule": "Canadian and breaking",
+    "carriers": 5,
+    "judgment": "national",
+    "why_judged": "National: affects many people; carried across the country (3 cities)."
    },
+   {
+    "title": "Windsor reacts to sale of Brampton Assembly Plant",
+    "url": "https://www.ctvnews.ca/windsor/article/windsor-reacts-to-sale-of-brampton-assembly-plant/",
+    "rank": 2,
+    "live": "",
+    "weight": 49.0,
+    "score": 17,
+    "independent": 4,
+    "most_read": 5,
+    "canada": "canadian",
+    "theme": "Canadian auto jobs",
+    "top": true,
+    "fronts": 5,
+    "fronts_who": [
+     "CTV News",
+     "Global News",
+     "Toronto Star",
+     "CP24",
+     "BNN Bloomberg"
+    ],
+    "rule": "Canadian, leading the most Canadian front pages: the story Canada's newsrooms are leading with",
+    "carriers": 8,
+    "judgment": "national",
+    "why_judged": "National: affects many people; carried across the country (national desks)."
+   },
+   {
+    "title": "Effort to impeach Pete Hegseth derailed by House Republicans",
+    "url": "https://www.cp24.com/news/world/2026/11/10/us-house-republicans-quash-effort-to-impeach-defense-secretary-hegseth/",
+    "rank": 3,
+    "live": "",
+    "weight": 56,
+    "score": 26,
+    "independent": 12,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": false,
+    "fronts": 10,
+    "fronts_who": [
+     "CBC News",
+     "CTV News",
+     "The Globe and Mail",
+     "CP24",
+     "NBC News",
+     "CBS News",
+     "ABC News",
+     "BBC News",
+     "The Guardian",
+     "NPR"
+    ],
+    "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
+    "carriers": 14,
+    "judgment": "national",
+    "why_judged": "National: leading 10 front pages (CBC News, CTV News, The Globe and Mail, CP24, NBC News, CBS News)."
+   },
+   {
+    "title": "Democrat Doris Matsui wins reelection to U.S. House in California's 7th Congressional District",
+    "url": "https://www.thestar.com/news/world/united-states/democrat-doris-matsui-wins-reelection-to-u-s-house-in-california-s-7th-congressional-district/article_6a21688a-38ee-5648-8f53-385fabc82efa.html",
+    "rank": 4,
+    "live": "",
+    "weight": 26.0,
+    "score": 17,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "tie",
+    "theme": "",
+    "top": false,
+    "fronts": 0,
+    "fronts_who": [],
+    "rule": "From abroad, tied to Canada",
+    "carriers": 6,
+    "judgment": "regional",
+    "why_judged": "Regional: affects some people; carried beyond one city."
+   },
+   {
+    "title": "Nvidia's trillion-dollar bind: Can it afford to lose Jensen Huang?",
+    "url": "https://www.cbsnews.com/news/jensen-huang-affair-nvidia-ceo-dilemma/",
+    "rank": 5,
+    "live": "",
+    "weight": 22.5,
+    "score": 9,
+    "independent": 5,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": false,
+    "fronts": 0,
+    "fronts_who": [],
+    "rule": "No Canadian tie",
+    "carriers": 5,
+    "judgment": "regional",
+    "why_judged": "Regional: affects some people; carried beyond one city."
+   },
+   {
+    "title": "Senior US Army soldier arrested in UK on suspicion of spying for Russia",
+    "url": "https://www.foxnews.com/world/senior-us-army-soldier-arrested-uk-suspicion-spying-russia",
+    "rank": 6,
+    "live": "",
+    "weight": 21.5,
+    "score": 11,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": false,
+    "fronts": 2,
+    "fronts_who": [
+     "BBC News",
+     "The Guardian"
+    ],
+    "rule": "No Canadian tie",
+    "carriers": 3,
+    "judgment": "regional",
+    "why_judged": "Regional: a single incident touching a few people; carried by a few newsrooms."
+   },
+   {
+    "title": "Ottawa asked Ford to keep manufacturing in Oakville until at least 2038",
+    "url": "https://thelogic.co/news/exclusive/ford-oakville-auto-manufacturing-ontario/",
+    "rank": 7,
+    "live": "",
+    "weight": 5.5,
+    "score": 0,
+    "independent": 1,
+    "most_read": 0,
+    "canada": "canadian",
+    "theme": "",
+    "top": false,
+    "fronts": 0,
+    "fronts_who": [],
+    "rule": "Big Canadian exclusive: a major newsroom's interview or scoop (shown as Exclusive)",
+    "carriers": 1,
+    "judgment": "regional",
+    "why_judged": "Regional: affects some people; carried by a few newsrooms."
+   },
+   {
+    "title": "Climate activists award Carney, other absent world leaders 'fossil of the day' title",
+    "score": 14,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "More than a dozen private companies loaning workers to Major Projects Office: document",
+    "score": 13,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Tensions between PM, Quebec premier continue to flare in new tiff over U.S. relations",
+    "score": 12,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Meghan Markle's father cut off ankle monitor, prosecutors say",
+    "score": 12,
+    "why": "not built: only 2 independent report(s) (6 sites)"
+   },
+   {
+    "title": "Kennedy family members join lawsuit to block Trump's triumphal arch",
+    "score": 9,
+    "why": "not built: only 2 independent report(s) (3 sites)"
+   },
+   {
+    "title": "Canadians warming to China, India as Trump’s tariffs push Ottawa toward the Indo-Pacific",
+    "score": 8,
+    "why": "not built: only 2 independent report(s) (3 sites)"
+   },
+   {
+    "title": "Hope is finally back in America, and did the U.S. just leave Canadian Conservatives behind?",
+    "score": 8,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "'I believed her,' defendant says of Galloway accuser in defamation trial",
+    "score": 8,
+    "why": "not built: only 1 independent report(s) (6 sites)"
+   },
+   {
+    "title": "U.S. charges 3 men with plotting multiple terror attacks, including planned attack against U.K. airbase",
+    "score": 8,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Alberta government facing scrutiny over bourbon distilleries tour in Kentucky",
+    "score": 7,
+    "why": "not built: only 1 independent report(s) (5 sites)"
+   }
+  ],
+  "moved": [],
+  "top_n": 2,
+  "more": [
    {
     "key": "auto-2e9e207b",
     "words": [
@@ -1136,12 +1316,12 @@
      "exchange",
      "district",
      "salazar",
-     "elvira",
-     "matsui"
+     "matsui",
+     "elvira"
     ],
-    "score": 26,
+    "score": 17,
     "outlets": 3,
-    "carriers": 7,
+    "carriers": 6,
     "tag": "Developing",
     "title": "Democrat Doris Matsui wins reelection to U.S. House in California's 7th Congressional District",
     "url": "https://www.thestar.com/news/world/united-states/democrat-doris-matsui-wins-reelection-to-u-s-house-in-california-s-7th-congressional-district/article_6a21688a-38ee-5648-8f53-385fabc82efa.html",
@@ -1208,14 +1388,6 @@
      {
       "t": "Tue 7:47 p.m.",
       "iso": "2026-11-11T00:47:17+00:00",
-      "outlet": "The Canadian Press (via Winnipeg Free Press)",
-      "title": "Democrat Doris Matsui wins reelection to U.S. House in California’s 7th Congressional District",
-      "url": "https://www.winnipegfreepress.com/world/2026/11/10/democrat-doris-matsui-wins-reelection-to-u-s-house-in-californias-7th-congressional-district",
-      "desc": ""
-     },
-     {
-      "t": "Tue 7:47 p.m.",
-      "iso": "2026-11-11T00:47:17+00:00",
       "outlet": "CKOM / PAnow",
       "title": "Democrat Doris Matsui wins reelection to U.S. House in California’s 7th Congressional District",
       "url": "https://www.ckom.com/2026/11/10/democrat-doris-matsui-wins-reelection-to-u-s-house-in-californias-7th-congressional-district/",
@@ -1259,7 +1431,7 @@
        {
         "outlet": "CTV News",
         "src": "The Canadian Press",
-        "byline": "\"Josh Pringle\" \"William Eltherington\" \"The Canadian Press\" \"Christine Long\" \""
+        "byline": "m Eltherington\" \"William Eltherington\" \"The Canadian Press\" \"Christine Long\" \""
        },
        {
         "outlet": "Toronto Star",
@@ -1270,11 +1442,6 @@
         "outlet": "Times Colonist",
         "src": "The Canadian Press",
         "byline": "\"Canadian Press\" \r\n             \r\nC"
-       },
-       {
-        "outlet": "The Canadian Press (via Winnipeg Free Press)",
-        "src": "The Associated Press",
-        "byline": "\"@type\": \"Person\",\n\t\t\t\t\"name\": \"The Associated Press\"\n\t\t\t} [{\"@type\":\"Pe"
        },
        {
         "outlet": "CKOM / PAnow",
@@ -1290,10 +1457,6 @@
        {
         "outlet": "Times Colonist",
         "url": "https://www.timescolonist.com/world-news/democrat-doris-matsui-wins-reelection-to-us-house-in-californias-7th-congressional-district-13004480"
-       },
-       {
-        "outlet": "The Canadian Press (via Winnipeg Free Press)",
-        "url": "https://www.winnipegfreepress.com/world/2026/11/10/democrat-doris-matsui-wins-reelection-to-u-s-house-in-californias-7th-congressional-district"
        },
        {
         "outlet": "CKOM / PAnow",
@@ -1340,7 +1503,7 @@
     "events": [],
     "theme": "",
     "canada": "tie",
-    "canus": false,
+    "canus": true,
     "incoherent": false,
     "popular": 0,
     "us_election": false,
@@ -1350,203 +1513,8 @@
     "outled_ca": 5,
     "judgment": "regional",
     "judgment_why": "Regional: affects some people; carried beyond one city.",
-    "weight": 38.5
-   }
-  ],
-  "considered": [
-   {
-    "title": "Mixed reaction in Yukon to the latest federal budget",
-    "url": "https://www.cbc.ca/news/canada/north/yukon-reacts-federal-budget-9.7417424?cmp=rss",
-    "rank": 1,
-    "live": "",
-    "weight": 37.5,
-    "score": 9,
-    "independent": 4,
-    "most_read": 0,
-    "canada": "canadian",
-    "theme": "Federal budget",
-    "top": true,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "Canadian and breaking",
-    "carriers": 5,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (3 cities)."
+    "weight": 26.0
    },
-   {
-    "title": "Windsor reacts to sale of Brampton Assembly Plant",
-    "url": "https://www.ctvnews.ca/windsor/article/windsor-reacts-to-sale-of-brampton-assembly-plant/",
-    "rank": 2,
-    "live": "",
-    "weight": 55.5,
-    "score": 22,
-    "independent": 5,
-    "most_read": 5,
-    "canada": "canadian",
-    "theme": "Canadian auto jobs",
-    "top": true,
-    "fronts": 5,
-    "fronts_who": [
-     "CTV News",
-     "Global News",
-     "Toronto Star",
-     "CP24",
-     "BNN Bloomberg"
-    ],
-    "rule": "Canadian, leading the most Canadian front pages: the story Canada's newsrooms are leading with",
-    "carriers": 9,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (national desks)."
-   },
-   {
-    "title": "Democrat Doris Matsui wins reelection to U.S. House in California's 7th Congressional District",
-    "url": "https://www.thestar.com/news/world/united-states/democrat-doris-matsui-wins-reelection-to-u-s-house-in-california-s-7th-congressional-district/article_6a21688a-38ee-5648-8f53-385fabc82efa.html",
-    "rank": 3,
-    "live": "",
-    "weight": 38.5,
-    "score": 26,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "tie",
-    "theme": "",
-    "top": true,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "From abroad, tied to Canada",
-    "carriers": 7,
-    "judgment": "regional",
-    "why_judged": "Regional: affects some people; carried beyond one city."
-   },
-   {
-    "title": "Republicans block impeachment push against Pete Hegseth",
-    "url": "https://www.cbc.ca/news/world/hegseth-impeachment-resolution-reaction-9.7416083",
-    "rank": 4,
-    "live": "",
-    "weight": 50,
-    "score": 20,
-    "independent": 12,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 10,
-    "fronts_who": [
-     "CBC News",
-     "CTV News",
-     "The Globe and Mail",
-     "CP24",
-     "NBC News",
-     "CBS News",
-     "ABC News",
-     "BBC News",
-     "The Guardian",
-     "NPR"
-    ],
-    "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
-    "carriers": 14,
-    "judgment": "national",
-    "why_judged": "National: leading 10 front pages (CBC News, CTV News, The Globe and Mail, CP24, NBC News, CBS News)."
-   },
-   {
-    "title": "Senior US Army soldier arrested in UK on suspicion of spying for Russia",
-    "url": "https://www.foxnews.com/world/senior-us-army-soldier-arrested-uk-suspicion-spying-russia",
-    "rank": 5,
-    "live": "",
-    "weight": 21.5,
-    "score": 11,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 2,
-    "fronts_who": [
-     "BBC News",
-     "The Guardian"
-    ],
-    "rule": "No Canadian tie",
-    "carriers": 3,
-    "judgment": "regional",
-    "why_judged": "Regional: a single incident touching a few people; carried by a few newsrooms."
-   },
-   {
-    "title": "Ottawa asked Ford to keep manufacturing in Oakville until at least 2038",
-    "url": "https://thelogic.co/news/exclusive/ford-oakville-auto-manufacturing-ontario/",
-    "rank": 6,
-    "live": "",
-    "weight": 5.5,
-    "score": 0,
-    "independent": 1,
-    "most_read": 0,
-    "canada": "canadian",
-    "theme": "",
-    "top": false,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "Big Canadian exclusive: a major newsroom's interview or scoop (shown as Exclusive)",
-    "carriers": 1,
-    "judgment": "regional",
-    "why_judged": "Regional: affects some people; carried by a few newsrooms."
-   },
-   {
-    "title": "More than a dozen private companies loaning workers to Major Projects Office: document",
-    "score": 15,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Climate activists award Carney, other absent world leaders 'fossil of the day' title",
-    "score": 14,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Meghan Markle's father cut off ankle monitor, prosecutors say",
-    "score": 13,
-    "why": "not built: only 2 independent report(s) (7 sites)"
-   },
-   {
-    "title": "Kennedy family members join lawsuit to block Trump's triumphal arch",
-    "score": 9,
-    "why": "not built: only 2 independent report(s) (3 sites)"
-   },
-   {
-    "title": "Hope is finally back in America, and did the U.S. just leave Canadian Conservatives behind?",
-    "score": 8,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "'I believed her,' defendant says of Galloway accuser in defamation trial",
-    "score": 8,
-    "why": "not built: only 1 independent report(s) (6 sites)"
-   },
-   {
-    "title": "U.S. charges 3 men with plotting multiple terror attacks, including planned attack against U.K. airbase",
-    "score": 8,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Alberta government facing scrutiny over bourbon distilleries tour in Kentucky",
-    "score": 8,
-    "why": "not built: only 1 independent report(s) (6 sites)"
-   },
-   {
-    "title": "4 grizzly bears responsible for killing mother and daughter in B.C., officials say",
-    "score": 7,
-    "why": "not built: only 2 independent report(s) (2 sites)"
-   },
-   {
-    "title": "Stellantis auto plant closure in Brampton a 'betrayal' to all Canadians, Carney says",
-    "score": 6,
-    "why": "not built: only 2 independent report(s) (3 sites)"
-   },
-   {
-    "title": "Ottawa consulting on future of Arctic offshore oil and gas drilling ban, Carney says",
-    "score": 6,
-    "why": "not built: only 2 independent report(s) (2 sites)"
-   }
-  ],
-  "moved": [],
-  "top_n": 3,
-  "more": [
    {
     "key": "scoop-3943cf89",
     "words": [
@@ -1628,12 +1596,16 @@
   ],
   "passed_over": [
    {
-    "title": "Republicans block impeachment push against Pete Hegseth",
-    "url": "https://www.cbc.ca/news/world/hegseth-impeachment-resolution-reaction-9.7416083"
+    "title": "Effort to impeach Pete Hegseth derailed by House Republicans",
+    "url": "https://www.cp24.com/news/world/2026/11/10/us-house-republicans-quash-effort-to-impeach-defense-secretary-hegseth/"
    },
    {
     "title": "Senior US Army soldier arrested in UK on suspicion of spying for Russia",
     "url": "https://www.foxnews.com/world/senior-us-army-soldier-arrested-uk-suspicion-spying-russia"
+   },
+   {
+    "title": "Nvidia's trillion-dollar bind: Can it afford to lose Jensen Huang?",
+    "url": "https://www.cbsnews.com/news/jensen-huang-affair-nvidia-ceo-dilemma/"
    }
   ]
  },
@@ -1698,7 +1670,7 @@
    "id": "qeUnS93oYf8",
    "r": "ca",
    "o": "Global News",
-   "t": "The most stolen vehicles in Ontario and Canada: Is your car on the list?",
+   "t": "The 10 most-stolen cars of 2025: Is your car on the list?",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=qeUnS93oYf8",
@@ -1793,34 +1765,6 @@
    "geo": "unknown"
   },
   {
-   "id": "3NTCL9f9c5A",
-   "r": "ca",
-   "o": "CTV News",
-   "t": "Regional chair chosen and standing vigil | CTV News Kitchener at 6 for Nov. 10, 2026",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=3NTCL9f9c5A",
-   "img": "https://i.ytimg.com/vi/3NTCL9f9c5A/hqdefault.jpg",
-   "up": "2026-11-10",
-   "added": "2026-11-11T01:43:27.032690+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "2YjPN7ZDkCs",
-   "r": "ca",
-   "o": "CTV News",
-   "t": "Quebec father speaks out after son is killed | CTV News Montreal at Six for Tuesday, Nov. 10, 2026",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=2YjPN7ZDkCs",
-   "img": "https://i.ytimg.com/vi/2YjPN7ZDkCs/hqdefault.jpg",
-   "up": "2026-11-10",
-   "added": "2026-11-11T01:43:27.032690+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "HaH25sJbcMw",
    "r": "ca",
    "o": "CityNews",
@@ -1831,6 +1775,34 @@
    "img": "https://i.ytimg.com/vi/HaH25sJbcMw/hqdefault.jpg",
    "up": "2026-11-10",
    "added": "2026-11-11T01:43:27.032690+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "OdFBuTSQMys",
+   "r": "ca",
+   "o": "CTV News",
+   "t": "Fatal Essex e-bike crash | CTV News Windsor at 6, Tue. Nov. 10, 2026",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=OdFBuTSQMys",
+   "img": "https://i.ytimg.com/vi/OdFBuTSQMys/hqdefault.jpg",
+   "up": "2026-11-10",
+   "added": "2026-11-11T01:53:26.407838+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "UGuqwGsPSiE",
+   "r": "ca",
+   "o": "CTV News",
+   "t": "New veterans' crosswalk connects Sudbury arena to Memorial Park",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=UGuqwGsPSiE",
+   "img": "https://i.ytimg.com/vi/UGuqwGsPSiE/hqdefault.jpg",
+   "up": "2026-11-10",
+   "added": "2026-11-11T01:53:26.407838+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1913,20 +1885,6 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=Rh1tKGIswZA",
    "img": "https://i.ytimg.com/vi/Rh1tKGIswZA/hqdefault.jpg",
-   "up": "2026-11-10",
-   "added": "2026-11-11T00:21:54.549505+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "PDjhSUgePQk",
-   "r": "us",
-   "o": "Fox News",
-   "t": "Dana Perino: Dems are trying to drive a WEDGE",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=PDjhSUgePQk",
-   "img": "https://i.ytimg.com/vi/PDjhSUgePQk/hqdefault.jpg",
    "up": "2026-11-10",
    "added": "2026-11-11T00:21:54.549505+00:00",
    "pic": "globe",
@@ -2115,6 +2073,20 @@
    "geo": "unknown"
   },
   {
+   "id": "SBFzGV-2gHg",
+   "r": "us",
+   "o": "Fox News",
+   "t": "DETAILS: Cockpit voice recorder found at Learjet crash site",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=SBFzGV-2gHg",
+   "img": "https://i.ytimg.com/vi/SBFzGV-2gHg/hqdefault.jpg",
+   "up": "2026-11-10",
+   "added": "2026-11-11T01:53:26.407838+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
    "id": "wiuOCjS62JI",
    "r": "world",
    "o": "Sky News",
@@ -2188,7 +2160,7 @@
    "id": "5lPAcrY3-Sc",
    "r": "world",
    "o": "BBC News",
-   "t": "Is Donald Trump changing his foreign policy? | The Global Story",
+   "t": "Where is America's foreign policy heading next? ​| The Global Story",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=5lPAcrY3-Sc",
@@ -2258,11 +2230,11 @@
  "ledes": [
   {
    "o": "CBS News",
-   "h": "Kennedy family members join lawsuit to block Trump's triumphal arch",
-   "u": "https://www.cbsnews.com/news/kennedy-family-trump-triumphal-arch/",
-   "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/05/c696b995-2ef3-4585-86f6-b4f0b38663a1/thumbnail/1200x630g2/8d84ab5b83c9da43c226190fefb974b1/screenshot-2026-11-05-at-1-22-21-pm.png",
-   "w": "Tue 8:23 p.m.",
-   "iso": "2026-11-11T01:23:00+00:00"
+   "h": "House blocks Massie's effort to impeach Hegseth",
+   "u": "https://www.cbsnews.com/news/massie-hegseth-impeachment/",
+   "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/10/2bd98318-6cf4-4186-b8a7-b34f5b11e999/thumbnail/1200x630g6/82be53a0f9215b09025da4dbee72e741/gettyimages-2304464396.jpg",
+   "w": "Tue 8:55 p.m.",
+   "iso": "2026-11-11T01:55:10+00:00"
   },
   {
    "o": "ABC News",
@@ -2298,11 +2270,11 @@
   },
   {
    "o": "NPR",
-   "h": "House votes to effectively end the impeachment effort against Pete Hegseth",
-   "u": "https://www.npr.org/2026/11/10/nx-s1-6036813/house-votes-to-effectively-end-the-impeachment-effort-against-pete-hegseth",
-   "img": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5879x3307+0+307/resize/1400/quality/85/format/webp/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F4d%2F4e%2F6decb6604829ba314b7dc99ddde8%2Fgettyimages-2304464396.jpg",
-   "w": "Tue 6:43 p.m.",
-   "iso": "2026-11-10T23:43:11+00:00"
+   "h": "Federal government failed to hold Epstein accountable, Republican committee says",
+   "u": "https://www.npr.org/2026/11/10/nx-s1-6036135/federal-government-failed-to-hold-epstein-accountable-republican-committee-says",
+   "img": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+0/resize/1400/quality/85/format/webp/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fe0%2F45%2Fffc72e00436fb1bd4bc7655ebe96%2Fap26161511274406.jpg",
+   "w": "Tue 8:51 p.m.",
+   "iso": "2026-11-11T01:51:23+00:00"
   },
   {
    "o": "The Hill",
@@ -2599,13 +2571,6 @@
     "outlet": "BNN Bloomberg",
     "title": "Canada amends, extends tariff relief program beyond U.S. steel imports",
     "url": "https://www.bnnbloomberg.ca/tariffs/2026/11/09/ottawa-amends-extends-tariff-relief-program-beyond-us-steel-imports/"
-   },
-   {
-    "t": "Sun 12:00 p.m.",
-    "iso": "2026-11-08T17:00:00+00:00",
-    "outlet": "CBC News",
-    "title": "Canada’s unlikely trade war influencer fighting for the little guys",
-    "url": "https://www.cbc.ca/player/play/video/9.7412893"
    }
   ],
   "usmedia": []
@@ -2616,8 +2581,9 @@
    "Good evening. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
    "Brampton hasn’t built a vehicle since 2023, but now, it’s being sold and the news is hitting home in Windsor, The Canadian Press reports.",
    "Tax changes and benefits you may have missed in Budget 2026, CP24 reports.",
-   "Democrat Doris Matsui wins reelection to U.S. House in California’s 7th Congressional District, The Associated Press reports.",
    "US House Republicans block Pete Hegseth impeachment effort, Al Jazeera reports.",
+   "Democrat Doris Matsui wins reelection to U.S. House in California’s 7th Congressional District, The Associated Press reports.",
+   "Chinese businesswoman Alice Huang has been thrust into the spotlight because of her links with Nvidia CEO Jensen Huang, The Associated Press reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
   ]
  },
@@ -2962,11 +2928,11 @@
    "city": "Winnipeg",
    "tz": "America/Winnipeg",
    "world": false,
-   "w": "Flooding",
-   "u": "https://www.cbc.ca/news/canada/manitoba/dauphin-hospital-ndp-tour-flood-9.7417260?cmp=rss",
-   "title": "Vital care returns to Dauphin, Man., hospital months after devastating flood",
-   "outlet": "CBC News",
-   "t": "Tue 7:51 p.m.",
+   "w": "Health",
+   "u": "https://www.narcity.com/dauphin-hospital-restoration-progressing-kinew",
+   "title": "Dauphin hospital services continue to be restored, says Kinew",
+   "outlet": "Narcity",
+   "t": "Tue 8:44 p.m.",
    "hot": false
   },
   {
@@ -2978,7 +2944,7 @@
    "title": "Alberta government facing scrutiny over bourbon distilleries tour in Kentucky",
    "outlet": "CTV News",
    "t": "Tue 7:52 p.m.",
-   "hot": true
+   "hot": false
   },
   {
    "city": "Vancouver",
@@ -3028,12 +2994,12 @@
    "city": "London",
    "tz": "Europe/London",
    "world": true,
-   "w": "Attacks",
-   "u": "https://www.nbcnews.com/world/united-kingdom/us-charges-3-men-plotting-multiple-terrorist-attacks-planned-attack-uk-rcna608647",
-   "title": "U.S. charges 3 men with plotting multiple terror attacks, including planned attack against U.K. airbase",
-   "outlet": "NBC News",
-   "t": "Tue 8:22 p.m.",
-   "hot": true
+   "w": "Russia",
+   "u": "https://www.cbsnews.com/news/american-soldier-spying-russia-arrest-uk/",
+   "title": "U.S. soldier accused of spying linked to Russia arrested in the U.K.",
+   "outlet": "CBS News",
+   "t": "Tue 7:50 p.m.",
+   "hot": false
   }
  ],
  "bigweek": [],
@@ -3045,8 +3011,8 @@
    "iso": "2026-11-11T01:29:00+00:00",
    "title": "U.S. calls for new Europe security at Russia-Ukraine talks",
    "summary": "Ukrainian President Volodymyr Zelenskyy later said the talks were “constructive and quite substantive.”",
-   "outlet": "The Japan Times (AFP), Kyiv Independent, CBS News, The Guardian, CBC News (AP), Fox News, BBC News, Al Jazeera",
-   "n": 8,
+   "outlet": "The Japan Times (AFP), Kyiv Independent, CBS News, The Guardian, CBC News (AP), The Japan Times, Fox News, BBC News, Al Jazeera",
+   "n": 9,
    "url": "https://www.japantimes.co.jp/news/2026/11/11/world/politics/us-europe-russia-ukraine-talks/",
    "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/11/573329.jpg?v=3.1"
   },
@@ -3061,6 +3027,30 @@
    "n": 7,
    "url": "https://www.theguardian.com/us-news/live/2026/nov/10/donald-trump-pete-hegseth-thomas-massie-republicans-iran-war-impeachment-midterms-latest-news-updates",
    "img": "https://i.guim.co.uk/img/media/90fd5e65c58f923c6fc4059a2197568133881e15/947_0_4715_3774/master/4715.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=8ac179d8d6a2a2899b0af66832274c70"
+  },
+  {
+   "desk": "us",
+   "pic": "podium",
+   "t": "Tue 8:00 p.m.",
+   "iso": "2026-11-11T01:00:30+00:00",
+   "title": "Biden reveals letter Trump left him at White House that made it seem 'as if there were two Donald Trumps'",
+   "summary": "President Donald Trump's letter to former President Joe Biden, sent weeks after the January 6 Capitol riots in 2021, offered warm wishes, Biden's new memoir revealed.",
+   "outlet": "Fox News, CTV News + Toronto Star + Times Colonist + CKOM / PAnow (CP), The Hill, Al Jazeera, Toronto Sun, NBC News, CTV News",
+   "n": 7,
+   "url": "https://www.foxnews.com/media/biden-reveals-letter-trump-left-him-white-house-made-seem-as-were-two-donald-trumps",
+   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2025/12/donald-trump-joe-biden.jpg"
+  },
+  {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Tue 8:02 p.m.",
+   "iso": "2026-11-11T01:02:52+00:00",
+   "title": "Nvidia's trillion-dollar bind: Can it afford to lose Jensen Huang?",
+   "summary": "Other CEOs have been ousted over undisclosed relationships, but Nvidia's inquiry shines a spotlight on how closely the chipmaker's fortunes are tied to its co-founder.",
+   "outlet": "CBS News, BBC News, The Hill, CityNews Montreal, NBC News, CBC News (AP)",
+   "n": 6,
+   "url": "https://www.cbsnews.com/news/jensen-huang-affair-nvidia-ceo-dilemma/",
+   "img": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/11/10/09c045e3-d878-444e-af00-3f332554c88a/thumbnail/1200x630/9dce37ca103c46ecae835d57156dfca0/gettyimages-2300708840.jpg"
   },
   {
    "desk": "world",
@@ -3099,42 +3089,6 @@
    "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/05/c696b995-2ef3-4585-86f6-b4f0b38663a1/thumbnail/1200x630g2/8d84ab5b83c9da43c226190fefb974b1/screenshot-2026-11-05-at-1-22-21-pm.png"
   },
   {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Tue 8:07 p.m.",
-   "iso": "2026-11-11T01:07:45+00:00",
-   "title": "Anti-Israel agitators swarm Biden in Ireland and hurl object at motorcade",
-   "summary": "Video shows protesters throwing an object and screaming at Joe Biden's motorcade outside Trinity College Dublin, where Hunter Biden accepted a prestigious award.",
-   "outlet": "Fox News, CBS News, CTV News + Toronto Star + Times Colonist + The Canadian Press (via Winnipeg Free Press) + 1 more, The Hill, Al Jazeera",
-   "n": 5,
-   "url": "https://www.foxnews.com/politics/anti-israel-agitators-swarm-biden-ireland-hurl-object-motorcade",
-   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/biden-ireland.jpg"
-  },
-  {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Tue 6:08 p.m.",
-   "iso": "2026-11-10T23:08:07+00:00",
-   "title": "WARMINGTON: Sale of Stellantis plant in Brampton puts Canada at ‘breaking point,’ Pierre Poilievre says",
-   "summary": "",
-   "outlet": "Toronto Sun, CTV News + CP24 + BNN Bloomberg + CKOM / PAnow + 1 more, Toronto Star, CBC News, Global News",
-   "n": 5,
-   "url": "https://torontosun.com/news/local-news/stellantis-sale-puts-canada-at-breaking-point-pierre-poilievre",
-   "img": ""
-  },
-  {
-   "desk": "us",
-   "pic": "podium",
-   "t": "Tue 6:07 p.m.",
-   "iso": "2026-11-10T23:07:13+00:00",
-   "title": "Bernie Sanders says he won’t support Chuck Schumer for Senate majority leader",
-   "summary": "Sens. Sanders and Elissa Slotkin called for new leadership, but neither proposed an alternative. Sen. Chris Van Hollen of Maryland is considering challenging Schumer.",
-   "outlet": "NBC News + Politico, PBS NewsHour (AP), The Guardian, Toronto Star, The Hill",
-   "n": 5,
-   "url": "https://www.nbcnews.com/politics/congress/bernie-sanders-wont-support-chuck-schumer-senate-democrats-leader-rcna608633",
-   "img": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-11/261110-chuck-schumer-sjr-1602-859a8e.jpg"
-  },
-  {
    "desk": "business",
    "pic": "chart",
    "t": "Tue 8:09 p.m.",
@@ -3147,16 +3101,28 @@
    "img": "https://i.cbc.ca/ais/45c48014-1b4c-4fc5-bea6-2cb33edd500c,1794353762425/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C75%2C5712%2C3213%29%3BResize%3D620"
   },
   {
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Tue 6:08 p.m.",
+   "iso": "2026-11-10T23:08:07+00:00",
+   "title": "WARMINGTON: Sale of Stellantis plant in Brampton puts Canada at ‘breaking point,’ Pierre Poilievre says",
+   "summary": "",
+   "outlet": "Toronto Sun, CTV News + CP24 + BNN Bloomberg + CKOM / PAnow + 1 more, CBC News, Global News",
+   "n": 4,
+   "url": "https://torontosun.com/news/local-news/stellantis-sale-puts-canada-at-breaking-point-pierre-poilievre",
+   "img": ""
+  },
+  {
    "desk": "us",
    "pic": "podium",
-   "t": "Tue 5:58 p.m.",
-   "iso": "2026-11-10T22:58:32+00:00",
-   "title": "Supreme Court rejects NWT woman’s appeal over truck death",
-   "summary": "The Supreme Court of Canada dismissed an NWT woman's appeal of her conviction for dangerous driving causing the death of a man in Yellowknife.",
-   "outlet": "Cabin Radio, The Hill, CBC News, CP24",
+   "t": "Tue 6:07 p.m.",
+   "iso": "2026-11-10T23:07:13+00:00",
+   "title": "Bernie Sanders says he won’t support Chuck Schumer for Senate majority leader",
+   "summary": "Sens. Sanders and Elissa Slotkin called for new leadership, but neither proposed an alternative. Sen. Chris Van Hollen of Maryland is considering challenging Schumer.",
+   "outlet": "NBC News + Politico, Toronto Star + PBS NewsHour (AP), The Guardian, The Hill",
    "n": 4,
-   "url": "https://cabinradio.ca/319639/news/justice/supreme-court-rejects-nwt-womans-appeal-over-truck-death/",
-   "img": "https://cabinradio.ca/wp-content/uploads/2026/09/20260922-SupremeCourtofCanada-NBu.jpg"
+   "url": "https://www.nbcnews.com/politics/congress/bernie-sanders-wont-support-chuck-schumer-senate-democrats-leader-rcna608633",
+   "img": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-11/261110-chuck-schumer-sjr-1602-859a8e.jpg"
   },
   {
    "desk": "world",
@@ -3169,6 +3135,18 @@
    "n": 3,
    "url": "https://www.cbc.ca/news/world/vazquez-wedding-charges-9.7417199",
    "img": "https://i.cbc.ca/ais/b8ed5394-580d-476f-beb6-f6d4b29014f8,1794348182695/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1920%2C1080%29%3BResize%3D620"
+  },
+  {
+   "desk": "us",
+   "pic": "podium",
+   "t": "Tue 5:58 p.m.",
+   "iso": "2026-11-10T22:58:32+00:00",
+   "title": "Supreme Court rejects NWT woman’s appeal over truck death",
+   "summary": "The Supreme Court of Canada dismissed an NWT woman's appeal of her conviction for dangerous driving causing the death of a man in Yellowknife.",
+   "outlet": "Cabin Radio, The Hill, CBC News",
+   "n": 3,
+   "url": "https://cabinradio.ca/319639/news/justice/supreme-court-rejects-nwt-womans-appeal-over-truck-death/",
+   "img": "https://cabinradio.ca/wp-content/uploads/2026/09/20260922-SupremeCourtofCanada-NBu.jpg"
   },
   {
    "desk": "world",
@@ -3185,14 +3163,14 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Tue 8:23 p.m.",
-   "iso": "2026-11-11T01:23:43+00:00",
-   "title": "Missing 11-month-old boy taken by father found buried alive after 24 hours: Sheriff",
-   "summary": "The baby, Koah Sharpe, was found Tuesday afternoon \"clinging to life,\" after spending what is believed to have been 24 hours buried, according to authorities.",
-   "outlet": "ABC News, NBC News",
+   "t": "Tue 8:46 p.m.",
+   "iso": "2026-11-11T01:46:04+00:00",
+   "title": "US Treasury chief moved to military base after alleged Iranian threats: Report",
+   "summary": "",
+   "outlet": "Middle East Eye, The Guardian",
    "n": 2,
-   "url": "https://abcnews.com/US/missing-11-month-boy-father-found-buried-alive/story?id=138029746",
-   "img": "https://i.abcnewsfe.com/a/9a6c27d2-e03b-4543-9951-38739b7a7674/arrest-ht-er-261110_1794352739039_hpMain_16x9.jpg?w=1600"
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-treasury-chief-moved-military-base-after-alleged-iranian-threats",
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/A%20displaced%20Palestinian%20boy%20eats%20food%20being%20distributed%20by%20a%20charity%20kitchen%20at%20the%20Nuseirat%20camp%20for%20refugees%2C%20in%20central%20Gaza%20Strip%20on%2010%20November%2C%202026%20%28AFP%29.jpg"
   },
   {
    "desk": "world",
@@ -3219,18 +3197,6 @@
    "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/09/greg-sankey-sec-football-media-day.jpg"
   },
   {
-   "desk": "us",
-   "pic": "podium",
-   "t": "Tue 6:45 p.m.",
-   "iso": "2026-11-10T23:45:46+00:00",
-   "title": "The incoming Senate Appropriations chair calls for December government funding punt",
-   "summary": "",
-   "outlet": "Politico, The Hill",
-   "n": 2,
-   "url": "https://www.politico.com/live-updates/2026/11/10/congress/murray-wants-a-stopgap-01160202",
-   "img": ""
-  },
-  {
    "desk": "politics",
    "pic": "parliament",
    "t": "Tue 6:31 p.m.",
@@ -3245,14 +3211,26 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Tue 8:24 p.m.",
-   "iso": "2026-11-11T01:24:52+00:00",
-   "title": "'I believed her,' defendant says of Galloway accuser in defamation trial",
-   "summary": "A defendant in Steven Galloway’s defamation lawsuit has testified about how unproven allegations of rape and sexual assault against the author and writing professor came to light in late 2015, against a backdrop of criticism over how Galloway’s employer, the University of British Columbia, was handling such complaints.",
-   "outlet": "CTV News + Toronto Star + Times Colonist + The Canadian Press (via Winnipeg Free Press) + 2 more",
+   "t": "Tue 5:49 p.m.",
+   "iso": "2026-11-10T22:49:20+00:00",
+   "title": "Despite denial, Trump was briefed on spy concerns related to Nvidia CEO during trip to China: CNN source",
+   "summary": "Marco Rubio briefed Donald Trump on intelligence that Nvidia CEO Jensen Huang was in a relationship with a potential Chinese spy as they traveled to China in May aboard Air Force One, a source familiar with the matter told CNN.",
+   "outlet": "CTV News + CP24 (CP), The Hill",
+   "n": 2,
+   "url": "https://www.ctvnews.ca/world/article/despite-denial-trump-was-briefed-on-spy-concerns-related-to-nvidia-ceo-during-trip-to-china-source-says/",
+   "img": "https://www.ctvnews.ca/resizer/v2/TWZ63FX4CBA2PMKJTXG7Y4P3IE.jpeg?smart=true&auth=619867c22f80ab7fbd46824d100197018713a1b739aa3a80ead08ef0f0dc75d0&width=1200&height=630"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Tue 8:44 p.m.",
+   "iso": "2026-11-11T01:44:01+00:00",
+   "title": "Dauphin hospital services continue to be restored, says Kinew",
+   "summary": "Dauphin hospital restoration progressing: Kinew",
+   "outlet": "Narcity + CTV News (CP)",
    "n": 1,
-   "url": "https://www.ctvnews.ca/vancouver/article/i-believed-her-defendant-says-of-galloway-accuser-in-defamation-trial/",
-   "img": "https://www.ctvnews.ca/resizer/v2/56PKVRGA2VOXTTOFVAEY4VVSPE.jpg?smart=true&auth=8006c0fb55d5934775f74d95b2203129614e9205af6b66b8feaa86bbfbb01e8e&width=1200&height=630"
+   "url": "https://www.narcity.com/dauphin-hospital-restoration-progressing-kinew",
+   "img": "https://www.narcity.com/media-library/dauphin-hospital-restoration-progressing-kinew.jpg?id=68655309&width=1200&height=600&coordinates=0%2C175%2C0%2C175"
   },
   {
    "desk": "politics",
@@ -3297,7 +3275,7 @@
    "iso": "2026-11-11T00:08:42+00:00",
    "title": "Climate activists award Carney, other absent world leaders 'fossil of the day' title",
    "summary": "",
-   "outlet": "Canada's National Observer + Toronto Star + CityNews Winnipeg + CityNews Vancouver + 8 more (CP)",
+   "outlet": "Canada's National Observer + Toronto Star + CityNews Winnipeg + CityNews Vancouver + 8 more",
    "n": 1,
    "url": "https://www.nationalobserver.com/2026/11/10/news/climate-activists-award-carney-other-absent-world-leaders-fossil-day-title",
    "img": ""
@@ -3385,18 +3363,6 @@
    "n": 1,
    "url": "https://www.ctvnews.ca/atlantic/article/maritime-provinces-debt-costing-residents-fraser-institute/",
    "img": "https://www.ctvnews.ca/resizer/v2/PGOS3G2MHBASTPB2QCONTDH7HI.jpg?smart=true&auth=e0602a1a0aef05a5c5bae5962a832813e8f9d9bacab9d3262a88da2d49a68652&width=1200&height=630"
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Tue 5:58 p.m.",
-   "iso": "2026-11-10T22:58:30+00:00",
-   "title": "Credit card debt mounts amid Democrats’ push to cap interest rates",
-   "summary": "",
-   "outlet": "The Hill",
-   "n": 1,
-   "url": "https://thehill.com/business/6212089-democrats-push-interest-caps/",
-   "img": ""
   }
  ],
  "reads": [
@@ -3511,7 +3477,7 @@
     "Republicans block impeachment push against Pete Hegseth",
     "4 grizzly bears responsible for killing mother and daughter in B.C., officials say",
     "Protesters denounce Ovechkin's support for Putin as Capitals visit Senators in Ottawa",
-    "U.S. comedian Josh Johnson surprised by CBC journalist in viral video"
+    "The National | Hegseth impeachment derailed"
    ],
    "u": [
     "",
@@ -3519,7 +3485,7 @@
     "https://www.cbc.ca/news/world/hegseth-impeachment-resolution-reaction-9.7416083",
     "https://www.cbc.ca/news/canada/british-columbia/grizzly-bear-bella-coola-attack-update-9.7416743",
     "https://www.cbc.ca/news/canada/ottawa/protesters-denounce-ovechkin-s-support-for-putin-as-capitals-visit-senators-in-ottawa-9.7416605",
-    "https://www.cbc.ca/news/canada/british-columbia/jon-the-editor-josh-johnson-viral-comedy-9.7416381"
+    "https://www.cbc.ca/player/play/video/9.4236164"
    ]
   },
   {
@@ -3802,7 +3768,7 @@
     "url": "https://www.youtube.com/watch?v=oGVlSxzwD0I",
     "img": "https://i.ytimg.com/vi/oGVlSxzwD0I/hqdefault.jpg",
     "story": "Senate considers bills on permitting, survivor justice as GOP mulls fu",
-    "watching": "72",
+    "watching": "84",
     "reports": [
      {
       "outlet": "The Hill",
@@ -3820,7 +3786,7 @@
     "url": "https://www.youtube.com/watch?v=Lhk3Gu0YeRs",
     "img": "https://i.ytimg.com/vi/Lhk3Gu0YeRs/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "374",
+    "watching": "373",
     "rolling": true
    },
    {
@@ -3830,7 +3796,7 @@
     "url": "https://www.youtube.com/watch?v=0OKqu5wJAnQ",
     "img": "https://i.ytimg.com/vi/0OKqu5wJAnQ/hqdefault.jpg",
     "story": "Denita Wawn Master Builders Australia speaks to National Press Club",
-    "watching": "43"
+    "watching": "51"
    }
   ],
   "upcoming": [
@@ -3900,6 +3866,15 @@
  "pm": [],
  "blogs_auto": [
   {
+   "net": "Middle East Eye",
+   "story": "US Treasury chief moved to military base after alleged Iranian threats",
+   "title": "US Treasury chief moved to military base after alleged Iranian threats: Report",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-treasury-chief-moved-military-base-after-alleged-iranian-threats",
+   "updated": "2026-11-11T01:46:04+00:00",
+   "ended": false,
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/A%20displaced%20Palestinian%20boy%20eats%20food%20being%20distributed%20by%20a%20charity%20kitchen%20at%20the%20Nuseirat%20camp%20for%20refugees%2C%20in%20central%20Gaza%20Strip%20on%2010%20November%2C%202026%20%28AFP%29.jpg"
+  },
+  {
    "net": "Politico",
    "story": "Madeleine Dean ‘considering’ Senate bid against Fetterman",
    "title": "Madeleine Dean ‘considering’ Senate bid against Fetterman",
@@ -3909,13 +3884,31 @@
    "img": ""
   },
   {
+   "net": "Middle East Eye",
+   "story": "‘All I can do is hug my children and cry’: Palestinians in Gaza face d",
+   "title": "‘All I can do is hug my children and cry’: Palestinians in Gaza face deadly winter floods",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/all-i-can-do-hug-my-children-and-cry-palestinians-gaza-face-deadly",
+   "updated": "2026-11-11T00:53:04+00:00",
+   "ended": false,
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/A%20displaced%20Palestinian%20boy%20eats%20food%20being%20distributed%20by%20a%20charity%20kitchen%20at%20the%20Nuseirat%20camp%20for%20refugees%2C%20in%20central%20Gaza%20Strip%20on%2010%20November%2C%202026%20%28AFP%29.jpg"
+  },
+  {
    "net": "Al Jazeera",
    "story": "Iran war live: Hegseth survives impeachment bid; Iran denies US talks",
    "title": "Iran war live: Hegseth survives impeachment bid; Iran denies US talks",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/11/iran-war-live-hegseth-survives-impeachment-bid-iran-denies-us-talks?traffic_source=rss",
-   "updated": "2026-11-11T01:45:00+00:00",
+   "updated": "2026-11-11T01:47:45+00:00",
    "ended": false,
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/epa_6af3ac1ba74e-1794354203.jpg?resize=1920%2C1440"
+  },
+  {
+   "net": "Middle East Eye",
+   "story": "US Republicans derail bid to impeach Pentagon chief",
+   "title": "US Republicans derail bid to impeach Pentagon chief",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-house-votes-derail-impeachment-defense-secretary-hegseth",
+   "updated": "2026-11-10T23:51:30+00:00",
+   "ended": false,
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/A%20displaced%20Palestinian%20boy%20eats%20food%20being%20distributed%20by%20a%20charity%20kitchen%20at%20the%20Nuseirat%20camp%20for%20refugees%2C%20in%20central%20Gaza%20Strip%20on%2010%20November%2C%202026%20%28AFP%29.jpg"
   },
   {
    "net": "Politico",
@@ -3927,6 +3920,15 @@
    "img": ""
   },
   {
+   "net": "Middle East Eye",
+   "story": "US House Democrat leader Jeffries will retain position despite opposit",
+   "title": "US House Democrat leader Jeffries will retain position despite opposition, sources say",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-house-democrat-leader-jeffries-will-retain-position-despite",
+   "updated": "2026-11-10T23:30:24+00:00",
+   "ended": false,
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/A%20displaced%20Palestinian%20boy%20eats%20food%20being%20distributed%20by%20a%20charity%20kitchen%20at%20the%20Nuseirat%20camp%20for%20refugees%2C%20in%20central%20Gaza%20Strip%20on%2010%20November%2C%202026%20%28AFP%29.jpg"
+  },
+  {
    "net": "The Hill",
    "story": "Live updates: Hegseth impeachment effort fails; GOP picks Thune, Jorda",
    "title": "Live updates: Hegseth impeachment effort fails; GOP picks Thune, Jordan to lead",
@@ -3934,6 +3936,15 @@
    "updated": "2026-11-10T23:20:03+00:00",
    "ended": false,
    "img": ""
+  },
+  {
+   "net": "Middle East Eye",
+   "story": "Japan pledges $1.97m to support Gaza health response",
+   "title": "Japan pledges $1.97m to support Gaza health response",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/japan-pledges-197m-support-gaza-health-response",
+   "updated": "2026-11-10T23:05:46+00:00",
+   "ended": false,
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/A%20displaced%20Palestinian%20boy%20eats%20food%20being%20distributed%20by%20a%20charity%20kitchen%20at%20the%20Nuseirat%20camp%20for%20refugees%2C%20in%20central%20Gaza%20Strip%20on%2010%20November%2C%202026%20%28AFP%29.jpg"
   }
  ],
  "related": {
@@ -3964,14 +3975,6 @@
      "outlet": "CBC News",
      "title": "Q&A | N.W.T. MP says energy, housing among projects funded by federal budget",
      "url": "https://www.cbc.ca/news/canada/north/q-a-n-w-t-mp-says-energy-housing-among-projects-funded-by-federal-budget-9.7415110?cmp=rss",
-     "tie": "Federal budget"
-    },
-    {
-     "t": "Mon 11:22 a.m.",
-     "iso": "2026-11-09T16:22:11+00:00",
-     "outlet": "Toronto Star",
-     "title": "Ottawa outlines details of $600M for CanCon in latest budget",
-     "url": "https://www.thestar.com/politics/federal/ottawa-outlines-details-of-600m-for-cancon-in-latest-budget/article_f0803515-9d8d-520b-9a0a-9eadd14a32b8.html",
      "tie": "Federal budget"
     }
    ],
@@ -4012,14 +4015,6 @@
      "title": "Canada amends, extends tariff relief program beyond U.S. steel imports",
      "url": "https://www.bnnbloomberg.ca/tariffs/2026/11/09/ottawa-amends-extends-tariff-relief-program-beyond-us-steel-imports/",
      "tie": "Canada and the U.S."
-    },
-    {
-     "t": "Mon 1:30 p.m.",
-     "iso": "2026-11-09T18:30:00+00:00",
-     "outlet": "Toronto Star",
-     "title": "Doug Ford blames tariffs for Republican losses in U.S. midterm elections",
-     "url": "https://www.thestar.com/politics/provincial/doug-ford-blames-tariffs-for-republican-losses-in-u-s-midterm-elections/article_bd6a834f-e106-41c6-ade3-c5fa57ed1c7f.html",
-     "tie": "Canada and the U.S."
     }
    ],
    "views": []
@@ -4029,7 +4024,7 @@
   "auto-2e9e207b": {
    "story": "Democrat Doris Matsui wins reelection to U.S. House in California's 7th Congressional District",
    "us": true,
-   "specific": 2,
+   "specific": 1,
    "stories": [
     {
      "t": "Tue 4:10 p.m.",
@@ -4037,15 +4032,6 @@
      "outlet": "CBC News",
      "title": "New mixed-income apartment complex in Winnipeg's Exchange District ready to welcome tenants",
      "url": "https://www.cbc.ca/news/canada/manitoba/winnipeg-market-lands-apartment-complex-opens-9.7416888?cmp=rss",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Mon 1:30 p.m.",
-     "iso": "2026-11-09T18:30:00+00:00",
-     "outlet": "Toronto Star",
-     "title": "Doug Ford blames tariffs for Republican losses in U.S. midterm elections",
-     "url": "https://www.thestar.com/politics/provincial/doug-ford-blames-tariffs-for-republican-losses-in-u-s-midterm-elections/article_bd6a834f-e106-41c6-ade3-c5fa57ed1c7f.html",
      "ca": true,
      "tie": ""
     },
@@ -4064,6 +4050,24 @@
   }
  },
  "canangle_live": {
+  "https://www.middleeasteye.net/live-blog/live-blog-update/us-treasury-chief-moved-military-base-after-alleged-iranian-threats": {
+   "story": "US Treasury chief moved to military base after alleged Iranian threats: Report",
+   "us": true,
+   "specific": 1,
+   "stories": [
+    {
+     "t": "Tue 8:49 a.m.",
+     "iso": "2026-11-10T13:49:31+00:00",
+     "outlet": "CP24",
+     "title": "Canada reimposes sanctions on 11 Iranian entities for contributing to nuclear activities",
+     "url": "https://www.cp24.com/news/world/2026/11/10/canada-reimposes-sanctions-on-11-iranian-entities-for-contributing-to-nuclear-activities/",
+     "ca": true,
+     "tie": ""
+    }
+   ],
+   "official": [],
+   "views": []
+  },
   "https://thehill.com/homenews/campaign/6194420-calvert-wins-ca-40th-district/": {
    "story": "California GOP Rep. Ken Calvert defeats Rep. Young Kim in race for merged 40th District",
    "us": true,
@@ -4099,139 +4103,7 @@
    ]
   }
  },
- "bds": [
-  {
-   "id": "bd-auto-405a88d8",
-   "auto": true,
-   "desk": "United States",
-   "status": "Developing",
-   "at": "2026-11-11T01:21:13+00:00",
-   "exact": true,
-   "img": "live/img/auto-405a88d8-a4bec8d78e.jpg",
-   "credit": "via CBC News",
-   "pic": "globe",
-   "h": "Republicans block impeachment push against Pete Hegseth",
-   "lede": "Republicans in the U.S. House of Representatives voted Tuesday to sideline a resolution that aimed to impeach Secretary of War Pete Hegseth.",
-   "newl": "Now carried by 12 independent newsrooms.",
-   "rows": [
-    [
-     "The Guardian",
-     "Republicans secure majority of votes to send articles introduced by Thomas Massie to committee, meaning there won’t be a full vote on chamber floor",
-     [
-      1
-     ]
-    ],
-    [
-     "BBC News",
-     "Trump welcomes the outcome, praising Hegseth as a \"Great American Patriot\", but Democrats can try again next year.",
-     [
-      2
-     ]
-    ],
-    [
-     "ABC News",
-     "Hegseth framed the effort as being directed at U.S. service members.",
-     [
-      3
-     ]
-    ],
-    [
-     "CBS News",
-     "The impeachment resolution focuses on Defense Secretary Pete Hegseth's involvement in some of the most controversial episodes of President Trump's second term.",
-     [
-      4
-     ]
-    ],
-    [
-     "CBC News",
-     "Republicans in the U.S. House of Representatives voted Tuesday to sideline a resolution that aimed to impeach Secretary of War Pete Hegseth.",
-     [
-      5
-     ]
-    ],
-    [
-     "CTV News",
-     "The U.S. House turned aside a resolution to impeach U.S. Defense Secretary Pete Hegseth, halting an effort to remove the Pentagon chief for his conduct in office and his handling of the war in Iran.",
-     [
-      7
-     ]
-    ]
-   ],
-   "src": [
-    [
-     "The Guardian",
-     "Pentagon declares ‘total victory’ after House Republicans block effort to impeach Pete Hegseth – US politics live",
-     "https://www.theguardian.com/us-news/live/2026/nov/10/donald-trump-pete-hegseth-thomas-massie-republicans-iran-war-impeachment-midterms-latest-news-updates"
-    ],
-    [
-     "BBC News",
-     "US House blocks bid to impeach Defence Secretary Pete Hegseth, for now",
-     "https://www.bbc.co.uk/news/articles/cxly4y5jzl0qo?at_medium=RSS&at_campaign=rss"
-    ],
-    [
-     "ABC News",
-     "House tables Hegseth impeachment, effectively killing it in current Congress",
-     "https://abcnews.com/US/hegseth-dismisses-impeachment-effort-political-spectacle/story?id=138002466"
-    ],
-    [
-     "CBS News",
-     "Why did Hegseth face an impeachment push? Inside the 8 articles",
-     "https://www.cbsnews.com/news/pete-hegseth-impeachment-articles/"
-    ],
-    [
-     "CBC News",
-     "Republicans block impeachment push against Pete Hegseth",
-     "https://www.cbc.ca/news/world/hegseth-impeachment-resolution-reaction-9.7416083"
-    ],
-    [
-     "The Hill",
-     "Cruz says Hegseth will resign, be fired or get impeached",
-     "https://thehill.com/homenews/6212332-ted-cruz-hegseth-departure-impeachment-talks/"
-    ],
-    [
-     "CTV News",
-     "Effort to impeach Pete Hegseth derailed by House Republicans",
-     "https://www.ctvnews.ca/world/article/us-house-republicans-quash-effort-to-impeach-defense-secretary-hegseth/"
-    ],
-    [
-     "CP24",
-     "Effort to impeach Pete Hegseth derailed by House Republicans",
-     "https://www.cp24.com/news/world/2026/11/10/us-house-republicans-quash-effort-to-impeach-defense-secretary-hegseth/"
-    ],
-    [
-     "Al Jazeera",
-     "Iran war live: Hegseth survives impeachment bid; Iran denies US talks",
-     "https://www.aljazeera.com/news/liveblog/2026/11/11/iran-war-live-hegseth-survives-impeachment-bid-iran-denies-us-talks?traffic_source=rss"
-    ],
-    [
-     "PBS NewsHour",
-     "House rejects Hegseth impeachment as GOP selects Jordan and Thune as leaders",
-     "https://www.pbs.org/newshour/show/house-rejects-hegseth-impeachment-as-gop-selects-jordan-and-thune-as-leaders"
-    ],
-    [
-     "NBC News",
-     "House votes to block motion to impeach Secretary of Defense Pete Hegseth",
-     "https://www.nbcnews.com/video/house-votes-to-block-motion-to-impeach-secretary-of-defense-pete-hegseth-273236037919"
-    ],
-    [
-     "The Japan Times",
-     "U.S. House blocks path to impeach Defense Secretary Hegseth",
-     "https://www.japantimes.co.jp/news/2026/11/11/world/politics/us-house-impeach-hegseth/"
-    ],
-    [
-     "Fox News",
-     "House GOP leaders block Massie's Hegseth impeachment push",
-     "https://www.foxnews.com/politics/house-gop-leaders-block-massie-hegseth-impeachment-push"
-    ],
-    [
-     "Toronto Star",
-     "House Republicans quash effort to impeach Defense Secretary Hegseth",
-     "https://www.thestar.com/news/world/united-states/hegseth-is-set-for-his-first-pentagon-news-briefing-since-may-as-he-faces-possible-impeachment/article_18b7252a-c2a3-5073-a074-b09ce81fe5ac.html"
-    ]
-   ],
-   "lead": 5
-  }
- ],
+ "bds": [],
  "geo": {
   "-YVOgH-f4qQ": {
    "v": "unknown",
