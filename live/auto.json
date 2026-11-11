@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-11T11:18:03.678850+00:00",
- "checkedLabel": "Wed 6:18 a.m.",
+ "checked": "2026-11-11T11:22:41.050900+00:00",
+ "checkedLabel": "Wed 6:22 a.m.",
  "stories": [
   {
    "key": "top",
@@ -38,6 +38,15 @@
  ],
  "wire": [
   [
+   "Wed 6:14 a.m.",
+   "World",
+   "Ukraine’s Zelenskyy ‘happy’ with US envoys’ approach as Russia talks enter second day – Europe live",
+   "The Guardian",
+   "https://www.theguardian.com/world/live/2026/nov/11/europe-ukraine-russia-us-talks-abu-dhabi-zelenskyy-latest-news-updates",
+   "2026-11-11T11:14:55+00:00",
+   6
+  ],
+  [
    "Wed 6:11 a.m.",
    "Latest",
    "College football Week 11: Power conferences feature pivotal games topped by USC-Indiana",
@@ -54,6 +63,15 @@
    "https://www.ctvnews.ca/world/article/missing-baby-rescued-found-buried-alive-a-day-after-authorities-say-his-father-took-him/",
    "2026-11-11T11:10:31+00:00",
    2
+  ],
+  [
+   "Wed 6:08 a.m.",
+   "Politics",
+   "Burnham hails approval for two huge windfarm projects as ‘power under British control’ – UK politics live",
+   "The Guardian",
+   "https://www.theguardian.com/politics/live/2026/nov/11/andy-burnham-kemi-badenoch-pmqs-cop31-windfarms-europe-brexit-latest-news-updates",
+   "2026-11-11T11:08:57+00:00",
+   1
   ],
   [
    "Wed 6:08 a.m.",
@@ -75,30 +93,12 @@
   ],
   [
    "Wed 6:04 a.m.",
-   "Politics",
-   "Burnham hails approval for two huge windfarm projects as ‘power under British control’ – UK politics live",
-   "The Guardian",
-   "https://www.theguardian.com/politics/live/2026/nov/11/andy-burnham-kemi-badenoch-pmqs-cop31-windfarms-europe-brexit-latest-news-updates",
-   "2026-11-11T11:04:57+00:00",
-   1
-  ],
-  [
-   "Wed 6:04 a.m.",
    "World",
    "Minivan crashes into people outside Los Angeles metro station, killing 3",
    "CTV News",
    "https://www.ctvnews.ca/world/article/minivan-crashes-into-people-outside-los-angeles-metro-station-killing-3/",
    "2026-11-11T11:04:14+00:00",
    3
-  ],
-  [
-   "Wed 6:02 a.m.",
-   "World",
-   "Ukraine’s Zelenskyy ‘happy’ with US envoys’ approach as Russia talks enter second day – Europe live",
-   "The Guardian",
-   "https://www.theguardian.com/world/live/2026/nov/11/europe-ukraine-russia-us-talks-abu-dhabi-zelenskyy-latest-news-updates",
-   "2026-11-11T11:02:51+00:00",
-   6
   ],
   [
    "Wed 6:00 a.m.",
@@ -152,7 +152,7 @@
    "CTV News",
    "https://www.ctvnews.ca/politics/article/budget-2026-shifts-liberal-governments-language-on-home-construction-targets/",
    "2026-11-11T10:47:44+00:00",
-   16
+   15
   ],
   [
    "Wed 5:38 a.m.",
@@ -206,7 +206,7 @@
    "CTV News",
    "https://www.ctvnews.ca/canada/article/canadians-gather-for-remembrance-day-ceremonies-across-the-country/",
    "2026-11-11T10:26:23+00:00",
-   16
+   15
   ],
   [
    "Wed 5:20 a.m.",
@@ -295,7 +295,7 @@
    "score": 21,
    "title": "First Nations Bank CEO says federal budget is a ‘generational’ opportunity for First Nations",
    "url": "https://www.aptnnews.ca/national-news/first-nations-bank-ceo-says-federal-budget-is-a-generational-opportunity-for-first-nations/",
-   "outlets": 20,
+   "outlets": 19,
    "why": [
     "National Newswatch #14",
     "National Newswatch #15"
@@ -326,20 +326,9 @@
    "score": 17,
    "title": "Canadians gather for Remembrance Day ceremonies across the country",
    "url": "https://www.ctvnews.ca/canada/article/canadians-gather-for-remembrance-day-ceremonies-across-the-country/",
-   "outlets": 17,
+   "outlets": 16,
    "why": [],
    "theme": ""
-  },
-  {
-   "score": 17,
-   "title": "Carney government actively involved in talks leading to Stellantis plant sale: sources",
-   "url": "https://www.ctvnews.ca/politics/article/carney-government-actively-involved-in-talks-leading-to-stellantis-plant-sale-sources/",
-   "outlets": 5,
-   "why": [
-    "National Newswatch #1",
-    "National Newswatch #3"
-   ],
-   "theme": "Canadian auto jobs"
   },
   {
    "score": 16,
@@ -348,6 +337,17 @@
    "outlets": 14,
    "why": [],
    "theme": ""
+  },
+  {
+   "score": 16,
+   "title": "Carney government actively involved in talks leading to Stellantis plant sale: sources",
+   "url": "https://www.ctvnews.ca/politics/article/carney-government-actively-involved-in-talks-leading-to-stellantis-plant-sale-sources/",
+   "outlets": 5,
+   "why": [
+    "National Newswatch #1",
+    "National Newswatch #4"
+   ],
+   "theme": "Canadian auto jobs"
   },
   {
    "score": 15,
@@ -591,14 +591,14 @@
     "words": [
      "construction",
      "language",
-     "targets",
      "liberal",
-     "shifts",
-     "budget"
+     "targets",
+     "budget",
+     "shifts"
     ],
     "score": 21,
     "outlets": 5,
-    "carriers": 20,
+    "carriers": 19,
     "tag": "Breaking",
     "title": "Budget 2026 shifts Liberal government's language on home construction targets",
     "url": "https://www.ctvnews.ca/politics/article/budget-2026-shifts-liberal-governments-language-on-home-construction-targets/",
@@ -698,14 +698,6 @@
      {
       "t": "Wed 4:00 a.m.",
       "iso": "2026-11-11T09:00:07+00:00",
-      "outlet": "Lethbridge Herald",
-      "title": "Budget 2026 shifts Liberal government’s language on home construction targets",
-      "url": "https://lethbridgeherald.com/news/national-news/2026/11/11/budget-2026-shifts-liberal-governments-language-on-home-construction-targets/",
-      "desc": ""
-     },
-     {
-      "t": "Wed 4:00 a.m.",
-      "iso": "2026-11-11T09:00:07+00:00",
       "outlet": "CityNews Winnipeg",
       "title": "Budget 2026 shifts Liberal government’s language on home construction targets",
       "url": "https://winnipeg.citynews.ca/2026/11/11/budget-2026-shifts-liberal-governments-language-on-home-construction-targets/",
@@ -758,6 +750,14 @@
       "title": "Budget 2026 shifts Liberal government’s language on home construction targets",
       "url": "https://calgary.citynews.ca/2026/11/11/budget-2026-shifts-liberal-governments-language-on-home-construction-targets/",
       "desc": ""
+     },
+     {
+      "t": "Wed 4:00 a.m.",
+      "iso": "2026-11-11T09:00:07+00:00",
+      "outlet": "CityNews",
+      "title": "Budget 2026 shifts Liberal government’s language on home construction targets",
+      "url": "https://toronto.citynews.ca/2026/11/11/budget-2026-shifts-liberal-governments-language-on-home-construction-targets/",
+      "desc": ""
      }
     ],
     "sources": [
@@ -779,11 +779,6 @@
         "outlet": "Times Colonist",
         "src": "The Canadian Press",
         "byline": "\"Craig Lord, The Canadian Press\" \r\n             \r\nC"
-       },
-       {
-        "outlet": "Lethbridge Herald",
-        "src": "The Canadian Press",
-        "byline": "{\"name\":\"Canadian Press\",\"@id\":\"https:\\/\\/l"
        },
        {
         "outlet": "CityNews Winnipeg",
@@ -817,6 +812,11 @@
        },
        {
         "outlet": "CityNews Calgary",
+        "src": "The Canadian Press",
+        "byline": "c2e6f3f5fe805acc41a6fdf\"}] \"Craig Lord, The Canadian Press\" News Staff \n\t\t\tBy"
+       },
+       {
+        "outlet": "CityNews",
         "src": "The Canadian Press",
         "byline": "c2e6f3f5fe805acc41a6fdf\"}] \"Craig Lord, The Canadian Press\" News Staff \n\t\t\tBy"
        },
@@ -847,10 +847,6 @@
         "url": "https://www.timescolonist.com/the-mix/budget-2026-shifts-liberal-governments-language-on-home-construction-targets-13004822"
        },
        {
-        "outlet": "Lethbridge Herald",
-        "url": "https://lethbridgeherald.com/news/national-news/2026/11/11/budget-2026-shifts-liberal-governments-language-on-home-construction-targets/"
-       },
-       {
         "outlet": "CityNews Winnipeg",
         "url": "https://winnipeg.citynews.ca/2026/11/11/budget-2026-shifts-liberal-governments-language-on-home-construction-targets/"
        },
@@ -877,6 +873,10 @@
        {
         "outlet": "CityNews Calgary",
         "url": "https://calgary.citynews.ca/2026/11/11/budget-2026-shifts-liberal-governments-language-on-home-construction-targets/"
+       },
+       {
+        "outlet": "CityNews",
+        "url": "https://toronto.citynews.ca/2026/11/11/budget-2026-shifts-liberal-governments-language-on-home-construction-targets/"
        },
        {
         "outlet": "Narcity",
@@ -911,9 +911,17 @@
      "BNN Bloomberg"
     ],
     "judgment": "national",
-    "judgment_why": "National: affects many people; carried across the country (7 cities).",
+    "judgment_why": "National: affects many people; carried across the country (8 cities).",
     "weight": 54,
     "videos": [
+     {
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=KL8bWxzazqE",
+      "title": "How will U.S. midterms and a new federal budget impact Canada's provinces? | Power & Politics",
+      "img": "https://i.ytimg.com/vi/KL8bWxzazqE/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
      {
       "net": "CityNews",
       "url": "https://www.youtube.com/watch?v=HaH25sJbcMw",
@@ -937,14 +945,6 @@
       "img": "https://i.ytimg.com/vi/w0jt5WQ3FXE/hqdefault.jpg",
       "rec": false,
       "up": ""
-     },
-     {
-      "net": "CBC News",
-      "url": "https://www.youtube.com/watch?v=KL8bWxzazqE",
-      "title": "How will U.S. midterms and a new federal budget impact Canada's provinces? | Power & Politics",
-      "img": "https://i.ytimg.com/vi/KL8bWxzazqE/hqdefault.jpg",
-      "rec": false,
-      "up": ""
      }
     ]
    },
@@ -955,10 +955,10 @@
      "brampton",
      "betrayal",
      "leading",
-     "talks",
-     "plant"
+     "plant",
+     "talks"
     ],
-    "score": 17,
+    "score": 16,
     "outlets": 4,
     "carriers": 6,
     "tag": "Developing",
@@ -1177,37 +1177,37 @@
     "leads_ca": true,
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (national desks).",
-    "weight": 51.0,
+    "weight": 50.0,
     "videos": [
      {
-      "net": "CP24",
-      "url": "https://www.youtube.com/watch?v=HEc1PvOFryA",
-      "title": "Roshel to buy Stellantis assembly plant in Brampton",
-      "img": "https://i.ytimg.com/vi/HEc1PvOFryA/hqdefault.jpg",
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=vl9ONBC-xFI",
+      "title": "What can the government do to save Stellantis jobs in Ontario? | Power & Politics",
+      "img": "https://i.ytimg.com/vi/vl9ONBC-xFI/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "CP24",
-      "url": "https://www.youtube.com/watch?v=Kl16K1CgVYE",
-      "title": "Stellantis Brampton plant sale sparks outrage | CTV News Toronto at Noon for Nov. 10, 2026",
-      "img": "https://i.ytimg.com/vi/Kl16K1CgVYE/hqdefault.jpg",
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=un7nuQTOEPc",
+      "title": "Carney calls Stellantis plant sale 'unacceptable,' Poilievre demands Joly's firing",
+      "img": "https://i.ytimg.com/vi/un7nuQTOEPc/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "CP24",
-      "url": "https://www.youtube.com/watch?v=lbF_W6nLDko",
-      "title": "Poilievre says ‘life will never be the same’ for families after Stellantis sale",
-      "img": "https://i.ytimg.com/vi/lbF_W6nLDko/hqdefault.jpg",
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=qZxUTNZZ0V4",
+      "title": "‘We want a bigger role in this economy,’ says Roshel Inc. CEO | Hanomansing Live",
+      "img": "https://i.ytimg.com/vi/qZxUTNZZ0V4/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "CP24",
-      "url": "https://www.youtube.com/watch?v=pDVQuZnHpz4",
-      "title": "Roshel taking over idle Stellantis plant an ‘opportunity for employees,' CEO says",
-      "img": "https://i.ytimg.com/vi/pDVQuZnHpz4/hqdefault.jpg",
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=efw39euDJSw",
+      "title": "Stellantis sells Brampton auto assembly plant to defence company Roshel | Power & Politics",
+      "img": "https://i.ytimg.com/vi/efw39euDJSw/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1408,6 +1408,14 @@
     "weight": 30.5,
     "videos": [
      {
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=ilzCascgzco",
+      "title": "Nvidia opens investigation into CEO's relationship with alleged Chinese spy",
+      "img": "https://i.ytimg.com/vi/ilzCascgzco/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
       "net": "CBS News",
       "url": "https://www.youtube.com/watch?v=KnQmDMltM2o",
       "title": "Nvidia board names pick for Huang investigation after affair with alleged Chinese spy",
@@ -1428,14 +1436,6 @@
       "url": "https://www.youtube.com/watch?v=OPYbse8JgSU",
       "title": "Nvidia, CEO Jensen Huang facing shareholder suit over affair with alleged Chinese spy",
       "img": "https://i.ytimg.com/vi/OPYbse8JgSU/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=RA91-5yTI3s",
-      "title": "Global National: Nov. 9, 2026 | Nvidia CEO under scrutiny for affair with alleged Chinese spy",
-      "img": "https://i.ytimg.com/vi/RA91-5yTI3s/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1460,17 +1460,17 @@
      "BNN Bloomberg"
     ],
     "rule": "Canadian and breaking",
-    "carriers": 20,
+    "carriers": 19,
     "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (7 cities)."
+    "why_judged": "National: affects many people; carried across the country (8 cities)."
    },
    {
     "title": "Stellantis auto plant sale draws optimism, hurt in Brampton, Ont., after 2,000 jobs lost",
     "url": "https://www.cbc.ca/news/canada/toronto/stellantis-sale-roshel-brampton-businesses-workers-react-9.7416735",
     "rank": 2,
     "live": "",
-    "weight": 51.0,
-    "score": 17,
+    "weight": 50.0,
+    "score": 16,
     "independent": 4,
     "most_read": 10,
     "canada": "canadian",
@@ -1756,7 +1756,7 @@
      "alt": "Judge denies motion to dismiss Trump's defamation case against BBC",
      "outlet": "CBS News",
      "url": "https://www.cbsnews.com/news/trump-bbc-defamation-case-us-judge-denies-motion-to-dismiss/",
-     "since": "2026-11-11T11:19:41.992755+00:00"
+     "since": "2026-11-11T11:25:54.483657+00:00"
     },
     "photo_seen": [
      "https://assets2.cbsnewsstatic.com/hub/i/r/2023/10/31/3af84988-9210-44b5-89fd-87a04a6063e7/thumbnail/1200x630/d2e3e23f3e816873d9881bd5f69e82d1/ap23048806986802.jpg"
@@ -1988,7 +1988,7 @@
    "id": "CyeCYNY9Sy4",
    "r": "ca",
    "o": "CBC News",
-   "t": "Josh Johnson's comedy meets CBC journalistic standards in viral video | Hanomansing Live",
+   "t": "U.S. comedian Josh Johnson’s CBC surprise goes viral | Hanomansing Live",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=CyeCYNY9Sy4",
@@ -2170,7 +2170,7 @@
    "id": "7EhDwJR_xf0",
    "r": "us",
    "o": "CBS News",
-   "t": "What it takes to be an astronaut as NASA opens applications",
+   "t": "NASA recruiting new astronauts, deadline to apply set for early December",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=7EhDwJR_xf0",
@@ -2282,7 +2282,7 @@
    "id": "fiqgJjOrGw0",
    "r": "us",
    "o": "Associated Press",
-   "t": "China’s Singles' Day sales show that consumer spending habits are shifting",
+   "t": "Chinese consumers are becoming more selective about Singles' Day purchases",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=fiqgJjOrGw0",
@@ -2307,24 +2307,10 @@
    "geo": "unknown"
   },
   {
-   "id": "4wCfWRrD3C0",
-   "r": "us",
-   "o": "Bloomberg",
-   "t": "Anthropic IPO Demand Surges as AI Trade Roars Back",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=4wCfWRrD3C0",
-   "img": "https://i.ytimg.com/vi/4wCfWRrD3C0/hqdefault.jpg",
-   "up": "2026-11-11",
-   "added": "2026-11-11T10:48:03.954968+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "ZbNicf3y4Kw",
    "r": "us",
    "o": "CNN",
-   "t": "Why Mississippi has so many affidavit ballots",
+   "t": "Why Mississippi’s election results are taking so long",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=ZbNicf3y4Kw",
@@ -2387,6 +2373,20 @@
    "img": "https://i.ytimg.com/vi/s55oZWJxaiw/hqdefault.jpg",
    "up": "2026-11-11",
    "added": "2026-11-11T11:18:03.678850+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "KlyZRMGqL_U",
+   "r": "us",
+   "o": "Bloomberg",
+   "t": "Airbnb Is Building Its Own AI Travel Agent, Co-Founder Says",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=KlyZRMGqL_U",
+   "img": "https://i.ytimg.com/vi/KlyZRMGqL_U/hqdefault.jpg",
+   "up": "2026-11-11",
+   "added": "2026-11-11T11:22:41.050900+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2478,7 +2478,7 @@
    "id": "jGKBA6xaflE",
    "r": "world",
    "o": "BBC News",
-   "t": "I was accused of spying for China | BBC News",
+   "t": "Parliamentary researcher accused of spying for China speaks for first time | BBC News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=jGKBA6xaflE",
@@ -2506,7 +2506,7 @@
    "id": "YMxcBUJFa5k",
    "r": "world",
    "o": "Sky News",
-   "t": "Nvidia's crash is even bigger than you think | Wilfred Frost explains",
+   "t": "Nvidia's sell-off is getting worse as market value plummets",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=YMxcBUJFa5k",
@@ -2534,11 +2534,11 @@
  "ledes": [
   {
    "o": "CBS News",
-   "h": "Judge denies motion to dismiss Trump's defamation case against BBC",
-   "u": "https://www.cbsnews.com/news/trump-bbc-defamation-case-us-judge-denies-motion-to-dismiss/",
-   "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2023/10/31/3af84988-9210-44b5-89fd-87a04a6063e7/thumbnail/1200x630/d2e3e23f3e816873d9881bd5f69e82d1/ap23048806986802.jpg",
-   "w": "Wed 6:07 a.m.",
-   "iso": "2026-11-11T11:07:24+00:00"
+   "h": "4 grizzly bears killed mom and daughter in Canada, DNA confirms",
+   "u": "https://www.cbsnews.com/news/4-grizzly-bears-killed-woman-daughter-canada-dna/",
+   "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/06/1f61d5d7-6c5b-4853-8d38-44d23c1c10da/thumbnail/1200x630/4b75a535fcfaec140aefdb125b57fd49/ap26310002537095.jpg",
+   "w": "Wed 6:24 a.m.",
+   "iso": "2026-11-11T11:24:32+00:00"
   },
   {
    "o": "ABC News",
@@ -2682,6 +2682,32 @@
    "auto": true
   },
   {
+   "inst": "Frontier Centre for Public Policy",
+   "place": "Winnipeg",
+   "kind": "Publication",
+   "by": "",
+   "date": "Nov. 10, 2026",
+   "d": "2026-11-10",
+   "pic": "chart",
+   "u": "https://frontiercentre.org/2026/11/10/canadas-health-care-system-is-making-us-sicker/?utm_source=rss&utm_medium=rss&utm_campaign=canadas-health-care-system-is-making-us-sicker",
+   "t": "Canada’s health care system is making us sicker",
+   "g": "Canada’s healthcare crisis extends beyond overcrowded emergency departments to a collapse in patient trust. Susan Martinuk argues that accessible care, respect for patient rights and shared decisions can help rebuild confidence and improve health outcomes.",
+   "auto": true
+  },
+  {
+   "inst": "Frontier Centre for Public Policy",
+   "place": "Winnipeg",
+   "kind": "Publication",
+   "by": "",
+   "date": "Nov. 10, 2026",
+   "d": "2026-11-10",
+   "pic": "chart",
+   "u": "https://frontiercentre.org/2026/11/10/canada-is-destroying-its-own-economy/?utm_source=rss&utm_medium=rss&utm_campaign=canada-is-destroying-its-own-economy",
+   "t": "Canada Is Destroying Its Own Economy",
+   "g": "Canada’s economic problems aren't caused by the U.S. We've created many of them ourselves.",
+   "auto": true
+  },
+  {
    "inst": "Atlantic Council",
    "place": "Washington",
    "kind": "Publication",
@@ -2744,32 +2770,6 @@
    "u": "https://www.lowyinstitute.org/the-interpreter/australia-talks-tough-on-sudan-but-won-t-confront-patrons-in-uae",
    "t": "Australia talks tough on Sudan but won’t confront patrons in UAE",
    "g": "A risk-averse approach to sanctions means Canberra is only going after those inside Sudan responsible for atrocities.",
-   "auto": true
-  },
-  {
-   "inst": "Macdonald-Laurier Institute",
-   "place": "Ottawa",
-   "kind": "Publication",
-   "by": "",
-   "date": "Nov. 9, 2026",
-   "d": "2026-11-09",
-   "pic": "chart",
-   "u": "https://macdonaldlaurier.ca/beyond-the-border-disrupting-criminal-networks-laura-dawson/",
-   "t": "Beyond the border – Disrupting criminal networks: Laura Dawson",
-   "g": "By Laura Dawson November 9, 2026 Securing Canada’s borders requires more than checking passports and inspecting cargo. Criminal networks exploit jurisdictional gaps, divide their operations among multiple players, and adapt […] The post Beyond the border – Disrupting criminal networks: Laura Dawson appeared first on…",
-   "auto": true
-  },
-  {
-   "inst": "Peterson Institute",
-   "place": "Washington",
-   "kind": "Publication",
-   "by": "",
-   "date": "Nov. 9, 2026",
-   "d": "2026-11-09",
-   "pic": "chart",
-   "u": "https://www.piie.com/blogs/realtime-economics/2026/ai-booms-two-engines",
-   "t": "The AI Boom's Two Engines",
-   "g": "Econvitals just added a Macroeconomic Simulator that lets you use the Federal Reserve's FRB/US model to simulate policies like Fed rate hikes and tax cuts, as well as shocks like an oil price spike or a fall in stock prices. Much of this post uses the same model to do a \"what if\" analysis of the data center buildout.…",
    "auto": true
   }
  ],
@@ -3038,13 +3038,13 @@
     ]
    },
    {
-    "h": "Route 90 expansion mayor’s next priority",
-    "u": "https://www.winnipegfreepress.com/breakingnews/2026/11/09/route-90-mayors-next-priority",
+    "h": "Hellebuyck cites online threats, family concerns as reasons for trade demand",
+    "u": "https://www.winnipegfreepress.com/breakingnews/2026/11/10/connor-hellebuyck-devils-jets-game-tuesday",
     "o": [
      [
       "Winnipeg Free Press",
       1,
-      "https://www.winnipegfreepress.com/breakingnews/2026/11/09/route-90-mayors-next-priority"
+      "https://www.winnipegfreepress.com/breakingnews/2026/11/10/connor-hellebuyck-devils-jets-game-tuesday"
      ]
     ]
    },
@@ -3082,13 +3082,13 @@
     ]
    },
    {
-    "h": "Hellebuyck cites online threats, family concerns as reasons for trade demand",
-    "u": "https://www.winnipegfreepress.com/breakingnews/2026/11/10/connor-hellebuyck-devils-jets-game-tuesday",
+    "h": "Route 90 expansion mayor’s next priority",
+    "u": "https://www.winnipegfreepress.com/breakingnews/2026/11/09/route-90-mayors-next-priority",
     "o": [
      [
       "Winnipeg Free Press",
       2,
-      "https://www.winnipegfreepress.com/breakingnews/2026/11/10/connor-hellebuyck-devils-jets-game-tuesday"
+      "https://www.winnipegfreepress.com/breakingnews/2026/11/09/route-90-mayors-next-priority"
      ]
     ]
    },
@@ -3195,11 +3195,11 @@
    "city": "St. John's",
    "tz": "America/St_Johns",
    "world": false,
-   "w": "Honour Its Veterans",
-   "u": "https://vocm.com/2026/11/11/newfoundland-and-labrador-pauses-to-honour-its-veterans-today/",
-   "title": "Newfoundland and Labrador Pauses to Honour Its Veterans Today",
-   "outlet": "VOCM",
-   "t": "Wed 5:39 a.m.",
+   "w": "Lumber",
+   "u": "https://www.cbc.ca/news/canada/newfoundland-labrador/sexton-lumber-fire-9.7416843?cmp=rss",
+   "title": "Sexton Lumber shutdown ‘affects everybody’: N.L. forestry association",
+   "outlet": "CBC News",
+   "t": "Tue 6:15 p.m.",
    "hot": false
   },
   {
@@ -3287,7 +3287,7 @@
    "u": "https://www.theguardian.com/world/live/2026/nov/11/europe-ukraine-russia-us-talks-abu-dhabi-zelenskyy-latest-news-updates",
    "title": "Ukraine’s Zelenskyy ‘happy’ with US envoys’ approach as Russia talks enter second day – Europe live",
    "outlet": "The Guardian",
-   "t": "Wed 6:02 a.m.",
+   "t": "Wed 6:14 a.m.",
    "hot": true
   },
   {
@@ -3428,8 +3428,8 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Wed 6:02 a.m.",
-   "iso": "2026-11-11T11:02:51+00:00",
+   "t": "Wed 6:14 a.m.",
+   "iso": "2026-11-11T11:14:55+00:00",
    "title": "Ukraine’s Zelenskyy ‘happy’ with US envoys’ approach as Russia talks enter second day – Europe live",
    "summary": "Ukraine president welcomes a change in message from US mediators ahead of day two of trilateral talks with Russia and US in Abu Dhabi",
    "outlet": "The Guardian, Kyiv Independent, CBC News, Toronto Star (AP), Euronews, BBC News",
@@ -3448,18 +3448,6 @@
    "n": 6,
    "url": "https://thehill.com/policy/international/6212128-nvidia-ceo-jensen-huang-china-ai-chips/",
    "img": ""
-  },
-  {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Tue 10:48 p.m.",
-   "iso": "2026-11-11T03:48:32.439000+00:00",
-   "title": "Connor Hellebuyck tells media online death threats, family played roles in trade demand",
-   "summary": "Connor Hellebuyck says online death threats and his family were major factors in his Winnipeg trade demand.",
-   "outlet": "CBC News, SaltWire, Calgary Herald, VOCM, CityNews Winnipeg",
-   "n": 5,
-   "url": "https://www.cbc.ca/news/canada/manitoba/connor-hellebuyck-return-to-winnipeg-9.7416133",
-   "img": "https://i.cbc.ca/ais/9043b85b-3137-4dbd-9ac5-a9ea04cac24f,1794344869587/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C103%2C4800%2C2700%29%3BResize%3D620"
   },
   {
    "desk": "world",
@@ -3510,6 +3498,18 @@
    "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/40af/live/ef0fb520-dd8c-11f1-a701-fddedf244c16.jpg"
   },
   {
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Tue 7:49 p.m.",
+   "iso": "2026-11-11T00:49:00+00:00",
+   "title": "One dead after three-vehicle crash on Highway 410 in Brampton",
+   "summary": "Northbound lanes of Highway 410 are closed at Williams Parkway following a fatal collision Tuesday afternoon.",
+   "outlet": "Toronto Star, CBC News, Nunatsiaq News, CTV News + CP24 (CP)",
+   "n": 4,
+   "url": "https://www.thestar.com/news/gta/one-dead-after-three-vehicle-crash-on-highway-410-in-brampton/article_3c347a86-7e94-4d90-a6d1-2b36e0f1f722.html",
+   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/9/5c/95cae52b-9ede-5fc8-8a1b-fc4f37cad9bb/6af3bb7e91d57.image.jpg?crop=1763%2C926%2C0%2C125&resize=1200%2C630&order=crop%2Cresize"
+  },
+  {
    "desk": "world",
    "pic": "globe",
    "t": "Tue 7:13 p.m.",
@@ -3536,8 +3536,8 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Wed 6:04 a.m.",
-   "iso": "2026-11-11T11:04:57+00:00",
+   "t": "Wed 6:08 a.m.",
+   "iso": "2026-11-11T11:08:57+00:00",
    "title": "Burnham hails approval for two huge windfarm projects as ‘power under British control’ – UK politics live",
    "summary": "Reform UK leader in the Senedd, Helen Jenner, backs Joe Martin after his ban",
    "outlet": "The Guardian, NBC News, CBC News (AP)",
@@ -3556,18 +3556,6 @@
    "n": 3,
    "url": "https://www.euronews.com/2026/11/11/everything-we-love-is-at-stake-greta-thunberg-blasts-cop-climate-summits-as-being-full-of-",
    "img": "https://images.euronews.com/articles/stories/09/98/82/31/1200x675_cmsv2_cedd1c3c-89b6-5d0d-bee1-b65bee5b8d2c-9988231.jpg"
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Wed 5:47 a.m.",
-   "iso": "2026-11-11T10:47:27+00:00",
-   "title": "Oil prices rise as investors monitor shipping disruption in the Strait of Hormuz",
-   "summary": "Oil prices rebounded again on Wednesday morning as investors monitored updates on shipping attacks in the Strait of Hormuz.",
-   "outlet": "Euronews, VOCM, Al Jazeera",
-   "n": 3,
-   "url": "https://www.euronews.com/2026/11/11/oil-markets-rise-as-investors-monitor-shipping-disruption-in-the-strait-of-hormuz",
-   "img": "https://images.euronews.com/articles/stories/09/98/81/78/1200x675_cmsv2_760d7d7d-d7f7-50ce-8488-87fa5bbf473e-9988178.jpg"
   },
   {
    "desk": "world",
@@ -3596,6 +3584,18 @@
   {
    "desk": "politics",
    "pic": "parliament",
+   "t": "Tue 10:48 p.m.",
+   "iso": "2026-11-11T03:48:32.439000+00:00",
+   "title": "Connor Hellebuyck tells media online death threats, family played roles in trade demand",
+   "summary": "Connor Hellebuyck says online death threats and his family were major factors in his Winnipeg trade demand.",
+   "outlet": "CBC News, SaltWire, CityNews Winnipeg",
+   "n": 3,
+   "url": "https://www.cbc.ca/news/canada/manitoba/connor-hellebuyck-return-to-winnipeg-9.7416133",
+   "img": "https://i.cbc.ca/ais/9043b85b-3137-4dbd-9ac5-a9ea04cac24f,1794344869587/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C103%2C4800%2C2700%29%3BResize%3D620"
+  },
+  {
+   "desk": "politics",
+   "pic": "parliament",
    "t": "Tue 7:22 p.m.",
    "iso": "2026-11-11T00:22:34+00:00",
    "title": "Ottawa releases list of companies lending staff to major projects office",
@@ -3604,6 +3604,18 @@
    "n": 3,
    "url": "https://www.cp24.com/news/canada/2026/11/10/ottawa-releases-list-of-companies-lending-staff-to-major-projects-office/",
    "img": "https://www.cp24.com/resizer/v2/3S5MEZJPTMONESCXRBW66TA7NA.jpg?smart=true&auth=fc8862f8dd4ee236ef90d94c4be75e43a4f2d75d319fc933f6361c9672001dba&width=1200&height=630"
+  },
+  {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Wed 5:47 a.m.",
+   "iso": "2026-11-11T10:47:27+00:00",
+   "title": "Oil prices rise as investors monitor shipping disruption in the Strait of Hormuz",
+   "summary": "Oil prices rebounded again on Wednesday morning as investors monitored updates on shipping attacks in the Strait of Hormuz.",
+   "outlet": "Euronews, Al Jazeera",
+   "n": 2,
+   "url": "https://www.euronews.com/2026/11/11/oil-markets-rise-as-investors-monitor-shipping-disruption-in-the-strait-of-hormuz",
+   "img": "https://images.euronews.com/articles/stories/09/98/81/78/1200x675_cmsv2_760d7d7d-d7f7-50ce-8488-87fa5bbf473e-9988178.jpg"
   },
   {
    "desk": "business",
@@ -3642,25 +3654,13 @@
    "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/DHS-reveals-illegal-immigrant-threatened-flight.jpg"
   },
   {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Tue 6:12 p.m.",
-   "iso": "2026-11-10T23:12:39.924000+00:00",
-   "title": "Canada should not end its Arctic drilling ban, warns former environment minister",
-   "summary": "As the federal government opens the door to lifting Canada's moratorium on Arctic oil-and-gas drilling, a former environment minister says it's not worth the risk.",
-   "outlet": "CBC News, Nunatsiaq News",
-   "n": 2,
-   "url": "https://www.cbc.ca/radio/asithappens/steven-guilbeault-arctic-drilling-9.7417332",
-   "img": "https://i.cbc.ca/ais/0d8622bd-7ff8-47e6-87ec-ee931dd2bf43,1794351185932/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C275%2C5310%2C2986%29%3BResize%3D620"
-  },
-  {
    "desk": "business",
    "pic": "chart",
    "t": "Wed 5:47 a.m.",
    "iso": "2026-11-11T10:47:44+00:00",
    "title": "Budget 2026 shifts Liberal government's language on home construction targets",
    "summary": "The federal housing minister’s office is reasserting Ottawa’s goal of doubling the pace of home construction — even though references to the Liberals’ hallmark affordability pledge were missing from Budget 2026.",
-   "outlet": "CTV News + Toronto Star + Times Colonist + Lethbridge Herald + 6 more (CP)",
+   "outlet": "CTV News + Toronto Star + Times Colonist + CityNews Winnipeg + 6 more (CP)",
    "n": 1,
    "url": "https://www.ctvnews.ca/politics/article/budget-2026-shifts-liberal-governments-language-on-home-construction-targets/",
    "img": "https://www.ctvnews.ca/resizer/v2/5GLKVWIT5IXOLILOE5EIWQEXKM.jpg?smart=true&auth=3a485c820a63c47a20b935232de552b7551d0a58a7990dc290a616c95c143593&width=1200&height=630"
@@ -3939,18 +3939,18 @@
    "h": [
     "Carney to tell Xi next week that foreigners shouldn’t interfere in Canadian affairs",
     "Volunteer cleaners of Canada’s war graves keep the names of the fallen fresh",
+    "Canada owes soldiers more than just remembrance",
     "Decades on, a battalion of ‘premature anti-fascists’ get a belated salute",
     "How a small poppy project bloomed into a community event",
-    "Silver Cross Mother keeps daughter’s memory alive",
-    "The history of Canada’s rarest military medals"
+    "Silver Cross Mother keeps daughter’s memory alive"
    ],
    "u": [
     "https://www.theglobeandmail.com/politics/article-security-risks-countries-face-with-china-greater-than-those-faced-by/",
     "https://www.theglobeandmail.com/canada/article-canada-war-graves-volunteer-cleaners-fallen-soldiers-cemeteries/",
+    "https://www.theglobeandmail.com/opinion/editorials/article-canada-owes-soldiers-more-than-just-remembrance/",
     "https://www.theglobeandmail.com/canada/article-remembering-an-oft-forgotten-unit-of-canadians-who-took-up-arms-in-the/",
     "https://www.theglobeandmail.com/canada/article-poppy-project-community-event-handmade-flowers-remembrance-day-ontario/",
-    "https://www.theglobeandmail.com/canada/article-silver-cross-mother-keeps-daughters-memory-alive-after-2002-training/",
-    "https://www.theglobeandmail.com/canada/article-remembrance-day-veteran-medals/"
+    "https://www.theglobeandmail.com/canada/article-silver-cross-mother-keeps-daughters-memory-alive-after-2002-training/"
    ]
   },
   {
@@ -4129,29 +4129,11 @@
    {
     "net": "Associated Press",
     "r": "us",
-    "title": "LIVE: Remembrance Day ceremony in UK marking the end of World War I",
-    "url": "https://www.youtube.com/watch?v=IaZXORuX5-4",
-    "img": "https://i.ytimg.com/vi/IaZXORuX5-4/hqdefault.jpg",
-    "story": "Remembrance Day ceremony in UK marking the end of World War I",
-    "watching": "963",
-    "reports": [
-     {
-      "outlet": "Toronto Star",
-      "title": "Montrealers to pay tribute to war veterans at annual Remembrance Day ceremony",
-      "url": "https://www.thestar.com/news/montrealers-to-pay-tribute-to-war-veterans-at-annual-remembrance-day-ceremony/article_f5faa844-2ef7-55c4-b304-eb1ca0bd2d59.html",
-      "t": "Wed 4:00 a.m.",
-      "iso": "2026-11-11T09:00:00+00:00"
-     }
-    ]
-   },
-   {
-    "net": "Associated Press",
-    "r": "us",
     "title": "LIVE: Macron leads Armistice Day ceremony in France",
     "url": "https://www.youtube.com/watch?v=Qop1M0-sUjU",
     "img": "https://i.ytimg.com/vi/Qop1M0-sUjU/hqdefault.jpg",
     "story": "Macron leads Armistice Day ceremony in France",
-    "watching": "157"
+    "watching": "380"
    },
    {
     "net": "Scripps News",
@@ -4160,7 +4142,7 @@
     "url": "https://www.youtube.com/watch?v=Ssa7q2bIdNM",
     "img": "https://i.ytimg.com/vi/Ssa7q2bIdNM/hqdefault.jpg",
     "story": "Nov. 11",
-    "watching": "1"
+    "watching": "4"
    },
    {
     "net": "LiveNOW from FOX",
@@ -4169,7 +4151,7 @@
     "url": "https://www.youtube.com/watch?v=Lhk3Gu0YeRs",
     "img": "https://i.ytimg.com/vi/Lhk3Gu0YeRs/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "280",
+    "watching": "293",
     "rolling": true
    },
    {
@@ -4179,7 +4161,7 @@
     "url": "https://www.youtube.com/watch?v=SBu9dbK2SaE",
     "img": "https://i.ytimg.com/vi/SBu9dbK2SaE/hqdefault.jpg",
     "story": "Pope Leo concludes his visit to Argentina",
-    "watching": "11",
+    "watching": "10",
     "reports": [
      {
       "outlet": "Toronto Star",
@@ -4197,7 +4179,7 @@
     "url": "https://www.youtube.com/watch?v=y8fJNDw4iYY",
     "img": "https://i.ytimg.com/vi/y8fJNDw4iYY/hqdefault.jpg",
     "story": "World leaders to address COP31",
-    "watching": "21"
+    "watching": "17"
    },
    {
     "net": "Reuters",
@@ -4206,7 +4188,7 @@
     "url": "https://www.youtube.com/watch?v=PGc0cBUC3gg",
     "img": "https://i.ytimg.com/vi/PGc0cBUC3gg/hqdefault.jpg",
     "story": "Nationwide general strike in Spain",
-    "watching": "30"
+    "watching": "28"
    },
    {
     "net": "Sky News",
@@ -4215,7 +4197,7 @@
     "url": "https://www.youtube.com/watch?v=0c5oHKWE9QM",
     "img": "https://i.ytimg.com/vi/0c5oHKWE9QM/hqdefault.jpg",
     "story": "Armistice Day marked across UK as country falls silent to remember fal",
-    "watching": "1.1K"
+    "watching": "944"
    }
   ],
   "upcoming": [
@@ -4296,18 +4278,9 @@
    "story": "Ukraine’s Zelenskyy ‘happy’ with US envoys’ approach as Russia talks e",
    "title": "Ukraine’s Zelenskyy ‘happy’ with US envoys’ approach as Russia talks enter second day – Europe live",
    "url": "https://www.theguardian.com/world/live/2026/nov/11/europe-ukraine-russia-us-talks-abu-dhabi-zelenskyy-latest-news-updates",
-   "updated": "2026-11-11T11:20:39+00:00",
+   "updated": "2026-11-11T11:26:01+00:00",
    "ended": false,
    "img": "https://i.guim.co.uk/img/media/b47f5b5a8987f90d8391829d14e309dddde388a1/320_0_3195_2556/master/3195.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=219532be8c49ea4e3eb084438c0c7869"
-  },
-  {
-   "net": "The Guardian",
-   "story": "Burnham hails approval for two huge windfarm projects as ‘power under ",
-   "title": "Burnham hails approval for two huge windfarm projects as ‘power under British control’ – UK politics live",
-   "url": "https://www.theguardian.com/politics/live/2026/nov/11/andy-burnham-kemi-badenoch-pmqs-cop31-windfarms-europe-brexit-latest-news-updates",
-   "updated": "2026-11-11T11:20:25+00:00",
-   "ended": false,
-   "img": "https://i.guim.co.uk/img/media/dce6614941a44bcc88f72924bcba015de793c6f0/576_0_6880_5504/master/6880.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=0a0c0c8a856e9db2303affa40f608ec2"
   },
   {
    "net": "CBS News",
@@ -5366,7 +5339,6 @@
   "-NabWfv-VdA"
  ],
  "noembed": [
-  "4jGsUPMTCFA",
   "J3FV4iY8p5w",
   "L6qtnHZxwEw",
   "NuEr0Q_AS6U",
