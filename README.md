@@ -1,6 +1,8 @@
 # Palindrome News
 
-News from every direction. Straight to the source.
+News from every direction.
+
+Your personal newsroom. See it all and go straight to the source.
 
 Palindrome News is an online newsroom for people who get their news online instead of on TV. It summarizes the day's stories from trusted outlets, always links to the original reporting, and never publishes its own editorials.
 
