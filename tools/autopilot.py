@@ -3037,7 +3037,8 @@ def shares_big_day(s, big):
         not sport;
       - then it goes FIRST, the big story second (Hannah: "I would put the Canada one first");
       - it is the story Canada's front pages lead with: the most Canadian front pages of any Canadian story, at least
-        LEADS_CA_MIN of them (leads_ca), or as many Canadian front pages as the big story itself.
+        LEADS_CA_MIN of them (leads_ca), or as many Canadian front pages as the big story itself; or it has a live
+        event on it, on air now or coming up within LIVE_SOON_HOURS (a news conference, an update, a vote).
     A Canadian exclusive on one newsroom's front page, or a smaller Canadian story, still moves to the Canada desk."""
     if s is big or big.get("event_day") or s.get("event_day"):
         return False
@@ -3045,6 +3046,11 @@ def shares_big_day(s, big):
         return False
     if SPORT.search(s.get("title") or ""):
         return False
+    # a live event on it, on air now or coming up within LIVE_SOON_HOURS (Hannah, Thu Nov 12, 2026: "especially when
+    # there is an update coming at 4 p.m. Eastern on Stellantis workers"): it shares the top, first, however many
+    # front pages lead with it (promote_live() attaches the event and runs _select() again)
+    if s.get("live"):
+        return True
     ca = s.get("fronts_ca") or 0
     return ca >= LEADS_CA_MIN and (bool(s.get("leads_ca")) or ca >= (big.get("fronts_ca") or 0))
 

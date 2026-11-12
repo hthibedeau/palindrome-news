@@ -146,6 +146,13 @@ _auto = {}
 ap._select(_auto, [nvda, stla], [nvda, stla], lambda x: 0)
 check(_auto["top_n"] == 2 and [x["key"] for x in _auto["stories"][:2]] == ["st", "nv"], "both at the top: Stellantis first, then Nvidia")
 check(not _auto["moved"], "Stellantis is not moved down")
+soon = dict(stla, key="lv", fronts=0, fronts_ca=0, leads_ca=False,
+            live={"state": "soon", "title": "Stellantis workers' union president speaks after meeting with industry minister"})
+check(ap.shares_big_day(soon, nvda), "a Canadian story with a live update coming up shares the top, whatever its front pages")
+_auto = {}
+ap._select(_auto, [nvda, soon], [nvda, soon], lambda x: 0)
+check([x["key"] for x in _auto["stories"][:2]] == ["lv", "nv"], "with the 4 p.m. update coming, Stellantis goes first")
+check(not ap.shares_big_day(dict(soon, canus=True), nvda), "a live Canada-U.S. story still goes to the Canadian angle box")
 _auto = {}
 ap._select(_auto, [nvda, scoop], [nvda, scoop], lambda x: 0)
 check(_auto["top_n"] == 1 and _auto["moved"] and _auto["moved"][0]["to"] == "canada", "a smaller Canadian story still moves to the Canada desk")
