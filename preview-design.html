@@ -143,6 +143,14 @@
 #autoBreaking .ab-also a { color: #FFFFFF; position: relative; z-index: 2; }
 #autoBreaking .bart-cap { margin: 8px 0 14px; }
 #autoBreaking .ab-note { margin: 16px 0 0; font-size: 13px; opacity: .8; }
+/* a big Canadian exclusive: gold edge and a credit bar for the newsroom that broke it (Hannah, Wed Nov 11, 2026) */
+#autoBreaking .ab-story.ab-scoop { box-shadow: inset 4px 0 0 #E9C46A; padding-left: 14px; }
+#autoBreaking .ab-story.ab-scoop > .tag { background: #E9C46A !important; color: #2B1B54 !important; font-weight: 800; }
+#autoBreaking .ab-excl { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin: 6px 0 14px; padding: 10px 12px; border-radius: 8px;
+  background: rgba(233,196,106,.16); border: 1px solid rgba(233,196,106,.6); font-size: 15px; line-height: 1.35; color: #fff; }
+#autoBreaking .ab-excl-b { padding: 3px 10px; border-radius: 999px; background: #E9C46A; color: #2B1B54; font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+#autoBreaking .ab-excl-t b { font-weight: 800; }
+#autoBreaking .ab-excl a.ab-excl-go { margin-left: auto; color: #fff; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; position: relative; z-index: 2; white-space: nowrap; }
 .cu-auto { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 8px 28px; margin: 0 0 22px; }
 .cu-auto h3 { margin: 0 0 6px; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; }
 .cu-auto ol { list-style: none; margin: 0; padding: 0; }
@@ -1439,6 +1447,20 @@ header.site { border-bottom: 0; }
 .livecov .bk-chan .chan-row > .chan-cell { scroll-snap-align: start; }
 .livecov .bk-chan .chan-row::-webkit-scrollbar { height: 6px; }
 .livecov .bk-chan .chan-row::-webkit-scrollbar-thumb { background: rgba(255,255,255,.55); border-radius: 3px; }
+/* LIVE NOW STANDS OUT FROM COMING UP (Hannah, Wed Nov 11, 2026: "make the live coverage scroll just stand out from the
+   coming up live scroll"): what is on air now gets a red pulsing dot, bigger tiles lit with a red edge and a red
+   scrollbar; what is coming up later sits quieter: smaller, see-through tiles with a dashed outline and its own divider */
+.livecov .lc-now-h { display: flex; align-items: center; gap: 9px; font-size: 15px !important; color: #fff; }
+.livecov .lc-now-h i { width: 10px; height: 10px; border-radius: 50%; background: #ff4d6d; box-shadow: 0 0 0 0 rgba(255,77,109,.7); flex: 0 0 auto; }
+@media (prefers-reduced-motion: no-preference) { .livecov .lc-now-h i { animation: pjPulse 1.6s infinite; } }
+.livecov .bk-chan .chan-row.lc-now { grid-auto-columns: min(290px, 78vw); scrollbar-color: #ff4d6d transparent; }
+.livecov .bk-chan .chan-row.lc-now::-webkit-scrollbar-thumb { background: #ff4d6d; }
+.livecov .lc-now > .chan-cell { background: rgba(255,77,109,.14); border-top: 3px solid #ff4d6d; box-shadow: 0 0 0 1px rgba(255,77,109,.35) inset, 0 6px 18px rgba(0,0,0,.25); }
+.livecov .lc-later-h { margin-top: 22px !important; padding-top: 16px; border-top: 1px solid rgba(255,255,255,.18); color: rgba(255,255,255,.72); }
+.livecov .bk-chan .chan-row.lc-later { grid-auto-columns: min(220px, 64vw); }
+.livecov .lc-later > .chan-cell { background: transparent; border: 1px dashed rgba(255,255,255,.35); }
+.livecov .lc-later .chan-pic { opacity: .85; }
+.livecov .lc-later .chan-story { font-size: 16px; }
 /* Scheduled live event for the top story, shown at the top of the slot (Hannah’s rule) */
 .bk-next { position: relative; z-index: 3; margin: 4px 0 16px; max-width: 760px; padding: 14px 16px; background: rgba(15, 11, 25, .32); border-left: 4px solid #FFFFFF; }
 .bk-next .nx-when { display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #FFFFFF; }
@@ -2983,8 +3005,8 @@ header.site { border-bottom: 0; }
       const laterTiles = later.map((c) => tile(c, esc(when(new Date(c.when)).toUpperCase()), 'c', (c.approx ? 'About ' + esc(when(new Date(c.when))).replace(/^(Tonight|Today)/, (m) => m.toLowerCase()) : esc(when(new Date(c.when)))) + (c.local ? ' (' + esc(c.local) + ')' : '') + (c.where ? ' · ' + esc(c.where) : ''), c.url.indexOf('youtube.com') > -1 ? 'Set a reminder on YouTube' : 'How to watch')).join('');
       const sec = document.getElementById('liveCoverage');
       if (!nowTiles && !laterTiles) { box.hidden = true; if (sec) sec.hidden = true; return; }
-      box.innerHTML = (nowTiles ? '<p class="chan-h">Live coverage now</p><div class="chan-row">' + nowTiles + '</div>' : '') +
-        (laterTiles ? '<p class="chan-h">Coming up live</p><div class="chan-row">' + laterTiles + '</div>' : '') +
+      box.innerHTML = (nowTiles ? '<p class="chan-h lc-now-h"><i aria-hidden="true"></i>Live coverage now</p><div class="chan-row lc-now">' + nowTiles + '</div>' : '') +
+        (laterTiles ? '<p class="chan-h lc-later-h">Coming up live</p><div class="chan-row lc-later">' + laterTiles + '</div>' : '') +
         (ALWAYS.length ? '<p class="chan-always">24-hour news channels: ' + ALWAYS.map(([n, u]) => '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(n) + ' &#8599;</a>').join(' · ') + '</p>' : '');
       box.hidden = false; if (sec) sec.hidden = false;
       box.querySelectorAll('.chan-pic img').forEach((im) => {
@@ -6959,6 +6981,13 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     if (!list.length) { sec.hidden = true; sec.innerHTML = ''; if (bk && bk.dataset.autoHidden) { bk.hidden = false; delete bk.dataset.autoHidden; } return; }
     if (bk && !bk.hidden) { bk.hidden = true; bk.dataset.autoHidden = '1'; }
     const a = (u, t) => '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + t + '</a>';
+    // CREDIT WHERE IT IS DUE (Hannah, Wed Nov 11, 2026, on CTV News's Stellantis exclusive: "that exclusive needs to be
+    // more prominent. Give them the credit that is due"). A big Canadian exclusive carries a credit bar right under its
+    // headline: the newsroom that broke it, when, a one-tap link to that newsroom's own report, and the newsrooms that
+    // have since confirmed it. The story is also lit with a gold edge (ab-scoop) so it stands out among the top stories.
+    const exclBox = (s) => { if (!s.scoop) return ''; const x = s.exclusive || {}, who = s.scoop_outlet || x.outlet || s.outlet; const conf = (x.confirmed_by || []).filter((o) => o && o !== who);
+      return '<p class="ab-excl"><span class="ab-excl-b">Exclusive</span><span class="ab-excl-t"><b>' + esc(who) + '</b> broke this story' + (x.t ? ' · ' + esc(x.t) + ' ET' : '')
+        + (conf.length ? ' · since confirmed by ' + esc(conf.join(', ')) : '') + '</span>' + a(x.url || s.url, 'Read ' + esc(who) + '’s exclusive &#8599;').replace('<a ', '<a class="ab-excl-go" ') + '</p>'; };
     sec.innerHTML = list.map((s, i) => {
       if (s.photo && window.PAL_photoUnfit && window.PAL_photoUnfit(s.photo)) s.photo = (s.photos || []).find((p) => !window.PAL_photoUnfit(p)) || null;  // NO UNSUITABLE PICTURES
       const ph = s.photo ? '<div class="bart"><span class="ph"><img src="' + esc(AUTO.base + s.photo.src) + '" alt="' + esc(s.photo.alt || '') + '" decoding="async" onerror="this.closest(\'.bart\').remove()"></span></div><p class="bart-cap">' + esc(s.photo.caption) + '</p>' : '';
@@ -7008,8 +7037,8 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
             : '')
           + '<p class="pj-note">Each call is the network’s own, in its own words, linked to where it was made. A projection is not a final result.</p></div>';
       })() : '';
-      return '<article class="ab-story' + (i ? ' ab-second' : '') + (s.proj_lead ? ' ab-projlead' : '') + (s.aftermath ? ' ab-after' : '') + '" data-key="' + esc(s.key) + '">' + ph + '<span class="tag">' + (s.event_tag ? esc(s.event_tag) : s.scoop ? 'Exclusive · ' + esc(s.scoop_outlet || s.outlet) : onAir || (recent && s.tag === 'Breaking') ? 'Breaking' : 'Developing') + '</span>'
-        + '<h2>' + a(s.url, esc(s.title)) + '</h2>' + (s.proj_lead ? '<p class="ab-projsrc">Projection by ' + a(s.proj_lead.url, esc(s.proj_lead.net)) + ' · ' + esc(s.proj_lead.t) + ' ET</p>' : '') + (sub ? '<p class="ab-sub">' + esc(sub.t) + (sub.own ? '' : ' <span class="ab-cr">— ' + a(sub.u, esc(sub.o)) + '</span>') + '</p>' : '') + (s.aftermath ? '' : projBox) + liveBar + moreBox
+      return '<article class="ab-story' + (i ? ' ab-second' : '') + (s.scoop ? ' ab-scoop' : '') + (s.proj_lead ? ' ab-projlead' : '') + (s.aftermath ? ' ab-after' : '') + '" data-key="' + esc(s.key) + '">' + ph + '<span class="tag">' + (s.event_tag ? esc(s.event_tag) : s.scoop ? 'Exclusive · ' + esc(s.scoop_outlet || s.outlet) : onAir || (recent && s.tag === 'Breaking') ? 'Breaking' : 'Developing') + '</span>'
+        + '<h2>' + a(s.url, esc(s.title)) + '</h2>' + exclBox(s) + (s.proj_lead ? '<p class="ab-projsrc">Projection by ' + a(s.proj_lead.url, esc(s.proj_lead.net)) + ' · ' + esc(s.proj_lead.t) + ' ET</p>' : '') + (sub ? '<p class="ab-sub">' + esc(sub.t) + (sub.own ? '' : ' <span class="ab-cr">— ' + a(sub.u, esc(sub.o)) + '</span>') + '</p>' : '') + (s.aftermath ? '' : projBox) + liveBar + moreBox
         + '<p class="first">LATEST ' + a(s.url, esc(s.outlet)) + ' · ' + esc(s.t) + firstLine + '</p>'
         + '<details class="ab-reps" data-key="' + esc(s.key) + '"' + (repsOpen(s.key, !i) ? ' open' : '') + '><summary><span class="ab-reps-t"><svg class="pn-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h13v14H6a2 2 0 0 1-2-2V5zm13 4h3v8a2 2 0 0 1-2 2h-1M7 8h7M7 11h7M7 14h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>What each newsroom reports <span class="pn-n">' + nInd + ' independent report' + (nInd === 1 ? '' : 's') + '</span></span><span class="ab-reps-tog"><span class="o1">Show</span><span class="o2">Hide</span><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></summary><ol>' + reps + '</ol></details>'
         + (s.aftermath ? projBox : '')  // THE MORNING AFTER (Hannah, Wed Nov 4, 2026): "Results: who called what can move down", under the reports
@@ -7823,7 +7852,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
 @media (max-width: 959px) { #autoBreaking .ab-second > .bart > .cr-credit { display: none; } }
 #autoBreaking .ab-second .cr-tags .fresh { display: none; }
 #autoBreaking .ab-second .cr-tags { flex-wrap: wrap; row-gap: 6px; }
-#autoBreaking .ab-second:not(.cr-open) > :not(.bart):not(.cr-tags):not(h2):not(.ab-sub):not(.cr-byline):not(.cr-full):not(.ab-watch) { display: none !important; }
+#autoBreaking .ab-second:not(.cr-open) > :not(.bart):not(.cr-tags):not(h2):not(.ab-excl):not(.ab-sub):not(.cr-byline):not(.cr-full):not(.ab-watch) { display: none !important; }
 #autoBreaking .ab-second .ab-sub { font-size: 15px !important; }
 #autoBreaking .cr-full { justify-self: start; }
 #autoBreaking .ab-note { display: none; }
