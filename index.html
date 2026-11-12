@@ -7959,13 +7959,23 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     const items = kids.filter((e) => e.matches('.ab-second, .ab-lead-more'));
     const hs = items.map((e) => Math.max(1, tall(e)));
     const leadH = Math.max(1, tall(lead));
-    let best = null;
+    let best = null, keep = null;
     for (let m = 0; m < (1 << items.length); m++) {
       let L = leadH, R = 0;
       items.forEach((e, i) => { if (m & (1 << i)) L += hs[i]; else R += hs[i]; });
       const gap = Math.abs(L - R) + (R === 0 ? 100000 : 0);  // never leave the right column empty
       if (!best || gap < best.gap) best = { m, gap };
+      if (m === place.lastM && items.length === place.lastN) keep = { m, gap };
     }
+    // NO FLICKER (Hannah, Wed Nov 11, 2026, a video of her iPad: the second top story kept swapping between the
+    // Mississippi and Hegseth stories several times a second). Moving a story to the other column changes its height,
+    // which made the page re-split the columns, move it back, and so on forever. Now the split only changes when the
+    // new one is clearly better (by more than 150px), so the stories stay put once placed.
+    // and once placed, the same stories on the same screen width keep their columns for at least 30 seconds
+    const setSig = items.map((e) => (e.dataset.key || e.className)).join('|') + '@' + root.clientWidth;
+    if (keep && (keep.gap - best.gap <= 150 || (place.lastSig === setSig && Date.now() - place.lastAt < 30000))) best = keep;
+    if (best.m !== place.lastM || place.lastSig !== setSig) place.lastAt = Date.now();
+    place.lastM = best.m; place.lastN = items.length; place.lastSig = setSig;
     const col = [1, 1];
     const put = (e, c) => {
       const n = Math.max(1, tall(e));
@@ -7975,9 +7985,10 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       col[c] += n;
     };
     put(lead, 0);
-    items.forEach((e, i) => { e.classList.remove('pal-left'); put(e, (best.m & (1 << i)) ? 0 : 1); });
+    items.forEach((e, i) => { put(e, (best.m & (1 << i)) ? 0 : 1); });
     // fill what is left from the short column itself
-    if (!place.filling) {
+    if (!place.filling && place.filledFor !== setSig) {
+      place.filledFor = setSig;
       const shortC = col[0] < col[1] ? 0 : 1, gap = Math.abs(col[0] - col[1]);
       if (gap > 120) {
         const inShort = [lead].concat(items).filter((e) => (e.style.gridColumn === String(shortC + 1)));
@@ -8010,7 +8021,12 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       e.style.gridColumn = '1 / -1'; e.style.gridRow = r + ' / span ' + n; r += n;
     });
     if (!place.ro && window.ResizeObserver) {
-      place.ro = new ResizeObserver(() => { clearTimeout(place.t); place.t = setTimeout(() => place(root.classList.contains('pal-bal')), 60); });
+      // only a real change in a box's size re-splits the columns (not the page's own re-placing)
+      place.sz = new WeakMap();
+      place.ro = new ResizeObserver((es) => {
+        const moved = es.some((x) => { const h = Math.round(x.contentRect.height), was = place.sz.get(x.target); place.sz.set(x.target, h); return was === undefined || Math.abs(h - was) > 4; });
+        if (!moved) return;
+        clearTimeout(place.t); place.t = setTimeout(() => place(root.classList.contains('pal-bal')), 60); });
     }
     if (place.ro) kids.forEach((e) => place.ro.observe(e));
   }
