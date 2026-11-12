@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-12T06:06:23.613648+00:00",
- "checkedLabel": "Thu 1:06 a.m.",
+ "checked": "2026-11-12T06:16:24.029647+00:00",
+ "checkedLabel": "Thu 1:16 a.m.",
  "stories": [
   {
    "key": "top",
@@ -38,6 +38,15 @@
  ],
  "wire": [
   [
+   "Thu 1:12 a.m.",
+   "World",
+   "Israeli strike on hospital kills at least five Palestinians, Gaza civil defence agency says",
+   "BBC News",
+   "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo?at_medium=RSS&at_campaign=rss",
+   "2026-11-12T06:12:05+00:00",
+   4
+  ],
+  [
    "Thu 12:59 a.m.",
    "World",
    "Ukraine's power supply close to critical as Russian strikes bring darkness and cold",
@@ -45,15 +54,6 @@
    "https://www.bbc.co.uk/news/articles/cr1ewpd95d21o?at_medium=RSS&at_campaign=rss",
    "2026-11-12T05:59:18+00:00",
    1
-  ],
-  [
-   "Thu 12:57 a.m.",
-   "World",
-   "Israeli strike on a Gaza hospital kills 6 people, health authorities say",
-   "Toronto Star",
-   "https://www.thestar.com/news/world/middle-east/israeli-strike-on-a-gaza-hospital-kills-6-people-health-authorities-say/article_eb5ed2df-501d-5615-8ac6-e416004e535e.html",
-   "2026-11-12T05:57:12+00:00",
-   4
   ],
   [
    "Thu 12:50 a.m.",
@@ -143,7 +143,7 @@
    "BBC News",
    "https://www.bbc.co.uk/news/articles/c8zx964glvwxo?at_medium=RSS&at_campaign=rss",
    "2026-11-12T05:12:56+00:00",
-   1
+   2
   ],
   [
    "Thu 12:11 a.m.",
@@ -325,6 +325,16 @@
   },
   {
    "score": 15,
+   "title": "2 dead, 4 critically injured after building collapses in New York City",
+   "url": "https://www.cbc.ca/news/world/new-york-fire-brooklyn-building-collapse-9.7418579",
+   "outlets": 12,
+   "why": [
+    "CBC News front #5"
+   ],
+   "theme": ""
+  },
+  {
+   "score": 15,
    "title": "Nvidia board reportedly meeting to decide CEO Jensen Huang’s future as chip giant’s share price plunges – follow live",
    "url": "https://www.theguardian.com/technology/live/2026/nov/12/nvidia-ceo-jensen-huang-affairs-share-price-plunges-live-latest",
    "outlets": 13,
@@ -336,14 +346,6 @@
    "title": "Canadian government says Russian players with visas will still be barred from WJC",
    "url": "https://www.timescolonist.com/national-sports/canadian-government-says-russian-players-with-visas-will-still-be-barred-from-wjc-13007392",
    "outlets": 18,
-   "why": [],
-   "theme": ""
-  },
-  {
-   "score": 14,
-   "title": "At least 2 killed, 17 hurt in Brooklyn building collapse",
-   "url": "https://www.cbsnews.com/news/brooklyn-building-collapse-bedford-avenue/",
-   "outlets": 12,
    "why": [],
    "theme": ""
   },
@@ -395,7 +397,7 @@
      "hyde-smith",
      "democrat",
      "senate",
-     "black"
+     "scott"
     ],
     "score": 20,
     "outlets": 11,
@@ -795,11 +797,10 @@
     "incoherent": false,
     "popular": 0,
     "us_election": true,
-    "fronts": 6,
+    "fronts": 5,
     "fronts_ca": 0,
     "fronts_who": [
      "NBC News",
-     "CBS News",
      "ABC News",
      "BBC News",
      "The Guardian",
@@ -807,7 +808,7 @@
     ],
     "outled_ca": 2,
     "judgment": "national",
-    "judgment_why": "National: leading 6 front pages (NBC News, CBS News, ABC News, BBC News, The Guardian, NPR).",
+    "judgment_why": "National: affects many people; carried across the country (national desks).",
     "weight": 54,
     "videos": [
      {
@@ -855,7 +856,7 @@
      "ceo"
     ],
     "score": 15,
-    "outlets": 11,
+    "outlets": 10,
     "carriers": 13,
     "tag": "Breaking",
     "title": "Nvidia board meets to decide CEO Huang’s future, source says",
@@ -919,7 +920,7 @@
       "url": "https://www.cbsnews.com/news/nvidia-stock-dives-report-board-prepares-oust-jensen-huang/"
      }
     ],
-    "independent": 11,
+    "independent": 10,
     "reports": [
      {
       "t": "Thu 12:43 a.m.",
@@ -1113,21 +1114,31 @@
       "copies": []
      },
      {
-      "t": "Wed 8:47 p.m.",
+      "t": "Wed 7:42 p.m.",
       "primary": false,
-      "outlet": "Toronto Sun",
-      "title": "Nvidia preparing to oust embattled CEO Jensen Huang: Reports",
-      "url": "https://torontosun.com/news/world/nvidia-preparing-to-oust-embattled-ceo-jensen-huang-reports",
-      "desc": "",
+      "outlet": "Toronto Star",
+      "title": "Nvidia reportedly preparing to oust CEO Jensen Huang",
+      "url": "https://www.thestar.com/news/world/united-states/nvidia-reportedly-preparing-to-oust-ceo-jensen-huang/article_cdfaf81a-84e7-5439-9ccf-301944cdca47.html",
+      "desc": "The news comes as the chipmaker confronts investigations and reports of two extramarital affairs.",
       "wire": "AFP",
       "by": [
+       {
+        "outlet": "Toronto Star",
+        "src": "AFP",
+        "byline": "n The Mercury News  Patrick T. Fallon / AFP via Getty Images, f"
+       },
        {
         "outlet": "Toronto Sun",
         "src": "AFP",
         "byline": "[{\"@type\": \"Person\", \"name\": \"AFP\", \"alternateName\":"
        }
       ],
-      "copies": []
+      "copies": [
+       {
+        "outlet": "Toronto Sun",
+        "url": "https://torontosun.com/news/world/nvidia-preparing-to-oust-embattled-ceo-jensen-huang-reports"
+       }
+      ]
      },
      {
       "t": "Wed 8:33 p.m.",
@@ -1191,23 +1202,6 @@
       "copies": []
      },
      {
-      "t": "Wed 7:42 p.m.",
-      "primary": false,
-      "outlet": "Toronto Star",
-      "title": "Nvidia reportedly preparing to oust CEO Jensen Huang",
-      "url": "https://www.thestar.com/news/world/united-states/nvidia-reportedly-preparing-to-oust-ceo-jensen-huang/article_cdfaf81a-84e7-5439-9ccf-301944cdca47.html",
-      "desc": "",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Toronto Star",
-        "src": "Torstar",
-        "byline": ""
-       }
-      ],
-      "copies": []
-     },
-     {
       "t": "Wed 3:05 p.m.",
       "primary": false,
       "outlet": "CP24",
@@ -1243,19 +1237,18 @@
     "incoherent": false,
     "popular": 0,
     "us_election": false,
-    "fronts": 6,
+    "fronts": 5,
     "fronts_ca": 1,
     "fronts_who": [
      "The Globe and Mail",
      "NBC News",
-     "CBS News",
      "ABC News",
      "BBC News",
      "The Guardian"
     ],
     "outled_ca": 2,
     "judgment": "national",
-    "judgment_why": "National: leading 6 front pages (The Globe and Mail, NBC News, CBS News, ABC News, BBC News, The Guardian).",
+    "judgment_why": "National: affects some people; carried across the country (national desks).",
     "weight": 45,
     "videos": [
      {
@@ -1283,10 +1276,10 @@
       "up": ""
      },
      {
-      "net": "Fox News",
-      "url": "https://www.youtube.com/watch?v=jHXVDncg5QE",
-      "title": "BREAKING: Nvidia reportedly preparing to oust CEO Jensen Huang",
-      "img": "https://i.ytimg.com/vi/jHXVDncg5QE/hqdefault.jpg",
+      "net": "CNBC",
+      "url": "https://www.youtube.com/watch?v=iJeUVJxvVJo",
+      "title": "Jensen Huang's Nvidia shares ownership: What you need to know",
+      "img": "https://i.ytimg.com/vi/iJeUVJxvVJo/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1522,10 +1515,10 @@
       "up": ""
      },
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=4Sy4yLQ_wu8",
-      "title": "Remembrance Day: Honouring the soldiers involved in the CFB Wainwright tragedy",
-      "img": "https://i.ytimg.com/vi/4Sy4yLQ_wu8/hqdefault.jpg",
+      "net": "CityNews",
+      "url": "https://www.youtube.com/watch?v=tDVwIfKLVlU",
+      "title": "Heavy hearts at St. Albert Remembrance Day ceremony after CFB Wainwright tragedy",
+      "img": "https://i.ytimg.com/vi/tDVwIfKLVlU/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
@@ -1538,10 +1531,10 @@
       "up": ""
      },
      {
-      "net": "CityNews",
-      "url": "https://www.youtube.com/watch?v=tDVwIfKLVlU",
-      "title": "Heavy hearts at St. Albert Remembrance Day ceremony after CFB Wainwright tragedy",
-      "img": "https://i.ytimg.com/vi/tDVwIfKLVlU/hqdefault.jpg",
+      "net": "Global News",
+      "url": "https://www.youtube.com/watch?v=LHje0uzGETY",
+      "title": "Remembrance Day grief runs deep in Wainwright after fire killed 4 Canadian soldiers",
+      "img": "https://i.ytimg.com/vi/LHje0uzGETY/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1561,10 +1554,9 @@
     "canada": "tie",
     "theme": "",
     "top": true,
-    "fronts": 6,
+    "fronts": 5,
     "fronts_who": [
      "NBC News",
-     "CBS News",
      "ABC News",
      "BBC News",
      "The Guardian",
@@ -1573,7 +1565,7 @@
     "rule": "Big international story, on every front page",
     "carriers": 23,
     "judgment": "national",
-    "why_judged": "National: leading 6 front pages (NBC News, CBS News, ABC News, BBC News, The Guardian, NPR)."
+    "why_judged": "National: affects many people; carried across the country (national desks)."
    },
    {
     "title": "Nvidia board meets to decide CEO Huang’s future, source says",
@@ -1582,16 +1574,15 @@
     "live": "",
     "weight": 45,
     "score": 15,
-    "independent": 11,
+    "independent": 10,
     "most_read": 0,
     "canada": "tie",
     "theme": "",
     "top": true,
-    "fronts": 6,
+    "fronts": 5,
     "fronts_who": [
      "The Globe and Mail",
      "NBC News",
-     "CBS News",
      "ABC News",
      "BBC News",
      "The Guardian"
@@ -1599,7 +1590,7 @@
     "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
     "carriers": 13,
     "judgment": "national",
-    "why_judged": "National: leading 6 front pages (The Globe and Mail, NBC News, CBS News, ABC News, BBC News, The Guardian)."
+    "why_judged": "National: affects some people; carried across the country (national desks)."
    },
    {
     "title": "Passing of soldiers, Wainwright tragedy give extra meaning to remembrance services in Sask.",
@@ -1657,10 +1648,9 @@
     "canada": "tie",
     "theme": "",
     "top": false,
-    "fronts": 3,
+    "fronts": 2,
     "fronts_who": [
      "CTV News",
-     "CBS News",
      "ABC News"
     ],
     "rule": "From abroad, tied to Canada",
@@ -1750,14 +1740,14 @@
     "why_judged": "Regional: affects some people; carried beyond one city."
    },
    {
+    "title": "2 dead, 4 critically injured after building collapses in New York City",
+    "score": 15,
+    "why": "not built: only 1 independent report(s) (8 sites)"
+   },
+   {
     "title": "Canadian government says Russian players with visas will still be barred from WJC",
     "score": 15,
     "why": "not built: only 2 independent report(s) (12 sites)"
-   },
-   {
-    "title": "At least 2 killed, 17 hurt in Brooklyn building collapse",
-    "score": 14,
-    "why": "not built: only 1 independent report(s) (8 sites)"
    },
    {
     "title": "Activist calls for ban on sports betting ads as legislation moves through Parliament",
@@ -1770,7 +1760,7 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Israeli strike on a Gaza hospital kills 6 people, health authorities say",
+    "title": "Israeli strike on hospital kills at least five Palestinians, Gaza civil defence agency says",
     "score": 9,
     "why": "not built: only 2 independent report(s) (2 sites)"
    },
@@ -1786,12 +1776,12 @@
    {
     "key": "auto-b05a4a61",
     "words": [
-     "stellantis",
      "minister’s",
-     "office",
+     "stellantis",
      "didn’t",
      "roshel",
-     "signed"
+     "signed",
+     "office"
     ],
     "score": 23,
     "outlets": 2,
@@ -1818,7 +1808,7 @@
      "alt": "Joly didn't meet with Roshel before deal signed with Stellantis: minister's office",
      "outlet": "Narcity",
      "url": "https://www.narcity.com/toronto/jolys-office-denies-meeting-with-roshel",
-     "since": "2026-11-12T06:07:22.909959+00:00"
+     "since": "2026-11-12T06:17:34.580038+00:00"
     },
     "photo_seen": [
      "https://www.ctvnews.ca/resizer/v2/P6IT2LJOXLPG7G5BCCMNSP6XN4.jpg?smart=true&auth=2954515d86b8414c30f77b0b9cbc3e8340d4b46a85dd8f3cd92b34a7d203b1eb&width=1200&height=630"
@@ -1963,13 +1953,13 @@
       "outlet": "Toronto Star",
       "title": "Joly didn't meet with Roshel before deal signed with Stellantis: minister's office",
       "url": "https://www.thestar.com/news/canada/joly-didn-t-meet-with-roshel-before-deal-signed-with-stellantis-minister-s-office/article_25f8c655-a587-5480-8f13-29914b9624e2.html",
-      "desc": "",
-      "wire": "",
+      "desc": "A spokesperson for Joly's office said the industry minister took part in discussions between Stellantis and Unifor to find a way forward after the company decided to move production previously",
+      "wire": "The Canadian Press",
       "by": [
        {
         "outlet": "Toronto Star",
-        "src": "Torstar",
-        "byline": ""
+        "src": "The Canadian Press",
+        "byline": "\"Sammy Hudes The Canadian Press\" \"Sammy Hudes <span"
        },
        {
         "outlet": "CityNews Winnipeg",
@@ -2112,22 +2102,6 @@
     "weight": 47,
     "videos": [
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=zgIiiDFLnTw",
-      "title": "Roshel CEO guarantees opportunities for Canadians laid off by Stellantis amid sale of Brampton plant",
-      "img": "https://i.ytimg.com/vi/zgIiiDFLnTw/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=Dfb-BZ81UnI",
-      "title": "Global National: Nov. 10, 2026 | Stellantis deal to sell Brampton plant \"underhanded,\" Unifor says",
-      "img": "https://i.ytimg.com/vi/Dfb-BZ81UnI/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
       "net": "CBC News",
       "url": "https://www.youtube.com/watch?v=zhgoOeQ7Tq8",
       "title": "Federal government was engaged regularly on Stellantis sale: source | Power & Politics",
@@ -2142,14 +2116,30 @@
       "img": "https://i.ytimg.com/vi/vl9ONBC-xFI/hqdefault.jpg",
       "rec": false,
       "up": ""
+     },
+     {
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=un7nuQTOEPc",
+      "title": "Carney calls Stellantis plant sale 'unacceptable,' Poilievre demands Joly's firing",
+      "img": "https://i.ytimg.com/vi/un7nuQTOEPc/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "Global News",
+      "url": "https://www.youtube.com/watch?v=zgIiiDFLnTw",
+      "title": "Roshel CEO guarantees opportunities for Canadians laid off by Stellantis amid sale of Brampton plant",
+      "img": "https://i.ytimg.com/vi/zgIiiDFLnTw/hqdefault.jpg",
+      "rec": false,
+      "up": ""
      }
     ]
    },
    {
     "key": "auto-1726c8f6",
     "words": [
-     "unknown",
      "soldier",
+     "unknown",
      "hegseth",
      "tomb"
     ],
@@ -2178,7 +2168,7 @@
      "alt": "Hegseth's group reprimanded for noise at Tomb of Unknown Soldier",
      "outlet": "CBS News",
      "url": "https://www.cbsnews.com/news/hegseth-tomb-of-the-unknown-soldier-arlington-cemetery/",
-     "since": "2026-11-12T06:07:30.887621+00:00"
+     "since": "2026-11-12T06:17:42.785035+00:00"
     },
     "photo_seen": [
      "https://assets1.cbsnewsstatic.com/hub/i/r/2026/11/11/cfc4a7fa-0c4e-4224-bcac-ba55f29f8de8/thumbnail/1200x630/da2594bae42df7baaebe4dde7cd9ad62/hegseth-arlington-tomb.jpg"
@@ -2416,11 +2406,10 @@
     "incoherent": false,
     "popular": 0,
     "us_election": false,
-    "fronts": 3,
+    "fronts": 2,
     "fronts_ca": 1,
     "fronts_who": [
      "CTV News",
-     "CBS News",
      "ABC News"
     ],
     "outled_ca": 2,
@@ -2453,10 +2442,10 @@
       "up": ""
      },
      {
-      "net": "C-SPAN",
-      "url": "https://www.youtube.com/watch?v=21Ty5uQ_RWQ",
-      "title": "Sentinel Yells at Group Near Secretary Hegseth for Silence & Respect",
-      "img": "https://i.ytimg.com/vi/21Ty5uQ_RWQ/hqdefault.jpg",
+      "net": "CNN",
+      "url": "https://www.youtube.com/watch?v=1_q1Kb23oRk",
+      "title": "Hegseth’s group reprimanded after laughing at Tomb of the Unknown Solider",
+      "img": "https://i.ytimg.com/vi/1_q1Kb23oRk/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -2493,7 +2482,7 @@
      "alt": "Protestors march during a nationwide general strike in Barcelona, Spain, Wednesday, Nov. 11, 2026. (AP Photo/Joan Mateu Parra)",
      "outlet": "CP24",
      "url": "https://www.cp24.com/news/world/2026/11/11/spains-workers-hold-a-general-strike-over-housing-costs-ahead-of-a-national-election/",
-     "since": "2026-11-12T06:07:34.181163+00:00"
+     "since": "2026-11-12T06:17:45.260646+00:00"
     },
     "photo_seen": [
      "https://www.cp24.com/resizer/v2/OHA4BDSDUKYP7SUSE6O672FGUA.jpg?smart=true&auth=648df8518201cd9c02b68c3f8e87b7a8b36b0c8a022d9c69c6777201e73442a3&width=1200&height=630"
@@ -2631,10 +2620,26 @@
     "weight": 25.0,
     "videos": [
      {
+      "net": "Global News",
+      "url": "https://www.youtube.com/watch?v=7jO_z3ZuHvk",
+      "title": "Spain’s largest unions organize general strike over affordability ahead of general election",
+      "img": "https://i.ytimg.com/vi/7jO_z3ZuHvk/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
       "net": "Associated Press",
       "url": "https://www.youtube.com/watch?v=dVhoHXznctc",
       "title": "Spain’s workers strike over housing costs before a national election",
       "img": "https://i.ytimg.com/vi/dVhoHXznctc/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "DW News",
+      "url": "https://www.youtube.com/watch?v=ulOxOj4lH9U",
+      "title": "Housing crisis triggers Spain’s first general strike in 14 years | DW News",
+      "img": "https://i.ytimg.com/vi/ulOxOj4lH9U/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -2793,7 +2798,7 @@
    "id": "E0vyus8wu78",
    "r": "ca",
    "o": "CBC News",
-   "t": "This B.C. resident lost her home due to flooding as storms batter the province | Hanomansing Live",
+   "t": "Storms batter parts of B.C. as some residents face flood warnings | Hanomansing Live",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=E0vyus8wu78",
@@ -2814,6 +2819,34 @@
    "img": "https://i.ytimg.com/vi/v4PmXrDJ4HU/hqdefault.jpg",
    "up": "2026-11-11",
    "added": "2026-11-12T05:46:24.485612+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "nXrOf0aNtjc",
+   "r": "ca",
+   "o": "CP24",
+   "t": "Ask a Lawyer – Episode 611",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=nXrOf0aNtjc",
+   "img": "https://i.ytimg.com/vi/nXrOf0aNtjc/hqdefault.jpg",
+   "up": "2026-11-11",
+   "added": "2026-11-12T06:16:24.029647+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "F3hzKcdCw2s",
+   "r": "ca",
+   "o": "CP24",
+   "t": "Remembrance Day observed across the GTHA | CP24 Live at Five for Nov. 11, 2026",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=F3hzKcdCw2s",
+   "img": "https://i.ytimg.com/vi/F3hzKcdCw2s/hqdefault.jpg",
+   "up": "2026-11-11",
+   "added": "2026-11-12T06:16:24.029647+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2994,7 +3027,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=3hKK0YCajG0",
    "img": "https://i.ytimg.com/vi/3hKK0YCajG0/hqdefault.jpg",
-   "up": "2026-11-12",
+   "up": "2026-11-11",
    "added": "2026-11-12T04:15:36.415835+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -3008,7 +3041,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=VKgvyemozRo",
    "img": "https://i.ytimg.com/vi/VKgvyemozRo/hqdefault.jpg",
-   "up": "2026-11-12",
+   "up": "2026-11-11",
    "added": "2026-11-12T04:15:36.415835+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -3036,20 +3069,6 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=2aGNoroPodQ",
    "img": "https://i.ytimg.com/vi/2aGNoroPodQ/hqdefault.jpg",
-   "up": "2026-11-12",
-   "added": "2026-11-12T05:00:52.851813+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "xMfKff9JHEY",
-   "r": "us",
-   "o": "Fox News",
-   "t": "HONOR AND REMEMBRANCE: Americans honor Veterans Day",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=xMfKff9JHEY",
-   "img": "https://i.ytimg.com/vi/xMfKff9JHEY/hqdefault.jpg",
    "up": "2026-11-12",
    "added": "2026-11-12T05:00:52.851813+00:00",
    "pic": "globe",
@@ -3098,10 +3117,24 @@
    "geo": "unknown"
   },
   {
+   "id": "guoz3uSBhU8",
+   "r": "us",
+   "o": "Fox News",
+   "t": "Gen Jack Keane: A return to MAJOR combat is ‘inevitable’",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=guoz3uSBhU8",
+   "img": "https://i.ytimg.com/vi/guoz3uSBhU8/hqdefault.jpg",
+   "up": "2026-11-12",
+   "added": "2026-11-12T06:16:24.029647+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
    "id": "mo6pQnL80nM",
    "r": "world",
    "o": "Sky News",
-   "t": "Survivors share their stories as 'I Am Jane Doe' movement spreads worldwide",
+   "t": "'I asked for help - I was met with an automated response': Survivors speak out after Cornell scandal",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=mo6pQnL80nM",
@@ -3171,7 +3204,7 @@
    "id": "zzle_Rcx8ig",
    "r": "world",
    "o": "BBC News",
-   "t": "Democrat becomes first black man in 140 years from Mississippi to be elected to US Senate | BBC News",
+   "t": "Democrat wins Mississippi Senate race in surprise US midterms victory | BBC News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=zzle_Rcx8ig",
@@ -3227,7 +3260,7 @@
    "id": "nMzt6U_13f0",
    "r": "world",
    "o": "Sky News",
-   "t": "From Thatcher to Brexit: Writer James Graham on Britain's divided history",
+   "t": "Writer James Graham: the Miners' Strike, Brexit and divided Britain",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=nMzt6U_13f0",
@@ -4005,11 +4038,11 @@
    "tz": "Asia/Jerusalem",
    "world": true,
    "w": "Attacks",
-   "label": "Israeli strike on a Gaza hospital kills 6 people",
-   "u": "https://www.thestar.com/news/world/middle-east/israeli-strike-on-a-gaza-hospital-kills-6-people-health-authorities-say/article_eb5ed2df-501d-5615-8ac6-e416004e535e.html",
-   "title": "Israeli strike on a Gaza hospital kills 6 people, health authorities say",
-   "outlet": "Toronto Star",
-   "t": "Thu 12:57 a.m.",
+   "label": "Israeli strike on hospital kills at least five…",
+   "u": "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo?at_medium=RSS&at_campaign=rss",
+   "title": "Israeli strike on hospital kills at least five Palestinians, Gaza civil defence agency says",
+   "outlet": "BBC News",
+   "t": "Thu 1:12 a.m.",
    "hot": true
   }
  ],
@@ -4071,6 +4104,16 @@
      "exclusive": false
     },
     {
+     "t": "Wed 6:00 a.m.",
+     "iso": "2026-11-11T11:00:45+00:00",
+     "outlet": "Euronews",
+     "title": "'Everything we love is at stake': Greta Thunberg blasts COP climate summits as being full of lobbyists",
+     "url": "https://www.euronews.com/2026/11/11/everything-we-love-is-at-stake-greta-thunberg-blasts-cop-climate-summits-as-being-full-of-",
+     "canada": false,
+     "paywall": false,
+     "exclusive": false
+    },
+    {
      "t": "Wed 4:00 a.m.",
      "iso": "2026-11-11T09:00:00+00:00",
      "outlet": "CBC News",
@@ -4117,8 +4160,8 @@
    "iso": "2026-11-12T05:43:00+00:00",
    "title": "Nvidia board reportedly meeting to decide CEO Jensen Huang’s future as chip giant’s share price plunges – follow live",
    "summary": "Huang’s potential departure would leave a leadership vacuum at the roughly $4tn chipmaker he co-founded, with Nvidia’s shares sliding about 8% in ​after-hours trading",
-   "outlet": "The Guardian, BBC News, CBS News, ABC News, The Hill, Toronto Sun (AFP), CTV News + BNN Bloomberg, Al Jazeera, Toronto Star, NBC News",
-   "n": 10,
+   "outlet": "The Guardian, BBC News, CBS News, ABC News, The Hill, Toronto Star + Toronto Sun (AFP), CTV News + BNN Bloomberg, Al Jazeera, NBC News",
+   "n": 9,
    "url": "https://www.theguardian.com/technology/live/2026/nov/12/nvidia-ceo-jensen-huang-affairs-share-price-plunges-live-latest",
    "img": "https://i.guim.co.uk/img/media/f8142d9712b85f162ef04fc00cf4f4dd2db40896/236_0_6713_5372/master/6713.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=7803e49f9f7314498a07e31d210d6df4"
   },
@@ -4149,14 +4192,14 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Thu 12:57 a.m.",
-   "iso": "2026-11-12T05:57:12+00:00",
-   "title": "Israeli strike on a Gaza hospital kills 6 people, health authorities say",
-   "summary": "CAIRO (AP) — An Israeli airstrike targeting the Nasser Hospital in southern Gaza killed six people and wounded at least a dozen more, Gaza's Health Ministry said.",
-   "outlet": "Toronto Star + Times Colonist (AP), BBC News, Al Jazeera, The Japan Times (Reuters), Middle East Eye, CP24",
+   "t": "Thu 1:12 a.m.",
+   "iso": "2026-11-12T06:12:05+00:00",
+   "title": "Israeli strike on hospital kills at least five Palestinians, Gaza civil defence agency says",
+   "summary": "The strike hit the surgery department of the hospital in Khan Younis, injuring at least 20 people and causing extensive damage, a spokesperson says.",
+   "outlet": "BBC News, Toronto Star + Times Colonist (AP), Al Jazeera, The Japan Times (Reuters), Middle East Eye, CP24",
    "n": 6,
-   "url": "https://www.thestar.com/news/world/middle-east/israeli-strike-on-a-gaza-hospital-kills-6-people-health-authorities-say/article_eb5ed2df-501d-5615-8ac6-e416004e535e.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/custom/image/f84403b8-7d76-11ee-9d02-a72a4951957f.png?resize=600%2C600"
+   "url": "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo?at_medium=RSS&at_campaign=rss",
+   "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/61be/live/ca670730-de47-11f1-9cac-a1aa02a901fa.jpg"
   },
   {
    "desk": "world",
@@ -4195,18 +4238,6 @@
    "img": "https://assets.kyivindependent.com/content/images/2026/11/Screenshot-2026-11-12-at-12_26_11-AM_20261112-053032_20261112-053800.png"
   },
   {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Thu 12:17 a.m.",
-   "iso": "2026-11-12T05:17:53+00:00",
-   "title": "At least 2 killed, 17 hurt in Brooklyn building collapse",
-   "summary": "A major technical rescue operation was ongoing, involving hundreds of firefighters.",
-   "outlet": "CBS News, Al Jazeera, The Guardian, Toronto Star + CityNews Winnipeg + CityNews Vancouver + CityNews Montreal + 4 more (AP)",
-   "n": 4,
-   "url": "https://www.cbsnews.com/news/brooklyn-building-collapse-bedford-avenue/",
-   "img": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/11/11/e6e32576-2a7c-448e-9459-59c1b809318c/thumbnail/1200x630/94f7e13d3d0f5fe681c7ef33d2d0b2e6/flatbush-building-collapse2-hi-res-still.jpg"
-  },
-  {
    "desk": "us",
    "pic": "podium",
    "t": "Wed 11:03 p.m.",
@@ -4243,28 +4274,16 @@
    "img": "https://d3i6fh83elv35t.cloudfront.net/static/2026/11/2026-11-10T193338Z_1991033532_RC25LOADTWT6_RTRMADP_3_USA-CONGRESS-REPUBLICANS-1024x683.jpg"
   },
   {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Wed 5:22 p.m.",
-   "iso": "2026-11-11T22:22:00+00:00",
-   "title": "Millions of Spaniards stage first general strike in 14 years as anger over housing leads to clashes",
-   "summary": "Workers endured stormy weather to demonstrate in Madrid, Barcelona and cities across Spain less than three weeks before a snap general election.",
-   "outlet": "The Japan Times (Reuters), BBC News, CP24 + BNN Bloomberg + CBC News, The Guardian",
-   "n": 4,
-   "url": "https://www.japantimes.co.jp/news/2026/11/12/world/spain-strike-14-years-housing/",
-   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/12/573513.JPG?v=3.1"
-  },
-  {
    "desk": "us",
    "pic": "podium",
-   "t": "Wed 10:52 p.m.",
-   "iso": "2026-11-12T03:52:33+00:00",
-   "title": "Jim Jordan vows to push GOP agenda while party still holds majority, warns of Dem lawfare",
-   "summary": "Incoming House Minority Leader Rep. Jim Jordan vows to maximize the GOP's lame-duck legislative agenda before Democrats take congressional control.",
-   "outlet": "Fox News, Politico, CBC News (AP)",
+   "t": "Wed 11:07 p.m.",
+   "iso": "2026-11-12T04:07:38+00:00",
+   "title": "At least two dead while others are trapped in the rubble after a building collapse in New York City",
+   "summary": "One resident of the collapsed building, Anderson Velez, recounted that he was at work when his wife phoned and said that their two children, aged 2 and 7, were among those trapped in the rubble, local media reported.",
+   "outlet": "Euronews, CityNews Winnipeg + CityNews Vancouver + CityNews Montreal + CityNews Halifax + 4 more (AP), The Guardian",
    "n": 3,
-   "url": "https://www.foxnews.com/media/jim-jordan-vows-push-gop-agenda-party-holds-majority-warns-dem-lawfare",
-   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2025/10/jim-jordan-sits-in-a-hearing.jpg"
+   "url": "https://www.euronews.com/2026/11/12/at-least-two-dead-while-others-are-trapped-in-the-rubble-after-a-building-collapse-in-new-",
+   "img": "https://images.euronews.com/articles/stories/09/98/90/49/1200x675_cmsv2_ddd3d726-cb34-5087-aa3a-0a12cce64745-9989049.jpg"
   },
   {
    "desk": "world",
@@ -4277,6 +4296,30 @@
    "n": 3,
    "url": "https://www.cbc.ca/news/world/baby-found-buried-alive-south-carolina-9.7418243",
    "img": "https://i.cbc.ca/ais/0e38a5a2-59f1-4e7e-b98d-9b3534286c59,1794423889554/full/max/0/default.jpg?im=Crop%2Crect%3D%28505%2C144%2C1328%2C747%29%3BResize%3D620"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Wed 9:19 p.m.",
+   "iso": "2026-11-12T02:19:00+00:00",
+   "title": "Conflict must not distract from climate action, leaders warn COP31",
+   "summary": "COP31 host Turkey has been pushing for a goal to expand electrification at the center of a deal, even as critics say it may do little to curb warming.",
+   "outlet": "The Japan Times (Reuters), The Guardian, CP24 (AP)",
+   "n": 3,
+   "url": "https://www.japantimes.co.jp/environment/2026/11/12/climate-change/conflict-climate-action-cop31/",
+   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/12/573533.jpg?v=3.1"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Wed 5:07 p.m.",
+   "iso": "2026-11-11T22:07:37+00:00",
+   "title": "Clashes erupt in Barcelona after thousands join Spain general strike",
+   "summary": "Tens of thousands of people have been taking part in the strike, called by the country's main unions over housing and the high cost of living.",
+   "outlet": "BBC News, CP24 + BNN Bloomberg + CBC News, The Guardian",
+   "n": 3,
+   "url": "https://www.bbc.co.uk/news/articles/cwvg25nypmrvo?at_medium=RSS&at_campaign=rss",
+   "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/c8f2/live/d0df2010-de11-11f1-a701-fddedf244c16.jpg"
   },
   {
    "desk": "world",
@@ -4745,26 +4788,6 @@
    ]
   },
   {
-   "o": "CBS News",
-   "ca": false,
-   "h": [
-    "Democrat Scott Colom wins Mississippi Senate race in upset",
-    "Nvidia's board preparing to oust CEO Jensen Huang, sources say",
-    "Trump says Iran war will be over \"when we want to end it\"",
-    "Bessent relocates from home to military base after Iran threats",
-    "10 takeaways from Trump's 60 Minutes interview",
-    "Hegseth's group reprimanded for noise at Tomb of Unknown Soldier"
-   ],
-   "u": [
-    "https://www.cbsnews.com/news/mississippi-2026-senate-scott-colom-cindy-hyde-smith/",
-    "https://www.cbsnews.com/news/nvidia-board-ceo-jensen-huang-china/",
-    "https://www.cbsnews.com/live-updates/iran-war-us-nuclear-strait-of-hormuz/",
-    "https://www.cbsnews.com/news/bessent-relocate-dc-area-home-military-base-iran-threats-to-kill-him/",
-    "https://www.cbsnews.com/news/10-takeaways-from-trump-60-minutes-interview/",
-    "https://www.cbsnews.com/news/hegseth-tomb-of-the-unknown-soldier-arlington-cemetery/"
-   ]
-  },
-  {
    "o": "ABC News",
    "ca": false,
    "h": [
@@ -4789,7 +4812,7 @@
    "ca": false,
    "h": [
     "Ukraine's power supply close to critical as Russian strikes bring darkness and cold",
-    "Nvidia shares plunge as board reportedly weighs ousting CEO after allegation he had second affair",
+    "Nvidia shares plunge as board reportedly weighs ousting CEO Jensen Huang after second affair allegation",
     "Famed ship SS United States sunk off coast of Florida",
     "Israeli strike on hospital kills at least five Palestinians, Gaza civil defence agency says",
     "Democrat Scott Colom seals historic win in Mississippi Senate race",
@@ -4854,7 +4877,7 @@
     "url": "https://www.youtube.com/watch?v=Lhk3Gu0YeRs",
     "img": "https://i.ytimg.com/vi/Lhk3Gu0YeRs/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "305",
+    "watching": "302",
     "rolling": true
    },
    {
@@ -4864,7 +4887,7 @@
     "url": "https://www.youtube.com/watch?v=_5vKMwyKAL0",
     "img": "https://i.ytimg.com/vi/_5vKMwyKAL0/hqdefault.jpg",
     "story": "Two killed in 'devastating' New York building collapse",
-    "watching": "217",
+    "watching": "264",
     "reports": [
      {
       "outlet": "CBS News",
@@ -4879,6 +4902,13 @@
       "url": "https://www.bbc.co.uk/news/articles/c8zx964glvwxo?at_medium=RSS&at_campaign=rss",
       "t": "Thu 12:12 a.m.",
       "iso": "2026-11-12T05:12:56+00:00"
+     },
+     {
+      "outlet": "Euronews",
+      "title": "At least two dead while others are trapped in the rubble after a building collapse in New York City",
+      "url": "https://www.euronews.com/2026/11/12/at-least-two-dead-while-others-are-trapped-in-the-rubble-after-a-building-collapse-in-new-",
+      "t": "Wed 11:07 p.m.",
+      "iso": "2026-11-12T04:07:38+00:00"
      },
      {
       "outlet": "Al Jazeera",
