@@ -1430,6 +1430,14 @@ header.site { border-bottom: 0; }
 .livecov .chan-what { display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; font-size: 13.5px; line-height: 1.4; }
 .livecov .chan { justify-content: flex-start; }
 .livecov .chan-go { margin-top: auto; }
+/* LIVE COVERAGE SCROLLS SIDEWAYS like every other video row (Hannah, Wed Nov 11, 2026: "make it scrollable, like all
+   of our other video"): one row of tiles the width of the Watch clips, swiped or scrolled sideways, on every screen */
+.livecov .bk-chan .chan-row, #autoBreaking .livecov .bk-chan .chan-row { display: grid !important; grid-auto-flow: column; grid-template-columns: none !important; grid-auto-columns: min(260px, 74vw); gap: 18px;
+  overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch; overscroll-behavior-x: contain; scroll-snap-type: x proximity;
+  scrollbar-width: thin; scrollbar-color: rgba(255,255,255,.55) transparent; padding-bottom: 10px; }
+.livecov .bk-chan .chan-row > .chan-cell { scroll-snap-align: start; }
+.livecov .bk-chan .chan-row::-webkit-scrollbar { height: 6px; }
+.livecov .bk-chan .chan-row::-webkit-scrollbar-thumb { background: rgba(255,255,255,.55); border-radius: 3px; }
 /* Scheduled live event for the top story, shown at the top of the slot (Hannah’s rule) */
 .bk-next { position: relative; z-index: 3; margin: 4px 0 16px; max-width: 760px; padding: 14px 16px; background: rgba(15, 11, 25, .32); border-left: 4px solid #FFFFFF; }
 .bk-next .nx-when { display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #FFFFFF; }
