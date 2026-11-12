@@ -153,6 +153,15 @@ _auto = {}
 ap._select(_auto, [nvda, soon], [nvda, soon], lambda x: 0)
 check([x["key"] for x in _auto["stories"][:2]] == ["lv", "nv"], "with the 4 p.m. update coming, Stellantis goes first")
 check(not ap.shares_big_day(dict(soon, canus=True), nvda), "a live Canada-U.S. story still goes to the Canadian angle box")
+# ... unless the big story abroad has a lot of Canadian content ("Unless that big story abroad has a lot of Canadian
+# content or Canadian angles to it")
+check(not ap.strong_ca_angle(dict(nvda, ca_angle={"specific": 2, "official": 0})), "two Canadian angle reports is not a lot")
+nv_ca = dict(nvda, ca_angle={"specific": 3, "official": 0})
+check(ap.strong_ca_angle(nv_ca), "three Canadian newsrooms tying it to Canada is a lot")
+check(ap.strong_ca_angle(dict(nvda, ca_angle={"specific": 1, "official": 1})), "a statement from Ottawa plus a Canadian report is a lot")
+_auto = {}
+ap._select(_auto, [nv_ca, soon], [nv_ca, soon], lambda x: 0)
+check([x["key"] for x in _auto["stories"][:2]] == ["nv", "lv"], "a big story abroad with a lot of Canadian angle keeps the lead; Stellantis sits beside it")
 _auto = {}
 ap._select(_auto, [nvda, scoop], [nvda, scoop], lambda x: 0)
 check(_auto["top_n"] == 1 and _auto["moved"] and _auto["moved"][0]["to"] == "canada", "a smaller Canadian story still moves to the Canada desk")

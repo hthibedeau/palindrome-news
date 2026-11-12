@@ -2131,7 +2131,11 @@ def canada_tie(s, items, now, eds, papers, otr, canus_):
     mine = [x for x in recent if x[3] in own]
     if mine and sum(1 for x in mine if CAN_TIE.search(x[2])) * 2 >= len(mine):
         return "canadian"
-    if _angle(title, s.get("words") or [], mine, recent, eds, papers, otr, _pool(canus_), (s.get("words") or [])[:4]):
+    ang = _angle(title, s.get("words") or [], mine, recent, eds, papers, otr, _pool(canus_), (s.get("words") or [])[:4])
+    if ang:
+        # how much Canadian angle it has: Canadian newsrooms' own reports on it, and official Canadian statements
+        # (strong_ca_angle(): a big story from abroad with a lot of it keeps the lead on a big news day)
+        s["ca_angle"] = {"specific": ang.get("specific") or 0, "official": len(ang.get("official") or [])}
         return "tie"
     foreign = US_STORY.search(title) or (mine and sum(1 for x in mine if FOREIGN_SRC.search(x[3]) or au.US.search(x[1]) or au.WORLDO.search(x[1])) / len(mine) >= FOREIGN_SHARE)
     # a story that names no Canadian person, place or institution is not Canadian, even when only Canadian newsrooms
@@ -2353,7 +2357,13 @@ def _select(auto, cands, ranked, tier):
             rest.insert(0, s)
         # Canada's story goes first, the big story beside it (Hannah, Thu Nov 12, 2026: "I think they can both sit
         # in the breaking news, but I would put the Canada one first")
-        top2 = [partner] + top2[:1] if partner else top2[:1]
+        # ... unless the big story from abroad has a lot of Canadian content in it (Hannah, Thu Nov 12, 2026: "Unless
+        # that big story abroad has a lot of Canadian content or Canadian angles to it"): then it keeps the lead and
+        # the Canadian story sits beside it (strong_ca_angle())
+        if partner and strong_ca_angle(top2[0]):
+            top2 = top2[:1] + [partner]
+        else:
+            top2 = [partner] + top2[:1] if partner else top2[:1]
     moved_keys = {m["key"] for m in auto["moved"]}
     rest = [s for s in rest if s.get("key") not in moved_keys] + [s for s in rest if s.get("key") in moved_keys]
     ranked = top2 + rest
@@ -3027,6 +3037,20 @@ def big_news_day(top2):
     return any(big(t) for t in top2)
 
 
+# A LOT OF CANADIAN CONTENT (Hannah, Thu Nov 12, 2026): a big story from abroad leads a Canadian story on a big news
+# day only when Canada is really in it: at least CA_ANGLE_STRONG different Canadian newsrooms' own reports tying it to
+# Canada (Canadians caught up in it, Ottawa's response, effects on Canadian jobs, trade or communities), or an official
+# statement from the Prime Minister or a federal minister plus at least one such report. Counted by canada_tie().
+CA_ANGLE_STRONG = 3
+
+
+def strong_ca_angle(s):
+    a = s.get("ca_angle") or {}
+    if s.get("canada") == "canadian":
+        return True
+    return (a.get("specific") or 0) >= CA_ANGLE_STRONG or ((a.get("official") or 0) >= 1 and (a.get("specific") or 0) >= 1)
+
+
 def shares_big_day(s, big):
     """On a big news day, does this Canadian story stay at the top beside the big story instead of moving to the Canada
     desk? (Hannah, Thu Nov 12, 2026: Nvidia's CEO stepping down led 10 front pages; the Stellantis plant sale, leading
@@ -3035,7 +3059,8 @@ def shares_big_day(s, big):
         morning after still stands alone, as Hannah set on Nov 3 and Nov 4);
       - this story is Canadian (not a Canada-U.S. story, which goes to the Canadian angle box), national, one story,
         not sport;
-      - then it goes FIRST, the big story second (Hannah: "I would put the Canada one first");
+      - then it goes FIRST, the big story second (Hannah: "I would put the Canada one first"), unless the big story
+        has a lot of Canadian content in it (strong_ca_angle()): then the big story keeps the lead;
       - it is the story Canada's front pages lead with: the most Canadian front pages of any Canadian story, at least
         LEADS_CA_MIN of them (leads_ca), or as many Canadian front pages as the big story itself; or it has a live
         event on it, on air now or coming up within LIVE_SOON_HOURS (a news conference, an update, a vote).
