@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-12T09:24:51.681721+00:00",
- "checkedLabel": "Thu 4:24 a.m.",
+ "checked": "2026-11-12T09:30:41.791467+00:00",
+ "checkedLabel": "Thu 4:30 a.m.",
  "stories": [
   {
    "key": "top",
@@ -56,6 +56,12 @@
      "t": "Thu 4:23 a.m."
     },
     {
+     "outlet": "The Canadian Press (via Winnipeg Free Press)",
+     "url": "https://www.winnipegfreepress.com/canada/2026/11/12/in-the-news-today-carney-in-dublin-stellantis-talks-b-c-flooding-maid-widow-plea",
+     "iso": "2026-11-12T09:23:00+00:00",
+     "t": "Thu 4:23 a.m."
+    },
+    {
      "outlet": "Medicine Hat News",
      "url": "https://medicinehatnews.com/news/national-news/2026/11/12/in-the-news-today-carney-in-dublin-stellantis-talks-b-c-flooding-maid-widow-plea/",
      "iso": "2026-11-12T09:23:00+00:00",
@@ -72,17 +78,29 @@
      "url": "https://www.timescolonist.com/the-mix/his-wife-died-by-suicide-he-wants-the-government-to-reconsider-its-maid-bill-13008146",
      "iso": "2026-11-12T09:00:06+00:00",
      "t": "Thu 4:00 a.m."
-    },
-    {
-     "outlet": "The Canadian Press (via Winnipeg Free Press)",
-     "url": "https://www.winnipegfreepress.com/arts-and-life/life/2026/11/12/his-wife-died-by-suicide-he-wants-the-government-to-reconsider-its-maid-bill",
-     "iso": "2026-11-12T09:00:06+00:00",
-     "t": "Thu 4:00 a.m."
     }
    ]
   }
  ],
  "wire": [
+  [
+   "Thu 4:26 a.m.",
+   "World",
+   "Israeli strike on Gaza hospital kills at least six people, officials say",
+   "NBC News",
+   "https://www.nbcnews.com/world/middle-east/israeli-strike-gaza-nasser-hospital-abu-shaira-doctor-hamas-rcna608932",
+   "2026-11-12T09:26:44+00:00",
+   4
+  ],
+  [
+   "Thu 4:23 a.m.",
+   "Canada",
+   "In the news today: Carney in Dublin, Stellantis talks, B.C. flooding, MAID widow plea",
+   "The Canadian Press (via Winnipeg Free Press)",
+   "https://www.winnipegfreepress.com/canada/2026/11/12/in-the-news-today-carney-in-dublin-stellantis-talks-b-c-flooding-maid-widow-plea",
+   "2026-11-12T09:23:00+00:00",
+   5
+  ],
   [
    "Thu 4:18 a.m.",
    "Latest",
@@ -145,15 +163,6 @@
    "https://www.cbc.ca/news/world/nvidia-chips-china-ban-9.7416670",
    "2026-11-12T09:01:11.649000+00:00",
    1
-  ],
-  [
-   "Thu 4:00 a.m.",
-   "World",
-   "Israeli strike on Gaza hospital kills six Palestinians, health ministry says",
-   "BBC News",
-   "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo?at_medium=RSS&at_campaign=rss",
-   "2026-11-12T09:00:15+00:00",
-   3
   ],
   [
    "Thu 4:00 a.m.",
@@ -297,15 +306,6 @@
    "Toronto Star",
    "https://www.thestar.com/news/world/europe/a-romanov-sapphire-bracelet-sells-for-4-9-million-at-a-geneva-auction/article_19682303-05c5-589a-b97c-63bb36c175fa.html",
    "2026-11-12T08:15:15+00:00",
-   2
-  ],
-  [
-   "Thu 3:12 a.m.",
-   "World",
-   "Mississippi elects first Black Senator since 1874",
-   "Al Jazeera",
-   "https://www.aljazeera.com/video/newsfeed/2026/11/12/mississippi-elects-first-black-senator-since-1874?traffic_source=rss",
-   "2026-11-12T08:12:40+00:00",
    1
   ]
  ],
@@ -430,6 +430,17 @@
  ],
  "canada": [
   {
+   "t": "Thu 4:30 a.m.",
+   "iso": "2026-11-12T09:30:00+00:00",
+   "region": "N.L.",
+   "title": "Corner Brook Status of Women Council fills gaps for community ‘in any capacity they need’",
+   "summary": "On any given day at Corner Brook Status of Women Council, the phone is likely ringing off the hook. On the line is often someone in one of their most vulnerable moments.",
+   "outlet": "CBC News",
+   "n": 1,
+   "url": "https://www.cbc.ca/news/canada/newfoundland-labrador/confronting-crisis-womens-centre-9.7393631",
+   "img": "https://i.cbc.ca/ais/59cc7932-7398-4a24-9633-05b88f948c3d,1792778979591/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1920%2C1080%29%3BResize%3D620"
+  },
+  {
    "t": "Thu 4:00 a.m.",
    "iso": "2026-11-12T09:00:00+00:00",
    "region": "Ontario",
@@ -497,7 +508,7 @@
      "democrat",
      "senate",
      "colom",
-     "scott"
+     "black"
     ],
     "score": 20,
     "outlets": 11,
@@ -987,6 +998,14 @@
       "url": "https://www.bnnbloomberg.ca/business/2026/11/12/nvidia-board-meets-to-decide-ceo-huangs-future-source-says/"
      },
      {
+      "src": "live/img/auto-08da077b-40d07d2ccd.jpg",
+      "orig": "https://images.euronews.com/articles/stories/09/98/93/74/1200x675_cmsv2_dc7d3fe2-9a92-5b24-8560-5a33c746a962-9989374.jpg",
+      "caption": "Is Nvidia's Jensen Huang too big to fail? Why a replacement is difficult and the impact on AI. — via Euronews",
+      "alt": "Is Nvidia's Jensen Huang too big to fail? Why a replacement is difficult and the impact on AI",
+      "outlet": "Euronews",
+      "url": "https://www.euronews.com/2026/11/12/is-nvidias-jensen-huang-too-big-to-fail-why-a-replacement-is-difficult-and-the-impact-on-a"
+     },
+     {
       "src": "live/img/auto-08da077b-fe6595f4e7.jpg",
       "orig": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/2521/live/6ba67640-dc03-11f1-b441-2b33b063138f.jpg",
       "caption": "Jensen Huang and Donald Trump. — via BBC News",
@@ -1001,14 +1020,6 @@
       "alt": "Nvidia's board preparing to oust CEO Jensen Huang, sources say",
       "outlet": "CBS News",
       "url": "https://www.cbsnews.com/news/nvidia-board-ceo-jensen-huang-china/"
-     },
-     {
-      "src": "live/img/auto-08da077b-7883a00a3c.jpg",
-      "orig": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/12/573665.JPG?v=3.1",
-      "caption": "From: Chinese AI firms rush to secure Nvidia chip capacity as scandal stirs fear of curbs. — via The Japan Times",
-      "alt": "Chinese AI firms rush to secure Nvidia chip capacity as scandal stirs fear of curbs",
-      "outlet": "The Japan Times",
-      "url": "https://www.japantimes.co.jp/business/2026/11/12/tech/china-ai-nvidia-spy-us-chip-curbs/"
      }
     ],
     "independent": 11,
@@ -1369,18 +1380,18 @@
     "weight": 56,
     "videos": [
      {
-      "net": "Reuters",
-      "url": "https://www.youtube.com/watch?v=qGmghNwZqcc",
-      "title": "CoreWeave sparks AI cloud stock rally, lifts Nvidia",
-      "img": "https://i.ytimg.com/vi/qGmghNwZqcc/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
       "net": "Bloomberg",
       "url": "https://www.youtube.com/watch?v=K86aHmOW6fw",
       "title": "Nvidia Board Weighs Huang’s Future as Congress Prepares Subpoena",
       "img": "https://i.ytimg.com/vi/K86aHmOW6fw/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "Reuters",
+      "url": "https://www.youtube.com/watch?v=qGmghNwZqcc",
+      "title": "CoreWeave sparks AI cloud stock rally, lifts Nvidia",
+      "img": "https://i.ytimg.com/vi/qGmghNwZqcc/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1389,23 +1400,23 @@
    {
     "key": "auto-b05a4a61",
     "words": [
-     "minister’s",
      "stellantis",
+     "minister’s",
      "signed",
-     "roshel",
      "didn’t",
-     "office"
+     "office",
+     "roshel"
     ],
     "score": 25,
     "outlets": 2,
     "carriers": 18,
     "tag": "Breaking",
     "title": "In the news today: Carney in Dublin, Stellantis talks, B.C. flooding, MAID widow plea",
-    "url": "https://medicinehatnews.com/news/national-news/2026/11/12/in-the-news-today-carney-in-dublin-stellantis-talks-b-c-flooding-maid-widow-plea/",
-    "outlet": "Medicine Hat News",
+    "url": "https://www.winnipegfreepress.com/canada/2026/11/12/in-the-news-today-carney-in-dublin-stellantis-talks-b-c-flooding-maid-widow-plea",
+    "outlet": "The Canadian Press (via Winnipeg Free Press)",
     "t": "Thu 4:23 a.m.",
     "iso": "2026-11-12T09:23:00+00:00",
-    "summary": "Here is a roundup of stories from The Canadian Press designed to bring you up to speed … Carney in Ireland for meetings with European leaders, ahead of Asia summits Prime Minister Mark Carney is in Dublin for an informal meeting with European leaders, ahead of summits in Asia. Carney is attending the European Political",
+    "summary": "Here is a roundup of stories from The Canadian Press designed to bring you up to speed …",
     "first": {
      "outlet": "BNN Bloomberg",
      "url": "https://www.bnnbloomberg.ca/business/economics/2026/11/11/a-timeline-of-stellantis-assembly-plant-in-brampton-ont/",
@@ -1469,6 +1480,14 @@
      {
       "t": "Thu 4:23 a.m.",
       "iso": "2026-11-12T09:23:00+00:00",
+      "outlet": "The Canadian Press (via Winnipeg Free Press)",
+      "title": "In the news today: Carney in Dublin, Stellantis talks, B.C. flooding, MAID widow plea",
+      "url": "https://www.winnipegfreepress.com/canada/2026/11/12/in-the-news-today-carney-in-dublin-stellantis-talks-b-c-flooding-maid-widow-plea",
+      "desc": "Here is a roundup of stories from The Canadian Press designed to bring you up to speed …"
+     },
+     {
+      "t": "Thu 4:23 a.m.",
+      "iso": "2026-11-12T09:23:00+00:00",
       "outlet": "Medicine Hat News",
       "title": "In the news today: Carney in Dublin, Stellantis talks, B.C. flooding, MAID widow plea",
       "url": "https://medicinehatnews.com/news/national-news/2026/11/12/in-the-news-today-carney-in-dublin-stellantis-talks-b-c-flooding-maid-widow-plea/",
@@ -1481,14 +1500,6 @@
       "title": "Joly set to hold meeting in Toronto with Stellantis, union and Ontario minister",
       "url": "https://www.timescolonist.com/the-mix/joly-set-to-hold-meeting-in-toronto-with-stellantis-union-and-ontario-minister-13008144",
       "desc": "TORONTO — Industry Minister Mélanie Joly is set to hold a four-way meeting today with automaker Stellantis, the union representing its more than 9,000 workers in Canada, and representatives of the Ontario government."
-     },
-     {
-      "t": "Thu 4:00 a.m.",
-      "iso": "2026-11-12T09:00:10+00:00",
-      "outlet": "The Canadian Press (via Winnipeg Free Press)",
-      "title": "Joly set to hold meeting in Toronto with Stellantis, union and Ontario minister",
-      "url": "https://www.winnipegfreepress.com/business/2026/11/12/joly-set-to-hold-meeting-in-toronto-with-stellantis-union-and-ontario-minister",
-      "desc": ""
      },
      {
       "t": "Wed 9:17 p.m.",
@@ -1639,7 +1650,7 @@
        {
         "outlet": "The Canadian Press (via Winnipeg Free Press)",
         "src": "The Canadian Press",
-        "byline": "e\": \"Person\",\n\t\t\t\t\"name\": \"Sammy Hudes, The Canadian Press\"\n\t\t\t} [{\"@type\":\"Pe"
+        "byline": "{\n\t\t\t\t\"@type\": \"Person\",\n\t\t\t\t\"name\": \"The Canadian Press\"\n\t\t\t} [{\"@type\":\"Pe"
        },
        {
         "outlet": "Medicine Hat News",
@@ -1695,7 +1706,7 @@
        },
        {
         "outlet": "The Canadian Press (via Winnipeg Free Press)",
-        "url": "https://www.winnipegfreepress.com/business/2026/11/12/joly-set-to-hold-meeting-in-toronto-with-stellantis-union-and-ontario-minister"
+        "url": "https://www.winnipegfreepress.com/canada/2026/11/12/in-the-news-today-carney-in-dublin-stellantis-talks-b-c-flooding-maid-widow-plea"
        },
        {
         "outlet": "Medicine Hat News",
@@ -1762,10 +1773,10 @@
       "up": ""
      },
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=zgIiiDFLnTw",
-      "title": "Roshel CEO guarantees opportunities for Canadians laid off by Stellantis amid sale of Brampton plant",
-      "img": "https://i.ytimg.com/vi/zgIiiDFLnTw/hqdefault.jpg",
+      "net": "CP24",
+      "url": "https://www.youtube.com/watch?v=LVsUL_LHflI",
+      "title": "Sources say the PM Carney government was involved in talks leading to Stellantis plant sale",
+      "img": "https://i.ytimg.com/vi/LVsUL_LHflI/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1940,18 +1951,18 @@
     "weight": 22.0,
     "videos": [
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=7jO_z3ZuHvk",
-      "title": "Spain’s largest unions organize general strike over affordability ahead of general election",
-      "img": "https://i.ytimg.com/vi/7jO_z3ZuHvk/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
       "net": "Associated Press",
       "url": "https://www.youtube.com/watch?v=dVhoHXznctc",
       "title": "Spain’s workers strike over housing costs before a national election",
       "img": "https://i.ytimg.com/vi/dVhoHXznctc/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "DW News",
+      "url": "https://www.youtube.com/watch?v=ulOxOj4lH9U",
+      "title": "Housing crisis triggers Spain’s first general strike in 14 years | DW News",
+      "img": "https://i.ytimg.com/vi/ulOxOj4lH9U/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -2014,7 +2025,7 @@
    },
    {
     "title": "In the news today: Carney in Dublin, Stellantis talks, B.C. flooding, MAID widow plea",
-    "url": "https://medicinehatnews.com/news/national-news/2026/11/12/in-the-news-today-carney-in-dublin-stellantis-talks-b-c-flooding-maid-widow-plea/",
+    "url": "https://www.winnipegfreepress.com/canada/2026/11/12/in-the-news-today-carney-in-dublin-stellantis-talks-b-c-flooding-maid-widow-plea",
     "rank": 3,
     "live": "European leaders, Canadian PM meet in Dublin",
     "weight": 75,
@@ -2143,17 +2154,17 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
+    "title": "Israeli strike on Gaza hospital kills at least six people, officials say",
+    "score": 7,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
     "title": "Impacts from B.C. drenching mount as water levels rise",
     "score": 7,
     "why": "not built: only 1 independent report(s) (5 sites)"
    },
    {
     "title": "LinkedIn, Monster take down over 1,000 fake job postings after CBC investigation",
-    "score": 6,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Anthropic IPO to test the first 'pure play' AI stock in a choppy market",
     "score": 6,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
@@ -2164,10 +2175,10 @@
    {
     "key": "auto-ecc9c2d9",
     "words": [
+     "government's",
      "homelessness",
      "language",
      "carney’s",
-     "targets",
      "tackles",
      "budget"
     ],
@@ -2196,7 +2207,7 @@
      "alt": "Carney’s budget tackles homelessness. Will it work?",
      "outlet": "CityNews Winnipeg",
      "url": "https://winnipeg.citynews.ca/2026/11/11/homelessness-federal-budget-liberals-big-story-podcast/",
-     "since": "2026-11-12T09:27:27.948977+00:00"
+     "since": "2026-11-12T09:33:42.911875+00:00"
     },
     "photo_seen": [
      "https://winnipeg.citynews.ca/wp-content/blogs.dir/sites/13/2026/11/aaba2bb9c323a4ebab9edeac0030559cfdfcf705eb6f1392b61d067261a96504.jpg"
@@ -2499,6 +2510,34 @@
    "geo": "unknown"
   },
   {
+   "id": "GhOZPgYHpKo",
+   "r": "ca",
+   "o": "CTV News",
+   "t": "Evacuation orders in effect in parts of B.C.’s South Coast over flooding caused by heavy rainfall",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=GhOZPgYHpKo",
+   "img": "https://i.ytimg.com/vi/GhOZPgYHpKo/hqdefault.jpg",
+   "up": "2026-11-11",
+   "added": "2026-11-12T09:30:41.791467+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "nwiEKqjp7QM",
+   "r": "ca",
+   "o": "CTV News",
+   "t": "CTV News in Dublin: PM Carney looking to expand trade",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=nwiEKqjp7QM",
+   "img": "https://i.ytimg.com/vi/nwiEKqjp7QM/hqdefault.jpg",
+   "up": "2026-11-11",
+   "added": "2026-11-12T09:30:41.791467+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
    "id": "arz_Kb2y6XQ",
    "r": "us",
    "o": "PBS NewsHour",
@@ -2726,7 +2765,7 @@
    "id": "0fTCF8tEMRY",
    "r": "us",
    "o": "CNN",
-   "t": "How Andreas Almgren optimized his way to a NYC Marathon win | Chasing Life",
+   "t": "How a former data scientist won the NYC Marathon | Chasing Life",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=0fTCF8tEMRY",
@@ -3320,38 +3359,6 @@
    "auto": true
   },
   {
-   "cat": "intl",
-   "media": "none",
-   "initials": "UN",
-   "name": "United Nations",
-   "role": "UN News",
-   "date": "Nov 11",
-   "platform": "Official statement",
-   "handle": "news.un.org",
-   "hed": "Gaza winter aid: ‘No more delay’, Fletcher tells governments stalling on support",
-   "summary": "The UN’s Emergency Relief Coordinator, Tom Fletcher, expressed deep concern about the deteriorating humanitarian situation in Gaza, as UN member states and partners have been repeatedly delaying sending their support to the Strip.",
-   "href": "https://news.un.org/feed/view/en/story/2026/11/1168788",
-   "report": false,
-   "iso": "2026-11-11T12:00:00+00:00",
-   "auto": true
-  },
-  {
-   "cat": "intl",
-   "media": "none",
-   "initials": "UN",
-   "name": "United Nations",
-   "role": "UN News",
-   "date": "Nov 11",
-   "platform": "Official statement",
-   "handle": "news.un.org",
-   "hed": "‘Make or bake time’: Guterres urges climate justice pact as leaders gather at COP31",
-   "summary": "UN chief António Guterres called for a new global climate justice agreement at COP31 on Wednesday, urging governments to tax fossil fuel companies to help countries bearing the brunt of a crisis they did little to cause. His appeal came as…",
-   "href": "https://news.un.org/feed/view/en/story/2026/11/1168783",
-   "report": false,
-   "iso": "2026-11-11T12:00:00+00:00",
-   "auto": true
-  },
-  {
    "cat": "premier",
    "media": "none",
    "initials": "BC",
@@ -3397,6 +3404,38 @@
    "href": "https://news.ontario.ca/en/advisory/1008272/cancelled_minister_lecce_to_hold_a_press_conference",
    "report": false,
    "iso": "2026-11-10T22:00:00+00:00",
+   "auto": true
+  },
+  {
+   "cat": "premier",
+   "media": "none",
+   "initials": "BC",
+   "name": "Government of B.C.",
+   "role": "Provincial government news",
+   "date": "Nov 10",
+   "platform": "Official statement",
+   "handle": "news.gov.bc.ca",
+   "hed": "Shelter spaces opening for people in need during winter weather",
+   "summary": "As of Nov. 1, 2026, the Province, through BC Housing, has 6,588 shelter spaces available for people in 63 communities throughout the province.",
+   "href": "https://news.gov.bc.ca/releases/2026HMA0091-001136",
+   "report": false,
+   "iso": "2026-11-10T21:00:00+00:00",
+   "auto": true
+  },
+  {
+   "cat": "pm",
+   "media": "none",
+   "initials": "MC",
+   "name": "Mark Carney",
+   "role": "Prime Minister of Canada",
+   "date": "Nov 10",
+   "platform": "Official statement",
+   "handle": "pm.gc.ca",
+   "hed": "Prime Minister Carney highlights largest culture investment in Canadian history",
+   "summary": "Budget 2026 is the next step in your government's plan to make Canadians maîtres chez nous – building our sovereignty and giving us the freedom to live our lives as we choose. Sovereignty starts with creativity – the ability to express…",
+   "href": "https://www.pm.gc.ca/en/news/news-releases/2026/11/10/prime-minister-carney-highlights-largest-culture-investment-canadian",
+   "report": false,
+   "iso": "2026-11-10T16:00:00+00:00",
    "auto": true
   }
  ],
@@ -3686,11 +3725,11 @@
    "tz": "Asia/Jerusalem",
    "world": true,
    "w": "Attacks",
-   "label": "Israeli strike on Gaza hospital kills six Palestinians",
-   "u": "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo?at_medium=RSS&at_campaign=rss",
-   "title": "Israeli strike on Gaza hospital kills six Palestinians, health ministry says",
-   "outlet": "BBC News",
-   "t": "Thu 4:00 a.m.",
+   "label": "Israeli strike on Gaza hospital kills at least six people",
+   "u": "https://www.nbcnews.com/world/middle-east/israeli-strike-gaza-nasser-hospital-abu-shaira-doctor-hamas-rcna608932",
+   "title": "Israeli strike on Gaza hospital kills at least six people, officials say",
+   "outlet": "NBC News",
+   "t": "Thu 4:26 a.m.",
    "hot": true
   }
  ],
@@ -3934,6 +3973,18 @@
   {
    "desk": "world",
    "pic": "globe",
+   "t": "Thu 4:26 a.m.",
+   "iso": "2026-11-12T09:26:44+00:00",
+   "title": "Israeli strike on Gaza hospital kills at least six people, officials say",
+   "summary": "The Palestinian health ministry said both medical staff and patients were killed in the strike, the latest despite an ongoing U.S.-backed ceasefire.. The Israeli military said it was targeting a Hamas commander and other militants.",
+   "outlet": "NBC News (AFP), BBC News, Toronto Star + Times Colonist + CBS News (AP)",
+   "n": 3,
+   "url": "https://www.nbcnews.com/world/middle-east/israeli-strike-gaza-nasser-hospital-abu-shaira-doctor-hamas-rcna608932",
+   "img": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-11/261112-gaza-rs-d782bd.jpg"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
    "t": "Wed 9:34 p.m.",
    "iso": "2026-11-12T02:34:20.202000+00:00",
    "title": "Father of baby who was rescued after being buried alive is charged with attempted murder",
@@ -3954,18 +4005,6 @@
    "n": 3,
    "url": "https://www.japantimes.co.jp/environment/2026/11/12/climate-change/conflict-climate-action-cop31/",
    "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/12/573533.jpg?v=3.1"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Thu 4:13 a.m.",
-   "iso": "2026-11-12T09:13:18+00:00",
-   "title": "Pope Leo returns to beloved former home of Chiclayo, Peru",
-   "summary": "Pope Leo XIV is celebrated in Chiclayo, Peru, where his image is ubiquitous",
-   "outlet": "ABC News + CTV News + CP24 + Toronto Star + 1 more (CP), Al Jazeera",
-   "n": 2,
-   "url": "https://abcnews.com/International/wireStory/pope-leo-returns-beloved-former-home-chiclayo-peruvian-138068194",
-   "img": "https://i.abcnewsfe.com/a/e373dcb8-375f-40d6-a782-b2e9015ed1ec/wirestory_ed582bc91b6d6e9a1a9d1b822d552003_16x9.jpg?w=1600"
   },
   {
    "desk": "us",
@@ -4010,7 +4049,7 @@
    "iso": "2026-11-12T09:23:32+00:00",
    "title": "In the news today: Carney in Dublin, Stellantis talks, B.C. flooding, MAID widow plea",
    "summary": "",
-   "outlet": "Narcity + CityNews Winnipeg + CTV News + CP24 + 4 more (CP)",
+   "outlet": "Narcity + CTV News + CP24 + BNN Bloomberg + 3 more",
    "n": 1,
    "url": "https://www.narcity.com/a-look-at-whats-in-the-news-for-today-2678376569",
    "img": "https://www.narcity.com/media-library/a-look-at-what-s-in-the-news-for-today.jpg?id=68664301&width=1200&height=600&coordinates=0%2C148%2C0%2C149"
@@ -4543,7 +4582,7 @@
     "url": "https://www.youtube.com/watch?v=Lhk3Gu0YeRs",
     "img": "https://i.ytimg.com/vi/Lhk3Gu0YeRs/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "252",
+    "watching": "258",
     "rolling": true
    },
    {
@@ -4553,7 +4592,7 @@
     "url": "https://www.youtube.com/watch?v=MOn3jSowuA0",
     "img": "https://i.ytimg.com/vi/MOn3jSowuA0/hqdefault.jpg",
     "story": "European leaders, Canadian PM meet in Dublin",
-    "watching": "18",
+    "watching": "11",
     "reports": [
      {
       "outlet": "Toronto Star",
@@ -4592,7 +4631,7 @@
     "url": "https://www.youtube.com/watch?v=ZPzMYXt6NrI",
     "img": "https://i.ytimg.com/vi/ZPzMYXt6NrI/hqdefault.jpg",
     "story": "World leaders speak at the COP31 leaders’ summit",
-    "watching": "14",
+    "watching": "15",
     "reports": [
      {
       "outlet": "The Guardian",
@@ -4610,15 +4649,8 @@
     "url": "https://www.youtube.com/watch?v=_5vKMwyKAL0",
     "img": "https://i.ytimg.com/vi/_5vKMwyKAL0/hqdefault.jpg",
     "story": "Two killed in 'devastating' New York building collapse",
-    "watching": "576",
+    "watching": "556",
     "reports": [
-     {
-      "outlet": "VOCM",
-      "title": "Brooklyn Building Collapse Leaves Two Dead and 17 Injured as Rescue Crews Search Rubble",
-      "url": "https://vocm.com/2026/11/12/brooklyn-building-collapse-leaves-two-dead-and-17-injured-as-rescue-crews-search-rubble/",
-      "t": "Thu 1:46 a.m.",
-      "iso": "2026-11-12T06:46:06+00:00"
-     },
      {
       "outlet": "CBS News",
       "title": "At least 2 killed, 17 hurt in Brooklyn building collapse",
@@ -4664,10 +4696,6 @@
     "url": "https://www.youtube.com/watch?v=5vfaDsMhCF4"
    },
    {
-    "net": "CBS News",
-    "url": "https://www.youtube.com/watch?v=_0ato-fy2sM"
-   },
-   {
     "net": "NBC News",
     "url": "https://www.youtube.com/watch?v=D_pDLnaeFVw"
    },
@@ -4698,20 +4726,15 @@
    {
     "net": "LiveNOW from FOX",
     "url": "https://www.youtube.com/watch?v=C96oohpWBGw"
+   },
+   {
+    "net": "FRANCE 24 English",
+    "url": "https://www.youtube.com/watch?v=HvZt-nh9sGg"
    }
   ]
  },
  "pm": [],
  "blogs_auto": [
-  {
-   "net": "The Guardian",
-   "story": "US envoys expected to meet Putin in Moscow to discuss Ukraine ceasefir",
-   "title": "US envoys expected to meet Putin in Moscow to discuss Ukraine ceasefire - Europe live",
-   "url": "https://www.theguardian.com/world/live/2026/nov/12/us-envoys-in-moscow-meeting-putin-abu-dhabi-trilateral-ukraine-ceasefire-talks-latest-news-updates",
-   "updated": "2026-11-12T09:28:18+00:00",
-   "ended": false,
-   "img": "https://i.guim.co.uk/img/media/f7908dac85bdca30bcc9926d01183c835edb4feb/1782_18_3821_3057/master/3821.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=e5342c3184ddb15ba9e18716f231f696"
-  },
   {
    "net": "ABC News",
    "story": "Iran live updates: Tehran says it will hit US bases if Pickaxe Mountai",
@@ -4966,33 +4989,6 @@
   }
  },
  "canangle_live": {
-  "https://www.theguardian.com/world/live/2026/nov/12/us-envoys-in-moscow-meeting-putin-abu-dhabi-trilateral-ukraine-ceasefire-talks-latest-news-updates": {
-   "story": "US envoys expected to meet Putin in Moscow to discuss Ukraine ceasefire - Europe live",
-   "us": true,
-   "specific": 2,
-   "stories": [
-    {
-     "t": "Wed 4:24 a.m.",
-     "iso": "2026-11-11T09:24:36+00:00",
-     "outlet": "Lethbridge Herald",
-     "title": "In the news today: Remembrance Day, Carney goes to Europe, B.C. rainstorm",
-     "url": "https://lethbridgeherald.com/news/national-news/2026/11/11/in-the-news-today-remembrance-day-carney-goes-to-europe-b-c-rainstorm/",
-     "ca": false,
-     "tie": ""
-    },
-    {
-     "t": "Wed 4:00 a.m.",
-     "iso": "2026-11-11T09:00:00+00:00",
-     "outlet": "CBC News",
-     "title": "Carney embarks on a worldwide summit tour to build bridges with Europe and Asia",
-     "url": "https://www.cbc.ca/news/politics/carney-apec-asean-francophonie-trip-9.7416895?cmp=rss",
-     "ca": true,
-     "tie": ""
-    }
-   ],
-   "official": [],
-   "views": []
-  },
   "https://www.nbcnews.com/politics/white-house/white-house-warns-congressional-democrats-investigating-us-may-crime-rcna608752": {
    "story": "White House warns congressional Democrats: Investigating us may be a crime",
    "us": true,
