@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-12T13:10:23.824751+00:00",
- "checkedLabel": "Thu 8:10 a.m.",
+ "checked": "2026-11-12T13:15:59.332935+00:00",
+ "checkedLabel": "Thu 8:15 a.m.",
  "stories": [
   {
    "key": "top",
@@ -121,17 +121,20 @@
      "url": "https://toronto.citynews.ca/2026/11/12/his-wife-died-by-suicide-he-wants-the-government-to-reconsider-its-maid-bill/",
      "iso": "2026-11-12T09:00:06+00:00",
      "t": "Thu 4:00 a.m."
-    },
-    {
-     "outlet": "Toronto Star",
-     "url": "https://www.thestar.com/politics/his-wife-died-by-suicide-he-wants-the-government-to-reconsider-its-maid-bill/article_f60c8547-ba85-5cc9-994c-b2e3a8194941.html",
-     "iso": "2026-11-12T09:00:00+00:00",
-     "t": "Thu 4:00 a.m."
     }
    ]
   }
  ],
  "wire": [
+  [
+   "Thu 8:15 a.m.",
+   "Latest",
+   "Death toll climbs in Brooklyn building collapse",
+   "CBS News",
+   "https://www.cbsnews.com/news/building-collapse-nyc-brooklyn-flatbush-rescue-operation/",
+   "2026-11-12T13:15:30+00:00",
+   18
+  ],
   [
    "Thu 8:09 a.m.",
    "U.S.",
@@ -152,15 +155,6 @@
   ],
   [
    "Thu 8:07 a.m.",
-   "Latest",
-   "At least 8 dead, multiple injured after building collapses in Brooklyn",
-   "ABC News",
-   "https://abcnews.com/US/rescue-operations-underway-after-building-collapses-brooklyn-new/story?id=138059620",
-   "2026-11-12T13:07:50+00:00",
-   18
-  ],
-  [
-   "Thu 8:07 a.m.",
    "Canada",
    "AI is not adding to Canada’s GDP like it is in the U.S., new analysis says",
    "Global News",
@@ -175,7 +169,7 @@
    "CTV News",
    "https://www.ctvnews.ca/politics/article/pm-carney-in-ireland-for-meetings-with-european-leaders-ahead-of-asia-summits/",
    "2026-11-12T13:05:16+00:00",
-   3
+   4
   ],
   [
    "Thu 8:02 a.m.",
@@ -401,7 +395,7 @@
    "score": 20,
    "title": "How China gets around the U.S. ban on Nvidia chips",
    "url": "https://www.cbc.ca/news/world/nvidia-chips-china-ban-9.7416670",
-   "outlets": 25,
+   "outlets": 26,
    "why": [
     "CBC News front #1"
    ],
@@ -424,6 +418,14 @@
    "theme": "Canadian auto jobs"
   },
   {
+   "score": 15,
+   "title": "Canadian government says Russian players with visas will still be barred from WJC",
+   "url": "https://www.ckom.com/2026/11/12/canadian-government-says-russian-players-with-visas-will-still-be-barred-from-wjc/",
+   "outlets": 13,
+   "why": [],
+   "theme": ""
+  },
+  {
    "score": 13,
    "title": "Israeli strike on a Gaza hospital kills 6 people, health authorities say",
    "url": "https://www.cbc.ca/news/world/israeli-strike-on-gaza-hospital-kills-six-people-9.7418729",
@@ -434,18 +436,10 @@
    "theme": ""
   },
   {
-   "score": 13,
-   "title": "Canadian government says Russian players with visas will still be barred from WJC",
-   "url": "https://www.ckom.com/2026/11/12/canadian-government-says-russian-players-with-visas-will-still-be-barred-from-wjc/",
-   "outlets": 11,
-   "why": [],
-   "theme": ""
-  },
-  {
-   "score": 13,
+   "score": 12,
    "title": "His wife died by suicide. He wants the government to reconsider its MAID bill",
    "url": "https://www.ctvnews.ca/health/article/his-wife-died-by-suicide-he-wants-the-government-to-reconsider-its-maid-bill/",
-   "outlets": 13,
+   "outlets": 12,
    "why": [],
    "theme": ""
   },
@@ -466,15 +460,30 @@
    "theme": ""
   },
   {
-   "score": 9,
-   "title": "Activist calls for ban on sports betting ads as legislation moves through Parliament",
-   "url": "https://www.ctvnews.ca/politics/article/activist-calls-for-ban-on-sports-betting-ads-as-legislation-moves-through-parliament/",
-   "outlets": 9,
-   "why": [],
-   "theme": ""
+   "score": 10,
+   "title": "Budget 2026: No Surprises, Lots of Small Fixes, and Some Fine Print",
+   "url": "https://canadiansme.ca/budget-2026-no-surprises-small-fixes-fine-print/",
+   "outlets": 2,
+   "why": [
+    "National Newswatch #10",
+    "National Newswatch #16",
+    "National Newswatch #17"
+   ],
+   "theme": "Federal budget"
   }
  ],
  "canada": [
+  {
+   "t": "Thu 8:05 a.m.",
+   "iso": "2026-11-12T13:05:16+00:00",
+   "region": "Ontario",
+   "title": "PM Carney in Ireland for meetings with European leaders, ahead of Asia summits",
+   "summary": "Prime Minister Mark Carney is in Dublin for an informal meeting with European leaders, ahead of summits in Asia.",
+   "outlet": "CP24 + CityNews (CP)",
+   "n": 1,
+   "url": "https://www.cp24.com/news/canada/2026/11/12/pm-carney-in-ireland-for-meetings-with-european-leaders-ahead-of-asia-summits/",
+   "img": "https://www.cp24.com/resizer/v2/65J2GTRFUHEK5635LWYWNCSVTQ.jpg?smart=true&auth=70ce7217fa13f92f9c44d577371d2ea302272924e1177d0720098cff08cb5e70&width=1200&height=630"
+  },
   {
    "t": "Thu 8:00 a.m.",
    "iso": "2026-11-12T13:00:00+00:00",
@@ -540,17 +549,6 @@
    "n": 1,
    "url": "https://www.cbc.ca/news/canada/north/yukon-mla-tables-ranked-choice-voting-bill-even-with-a-slim-chance-it-becomes-law-9.7416711",
    "img": "https://i.cbc.ca/ais/7a2688e8-1b78-4ae3-8896-329b923228c7,1760823402372/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C4032%2C2268%29%3BResize%3D620"
-  },
-  {
-   "t": "Thu 6:43 a.m.",
-   "iso": "2026-11-12T11:43:29+00:00",
-   "region": "Ontario",
-   "title": "Coroner’s inquest set to begin for Jamal Francique, shot in head by police",
-   "summary": "Jamal Francique died in hospital on Jan. 9, 2020, two days after police shot him during a botched arrest in Mississauga, Ont. He was 28.",
-   "outlet": "CityNews + CP24 (CP)",
-   "n": 1,
-   "url": "https://toronto.citynews.ca/2026/11/12/coroners-inquest-jamal-francique-toronto/",
-   "img": "https://toronto.citynews.ca/wp-content/blogs.dir/sites/10/2026/11/12/Screenshot-2026-11-12-064121.png"
   },
   {
    "t": "Thu 6:25 a.m.",
@@ -689,7 +687,7 @@
      "scott"
     ],
     "score": 17,
-    "outlets": 12,
+    "outlets": 11,
     "carriers": 22,
     "tag": "Breaking",
     "title": "Mississippi elects Democrat Scott Colom as state’s first Black U.S. senator since Reconstruction",
@@ -752,7 +750,7 @@
       "url": "https://www.cbc.ca/news/world/scott-colom-mississippi-senate-democrats-9.7418482"
      }
     ],
-    "independent": 12,
+    "independent": 11,
     "reports": [
      {
       "t": "Thu 7:56 a.m.",
@@ -956,6 +954,11 @@
         "byline": "f\"}] \"Bill Barrow And Sophie Bates, The Associated Press,\" News Staff \n\t\t\tBy"
        },
        {
+        "outlet": "Toronto Star",
+        "src": "The Associated Press",
+        "byline": "\"The Associated Press\" \"The Associated Pr"
+       },
+       {
         "outlet": "CBC News",
         "src": "The Associated Press",
         "byline": "\"photoURL\":\"\"},\"recentContent\":{}} \"The Associated Press\" \"CBC News\" \"CBC Ne"
@@ -975,6 +978,10 @@
        {
         "outlet": "CityNews Vancouver",
         "url": "https://vancouver.citynews.ca/2026/11/11/mississippi-elects-democrat-scott-colom-as-states-first-black-us-senator-since-reconstruction/"
+       },
+       {
+        "outlet": "Toronto Star",
+        "url": "https://www.thestar.com/news/world/united-states/why-ap-called-the-mississippi-senate-race-for-scott-colom/article_37e8fade-358b-5054-9ecb-4238466faa31.html"
        },
        {
         "outlet": "CBC News",
@@ -1057,23 +1064,6 @@
        }
       ],
       "copies": []
-     },
-     {
-      "t": "Wed 6:18 p.m.",
-      "primary": false,
-      "outlet": "Toronto Star",
-      "title": "Why AP called the Mississippi Senate race for Scott Colom",
-      "url": "https://www.thestar.com/news/world/united-states/why-ap-called-the-mississippi-senate-race-for-scott-colom/article_37e8fade-358b-5054-9ecb-4238466faa31.html",
-      "desc": "",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Toronto Star",
-        "src": "Torstar",
-        "byline": ""
-       }
-      ],
-      "copies": []
      }
     ],
     "replaces_top": false,
@@ -1137,10 +1127,10 @@
     "key": "auto-08da077b",
     "words": [
      "nvidia's",
-     "huang’s",
      "huang's",
-     "jensen",
+     "huang’s",
      "nvidia",
+     "jensen",
      "huang"
     ],
     "score": 20,
@@ -1851,7 +1841,7 @@
        {
         "outlet": "Global News",
         "src": "Corus",
-        "byline": "[{\"@type\":\"Person\",\"name\":\"Colin D'Mello\",},{\"@type\":\"Person\",\"name\":\"Olivia Bowden\",}] Name Anonymous Dave Anonymous Be"
+        "byline": "[{\"@type\":\"Person\",\"name\":\"Colin D'Mello\",},{\"@type\":\"Person\",\"name\":\"Olivia Bowden\",}] Name Dental Floss Tycoon Dental "
        }
       ],
       "copies": []
@@ -1878,34 +1868,34 @@
     "weight": 53,
     "videos": [
      {
-      "net": "CP24",
-      "url": "https://www.youtube.com/watch?v=1GDNR13YzQA",
-      "title": "Ford insists Chinese-made EV kits cannot be used at the Stellantis facility in Brampton, letter says",
-      "img": "https://i.ytimg.com/vi/1GDNR13YzQA/hqdefault.jpg",
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=zhgoOeQ7Tq8",
+      "title": "Federal government was engaged regularly on Stellantis sale: source | Power & Politics",
+      "img": "https://i.ytimg.com/vi/zhgoOeQ7Tq8/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "CP24",
-      "url": "https://www.youtube.com/watch?v=LVsUL_LHflI",
-      "title": "Sources say the PM Carney government was involved in talks leading to Stellantis plant sale",
-      "img": "https://i.ytimg.com/vi/LVsUL_LHflI/hqdefault.jpg",
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=vl9ONBC-xFI",
+      "title": "What can the government do to save Stellantis jobs in Ontario? | Power & Politics",
+      "img": "https://i.ytimg.com/vi/vl9ONBC-xFI/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "CP24",
-      "url": "https://www.youtube.com/watch?v=4RMKb13h0S8",
-      "title": "PM will have to ‘reconcile comments’ made over Stellantis sale: Reid",
-      "img": "https://i.ytimg.com/vi/4RMKb13h0S8/hqdefault.jpg",
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=un7nuQTOEPc",
+      "title": "Carney calls Stellantis plant sale 'unacceptable,' Poilievre demands Joly's firing",
+      "img": "https://i.ytimg.com/vi/un7nuQTOEPc/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "CP24",
-      "url": "https://www.youtube.com/watch?v=HEc1PvOFryA",
-      "title": "Roshel to buy Stellantis assembly plant in Brampton",
-      "img": "https://i.ytimg.com/vi/HEc1PvOFryA/hqdefault.jpg",
+      "net": "Global News",
+      "url": "https://www.youtube.com/watch?v=zgIiiDFLnTw",
+      "title": "Roshel CEO guarantees opportunities for Canadians laid off by Stellantis amid sale of Brampton plant",
+      "img": "https://i.ytimg.com/vi/zgIiiDFLnTw/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1914,15 +1904,15 @@
    {
     "key": "auto-1726c8f6",
     "words": [
-     "unknown",
-     "hegseth",
      "soldier",
+     "hegseth",
+     "unknown",
      "tomb"
     ],
     "score": 10,
     "outlets": 6,
     "carriers": 8,
-    "tag": "Breaking",
+    "tag": "Developing",
     "title": "Hegseth, wife and aides spark scolding from guard at Tomb of the Unknown Soldier",
     "url": "https://www.cbc.ca/news/world/hegseth-veterans-day-arlington-tomb-laughter-guard-yells-9.7418661",
     "outlet": "CBC News",
@@ -2191,7 +2181,7 @@
     "outled_ca": 2,
     "judgment": "national",
     "judgment_why": "National: affects some people; carried across the country (national desks).",
-    "weight": 34.0,
+    "weight": 31.0,
     "videos": [
      {
       "net": "CBS News",
@@ -2202,10 +2192,18 @@
       "up": ""
      },
      {
-      "net": "ABC News",
-      "url": "https://www.youtube.com/watch?v=b7MOcpwhbxU",
-      "title": "Hegseth group reprimanded at Tomb of the Unknown Soldier",
-      "img": "https://i.ytimg.com/vi/b7MOcpwhbxU/hqdefault.jpg",
+      "net": "PBS NewsHour",
+      "url": "https://www.youtube.com/watch?v=ndt7wFeXRXc",
+      "title": "WATCH: Soldier reprimands Hegseth and his group at Tomb of the Unknown Soldier",
+      "img": "https://i.ytimg.com/vi/ndt7wFeXRXc/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CNN",
+      "url": "https://www.youtube.com/watch?v=1_q1Kb23oRk",
+      "title": "Soldier reprimands Hegseth and advisers at Tomb of the Unknown Soldier",
+      "img": "https://i.ytimg.com/vi/1_q1Kb23oRk/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
@@ -2214,14 +2212,6 @@
       "url": "https://www.youtube.com/watch?v=21Ty5uQ_RWQ",
       "title": "Sentinel Yells at Group Near Secretary Hegseth for Silence & Respect",
       "img": "https://i.ytimg.com/vi/21Ty5uQ_RWQ/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "C-SPAN",
-      "url": "https://www.youtube.com/watch?v=piMuhKLJemI",
-      "title": "President Trump at Tomb of the Unknown Soldier",
-      "img": "https://i.ytimg.com/vi/piMuhKLJemI/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -2236,7 +2226,7 @@
     "live": "",
     "weight": 51,
     "score": 17,
-    "independent": 12,
+    "independent": 11,
     "most_read": 0,
     "canada": "tie",
     "theme": "",
@@ -2309,7 +2299,7 @@
     "url": "https://www.cbc.ca/news/world/hegseth-veterans-day-arlington-tomb-laughter-guard-yells-9.7418661",
     "rank": 4,
     "live": "",
-    "weight": 34.0,
+    "weight": 31.0,
     "score": 10,
     "independent": 6,
     "most_read": 0,
@@ -2321,7 +2311,7 @@
      "CTV News",
      "ABC News"
     ],
-    "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
+    "rule": "From abroad, tied to Canada",
     "carriers": 8,
     "judgment": "national",
     "why_judged": "National: affects some people; carried across the country (national desks)."
@@ -2351,19 +2341,24 @@
     "why": "not built: only 2 independent report(s) (8 sites)"
    },
    {
+    "title": "Canadian government says Russian players with visas will still be barred from WJC",
+    "score": 15,
+    "why": "not built: only 2 independent report(s) (10 sites)"
+   },
+   {
     "title": "Israeli strike on a Gaza hospital kills 6 people, health authorities say",
     "score": 13,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Canadian government says Russian players with visas will still be barred from WJC",
-    "score": 13,
-    "why": "not built: only 2 independent report(s) (10 sites)"
+    "title": "His wife died by suicide. He wants the government to reconsider its MAID bill",
+    "score": 12,
+    "why": "not built: only 1 independent report(s) (12 sites)"
    },
    {
-    "title": "His wife died by suicide. He wants the government to reconsider its MAID bill",
-    "score": 13,
-    "why": "not built: only 1 independent report(s) (13 sites)"
+    "title": "Budget 2026: No Surprises, Lots of Small Fixes, and Some Fine Print",
+    "score": 10,
+    "why": "not built: only 1 independent report(s) (2 sites)"
    },
    {
     "title": "Activist calls for ban on sports betting ads as legislation moves through Parliament",
@@ -2371,17 +2366,7 @@
     "why": "not built: only 1 independent report(s) (9 sites)"
    },
    {
-    "title": "Budget 2026: No Surprises, Lots of Small Fixes, and Some Fine Print",
-    "score": 9,
-    "why": "not built: only 1 independent report(s) (1 sites)"
-   },
-   {
     "title": "Carney set to sign two Asian trade deals on nine-day, four-summit trip that tests his middle-power pitch",
-    "score": 7,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Canadians warming to China, India as Trump’s tariffs push Ottawa toward the Indo-Pacific",
     "score": 7,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
@@ -2399,6 +2384,11 @@
     "title": "Impacts from B.C. drenching mount as water levels rise",
     "score": 7,
     "why": "not built: only 1 independent report(s) (5 sites)"
+   },
+   {
+    "title": "Greta Thunberg: The planet is being killed",
+    "score": 7,
+    "why": "not built: only 2 independent report(s) (4 sites)"
    }
   ],
   "moved": [],
@@ -2528,7 +2518,7 @@
    "id": "E0vyus8wu78",
    "r": "ca",
    "o": "CBC News",
-   "t": "This B.C. resident lost her home due to flooding as storms batter the province | Hanomansing Live",
+   "t": "Storms batter parts of B.C. as some residents face flood warnings | Hanomansing Live",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=E0vyus8wu78",
@@ -2640,7 +2630,7 @@
    "id": "0fTCF8tEMRY",
    "r": "us",
    "o": "CNN",
-   "t": "How Andreas Almgren optimized his way to a NYC Marathon win | Chasing Life",
+   "t": "How a former data scientist optimized his way to NYC Marathon glory | Chasing Life",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=0fTCF8tEMRY",
@@ -2766,27 +2756,13 @@
    "id": "C7jOeSZbozU",
    "r": "us",
    "o": "CNN",
-   "t": "'I kept the faith': Scott Colom's full victory speech",
+   "t": "Mississippi Senate upset: Scott Colom's full victory speech",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=C7jOeSZbozU",
    "img": "https://i.ytimg.com/vi/C7jOeSZbozU/hqdefault.jpg",
    "up": "2026-11-12",
    "added": "2026-11-12T12:30:23.834386+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "8z4VKWaTZug",
-   "r": "us",
-   "o": "ABC News",
-   "t": "Good Morning America: News to start your day | November 12",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=8z4VKWaTZug",
-   "img": "https://i.ytimg.com/vi/8z4VKWaTZug/hqdefault.jpg",
-   "up": "2026-11-12",
-   "added": "2026-11-12T12:50:23.720282+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2819,20 +2795,6 @@
    "geo": "unknown"
   },
   {
-   "id": "HhQA9FVllsQ",
-   "r": "us",
-   "o": "ABC News",
-   "t": "Urgent search for survivors after deadly building collapse in New York City",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=HhQA9FVllsQ",
-   "img": "https://i.ytimg.com/vi/HhQA9FVllsQ/hqdefault.jpg",
-   "up": "2026-11-12",
-   "added": "2026-11-12T13:00:23.709307+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "qssYlTi8QX0",
    "r": "us",
    "o": "Fox News",
@@ -2857,6 +2819,34 @@
    "img": "https://i.ytimg.com/vi/0kitpeZAD7w/hqdefault.jpg",
    "up": "2026-11-12",
    "added": "2026-11-12T13:00:23.709307+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "C-lNtopJ_t0",
+   "r": "us",
+   "o": "PBS NewsHour",
+   "t": "WATCH: Historic ocean liner SS United States sinks off Florida coast",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=C-lNtopJ_t0",
+   "img": "https://i.ytimg.com/vi/C-lNtopJ_t0/hqdefault.jpg",
+   "up": "2026-11-11",
+   "added": "2026-11-12T13:15:59.332935+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "arz_Kb2y6XQ",
+   "r": "us",
+   "o": "PBS NewsHour",
+   "t": "PBS News Hour full episode, Nov. 11, 2026",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=arz_Kb2y6XQ",
+   "img": "https://i.ytimg.com/vi/arz_Kb2y6XQ/hqdefault.jpg",
+   "up": "2026-11-11",
+   "added": "2026-11-12T13:15:59.332935+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2934,7 +2924,7 @@
    "id": "a5qgreBsdkE",
    "r": "world",
    "o": "Sky News",
-   "t": "Is Nvidia preparing to oust Jensen Huang after claims of a second affair?",
+   "t": "Nvidia shares fall overnight on second affair claim | Is Jensen Huang finished?",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=a5qgreBsdkE",
@@ -2962,7 +2952,7 @@
    "id": "omXbIScONis",
    "r": "world",
    "o": "DW News",
-   "t": "Trump says he cannot forgive his enemies -- even to enter heaven | DW News",
+   "t": "Trump admits he hates his enemies. But what about his letter to Biden? | DW News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=omXbIScONis",
@@ -3004,11 +2994,11 @@
  "ledes": [
   {
    "o": "CBS News",
-   "h": "Attacks on ships continue as Trump and Iran claim the upper hand",
-   "u": "https://www.cbsnews.com/live-updates/iran-war-us-nuclear-strait-of-hormuz/",
-   "img": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/11/12/8b4712bb-7eec-4c3a-9551-bc1100bcb6e4/thumbnail/1200x630/5fd66474f262cb63606f28726f30a00a/oman-strait-hormuz-tanker-attack.png",
-   "w": "Thu 8:09 a.m.",
-   "iso": "2026-11-12T13:09:01+00:00"
+   "h": "Death toll climbs in Brooklyn building collapse",
+   "u": "https://www.cbsnews.com/news/building-collapse-nyc-brooklyn-flatbush-rescue-operation/",
+   "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/12/f5b590a3-3e53-43ca-9816-68c78e398d68/thumbnail/1200x630/9a28458ff150db579e537e3cabaae3db/gettyimages-2304235179-1.jpg",
+   "w": "Thu 8:15 a.m.",
+   "iso": "2026-11-12T13:15:30+00:00"
   },
   {
    "o": "ABC News",
@@ -3036,11 +3026,11 @@
   },
   {
    "o": "Fox News",
-   "h": "SOUND OFF: What will happen to Jensen Huang amid Nvidia scandals?",
-   "u": "https://www.foxnews.com/tech/sound-off-what-happen-jensen-huang-amid-nvidia-scandals",
-   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/Jensen-Huang-Nvidia.png",
-   "w": "Thu 8:06 a.m.",
-   "iso": "2026-11-12T13:06:29+00:00"
+   "h": "Video of bear chilling at the top of a tree proves their elite and frightening climbing skills",
+   "u": "https://www.foxnews.com/outkick-sports/video-bear-chilling-top-tree-proves-elite-frightening-climbing-skills",
+   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/07/bear-looking-inside-home.jpg",
+   "w": "Thu 8:09 a.m.",
+   "iso": "2026-11-12T13:09:45+00:00"
   },
   {
    "o": "NPR",
@@ -3052,11 +3042,11 @@
   },
   {
    "o": "The Hill",
-   "h": "On the Ballot: Republicans started the redistricting war. Democrats may finish it",
-   "u": "https://thehill.com/newsletters/on-the-ballot/6213590-on-the-ballot-2028-redistricting-battle/",
+   "h": "Peltola holds lead after latest Alaska Senate vote drop",
+   "u": "https://thehill.com/homenews/campaign/6215353-mary-peltola-dan-sullivan-alaska-senate-race-update/",
    "img": "",
-   "w": "Thu 8:00 a.m.",
-   "iso": "2026-11-12T13:00:00+00:00"
+   "w": "Thu 8:11 a.m.",
+   "iso": "2026-11-12T13:11:18+00:00"
   },
   {
    "o": "Politico",
@@ -3092,6 +3082,19 @@
    "u": "https://macdonaldlaurier.ca/albertas-referendum-offers-an-opportunity-for-ottawa-to-rethink-how-it-appoints-judges-mark-harding-in-the-hub/",
    "t": "Alberta’s referendum offers an opportunity for Ottawa to rethink how it appoints judges: Mark Harding in The Hub",
    "g": "This article originally appeared in The Hub. By Mark Harding, November 11, 2026 Reporting on Alberta’s referendum results has correctly focused on the question of separation. The other questions, ranging […] The post Alberta’s referendum offers an opportunity for Ottawa to rethink how it appoints judges: Mark Harding…",
+   "auto": true
+  },
+  {
+   "inst": "Frontier Centre for Public Policy",
+   "place": "Winnipeg",
+   "kind": "Publication",
+   "by": "",
+   "date": "Nov. 11, 2026",
+   "d": "2026-11-11",
+   "pic": "chart",
+   "u": "https://frontiercentre.org/2026/11/11/remembrance-day-demands-more-than-gratitude/?utm_source=rss&utm_medium=rss&utm_campaign=remembrance-day-demands-more-than-gratitude",
+   "t": "Remembrance Day demands more than gratitude",
+   "g": "Lt. Colonel (Ret) David Redman honours generations of Canadians who served and died defending freedom. He calls for a determined Remembrance Day rooted in gratitude, care for veterans, military preparedness and accountability for Canada’s defence and national security.",
    "auto": true
   },
   {
@@ -3236,19 +3239,6 @@
    "t": "The U.S. is trying to raise pharmaceutical prices in Canada",
    "g": "U.S. trade policy has been geared to the absurd assumption that drug prices are “low” in the rest of the world because of high U.S. prices. The post The U.S. is trying to raise pharmaceutical prices in Canada appeared first on CCPA .",
    "auto": true
-  },
-  {
-   "inst": "Atlantic Council",
-   "place": "Washington",
-   "kind": "Publication",
-   "by": "",
-   "date": "Nov. 10, 2026",
-   "d": "2026-11-10",
-   "pic": "chart",
-   "u": "https://www.atlanticcouncil.org/blogs/ukrainealert/ukraines-new-drone-blitz-cuts-russian-oil-refining-capacity-by-30-percent/",
-   "t": "Ukraine’s new drone blitz cuts Russian oil refining capacity by 30 percent",
-   "g": "Ukraine has renewed attacks on Putin's energy industry in recent days, conducting a series of powerful strikes that have reportedly cut Russian oil refining capacity by around 30 percent and sparked fuel shortages across the country, writes Peter Dickinson. The post Ukraine’s new drone blitz cuts Russian oil refining…",
-   "auto": true
   }
  ],
  "eds": [
@@ -3326,13 +3316,6 @@
  "canus": {
   "talks": [
    {
-    "t": "Thu 5:00 a.m.",
-    "iso": "2026-11-12T10:00:00+00:00",
-    "outlet": "Toronto Star",
-    "title": "Carney set to sign two Asian trade deals on nine-day, four-summit trip that tests his middle-power pitch",
-    "url": "https://www.thestar.com/politics/carney-set-to-sign-two-asian-trade-deals-on-nine-day-four-summit-trip-that-tests-his-middle-power-pitch/article_e38f9129-af57-4c82-ae73-3cc23ac1606a.html"
-   },
-   {
     "t": "Wed 11:46 a.m.",
     "iso": "2026-11-11T16:46:55+00:00",
     "outlet": "BNN Bloomberg",
@@ -3353,6 +3336,22 @@
   ]
  },
  "otr": [
+  {
+   "cat": "intl",
+   "media": "none",
+   "initials": "UN",
+   "name": "United Nations",
+   "role": "UN News",
+   "date": "Nov 12",
+   "platform": "Official statement",
+   "handle": "news.un.org",
+   "hed": "Haiti: More than 1,000 killed between July and September, UN report reveals",
+   "summary": "More than 1,000 people were killed in Haiti during the third quarter of this year, as armed gangs continue to terrorize the population in the capital Port-au-Prince and beyond, the UN team in the island nation, said in its latest human…",
+   "href": "https://news.un.org/feed/view/en/story/2026/11/1168789",
+   "report": false,
+   "iso": "2026-11-12T12:00:00+00:00",
+   "auto": true
+  },
   {
    "cat": "mp",
    "media": "none",
@@ -3418,22 +3417,6 @@
    "auto": true
   },
   {
-   "cat": "intl",
-   "media": "none",
-   "initials": "UN",
-   "name": "United Nations",
-   "role": "UN News",
-   "date": "Nov 11",
-   "platform": "Official statement",
-   "handle": "news.un.org",
-   "hed": "‘Make or bake time’: Guterres urges climate justice pact as leaders gather at COP31",
-   "summary": "UN chief António Guterres called for a new global climate justice agreement at COP31 on Wednesday, urging governments to tax fossil fuel companies to help countries bearing the brunt of a crisis they did little to cause. His appeal came as…",
-   "href": "https://news.un.org/feed/view/en/story/2026/11/1168783",
-   "report": false,
-   "iso": "2026-11-11T12:00:00+00:00",
-   "auto": true
-  },
-  {
    "cat": "premier",
    "media": "none",
    "initials": "BC",
@@ -3484,12 +3467,24 @@
  ],
  "mostread": {
   "sites": [
+   "Toronto Star",
    "Winnipeg Free Press",
    "Global News",
    "Nunatsiaq News",
    "Daily Hive"
   ],
   "list": [
+   {
+    "h": "Three TV providers file complaint against Rogers after Sportsnet puts Monday NHL games behind paywall",
+    "u": "https://www.thestar.com/sports/leafs/three-tv-providers-file-complaint-over-rogers-move-to-put-monday-nhl-games-on-sportsnet/article_da7841e0-9db0-469b-b8b3-d0d4ceff0f02.html",
+    "o": [
+     [
+      "Toronto Star",
+      1,
+      "https://www.thestar.com/sports/leafs/three-tv-providers-file-complaint-over-rogers-move-to-put-monday-nhl-games-on-sportsnet/article_da7841e0-9db0-469b-b8b3-d0d4ceff0f02.html"
+     ]
+    ]
+   },
    {
     "h": "Hellebuyck return mishandled in nearly every way as Jets beat Devils",
     "u": "https://www.winnipegfreepress.com/breakingnews/2026/11/11/chapter-closes-with-cathartic-chirping",
@@ -3535,6 +3530,17 @@
     ]
    },
    {
+    "h": "Vinay Menon: Will Trump ever learn? His latest doubling down proves that Republicans are doomed",
+    "u": "https://www.thestar.com/entertainment/opinion/will-trump-ever-learn-his-latest-doubling-down-proves-that-republicans-are-doomed/article_5683eb1a-807d-4c1f-9add-ccaf35f2e2e1.html",
+    "o": [
+     [
+      "Toronto Star",
+      2,
+      "https://www.thestar.com/entertainment/opinion/will-trump-ever-learn-his-latest-doubling-down-proves-that-republicans-are-doomed/article_5683eb1a-807d-4c1f-9add-ccaf35f2e2e1.html"
+     ]
+    ]
+   },
+   {
     "h": "Newest Jets shine in emotional 4-2 win over Devils",
     "u": "https://www.winnipegfreepress.com/breakingnews/2026/11/10/newest-jets-shine-in-emotional-win-over-former-devils-teammates",
     "o": [
@@ -3568,35 +3574,13 @@
     ]
    },
    {
-    "h": "City trucking firm appeals licence suspension",
-    "u": "https://www.winnipegfreepress.com/breakingnews/2026/11/10/city-trucking-firm-appeals-licence-suspension",
+    "h": "Police identify ‘armed and dangerous’ suspect in Rexdale shooting death",
+    "u": "https://www.thestar.com/news/gta/police-identify-suspects-in-rexdale-shooting-death/article_54396209-5e4a-4846-9484-be095cc93463.html",
     "o": [
      [
-      "Winnipeg Free Press",
+      "Toronto Star",
       3,
-      "https://www.winnipegfreepress.com/breakingnews/2026/11/10/city-trucking-firm-appeals-licence-suspension"
-     ]
-    ]
-   },
-   {
-    "h": "From VHS to iPods, retro tech is driving this year’s holiday shopping season Consumer 3 hours 2 min read",
-    "u": "https://globalnews.ca/news/12146554/retro-nostalgia-tech-best-buy/",
-    "o": [
-     [
-      "Global News",
-      3,
-      "https://globalnews.ca/news/12146554/retro-nostalgia-tech-best-buy/"
-     ]
-    ]
-   },
-   {
-    "h": "NuBrew stops canning, blames regulatory changes",
-    "u": "https://nunatsiaq.com/stories/article/nubrew-stops-canning-blames-regulatory-changes/",
-    "o": [
-     [
-      "Nunatsiaq News",
-      3,
-      "https://nunatsiaq.com/stories/article/nubrew-stops-canning-blames-regulatory-changes/"
+      "https://www.thestar.com/news/gta/police-identify-suspects-in-rexdale-shooting-death/article_54396209-5e4a-4846-9484-be095cc93463.html"
      ]
     ]
    }
@@ -3634,24 +3618,24 @@
    "img": "https://cdn.nunatsiaq.com/wp-content/uploads/2026/11/IMG_0775-1200x630.jpeg"
   },
   {
-   "o": "BayToday",
-   "region": "North Bay",
+   "o": "GuelphToday",
+   "region": "Guelph",
    "arctic": false,
-   "h": "Province's three-laning plan to be presented in Temagami",
-   "u": "https://www.baytoday.ca/local-news/provinces-three-laning-plan-to-be-presented-in-temagami-13006719",
-   "t": "Thu 8:00 a.m.",
-   "desc": "'The purpose of the project is to reconstruct/reconfigure and widen Highway 11 at two locations to accommodate a 2+1 facility, rehabilitate other elements of the highway, including frost heaves and pavement distress areas, and complete vari",
-   "img": "https://www.vmcdn.ca/f/files/baytoday/images/transportation/2026-05-25-clear-cutting-highway-11-n.jpeg;w=1200;h=800;mode=crop"
+   "h": "Guelph man to climb Mount Kilimanjaro for local CMHA",
+   "u": "https://www.guelphtoday.com/local-news/guelph-man-to-climb-mount-kilimanjaro-for-local-cmha-13005839",
+   "t": "Thu 8:15 a.m.",
+   "desc": "Guruasish Singh plans to summit Africa's tallest peak in February or March 2027",
+   "img": "https://www.vmcdn.ca/f/files/guelphtoday/images/guruasishsingh.jpg;w=1200;h=800;mode=crop"
   },
   {
-   "o": "Nelson Star",
-   "region": "Kootenays",
+   "o": "SaltWire",
+   "region": "Atlantic Canada",
    "arctic": false,
-   "h": "‘Disease that takes your mind’: Play about dementia coming to Nelson stage",
-   "u": "https://nelsonstar.com/2026/11/12/disease-that-takes-your-mind-play-about-dementia-coming-to-nelson-stage/",
-   "t": "Thu 7:30 a.m.",
-   "desc": "I Ain't Dead Yet stars Nelson's Pat Henman",
-   "img": "https://nelsonstar.com/wp-content/uploads/sites/8/2026/11/aint1.jpg?w=1024"
+   "h": "Pictou County veteran's untold story shared on Remembrance Day",
+   "u": "https://www.saltwire.com/nova-scotia/new-glasgow/pictou-county-veterans-untold-story-shared-on-remembrance-day",
+   "t": "Thu 8:07 a.m.",
+   "desc": "",
+   "img": ""
   }
  ],
  "clocks": [
@@ -3677,7 +3661,7 @@
    "title": "Holt travels to Cambodia and then South Korea",
    "outlet": "Telegraph-Journal",
    "t": "Thu 7:40 a.m.",
-   "hot": true
+   "hot": false
   },
   {
    "city": "Ottawa",
@@ -3696,11 +3680,11 @@
    "tz": "America/Winnipeg",
    "world": false,
    "w": "Second World War",
-   "label": "Passing of soldiers, Wainwright tragedy give extra meaning…",
-   "u": "https://www.cbc.ca/news/canada/saskatchewan/passing-soldiers-wainwright-tragedy-remembrance-day-services-sask-9.7418574?cmp=rss",
-   "title": "Passing of soldiers, Wainwright tragedy give extra meaning to remembrance services in Sask.",
-   "outlet": "CBC News",
-   "t": "Wed 7:26 p.m.",
+   "label": "Canadian government says Russian players with visas will…",
+   "u": "https://winnipeg.citynews.ca/2026/11/11/canadian-government-says-russian-players-with-visas-will-still-be-barred-from-wjc/",
+   "title": "Canadian government says Russian players with visas will still be barred from WJC",
+   "outlet": "CityNews Winnipeg",
+   "t": "Wed 6:25 p.m.",
    "hot": false
   },
   {
@@ -3804,14 +3788,13 @@
      "exclusive": false
     },
     {
-     "t": "Thu 5:00 a.m.",
-     "iso": "2026-11-12T10:00:00+00:00",
-     "outlet": "Toronto Star",
+     "t": "Wed 9:01 p.m.",
+     "iso": "2026-11-12T02:01:00+00:00",
+     "outlet": "The Star",
      "title": "Carney set to sign two Asian trade deals on nine-day, four-summit trip that tests his middle-power pitch",
      "url": "https://www.thestar.com/politics/carney-set-to-sign-two-asian-trade-deals-on-nine-day-four-summit-trip-that-tests-his-middle-power-pitch/article_e38f9129-af57-4c82-ae73-3cc23ac1606a.html",
      "canada": true,
-     "paywall": false,
-     "exclusive": false
+     "paywall": false
     },
     {
      "t": "Wed 3:23 p.m.",
@@ -3912,8 +3895,8 @@
    "iso": "2026-11-12T13:07:38+00:00",
    "title": "AI is not adding to Canada’s GDP like it is in the U.S., new analysis says",
    "summary": "A slower adoption of artificial intelligence has had a net-neutral effect on Canada’s GDP, new analysis says. But long-term productivity gains are still possible.",
-   "outlet": "Global News, Times Colonist + CTV News + BNN Bloomberg, The Guardian, Vancouver Sun, Telegraph-Journal, Euronews, BBC News, CTV News",
-   "n": 8,
+   "outlet": "Global News, Times Colonist + CTV News + CP24 + BNN Bloomberg, The Guardian, Vancouver Sun, Telegraph-Journal, Euronews, BBC News",
+   "n": 7,
    "url": "https://globalnews.ca/news/12146941/canada-ai-gdp-growth/",
    "img": "https://globalnews.ca/wp-content/uploads/2026/05/AI-productivity-gain-1.jpg?quality=65&strip=all&w=720&h=379&crop=1"
   },
@@ -3930,18 +3913,6 @@
    "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/jim-jordan3.jpg"
   },
   {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Thu 8:08 a.m.",
-   "iso": "2026-11-12T13:08:33.590000+00:00",
-   "title": "How China gets around the U.S. ban on Nvidia chips",
-   "summary": "The revelation that Nvidia CEO Jensen Huang had an affair with a former executive of a Singapore-based company has raised concerns about China's ability to acquire top-tier microchips restricted to the country.",
-   "outlet": "CBC News, ABC News, CTV News + CP24 + BNN Bloomberg + Times Colonist + 1 more, CBS News, The Guardian",
-   "n": 5,
-   "url": "https://www.cbc.ca/news/world/nvidia-chips-china-ban-9.7416670",
-   "img": "https://i.cbc.ca/ais/c77a784c-1c63-462a-8683-8764fd21ca49,1794332971141/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C304%2C5842%2C3286%29%3BResize%3D620"
-  },
-  {
    "desk": "us",
    "pic": "podium",
    "t": "Thu 7:14 a.m.",
@@ -3956,14 +3927,14 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Thu 8:09 a.m.",
-   "iso": "2026-11-12T13:09:01+00:00",
-   "title": "Attacks on ships continue as Trump and Iran claim the upper hand",
-   "summary": "",
-   "outlet": "CBS News, PBS NewsHour, PBS NewsHour (AP), The Hill",
+   "t": "Thu 8:15 a.m.",
+   "iso": "2026-11-12T13:15:30+00:00",
+   "title": "Death toll climbs in Brooklyn building collapse",
+   "summary": "At least eight people were killed and 17 others were injured​ after a building collapsed in Flatbush, Brooklyn.",
+   "outlet": "CBS News, CBC News, ABC News, Times Colonist + CTV News + CP24 + CBC News",
    "n": 4,
-   "url": "https://www.cbsnews.com/live-updates/iran-war-us-nuclear-strait-of-hormuz/",
-   "img": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/11/12/8b4712bb-7eec-4c3a-9551-bc1100bcb6e4/thumbnail/1200x630/5fd66474f262cb63606f28726f30a00a/oman-strait-hormuz-tanker-attack.png"
+   "url": "https://www.cbsnews.com/news/building-collapse-nyc-brooklyn-flatbush-rescue-operation/",
+   "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/12/f5b590a3-3e53-43ca-9816-68c78e398d68/thumbnail/1200x630/9a28458ff150db579e537e3cabaae3db/gettyimages-2304235179-1.jpg"
   },
   {
    "desk": "world",
@@ -4014,6 +3985,18 @@
    "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/custom/image/f84403b8-7d76-11ee-9d02-a72a4951957f.png?resize=600%2C600"
   },
   {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Thu 4:00 a.m.",
+   "iso": "2026-11-12T09:00:13+00:00",
+   "title": "Pope Leo XIV welcomed by millions on return to his second home Peru",
+   "summary": "",
+   "outlet": "Euronews, Al Jazeera, CTV News + CP24 (CP)",
+   "n": 3,
+   "url": "https://www.euronews.com/2026/11/12/pope-leo-xiv-welcomed-by-millions-on-return-to-his-second-home-peru",
+   "img": ""
+  },
+  {
    "desk": "us",
    "pic": "podium",
    "t": "Thu 7:43 a.m.",
@@ -4060,18 +4043,6 @@
    "n": 2,
    "url": "https://www.ctvnews.ca/climate-and-environment/article/uk-appoints-climate-security-envoy-as-thunberg-criticizes-cop31-leaders/",
    "img": "https://www.ctvnews.ca/resizer/v2/YVMPV7LNJW2OMRT2L35OXGFUYI.jpg?smart=true&auth=06227485105f8f2e79900455d60113cc218bbaecd949422bda8ef587a619249d&width=1200&height=630"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Thu 4:00 a.m.",
-   "iso": "2026-11-12T09:00:13+00:00",
-   "title": "Pope Leo XIV welcomed by millions on return to his second home Peru",
-   "summary": "The Holy Father starts in Lima the final stage of his Latin American tour: a six-day visit to the country where he served for decades, reaffirming his bond with Peru and urging just healing of past wounds.",
-   "outlet": "Euronews + CTV News + CP24 (CP), Al Jazeera",
-   "n": 2,
-   "url": "https://www.euronews.com/2026/11/12/pope-leo-xiv-welcomed-by-millions-on-return-to-his-second-home-peru",
-   "img": "https://images.euronews.com/articles/stories/09/98/91/84/1200x675_cmsv2_ac231b1a-25a6-5125-aa42-2a56c1a1dcca-9989184.jpg"
   },
   {
    "desk": "us",
@@ -4158,6 +4129,18 @@
    "img": "https://www.ctvnews.ca/resizer/v2/CYOYTYZPZDTNJ4NRB2L5UE6N54.jpg?smart=true&auth=4963f08729e61af9c0e09be9a8ddf10c41736a633d3ffa4cfc6f94672a900002&width=1200&height=630"
   },
   {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Thu 7:25 a.m.",
+   "iso": "2026-11-12T12:25:03+00:00",
+   "title": "This Romanov sapphire bracelet sold for $4.9 million at a Geneva auction",
+   "summary": "A Romanov sapphire weighing nearly 198 carats on a diamond-covered bracelet sold for more than 4.1 million Swiss francs (US$4.9 million) at auction, vastly higher than the expected price range, Sotheby’s said.",
+   "outlet": "CTV News + Toronto Star + CP24 (AP)",
+   "n": 1,
+   "url": "https://www.ctvnews.ca/world/article/this-romanov-sapphire-bracelet-sold-for-49-million-at-a-geneva-auction/",
+   "img": "https://www.ctvnews.ca/resizer/v2/34P537JIKZY34P2C5GHUNELKMM.jpg?smart=true&auth=09903b35c766e58ec7070b8edbd4d7042062c96b21c0490150a2e520f983e54c&width=1200&height=630"
+  },
+  {
    "desk": "business",
    "pic": "chart",
    "t": "Thu 7:22 a.m.",
@@ -4203,7 +4186,7 @@
    "outlet": "CityNews + Toronto Star + CTV News + CP24 (CP)",
    "n": 1,
    "url": "https://toronto.citynews.ca/2026/11/12/coroners-inquest-jamal-francique-toronto/",
-   "img": ""
+   "img": "https://toronto.citynews.ca/wp-content/blogs.dir/sites/10/2026/11/12/Screenshot-2026-11-12-064121.png"
   },
   {
    "desk": "politics",
@@ -4216,30 +4199,6 @@
    "n": 1,
    "url": "https://tj.news/new-brunswick/remember-youre-a-doctor-and-help-n-b-woman-pcs-to-health-minister",
    "img": ""
-  },
-  {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Thu 5:00 a.m.",
-   "iso": "2026-11-12T10:00:00+00:00",
-   "title": "NDP Leader Avi Lewis receives RCMP protection",
-   "summary": "",
-   "outlet": "Toronto Star",
-   "n": 1,
-   "url": "https://www.thestar.com/politics/federal/ndp-leader-avi-lewis-receives-rcmp-protection/article_b895167c-48be-420f-ba91-04df5859b588.html",
-   "img": ""
-  },
-  {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Thu 5:00 a.m.",
-   "iso": "2026-11-12T10:00:00+00:00",
-   "title": "Carney set to sign two Asian trade deals on nine-day, four-summit trip that tests his middle-power pitch",
-   "summary": "The prime minister has meetings in Ireland, the Phillipines, Cambodia and China to expand markets for Canadian exports and strengthen security alliances.",
-   "outlet": "Toronto Star",
-   "n": 1,
-   "url": "https://www.thestar.com/politics/carney-set-to-sign-two-asian-trade-deals-on-nine-day-four-summit-trip-that-tests-his-middle-power-pitch/article_e38f9129-af57-4c82-ae73-3cc23ac1606a.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/1/33/133d6cfe-fc30-5213-876a-0140c06b0cb4/6af511ae1401d.image.jpg?crop=1779%2C934%2C0%2C116&resize=1200%2C630&order=crop%2Cresize"
   },
   {
    "desk": "politics",
@@ -4512,7 +4471,7 @@
    "ca": false,
    "h": [
     "Nvidia CEO’s future hangs in the balance as U.S. chip giant reels from China spy scandal",
-    "At least 8 dead and 17 injured in NYC building collapse, sparking search through rubble",
+    "At least 8 dead and 17 injured in NYC building collapse, sparking frantic search through rubble",
     "Republicans tiptoe around Trump as they process defeat in the 2026 elections",
     "Democrat Scott Colom wins Mississippi Senate seat, breaking GOP’s grip on the state",
     "She’s delivered 2,000 babies. The measles outbreak changed her mind about vaccines.",
@@ -4568,20 +4527,36 @@
    ]
   },
   {
+   "o": "The New York Times",
+   "ca": false,
+   "h": [
+    "New York Times - Top Stories",
+    "The Athletic Sports coverage",
+    "Cooking Recipes and guides",
+    "Wirecutter Product recommendations"
+   ],
+   "u": [
+    "",
+    "",
+    "",
+    ""
+   ]
+  },
+  {
    "o": "BBC News",
    "ca": false,
    "h": [
     "Eight killed and at least 17 injured in New York building collapse, city's mayor Mamdani says",
     "Questions over future of Nvidia CEO Jensen Huang as second affair allegation deepens scandal",
-    "Israeli strike on Gaza hospital kills six Palestinians, health ministry says",
+    "Australian teen missing in bush for six days rescued alive",
     "Burnham says climate consensus 'gone' and pledges 'new era of British leadership' in COP31 speech",
-    "'No light, no water, no heat': Ukrainians struggle with blackouts as Russia hits power grid",
+    "Ukraine says military Starlink disrupted again as US envoys meet Putin in Moscow",
     "Democrat Scott Colom makes history as Mississippi's first black senator since 19th Century"
    ],
    "u": [
     "https://www.bbc.com/news/live/cm20qr0znxg0t",
     "",
-    "https://www.bbc.com/news/articles/ckzd9p7e4eqeo",
+    "https://www.bbc.com/news/articles/ckvg25zmppglo",
     "https://www.bbc.com/news/live/c98r7xe5d38vt",
     "",
     ""
@@ -4591,7 +4566,7 @@
    "o": "The Guardian",
    "ca": false,
    "h": [
-    "Live Cop31: 'No one is coming to rescue us,' Greta Thunberg tells climate summit",
+    "Live 'No one is coming to rescue us,' Greta Thunberg tells Cop31 climate summit",
     "Climate crisis World heading for ‘irrevocable overshoot’ of global temperature thresholds, analysis warns",
     "US politics Trump the ‘biggest loser’ for scrapping climate action, John Kerry says at Cop31",
     "Cop31 ‘The world we know is over’ without urgent climate action, leaders tell summit",
@@ -4637,7 +4612,7 @@
     "url": "https://www.youtube.com/watch?v=iAjFvLN0nms",
     "img": "https://i.ytimg.com/vi/iAjFvLN0nms/hqdefault.jpg",
     "story": "Newly elected members of Congress gather for group photo on Capitol st",
-    "watching": "820",
+    "watching": "841",
     "also": [
      {
       "net": "Reuters",
@@ -4652,7 +4627,7 @@
     "url": "https://www.youtube.com/watch?v=JvnFNXO21Ig",
     "img": "https://i.ytimg.com/vi/JvnFNXO21Ig/hqdefault.jpg",
     "story": "Nov. 12",
-    "watching": "7"
+    "watching": "4"
    },
    {
     "net": "LiveNOW from FOX",
@@ -4661,40 +4636,8 @@
     "url": "https://www.youtube.com/watch?v=Lhk3Gu0YeRs",
     "img": "https://i.ytimg.com/vi/Lhk3Gu0YeRs/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "521",
+    "watching": "537",
     "rolling": true
-   },
-   {
-    "net": "BBC News",
-    "r": "world",
-    "title": "LIVE: Manchester United SACK head coach Michael Carrick | BBC News",
-    "url": "https://www.youtube.com/watch?v=2pxDflFTt3Y",
-    "img": "https://i.ytimg.com/vi/2pxDflFTt3Y/hqdefault.jpg",
-    "story": "Manchester United SACK head coach Michael Carrick",
-    "watching": "750",
-    "reports": [
-     {
-      "outlet": "CTV News",
-      "title": "Manchester United fires coach Carrick after worst start to a Premier League season",
-      "url": "https://www.ctvnews.ca/sports/article/manchester-united-fires-coach-carrick-after-worst-start-to-a-premier-league-season/",
-      "t": "Thu 6:56 a.m.",
-      "iso": "2026-11-12T11:56:27+00:00"
-     },
-     {
-      "outlet": "CP24",
-      "title": "Manchester United fires coach Carrick after worst start to a Premier League season",
-      "url": "https://www.cp24.com/news/sports/2026/11/12/manchester-united-fires-coach-carrick-after-worst-start-to-a-premier-league-season/",
-      "t": "Thu 6:56 a.m.",
-      "iso": "2026-11-12T11:56:27+00:00"
-     },
-     {
-      "outlet": "Al Jazeera",
-      "title": "Manchester United sack Michael Carrick as manager",
-      "url": "https://www.aljazeera.com/sports/2026/11/12/manchester-united-sack-michael-carrick-as-manager?traffic_source=rss",
-      "t": "Thu 5:33 a.m.",
-      "iso": "2026-11-12T10:33:29+00:00"
-     }
-    ]
    },
    {
     "net": "Reuters",
@@ -4703,7 +4646,7 @@
     "url": "https://www.youtube.com/watch?v=TveVl6Ooyek",
     "img": "https://i.ytimg.com/vi/TveVl6Ooyek/hqdefault.jpg",
     "story": "Pope Leo visits Peru",
-    "watching": "14",
+    "watching": "13",
     "reports": [
      {
       "outlet": "Euronews",
@@ -4742,8 +4685,15 @@
     "url": "https://www.youtube.com/watch?v=0cFeBuWnJQw",
     "img": "https://i.ytimg.com/vi/0cFeBuWnJQw/hqdefault.jpg",
     "story": "Brooklyn building collapse aftermath",
-    "watching": "57",
+    "watching": "67",
     "reports": [
+     {
+      "outlet": "CBS News",
+      "title": "Death toll climbs in Brooklyn building collapse",
+      "url": "https://www.cbsnews.com/news/building-collapse-nyc-brooklyn-flatbush-rescue-operation/",
+      "t": "Thu 8:15 a.m.",
+      "iso": "2026-11-12T13:15:30+00:00"
+     },
      {
       "outlet": "CBC News",
       "title": "Death toll climbs to 8 in Brooklyn building collapse",
@@ -4773,15 +4723,8 @@
       "iso": "2026-11-12T12:54:14+00:00"
      },
      {
-      "outlet": "CBS News",
-      "title": "Death toll climbs in Brooklyn building collapse",
-      "url": "https://www.cbsnews.com/news/building-collapse-nyc-brooklyn-flatbush-rescue-operation/",
-      "t": "Thu 7:37 a.m.",
-      "iso": "2026-11-12T12:37:12+00:00"
-     },
-     {
       "outlet": "Toronto Sun",
-      "title": "Five dead and at least 19 injured after Brooklyn building collapse",
+      "title": "Eight dead and at least 17 injured after Brooklyn building collapse",
       "url": "https://torontosun.com/news/world/five-dead-and-at-least-19-injured-after-brooklyn-building-collapse",
       "t": "Thu 7:09 a.m.",
       "iso": "2026-11-12T12:09:58+00:00"
@@ -4854,7 +4797,7 @@
    "story": "Mississippi elects Democrat Scott Colom as state’s first Bla",
    "title": "‘I had the courage to believe in Mississippi’ says Scott Colom after historic Senate win – US politics live",
    "url": "https://www.theguardian.com/us-news/live/2026/nov/12/mississippi-scott-colom-ukraine-donald-trump",
-   "updated": "2026-11-12T13:10:55+00:00",
+   "updated": "2026-11-12T13:17:37+00:00",
    "ended": false,
    "img": "https://i.guim.co.uk/img/media/9c23d473a2131c3873a7bdcf111e93aab22988a7/403_0_3443_2755/master/3443.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=8b3b21d83c3226ed1a8056fdefb243b6"
   },
@@ -4863,7 +4806,7 @@
    "story": "Zelenskyy urges Europe to ‘pay attention’ to security relations with R",
    "title": "Zelenskyy urges Europe to ‘pay attention’ to security relations with Russia as US envoys meet Putin - Europe live",
    "url": "https://www.theguardian.com/world/live/2026/nov/12/us-envoys-in-moscow-meeting-putin-abu-dhabi-trilateral-ukraine-ceasefire-talks-latest-news-updates",
-   "updated": "2026-11-12T13:13:59+00:00",
+   "updated": "2026-11-12T13:16:32+00:00",
    "ended": false,
    "img": "https://i.guim.co.uk/img/media/8a139431f84b32f3591eca48664c0707ca0905d2/202_0_1666_1333/master/1666.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=14d41d38b21b2a202b03a3659b16f12f"
   },
@@ -4906,8 +4849,8 @@
   },
   "auto-08da077b": {
    "ties": [
-    "jensen",
     "huang",
+    "jensen",
     "nvidia"
    ],
    "stories": [
@@ -4926,14 +4869,6 @@
      "title": "Nvidia working with outside firm to identify CEO candidates",
      "url": "https://www.japantimes.co.jp/business/2026/11/12/tech/nvidia-jensen-huang-affairs/",
      "tie": "Nvidia"
-    },
-    {
-     "t": "Wed 6:40 p.m.",
-     "iso": "2026-11-11T23:40:56+00:00",
-     "outlet": "PBS NewsHour",
-     "title": "Sen. Coons on Huang affair, Iran war and why Trump should fire Hegseth",
-     "url": "https://www.pbs.org/newshour/show/sen-coons-on-huang-affair-iran-war-and-why-trump-should-fire-hegseth",
-     "tie": "Huang"
     },
     {
      "t": "Wed 11:37 a.m.",
@@ -4976,14 +4911,6 @@
      "tie": "Canadian auto jobs"
     },
     {
-     "t": "Tue 5:00 p.m.",
-     "iso": "2026-11-10T22:00:00+00:00",
-     "outlet": "Toronto Star",
-     "title": "Stellantis must pay back 'every penny' it got from Ottawa, Pierre Poilievre says",
-     "url": "https://www.thestar.com/politics/federal/stellantis-must-pay-back-every-penny-it-got-from-ottawa-pierre-poilievre-says/article_3ec06406-466a-4c6e-a2dc-e982f63a436e.html",
-     "tie": "Canadian auto jobs"
-    },
-    {
      "t": "Tue 12:02 p.m.",
      "iso": "2026-11-10T17:02:56+00:00",
      "outlet": "CBC News",
@@ -5004,24 +4931,6 @@
  },
  "canangle": {},
  "canangle_live": {
-  "https://www.theguardian.com/us-news/live/2026/nov/12/mississippi-scott-colom-ukraine-donald-trump": {
-   "story": "‘I had the courage to believe in Mississippi’ says Scott Colom after historic Senate win – US politics live",
-   "us": true,
-   "specific": 1,
-   "stories": [
-    {
-     "t": "Tue 10:30 a.m.",
-     "iso": "2026-11-10T15:30:00+00:00",
-     "outlet": "Toronto Star",
-     "title": "Doug Ford names hand-picked regional chairs with sweeping new powers, including Scott Aitchison",
-     "url": "https://www.thestar.com/politics/provincial/doug-ford-appoints-regional-chairs-including-scott-aitchison-and-steven-del-duca/article_20c9a5fc-f601-4c1a-901d-7046a8dcdd3a.html",
-     "ca": true,
-     "tie": ""
-    }
-   ],
-   "official": [],
-   "views": []
-  },
   "https://www.theguardian.com/world/live/2026/nov/12/us-envoys-in-moscow-meeting-putin-abu-dhabi-trilateral-ukraine-ceasefire-talks-latest-news-updates": {
    "story": "Zelenskyy urges Europe to ‘pay attention’ to security relations with Russia as US envoys meet Putin - Europe live",
    "us": true,
@@ -5055,24 +4964,6 @@
    ],
    "views": []
   },
-  "https://www.foxnews.com/tech/sound-off-what-happen-jensen-huang-amid-nvidia-scandals": {
-   "story": "SOUND OFF: What will happen to Jensen Huang amid Nvidia scandals?",
-   "us": false,
-   "specific": 1,
-   "stories": [
-    {
-     "t": "Tue 1:15 p.m.",
-     "iso": "2026-11-10T18:15:00+00:00",
-     "outlet": "Toronto Star",
-     "title": "Ottawa ‘following the situation closely’ as spy scandal rocks chipmaker Nvidia",
-     "url": "https://www.thestar.com/politics/federal/ottawa-following-the-situation-closely-as-spy-scandal-rocks-chipmaker-nvidia/article_befab2bd-b1b8-416a-8dc9-8e25e3794006.html",
-     "ca": true,
-     "tie": ""
-    }
-   ],
-   "official": [],
-   "views": []
-  },
   "https://www.npr.org/2026/11/12/g-s1-153171/up-first-newsletter-scott-colom-trump-democrats-ukraine-russia": {
    "story": "Colom wins Mississippi Senate race. And, White House warns Dems over future probes",
    "us": true,
@@ -5086,42 +4977,6 @@
      "url": "https://www.bnnbloomberg.ca/tariffs/2026/11/11/canadian-manufacturer-eyes-us-as-firms-cannot-hold-off-for-too-long-anymore/",
      "ca": true,
      "tie": "Canada and the U.S."
-    }
-   ],
-   "official": [],
-   "views": []
-  },
-  "https://thehill.com/newsletters/on-the-ballot/6213590-on-the-ballot-2028-redistricting-battle/": {
-   "story": "On the Ballot: Republicans started the redistricting war. Democrats may finish it",
-   "us": true,
-   "specific": 0,
-   "stories": [
-    {
-     "t": "Wed 11:46 a.m.",
-     "iso": "2026-11-11T16:46:55+00:00",
-     "outlet": "BNN Bloomberg",
-     "title": "Canadian textile maker battered by tariffs eyes production in the U.S.",
-     "url": "https://www.bnnbloomberg.ca/tariffs/2026/11/11/canadian-manufacturer-eyes-us-as-firms-cannot-hold-off-for-too-long-anymore/",
-     "ca": true,
-     "tie": "Canada and the U.S."
-    }
-   ],
-   "official": [],
-   "views": []
-  },
-  "https://www.politico.com/news/2026/11/11/scott-colom-wins-mississippi-senate-01161555": {
-   "story": "Mississippi elects Democrat Scott Colom to Senate in massive upset",
-   "us": true,
-   "specific": 1,
-   "stories": [
-    {
-     "t": "Tue 10:30 a.m.",
-     "iso": "2026-11-10T15:30:00+00:00",
-     "outlet": "Toronto Star",
-     "title": "Doug Ford names hand-picked regional chairs with sweeping new powers, including Scott Aitchison",
-     "url": "https://www.thestar.com/politics/provincial/doug-ford-appoints-regional-chairs-including-scott-aitchison-and-steven-del-duca/article_20c9a5fc-f601-4c1a-901d-7046a8dcdd3a.html",
-     "ca": true,
-     "tie": ""
     }
    ],
    "official": [],
@@ -5155,8 +5010,8 @@
    "at": "2026-10-29T02:33:18.869844+00:00"
   },
   "0bLqaqPAt_k": {
-   "v": "ok",
-   "at": "2026-11-12T05:56:23.722775+00:00"
+   "v": "unplayable",
+   "at": "2026-11-12T13:15:59.332935+00:00"
   },
   "0tRhtNBdSb0": {
    "v": "unknown",
@@ -5279,8 +5134,8 @@
    "at": "2026-10-29T19:14:04.423397+00:00"
   },
   "A_p82aTTRbE": {
-   "v": "ok",
-   "at": "2026-11-12T06:40:36.068919+00:00"
+   "v": "unplayable",
+   "at": "2026-11-12T13:15:59.332935+00:00"
   },
   "AjJr_wCVx70": {
    "v": "unknown",
@@ -5603,8 +5458,8 @@
    "at": "2026-11-09T13:59:21.518607+00:00"
   },
   "c9v26lW7-j4": {
-   "v": "ok",
-   "at": "2026-11-12T06:40:36.068919+00:00"
+   "v": "unplayable",
+   "at": "2026-11-12T13:15:59.332935+00:00"
   },
   "cXN5OV4NYhI": {
    "v": "unknown",
@@ -5715,8 +5570,8 @@
    "at": "2026-10-29T02:33:18.869844+00:00"
   },
   "nfy6JJILPJI": {
-   "v": "ok",
-   "at": "2026-11-12T06:40:36.068919+00:00"
+   "v": "unplayable",
+   "at": "2026-11-12T13:15:59.332935+00:00"
   },
   "p0SJIuzrM0A": {
    "v": "unknown",
@@ -5856,17 +5711,13 @@
   }
  },
  "geo_blocked": [
-  "-NabWfv-VdA"
- ],
- "noembed": [
+  "-NabWfv-VdA",
   "0bLqaqPAt_k",
   "A_p82aTTRbE",
-  "J3FV4iY8p5w",
-  "L6qtnHZxwEw",
-  "NuEr0Q_AS6U",
   "c9v26lW7-j4",
-  "ldElU-Q5Qyo",
-  "nfy6JJILPJI",
-  "t_HBrWb84eY"
+  "nfy6JJILPJI"
+ ],
+ "noembed": [
+  "ldElU-Q5Qyo"
  ]
 }
