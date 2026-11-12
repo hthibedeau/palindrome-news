@@ -105,5 +105,27 @@ check([x["title"] for x in top] == [b2["title"], jobs["title"], ams["title"]], "
 alone = [dict(tesla, tag="Breaking"), dict(arch, tag="Breaking")]
 check(ap.canada_leads(alone)[0]["tag"] == "Breaking", "with no Canadian story at the top, nothing changes")
 
+# 4. A CANADIAN EXCLUSIVE INSIDE A BIGGER STORY (Hannah, Wed Nov 11, 2026): CTV's Stellantis scoop, folded into the
+# Stellantis story under a weaker headline, now leads it, credited to CTV, close to the top
+from datetime import datetime as _d
+_now = _d.fromisoformat("2026-11-12T00:45:00+00:00")
+stel = {"title": "Former Local 444 president says Stellantis abandoning commitments made to auto workers", "canada": "canadian",
+        "judgment": "national", "tag": "Developing", "newest": "2026-11-12T00:34:04+00:00", "independent": 3, "weight": 39, "reports": [
+    {"outlet": "CTV News", "iso": "2026-11-12T00:34:04+00:00", "title": "Former Local 444 president says Stellantis abandoning commitments made to auto workers", "url": "https://www.ctvnews.ca/windsor/article/x/"},
+    {"outlet": "CBC News", "iso": "2026-11-11T23:37:27+00:00", "title": "Ottawa had been aware of a possible Stellantis plant sale for months, source says", "url": "https://www.cbc.ca/news/politics/y"},
+    {"outlet": "CP24", "iso": "2026-11-11T03:40:53+00:00", "title": "Carney government actively involved in talks leading to Stellantis plant sale: sources", "url": "https://www.cp24.com/news/canada/2026/11/11/z/"}]}
+world = {"title": "Mississippi's Scott Colom secures Senate seat", "canada": "tie", "independent": 11, "carriers": 22, "judgment": "national",
+         "newest": "2026-11-12T00:30:00+00:00", "weight": 54}
+nv = {"title": "Nvidia's board preparing to oust CEO Jensen Huang, sources say", "canada": "tie", "judgment": "regional", "newest": "2026-11-12T00:20:00+00:00", "weight": 40}
+ap.exclusive_inside([stel, world, nv], _now)
+check(stel.get("scoop") and stel["scoop_outlet"] == "CTV News", "the newsroom that broke it (CTV, run on CP24) gets the Exclusive credit")
+check(stel["title"].startswith("Carney government actively involved"), "the exclusive becomes the story's headline")
+check(stel["reports"][0]["exclusive"] and "CBC News" in stel["exclusive"]["confirmed_by"], "its report goes first; CBC is listed as confirming it")
+check(ap.top_rule(stel, _now) == 4, "a Canadian exclusive ranks under rule 4: close to the top")
+check(not nv.get("scoop"), "a story from abroad is not made a Canadian exclusive")
+order = [x["title"][:10] for x in sorted([stel, world, nv], key=ap.rank_key)]
+check(order == [world["title"][:10], stel["title"][:10], nv["title"][:10]], "a bigger story stays above it; it goes above smaller ones")
+
+
 print("\nall passed" if not fails else f"\n{fails} failed")
 sys.exit(1 if fails else 0)

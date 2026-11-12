@@ -158,3 +158,13 @@ On the record cards carry `data-embed` (the original post link) and `data-platfo
 ## A newspaper front when one story stands alone (Hannah, Mon Nov 9, 2026)
 
 "Half the page is blank" ... "still isnt the most appealing." On a wide screen (iPad, laptop) the lone big story is now laid out like a front page: the headline across the full width with its subheadline and byline; the live strip; then the photo beside the Canadian angle and Connected to this story, the photo cut to the height of that column so both end together; then "The latest from every newsroom" across the width, three reports side by side. With no Canadian angle in an edition, the newsroom list goes beside the photo instead. Phones are unchanged. Code: `tools/solo_front_layer.html`, in index.html between `<!-- solo-front:start -->` and `<!-- solo-front:end -->` (pure layout; nothing moved or removed). The no-repeats check between the two lists now also runs beside a lone big story.
+
+
+## Canadian exclusives get the credit (Hannah, Wed Nov 11, 2026)
+
+"If there is exclusive reporting like the CTV story ... it should get an exclusive. and write the rules that if it is Canadian, big exclusive, cite the source, put it close to the top, if not the top story, unless there's other big stories." CTV's scoop that the Carney government was actively involved in the Stellantis Brampton plant sale had been folded into the Stellantis story as its fourth report, and the story led with a weaker headline.
+
+- **Canadian, big exclusive:** a Canadian (or Canada-U.S.) story with a report that is a major newsroom's own scoop or interview ("exclusive", ": sources", "sources say", "has learned", "documents obtained"...). It doesn't matter whether other newsrooms are already covering the story.
+- **Cite the source:** the exclusive becomes the headline and link, its report goes first, and the story is labelled "Exclusive · CTV News". Credit goes to the newsroom that broke it (the first one, within a day); newsrooms that confirm it later are listed as confirming it. A CTV report run on CP24 is credited to CTV News.
+- **Close to the top, if not the top:** rule 4 of `TOP_RULES`. It leads unless there are bigger stories (event day, the story every front page leads with, Canadian breaking news, a big international story, breaking news from abroad).
+- `exclusive_inside()` in `tools/autopilot.py`; checks: `python3 tools/test_story_match.py`.

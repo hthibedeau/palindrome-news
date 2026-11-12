@@ -66,7 +66,7 @@ TOP_RULES = [  # (number, name) shown in live/auto.json "considered", so it is a
     (1.5, "Canadian, leading the most Canadian front pages: the story Canada's newsrooms are leading with"),
     (2, "Big international story, on every front page"),
     (3, "Breaking news from abroad that Canadian newsrooms are carrying"),
-    (4, "Big Canadian exclusive: a major newsroom's interview or scoop (shown as Exclusive)"),
+    (4, "Big Canadian exclusive: a major newsroom's interview or scoop (shown as Exclusive, credited to that newsroom), close to the top if not the top"),
     (5, "Breaking U.S. election story (with its Canadian angle)"),
     (6, "Canadian, with a live event coming up"),
     (7, "Canadian, still developing"),
@@ -103,7 +103,17 @@ SCOOP_OUTLETS = {"Politico", "CBC News", "CTV News", "Global News", "Toronto Sta
 SCOOP_SIGNAL = re.compile(r"\b(exclusive|interview|interviewed|told (?:POLITICO|CBC|CTV|Global|the Star|Reuters|Bloomberg|The Canadian Press)|"
                           r"tells (?:POLITICO|CBC|CTV|Global|the Star|Reuters|Bloomberg)|in an interview|sources say|sources tell|"
                           r"documents (?:show|obtained|reveal)|obtained by|has learned|learned that|first reported)\b", re.I)
-SCOOP_WHO = re.compile(r"\b(Carney|prime minister|Poilievre|Freeland|Anand|Champagne|LeBlanc|Joly|McGuinty|Hoekstra|"
+# Headlines that end ": sources" or ": source", "CBC has confirmed", "according to sources" (Hannah, Wed Nov 11, 2026:
+# CTV's "Carney government actively involved in talks leading to Stellantis plant sale: sources" was not seen as a scoop)
+SCOOP_SIGNAL_MORE = re.compile(r":\s*sources?\b|\bsources?\s+(?:say|says|said|tell|tells|told|confirm|confirms)\b|\baccording to (?:a |two |three |four |several |multiple |senior |government |federal )*(?:sources?|officials?)\b|"
+                               r"\b(?:has|have) confirmed\b|\bconfirmed to (?:CBC|CTV|Global|the Star|POLITICO|The Canadian Press|Reuters)\b|\bobtained by\b|\bscoop\b", re.I)
+
+
+def is_scoop_text(text):
+    return bool(SCOOP_SIGNAL.search(text) or SCOOP_SIGNAL_MORE.search(text))
+
+
+SCOOP_WHO = re.compile(r"\b(Carney government|federal government|Liberal government|cabinet|Carney|prime minister|Poilievre|Freeland|Anand|Champagne|LeBlanc|Joly|McGuinty|Hoekstra|"
                        r"Danielle Smith|Doug Ford|David Eby|Eby|Legault|Plamondon|Wab Kinew|Houston|premiers?)\b", re.I)
 SCOOP_CANUS = re.compile(r"\b(Canada|Canadian|Ottawa)\b.*\b(Trump|U\.?S\.?|Washington|tariffs?|trade deal|CUSMA|USMCA)\b|"
                          r"\b(Trump|U\.?S\.?|Washington|tariffs?|trade deal|CUSMA|USMCA)\b.*\b(Canada|Canadian|Ottawa)\b", re.I)
@@ -2386,7 +2396,7 @@ def scoops(items, cands, now, imgdir):
         if not info.get("desc"):
             info.update({k: v for k, v in page_info(link).items() if v})
         text = title + " " + link.replace("-", " ") + " " + info.get("desc", "")
-        if not SCOOP_SIGNAL.search(text) or not (SCOOP_WHO.search(title + " " + info.get("desc", "")) or SCOOP_CANUS.search(title + " " + info.get("desc", ""))):
+        if not is_scoop_text(text) or not (SCOOP_WHO.search(title + " " + info.get("desc", "")) or SCOOP_CANUS.search(title + " " + info.get("desc", ""))):
             continue
         key = "scoop-" + hashlib.md5(link.encode()).hexdigest()[:8]
         photo = None
@@ -2409,6 +2419,104 @@ def scoops(items, cands, now, imgdir):
             "theme": "",
         }]
     return []
+
+
+# ---------------------------------------------------------------------------------------------------------------------
+# A CANADIAN EXCLUSIVE INSIDE A BIGGER STORY (Hannah, Wed Nov 11, 2026, on CTV's Stellantis report: "If there is
+# exclusive reporting like the CTV story ... it should get an exclusive. and write the rules that if it is Canadian,
+# big exclusive, cite the source, put it close to the top, if not the top story, unless there's other big stories.")
+#
+# What went wrong: CTV News reported, from its own sources, that the Carney government was actively involved in the
+# talks leading to the sale of Stellantis's Brampton plant (CBC confirmed it on Power & Politics). Other newsrooms were
+# already covering Stellantis, so CTV's report was folded into that story as its fourth report, and the story led with
+# a weaker headline (a former union president's reaction). scoops() only looks at exclusives nobody else has yet.
+#
+# The rule, every update, for every top-story candidate:
+#   1. Canadian: the story is Canadian (or Canada-U.S.) and not a local story.
+#   2. Big exclusive: one of its reports, from the last SCOOP_HOURS, is a major newsroom's own scoop or interview
+#      (SCOOP_OUTLETS; SCOOP_SIGNAL or SCOOP_SIGNAL_MORE in its headline, address or summary: "exclusive", ": sources",
+#      "sources say", "has learned", "documents obtained" ...).
+#   3. Cite the source: the exclusive becomes the story's headline and link, its report goes first, and the story is
+#      labelled "Exclusive · <the newsroom that has it>". The newsroom is read from the report's own web address, so a
+#      CTV scoop run on CP24 is credited to CTV News. The "First reported by" credit stays with whoever was first.
+#   4. Close to the top, if not the top: the story ranks under rule 4 of TOP_RULES, so it leads unless there are bigger
+#      stories (event day, the story every front page leads with, Canadian breaking news, a big international story,
+#      breaking news from abroad). A story already ranked higher keeps its rank and still gets the Exclusive credit.
+# When several reports qualify, the first one published (in the last SCOOP_FIRST_HOURS) wins: it is the newsroom that
+# broke it; the others are listed as having confirmed it.
+SCOOP_FIRST_HOURS = 24  # the newsroom that broke it keeps the credit for a day, even when others confirm it later
+SCOOP_DOMAINS = [("ctvnews.ca", "CTV News"), ("cp24.com", "CTV News"),  # CP24 runs CTV News's national reporting ("cbc.ca", "CBC News"), ("globalnews.ca", "Global News"), ("thestar.com", "Toronto Star"),
+                 ("politico.com", "Politico"), ("nationalpost.com", "National Post"), ("financialpost.com", "National Post"),
+                 ("thecanadianpress.com", "The Canadian Press"), ("reuters.com", "Reuters"), ("apnews.com", "Associated Press"),
+                 ("bnnbloomberg.ca", "BNN Bloomberg"), ("bloomberg.com", "Bloomberg"), ("nytimes.com", "The New York Times"),
+                 ("wsj.com", "The Wall Street Journal"), ("washingtonpost.com", "The Washington Post"), ("axios.com", "Axios"),
+                 ("bbc.co", "BBC News"), ("ft.com", "Financial Times"), ("thehill.com", "The Hill"), ("radio-canada.ca", "Radio-Canada"),
+                 ("lapresse.ca", "La Presse"), ("macleans.ca", "Maclean's"), ("thelogic.co", "The Logic")]
+
+
+def scoop_owner(report):
+    """The newsroom whose scoop this is: from the report's own address first (a CTV story on CP24 is CTV's), then its outlet."""
+    import autoupdate as au
+    u = (report.get("url") or "").lower()
+    for d, name in SCOOP_DOMAINS:
+        if re.search(r"(?:^|[/.])" + re.escape(d), u.split("//")[-1].split("/")[0]):
+            return name
+    o = au.clean_outlet(report.get("outlet") or "")
+    o = re.sub(r"\s*\((?:via )?[^)]*\)$", "", o).strip()
+    return o if o in SCOOP_OUTLETS else ""
+
+
+def exclusive_inside(cands, now):
+    for s in cands:
+        if s.get("scoop") or s.get("judgment") == "local" or SPORT.search((s.get("title") or "") + " " + (s.get("url") or "")):
+            continue
+        if not (s.get("canada") == "canadian" or s.get("canus")):
+            continue
+        found = []
+        for r in s.get("reports") or []:
+            try:
+                dt = datetime.fromisoformat(r.get("iso") or "")
+            except Exception:
+                continue
+            if (now - dt).total_seconds() > SCOOP_FIRST_HOURS * 3600:
+                continue
+            owner = scoop_owner(r)
+            text = (r.get("title") or "") + " " + (r.get("url") or "").replace("-", " ") + " " + (r.get("desc") or "")
+            if not owner or not is_scoop_text(text) or not CAN_TIE.search(text + " " + (s.get("title") or "")):
+                continue
+            found.append((dt, owner, r))
+        # still news: one of them, or the story itself, is from the last SCOOP_HOURS
+        try:
+            newest = datetime.fromisoformat(s.get("newest") or "")
+        except Exception:
+            newest = None
+        if not found or not (any((now - f[0]).total_seconds() <= SCOOP_HOURS * 3600 for f in found)
+                             or (newest and (now - newest).total_seconds() <= SCOOP_HOURS * 3600)):
+            continue
+        found.sort(key=lambda f: f[0])
+        dt, owner, r = found[0]  # the newsroom that broke it
+        s["scoop"] = True
+        s["scoop_outlet"] = owner
+        s["exclusive"] = {"outlet": owner, "url": r.get("url"), "title": r.get("title"), "t": r.get("t") or w.eastern(dt), "iso": dt.isoformat(),
+                          "confirmed_by": sorted({f[1] for f in found if f[1] != owner})}
+        s["was_title"] = s.get("title")
+        s["title"], s["url"], s["outlet"] = clean(r.get("title") or s.get("title") or ""), r.get("url") or s.get("url"), owner
+        s["t"], s["iso"] = r.get("t") or w.eastern(dt), dt.isoformat()
+        for lst in ("reports", "sources"):
+            rs = s.get(lst) or []
+            hit = [x for x in rs if (x.get("url") or "").split("?")[0] == (r.get("url") or "").split("?")[0]]
+            if hit:
+                hit[0]["exclusive"] = True
+                rs.remove(hit[0])
+                rs.insert(0, hit[0])
+        # its picture leads, when the exclusive's report has one among the story's photos
+        ph = [p_ for p_ in (s.get("photos") or []) if (p_.get("url") or "").split("?")[0] == (r.get("url") or "").split("?")[0]]
+        if ph:
+            s["photo"] = ph[0]
+        conf = s["exclusive"]["confirmed_by"]
+        s["scoop_why"] = (f"Exclusive: {owner} reported it from its own sources ({s['exclusive']['t']})"
+                          + (f", since confirmed by {', '.join(conf)}" if conf else "") + "; credited and led with its report.")
+        print("exclusive inside story:", owner, "|", s["title"][:80])
 
 
 # ---------------------------------------------------------------------------------------------------------------------
@@ -2974,6 +3082,10 @@ def pick_by_canada(auto, items, now, eds, papers, otr, canus_, mostread=None):
             s["judgment_why"] = ("National: " + s["event_day"] + " is today." if s.get("event_day") else
                                  f"National: leading {s['fronts']} front pages ({', '.join(s['fronts_who'][:6])}).")
         s["weight"] = weight(s)
+    try:  # A CANADIAN EXCLUSIVE INSIDE A BIGGER STORY leads it, credited (exclusive_inside)
+        exclusive_inside(cands, now)
+    except Exception as e:
+        print("exclusive inside failed:", e)
     ranked = breaking_holds(sorted(cands, key=rank_key))  # THE RULE (top_rule), then the bigger story; a Breaking story holds the top (breaking_holds)
     # one story per running theme in the top pair, so Canada-U.S. leads without crowding out everything else
     # (the rest of the day's Canada-U.S. stories are in the Canada and the U.S. section and the Canadian angle sidebars)
@@ -3874,7 +3986,7 @@ def big_week(items, now, prev=()):
             reps.append({"t": w.eastern(dt), "iso": dt.isoformat(), "outlet": o.replace(" (subscribers)", "") + (" (subscribers)" if globe else ""),
                          "title": clean(title), "url": link, "canada": bool(CAN_TIE.search(title + " " + desc)), "paywall": globe,
                          # a newsroom's own interview or scoop: labelled Exclusive and listed first
-                         "exclusive": o in SCOOP_OUTLETS and bool(SCOOP_SIGNAL.search(title + " " + link.replace("-", " ") + " " + desc))})
+                         "exclusive": o in SCOOP_OUTLETS and is_scoop_text(title + " " + link.replace("-", " ") + " " + desc)})
             if len(reps) >= 40:
                 break
         # searched coverage: newest reports join the list, older ones become earlier coverage (below)
