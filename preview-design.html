@@ -1768,6 +1768,43 @@ header.site { border-bottom: 0; }
         </div>
       </div>
     </section>
+    <script id="pal-hold">
+    // UPDATES WAIT FOR THE READER (Hannah, Wed Nov 11, 2026: "If the site updates, go back to showing the red dot at the
+    // bottom of the page so that if people are currently on the site and want to stay where they are, it only updates
+    // if they push that button.") The page takes the newest edition (live/auto.json) as it opens. After that, a newer
+    // edition is never redrawn under the reader: every part of the page keeps being handed the edition it opened with,
+    // and the red "New update" button appears at the bottom instead. One tap loads the new edition.
+    (function () {
+      const OPEN_MS = 15000, t0 = Date.now(), held = {}, realFetch = window.fetch && window.fetch.bind(window);
+      let shown = false;
+      const esc = (x) => String(x).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+      window.PAL_newUpdate = function (label) {
+        if (shown || !document.body) return; shown = true;
+        const b = document.createElement('button');
+        b.type = 'button'; b.className = 'newbar';
+        b.innerHTML = '<i aria-hidden="true"></i>New update' + (label ? ' ' + esc(label) : '') + ' · Tap';
+        b.addEventListener('click', () => { location.replace(location.pathname + '?u=' + Date.now() + location.hash); });
+        document.body.appendChild(b);
+      };
+      if (!realFetch) return;
+      const when = (iso) => { try { return new Date(iso).toLocaleTimeString('en-CA', { hour: 'numeric', minute: '2-digit', timeZone: 'America/Toronto' }).replace(/\s?([ap])\.?m\.?/i, ' $1.m.'); } catch (e) { return ''; } };
+      window.fetch = function (u, opts) {
+        const url = String((u && u.url) || u || '');
+        if (!/live\/auto\.json(\?|$)/.test(url)) return realFetch(u, opts);
+        const k = url.replace(/\?.*$/, '');
+        return realFetch(u, opts).then((r) => {
+          if (!r.ok) return held[k] ? new Response(held[k].text, { status: 200, headers: { 'Content-Type': 'application/json' } }) : r;
+          return r.text().then((text) => {
+            let checked = ''; try { checked = JSON.parse(text).checked || ''; } catch (e) {}
+            const h = held[k];
+            if (!h || (Date.now() - t0 < OPEN_MS && checked >= h.checked)) held[k] = { text, checked };  // the page is still opening: take the newest
+            else if (checked && checked > h.checked) window.PAL_newUpdate('at ' + when(checked) + ' ET');  // newer: wait for the tap
+            return new Response(held[k].text, { status: 200, headers: { 'Content-Type': 'application/json' } });
+          });
+        }).catch((e) => { if (held[k]) return new Response(held[k].text, { status: 200, headers: { 'Content-Type': 'application/json' } }); throw e; });
+      };
+    })();
+    </script>
     <script>
       // The hand-written top story only shows while it is current (Hannah, Sat Oct 31, 2026: "every time I pull down to
       // refresh, I see the old story of the BC dog rescuer"). Older than 3 hours (TAKEOVER_HOURS in tools/autopilot.py),
@@ -2794,11 +2831,7 @@ header.site { border-bottom: 0; }
         const theirs = stampOf(html);
         if (!theirs || !mine || theirs === mine || shown) return;
         shown = true;
-        const b = document.createElement('button');
-        b.type = 'button'; b.className = 'newbar';
-        b.innerHTML = '<i aria-hidden="true"></i>New update ' + esc(theirs) + ' · Tap';
-        b.addEventListener('click', () => { location.replace(location.pathname + '?u=' + Date.now()); });
-        document.body.appendChild(b);
+        if (window.PAL_newUpdate) window.PAL_newUpdate(theirs);
       }).catch(() => {});
     };
     setInterval(check, 120000);
@@ -6985,7 +7018,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     // more prominent. Give them the credit that is due"). A big Canadian exclusive carries a credit bar right under its
     // headline: the newsroom that broke it, when, a one-tap link to that newsroom's own report, and the newsrooms that
     // have since confirmed it. The story is also lit with a gold edge (ab-scoop) so it stands out among the top stories.
-    const exclBox = (s) => { if (!s.scoop) return ''; const x = s.exclusive || {}, who = s.scoop_outlet || x.outlet || s.outlet; const conf = (x.confirmed_by || []).filter((o) => o && o !== who);
+    const exclBox = (s) => { if (!s.scoop && !s.exclusive) return ''; const x = s.exclusive || {}, who = s.scoop_outlet || x.outlet || s.outlet; const conf = (x.confirmed_by || []).filter((o) => o && o !== who);
       return '<p class="ab-excl"><span class="ab-excl-b">Exclusive</span><span class="ab-excl-t"><b>' + esc(who) + '</b> broke this story' + (x.t ? ' · ' + esc(x.t) + ' ET' : '')
         + (conf.length ? ' · since confirmed by ' + esc(conf.join(', ')) : '') + '</span>' + a(x.url || s.url, 'Read ' + esc(who) + '’s exclusive &#8599;').replace('<a ', '<a class="ab-excl-go" ') + '</p>'; };
     sec.innerHTML = list.map((s, i) => {
@@ -7037,7 +7070,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
             : '')
           + '<p class="pj-note">Each call is the network’s own, in its own words, linked to where it was made. A projection is not a final result.</p></div>';
       })() : '';
-      return '<article class="ab-story' + (i ? ' ab-second' : '') + (s.scoop ? ' ab-scoop' : '') + (s.proj_lead ? ' ab-projlead' : '') + (s.aftermath ? ' ab-after' : '') + '" data-key="' + esc(s.key) + '">' + ph + '<span class="tag">' + (s.event_tag ? esc(s.event_tag) : s.scoop ? 'Exclusive · ' + esc(s.scoop_outlet || s.outlet) : onAir || (recent && s.tag === 'Breaking') ? 'Breaking' : 'Developing') + '</span>'
+      return '<article class="ab-story' + (i ? ' ab-second' : '') + (s.scoop || s.exclusive ? ' ab-scoop' : '') + (s.proj_lead ? ' ab-projlead' : '') + (s.aftermath ? ' ab-after' : '') + '" data-key="' + esc(s.key) + '">' + ph + '<span class="tag">' + (s.event_tag ? esc(s.event_tag) : s.scoop ? 'Exclusive · ' + esc(s.scoop_outlet || s.outlet) : onAir || (recent && s.tag === 'Breaking') ? 'Breaking' : 'Developing') + '</span>'
         + '<h2>' + a(s.url, esc(s.title)) + '</h2>' + exclBox(s) + (s.proj_lead ? '<p class="ab-projsrc">Projection by ' + a(s.proj_lead.url, esc(s.proj_lead.net)) + ' · ' + esc(s.proj_lead.t) + ' ET</p>' : '') + (sub ? '<p class="ab-sub">' + esc(sub.t) + (sub.own ? '' : ' <span class="ab-cr">— ' + a(sub.u, esc(sub.o)) + '</span>') + '</p>' : '') + (s.aftermath ? '' : projBox) + liveBar + moreBox
         + '<p class="first">LATEST ' + a(s.url, esc(s.outlet)) + ' · ' + esc(s.t) + firstLine + '</p>'
         + '<details class="ab-reps" data-key="' + esc(s.key) + '"' + (repsOpen(s.key, !i) ? ' open' : '') + '><summary><span class="ab-reps-t"><svg class="pn-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h13v14H6a2 2 0 0 1-2-2V5zm13 4h3v8a2 2 0 0 1-2 2h-1M7 8h7M7 11h7M7 14h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>What each newsroom reports <span class="pn-n">' + nInd + ' independent report' + (nInd === 1 ? '' : 's') + '</span></span><span class="ab-reps-tog"><span class="o1">Show</span><span class="o2">Hide</span><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></summary><ol>' + reps + '</ol></details>'
