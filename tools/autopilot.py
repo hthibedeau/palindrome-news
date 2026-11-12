@@ -2520,6 +2520,89 @@ def exclusive_inside(cands, now):
         s["scoop_why"] = (f"Exclusive: {owner} reported it from its own sources ({s['exclusive']['t']})"
                           + (f", since confirmed by {', '.join(conf)}" if conf else "") + "; credited and led with its report.")
         print("exclusive inside story:", owner, "|", s["title"][:80])
+    keep_exclusive_credit(cands, now)
+
+
+# THE CREDIT STAYS WITH THE STORY (Hannah, Wed Nov 11, 2026: "Give them the credit that is due"). Once the scoop is
+# more than SCOOP_HOURS old, or the newsroom's report has dropped out of the feeds, the story no longer leads with the
+# exclusive's headline, but for SCOOP_FIRST_HOURS (a day) it keeps the credit: the newsroom that broke it, its report
+# first in the list, and the credit bar on the page ("CTV News broke this story"). Carried over from the last edition.
+EXCLUSIVES_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "live", "exclusives.json")  # a day's exclusives
+
+
+def _prev_auto_stories():
+    out = []
+    try:  # the exclusives of the last day, kept on their own so a story keeps its credit even if one edition lost it
+        with open(EXCLUSIVES_FILE, encoding="utf-8") as f:
+            out += json.load(f) or []
+    except Exception:
+        pass
+    try:
+        with open(os.path.join(os.path.dirname(EXCLUSIVES_FILE), "auto.json"), encoding="utf-8") as f:
+            out += ((json.load(f).get("auto") or {}).get("stories") or [])
+    except Exception:
+        pass
+    return out
+
+
+def _save_exclusives(cands, prev, now):
+    keep, seen = [], set()
+    for p_ in [c for c in cands if c.get("exclusive")] + list(prev):
+        x = p_.get("exclusive") or {}
+        try:
+            if (now - datetime.fromisoformat(x.get("iso") or "")).total_seconds() > SCOOP_FIRST_HOURS * 3600:
+                continue
+        except Exception:
+            continue
+        if x.get("url") in seen:
+            continue
+        seen.add(x.get("url"))
+        keep.append({"key": p_.get("key"), "exclusive": x, "reports": [{"url": r.get("url")} for r in (p_.get("reports") or []) if r.get("url")][:40]})
+    try:
+        with open(EXCLUSIVES_FILE, "w", encoding="utf-8") as f:
+            json.dump(keep, f, ensure_ascii=False, indent=1)
+    except Exception as e:
+        print("exclusives file not saved:", e)
+
+
+def keep_exclusive_credit(cands, now, prev=None):
+    save = prev is None
+    prev = [p_ for p_ in (_prev_auto_stories() if prev is None else prev) if p_.get("exclusive")]
+    try:
+        _keep_credit(cands, now, prev)
+    finally:
+        if save:
+            _save_exclusives(cands, prev, now)
+
+
+def _keep_credit(cands, now, prev):
+    base = lambda u: (u or "").split("?")[0].rstrip("/")
+    for s in cands:
+        if s.get("exclusive"):
+            continue
+        urls = {base(r.get("url")) for r in (s.get("reports") or [])} | {base(s.get("url"))}
+        for p_ in prev:
+            x = p_["exclusive"]
+            try:
+                age = (now - datetime.fromisoformat(x.get("iso") or "")).total_seconds() / 3600
+            except Exception:
+                continue
+            if age > SCOOP_FIRST_HOURS:
+                continue
+            if p_.get("key") != s.get("key") and not (urls & ({base(r.get("url")) for r in (p_.get("reports") or [])} - {""})):
+                continue
+            s["exclusive"] = dict(x)
+            s["scoop_outlet"] = x.get("outlet")
+            if base(x.get("url")) not in urls:  # its report back at the top of the list, marked Exclusive
+                s.setdefault("reports", []).insert(0, {"outlet": x.get("outlet"), "url": x.get("url"), "title": x.get("title"),
+                                                       "t": x.get("t"), "iso": x.get("iso"), "exclusive": True})
+            else:
+                for r in s.get("reports") or []:
+                    if base(r.get("url")) == base(x.get("url")):
+                        r["exclusive"] = True
+            s["scoop_why"] = f"Exclusive credit kept: {x.get('outlet')} broke this story ({x.get('t')})."
+            print("exclusive credit kept:", x.get("outlet"), "|", (s.get("title") or "")[:80])
+            break
 
 
 # ---------------------------------------------------------------------------------------------------------------------
