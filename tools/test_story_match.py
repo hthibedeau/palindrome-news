@@ -144,7 +144,7 @@ check(not ap.shares_big_day(stla, dict(nvda, event_day="U.S. midterm elections")
 check(not ap.shares_big_day(dict(stla, judgment="local"), nvda), "a local story never shares the top")
 _auto = {}
 ap._select(_auto, [nvda, stla], [nvda, stla], lambda x: 0)
-check(_auto["top_n"] == 2 and [x["key"] for x in _auto["stories"][:2]] == ["nv", "st"], "the top is Nvidia, then Stellantis")
+check(_auto["top_n"] == 2 and [x["key"] for x in _auto["stories"][:2]] == ["st", "nv"], "both at the top: Stellantis first, then Nvidia")
 check(not _auto["moved"], "Stellantis is not moved down")
 _auto = {}
 ap._select(_auto, [nvda, scoop], [nvda, scoop], lambda x: 0)

@@ -2351,7 +2351,9 @@ def _select(auto, cands, ranked, tier):
                                       "t": s.get("t"), "iso": s.get("iso") or s.get("newest"), "summary": s.get("summary") or "",
                                       "img": ((s.get("photo") or {}).get("orig") or ""), "scoop": bool(s.get("scoop")), "into": top2[0].get("key")})
             rest.insert(0, s)
-        top2 = top2[:1] + ([partner] if partner else [])
+        # Canada's story goes first, the big story beside it (Hannah, Thu Nov 12, 2026: "I think they can both sit
+        # in the breaking news, but I would put the Canada one first")
+        top2 = [partner] + top2[:1] if partner else top2[:1]
     moved_keys = {m["key"] for m in auto["moved"]}
     rest = [s for s in rest if s.get("key") not in moved_keys] + [s for s in rest if s.get("key") in moved_keys]
     ranked = top2 + rest
@@ -3033,6 +3035,7 @@ def shares_big_day(s, big):
         morning after still stands alone, as Hannah set on Nov 3 and Nov 4);
       - this story is Canadian (not a Canada-U.S. story, which goes to the Canadian angle box), national, one story,
         not sport;
+      - then it goes FIRST, the big story second (Hannah: "I would put the Canada one first");
       - it is the story Canada's front pages lead with: the most Canadian front pages of any Canadian story, at least
         LEADS_CA_MIN of them (leads_ca), or as many Canadian front pages as the big story itself.
     A Canadian exclusive on one newsroom's front page, or a smaller Canadian story, still moves to the Canada desk."""
