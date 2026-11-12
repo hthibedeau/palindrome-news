@@ -170,3 +170,7 @@ On the record cards carry `data-embed` (the original post link) and `data-platfo
 - **Cite the source:** the exclusive becomes the headline and link, its report goes first, and the story is labelled "Exclusive · CTV News". Credit goes to the newsroom that broke it (the first one, within a day); newsrooms that confirm it later are listed as confirming it. A CTV report run on CP24 is credited to CTV News.
 - **Close to the top, if not the top:** rule 4 of `TOP_RULES`. It leads unless there are bigger stories (event day, the story every front page leads with, Canadian breaking news, a big international story, breaking news from abroad).
 - `exclusive_inside()` in `tools/autopilot.py`; checks: `python3 tools/test_story_match.py`.
+
+## Clear clock labels (Hannah, Wed Nov 11, 2026)
+
+"Looking at the times across, like St. John's, Halifax, Ottawa, Winnipeg ... the bottom descriptors, I like having them there, but they're not clear enough." Each clock used to show one word picked from the headlines, which was often unclear ("Kilam") or wrong ("Police" on a Remembrance Day story, "Fire" on the Nvidia story). Each clock now shows its story's own headline, shortened at a word break (`clock_label()` in tools/autopilot.py), with the newsroom's name under it, at most three lines. The whole clock is still one tap to the story. Sports stories with a Canadian team's full name ("Edmonton Elks") or coaching news no longer reach the clocks or the top.

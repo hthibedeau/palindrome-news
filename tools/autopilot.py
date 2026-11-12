@@ -125,6 +125,9 @@ canada canadian canadians ottawa u.s us america american trump carney the a this
 president minister government police city court federal provincial premier mayor report reports""".split())
 SPORT = re.compile(r"football|basketball|baseball|soccer|hockey|\bNHL\b|\bNFL\b|\bNBA\b|\bMLB\b|\bMLS\b|\bCFL\b|\bNCAA\b|\bPWHL\b|\bWNBA\b|"
                    r"World Series|Stanley Cup|Grey Cup|Blue Jays|Maple Leafs|Raptors|quarterback|"
+                   # Canadian teams by their full names, and coaching news (Hannah, Wed Nov 11, 2026: the Edmonton Elks' new head coach was a clock's story)
+                   r"(?:Edmonton|Calgary|Saskatchewan|Winnipeg|Hamilton|Toronto|Montreal|Ottawa|B\.?C\.?|Vancouver) (?:Elks|Stampeders|Roughriders|Blue Bombers|Tiger-Cats|Argonauts|Argos|Alouettes|Redblacks|Lions|Oilers|Flames|Jets|Senators|Canadiens|Canucks|Whitecaps|Wolfpack|Rogue|Victoire|Fleet|Frost|Charge|Sceptres)\b|"
+                   r"\bhead coach\b|\bgeneral manager\b.*\b(?:team|club|franchise)\b|"
                    # game stories that name no sport (Hannah, Sat Oct 31, 2026: "Cabana's long TD run, Kelly's 3 FGs" reached the top)
                    r"\bTDs?\b|touchdowns?|\bFGs?\b|field goals?|rushing yards|\binnings?\b|home runs?|hat trick|power play|"
                    r"\b(?:semifinal|quarterfinal|playoff|bowl) (?:game|win|loss)|\bwins? (?:\d+-\d+|in overtime)|\b\d+-\d+ (?:win|loss|victory)|/sports?/", re.I)
@@ -3688,13 +3691,36 @@ CLOCK_NOT_NAMES = {"much", "many", "more", "most", "some", "after", "before", "o
                    "thursday", "friday", "saturday", "sunday", "november", "october", "december"}
 
 
+# CLEAR CLOCK LABELS (Hannah, Wed Nov 11, 2026: "the bottom descriptors, I like having them there, but they're not
+# clear enough"). One word picked from the headlines was often unclear ("Kilam") or wrong ("Police" on a Remembrance
+# Day story, "Fire" on the Nvidia story, "Labour" on the Iran war). Each clock now shows the story's own headline,
+# shortened to CLOCK_LABEL_MAX characters at a word break, and the newsroom's name under it; the one word stays only
+# as a fallback.
+CLOCK_LABEL_MAX = 58
+
+
+def clock_label(title):
+    t = clean(title or "")
+    t = re.sub(r"\s*[|–—-]\s*(?:CBC|CTV|Global|CP24|CityNews|The Canadian Press|Reuters|AP|Power & Politics)[^|]*$", "", t)  # a site name tacked on
+    t = re.sub(r"^(?:WATCH|LIVE|BREAKING|UPDATE|EXCLUSIVE|ANALYSIS|OPINION|VIDEO)\s*[:|-]\s*", "", t, flags=re.I)
+    t = re.sub(r"^[A-Z][\w ]{0,30} live:\s*", "", t) if len(t) > CLOCK_LABEL_MAX else t  # "Iran war live: Tehran warns ..." -> the news
+    if len(t) <= CLOCK_LABEL_MAX:
+        return t
+    cut = t[:CLOCK_LABEL_MAX + 1]
+    for sep in ("; ", ": ", ", ", " amid "):
+        i = cut.rfind(sep)
+        if i >= 25:
+            return t[:i].rstrip(" ,;:")
+    return cut[:cut.rfind(" ")].rstrip(" ,;:") + "…"
+
+
 def clock_topics(items, groups, now):
     import autoupdate as au
 
     def entry(city, tz, best, word, world):
         lead = best[0]
         outlets = {au.clean_outlet(r[1]) for r in best}
-        return {"city": city, "tz": tz, "world": world, "w": word, "u": lead[3], "title": clean(lead[2]), "outlet": au.clean_outlet(lead[1]),
+        return {"city": city, "tz": tz, "world": world, "w": word, "label": clock_label(lead[2]), "u": lead[3], "title": clean(lead[2]), "outlet": au.clean_outlet(lead[1]),
                 "t": w.eastern(lead[0]), "hot": (now - lead[0]).total_seconds() < 3600 and len(outlets) >= 3}
     out, used = [], set()
     for city, tz, rx_ in CLOCK_CITIES:  # Canada's six time zones and Washington: always shown, always with a story

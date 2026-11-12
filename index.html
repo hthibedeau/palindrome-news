@@ -1007,6 +1007,12 @@ header.site { border-bottom: 0; }
 .clk .t { font-family: var(--serif); font-size: 22px; font-weight: 600; line-height: 1.1; color: var(--title); font-variant-numeric: tabular-nums; }
 .clk .t small { font-family: var(--sans); font-size: 11px; font-weight: 600; color: var(--muted); margin-left: 3px; }
 .clk .cgo { font-size: 12px; color: var(--accent); font-weight: 600; white-space: nowrap; }
+/* the clock's story in plain words: its headline, two lines at most, and the newsroom (Hannah, Wed Nov 11, 2026) */
+.clk .cgo { white-space: normal !important; font-size: 12.5px; line-height: 1.3; font-weight: 600; color: var(--title); margin-top: 3px;
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.clk .cgo .csrc { display: block; margin-top: 2px; font-size: 10.5px; font-weight: 600; letter-spacing: .02em; color: var(--muted); }
+.clk.hot .cgo { color: var(--accent); }
+@media (max-width: 899px) { .clk { min-width: 168px; max-width: 200px; } }
 .clk a::after { content: ""; position: absolute; inset: 0; }
 @media (hover: hover) { .clk:hover .t { color: var(--accent); } }
 .clk.hot .city { color: var(--live); }
@@ -5559,10 +5565,10 @@ header.site { border-bottom: 0; }
   ];
   const lat = (u) => { try { return latestOf(u); } catch (e) { return u; } };
   function drawClocks() {
-    $('clocks').innerHTML = clocks.map(([c, tz, w, h, hot, tip], i) => {
+    $('clocks').innerHTML = clocks.map(([c, tz, w, h, hot, tip, label, src], i) => {
       let t = '';
       try { t = new Date().toLocaleTimeString('en-CA', { hour: 'numeric', minute: '2-digit', timeZone: tz }).replace(/\s?([ap])\.?m\.?/i, ' <small>$1.m.</small>'); } catch (e) {}
-      return '<div class="clk' + (hot ? ' hot' : '') + (i && clocks[i - 1][0] === 'Washington' ? ' clk-world' : '') + '"><span class="city">' + esc(c) + '</span><span class="t">' + t + '</span>' + (w && h ? '<a class="cgo" href="' + esc(lat(h)) + '" target="_blank" rel="noopener"' + (tip ? ' title="' + esc(tip) + '"' : '') + '>' + esc(w) + '</a>' : '') + '</div>';
+      return '<div class="clk' + (hot ? ' hot' : '') + (i && clocks[i - 1][0] === 'Washington' ? ' clk-world' : '') + '"><span class="city">' + esc(c) + '</span><span class="t">' + t + '</span>' + (w && h ? '<a class="cgo" href="' + esc(lat(h)) + '" target="_blank" rel="noopener"' + (tip ? ' title="' + esc(tip) + '"' : '') + '>' + esc(label || w) + (label && src ? '<small class="csrc">' + esc(src) + '</small>' : '') + '</a>' : '') + '</div>';
     }).join('');
   }
   drawClocks();
@@ -5575,14 +5581,14 @@ header.site { border-bottom: 0; }
   // A city with no news in the last 18 hours shows only its time.
   window.PAL_clocks = (C) => {
     if (!Array.isArray(C)) return;
-    const row = (c) => [c.city, c.tz, c.w || '', c.u || '', !!c.hot, c.w ? c.title + ' (' + c.outlet + ', ' + c.t + ')' : ''];
+    const row = (c) => [c.city, c.tz, c.w || '', c.u || '', !!c.hot, c.w ? c.title + ' (' + c.outlet + ', ' + c.t + ')' : '', c.label || '', c.outlet || ''];
     if (C.length && C[0].tz) {  // the update's full set: Canada east to west, Washington, then the world cities east to west
       const EW = ["St. John's", 'Halifax', 'Ottawa', 'Winnipeg', 'Edmonton', 'Vancouver', 'Washington'];
       const off = (tz) => { try { const d = new Date(); return (new Date(d.toLocaleString('en-US', { timeZone: tz })) - new Date(d.toLocaleString('en-US', { timeZone: 'UTC' }))); } catch (e) { return 0; } };
       const home = EW.map((n) => C.find((c) => c.city === n)).filter(Boolean), world = C.filter((c) => EW.indexOf(c.city) < 0).sort((a, b) => off(b.tz) - off(a.tz));
       clocks.length = 0; home.concat(world).forEach((c) => clocks.push(row(c)));
     }
-    else clocks.forEach((r) => { const c = C.find((x) => x.city === r[0]); r[2] = c ? c.w : ''; r[3] = c ? c.u : ''; r[4] = !!(c && c.hot); r[5] = c ? c.title + ' (' + c.outlet + ', ' + c.t + ')' : ''; });
+    else clocks.forEach((r) => { const c = C.find((x) => x.city === r[0]); r[2] = c ? c.w : ''; r[3] = c ? c.u : ''; r[4] = !!(c && c.hot); r[5] = c ? c.title + ' (' + c.outlet + ', ' + c.t + ')' : ''; r[6] = c ? c.label || '' : ''; r[7] = c ? c.outlet || '' : ''; });
     try { localStorage.setItem('pal-clocks', JSON.stringify({ at: Date.now(), C })); } catch (e) {}
     drawClocks();
   };
