@@ -8766,4 +8766,192 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
 }
 </style>
 <!-- solo-front:end -->
+<!-- secpage:start -->
+<style id="secpage">
+/* SECTION PAGES (Hannah, Thu Nov 12, 2026: "When you click on a specific section, it would probably be better to go
+   to a new page rather than scroll down.") A tap on a section in the menu opens that section as its own page, with
+   its own address (e.g. #/canada), at the top of the screen. Front page, Back, or the logo returns to the front page
+   where the reader left it. Nothing is removed: the front page is unchanged, the other sections are only set aside
+   while a section page is open. */
+body.secpage main > .sp-off, body.secpage main .sp-off { display: none !important; }
+body.secpage .fronts.sp-path, body.secpage #fronts.sp-path { display: block !important; }
+body.secpage .fronts.sp-path > .front, body.secpage #fronts.sp-path > .front { max-width: none; width: 100%; }
+body.secpage main { gap: 28px; }
+.sp-bar { display: none; }
+body.secpage .sp-bar { display: block; border-bottom: 3px double var(--rule, #CBBFE8); padding: 4px 0 18px; }
+.sp-bar .sp-back { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 600; color: var(--accent, #6A3FC8); text-decoration: none; padding: 6px 0; }
+.sp-bar .sp-back:hover { text-decoration: underline; }
+.sp-bar .sp-kicker { margin-top: 10px; font-size: 12px; letter-spacing: .09em; text-transform: uppercase; font-weight: 600; color: var(--muted, #6b6280); }
+.sp-bar h1 { margin: 4px 0 0; font-size: clamp(30px, 5vw, 48px); line-height: 1.1; color: var(--title, #2B1B54); }
+.sp-bar .sp-empty { margin-top: 14px; font-size: 16px; color: var(--body, #333); }
+.sp-foot { display: none; }
+body.secpage .sp-foot { display: block; border-top: 1px solid var(--rule, #CBBFE8); padding-top: 18px; }
+body.secpage .sp-foot a { font-weight: 600; color: var(--accent, #6A3FC8); }
+</style>
+<script>
+(() => {
+  // Menu link -> section page. The address is #/<name> so it can be shared, bookmarked and kept by "New update".
+  const ROUTES = [
+    ['story-board', 'board', 'Story board'],
+    ['canada', 'sec-canada', 'Canada'],
+    ['politics', 'sec-politics', 'Politics'],
+    ['business', 'sec-business', 'Business & Economy'],
+    ['world', 'sec-world', 'World'],
+    ['canada-us', 'canus', 'Canada & U.S.'],
+    ['us-media-on-canada', 'usmedia', 'How U.S. media see Canada'],
+    ['united-states', 'sec-us', 'United States'],
+    ['smaller-newsrooms', 'smaller', 'Smaller newsrooms'],
+    ['breakdown', 'breakdown', 'The breakdown'],
+    ['watch', 'video', 'Watch'],
+    ['what-to-watch', 'ahead', 'What to watch'],
+    ['most-read', 'mostread', 'Most read'],
+    ['todays-reading', 'reading', "Today's reading"],
+    ['on-the-record', 'ontherecord', 'On the record'],
+    ['editorials', 'editorials', 'Editorials'],
+    ['think-tanks', 'thinktanks', 'Think tanks'],
+    ['go-deeper', 'godeeper', 'Go deeper'],
+  ];
+  const bySlug = {}, byId = {};
+  ROUTES.forEach(([slug, id, name]) => { bySlug[slug] = { slug, id, name }; byId[id] = bySlug[slug]; });
+  const MENUS = 'header nav.sections a[href^="#"], #stick nav a[href^="#"], header .more-menu a[href^="#"]';
+  const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const main = () => document.querySelector('main');
+  const baseTitle = document.title;
+  let current = null, frontY = 0, timer = 0;
+
+  const routeOf = (hash) => { const m = /^#\/([a-z0-9-]+)$/.exec(hash || ''); return m ? (bySlug[m[1]] || (document.getElementById(m[1]) ? { slug: m[1], id: m[1], name: '' } : null)) : null; };
+
+  function bar() {
+    let b = document.getElementById('spBar'); const m = main(); if (!m) return null;
+    if (!b) {
+      b = document.createElement('div'); b.id = 'spBar'; b.className = 'sp-bar';
+      b.innerHTML = '<a class="sp-back" href="#top"><span aria-hidden="true">&larr;</span> Front page</a>'
+        + '<div class="sp-kicker">Palindrome News · Section</div><h1 id="spTitle"></h1><p class="sp-empty" hidden>Nothing new in this section right now. It fills with each update, about every 30 minutes.</p>';
+      const f = document.createElement('div'); f.id = 'spFoot'; f.className = 'sp-foot';
+      f.innerHTML = '<a href="#top">&larr; Back to the front page</a>';
+      m.prepend(b); m.append(f);
+    } else {
+      if (m.firstElementChild !== b) m.prepend(b);
+      const f = document.getElementById('spFoot'); if (f && m.lastElementChild !== f) m.append(f);
+    }
+    return b;
+  }
+
+  // What stays on the section page: the section itself, and for a section that lives in a tabbed group,
+  // that group's heading and tabs (with its tab opened)
+  function keepers(t) {
+    const k = [t];
+    const panel = t.closest('.cmb-panel');
+    if (panel) {
+      const sec = panel.classList.contains('cmb-stay') ? panel.previousElementSibling : panel.closest('.cmb-sec');
+      if (sec && sec.classList.contains('cmb-sec')) {
+        k.push(sec);
+        const btn = sec.querySelector('.cmb-tabs button[data-for="' + (panel.dataset.for || t.id) + '"]');
+        if (btn && btn.getAttribute('aria-selected') !== 'true') btn.click();
+      }
+    }
+    return k;
+  }
+
+  function clear() { $$('.sp-off, .sp-path, .sp-keep').forEach((e) => e.classList.remove('sp-off', 'sp-path', 'sp-keep')); }
+
+  function apply() {
+    const m = main(); if (!m || !current) return;
+    const t = document.getElementById(current.id);
+    bar();
+    clear();
+    const keep = t ? keepers(t) : [];
+    const path = new Set([m]);
+    keep.forEach((k) => { k.classList.add('sp-keep'); for (let x = k.parentElement; x && x !== m && m.contains(x); x = x.parentElement) path.add(x); });
+    const sp = new Set(['spBar', 'spFoot']);
+    path.forEach((p) => {
+      if (p !== m) p.classList.add('sp-path');
+      [...p.children].forEach((c) => {
+        if (sp.has(c.id) || c.tagName === 'SCRIPT' || c.tagName === 'STYLE') return;
+        if (!path.has(c) && !keep.includes(c)) c.classList.add('sp-off');
+      });
+    });
+    const h = document.getElementById('spTitle');
+    const name = current.name || (t && (t.querySelector('h2, h3') || {}).textContent) || 'Section';
+    if (h && h.textContent !== name) h.textContent = name;
+    const empty = document.querySelector('#spBar .sp-empty');
+    if (empty) empty.hidden = !!(t && t.offsetHeight > 40);
+  }
+
+  function setCurrentLink() {
+    $$(MENUS).forEach((a) => {
+      const id = a.getAttribute('href').slice(1);
+      const on = current ? id === current.id : id === 'top';
+      if (on) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
+    });
+  }
+
+  function render(fromNav) {
+    const r = routeOf(location.hash);
+    if (r) {
+      if (!current) frontY = window.scrollY;
+      current = r;
+      document.body.classList.add('secpage');
+      apply();
+      document.title = current.name ? current.name + ' — ' + baseTitle : baseTitle;
+      setCurrentLink();
+      window.scrollTo(0, 0);
+      // the page draws some sections a moment after it opens: keep the section page in step for the first seconds
+      [300, 900, 2000, 4000].forEach((ms) => setTimeout(() => { if (current === r) apply(); }, ms));
+      return;
+    }
+    const was = !!current;
+    current = null;
+    document.body.classList.remove('secpage');
+    clear();
+    document.title = baseTitle;
+    setCurrentLink();
+    if (was) {
+      const id = (location.hash || '').slice(1);
+      const t = id && id !== 'top' && document.getElementById(id);
+      if (t) t.scrollIntoView({ block: 'start' });
+      else if (!location.hash || fromNav === 'back') window.scrollTo(0, frontY);
+      else window.scrollTo(0, 0);
+    }
+  }
+
+  // A tap on a menu section opens its page. Other links on the page (a story's report count, How this developed,
+  // a Breakdown entry) still move within the page as before.
+  addEventListener('click', (e) => {
+    const a = e.target.closest && e.target.closest('a[href^="#"]'); if (!a) return;
+    const id = a.getAttribute('href').slice(1);
+    if (a.matches(MENUS) || a.closest('#spBar, #spFoot') || a.matches('a.mini')) {
+      if (id === 'top' || !id) {
+        // "Front page" goes back to where the reader was on the front page; "Top stories" and the logo go to the top
+        e.preventDefault();
+        const restore = !!a.closest('#spBar, #spFoot');
+        if (current) { history.pushState(null, '', location.pathname + location.search); render('back'); }
+        if (!restore) window.scrollTo(0, 0);
+        return;
+      }
+      const r = byId[id]; if (!r) return;
+      e.preventDefault();
+      if (location.hash !== '#/' + r.slug) location.hash = '/' + r.slug; else render();
+      return;
+    }
+    // on a section page, a link to something that lives elsewhere on the front page goes to the front page
+    if (current && id) {
+      const t = document.getElementById(id);
+      if (t && t.closest('.sp-off')) { e.preventDefault(); location.hash = id; }
+    }
+  }, true);
+
+  addEventListener('hashchange', () => render('back'));
+  addEventListener('popstate', () => render('back'));
+
+  const start = () => {
+    render();
+    const m = main(); if (!m) return;
+    new MutationObserver(() => { if (!current) return; clearTimeout(timer); timer = setTimeout(apply, 150); })
+      .observe(m, { childList: true, subtree: true });
+  };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
+})();
+</script>
+<!-- secpage:end -->
 </body></html>
