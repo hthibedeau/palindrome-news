@@ -1767,6 +1767,43 @@ header.site { border-bottom: 0; }
         </div>
       </div>
     </section>
+    <script id="pal-hold">
+    // UPDATES WAIT FOR THE READER (Hannah, Wed Nov 11, 2026: "If the site updates, go back to showing the red dot at the
+    // bottom of the page so that if people are currently on the site and want to stay where they are, it only updates
+    // if they push that button.") The page takes the newest edition (live/auto.json) as it opens. After that, a newer
+    // edition is never redrawn under the reader: every part of the page keeps being handed the edition it opened with,
+    // and the red "New update" button appears at the bottom instead. One tap loads the new edition.
+    (function () {
+      const OPEN_MS = 15000, t0 = Date.now(), held = {}, realFetch = window.fetch && window.fetch.bind(window);
+      let shown = false;
+      const esc = (x) => String(x).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+      window.PAL_newUpdate = function (label) {
+        if (shown || !document.body) return; shown = true;
+        const b = document.createElement('button');
+        b.type = 'button'; b.className = 'newbar';
+        b.innerHTML = '<i aria-hidden="true"></i>New update' + (label ? ' ' + esc(label) : '') + ' · Tap';
+        b.addEventListener('click', () => { location.replace(location.pathname + '?u=' + Date.now() + location.hash); });
+        document.body.appendChild(b);
+      };
+      if (!realFetch) return;
+      const when = (iso) => { try { return new Date(iso).toLocaleTimeString('en-CA', { hour: 'numeric', minute: '2-digit', timeZone: 'America/Toronto' }).replace(/\s?([ap])\.?m\.?/i, ' $1.m.'); } catch (e) { return ''; } };
+      window.fetch = function (u, opts) {
+        const url = String((u && u.url) || u || '');
+        if (!/live\/auto\.json(\?|$)/.test(url)) return realFetch(u, opts);
+        const k = url.replace(/\?.*$/, '');
+        return realFetch(u, opts).then((r) => {
+          if (!r.ok) return held[k] ? new Response(held[k].text, { status: 200, headers: { 'Content-Type': 'application/json' } }) : r;
+          return r.text().then((text) => {
+            let checked = ''; try { checked = JSON.parse(text).checked || ''; } catch (e) {}
+            const h = held[k];
+            if (!h || (Date.now() - t0 < OPEN_MS && checked >= h.checked)) held[k] = { text, checked };  // the page is still opening: take the newest
+            else if (checked && checked > h.checked) window.PAL_newUpdate('at ' + when(checked) + ' ET');  // newer: wait for the tap
+            return new Response(held[k].text, { status: 200, headers: { 'Content-Type': 'application/json' } });
+          });
+        }).catch((e) => { if (held[k]) return new Response(held[k].text, { status: 200, headers: { 'Content-Type': 'application/json' } }); throw e; });
+      };
+    })();
+    </script>
     <script>
       // The hand-written top story only shows while it is current (Hannah, Sat Oct 31, 2026: "every time I pull down to
       // refresh, I see the old story of the BC dog rescuer"). Older than 3 hours (TAKEOVER_HOURS in tools/autopilot.py),
@@ -2793,11 +2830,7 @@ header.site { border-bottom: 0; }
         const theirs = stampOf(html);
         if (!theirs || !mine || theirs === mine || shown) return;
         shown = true;
-        const b = document.createElement('button');
-        b.type = 'button'; b.className = 'newbar';
-        b.innerHTML = '<i aria-hidden="true"></i>New update ' + esc(theirs) + ' · Tap';
-        b.addEventListener('click', () => { location.replace(location.pathname + '?u=' + Date.now()); });
-        document.body.appendChild(b);
+        if (window.PAL_newUpdate) window.PAL_newUpdate(theirs);
       }).catch(() => {});
     };
     setInterval(check, 120000);
