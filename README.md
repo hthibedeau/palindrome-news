@@ -138,6 +138,10 @@ Example: "Toronto man identified as suspect in Bridle Path home invasion" (one c
 - **Never leads with an old file photo**: a caption dated days before today ("June 16, 2026", "in 2023", "file photo") goes behind any photo from today and never joins the reel. `file_photo()`.
 - **Files one state's seat under its race**, never under "Control of the House" in Results: who called what. `proj_race()`.
 
+## Canada's own big story shares the top (Hannah, Thu Nov 12, 2026)
+
+"I think the NVIDIA story is a good for breaking, but also the Stellantis is a huge Canadian story and probably should be in the top as well." Nvidia's CEO stepping down led 10 front pages, so the big-news-day rule kept it alone at the top and moved the Stellantis plant sale (National Newswatch #1 and #2, four Canadian front pages, a live news conference) down to the Canada desk. Now, when a story is big only because the front pages lead with it, the Canadian story that Canada's own front pages lead with (at least three of them, and the most of any Canadian story, or as many as the big story) stays beside it as the second top story. An election night or the morning after still stands alone, and a Canadian exclusive on one front page or a Canada-U.S. story still moves as before. `shares_big_day()` in `tools/autopilot.py`; checks in `tools/test_story_match.py`.
+
 ## Page order (Hannah, Wed Oct 28, 2026)
 
 The page script (`PAL_orderTop` in `index.html`) keeps this order by itself, whatever is showing:

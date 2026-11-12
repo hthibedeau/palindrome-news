@@ -128,6 +128,28 @@ check(order == [stel["title"][:10], world["title"][:10], nv["title"][:10]], "a b
 ca_bk = dict(world, title="Canadian breaking story", canada="canadian", tag="Breaking")
 check(ap.top_rule(ca_bk, _now) < ap.top_rule(stel, _now) or ap.top_rule(ca_bk, _now) == 10, "Canadian breaking news still ranks above an exclusive")
 
+# 5. CANADA'S OWN BIG STORY SHARES THE TOP (Hannah, Thu Nov 12, 2026): Nvidia led 10 front pages, and the Stellantis
+# plant sale, leading 4 Canadian front pages, "should be in the top as well"
+nvda = {"key": "nv", "title": "Nvidia sell-off continues after CEO Jensen Huang steps down", "canada": "tie", "judgment": "national",
+        "independent": 13, "carriers": 20, "fronts": 10, "fronts_ca": 4, "weight": 50, "popular": 0, "url": "u1"}
+stla = {"key": "st", "title": "Lobby records show high-level meetings with government officials and Stellantis, Roshel ahead of sale announcement",
+        "canada": "canadian", "judgment": "national", "independent": 4, "carriers": 10, "fronts": 4, "fronts_ca": 4, "leads_ca": True,
+        "weight": 63, "popular": 0, "url": "u2"}
+check(ap.big_news_day([nvda]), "Nvidia, leading 10 front pages, is a big news day")
+check(ap.shares_big_day(stla, nvda), "Stellantis, leading Canada's front pages, stays at the top beside it")
+scoop = dict(stla, key="sc", fronts=1, fronts_ca=1, leads_ca=False, scoop=True)
+check(not ap.shares_big_day(scoop, nvda), "a Canadian exclusive on one front page still moves to the Canada desk (Nov 3)")
+check(not ap.shares_big_day(dict(stla, canus=True), nvda), "a Canada-U.S. story still moves to the Canadian angle box (Nov 3)")
+check(not ap.shares_big_day(stla, dict(nvda, event_day="U.S. midterm elections")), "an election night still stands alone (Nov 3)")
+check(not ap.shares_big_day(dict(stla, judgment="local"), nvda), "a local story never shares the top")
+_auto = {}
+ap._select(_auto, [nvda, stla], [nvda, stla], lambda x: 0)
+check(_auto["top_n"] == 2 and [x["key"] for x in _auto["stories"][:2]] == ["nv", "st"], "the top is Nvidia, then Stellantis")
+check(not _auto["moved"], "Stellantis is not moved down")
+_auto = {}
+ap._select(_auto, [nvda, scoop], [nvda, scoop], lambda x: 0)
+check(_auto["top_n"] == 1 and _auto["moved"] and _auto["moved"][0]["to"] == "canada", "a smaller Canadian story still moves to the Canada desk")
+
 
 print("\nall passed" if not fails else f"\n{fails} failed")
 sys.exit(1 if fails else 0)

@@ -2335,14 +2335,23 @@ def _select(auto, cands, ranked, tier):
     # auto["moved"] records each move; run() and tools/autoupdate.py place them.
     auto["moved"] = []
     if top2 and big_news_day(top2[:1]):
+        # CANADA'S OWN BIG STORY SHARES THE TOP (Hannah, Thu Nov 12, 2026: "I think the NVIDIA story is good for
+        # breaking, but also the Stellantis is a huge Canadian story and probably should be in the top as well").
+        # Nvidia led 10 front pages, so the Stellantis plant sale (leading National Newswatch and 4 Canadian front
+        # pages, live news conference) was moved to the Canada desk. See shares_big_day().
+        partner = next((s for s in top2[1:] + rest if shares_big_day(s, top2[0])), None)
+        if partner and partner in rest:
+            rest.remove(partner)
         for s in top2[1:]:
+            if s is partner:
+                continue
             to = "canangle" if s.get("canus") else "canada" if s.get("canada") == "canadian" else ""
             if to:
                 auto["moved"].append({"to": to, "key": s.get("key"), "title": s.get("title"), "url": s.get("url"), "outlet": s.get("outlet"),
                                       "t": s.get("t"), "iso": s.get("iso") or s.get("newest"), "summary": s.get("summary") or "",
                                       "img": ((s.get("photo") or {}).get("orig") or ""), "scoop": bool(s.get("scoop")), "into": top2[0].get("key")})
             rest.insert(0, s)
-        top2 = top2[:1]
+        top2 = top2[:1] + ([partner] if partner else [])
     moved_keys = {m["key"] for m in auto["moved"]}
     rest = [s for s in rest if s.get("key") not in moved_keys] + [s for s in rest if s.get("key") in moved_keys]
     ranked = top2 + rest
@@ -3014,6 +3023,27 @@ def big_news_day(top2):
             return leading
         return bool(t.get("event_day")) or leading
     return any(big(t) for t in top2)
+
+
+def shares_big_day(s, big):
+    """On a big news day, does this Canadian story stay at the top beside the big story instead of moving to the Canada
+    desk? (Hannah, Thu Nov 12, 2026: Nvidia's CEO stepping down led 10 front pages; the Stellantis plant sale, leading
+    Canada's own front pages, "should be in the top as well".) Yes when all of these hold:
+      - the big story is big because the front pages lead with it, not a scheduled event (an election night or the
+        morning after still stands alone, as Hannah set on Nov 3 and Nov 4);
+      - this story is Canadian (not a Canada-U.S. story, which goes to the Canadian angle box), national, one story,
+        not sport;
+      - it is the story Canada's front pages lead with: the most Canadian front pages of any Canadian story, at least
+        LEADS_CA_MIN of them (leads_ca), or as many Canadian front pages as the big story itself.
+    A Canadian exclusive on one newsroom's front page, or a smaller Canadian story, still moves to the Canada desk."""
+    if s is big or big.get("event_day") or s.get("event_day"):
+        return False
+    if s.get("canada") != "canadian" or s.get("canus") or s.get("judgment") != "national" or s.get("incoherent"):
+        return False
+    if SPORT.search(s.get("title") or ""):
+        return False
+    ca = s.get("fronts_ca") or 0
+    return ca >= LEADS_CA_MIN and (bool(s.get("leads_ca")) or ca >= (big.get("fronts_ca") or 0))
 
 
 def third_worthy(s, top2, tier):
