@@ -121,10 +121,12 @@ ap.exclusive_inside([stel, world, nv], _now)
 check(stel.get("scoop") and stel["scoop_outlet"] == "CTV News", "the newsroom that broke it (CTV, run on CP24) gets the Exclusive credit")
 check(stel["title"].startswith("Carney government actively involved"), "the exclusive becomes the story's headline")
 check(stel["reports"][0]["exclusive"] and "CBC News" in stel["exclusive"]["confirmed_by"], "its report goes first; CBC is listed as confirming it")
-check(ap.top_rule(stel, _now) == 4, "a Canadian exclusive ranks under rule 4: close to the top")
+check(ap.top_rule(stel, _now) == 1.8, "a Canadian exclusive ranks under rule 1.8: ahead of news from abroad, in the top two")
 check(not nv.get("scoop"), "a story from abroad is not made a Canadian exclusive")
 order = [x["title"][:10] for x in sorted([stel, world, nv], key=ap.rank_key)]
-check(order == [world["title"][:10], stel["title"][:10], nv["title"][:10]], "a bigger story stays above it; it goes above smaller ones")
+check(order == [stel["title"][:10], world["title"][:10], nv["title"][:10]], "a big Canadian exclusive goes above news from abroad (Hannah, Nov 11, 2026)")
+ca_bk = dict(world, title="Canadian breaking story", canada="canadian", tag="Breaking")
+check(ap.top_rule(ca_bk, _now) < ap.top_rule(stel, _now) or ap.top_rule(ca_bk, _now) == 10, "Canadian breaking news still ranks above an exclusive")
 
 
 print("\nall passed" if not fails else f"\n{fails} failed")

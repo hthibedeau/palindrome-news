@@ -64,9 +64,9 @@ TOP_RULES = [  # (number, name) shown in live/auto.json "considered", so it is a
     (0.5, "Leading other newsrooms' front pages (Canadian ones among them): the story everyone is leading with"),
     (1, "Canadian and breaking"),
     (1.5, "Canadian, leading the most Canadian front pages: the story Canada's newsrooms are leading with"),
+    (1.8, "Big Canadian exclusive: a major newsroom's interview or scoop, shown as Exclusive with the newsroom credited; ahead of any story from abroad"),
     (2, "Big international story, on every front page"),
     (3, "Breaking news from abroad that Canadian newsrooms are carrying"),
-    (4, "Big Canadian exclusive: a major newsroom's interview or scoop (shown as Exclusive, credited to that newsroom), close to the top if not the top"),
     (5, "Breaking U.S. election story (with its Canadian angle)"),
     (6, "Canadian, with a live event coming up"),
     (7, "Canadian, still developing"),
@@ -2442,7 +2442,7 @@ def scoops(items, cands, now, imgdir):
 #   3. Cite the source: the exclusive becomes the story's headline and link, its report goes first, and the story is
 #      labelled "Exclusive · <the newsroom that has it>". The newsroom is read from the report's own web address, so a
 #      CTV scoop run on CP24 is credited to CTV News. The "First reported by" credit stays with whoever was first.
-#   4. Close to the top, if not the top: the story ranks under rule 4 of TOP_RULES, so it leads unless there are bigger
+#   4. Close to the top, if not the top: the story ranks under rule 1.8 of TOP_RULES (was 4 until Nov 11, 2026), so it leads unless there are bigger
 #      stories (event day, the story every front page leads with, Canadian breaking news, a big international story,
 #      breaking news from abroad). A story already ranked higher keeps its rank and still gets the Exclusive credit.
 # When several reports qualify, the first one published (in the last SCOOP_FIRST_HOURS) wins: it is the newsroom that
@@ -2671,6 +2671,12 @@ def top_rule(s, now=None):
         return 1
     if canadian and s.get("leads_ca"):  # Hannah, Tue Nov 10, 2026: the Stellantis plant sale, on 4 Canadian front pages
         return 1.5
+    # A BIG CANADIAN EXCLUSIVE COMES BEFORE NEWS FROM ABROAD (Hannah, Wed Nov 11, 2026, on CTV News's Stellantis scoop,
+    # third under a Mississippi Senate race: "that exclusive needs to be more prominent. Give them the credit that is
+    # due"). A major Canadian newsroom's own scoop ranks right after Canadian breaking news and the story Canada's
+    # front pages lead with, ahead of every story from abroad (rules 2 and 3), so it sits in the top two.
+    if s.get("scoop") and age < SCOOP_HOURS:
+        return 1.8
     if (not canadian and (s.get("independent") or 0) >= BIG_WORLD_INDEPENDENT and (s.get("carriers") or 0) >= BIG_WORLD_CARRIERS
             and age < BIG_WORLD_FRESH_HOURS):
         return 2
@@ -2686,8 +2692,6 @@ def top_rule(s, now=None):
             age * 60 < BREAKING_ABROAD_MINUTES  # just reported
             or (broke < BIG_ABROAD_HOURS and s.get("judgment") == "national" and (s.get("independent") or 0) >= BIG_ABROAD_INDEPENDENT)):  # big: two hours
         return 3
-    if s.get("scoop") and age < SCOOP_HOURS:
-        return 4
     if s.get("us_election"):
         return 5
     if canadian and live == "soon":
