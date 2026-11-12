@@ -1438,6 +1438,20 @@ header.site { border-bottom: 0; }
 .livecov .bk-chan .chan-row > .chan-cell { scroll-snap-align: start; }
 .livecov .bk-chan .chan-row::-webkit-scrollbar { height: 6px; }
 .livecov .bk-chan .chan-row::-webkit-scrollbar-thumb { background: rgba(255,255,255,.55); border-radius: 3px; }
+/* LIVE NOW STANDS OUT FROM COMING UP (Hannah, Wed Nov 11, 2026: "make the live coverage scroll just stand out from the
+   coming up live scroll"): what is on air now gets a red pulsing dot, bigger tiles lit with a red edge and a red
+   scrollbar; what is coming up later sits quieter: smaller, see-through tiles with a dashed outline and its own divider */
+.livecov .lc-now-h { display: flex; align-items: center; gap: 9px; font-size: 15px !important; color: #fff; }
+.livecov .lc-now-h i { width: 10px; height: 10px; border-radius: 50%; background: #ff4d6d; box-shadow: 0 0 0 0 rgba(255,77,109,.7); flex: 0 0 auto; }
+@media (prefers-reduced-motion: no-preference) { .livecov .lc-now-h i { animation: pjPulse 1.6s infinite; } }
+.livecov .bk-chan .chan-row.lc-now { grid-auto-columns: min(290px, 78vw); scrollbar-color: #ff4d6d transparent; }
+.livecov .bk-chan .chan-row.lc-now::-webkit-scrollbar-thumb { background: #ff4d6d; }
+.livecov .lc-now > .chan-cell { background: rgba(255,77,109,.14); border-top: 3px solid #ff4d6d; box-shadow: 0 0 0 1px rgba(255,77,109,.35) inset, 0 6px 18px rgba(0,0,0,.25); }
+.livecov .lc-later-h { margin-top: 22px !important; padding-top: 16px; border-top: 1px solid rgba(255,255,255,.18); color: rgba(255,255,255,.72); }
+.livecov .bk-chan .chan-row.lc-later { grid-auto-columns: min(220px, 64vw); }
+.livecov .lc-later > .chan-cell { background: transparent; border: 1px dashed rgba(255,255,255,.35); }
+.livecov .lc-later .chan-pic { opacity: .85; }
+.livecov .lc-later .chan-story { font-size: 16px; }
 /* Scheduled live event for the top story, shown at the top of the slot (Hannah’s rule) */
 .bk-next { position: relative; z-index: 3; margin: 4px 0 16px; max-width: 760px; padding: 14px 16px; background: rgba(15, 11, 25, .32); border-left: 4px solid #FFFFFF; }
 .bk-next .nx-when { display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #FFFFFF; }
@@ -2982,8 +2996,8 @@ header.site { border-bottom: 0; }
       const laterTiles = later.map((c) => tile(c, esc(when(new Date(c.when)).toUpperCase()), 'c', (c.approx ? 'About ' + esc(when(new Date(c.when))).replace(/^(Tonight|Today)/, (m) => m.toLowerCase()) : esc(when(new Date(c.when)))) + (c.local ? ' (' + esc(c.local) + ')' : '') + (c.where ? ' · ' + esc(c.where) : ''), c.url.indexOf('youtube.com') > -1 ? 'Set a reminder on YouTube' : 'How to watch')).join('');
       const sec = document.getElementById('liveCoverage');
       if (!nowTiles && !laterTiles) { box.hidden = true; if (sec) sec.hidden = true; return; }
-      box.innerHTML = (nowTiles ? '<p class="chan-h">Live coverage now</p><div class="chan-row">' + nowTiles + '</div>' : '') +
-        (laterTiles ? '<p class="chan-h">Coming up live</p><div class="chan-row">' + laterTiles + '</div>' : '') +
+      box.innerHTML = (nowTiles ? '<p class="chan-h lc-now-h"><i aria-hidden="true"></i>Live coverage now</p><div class="chan-row lc-now">' + nowTiles + '</div>' : '') +
+        (laterTiles ? '<p class="chan-h lc-later-h">Coming up live</p><div class="chan-row lc-later">' + laterTiles + '</div>' : '') +
         (ALWAYS.length ? '<p class="chan-always">24-hour news channels: ' + ALWAYS.map(([n, u]) => '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(n) + ' &#8599;</a>').join(' · ') + '</p>' : '');
       box.hidden = false; if (sec) sec.hidden = false;
       box.querySelectorAll('.chan-pic img').forEach((im) => {
