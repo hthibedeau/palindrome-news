@@ -5,7 +5,9 @@
    its own address (e.g. #/canada), at the top of the screen. Front page, Back, or the logo returns to the front page
    where the reader left it. Nothing is removed: the front page is unchanged, the other sections are only set aside
    while a section page is open. */
-body.secpage main > .sp-off, body.secpage main .sp-off { display: none !important; }
+body.secpage .sp-off { display: none !important; }
+body.secpage .about-grid.sp-path { display: block !important; }
+body.secpage #about { margin-top: 0 !important; }
 body.secpage .fronts.sp-path, body.secpage #fronts.sp-path { display: block !important; }
 body.secpage .fronts.sp-path > .front, body.secpage #fronts.sp-path > .front { max-width: none; width: 100%; }
 body.secpage main { gap: 28px; }
@@ -42,10 +44,18 @@ body.secpage .sp-foot a { font-weight: 600; color: var(--accent, #6A3FC8); }
     ['editorials', 'editorials', 'Editorials'],
     ['think-tanks', 'thinktanks', 'Think tanks'],
     ['go-deeper', 'godeeper', 'Go deeper'],
+    // the links at the bottom of the page open as their own pages too (Hannah, Thu Nov 12, 2026: "Let's do it")
+    ['methodology', 'methodology', 'Methodology', 'about'],
+    ['sources', 'sources', 'Sources', 'about'],
+    ['corrections', 'corrections', 'Corrections & updates'],
+    ['contact', 'contact', 'Contact & takedowns', 'about'],
+    ['privacy', 'privacy', 'Privacy', 'about'],
+    ['sponsorship-policy', 'sponsorship-policy', 'Sponsorship policy', 'about'],
+    ['sponsor-services', 'sponsor-services', 'Sponsor services', 'about'],
   ];
   const bySlug = {}, byId = {};
-  ROUTES.forEach(([slug, id, name]) => { bySlug[slug] = { slug, id, name }; byId[id] = bySlug[slug]; });
-  const MENUS = 'header nav.sections a[href^="#"], #stick nav a[href^="#"], header .more-menu a[href^="#"]';
+  ROUTES.forEach(([slug, id, name, root]) => { bySlug[slug] = { slug, id, name, root }; byId[id] = bySlug[slug]; });
+  const MENUS = 'header nav.sections a[href^="#"], #stick nav a[href^="#"], header .more-menu a[href^="#"], footer nav a[href^="#"]';
   const $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const main = () => document.querySelector('main');
   const baseTitle = document.title;
@@ -53,8 +63,10 @@ body.secpage .sp-foot a { font-weight: 600; color: var(--accent, #6A3FC8); }
 
   const routeOf = (hash) => { const m = /^#\/([a-z0-9-]+)$/.exec(hash || ''); return m ? (bySlug[m[1]] || (document.getElementById(m[1]) ? { slug: m[1], id: m[1], name: '' } : null)) : null; };
 
+  // a section page is drawn inside main; an About page (Methodology, Privacy ...) inside the About block
+  const rootOf = (r) => (r && r.root === 'about' && document.getElementById('about')) || main();
   function bar() {
-    let b = document.getElementById('spBar'); const m = main(); if (!m) return null;
+    let b = document.getElementById('spBar'); const m = rootOf(current); if (!m) return null;
     if (!b) {
       b = document.createElement('div'); b.id = 'spBar'; b.className = 'sp-bar';
       b.innerHTML = '<a class="sp-back" href="#top"><span aria-hidden="true">&larr;</span> Front page</a>'
@@ -88,10 +100,14 @@ body.secpage .sp-foot a { font-weight: 600; color: var(--accent, #6A3FC8); }
   function clear() { $$('.sp-off, .sp-path, .sp-keep').forEach((e) => e.classList.remove('sp-off', 'sp-path', 'sp-keep')); }
 
   function apply() {
-    const m = main(); if (!m || !current) return;
+    const m = rootOf(current); if (!m || !current) return;
     const t = document.getElementById(current.id);
     bar();
     clear();
+    if (m !== main() && main()) main().classList.add('sp-off');
+    // an About card opens on its own page
+    if (t && t.classList.contains('ab-closed')) { const tog = t.querySelector('.ab-tog'); if (tog) tog.click(); }
+    if (t && t.classList.contains('cmb-folded')) { const more = t.querySelector('.cmb-cx-open'); if (more) more.click(); }
     const keep = t ? keepers(t) : [];
     const path = new Set([m]);
     keep.forEach((k) => { k.classList.add('sp-keep'); for (let x = k.parentElement; x && x !== m && m.contains(x); x = x.parentElement) path.add(x); });
@@ -106,6 +122,8 @@ body.secpage .sp-foot a { font-weight: 600; color: var(--accent, #6A3FC8); }
     const h = document.getElementById('spTitle');
     const name = current.name || (t && (t.querySelector('h2, h3') || {}).textContent) || 'Section';
     if (h && h.textContent !== name) h.textContent = name;
+    const kick = document.querySelector('#spBar .sp-kicker'), kt = 'Palindrome News · ' + (current.root === 'about' ? 'About' : 'Section');
+    if (kick && kick.textContent !== kt) kick.textContent = kt;
     const empty = document.querySelector('#spBar .sp-empty');
     if (empty) empty.hidden = !!(t && t.offsetHeight > 40);
   }
@@ -152,7 +170,7 @@ body.secpage .sp-foot a { font-weight: 600; color: var(--accent, #6A3FC8); }
   addEventListener('click', (e) => {
     const a = e.target.closest && e.target.closest('a[href^="#"]'); if (!a) return;
     const id = a.getAttribute('href').slice(1);
-    if (a.matches(MENUS) || a.closest('#spBar, #spFoot') || a.matches('a.mini')) {
+    if (a.matches(MENUS) || a.closest('#spBar, #spFoot') || a.matches('a.mini') || (byId[id] && byId[id].root === 'about')) {
       if (id === 'top' || !id) {
         // "Front page" goes back to where the reader was on the front page; "Top stories" and the logo go to the top
         e.preventDefault();
