@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-13T04:03:00.078386+00:00",
- "checkedLabel": "Thu 11:03 p.m.",
+ "checked": "2026-11-13T04:13:00.077270+00:00",
+ "checkedLabel": "Thu 11:13 p.m.",
  "stories": [
   {
    "key": "top",
@@ -50,6 +50,15 @@
  ],
  "wire": [
   [
+   "Thu 11:03 p.m.",
+   "Business",
+   "What we know after Jensen Huang resigns as Nvidia CEO",
+   "The Canadian Press (via Winnipeg Free Press)",
+   "https://www.winnipegfreepress.com/business/2026/11/12/what-we-know-after-jensen-huang-resigns-as-nvidia-ceo",
+   "2026-11-13T04:03:19+00:00",
+   8
+  ],
+  [
    "Thu 10:58 p.m.",
    "U.S.",
    "Van Hollen will challenge Schumer for Senate majority leader",
@@ -57,15 +66,6 @@
    "https://www.cbsnews.com/news/chris-van-hollen-challenge-chuck-schumer-senate-majority-leader-democrat/",
    "2026-11-13T03:58:38+00:00",
    10
-  ],
-  [
-   "Thu 10:57 p.m.",
-   "U.S.",
-   "Ousted Nvidia CEO Jensen Huang summoned to testify before Congress",
-   "BBC News",
-   "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&at_campaign=rss",
-   "2026-11-13T03:57:01+00:00",
-   4
   ],
   [
    "Thu 10:53 p.m.",
@@ -272,13 +272,13 @@
    "CBS News",
    "https://www.cbsnews.com/video/naacp-on-mississippi-electing-scott-colom-first-black-senator-since-1800s/",
    "2026-11-13T02:20:35+00:00",
-   3
+   2
   ]
  ],
  "blogs": [
   {
    "url": "https://www.thestar.com/news/gta/toronto-election-results-live/article_3ec1c84c-3d92-4440-b764-ac02c6602fb0.html",
-   "updated": "2026-11-13T02:08:05+00:00",
+   "updated": "2026-11-13T04:05:03+00:00",
    "ended": true
   },
   {
@@ -316,11 +316,13 @@
    "theme": "Canadian auto jobs"
   },
   {
-   "score": 16,
-   "title": "Ousted Nvidia CEO Jensen Huang summoned to testify before Congress",
-   "url": "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&at_campaign=rss",
-   "outlets": 14,
-   "why": [],
+   "score": 20,
+   "title": "Nvidia CEO's resignation after affair with suspected Chinese spy rattles markets, tech world",
+   "url": "https://www.cbc.ca/news/business/nvidia-jensen-huang-ceo-selloff-investments-retirement-9.7420093",
+   "outlets": 15,
+   "why": [
+    "CBC News front #1"
+   ],
    "theme": ""
   },
   {
@@ -633,11 +635,12 @@
      "alt": "A VIA Rail locomotive, a Microsoft logo and St. Michael's Hospital in Toronto, in a combination photo. AP Photo/Lindsey Wasson/THE CANADIAN PRESS/Christinne Mus",
      "outlet": "BNN Bloomberg",
      "url": "https://www.bnnbloomberg.ca/business/technology/2026/11/12/widespread-issues-reported-with-microsoft-products-downdetector/",
-     "since": "2026-11-13T03:39:34.669936+00:00"
+     "since": "2026-11-13T04:14:59.353362+00:00"
     },
     "photo_seen": [
      "https://www.bnnbloomberg.ca/resizer/v2/ODOGT6TW6RDKRM2DPD2K7HC4EI.jpg?smart=true&auth=cea447c584749462b7eeb938d982486cbd949161530ac343f973af974a2d4a3c&width=1200&height=630",
-     "https://www.ctvnews.ca/resizer/v2/G6KUBLTGUZESLASLVL4V3F6XBI.jpg?smart=true&auth=19d6445e8c8bae5f02f7360f155f4f6b30978a5da27557af73f537c6fd9b4320&width=1200&height=630"
+     "https://www.ctvnews.ca/resizer/v2/G6KUBLTGUZESLASLVL4V3F6XBI.jpg?smart=true&auth=19d6445e8c8bae5f02f7360f155f4f6b30978a5da27557af73f537c6fd9b4320&width=1200&height=630",
+     "https://www.cp24.com/resizer/v2/CIK5JI7L5ZEABGXTJVFI4ZAXPY.jpg?smart=true&auth=99ec67fc2e00a65a6d8009d0a04a6d654543d39b32f3373fab6b7b2e5b6217c6&width=1200&height=630"
     ],
     "photos": [
      {
@@ -790,14 +793,19 @@
     ],
     "sources": [
      {
-      "t": "Thu 6:51 p.m.",
+      "t": "Thu 5:15 p.m.",
       "primary": false,
-      "outlet": "CKOM / PAnow",
-      "title": "Thousands in Canada affected by global Microsoft outage",
-      "url": "https://www.ckom.com/2026/11/12/thousands-in-canada-affected-by-global-microsoft-outage/",
-      "desc": "OTTAWA — Thousands of Canadians have been affected by a worldwide outage that has disrupted Microsoft platforms including Outlook and Teams. The online tracker Downdetector suggests that there have been more than 20,000 reports in Canada of problems u...",
+      "outlet": "CBC News",
+      "title": "Microsoft outage continues as planned fixes are not working as expected, company says",
+      "url": "https://www.cbc.ca/news/world/microsoft-outage-9.7419814?cmp=rss",
+      "desc": "A widespread Microsoft outage that began Thursday afternoon continues to affect many of the tech giant's apps and tools, including email, Teams and and Copilot.",
       "wire": "The Canadian Press",
       "by": [
+       {
+        "outlet": "CBC News",
+        "src": "The Canadian Press",
+        "byline": "ith files from The Associated Press and The Canadian Press"
+       },
        {
         "outlet": "CKOM / PAnow",
         "src": "The Canadian Press",
@@ -816,10 +824,14 @@
        {
         "outlet": "CTV News",
         "src": "The Canadian Press",
-        "byline": "o\" \"Vanessa Wright\" \"Luca Caruso-Moro\" \"The Canadian Press\" \"Daniel Reech\" \"Kr"
+        "byline": "artin\" \"Rob Cooper\" \"Michelle Maluske\" \"The Canadian Press\" \"Anna McMillan\" \"L"
        }
       ],
       "copies": [
+       {
+        "outlet": "CKOM / PAnow",
+        "url": "https://www.ckom.com/2026/11/12/thousands-in-canada-affected-by-global-microsoft-outage/"
+       },
        {
         "outlet": "Narcity",
         "url": "https://www.narcity.com/thousands-in-canada-affected-by-microsoft-outage"
@@ -903,51 +915,6 @@
       "copies": []
      },
      {
-      "t": "Thu 2:21 p.m.",
-      "primary": false,
-      "outlet": "CityNews Winnipeg",
-      "title": "Widespread outage hits Outlook, other Microsoft apps",
-      "url": "https://winnipeg.citynews.ca/2026/11/12/microsoft-outlook-widespread-outage/",
-      "desc": "A widespread outage hit Microsoft platforms including Outlook on Thursday, with many users encountering trouble using their email accounts and other errors across the tech giant’s suite of apps. As of around 1:30 p.m. ET, more than 120,000 users on outage tracker Downdetector reported problems accessing Outlook — with many saying they couldn’t send and […]",
-      "wire": "The Associated Press",
-      "by": [
-       {
-        "outlet": "CityNews Winnipeg",
-        "src": "The Associated Press",
-        "byline": "ede01291c2e6f3f5fe805acc41a6fdf\"}] \"The Associated Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews Ottawa",
-        "src": "The Associated Press",
-        "byline": "39ddce6afb9271e1e48905658c4d839\"}] \"The Associated Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews Montreal",
-        "src": "The Associated Press",
-        "byline": "ede01291c2e6f3f5fe805acc41a6fdf\"}] \"The Associated Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CBC News",
-        "src": "The Associated Press",
-        "byline": "s\"  CBC News    ·   With files from The Associated Press"
-       }
-      ],
-      "copies": [
-       {
-        "outlet": "CityNews Ottawa",
-        "url": "https://ottawa.citynews.ca/2026/11/12/microsoft-outlook-widespread-outage/"
-       },
-       {
-        "outlet": "CityNews Montreal",
-        "url": "https://montreal.citynews.ca/2026/11/12/microsoft-outlook-widespread-outage/"
-       },
-       {
-        "outlet": "CBC News",
-        "url": "https://www.cbc.ca/news/world/microsoft-outage-9.7419814?cmp=rss"
-       }
-      ]
-     },
-     {
       "t": "Thu 4:03 p.m.",
       "primary": false,
       "outlet": "Al Jazeera",
@@ -980,6 +947,42 @@
        }
       ],
       "copies": []
+     },
+     {
+      "t": "Thu 2:21 p.m.",
+      "primary": false,
+      "outlet": "CityNews Winnipeg",
+      "title": "Widespread outage hits Outlook, other Microsoft apps",
+      "url": "https://winnipeg.citynews.ca/2026/11/12/microsoft-outlook-widespread-outage/",
+      "desc": "A widespread outage hit Microsoft platforms including Outlook on Thursday, with many users encountering trouble using their email accounts and other errors across the tech giant’s suite of apps. As of around 1:30 p.m. ET, more than 120,000 users on outage tracker Downdetector reported problems accessing Outlook — with many saying they couldn’t send and […]",
+      "wire": "The Associated Press",
+      "by": [
+       {
+        "outlet": "CityNews Winnipeg",
+        "src": "The Associated Press",
+        "byline": "ede01291c2e6f3f5fe805acc41a6fdf\"}] \"The Associated Press\" News Staff \n\t\t\tBy"
+       },
+       {
+        "outlet": "CityNews Ottawa",
+        "src": "The Associated Press",
+        "byline": "39ddce6afb9271e1e48905658c4d839\"}] \"The Associated Press\" News Staff \n\t\t\tBy"
+       },
+       {
+        "outlet": "CityNews Montreal",
+        "src": "The Associated Press",
+        "byline": "ede01291c2e6f3f5fe805acc41a6fdf\"}] \"The Associated Press\" News Staff \n\t\t\tBy"
+       }
+      ],
+      "copies": [
+       {
+        "outlet": "CityNews Ottawa",
+        "url": "https://ottawa.citynews.ca/2026/11/12/microsoft-outlook-widespread-outage/"
+       },
+       {
+        "outlet": "CityNews Montreal",
+        "url": "https://montreal.citynews.ca/2026/11/12/microsoft-outlook-widespread-outage/"
+       }
+      ]
      }
     ],
     "replaces_top": false,
@@ -1008,14 +1011,6 @@
     "weight": 57,
     "videos": [
      {
-      "net": "CTV News",
-      "url": "https://www.youtube.com/watch?v=ov9puy3Esjg",
-      "title": "Microsoft outage affecting thousands of users | CTV News Northern Ontario at 6 p.m. Nov. 12, 2026",
-      "img": "https://i.ytimg.com/vi/ov9puy3Esjg/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
       "net": "CBC News",
       "url": "https://www.youtube.com/watch?v=OUrTgZiKr-I",
       "title": "Microsoft says services slowly being restored after widespread outages | Hanomansing Live",
@@ -1038,6 +1033,14 @@
       "img": "https://i.ytimg.com/vi/iBbonEmdGxw/hqdefault.jpg",
       "rec": false,
       "up": ""
+     },
+     {
+      "net": "NBC News",
+      "url": "https://www.youtube.com/watch?v=wC0lI_jUM8E",
+      "title": "Widespread outage hits Microsoft platforms including Outlook, thousands report issues",
+      "img": "https://i.ytimg.com/vi/wC0lI_jUM8E/hqdefault.jpg",
+      "rec": false,
+      "up": ""
      }
     ]
    },
@@ -1045,8 +1048,8 @@
     "key": "auto-ab7424e3",
     "words": [
      "stellantis",
-     "agreement",
      "meeting",
+     "default",
      "roshel",
      "plant",
      "joly"
@@ -1076,12 +1079,13 @@
      "alt": "‘To be frank, I’m fed up’: Minister Joly slams Stellantis after meeting over plant sale",
      "outlet": "CTV News",
      "url": "https://www.ctvnews.ca/business/autos/article/ottawa-serves-stellantis-notice-of-default-on-funding-agreement-after-roshel-deal/",
-     "since": "2026-11-13T03:39:02.787968+00:00"
+     "since": "2026-11-13T04:14:54.037084+00:00"
     },
     "photo_seen": [
      "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/0ed435aa1df27365876ab0d1d1e3b447eb72161da1dd8bbd9c54f28adcc2d62b.jpg;w=1200;h=800;mode=crop",
      "https://www.ctvnews.ca/resizer/v2/YGE4MR4SKNHGBITI7GVN67C4PI.jpg?smart=true&auth=77ab5c8c1199b5c38d9c202e9afafe86257685aa59947f0eca9a239de45dcc8f&width=1200&height=630",
-     "https://www.cp24.com/resizer/v2/YGE4MR4SKNHGBITI7GVN67C4PI.jpg?smart=true&auth=77ab5c8c1199b5c38d9c202e9afafe86257685aa59947f0eca9a239de45dcc8f&width=1200&height=630"
+     "https://www.cp24.com/resizer/v2/YGE4MR4SKNHGBITI7GVN67C4PI.jpg?smart=true&auth=77ab5c8c1199b5c38d9c202e9afafe86257685aa59947f0eca9a239de45dcc8f&width=1200&height=630",
+     "https://www.bnnbloomberg.ca/resizer/v2/YGE4MR4SKNHGBITI7GVN67C4PI.jpg?smart=true&auth=77ab5c8c1199b5c38d9c202e9afafe86257685aa59947f0eca9a239de45dcc8f&width=1200&height=630"
     ],
     "photos": [
      {
@@ -1339,6 +1343,14 @@
       "up": ""
      },
      {
+      "net": "CityNews",
+      "url": "https://www.youtube.com/watch?v=HbokGSZ6Zq4",
+      "title": "Joly puts Stellantis on notice for breach of contract",
+      "img": "https://i.ytimg.com/vi/HbokGSZ6Zq4/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
       "net": "CTV News",
       "url": "https://www.youtube.com/watch?v=TRGdrG1bGYQ",
       "title": "Minister Joly slams Stellantis after meeting over plant sale | CTV National News for Nov.11, 2026",
@@ -1351,14 +1363,6 @@
       "url": "https://www.youtube.com/watch?v=GG2-AZt3IOM",
       "title": "Reporter Roundtable: Stellantis stakeholders gather to discuss plant sale | Power & Politics",
       "img": "https://i.ytimg.com/vi/GG2-AZt3IOM/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CBC News",
-      "url": "https://www.youtube.com/watch?v=UluY82wwpWA",
-      "title": "Stellantis should 'pay back every penny': Ontario NDP leader | Power & Politics",
-      "img": "https://i.ytimg.com/vi/UluY82wwpWA/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1424,14 +1428,14 @@
     "url": "https://www.bnnbloomberg.ca/business/company-news/2026/11/13/is-it-time-to-sell-nvidia-stock-what-investors-need-to-know/",
     "rank": 3,
     "live": "",
-    "weight": 42.5,
-    "score": 16,
+    "weight": 47.0,
+    "score": 20,
     "independent": 8,
     "most_read": 0,
     "canada": "tie",
     "theme": "",
     "top": false,
-    "fronts": 11,
+    "fronts": 10,
     "fronts_who": [
      "CBC News",
      "CTV News",
@@ -1442,13 +1446,12 @@
      "NBC News",
      "CBS News",
      "BBC News",
-     "The Guardian",
-     "NPR"
+     "The Guardian"
     ],
     "rule": "Leading other newsrooms' front pages (Canadian ones among them): the story everyone is leading with",
-    "carriers": 9,
+    "carriers": 10,
     "judgment": "national",
-    "why_judged": "National: leading 11 front pages (CBC News, CTV News, Global News, Toronto Star, The Globe and Mail, BNN Bloomberg)."
+    "why_judged": "National: leading 10 front pages (CBC News, CTV News, Global News, Toronto Star, The Globe and Mail, BNN Bloomberg)."
    },
    {
     "title": "Maryland's Van Hollen to challenge Schumer for U.S. Senate leadership post",
@@ -1594,15 +1597,16 @@
    {
     "key": "auto-d0dbab80",
     "words": [
+     "congress",
      "lutnick",
-     "nvidia",
      "jensen",
+     "nvidia",
      "huang",
      "ceo"
     ],
-    "score": 16,
+    "score": 20,
     "outlets": 8,
-    "carriers": 9,
+    "carriers": 10,
     "tag": "Breaking",
     "title": "Should you sell your Nvidia shares? Here’s what experts think",
     "url": "https://www.bnnbloomberg.ca/business/company-news/2026/11/13/is-it-time-to-sell-nvidia-stock-what-investors-need-to-know/",
@@ -1617,7 +1621,7 @@
      "title": "Lawmakers react as Huang leaves Nvidia",
      "iso": "2026-11-12T22:27:20+00:00"
     },
-    "newest": "2026-11-13T03:57:01+00:00",
+    "newest": "2026-11-13T04:06:00+00:00",
     "photo": {
      "src": "live/img/auto-d0dbab80-8acc139d43.jpg",
      "orig": "https://www.bnnbloomberg.ca/resizer/v2/KEEPSJILWRFGZI3W43RULMONTI.jpg?smart=true&auth=49f7abcbce81acf0670d77c8510b6ae8c017a69a0b6b1cefae687293189b9833&width=1200&height=630",
@@ -1625,7 +1629,7 @@
      "alt": "A screen on the floor of the New York Stock Exchange displays news about Nvidia's stock price in New York, Monday, Nov. 9, 2026. (AP Photo/Yuki Iwamura)",
      "outlet": "BNN Bloomberg",
      "url": "https://www.bnnbloomberg.ca/business/company-news/2026/11/13/is-it-time-to-sell-nvidia-stock-what-investors-need-to-know/",
-     "since": "2026-11-13T04:05:00.155494+00:00"
+     "since": "2026-11-13T04:14:55.071831+00:00"
     },
     "photo_seen": [
      "https://www.bnnbloomberg.ca/resizer/v2/KEEPSJILWRFGZI3W43RULMONTI.jpg?smart=true&auth=49f7abcbce81acf0670d77c8510b6ae8c017a69a0b6b1cefae687293189b9833&width=1200&height=630"
@@ -1638,6 +1642,14 @@
       "alt": "A screen on the floor of the New York Stock Exchange displays news about Nvidia's stock price in New York, Monday, Nov. 9, 2026. (AP Photo/Yuki Iwamura)",
       "outlet": "BNN Bloomberg",
       "url": "https://www.bnnbloomberg.ca/business/company-news/2026/11/13/is-it-time-to-sell-nvidia-stock-what-investors-need-to-know/"
+     },
+     {
+      "src": "live/img/auto-d0dbab80-d6a239f116.jpg",
+      "orig": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/13/573845.JPG?v=3.1",
+      "caption": "From: U.S. Congress steps up scrutiny of Trump and Nvidia after Huang exit. — via The Japan Times",
+      "alt": "U.S. Congress steps up scrutiny of Trump and Nvidia after Huang exit",
+      "outlet": "The Japan Times",
+      "url": "https://www.japantimes.co.jp/news/2026/11/13/world/politics/congress-trump-nvidia-scrutiny/"
      },
      {
       "src": "live/img/auto-d0dbab80-7fa30b98f5.jpg",
@@ -1654,33 +1666,41 @@
       "alt": "GOP lawmakers press Huang and Lutnick to testify over Nvidia",
       "outlet": "CBS News",
       "url": "https://www.cbsnews.com/news/jensen-huang-nvidia-congress-testify/"
-     },
-     {
-      "src": "live/img/auto-d0dbab80-90a5bcb671.jpg",
-      "orig": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-11/261112-howard-lutnick-washington-ww-1636-e8ad4e.jpg",
-      "caption": "From: Howard Lutnick agrees to testify as bipartisan pressure grows over Nvidia scandal. — via NBC News",
-      "alt": "Howard Lutnick agrees to testify as bipartisan pressure grows over Nvidia scandal",
-      "outlet": "NBC News",
-      "url": "https://www.nbcnews.com/politics/congress/commerce-secretary-howard-lutnick-testify-pressure-nvidia-scandal-rcna609093"
      }
     ],
     "independent": 8,
     "reports": [
      {
-      "t": "Thu 10:57 p.m.",
-      "iso": "2026-11-13T03:57:01+00:00",
-      "outlet": "BBC News",
-      "title": "Ousted Nvidia CEO Jensen Huang summoned to testify before Congress",
-      "url": "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&at_campaign=rss",
-      "desc": "US lawmakers want to question him over whether one of his alleged relationships was with a Chinese spy."
+      "t": "Thu 11:06 p.m.",
+      "iso": "2026-11-13T04:06:00+00:00",
+      "outlet": "The Japan Times",
+      "title": "U.S. Congress steps up scrutiny of Trump and Nvidia after Huang exit",
+      "url": "https://www.japantimes.co.jp/news/2026/11/13/world/politics/congress-trump-nvidia-scrutiny/",
+      "desc": "U.S. President Donald Trump was informed of the suspicions surrounding Nvidia CEO Jensen Huang last year, according to The New York Times."
      },
      {
-      "t": "Thu 10:36 p.m.",
-      "iso": "2026-11-13T03:36:05+00:00",
+      "t": "Thu 11:03 p.m.",
+      "iso": "2026-11-13T04:03:19+00:00",
+      "outlet": "The Canadian Press (via Winnipeg Free Press)",
+      "title": "What we know after Jensen Huang resigns as Nvidia CEO",
+      "url": "https://www.winnipegfreepress.com/business/2026/11/12/what-we-know-after-jensen-huang-resigns-as-nvidia-ceo",
+      "desc": "Nvidia CEO Jensen Huang has resigned from his top post at the chipmaker he co-founded, after reports of the tech titan's extramarital affairs came into the spotlight this week."
+     },
+     {
+      "t": "Thu 10:59 p.m.",
+      "iso": "2026-11-13T03:59:56+00:00",
       "outlet": "The Guardian",
       "title": "Nvidia’s Jensen Huang expected to testify before Congress amid calls for crackdown on China chip exports – live",
       "url": "https://www.theguardian.com/technology/live/2026/nov/13/nvidia-jensen-huang-to-testify-before-congress-live-latest-updates",
       "desc": "Huang’s resignation has sent shockwaves through the AI industry, after revelations of extramarital affairs, including one involving a suspected Chinese spy"
+     },
+     {
+      "t": "Thu 10:57 p.m.",
+      "iso": "2026-11-13T03:57:01+00:00",
+      "outlet": "BBC News",
+      "title": "Ex-Nvidia CEO Jensen Huang summoned to testify before Congress about affair with alleged Chinese spy",
+      "url": "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&at_campaign=rss",
+      "desc": "Huang abruptly quit on Thursday as head of one of the world's most valuable companies after revelations of alleged extramarital affairs."
      },
      {
       "t": "Thu 9:59 p.m.",
@@ -1697,14 +1717,6 @@
       "title": "Howard Lutnick agrees to testify as bipartisan pressure grows over Nvidia scandal",
       "url": "https://www.nbcnews.com/politics/congress/commerce-secretary-howard-lutnick-testify-pressure-nvidia-scandal-rcna609093",
       "desc": "Former Nvidia CEO Jensen Huang, who was also requested to testify, had previously praised the commerce secretary for his support and involvement in the industry."
-     },
-     {
-      "t": "Thu 9:02 p.m.",
-      "iso": "2026-11-13T02:02:00+00:00",
-      "outlet": "The Japan Times",
-      "title": "White House weighs Lutnick’s ouster amid Nvidia export concerns, sources say",
-      "url": "https://www.japantimes.co.jp/business/2026/11/13/economy/lutnick-future-white-house-nvidia/",
-      "desc": "A growing number of lawmakers criticized Lutnick for the administration’s refusal to add dozens of Chinese companies to a key U.S. trade blacklist."
      },
      {
       "t": "Thu 9:01 p.m.",
@@ -1741,24 +1753,51 @@
     ],
     "sources": [
      {
-      "t": "Thu 10:57 p.m.",
+      "t": "Thu 11:06 p.m.",
       "primary": false,
-      "outlet": "BBC News",
-      "title": "Ousted Nvidia CEO Jensen Huang summoned to testify before Congress",
-      "url": "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&at_campaign=rss",
-      "desc": "US lawmakers want to question him over whether one of his alleged relationships was with a Chinese spy.",
-      "wire": "",
+      "outlet": "The Japan Times",
+      "title": "U.S. Congress steps up scrutiny of Trump and Nvidia after Huang exit",
+      "url": "https://www.japantimes.co.jp/news/2026/11/13/world/politics/congress-trump-nvidia-scrutiny/",
+      "desc": "U.S. President Donald Trump was informed of the suspicions surrounding Nvidia CEO Jensen Huang last year, according to The New York Times.",
+      "wire": "AFP",
       "by": [
        {
-        "outlet": "BBC News",
-        "src": "BBC News",
-        "byline": "[{\"@type\":\"Person\",\"name\":\"Kali Hays\"},{\"@type\":\"Person\",\"name\":\"Lily Jamali\"}] https://www.facebook.com/bbcnews"
+        "outlet": "The Japan Times",
+        "src": "AFP",
+        "byline": "By  Robin LEGRAND AFP-JIJI \n           By"
        }
       ],
       "copies": []
      },
      {
-      "t": "Thu 10:36 p.m.",
+      "t": "Thu 5:37 p.m.",
+      "primary": false,
+      "outlet": "PBS NewsHour",
+      "title": "What we know after Jensen Huang's resignation as Nvidia's CEO",
+      "url": "https://www.pbs.org/newshour/nation/what-we-know-after-jensen-huangs-resignation-as-nvidias-ceo",
+      "desc": "Nvidia announced Huang's resignation on Thursday, effective immediately. The California-based company said that Colette Kress — who has been Nvidia's chief financial officer and executive vice president since 2013 — will step into the role of interim CEO.",
+      "wire": "The Associated Press",
+      "by": [
+       {
+        "outlet": "PBS NewsHour",
+        "src": "The Associated Press",
+        "byline": "Wyatte Grantham-Philips, Associated Press"
+       },
+       {
+        "outlet": "The Canadian Press (via Winnipeg Free Press)",
+        "src": "The Associated Press",
+        "byline": "\"name\": \"Wyatte Grantham-philips, The Associated Press\"\n\t\t\t} [{\"@type\":\"Pe"
+       }
+      ],
+      "copies": [
+       {
+        "outlet": "The Canadian Press (via Winnipeg Free Press)",
+        "url": "https://www.winnipegfreepress.com/business/2026/11/12/what-we-know-after-jensen-huang-resigns-as-nvidia-ceo"
+       }
+      ]
+     },
+     {
+      "t": "Thu 10:59 p.m.",
       "primary": false,
       "outlet": "The Guardian",
       "title": "Nvidia’s Jensen Huang expected to testify before Congress amid calls for crackdown on China chip exports – live",
@@ -1770,6 +1809,23 @@
         "outlet": "The Guardian",
         "src": "The Guardian",
         "byline": "[{\"@type\":\"Person\",\"name\":\"Jonathan Yerushalmy\",},{\"@type\":\"Person\",\"name\":\"Aisha Down\",},{\"@type\":\"Person\",\"name\":\"Dara"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Thu 10:57 p.m.",
+      "primary": false,
+      "outlet": "BBC News",
+      "title": "Ex-Nvidia CEO Jensen Huang summoned to testify before Congress about affair with alleged Chinese spy",
+      "url": "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&at_campaign=rss",
+      "desc": "Huang abruptly quit on Thursday as head of one of the world's most valuable companies after revelations of alleged extramarital affairs.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "BBC News",
+        "src": "BBC News",
+        "byline": "[{\"@type\":\"Person\",\"name\":\"Kali Hays\"},{\"@type\":\"Person\",\"name\":\"Lily Jamali\"}] https://www.facebook.com/bbcnews"
        }
       ],
       "copies": []
@@ -1804,23 +1860,6 @@
         "outlet": "NBC News",
         "src": "NBC News",
         "byline": "own staff: reporter"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Thu 9:02 p.m.",
-      "primary": false,
-      "outlet": "The Japan Times",
-      "title": "White House weighs Lutnick’s ouster amid Nvidia export concerns, sources say",
-      "url": "https://www.japantimes.co.jp/business/2026/11/13/economy/lutnick-future-white-house-nvidia/",
-      "desc": "A growing number of lawmakers criticized Lutnick for the administration’s refusal to add dozens of Chinese companies to a key U.S. trade blacklist.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "The Japan Times",
-        "src": "The Japan Times",
-        "byline": "{ \"@type\": \"Organization\", \"name\": \"The Japan Times\" } { \"@type\": \"Organization\", \"name\": \"The Japan Times\", } No Author"
        }
       ],
       "copies": []
@@ -1868,23 +1907,6 @@
        }
       ],
       "copies": []
-     },
-     {
-      "t": "Thu 5:37 p.m.",
-      "primary": false,
-      "outlet": "PBS NewsHour",
-      "title": "What we know after Jensen Huang's resignation as Nvidia's CEO",
-      "url": "https://www.pbs.org/newshour/nation/what-we-know-after-jensen-huangs-resignation-as-nvidias-ceo",
-      "desc": "Nvidia announced Huang's resignation on Thursday, effective immediately. The California-based company said that Colette Kress — who has been Nvidia's chief financial officer and executive vice president since 2013 — will step into the role of interim CEO.",
-      "wire": "The Associated Press",
-      "by": [
-       {
-        "outlet": "PBS NewsHour",
-        "src": "The Associated Press",
-        "byline": "Wyatte Grantham-Philips, Associated Press"
-       }
-      ],
-      "copies": []
      }
     ],
     "replaces_top": false,
@@ -1899,7 +1921,7 @@
     "incoherent": false,
     "popular": 0,
     "us_election": false,
-    "fronts": 11,
+    "fronts": 10,
     "fronts_ca": 6,
     "fronts_who": [
      "CBC News",
@@ -1911,12 +1933,11 @@
      "NBC News",
      "CBS News",
      "BBC News",
-     "The Guardian",
-     "NPR"
+     "The Guardian"
     ],
     "judgment": "national",
-    "judgment_why": "National: leading 11 front pages (CBC News, CTV News, Global News, Toronto Star, The Globe and Mail, BNN Bloomberg).",
-    "weight": 42.5,
+    "judgment_why": "National: leading 10 front pages (CBC News, CTV News, Global News, Toronto Star, The Globe and Mail, BNN Bloomberg).",
+    "weight": 47.0,
     "videos": [
      {
       "net": "CNBC",
@@ -1937,7 +1958,7 @@
      {
       "net": "Sky News",
       "url": "https://www.youtube.com/watch?v=a5qgreBsdkE",
-      "title": "Jensen Huang | Claim of a second affair sends Nvidia shares tumbling",
+      "title": "Nvidia shares fall overnight on second affair claim | Is Jensen Huang finished?",
       "img": "https://i.ytimg.com/vi/a5qgreBsdkE/hqdefault.jpg",
       "rec": false,
       "up": ""
@@ -1949,8 +1970,8 @@
     "words": [
      "democratic",
      "schumer",
-     "hollen",
      "senate",
+     "hollen",
      "chuck",
      "van"
     ],
@@ -1979,7 +2000,7 @@
      "alt": "U.S. Sen. Chris Van Hollen says he'll will run for Senate Majority Leader in the next Congress, setting up a challenge to Democratic Leader Chuck Schumer.",
      "outlet": "CBC News",
      "url": "https://www.cbc.ca/news/world/van-hollen-senate-leadership-challenge-schumer-9.7420238",
-     "since": "2026-11-13T04:05:01.603395+00:00"
+     "since": "2026-11-13T04:14:55.745574+00:00"
     },
     "photo_seen": [
      "https://i.cbc.ca/ais/ec460f5d-b31d-4039-aeac-e2ef6787273a,1794536069703/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C351%2C6000%2C3375%29%3BResize%3D620"
@@ -2290,8 +2311,8 @@
     "key": "auto-e44afb0e",
     "words": [
      "mississippi",
-     "colom",
-     "scott"
+     "scott",
+     "colom"
     ],
     "score": 9,
     "outlets": 5,
@@ -2318,7 +2339,7 @@
      "alt": "Trump praises Democrat Scott Colom for showing up to Mississippi rally and courting MAGA supporters",
      "outlet": "CityNews",
      "url": "https://toronto.citynews.ca/2026/11/12/trump-praises-democrat-scott-colom-for-showing-up-to-mississippi-rally-and-courting-maga-supporters/",
-     "since": "2026-11-13T04:05:08.581573+00:00"
+     "since": "2026-11-13T04:15:01.943099+00:00"
     },
     "photo_seen": [
      "https://toronto.citynews.ca/wp-content/blogs.dir/sites/10/2026/11/08fe78ad94163cf8f702deaea6a56553e8948383e106fb6c2f0978e5542704bd.jpg"
@@ -2508,18 +2529,18 @@
       "up": ""
      },
      {
-      "net": "PBS NewsHour",
-      "url": "https://www.youtube.com/watch?v=GClXzgNczJg",
-      "title": "How Scott Colom won his longshot bid to flip Mississippi's Senate seat",
-      "img": "https://i.ytimg.com/vi/GClXzgNczJg/hqdefault.jpg",
+      "net": "NBC News",
+      "url": "https://www.youtube.com/watch?v=HNZVA2Dlz84",
+      "title": "How Scott Colom flipped deep-red Mississippi blue",
+      "img": "https://i.ytimg.com/vi/HNZVA2Dlz84/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
       "net": "PBS NewsHour",
-      "url": "https://www.youtube.com/watch?v=iEum8pYlTEA",
-      "title": "News Wrap: Democrat Scott Colom defeats Mississippi Sen. Cindy Hyde-Smith",
-      "img": "https://i.ytimg.com/vi/iEum8pYlTEA/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=GClXzgNczJg",
+      "title": "How Scott Colom won his longshot bid to flip Mississippi's Senate seat",
+      "img": "https://i.ytimg.com/vi/GClXzgNczJg/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -2860,7 +2881,7 @@
    "id": "uLOSnKlHsgw",
    "r": "us",
    "o": "CNN",
-   "t": "White House alarmed by Lunick not blacklisting Nvidia-linked firm",
+   "t": "Despite security warnings, Lutnick greenlit foreign chip sales",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=uLOSnKlHsgw",
@@ -3042,7 +3063,7 @@
    "id": "XuVI45pd_ts",
    "r": "world",
    "o": "Sky News",
-   "t": "Harry Redknapp hits out at Man United's handling of Michael Carrick",
+   "t": "Harry Redknapp on Kane's England record and Man United's managerial turmoil",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=XuVI45pd_ts",
@@ -3098,7 +3119,7 @@
    "id": "RiMjEiqpuB0",
    "r": "world",
    "o": "BBC News",
-   "t": "How far will China go to steal US AI tech? | The Global Story",
+   "t": "Why the Nvidia scandal is bigger than you think | The Global Story",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=RiMjEiqpuB0",
@@ -3188,11 +3209,11 @@
   },
   {
    "o": "The Hill",
-   "h": "Alito warns Congress can ‘turn off the lights’ at Supreme Court",
-   "u": "https://thehill.com/regulation/court-battles/6217960-alito-warns-congress-defunding/",
+   "h": "Trump told Huang to fight for his job after affair scandals: Report",
+   "u": "https://thehill.com/homenews/administration/6217994-trump-nvidia-ceo-huang-resignation/",
    "img": "",
-   "w": "Thu 10:39 p.m.",
-   "iso": "2026-11-13T03:39:47+00:00"
+   "w": "Thu 11:05 p.m.",
+   "iso": "2026-11-13T04:05:58+00:00"
   },
   {
    "o": "Politico",
@@ -3511,7 +3532,7 @@
   "lines": [
    "Good evening. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
    "Some Montreal hospitals say the global Microsoft outage is affecting some of their services and causing delays, The Canadian Press reports.",
-   "Ousted Nvidia CEO Jensen Huang summoned to testify before Congress, BBC News reports.",
+   "Ex-Nvidia CEO Jensen Huang summoned to testify before Congress about affair with alleged Chinese spy, BBC News reports.",
    "Chris Van Hollen to challenge Chuck Schumer for Senate majority leader, The Guardian reports.",
    "Two construction workers and two children were killed when a residential building fell into an adjacent construction site on Wednesday, BBC News reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
@@ -3897,24 +3918,24 @@
    "city": "Washington",
    "tz": "America/New_York",
    "world": false,
-   "w": "Investigation",
-   "label": "Ousted Nvidia CEO Jensen Huang summoned to testify before…",
-   "u": "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&at_campaign=rss",
-   "title": "Ousted Nvidia CEO Jensen Huang summoned to testify before Congress",
-   "outlet": "BBC News",
-   "t": "Thu 10:57 p.m.",
+   "w": "Nvidia",
+   "label": "U.S. Congress steps up scrutiny of Trump and Nvidia after…",
+   "u": "https://www.japantimes.co.jp/news/2026/11/13/world/politics/congress-trump-nvidia-scrutiny/",
+   "title": "U.S. Congress steps up scrutiny of Trump and Nvidia after Huang exit",
+   "outlet": "The Japan Times",
+   "t": "Thu 11:06 p.m.",
    "hot": true
   },
   {
    "city": "Beijing",
    "tz": "Asia/Shanghai",
    "world": true,
-   "w": "Tariffs",
+   "w": "Congress",
    "label": "Nvidia’s Jensen Huang expected to testify before Congress…",
    "u": "https://www.theguardian.com/technology/live/2026/nov/13/nvidia-jensen-huang-to-testify-before-congress-live-latest-updates",
    "title": "Nvidia’s Jensen Huang expected to testify before Congress amid calls for crackdown on China chip exports – live",
    "outlet": "The Guardian",
-   "t": "Thu 10:36 p.m.",
+   "t": "Thu 10:59 p.m.",
    "hot": true
   },
   {
@@ -3935,14 +3956,14 @@
   {
    "desk": "us",
    "pic": "podium",
-   "t": "Thu 10:57 p.m.",
-   "iso": "2026-11-13T03:57:01+00:00",
-   "title": "Ousted Nvidia CEO Jensen Huang summoned to testify before Congress",
-   "summary": "US lawmakers want to question him over whether one of his alleged relationships was with a Chinese spy.",
-   "outlet": "BBC News, Fox News, The Guardian, CBS News, NBC News, The Japan Times, CTV News + BNN Bloomberg, The Hill",
-   "n": 8,
-   "url": "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&at_campaign=rss",
-   "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/f66c/live/4f0358a0-def1-11f1-bb80-c5cef03337ce.jpg"
+   "t": "Thu 11:06 p.m.",
+   "iso": "2026-11-13T04:06:00+00:00",
+   "title": "U.S. Congress steps up scrutiny of Trump and Nvidia after Huang exit",
+   "summary": "U.S. President Donald Trump was informed of the suspicions surrounding Nvidia CEO Jensen Huang last year, according to The New York Times.",
+   "outlet": "The Japan Times (AFP), The Canadian Press (via Winnipeg Free Press), The Guardian, BBC News, Fox News, CBS News, NBC News, The Japan Times, CTV News + BNN Bloomberg",
+   "n": 9,
+   "url": "https://www.japantimes.co.jp/news/2026/11/13/world/politics/congress-trump-nvidia-scrutiny/",
+   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/13/573845.JPG?v=3.1"
   },
   {
    "desk": "world",
@@ -4187,18 +4208,6 @@
   {
    "desk": "business",
    "pic": "chart",
-   "t": "Thu 8:38 p.m.",
-   "iso": "2026-11-13T01:38:32.283000+00:00",
-   "title": "Nvidia CEO's resignation after affair with suspected Chinese spy rattles markets, tech world",
-   "summary": "Nvidia shares plunged early Thursday after CEO Jensen Huang resigned, before climbing back up to finish the day down 4.3 per cent. It's bad news for industry-watchers, but touches regular investors too because of the chipmaker's weight in major stock indexes.",
-   "outlet": "CBC News",
-   "n": 1,
-   "url": "https://www.cbc.ca/news/business/nvidia-jensen-huang-ceo-selloff-investments-retirement-9.7420093",
-   "img": "https://i.cbc.ca/ais/cf9ef721-0ccb-46f9-8668-97939b93c544,1794527654704/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C421%2C8055%2C4530%29%3BResize%3D620"
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
    "t": "Thu 7:34 p.m.",
    "iso": "2026-11-13T00:34:55.163000+00:00",
    "title": "Indigenous women leaders say budget doesn't address their realities",
@@ -4231,6 +4240,18 @@
    "n": 1,
    "url": "https://www.cbc.ca/news/canada/prince-edward-island/pei-green-party-non-confidence-motion-pc-government-9.7419921?cmp=rss",
    "img": "https://i.cbc.ca/ais/c7f03b06-feb6-4f5c-8678-04e97f15b6f0,1794522664031/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1920%2C1080%29%3BResize%3D620"
+  },
+  {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Thu 6:11 p.m.",
+   "iso": "2026-11-12T23:11:15+00:00",
+   "title": "Here’s what Yellowknife is proposing in its draft 2027 budget",
+   "summary": "City of Yellowknife staff released the municipality's draft 2027 budget, the first for the new mayor and council. It proposes a 5.25-percent tax increase.",
+   "outlet": "Cabin Radio",
+   "n": 1,
+   "url": "https://cabinradio.ca/320274/news/yellowknife/heres-what-yellowknife-is-proposing-in-its-draft-2027-budget/",
+   "img": "https://cabinradio.ca/wp-content/uploads/2026/11/Sarah-Pruys_Frame-Lake-Drone_November-4-2026_6.jpg"
   },
   {
    "desk": "politics",
@@ -4629,7 +4650,7 @@
    "ca": false,
    "h": [
     "Microsoft says attempts to fix global outage not going 'as expected'",
-    "Ousted Nvidia CEO Jensen Huang summoned to testify before Congress",
+    "Ex-Nvidia CEO Jensen Huang summoned to testify before Congress about affair with alleged Chinese spy",
     "Zelensky welcomes US bringing Europe into Russia-Ukraine peace talks",
     "Military cemetery decorum: The tradition behind Hegseth's Veterans Day reprimand",
     "How could the Nvidia CEO’s affair threaten US national security?",
@@ -4671,17 +4692,17 @@
     "NPR - Breaking News, Analysis, Music, Arts & Podcasts",
     "'Punch in the gut': Homes sales fall to their lowest in 16 years",
     "Witnesses describe the D.C. shooting that left 1 dead, 4 injured",
-    "Nvidia CEO Jensen Huang steps down amid alleged spy scandal",
-    "Cindy Holscher wins in Kansas, holding governor's office for Democrats",
-    "Chris Van Hollen says he will challenge Chuck Schumer for Senate majority leader"
+    "Why the AI World Will Never Be the Same",
+    "Chris Van Hollen says he will challenge Chuck Schumer for Senate majority leader",
+    "El-Sayed's message to Trump: 'There's a lot we could work on'"
    ],
    "u": [
     "",
     "https://www.npr.org/2026/11/12/nx-s1-6038940/punch-in-the-gut-homes-sales-fall-to-their-lowest-in-16-years",
     "https://www.npr.org/2026/11/12/nx-s1-6038860/dc-logan-circle-shooting",
-    "https://www.npr.org/2026/11/12/nx-s1-6037833/jensen-huang-nvidia-stepped-down",
-    "https://www.npr.org/2026/11/12/g-s1-151187/holscher-kansas-masterson-governor-midterms",
-    "https://www.npr.org/2026/11/12/nx-s1-6039357/chris-van-hollen-chuck-schumer-senate-majority-leader"
+    "https://www.npr.org/2026/11/12/nx-s1-6039359/why-the-ai-world-will-never-be-the-same",
+    "https://www.npr.org/2026/11/12/nx-s1-6039357/chris-van-hollen-chuck-schumer-senate-majority-leader",
+    "https://www.npr.org/2026/11/12/nx-s1-6034592/abdul-el-sayed-democratic-voters-mandate-trump-meeting"
    ]
   }
  ],
@@ -4694,7 +4715,7 @@
     "url": "https://www.youtube.com/watch?v=Lhk3Gu0YeRs",
     "img": "https://i.ytimg.com/vi/Lhk3Gu0YeRs/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "355",
+    "watching": "357",
     "rolling": true
    }
   ],
@@ -4744,6 +4765,15 @@
  },
  "pm": [],
  "blogs_auto": [
+  {
+   "net": "The Guardian",
+   "story": "Nvidia’s Jensen Huang expected to testify before Congress amid calls f",
+   "title": "Nvidia’s Jensen Huang expected to testify before Congress amid calls for crackdown on China chip exports – live",
+   "url": "https://www.theguardian.com/technology/live/2026/nov/13/nvidia-jensen-huang-to-testify-before-congress-live-latest-updates",
+   "updated": "2026-11-13T04:15:58+00:00",
+   "ended": false,
+   "img": "https://i.guim.co.uk/img/media/f74f292bf21b64ac06a24785167573c263947fdc/183_0_3766_3013/master/3766.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=80ccbf913c76a4437e4ad7f2629918eb"
+  },
   {
    "net": "Politico",
    "story": "Tim Kaine to chair Senate Budget Committee next year",
@@ -4823,8 +4853,8 @@
   },
   "auto-d0dbab80": {
    "ties": [
-    "huang",
-    "congress"
+    "nvidia",
+    "huang"
    ],
    "stories": [
     {
@@ -4842,6 +4872,14 @@
      "title": "House Republican says Huang has agreed to appear before lawmakers",
      "url": "https://thehill.com/homenews/house/6216614-jensen-huang-congress-testimony/",
      "tie": "Huang"
+    },
+    {
+     "t": "Wed 8:45 a.m.",
+     "iso": "2026-11-11T13:45:04+00:00",
+     "outlet": "BNN Bloomberg",
+     "title": "Military-linked Chinese university bought Nvidia chips despite U.S. blacklist: Reuters exclusive",
+     "url": "https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/11/11/military-linked-chinese-university-bought-nvidia-chips-despite-us-blacklist-reuters-exclusive/",
+     "tie": "Nvidia"
     }
    ],
    "views": [
@@ -4861,6 +4899,7 @@
   },
   "auto-5cc170ea": {
    "ties": [
+    "hollen",
     "senate",
     "chuck"
    ],
@@ -4946,7 +4985,7 @@
    "views": []
   },
   "auto-d0dbab80": {
-   "story": "Ousted Nvidia CEO Jensen Huang summoned to testify before Congress",
+   "story": "U.S. Congress steps up scrutiny of Trump and Nvidia after Huang exit",
    "us": true,
    "specific": 2,
    "stories": [
@@ -5019,6 +5058,42 @@
   }
  },
  "canangle_live": {
+  "https://www.theguardian.com/technology/live/2026/nov/13/nvidia-jensen-huang-to-testify-before-congress-live-latest-updates": {
+   "story": "Nvidia’s Jensen Huang expected to testify before Congress amid calls for crackdown on China chip exports – live",
+   "us": true,
+   "specific": 3,
+   "stories": [
+    {
+     "t": "Thu 2:52 p.m.",
+     "iso": "2026-11-12T19:52:09+00:00",
+     "outlet": "The Logic",
+     "title": "Nvidia CEO Jensen Huang’s resignation sends shockwaves through Canadian business and tech",
+     "url": "https://thelogic.co/news/jensen-huang-nvidia-resignation-impact-canada-cohere/",
+     "ca": false,
+     "tie": ""
+    },
+    {
+     "t": "Wed 3:23 p.m.",
+     "iso": "2026-11-11T20:23:33+00:00",
+     "outlet": "BNN Bloomberg",
+     "title": "PM Carney takes off Wednesday for summits in Ireland, Philippines, Cambodia and China",
+     "url": "https://www.bnnbloomberg.ca/business/politics/2026/11/11/pm-carney-takes-off-wednesday-for-summits-in-ireland-philippines-cambodia-and-china/",
+     "ca": true,
+     "tie": ""
+    },
+    {
+     "t": "Tue 1:59 p.m.",
+     "iso": "2026-11-10T18:59:45+00:00",
+     "outlet": "CBC News",
+     "title": "Carney selects new ambassador to China, plans to announce 'in very short order'",
+     "url": "https://www.cbc.ca/news/politics/carney-china-ambassador-picked-9.7416678?cmp=rss",
+     "ca": true,
+     "tie": ""
+    }
+   ],
+   "official": [],
+   "views": []
+  },
   "https://www.politico.com/live-updates/2026/11/12/congress/chris-van-hollen-senate-majority-leader-01164433": {
    "story": "Chris Van Hollen says he will run for Senate majority leader",
    "us": true,
@@ -5127,27 +5202,18 @@
    "official": [],
    "views": []
   },
-  "https://thehill.com/regulation/court-battles/6217960-alito-warns-congress-defunding/": {
-   "story": "Alito warns Congress can ‘turn off the lights’ at Supreme Court",
+  "https://thehill.com/homenews/administration/6217994-trump-nvidia-ceo-huang-resignation/": {
+   "story": "Trump told Huang to fight for his job after affair scandals: Report",
    "us": true,
-   "specific": 2,
+   "specific": 1,
    "stories": [
     {
-     "t": "Thu 7:40 p.m.",
-     "iso": "2026-11-13T00:40:09+00:00",
-     "outlet": "CTV News",
-     "title": "Supreme Court of Canada dismisses bid to appeal B.C. foreign buyer tax case",
-     "url": "https://www.ctvnews.ca/vancouver/article/supreme-court-of-canada-dismisses-bid-to-appeal-bc-foreign-buyer-tax-case/",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Tue 9:15 p.m.",
-     "iso": "2026-11-11T02:15:09+00:00",
-     "outlet": "CBC News",
-     "title": "Supreme Court of Canada upholds woman's conviction for dangerous driving death in Yellowknife",
-     "url": "https://www.cbc.ca/news/canada/north/supreme-court-of-canada-upholds-woman-s-conviction-for-dangerous-driving-death-in-yellowknife-9.7417572?cmp=rss",
-     "ca": true,
+     "t": "Thu 2:52 p.m.",
+     "iso": "2026-11-12T19:52:09+00:00",
+     "outlet": "The Logic",
+     "title": "Nvidia CEO Jensen Huang’s resignation sends shockwaves through Canadian business and tech",
+     "url": "https://thelogic.co/news/jensen-huang-nvidia-resignation-impact-canada-cohere/",
+     "ca": false,
      "tie": ""
     }
    ],
@@ -5161,7 +5227,7 @@
    "auto": true,
    "desk": "United States",
    "status": "Developing",
-   "at": "2026-11-13T03:57:01+00:00",
+   "at": "2026-11-13T04:06:00+00:00",
    "exact": true,
    "img": "live/img/auto-d0dbab80-8acc139d43.jpg",
    "credit": "via BNN Bloomberg",
@@ -5171,43 +5237,43 @@
    "newl": "Now carried by 8 independent newsrooms.",
    "rows": [
     [
-     "BBC News",
-     "US lawmakers want to question him over whether one of his alleged relationships was with a Chinese spy.",
+     "The Japan Times",
+     "U.S. President Donald Trump was informed of the suspicions surrounding Nvidia CEO Jensen Huang last year, according to The New York Times.",
      [
       1
+     ]
+    ],
+    [
+     "The Canadian Press (via Winnipeg Free Press)",
+     "Nvidia CEO Jensen Huang has resigned from his top post at the chipmaker he co-founded, after reports of the tech titan's extramarital affairs came into the spotlight this week.",
+     [
+      2
      ]
     ],
     [
      "The Guardian",
      "Huang’s resignation has sent shockwaves through the AI industry, after revelations of extramarital affairs, including one involving a suspected Chinese spy",
      [
-      2
+      3
+     ]
+    ],
+    [
+     "BBC News",
+     "Huang abruptly quit on Thursday as head of one of the world's most valuable companies after revelations of alleged extramarital affairs.",
+     [
+      4
      ]
     ],
     [
      "CBS News",
      "Republicans on Capitol Hill are negotiating for now-resigned Nvidia CEO Jensen Huang​ to appear before Congress.",
      [
-      3
+      5
      ]
     ],
     [
      "NBC News",
      "Former Nvidia CEO Jensen Huang, who was also requested to testify, had previously praised the commerce secretary for his support and involvement in the industry.",
-     [
-      4
-     ]
-    ],
-    [
-     "The Japan Times",
-     "A growing number of lawmakers criticized Lutnick for the administration’s refusal to add dozens of Chinese companies to a key U.S. trade blacklist.",
-     [
-      5
-     ]
-    ],
-    [
-     "CTV News",
-     "Should you sell your Nvidia shares? It’s a question on the minds of investors around the world as allegations of adultery swirling around Nvidia co-founder Jensen Huang this week sent the company’s stock into a tailspin.",
      [
       6
      ]
@@ -5215,14 +5281,24 @@
    ],
    "src": [
     [
-     "BBC News",
-     "Ousted Nvidia CEO Jensen Huang summoned to testify before Congress",
-     "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&at_campaign=rss"
+     "The Japan Times",
+     "U.S. Congress steps up scrutiny of Trump and Nvidia after Huang exit",
+     "https://www.japantimes.co.jp/news/2026/11/13/world/politics/congress-trump-nvidia-scrutiny/"
+    ],
+    [
+     "The Canadian Press (via Winnipeg Free Press)",
+     "What we know after Jensen Huang resigns as Nvidia CEO",
+     "https://www.winnipegfreepress.com/business/2026/11/12/what-we-know-after-jensen-huang-resigns-as-nvidia-ceo"
     ],
     [
      "The Guardian",
      "Nvidia’s Jensen Huang expected to testify before Congress amid calls for crackdown on China chip exports – live",
      "https://www.theguardian.com/technology/live/2026/nov/13/nvidia-jensen-huang-to-testify-before-congress-live-latest-updates"
+    ],
+    [
+     "BBC News",
+     "Ex-Nvidia CEO Jensen Huang summoned to testify before Congress about affair with alleged Chinese spy",
+     "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&at_campaign=rss"
     ],
     [
      "CBS News",
@@ -5233,11 +5309,6 @@
      "NBC News",
      "Howard Lutnick agrees to testify as bipartisan pressure grows over Nvidia scandal",
      "https://www.nbcnews.com/politics/congress/commerce-secretary-howard-lutnick-testify-pressure-nvidia-scandal-rcna609093"
-    ],
-    [
-     "The Japan Times",
-     "White House weighs Lutnick’s ouster amid Nvidia export concerns, sources say",
-     "https://www.japantimes.co.jp/business/2026/11/13/economy/lutnick-future-white-house-nvidia/"
     ],
     [
      "CTV News",
@@ -5260,7 +5331,7 @@
      "https://www.pbs.org/newshour/nation/what-we-know-after-jensen-huangs-resignation-as-nvidias-ceo"
     ]
    ],
-   "lead": 7
+   "lead": 8
   },
   {
    "id": "bd-auto-5cc170ea",
