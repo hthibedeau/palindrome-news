@@ -1,34 +1,16 @@
 {
- "checked": "2026-11-13T15:12:07.822994+00:00",
- "labels": 230,
- "problems": [
-  {
-   "label": "NBC News",
-   "opens": "https://www.today.com/video/nvidia-ceo-jensen-huang-s-resignation-rattles-global-markets-273440325600",
-   "section": "breakdown",
-   "link": false,
-   "width": 1280
-  }
- ],
+ "checked": "2026-11-13T16:14:24.673165+00:00",
+ "labels": 228,
+ "problems": [],
  "guard": {
   "fixed": [
-   {
-    "label": "ABC News",
-    "was": "(card link) abcnews.com",
-    "now": "https://abcnews.com/US/outlook-down-microsoft-outage-reported-mail/story?id=138088203"
-   },
    {
     "label": "NBC News",
     "was": "(card link) nbcnews.com",
     "now": "https://www.nbcnews.com/politics/2026-election/kansas-governor-cindy-holscher-democrat-election-win-masterson-rcna603370"
    }
   ],
-  "disabled": [
-   {
-    "label": "NBC News",
-    "href": "https://www.today.com/video/nvidia-ceo-jensen-huang-s-resignation-rattles-global-markets-273440325600"
-   }
-  ],
+  "disabled": [],
   "lifted": []
  }
 }
