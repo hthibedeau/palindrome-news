@@ -1,26 +1,48 @@
 {
- "checked": "2026-11-13T12:15:55.612729+00:00",
- "labels": 227,
- "problems": [],
+ "checked": "2026-11-13T13:35:46.456077+00:00",
+ "labels": 226,
+ "problems": [
+  {
+   "label": "NBC News",
+   "opens": "https://www.today.com/video/nvidia-ceo-jensen-huang-s-resignation-rattles-global-markets-273440325600",
+   "section": "breakdown",
+   "link": false,
+   "width": 1280
+  }
+ ],
  "guard": {
   "fixed": [
    {
-    "label": "BNN Bloomberg ↗",
-    "was": "(card link) theguardian.com",
-    "now": "https://www.bnnbloomberg.ca/business/politics/2026/11/12/pm-carney-touches-down-in-dublin-set-to-address-european-leaders/"
+    "label": "CP24 ↗",
+    "was": "(card link) bnnbloomberg.ca",
+    "now": "https://www.cp24.com/local/toronto/2026/11/12/code-grey-declared-at-toronto-hospital-network-amid-microsoft-outage/"
+   },
+   {
+    "label": "Toronto Star ↗",
+    "was": "(card link) bnnbloomberg.ca",
+    "now": "https://www.thestar.com/news/canada/thousands-in-canada-affected-by-global-microsoft-outage/article_7021c568-a214-5a51-b76c-70a476112763.html"
+   },
+   {
+    "label": "ABC News",
+    "was": "(card link) abcnews.com",
+    "now": "https://abcnews.com/US/outlook-down-microsoft-outage-reported-mail/story?id=138088203"
    },
    {
     "label": "NBC News",
     "was": "(card link) nbcnews.com",
-    "now": "https://www.nbcnews.com/politics/congress/commerce-secretary-howard-lutnick-testify-pressure-nvidia-scandal-rcna609093"
-   },
-   {
-    "label": "Politico",
-    "was": "(card link) politico.com",
-    "now": "https://www.politico.com/news/2026/11/13/poll-democrats-united-for-now-2028-01163438"
+    "now": "https://www.nbcnews.com/politics/2026-election/kansas-governor-cindy-holscher-democrat-election-win-masterson-rcna603370"
    }
   ],
-  "disabled": [],
+  "disabled": [
+   {
+    "label": "NBC News",
+    "href": "https://www.today.com/video/global-microsoft-outage-enters-its-2nd-day-how-long-will-it-last-273437765987"
+   },
+   {
+    "label": "NBC News",
+    "href": "https://www.today.com/video/nvidia-ceo-jensen-huang-s-resignation-rattles-global-markets-273440325600"
+   }
+  ],
   "lifted": []
  }
 }
