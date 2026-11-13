@@ -100,7 +100,12 @@ DISRUPTION = re.compile(
     r"\bnot working\b|\b(?:system|systems|network|server|servers|global|IT|tech|technical) (?:crash|failure|glitch|meltdown|problems?|issues?)\b|"
     r"\bglitch(?:es)?\b|\bcyber ?-?attacks?\b|\bransomware\b|\bdata breach\b|\bhacked\b|\bhack\b|"
     r"\b(?:services?|access|email|systems?) (?:restored|being restored|coming back|back online)\b|\brestor\w+ (?:services?|access)\b|"
-    r"\bCode Grey\b|\bblackouts?\b", re.I)
+    r"\bCode Grey\b|\bblackouts?\b|"
+    # Hannah, Fri Nov 13, 2026: "The website is missing the biggest news story, the FAA issuing a nationwide ground stop
+    # for all flights." Air travel stops are disruptions too: a ground stop, flights grounded or halted, airspace closed.
+    r"\bground ?-?stops?\b|\bground(?:s|ed|ing)\b|\b(?:flights?|departures?|air traffic) (?:halted|suspended|stopped|cancell?ed|paused|grounded)\b|"
+    r"\b(?:halts?|halted|halting|suspends?|suspended|pauses?|paused|stops?|stopped) (?:all )?(?:flights?|departures?|air traffic)\b|"
+    r"\bairspace (?:closed|closure|shut)\b|\bclos(?:es|ed|ing) (?:its )?airspace\b", re.I)
 NOT_DISRUPTION = re.compile(r"\bshares?\b|\bstocks?\b|\bearnings\b|\bprofits?\b|\bsteps? down\b|\bstepping down\b|\blayoffs?\b|"
                             r"\bbuyouts?\b|\bjob cuts\b|\bdeal\b|\bacquisition\b", re.I)
 # Each company or service with the product names its users say (the first name is the story's name).
@@ -123,6 +128,14 @@ DISRUPTION_BRANDS = [
     ("Interac", r"\bInterac\b"),
     ("Visa and Mastercard", r"\bVisa\b(?! (?:application|holders?|rules|program|applicants?))|\bMastercard\b"),
     ("Canada's banks", r"\bRBC\b|\bRoyal Bank\b|\bTD\b(?: Bank)?|\bScotiabank\b|\bBMO\b|\bCIBC\b|\bDesjardins\b|\bNational Bank\b"),
+    # Hannah, Fri Nov 13, 2026: the FAA's nationwide ground stop was told as "Nationwide ground stop ordered at
+    # airports: FAA", "Ground stop ordered for all U.S. airports ...", "FAA issues national ground stop ..." - three
+    # headlines that share too few words to group, so each stood alone with one newsroom and never reached the top.
+    # U.S. air travel (the FAA, air traffic control, U.S. airports and flights) is now one service, like Microsoft.
+    ("FAA ground stop", r"\bFAA\b|\bFederal Aviation Administration\b|\bair traffic control(?:lers?)?\b|\bATC\b|"
+                        r"\b(?:U\.S\.|US|American|nationwide|national|all) (?:airports?|flights?|air traffic|airspace)\b|"
+                        r"\bflights? (?:across|in|to|from) the (?:U\.S\.|United States|US)\b|\bnationwide ground stop\b|\bground stop\b"),
+    ("Nav Canada", r"\bNav ?Canada\b|\bNAV CANADA\b|\bCanadian airspace\b"),
     ("Air Canada", r"\bAir Canada\b"),
     ("WestJet", r"\bWestJet\b"),
     ("Via Rail", r"\bVia Rail\b|\bVIA Rail\b"),
@@ -133,6 +146,7 @@ DISRUPTION_BRANDS = [
     ("Spotify", r"\bSpotify\b"), ("PlayStation", r"\bPlayStation\b|\bPSN\b"), ("Shopify", r"\bShopify\b"), ("PayPal", r"\bPayPal\b"),
 ]
 DISRUPTION_BRANDS = [(n, re.compile(p)) for n, p in DISRUPTION_BRANDS]
+NAMED_DISRUPTIONS = {"FAA ground stop"}  # names that already say what happened (no " outage" added)
 
 
 def disruption_themes(rows):
@@ -152,7 +166,7 @@ def disruption_themes(rows):
         if len(outlets - {""}) < DISRUPTION_OUTLETS:
             continue
         rx = next(r for n, r in DISRUPTION_BRANDS if n == name)
-        label = name + " outage"
+        label = name if name in NAMED_DISRUPTIONS else name + " outage"
         out.append((label, label, DISRUPTION, rx))
     return out
 

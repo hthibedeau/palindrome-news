@@ -1905,6 +1905,22 @@ CAN_OUTLET = re.compile(r"^(CBC|CTV|Global News|The Canadian Press|Toronto Star|
 FOREIGN_SRC = re.compile(r"/(world|international|us-news|us|europe|asia|africa|middle-east|americas|global-news-world)/|bbc\.|aljazeera|euronews|apnews\.com/article|reuters\.com/world", re.I)
 FOREIGN_SHARE = 0.4  # a story is "from another country" when at least this share of its reports run on world desks or foreign newsrooms
 ANGLE_MAX = 5
+# Air travel stops (Hannah, Fri Nov 13, 2026, the FAA's nationwide ground stop): see _angle().
+AIR_STOP = re.compile(r"\bground ?-?stops?\b|\b(?:flights?|planes?|departures?|air traffic) (?:\w+ )?(?:halted|suspended|stopped|grounded)\b|"
+                      r"\bgrounds? all flights\b|\bairspace (?:closed|closure|shut)\b|\bclos(?:es|ed|ing) (?:its )?airspace\b", re.I)
+CAN_AIR = re.compile(r"\b(Air Canada|WestJet|Porter|Flair|Air Transat|Sunwing|Jazz|Nav ?Canada|NAV CANADA|Pearson|YYZ|YVR|YUL|YYC|YEG|YOW|"
+                     r"Billy Bishop|Trudeau airport|Montr[ée]al-Trudeau|Vancouver (?:International )?airport|Calgary (?:International )?airport|"
+                     r"Ottawa airport|Halifax (?:Stanfield )?airport|Edmonton (?:International )?airport|Winnipeg (?:Richardson )?airport|"
+                     r"Canadian (?:airports?|airlines?|travell?ers|passengers|flights)|Canadians? (?:travell?ing|flying|stranded)|"
+                     r"Transport Canada|Canada's airports|airports? in Canada|flights? (?:to|from|in) Canada|cross-border flights?)\b", re.I)
+AIR_WORDS = re.compile(r"\b(ground ?-?stops?|grounded|grounds|delays?|delayed|cancell?ed|cancell?ations?|FAA|stranded|halt\w*|disrupt\w*|outages?|air traffic)\b", re.I)
+AIR_OFFICIAL = [
+    ("FAA", "National Airspace System status: live U.S. ground stops and delays", "https://nasstatus.faa.gov/"),
+    ("Air Canada", "Check your Air Canada flight status", "https://www.aircanada.com/ca/en/aco/home/fly/flight-information/flights-status.html"),
+    ("WestJet", "WestJet travel alerts and flight status", "https://www.westjet.com/en-ca/flights/status"),
+    ("Toronto Pearson", "Pearson departures and arrivals", "https://www.torontopearson.com/en/departures"),
+    ("Nav Canada", "Nav Canada news and notices", "https://www.navcanada.ca/en/news.aspx"),
+]
 # everyday words that never tie a story to another on their own
 ANGLE_COMMON = set("""street road avenue city town wall journal post times news press herald star sun mail globe report reports
 world national park lake river hill bay north south east west new old first last fire police court house home school
@@ -2059,6 +2075,22 @@ def _angle(name, words, mine, recent, eds, papers, otr, pool, anchor_words=None)
                 if p_.get("cat") in ("pm", "mp") and about(p_["hed"] + " " + p_.get("summary", ""))][:2]
     views = [{"outlet": e[0], "kind": e[1], "title": e[2], "url": e[3]} for e in (eds or []) if about(e[2]) and CAN_TIE.search(e[2])][:2]
     views += [{"outlet": p_["inst"], "kind": "Think tank", "title": p_["t"], "url": p_["u"]} for p_ in (papers or []) if about(p_["t"]) and CAN_TIE.search(p_["t"])][:2]
+    # A STOP TO AIR TRAVEL (Hannah, Fri Nov 13, 2026: the FAA's nationwide ground stop "needs the Canadian angle").
+    # When the story is flights grounded or halted, the Canadian angle is what it means for Canadians flying: Canadian
+    # newsrooms' reports on Canadian airlines, airports and travellers, newest first, plus the official places to check
+    # a flight (the FAA's own status page, Nav Canada, the big Canadian airlines and airports), so it is never empty.
+    air_text = name + " " + " ".join(x[2] for x in mine[:8])
+    if AIR_STOP.search(air_text):
+        now_ = datetime.now(timezone.utc)
+        for dt, outlet, title, link, k in recent:
+            if len(picked) >= ANGLE_MAX:
+                break
+            if (now_ - dt).total_seconds() > 12 * 3600:
+                continue
+            if CAN_AIR.search(title) and AIR_WORDS.search(title) and not SPORT.search(title + " " + link) and not au.OPINION.search(title + " " + link):
+                add(dt.isoformat(), w.eastern(dt), au.clean_outlet(outlet), title, link, "Flying from Canada")
+        if not any(o["url"] in {u for _, _, u in AIR_OFFICIAL} for o in official):
+            official = (official + [{"outlet": o, "title": t, "url": u, "t": ""} for o, t, u in AIR_OFFICIAL])[:6]
     if not (picked or official or views):
         return None
     return {"story": name or (words[0] if words else ""), "us": is_us, "specific": specific, "stories": picked, "official": official, "views": views}
