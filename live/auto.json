@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-13T07:39:26.643476+00:00",
- "checkedLabel": "Fri 2:39 a.m.",
+ "checked": "2026-11-13T07:49:27.052571+00:00",
+ "checkedLabel": "Fri 2:49 a.m.",
  "stories": [
   {
    "key": "top",
@@ -38,19 +38,34 @@
      "url": "https://lethbridgeherald.com/news/national-news/2026/11/12/in-the-news-today-carney-in-dublin-stellantis-talks-b-c-flooding-maid-widow-plea/",
      "iso": "2026-11-12T09:23:00+00:00",
      "t": "Thu 4:23 a.m."
+    },
+    {
+     "outlet": "Toronto Star",
+     "url": "https://www.thestar.com/politics/his-wife-died-by-suicide-he-wants-the-government-to-reconsider-its-maid-bill/article_f60c8547-ba85-5cc9-994c-b2e3a8194941.html",
+     "iso": "2026-11-12T09:00:00+00:00",
+     "t": "Thu 4:00 a.m."
     }
    ]
   }
  ],
  "wire": [
   [
-   "Fri 2:11 a.m.",
+   "Fri 2:39 a.m.",
    "U.S.",
    "Trump says \"we don't need a deal with Iran\"",
    "CBS News",
    "https://www.cbsnews.com/live-updates/iran-war-us-nuclear-strait-of-hormuz/",
-   "2026-11-13T07:11:12+00:00",
+   "2026-11-13T07:39:27+00:00",
    1
+  ],
+  [
+   "Fri 2:37 a.m.",
+   "World",
+   "Nauru's president has no political opponents after all lawmakers joined the government side",
+   "Toronto Star",
+   "https://www.thestar.com/news/world/australia/nauru-s-president-has-no-political-opponents-after-all-lawmakers-joined-the-government-side/article_acb5e87f-3fd3-5f3e-b6ae-866239d89c4a.html",
+   "2026-11-13T07:37:16+00:00",
+   2
   ],
   [
    "Fri 2:08 a.m.",
@@ -172,7 +187,7 @@
   [
    "Fri 12:40 a.m.",
    "World",
-   "Asian shares are mixed as investors assess impact of Nvidia's fallout on global AI development",
+   "Asian shares decline as investors assess impact of Nvidia's fallout on global AI development",
    "Toronto Star",
    "https://www.thestar.com/news/world/asian-shares-are-mixed-as-investors-assess-impact-of-nvidia-s-fallout-on-global-ai-development/article_b6f03bd1-a6d8-5bda-be33-c12a4b743d65.html",
    "2026-11-13T05:40:58+00:00",
@@ -194,7 +209,7 @@
    "Toronto Star",
    "https://www.thestar.com/news/world/europe/europe-pushes-for-seat-at-ukraine-peace-talks-but-lacks-unified-voice/article_9667f1f7-60ef-5928-b483-57fac9851e9f.html",
    "2026-11-13T05:24:28+00:00",
-   1
+   2
   ],
   [
    "Fri 12:23 a.m.",
@@ -258,15 +273,6 @@
    "https://www.aljazeera.com/video/newsfeed/2026/11/13/aje-onl-nf_pope-leo-meets-clergy-abuse-survivors-in-peru-121126?traffic_source=rss",
    "2026-11-13T05:05:50+00:00",
    1
-  ],
-  [
-   "Fri 12:05 a.m.",
-   "World",
-   "An iconic puzzle comes home as production of the Rubik's Cube returns to Hungary",
-   "Toronto Star",
-   "https://www.thestar.com/news/world/europe/an-iconic-puzzle-comes-home-as-production-of-the-rubik-s-cube-returns-to-hungary/article_d980611b-5a80-5183-ad74-6cbfbffbf77b.html",
-   "2026-11-13T05:05:22+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -298,20 +304,10 @@
  ],
  "leads": [
   {
-   "score": 20,
-   "title": "Nvidia CEO's resignation after affair with suspected Chinese spy rattles markets, tech world",
-   "url": "https://www.cbc.ca/news/business/nvidia-jensen-huang-ceo-selloff-investments-retirement-9.7420093",
-   "outlets": 19,
-   "why": [
-    "CBC News front #1"
-   ],
-   "theme": ""
-  },
-  {
-   "score": 20,
+   "score": 21,
    "title": "Carney aware of 'some aspects' of Stellantis auto plant sale, but says company still broke deal",
    "url": "https://www.cbc.ca/news/politics/stellantis-carney-deal-plant-9.7418797",
-   "outlets": 4,
+   "outlets": 5,
    "why": [
     "National Newswatch #1",
     "CBC News front #2",
@@ -321,20 +317,20 @@
    "theme": "Canadian auto jobs"
   },
   {
-   "score": 18,
-   "title": "Microsoft outage continues as planned fixes are not working as expected, company says",
-   "url": "https://www.cbc.ca/news/world/microsoft-outage-9.7419814",
-   "outlets": 18,
+   "score": 20,
+   "title": "Nvidia CEO's resignation after affair with suspected Chinese spy rattles markets, tech world",
+   "url": "https://www.cbc.ca/news/business/nvidia-jensen-huang-ceo-selloff-investments-retirement-9.7420093",
+   "outlets": 21,
    "why": [
-    "CBC News front #3"
+    "CBC News front #1"
    ],
-   "theme": "Microsoft outage"
+   "theme": ""
   },
   {
-   "score": 18,
+   "score": 19,
    "title": "Never mind the midterms: Olszewski touts federal budget at Chamber breakfast",
    "url": "https://edmontonjournal.com/news/local-news/olszewski-federal-budget-edmonton",
-   "outlets": 10,
+   "outlets": 11,
    "why": [
     "National Newswatch #10",
     "National Newswatch #16",
@@ -344,12 +340,14 @@
    "theme": "Federal budget"
   },
   {
-   "score": 17,
-   "title": "Carney aware of 'some aspects' of Stellantis auto plant sale, but says company still broke deal",
-   "url": "https://www.cbc.ca/news/politics/stellantis-carney-deal-plant-9.7418797",
-   "outlets": 20,
-   "why": [],
-   "theme": ""
+   "score": 18,
+   "title": "Microsoft outage continues as planned fixes are not working as expected, company says",
+   "url": "https://www.cbc.ca/news/world/microsoft-outage-9.7419814",
+   "outlets": 19,
+   "why": [
+    "CBC News front #3"
+   ],
+   "theme": "Microsoft outage"
   },
   {
    "score": 15,
@@ -385,6 +383,14 @@
    "score": 9,
    "title": "Alito warns Congress can ‘turn off the lights’ at Supreme Court",
    "url": "https://thehill.com/regulation/court-battles/6217960-alito-warns-congress-defunding/",
+   "outlets": 9,
+   "why": [],
+   "theme": ""
+  },
+  {
+   "score": 9,
+   "title": "NAACP official on Mississippi electing Scott Colom as its first Black senator since the 1800s",
+   "url": "https://www.cbsnews.com/video/naacp-on-mississippi-electing-scott-colom-first-black-senator-since-1800s/",
    "outlets": 9,
    "why": [],
    "theme": ""
@@ -432,15 +438,15 @@
     "key": "auto-e9e3f04b",
     "words": [
      "widespread",
-     "hospitals",
      "microsoft",
+     "hospitals",
      "outlook",
      "outage",
      "other"
     ],
     "score": 18,
-    "outlets": 7,
-    "carriers": 18,
+    "outlets": 8,
+    "carriers": 19,
     "tag": "Developing",
     "title": "Microsoft outage impacting hospitals, universities and Via Rail services",
     "url": "https://www.cp24.com/news/canada/2026/11/12/widespread-issues-reported-with-microsoft-products-downdetector/",
@@ -503,7 +509,7 @@
       "url": "https://abcnews.com/US/outlook-down-microsoft-outage-reported-mail/story?id=138088203"
      }
     ],
-    "independent": 7,
+    "independent": 8,
     "reports": [
      {
       "t": "Fri 12:21 a.m.",
@@ -815,9 +821,10 @@
      "BBC News",
      "The Guardian"
     ],
+    "leads_ca": true,
     "judgment": "national",
     "judgment_why": "National: leading 7 front pages (CTV News, Global News, CP24, BNN Bloomberg, ABC News, BBC News).",
-    "weight": 55,
+    "weight": 56,
     "videos": [
      {
       "net": "CBC News",
@@ -836,18 +843,18 @@
       "up": ""
      },
      {
-      "net": "NBC News",
-      "url": "https://www.youtube.com/watch?v=iBbonEmdGxw",
-      "title": "Widespread outage of Microsoft apps used by hundreds of millions",
-      "img": "https://i.ytimg.com/vi/iBbonEmdGxw/hqdefault.jpg",
+      "net": "ABC News",
+      "url": "https://www.youtube.com/watch?v=sIp-5i_HMPo",
+      "title": "Outlook down for thousands amid Microsoft outage across North America",
+      "img": "https://i.ytimg.com/vi/sIp-5i_HMPo/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
       "net": "NBC News",
-      "url": "https://www.youtube.com/watch?v=wC0lI_jUM8E",
-      "title": "Widespread outage hits Microsoft platforms including Outlook, thousands report issues",
-      "img": "https://i.ytimg.com/vi/wC0lI_jUM8E/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=iBbonEmdGxw",
+      "title": "Widespread outage of Microsoft apps used by hundreds of millions",
+      "img": "https://i.ytimg.com/vi/iBbonEmdGxw/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -858,14 +865,14 @@
     "words": [
      "stellantis",
      "meeting",
+     "roshel",
+     "frank",
      "plant",
-     "slams",
-     "joly",
-     "i’m"
+     "joly"
     ],
-    "score": 20,
+    "score": 21,
     "outlets": 4,
-    "carriers": 7,
+    "carriers": 8,
     "tag": "Developing",
     "title": "‘To be frank, I’m fed up’: Minister Joly slams Stellantis after meeting over plant sale",
     "url": "https://www.ctvnews.ca/business/autos/article/ottawa-serves-stellantis-notice-of-default-on-funding-agreement-after-roshel-deal/",
@@ -915,6 +922,14 @@
       "alt": "Stellantis should 'pay back every penny': Ontario NDP leader",
       "outlet": "CBC News",
       "url": "https://www.cbc.ca/player/play/video/9.7420066"
+     },
+     {
+      "src": "live/img/auto-ab7424e3-5ab0a636e3.jpg",
+      "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/4/71/471450f1-a5bc-5774-9b66-ae59b8b19b6c/6ad1dab873332.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize",
+      "caption": "From: Ottawa serves Stellantis notice of default on funding agreement after Roshel deal. — via Toronto Star",
+      "alt": "Ottawa serves Stellantis notice of default on funding agreement after Roshel deal",
+      "outlet": "Toronto Star",
+      "url": "https://www.thestar.com/business/joly-set-to-hold-meeting-in-toronto-with-stellantis-union-and-ontario-minister/article_9c8867c0-5424-5435-9108-f5506bd3938c.html"
      }
     ],
     "independent": 4,
@@ -950,6 +965,14 @@
       "title": "Stellantis should 'pay back every penny': Ontario NDP leader",
       "url": "https://www.cbc.ca/player/play/video/9.7420066",
       "desc": "It's a high-stakes showdown: Ottawa has served automaker Stellantis with a notice of default and is preparing to sit down with Queen's Park and Stellantis's global CEO — even as Prime Minister Mark Carney admits he was aware of 'some aspects' of the sale beforehand. Ontario NDP Leader Marit Stiles…"
+     },
+     {
+      "t": "Thu 4:00 p.m.",
+      "iso": "2026-11-12T21:00:21+00:00",
+      "outlet": "Toronto Star",
+      "title": "Ottawa serves Stellantis notice of default on funding agreement after Roshel deal",
+      "url": "https://www.thestar.com/business/joly-set-to-hold-meeting-in-toronto-with-stellantis-union-and-ontario-minister/article_9c8867c0-5424-5435-9108-f5506bd3938c.html",
+      "desc": "More than 2,000 workers have been laid off from the Stellantis plant since it was idled in 2023."
      },
      {
       "t": "Thu 7:16 a.m.",
@@ -992,6 +1015,11 @@
         "byline": "{\"name\":\"Canadian Press\",\"@id\":\"https:\\/\\/l"
        },
        {
+        "outlet": "Toronto Star",
+        "src": "The Canadian Press",
+        "byline": "\"Sammy Hudes and Daniel Johnson The Canadian Press\" \"Sammy Hudes and D"
+       },
+       {
         "outlet": "CTV News",
         "src": "The Canadian Press",
         "byline": "\"@type\": \"Person\",\n      \"name\": \"The Canadian Press\",\n      \n    }\n  ]"
@@ -1008,6 +1036,10 @@
        }
       ],
       "copies": [
+       {
+        "outlet": "Toronto Star",
+        "url": "https://www.thestar.com/business/joly-set-to-hold-meeting-in-toronto-with-stellantis-union-and-ontario-minister/article_9c8867c0-5424-5435-9108-f5506bd3938c.html"
+       },
        {
         "outlet": "CTV News",
         "url": "https://www.ctvnews.ca/business/autos/article/ottawa-serves-stellantis-notice-of-default-on-funding-agreement-after-roshel-deal/"
@@ -1082,11 +1114,10 @@
     "incoherent": false,
     "popular": 0,
     "us_election": false,
-    "fronts": 5,
-    "fronts_ca": 5,
+    "fronts": 4,
+    "fronts_ca": 4,
     "fronts_who": [
      "CTV News",
-     "Toronto Star",
      "The Globe and Mail",
      "CP24",
      "BNN Bloomberg"
@@ -1094,7 +1125,7 @@
     "leads_ca": true,
     "judgment": "national",
     "judgment_why": "National: affects some people; carried across the country (national desks).",
-    "weight": 43.5,
+    "weight": 45.0,
     "videos": [
      {
       "net": "Global News",
@@ -1105,26 +1136,26 @@
       "up": ""
      },
      {
-      "net": "CPAC",
-      "url": "https://www.youtube.com/watch?v=rXRTI0MOtog",
-      "title": "Conservative Leader Pierre Poilievre on Stellantis' plans to sell Brampton plant – November 12, 2026",
-      "img": "https://i.ytimg.com/vi/rXRTI0MOtog/hqdefault.jpg",
-      "rec": true,
-      "up": ""
-     },
-     {
-      "net": "CTV News",
-      "url": "https://www.youtube.com/watch?v=TRGdrG1bGYQ",
-      "title": "Minister Joly slams Stellantis after meeting over plant sale | CTV National News for Nov.12, 2026",
-      "img": "https://i.ytimg.com/vi/TRGdrG1bGYQ/hqdefault.jpg",
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=GG2-AZt3IOM",
+      "title": "Reporter Roundtable: Stellantis stakeholders gather to discuss plant sale | Power & Politics",
+      "img": "https://i.ytimg.com/vi/GG2-AZt3IOM/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
       "net": "CBC News",
-      "url": "https://www.youtube.com/watch?v=GG2-AZt3IOM",
-      "title": "Reporter Roundtable: Stellantis stakeholders gather to discuss plant sale | Power & Politics",
-      "img": "https://i.ytimg.com/vi/GG2-AZt3IOM/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=UluY82wwpWA",
+      "title": "Stellantis should 'pay back every penny': Ontario NDP leader | Power & Politics",
+      "img": "https://i.ytimg.com/vi/UluY82wwpWA/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=zhgoOeQ7Tq8",
+      "title": "Federal government was engaged regularly on Stellantis sale: source | Power & Politics",
+      "img": "https://i.ytimg.com/vi/zhgoOeQ7Tq8/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1137,9 +1168,9 @@
     "url": "https://www.cp24.com/news/canada/2026/11/12/widespread-issues-reported-with-microsoft-products-downdetector/",
     "rank": 1,
     "live": "",
-    "weight": 55,
+    "weight": 56,
     "score": 18,
-    "independent": 7,
+    "independent": 8,
     "most_read": 5,
     "canada": "canadian",
     "theme": "Microsoft outage",
@@ -1155,7 +1186,7 @@
      "The Guardian"
     ],
     "rule": "Leading other newsrooms' front pages (Canadian ones among them): the story everyone is leading with",
-    "carriers": 18,
+    "carriers": 19,
     "judgment": "national",
     "why_judged": "National: leading 7 front pages (CTV News, Global News, CP24, BNN Bloomberg, ABC News, BBC News)."
    },
@@ -1164,49 +1195,29 @@
     "url": "https://www.ctvnews.ca/business/autos/article/ottawa-serves-stellantis-notice-of-default-on-funding-agreement-after-roshel-deal/",
     "rank": 2,
     "live": "",
-    "weight": 43.5,
-    "score": 20,
+    "weight": 45.0,
+    "score": 21,
     "independent": 4,
     "most_read": 0,
     "canada": "canadian",
     "theme": "Canadian auto jobs",
     "top": true,
-    "fronts": 5,
+    "fronts": 4,
     "fronts_who": [
      "CTV News",
-     "Toronto Star",
      "The Globe and Mail",
      "CP24",
      "BNN Bloomberg"
     ],
     "rule": "Canadian, leading the most Canadian front pages: the story Canada's newsrooms are leading with",
-    "carriers": 7,
+    "carriers": 8,
     "judgment": "national",
     "why_judged": "National: affects some people; carried across the country (national desks)."
    },
    {
-    "title": "EU leaders in Dublin grapple with who speaks for Europe in peace talks",
-    "url": "https://www.euronews.com/2026/11/13/eu-leaders-gather-in-dublin-to-decide-who-will-speak-for-europe-in-peace-talks",
-    "rank": 3,
-    "live": "",
-    "weight": 38.0,
-    "score": 17,
-    "independent": 4,
-    "most_read": 0,
-    "canada": "tie",
-    "theme": "",
-    "top": false,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
-    "carriers": 6,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (national desks)."
-   },
-   {
     "title": "What we know after Jensen Huang resigns as Nvidia CEO",
     "url": "https://www.thestar.com/news/world/united-states/what-we-know-after-jensen-huang-resigns-as-nvidia-ceo/article_ab13f630-8b55-5cd7-9e60-bf530c64b22b.html",
-    "rank": 4,
+    "rank": 3,
     "live": "",
     "weight": 53,
     "score": 20,
@@ -1215,10 +1226,9 @@
     "canada": "tie",
     "theme": "",
     "top": false,
-    "fronts": 9,
+    "fronts": 8,
     "fronts_who": [
      "CBC News",
-     "Toronto Star",
      "The Globe and Mail",
      "BNN Bloomberg",
      "NBC News",
@@ -1230,15 +1240,34 @@
     "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
     "carriers": 14,
     "judgment": "national",
-    "why_judged": "National: leading 9 front pages (CBC News, Toronto Star, The Globe and Mail, BNN Bloomberg, NBC News, CBS News)."
+    "why_judged": "National: leading 8 front pages (CBC News, The Globe and Mail, BNN Bloomberg, NBC News, CBS News, BBC News)."
+   },
+   {
+    "title": "Trump praises Democrat Scott Colom for showing up to Mississippi rally and courting MAGA supporters",
+    "url": "https://www.thestar.com/news/world/united-states/trump-praises-democrat-scott-colom-for-showing-up-to-mississippi-rally-and-courting-maga-supporters/article_084f09d8-3430-586d-af72-66e442c84f0e.html",
+    "rank": 4,
+    "live": "",
+    "weight": 25.0,
+    "score": 9,
+    "independent": 5,
+    "most_read": 0,
+    "canada": "tie",
+    "theme": "",
+    "top": false,
+    "fronts": 0,
+    "fronts_who": [],
+    "rule": "From abroad, tied to Canada",
+    "carriers": 6,
+    "judgment": "national",
+    "why_judged": "National: affects many people; carried across the country (national desks)."
    },
    {
     "title": "Indigenous women's groups call out Ottawa over funding in new federal budget",
     "url": "https://www.cp24.com/news/canada/2026/11/12/indigenous-womens-groups-call-out-ottawa-over-funding-in-new-federal-budget/",
     "rank": 5,
     "live": "",
-    "weight": 37.5,
-    "score": 18,
+    "weight": 39.0,
+    "score": 19,
     "independent": 2,
     "most_read": 0,
     "canada": "canadian",
@@ -1247,7 +1276,7 @@
     "fronts": 0,
     "fronts_who": [],
     "rule": "Canadian, older",
-    "carriers": 11,
+    "carriers": 12,
     "judgment": "national",
     "why_judged": "National: affects many people; carried across the country (8 cities)."
    },
@@ -1298,13 +1327,13 @@
     "why_judged": "National: affects some people; carried across the country (national desks)."
    },
    {
-    "title": "Trump praises Democrat Scott Colom for showing up to Mississippi rally and courting MAGA supporters",
-    "url": "https://www.thestar.com/news/world/united-states/trump-praises-democrat-scott-colom-for-showing-up-to-mississippi-rally-and-courting-maga-supporters/article_084f09d8-3430-586d-af72-66e442c84f0e.html",
+    "title": "Hegseth awards medal to Arlington soldier who scolded his group on decorum",
+    "url": "https://www.cbc.ca/news/world/us-pentagon-hegseth-arlington-controversy-medal-9.7419227",
     "rank": 8,
     "live": "",
-    "weight": 24.0,
+    "weight": 16.5,
     "score": 8,
-    "independent": 5,
+    "independent": 3,
     "most_read": 0,
     "canada": "none",
     "theme": "",
@@ -1312,9 +1341,9 @@
     "fronts": 0,
     "fronts_who": [],
     "rule": "No Canadian tie",
-    "carriers": 6,
+    "carriers": 3,
     "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (national desks)."
+    "why_judged": "National: affects some people; carried across the country (national desks)."
    },
    {
     "title": "Pilot killed in Quebec Remembrance Day crash had lifelong passion for flying, friends say",
@@ -1341,259 +1370,10 @@
   "top_n": 2,
   "more": [
    {
-    "key": "auto-a735e771",
-    "words": [
-     "zelenskyy",
-     "dublin",
-     "putin"
-    ],
-    "score": 17,
-    "outlets": 4,
-    "carriers": 6,
-    "tag": "Breaking",
-    "title": "EU leaders in Dublin grapple with who speaks for Europe in peace talks",
-    "url": "https://www.euronews.com/2026/11/13/eu-leaders-gather-in-dublin-to-decide-who-will-speak-for-europe-in-peace-talks",
-    "outlet": "Euronews",
-    "t": "Fri 2:19 a.m.",
-    "iso": "2026-11-13T07:19:52+00:00",
-    "summary": "Good morning. I’m Luca Bertuzzi, holding the pen for today’s newsletter. The Ukraine peace talks, and the question of who should speak for Europe at the table, have swamped the informal EU summit, kicking off another round of the name game. #EuropeToday",
-    "first": {
-     "outlet": "Kyiv Independent",
-     "url": "https://kyivindependent.com/zelensky-meets-with-trumps-envoys-in-dublin-after-their-summit-with-putin/",
-     "t": "Thu 4:35 p.m.",
-     "title": "Zelensky meets with Trump's envoys in Dublin after their summit with Putin",
-     "iso": "2026-11-12T21:35:58+00:00"
-    },
-    "newest": "2026-11-13T07:19:52+00:00",
-    "photo": {
-     "src": "live/img/auto-a735e771-42431c3d82.jpg",
-     "orig": "https://images.euronews.com/articles/stories/09/99/03/60/1200x675_cmsv2_4fcd02a8-6bf7-5ca7-a26f-9c135d3957e4-9990360.jpg",
-     "caption": "EU leaders in Dublin grapple with who speaks for Europe in peace talks. — via Euronews",
-     "alt": "EU leaders in Dublin grapple with who speaks for Europe in peace talks",
-     "outlet": "Euronews",
-     "url": "https://www.euronews.com/2026/11/13/eu-leaders-gather-in-dublin-to-decide-who-will-speak-for-europe-in-peace-talks",
-     "since": "2026-11-13T07:42:25.379647+00:00"
-    },
-    "photo_seen": [
-     "https://images.euronews.com/articles/stories/09/99/03/60/1200x675_cmsv2_4fcd02a8-6bf7-5ca7-a26f-9c135d3957e4-9990360.jpg"
-    ],
-    "photos": [
-     {
-      "src": "live/img/auto-a735e771-42431c3d82.jpg",
-      "orig": "https://images.euronews.com/articles/stories/09/99/03/60/1200x675_cmsv2_4fcd02a8-6bf7-5ca7-a26f-9c135d3957e4-9990360.jpg",
-      "caption": "EU leaders in Dublin grapple with who speaks for Europe in peace talks. — via Euronews",
-      "alt": "EU leaders in Dublin grapple with who speaks for Europe in peace talks",
-      "outlet": "Euronews",
-      "url": "https://www.euronews.com/2026/11/13/eu-leaders-gather-in-dublin-to-decide-who-will-speak-for-europe-in-peace-talks"
-     },
-     {
-      "src": "live/img/auto-a735e771-bbba09d46b.jpg",
-      "orig": "https://assets.kyivindependent.com/content/images/2026/11/GettyImages-2304292820_20261112-211451_20261112-213314.jpg",
-      "caption": "From: Zelensky meets with Trump's envoys in Dublin after their summit with Putin. — via Kyiv Independent",
-      "alt": "Zelensky meets with Trump's envoys in Dublin after their summit with Putin",
-      "outlet": "Kyiv Independent",
-      "url": "https://kyivindependent.com/zelensky-meets-with-trumps-envoys-in-dublin-after-their-summit-with-putin/"
-     }
-    ],
-    "independent": 4,
-    "reports": [
-     {
-      "t": "Fri 2:19 a.m.",
-      "iso": "2026-11-13T07:19:52+00:00",
-      "outlet": "Euronews",
-      "title": "EU leaders in Dublin grapple with who speaks for Europe in peace talks",
-      "url": "https://www.euronews.com/2026/11/13/eu-leaders-gather-in-dublin-to-decide-who-will-speak-for-europe-in-peace-talks",
-      "desc": "Good morning. I’m Luca Bertuzzi, holding the pen for today’s newsletter. The Ukraine peace talks, and the question of who should speak for Europe at the table, have swamped the informal EU summit, kicking off another round of the name game. #EuropeToday"
-     },
-     {
-      "t": "Thu 11:12 p.m.",
-      "iso": "2026-11-13T04:12:01+00:00",
-      "outlet": "Al Jazeera",
-      "title": "US envoys shuttle between Putin and Zelenskyy",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/aje-onl-nf_us-envoys-shuttle-between-putin-and-zelenskyy-121126?traffic_source=rss",
-      "desc": "US envoys Witkoff and Kushner have shuttled between Dublin and Moscow in efforts to broker a Russia-Ukraine peace deal."
-     },
-     {
-      "t": "Thu 8:32 p.m.",
-      "iso": "2026-11-13T01:32:15+00:00",
-      "outlet": "CTV News",
-      "title": "U.S. envoys meet with Putin in Moscow on Ukraine talks, to see Zelenskyy in Dublin after",
-      "url": "https://www.ctvnews.ca/world/russia-ukraine-war/article/us-envoys-go-to-meet-putin-at-the-kremlin-following-ukraine-talks-in-abu-dhabi/",
-      "desc": "U.S. envoys met Thursday with Russian President Vladimir Putin in the Kremlin before heading to Ireland for talks with Ukrainian President Volodymyr Zelenskyy as Washington sought new momentum for its peace efforts."
-     },
-     {
-      "t": "Thu 8:32 p.m.",
-      "iso": "2026-11-13T01:32:15+00:00",
-      "outlet": "CP24",
-      "title": "U.S. envoys meet with Putin in Moscow on Ukraine talks, to see Zelenskyy in Dublin after",
-      "url": "https://www.cp24.com/news/world/2026/11/12/us-envoys-go-to-meet-putin-at-the-kremlin-following-ukraine-talks-in-abu-dhabi/",
-      "desc": ""
-     },
-     {
-      "t": "Thu 6:31 p.m.",
-      "iso": "2026-11-12T23:31:05.958000+00:00",
-      "outlet": "CBC News",
-      "title": "U.S. envoys talk to Zelenskyy in Dublin, after prior sitdown with Putin in Moscow",
-      "url": "https://www.cbc.ca/news/world/us-witkoff-kushner-putin-zelenskyy-talks-9.7418799",
-      "desc": ""
-     },
-     {
-      "t": "Thu 4:35 p.m.",
-      "iso": "2026-11-12T21:35:58+00:00",
-      "outlet": "Kyiv Independent",
-      "title": "Zelensky meets with Trump's envoys in Dublin after their summit with Putin",
-      "url": "https://kyivindependent.com/zelensky-meets-with-trumps-envoys-in-dublin-after-their-summit-with-putin/",
-      "desc": "In a briefing alongside Witkoff and Kushner after the meeting, Zelensky told reporters that Europe would be represented in the next round of peace talks and that the upcoming Russia-Ukraine prisoner exchange would be the largest swap yet."
-     }
-    ],
-    "sources": [
-     {
-      "t": "Fri 2:19 a.m.",
-      "primary": false,
-      "outlet": "Euronews",
-      "title": "EU leaders in Dublin grapple with who speaks for Europe in peace talks",
-      "url": "https://www.euronews.com/2026/11/13/eu-leaders-gather-in-dublin-to-decide-who-will-speak-for-europe-in-peace-talks",
-      "desc": "Good morning. I’m Luca Bertuzzi, holding the pen for today’s newsletter. The Ukraine peace talks, and the question of who should speak for Europe at the table, have swamped the informal EU summit, kicking off another round of the name game. #EuropeToday",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Euronews",
-        "src": "Euronews",
-        "byline": "[ { \"@type\": \"Person\", \"familyName\": \"Bertuzzi\", \"givenName\": \"Luca\", \"name\": \"Luca Bertuzzi\", , \"worksFor\": { \"@id\": \"h"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Thu 11:12 p.m.",
-      "primary": false,
-      "outlet": "Al Jazeera",
-      "title": "US envoys shuttle between Putin and Zelenskyy",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/aje-onl-nf_us-envoys-shuttle-between-putin-and-zelenskyy-121126?traffic_source=rss",
-      "desc": "US envoys Witkoff and Kushner have shuttled between Dublin and Moscow in efforts to broker a Russia-Ukraine peace deal.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Al Jazeera",
-        "src": "Al Jazeera",
-        "byline": " NewsFeed Add Al Jazeera on Google"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Thu 6:31 p.m.",
-      "primary": false,
-      "outlet": "CBC News",
-      "title": "U.S. envoys talk to Zelenskyy in Dublin, after prior sitdown with Putin in Moscow",
-      "url": "https://www.cbc.ca/news/world/us-witkoff-kushner-putin-zelenskyy-talks-9.7418799",
-      "desc": "U.S. envoys met Thursday with Russian President Vladimir Putin in the Kremlin before heading to Ireland for talks with Ukrainian President Volodymyr Zelenskyy as Washington sought new momentum for its peace efforts.",
-      "wire": "The Associated Press",
-      "by": [
-       {
-        "outlet": "CBC News",
-        "src": "The Associated Press",
-        "byline": "\"photoURL\":\"\"},\"recentContent\":{}} \"The Associated Press\" \"Reuters\" \"CBC New"
-       },
-       {
-        "outlet": "CTV News",
-        "src": "The Canadian Press",
-        "byline": "artin\" \"Rob Cooper\" \"Michelle Maluske\" \"The Canadian Press\" \"Anna McMillan\" \"L"
-       },
-       {
-        "outlet": "CP24",
-        "src": "The Associated Press",
-        "byline": "\"@type\": \"Person\",\n      \"name\": \"The  Associated Press\",\n      \n    }\n  ]"
-       }
-      ],
-      "copies": [
-       {
-        "outlet": "CTV News",
-        "url": "https://www.ctvnews.ca/world/russia-ukraine-war/article/us-envoys-go-to-meet-putin-at-the-kremlin-following-ukraine-talks-in-abu-dhabi/"
-       },
-       {
-        "outlet": "CP24",
-        "url": "https://www.cp24.com/news/world/2026/11/12/us-envoys-go-to-meet-putin-at-the-kremlin-following-ukraine-talks-in-abu-dhabi/"
-       }
-      ]
-     },
-     {
-      "t": "Thu 4:35 p.m.",
-      "primary": false,
-      "outlet": "Kyiv Independent",
-      "title": "Zelensky meets with Trump's envoys in Dublin after their summit with Putin",
-      "url": "https://kyivindependent.com/zelensky-meets-with-trumps-envoys-in-dublin-after-their-summit-with-putin/",
-      "desc": "In a briefing alongside Witkoff and Kushner after the meeting, Zelensky told reporters that Europe would be represented in the next round of peace talks and that the upcoming Russia-Ukraine prisoner exchange would be the largest swap yet.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Kyiv Independent",
-        "src": "Kyiv Independent",
-        "byline": "own staff: Editor"
-       }
-      ],
-      "copies": []
-     }
-    ],
-    "replaces_top": false,
-    "events": [],
-    "theme": "",
-    "ca_angle": {
-     "specific": 3,
-     "official": 1
-    },
-    "canada": "tie",
-    "canus": false,
-    "incoherent": false,
-    "popular": 0,
-    "us_election": false,
-    "fronts": 0,
-    "fronts_ca": 0,
-    "fronts_who": [],
-    "outled_ca": 5,
-    "judgment": "national",
-    "judgment_why": "National: affects many people; carried across the country (national desks).",
-    "weight": 38.0,
-    "videos": [
-     {
-      "net": "Sky News",
-      "url": "https://www.youtube.com/watch?v=gd3hUKQrETc",
-      "title": "'They will have a voice': Zelenskyy praises step of Europe joining Ukraine peace talks",
-      "img": "https://i.ytimg.com/vi/gd3hUKQrETc/hqdefault.jpg",
-      "rec": true,
-      "up": ""
-     },
-     {
-      "net": "euronews",
-      "url": "https://www.youtube.com/watch?v=abtPlpFzLiM",
-      "title": "US envoys meet Putin as Europe pushes to join Ukraine talks | Europe Today #210",
-      "img": "https://i.ytimg.com/vi/abtPlpFzLiM/hqdefault.jpg",
-      "rec": true,
-      "up": ""
-     },
-     {
-      "net": "Associated Press",
-      "url": "https://www.youtube.com/watch?v=v-7bcvIKzIQ",
-      "title": "US envoys hold talks with Zelenskyy in Dublin after meeting Putin in Moscow",
-      "img": "https://i.ytimg.com/vi/v-7bcvIKzIQ/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "BBC News",
-      "url": "https://www.youtube.com/watch?v=Jrki8BD2TG0",
-      "title": "Are Putin, Trump and Zelensky any closer to making peace in Ukraine? | Global News Podcast",
-      "img": "https://i.ytimg.com/vi/Jrki8BD2TG0/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     }
-    ]
-   },
-   {
     "key": "auto-b8d2c236",
     "words": [
-     "nvidia’s",
      "congress",
+     "nvidia’s",
      "nvidia",
      "jensen",
      "huang",
@@ -1624,7 +1404,7 @@
      "alt": "What we know after Jensen Huang resigns as Nvidia CEO",
      "outlet": "Toronto Star",
      "url": "https://www.thestar.com/news/world/united-states/what-we-know-after-jensen-huang-resigns-as-nvidia-ceo/article_ab13f630-8b55-5cd7-9e60-bf530c64b22b.html",
-     "since": "2026-11-13T07:42:15.904847+00:00"
+     "since": "2026-11-13T07:51:23.380446+00:00"
     },
     "photo_seen": [
      "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/e/76/e76705d1-4cc2-5755-bb29-0924bbd8a9e7/6af68c70b860b.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
@@ -1647,20 +1427,20 @@
       "url": "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&at_campaign=rss"
      },
      {
+      "src": "live/img/auto-b8d2c236-9681fd01e9.jpg",
+      "orig": "https://images.euronews.com/articles/stories/09/99/06/99/1200x675_cmsv2_d215f4a4-d98e-5669-8ec7-3cad6f60d05f-9990699.jpg",
+      "caption": "Nvidia without Huang 'a significant loss' and puts the AI boom under a microscope, say economists. — via Euronews",
+      "alt": "Nvidia without Huang 'a significant loss' and puts the AI boom under a microscope, say economists",
+      "outlet": "Euronews",
+      "url": "https://www.euronews.com/2026/11/12/nvidia-without-huang-a-significant-loss-and-puts-the-ai-boom-under-a-microscope-say-econom"
+     },
+     {
       "src": "live/img/auto-b8d2c236-4213f6d93e.jpg",
       "orig": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/13/573859.JPG?v=3.1",
       "caption": "From: China’s access to Nvidia chips in doubt as curbs gain traction in U.S. Congress. — via The Japan Times",
       "alt": "China’s access to Nvidia chips in doubt as curbs gain traction in U.S. Congress",
       "outlet": "The Japan Times",
       "url": "https://www.japantimes.co.jp/news/2026/11/13/world/china-access-nvidia-chips-doubt/"
-     },
-     {
-      "src": "live/img/auto-b8d2c236-238cd9bc6c.jpg",
-      "orig": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/12/4a9d4509-ccb0-4434-9e07-d9ad21458052/thumbnail/1200x630/28977ef1f2d952a45c6696a4dc8d333b/ap26316456399217.jpg",
-      "caption": "From: GOP lawmakers press Huang and Lutnick to testify over Nvidia. — via CBS News",
-      "alt": "GOP lawmakers press Huang and Lutnick to testify over Nvidia",
-      "outlet": "CBS News",
-      "url": "https://www.cbsnews.com/news/jensen-huang-nvidia-congress-testify/"
      }
     ],
     "independent": 11,
@@ -1932,13 +1712,13 @@
       "outlet": "Euronews",
       "title": "Nvidia without Huang 'a significant loss' and puts the AI boom under a microscope, say economists",
       "url": "https://www.euronews.com/2026/11/12/nvidia-without-huang-a-significant-loss-and-puts-the-ai-boom-under-a-microscope-say-econom",
-      "desc": "",
+      "desc": "Speaking at Web Summit Lisbon, one economist calls founder Jensen Huang’s exit “a critical mistake” and a “significant loss” for the industry, while another says large corporations are built to outlast the people who run them.",
       "wire": "",
       "by": [
        {
         "outlet": "Euronews",
         "src": "Euronews",
-        "byline": ""
+        "byline": "[ { \"@type\": \"Person\", \"familyName\": \"Davies\", \"givenName\": \"Pascale\", \"name\": \"Pascale Davies\", , \"worksFor\": { \"@id\": "
        }
       ],
       "copies": []
@@ -2007,11 +1787,10 @@
     "incoherent": false,
     "popular": 3,
     "us_election": false,
-    "fronts": 9,
-    "fronts_ca": 4,
+    "fronts": 8,
+    "fronts_ca": 3,
     "fronts_who": [
      "CBC News",
-     "Toronto Star",
      "The Globe and Mail",
      "BNN Bloomberg",
      "NBC News",
@@ -2020,9 +1799,9 @@
      "The Guardian",
      "NPR"
     ],
-    "outled_ca": 5,
+    "outled_ca": 4,
     "judgment": "national",
-    "judgment_why": "National: leading 9 front pages (CBC News, Toronto Star, The Globe and Mail, BNN Bloomberg, NBC News, CBS News).",
+    "judgment_why": "National: leading 8 front pages (CBC News, The Globe and Mail, BNN Bloomberg, NBC News, CBS News, BBC News).",
     "weight": 53,
     "videos": [
      {
@@ -2050,10 +1829,269 @@
       "up": ""
      },
      {
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=pDosGUZ1n2Y",
+      "title": "Nvidia stocks slump after CEO resigns — what it means for your savings | Hanomansing Live",
+      "img": "https://i.ytimg.com/vi/pDosGUZ1n2Y/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     }
+    ]
+   },
+   {
+    "key": "auto-e44afb0e",
+    "words": [
+     "mississippi",
+     "democrat",
+     "scott",
+     "colom",
+     "maga"
+    ],
+    "score": 9,
+    "outlets": 5,
+    "carriers": 6,
+    "tag": "Developing",
+    "title": "Trump praises Democrat Scott Colom for showing up to Mississippi rally and courting MAGA supporters",
+    "url": "https://www.thestar.com/news/world/united-states/trump-praises-democrat-scott-colom-for-showing-up-to-mississippi-rally-and-courting-maga-supporters/article_084f09d8-3430-586d-af72-66e442c84f0e.html",
+    "outlet": "Toronto Star",
+    "t": "Thu 8:48 p.m.",
+    "iso": "2026-11-13T01:48:16+00:00",
+    "summary": "WASHINGTON (AP) — President Donald Trump on Thursday heaped praise on Mississippi's Sen.-elect Scott Colom for courting some of his hardcore MAGA supporters in the final days of the midterm",
+    "first": {
+     "outlet": "Politico",
+     "url": "https://www.politico.com/news/2026/11/12/ryan-sayles-scott-colom-viral-protein-ad-01163508",
+     "t": "Thu 5:34 p.m.",
+     "title": "Meet the 27-year old behind the protein ad that helped flip Mississippi",
+     "iso": "2026-11-12T22:34:55+00:00"
+    },
+    "newest": "2026-11-13T02:20:35+00:00",
+    "photo": {
+     "src": "live/img/auto-e44afb0e-59bb93e214.jpg",
+     "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/f/b1/fb11910d-f596-5358-a14b-af1e10857cfb/6af66cc8eb317.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize",
+     "caption": "From: Trump praises Democrat Scott Colom for showing up to Mississippi rally and courting MAGA supporters. — via Toronto Star",
+     "alt": "Trump praises Democrat Scott Colom for showing up to Mississippi rally and courting MAGA supporters",
+     "outlet": "Toronto Star",
+     "url": "https://www.thestar.com/news/world/united-states/trump-praises-democrat-scott-colom-for-showing-up-to-mississippi-rally-and-courting-maga-supporters/article_084f09d8-3430-586d-af72-66e442c84f0e.html",
+     "since": "2026-11-13T07:51:54.103600+00:00"
+    },
+    "photo_seen": [
+     "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/f/b1/fb11910d-f596-5358-a14b-af1e10857cfb/6af66cc8eb317.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
+    ],
+    "photos": [
+     {
+      "src": "live/img/auto-e44afb0e-59bb93e214.jpg",
+      "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/f/b1/fb11910d-f596-5358-a14b-af1e10857cfb/6af66cc8eb317.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize",
+      "caption": "From: Trump praises Democrat Scott Colom for showing up to Mississippi rally and courting MAGA supporters. — via Toronto Star",
+      "alt": "Trump praises Democrat Scott Colom for showing up to Mississippi rally and courting MAGA supporters",
+      "outlet": "Toronto Star",
+      "url": "https://www.thestar.com/news/world/united-states/trump-praises-democrat-scott-colom-for-showing-up-to-mississippi-rally-and-courting-maga-supporters/article_084f09d8-3430-586d-af72-66e442c84f0e.html"
+     },
+     {
+      "src": "live/img/auto-e44afb0e-31495c947a.jpg",
+      "orig": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/11/13/6440bdcf-c560-401c-a9e3-dd41fae6d7a8/thumbnail/1200x630/99582c56d33fa8700803a8aeaec1c948/cbsn-fusion-naacp-on-mississippi-electing-scott-colom-first-black-senator-since-1800s-thumbnail.jpg",
+      "caption": "From: NAACP official on Mississippi electing Scott Colom as its first Black senator since the 1800s. — via CBS News",
+      "alt": "NAACP official on Mississippi electing Scott Colom as its first Black senator since the 1800s",
+      "outlet": "CBS News",
+      "url": "https://www.cbsnews.com/video/naacp-on-mississippi-electing-scott-colom-first-black-senator-since-1800s/"
+     }
+    ],
+    "independent": 5,
+    "reports": [
+     {
+      "t": "Thu 9:20 p.m.",
+      "iso": "2026-11-13T02:20:35+00:00",
+      "outlet": "CBS News",
+      "title": "NAACP official on Mississippi electing Scott Colom as its first Black senator since the 1800s",
+      "url": "https://www.cbsnews.com/video/naacp-on-mississippi-electing-scott-colom-first-black-senator-since-1800s/",
+      "desc": "CBS News projects that Democrat Scott Colom will defeat Republican incumbent Cindy Hyde-Smith to become the first Black senator from Mississippi since the 1800s. Charles Taylor, executive director of the Mississippi State Conference of the NAACP, joins CBS News to discuss the significance of…"
+     },
+     {
+      "t": "Thu 8:48 p.m.",
+      "iso": "2026-11-13T01:48:16+00:00",
+      "outlet": "Toronto Star",
+      "title": "Trump praises Democrat Scott Colom for showing up to Mississippi rally and courting MAGA supporters",
+      "url": "https://www.thestar.com/news/world/united-states/trump-praises-democrat-scott-colom-for-showing-up-to-mississippi-rally-and-courting-maga-supporters/article_084f09d8-3430-586d-af72-66e442c84f0e.html",
+      "desc": "WASHINGTON (AP) — President Donald Trump on Thursday heaped praise on Mississippi's Sen.-elect Scott Colom for courting some of his hardcore MAGA supporters in the final days of the midterm"
+     },
+     {
+      "t": "Thu 8:48 p.m.",
+      "iso": "2026-11-13T01:48:16+00:00",
+      "outlet": "CityNews",
+      "title": "Trump praises Democrat Scott Colom for showing up to Mississippi rally and courting MAGA supporters",
+      "url": "https://toronto.citynews.ca/2026/11/12/trump-praises-democrat-scott-colom-for-showing-up-to-mississippi-rally-and-courting-maga-supporters/",
+      "desc": ""
+     },
+     {
+      "t": "Thu 8:06 p.m.",
+      "iso": "2026-11-13T01:06:58+00:00",
+      "outlet": "The Hill",
+      "title": "Trump on Colom’s Mississippi Senate win: ‘I give him a lot of credit’",
+      "url": "https://thehill.com/homenews/campaign/6217818-trump-praises-colom-mississippi-victory/",
+      "desc": ""
+     },
+     {
+      "t": "Thu 6:40 p.m.",
+      "iso": "2026-11-12T23:40:52+00:00",
+      "outlet": "PBS NewsHour",
+      "title": "How Scott Colom won his longshot bid to flip Mississippi's Senate seat",
+      "url": "https://www.pbs.org/newshour/show/how-scott-colom-won-his-longshot-bid-to-flip-mississippis-senate-seat",
+      "desc": "In Mississippi, Democrat Scott Colom won his longshot bid to oust incumbent Republican Sen. Cindy Hyde-Smith. Colom’s victory is a stunning reversal in the deeply conservative state that hasn’t been represented by a Black senator since the Reconstruction era following the Civil War. Liz Landers…"
+     },
+     {
+      "t": "Thu 5:34 p.m.",
+      "iso": "2026-11-12T22:34:55+00:00",
+      "outlet": "Politico",
+      "title": "Meet the 27-year old behind the protein ad that helped flip Mississippi",
+      "url": "https://www.politico.com/news/2026/11/12/ryan-sayles-scott-colom-viral-protein-ad-01163508",
+      "desc": ""
+     }
+    ],
+    "sources": [
+     {
+      "t": "Thu 9:20 p.m.",
+      "primary": false,
+      "outlet": "CBS News",
+      "title": "NAACP official on Mississippi electing Scott Colom as its first Black senator since the 1800s",
+      "url": "https://www.cbsnews.com/video/naacp-on-mississippi-electing-scott-colom-first-black-senator-since-1800s/",
+      "desc": "CBS News projects that Democrat Scott Colom will defeat Republican incumbent Cindy Hyde-Smith to become the first Black senator from Mississippi since the 1800s. Charles Taylor, executive director of the Mississippi State Conference of the NAACP, joins CBS News to discuss the significance of…",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "CBS News",
+        "src": "CBS News",
+        "byline": ""
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Thu 8:48 p.m.",
+      "primary": false,
+      "outlet": "Toronto Star",
+      "title": "Trump praises Democrat Scott Colom for showing up to Mississippi rally and courting MAGA supporters",
+      "url": "https://www.thestar.com/news/world/united-states/trump-praises-democrat-scott-colom-for-showing-up-to-mississippi-rally-and-courting-maga-supporters/article_084f09d8-3430-586d-af72-66e442c84f0e.html",
+      "desc": "WASHINGTON (AP) — President Donald Trump on Thursday heaped praise on Mississippi's Sen.-elect Scott Colom for courting some of his hardcore MAGA supporters in the final days of the midterm",
+      "wire": "The Associated Press",
+      "by": [
+       {
+        "outlet": "Toronto Star",
+        "src": "The Associated Press",
+        "byline": "\"Aamer Madhani The Associated Press\" \"Aamer Madhani The"
+       },
+       {
+        "outlet": "CityNews",
+        "src": "The Associated Press",
+        "byline": "5fe805acc41a6fdf\"}] \"Aamer Madhani, The Associated Press,\" News Staff \n\t\t\tBy"
+       }
+      ],
+      "copies": [
+       {
+        "outlet": "CityNews",
+        "url": "https://toronto.citynews.ca/2026/11/12/trump-praises-democrat-scott-colom-for-showing-up-to-mississippi-rally-and-courting-maga-supporters/"
+       }
+      ]
+     },
+     {
+      "t": "Thu 8:06 p.m.",
+      "primary": false,
+      "outlet": "The Hill",
+      "title": "Trump on Colom’s Mississippi Senate win: ‘I give him a lot of credit’",
+      "url": "https://thehill.com/homenews/campaign/6217818-trump-praises-colom-mississippi-victory/",
+      "desc": "px-captcha",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "The Hill",
+        "src": "The Hill",
+        "byline": ""
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Thu 6:40 p.m.",
+      "primary": false,
+      "outlet": "PBS NewsHour",
+      "title": "How Scott Colom won his longshot bid to flip Mississippi's Senate seat",
+      "url": "https://www.pbs.org/newshour/show/how-scott-colom-won-his-longshot-bid-to-flip-mississippis-senate-seat",
+      "desc": "In Mississippi, Democrat Scott Colom won his longshot bid to oust incumbent Republican Sen. Cindy Hyde-Smith. Colom’s victory is a stunning reversal in the deeply conservative state that hasn’t been represented by a Black senator since the Reconstruction era following the Civil War. Liz Landers…",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "PBS NewsHour",
+        "src": "PBS NewsHour",
+        "byline": "[{\"@type\":\"Person\",\"name\":\"Liz Landers\"},{\"@type\":\"Person\",\"name\":\"Jonah Anderson\"}] By — Liz Landers Liz Landers By — J"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Thu 5:34 p.m.",
+      "primary": false,
+      "outlet": "Politico",
+      "title": "Meet the 27-year old behind the protein ad that helped flip Mississippi",
+      "url": "https://www.politico.com/news/2026/11/12/ryan-sayles-scott-colom-viral-protein-ad-01163508",
+      "desc": "",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Politico",
+        "src": "Politico",
+        "byline": ""
+       }
+      ],
+      "copies": []
+     }
+    ],
+    "replaces_top": false,
+    "events": [],
+    "theme": "",
+    "ca_angle": {
+     "specific": 1,
+     "official": 0
+    },
+    "canada": "tie",
+    "canus": false,
+    "incoherent": false,
+    "popular": 0,
+    "us_election": false,
+    "fronts": 0,
+    "fronts_ca": 0,
+    "fronts_who": [],
+    "outled_ca": 4,
+    "judgment": "national",
+    "judgment_why": "National: affects many people; carried across the country (national desks).",
+    "weight": 25.0,
+    "videos": [
+     {
       "net": "CBS News",
-      "url": "https://www.youtube.com/watch?v=pJ8p8u_PnuQ",
-      "title": "What could happen to AI development and chip production as Huang resigns from Nvidia",
-      "img": "https://i.ytimg.com/vi/pJ8p8u_PnuQ/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=bRgnNzzahGk",
+      "title": "NAACP official on Mississippi electing Scott Colom as its first Black senator since the 1800s",
+      "img": "https://i.ytimg.com/vi/bRgnNzzahGk/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CBS News",
+      "url": "https://www.youtube.com/watch?v=GWT-CJFex0o",
+      "title": "Mississippi reacts after Scott Colom wins Senate race",
+      "img": "https://i.ytimg.com/vi/GWT-CJFex0o/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "ABC News",
+      "url": "https://www.youtube.com/watch?v=VUi2GyGikys",
+      "title": "Democrat Scott Colom flips Mississippi Senate seat, the 8th Democratic pickup in Senate",
+      "img": "https://i.ytimg.com/vi/VUi2GyGikys/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "NBC News",
+      "url": "https://www.youtube.com/watch?v=HNZVA2Dlz84",
+      "title": "How Scott Colom flipped deep-red Mississippi blue",
+      "img": "https://i.ytimg.com/vi/HNZVA2Dlz84/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -2063,15 +2101,15 @@
     "key": "auto-6754e954",
     "words": [
      "indigenous",
+     "limited",
      "women’s",
      "funding",
-     "limited",
-     "groups",
-     "budget"
+     "budget",
+     "groups"
     ],
-    "score": 18,
+    "score": 19,
     "outlets": 2,
-    "carriers": 11,
+    "carriers": 12,
     "tag": "Developing",
     "title": "Indigenous women's groups call out Ottawa over funding in new federal budget",
     "url": "https://www.cp24.com/news/canada/2026/11/12/indigenous-womens-groups-call-out-ottawa-over-funding-in-new-federal-budget/",
@@ -2094,7 +2132,7 @@
      "alt": "President of the Native Women’s Association of Canada (NWAC) Josie Nepinak, centre, speaks to reporters on Parliament Hill alongside, from left to right, Rosema",
      "outlet": "CP24",
      "url": "https://www.cp24.com/news/canada/2026/11/12/indigenous-womens-groups-call-out-ottawa-over-funding-in-new-federal-budget/",
-     "since": "2026-11-13T07:42:23.161571+00:00"
+     "since": "2026-11-13T07:51:26.816652+00:00"
     },
     "photo_seen": [
      "https://www.cp24.com/resizer/v2/L3N2I3DFAONNU7VYMKKVI4R2WY.jpg?smart=true&auth=1f3a60ed114383e92f47b960e12fd8916447ec2735794e037bc6d4ca4f2e9099&width=1200&height=630"
@@ -2107,6 +2145,14 @@
       "alt": "President of the Native Women’s Association of Canada (NWAC) Josie Nepinak, centre, speaks to reporters on Parliament Hill alongside, from left to right, Rosema",
       "outlet": "CP24",
       "url": "https://www.cp24.com/news/canada/2026/11/12/indigenous-womens-groups-call-out-ottawa-over-funding-in-new-federal-budget/"
+     },
+     {
+      "src": "live/img/auto-6754e954-627f20df14.jpg",
+      "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/8/f8/8f8160c5-bf23-5d6c-82e2-9a504cd81347/6af621cdaa99a.image.jpg?crop=1400%2C735%2C0%2C99&resize=1200%2C630&order=crop%2Cresize",
+      "caption": "From: Indigenous women's groups call out Ottawa over funding in new federal budget. — via Toronto Star",
+      "alt": "Indigenous women's groups call out Ottawa over funding in new federal budget",
+      "outlet": "Toronto Star",
+      "url": "https://www.thestar.com/politics/federal/indigenous-women-s-groups-call-out-limited-funding-in-new-federal-budget/article_e818a422-fd69-5d82-9b3d-a83e1546bc2a.html"
      },
      {
       "src": "live/img/auto-6754e954-c1aa816d1d.jpg",
@@ -2142,6 +2188,14 @@
       "title": "Never mind the midterms: Olszewski touts federal budget at Chamber breakfast",
       "url": "https://edmontonjournal.com/news/local-news/olszewski-federal-budget-edmonton",
       "desc": ""
+     },
+     {
+      "t": "Thu 3:27 p.m.",
+      "iso": "2026-11-12T20:27:19+00:00",
+      "outlet": "Toronto Star",
+      "title": "Indigenous women's groups call out Ottawa over funding in new federal budget",
+      "url": "https://www.thestar.com/politics/federal/indigenous-women-s-groups-call-out-limited-funding-in-new-federal-budget/article_e818a422-fd69-5d82-9b3d-a83e1546bc2a.html",
+      "desc": "OTTAWA - Indigenous women's groups say the new federal budget is harming the people they represent by not including funding targeted at violence and community support services."
      },
      {
       "t": "Thu 3:27 p.m.",
@@ -2239,12 +2293,17 @@
      {
       "t": "Thu 3:27 p.m.",
       "primary": false,
-      "outlet": "CityNews Winnipeg",
-      "title": "Indigenous women’s groups call out limited funding in new federal budget",
-      "url": "https://winnipeg.citynews.ca/2026/11/12/indigenous-womens-groups-call-out-limited-funding-in-new-federal-budget/",
-      "desc": "Indigenous women's groups say the new federal budget is harming the people they represent by not including funding targeted at violence and community support services.",
+      "outlet": "Toronto Star",
+      "title": "Indigenous women's groups call out Ottawa over funding in new federal budget",
+      "url": "https://www.thestar.com/politics/federal/indigenous-women-s-groups-call-out-limited-funding-in-new-federal-budget/article_e818a422-fd69-5d82-9b3d-a83e1546bc2a.html",
+      "desc": "OTTAWA - Indigenous women's groups say the new federal budget is harming the people they represent by not including funding targeted at violence and community support services.",
       "wire": "The Canadian Press",
       "by": [
+       {
+        "outlet": "Toronto Star",
+        "src": "The Canadian Press",
+        "byline": "\"Alessia Passafiume The Canadian Press\" \"Alessia Passafium"
+       },
        {
         "outlet": "CityNews Winnipeg",
         "src": "The Canadian Press",
@@ -2293,6 +2352,10 @@
       ],
       "copies": [
        {
+        "outlet": "CityNews Winnipeg",
+        "url": "https://winnipeg.citynews.ca/2026/11/12/indigenous-womens-groups-call-out-limited-funding-in-new-federal-budget/"
+       },
+       {
         "outlet": "CityNews Vancouver",
         "url": "https://vancouver.citynews.ca/2026/11/12/indigenous-womens-groups-call-out-limited-funding-in-new-federal-budget-2/"
        },
@@ -2340,7 +2403,7 @@
     "fronts_who": [],
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (8 cities).",
-    "weight": 37.5,
+    "weight": 39.0,
     "videos": [
      {
       "net": "APTN News",
@@ -2371,8 +2434,8 @@
     "url": "https://abcnews.com/US/victims-deadly-brooklyn-building-collapse/story?id=138098954"
    },
    {
-    "title": "Trump praises Democrat Scott Colom for showing up to Mississippi rally and courting MAGA supporters",
-    "url": "https://www.thestar.com/news/world/united-states/trump-praises-democrat-scott-colom-for-showing-up-to-mississippi-rally-and-courting-maga-supporters/article_084f09d8-3430-586d-af72-66e442c84f0e.html"
+    "title": "Hegseth awards medal to Arlington soldier who scolded his group on decorum",
+    "url": "https://www.cbc.ca/news/world/us-pentagon-hegseth-arlington-controversy-medal-9.7419227"
    }
   ]
  },
@@ -2512,7 +2575,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=AEQiZ5FEYsg",
    "img": "https://i.ytimg.com/vi/AEQiZ5FEYsg/hqdefault.jpg",
-   "up": "2026-11-13",
+   "up": "2026-11-12",
    "added": "2026-11-13T05:54:26.406686+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -2521,7 +2584,7 @@
    "id": "JGiottKd8ak",
    "r": "ca",
    "o": "Global News",
-   "t": "Nvidia ex-CEO Jensen Huang was 'honey trapped' by suspected Chinese agent: investigators",
+   "t": "Nvidia CEO Jensen Huang steps down after being 'honey trapped' by suspected Chinese agent",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=JGiottKd8ak",
@@ -2675,7 +2738,7 @@
    "id": "uLOSnKlHsgw",
    "r": "us",
    "o": "CNN",
-   "t": "Despite security warnings, Lutnick greenlit foreign chip sales",
+   "t": "Commerce Sec. Lutnick faces new scrutiny over approval of China deal",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=uLOSnKlHsgw",
@@ -2696,20 +2759,6 @@
    "img": "https://i.ytimg.com/vi/ejKTsVz1w0k/hqdefault.jpg",
    "up": "2026-11-12",
    "added": "2026-11-13T03:36:46.322064+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "DVdNUnbHPBk",
-   "r": "us",
-   "o": "Bloomberg",
-   "t": "Jensen Huang Saga Tests AI Trade Ahead of Anthropic IPO",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=DVdNUnbHPBk",
-   "img": "https://i.ytimg.com/vi/DVdNUnbHPBk/hqdefault.jpg",
-   "up": "2026-11-12",
-   "added": "2026-11-13T04:38:42.197002+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2840,6 +2889,20 @@
    "geo": "unknown"
   },
   {
+   "id": "EClGJ_S6zWs",
+   "r": "us",
+   "o": "Bloomberg",
+   "t": "Nvidia Names Kress Interim CEO After Huang Exit as Trump Cools on Iran Deal",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=EClGJ_S6zWs",
+   "img": "https://i.ytimg.com/vi/EClGJ_S6zWs/hqdefault.jpg",
+   "up": "2026-11-13",
+   "added": "2026-11-13T07:49:27.052571+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
    "id": "kTNc76jjalM",
    "r": "world",
    "o": "Al Jazeera",
@@ -2941,7 +3004,7 @@
    "id": "uN15Mb5EeFY",
    "r": "world",
    "o": "Sky News",
-   "t": "Trump's key ally, the multiple affairs, and a Chinese spy",
+   "t": "Washington DC shooting: what happened",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=uN15Mb5EeFY",
@@ -3333,6 +3396,13 @@
     "url": "https://winnipeg.citynews.ca/2026/11/12/democrats-blue-tsunami-could-be-reversing-travel-turnoff-of-canada-u-s-trade-war/"
    },
    {
+    "t": "Thu 5:00 a.m.",
+    "iso": "2026-11-12T10:00:00+00:00",
+    "outlet": "Toronto Star",
+    "title": "Carney set to sign two Asian trade deals on nine-day, four-summit trip that tests his middle-power pitch",
+    "url": "https://www.thestar.com/politics/carney-set-to-sign-two-asian-trade-deals-on-nine-day-four-summit-trip-that-tests-his-middle-power-pitch/article_e38f9129-af57-4c82-ae73-3cc23ac1606a.html"
+   },
+   {
     "t": "Wed 11:46 a.m.",
     "iso": "2026-11-11T16:46:55+00:00",
     "outlet": "BNN Bloomberg",
@@ -3346,8 +3416,8 @@
   "edition": "Friday morning, November 13",
   "lines": [
    "Good morning. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
-   "Nvidia’s advanced chips are widely used to develop AI models, making the company key in the U.S. race against China to build superior AI systems, AFP reports.",
    "The federal government has served Stellantis with a notice of default on its funding agreement after the automaker signed a deal to sell an assembly plant to Roshel, The Canadian Press reports.",
+   "Nvidia’s advanced chips are widely used to develop AI models, making the company key in the U.S. race against China to build superior AI systems, AFP reports.",
    "Widespread outage hits Outlook, other Microsoft apps, The Associated Press reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
   ]
@@ -3767,29 +3837,17 @@
    "city": "Kyiv",
    "tz": "Europe/Kyiv",
    "world": true,
-   "w": "Canada–EU",
-   "label": "Ukraine envoy row hijacks EU leaders’ first AI summit",
-   "u": "https://www.euronews.com/2026/11/13/ukraine-envoy-row-hijacks-eu-leaders-first-ai-summit",
-   "title": "Ukraine envoy row hijacks EU leaders’ first AI summit",
+   "w": "Talks",
+   "label": "European negotiators could be set to join Ukraine peace…",
+   "u": "https://www.euronews.com/2026/11/13/european-negotiators-could-be-set-to-join-ukraine-peace-talks",
+   "title": "European negotiators could be set to join Ukraine peace talks",
    "outlet": "Euronews",
-   "t": "Fri 1:00 a.m.",
-   "hot": false
+   "t": "Fri 2:41 a.m.",
+   "hot": true
   }
  ],
  "bigweek": [],
  "desks": [
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Fri 2:19 a.m.",
-   "iso": "2026-11-13T07:19:52+00:00",
-   "title": "EU leaders in Dublin grapple with who speaks for Europe in peace talks",
-   "summary": "Good morning. I’m Luca Bertuzzi, holding the pen for today’s newsletter. The Ukraine peace talks, and the question of who should speak for Europe at the table, have swamped the informal EU summit, kicking off another round of the name game. #EuropeToday",
-   "outlet": "Euronews, Fox News, Kyiv Independent, Toronto Star (AP), The Japan Times (AFP), Al Jazeera, BBC News, CBC News, CTV News (CP)",
-   "n": 9,
-   "url": "https://www.euronews.com/2026/11/13/eu-leaders-gather-in-dublin-to-decide-who-will-speak-for-europe-in-peace-talks",
-   "img": "https://images.euronews.com/articles/stories/09/99/03/60/1200x675_cmsv2_4fcd02a8-6bf7-5ca7-a26f-9c135d3957e4-9990360.jpg"
-  },
   {
    "desk": "us",
    "pic": "podium",
@@ -3801,6 +3859,18 @@
    "n": 7,
    "url": "https://www.cbsnews.com/news/hegseth-medal-reprimand-tomb-of-the-unknown-soldier/",
    "img": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/11/12/3e03a3ba-436d-4aee-981b-0a5bbc12fe2e/thumbnail/1200x630g2/1b639b847e13423d144c73af2377518d/screenshot-2026-11-12-at-11-43-20-am.png"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Fri 2:41 a.m.",
+   "iso": "2026-11-13T07:41:27+00:00",
+   "title": "European negotiators could be set to join Ukraine peace talks",
+   "summary": "\"Both sides have now agreed to expand the next round of negotiations to include our European partners,\" US special envoy Jared Kushner said. Moscow has not confirmed whether it has agreed to include European negotiators in subsequent talks.",
+   "outlet": "Euronews (AP), Euronews, Fox News, The Guardian, The Japan Times (AFP), CBC News",
+   "n": 6,
+   "url": "https://www.euronews.com/2026/11/13/european-negotiators-could-be-set-to-join-ukraine-peace-talks",
+   "img": "https://images.euronews.com/articles/stories/09/99/08/99/1200x675_cmsv2_6f90f642-98ec-59bf-9dba-55f1ea9a907e-9990899.jpg"
   },
   {
    "desk": "us",
@@ -3821,22 +3891,10 @@
    "iso": "2026-11-13T01:48:16+00:00",
    "title": "Trump praises Democrat Scott Colom for showing up to Mississippi rally and courting MAGA supporters",
    "summary": "WASHINGTON (AP) — President Donald Trump on Thursday heaped praise on Mississippi's Sen.-elect Scott Colom for courting some of his hardcore MAGA supporters in the final days of the midterm",
-   "outlet": "Toronto Star + CityNews (AP), The Hill, CTV News (CP), PBS NewsHour, Politico",
-   "n": 5,
+   "outlet": "Toronto Star + CityNews (AP), The Hill, CTV News (CP), PBS NewsHour, Politico, VOCM",
+   "n": 6,
    "url": "https://www.thestar.com/news/world/united-states/trump-praises-democrat-scott-colom-for-showing-up-to-mississippi-rally-and-courting-maga-supporters/article_084f09d8-3430-586d-af72-66e442c84f0e.html",
    "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/f/b1/fb11910d-f596-5358-a14b-af1e10857cfb/6af66cc8eb317.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Fri 2:07 a.m.",
-   "iso": "2026-11-13T07:07:41+00:00",
-   "title": "A baffling trail from Australia to Singapore: what is Megaspeed, the company implicated in downfall of Nvidia’s Jensen Huang?",
-   "summary": "Few solid clues have emerged as to the true nature of Megaspeed, whose former director Alice Huang has been accused of being a Chinese spy",
-   "outlet": "The Guardian, The Japan Times (AFP), CBC News, Toronto Star",
-   "n": 4,
-   "url": "https://www.theguardian.com/technology/2026/nov/13/a-baffling-trail-from-australia-to-singapore-what-is-megaspeed-the-company-implicated-in-downfall-of-nvidias-jensen-huang",
-   "img": "https://i.guim.co.uk/img/media/b6d8e7412b6ad0886ec252e47c04e538337b8daf/867_0_4345_3476/master/4345.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=15b5dfb0cf6ef819e5c5f9511ecbecb3"
   },
   {
    "desk": "us",
@@ -3881,10 +3939,22 @@
    "iso": "2026-11-13T02:21:56+00:00",
    "title": "‘To be frank, I’m fed up’: Minister Joly slams Stellantis after meeting over plant sale",
    "summary": "The federal government has served Stellantis with a notice of default on its funding agreement after the automaker signed a deal to sell an assembly plant to Roshel.",
-   "outlet": "CTV News + Lethbridge Herald + CP24 + BNN Bloomberg, CBC News, Canada's National Observer, Global News",
+   "outlet": "CTV News + Toronto Star + CP24 + BNN Bloomberg, Toronto Star, CBC News, Canada's National Observer",
    "n": 4,
    "url": "https://www.ctvnews.ca/business/autos/article/ottawa-serves-stellantis-notice-of-default-on-funding-agreement-after-roshel-deal/",
    "img": "https://www.ctvnews.ca/resizer/v2/YGE4MR4SKNHGBITI7GVN67C4PI.jpg?smart=true&auth=77ab5c8c1199b5c38d9c202e9afafe86257685aa59947f0eca9a239de45dcc8f&width=1200&height=630"
+  },
+  {
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Thu 8:55 p.m.",
+   "iso": "2026-11-13T01:55:59.197000+00:00",
+   "title": "Feds say Stellantis owes 'hundreds of millions' in subsidies, company offers $24M",
+   "summary": "Automaker Stellantis says it will pay back $24 million in federal subsidies after it announced plans to sell its Brampton, Ont. assembly plant — but Industry Minister Mélanie Joly says the company owes far more than what it is offering.",
+   "outlet": "CBC News, Prime Minister of Canada, CBC News + CP24 + BNN Bloomberg + APTN News, Global News",
+   "n": 4,
+   "url": "https://www.cbc.ca/news/politics/resolution-process-terminated-government-stellantis-brampton-plant-9.7419553",
+   "img": "https://i.cbc.ca/ais/0c82abd2-7142-4e99-8140-83321731d4fb,1794525452592/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C45%2C3584%2C2016%29%3BResize%3D620"
   },
   {
    "desk": "world",
@@ -4007,6 +4077,18 @@
    "img": ""
   },
   {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Thu 8:44 p.m.",
+   "iso": "2026-11-13T01:44:31+00:00",
+   "title": "Youth, 17, receives two-year custodial sentence for March synagogue shootings",
+   "summary": "",
+   "outlet": "Toronto Sun, CTV News + CP24 (CP)",
+   "n": 2,
+   "url": "https://torontosun.com/news/local-news/youth-sentenced-toronto-area-synagogue-shootings",
+   "img": ""
+  },
+  {
    "desk": "politics",
    "pic": "parliament",
    "t": "Thu 7:04 p.m.",
@@ -4037,7 +4119,7 @@
    "iso": "2026-11-12T22:00:18+00:00",
    "title": "News of the day: Senators lose Nick Cousins for at least a week following violent hit from Jakob Chychrun; Budget reinvests in parts of public service cut last year, economist says; Outgoing councillors bid emotional farewell to Ottawa City Hall",
    "summary": "",
-   "outlet": "Ottawa Citizen + Edmonton Journal, CityNews Winnipeg + CityNews Vancouver + CityNews Ottawa + CityNews Montreal + 5 more (CP)",
+   "outlet": "Ottawa Citizen + Edmonton Journal, Toronto Star + CityNews Winnipeg + CityNews Vancouver + CityNews Ottawa + 5 more (CP)",
    "n": 2,
    "url": "https://ottawacitizen.com/news/local-news/news-of-the-day-senators-lose-nick-cousins-for-at-least-a-week-following-violent-hit-from-jakob-chychrun-budget-reinvests-in-parts-of-public-service-cut-last-year-economist-says-outgoing-councillo",
    "img": ""
@@ -4125,18 +4207,6 @@
    "n": 1,
    "url": "https://www.thestar.com/news/canada/quebec/confining-kids-in-lockers-as-punishment-unacceptable-quebec-education-minister/article_c9b6a6c4-2eba-5170-b9b5-9058240ae210.html",
    "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/1/8a/18a85565-956b-5a91-ae50-36372776e656/6af645043a78d.image.jpg?crop=1452%2C762%2C0%2C158&resize=1200%2C630&order=crop%2Cresize"
-  },
-  {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Thu 2:14 p.m.",
-   "iso": "2026-11-12T19:14:53+00:00",
-   "title": "N.S. environment minister says he's analyzing data centre regulations, but won't provide details",
-   "summary": "Environment Minister Tim Halman says officials in his department are conducting an ongoing analysis of regulations and how they could be strengthened for data centre development, but the leader of the Official Opposition is accusing him of suggesting he’s listening while promising to do nothing.",
-   "outlet": "CBC News",
-   "n": 1,
-   "url": "https://www.cbc.ca/news/canada/nova-scotia/tim-halman-claudia-chender-environment-data-centres-everwind-anthropic-9.7419528?cmp=rss",
-   "img": "https://i.cbc.ca/ais/d7849ff5-63de-438f-b720-1a074748240c,1776975726711/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C33%2C1223%2C687%29%3BResize%3D620"
   }
  ],
  "reads": [
@@ -4280,26 +4350,6 @@
     "https://globalnews.ca/news/12148340/polar-vortex-disruption-canada/",
     "",
     ""
-   ]
-  },
-  {
-   "o": "Toronto Star",
-   "ca": true,
-   "h": [
-    "Toronto Star News - Breaking News Stories",
-    "Stellantis assembly plant sale breaks funding deal, Joly warns",
-    "Mark Carney distances Ottawa from Stellantis plant sale",
-    "Stock markets swing wildly as Nvidia CEO Jensen Huang resigns over affairs, including with alleged Chinese spy",
-    "Amid reports of three affairs, Nvidia’s Huang ousted by board in move that roils AI economy",
-    "Nvidia CEO spy scandal: Other romances — including in Canada — that raised security concerns"
-   ],
-   "u": [
-    "",
-    "https://www.thestar.com/business/joly-to-meet-with-stellantis-unifor-today-over-controversial-sale-of-brampton-plant-to-roshel/article_caeb8109-cdd6-4630-a032-d2375ff3876f.html",
-    "https://www.thestar.com/politics/federal/mark-carney-distances-ottawa-from-stellantis-plant-sale/article_6ac0309a-4c6b-4e87-814a-e54d27b1241e.html",
-    "https://www.thestar.com/business/stock-markets-swing-wildly-as-nvidia-ceo-jensen-huang-resigns-over-affairs-including-with-alleged-chinese-spy/article_f9305d84-890b-4243-94f7-fca0e06ba6f8.html",
-    "https://www.thestar.com/business/technology/nvidia-s-huang-ousted-by-board-in-move-that-roils-ai-economy/article_8c99cbc4-fdc5-5c0d-9687-37d297692584.html",
-    "https://www.thestar.com/news/world/nvidia-ceo-spy-scandal-other-romances-including-in-canada-that-raised-security-concerns/article_ae3f6b09-84b3-423b-8029-3b3870180324.html"
    ]
   },
   {
@@ -4540,7 +4590,7 @@
     "url": "https://www.youtube.com/watch?v=Lhk3Gu0YeRs",
     "img": "https://i.ytimg.com/vi/Lhk3Gu0YeRs/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "274",
+    "watching": "271",
     "rolling": true
    },
    {
@@ -4550,7 +4600,7 @@
     "url": "https://www.youtube.com/watch?v=xMboXwD4MJs",
     "img": "https://i.ytimg.com/vi/xMboXwD4MJs/hqdefault.jpg",
     "story": "Rayner approves plans to house more than 1,250 asylum seekers near Pid",
-    "watching": "386",
+    "watching": "394",
     "reports": [
      {
       "outlet": "The Guardian",
@@ -4571,6 +4621,10 @@
    {
     "net": "CBS News",
     "url": "https://www.youtube.com/watch?v=7IhhvdVUlKM"
+   },
+   {
+    "net": "NBC News",
+    "url": "https://www.youtube.com/watch?v=g4vI3ZplCys"
    },
    {
     "net": "ABC News",
@@ -4599,10 +4653,6 @@
    {
     "net": "LiveNOW from FOX",
     "url": "https://www.youtube.com/watch?v=C96oohpWBGw"
-   },
-   {
-    "net": "FRANCE 24 English",
-    "url": "https://www.youtube.com/watch?v=HvZt-nh9sGg"
    }
   ]
  },
@@ -4694,21 +4744,6 @@
    ],
    "views": []
   },
-  "auto-a735e771": {
-   "ties": [
-    "moscow",
-    "ukraine"
-   ],
-   "stories": [],
-   "views": [
-    {
-     "outlet": "Atlantic Council",
-     "kind": "Think tank",
-     "title": "Putin’s chief negotiator vows to return ‘every inch of Russian land’ in Ukraine",
-     "url": "https://www.atlanticcouncil.org/blogs/ukrainealert/putins-chief-negotiator-vows-to-return-every-inch-of-russian-land-in-ukraine/"
-    }
-   ]
-  },
   "auto-b8d2c236": {
    "ties": [
     "huang",
@@ -4722,6 +4757,23 @@
      "title": "Huang's exit, AI bubble and financial crisis fears in focus on Web Summit's last day",
      "url": "https://www.euronews.com/2026/11/12/huangs-exit-ai-bubble-and-financial-crisis-fears-in-focus-on-web-summits-last-day",
      "tie": "Huang"
+    }
+   ],
+   "views": []
+  },
+  "auto-e44afb0e": {
+   "ties": [
+    "colom",
+    "senate"
+   ],
+   "stories": [
+    {
+     "t": "Thu 11:16 p.m.",
+     "iso": "2026-11-13T04:16:44+00:00",
+     "outlet": "Euronews",
+     "title": "US senator Chris Van Hollen to challenge Chuck Schumer for Senate majority leader",
+     "url": "https://www.euronews.com/2026/11/13/us-senator-chris-van-hollen-to-challenge-chuck-schumer-for-senate-majority-leader",
+     "tie": "Senate"
     }
    ],
    "views": []
@@ -4775,49 +4827,6 @@
   }
  },
  "canangle": {
-  "auto-a735e771": {
-   "story": "EU leaders in Dublin grapple with who speaks for Europe in peace talks",
-   "us": false,
-   "specific": 3,
-   "stories": [
-    {
-     "t": "Thu 6:31 a.m.",
-     "iso": "2026-11-12T11:31:05+00:00",
-     "outlet": "Canada's National Observer",
-     "title": "Carney arrives in Dublin to begin four-country trip",
-     "url": "https://www.nationalobserver.com/2026/11/12/news/carney-arrives-dublin-begin-four-country-trip",
-     "ca": false,
-     "tie": ""
-    },
-    {
-     "t": "Thu 4:23 a.m.",
-     "iso": "2026-11-12T09:23:00+00:00",
-     "outlet": "Lethbridge Herald",
-     "title": "In the news today: Carney in Dublin, Stellantis talks, B.C. flooding, MAID widow plea",
-     "url": "https://lethbridgeherald.com/news/national-news/2026/11/12/in-the-news-today-carney-in-dublin-stellantis-talks-b-c-flooding-maid-widow-plea/",
-     "ca": false,
-     "tie": ""
-    },
-    {
-     "t": "Wed 9:36 p.m.",
-     "iso": "2026-11-12T02:36:08+00:00",
-     "outlet": "BNN Bloomberg",
-     "title": "PM Carney touches down in Dublin, set to address European leaders",
-     "url": "https://www.bnnbloomberg.ca/business/politics/2026/11/12/pm-carney-touches-down-in-dublin-set-to-address-european-leaders/",
-     "ca": true,
-     "tie": ""
-    }
-   ],
-   "official": [
-    {
-     "outlet": "Mark Carney",
-     "title": "Prime Minister Carney meets with Prime Minister of Greece Kyriakos Mitsotakis",
-     "url": "https://www.pm.gc.ca/en/news/readouts/2026/11/12/prime-minister-carney-meets-prime-minister-greece-kyriakos-mitsotakis",
-     "t": "Nov 12"
-    }
-   ],
-   "views": []
-  },
   "auto-b8d2c236": {
    "story": "A baffling trail from Australia to Singapore: what is Megaspeed, the company implicated in downfall of Nvidia’s Jensen Huang?",
    "us": false,
@@ -4839,6 +4848,24 @@
      "title": "Nvidia CEO Jensen Huang’s resignation sends shockwaves through Canadian business and tech",
      "url": "https://thelogic.co/news/jensen-huang-nvidia-resignation-impact-canada-cohere/",
      "ca": false,
+     "tie": ""
+    }
+   ],
+   "official": [],
+   "views": []
+  },
+  "auto-e44afb0e": {
+   "story": "NAACP official on Mississippi electing Scott Colom as its first Black senator since the 1800s",
+   "us": false,
+   "specific": 1,
+   "stories": [
+    {
+     "t": "Tue 10:30 a.m.",
+     "iso": "2026-11-10T15:30:00+00:00",
+     "outlet": "Toronto Star",
+     "title": "Doug Ford names hand-picked regional chairs with sweeping new powers, including Scott Aitchison",
+     "url": "https://www.thestar.com/politics/provincial/doug-ford-appoints-regional-chairs-including-scott-aitchison-and-steven-del-duca/article_20c9a5fc-f601-4c1a-901d-7046a8dcdd3a.html",
+     "ca": true,
      "tie": ""
     }
    ],
@@ -5193,8 +5220,8 @@
    "at": "2026-10-29T02:33:18.869844+00:00"
   },
   "0bLqaqPAt_k": {
-   "v": "unplayable",
-   "at": "2026-11-13T07:39:26.643476+00:00"
+   "v": "ok",
+   "at": "2026-11-13T07:49:27.052571+00:00"
   },
   "0tRhtNBdSb0": {
    "v": "unknown",
@@ -5894,10 +5921,10 @@
   }
  },
  "geo_blocked": [
-  "-NabWfv-VdA",
-  "0bLqaqPAt_k"
+  "-NabWfv-VdA"
  ],
  "noembed": [
+  "0bLqaqPAt_k",
   "J3FV4iY8p5w",
   "L6qtnHZxwEw",
   "NuEr0Q_AS6U",
