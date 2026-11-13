@@ -1913,14 +1913,94 @@ CAN_AIR = re.compile(r"\b(Air Canada|WestJet|Porter|Flair|Air Transat|Sunwing|Ja
                      r"Ottawa airport|Halifax (?:Stanfield )?airport|Edmonton (?:International )?airport|Winnipeg (?:Richardson )?airport|"
                      r"Canadian (?:airports?|airlines?|travell?ers|passengers|flights)|Canadians? (?:travell?ing|flying|stranded)|"
                      r"Transport Canada|Canada's airports|airports? in Canada|flights? (?:to|from|in) Canada|cross-border flights?)\b", re.I)
+AIR_INTEL = re.compile(r"\bground ?-?stops?\b|\bnational(?:wide)? stop\b|\bFAA\b|\bU\.S\.-bound\b|"
+                       r"\b(?:flights?|travel) (?:to|from|between)[^.]{0,40}\b(?:U\.S\.|United States)\b", re.I)
 AIR_WORDS = re.compile(r"\b(ground ?-?stops?|grounded|grounds|delays?|delayed|cancell?ed|cancell?ations?|FAA|stranded|halt\w*|disrupt\w*|outages?|air traffic)\b", re.I)
 AIR_OFFICIAL = [
     ("FAA", "National Airspace System status: live U.S. ground stops and delays", "https://nasstatus.faa.gov/"),
-    ("Air Canada", "Check your Air Canada flight status", "https://www.aircanada.com/ca/en/aco/home/fly/flight-information/flights-status.html"),
-    ("WestJet", "WestJet travel alerts and flight status", "https://www.westjet.com/en-ca/flights/status"),
     ("Toronto Pearson", "Pearson departures and arrivals", "https://www.torontopearson.com/en/departures"),
-    ("Nav Canada", "Nav Canada news and notices", "https://www.navcanada.ca/en/news.aspx"),
+    ("Calgary airport", "YYC travel notice", "https://www.yyc.com/"),
+    ("Edmonton airport", "YEG travel notice", "https://www.flyyeg.com/"),
+    ("Montréal-Trudeau", "YUL travel notice", "https://www.admtl.com/en"),
+    ("Vancouver airport", "YVR flights", "https://www.yvr.ca/en/passengers/flights"),
+    ("Air Canada", "Air Canada travel advisories", "https://www.aircanada.com/ca/en/aco/home/fly/travel-info/travel-advisories.html"),
+    ("WestJet", "WestJet travel advisories", "https://www.westjet.com/en-ca/travel-info/travel-advisories"),
+    ("Porter", "Porter travel advisories", "https://www.flyporter.com/en-ca/travel-information/travel-advisories"),
+    ("Nav Canada", "Nav Canada news releases", "https://www.navcanada.ca/en/news/news-releases.aspx"),
+    ("Transport Canada", "Transport Canada news", "https://tc.canada.ca/en/news"),
 ]
+# the FAA's status page is drawn by script; its own feed says what is stopped right now
+FAA_FEED = "https://nasstatus.faa.gov/api/airport-status-information"
+
+
+# CHECK A SOURCE BEFORE IT GOES UP (Hannah, Fri Nov 13, 2026: Nav Canada's news page was in the Canadian angle on
+# the FAA ground stop, "but there's nothing on the American stoppage. Is there a way to ensure that we check these
+# sites ahead of time to see if there is intel before putting them on the site?"). Every fixed official link (an
+# agency, airline or airport page that is the same address every day) is opened first, on every update. It goes on
+# the page only when the page itself says something about the story right now, and that line is shown with the link
+# so the reader knows what is there before tapping. A page with nothing on the story, or that won't open, stays off.
+_INTEL = {}
+
+
+_END = re.compile(r"(?<!\bU\.S)(?<!\b[A-Z])[.!?](?=\s+[A-Z\"“])")
+_JUNK = re.compile(r"^(?:(?:Skip to (?:main )?content|Home|Passengers|Menu|Search|Close|YYC|YEG|YUL|YVR|YYZ)\s+)+")
+
+
+def _sentence(text, rx, limit=220):
+    """The whole sentence on the page that mentions the story (not a menu or a cut-off half)."""
+    for m in rx.finditer(text):
+        ends = [e.end() for e in _END.finditer(text, max(0, m.start() - 300), m.start())]
+        a = ends[-1] if ends else max(0, m.start() - 120)
+        e = _END.search(text, m.end())
+        b = e.end() if e and e.end() - m.end() < 300 else m.end() + 160
+        line = _JUNK.sub("", text[a:b].strip())
+        # a notice headline run into its text ("FAA ground stop Due to the FAA ground stop, ..."): keep the text
+        hm = re.match(r"^(.{3,60}?)\s+((?:Due|Because|As|Flights|All|U\.S\.|Passengers|Travell?ers)\b.*)$", line)
+        if hm and rx.search(hm.group(2)):
+            line = hm.group(2)
+        if len(line) >= 25:
+            return line if len(line) <= limit else line[:limit].rsplit(" ", 1)[0] + "…"
+    return ""
+
+
+def _faa_now():
+    """What the FAA's own feed lists as stopped right now, in a line, or ""."""
+    x = curl(FAA_FEED, 15)
+    if "<AIRPORT_STATUS_INFORMATION" not in x:
+        return ""
+    gs = re.findall(r"<Program><ARPT>(\w+)</ARPT>.*?<End_Time>([^<]*)</End_Time>", x, re.S)
+    nat = sorted(set(re.findall(r"<ARPT>(\w+)</ARPT><Reason>[^<]*(?:NATIONAL STOP|NAS GS|STOP:NAS)[^<]*</Reason>", x)))
+    bits = []
+    if nat:
+        bits.append("nationwide stop holding departures at " + ", ".join(nat[:6]) + (" and more" if len(nat) > 6 else ""))
+    if gs:
+        bits.append("ground stop for flights to " + ", ".join(a + (" until " + e if e else "") for a, e in gs[:4]))
+    return ("FAA status now: " + "; ".join(bits)) if bits else ""
+
+
+def source_intel(url, rx):
+    """The line on this page about the story right now, or "" when it says nothing about it (cached ten minutes)."""
+    now = datetime.now(timezone.utc).timestamp()
+    key = (url, rx.pattern)
+    if key in _INTEL and now - _INTEL[key][0] < 600:
+        return _INTEL[key][1]
+    if url.startswith("https://nasstatus.faa.gov"):
+        line = _faa_now()
+    else:
+        page = curl(url, 15)
+        page = re.sub(r"(?s)<(script|style|noscript)[^>]*>.*?</\1>", " ", page)
+        text = " ".join(_h.unescape(re.sub(r"<[^>]+>", " ", page)).split())
+        line = _sentence(text, rx)
+    _INTEL[key] = (now, line)
+    return line
+
+
+def checked_sources(cands, rx, keep=6):
+    """Only the official pages that really have something on the story, each with what it says (`what`)."""
+    with ThreadPoolExecutor(6) as ex:
+        lines = list(ex.map(lambda c: source_intel(c[2], rx), cands))
+    return [{"outlet": o, "title": t, "url": u, "t": "", "what": ln, "checked": True}
+            for (o, t, u), ln in zip(cands, lines) if ln][:keep]
 # everyday words that never tie a story to another on their own
 ANGLE_COMMON = set("""street road avenue city town wall journal post times news press herald star sun mail globe report reports
 world national park lake river hill bay north south east west new old first last fire police court house home school
@@ -2090,7 +2170,8 @@ def _angle(name, words, mine, recent, eds, papers, otr, pool, anchor_words=None)
             if CAN_AIR.search(title) and AIR_WORDS.search(title) and not SPORT.search(title + " " + link) and not au.OPINION.search(title + " " + link):
                 add(dt.isoformat(), w.eastern(dt), au.clean_outlet(outlet), title, link, "Flying from Canada")
         if not any(o["url"] in {u for _, _, u in AIR_OFFICIAL} for o in official):
-            official = (official + [{"outlet": o, "title": t, "url": u, "t": ""} for o, t, u in AIR_OFFICIAL])[:6]
+            # each page opened first: only those that say something about the stop right now go up, with that line
+            official = (official + checked_sources(AIR_OFFICIAL, AIR_INTEL))[:6]
     if not (picked or official or views):
         return None
     return {"story": name or (words[0] if words else ""), "us": is_us, "specific": specific, "stories": picked, "official": official, "views": views}
