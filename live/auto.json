@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-13T07:04:18.139597+00:00",
- "checkedLabel": "Fri 2:04 a.m.",
+ "checked": "2026-11-13T07:14:18.101692+00:00",
+ "checkedLabel": "Fri 2:14 a.m.",
  "stories": [
   {
    "key": "top",
@@ -38,11 +38,26 @@
      "url": "https://lethbridgeherald.com/news/national-news/2026/11/12/in-the-news-today-carney-in-dublin-stellantis-talks-b-c-flooding-maid-widow-plea/",
      "iso": "2026-11-12T09:23:00+00:00",
      "t": "Thu 4:23 a.m."
+    },
+    {
+     "outlet": "Toronto Star",
+     "url": "https://www.thestar.com/politics/his-wife-died-by-suicide-he-wants-the-government-to-reconsider-its-maid-bill/article_f60c8547-ba85-5cc9-994c-b2e3a8194941.html",
+     "iso": "2026-11-12T09:00:00+00:00",
+     "t": "Thu 4:00 a.m."
     }
    ]
   }
  ],
  "wire": [
+  [
+   "Fri 2:11 a.m.",
+   "U.S.",
+   "Trump says \"we don't need a deal with Iran\"",
+   "CBS News",
+   "https://www.cbsnews.com/live-updates/iran-war-us-nuclear-strait-of-hormuz/",
+   "2026-11-13T07:11:12+00:00",
+   1
+  ],
   [
    "Fri 2:00 a.m.",
    "Latest",
@@ -80,6 +95,15 @@
    1
   ],
   [
+   "Fri 1:50 a.m.",
+   "World",
+   "Pakistan's military says 43 militants were killed in raids on their hideouts in the northwest",
+   "Toronto Star",
+   "https://www.thestar.com/news/world/asia/pakistan-s-military-says-43-militants-were-killed-in-raids-on-their-hideouts-in-the-northwest/article_513d96c1-c419-5ad9-82c0-8eabd9de04bc.html",
+   "2026-11-13T06:50:43+00:00",
+   1
+  ],
+  [
    "Fri 1:46 a.m.",
    "World",
    "US reports record number of deportations and arrests in 2026",
@@ -87,15 +111,6 @@
    "https://www.aljazeera.com/news/2026/11/13/us-reports-record-number-of-deportations-and-arrests-in-2026?traffic_source=rss",
    "2026-11-13T06:46:35+00:00",
    1
-  ],
-  [
-   "Fri 1:46 a.m.",
-   "U.S.",
-   "China’s access to Nvidia chips in doubt as curbs gain traction in U.S. Congress",
-   "The Japan Times",
-   "https://www.japantimes.co.jp/news/2026/11/13/world/china-access-nvidia-chips-doubt/",
-   "2026-11-13T06:46:00+00:00",
-   2
   ],
   [
    "Fri 1:22 a.m.",
@@ -258,18 +273,14 @@
    "https://www.thestar.com/news/world/united-states/democratic-political-group-launches-new-push-to-shape-ai-agenda-ahead-of-2028/article_92a244a9-1de8-5ec2-b590-8cdfb057463d.html",
    "2026-11-13T05:01:58+00:00",
    1
-  ],
-  [
-   "Fri 12:01 a.m.",
-   "U.S.",
-   "Trump's Justice Department faces a new era of scrutiny under a Democratic-led Congress",
-   "Toronto Star",
-   "https://www.thestar.com/news/world/united-states/trump-s-justice-department-faces-a-new-era-of-scrutiny-under-a-democratic-led-congress/article_db7987e7-ffd1-5395-8926-c000a89ca183.html",
-   "2026-11-13T05:01:54+00:00",
-   1
   ]
  ],
  "blogs": [
+  {
+   "url": "https://www.thestar.com/news/gta/toronto-election-results-live/article_3ec1c84c-3d92-4440-b764-ac02c6602fb0.html",
+   "updated": "2026-11-13T04:05:03+00:00",
+   "ended": true
+  },
   {
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/27/israel-election-results-live-exit-polls-soon-as-netanyahu-faces-tight-race",
    "updated": "2026-10-28T22:40:53+00:00",
@@ -293,6 +304,19 @@
  ],
  "leads": [
   {
+   "score": 21,
+   "title": "Carney aware of 'some aspects' of Stellantis auto plant sale, but says company still broke deal",
+   "url": "https://www.cbc.ca/news/politics/stellantis-carney-deal-plant-9.7418797",
+   "outlets": 5,
+   "why": [
+    "National Newswatch #1",
+    "CBC News front #2",
+    "National Newswatch #2",
+    "National Newswatch #6"
+   ],
+   "theme": "Canadian auto jobs"
+  },
+  {
    "score": 20,
    "title": "Nvidia CEO's resignation after affair with suspected Chinese spy rattles markets, tech world",
    "url": "https://www.cbc.ca/news/business/nvidia-jensen-huang-ceo-selloff-investments-retirement-9.7420093",
@@ -313,23 +337,10 @@
    "theme": "Microsoft outage"
   },
   {
-   "score": 20,
-   "title": "Carney aware of 'some aspects' of Stellantis auto plant sale, but says company still broke deal",
-   "url": "https://www.cbc.ca/news/politics/stellantis-carney-deal-plant-9.7418797",
-   "outlets": 4,
-   "why": [
-    "National Newswatch #1",
-    "CBC News front #2",
-    "National Newswatch #2",
-    "National Newswatch #6"
-   ],
-   "theme": "Canadian auto jobs"
-  },
-  {
-   "score": 18,
+   "score": 19,
    "title": "Never mind the midterms: Olszewski touts federal budget at Chamber breakfast",
    "url": "https://edmontonjournal.com/news/local-news/olszewski-federal-budget-edmonton",
-   "outlets": 10,
+   "outlets": 11,
    "why": [
     "National Newswatch #10",
     "National Newswatch #16",
@@ -483,8 +494,8 @@
      {
       "src": "live/img/auto-e9e3f04b-0181b0fe62.jpg",
       "orig": "https://images.euronews.com/articles/stories/09/99/06/52/1200x675_cmsv2_aef5001d-e5f6-5af5-ae9d-024d1484ab85-9990652.jpg",
-      "caption": "Microsoft Outlook global outage repair efforts not going 'as expected'. — via Euronews",
-      "alt": "Microsoft Outlook global outage repair efforts not going 'as expected'",
+      "caption": "Worldwide Microsoft outage hits Outlook, Teams and Copilot, disrupting thousands. — via Euronews",
+      "alt": "Worldwide Microsoft outage hits Outlook, Teams and Copilot, disrupting thousands",
       "outlet": "Euronews",
       "url": "https://www.euronews.com/2026/11/12/microsoft-outage-hits-outlook-teams-and-copilot-disrupting-thousands"
      },
@@ -814,14 +825,6 @@
     "weight": 58,
     "videos": [
      {
-      "net": "CBC News",
-      "url": "https://www.youtube.com/watch?v=OUrTgZiKr-I",
-      "title": "Microsoft says services slowly being restored after widespread outages | Hanomansing Live",
-      "img": "https://i.ytimg.com/vi/OUrTgZiKr-I/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
       "net": "CP24",
       "url": "https://www.youtube.com/watch?v=3xnb6i3PNkk",
       "title": "Microsoft outage responsible for ‘Code Grey’ declared at Toronto Hospital Network",
@@ -830,10 +833,10 @@
       "up": ""
      },
      {
-      "net": "CTV News",
-      "url": "https://www.youtube.com/watch?v=ov9puy3Esjg",
-      "title": "Microsoft outage affecting thousands of users | CTV News Northern Ontario at 6 p.m. Nov. 12, 2026",
-      "img": "https://i.ytimg.com/vi/ov9puy3Esjg/hqdefault.jpg",
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=OUrTgZiKr-I",
+      "title": "Microsoft says services slowly being restored after widespread outages | Hanomansing Live",
+      "img": "https://i.ytimg.com/vi/OUrTgZiKr-I/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
@@ -844,6 +847,14 @@
       "img": "https://i.ytimg.com/vi/iBbonEmdGxw/hqdefault.jpg",
       "rec": false,
       "up": ""
+     },
+     {
+      "net": "NBC News",
+      "url": "https://www.youtube.com/watch?v=wC0lI_jUM8E",
+      "title": "Widespread outage hits Microsoft platforms including Outlook, thousands report issues",
+      "img": "https://i.ytimg.com/vi/wC0lI_jUM8E/hqdefault.jpg",
+      "rec": false,
+      "up": ""
      }
     ]
    },
@@ -852,14 +863,14 @@
     "words": [
      "stellantis",
      "meeting",
-     "slams",
-     "frank",
+     "roshel",
      "plant",
-     "joly"
+     "joly",
+     "i’m"
     ],
-    "score": 20,
+    "score": 21,
     "outlets": 4,
-    "carriers": 7,
+    "carriers": 8,
     "tag": "Developing",
     "title": "‘To be frank, I’m fed up’: Minister Joly slams Stellantis after meeting over plant sale",
     "url": "https://www.ctvnews.ca/business/autos/article/ottawa-serves-stellantis-notice-of-default-on-funding-agreement-after-roshel-deal/",
@@ -909,6 +920,14 @@
       "alt": "Stellantis should 'pay back every penny': Ontario NDP leader",
       "outlet": "CBC News",
       "url": "https://www.cbc.ca/player/play/video/9.7420066"
+     },
+     {
+      "src": "live/img/auto-ab7424e3-5ab0a636e3.jpg",
+      "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/4/71/471450f1-a5bc-5774-9b66-ae59b8b19b6c/6ad1dab873332.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize",
+      "caption": "From: Ottawa serves Stellantis notice of default on funding agreement after Roshel deal. — via Toronto Star",
+      "alt": "Ottawa serves Stellantis notice of default on funding agreement after Roshel deal",
+      "outlet": "Toronto Star",
+      "url": "https://www.thestar.com/business/joly-set-to-hold-meeting-in-toronto-with-stellantis-union-and-ontario-minister/article_9c8867c0-5424-5435-9108-f5506bd3938c.html"
      }
     ],
     "independent": 4,
@@ -944,6 +963,14 @@
       "title": "Stellantis should 'pay back every penny': Ontario NDP leader",
       "url": "https://www.cbc.ca/player/play/video/9.7420066",
       "desc": "It's a high-stakes showdown: Ottawa has served automaker Stellantis with a notice of default and is preparing to sit down with Queen's Park and Stellantis's global CEO — even as Prime Minister Mark Carney admits he was aware of 'some aspects' of the sale beforehand. Ontario NDP Leader Marit Stiles…"
+     },
+     {
+      "t": "Thu 4:00 p.m.",
+      "iso": "2026-11-12T21:00:21+00:00",
+      "outlet": "Toronto Star",
+      "title": "Ottawa serves Stellantis notice of default on funding agreement after Roshel deal",
+      "url": "https://www.thestar.com/business/joly-set-to-hold-meeting-in-toronto-with-stellantis-union-and-ontario-minister/article_9c8867c0-5424-5435-9108-f5506bd3938c.html",
+      "desc": "More than 2,000 workers have been laid off from the Stellantis plant since it was idled in 2023."
      },
      {
       "t": "Thu 7:16 a.m.",
@@ -986,6 +1013,11 @@
         "byline": "{\"name\":\"Canadian Press\",\"@id\":\"https:\\/\\/l"
        },
        {
+        "outlet": "Toronto Star",
+        "src": "The Canadian Press",
+        "byline": "\"Sammy Hudes and Daniel Johnson The Canadian Press\" \"Sammy Hudes and D"
+       },
+       {
         "outlet": "CTV News",
         "src": "The Canadian Press",
         "byline": "\"@type\": \"Person\",\n      \"name\": \"The Canadian Press\",\n      \n    }\n  ]"
@@ -1002,6 +1034,10 @@
        }
       ],
       "copies": [
+       {
+        "outlet": "Toronto Star",
+        "url": "https://www.thestar.com/business/joly-set-to-hold-meeting-in-toronto-with-stellantis-union-and-ontario-minister/article_9c8867c0-5424-5435-9108-f5506bd3938c.html"
+       },
        {
         "outlet": "CTV News",
         "url": "https://www.ctvnews.ca/business/autos/article/ottawa-serves-stellantis-notice-of-default-on-funding-agreement-after-roshel-deal/"
@@ -1088,8 +1124,16 @@
     "leads_ca": true,
     "judgment": "national",
     "judgment_why": "National: affects some people; carried across the country (national desks).",
-    "weight": 43.5,
+    "weight": 45.0,
     "videos": [
+     {
+      "net": "Global News",
+      "url": "https://www.youtube.com/watch?v=jfPhmJaAXmA",
+      "title": "“We’ll sue them”: Feds, Ontario have “levers” to “hold Stellantis to account”: Joly",
+      "img": "https://i.ytimg.com/vi/jfPhmJaAXmA/hqdefault.jpg",
+      "rec": true,
+      "up": ""
+     },
      {
       "net": "CPAC",
       "url": "https://www.youtube.com/watch?v=rXRTI0MOtog",
@@ -1099,26 +1143,18 @@
       "up": ""
      },
      {
-      "net": "CBC News",
-      "url": "https://www.youtube.com/watch?v=GG2-AZt3IOM",
-      "title": "Reporter Roundtable: Stellantis stakeholders gather to discuss plant sale | Power & Politics",
-      "img": "https://i.ytimg.com/vi/GG2-AZt3IOM/hqdefault.jpg",
+      "net": "CP24",
+      "url": "https://www.youtube.com/watch?v=JUI577aS3Ss",
+      "title": "Minister Joly slams Stellantis over Brampton plant sale | CTV News Toronto at Six for Nov. 12, 2026",
+      "img": "https://i.ytimg.com/vi/JUI577aS3Ss/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "CBC News",
-      "url": "https://www.youtube.com/watch?v=UluY82wwpWA",
-      "title": "Stellantis should 'pay back every penny': Ontario NDP leader | Power & Politics",
-      "img": "https://i.ytimg.com/vi/UluY82wwpWA/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CBC News",
-      "url": "https://www.youtube.com/watch?v=zhgoOeQ7Tq8",
-      "title": "Federal government was engaged regularly on Stellantis sale: source | Power & Politics",
-      "img": "https://i.ytimg.com/vi/zhgoOeQ7Tq8/hqdefault.jpg",
+      "net": "CP24",
+      "url": "https://www.youtube.com/watch?v=V_53qGrWFs8",
+      "title": "Minister Joly slams Stellantis after meeting over plant sale | CP24 Live at Five for Nov. 12, 2026",
+      "img": "https://i.ytimg.com/vi/V_53qGrWFs8/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1158,8 +1194,8 @@
     "url": "https://www.ctvnews.ca/business/autos/article/ottawa-serves-stellantis-notice-of-default-on-funding-agreement-after-roshel-deal/",
     "rank": 2,
     "live": "",
-    "weight": 43.5,
-    "score": 20,
+    "weight": 45.0,
+    "score": 21,
     "independent": 4,
     "most_read": 0,
     "canada": "canadian",
@@ -1174,7 +1210,7 @@
      "BNN Bloomberg"
     ],
     "rule": "Canadian, leading the most Canadian front pages: the story Canada's newsrooms are leading with",
-    "carriers": 7,
+    "carriers": 8,
     "judgment": "national",
     "why_judged": "National: affects some people; carried across the country (national desks)."
    },
@@ -1208,12 +1244,31 @@
     "why_judged": "National: leading 9 front pages (CBC News, Toronto Star, The Globe and Mail, BNN Bloomberg, NBC News, CBS News)."
    },
    {
-    "title": "Indigenous women's groups call out Ottawa over funding in new federal budget",
-    "url": "https://www.cp24.com/news/canada/2026/11/12/indigenous-womens-groups-call-out-ottawa-over-funding-in-new-federal-budget/",
+    "title": "Trump praises Democrat Scott Colom for showing up to Mississippi rally and courting MAGA supporters",
+    "url": "https://www.thestar.com/news/world/united-states/trump-praises-democrat-scott-colom-for-showing-up-to-mississippi-rally-and-courting-maga-supporters/article_084f09d8-3430-586d-af72-66e442c84f0e.html",
     "rank": 4,
     "live": "",
-    "weight": 37.5,
-    "score": 18,
+    "weight": 25.0,
+    "score": 9,
+    "independent": 5,
+    "most_read": 0,
+    "canada": "tie",
+    "theme": "",
+    "top": false,
+    "fronts": 0,
+    "fronts_who": [],
+    "rule": "From abroad, tied to Canada",
+    "carriers": 6,
+    "judgment": "national",
+    "why_judged": "National: affects many people; carried across the country (national desks)."
+   },
+   {
+    "title": "Indigenous women's groups call out Ottawa over funding in new federal budget",
+    "url": "https://www.cp24.com/news/canada/2026/11/12/indigenous-womens-groups-call-out-ottawa-over-funding-in-new-federal-budget/",
+    "rank": 5,
+    "live": "",
+    "weight": 39.0,
+    "score": 19,
     "independent": 2,
     "most_read": 0,
     "canada": "canadian",
@@ -1222,14 +1277,14 @@
     "fronts": 0,
     "fronts_who": [],
     "rule": "Canadian, older",
-    "carriers": 11,
+    "carriers": 12,
     "judgment": "national",
     "why_judged": "National: affects many people; carried across the country (8 cities)."
    },
    {
     "title": "Maryland's Van Hollen to challenge Schumer for U.S. Senate leadership post",
     "url": "https://www.cbc.ca/news/world/van-hollen-senate-leadership-challenge-schumer-9.7420238",
-    "rank": 5,
+    "rank": 6,
     "live": "",
     "weight": 40.0,
     "score": 15,
@@ -1247,25 +1302,6 @@
     ],
     "rule": "No Canadian tie",
     "carriers": 12,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (national desks)."
-   },
-   {
-    "title": "Trump praises Democrat Scott Colom for showing up to Mississippi rally and courting MAGA supporters",
-    "url": "https://www.thestar.com/news/world/united-states/trump-praises-democrat-scott-colom-for-showing-up-to-mississippi-rally-and-courting-maga-supporters/article_084f09d8-3430-586d-af72-66e442c84f0e.html",
-    "rank": 6,
-    "live": "",
-    "weight": 25.0,
-    "score": 9,
-    "independent": 5,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "No Canadian tie",
-    "carriers": 6,
     "judgment": "national",
     "why_judged": "National: affects many people; carried across the country (national desks)."
    },
@@ -1339,8 +1375,8 @@
     "words": [
      "nvidia’s",
      "congress",
-     "jensen",
      "nvidia",
+     "jensen",
      "huang",
      "ceo"
     ],
@@ -1369,7 +1405,7 @@
      "alt": "What we know after Jensen Huang resigns as Nvidia CEO",
      "outlet": "Toronto Star",
      "url": "https://www.thestar.com/news/world/united-states/what-we-know-after-jensen-huang-resigns-as-nvidia-ceo/article_ab13f630-8b55-5cd7-9e60-bf530c64b22b.html",
-     "since": "2026-11-13T07:06:22.569234+00:00"
+     "since": "2026-11-13T07:15:51.776202+00:00"
     },
     "photo_seen": [
      "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/e/76/e76705d1-4cc2-5755-bb29-0924bbd8a9e7/6af68c70b860b.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
@@ -1805,18 +1841,277 @@
     ]
    },
    {
+    "key": "auto-e44afb0e",
+    "words": [
+     "mississippi",
+     "democrat",
+     "scott",
+     "colom",
+     "maga"
+    ],
+    "score": 9,
+    "outlets": 5,
+    "carriers": 6,
+    "tag": "Developing",
+    "title": "Trump praises Democrat Scott Colom for showing up to Mississippi rally and courting MAGA supporters",
+    "url": "https://www.thestar.com/news/world/united-states/trump-praises-democrat-scott-colom-for-showing-up-to-mississippi-rally-and-courting-maga-supporters/article_084f09d8-3430-586d-af72-66e442c84f0e.html",
+    "outlet": "Toronto Star",
+    "t": "Thu 8:48 p.m.",
+    "iso": "2026-11-13T01:48:16+00:00",
+    "summary": "WASHINGTON (AP) — President Donald Trump on Thursday heaped praise on Mississippi's Sen.-elect Scott Colom for courting some of his hardcore MAGA supporters in the final days of the midterm",
+    "first": {
+     "outlet": "Politico",
+     "url": "https://www.politico.com/news/2026/11/12/ryan-sayles-scott-colom-viral-protein-ad-01163508",
+     "t": "Thu 5:34 p.m.",
+     "title": "Meet the 27-year old behind the protein ad that helped flip Mississippi",
+     "iso": "2026-11-12T22:34:55+00:00"
+    },
+    "newest": "2026-11-13T02:20:35+00:00",
+    "photo": {
+     "src": "live/img/auto-e44afb0e-59bb93e214.jpg",
+     "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/f/b1/fb11910d-f596-5358-a14b-af1e10857cfb/6af66cc8eb317.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize",
+     "caption": "From: Trump praises Democrat Scott Colom for showing up to Mississippi rally and courting MAGA supporters. — via Toronto Star",
+     "alt": "Trump praises Democrat Scott Colom for showing up to Mississippi rally and courting MAGA supporters",
+     "outlet": "Toronto Star",
+     "url": "https://www.thestar.com/news/world/united-states/trump-praises-democrat-scott-colom-for-showing-up-to-mississippi-rally-and-courting-maga-supporters/article_084f09d8-3430-586d-af72-66e442c84f0e.html",
+     "since": "2026-11-13T07:16:04.555309+00:00"
+    },
+    "photo_seen": [
+     "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/f/b1/fb11910d-f596-5358-a14b-af1e10857cfb/6af66cc8eb317.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
+    ],
+    "photos": [
+     {
+      "src": "live/img/auto-e44afb0e-59bb93e214.jpg",
+      "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/f/b1/fb11910d-f596-5358-a14b-af1e10857cfb/6af66cc8eb317.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize",
+      "caption": "From: Trump praises Democrat Scott Colom for showing up to Mississippi rally and courting MAGA supporters. — via Toronto Star",
+      "alt": "Trump praises Democrat Scott Colom for showing up to Mississippi rally and courting MAGA supporters",
+      "outlet": "Toronto Star",
+      "url": "https://www.thestar.com/news/world/united-states/trump-praises-democrat-scott-colom-for-showing-up-to-mississippi-rally-and-courting-maga-supporters/article_084f09d8-3430-586d-af72-66e442c84f0e.html"
+     },
+     {
+      "src": "live/img/auto-e44afb0e-31495c947a.jpg",
+      "orig": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/11/13/6440bdcf-c560-401c-a9e3-dd41fae6d7a8/thumbnail/1200x630/99582c56d33fa8700803a8aeaec1c948/cbsn-fusion-naacp-on-mississippi-electing-scott-colom-first-black-senator-since-1800s-thumbnail.jpg",
+      "caption": "From: NAACP official on Mississippi electing Scott Colom as its first Black senator since the 1800s. — via CBS News",
+      "alt": "NAACP official on Mississippi electing Scott Colom as its first Black senator since the 1800s",
+      "outlet": "CBS News",
+      "url": "https://www.cbsnews.com/video/naacp-on-mississippi-electing-scott-colom-first-black-senator-since-1800s/"
+     }
+    ],
+    "independent": 5,
+    "reports": [
+     {
+      "t": "Thu 9:20 p.m.",
+      "iso": "2026-11-13T02:20:35+00:00",
+      "outlet": "CBS News",
+      "title": "NAACP official on Mississippi electing Scott Colom as its first Black senator since the 1800s",
+      "url": "https://www.cbsnews.com/video/naacp-on-mississippi-electing-scott-colom-first-black-senator-since-1800s/",
+      "desc": "CBS News projects that Democrat Scott Colom will defeat Republican incumbent Cindy Hyde-Smith to become the first Black senator from Mississippi since the 1800s. Charles Taylor, executive director of the Mississippi State Conference of the NAACP, joins CBS News to discuss the significance of…"
+     },
+     {
+      "t": "Thu 8:48 p.m.",
+      "iso": "2026-11-13T01:48:16+00:00",
+      "outlet": "Toronto Star",
+      "title": "Trump praises Democrat Scott Colom for showing up to Mississippi rally and courting MAGA supporters",
+      "url": "https://www.thestar.com/news/world/united-states/trump-praises-democrat-scott-colom-for-showing-up-to-mississippi-rally-and-courting-maga-supporters/article_084f09d8-3430-586d-af72-66e442c84f0e.html",
+      "desc": "WASHINGTON (AP) — President Donald Trump on Thursday heaped praise on Mississippi's Sen.-elect Scott Colom for courting some of his hardcore MAGA supporters in the final days of the midterm"
+     },
+     {
+      "t": "Thu 8:48 p.m.",
+      "iso": "2026-11-13T01:48:16+00:00",
+      "outlet": "CityNews",
+      "title": "Trump praises Democrat Scott Colom for showing up to Mississippi rally and courting MAGA supporters",
+      "url": "https://toronto.citynews.ca/2026/11/12/trump-praises-democrat-scott-colom-for-showing-up-to-mississippi-rally-and-courting-maga-supporters/",
+      "desc": ""
+     },
+     {
+      "t": "Thu 8:06 p.m.",
+      "iso": "2026-11-13T01:06:58+00:00",
+      "outlet": "The Hill",
+      "title": "Trump on Colom’s Mississippi Senate win: ‘I give him a lot of credit’",
+      "url": "https://thehill.com/homenews/campaign/6217818-trump-praises-colom-mississippi-victory/",
+      "desc": ""
+     },
+     {
+      "t": "Thu 6:40 p.m.",
+      "iso": "2026-11-12T23:40:52+00:00",
+      "outlet": "PBS NewsHour",
+      "title": "How Scott Colom won his longshot bid to flip Mississippi's Senate seat",
+      "url": "https://www.pbs.org/newshour/show/how-scott-colom-won-his-longshot-bid-to-flip-mississippis-senate-seat",
+      "desc": "In Mississippi, Democrat Scott Colom won his longshot bid to oust incumbent Republican Sen. Cindy Hyde-Smith. Colom’s victory is a stunning reversal in the deeply conservative state that hasn’t been represented by a Black senator since the Reconstruction era following the Civil War. Liz Landers…"
+     },
+     {
+      "t": "Thu 5:34 p.m.",
+      "iso": "2026-11-12T22:34:55+00:00",
+      "outlet": "Politico",
+      "title": "Meet the 27-year old behind the protein ad that helped flip Mississippi",
+      "url": "https://www.politico.com/news/2026/11/12/ryan-sayles-scott-colom-viral-protein-ad-01163508",
+      "desc": ""
+     }
+    ],
+    "sources": [
+     {
+      "t": "Thu 9:20 p.m.",
+      "primary": false,
+      "outlet": "CBS News",
+      "title": "NAACP official on Mississippi electing Scott Colom as its first Black senator since the 1800s",
+      "url": "https://www.cbsnews.com/video/naacp-on-mississippi-electing-scott-colom-first-black-senator-since-1800s/",
+      "desc": "CBS News projects that Democrat Scott Colom will defeat Republican incumbent Cindy Hyde-Smith to become the first Black senator from Mississippi since the 1800s. Charles Taylor, executive director of the Mississippi State Conference of the NAACP, joins CBS News to discuss the significance of…",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "CBS News",
+        "src": "CBS News",
+        "byline": ""
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Thu 8:48 p.m.",
+      "primary": false,
+      "outlet": "Toronto Star",
+      "title": "Trump praises Democrat Scott Colom for showing up to Mississippi rally and courting MAGA supporters",
+      "url": "https://www.thestar.com/news/world/united-states/trump-praises-democrat-scott-colom-for-showing-up-to-mississippi-rally-and-courting-maga-supporters/article_084f09d8-3430-586d-af72-66e442c84f0e.html",
+      "desc": "WASHINGTON (AP) — President Donald Trump on Thursday heaped praise on Mississippi's Sen.-elect Scott Colom for courting some of his hardcore MAGA supporters in the final days of the midterm",
+      "wire": "The Associated Press",
+      "by": [
+       {
+        "outlet": "Toronto Star",
+        "src": "The Associated Press",
+        "byline": "\"Aamer Madhani The Associated Press\" \"Aamer Madhani The"
+       },
+       {
+        "outlet": "CityNews",
+        "src": "The Associated Press",
+        "byline": "5fe805acc41a6fdf\"}] \"Aamer Madhani, The Associated Press,\" News Staff \n\t\t\tBy"
+       }
+      ],
+      "copies": [
+       {
+        "outlet": "CityNews",
+        "url": "https://toronto.citynews.ca/2026/11/12/trump-praises-democrat-scott-colom-for-showing-up-to-mississippi-rally-and-courting-maga-supporters/"
+       }
+      ]
+     },
+     {
+      "t": "Thu 8:06 p.m.",
+      "primary": false,
+      "outlet": "The Hill",
+      "title": "Trump on Colom’s Mississippi Senate win: ‘I give him a lot of credit’",
+      "url": "https://thehill.com/homenews/campaign/6217818-trump-praises-colom-mississippi-victory/",
+      "desc": "px-captcha",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "The Hill",
+        "src": "The Hill",
+        "byline": ""
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Thu 6:40 p.m.",
+      "primary": false,
+      "outlet": "PBS NewsHour",
+      "title": "How Scott Colom won his longshot bid to flip Mississippi's Senate seat",
+      "url": "https://www.pbs.org/newshour/show/how-scott-colom-won-his-longshot-bid-to-flip-mississippis-senate-seat",
+      "desc": "In Mississippi, Democrat Scott Colom won his longshot bid to oust incumbent Republican Sen. Cindy Hyde-Smith. Colom’s victory is a stunning reversal in the deeply conservative state that hasn’t been represented by a Black senator since the Reconstruction era following the Civil War. Liz Landers…",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "PBS NewsHour",
+        "src": "PBS NewsHour",
+        "byline": "[{\"@type\":\"Person\",\"name\":\"Liz Landers\"},{\"@type\":\"Person\",\"name\":\"Jonah Anderson\"}] By — Liz Landers Liz Landers By — J"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Thu 5:34 p.m.",
+      "primary": false,
+      "outlet": "Politico",
+      "title": "Meet the 27-year old behind the protein ad that helped flip Mississippi",
+      "url": "https://www.politico.com/news/2026/11/12/ryan-sayles-scott-colom-viral-protein-ad-01163508",
+      "desc": "",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Politico",
+        "src": "Politico",
+        "byline": ""
+       }
+      ],
+      "copies": []
+     }
+    ],
+    "replaces_top": false,
+    "events": [],
+    "theme": "",
+    "ca_angle": {
+     "specific": 1,
+     "official": 0
+    },
+    "canada": "tie",
+    "canus": false,
+    "incoherent": false,
+    "popular": 0,
+    "us_election": false,
+    "fronts": 0,
+    "fronts_ca": 0,
+    "fronts_who": [],
+    "outled_ca": 5,
+    "judgment": "national",
+    "judgment_why": "National: affects many people; carried across the country (national desks).",
+    "weight": 25.0,
+    "videos": [
+     {
+      "net": "CBS News",
+      "url": "https://www.youtube.com/watch?v=bRgnNzzahGk",
+      "title": "NAACP official on Mississippi electing Scott Colom as its first Black senator since the 1800s",
+      "img": "https://i.ytimg.com/vi/bRgnNzzahGk/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CBS News",
+      "url": "https://www.youtube.com/watch?v=GWT-CJFex0o",
+      "title": "Mississippi reacts after Scott Colom wins Senate race",
+      "img": "https://i.ytimg.com/vi/GWT-CJFex0o/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "NBC News",
+      "url": "https://www.youtube.com/watch?v=HNZVA2Dlz84",
+      "title": "How Scott Colom flipped deep-red Mississippi blue",
+      "img": "https://i.ytimg.com/vi/HNZVA2Dlz84/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "PBS NewsHour",
+      "url": "https://www.youtube.com/watch?v=GClXzgNczJg",
+      "title": "How Scott Colom won his longshot bid to flip Mississippi's Senate seat",
+      "img": "https://i.ytimg.com/vi/GClXzgNczJg/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     }
+    ]
+   },
+   {
     "key": "auto-6754e954",
     "words": [
      "indigenous",
      "funding",
-     "women’s",
      "limited",
+     "women’s",
      "groups",
      "budget"
     ],
-    "score": 18,
+    "score": 19,
     "outlets": 2,
-    "carriers": 11,
+    "carriers": 12,
     "tag": "Developing",
     "title": "Indigenous women's groups call out Ottawa over funding in new federal budget",
     "url": "https://www.cp24.com/news/canada/2026/11/12/indigenous-womens-groups-call-out-ottawa-over-funding-in-new-federal-budget/",
@@ -1839,7 +2134,7 @@
      "alt": "President of the Native Women’s Association of Canada (NWAC) Josie Nepinak, centre, speaks to reporters on Parliament Hill alongside, from left to right, Rosema",
      "outlet": "CP24",
      "url": "https://www.cp24.com/news/canada/2026/11/12/indigenous-womens-groups-call-out-ottawa-over-funding-in-new-federal-budget/",
-     "since": "2026-11-13T07:06:31.006712+00:00"
+     "since": "2026-11-13T07:15:57.991009+00:00"
     },
     "photo_seen": [
      "https://www.cp24.com/resizer/v2/L3N2I3DFAONNU7VYMKKVI4R2WY.jpg?smart=true&auth=1f3a60ed114383e92f47b960e12fd8916447ec2735794e037bc6d4ca4f2e9099&width=1200&height=630"
@@ -1852,6 +2147,14 @@
       "alt": "President of the Native Women’s Association of Canada (NWAC) Josie Nepinak, centre, speaks to reporters on Parliament Hill alongside, from left to right, Rosema",
       "outlet": "CP24",
       "url": "https://www.cp24.com/news/canada/2026/11/12/indigenous-womens-groups-call-out-ottawa-over-funding-in-new-federal-budget/"
+     },
+     {
+      "src": "live/img/auto-6754e954-627f20df14.jpg",
+      "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/8/f8/8f8160c5-bf23-5d6c-82e2-9a504cd81347/6af621cdaa99a.image.jpg?crop=1400%2C735%2C0%2C99&resize=1200%2C630&order=crop%2Cresize",
+      "caption": "From: Indigenous women's groups call out Ottawa over funding in new federal budget. — via Toronto Star",
+      "alt": "Indigenous women's groups call out Ottawa over funding in new federal budget",
+      "outlet": "Toronto Star",
+      "url": "https://www.thestar.com/politics/federal/indigenous-women-s-groups-call-out-limited-funding-in-new-federal-budget/article_e818a422-fd69-5d82-9b3d-a83e1546bc2a.html"
      },
      {
       "src": "live/img/auto-6754e954-c1aa816d1d.jpg",
@@ -1887,6 +2190,14 @@
       "title": "Never mind the midterms: Olszewski touts federal budget at Chamber breakfast",
       "url": "https://edmontonjournal.com/news/local-news/olszewski-federal-budget-edmonton",
       "desc": ""
+     },
+     {
+      "t": "Thu 3:27 p.m.",
+      "iso": "2026-11-12T20:27:19+00:00",
+      "outlet": "Toronto Star",
+      "title": "Indigenous women's groups call out Ottawa over funding in new federal budget",
+      "url": "https://www.thestar.com/politics/federal/indigenous-women-s-groups-call-out-limited-funding-in-new-federal-budget/article_e818a422-fd69-5d82-9b3d-a83e1546bc2a.html",
+      "desc": "OTTAWA - Indigenous women's groups say the new federal budget is harming the people they represent by not including funding targeted at violence and community support services."
      },
      {
       "t": "Thu 3:27 p.m.",
@@ -1984,12 +2295,17 @@
      {
       "t": "Thu 3:27 p.m.",
       "primary": false,
-      "outlet": "CityNews Winnipeg",
-      "title": "Indigenous women’s groups call out limited funding in new federal budget",
-      "url": "https://winnipeg.citynews.ca/2026/11/12/indigenous-womens-groups-call-out-limited-funding-in-new-federal-budget/",
-      "desc": "Indigenous women's groups say the new federal budget is harming the people they represent by not including funding targeted at violence and community support services.",
+      "outlet": "Toronto Star",
+      "title": "Indigenous women's groups call out Ottawa over funding in new federal budget",
+      "url": "https://www.thestar.com/politics/federal/indigenous-women-s-groups-call-out-limited-funding-in-new-federal-budget/article_e818a422-fd69-5d82-9b3d-a83e1546bc2a.html",
+      "desc": "OTTAWA - Indigenous women's groups say the new federal budget is harming the people they represent by not including funding targeted at violence and community support services.",
       "wire": "The Canadian Press",
       "by": [
+       {
+        "outlet": "Toronto Star",
+        "src": "The Canadian Press",
+        "byline": "\"Alessia Passafiume The Canadian Press\" \"Alessia Passafium"
+       },
        {
         "outlet": "CityNews Winnipeg",
         "src": "The Canadian Press",
@@ -2038,6 +2354,10 @@
       ],
       "copies": [
        {
+        "outlet": "CityNews Winnipeg",
+        "url": "https://winnipeg.citynews.ca/2026/11/12/indigenous-womens-groups-call-out-limited-funding-in-new-federal-budget/"
+       },
+       {
         "outlet": "CityNews Vancouver",
         "url": "https://vancouver.citynews.ca/2026/11/12/indigenous-womens-groups-call-out-limited-funding-in-new-federal-budget-2/"
        },
@@ -2085,7 +2405,7 @@
     "fronts_who": [],
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (8 cities).",
-    "weight": 37.5,
+    "weight": 39.0,
     "videos": [
      {
       "net": "APTN News",
@@ -2110,10 +2430,6 @@
    {
     "title": "Maryland's Van Hollen to challenge Schumer for U.S. Senate leadership post",
     "url": "https://www.cbc.ca/news/world/van-hollen-senate-leadership-challenge-schumer-9.7420238"
-   },
-   {
-    "title": "Trump praises Democrat Scott Colom for showing up to Mississippi rally and courting MAGA supporters",
-    "url": "https://www.thestar.com/news/world/united-states/trump-praises-democrat-scott-colom-for-showing-up-to-mississippi-rally-and-courting-maga-supporters/article_084f09d8-3430-586d-af72-66e442c84f0e.html"
    },
    {
     "title": "What we know about victims of deadly Brooklyn building collapse",
@@ -2270,12 +2586,12 @@
    "id": "JGiottKd8ak",
    "r": "ca",
    "o": "Global News",
-   "t": "Nvidia ex-CEO Jensen Huang was 'honey trapped' by suspected Chinese agent: investigators",
+   "t": "Nvidia CEO Jensen Huang steps down after being 'honey trapped' by suspected Chinese agent",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=JGiottKd8ak",
    "img": "https://i.ytimg.com/vi/JGiottKd8ak/hqdefault.jpg",
-   "up": "2026-11-13",
+   "up": "2026-11-12",
    "added": "2026-11-13T05:54:26.406686+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -2424,7 +2740,7 @@
    "id": "uLOSnKlHsgw",
    "r": "us",
    "o": "CNN",
-   "t": "Despite security warnings, Lutnick greenlit foreign chip sales",
+   "t": "White House alarmed by Lunick not blacklisting Nvidia-linked firm",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=uLOSnKlHsgw",
@@ -2648,7 +2964,7 @@
    "id": "Fk0Ya1wlK7s",
    "r": "world",
    "o": "BBC News",
-   "t": "Inside the secret WW2 plotting room used by the British | BBC News",
+   "t": "Hidden bunker under White Cliffs of Dover opens to public | BBC News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=Fk0Ya1wlK7s",
@@ -2699,6 +3015,34 @@
    "added": "2026-11-13T07:04:18.139597+00:00",
    "pic": "globe",
    "geo": "unknown"
+  },
+  {
+   "id": "uN15Mb5EeFY",
+   "r": "world",
+   "o": "Sky News",
+   "t": "Washington DC shooting: what happened",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=uN15Mb5EeFY",
+   "img": "https://i.ytimg.com/vi/uN15Mb5EeFY/hqdefault.jpg",
+   "up": "2026-11-13",
+   "added": "2026-11-13T07:14:18.101692+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "DYoFgu2R1ck",
+   "r": "world",
+   "o": "Sky News",
+   "t": "The drug lords next door",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=DYoFgu2R1ck",
+   "img": "https://i.ytimg.com/vi/DYoFgu2R1ck/hqdefault.jpg",
+   "up": "2026-11-13",
+   "added": "2026-11-13T07:14:18.101692+00:00",
+   "pic": "globe",
+   "geo": "unknown"
   }
  ],
  "ledes": [
@@ -2736,11 +3080,11 @@
   },
   {
    "o": "Fox News",
-   "h": "Highly contagious bird flu detected in Wisconsin as officials euthanize infected flock",
-   "u": "https://www.foxnews.com/health/highly-contagious-bird-flu-detected-wisconsin-officials-euthanize-infected-flock",
-   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/wisconsin-bird-flu-outbreak-rusk-county.jpg",
-   "w": "Fri 12:20 a.m.",
-   "iso": "2026-11-13T05:20:20+00:00"
+   "h": "Newsom reveals when he'll decide on 2028 White House bid amid growing speculation",
+   "u": "https://www.foxnews.com/politics/newsom-reveals-when-decide-2028-white-house-bid-growing-speculation",
+   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2025/11/newsom-2028-frontrunner.jpg",
+   "w": "Fri 2:08 a.m.",
+   "iso": "2026-11-13T07:08:17+00:00"
   },
   {
    "o": "NPR",
@@ -3054,6 +3398,13 @@
     "url": "https://winnipeg.citynews.ca/2026/11/12/democrats-blue-tsunami-could-be-reversing-travel-turnoff-of-canada-u-s-trade-war/"
    },
    {
+    "t": "Thu 5:00 a.m.",
+    "iso": "2026-11-12T10:00:00+00:00",
+    "outlet": "Toronto Star",
+    "title": "Carney set to sign two Asian trade deals on nine-day, four-summit trip that tests his middle-power pitch",
+    "url": "https://www.thestar.com/politics/carney-set-to-sign-two-asian-trade-deals-on-nine-day-four-summit-trip-that-tests-his-middle-power-pitch/article_e38f9129-af57-4c82-ae73-3cc23ac1606a.html"
+   },
+   {
     "t": "Wed 11:46 a.m.",
     "iso": "2026-11-11T16:46:55+00:00",
     "outlet": "BNN Bloomberg",
@@ -3067,9 +3418,9 @@
   "edition": "Friday morning, November 13",
   "lines": [
    "Good morning. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
+   "The federal government has served Stellantis with a notice of default on its funding agreement after the automaker signed a deal to sell an assembly plant to Roshel, The Canadian Press reports.",
    "Nvidia’s advanced chips are widely used to develop AI models, making the company key in the U.S. race against China to build superior AI systems, AFP reports.",
    "Widespread outage hits Outlook, other Microsoft apps, The Associated Press reports.",
-   "The federal government has served Stellantis with a notice of default on its funding agreement after the automaker signed a deal to sell an assembly plant to Roshel, The Canadian Press reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
   ]
  },
@@ -3590,7 +3941,7 @@
    "iso": "2026-11-13T02:21:56+00:00",
    "title": "‘To be frank, I’m fed up’: Minister Joly slams Stellantis after meeting over plant sale",
    "summary": "The federal government has served Stellantis with a notice of default on its funding agreement after the automaker signed a deal to sell an assembly plant to Roshel.",
-   "outlet": "CTV News + Lethbridge Herald + CP24 + BNN Bloomberg, CBC News, Canada's National Observer, Global News",
+   "outlet": "CTV News + Toronto Star + CP24 + BNN Bloomberg, Toronto Star, CBC News, Canada's National Observer",
    "n": 4,
    "url": "https://www.ctvnews.ca/business/autos/article/ottawa-serves-stellantis-notice-of-default-on-funding-agreement-after-roshel-deal/",
    "img": "https://www.ctvnews.ca/resizer/v2/YGE4MR4SKNHGBITI7GVN67C4PI.jpg?smart=true&auth=77ab5c8c1199b5c38d9c202e9afafe86257685aa59947f0eca9a239de45dcc8f&width=1200&height=630"
@@ -3782,7 +4133,7 @@
    "iso": "2026-11-12T22:00:18+00:00",
    "title": "News of the day: Senators lose Nick Cousins for at least a week following violent hit from Jakob Chychrun; Budget reinvests in parts of public service cut last year, economist says; Outgoing councillors bid emotional farewell to Ottawa City Hall",
    "summary": "",
-   "outlet": "Ottawa Citizen + Edmonton Journal, CityNews Winnipeg + CityNews Vancouver + CityNews Ottawa + CityNews Montreal + 5 more (CP)",
+   "outlet": "Ottawa Citizen + Edmonton Journal, Toronto Star + CityNews Winnipeg + CityNews Vancouver + CityNews Ottawa + 5 more (CP)",
    "n": 2,
    "url": "https://ottawacitizen.com/news/local-news/news-of-the-day-senators-lose-nick-cousins-for-at-least-a-week-following-violent-hit-from-jakob-chychrun-budget-reinvests-in-parts-of-public-service-cut-last-year-economist-says-outgoing-councillo",
    "img": ""
@@ -3853,11 +4204,11 @@
    "t": "Thu 5:54 p.m.",
    "iso": "2026-11-12T22:54:32+00:00",
    "title": "Confining kids in lockers as punishment 'unacceptable': Quebec education minister",
-   "summary": "",
-   "outlet": "Toronto Star + CKOM / PAnow",
+   "summary": "QUÉBEC - Quebec Education Minister Joël Arseneau is speaking out about school personnel who allegedly confined unruly children in a locker north of Montreal.",
+   "outlet": "Toronto Star + CKOM / PAnow (CP)",
    "n": 1,
    "url": "https://www.thestar.com/news/canada/quebec/confining-kids-in-lockers-as-punishment-unacceptable-quebec-education-minister/article_c9b6a6c4-2eba-5170-b9b5-9058240ae210.html",
-   "img": ""
+   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/1/8a/18a85565-956b-5a91-ae50-36372776e656/6af645043a78d.image.jpg?crop=1452%2C762%2C0%2C158&resize=1200%2C630&order=crop%2Cresize"
   }
  ],
  "reads": [
@@ -4174,6 +4525,24 @@
    ]
   },
   {
+   "o": "The New York Times",
+   "ca": false,
+   "h": [
+    "New York Times - Top Stories",
+    "Flow of atmospheric water vapor",
+    "The Athletic Sports coverage",
+    "Cooking Recipes and guides",
+    "Wirecutter Product recommendations"
+   ],
+   "u": [
+    "",
+    "https://www.nytimes.com/interactive/2024/us/atmospheric-river-california-west-tracker.html",
+    "",
+    "",
+    ""
+   ]
+  },
+  {
    "o": "BBC News",
    "ca": false,
    "h": [
@@ -4197,20 +4566,20 @@
    "o": "The Guardian",
    "ca": false,
    "h": [
+    "Technology Microsoft struggles to fix huge outage affecting Outlook and Teams",
+    "Microsoft outage live Microsoft scrambling for new ways to fix global outage after initial attempts fail to restore Outlook services",
+    "Explainer A global Microsoft 365 outage has hit millions – what happened and when will it be fixed?",
     "Jensen Huang Nvidia scandal sparks US national security furore and calls to take tough line on China",
     "Nvidia live Jensen Huang expected to testify before Congress amid calls for crackdown on China chip exports",
-    "Nvidia A timeline of the affair scandal that sank Jensen Huang",
-    "Nvidia Who could replace the departed Jensen Huang as CEO?",
-    "Technology Jensen Huang built an AI kingdom. Now he’s gone, will Nvidia’s ramparts be breached?",
-    "Technology Microsoft struggles to fix huge outage affecting Outlook and Teams"
+    "Nvidia A timeline of the affair scandal that sank Jensen Huang"
    ],
    "u": [
     "",
+    "https://www.theguardian.com/technology/live/2026/nov/13/microsoft-outage-down-today-live-update-outlook-teams-365-when-fixed-latest-status-cause-news",
+    "https://www.theguardian.com/australia-news/2026/nov/13/global-microsoft-outage-what-happened-and-why",
+    "",
     "https://www.theguardian.com/technology/live/2026/nov/13/nvidia-jensen-huang-to-testify-before-congress-live-latest-updates",
-    "https://www.theguardian.com/technology/2026/nov/12/jensen-huang-affair-timeline",
-    "https://www.theguardian.com/technology/2026/nov/12/jensen-huang-nvidia-ceo-replacement",
-    "https://www.theguardian.com/technology/2026/nov/12/jensen-huang-built-an-ai-kingdom-now-hes-gone-will-nvidias-ramparts-be-breached",
-    ""
+    "https://www.theguardian.com/technology/2026/nov/12/jensen-huang-affair-timeline"
    ]
   },
   {
@@ -4243,7 +4612,7 @@
     "url": "https://www.youtube.com/watch?v=Lhk3Gu0YeRs",
     "img": "https://i.ytimg.com/vi/Lhk3Gu0YeRs/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "286",
+    "watching": "279",
     "rolling": true
    },
    {
@@ -4253,7 +4622,7 @@
     "url": "https://www.youtube.com/watch?v=xMboXwD4MJs",
     "img": "https://i.ytimg.com/vi/xMboXwD4MJs/hqdefault.jpg",
     "story": "Rayner approves plans to house more than 1,250 asylum seekers near Pid",
-    "watching": "278",
+    "watching": "299",
     "reports": [
      {
       "outlet": "The Guardian",
@@ -4271,7 +4640,7 @@
     "url": "https://www.youtube.com/watch?v=abtPlpFzLiM",
     "img": "https://i.ytimg.com/vi/abtPlpFzLiM/hqdefault.jpg",
     "story": "US envoys meet Putin as Europe pushes to join Ukraine talks",
-    "watching": "27",
+    "watching": "43",
     "reports": [
      {
       "outlet": "Toronto Star",
@@ -4416,25 +4785,9 @@
   "auto-b8d2c236": {
    "ties": [
     "huang",
-    "nvidia"
+    "jensen"
    ],
    "stories": [
-    {
-     "t": "Fri 12:06 a.m.",
-     "iso": "2026-11-13T05:06:14+00:00",
-     "outlet": "Toronto Star",
-     "title": "Fallout from the Nvidia scandal may dampen the exuberance around the AI boom",
-     "url": "https://www.thestar.com/news/world/united-states/fallout-from-the-nvidia-scandal-may-dampen-the-exuberance-around-the-ai-boom/article_5cf2f5bc-492d-5edb-bce6-46f4749652e7.html",
-     "tie": "Nvidia"
-    },
-    {
-     "t": "Thu 9:02 p.m.",
-     "iso": "2026-11-13T02:02:00+00:00",
-     "outlet": "The Japan Times",
-     "title": "White House weighs Lutnick’s ouster amid Nvidia export concerns, sources say",
-     "url": "https://www.japantimes.co.jp/business/2026/11/13/economy/lutnick-future-white-house-nvidia/",
-     "tie": "Nvidia"
-    },
     {
      "t": "Thu 4:30 p.m.",
      "iso": "2026-11-12T21:30:30+00:00",
@@ -4442,22 +4795,23 @@
      "title": "Huang's exit, AI bubble and financial crisis fears in focus on Web Summit's last day",
      "url": "https://www.euronews.com/2026/11/12/huangs-exit-ai-bubble-and-financial-crisis-fears-in-focus-on-web-summits-last-day",
      "tie": "Huang"
-    },
+    }
+   ],
+   "views": []
+  },
+  "auto-e44afb0e": {
+   "ties": [
+    "colom",
+    "senate"
+   ],
+   "stories": [
     {
-     "t": "Thu 7:09 a.m.",
-     "iso": "2026-11-12T12:09:22+00:00",
-     "outlet": "CP24",
-     "title": "Lutnick stalled Trump crackdown on diversion of Nvidia chips to China, Axios reports",
-     "url": "https://www.cp24.com/news/money/2026/11/12/lutnick-stalled-trump-crackdown-on-diversion-of-nvidia-chips-to-china-axios-reports/",
-     "tie": "Nvidia"
-    },
-    {
-     "t": "Wed 8:45 a.m.",
-     "iso": "2026-11-11T13:45:04+00:00",
-     "outlet": "BNN Bloomberg",
-     "title": "Military-linked Chinese university bought Nvidia chips despite U.S. blacklist: Reuters exclusive",
-     "url": "https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/11/11/military-linked-chinese-university-bought-nvidia-chips-despite-us-blacklist-reuters-exclusive/",
-     "tie": "Nvidia"
+     "t": "Thu 11:16 p.m.",
+     "iso": "2026-11-13T04:16:44+00:00",
+     "outlet": "Euronews",
+     "title": "US senator Chris Van Hollen to challenge Chuck Schumer for Senate majority leader",
+     "url": "https://www.euronews.com/2026/11/13/us-senator-chris-van-hollen-to-challenge-chuck-schumer-for-senate-majority-leader",
+     "tie": "Senate"
     }
    ],
    "views": []
@@ -4532,6 +4886,24 @@
      "title": "Nvidia CEO Jensen Huang’s resignation sends shockwaves through Canadian business and tech",
      "url": "https://thelogic.co/news/jensen-huang-nvidia-resignation-impact-canada-cohere/",
      "ca": false,
+     "tie": ""
+    }
+   ],
+   "official": [],
+   "views": []
+  },
+  "auto-e44afb0e": {
+   "story": "NAACP official on Mississippi electing Scott Colom as its first Black senator since the 1800s",
+   "us": false,
+   "specific": 1,
+   "stories": [
+    {
+     "t": "Tue 10:30 a.m.",
+     "iso": "2026-11-10T15:30:00+00:00",
+     "outlet": "Toronto Star",
+     "title": "Doug Ford names hand-picked regional chairs with sweeping new powers, including Scott Aitchison",
+     "url": "https://www.thestar.com/politics/provincial/doug-ford-appoints-regional-chairs-including-scott-aitchison-and-steven-del-duca/article_20c9a5fc-f601-4c1a-901d-7046a8dcdd3a.html",
+     "ca": true,
      "tie": ""
     }
    ],
