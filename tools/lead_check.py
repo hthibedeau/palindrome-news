@@ -79,6 +79,84 @@ THEMES = [
 # Hannah, Mon Nov 2, 2026 (and Sun Nov 1: a shared party name is never a Canadian angle): a party or a nationality is not
 # a story. "Canadians favour Democrats" (a Canadian poll) and "Democrats condemn Haley Stevens" (Michigan) were fused into
 # one 40-headline story that then led the page. These words never join two headlines on their own.
+BASE_THEMES = list(THEMES)  # the hand-named themes; rank() adds the day's disruptions to THEMES on top of these
+
+
+# BIG DISRUPTIONS ARE ONE STORY, FOUND BY THE CODE ITSELF (Hannah, Thu Nov 12, 2026: "I feel like we're missing the
+# Microsoft story and the breaking news ... it's 74 countries, including Canada. There would be lots of news on that.")
+# The Microsoft 365 outage was told as "Is Outlook down?", "Outlook and Teams down", "Microsoft 365 outage continues",
+# "Code Grey declared at Toronto hospital network amid Microsoft outage", "... hospitals, universities and Via Rail".
+# Those headlines share almost no words, so the outage was cut into scraps: the main one was thrown out as "not one
+# story", and the Toronto hospital scrap (leading 6 front pages, 10 most-read lists) was moved off the top to the
+# Canada desk. Now, whenever at least DISRUPTION_OUTLETS newsrooms carry a headline naming the same company or service
+# (any of its products: Outlook, Teams and Azure are all Microsoft) AND an outage, crash, cyberattack or the like, that
+# disruption becomes a running theme for the run, like the budget: every such headline ranks as ONE story, so it can
+# reach Breaking and the top. Nobody has to add it by hand; it lets go by itself when the headlines stop.
+DISRUPTION_OUTLETS = 3
+DISRUPTION = re.compile(
+    r"\boutages?\b|\b(?:is|are|was|were|goes|go|went|still|remains?|remained|back|knocked|crashed) (?:down|offline)\b|"
+    r"\bdown(?:\?| for (?:hours|users|thousands|millions|many)| again| worldwide| globally| across)|\boffline\b|"
+    r"\bservice (?:disruptions?|issues|problems|interruptions?)\b|\bdisrupt(?:ion|ions|ed|s)\b|\bknocked out\b|"
+    r"\bnot working\b|\b(?:system|systems|network|server|servers|global|IT|tech|technical) (?:crash|failure|glitch|meltdown|problems?|issues?)\b|"
+    r"\bglitch(?:es)?\b|\bcyber ?-?attacks?\b|\bransomware\b|\bdata breach\b|\bhacked\b|\bhack\b|"
+    r"\b(?:services?|access|email|systems?) (?:restored|being restored|coming back|back online)\b|\brestor\w+ (?:services?|access)\b|"
+    r"\bCode Grey\b|\bblackouts?\b", re.I)
+NOT_DISRUPTION = re.compile(r"\bshares?\b|\bstocks?\b|\bearnings\b|\bprofits?\b|\bsteps? down\b|\bstepping down\b|\blayoffs?\b|"
+                            r"\bbuyouts?\b|\bjob cuts\b|\bdeal\b|\bacquisition\b", re.I)
+# Each company or service with the product names its users say (the first name is the story's name).
+DISRUPTION_BRANDS = [
+    ("Microsoft", r"\bMicrosoft\b|\bOutlook\b|\bMS Teams\b|\bMicrosoft Teams\b|\bTeams\b(?= (?:and|down|outage|is|are|,))|\bOffice 365\b|\bM365\b|\bOneDrive\b|\bSharePoint\b|\bCopilot\b|\bAzure\b|\bHotmail\b|\bXbox\b|\bExchange Online\b"),
+    ("Google", r"\bGoogle\b|\bGmail\b|\bYouTube\b|\bAndroid\b"),
+    ("Amazon", r"\bAmazon\b|\bAWS\b|\bAmazon Web Services\b|\bAlexa\b|\bPrime Video\b"),
+    ("Meta", r"\bMeta\b|\bFacebook\b|\bInstagram\b|\bWhatsApp\b|\bThreads\b"),
+    ("Apple", r"\bApple\b|\biCloud\b|\biMessage\b|\bApp Store\b|\bApple Pay\b"),
+    ("Cloudflare", r"\bCloudflare\b"),
+    ("CrowdStrike", r"\bCrowdStrike\b"),
+    ("OpenAI", r"\bOpenAI\b|\bChatGPT\b"),
+    ("X", r"\bX \(formerly Twitter\)|\bTwitter\b|\bX outage\b|\bX is down\b"),
+    ("Starlink", r"\bStarlink\b"),
+    ("Rogers", r"\bRogers\b(?! Centre| Place| Arena| Cup)|\bFido\b|\bChatr\b"),
+    ("Bell", r"\bBell (?:Canada|Mobility|MTS|Aliant|customers|network|outage|services?)\b|\bVirgin Plus\b|\bLucky Mobile\b"),
+    ("Telus", r"\bTelus\b|\bKoodo\b|\bPublic Mobile\b"),
+    ("Shaw and Freedom", r"\bFreedom Mobile\b|\bShaw\b"),
+    ("Vidéotron", r"\bVid[ée]otron\b"),
+    ("Interac", r"\bInterac\b"),
+    ("Visa and Mastercard", r"\bVisa\b(?! (?:application|holders?|rules|program|applicants?))|\bMastercard\b"),
+    ("Canada's banks", r"\bRBC\b|\bRoyal Bank\b|\bTD\b(?: Bank)?|\bScotiabank\b|\bBMO\b|\bCIBC\b|\bDesjardins\b|\bNational Bank\b"),
+    ("Air Canada", r"\bAir Canada\b"),
+    ("WestJet", r"\bWestJet\b"),
+    ("Via Rail", r"\bVia Rail\b|\bVIA Rail\b"),
+    ("Hydro", r"\b(?:Hydro One|Hydro-Qu[ée]bec|BC Hydro|Toronto Hydro|Manitoba Hydro|Nova Scotia Power|ENMAX|Epcor)\b"),
+    ("Canada Post", r"\bCanada Post\b"),
+    ("the CRA", r"\bCRA\b|\bCanada Revenue Agency\b"),
+    ("Zoom", r"\bZoom\b"), ("Slack", r"\bSlack\b"), ("Discord", r"\bDiscord\b"), ("Netflix", r"\bNetflix\b"),
+    ("Spotify", r"\bSpotify\b"), ("PlayStation", r"\bPlayStation\b|\bPSN\b"), ("Shopify", r"\bShopify\b"), ("PayPal", r"\bPayPal\b"),
+]
+DISRUPTION_BRANDS = [(n, re.compile(p)) for n, p in DISRUPTION_BRANDS]
+
+
+def disruption_themes(rows):
+    """The day's big disruptions as running themes: (name, label, disruption pattern, company pattern), biggest first.
+    rows: (when, outlet, headline, link). A headline counts for the first company it names; the company is the specific
+    side (core_rows() in autopilot.py uses it), the disruption words the other side."""
+    count = {}
+    for _, o, t, _ in rows:
+        if not DISRUPTION.search(t) or NOT_DISRUPTION.search(t) and not re.search(r"\boutages?\b", t, re.I):
+            continue
+        for name, rx in DISRUPTION_BRANDS:
+            if rx.search(t):
+                count.setdefault(name, set()).add((o or "").replace(" (subscribers)", ""))
+                break
+    out = []
+    for name, outlets in sorted(count.items(), key=lambda kv: -len(kv[1])):
+        if len(outlets - {""}) < DISRUPTION_OUTLETS:
+            continue
+        rx = next(r for n, r in DISRUPTION_BRANDS if n == name)
+        label = name + " outage"
+        out.append((label, label, DISRUPTION, rx))
+    return out
+
+
 GENERIC_NAMES = {"democrats", "democrat", "democratic", "republicans", "republican", "gop", "liberals", "liberal",
                  "conservatives", "conservative", "ndp", "canadians", "canadian", "americans", "american", "u.s", "us",
                  "senate", "house", "congress", "federal", "mps", "tories"}
@@ -185,6 +263,8 @@ def rank(items=None, now=None):
     # National Newswatch and CBC placement. Headlines that don't match stay where they were.
     def fits(t, ra, rb):
         return bool(ra.search(t) and rb.search(t))
+    # the day's big disruptions join the hand-named themes for this run (THEMES is read again by autopilot.py)
+    THEMES[:] = disruption_themes([r for g in groups for r in g["rows"]]) + BASE_THEMES
     for tname, _, ra, rb in THEMES:
         free = [g for g in groups if not g.get("theme")]  # a headline already in one theme's story stays there
         whole = [g for g in free if fits(g["lead"][0], ra, rb)]

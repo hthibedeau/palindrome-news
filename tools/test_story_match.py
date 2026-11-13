@@ -166,6 +166,25 @@ _auto = {}
 ap._select(_auto, [nvda, scoop], [nvda, scoop], lambda x: 0)
 check(_auto["top_n"] == 1 and _auto["moved"] and _auto["moved"][0]["to"] == "canada", "a smaller Canadian story still moves to the Canada desk")
 
+# BIG DISRUPTIONS ARE ONE STORY (Hannah, Thu Nov 12, 2026: the Microsoft outage, 74 countries including Canada, was cut
+# into scraps and never reached the top)
+import lead_check as lc  # noqa: E402
+_rows = [(None, "ABC News", "Microsoft Outlook outage stretches on for hours", ""),
+         (None, "CTV News", "Microsoft outage impacting hospitals, universities and Via Rail services", ""),
+         (None, "NPR", "Is Outlook down? Widespread outage hits Microsoft email and other apps", ""),
+         (None, "Toronto Star", "Toronto hospital network declares Code Grey amid Microsoft outage", ""),
+         (None, "CBC News", "Microsoft says services being slowly restored after widespread outages across its platforms", ""),
+         (None, "CTV News", "Microsoft is offering voluntary buyouts to about 60,000 employees", ""),
+         (None, "Global News", "Nvidia shares down after CEO steps down", "")]
+_th = lc.disruption_themes(_rows)
+check([t[0] for t in _th] == ["Microsoft outage"], f"the outage headlines make one theme, named for the company: {[t[0] for t in _th]}")
+_ra, _rb = _th[0][2], _th[0][3]
+check(all(_ra.search(t) and _rb.search(t) for _, _, t, _ in _rows[:5]), "every outage headline (Outlook, Code Grey, services restored) joins it")
+check(not (_ra.search(_rows[5][2]) and _rb.search(_rows[5][2])), "Microsoft's buyouts are not part of the outage")
+check(not lc.disruption_themes(_rows[:2]), "two newsrooms are not enough to make a disruption a theme")
+check(not lc.disruption_themes([(None, o, "Nvidia shares down after CEO steps down", "") for o in ("A", "B", "C", "D")]),
+      "shares down and a CEO stepping down are not an outage")
+
 
 print("\nall passed" if not fails else f"\n{fails} failed")
 sys.exit(1 if fails else 0)
