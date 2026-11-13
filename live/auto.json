@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-13T07:14:18.101692+00:00",
- "checkedLabel": "Fri 2:14 a.m.",
+ "checked": "2026-11-13T07:24:18.016274+00:00",
+ "checkedLabel": "Fri 2:24 a.m.",
  "stories": [
   {
    "key": "top",
@@ -320,21 +320,11 @@
    "score": 20,
    "title": "Nvidia CEO's resignation after affair with suspected Chinese spy rattles markets, tech world",
    "url": "https://www.cbc.ca/news/business/nvidia-jensen-huang-ceo-selloff-investments-retirement-9.7420093",
-   "outlets": 22,
+   "outlets": 19,
    "why": [
     "CBC News front #1"
    ],
    "theme": ""
-  },
-  {
-   "score": 20,
-   "title": "Microsoft outage continues as planned fixes are not working as expected, company says",
-   "url": "https://www.cbc.ca/news/world/microsoft-outage-9.7419814",
-   "outlets": 19,
-   "why": [
-    "CBC News front #3"
-   ],
-   "theme": "Microsoft outage"
   },
   {
    "score": 19,
@@ -348,6 +338,24 @@
     "National Newswatch #20"
    ],
    "theme": "Federal budget"
+  },
+  {
+   "score": 18,
+   "title": "Microsoft outage continues as planned fixes are not working as expected, company says",
+   "url": "https://www.cbc.ca/news/world/microsoft-outage-9.7419814",
+   "outlets": 19,
+   "why": [
+    "CBC News front #3"
+   ],
+   "theme": "Microsoft outage"
+  },
+  {
+   "score": 17,
+   "title": "Carney aware of 'some aspects' of Stellantis auto plant sale, but says company still broke deal",
+   "url": "https://www.cbc.ca/news/politics/stellantis-carney-deal-plant-9.7418797",
+   "outlets": 20,
+   "why": [],
+   "theme": ""
   },
   {
    "score": 15,
@@ -394,16 +402,6 @@
    "outlets": 9,
    "why": [],
    "theme": ""
-  },
-  {
-   "score": 8,
-   "title": "Liberals Remain Dominant as Canadians Focus on United States",
-   "url": "https://researchco.ca/2026/11/12/cdnpoli-nov2026/",
-   "outlets": 5,
-   "why": [
-    "National Newswatch #5"
-   ],
-   "theme": ""
   }
  ],
  "canada": [
@@ -438,13 +436,13 @@
     "key": "auto-e9e3f04b",
     "words": [
      "widespread",
-     "microsoft",
      "hospitals",
+     "microsoft",
      "outlook",
      "outage",
      "other"
     ],
-    "score": 20,
+    "score": 18,
     "outlets": 8,
     "carriers": 19,
     "tag": "Developing",
@@ -469,10 +467,11 @@
      "alt": "A VIA Rail locomotive, a Microsoft logo and St. Michael's Hospital in Toronto, in a combination photo. AP Photo/Lindsey Wasson/THE CANADIAN PRESS/Christinne Mus",
      "outlet": "CTV News",
      "url": "https://www.ctvnews.ca/sci-tech/article/widespread-issues-reported-with-microsoft-products-downdetector/",
-     "since": "2026-11-13T06:51:00.782534+00:00"
+     "since": "2026-11-13T07:26:30.787476+00:00"
     },
     "photo_seen": [
-     "https://www.ctvnews.ca/resizer/v2/ODOGT6TW6RDKRM2DPD2K7HC4EI.jpg?smart=true&auth=cea447c584749462b7eeb938d982486cbd949161530ac343f973af974a2d4a3c&width=1200&height=630"
+     "https://www.ctvnews.ca/resizer/v2/ODOGT6TW6RDKRM2DPD2K7HC4EI.jpg?smart=true&auth=cea447c584749462b7eeb938d982486cbd949161530ac343f973af974a2d4a3c&width=1200&height=630",
+     "https://www.bnnbloomberg.ca/resizer/v2/ODOGT6TW6RDKRM2DPD2K7HC4EI.jpg?smart=true&auth=cea447c584749462b7eeb938d982486cbd949161530ac343f973af974a2d4a3c&width=1200&height=630"
     ],
     "photos": [
      {
@@ -494,8 +493,8 @@
      {
       "src": "live/img/auto-e9e3f04b-0181b0fe62.jpg",
       "orig": "https://images.euronews.com/articles/stories/09/99/06/52/1200x675_cmsv2_aef5001d-e5f6-5af5-ae9d-024d1484ab85-9990652.jpg",
-      "caption": "Worldwide Microsoft outage hits Outlook, Teams and Copilot, disrupting thousands. — via Euronews",
-      "alt": "Worldwide Microsoft outage hits Outlook, Teams and Copilot, disrupting thousands",
+      "caption": "Microsoft Outlook global outage repair efforts not going 'as expected'. — via Euronews",
+      "alt": "Microsoft Outlook global outage repair efforts not going 'as expected'",
       "outlet": "Euronews",
       "url": "https://www.euronews.com/2026/11/12/microsoft-outage-hits-outlook-teams-and-copilot-disrupting-thousands"
      },
@@ -822,21 +821,21 @@
     ],
     "judgment": "national",
     "judgment_why": "National: leading 7 front pages (CTV News, Global News, CP24, BNN Bloomberg, ABC News, BBC News).",
-    "weight": 58,
+    "weight": 56,
     "videos": [
-     {
-      "net": "CP24",
-      "url": "https://www.youtube.com/watch?v=3xnb6i3PNkk",
-      "title": "Microsoft outage responsible for ‘Code Grey’ declared at Toronto Hospital Network",
-      "img": "https://i.ytimg.com/vi/3xnb6i3PNkk/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
      {
       "net": "CBC News",
       "url": "https://www.youtube.com/watch?v=OUrTgZiKr-I",
       "title": "Microsoft says services slowly being restored after widespread outages | Hanomansing Live",
       "img": "https://i.ytimg.com/vi/OUrTgZiKr-I/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CP24",
+      "url": "https://www.youtube.com/watch?v=3xnb6i3PNkk",
+      "title": "Microsoft outage responsible for ‘Code Grey’ declared at Toronto Hospital Network",
+      "img": "https://i.ytimg.com/vi/3xnb6i3PNkk/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
@@ -1143,18 +1142,18 @@
       "up": ""
      },
      {
-      "net": "CP24",
-      "url": "https://www.youtube.com/watch?v=JUI577aS3Ss",
-      "title": "Minister Joly slams Stellantis over Brampton plant sale | CTV News Toronto at Six for Nov. 12, 2026",
-      "img": "https://i.ytimg.com/vi/JUI577aS3Ss/hqdefault.jpg",
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=GG2-AZt3IOM",
+      "title": "Reporter Roundtable: Stellantis stakeholders gather to discuss plant sale | Power & Politics",
+      "img": "https://i.ytimg.com/vi/GG2-AZt3IOM/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "CP24",
-      "url": "https://www.youtube.com/watch?v=V_53qGrWFs8",
-      "title": "Minister Joly slams Stellantis after meeting over plant sale | CP24 Live at Five for Nov. 12, 2026",
-      "img": "https://i.ytimg.com/vi/V_53qGrWFs8/hqdefault.jpg",
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=UluY82wwpWA",
+      "title": "Stellantis should 'pay back every penny': Ontario NDP leader | Power & Politics",
+      "img": "https://i.ytimg.com/vi/UluY82wwpWA/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1167,8 +1166,8 @@
     "url": "https://www.cp24.com/news/canada/2026/11/12/widespread-issues-reported-with-microsoft-products-downdetector/",
     "rank": 1,
     "live": "",
-    "weight": 58,
-    "score": 20,
+    "weight": 56,
+    "score": 18,
     "independent": 8,
     "most_read": 5,
     "canada": "canadian",
@@ -1215,9 +1214,28 @@
     "why_judged": "National: affects some people; carried across the country (national desks)."
    },
    {
+    "title": "EU leaders gather in Dublin to decide who will speak for Europe in peace talks",
+    "url": "https://www.euronews.com/2026/11/13/eu-leaders-gather-in-dublin-to-decide-who-will-speak-for-europe-in-peace-talks",
+    "rank": 3,
+    "live": "",
+    "weight": 38.0,
+    "score": 17,
+    "independent": 4,
+    "most_read": 0,
+    "canada": "tie",
+    "theme": "",
+    "top": false,
+    "fronts": 0,
+    "fronts_who": [],
+    "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
+    "carriers": 6,
+    "judgment": "national",
+    "why_judged": "National: affects many people; carried across the country (national desks)."
+   },
+   {
     "title": "What we know after Jensen Huang resigns as Nvidia CEO",
     "url": "https://www.thestar.com/news/world/united-states/what-we-know-after-jensen-huang-resigns-as-nvidia-ceo/article_ab13f630-8b55-5cd7-9e60-bf530c64b22b.html",
-    "rank": 3,
+    "rank": 4,
     "live": "",
     "weight": 53,
     "score": 20,
@@ -1246,7 +1264,7 @@
    {
     "title": "Trump praises Democrat Scott Colom for showing up to Mississippi rally and courting MAGA supporters",
     "url": "https://www.thestar.com/news/world/united-states/trump-praises-democrat-scott-colom-for-showing-up-to-mississippi-rally-and-courting-maga-supporters/article_084f09d8-3430-586d-af72-66e442c84f0e.html",
-    "rank": 4,
+    "rank": 5,
     "live": "",
     "weight": 25.0,
     "score": 9,
@@ -1265,7 +1283,7 @@
    {
     "title": "Indigenous women's groups call out Ottawa over funding in new federal budget",
     "url": "https://www.cp24.com/news/canada/2026/11/12/indigenous-womens-groups-call-out-ottawa-over-funding-in-new-federal-budget/",
-    "rank": 5,
+    "rank": 6,
     "live": "",
     "weight": 39.0,
     "score": 19,
@@ -1284,7 +1302,7 @@
    {
     "title": "Maryland's Van Hollen to challenge Schumer for U.S. Senate leadership post",
     "url": "https://www.cbc.ca/news/world/van-hollen-senate-leadership-challenge-schumer-9.7420238",
-    "rank": 6,
+    "rank": 7,
     "live": "",
     "weight": 40.0,
     "score": 15,
@@ -1308,7 +1326,7 @@
    {
     "title": "What we know about victims of deadly Brooklyn building collapse",
     "url": "https://abcnews.com/US/victims-deadly-brooklyn-building-collapse/story?id=138098954",
-    "rank": 7,
+    "rank": 8,
     "live": "",
     "weight": 24.0,
     "score": 8,
@@ -1324,25 +1342,6 @@
     ],
     "rule": "No Canadian tie",
     "carriers": 6,
-    "judgment": "national",
-    "why_judged": "National: affects some people; carried across the country (national desks)."
-   },
-   {
-    "title": "Hegseth awards medal to Arlington soldier who scolded his group on decorum",
-    "url": "https://www.cbc.ca/news/world/us-pentagon-hegseth-arlington-controversy-medal-9.7419227",
-    "rank": 8,
-    "live": "",
-    "weight": 16.5,
-    "score": 8,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "No Canadian tie",
-    "carriers": 3,
     "judgment": "national",
     "why_judged": "National: affects some people; carried across the country (national desks)."
    },
@@ -1371,12 +1370,261 @@
   "top_n": 2,
   "more": [
    {
+    "key": "auto-a735e771",
+    "words": [
+     "zelenskyy",
+     "dublin",
+     "putin"
+    ],
+    "score": 17,
+    "outlets": 4,
+    "carriers": 6,
+    "tag": "Breaking",
+    "title": "EU leaders gather in Dublin to decide who will speak for Europe in peace talks",
+    "url": "https://www.euronews.com/2026/11/13/eu-leaders-gather-in-dublin-to-decide-who-will-speak-for-europe-in-peace-talks",
+    "outlet": "Euronews",
+    "t": "Fri 2:19 a.m.",
+    "iso": "2026-11-13T07:19:52+00:00",
+    "summary": "Good morning. I’m Luca Bertuzzi, holding the pen for today’s newsletter. The Ukraine peace talks, and the question of who should speak for Europe at the table, have swamped the informal EU summit, kicking off another round of the name game. #EuropeToday",
+    "first": {
+     "outlet": "Kyiv Independent",
+     "url": "https://kyivindependent.com/zelensky-meets-with-trumps-envoys-in-dublin-after-their-summit-with-putin/",
+     "t": "Thu 4:35 p.m.",
+     "title": "Zelensky meets with Trump's envoys in Dublin after their summit with Putin",
+     "iso": "2026-11-12T21:35:58+00:00"
+    },
+    "newest": "2026-11-13T07:19:52+00:00",
+    "photo": {
+     "src": "live/img/auto-a735e771-42431c3d82.jpg",
+     "orig": "https://images.euronews.com/articles/stories/09/99/03/60/1200x675_cmsv2_4fcd02a8-6bf7-5ca7-a26f-9c135d3957e4-9990360.jpg",
+     "caption": "EU leaders gather in Dublin to decide who will speak for Europe in peace talks. — via Euronews",
+     "alt": "EU leaders gather in Dublin to decide who will speak for Europe in peace talks",
+     "outlet": "Euronews",
+     "url": "https://www.euronews.com/2026/11/13/eu-leaders-gather-in-dublin-to-decide-who-will-speak-for-europe-in-peace-talks",
+     "since": "2026-11-13T07:26:31.682673+00:00"
+    },
+    "photo_seen": [
+     "https://images.euronews.com/articles/stories/09/99/03/60/1200x675_cmsv2_4fcd02a8-6bf7-5ca7-a26f-9c135d3957e4-9990360.jpg"
+    ],
+    "photos": [
+     {
+      "src": "live/img/auto-a735e771-42431c3d82.jpg",
+      "orig": "https://images.euronews.com/articles/stories/09/99/03/60/1200x675_cmsv2_4fcd02a8-6bf7-5ca7-a26f-9c135d3957e4-9990360.jpg",
+      "caption": "EU leaders gather in Dublin to decide who will speak for Europe in peace talks. — via Euronews",
+      "alt": "EU leaders gather in Dublin to decide who will speak for Europe in peace talks",
+      "outlet": "Euronews",
+      "url": "https://www.euronews.com/2026/11/13/eu-leaders-gather-in-dublin-to-decide-who-will-speak-for-europe-in-peace-talks"
+     },
+     {
+      "src": "live/img/auto-a735e771-bbba09d46b.jpg",
+      "orig": "https://assets.kyivindependent.com/content/images/2026/11/GettyImages-2304292820_20261112-211451_20261112-213314.jpg",
+      "caption": "From: Zelensky meets with Trump's envoys in Dublin after their summit with Putin. — via Kyiv Independent",
+      "alt": "Zelensky meets with Trump's envoys in Dublin after their summit with Putin",
+      "outlet": "Kyiv Independent",
+      "url": "https://kyivindependent.com/zelensky-meets-with-trumps-envoys-in-dublin-after-their-summit-with-putin/"
+     }
+    ],
+    "independent": 4,
+    "reports": [
+     {
+      "t": "Fri 2:19 a.m.",
+      "iso": "2026-11-13T07:19:52+00:00",
+      "outlet": "Euronews",
+      "title": "EU leaders gather in Dublin to decide who will speak for Europe in peace talks",
+      "url": "https://www.euronews.com/2026/11/13/eu-leaders-gather-in-dublin-to-decide-who-will-speak-for-europe-in-peace-talks",
+      "desc": "Good morning. I’m Luca Bertuzzi, holding the pen for today’s newsletter. The Ukraine peace talks, and the question of who should speak for Europe at the table, have swamped the informal EU summit, kicking off another round of the name game. #EuropeToday"
+     },
+     {
+      "t": "Thu 11:12 p.m.",
+      "iso": "2026-11-13T04:12:01+00:00",
+      "outlet": "Al Jazeera",
+      "title": "US envoys shuttle between Putin and Zelenskyy",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/aje-onl-nf_us-envoys-shuttle-between-putin-and-zelenskyy-121126?traffic_source=rss",
+      "desc": "US envoys Witkoff and Kushner have shuttled between Dublin and Moscow in efforts to broker a Russia-Ukraine peace deal."
+     },
+     {
+      "t": "Thu 8:32 p.m.",
+      "iso": "2026-11-13T01:32:15+00:00",
+      "outlet": "CTV News",
+      "title": "U.S. envoys meet with Putin in Moscow on Ukraine talks, to see Zelenskyy in Dublin after",
+      "url": "https://www.ctvnews.ca/world/russia-ukraine-war/article/us-envoys-go-to-meet-putin-at-the-kremlin-following-ukraine-talks-in-abu-dhabi/",
+      "desc": "U.S. envoys met Thursday with Russian President Vladimir Putin in the Kremlin before heading to Ireland for talks with Ukrainian President Volodymyr Zelenskyy as Washington sought new momentum for its peace efforts."
+     },
+     {
+      "t": "Thu 8:32 p.m.",
+      "iso": "2026-11-13T01:32:15+00:00",
+      "outlet": "CP24",
+      "title": "U.S. envoys meet with Putin in Moscow on Ukraine talks, to see Zelenskyy in Dublin after",
+      "url": "https://www.cp24.com/news/world/2026/11/12/us-envoys-go-to-meet-putin-at-the-kremlin-following-ukraine-talks-in-abu-dhabi/",
+      "desc": ""
+     },
+     {
+      "t": "Thu 6:31 p.m.",
+      "iso": "2026-11-12T23:31:05.958000+00:00",
+      "outlet": "CBC News",
+      "title": "U.S. envoys talk to Zelenskyy in Dublin, after prior sitdown with Putin in Moscow",
+      "url": "https://www.cbc.ca/news/world/us-witkoff-kushner-putin-zelenskyy-talks-9.7418799",
+      "desc": ""
+     },
+     {
+      "t": "Thu 4:35 p.m.",
+      "iso": "2026-11-12T21:35:58+00:00",
+      "outlet": "Kyiv Independent",
+      "title": "Zelensky meets with Trump's envoys in Dublin after their summit with Putin",
+      "url": "https://kyivindependent.com/zelensky-meets-with-trumps-envoys-in-dublin-after-their-summit-with-putin/",
+      "desc": "In a briefing alongside Witkoff and Kushner after the meeting, Zelensky told reporters that Europe would be represented in the next round of peace talks and that the upcoming Russia-Ukraine prisoner exchange would be the largest swap yet."
+     }
+    ],
+    "sources": [
+     {
+      "t": "Fri 2:19 a.m.",
+      "primary": false,
+      "outlet": "Euronews",
+      "title": "EU leaders gather in Dublin to decide who will speak for Europe in peace talks",
+      "url": "https://www.euronews.com/2026/11/13/eu-leaders-gather-in-dublin-to-decide-who-will-speak-for-europe-in-peace-talks",
+      "desc": "Good morning. I’m Luca Bertuzzi, holding the pen for today’s newsletter. The Ukraine peace talks, and the question of who should speak for Europe at the table, have swamped the informal EU summit, kicking off another round of the name game. #EuropeToday",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Euronews",
+        "src": "Euronews",
+        "byline": "[ { \"@type\": \"Person\", \"familyName\": \"Bertuzzi\", \"givenName\": \"Luca\", \"name\": \"Luca Bertuzzi\", , \"worksFor\": { \"@id\": \"h"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Thu 11:12 p.m.",
+      "primary": false,
+      "outlet": "Al Jazeera",
+      "title": "US envoys shuttle between Putin and Zelenskyy",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/aje-onl-nf_us-envoys-shuttle-between-putin-and-zelenskyy-121126?traffic_source=rss",
+      "desc": "US envoys Witkoff and Kushner have shuttled between Dublin and Moscow in efforts to broker a Russia-Ukraine peace deal.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Al Jazeera",
+        "src": "Al Jazeera",
+        "byline": " NewsFeed Add Al Jazeera on Google"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Thu 6:31 p.m.",
+      "primary": false,
+      "outlet": "CBC News",
+      "title": "U.S. envoys talk to Zelenskyy in Dublin, after prior sitdown with Putin in Moscow",
+      "url": "https://www.cbc.ca/news/world/us-witkoff-kushner-putin-zelenskyy-talks-9.7418799",
+      "desc": "U.S. envoys met Thursday with Russian President Vladimir Putin in the Kremlin before heading to Ireland for talks with Ukrainian President Volodymyr Zelenskyy as Washington sought new momentum for its peace efforts.",
+      "wire": "The Associated Press",
+      "by": [
+       {
+        "outlet": "CBC News",
+        "src": "The Associated Press",
+        "byline": "\"photoURL\":\"\"},\"recentContent\":{}} \"The Associated Press\" \"Reuters\" \"CBC New"
+       },
+       {
+        "outlet": "CTV News",
+        "src": "The Canadian Press",
+        "byline": "artin\" \"Rob Cooper\" \"Michelle Maluske\" \"The Canadian Press\" \"Anna McMillan\" \"L"
+       },
+       {
+        "outlet": "CP24",
+        "src": "The Associated Press",
+        "byline": "\"@type\": \"Person\",\n      \"name\": \"The  Associated Press\",\n      \n    }\n  ]"
+       }
+      ],
+      "copies": [
+       {
+        "outlet": "CTV News",
+        "url": "https://www.ctvnews.ca/world/russia-ukraine-war/article/us-envoys-go-to-meet-putin-at-the-kremlin-following-ukraine-talks-in-abu-dhabi/"
+       },
+       {
+        "outlet": "CP24",
+        "url": "https://www.cp24.com/news/world/2026/11/12/us-envoys-go-to-meet-putin-at-the-kremlin-following-ukraine-talks-in-abu-dhabi/"
+       }
+      ]
+     },
+     {
+      "t": "Thu 4:35 p.m.",
+      "primary": false,
+      "outlet": "Kyiv Independent",
+      "title": "Zelensky meets with Trump's envoys in Dublin after their summit with Putin",
+      "url": "https://kyivindependent.com/zelensky-meets-with-trumps-envoys-in-dublin-after-their-summit-with-putin/",
+      "desc": "In a briefing alongside Witkoff and Kushner after the meeting, Zelensky told reporters that Europe would be represented in the next round of peace talks and that the upcoming Russia-Ukraine prisoner exchange would be the largest swap yet.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Kyiv Independent",
+        "src": "Kyiv Independent",
+        "byline": "own staff: Editor"
+       }
+      ],
+      "copies": []
+     }
+    ],
+    "replaces_top": false,
+    "events": [],
+    "theme": "",
+    "ca_angle": {
+     "specific": 3,
+     "official": 1
+    },
+    "canada": "tie",
+    "canus": false,
+    "incoherent": false,
+    "popular": 0,
+    "us_election": false,
+    "fronts": 0,
+    "fronts_ca": 0,
+    "fronts_who": [],
+    "outled_ca": 5,
+    "judgment": "national",
+    "judgment_why": "National: affects many people; carried across the country (national desks).",
+    "weight": 38.0,
+    "videos": [
+     {
+      "net": "Sky News",
+      "url": "https://www.youtube.com/watch?v=gd3hUKQrETc",
+      "title": "'They will have a voice': Zelenskyy praises step of Europe joining Ukraine peace talks",
+      "img": "https://i.ytimg.com/vi/gd3hUKQrETc/hqdefault.jpg",
+      "rec": true,
+      "up": ""
+     },
+     {
+      "net": "euronews",
+      "url": "https://www.youtube.com/watch?v=abtPlpFzLiM",
+      "title": "US envoys meet Putin as Europe pushes to join Ukraine talks | Europe Today #210",
+      "img": "https://i.ytimg.com/vi/abtPlpFzLiM/hqdefault.jpg",
+      "rec": true,
+      "up": ""
+     },
+     {
+      "net": "Associated Press",
+      "url": "https://www.youtube.com/watch?v=v-7bcvIKzIQ",
+      "title": "US envoys hold talks with Zelenskyy in Dublin after meeting Putin in Moscow",
+      "img": "https://i.ytimg.com/vi/v-7bcvIKzIQ/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "BBC News",
+      "url": "https://www.youtube.com/watch?v=Jrki8BD2TG0",
+      "title": "Are Putin, Trump and Zelensky any closer to making peace in Ukraine? | Global News Podcast",
+      "img": "https://i.ytimg.com/vi/Jrki8BD2TG0/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     }
+    ]
+   },
+   {
     "key": "auto-b8d2c236",
     "words": [
-     "nvidia’s",
      "congress",
-     "nvidia",
+     "nvidia’s",
      "jensen",
+     "nvidia",
      "huang",
      "ceo"
     ],
@@ -1405,7 +1653,7 @@
      "alt": "What we know after Jensen Huang resigns as Nvidia CEO",
      "outlet": "Toronto Star",
      "url": "https://www.thestar.com/news/world/united-states/what-we-know-after-jensen-huang-resigns-as-nvidia-ceo/article_ab13f630-8b55-5cd7-9e60-bf530c64b22b.html",
-     "since": "2026-11-13T07:15:51.776202+00:00"
+     "since": "2026-11-13T07:26:21.149860+00:00"
     },
     "photo_seen": [
      "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/e/76/e76705d1-4cc2-5755-bb29-0924bbd8a9e7/6af68c70b860b.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
@@ -1845,8 +2093,8 @@
     "words": [
      "mississippi",
      "democrat",
-     "scott",
      "colom",
+     "scott",
      "maga"
     ],
     "score": 9,
@@ -1874,7 +2122,7 @@
      "alt": "Trump praises Democrat Scott Colom for showing up to Mississippi rally and courting MAGA supporters",
      "outlet": "Toronto Star",
      "url": "https://www.thestar.com/news/world/united-states/trump-praises-democrat-scott-colom-for-showing-up-to-mississippi-rally-and-courting-maga-supporters/article_084f09d8-3430-586d-af72-66e442c84f0e.html",
-     "since": "2026-11-13T07:16:04.555309+00:00"
+     "since": "2026-11-13T07:26:37.741556+00:00"
     },
     "photo_seen": [
      "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/f/b1/fb11910d-f596-5358-a14b-af1e10857cfb/6af66cc8eb317.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
@@ -2090,336 +2338,10 @@
       "up": ""
      },
      {
-      "net": "PBS NewsHour",
-      "url": "https://www.youtube.com/watch?v=GClXzgNczJg",
-      "title": "How Scott Colom won his longshot bid to flip Mississippi's Senate seat",
-      "img": "https://i.ytimg.com/vi/GClXzgNczJg/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     }
-    ]
-   },
-   {
-    "key": "auto-6754e954",
-    "words": [
-     "indigenous",
-     "funding",
-     "limited",
-     "women’s",
-     "groups",
-     "budget"
-    ],
-    "score": 19,
-    "outlets": 2,
-    "carriers": 12,
-    "tag": "Developing",
-    "title": "Indigenous women's groups call out Ottawa over funding in new federal budget",
-    "url": "https://www.cp24.com/news/canada/2026/11/12/indigenous-womens-groups-call-out-ottawa-over-funding-in-new-federal-budget/",
-    "outlet": "CP24",
-    "t": "Thu 4:52 p.m.",
-    "iso": "2026-11-12T21:52:12+00:00",
-    "summary": "Indigenous women’s groups say the new federal budget is harming the people they represent by not including funding targeted at violence and community support services.",
-    "first": {
-     "outlet": "CP24",
-     "url": "https://www.cp24.com/news/canada/2026/11/12/champagne-in-nova-scotia-thursday-to-discuss-2026-budget/",
-     "t": "Thu 7:09 a.m.",
-     "title": "Champagne in Nova Scotia Thursday to discuss 2026 budget",
-     "iso": "2026-11-12T12:09:46+00:00"
-    },
-    "newest": "2026-11-12T22:00:18+00:00",
-    "photo": {
-     "src": "live/img/auto-6754e954-9edd940368.jpg",
-     "orig": "https://www.cp24.com/resizer/v2/L3N2I3DFAONNU7VYMKKVI4R2WY.jpg?smart=true&auth=1f3a60ed114383e92f47b960e12fd8916447ec2735794e037bc6d4ca4f2e9099&width=1200&height=630",
-     "caption": "President of the Native Women’s Association of Canada (NWAC) Josie Nepinak, centre, speaks to reporters on Parliament Hill alongside, from left to right, Rosemary Cooper of Pauktuutit Inuit Women of Canada, Les Femmes Michif Otipemisiwak (LFMO) director of intergovernmental relations Lisa Pigeau, Femmes Autochtones de Quebec (FAQ) president Marjolaine Etienne and Ontario Native Women’s Association (ONWA) CEO Cora McGuire-Cyrette in Ottawa, on Thursday, Nov. 12, 2026. THE CANADIAN PRESS/Keito Newman. — via CP24",
-     "alt": "President of the Native Women’s Association of Canada (NWAC) Josie Nepinak, centre, speaks to reporters on Parliament Hill alongside, from left to right, Rosema",
-     "outlet": "CP24",
-     "url": "https://www.cp24.com/news/canada/2026/11/12/indigenous-womens-groups-call-out-ottawa-over-funding-in-new-federal-budget/",
-     "since": "2026-11-13T07:15:57.991009+00:00"
-    },
-    "photo_seen": [
-     "https://www.cp24.com/resizer/v2/L3N2I3DFAONNU7VYMKKVI4R2WY.jpg?smart=true&auth=1f3a60ed114383e92f47b960e12fd8916447ec2735794e037bc6d4ca4f2e9099&width=1200&height=630"
-    ],
-    "photos": [
-     {
-      "src": "live/img/auto-6754e954-9edd940368.jpg",
-      "orig": "https://www.cp24.com/resizer/v2/L3N2I3DFAONNU7VYMKKVI4R2WY.jpg?smart=true&auth=1f3a60ed114383e92f47b960e12fd8916447ec2735794e037bc6d4ca4f2e9099&width=1200&height=630",
-      "caption": "President of the Native Women’s Association of Canada (NWAC) Josie Nepinak, centre, speaks to reporters on Parliament Hill alongside, from left to right, Rosemary Cooper of Pauktuutit Inuit Women of Canada, Les Femmes Michif Otipemisiwak (LFMO) director of intergovernmental relations Lisa Pigeau, Femmes Autochtones de Quebec (FAQ) president Marjolaine Etienne and Ontario Native Women’s Association (ONWA) CEO Cora McGuire-Cyrette in Ottawa, on Thursday, Nov. 12, 2026. THE CANADIAN PRESS/Keito Newman. — via CP24",
-      "alt": "President of the Native Women’s Association of Canada (NWAC) Josie Nepinak, centre, speaks to reporters on Parliament Hill alongside, from left to right, Rosema",
-      "outlet": "CP24",
-      "url": "https://www.cp24.com/news/canada/2026/11/12/indigenous-womens-groups-call-out-ottawa-over-funding-in-new-federal-budget/"
-     },
-     {
-      "src": "live/img/auto-6754e954-627f20df14.jpg",
-      "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/8/f8/8f8160c5-bf23-5d6c-82e2-9a504cd81347/6af621cdaa99a.image.jpg?crop=1400%2C735%2C0%2C99&resize=1200%2C630&order=crop%2Cresize",
-      "caption": "From: Indigenous women's groups call out Ottawa over funding in new federal budget. — via Toronto Star",
-      "alt": "Indigenous women's groups call out Ottawa over funding in new federal budget",
-      "outlet": "Toronto Star",
-      "url": "https://www.thestar.com/politics/federal/indigenous-women-s-groups-call-out-limited-funding-in-new-federal-budget/article_e818a422-fd69-5d82-9b3d-a83e1546bc2a.html"
-     },
-     {
-      "src": "live/img/auto-6754e954-c1aa816d1d.jpg",
-      "orig": "https://winnipeg.citynews.ca/wp-content/blogs.dir/sites/13/2026/11/7d5348b3f4bfc365b1647627834016f3f4dcabfdfd09e7e11bc5cd18ff7e5ad7.jpg",
-      "caption": "From: Indigenous women’s groups call out limited funding in new federal budget. — via CityNews Winnipeg",
-      "alt": "Indigenous women’s groups call out limited funding in new federal budget",
-      "outlet": "CityNews Winnipeg",
-      "url": "https://winnipeg.citynews.ca/2026/11/12/indigenous-womens-groups-call-out-limited-funding-in-new-federal-budget/"
-     }
-    ],
-    "independent": 2,
-    "reports": [
-     {
-      "t": "Thu 5:00 p.m.",
-      "iso": "2026-11-12T22:00:18+00:00",
-      "outlet": "Ottawa Citizen",
-      "title": "News of the day: Senators lose Nick Cousins for at least a week following violent hit from Jakob Chychrun; Budget reinvests in parts of public service cut last year, economist says; Outgoing councillors bid emotional farewell to Ottawa City Hall",
-      "url": "https://ottawacitizen.com/news/local-news/news-of-the-day-senators-lose-nick-cousins-for-at-least-a-week-following-violent-hit-from-jakob-chychrun-budget-reinvests-in-parts-of-public-service-cut-last-year-economist-says-outgoing-councillo",
-      "desc": ""
-     },
-     {
-      "t": "Thu 4:52 p.m.",
-      "iso": "2026-11-12T21:52:12+00:00",
-      "outlet": "CP24",
-      "title": "Indigenous women's groups call out Ottawa over funding in new federal budget",
-      "url": "https://www.cp24.com/news/canada/2026/11/12/indigenous-womens-groups-call-out-ottawa-over-funding-in-new-federal-budget/",
-      "desc": "Indigenous women’s groups say the new federal budget is harming the people they represent by not including funding targeted at violence and community support services."
-     },
-     {
-      "t": "Thu 4:47 p.m.",
-      "iso": "2026-11-12T21:47:29+00:00",
-      "outlet": "Edmonton Journal",
-      "title": "Never mind the midterms: Olszewski touts federal budget at Chamber breakfast",
-      "url": "https://edmontonjournal.com/news/local-news/olszewski-federal-budget-edmonton",
-      "desc": ""
-     },
-     {
-      "t": "Thu 3:27 p.m.",
-      "iso": "2026-11-12T20:27:19+00:00",
-      "outlet": "Toronto Star",
-      "title": "Indigenous women's groups call out Ottawa over funding in new federal budget",
-      "url": "https://www.thestar.com/politics/federal/indigenous-women-s-groups-call-out-limited-funding-in-new-federal-budget/article_e818a422-fd69-5d82-9b3d-a83e1546bc2a.html",
-      "desc": "OTTAWA - Indigenous women's groups say the new federal budget is harming the people they represent by not including funding targeted at violence and community support services."
-     },
-     {
-      "t": "Thu 3:27 p.m.",
-      "iso": "2026-11-12T20:27:19+00:00",
-      "outlet": "CityNews Winnipeg",
-      "title": "Indigenous women’s groups call out limited funding in new federal budget",
-      "url": "https://winnipeg.citynews.ca/2026/11/12/indigenous-womens-groups-call-out-limited-funding-in-new-federal-budget/",
-      "desc": ""
-     },
-     {
-      "t": "Thu 3:27 p.m.",
-      "iso": "2026-11-12T20:27:19+00:00",
-      "outlet": "CityNews Vancouver",
-      "title": "Indigenous women’s groups call out limited funding in new federal budget",
-      "url": "https://vancouver.citynews.ca/2026/11/12/indigenous-womens-groups-call-out-limited-funding-in-new-federal-budget-2/",
-      "desc": ""
-     },
-     {
-      "t": "Thu 3:27 p.m.",
-      "iso": "2026-11-12T20:27:19+00:00",
-      "outlet": "CityNews Ottawa",
-      "title": "Indigenous women’s groups call out limited funding in new federal budget",
-      "url": "https://ottawa.citynews.ca/2026/11/12/indigenous-womens-groups-call-out-limited-funding-in-new-federal-budget/",
-      "desc": ""
-     },
-     {
-      "t": "Thu 3:27 p.m.",
-      "iso": "2026-11-12T20:27:19+00:00",
-      "outlet": "CityNews Montreal",
-      "title": "Indigenous women’s groups call out limited funding in new federal budget",
-      "url": "https://montreal.citynews.ca/2026/11/12/indigenous-womens-groups-call-out-limited-funding-in-new-federal-budget/",
-      "desc": ""
-     },
-     {
-      "t": "Thu 3:27 p.m.",
-      "iso": "2026-11-12T20:27:19+00:00",
-      "outlet": "CityNews Halifax",
-      "title": "Indigenous women’s groups call out limited funding in new federal budget",
-      "url": "https://halifax.citynews.ca/2026/11/12/indigenous-womens-groups-call-out-limited-funding-in-new-federal-budget/",
-      "desc": ""
-     },
-     {
-      "t": "Thu 3:27 p.m.",
-      "iso": "2026-11-12T20:27:19+00:00",
-      "outlet": "CityNews Edmonton",
-      "title": "Indigenous women’s groups call out limited funding in new federal budget",
-      "url": "https://edmonton.citynews.ca/2026/11/12/indigenous-womens-groups-call-out-limited-funding-in-new-federal-budget/",
-      "desc": ""
-     },
-     {
-      "t": "Thu 3:27 p.m.",
-      "iso": "2026-11-12T20:27:19+00:00",
-      "outlet": "CityNews Calgary",
-      "title": "Indigenous women’s groups call out limited funding in new federal budget",
-      "url": "https://calgary.citynews.ca/2026/11/12/indigenous-womens-groups-call-out-limited-funding-in-new-federal-budget/",
-      "desc": ""
-     },
-     {
-      "t": "Thu 3:27 p.m.",
-      "iso": "2026-11-12T20:27:19+00:00",
-      "outlet": "CityNews",
-      "title": "Indigenous women’s groups call out Ottawa over funding in new federal budget",
-      "url": "https://toronto.citynews.ca/2026/11/12/indigenous-womens-groups-call-out-limited-funding-in-new-federal-budget/",
-      "desc": ""
-     }
-    ],
-    "sources": [
-     {
-      "t": "Thu 4:47 p.m.",
-      "primary": false,
-      "outlet": "Edmonton Journal",
-      "title": "Never mind the midterms: Olszewski touts federal budget at Chamber breakfast",
-      "url": "https://edmontonjournal.com/news/local-news/olszewski-federal-budget-edmonton",
-      "desc": "",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Edmonton Journal",
-        "src": "Postmedia",
-        "byline": "[{\"@type\": \"Person\", \"name\": \"Steven Sandor\", \"alternateName\": \"ssandorpostmedia-com\", , , \"email\": \"SSandor@postmedia.c"
-       },
-       {
-        "outlet": "Ottawa Citizen",
-        "src": "Postmedia",
-        "byline": "[{\"@type\": \"Person\", \"name\": \"Robert Cross\", \"alternateName\": \"rcrosspostmedia\", , , \"description\": \"Robert Cross is a l"
-       }
-      ],
-      "copies": [
-       {
-        "outlet": "Ottawa Citizen",
-        "url": "https://ottawacitizen.com/news/local-news/news-of-the-day-senators-lose-nick-cousins-for-at-least-a-week-following-violent-hit-from-jakob-chychrun-budget-reinvests-in-parts-of-public-service-cut-last-year-economist-says-outgoing-councillo"
-       }
-      ]
-     },
-     {
-      "t": "Thu 3:27 p.m.",
-      "primary": false,
-      "outlet": "Toronto Star",
-      "title": "Indigenous women's groups call out Ottawa over funding in new federal budget",
-      "url": "https://www.thestar.com/politics/federal/indigenous-women-s-groups-call-out-limited-funding-in-new-federal-budget/article_e818a422-fd69-5d82-9b3d-a83e1546bc2a.html",
-      "desc": "OTTAWA - Indigenous women's groups say the new federal budget is harming the people they represent by not including funding targeted at violence and community support services.",
-      "wire": "The Canadian Press",
-      "by": [
-       {
-        "outlet": "Toronto Star",
-        "src": "The Canadian Press",
-        "byline": "\"Alessia Passafiume The Canadian Press\" \"Alessia Passafium"
-       },
-       {
-        "outlet": "CityNews Winnipeg",
-        "src": "The Canadian Press",
-        "byline": "fe805acc41a6fdf\"}] \"Alessia Passafiume, The Canadian Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews Vancouver",
-        "src": "The Canadian Press",
-        "byline": "fe805acc41a6fdf\"}] \"Alessia Passafiume, The Canadian Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews Ottawa",
-        "src": "The Canadian Press",
-        "byline": "fe805acc41a6fdf\"}] \"Alessia Passafiume, The Canadian Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews Montreal",
-        "src": "The Canadian Press",
-        "byline": "fe805acc41a6fdf\"}] \"Alessia Passafiume, The Canadian Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews Halifax",
-        "src": "The Canadian Press",
-        "byline": "fe805acc41a6fdf\"}] \"Alessia Passafiume, The Canadian Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews Edmonton",
-        "src": "The Canadian Press",
-        "byline": "fe805acc41a6fdf\"}] \"Alessia Passafiume, The Canadian Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews Calgary",
-        "src": "The Canadian Press",
-        "byline": "fe805acc41a6fdf\"}] \"Alessia Passafiume, The Canadian Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews",
-        "src": "The Canadian Press",
-        "byline": "fe805acc41a6fdf\"}] \"Alessia Passafiume, The Canadian Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CP24",
-        "src": "The Canadian Press",
-        "byline": "\"@type\": \"Person\",\n      \"name\": \"The Canadian Press\",\n      \n    }\n  ]"
-       }
-      ],
-      "copies": [
-       {
-        "outlet": "CityNews Winnipeg",
-        "url": "https://winnipeg.citynews.ca/2026/11/12/indigenous-womens-groups-call-out-limited-funding-in-new-federal-budget/"
-       },
-       {
-        "outlet": "CityNews Vancouver",
-        "url": "https://vancouver.citynews.ca/2026/11/12/indigenous-womens-groups-call-out-limited-funding-in-new-federal-budget-2/"
-       },
-       {
-        "outlet": "CityNews Ottawa",
-        "url": "https://ottawa.citynews.ca/2026/11/12/indigenous-womens-groups-call-out-limited-funding-in-new-federal-budget/"
-       },
-       {
-        "outlet": "CityNews Montreal",
-        "url": "https://montreal.citynews.ca/2026/11/12/indigenous-womens-groups-call-out-limited-funding-in-new-federal-budget/"
-       },
-       {
-        "outlet": "CityNews Halifax",
-        "url": "https://halifax.citynews.ca/2026/11/12/indigenous-womens-groups-call-out-limited-funding-in-new-federal-budget/"
-       },
-       {
-        "outlet": "CityNews Edmonton",
-        "url": "https://edmonton.citynews.ca/2026/11/12/indigenous-womens-groups-call-out-limited-funding-in-new-federal-budget/"
-       },
-       {
-        "outlet": "CityNews Calgary",
-        "url": "https://calgary.citynews.ca/2026/11/12/indigenous-womens-groups-call-out-limited-funding-in-new-federal-budget/"
-       },
-       {
-        "outlet": "CityNews",
-        "url": "https://toronto.citynews.ca/2026/11/12/indigenous-womens-groups-call-out-limited-funding-in-new-federal-budget/"
-       },
-       {
-        "outlet": "CP24",
-        "url": "https://www.cp24.com/news/canada/2026/11/12/indigenous-womens-groups-call-out-ottawa-over-funding-in-new-federal-budget/"
-       }
-      ]
-     }
-    ],
-    "replaces_top": false,
-    "events": [],
-    "theme": "Federal budget",
-    "canada": "canadian",
-    "canus": true,
-    "incoherent": false,
-    "popular": 0,
-    "us_election": false,
-    "fronts": 0,
-    "fronts_ca": 0,
-    "fronts_who": [],
-    "judgment": "national",
-    "judgment_why": "National: affects many people; carried across the country (8 cities).",
-    "weight": 39.0,
-    "videos": [
-     {
-      "net": "APTN News",
-      "url": "https://www.youtube.com/watch?v=jAq3C_sH9xI",
-      "title": "APTN National News: November 12, 2026 – Federal budget concerns, Day of action against Bill C-39",
-      "img": "https://i.ytimg.com/vi/jAq3C_sH9xI/hqdefault.jpg",
-      "rec": true,
-      "up": ""
-     },
-     {
-      "net": "APTN News",
-      "url": "https://www.youtube.com/watch?v=OUzmNK1ELyI",
-      "title": "APTN National News: November 12, 2026 – Federal budget concerns, Day of action against Bill C-39",
-      "img": "https://i.ytimg.com/vi/OUzmNK1ELyI/hqdefault.jpg",
+      "net": "ABC News",
+      "url": "https://www.youtube.com/watch?v=VUi2GyGikys",
+      "title": "Mississippi Democrat Scott Colom wins Senate seat, the 8th Democratic pickup in the Senate",
+      "img": "https://i.ytimg.com/vi/VUi2GyGikys/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -2434,10 +2356,6 @@
    {
     "title": "What we know about victims of deadly Brooklyn building collapse",
     "url": "https://abcnews.com/US/victims-deadly-brooklyn-building-collapse/story?id=138098954"
-   },
-   {
-    "title": "Hegseth awards medal to Arlington soldier who scolded his group on decorum",
-    "url": "https://www.cbc.ca/news/world/us-pentagon-hegseth-arlington-controversy-medal-9.7419227"
    }
   ]
  },
@@ -2586,7 +2504,7 @@
    "id": "JGiottKd8ak",
    "r": "ca",
    "o": "Global News",
-   "t": "Nvidia CEO Jensen Huang steps down after being 'honey trapped' by suspected Chinese agent",
+   "t": "Are there security concerns after Nvidia's ex-CEO was honey-trapped by suspected Chinese agent?",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=JGiottKd8ak",
@@ -2740,7 +2658,7 @@
    "id": "uLOSnKlHsgw",
    "r": "us",
    "o": "CNN",
-   "t": "White House alarmed by Lunick not blacklisting Nvidia-linked firm",
+   "t": "Commerce Sec. Lutnick faces new scrutiny over approval of China deal",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=uLOSnKlHsgw",
@@ -2964,7 +2882,7 @@
    "id": "Fk0Ya1wlK7s",
    "r": "world",
    "o": "BBC News",
-   "t": "Hidden bunker under White Cliffs of Dover opens to public | BBC News",
+   "t": "Inside the secret WW2 plotting room used by the British | BBC News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=Fk0Ya1wlK7s",
@@ -3297,6 +3215,13 @@
  ],
  "eds": [
   [
+   "Toronto Star",
+   "Opinion",
+   "The Arc de Trump is another loss for Washington",
+   "https://www.thestar.com/opinion/star-columnists/the-arc-de-trump-is-another-loss-for-washington/article_cd3bdf5b-0124-43a7-9764-6ccae2f50ddf.html",
+   "2026-11-13T01:00:00+00:00"
+  ],
+  [
    "Toronto Sun",
    "Editorial",
    "Beware Carney’s borrowing bomb",
@@ -3358,13 +3283,6 @@
    "Pepper…and Salt",
    "https://www.wsj.com/opinion/pepperand-salt-42c8c552?mod=rss_opinion",
    "2026-11-13T05:00:00+00:00"
-  ],
-  [
-   "Washington Examiner",
-   "Editorial",
-   "Jim Jordan fits the fight ahead",
-   "https://www.washingtonexaminer.com/opinion/editorials/4800290/jim-jordan-fits-the-fight-ahead/",
-   "2026-11-12T10:00:00+00:00"
   ]
  ],
  "canus": {
@@ -3839,17 +3757,29 @@
    "city": "Kyiv",
    "tz": "Europe/Kyiv",
    "world": true,
-   "w": "Drone strikes",
-   "label": "3 injured, dozens evacuated after Russian drone damages…",
-   "u": "https://kyivindependent.com/3-injured-dozens-evacuated-after-russian-drone-damages-kyiv-medical-facility-in-overnight-attack/",
-   "title": "3 injured, dozens evacuated after Russian drone damages Kyiv medical facility in overnight attack",
-   "outlet": "Kyiv Independent",
-   "t": "Fri 12:35 a.m.",
+   "w": "Canada–EU",
+   "label": "Ukraine envoy row hijacks EU leaders’ first AI summit",
+   "u": "https://www.euronews.com/2026/11/13/ukraine-envoy-row-hijacks-eu-leaders-first-ai-summit",
+   "title": "Ukraine envoy row hijacks EU leaders’ first AI summit",
+   "outlet": "Euronews",
+   "t": "Fri 1:00 a.m.",
    "hot": false
   }
  ],
  "bigweek": [],
  "desks": [
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Fri 2:19 a.m.",
+   "iso": "2026-11-13T07:19:52+00:00",
+   "title": "EU leaders gather in Dublin to decide who will speak for Europe in peace talks",
+   "summary": "Good morning. I’m Luca Bertuzzi, holding the pen for today’s newsletter. The Ukraine peace talks, and the question of who should speak for Europe at the table, have swamped the informal EU summit, kicking off another round of the name game. #EuropeToday",
+   "outlet": "Euronews, Fox News, Kyiv Independent, Toronto Star (AP), The Japan Times (AFP), Al Jazeera, BBC News, CBC News, CTV News (CP)",
+   "n": 9,
+   "url": "https://www.euronews.com/2026/11/13/eu-leaders-gather-in-dublin-to-decide-who-will-speak-for-europe-in-peace-talks",
+   "img": "https://images.euronews.com/articles/stories/09/99/03/60/1200x675_cmsv2_4fcd02a8-6bf7-5ca7-a26f-9c135d3957e4-9990360.jpg"
+  },
   {
    "desk": "us",
    "pic": "podium",
@@ -3893,7 +3823,7 @@
    "iso": "2026-11-13T06:50:49+00:00",
    "title": "Calls for crackdown on China chip exports – as it happened",
    "summary": "",
-   "outlet": "The Guardian, The Japan Times (AFP), CBC News, Toronto Star, Kyiv Independent",
+   "outlet": "The Guardian, The Japan Times (AFP), CBC News, Toronto Star, The Hill",
    "n": 5,
    "url": "https://www.theguardian.com/technology/live/2026/nov/13/nvidia-jensen-huang-to-testify-before-congress-live-latest-updates",
    "img": "https://i.guim.co.uk/img/media/f74f292bf21b64ac06a24785167573c263947fdc/183_0_3766_3013/master/3766.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=80ccbf913c76a4437e4ad7f2629918eb"
@@ -3947,18 +3877,6 @@
    "img": "https://www.ctvnews.ca/resizer/v2/YGE4MR4SKNHGBITI7GVN67C4PI.jpg?smart=true&auth=77ab5c8c1199b5c38d9c202e9afafe86257685aa59947f0eca9a239de45dcc8f&width=1200&height=630"
   },
   {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Thu 8:55 p.m.",
-   "iso": "2026-11-13T01:55:59.197000+00:00",
-   "title": "Feds say Stellantis owes 'hundreds of millions' in subsidies, company offers $24M",
-   "summary": "Automaker Stellantis says it will pay back $24 million in federal subsidies after it announced plans to sell its Brampton, Ont. assembly plant — but Industry Minister Mélanie Joly says the company owes far more than what it is offering.",
-   "outlet": "CBC News, Prime Minister of Canada, CBC News + CP24 + BNN Bloomberg + APTN News, Global News",
-   "n": 4,
-   "url": "https://www.cbc.ca/news/politics/resolution-process-terminated-government-stellantis-brampton-plant-9.7419553",
-   "img": "https://i.cbc.ca/ais/0c82abd2-7142-4e99-8140-83321731d4fb,1794525452592/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C45%2C3584%2C2016%29%3BResize%3D620"
-  },
-  {
    "desk": "world",
    "pic": "globe",
    "t": "Fri 12:21 a.m.",
@@ -4005,6 +3923,18 @@
    "n": 3,
    "url": "https://www.ctvnews.ca/business/article/is-it-time-to-sell-nvidia-stock-what-investors-need-to-know/",
    "img": "https://www.ctvnews.ca/resizer/v2/KEEPSJILWRFGZI3W43RULMONTI.jpg?smart=true&auth=49f7abcbce81acf0670d77c8510b6ae8c017a69a0b6b1cefae687293189b9833&width=1200&height=630"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Thu 8:42 p.m.",
+   "iso": "2026-11-13T01:42:00+00:00",
+   "title": "Pope meets abuse victims in Peru, says Church must make ‘amends’",
+   "summary": "The U.S.-born pope, who also holds Peruvian citizenship, is visiting Peru, where he worked as a missionary and bishop for nearly two decades.",
+   "outlet": "The Japan Times (AFP), Middle East Eye, PBS NewsHour (AP)",
+   "n": 3,
+   "url": "https://www.japantimes.co.jp/news/2026/11/13/world/pope-church-amends/",
+   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/13/573793.JPG?v=3.1"
   },
   {
    "desk": "politics",
@@ -4055,18 +3985,6 @@
    "img": "https://www.ctvnews.ca/resizer/v2/JGPIZG6EVNECFC5CELAILTBZA4.jpg?smart=true&auth=6cfa2b65ecea57ded3573133e06050de8a30aaf1a469210bdf44ef3d8f530c85&width=1200&height=630"
   },
   {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Thu 9:33 p.m.",
-   "iso": "2026-11-13T02:33:28+00:00",
-   "title": "Trump moots toppling Cuba authorities before leaving office",
-   "summary": "Calling Cuba a failed nation, the US president hints at attack on the country before his term ends.",
-   "outlet": "Al Jazeera, The Hill",
-   "n": 2,
-   "url": "https://www.aljazeera.com/news/2026/11/13/trump-moots-toppling-cuba-authorities-before-leaving-office?traffic_source=rss",
-   "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/epa_6af6592288b3-1794529570.jpg?resize=1920%2C1440"
-  },
-  {
    "desk": "business",
    "pic": "chart",
    "t": "Thu 9:33 p.m.",
@@ -4077,18 +3995,6 @@
    "n": 2,
    "url": "https://www.politico.com/live-updates/2026/11/12/congress/tim-kaine-senate-budget-chair-01164424",
    "img": ""
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Thu 9:24 p.m.",
-   "iso": "2026-11-13T02:24:00+00:00",
-   "title": "Israeli strike on Gaza hospital deadliest since election",
-   "summary": "The Israeli military has confirmed the attack, claiming Nasser Hospital was being used as a base by Hamas.",
-   "outlet": "The Japan Times (AFP), CBC News (AP)",
-   "n": 2,
-   "url": "https://www.japantimes.co.jp/news/2026/11/13/world/israel-gaza-post-election-strike/",
-   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/13/573818.JPG?v=3.1"
   },
   {
    "desk": "world",
@@ -4209,6 +4115,18 @@
    "n": 1,
    "url": "https://www.thestar.com/news/canada/quebec/confining-kids-in-lockers-as-punishment-unacceptable-quebec-education-minister/article_c9b6a6c4-2eba-5170-b9b5-9058240ae210.html",
    "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/1/8a/18a85565-956b-5a91-ae50-36372776e656/6af645043a78d.image.jpg?crop=1452%2C762%2C0%2C158&resize=1200%2C630&order=crop%2Cresize"
+  },
+  {
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Thu 2:14 p.m.",
+   "iso": "2026-11-12T19:14:53+00:00",
+   "title": "N.S. environment minister says he's analyzing data centre regulations, but won't provide details",
+   "summary": "Environment Minister Tim Halman says officials in his department are conducting an ongoing analysis of regulations and how they could be strengthened for data centre development, but the leader of the Official Opposition is accusing him of suggesting he’s listening while promising to do nothing.",
+   "outlet": "CBC News",
+   "n": 1,
+   "url": "https://www.cbc.ca/news/canada/nova-scotia/tim-halman-claudia-chender-environment-data-centres-everwind-anthropic-9.7419528?cmp=rss",
+   "img": "https://i.cbc.ca/ais/d7849ff5-63de-438f-b720-1a074748240c,1776975726711/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C33%2C1223%2C687%29%3BResize%3D620"
   }
  ],
  "reads": [
@@ -4548,16 +4466,16 @@
    "h": [
     "Microsoft scrambles to solve global outage affecting tens of thousands but says fixes not going 'as expected'",
     "Ex-Nvidia CEO Jensen Huang summoned to testify before Congress about affair with alleged Chinese spy",
-    "Zelensky welcomes US bringing Europe into Russia-Ukraine peace talks",
-    "North Korean hackers used fake video calls in $400m crypto hack, says FBI",
-    "Firms help migrants pose as artists and tech experts for 'Global Talent' visas, BBC finds",
-    "Cricket sandpaper scandal claims '100% wrong', Australia captain says"
+    "Brand will face 'hell on earth' in London prison, says former inmate",
+    "Military cemetery decorum: The tradition behind Hegseth's Veterans Day reprimand",
+    "How could the Nvidia CEO’s affair threaten US national security?",
+    "Firms help migrants pose as artists and tech experts for 'Global Talent' visas, BBC finds"
    ],
    "u": [
     "https://www.bbc.com/news/live/cq5y10ge3dp3t",
     "",
-    "https://www.bbc.com/news/articles/ckn80j9jv3jxo",
-    "https://www.bbc.com/news/articles/cqdj1ellpd70o",
+    "https://www.bbc.com/news/articles/ck7v25pp19m8o",
+    "https://www.bbc.com/news/videos/cv5y1309dg3go",
     "",
     ""
    ]
@@ -4566,8 +4484,8 @@
    "o": "The Guardian",
    "ca": false,
    "h": [
-    "Technology Microsoft struggles to fix huge outage affecting Outlook and Teams",
     "Microsoft outage live Microsoft scrambling for new ways to fix global outage after initial attempts fail to restore Outlook services",
+    "Technology Microsoft struggles to fix huge outage affecting Outlook and Teams",
     "Explainer A global Microsoft 365 outage has hit millions – what happened and when will it be fixed?",
     "Jensen Huang Nvidia scandal sparks US national security furore and calls to take tough line on China",
     "Nvidia live Jensen Huang expected to testify before Congress amid calls for crackdown on China chip exports",
@@ -4575,7 +4493,7 @@
    ],
    "u": [
     "",
-    "https://www.theguardian.com/technology/live/2026/nov/13/microsoft-outage-down-today-live-update-outlook-teams-365-when-fixed-latest-status-cause-news",
+    "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
     "https://www.theguardian.com/australia-news/2026/nov/13/global-microsoft-outage-what-happened-and-why",
     "",
     "https://www.theguardian.com/technology/live/2026/nov/13/nvidia-jensen-huang-to-testify-before-congress-live-latest-updates",
@@ -4612,7 +4530,7 @@
     "url": "https://www.youtube.com/watch?v=Lhk3Gu0YeRs",
     "img": "https://i.ytimg.com/vi/Lhk3Gu0YeRs/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "279",
+    "watching": "276",
     "rolling": true
    },
    {
@@ -4622,7 +4540,7 @@
     "url": "https://www.youtube.com/watch?v=xMboXwD4MJs",
     "img": "https://i.ytimg.com/vi/xMboXwD4MJs/hqdefault.jpg",
     "story": "Rayner approves plans to house more than 1,250 asylum seekers near Pid",
-    "watching": "299",
+    "watching": "351",
     "reports": [
      {
       "outlet": "The Guardian",
@@ -4630,59 +4548,6 @@
       "url": "https://www.theguardian.com/uk-news/2026/nov/12/angela-rayner-grants-planning-approval-for-asylum-centre-in-piddington-despite-local-opposition",
       "t": "Thu 5:09 p.m.",
       "iso": "2026-11-12T22:09:20+00:00"
-     }
-    ]
-   },
-   {
-    "net": "euronews",
-    "r": "world",
-    "title": "LIVE: US envoys meet Putin as Europe pushes to join Ukraine talks | Europe Today #210",
-    "url": "https://www.youtube.com/watch?v=abtPlpFzLiM",
-    "img": "https://i.ytimg.com/vi/abtPlpFzLiM/hqdefault.jpg",
-    "story": "US envoys meet Putin as Europe pushes to join Ukraine talks",
-    "watching": "43",
-    "reports": [
-     {
-      "outlet": "Toronto Star",
-      "title": "Europe pushes for seat at Ukraine peace talks but lacks unified voice",
-      "url": "https://www.thestar.com/news/world/europe/europe-pushes-for-seat-at-ukraine-peace-talks-but-lacks-unified-voice/article_9667f1f7-60ef-5928-b483-57fac9851e9f.html",
-      "t": "Fri 12:24 a.m.",
-      "iso": "2026-11-13T05:24:28+00:00"
-     },
-     {
-      "outlet": "The Japan Times",
-      "title": "Putin agrees to European participation in next round of Ukraine peace talks",
-      "url": "https://www.japantimes.co.jp/news/2026/11/13/world/politics/putin-allows-europe-in-ukraine-talks/",
-      "t": "Thu 9:53 p.m.",
-      "iso": "2026-11-13T02:53:00+00:00"
-     },
-     {
-      "outlet": "CTV News",
-      "title": "U.S. envoys meet with Putin in Moscow on Ukraine talks, to see Zelenskyy in Dublin after",
-      "url": "https://www.ctvnews.ca/world/russia-ukraine-war/article/us-envoys-go-to-meet-putin-at-the-kremlin-following-ukraine-talks-in-abu-dhabi/",
-      "t": "Thu 8:32 p.m.",
-      "iso": "2026-11-13T01:32:15+00:00"
-     },
-     {
-      "outlet": "CP24",
-      "title": "U.S. envoys meet with Putin in Moscow on Ukraine talks, to see Zelenskyy in Dublin after",
-      "url": "https://www.cp24.com/news/world/2026/11/12/us-envoys-go-to-meet-putin-at-the-kremlin-following-ukraine-talks-in-abu-dhabi/",
-      "t": "Thu 8:32 p.m.",
-      "iso": "2026-11-13T01:32:15+00:00"
-     },
-     {
-      "outlet": "The Guardian",
-      "title": "Putin takes hard line in US talks as Ukraine says Starlink disrupted again",
-      "url": "https://www.theguardian.com/world/2026/nov/12/vladimir-putin-russia-target-foreign-troops-ukraine-elon-musk-starlink",
-      "t": "Thu 5:26 p.m.",
-      "iso": "2026-11-12T22:26:37+00:00"
-     },
-     {
-      "outlet": "ABC News",
-      "title": "Witkoff and Kushner arrive in Moscow to meet with Putin, discuss Ukraine peace talks",
-      "url": "https://abcnews.com/International/witkoff-kushner-arrive-moscow-meet-putin-discuss-ukraine/story?id=138070892",
-      "t": "Thu 9:39 a.m.",
-      "iso": "2026-11-12T14:39:31+00:00"
      }
     ]
    }
@@ -4732,7 +4597,35 @@
   ]
  },
  "pm": [],
- "blogs_auto": [],
+ "blogs_auto": [
+  {
+   "net": "Middle East Eye",
+   "story": "IRGC Navy says tanker explodes after hitting a sea mine in Hormuz Stra",
+   "title": "IRGC Navy says tanker explodes after hitting a sea mine in Hormuz Strait",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-navy-says-tanker-explodes-after-hitting-sea-mine-hormuz-strait",
+   "updated": "2026-11-13T07:17:33+00:00",
+   "ended": false,
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Mourners%20carry%20the%20body%20of%20a%20Palestinian%20killed%20in%20an%20Israeli%20airstrike%20at%20Nasser%20Hospital%20in%20Khan%20Younis%2C%20in%20the%20southern%20Gaza%20Strip%2C%20during%20a%20funeral%20on%20November%2012%2C%202026.%20afp.jpg"
+  },
+  {
+   "net": "Middle East Eye",
+   "story": "Is Saudi Arabia expanding its ballistic missile programme?",
+   "title": "Is Saudi Arabia expanding its ballistic missile programme?",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-expanding-its-ballistic-missile-programme",
+   "updated": "2026-11-13T05:26:54+00:00",
+   "ended": false,
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Mourners%20carry%20the%20body%20of%20a%20Palestinian%20killed%20in%20an%20Israeli%20airstrike%20at%20Nasser%20Hospital%20in%20Khan%20Younis%2C%20in%20the%20southern%20Gaza%20Strip%2C%20during%20a%20funeral%20on%20November%2012%2C%202026.%20afp.jpg"
+  },
+  {
+   "net": "Middle East Eye",
+   "story": "Trump says Iran would be hit with 'no hesitation' if it threatens alli",
+   "title": "Trump says Iran would be hit with 'no hesitation' if it threatens allies, US ships",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-iran-would-be-hit-no-hesitation-if-it-threatens-allies-us",
+   "updated": "2026-11-13T05:18:14+00:00",
+   "ended": false,
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Mourners%20carry%20the%20body%20of%20a%20Palestinian%20killed%20in%20an%20Israeli%20airstrike%20at%20Nasser%20Hospital%20in%20Khan%20Younis%2C%20in%20the%20southern%20Gaza%20Strip%2C%20during%20a%20funeral%20on%20November%2012%2C%202026.%20afp.jpg"
+  }
+ ],
  "related": {
   "auto-e9e3f04b": {
    "ties": [
@@ -4782,12 +4675,43 @@
    ],
    "views": []
   },
+  "auto-a735e771": {
+   "ties": [
+    "moscow",
+    "ukraine"
+   ],
+   "stories": [],
+   "views": [
+    {
+     "outlet": "Atlantic Council",
+     "kind": "Think tank",
+     "title": "Putin’s chief negotiator vows to return ‘every inch of Russian land’ in Ukraine",
+     "url": "https://www.atlanticcouncil.org/blogs/ukrainealert/putins-chief-negotiator-vows-to-return-every-inch-of-russian-land-in-ukraine/"
+    }
+   ]
+  },
   "auto-b8d2c236": {
    "ties": [
     "huang",
-    "jensen"
+    "nvidia"
    ],
    "stories": [
+    {
+     "t": "Fri 12:06 a.m.",
+     "iso": "2026-11-13T05:06:14+00:00",
+     "outlet": "Toronto Star",
+     "title": "Fallout from the Nvidia scandal may dampen the exuberance around the AI boom",
+     "url": "https://www.thestar.com/news/world/united-states/fallout-from-the-nvidia-scandal-may-dampen-the-exuberance-around-the-ai-boom/article_5cf2f5bc-492d-5edb-bce6-46f4749652e7.html",
+     "tie": "Nvidia"
+    },
+    {
+     "t": "Thu 9:02 p.m.",
+     "iso": "2026-11-13T02:02:00+00:00",
+     "outlet": "The Japan Times",
+     "title": "White House weighs Lutnick’s ouster amid Nvidia export concerns, sources say",
+     "url": "https://www.japantimes.co.jp/business/2026/11/13/economy/lutnick-future-white-house-nvidia/",
+     "tie": "Nvidia"
+    },
     {
      "t": "Thu 4:30 p.m.",
      "iso": "2026-11-12T21:30:30+00:00",
@@ -4795,13 +4719,29 @@
      "title": "Huang's exit, AI bubble and financial crisis fears in focus on Web Summit's last day",
      "url": "https://www.euronews.com/2026/11/12/huangs-exit-ai-bubble-and-financial-crisis-fears-in-focus-on-web-summits-last-day",
      "tie": "Huang"
+    },
+    {
+     "t": "Thu 7:09 a.m.",
+     "iso": "2026-11-12T12:09:22+00:00",
+     "outlet": "CP24",
+     "title": "Lutnick stalled Trump crackdown on diversion of Nvidia chips to China, Axios reports",
+     "url": "https://www.cp24.com/news/money/2026/11/12/lutnick-stalled-trump-crackdown-on-diversion-of-nvidia-chips-to-china-axios-reports/",
+     "tie": "Nvidia"
+    },
+    {
+     "t": "Wed 8:45 a.m.",
+     "iso": "2026-11-11T13:45:04+00:00",
+     "outlet": "BNN Bloomberg",
+     "title": "Military-linked Chinese university bought Nvidia chips despite U.S. blacklist: Reuters exclusive",
+     "url": "https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/11/11/military-linked-chinese-university-bought-nvidia-chips-despite-us-blacklist-reuters-exclusive/",
+     "tie": "Nvidia"
     }
    ],
    "views": []
   },
   "auto-e44afb0e": {
    "ties": [
-    "colom",
+    "scott",
     "senate"
    ],
    "stories": [
@@ -4815,56 +4755,52 @@
     }
    ],
    "views": []
-  },
-  "auto-6754e954": {
-   "ties": [
-    "Federal budget"
-   ],
-   "stories": [
-    {
-     "t": "Thu 7:09 a.m.",
-     "iso": "2026-11-12T12:09:46+00:00",
-     "outlet": "CP24",
-     "title": "Champagne in Nova Scotia Thursday to discuss 2026 budget",
-     "url": "https://www.cp24.com/news/canada/2026/11/12/champagne-in-nova-scotia-thursday-to-discuss-2026-budget/",
-     "tie": "Federal budget"
-    },
-    {
-     "t": "Wed 6:53 a.m.",
-     "iso": "2026-11-11T11:53:27+00:00",
-     "outlet": "Canada's National Observer",
-     "title": "Budget 2026 shifts Liberal government's language on home construction targets",
-     "url": "https://www.nationalobserver.com/2026/11/11/news/budget-2026-shifts-liberal-governments-language-home-construction-targets",
-     "tie": "Federal budget"
-    },
-    {
-     "t": "Wed 3:55 a.m.",
-     "iso": "2026-11-11T08:55:06+00:00",
-     "outlet": "Canada's National Observer",
-     "title": "The federal budget promises more major projects. Alberta’s wondering who will build them",
-     "url": "https://www.nationalobserver.com/2026/11/10/news/federal-budget-promises-more-major-projects-albertas-wondering-who-will-build-them",
-     "tie": "Federal budget"
-    },
-    {
-     "t": "Wed 3:55 a.m.",
-     "iso": "2026-11-11T08:55:06+00:00",
-     "outlet": "Canada's National Observer",
-     "title": "Federal budget creates $50-billion earthquake insurance safety net",
-     "url": "https://www.nationalobserver.com/2026/11/10/news/federal-budget-creates-50-billion-earthquake-insurance-safety-net",
-     "tie": "Federal budget"
-    }
-   ],
-   "views": [
-    {
-     "outlet": "Canadian Centre for Policy Alternatives",
-     "kind": "Think tank",
-     "title": "Canada’s 2026 federal budget shows disconnect between words and action",
-     "url": "https://www.policyalternatives.ca/news-research/canadas-2026-federal-budget-show-disconnect-between-words-and-action/"
-    }
-   ]
   }
  },
  "canangle": {
+  "auto-a735e771": {
+   "story": "EU leaders gather in Dublin to decide who will speak for Europe in peace talks",
+   "us": false,
+   "specific": 3,
+   "stories": [
+    {
+     "t": "Thu 6:31 a.m.",
+     "iso": "2026-11-12T11:31:05+00:00",
+     "outlet": "Canada's National Observer",
+     "title": "Carney arrives in Dublin to begin four-country trip",
+     "url": "https://www.nationalobserver.com/2026/11/12/news/carney-arrives-dublin-begin-four-country-trip",
+     "ca": false,
+     "tie": ""
+    },
+    {
+     "t": "Thu 4:23 a.m.",
+     "iso": "2026-11-12T09:23:00+00:00",
+     "outlet": "Lethbridge Herald",
+     "title": "In the news today: Carney in Dublin, Stellantis talks, B.C. flooding, MAID widow plea",
+     "url": "https://lethbridgeherald.com/news/national-news/2026/11/12/in-the-news-today-carney-in-dublin-stellantis-talks-b-c-flooding-maid-widow-plea/",
+     "ca": false,
+     "tie": ""
+    },
+    {
+     "t": "Wed 9:36 p.m.",
+     "iso": "2026-11-12T02:36:08+00:00",
+     "outlet": "BNN Bloomberg",
+     "title": "PM Carney touches down in Dublin, set to address European leaders",
+     "url": "https://www.bnnbloomberg.ca/business/politics/2026/11/12/pm-carney-touches-down-in-dublin-set-to-address-european-leaders/",
+     "ca": true,
+     "tie": ""
+    }
+   ],
+   "official": [
+    {
+     "outlet": "Mark Carney",
+     "title": "Prime Minister Carney meets with Prime Minister of Greece Kyriakos Mitsotakis",
+     "url": "https://www.pm.gc.ca/en/news/readouts/2026/11/12/prime-minister-carney-meets-prime-minister-greece-kyriakos-mitsotakis",
+     "t": "Nov 12"
+    }
+   ],
+   "views": []
+  },
   "auto-b8d2c236": {
    "story": "China’s access to Nvidia chips in doubt as curbs gain traction in U.S. Congress",
    "us": true,
@@ -4912,31 +4848,6 @@
   }
  },
  "canangle_live": {
-  "https://www.youtube.com/watch?v=abtPlpFzLiM": {
-   "story": "US envoys meet Putin as Europe pushes to join Ukraine talks | Europe Today #210",
-   "us": true,
-   "specific": 1,
-   "stories": [
-    {
-     "t": "Thu 10:53 a.m.",
-     "iso": "2026-11-12T15:53:26.234000+00:00",
-     "outlet": "CBC News",
-     "title": "I studied silence in Ukraine, but moving to Montreal made me truly understand it",
-     "url": "https://www.cbc.ca/news/canada/first-person-silence-anna-lyhina-9.7406113",
-     "ca": true,
-     "tie": ""
-    }
-   ],
-   "official": [
-    {
-     "outlet": "Mark Carney",
-     "title": "Prime Minister Carney strengthens Canada’s alliance with Europe at the Summit of the European Political Community",
-     "url": "https://www.pm.gc.ca/en/news/news-releases/2026/11/12/prime-minister-carney-strengthens-canadas-alliance-europe-summit",
-     "t": "Nov 12"
-    }
-   ],
-   "views": []
-  },
   "https://www.nbcnews.com/politics/congress/commerce-secretary-howard-lutnick-testify-pressure-nvidia-scandal-rcna609093": {
    "story": "Howard Lutnick agrees to testify as bipartisan pressure grows over Nvidia scandal",
    "us": true,
