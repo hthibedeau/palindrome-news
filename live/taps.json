@@ -1,23 +1,40 @@
 {
- "checked": "2026-11-13T22:07:33.307789+00:00",
- "labels": 225,
- "problems": [],
+ "checked": "2026-11-13T23:04:49.177155+00:00",
+ "labels": 254,
+ "problems": [
+  {
+   "label": "ABC News",
+   "opens": "https://www.cbc.ca/news/canada/toronto/pickering-construction-site-collision-9.7421014",
+   "section": "developed",
+   "link": false,
+   "width": 390
+  },
+  {
+   "label": "CP24",
+   "opens": "https://www.cbc.ca/news/canada/toronto/pickering-construction-site-collision-9.7421014",
+   "section": "developed",
+   "link": false,
+   "width": 390
+  },
+  {
+   "label": "The Guardian",
+   "opens": "https://www.cbc.ca/news/canada/toronto/pickering-construction-site-collision-9.7421014",
+   "section": "developed",
+   "link": false,
+   "width": 1280
+  }
+ ],
  "guard": {
   "fixed": [
-   {
-    "label": "CityNews Montreal ↗",
-    "was": "(card link) cp24.com",
-    "now": "https://montreal.citynews.ca/2026/11/13/microsoft-outage-montreal-police-hospitals-affected/"
-   },
    {
     "label": "Daily Hive ↗",
     "was": "(card link) cp24.com",
     "now": "https://dailyhive.com/canada/canada-feeling-impact-microsoft-outage"
    },
    {
-    "label": "CBS News",
-    "was": "(card link) cbsnews.com",
-    "now": "https://www.cbsnews.com/news/election-lauren-boebert-eileen-laubacher-colorado-congressional-district-4/"
+    "label": "NPR",
+    "was": "(card link) npr.org",
+    "now": "https://www.npr.org/2026/11/13/nx-s1-6040409/trump-mail-in-voting"
    }
   ],
   "disabled": [],
