@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-13T15:50:00.109174+00:00",
- "checkedLabel": "Fri 10:50 a.m.",
+ "checked": "2026-11-13T15:55:18.111062+00:00",
+ "checkedLabel": "Fri 10:55 a.m.",
  "stories": [
   {
    "key": "top",
@@ -59,13 +59,40 @@
  ],
  "wire": [
   [
+   "Fri 10:54 a.m.",
+   "World",
+   "2 African contestants will miss Miss Universe competition because they couldn’t get U.S. visas",
+   "CTV News",
+   "https://www.ctvnews.ca/world/article/2-african-contestants-will-miss-miss-universe-competition-because-they-couldnt-get-us-visas/",
+   "2026-11-13T15:54:44.482000+00:00",
+   2
+  ],
+  [
+   "Fri 10:50 a.m.",
+   "Latest",
+   "Dolly Parton and U2’s duet ‘Torn’ released as singer’s final recorded song",
+   "Global News",
+   "https://globalnews.ca/news/12149443/dolly-parton-final-recorded-song-u2-bono-torn/",
+   "2026-11-13T15:50:32+00:00",
+   1
+  ],
+  [
+   "Fri 10:49 a.m.",
+   "Latest",
+   "Major AI developers can't control their own tech, lawsuit alleges",
+   "CBS News",
+   "https://www.cbsnews.com/news/advocacy-groups-sue-ai-companies/",
+   "2026-11-13T15:49:57+00:00",
+   1
+  ],
+  [
    "Fri 10:48 a.m.",
    "Latest",
    "Microsoft seeing \"continued recovery\" amid major worldwide outage",
    "CBS News",
    "https://www.cbsnews.com/news/microsoft-battling-major-outage/",
    "2026-11-13T15:48:09+00:00",
-   2
+   1
   ],
   [
    "Fri 10:48 a.m.",
@@ -75,15 +102,6 @@
    "https://globalnews.ca/news/12147920/search-suspended-missing-cruise-passenger-tui-atlantic/",
    "2026-11-13T15:48:01+00:00",
    1
-  ],
-  [
-   "Fri 10:43 a.m.",
-   "World",
-   "Europe seeks seat at Ukraine peace talks but lacks unified voice",
-   "Al Jazeera",
-   "https://www.aljazeera.com/news/2026/11/13/europe-seeks-seat-at-ukraine-peace-talks-but-lacks-unified-voice?traffic_source=rss",
-   "2026-11-13T15:43:39+00:00",
-   6
   ],
   [
    "Fri 10:42 a.m.",
@@ -264,24 +282,6 @@
    "https://abcnews.com/video/138104775/",
    "2026-11-13T15:16:22+00:00",
    1
-  ],
-  [
-   "Fri 10:13 a.m.",
-   "Latest",
-   "WATCH:  Empire State Building climbers appear in court",
-   "ABC News",
-   "https://abcnews.com/video/138104770/",
-   "2026-11-13T15:13:51+00:00",
-   2
-  ],
-  [
-   "Fri 10:13 a.m.",
-   "Latest",
-   "Ukrainian director on telling the stories of survivors of sexual violence",
-   "CBS News",
-   "https://www.cbsnews.com/video/ukrainian-director-on-telling-the-stories-of-survivors-of-sexual-violence/",
-   "2026-11-13T15:13:33+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -316,7 +316,7 @@
    "score": 31,
    "title": "Feds say Stellantis owes 'hundreds of millions' in subsidies, company offers $24M",
    "url": "https://www.cbc.ca/news/politics/resolution-process-terminated-government-stellantis-brampton-plant-9.7419553",
-   "outlets": 21,
+   "outlets": 20,
    "why": [
     "National Newswatch #1",
     "National Newswatch #2",
@@ -328,7 +328,7 @@
    "score": 23,
    "title": "What the Jensen Huang Nvidia scandal means for Trump and his administration",
    "url": "https://www.cbc.ca/news/world/jensen-huang-nvidia-trump-congress-investigations-9.7419755",
-   "outlets": 23,
+   "outlets": 21,
    "why": [
     "CBC News front #2",
     "CBC News front #4"
@@ -378,16 +378,6 @@
   },
   {
    "score": 9,
-   "title": "Liberals Remain Dominant as Canadians Focus on United States",
-   "url": "https://researchco.ca/2026/11/12/cdnpoli-nov2026/",
-   "outlets": 4,
-   "why": [
-    "National Newswatch #5"
-   ],
-   "theme": ""
-  },
-  {
-   "score": 9,
    "title": "Alito warns against congressional Supreme Court meddling, says some lower court judges 'have gone far astray'",
    "url": "https://www.foxnews.com/politics/alito-warns-against-congressional-supreme-court-meddling-says-some-lower-court-judges-have-gone-far-astray",
    "outlets": 7,
@@ -407,6 +397,14 @@
    "title": "Pilot killed in Quebec Remembrance Day crash had lifelong passion for flying, friends say",
    "url": "https://www.cbc.ca/news/canada/montreal/remembrance-day-plane-crash-beauce-9.7419917",
    "outlets": 9,
+   "why": [],
+   "theme": ""
+  },
+  {
+   "score": 8,
+   "title": "Peru's Chiclayo welcomes its former shepherd home, and revels in pope's love",
+   "url": "https://www.ctvnews.ca/world/article/perus-chiclayo-welcomes-its-former-shepherd-home-and-revels-in-popes-love/",
+   "outlets": 6,
    "why": [],
    "theme": ""
   }
@@ -633,8 +631,8 @@
      "services",
      "global",
      "outage",
-     "email",
-     "other"
+     "other",
+     "email"
     ],
     "score": 20,
     "outlets": 13,
@@ -1065,9 +1063,17 @@
       "up": ""
      },
      {
+      "net": "CityNews",
+      "url": "https://www.youtube.com/watch?v=Q4Aysn-7Npo",
+      "title": "Microsoft says email services slowly resuming after worldwide outage",
+      "img": "https://i.ytimg.com/vi/Q4Aysn-7Npo/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
       "net": "CP24",
       "url": "https://www.youtube.com/watch?v=XLUybEALWnQ",
-      "title": "Companies must rethink how they rely on big tech amid Microsoft outage, analyst says",
+      "title": "Microsoft outage | Should companies rethink how they rely on big tech? Analyst explains",
       "img": "https://i.ytimg.com/vi/XLUybEALWnQ/hqdefault.jpg",
       "rec": false,
       "up": ""
@@ -1075,16 +1081,8 @@
      {
       "net": "CP24",
       "url": "https://www.youtube.com/watch?v=DQ8aMBacl1Y",
-      "title": "Here's how the Microsoft outage is impacting some hospitals in Toronto",
+      "title": "Global outage of Microsoft services has seen the Toronto Hospital Network declare a code grey",
       "img": "https://i.ytimg.com/vi/DQ8aMBacl1Y/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CP24",
-      "url": "https://www.youtube.com/watch?v=3xnb6i3PNkk",
-      "title": "Microsoft outage responsible for ‘Code Grey’ declared at Toronto Hospital Network",
-      "img": "https://i.ytimg.com/vi/3xnb6i3PNkk/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1280,11 +1278,6 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Liberals Remain Dominant as Canadians Focus on United States",
-    "score": 9,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
     "title": "Alito warns against congressional Supreme Court meddling, says some lower court judges 'have gone far astray'",
     "score": 9,
     "why": "not built: only 1 independent report(s) (4 sites)"
@@ -1313,6 +1306,11 @@
     "title": "Career college saw OSAP usage rise 6,000 per cent, but wasn’t cut off this spring",
     "score": 8,
     "why": "not built: only 1 independent report(s) (6 sites)"
+   },
+   {
+    "title": "2 African contestants will miss Miss Universe competition because they couldn’t get U.S. visas",
+    "score": 7,
+    "why": "not built: only 2 independent report(s) (3 sites)"
    }
   ],
   "moved": [
@@ -1339,8 +1337,8 @@
      "lutnick",
      "huang’s",
      "huang's",
-     "jensen",
-     "nvidia"
+     "nvidia",
+     "jensen"
     ],
     "score": 23,
     "outlets": 13,
@@ -1367,7 +1365,7 @@
      "alt": "FILE- Nvidia CEO Jensen Huang speaks to the media as he attends a meeting between Chinese Premier Li Qiang and U.S. business representatives, at the Great Hall ",
      "outlet": "BNN Bloomberg",
      "url": "https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/11/13/fallout-from-the-nvidia-scandal-may-dampen-the-exuberance-around-the-ai-boom/",
-     "since": "2026-11-13T15:51:57.570607+00:00"
+     "since": "2026-11-13T15:58:19.749206+00:00"
     },
     "photo_seen": [
      "https://www.bnnbloomberg.ca/resizer/v2/H26QTSSEKFHNQYYT4ADPM2P4AM.jpg?smart=true&auth=4102145fe3fac3a5c6e3858c306275c626bb7b7bb8ce78756bc9353fa1b190d1&width=1200&height=630"
@@ -1380,6 +1378,14 @@
       "alt": "FILE- Nvidia CEO Jensen Huang speaks to the media as he attends a meeting between Chinese Premier Li Qiang and U.S. business representatives, at the Great Hall ",
       "outlet": "BNN Bloomberg",
       "url": "https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/11/13/fallout-from-the-nvidia-scandal-may-dampen-the-exuberance-around-the-ai-boom/"
+     },
+     {
+      "src": "live/img/auto-63743544-95b6231b5b.jpg",
+      "orig": "https://images.euronews.com/articles/stories/09/99/12/07/1200x675_cmsv2_59fbd4cd-9f81-54ac-a633-7063c512b60b-9991207.jpg",
+      "caption": "Nvidia has lost nearly $2tn in value. What could it be worth without Jensen Huang?. — via Euronews",
+      "alt": "Nvidia has lost nearly $2tn in value. What could it be worth without Jensen Huang?",
+      "outlet": "Euronews",
+      "url": "https://www.euronews.com/2026/11/13/nvidia-has-lost-nearly-2tn-in-value-what-could-it-be-worth-without-jensen-huang"
      },
      {
       "src": "live/img/auto-63743544-16177b308d.jpg",
@@ -1396,14 +1402,6 @@
       "alt": "Company under scrutiny for ties to Nvidia and China",
       "outlet": "CBS News",
       "url": "https://www.cbsnews.com/news/megaspeed-nvidia-china-ties/"
-     },
-     {
-      "src": "live/img/auto-63743544-1816938a8b.jpg",
-      "orig": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-11/261113-lutnik-rs-8047a9.jpg",
-      "caption": "From: Howard Lutnick will testify as bipartisan pressure grows over Nvidia scandal. — via NBC News",
-      "alt": "Howard Lutnick will testify as bipartisan pressure grows over Nvidia scandal",
-      "outlet": "NBC News",
-      "url": "https://www.nbcnews.com/politics/congress/commerce-secretary-howard-lutnick-testify-pressure-nvidia-scandal-rcna609093"
      }
     ],
     "independent": 13,
@@ -1430,7 +1428,7 @@
       "outlet": "Euronews",
       "title": "Nvidia has lost nearly $2tn in value. What could it be worth without Jensen Huang?",
       "url": "https://www.euronews.com/2026/11/13/nvidia-has-lost-nearly-2tn-in-value-what-could-it-be-worth-without-jensen-huang",
-      "desc": ""
+      "desc": "Nvidia has lost about $1.8tn (€1.6tn) in market value since its record close on 6 October. After Jensen Huang’s exit, investors are weighing whether the chipmaker can keep growing at the pace that made it the biggest name in AI."
      },
      {
       "t": "Fri 8:28 a.m.",
@@ -1562,13 +1560,13 @@
       "outlet": "Euronews",
       "title": "Nvidia has lost nearly $2tn in value. What could it be worth without Jensen Huang?",
       "url": "https://www.euronews.com/2026/11/13/nvidia-has-lost-nearly-2tn-in-value-what-could-it-be-worth-without-jensen-huang",
-      "desc": "",
+      "desc": "Nvidia has lost about $1.8tn (€1.6tn) in market value since its record close on 6 October. After Jensen Huang’s exit, investors are weighing whether the chipmaker can keep growing at the pace that made it the biggest name in AI.",
       "wire": "",
       "by": [
        {
         "outlet": "Euronews",
         "src": "Euronews",
-        "byline": ""
+        "byline": "[ { \"@type\": \"Person\", \"familyName\": \"Katanich\", \"givenName\": \"Doloresz\", \"name\": \"Doloresz Katanich\", , \"worksFor\": { \""
        }
       ],
       "copies": []
@@ -1786,8 +1784,8 @@
     "words": [
      "indigenous",
      "funding",
-     "limited",
      "women’s",
+     "limited",
      "groups",
      "budget"
     ],
@@ -1816,7 +1814,7 @@
      "alt": "President of the Native Women’s Association of Canada (NWAC) Josie Nepinak, centre, speaks to reporters on Parliament Hill alongside, from left to right, Rosema",
      "outlet": "CP24",
      "url": "https://www.cp24.com/news/canada/2026/11/12/indigenous-womens-groups-call-out-ottawa-over-funding-in-new-federal-budget/",
-     "since": "2026-11-13T15:52:01.871283+00:00"
+     "since": "2026-11-13T15:58:23.503014+00:00"
     },
     "photo_seen": [
      "https://www.cp24.com/resizer/v2/L3N2I3DFAONNU7VYMKKVI4R2WY.jpg?smart=true&auth=1f3a60ed114383e92f47b960e12fd8916447ec2735794e037bc6d4ca4f2e9099&width=1200&height=630"
@@ -2207,20 +2205,6 @@
    "geo": "unknown"
   },
   {
-   "id": "UGqOKISBX1A",
-   "r": "ca",
-   "o": "CP24",
-   "t": "‘We are here to continue crying about the loss of our son’: Community mourns 18-year-old Malik Abbas",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=UGqOKISBX1A",
-   "img": "https://i.ytimg.com/vi/UGqOKISBX1A/hqdefault.jpg",
-   "up": "2026-11-13",
-   "added": "2026-11-13T15:19:59.492874+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "zYJJbXMEZ94",
    "r": "ca",
    "o": "CTV News",
@@ -2235,24 +2219,10 @@
    "geo": "unknown"
   },
   {
-   "id": "Qs-Dm9Er3Zg",
-   "r": "ca",
-   "o": "CTV News",
-   "t": "‘I Play Rocky’ is ‘inspirational’ and ‘uplifting’: Film critic Richard Crouse",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=Qs-Dm9Er3Zg",
-   "img": "https://i.ytimg.com/vi/Qs-Dm9Er3Zg/hqdefault.jpg",
-   "up": "2026-11-13",
-   "added": "2026-11-13T15:50:00.109174+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "rd91kDsJ6So",
    "r": "ca",
    "o": "Global News",
-   "t": "This Week in Washington: Ex-Apple CEO should replace Huang at Nvidia, Trump says",
+   "t": "This Week in Washington: “We don’t need a deal with Iran,” Trump says",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=rd91kDsJ6So",
@@ -2273,6 +2243,34 @@
    "img": "https://i.ytimg.com/vi/liwG1bz7ysc/hqdefault.jpg",
    "up": "2026-11-13",
    "added": "2026-11-13T15:50:00.109174+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "-PMGsoBjVRY",
+   "r": "ca",
+   "o": "CTV News",
+   "t": "Cultural Connections explores First Nations storytelling and ceremonies",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=-PMGsoBjVRY",
+   "img": "https://i.ytimg.com/vi/-PMGsoBjVRY/hqdefault.jpg",
+   "up": "2026-11-13",
+   "added": "2026-11-13T15:55:18.111062+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "bU44v_Vz2oI",
+   "r": "ca",
+   "o": "CP24",
+   "t": "One-on-one with judge Carson Kressley as ‘Canada’s Drag Race’ returns",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=bU44v_Vz2oI",
+   "img": "https://i.ytimg.com/vi/bU44v_Vz2oI/hqdefault.jpg",
+   "up": "2026-11-13",
+   "added": "2026-11-13T15:55:18.111062+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2329,20 +2327,6 @@
    "img": "https://i.ytimg.com/vi/mXGAFfdCK8A/hqdefault.jpg",
    "up": "2026-11-13",
    "added": "2026-11-13T13:04:00.515533+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "XNd2Y8Sy4bY",
-   "r": "us",
-   "o": "CNBC",
-   "t": "'Inconceivable' that SpaceX, Tesla wouldn't merge: 'Elon Musk' author Isaacson",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=XNd2Y8Sy4bY",
-   "img": "https://i.ytimg.com/vi/XNd2Y8Sy4bY/hqdefault.jpg",
-   "up": "2026-11-13",
-   "added": "2026-11-13T13:14:00.820371+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2420,7 +2404,7 @@
    "id": "hn7sAsPA1qk",
    "r": "us",
    "o": "CNN",
-   "t": "Stephen A. Smith says Trump taking ‘zero’ blame for election blowout",
+   "t": "Trump says he would beat Obama easily in hypothetical matchup",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=hn7sAsPA1qk",
@@ -2434,7 +2418,7 @@
    "id": "UP4OiioAVhI",
    "r": "us",
    "o": "CBS News",
-   "t": "Zelenskyy pushes for Europe to become part of Russia-Ukraine negotiations",
+   "t": "Witkoff, Kushner hold separate meetings with Russia and Ukraine",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=UP4OiioAVhI",
@@ -2557,16 +2541,16 @@
    "geo": "unknown"
   },
   {
-   "id": "9zgMEdAG8P8",
-   "r": "world",
-   "o": "BBC News",
-   "t": "World War Two bunker in UK unearthed after DECADES | BBC News",
+   "id": "4tKmE7vAlhU",
+   "r": "us",
+   "o": "CNBC",
+   "t": "Market Open: Stocks Mixed, Wholesale Inflation at Four-Year High, Nvidia Fallout • 11/13/26",
    "rec": false,
    "d": "",
-   "u": "https://www.youtube.com/watch?v=9zgMEdAG8P8",
-   "img": "https://i.ytimg.com/vi/9zgMEdAG8P8/hqdefault.jpg",
+   "u": "https://www.youtube.com/watch?v=4tKmE7vAlhU",
+   "img": "https://i.ytimg.com/vi/4tKmE7vAlhU/hqdefault.jpg",
    "up": "2026-11-13",
-   "added": "2026-11-13T10:13:25.435016+00:00",
+   "added": "2026-11-13T15:55:18.111062+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2574,7 +2558,7 @@
    "id": "3X_AIVBNTog",
    "r": "world",
    "o": "BBC News",
-   "t": "How Microsoft outage has affected schools, doctors, and businesses | BBC News",
+   "t": "How government and businesses are coping without Microsoft access | BBC News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=3X_AIVBNTog",
@@ -2655,24 +2639,10 @@
    "geo": "unknown"
   },
   {
-   "id": "AvKp3hrr7N4",
-   "r": "world",
-   "o": "Al Jazeera",
-   "t": "Iran targets US Asset in Bahrain: Revolutionary guard says it destroyed radar system",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=AvKp3hrr7N4",
-   "img": "https://i.ytimg.com/vi/AvKp3hrr7N4/hqdefault.jpg",
-   "up": "2026-11-13",
-   "added": "2026-11-13T15:39:59.307362+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "gyN32oA9SJk",
    "r": "world",
    "o": "Sky News",
-   "t": "Why the Russell Brand Story Could Be a Turning Point",
+   "t": "Are Powerful Men Finally on Notice?",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=gyN32oA9SJk",
@@ -2693,6 +2663,34 @@
    "img": "https://i.ytimg.com/vi/CDqwfvr7eog/hqdefault.jpg",
    "up": "2026-11-13",
    "added": "2026-11-13T15:50:00.109174+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "106GOrVzYCo",
+   "r": "world",
+   "o": "BBC News",
+   "t": "Is Scottish-born GTA a mirror of America? | The Global Story",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=106GOrVzYCo",
+   "img": "https://i.ytimg.com/vi/106GOrVzYCo/hqdefault.jpg",
+   "up": "2026-11-13",
+   "added": "2026-11-13T15:55:18.111062+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "RRAU7d2U3Xk",
+   "r": "world",
+   "o": "Al Jazeera",
+   "t": "Qatar and Turkiye sign mutual defence pact",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=RRAU7d2U3Xk",
+   "img": "https://i.ytimg.com/vi/RRAU7d2U3Xk/hqdefault.jpg",
+   "up": "2026-11-13",
+   "added": "2026-11-13T15:55:18.111062+00:00",
    "pic": "globe",
    "geo": "unknown"
   }
@@ -2732,27 +2730,27 @@
   },
   {
    "o": "Fox News",
-   "h": "WWE's Ethan Page feels 'legendary' after winning Intercontinental Championship, talks raising title's prestige",
-   "u": "https://www.foxnews.com/outkick-sports/wwe-ethan-page-legendary-winning-intercontinental-championship-talks-raising-title-prestige",
-   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/ethan-page-entrance-monday-night-raw.jpg",
-   "w": "Fri 10:31 a.m.",
-   "iso": "2026-11-13T15:31:18+00:00"
+   "h": "SEE IT: Door-kicking pranksters target California homes as police warn trend can end badly",
+   "u": "https://www.foxnews.com/us/door-kicking-pranksters-target-california-homes-police-warn-trend-end-badly",
+   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/door-knocking-prank.gif",
+   "w": "Fri 10:53 a.m.",
+   "iso": "2026-11-13T15:53:18+00:00"
   },
   {
    "o": "NPR",
-   "h": "Remembering singer and actor Peggy King",
-   "u": "https://www.npr.org/2026/11/13/nx-s1-6038917/remembering-singer-and-actor-peggy-king",
-   "img": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
-   "w": "Fri 8:35 a.m.",
-   "iso": "2026-11-13T13:35:22+00:00"
+   "h": "How Sen. Chris Van Hollen plans to flex Democratic power on the foreign aid front",
+   "u": "https://www.npr.org/2026/11/13/g-s1-153350/senator-chris-van-hollen-global-health-development-aid",
+   "img": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/8192x4608+0+428/resize/1400/quality/85/format/webp/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fd3%2Fa3%2F631876c94a13ba74cf0090e78406%2Fchris-van-hollen.jpg",
+   "w": "Fri 10:46 a.m.",
+   "iso": "2026-11-13T15:46:35+00:00"
   },
   {
    "o": "The Hill",
-   "h": "Peltola extends lead after new Alaska Senate ballots count",
-   "u": "https://thehill.com/the-120/6218667-mary-peltola-alaska-senate-lead/",
+   "h": "Trump approval hits record second-term low: Survey",
+   "u": "https://thehill.com/homenews/administration/6218757-trump-approval-iran-midterms-2028/",
    "img": "",
-   "w": "Fri 10:34 a.m.",
-   "iso": "2026-11-13T15:34:05+00:00"
+   "w": "Fri 10:57 a.m.",
+   "iso": "2026-11-13T15:57:55+00:00"
   },
   {
    "o": "Politico",
@@ -2817,6 +2815,19 @@
    "auto": true
   },
   {
+   "inst": "Pew Research Center",
+   "place": "Washington",
+   "kind": "Publication",
+   "by": "",
+   "date": "Nov. 13, 2026",
+   "d": "2026-11-13",
+   "pic": "chart",
+   "u": "https://www.pewresearch.org/short-reads/2026/11/13/where-americans-get-news-relates-to-how-they-engage-in-public-life/",
+   "t": "Where Americans Get News Relates to How They Engage in Public Life",
+   "g": "News outlets that heavily cover politics are among the sources whose audiences contain a disproportionately high share of the most engaged Americans.",
+   "auto": true
+  },
+  {
    "inst": "C.D. Howe Institute",
    "place": "Toronto",
    "kind": "Publication",
@@ -2840,32 +2851,6 @@
    "u": "https://www.policyalternatives.ca/news-research/contract-workers-in-manitoba-deserve-the-right-to-keep-their-unions/",
    "t": "Contract workers in Manitoba deserve the right to keep their unions",
    "g": "Employers could reverse recent progress for some of Manitoba’s most precarious workers The post Contract workers in Manitoba deserve the right to keep their unions appeared first on CCPA .",
-   "auto": true
-  },
-  {
-   "inst": "Frontier Centre for Public Policy",
-   "place": "Winnipeg",
-   "kind": "Publication",
-   "by": "",
-   "date": "Nov. 12, 2026",
-   "d": "2026-11-12",
-   "pic": "chart",
-   "u": "https://frontiercentre.org/2026/11/12/the-indian-act-is-it-time-to-scrap-it/?utm_source=rss&utm_medium=rss&utm_campaign=the-indian-act-is-it-time-to-scrap-it",
-   "t": "The Indian Act: Is It Time to Scrap It?",
-   "g": "Should Canada abolish the Indian Act? Passed in 1876, the Indian Act continues to shape the relationship between the federal government and First Nations communities.",
-   "auto": true
-  },
-  {
-   "inst": "Frontier Centre for Public Policy",
-   "place": "Winnipeg",
-   "kind": "Publication",
-   "by": "",
-   "date": "Nov. 12, 2026",
-   "d": "2026-11-12",
-   "pic": "chart",
-   "u": "https://frontiercentre.org/2026/11/12/guess-wholl-pay-for-high-speed-rail-cost-overruns/?utm_source=rss&utm_medium=rss&utm_campaign=guess-wholl-pay-for-high-speed-rail-cost-overruns",
-   "t": "Guess Who’ll Pay for High-Speed Rail Cost Overruns",
-   "g": "Senior fellow Wendell Cox argues that Canada’s proposed Alto high-speed rail project risks becoming an enormously expensive burden on taxpayers, as international experience demonstrates that rail megaprojects routinely exceed construction budgets while falling short of ridership and revenue projections.",
    "auto": true
   },
   {
@@ -2908,19 +2893,6 @@
    "auto": true
   },
   {
-   "inst": "Pew Research Center",
-   "place": "Washington",
-   "kind": "Publication",
-   "by": "",
-   "date": "Nov. 12, 2026",
-   "d": "2026-11-12",
-   "pic": "chart",
-   "u": "https://www.pewresearch.org/short-reads/2026/11/12/a-first-look-at-polling-performance-in-2026/",
-   "t": "A First Look at Polling Performance in 2026",
-   "g": "Preelection polls captured the direction of this year’s election, while generally understating the size of Democrats’ advantage.",
-   "auto": true
-  },
-  {
    "inst": "Lowy Institute",
    "place": "Sydney",
    "kind": "Publication",
@@ -2944,6 +2916,32 @@
    "u": "https://www.lowyinstitute.org/the-interpreter/why-the-arctic-cannot-replace-the-middle-east-s-shipping-lanes",
    "t": "Why the Arctic cannot replace the Middle East’s shipping lanes",
    "g": "Russian Arctic energy, not Arctic shipping, is the real beneficiary of the current crisis – and Western sanctions complicate even that.",
+   "auto": true
+  },
+  {
+   "inst": "Macdonald-Laurier Institute",
+   "place": "Ottawa",
+   "kind": "Publication",
+   "by": "",
+   "date": "Nov. 11, 2026",
+   "d": "2026-11-11",
+   "pic": "chart",
+   "u": "https://macdonaldlaurier.ca/albertas-referendum-offers-an-opportunity-for-ottawa-to-rethink-how-it-appoints-judges-mark-harding-in-the-hub/",
+   "t": "Alberta’s referendum offers an opportunity for Ottawa to rethink how it appoints judges: Mark Harding in The Hub",
+   "g": "This article originally appeared in The Hub. By Mark Harding, November 11, 2026 Reporting on Alberta’s referendum results has correctly focused on the question of separation. The other questions, ranging […] The post Alberta’s referendum offers an opportunity for Ottawa to rethink how it appoints judges: Mark Harding…",
+   "auto": true
+  },
+  {
+   "inst": "Heritage Foundation",
+   "place": "Washington",
+   "kind": "Publication",
+   "by": "",
+   "date": "Nov. 11, 2026",
+   "d": "2026-11-11",
+   "pic": "chart",
+   "u": "https://www.heritage.org/conservatism/report/lessons-the-founding-fathers-and-the-old-american-tradition-muslim-immigration",
+   "t": "Lessons from the Founding Fathers and the Old American Tradition on Muslim Immigration",
+   "g": "Western civilization is facing a crisis driven by mass immigration from the Muslim world. Across the Atlantic, the demographic consequences of Muslim immigration have begun to unravel the social fabric of Europe. America is following a similar course as its foreign-born population reaches historic levels. Coinciding…",
    "auto": true
   }
  ],
@@ -3080,7 +3078,7 @@
    "The 90-minute meeting took place Thursday, days after Stellantis confirmed it was selling the idled Brampton Assembly Plant to Canadian armoured vehicle manufacturer Roshel, ending plans to retool the facility for production of the next-generation Jeep Compass, The Canadian Press reports.",
    "Van Hollen to challenge Schumer for Senate Democratic leader, The Associated Press reports.",
    "Ex-Nvidia CEO Jensen Huang summoned to testify before Congress about affair with alleged Chinese spy, BBC News reports.",
-   "Microsoft reports progress as it works to recover email and other services in a global outage, CTV News reports.",
+   "Microsoft reports progress in reviving email and other services during a global outage, Toronto Star reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
   ]
  },
@@ -3397,25 +3395,25 @@
    "city": "St. John's",
    "tz": "America/St_Johns",
    "world": false,
-   "w": "PAL Airlines",
-   "label": "A PAL Airlines flight lost a wheel less than 2 weeks ago.…",
-   "u": "https://www.cbc.ca/news/canada/newfoundland-labrador/st-johns-airport-emergency-9.7419519",
-   "title": "A PAL Airlines flight lost a wheel less than 2 weeks ago. It's happened again — to the same plane",
+   "w": "In court",
+   "label": "Youth arrested and charged after assaulting a 10-year-old…",
+   "u": "https://www.cbc.ca/news/canada/newfoundland-labrador/youth-assault-rnc-9.7420502?cmp=rss",
+   "title": "Youth arrested and charged after assaulting a 10-year-old in Paradise: RNC",
    "outlet": "CBC News",
-   "t": "Thu 6:21 p.m.",
+   "t": "Fri 9:26 a.m.",
    "hot": false
   },
   {
    "city": "Halifax",
    "tz": "America/Halifax",
    "world": false,
-   "w": "Brunswick",
-   "label": "New Brunswick emerges atop crowded Pool B at Canadian…",
-   "u": "https://www.ctvnews.ca/atlantic/new-brunswick/article/new-brunswick-emerges-atop-crowded-pool-b-at-canadian-mixed-curling-championship/",
-   "title": "New Brunswick emerges atop crowded Pool B at Canadian mixed curling championship",
-   "outlet": "CTV News",
-   "t": "Fri 7:35 a.m.",
-   "hot": false
+   "w": "The vote",
+   "label": "Man in his 60s dies after SUV crashes into ditch in Queens…",
+   "u": "https://www.cbc.ca/news/canada/prince-edward-island/pei-fatal-crash-west-covehead-9.7420554?cmp=rss",
+   "title": "Man in his 60s dies after SUV crashes into ditch in Queens County",
+   "outlet": "CBC News",
+   "t": "Fri 10:02 a.m.",
+   "hot": true
   },
   {
    "city": "Ottawa",
@@ -3506,11 +3504,11 @@
    "tz": "Europe/Kyiv",
    "world": true,
    "w": "Talks",
-   "label": "Europe seeks seat at Ukraine peace talks but lacks unified…",
-   "u": "https://www.aljazeera.com/news/2026/11/13/europe-seeks-seat-at-ukraine-peace-talks-but-lacks-unified-voice?traffic_source=rss",
-   "title": "Europe seeks seat at Ukraine peace talks but lacks unified voice",
-   "outlet": "Al Jazeera",
-   "t": "Fri 10:43 a.m.",
+   "label": "Europe pushes for seat at Ukraine peace talks but lacks…",
+   "u": "https://www.ctvnews.ca/world/russia-ukraine-war/article/europe-pushes-for-seat-at-ukraine-peace-talks-but-lacks-unified-voice/",
+   "title": "Europe pushes for seat at Ukraine peace talks but lacks unified voice",
+   "outlet": "CTV News",
+   "t": "Fri 10:02 a.m.",
    "hot": true
   }
  ],
@@ -3543,26 +3541,26 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Fri 10:43 a.m.",
-   "iso": "2026-11-13T15:43:39+00:00",
-   "title": "Europe seeks seat at Ukraine peace talks but lacks unified voice",
-   "summary": "EU leaders believe a US-backed process will allow Moscow and Washington to decide the fate of a conflict.",
-   "outlet": "Al Jazeera + CBC News + CTV News + CP24 + 1 more (AP), Euronews, The Guardian, PBS NewsHour, CTV News",
-   "n": 5,
-   "url": "https://www.aljazeera.com/news/2026/11/13/europe-seeks-seat-at-ukraine-peace-talks-but-lacks-unified-voice?traffic_source=rss",
-   "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/getty_6af72b2c48-1794583340.jpg?resize=1920%2C1440"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
    "t": "Fri 10:29 a.m.",
    "iso": "2026-11-13T15:29:21+00:00",
    "title": "U.N. watchdog agency pushes for access to key Iran nuclear site",
    "summary": "",
-   "outlet": "CBS News, BBC News, Al Jazeera, Toronto Star + CP24 (AP)",
+   "outlet": "CBS News, BBC News, Al Jazeera, Toronto Star + CP24",
    "n": 4,
    "url": "https://www.cbsnews.com/live-updates/us-iran-war-trump-nuclear-material-no-deal/",
    "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/06/24/b879ec6e-4079-4e01-abd0-f89f63ff4c01/thumbnail/1200x630/5d43f7f6c8725252539e8f52741a47f6/iran-iaea-isfahan-101916459.jpg"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Fri 10:02 a.m.",
+   "iso": "2026-11-13T15:02:23+00:00",
+   "title": "Europe pushes for seat at Ukraine peace talks but lacks unified voice",
+   "summary": "European nations are seeking an envoy to represent them in talks on ending the Russia-Ukraine war, concerned that a U.S.-backed process will leave them sidelined and Kyiv vulnerable as Moscow and Washington decide the fate of a conflict that has roiled the continent.",
+   "outlet": "CTV News + PBS NewsHour + CP24 + CBC News (CP), The Guardian, CTV News, Euronews",
+   "n": 4,
+   "url": "https://www.ctvnews.ca/world/russia-ukraine-war/article/europe-pushes-for-seat-at-ukraine-peace-talks-but-lacks-unified-voice/",
+   "img": "https://www.ctvnews.ca/resizer/v2/N7GLISQHT5WMLE7QVMHBO3EV5U.jpg?smart=true&auth=c119b432bbe62e2881c3d662c4a7994a057823f12a4655d3d30946147c87dde7&width=1200&height=630"
   },
   {
    "desk": "world",
@@ -3627,38 +3625,14 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Fri 8:02 a.m.",
-   "iso": "2026-11-13T13:02:48+00:00",
-   "title": "PAL Plane Grounded After Two Separate Wheel Failure Incidents",
-   "summary": "PAL Airlines says a wheel failure was behind an emergency response at St. John's International Airport yesterd...",
-   "outlet": "VOCM, CP24 + BNN Bloomberg, CBC News",
-   "n": 3,
-   "url": "https://vocm.com/2026/11/13/pal-plane-now-grounded-after-two-separate-wheel-failure-incidents/",
-   "img": "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/900/files/2019/09/PAL-Airlines.jpg"
-  },
-  {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Fri 7:00 a.m.",
-   "iso": "2026-11-13T12:00:00+00:00",
-   "title": "If the N.W.T. wants an addictions treatment centre, ‘we'd look to discuss,’ says its MP",
-   "summary": "There is currently no inpatient addictions treatment centre in the territory. Residents who need such care are sent to facilities down south.",
-   "outlet": "CBC News, Canada's National Observer, Yukon News",
-   "n": 3,
-   "url": "https://www.cbc.ca/news/canada/north/if-the-n-w-t-wants-an-addictions-treatment-centre-we-d-look-to-discuss-says-its-mp-9.7419841?cmp=rss",
-   "img": "https://i.cbc.ca/ais/3531ff7f-380b-45dc-a1ba-f6eb4127bfad,1794522111427/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C398%2C7645%2C4300%29%3BResize%3D620"
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Fri 6:13 a.m.",
-   "iso": "2026-11-13T11:13:52+00:00",
-   "title": "Metro MP says Budget’s Business Focus Necessary Given Geopolitical Climate",
-   "summary": "One of the criticisms leveled against the federal government's latest budget is that it leans heavily toward b...",
-   "outlet": "VOCM, PBS NewsHour, The Hill",
-   "n": 3,
-   "url": "https://vocm.com/2026/11/13/metro-mp-says-budgets-business-focus-necessary-given-geopolitical-climate/",
-   "img": "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/900/files/2026/11/tom-osborne.png"
+   "t": "Fri 10:54 a.m.",
+   "iso": "2026-11-13T15:54:44.482000+00:00",
+   "title": "2 African contestants will miss Miss Universe competition because they couldn’t get U.S. visas",
+   "summary": "Two African contestants will miss this year’s Miss Universe competition in Puerto Rico because of visa restrictions imposed by U.S. President Donald Trump’s administration, while two others are struggling to obtain visas.",
+   "outlet": "CTV News + Times Colonist + Toronto Star + The Canadian Press (via Winnipeg Free Press), BBC News",
+   "n": 2,
+   "url": "https://www.ctvnews.ca/world/article/2-african-contestants-will-miss-miss-universe-competition-because-they-couldnt-get-us-visas/",
+   "img": "https://www.ctvnews.ca/resizer/v2/VU3E3OPHEXY77KHX7WNUNYDVLM.jpg?smart=true&auth=a71fa26227e0d9519462141f22748ba1a799233ed28955c63a4135d61a94f745&width=1200&height=630"
   },
   {
    "desk": "world",
@@ -3675,26 +3649,14 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Fri 9:20 a.m.",
-   "iso": "2026-11-13T14:20:43+00:00",
-   "title": "South African parties in high-stakes coalition talks after ANC's worst election results",
-   "summary": "JOHANNESBURG (AP) — South African political parties began high-stakes coalition talks that will determine who will run the country's cities after recent local elections saw the once-dominant African National Congress",
-   "outlet": "Toronto Star + Times Colonist + The Canadian Press (via Winnipeg Free Press), BBC News",
+   "t": "Fri 9:05 a.m.",
+   "iso": "2026-11-13T14:05:00+00:00",
+   "title": "1 killed, 5 injured in shooting in D.C.; suspect is dead",
+   "summary": "The suspect, identified as a 55-year-old doctor, was found dead in his apartment from a self-inflicted gunshot wound, police said.",
+   "outlet": "CBS News, CTV News + CP24 (CP)",
    "n": 2,
-   "url": "https://www.thestar.com/news/world/africa/south-african-parties-in-high-stakes-coalition-talks-after-anc-s-worst-election-results/article_a0495488-529b-5f52-9721-1d6d953055ed.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/b/4f/b4f9b021-9663-5609-949f-9c5b0c893080/6ae8db59c7a2c.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
-  },
-  {
-   "desk": "us",
-   "pic": "podium",
-   "t": "Fri 7:00 a.m.",
-   "iso": "2026-11-13T12:00:26+00:00",
-   "title": "New York City building collapse probe raises questions about neighboring property owner’s violation history",
-   "summary": "N Tech Design of America defied a New York City stop-work order months before the deadly Brooklyn building collapse that killed eight people.",
-   "outlet": "Fox News, PBS NewsHour",
-   "n": 2,
-   "url": "https://www.foxnews.com/us/new-york-city-building-collapse-probe-raises-questions-about-neighboring-property-owners-violation-history",
-   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/fdny-building-collapse.jpg"
+   "url": "https://www.cbsnews.com/news/washington-dc-shooting-gym-vida/",
+   "img": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/12/5c7ce122-6c6f-4798-a6fb-90a0b6b1e41c/thumbnail/1200x630g8/a2724f5121a846ba99fd510dac362fb9/gettyimages-2304771269.jpg"
   },
   {
    "desk": "business",
@@ -3707,6 +3669,18 @@
    "n": 2,
    "url": "https://www.ctvnews.ca/calgary/article/christmas-in-calgary-10-family-friendly-events-light-displays-and-markets/",
    "img": "https://www.ctvnews.ca/resizer/v2/5MFXD4ZV55DLFICKMBMGI57OME.JPG?smart=true&auth=7370bd735bde2b0c77c139f47bac94d22364fe9008f3e85aea916ed8ea598531&width=1200&height=630"
+  },
+  {
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Fri 7:00 a.m.",
+   "iso": "2026-11-13T12:00:00+00:00",
+   "title": "If the N.W.T. wants an addictions treatment centre, ‘we'd look to discuss,’ says its MP",
+   "summary": "There is currently no inpatient addictions treatment centre in the territory. Residents who need such care are sent to facilities down south.",
+   "outlet": "CBC News, Canada's National Observer",
+   "n": 2,
+   "url": "https://www.cbc.ca/news/canada/north/if-the-n-w-t-wants-an-addictions-treatment-centre-we-d-look-to-discuss-says-its-mp-9.7419841?cmp=rss",
+   "img": "https://i.cbc.ca/ais/3531ff7f-380b-45dc-a1ba-f6eb4127bfad,1794522111427/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C398%2C7645%2C4300%29%3BResize%3D620"
   },
   {
    "desk": "business",
@@ -3743,6 +3717,18 @@
    "n": 2,
    "url": "https://www.politico.com/live-updates/2026/11/12/congress/tim-kaine-senate-budget-chair-01164424",
    "img": ""
+  },
+  {
+   "desk": "us",
+   "pic": "podium",
+   "t": "Thu 7:31 p.m.",
+   "iso": "2026-11-13T00:31:23+00:00",
+   "title": "What to know about dengue fever as Florida reports more than 500 cases this year",
+   "summary": "As Florida navigates its largest dengue outbreak in more than 15 years, it might help to understand how this virus spreads and how to recognize symptoms and protect yourself.",
+   "outlet": "PBS NewsHour, The Hill",
+   "n": 2,
+   "url": "https://www.pbs.org/newshour/health/what-to-know-about-dengue-fever-as-florida-reports-more-than-500-cases-this-year",
+   "img": "https://d3i6fh83elv35t.cloudfront.net/static/2026/11/2024-07-09T205333Z_146087631_RC2SR8A14LHH_RTRMADP_3_EL-SALVADOR-DENGUE-1024x768.jpg"
   },
   {
    "desk": "politics",
@@ -3815,6 +3801,18 @@
    "n": 1,
    "url": "https://www.ctvnews.ca/edmonton/article/alberta-sticks-with-dst-ndp-questions-distillery-tour-expenses-the-weeks-top-news-stories/",
    "img": "https://www.ctvnews.ca/resizer/v2/GTJHVBUTYBBIPN6QZUOATOTHGQ.jpg?smart=true&auth=9b11cc6c80b5d9c735e340807c4d891ad7756793b48c264fc98d840757eefc1b&width=1200&height=630"
+  },
+  {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Fri 9:56 a.m.",
+   "iso": "2026-11-13T14:56:12+00:00",
+   "title": "BILD: The evidence is clear – the HST rebate program is helping new home buyers and the Ontario economy",
+   "summary": "",
+   "outlet": "Toronto Sun",
+   "n": 1,
+   "url": "https://torontosun.com/life/homes/bild-the-evidence-is-clear-the-hst-rebate-program-is-helping-new-home-buyers-and-the-ontario-economy",
+   "img": ""
   },
   {
    "desk": "politics",
@@ -4007,9 +4005,9 @@
     "Add Global News to Home Screen Close",
     "Microsoft 365 outage continues globally as company says no fix yet",
     "Polar vortex splitting brings uncertainty to Canada’s winter outlook",
+    "Microsoft 365 outage continues, but company says email queues nearing ‘normal’",
     "Molson Canadian, Coors Light among 29 beers recalled across Canada",
-    "Russia says it’ll demand compensation if barred from World Juniors in Alberta",
-    "Mortgage rules need to change for first-time home buyers, report says"
+    "Russia says it’ll demand compensation if barred from World Juniors in Alberta"
    ],
    "u": [
     "",
@@ -4017,7 +4015,7 @@
     "https://globalnews.ca/news/12148340/polar-vortex-disruption-canada/",
     "",
     "",
-    "https://globalnews.ca/news/12146170/mortgage-policy-changes-first-time-buyers/"
+    ""
    ]
   },
   {
@@ -4109,7 +4107,7 @@
     "Microsoft issues continue Friday as company targets email. Live updates here.",
     "After the Stellantis ordeal, should Canada keep funding big industry?",
     "Don’t throw the baby out with the bathwater when tax-loss selling: Dale Jackson",
-    "World oil market is returning to surplus as Gulf exports recover, IEA says"
+    "Stocks sway as Wall Street heads for a winning week after several turbulent days"
    ],
    "u": [
     "https://www.bnnbloomberg.ca/business/economics/2026/11/13/inflation-expected-to-stay-high-as-economists-weigh-risk-of-broadening-price-hikes/",
@@ -4117,7 +4115,7 @@
     "https://www.bnnbloomberg.ca/business/company-news/2026/11/13/microsoft-issues-continue-friday-as-company-targets-email-live-updates-here/",
     "https://www.bnnbloomberg.ca/business/politics/2026/11/13/after-the-stellantis-ordeal-should-canada-keep-funding-big-industry/",
     "https://www.bnnbloomberg.ca/investing/opinion/2026/11/13/dont-throw-the-baby-out-with-the-bathwater-when-tax-loss-selling-dale-jackson/",
-    "https://www.bnnbloomberg.ca/markets/oil/2026/11/13/world-oil-market-is-returning-to-surplus-as-gulf-exports-recover-iea-says/"
+    "https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/11/13/stocks-sway-as-wall-street-heads-for-a-winning-week-after-several-turbulent-days/"
    ]
   },
   {
@@ -4191,22 +4189,6 @@
    ]
   },
   {
-   "o": "The New York Times",
-   "ca": false,
-   "h": [
-    "New York Times - Top Stories",
-    "The Athletic Sports coverage",
-    "Cooking Recipes and guides",
-    "Wirecutter Product recommendations"
-   ],
-   "u": [
-    "",
-    "",
-    "",
-    ""
-   ]
-  },
-  {
    "o": "BBC News",
    "ca": false,
    "h": [
@@ -4233,7 +4215,7 @@
     "Live updates Microsoft outage: Millions still affected as disruption stretches beyond 18 hours",
     "Full report Microsoft scrambles to fix global outage affecting Teams and Outlook",
     "US politics live Scott Bessent blames commerce department over delay blacklisting China-linked data company",
-    "Explainer A global Microsoft 365 outage has hit millions – what happened and when will it be fixed?",
+    "Explainer What happened and when will it be fixed?",
     "UK Microsoft outage hits hospitals, GPs, schools and police",
     "US-Israel war on Iran Iran says it targeted US military radar in Bahrain in retaliatory strike"
    ],
@@ -4276,7 +4258,7 @@
     "url": "https://www.youtube.com/watch?v=koCeBTRMkbI",
     "img": "https://i.ytimg.com/vi/koCeBTRMkbI/hqdefault.jpg",
     "story": "Brooklyn building collapse: NY Attorney General, officials provide upd",
-    "watching": "29",
+    "watching": "34",
     "also": [
      {
       "net": "ABC News",
@@ -4331,13 +4313,22 @@
     ]
    },
    {
+    "net": "Fox News",
+    "r": "us",
+    "title": "WATCH LIVE: Democrats plot their next move as Jeffries takes the stage",
+    "url": "https://www.youtube.com/watch?v=KOMtOdPVa9M",
+    "img": "https://i.ytimg.com/vi/KOMtOdPVa9M/hqdefault.jpg",
+    "story": "Democrats plot their next move as Jeffries takes the stage",
+    "watching": "154"
+   },
+   {
     "net": "Associated Press",
     "r": "us",
     "title": "LIVE: Pope Leo XIV leads Mass at Pampas de Pimentel in Chiclayo, Peru",
     "url": "https://www.youtube.com/watch?v=TaEW4ytUi6g",
     "img": "https://i.ytimg.com/vi/TaEW4ytUi6g/hqdefault.jpg",
     "story": "Pope Leo XIV leads Mass at Pampas de Pimentel in Chiclayo, Peru",
-    "watching": "74",
+    "watching": "198",
     "reports": [
      {
       "outlet": "PBS NewsHour",
@@ -4355,7 +4346,7 @@
     "url": "https://www.youtube.com/watch?v=lisNaZfNpeg",
     "img": "https://i.ytimg.com/vi/lisNaZfNpeg/hqdefault.jpg",
     "story": "Nvidia stock price a day after Jensen Huang resigns as CEO",
-    "watching": "214",
+    "watching": "225",
     "reports": [
      {
       "outlet": "Toronto Sun",
@@ -4401,7 +4392,7 @@
     "url": "https://www.youtube.com/watch?v=P-D23A08cAE",
     "img": "https://i.ytimg.com/vi/P-D23A08cAE/hqdefault.jpg",
     "story": "Nov. 13",
-    "watching": "3"
+    "watching": "2"
    },
    {
     "net": "LiveNOW from FOX",
@@ -4410,7 +4401,7 @@
     "url": "https://www.youtube.com/watch?v=z8wdRIvy2Fw",
     "img": "https://i.ytimg.com/vi/z8wdRIvy2Fw/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "719",
+    "watching": "721",
     "rolling": true
    },
    {
@@ -4420,7 +4411,7 @@
     "url": "https://www.youtube.com/watch?v=8NvHdj-F_j8",
     "img": "https://i.ytimg.com/vi/8NvHdj-F_j8/hqdefault.jpg",
     "story": "Pope Leo vists Peruvian city where he served as bishop",
-    "watching": "35"
+    "watching": "36"
    }
   ],
   "upcoming": [
@@ -4461,6 +4452,10 @@
     "url": "https://www.youtube.com/watch?v=QB5BNdBFujE"
    },
    {
+    "net": "Sky News",
+    "url": "https://www.youtube.com/watch?v=umLWFz4izTM"
+   },
+   {
     "net": "DW News",
     "url": "https://www.youtube.com/watch?v=LuKwFajn37U"
    },
@@ -4471,10 +4466,6 @@
    {
     "net": "LiveNOW from FOX",
     "url": "https://www.youtube.com/watch?v=C96oohpWBGw"
-   },
-   {
-    "net": "FRANCE 24 English",
-    "url": "https://www.youtube.com/watch?v=HvZt-nh9sGg"
    }
   ]
  },
@@ -4510,9 +4501,9 @@
   {
    "net": "Al Jazeera",
    "story": "The Microsoft outage means no incessant email chimes or mess",
-   "title": "Microsoft outage live: Outlook, Teams recover as disruptions continue",
+   "title": "Microsoft outage live: Global users affected as services remain down",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/13/live-microsoft-struggles-to-restore-services-as-outage-hits-global-users?traffic_source=rss",
-   "updated": "2026-11-13T15:47:20+00:00",
+   "updated": "2026-11-13T15:56:04+00:00",
    "ended": false,
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-13T111651Z_2054199996_RC215JAWHMOW_RTRMADP_3_MICROSOFT-OUTAGES-1794573787.jpg?resize=1920%2C1440"
   },
@@ -4708,6 +4699,24 @@
   }
  },
  "canangle_live": {
+  "https://thehill.com/homenews/administration/6217922-live-updates-trump-senate-midterm-elections/": {
+   "story": "Van Hollen to challenge Schumer; Outlook starts bouncing back",
+   "us": false,
+   "specific": 1,
+   "stories": [
+    {
+     "t": "Thu 3:35 p.m.",
+     "iso": "2026-11-12T20:35:06+00:00",
+     "outlet": "Global News",
+     "title": "Polar vortex splitting brings uncertainty to Canada’s winter outlook",
+     "url": "https://globalnews.ca/news/12148340/polar-vortex-disruption-canada/",
+     "ca": true,
+     "tie": ""
+    }
+   ],
+   "official": [],
+   "views": []
+  },
   "https://www.youtube.com/watch?v=lisNaZfNpeg": {
    "story": "Nvidia stock price a day after Jensen Huang resigns as CEO",
    "us": false,
@@ -4753,6 +4762,24 @@
    "official": [],
    "views": []
   },
+  "https://abcnews.com/US/outlook-down-microsoft-outage-reported-mail/story?id=138088203": {
+   "story": "Microsoft Outlook outage updates: Latest on email as services go down",
+   "us": false,
+   "specific": 1,
+   "stories": [
+    {
+     "t": "Thu 3:35 p.m.",
+     "iso": "2026-11-12T20:35:06+00:00",
+     "outlet": "Global News",
+     "title": "Polar vortex splitting brings uncertainty to Canada’s winter outlook",
+     "url": "https://globalnews.ca/news/12148340/polar-vortex-disruption-canada/",
+     "ca": true,
+     "tie": ""
+    }
+   ],
+   "official": [],
+   "views": []
+  },
   "https://www.nbcnews.com/politics/2026-election/kansas-governor-cindy-holscher-democrat-election-win-masterson-rcna603370": {
    "story": "Democrat Cindy Holscher defeats Republican Ty Masterson in Kansas governor’s race",
    "us": true,
@@ -4773,51 +4800,6 @@
      "outlet": "Vancouver Sun",
      "title": "Despite Canada-U.S. tensions, this West Coast route as old as the gold rush endures",
      "url": "https://vancouversun.com/business/marine-link-skagway-alaska-bc-yukon-klondike-freight-service-canada-us-tensions",
-     "ca": true,
-     "tie": "Canada and the U.S."
-    },
-    {
-     "t": "Wed 11:46 a.m.",
-     "iso": "2026-11-11T16:46:55+00:00",
-     "outlet": "BNN Bloomberg",
-     "title": "Canadian textile maker battered by tariffs eyes production in the U.S.",
-     "url": "https://www.bnnbloomberg.ca/tariffs/2026/11/11/canadian-manufacturer-eyes-us-as-firms-cannot-hold-off-for-too-long-anymore/",
-     "ca": true,
-     "tie": "Canada and the U.S."
-    }
-   ],
-   "official": [],
-   "views": []
-  },
-  "https://thehill.com/the-120/6218667-mary-peltola-alaska-senate-lead/": {
-   "story": "Peltola extends lead after new Alaska Senate ballots count",
-   "us": true,
-   "specific": 0,
-   "stories": [
-    {
-     "t": "Fri 8:00 a.m.",
-     "iso": "2026-11-13T13:00:13+00:00",
-     "outlet": "Vancouver Sun",
-     "title": "Despite Canada-U.S. tensions, this West Coast route as old as the gold rush endures",
-     "url": "https://vancouversun.com/business/marine-link-skagway-alaska-bc-yukon-klondike-freight-service-canada-us-tensions",
-     "ca": true,
-     "tie": "Canada and the U.S."
-    },
-    {
-     "t": "Thu 5:42 p.m.",
-     "iso": "2026-11-12T22:42:09+00:00",
-     "outlet": "CP24",
-     "title": "Canada, U.S. have spoken ‘within the past few days’ about potential trade deal: Greer",
-     "url": "https://www.cp24.com/news/world/2026/11/12/canada-and-us-have-spoken-within-the-past-few-days-about-potential-deal-trade-rep-greer/",
-     "ca": true,
-     "tie": "Canada and the U.S."
-    },
-    {
-     "t": "Thu 10:37 a.m.",
-     "iso": "2026-11-12T15:37:22+00:00",
-     "outlet": "CityNews Ottawa",
-     "title": "Democrats’ blue tsunami could be reversing travel turnoff of Canada-U.S. trade war",
-     "url": "https://ottawa.citynews.ca/2026/11/12/democrats-blue-tsunami-could-be-reversing-travel-turnoff-of-canada-u-s-trade-war/",
      "ca": true,
      "tie": "Canada and the U.S."
     },
@@ -4855,6 +4837,13 @@
      "The unusual global footprint of Megaspeed, a major buyer of Nvidia's powerful AI computer chips, is fueling questions about whether it's a front for the Chinese government.",
      [
       1
+     ]
+    ],
+    [
+     "Euronews",
+     "Nvidia has lost about $1.8tn (€1.6tn) in market value since its record close on 6 October. After Jensen Huang’s exit, investors are weighing whether the chipmaker can keep growing at the pace that made it the biggest name in AI.",
+     [
+      3
      ]
     ],
     [
@@ -5684,10 +5673,7 @@
   "-NabWfv-VdA"
  ],
  "noembed": [
-  "J3FV4iY8p5w",
-  "L6qtnHZxwEw",
   "NuEr0Q_AS6U",
-  "ldElU-Q5Qyo",
   "t_HBrWb84eY"
  ]
 }
