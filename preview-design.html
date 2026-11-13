@@ -1432,6 +1432,9 @@ header.site { border-bottom: 0; }
 /* Live coverage now: its own band, separate from the Breaking section (Hannah's rule) */
 #autoBreaking > .livecov.lc-under { margin: 0 0 22px; }
 .livecov { margin: 20px 0; padding: clamp(14px, 2.4vw, 22px); background: #2B1B54; color: #FFFFFF; border-radius: 2px; }
+/* a Breaking story's own Live coverage now row, under its Watch this story row (Hannah, Fri Nov 13, 2026) */
+#autoBreaking .ab-story > .ab-lcov { grid-column: 1 / -1; position: relative; z-index: 2; margin: 18px 0 6px; padding: 14px 14px 4px; background: rgba(15,11,25,.38); border-radius: 8px; }
+#autoBreaking .ab-lcov .pn-n { white-space: nowrap; font-size: 11px; font-weight: 600; opacity: .8; letter-spacing: .04em; }
 .livecov .bk-chan { margin: 0; max-width: none; }
 .livecov .bk-chan .chan-row { margin-bottom: 14px; }
 @media (min-width: 900px) { .livecov .bk-chan .chan-row { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
@@ -3015,6 +3018,57 @@ header.site { border-bottom: 0; }
     const dayOf = (d) => d.toLocaleDateString('en-CA', Object.assign({ weekday: 'short' }, tz));
     const when = (d) => { const today = dayOf(new Date()) === dayOf(d); const hr = +d.toLocaleString('en-US', Object.assign({ hour: 'numeric', hour12: false }, tz)); return (today ? (hr >= 17 ? 'Tonight ' : 'Today ') : dayOf(d) + ' ') + fmtT(d) + ' ET'; };
     const pic = (c, badge, cls) => '<span class="chan-pic" data-net="' + esc(c.net) + '"><img alt="" referrerpolicy="no-referrer" data-tries="' + esc(JSON.stringify([c.file, USE_LOCAL && c.blob, c.img].filter(Boolean))) + '"><span class="chan-badge ' + cls + '">' + badge + '</span></span>';
+    const tile0 = (c, badge, cls, meta, go) => '<a class="chan" href="' + esc(c.url) + '" target="_blank" rel="noopener">' + pic(c, badge, cls) + '<span class="chan-story">' + esc(c.story) + '</span><span class="chan-net">' + esc(c.net) + '</span><span class="chan-what">' + esc(c.what) + '</span>' + (meta ? '<span class="chan-meta">' + meta + '</span>' : '') + '<span class="chan-go">' + go + ' &#8599;</span></a>';
+    const tile = (c, badge, cls, meta, go) => '<div class="chan-cell">' + tile0(c, badge, cls, meta, go) +
+        (c.also && c.also.length ? '<div class="chan-also"><span>Also live on</span>' + c.also.map((a) => '<a href="' + esc(a.url) + '" target="_blank" rel="noopener"' + (a.official ? ' class="off"' : '') + '>' + esc(a.net.replace(' - Banque du Canada', '')) + '</a>').join('') + '</div>' : '') +
+        (c.reports && c.reports.length ? '<details class="chan-reps"><summary>' + c.reports.length + ' newsrooms reporting it</summary><ol>' + c.reports.map((r) => '<li><a href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(r.title) + '</a> <span>' + esc(r.outlet) + ' · ' + esc(r.t) + '</span></li>').join('') + '</ol></details>' : '') + '</div>';
+    // LIVE COVERAGE ON A BREAKING STORY (Hannah, Fri Nov 13, 2026, the FAA ground stop: "it says, watch this story,
+    // which I like, but we should have live coverage now on it below" / "The live coverage now we have is everything
+    // that can go down on the page"). Under a Breaking story's "Watch this story" row: a "Live coverage now" row with
+    // only that story's live video and live blogs (newest posts in the last 3 hours), same tiles as the full band,
+    // scrolling sideways. The full Live coverage now band, with everything that is live, stays lower on the page.
+    // A live blog republished by sister sites (the same headline on CTV, CP24, BNN) is shown once; the stream already
+    // in the story's own live strip isn't repeated.
+    const SL_SKIP = new Set('the and for with from that this are was has have its live updates update news video watch says said will across after over into amid what more about here'.split(' '));
+    const slWords = (x) => new Set((String(x || '').toLowerCase().match(/[a-z0-9]+/g) || []).filter((w) => w.length > 2 && !SL_SKIP.has(w)));
+    const storyLive = (liveItems) => {
+      document.querySelectorAll('.ab-lcov').forEach((x) => x.remove());
+      const sec = document.getElementById('autoBreaking'); if (!sec || sec.hidden) return;
+      const D = (window.PAL_autoupdate && window.PAL_autoupdate.data) || {}, S = (D.auto && D.auto.stories) || [], used = new Set();
+      sec.querySelectorAll(':scope > .ab-story[data-key]').forEach((art) => {
+        const tg = art.querySelector('.tag'); if (tg && !/^\s*Breaking/i.test(tg.textContent)) return;
+        const st = S.find((x) => x.key === art.dataset.key); if (!st) return;
+        const words = slWords((st.words || []).join(' ')), head = slWords(st.title);
+        const own = new Set([st.live && st.live.url].filter(Boolean)), seenWhat = new Set();
+        // the other networks carrying the story's own stream, and its other live streams, as video tiles first
+        const yt = (u) => { const m = String(u || '').match(/[?&]v=([\w-]{11})|youtu\.be\/([\w-]{11})|\/live\/([\w-]{11})/); const id = m && (m[1] || m[2] || m[3]); return id ? 'https://i.ytimg.com/vi/' + id + '/hqdefault.jpg' : ''; };
+        const lt = (t) => String(t || '').replace(/^\s*(?:🔴\s*)?(?:BREAKING NEWS|Breaking News|LIVE|Live|WATCH LIVE|LIVE NOW)\s*[:|\-–—]\s*/g, '').replace(/^\s*(?:BREAKING NEWS|Breaking News|LIVE|Live)\s*[:|\-–—]\s*/, '');
+        const extraV = ((st.live && st.live.state === 'now' && st.live.also) || []).map((x) => ({ kind: 'video', net: x.net, url: x.url, img: yt(x.url), story: lt(st.live.title || st.title), what: 'Live on ' + (x.url.indexOf('youtube.com') > -1 ? 'YouTube' : x.net) + ' · same story, another network' }))
+          .concat((st.live_more || []).filter((x) => x.state === 'now').map((x) => ({ kind: 'video', net: x.net, url: x.url, img: x.img || yt(x.url), story: lt(x.title), what: 'Live on ' + (x.url.indexOf('youtube.com') > -1 ? 'YouTube' : x.net) })));
+        const hits = extraV.filter((c) => !own.has(c.url) && !used.has(c.url) && own.add(c.url)).concat(liveItems.filter((c) => {
+          if (own.has(c.url) || used.has(c.url)) return false;
+          const t = slWords(c.story + ' ' + c.what), shared = [...words].filter((w) => t.has(w)), sharedH = [...head].filter((w) => t.has(w));
+          if (!(shared.length >= 2 || sharedH.length >= 3)) return false;
+          const k = String(c.what || '').toLowerCase().replace(/\W+/g, ''); if (c.kind !== 'video' && seenWhat.has(k)) return false;
+          seenWhat.add(k); return true;
+        })).slice(0, 10);
+        if (!hits.length) return;
+        hits.forEach((c) => used.add(c.url));
+        const box = document.createElement('section'); box.className = 'livecov ab-lcov'; box.setAttribute('aria-label', 'Live coverage now on this story');
+        box.innerHTML = '<div class="bk-chan"><p class="chan-h lc-now-h"><i aria-hidden="true"></i>Live coverage now on this story <span class="pn-n">' + hits.length + ' live</span></p><div class="chan-row lc-now">'
+          + hits.map((c) => c.kind === 'video' ? tile(c, 'LIVE VIDEO', 'v', '', 'Watch the live video')
+            : tile(c, 'LIVE BLOG', 'u', c.updated ? 'Live blog · newest post ' + esc(fmtT(new Date(c.updated))) + ' ET' : 'Live blog', 'Read the live blog')).join('') + '</div></div>';
+        const w = art.querySelector(':scope > .ab-watch'), reps = art.querySelector(':scope > .ab-reps');
+        if (w) w.after(box); else if (reps) art.insertBefore(box, reps); else art.appendChild(box);
+        box.querySelectorAll('.chan-pic img').forEach((im) => {
+          const tries = JSON.parse(im.dataset.tries || '[]'); let k = 0;
+          const next = () => { if (k < tries.length) { im.src = tries[k++]; return; } im.remove(); im.parentElement && im.parentElement.classList.add('chan-text'); };
+          im.addEventListener('error', next); next();
+        });
+      });
+    };
+    let lastLive = [];
+    window.PAL_storyLive = () => { try { storyLive(lastLive); } catch (e) { console.warn('story live', e); } };
     const render = () => {
       const now = Date.now();
       const live = LIVENOW.filter((c) => c.kind === 'video' || c.kind === 'official' ? !(c.until && now > Date.parse(c.until)) : (!c.ended && !!c.updated && now - Date.parse(c.updated) < 3 * 3600e3))  // a live blog: a real post in the last 3 hours and not ended
@@ -3026,11 +3080,8 @@ header.site { border-bottom: 0; }
       const bkNames = [(document.getElementById('breaking') || { dataset: {} }).dataset.story, ((document.querySelector('#bkEvent:not([hidden]) h2') || {}).textContent || '')].map((x) => String(x || '').replace(/^the\s+/i, '').toLowerCase());
       const evStory = ((window.PAL_UPNEXT || []).find((e) => bkNames[1] && bkNames[1].indexOf(String(e.h || '').toLowerCase().slice(0, 30)) === 0) || {}).story || '';
       const inBreaking = (c) => { const st = String(c.story || '').replace(/^the\s+/i, '').toLowerCase(); return !!st && ((bkNames[0] && (st.indexOf(bkNames[0]) === 0 || bkNames[0].indexOf(st) === 0)) || (evStory && st.indexOf(evStory.toLowerCase()) === 0)); };
+      lastLive = live.filter((c) => c.kind !== 'official'); window.PAL_storyLive();
       const later = up.filter((c) => now < Date.parse(c.when) && !inBreaking(c));
-      const tile0 = (c, badge, cls, meta, go) => '<a class="chan" href="' + esc(c.url) + '" target="_blank" rel="noopener">' + pic(c, badge, cls) + '<span class="chan-story">' + esc(c.story) + '</span><span class="chan-net">' + esc(c.net) + '</span><span class="chan-what">' + esc(c.what) + '</span>' + (meta ? '<span class="chan-meta">' + meta + '</span>' : '') + '<span class="chan-go">' + go + ' &#8599;</span></a>';
-      const tile = (c, badge, cls, meta, go) => '<div class="chan-cell">' + tile0(c, badge, cls, meta, go) +
-        (c.also && c.also.length ? '<div class="chan-also"><span>Also live on</span>' + c.also.map((a) => '<a href="' + esc(a.url) + '" target="_blank" rel="noopener"' + (a.official ? ' class="off"' : '') + '>' + esc(a.net.replace(' - Banque du Canada', '')) + '</a>').join('') + '</div>' : '') +
-        (c.reports && c.reports.length ? '<details class="chan-reps"><summary>' + c.reports.length + ' newsrooms reporting it</summary><ol>' + c.reports.map((r) => '<li><a href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(r.title) + '</a> <span>' + esc(r.outlet) + ' · ' + esc(r.t) + '</span></li>').join('') + '</ol></details>' : '') + '</div>';
       const nowTiles = onNow.map((c) => tile(c, 'LIVE VIDEO', 'v', 'Live video · on now' + (c.where ? ' · ' + esc(c.where) : ''), 'Watch the live video')).concat(live.map((c) => c.kind === 'video'
         ? tile(c, 'LIVE VIDEO', 'v', '', 'Watch the live video')
         : c.kind === 'official' ? tile(c, 'OFFICIAL SOURCE', 'u', c.updated ? 'Checked ' + esc(fmtT(new Date(c.updated))) + ' ET' : '', 'Open the official page')
@@ -4018,7 +4069,9 @@ header.site { border-bottom: 0; }
       if (lc) {
         const lead = blocks.find((el) => !el.hidden);
         let anchor = null;
-        if (lead && !lc.hidden) {
+        // Hannah, Fri Nov 13, 2026: the full band ("everything") goes down the page; a Breaking story now carries its
+        // own "Live coverage now on this story" row under its Watch row (storyLive() in liveCoverage)
+        if (false && lead && !lc.hidden) {
           const first = lead.id === 'autoBreaking' ? lead.querySelector(':scope > .ab-story') : lead;
           const tg = first && first.querySelector('.tag, .bk-tag');
           if (first && (!tg || /^\s*Breaking/i.test(tg.textContent))) anchor = first;
@@ -5564,10 +5617,11 @@ header.site { border-bottom: 0; }
       box.innerHTML = '<p class="ab-watch-h"><svg class="pn-ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10 9.5v5l4.5-2.5z" fill="currentColor"/></svg>Watch this story <span class="pn-n">' + hits.length + (hits.length === 1 ? ' clip' : ' clips') + '</span></p><div class="vids">' + hits.map(vidCard).join('') + '</div>';
       // under the story and its photo (Hannah, Mon Nov 9, 2026: "put it underneath the top story and top photo"):
       // after the headline, summary, photo and caption, before the list of reports
-      const reps = art.querySelector(':scope > .ab-reps');
+      const reps = art.querySelector(':scope > .ab-lcov') || art.querySelector(':scope > .ab-reps');
       if (reps) art.insertBefore(box, reps); else art.appendChild(box);
     });
     try { wirePhotos(); } catch (e) {}
+    try { if (window.PAL_storyLive) window.PAL_storyLive(); } catch (e) {}
   };
   // An event's own Watch button goes once the event is over (Hannah, Mon Nov 9, 2026: "in watch the button for US
   // midterms is still there. I dont think it needs to be anymore"): a button for an event carries data-until, the last
@@ -7400,7 +7454,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
     (V.now || []).forEach((x) => { if (!have.has(x.url)) L.push({ kind: 'video', story: x.story, net: x.net, what: (x.url.indexOf('youtube.com') > -1 ? 'Live on YouTube: ' : 'Live: ') + x.title.replace(/^\s*(LIVE|WATCH LIVE|LIVE NOW)\s*(@\s*[\d:]+\s*ET)?\s*[:|-]\s*/i, '') + (x.watching ? ' · ' + x.watching + ' watching' : ''), url: x.url, updated: AUTO.d.checked, until, img: x.img, also: x.also, reports: x.reports, auto: true }); });
     (V.upcoming || []).forEach((x) => { if (!have.has(x.url)) C.push({ bk: !!x.breaking, story: x.story, net: x.net, what: x.title.replace(/^\s*(LIVE|WATCH LIVE|LIVE NOW)\s*(@\s*[\d:]+\s*ET)?\s*[:|-]\s*/i, ''), where: x.url.indexOf('youtube.com') > -1 ? 'YouTube' : '', when: x.when, until: new Date(Date.parse(x.when) + 90 * 60000).toISOString(), url: x.url, img: x.img, also: x.also, reports: x.reports, auto: true }); });
     (AUTO.d.pm || []).forEach((x) => C.push(Object.assign({ until: new Date(Date.parse(x.when) + 45 * 60000).toISOString(), auto: true, bk: true }, x)));
-    const haveK = new Set(L.concat(C).map((x) => key(x.url))), blogNets = new Set(L.filter((x) => x.kind === 'updates').map((x) => x.net));
+    const haveK = new Set(L.concat(C).map((x) => key(x.url))), blogNets = new Set(L.filter((x) => x.kind === 'updates' && !x.ended && x.updated && Date.now() - Date.parse(x.updated) < 3 * 3600e3).map((x) => x.net));  // a network's old, finished blog never keeps out its new one
     (AUTO.d.blogs_auto || []).forEach((x) => { if (!haveK.has(key(x.url)) && !blogNets.has(x.net) && blogNets.add(x.net)) L.push({ kind: 'updates', story: x.story, net: x.net, what: x.title, url: x.url, updated: x.updated, img: x.img, auto: true }); });
     if (AL) { const nets = new Set(AL.map((a) => a[0])); (V.always || []).forEach((x) => { const n = x.net + ' (live on YouTube)'; if (!nets.has(x.net) && !nets.has(n)) { nets.add(n); AL.push([n, x.url]); } }); }
     if (window.PAL_liveCoverageRender) try { window.PAL_liveCoverageRender(); } catch (e) { console.warn('live', e); }
@@ -7446,7 +7500,8 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       const root = k === 'top' ? document.getElementById('breaking') : document.querySelector('#bkEvent[data-evid="' + CSS.escape(k) + '"]') || document.querySelector('#autoBreaking [data-key="' + CSS.escape(k) + '"]') || document.querySelector('section.lead > article[data-key="' + CSS.escape(k) + '"]');
       if (!root || root.hidden) return;
       const c = C[k], a = (u, t) => '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + t + '</a>';
-      const items = (c.official || []).map((x) => '<li><span class="rk">Official</span>' + a(x.url, esc(x.title)) + ' <span class="o">' + esc(x.outlet) + ' &#8599;</span></li>').join('')
+      // a checked official page shows what it says about the story (checked_sources() in autopilot.py)
+      const items = (c.official || []).map((x) => '<li><span class="rk">Official</span>' + a(x.url, esc(x.what || x.title)) + ' <span class="o">' + esc(x.outlet) + ' &#8599;</span></li>').join('')
         + (c.stories || []).map((x) => '<li><time>' + esc(x.t) + '</time>' + (x.tie ? '<span class="rk us">' + esc(x.tie) + ' · </span>' : '') + a(x.url, esc(x.title)) + ' <span class="o">' + esc(x.outlet) + ' &#8599;</span></li>').join('')
         + (c.views || []).map((x) => '<li><span class="rk">' + esc(x.kind) + '</span>' + a(x.url, esc(x.title)) + ' <span class="o">' + esc(x.outlet) + ' &#8599;</span></li>').join('');
       if (!items) return;
@@ -7494,7 +7549,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
       document.querySelectorAll('#ledes article.lede').forEach((cell) => {
         const main = cell.querySelector(':scope > a.chan') || cell.querySelector('h3 a[href], h4 a[href], a[href]'); if (!main) return;
         const c = byKey[k2(main.href)]; if (!c) return;
-        const items = (c.official || []).map((x) => '<li><span class="rk">Official</span>' + a(x.url, esc(x.title)) + ' <span class="o">' + esc(x.outlet) + '</span></li>').join('')
+        const items = (c.official || []).map((x) => '<li><span class="rk">Official</span>' + a(x.url, esc(x.what || x.title)) + ' <span class="o">' + esc(x.outlet) + '</span></li>').join('')
           + (c.stories || []).map((x) => '<li>' + (x.tie ? '<span class="rk">' + esc(x.tie) + '</span>' : '') + a(x.url, esc(x.title)) + ' <span class="o">' + esc(x.outlet) + ' · ' + esc(x.t) + '</span></li>').join('')
           + (c.views || []).map((x) => '<li><span class="rk">' + esc(x.kind) + '</span>' + a(x.url, esc(x.title)) + ' <span class="o">' + esc(x.outlet) + '</span></li>').join('');
         if (!items) return;
@@ -7885,7 +7940,7 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
 @media (max-width: 959px) { #autoBreaking .ab-second > .bart > .cr-credit { display: none; } }
 #autoBreaking .ab-second .cr-tags .fresh { display: none; }
 #autoBreaking .ab-second .cr-tags { flex-wrap: wrap; row-gap: 6px; }
-#autoBreaking .ab-second:not(.cr-open) > :not(.bart):not(.cr-tags):not(h2):not(.ab-excl):not(.ab-sub):not(.cr-byline):not(.cr-full):not(.ab-watch) { display: none !important; }
+#autoBreaking .ab-second:not(.cr-open) > :not(.bart):not(.cr-tags):not(h2):not(.ab-excl):not(.ab-sub):not(.cr-byline):not(.cr-full):not(.ab-watch):not(.ab-lcov) { display: none !important; }
 #autoBreaking .ab-second .ab-sub { font-size: 15px !important; }
 #autoBreaking .cr-full { justify-self: start; }
 #autoBreaking .ab-note { display: none; }
@@ -8760,6 +8815,11 @@ document.querySelectorAll('.tl').forEach((tl, n) => {
   #autoBreaking.solo > .ab-story:has(> .bart):not(:has(.can-box)) > .ab-watch { grid-row: 10; }
   #autoBreaking.solo > .ab-story:has(> .bart):not(:has(.can-box)) > .ab-reps { grid-column: 2; grid-row: 8; margin: 16px 0 0 !important; }
   #autoBreaking.solo > .ab-story:has(> .bart):not(:has(.can-box)) > .ab-reps > ol { grid-template-columns: 1fr !important; }
+  /* Live coverage now on this story: right under Watch this story (Fri Nov 13, 2026), then the reports */
+  #autoBreaking.solo > .ab-story > .ab-lcov { grid-column: 1 / -1; grid-row: 10; }
+  #autoBreaking.solo > .ab-story:has(> .ab-lcov) > .ab-reps { grid-row: 11; }
+  #autoBreaking.solo > .ab-story:has(> .bart):not(:has(.can-box)) > .ab-lcov { grid-row: 11; }
+  #autoBreaking.solo > .ab-story:has(> .bart):not(:has(.can-box)):has(> .ab-lcov) > .ab-reps { grid-row: 8; }
 }
 @media (min-width: 960px) and (max-width: 1099px) {
   #autoBreaking.solo > .ab-story > .ab-reps > ol { grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 20px; }
