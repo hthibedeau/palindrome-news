@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-13T08:24:03.369019+00:00",
- "checkedLabel": "Fri 3:24 a.m.",
+ "checked": "2026-11-13T08:34:04.257911+00:00",
+ "checkedLabel": "Fri 3:34 a.m.",
  "stories": [
   {
    "key": "top",
@@ -38,11 +38,35 @@
      "url": "https://lethbridgeherald.com/news/national-news/2026/11/12/in-the-news-today-carney-in-dublin-stellantis-talks-b-c-flooding-maid-widow-plea/",
      "iso": "2026-11-12T09:23:00+00:00",
      "t": "Thu 4:23 a.m."
+    },
+    {
+     "outlet": "Toronto Star",
+     "url": "https://www.thestar.com/politics/his-wife-died-by-suicide-he-wants-the-government-to-reconsider-its-maid-bill/article_f60c8547-ba85-5cc9-994c-b2e3a8194941.html",
+     "iso": "2026-11-12T09:00:00+00:00",
+     "t": "Thu 4:00 a.m."
     }
    ]
   }
  ],
  "wire": [
+  [
+   "Fri 3:31 a.m.",
+   "U.S.",
+   "Trump says \"we don't need a deal with Iran\"",
+   "CBS News",
+   "https://www.cbsnews.com/live-updates/iran-war-us-nuclear-strait-of-hormuz/",
+   "2026-11-13T08:31:34+00:00",
+   1
+  ],
+  [
+   "Fri 3:16 a.m.",
+   "World",
+   "Microsoft ‘seeing positive results’ from attempts to fix global outage affecting Teams and Outlook",
+   "The Guardian",
+   "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
+   "2026-11-13T08:16:11+00:00",
+   1
+  ],
   [
    "Fri 3:08 a.m.",
    "World",
@@ -77,7 +101,7 @@
    "Toronto Star",
    "https://www.thestar.com/news/canada/alberta/calgary-water-rules-not-expected-to-hamper-grey-cup-pubs-promise-plenty-of-beer/article_6904b38f-4cd0-5860-baad-d4800ca6bc01.html",
    "2026-11-13T08:00:01+00:00",
-   2
+   3
   ],
   [
    "Fri 2:55 a.m.",
@@ -96,15 +120,6 @@
    "https://www.thestar.com/news/world/microsoft-outage-hits-companies-and-governments-worldwide-as-it-struggles-to-restore-services/article_b920a7ff-03d2-538d-b255-b437e869ff15.html",
    "2026-11-13T07:50:42+00:00",
    2
-  ],
-  [
-   "Fri 2:39 a.m.",
-   "U.S.",
-   "Trump says \"we don't need a deal with Iran\"",
-   "CBS News",
-   "https://www.cbsnews.com/live-updates/iran-war-us-nuclear-strait-of-hormuz/",
-   "2026-11-13T07:39:27+00:00",
-   1
   ],
   [
    "Fri 2:37 a.m.",
@@ -149,15 +164,6 @@
    "The Canadian Press (via Winnipeg Free Press)",
    "https://www.winnipegfreepress.com/arts-and-life/2026/11/13/holiday-gift-guide-manitoba-handmade-local-gifts",
    "2026-11-13T07:00:40+00:00",
-   1
-  ],
-  [
-   "Fri 2:00 a.m.",
-   "Latest",
-   "Immigrants ‘critical’ to rural economies",
-   "The Canadian Press (via Winnipeg Free Press)",
-   "https://www.winnipegfreepress.com/breakingnews/2026/11/13/immigrants-critical-to-rural-economies",
-   "2026-11-13T07:00:10+00:00",
    1
   ],
   [
@@ -240,24 +246,6 @@
    "https://www.thestar.com/news/world/asian-shares-are-mixed-as-investors-assess-impact-of-nvidia-s-fallout-on-global-ai-development/article_b6f03bd1-a6d8-5bda-be33-c12a4b743d65.html",
    "2026-11-13T05:40:58+00:00",
    1
-  ],
-  [
-   "Fri 12:33 a.m.",
-   "World",
-   "‘If I wanted to plan a murder’: Beau Lamarre-Condon tells court what he would have done",
-   "The Guardian",
-   "https://www.theguardian.com/australia-news/2026/nov/13/beau-lamarre-condon-trial-sim-card-pseudonym-ntwnfb",
-   "2026-11-13T05:33:48+00:00",
-   1
-  ],
-  [
-   "Fri 12:24 a.m.",
-   "World",
-   "Europe pushes for seat at Ukraine peace talks but lacks unified voice",
-   "Toronto Star",
-   "https://www.thestar.com/news/world/europe/europe-pushes-for-seat-at-ukraine-peace-talks-but-lacks-unified-voice/article_9667f1f7-60ef-5928-b483-57fac9851e9f.html",
-   "2026-11-13T05:24:28+00:00",
-   2
   ]
  ],
  "blogs": [
@@ -289,6 +277,19 @@
  ],
  "leads": [
   {
+   "score": 21,
+   "title": "Carney aware of 'some aspects' of Stellantis auto plant sale, but says company still broke deal",
+   "url": "https://www.cbc.ca/news/politics/stellantis-carney-deal-plant-9.7418797",
+   "outlets": 5,
+   "why": [
+    "National Newswatch #1",
+    "CBC News front #2",
+    "National Newswatch #2",
+    "National Newswatch #6"
+   ],
+   "theme": "Canadian auto jobs"
+  },
+  {
    "score": 20,
    "title": "Nvidia CEO's resignation after affair with suspected Chinese spy rattles markets, tech world",
    "url": "https://www.cbc.ca/news/business/nvidia-jensen-huang-ceo-selloff-investments-retirement-9.7420093",
@@ -302,24 +303,11 @@
    "score": 20,
    "title": "Microsoft outage continues as planned fixes are not working as expected, company says",
    "url": "https://www.cbc.ca/news/world/microsoft-outage-9.7419814",
-   "outlets": 19,
+   "outlets": 20,
    "why": [
     "CBC News front #3"
    ],
    "theme": "Microsoft outage"
-  },
-  {
-   "score": 20,
-   "title": "Carney aware of 'some aspects' of Stellantis auto plant sale, but says company still broke deal",
-   "url": "https://www.cbc.ca/news/politics/stellantis-carney-deal-plant-9.7418797",
-   "outlets": 4,
-   "why": [
-    "National Newswatch #1",
-    "CBC News front #2",
-    "National Newswatch #2",
-    "National Newswatch #6"
-   ],
-   "theme": "Canadian auto jobs"
   },
   {
    "score": 19,
@@ -332,10 +320,10 @@
    "theme": ""
   },
   {
-   "score": 18,
+   "score": 19,
    "title": "Never mind the midterms: Olszewski touts federal budget at Chamber breakfast",
    "url": "https://edmontonjournal.com/news/local-news/olszewski-federal-budget-edmonton",
-   "outlets": 10,
+   "outlets": 11,
    "why": [
     "National Newswatch #10",
     "National Newswatch #16",
@@ -365,10 +353,10 @@
    "theme": ""
   },
   {
-   "score": 10,
+   "score": 11,
    "title": "Hope is finally back in America, and did the U.S. just leave Canadian Conservatives behind?",
    "url": "https://www.hilltimes.com/2026/11/09/did-the-u-s-just-leave-canadian-conservatives-behind/525005/",
-   "outlets": 6,
+   "outlets": 7,
    "why": [
     "National Newswatch #14"
    ],
@@ -385,10 +373,10 @@
    "theme": ""
   },
   {
-   "score": 9,
+   "score": 10,
    "title": "Calgary water rules not expected to hamper Grey Cup, pubs promise plenty of beer",
    "url": "https://www.thestar.com/news/canada/alberta/calgary-water-rules-not-expected-to-hamper-grey-cup-pubs-promise-plenty-of-beer/article_6904b38f-4cd0-5860-baad-d4800ca6bc01.html",
-   "outlets": 7,
+   "outlets": 8,
    "why": [],
    "theme": ""
   }
@@ -432,8 +420,8 @@
      "other"
     ],
     "score": 20,
-    "outlets": 7,
-    "carriers": 19,
+    "outlets": 8,
+    "carriers": 20,
     "tag": "Breaking",
     "title": "Microsoft outage hits companies and governments worldwide as it struggles to restore services",
     "url": "https://www.thestar.com/news/world/microsoft-outage-hits-companies-and-governments-worldwide-as-it-struggles-to-restore-services/article_b920a7ff-03d2-538d-b255-b437e869ff15.html",
@@ -448,7 +436,7 @@
      "title": "Microsoft 365 outage continues globally as company says no fix yet",
      "iso": "2026-11-12T19:08:38+00:00"
     },
-    "newest": "2026-11-13T07:50:42+00:00",
+    "newest": "2026-11-13T08:16:11+00:00",
     "photo": {
      "src": "live/img/auto-e9e3f04b-11654ea070.jpg",
      "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/7/76/776fd4c1-ff9f-524b-ae71-ef889c9a4ef8/6af61037367c8.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize",
@@ -497,8 +485,16 @@
       "url": "https://www.euronews.com/2026/11/12/microsoft-outage-hits-outlook-teams-and-copilot-disrupting-thousands"
      }
     ],
-    "independent": 7,
+    "independent": 8,
     "reports": [
+     {
+      "t": "Fri 3:16 a.m.",
+      "iso": "2026-11-13T08:16:11+00:00",
+      "outlet": "The Guardian",
+      "title": "Microsoft ‘seeing positive results’ from attempts to fix global outage affecting Teams and Outlook",
+      "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
+      "desc": "Microsoft 365 also hit but tech company says no indication problem was caused by cyber-attack"
+     },
      {
       "t": "Fri 2:50 a.m.",
       "iso": "2026-11-13T07:50:42+00:00",
@@ -546,14 +542,6 @@
       "title": "Microsoft Outlook outage stretches on for hours",
       "url": "https://abcnews.com/US/outlook-down-microsoft-outage-reported-mail/story?id=138088203",
       "desc": "Microsoft is reporting \"issues\" with users accessing Outlook and Teams."
-     },
-     {
-      "t": "Thu 11:40 p.m.",
-      "iso": "2026-11-13T04:40:14+00:00",
-      "outlet": "The Guardian",
-      "title": "‘Looks like we’ll have to talk to people’: Australia sent back to time before email with major Microsoft outage",
-      "url": "https://www.theguardian.com/technology/2026/nov/13/major-microsoft-outage-impacts-australian-government-services-and-schools",
-      "desc": "Government services and schools impacted by Outlook and Teams issue as company says fix not ‘taking as expected’"
      },
      {
       "t": "Thu 7:01 p.m.",
@@ -613,6 +601,23 @@
      }
     ],
     "sources": [
+     {
+      "t": "Fri 3:16 a.m.",
+      "primary": false,
+      "outlet": "The Guardian",
+      "title": "Microsoft ‘seeing positive results’ from attempts to fix global outage affecting Teams and Outlook",
+      "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
+      "desc": "Microsoft 365 also hit but tech company says no indication problem was caused by cyber-attack",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "The Guardian",
+        "src": "The Guardian",
+        "byline": "[{\"@type\":\"Person\",\"name\":\"Josh Taylor\",},{\"@type\":\"Person\",\"name\":\"Emma Elsworthy\",},{\"@type\":\"Person\",\"name\":\"Mark Swe"
+       }
+      ],
+      "copies": []
+     },
      {
       "t": "Thu 2:21 p.m.",
       "primary": false,
@@ -739,23 +744,6 @@
       "copies": []
      },
      {
-      "t": "Thu 11:40 p.m.",
-      "primary": false,
-      "outlet": "The Guardian",
-      "title": "‘Looks like we’ll have to talk to people’: Australia sent back to time before email with major Microsoft outage",
-      "url": "https://www.theguardian.com/technology/2026/nov/13/major-microsoft-outage-impacts-australian-government-services-and-schools",
-      "desc": "Government services and schools impacted by Outlook and Teams issue as company says fix not ‘taking as expected’",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "The Guardian",
-        "src": "The Guardian",
-        "byline": "[{\"@type\":\"Person\",\"name\":\"Jordyn Beazley\",},{\"@type\":\"Person\",\"name\":\"Josh Taylor\",},{\"@type\":\"Person\",\"name\":\"Adeshola"
-       }
-      ],
-      "copies": []
-     },
-     {
       "t": "Thu 7:01 p.m.",
       "primary": false,
       "outlet": "NBC News",
@@ -816,8 +804,17 @@
     "outled_ca": 5,
     "judgment": "national",
     "judgment_why": "National: leading 7 front pages (CTV News, Global News, CP24, BNN Bloomberg, ABC News, BBC News).",
-    "weight": 52,
-    "held_top": "Still Breaking (newest report Fri 2:50 a.m.), so it stays above \"Fallout from the Nvidia scandal may dampen the exuberance ar\", which leads 10 front pages to its 7: not twice as many",
+    "weight": 73,
+    "held_top": "Still Breaking (newest report Fri 3:16 a.m.), so it stays above \"Fallout from the Nvidia scandal may dampen the exuberance ar\", which leads 9 front pages to its 7: not twice as many",
+    "live": {
+     "state": "now",
+     "net": "BBC News",
+     "url": "https://www.youtube.com/watch?v=BwSxb_P3HzM",
+     "title": "Microsoft scrambles to solve global outage affecting Outlook and Teams | BBC News",
+     "img": "https://i.ytimg.com/vi/BwSxb_P3HzM/hqdefault.jpg",
+     "when": "",
+     "also": []
+    },
     "videos": [
      {
       "net": "CBC News",
@@ -836,18 +833,18 @@
       "up": ""
      },
      {
-      "net": "NBC News",
-      "url": "https://www.youtube.com/watch?v=iBbonEmdGxw",
-      "title": "Widespread outage of Microsoft apps used by hundreds of millions",
-      "img": "https://i.ytimg.com/vi/iBbonEmdGxw/hqdefault.jpg",
+      "net": "ABC News",
+      "url": "https://www.youtube.com/watch?v=sIp-5i_HMPo",
+      "title": "Outlook down for thousands amid Microsoft outage across North America",
+      "img": "https://i.ytimg.com/vi/sIp-5i_HMPo/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
       "net": "NBC News",
-      "url": "https://www.youtube.com/watch?v=wC0lI_jUM8E",
-      "title": "Widespread outage hits Microsoft platforms including Outlook, thousands report issues",
-      "img": "https://i.ytimg.com/vi/wC0lI_jUM8E/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=iBbonEmdGxw",
+      "title": "Widespread outage of Microsoft apps used by hundreds of millions",
+      "img": "https://i.ytimg.com/vi/iBbonEmdGxw/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -856,12 +853,12 @@
    {
     "key": "auto-63743544",
     "words": [
-     "congress",
-     "colette",
      "lutnick",
+     "colette",
      "huang’s",
      "huang's",
-     "nvidia"
+     "nvidia",
+     "jensen"
     ],
     "score": 20,
     "outlets": 13,
@@ -911,12 +908,12 @@
       "url": "https://www.euronews.com/2026/11/13/european-shares-fall-as-nvidia-ceos-exit-raises-doubts-over-ai-boom"
      },
      {
-      "src": "live/img/auto-63743544-4213f6d93e.jpg",
-      "orig": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/13/573859.JPG?v=3.1",
-      "caption": "From: China’s access to Nvidia chips in doubt as curbs gain traction in U.S. Congress. — via The Japan Times",
-      "alt": "China’s access to Nvidia chips in doubt as curbs gain traction in U.S. Congress",
+      "src": "live/img/auto-63743544-434993abc3.jpg",
+      "orig": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/13/573850.jpg?v=3.1",
+      "caption": "From: AI industry weighs future without Nvidia’s Huang. — via The Japan Times",
+      "alt": "AI industry weighs future without Nvidia’s Huang",
       "outlet": "The Japan Times",
-      "url": "https://www.japantimes.co.jp/news/2026/11/13/world/china-access-nvidia-chips-doubt/"
+      "url": "https://www.japantimes.co.jp/business/2026/11/13/tech/ai-sector-after-huang/"
      },
      {
       "src": "live/img/auto-63743544-7fa30b98f5.jpg",
@@ -946,12 +943,12 @@
       "desc": "Few solid clues have emerged as to the true nature of Megaspeed, whose former director Alice Huang has been accused of being a Chinese spy"
      },
      {
-      "t": "Fri 1:46 a.m.",
-      "iso": "2026-11-13T06:46:00+00:00",
+      "t": "Fri 1:28 a.m.",
+      "iso": "2026-11-13T06:28:00+00:00",
       "outlet": "The Japan Times",
-      "title": "China’s access to Nvidia chips in doubt as curbs gain traction in U.S. Congress",
-      "url": "https://www.japantimes.co.jp/news/2026/11/13/world/china-access-nvidia-chips-doubt/",
-      "desc": "Nvidia’s advanced chips are widely used to develop AI models, making the company key in the U.S. race against China to build superior AI systems."
+      "title": "AI industry weighs future without Nvidia’s Huang",
+      "url": "https://www.japantimes.co.jp/business/2026/11/13/tech/ai-sector-after-huang/",
+      "desc": "Huang’s abrupt fall comes amid mounting concerns about the financial soundness of the industry’s colossal investment spree."
      },
      {
       "t": "Fri 12:06 a.m.",
@@ -1078,18 +1075,18 @@
       "copies": []
      },
      {
-      "t": "Fri 1:46 a.m.",
+      "t": "Fri 1:28 a.m.",
       "primary": false,
       "outlet": "The Japan Times",
-      "title": "China’s access to Nvidia chips in doubt as curbs gain traction in U.S. Congress",
-      "url": "https://www.japantimes.co.jp/news/2026/11/13/world/china-access-nvidia-chips-doubt/",
-      "desc": "Nvidia’s advanced chips are widely used to develop AI models, making the company key in the U.S. race against China to build superior AI systems.",
-      "wire": "",
+      "title": "AI industry weighs future without Nvidia’s Huang",
+      "url": "https://www.japantimes.co.jp/business/2026/11/13/tech/ai-sector-after-huang/",
+      "desc": "Huang’s abrupt fall comes amid mounting concerns about the financial soundness of the industry’s colossal investment spree.",
+      "wire": "AFP",
       "by": [
        {
         "outlet": "The Japan Times",
-        "src": "The Japan Times",
-        "byline": "{ \"@type\": \"Organization\", \"name\": \"The Japan Times\" } { \"@type\": \"Organization\", \"name\": \"The Japan Times\", } No Author"
+        "src": "AFP",
+        "byline": "AFP-JIJI \n           By"
        }
       ],
       "copies": []
@@ -1280,7 +1277,7 @@
     "incoherent": false,
     "popular": 3,
     "us_election": false,
-    "fronts": 10,
+    "fronts": 9,
     "fronts_ca": 5,
     "fronts_who": [
      "CBC News",
@@ -1289,23 +1286,14 @@
      "The Globe and Mail",
      "BNN Bloomberg",
      "NBC News",
-     "CBS News",
      "BBC News",
      "The Guardian",
      "NPR"
     ],
     "judgment": "national",
-    "judgment_why": "National: leading 10 front pages (CBC News, CTV News, Toronto Star, The Globe and Mail, BNN Bloomberg, NBC News).",
+    "judgment_why": "National: leading 9 front pages (CBC News, CTV News, Toronto Star, The Globe and Mail, BNN Bloomberg, NBC News).",
     "weight": 53,
     "videos": [
-     {
-      "net": "CBS News",
-      "url": "https://www.youtube.com/watch?v=MFD3ilY51zs",
-      "title": "How Jensen Huang’s resignation from Nvidia over his alleged affairs may cost you money",
-      "img": "https://i.ytimg.com/vi/MFD3ilY51zs/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
      {
       "net": "CNBC",
       "url": "https://www.youtube.com/watch?v=LZjFmPzUba4",
@@ -1321,14 +1309,14 @@
     "words": [
      "stellantis",
      "meeting",
-     "frank",
+     "roshel",
      "plant",
      "joly",
      "i’m"
     ],
-    "score": 20,
+    "score": 21,
     "outlets": 4,
-    "carriers": 7,
+    "carriers": 8,
     "tag": "Developing",
     "title": "‘To be frank, I’m fed up’: Minister Joly slams Stellantis after meeting over plant sale",
     "url": "https://www.ctvnews.ca/business/autos/article/ottawa-serves-stellantis-notice-of-default-on-funding-agreement-after-roshel-deal/",
@@ -1378,6 +1366,14 @@
       "alt": "Stellantis should 'pay back every penny': Ontario NDP leader",
       "outlet": "CBC News",
       "url": "https://www.cbc.ca/player/play/video/9.7420066"
+     },
+     {
+      "src": "live/img/auto-ab7424e3-5ab0a636e3.jpg",
+      "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/4/71/471450f1-a5bc-5774-9b66-ae59b8b19b6c/6ad1dab873332.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize",
+      "caption": "From: Ottawa serves Stellantis notice of default on funding agreement after Roshel deal. — via Toronto Star",
+      "alt": "Ottawa serves Stellantis notice of default on funding agreement after Roshel deal",
+      "outlet": "Toronto Star",
+      "url": "https://www.thestar.com/business/joly-set-to-hold-meeting-in-toronto-with-stellantis-union-and-ontario-minister/article_9c8867c0-5424-5435-9108-f5506bd3938c.html"
      }
     ],
     "independent": 4,
@@ -1413,6 +1409,14 @@
       "title": "Stellantis should 'pay back every penny': Ontario NDP leader",
       "url": "https://www.cbc.ca/player/play/video/9.7420066",
       "desc": "It's a high-stakes showdown: Ottawa has served automaker Stellantis with a notice of default and is preparing to sit down with Queen's Park and Stellantis's global CEO — even as Prime Minister Mark Carney admits he was aware of 'some aspects' of the sale beforehand. Ontario NDP Leader Marit Stiles…"
+     },
+     {
+      "t": "Thu 4:00 p.m.",
+      "iso": "2026-11-12T21:00:21+00:00",
+      "outlet": "Toronto Star",
+      "title": "Ottawa serves Stellantis notice of default on funding agreement after Roshel deal",
+      "url": "https://www.thestar.com/business/joly-set-to-hold-meeting-in-toronto-with-stellantis-union-and-ontario-minister/article_9c8867c0-5424-5435-9108-f5506bd3938c.html",
+      "desc": "More than 2,000 workers have been laid off from the Stellantis plant since it was idled in 2023."
      },
      {
       "t": "Thu 7:16 a.m.",
@@ -1455,6 +1459,11 @@
         "byline": "{\"name\":\"Canadian Press\",\"@id\":\"https:\\/\\/l"
        },
        {
+        "outlet": "Toronto Star",
+        "src": "The Canadian Press",
+        "byline": "\"Sammy Hudes and Daniel Johnson The Canadian Press\" \"Sammy Hudes and D"
+       },
+       {
         "outlet": "CTV News",
         "src": "The Canadian Press",
         "byline": "\"@type\": \"Person\",\n      \"name\": \"The Canadian Press\",\n      \n    }\n  ]"
@@ -1471,6 +1480,10 @@
        }
       ],
       "copies": [
+       {
+        "outlet": "Toronto Star",
+        "url": "https://www.thestar.com/business/joly-set-to-hold-meeting-in-toronto-with-stellantis-union-and-ontario-minister/article_9c8867c0-5424-5435-9108-f5506bd3938c.html"
+       },
        {
         "outlet": "CTV News",
         "url": "https://www.ctvnews.ca/business/autos/article/ottawa-serves-stellantis-notice-of-default-on-funding-agreement-after-roshel-deal/"
@@ -1557,7 +1570,7 @@
     "leads_ca": true,
     "judgment": "national",
     "judgment_why": "National: affects some people; carried across the country (national desks).",
-    "weight": 39.5,
+    "weight": 41.0,
     "videos": [
      {
       "net": "Global News",
@@ -1565,14 +1578,6 @@
       "title": "“We can't stop the sale”: Unifor president laments sale of Stellantis’ Brampton plant",
       "img": "https://i.ytimg.com/vi/jfPhmJaAXmA/hqdefault.jpg",
       "rec": true,
-      "up": ""
-     },
-     {
-      "net": "CTV News",
-      "url": "https://www.youtube.com/watch?v=TRGdrG1bGYQ",
-      "title": "Minister Joly slams Stellantis after meeting over plant sale | CTV National News for Nov.12, 2026",
-      "img": "https://i.ytimg.com/vi/TRGdrG1bGYQ/hqdefault.jpg",
-      "rec": false,
       "up": ""
      },
      {
@@ -1590,6 +1595,14 @@
       "img": "https://i.ytimg.com/vi/UluY82wwpWA/hqdefault.jpg",
       "rec": false,
       "up": ""
+     },
+     {
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=zhgoOeQ7Tq8",
+      "title": "Federal government was engaged regularly on Stellantis sale: source | Power & Politics",
+      "img": "https://i.ytimg.com/vi/zhgoOeQ7Tq8/hqdefault.jpg",
+      "rec": false,
+      "up": ""
      }
     ]
    }
@@ -1599,10 +1612,10 @@
     "title": "Microsoft outage hits companies and governments worldwide as it struggles to restore services",
     "url": "https://www.thestar.com/news/world/microsoft-outage-hits-companies-and-governments-worldwide-as-it-struggles-to-restore-services/article_b920a7ff-03d2-538d-b255-b437e869ff15.html",
     "rank": 1,
-    "live": "",
-    "weight": 52,
+    "live": "Microsoft scrambles to solve global outage affecting Outlook and Teams | BBC News",
+    "weight": 73,
     "score": 20,
-    "independent": 7,
+    "independent": 8,
     "most_read": 5,
     "canada": "tie",
     "theme": "Microsoft outage",
@@ -1617,8 +1630,8 @@
      "BBC News",
      "The Guardian"
     ],
-    "rule": "Still Breaking (newest report Fri 2:50 a.m.), so it stays above \"Fallout from the Nvidia scandal may dampen the exuberance ar\", which leads 10 front pages to its 7: not twice as many",
-    "carriers": 19,
+    "rule": "Still Breaking (newest report Fri 3:16 a.m.), so it stays above \"Fallout from the Nvidia scandal may dampen the exuberance ar\", which leads 9 front pages to its 7: not twice as many",
+    "carriers": 20,
     "judgment": "national",
     "why_judged": "National: leading 7 front pages (CTV News, Global News, CP24, BNN Bloomberg, ABC News, BBC News)."
    },
@@ -1634,7 +1647,7 @@
     "canada": "tie",
     "theme": "",
     "top": true,
-    "fronts": 10,
+    "fronts": 9,
     "fronts_who": [
      "CBC News",
      "CTV News",
@@ -1642,7 +1655,6 @@
      "The Globe and Mail",
      "BNN Bloomberg",
      "NBC News",
-     "CBS News",
      "BBC News",
      "The Guardian",
      "NPR"
@@ -1650,15 +1662,15 @@
     "rule": "Leading other newsrooms' front pages (Canadian ones among them): the story everyone is leading with",
     "carriers": 15,
     "judgment": "national",
-    "why_judged": "National: leading 10 front pages (CBC News, CTV News, Toronto Star, The Globe and Mail, BNN Bloomberg, NBC News)."
+    "why_judged": "National: leading 9 front pages (CBC News, CTV News, Toronto Star, The Globe and Mail, BNN Bloomberg, NBC News)."
    },
    {
     "title": "‘To be frank, I’m fed up’: Minister Joly slams Stellantis after meeting over plant sale",
     "url": "https://www.ctvnews.ca/business/autos/article/ottawa-serves-stellantis-notice-of-default-on-funding-agreement-after-roshel-deal/",
     "rank": 3,
     "live": "",
-    "weight": 39.5,
-    "score": 20,
+    "weight": 41.0,
+    "score": 21,
     "independent": 4,
     "most_read": 0,
     "canada": "canadian",
@@ -1673,13 +1685,13 @@
      "BNN Bloomberg"
     ],
     "rule": "Canadian, leading the most Canadian front pages: the story Canada's newsrooms are leading with",
-    "carriers": 7,
+    "carriers": 8,
     "judgment": "national",
     "why_judged": "National: affects some people; carried across the country (national desks)."
    },
    {
-    "title": "U.S. envoys meet with Putin in Moscow on Ukraine talks, to see Zelenskyy in Dublin after",
-    "url": "https://www.ctvnews.ca/world/russia-ukraine-war/article/us-envoys-go-to-meet-putin-at-the-kremlin-following-ukraine-talks-in-abu-dhabi/",
+    "title": "EU leaders in Dublin grapple with who speaks for Europe in peace talks",
+    "url": "https://www.euronews.com/2026/11/13/eu-leaders-gather-in-dublin-to-decide-who-will-speak-for-europe-in-peace-talks",
     "rank": 4,
     "live": "",
     "weight": 37.0,
@@ -1694,7 +1706,7 @@
     "rule": "From abroad, tied to Canada",
     "carriers": 6,
     "judgment": "national",
-    "why_judged": "National: affects some people; carried across the country (national desks)."
+    "why_judged": "National: affects many people; carried across the country (national desks)."
    },
    {
     "title": "Maryland's Van Hollen to challenge Schumer for U.S. Senate leadership post",
@@ -1725,8 +1737,8 @@
     "url": "https://www.cp24.com/news/canada/2026/11/12/indigenous-womens-groups-call-out-ottawa-over-funding-in-new-federal-budget/",
     "rank": 6,
     "live": "",
-    "weight": 37.5,
-    "score": 18,
+    "weight": 39.0,
+    "score": 19,
     "independent": 2,
     "most_read": 0,
     "canada": "canadian",
@@ -1735,18 +1747,18 @@
     "fronts": 0,
     "fronts_who": [],
     "rule": "Canadian, older",
-    "carriers": 11,
+    "carriers": 12,
     "judgment": "national",
     "why_judged": "National: affects many people; carried across the country (8 cities)."
    },
    {
-    "title": "Death toll climbs to 8 in Brooklyn building collapse as fire department ends rescue operation",
-    "url": "https://www.cbc.ca/news/world/new-york-fire-brooklyn-building-collapse-9.7418579",
+    "title": "What we know about victims of deadly Brooklyn building collapse",
+    "url": "https://abcnews.com/US/victims-deadly-brooklyn-building-collapse/story?id=138098954",
     "rank": 7,
     "live": "",
-    "weight": 25.0,
+    "weight": 24.0,
     "score": 8,
-    "independent": 6,
+    "independent": 5,
     "most_read": 0,
     "canada": "none",
     "theme": "",
@@ -1788,7 +1800,7 @@
    },
    {
     "title": "Hope is finally back in America, and did the U.S. just leave Canadian Conservatives behind?",
-    "score": 10,
+    "score": 11,
     "why": "not built: only 2 independent report(s) (3 sites)"
    },
    {
@@ -1798,7 +1810,7 @@
    },
    {
     "title": "Calgary water rules not expected to hamper Grey Cup, pubs promise plenty of beer",
-    "score": 9,
+    "score": 10,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
@@ -1826,12 +1838,12 @@
     "outlets": 4,
     "carriers": 6,
     "tag": "Developing",
-    "title": "U.S. envoys meet with Putin in Moscow on Ukraine talks, to see Zelenskyy in Dublin after",
-    "url": "https://www.ctvnews.ca/world/russia-ukraine-war/article/us-envoys-go-to-meet-putin-at-the-kremlin-following-ukraine-talks-in-abu-dhabi/",
-    "outlet": "CTV News",
-    "t": "Thu 8:32 p.m.",
-    "iso": "2026-11-13T01:32:15+00:00",
-    "summary": "U.S. envoys met Thursday with Russian President Vladimir Putin in the Kremlin before heading to Ireland for talks with Ukrainian President Volodymyr Zelenskyy as Washington sought new momentum for its peace efforts.",
+    "title": "EU leaders in Dublin grapple with who speaks for Europe in peace talks",
+    "url": "https://www.euronews.com/2026/11/13/eu-leaders-gather-in-dublin-to-decide-who-will-speak-for-europe-in-peace-talks",
+    "outlet": "Euronews",
+    "t": "Fri 2:19 a.m.",
+    "iso": "2026-11-13T07:19:52+00:00",
+    "summary": "Good morning. I’m Luca Bertuzzi, holding the pen for today’s newsletter. The Ukraine peace talks, and the question of who should speak for Europe at the table, have swamped the informal EU summit, kicking off another round of the name game. #EuropeToday",
     "first": {
      "outlet": "Kyiv Independent",
      "url": "https://kyivindependent.com/zelensky-meets-with-trumps-envoys-in-dublin-after-their-summit-with-putin/",
@@ -1841,33 +1853,25 @@
     },
     "newest": "2026-11-13T07:19:52+00:00",
     "photo": {
-     "src": "live/img/auto-a735e771-2a8275d61a.jpg",
-     "orig": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1794543112.jpg?resize=1920%2C1080&quality=80",
-     "caption": "US envoys shuttle between Putin and Zelenskyy. — via Al Jazeera",
-     "alt": "US envoys shuttle between Putin and Zelenskyy",
-     "outlet": "Al Jazeera",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/aje-onl-nf_us-envoys-shuttle-between-putin-and-zelenskyy-121126?traffic_source=rss",
-     "since": "2026-11-13T08:26:57.190544+00:00"
+     "src": "live/img/auto-a735e771-42431c3d82.jpg",
+     "orig": "https://images.euronews.com/articles/stories/09/99/03/60/1200x675_cmsv2_4fcd02a8-6bf7-5ca7-a26f-9c135d3957e4-9990360.jpg",
+     "caption": "EU leaders in Dublin grapple with who speaks for Europe in peace talks. — via Euronews",
+     "alt": "EU leaders in Dublin grapple with who speaks for Europe in peace talks",
+     "outlet": "Euronews",
+     "url": "https://www.euronews.com/2026/11/13/eu-leaders-gather-in-dublin-to-decide-who-will-speak-for-europe-in-peace-talks",
+     "since": "2026-11-13T08:36:15.687789+00:00"
     },
     "photo_seen": [
-     "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1794543112.jpg?resize=1920%2C1080&quality=80"
+     "https://images.euronews.com/articles/stories/09/99/03/60/1200x675_cmsv2_4fcd02a8-6bf7-5ca7-a26f-9c135d3957e4-9990360.jpg"
     ],
     "photos": [
      {
-      "src": "live/img/auto-a735e771-2a8275d61a.jpg",
-      "orig": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1794543112.jpg?resize=1920%2C1080&quality=80",
-      "caption": "US envoys shuttle between Putin and Zelenskyy. — via Al Jazeera",
-      "alt": "US envoys shuttle between Putin and Zelenskyy",
-      "outlet": "Al Jazeera",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/aje-onl-nf_us-envoys-shuttle-between-putin-and-zelenskyy-121126?traffic_source=rss"
-     },
-     {
-      "src": "live/img/auto-a735e771-7e4c73a6fe.jpg",
-      "orig": "https://i.cbc.ca/ais/e1756611-daf1-4c11-a669-0d6e2f04c3af,1794492045675/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C5258%2C2957%29%3BResize%3D620",
-      "caption": "Russian President Vladimir Putin and Kremlin foreign policy adviser Yuri Ushakov, left, are shown speaking to U.S. envoy Steve Witkoff on Thursday. (Vyacheslav Prokofiev/Sputnik/Reuters) — via CBC News",
-      "alt": "Russian President Vladimir Putin and Kremlin foreign policy adviser Yuri Ushakov, left, are shown speaking to U.S. envoy Steve Witkoff on Thursday.",
-      "outlet": "CBC News",
-      "url": "https://www.cbc.ca/news/world/us-witkoff-kushner-putin-zelenskyy-talks-9.7418799"
+      "src": "live/img/auto-a735e771-42431c3d82.jpg",
+      "orig": "https://images.euronews.com/articles/stories/09/99/03/60/1200x675_cmsv2_4fcd02a8-6bf7-5ca7-a26f-9c135d3957e4-9990360.jpg",
+      "caption": "EU leaders in Dublin grapple with who speaks for Europe in peace talks. — via Euronews",
+      "alt": "EU leaders in Dublin grapple with who speaks for Europe in peace talks",
+      "outlet": "Euronews",
+      "url": "https://www.euronews.com/2026/11/13/eu-leaders-gather-in-dublin-to-decide-who-will-speak-for-europe-in-peace-talks"
      },
      {
       "src": "live/img/auto-a735e771-bbba09d46b.jpg",
@@ -1886,7 +1890,7 @@
       "outlet": "Euronews",
       "title": "EU leaders in Dublin grapple with who speaks for Europe in peace talks",
       "url": "https://www.euronews.com/2026/11/13/eu-leaders-gather-in-dublin-to-decide-who-will-speak-for-europe-in-peace-talks",
-      "desc": ""
+      "desc": "Good morning. I’m Luca Bertuzzi, holding the pen for today’s newsletter. The Ukraine peace talks, and the question of who should speak for Europe at the table, have swamped the informal EU summit, kicking off another round of the name game. #EuropeToday"
      },
      {
       "t": "Thu 11:12 p.m.",
@@ -1936,13 +1940,13 @@
       "outlet": "Euronews",
       "title": "EU leaders in Dublin grapple with who speaks for Europe in peace talks",
       "url": "https://www.euronews.com/2026/11/13/eu-leaders-gather-in-dublin-to-decide-who-will-speak-for-europe-in-peace-talks",
-      "desc": "",
+      "desc": "Good morning. I’m Luca Bertuzzi, holding the pen for today’s newsletter. The Ukraine peace talks, and the question of who should speak for Europe at the table, have swamped the informal EU summit, kicking off another round of the name game. #EuropeToday",
       "wire": "",
       "by": [
        {
         "outlet": "Euronews",
         "src": "Euronews",
-        "byline": ""
+        "byline": "[ { \"@type\": \"Person\", \"familyName\": \"Bertuzzi\", \"givenName\": \"Luca\", \"name\": \"Luca Bertuzzi\", , \"worksFor\": { \"@id\": \"h"
        }
       ],
       "copies": []
@@ -2022,7 +2026,7 @@
     "events": [],
     "theme": "",
     "ca_angle": {
-     "specific": 4,
+     "specific": 3,
      "official": 1
     },
     "canada": "tie",
@@ -2035,7 +2039,7 @@
     "fronts_who": [],
     "outled_ca": 5,
     "judgment": "national",
-    "judgment_why": "National: affects some people; carried across the country (national desks).",
+    "judgment_why": "National: affects many people; carried across the country (national desks).",
     "weight": 37.0,
     "videos": [
      {
@@ -2055,18 +2059,18 @@
       "up": ""
      },
      {
-      "net": "CBS News",
-      "url": "https://www.youtube.com/watch?v=ojmry2HIppU",
-      "title": "Zelenskyy says Ukraine's Starshield use limited again amid meeting with U.S. envoys",
-      "img": "https://i.ytimg.com/vi/ojmry2HIppU/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
       "net": "Associated Press",
       "url": "https://www.youtube.com/watch?v=v-7bcvIKzIQ",
       "title": "US envoys hold talks with Zelenskyy in Dublin after meeting Putin in Moscow",
       "img": "https://i.ytimg.com/vi/v-7bcvIKzIQ/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "BBC News",
+      "url": "https://www.youtube.com/watch?v=Jrki8BD2TG0",
+      "title": "Are Putin, Trump and Zelensky any closer to making peace in Ukraine? | Global News Podcast",
+      "img": "https://i.ytimg.com/vi/Jrki8BD2TG0/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -2107,7 +2111,7 @@
      "alt": "U.S. Sen. Chris Van Hollen says he'll will run for Senate Majority Leader in the next Congress, setting up a challenge to Democratic Leader Chuck Schumer.",
      "outlet": "CBC News",
      "url": "https://www.cbc.ca/news/world/van-hollen-senate-leadership-challenge-schumer-9.7420238",
-     "since": "2026-11-13T08:27:02.042479+00:00"
+     "since": "2026-11-13T08:36:19.521282+00:00"
     },
     "photo_seen": [
      "https://i.cbc.ca/ais/ec460f5d-b31d-4039-aeac-e2ef6787273a,1794536069703/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C351%2C6000%2C3375%29%3BResize%3D620"
@@ -2443,15 +2447,15 @@
     "key": "auto-6754e954",
     "words": [
      "indigenous",
-     "women’s",
      "limited",
      "funding",
-     "groups",
-     "budget"
+     "women’s",
+     "budget",
+     "groups"
     ],
-    "score": 18,
+    "score": 19,
     "outlets": 2,
-    "carriers": 11,
+    "carriers": 12,
     "tag": "Developing",
     "title": "Indigenous women's groups call out Ottawa over funding in new federal budget",
     "url": "https://www.cp24.com/news/canada/2026/11/12/indigenous-womens-groups-call-out-ottawa-over-funding-in-new-federal-budget/",
@@ -2474,7 +2478,7 @@
      "alt": "President of the Native Women’s Association of Canada (NWAC) Josie Nepinak, centre, speaks to reporters on Parliament Hill alongside, from left to right, Rosema",
      "outlet": "CP24",
      "url": "https://www.cp24.com/news/canada/2026/11/12/indigenous-womens-groups-call-out-ottawa-over-funding-in-new-federal-budget/",
-     "since": "2026-11-13T08:26:59.606878+00:00"
+     "since": "2026-11-13T08:36:18.096004+00:00"
     },
     "photo_seen": [
      "https://www.cp24.com/resizer/v2/L3N2I3DFAONNU7VYMKKVI4R2WY.jpg?smart=true&auth=1f3a60ed114383e92f47b960e12fd8916447ec2735794e037bc6d4ca4f2e9099&width=1200&height=630"
@@ -2487,6 +2491,14 @@
       "alt": "President of the Native Women’s Association of Canada (NWAC) Josie Nepinak, centre, speaks to reporters on Parliament Hill alongside, from left to right, Rosema",
       "outlet": "CP24",
       "url": "https://www.cp24.com/news/canada/2026/11/12/indigenous-womens-groups-call-out-ottawa-over-funding-in-new-federal-budget/"
+     },
+     {
+      "src": "live/img/auto-6754e954-627f20df14.jpg",
+      "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/8/f8/8f8160c5-bf23-5d6c-82e2-9a504cd81347/6af621cdaa99a.image.jpg?crop=1400%2C735%2C0%2C99&resize=1200%2C630&order=crop%2Cresize",
+      "caption": "From: Indigenous women's groups call out Ottawa over funding in new federal budget. — via Toronto Star",
+      "alt": "Indigenous women's groups call out Ottawa over funding in new federal budget",
+      "outlet": "Toronto Star",
+      "url": "https://www.thestar.com/politics/federal/indigenous-women-s-groups-call-out-limited-funding-in-new-federal-budget/article_e818a422-fd69-5d82-9b3d-a83e1546bc2a.html"
      },
      {
       "src": "live/img/auto-6754e954-c1aa816d1d.jpg",
@@ -2522,6 +2534,14 @@
       "title": "Never mind the midterms: Olszewski touts federal budget at Chamber breakfast",
       "url": "https://edmontonjournal.com/news/local-news/olszewski-federal-budget-edmonton",
       "desc": ""
+     },
+     {
+      "t": "Thu 3:27 p.m.",
+      "iso": "2026-11-12T20:27:19+00:00",
+      "outlet": "Toronto Star",
+      "title": "Indigenous women's groups call out Ottawa over funding in new federal budget",
+      "url": "https://www.thestar.com/politics/federal/indigenous-women-s-groups-call-out-limited-funding-in-new-federal-budget/article_e818a422-fd69-5d82-9b3d-a83e1546bc2a.html",
+      "desc": "OTTAWA - Indigenous women's groups say the new federal budget is harming the people they represent by not including funding targeted at violence and community support services."
      },
      {
       "t": "Thu 3:27 p.m.",
@@ -2619,12 +2639,17 @@
      {
       "t": "Thu 3:27 p.m.",
       "primary": false,
-      "outlet": "CityNews Winnipeg",
-      "title": "Indigenous women’s groups call out limited funding in new federal budget",
-      "url": "https://winnipeg.citynews.ca/2026/11/12/indigenous-womens-groups-call-out-limited-funding-in-new-federal-budget/",
-      "desc": "Indigenous women's groups say the new federal budget is harming the people they represent by not including funding targeted at violence and community support services.",
+      "outlet": "Toronto Star",
+      "title": "Indigenous women's groups call out Ottawa over funding in new federal budget",
+      "url": "https://www.thestar.com/politics/federal/indigenous-women-s-groups-call-out-limited-funding-in-new-federal-budget/article_e818a422-fd69-5d82-9b3d-a83e1546bc2a.html",
+      "desc": "OTTAWA - Indigenous women's groups say the new federal budget is harming the people they represent by not including funding targeted at violence and community support services.",
       "wire": "The Canadian Press",
       "by": [
+       {
+        "outlet": "Toronto Star",
+        "src": "The Canadian Press",
+        "byline": "\"Alessia Passafiume The Canadian Press\" \"Alessia Passafium"
+       },
        {
         "outlet": "CityNews Winnipeg",
         "src": "The Canadian Press",
@@ -2673,6 +2698,10 @@
       ],
       "copies": [
        {
+        "outlet": "CityNews Winnipeg",
+        "url": "https://winnipeg.citynews.ca/2026/11/12/indigenous-womens-groups-call-out-limited-funding-in-new-federal-budget/"
+       },
+       {
         "outlet": "CityNews Vancouver",
         "url": "https://vancouver.citynews.ca/2026/11/12/indigenous-womens-groups-call-out-limited-funding-in-new-federal-budget-2/"
        },
@@ -2720,7 +2749,7 @@
     "fronts_who": [],
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (8 cities).",
-    "weight": 37.5,
+    "weight": 39.0,
     "videos": [
      {
       "net": "APTN News",
@@ -2743,8 +2772,8 @@
   ],
   "passed_over": [
    {
-    "title": "Death toll climbs to 8 in Brooklyn building collapse as fire department ends rescue operation",
-    "url": "https://www.cbc.ca/news/world/new-york-fire-brooklyn-building-collapse-9.7418579"
+    "title": "What we know about victims of deadly Brooklyn building collapse",
+    "url": "https://abcnews.com/US/victims-deadly-brooklyn-building-collapse/story?id=138098954"
    },
    {
     "title": "Hegseth awards medal to Arlington soldier who scolded his group on decorum",
@@ -3037,7 +3066,7 @@
    "id": "uLOSnKlHsgw",
    "r": "us",
    "o": "CNN",
-   "t": "White House alarmed by Lunick not blacklisting Nvidia-linked firm",
+   "t": "Commerce Sec. Lutnick faces new scrutiny over approval of China deal",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=uLOSnKlHsgw",
@@ -3090,20 +3119,6 @@
    "geo": "unknown"
   },
   {
-   "id": "Sk-olHVB5Ek",
-   "r": "us",
-   "o": "Fox News",
-   "t": "Fetterman CLASHES with CodePink activists on Capitol Hill",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=Sk-olHVB5Ek",
-   "img": "https://i.ytimg.com/vi/Sk-olHVB5Ek/hqdefault.jpg",
-   "up": "2026-11-13",
-   "added": "2026-11-13T06:39:00.760503+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "PxW1vLOdqFs",
    "r": "us",
    "o": "ABC News",
@@ -3112,7 +3127,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=PxW1vLOdqFs",
    "img": "https://i.ytimg.com/vi/PxW1vLOdqFs/hqdefault.jpg",
-   "up": "2026-11-13",
+   "up": "2026-11-12",
    "added": "2026-11-13T06:54:17.619333+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -3216,6 +3231,20 @@
    "geo": "unknown"
   },
   {
+   "id": "qQj2vK_SXG8",
+   "r": "us",
+   "o": "Fox News",
+   "t": "Dana Perino: This is INSIDIOUS",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=qQj2vK_SXG8",
+   "img": "https://i.ytimg.com/vi/qQj2vK_SXG8/hqdefault.jpg",
+   "up": "2026-11-13",
+   "added": "2026-11-13T08:34:04.257911+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
    "id": "kTNc76jjalM",
    "r": "world",
    "o": "Al Jazeera",
@@ -3272,20 +3301,6 @@
    "geo": "unknown"
   },
   {
-   "id": "D2UZNFA-9dE",
-   "r": "world",
-   "o": "DW News",
-   "t": "The Day with Brent Goff: Huang resigns as Nvidia chief | DW News",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=D2UZNFA-9dE",
-   "img": "https://i.ytimg.com/vi/D2UZNFA-9dE/hqdefault.jpg",
-   "up": "2026-11-13",
-   "added": "2026-11-13T05:08:41.697520+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "ojgmX7ERXYM",
    "r": "world",
    "o": "BBC News",
@@ -3317,7 +3332,7 @@
    "id": "uN15Mb5EeFY",
    "r": "world",
    "o": "Sky News",
-   "t": "Pete Hegseth: still under fire",
+   "t": "Washington DC shooting: what happened",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=uN15Mb5EeFY",
@@ -3345,13 +3360,27 @@
    "id": "Ox8W-ifXfkE",
    "r": "world",
    "o": "Sky News",
-   "t": "Rayner approves plans to house more than 1,250 asylum seekers near Piddington",
+   "t": "Villagers weigh legal challenge as plans to house 1,250 asylum seekers nearby approved",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=Ox8W-ifXfkE",
    "img": "https://i.ytimg.com/vi/Ox8W-ifXfkE/hqdefault.jpg",
    "up": "2026-11-13",
    "added": "2026-11-13T08:09:27.066314+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "44z51uWTuuU",
+   "r": "world",
+   "o": "DW News",
+   "t": "Salvadoran strike: Is Haiti finally getting the help it desperately needs? | DW News",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=44z51uWTuuU",
+   "img": "https://i.ytimg.com/vi/44z51uWTuuU/hqdefault.jpg",
+   "up": "2026-11-13",
+   "added": "2026-11-13T08:34:04.257911+00:00",
    "pic": "globe",
    "geo": "unknown"
   }
@@ -3709,6 +3738,13 @@
     "url": "https://winnipeg.citynews.ca/2026/11/12/democrats-blue-tsunami-could-be-reversing-travel-turnoff-of-canada-u-s-trade-war/"
    },
    {
+    "t": "Thu 5:00 a.m.",
+    "iso": "2026-11-12T10:00:00+00:00",
+    "outlet": "Toronto Star",
+    "title": "Carney set to sign two Asian trade deals on nine-day, four-summit trip that tests his middle-power pitch",
+    "url": "https://www.thestar.com/politics/carney-set-to-sign-two-asian-trade-deals-on-nine-day-four-summit-trip-that-tests-his-middle-power-pitch/article_e38f9129-af57-4c82-ae73-3cc23ac1606a.html"
+   },
+   {
     "t": "Wed 11:46 a.m.",
     "iso": "2026-11-11T16:46:55+00:00",
     "outlet": "BNN Bloomberg",
@@ -3722,9 +3758,9 @@
   "edition": "Friday morning, November 13",
   "lines": [
    "Good morning. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
-   "Nvidia’s advanced chips are widely used to develop AI models, making the company key in the U.S. race against China to build superior AI systems, AFP reports.",
-   "Widespread outage hits Outlook, other Microsoft apps, The Associated Press reports.",
    "The federal government has served Stellantis with a notice of default on its funding agreement after the automaker signed a deal to sell an assembly plant to Roshel, The Canadian Press reports.",
+   "Few solid clues have emerged as to the true nature of Megaspeed, whose former director Alice Huang has been accused of being a Chinese spy, The Guardian reports.",
+   "Widespread outage hits Outlook, other Microsoft apps, The Associated Press reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
   ]
  },
@@ -4116,18 +4152,6 @@
    "hot": false
   },
   {
-   "city": "Beijing",
-   "tz": "Asia/Shanghai",
-   "world": true,
-   "w": "Nvidia",
-   "label": "Calls for crackdown on China chip exports – as it happened",
-   "u": "https://www.theguardian.com/technology/live/2026/nov/13/nvidia-jensen-huang-to-testify-before-congress-live-latest-updates",
-   "title": "Calls for crackdown on China chip exports – as it happened",
-   "outlet": "The Guardian",
-   "t": "Fri 1:50 a.m.",
-   "hot": false
-  },
-  {
    "city": "Tehran",
    "tz": "Asia/Tehran",
    "world": true,
@@ -4179,6 +4203,18 @@
    "img": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/11/12/3e03a3ba-436d-4aee-981b-0a5bbc12fe2e/thumbnail/1200x630g2/1b639b847e13423d144c73af2377518d/screenshot-2026-11-12-at-11-43-20-am.png"
   },
   {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Fri 3:21 a.m.",
+   "iso": "2026-11-13T08:21:07+00:00",
+   "title": "European shares fall as Nvidia CEO’s exit raises doubts over AI boom",
+   "summary": "Equity markets mostly fell on Friday, following losses on Wall Street as investors weighed what Jensen Huang’s resignation from Nvidia could mean for the AI industry. Oil prices rose after US President Donald Trump said Washington did not need a deal with Iran.",
+   "outlet": "Euronews, The Guardian, The Japan Times (AFP), CBC News, Toronto Star, Toronto Star (AP)",
+   "n": 6,
+   "url": "https://www.euronews.com/2026/11/13/european-shares-fall-as-nvidia-ceos-exit-raises-doubts-over-ai-boom",
+   "img": "https://images.euronews.com/articles/stories/09/99/09/91/1200x675_cmsv2_76f28d50-766e-5cad-97bf-501f62b387f7-9990991.jpg"
+  },
+  {
    "desk": "us",
    "pic": "podium",
    "t": "Thu 11:28 p.m.",
@@ -4191,40 +4227,16 @@
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6af6840ab803c-1794540554.jpg?resize=1920%2C1440"
   },
   {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Fri 3:21 a.m.",
-   "iso": "2026-11-13T08:21:07+00:00",
-   "title": "European shares fall as Nvidia CEO’s exit raises doubts over AI boom",
-   "summary": "Equity markets mostly fell on Friday, following losses on Wall Street as investors weighed what Jensen Huang’s resignation from Nvidia could mean for the AI industry. Oil prices rose after US President Donald Trump said Washington did not need a deal with Iran.",
-   "outlet": "Euronews, The Guardian, The Japan Times (AFP), CBC News, Toronto Star",
-   "n": 5,
-   "url": "https://www.euronews.com/2026/11/13/european-shares-fall-as-nvidia-ceos-exit-raises-doubts-over-ai-boom",
-   "img": "https://images.euronews.com/articles/stories/09/99/09/91/1200x675_cmsv2_76f28d50-766e-5cad-97bf-501f62b387f7-9990991.jpg"
-  },
-  {
    "desk": "world",
    "pic": "globe",
-   "t": "Thu 10:53 p.m.",
-   "iso": "2026-11-13T03:53:41+00:00",
-   "title": "What we know about victims of deadly Brooklyn building collapse",
-   "summary": "Two children, ages 9 and 10, were among those killed, according to authorities.",
-   "outlet": "ABC News, BBC News, CBS News, CBC News + CTV News + CP24 (AP), Toronto Star",
-   "n": 5,
-   "url": "https://abcnews.com/US/victims-deadly-brooklyn-building-collapse/story?id=138098954",
-   "img": "https://i.abcnewsfe.com/a/d647e8c0-bdea-4489-ab17-921ecb67829a/2304318268_1794541308058_hpMain_16x9.jpg?w=1600"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Fri 2:50 a.m.",
-   "iso": "2026-11-13T07:50:42+00:00",
-   "title": "Microsoft outage hits companies and governments worldwide as it struggles to restore services",
-   "summary": "HONG KONG (AP) — From Asia to the U.S., Microsoft’s outage involving services like Outlook and Teams has dragged on for hours and impacted many users, companies and some government",
-   "outlet": "Toronto Star + The Canadian Press (via Winnipeg Free Press), CTV News + CP24 + CBC News + BNN Bloomberg, ABC News, The Guardian",
+   "t": "Fri 3:16 a.m.",
+   "iso": "2026-11-13T08:16:11+00:00",
+   "title": "Microsoft ‘seeing positive results’ from attempts to fix global outage affecting Teams and Outlook",
+   "summary": "Microsoft 365 also hit but tech company says no indication problem was caused by cyber-attack",
+   "outlet": "The Guardian, Toronto Star + The Canadian Press (via Winnipeg Free Press), CTV News + CP24 + CBC News + BNN Bloomberg, ABC News",
    "n": 4,
-   "url": "https://www.thestar.com/news/world/microsoft-outage-hits-companies-and-governments-worldwide-as-it-struggles-to-restore-services/article_b920a7ff-03d2-538d-b255-b437e869ff15.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/7/76/776fd4c1-ff9f-524b-ae71-ef889c9a4ef8/6af61037367c8.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
+   "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
+   "img": "https://i.guim.co.uk/img/media/f39d9eba31016399e4c01fd145c5dd223dd145d6/334_0_3332_2666/master/3332.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=b91f0696e82c3ebefb1469dc0fc5a959"
   },
   {
    "desk": "us",
@@ -4237,6 +4249,18 @@
    "n": 4,
    "url": "https://www.aljazeera.com/news/2026/11/13/from-ocean-legend-to-undersea-reef-why-has-the-ss-united-states-been-sunk?traffic_source=rss",
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/GettyImages-453005534-1794544890.jpg?resize=1920%2C1440"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Thu 10:53 p.m.",
+   "iso": "2026-11-13T03:53:41+00:00",
+   "title": "What we know about victims of deadly Brooklyn building collapse",
+   "summary": "Two children, ages 9 and 10, were among those killed, according to authorities.",
+   "outlet": "ABC News, BBC News, CBS News, Toronto Star + CBC News + CTV News + CP24 (AP)",
+   "n": 4,
+   "url": "https://abcnews.com/US/victims-deadly-brooklyn-building-collapse/story?id=138098954",
+   "img": "https://i.abcnewsfe.com/a/d647e8c0-bdea-4489-ab17-921ecb67829a/2304318268_1794541308058_hpMain_16x9.jpg?w=1600"
   },
   {
    "desk": "world",
@@ -4257,7 +4281,7 @@
    "iso": "2026-11-13T02:21:56+00:00",
    "title": "‘To be frank, I’m fed up’: Minister Joly slams Stellantis after meeting over plant sale",
    "summary": "The federal government has served Stellantis with a notice of default on its funding agreement after the automaker signed a deal to sell an assembly plant to Roshel.",
-   "outlet": "CTV News + Lethbridge Herald + CP24 + BNN Bloomberg, CBC News, Canada's National Observer, Global News",
+   "outlet": "CTV News + Toronto Star + CP24 + BNN Bloomberg, Toronto Star, CBC News, Canada's National Observer",
    "n": 4,
    "url": "https://www.ctvnews.ca/business/autos/article/ottawa-serves-stellantis-notice-of-default-on-funding-agreement-after-roshel-deal/",
    "img": "https://www.ctvnews.ca/resizer/v2/YGE4MR4SKNHGBITI7GVN67C4PI.jpg?smart=true&auth=77ab5c8c1199b5c38d9c202e9afafe86257685aa59947f0eca9a239de45dcc8f&width=1200&height=630"
@@ -4323,6 +4347,18 @@
    "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/02/trump-obama-syria-2.jpg"
   },
   {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Thu 7:24 p.m.",
+   "iso": "2026-11-13T00:24:50+00:00",
+   "title": "‘It’s a huge financial help’: National Climate Smart Ag Program doubling enrollment in 2027",
+   "summary": "Sarah Alton has spent the past few years trying to modernize her family’s cattle business near Lucknow. Now, she’s turning her attention to the crops they grow.",
+   "outlet": "CTV News (CP), CityNews + PBS NewsHour (AP), VOCM",
+   "n": 3,
+   "url": "https://www.ctvnews.ca/london/article/its-a-huge-financial-help-national-climate-smart-ag-program-doubling-enrollment-in-2027/",
+   "img": "https://www.ctvnews.ca/resizer/v2/DZ2I3WHLPVCR3HCA6KQF63JH2A.jpeg?smart=true&auth=abef038310662584d1337f28d8bb22eaecbb78795a9b1d6d2a35459681f2aeee&width=1200&height=630"
+  },
+  {
    "desk": "politics",
    "pic": "parliament",
    "t": "Thu 5:54 p.m.",
@@ -4383,18 +4419,6 @@
    "img": ""
   },
   {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Thu 8:44 p.m.",
-   "iso": "2026-11-13T01:44:31+00:00",
-   "title": "Youth, 17, receives two-year custodial sentence for March synagogue shootings",
-   "summary": "",
-   "outlet": "Toronto Sun, CTV News + CP24 (CP)",
-   "n": 2,
-   "url": "https://torontosun.com/news/local-news/youth-sentenced-toronto-area-synagogue-shootings",
-   "img": ""
-  },
-  {
    "desk": "politics",
    "pic": "parliament",
    "t": "Thu 7:04 p.m.",
@@ -4425,21 +4449,9 @@
    "iso": "2026-11-12T22:00:18+00:00",
    "title": "News of the day: Senators lose Nick Cousins for at least a week following violent hit from Jakob Chychrun; Budget reinvests in parts of public service cut last year, economist says; Outgoing councillors bid emotional farewell to Ottawa City Hall",
    "summary": "",
-   "outlet": "Ottawa Citizen + Edmonton Journal, CityNews Winnipeg + CityNews Vancouver + CityNews Ottawa + CityNews Montreal + 5 more (CP)",
+   "outlet": "Ottawa Citizen + Edmonton Journal, Toronto Star + CityNews Winnipeg + CityNews Vancouver + CityNews Ottawa + 5 more (CP)",
    "n": 2,
    "url": "https://ottawacitizen.com/news/local-news/news-of-the-day-senators-lose-nick-cousins-for-at-least-a-week-following-violent-hit-from-jakob-chychrun-budget-reinvests-in-parts-of-public-service-cut-last-year-economist-says-outgoing-councillo",
-   "img": ""
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Fri 2:00 a.m.",
-   "iso": "2026-11-13T07:00:10+00:00",
-   "title": "Immigrants ‘critical’ to rural economies",
-   "summary": "",
-   "outlet": "The Canadian Press (via Winnipeg Free Press)",
-   "n": 1,
-   "url": "https://www.winnipegfreepress.com/breakingnews/2026/11/13/immigrants-critical-to-rural-economies",
    "img": ""
   },
   {
@@ -4469,14 +4481,26 @@
   {
    "desk": "business",
    "pic": "chart",
-   "t": "Thu 9:09 p.m.",
-   "iso": "2026-11-13T02:09:00+00:00",
-   "title": "The yen is becoming too difficult for some investors to trade",
-   "summary": "Traditional signals such as interest-rate differentials have become less reliable guides for the currency.",
-   "outlet": "The Japan Times",
+   "t": "Thu 8:40 p.m.",
+   "iso": "2026-11-13T01:40:25+00:00",
+   "title": "Boebert blames policy, corruption, ‘markets’ for possible loss",
+   "summary": "",
+   "outlet": "The Hill",
    "n": 1,
-   "url": "https://www.japantimes.co.jp/business/2026/11/13/markets/yen-moves-hard-to-anticipate/",
-   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/13/573781.jpg?v=3.1"
+   "url": "https://thehill.com/homenews/house/6217833-boebert-blames-policy-market-losses/",
+   "img": ""
+  },
+  {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Thu 7:34 p.m.",
+   "iso": "2026-11-13T00:34:55.163000+00:00",
+   "title": "Indigenous women leaders say budget doesn't address their realities",
+   "summary": "Indigenous leaders from across Canada gathered in Ottawa on Thursday to say Prime Minister Mark Carney’s new budget leaves Indigenous women out of the decisions made in the more than 500-page document.",
+   "outlet": "CBC News",
+   "n": 1,
+   "url": "https://www.cbc.ca/news/politics/indigenous-inuit-women-carney-budget-9.7419887",
+   "img": "https://i.cbc.ca/ais/ac46503c-9392-473a-b3df-24c651074dfb,1794529006739/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C374%2C5083%2C2859%29%3BResize%3D620"
   },
   {
    "desk": "politics",
@@ -4508,11 +4532,11 @@
    "t": "Thu 5:54 p.m.",
    "iso": "2026-11-12T22:54:32+00:00",
    "title": "Confining kids in lockers as punishment 'unacceptable': Quebec education minister",
-   "summary": "",
-   "outlet": "Toronto Star + CKOM / PAnow",
+   "summary": "QUÉBEC - Quebec Education Minister Joël Arseneau is speaking out about school personnel who allegedly confined unruly children in a locker north of Montreal.",
+   "outlet": "Toronto Star + CKOM / PAnow (CP)",
    "n": 1,
    "url": "https://www.thestar.com/news/canada/quebec/confining-kids-in-lockers-as-punishment-unacceptable-quebec-education-minister/article_c9b6a6c4-2eba-5170-b9b5-9058240ae210.html",
-   "img": ""
+   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/1/8a/18a85565-956b-5a91-ae50-36372776e656/6af645043a78d.image.jpg?crop=1452%2C762%2C0%2C158&resize=1200%2C630&order=crop%2Cresize"
   }
  ],
  "reads": [
@@ -4916,8 +4940,75 @@
     "url": "https://www.youtube.com/watch?v=Lhk3Gu0YeRs",
     "img": "https://i.ytimg.com/vi/Lhk3Gu0YeRs/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "287",
+    "watching": "294",
     "rolling": true
+   },
+   {
+    "net": "BBC News",
+    "r": "world",
+    "title": "LIVE: Microsoft scrambles to solve global outage affecting Outlook and Teams | BBC News",
+    "url": "https://www.youtube.com/watch?v=BwSxb_P3HzM",
+    "img": "https://i.ytimg.com/vi/BwSxb_P3HzM/hqdefault.jpg",
+    "story": "Microsoft outage hits companies and governments worldwide as",
+    "watching": "129",
+    "reports": [
+     {
+      "outlet": "The Guardian",
+      "title": "Microsoft ‘seeing positive results’ from attempts to fix global outage affecting Teams and Outlook",
+      "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
+      "t": "Fri 3:16 a.m.",
+      "iso": "2026-11-13T08:16:11+00:00"
+     },
+     {
+      "outlet": "ABC News",
+      "title": "Microsoft Outlook outage stretches on for hours",
+      "url": "https://abcnews.com/US/outlook-down-microsoft-outage-reported-mail/story?id=138088203",
+      "t": "Fri 12:13 a.m.",
+      "iso": "2026-11-13T05:13:35+00:00"
+     },
+     {
+      "outlet": "CTV News",
+      "title": "Microsoft outage affecting operations at Montreal hospitals",
+      "url": "https://www.ctvnews.ca/montreal/article/microsoft-outage-affecting-chum-appointment-processing-internal-operations/",
+      "t": "Thu 9:56 p.m.",
+      "iso": "2026-11-13T02:56:16+00:00"
+     },
+     {
+      "outlet": "Euronews",
+      "title": "Microsoft Outlook global outage repair efforts not going 'as expected'",
+      "url": "https://www.euronews.com/2026/11/12/microsoft-outage-hits-outlook-teams-and-copilot-disrupting-thousands",
+      "t": "Thu 2:38 p.m.",
+      "iso": "2026-11-12T19:38:47+00:00"
+     },
+     {
+      "outlet": "CityNews Winnipeg",
+      "title": "Widespread outage hits Outlook, other Microsoft apps",
+      "url": "https://winnipeg.citynews.ca/2026/11/12/microsoft-outlook-widespread-outage/",
+      "t": "Thu 2:21 p.m.",
+      "iso": "2026-11-12T19:21:01+00:00"
+     },
+     {
+      "outlet": "CityNews Ottawa",
+      "title": "Widespread outage hits Outlook, other Microsoft apps",
+      "url": "https://ottawa.citynews.ca/2026/11/12/microsoft-outlook-widespread-outage/",
+      "t": "Thu 2:21 p.m.",
+      "iso": "2026-11-12T19:21:01+00:00"
+     },
+     {
+      "outlet": "CityNews Montreal",
+      "title": "Widespread outage hits Outlook, other Microsoft apps",
+      "url": "https://montreal.citynews.ca/2026/11/12/microsoft-outlook-widespread-outage/",
+      "t": "Thu 2:21 p.m.",
+      "iso": "2026-11-12T19:21:01+00:00"
+     },
+     {
+      "outlet": "CityNews Halifax",
+      "title": "Widespread outage hits Outlook, other Microsoft apps",
+      "url": "https://halifax.citynews.ca/2026/11/12/microsoft-outlook-widespread-outage/",
+      "t": "Thu 2:21 p.m.",
+      "iso": "2026-11-12T19:21:01+00:00"
+     }
+    ]
    },
    {
     "net": "Sky News",
@@ -4926,7 +5017,7 @@
     "url": "https://www.youtube.com/watch?v=xMboXwD4MJs",
     "img": "https://i.ytimg.com/vi/xMboXwD4MJs/hqdefault.jpg",
     "story": "Rayner approves plans to house more than 1,250 asylum seekers near Pid",
-    "watching": "451",
+    "watching": "436",
     "reports": [
      {
       "outlet": "The Guardian",
@@ -5009,20 +5100,20 @@
    ],
    "stories": [
     {
-     "t": "Thu 4:30 p.m.",
-     "iso": "2026-11-12T21:30:30+00:00",
-     "outlet": "Euronews",
-     "title": "Huang's exit, AI bubble and financial crisis fears in focus on Web Summit's last day",
-     "url": "https://www.euronews.com/2026/11/12/huangs-exit-ai-bubble-and-financial-crisis-fears-in-focus-on-web-summits-last-day",
-     "tie": "Huang"
+     "t": "Fri 1:46 a.m.",
+     "iso": "2026-11-13T06:46:00+00:00",
+     "outlet": "The Japan Times",
+     "title": "China’s access to Nvidia chips in doubt as curbs gain traction in U.S. Congress",
+     "url": "https://www.japantimes.co.jp/news/2026/11/13/world/china-access-nvidia-chips-doubt/",
+     "tie": "Nvidia"
     },
     {
-     "t": "Wed 8:45 a.m.",
-     "iso": "2026-11-11T13:45:04+00:00",
-     "outlet": "BNN Bloomberg",
-     "title": "Military-linked Chinese university bought Nvidia chips despite U.S. blacklist: Reuters exclusive",
-     "url": "https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/11/11/military-linked-chinese-university-bought-nvidia-chips-despite-us-blacklist-reuters-exclusive/",
-     "tie": "Nvidia"
+     "t": "Fri 1:30 a.m.",
+     "iso": "2026-11-13T06:30:30+00:00",
+     "outlet": "Euronews",
+     "title": "Huang's exit, AI bubble and financial crisis fears in focus on Web Summit's last day",
+     "url": "https://www.euronews.com/2026/11/13/huangs-exit-ai-bubble-and-financial-crisis-fears-in-focus-on-web-summits-last-day",
+     "tie": "Huang"
     }
    ],
    "views": []
@@ -5441,90 +5532,6 @@
     ]
    ],
    "lead": 4
-  },
-  {
-   "id": "bd-auto-042b50a4",
-   "auto": true,
-   "desk": "World",
-   "status": "Developing",
-   "at": "2026-11-13T03:53:41+00:00",
-   "exact": true,
-   "img": "live/img/auto-042b50a4-3ab9362727.jpg",
-   "credit": "via CBC News",
-   "pic": "globe",
-   "h": "Death toll climbs to 8 in Brooklyn building collapse as fire department ends rescue operation",
-   "lede": "Eight people died after a three-storey building in Brooklyn collapsed at the edge of a construction site, New York City's mayor said Thursday, as torrential rain hampered rescue efforts.",
-   "newl": "Now carried by 6 independent newsrooms.",
-   "rows": [
-    [
-     "ABC News",
-     "Two children, ages 9 and 10, were among those killed, according to authorities.",
-     [
-      1
-     ]
-    ],
-    [
-     "BBC News",
-     "Two construction workers and two children were killed when a residential building fell into an adjacent construction site on Wednesday.",
-     [
-      2
-     ]
-    ],
-    [
-     "CBS News",
-     "At least eight people were killed​ after a building collapsed Wednesday in Flatbush, Brooklyn.",
-     [
-      3
-     ]
-    ],
-    [
-     "NBC News",
-     "New video shows the moment catastrophe struck in Brooklyn. As the death toll rises, we speak with families who lost loved ones and learn about amazing stories of survival. NBC News’ Sam Brock reports.",
-     [
-      4
-     ]
-    ],
-    [
-     "CBC News",
-     "Eight people died after a three-storey building in Brooklyn collapsed at the edge of a construction site, New York City's mayor said Thursday, as torrential rain hampered rescue efforts.",
-     [
-      5
-     ]
-    ]
-   ],
-   "src": [
-    [
-     "ABC News",
-     "What we know about victims of deadly Brooklyn building collapse",
-     "https://abcnews.com/US/victims-deadly-brooklyn-building-collapse/story?id=138098954"
-    ],
-    [
-     "BBC News",
-     "What we know about Brooklyn building collapse that killed eight people",
-     "https://www.bbc.co.uk/news/articles/cm20v66jq611o?at_medium=RSS&at_campaign=rss"
-    ],
-    [
-     "CBS News",
-     "Crews begin excavating site of building collapse in Brooklyn",
-     "https://www.cbsnews.com/news/building-collapse-nyc-brooklyn-flatbush-rescue-operation/"
-    ],
-    [
-     "NBC News",
-     "First video of Brooklyn building collapse",
-     "https://www.nbcnews.com/nightly-news/video/first-video-of-brooklyn-building-collapse-273385029565"
-    ],
-    [
-     "CBC News",
-     "Death toll climbs to 8 in Brooklyn building collapse as fire department ends rescue operation",
-     "https://www.cbc.ca/news/world/new-york-fire-brooklyn-building-collapse-9.7418579"
-    ],
-    [
-     "Toronto Star",
-     "Witnesses who watched a Brooklyn building come crashing down felt helpless amid the chaos",
-     "https://www.thestar.com/news/world/united-states/witnesses-who-watched-a-brooklyn-building-come-crashing-down-felt-helpless-amid-the-chaos/article_7339ee7c-e7e6-5b31-af6e-e6865e0fd2e0.html"
-    ]
-   ],
-   "lead": 5
   }
  ],
  "geo": {
@@ -6258,6 +6265,8 @@
  ],
  "noembed": [
   "J3FV4iY8p5w",
+  "L6qtnHZxwEw",
+  "NuEr0Q_AS6U",
   "c9v26lW7-j4",
   "ldElU-Q5Qyo",
   "nfy6JJILPJI",
