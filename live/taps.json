@@ -1,43 +1,21 @@
 {
- "checked": "2026-11-14T11:59:44.583142+00:00",
- "labels": 209,
+ "checked": "2026-11-14T13:19:18.627289+00:00",
+ "labels": 260,
  "problems": [
   {
-   "label": "CBC News",
-   "opens": "https://www.cp24.com/local/peel/2026/11/14/police-investigating-fatal-stabbing-inside-mississauga-residence/",
+   "label": "BNN Bloomberg",
+   "opens": "https://toronto.citynews.ca/2026/11/14/man-dead-in-early-morning-stabbing-in-mississauga/",
    "section": "developed",
    "link": false,
-   "width": 390
-  },
-  {
-   "label": "BBC News",
-   "opens": "https://www.cp24.com/local/peel/2026/11/14/police-investigating-fatal-stabbing-inside-mississauga-residence/",
-   "section": "developed",
-   "link": false,
-   "width": 390
+   "width": 1280
   }
  ],
  "guard": {
   "fixed": [
    {
-    "label": "CP24 ↗",
-    "was": "(card link) thestar.com",
-    "now": "https://www.cp24.com/local/2026/11/13/email-access-returns-to-toronto-hospitals-public-services-after-microsoft-outage/"
-   },
-   {
-    "label": "Daily Hive ↗",
-    "was": "(card link) thestar.com",
-    "now": "https://dailyhive.com/canada/canada-feeling-impact-microsoft-outage"
-   },
-   {
-    "label": "CTV News ↗",
-    "was": "(card link) thestar.com",
-    "now": "https://www.ctvnews.ca/ottawa/article/microsoft-outage-impacting-ottawa-city-hall-universities/"
-   },
-   {
-    "label": "CBS News",
-    "was": "(card link) cbsnews.com",
-    "now": "https://www.cbsnews.com/news/trump-putin-xi-jinping-meeting-china-us-russia-talks/"
+    "label": "Global News ↗",
+    "was": "(card link) cp24.com",
+    "now": "https://globalnews.ca/news/12145277/toronto-orthodox-priest-criticized-for-accepting-medal-from-putin/"
    },
    {
     "label": "NBC News",
@@ -45,9 +23,9 @@
     "now": "https://www.nbcnews.com/politics/2026-election/jonathan-kreiss-tomkins-democrat-wins-alaska-governor-race-rcna606558"
    },
    {
-    "label": "Politico",
-    "was": "(card link) politico.com",
-    "now": "https://www.politico.com/news/2026/11/14/jonathan-kreiss-tomkins-wins-alaska-governor-01166573"
+    "label": "The Hill",
+    "was": "(card link) thehill.com",
+    "now": "https://thehill.com/homenews/campaign/6220605-peltola-leads-alaska-senate/"
    }
   ],
   "disabled": [],
