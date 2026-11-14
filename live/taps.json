@@ -1,10 +1,17 @@
 {
- "checked": "2026-11-14T11:04:21.852306+00:00",
- "labels": 203,
+ "checked": "2026-11-14T11:59:44.583142+00:00",
+ "labels": 209,
  "problems": [
   {
+   "label": "CBC News",
+   "opens": "https://www.cp24.com/local/peel/2026/11/14/police-investigating-fatal-stabbing-inside-mississauga-residence/",
+   "section": "developed",
+   "link": false,
+   "width": 390
+  },
+  {
    "label": "BBC News",
-   "opens": "https://www.cbc.ca/news/canada/toronto/ontario-ad-spending-freedom-of-information-9.7421602",
+   "opens": "https://www.cp24.com/local/peel/2026/11/14/police-investigating-fatal-stabbing-inside-mississauga-residence/",
    "section": "developed",
    "link": false,
    "width": 390
@@ -13,19 +20,29 @@
  "guard": {
   "fixed": [
    {
+    "label": "CP24 ↗",
+    "was": "(card link) thestar.com",
+    "now": "https://www.cp24.com/local/2026/11/13/email-access-returns-to-toronto-hospitals-public-services-after-microsoft-outage/"
+   },
+   {
     "label": "Daily Hive ↗",
-    "was": "(card link) cp24.com",
+    "was": "(card link) thestar.com",
     "now": "https://dailyhive.com/canada/canada-feeling-impact-microsoft-outage"
+   },
+   {
+    "label": "CTV News ↗",
+    "was": "(card link) thestar.com",
+    "now": "https://www.ctvnews.ca/ottawa/article/microsoft-outage-impacting-ottawa-city-hall-universities/"
+   },
+   {
+    "label": "CBS News",
+    "was": "(card link) cbsnews.com",
+    "now": "https://www.cbsnews.com/news/trump-putin-xi-jinping-meeting-china-us-russia-talks/"
    },
    {
     "label": "NBC News",
     "was": "(card link) nbcnews.com",
     "now": "https://www.nbcnews.com/politics/2026-election/jonathan-kreiss-tomkins-democrat-wins-alaska-governor-race-rcna606558"
-   },
-   {
-    "label": "NPR",
-    "was": "(card link) npr.org",
-    "now": "https://www.npr.org/2026/11/14/nx-s1-6040299/hegseth-impeachment-democrats-house-test"
    },
    {
     "label": "Politico",
