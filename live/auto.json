@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-14T11:47:31.971407+00:00",
- "checkedLabel": "Sat 6:47 a.m.",
+ "checked": "2026-11-14T11:57:31.774379+00:00",
+ "checkedLabel": "Sat 6:57 a.m.",
  "stories": [
   {
    "key": "top",
@@ -31,13 +31,22 @@
  ],
  "wire": [
   [
-   "Sat 6:41 a.m.",
+   "Sat 6:52 a.m.",
+   "Latest",
+   "FAA ground stop live updates: More than 12,500 flights canceled Friday and Saturday",
+   "ABC News",
+   "https://abcnews.com/US/live-updates/faa-ground-stop-live-updates-hundreds-flights-canceled/?id=138125140",
+   "2026-11-14T11:52:53+00:00",
+   1
+  ],
+  [
+   "Sat 6:43 a.m.",
    "World",
-   "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
-   "BBC News",
-   "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=RSS&at_campaign=rss",
-   "2026-11-14T11:41:20+00:00",
-   3
+   "Three killed in Russia as Ukraine claims US floated NATO membership option",
+   "Al Jazeera",
+   "https://www.aljazeera.com/news/2026/11/14/three-killed-in-russia-as-ukraine-claims-us-floated-nato-membership-option?traffic_source=rss",
+   "2026-11-14T11:43:06+00:00",
+   4
   ],
   [
    "Sat 6:30 a.m.",
@@ -55,7 +64,7 @@
    "CTV News",
    "https://www.ctvnews.ca/toronto/local/peel/article/police-investigating-fatal-stabbing-inside-mississauga-residence/",
    "2026-11-14T11:24:35+00:00",
-   2
+   3
   ],
   [
    "Sat 6:22 a.m.",
@@ -64,14 +73,14 @@
    "Toronto Star",
    "https://www.thestar.com/news/world/europe/zelenskyy-says-a-new-european-security-framework-floated-by-us-could-benefit-putin/article_885b2081-6dfa-58a8-9ac9-dc810408fa24.html",
    "2026-11-14T11:22:19+00:00",
-   2
+   4
   ],
   [
    "Sat 6:12 a.m.",
    "Canada",
-   "‘I can’t get to work’: Toronto residents speak out about shrinking accessible taxi fleet",
+   "‘I can’t get to work’: Toronto’s accessible taxi fleet is shrinking and riders are speaking out",
    "CTV News",
-   "https://www.ctvnews.ca/toronto/article/i-cant-get-to-work-toronto-residents-speak-out-about-shrinking-accessible-taxi-fleet/",
+   "https://www.ctvnews.ca/toronto/article/i-cant-get-to-work-torontos-accessible-taxi-fleet-is-shrinking-and-riders-are-speaking-out/",
    "2026-11-14T11:12:02+00:00",
    2
   ],
@@ -154,15 +163,6 @@
    "The Guardian",
    "https://www.theguardian.com/environment/2026/nov/14/greenpeace-boulders-norfolk-vanguard-windfarms",
    "2026-11-14T11:00:43+00:00",
-   1
-  ],
-  [
-   "Sat 6:00 a.m.",
-   "World",
-   "Ukraine, Russia race to build military satellite networks as war rages on",
-   "Al Jazeera",
-   "https://www.aljazeera.com/news/2026/11/14/ukraine-russia-race-to-build-military-satellite-networks-as-war-rages-on?traffic_source=rss",
-   "2026-11-14T11:00:39+00:00",
    1
   ],
   [
@@ -285,7 +285,7 @@
  ],
  "leads": [
   {
-   "score": 21,
+   "score": 23,
    "title": "Liberals Remain Dominant as Canadians Focus on United States",
    "url": "https://researchco.ca/2026/11/12/cdnpoli-nov2026/",
    "outlets": 22,
@@ -306,30 +306,32 @@
    "theme": ""
   },
   {
+   "score": 20,
+   "title": "U.S. flights cleared to take off again after ground stop order caused thousands of delays and cancellations",
+   "url": "https://www.cbc.ca/news/world/livestory/faa-grounds-all-flights-united-states-air-traffic-control-live-updates-9.7421404",
+   "outlets": 30,
+   "why": [
+    "CBC News front #5"
+   ],
+   "theme": "FAA ground stop"
+  },
+  {
    "score": 19,
    "title": "Trump’s choice of Stephen Miller as Chief of Staff is making the Democrats’ great week, even better.",
    "url": "https://bruce728.substack.com/p/trumps-choice-of-stephen-miller-as",
-   "outlets": 25,
+   "outlets": 26,
    "why": [
     "National Newswatch #15"
    ],
    "theme": ""
   },
   {
-   "score": 17,
+   "score": 16,
    "title": "Watch: Cruise ship seen sinking after collision with cargo ship in New Orleans",
    "url": "https://www.bbc.co.uk/news/videos/ck4gn4y77m40o?at_medium=RSS&at_campaign=rss",
-   "outlets": 16,
+   "outlets": 14,
    "why": [],
    "theme": ""
-  },
-  {
-   "score": 15,
-   "title": "U.S. flights cleared to take off again after ground stop order caused thousands of delays and cancellations",
-   "url": "https://www.cbc.ca/news/world/livestory/faa-grounds-all-flights-united-states-air-traffic-control-live-updates-9.7421404",
-   "outlets": 30,
-   "why": [],
-   "theme": "FAA ground stop"
   },
   {
    "score": 14,
@@ -353,16 +355,6 @@
    "theme": ""
   },
   {
-   "score": 12,
-   "title": "Canadian judge decries U.S. sanctions of International Criminal Court as 'attack in favour of impunity'",
-   "url": "https://www.cbc.ca/news/world/us-icc-sanctions-canadian-judge-kimberly-prost-9.7415128",
-   "outlets": 7,
-   "why": [
-    "CBC News front #6"
-   ],
-   "theme": ""
-  },
-  {
    "score": 10,
    "title": "Democrats want to kill some of Trump's tariffs — but that might not end the trade war",
    "url": "https://www.narcity.com/democrats-target-trumps-tariffs-on-canada",
@@ -377,9 +369,30 @@
    "outlets": 8,
    "why": [],
    "theme": "Canada and the U.S."
+  },
+  {
+   "score": 9,
+   "title": "Mark Carney invokes conflict screen after company run by friend got $2.3B contract",
+   "url": "https://www.thestar.com/politics/federal/mark-carney-invokes-conflict-screen-after-company-run-by-friend-got-2-3b-contract/article_bd6d0c13-b9d0-4dea-8514-56c4b5682e29.html",
+   "outlets": 4,
+   "why": [
+    "National Newswatch #2"
+   ],
+   "theme": ""
   }
  ],
  "canada": [
+  {
+   "t": "Sat 6:54 a.m.",
+   "iso": "2026-11-14T11:54:18+00:00",
+   "region": "Ontario",
+   "title": "Man dead in early morning stabbing in Mississauga",
+   "summary": "One man is dead following an early morning stabbing in Mississauga.",
+   "outlet": "CityNews",
+   "n": 1,
+   "url": "https://toronto.citynews.ca/2026/11/14/man-dead-in-early-morning-stabbing-in-mississauga/",
+   "img": "https://toronto.citynews.ca/wp-content/blogs.dir/sites/10/2026/11/14/Peel-police-cruiser-yellow-tape-CITY.jpg"
+  },
   {
    "t": "Sat 6:24 a.m.",
    "iso": "2026-11-14T11:24:35+00:00",
@@ -392,26 +405,26 @@
    "img": "https://www.cp24.com/resizer/v2/J6IWLQSHWRGBLKBIMFYIIYPX2Q.jpeg?smart=true&auth=6eb7c04278844cb6ad3628c987b7bd8062ded54c97fa812b943bb2795911a0ff&width=1200&height=630"
   },
   {
-   "t": "Sat 6:12 a.m.",
-   "iso": "2026-11-14T11:12:02+00:00",
-   "region": "Ontario",
-   "title": "‘I can’t get to work’: Toronto residents speak out about shrinking accessible taxi fleet",
-   "summary": "Some Toronto residents with disabilities say they are facing growing challenges finding reliable, wheelchair-accessible transportation, raising concerns about their ability to get to work, attend appointments and keep up with everyday commitments.",
-   "outlet": "CP24",
-   "n": 1,
-   "url": "https://www.cp24.com/local/toronto/2026/11/14/i-cant-get-to-work-toronto-residents-speak-out-about-shrinking-accessible-taxi-fleet/",
-   "img": "https://www.cp24.com/resizer/v2/WTMAD3EFVFDD7EFCGGIG7EEJQU.png?smart=true&auth=4da8c2b7530e7a3f524737fc7dd701562943253ff367d746efd90056aa0e7748&width=1200&height=630"
-  },
-  {
    "t": "Sat 6:00 a.m.",
    "iso": "2026-11-14T11:00:10+00:00",
    "region": "National",
    "title": "CFB Wainwright incident casts spotlight on reserve pay disparities: former bureaucrat",
-   "summary": "OTTAWA - A former director general for the Canadian military's reserves and cadets says the tragic incident at Canadian Forces Base Wainwright casts a spotlight on disparities in pay and benefits for reservists.",
-   "outlet": "Winnipeg Free Press",
+   "summary": "OTTAWA — A former director general for the Canadian military's reserves and cadets says the tragic incident at Canadian Forces Base Wainwright casts a spotlight on disparities in pay and benefits for reservists.",
+   "outlet": "CityNews + Winnipeg Free Press",
    "n": 1,
-   "url": "https://www.winnipegfreepress.com/canada/2026/11/14/cfb-wainwright-incident-casts-spotlight-on-reserve-pay-disparities-former-bureaucrat",
-   "img": ""
+   "url": "https://toronto.citynews.ca/2026/11/14/cfb-wainwright-incident-casts-spotlight-on-reserve-pay-disparities-former-bureaucrat/",
+   "img": "https://toronto.citynews.ca/wp-content/blogs.dir/sites/10/2026/11/562b01e9fcd194be9adf68cbf60e7ba4de84b5d176ceca1853565a27eec8a18d.jpg"
+  },
+  {
+   "t": "Sat 6:00 a.m.",
+   "iso": "2026-11-14T11:00:09+00:00",
+   "region": "National",
+   "title": "Former environment ministers accuse Dabrusin of lying about meeting climate targets",
+   "summary": "OTTAWA — Environment Minister Julie Dabrusin is being accused of lying by two of her predecessors for saying Canada is still committed to its Paris targets.",
+   "outlet": "CityNews + Winnipeg Free Press",
+   "n": 1,
+   "url": "https://toronto.citynews.ca/2026/11/14/former-environment-ministers-accuse-dabrusin-of-lying-about-meeting-climate-targets/",
+   "img": "https://toronto.citynews.ca/wp-content/blogs.dir/sites/10/2026/11/2b900b4eb97b5a04b78f968a01d009cc363b0e350b46cdc9382f487e74954833.jpg"
   },
   {
    "t": "Sat 6:00 a.m.",
@@ -567,13 +580,13 @@
      "nationwide",
      "flights",
      "ground",
-     "lifts",
      "chaos",
+     "lifts",
      "faa"
     ],
-    "score": 15,
+    "score": 20,
     "outlets": 18,
-    "carriers": 28,
+    "carriers": 29,
     "tag": "Breaking",
     "title": "Thousands of flights canceled as airlines work to dig out from nationwide ground stop",
     "url": "https://www.thestar.com/news/world/united-states/thousands-of-flights-canceled-as-airlines-work-to-dig-out-from-nationwide-ground-stop/article_5f3e6d14-103f-585e-aaaa-b61a91192474.html",
@@ -588,7 +601,7 @@
      "title": "White House blames ‘new technology’ for overloading systems that led to FAA ground stop",
      "iso": "2026-11-13T21:20:33+00:00"
     },
-    "newest": "2026-11-14T08:31:04.752000+00:00",
+    "newest": "2026-11-14T11:52:53+00:00",
     "photo": {
      "src": "live/img/auto-e0c02640-15285f2403.jpg",
      "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/1/32/1322f17d-a68a-5211-a41d-cb8e4a8476b1/6af80ba3320aa.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize",
@@ -611,32 +624,48 @@
       "url": "https://www.thestar.com/news/world/united-states/thousands-of-flights-canceled-as-airlines-work-to-dig-out-from-nationwide-ground-stop/article_5f3e6d14-103f-585e-aaaa-b61a91192474.html"
      },
      {
+      "src": "live/img/auto-e0c02640-adfbefbcf8.jpg",
+      "orig": "https://i.abcnewsfe.com/a/3d1e9ecb-81c2-4e37-a98b-a3712f8035eb/plane-schedule-rt-jt-261113_1794609304473_hpMain_16x9.jpg?w=1600",
+      "caption": "From: FAA ground stop live updates: More than 12,500 flights canceled Friday and Saturday. — via ABC News",
+      "alt": "FAA ground stop live updates: More than 12,500 flights canceled Friday and Saturday",
+      "outlet": "ABC News",
+      "url": "https://abcnews.com/US/live-updates/faa-ground-stop-live-updates-hundreds-flights-canceled/?id=138125140"
+     },
+     {
+      "src": "live/img/auto-e0c02640-8ff531bb19.jpg",
+      "orig": "https://www.middleeasteye.net/sites/default/files/images-story/A%20passenger%20walks%20past%20a%20plane%20at%20Ronald%20Reagan%20Washington%20National%20Airport%20amid%20a%20nationwide%20flight%20ground%20stop%20following%20a%20communications%20outage%2C%20Washington%2C%20DC%2C%2013%20November%202026%20%28Brendan%20Smialowski%20AFP%29.jpg",
+      "caption": "From: US air travel thrown into chaos as nationwide flights grounded over 'radar instability'. — via Middle East Eye",
+      "alt": "US air travel thrown into chaos as nationwide flights grounded over 'radar instability'",
+      "outlet": "Middle East Eye",
+      "url": "https://www.middleeasteye.net/news/us-air-travel-thrown-chaos-nationwide-flights-grounded-over-radar-instability"
+     },
+     {
       "src": "live/img/auto-e0c02640-b184e2ee6f.jpg",
       "orig": "https://i.cbc.ca/ais/80c77054-0cc3-42cc-9397-fcd22d821606,1794626178616/full/max/0/default.jpg?im=Crop%2Crect%3D%28269%2C771%2C7619%2C4285%29%3BResize%3D620",
       "caption": "Travellers wait at a United Airlines terminal at Los Angeles International Airport on Friday. (Ethan Swope/The Associated Press) — via CBC News",
       "alt": "Travellers wait at a United Airlines terminal at Los Angeles International Airport on Friday.",
       "outlet": "CBC News",
       "url": "https://www.cbc.ca/news/world/livestory/faa-grounds-all-flights-united-states-air-traffic-control-live-updates-9.7421404"
-     },
-     {
-      "src": "live/img/auto-e0c02640-33a1ad0040.jpg",
-      "orig": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/14ef/live/f4aae840-dfd7-11f1-b441-2b33b063138f.jpg",
-      "caption": "Airplane passengers during the ground stop at Ronald Reagan Washington National Airport on 13 November 2026. According to aviation officials, it is only the third nationwide ground stop in US history, following the 11 September 2001 terrorist attacks and a 2023 FAA system outage. Federal Aviation Administration issues nationwide ground stop in the US, Arlington, Usa - 13 Nov 2026. — via BBC News",
-      "alt": "Airplane passengers during the ground stop at Ronald Reagan Washington National Airport on 13 November 2026. According to aviation officials, it is only the thi",
-      "outlet": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=RSS&at_campaign=rss"
-     },
-     {
-      "src": "live/img/auto-e0c02640-c22d488a4a.jpg",
-      "orig": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/11/13/46e7b0c4-c34a-47b7-a708-6496988fc4a1/thumbnail/1200x630/cbde8a003c2be845bdd0d43070b0e4a5/gettyimages-2304485739.jpg",
-      "caption": "From: FAA lifts nationwide ground stop that disrupted thousands of flights. — via CBS News",
-      "alt": "FAA lifts nationwide ground stop that disrupted thousands of flights",
-      "outlet": "CBS News",
-      "url": "https://www.cbsnews.com/news/faa-issues-nationwide-ground-stop/"
      }
     ],
     "independent": 18,
     "reports": [
+     {
+      "t": "Sat 6:52 a.m.",
+      "iso": "2026-11-14T11:52:53+00:00",
+      "outlet": "ABC News",
+      "title": "FAA ground stop live updates: More than 12,500 flights canceled Friday and Saturday",
+      "url": "https://abcnews.com/US/live-updates/faa-ground-stop-live-updates-hundreds-flights-canceled/?id=138125140",
+      "desc": "The DHS secretary said there were no indications of a cyberattack."
+     },
+     {
+      "t": "Sat 6:27 a.m.",
+      "iso": "2026-11-14T11:27:49+00:00",
+      "outlet": "Middle East Eye",
+      "title": "US air travel thrown into chaos as nationwide flights grounded over 'radar instability'",
+      "url": "https://www.middleeasteye.net/news/us-air-travel-thrown-chaos-nationwide-flights-grounded-over-radar-instability",
+      "desc": "The FAA lifted the ground stop after more than four hours, but officials warned that flight disruptions would continue as airlines worked to restore operations"
+     },
      {
       "t": "Sat 3:31 a.m.",
       "iso": "2026-11-14T08:31:04.752000+00:00",
@@ -659,7 +688,7 @@
       "outlet": "VOCM",
       "title": "Thousands of Flights Canceled After Nationwide FAA Shutdown Disrupts U.S. Air Travel",
       "url": "https://vocm.com/2026/11/14/thousands-of-flights-canceled-after-nationwide-faa-shutdown-disrupts-u-s-air-travel/",
-      "desc": ""
+      "desc": "Thousands of travelers across the United States faced cancellations and delays Saturday as airlines struggled to recover from the longest nationwide f..."
      },
      {
       "t": "Sat 2:15 a.m.",
@@ -675,7 +704,7 @@
       "outlet": "Euronews",
       "title": "Passengers continue to face delays and cancellations after US lifts nationwide ground stop",
       "url": "https://www.euronews.com/2026/11/14/passengers-continue-to-face-delays-and-cancellations-after-us-lifts-nationwide-ground-stop",
-      "desc": ""
+      "desc": "US Transport Secretary Sean Duffy blamed the stoppage on what he called an \"incredibly old\" air traffic control system and warned that it would take time for normal operations to resume."
      },
      {
       "t": "Sat 12:55 a.m.",
@@ -699,7 +728,7 @@
       "outlet": "CBS News",
       "title": "FAA lifts nationwide ground stop that disrupted thousands of flights",
       "url": "https://www.cbsnews.com/news/faa-issues-nationwide-ground-stop/",
-      "desc": "The rare nationwide ground stop lasted about five hours Friday. Sources told CBS News an update to the network connecting the air traffic control system caused a reboot, crash and outage."
+      "desc": ""
      },
      {
       "t": "Fri 10:23 p.m.",
@@ -726,31 +755,49 @@
       "desc": ""
      },
      {
-      "t": "Fri 9:58 p.m.",
-      "iso": "2026-11-14T02:58:44+00:00",
-      "outlet": "ABC News",
-      "title": "FAA ground stop live updates: Duffy blames 'overloaded' routers after stop lifted",
-      "url": "https://abcnews.com/US/live-updates/faa-ground-stop-live-updates-hundreds-flights-canceled/?id=138125140",
-      "desc": ""
-     },
-     {
       "t": "Fri 8:52 p.m.",
       "iso": "2026-11-14T01:52:22+00:00",
       "outlet": "NBC News",
       "title": "Duffy details timeline of ground stop, demands more FAA funding",
       "url": "https://www.nbcnews.com/video/duffy-details-timeline-of-ground-stop-demands-more-faa-funding-273494085679",
       "desc": ""
-     },
-     {
-      "t": "Fri 8:52 p.m.",
-      "iso": "2026-11-14T01:52:16+00:00",
-      "outlet": "CityNews Calgary",
-      "title": "FAA ground stop briefly halts U.S.-bound flights at Calgary airport",
-      "url": "https://calgary.citynews.ca/2026/11/13/calgary-airport-faa-ground-stop/",
-      "desc": ""
      }
     ],
     "sources": [
+     {
+      "t": "Sat 6:52 a.m.",
+      "primary": false,
+      "outlet": "ABC News",
+      "title": "FAA ground stop live updates: More than 12,500 flights canceled Friday and Saturday",
+      "url": "https://abcnews.com/US/live-updates/faa-ground-stop-live-updates-hundreds-flights-canceled/?id=138125140",
+      "desc": "The DHS secretary said there were no indications of a cyberattack.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "ABC News",
+        "src": "ABC News",
+        "byline": "[{\"name\":\"Ivan Pereira\",,\"@type\":\"Person\"},{\"name\":\"Ayesha Ali\",,\"@type\":\"Person\"},{\"name\":\"Clara McMichael\",,\"@type\":\"P"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Sat 6:27 a.m.",
+      "primary": false,
+      "outlet": "Middle East Eye",
+      "title": "US air travel thrown into chaos as nationwide flights grounded over 'radar instability'",
+      "url": "https://www.middleeasteye.net/news/us-air-travel-thrown-chaos-nationwide-flights-grounded-over-radar-instability",
+      "desc": "The FAA lifted the ground stop after more than four hours, but officials warned that flight disruptions would continue as airlines worked to restore operations",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Middle East Eye",
+        "src": "Middle East Eye",
+        "byline": "{ \"@type\": \"Person\", \"@id\": \"Middle East Eye\", \"name\": \"MEE staff\", } \"MEE staff\" https://www.facebook.com/middleeasteye"
+       }
+      ],
+      "copies": []
+     },
      {
       "t": "Sat 3:31 a.m.",
       "primary": false,
@@ -791,30 +838,13 @@
       "outlet": "VOCM",
       "title": "Thousands of Flights Canceled After Nationwide FAA Shutdown Disrupts U.S. Air Travel",
       "url": "https://vocm.com/2026/11/14/thousands-of-flights-canceled-after-nationwide-faa-shutdown-disrupts-u-s-air-travel/",
-      "desc": "",
+      "desc": "Thousands of travelers across the United States faced cancellations and delays Saturday as airlines struggled to recover from the longest nationwide f...",
       "wire": "",
       "by": [
        {
         "outlet": "VOCM",
         "src": "VOCM",
-        "byline": ""
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Sat 2:15 a.m.",
-      "primary": false,
-      "outlet": "Toronto Star",
-      "title": "Thousands of flights canceled as airlines work to dig out from nationwide ground stop",
-      "url": "https://www.thestar.com/news/world/united-states/thousands-of-flights-canceled-as-airlines-work-to-dig-out-from-nationwide-ground-stop/article_5f3e6d14-103f-585e-aaaa-b61a91192474.html",
-      "desc": "WASHINGTON (AP) — More than 2,000 flights were canceled Saturday as airlines across the U.S. worked to dig out from the longest nationwide ground stop in 25 years, which stranded",
-      "wire": "The Associated Press",
-      "by": [
-       {
-        "outlet": "Toronto Star",
-        "src": "The Associated Press",
-        "byline": "issert, Josh Funk And Hallie Golden The Associated Press\" \"Will Weissert, Jo"
+        "byline": "[{\"@type\":\"Person\",\"name\":\"Mariana A\"}] \"Mariana A\" Mariana A "
        }
       ],
       "copies": []
@@ -825,16 +855,26 @@
       "outlet": "Euronews",
       "title": "Passengers continue to face delays and cancellations after US lifts nationwide ground stop",
       "url": "https://www.euronews.com/2026/11/14/passengers-continue-to-face-delays-and-cancellations-after-us-lifts-nationwide-ground-stop",
-      "desc": "",
-      "wire": "",
+      "desc": "US Transport Secretary Sean Duffy blamed the stoppage on what he called an \"incredibly old\" air traffic control system and warned that it would take time for normal operations to resume.",
+      "wire": "The Associated Press",
       "by": [
        {
         "outlet": "Euronews",
-        "src": "Euronews",
-        "byline": ""
+        "src": "The Associated Press",
+        "byline": "] Nathan Rennolds Copyright 2026 The Associated Press. All rights reserve"
+       },
+       {
+        "outlet": "Toronto Star",
+        "src": "The Associated Press",
+        "byline": "issert, Josh Funk And Hallie Golden The Associated Press\" \"Will Weissert, Jo"
        }
       ],
-      "copies": []
+      "copies": [
+       {
+        "outlet": "Toronto Star",
+        "url": "https://www.thestar.com/news/world/united-states/thousands-of-flights-canceled-as-airlines-work-to-dig-out-from-nationwide-ground-stop/article_5f3e6d14-103f-585e-aaaa-b61a91192474.html"
+       }
+      ]
      },
      {
       "t": "Sat 12:55 a.m.",
@@ -924,23 +964,6 @@
       ]
      },
      {
-      "t": "Fri 9:58 p.m.",
-      "primary": false,
-      "outlet": "ABC News",
-      "title": "FAA ground stop live updates: Duffy blames 'overloaded' routers after stop lifted",
-      "url": "https://abcnews.com/US/live-updates/faa-ground-stop-live-updates-hundreds-flights-canceled/?id=138125140",
-      "desc": "The DHS secretary said there were no indications of a cyberattack.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "ABC News",
-        "src": "ABC News",
-        "byline": "[{\"name\":\"Ivan Pereira\",,\"@type\":\"Person\"},{\"name\":\"Ayesha Ali\",,\"@type\":\"Person\"},{\"name\":\"Clara McMichael\",,\"@type\":\"P"
-       }
-      ],
-      "copies": []
-     },
-     {
       "t": "Fri 8:52 p.m.",
       "primary": false,
       "outlet": "NBC News",
@@ -956,23 +979,6 @@
        }
       ],
       "copies": []
-     },
-     {
-      "t": "Fri 8:52 p.m.",
-      "primary": false,
-      "outlet": "CityNews Calgary",
-      "title": "FAA ground stop briefly halts U.S.-bound flights at Calgary airport",
-      "url": "https://calgary.citynews.ca/2026/11/13/calgary-airport-faa-ground-stop/",
-      "desc": "Travellers heading to the United States from Calgary are facing delays after a ground stop ordered by the U.S. Federal Aviation Administration temporarily halted departures. In a statement, YYC Calgary International Airport said all U.S.-bound departures from Calgary have been cancelled Friday because of the FAA’s nationwide ground stop. The airport says delays are also […]",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "CityNews Calgary",
-        "src": "Rogers",
-        "byline": "[{\"@id\":\"https://calgary.citynews.ca/#/schema/person/e4cb531439298e29d0d08c669ac3e1f0\"}] \"michaelranger\" Michael Ranger "
-       }
-      ],
-      "copies": []
      }
     ],
     "replaces_top": false,
@@ -980,18 +986,19 @@
     "theme": "FAA ground stop",
     "ca_angle": {
      "specific": 2,
-     "official": 2
+     "official": 3
     },
     "canada": "tie",
     "canus": false,
     "incoherent": false,
     "popular": 5,
     "us_election": false,
-    "fronts": 8,
-    "fronts_ca": 4,
+    "fronts": 9,
+    "fronts_ca": 5,
     "fronts_who": [
      "CTV News",
      "Toronto Star",
+     "National Post",
      "The Globe and Mail",
      "CP24",
      "CNN",
@@ -1000,8 +1007,8 @@
      "ABC News"
     ],
     "judgment": "national",
-    "judgment_why": "National: leading 8 front pages (CTV News, Toronto Star, The Globe and Mail, CP24, CNN, NBC News).",
-    "weight": 64,
+    "judgment_why": "National: leading 9 front pages (CTV News, Toronto Star, National Post, The Globe and Mail, CP24, CNN).",
+    "weight": 75,
     "live": {
      "state": "now",
      "net": "Bloomberg",
@@ -1062,17 +1069,18 @@
     "url": "https://www.thestar.com/news/world/united-states/thousands-of-flights-canceled-as-airlines-work-to-dig-out-from-nationwide-ground-stop/article_5f3e6d14-103f-585e-aaaa-b61a91192474.html",
     "rank": 1,
     "live": "Fallout from FAA Ground Stop; Trump to Meet Putin, Xi | Bloomberg This Weekend: Nov 14th, 2026",
-    "weight": 64,
-    "score": 15,
+    "weight": 75,
+    "score": 20,
     "independent": 18,
     "most_read": 5,
     "canada": "tie",
     "theme": "FAA ground stop",
     "top": true,
-    "fronts": 8,
+    "fronts": 9,
     "fronts_who": [
      "CTV News",
      "Toronto Star",
+     "National Post",
      "The Globe and Mail",
      "CP24",
      "CNN",
@@ -1081,9 +1089,9 @@
      "ABC News"
     ],
     "rule": "Leading other newsrooms' front pages (Canadian ones among them): the story everyone is leading with",
-    "carriers": 28,
+    "carriers": 29,
     "judgment": "national",
-    "why_judged": "National: leading 8 front pages (CTV News, Toronto Star, The Globe and Mail, CP24, CNN, NBC News)."
+    "why_judged": "National: leading 9 front pages (CTV News, Toronto Star, National Post, The Globe and Mail, CP24, CNN)."
    },
    {
     "title": "Microsoft says services fully restored after hourslong global outage",
@@ -1118,43 +1126,17 @@
     "canada": "tie",
     "theme": "",
     "top": false,
-    "fronts": 2,
-    "fronts_who": [
-     "ABC News",
-     "BBC News"
-    ],
+    "fronts": 0,
+    "fronts_who": [],
     "rule": "Big international story, on every front page",
     "carriers": 20,
     "judgment": "national",
     "why_judged": "National: affects some people; carried across the country (5 cities)."
    },
    {
-    "title": "'Miracle on the Mississippi': All aboard river cruise boat survive crash with tanker in New Orleans",
-    "url": "https://www.cbc.ca/news/world/tanker-hits-cruise-boat-new-orleans-mississippi-river-9.7421309",
-    "rank": 4,
-    "live": "",
-    "weight": 36,
-    "score": 17,
-    "independent": 7,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 3,
-    "fronts_who": [
-     "Global News",
-     "CBS News",
-     "ABC News"
-    ],
-    "rule": "Big international story, on every front page",
-    "carriers": 16,
-    "judgment": "regional",
-    "why_judged": "Regional: a single incident touching a few people; carried across the country (6 cities)."
-   },
-   {
     "title": "Progressive challenge to Democratic Senate chief Schumer opens fight for bolder agenda",
     "url": "https://www.japantimes.co.jp/news/2026/11/14/world/politics/progressive-challenge-senate-schumer/",
-    "rank": 5,
+    "rank": 4,
     "live": "",
     "weight": 35.0,
     "score": 8,
@@ -1173,10 +1155,10 @@
    {
     "title": "The Nvidia scandal is heightening America's AI rivalry with China ahead of Trump's visit",
     "url": "https://www.thestar.com/news/world/united-states/the-nvidia-scandal-is-heightening-america-s-ai-rivalry-with-china-ahead-of-trump-s-visit/article_7c62da48-12ea-5ec8-b387-cbcf2307f8f5.html",
-    "rank": 6,
+    "rank": 5,
     "live": "",
-    "weight": 34,
-    "score": 21,
+    "weight": 36,
+    "score": 23,
     "independent": 3,
     "most_read": 0,
     "canada": "tie",
@@ -1190,6 +1172,29 @@
     "carriers": 14,
     "judgment": "national",
     "why_judged": "National: affects some people; carried across the country (8 cities)."
+   },
+   {
+    "title": "'Miracle on the Mississippi': All aboard river cruise boat survive crash with tanker in New Orleans",
+    "url": "https://www.cbc.ca/news/world/tanker-hits-cruise-boat-new-orleans-mississippi-river-9.7421309",
+    "rank": 6,
+    "live": "",
+    "weight": 34,
+    "score": 16,
+    "independent": 6,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": false,
+    "fronts": 3,
+    "fronts_who": [
+     "Global News",
+     "CBS News",
+     "ABC News"
+    ],
+    "rule": "No Canadian tie",
+    "carriers": 14,
+    "judgment": "regional",
+    "why_judged": "Regional: a single incident touching a few people; carried across the country (5 cities)."
    },
    {
     "title": "Democrat flips Alaska governor's mansion after Trump-backed GOP infighting",
@@ -1224,11 +1229,6 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Canadian judge decries U.S. sanctions of International Criminal Court as 'attack in favour of impunity'",
-    "score": 12,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
     "title": "Democrats want to kill some of Trump's tariffs — but that might not end the trade war",
     "score": 10,
     "why": "not built: only 1 independent report(s) (3 sites)"
@@ -1254,6 +1254,11 @@
     "why": "not built: only 1 independent report(s) (7 sites)"
    },
    {
+    "title": "Lawyers unsure if extra funding can reduce massive caseload at Federal Court",
+    "score": 9,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
     "title": "Hope is finally back in America, and did the U.S. just leave Canadian Conservatives behind?",
     "score": 8,
     "why": "not built: only 1 independent report(s) (3 sites)"
@@ -1268,7 +1273,7 @@
   "top_n": 1,
   "more": [
    {
-    "key": "auto-6aa71a7f",
+    "key": "auto-63ff1e46",
     "words": [
      "microsoft",
      "services",
@@ -1288,28 +1293,28 @@
     "iso": "2026-11-14T09:12:46+00:00",
     "summary": "Microsoft said Saturday that services were fully restored after a massive outage that lasted for hours.",
     "first": {
-     "outlet": "Euronews",
-     "url": "https://www.euronews.com/2026/11/13/take-your-time-funniest-reactions-to-microsoft-global-outage",
-     "t": "Fri 6:49 a.m.",
-     "title": "'Take your time': Funniest reactions to Microsoft global outage",
-     "iso": "2026-11-13T11:49:18+00:00"
+     "outlet": "CBC News",
+     "url": "https://www.cbc.ca/news/world/livestory/microsoft-outage-outlook-teams-copilot-9.7420354?cmp=rss",
+     "t": "Fri 7:39 a.m.",
+     "title": "No timeline for when Microsoft's multi-day outage might be fully fixed, company says",
+     "iso": "2026-11-13T12:39:44+00:00"
     },
     "newest": "2026-11-14T11:07:10+00:00",
     "photo": {
-     "src": "live/img/auto-6aa71a7f-11654ea070.jpg",
+     "src": "live/img/auto-63ff1e46-11654ea070.jpg",
      "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/7/76/776fd4c1-ff9f-524b-ae71-ef889c9a4ef8/6af61037367c8.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize",
      "caption": "From: Microsoft says services fully restored after hourslong global outage. — via Toronto Star",
      "alt": "Microsoft says services fully restored after hourslong global outage",
      "outlet": "Toronto Star",
      "url": "https://www.thestar.com/news/world/microsoft-says-services-fully-restored-after-hourslong-global-outage/article_c94b210f-160d-579a-9193-9729d61e9c08.html",
-     "since": "2026-11-14T11:49:42.810871+00:00"
+     "since": "2026-11-14T11:59:22.001045+00:00"
     },
     "photo_seen": [
      "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/7/76/776fd4c1-ff9f-524b-ae71-ef889c9a4ef8/6af61037367c8.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
     ],
     "photos": [
      {
-      "src": "live/img/auto-6aa71a7f-11654ea070.jpg",
+      "src": "live/img/auto-63ff1e46-11654ea070.jpg",
       "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/7/76/776fd4c1-ff9f-524b-ae71-ef889c9a4ef8/6af61037367c8.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize",
       "caption": "From: Microsoft says services fully restored after hourslong global outage. — via Toronto Star",
       "alt": "Microsoft says services fully restored after hourslong global outage",
@@ -1317,7 +1322,7 @@
       "url": "https://www.thestar.com/news/world/microsoft-says-services-fully-restored-after-hourslong-global-outage/article_c94b210f-160d-579a-9193-9729d61e9c08.html"
      },
      {
-      "src": "live/img/auto-6aa71a7f-a934561da3.jpg",
+      "src": "live/img/auto-63ff1e46-a934561da3.jpg",
       "orig": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/5f18/live/9b3a5370-df98-11f1-a9ad-6774a3284d10.jpg",
       "caption": "A Network Time-out error message on login pages for Microsoft Outlook and Microsoft Teams on a laptop. — via BBC News",
       "alt": "A Network Time-out error message on login pages for Microsoft Outlook and Microsoft Teams on a laptop",
@@ -1325,7 +1330,7 @@
       "url": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o?at_medium=RSS&at_campaign=rss"
      },
      {
-      "src": "live/img/auto-6aa71a7f-7aa88fc342.jpg",
+      "src": "live/img/auto-63ff1e46-7aa88fc342.jpg",
       "orig": "https://globalnews.ca/wp-content/uploads/2026/11/CP177263648-e1794597597849.jpg?quality=65&strip=all&w=720&h=379&crop=1",
       "caption": "A computer screen shows the Microsoft support page in London, Friday, Nov. 13, 2026. — via Global News",
       "alt": "A computer screen shows the Microsoft support page in London, Friday, Nov. 13, 2026.",
@@ -1333,7 +1338,7 @@
       "url": "https://globalnews.ca/news/12149572/microsoft-outage-impact-canada/"
      },
      {
-      "src": "live/img/auto-6aa71a7f-7b4c61f8bd.jpg",
+      "src": "live/img/auto-63ff1e46-7b4c61f8bd.jpg",
       "orig": "https://images.euronews.com/articles/stories/09/99/14/81/1200x675_cmsv2_dbd77d80-92eb-5f4c-8074-609534c0981c-9991481.jpg",
       "caption": "Microsoft 365 global outage disrupts Portuguese government, health services and schools. — via Euronews",
       "alt": "Microsoft 365 global outage disrupts Portuguese government, health services and schools",
@@ -1349,7 +1354,7 @@
       "outlet": "The Guardian",
       "title": "Microsoft says services fully restored after global outage",
       "url": "https://www.theguardian.com/technology/2026/nov/14/microsoft-says-services-fully-restored-after-global-outage",
-      "desc": "Tech company says services now restored to all customers and regions hit by one of worst IT failures in years"
+      "desc": "Tech company says operations restored to all customers and regions affected by one of worst IT failures in years"
      },
      {
       "t": "Sat 4:12 a.m.",
@@ -1463,13 +1468,13 @@
       "outlet": "The Guardian",
       "title": "Microsoft says services fully restored after global outage",
       "url": "https://www.theguardian.com/technology/2026/nov/14/microsoft-says-services-fully-restored-after-global-outage",
-      "desc": "Tech company says services now restored to all customers and regions hit by one of worst IT failures in years",
+      "desc": "Tech company says operations restored to all customers and regions affected by one of worst IT failures in years",
       "wire": "",
       "by": [
        {
         "outlet": "The Guardian",
         "src": "The Guardian",
-        "byline": "own staff: reporter"
+        "byline": "[{\"@type\":\"Person\",\"name\":\"Donna Ferguson\",}] \"Donna Ferguson\" \"Donna Ferguson\" https://www.theguardian.com/profile/donn"
        }
       ],
       "copies": []
@@ -1486,7 +1491,7 @@
        {
         "outlet": "CTV News",
         "src": "The Canadian Press",
-        "byline": "ociated Press\" \"\" \"\" \"Jermaine Wilson\" \"The Canadian Press\" \"The Canadian Pres"
+        "byline": "ne Wilson\" \"Jack Hauen\" \"Avery Haines\" \"The Canadian Press\" \"Ben Miljure\" \"Cas"
        },
        {
         "outlet": "CP24",
@@ -1687,25 +1692,9 @@
     "weight": 44,
     "videos": [
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=6SHULSypliw",
-      "title": "Microsoft Outlook services restored as world struggles to get work done",
-      "img": "https://i.ytimg.com/vi/6SHULSypliw/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=buCYd2RCP60",
-      "title": "Microsoft Outage: Analyst warns we aren't out of the woods yet",
-      "img": "https://i.ytimg.com/vi/buCYd2RCP60/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
       "net": "CTV News",
       "url": "https://www.youtube.com/watch?v=TqCW2oBZtdw",
-      "title": "Microsoft outage ripples through hospitals, governments, cities",
+      "title": "Microsoft 365 outage impacts Outlook, Teams worldwide",
       "img": "https://i.ytimg.com/vi/TqCW2oBZtdw/hqdefault.jpg",
       "rec": false,
       "up": ""
@@ -1717,14 +1706,30 @@
       "img": "https://i.ytimg.com/vi/lt_Sn_5VwYc/hqdefault.jpg",
       "rec": false,
       "up": ""
+     },
+     {
+      "net": "CTV News",
+      "url": "https://www.youtube.com/watch?v=Q4cUA-o3trE",
+      "title": "Richard Neil guilty and massive Microsoft outage | CTV News Kitchener at 6 for Nov. 13, 2026",
+      "img": "https://i.ytimg.com/vi/Q4cUA-o3trE/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=gN_IQ1qZ6NU",
+      "title": "Microsoft says service being restored on 2nd day of worldwide outage",
+      "img": "https://i.ytimg.com/vi/gN_IQ1qZ6NU/hqdefault.jpg",
+      "rec": false,
+      "up": ""
      }
     ]
    },
    {
     "key": "auto-18eb2b83",
     "words": [
-     "white",
      "putin",
+     "white",
      "apec"
     ],
     "score": 19,
@@ -1752,10 +1757,10 @@
      "alt": "Zelenskyy says a new European security framework floated by US could benefit Putin",
      "outlet": "Toronto Star",
      "url": "https://www.thestar.com/news/world/europe/zelenskyy-says-a-new-european-security-framework-floated-by-us-could-benefit-putin/article_885b2081-6dfa-58a8-9ac9-dc810408fa24.html",
-     "since": "2026-11-14T11:49:12.574918+00:00"
+     "since": "2026-11-14T11:59:17.158308+00:00"
     },
     "photo_seen": [
-     "https://www.cp24.com/resizer/v2/4QWY3JDBPJHEHU5USAASJU7NL4.jpg?smart=true&auth=d9ed29e36deee3b758c302ccadaf197fe3fabcd3928e90d1a727641ae64294fe&width=1200&height=630"
+     "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/a/74/a744f85e-0749-5c7d-92d3-9a9ca36f7ff2/6af8450ce37fd.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
     ],
     "photos": [
      {
@@ -1783,12 +1788,12 @@
       "url": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do?at_medium=RSS&at_campaign=rss"
      },
      {
-      "src": "live/img/auto-18eb2b83-ed4d748643.jpg",
-      "orig": "https://www.cp24.com/resizer/v2/4QWY3JDBPJHEHU5USAASJU7NL4.jpg?smart=true&auth=d9ed29e36deee3b758c302ccadaf197fe3fabcd3928e90d1a727641ae64294fe&width=1200&height=630",
-      "caption": "This combination of three images shows President Donald Trump in Washington, Nov. 9, 2026, from left, China's President Xi Jinping in Washington, Sept. 24, 2026, and Russia's President Vladimir Putin in Moscow, Nov. 4, 2026. (AP Photo). — via CP24",
-      "alt": "This combination of three images shows President Donald Trump in Washington, Nov. 9, 2026, from left, China's President Xi Jinping in Washington, Sept. 24, 2026",
-      "outlet": "CP24",
-      "url": "https://www.cp24.com/news/world/2026/11/14/trump-xi-and-putin-plan-an-unprecedented-joint-meeting-on-the-sidelines-of-apec-white-house-says/"
+      "src": "live/img/auto-18eb2b83-4ba46c5607.jpg",
+      "orig": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/14/ca3d845e-2e76-4093-9b96-5798868f6369/thumbnail/1200x630/0b1af416dc9ccf224b98686701d6f9f6/gettyimages-2302566480.jpg",
+      "caption": "From: Trump, Putin, Xi Jinping to meet in first trilateral of its kind. — via CBS News",
+      "alt": "Trump, Putin, Xi Jinping to meet in first trilateral of its kind",
+      "outlet": "CBS News",
+      "url": "https://www.cbsnews.com/news/trump-putin-xi-jinping-meeting-china-us-russia-talks/"
      }
     ],
     "independent": 8,
@@ -1807,6 +1812,22 @@
       "outlet": "The Canadian Press (via Winnipeg Free Press)",
       "title": "Zelenskyy says a new European security framework floated by US could benefit Putin",
       "url": "https://www.winnipegfreepress.com/world/2026/11/14/zelenskyy-says-a-new-european-security-framework-floated-by-us-could-benefit-putin",
+      "desc": ""
+     },
+     {
+      "t": "Sat 6:22 a.m.",
+      "iso": "2026-11-14T11:22:19+00:00",
+      "outlet": "CityNews Montreal",
+      "title": "Zelenskyy says a new European security framework floated by US could benefit Putin",
+      "url": "https://montreal.citynews.ca/2026/11/14/zelenskyy-says-a-new-european-security-framework-floated-by-us-could-benefit-putin/",
+      "desc": ""
+     },
+     {
+      "t": "Sat 6:22 a.m.",
+      "iso": "2026-11-14T11:22:19+00:00",
+      "outlet": "CityNews Edmonton",
+      "title": "Zelenskyy says a new European security framework floated by US could benefit Putin",
+      "url": "https://edmonton.citynews.ca/2026/11/14/zelenskyy-says-a-new-european-security-framework-floated-by-us-could-benefit-putin/",
       "desc": ""
      },
      {
@@ -1847,7 +1868,7 @@
       "outlet": "Kyiv Independent",
       "title": "Historic first summit for Trump, Xi, Putin will not focus on Ukraine, White House says",
       "url": "https://kyivindependent.com/historic-first-summit-among-trump-xi-putin-will-not-focus-on-ukraine-white-house-says/",
-      "desc": "A U.S. official said that a trilateral meeting has been planned, but will focus on nuclear non-proliferation and the war in Iran."
+      "desc": ""
      },
      {
       "t": "Fri 8:58 p.m.",
@@ -1855,7 +1876,7 @@
       "outlet": "CTV News",
       "title": "Trump, Xi and Putin plan an unprecedented joint meeting on the sidelines of APEC, White House says",
       "url": "https://www.ctvnews.ca/world/article/trump-xi-and-putin-plan-an-unprecedented-joint-meeting-on-the-sidelines-of-apec-white-house-says/",
-      "desc": "The leaders of the United States, China and Russia plan to meet Thursday on the sidelines of next week’s Asia-Pacific Economic Cooperation summit in China’s tech hub of Shenzhen — an unprecedented gathering of the heads of the world’s biggest nuclear powers."
+      "desc": ""
      },
      {
       "t": "Fri 8:58 p.m.",
@@ -1888,22 +1909,6 @@
       "title": "Trump, Xi and Putin plan an unprecedented joint meeting on the sidelines of APEC, White House says",
       "url": "https://ottawa.citynews.ca/2026/11/13/trump-xi-and-putin-plan-an-unprecedented-joint-meeting-on-the-sidelines-of-apec-white-house-says/",
       "desc": ""
-     },
-     {
-      "t": "Fri 8:47 p.m.",
-      "iso": "2026-11-14T01:47:51+00:00",
-      "outlet": "CityNews Montreal",
-      "title": "Trump, Xi and Putin plan an unprecedented joint meeting on the sidelines of APEC, White House says",
-      "url": "https://montreal.citynews.ca/2026/11/13/trump-xi-and-putin-plan-an-unprecedented-joint-meeting-on-the-sidelines-of-apec-white-house-says/",
-      "desc": ""
-     },
-     {
-      "t": "Fri 8:47 p.m.",
-      "iso": "2026-11-14T01:47:51+00:00",
-      "outlet": "CityNews Halifax",
-      "title": "Trump, Xi and Putin plan an unprecedented joint meeting on the sidelines of APEC, White House says",
-      "url": "https://halifax.citynews.ca/2026/11/13/trump-xi-and-putin-plan-an-unprecedented-joint-meeting-on-the-sidelines-of-apec-white-house-says/",
-      "desc": ""
      }
     ],
     "sources": [
@@ -1932,16 +1937,6 @@
         "byline": "uizhong Wu And Vladimir Isachenkov, The Associated Press,\" News Staff \n\t\t\tBy"
        },
        {
-        "outlet": "CityNews Montreal",
-        "src": "The Associated Press",
-        "byline": "uizhong Wu And Vladimir Isachenkov, The Associated Press,\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews Halifax",
-        "src": "The Associated Press",
-        "byline": "uizhong Wu And Vladimir Isachenkov, The Associated Press,\" News Staff \n\t\t\tBy"
-       },
-       {
         "outlet": "CTV News",
         "src": "The Canadian Press",
         "byline": "ne Wilson\" \"Jack Hauen\" \"Avery Haines\" \"The Canadian Press\" \"Ben Miljure\" \"Cas"
@@ -1965,6 +1960,16 @@
         "outlet": "The Canadian Press (via Winnipeg Free Press)",
         "src": "The Associated Press",
         "byline": "rson\",\n\t\t\t\t\"name\": \"Hanna Arhirova, The Associated Press\"\n\t\t\t} [{\"@type\":\"Pe"
+       },
+       {
+        "outlet": "CityNews Montreal",
+        "src": "The Associated Press",
+        "byline": "fe805acc41a6fdf\"}] \"Hanna Arhirova, The Associated Press,\" News Staff \n\t\t\tBy"
+       },
+       {
+        "outlet": "CityNews Edmonton",
+        "src": "The Associated Press",
+        "byline": "fe805acc41a6fdf\"}] \"Hanna Arhirova, The Associated Press,\" News Staff \n\t\t\tBy"
        }
       ],
       "copies": [
@@ -1975,14 +1980,6 @@
        {
         "outlet": "CityNews Ottawa",
         "url": "https://ottawa.citynews.ca/2026/11/13/trump-xi-and-putin-plan-an-unprecedented-joint-meeting-on-the-sidelines-of-apec-white-house-says/"
-       },
-       {
-        "outlet": "CityNews Montreal",
-        "url": "https://montreal.citynews.ca/2026/11/13/trump-xi-and-putin-plan-an-unprecedented-joint-meeting-on-the-sidelines-of-apec-white-house-says/"
-       },
-       {
-        "outlet": "CityNews Halifax",
-        "url": "https://halifax.citynews.ca/2026/11/13/trump-xi-and-putin-plan-an-unprecedented-joint-meeting-on-the-sidelines-of-apec-white-house-says/"
        },
        {
         "outlet": "CTV News",
@@ -2003,6 +2000,14 @@
        {
         "outlet": "The Canadian Press (via Winnipeg Free Press)",
         "url": "https://www.winnipegfreepress.com/world/2026/11/14/zelenskyy-says-a-new-european-security-framework-floated-by-us-could-benefit-putin"
+       },
+       {
+        "outlet": "CityNews Montreal",
+        "url": "https://montreal.citynews.ca/2026/11/14/zelenskyy-says-a-new-european-security-framework-floated-by-us-could-benefit-putin/"
+       },
+       {
+        "outlet": "CityNews Edmonton",
+        "url": "https://edmonton.citynews.ca/2026/11/14/zelenskyy-says-a-new-european-security-framework-floated-by-us-could-benefit-putin/"
        }
       ]
      },
@@ -2087,12 +2092,9 @@
     "incoherent": false,
     "popular": 0,
     "us_election": false,
-    "fronts": 2,
+    "fronts": 0,
     "fronts_ca": 0,
-    "fronts_who": [
-     "ABC News",
-     "BBC News"
-    ],
+    "fronts_who": [],
     "judgment": "national",
     "judgment_why": "National: affects some people; carried across the country (5 cities).",
     "weight": 47,
@@ -2149,7 +2151,7 @@
      "alt": "Progressive challenge to Democratic Senate chief Schumer opens fight for bolder agenda",
      "outlet": "The Japan Times",
      "url": "https://www.japantimes.co.jp/news/2026/11/14/world/politics/progressive-challenge-senate-schumer/",
-     "since": "2026-11-14T11:40:20.625761+00:00"
+     "since": "2026-11-14T11:59:28.409924+00:00"
     },
     "photo_seen": [
      "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/14/574001.jpg?v=3.1"
@@ -2359,14 +2361,6 @@
     "weight": 35.0,
     "videos": [
      {
-      "net": "CBS News",
-      "url": "https://www.youtube.com/watch?v=noUo1iSdBwk",
-      "title": "Schumer faces challenge from Van Hollen for Senate majority leader",
-      "img": "https://i.ytimg.com/vi/noUo1iSdBwk/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
       "net": "CBC News",
       "url": "https://www.youtube.com/watch?v=u4wOn0bSjxc",
       "title": "Chuck Schumer facing challenge for U.S. Senate leadership",
@@ -2375,9 +2369,17 @@
       "up": ""
      },
      {
+      "net": "CBS News",
+      "url": "https://www.youtube.com/watch?v=noUo1iSdBwk",
+      "title": "Van Hollen launches bid for Senate majority leader",
+      "img": "https://i.ytimg.com/vi/noUo1iSdBwk/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
       "net": "NBC News",
       "url": "https://www.youtube.com/watch?v=ebXapbT8v9I",
-      "title": "Impacts of Microsoft Outages; Van Hollen Challenges Schumer for Sen. Majority Leader - Nov. 13",
+      "title": "Van Hollen Challenges Schumer for Sen. Majority Leader; Impacts of Microsoft Outages - Nov. 13",
       "img": "https://i.ytimg.com/vi/ebXapbT8v9I/hqdefault.jpg",
       "rec": false,
       "up": ""
@@ -2577,7 +2579,7 @@
    "id": "PQSTyL76Oxg",
    "r": "ca",
    "o": "CTV News",
-   "t": "Investigation reveals bag-tag switching cases around the world | W5",
+   "t": "Man spending 10 years in a New Zealand prison says he’s the ‘victim’ of bag-tag switching | W5",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=PQSTyL76Oxg",
@@ -2591,7 +2593,7 @@
    "id": "xqRx5DKp4TQ",
    "r": "ca",
    "o": "CTV News",
-   "t": "Cambrian gets $300K to develop mobile mine EV charger",
+   "t": "Cambrian students to help develop mobile mine EV charger",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=xqRx5DKp4TQ",
@@ -2722,7 +2724,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=5jw4WtsMQqU",
    "img": "https://i.ytimg.com/vi/5jw4WtsMQqU/hqdefault.jpg",
-   "up": "2026-11-14",
+   "up": "2026-11-13",
    "added": "2026-11-14T04:54:06.244437+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -2983,7 +2985,7 @@
    "id": "GlYVxhXRepk",
    "r": "world",
    "o": "Sky News",
-   "t": "Passengers warned to expect delays following nationwide US ground stop",
+   "t": "Flights resume across the US after nationwide ground stop",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=GlYVxhXRepk",
@@ -2997,7 +2999,7 @@
    "id": "3JMfeGGd2ZY",
    "r": "world",
    "o": "Sky News",
-   "t": "Warning over sick children as winter brings freezing rain to Gaza's displacement camps",
+   "t": "Children suffering in Gaza's displacement camps as humanitarian crisis takes hold",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=3JMfeGGd2ZY",
@@ -3065,9 +3067,9 @@
   },
   {
    "o": "NPR",
-   "h": "Hegseth's failed impeachment was a warning to Democrats. Where will they go from here?",
-   "u": "https://www.npr.org/2026/11/14/nx-s1-6040299/hegseth-impeachment-democrats-house-test",
-   "img": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2400x1350+0+125/resize/1400/quality/85/format/webp/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fa4%2F7f%2F1e1751c144f1bd74d4bf72ab16e1%2Fgettyimages-2244508651.jpg",
+   "h": "As Democrats win big, thirst traps of male candidates take social media by storm",
+   "u": "https://www.npr.org/2026/11/14/nx-s1-6040507/democrats-male-candidates-masculinity-trump",
+   "img": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4032x2268+0+210/resize/1400/quality/85/format/webp/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F10%2Ff7%2F97f674e0403bb49b1401fda0ff98%2Fgettyimages-2303426754.jpg",
    "w": "Sat 5:00 a.m.",
    "iso": "2026-11-14T10:00:00+00:00"
   },
@@ -3274,6 +3276,13 @@
  ],
  "eds": [
   [
+   "Toronto Star",
+   "Opinion",
+   "Patrick Corrigan's cartoon depicts the future of Toronto Hydro",
+   "https://www.thestar.com/opinion/editorial-cartoons/patrick-corrigan-s-cartoon-depicts-the-future-of-toronto-hydro/article_c55260de-045c-453d-8dad-d50ff14a820c.html",
+   "2026-11-14T11:00:00+00:00"
+  ],
+  [
    "Toronto Sun",
    "Editorial",
    "Blarney from Carney on immigration",
@@ -3332,16 +3341,9 @@
   [
    "Fox News",
    "Opinion",
-   "SEN BERNIE SANDERS: Democrats won big. Deliver real change now, or pay a terrible price",
-   "https://www.foxnews.com/opinion/sen-bernie-sanders-democrats-won-big-deliver-real-change-now-pay-terrible-price",
-   "2026-11-14T10:50:58+00:00"
-  ],
-  [
-   "The Wall Street Journal (subscribers)",
-   "Opinion",
-   "Pepper…and Salt",
-   "https://www.wsj.com/opinion/pepperand-salt-f0ecc72b?mod=rss_opinion",
-   "2026-11-14T05:00:00+00:00"
+   "The 2028 presidential race is already full of surprises, prediction markets say",
+   "https://www.foxnews.com/opinion/2028-presidential-race-already-full-surprises-prediction-markets-say",
+   "2026-11-14T11:50:21+00:00"
   ]
  ],
  "canus": {
@@ -3402,9 +3404,9 @@
   "edition": "Saturday morning, November 14",
   "lines": [
    "Good morning. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
+   "More than 2,000 flights were canceled Saturday as airlines across the U.S. worked to dig out from the longest nationwide ground stop in 25 years, which stranded, The Associated Press reports.",
    "Ukrainian President Volodymyr Zelenskyy said the United States had raised the possibility of a new security framework for Europe as part of efforts to end Russia’s, The Associated Press reports.",
    "A tanker in New Orleans that apparently lost its steering slammed into a docked river cruise boat with 180 people aboard Friday, the mayor said.",
-   "More than 2,000 flights were canceled Saturday as airlines across the U.S. worked to dig out from the longest nationwide ground stop in 25 years, which stranded, The Associated Press reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
   ]
  },
@@ -3519,22 +3521,6 @@
    "href": "https://news.ontario.ca/en/release/1008285/ontario_and_canada_select_the_university_of_toronto_as_host_for_provinces_first_fusion_energy_research_chair",
    "report": false,
    "iso": "2026-11-13T20:06:00+00:00",
-   "auto": true
-  },
-  {
-   "cat": "intl",
-   "media": "none",
-   "initials": "UN",
-   "name": "United Nations",
-   "role": "UN News",
-   "date": "Nov 13",
-   "platform": "Official statement",
-   "handle": "news.un.org",
-   "hed": "‘Here, you can eat until you’re full’: Oleshky evacuees savour first proper meals in years",
-   "summary": "In a quiet hospital corridor in Kyiv, staff and volunteers push carts carrying steaming pots of chicken soup, bread and buckwheat porridge to patients recently evacuated from Russian-occupied Oleshky, in Ukraine’s southern Kherson region.",
-   "href": "https://news.un.org/feed/view/en/story/2026/11/1168803",
-   "report": false,
-   "iso": "2026-11-13T12:00:00+00:00",
    "auto": true
   }
  ],
@@ -3800,7 +3786,7 @@
    "city": "Moscow",
    "tz": "Europe/Moscow",
    "world": true,
-   "w": "China",
+   "w": "European",
    "label": "Zelenskyy says a new European security framework floated…",
    "u": "https://www.thestar.com/news/world/europe/zelenskyy-says-a-new-european-security-framework-floated-by-us-could-benefit-putin/article_885b2081-6dfa-58a8-9ac9-dc810408fa24.html",
    "title": "Zelenskyy says a new European security framework floated by US could benefit Putin",
@@ -3812,24 +3798,24 @@
    "city": "Kyiv",
    "tz": "Europe/Kyiv",
    "world": true,
-   "w": "European",
-   "label": "US has floated Ukraine ceding Donbas for Nato membership",
-   "u": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=RSS&at_campaign=rss",
-   "title": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
-   "outlet": "BBC News",
-   "t": "Sat 6:41 a.m.",
+   "w": "Police",
+   "label": "Three killed in Russia as Ukraine claims US floated NATO…",
+   "u": "https://www.aljazeera.com/news/2026/11/14/three-killed-in-russia-as-ukraine-claims-us-floated-nato-membership-option?traffic_source=rss",
+   "title": "Three killed in Russia as Ukraine claims US floated NATO membership option",
+   "outlet": "Al Jazeera",
+   "t": "Sat 6:43 a.m.",
    "hot": true
   },
   {
-   "city": "Brussels",
-   "tz": "Europe/Brussels",
+   "city": "Cairo",
+   "tz": "Africa/Cairo",
    "world": true,
-   "w": "Canada–EU",
-   "label": "US floats NATO membership for Ukraine in exchange for…",
-   "u": "https://kyivindependent.com/us-floats-nato-membership-for-ukraine-in-exchange-for-donbas-withdrawal-zelensky-says/",
-   "title": "US floats NATO membership for Ukraine in exchange for Donbas withdrawal, Zelensky says",
-   "outlet": "Kyiv Independent",
-   "t": "Sat 6:11 a.m.",
+   "w": "February",
+   "label": "South Sudan postpones first national elections again",
+   "u": "https://www.thestar.com/news/world/africa/south-sudan-postpones-first-national-elections-again-to-february-2027/article_b9cad554-fce1-53ce-be1d-bc868426be28.html",
+   "title": "South Sudan postpones first national elections again, to February 2027",
+   "outlet": "Toronto Star",
+   "t": "Sat 5:58 a.m.",
    "hot": true
   }
  ],
@@ -3838,26 +3824,26 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Sat 3:31 a.m.",
-   "iso": "2026-11-14T08:31:04.752000+00:00",
-   "title": "U.S. flights cleared to take off again after ground stop order caused thousands of delays and cancellations",
-   "summary": "",
-   "outlet": "CBC News, BBC News, VOCM, Toronto Star (AP), Euronews, The Guardian, The Hill, CBS News, CTV News + CP24 (CP)",
+   "t": "Sat 6:52 a.m.",
+   "iso": "2026-11-14T11:52:53+00:00",
+   "title": "FAA ground stop live updates: More than 12,500 flights canceled Friday and Saturday",
+   "summary": "The DHS secretary said there were no indications of a cyberattack.",
+   "outlet": "ABC News, Middle East Eye, CBC News, BBC News, VOCM, Euronews + Toronto Star (AP), The Guardian, The Hill, CBS News",
    "n": 9,
-   "url": "https://www.cbc.ca/news/world/livestory/faa-grounds-all-flights-united-states-air-traffic-control-live-updates-9.7421404",
-   "img": "https://i.cbc.ca/ais/80c77054-0cc3-42cc-9397-fcd22d821606,1794626178616/full/max/0/default.jpg?im=Crop%2Crect%3D%28269%2C771%2C7619%2C4285%29%3BResize%3D620"
+   "url": "https://abcnews.com/US/live-updates/faa-ground-stop-live-updates-hundreds-flights-canceled/?id=138125140",
+   "img": "https://i.abcnewsfe.com/a/3d1e9ecb-81c2-4e37-a98b-a3712f8035eb/plane-schedule-rt-jt-261113_1794609304473_hpMain_16x9.jpg?w=1600"
   },
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Sat 6:41 a.m.",
-   "iso": "2026-11-14T11:41:20+00:00",
-   "title": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
-   "summary": "The Ukrainian president says US envoys touted the exchange as part of efforts to end the war with Russia.",
-   "outlet": "BBC News, Euronews + Toronto Star + The Canadian Press (via Winnipeg Free Press), Kyiv Independent, The Guardian, Al Jazeera, CBS News, Euronews, Toronto Star + Lethbridge Herald",
-   "n": 8,
-   "url": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=RSS&at_campaign=rss",
-   "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/d028/live/47c10ab0-e013-11f1-b441-2b33b063138f.jpg"
+   "t": "Sat 6:43 a.m.",
+   "iso": "2026-11-14T11:43:06+00:00",
+   "title": "Three killed in Russia as Ukraine claims US floated NATO membership option",
+   "summary": "Zelenskyy says the US asked for the first time whether Kyiv would cede land to Moscow in exchange for the NATO bid.",
+   "outlet": "Al Jazeera, BBC News, Toronto Star + The Canadian Press (via Winnipeg Free Press) + CityNews Montreal + CityNews Edmonton, Kyiv Independent, The Guardian, CBS News, Euronews",
+   "n": 7,
+   "url": "https://www.aljazeera.com/news/2026/11/14/three-killed-in-russia-as-ukraine-claims-us-floated-nato-membership-option?traffic_source=rss",
+   "img": "https://www.aljazeera.com/wp-content/uploads/2026/10/getty_6acfd9a7b9-1792006567.jpg?resize=1920%2C1440"
   },
   {
    "desk": "world",
@@ -3865,7 +3851,7 @@
    "t": "Sat 6:07 a.m.",
    "iso": "2026-11-14T11:07:10+00:00",
    "title": "Microsoft says services fully restored after global outage",
-   "summary": "Tech company says services now restored to all customers and regions hit by one of worst IT failures in years",
+   "summary": "Tech company says operations restored to all customers and regions affected by one of worst IT failures in years",
    "outlet": "The Guardian, CTV News + CP24 + BNN Bloomberg + Toronto Star + 1 more, CBS News, BBC News, The Japan Times, CBC News, CTV News",
    "n": 7,
    "url": "https://www.theguardian.com/technology/2026/nov/14/microsoft-says-services-fully-restored-after-global-outage",
@@ -3914,7 +3900,7 @@
    "iso": "2026-11-14T04:03:00+00:00",
    "title": "Passengers rescued after tanker hit river cruise in New Orleans",
    "summary": "A tanker struck a river cruise ship on the Mississippi River near the Port of New Orleans Friday, partially submerging the passenger boat.",
-   "outlet": "CBS News, CityNews Winnipeg + CityNews Ottawa + CityNews Montreal + CityNews Halifax + 4 more (AP), BBC News, Euronews",
+   "outlet": "CBS News, CityNews Winnipeg + CityNews Ottawa + CityNews Halifax + CityNews Calgary + 4 more (AP), BBC News, Euronews",
    "n": 4,
    "url": "https://www.cbsnews.com/news/tanker-cruise-collision-mississippi-river-new-orleans/",
    "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/13/ba59891d-9b26-4381-beee-7a4c061e552d/thumbnail/1200x630/a8ff6a119e1e5074c24511a98627c543/ap26317811767503.jpg"
@@ -3938,7 +3924,7 @@
    "iso": "2026-11-13T20:30:00+00:00",
    "title": "Melanie Joly puts 'aggressive package' to Stellantis in bid to stop sale of Brampton plant",
    "summary": "Melanie Joly said she would work with the Ontario government and Unifor to propose additional ideas directly to Stellantis' global CEO.",
-   "outlet": "Toronto Star, Canada's National Observer + CP24 + BNN Bloomberg, BNN Bloomberg + CP24, CBC News",
+   "outlet": "Toronto Star, CP24 + BNN Bloomberg + Canada's National Observer, BNN Bloomberg + CP24, CBC News",
    "n": 4,
    "url": "https://www.thestar.com/politics/federal/joly-puts-aggressive-package-to-stellantis-in-bid-to-stop-sale-of-brampton-plant/article_6fbd2eec-e3ad-44be-b332-94f7644a6b33.html",
    "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/1/8d/18df8bcd-1bbc-5fce-aa7b-20f4c89eaeaa/6af742135a73e.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
@@ -4064,6 +4050,18 @@
    "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/d/46/d463d86a-2e65-5ca1-92b9-e93f9ebf1e78/6af40dc0daea4.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
   },
   {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Fri 9:05 p.m.",
+   "iso": "2026-11-14T02:05:06+00:00",
+   "title": "Rubio says economic pain inflicted on Iran makes military action unnecessary",
+   "summary": "",
+   "outlet": "Middle East Eye, CTV News + CP24 (CP)",
+   "n": 2,
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/rubio-says-economic-pain-inflicted-iran-makes-military-action",
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Iranians%20wave%20flags%20during%20a%20gathering%20in%20front%20of%20an%20anti-US%20billboard%20depicting%20US%20President%20Donald%20Trump%20in%20Tehran%27s%20Enghelab%20Square%20on%20November%203%2C%202026..jpg"
+  },
+  {
    "desk": "us",
    "pic": "podium",
    "t": "Fri 9:02 p.m.",
@@ -4153,11 +4151,11 @@
    "t": "Sat 5:00 a.m.",
    "iso": "2026-11-14T10:00:00+00:00",
    "title": "Our food reporter picks the top 5 Distillery Christmas market treats (don't miss the apple fritters)",
-   "summary": "",
+   "summary": "Heading to the Distillery District’s Winter Village? Here are five must-try food options, from a $6 apple fritter to holiday hot chocolate.",
    "outlet": "Toronto Star",
    "n": 1,
    "url": "https://www.thestar.com/life/food-and-drink/li-distillerywintermarket/article_f7d36547-08de-4a5a-b765-b405f3af9139.html",
-   "img": ""
+   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/f/7d/f7d36547-08de-4a5a-b765-b405f3af9139/6af79e492e434.preview.jpg?crop=1763%2C926%2C0%2C124&resize=1200%2C630&order=crop%2Cresize"
   },
   {
    "desk": "politics",
@@ -4182,18 +4180,6 @@
    "n": 1,
    "url": "https://www.cbc.ca/news/canada/living-wage-minimum-wage-canada-9.7416320",
    "img": ""
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Fri 8:07 p.m.",
-   "iso": "2026-11-14T01:07:17+00:00",
-   "title": "Rubio says further U.S. military action is not needed against economically weakened Iran",
-   "summary": "The U.S. military said it intercepted two Iranian attack drones headed toward Bahrain, as Iran’s Revolutionary Guard claimed it struck a U.S. early warning radar system in the kingdom.",
-   "outlet": "CTV News + CP24 (CP)",
-   "n": 1,
-   "url": "https://www.ctvnews.ca/world/mideast-conflict/article/rubio-says-further-us-military-action-is-not-needed-against-economically-weakened-iran/",
-   "img": "https://www.ctvnews.ca/resizer/v2/2U3AOKCWL6BYRXYK75DFV654SM.jpg?smart=true&auth=58a1b3ffbd2cf9df7bcbab390800dcba19b4304a403fc7678f69d43ea0a529a5&width=1200&height=630"
   }
  ],
  "reads": [
@@ -4423,7 +4409,7 @@
    "o": "CP24",
    "ca": true,
    "h": [
-    "‘I can’t get to work’: Toronto residents speak out about shrinking accessible taxi fleet",
+    "‘I can’t get to work’: Toronto’s accessible taxi fleet is shrinking and riders are speaking out",
     "Police investigating fatal stabbing inside Mississauga residence",
     "How a CTV News investigation connected bag tag cases around the world",
     "‘A positive step’ — National Council of Canadian Muslims hopeful after Jays meeting",
@@ -4431,7 +4417,7 @@
     "U.S. ground stop results in hundreds of cancelled flights at Toronto’s two airports"
    ],
    "u": [
-    "https://www.cp24.com/local/toronto/2026/11/14/i-cant-get-to-work-toronto-residents-speak-out-about-shrinking-accessible-taxi-fleet/",
+    "https://www.cp24.com/local/toronto/2026/11/14/i-cant-get-to-work-torontos-accessible-taxi-fleet-is-shrinking-and-riders-are-speaking-out/",
     "https://www.cp24.com/local/peel/2026/11/14/police-investigating-fatal-stabbing-inside-mississauga-residence/",
     "https://www.cp24.com/news/canada/2026/11/14/how-a-ctv-news-investigation-connected-bag-tag-cases-around-the-world/",
     "https://www.cp24.com/news/sports/2026/11/14/a-positive-step-national-council-of-canadian-muslims-hopeful-after-jays-meeting/",
@@ -4515,20 +4501,20 @@
    "o": "ABC News",
    "ca": false,
    "h": [
-    "FAA ground stop live updates: Duffy blames 'overloaded' routers after stop lifted",
-    "20/20: JonBenét Ramsey: Race Against Time, Who Is 'Unknown Male 1'? - A New Diane Sawyer Investigation",
+    "FAA ground stop live updates: More than 12,500 flights canceled Friday and Saturday",
     "Trump to meet with Putin and Xi in China next week, US officials say",
     "'Miracle': All rescued from capsized New Orleans riverboat in tanker collision",
     "Microsoft apologizes for email disruption, says AI agents not responsible",
-    "Lauren Boebert will lose her seat in Congress to Democrat Laubacher, AP projects"
+    "Lauren Boebert will lose her seat in Congress to Democrat Laubacher, AP projects",
+    "Congressional Republicans push Howard Lutnick, Jensen Huang to testify about Nvidia"
    ],
    "u": [
     "https://abcnews.com/US/live-updates/faa-ground-stop-live-updates-hundreds-flights-canceled/?id=138125140",
-    "",
     "https://abcnews.com/Politics/trump-meet-putin-xi-china-week-us-officials/story?id=138128914",
     "https://abcnews.com/US/vessel-collision-port-new-orleans-emergency-crews-responding/story?id=138119847",
     "https://abcnews.com/US/outlook-down-microsoft-outage-reported-mail/story?id=138088203",
-    "https://abcnews.com/Politics/lauren-boebert-lose-seat-congress-ap-projects/story?id=138121829"
+    "https://abcnews.com/Politics/lauren-boebert-lose-seat-congress-ap-projects/story?id=138121829",
+    "https://abcnews.com/Politics/house-senate-republicans-call-howard-lutnick-jensen-huang/story?id=138111390"
    ]
   },
   {
@@ -4577,7 +4563,7 @@
     "At a glance Zelenskyy says Starshield restrictions continue on ‘entire front line’",
     "Kyiv Russia strikes hospital after SpaceX system falters again",
     "European Union Russia is ‘setting traps’ in Ukraine talks, EU foreign policy chief warns",
-    "Technology Microsoft says services fully restored after global outage",
+    "Technology Microsoft says services fully restored after global outage hits governments",
     "US military Ecuadorian fishermen who survived US boat strikes sue Trump administration"
    ],
    "u": [
@@ -4619,7 +4605,7 @@
     "url": "https://www.youtube.com/watch?v=Qlt84Qg7IgQ",
     "img": "https://i.ytimg.com/vi/Qlt84Qg7IgQ/hqdefault.jpg",
     "story": "Thousands of flights canceled as airlines work to dig out fr",
-    "watching": "23",
+    "watching": "67",
     "also": [
      {
       "net": "Reuters",
@@ -4631,6 +4617,13 @@
      }
     ],
     "reports": [
+     {
+      "outlet": "ABC News",
+      "title": "FAA ground stop live updates: More than 12,500 flights canceled Friday and Saturday",
+      "url": "https://abcnews.com/US/live-updates/faa-ground-stop-live-updates-hundreds-flights-canceled/?id=138125140",
+      "t": "Sat 6:52 a.m.",
+      "iso": "2026-11-14T11:52:53+00:00"
+     },
      {
       "outlet": "CBS News",
       "title": "Trump, Putin, Xi Jinping to meet in first trilateral of its kind",
@@ -4674,18 +4667,29 @@
       "iso": "2026-11-14T03:11:35+00:00"
      },
      {
-      "outlet": "ABC News",
-      "title": "FAA ground stop live updates: Duffy blames 'overloaded' routers after stop lifted",
-      "url": "https://abcnews.com/US/live-updates/faa-ground-stop-live-updates-hundreds-flights-canceled/?id=138125140",
-      "t": "Fri 9:58 p.m.",
-      "iso": "2026-11-14T02:58:44+00:00"
-     },
-     {
       "outlet": "VOCM",
       "title": "FAA Lifts Nationwide Ground Stop; Thousands of Flights Backlogged",
       "url": "https://vocm.com/2026/11/13/faa-lifts-ground-stop/",
       "t": "Fri 9:19 p.m.",
       "iso": "2026-11-14T02:19:46+00:00"
+     }
+    ]
+   },
+   {
+    "net": "Sky News",
+    "r": "world",
+    "title": "SpaceX launches its 15th Starship flight as booster explodes in sea after lift-off",
+    "url": "https://www.youtube.com/watch?v=huDipD3GbG4",
+    "img": "https://i.ytimg.com/vi/huDipD3GbG4/hqdefault.jpg",
+    "story": "SpaceX launches its 15th Starship flight as booster explodes in sea af",
+    "watching": "100",
+    "reports": [
+     {
+      "outlet": "CBS News",
+      "title": "SpaceX launches first-of-its-kind Starship test flight",
+      "url": "https://www.cbsnews.com/news/spacex-launches-starship-flight-rocket/",
+      "t": "Fri 9:10 p.m.",
+      "iso": "2026-11-14T02:10:00+00:00"
      }
     ]
    }
@@ -4713,6 +4717,10 @@
     "url": "https://www.youtube.com/watch?v=QB5BNdBFujE"
    },
    {
+    "net": "Sky News",
+    "url": "https://www.youtube.com/watch?v=umLWFz4izTM"
+   },
+   {
     "net": "DW News",
     "url": "https://www.youtube.com/watch?v=LuKwFajn37U"
    },
@@ -4727,15 +4735,21 @@
    {
     "net": "FRANCE 24 English",
     "url": "https://www.youtube.com/watch?v=HvZt-nh9sGg"
-   },
-   {
-    "net": "euronews",
-    "url": "https://www.youtube.com/watch?v=pykpO5kQJ98"
    }
   ]
  },
  "pm": [],
- "blogs_auto": [],
+ "blogs_auto": [
+  {
+   "net": "ABC News",
+   "story": "Thousands of flights canceled as airlines work to dig out fr",
+   "title": "FAA ground stop live updates: More than 12,500 flights canceled Friday and Saturday",
+   "url": "https://abcnews.com/US/live-updates/faa-ground-stop-live-updates-hundreds-flights-canceled/?id=138125140",
+   "updated": "2026-11-14T11:52:57+00:00",
+   "ended": false,
+   "img": "https://i.abcnewsfe.com/a/3d1e9ecb-81c2-4e37-a98b-a3712f8035eb/plane-schedule-rt-jt-261113_1794609304473_hpMain_16x9.jpg?w=1600"
+  }
+ ],
  "related": {
   "auto-e0c02640": {
    "ties": [
@@ -4753,7 +4767,7 @@
    ],
    "views": []
   },
-  "auto-6aa71a7f": {
+  "auto-63ff1e46": {
    "ties": [
     "Microsoft outage"
    ],
@@ -4764,6 +4778,14 @@
      "outlet": "The Guardian",
      "title": "Microsoft ‘deeply sorry’ for global outage that could have billion-dollar impact on Australia",
      "url": "https://www.theguardian.com/australia-news/2026/nov/14/microsoft-deeply-sorry-for-global-disruption-that-could-have-billion-dollar-impact-on-australia",
+     "tie": "Microsoft outage"
+    },
+    {
+     "t": "Fri 6:49 a.m.",
+     "iso": "2026-11-13T11:49:18+00:00",
+     "outlet": "Euronews",
+     "title": "'Take your time': Funniest reactions to Microsoft global outage",
+     "url": "https://www.euronews.com/2026/11/13/take-your-time-funniest-reactions-to-microsoft-global-outage",
      "tie": "Microsoft outage"
     },
     {
@@ -4784,21 +4806,6 @@
     }
    ],
    "views": []
-  },
-  "auto-d6a07095": {
-   "ties": [
-    "senate",
-    "hollen"
-   ],
-   "stories": [],
-   "views": [
-    {
-     "outlet": "Fox News",
-     "kind": "Opinion",
-     "title": "SEN BERNIE SANDERS: Democrats won big. Deliver real change now, or pay a terrible price",
-     "url": "https://www.foxnews.com/opinion/sen-bernie-sanders-democrats-won-big-deliver-real-change-now-pay-terrible-price"
-    }
-   ]
   }
  },
  "canangle": {
@@ -4837,6 +4844,14 @@
    ],
    "official": [
     {
+     "outlet": "Toronto Pearson",
+     "title": "Pearson departures and arrivals",
+     "url": "https://www.torontopearson.com/en/departures",
+     "t": "",
+     "what": "Pearson Departures - YYZ Departures | Pearson Airport Skip to main content The U.S. Federal Aviation Administration (FAA) lifts ground stop, but U.S. flights arriving at and departing from Toronto Pearson continue to…",
+     "checked": true
+    },
+    {
      "outlet": "Calgary airport",
      "title": "YYC travel notice",
      "url": "https://www.yyc.com/",
@@ -4855,7 +4870,7 @@
    ],
    "views": []
   },
-  "auto-6aa71a7f": {
+  "auto-63ff1e46": {
    "story": "Microsoft outage",
    "us": false,
    "specific": 3,
@@ -4972,6 +4987,14 @@
     }
    ],
    "official": [
+    {
+     "outlet": "Toronto Pearson",
+     "title": "Pearson departures and arrivals",
+     "url": "https://www.torontopearson.com/en/departures",
+     "t": "",
+     "what": "Pearson Departures - YYZ Departures | Pearson Airport Skip to main content The U.S. Federal Aviation Administration (FAA) lifts ground stop, but U.S. flights arriving at and departing from Toronto Pearson continue to…",
+     "checked": true
+    },
     {
      "outlet": "Calgary airport",
      "title": "YYC travel notice",
@@ -5099,35 +5122,28 @@
      "CBS News",
      "President Trump is looking to talk about reducing nuclear arsenals in the first formal trilateral between the leaders of U.S., China and Russia.",
      [
-      3
+      5
      ]
     ],
     [
      "Euronews",
      "Trump is set to depart Washington on Monday for the Philippines, where he is due to attend a meeting of the Association of Southeast Asian Nations before making his way to Shenzhen in China.",
      [
-      4
+      6
      ]
     ],
     [
      "BBC News",
      "Trump will discuss the \"reduction of nuclear weapons\" during the unprecedented talks, a spokeswoman says.",
      [
-      5
+      7
      ]
     ],
     [
      "ABC News",
      "Trump will participate in the first-ever trilateral meeting between the leaders of the U.S., China, and Russia on the sidelines of the APEC Summit in China next week.",
      [
-      6
-     ]
-    ],
-    [
-     "Kyiv Independent",
-     "A U.S. official said that a trilateral meeting has been planned, but will focus on nuclear non-proliferation and the war in Iran.",
-     [
-      7
+      8
      ]
     ]
    ],
@@ -5141,6 +5157,16 @@
      "The Canadian Press (via Winnipeg Free Press)",
      "Zelenskyy says a new European security framework floated by US could benefit Putin",
      "https://www.winnipegfreepress.com/world/2026/11/14/zelenskyy-says-a-new-european-security-framework-floated-by-us-could-benefit-putin"
+    ],
+    [
+     "CityNews Montreal",
+     "Zelenskyy says a new European security framework floated by US could benefit Putin",
+     "https://montreal.citynews.ca/2026/11/14/zelenskyy-says-a-new-european-security-framework-floated-by-us-could-benefit-putin/"
+    ],
+    [
+     "CityNews Edmonton",
+     "Zelenskyy says a new European security framework floated by US could benefit Putin",
+     "https://edmonton.citynews.ca/2026/11/14/zelenskyy-says-a-new-european-security-framework-floated-by-us-could-benefit-putin/"
     ],
     [
      "CBS News",
@@ -5191,16 +5217,6 @@
      "CityNews Ottawa",
      "Trump, Xi and Putin plan an unprecedented joint meeting on the sidelines of APEC, White House says",
      "https://ottawa.citynews.ca/2026/11/13/trump-xi-and-putin-plan-an-unprecedented-joint-meeting-on-the-sidelines-of-apec-white-house-says/"
-    ],
-    [
-     "CityNews Montreal",
-     "Trump, Xi and Putin plan an unprecedented joint meeting on the sidelines of APEC, White House says",
-     "https://montreal.citynews.ca/2026/11/13/trump-xi-and-putin-plan-an-unprecedented-joint-meeting-on-the-sidelines-of-apec-white-house-says/"
-    ],
-    [
-     "CityNews Halifax",
-     "Trump, Xi and Putin plan an unprecedented joint meeting on the sidelines of APEC, White House says",
-     "https://halifax.citynews.ca/2026/11/13/trump-xi-and-putin-plan-an-unprecedented-joint-meeting-on-the-sidelines-of-apec-white-house-says/"
     ]
    ],
    "lead": 1
@@ -5217,7 +5233,7 @@
    "pic": "globe",
    "h": "'Miracle on the Mississippi': All aboard river cruise boat survive crash with tanker in New Orleans",
    "lede": "A tanker in New Orleans that apparently lost its steering slammed into a docked river cruise boat with 180 people aboard Friday, the mayor said. All aboard survived after the crash prompted a massive rescue operation for passengers and crew who plunged into the Mississippi River as the ship took on water and began to topple over.",
-   "newl": "Now carried by 7 independent newsrooms.",
+   "newl": "Now carried by 6 independent newsrooms.",
    "rows": [
     [
      "BBC News",
@@ -5314,36 +5330,36 @@
      "https://ottawa.citynews.ca/2026/11/13/rescues-are-underway-in-new-orleans-after-a-tanker-hits-a-river-cruise-boat-on-the-mississippi-river/"
     ],
     [
-     "CityNews Montreal",
-     "Rescues are underway in New Orleans after a tanker hits a river cruise boat on the Mississippi River",
-     "https://montreal.citynews.ca/2026/11/13/rescues-are-underway-in-new-orleans-after-a-tanker-hits-a-river-cruise-boat-on-the-mississippi-river/"
-    ],
-    [
      "CityNews Halifax",
      "Rescues are underway in New Orleans after a tanker hits a river cruise boat on the Mississippi River",
      "https://halifax.citynews.ca/2026/11/13/rescues-are-underway-in-new-orleans-after-a-tanker-hits-a-river-cruise-boat-on-the-mississippi-river/"
     ],
     [
-     "CityNews Edmonton",
-     "Rescues are underway in New Orleans after a tanker hits a river cruise boat on the Mississippi River",
-     "https://edmonton.citynews.ca/2026/11/13/rescues-are-underway-in-new-orleans-after-a-tanker-hits-a-river-cruise-boat-on-the-mississippi-river/"
-    ],
-    [
      "CityNews Calgary",
      "Rescues are underway in New Orleans after a tanker hits a river cruise boat on the Mississippi River",
      "https://calgary.citynews.ca/2026/11/13/rescues-are-underway-in-new-orleans-after-a-tanker-hits-a-river-cruise-boat-on-the-mississippi-river/"
+    ],
+    [
+     "CityNews",
+     "All passengers and crew on New Orleans cruise ship survive crash with tanker on Mississippi River",
+     "https://toronto.citynews.ca/2026/11/13/rescues-are-underway-in-new-orleans-after-a-tanker-hits-a-river-cruise-boat-on-the-mississippi-river/"
+    ],
+    [
+     "The Hill",
+     "Tanker collides with riverboat on Mississippi River at Port of New Orleans",
+     "https://thehill.com/policy/transportation/6219491-tanker-collides-with-riverboat-on-mississippi-river-at-port-of-new-orleans/"
     ]
    ],
    "lead": 3
   },
   {
-   "id": "bd-auto-6aa71a7f",
+   "id": "bd-auto-63ff1e46",
    "auto": true,
    "desk": "World",
    "status": "Developing",
    "at": "2026-11-14T11:07:10+00:00",
    "exact": true,
-   "img": "live/img/auto-6aa71a7f-11654ea070.jpg",
+   "img": "live/img/auto-63ff1e46-11654ea070.jpg",
    "credit": "via Toronto Star",
    "pic": "globe",
    "h": "Microsoft says services fully restored after hourslong global outage",
@@ -5352,7 +5368,7 @@
    "rows": [
     [
      "The Guardian",
-     "Tech company says services now restored to all customers and regions hit by one of worst IT failures in years",
+     "Tech company says operations restored to all customers and regions affected by one of worst IT failures in years",
      [
       1
      ]
@@ -6275,6 +6291,7 @@
   "-NabWfv-VdA"
  ],
  "noembed": [
+  "0bLqaqPAt_k",
   "I2oLYytagu0",
   "J3FV4iY8p5w",
   "L6qtnHZxwEw",
