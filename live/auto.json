@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-14T06:44:14.678962+00:00",
- "checkedLabel": "Sat 1:44 a.m.",
+ "checked": "2026-11-14T06:54:14.307334+00:00",
+ "checkedLabel": "Sat 1:54 a.m.",
  "stories": [
   {
    "key": "top",
@@ -30,6 +30,15 @@
   }
  ],
  "wire": [
+  [
+   "Sat 1:42 a.m.",
+   "Latest",
+   "Legend Smiley comes off bench to score 18, leading Oregon State over Mississippi Valley State 81-65",
+   "The Canadian Press (via Winnipeg Free Press)",
+   "https://www.winnipegfreepress.com/uncategorized/2026/11/14/legend-smiley-comes-off-bench-to-score-18-leading-oregon-state-over-mississippi-valley-state-81-65",
+   "2026-11-14T06:42:57+00:00",
+   1
+  ],
   [
    "Sat 1:42 a.m.",
    "World",
@@ -145,7 +154,7 @@
    "Toronto Star",
    "https://www.thestar.com/news/world/europe/judo-star-teddy-riner-is-taking-on-what-may-be-his-toughest-battle-in-the-french-presidential-race/article_876771e7-d6a9-5a76-b361-c6bce466caff.html",
    "2026-11-14T05:47:28+00:00",
-   2
+   1
   ],
   [
    "Sat 12:42 a.m.",
@@ -245,18 +254,14 @@
    "https://www.cbsnews.com/live-updates/us-iran-war-trump-nuclear-material-no-deal/",
    "2026-11-14T04:44:21+00:00",
    1
-  ],
-  [
-   "Fri 11:41 p.m.",
-   "World",
-   "German spies granted sweeping new powers",
-   "Al Jazeera",
-   "https://www.aljazeera.com/news/2026/11/14/german-spies-granted-sweeping-new-powers?traffic_source=rss",
-   "2026-11-14T04:41:11+00:00",
-   1
   ]
  ],
  "blogs": [
+  {
+   "url": "https://www.thestar.com/news/gta/toronto-election-results-live/article_3ec1c84c-3d92-4440-b764-ac02c6602fb0.html",
+   "updated": "2026-11-13T22:35:07+00:00",
+   "ended": true
+  },
   {
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/27/israel-election-results-live-exit-polls-soon-as-netanyahu-faces-tight-race",
    "updated": "2026-10-28T22:40:53+00:00",
@@ -295,7 +300,7 @@
    "score": 26,
    "title": "Liberals Remain Dominant as Canadians Focus on United States",
    "url": "https://researchco.ca/2026/11/12/cdnpoli-nov2026/",
-   "outlets": 36,
+   "outlets": 37,
    "why": [
     "National Newswatch #4",
     "National Newswatch #5",
@@ -377,7 +382,19 @@
    "theme": ""
   }
  ],
- "canada": [],
+ "canada": [
+  {
+   "t": "Fri 10:39 p.m.",
+   "iso": "2026-11-14T03:39:49+00:00",
+   "region": "National",
+   "title": "Canada, Philippines conclude negotiations for free-trade agreement, aiming for 2027",
+   "summary": "Canada is also pursuing a broader trade agreement with the ASEAN bloc, which includes the Philippines and 10 other countries such as Thailand.",
+   "outlet": "Global News",
+   "url": "https://globalnews.ca/news/12150796/canada-philippines-trade-deal/",
+   "img": "https://globalnews.ca/wp-content/uploads/2026/11/2d5a8cb1797081da08c85efd347cf9dc480df876e35d9b7f2df0ad207f53def2.jpg?quality=65&strip=all&w=720&h=379&crop=1",
+   "moved": true
+  }
+ ],
  "auto": {
   "takeover": true,
   "stale_since": "2026-10-28T00:15:00+00:00",
@@ -387,8 +404,8 @@
     "words": [
      "nationwide",
      "flights",
-     "ground",
      "blames",
+     "ground",
      "lifts",
      "faa"
     ],
@@ -417,10 +434,11 @@
      "alt": "Flights resume in U.S. after hours-long nationwide ground stop halts travel",
      "outlet": "Toronto Star",
      "url": "https://www.thestar.com/news/canada/flights-resume-in-u-s-after-hours-long-nationwide-ground-stop-halts-travel/article_cdacf058-0c1e-4a31-8200-4fd94e560f20.html",
-     "since": "2026-11-14T06:21:29.624753+00:00"
+     "since": "2026-11-14T06:56:33.222863+00:00"
     },
     "photo_seen": [
-     "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/a/f3/af3b08f5-e305-5853-b10f-5ff54c303ddc/6af7ad6bd9610.image.jpg?crop=1953%2C1025%2C0%2C18&resize=1200%2C630&order=crop%2Cresize"
+     "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/a/f3/af3b08f5-e305-5853-b10f-5ff54c303ddc/6af7ad6bd9610.image.jpg?crop=1953%2C1025%2C0%2C18&resize=1200%2C630&order=crop%2Cresize",
+     "https://i.cbc.ca/ais/80c77054-0cc3-42cc-9397-fcd22d821606,1794626178616/full/max/0/default.jpg?im=Crop%2Crect%3D%28269%2C771%2C7619%2C4285%29%3BResize%3D620"
     ],
     "photos": [
      {
@@ -794,19 +812,18 @@
     "theme": "FAA ground stop",
     "ca_angle": {
      "specific": 2,
-     "official": 2
+     "official": 3
     },
     "canada": "tie",
     "canus": false,
     "incoherent": false,
     "popular": 5,
     "us_election": false,
-    "fronts": 10,
-    "fronts_ca": 5,
+    "fronts": 9,
+    "fronts_ca": 4,
     "fronts_who": [
      "CBC News",
      "CTV News",
-     "Toronto Star",
      "The Globe and Mail",
      "CP24",
      "CNN",
@@ -816,7 +833,7 @@
      "The Guardian"
     ],
     "judgment": "national",
-    "judgment_why": "National: leading 10 front pages (CBC News, CTV News, Toronto Star, The Globe and Mail, CP24, CNN).",
+    "judgment_why": "National: leading 9 front pages (CBC News, CTV News, The Globe and Mail, CP24, CNN, NBC News).",
     "weight": 75,
     "live": {
      "state": "now",
@@ -877,375 +894,6 @@
       "up": ""
      }
     ]
-   },
-   {
-    "key": "auto-123a3818",
-    "words": [
-     "philippines",
-     "manila",
-     "asean"
-    ],
-    "score": 28,
-    "outlets": 3,
-    "carriers": 14,
-    "tag": "Developing",
-    "title": "Canada, Philippines conclude negotiations for free-trade agreement, aiming for 2027",
-    "url": "https://globalnews.ca/news/12150796/canada-philippines-trade-deal/",
-    "outlet": "Global News",
-    "t": "Fri 10:39 p.m.",
-    "iso": "2026-11-14T03:39:49+00:00",
-    "summary": "Canada is also pursuing a broader trade agreement with the ASEAN bloc, which includes the Philippines and 10 other countries such as Thailand.",
-    "first": {
-     "outlet": "Prime Minister of Canada",
-     "url": "https://www.pm.gc.ca/en/news/backgrounders/2026/11/14/prime-minister-carney-strengthens-canadas-partnerships-asean-and",
-     "t": "Fri 1:56 p.m.",
-     "title": "Prime Minister Carney strengthens Canada’s partnerships with ASEAN and the Philippines to advance shared security and prosperity",
-     "iso": "2026-11-13T18:56:36+00:00"
-    },
-    "newest": "2026-11-14T05:24:42+00:00",
-    "photo": {
-     "src": "live/img/auto-123a3818-d708418e93.jpg",
-     "orig": "https://globalnews.ca/wp-content/uploads/2026/11/2d5a8cb1797081da08c85efd347cf9dc480df876e35d9b7f2df0ad207f53def2.jpg?quality=65&strip=all&w=720&h=379&crop=1",
-     "caption": "Prime Minister Mark Carney gestures as he poses for photographers with Philippine President Ferdinand Marcos Jr. before a meeting in Manila, Saturday, Nov. 14, 2026. — via Global News",
-     "alt": "Prime Minister Mark Carney gestures as he poses for photographers with Philippine President Ferdinand Marcos Jr. before a meeting in Manila, Saturday, Nov. 14, ",
-     "outlet": "Global News",
-     "url": "https://globalnews.ca/news/12150796/canada-philippines-trade-deal/",
-     "since": "2026-11-14T06:21:23.723641+00:00"
-    },
-    "photo_seen": [
-     "https://globalnews.ca/wp-content/uploads/2026/11/2d5a8cb1797081da08c85efd347cf9dc480df876e35d9b7f2df0ad207f53def2.jpg?quality=65&strip=all&w=720&h=379&crop=1"
-    ],
-    "photos": [
-     {
-      "src": "live/img/auto-123a3818-d708418e93.jpg",
-      "orig": "https://globalnews.ca/wp-content/uploads/2026/11/2d5a8cb1797081da08c85efd347cf9dc480df876e35d9b7f2df0ad207f53def2.jpg?quality=65&strip=all&w=720&h=379&crop=1",
-      "caption": "Prime Minister Mark Carney gestures as he poses for photographers with Philippine President Ferdinand Marcos Jr. before a meeting in Manila, Saturday, Nov. 14, 2026. — via Global News",
-      "alt": "Prime Minister Mark Carney gestures as he poses for photographers with Philippine President Ferdinand Marcos Jr. before a meeting in Manila, Saturday, Nov. 14, ",
-      "outlet": "Global News",
-      "url": "https://globalnews.ca/news/12150796/canada-philippines-trade-deal/"
-     },
-     {
-      "src": "live/img/auto-123a3818-7287f8ba11.jpg",
-      "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/d/67/d67a85cd-10a8-5337-ad72-01cde40dba16/6af7ca3e1dfa0.image.jpg?crop=1640%2C861%2C0%2C201&resize=1200%2C630&order=crop%2Cresize",
-      "caption": "From: Mark Carney signs Philippines trade agreement as Canada expands Asia trade push. — via Toronto Star",
-      "alt": "Mark Carney signs Philippines trade agreement as Canada expands Asia trade push",
-      "outlet": "Toronto Star",
-      "url": "https://www.thestar.com/politics/federal/na-carney-trade-nov12-embargoed-until-probably-9-45-pm-est-i-will-advise/article_a47fb7c5-c134-426e-aaaa-721a87c99599.html"
-     },
-     {
-      "src": "live/img/auto-123a3818-f00b78980e.jpg",
-      "orig": "https://www.cp24.com/resizer/v2/INB5Q7LNTXL2UR4IZ5FZYILFQU.jpg?smart=true&auth=2305972a17e1588ae6cc042c24f3398eca27175de5ae209d3277e857adf75e0b&width=1200&height=630",
-      "caption": "Prime Minister Mark Carney arrives in Manila on Saturday, Nov. 14, 2026. THE CANADIAN PRESS/Adrian Wyld. — via CP24",
-      "alt": "Prime Minister Mark Carney arrives in Manila on Saturday, Nov. 14, 2026. THE CANADIAN PRESS/Adrian Wyld",
-      "outlet": "CP24",
-      "url": "https://www.cp24.com/news/canada/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/"
-     },
-     {
-      "src": "live/img/auto-123a3818-c8760d18e0.jpg",
-      "orig": "https://winnipeg.citynews.ca/wp-content/blogs.dir/sites/13/2026/11/53aba6fac8b531a96271cad1972123e6be5bf2ff30c9b1fbd34b3ee59fa9a071.jpg",
-      "caption": "From: Carney arrives in Manila for ASEAN summit, seeks trade pact with Philippines. — via CityNews Winnipeg",
-      "alt": "Carney arrives in Manila for ASEAN summit, seeks trade pact with Philippines",
-      "outlet": "CityNews Winnipeg",
-      "url": "https://winnipeg.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/"
-     }
-    ],
-    "independent": 3,
-    "reports": [
-     {
-      "t": "Sat 12:24 a.m.",
-      "iso": "2026-11-14T05:24:42+00:00",
-      "outlet": "Prime Minister of Canada",
-      "title": "Prime Minister Carney meets with President of the Philippines Ferdinand Marcos Jr.",
-      "url": "https://www.pm.gc.ca/en/news/readouts/2026/11/14/prime-minister-carney-meets-president-philippines-ferdinand-marcos-jr",
-      "desc": "Today, the Prime Minister, Mark Carney, met with the President of the Philippines, Ferdinand Marcos Jr., during his visit to Manila, Philippines."
-     },
-     {
-      "t": "Fri 10:39 p.m.",
-      "iso": "2026-11-14T03:39:49+00:00",
-      "outlet": "Global News",
-      "title": "Canada, Philippines conclude negotiations for free-trade agreement, aiming for 2027",
-      "url": "https://globalnews.ca/news/12150796/canada-philippines-trade-deal/",
-      "desc": "Canada is also pursuing a broader trade agreement with the ASEAN bloc, which includes the Philippines and 10 other countries such as Thailand."
-     },
-     {
-      "t": "Fri 10:27 p.m.",
-      "iso": "2026-11-14T03:27:16+00:00",
-      "outlet": "CBC News",
-      "title": "Canada, Philippines wrap talks for free-trade agreement, expected to be signed in 2027",
-      "url": "https://www.cbc.ca/news/politics/canada-philippines-free-trade-agreement-talks-9.7422009?cmp=rss",
-      "desc": "Canada and the Philippines have concluded talks for a free-trade agreement, which is expected to be formally signed next year."
-     },
-     {
-      "t": "Fri 9:55 p.m.",
-      "iso": "2026-11-14T02:55:00+00:00",
-      "outlet": "Toronto Star",
-      "title": "Mark Carney signs Philippines trade agreement as Canada expands Asia trade push",
-      "url": "https://www.thestar.com/politics/federal/na-carney-trade-nov12-embargoed-until-probably-9-45-pm-est-i-will-advise/article_a47fb7c5-c134-426e-aaaa-721a87c99599.html",
-      "desc": "PM spent Friday the 13th in the air, crossing the international date line in search of international deals."
-     },
-     {
-      "t": "Fri 6:20 p.m.",
-      "iso": "2026-11-13T23:20:36+00:00",
-      "outlet": "CP24",
-      "title": "Carney arrives in Manila for ASEAN summit, seeks trade pact with Philippines",
-      "url": "https://www.cp24.com/news/canada/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/",
-      "desc": "Prime Minister Mark Carney has arrived in the Philippines for the Association of Southeast Asian Nations summit."
-     },
-     {
-      "t": "Fri 6:20 p.m.",
-      "iso": "2026-11-13T23:20:36+00:00",
-      "outlet": "BNN Bloomberg",
-      "title": "Carney arrives in Manila for ASEAN summit, seeks trade pact with Philippines",
-      "url": "https://www.bnnbloomberg.ca/business/international/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/",
-      "desc": ""
-     },
-     {
-      "t": "Fri 5:03 p.m.",
-      "iso": "2026-11-13T22:03:28+00:00",
-      "outlet": "CityNews Winnipeg",
-      "title": "Carney arrives in Manila for ASEAN summit, seeks trade pact with Philippines",
-      "url": "https://winnipeg.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/",
-      "desc": ""
-     },
-     {
-      "t": "Fri 5:03 p.m.",
-      "iso": "2026-11-13T22:03:28+00:00",
-      "outlet": "CityNews Vancouver",
-      "title": "Carney arrives in Manila for ASEAN summit, seeks trade pact with Philippines",
-      "url": "https://vancouver.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/",
-      "desc": ""
-     },
-     {
-      "t": "Fri 5:03 p.m.",
-      "iso": "2026-11-13T22:03:28+00:00",
-      "outlet": "CityNews Ottawa",
-      "title": "Carney arrives in Manila for ASEAN summit, seeks trade pact with Philippines",
-      "url": "https://ottawa.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/",
-      "desc": ""
-     },
-     {
-      "t": "Fri 5:03 p.m.",
-      "iso": "2026-11-13T22:03:28+00:00",
-      "outlet": "CityNews Montreal",
-      "title": "Carney arrives in Manila for ASEAN summit, seeks trade pact with Philippines",
-      "url": "https://montreal.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/",
-      "desc": ""
-     },
-     {
-      "t": "Fri 5:03 p.m.",
-      "iso": "2026-11-13T22:03:28+00:00",
-      "outlet": "CityNews Halifax",
-      "title": "Carney arrives in Manila for ASEAN summit, seeks trade pact with Philippines",
-      "url": "https://halifax.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/",
-      "desc": ""
-     },
-     {
-      "t": "Fri 5:03 p.m.",
-      "iso": "2026-11-13T22:03:28+00:00",
-      "outlet": "CityNews Edmonton",
-      "title": "Carney arrives in Manila for ASEAN summit, seeks trade pact with Philippines",
-      "url": "https://edmonton.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/",
-      "desc": ""
-     },
-     {
-      "t": "Fri 5:03 p.m.",
-      "iso": "2026-11-13T22:03:28+00:00",
-      "outlet": "CityNews Calgary",
-      "title": "Carney arrives in Manila for ASEAN summit, seeks trade pact with Philippines",
-      "url": "https://calgary.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/",
-      "desc": ""
-     },
-     {
-      "t": "Fri 5:03 p.m.",
-      "iso": "2026-11-13T22:03:28+00:00",
-      "outlet": "CityNews",
-      "title": "Canada, Philippines conclude negotiations for free-trade agreement, aiming for 2027",
-      "url": "https://toronto.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/",
-      "desc": ""
-     }
-    ],
-    "sources": [
-     {
-      "t": "Sat 12:24 a.m.",
-      "primary": true,
-      "outlet": "Prime Minister of Canada",
-      "title": "Prime Minister Carney meets with President of the Philippines Ferdinand Marcos Jr.",
-      "url": "https://www.pm.gc.ca/en/news/readouts/2026/11/14/prime-minister-carney-meets-president-philippines-ferdinand-marcos-jr",
-      "desc": "Today, the Prime Minister, Mark Carney, met with the President of the Philippines, Ferdinand Marcos Jr., during his visit to Manila, Philippines.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Prime Minister of Canada",
-        "src": "Prime Minister of Canada",
-        "byline": ""
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Fri 5:03 p.m.",
-      "primary": false,
-      "outlet": "CityNews Winnipeg",
-      "title": "Carney arrives in Manila for ASEAN summit, seeks trade pact with Philippines",
-      "url": "https://winnipeg.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/",
-      "desc": "Prime Minister Mark Carney has arrived in the Philippines for the Association of Southeast Asian Nations summit.",
-      "wire": "The Canadian Press",
-      "by": [
-       {
-        "outlet": "CityNews Winnipeg",
-        "src": "The Canadian Press",
-        "byline": "3f5fe805acc41a6fdf\"}] \"Dylan Robertson, The Canadian Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews Vancouver",
-        "src": "The Canadian Press",
-        "byline": "3f5fe805acc41a6fdf\"}] \"Dylan Robertson, The Canadian Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews Ottawa",
-        "src": "The Canadian Press",
-        "byline": "3f5fe805acc41a6fdf\"}] \"Dylan Robertson, The Canadian Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews Montreal",
-        "src": "The Canadian Press",
-        "byline": "3f5fe805acc41a6fdf\"}] \"Dylan Robertson, The Canadian Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews Halifax",
-        "src": "The Canadian Press",
-        "byline": "3f5fe805acc41a6fdf\"}] \"Dylan Robertson, The Canadian Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews Edmonton",
-        "src": "The Canadian Press",
-        "byline": "3f5fe805acc41a6fdf\"}] \"Dylan Robertson, The Canadian Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews Calgary",
-        "src": "The Canadian Press",
-        "byline": "3f5fe805acc41a6fdf\"}] \"Dylan Robertson, The Canadian Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews",
-        "src": "The Canadian Press",
-        "byline": "3f5fe805acc41a6fdf\"}] \"Dylan Robertson, The Canadian Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CP24",
-        "src": "The Canadian Press",
-        "byline": "\"@type\": \"Person\",\n      \"name\": \"The Canadian Press\",\n      \n    }\n  ]"
-       },
-       {
-        "outlet": "BNN Bloomberg",
-        "src": "The Canadian Press",
-        "byline": "\"@type\": \"Person\",\n      \"name\": \"The Canadian Press\",\n      \n    }\n  ]"
-       },
-       {
-        "outlet": "CBC News",
-        "src": "The Canadian Press",
-        "byline": "ull,\"photoURL\":\"\"},\"recentContent\":{}} \"The Canadian Press\"  The Canadian Pres"
-       },
-       {
-        "outlet": "Global News",
-        "src": "The Canadian Press",
-        "byline": "By Dylan Robertson \n\t\t\t\t\t\t\t\t\t\tThe Canadian Press"
-       }
-      ],
-      "copies": [
-       {
-        "outlet": "CityNews Vancouver",
-        "url": "https://vancouver.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/"
-       },
-       {
-        "outlet": "CityNews Ottawa",
-        "url": "https://ottawa.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/"
-       },
-       {
-        "outlet": "CityNews Montreal",
-        "url": "https://montreal.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/"
-       },
-       {
-        "outlet": "CityNews Halifax",
-        "url": "https://halifax.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/"
-       },
-       {
-        "outlet": "CityNews Edmonton",
-        "url": "https://edmonton.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/"
-       },
-       {
-        "outlet": "CityNews Calgary",
-        "url": "https://calgary.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/"
-       },
-       {
-        "outlet": "CityNews",
-        "url": "https://toronto.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/"
-       },
-       {
-        "outlet": "CP24",
-        "url": "https://www.cp24.com/news/canada/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/"
-       },
-       {
-        "outlet": "BNN Bloomberg",
-        "url": "https://www.bnnbloomberg.ca/business/international/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/"
-       },
-       {
-        "outlet": "CBC News",
-        "url": "https://www.cbc.ca/news/politics/canada-philippines-free-trade-agreement-talks-9.7422009?cmp=rss"
-       },
-       {
-        "outlet": "Global News",
-        "url": "https://globalnews.ca/news/12150796/canada-philippines-trade-deal/"
-       }
-      ]
-     },
-     {
-      "t": "Fri 9:55 p.m.",
-      "primary": false,
-      "outlet": "Toronto Star",
-      "title": "Mark Carney signs Philippines trade agreement as Canada expands Asia trade push",
-      "url": "https://www.thestar.com/politics/federal/na-carney-trade-nov12-embargoed-until-probably-9-45-pm-est-i-will-advise/article_a47fb7c5-c134-426e-aaaa-721a87c99599.html",
-      "desc": "PM spent Friday the 13th in the air, crossing the international date line in search of international deals.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Toronto Star",
-        "src": "Torstar",
-        "byline": "own staff: Bureau Chief"
-       }
-      ],
-      "copies": []
-     }
-    ],
-    "replaces_top": false,
-    "events": [],
-    "theme": "",
-    "canada": "canadian",
-    "canus": false,
-    "incoherent": false,
-    "popular": 4,
-    "us_election": false,
-    "fronts": 3,
-    "fronts_ca": 3,
-    "fronts_who": [
-     "CTV News",
-     "Toronto Star",
-     "The Globe and Mail"
-    ],
-    "leads_ca": true,
-    "judgment": "national",
-    "judgment_why": "National: affects many people; carried across the country (8 cities).",
-    "weight": 60,
-    "videos": [
-     {
-      "net": "CTV News",
-      "url": "https://www.youtube.com/watch?v=2x--MlrfxIA",
-      "title": "CTV News in the Philippines: PM Carney signs new free trade agreement",
-      "img": "https://i.ytimg.com/vi/2x--MlrfxIA/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     }
-    ]
    }
   ],
   "considered": [
@@ -1261,11 +909,10 @@
     "canada": "tie",
     "theme": "FAA ground stop",
     "top": true,
-    "fronts": 10,
+    "fronts": 9,
     "fronts_who": [
      "CBC News",
      "CTV News",
-     "Toronto Star",
      "The Globe and Mail",
      "CP24",
      "CNN",
@@ -1277,35 +924,12 @@
     "rule": "Leading other newsrooms' front pages (Canadian ones among them): the story everyone is leading with",
     "carriers": 32,
     "judgment": "national",
-    "why_judged": "National: leading 10 front pages (CBC News, CTV News, Toronto Star, The Globe and Mail, CP24, CNN)."
-   },
-   {
-    "title": "Canada, Philippines conclude negotiations for free-trade agreement, aiming for 2027",
-    "url": "https://globalnews.ca/news/12150796/canada-philippines-trade-deal/",
-    "rank": 2,
-    "live": "",
-    "weight": 60,
-    "score": 28,
-    "independent": 3,
-    "most_read": 4,
-    "canada": "canadian",
-    "theme": "",
-    "top": true,
-    "fronts": 3,
-    "fronts_who": [
-     "CTV News",
-     "Toronto Star",
-     "The Globe and Mail"
-    ],
-    "rule": "Canadian, leading the most Canadian front pages: the story Canada's newsrooms are leading with",
-    "carriers": 14,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (8 cities)."
+    "why_judged": "National: leading 9 front pages (CBC News, CTV News, The Globe and Mail, CP24, CNN, NBC News)."
    },
    {
     "title": "Microsoft outage shows the risks of relying on a single technology provider for essential services",
     "url": "https://www.cp24.com/news/world/2026/11/13/microsoft-reports-progress-as-it-works-to-recover-email-and-other-services-in-a-global-outage/",
-    "rank": 3,
+    "rank": 2,
     "live": "",
     "weight": 44,
     "score": 14,
@@ -1324,7 +948,7 @@
    {
     "title": "Democrat flips Alaska governor's mansion after Trump-backed GOP infighting",
     "url": "https://www.foxnews.com/politics/democrat-flips-alaska-governors-mansion-trump-backed-gop-infighting",
-    "rank": 4,
+    "rank": 3,
     "live": "",
     "weight": 31.5,
     "score": 9,
@@ -1346,7 +970,7 @@
    {
     "title": "Rep. Lauren Boebert of Colorado loses House seat to Democrat Eileen Laubacher",
     "url": "https://www.cp24.com/news/world/2026/11/13/rep-lauren-boebert-of-colorado-loses-house-seat-to-democrat-eileen-laubacher/",
-    "rank": 5,
+    "rank": 4,
     "live": "",
     "weight": 22.0,
     "score": 8,
@@ -1368,7 +992,7 @@
    {
     "title": "Melanie Joly puts 'aggressive package' to Stellantis in bid to stop sale of Brampton plant",
     "url": "https://www.thestar.com/politics/federal/joly-puts-aggressive-package-to-stellantis-in-bid-to-stop-sale-of-brampton-plant/article_6fbd2eec-e3ad-44be-b332-94f7644a6b33.html",
-    "rank": 6,
+    "rank": 5,
     "live": "",
     "weight": 23.5,
     "score": 5,
@@ -1389,7 +1013,7 @@
    {
     "title": "'Miracle on the Mississippi': All aboard river cruise boat survive crash with tanker in New Orleans",
     "url": "https://www.cbc.ca/news/world/tanker-hits-cruise-boat-new-orleans-mississippi-river-9.7421309",
-    "rank": 7,
+    "rank": 6,
     "live": "",
     "weight": 51,
     "score": 26,
@@ -1415,7 +1039,7 @@
    {
     "title": "SpaceX to attempt to catch its first Starship on land in 15th flight",
     "url": "https://www.cbc.ca/news/science/spacex-starship-flight-15-9.7420700",
-    "rank": 8,
+    "rank": 7,
     "live": "",
     "weight": 15.0,
     "score": 6,
@@ -1432,6 +1056,28 @@
     "carriers": 6,
     "judgment": "regional",
     "why_judged": "Regional: affects some people; carried beyond one city."
+   },
+   {
+    "title": "Canada, Philippines conclude negotiations for free-trade agreement, aiming for 2027",
+    "url": "https://globalnews.ca/news/12150796/canada-philippines-trade-deal/",
+    "rank": 8,
+    "live": "",
+    "weight": 60,
+    "score": 28,
+    "independent": 3,
+    "most_read": 4,
+    "canada": "canadian",
+    "theme": "",
+    "top": false,
+    "fronts": 2,
+    "fronts_who": [
+     "CTV News",
+     "The Globe and Mail"
+    ],
+    "rule": "Canadian, still developing",
+    "carriers": 14,
+    "judgment": "national",
+    "why_judged": "National: affects many people; carried across the country (8 cities)."
    },
    {
     "title": "Good Talk -- What Really Happened on Stellantis",
@@ -1464,8 +1110,22 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
   ],
-  "moved": [],
-  "top_n": 2,
+  "moved": [
+   {
+    "to": "canada",
+    "key": "auto-123a3818",
+    "title": "Canada, Philippines conclude negotiations for free-trade agreement, aiming for 2027",
+    "url": "https://globalnews.ca/news/12150796/canada-philippines-trade-deal/",
+    "outlet": "Global News",
+    "t": "Fri 10:39 p.m.",
+    "iso": "2026-11-14T03:39:49+00:00",
+    "summary": "Canada is also pursuing a broader trade agreement with the ASEAN bloc, which includes the Philippines and 10 other countries such as Thailand.",
+    "img": "https://globalnews.ca/wp-content/uploads/2026/11/2d5a8cb1797081da08c85efd347cf9dc480df876e35d9b7f2df0ad207f53def2.jpg?quality=65&strip=all&w=720&h=379&crop=1",
+    "scoop": false,
+    "into": "auto-2eb87e32"
+   }
+  ],
+  "top_n": 1,
   "more": [
    {
     "key": "auto-3c6839df",
@@ -1502,7 +1162,7 @@
      "alt": "A Microsoft logo and sign outside the Microsoft Visitor Center are seen at the company's headquarters Monday, Nov. 9, 2026, in Redmond, Wash. (AP Photo/Lindsey ",
      "outlet": "CP24",
      "url": "https://www.cp24.com/news/world/2026/11/13/microsoft-reports-progress-as-it-works-to-recover-email-and-other-services-in-a-global-outage/",
-     "since": "2026-11-14T06:46:23.102234+00:00"
+     "since": "2026-11-14T06:56:34.134734+00:00"
     },
     "photo_seen": [
      "https://www.cp24.com/resizer/v2/MVSPYF6MLFBW3AKSYOUBR2HNSE.jpg?smart=true&auth=3701131a5371e4a48a594900991027f6753a91b4c053ba9ef3c5396c768b69a2&width=1200&height=630"
@@ -1896,7 +1556,7 @@
     "fronts": 0,
     "fronts_ca": 0,
     "fronts_who": [],
-    "outled_ca": 3,
+    "outled_ca": 2,
     "judgment": "national",
     "judgment_why": "National: affects some people; carried across the country (national desks).",
     "weight": 44,
@@ -1926,10 +1586,10 @@
       "up": ""
      },
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=6SHULSypliw",
-      "title": "World reacts to Microsoft 365, including Outlook outage: \"Really frustrating\"",
-      "img": "https://i.ytimg.com/vi/6SHULSypliw/hqdefault.jpg",
+      "net": "CP24",
+      "url": "https://www.youtube.com/watch?v=XLUybEALWnQ",
+      "title": "Microsoft outage | Should companies rethink how they rely on big tech? Analyst explains",
+      "img": "https://i.ytimg.com/vi/XLUybEALWnQ/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1939,11 +1599,11 @@
     "key": "auto-3012f82b",
     "words": [
      "laubacher",
-     "democrat",
      "colorado",
+     "democrat",
      "boebert",
-     "eileen",
-     "lauren"
+     "lauren",
+     "eileen"
     ],
     "score": 8,
     "outlets": 6,
@@ -1970,7 +1630,7 @@
      "alt": "Rep. Lauren Boebert, R-Colo., arrives for a House GOP leadership candidate forum and elections for the 120th Congress, Tuesday, Nov. 10, 2026, on Capitol Hill i",
      "outlet": "CP24",
      "url": "https://www.cp24.com/news/world/2026/11/13/rep-lauren-boebert-of-colorado-loses-house-seat-to-democrat-eileen-laubacher/",
-     "since": "2026-11-14T06:46:24.804651+00:00"
+     "since": "2026-11-14T06:56:35.873355+00:00"
     },
     "photo_seen": [
      "https://www.cp24.com/resizer/v2/S3S23S7E7A2ISSNPB2CZNHFY54.jpg?smart=true&auth=82d141910125c068cc522058b2497910ee5eb5cdec39bd12870bda74efa3d062&width=1200&height=630"
@@ -2217,7 +1877,7 @@
      "ABC News",
      "BBC News"
     ],
-    "outled_ca": 3,
+    "outled_ca": 2,
     "judgment": "national",
     "judgment_why": "National: affects some people; carried across the country (national desks).",
     "weight": 22.0,
@@ -2235,8 +1895,8 @@
    {
     "key": "auto-730591c4",
     "words": [
-     "aggressive",
      "stellantis",
+     "aggressive",
      "brampton",
      "package",
      "plant",
@@ -2267,7 +1927,7 @@
      "alt": "Melanie Joly puts 'aggressive package' to Stellantis in bid to stop sale of Brampton plant",
      "outlet": "Toronto Star",
      "url": "https://www.thestar.com/politics/federal/joly-puts-aggressive-package-to-stellantis-in-bid-to-stop-sale-of-brampton-plant/article_6fbd2eec-e3ad-44be-b332-94f7644a6b33.html",
-     "since": "2026-11-14T06:46:26.207121+00:00"
+     "since": "2026-11-14T06:56:37.337217+00:00"
     },
     "photo_seen": [
      "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/1/8d/18df8bcd-1bbc-5fce-aa7b-20f4c89eaeaa/6af742135a73e.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
@@ -2447,14 +2107,6 @@
     "weight": 23.5,
     "videos": [
      {
-      "net": "CityNews",
-      "url": "https://www.youtube.com/watch?v=JYwVDBrXSto",
-      "title": "Feds, Ontario offering Stellantis 'aggressive package' to keep Brampton auto plant open",
-      "img": "https://i.ytimg.com/vi/JYwVDBrXSto/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
       "net": "CBC News",
       "url": "https://www.youtube.com/watch?v=jVZlG0TAlX8",
       "title": "Stelco recalls 175 workers as Ottawa works to find solution for Stellantis plant | Power & Politics",
@@ -2475,6 +2127,14 @@
       "url": "https://www.youtube.com/watch?v=GG2-AZt3IOM",
       "title": "Reporter Roundtable: Stellantis stakeholders gather to discuss plant sale | Power & Politics",
       "img": "https://i.ytimg.com/vi/GG2-AZt3IOM/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=UluY82wwpWA",
+      "title": "Stellantis should 'pay back every penny': Ontario NDP leader | Power & Politics",
+      "img": "https://i.ytimg.com/vi/UluY82wwpWA/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -2655,7 +2315,7 @@
    "id": "TqCW2oBZtdw",
    "r": "ca",
    "o": "CTV News",
-   "t": "Multi-day Microsoft 365 outage affected northern municipalities",
+   "t": "Microsoft outage ripples through hospitals, governments, cities",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=TqCW2oBZtdw",
@@ -2764,20 +2424,6 @@
    "geo": "unknown"
   },
   {
-   "id": "cHvJFffviOg",
-   "r": "us",
-   "o": "C-SPAN",
-   "t": "\"When we had an outage, I didn't stand there complaining about the Trump administration.\"",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=cHvJFffviOg",
-   "img": "https://i.ytimg.com/vi/cHvJFffviOg/hqdefault.jpg",
-   "up": "2026-11-13",
-   "added": "2026-11-14T02:20:59.543519+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "qS_JvNGbQuQ",
    "r": "us",
    "o": "CBS News",
@@ -2848,20 +2494,6 @@
    "geo": "unknown"
   },
   {
-   "id": "8nbSppPtgkk",
-   "r": "us",
-   "o": "C-SPAN",
-   "t": "Sec Mullin Says New Equipment & Technology was Overwhelming the Older System",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=8nbSppPtgkk",
-   "img": "https://i.ytimg.com/vi/8nbSppPtgkk/hqdefault.jpg",
-   "up": "2026-11-13",
-   "added": "2026-11-14T04:04:22.822435+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "GPELI6zPmYM",
    "r": "us",
    "o": "ABC News",
@@ -2884,7 +2516,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=nl24ff01vZA",
    "img": "https://i.ytimg.com/vi/nl24ff01vZA/hqdefault.jpg",
-   "up": "2026-11-14",
+   "up": "2026-11-13",
    "added": "2026-11-14T04:54:06.244437+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -2898,7 +2530,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=5jw4WtsMQqU",
    "img": "https://i.ytimg.com/vi/5jw4WtsMQqU/hqdefault.jpg",
-   "up": "2026-11-14",
+   "up": "2026-11-13",
    "added": "2026-11-14T04:54:06.244437+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -3005,7 +2637,7 @@
    "id": "j4O9poQT62Q",
    "r": "world",
    "o": "Al Jazeera",
-   "t": "US ground stop: US flights resume slowly as Duffy blames overloaded legacy air traffic systems",
+   "t": "US ground stop: Duffy urges Congress to fund $50bn air traffic overhaul after airspace reopens",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=j4O9poQT62Q",
@@ -3075,7 +2707,7 @@
    "id": "eEpNla19mUs",
    "r": "world",
    "o": "DW News",
-   "t": "What businesses must learn from the Microsoft 365 outage | DW News",
+   "t": "Why another Microsoft 365 disruption is highly likely | DW News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=eEpNla19mUs",
@@ -3103,7 +2735,7 @@
    "id": "_J3iMWXWyOU",
    "r": "world",
    "o": "Sky News",
-   "t": "How tracking a British teenager behind US bomb threats exposed a network targeting children",
+   "t": "Tracking a British teenager behind US bomb threats - and the dark online network exposed",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=_J3iMWXWyOU",
@@ -3600,6 +3232,22 @@
    "report": false,
    "iso": "2026-11-13T20:06:00+00:00",
    "auto": true
+  },
+  {
+   "cat": "intl",
+   "media": "none",
+   "initials": "UN",
+   "name": "United Nations",
+   "role": "UN News",
+   "date": "Nov 13",
+   "platform": "Official statement",
+   "handle": "news.un.org",
+   "hed": "‘Here, you can eat until you’re full’: Oleshky evacuees savour first proper meals in years",
+   "summary": "In a quiet hospital corridor in Kyiv, staff and volunteers push carts carrying steaming pots of chicken soup, bread and buckwheat porridge to patients recently evacuated from Russian-occupied Oleshky, in Ukraine’s southern Kherson region.",
+   "href": "https://news.un.org/feed/view/en/story/2026/11/1168803",
+   "report": false,
+   "iso": "2026-11-13T12:00:00+00:00",
+   "auto": true
   }
  ],
  "mostread": {
@@ -3857,7 +3505,7 @@
    "title": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
    "outlet": "BBC News",
    "t": "Sat 12:52 a.m.",
-   "hot": true
+   "hot": false
   },
   {
    "city": "Kyiv",
@@ -3935,18 +3583,6 @@
    "img": "https://www.pm.gc.ca/sites/pm/files/media/override_sharing/2025-11/PM_Readout_EN.png"
   },
   {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Fri 8:00 p.m.",
-   "iso": "2026-11-14T01:00:30+00:00",
-   "title": "Stuart Bonds made ‘racist’ and ‘divisive’ comments. But One Nation is showing no sign of dumping the NSW candidate",
-   "summary": "The former coalminer’s claim Australians are being ‘demographically replaced’ sparked wide criticism, but his party has shown no signs of dumping him",
-   "outlet": "The Guardian, CBC News, CTV News (CP), Toronto Star",
-   "n": 4,
-   "url": "https://www.theguardian.com/australia-news/2026/nov/14/one-nation-nsw-candidate-stuart-bonds-ntwnfb",
-   "img": "https://i.guim.co.uk/img/media/bad470fd72c96843e66c54b24e828b110309e74f/920_806_5642_4517/master/5642.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=55f0d9b127f27ce7d1ec80594aa38bb2"
-  },
-  {
    "desk": "world",
    "pic": "globe",
    "t": "Fri 6:57 p.m.",
@@ -3993,6 +3629,18 @@
    "n": 3,
    "url": "https://www.aljazeera.com/news/2026/11/14/could-one-daily-pill-narrow-the-diabetes-treatment-gap-in-the-global-south?traffic_source=rss",
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/shutterstock_2690401343-1794573861.jpg?resize=1920%2C1440"
+  },
+  {
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Fri 8:00 p.m.",
+   "iso": "2026-11-14T01:00:30+00:00",
+   "title": "Stuart Bonds made ‘racist’ and ‘divisive’ comments. But One Nation is showing no sign of dumping the NSW candidate",
+   "summary": "The former coalminer’s claim Australians are being ‘demographically replaced’ sparked wide criticism, but his party has shown no signs of dumping him",
+   "outlet": "The Guardian, CBC News, Toronto Star + CTV News (CP)",
+   "n": 3,
+   "url": "https://www.theguardian.com/australia-news/2026/nov/14/one-nation-nsw-candidate-stuart-bonds-ntwnfb",
+   "img": "https://i.guim.co.uk/img/media/bad470fd72c96843e66c54b24e828b110309e74f/920_806_5642_4517/master/5642.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=55f0d9b127f27ce7d1ec80594aa38bb2"
   },
   {
    "desk": "politics",
@@ -4049,7 +3697,7 @@
    "iso": "2026-11-14T05:00:35+00:00",
    "title": "University hounded out of Hungary by Orbán reaches out to new government",
    "summary": "Prospect of partial return to Budapest by Central European University suggests confidence in Hungary’s future",
-   "outlet": "The Guardian, Toronto Star (AP)",
+   "outlet": "The Guardian, Toronto Star",
    "n": 2,
    "url": "https://www.theguardian.com/world/2026/nov/14/university-hungary-orban-soros-ceu",
    "img": "https://i.guim.co.uk/img/media/8ca795707b5c5b5c8936bdd665604906c2712ffe/405_0_4640_3712/master/4640.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=1211eac8f86e59cb123dc6bf91664676"
@@ -4061,9 +3709,21 @@
    "iso": "2026-11-14T04:22:19+00:00",
    "title": "West Bank Palestinian injured in firing by Israeli forces",
    "summary": "",
-   "outlet": "Middle East Eye, Toronto Star (AP)",
+   "outlet": "Middle East Eye, Toronto Star",
    "n": 2,
    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/west-bank-palestinian-injured-firing-israeli-forces",
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Iranians%20wave%20flags%20during%20a%20gathering%20in%20front%20of%20an%20anti-US%20billboard%20depicting%20US%20President%20Donald%20Trump%20in%20Tehran%27s%20Enghelab%20Square%20on%20November%203%2C%202026..jpg"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Fri 10:33 p.m.",
+   "iso": "2026-11-14T03:33:46+00:00",
+   "title": "Mossad chief in Washington for talks on Iran, report says",
+   "summary": "",
+   "outlet": "Middle East Eye, Fox News",
+   "n": 2,
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/mossad-chief-washington-talks-iran-report-says",
    "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Iranians%20wave%20flags%20during%20a%20gathering%20in%20front%20of%20an%20anti-US%20billboard%20depicting%20US%20President%20Donald%20Trump%20in%20Tehran%27s%20Enghelab%20Square%20on%20November%203%2C%202026..jpg"
   },
   {
@@ -4108,11 +3768,11 @@
    "t": "Fri 4:20 p.m.",
    "iso": "2026-11-13T21:20:19+00:00",
    "title": "Family Dollar to pay $63 million to settle allegations that it routinely overcharged customers",
-   "summary": "",
-   "outlet": "Toronto Star, CBS News",
+   "summary": "Family Dollar will pay $63 million to settle state and federal allegations that it routinely charged customers more at the register than the prices displayed on its shelves, website and",
+   "outlet": "Toronto Star (AP), CBS News",
    "n": 2,
    "url": "https://www.thestar.com/news/world/united-states/family-dollar-to-pay-63-million-to-settle-allegations-that-it-routinely-overcharged-customers/article_d71ad0c4-edec-55c5-8d32-8e20dd8b8069.html",
-   "img": ""
+   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/8/57/85720e69-62fd-5051-8afa-60d09ca704fd/6af7802f74d23.image.jpg?crop=1672%2C878%2C0%2C101&resize=1200%2C630&order=crop%2Cresize"
   },
   {
    "desk": "business",
@@ -4144,23 +3804,11 @@
    "t": "Sat 1:11 a.m.",
    "iso": "2026-11-14T06:11:43+00:00",
    "title": "Southeast Asian leaders will call for peaceful resolutions of conflicts. Trump will join final talks",
-   "summary": "",
+   "summary": "MANILA, Philippines (AP) — Some of the world’s most intractable conflicts will be high on the agenda when Southeast Asian leaders gather in the Philippine capital for annual summit meetings",
    "outlet": "Toronto Star + The Canadian Press (via Winnipeg Free Press)",
    "n": 1,
    "url": "https://www.thestar.com/news/world/asia/southeast-asian-leaders-will-call-for-peaceful-resolutions-of-conflicts-trump-will-join-final-talks/article_59fa0546-d8de-5177-ac15-f2b1b580d629.html",
-   "img": ""
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Sat 12:57 a.m.",
-   "iso": "2026-11-14T05:57:57+00:00",
-   "title": "With shifting Iran rhetoric following US elections, Trump leaves Mideast in limbo about path ahead",
-   "summary": "WASHINGTON (AP) — President Donald Trump has had a lot to say about his thinking on the way ahead in the Iran war since Republicans were trounced in last week's",
-   "outlet": "Toronto Star + The Canadian Press (via Winnipeg Free Press)",
-   "n": 1,
-   "url": "https://www.thestar.com/news/world/united-states/with-shifting-iran-rhetoric-following-us-elections-trump-leaves-mideast-in-limbo-about-path-ahead/article_84dd7cfb-b18b-58ff-8fbd-a180d989f86d.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/4/f8/4f82cc08-8111-5656-abd3-4d1b1aab92b5/6af7f8e12a237.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
+   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/a/a7/aa7abfcd-bd5e-5a3f-a8b9-040d795a73ce/6af7fc654dd96.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
   },
   {
    "desk": "politics",
@@ -4180,11 +3828,11 @@
    "t": "Fri 7:48 p.m.",
    "iso": "2026-11-14T00:48:22+00:00",
    "title": "Rubio acknowledges 'people are struggling' economically in speech after GOP midterm wipeout",
-   "summary": "WASHINGTON (AP) — Secretary of State Marco Rubio gave a sweeping speech to fellow conservatives on Friday evening acknowledging that Americans are struggling in the current economy, while also railing",
-   "outlet": "Toronto Star (AP)",
+   "summary": "",
+   "outlet": "Toronto Star",
    "n": 1,
    "url": "https://www.thestar.com/news/world/united-states/rubio-acknowledges-in-wake-of-gop-midterm-losses-that-people-are-struggling-economically/article_936c63db-4479-5119-a2c1-eccf9c20d8a8.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/e/cd/ecdd899b-3262-536f-bb6f-d3243acc09aa/6af7b039f05d0.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
+   "img": ""
   },
   {
    "desk": "business",
@@ -4376,26 +4024,6 @@
     "",
     "",
     "https://globalnews.ca/news/12150130/129-people-aboard-cruise-ship-struck-by-tanker-in-new-orleans-officials-say/"
-   ]
-  },
-  {
-   "o": "Toronto Star",
-   "ca": true,
-   "h": [
-    "Toronto Star News - Breaking News Stories",
-    "Mark Carney signs Philippines trade agreement as Canada expands Asia trade push",
-    "Maple Leafs captain Auston Matthews brings star power to the Star’s Santa Claus Fund",
-    "Flights resume in U.S. after hours-long nationwide ground stop halts travel",
-    "Pearson Airport, Air Canada to gradually resume U.S. flights after FAA lifts hours-long ground stop",
-    "Mark Carney invokes conflict screen after company run by friend got $2.3-billion contract"
-   ],
-   "u": [
-    "",
-    "https://www.thestar.com/politics/federal/na-carney-trade-nov12-embargoed-until-probably-9-45-pm-est-i-will-advise/article_a47fb7c5-c134-426e-aaaa-721a87c99599.html",
-    "https://www.thestar.com/initiatives/santa-claus-fund/maple-leafs-captain-auston-matthews-brings-star-power-to-the-star-s-santa-claus-fund/article_12c0aee8-6dac-42da-bae8-730c74851ef1.html",
-    "https://www.thestar.com/news/canada/flights-resume-in-u-s-after-hours-long-nationwide-ground-stop-halts-travel/article_cdacf058-0c1e-4a31-8200-4fd94e560f20.html",
-    "https://www.thestar.com/news/gta/toronto-pearson-airport-halts-u-s-flights-after-faa-s-nationwide-order-grounding-all-planes/article_afaa6d19-f46f-4dea-a3c6-2d83b7dd6d59.html",
-    "https://www.thestar.com/politics/federal/mark-carney-invokes-conflict-screen-after-company-run-by-friend-got-2-3b-contract/article_bd6d0c13-b9d0-4dea-8514-56c4b5682e29.html"
    ]
   },
   {
@@ -4636,7 +4264,7 @@
     "url": "https://www.youtube.com/watch?v=03WZomylSF8",
     "img": "https://i.ytimg.com/vi/03WZomylSF8/hqdefault.jpg",
     "story": "Flights resume in U.S. after hours-long nationwide ground st",
-    "watching": "19",
+    "watching": "31",
     "also": [
      {
       "net": "LiveNOW from FOX",
@@ -4709,7 +4337,7 @@
     "url": "https://www.youtube.com/watch?v=GPpOPaNQoss",
     "img": "https://i.ytimg.com/vi/GPpOPaNQoss/hqdefault.jpg",
     "story": "US airspace reopens after 'extraordinary circumstances' grounded fligh",
-    "watching": "220"
+    "watching": "250"
    }
   ],
   "upcoming": [],
@@ -4956,6 +4584,14 @@
    ],
    "official": [
     {
+     "outlet": "Toronto Pearson",
+     "title": "Pearson departures and arrivals",
+     "url": "https://www.torontopearson.com/en/departures",
+     "t": "",
+     "what": "Pearson Departures - YYZ Departures | Pearson Airport Skip to main content The U.S. Federal Aviation Administration (FAA) lifts ground stop, but U.S. flights arriving at and departing from Toronto Pearson continue to…",
+     "checked": true
+    },
+    {
      "outlet": "Calgary airport",
      "title": "YYC travel notice",
      "url": "https://www.yyc.com/",
@@ -5136,10 +4772,10 @@
      ]
     ],
     [
-     "Euronews",
-     "A tanker struck and partially submerged a New Orleans river cruise carrying around 129 passengers. Multiple people were rescued as search-and-rescue operations continued.",
+     "PBS NewsHour",
+     "A tanker struck a New Orleans river cruise with 129 passengers on board on Friday, partially submerging the boat. Rescues were underway on the Mississippi River, officials say.",
      [
-      6
+      7
      ]
     ]
    ],
