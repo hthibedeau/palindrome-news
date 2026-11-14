@@ -1,20 +1,24 @@
 {
- "checked": "2026-11-13T23:58:05.315476+00:00",
- "labels": 296,
- "problems": [],
+ "checked": "2026-11-14T01:30:50.480767+00:00",
+ "labels": 249,
+ "problems": [
+  {
+   "label": "ABC News",
+   "opens": "https://www.cp24.com/local/toronto/2026/11/14/hundreds-of-us-flights-at-torontos-two-airports-cancelled-amid-faas-ground-stop-order/",
+   "section": "developed",
+   "link": false,
+   "width": 390
+  },
+  {
+   "label": "BNN Bloomberg",
+   "opens": "https://www.cp24.com/local/toronto/2026/11/14/hundreds-of-us-flights-at-torontos-two-airports-cancelled-amid-faas-ground-stop-order/",
+   "section": "developed",
+   "link": false,
+   "width": 390
+  }
+ ],
  "guard": {
-  "fixed": [
-   {
-    "label": "Daily Hive ↗",
-    "was": "(card link) cp24.com",
-    "now": "https://dailyhive.com/canada/canada-feeling-impact-microsoft-outage"
-   },
-   {
-    "label": "PBS News",
-    "was": "(card link) pbs.org",
-    "now": "https://www.pbs.org/newshour/science/what-to-know-about-microsofts-outage-and-why-it-takes-so-long-to-restore-email-services"
-   }
-  ],
+  "fixed": [],
   "disabled": [],
   "lifted": []
  }
