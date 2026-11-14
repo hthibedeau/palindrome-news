@@ -1,10 +1,24 @@
 {
- "checked": "2026-11-14T03:12:11.478972+00:00",
- "labels": 250,
+ "checked": "2026-11-14T04:17:24.558157+00:00",
+ "labels": 222,
  "problems": [
   {
-   "label": "Times Colonist",
-   "opens": "https://www.cp24.com/local/toronto/2026/11/14/hundreds-of-us-flights-at-torontos-two-airports-cancelled-amid-faas-ground-stop-order/",
+   "label": "BBC News",
+   "opens": "https://www.thestar.com/politics/federal/joly-puts-aggressive-package-to-stellantis-in-bid-to-stop-sale-of-brampton-plant/article_6fbd2eec-e3ad-44be-b332-94f7644a6b33.html",
+   "section": "developed",
+   "link": false,
+   "width": 390
+  },
+  {
+   "label": "Al Jazeera",
+   "opens": "https://www.thestar.com/politics/federal/joly-puts-aggressive-package-to-stellantis-in-bid-to-stop-sale-of-brampton-plant/article_6fbd2eec-e3ad-44be-b332-94f7644a6b33.html",
+   "section": "developed",
+   "link": false,
+   "width": 390
+  },
+  {
+   "label": "Al Jazeera",
+   "opens": "https://www.thestar.com/politics/federal/joly-puts-aggressive-package-to-stellantis-in-bid-to-stop-sale-of-brampton-plant/article_6fbd2eec-e3ad-44be-b332-94f7644a6b33.html",
    "section": "developed",
    "link": false,
    "width": 1280
@@ -13,14 +27,29 @@
  "guard": {
   "fixed": [
    {
-    "label": "Daily Hive ↗",
+    "label": "Global News ↗",
     "was": "(card link) cp24.com",
-    "now": "https://dailyhive.com/canada/canada-feeling-impact-microsoft-outage"
+    "now": "https://globalnews.ca/news/12145277/toronto-orthodox-priest-criticized-for-accepting-medal-from-putin/"
+   },
+   {
+    "label": "CBC News ↗",
+    "was": "(card link) cp24.com",
+    "now": "https://www.cbc.ca/news/canada/ottawa/protesters-denounce-ovechkin-s-support-for-putin-as-capitals-visit-senators-in-ottawa-9.7416605"
    },
    {
     "label": "ABC News",
     "was": "(card link) abcnews.com",
     "now": "https://abcnews.com/US/live-updates/faa-ground-stop-live-updates-hundreds-flights-canceled/?id=138125140"
+   },
+   {
+    "label": "NBC News",
+    "was": "(card link) nbcnews.com",
+    "now": "https://www.nbcnews.com/world/china/trump-xi-putin-plan-unprecedented-joint-meeting-sidelines-apec-officia-rcna609275"
+   },
+   {
+    "label": "The Hill",
+    "was": "(card link) thehill.com",
+    "now": "https://thehill.com/policy/transportation/6220399-duffy-billions-air-traffic-ground-stop/"
    }
   ],
   "disabled": [],
