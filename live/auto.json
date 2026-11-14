@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-14T05:39:46.377063+00:00",
- "checkedLabel": "Sat 12:39 a.m.",
+ "checked": "2026-11-14T05:49:46.963356+00:00",
+ "checkedLabel": "Sat 12:49 a.m.",
  "stories": [
   {
    "key": "top",
@@ -31,6 +31,15 @@
  ],
  "wire": [
   [
+   "Sat 12:24 a.m.",
+   "Canada",
+   "Prime Minister Carney meets with President of the Philippines Ferdinand Marcos Jr.",
+   "Prime Minister of Canada",
+   "https://www.pm.gc.ca/en/news/readouts/2026/11/14/prime-minister-carney-meets-president-philippines-ferdinand-marcos-jr",
+   "2026-11-14T05:24:42+00:00",
+   5
+  ],
+  [
    "Sat 12:21 a.m.",
    "U.S.",
    "The Nvidia scandal is heightening America's AI rivalry with China ahead of Trump's visit",
@@ -55,7 +64,7 @@
    "Toronto Star",
    "https://www.thestar.com/news/world/united-states/alaska-voters-reject-ballot-measure-seeking-to-repeal-open-primaries-ranked-voting-system/article_3b9b23de-9883-5bcc-af9a-e014332c3f59.html",
    "2026-11-14T05:18:48+00:00",
-   3
+   4
   ],
   [
    "Sat 12:14 a.m.",
@@ -136,7 +145,7 @@
    "Al Jazeera",
    "https://www.aljazeera.com/news/2026/11/14/trump-xi-and-putin-to-hold-first-three-way-summit-in-china?traffic_source=rss",
    "2026-11-14T04:55:58+00:00",
-   2
+   1
   ],
   [
    "Fri 11:46 p.m.",
@@ -226,7 +235,7 @@
    "Global News",
    "https://globalnews.ca/news/12150796/canada-philippines-trade-deal/",
    "2026-11-14T03:39:49+00:00",
-   6
+   2
   ],
   [
    "Fri 10:38 p.m.",
@@ -244,15 +253,6 @@
    "Global News",
    "https://globalnews.ca/news/12150452/family-appeals-help-finding-missing-penticton-senior-dementia/",
    "2026-11-14T03:36:20+00:00",
-   1
-  ],
-  [
-   "Fri 10:31 p.m.",
-   "Canada",
-   "Video circulating in Chilliwack reportedly shows assault of young girl, RCMP says",
-   "Global News",
-   "https://globalnews.ca/news/12149973/video-chilliwack-reportedly-shows-assault-young-girl-rcmp/",
-   "2026-11-14T03:31:20+00:00",
    1
   ]
  ],
@@ -298,23 +298,25 @@
   },
   {
    "score": 26,
-   "title": "U.S. FAA lifts nationwide ground stop that cancelled thousands of flights around the world",
-   "url": "https://www.ctvnews.ca/world/article/faa-issues-ground-stop-for-all-flights-across-the-us-due-to-safety-issue-live-updates-here/",
-   "outlets": 32,
+   "title": "Liberals Remain Dominant as Canadians Focus on United States",
+   "url": "https://researchco.ca/2026/11/12/cdnpoli-nov2026/",
+   "outlets": 36,
    "why": [
+    "National Newswatch #4",
     "National Newswatch #5",
-    "CBC News front #6",
+    "CBC News front #6"
+   ],
+   "theme": ""
+  },
+  {
+   "score": 20,
+   "title": "U.S. flights cleared to take off again after ground stop order caused thousands of delays and cancellations",
+   "url": "https://www.cbc.ca/news/world/livestory/faa-grounds-all-flights-united-states-air-traffic-control-live-updates-9.7421404",
+   "outlets": 33,
+   "why": [
     "CBC News front #1"
    ],
    "theme": "FAA ground stop"
-  },
-  {
-   "score": 17,
-   "title": "U.S. FAA lifts nationwide ground stop that cancelled thousands of flights around the world",
-   "url": "https://www.ctvnews.ca/world/article/faa-issues-ground-stop-for-all-flights-across-the-us-due-to-safety-issue-live-updates-here/",
-   "outlets": 35,
-   "why": [],
-   "theme": ""
   },
   {
    "score": 13,
@@ -330,10 +332,10 @@
    "theme": ""
   },
   {
-   "score": 11,
+   "score": 12,
    "title": "No timeline for when Microsoft's multi-day outage might be fully fixed, company says",
    "url": "https://www.cbc.ca/news/world/livestory/microsoft-outage-outlook-teams-copilot-9.7420354",
-   "outlets": 11,
+   "outlets": 12,
    "why": [],
    "theme": "Microsoft outage"
   },
@@ -365,8 +367,8 @@
   },
   {
    "score": 6,
-   "title": "TikTok says it has taken down deepfake videos spreading trade falsehoods",
-   "url": "https://www.timescolonist.com/the-mix/tiktok-says-it-has-taken-down-deepfake-videos-spreading-trade-falsehoods-13014069",
+   "title": "Alaska voters reject ballot measure seeking to repeal open primaries, ranked voting system",
+   "url": "https://www.timescolonist.com/world-news/alaska-voters-reject-ballot-measure-seeking-to-repeal-open-primaries-ranked-voting-system-13017640",
    "outlets": 4,
    "why": [],
    "theme": ""
@@ -380,7 +382,19 @@
    "theme": ""
   }
  ],
- "canada": [],
+ "canada": [
+  {
+   "t": "Fri 10:39 p.m.",
+   "iso": "2026-11-14T03:39:49+00:00",
+   "region": "National",
+   "title": "Canada, Philippines conclude negotiations for free-trade agreement, aiming for 2027",
+   "summary": "Canada is also pursuing a broader trade agreement with the ASEAN bloc, which includes the Philippines and 10 other countries such as Thailand.",
+   "outlet": "Global News",
+   "url": "https://globalnews.ca/news/12150796/canada-philippines-trade-deal/",
+   "img": "https://globalnews.ca/wp-content/uploads/2026/11/2d5a8cb1797081da08c85efd347cf9dc480df876e35d9b7f2df0ad207f53def2.jpg?quality=65&strip=all&w=720&h=379&crop=1",
+   "moved": true
+  }
+ ],
  "auto": {
   "takeover": true,
   "stale_since": "2026-10-28T00:15:00+00:00",
@@ -395,9 +409,9 @@
      "lifts",
      "faa"
     ],
-    "score": 26,
-    "outlets": 19,
-    "carriers": 31,
+    "score": 20,
+    "outlets": 20,
+    "carriers": 32,
     "tag": "Breaking",
     "title": "Flights resume in U.S. after hours-long nationwide ground stop halts travel",
     "url": "https://www.thestar.com/news/canada/flights-resume-in-u-s-after-hours-long-nationwide-ground-stop-halts-travel/article_cdacf058-0c1e-4a31-8200-4fd94e560f20.html",
@@ -459,7 +473,7 @@
       "url": "https://www.cbsnews.com/news/faa-issues-nationwide-ground-stop/"
      }
     ],
-    "independent": 19,
+    "independent": 20,
     "reports": [
      {
       "t": "Sat 12:02 a.m.",
@@ -558,19 +572,19 @@
       "desc": ""
      },
      {
+      "t": "Fri 9:19 p.m.",
+      "iso": "2026-11-14T02:19:46+00:00",
+      "outlet": "VOCM",
+      "title": "FAA Lifts Nationwide Ground Stop; Thousands of Flights Backlogged",
+      "url": "https://vocm.com/2026/11/13/faa-lifts-ground-stop/",
+      "desc": ""
+     },
+     {
       "t": "Fri 8:52 p.m.",
       "iso": "2026-11-14T01:52:22+00:00",
       "outlet": "NBC News",
       "title": "Duffy details timeline of ground stop, demands more FAA funding",
       "url": "https://www.nbcnews.com/video/duffy-details-timeline-of-ground-stop-demands-more-faa-funding-273494085679",
-      "desc": ""
-     },
-     {
-      "t": "Fri 8:52 p.m.",
-      "iso": "2026-11-14T01:52:16+00:00",
-      "outlet": "CityNews Calgary",
-      "title": "FAA ground stop briefly halts U.S.-bound flights at Calgary airport",
-      "url": "https://calgary.citynews.ca/2026/11/13/calgary-airport-faa-ground-stop/",
       "desc": ""
      }
     ],
@@ -758,6 +772,23 @@
       "copies": []
      },
      {
+      "t": "Fri 9:19 p.m.",
+      "primary": false,
+      "outlet": "VOCM",
+      "title": "FAA Lifts Nationwide Ground Stop; Thousands of Flights Backlogged",
+      "url": "https://vocm.com/2026/11/13/faa-lifts-ground-stop/",
+      "desc": "The Federal Aviation Administration has lifted a ground stop, but not before thousands of cancellations and de...",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "VOCM",
+        "src": "VOCM",
+        "byline": "[{\"@type\":\"Person\",\"name\":\"Sara Strickland\"}] \"Sara Strickland\" Sara Strickland "
+       }
+      ],
+      "copies": []
+     },
+     {
       "t": "Fri 8:52 p.m.",
       "primary": false,
       "outlet": "NBC News",
@@ -773,23 +804,6 @@
        }
       ],
       "copies": []
-     },
-     {
-      "t": "Fri 8:52 p.m.",
-      "primary": false,
-      "outlet": "CityNews Calgary",
-      "title": "FAA ground stop briefly halts U.S.-bound flights at Calgary airport",
-      "url": "https://calgary.citynews.ca/2026/11/13/calgary-airport-faa-ground-stop/",
-      "desc": "Travellers heading to the United States from Calgary are facing delays after a ground stop ordered by the U.S. Federal Aviation Administration temporarily halted departures. In a statement, YYC Calgary International Airport said all U.S.-bound departures from Calgary have been cancelled Friday because of the FAA’s nationwide ground stop. The airport says delays are also […]",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "CityNews Calgary",
-        "src": "Rogers",
-        "byline": "[{\"@id\":\"https://calgary.citynews.ca/#/schema/person/e4cb531439298e29d0d08c669ac3e1f0\"}] \"michaelranger\" Michael Ranger "
-       }
-      ],
-      "copies": []
      }
     ],
     "replaces_top": false,
@@ -797,29 +811,27 @@
     "theme": "FAA ground stop",
     "ca_angle": {
      "specific": 2,
-     "official": 3
+     "official": 2
     },
     "canada": "tie",
     "canus": false,
     "incoherent": false,
     "popular": 5,
     "us_election": false,
-    "fronts": 9,
-    "fronts_ca": 5,
+    "fronts": 7,
+    "fronts_ca": 4,
     "fronts_who": [
      "CBC News",
      "CTV News",
-     "Toronto Star",
      "The Globe and Mail",
      "CP24",
      "CNN",
-     "CBS News",
      "ABC News",
      "The Guardian"
     ],
     "judgment": "national",
-    "judgment_why": "National: leading 9 front pages (CBC News, CTV News, Toronto Star, The Globe and Mail, CP24, CNN).",
-    "weight": 81,
+    "judgment_why": "National: leading 7 front pages (CBC News, CTV News, The Globe and Mail, CP24, CNN, ABC News).",
+    "weight": 75,
     "live": {
      "state": "now",
      "net": "Reuters",
@@ -844,14 +856,6 @@
       "up": ""
      },
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=iMNud87wjzE",
-      "title": "US officials say public was never in danger during FAA ground stop | FULL",
-      "img": "https://i.ytimg.com/vi/iMNud87wjzE/hqdefault.jpg",
-      "rec": true,
-      "up": ""
-     },
-     {
       "net": "CBS News",
       "url": "https://www.youtube.com/watch?v=Azayi9HCQ9U",
       "title": "FAA lifts nationwide ground stop | full coverage",
@@ -866,383 +870,13 @@
       "img": "https://i.ytimg.com/vi/ozDWiEV7tXQ/hqdefault.jpg",
       "rec": true,
       "up": ""
-     }
-    ]
-   },
-   {
-    "key": "auto-123a3818",
-    "words": [
-     "philippines",
-     "manila",
-     "asean"
-    ],
-    "score": 28,
-    "outlets": 3,
-    "carriers": 14,
-    "tag": "Breaking",
-    "title": "Canada, Philippines conclude negotiations for free-trade agreement, aiming for 2027",
-    "url": "https://globalnews.ca/news/12150796/canada-philippines-trade-deal/",
-    "outlet": "Global News",
-    "t": "Fri 10:39 p.m.",
-    "iso": "2026-11-14T03:39:49+00:00",
-    "summary": "Canada is also pursuing a broader trade agreement with the ASEAN bloc, which includes the Philippines and 10 other countries such as Thailand.",
-    "first": {
-     "outlet": "Prime Minister of Canada",
-     "url": "https://www.pm.gc.ca/en/news/backgrounders/2026/11/14/prime-minister-carney-strengthens-canadas-partnerships-asean-and",
-     "t": "Fri 1:56 p.m.",
-     "title": "Prime Minister Carney strengthens Canada’s partnerships with ASEAN and the Philippines to advance shared security and prosperity",
-     "iso": "2026-11-13T18:56:36+00:00"
-    },
-    "newest": "2026-11-14T03:39:49+00:00",
-    "photo": {
-     "src": "live/img/auto-123a3818-d708418e93.jpg",
-     "orig": "https://globalnews.ca/wp-content/uploads/2026/11/2d5a8cb1797081da08c85efd347cf9dc480df876e35d9b7f2df0ad207f53def2.jpg?quality=65&strip=all&w=720&h=379&crop=1",
-     "caption": "Prime Minister Mark Carney gestures as he poses for photographers with Philippine President Ferdinand Marcos Jr. before a meeting in Manila, Saturday, Nov. 14, 2026. — via Global News",
-     "alt": "Prime Minister Mark Carney gestures as he poses for photographers with Philippine President Ferdinand Marcos Jr. before a meeting in Manila, Saturday, Nov. 14, ",
-     "outlet": "Global News",
-     "url": "https://globalnews.ca/news/12150796/canada-philippines-trade-deal/",
-     "since": "2026-11-14T05:16:17.360524+00:00"
-    },
-    "photo_seen": [
-     "https://globalnews.ca/wp-content/uploads/2026/11/2d5a8cb1797081da08c85efd347cf9dc480df876e35d9b7f2df0ad207f53def2.jpg?quality=65&strip=all&w=720&h=379&crop=1"
-    ],
-    "photos": [
-     {
-      "src": "live/img/auto-123a3818-d708418e93.jpg",
-      "orig": "https://globalnews.ca/wp-content/uploads/2026/11/2d5a8cb1797081da08c85efd347cf9dc480df876e35d9b7f2df0ad207f53def2.jpg?quality=65&strip=all&w=720&h=379&crop=1",
-      "caption": "Prime Minister Mark Carney gestures as he poses for photographers with Philippine President Ferdinand Marcos Jr. before a meeting in Manila, Saturday, Nov. 14, 2026. — via Global News",
-      "alt": "Prime Minister Mark Carney gestures as he poses for photographers with Philippine President Ferdinand Marcos Jr. before a meeting in Manila, Saturday, Nov. 14, ",
-      "outlet": "Global News",
-      "url": "https://globalnews.ca/news/12150796/canada-philippines-trade-deal/"
      },
      {
-      "src": "live/img/auto-123a3818-7287f8ba11.jpg",
-      "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/d/67/d67a85cd-10a8-5337-ad72-01cde40dba16/6af7ca3e1dfa0.image.jpg?crop=1640%2C861%2C0%2C201&resize=1200%2C630&order=crop%2Cresize",
-      "caption": "From: Mark Carney signs Philippines trade agreement as Canada expands Asia trade push. — via Toronto Star",
-      "alt": "Mark Carney signs Philippines trade agreement as Canada expands Asia trade push",
-      "outlet": "Toronto Star",
-      "url": "https://www.thestar.com/politics/federal/na-carney-trade-nov12-embargoed-until-probably-9-45-pm-est-i-will-advise/article_a47fb7c5-c134-426e-aaaa-721a87c99599.html"
-     },
-     {
-      "src": "live/img/auto-123a3818-f00b78980e.jpg",
-      "orig": "https://www.cp24.com/resizer/v2/INB5Q7LNTXL2UR4IZ5FZYILFQU.jpg?smart=true&auth=2305972a17e1588ae6cc042c24f3398eca27175de5ae209d3277e857adf75e0b&width=1200&height=630",
-      "caption": "Prime Minister Mark Carney arrives in Manila on Saturday, Nov. 14, 2026. THE CANADIAN PRESS/Adrian Wyld. — via CP24",
-      "alt": "Prime Minister Mark Carney arrives in Manila on Saturday, Nov. 14, 2026. THE CANADIAN PRESS/Adrian Wyld",
-      "outlet": "CP24",
-      "url": "https://www.cp24.com/news/canada/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/"
-     },
-     {
-      "src": "live/img/auto-123a3818-c8760d18e0.jpg",
-      "orig": "https://winnipeg.citynews.ca/wp-content/blogs.dir/sites/13/2026/11/53aba6fac8b531a96271cad1972123e6be5bf2ff30c9b1fbd34b3ee59fa9a071.jpg",
-      "caption": "From: Carney arrives in Manila for ASEAN summit, seeks trade pact with Philippines. — via CityNews Winnipeg",
-      "alt": "Carney arrives in Manila for ASEAN summit, seeks trade pact with Philippines",
-      "outlet": "CityNews Winnipeg",
-      "url": "https://winnipeg.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/"
-     }
-    ],
-    "independent": 3,
-    "reports": [
-     {
-      "t": "Fri 10:39 p.m.",
-      "iso": "2026-11-14T03:39:49+00:00",
-      "outlet": "Global News",
-      "title": "Canada, Philippines conclude negotiations for free-trade agreement, aiming for 2027",
-      "url": "https://globalnews.ca/news/12150796/canada-philippines-trade-deal/",
-      "desc": "Canada is also pursuing a broader trade agreement with the ASEAN bloc, which includes the Philippines and 10 other countries such as Thailand."
-     },
-     {
-      "t": "Fri 10:27 p.m.",
-      "iso": "2026-11-14T03:27:16+00:00",
-      "outlet": "CBC News",
-      "title": "Canada, Philippines wrap talks for free-trade agreement, expected to be signed in 2027",
-      "url": "https://www.cbc.ca/news/politics/canada-philippines-free-trade-agreement-talks-9.7422009?cmp=rss",
-      "desc": "Canada and the Philippines have concluded talks for a free-trade agreement, which is expected to be formally signed next year."
-     },
-     {
-      "t": "Fri 9:55 p.m.",
-      "iso": "2026-11-14T02:55:00+00:00",
-      "outlet": "Toronto Star",
-      "title": "Mark Carney signs Philippines trade agreement as Canada expands Asia trade push",
-      "url": "https://www.thestar.com/politics/federal/na-carney-trade-nov12-embargoed-until-probably-9-45-pm-est-i-will-advise/article_a47fb7c5-c134-426e-aaaa-721a87c99599.html",
-      "desc": "PM spent Friday the 13th in the air, crossing the international date line in search of international deals."
-     },
-     {
-      "t": "Fri 6:20 p.m.",
-      "iso": "2026-11-13T23:20:36+00:00",
-      "outlet": "CP24",
-      "title": "Carney arrives in Manila for ASEAN summit, seeks trade pact with Philippines",
-      "url": "https://www.cp24.com/news/canada/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/",
-      "desc": "Prime Minister Mark Carney has arrived in the Philippines for the Association of Southeast Asian Nations summit."
-     },
-     {
-      "t": "Fri 6:20 p.m.",
-      "iso": "2026-11-13T23:20:36+00:00",
-      "outlet": "BNN Bloomberg",
-      "title": "Carney arrives in Manila for ASEAN summit, seeks trade pact with Philippines",
-      "url": "https://www.bnnbloomberg.ca/business/international/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/",
-      "desc": ""
-     },
-     {
-      "t": "Fri 5:03 p.m.",
-      "iso": "2026-11-13T22:03:28+00:00",
-      "outlet": "CityNews Winnipeg",
-      "title": "Carney arrives in Manila for ASEAN summit, seeks trade pact with Philippines",
-      "url": "https://winnipeg.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/",
-      "desc": ""
-     },
-     {
-      "t": "Fri 5:03 p.m.",
-      "iso": "2026-11-13T22:03:28+00:00",
-      "outlet": "CityNews Vancouver",
-      "title": "Carney arrives in Manila for ASEAN summit, seeks trade pact with Philippines",
-      "url": "https://vancouver.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/",
-      "desc": ""
-     },
-     {
-      "t": "Fri 5:03 p.m.",
-      "iso": "2026-11-13T22:03:28+00:00",
-      "outlet": "CityNews Ottawa",
-      "title": "Carney arrives in Manila for ASEAN summit, seeks trade pact with Philippines",
-      "url": "https://ottawa.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/",
-      "desc": ""
-     },
-     {
-      "t": "Fri 5:03 p.m.",
-      "iso": "2026-11-13T22:03:28+00:00",
-      "outlet": "CityNews Montreal",
-      "title": "Carney arrives in Manila for ASEAN summit, seeks trade pact with Philippines",
-      "url": "https://montreal.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/",
-      "desc": ""
-     },
-     {
-      "t": "Fri 5:03 p.m.",
-      "iso": "2026-11-13T22:03:28+00:00",
-      "outlet": "CityNews Halifax",
-      "title": "Carney arrives in Manila for ASEAN summit, seeks trade pact with Philippines",
-      "url": "https://halifax.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/",
-      "desc": ""
-     },
-     {
-      "t": "Fri 5:03 p.m.",
-      "iso": "2026-11-13T22:03:28+00:00",
-      "outlet": "CityNews Edmonton",
-      "title": "Carney arrives in Manila for ASEAN summit, seeks trade pact with Philippines",
-      "url": "https://edmonton.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/",
-      "desc": ""
-     },
-     {
-      "t": "Fri 5:03 p.m.",
-      "iso": "2026-11-13T22:03:28+00:00",
-      "outlet": "CityNews Calgary",
-      "title": "Carney arrives in Manila for ASEAN summit, seeks trade pact with Philippines",
-      "url": "https://calgary.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/",
-      "desc": ""
-     },
-     {
-      "t": "Fri 5:03 p.m.",
-      "iso": "2026-11-13T22:03:28+00:00",
-      "outlet": "CityNews",
-      "title": "Canada, Philippines conclude negotiations for free-trade agreement, aiming for 2027",
-      "url": "https://toronto.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/",
-      "desc": ""
-     },
-     {
-      "t": "Fri 1:56 p.m.",
-      "iso": "2026-11-13T18:56:36+00:00",
-      "outlet": "Prime Minister of Canada",
-      "title": "Prime Minister Carney strengthens Canada’s partnerships with ASEAN and the Philippines to advance shared security and prosperity",
-      "url": "https://www.pm.gc.ca/en/news/backgrounders/2026/11/14/prime-minister-carney-strengthens-canadas-partnerships-asean-and",
-      "desc": ""
-     }
-    ],
-    "sources": [
-     {
-      "t": "Fri 1:56 p.m.",
-      "primary": true,
-      "outlet": "Prime Minister of Canada",
-      "title": "Prime Minister Carney strengthens Canada’s partnerships with ASEAN and the Philippines to advance shared security and prosperity",
-      "url": "https://www.pm.gc.ca/en/news/backgrounders/2026/11/14/prime-minister-carney-strengthens-canadas-partnerships-asean-and",
-      "desc": "ASEANAt the 49th Association of Southeast Asian Nations (ASEAN) Summit in Manila, Philippines, Prime Minister Carney announced over $15.9 million in investments to support the completion of the ASEAN-Canada free trade agreement (ACAFTA) and strengthen Canada’s partnership with ASEAN across a range of priorities, including public safety, ocean protection, nuclear security, and clean energy.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Prime Minister of Canada",
-        "src": "Prime Minister of Canada",
-        "byline": ""
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Fri 5:03 p.m.",
-      "primary": false,
-      "outlet": "CityNews Winnipeg",
-      "title": "Carney arrives in Manila for ASEAN summit, seeks trade pact with Philippines",
-      "url": "https://winnipeg.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/",
-      "desc": "Prime Minister Mark Carney has arrived in the Philippines for the Association of Southeast Asian Nations summit.",
-      "wire": "The Canadian Press",
-      "by": [
-       {
-        "outlet": "CityNews Winnipeg",
-        "src": "The Canadian Press",
-        "byline": "3f5fe805acc41a6fdf\"}] \"Dylan Robertson, The Canadian Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews Vancouver",
-        "src": "The Canadian Press",
-        "byline": "3f5fe805acc41a6fdf\"}] \"Dylan Robertson, The Canadian Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews Ottawa",
-        "src": "The Canadian Press",
-        "byline": "3f5fe805acc41a6fdf\"}] \"Dylan Robertson, The Canadian Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews Montreal",
-        "src": "The Canadian Press",
-        "byline": "3f5fe805acc41a6fdf\"}] \"Dylan Robertson, The Canadian Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews Halifax",
-        "src": "The Canadian Press",
-        "byline": "3f5fe805acc41a6fdf\"}] \"Dylan Robertson, The Canadian Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews Edmonton",
-        "src": "The Canadian Press",
-        "byline": "3f5fe805acc41a6fdf\"}] \"Dylan Robertson, The Canadian Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews Calgary",
-        "src": "The Canadian Press",
-        "byline": "3f5fe805acc41a6fdf\"}] \"Dylan Robertson, The Canadian Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews",
-        "src": "The Canadian Press",
-        "byline": "3f5fe805acc41a6fdf\"}] \"Dylan Robertson, The Canadian Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CP24",
-        "src": "The Canadian Press",
-        "byline": "\"@type\": \"Person\",\n      \"name\": \"The Canadian Press\",\n      \n    }\n  ]"
-       },
-       {
-        "outlet": "BNN Bloomberg",
-        "src": "The Canadian Press",
-        "byline": "\"@type\": \"Person\",\n      \"name\": \"The Canadian Press\",\n      \n    }\n  ]"
-       },
-       {
-        "outlet": "CBC News",
-        "src": "The Canadian Press",
-        "byline": "ull,\"photoURL\":\"\"},\"recentContent\":{}} \"The Canadian Press\"  The Canadian Pres"
-       },
-       {
-        "outlet": "Global News",
-        "src": "The Canadian Press",
-        "byline": "By Dylan Robertson \n\t\t\t\t\t\t\t\t\t\tThe Canadian Press"
-       }
-      ],
-      "copies": [
-       {
-        "outlet": "CityNews Vancouver",
-        "url": "https://vancouver.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/"
-       },
-       {
-        "outlet": "CityNews Ottawa",
-        "url": "https://ottawa.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/"
-       },
-       {
-        "outlet": "CityNews Montreal",
-        "url": "https://montreal.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/"
-       },
-       {
-        "outlet": "CityNews Halifax",
-        "url": "https://halifax.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/"
-       },
-       {
-        "outlet": "CityNews Edmonton",
-        "url": "https://edmonton.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/"
-       },
-       {
-        "outlet": "CityNews Calgary",
-        "url": "https://calgary.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/"
-       },
-       {
-        "outlet": "CityNews",
-        "url": "https://toronto.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/"
-       },
-       {
-        "outlet": "CP24",
-        "url": "https://www.cp24.com/news/canada/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/"
-       },
-       {
-        "outlet": "BNN Bloomberg",
-        "url": "https://www.bnnbloomberg.ca/business/international/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/"
-       },
-       {
-        "outlet": "CBC News",
-        "url": "https://www.cbc.ca/news/politics/canada-philippines-free-trade-agreement-talks-9.7422009?cmp=rss"
-       },
-       {
-        "outlet": "Global News",
-        "url": "https://globalnews.ca/news/12150796/canada-philippines-trade-deal/"
-       }
-      ]
-     },
-     {
-      "t": "Fri 9:55 p.m.",
-      "primary": false,
-      "outlet": "Toronto Star",
-      "title": "Mark Carney signs Philippines trade agreement as Canada expands Asia trade push",
-      "url": "https://www.thestar.com/politics/federal/na-carney-trade-nov12-embargoed-until-probably-9-45-pm-est-i-will-advise/article_a47fb7c5-c134-426e-aaaa-721a87c99599.html",
-      "desc": "PM spent Friday the 13th in the air, crossing the international date line in search of international deals.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Toronto Star",
-        "src": "Torstar",
-        "byline": "own staff: Bureau Chief"
-       }
-      ],
-      "copies": []
-     }
-    ],
-    "replaces_top": false,
-    "events": [],
-    "theme": "",
-    "canada": "canadian",
-    "canus": false,
-    "incoherent": false,
-    "popular": 4,
-    "us_election": false,
-    "fronts": 3,
-    "fronts_ca": 3,
-    "fronts_who": [
-     "CTV News",
-     "Toronto Star",
-     "The Globe and Mail"
-    ],
-    "leads_ca": true,
-    "judgment": "national",
-    "judgment_why": "National: affects many people; carried across the country (8 cities).",
-    "weight": 80,
-    "live": {
-     "state": "now",
-     "net": "CPAC",
-     "url": "https://www.youtube.com/watch?v=fKbDrP01Xus",
-     "title": "PM Mark Carney speaks with reporters in Manila, Philippines – November 14, 2026",
-     "img": "https://i.ytimg.com/vi/fKbDrP01Xus/hqdefault.jpg",
-     "when": "",
-     "also": []
-    },
-    "videos": [
-     {
-      "net": "CTV News",
-      "url": "https://www.youtube.com/watch?v=2x--MlrfxIA",
-      "title": "CTV News in the Philippines: PM Carney signs new free trade agreement",
-      "img": "https://i.ytimg.com/vi/2x--MlrfxIA/hqdefault.jpg",
-      "rec": false,
+      "net": "ABC News",
+      "url": "https://www.youtube.com/watch?v=Btn-Eg3JXL4",
+      "title": "FAA lifts nationwide ground stop l ABC News Live",
+      "img": "https://i.ytimg.com/vi/Btn-Eg3JXL4/hqdefault.jpg",
+      "rec": true,
       "up": ""
      }
     ]
@@ -1254,63 +888,63 @@
     "url": "https://www.thestar.com/news/canada/flights-resume-in-u-s-after-hours-long-nationwide-ground-stop-halts-travel/article_cdacf058-0c1e-4a31-8200-4fd94e560f20.html",
     "rank": 1,
     "live": "Flight activity over US after FAA issues ground stop",
-    "weight": 81,
-    "score": 26,
-    "independent": 19,
+    "weight": 75,
+    "score": 20,
+    "independent": 20,
     "most_read": 5,
     "canada": "tie",
     "theme": "FAA ground stop",
     "top": true,
-    "fronts": 9,
+    "fronts": 7,
     "fronts_who": [
      "CBC News",
      "CTV News",
-     "Toronto Star",
      "The Globe and Mail",
      "CP24",
      "CNN",
-     "CBS News",
      "ABC News",
      "The Guardian"
     ],
     "rule": "Leading other newsrooms' front pages (Canadian ones among them): the story everyone is leading with",
-    "carriers": 31,
+    "carriers": 32,
     "judgment": "national",
-    "why_judged": "National: leading 9 front pages (CBC News, CTV News, Toronto Star, The Globe and Mail, CP24, CNN)."
+    "why_judged": "National: leading 7 front pages (CBC News, CTV News, The Globe and Mail, CP24, CNN, ABC News)."
    },
    {
-    "title": "Canada, Philippines conclude negotiations for free-trade agreement, aiming for 2027",
-    "url": "https://globalnews.ca/news/12150796/canada-philippines-trade-deal/",
+    "title": "'Miracle on the Mississippi': All aboard river cruise boat survive crash with tanker in New Orleans",
+    "url": "https://www.cbc.ca/news/world/tanker-hits-cruise-boat-new-orleans-mississippi-river-9.7421309",
     "rank": 2,
-    "live": "PM Mark Carney speaks with reporters in Manila, Philippines – November 14, 2026",
-    "weight": 80,
-    "score": 28,
-    "independent": 3,
-    "most_read": 4,
-    "canada": "canadian",
+    "live": "",
+    "weight": 43,
+    "score": 26,
+    "independent": 8,
+    "most_read": 0,
+    "canada": "none",
     "theme": "",
-    "top": true,
-    "fronts": 3,
+    "top": false,
+    "fronts": 5,
     "fronts_who": [
-     "CTV News",
-     "Toronto Star",
-     "The Globe and Mail"
+     "NBC News",
+     "ABC News",
+     "BBC News",
+     "The Guardian",
+     "NPR"
     ],
-    "rule": "Canadian and breaking",
-    "carriers": 14,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (8 cities)."
+    "rule": "Big international story, on every front page",
+    "carriers": 19,
+    "judgment": "regional",
+    "why_judged": "Regional: a single incident touching a few people; carried across the country (4 cities)."
    },
    {
     "title": "Kreiss-Tomkins becomes first Democrat since 1998 elected governor in Alaska",
     "url": "https://www.thestar.com/news/world/united-states/kreiss-tomkins-becomes-first-democrat-since-1998-elected-governor-in-alaska/article_245d2e8f-f991-55b7-a154-db696e6fe83c.html",
     "rank": 3,
     "live": "",
-    "weight": 35.5,
+    "weight": 30.5,
     "score": 9,
-    "independent": 5,
+    "independent": 4,
     "most_read": 0,
-    "canada": "tie",
+    "canada": "none",
     "theme": "",
     "top": false,
     "fronts": 1,
@@ -1323,39 +957,13 @@
     "why_judged": "National: affects some people; carried across the country (national desks)."
    },
    {
-    "title": "'Miracle on the Mississippi': All aboard river cruise boat survive crash with tanker in New Orleans",
-    "url": "https://www.cbc.ca/news/world/tanker-hits-cruise-boat-new-orleans-mississippi-river-9.7421309",
-    "rank": 4,
-    "live": "",
-    "weight": 42,
-    "score": 17,
-    "independent": 8,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 6,
-    "fronts_who": [
-     "NBC News",
-     "CBS News",
-     "ABC News",
-     "BBC News",
-     "The Guardian",
-     "NPR"
-    ],
-    "rule": "Big international story, on every front page",
-    "carriers": 19,
-    "judgment": "national",
-    "why_judged": "National: leading 6 front pages (NBC News, CBS News, ABC News, BBC News, The Guardian, NPR)."
-   },
-   {
     "title": "Microsoft outage shows the risks of relying on a single technology provider for essential services",
     "url": "https://www.cp24.com/news/world/2026/11/13/microsoft-reports-progress-as-it-works-to-recover-email-and-other-services-in-a-global-outage/",
-    "rank": 5,
+    "rank": 4,
     "live": "",
-    "weight": 35,
-    "score": 11,
-    "independent": 12,
+    "weight": 36,
+    "score": 12,
+    "independent": 13,
     "most_read": 0,
     "canada": "tie",
     "theme": "Microsoft outage",
@@ -1366,14 +974,14 @@
      "ABC News"
     ],
     "rule": "From abroad, tied to Canada",
-    "carriers": 14,
+    "carriers": 15,
     "judgment": "national",
     "why_judged": "National: affects some people; carried across the country (national desks)."
    },
    {
     "title": "Rep. Lauren Boebert of Colorado loses House seat to Democrat Eileen Laubacher",
     "url": "https://www.cp24.com/news/world/2026/11/13/rep-lauren-boebert-of-colorado-loses-house-seat-to-democrat-eileen-laubacher/",
-    "rank": 6,
+    "rank": 5,
     "live": "",
     "weight": 22.0,
     "score": 8,
@@ -1395,7 +1003,7 @@
    {
     "title": "SpaceX to attempt to catch its first Starship on land in 15th flight",
     "url": "https://www.cbc.ca/news/science/spacex-starship-flight-15-9.7420700",
-    "rank": 7,
+    "rank": 6,
     "live": "",
     "weight": 15.0,
     "score": 6,
@@ -1404,19 +1012,17 @@
     "canada": "none",
     "theme": "",
     "top": false,
-    "fronts": 1,
-    "fronts_who": [
-     "CBS News"
-    ],
+    "fronts": 0,
+    "fronts_who": [],
     "rule": "No Canadian tie",
     "carriers": 6,
     "judgment": "regional",
     "why_judged": "Regional: affects some people; carried beyond one city."
    },
    {
-    "title": "Brazil investigates strife between Israeli tourists and pro-Palestine residents",
-    "url": "https://www.thestar.com/news/world/americas/brazil-investigates-strife-between-israeli-tourists-and-pro-palestine-residents/article_3e9cb896-2bb0-5eab-8693-8596de67ff7a.html",
-    "rank": 8,
+    "title": "West Bank Palestinian injured in firing by Israeli forces",
+    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/west-bank-palestinian-injured-firing-israeli-forces",
+    "rank": 7,
     "live": "",
     "weight": 12.5,
     "score": 5,
@@ -1433,6 +1039,28 @@
     "why_judged": "Regional: affects some people; carried beyond one city."
    },
    {
+    "title": "Canada, Philippines conclude negotiations for free-trade agreement, aiming for 2027",
+    "url": "https://globalnews.ca/news/12150796/canada-philippines-trade-deal/",
+    "rank": 8,
+    "live": "",
+    "weight": 63,
+    "score": 28,
+    "independent": 3,
+    "most_read": 4,
+    "canada": "canadian",
+    "theme": "",
+    "top": false,
+    "fronts": 2,
+    "fronts_who": [
+     "CTV News",
+     "The Globe and Mail"
+    ],
+    "rule": "Canadian, still developing",
+    "carriers": 14,
+    "judgment": "national",
+    "why_judged": "National: affects many people; carried across the country (8 cities)."
+   },
+   {
     "title": "Good Talk -- What Really Happened on Stellantis",
     "score": 13,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
@@ -1443,7 +1071,7 @@
     "why": "not built: only 1 independent report(s) (5 sites)"
    },
    {
-    "title": "TikTok says it has taken down deepfake videos spreading trade falsehoods",
+    "title": "Alaska voters reject ballot measure seeking to repeal open primaries, ranked voting system",
     "score": 6,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
@@ -1461,265 +1089,25 @@
     "title": "The US flu season is off to a very early start. It's hitting the South and West now",
     "score": 5,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Alaska voters reject ballot measure seeking to repeal open primaries, ranked voting system",
-    "score": 5,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
   ],
-  "moved": [],
-  "top_n": 2,
-  "more": [
+  "moved": [
    {
-    "key": "auto-f348d6f3",
-    "words": [
-     "kreiss-tomkins",
-     "jonathan",
-     "democrat",
-     "tomkins",
-     "alaska",
-     "kreiss"
-    ],
-    "score": 9,
-    "outlets": 5,
-    "carriers": 7,
-    "tag": "Breaking",
-    "title": "Kreiss-Tomkins becomes first Democrat since 1998 elected governor in Alaska",
-    "url": "https://www.thestar.com/news/world/united-states/kreiss-tomkins-becomes-first-democrat-since-1998-elected-governor-in-alaska/article_245d2e8f-f991-55b7-a154-db696e6fe83c.html",
-    "outlet": "Toronto Star",
-    "t": "Sat 12:11 a.m.",
-    "iso": "2026-11-14T05:11:22+00:00",
-    "summary": "JUNEAU, Alaska (AP) — Alaska voters have elected a Democrat for governor for the first time since 1998, part of a national midterm elections wave that gave the party sweeping",
-    "first": {
-     "outlet": "The Hill",
-     "url": "https://thehill.com/homenews/campaign/6219645-peltola-sullivan-alaska-races-ranked-choice/",
-     "t": "Fri 4:11 p.m.",
-     "title": "Peltola vs. Sullivan not alone: 24 Alaska races still too close to call",
-     "iso": "2026-11-13T21:11:08+00:00"
-    },
-    "newest": "2026-11-14T05:11:22+00:00",
-    "photo": {
-     "src": "live/img/auto-f348d6f3-4241629ee3.jpg",
-     "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/4/92/492863dc-697c-5115-b7f7-26fbff8977c1/6af7ee54e6f8f.image.jpg?crop=1440%2C756%2C0%2C162&resize=1200%2C630&order=crop%2Cresize",
-     "caption": "From: Kreiss-Tomkins becomes first Democrat since 1998 elected governor in Alaska. — via Toronto Star",
-     "alt": "Kreiss-Tomkins becomes first Democrat since 1998 elected governor in Alaska",
-     "outlet": "Toronto Star",
-     "url": "https://www.thestar.com/news/world/united-states/kreiss-tomkins-becomes-first-democrat-since-1998-elected-governor-in-alaska/article_245d2e8f-f991-55b7-a154-db696e6fe83c.html",
-     "since": "2026-11-14T05:42:33.389076+00:00"
-    },
-    "photo_seen": [
-     "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/4/92/492863dc-697c-5115-b7f7-26fbff8977c1/6af7ee54e6f8f.image.jpg?crop=1440%2C756%2C0%2C162&resize=1200%2C630&order=crop%2Cresize"
-    ],
-    "photos": [
-     {
-      "src": "live/img/auto-f348d6f3-4241629ee3.jpg",
-      "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/4/92/492863dc-697c-5115-b7f7-26fbff8977c1/6af7ee54e6f8f.image.jpg?crop=1440%2C756%2C0%2C162&resize=1200%2C630&order=crop%2Cresize",
-      "caption": "From: Kreiss-Tomkins becomes first Democrat since 1998 elected governor in Alaska. — via Toronto Star",
-      "alt": "Kreiss-Tomkins becomes first Democrat since 1998 elected governor in Alaska",
-      "outlet": "Toronto Star",
-      "url": "https://www.thestar.com/news/world/united-states/kreiss-tomkins-becomes-first-democrat-since-1998-elected-governor-in-alaska/article_245d2e8f-f991-55b7-a154-db696e6fe83c.html"
-     },
-     {
-      "src": "live/img/auto-f348d6f3-9e05284aa7.jpg",
-      "orig": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/882ba4a0ea100b2a25a4120b2da16718dfcb45558780a73155663081dd67495b.jpg;w=1200;h=800;mode=crop",
-      "caption": "From: Kreiss-Tomkins becomes first Democrat since 1998 elected governor in Alaska. — via Times Colonist",
-      "alt": "Kreiss-Tomkins becomes first Democrat since 1998 elected governor in Alaska",
-      "outlet": "Times Colonist",
-      "url": "https://www.timescolonist.com/world-news/kreiss-tomkins-becomes-first-democrat-since-1998-elected-governor-in-alaska-13017642"
-     },
-     {
-      "src": "live/img/auto-f348d6f3-4a2cdd1296.jpg",
-      "orig": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-10/261030-Jonathan-Kreiss-Tomkins-ch-1321-9e72b7.jpg",
-      "caption": "From: Democrat Jonathan Kreiss-Tomkins wins the Alaska governor’s race. — via NBC News",
-      "alt": "Democrat Jonathan Kreiss-Tomkins wins the Alaska governor’s race",
-      "outlet": "NBC News",
-      "url": "https://www.nbcnews.com/politics/2026-election/jonathan-kreiss-tomkins-democrat-wins-alaska-governor-race-rcna606558"
-     }
-    ],
-    "independent": 5,
-    "reports": [
-     {
-      "t": "Sat 12:11 a.m.",
-      "iso": "2026-11-14T05:11:22+00:00",
-      "outlet": "Toronto Star",
-      "title": "Kreiss-Tomkins becomes first Democrat since 1998 elected governor in Alaska",
-      "url": "https://www.thestar.com/news/world/united-states/kreiss-tomkins-becomes-first-democrat-since-1998-elected-governor-in-alaska/article_245d2e8f-f991-55b7-a154-db696e6fe83c.html",
-      "desc": "JUNEAU, Alaska (AP) — Alaska voters have elected a Democrat for governor for the first time since 1998, part of a national midterm elections wave that gave the party sweeping"
-     },
-     {
-      "t": "Sat 12:11 a.m.",
-      "iso": "2026-11-14T05:11:22+00:00",
-      "outlet": "Times Colonist",
-      "title": "Kreiss-Tomkins becomes first Democrat since 1998 elected governor in Alaska",
-      "url": "https://www.timescolonist.com/world-news/kreiss-tomkins-becomes-first-democrat-since-1998-elected-governor-in-alaska-13017642",
-      "desc": ""
-     },
-     {
-      "t": "Sat 12:11 a.m.",
-      "iso": "2026-11-14T05:11:22+00:00",
-      "outlet": "The Canadian Press (via Winnipeg Free Press)",
-      "title": "Kreiss-Tomkins becomes first Democrat since 1998 elected governor in Alaska",
-      "url": "https://www.winnipegfreepress.com/world/2026/11/14/kreiss-tomkins-becomes-first-democrat-since-1998-elected-governor-in-alaska",
-      "desc": ""
-     },
-     {
-      "t": "Sat 12:07 a.m.",
-      "iso": "2026-11-14T05:07:08+00:00",
-      "outlet": "Politico",
-      "title": "Democrat Jonathan Kreiss-Tomkins flips Alaska’s gubernatorial seat",
-      "url": "https://www.politico.com/news/2026/11/14/jonathan-kreiss-tomkins-wins-alaska-governor-01166573",
-      "desc": ""
-     },
-     {
-      "t": "Sat 12:05 a.m.",
-      "iso": "2026-11-14T05:05:12+00:00",
-      "outlet": "The Hill",
-      "title": "Democrat flips Alaska governor’s office",
-      "url": "https://thehill.com/homenews/campaign/6182120-democrat-kreiss-tomkins-wins-alaska/",
-      "desc": ""
-     },
-     {
-      "t": "Sat 12:05 a.m.",
-      "iso": "2026-11-14T05:05:00+00:00",
-      "outlet": "NBC News",
-      "title": "Democrat Jonathan Kreiss-Tomkins wins the Alaska governor’s race",
-      "url": "https://www.nbcnews.com/politics/2026-election/jonathan-kreiss-tomkins-democrat-wins-alaska-governor-race-rcna606558",
-      "desc": "NBC News projects the former state lawmaker won a majority of the vote on the four-candidate ballot to flip control of the office."
-     },
-     {
-      "t": "Sat 12:02 a.m.",
-      "iso": "2026-11-14T05:02:30+00:00",
-      "outlet": "CKOM / PAnow",
-      "title": "Democrat Jonathan Kreiss-Tomkins wins election for governor in Alaska",
-      "url": "https://www.ckom.com/2026/11/13/democrat-jonathan-kreiss-tomkins-wins-election-for-governor-in-alaska/",
-      "desc": "Democrat Jonathan Kreiss-Tomkins won election Saturday as governor of Alaska, defeating Republicans Dave Bronson, Treg Taylor and Bernadette M. Wilson. The win by Kreiss-Tomkins, a former lawmaker, marks the first time a Democrat has been elected gover..."
-     }
-    ],
-    "sources": [
-     {
-      "t": "Sat 12:11 a.m.",
-      "primary": false,
-      "outlet": "Toronto Star",
-      "title": "Kreiss-Tomkins becomes first Democrat since 1998 elected governor in Alaska",
-      "url": "https://www.thestar.com/news/world/united-states/kreiss-tomkins-becomes-first-democrat-since-1998-elected-governor-in-alaska/article_245d2e8f-f991-55b7-a154-db696e6fe83c.html",
-      "desc": "JUNEAU, Alaska (AP) — Alaska voters have elected a Democrat for governor for the first time since 1998, part of a national midterm elections wave that gave the party sweeping",
-      "wire": "The Associated Press",
-      "by": [
-       {
-        "outlet": "Toronto Star",
-        "src": "The Associated Press",
-        "byline": "\"Becky Bohrer The Associated Press\" \"Becky Bohrer The"
-       },
-       {
-        "outlet": "Times Colonist",
-        "src": "The Associated Press",
-        "byline": "\"Becky Bohrer, The Associated Press\" \r\n             \r\nB"
-       },
-       {
-        "outlet": "The Canadian Press (via Winnipeg Free Press)",
-        "src": "The Associated Press",
-        "byline": "Person\",\n\t\t\t\t\"name\": \"Becky Bohrer, The Associated Press\"\n\t\t\t} [{\"@type\":\"Pe"
-       }
-      ],
-      "copies": [
-       {
-        "outlet": "Times Colonist",
-        "url": "https://www.timescolonist.com/world-news/kreiss-tomkins-becomes-first-democrat-since-1998-elected-governor-in-alaska-13017642"
-       },
-       {
-        "outlet": "The Canadian Press (via Winnipeg Free Press)",
-        "url": "https://www.winnipegfreepress.com/world/2026/11/14/kreiss-tomkins-becomes-first-democrat-since-1998-elected-governor-in-alaska"
-       }
-      ]
-     },
-     {
-      "t": "Sat 12:07 a.m.",
-      "primary": false,
-      "outlet": "Politico",
-      "title": "Democrat Jonathan Kreiss-Tomkins flips Alaska’s gubernatorial seat",
-      "url": "https://www.politico.com/news/2026/11/14/jonathan-kreiss-tomkins-wins-alaska-governor-01166573",
-      "desc": "",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Politico",
-        "src": "Politico",
-        "byline": ""
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Sat 12:05 a.m.",
-      "primary": false,
-      "outlet": "The Hill",
-      "title": "Democrat flips Alaska governor’s office",
-      "url": "https://thehill.com/homenews/campaign/6182120-democrat-kreiss-tomkins-wins-alaska/",
-      "desc": "px-captcha",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "The Hill",
-        "src": "The Hill",
-        "byline": ""
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Sat 12:05 a.m.",
-      "primary": false,
-      "outlet": "NBC News",
-      "title": "Democrat Jonathan Kreiss-Tomkins wins the Alaska governor’s race",
-      "url": "https://www.nbcnews.com/politics/2026-election/jonathan-kreiss-tomkins-democrat-wins-alaska-governor-race-rcna606558",
-      "desc": "NBC News projects the former state lawmaker won a majority of the vote on the four-candidate ballot to flip control of the office.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "NBC News",
-        "src": "NBC News",
-        "byline": "[{\"@context\":\"https://schema.org/\",\"@type\":\"Person\",\"name\":\"Sarah Sternhagen\",\"image\":null,\"jobTitle\":null,\"description\""
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Sat 12:02 a.m.",
-      "primary": false,
-      "outlet": "CKOM / PAnow",
-      "title": "Democrat Jonathan Kreiss-Tomkins wins election for governor in Alaska",
-      "url": "https://www.ckom.com/2026/11/13/democrat-jonathan-kreiss-tomkins-wins-election-for-governor-in-alaska/",
-      "desc": "Democrat Jonathan Kreiss-Tomkins won election Saturday as governor of Alaska, defeating Republicans Dave Bronson, Treg Taylor and Bernadette M. Wilson. The win by Kreiss-Tomkins, a former lawmaker, marks the first time a Democrat has been elected gover...",
-      "wire": "The Canadian Press",
-      "by": [
-       {
-        "outlet": "CKOM / PAnow",
-        "src": "The Canadian Press",
-        "byline": "[{\"@type\":\"Person\",\"name\":\"The Canadian Press\"}] \"The Canadian Pr"
-       }
-      ],
-      "copies": []
-     }
-    ],
-    "replaces_top": false,
-    "events": [],
-    "theme": "",
-    "canada": "tie",
-    "canus": false,
-    "incoherent": false,
-    "popular": 0,
-    "us_election": true,
-    "fronts": 1,
-    "fronts_ca": 0,
-    "fronts_who": [
-     "NBC News"
-    ],
-    "outled_ca": 3,
-    "judgment": "national",
-    "judgment_why": "National: affects some people; carried across the country (national desks).",
-    "weight": 35.5
-   },
+    "to": "canada",
+    "key": "auto-123a3818",
+    "title": "Canada, Philippines conclude negotiations for free-trade agreement, aiming for 2027",
+    "url": "https://globalnews.ca/news/12150796/canada-philippines-trade-deal/",
+    "outlet": "Global News",
+    "t": "Fri 10:39 p.m.",
+    "iso": "2026-11-14T03:39:49+00:00",
+    "summary": "Canada is also pursuing a broader trade agreement with the ASEAN bloc, which includes the Philippines and 10 other countries such as Thailand.",
+    "img": "https://globalnews.ca/wp-content/uploads/2026/11/2d5a8cb1797081da08c85efd347cf9dc480df876e35d9b7f2df0ad207f53def2.jpg?quality=65&strip=all&w=720&h=379&crop=1",
+    "scoop": false,
+    "into": "auto-2eb87e32"
+   }
+  ],
+  "top_n": 1,
+  "more": [
    {
     "key": "auto-3c6839df",
     "words": [
@@ -1730,9 +1118,9 @@
      "sorry",
      "shows"
     ],
-    "score": 11,
-    "outlets": 12,
-    "carriers": 14,
+    "score": 12,
+    "outlets": 13,
+    "carriers": 15,
     "tag": "Developing",
     "title": "Microsoft outage shows the risks of relying on a single technology provider for essential services",
     "url": "https://www.cp24.com/news/world/2026/11/13/microsoft-reports-progress-as-it-works-to-recover-email-and-other-services-in-a-global-outage/",
@@ -1755,7 +1143,7 @@
      "alt": "A Microsoft logo and sign outside the Microsoft Visitor Center are seen at the company's headquarters Monday, Nov. 9, 2026, in Redmond, Wash. (AP Photo/Lindsey ",
      "outlet": "CP24",
      "url": "https://www.cp24.com/news/world/2026/11/13/microsoft-reports-progress-as-it-works-to-recover-email-and-other-services-in-a-global-outage/",
-     "since": "2026-11-14T05:42:32.179207+00:00"
+     "since": "2026-11-14T05:51:27.629485+00:00"
     },
     "photo_seen": [
      "https://www.cp24.com/resizer/v2/MVSPYF6MLFBW3AKSYOUBR2HNSE.jpg?smart=true&auth=3701131a5371e4a48a594900991027f6753a91b4c053ba9ef3c5396c768b69a2&width=1200&height=630"
@@ -1794,7 +1182,7 @@
       "url": "https://www.euronews.com/2026/11/13/microsoft-365-global-outage-disrupts-portuguese-government-health-services-and-schools"
      }
     ],
-    "independent": 12,
+    "independent": 13,
     "reports": [
      {
       "t": "Fri 7:52 p.m.",
@@ -1877,6 +1265,14 @@
       "desc": ""
      },
      {
+      "t": "Fri 1:14 p.m.",
+      "iso": "2026-11-13T18:14:29+00:00",
+      "outlet": "VOCM",
+      "title": "Microsoft says Service Outage Technical in Nature, Not Related to Cyber or AI Agents",
+      "url": "https://vocm.com/2026/11/13/microsoft-says-service-outage-technical-in-nature-not-related-to-cyber-or-ai-agents/",
+      "desc": ""
+     },
+     {
       "t": "Fri 9:55 a.m.",
       "iso": "2026-11-13T14:55:10+00:00",
       "outlet": "Daily Hive",
@@ -1898,14 +1294,6 @@
       "outlet": "CBC News",
       "title": "Microsoft says service being restored on 2nd day of worldwide outage",
       "url": "https://www.cbc.ca/player/play/video/9.7420415",
-      "desc": ""
-     },
-     {
-      "t": "Fri 7:53 a.m.",
-      "iso": "2026-11-13T12:53:48+00:00",
-      "outlet": "The Hill",
-      "title": "Microsoft ‘seeing encouraging recovery progress’ in global Outlook, Teams outage",
-      "url": "https://thehill.com/policy/technology/6218199-microsoft-outage-recovery-process/",
       "desc": ""
      }
     ],
@@ -2066,6 +1454,23 @@
       "copies": []
      },
      {
+      "t": "Fri 1:14 p.m.",
+      "primary": false,
+      "outlet": "VOCM",
+      "title": "Microsoft says Service Outage Technical in Nature, Not Related to Cyber or AI Agents",
+      "url": "https://vocm.com/2026/11/13/microsoft-says-service-outage-technical-in-nature-not-related-to-cyber-or-ai-agents/",
+      "desc": "Microsoft says it is seeing \"encouraging\" progress in recovery, following a service outage that affected produ...",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "VOCM",
+        "src": "VOCM",
+        "byline": "[{\"@type\":\"Person\",\"name\":\"VOCM News\"}] \"VOCM News\" VOCM News "
+       }
+      ],
+      "copies": []
+     },
+     {
       "t": "Fri 9:55 a.m.",
       "primary": false,
       "outlet": "Daily Hive",
@@ -2115,23 +1520,6 @@
        }
       ],
       "copies": []
-     },
-     {
-      "t": "Fri 7:53 a.m.",
-      "primary": false,
-      "outlet": "The Hill",
-      "title": "Microsoft ‘seeing encouraging recovery progress’ in global Outlook, Teams outage",
-      "url": "https://thehill.com/policy/technology/6218199-microsoft-outage-recovery-process/",
-      "desc": "px-captcha",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "The Hill",
-        "src": "The Hill",
-        "byline": ""
-       }
-      ],
-      "copies": []
      }
     ],
     "replaces_top": false,
@@ -2152,24 +1540,24 @@
      "Global News",
      "ABC News"
     ],
-    "outled_ca": 3,
+    "outled_ca": 2,
     "judgment": "national",
     "judgment_why": "National: affects some people; carried across the country (national desks).",
-    "weight": 35,
+    "weight": 36,
     "videos": [
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=6SHULSypliw",
-      "title": "Microsoft Outlook services restored as world struggles to get work done",
-      "img": "https://i.ytimg.com/vi/6SHULSypliw/hqdefault.jpg",
+      "net": "CP24",
+      "url": "https://www.youtube.com/watch?v=XLUybEALWnQ",
+      "title": "Companies must rethink how they rely on big tech amid Microsoft outage, analyst says",
+      "img": "https://i.ytimg.com/vi/XLUybEALWnQ/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=buCYd2RCP60",
-      "title": "Microsoft Outage: Analyst warns we aren't out of the woods yet",
-      "img": "https://i.ytimg.com/vi/buCYd2RCP60/hqdefault.jpg",
+      "net": "CP24",
+      "url": "https://www.youtube.com/watch?v=DQ8aMBacl1Y",
+      "title": "Microsoft outage persists, impacting Toronto hospitals",
+      "img": "https://i.ytimg.com/vi/DQ8aMBacl1Y/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
@@ -2198,8 +1586,8 @@
      "colorado",
      "democrat",
      "boebert",
-     "eileen",
-     "lauren"
+     "lauren",
+     "eileen"
     ],
     "score": 8,
     "outlets": 6,
@@ -2226,7 +1614,7 @@
      "alt": "Rep. Lauren Boebert, R-Colo., arrives for a House GOP leadership candidate forum and elections for the 120th Congress, Tuesday, Nov. 10, 2026, on Capitol Hill i",
      "outlet": "CP24",
      "url": "https://www.cp24.com/news/world/2026/11/13/rep-lauren-boebert-of-colorado-loses-house-seat-to-democrat-eileen-laubacher/",
-     "since": "2026-11-14T05:42:34.668014+00:00"
+     "since": "2026-11-14T05:51:29.858002+00:00"
     },
     "photo_seen": [
      "https://www.cp24.com/resizer/v2/S3S23S7E7A2ISSNPB2CZNHFY54.jpg?smart=true&auth=82d141910125c068cc522058b2497910ee5eb5cdec39bd12870bda74efa3d062&width=1200&height=630"
@@ -2297,7 +1685,7 @@
       "outlet": "Toronto Star",
       "title": "Rep. Lauren Boebert of Colorado loses House seat to Democrat Eileen Laubacher",
       "url": "https://www.thestar.com/news/world/united-states/rep-lauren-boebert-of-colorado-loses-house-seat-to-democrat-eileen-laubacher/article_d12409fe-b9aa-5757-83c0-1ac9c5d26e32.html",
-      "desc": ""
+      "desc": "DENVER (AP) — Democrat Eileen Laubacher defeated Rep. Lauren Boebert for a Colorado U.S. House seat on Friday, ousting a three-term Republican and staple of conservative media."
      },
      {
       "t": "Fri 3:37 p.m.",
@@ -2356,13 +1744,13 @@
       "outlet": "Toronto Star",
       "title": "Rep. Lauren Boebert of Colorado loses House seat to Democrat Eileen Laubacher",
       "url": "https://www.thestar.com/news/world/united-states/rep-lauren-boebert-of-colorado-loses-house-seat-to-democrat-eileen-laubacher/article_d12409fe-b9aa-5757-83c0-1ac9c5d26e32.html",
-      "desc": "",
-      "wire": "",
+      "desc": "DENVER (AP) — Democrat Eileen Laubacher defeated Rep. Lauren Boebert for a Colorado U.S. House seat on Friday, ousting a three-term Republican and staple of conservative media.",
+      "wire": "The Associated Press",
       "by": [
        {
         "outlet": "Toronto Star",
-        "src": "Torstar",
-        "byline": ""
+        "src": "The Associated Press",
+        "byline": "\"Nicholas Riccardi () The Associated Press\" \"Nicholas Riccardi"
        },
        {
         "outlet": "PBS NewsHour",
@@ -2473,7 +1861,7 @@
      "ABC News",
      "BBC News"
     ],
-    "outled_ca": 3,
+    "outled_ca": 2,
     "judgment": "national",
     "judgment_why": "National: affects some people; carried across the country (national desks).",
     "weight": 22.0,
@@ -2495,12 +1883,16 @@
     "url": "https://www.cbc.ca/news/world/tanker-hits-cruise-boat-new-orleans-mississippi-river-9.7421309"
    },
    {
+    "title": "Kreiss-Tomkins becomes first Democrat since 1998 elected governor in Alaska",
+    "url": "https://www.thestar.com/news/world/united-states/kreiss-tomkins-becomes-first-democrat-since-1998-elected-governor-in-alaska/article_245d2e8f-f991-55b7-a154-db696e6fe83c.html"
+   },
+   {
     "title": "SpaceX to attempt to catch its first Starship on land in 15th flight",
     "url": "https://www.cbc.ca/news/science/spacex-starship-flight-15-9.7420700"
    },
    {
-    "title": "Brazil investigates strife between Israeli tourists and pro-Palestine residents",
-    "url": "https://www.thestar.com/news/world/americas/brazil-investigates-strife-between-israeli-tourists-and-pro-palestine-residents/article_3e9cb896-2bb0-5eab-8693-8596de67ff7a.html"
+    "title": "West Bank Palestinian injured in firing by Israeli forces",
+    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/west-bank-palestinian-injured-firing-israeli-forces"
    }
   ]
  },
@@ -2691,7 +2083,7 @@
    "id": "TqCW2oBZtdw",
    "r": "ca",
    "o": "CTV News",
-   "t": "Microsoft outage ripples through hospitals, governments, cities",
+   "t": "Multi-day Microsoft 365 outage affected northern municipalities",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=TqCW2oBZtdw",
@@ -2803,7 +2195,7 @@
    "id": "iAvmf9nzhCQ",
    "r": "us",
    "o": "CNN",
-   "t": "FAA lifts flight ban; WH says Trump needs billions more to fix system",
+   "t": "FAA lifts 4+ hour ground stop; Sec. of Transportation takes questions",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=iAvmf9nzhCQ",
@@ -2954,20 +2346,6 @@
    "geo": "unknown"
   },
   {
-   "id": "mi2jG8BxVSE",
-   "r": "us",
-   "o": "Associated Press",
-   "t": "Pete Buttigieg jokes about helping people rebook flights",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=mi2jG8BxVSE",
-   "img": "https://i.ytimg.com/vi/mi2jG8BxVSE/hqdefault.jpg",
-   "up": "2026-11-14",
-   "added": "2026-11-14T05:14:05.889111+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "x4_QHqaitos",
    "r": "us",
    "o": "Associated Press",
@@ -2978,6 +2356,20 @@
    "img": "https://i.ytimg.com/vi/x4_QHqaitos/hqdefault.jpg",
    "up": "2026-11-14",
    "added": "2026-11-14T05:39:46.377063+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "M_mhyQNa2V4",
+   "r": "us",
+   "o": "Associated Press",
+   "t": "Pope Leo XIV returns to his former diocese of Chiclayo",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=M_mhyQNa2V4",
+   "img": "https://i.ytimg.com/vi/M_mhyQNa2V4/hqdefault.jpg",
+   "up": "2026-11-14",
+   "added": "2026-11-14T05:49:46.963356+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -3027,7 +2419,7 @@
    "id": "j4O9poQT62Q",
    "r": "world",
    "o": "Al Jazeera",
-   "t": "US ground stop: US flights resume slowly as Duffy blames overloaded legacy air traffic systems",
+   "t": "US ground stop: Duffy urges Congress to fund $50bn air traffic overhaul after airspace reopens",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=j4O9poQT62Q",
@@ -3097,7 +2489,7 @@
    "id": "eEpNla19mUs",
    "r": "world",
    "o": "DW News",
-   "t": "What businesses must learn from the Microsoft 365 outage | DW News",
+   "t": "Why another Microsoft 365 disruption is highly likely | DW News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=eEpNla19mUs",
@@ -3488,9 +2880,10 @@
   "edition": "Saturday morning, November 14",
   "lines": [
    "Good morning. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
-   "Danielle Smith said it’s not an issue of free speech and she wants the United Conservative Party to work as a team to win next year’s provincial election, The Canadian Press reports.",
-   "Trump administration officials said Friday that new technology being added to the nation’s air traffic control system overloaded antiquated parts of it and caused “intermittent” communications and radar gaps, leading to the longest, The Associated Press reports.",
+   "Canada is also pursuing a broader trade agreement with the ASEAN bloc, which includes the Philippines and 10 other countries such as Thailand, The Canadian Press reports.",
+   "Ottawa, province hope ‘aggressive package’ can prevent Stellantis plant sale: Joly, Canada's National Observer reports.",
    "A tanker in New Orleans that apparently lost its steering slammed into a docked river cruise boat with 180 people aboard Friday, the mayor said.",
+   "Trump administration officials said Friday that new technology being added to the nation’s air traffic control system overloaded antiquated parts of it and caused “intermittent” communications and radar gaps, leading to the longest, The Associated Press reports.",
    "Microsoft said progress is being made in bringing its popular workplace software back online as a global outage enters its second day, disrupting business communications, police emergency calls, court operations and AI tools, The Canadian Press reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
   ]
@@ -3799,25 +3192,25 @@
    "city": "Halifax",
    "tz": "America/Halifax",
    "world": false,
-   "w": "Trixstar",
-   "label": "Great Outdoors Comedy Festival vendors face payment…",
-   "u": "https://www.saltwire.com/nova-scotia/halifax/great-outdoors-comedy-festival-vendors-face-payment-uncertainty-trixstar-bankruptcy",
-   "title": "Great Outdoors Comedy Festival vendors face payment uncertainty after Trixstar bankruptcy",
-   "outlet": "SaltWire",
-   "t": "Fri 3:47 p.m.",
+   "w": "Police",
+   "label": "Nova Scotia advances US wind power sale plan as auction…",
+   "u": "https://www.nationalobserver.com/2026/11/13/news/nova-scotia-advances-us-wind-power-sale-plan-auction-timing-slips",
+   "title": "Nova Scotia advances US wind power sale plan as auction timing slips",
+   "outlet": "Canada's National Observer",
+   "t": "Fri 5:21 p.m.",
    "hot": false
   },
   {
    "city": "Ottawa",
    "tz": "America/Toronto",
    "world": false,
-   "w": "Trade",
-   "label": "Mark Carney signs Philippines trade agreement as Canada…",
-   "u": "https://www.thestar.com/politics/federal/na-carney-trade-nov12-embargoed-until-probably-9-45-pm-est-i-will-advise/article_a47fb7c5-c134-426e-aaaa-721a87c99599.html",
-   "title": "Mark Carney signs Philippines trade agreement as Canada expands Asia trade push",
-   "outlet": "Toronto Star",
-   "t": "Fri 9:55 p.m.",
-   "hot": false
+   "w": "Summit",
+   "label": "Prime Minister Carney meets with President of the…",
+   "u": "https://www.pm.gc.ca/en/news/readouts/2026/11/14/prime-minister-carney-meets-president-philippines-ferdinand-marcos-jr",
+   "title": "Prime Minister Carney meets with President of the Philippines Ferdinand Marcos Jr.",
+   "outlet": "Prime Minister of Canada",
+   "t": "Sat 12:24 a.m.",
+   "hot": true
   },
   {
    "city": "Winnipeg",
@@ -3943,6 +3336,18 @@
    "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/13/6065a29f-4a28-4c0c-bace-8fceea23af79/thumbnail/1200x630g2/cd18e18ca58d87270407234313e367c2/gettyimages-2304487605.jpg"
   },
   {
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Sat 12:24 a.m.",
+   "iso": "2026-11-14T05:24:42+00:00",
+   "title": "Prime Minister Carney meets with President of the Philippines Ferdinand Marcos Jr.",
+   "summary": "Today, the Prime Minister, Mark Carney, met with the President of the Philippines, Ferdinand Marcos Jr., during his visit to Manila, Philippines.",
+   "outlet": "Prime Minister of Canada, CP24 + BNN Bloomberg + CTV News + CBC News + 1 more, Toronto Star, The Japan Times",
+   "n": 4,
+   "url": "https://www.pm.gc.ca/en/news/readouts/2026/11/14/prime-minister-carney-meets-president-philippines-ferdinand-marcos-jr",
+   "img": "https://www.pm.gc.ca/sites/pm/files/media/override_sharing/2025-11/PM_Readout_EN.png"
+  },
+  {
    "desk": "us",
    "pic": "podium",
    "t": "Sat 12:11 a.m.",
@@ -3973,7 +3378,7 @@
    "iso": "2026-11-13T21:39:52+00:00",
    "title": "Rep. Lauren Boebert of Colorado loses House seat to Democrat Eileen Laubacher",
    "summary": "Democrat Eileen Laubacher defeated Rep. Lauren Boebert for a Colorado U.S. House seat on Friday, ousting a three-term Republican and staple of conservative media.",
-   "outlet": "CP24 + Toronto Star + PBS NewsHour, Fox News, Politico, NBC News",
+   "outlet": "CP24 + Toronto Star + PBS NewsHour (AP), Fox News, Politico, NBC News",
    "n": 4,
    "url": "https://www.cp24.com/news/world/2026/11/13/rep-lauren-boebert-of-colorado-loses-house-seat-to-democrat-eileen-laubacher/",
    "img": "https://www.cp24.com/resizer/v2/S3S23S7E7A2ISSNPB2CZNHFY54.jpg?smart=true&auth=82d141910125c068cc522058b2497910ee5eb5cdec39bd12870bda74efa3d062&width=1200&height=630"
@@ -3989,18 +3394,6 @@
    "n": 4,
    "url": "https://www.thestar.com/politics/federal/joly-puts-aggressive-package-to-stellantis-in-bid-to-stop-sale-of-brampton-plant/article_6fbd2eec-e3ad-44be-b332-94f7644a6b33.html",
    "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/1/8d/18df8bcd-1bbc-5fce-aa7b-20f4c89eaeaa/6af742135a73e.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
-  },
-  {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Fri 10:39 p.m.",
-   "iso": "2026-11-14T03:39:49+00:00",
-   "title": "Canada, Philippines conclude negotiations for free-trade agreement, aiming for 2027",
-   "summary": "Canada is also pursuing a broader trade agreement with the ASEAN bloc, which includes the Philippines and 10 other countries such as Thailand.",
-   "outlet": "Global News + CityNews Winnipeg + CP24 + BNN Bloomberg + 2 more, Toronto Star, The Japan Times",
-   "n": 3,
-   "url": "https://globalnews.ca/news/12150796/canada-philippines-trade-deal/",
-   "img": "https://globalnews.ca/wp-content/uploads/2026/11/2d5a8cb1797081da08c85efd347cf9dc480df876e35d9b7f2df0ad207f53def2.jpg?quality=65&strip=all&w=720&h=379&crop=1"
   },
   {
    "desk": "politics",
@@ -4057,7 +3450,7 @@
    "iso": "2026-11-13T23:15:56+00:00",
    "title": "Danielle Smith says she’ll call up UCP officials not signing anti-separatism pledge",
    "summary": "Danielle Smith said it's not an issue of free speech and she wants the United Conservative Party to work as a team to win next year's provincial election.",
-   "outlet": "Global News + CKOM / PAnow + CTV News (CP), Edmonton Journal, Politico",
+   "outlet": "Global News + CTV News (CP), Edmonton Journal, Politico",
    "n": 3,
    "url": "https://globalnews.ca/news/12150519/ucp-officials-alberta-separatism-pledge/",
    "img": "https://globalnews.ca/wp-content/uploads/2026/10/Smith.jpg?quality=65&strip=all&w=720&h=379&crop=1"
@@ -4105,7 +3498,7 @@
    "iso": "2026-11-14T04:22:19+00:00",
    "title": "West Bank Palestinian injured in firing by Israeli forces",
    "summary": "",
-   "outlet": "Middle East Eye, Toronto Star (AP)",
+   "outlet": "Middle East Eye, Toronto Star",
    "n": 2,
    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/west-bank-palestinian-injured-firing-israeli-forces",
    "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Iranians%20wave%20flags%20during%20a%20gathering%20in%20front%20of%20an%20anti-US%20billboard%20depicting%20US%20President%20Donald%20Trump%20in%20Tehran%27s%20Enghelab%20Square%20on%20November%203%2C%202026..jpg"
@@ -4121,6 +3514,18 @@
    "n": 2,
    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/mossad-chief-washington-talks-iran-report-says",
    "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Iranians%20wave%20flags%20during%20a%20gathering%20in%20front%20of%20an%20anti-US%20billboard%20depicting%20US%20President%20Donald%20Trump%20in%20Tehran%27s%20Enghelab%20Square%20on%20November%203%2C%202026..jpg"
+  },
+  {
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Fri 10:13 p.m.",
+   "iso": "2026-11-14T03:13:17+00:00",
+   "title": "PM Carney says Canada, Philippines conclude free-trade talks, target deal by 2027",
+   "summary": "Mark Carney arrived in Manila on Friday for a short visit to the Association of Southeast Asian Nations summit and is set to leave with a new free trade agreement with the Philippines.",
+   "outlet": "CTV News + CP24 + BNN Bloomberg, BBC News",
+   "n": 2,
+   "url": "https://www.ctvnews.ca/politics/article/carney-says-canada-philippines-conclude-free-trade-talks-target-deal-by-2027/",
+   "img": "https://www.ctvnews.ca/resizer/v2/INB5Q7LNTXL2UR4IZ5FZYILFQU.jpg?smart=true&auth=2305972a17e1588ae6cc042c24f3398eca27175de5ae209d3277e857adf75e0b&width=1200&height=630"
   },
   {
    "desk": "business",
@@ -4200,11 +3605,11 @@
    "t": "Fri 7:48 p.m.",
    "iso": "2026-11-14T00:48:22+00:00",
    "title": "Rubio acknowledges 'people are struggling' economically in speech after GOP midterm wipeout",
-   "summary": "WASHINGTON (AP) — Secretary of State Marco Rubio gave a sweeping speech to fellow conservatives on Friday evening acknowledging that Americans are struggling in the current economy, while also railing",
-   "outlet": "Toronto Star (AP)",
+   "summary": "",
+   "outlet": "Toronto Star",
    "n": 1,
    "url": "https://www.thestar.com/news/world/united-states/rubio-acknowledges-in-wake-of-gop-midterm-losses-that-people-are-struggling-economically/article_936c63db-4479-5119-a2c1-eccf9c20d8a8.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/e/cd/ecdd899b-3262-536f-bb6f-d3243acc09aa/6af7b039f05d0.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
+   "img": ""
   },
   {
    "desk": "business",
@@ -4253,18 +3658,6 @@
    "n": 1,
    "url": "https://calgaryherald.com/news/calgary-water-infrastructure-costs-airdrie-cochrane-chestermere",
    "img": ""
-  },
-  {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Fri 5:28 p.m.",
-   "iso": "2026-11-13T22:28:49+00:00",
-   "title": "As Canada invests in oil and gas, environment minister boasts of 'warm welcome' at COP31",
-   "summary": "The Liberal government's recent investments in the oil-and-gas industry have raised the hackles of climate scientists and environmental advocates. But Environment Minister Julie Dabrusin says Canada has been getting a warm reception at the COP31 United Nations climate conference in Turkey.",
-   "outlet": "CBC News",
-   "n": 1,
-   "url": "https://www.cbc.ca/radio/asithappens/julie-dabrusin-cop31-9.7421316?cmp=rss",
-   "img": "https://i.cbc.ca/ais/c512b3d3-3f21-4d23-9a14-7284e959c624,1794603204444/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C4308%2C2423%29%3BResize%3D620"
   }
  ],
  "reads": [
@@ -4411,26 +3804,6 @@
    ]
   },
   {
-   "o": "Toronto Star",
-   "ca": true,
-   "h": [
-    "Toronto Star News - Breaking News Stories",
-    "Mark Carney signs Philippines trade agreement as Canada expands Asia trade push",
-    "Maple Leafs captain Auston Matthews brings star power to the Star’s Santa Claus Fund",
-    "Flights resume in U.S. after hours-long nationwide ground stop halts travel",
-    "Pearson Airport, Air Canada to gradually resume U.S. flights after FAA lifts hours-long ground stop",
-    "Mark Carney invokes conflict screen after company run by friend got $2.3-billion contract"
-   ],
-   "u": [
-    "",
-    "https://www.thestar.com/politics/federal/na-carney-trade-nov12-embargoed-until-probably-9-45-pm-est-i-will-advise/article_a47fb7c5-c134-426e-aaaa-721a87c99599.html",
-    "https://www.thestar.com/initiatives/santa-claus-fund/maple-leafs-captain-auston-matthews-brings-star-power-to-the-star-s-santa-claus-fund/article_12c0aee8-6dac-42da-bae8-730c74851ef1.html",
-    "https://www.thestar.com/news/canada/flights-resume-in-u-s-after-hours-long-nationwide-ground-stop-halts-travel/article_cdacf058-0c1e-4a31-8200-4fd94e560f20.html",
-    "https://www.thestar.com/news/gta/toronto-pearson-airport-halts-u-s-flights-after-faa-s-nationwide-order-grounding-all-planes/article_afaa6d19-f46f-4dea-a3c6-2d83b7dd6d59.html",
-    "https://www.thestar.com/politics/federal/mark-carney-invokes-conflict-screen-after-company-run-by-friend-got-2-3b-contract/article_bd6d0c13-b9d0-4dea-8514-56c4b5682e29.html"
-   ]
-  },
-  {
    "o": "National Post",
    "ca": true,
    "h": [
@@ -4543,26 +3916,6 @@
    ]
   },
   {
-   "o": "CBS News",
-   "ca": false,
-   "h": [
-    "FAA lifts nationwide ground stop that disrupted thousands of flights",
-    "Passengers rescued after tanker hit river cruise in New Orleans",
-    "U.S. gave Singapore scant help with Alice Huang probe, source says",
-    "Criminal probe into cruise ship over potential \"magic pipe\"",
-    "Billy Evans calls his portrayal in Elizabeth Holmes documentary \"crazy\"",
-    "SpaceX launches first-of-its-kind Starship test flight"
-   ],
-   "u": [
-    "https://www.cbsnews.com/news/faa-issues-nationwide-ground-stop/",
-    "https://www.cbsnews.com/news/tanker-cruise-collision-mississippi-river-new-orleans/",
-    "https://www.cbsnews.com/news/jensen-huang-nvidia-alice-huang-singapore-investigation-china-chips/",
-    "https://www.cbsnews.com/news/coast-guard-msc-poesia-criminal-investigation-potential-magic-pipe/",
-    "https://www.cbsnews.com/news/billy-evans-elizabeth-holmes-documentary-portrayal/",
-    "https://www.cbsnews.com/news/spacex-launches-starship-flight-rocket/"
-   ]
-  },
-  {
    "o": "ABC News",
    "ca": false,
    "h": [
@@ -4668,7 +4021,7 @@
     "url": "https://www.youtube.com/watch?v=03WZomylSF8",
     "img": "https://i.ytimg.com/vi/03WZomylSF8/hqdefault.jpg",
     "story": "Flights resume in U.S. after hours-long nationwide ground st",
-    "watching": "31",
+    "watching": "29",
     "also": [
      {
       "net": "LiveNOW from FOX",
@@ -4731,73 +4084,6 @@
       "url": "https://www.theguardian.com/us-news/live/2026/nov/13/us-politics-latest-news-updates-democrats-republicans-donald-trump-van-hollen-chuck-schumer",
       "t": "Fri 10:11 p.m.",
       "iso": "2026-11-14T03:11:35+00:00"
-     }
-    ]
-   },
-   {
-    "net": "CPAC",
-    "r": "ca",
-    "title": "PM Mark Carney speaks with reporters in Manila, Philippines – November 14, 2026",
-    "url": "https://www.youtube.com/watch?v=fKbDrP01Xus",
-    "img": "https://i.ytimg.com/vi/fKbDrP01Xus/hqdefault.jpg",
-    "story": "Canada, Philippines conclude negotiations for free-trade agr",
-    "watching": "503",
-    "reports": [
-     {
-      "outlet": "Toronto Star",
-      "title": "Mark Carney signs Philippines trade agreement as Canada expands Asia trade push",
-      "url": "https://www.thestar.com/politics/federal/na-carney-trade-nov12-embargoed-until-probably-9-45-pm-est-i-will-advise/article_a47fb7c5-c134-426e-aaaa-721a87c99599.html",
-      "t": "Fri 9:55 p.m.",
-      "iso": "2026-11-14T02:55:00+00:00"
-     },
-     {
-      "outlet": "CP24",
-      "title": "Carney arrives in Manila for ASEAN summit, seeks trade pact with Philippines",
-      "url": "https://www.cp24.com/news/canada/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/",
-      "t": "Fri 6:20 p.m.",
-      "iso": "2026-11-13T23:20:36+00:00"
-     },
-     {
-      "outlet": "BNN Bloomberg",
-      "title": "Carney arrives in Manila for ASEAN summit, seeks trade pact with Philippines",
-      "url": "https://www.bnnbloomberg.ca/business/international/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/",
-      "t": "Fri 6:20 p.m.",
-      "iso": "2026-11-13T23:20:36+00:00"
-     },
-     {
-      "outlet": "CityNews Winnipeg",
-      "title": "Carney arrives in Manila for ASEAN summit, seeks trade pact with Philippines",
-      "url": "https://winnipeg.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/",
-      "t": "Fri 5:03 p.m.",
-      "iso": "2026-11-13T22:03:28+00:00"
-     },
-     {
-      "outlet": "CityNews Vancouver",
-      "title": "Carney arrives in Manila for ASEAN summit, seeks trade pact with Philippines",
-      "url": "https://vancouver.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/",
-      "t": "Fri 5:03 p.m.",
-      "iso": "2026-11-13T22:03:28+00:00"
-     },
-     {
-      "outlet": "CityNews Ottawa",
-      "title": "Carney arrives in Manila for ASEAN summit, seeks trade pact with Philippines",
-      "url": "https://ottawa.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/",
-      "t": "Fri 5:03 p.m.",
-      "iso": "2026-11-13T22:03:28+00:00"
-     },
-     {
-      "outlet": "CityNews Montreal",
-      "title": "Carney arrives in Manila for ASEAN summit, seeks trade pact with Philippines",
-      "url": "https://montreal.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/",
-      "t": "Fri 5:03 p.m.",
-      "iso": "2026-11-13T22:03:28+00:00"
-     },
-     {
-      "outlet": "CityNews Halifax",
-      "title": "Carney arrives in Manila for ASEAN summit, seeks trade pact with Philippines",
-      "url": "https://halifax.citynews.ca/2026/11/13/carney-arrives-in-manila-for-asean-summit-seeks-trade-pact-with-philippines/",
-      "t": "Fri 5:03 p.m.",
-      "iso": "2026-11-13T22:03:28+00:00"
      }
     ]
    }
@@ -5009,14 +4295,6 @@
    ],
    "official": [
     {
-     "outlet": "Toronto Pearson",
-     "title": "Pearson departures and arrivals",
-     "url": "https://www.torontopearson.com/en/departures",
-     "t": "",
-     "what": "Pearson Departures - YYZ Departures | Pearson Airport Skip to main content The U.S. Federal Aviation Administration (FAA) lifts ground stop, but U.S. flights arriving at and departing from Toronto Pearson continue to…",
-     "checked": true
-    },
-    {
      "outlet": "Calgary airport",
      "title": "YYC travel notice",
      "url": "https://www.yyc.com/",
@@ -5144,14 +4422,6 @@
    ],
    "official": [
     {
-     "outlet": "Toronto Pearson",
-     "title": "Pearson departures and arrivals",
-     "url": "https://www.torontopearson.com/en/departures",
-     "t": "",
-     "what": "Pearson Departures - YYZ Departures | Pearson Airport Skip to main content The U.S. Federal Aviation Administration (FAA) lifts ground stop, but U.S. flights arriving at and departing from Toronto Pearson continue to…",
-     "checked": true
-    },
-    {
      "outlet": "Calgary airport",
      "title": "YYC travel notice",
      "url": "https://www.yyc.com/",
@@ -5173,16 +4443,16 @@
   "https://www.nbcnews.com/politics/2026-election/jonathan-kreiss-tomkins-democrat-wins-alaska-governor-race-rcna606558": {
    "story": "Democrat Jonathan Kreiss-Tomkins wins the Alaska governor’s race",
    "us": true,
-   "specific": 1,
+   "specific": 0,
    "stories": [
     {
-     "t": "Thu 3:39 p.m.",
-     "iso": "2026-11-12T20:39:09+00:00",
+     "t": "Thu 5:42 p.m.",
+     "iso": "2026-11-12T22:42:09+00:00",
      "outlet": "BNN Bloomberg",
-     "title": "Canada-U.S. travel turnoff reversing after U.S. midterm elections",
-     "url": "https://www.bnnbloomberg.ca/business/economics/2026/11/12/democrats-blue-tsunami-could-be-reversing-travel-turnoff-of-canada-us-trade-war/",
+     "title": "Canada, U.S. have spoken ‘within the past few days’ about potential trade deal: Greer",
+     "url": "https://www.bnnbloomberg.ca/tariffs/2026/11/12/canada-and-us-have-spoken-within-the-past-few-days-about-potential-deal-trade-rep-greer/",
      "ca": true,
-     "tie": ""
+     "tie": "Canada and the U.S."
     }
    ],
    "official": [],
@@ -5190,24 +4460,6 @@
   },
   "https://www.npr.org/2026/11/14/g-s1-151719/midterms-alaska-governor-kreiss-tomkins": {
    "story": "Democrat Jonathan Kreiss-Tomkins wins race for Alaska governor, replaces a Republican",
-   "us": true,
-   "specific": 1,
-   "stories": [
-    {
-     "t": "Thu 3:39 p.m.",
-     "iso": "2026-11-12T20:39:09+00:00",
-     "outlet": "BNN Bloomberg",
-     "title": "Canada-U.S. travel turnoff reversing after U.S. midterm elections",
-     "url": "https://www.bnnbloomberg.ca/business/economics/2026/11/12/democrats-blue-tsunami-could-be-reversing-travel-turnoff-of-canada-us-trade-war/",
-     "ca": true,
-     "tie": ""
-    }
-   ],
-   "official": [],
-   "views": []
-  },
-  "https://www.politico.com/news/2026/11/14/jonathan-kreiss-tomkins-wins-alaska-governor-01166573": {
-   "story": "Democrat Jonathan Kreiss-Tomkins flips Alaska’s gubernatorial seat",
    "us": true,
    "specific": 1,
    "stories": [
@@ -5369,7 +4621,7 @@
    "pic": "globe",
    "h": "Microsoft outage shows the risks of relying on a single technology provider for essential services",
    "lede": "Microsoft said progress is being made in bringing its popular workplace software back online as a global outage enters its second day, disrupting business communications, police emergency calls, court operations and AI tools.",
-   "newl": "Now carried by 12 independent newsrooms.",
+   "newl": "Now carried by 13 independent newsrooms.",
    "rows": [
     [
      "The Guardian",
@@ -5466,6 +4718,11 @@
      "https://globalnews.ca/news/12149572/microsoft-outage-impact-canada/"
     ],
     [
+     "VOCM",
+     "Microsoft says Service Outage Technical in Nature, Not Related to Cyber or AI Agents",
+     "https://vocm.com/2026/11/13/microsoft-says-service-outage-technical-in-nature-not-related-to-cyber-or-ai-agents/"
+    ],
+    [
      "Daily Hive",
      "Canada still feeling the impact of massive Microsoft outage",
      "https://dailyhive.com/canada/canada-feeling-impact-microsoft-outage"
@@ -5479,11 +4736,6 @@
      "CBC News",
      "Microsoft says service being restored on 2nd day of worldwide outage",
      "https://www.cbc.ca/player/play/video/9.7420415"
-    ],
-    [
-     "The Hill",
-     "Microsoft ‘seeing encouraging recovery progress’ in global Outlook, Teams outage",
-     "https://thehill.com/policy/technology/6218199-microsoft-outage-recovery-process/"
     ]
    ],
    "lead": 3
@@ -5514,6 +4766,13 @@
      "Democrat Eileen Laubacher defeated Rep. Lauren Boebert for a Colorado U.S. House seat on Friday, ousting a three-term Republican and staple of conservative media.",
      [
       2
+     ]
+    ],
+    [
+     "Toronto Star",
+     "DENVER (AP) — Democrat Eileen Laubacher defeated Rep. Lauren Boebert for a Colorado U.S. House seat on Friday, ousting a three-term Republican and staple of conservative media.",
+     [
+      4
      ]
     ],
     [
@@ -5693,8 +4952,8 @@
    "at": "2026-10-29T02:33:18.869844+00:00"
   },
   "0bLqaqPAt_k": {
-   "v": "unplayable",
-   "at": "2026-11-14T05:39:46.377063+00:00"
+   "v": "ok",
+   "at": "2026-11-14T05:49:46.963356+00:00"
   },
   "0tRhtNBdSb0": {
    "v": "unknown",
@@ -6394,8 +5653,16 @@
   }
  },
  "geo_blocked": [
-  "-NabWfv-VdA",
-  "0bLqaqPAt_k"
+  "-NabWfv-VdA"
  ],
- "noembed": []
+ "noembed": [
+  "0bLqaqPAt_k",
+  "I2oLYytagu0",
+  "J3FV4iY8p5w",
+  "L6qtnHZxwEw",
+  "NuEr0Q_AS6U",
+  "buCYd2RCP60",
+  "ldElU-Q5Qyo",
+  "t_HBrWb84eY"
+ ]
 }
