@@ -1,24 +1,28 @@
 {
- "checked": "2026-11-14T01:30:50.480767+00:00",
- "labels": 249,
+ "checked": "2026-11-14T03:12:11.478972+00:00",
+ "labels": 250,
  "problems": [
   {
-   "label": "ABC News",
+   "label": "Times Colonist",
    "opens": "https://www.cp24.com/local/toronto/2026/11/14/hundreds-of-us-flights-at-torontos-two-airports-cancelled-amid-faas-ground-stop-order/",
    "section": "developed",
    "link": false,
-   "width": 390
-  },
-  {
-   "label": "BNN Bloomberg",
-   "opens": "https://www.cp24.com/local/toronto/2026/11/14/hundreds-of-us-flights-at-torontos-two-airports-cancelled-amid-faas-ground-stop-order/",
-   "section": "developed",
-   "link": false,
-   "width": 390
+   "width": 1280
   }
  ],
  "guard": {
-  "fixed": [],
+  "fixed": [
+   {
+    "label": "Daily Hive ↗",
+    "was": "(card link) cp24.com",
+    "now": "https://dailyhive.com/canada/canada-feeling-impact-microsoft-outage"
+   },
+   {
+    "label": "ABC News",
+    "was": "(card link) abcnews.com",
+    "now": "https://abcnews.com/US/live-updates/faa-ground-stop-live-updates-hundreds-flights-canceled/?id=138125140"
+   }
+  ],
   "disabled": [],
   "lifted": []
  }
