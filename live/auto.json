@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-14T08:48:27.924528+00:00",
- "checkedLabel": "Sat 3:48 a.m.",
+ "checked": "2026-11-14T08:58:27.846883+00:00",
+ "checkedLabel": "Sat 3:58 a.m.",
  "stories": [
   {
    "key": "top",
@@ -30,6 +30,15 @@
   }
  ],
  "wire": [
+  [
+   "Sat 3:44 a.m.",
+   "Latest",
+   "2 Americans die in suspected drowning incident in the Bahamas",
+   "ABC News",
+   "https://abcnews.com/International/2-americans-die-suspected-drowning-incident-bahamas/story?id=138137434",
+   "2026-11-14T08:44:28+00:00",
+   1
+  ],
   [
    "Sat 3:11 a.m.",
    "Canada",
@@ -245,15 +254,6 @@
    "https://www.aljazeera.com/news/2026/11/14/could-one-daily-pill-narrow-the-diabetes-treatment-gap-in-the-global-south?traffic_source=rss",
    "2026-11-14T06:14:09+00:00",
    1
-  ],
-  [
-   "Sat 1:00 a.m.",
-   "World",
-   "UK tells blind Nigerian pensioner to go home to India",
-   "The Guardian",
-   "https://www.theguardian.com/uk-news/2026/nov/14/uk-tells-blind-nigerian-pensioner-to-go-home-to-india",
-   "2026-11-14T06:00:37+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -395,8 +395,8 @@
     "words": [
      "nationwide",
      "flights",
-     "blames",
      "ground",
+     "blames",
      "lifts",
      "faa"
     ],
@@ -515,6 +515,14 @@
       "desc": "US Transport Secretary Sean Duffy blamed the stoppage on what he called an \"incredibly old\" air traffic control system and warned that it would take time for normal operations to resume."
      },
      {
+      "t": "Sat 12:55 a.m.",
+      "iso": "2026-11-14T05:55:53+00:00",
+      "outlet": "The Guardian",
+      "title": "Airport chaos continues after US ground stop lifted – as it happened",
+      "url": "https://www.theguardian.com/world/live/2026/nov/13/us-flight-outage-live-updates-faa-lifts-nationwide-ground-stop-as-airport-chaos-continues",
+      "desc": ""
+     },
+     {
       "t": "Fri 11:04 p.m.",
       "iso": "2026-11-14T04:04:45+00:00",
       "outlet": "The Hill",
@@ -528,7 +536,7 @@
       "outlet": "CBS News",
       "title": "FAA lifts nationwide ground stop that disrupted thousands of flights",
       "url": "https://www.cbsnews.com/news/faa-issues-nationwide-ground-stop/",
-      "desc": "The rare nationwide ground stop lasted about five hours Friday. Sources told CBS News an update to the network connecting the air traffic control system caused a reboot, crash and outage."
+      "desc": ""
      },
      {
       "t": "Fri 10:32 p.m.",
@@ -560,14 +568,6 @@
       "outlet": "BNN Bloomberg",
       "title": "Canadian airports warn more delays expected after U.S. FAA lifts ground stop",
       "url": "https://www.bnnbloomberg.ca/business/international/2026/11/14/canadian-airports-warn-more-delays-expected-after-us-faa-lifts-ground-stop/",
-      "desc": ""
-     },
-     {
-      "t": "Fri 10:11 p.m.",
-      "iso": "2026-11-14T03:11:35+00:00",
-      "outlet": "The Guardian",
-      "title": "US flight outage: FAA lifts nationwide ground stop; Trump officials suggest new tech overwhelmed old equipment – as it happened",
-      "url": "https://www.theguardian.com/us-news/live/2026/nov/13/us-politics-latest-news-updates-democrats-republicans-donald-trump-van-hollen-chuck-schumer",
       "desc": ""
      },
      {
@@ -668,6 +668,23 @@
       ]
      },
      {
+      "t": "Sat 12:55 a.m.",
+      "primary": false,
+      "outlet": "The Guardian",
+      "title": "Airport chaos continues after US ground stop lifted – as it happened",
+      "url": "https://www.theguardian.com/world/live/2026/nov/13/us-flight-outage-live-updates-faa-lifts-nationwide-ground-stop-as-airport-chaos-continues",
+      "desc": "This blog is now closed",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "The Guardian",
+        "src": "The Guardian",
+        "byline": "[{\"@type\":\"Person\",\"name\":\"Robert Mackey\",},{\"@type\":\"Person\",\"name\":\"Adam Fulton\",},{\"@type\":\"Person\",\"name\":\"Jakub Kru"
+       }
+      ],
+      "copies": []
+     },
+     {
       "t": "Fri 11:04 p.m.",
       "primary": false,
       "outlet": "The Hill",
@@ -755,23 +772,6 @@
       ]
      },
      {
-      "t": "Fri 10:11 p.m.",
-      "primary": false,
-      "outlet": "The Guardian",
-      "title": "US flight outage: FAA lifts nationwide ground stop; Trump officials suggest new tech overwhelmed old equipment – as it happened",
-      "url": "https://www.theguardian.com/us-news/live/2026/nov/13/us-politics-latest-news-updates-democrats-republicans-donald-trump-van-hollen-chuck-schumer",
-      "desc": "This live blog is now closed.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "The Guardian",
-        "src": "The Guardian",
-        "byline": "[{\"@type\":\"Person\",\"name\":\"Taz Ali\",},{\"@type\":\"Person\",\"name\":\"Lucy Campbell\",},{\"@type\":\"Person\",\"name\":\"Shrai Popat\","
-       }
-      ],
-      "copies": []
-     },
-     {
       "t": "Fri 9:58 p.m.",
       "primary": false,
       "outlet": "ABC News",
@@ -794,19 +794,18 @@
     "theme": "FAA ground stop",
     "ca_angle": {
      "specific": 2,
-     "official": 2
+     "official": 3
     },
     "canada": "tie",
     "canus": false,
     "incoherent": false,
     "popular": 5,
     "us_election": false,
-    "fronts": 10,
-    "fronts_ca": 5,
+    "fronts": 9,
+    "fronts_ca": 4,
     "fronts_who": [
      "CBC News",
      "CTV News",
-     "Toronto Star",
      "The Globe and Mail",
      "CP24",
      "CNN",
@@ -816,7 +815,7 @@
      "The Guardian"
     ],
     "judgment": "national",
-    "judgment_why": "National: leading 10 front pages (CBC News, CTV News, Toronto Star, The Globe and Mail, CP24, CNN).",
+    "judgment_why": "National: leading 9 front pages (CBC News, CTV News, The Globe and Mail, CP24, CNN, NBC News).",
     "weight": 75,
     "live": {
      "state": "now",
@@ -892,11 +891,10 @@
     "canada": "tie",
     "theme": "FAA ground stop",
     "top": true,
-    "fronts": 10,
+    "fronts": 9,
     "fronts_who": [
      "CBC News",
      "CTV News",
-     "Toronto Star",
      "The Globe and Mail",
      "CP24",
      "CNN",
@@ -908,7 +906,7 @@
     "rule": "Leading other newsrooms' front pages (Canadian ones among them): the story everyone is leading with",
     "carriers": 31,
     "judgment": "national",
-    "why_judged": "National: leading 10 front pages (CBC News, CTV News, Toronto Star, The Globe and Mail, CP24, CNN)."
+    "why_judged": "National: leading 9 front pages (CBC News, CTV News, The Globe and Mail, CP24, CNN, NBC News)."
    },
    {
     "title": "Microsoft outage shows the risks of relying on a single technology provider for essential services",
@@ -934,7 +932,7 @@
     "url": "https://www.cp24.com/news/world/2026/11/14/trump-xi-and-putin-plan-an-unprecedented-joint-meeting-on-the-sidelines-of-apec-white-house-says/",
     "rank": 3,
     "live": "",
-    "weight": 51,
+    "weight": 48,
     "score": 23,
     "independent": 8,
     "most_read": 0,
@@ -1022,13 +1020,13 @@
     "why_judged": "National: affects some people; carried across the country (national desks)."
    },
    {
-    "title": "SpaceX to attempt to catch its first Starship on land in 15th flight",
-    "url": "https://www.cbc.ca/news/science/spacex-starship-flight-15-9.7420700",
+    "title": "SpaceX launches first-of-its-kind Starship test flight",
+    "url": "https://www.cbsnews.com/news/spacex-launches-starship-flight-rocket/",
     "rank": 7,
     "live": "",
-    "weight": 11.0,
-    "score": 6,
-    "independent": 6,
+    "weight": 8.5,
+    "score": 5,
+    "independent": 5,
     "most_read": 0,
     "canada": "none",
     "theme": "",
@@ -1038,7 +1036,7 @@
      "CBS News"
     ],
     "rule": "No Canadian tie",
-    "carriers": 6,
+    "carriers": 5,
     "judgment": "regional",
     "why_judged": "Regional: affects some people; carried beyond one city."
    },
@@ -1088,8 +1086,8 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Rubik's Cube production returns to Hungary more than 50 years after invention",
-    "score": 5,
+    "title": "Indigenous Peoples in Canada: Perspectives on Reconciliation, Leadership and Resource Development",
+    "score": 4,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
   ],
@@ -1131,7 +1129,7 @@
      "alt": "A Microsoft logo and sign outside the Microsoft Visitor Center are seen at the company's headquarters Monday, Nov. 9, 2026, in Redmond, Wash. (AP Photo/Lindsey ",
      "outlet": "CP24",
      "url": "https://www.cp24.com/news/world/2026/11/13/microsoft-reports-progress-as-it-works-to-recover-email-and-other-services-in-a-global-outage/",
-     "since": "2026-11-14T08:49:53.872113+00:00"
+     "since": "2026-11-14T09:00:21.419571+00:00"
     },
     "photo_seen": [
      "https://www.cp24.com/resizer/v2/MVSPYF6MLFBW3AKSYOUBR2HNSE.jpg?smart=true&auth=3701131a5371e4a48a594900991027f6753a91b4c053ba9ef3c5396c768b69a2&width=1200&height=630"
@@ -1538,26 +1536,26 @@
       "up": ""
      },
      {
-      "net": "CTV News",
-      "url": "https://www.youtube.com/watch?v=TqCW2oBZtdw",
-      "title": "Microsoft outage ripples through hospitals, governments, cities",
-      "img": "https://i.ytimg.com/vi/TqCW2oBZtdw/hqdefault.jpg",
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=gN_IQ1qZ6NU",
+      "title": "Microsoft says service being restored on 2nd day of worldwide outage",
+      "img": "https://i.ytimg.com/vi/gN_IQ1qZ6NU/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "CTV News",
-      "url": "https://www.youtube.com/watch?v=lt_Sn_5VwYc",
-      "title": "How the Microsoft outage affected Montreal",
-      "img": "https://i.ytimg.com/vi/lt_Sn_5VwYc/hqdefault.jpg",
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=e_Hr23phnFI",
+      "title": "How the Nvidia scandal, Outlook outage show our overreliance on a few tech companies",
+      "img": "https://i.ytimg.com/vi/e_Hr23phnFI/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "CTV News",
-      "url": "https://www.youtube.com/watch?v=Q4cUA-o3trE",
-      "title": "Richard Neil guilty and massive Microsoft outage | CTV News Kitchener at 6 for Nov. 13, 2026",
-      "img": "https://i.ytimg.com/vi/Q4cUA-o3trE/hqdefault.jpg",
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=OUrTgZiKr-I",
+      "title": "Microsoft says services slowly being restored after widespread outages | Hanomansing Live",
+      "img": "https://i.ytimg.com/vi/OUrTgZiKr-I/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1573,7 +1571,7 @@
     "score": 23,
     "outlets": 8,
     "carriers": 19,
-    "tag": "Breaking",
+    "tag": "Developing",
     "title": "Trump, Xi and Putin plan an unprecedented joint meeting on the sidelines of APEC, White House says",
     "url": "https://www.cp24.com/news/world/2026/11/14/trump-xi-and-putin-plan-an-unprecedented-joint-meeting-on-the-sidelines-of-apec-white-house-says/",
     "outlet": "CP24",
@@ -1595,7 +1593,7 @@
      "alt": "This combination of three images shows President Donald Trump in Washington, Nov. 9, 2026, from left, China's President Xi Jinping in Washington, Sept. 24, 2026",
      "outlet": "CP24",
      "url": "https://www.cp24.com/news/world/2026/11/14/trump-xi-and-putin-plan-an-unprecedented-joint-meeting-on-the-sidelines-of-apec-white-house-says/",
-     "since": "2026-11-14T08:49:43.067043+00:00"
+     "since": "2026-11-14T09:00:12.896593+00:00"
     },
     "photo_seen": [
      "https://www.cp24.com/resizer/v2/4QWY3JDBPJHEHU5USAASJU7NL4.jpg?smart=true&auth=d9ed29e36deee3b758c302ccadaf197fe3fabcd3928e90d1a727641ae64294fe&width=1200&height=630"
@@ -1939,7 +1937,7 @@
     ],
     "judgment": "national",
     "judgment_why": "National: affects some people; carried across the country (6 cities).",
-    "weight": 51,
+    "weight": 48,
     "videos": [
      {
       "net": "Associated Press",
@@ -1958,8 +1956,8 @@
      "colorado",
      "democrat",
      "boebert",
-     "eileen",
-     "lauren"
+     "lauren",
+     "eileen"
     ],
     "score": 8,
     "outlets": 6,
@@ -1986,7 +1984,7 @@
      "alt": "Rep. Lauren Boebert, R-Colo., arrives for a House GOP leadership candidate forum and elections for the 120th Congress, Tuesday, Nov. 10, 2026, on Capitol Hill i",
      "outlet": "CP24",
      "url": "https://www.cp24.com/news/world/2026/11/13/rep-lauren-boebert-of-colorado-loses-house-seat-to-democrat-eileen-laubacher/",
-     "since": "2026-11-14T08:49:57.561860+00:00"
+     "since": "2026-11-14T09:00:24.984705+00:00"
     },
     "photo_seen": [
      "https://www.cp24.com/resizer/v2/S3S23S7E7A2ISSNPB2CZNHFY54.jpg?smart=true&auth=82d141910125c068cc522058b2497910ee5eb5cdec39bd12870bda74efa3d062&width=1200&height=630"
@@ -2258,8 +2256,8 @@
     "url": "https://www.foxnews.com/politics/democrat-flips-alaska-governors-mansion-trump-backed-gop-infighting"
    },
    {
-    "title": "SpaceX to attempt to catch its first Starship on land in 15th flight",
-    "url": "https://www.cbc.ca/news/science/spacex-starship-flight-15-9.7420700"
+    "title": "SpaceX launches first-of-its-kind Starship test flight",
+    "url": "https://www.cbsnews.com/news/spacex-launches-starship-flight-rocket/"
    }
   ]
  },
@@ -2450,7 +2448,7 @@
    "id": "R3KdTZi6AHc",
    "r": "ca",
    "o": "APTN News",
-   "t": "Is sticking to permanent Daylight Saving Time a mistake?",
+   "t": "Why permanent Daylight Saving Time could be short-lived",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=R3KdTZi6AHc",
@@ -2576,7 +2574,7 @@
    "id": "1cNvi7oDAD4",
    "r": "us",
    "o": "CNN",
-   "t": "Senators begin taking sides in Dem leadership showdown",
+   "t": "Van Hollen challenges Schumer: Americans ‘voted for change’",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=1cNvi7oDAD4",
@@ -2623,7 +2621,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=nl24ff01vZA",
    "img": "https://i.ytimg.com/vi/nl24ff01vZA/hqdefault.jpg",
-   "up": "2026-11-14",
+   "up": "2026-11-13",
    "added": "2026-11-14T04:54:06.244437+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -2637,7 +2635,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=5jw4WtsMQqU",
    "img": "https://i.ytimg.com/vi/5jw4WtsMQqU/hqdefault.jpg",
-   "up": "2026-11-14",
+   "up": "2026-11-13",
    "added": "2026-11-14T04:54:06.244437+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -2856,7 +2854,7 @@
    "id": "3JMfeGGd2ZY",
    "r": "world",
    "o": "Sky News",
-   "t": "Life 'untenable' as winter brings freezing rain to Gaza's displacement camps",
+   "t": "Children suffering in Gaza's displacement camps as humanitarian crisis takes hold",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=3JMfeGGd2ZY",
@@ -3133,6 +3131,13 @@
  ],
  "eds": [
   [
+   "Toronto Star",
+   "Opinion",
+   "In the wake of allegations against her father, some new understanding for Meghan",
+   "https://www.thestar.com/opinion/star-columnists/in-the-wake-of-allegations-against-her-father-some-new-understanding-for-meghan/article_a4734e2f-2ed5-4cde-bf2e-1d50d63dc413.html",
+   "2026-11-13T23:30:00+00:00"
+  ],
+  [
    "Toronto Sun",
    "Editorial",
    "Blarney from Carney on immigration",
@@ -3194,13 +3199,6 @@
    "China’s great AI chip loophole: How American espionage stopped China — this time",
    "https://www.foxnews.com/opinion/chinas-great-ai-chip-loophole-how-american-espionage-stopped-china-this-time",
    "2026-11-13T17:28:00+00:00"
-  ],
-  [
-   "The Wall Street Journal (subscribers)",
-   "Opinion",
-   "Pepper…and Salt",
-   "https://www.wsj.com/opinion/pepperand-salt-f0ecc72b?mod=rss_opinion",
-   "2026-11-14T05:00:00+00:00"
   ]
  ],
  "canus": {
@@ -3246,13 +3244,6 @@
     "outlet": "BNN Bloomberg",
     "title": "Canada-U.S. travel turnoff reversing after U.S. midterm elections",
     "url": "https://www.bnnbloomberg.ca/business/economics/2026/11/12/democrats-blue-tsunami-could-be-reversing-travel-turnoff-of-canada-us-trade-war/"
-   },
-   {
-    "t": "Thu 5:00 a.m.",
-    "iso": "2026-11-12T10:00:00+00:00",
-    "outlet": "Toronto Star",
-    "title": "Carney set to sign two Asian trade deals on nine-day, four-summit trip that tests his middle-power pitch",
-    "url": "https://www.thestar.com/politics/carney-set-to-sign-two-asian-trade-deals-on-nine-day-four-summit-trip-that-tests-his-middle-power-pitch/article_e38f9129-af57-4c82-ae73-3cc23ac1606a.html"
    }
   ],
   "usmedia": []
@@ -3652,7 +3643,7 @@
    "title": "Trump, Xi and Putin plan an unprecedented joint meeting on the sidelines of APEC, White House says",
    "outlet": "Times Colonist",
    "t": "Sat 2:57 a.m.",
-   "hot": true
+   "hot": false
   },
   {
    "city": "Kyiv",
@@ -3688,7 +3679,7 @@
    "iso": "2026-11-14T08:31:04.752000+00:00",
    "title": "U.S. flights cleared to take off again after ground stop order caused thousands of delays and cancellations",
    "summary": "",
-   "outlet": "CBC News, BBC News, VOCM, Euronews + Toronto Star + The Canadian Press (via Winnipeg Free Press), The Hill, CBS News, Al Jazeera",
+   "outlet": "CBC News, BBC News, VOCM, Euronews + Toronto Star + The Canadian Press (via Winnipeg Free Press), The Guardian, The Hill, CBS News",
    "n": 7,
    "url": "https://www.cbc.ca/news/world/livestory/faa-grounds-all-flights-united-states-air-traffic-control-live-updates-9.7421404",
    "img": "https://i.cbc.ca/ais/80c77054-0cc3-42cc-9397-fcd22d821606,1794626178616/full/max/0/default.jpg?im=Crop%2Crect%3D%28269%2C771%2C7619%2C4285%29%3BResize%3D620"
@@ -3742,18 +3733,6 @@
    "img": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/11/14/a896252d-5439-4994-aa9b-2ec3929be800/thumbnail/1200x630/24cbc3cc63d3c34bd01e8e01f1517e01/gettyimages-2302763069.jpg"
   },
   {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Fri 9:10 p.m.",
-   "iso": "2026-11-14T02:10:00+00:00",
-   "title": "SpaceX launches first-of-its-kind Starship test flight",
-   "summary": "The SpaceX Super Heavy-Starship was designed from the ground up to be fully reusable in a bid to lower launch costs.",
-   "outlet": "CBS News, The Guardian, CTV News (CP), PBS NewsHour (AP), BBC News, CBC News (Reuters)",
-   "n": 6,
-   "url": "https://www.cbsnews.com/news/spacex-launches-starship-flight-rocket/",
-   "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/13/6065a29f-4a28-4c0c-bace-8fceea23af79/thumbnail/1200x630g2/cd18e18ca58d87270407234313e367c2/gettyimages-2304487605.jpg"
-  },
-  {
    "desk": "politics",
    "pic": "parliament",
    "t": "Sat 2:10 a.m.",
@@ -3766,6 +3745,18 @@
    "img": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/c1acac746897544fcaa286d6048a0311605a4d9f943bc2cdb11a14a74d6a9c6c.jpg;w=1200;h=800;mode=crop"
   },
   {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Fri 9:10 p.m.",
+   "iso": "2026-11-14T02:10:00+00:00",
+   "title": "SpaceX launches first-of-its-kind Starship test flight",
+   "summary": "The SpaceX Super Heavy-Starship was designed from the ground up to be fully reusable in a bid to lower launch costs.",
+   "outlet": "CBS News, CTV News (CP), PBS NewsHour (AP), BBC News, CBC News (Reuters)",
+   "n": 5,
+   "url": "https://www.cbsnews.com/news/spacex-launches-starship-flight-rocket/",
+   "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/13/6065a29f-4a28-4c0c-bace-8fceea23af79/thumbnail/1200x630g2/cd18e18ca58d87270407234313e367c2/gettyimages-2304487605.jpg"
+  },
+  {
    "desk": "us",
    "pic": "podium",
    "t": "Fri 4:39 p.m.",
@@ -3776,18 +3767,6 @@
    "n": 4,
    "url": "https://www.cp24.com/news/world/2026/11/13/rep-lauren-boebert-of-colorado-loses-house-seat-to-democrat-eileen-laubacher/",
    "img": "https://www.cp24.com/resizer/v2/S3S23S7E7A2ISSNPB2CZNHFY54.jpg?smart=true&auth=82d141910125c068cc522058b2497910ee5eb5cdec39bd12870bda74efa3d062&width=1200&height=630"
-  },
-  {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Fri 3:30 p.m.",
-   "iso": "2026-11-13T20:30:00+00:00",
-   "title": "Melanie Joly puts 'aggressive package' to Stellantis in bid to stop sale of Brampton plant",
-   "summary": "Melanie Joly said she would work with the Ontario government and Unifor to propose additional ideas directly to Stellantis' global CEO.",
-   "outlet": "Toronto Star, Canada's National Observer + CP24 + BNN Bloomberg, BNN Bloomberg + CP24, CBC News",
-   "n": 4,
-   "url": "https://www.thestar.com/politics/federal/joly-puts-aggressive-package-to-stellantis-in-bid-to-stop-sale-of-brampton-plant/article_6fbd2eec-e3ad-44be-b332-94f7644a6b33.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/1/8d/18df8bcd-1bbc-5fce-aa7b-20f4c89eaeaa/6af742135a73e.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
   },
   {
    "desk": "politics",
@@ -3848,6 +3827,18 @@
    "n": 3,
    "url": "https://www.saltwire.com/nova-scotia/halifax/great-outdoors-comedy-festival-vendors-face-payment-uncertainty-trixstar-bankruptcy",
    "img": ""
+  },
+  {
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Fri 1:54 p.m.",
+   "iso": "2026-11-13T18:54:23.270000+00:00",
+   "title": "Feds, Ontario offering Stellantis 'aggressive package' to keep Brampton auto plant open",
+   "summary": "The federal and Ontario governments are mounting a last-ditch effort to save the Stellantis auto plant in Brampton by pitching the company possible survival \"scenarios\" and offering an \"aggressive package\" of support to make it happen.",
+   "outlet": "CBC News, Canada's National Observer + CP24 + BNN Bloomberg, BNN Bloomberg + CP24",
+   "n": 3,
+   "url": "https://www.cbc.ca/news/politics/joly-fedeli-stellantis-brampton-plant-package-9.7420849",
+   "img": "https://i.cbc.ca/ais/d39dd66c-98b9-496d-b996-d5d9ca6b97b0,1794597165432/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C3500%2C1968%29%3BResize%3D620"
   },
   {
    "desk": "politics",
@@ -3948,14 +3939,14 @@
   {
    "desk": "us",
    "pic": "podium",
-   "t": "Sat 2:15 a.m.",
-   "iso": "2026-11-14T07:15:53+00:00",
-   "title": "UCLA remains unbeaten with win over Illinois",
-   "summary": "PASADENA, Calif. (AP) — Ty Dieffenbach threw for 232 yards and two touchdowns and overcame a left shoulder injury that sidelined him, and No. 4 UCLA remained unbeaten with a rain-soaked, 22-14 victory over Illinois on Friday night.",
-   "outlet": "The Canadian Press (via Winnipeg Free Press)",
+   "t": "Sat 3:44 a.m.",
+   "iso": "2026-11-14T08:44:28+00:00",
+   "title": "2 Americans die in suspected drowning incident in the Bahamas",
+   "summary": "Two Americans died in a suspected drowning incident in the Bahamas on Friday afternoon after a group of swimmers was swept away by strong currents, police said.",
+   "outlet": "ABC News",
    "n": 1,
-   "url": "https://www.winnipegfreepress.com/uncategorized/2026/11/14/ucla-remains-unbeaten-with-win-over-illinois",
-   "img": ""
+   "url": "https://abcnews.com/International/2-americans-die-suspected-drowning-incident-bahamas/story?id=138137434",
+   "img": "https://s.abcnews.com/images/US/GTY-emergency-ambulance-jt-161123_16x9_992.jpg?w=1600"
   },
   {
    "desk": "politics",
@@ -4024,7 +4015,7 @@
    "iso": "2026-11-13T23:27:24+00:00",
    "title": "Federal government won’t clarify stance on possibility of future streamer payments for CanCon",
    "summary": "Days after Mark Carney said it isn’t necessary to impose a tax on big tech companies, his office won’t clarify if that means financial contributions from streamers are off the table entirely.",
-   "outlet": "BNN Bloomberg + Toronto Star + CityNews",
+   "outlet": "BNN Bloomberg + CityNews",
    "n": 1,
    "url": "https://www.bnnbloomberg.ca/business/politics/2026/11/13/federal-government-wont-clarify-stance-on-possibility-of-future-streamer-payments-for-cancon/",
    "img": "https://www.bnnbloomberg.ca/resizer/v2/MTL2H4E7T5EIRZYB6XMEOKIP4U.jpg?smart=true&auth=1f0706dd11f5663386c8c549a6ea203c3781025390c622cc752ce51420de5e5f&width=1200&height=630"
@@ -4171,26 +4162,6 @@
     "",
     "",
     "https://globalnews.ca/news/12150130/129-people-aboard-cruise-ship-struck-by-tanker-in-new-orleans-officials-say/"
-   ]
-  },
-  {
-   "o": "Toronto Star",
-   "ca": true,
-   "h": [
-    "Toronto Star News - Breaking News Stories",
-    "Mark Carney inks two Asian trade deals amid stalled U.S. trade talks",
-    "Maple Leafs captain Auston Matthews brings star power to the Star’s Santa Claus Fund",
-    "Flights resume in U.S. after hours-long nationwide ground stop halts travel",
-    "Pearson Airport, Air Canada to gradually resume U.S. flights after FAA lifts hours-long ground stop",
-    "Mark Carney invokes conflict screen after company run by friend got $2.3-billion contract"
-   ],
-   "u": [
-    "",
-    "https://www.thestar.com/politics/federal/na-carney-trade-nov12-embargoed-until-probably-9-45-pm-est-i-will-advise/article_a47fb7c5-c134-426e-aaaa-721a87c99599.html",
-    "https://www.thestar.com/initiatives/santa-claus-fund/maple-leafs-captain-auston-matthews-brings-star-power-to-the-star-s-santa-claus-fund/article_12c0aee8-6dac-42da-bae8-730c74851ef1.html",
-    "https://www.thestar.com/news/canada/flights-resume-in-u-s-after-hours-long-nationwide-ground-stop-halts-travel/article_cdacf058-0c1e-4a31-8200-4fd94e560f20.html",
-    "https://www.thestar.com/news/gta/toronto-pearson-airport-halts-u-s-flights-after-faa-s-nationwide-order-grounding-all-planes/article_afaa6d19-f46f-4dea-a3c6-2d83b7dd6d59.html",
-    "https://www.thestar.com/politics/federal/mark-carney-invokes-conflict-screen-after-company-run-by-friend-got-2-3b-contract/article_bd6d0c13-b9d0-4dea-8514-56c4b5682e29.html"
    ]
   },
   {
@@ -4431,7 +4402,7 @@
     "url": "https://www.youtube.com/watch?v=03WZomylSF8",
     "img": "https://i.ytimg.com/vi/03WZomylSF8/hqdefault.jpg",
     "story": "Thousands of flights canceled as airlines work to dig out fr",
-    "watching": "19",
+    "watching": "15",
     "also": [
      {
       "net": "LiveNOW from FOX",
@@ -4504,7 +4475,7 @@
     "url": "https://www.youtube.com/watch?v=GPpOPaNQoss",
     "img": "https://i.ytimg.com/vi/GPpOPaNQoss/hqdefault.jpg",
     "story": "US airspace reopens after 'extraordinary circumstances' grounded fligh",
-    "watching": "569"
+    "watching": "589"
    }
   ],
   "upcoming": [],
@@ -4640,6 +4611,14 @@
     }
    ],
    "official": [
+    {
+     "outlet": "Toronto Pearson",
+     "title": "Pearson departures and arrivals",
+     "url": "https://www.torontopearson.com/en/departures",
+     "t": "",
+     "what": "Pearson Departures - YYZ Departures | Pearson Airport Skip to main content The U.S. Federal Aviation Administration (FAA) lifts ground stop, but U.S. flights arriving at and departing from Toronto Pearson continue to…",
+     "checked": true
+    },
     {
      "outlet": "Calgary airport",
      "title": "YYC travel notice",
