@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-15T08:20:08.710113+00:00",
- "checkedLabel": "Sun 3:20 a.m.",
+ "checked": "2026-11-15T08:30:09.255070+00:00",
+ "checkedLabel": "Sun 3:30 a.m.",
  "stories": [
   {
    "key": "top",
@@ -203,11 +203,6 @@
   ]
  ],
  "blogs": [
-  {
-   "url": "https://www.thestar.com/news/gta/toronto-election-results-live/article_3ec1c84c-3d92-4440-b764-ac02c6602fb0.html",
-   "updated": "2026-11-14T19:35:47+00:00",
-   "ended": true
-  },
   {
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/27/israel-election-results-live-exit-polls-soon-as-netanyahu-faces-tight-race",
    "updated": "2026-10-28T22:40:53+00:00",
@@ -726,7 +721,7 @@
      "nationwide",
      "canceled",
      "flights",
-     "recover",
+     "travel",
      "ground",
      "faa"
     ],
@@ -990,26 +985,25 @@
     "theme": "FAA ground stop",
     "ca_angle": {
      "specific": 0,
-     "official": 2
+     "official": 3
     },
     "canada": "tie",
     "canus": false,
     "incoherent": false,
     "popular": 4,
     "us_election": false,
-    "fronts": 6,
+    "fronts": 5,
     "fronts_ca": 1,
     "fronts_who": [
      "CBC News",
      "NBC News",
      "CBS News",
      "ABC News",
-     "BBC News",
      "NPR"
     ],
     "outled_ca": 4,
     "judgment": "national",
-    "judgment_why": "National: leading 6 front pages (CBC News, NBC News, CBS News, ABC News, BBC News, NPR).",
+    "judgment_why": "National: affects many people; carried beyond one city.",
     "weight": 54.5,
     "live": {
      "state": "now",
@@ -1038,18 +1032,18 @@
       "up": ""
      },
      {
-      "net": "CityNews",
-      "url": "https://www.youtube.com/watch?v=srP0tjG_SC8",
-      "title": "Travellers in Calgary impacted by nationwide flight disruption in U.S. on Friday",
-      "img": "https://i.ytimg.com/vi/srP0tjG_SC8/hqdefault.jpg",
+      "net": "CP24",
+      "url": "https://www.youtube.com/watch?v=Cr1p9feNrvI",
+      "title": "Hundreds of flights impacted at Pearson as air travel resumes following U.S. ground stop",
+      "img": "https://i.ytimg.com/vi/Cr1p9feNrvI/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "CityNews",
-      "url": "https://www.youtube.com/watch?v=K9jLqEkS-1s",
-      "title": "Flight disruptions continue at Montreal-Trudeau after U.S. ground stop",
-      "img": "https://i.ytimg.com/vi/K9jLqEkS-1s/hqdefault.jpg",
+      "net": "CP24",
+      "url": "https://www.youtube.com/watch?v=JT9uNZ0FawI",
+      "title": "Canadian airports warn more delays expected after U.S. FAA lifts ground stop",
+      "img": "https://i.ytimg.com/vi/JT9uNZ0FawI/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1093,19 +1087,18 @@
     "canada": "tie",
     "theme": "FAA ground stop",
     "top": true,
-    "fronts": 6,
+    "fronts": 5,
     "fronts_who": [
      "CBC News",
      "NBC News",
      "CBS News",
      "ABC News",
-     "BBC News",
      "NPR"
     ],
     "rule": "From abroad, tied to Canada",
     "carriers": 9,
     "judgment": "national",
-    "why_judged": "National: leading 6 front pages (CBC News, NBC News, CBS News, ABC News, BBC News, NPR)."
+    "why_judged": "National: affects many people; carried beyond one city."
    },
    {
     "title": "Richard Sterban, member of the celebrated country and gospel group The Oak Ridge Boys, dies at 83",
@@ -1295,7 +1288,7 @@
      "alt": "Richard Sterban, member of the celebrated country and gospel group The Oak Ridge Boys, dies at 83",
      "outlet": "CityNews Winnipeg",
      "url": "https://winnipeg.citynews.ca/2026/11/14/richard-sterban-member-of-the-celebrated-country-and-gospel-group-the-oak-ridge-boys-dies-at-83/",
-     "since": "2026-11-15T08:21:47.330541+00:00"
+     "since": "2026-11-15T08:31:45.307163+00:00"
     },
     "photo_seen": [
      "https://winnipeg.citynews.ca/wp-content/blogs.dir/sites/13/2026/11/a3f672ca444f3136511e6671bbd08437f95c27e7b082cb7d7d6d4be6d0a3b6af.jpg"
@@ -1575,7 +1568,7 @@
    "id": "R3KdTZi6AHc",
    "r": "ca",
    "o": "APTN News",
-   "t": "Why permanent Daylight Saving Time could be short-lived",
+   "t": "Is sticking to permanent Daylight Saving Time a mistake?",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=R3KdTZi6AHc",
@@ -1897,7 +1890,7 @@
    "id": "QWh_1uZhw-U",
    "r": "us",
    "o": "CNN",
-   "t": "Vance confronts a new political reality: 2028 ‘may not be his time’",
+   "t": "Once Trump’s presumed heir, Vance is wrestling with his political future",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=QWh_1uZhw-U",
@@ -2104,20 +2097,6 @@
    "geo": "unknown"
   },
   {
-   "id": "v7dfzBMvZ6w",
-   "r": "world",
-   "o": "DW News",
-   "t": "How hazardous pesticides are putting Kenyan farm workers at risk | DW News",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=v7dfzBMvZ6w",
-   "img": "https://i.ytimg.com/vi/v7dfzBMvZ6w/hqdefault.jpg",
-   "up": "2026-11-15",
-   "added": "2026-11-15T05:31:26.075583+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "U4YMfbuz8Ls",
    "r": "world",
    "o": "BBC News",
@@ -2146,30 +2125,16 @@
    "geo": "unknown"
   },
   {
-   "id": "8FRLVb9Neg4",
+   "id": "pdzLkKur_VY",
    "r": "world",
-   "o": "Sky News",
-   "t": "Can the world still turn things around on climate change?",
+   "o": "DW News",
+   "t": "No home in paradise: Tenerife’s housing crisis | DW Reporter",
    "rec": false,
    "d": "",
-   "u": "https://www.youtube.com/watch?v=8FRLVb9Neg4",
-   "img": "https://i.ytimg.com/vi/8FRLVb9Neg4/hqdefault.jpg",
+   "u": "https://www.youtube.com/watch?v=pdzLkKur_VY",
+   "img": "https://i.ytimg.com/vi/pdzLkKur_VY/hqdefault.jpg",
    "up": "2026-11-15",
-   "added": "2026-11-15T08:20:08.710113+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "ZiWN51_a64A",
-   "r": "world",
-   "o": "Sky News",
-   "t": "Meat, the manosphere and masculinity: How meat became embroiled in the culture wars",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=ZiWN51_a64A",
-   "img": "https://i.ytimg.com/vi/ZiWN51_a64A/hqdefault.jpg",
-   "up": "2026-11-15",
-   "added": "2026-11-15T08:20:08.710113+00:00",
+   "added": "2026-11-15T08:30:09.255070+00:00",
    "pic": "globe",
    "geo": "unknown"
   }
@@ -2979,13 +2944,13 @@
    "city": "Kyiv",
    "tz": "Europe/Kyiv",
    "world": true,
-   "w": "Talks",
-   "label": "YouTube blocks 16 Russian channels in Ukraine",
-   "u": "https://kyivindependent.com/youtube-blocks-16-russian-channels-in-ukraine-including-masha-and-the-bear-versions/",
-   "title": "YouTube blocks 16 Russian channels in Ukraine, including 'Masha and the Bear' versions",
-   "outlet": "Kyiv Independent",
-   "t": "Sat 11:42 p.m.",
-   "hot": false
+   "w": "Drone strikes",
+   "label": "In the ‘kill zone’, Ukraine bets on flying evacuation…",
+   "u": "https://www.japantimes.co.jp/news/2026/11/15/world/ukraine-flying-evacuation-drones/",
+   "title": "In the ‘kill zone’, Ukraine bets on flying evacuation drones",
+   "outlet": "The Japan Times",
+   "t": "Sun 2:32 a.m.",
+   "hot": true
   },
   {
    "city": "Brussels",
@@ -3029,6 +2994,18 @@
   {
    "desk": "world",
    "pic": "globe",
+   "t": "Sun 2:32 a.m.",
+   "iso": "2026-11-15T07:32:00+00:00",
+   "title": "In the ‘kill zone’, Ukraine bets on flying evacuation drones",
+   "summary": "Almost five years after Russia invaded, drones have transformed the very nature of modern warfare.",
+   "outlet": "The Japan Times (AFP), Kyiv Independent, CTV News + CP24 + The Japan Times (CP), BBC News, CBS News, Euronews",
+   "n": 6,
+   "url": "https://www.japantimes.co.jp/news/2026/11/15/world/ukraine-flying-evacuation-drones/",
+   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/15/574113.jpg?v=3.1"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
    "t": "Sat 10:33 p.m.",
    "iso": "2026-11-15T03:33:55+00:00",
    "title": "FAA ground stop live updates: FAA chief says when he expects air travel to recover",
@@ -3037,18 +3014,6 @@
    "n": 6,
    "url": "https://abcnews.com/US/live-updates/faa-ground-stop-live-updates-hundreds-flights-canceled/?id=138125140",
    "img": "https://i.abcnewsfe.com/a/98f50973-2d87-4a05-ae84-d793716ff53a/bedford-presser-rt-jt-261114_1794673426905_hpMain_16x9.jpg?w=1600"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Sat 11:42 p.m.",
-   "iso": "2026-11-15T04:42:41+00:00",
-   "title": "YouTube blocks 16 Russian channels in Ukraine, including 'Masha and the Bear' versions",
-   "summary": "The latest restrictions are part of a broader effort to limit Russian influence on digital platforms. In October, Ukraine's National Security and Defense Council reported that another 39 channels spreading Russian propaganda had been blocked in Ukraine or removed from YouTube.",
-   "outlet": "Kyiv Independent, CTV News + CP24 + The Japan Times (CP), BBC News, CBS News, Euronews",
-   "n": 5,
-   "url": "https://kyivindependent.com/youtube-blocks-16-russian-channels-in-ukraine-including-masha-and-the-bear-versions/",
-   "img": "https://assets.kyivindependent.com/content/images/2026/11/GettyImages-2275009131_20261115-042421_20261115-043924.jpg"
   },
   {
    "desk": "world",
@@ -3491,6 +3456,26 @@
    ]
   },
   {
+   "o": "Toronto Star",
+   "ca": true,
+   "h": [
+    "Toronto Star News - Breaking News Stories",
+    "Secret lobbyist texts raise questions about the origin of the Ford government’s controversial Oakville highrise plan",
+    "Althia Raj: Elizabeth May exits Green leadership with a warning about Mark Carney",
+    "Doug Ford banned speed cameras a year ago. On Toronto roads where they stood, speeding has tripled, Star analysis reveals",
+    "They waited three years for Stellantis to keep its promise. Now these workers feel ‘betrayed’",
+    "Mark Carney inks two Asian trade deals amid stalled U.S. trade talks"
+   ],
+   "u": [
+    "",
+    "https://www.thestar.com/news/investigations/secret-lobbyist-texts-raise-questions-about-the-origin-of-the-ford-government-s-controversial-oakville-highrise-plan/article_56412173-7df2-470c-8221-f9e127ac8a54.html",
+    "https://www.thestar.com/opinion/star-columnists/elizabeth-may-once-backed-mark-carney-s-liberals-as-steps-down-as-green-leader-she-says-she-feels-hoodwinked/article_6deed5f1-30d9-4a88-98cb-41a37f3bfca0.html",
+    "https://www.thestar.com/news/gta/doug-ford-banned-speed-cameras-a-year-ago-on-toronto-roads-where-they-stood-speeding-has-tripled-star-analysis-reveals/article_440c1cbc-15d6-441c-aab4-50b8fef39553.html",
+    "https://www.thestar.com/business/stellantis-workers-left-in-limbo-after-brampton-plant-sale-to-roshel/article_7b7952a8-9d65-4caf-a42f-ae8fb3bce9e7.html",
+    "https://www.thestar.com/politics/federal/na-carney-trade-nov12-embargoed-until-probably-9-45-pm-est-i-will-advise/article_a47fb7c5-c134-426e-aaaa-721a87c99599.html"
+   ]
+  },
+  {
    "o": "National Post",
    "ca": true,
    "h": [
@@ -3646,16 +3631,16 @@
    "h": [
     "Former UK police inspector lied about wife's death in Barbados hotel room, BBC learns",
     "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
+    "Pope Leo speaks of community 'suffering' on visit to remote Andes town",
     "Mississippi's new senator tells BBC how he won in Trump's heartland",
-    "Copper wire upgrade behind US flight suspension, transport secretary says",
     "'Can you believe it?': SpaceX catches part of its Starship rocket on return to Earth",
     "Philippines takes the crown in first Eurovision Song Contest Asia"
    ],
    "u": [
     "https://www.bbc.com/news/articles/c6jd7k7g57x5o",
     "",
+    "https://www.bbc.com/news/articles/cr4gnz0lv2vlo",
     "https://www.bbc.com/news/videos/crpdwve24398o",
-    "https://www.bbc.com/news/articles/c6wy9lynq4qno",
     "",
     ""
    ]
@@ -3727,6 +3712,16 @@
       "iso": "2026-11-14T15:19:35+00:00"
      }
     ]
+   },
+   {
+    "net": "Sky News",
+    "r": "world",
+    "title": "Rolling live news coverage, as it happens",
+    "url": "https://www.youtube.com/watch?v=2SAoJ6w5UT8",
+    "img": "https://i.ytimg.com/vi/2SAoJ6w5UT8/hqdefault.jpg",
+    "story": "Live news, as it happens",
+    "watching": "192",
+    "rolling": true
    }
   ],
   "upcoming": [],
@@ -3912,6 +3907,14 @@
    "stories": [],
    "official": [
     {
+     "outlet": "Toronto Pearson",
+     "title": "Pearson departures and arrivals",
+     "url": "https://www.torontopearson.com/en/departures",
+     "t": "",
+     "what": "Pearson Departures - YYZ Departures | Pearson Airport Skip to main content U.S.-bound flights have resumed following the FAA ground stop.",
+     "checked": true
+    },
+    {
      "outlet": "Calgary airport",
      "title": "YYC travel notice",
      "url": "https://www.yyc.com/",
@@ -3938,6 +3941,14 @@
    "specific": 0,
    "stories": [],
    "official": [
+    {
+     "outlet": "Toronto Pearson",
+     "title": "Pearson departures and arrivals",
+     "url": "https://www.torontopearson.com/en/departures",
+     "t": "",
+     "what": "Pearson Departures - YYZ Departures | Pearson Airport Skip to main content U.S.-bound flights have resumed following the FAA ground stop.",
+     "checked": true
+    },
     {
      "outlet": "Calgary airport",
      "title": "YYC travel notice",
