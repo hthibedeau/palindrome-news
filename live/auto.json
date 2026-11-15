@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-15T09:14:37.497481+00:00",
- "checkedLabel": "Sun 4:14 a.m.",
+ "checked": "2026-11-15T09:19:41.135564+00:00",
+ "checkedLabel": "Sun 4:19 a.m.",
  "stories": [
   {
    "key": "top",
@@ -41,21 +41,21 @@
   ],
   [
    "Sun 4:00 a.m.",
-   "Latest",
-   "A dementia diagnosis is devastating. What happens when you're only 48?",
-   "Narcity",
-   "https://www.narcity.com/this-man-was-diagnosed-with-alzheimers-at-age-48-hes-not-alone",
-   "2026-11-15T09:00:45+00:00",
-   4
-  ],
-  [
-   "Sun 4:00 a.m.",
    "Canada",
    "Canada is spending more than ever on health care. Are we getting our money's worth?",
    "CBC News",
    "https://www.cbc.ca/news/health/canada-health-care-spending-9.7419956",
    "2026-11-15T09:00:41.706000+00:00",
    1
+  ],
+  [
+   "Sun 4:00 a.m.",
+   "Latest",
+   "A dementia diagnosis is devastating. What happens when you're only 48?",
+   "Toronto Star",
+   "https://www.thestar.com/news/ontario/a-dementia-diagnosis-is-devastating-what-happens-when-you-re-only-48/article_d0240783-757e-54f0-802c-b7517cd448b5.html",
+   "2026-11-15T09:00:07+00:00",
+   5
   ],
   [
    "Sun 4:00 a.m.",
@@ -370,9 +370,9 @@
   },
   {
    "score": 7,
-   "title": "Italy fines Meta $887M for accessing users’ photos without specific consent",
-   "url": "https://thehill.com/policy/technology/6220878-meta-italian-privacy-fine-consent/",
-   "outlets": 7,
+   "title": "A dementia diagnosis is devastating. What happens when you're only 48?",
+   "url": "https://www.narcity.com/this-man-was-diagnosed-with-alzheimers-at-age-48-hes-not-alone",
+   "outlets": 5,
    "why": [],
    "theme": ""
   }
@@ -478,20 +478,20 @@
       "url": "https://www.cbc.ca/player/play/video/9.7422471"
      },
      {
+      "src": "live/img/auto-bdae1ea0-24c931bce8.jpg",
+      "orig": "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/648/files/2026/11/dal-bianco-web-111426.jpg",
+      "caption": "From: Fifth Canadian soldier dies after fire at CFB Wainwright. — via CKOM / PAnow",
+      "alt": "Fifth Canadian soldier dies after fire at CFB Wainwright",
+      "outlet": "CKOM / PAnow",
+      "url": "https://www.ckom.com/2026/11/14/fifth-canadian-soldier-dies-after-fire-at-cfb-wainwright/"
+     },
+     {
       "src": "live/img/auto-bdae1ea0-c9a3a6665f.jpg",
       "orig": "https://vancouver.citynews.ca/wp-content/blogs.dir/sites/9/2026/11/14/Copy-of-Untitled-45.jpg",
       "caption": "From: Military says fifth Canadian soldier has died after fire in Wainwright. — via CityNews Vancouver",
       "alt": "Military says fifth Canadian soldier has died after fire in Wainwright",
       "outlet": "CityNews Vancouver",
       "url": "https://vancouver.citynews.ca/2026/11/14/caf-says-fifth-canadian-soldier-has-died-after-fire-in-wainwright/"
-     },
-     {
-      "src": "live/img/auto-bdae1ea0-940893613d.jpg",
-      "orig": "https://ottawa.citynews.ca/wp-content/blogs.dir/sites/4/2026/11/14/CP177253132-scaled.jpg",
-      "caption": "From: Military says fifth Canadian soldier has died after fire in Wainwright. — via CityNews Ottawa",
-      "alt": "Military says fifth Canadian soldier has died after fire in Wainwright",
-      "outlet": "CityNews Ottawa",
-      "url": "https://ottawa.citynews.ca/2026/11/14/caf-says-fifth-canadian-soldier-has-died-after-fire-in-wainwright/"
      }
     ],
     "independent": 4,
@@ -550,7 +550,7 @@
       "outlet": "CKOM / PAnow",
       "title": "Fifth Canadian soldier dies after fire at CFB Wainwright",
       "url": "https://www.ckom.com/2026/11/14/fifth-canadian-soldier-dies-after-fire-at-cfb-wainwright/",
-      "desc": ""
+      "desc": "The Canadian Armed Forces said in a statement that Pte. William Douglas Dal Bianco died in Ontario on Friday. Four other soldiers died and 39 others were injured in the Alberta blaze last month."
      },
      {
       "t": "Sat 4:11 p.m.",
@@ -759,13 +759,13 @@
       "outlet": "CKOM / PAnow",
       "title": "Fifth Canadian soldier dies after fire at CFB Wainwright",
       "url": "https://www.ckom.com/2026/11/14/fifth-canadian-soldier-dies-after-fire-at-cfb-wainwright/",
-      "desc": "",
+      "desc": "The Canadian Armed Forces said in a statement that Pte. William Douglas Dal Bianco died in Ontario on Friday. Four other soldiers died and 39 others were injured in the Alberta blaze last month.",
       "wire": "",
       "by": [
        {
         "outlet": "CKOM / PAnow",
         "src": "Rawlco",
-        "byline": ""
+        "byline": "[{\"@type\":\"Person\",\"name\":\"CJME News\"}] \"CJME News\" CJME News"
        }
       ],
       "copies": []
@@ -1150,21 +1150,208 @@
     "judgment": "national",
     "judgment_why": "National: affects some people; carried across the country (national desks).",
     "weight": 44.0
+   }
+  ],
+  "considered": [
+   {
+    "title": "Edmonton veterans sweat it out in support of CFB Wainwright fire survivors",
+    "url": "https://www.ctvnews.ca/edmonton/article/edmonton-veterans-sweat-it-out-in-support-of-cfb-wainwright-fire-survivors/",
+    "rank": 1,
+    "live": "",
+    "weight": 40,
+    "score": 15,
+    "independent": 4,
+    "most_read": 3,
+    "canada": "canadian",
+    "theme": "",
+    "top": true,
+    "fronts": 4,
+    "fronts_who": [
+     "CTV News",
+     "Global News",
+     "The Globe and Mail",
+     "CP24"
+    ],
+    "rule": "Canadian, leading the most Canadian front pages: the story Canada's newsrooms are leading with",
+    "carriers": 17,
+    "judgment": "national",
+    "why_judged": "National: affects many people; carried across the country (6 cities)."
    },
+   {
+    "title": "SpaceX’s Starship captured by launch pad arms in a dramatic first",
+    "url": "https://www.cp24.com/news/world/2026/11/15/spacexs-starship-captured-by-launch-pad-arms-in-a-dramatic-first/",
+    "rank": 2,
+    "live": "",
+    "weight": 44.0,
+    "score": 17,
+    "independent": 7,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": true,
+    "fronts": 4,
+    "fronts_who": [
+     "CBS News",
+     "ABC News",
+     "BBC News",
+     "NPR"
+    ],
+    "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
+    "carriers": 12,
+    "judgment": "national",
+    "why_judged": "National: affects some people; carried across the country (national desks)."
+   },
+   {
+    "title": "US sports scramble back to normal after FAA ground stop upends team travel",
+    "url": "https://www.thestar.com/news/world/united-states/us-sports-scramble-back-to-normal-after-faa-ground-stop-upends-team-travel/article_cfbe799d-5603-504b-a52c-4e8e29e0a13c.html",
+    "rank": 3,
+    "live": "",
+    "weight": 33.0,
+    "score": 9,
+    "independent": 7,
+    "most_read": 4,
+    "canada": "tie",
+    "theme": "FAA ground stop",
+    "top": false,
+    "fronts": 4,
+    "fronts_who": [
+     "NBC News",
+     "CBS News",
+     "ABC News",
+     "NPR"
+    ],
+    "rule": "From abroad, tied to Canada",
+    "carriers": 10,
+    "judgment": "national",
+    "why_judged": "National: affects some people; carried across the country (national desks)."
+   },
+   {
+    "title": "Richard Sterban, member of the celebrated country and gospel group The Oak Ridge Boys, dies at 83",
+    "url": "https://winnipeg.citynews.ca/2026/11/14/richard-sterban-member-of-the-celebrated-country-and-gospel-group-the-oak-ridge-boys-dies-at-83/",
+    "rank": 4,
+    "live": "",
+    "weight": 23.0,
+    "score": 11,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "general",
+    "theme": "",
+    "top": false,
+    "fronts": 1,
+    "fronts_who": [
+     "CTV News"
+    ],
+    "rule": "From abroad, tied to Canada",
+    "carriers": 10,
+    "judgment": "national",
+    "why_judged": "National: affects some people; carried across the country (8 cities)."
+   },
+   {
+    "title": "Meta fined $887M in Italy over Android gallery photos, videos on Facebook",
+    "url": "https://abcnews.com/Technology/wireStory/meta-fined-887-million-italy-android-gallery-photos-138145127",
+    "rank": 5,
+    "live": "",
+    "weight": 18.5,
+    "score": 7,
+    "independent": 4,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": false,
+    "fronts": 0,
+    "fronts_who": [],
+    "rule": "No Canadian tie",
+    "carriers": 7,
+    "judgment": "national",
+    "why_judged": "National: affects some people; carried across the country (national desks)."
+   },
+   {
+    "title": "Pact on South China Sea code of conduct unlikely, as ASEAN leaders gather",
+    "url": "https://www.aljazeera.com/economy/2026/11/15/pact-on-south-china-sea-code-of-conduct-unlikely-as-asean-leaders-gather?traffic_source=rss",
+    "rank": 6,
+    "live": "",
+    "weight": 40,
+    "score": 19,
+    "independent": 4,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": false,
+    "fronts": 0,
+    "fronts_who": [],
+    "rule": "No Canadian tie",
+    "carriers": 17,
+    "judgment": "national",
+    "why_judged": "National: affects many people; carried across the country (8 cities)."
+   },
+   {
+    "title": "Joly says Stellantis could get more government money if it promised to keep Brampton plant open",
+    "score": 13,
+    "why": "not built: only 1 independent report(s) (2 sites)"
+   },
+   {
+    "title": "Trump’s choice of Stephen Miller as Chief of Staff is making the Democrats’ great week, even better.",
+    "score": 8,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Facing 'uncomfortable' questions, King Charles shows the 'soft power' of the Crown",
+    "score": 7,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Toronto-born artist Lotus L. Kang wins $100,000 2026 Sobey Art Award",
+    "score": 7,
+    "why": "not built: only 1 independent report(s) (3 sites)"
+   },
+   {
+    "title": "A dementia diagnosis is devastating. What happens when you're only 48?",
+    "score": 7,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Canada is spending more than ever on health care. Are we getting our money's worth?",
+    "score": 6,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Why researchers are using drones to keep polar bears and people apart",
+    "score": 6,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Has treatment for stuttering been off base? New guidelines go beyond speech to the brain",
+    "score": 6,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Scientists race to discover and protect what lives in the ocean",
+    "score": 6,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "3 months after mass entry, some 15,000 migrants remain in Ceuta",
+    "score": 6,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   }
+  ],
+  "moved": [],
+  "top_n": 2,
+  "more": [
    {
     "key": "auto-9fd0d32e",
     "words": [
      "nationwide",
      "canceled",
      "flights",
-     "ground",
      "travel",
+     "ground",
      "faa"
     ],
     "score": 9,
     "outlets": 7,
     "carriers": 10,
-    "tag": "Breaking",
+    "tag": "Developing",
     "title": "US sports scramble back to normal after FAA ground stop upends team travel",
     "url": "https://www.thestar.com/news/world/united-states/us-sports-scramble-back-to-normal-after-faa-ground-stop-upends-team-travel/article_cfbe799d-5603-504b-a52c-4e8e29e0a13c.html",
     "outlet": "Toronto Star",
@@ -1464,16 +1651,7 @@
     "outled_ca": 4,
     "judgment": "national",
     "judgment_why": "National: affects some people; carried across the country (national desks).",
-    "weight": 53.0,
-    "live": {
-     "state": "now",
-     "net": "LiveNOW from FOX",
-     "url": "https://www.youtube.com/watch?v=Y4M0i8HT7mc",
-     "title": "US ground stop flight delays & cancellations, Northeast Nor' easter, NOLA tanker collision",
-     "img": "https://i.ytimg.com/vi/Y4M0i8HT7mc/hqdefault.jpg",
-     "when": "",
-     "also": []
-    },
+    "weight": 33.0,
     "videos": [
      {
       "net": "Sky News",
@@ -1484,224 +1662,37 @@
       "up": ""
      },
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=S88CzHiLOnc",
-      "title": "Canadian airports face days of disruption after US air traffic shutdown",
-      "img": "https://i.ytimg.com/vi/S88CzHiLOnc/hqdefault.jpg",
+      "net": "CBS News",
+      "url": "https://www.youtube.com/watch?v=mRN0vL9q21Y",
+      "title": "Pilot reacts to national ground stop",
+      "img": "https://i.ytimg.com/vi/mRN0vL9q21Y/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=bBKHHAYOmJs",
-      "title": "Global National: Nov. 13, 2026 | FAA issues nationwide ground-stop for all US flights",
-      "img": "https://i.ytimg.com/vi/bBKHHAYOmJs/hqdefault.jpg",
+      "net": "CBS News",
+      "url": "https://www.youtube.com/watch?v=9DR5LWolVZw",
+      "title": "Travel tech turbulence: Duffy wants $50B for “complete overhaul” of ATC after national ground stop",
+      "img": "https://i.ytimg.com/vi/9DR5LWolVZw/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=Gd6HRH0_4vA",
-      "title": "FAA orders nationwide ground stop, disrupts flights across US",
-      "img": "https://i.ytimg.com/vi/Gd6HRH0_4vA/hqdefault.jpg",
+      "net": "CBS News",
+      "url": "https://www.youtube.com/watch?v=kO6IGsMH4Hk",
+      "title": "Duffy, officials give update after nationwide ground stop lifted",
+      "img": "https://i.ytimg.com/vi/kO6IGsMH4Hk/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
     ]
-   }
-  ],
-  "considered": [
-   {
-    "title": "Edmonton veterans sweat it out in support of CFB Wainwright fire survivors",
-    "url": "https://www.ctvnews.ca/edmonton/article/edmonton-veterans-sweat-it-out-in-support-of-cfb-wainwright-fire-survivors/",
-    "rank": 1,
-    "live": "",
-    "weight": 40,
-    "score": 15,
-    "independent": 4,
-    "most_read": 3,
-    "canada": "canadian",
-    "theme": "",
-    "top": true,
-    "fronts": 4,
-    "fronts_who": [
-     "CTV News",
-     "Global News",
-     "The Globe and Mail",
-     "CP24"
-    ],
-    "rule": "Canadian, leading the most Canadian front pages: the story Canada's newsrooms are leading with",
-    "carriers": 17,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (6 cities)."
    },
-   {
-    "title": "SpaceX’s Starship captured by launch pad arms in a dramatic first",
-    "url": "https://www.cp24.com/news/world/2026/11/15/spacexs-starship-captured-by-launch-pad-arms-in-a-dramatic-first/",
-    "rank": 2,
-    "live": "",
-    "weight": 44.0,
-    "score": 17,
-    "independent": 7,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": true,
-    "fronts": 4,
-    "fronts_who": [
-     "CBS News",
-     "ABC News",
-     "BBC News",
-     "NPR"
-    ],
-    "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
-    "carriers": 12,
-    "judgment": "national",
-    "why_judged": "National: affects some people; carried across the country (national desks)."
-   },
-   {
-    "title": "US sports scramble back to normal after FAA ground stop upends team travel",
-    "url": "https://www.thestar.com/news/world/united-states/us-sports-scramble-back-to-normal-after-faa-ground-stop-upends-team-travel/article_cfbe799d-5603-504b-a52c-4e8e29e0a13c.html",
-    "rank": 3,
-    "live": "US ground stop flight delays & cancellations, Northeast Nor' easter, NOLA tanker collision",
-    "weight": 53.0,
-    "score": 9,
-    "independent": 7,
-    "most_read": 4,
-    "canada": "tie",
-    "theme": "FAA ground stop",
-    "top": true,
-    "fronts": 4,
-    "fronts_who": [
-     "NBC News",
-     "CBS News",
-     "ABC News",
-     "NPR"
-    ],
-    "rule": "From abroad, tied to Canada",
-    "carriers": 10,
-    "judgment": "national",
-    "why_judged": "National: affects some people; carried across the country (national desks)."
-   },
-   {
-    "title": "Richard Sterban, member of the celebrated country and gospel group The Oak Ridge Boys, dies at 83",
-    "url": "https://winnipeg.citynews.ca/2026/11/14/richard-sterban-member-of-the-celebrated-country-and-gospel-group-the-oak-ridge-boys-dies-at-83/",
-    "rank": 4,
-    "live": "",
-    "weight": 23.0,
-    "score": 11,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "general",
-    "theme": "",
-    "top": false,
-    "fronts": 1,
-    "fronts_who": [
-     "CTV News"
-    ],
-    "rule": "From abroad, tied to Canada",
-    "carriers": 10,
-    "judgment": "national",
-    "why_judged": "National: affects some people; carried across the country (8 cities)."
-   },
-   {
-    "title": "Meta fined $887M in Italy over Android gallery photos, videos on Facebook",
-    "url": "https://abcnews.com/Technology/wireStory/meta-fined-887-million-italy-android-gallery-photos-138145127",
-    "rank": 5,
-    "live": "",
-    "weight": 18.5,
-    "score": 7,
-    "independent": 4,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "No Canadian tie",
-    "carriers": 7,
-    "judgment": "national",
-    "why_judged": "National: affects some people; carried across the country (national desks)."
-   },
-   {
-    "title": "Pact on South China Sea code of conduct unlikely, as ASEAN leaders gather",
-    "url": "https://www.aljazeera.com/economy/2026/11/15/pact-on-south-china-sea-code-of-conduct-unlikely-as-asean-leaders-gather?traffic_source=rss",
-    "rank": 6,
-    "live": "",
-    "weight": 40,
-    "score": 19,
-    "independent": 4,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "No Canadian tie",
-    "carriers": 17,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (8 cities)."
-   },
-   {
-    "title": "Joly says Stellantis could get more government money if it promised to keep Brampton plant open",
-    "score": 13,
-    "why": "not built: only 1 independent report(s) (2 sites)"
-   },
-   {
-    "title": "Trump’s choice of Stephen Miller as Chief of Staff is making the Democrats’ great week, even better.",
-    "score": 8,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Facing 'uncomfortable' questions, King Charles shows the 'soft power' of the Crown",
-    "score": 7,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Toronto-born artist Lotus L. Kang wins $100,000 2026 Sobey Art Award",
-    "score": 7,
-    "why": "not built: only 1 independent report(s) (3 sites)"
-   },
-   {
-    "title": "Canada is spending more than ever on health care. Are we getting our money's worth?",
-    "score": 6,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Why researchers are using drones to keep polar bears and people apart",
-    "score": 6,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Has treatment for stuttering been off base? New guidelines go beyond speech to the brain",
-    "score": 6,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Scientists race to discover and protect what lives in the ocean",
-    "score": 6,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "3 months after mass entry, some 15,000 migrants remain in Ceuta",
-    "score": 6,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "A dementia diagnosis is devastating. What happens when you're only 48?",
-    "score": 6,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   }
-  ],
-  "moved": [],
-  "top_n": 3,
-  "more": [
    {
     "key": "auto-360709cc",
     "words": [
      "sterban",
-     "ridge",
      "maple",
+     "ridge",
      "boys",
      "oak"
     ],
@@ -1730,7 +1721,7 @@
      "alt": "Richard Sterban, member of the celebrated country and gospel group The Oak Ridge Boys, dies at 83",
      "outlet": "CityNews Winnipeg",
      "url": "https://winnipeg.citynews.ca/2026/11/14/richard-sterban-member-of-the-celebrated-country-and-gospel-group-the-oak-ridge-boys-dies-at-83/",
-     "since": "2026-11-15T09:16:56.244185+00:00"
+     "since": "2026-11-15T09:21:21.459606+00:00"
     },
     "photo_seen": [
      "https://winnipeg.citynews.ca/wp-content/blogs.dir/sites/13/2026/11/a3f672ca444f3136511e6671bbd08437f95c27e7b082cb7d7d6d4be6d0a3b6af.jpg"
@@ -2002,7 +1993,7 @@
    "id": "R3KdTZi6AHc",
    "r": "ca",
    "o": "APTN News",
-   "t": "Why we could regret permanent Daylight Saving Time",
+   "t": "Why permanent Daylight Saving Time could be short-lived",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=R3KdTZi6AHc",
@@ -2700,6 +2691,32 @@
    "auto": true
   },
   {
+   "inst": "Fraser Institute",
+   "place": "Vancouver",
+   "kind": "Publication",
+   "by": "",
+   "date": "Nov. 13, 2026",
+   "d": "2026-11-13",
+   "pic": "chart",
+   "u": "https://www.fraserinstitute.org/studies/report-card-quebecs-secondary-schools-2026",
+   "t": "Report Card on Quebec’s Secondary Schools 2026",
+   "g": "Report Card on Quebec’s Secondary Schools 2026 Study beng Fri, 11/13/2026 - 08:48 Published Date November 14, 2026 Image Posted Date Fri, 11/13/2026 - 08:52 Headline 45 Quebec high schools improved, and 46 declined in latest Fraser Institute ranking Off By: Yanick Labrie, Peter Cowley, Joel Emes and Max Shang Document…",
+   "auto": true
+  },
+  {
+   "inst": "Fraser Institute",
+   "place": "Vancouver",
+   "kind": "Publication",
+   "by": "",
+   "date": "Nov. 13, 2026",
+   "d": "2026-11-13",
+   "pic": "chart",
+   "u": "https://www.fraserinstitute.org/commentary/education-bc-roadmap-reform-part-2-bring-back-report-card-grades-parents-can-understand",
+   "t": "Education in B.C.—the roadmap to reform. Part 2: Bring back report card grades parents can understand",
+   "g": "Education in B.C.—the roadmap to reform. Part 2: Bring back report card grades parents can understand beng Fri, 11/13/2026 - 07:33 EST. READ TIME 6 MIN. You shouldn’t need a PhD in progressive education theory to understand your child’s report card. Yet four years ago, the British Columbia government swapped letter…",
+   "auto": true
+  },
+  {
    "inst": "Macdonald-Laurier Institute",
    "place": "Ottawa",
    "kind": "Publication",
@@ -2765,6 +2782,32 @@
    "auto": true
   },
   {
+   "inst": "AEI",
+   "place": "Washington",
+   "kind": "Publication",
+   "by": "",
+   "date": "Nov. 13, 2026",
+   "d": "2026-11-13",
+   "pic": "chart",
+   "u": "https://www.aei.org/foreign-and-defense-policy/quo-vadis-hispania-part-vii/",
+   "t": "Quo Vadis Hispania? Part VII",
+   "g": "Contemporary Europe’s demography has been transformed—with stunning speed—by mass migration, mainly from Africa, Asia, and the Middle East. The process has been so dramatic as to qualify, in the eyes of some scholars, as a “demographic transition” in its own right. The post Quo Vadis Hispania? Part VII appeared first…",
+   "auto": true
+  },
+  {
+   "inst": "AEI",
+   "place": "Washington",
+   "kind": "Publication",
+   "by": "",
+   "date": "Nov. 13, 2026",
+   "d": "2026-11-13",
+   "pic": "chart",
+   "u": "https://www.aei.org/economics/health-care/a-sunny-fiscal-projection-for-australia-based-on-some-good-public-policies/",
+   "t": "A Sunny Fiscal Projection for Australia Based on Some Good Public Policies",
+   "g": "The Australian government recently released its triennial Intergenerational Report (IGR) 2026, projecting GDP and the federal budget over the next forty years. The post A Sunny Fiscal Projection for Australia Based on Some Good Public Policies appeared first on American Enterprise Institute - AEI .",
+   "auto": true
+  },
+  {
    "inst": "Heritage Foundation",
    "place": "Washington",
    "kind": "Publication",
@@ -2789,61 +2832,16 @@
    "t": "Syria shouldn’t join the Mecca Alliance. It should cooperate with it.",
    "g": "Joining the alliance would expose Syria to a new set of threats and increase the chances of regional escalation. The post Syria shouldn’t join the Mecca Alliance. It should cooperate with it. appeared first on Atlantic Council .",
    "auto": true
-  },
-  {
-   "inst": "Atlantic Council",
-   "place": "Washington",
-   "kind": "Publication",
-   "by": "",
-   "date": "Nov. 13, 2026",
-   "d": "2026-11-13",
-   "pic": "chart",
-   "u": "https://www.atlanticcouncil.org/dispatches/the-election-that-never-happened-and-why-washington-needs-a-new-strategy-toward-nicaragua/",
-   "t": "The election that never happened, and why Washington needs a new strategy toward Nicaragua",
-   "g": "Nicaragua's dictators called for no more elections, so Washington should call for no more business as usual. It should use targeted economic pressure to push for democratic change. The post The election that never happened, and why Washington needs a new strategy toward Nicaragua appeared first on Atlantic Council .",
-   "auto": true
-  },
-  {
-   "inst": "Peterson Institute",
-   "place": "Washington",
-   "kind": "Publication",
-   "by": "",
-   "date": "Nov. 13, 2026",
-   "d": "2026-11-13",
-   "pic": "chart",
-   "u": "https://www.piie.com/blogs/realtime-economics/2026/how-congress-might-take-back-its-trade-powers-and-limit-trumps",
-   "t": "How Congress might take back its trade powers and limit Trump's tariffs",
-   "g": "Americans are unhappy with the direction the country is headed and are ready for change. That was the core message from the stunning defeat of the president's party in the midterm elections in November, where the accumulation of unpopular policies—including immigration enforcement, the war in Iran, and tariffs—was…",
-   "auto": true
-  },
-  {
-   "inst": "Peterson Institute",
-   "place": "Washington",
-   "kind": "Publication",
-   "by": "",
-   "date": "Nov. 13, 2026",
-   "d": "2026-11-13",
-   "pic": "chart",
-   "u": "https://www.piie.com/publications/working-papers/2026/debt-sustainability-and-range-multiple-equilibria",
-   "t": "Debt sustainability and the range of multiple equilibria",
-   "g": "The authors characterize the size of the range of multiple equilibria in sovereign debt markets. They show that the nature of the equilibrium depends crucially on the degree of uncertainty, which they formalize first as uncertainty about primary balances and later as uncertainty about the fiscal feedback rule. For low…",
-   "auto": true
-  },
-  {
-   "inst": "Pew Research Center",
-   "place": "Washington",
-   "kind": "Publication",
-   "by": "",
-   "date": "Nov. 13, 2026",
-   "d": "2026-11-13",
-   "pic": "chart",
-   "u": "https://www.pewresearch.org/short-reads/2026/11/13/where-americans-get-news-relates-to-how-they-engage-in-public-life/",
-   "t": "Where Americans Get News Relates to How They Engage in Public Life",
-   "g": "News outlets that heavily cover politics are among the sources whose audiences contain a disproportionately high share of the most engaged Americans.",
-   "auto": true
   }
  ],
  "eds": [
+  [
+   "Toronto Star",
+   "Opinion",
+   "Why politicians can no longer neglect these long-ignored Torontonians",
+   "https://www.thestar.com/opinion/contributors/why-politicians-can-no-longer-neglect-these-long-ignored-torontonians/article_4d86310a-3e02-4047-b2cb-864d1fcdc40b.html",
+   "2026-11-14T12:00:00+00:00"
+  ],
   [
    "Toronto Sun",
    "Editorial",
@@ -3401,7 +3399,7 @@
    "title": "Israel kills Hamas commander in strike on Gaza camp, officials say",
    "outlet": "BBC News",
    "t": "Sun 3:17 a.m.",
-   "hot": true
+   "hot": false
   }
  ],
  "bigweek": [],
@@ -3697,18 +3695,6 @@
   {
    "desk": "business",
    "pic": "chart",
-   "t": "Sat 6:00 a.m.",
-   "iso": "2026-11-14T11:00:00+00:00",
-   "title": "Democrats want to kill some of Trump's tariffs — but that might not end the trade war",
-   "summary": "WASHINGTON - Scott Colom never lost faith. After a week of ballot counting, the Democrat on Wednesday officially won a Mississippi Senate seat, making him the first Black person elected",
-   "outlet": "Toronto Star (CP)",
-   "n": 1,
-   "url": "https://www.thestar.com/news/canada/democrats-want-to-kill-some-of-trump-s-tariffs-but-that-might-not-end-the-trade-war/article_091adca3-8bfa-5f2d-9a69-2a495a749bb0.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/1/ff/1ff7708c-f4b0-5d14-b184-1d10c4505361/6af5f0f9d3f50.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
    "t": "Sat 5:00 a.m.",
    "iso": "2026-11-14T10:00:00+00:00",
    "title": "Rise in costs cause disability non-profit to close its doors after 14 years",
@@ -3869,17 +3855,17 @@
     "Add Global News to Home Screen Close",
     "Carney awarded ‘Democracy Medal’ by global group of political strategists",
     "Fifth Canadian soldier has died after fire in Wainwright, CAF says",
-    "New Orleans port sues to get control of tanker that crashed into cruise ship",
     "Beer recall hits 2 more Canadian products, bringing total to 31",
-    "Former environment ministers say Canada’s commitment to climate targets ‘factually untrue’"
+    "New Orleans port sues to get control of tanker that crashed into cruise ship",
+    "I tried the Ninja Crispi microwave and air fryer—is it worth replacing two appliances?"
    ],
    "u": [
     "",
     "https://globalnews.ca/news/12151482/carney-awarded-democracy-medal-by-global-group-of-political-strategists/",
     "",
-    "https://globalnews.ca/news/12151263/new-orleans-port-sues/",
     "https://globalnews.ca/news/12149431/canadian-beer-recall/",
-    "https://globalnews.ca/news/12151036/canada-paris-targets/"
+    "https://globalnews.ca/news/12151263/new-orleans-port-sues/",
+    ""
    ]
   },
   {
@@ -4053,6 +4039,24 @@
    ]
   },
   {
+   "o": "The New York Times",
+   "ca": false,
+   "h": [
+    "New York Times - Top Stories",
+    "What to Cook This Weekend",
+    "The Athletic Sports coverage",
+    "Cooking Recipes and guides",
+    "Wirecutter Product recommendations"
+   ],
+   "u": [
+    "",
+    "",
+    "",
+    "",
+    ""
+   ]
+  },
+  {
    "o": "BBC News",
    "ca": false,
    "h": [
@@ -4116,38 +4120,13 @@
  "live": {
   "now": [
    {
-    "net": "LiveNOW from FOX",
-    "r": "us",
-    "title": "LIVE: US ground stop flight delays & cancellations, Northeast Nor' easter, NOLA tanker collision",
-    "url": "https://www.youtube.com/watch?v=Y4M0i8HT7mc",
-    "img": "https://i.ytimg.com/vi/Y4M0i8HT7mc/hqdefault.jpg",
-    "story": "US ground stop flight delays & cancellations, Northeast Nor' easter, N",
-    "watching": "351",
-    "reports": [
-     {
-      "outlet": "CBC News",
-      "title": "Stranded B.C. flyers out thousands amid flight cancellations due to Friday's ground stop",
-      "url": "https://www.cbc.ca/news/canada/british-columbia/customers-frustrated-paying-for-accommodation-after-cancellations-9.7422364",
-      "t": "Sat 5:03 p.m.",
-      "iso": "2026-11-14T22:03:43.772000+00:00"
-     },
-     {
-      "outlet": "The Hill",
-      "title": "FAA ground stop leads to multiple delays, postponements in college football",
-      "url": "https://thehill.com/policy/sports-gaming/6220667-faa-ground-stop-college-football-delays/",
-      "t": "Sat 10:19 a.m.",
-      "iso": "2026-11-14T15:19:35+00:00"
-     }
-    ]
-   },
-   {
     "net": "Sky News",
     "r": "world",
     "title": "Rolling live news coverage, as it happens",
     "url": "https://www.youtube.com/watch?v=2SAoJ6w5UT8",
     "img": "https://i.ytimg.com/vi/2SAoJ6w5UT8/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "642",
+    "watching": "679",
     "rolling": true
    }
   ],
@@ -4186,12 +4165,12 @@
     "url": "https://www.youtube.com/watch?v=gCNeDWCI0vo"
    },
    {
-    "net": "LiveNOW from FOX",
-    "url": "https://www.youtube.com/watch?v=C96oohpWBGw"
-   },
-   {
     "net": "FRANCE 24 English",
     "url": "https://www.youtube.com/watch?v=HvZt-nh9sGg"
+   },
+   {
+    "net": "euronews",
+    "url": "https://www.youtube.com/watch?v=pykpO5kQJ98"
    }
   ]
  },
@@ -4344,39 +4323,6 @@
   }
  },
  "canangle_live": {
-  "https://www.youtube.com/watch?v=Y4M0i8HT7mc": {
-   "story": "US ground stop flight delays & cancellations, Northeast Nor' easter, NOLA tanker collision",
-   "us": true,
-   "specific": 0,
-   "stories": [],
-   "official": [
-    {
-     "outlet": "Toronto Pearson",
-     "title": "Pearson departures and arrivals",
-     "url": "https://www.torontopearson.com/en/departures",
-     "t": "",
-     "what": "Pearson Departures - YYZ Departures | Pearson Airport Skip to main content U.S.-bound flights have resumed following the FAA ground stop.",
-     "checked": true
-    },
-    {
-     "outlet": "Calgary airport",
-     "title": "YYC travel notice",
-     "url": "https://www.yyc.com/",
-     "t": "",
-     "what": "FAA ground stop With the U.S. ground stop now lifted, we appreciate travellers’ patience as schedules begin to normalize.",
-     "checked": true
-    },
-    {
-     "outlet": "Edmonton airport",
-     "title": "YEG travel notice",
-     "url": "https://www.flyyeg.com/",
-     "t": "",
-     "what": "Edmonton International Airport Skip to Content Travel Advisory: Due to U.S. FAA flight disruptions, travellers are encouraged to check their flight status directly with their airline before heading to YEG.",
-     "checked": true
-    }
-   ],
-   "views": []
-  },
   "https://www.foxnews.com/us/ups-cargo-plane-copa-airlines-passenger-jet-collide-miami-airport-leaving-2-injured": {
    "story": "UPS cargo plane, Copa Airlines passenger jet collide at Miami airport, leaving 2 injured",
    "us": false,
@@ -4396,7 +4342,112 @@
    "views": []
   }
  },
- "bds": [],
+ "bds": [
+  {
+   "id": "bd-auto-9fd0d32e",
+   "auto": true,
+   "desk": "United States",
+   "status": "Developing",
+   "at": "2026-11-15T03:33:55+00:00",
+   "exact": true,
+   "img": "live/img/auto-9fd0d32e-c53bea66dd.jpg",
+   "credit": "via Toronto Star",
+   "pic": "globe",
+   "h": "US sports scramble back to normal after FAA ground stop upends team travel",
+   "lede": "Major sporting events slowly returned to normal Saturday after the Federal Aviation Administration grounded all flights nationwide for several hours a day earlier, disrupting travel plans for professional and college",
+   "newl": "Now carried by 7 independent newsrooms.",
+   "rows": [
+    [
+     "ABC News",
+     "The administrator said the ground stop was the result of equipment failure.",
+     [
+      1
+     ]
+    ],
+    [
+     "CBS News",
+     "President Trump was informed within 30 minutes after the Federal Aviation Administration imposed a nationwide ground stop Friday afternoon, according to U.S. officials.",
+     [
+      2
+     ]
+    ],
+    [
+     "The Japan Times",
+     "Friday’s nationwide ground stop sparked widespread chaos and left hundreds of thousands of passengers in limbo.",
+     [
+      3
+     ]
+    ],
+    [
+     "Toronto Star",
+     "Major sporting events slowly returned to normal Saturday after the Federal Aviation Administration grounded all flights nationwide for several hours a day earlier, disrupting travel plans for professional and college",
+     [
+      5
+     ]
+    ],
+    [
+     "PBS NewsHour",
+     "The longest flight stoppage in 25 years ended around 8:15 p.m. ET Friday, allowing some domestic flights to take off from U.S. airports. Officials expected a full recovery by Sunday.",
+     [
+      6
+     ]
+    ]
+   ],
+   "src": [
+    [
+     "ABC News",
+     "FAA ground stop live updates: FAA chief says when he expects air travel to recover",
+     "https://abcnews.com/US/live-updates/faa-ground-stop-live-updates-hundreds-flights-canceled/?id=138125140"
+    ],
+    [
+     "CBS News",
+     "How Trump administration responded to FAA ground stop",
+     "https://www.cbsnews.com/news/faa-ground-stop-trump-admin-response/"
+    ],
+    [
+     "The Japan Times",
+     "Repair of old copper wiring caused U.S. flight disruption, Trump administration says",
+     "https://www.japantimes.co.jp/news/2026/11/15/world/copper-wiring-us-flight-disruption/"
+    ],
+    [
+     "CBC News",
+     "Copper wire replacement caused air traffic control issue that grounded flights across U.S.: White House",
+     "https://www.cbc.ca/news/world/livestory/airport-delays-faa-grounds-all-flights-united-states-air-traffic-control-live-updates-9.7421992"
+    ],
+    [
+     "Toronto Star",
+     "US sports scramble back to normal after FAA ground stop upends team travel",
+     "https://www.thestar.com/news/world/united-states/us-sports-scramble-back-to-normal-after-faa-ground-stop-upends-team-travel/article_cfbe799d-5603-504b-a52c-4e8e29e0a13c.html"
+    ],
+    [
+     "PBS NewsHour",
+     "What to know about flights after the U.S. nationwide ground stop",
+     "https://www.pbs.org/newshour/nation/what-to-know-about-flights-after-the-u-s-nationwide-ground-stop"
+    ],
+    [
+     "Edmonton Journal",
+     "Airlines, airport playing catch-up after Friday's U.S. ground stop",
+     "https://edmontonjournal.com/news/local-news/airlines-airport-playing-catch-up-after-fridays-u-s-ground-stop"
+    ],
+    [
+     "The Hill",
+     "3,000+ flights canceled after FAA’s ground stop",
+     "https://thehill.com/policy/transportation/6220654-us-air-traffic-cancellations-delays/"
+    ],
+    [
+     "CityNews Ottawa",
+     "What to know about flights after the US nationwide ground stop",
+     "https://ottawa.citynews.ca/2026/11/14/what-to-know-about-flights-after-the-us-nationwide-ground-stop/"
+    ],
+    [
+     "CityNews Calgary",
+     "What to know about flights after the US nationwide ground stop",
+     "https://calgary.citynews.ca/2026/11/14/what-to-know-about-flights-after-the-us-nationwide-ground-stop/"
+    ]
+   ],
+   "lead": 5
+  }
+ ],
  "geo": {
   "-YVOgH-f4qQ": {
    "v": "unknown",
@@ -5127,10 +5178,6 @@
   "-NabWfv-VdA"
  ],
  "noembed": [
-  "J3FV4iY8p5w",
-  "L6qtnHZxwEw",
-  "NuEr0Q_AS6U",
-  "buCYd2RCP60",
   "ldElU-Q5Qyo",
   "t_HBrWb84eY"
  ]
