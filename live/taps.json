@@ -1,16 +1,23 @@
 {
- "checked": "2026-11-15T21:59:13.227242+00:00",
- "labels": 207,
+ "checked": "2026-11-15T22:58:36.622391+00:00",
+ "labels": 205,
  "problems": [
   {
-   "label": "ABC News",
+   "label": "CP24",
    "opens": "https://www.cbc.ca/news/canada/montreal/paul-st-pierre-plamondon-mark-carney-sommet-de-la-francophonie-9.7422688",
    "section": "developed",
    "link": false,
    "width": 390
   },
   {
-   "label": "CP24",
+   "label": "CTV News",
+   "opens": "https://www.cbc.ca/news/canada/montreal/paul-st-pierre-plamondon-mark-carney-sommet-de-la-francophonie-9.7422688",
+   "section": "developed",
+   "link": false,
+   "width": 390
+  },
+  {
+   "label": "ABC News",
    "opens": "https://www.cbc.ca/news/canada/montreal/paul-st-pierre-plamondon-mark-carney-sommet-de-la-francophonie-9.7422688",
    "section": "developed",
    "link": false,
@@ -20,32 +27,17 @@
  "guard": {
   "fixed": [
    {
-    "label": "CTV News ↗",
-    "was": "(card link) abcnews.com",
-    "now": "https://www.ctvnews.ca/atlantic/nova-scotia/article/halifax-students-speak-to-canadian-astronaut-aboard-international-space-station/"
-   },
-   {
-    "label": "Daily Hive ↗",
-    "was": "(card link) abcnews.com",
-    "now": "https://dailyhive.com/vancouver/vancouver-international-airport-yvr-summer-2026-statistics-record"
-   },
-   {
-    "label": "PBS News",
-    "was": "(card link) pbs.org",
-    "now": "https://www.pbs.org/newshour/world/southeast-asian-leaders-open-annual-summit-with-major-conflicts-and-their-impact-topping-the-agenda"
-   },
-   {
-    "label": "Fox News",
-    "was": "(card link) foxnews.com",
-    "now": "https://www.foxnews.com/outkick-sports/will-ospreay-retain-aew-world-championship-full-gear-attacked-mjf"
-   },
-   {
     "label": "Politico",
     "was": "(card link) politico.com",
     "now": "https://www.politico.com/news/2026/11/15/tpp-trump-coalition-maga-breaks-01164574"
    }
   ],
-  "disabled": [],
+  "disabled": [
+   {
+    "label": "The Hill Timessubscribers",
+    "href": "https://www.hilltimes.com/2026/10/21/canada-should-continue-to-speak-loudly-and-clearly-despite-u-s-envoys-interference-claims-say-former-diplomats-and-ex-mp/522696/"
+   }
+  ],
   "lifted": []
  }
 }
