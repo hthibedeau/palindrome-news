@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-15T18:53:01.449776+00:00",
- "checkedLabel": "Sun 1:53 p.m.",
+ "checked": "2026-11-15T18:57:42.520145+00:00",
+ "checkedLabel": "Sun 1:57 p.m.",
  "stories": [
   {
    "key": "top",
@@ -31,13 +31,31 @@
  ],
  "wire": [
   [
-   "Sun 1:48 p.m.",
+   "Sun 1:53 p.m.",
    "Latest",
    "UPS plane, passenger jet collide on Miami airport taxiway",
    "CBS News",
    "https://www.cbsnews.com/news/ups-plane-copa-airlines-jet-collide-miami-international-airport/",
-   "2026-11-15T18:48:24+00:00",
+   "2026-11-15T18:53:18+00:00",
    3
+  ],
+  [
+   "Sun 1:48 p.m.",
+   "U.S.",
+   "Senator-elect Scott Colom vows to ensure Trump follows through on his promises",
+   "The Guardian",
+   "https://www.theguardian.com/us-news/2026/nov/15/scott-colom-mississippi-senate-trump",
+   "2026-11-15T18:48:10+00:00",
+   2
+  ],
+  [
+   "Sun 1:46 p.m.",
+   "U.S.",
+   "Chris Van Hollen says he has path to win Senate leader over Chuck Schumer",
+   "The Guardian",
+   "https://www.theguardian.com/us-news/2026/nov/15/chris-van-hollen-senate-majority-leader",
+   "2026-11-15T18:46:49+00:00",
+   2
   ],
   [
    "Sun 1:44 p.m.",
@@ -236,24 +254,6 @@
    "https://www.ctvnews.ca/canada/article/greens-elect-former-mp-mike-morrice-the-sole-candidate-to-lead-party/",
    "2026-11-15T18:05:54+00:00",
    13
-  ],
-  [
-   "Sun 1:03 p.m.",
-   "World",
-   "Iran launches drone attacks against US military base in Bahrain",
-   "The Guardian",
-   "https://www.theguardian.com/world/2026/nov/15/iran-launches-drone-attacks-against-us-military-base-in-bahrain",
-   "2026-11-15T18:03:56+00:00",
-   1
-  ],
-  [
-   "Sun 12:52 p.m.",
-   "Latest",
-   "No. 6 Indiana keeps finding new ways to overcome obstacles as it continues to produce wins",
-   "The Canadian Press (via Winnipeg Free Press)",
-   "https://www.winnipegfreepress.com/uncategorized/2026/11/15/no-6-indiana-keeps-finding-new-ways-to-overcome-obstacles-as-it-continues-to-produce-wins",
-   "2026-11-15T17:52:04+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -288,7 +288,7 @@
    "score": 25,
    "title": "Can the Carney government end homelessness? (Not on its own)",
    "url": "https://www.cbc.ca/news/politics/carney-budget-homelessness-analysis-9.7421243",
-   "outlets": 26,
+   "outlets": 16,
    "why": [
     "National Newswatch #7",
     "National Newswatch #8",
@@ -308,8 +308,8 @@
   },
   {
    "score": 17,
-   "title": "Microsoft outage and FAA ground stop in one week has some asking questions, suggesting theories",
-   "url": "https://www.ctvnews.ca/sci-tech/article/could-everything-be-broken-grounded-jets-microsoft-outage-ai-chaos-make-some-wonder/",
+   "title": "Transportation head vows to find ‘root cause’ of ground stop. Trump breaks his silence on breakdown",
+   "url": "https://www.ctvnews.ca/world/article/transportation-head-vows-to-find-root-cause-of-ground-stop-trump-breaks-his-silence-on-breakdown/",
    "outlets": 18,
    "why": [],
    "theme": "FAA ground stop"
@@ -327,6 +327,14 @@
    "title": "Greens elect former MP Mike Morrice, the sole candidate, to lead party",
    "url": "https://www.ctvnews.ca/canada/article/greens-elect-former-mp-mike-morrice-the-sole-candidate-to-lead-party/",
    "outlets": 13,
+   "why": [],
+   "theme": ""
+  },
+  {
+   "score": 11,
+   "title": "Chris Van Hollen says he has path to win Senate leader over Chuck Schumer",
+   "url": "https://www.theguardian.com/us-news/2026/nov/15/chris-van-hollen-senate-majority-leader",
+   "outlets": 9,
    "why": [],
    "theme": ""
   },
@@ -355,16 +363,6 @@
    "url": "https://www.timescolonist.com/the-mix/fans-cheer-as-popular-online-platform-for-spinoff-stories-nears-full-return-after-security-incident-13019391",
    "outlets": 9,
    "why": [],
-   "theme": ""
-  },
-  {
-   "score": 8,
-   "title": "Rock & Roll Hall of Fame ceremony full of emotions as Phil Collins, Queen Latifah, more inducted",
-   "url": "https://www.cbc.ca/news/entertainment/rock-roll-hall-of-fame-ceremony-9.7422731",
-   "outlets": 3,
-   "why": [
-    "CBC News front #5"
-   ],
    "theme": ""
   },
   {
@@ -586,11 +584,11 @@
      "suggesting",
      "questions",
      "microsoft",
-     "theories",
+     "ground",
      "outage",
-     "asking"
+     "faa"
     ],
-    "score": 9,
+    "score": 10,
     "outlets": 2,
     "carriers": 6,
     "tag": "Breaking",
@@ -766,7 +764,7 @@
     "events": [],
     "theme": "Microsoft outage",
     "ca_angle": {
-     "specific": 1,
+     "specific": 2,
      "official": 4
     },
     "canada": "tie",
@@ -785,7 +783,7 @@
     ],
     "judgment": "national",
     "judgment_why": "National: affects some people; carried across the country (national desks).",
-    "weight": 48.0,
+    "weight": 49.0,
     "live": {
      "state": "now",
      "net": "LiveNOW from FOX",
@@ -797,22 +795,6 @@
     },
     "videos": [
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=6SHULSypliw",
-      "title": "Microsoft Outlook services restored as world struggles to get work done",
-      "img": "https://i.ytimg.com/vi/6SHULSypliw/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=buCYd2RCP60",
-      "title": "Microsoft Outage: Analyst warns we aren't out of the woods yet",
-      "img": "https://i.ytimg.com/vi/buCYd2RCP60/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
       "net": "NBC News",
       "url": "https://www.youtube.com/watch?v=ZNRknaFjqLA",
       "title": "Microsoft scrambles to recover after massive outage",
@@ -821,10 +803,18 @@
       "up": ""
      },
      {
-      "net": "BBC News",
-      "url": "https://www.youtube.com/watch?v=xQATVpjETBA",
-      "title": "What caused the Microsoft outage and how can they prevent another one? | Global News Podcast",
-      "img": "https://i.ytimg.com/vi/xQATVpjETBA/hqdefault.jpg",
+      "net": "DW News",
+      "url": "https://www.youtube.com/watch?v=eEpNla19mUs",
+      "title": "What businesses must learn from the Microsoft 365 outage | DW News",
+      "img": "https://i.ytimg.com/vi/eEpNla19mUs/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "Al Jazeera",
+      "url": "https://www.youtube.com/watch?v=YKBgzMWoA9s",
+      "title": "Tech titans in trouble: Microsoft outage and Nvidia scandal",
+      "img": "https://i.ytimg.com/vi/YKBgzMWoA9s/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -835,10 +825,10 @@
     "key": "auto-96971b21",
     "words": [
      "nationwide",
-     "congress",
      "silence",
      "breaks",
      "ground",
+     "money",
      "faa"
     ],
     "score": 17,
@@ -1201,7 +1191,7 @@
     "events": [],
     "theme": "FAA ground stop",
     "ca_angle": {
-     "specific": 0,
+     "specific": 1,
      "official": 4
     },
     "canada": "tie",
@@ -1224,34 +1214,34 @@
     "weight": 43,
     "videos": [
      {
-      "net": "CityNews",
-      "url": "https://www.youtube.com/watch?v=srP0tjG_SC8",
-      "title": "Travellers in Calgary impacted by nationwide flight disruption in U.S. on Friday",
-      "img": "https://i.ytimg.com/vi/srP0tjG_SC8/hqdefault.jpg",
+      "net": "CTV News",
+      "url": "https://www.youtube.com/watch?v=XkJ5JYQcOl4",
+      "title": "Operations resume at Montreal airport after FAA ground stop",
+      "img": "https://i.ytimg.com/vi/XkJ5JYQcOl4/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "CityNews",
-      "url": "https://www.youtube.com/watch?v=K9jLqEkS-1s",
-      "title": "Flight disruptions continue at Montreal-Trudeau after U.S. ground stop",
-      "img": "https://i.ytimg.com/vi/K9jLqEkS-1s/hqdefault.jpg",
+      "net": "CTV News",
+      "url": "https://www.youtube.com/watch?v=KO0rxIGnl68",
+      "title": "What’s behind the system failure that caused the ground stop?",
+      "img": "https://i.ytimg.com/vi/KO0rxIGnl68/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "CityNews",
-      "url": "https://www.youtube.com/watch?v=ZO07ynm_SME",
-      "title": "Toronto Pearson Airport impacted by U.S. ground stop",
-      "img": "https://i.ytimg.com/vi/ZO07ynm_SME/hqdefault.jpg",
+      "net": "CTV News",
+      "url": "https://www.youtube.com/watch?v=9tED-6f0MCw",
+      "title": "Investigation continues into FAA ground stop as problems persist",
+      "img": "https://i.ytimg.com/vi/9tED-6f0MCw/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=S88CzHiLOnc",
-      "title": "Pearson passengers left in limbo as US ground stop delays flights",
-      "img": "https://i.ytimg.com/vi/S88CzHiLOnc/hqdefault.jpg",
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=lbSXfHzs938",
+      "title": "Passengers and airlines face domino effect after nationwide ground stop in U.S.",
+      "img": "https://i.ytimg.com/vi/lbSXfHzs938/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1264,8 +1254,8 @@
     "url": "https://www.ctvnews.ca/sci-tech/article/could-everything-be-broken-grounded-jets-microsoft-outage-ai-chaos-make-some-wonder/",
     "rank": 1,
     "live": "TOP STORIES: FAA ground stop fallout, Democrat leadership shakeup",
-    "weight": 48.0,
-    "score": 9,
+    "weight": 49.0,
+    "score": 10,
     "independent": 2,
     "most_read": 0,
     "canada": "tie",
@@ -1352,6 +1342,11 @@
     "why": "not built: only 1 independent report(s) (13 sites)"
    },
    {
+    "title": "Chris Van Hollen says he has path to win Senate leader over Chuck Schumer",
+    "score": 11,
+    "why": "not built: only 2 independent report(s) (5 sites)"
+   },
+   {
     "title": "Johnny Depp film ‘Ebenezer’ gets actor first No. 1 opening in 8 years",
     "score": 11,
     "why": "not built: only 1 independent report(s) (9 sites)"
@@ -1362,19 +1357,14 @@
     "why": "not built: only 1 independent report(s) (1 sites)"
    },
    {
+    "title": "‘Betrayal’: Ontario couple’s three-year wait to return to Stellantis may end in heartbreak",
+    "score": 10,
+    "why": "not built: only 1 independent report(s) (3 sites)"
+   },
+   {
     "title": "Fans cheer as popular online platform for spinoff stories nears full return after security incident",
     "score": 9,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "‘Betrayal’: Ontario couple’s three-year wait to return to Stellantis may end in heartbreak",
-    "score": 9,
-    "why": "not built: only 1 independent report(s) (3 sites)"
-   },
-   {
-    "title": "Rock & Roll Hall of Fame ceremony full of emotions as Phil Collins, Queen Latifah, more inducted",
-    "score": 8,
-    "why": "not built: only 1 independent report(s) (3 sites)"
    },
    {
     "title": "Breast milk can be lifesaving for premature babies, Quebec charity says",
@@ -1412,7 +1402,7 @@
    "id": "R3KdTZi6AHc",
    "r": "ca",
    "o": "APTN News",
-   "t": "Why we could regret permanent Daylight Saving Time",
+   "t": "Why permanent Daylight Saving Time could be short-lived",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=R3KdTZi6AHc",
@@ -1832,7 +1822,7 @@
    "id": "N7Ukxx88HvI",
    "r": "us",
    "o": "Fox News",
-   "t": "Duffy FIRES BACK after FAA ground stop: ‘I have NO money for a new network'",
+   "t": "Sec Duffy DEMANDS BILLIONS from Congress after MASSIVE FAA ground stop",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=N7Ukxx88HvI",
@@ -1874,7 +1864,7 @@
    "id": "1BsRMJzvoRA",
    "r": "us",
    "o": "CNN",
-   "t": "Sec. Duffy explains what caused the FAA ground stop",
+   "t": "Sec. Duffy on what caused ground stop & his $50B request to fix it",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=1BsRMJzvoRA",
@@ -1944,7 +1934,7 @@
    "id": "4CfthJ7Updk",
    "r": "world",
    "o": "Reuters",
-   "t": "US flight chaos and SpaceX’s landmark Starship catch | Reuters World News",
+   "t": "Are young male voters turning away from Trump? | Reuters World News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=4CfthJ7Updk",
@@ -2028,11 +2018,11 @@
  "ledes": [
   {
    "o": "CBS News",
-   "h": "UPS plane, passenger jet collide on Miami airport taxiway",
-   "u": "https://www.cbsnews.com/news/ups-plane-copa-airlines-jet-collide-miami-international-airport/",
-   "img": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/11/15/a3de3c5e-4473-48af-873a-617ae7909089/thumbnail/1200x630/f680a17fd73bac3debc0daf49399ee9a/cbsmiami-copa-ups-main-12.jpg",
+   "h": "U.S. loses measles elimination status as cases surge nationwide",
+   "u": "https://www.cbsnews.com/news/measles-elimination-status-united-states/",
+   "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/07/a8f89dbf-6484-4ebf-863c-c4e91d42c3a6/thumbnail/1200x630/19d57254b9f70efb37f636bb7e3d6738/gettyimages-2259641072.jpg",
    "w": "Sun 1:53 p.m.",
-   "iso": "2026-11-15T18:53:18+00:00"
+   "iso": "2026-11-15T18:53:39+00:00"
   },
   {
    "o": "ABC News",
@@ -2435,22 +2425,6 @@
    "auto": true
   },
   {
-   "cat": "intl",
-   "media": "none",
-   "initials": "UN",
-   "name": "United Nations",
-   "role": "UN News",
-   "date": "Nov 15",
-   "platform": "Official statement",
-   "handle": "news.un.org",
-   "hed": "Nadia Murad: ‘Day by day, I took my story back’",
-   "summary": "Nobel Peace Prize laureate Nadia Murad has spent years telling the world about the atrocities committed against her and the Yazidi community by militants from the terrorist group, ISIL.",
-   "href": "https://news.un.org/feed/view/en/story/2026/11/1168801",
-   "report": false,
-   "iso": "2026-11-15T12:00:00+00:00",
-   "auto": true
-  },
-  {
    "cat": "pm",
    "media": "none",
    "initials": "MC",
@@ -2499,22 +2473,6 @@
    "auto": true
   },
   {
-   "cat": "intl",
-   "media": "none",
-   "initials": "UN",
-   "name": "United Nations",
-   "role": "UN News",
-   "date": "Nov 14",
-   "platform": "Official statement",
-   "handle": "news.un.org",
-   "hed": "When the rains fail: Preparing for drought in Central America",
-   "summary": "Across Central America’s so-called Dry Corridor, farming families live at the mercy of the rains. In southwestern Honduras, Anastacio Martínez Gómez has spent most of his 73 years learning to work the land. But experience can only take him…",
-   "href": "https://news.un.org/feed/view/en/story/2026/11/1168776",
-   "report": false,
-   "iso": "2026-11-14T12:00:00+00:00",
-   "auto": true
-  },
-  {
    "cat": "premier",
    "media": "none",
    "initials": "BC",
@@ -2544,6 +2502,22 @@
    "href": "https://news.ontario.ca/en/release/1008278/inquest_into_the_death_of_shawn_quehe_announced",
    "report": false,
    "iso": "2026-11-13T20:30:00+00:00",
+   "auto": true
+  },
+  {
+   "cat": "premier",
+   "media": "none",
+   "initials": "ON",
+   "name": "Government of Ontario",
+   "role": "Premier Doug Ford’s government",
+   "date": "Nov 13",
+   "platform": "Official statement",
+   "handle": "news.ontario.ca",
+   "hed": "Ontario and Canada Select the University of Toronto as Host for Province’s First Fusion Energy Research Chair",
+   "summary": "New chair will help leverage Ontario’s nuclear advantage to advance clean energy innovation and strengthen the province’s global competitiveness",
+   "href": "https://news.ontario.ca/en/release/1008285/ontario_and_canada_select_the_university_of_toronto_as_host_for_provinces_first_fusion_energy_research_chair",
+   "report": false,
+   "iso": "2026-11-13T20:06:00+00:00",
    "auto": true
   }
  ],
@@ -2700,24 +2674,24 @@
    "img": "https://cdn.nunatsiaq.com/wp-content/uploads/2026/11/IMG_1460-scaled-e1794332986765-1200x630.jpg"
   },
   {
-   "o": "CHEK News",
-   "region": "Vancouver Island",
+   "o": "BayToday",
+   "region": "North Bay",
    "arctic": false,
-   "h": "Wolf warning still in effect at Long Beach, Parks Canada reminds public",
-   "u": "https://cheknews.ca/wolf-warning-still-in-effect-at-long-beach-parks-canada-reminds-public-1361441/",
-   "t": "Sun 1:53 p.m.",
-   "desc": "Parks Canada is reminding visitors to exercise caution in the Long Beach area of Pacific Rim National Park Reserve, where a family of five wolves continues to roam and show a heightened interest in dogs.",
-   "img": "https://cheknews.ca/wp-content/uploads/2026/11/904007160_1726809635814302_4749622147570250471_n-e1794768569711.jpg"
+   "h": "Festival of Trees returns to Gateway City Brewery next week in support of local charities",
+   "u": "https://www.baytoday.ca/local-news/festival-of-trees-returns-to-gateway-city-brewery-next-week-in-support-of-local-charities-13013084",
+   "t": "Sun 2:00 p.m.",
+   "desc": "The free, family-friendly Festival of Trees and All Things Christmas will bring live music, auctions, and raffles to Gateway City Brewery on Nov. 20 and 21",
+   "img": "https://www.vmcdn.ca/f/files/baytoday/images/miscellaneous-feature-photos/good-morning-north-bay/2017/december-2017/20171213-10-oh-christmas-tree.-photo-by-brenda-turl-for-baytoday..JPG;w=1200;h=800;mode=crop"
   },
   {
-   "o": "CKOM / PAnow",
-   "region": "Saskatchewan",
+   "o": "Thunder Bay Newswatch",
+   "region": "Thunder Bay",
    "arctic": false,
-   "h": "Warman RCMP use drone to search for occupants after Hwy. 11 rollover",
-   "u": "https://www.ckom.com/2026/11/15/warman-rcmp-use-drone-to-search-for-occupants-after-hwy-11-rollover/",
-   "t": "Sun 1:39 p.m.",
-   "desc": "Warman RCMP are looking for anyone who was in a vehicle that rolled on Highway 11 early on Sunday morning. Police did not specify how many people were inside or provide a description of it.",
-   "img": "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/653/files/2026/11/rcmp-panow-stock.jpg"
+   "h": "Home of the Ice Dogs to see big renovations",
+   "u": "https://www.nwonewswatch.com/local-journalism-initiative-lji/home-of-the-ice-dogs-to-see-big-renovations-13016591",
+   "t": "Sun 2:00 p.m.",
+   "desc": "Read the full story and comment on NWOnewswatch.com",
+   "img": "https://www.vmcdn.ca/f/files/nwonewswatch/images/2026/november/rickford-dryden-gm-ice-dogs-arena.jpg;w=1200;h=800;mode=crop"
   }
  ],
  "clocks": [
@@ -2797,13 +2771,13 @@
    "city": "Washington",
    "tz": "America/New_York",
    "world": false,
-   "w": "Lutnick",
-   "label": "Rep. Himes says Democrats are worried as Trump",
-   "u": "https://www.cbsnews.com/video/rep-himes-says-democrats-are-worried-as-trump-lutnick-are-buddy-buddies-with-jensen-huang/",
-   "title": "Rep. Himes says Democrats are worried as Trump, Lutnick are \"buddy buddies\" with Jensen Huang",
-   "outlet": "CBS News",
-   "t": "Sun 11:58 a.m.",
-   "hot": false
+   "w": "Van Hollen",
+   "label": "Chris Van Hollen says he has path to win Senate leader…",
+   "u": "https://www.theguardian.com/us-news/2026/nov/15/chris-van-hollen-senate-majority-leader",
+   "title": "Chris Van Hollen says he has path to win Senate leader over Chuck Schumer",
+   "outlet": "The Guardian",
+   "t": "Sun 1:46 p.m.",
+   "hot": true
   },
   {
    "city": "Beijing",
@@ -2847,20 +2821,32 @@
   {
    "desk": "politics",
    "pic": "parliament",
-   "t": "Sun 1:26 p.m.",
-   "iso": "2026-11-15T18:26:08+00:00",
-   "title": "‘True neighbourhood gem’: Edmonton coffee shop nominated for Canada’s favourite business",
-   "summary": "A local Edmonton coffee shop may just be one of Canada’s favourite businesses.",
-   "outlet": "CTV News + Times Colonist + CityNews Montreal + CKOM / PAnow + 1 more (CP), Global News, Politico, PBS NewsHour (AP), Euronews, Fox News",
+   "t": "Sun 1:48 p.m.",
+   "iso": "2026-11-15T18:48:10+00:00",
+   "title": "Senator-elect Scott Colom vows to ensure Trump follows through on his promises",
+   "summary": "Mississippi Democrat points to commitments Trump made: lower prices, halt endless wars and release Epstein files",
+   "outlet": "The Guardian, Times Colonist + CityNews Montreal + CKOM / PAnow + CBC News + 1 more (CP), Global News, Euronews, Politico, Toronto Sun",
    "n": 6,
-   "url": "https://www.ctvnews.ca/edmonton/article/true-neighbourhood-gem-edmonton-coffee-shop-nominated-for-canadas-favourite-business/",
-   "img": "https://www.ctvnews.ca/resizer/v2/ENLAPTVL3VDYDBWFIHYWJXFSMY.jpeg?smart=true&auth=b4cadd413ba9dec368d437ef1e95533b38b3882210d2360546c77dc0bf92e9e8&width=1200&height=630"
+   "url": "https://www.theguardian.com/us-news/2026/nov/15/scott-colom-mississippi-senate-trump",
+   "img": "https://i.guim.co.uk/img/media/4abbdc3b45c3f90c56abf04023eb18752ef75fce/750_0_6515_5212/master/6515.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=26e92fdda22814c43e890756929fa8e2"
   },
   {
    "desk": "us",
    "pic": "podium",
-   "t": "Sun 1:48 p.m.",
-   "iso": "2026-11-15T18:48:24+00:00",
+   "t": "Sun 1:46 p.m.",
+   "iso": "2026-11-15T18:46:49+00:00",
+   "title": "Chris Van Hollen says he has path to win Senate leader over Chuck Schumer",
+   "summary": "Progressive US senator calling for more inclusion within Democratic caucus cites openness to change among peers",
+   "outlet": "The Guardian, Politico, Toronto Star + CTV News + CP24 + PBS NewsHour (AP), Euronews, Fox News, The Hill",
+   "n": 6,
+   "url": "https://www.theguardian.com/us-news/2026/nov/15/chris-van-hollen-senate-majority-leader",
+   "img": "https://i.guim.co.uk/img/media/6e0a2c263ff4be7091b975eef0135a62230b8800/0_103_4566_3653/master/4566.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=996617f9951975b83d95da9c2a177c8f"
+  },
+  {
+   "desk": "us",
+   "pic": "podium",
+   "t": "Sun 1:53 p.m.",
+   "iso": "2026-11-15T18:53:18+00:00",
    "title": "UPS plane, passenger jet collide on Miami airport taxiway",
    "summary": "A UPS cargo plane and a Copa Airlines jet carrying 172 people collided while taxiing at Miami International Airport, leaving two passengers with minor injuries.",
    "outlet": "CBS News, Toronto Star (AP), NBC News, The Guardian, CTV News + CP24 (CP)",
@@ -3085,18 +3071,6 @@
    "img": ""
   },
   {
-   "desk": "us",
-   "pic": "podium",
-   "t": "Sun 10:57 a.m.",
-   "iso": "2026-11-15T15:57:03+00:00",
-   "title": "Judge blocks Trump closure of 'Trash Island' Washington DC golf course on Sunday",
-   "summary": "The temporary order is part of a months-long challenge to the US president's plans to upgrade East Potomac Golf Links into a championship course.",
-   "outlet": "BBC News",
-   "n": 1,
-   "url": "https://www.bbc.co.uk/news/articles/c6j9mn7l14y0o?at_medium=RSS&at_campaign=rss",
-   "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/4be0/live/054b94d0-e09e-11f1-a701-fddedf244c16.jpg"
-  },
-  {
    "desk": "business",
    "pic": "chart",
    "t": "Sun 10:42 a.m.",
@@ -3304,16 +3278,16 @@
     "Russia will not compete at world junior hockey championship in Alberta, IIHF says",
     "Why researchers are using drones to keep polar bears and people apart",
     "Carney cites her award-winning book on encampments. Here's what she says of his plan to end homelessness",
-    "Canada's health-care spending tops $10,000 per person this year. Where is the money going?",
-    "Rock & Roll Hall of Fame ceremony full of emotions as Phil Collins, Queen Latifah, more inducted"
+    "Rock & Roll Hall of Fame ceremony full of emotions as Phil Collins, Queen Latifah, more inducted",
+    "Satellite limitations imposed by Musk's SpaceX pose danger for Ukraine, Zelenskyy says"
    ],
    "u": [
     "",
     "https://www.cbc.ca/sports/hockey/iihf-world-juniors-russia-not-competing-9.7422880",
     "https://www.cbc.ca/news/canada/manitoba/drone-polar-bear-churchill-9.7418301",
     "https://www.cbc.ca/news/politics/what-does-carney-s-influence-think-of-homelessness-plan-9.7422419",
-    "https://www.cbc.ca/news/health/canada-health-care-spending-9.7419956",
-    "https://www.cbc.ca/news/entertainment/rock-roll-hall-of-fame-ceremony-9.7422731"
+    "https://www.cbc.ca/news/entertainment/rock-roll-hall-of-fame-ceremony-9.7422731",
+    "https://www.cbc.ca/news/world/ukraine-russia-energy-winter-zelenskyy-musk-spacex-starshield-9.7422871"
    ]
   },
   {
@@ -3380,20 +3354,20 @@
    "o": "National Post",
    "ca": true,
    "h": [
+    "Why Joe Rogan's friends think a Canadian rapper and CBC host is trying to take them down",
     "Legion pushes back against white poppy campaign",
-    "Avideh Motmaen-Far: Canada must hold Iran responsible for murdering civilians",
-    "How often should you go to the dentist? How much money do you make?",
+    "Ryan Thorpe: The Liberal record on immigration represents a betrayal of the Canadian dream",
+    "Can Canada defend the Arctic? How military exercises in the Far North went off the rails",
     "Ukraine asked to trade Donbas for NATO membership: Zelenskyy",
-    "NP View: Carney's expanded immigration plan is crashing our quality of life",
-    "Trucker convicted of dangerous driving in deadly Ontario crash"
+    "NP View: Carney's expanded immigration plan is crashing our quality of life"
    ],
    "u": [
+    "https://nationalpost.com/modern-life/why-joe-rogans-friends-think-a-canadian-rapper-is-trying-to-take-them-down/",
     "https://nationalpost.com/news/legion-pushes-back-against-white-poppy-campaign/",
-    "https://nationalpost.com/opinion/avideh-motmaen-far-canada-must-hold-iran-responsible-for-murdering-civilians/",
-    "https://nationalpost.com/modern-life/how-often-should-you-go-to-the-dentist/",
+    "https://nationalpost.com/opinion/ryan-thorpe-the-liberal-record-on-immigration-represents-a-betrayal-of-the-canadian-dream/",
+    "https://nationalpost.com/news/defence/canada-military-exercises-arctic/",
     "https://nationalpost.com/news/world/ukraine-asked-to-trade-donbas-for-nato-membership-zelenskyy/",
-    "https://nationalpost.com/opinion/np-view-carneys-expanded-immigration-plan-is-crashing-our-quality-of-life/",
-    "https://nationalpost.com/news/canada/trucker-convicted-of-dangerous-driving-in-deadly-ontario-crash/"
+    "https://nationalpost.com/opinion/np-view-carneys-expanded-immigration-plan-is-crashing-our-quality-of-life/"
    ]
   },
   {
@@ -3511,19 +3485,35 @@
    "ca": false,
    "h": [
     "FAA ground stop live updates: FAA chief says when he expects air travel to recover",
+    "This Week With George Stephanopoulos",
     "UPS plane, Copa Airlines flight collide on taxiway at Miami International Airport",
     "Van Hollen says Schumer's team trying to 'instill fear' to retain Senate leadership",
     "Iran live updates: Bahrain reports Iranian attack, IRGC says air base targeted",
-    "Huge waves slam West Coast as storms continue",
-    "SpaceX’s Starship returns from orbit, caught by launch pad arms in dramatic first"
+    "Huge waves slam West Coast as storms continue"
    ],
    "u": [
     "https://abcnews.com/US/live-updates/faa-ground-stop-live-updates-hundreds-flights-canceled/?id=138125140",
+    "",
     "https://abcnews.com/US/ups-plane-copa-airlines-flight-collide-taxiway-miami/story?id=138152923",
     "https://abcnews.com/Politics/van-hollen-schumer-instill-fear-retain-senate-leadership/story?id=138155548",
     "https://abcnews.com/International/live-updates/iran-live-updates-americans-tired-forever-wars-araghchi/?id=137967256",
-    "https://abcnews.com/US/huge-waves-slam-west-coast-storms-continue/story?id=138155641",
-    "https://abcnews.com/Technology/wireStory/spacexs-starship-returns-orbit-captured-launch-pad-arms-138148467"
+    "https://abcnews.com/US/huge-waves-slam-west-coast-storms-continue/story?id=138155641"
+   ]
+  },
+  {
+   "o": "The New York Times",
+   "ca": false,
+   "h": [
+    "New York Times - Top Stories",
+    "The Athletic Sports coverage",
+    "Cooking Recipes and guides",
+    "Wirecutter Product recommendations"
+   ],
+   "u": [
+    "",
+    "",
+    "",
+    ""
    ]
   },
   {
@@ -3596,7 +3586,7 @@
     "url": "https://www.youtube.com/watch?v=0TtsQz8oOv4",
     "img": "https://i.ytimg.com/vi/0TtsQz8oOv4/hqdefault.jpg",
     "story": "Transportation head vows to find ‘root cause’ of ground stop",
-    "watching": "591",
+    "watching": "588",
     "reports": [
      {
       "outlet": "CTV News",
@@ -3684,10 +3674,6 @@
     "url": "https://www.youtube.com/watch?v=umLWFz4izTM"
    },
    {
-    "net": "DW News",
-    "url": "https://www.youtube.com/watch?v=LuKwFajn37U"
-   },
-   {
     "net": "Al Jazeera",
     "url": "https://www.youtube.com/watch?v=gCNeDWCI0vo"
    },
@@ -3698,6 +3684,10 @@
    {
     "net": "FRANCE 24 English",
     "url": "https://www.youtube.com/watch?v=HvZt-nh9sGg"
+   },
+   {
+    "net": "euronews",
+    "url": "https://www.youtube.com/watch?v=pykpO5kQJ98"
    }
   ]
  },
@@ -3883,8 +3873,18 @@
   "auto-96971b21": {
    "story": "FAA ground stop",
    "us": false,
-   "specific": 0,
-   "stories": [],
+   "specific": 1,
+   "stories": [
+    {
+     "t": "Sat 10:18 a.m.",
+     "iso": "2026-11-14T15:18:31+00:00",
+     "outlet": "CTV News",
+     "title": "40 flights cancelled at Montreal airport Saturday as operations resume after FAA ground stop",
+     "url": "https://www.ctvnews.ca/montreal/article/40-flights-cancelled-at-montreal-airport-saturday-as-operations-resume-after-faa-ground-stop/",
+     "ca": true,
+     "tie": ""
+    }
+   ],
    "official": [
     {
      "outlet": "FAA",
@@ -4008,24 +4008,6 @@
      "checked": true
     }
    ],
-   "views": []
-  },
-  "https://www.cbsnews.com/news/ups-plane-copa-airlines-jet-collide-miami-international-airport/": {
-   "story": "UPS plane, passenger jet collide on Miami airport taxiway",
-   "us": false,
-   "specific": 1,
-   "stories": [
-    {
-     "t": "Fri 10:05 a.m.",
-     "iso": "2026-11-13T15:05:36+00:00",
-     "outlet": "Daily Hive",
-     "title": "Over 10 million passengers in record-breaking summer period at Vancouver International Airport",
-     "url": "https://dailyhive.com/vancouver/vancouver-international-airport-yvr-summer-2026-statistics-record",
-     "ca": false,
-     "tie": ""
-    }
-   ],
-   "official": [],
    "views": []
   },
   "https://www.pbs.org/newshour/world/zelenskyy-says-starshield-restrictions-threaten-ukraines-energy-defenses-ahead-of-winter": {
@@ -4814,11 +4796,6 @@
   "-NabWfv-VdA"
  ],
  "noembed": [
-  "J3FV4iY8p5w",
-  "L6qtnHZxwEw",
-  "NuEr0Q_AS6U",
-  "buCYd2RCP60",
-  "ldElU-Q5Qyo",
   "t_HBrWb84eY"
  ]
 }
