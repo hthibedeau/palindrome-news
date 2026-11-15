@@ -1,9 +1,44 @@
 {
- "checked": "2026-11-15T21:00:44.910350+00:00",
- "labels": 240,
- "problems": [],
+ "checked": "2026-11-15T21:59:13.227242+00:00",
+ "labels": 207,
+ "problems": [
+  {
+   "label": "ABC News",
+   "opens": "https://www.cbc.ca/news/canada/montreal/paul-st-pierre-plamondon-mark-carney-sommet-de-la-francophonie-9.7422688",
+   "section": "developed",
+   "link": false,
+   "width": 390
+  },
+  {
+   "label": "CP24",
+   "opens": "https://www.cbc.ca/news/canada/montreal/paul-st-pierre-plamondon-mark-carney-sommet-de-la-francophonie-9.7422688",
+   "section": "developed",
+   "link": false,
+   "width": 390
+  }
+ ],
  "guard": {
   "fixed": [
+   {
+    "label": "CTV News ↗",
+    "was": "(card link) abcnews.com",
+    "now": "https://www.ctvnews.ca/atlantic/nova-scotia/article/halifax-students-speak-to-canadian-astronaut-aboard-international-space-station/"
+   },
+   {
+    "label": "Daily Hive ↗",
+    "was": "(card link) abcnews.com",
+    "now": "https://dailyhive.com/vancouver/vancouver-international-airport-yvr-summer-2026-statistics-record"
+   },
+   {
+    "label": "PBS News",
+    "was": "(card link) pbs.org",
+    "now": "https://www.pbs.org/newshour/world/southeast-asian-leaders-open-annual-summit-with-major-conflicts-and-their-impact-topping-the-agenda"
+   },
+   {
+    "label": "Fox News",
+    "was": "(card link) foxnews.com",
+    "now": "https://www.foxnews.com/outkick-sports/will-ospreay-retain-aew-world-championship-full-gear-attacked-mjf"
+   },
    {
     "label": "Politico",
     "was": "(card link) politico.com",
