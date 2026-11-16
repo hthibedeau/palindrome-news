@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-16T07:27:44.073496+00:00",
- "checkedLabel": "Mon 2:27 a.m.",
+ "checked": "2026-11-16T07:31:53.512442+00:00",
+ "checkedLabel": "Mon 2:31 a.m.",
  "stories": [
   {
    "key": "top",
@@ -37,16 +37,25 @@
    "BBC News",
    "https://www.bbc.co.uk/news/articles/cqvg2xgyvnjpo?at_medium=RSS&at_campaign=rss",
    "2026-11-16T07:23:23+00:00",
-   1
+   2
   ],
   [
    "Mon 2:15 a.m.",
    "World",
    "Lula will govern Brazil for a fourth term but faces a range of challenges. Here’s what to know",
-   "The Canadian Press (via Winnipeg Free Press)",
-   "https://www.winnipegfreepress.com/world/2026/11/16/lula-will-govern-brazil-for-a-fourth-term-but-faces-a-range-of-challenges-heres-what-to-know",
+   "Toronto Star",
+   "https://www.thestar.com/news/world/americas/lula-will-govern-brazil-for-a-fourth-term-but-faces-a-range-of-challenges-here-s-what-to-know/article_788bb9b1-f5d1-5b97-a828-11b4cc88a6ba.html",
    "2026-11-16T07:15:27+00:00",
-   1
+   2
+  ],
+  [
+   "Mon 2:14 a.m.",
+   "World",
+   "A home for older residents eagerly awaits Pope Leo XIV's return to Peruvian port city",
+   "Toronto Star",
+   "https://www.thestar.com/news/world/americas/a-home-for-older-residents-eagerly-awaits-pope-leo-xiv-s-return-to-peruvian-port-city/article_d7b124d3-7da2-5669-80ed-08d222335dc8.html",
+   "2026-11-16T07:14:00+00:00",
+   2
   ],
   [
    "Mon 2:00 a.m.",
@@ -245,15 +254,6 @@
    "https://www.thestar.com/news/world/africa/ethiopia-and-sudan-accuse-each-other-of-backing-armed-fighters-as-fears-of-a-wider-conflict-grow/article_d378e6c2-489e-5356-a0ca-5afac1b7bcd4.html",
    "2026-11-16T05:12:23+00:00",
    1
-  ],
-  [
-   "Mon 12:09 a.m.",
-   "U.S.",
-   "Trump’s Asia reset: Deals in Manila and Shenzhen, then a rare nuclear summit with Xi and Putin",
-   "Toronto Star",
-   "https://www.thestar.com/news/world/united-states/trump-s-asia-reset-deals-in-manila-and-shenzhen-then-a-rare-nuclear-summit-with-xi-and-putin/article_00d8b263-9fbe-50ed-866a-8ca6f6c91608.html",
-   "2026-11-16T05:09:18+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -301,7 +301,7 @@
    "score": 20,
    "title": "Edmonton Elks defeat Montreal Alouettes to capture 113th Grey Cup",
    "url": "https://www.cbc.ca/sports/football/cfl/cfl-montreal-alouettes-edmonton-elks-grey-cup-nov-15-9.7422907",
-   "outlets": 17,
+   "outlets": 16,
    "why": [
     "CBC News front #2"
    ],
@@ -326,10 +326,10 @@
    "theme": "FAA ground stop"
   },
   {
-   "score": 14,
+   "score": 15,
    "title": "Growing up abroad, Ukrainian child refugees redefine the meaning of home",
    "url": "https://kyivindependent.com/growing-up-abroad-ukrainian-child-refugees-redefine-meaning-of-home/",
-   "outlets": 12,
+   "outlets": 13,
    "why": [],
    "theme": ""
   },
@@ -351,6 +351,14 @@
   },
   {
    "score": 11,
+   "title": "A home for older residents eagerly awaits Pope Leo XIV's return to Peruvian port city",
+   "url": "https://www.thestar.com/news/world/americas/a-home-for-older-residents-eagerly-awaits-pope-leo-xiv-s-return-to-peruvian-port-city/article_d7b124d3-7da2-5669-80ed-08d222335dc8.html",
+   "outlets": 9,
+   "why": [],
+   "theme": ""
+  },
+  {
+   "score": 11,
    "title": "Stocks extend losses as traders await Nvidia earnings and Anthropic IPO",
    "url": "https://www.euronews.com/2026/11/16/stocks-extend-losses-as-traders-await-nvidia-earnings-and-anthropic-ipo",
    "outlets": 9,
@@ -362,14 +370,6 @@
    "title": "Kirk Cousins and the Minnesota Vikings are reunited and it feels so good after win over Green Bay Packers",
    "url": "https://www.foxnews.com/outkick-sports/kirk-cousins-minnesota-vikings-reunited-feels-good-win-green-bay-packers",
    "outlets": 9,
-   "why": [],
-   "theme": ""
-  },
-  {
-   "score": 8,
-   "title": "Pope Leo XIV in visit to Peruvian rainforest demands justice for slain Amazon defenders",
-   "url": "https://www.euronews.com/2026/11/16/pope-leo-xiv-in-visit-to-peruvian-rainforest-demands-justice-for-slain-amazon-defenders",
-   "outlets": 8,
    "why": [],
    "theme": ""
   }
@@ -634,15 +634,25 @@
     ],
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (national desks).",
-    "weight": 53.5
+    "weight": 53.5,
+    "videos": [
+     {
+      "net": "Global News",
+      "url": "https://www.youtube.com/watch?v=DyNo5DE-BVo",
+      "title": "ASEAN summit: Carney announces new Asian trade deals amid stalled US talks",
+      "img": "https://i.ytimg.com/vi/DyNo5DE-BVo/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     }
+    ]
    },
    {
     "key": "auto-664a2c9b",
     "words": [
      "unlikely",
      "aviation",
-     "ground",
      "expert",
+     "ground",
      "flight",
      "faa’s"
     ],
@@ -990,189 +1000,271 @@
     "weight": 50,
     "videos": [
      {
-      "net": "CP24",
-      "url": "https://www.youtube.com/watch?v=Cr1p9feNrvI",
-      "title": "Hundreds of flights impacted at Pearson as air travel resumes following U.S. ground stop",
-      "img": "https://i.ytimg.com/vi/Cr1p9feNrvI/hqdefault.jpg",
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=lbSXfHzs938",
+      "title": "Passengers and airlines face domino effect after nationwide ground stop in U.S.",
+      "img": "https://i.ytimg.com/vi/lbSXfHzs938/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "CBS News",
-      "url": "https://www.youtube.com/watch?v=b8fUVpiXxQA",
-      "title": "Trump breaks silence on nationwide ground stop",
-      "img": "https://i.ytimg.com/vi/b8fUVpiXxQA/hqdefault.jpg",
+      "net": "Global News",
+      "url": "https://www.youtube.com/watch?v=S88CzHiLOnc",
+      "title": "Pearson passengers left in limbo as US ground stop delays flights",
+      "img": "https://i.ytimg.com/vi/S88CzHiLOnc/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "CBS News",
-      "url": "https://www.youtube.com/watch?v=mRN0vL9q21Y",
-      "title": "Pilot, former air traffic controller react to national ground stop",
-      "img": "https://i.ytimg.com/vi/mRN0vL9q21Y/hqdefault.jpg",
+      "net": "CTV News",
+      "url": "https://www.youtube.com/watch?v=x0Bhee0P4jg",
+      "title": "Flights back to normal at Pearson Airport after U.S. ground stop",
+      "img": "https://i.ytimg.com/vi/x0Bhee0P4jg/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "CBS News",
-      "url": "https://www.youtube.com/watch?v=9DR5LWolVZw",
-      "title": "Duffy blames national ground stop, travel chaos on aging infrastructure",
-      "img": "https://i.ytimg.com/vi/9DR5LWolVZw/hqdefault.jpg",
+      "net": "CTV News",
+      "url": "https://www.youtube.com/watch?v=XkJ5JYQcOl4",
+      "title": "Operations resume at Montreal airport after FAA ground stop",
+      "img": "https://i.ytimg.com/vi/XkJ5JYQcOl4/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
     ]
    },
    {
-    "key": "auto-1c0668da",
+    "key": "auto-cf6acfd6",
     "words": [
-     "australian",
-     "haines",
-     "helen",
-     "suv",
-     "mp"
+     "peruvian",
+     "amazon",
+     "leo"
     ],
-    "score": 7,
+    "score": 11,
     "outlets": 3,
-    "carriers": 4,
+    "carriers": 8,
     "tag": "Developing",
-    "title": "Injured Australian lawmaker Helen Haines leaves hospital after alleged SUV attack",
-    "url": "https://abcnews.com/International/wireStory/injured-australian-lawmaker-helen-haines-leaves-hospital-after-138170480",
-    "outlet": "ABC News",
-    "t": "Mon 1:58 a.m.",
-    "iso": "2026-11-16T06:58:27+00:00",
-    "summary": "An Australian federal lawmaker who was almost killed by a car in an allegedly deliberate attack has thanked well-wishers around the world",
+    "title": "A home for older residents eagerly awaits Pope Leo XIV's return to Peruvian port city",
+    "url": "https://www.thestar.com/news/world/americas/a-home-for-older-residents-eagerly-awaits-pope-leo-xiv-s-return-to-peruvian-port-city/article_d7b124d3-7da2-5669-80ed-08d222335dc8.html",
+    "outlet": "Toronto Star",
+    "t": "Mon 2:14 a.m.",
+    "iso": "2026-11-16T07:14:00+00:00",
+    "summary": "CALLAO, Peru (AP) — The walls of the home for older people run by Catholic religious sisters in the Peruvian port city of Callao were recently painted. The courtyard was",
     "first": {
-     "outlet": "The Guardian",
-     "url": "https://www.theguardian.com/australia-news/2026/nov/16/mp-helen-haines-out-of-hospital-after-attack-leg-amputation-ntwnfb",
-     "t": "Mon 12:05 a.m.",
-     "title": "MP Helen Haines’s first words since leaving hospital after alleged attack led to double amputation",
-     "iso": "2026-11-16T05:05:07+00:00"
+     "outlet": "PBS NewsHour",
+     "url": "https://www.pbs.org/newshour/world/pope-crosses-peru-in-the-finale-of-a-trip-home-to-visit-flock-high-in-andes-and-deep-in-amazon",
+     "t": "Sun 2:57 p.m.",
+     "title": "Pope crosses Peru in the finale of a trip home to visit flock high in Andes and deep in Amazon",
+     "iso": "2026-11-15T19:57:37+00:00"
     },
-    "newest": "2026-11-16T06:58:27+00:00",
+    "newest": "2026-11-16T07:14:00+00:00",
     "photo": {
-     "src": "live/img/auto-1c0668da-384a2d956d.jpg",
-     "orig": "https://i.abcnewsfe.com/a/04794273-c184-4ab2-85a8-11569bfae20b/wirestory_72f54e85b03284f8eecd998dd0128621_16x9.jpg?w=1600",
-     "caption": "From: Injured Australian lawmaker Helen Haines leaves hospital after alleged SUV attack. — via ABC News",
-     "alt": "Injured Australian lawmaker Helen Haines leaves hospital after alleged SUV attack",
-     "outlet": "ABC News",
-     "url": "https://abcnews.com/International/wireStory/injured-australian-lawmaker-helen-haines-leaves-hospital-after-138170480",
-     "since": "2026-11-16T07:29:52.644956+00:00"
+     "src": "live/img/auto-cf6acfd6-8260b6836d.jpg",
+     "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/5/1a/51a999b6-2d30-57fe-9810-be85802b0259/6afaaea132561.image.jpg?crop=1618%2C849%2C0%2C115&resize=1200%2C630&order=crop%2Cresize",
+     "caption": "From: A home for older residents eagerly awaits Pope Leo XIV's return to Peruvian port city. — via Toronto Star",
+     "alt": "A home for older residents eagerly awaits Pope Leo XIV's return to Peruvian port city",
+     "outlet": "Toronto Star",
+     "url": "https://www.thestar.com/news/world/americas/a-home-for-older-residents-eagerly-awaits-pope-leo-xiv-s-return-to-peruvian-port-city/article_d7b124d3-7da2-5669-80ed-08d222335dc8.html",
+     "since": "2026-11-16T07:34:58.907656+00:00"
     },
     "photo_seen": [
-     "https://i.abcnewsfe.com/a/04794273-c184-4ab2-85a8-11569bfae20b/wirestory_72f54e85b03284f8eecd998dd0128621_16x9.jpg?w=1600"
+     "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/5/1a/51a999b6-2d30-57fe-9810-be85802b0259/6afaaea132561.image.jpg?crop=1618%2C849%2C0%2C115&resize=1200%2C630&order=crop%2Cresize"
     ],
     "photos": [
      {
-      "src": "live/img/auto-1c0668da-384a2d956d.jpg",
-      "orig": "https://i.abcnewsfe.com/a/04794273-c184-4ab2-85a8-11569bfae20b/wirestory_72f54e85b03284f8eecd998dd0128621_16x9.jpg?w=1600",
-      "caption": "From: Injured Australian lawmaker Helen Haines leaves hospital after alleged SUV attack. — via ABC News",
-      "alt": "Injured Australian lawmaker Helen Haines leaves hospital after alleged SUV attack",
-      "outlet": "ABC News",
-      "url": "https://abcnews.com/International/wireStory/injured-australian-lawmaker-helen-haines-leaves-hospital-after-138170480"
+      "src": "live/img/auto-cf6acfd6-8260b6836d.jpg",
+      "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/5/1a/51a999b6-2d30-57fe-9810-be85802b0259/6afaaea132561.image.jpg?crop=1618%2C849%2C0%2C115&resize=1200%2C630&order=crop%2Cresize",
+      "caption": "From: A home for older residents eagerly awaits Pope Leo XIV's return to Peruvian port city. — via Toronto Star",
+      "alt": "A home for older residents eagerly awaits Pope Leo XIV's return to Peruvian port city",
+      "outlet": "Toronto Star",
+      "url": "https://www.thestar.com/news/world/americas/a-home-for-older-residents-eagerly-awaits-pope-leo-xiv-s-return-to-peruvian-port-city/article_d7b124d3-7da2-5669-80ed-08d222335dc8.html"
      },
      {
-      "src": "live/img/auto-1c0668da-40d94f9e0a.jpg",
-      "orig": "https://images.euronews.com/articles/stories/09/99/37/40/1200x675_cmsv2_feeaf12c-f357-5a48-88e3-dc0e500c64b0-9993740.jpg",
-      "caption": "Australian MP Helen Haines leaves hospital after losing both legs in alleged car attack. — via Euronews",
-      "alt": "Australian MP Helen Haines leaves hospital after losing both legs in alleged car attack",
+      "src": "live/img/auto-cf6acfd6-f87e99bbf3.jpg",
+      "orig": "https://images.euronews.com/articles/stories/09/99/34/69/1200x675_cmsv2_17c80d32-3d84-57a6-a15f-a40594ca8f80-9993469.jpg",
+      "caption": "Pope Leo XIV in visit to Peruvian rainforest demands justice for slain Amazon defenders. — via Euronews",
+      "alt": "Pope Leo XIV in visit to Peruvian rainforest demands justice for slain Amazon defenders",
       "outlet": "Euronews",
-      "url": "https://www.euronews.com/2026/11/16/australian-mp-helen-haines-leaves-hospital-after-losing-both-legs-in-alleged-car-attack"
+      "url": "https://www.euronews.com/2026/11/16/pope-leo-xiv-in-visit-to-peruvian-rainforest-demands-justice-for-slain-amazon-defenders"
+     },
+     {
+      "src": "live/img/auto-cf6acfd6-06d04538a9.jpg",
+      "orig": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6afa52f7e0c2d-1794790135.jpg?resize=1920%2C1440",
+      "caption": "Pope condemns murders of Peru’s Indigenous leaders, deforestation of Amazon. — via Al Jazeera",
+      "alt": "Pope condemns murders of Peru’s Indigenous leaders, deforestation of Amazon",
+      "outlet": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/11/16/pope-condemns-murders-of-perus-indigenous-leaders-deforestation-of-amazon?traffic_source=rss"
+     },
+     {
+      "src": "live/img/auto-cf6acfd6-a604b79093.jpg",
+      "orig": "https://www.ctvnews.ca/resizer/v2/TZHZL3757IGU7EY3PUD4JQEBJA.jpg?smart=true&auth=a561bff88ab3471e322d1c27af814a3fe8468827bed1f0341dc7e247bf14c0fa&width=1200&height=630",
+      "caption": "Pope Leo XIV waves during a meeting with missionaries and representatives of the Amazonian peoples at Malecón Puerto Callao in Pucallpa, Peru, on the tenth day of his twelve-day apostolic journey to South America, Sunday, Nov. 15, 2026. (AP Photo/Andrew Medichini). — via CTV News",
+      "alt": "Pope Leo XIV waves during a meeting with missionaries and representatives of the Amazonian peoples at Malecón Puerto Callao in Pucallpa, Peru, on the tenth day ",
+      "outlet": "CTV News",
+      "url": "https://www.ctvnews.ca/world/article/pope-in-peruvian-rainforest-demands-justice-for-environmental-defenders-killed-for-protecting-amazon/"
      }
     ],
     "independent": 3,
     "reports": [
      {
-      "t": "Mon 1:58 a.m.",
-      "iso": "2026-11-16T06:58:27+00:00",
-      "outlet": "ABC News",
-      "title": "Injured Australian lawmaker Helen Haines leaves hospital after alleged SUV attack",
-      "url": "https://abcnews.com/International/wireStory/injured-australian-lawmaker-helen-haines-leaves-hospital-after-138170480",
-      "desc": "An Australian federal lawmaker who was almost killed by a car in an allegedly deliberate attack has thanked well-wishers around the world"
-     },
-     {
-      "t": "Mon 1:42 a.m.",
-      "iso": "2026-11-16T06:42:33+00:00",
-      "outlet": "Euronews",
-      "title": "Australian MP Helen Haines leaves hospital after losing both legs in alleged car attack",
-      "url": "https://www.euronews.com/2026/11/16/australian-mp-helen-haines-leaves-hospital-after-losing-both-legs-in-alleged-car-attack",
-      "desc": "The attack has sparked much soul-searching in a country where political violence is rare but where police have documented a steady rise in threats towards elected officials."
-     },
-     {
-      "t": "Mon 1:22 a.m.",
-      "iso": "2026-11-16T06:22:50+00:00",
+      "t": "Mon 2:14 a.m.",
+      "iso": "2026-11-16T07:14:00+00:00",
       "outlet": "Toronto Star",
-      "title": "Injured Australian lawmaker Helen Haines leaves hospital after alleged SUV attack",
-      "url": "https://www.thestar.com/news/world/australia/injured-australian-lawmaker-helen-haines-leaves-hospital-after-alleged-suv-attack/article_32968bbc-11a1-5067-8d0b-afb44184f9c9.html",
-      "desc": "MELBOURNE, Australia (AP) — An Australian federal lawmaker who was almost killed by a car in an allegedly deliberate attack thanked well-wishers around the world Monday and revealed she had"
+      "title": "A home for older residents eagerly awaits Pope Leo XIV's return to Peruvian port city",
+      "url": "https://www.thestar.com/news/world/americas/a-home-for-older-residents-eagerly-awaits-pope-leo-xiv-s-return-to-peruvian-port-city/article_d7b124d3-7da2-5669-80ed-08d222335dc8.html",
+      "desc": "CALLAO, Peru (AP) — The walls of the home for older people run by Catholic religious sisters in the Peruvian port city of Callao were recently painted. The courtyard was"
      },
      {
-      "t": "Mon 12:05 a.m.",
-      "iso": "2026-11-16T05:05:07+00:00",
+      "t": "Mon 12:10 a.m.",
+      "iso": "2026-11-16T05:10:26+00:00",
+      "outlet": "Euronews",
+      "title": "Pope Leo XIV in visit to Peruvian rainforest demands justice for slain Amazon defenders",
+      "url": "https://www.euronews.com/2026/11/16/pope-leo-xiv-in-visit-to-peruvian-rainforest-demands-justice-for-slain-amazon-defenders",
+      "desc": "“The blood of these brothers cries out to God and demands justice,” Pope Leo said, to applause from a crowd many of whom wore the feathered headdresses and face markings of the region."
+     },
+     {
+      "t": "Sun 8:55 p.m.",
+      "iso": "2026-11-16T01:55:00+00:00",
+      "outlet": "CBS News",
+      "title": "Pope Leo revisits Peruvian city where he once served as a missionary, bishop",
+      "url": "https://www.cbsnews.com/video/pope-leo-revisits-peruvian-city-once-served-missionary-bishop/",
+      "desc": "Pope Leo wrapped up a historic visit to South America. He flew by helicopter to a mountainous area of Peru to celebrate Mass, where he once served as a missionary. Chris Livesay is traveling with the pontiff and has more."
+     },
+     {
+      "t": "Sun 8:52 p.m.",
+      "iso": "2026-11-16T01:52:12+00:00",
+      "outlet": "Al Jazeera",
+      "title": "Pope condemns murders of Peru’s Indigenous leaders, deforestation of Amazon",
+      "url": "https://www.aljazeera.com/news/2026/11/16/pope-condemns-murders-of-perus-indigenous-leaders-deforestation-of-amazon?traffic_source=rss",
+      "desc": "Pontiff says he supports Indigenous efforts to protect their lands, demands justice for slain environmental defenders."
+     },
+     {
+      "t": "Sun 8:13 p.m.",
+      "iso": "2026-11-16T01:13:44+00:00",
       "outlet": "The Guardian",
-      "title": "MP Helen Haines’s first words since leaving hospital after alleged attack led to double amputation",
-      "url": "https://www.theguardian.com/australia-news/2026/nov/16/mp-helen-haines-out-of-hospital-after-attack-leg-amputation-ntwnfb",
-      "desc": "Independent MP says she is ‘overwhelmed’ by thousands of warm wishes and thanks Australians for charity donations"
+      "title": "‘The blood of these brothers cries out’: Pope Leo demands justice for people killed protecting the Amazon",
+      "url": "https://www.theguardian.com/world/2026/nov/16/pope-leo-speech-peru-justice-for-amazon-activists-environment",
+      "desc": "Pontiff delivers forceful speech in Peru as he travels from high in the Andes into the Amazon"
+     },
+     {
+      "t": "Sun 6:09 p.m.",
+      "iso": "2026-11-15T23:09:20+00:00",
+      "outlet": "CTV News",
+      "title": "Pope in Peruvian rainforest demands justice for environmental defenders killed for protecting Amazon",
+      "url": "https://www.ctvnews.ca/world/article/pope-in-peruvian-rainforest-demands-justice-for-environmental-defenders-killed-for-protecting-amazon/",
+      "desc": "From deep in the Peruvian rainforest, Pope Leo XIV on Sunday demanded justice for environmental defenders killed for protecting the Amazon and fully backed efforts by Indigenous peoples to stop their lands from being ravaged by logging and illegal exploitation."
+     },
+     {
+      "t": "Sun 6:09 p.m.",
+      "iso": "2026-11-15T23:09:20+00:00",
+      "outlet": "CP24",
+      "title": "Pope in Peruvian rainforest demands justice for environmental defenders killed for protecting Amazon",
+      "url": "https://www.cp24.com/news/world/2026/11/15/pope-in-peruvian-rainforest-demands-justice-for-environmental-defenders-killed-for-protecting-amazon/",
+      "desc": ""
+     },
+     {
+      "t": "Sun 2:57 p.m.",
+      "iso": "2026-11-15T19:57:37+00:00",
+      "outlet": "PBS NewsHour",
+      "title": "Pope crosses Peru in the finale of a trip home to visit flock high in Andes and deep in Amazon",
+      "url": "https://www.pbs.org/newshour/world/pope-crosses-peru-in-the-finale-of-a-trip-home-to-visit-flock-high-in-andes-and-deep-in-amazon",
+      "desc": "On the penultimate day of his visit to his adopted homeland, Leo channeled Pope Francis by emphasizing Catholic teaching that links care for the most vulnerable with care for God’s creation."
      }
     ],
     "sources": [
      {
-      "t": "Mon 1:22 a.m.",
+      "t": "Sun 2:57 p.m.",
       "primary": false,
-      "outlet": "Toronto Star",
-      "title": "Injured Australian lawmaker Helen Haines leaves hospital after alleged SUV attack",
-      "url": "https://www.thestar.com/news/world/australia/injured-australian-lawmaker-helen-haines-leaves-hospital-after-alleged-suv-attack/article_32968bbc-11a1-5067-8d0b-afb44184f9c9.html",
-      "desc": "MELBOURNE, Australia (AP) — An Australian federal lawmaker who was almost killed by a car in an allegedly deliberate attack thanked well-wishers around the world Monday and revealed she had",
+      "outlet": "PBS NewsHour",
+      "title": "Pope crosses Peru in the finale of a trip home to visit flock high in Andes and deep in Amazon",
+      "url": "https://www.pbs.org/newshour/world/pope-crosses-peru-in-the-finale-of-a-trip-home-to-visit-flock-high-in-andes-and-deep-in-amazon",
+      "desc": "On the penultimate day of his visit to his adopted homeland, Leo channeled Pope Francis by emphasizing Catholic teaching that links care for the most vulnerable with care for God’s creation.",
       "wire": "The Associated Press",
       "by": [
        {
-        "outlet": "Toronto Star",
+        "outlet": "PBS NewsHour",
         "src": "The Associated Press",
-        "byline": "\"Rod Mcguirk The Associated Press\" \"Rod Mcguirk The A"
+        "byline": "Mauricio Savarese, Associated Press"
        },
        {
-        "outlet": "ABC News",
+        "outlet": "CTV News",
+        "src": "The Canadian Press",
+        "byline": "k Hauen\" \"Avery Haines\" \"James Paracy\" \"The Canadian Press\" \"The Canadian Pres"
+       },
+       {
+        "outlet": "CP24",
         "src": "The Associated Press",
-        "byline": "[{\"name\":\"ROD MCGUIRK Associated Press\",,\"@type\":\"Person\"}"
+        "byline": "\"@type\": \"Person\",\n      \"name\": \"The  Associated Press\",\n      \n    }\n  ]"
+       },
+       {
+        "outlet": "The Guardian",
+        "src": "The Associated Press",
+        "byline": "lyns\",}] \"Dan Collyns\" \"Dan Collyns and Associated Press\" https://www.thegua"
+       },
+       {
+        "outlet": "Euronews",
+        "src": "The Associated Press",
+        "byline": "] Jerry Fisayo-Bambi Copyright 2026 The Associated Press. All rights reserve"
+       },
+       {
+        "outlet": "Toronto Star",
+        "src": "The Associated Press",
+        "byline": "\"Astrid Su\\u00e1rez The Associated Press\" \"Astrid Su\\u00e1re"
        }
       ],
       "copies": [
        {
-        "outlet": "ABC News",
-        "url": "https://abcnews.com/International/wireStory/injured-australian-lawmaker-helen-haines-leaves-hospital-after-138170480"
+        "outlet": "CTV News",
+        "url": "https://www.ctvnews.ca/world/article/pope-in-peruvian-rainforest-demands-justice-for-environmental-defenders-killed-for-protecting-amazon/"
+       },
+       {
+        "outlet": "CP24",
+        "url": "https://www.cp24.com/news/world/2026/11/15/pope-in-peruvian-rainforest-demands-justice-for-environmental-defenders-killed-for-protecting-amazon/"
+       },
+       {
+        "outlet": "The Guardian",
+        "url": "https://www.theguardian.com/world/2026/nov/16/pope-leo-speech-peru-justice-for-amazon-activists-environment"
+       },
+       {
+        "outlet": "Euronews",
+        "url": "https://www.euronews.com/2026/11/16/pope-leo-xiv-in-visit-to-peruvian-rainforest-demands-justice-for-slain-amazon-defenders"
+       },
+       {
+        "outlet": "Toronto Star",
+        "url": "https://www.thestar.com/news/world/americas/a-home-for-older-residents-eagerly-awaits-pope-leo-xiv-s-return-to-peruvian-port-city/article_d7b124d3-7da2-5669-80ed-08d222335dc8.html"
        }
       ]
      },
      {
-      "t": "Mon 1:42 a.m.",
+      "t": "Sun 8:55 p.m.",
       "primary": false,
-      "outlet": "Euronews",
-      "title": "Australian MP Helen Haines leaves hospital after losing both legs in alleged car attack",
-      "url": "https://www.euronews.com/2026/11/16/australian-mp-helen-haines-leaves-hospital-after-losing-both-legs-in-alleged-car-attack",
-      "desc": "The attack has sparked much soul-searching in a country where political violence is rare but where police have documented a steady rise in threats towards elected officials.",
+      "outlet": "CBS News",
+      "title": "Pope Leo revisits Peruvian city where he once served as a missionary, bishop",
+      "url": "https://www.cbsnews.com/video/pope-leo-revisits-peruvian-city-once-served-missionary-bishop/",
+      "desc": "Pope Leo wrapped up a historic visit to South America. He flew by helicopter to a mountainous area of Peru to celebrate Mass, where he once served as a missionary. Chris Livesay is traveling with the pontiff and has more.",
       "wire": "",
       "by": [
        {
-        "outlet": "Euronews",
-        "src": "Euronews",
-        "byline": "[ { \"@type\": \"Person\", \"familyName\": \"Blackburn\", \"givenName\": \"Gavin\", \"name\": \"Gavin Blackburn\", , \"worksFor\": { \"@id\""
+        "outlet": "CBS News",
+        "src": "CBS News",
+        "byline": ""
        }
       ],
       "copies": []
      },
      {
-      "t": "Mon 12:05 a.m.",
+      "t": "Sun 8:52 p.m.",
       "primary": false,
-      "outlet": "The Guardian",
-      "title": "MP Helen Haines’s first words since leaving hospital after alleged attack led to double amputation",
-      "url": "https://www.theguardian.com/australia-news/2026/nov/16/mp-helen-haines-out-of-hospital-after-attack-leg-amputation-ntwnfb",
-      "desc": "Independent MP says she is ‘overwhelmed’ by thousands of warm wishes and thanks Australians for charity donations",
+      "outlet": "Al Jazeera",
+      "title": "Pope condemns murders of Peru’s Indigenous leaders, deforestation of Amazon",
+      "url": "https://www.aljazeera.com/news/2026/11/16/pope-condemns-murders-of-perus-indigenous-leaders-deforestation-of-amazon?traffic_source=rss",
+      "desc": "Pontiff says he supports Indigenous efforts to protect their lands, demands justice for slain environmental defenders.",
       "wire": "",
       "by": [
        {
-        "outlet": "The Guardian",
-        "src": "The Guardian",
-        "byline": "[{\"@type\":\"Person\",\"name\":\"Krishani Dhanji\",}] \"Krishani Dhanji\" \"Krishani Dhanji\" https://www.theguardian.com/profile/k"
+        "outlet": "Al Jazeera",
+        "src": "Al Jazeera",
+        "byline": "{\"@type\":\"Person\",\"name\":\"Al Jazeera Staff\",} Al Jazeera Staff Add Al Jazeera on Google By "
        }
       ],
       "copies": []
@@ -1191,8 +1283,8 @@
     "fronts_who": [],
     "outled_ca": 2,
     "judgment": "national",
-    "judgment_why": "National: affects many people; carried beyond one city.",
-    "weight": 26.0
+    "judgment_why": "National: affects some people; carried across the country (national desks).",
+    "weight": 32.0
    }
   ],
   "considered": [
@@ -1241,12 +1333,12 @@
     "why_judged": "National: affects many people; carried across the country (8 cities)."
    },
    {
-    "title": "Injured Australian lawmaker Helen Haines leaves hospital after alleged SUV attack",
-    "url": "https://abcnews.com/International/wireStory/injured-australian-lawmaker-helen-haines-leaves-hospital-after-138170480",
+    "title": "A home for older residents eagerly awaits Pope Leo XIV's return to Peruvian port city",
+    "url": "https://www.thestar.com/news/world/americas/a-home-for-older-residents-eagerly-awaits-pope-leo-xiv-s-return-to-peruvian-port-city/article_d7b124d3-7da2-5669-80ed-08d222335dc8.html",
     "rank": 3,
     "live": "",
-    "weight": 26.0,
-    "score": 7,
+    "weight": 32.0,
+    "score": 11,
     "independent": 3,
     "most_read": 0,
     "canada": "none",
@@ -1255,14 +1347,35 @@
     "fronts": 0,
     "fronts_who": [],
     "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
-    "carriers": 4,
+    "carriers": 8,
     "judgment": "national",
-    "why_judged": "National: affects many people; carried beyond one city."
+    "why_judged": "National: affects some people; carried across the country (national desks)."
+   },
+   {
+    "title": "Prince Harry salutes wounded Ukrainian veterans as 'role models' on surprise Ukraine visit",
+    "url": "https://www.ctvnews.ca/world/article/prince-harry-salutes-wounded-ukrainian-veterans-as-role-models-on-surprise-ukraine-visit/",
+    "rank": 4,
+    "live": "",
+    "weight": 29,
+    "score": 15,
+    "independent": 4,
+    "most_read": 0,
+    "canada": "general",
+    "theme": "",
+    "top": false,
+    "fronts": 1,
+    "fronts_who": [
+     "The Guardian"
+    ],
+    "rule": "From abroad, tied to Canada",
+    "carriers": 13,
+    "judgment": "national",
+    "why_judged": "National: affects some people; carried across the country (8 cities)."
    },
    {
     "title": "Russia won’t be able to compete in World Juniors, IIHF says",
     "url": "https://globalnews.ca/news/12152003/russia-cant-compete-world-juniors-iihf/",
-    "rank": 4,
+    "rank": 5,
     "live": "",
     "weight": 39.0,
     "score": 19,
@@ -1283,7 +1396,7 @@
    {
     "title": "‘Betrayal’: Ontario couple’s three-year wait to return to Stellantis may end in heartbreak",
     "url": "https://www.ctvnews.ca/business/autos/article/sad-devastated-and-angry-stellantis-workers-fear-for-their-future-after-ontario-plant-sale-announcement/",
-    "rank": 5,
+    "rank": 6,
     "live": "",
     "weight": 27.0,
     "score": 11,
@@ -1302,7 +1415,7 @@
    {
     "title": "Stocks decline in Asia as concerns over the Nvidia fallout persist",
     "url": "https://www.thestar.com/news/world/stocks-decline-in-asia-as-investor-concerns-over-nvidia-fallout-extend-into-another-week/article_76a66dc1-d716-52b4-9ea9-2231229559b6.html",
-    "rank": 6,
+    "rank": 7,
     "live": "",
     "weight": 32.5,
     "score": 11,
@@ -1319,25 +1432,6 @@
     ],
     "rule": "No Canadian tie",
     "carriers": 9,
-    "judgment": "national",
-    "why_judged": "National: affects some people; carried across the country (national desks)."
-   },
-   {
-    "title": "Pope Leo XIV in visit to Peruvian rainforest demands justice for slain Amazon defenders",
-    "url": "https://www.euronews.com/2026/11/16/pope-leo-xiv-in-visit-to-peruvian-rainforest-demands-justice-for-slain-amazon-defenders",
-    "rank": 7,
-    "live": "",
-    "weight": 25.5,
-    "score": 8,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "No Canadian tie",
-    "carriers": 7,
     "judgment": "national",
     "why_judged": "National: affects some people; carried across the country (national desks)."
    },
@@ -1370,11 +1464,6 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Growing up abroad, Ukrainian child refugees redefine the meaning of home",
-    "score": 14,
-    "why": "not built: only 2 independent report(s) (11 sites)"
-   },
-   {
     "title": "3 friends complete 8,000-km canoe journey across Canada, arriving in Vancouver",
     "score": 13,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
@@ -1383,21 +1472,369 @@
     "title": "Microsoft outage and FAA ground stop in one week has some asking questions, suggesting theories",
     "score": 11,
     "why": "not built: only 1 independent report(s) (4 sites)"
-   },
-   {
-    "title": "Kirk Cousins and the Minnesota Vikings are reunited and it feels so good after win over Green Bay Packers",
-    "score": 9,
-    "why": "not built: only 1 independent report(s) (7 sites)"
-   },
-   {
-    "title": "Carney says Canada could turn to Chinese automakers if Trump trade talks fail",
-    "score": 7,
-    "why": "not built: only 2 independent report(s) (2 sites)"
    }
   ],
   "moved": [],
   "top_n": 3,
   "more": [
+   {
+    "key": "auto-47cc1d15",
+    "words": [
+     "ukrainian",
+     "harry",
+     "lviv"
+    ],
+    "score": 15,
+    "outlets": 4,
+    "carriers": 13,
+    "tag": "Developing",
+    "title": "Prince Harry salutes wounded Ukrainian veterans as 'role models' on surprise Ukraine visit",
+    "url": "https://www.ctvnews.ca/world/article/prince-harry-salutes-wounded-ukrainian-veterans-as-role-models-on-surprise-ukraine-visit/",
+    "outlet": "CTV News",
+    "t": "Sun 5:13 p.m.",
+    "iso": "2026-11-15T22:13:18+00:00",
+    "summary": "Britain’s Prince Harry hailed wounded Ukrainian veterans as society’s role models Sunday and said they need to continue receiving support from Kyiv as he wrapped up an unannounced weekend visit to the war-torn country.",
+    "first": {
+     "outlet": "Kyiv Independent",
+     "url": "https://kyivindependent.com/prince-harry-visits-lviv-to-support-ukrainian-veterans-at-invictus-games/",
+     "t": "Sun 12:05 p.m.",
+     "title": "Prince Harry visits Lviv to support Ukrainian veterans at Invictus Games",
+     "iso": "2026-11-15T17:05:00+00:00"
+    },
+    "newest": "2026-11-15T22:13:18+00:00",
+    "photo": {
+     "src": "live/img/auto-47cc1d15-099d946900.jpg",
+     "orig": "https://www.ctvnews.ca/resizer/v2/JUT7ZMLRSK547XKCHK4SBFT3R4.jpg?smart=true&auth=15cfa6290d649f5bc4d98cf20e21d7b2cd51736f5c88b5c8ca277e27f6543fd2&width=1200&height=630",
+     "caption": "Britain's Prince Harry, Duke of Sussex, poses for a photo with people who help organize Ukraine's Invictus Games competitions in Lviv, Ukraine, Saturday, Nov. 14, 2026. (AP Photo/Efrem Lukatsky, Pool). — via CTV News",
+     "alt": "Britain's Prince Harry, Duke of Sussex, poses for a photo with people who help organize Ukraine's Invictus Games competitions in Lviv, Ukraine, Saturday, Nov. 1",
+     "outlet": "CTV News",
+     "url": "https://www.ctvnews.ca/world/article/prince-harry-salutes-wounded-ukrainian-veterans-as-role-models-on-surprise-ukraine-visit/",
+     "since": "2026-11-16T07:34:54.317630+00:00"
+    },
+    "photo_seen": [
+     "https://www.ctvnews.ca/resizer/v2/JUT7ZMLRSK547XKCHK4SBFT3R4.jpg?smart=true&auth=15cfa6290d649f5bc4d98cf20e21d7b2cd51736f5c88b5c8ca277e27f6543fd2&width=1200&height=630"
+    ],
+    "photos": [
+     {
+      "src": "live/img/auto-47cc1d15-099d946900.jpg",
+      "orig": "https://www.ctvnews.ca/resizer/v2/JUT7ZMLRSK547XKCHK4SBFT3R4.jpg?smart=true&auth=15cfa6290d649f5bc4d98cf20e21d7b2cd51736f5c88b5c8ca277e27f6543fd2&width=1200&height=630",
+      "caption": "Britain's Prince Harry, Duke of Sussex, poses for a photo with people who help organize Ukraine's Invictus Games competitions in Lviv, Ukraine, Saturday, Nov. 14, 2026. (AP Photo/Efrem Lukatsky, Pool). — via CTV News",
+      "alt": "Britain's Prince Harry, Duke of Sussex, poses for a photo with people who help organize Ukraine's Invictus Games competitions in Lviv, Ukraine, Saturday, Nov. 1",
+      "outlet": "CTV News",
+      "url": "https://www.ctvnews.ca/world/article/prince-harry-salutes-wounded-ukrainian-veterans-as-role-models-on-surprise-ukraine-visit/"
+     },
+     {
+      "src": "live/img/auto-47cc1d15-6a55dfadd3.jpg",
+      "orig": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/545f/live/c6cd0f20-e18a-11f1-b441-2b33b063138f.jpg",
+      "caption": "Harry gestures as he speaks with a Ukrainian vet sitting on a hospital bed in Ukraine on Sunday. — via BBC News",
+      "alt": "Harry gestures as he speaks with a Ukrainian vet sitting on a hospital bed in Ukraine on Sunday.",
+      "outlet": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c60evn992jq8o?at_medium=RSS&at_campaign=rss"
+     },
+     {
+      "src": "live/img/auto-47cc1d15-81c6e1ef5d.jpg",
+      "orig": "https://assets.kyivindependent.com/content/images/2026/11/photo_2026-11-15-11_29_55_20261115-173012.jpeg",
+      "caption": "From: Prince Harry visits Lviv to support Ukrainian veterans at Invictus Games. — via Kyiv Independent",
+      "alt": "Prince Harry visits Lviv to support Ukrainian veterans at Invictus Games",
+      "outlet": "Kyiv Independent",
+      "url": "https://kyivindependent.com/prince-harry-visits-lviv-to-support-ukrainian-veterans-at-invictus-games/"
+     }
+    ],
+    "independent": 4,
+    "reports": [
+     {
+      "t": "Sun 5:13 p.m.",
+      "iso": "2026-11-15T22:13:18+00:00",
+      "outlet": "CTV News",
+      "title": "Prince Harry salutes wounded Ukrainian veterans as 'role models' on surprise Ukraine visit",
+      "url": "https://www.ctvnews.ca/world/article/prince-harry-salutes-wounded-ukrainian-veterans-as-role-models-on-surprise-ukraine-visit/",
+      "desc": "Britain’s Prince Harry hailed wounded Ukrainian veterans as society’s role models Sunday and said they need to continue receiving support from Kyiv as he wrapped up an unannounced weekend visit to the war-torn country."
+     },
+     {
+      "t": "Sun 5:05 p.m.",
+      "iso": "2026-11-15T22:05:08+00:00",
+      "outlet": "CityNews Winnipeg",
+      "title": "Prince Harry salutes wounded Ukrainian veterans as ‘role models’ on surprise Ukraine visit",
+      "url": "https://winnipeg.citynews.ca/2026/11/15/prince-harry-salutes-wounded-ukrainian-veterans-as-role-models-on-surprise-ukraine-visit/",
+      "desc": "Prince Harry hailed wounded Ukrainian veterans as society's role models Sunday and said they need to continue receiving support from Kyiv."
+     },
+     {
+      "t": "Sun 5:05 p.m.",
+      "iso": "2026-11-15T22:05:08+00:00",
+      "outlet": "CityNews Vancouver",
+      "title": "Prince Harry salutes wounded Ukrainian veterans as ‘role models’ on surprise Ukraine visit",
+      "url": "https://vancouver.citynews.ca/2026/11/15/prince-harry-salutes-wounded-ukrainian-veterans-as-role-models-on-surprise-ukraine-visit/",
+      "desc": ""
+     },
+     {
+      "t": "Sun 5:05 p.m.",
+      "iso": "2026-11-15T22:05:08+00:00",
+      "outlet": "CityNews Ottawa",
+      "title": "Prince Harry salutes wounded Ukrainian veterans as ‘role models’ on surprise Ukraine visit",
+      "url": "https://ottawa.citynews.ca/2026/11/15/prince-harry-salutes-wounded-ukrainian-veterans-as-role-models-on-surprise-ukraine-visit/",
+      "desc": ""
+     },
+     {
+      "t": "Sun 5:05 p.m.",
+      "iso": "2026-11-15T22:05:08+00:00",
+      "outlet": "CityNews Montreal",
+      "title": "Prince Harry salutes wounded Ukrainian veterans as ‘role models’ on surprise Ukraine visit",
+      "url": "https://montreal.citynews.ca/2026/11/15/prince-harry-salutes-wounded-ukrainian-veterans-as-role-models-on-surprise-ukraine-visit/",
+      "desc": ""
+     },
+     {
+      "t": "Sun 5:05 p.m.",
+      "iso": "2026-11-15T22:05:08+00:00",
+      "outlet": "CityNews Halifax",
+      "title": "Prince Harry salutes wounded Ukrainian veterans as ‘role models’ on surprise Ukraine visit",
+      "url": "https://halifax.citynews.ca/2026/11/15/prince-harry-salutes-wounded-ukrainian-veterans-as-role-models-on-surprise-ukraine-visit/",
+      "desc": ""
+     },
+     {
+      "t": "Sun 5:05 p.m.",
+      "iso": "2026-11-15T22:05:08+00:00",
+      "outlet": "CityNews Edmonton",
+      "title": "Prince Harry salutes wounded Ukrainian veterans as ‘role models’ on surprise Ukraine visit",
+      "url": "https://edmonton.citynews.ca/2026/11/15/prince-harry-salutes-wounded-ukrainian-veterans-as-role-models-on-surprise-ukraine-visit/",
+      "desc": ""
+     },
+     {
+      "t": "Sun 5:05 p.m.",
+      "iso": "2026-11-15T22:05:08+00:00",
+      "outlet": "CityNews Calgary",
+      "title": "Prince Harry salutes wounded Ukrainian veterans as ‘role models’ on surprise Ukraine visit",
+      "url": "https://calgary.citynews.ca/2026/11/15/prince-harry-salutes-wounded-ukrainian-veterans-as-role-models-on-surprise-ukraine-visit/",
+      "desc": ""
+     },
+     {
+      "t": "Sun 5:05 p.m.",
+      "iso": "2026-11-15T22:05:08+00:00",
+      "outlet": "CityNews",
+      "title": "Prince Harry salutes wounded Ukrainian veterans as ‘role models’ on surprise Ukraine visit",
+      "url": "https://toronto.citynews.ca/2026/11/15/prince-harry-salutes-wounded-ukrainian-veterans-as-role-models-on-surprise-ukraine-visit/",
+      "desc": ""
+     },
+     {
+      "t": "Sun 5:05 p.m.",
+      "iso": "2026-11-15T22:05:00+00:00",
+      "outlet": "Toronto Star",
+      "title": "Prince Harry salutes wounded Ukrainian veterans as 'role models' on surprise Ukraine visit",
+      "url": "https://www.thestar.com/news/world/europe/prince-harry-salutes-wounded-ukrainian-veterans-as-role-models-on-surprise-ukraine-visit/article_fc4b9780-ae5b-5c53-b14e-8ea02e0b044b.html",
+      "desc": ""
+     },
+     {
+      "t": "Sun 5:00 p.m.",
+      "iso": "2026-11-15T22:00:24+00:00",
+      "outlet": "The Guardian",
+      "title": "Prince Harry tells Ukrainians they are ‘going to win war’ on surprise trip to Lviv",
+      "url": "https://www.theguardian.com/uk-news/2026/nov/15/prince-harry-ukraine-war-surprise-trip-invictus-games",
+      "desc": ""
+     },
+     {
+      "t": "Sun 5:00 p.m.",
+      "iso": "2026-11-15T22:00:13+00:00",
+      "outlet": "BBC News",
+      "title": "Prince Harry praises war veterans on surprise visit to Ukraine",
+      "url": "https://www.bbc.co.uk/news/articles/c60evn992jq8o?at_medium=RSS&at_campaign=rss",
+      "desc": ""
+     },
+     {
+      "t": "Sun 12:05 p.m.",
+      "iso": "2026-11-15T17:05:00+00:00",
+      "outlet": "Kyiv Independent",
+      "title": "Prince Harry visits Lviv to support Ukrainian veterans at Invictus Games",
+      "url": "https://kyivindependent.com/prince-harry-visits-lviv-to-support-ukrainian-veterans-at-invictus-games/",
+      "desc": ""
+     }
+    ],
+    "sources": [
+     {
+      "t": "Sun 5:05 p.m.",
+      "primary": false,
+      "outlet": "Toronto Star",
+      "title": "Prince Harry salutes wounded Ukrainian veterans as 'role models' on surprise Ukraine visit",
+      "url": "https://www.thestar.com/news/world/europe/prince-harry-salutes-wounded-ukrainian-veterans-as-role-models-on-surprise-ukraine-visit/article_fc4b9780-ae5b-5c53-b14e-8ea02e0b044b.html",
+      "desc": "LVIV, Ukraine (AP) — Britain's Prince Harry hailed wounded Ukrainian veterans as society's role models Sunday and said they need to continue receiving support from Kyiv as he wrapped up",
+      "wire": "The Associated Press",
+      "by": [
+       {
+        "outlet": "Toronto Star",
+        "src": "The Associated Press",
+        "byline": "\"The Associated Press\" \"The Associated Pr"
+       },
+       {
+        "outlet": "CityNews Winnipeg",
+        "src": "The Associated Press",
+        "byline": "ede01291c2e6f3f5fe805acc41a6fdf\"}] \"The Associated Press,\" News Staff \n\t\t\tBy"
+       },
+       {
+        "outlet": "CityNews Vancouver",
+        "src": "The Associated Press",
+        "byline": "ede01291c2e6f3f5fe805acc41a6fdf\"}] \"The Associated Press,\" News Staff \n\t\t\tBy"
+       },
+       {
+        "outlet": "CityNews Ottawa",
+        "src": "The Associated Press",
+        "byline": "ede01291c2e6f3f5fe805acc41a6fdf\"}] \"The Associated Press,\" News Staff \n\t\t\tBy"
+       },
+       {
+        "outlet": "CityNews Montreal",
+        "src": "The Associated Press",
+        "byline": "ede01291c2e6f3f5fe805acc41a6fdf\"}] \"The Associated Press,\" News Staff \n\t\t\tBy"
+       },
+       {
+        "outlet": "CityNews Halifax",
+        "src": "The Associated Press",
+        "byline": "ede01291c2e6f3f5fe805acc41a6fdf\"}] \"The Associated Press,\" News Staff \n\t\t\tBy"
+       },
+       {
+        "outlet": "CityNews Edmonton",
+        "src": "The Associated Press",
+        "byline": "ede01291c2e6f3f5fe805acc41a6fdf\"}] \"The Associated Press,\" News Staff \n\t\t\tBy"
+       },
+       {
+        "outlet": "CityNews Calgary",
+        "src": "The Associated Press",
+        "byline": "ede01291c2e6f3f5fe805acc41a6fdf\"}] \"The Associated Press,\" News Staff \n\t\t\tBy"
+       },
+       {
+        "outlet": "CityNews",
+        "src": "The Associated Press",
+        "byline": "ede01291c2e6f3f5fe805acc41a6fdf\"}] \"The Associated Press,\" News Staff \n\t\t\tBy"
+       },
+       {
+        "outlet": "CTV News",
+        "src": "The Canadian Press",
+        "byline": "k Hauen\" \"Avery Haines\" \"James Paracy\" \"The Canadian Press\" \"The Canadian Pres"
+       }
+      ],
+      "copies": [
+       {
+        "outlet": "CityNews Winnipeg",
+        "url": "https://winnipeg.citynews.ca/2026/11/15/prince-harry-salutes-wounded-ukrainian-veterans-as-role-models-on-surprise-ukraine-visit/"
+       },
+       {
+        "outlet": "CityNews Vancouver",
+        "url": "https://vancouver.citynews.ca/2026/11/15/prince-harry-salutes-wounded-ukrainian-veterans-as-role-models-on-surprise-ukraine-visit/"
+       },
+       {
+        "outlet": "CityNews Ottawa",
+        "url": "https://ottawa.citynews.ca/2026/11/15/prince-harry-salutes-wounded-ukrainian-veterans-as-role-models-on-surprise-ukraine-visit/"
+       },
+       {
+        "outlet": "CityNews Montreal",
+        "url": "https://montreal.citynews.ca/2026/11/15/prince-harry-salutes-wounded-ukrainian-veterans-as-role-models-on-surprise-ukraine-visit/"
+       },
+       {
+        "outlet": "CityNews Halifax",
+        "url": "https://halifax.citynews.ca/2026/11/15/prince-harry-salutes-wounded-ukrainian-veterans-as-role-models-on-surprise-ukraine-visit/"
+       },
+       {
+        "outlet": "CityNews Edmonton",
+        "url": "https://edmonton.citynews.ca/2026/11/15/prince-harry-salutes-wounded-ukrainian-veterans-as-role-models-on-surprise-ukraine-visit/"
+       },
+       {
+        "outlet": "CityNews Calgary",
+        "url": "https://calgary.citynews.ca/2026/11/15/prince-harry-salutes-wounded-ukrainian-veterans-as-role-models-on-surprise-ukraine-visit/"
+       },
+       {
+        "outlet": "CityNews",
+        "url": "https://toronto.citynews.ca/2026/11/15/prince-harry-salutes-wounded-ukrainian-veterans-as-role-models-on-surprise-ukraine-visit/"
+       },
+       {
+        "outlet": "CTV News",
+        "url": "https://www.ctvnews.ca/world/article/prince-harry-salutes-wounded-ukrainian-veterans-as-role-models-on-surprise-ukraine-visit/"
+       }
+      ]
+     },
+     {
+      "t": "Sun 5:00 p.m.",
+      "primary": false,
+      "outlet": "The Guardian",
+      "title": "Prince Harry tells Ukrainians they are ‘going to win war’ on surprise trip to Lviv",
+      "url": "https://www.theguardian.com/uk-news/2026/nov/15/prince-harry-ukraine-war-surprise-trip-invictus-games",
+      "desc": "Duke of Sussex meets wounded veterans in city and says country could one day host Invictus Games",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "The Guardian",
+        "src": "The Guardian",
+        "byline": "[{\"@type\":\"Person\",\"name\":\"Harry Taylor\",}] \"Harry Taylor\" \"Harry Taylor\" https://www.theguardian.com/profile/harry-tayl"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Sun 5:00 p.m.",
+      "primary": false,
+      "outlet": "BBC News",
+      "title": "Prince Harry praises war veterans on surprise visit to Ukraine",
+      "url": "https://www.bbc.co.uk/news/articles/c60evn992jq8o?at_medium=RSS&at_campaign=rss",
+      "desc": "He has been showing support for injured veterans in Ukraine and praising the country's resilience.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "BBC News",
+        "src": "BBC News",
+        "byline": "[{\"@type\":\"Person\",\"name\":\"Sean Coughlan\",\"sameAs\":[\"https://www.bbc.co.uk/news/topics/cx6p2795jvqt\"]}] https://www.face"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Sun 12:05 p.m.",
+      "primary": false,
+      "outlet": "Kyiv Independent",
+      "title": "Prince Harry visits Lviv to support Ukrainian veterans at Invictus Games",
+      "url": "https://kyivindependent.com/prince-harry-visits-lviv-to-support-ukrainian-veterans-at-invictus-games/",
+      "desc": "During his visit, Prince Harry attended wheelchair rugby competitions and met with Ukrainian participants, many of whom use adaptive sports as part of their recovery from war-related injuries.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Kyiv Independent",
+        "src": "Kyiv Independent",
+        "byline": "own staff: Correspondent"
+       }
+      ],
+      "copies": []
+     }
+    ],
+    "replaces_top": false,
+    "events": [],
+    "theme": "",
+    "canada": "general",
+    "canus": false,
+    "incoherent": false,
+    "popular": 0,
+    "us_election": false,
+    "fronts": 1,
+    "fronts_ca": 0,
+    "fronts_who": [
+     "The Guardian"
+    ],
+    "outled_ca": 2,
+    "judgment": "national",
+    "judgment_why": "National: affects some people; carried across the country (8 cities).",
+    "weight": 29,
+    "videos": [
+     {
+      "net": "Associated Press",
+      "url": "https://www.youtube.com/watch?v=kRfFvkmI12U",
+      "title": "Prince Harry praises wounded veterans during a surprise visit to Ukraine",
+      "img": "https://i.ytimg.com/vi/kRfFvkmI12U/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "BBC News",
+      "url": "https://www.youtube.com/watch?v=W5afqr1C0A4",
+      "title": "Prince Harry on surprise visit to Ukraine to meet injured war veterans | BBC News",
+      "img": "https://i.ytimg.com/vi/W5afqr1C0A4/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     }
+    ]
+   },
    {
     "key": "auto-c431d3c3",
     "words": [
@@ -1429,7 +1866,7 @@
      "alt": "FILE - Russia goalie Yaroslav Askarov (30) is scored on by Canada during first period IIHF World Junior Hockey Championship exhibition action in Edmonton, Thurs",
      "outlet": "Global News",
      "url": "https://globalnews.ca/news/12152003/russia-cant-compete-world-juniors-iihf/",
-     "since": "2026-11-16T07:20:02.782701+00:00"
+     "since": "2026-11-16T07:34:48.572303+00:00"
     },
     "photo_seen": [
      "https://globalnews.ca/wp-content/uploads/2026/11/CP145878350-e1794255820925.jpg?quality=65&strip=all&w=720&h=379&crop=1"
@@ -1698,11 +2135,11 @@
    {
     "key": "auto-bddd3ea1",
     "words": [
+     "stellantis",
      "three-year",
      "heartbreak",
-     "stellantis",
-     "betrayal",
      "couple’s",
+     "betrayal",
      "return"
     ],
     "score": 11,
@@ -1730,7 +2167,7 @@
      "alt": "The idled Stellantis assembly plant is pictured in Brampton, Ont., on Tuesday, Nov. 10, 2026. THE CANADIAN PRESS/Arlyn McAdorey",
      "outlet": "CTV News",
      "url": "https://www.ctvnews.ca/business/autos/article/sad-devastated-and-angry-stellantis-workers-fear-for-their-future-after-ontario-plant-sale-announcement/",
-     "since": "2026-11-16T07:29:50.107886+00:00"
+     "since": "2026-11-16T07:35:00.372564+00:00"
     },
     "photo_seen": [
      "https://www.ctvnews.ca/resizer/v2/LHZ2PKMFQRALFJTU3452A6YWME.JPG?smart=true&auth=5bf057908ce0f9cb3dc755a16a4fa92dc62b5ae5b8983a02b2ecc42ea3d46907&width=1200&height=630"
@@ -1878,18 +2315,18 @@
       "up": ""
      },
      {
-      "net": "CTV News",
-      "url": "https://www.youtube.com/watch?v=5Qm5G7jpIcc",
-      "title": "Will jobs at the Brampton Stellantis plant be saved? | Question Period for Nov. 15, 2026",
-      "img": "https://i.ytimg.com/vi/5Qm5G7jpIcc/hqdefault.jpg",
+      "net": "Global News",
+      "url": "https://www.youtube.com/watch?v=lgDCVMTyhqA",
+      "title": "Focus Ontario: Nov. 14, 2026 | Canada fights to keep Stellantis from selling Brampton plant",
+      "img": "https://i.ytimg.com/vi/lgDCVMTyhqA/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=lgDCVMTyhqA",
-      "title": "Focus Ontario: Nov. 14, 2026 | Could Canada put up more cash to stop Stellantis sale?",
-      "img": "https://i.ytimg.com/vi/lgDCVMTyhqA/hqdefault.jpg",
+      "net": "CTV News",
+      "url": "https://www.youtube.com/watch?v=5Qm5G7jpIcc",
+      "title": "Will jobs at the Brampton Stellantis plant be saved? | Question Period for Nov. 15, 2026",
+      "img": "https://i.ytimg.com/vi/5Qm5G7jpIcc/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1904,10 +2341,6 @@
    {
     "title": "Stocks decline in Asia as concerns over the Nvidia fallout persist",
     "url": "https://www.thestar.com/news/world/stocks-decline-in-asia-as-investor-concerns-over-nvidia-fallout-extend-into-another-week/article_76a66dc1-d716-52b4-9ea9-2231229559b6.html"
-   },
-   {
-    "title": "Pope Leo XIV in visit to Peruvian rainforest demands justice for slain Amazon defenders",
-    "url": "https://www.euronews.com/2026/11/16/pope-leo-xiv-in-visit-to-peruvian-rainforest-demands-justice-for-slain-amazon-defenders"
    }
   ]
  },
@@ -2098,7 +2531,7 @@
    "id": "R3KdTZi6AHc",
    "r": "ca",
    "o": "APTN News",
-   "t": "Why permanent Daylight Saving Time could be short-lived",
+   "t": "Is sticking to permanent Daylight Saving Time a mistake?",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=R3KdTZi6AHc",
@@ -2154,7 +2587,7 @@
    "id": "UvagE5F4c4Q",
    "r": "us",
    "o": "CNN",
-   "t": "How possible is a new Iran nuclear deal? | Fareed Zakaria",
+   "t": "Iran’s nuclear knowledge can endure any US strike | Fareed Zakaria",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=UvagE5F4c4Q",
@@ -2249,24 +2682,10 @@
    "geo": "unknown"
   },
   {
-   "id": "qbvizOn_4rM",
-   "r": "us",
-   "o": "Fox News",
-   "t": "FAA AFTERMATH: Aviation expert says fixing systems is a bipartisan issue",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=qbvizOn_4rM",
-   "img": "https://i.ytimg.com/vi/qbvizOn_4rM/hqdefault.jpg",
-   "up": "2026-11-16",
-   "added": "2026-11-16T05:30:26.750517+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "fmAuVmPt7e4",
    "r": "us",
    "o": "Associated Press",
-   "t": "French Navy intercepts semi-submersible carrying 146 kilograms of cocaine in the Atlantic",
+   "t": "French Navy intercepts semi-submersible carrying cocaine in the Atlantic",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=fmAuVmPt7e4",
@@ -2357,6 +2776,20 @@
    "img": "https://i.ytimg.com/vi/iZnyxvmTn0E/hqdefault.jpg",
    "up": "2026-11-16",
    "added": "2026-11-16T07:07:43.654857+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "BD9rvtVxcGg",
+   "r": "us",
+   "o": "Fox News",
+   "t": "This is ‘FRIGHTENING’: Tomi Lahren SLAMS El-Sayed for dodging Iran question",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=BD9rvtVxcGg",
+   "img": "https://i.ytimg.com/vi/BD9rvtVxcGg/hqdefault.jpg",
+   "up": "2026-11-16",
+   "added": "2026-11-16T07:31:53.512442+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2753,13 +3186,6 @@
  ],
  "eds": [
   [
-   "Toronto Star",
-   "Opinion",
-   "Mark Carney has the public's trust. Without transparency, he could lose it",
-   "https://www.thestar.com/opinion/star-columnists/carney-has-the-public-s-trust-without-transparency-he-could-lose-it/article_0c5a71f5-e49a-4f14-932b-13c88d8a0eae.html",
-   "2026-11-15T12:45:00+00:00"
-  ],
-  [
    "Toronto Sun",
    "Editorial",
    "Rules, comrade? How about: ‘Thou shalt not kill’?",
@@ -2821,6 +3247,13 @@
    "Nvidia spy scandal underlines China threat",
    "https://www.washingtonexaminer.com/opinion/editorials/4801532/nvidia-spy-scandal-underlines-china-threat/",
    "2026-11-15T10:00:00+00:00"
+  ],
+  [
+   "The Guardian",
+   "Editorial",
+   "The Guardian view on Cop31: the green transition must not be derailed | Editorial",
+   "https://www.theguardian.com/commentisfree/2026/nov/15/the-guardian-view-on-cop31-the-green-transition-must-not-be-derailed",
+   "2026-11-15T17:30:19+00:00"
   ]
  ],
  "canus": {
@@ -2946,6 +3379,22 @@
    "auto": true
   },
   {
+   "cat": "intl",
+   "media": "none",
+   "initials": "UN",
+   "name": "United Nations",
+   "role": "UN News",
+   "date": "Nov 15",
+   "platform": "Official statement",
+   "handle": "news.un.org",
+   "hed": "Nadia Murad: ‘Day by day, I took my story back’",
+   "summary": "Nobel Peace Prize laureate Nadia Murad has spent years telling the world about the atrocities committed against her and the Yazidi community by militants from the terrorist group, ISIL.",
+   "href": "https://news.un.org/feed/view/en/story/2026/11/1168801",
+   "report": false,
+   "iso": "2026-11-15T12:00:00+00:00",
+   "auto": true
+  },
+  {
    "cat": "mp",
    "media": "none",
    "initials": "GC",
@@ -2976,6 +3425,22 @@
    "report": false,
    "iso": "2026-11-14T19:45:18+00:00",
    "auto": true
+  },
+  {
+   "cat": "intl",
+   "media": "none",
+   "initials": "UN",
+   "name": "United Nations",
+   "role": "UN News",
+   "date": "Nov 14",
+   "platform": "Official statement",
+   "handle": "news.un.org",
+   "hed": "When the rains fail: Preparing for drought in Central America",
+   "summary": "Across Central America’s so-called Dry Corridor, farming families live at the mercy of the rains. In southwestern Honduras, Anastacio Martínez Gómez has spent most of his 73 years learning to work the land. But experience can only take him…",
+   "href": "https://news.un.org/feed/view/en/story/2026/11/1168776",
+   "report": false,
+   "iso": "2026-11-14T12:00:00+00:00",
+   "auto": true
   }
  ],
  "mostread": {
@@ -2998,7 +3463,7 @@
     ]
    },
    {
-    "h": "Canada exploring ‘other options’ with Europe, Asia to grow auto sector: Carney Canada exploring ‘other options’ with Europe, Asia to grow auto sector: Carney Prime Minister Mark Carney says the auto sector remains part of trade talks with the U.S., but Canada is also looking at \"other options\" in Europe and Asia. Economy 2 hours 1 min read",
+    "h": "Canada exploring ‘other options’ with Europe, Asia to grow auto sector: Carney Canada exploring ‘other options’ with Europe, Asia to grow auto sector: Carney Prime Minister Mark Carney says the auto sector remains part of trade talks with the U.S., but Canada is also looking at \"other options\" in Europe and Asia. Economy 3 hours 1 min read",
     "u": "https://globalnews.ca/news/12152341/canada-auto-sector-europe-asia/",
     "o": [
      [
@@ -3352,11 +3817,11 @@
    "t": "Mon 2:15 a.m.",
    "iso": "2026-11-16T07:15:27+00:00",
    "title": "Lula will govern Brazil for a fourth term but faces a range of challenges. Here’s what to know",
-   "summary": "RIO DE JANEIRO (AP) — Brazilian President Luiz Inácio Lula da Silva won a surprise reelection victory in late October, but he faces a multitude of challenges on issues ranging from the economy and public security to relations with the United States.",
-   "outlet": "The Canadian Press (via Winnipeg Free Press), CTV News + CP24 (CP), CBC News",
+   "summary": "RIO DE JANEIRO (AP) — Brazilian President Luiz Inácio Lula da Silva won a surprise reelection victory in late October, but he faces a multitude of challenges on issues ranging",
+   "outlet": "Toronto Star + The Canadian Press (via Winnipeg Free Press), CTV News + CP24 (CP), CBC News",
    "n": 3,
-   "url": "https://www.winnipegfreepress.com/world/2026/11/16/lula-will-govern-brazil-for-a-fourth-term-but-faces-a-range-of-challenges-heres-what-to-know",
-   "img": ""
+   "url": "https://www.thestar.com/news/world/americas/lula-will-govern-brazil-for-a-fourth-term-but-faces-a-range-of-challenges-here-s-what-to-know/article_788bb9b1-f5d1-5b97-a828-11b4cc88a6ba.html",
+   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/0/95/09523815-83cd-5b13-8b48-df2ea7c7aa53/6afaaea2ef463.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
   },
   {
    "desk": "world",
@@ -3377,7 +3842,7 @@
    "iso": "2026-11-16T06:27:22+00:00",
    "title": "Growing up abroad, Ukrainian child refugees redefine the meaning of home",
    "summary": "When six-year-old Matvii Dovhan sees blue and yellow, he proudly tells his mother: Ukraine!\" Matvii moved to Canada from the Russian-occupied city of Enerhodar in Ukraine's Zaporizhzhia Oblast when he was three. He can’t remember much from that time. His family never planned to leave. Their journey out was their first trip abroad — and a dangerous one. Still under occupation, they applied for an emergency visa to Canada, relying on Google Translate for nearly every word they saw in the docume",
-   "outlet": "Kyiv Independent, Toronto Star + CityNews Winnipeg + CityNews Vancouver + CityNews Ottawa + 6 more (AP), BBC News",
+   "outlet": "Kyiv Independent, Toronto Star + CityNews Winnipeg + CityNews Vancouver + CityNews Ottawa + 6 more (AP), The Guardian",
    "n": 3,
    "url": "https://kyivindependent.com/growing-up-abroad-ukrainian-child-refugees-redefine-meaning-of-home/",
    "img": "https://assets.kyivindependent.com/content/images/2026/06/GettyImages-1389825316_20260612-144444.jpg"
@@ -3445,26 +3910,14 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Mon 12:10 a.m.",
-   "iso": "2026-11-16T05:10:26+00:00",
-   "title": "Pope Leo XIV in visit to Peruvian rainforest demands justice for slain Amazon defenders",
-   "summary": "“The blood of these brothers cries out to God and demands justice,” Pope Leo said, to applause from a crowd many of whom wore the feathered headdresses and face markings of the region.",
-   "outlet": "Euronews + PBS NewsHour + CTV News + CP24 + 1 more (AP), Al Jazeera",
+   "t": "Mon 2:14 a.m.",
+   "iso": "2026-11-16T07:14:00+00:00",
+   "title": "A home for older residents eagerly awaits Pope Leo XIV's return to Peruvian port city",
+   "summary": "CALLAO, Peru (AP) — The walls of the home for older people run by Catholic religious sisters in the Peruvian port city of Callao were recently painted. The courtyard was",
+   "outlet": "Toronto Star + PBS NewsHour + CTV News + CP24 + 2 more (AP), Al Jazeera",
    "n": 2,
-   "url": "https://www.euronews.com/2026/11/16/pope-leo-xiv-in-visit-to-peruvian-rainforest-demands-justice-for-slain-amazon-defenders",
-   "img": "https://images.euronews.com/articles/stories/09/99/34/69/1200x675_cmsv2_17c80d32-3d84-57a6-a15f-a40594ca8f80-9993469.jpg"
-  },
-  {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Sun 11:35 p.m.",
-   "iso": "2026-11-16T04:35:12+00:00",
-   "title": "Prime Minister Carney meets with President of Senegal Bassirou Diomaye Faye",
-   "summary": "The leaders reaffirmed the importance of the partnership between Canada and Senegal, and discussed ways to strengthen economic cooperation, particularly in the areas of trade, investment, and infrastructure.",
-   "outlet": "Prime Minister of Canada, VOCM",
-   "n": 2,
-   "url": "https://www.pm.gc.ca/en/news/readouts/2026/11/16/prime-minister-carney-meets-president-senegal-bassirou-diomaye-faye",
-   "img": "https://www.pm.gc.ca/sites/pm/files/media/override_sharing/2025-11/PM_Readout_EN.png"
+   "url": "https://www.thestar.com/news/world/americas/a-home-for-older-residents-eagerly-awaits-pope-leo-xiv-s-return-to-peruvian-port-city/article_d7b124d3-7da2-5669-80ed-08d222335dc8.html",
+   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/5/1a/51a999b6-2d30-57fe-9810-be85802b0259/6afaaea132561.image.jpg?crop=1618%2C849%2C0%2C115&resize=1200%2C630&order=crop%2Cresize"
   },
   {
    "desk": "business",
@@ -3489,6 +3942,18 @@
    "n": 1,
    "url": "https://www.japantimes.co.jp/environment/2026/11/16/energy/electrify-global-economy-climate-talks/",
    "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/16/574347.jpg?v=3.1"
+  },
+  {
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Sun 11:35 p.m.",
+   "iso": "2026-11-16T04:35:12+00:00",
+   "title": "Prime Minister Carney meets with President of Senegal Bassirou Diomaye Faye",
+   "summary": "The leaders reaffirmed the importance of the partnership between Canada and Senegal, and discussed ways to strengthen economic cooperation, particularly in the areas of trade, investment, and infrastructure.",
+   "outlet": "Prime Minister of Canada",
+   "n": 1,
+   "url": "https://www.pm.gc.ca/en/news/readouts/2026/11/16/prime-minister-carney-meets-president-senegal-bassirou-diomaye-faye",
+   "img": "https://www.pm.gc.ca/sites/pm/files/media/override_sharing/2025-11/PM_Readout_EN.png"
   },
   {
    "desk": "us",
@@ -4018,7 +4483,7 @@
     "url": "https://www.youtube.com/watch?v=0TtsQz8oOv4",
     "img": "https://i.ytimg.com/vi/0TtsQz8oOv4/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "304",
+    "watching": "300",
     "rolling": true
    },
    {
@@ -4028,7 +4493,7 @@
     "url": "https://www.youtube.com/watch?v=CtBuv8LpIfA",
     "img": "https://i.ytimg.com/vi/CtBuv8LpIfA/hqdefault.jpg",
     "story": "Russell Brand's wife shares message from the jailed rapist",
-    "watching": "454",
+    "watching": "473",
     "reports": [
      {
       "outlet": "Fox News",
@@ -4161,6 +4626,23 @@
      "title": "3,000+ flights canceled after FAA’s ground stop",
      "url": "https://thehill.com/policy/transportation/6220654-us-air-traffic-cancellations-delays/",
      "tie": "FAA ground stop"
+    }
+   ],
+   "views": []
+  },
+  "auto-cf6acfd6": {
+   "ties": [
+    "pope",
+    "peru"
+   ],
+   "stories": [
+    {
+     "t": "Sat 7:34 p.m.",
+     "iso": "2026-11-15T00:34:10+00:00",
+     "outlet": "CP24",
+     "title": "Pope denounces ‘suffering and humiliation’ of African enslaved people during Peru visit",
+     "url": "https://www.cp24.com/news/world/2026/11/15/pope-denounces-suffering-and-humiliation-of-african-enslaved-people-during-peru-visit/",
+     "tie": "Pope"
     }
    ],
    "views": []
@@ -4348,8 +4830,8 @@
    "at": "2026-10-29T02:33:18.869844+00:00"
   },
   "0bLqaqPAt_k": {
-   "v": "ok",
-   "at": "2026-11-16T01:06:20.863358+00:00"
+   "v": "unplayable",
+   "at": "2026-11-16T07:31:53.512442+00:00"
   },
   "0tRhtNBdSb0": {
    "v": "unknown",
@@ -5049,14 +5531,8 @@
   }
  },
  "geo_blocked": [
-  "-NabWfv-VdA"
+  "-NabWfv-VdA",
+  "0bLqaqPAt_k"
  ],
- "noembed": [
-  "0bLqaqPAt_k",
-  "J3FV4iY8p5w",
-  "L6qtnHZxwEw",
-  "NuEr0Q_AS6U",
-  "ldElU-Q5Qyo",
-  "t_HBrWb84eY"
- ]
+ "noembed": []
 }
