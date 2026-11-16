@@ -1,24 +1,24 @@
 {
- "checked": "2026-11-15T22:58:36.622391+00:00",
- "labels": 205,
+ "checked": "2026-11-16T00:03:25.042488+00:00",
+ "labels": 213,
  "problems": [
   {
    "label": "CP24",
-   "opens": "https://www.cbc.ca/news/canada/montreal/paul-st-pierre-plamondon-mark-carney-sommet-de-la-francophonie-9.7422688",
+   "opens": "https://www.cbc.ca/player/play/video/9.7422866",
    "section": "developed",
    "link": false,
    "width": 390
   },
   {
    "label": "CTV News",
-   "opens": "https://www.cbc.ca/news/canada/montreal/paul-st-pierre-plamondon-mark-carney-sommet-de-la-francophonie-9.7422688",
+   "opens": "https://www.cbc.ca/player/play/video/9.7422866",
    "section": "developed",
    "link": false,
    "width": 390
   },
   {
    "label": "ABC News",
-   "opens": "https://www.cbc.ca/news/canada/montreal/paul-st-pierre-plamondon-mark-carney-sommet-de-la-francophonie-9.7422688",
+   "opens": "https://www.cbc.ca/player/play/video/9.7422866",
    "section": "developed",
    "link": false,
    "width": 390
@@ -27,17 +27,17 @@
  "guard": {
   "fixed": [
    {
+    "label": "The Hill",
+    "was": "(card link) thehill.com",
+    "now": "https://thehill.com/homenews/senate/6221636-cassidy-questions-trumps-fda-pick/"
+   },
+   {
     "label": "Politico",
     "was": "(card link) politico.com",
     "now": "https://www.politico.com/news/2026/11/15/tpp-trump-coalition-maga-breaks-01164574"
    }
   ],
-  "disabled": [
-   {
-    "label": "The Hill Timessubscribers",
-    "href": "https://www.hilltimes.com/2026/10/21/canada-should-continue-to-speak-loudly-and-clearly-despite-u-s-envoys-interference-claims-say-former-diplomats-and-ex-mp/522696/"
-   }
-  ],
+  "disabled": [],
   "lifted": []
  }
 }
