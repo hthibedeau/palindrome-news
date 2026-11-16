@@ -1,16 +1,26 @@
 {
- "checked": "2026-11-16T11:42:17.075232+00:00",
- "labels": 217,
+ "checked": "2026-11-16T15:32:50.540805+00:00",
+ "labels": 247,
  "problems": [],
  "guard": {
   "fixed": [
    {
-    "label": "ABC News",
-    "was": "(card link) abcnews.com",
-    "now": "https://abcnews.com/Politics/trump-heads-asia-2nd-high-stakes-meeting-chinese/story?id=138059807"
+    "label": "PBS News",
+    "was": "(card link) pbs.org",
+    "now": "https://www.pbs.org/newshour/world/at-least-17-people-killed-in-2-mass-shootings-on-the-same-day-in-south-africa"
+   },
+   {
+    "label": "NPR",
+    "was": "(card link) npr.org",
+    "now": "https://www.npr.org/2026/11/16/g-s1-153841/up-first-newsletter-faa-ground-stop-democratic-leaders-congress-trump-asia-trip"
    }
   ],
-  "disabled": [],
+  "disabled": [
+   {
+    "label": "The Hill Timessubscribers",
+    "href": "https://www.hilltimes.com/2026/10/21/canada-should-continue-to-speak-loudly-and-clearly-despite-u-s-envoys-interference-claims-say-former-diplomats-and-ex-mp/522696/"
+   }
+  ],
   "lifted": []
  }
 }
