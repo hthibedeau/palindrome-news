@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-16T03:51:28.008238+00:00",
- "checkedLabel": "Sun 10:51 p.m.",
+ "checked": "2026-11-16T04:01:27.532162+00:00",
+ "checkedLabel": "Sun 11:01 p.m.",
  "stories": [
   {
    "key": "top",
@@ -30,6 +30,15 @@
   }
  ],
  "wire": [
+  [
+   "Sun 10:54 p.m.",
+   "World",
+   "Tech failure forces hundreds of University of Melbourne students to abandon final exams mid-test",
+   "The Guardian",
+   "https://www.theguardian.com/australia-news/2026/nov/16/university-of-melbourne-students-exams-cancelled-tech-issue",
+   "2026-11-16T03:54:54+00:00",
+   1
+  ],
   [
    "Sun 10:39 p.m.",
    "Canada",
@@ -245,15 +254,6 @@
    "https://www.bbc.co.uk/news/articles/cmdx1vpprk9vo?at_medium=RSS&at_campaign=rss",
    "2026-11-16T01:47:57+00:00",
    1
-  ],
-  [
-   "Sun 8:47 p.m.",
-   "Canada",
-   "Nationwide flight grounding unlikely in Canada, says aviation expert",
-   "CBC News",
-   "https://www.cbc.ca/news/canada/faa-ground-stop-order-canada-comparison-9.7422968",
-   "2026-11-16T01:47:26.726000+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -310,10 +310,10 @@
    "theme": "Canada and the U.S."
   },
   {
-   "score": 15,
+   "score": 14,
    "title": "Europe will 'closely engage' in peace negotiations between Russia, Ukraine, von der Leyen says",
    "url": "https://kyivindependent.com/europe-will-closely-engage-in-peace-negotiations-between-russia-ukraine-von-der-leyen-says/",
-   "outlets": 15,
+   "outlets": 14,
    "why": [],
    "theme": ""
   },
@@ -371,11 +371,14 @@
   },
   {
    "score": 6,
-   "title": "One person dead after crash involving commercial motor vehicle on Hwy. 69",
-   "url": "https://www.ctvnews.ca/northern-ontario/article/one-person-dead-after-crash-involving-commercial-motor-vehicle-on-hwy-69/",
-   "outlets": 4,
-   "why": [],
-   "theme": ""
+   "title": "Canadians See Federal Budget as More Important than U.S. Midterms",
+   "url": "https://www.ipsos.com/en-ca/canadians-see-federal-budget-more-important-us-midterms",
+   "outlets": 1,
+   "why": [
+    "National Newswatch #4",
+    "National Newswatch #13"
+   ],
+   "theme": "Federal budget"
   }
  ],
  "canada": [
@@ -587,9 +590,9 @@
     "words": [
      "aviation",
      "unlikely",
-     "expert",
-     "flight",
      "ground",
+     "flight",
+     "expert",
      "faa’s"
     ],
     "score": 5,
@@ -617,12 +620,13 @@
      "alt": "People wait in line to rebook cancelled flights at Pearson International Airport in Toronto on Friday, Nov. 13, 2026. THE CANADIAN PRESS/Sandra Ezekwesili",
      "outlet": "CP24",
      "url": "https://www.cp24.com/news/canada/2026/11/15/flight-ground-stop-in-canada-like-the-faas-on-friday-unlikely-aviation-expert/",
-     "since": "2026-11-16T03:28:52.411325+00:00"
+     "since": "2026-11-16T04:03:20.279471+00:00"
     },
     "photo_seen": [
      "https://www.cp24.com/resizer/v2/IBFNFN5KCMZHNW5G3PTKOZ5RTE.jpg?smart=true&auth=db4e4b6fbc36314af03c4c21befa4e60c92ca67448f287d0efbd620407af7881&width=1200&height=630",
      "https://assets1.cbsnewsstatic.com/hub/i/r/2026/09/21/6e00213c-d3cb-4aa7-8d3d-6f9514f34261/thumbnail/1200x630/1e01513283f93307ff99342546278ffa/gettyimages-2289770513.jpg",
-     "https://i.abcnewsfe.com/a/d5b04d8d-3c3b-4ef2-a8ba-ac0c980a6c0f/airport-14-ap-gmh-261113_1794622359046_hpMain_16x9.jpg?w=1600"
+     "https://i.abcnewsfe.com/a/d5b04d8d-3c3b-4ef2-a8ba-ac0c980a6c0f/airport-14-ap-gmh-261113_1794622359046_hpMain_16x9.jpg?w=1600",
+     "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6afa0cdb-1794772187.jpg?resize=1920%2C1440"
     ],
     "photos": [
      {
@@ -632,6 +636,14 @@
       "alt": "People wait in line to rebook cancelled flights at Pearson International Airport in Toronto on Friday, Nov. 13, 2026. THE CANADIAN PRESS/Sandra Ezekwesili",
       "outlet": "CP24",
       "url": "https://www.cp24.com/news/canada/2026/11/15/flight-ground-stop-in-canada-like-the-faas-on-friday-unlikely-aviation-expert/"
+     },
+     {
+      "src": "live/img/auto-664a2c9b-b42f0a2ede.jpg",
+      "orig": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6afa0cdb-1794772187.jpg?resize=1920%2C1440",
+      "caption": "After a nationwide ground stop, US faces aviation infrastructure questions. — via Al Jazeera",
+      "alt": "After a nationwide ground stop, US faces aviation infrastructure questions",
+      "outlet": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/11/16/after-a-nationwide-ground-stop-us-faces-aviation-infrastructure-questions?traffic_source=rss"
      },
      {
       "src": "live/img/auto-664a2c9b-5c1ab99d48.jpg",
@@ -950,18 +962,26 @@
     "weight": 38,
     "videos": [
      {
-      "net": "CityNews",
-      "url": "https://www.youtube.com/watch?v=srP0tjG_SC8",
-      "title": "Travellers in Calgary impacted by nationwide flight disruption in U.S. on Friday",
-      "img": "https://i.ytimg.com/vi/srP0tjG_SC8/hqdefault.jpg",
+      "net": "CTV News",
+      "url": "https://www.youtube.com/watch?v=x0Bhee0P4jg",
+      "title": "Flights back to normal at Pearson Airport after U.S. ground stop",
+      "img": "https://i.ytimg.com/vi/x0Bhee0P4jg/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "CityNews",
-      "url": "https://www.youtube.com/watch?v=K9jLqEkS-1s",
-      "title": "Flight disruptions continue at Montreal-Trudeau after U.S. ground stop",
-      "img": "https://i.ytimg.com/vi/K9jLqEkS-1s/hqdefault.jpg",
+      "net": "CTV News",
+      "url": "https://www.youtube.com/watch?v=XkJ5JYQcOl4",
+      "title": "Operations resume at Montreal airport after FAA ground stop",
+      "img": "https://i.ytimg.com/vi/XkJ5JYQcOl4/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CTV News",
+      "url": "https://www.youtube.com/watch?v=KO0rxIGnl68",
+      "title": "What’s behind the system failure that caused the ground stop?",
+      "img": "https://i.ytimg.com/vi/KO0rxIGnl68/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
@@ -970,14 +990,6 @@
       "url": "https://www.youtube.com/watch?v=b8fUVpiXxQA",
       "title": "Trump breaks silence on nationwide ground stop",
       "img": "https://i.ytimg.com/vi/b8fUVpiXxQA/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CBS News",
-      "url": "https://www.youtube.com/watch?v=54ianqdCbWo",
-      "title": "How to get a refund after the massive FAA ground stop",
-      "img": "https://i.ytimg.com/vi/54ianqdCbWo/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1044,59 +1056,19 @@
     "canada": "canadian",
     "theme": "Federal budget",
     "top": false,
-    "fronts": 0,
-    "fronts_who": [],
+    "fronts": 1,
+    "fronts_who": [
+     "Global News"
+    ],
     "rule": "Canadian, still developing",
     "carriers": 2,
     "judgment": "national",
     "why_judged": "National: affects many people; carried beyond one city."
    },
    {
-    "title": "One person dead after crash involving commercial motor vehicle on Hwy. 69",
-    "url": "https://www.ctvnews.ca/northern-ontario/article/one-person-dead-after-crash-involving-commercial-motor-vehicle-on-hwy-69/",
-    "rank": 4,
-    "live": "",
-    "weight": 21.5,
-    "score": 6,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "canadian",
-    "theme": "",
-    "top": false,
-    "fronts": 1,
-    "fronts_who": [
-     "CP24"
-    ],
-    "rule": "Canadian, still developing",
-    "carriers": 3,
-    "judgment": "regional",
-    "why_judged": "Regional: a single incident touching a few people; carried beyond one city."
-   },
-   {
-    "title": "Prince Harry salutes wounded Ukrainian veterans as 'role models' on surprise Ukraine visit",
-    "url": "https://www.ctvnews.ca/world/article/prince-harry-salutes-wounded-ukrainian-veterans-as-role-models-on-surprise-ukraine-visit/",
-    "rank": 5,
-    "live": "",
-    "weight": 32.0,
-    "score": 15,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "general",
-    "theme": "",
-    "top": false,
-    "fronts": 1,
-    "fronts_who": [
-     "The Guardian"
-    ],
-    "rule": "From abroad, tied to Canada",
-    "carriers": 12,
-    "judgment": "national",
-    "why_judged": "National: affects some people; carried across the country (8 cities)."
-   },
-   {
     "title": "‘Betrayal’: Ontario couple’s three-year wait to return to Stellantis may end in heartbreak",
     "url": "https://www.ctvnews.ca/business/autos/article/sad-devastated-and-angry-stellantis-workers-fear-for-their-future-after-ontario-plant-sale-announcement/",
-    "rank": 6,
+    "rank": 4,
     "live": "",
     "weight": 22.0,
     "score": 6,
@@ -1115,7 +1087,7 @@
    {
     "title": "NTSB details warning whistles and emergency orders before tanker collision capsized New Orleans riverboat",
     "url": "https://www.foxnews.com/us/ntsb-details-warning-whistles-emergency-orders-before-tanker-collision-capsized-new-orleans-riverboat",
-    "rank": 7,
+    "rank": 5,
     "live": "",
     "weight": 23,
     "score": 14,
@@ -1144,6 +1116,11 @@
     "why": "not built: only 1 independent report(s) (5 sites)"
    },
    {
+    "title": "Europe will 'closely engage' in peace negotiations between Russia, Ukraine, von der Leyen says",
+    "score": 14,
+    "why": "not built: only 1 independent report(s) (10 sites)"
+   },
+   {
     "title": "Carney says Canada could turn to Chinese automakers if Trump trade talks fail",
     "score": 7,
     "why": "not built: only 2 independent report(s) (2 sites)"
@@ -1156,17 +1133,12 @@
    {
     "title": "This real-life Hallmark Christmas movie town 1 hour from Toronto is full of lakeside magic",
     "score": 7,
-    "why": "not built: only 2 independent report(s) (2 sites)"
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
     "title": "Snowbirds bid farewell to legendary jets in final flight over Calgary",
     "score": 6,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Pope Leo revisits Peruvian city where he once served as a missionary, bishop",
-    "score": 6,
-    "why": "not built: only 2 independent report(s) (3 sites)"
    },
    {
     "title": "A Quebec Primer for the December 7th By-Elections",
@@ -1176,6 +1148,16 @@
    {
     "title": "Paper maker Oji and B. League team up in circular recycling",
     "score": 5,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Nationwide flight grounding unlikely in Canada, says aviation expert",
+    "score": 4,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Canada's health-care spending tops $10,000 per person this year. Where is the money going?",
+    "score": 4,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
   ],
@@ -1187,8 +1169,8 @@
     "words": [
      "gallardo",
      "miguel",
-     "angel",
-     "felix"
+     "felix",
+     "angel"
     ],
     "score": 6,
     "outlets": 3,
@@ -1215,7 +1197,7 @@
      "alt": "TNA's Trey Miguel working his way to Canada for Destination X title match despite travel chaos",
      "outlet": "Fox News",
      "url": "https://www.foxnews.com/outkick-sports/tna-trey-miguel-working-way-canada-destination-x-title-match-despite-travel-chaos",
-     "since": "2026-11-16T03:54:36.614552+00:00"
+     "since": "2026-11-16T04:03:16.594707+00:00"
     },
     "photo_seen": [
      "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/e43a/live/4a4493e0-e169-11f1-89b7-092cfa4897c7.jpg"
@@ -1388,7 +1370,7 @@
      "alt": "Canada's Prime Minister Mark Carney and U.S. President Donald Trump speak at the G7 working luncheon, during the G7 summit in Evian-les-Bains, France, on Tuesda",
      "outlet": "Global News",
      "url": "https://globalnews.ca/news/12151989/canadians-arent-sold-on-budget-or-trade-deal-with-trump-ipsos/",
-     "since": "2026-11-16T03:54:37.906309+00:00"
+     "since": "2026-11-16T04:03:16.849805+00:00"
     },
     "photo_seen": [
      "https://globalnews.ca/wp-content/uploads/2026/11/Carney-and-Trump-e1793819265438.jpg?quality=65&strip=all&w=720&h=379&crop=1"
@@ -1466,156 +1448,214 @@
     "incoherent": false,
     "popular": 0,
     "us_election": false,
-    "fronts": 0,
-    "fronts_ca": 0,
-    "fronts_who": [],
+    "fronts": 1,
+    "fronts_ca": 1,
+    "fronts_who": [
+     "Global News"
+    ],
     "judgment": "national",
     "judgment_why": "National: affects many people; carried beyond one city.",
     "weight": 25.0
    },
    {
-    "key": "auto-1244c68b",
+    "key": "auto-bddd3ea1",
     "words": [
-     "keele",
-     "hwy",
-     "wb"
+     "heartbreak",
+     "three-year",
+     "stellantis",
+     "betrayal",
+     "couple’s",
+     "return"
     ],
     "score": 6,
-    "outlets": 3,
-    "carriers": 3,
+    "outlets": 2,
+    "carriers": 4,
     "tag": "Developing",
-    "title": "One person dead after crash involving commercial motor vehicle on Hwy. 69",
-    "url": "https://www.ctvnews.ca/northern-ontario/article/one-person-dead-after-crash-involving-commercial-motor-vehicle-on-hwy-69/",
+    "title": "‘Betrayal’: Ontario couple’s three-year wait to return to Stellantis may end in heartbreak",
+    "url": "https://www.ctvnews.ca/business/autos/article/sad-devastated-and-angry-stellantis-workers-fear-for-their-future-after-ontario-plant-sale-announcement/",
     "outlet": "CTV News",
-    "t": "Sun 9:00 p.m.",
-    "iso": "2026-11-16T02:00:49+00:00",
-    "summary": "Ontario Provincial Police continue to investigate a weekend fatal crash involving a pickup truck and a commercial motor vehicle on Highway 69 in the Cranberry area.",
+    "t": "Sun 5:00 a.m.",
+    "iso": "2026-11-15T10:00:00+00:00",
+    "summary": "News that Stellantis has agreed to sell its Brampton, Ont., assembly plant to Canadian armoured vehicle manufacturer Roshel has some workers feeling betrayed and questioning their family’s future.",
     "first": {
-     "outlet": "CTV News",
-     "url": "https://www.ctvnews.ca/ottawa/article/4-injured-after-hwy-7-crash-between-perth-carleton-place/",
-     "t": "Sun 4:56 p.m.",
-     "title": "4 injured after Hwy. 7 crash between Perth, Carleton Place",
-     "iso": "2026-11-15T21:56:15+00:00"
+     "outlet": "BNN Bloomberg",
+     "url": "https://www.bnnbloomberg.ca/tariffs/2026/11/15/sad-devastated-and-angry-stellantis-workers-fear-for-their-future-after-ontario-plant-sale-announcement/",
+     "t": "Sun 5:00 a.m.",
+     "title": "‘Betrayal’: Ontario couple’s three-year wait to return to Stellantis may end in heartbreak",
+     "iso": "2026-11-15T10:00:00+00:00"
     },
-    "newest": "2026-11-16T02:00:49+00:00",
+    "newest": "2026-11-15T18:17:05.776000+00:00",
     "photo": {
-     "src": "live/img/auto-1244c68b-70121ef4e0.jpg",
-     "orig": "https://www.ctvnews.ca/resizer/v2/C5I2VPG23FTOA7SLNABETHOXIE.jpg?smart=true&auth=1e86a676fd3550fb0ef6d9195bf8f1320cdbd69b00c101d1c905188bb330dc96&width=1200&height=630",
-     "caption": "Ontario Provincial Police continue to investigate a weekend fatal crash involving a pickup truck and a commercial motor vehicle on Highway 69 in the Cranberry area. (Ontario Provincial Police/X). — via CTV News",
-     "alt": "Ontario Provincial Police continue to investigate a weekend fatal crash involving a pickup truck and a commercial motor vehicle on Highway 69 in the Cranberry a",
+     "src": "live/img/auto-bddd3ea1-009bea6921.jpg",
+     "orig": "https://www.ctvnews.ca/resizer/v2/LHZ2PKMFQRALFJTU3452A6YWME.JPG?smart=true&auth=5bf057908ce0f9cb3dc755a16a4fa92dc62b5ae5b8983a02b2ecc42ea3d46907&width=1200&height=630",
+     "caption": "The idled Stellantis assembly plant is pictured in Brampton, Ont., on Tuesday, Nov. 10, 2026. THE CANADIAN PRESS/Arlyn McAdorey. — via CTV News",
+     "alt": "The idled Stellantis assembly plant is pictured in Brampton, Ont., on Tuesday, Nov. 10, 2026. THE CANADIAN PRESS/Arlyn McAdorey",
      "outlet": "CTV News",
-     "url": "https://www.ctvnews.ca/northern-ontario/article/one-person-dead-after-crash-involving-commercial-motor-vehicle-on-hwy-69/",
-     "since": "2026-11-16T03:54:37.114247+00:00"
+     "url": "https://www.ctvnews.ca/business/autos/article/sad-devastated-and-angry-stellantis-workers-fear-for-their-future-after-ontario-plant-sale-announcement/",
+     "since": "2026-11-16T04:03:15.436038+00:00"
     },
     "photo_seen": [
-     "https://www.ctvnews.ca/resizer/v2/C5I2VPG23FTOA7SLNABETHOXIE.jpg?smart=true&auth=1e86a676fd3550fb0ef6d9195bf8f1320cdbd69b00c101d1c905188bb330dc96&width=1200&height=630"
+     "https://www.ctvnews.ca/resizer/v2/LHZ2PKMFQRALFJTU3452A6YWME.JPG?smart=true&auth=5bf057908ce0f9cb3dc755a16a4fa92dc62b5ae5b8983a02b2ecc42ea3d46907&width=1200&height=630"
     ],
     "photos": [
      {
-      "src": "live/img/auto-1244c68b-70121ef4e0.jpg",
-      "orig": "https://www.ctvnews.ca/resizer/v2/C5I2VPG23FTOA7SLNABETHOXIE.jpg?smart=true&auth=1e86a676fd3550fb0ef6d9195bf8f1320cdbd69b00c101d1c905188bb330dc96&width=1200&height=630",
-      "caption": "Ontario Provincial Police continue to investigate a weekend fatal crash involving a pickup truck and a commercial motor vehicle on Highway 69 in the Cranberry area. (Ontario Provincial Police/X). — via CTV News",
-      "alt": "Ontario Provincial Police continue to investigate a weekend fatal crash involving a pickup truck and a commercial motor vehicle on Highway 69 in the Cranberry a",
+      "src": "live/img/auto-bddd3ea1-009bea6921.jpg",
+      "orig": "https://www.ctvnews.ca/resizer/v2/LHZ2PKMFQRALFJTU3452A6YWME.JPG?smart=true&auth=5bf057908ce0f9cb3dc755a16a4fa92dc62b5ae5b8983a02b2ecc42ea3d46907&width=1200&height=630",
+      "caption": "The idled Stellantis assembly plant is pictured in Brampton, Ont., on Tuesday, Nov. 10, 2026. THE CANADIAN PRESS/Arlyn McAdorey. — via CTV News",
+      "alt": "The idled Stellantis assembly plant is pictured in Brampton, Ont., on Tuesday, Nov. 10, 2026. THE CANADIAN PRESS/Arlyn McAdorey",
       "outlet": "CTV News",
-      "url": "https://www.ctvnews.ca/northern-ontario/article/one-person-dead-after-crash-involving-commercial-motor-vehicle-on-hwy-69/"
+      "url": "https://www.ctvnews.ca/business/autos/article/sad-devastated-and-angry-stellantis-workers-fear-for-their-future-after-ontario-plant-sale-announcement/"
      }
     ],
-    "independent": 3,
+    "independent": 2,
     "reports": [
      {
-      "t": "Sun 9:00 p.m.",
-      "iso": "2026-11-16T02:00:49+00:00",
+      "t": "Sun 1:17 p.m.",
+      "iso": "2026-11-15T18:17:05.776000+00:00",
+      "outlet": "CBC News",
+      "title": "'I'm fed up': Joly says Stellantis owes Ottawa more than $220M over Brampton plant sale",
+      "url": "https://www.cbc.ca/player/play/video/9.7422866",
+      "desc": "Ottawa is putting forward an 'aggressive package' to persuade Stellantis to stay in its Brampton, Ont., plant. Industry Minister Mélanie Joly tells CBC News chief political correspondent Rosemary Barton that she had no knowledge of the September memorandum of understanding between Stellantis and…",
+      "exclusive": true
+     },
+     {
+      "t": "Sun 5:00 a.m.",
+      "iso": "2026-11-15T10:00:00+00:00",
       "outlet": "CTV News",
-      "title": "One person dead after crash involving commercial motor vehicle on Hwy. 69",
-      "url": "https://www.ctvnews.ca/northern-ontario/article/one-person-dead-after-crash-involving-commercial-motor-vehicle-on-hwy-69/",
-      "desc": "Ontario Provincial Police continue to investigate a weekend fatal crash involving a pickup truck and a commercial motor vehicle on Highway 69 in the Cranberry area."
+      "title": "‘Betrayal’: Ontario couple’s three-year wait to return to Stellantis may end in heartbreak",
+      "url": "https://www.ctvnews.ca/business/autos/article/sad-devastated-and-angry-stellantis-workers-fear-for-their-future-after-ontario-plant-sale-announcement/",
+      "desc": "News that Stellantis has agreed to sell its Brampton, Ont., assembly plant to Canadian armoured vehicle manufacturer Roshel has some workers feeling betrayed and questioning their family’s future."
      },
      {
-      "t": "Sun 8:55 p.m.",
-      "iso": "2026-11-16T01:55:26+00:00",
+      "t": "Sun 5:00 a.m.",
+      "iso": "2026-11-15T10:00:00+00:00",
       "outlet": "CP24",
-      "title": "3 WB collector lanes of Hwy. 401 at Keele Street closed following 3-vehicle crash, 1 person taken to the hospital",
-      "url": "https://www.cp24.com/local/toronto/2026/11/16/3-wb-collector-lanes-of-hwy-401-at-keele-street-closed-following-3-vehicle-crash-1-person-taken-to-the-hospital/",
-      "desc": "One person was taken to the hospital following a collision that shut down three westbound collector lanes of Highway 401, near Keele Street, on Sunday evening."
+      "title": "‘Betrayal’: Ontario couple’s three-year wait to return to Stellantis may end in heartbreak",
+      "url": "https://www.cp24.com/news/canada/2026/11/15/sad-devastated-and-angry-stellantis-workers-fear-for-their-future-after-ontario-plant-sale-announcement/",
+      "desc": ""
      },
      {
-      "t": "Sun 8:34 p.m.",
-      "iso": "2026-11-16T01:34:24+00:00",
-      "outlet": "CityNews",
-      "title": "Person injured in three-vehicle crash on Hwy. 401",
-      "url": "https://toronto.citynews.ca/2026/11/15/person-injured-in-three-vehicle-crash-on-hwy-401/",
-      "desc": "One person was transported to a hospital following a three-vehicle collision on Highway 401 late Sunday evening."
+      "t": "Sun 5:00 a.m.",
+      "iso": "2026-11-15T10:00:00+00:00",
+      "outlet": "BNN Bloomberg",
+      "title": "‘Betrayal’: Ontario couple’s three-year wait to return to Stellantis may end in heartbreak",
+      "url": "https://www.bnnbloomberg.ca/tariffs/2026/11/15/sad-devastated-and-angry-stellantis-workers-fear-for-their-future-after-ontario-plant-sale-announcement/",
+      "desc": ""
      }
     ],
     "sources": [
      {
-      "t": "Sun 9:00 p.m.",
+      "t": "Sun 1:17 p.m.",
+      "primary": false,
+      "outlet": "CBC News",
+      "title": "'I'm fed up': Joly says Stellantis owes Ottawa more than $220M over Brampton plant sale",
+      "url": "https://www.cbc.ca/player/play/video/9.7422866",
+      "desc": "Ottawa is putting forward an 'aggressive package' to persuade Stellantis to stay in its Brampton, Ont., plant. Industry Minister Mélanie Joly tells CBC News chief political correspondent Rosemary Barton that she had no knowledge of the September memorandum of understanding between Stellantis and…",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "CBC News",
+        "src": "CBC",
+        "byline": "{\"profile\":{\"title\":\"\",\"name\":\"\",\"biography\":\"\",\"sourceId\":\"\",,\"links\":null,\"photoURL\":\"\"},\"recentContent\":{}} \"\" "
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Sun 5:00 a.m.",
       "primary": false,
       "outlet": "CTV News",
-      "title": "One person dead after crash involving commercial motor vehicle on Hwy. 69",
-      "url": "https://www.ctvnews.ca/northern-ontario/article/one-person-dead-after-crash-involving-commercial-motor-vehicle-on-hwy-69/",
-      "desc": "Ontario Provincial Police continue to investigate a weekend fatal crash involving a pickup truck and a commercial motor vehicle on Highway 69 in the Cranberry area.",
+      "title": "‘Betrayal’: Ontario couple’s three-year wait to return to Stellantis may end in heartbreak",
+      "url": "https://www.ctvnews.ca/business/autos/article/sad-devastated-and-angry-stellantis-workers-fear-for-their-future-after-ontario-plant-sale-announcement/",
+      "desc": "News that Stellantis has agreed to sell its Brampton, Ont., assembly plant to Canadian armoured vehicle manufacturer Roshel has some workers feeling betrayed and questioning their family’s future.",
       "wire": "The Canadian Press",
       "by": [
        {
         "outlet": "CTV News",
         "src": "The Canadian Press",
         "byline": "k Hauen\" \"Avery Haines\" \"James Paracy\" \"The Canadian Press\" \"The Canadian Pres"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Sun 8:55 p.m.",
-      "primary": false,
-      "outlet": "CP24",
-      "title": "3 WB collector lanes of Hwy. 401 at Keele Street closed following 3-vehicle crash, 1 person taken to the hospital",
-      "url": "https://www.cp24.com/local/toronto/2026/11/16/3-wb-collector-lanes-of-hwy-401-at-keele-street-closed-following-3-vehicle-crash-1-person-taken-to-the-hospital/",
-      "desc": "One person was taken to the hospital following a collision that shut down three westbound collector lanes of Highway 401, near Keele Street, on Sunday evening.",
-      "wire": "",
-      "by": [
+       },
        {
         "outlet": "CP24",
-        "src": "Bell",
-        "byline": "[ { \"@type\": \"Person\", \"name\": \"Joanna Lavoie\", } ] \"Joanna Lavoie\" \"Joanna Lavoie\" Joanna Lavoie By Joanna Lavoie"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Sun 8:34 p.m.",
-      "primary": false,
-      "outlet": "CityNews",
-      "title": "Person injured in three-vehicle crash on Hwy. 401",
-      "url": "https://toronto.citynews.ca/2026/11/15/person-injured-in-three-vehicle-crash-on-hwy-401/",
-      "desc": "One person was transported to a hospital following a three-vehicle collision on Highway 401 late Sunday evening.",
-      "wire": "",
-      "by": [
+        "src": "The Canadian Press",
+        "byline": "[ { \"@type\": \"Person\", \"name\": \"Kamil Karamali\", } ] \"Kamil Karamali\" \"Kamil Karamali\" \"Arlyn McAdorey\" \"\" \"\" \"\" \"\" \"\" \""
+       },
        {
-        "outlet": "CityNews",
-        "src": "Rogers",
-        "byline": "[{\"@id\":\"https://toronto.citynews.ca/#/schema/person/image/145779556c65659268f809669825b216\"}] \"denio-lourenco\" Denio Lo"
+        "outlet": "BNN Bloomberg",
+        "src": "The Canadian Press",
+        "byline": "[ { \"@type\": \"Person\", \"name\": \"Kamil Karamali\", } ] \"Kamil Karamali\" \"Kamil Karamali\" \"Arlyn McAdorey\" \"\" \"\" \"\" \"\" \"\" \""
        }
       ],
-      "copies": []
+      "copies": [
+       {
+        "outlet": "CP24",
+        "url": "https://www.cp24.com/news/canada/2026/11/15/sad-devastated-and-angry-stellantis-workers-fear-for-their-future-after-ontario-plant-sale-announcement/"
+       },
+       {
+        "outlet": "BNN Bloomberg",
+        "url": "https://www.bnnbloomberg.ca/tariffs/2026/11/15/sad-devastated-and-angry-stellantis-workers-fear-for-their-future-after-ontario-plant-sale-announcement/"
+       }
+      ]
      }
     ],
     "replaces_top": false,
     "events": [],
-    "theme": "",
+    "theme": "Canadian auto jobs",
     "canada": "canadian",
     "canus": false,
     "incoherent": false,
     "popular": 0,
     "us_election": false,
-    "fronts": 1,
-    "fronts_ca": 1,
-    "fronts_who": [
-     "CP24"
-    ],
-    "judgment": "regional",
-    "judgment_why": "Regional: a single incident touching a few people; carried beyond one city.",
-    "weight": 21.5
+    "fronts": 0,
+    "fronts_ca": 0,
+    "fronts_who": [],
+    "judgment": "national",
+    "judgment_why": "National: affects some people; carried across the country (national desks).",
+    "weight": 22.0,
+    "exclusive": {
+     "outlet": "CBC News",
+     "url": "https://www.cbc.ca/player/play/video/9.7422866",
+     "title": "'I'm fed up': Joly says Stellantis owes Ottawa more than $220M over Brampton plant sale",
+     "t": "Sun 1:17 p.m.",
+     "iso": "2026-11-15T18:17:05.776000+00:00",
+     "confirmed_by": []
+    },
+    "scoop_outlet": "CBC News",
+    "scoop_why": "Exclusive credit kept: CBC News broke this story (Sun 1:17 p.m.).",
+    "videos": [
+     {
+      "net": "CTV News",
+      "url": "https://www.youtube.com/watch?v=5Qm5G7jpIcc",
+      "title": "Will jobs at the Brampton Stellantis plant be saved? | Question Period for Nov. 15, 2026",
+      "img": "https://i.ytimg.com/vi/5Qm5G7jpIcc/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "Global News",
+      "url": "https://www.youtube.com/watch?v=lgDCVMTyhqA",
+      "title": "Focus Ontario: Nov. 14, 2026 | Could Canada put up more cash to stop Stellantis sale?",
+      "img": "https://i.ytimg.com/vi/lgDCVMTyhqA/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=fGDJkxXphFQ",
+      "title": "Sunday Scrum | Can the government stop the Stellantis sale? Also: Carney's global tour",
+      "img": "https://i.ytimg.com/vi/fGDJkxXphFQ/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=l61JzJXlUH0",
+      "title": "'I'm fed up': Joly says Stellantis owes Ottawa more than $220M over Brampton plant sale",
+      "img": "https://i.ytimg.com/vi/l61JzJXlUH0/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     }
+    ]
    }
   ],
   "passed_over": [
@@ -1658,7 +1698,7 @@
    "id": "R3KdTZi6AHc",
    "r": "ca",
    "o": "APTN News",
-   "t": "Why we could regret permanent Daylight Saving Time",
+   "t": "Is sticking to permanent Daylight Saving Time a mistake?",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=R3KdTZi6AHc",
@@ -1781,16 +1821,44 @@
    "geo": "unknown"
   },
   {
-   "id": "V-dGZ-VlZ-k",
+   "id": "vADxmMF-hQw",
    "r": "ca",
    "o": "CTV News",
-   "t": "“That’s not my Bag”: From Passenger to Prisoner | W5 investigates",
+   "t": "Grey Cup Fun",
    "rec": false,
    "d": "",
-   "u": "https://www.youtube.com/watch?v=V-dGZ-VlZ-k",
-   "img": "https://i.ytimg.com/vi/V-dGZ-VlZ-k/hqdefault.jpg",
+   "u": "https://www.youtube.com/watch?v=vADxmMF-hQw",
+   "img": "https://i.ytimg.com/vi/vADxmMF-hQw/hqdefault.jpg",
    "up": "2026-11-15",
-   "added": "2026-11-16T03:51:28.008238+00:00",
+   "added": "2026-11-16T04:01:27.532162+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "Rq_ncxnzpvc",
+   "r": "ca",
+   "o": "Global News",
+   "t": "Global National: Nov. 15, 2026 | IIHF confirms Russia won’t compete at world juniors",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=Rq_ncxnzpvc",
+   "img": "https://i.ytimg.com/vi/Rq_ncxnzpvc/hqdefault.jpg",
+   "up": "2026-11-15",
+   "added": "2026-11-16T04:01:27.532162+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "IyFOW8lRE1U",
+   "r": "ca",
+   "o": "Global News",
+   "t": "Jobs vs. geopolitics: Ireland’s dilemma over trade with Russia",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=IyFOW8lRE1U",
+   "img": "https://i.ytimg.com/vi/IyFOW8lRE1U/hqdefault.jpg",
+   "up": "2026-11-15",
+   "added": "2026-11-16T04:01:27.532162+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1854,7 +1922,7 @@
    "id": "UvagE5F4c4Q",
    "r": "us",
    "o": "CNN",
-   "t": "Is there enough trust for a new Iran nuclear deal? | Fareed Zakaria",
+   "t": "How possible is a new Iran nuclear deal? | Fareed Zakaria",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=UvagE5F4c4Q",
@@ -1903,20 +1971,6 @@
    "img": "https://i.ytimg.com/vi/RutnkfTopy8/hqdefault.jpg",
    "up": "2026-11-15",
    "added": "2026-11-16T01:06:20.863358+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "C5rporGIPqo",
-   "r": "us",
-   "o": "Associated Press",
-   "t": "APEC host city Shenzhen offers a window into China's technological ambitions",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=C5rporGIPqo",
-   "img": "https://i.ytimg.com/vi/C5rporGIPqo/hqdefault.jpg",
-   "up": "2026-11-15",
-   "added": "2026-11-16T01:49:52.049321+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2043,6 +2097,20 @@
    "img": "https://i.ytimg.com/vi/yOB7wy-Awp8/hqdefault.jpg",
    "up": "2026-11-15",
    "added": "2026-11-16T03:37:20.870542+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "A0B4p2sLXrc",
+   "r": "us",
+   "o": "Associated Press",
+   "t": "Czechs protest government plan to overhaul public media funding",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=A0B4p2sLXrc",
+   "img": "https://i.ytimg.com/vi/A0B4p2sLXrc/hqdefault.jpg",
+   "up": "2026-11-15",
+   "added": "2026-11-16T04:01:27.532162+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2439,6 +2507,13 @@
  ],
  "eds": [
   [
+   "Toronto Star",
+   "Opinion",
+   "Mark Carney has the public's trust. Without transparency, he could lose it",
+   "https://www.thestar.com/opinion/star-columnists/carney-has-the-public-s-trust-without-transparency-he-could-lose-it/article_0c5a71f5-e49a-4f14-932b-13c88d8a0eae.html",
+   "2026-11-15T12:45:00+00:00"
+  ],
+  [
    "Toronto Sun",
    "Editorial",
    "Rules, comrade? How about: ‘Thou shalt not kill’?",
@@ -2500,13 +2575,6 @@
    "Nvidia spy scandal underlines China threat",
    "https://www.washingtonexaminer.com/opinion/editorials/4801532/nvidia-spy-scandal-underlines-china-threat/",
    "2026-11-15T10:00:00+00:00"
-  ],
-  [
-   "The Guardian",
-   "Editorial",
-   "The Guardian view on Cop31: the green transition must not be derailed | Editorial",
-   "https://www.theguardian.com/commentisfree/2026/nov/15/the-guardian-view-on-cop31-the-green-transition-must-not-be-derailed",
-   "2026-11-15T17:30:19+00:00"
   ]
  ],
  "canus": {
@@ -2693,7 +2761,7 @@
     ]
    },
    {
-    "h": "Edmonton Elks win the Grey Cup, defeat Montreal Alouettes by 37-30 Edmonton Elks win the Grey Cup, defeat Montreal Alouettes by 37-30 The win follows a decade-long journey to revive the Edmonton team, which went six seasons of not making the playoffs and had a drop in attendance amid a 22-game home losing streak. Sports 51 mins 4 min read",
+    "h": "Edmonton Elks win the Grey Cup, defeat Montreal Alouettes by 37-30 Edmonton Elks win the Grey Cup, defeat Montreal Alouettes by 37-30 The win follows a decade-long journey to revive the Edmonton team, which went six seasons of not making the playoffs and had a drop in attendance amid a 22-game home losing streak. Sports 59 mins 4 min read",
     "u": "https://globalnews.ca/news/12152194/2026-grey-cup-winner/",
     "o": [
      [
@@ -2947,16 +3015,16 @@
  "bigweek": [],
  "desks": [
   {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Sun 10:01 p.m.",
-   "iso": "2026-11-16T03:01:15+00:00",
-   "title": "China confirms meeting with Trump, Putin",
+   "desk": "us",
+   "pic": "podium",
+   "t": "Sun 10:53 p.m.",
+   "iso": "2026-11-16T03:53:37+00:00",
+   "title": "Blanche says ‘incoming freshmen’ Democrats calling to probe Trump are ‘acting like prosecutors’",
    "summary": "",
-   "outlet": "Middle East Eye, The Japan Times, Toronto Star (AP), BBC News, The Hill",
+   "outlet": "The Hill, Middle East Eye, The Japan Times, Toronto Star (AP), BBC News",
    "n": 5,
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/china-confirms-meeting-trump-putin",
-   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/000_D76F6NQ.jpg"
+   "url": "https://thehill.com/homenews/administration/6221872-todd-blanche-freshmen-democrats-acting-like-prosecutors/",
+   "img": ""
   },
   {
    "desk": "world",
@@ -3043,6 +3111,18 @@
    "img": "https://www.ctvnews.ca/resizer/v2/MPQMDQTQBFGZXNF6ES5BYIF2NU.jpeg?smart=true&auth=118cc8cf013f3bd0884d462bd3163120a6510f4e0260e963bdf2f039e0ddbf9b&width=1200&height=630"
   },
   {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Sun 8:47 p.m.",
+   "iso": "2026-11-16T01:47:22+00:00",
+   "title": "Police officer seriously injured in Whitby car crash",
+   "summary": "The Durham Regional Police Service is investigating after one of its officers was injured during a car crash in Whitby on Sunday evening.",
+   "outlet": "CityNews, CTV News + CP24 (CP)",
+   "n": 2,
+   "url": "https://toronto.citynews.ca/2026/11/15/police-officer-seriously-injured-in-whitby-car-crash/",
+   "img": "https://toronto.citynews.ca/wp-content/blogs.dir/sites/10/2026/11/15/HXM3QsUW4AAMuxU-scaled-e1794793611607.jpg"
+  },
+  {
    "desk": "business",
    "pic": "chart",
    "t": "Sun 5:45 p.m.",
@@ -3061,7 +3141,7 @@
    "iso": "2026-11-16T03:22:25+00:00",
    "title": "Carney says Canada could turn to Chinese automakers if Trump trade talks fail",
    "summary": "Canadian Prime Minister Mark Carney said that Canada could turn to Chinese automakers if trade negotiations with U.S. President Donald Trump fail to preserve an integrated North American auto industry.",
-   "outlet": "CTV News + Toronto Star + CityNews + CP24 + 1 more (AP)",
+   "outlet": "CTV News + Toronto Star + CityNews + CP24 + 1 more",
    "n": 1,
    "url": "https://www.ctvnews.ca/business/autos/article/carney-says-canada-could-turn-to-chinese-automakers-if-trump-trade-talks-fail/",
    "img": "https://www.ctvnews.ca/resizer/v2/Z5WGU667GK3IYZQPWMRDKIIL3Q.jpg?smart=true&auth=a9bc20127f2084ff77b7e516479144ee88cafd2158689255c0ab14a06508cea1&width=1200&height=630"
@@ -3173,18 +3253,6 @@
    "n": 1,
    "url": "https://www.foxnews.com/outkick-sports/seahawks-receiver-tory-horton-made-one-smartest-plays-youll-ever-see-seattles-win-las-vegas",
    "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/tory-horton-touchdown-seahawks-saints.jpg"
-  },
-  {
-   "desk": "us",
-   "pic": "podium",
-   "t": "Sun 8:00 p.m.",
-   "iso": "2026-11-16T01:00:42+00:00",
-   "title": "Huge waves pummel California coast, forcing closure of popular piers",
-   "summary": "Large waves up to 50ft flooded southern California streets and prompted evacuation warning near coastal city",
-   "outlet": "The Guardian + Toronto Star (AP)",
-   "n": 1,
-   "url": "https://www.theguardian.com/us-news/2026/nov/15/california-coast-waves-piers-closed",
-   "img": "https://i.guim.co.uk/img/media/1a1e5e3fbb5f413df3cb62b0cb50831adc5a0734/597_0_2985_2388/master/2985.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=bd364f6bbb0939d13a431d6643ee23c3"
   },
   {
    "desk": "business",
@@ -3421,15 +3489,15 @@
     "Add Global News to Home Screen Close",
     "Carney awarded ‘Democracy Medal’ by global group of political strategists",
     "Beer recall hits 2 more Canadian products, bringing total to 31",
+    "Canadians aren’t sold on the budget or a trade deal with Trump: Ipsos",
     "Fifth Canadian soldier has died after fire in Wainwright, CAF says",
-    "Canada, Brazil announce $540M for rainforest protection project",
-    "I tried the Ninja Crispi microwave and air fryer—is it worth replacing two appliances?"
+    "Canada, Brazil announce $540M for rainforest protection project"
    ],
    "u": [
     "",
     "https://globalnews.ca/news/12151482/carney-awarded-democracy-medal-by-global-group-of-political-strategists/",
     "https://globalnews.ca/news/12149431/canadian-beer-recall/",
-    "",
+    "https://globalnews.ca/news/12151989/canadians-arent-sold-on-budget-or-trade-deal-with-trump-ipsos/",
     "",
     ""
    ]
@@ -3589,7 +3657,7 @@
    "ca": false,
    "h": [
     "FAA ground stop live updates: Flight cancellations continue into Monday",
-    "World News Tonight with David Muir",
+    "The Dropout: Who Is Elizabeth Holmes? IMPACT x Nightline",
     "Apple launches an AI health tool as part of a research study",
     "UPS plane, Copa Airlines flight collide on taxiway at Miami International Airport",
     "Van Hollen says Schumer's team trying to 'instill fear' to retain Senate leadership",
@@ -3690,7 +3758,7 @@
     "url": "https://www.youtube.com/watch?v=0TtsQz8oOv4",
     "img": "https://i.ytimg.com/vi/0TtsQz8oOv4/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "371",
+    "watching": "354",
     "rolling": true
    }
   ],
@@ -3713,6 +3781,10 @@
     "url": "https://www.youtube.com/watch?v=yD2DZt0lq24"
    },
    {
+    "net": "Bloomberg",
+    "url": "https://www.youtube.com/watch?v=QB5BNdBFujE"
+   },
+   {
     "net": "Sky News",
     "url": "https://www.youtube.com/watch?v=umLWFz4izTM"
    },
@@ -3731,10 +3803,6 @@
    {
     "net": "FRANCE 24 English",
     "url": "https://www.youtube.com/watch?v=HvZt-nh9sGg"
-   },
-   {
-    "net": "euronews",
-    "url": "https://www.youtube.com/watch?v=pykpO5kQJ98"
    }
   ]
  },
@@ -3799,7 +3867,7 @@
    "story": "Iran war live: Third US carrier arrives, Iran warns it could strike fi",
    "title": "Iran war live: Third US carrier arrives, Iran warns it could strike first",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/16/iran-war-live-tehran-warns-it-may-strike-first-before-another-us-attack?traffic_source=rss",
-   "updated": "2026-11-16T03:40:00+00:00",
+   "updated": "2026-11-16T04:00:00+00:00",
    "ended": false,
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/getty_6afa600bf2-1794793484.jpg?resize=1920%2C1440"
   }
@@ -3867,6 +3935,22 @@
      "url": "https://cdhowe.org/publication/the-real-immigration-story-in-budget-2026-isnt-the-targets/"
     }
    ]
+  },
+  "auto-bddd3ea1": {
+   "ties": [
+    "Canadian auto jobs"
+   ],
+   "stories": [
+    {
+     "t": "Sat 12:35 p.m.",
+     "iso": "2026-11-14T17:35:07+00:00",
+     "outlet": "CP24",
+     "title": "Joly says Stellantis could get more government money if it promised to keep Brampton plant open",
+     "url": "https://www.cp24.com/news/canada/2026/11/14/joly-says-stellantis-could-get-more-government-money-if-it-promised-to-keep-brampton-plant-open/",
+     "tie": "Canadian auto jobs"
+    }
+   ],
+   "views": []
   }
  },
  "canangle": {
@@ -4132,8 +4216,8 @@
    "at": "2026-10-29T19:14:04.423397+00:00"
   },
   "A_p82aTTRbE": {
-   "v": "unplayable",
-   "at": "2026-11-16T03:51:28.008238+00:00"
+   "v": "ok",
+   "at": "2026-11-16T04:01:27.532162+00:00"
   },
   "AjJr_wCVx70": {
    "v": "unknown",
@@ -4709,10 +4793,14 @@
   }
  },
  "geo_blocked": [
-  "-NabWfv-VdA",
-  "A_p82aTTRbE"
+  "-NabWfv-VdA"
  ],
  "noembed": [
+  "A_p82aTTRbE",
+  "J3FV4iY8p5w",
+  "L6qtnHZxwEw",
+  "NuEr0Q_AS6U",
+  "ldElU-Q5Qyo",
   "t_HBrWb84eY"
  ]
 }
