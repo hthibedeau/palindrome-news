@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-16T01:26:21.149669+00:00",
- "checkedLabel": "Sun 8:26 p.m.",
+ "checked": "2026-11-16T01:36:20.694975+00:00",
+ "checkedLabel": "Sun 8:36 p.m.",
  "stories": [
   {
    "key": "top",
@@ -30,6 +30,15 @@
   }
  ],
  "wire": [
+  [
+   "Sun 8:23 p.m.",
+   "World",
+   "The driverless taxis, robots and tech companies in APEC host city Shenzhen show China's ambitions",
+   "Toronto Star",
+   "https://www.thestar.com/news/world/asia/the-driverless-taxis-robots-and-tech-companies-in-apec-host-city-shenzhen-show-china-s-ambitions/article_f9e4c6c2-a440-5fef-9b52-aee929438818.html",
+   "2026-11-16T01:23:09+00:00",
+   1
+  ],
   [
    "Sun 8:21 p.m.",
    "Latest",
@@ -245,15 +254,6 @@
    "https://www.aljazeera.com/news/2026/11/16/zambias-copper-boom-attracts-billions-in-investment-but-who-benefits?traffic_source=rss",
    "2026-11-16T00:04:28+00:00",
    1
-  ],
-  [
-   "Sun 7:03 p.m.",
-   "World",
-   "Thousands of US flights still cancelled or delayed two days after grounding of planes nationwide",
-   "BBC News",
-   "https://www.bbc.co.uk/news/articles/cw1mdlv0k2r4o?at_medium=RSS&at_campaign=rss",
-   "2026-11-16T00:03:29+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -334,17 +334,6 @@
   },
   {
    "score": 7,
-   "title": "Can the Carney government end homelessness? (Not on its own)",
-   "url": "https://www.cbc.ca/news/politics/carney-budget-homelessness-analysis-9.7421243",
-   "outlets": 2,
-   "why": [
-    "National Newswatch #8",
-    "National Newswatch #9"
-   ],
-   "theme": ""
-  },
-  {
-   "score": 7,
    "title": "Snowbirds bid farewell to legendary jets in final flight over Calgary",
    "url": "https://www.cbc.ca/news/canada/calgary/calgary-snowbirds-jets-flight-caf-rcaf-9.7422962",
    "outlets": 2,
@@ -370,6 +359,17 @@
    "outlets": 5,
    "why": [],
    "theme": ""
+  },
+  {
+   "score": 7,
+   "title": "Canada-U.S. Inter-parliamentary Group seeks tariff relief after blue wave, but also wants to ensure ‘we’re not going to get played,’ says Sen. Yussuff",
+   "url": "https://www.hilltimes.com/2026/11/15/inter-parliamentary-group-seeks-tariff-relief-after-blue-wave-but-also-ensure-were-not-going-to-get-played-here-says-sen-yussuff/526244/",
+   "outlets": 0,
+   "why": [
+    "National Newswatch #2",
+    "National Newswatch #18"
+   ],
+   "theme": "Canada and the U.S."
   }
  ],
  "canada": [
@@ -423,7 +423,7 @@
    "region": "Ontario",
    "title": "Flight ground stop in Canada, like the FAA's on Friday, unlikely: aviation expert",
    "summary": "An aviation management expert says Canada is less likely than the United States to ground flights nationwide as that country did on Friday afternoon, calling the Canadian system a model its southern neighbours should look to.",
-   "outlet": "CP24 + CityNews (CP)",
+   "outlet": "CP24 + CityNews + CBC News (CP)",
    "n": 1,
    "url": "https://www.cp24.com/news/canada/2026/11/15/flight-ground-stop-in-canada-like-the-faas-on-friday-unlikely-aviation-expert/",
    "img": "https://www.cp24.com/resizer/v2/IBFNFN5KCMZHNW5G3PTKOZ5RTE.jpg?smart=true&auth=db4e4b6fbc36314af03c4c21befa4e60c92ca67448f287d0efbd620407af7881&width=1200&height=630"
@@ -693,7 +693,7 @@
        {
         "outlet": "CTV News",
         "src": "The Canadian Press",
-        "byline": "aines\" \"Kamil Karamali\" \"James Paracy\" \"The Canadian Press\" \"Stephen Hunt\" \"St"
+        "byline": "k Hauen\" \"Avery Haines\" \"James Paracy\" \"The Canadian Press\" \"Stephen Hunt\" \"St"
        },
        {
         "outlet": "CP24",
@@ -750,15 +750,23 @@
      {
       "net": "Global News",
       "url": "https://www.youtube.com/watch?v=lgDCVMTyhqA",
-      "title": "Focus Ontario: Nov. 14, 2026 | Canada fights to keep Stellantis from selling Brampton plant",
+      "title": "Focus Ontario: Nov. 14, 2026 | Could Canada put up more cash to stop Stellantis sale?",
       "img": "https://i.ytimg.com/vi/lgDCVMTyhqA/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CTV News",
+      "url": "https://www.youtube.com/watch?v=5Qm5G7jpIcc",
+      "title": "Will jobs at the Brampton Stellantis plant be saved? | Question Period for Nov. 15, 2026",
+      "img": "https://i.ytimg.com/vi/5Qm5G7jpIcc/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
       "net": "CBC News",
       "url": "https://www.youtube.com/watch?v=fGDJkxXphFQ",
-      "title": "Sunday Scrum | Federal government's efforts to stop Stellantis sale, Carney's global tour",
+      "title": "Sunday Scrum | Can the government stop the Stellantis sale? Also: Carney's global tour",
       "img": "https://i.ytimg.com/vi/fGDJkxXphFQ/hqdefault.jpg",
       "rec": false,
       "up": ""
@@ -770,14 +778,6 @@
       "img": "https://i.ytimg.com/vi/l61JzJXlUH0/hqdefault.jpg",
       "rec": false,
       "up": ""
-     },
-     {
-      "net": "CTV News",
-      "url": "https://www.youtube.com/watch?v=5Qm5G7jpIcc",
-      "title": "Will jobs at the Brampton Stellantis plant be saved? | Question Period for Nov. 15, 2026",
-      "img": "https://i.ytimg.com/vi/5Qm5G7jpIcc/hqdefault.jpg",
-      "rec": false,
-      "up": ""
      }
     ]
    },
@@ -786,9 +786,9 @@
     "words": [
      "aviation",
      "unlikely",
+     "expert",
      "flight",
      "ground",
-     "expert",
      "faa’s"
     ],
     "score": 17,
@@ -846,6 +846,14 @@
       "alt": "People wait in line to rebook cancelled flights at Pearson International Airport in Toronto on Friday, Nov. 13, 2026. THE CANADIAN PRESS/Sandra Ezekwesili",
       "outlet": "CTV News",
       "url": "https://www.ctvnews.ca/canada/article/flight-ground-stop-in-canada-like-the-faas-on-friday-unlikely-aviation-expert/"
+     },
+     {
+      "src": "live/img/auto-664a2c9b-0df7a3ca6e.jpg",
+      "orig": "https://i.cbc.ca/ais/56c9efc6-db5e-4911-b599-6dedbae631e8,1794777653548/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C261%2C5009%2C2817%29%3BResize%3D620",
+      "caption": "A person looks at a flight information board at LaGuardia Airport in New York on Friday after the U.S. Federal Aviation Administration grounded flights nationwide. An aviation expert says that scenario is unlikely to play out in Canada. (Ryan Murphy/The Associated Press) — via CBC",
+      "alt": "A person looks at a flight information board at LaGuardia Airport in New York on Friday after the U.S. Federal Aviation Administration grounded flights nationwi",
+      "outlet": "CBC",
+      "url": "https://www.cbc.ca/news/canada/faa-ground-stop-order-canada-comparison-9.7422968"
      }
     ],
     "independent": 10,
@@ -1198,30 +1206,9 @@
     "why_judged": "National: affects many people; carried across the country (7 cities)."
    },
    {
-    "title": "2 planes collide on the ground in Miami, only minor injuries reported",
-    "url": "https://www.pbs.org/newshour/nation/2-planes-collide-on-the-ground-in-miami-only-minor-injuries-reported",
-    "rank": 3,
-    "live": "",
-    "weight": 25.0,
-    "score": 6,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 1,
-    "fronts_who": [
-     "ABC News"
-    ],
-    "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
-    "carriers": 4,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (national desks)."
-   },
-   {
     "title": "Jensen Huang discusses comeback as Nvidia CEO with allies, FT reports",
     "url": "https://www.cp24.com/news/world/2026/11/15/jensen-huang-discusses-comeback-as-nvidia-ceo-with-allies-ft-reports/",
-    "rank": 4,
+    "rank": 3,
     "live": "",
     "weight": 34.0,
     "score": 10,
@@ -1245,7 +1232,7 @@
    {
     "title": "‘The blood of these brothers cries out’: Pope Leo demands justice for people killed protecting the Amazon",
     "url": "https://www.theguardian.com/world/2026/nov/16/pope-leo-speech-peru-justice-for-amazon-activists-environment",
-    "rank": 5,
+    "rank": 4,
     "live": "",
     "weight": 26.5,
     "score": 7,
@@ -1260,6 +1247,27 @@
     ],
     "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
     "carriers": 5,
+    "judgment": "national",
+    "why_judged": "National: affects some people; carried across the country (national desks)."
+   },
+   {
+    "title": "Australia, UK, Canada and Italy urge Israel to allow critical aid to Gaza ahead of winter",
+    "url": "https://www.theguardian.com/australia-news/2026/nov/16/australia-uk-canada-italy-urge-israel-critical-aid-gaza-winter-ntwnfb",
+    "rank": 5,
+    "live": "",
+    "weight": 27.0,
+    "score": 6,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "canadian",
+    "theme": "",
+    "top": false,
+    "fronts": 1,
+    "fronts_who": [
+     "The Guardian"
+    ],
+    "rule": "Canadian, still developing",
+    "carriers": 4,
     "judgment": "national",
     "why_judged": "National: affects some people; carried across the country (national desks)."
    },
@@ -1285,6 +1293,29 @@
     "why_judged": "Regional: a single incident touching a few people; carried across the country (8 cities)."
    },
    {
+    "title": "Blinken warns US ground invasion of Iran would be 'absolute disaster' as Tehran escalates attacks",
+    "url": "https://www.foxnews.com/world/blinken-warns-us-ground-invasion-iran-would-be-disaster-tehran-escalates-attacks",
+    "rank": 7,
+    "live": "",
+    "weight": 21.5,
+    "score": 6,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": false,
+    "fronts": 3,
+    "fronts_who": [
+     "CBS News",
+     "ABC News",
+     "The Guardian"
+    ],
+    "rule": "No Canadian tie",
+    "carriers": 3,
+    "judgment": "national",
+    "why_judged": "National: affects many people; carried by a few newsrooms."
+   },
+   {
     "title": "Europe will 'closely engage' in peace negotiations between Russia, Ukraine, von der Leyen says",
     "score": 17,
     "why": "not built: only 2 independent report(s) (11 sites)"
@@ -1297,11 +1328,6 @@
    {
     "title": "Canoe trio arrives in Vancouver, marking end of 8,000-kilometre cross-Canada journey",
     "score": 13,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Can the Carney government end homelessness? (Not on its own)",
-    "score": 7,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
@@ -1332,7 +1358,168 @@
   ],
   "moved": [],
   "top_n": 2,
-  "more": [],
+  "more": [
+   {
+    "key": "auto-75ddd7b7",
+    "words": [
+     "italy"
+    ],
+    "score": 6,
+    "outlets": 3,
+    "carriers": 4,
+    "tag": "Developing",
+    "title": "Australia, UK, Canada and Italy urge Israel to allow critical aid to Gaza ahead of winter",
+    "url": "https://www.theguardian.com/australia-news/2026/nov/16/australia-uk-canada-italy-urge-israel-critical-aid-gaza-winter-ntwnfb",
+    "outlet": "The Guardian",
+    "t": "Sun 5:28 p.m.",
+    "iso": "2026-11-15T22:28:02+00:00",
+    "summary": "Four countries call situation ‘entirely reversible’ in joint statement as flooding exacerbates humanitarian crisis",
+    "first": {
+     "outlet": "CP24",
+     "url": "https://www.cp24.com/news/world/2026/11/15/australia-uk-canada-italy-urge-israel-to-allow-rapid-gaza-aid-access/",
+     "t": "Sun 3:22 p.m.",
+     "title": "Australia, U.K., Canada, Italy urge Israel to allow ‘rapid’ Gaza aid access",
+     "iso": "2026-11-15T20:22:01+00:00"
+    },
+    "newest": "2026-11-15T22:28:02+00:00",
+    "photo": {
+     "src": "live/img/auto-75ddd7b7-c96792fe91.jpg",
+     "orig": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6afa1775392d4-1794774901.jpg?resize=1920%2C1440",
+     "caption": "Australia, Canada, Italy and the UK urge Israel to allow aid into Gaza. — via Al Jazeera",
+     "alt": "Australia, Canada, Italy and the UK urge Israel to allow aid into Gaza",
+     "outlet": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/11/15/australia-canada-italy-and-the-uk-urge-israel-to-allow-aid-into-gaza?traffic_source=rss",
+     "since": "2026-11-16T01:37:41.562987+00:00"
+    },
+    "photo_seen": [
+     "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6afa1775392d4-1794774901.jpg?resize=1920%2C1440"
+    ],
+    "photos": [
+     {
+      "src": "live/img/auto-75ddd7b7-c96792fe91.jpg",
+      "orig": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6afa1775392d4-1794774901.jpg?resize=1920%2C1440",
+      "caption": "Australia, Canada, Italy and the UK urge Israel to allow aid into Gaza. — via Al Jazeera",
+      "alt": "Australia, Canada, Italy and the UK urge Israel to allow aid into Gaza",
+      "outlet": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/11/15/australia-canada-italy-and-the-uk-urge-israel-to-allow-aid-into-gaza?traffic_source=rss"
+     }
+    ],
+    "independent": 3,
+    "reports": [
+     {
+      "t": "Sun 5:28 p.m.",
+      "iso": "2026-11-15T22:28:02+00:00",
+      "outlet": "The Guardian",
+      "title": "Australia, UK, Canada and Italy urge Israel to allow critical aid to Gaza ahead of winter",
+      "url": "https://www.theguardian.com/australia-news/2026/nov/16/australia-uk-canada-italy-urge-israel-critical-aid-gaza-winter-ntwnfb",
+      "desc": "Four countries call situation ‘entirely reversible’ in joint statement as flooding exacerbates humanitarian crisis"
+     },
+     {
+      "t": "Sun 5:06 p.m.",
+      "iso": "2026-11-15T22:06:38+00:00",
+      "outlet": "Al Jazeera",
+      "title": "Australia, Canada, Italy and the UK urge Israel to allow aid into Gaza",
+      "url": "https://www.aljazeera.com/news/2026/11/15/australia-canada-italy-and-the-uk-urge-israel-to-allow-aid-into-gaza?traffic_source=rss",
+      "desc": "The countries accuse Israel of preventing tents and other supplies from entering Gaza, despite the humanitarian crisis."
+     },
+     {
+      "t": "Sun 3:22 p.m.",
+      "iso": "2026-11-15T20:22:01+00:00",
+      "outlet": "CTV News",
+      "title": "Australia, U.K., Canada, Italy urge Israel to allow ‘rapid’ Gaza aid access",
+      "url": "https://www.ctvnews.ca/world/article/australia-uk-canada-italy-urge-israel-to-allow-rapid-gaza-aid-access/",
+      "desc": "Australia, Britain, Canada and Italy on Sunday urged Israel to allow “rapid and unimpeded” humanitarian access to Gaza, calling the situation on the ground “dire”."
+     },
+     {
+      "t": "Sun 3:22 p.m.",
+      "iso": "2026-11-15T20:22:01+00:00",
+      "outlet": "CP24",
+      "title": "Australia, U.K., Canada, Italy urge Israel to allow ‘rapid’ Gaza aid access",
+      "url": "https://www.cp24.com/news/world/2026/11/15/australia-uk-canada-italy-urge-israel-to-allow-rapid-gaza-aid-access/",
+      "desc": ""
+     }
+    ],
+    "sources": [
+     {
+      "t": "Sun 5:28 p.m.",
+      "primary": false,
+      "outlet": "The Guardian",
+      "title": "Australia, UK, Canada and Italy urge Israel to allow critical aid to Gaza ahead of winter",
+      "url": "https://www.theguardian.com/australia-news/2026/nov/16/australia-uk-canada-italy-urge-israel-critical-aid-gaza-winter-ntwnfb",
+      "desc": "Four countries call situation ‘entirely reversible’ in joint statement as flooding exacerbates humanitarian crisis",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "The Guardian",
+        "src": "The Guardian",
+        "byline": "[{\"@type\":\"Person\",\"name\":\"Krishani Dhanji\",}] \"Krishani Dhanji\" \"Krishani Dhanji\" https://www.theguardian.com/profile/k"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Sun 5:06 p.m.",
+      "primary": false,
+      "outlet": "Al Jazeera",
+      "title": "Australia, Canada, Italy and the UK urge Israel to allow aid into Gaza",
+      "url": "https://www.aljazeera.com/news/2026/11/15/australia-canada-italy-and-the-uk-urge-israel-to-allow-aid-into-gaza?traffic_source=rss",
+      "desc": "The countries accuse Israel of preventing tents and other supplies from entering Gaza, despite the humanitarian crisis.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Al Jazeera",
+        "src": "Al Jazeera",
+        "byline": "{\"@id\":\"https://www.aljazeera.com#Organization\"} Add Al Jazeera on Google By "
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Sun 3:22 p.m.",
+      "primary": false,
+      "outlet": "CTV News",
+      "title": "Australia, U.K., Canada, Italy urge Israel to allow ‘rapid’ Gaza aid access",
+      "url": "https://www.ctvnews.ca/world/article/australia-uk-canada-italy-urge-israel-to-allow-rapid-gaza-aid-access/",
+      "desc": "Australia, Britain, Canada and Italy on Sunday urged Israel to allow “rapid and unimpeded” humanitarian access to Gaza, calling the situation on the ground “dire”.",
+      "wire": "The Canadian Press",
+      "by": [
+       {
+        "outlet": "CTV News",
+        "src": "The Canadian Press",
+        "byline": "k Hauen\" \"Avery Haines\" \"James Paracy\" \"The Canadian Press\" \"Stephen Hunt\" \"St"
+       },
+       {
+        "outlet": "CP24",
+        "src": "AFP",
+        "byline": "\"@type\": \"Person\",\n      \"name\": \"AFP Staff\","
+       }
+      ],
+      "copies": [
+       {
+        "outlet": "CP24",
+        "url": "https://www.cp24.com/news/world/2026/11/15/australia-uk-canada-italy-urge-israel-to-allow-rapid-gaza-aid-access/"
+       }
+      ]
+     }
+    ],
+    "replaces_top": false,
+    "events": [],
+    "theme": "",
+    "canada": "canadian",
+    "canus": false,
+    "incoherent": false,
+    "popular": 0,
+    "us_election": false,
+    "fronts": 1,
+    "fronts_ca": 0,
+    "fronts_who": [
+     "The Guardian"
+    ],
+    "judgment": "national",
+    "judgment_why": "National: affects some people; carried across the country (national desks).",
+    "weight": 27.0
+   }
+  ],
   "passed_over": [
    {
     "title": "NTSB details warning whistles and emergency orders before tanker collision capsized New Orleans riverboat",
@@ -1347,8 +1534,8 @@
     "url": "https://www.theguardian.com/world/2026/nov/16/pope-leo-speech-peru-justice-for-amazon-activists-environment"
    },
    {
-    "title": "2 planes collide on the ground in Miami, only minor injuries reported",
-    "url": "https://www.pbs.org/newshour/nation/2-planes-collide-on-the-ground-in-miami-only-minor-injuries-reported"
+    "title": "Blinken warns US ground invasion of Iran would be 'absolute disaster' as Tehran escalates attacks",
+    "url": "https://www.foxnews.com/world/blinken-warns-us-ground-invasion-iran-would-be-disaster-tehran-escalates-attacks"
    }
   ]
  },
@@ -1413,7 +1600,7 @@
    "id": "R3KdTZi6AHc",
    "r": "ca",
    "o": "APTN News",
-   "t": "Is sticking to permanent Daylight Saving Time a mistake?",
+   "t": "Why we could regret permanent Daylight Saving Time",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=R3KdTZi6AHc",
@@ -1427,7 +1614,7 @@
    "id": "fGDJkxXphFQ",
    "r": "ca",
    "o": "CBC News",
-   "t": "Sunday Scrum | Federal government's efforts to stop Stellantis sale, Carney's global tour",
+   "t": "Sunday Scrum | Can the government stop the Stellantis sale? Also: Carney's global tour",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=fGDJkxXphFQ",
@@ -1511,7 +1698,7 @@
    "id": "IyFOW8lRE1U",
    "r": "ca",
    "o": "Global News",
-   "t": "Jobs vs. geopolitics: Ireland’s dilemma over trade with Russia",
+   "t": "Ireland hosts European summit amid scrutiny over Russian exports",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=IyFOW8lRE1U",
@@ -1525,7 +1712,7 @@
    "id": "ms3hOJGCCoo",
    "r": "ca",
    "o": "Global News",
-   "t": "US suggests Ukraine cede territory to Russia in exchange for NATO membership",
+   "t": "Land for NATO membership? Inside the controversial US push to end the Ukraine war",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=ms3hOJGCCoo",
@@ -1679,7 +1866,7 @@
    "id": "UvagE5F4c4Q",
    "r": "us",
    "o": "CNN",
-   "t": "Is there enough trust for a new Iran nuclear deal? | Fareed Zakaria",
+   "t": "Iran’s nuclear knowledge can endure any US strike | Fareed Zakaria",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=UvagE5F4c4Q",
@@ -1774,6 +1961,34 @@
    "geo": "unknown"
   },
   {
+   "id": "aOQuP9jnVBA",
+   "r": "us",
+   "o": "Fox News",
+   "t": "Former CIA chief WARNS enemies may be studying US response to FAA ground stop",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=aOQuP9jnVBA",
+   "img": "https://i.ytimg.com/vi/aOQuP9jnVBA/hqdefault.jpg",
+   "up": "2026-11-15",
+   "added": "2026-11-16T01:36:20.694975+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "tsHKayeXc6I",
+   "r": "us",
+   "o": "Fox News",
+   "t": "DHS WARNS of Iranian drone threats against Trump, admin as Middle East heats up",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=tsHKayeXc6I",
+   "img": "https://i.ytimg.com/vi/tsHKayeXc6I/hqdefault.jpg",
+   "up": "2026-11-15",
+   "added": "2026-11-16T01:36:20.694975+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
    "id": "jSN0Ku-B1S0",
    "r": "world",
    "o": "Reuters",
@@ -1847,7 +2062,7 @@
    "id": "dsxEiBPq2_w",
    "r": "world",
    "o": "DW News",
-   "t": "Estonia to close border crossings after alleged Russian sabotage plot | DW News",
+   "t": "Estonia to shut crossings after alleged Russian sabotage plot on drone maker | DW News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=dsxEiBPq2_w",
@@ -1889,7 +2104,7 @@
    "id": "hBZgg_k63T0",
    "r": "world",
    "o": "Sky News",
-   "t": "Jewish veterans honoured at London parade amid rising tide of antisemitism",
+   "t": "Remembrance parade for Jewish servicemen and women held in London",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=hBZgg_k63T0",
@@ -2274,13 +2489,6 @@
     "url": "https://globalnews.ca/news/12151109/canada-us-trade-deal-conditions/"
    },
    {
-    "t": "Sat 10:09 a.m.",
-    "iso": "2026-11-14T15:09:25+00:00",
-    "outlet": "Euronews",
-    "title": "Canada and the Philippines conclude talks on free trade deal, Mark Carney says",
-    "url": "https://www.euronews.com/2026/11/14/canada-and-the-philippines-conclude-talks-on-free-trade-deal-mark-carney-says"
-   },
-   {
     "t": "Sat 7:35 a.m.",
     "iso": "2026-11-14T12:35:33+00:00",
     "outlet": "CBC News",
@@ -2293,6 +2501,13 @@
     "outlet": "BNN Bloomberg",
     "title": "PM Carney says Canada, Philippines conclude free-trade talks, target deal by 2027",
     "url": "https://www.bnnbloomberg.ca/business/politics/2026/11/14/carney-says-canada-philippines-conclude-free-trade-talks-target-deal-by-2027/"
+   },
+   {
+    "t": "Fri 9:55 p.m.",
+    "iso": "2026-11-14T02:55:00+00:00",
+    "outlet": "Toronto Star",
+    "title": "Mark Carney inks two Asian trade deals amid stalled U.S. trade talks",
+    "url": "https://www.thestar.com/politics/federal/na-carney-trade-nov12-embargoed-until-probably-9-45-pm-est-i-will-advise/article_a47fb7c5-c134-426e-aaaa-721a87c99599.html"
    }
   ],
   "usmedia": [
@@ -2317,6 +2532,7 @@
   "lines": [
    "Good evening. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
    "Flight ground stop in Canada, like the FAA’s on Friday, unlikely: aviation expert, The Canadian Press reports.",
+   "Australia, Britain, Canada and Italy on Sunday urged Israel to allow “rapid and unimpeded” humanitarian access to Gaza, calling the situation on the ground “dire,” The Canadian Press reports.",
    "Officials say a tanker’s steering failed before it crashed into a cruise ship in New Orleans, The Associated Press reports.",
    "Company insists Alice Huang, accused of being a Chinese spy, left business in late 2025, The Canadian Press reports.",
    "Pope in Peruvian rainforest demands justice for environmental defenders killed for protecting Amazon, The Canadian Press reports.",
@@ -2453,7 +2669,7 @@
     ]
    },
    {
-    "h": "Snowbirds take final Tutor jet flight over Grey Cup: ‘It’s been an honour’ Snowbirds take final Tutor jet flight over Grey Cup: ‘It’s been an honour’ 'Thank you for sharing this historic moment with us,' Snowbird 1 pilot Major Maciej Hatta said as the troupe soared the sunset skies over Calgary's McMahon Stadium. Canada 22 mins 3 min read",
+    "h": "Snowbirds take final Tutor jet flight over Grey Cup: ‘It’s been an honour’ Snowbirds take final Tutor jet flight over Grey Cup: ‘It’s been an honour’ 'Thank you for sharing this historic moment with us,' Snowbird 1 pilot Major Maciej Hatta said as the troupe soared the sunset skies over Calgary's McMahon Stadium. Canada 34 mins 3 min read",
     "u": "https://globalnews.ca/news/12152141/snowbirds-grey-cup-tutor-final-flight/",
     "o": [
      [
@@ -2817,14 +3033,14 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Sun 7:35 p.m.",
-   "iso": "2026-11-16T00:35:21+00:00",
-   "title": "Billy Evans tells his side of \"You Can See Everything,\" Elizabeth Holmes' portrayal",
-   "summary": "In his first TV interview, Billy Evans, partner of disgraced Theranos co-founder Elizabeth Holmes, talks about his characterization in the documentary \"You Can See Everything,\" as well as threats he says have been made against his family's safety.",
-   "outlet": "CBS News, CTV News (CP)",
+   "t": "Sun 8:34 p.m.",
+   "iso": "2026-11-16T01:34:24+00:00",
+   "title": "Person injured in three-vehicle crash on Hwy. 401",
+   "summary": "One person was transported to a hospital following a three-vehicle collision on Highway 401 late Sunday evening.",
+   "outlet": "CityNews, CTV News (CP)",
    "n": 2,
-   "url": "https://www.cbsnews.com/news/billy-evans-on-you-can-see-everything-elizabeth-holmes/",
-   "img": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/15/1de2ef6b-1536-4276-a123-d3286519f337/thumbnail/1200x630/7ddd43dd382ec3a0d1b0dbca3e99b14d/billy-evans-b-1920.jpg"
+   "url": "https://toronto.citynews.ca/2026/11/15/person-injured-in-three-vehicle-crash-on-hwy-401/",
+   "img": "https://toronto.citynews.ca/wp-content/blogs.dir/sites/10/2026/11/15/692-e1794792825420.jpg"
   },
   {
    "desk": "politics",
@@ -2849,6 +3065,18 @@
    "n": 2,
    "url": "https://globalnews.ca/news/12151989/canadians-arent-sold-on-budget-or-trade-deal-with-trump-ipsos/",
    "img": "https://globalnews.ca/wp-content/uploads/2026/11/Carney-and-Trump-e1793819265438.jpg?quality=65&strip=all&w=720&h=379&crop=1"
+  },
+  {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Sun 8:33 p.m.",
+   "iso": "2026-11-16T01:33:00+00:00",
+   "title": "Japan’s biggest banks raise profit targets, announce buybacks",
+   "summary": "Cashing in on rising interest rates and robust loan demand has put banks on course for another record year.",
+   "outlet": "The Japan Times",
+   "n": 1,
+   "url": "https://www.japantimes.co.jp/business/2026/11/16/companies/japan-megabanks-profit-up/",
+   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/16/574190.jpg?v=3.1"
   },
   {
    "desk": "politics",
@@ -2965,7 +3193,7 @@
    "iso": "2026-11-15T19:31:03+00:00",
    "title": "Quebec premier says meeting with Mark Carney was ‘pleasant’",
    "summary": "Quebec Premier Paul St-Pierre Plamondon said his meeting with Prime Minister Mark Carney on Sunday at the Francophonie summit in Cambodia was pleasant and productive.",
-   "outlet": "CTV News + CP24 (CP)",
+   "outlet": "CTV News (CP)",
    "n": 1,
    "url": "https://www.ctvnews.ca/montreal/article/quebec-premier-says-meeting-with-mark-carney-was-pleasant/",
    "img": "https://www.ctvnews.ca/resizer/v2/5LGL5PN66RHXRLFL4OX3G4UCLQ.jpeg?smart=true&auth=1734ee2cd0943774a936e234efa09996c338f072b67c12941787d47c69935321&width=1200&height=630"
@@ -3247,18 +3475,18 @@
    "ca": true,
    "h": [
     "Police officer seriously hurt in Whitby crash",
-    "After years of bag tag switching, one man says he has the fix",
-    "‘Betrayal’: Ontario couple’s three-year wait to return to Stellantis may end in heartbreak",
     "Toronto Tempo win WNBA draft lottery, earn No. 1 pick and potentially chance to draft JuJu Watkins",
+    "After years of bag tag switching, one man says he has the fix",
     "‘May cause a serious or life-threatening reaction’: Soup recalled for undeclared ingredient",
+    "‘Betrayal’: Ontario couple’s three-year wait to return to Stellantis may end in heartbreak",
     "IIHF says Russia won't take part in world junior hockey tournament in Canada"
    ],
    "u": [
     "https://www.cp24.com/local/toronto/2026/11/16/police-officer-seriously-injured-in-collision-involving-a-civilian-vehicle-in-whitby/",
-    "https://www.cp24.com/news/canada/2026/11/15/what-can-canadians-do-to-protect-themselves-from-bag-tag-switching/",
-    "https://www.cp24.com/news/canada/2026/11/15/sad-devastated-and-angry-stellantis-workers-fear-for-their-future-after-ontario-plant-sale-announcement/",
     "https://www.cp24.com/news/sports/2026/11/16/toronto-tempo-win-wnba-draft-lottery-earn-no-1-pick-and-potentially-chance-to-draft-juju-watkins/",
+    "https://www.cp24.com/news/canada/2026/11/15/what-can-canadians-do-to-protect-themselves-from-bag-tag-switching/",
     "https://www.cp24.com/news/canada/2026/11/15/may-cause-a-serious-or-life-threatening-reaction-soup-recalled-for-undeclared-ingredient/",
+    "https://www.cp24.com/news/canada/2026/11/15/sad-devastated-and-angry-stellantis-workers-fear-for-their-future-after-ontario-plant-sale-announcement/",
     "https://www.cp24.com/news/sports/2026/11/15/iihf-says-russia-wont-take-part-in-world-junior-hockey-tournament-in-canada/"
    ]
   },
@@ -3427,29 +3655,10 @@
     "https://www.npr.org/2026/11/15/nx-s1-6013327/sydney-sweeney-jeans-american-eagle-garment-industry",
     "https://www.npr.org/2026/11/15/nx-s1-6041677/new-orleans-port-sues-miracle-mississippi-cruise-ship"
    ]
-  },
-  {
-   "o": "Fox News",
-   "ca": false,
-   "h": [
-    "HAPPENING NOW: AG Blanche tells Mark Levin how admin will respond to Dems after election"
-   ],
-   "u": [
-    "https://www.foxnews.com/video/5614615980001"
-   ]
   }
  ],
  "live": {
   "now": [
-   {
-    "net": "CPAC",
-    "r": "ca",
-    "title": "PM Mark Carney speaks with reporters in Phnom Penh, Cambodia",
-    "url": "https://www.youtube.com/watch?v=NY0srPFgNjk",
-    "img": "https://i.ytimg.com/vi/NY0srPFgNjk/hqdefault.jpg",
-    "story": "PM Mark Carney speaks with reporters in Phnom Penh, Cambodia",
-    "watching": "224"
-   },
    {
     "net": "LiveNOW from FOX",
     "r": "us",
@@ -3457,7 +3666,7 @@
     "url": "https://www.youtube.com/watch?v=0TtsQz8oOv4",
     "img": "https://i.ytimg.com/vi/0TtsQz8oOv4/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "383",
+    "watching": "366",
     "rolling": true
    }
   ],
@@ -3508,15 +3717,6 @@
  "pm": [],
  "blogs_auto": [
   {
-   "net": "ABC News",
-   "story": "Trump breaks silence on FAA's nationwide ground stop, demand",
-   "title": "FAA ground stop live updates: Flight cancellations continue into Monday",
-   "url": "https://abcnews.com/US/live-updates/faa-ground-stop-live-updates-hundreds-flights-canceled/?id=138125140",
-   "updated": "2026-11-15T22:27:04+00:00",
-   "ended": false,
-   "img": "https://i.abcnewsfe.com/a/d5b04d8d-3c3b-4ef2-a8ba-ac0c980a6c0f/airport-14-ap-gmh-261113_1794622359046_hpMain_16x9.jpg?w=1600"
-  },
-  {
    "net": "Al Jazeera",
    "story": "Iran war live: Tehran warns it may strike first before another US atta",
    "title": "Iran war live: Tehran warns it may strike first before another US attack",
@@ -3562,14 +3762,6 @@
      "outlet": "The Hill",
      "title": "3,000+ flights canceled after FAA’s ground stop",
      "url": "https://thehill.com/policy/transportation/6220654-us-air-traffic-cancellations-delays/",
-     "tie": "FAA ground stop"
-    },
-    {
-     "t": "Sat 1:56 a.m.",
-     "iso": "2026-11-14T06:56:20+00:00",
-     "outlet": "Euronews",
-     "title": "Airlines expect to return to full schedules by Sunday night after US nationwide ground stop, FAA says",
-     "url": "https://www.euronews.com/2026/11/14/passengers-continue-to-face-delays-and-cancellations-after-us-lifts-nationwide-ground-stop",
      "tie": "FAA ground stop"
     },
     {
@@ -3631,6 +3823,15 @@
      "outlet": "CBC News",
      "title": "Carney says Canada will only sign a U.S. trade deal that includes viable auto sector",
      "url": "https://www.cbc.ca/news/politics/canada-us-trade-deal-must-include-viable-auto-sector-9.7422076?cmp=rss",
+     "ca": true,
+     "tie": "Canada and the U.S."
+    },
+    {
+     "t": "Fri 9:55 p.m.",
+     "iso": "2026-11-14T02:55:00+00:00",
+     "outlet": "Toronto Star",
+     "title": "Mark Carney inks two Asian trade deals amid stalled U.S. trade talks",
+     "url": "https://www.thestar.com/politics/federal/na-carney-trade-nov12-embargoed-until-probably-9-45-pm-est-i-will-advise/article_a47fb7c5-c134-426e-aaaa-721a87c99599.html",
      "ca": true,
      "tie": "Canada and the U.S."
     }
