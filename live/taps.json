@@ -1,13 +1,21 @@
 {
- "checked": "2026-11-16T17:37:01.983569+00:00",
- "labels": 270,
- "problems": [],
+ "checked": "2026-11-16T19:25:22.870497+00:00",
+ "labels": 216,
+ "problems": [
+  {
+   "label": "ABC News",
+   "opens": "https://www.ctvnews.ca/montreal/article/quebecs-math-rock-duo-angine-de-poitrine-lands-4-grammy-nods/",
+   "section": "developed",
+   "link": false,
+   "width": 390
+  }
+ ],
  "guard": {
   "fixed": [
    {
-    "label": "Fox News",
-    "was": "(card link) foxnews.com",
-    "now": "https://www.foxnews.com/politics/trump-leaves-door-open-kim-jong-un-joining-high-stakes-talks-xi-putin"
+    "label": "ABC News",
+    "was": "(card link) abcnews.com",
+    "now": "https://abcnews.com/Politics/trump-heads-asia-2nd-high-stakes-meeting-chinese/story?id=138059807"
    }
   ],
   "disabled": [],
