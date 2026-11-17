@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-17T07:03:28.198295+00:00",
- "checkedLabel": "Tue 2:03 a.m.",
+ "checked": "2026-11-17T07:13:28.139860+00:00",
+ "checkedLabel": "Tue 2:13 a.m.",
  "stories": [
   {
    "key": "top",
@@ -38,6 +38,15 @@
  ],
  "wire": [
   [
+   "Tue 2:03 a.m.",
+   "World",
+   "Melbourne Cup horse So You Are found dead in a waste facility, sparking an inquiry",
+   "The Canadian Press (via Winnipeg Free Press)",
+   "https://www.winnipegfreepress.com/world/2026/11/17/melbourne-cup-horse-so-you-are-found-dead-in-a-waste-facility-sparking-an-inquiry",
+   "2026-11-17T07:03:20+00:00",
+   2
+  ],
+  [
    "Tue 2:01 a.m.",
    "Latest",
    "Illegal fireworks spark renewed calls for tighter enforcement",
@@ -58,15 +67,6 @@
   [
    "Tue 2:00 a.m.",
    "Latest",
-   "Extreme, unpredictable weather keeping farmers on edge",
-   "The Canadian Press (via Winnipeg Free Press)",
-   "https://www.winnipegfreepress.com/breakingnews/2026/11/17/extreme-unpredictable-weather-keeping-farmers-on-edge",
-   "2026-11-17T07:00:08+00:00",
-   1
-  ],
-  [
-   "Tue 2:00 a.m.",
-   "Latest",
    "Dance group giving Molly her moment",
    "The Canadian Press (via Winnipeg Free Press)",
    "https://www.winnipegfreepress.com/arts-and-life/2026/11/17/dance-group-giving-molly-her-moment",
@@ -80,15 +80,6 @@
    "CBS News",
    "https://www.cbsnews.com/news/banks-online-service-outages-jpmorgan-chase-bank-of-america-wells-fargo/",
    "2026-11-17T06:53:56+00:00",
-   1
-  ],
-  [
-   "Tue 1:39 a.m.",
-   "World",
-   "‘Disgusted by it’: body of Melbourne Cup race horse found dumped in Sydney skip bin",
-   "The Guardian",
-   "https://www.theguardian.com/australia-news/2026/nov/17/disgusted-by-it-body-of-melbourne-cup-horse-found-dumped-in-sydney-skip-bin-ntwnfb",
-   "2026-11-17T06:39:24+00:00",
    1
   ],
   [
@@ -261,6 +252,15 @@
    "https://www.thestar.com/news/world/united-states/bellagio-s-annual-holiday-flower-show-opens-with-tens-of-thousands-of-blooms/article_c29dc06a-e49d-5e7a-afb3-6176e572b4d0.html",
    "2026-11-17T05:06:42+00:00",
    2
+  ],
+  [
+   "Tue 12:03 a.m.",
+   "U.S.",
+   "Trump's pick for Navy secretary likely to face Iran war questions during confirmation hearing",
+   "Toronto Star",
+   "https://www.thestar.com/news/world/united-states/trump-s-pick-for-navy-secretary-likely-to-face-iran-war-questions-during-confirmation-hearing/article_e1c8622d-0bcb-546d-bf4f-b7d94cd099c6.html",
+   "2026-11-17T05:03:20+00:00",
+   1
   ]
  ],
  "blogs": [
@@ -292,7 +292,7 @@
  ],
  "leads": [
   {
-   "score": 27,
+   "score": 29,
    "title": "Prime Minister Mark Carney and the trust issue: it’s a thing, despite the polls",
    "url": "https://www.hilltimes.com/2026/11/16/prime-minister-mark-carney-and-the-trust-issue-its-a-thing-despite-the-polls/525861/",
    "outlets": 23,
@@ -404,10 +404,10 @@
     "key": "auto-e60a0656",
     "words": [
      "nationwide",
+     "outage",
      "system",
      "ground",
      "during",
-     "outage",
      "faa"
     ],
     "score": 11,
@@ -1213,7 +1213,7 @@
     ],
     "judgment": "national",
     "judgment_why": "National: affects some people; carried across the country (3 cities).",
-    "weight": 39,
+    "weight": 36,
     "videos": [
      {
       "net": "CBS News",
@@ -1277,7 +1277,7 @@
     "url": "https://www.cbc.ca/news/world/united-airlines-widespread-system-outage-9.7424259",
     "rank": 2,
     "live": "",
-    "weight": 39,
+    "weight": 36,
     "score": 15,
     "independent": 7,
     "most_read": 0,
@@ -1378,8 +1378,8 @@
     "url": "https://www.timescolonist.com/the-mix/willie-nelson-on-a-near-death-experience-dolly-parton-james-talarico-and-his-book-the-last-leaf-13025310",
     "rank": 7,
     "live": "",
-    "weight": 17.0,
-    "score": 8,
+    "weight": 15.0,
+    "score": 6,
     "independent": 4,
     "most_read": 0,
     "canada": "tie",
@@ -1436,7 +1436,7 @@
    },
    {
     "title": "Prime Minister Mark Carney and the trust issue: it’s a thing, despite the polls",
-    "score": 27,
+    "score": 29,
     "why": "not built: only 2 independent report(s) (5 sites)"
    },
    {
@@ -1467,6 +1467,11 @@
    {
     "title": "Ecuadorian politicians warn about legal provisions in free trade deal",
     "score": 8,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "LeBlanc to chair meeting of Canada-U.S. advisory committee Thursday",
+    "score": 6,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
   ],
@@ -1582,7 +1587,7 @@
      "alt": "Vancouver's first new community centre in 14 years is now open: Inside the $91-million Marpole Community Centre",
      "outlet": "Daily Hive",
      "url": "https://dailyhive.com/vancouver/marpole-community-centre-new-vancouver-open-photos-interior-design",
-     "since": "2026-11-17T07:05:33.309835+00:00"
+     "since": "2026-11-17T07:15:02.790081+00:00"
     },
     "photo_seen": [
      "https://images-dh-production-baselayer.dailyhive.com/uploads/2026/11/Marpole-Community-Centre-Vancouver-opening-Nov-16-2026-f7.jpg?format=auto"
@@ -1707,7 +1712,7 @@
      "james",
      "bond"
     ],
-    "score": 8,
+    "score": 6,
     "outlets": 4,
     "carriers": 4,
     "tag": "Developing",
@@ -1732,7 +1737,7 @@
      "alt": "Willie Nelson on a near-death experience, Dolly Parton, James Talarico and his book, 'The Last Leaf'",
      "outlet": "Times Colonist",
      "url": "https://www.timescolonist.com/the-mix/willie-nelson-on-a-near-death-experience-dolly-parton-james-talarico-and-his-book-the-last-leaf-13025310",
-     "since": "2026-11-17T07:05:31.793784+00:00"
+     "since": "2026-11-17T07:15:03.271648+00:00"
     },
     "photo_seen": [
      "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/aac14dd70eb1b0ddb045ba43c50db36f0233a2cf48a11821fe57c4465fd004e3.jpg;w=1200;h=800;mode=crop"
@@ -1897,21 +1902,13 @@
     ],
     "judgment": "regional",
     "judgment_why": "Regional: affects some people; carried by a few newsrooms.",
-    "weight": 17.0,
+    "weight": 15.0,
     "videos": [
      {
-      "net": "CBC News",
-      "url": "https://www.youtube.com/watch?v=YWaL96fCDOc",
-      "title": "Robert Pattinson to play James Bond in upcoming 007 film",
-      "img": "https://i.ytimg.com/vi/YWaL96fCDOc/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CP24",
-      "url": "https://www.youtube.com/watch?v=_SjCl8jHu4I",
-      "title": "Robert Pattinson is named the 7th James Bond",
-      "img": "https://i.ytimg.com/vi/_SjCl8jHu4I/hqdefault.jpg",
+      "net": "CityNews",
+      "url": "https://www.youtube.com/watch?v=q2FD26rR1Lk",
+      "title": "Robert Pattinson to play James Bond in new 007 film",
+      "img": "https://i.ytimg.com/vi/q2FD26rR1Lk/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
@@ -1920,6 +1917,14 @@
       "url": "https://www.youtube.com/watch?v=weCn5XBaUBs",
       "title": "Licence to thrill: Robert Pattinson named as new James Bond",
       "img": "https://i.ytimg.com/vi/weCn5XBaUBs/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=YWaL96fCDOc",
+      "title": "Robert Pattinson to play James Bond in upcoming 007 film",
+      "img": "https://i.ytimg.com/vi/YWaL96fCDOc/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
@@ -2038,7 +2043,7 @@
    "id": "9TIi5-MCcY4",
    "r": "ca",
    "o": "CTV News",
-   "t": "Most Canadians oppose U.S. trade deal with tariffs: Nanos poll",
+   "t": "54% of Canadians oppose trade deal with U.S. tariffs: Nanos poll",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=9TIi5-MCcY4",
@@ -2052,7 +2057,7 @@
    "id": "D1aJHjkkrQg",
    "r": "ca",
    "o": "CTV News",
-   "t": "Gasoline prices up nearly 31% year-over-year: StatCan",
+   "t": "Inflation unchanged at 3.1% as gas prices surge",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=D1aJHjkkrQg",
@@ -2290,25 +2295,11 @@
    "id": "kuHZsSLUg3s",
    "r": "us",
    "o": "CBS News",
-   "t": "Experts and reporters break down FAA meltdown, explaining what's responsible",
+   "t": "The FAA meltdown: What we know about its origins, how the Trump administration is responding",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=kuHZsSLUg3s",
    "img": "https://i.ytimg.com/vi/kuHZsSLUg3s/hqdefault.jpg",
-   "up": "2026-11-17",
-   "added": "2026-11-17T05:09:13.172430+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "8pIu2UOlZk0",
-   "r": "us",
-   "o": "Bloomberg",
-   "t": "Anthropic IPO: What Australian Investors Need to Know",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=8pIu2UOlZk0",
-   "img": "https://i.ytimg.com/vi/8pIu2UOlZk0/hqdefault.jpg",
    "up": "2026-11-17",
    "added": "2026-11-17T05:09:13.172430+00:00",
    "pic": "globe",
@@ -2374,7 +2365,7 @@
    "id": "g18h2D1B-U4",
    "r": "us",
    "o": "Associated Press",
-   "t": "Emissions of the largest US data centers exceed Denmark, study says",
+   "t": "US data centers emit more greenhouse gases in a year than entire Denmark, study finds",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=g18h2D1B-U4",
@@ -2416,13 +2407,27 @@
    "id": "k2LMTP0le0c",
    "r": "us",
    "o": "Fox News",
-   "t": "‘The homeland is SECURE’: Mullin urges Americans to 'breathe' amid tech disruptions",
+   "t": "‘The homeland is SECURE’: DHS secretary urges Americans to 'breathe' amid tech disruptions",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=k2LMTP0le0c",
    "img": "https://i.ytimg.com/vi/k2LMTP0le0c/hqdefault.jpg",
    "up": "2026-11-17",
    "added": "2026-11-17T07:03:28.198295+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "gC2MQB9FX88",
+   "r": "us",
+   "o": "Bloomberg",
+   "t": "Canada's Carney Meets China's Xi in Shenzhen",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=gC2MQB9FX88",
+   "img": "https://i.ytimg.com/vi/gC2MQB9FX88/hqdefault.jpg",
+   "up": "2026-11-17",
+   "added": "2026-11-17T07:13:28.139860+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2542,7 +2547,7 @@
    "id": "oOy6pQUwfek",
    "r": "world",
    "o": "Sky News",
-   "t": "Why copper crime in Britain has turned into a feeding frenzy",
+   "t": "The copper thieves putting Britain’s infrastructure at risk",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=oOy6pQUwfek",
@@ -2819,10 +2824,10 @@
   ],
   [
    "Toronto Sun",
-   "Column · Jonah Goldberg",
-   "JD Vance has no idea what 2028 voters actually want",
-   "https://torontosun.com/opinion/columnists/jd-vance-has-no-idea-what-2028-voters-actually-want",
-   "2026-11-16T23:24:34+00:00"
+   "Opinion",
+   "Tim Dolighan cartoon, Nov. 17, 2026",
+   "https://torontosun.com/opinion/cartoons/tim-dolighan-cartoon-nov-17-2026",
+   "2026-11-17T07:00:45+00:00"
   ],
   [
    "Ottawa Citizen",
@@ -3042,6 +3047,38 @@
    "href": "https://news.ontario.ca/en/release/1008288/ontario_introducing_legislation_to_protect_children_and_strengthen_family_services",
    "report": false,
    "iso": "2026-11-16T18:05:00+00:00",
+   "auto": true
+  },
+  {
+   "cat": "intl",
+   "media": "none",
+   "initials": "UN",
+   "name": "United Nations",
+   "role": "UN News",
+   "date": "Nov 16",
+   "platform": "Official statement",
+   "handle": "news.un.org",
+   "hed": "‘Peace begins in our hearts’: Children close Muscat forum with a message to the world",
+   "summary": "Children from across the world sent a message of peace from the Omani capital Muscat on Monday, calling for an end to hatred, respect for diversity and the protection of human rights.",
+   "href": "https://news.un.org/feed/view/en/story/2026/11/1168820",
+   "report": false,
+   "iso": "2026-11-16T12:00:00+00:00",
+   "auto": true
+  },
+  {
+   "cat": "intl",
+   "media": "none",
+   "initials": "UN",
+   "name": "United Nations",
+   "role": "UN News",
+   "date": "Nov 16",
+   "platform": "Official statement",
+   "handle": "news.un.org",
+   "hed": "‘An unfulfilled plan helps no one’: Superbug plans have doubled, but few countries are delivering",
+   "summary": "More countries are drawing up plans to tackle antimicrobial resistance (AMR), but major gaps in testing and treatment mean billions of people continue to be at risk, according to new data released by the World Health Organization (WHO) on…",
+   "href": "https://news.un.org/feed/view/en/story/2026/11/1168819",
+   "report": false,
+   "iso": "2026-11-16T12:00:00+00:00",
    "auto": true
   }
  ],
@@ -3307,12 +3344,12 @@
    "tz": "Asia/Shanghai",
    "world": true,
    "w": "Trade",
-   "label": "Prime Minister Carney meets with President of the People’s…",
-   "u": "https://www.pm.gc.ca/en/news/readouts/2026/11/17/prime-minister-carney-meets-president-peoples-republic-china-xi-jinping",
-   "title": "Prime Minister Carney meets with President of the People’s Republic of China Xi Jinping",
-   "outlet": "Prime Minister of Canada",
-   "t": "Tue 12:01 a.m.",
-   "hot": false
+   "label": "Canada and China announce new trade measures and cultural…",
+   "u": "https://www.cbc.ca/news/politics/canada-china-carney-xi-9.7424608",
+   "title": "Canada and China announce new trade measures and cultural partnerships on Carney's 1st day in Shenzhen",
+   "outlet": "CBC News",
+   "t": "Tue 2:10 a.m.",
+   "hot": true
   },
   {
    "city": "Moscow",
@@ -3348,10 +3385,22 @@
    "iso": "2026-11-17T06:37:35+00:00",
    "title": "Hundreds arrested in anti-Trump protests in Philippines amid anger over Iran war and AI pact",
    "summary": "Organisers say up to 10,000 people could join the next round of demonstrations ahead of the US president’s arrival in Manila for the Asean summit",
-   "outlet": "The Guardian, CTV News + CP24 + Toronto Star (CP), CBS News, NBC News, Al Jazeera, BBC News, The Hill",
-   "n": 7,
+   "outlet": "The Guardian, CTV News + CP24 + Toronto Star (CP), Toronto Star, CBS News, NBC News, Al Jazeera, BBC News, The Hill",
+   "n": 8,
    "url": "https://www.theguardian.com/world/2026/nov/17/hundreds-arrested-manila-anti-trump-protests-philippines",
    "img": "https://i.guim.co.uk/img/media/75ec4cfc6a89c1babfe1389687fbafa71b3713af/333_0_3333_2666/master/3333.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=98bde914dbf117c3bd0d35b745bde001"
+  },
+  {
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Tue 2:10 a.m.",
+   "iso": "2026-11-17T07:10:20.645000+00:00",
+   "title": "Canada and China announce new trade measures and cultural partnerships on Carney's 1st day in Shenzhen",
+   "summary": "Prime Minister Mark Carney announced a series of new partnerships with China on his first full day in Shenzhen, covering a series of cultural and trade measures, including an expansion of current tariff agreements, more flights between the two countries, and a series of agreements covering education and the arts.",
+   "outlet": "CBC News + Times Colonist (CP), Prime Minister of Canada, The Japan Times (AFP), Toronto Star, The Japan Times, CTV News",
+   "n": 6,
+   "url": "https://www.cbc.ca/news/politics/canada-china-carney-xi-9.7424608",
+   "img": "https://i.cbc.ca/ais/f77bfd64-a64d-4c76-911e-e7584f154163,1794885744741/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C337%2C8152%2C4585%29%3BResize%3D620"
   },
   {
    "desk": "world",
@@ -3364,18 +3413,6 @@
    "n": 6,
    "url": "https://www.thestar.com/news/world/asia/tokyo-protests-after-two-suspected-russian-aircraft-violate-japanese-airspace-in-southwestern-japan/article_f02fb922-fb26-590d-ba9e-bb5c5f9677ca.html",
    "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/4/dc/4dc22a42-a7d1-5d1e-bed7-bc5d4e659162/6afbf33ce11e7.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
-  },
-  {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Tue 12:01 a.m.",
-   "iso": "2026-11-17T05:01:26+00:00",
-   "title": "Prime Minister Carney meets with President of the People’s Republic of China Xi Jinping",
-   "summary": "Prime Minister Carney and President Xi agreed that the Canada-China strategic partnership is working successfully. It is increasing mutually beneficial two-way trade, generating new business investment between our countries, and strengthening people-to-people ties.",
-   "outlet": "Prime Minister of Canada, CBC News + Times Colonist (CP), The Japan Times (AFP), Toronto Star, The Japan Times, CTV News",
-   "n": 6,
-   "url": "https://www.pm.gc.ca/en/news/readouts/2026/11/17/prime-minister-carney-meets-president-peoples-republic-china-xi-jinping",
-   "img": "https://www.pm.gc.ca/sites/pm/files/media/override_sharing/2025-11/PM_Readout_EN.png"
   },
   {
    "desk": "world",
@@ -3419,7 +3456,7 @@
    "t": "Mon 11:34 p.m.",
    "iso": "2026-11-17T04:34:00+00:00",
    "title": "Xi and Carney call for deeper ties as Canada looks beyond US for trade",
-   "summary": "SHENZHEN, China (AP) — The leaders of China and Canada called for deeper ties Tuesday as Ottawa navigates strained relations with the United States and seeks closer cooperation with Beijing.",
+   "summary": "SHENZHEN, China (AP) — The leaders of China and Canada agreed Tuesday on additional tariff cuts as they pledged for deeper ties and Ottawa navigates strained relations with the United",
    "outlet": "Toronto Star + CP24 + BNN Bloomberg, Toronto Star, CTV News + CP24 + BNN Bloomberg, The Hill",
    "n": 4,
    "url": "https://www.thestar.com/news/world/xi-and-carney-call-for-deeper-ties-as-canada-looks-beyond-us-for-trade/article_76900edb-0ef7-5d4b-b101-d02193d4ce91.html",
@@ -3440,6 +3477,18 @@
   {
    "desk": "world",
    "pic": "globe",
+   "t": "Tue 2:03 a.m.",
+   "iso": "2026-11-17T07:03:20+00:00",
+   "title": "Melbourne Cup horse So You Are found dead in a waste facility, sparking an inquiry",
+   "summary": "SYDNEY (AP) — The dead body of Melbourne Cup horse So You Are was found in a waste facility in Sydney less than two weeks after competing in the most prestigious event in Australian horse racing.",
+   "outlet": "The Canadian Press (via Winnipeg Free Press), The Guardian, SaltWire",
+   "n": 3,
+   "url": "https://www.winnipegfreepress.com/world/2026/11/17/melbourne-cup-horse-so-you-are-found-dead-in-a-waste-facility-sparking-an-inquiry",
+   "img": ""
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
    "t": "Tue 12:00 a.m.",
    "iso": "2026-11-17T05:00:06+00:00",
    "title": "Invest in international rail services to boost UK-EU reset, Burnham urged",
@@ -3448,18 +3497,6 @@
    "n": 3,
    "url": "https://www.theguardian.com/business/2026/nov/17/invest-international-rail-services-boost-uk-eu-reset-andy-burnham",
    "img": "https://i.guim.co.uk/img/media/73462068d8df30f56420b8afb97c6004264f88e6/0_632_3531_2824/master/3531.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=b01ce38f742b02288fa7a29332856289"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Tue 12:00 a.m.",
-   "iso": "2026-11-17T05:00:06+00:00",
-   "title": "Russia, Saudi Arabia and Australia named as biggest CO2 exporters in history",
-   "summary": "Analysis of fossil fuel exports since 1850 differs from most assessments – which look at countries where CO2 is released",
-   "outlet": "The Guardian, Al Jazeera, CP24 (AP)",
-   "n": 3,
-   "url": "https://www.theguardian.com/environment/2026/nov/17/russia-saudi-arabia-and-australia-named-as-biggest-co2-exporters-in-history",
-   "img": "https://i.guim.co.uk/img/media/9ca4aa4b72bed052fa70d1c1f61c2365cff20084/1226_0_4085_3268/master/4085.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=35f86cae24777c39f1da5e1ea0416bf8"
   },
   {
    "desk": "us",
@@ -3810,8 +3847,8 @@
    "ca": true,
    "h": [
     "CBC News - Latest Canada, World, Entertainment and Business News",
-    "Canada and China announce new trade measures and cultural partnerships on 1st day in Shenzhen",
-    "Carney is looking to expand trade with the world's second-largest economy",
+    "Canada and China announce new trade measures and cultural partnerships on Carney's 1st day in Shenzhen",
+    "Carney, Xi strike trade deal offering $400M in tariff relief",
     "Carney says Canada could turn to Chinese automakers if Trump trade talks fail",
     "Conservative MP says Carney is 'selling out' Canada's auto workers to China",
     "'The world has changed,' Champagne says about possibly building Chinese EVs in Canada"
@@ -4060,7 +4097,7 @@
    "ca": false,
    "h": [
     "Live Protests await Trump in Manila as Xi greets leaders in Shenzhen",
-    "Report Xi, Trump and Putin to discuss ‘world peace’ at trilateral, says China",
+    "Philippines Hundreds arrested in anti-Trump protests amid anger over Iran war and AI pact",
     "'Not welcome here' Filipinos protest ahead of Trump's visit to Manila – video",
     "US foreign policy Trump to embark on Asia trip in apparent foreign policy push before end of term",
     "US military Third US aircraft carrier brings thousands more troops to Middle East",
@@ -4068,7 +4105,7 @@
    ],
    "u": [
     "",
-    "https://www.theguardian.com/world/2026/nov/16/xi-jinping-donald-trump-vladimir-putin-world-peace-trilateral-says-china",
+    "https://www.theguardian.com/world/2026/nov/17/hundreds-arrested-manila-anti-trump-protests-philippines",
     "https://www.theguardian.com/world/video/2026/nov/17/not-welcome-here-filipinos-protest-ahead-of-trumps-visit-to-manila-for-asean-summit-video",
     "https://www.theguardian.com/us-news/2026/nov/16/trump-asia-foreign-domestic-policy",
     "https://www.theguardian.com/us-news/2026/nov/16/aircraft-middle-east-trump-military",
@@ -4105,7 +4142,7 @@
     "url": "https://www.youtube.com/watch?v=0TtsQz8oOv4",
     "img": "https://i.ytimg.com/vi/0TtsQz8oOv4/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "271",
+    "watching": "263",
     "rolling": true
    },
    {
@@ -4115,7 +4152,7 @@
     "url": "https://www.youtube.com/watch?v=FkhdzaXwok8",
     "img": "https://i.ytimg.com/vi/FkhdzaXwok8/hqdefault.jpg",
     "story": "ASEAN leaders and international partners gather for 49th summit",
-    "watching": "89"
+    "watching": "70"
    },
    {
     "net": "Sky News",
@@ -4124,7 +4161,7 @@
     "url": "https://www.youtube.com/watch?v=LSXYemjN5wY",
     "img": "https://i.ytimg.com/vi/LSXYemjN5wY/hqdefault.jpg",
     "story": "Full coverage of Alan Milburn's NEETs review",
-    "watching": "432"
+    "watching": "500"
    },
    {
     "net": "euronews",
@@ -4133,7 +4170,7 @@
     "url": "https://www.youtube.com/watch?v=6KcUNN090EE",
     "img": "https://i.ytimg.com/vi/6KcUNN090EE/hqdefault.jpg",
     "story": "Rwanda migrant hub, Crimea bridge strike, Iran's Hormuz offer",
-    "watching": "28",
+    "watching": "41",
     "reports": [
      {
       "outlet": "The Japan Times",
@@ -4535,7 +4572,7 @@
   "https://www.youtube.com/watch?v=5MgMHX-lNn4": {
    "story": "Markwayne Mullin Testifies Before Congress Following FAA Nationwide Ground Stop",
    "us": true,
-   "specific": 4,
+   "specific": 5,
    "stories": [
     {
      "t": "Mon 4:27 p.m.",
@@ -4543,6 +4580,15 @@
      "outlet": "CTV News",
      "title": "Cleanup continues following devastating fire at Guelph mosque",
      "url": "https://www.ctvnews.ca/kitchener/guelph/article/cleanup-continues-following-devastating-fire-at-guelph-mosque/",
+     "ca": true,
+     "tie": ""
+    },
+    {
+     "t": "Mon 2:57 p.m.",
+     "iso": "2026-11-16T19:57:55+00:00",
+     "outlet": "Global News",
+     "title": "Canadian airlines ‘back on track’ 3 days after FAA ground stop",
+     "url": "https://globalnews.ca/news/12153087/canada-airlines-groundstop-operations-air-canada/",
      "ca": true,
      "tie": ""
     },
@@ -4572,15 +4618,6 @@
      "url": "https://dailyhive.com/canada/microsoft-outage-canada-class-action-lawsuit",
      "ca": false,
      "tie": ""
-    },
-    {
-     "t": "Mon 2:57 p.m.",
-     "iso": "2026-11-16T19:57:55+00:00",
-     "outlet": "Global News",
-     "title": "Canadian airlines ‘back on track’ 3 days after FAA ground stop",
-     "url": "https://globalnews.ca/news/12153087/canada-airlines-groundstop-operations-air-canada/",
-     "ca": true,
-     "tie": "Flying from Canada"
     }
    ],
    "official": [
