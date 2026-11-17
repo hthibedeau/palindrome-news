@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-17T07:13:28.139860+00:00",
- "checkedLabel": "Tue 2:13 a.m.",
+ "checked": "2026-11-17T07:23:27.567827+00:00",
+ "checkedLabel": "Tue 2:23 a.m.",
  "stories": [
   {
    "key": "top",
@@ -38,6 +38,15 @@
  ],
  "wire": [
   [
+   "Tue 2:21 a.m.",
+   "Latest",
+   "Widespread service outages at major U.S. banks appear to be over",
+   "CBS News",
+   "https://www.cbsnews.com/news/banks-online-service-outages-jpmorgan-chase-bank-of-america-wells-fargo/",
+   "2026-11-17T07:21:43+00:00",
+   1
+  ],
+  [
    "Tue 2:03 a.m.",
    "World",
    "Melbourne Cup horse So You Are found dead in a waste facility, sparking an inquiry",
@@ -71,15 +80,6 @@
    "The Canadian Press (via Winnipeg Free Press)",
    "https://www.winnipegfreepress.com/arts-and-life/2026/11/17/dance-group-giving-molly-her-moment",
    "2026-11-17T07:00:08+00:00",
-   1
-  ],
-  [
-   "Tue 1:53 a.m.",
-   "Latest",
-   "Major U.S. banks report widespread service outages",
-   "CBS News",
-   "https://www.cbsnews.com/news/banks-online-service-outages-jpmorgan-chase-bank-of-america-wells-fargo/",
-   "2026-11-17T06:53:56+00:00",
    1
   ],
   [
@@ -143,7 +143,7 @@
    "BBC News",
    "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo?at_medium=RSS&at_campaign=rss",
    "2026-11-17T05:57:38+00:00",
-   2
+   3
   ],
   [
    "Tue 12:50 a.m.",
@@ -320,7 +320,23 @@
    "score": 17,
    "title": "Hundreds arrested in anti-Trump protests in Philippines amid anger over Iran war and AI pact",
    "url": "https://www.theguardian.com/world/2026/nov/17/hundreds-arrested-manila-anti-trump-protests-philippines",
-   "outlets": 16,
+   "outlets": 15,
+   "why": [],
+   "theme": ""
+  },
+  {
+   "score": 15,
+   "title": "UK leader Andy Burnham says Brexit hasn't worked ahead of reset summit with EU",
+   "url": "https://www.euronews.com/2026/11/17/uk-leader-andy-burnham-says-brexit-hasnt-worked-ahead-of-reset-summit-with-eu",
+   "outlets": 13,
+   "why": [],
+   "theme": ""
+  },
+  {
+   "score": 15,
+   "title": "Europe Today: Rwanda migrant hub, Crimea bridge strike, Iran's Hormuz offer",
+   "url": "https://www.euronews.com/2026/11/17/europe-today-rwanda-migrant-hub-crimea-bridge-strike-irans-hormuz-offer",
+   "outlets": 13,
    "why": [],
    "theme": ""
   },
@@ -329,14 +345,6 @@
    "title": "Engine failure forces Sen Ashley Moody’s American Airlines flight to divert for emergency landing",
    "url": "https://www.foxnews.com/politics/engine-failure-forces-sen-ashley-moodys-american-airlines-flight-divert-emergency-landing",
    "outlets": 21,
-   "why": [],
-   "theme": ""
-  },
-  {
-   "score": 12,
-   "title": "Invest in international rail services to boost UK-EU reset, Burnham urged",
-   "url": "https://www.theguardian.com/business/2026/nov/17/invest-international-rail-services-boost-uk-eu-reset-andy-burnham",
-   "outlets": 12,
    "why": [],
    "theme": ""
   },
@@ -355,14 +363,6 @@
    "outlets": 11,
    "why": [],
    "theme": "FAA ground stop"
-  },
-  {
-   "score": 10,
-   "title": "Tokyo protests after two suspected Russian aircraft violate Japanese airspace in southwestern Japan",
-   "url": "https://www.thestar.com/news/world/asia/tokyo-protests-after-two-suspected-russian-aircraft-violate-japanese-airspace-in-southwestern-japan/article_f02fb922-fb26-590d-ba9e-bb5c5f9677ca.html",
-   "outlets": 8,
-   "why": [],
-   "theme": ""
   },
   {
    "score": 10,
@@ -404,15 +404,15 @@
     "key": "auto-e60a0656",
     "words": [
      "nationwide",
-     "outage",
      "system",
+     "outage",
      "ground",
      "during",
      "faa"
     ],
     "score": 11,
-    "outlets": 11,
-    "carriers": 12,
+    "outlets": 12,
+    "carriers": 13,
     "tag": "Developing",
     "title": "Trump clipped Biden's payouts for stranded travelers. It may not have helped during the ground stop",
     "url": "https://www.thestar.com/news/world/united-states/trump-clipped-biden-s-payouts-for-stranded-travelers-it-may-not-have-helped-during-the-ground-stop/article_c7dd9008-6bbb-5b60-af25-d81f6e22e2e4.html",
@@ -476,7 +476,7 @@
       "url": "https://www.nbcnews.com/news/us-news/women-stranded-faa-ground-stop-buy-ford-bronco-27-hour-road-trip-rcna609629"
      }
     ],
-    "independent": 11,
+    "independent": 12,
     "reports": [
      {
       "t": "Tue 12:50 a.m.",
@@ -572,6 +572,14 @@
       "outlet": "BBC News",
       "title": "US flights returning to normal levels after weekend of disruption",
       "url": "https://www.bbc.co.uk/news/articles/cw1mdlv0k2r4o?at_medium=RSS&at_campaign=rss",
+      "desc": ""
+     },
+     {
+      "t": "Mon 7:11 a.m.",
+      "iso": "2026-11-16T12:11:16+00:00",
+      "outlet": "Euronews",
+      "title": "US airports slowly return to normal after three days of disruption caused by take-off ban",
+      "url": "https://www.euronews.com/2026/11/16/us-airports-slowly-return-to-normal-after-three-days-of-disruption-caused-by-take-off-ban",
       "desc": ""
      }
     ],
@@ -772,6 +780,23 @@
        }
       ],
       "copies": []
+     },
+     {
+      "t": "Mon 7:11 a.m.",
+      "primary": false,
+      "outlet": "Euronews",
+      "title": "US airports slowly return to normal after three days of disruption caused by take-off ban",
+      "url": "https://www.euronews.com/2026/11/16/us-airports-slowly-return-to-normal-after-three-days-of-disruption-caused-by-take-off-ban",
+      "desc": "",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Euronews",
+        "src": "Euronews",
+        "byline": ""
+       }
+      ],
+      "copies": []
      }
     ],
     "replaces_top": false,
@@ -793,21 +818,13 @@
     ],
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (national desks).",
-    "weight": 42.0,
+    "weight": 42,
     "videos": [
      {
       "net": "Global News",
       "url": "https://www.youtube.com/watch?v=mzhX7mwi3PI",
       "title": "Battle brewing in US over air traffic control system funding after FAA ground stop",
       "img": "https://i.ytimg.com/vi/mzhX7mwi3PI/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CBS News",
-      "url": "https://www.youtube.com/watch?v=INkloIC1aaU",
-      "title": "Explaining the FAA's modernization efforts amid Friday's nationwide ground stop",
-      "img": "https://i.ytimg.com/vi/INkloIC1aaU/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
@@ -824,6 +841,14 @@
       "url": "https://www.youtube.com/watch?v=kRbpGNpokXM",
       "title": "What we know about the cause of Friday's nationwide ground stop",
       "img": "https://i.ytimg.com/vi/kRbpGNpokXM/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CBS News",
+      "url": "https://www.youtube.com/watch?v=UpkNZc-tR1E",
+      "title": "Trump says he doesn't take any responsibility for nationwide ground stop",
+      "img": "https://i.ytimg.com/vi/UpkNZc-tR1E/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1232,18 +1257,18 @@
       "up": ""
      },
      {
-      "net": "CNN",
-      "url": "https://www.youtube.com/watch?v=kQhhmBWl-Ao",
-      "title": "United Airlines reports ‘widespread system outage’",
-      "img": "https://i.ytimg.com/vi/kQhhmBWl-Ao/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
       "net": "Fox News",
       "url": "https://www.youtube.com/watch?v=nnesLN5PgHw",
       "title": "SYSTEM FAIL: Outages with bank systems, Microsoft and United Airlines fuel new fears",
       "img": "https://i.ytimg.com/vi/nnesLN5PgHw/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CNN",
+      "url": "https://www.youtube.com/watch?v=kQhhmBWl-Ao",
+      "title": "United Airlines reports ‘widespread system outage’",
+      "img": "https://i.ytimg.com/vi/kQhhmBWl-Ao/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1256,9 +1281,9 @@
     "url": "https://www.thestar.com/news/world/united-states/trump-clipped-biden-s-payouts-for-stranded-travelers-it-may-not-have-helped-during-the-ground-stop/article_c7dd9008-6bbb-5b60-af25-d81f6e22e2e4.html",
     "rank": 1,
     "live": "",
-    "weight": 42.0,
+    "weight": 42,
     "score": 11,
-    "independent": 11,
+    "independent": 12,
     "most_read": 4,
     "canada": "tie",
     "theme": "FAA ground stop",
@@ -1268,7 +1293,7 @@
      "ABC News"
     ],
     "rule": "From abroad, tied to Canada",
-    "carriers": 12,
+    "carriers": 13,
     "judgment": "national",
     "why_judged": "National: affects many people; carried across the country (national desks)."
    },
@@ -1315,30 +1340,9 @@
     "why_judged": "National: affects some people; carried across the country (national desks)."
    },
    {
-    "title": "Tokyo protests after two suspected Russian aircraft violate Japanese airspace in southwestern Japan",
-    "url": "https://www.thestar.com/news/world/asia/tokyo-protests-after-two-suspected-russian-aircraft-violate-japanese-airspace-in-southwestern-japan/article_f02fb922-fb26-590d-ba9e-bb5c5f9677ca.html",
-    "rank": 4,
-    "live": "",
-    "weight": 23.5,
-    "score": 10,
-    "independent": 5,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 1,
-    "fronts_who": [
-     "BBC News"
-    ],
-    "rule": "No Canadian tie",
-    "carriers": 5,
-    "judgment": "regional",
-    "why_judged": "Regional: affects some people; carried beyond one city."
-   },
-   {
     "title": "LeBlanc to chair meeting of Canada-U.S. advisory committee Thursday",
     "url": "https://www.ctvnews.ca/politics/article/leblanc-to-chair-meeting-of-canada-us-advisory-committee-thursday/",
-    "rank": 5,
+    "rank": 4,
     "live": "",
     "weight": 5.5,
     "score": 0,
@@ -1357,7 +1361,7 @@
    {
     "title": "Vancouver's first new community centre in 14 years is now open: Inside the $91-million Marpole Community Centre",
     "url": "https://dailyhive.com/vancouver/marpole-community-centre-new-vancouver-open-photos-interior-design",
-    "rank": 6,
+    "rank": 5,
     "live": "",
     "weight": 22.5,
     "score": 7,
@@ -1376,7 +1380,7 @@
    {
     "title": "Willie Nelson on a near-death experience, Dolly Parton, James Talarico and his book, 'The Last Leaf'",
     "url": "https://www.timescolonist.com/the-mix/willie-nelson-on-a-near-death-experience-dolly-parton-james-talarico-and-his-book-the-last-leaf-13025310",
-    "rank": 7,
+    "rank": 6,
     "live": "",
     "weight": 15.0,
     "score": 6,
@@ -1385,10 +1389,9 @@
     "canada": "tie",
     "theme": "",
     "top": false,
-    "fronts": 3,
+    "fronts": 2,
     "fronts_who": [
      "NBC News",
-     "BBC News",
      "NPR"
     ],
     "rule": "From abroad, tied to Canada",
@@ -1399,7 +1402,7 @@
    {
     "title": "Big laughs are coming to Vancouver this December with 2 shows from Indig-E girl Comedy Society",
     "url": "https://dailyhive.com/vancouver/indige-girl-comedy-society-holiday-celebration",
-    "rank": 8,
+    "rank": 7,
     "live": "",
     "weight": 15.5,
     "score": 7,
@@ -1414,6 +1417,27 @@
     "carriers": 3,
     "judgment": "regional",
     "why_judged": "Regional: affects some people; carried only by Newfoundland-Labrador desks."
+   },
+   {
+    "title": "Two major Kyiv bridges hit in Russian attack, mayor says",
+    "url": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo?at_medium=RSS&at_campaign=rss",
+    "rank": 8,
+    "live": "",
+    "weight": 22.5,
+    "score": 15,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": false,
+    "fronts": 1,
+    "fronts_who": [
+     "BBC News"
+    ],
+    "rule": "No Canadian tie",
+    "carriers": 3,
+    "judgment": "regional",
+    "why_judged": "Regional: affects some people; carried by a few newsrooms."
    },
    {
     "title": "Survivor of fatal boat crash near Squamish speaks out",
@@ -1445,9 +1469,9 @@
     "why": "not built: only 2 independent report(s) (13 sites)"
    },
    {
-    "title": "Invest in international rail services to boost UK-EU reset, Burnham urged",
-    "score": 12,
-    "why": "not built: only 2 independent report(s) (11 sites)"
+    "title": "UK leader Andy Burnham says Brexit hasn't worked ahead of reset summit with EU",
+    "score": 15,
+    "why": "not built: only 2 independent report(s) (12 sites)"
    },
    {
     "title": "Liberals' 'lawful access' bill vulnerable to constitutional challenge: professor",
@@ -1460,14 +1484,14 @@
     "why": "not built: only 2 independent report(s) (10 sites)"
    },
    {
-    "title": "US bank outage: What caused Chase problems and Zelle payment delays?",
-    "score": 9,
-    "why": "not built: only 2 independent report(s) (5 sites)"
-   },
-   {
     "title": "Ecuadorian politicians warn about legal provisions in free trade deal",
     "score": 8,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "US bank outage: What caused Chase problems and Zelle payment delays?",
+    "score": 7,
+    "why": "not built: only 2 independent report(s) (5 sites)"
    },
    {
     "title": "LeBlanc to chair meeting of Canada-U.S. advisory committee Thursday",
@@ -1587,7 +1611,7 @@
      "alt": "Vancouver's first new community centre in 14 years is now open: Inside the $91-million Marpole Community Centre",
      "outlet": "Daily Hive",
      "url": "https://dailyhive.com/vancouver/marpole-community-centre-new-vancouver-open-photos-interior-design",
-     "since": "2026-11-17T07:15:02.790081+00:00"
+     "since": "2026-11-17T07:25:09.514014+00:00"
     },
     "photo_seen": [
      "https://images-dh-production-baselayer.dailyhive.com/uploads/2026/11/Marpole-Community-Centre-Vancouver-opening-Nov-16-2026-f7.jpg?format=auto"
@@ -1737,7 +1761,7 @@
      "alt": "Willie Nelson on a near-death experience, Dolly Parton, James Talarico and his book, 'The Last Leaf'",
      "outlet": "Times Colonist",
      "url": "https://www.timescolonist.com/the-mix/willie-nelson-on-a-near-death-experience-dolly-parton-james-talarico-and-his-book-the-last-leaf-13025310",
-     "since": "2026-11-17T07:15:03.271648+00:00"
+     "since": "2026-11-17T07:25:10.001048+00:00"
     },
     "photo_seen": [
      "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/aac14dd70eb1b0ddb045ba43c50db36f0233a2cf48a11821fe57c4465fd004e3.jpg;w=1200;h=800;mode=crop"
@@ -1893,25 +1917,16 @@
     "incoherent": true,
     "popular": 0,
     "us_election": false,
-    "fronts": 3,
+    "fronts": 2,
     "fronts_ca": 0,
     "fronts_who": [
      "NBC News",
-     "BBC News",
      "NPR"
     ],
     "judgment": "regional",
     "judgment_why": "Regional: affects some people; carried by a few newsrooms.",
     "weight": 15.0,
     "videos": [
-     {
-      "net": "CityNews",
-      "url": "https://www.youtube.com/watch?v=q2FD26rR1Lk",
-      "title": "Robert Pattinson to play James Bond in new 007 film",
-      "img": "https://i.ytimg.com/vi/q2FD26rR1Lk/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
      {
       "net": "Global News",
       "url": "https://www.youtube.com/watch?v=weCn5XBaUBs",
@@ -1925,6 +1940,14 @@
       "url": "https://www.youtube.com/watch?v=YWaL96fCDOc",
       "title": "Robert Pattinson to play James Bond in upcoming 007 film",
       "img": "https://i.ytimg.com/vi/YWaL96fCDOc/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CityNews",
+      "url": "https://www.youtube.com/watch?v=q2FD26rR1Lk",
+      "title": "Robert Pattinson to play James Bond in new 007 film",
+      "img": "https://i.ytimg.com/vi/q2FD26rR1Lk/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
@@ -1945,8 +1968,8 @@
     "url": "https://www.bnnbloomberg.ca/business/company-news/2026/11/17/nvidia-rules-out-jensen-huang-comeback-as-campaign-for-his-return-grows/"
    },
    {
-    "title": "Tokyo protests after two suspected Russian aircraft violate Japanese airspace in southwestern Japan",
-    "url": "https://www.thestar.com/news/world/asia/tokyo-protests-after-two-suspected-russian-aircraft-violate-japanese-airspace-in-southwestern-japan/article_f02fb922-fb26-590d-ba9e-bb5c5f9677ca.html"
+    "title": "Two major Kyiv bridges hit in Russian attack, mayor says",
+    "url": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo?at_medium=RSS&at_campaign=rss"
    },
    {
     "title": "Survivor of fatal boat crash near Squamish speaks out",
@@ -2043,7 +2066,7 @@
    "id": "9TIi5-MCcY4",
    "r": "ca",
    "o": "CTV News",
-   "t": "54% of Canadians oppose trade deal with U.S. tariffs: Nanos poll",
+   "t": "54% of Canadians reject U.S. trade deal with tariffs: poll",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=9TIi5-MCcY4",
@@ -2062,7 +2085,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=D1aJHjkkrQg",
    "img": "https://i.ytimg.com/vi/D1aJHjkkrQg/hqdefault.jpg",
-   "up": "2026-11-17",
+   "up": "2026-11-16",
    "added": "2026-11-17T04:34:30.837502+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -2295,7 +2318,7 @@
    "id": "kuHZsSLUg3s",
    "r": "us",
    "o": "CBS News",
-   "t": "The FAA meltdown: What we know about its origins, how the Trump administration is responding",
+   "t": "Experts and reporters break down FAA meltdown, explaining what's responsible",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=kuHZsSLUg3s",
@@ -2323,7 +2346,7 @@
    "id": "a65nGq5vUTc",
    "r": "us",
    "o": "Associated Press",
-   "t": "Florida residents excited to explore Miami-inspired Vice City in GTA 6",
+   "t": "Florida residents share their excitement for Miami-inspired Vice City in GTA 6",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=a65nGq5vUTc",
@@ -2516,20 +2539,6 @@
    "geo": "unknown"
   },
   {
-   "id": "yRSgrZ7iGqY",
-   "r": "world",
-   "o": "Reuters",
-   "t": "Archaeologists uncover sections of medieval church in war-torn Sudan",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=yRSgrZ7iGqY",
-   "img": "https://i.ytimg.com/vi/yRSgrZ7iGqY/hqdefault.jpg",
-   "up": "2026-11-17",
-   "added": "2026-11-17T06:08:32.107649+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "6kDTRI0Ew34",
    "r": "world",
    "o": "Reuters",
@@ -2568,6 +2577,20 @@
    "img": "https://i.ytimg.com/vi/-FwpNf2JtPw/hqdefault.jpg",
    "up": "2026-11-17",
    "added": "2026-11-17T06:38:31.447060+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "2ktusI65r0w",
+   "r": "world",
+   "o": "Reuters",
+   "t": "Nvidia rules out Huang comeback as campaign for his return grows",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=2ktusI65r0w",
+   "img": "https://i.ytimg.com/vi/2ktusI65r0w/hqdefault.jpg",
+   "up": "2026-11-17",
+   "added": "2026-11-17T07:23:27.567827+00:00",
    "pic": "globe",
    "geo": "unknown"
   }
@@ -2816,13 +2839,6 @@
  ],
  "eds": [
   [
-   "Toronto Star",
-   "Opinion",
-   "Correction",
-   "https://www.thestar.com/opinion/correction/article_a1bce06d-6657-420e-8130-041877343124.html",
-   "2026-11-17T03:00:00+00:00"
-  ],
-  [
    "Toronto Sun",
    "Opinion",
    "Tim Dolighan cartoon, Nov. 17, 2026",
@@ -2884,10 +2900,24 @@
    "Republicans need history lesson about their party if they want to move on from defeat",
    "https://www.foxnews.com/opinion/republicans-need-history-lesson-about-their-party-move-defeat",
    "2026-11-16T14:00:59+00:00"
+  ],
+  [
+   "The Wall Street Journal (subscribers)",
+   "Opinion",
+   "Pepper…and Salt",
+   "https://www.wsj.com/opinion/pepperand-salt-0859a1b3?mod=rss_opinion",
+   "2026-11-17T05:00:00+00:00"
   ]
  ],
  "canus": {
   "talks": [
+   {
+    "t": "Mon 11:34 p.m.",
+    "iso": "2026-11-17T04:34:00+00:00",
+    "outlet": "Toronto Star",
+    "title": "China and Canada expand tariff relief while Ottawa-Washington relations are strained",
+    "url": "https://www.thestar.com/news/world/xi-and-carney-call-for-deeper-ties-as-canada-looks-beyond-us-for-trade/article_76900edb-0ef7-5d4b-b101-d02193d4ce91.html"
+   },
    {
     "t": "Mon 10:42 p.m.",
     "iso": "2026-11-17T03:42:00+00:00",
@@ -2936,13 +2966,6 @@
     "outlet": "CP24",
     "title": "Most Canadians would reject a trade deal that includes tariffs, Nanos survey suggests",
     "url": "https://www.cp24.com/news/canada/2026/11/15/most-canadians-would-reject-a-trade-deal-that-includes-tariffs-nanos-survey-suggests/"
-   },
-   {
-    "t": "Sat 7:23 p.m.",
-    "iso": "2026-11-15T00:23:00+00:00",
-    "outlet": "Toronto Star",
-    "title": "Carney caps off ASEAN summit with focus on trade deals, heads to Francophonie",
-    "url": "https://www.thestar.com/business/carney-to-cap-off-asean-summit-with-focus-on-trade-deals-ahead-of-francophonie/article_e4e58541-6d4c-55b6-b2a0-b8cdfae12770.html"
    }
   ],
   "usmedia": [
@@ -3295,12 +3318,12 @@
    "city": "Winnipeg",
    "tz": "America/Winnipeg",
    "world": false,
-   "w": "Police",
-   "label": "Heavy police presence reported on Saskatoon’s Eighth…",
-   "u": "https://www.ckom.com/2026/11/16/heavy-police-presence-reported-on-saskatoons-eighth-street/",
-   "title": "Heavy police presence reported on Saskatoon’s Eighth Street",
-   "outlet": "CKOM / PAnow",
-   "t": "Mon 5:55 p.m.",
+   "w": "Election",
+   "label": "Several staffers leaving Poilievre’s office weeks after…",
+   "u": "https://winnipeg.citynews.ca/2026/11/16/several-staffers-leaving-poilievres-office-weeks-after-b-c-election/",
+   "title": "Several staffers leaving Poilievre’s office weeks after B.C. election",
+   "outlet": "CityNews Winnipeg",
+   "t": "Mon 6:51 p.m.",
    "hot": false
   },
   {
@@ -3348,19 +3371,19 @@
    "u": "https://www.cbc.ca/news/politics/canada-china-carney-xi-9.7424608",
    "title": "Canada and China announce new trade measures and cultural partnerships on Carney's 1st day in Shenzhen",
    "outlet": "CBC News",
-   "t": "Tue 2:10 a.m.",
+   "t": "Tue 2:21 a.m.",
    "hot": true
   },
   {
-   "city": "Moscow",
-   "tz": "Europe/Moscow",
+   "city": "Kyiv",
+   "tz": "Europe/Kyiv",
    "world": true,
-   "w": "Summit",
-   "label": "Memo to Trump, Xi and Putin: Shenzhen is not Yalta",
-   "u": "https://www.japantimes.co.jp/commentary/2026/11/17/world/shenzhen-not-yalta/",
-   "title": "Memo to Trump, Xi and Putin: Shenzhen is not Yalta",
-   "outlet": "The Japan Times",
-   "t": "Mon 8:42 p.m.",
+   "w": "City hall",
+   "label": "Russian strikes hit two major bridges in Ukraine's…",
+   "u": "https://www.euronews.com/2026/11/17/russian-strikes-hit-two-major-bridges-in-ukraines-capital-citys-mayor-says",
+   "title": "Russian strikes hit two major bridges in Ukraine's capital, city's mayor says",
+   "outlet": "Euronews",
+   "t": "Tue 1:22 a.m.",
    "hot": false
   },
   {
@@ -3368,12 +3391,12 @@
    "tz": "Europe/Brussels",
    "world": true,
    "w": "Canada–EU",
-   "label": "Invest in international rail services to boost UK-EU…",
-   "u": "https://www.theguardian.com/business/2026/nov/17/invest-international-rail-services-boost-uk-eu-reset-andy-burnham",
-   "title": "Invest in international rail services to boost UK-EU reset, Burnham urged",
-   "outlet": "The Guardian",
-   "t": "Tue 12:00 a.m.",
-   "hot": false
+   "label": "UK leader Andy Burnham says Brexit hasn't worked ahead of…",
+   "u": "https://www.euronews.com/2026/11/17/uk-leader-andy-burnham-says-brexit-hasnt-worked-ahead-of-reset-summit-with-eu",
+   "title": "UK leader Andy Burnham says Brexit hasn't worked ahead of reset summit with EU",
+   "outlet": "Euronews",
+   "t": "Tue 2:06 a.m.",
+   "hot": true
   }
  ],
  "bigweek": [],
@@ -3385,34 +3408,34 @@
    "iso": "2026-11-17T06:37:35+00:00",
    "title": "Hundreds arrested in anti-Trump protests in Philippines amid anger over Iran war and AI pact",
    "summary": "Organisers say up to 10,000 people could join the next round of demonstrations ahead of the US president’s arrival in Manila for the Asean summit",
-   "outlet": "The Guardian, CTV News + CP24 + Toronto Star (CP), Toronto Star, CBS News, NBC News, Al Jazeera, BBC News, The Hill",
-   "n": 8,
+   "outlet": "The Guardian, CTV News + CP24 + Toronto Star (CP), CBS News, NBC News, Al Jazeera, BBC News, The Hill",
+   "n": 7,
    "url": "https://www.theguardian.com/world/2026/nov/17/hundreds-arrested-manila-anti-trump-protests-philippines",
    "img": "https://i.guim.co.uk/img/media/75ec4cfc6a89c1babfe1389687fbafa71b3713af/333_0_3333_2666/master/3333.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=98bde914dbf117c3bd0d35b745bde001"
   },
   {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Tue 1:22 a.m.",
+   "iso": "2026-11-17T06:22:40+00:00",
+   "title": "Russian strikes hit two major bridges in Ukraine's capital, city's mayor says",
+   "summary": "",
+   "outlet": "Euronews, BBC News, Kyiv Independent, The Japan Times (AFP), Al Jazeera, The Guardian, CTV News",
+   "n": 7,
+   "url": "https://www.euronews.com/2026/11/17/russian-strikes-hit-two-major-bridges-in-ukraines-capital-citys-mayor-says",
+   "img": ""
+  },
+  {
    "desk": "politics",
    "pic": "parliament",
-   "t": "Tue 2:10 a.m.",
-   "iso": "2026-11-17T07:10:20.645000+00:00",
+   "t": "Tue 2:21 a.m.",
+   "iso": "2026-11-17T07:21:35.845000+00:00",
    "title": "Canada and China announce new trade measures and cultural partnerships on Carney's 1st day in Shenzhen",
    "summary": "Prime Minister Mark Carney announced a series of new partnerships with China on his first full day in Shenzhen, covering a series of cultural and trade measures, including an expansion of current tariff agreements, more flights between the two countries, and a series of agreements covering education and the arts.",
    "outlet": "CBC News + Times Colonist (CP), Prime Minister of Canada, The Japan Times (AFP), Toronto Star, The Japan Times, CTV News",
    "n": 6,
    "url": "https://www.cbc.ca/news/politics/canada-china-carney-xi-9.7424608",
    "img": "https://i.cbc.ca/ais/f77bfd64-a64d-4c76-911e-e7584f154163,1794885744741/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C337%2C8152%2C4585%29%3BResize%3D620"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Tue 1:22 a.m.",
-   "iso": "2026-11-17T06:22:50+00:00",
-   "title": "Tokyo protests after two suspected Russian aircraft violate Japanese airspace in southwestern Japan",
-   "summary": "TOKYO (AP) — Japan said it strongly protested to Moscow on Tuesday after two suspected Russian aircraft entered its airspace off its southwestern coast, the latest incident fueling escalating tensions",
-   "outlet": "Toronto Star (AP), BBC News, Kyiv Independent, The Japan Times, CTV News (CP), CTV News",
-   "n": 6,
-   "url": "https://www.thestar.com/news/world/asia/tokyo-protests-after-two-suspected-russian-aircraft-violate-japanese-airspace-in-southwestern-japan/article_f02fb922-fb26-590d-ba9e-bb5c5f9677ca.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/4/dc/4dc22a42-a7d1-5d1e-bed7-bc5d4e659162/6afbf33ce11e7.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
   },
   {
    "desk": "world",
@@ -3451,11 +3474,11 @@
    "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/ce1a/live/7c81aa70-e211-11f1-a541-6d0c391a4254.jpg"
   },
   {
-   "desk": "politics",
-   "pic": "parliament",
+   "desk": "business",
+   "pic": "chart",
    "t": "Mon 11:34 p.m.",
    "iso": "2026-11-17T04:34:00+00:00",
-   "title": "Xi and Carney call for deeper ties as Canada looks beyond US for trade",
+   "title": "China and Canada expand tariff relief while Ottawa-Washington relations are strained",
    "summary": "SHENZHEN, China (AP) — The leaders of China and Canada agreed Tuesday on additional tariff cuts as they pledged for deeper ties and Ottawa navigates strained relations with the United",
    "outlet": "Toronto Star + CP24 + BNN Bloomberg, Toronto Star, CTV News + CP24 + BNN Bloomberg, The Hill",
    "n": 4,
@@ -3465,14 +3488,14 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Mon 10:26 p.m.",
-   "iso": "2026-11-17T03:26:00+00:00",
-   "title": "Germany, Denmark, Austria, Greece and the Netherlands plan Rwanda migrant hub",
-   "summary": "The move came despite protests from human rights groups and a warning from the United Nations refugee agency UNHCR.",
-   "outlet": "The Japan Times (AFP), The Guardian, BBC News, The Hill",
-   "n": 4,
-   "url": "https://www.japantimes.co.jp/news/2026/11/17/world/politics/european-nations-rwanda-hub-migrants/",
-   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/17/574478.jpg?v=3.1"
+   "t": "Tue 2:06 a.m.",
+   "iso": "2026-11-17T07:06:48+00:00",
+   "title": "UK leader Andy Burnham says Brexit hasn't worked ahead of reset summit with EU",
+   "summary": "",
+   "outlet": "Euronews + Toronto Star + CityNews Winnipeg + CityNews Vancouver + 5 more (AP), The Guardian, Al Jazeera",
+   "n": 3,
+   "url": "https://www.euronews.com/2026/11/17/uk-leader-andy-burnham-says-brexit-hasnt-worked-ahead-of-reset-summit-with-eu",
+   "img": ""
   },
   {
    "desk": "world",
@@ -3489,14 +3512,14 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Tue 12:00 a.m.",
-   "iso": "2026-11-17T05:00:06+00:00",
-   "title": "Invest in international rail services to boost UK-EU reset, Burnham urged",
-   "summary": "Campaigners call for reopening of high-speed Eurostar stations and new infrastructure for London St Pancras",
-   "outlet": "The Guardian, Al Jazeera, Toronto Star + CityNews Winnipeg + CityNews Vancouver + CityNews Ottawa + 5 more (AP)",
+   "t": "Mon 7:40 p.m.",
+   "iso": "2026-11-17T00:40:27+00:00",
+   "title": "Entire section of Crimean Bridge collapsed after reported Ukrainian Flamingo missile strike",
+   "summary": "The attack came shortly after Russian forces launched a massive ballistic missile attack across Ukraine and hit the Northern and Southern Bridges across the Dnipro River in Kyiv.",
+   "outlet": "Kyiv Independent, CP24 + CKOM / PAnow (AP), Euronews",
    "n": 3,
-   "url": "https://www.theguardian.com/business/2026/nov/17/invest-international-rail-services-boost-uk-eu-reset-andy-burnham",
-   "img": "https://i.guim.co.uk/img/media/73462068d8df30f56420b8afb97c6004264f88e6/0_632_3531_2824/master/3531.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=b01ce38f742b02288fa7a29332856289"
+   "url": "https://kyivindependent.com/ukrainian-forces-reportedly-strike-crimean-bridge-after-russian-missiles-hit-kyiv-bridges/",
+   "img": "https://assets.kyivindependent.com/content/images/2026/11/HXTcBw-XMAAIAqJ_20261117-064039_20261117-064212.jpeg"
   },
   {
    "desk": "us",
@@ -3633,20 +3656,8 @@
   {
    "desk": "business",
    "pic": "chart",
-   "t": "Mon 10:42 p.m.",
-   "iso": "2026-11-17T03:42:00+00:00",
-   "title": "Investors return to JGBs as rate outlook shifts, SMBC Nikko says",
-   "summary": "Japan’s bonds have rallied over the past month as yields attracted fund managers and a global equity selloff boosted demand for haven assets.",
-   "outlet": "The Japan Times",
-   "n": 1,
-   "url": "https://www.japantimes.co.jp/business/2026/11/17/markets/investors-return-to-jgbs/",
-   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/17/574479.jpg?v=3.1"
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Mon 10:27 p.m.",
-   "iso": "2026-11-17T03:27:00+00:00",
+   "t": "Tue 2:17 a.m.",
+   "iso": "2026-11-17T07:17:00+00:00",
    "title": "Nikkei 225 near bear market territory as AI boom cools",
    "summary": "Index is now down around 20% from its peak, with analysts saying it will be months before highs are recovered, and possibly longer.",
    "outlet": "The Japan Times",
@@ -3657,14 +3668,26 @@
   {
    "desk": "business",
    "pic": "chart",
-   "t": "Mon 10:08 p.m.",
-   "iso": "2026-11-17T03:08:00+00:00",
-   "title": "Taiwan’s currency paradox: How an AI boom left its dollar behind",
-   "summary": "The Taiwan dollar’s slide toward its weakest level in a decade is confounding the normal rules of currency trading.",
-   "outlet": "The Japan Times",
+   "t": "Tue 1:02 a.m.",
+   "iso": "2026-11-17T06:02:27+00:00",
+   "title": "Heatwaves are the worst weather for our health and the economy: Spain pays the highest price in Europe",
+   "summary": "",
+   "outlet": "Euronews",
    "n": 1,
-   "url": "https://www.japantimes.co.jp/business/2026/11/17/markets/taiwan-currency-paradox-ai-dollar/",
-   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/17/574464.jpg?v=3.1"
+   "url": "https://www.euronews.com/2026/11/17/heatwaves-are-the-worst-weather-for-our-health-and-the-economy-spain-pays-the-highest-pric",
+   "img": ""
+  },
+  {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Mon 11:06 p.m.",
+   "iso": "2026-11-17T04:06:00+00:00",
+   "title": "Asian markets mostly drop as AI stocks remain under pressure",
+   "summary": "HONG KONG (AP) — Asian shares declined Tuesday, following more drops for stocks in the artificial intelligence industry on Wall Street ahead of Nvidia's earnings results.",
+   "outlet": "Toronto Star (AP)",
+   "n": 1,
+   "url": "https://www.thestar.com/news/world/asian-shares-decline-following-stocks-tumbled-on-wall-street/article_8715e1be-ccbb-51ac-8cd5-da78a0a96f2d.html",
+   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/2/eb/2ebe8f5e-b057-5fcb-bca7-3120e4604090/6afbd39b155df.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
   },
   {
    "desk": "politics",
@@ -3691,16 +3714,16 @@
    "img": "https://www.ctvnews.ca/resizer/v2/6JTHNZPQANWDESIPWR55EFHUH4.jpg?smart=true&auth=2658005c37bdc3516ab10fafc69e19b700ab90b1993a08097fba88852a305dab&width=1200&height=630"
   },
   {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Mon 8:00 p.m.",
-   "iso": "2026-11-17T01:00:03+00:00",
-   "title": "Ontario's magical new woodland Christmas village and market are opening this weekend",
-   "summary": "A little bit of Christmas magic is coming to Ontario this weekend. A new holiday market is opening just a road trip from Toronto, and it promises festive cheer, twinkling lights, and endless seasonal charm.",
-   "outlet": "Narcity",
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Mon 6:16 p.m.",
+   "iso": "2026-11-16T23:16:12+00:00",
+   "title": "B.C. Conservative push to force workers back to office worries union, experts",
+   "summary": "",
+   "outlet": "Vancouver Sun",
    "n": 1,
-   "url": "https://www.narcity.com/niagara-on-the-lake-christmas-market-vintage-hotels-dates",
-   "img": "https://www.narcity.com/media-library/a-pathway-with-canpoies-of-lights-and-a-christmas-tree-right-a-garden-bridge-adorned-with-festive-lights-at-dusk.jpg?id=68693422&width=1200&height=600&coordinates=0%2C36%2C0%2C36"
+   "url": "https://vancouversun.com/news/bc-conservative-push-force-public-service-workers-back-to-office-worries-union-experts",
+   "img": ""
   },
   {
    "desk": "business",
@@ -3848,7 +3871,7 @@
    "h": [
     "CBC News - Latest Canada, World, Entertainment and Business News",
     "Canada and China announce new trade measures and cultural partnerships on Carney's 1st day in Shenzhen",
-    "Carney, Xi strike trade deal offering $400M in tariff relief",
+    "China to provide additional tariff relief on Canadian exports worth $400M",
     "Carney says Canada could turn to Chinese automakers if Trump trade talks fail",
     "Conservative MP says Carney is 'selling out' Canada's auto workers to China",
     "'The world has changed,' Champagne says about possibly building Chinese EVs in Canada"
@@ -3900,26 +3923,6 @@
     "",
     "",
     ""
-   ]
-  },
-  {
-   "o": "Toronto Star",
-   "ca": true,
-   "h": [
-    "Toronto Star News - Breaking News Stories",
-    "Mark Carney, Xi Jinping deepen China ties with $400-million trade deal",
-    "New tax deadline, fixed deductions and bigger benefits: What the federal budget means for your taxes",
-    "Four more staff leave Pierre Poilievre’s office, with two joining B.C. Conservatives",
-    "Nicholas Herring, PEI author and fisherman, wins 2026 Giller Prize for his second novel",
-    "Why Doug Ford’s ‘strong chairs’ have some Toronto-area mayors spoiling for a fight"
-   ],
-   "u": [
-    "",
-    "https://www.thestar.com/politics/federal/carney-xi-deepen-china-ties-with-400m-trade-deal/article_1479e592-3122-43bf-b500-eea0010a261c.html",
-    "https://www.thestar.com/business/personal-finance/new-tax-deadline-fixed-deductions-and-bigger-benefits-what-the-federal-budget-means-for-your-taxes/article_edbe0b7e-657d-41d7-8731-57af80795401.html",
-    "https://www.thestar.com/politics/four-more-staff-leave-poilievre-s-office-with-two-joining-b-c-conservatives/article_111ef269-3088-4325-8ecc-e85415cc2c06.html",
-    "https://www.thestar.com/entertainment/books/nicholas-herring-pei-author-and-fisherman-wins-2026-giller-prize-for-your-breath-in-charcoal/article_b3c7b267-bfbe-4c56-a98c-19d620d79ab0.html",
-    "https://www.thestar.com/news/gta/why-doug-ford-s-strong-chairs-have-some-toronto-area-mayors-spoiling-for-a-fight/article_fac60b43-b609-4a90-839d-94fef6cf2b88.html"
    ]
   },
   {
@@ -4036,7 +4039,7 @@
    "o": "CBS News",
    "ca": false,
    "h": [
-    "Major U.S. banks report widespread service outages",
+    "Widespread service outages at major U.S. banks appear to be over",
     "Protests flare in Philippines over Trump's visit and planned AI hub",
     "Epstein's death may not have been suicide, new analysis suggests",
     "Officials received years of warnings before FAA ground stop",
@@ -4078,16 +4081,16 @@
    "h": [
     "Two major Kyiv bridges hit in Russian attack, mayor says",
     "Ukraine accuses Russia of targeting rescue operation after 'double-tap' strike kills 72",
-    "When will we see Robert Pattinson as Bond in cinemas?",
-    "'Complete system reset' needed to get 440,000 young Britons into work, says major review",
+    "Lindsay Clancy to face retrial next year for deaths of her three children",
+    "Imran Khan seeks urgent medical care fearing he 'may not return alive'",
     "China is hosting the world's leaders in its AI wonderland. Here's what they won't see",
-    "Imran Khan seeks urgent medical care fearing he 'may not return alive'"
+    "How police in London failed to stop rape-unit detective who abused women"
    ],
    "u": [
     "https://www.bbc.com/news/articles/cw772jk4rvmxo",
     "",
-    "https://www.bbc.com/news/videos/cmd91xjd9zk2o",
-    "https://www.bbc.com/news/articles/c38xzy980924o",
+    "https://www.bbc.com/news/articles/cw5y1v8de35go",
+    "https://www.bbc.com/news/articles/cr894xq5yeyko",
     "",
     ""
    ]
@@ -4142,7 +4145,7 @@
     "url": "https://www.youtube.com/watch?v=0TtsQz8oOv4",
     "img": "https://i.ytimg.com/vi/0TtsQz8oOv4/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "263",
+    "watching": "254",
     "rolling": true
    },
    {
@@ -4152,16 +4155,16 @@
     "url": "https://www.youtube.com/watch?v=FkhdzaXwok8",
     "img": "https://i.ytimg.com/vi/FkhdzaXwok8/hqdefault.jpg",
     "story": "ASEAN leaders and international partners gather for 49th summit",
-    "watching": "70"
+    "watching": "64"
    },
    {
     "net": "Sky News",
     "r": "world",
-    "title": "Full coverage of Alan Milburn's NEETs review | Mornings with Ridge and Frost",
+    "title": "From welfare state to working state - plans to get nearly a million young Brits into work | Mornings",
     "url": "https://www.youtube.com/watch?v=LSXYemjN5wY",
     "img": "https://i.ytimg.com/vi/LSXYemjN5wY/hqdefault.jpg",
-    "story": "Full coverage of Alan Milburn's NEETs review",
-    "watching": "500"
+    "story": "From welfare state to working state - plans to get nearly a million yo",
+    "watching": "550"
    },
    {
     "net": "euronews",
@@ -4170,7 +4173,7 @@
     "url": "https://www.youtube.com/watch?v=6KcUNN090EE",
     "img": "https://i.ytimg.com/vi/6KcUNN090EE/hqdefault.jpg",
     "story": "Rwanda migrant hub, Crimea bridge strike, Iran's Hormuz offer",
-    "watching": "41",
+    "watching": "45",
     "reports": [
      {
       "outlet": "The Japan Times",
@@ -4261,13 +4264,6 @@
       "url": "https://globalnews.ca/news/12153087/canada-airlines-groundstop-operations-air-canada/",
       "t": "Mon 2:57 p.m.",
       "iso": "2026-11-16T19:57:55+00:00"
-     },
-     {
-      "outlet": "The Hill",
-      "title": "Mullin: No one getting fired over nationwide ground stop",
-      "url": "https://thehill.com/policy/transportation/6222057-dhs-mullin-faa-ground-stop-response/",
-      "t": "Mon 8:13 a.m.",
-      "iso": "2026-11-16T13:13:39+00:00"
      }
     ]
    }
@@ -4383,7 +4379,7 @@
      "t": "Mon 11:34 p.m.",
      "iso": "2026-11-17T04:34:00+00:00",
      "outlet": "Toronto Star",
-     "title": "Xi and Carney call for deeper ties as Canada looks beyond US for trade",
+     "title": "China and Canada expand tariff relief while Ottawa-Washington relations are strained",
      "url": "https://www.thestar.com/news/world/xi-and-carney-call-for-deeper-ties-as-canada-looks-beyond-us-for-trade/article_76900edb-0ef7-5d4b-b101-d02193d4ce91.html",
      "tie": "Canada and the U.S."
     },
@@ -4515,6 +4511,24 @@
    "official": [],
    "views": []
   },
+  "https://www.youtube.com/watch?v=6KcUNN090EE": {
+   "story": "Rwanda migrant hub, Crimea bridge strike, Iran's Hormuz offer | Europe Today S2 #2",
+   "us": false,
+   "specific": 1,
+   "stories": [
+    {
+     "t": "Sun 11:53 p.m.",
+     "iso": "2026-11-16T04:53:37+00:00",
+     "outlet": "Global News",
+     "title": "Canada exploring ‘other options’ with Europe, Asia to grow auto sector: Carney",
+     "url": "https://globalnews.ca/news/12152341/canada-auto-sector-europe-asia/",
+     "ca": true,
+     "tie": ""
+    }
+   ],
+   "official": [],
+   "views": []
+  },
   "https://www.youtube.com/watch?v=lDc1udgdSgE": {
    "story": "Trump meets Thai PM at the start of ASEAN summit in Philippines",
    "us": true,
@@ -4572,7 +4586,7 @@
   "https://www.youtube.com/watch?v=5MgMHX-lNn4": {
    "story": "Markwayne Mullin Testifies Before Congress Following FAA Nationwide Ground Stop",
    "us": true,
-   "specific": 5,
+   "specific": 4,
    "stories": [
     {
      "t": "Mon 4:27 p.m.",
@@ -4580,15 +4594,6 @@
      "outlet": "CTV News",
      "title": "Cleanup continues following devastating fire at Guelph mosque",
      "url": "https://www.ctvnews.ca/kitchener/guelph/article/cleanup-continues-following-devastating-fire-at-guelph-mosque/",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Mon 2:57 p.m.",
-     "iso": "2026-11-16T19:57:55+00:00",
-     "outlet": "Global News",
-     "title": "Canadian airlines ‘back on track’ 3 days after FAA ground stop",
-     "url": "https://globalnews.ca/news/12153087/canada-airlines-groundstop-operations-air-canada/",
      "ca": true,
      "tie": ""
     },
@@ -4618,6 +4623,15 @@
      "url": "https://dailyhive.com/canada/microsoft-outage-canada-class-action-lawsuit",
      "ca": false,
      "tie": ""
+    },
+    {
+     "t": "Mon 2:57 p.m.",
+     "iso": "2026-11-16T19:57:55+00:00",
+     "outlet": "Global News",
+     "title": "Canadian airlines ‘back on track’ 3 days after FAA ground stop",
+     "url": "https://globalnews.ca/news/12153087/canada-airlines-groundstop-operations-air-canada/",
+     "ca": true,
+     "tie": "Flying from Canada"
     }
    ],
    "official": [
@@ -4644,6 +4658,15 @@
    "us": true,
    "specific": 0,
    "stories": [
+    {
+     "t": "Mon 11:34 p.m.",
+     "iso": "2026-11-17T04:34:00+00:00",
+     "outlet": "Toronto Star",
+     "title": "China and Canada expand tariff relief while Ottawa-Washington relations are strained",
+     "url": "https://www.thestar.com/news/world/xi-and-carney-call-for-deeper-ties-as-canada-looks-beyond-us-for-trade/article_76900edb-0ef7-5d4b-b101-d02193d4ce91.html",
+     "ca": true,
+     "tie": "Canada and the U.S."
+    },
     {
      "t": "Mon 7:34 p.m.",
      "iso": "2026-11-17T00:34:33+00:00",
