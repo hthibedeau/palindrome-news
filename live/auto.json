@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-17T05:19:12.543916+00:00",
- "checkedLabel": "Tue 12:19 a.m.",
+ "checked": "2026-11-17T05:23:34.657919+00:00",
+ "checkedLabel": "Tue 12:23 a.m.",
  "stories": [
   {
    "key": "top",
@@ -80,15 +80,6 @@
    "Toronto Star",
    "https://www.thestar.com/news/world/united-states/miami-embraces-its-vice-city-alter-ego-seizing-buzz-around-gta-vi-release/article_ea526d30-d476-53ed-be83-e8a050c52234.html",
    "2026-11-17T05:08:11+00:00",
-   1
-  ],
-  [
-   "Tue 12:08 a.m.",
-   "World",
-   "The Red Crabs of Christmas Island",
-   "Al Jazeera",
-   "https://www.aljazeera.com/video/newsfeed/2026/11/17/the-red-crabs-of-christmas-island?traffic_source=rss",
-   "2026-11-17T05:08:08+00:00",
    1
   ],
   [
@@ -179,7 +170,7 @@
    "CBC News",
    "https://www.cbc.ca/news/politics/canada-china-carney-xi-9.7424608",
    "2026-11-17T04:52:20+00:00",
-   10
+   9
   ],
   [
    "Mon 11:46 p.m.",
@@ -261,6 +252,15 @@
    "https://www.aljazeera.com/video/newsfeed/2026/11/17/gunfire-erupts-in-occupied-west-bank-settler-attack?traffic_source=rss",
    "2026-11-17T04:00:08+00:00",
    1
+  ],
+  [
+   "Mon 10:51 p.m.",
+   "World",
+   "CFMEU pushed to get notorious Bandidos member hired on construction project, Big Build royal commission hears",
+   "The Guardian",
+   "https://www.theguardian.com/australia-news/2026/nov/17/cfmeu-bandidos-bikie-joel-leavitt-big-build-royal-commission-ntwnfb",
+   "2026-11-17T03:51:23+00:00",
+   1
   ]
  ],
  "blogs": [
@@ -295,7 +295,7 @@
    "score": 32,
    "title": "Prime Minister Mark Carney and the trust issue: it’s a thing, despite the polls",
    "url": "https://www.hilltimes.com/2026/11/16/prime-minister-mark-carney-and-the-trust-issue-its-a-thing-despite-the-polls/525861/",
-   "outlets": 28,
+   "outlets": 26,
    "why": [
     "National Newswatch #6",
     "National Newswatch #11",
@@ -1119,9 +1119,11 @@
     "incoherent": false,
     "popular": 0,
     "us_election": false,
-    "fronts": 0,
+    "fronts": 1,
     "fronts_ca": 0,
-    "fronts_who": [],
+    "fronts_who": [
+     "The Guardian"
+    ],
     "outled_ca": 4,
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (8 cities).",
@@ -1136,10 +1138,10 @@
       "up": ""
      },
      {
-      "net": "BBC News",
-      "url": "https://www.youtube.com/watch?v=iSog3_bYIz0",
-      "title": "“Brexit hasn’t worked and Britain lost more that it gained” says Andy Burnham | BBC News",
-      "img": "https://i.ytimg.com/vi/iSog3_bYIz0/hqdefault.jpg",
+      "net": "Sky News",
+      "url": "https://www.youtube.com/watch?v=IF8MdnI-E7A",
+      "title": "Andy Burnham calls for reset in UK's relationship with EU",
+      "img": "https://i.ytimg.com/vi/IF8MdnI-E7A/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1180,8 +1182,10 @@
     "canada": "general",
     "theme": "",
     "top": true,
-    "fronts": 0,
-    "fronts_who": [],
+    "fronts": 1,
+    "fronts_who": [
+     "The Guardian"
+    ],
     "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
     "carriers": 12,
     "judgment": "national",
@@ -1192,10 +1196,10 @@
     "url": "https://www.thestar.com/news/world/united-states/trump-clipped-biden-s-payouts-for-stranded-travelers-it-may-not-have-helped-during-the-ground-stop/article_c7dd9008-6bbb-5b60-af25-d81f6e22e2e4.html",
     "rank": 3,
     "live": "",
-    "weight": 41,
+    "weight": 40,
     "score": 12,
     "independent": 12,
-    "most_read": 5,
+    "most_read": 4,
     "canada": "tie",
     "theme": "FAA ground stop",
     "top": false,
@@ -1207,9 +1211,30 @@
     "why_judged": "National: affects many people; carried across the country (national desks)."
    },
    {
+    "title": "Nvidia rules out Jensen Huang comeback as campaign for his return grows",
+    "url": "https://www.bnnbloomberg.ca/business/company-news/2026/11/17/nvidia-rules-out-jensen-huang-comeback-as-campaign-for-his-return-grows/",
+    "rank": 4,
+    "live": "",
+    "weight": 56.5,
+    "score": 32,
+    "independent": 8,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": false,
+    "fronts": 1,
+    "fronts_who": [
+     "NBC News"
+    ],
+    "rule": "No Canadian tie",
+    "carriers": 11,
+    "judgment": "national",
+    "why_judged": "National: affects some people; carried across the country (national desks)."
+   },
+   {
     "title": "Mark Carney, Xi Jinping deepen China ties with $400-million trade deal",
     "url": "https://www.thestar.com/politics/federal/carney-xi-deepen-china-ties-with-400m-trade-deal/article_1479e592-3122-43bf-b500-eea0010a261c.html",
-    "rank": 4,
+    "rank": 5,
     "live": "",
     "weight": 31.5,
     "score": 7,
@@ -1233,7 +1258,7 @@
    {
     "title": "LeBlanc to chair meeting of Canada-U.S. advisory committee Thursday",
     "url": "https://www.ctvnews.ca/politics/article/leblanc-to-chair-meeting-of-canada-us-advisory-committee-thursday/",
-    "rank": 5,
+    "rank": 6,
     "live": "",
     "weight": 9.5,
     "score": 0,
@@ -1252,7 +1277,7 @@
    {
     "title": "Vancouver's first new community centre in 14 years is now open: Inside the $91-million Marpole Community Centre",
     "url": "https://dailyhive.com/vancouver/marpole-community-centre-new-vancouver-open-photos-interior-design",
-    "rank": 6,
+    "rank": 7,
     "live": "",
     "weight": 27.5,
     "score": 9,
@@ -1269,51 +1294,9 @@
     "why_judged": "Regional: affects some people; carried only by Calgary desks."
    },
    {
-    "title": "GOP Rep. James Comer announces bid for Kentucky governor",
-    "url": "https://www.nbcnews.com/politics/elections/republican-james-comer-announces-bid-kentucky-governor-rcna609730",
-    "rank": 7,
-    "live": "",
-    "weight": 13.0,
-    "score": 7,
-    "independent": 4,
-    "most_read": 0,
-    "canada": "tie",
-    "theme": "",
-    "top": false,
-    "fronts": 3,
-    "fronts_who": [
-     "NBC News",
-     "BBC News",
-     "NPR"
-    ],
-    "rule": "From abroad, tied to Canada",
-    "carriers": 4,
-    "judgment": "regional",
-    "why_judged": "Regional: affects some people; carried by a few newsrooms."
-   },
-   {
-    "title": "Big laughs are coming to Vancouver this December with 2 shows from Indig-E girl Comedy Society",
-    "url": "https://dailyhive.com/vancouver/indige-girl-comedy-society-holiday-celebration",
-    "rank": 8,
-    "live": "",
-    "weight": 15.5,
-    "score": 7,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "canadian",
-    "theme": "",
-    "top": false,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "Canadian, older",
-    "carriers": 3,
-    "judgment": "regional",
-    "why_judged": "Regional: affects some people; carried only by Newfoundland-Labrador desks."
-   },
-   {
     "title": "Fire reported at major Russian petrochemical complex in Bashkortostan amid drone attack",
     "url": "https://kyivindependent.com/fire-reported-at-major-russian-petrochemical-complex-in-bashkortostan-amid-drone-attack/",
-    "rank": 9,
+    "rank": 8,
     "live": "",
     "weight": 26.5,
     "score": 16,
@@ -1330,11 +1313,6 @@
     "carriers": 3,
     "judgment": "regional",
     "why_judged": "Regional: affects some people; carried by a few newsrooms."
-   },
-   {
-    "title": "Prime Minister Mark Carney and the trust issue: it’s a thing, despite the polls",
-    "score": 32,
-    "why": "not built: only 2 independent report(s) (6 sites)"
    },
    {
     "title": "Staff exodus hits Poilievre’s office as new B.C. Conservative government goes on hiring spree",
@@ -1360,6 +1338,31 @@
     "title": "P.E.I. author Nicholas Herring wins $100K Giller Prize",
     "score": 7,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Xi and Carney call for deeper ties as Canada looks beyond US for trade",
+    "score": 7,
+    "why": "not built: only 1 independent report(s) (1 sites)"
+   },
+   {
+    "title": "LeBlanc to chair meeting of Canada-U.S. advisory committee Thursday",
+    "score": 6,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "A Quebec Primer for the December 7th By-Elections",
+    "score": 6,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Large plume of gas billows out of California landfill",
+    "score": 6,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Russia, Saudi Arabia and Australia named as biggest CO2 exporters in history",
+    "score": 6,
+    "why": "not built: only 2 independent report(s) (2 sites)"
    }
   ],
   "moved": [],
@@ -1370,9 +1373,9 @@
     "words": [
      "nationwide",
      "airlines",
-     "outage",
      "ground",
      "during",
+     "outage",
      "faa"
     ],
     "score": 12,
@@ -1400,7 +1403,7 @@
      "alt": "Trump clipped Biden's payouts for stranded travelers. It may not have helped during the ground stop",
      "outlet": "Toronto Star",
      "url": "https://www.thestar.com/news/world/united-states/trump-clipped-biden-s-payouts-for-stranded-travelers-it-may-not-have-helped-during-the-ground-stop/article_c7dd9008-6bbb-5b60-af25-d81f6e22e2e4.html",
-     "since": "2026-11-17T05:20:42.982535+00:00"
+     "since": "2026-11-17T05:26:25.342024+00:00"
     },
     "photo_seen": [
      "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/d/6a/d6ae5411-2e4c-5fd2-b7ae-b234fe0c1cd2/6afb8fa0e476e.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
@@ -1742,13 +1745,13 @@
       "outlet": "Euronews",
       "title": "US airports slowly return to normal after three days of disruption caused by take-off ban",
       "url": "https://www.euronews.com/2026/11/16/us-airports-slowly-return-to-normal-after-three-days-of-disruption-caused-by-take-off-ban",
-      "desc": "",
+      "desc": "Throughout the weekend, stranded passengers wandered through chaotic airports and sat on floors, waiting for updates or to be rebooked.",
       "wire": "",
       "by": [
        {
         "outlet": "Euronews",
         "src": "Euronews",
-        "byline": ""
+        "byline": "[ { \"@type\": \"Person\", \"familyName\": \"Blackburn\", \"givenName\": \"Gavin\", \"name\": \"Gavin Blackburn\", , \"worksFor\": { \"@id\""
        }
       ],
       "copies": []
@@ -1764,7 +1767,7 @@
     "canada": "tie",
     "canus": true,
     "incoherent": false,
-    "popular": 5,
+    "popular": 4,
     "us_election": false,
     "fronts": 0,
     "fronts_ca": 0,
@@ -1772,16 +1775,8 @@
     "outled_ca": 4,
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (national desks).",
-    "weight": 41,
+    "weight": 40,
     "videos": [
-     {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=mzhX7mwi3PI",
-      "title": "Battle brewing in US over air traffic control system funding after FAA ground stop",
-      "img": "https://i.ytimg.com/vi/mzhX7mwi3PI/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
      {
       "net": "CBS News",
       "url": "https://www.youtube.com/watch?v=INkloIC1aaU",
@@ -1805,6 +1800,14 @@
       "img": "https://i.ytimg.com/vi/kRbpGNpokXM/hqdefault.jpg",
       "rec": false,
       "up": ""
+     },
+     {
+      "net": "CBS News",
+      "url": "https://www.youtube.com/watch?v=UpkNZc-tR1E",
+      "title": "Trump says he doesn't take any responsibility for nationwide ground stop",
+      "img": "https://i.ytimg.com/vi/UpkNZc-tR1E/hqdefault.jpg",
+      "rec": false,
+      "up": ""
      }
     ]
    },
@@ -1815,7 +1818,7 @@
      "canada-u.s",
      "possible",
      "caution",
-     "tariffs",
+     "former",
      "trade"
     ],
     "score": 7,
@@ -1843,7 +1846,7 @@
      "alt": "Mark Carney, Xi Jinping deepen China ties with $400-million trade deal",
      "outlet": "Toronto Star",
      "url": "https://www.thestar.com/politics/federal/carney-xi-deepen-china-ties-with-400m-trade-deal/article_1479e592-3122-43bf-b500-eea0010a261c.html",
-     "since": "2026-11-17T05:20:47.637738+00:00"
+     "since": "2026-11-17T05:26:29.418819+00:00"
     },
     "photo_seen": [
      "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/5/01/50137334-cd96-550f-a05e-b3e7d3ea96a9/6afbcc938565f.image.jpg?crop=1788%2C939%2C0%2C110&resize=1200%2C630&order=crop%2Cresize"
@@ -2082,6 +2085,10 @@
   ],
   "passed_over": [
    {
+    "title": "Nvidia rules out Jensen Huang comeback as campaign for his return grows",
+    "url": "https://www.bnnbloomberg.ca/business/company-news/2026/11/17/nvidia-rules-out-jensen-huang-comeback-as-campaign-for-his-return-grows/"
+   },
+   {
     "title": "Fire reported at major Russian petrochemical complex in Bashkortostan amid drone attack",
     "url": "https://kyivindependent.com/fire-reported-at-major-russian-petrochemical-complex-in-bashkortostan-amid-drone-attack/"
    }
@@ -2204,7 +2211,7 @@
    "id": "9TIi5-MCcY4",
    "r": "ca",
    "o": "CTV News",
-   "t": "54% of Canadians oppose trade deal with U.S. tariffs: Nanos poll",
+   "t": "54% of Canadians reject U.S. trade deal with tariffs: poll",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=9TIi5-MCcY4",
@@ -2218,7 +2225,7 @@
    "id": "D1aJHjkkrQg",
    "r": "ca",
    "o": "CTV News",
-   "t": "Gasoline prices up nearly 31% year-over-year: StatCan",
+   "t": "Inflation unchanged at 3.1% as gas prices surge",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=D1aJHjkkrQg",
@@ -2531,7 +2538,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=kuHZsSLUg3s",
    "img": "https://i.ytimg.com/vi/kuHZsSLUg3s/hqdefault.jpg",
-   "up": "2026-11-17",
+   "up": "2026-11-16",
    "added": "2026-11-17T05:09:13.172430+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -2568,7 +2575,7 @@
    "id": "NmYdARl-caU",
    "r": "world",
    "o": "Sky News",
-   "t": "Was Jeffrey Epstein killed?",
+   "t": "Forensic expert finds no 'place for suicide' in Epstein's death",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=NmYdARl-caU",
@@ -2582,7 +2589,7 @@
    "id": "eejt6BL_c90",
    "r": "world",
    "o": "Reuters",
-   "t": "Will Trump’s Asia trip be overshadowed by the Nvidia crisis? | Reuters World News",
+   "t": "Nvidia turmoil grows as Trump heads to Asia for high-stakes talks | Reuters World News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=eejt6BL_c90",
@@ -2596,41 +2603,13 @@
    "id": "IF8MdnI-E7A",
    "r": "world",
    "o": "Sky News",
-   "t": "What does Andy Burnham's EU reset mean for Britain?",
+   "t": "Andy Burnham calls for reset in UK's relationship with EU",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=IF8MdnI-E7A",
    "img": "https://i.ytimg.com/vi/IF8MdnI-E7A/hqdefault.jpg",
    "up": "2026-11-16",
    "added": "2026-11-16T23:08:31.763647+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "iSog3_bYIz0",
-   "r": "world",
-   "o": "BBC News",
-   "t": "“Brexit hasn’t worked and Britain lost more that it gained” says Andy Burnham | BBC News",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=iSog3_bYIz0",
-   "img": "https://i.ytimg.com/vi/iSog3_bYIz0/hqdefault.jpg",
-   "up": "2026-11-16",
-   "added": "2026-11-16T23:22:34.198622+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "2_-MoFutKZo",
-   "r": "world",
-   "o": "BBC News",
-   "t": "What is the UK government's plan to create more jobs for young people? | BBC Newscast",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=2_-MoFutKZo",
-   "img": "https://i.ytimg.com/vi/2_-MoFutKZo/hqdefault.jpg",
-   "up": "2026-11-16",
-   "added": "2026-11-16T23:22:34.198622+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2652,7 +2631,7 @@
    "id": "Wo9lDDTNIR4",
    "r": "world",
    "o": "DW News",
-   "t": "The US now has three carrier strike groups in the region | DW News",
+   "t": "Why Washington is sending more naval power to the Middle East | DW News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=Wo9lDDTNIR4",
@@ -3092,10 +3071,10 @@
   "edition": "Tuesday morning, November 17",
   "lines": [
    "Good morning. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
-   "Carney meets with Chinese President Xi in Shenzhen, China, The Canadian Press reports.",
    "United Airlines says it has a widespread system outage, just days after nationwide ground stop, The Associated Press reports.",
    "A volunteer-run charity in Bragg Creek is trying to raise $50,000 by Friday, saying hundreds of thousands of dollars were drained from its bank accounts in a cyber attack, CTV News reports.",
-   "St. John’s woman once again charged with fraud — this time involving Elizabeth Fry Society, CBC News reports.",
+   "Former ambassadors caution tariffs may stay but say Canada-U.S. trade deal possible, The Canadian Press reports.",
+   "Nvidia rules out Jensen Huang comeback as campaign for his return grows, The Canadian Press reports.",
    "United Airlines said Monday that it had resolved a technology issue that delayed departing flights, just days after a malfunction in the U.S, The Associated Press reports.",
    "UK leader Andy Burnham says Brexit hasn’t worked ahead of a reset summit with the EU, The Associated Press reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
@@ -3204,13 +3183,13 @@
     ]
    },
    {
-    "h": "Manitoba medical volunteers forced to travel long road home after U.S. flight stop",
-    "u": "https://www.winnipegfreepress.com/breakingnews/2026/11/15/manitoba-medical-volunteers-forced-to-travel-long-road-home-after-u-s-flight-stop",
+    "h": "Kenaston project both pricey and risky",
+    "u": "https://www.winnipegfreepress.com/opinion/editorials/2026/11/16/kenaston-project-both-pricey-and-risky",
     "o": [
      [
       "Winnipeg Free Press",
       1,
-      "https://www.winnipegfreepress.com/breakingnews/2026/11/15/manitoba-medical-volunteers-forced-to-travel-long-road-home-after-u-s-flight-stop"
+      "https://www.winnipegfreepress.com/opinion/editorials/2026/11/16/kenaston-project-both-pricey-and-risky"
      ]
     ]
    },
@@ -3259,13 +3238,13 @@
     ]
    },
    {
-    "h": "Local union, Canada Post spar over package delivery rules",
-    "u": "https://www.winnipegfreepress.com/breakingnews/2026/11/13/local-union-canada-post-spar-over-package-delivery-rules",
+    "h": "Manitoba medical volunteers forced to travel long road home after U.S. flight stop",
+    "u": "https://www.winnipegfreepress.com/breakingnews/2026/11/15/manitoba-medical-volunteers-forced-to-travel-long-road-home-after-u-s-flight-stop",
     "o": [
      [
       "Winnipeg Free Press",
       2,
-      "https://www.winnipegfreepress.com/breakingnews/2026/11/13/local-union-canada-post-spar-over-package-delivery-rules"
+      "https://www.winnipegfreepress.com/breakingnews/2026/11/15/manitoba-medical-volunteers-forced-to-travel-long-road-home-after-u-s-flight-stop"
      ]
     ]
    },
@@ -3493,18 +3472,6 @@
    "img": "https://assets.kyivindependent.com/content/images/2026/11/photo_2026-11-16_20-50-45_20261117-042117_20261117-042204.jpg"
   },
   {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Tue 12:17 a.m.",
-   "iso": "2026-11-17T05:17:00+00:00",
-   "title": "Takaichi and ASEAN leaders agree to boost energy and supply chain cooperation",
-   "summary": "The Japanese prime minister proposed a framework to coordinate emergency releases of oil reserves and plans for an advanced tech common market.",
-   "outlet": "The Japan Times, Times Colonist + CBC News (CP), The Japan Times (AFP), Toronto Star, CBS News",
-   "n": 5,
-   "url": "https://www.japantimes.co.jp/news/2026/11/17/japan/politics/takaichi-asean-summits-economy/",
-   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/17/574501.jpg?v=3.1"
-  },
-  {
    "desk": "us",
    "pic": "podium",
    "t": "Mon 11:08 p.m.",
@@ -3517,16 +3484,16 @@
    "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/09/ashley-moody-june-2026.jpg"
   },
   {
-   "desk": "us",
-   "pic": "podium",
-   "t": "Mon 10:07 p.m.",
-   "iso": "2026-11-17T03:07:31+00:00",
-   "title": "Comer announces bid for Kentucky governor",
-   "summary": "",
-   "outlet": "The Hill, NBC News, CBS News, Fox News, VOCM",
+   "desk": "business",
+   "pic": "chart",
+   "t": "Mon 8:00 p.m.",
+   "iso": "2026-11-17T01:00:03+00:00",
+   "title": "Ontario's magical new woodland Christmas village and market are opening this weekend",
+   "summary": "A little bit of Christmas magic is coming to Ontario this weekend. A new holiday market is opening just a road trip from Toronto, and it promises festive cheer, twinkling lights, and endless seasonal charm.",
+   "outlet": "Narcity, Daily Hive, Calgary Herald, Cabin Radio, Telegraph-Journal",
    "n": 5,
-   "url": "https://thehill.com/homenews/campaign/6224056-james-comer-kentucky-governor-run/",
-   "img": ""
+   "url": "https://www.narcity.com/niagara-on-the-lake-christmas-market-vintage-hotels-dates",
+   "img": "https://www.narcity.com/media-library/a-pathway-with-canpoies-of-lights-and-a-christmas-tree-right-a-garden-bridge-adorned-with-festive-lights-at-dusk.jpg?id=68693422&width=1200&height=600&coordinates=0%2C36%2C0%2C36"
   },
   {
    "desk": "us",
@@ -3535,22 +3502,22 @@
    "iso": "2026-11-16T23:12:24+00:00",
    "title": "California sues OpenAI over Hugging Face attack",
    "summary": "Attorney General Rob Bonta alleges OpenAI misled and endangered the public",
-   "outlet": "BBC News, The Hill, Toronto Star, Al Jazeera, NBC News",
+   "outlet": "BBC News, The Hill, Toronto Star (AP), Al Jazeera, NBC News",
    "n": 5,
    "url": "https://www.bbc.co.uk/news/articles/c6wy4xv2mxglo?at_medium=RSS&at_campaign=rss",
    "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/ce1a/live/7c81aa70-e211-11f1-a541-6d0c391a4254.jpg"
   },
   {
-   "desk": "us",
-   "pic": "podium",
-   "t": "Tue 12:08 a.m.",
-   "iso": "2026-11-17T05:08:49+00:00",
-   "title": "Large plume of gas billows out of California landfill",
-   "summary": "CASTAIC, Calif. (AP) — A large plume of gas billowed high into the air Monday after crews drilling at a landfill in Los Angeles County caused a rush of gas",
-   "outlet": "Toronto Star + The Canadian Press (via Winnipeg Free Press), The Guardian, Toronto Star, Al Jazeera",
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Tue 12:17 a.m.",
+   "iso": "2026-11-17T05:17:00+00:00",
+   "title": "Takaichi and ASEAN leaders agree to boost energy and supply chain cooperation",
+   "summary": "The Japanese prime minister proposed a framework to coordinate emergency releases of oil reserves and plans for an advanced tech common market.",
+   "outlet": "The Japan Times, Times Colonist + CBC News (CP), Toronto Star, CBS News",
    "n": 4,
-   "url": "https://www.thestar.com/news/world/united-states/large-plume-of-gas-billows-out-of-california-landfill/article_9bf55856-9fd6-51c2-82e5-86537a87107b.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/custom/image/f84403b8-7d76-11ee-9d02-a72a4951957f.png?resize=600%2C600"
+   "url": "https://www.japantimes.co.jp/news/2026/11/17/japan/politics/takaichi-asean-summits-economy/",
+   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/17/574501.jpg?v=3.1"
   },
   {
    "desk": "world",
@@ -3586,6 +3553,30 @@
    "outlet": "Toronto Star + CP24 + BNN Bloomberg, Toronto Star, CTV News + CP24 + BNN Bloomberg, The Hill",
    "n": 4,
    "url": "https://www.thestar.com/news/world/xi-and-carney-call-for-deeper-ties-as-canada-looks-beyond-us-for-trade/article_76900edb-0ef7-5d4b-b101-d02193d4ce91.html",
+   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/custom/image/f84403b8-7d76-11ee-9d02-a72a4951957f.png?resize=600%2C600"
+  },
+  {
+   "desk": "us",
+   "pic": "podium",
+   "t": "Mon 10:07 p.m.",
+   "iso": "2026-11-17T03:07:31+00:00",
+   "title": "Comer announces bid for Kentucky governor",
+   "summary": "",
+   "outlet": "The Hill, NBC News, CBS News, Fox News",
+   "n": 4,
+   "url": "https://thehill.com/homenews/campaign/6224056-james-comer-kentucky-governor-run/",
+   "img": ""
+  },
+  {
+   "desk": "us",
+   "pic": "podium",
+   "t": "Tue 12:08 a.m.",
+   "iso": "2026-11-17T05:08:49+00:00",
+   "title": "Large plume of gas billows out of California landfill",
+   "summary": "CASTAIC, Calif. (AP) — A large plume of gas billowed high into the air Monday after crews drilling at a landfill in Los Angeles County caused a rush of gas",
+   "outlet": "Toronto Star + The Canadian Press (via Winnipeg Free Press), The Guardian, Al Jazeera",
+   "n": 3,
+   "url": "https://www.thestar.com/news/world/united-states/large-plume-of-gas-billows-out-of-california-landfill/article_9bf55856-9fd6-51c2-82e5-86537a87107b.html",
    "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/custom/image/f84403b8-7d76-11ee-9d02-a72a4951957f.png?resize=600%2C600"
   },
   {
@@ -3685,25 +3676,13 @@
    "img": "https://www.ctvnews.ca/resizer/v2/ESZ3IIOU3ZGZXHDEV4H4C5YGYU.jpeg?smart=true&auth=dd83ea3d8fd1f929265d6d7ec09a61b561f6d14514b669881ba17841389a7c50&width=1200&height=630"
   },
   {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Mon 4:09 p.m.",
-   "iso": "2026-11-16T21:09:41.101000+00:00",
-   "title": "N.L. premier waiting to hear from Quebec on Churchill River power deal",
-   "summary": "Quebec Energy Minister Stéphane Paquet said the Churchill River power deal is not set in stone, setting off a series of questions for Premier Tony Wakeham in Newfoundland and Labrador's House of Assembly.",
-   "outlet": "CBC News, Cabin Radio",
-   "n": 2,
-   "url": "https://www.cbc.ca/news/canada/newfoundland-labrador/nl-churchill-river-9.7424046",
-   "img": "https://i.cbc.ca/ais/3e492953-64b8-4082-bbe9-56e4ee189d3c,1794861215806/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1920%2C1080%29%3BResize%3D620"
-  },
-  {
    "desk": "world",
    "pic": "globe",
    "t": "Mon 3:52 p.m.",
    "iso": "2026-11-16T20:52:38+00:00",
    "title": "Ex-CRA employee sentenced after pleading guilty to fraud, breach of trust",
    "summary": "Mounties say Yoan Zola pleaded guilty to three of the charges — breach of trust, fraud and trafficking in identity information — last July",
-   "outlet": "Global News + Toronto Star + CityNews Vancouver + CityNews Ottawa + 5 more, Yukon News",
+   "outlet": "Global News + Toronto Star + CityNews Vancouver + CityNews Ottawa + 5 more (CP), Yukon News",
    "n": 2,
    "url": "https://globalnews.ca/news/12153482/cra-employee-fraud-breach-of-trust/",
    "img": "https://globalnews.ca/wp-content/uploads/2026/11/CRA-employee-fraud-breach-of-trust.jpg?quality=65&strip=all&w=720&h=379&crop=1"
@@ -3769,16 +3748,16 @@
    "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/17/574467.jpg?v=3.1"
   },
   {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Mon 10:08 p.m.",
-   "iso": "2026-11-17T03:08:00+00:00",
-   "title": "Taiwan’s currency paradox: How an AI boom left its dollar behind",
-   "summary": "The Taiwan dollar’s slide toward its weakest level in a decade is confounding the normal rules of currency trading.",
-   "outlet": "The Japan Times",
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Mon 9:59 p.m.",
+   "iso": "2026-11-17T02:59:21+00:00",
+   "title": "Carney, Xi agree to ease trade restrictions",
+   "summary": "Mark Carney and Xi Jinping agreed to expand market access for Canadian goods as Ottawa looks to deepen its trade relationship with China.",
+   "outlet": "Global News",
    "n": 1,
-   "url": "https://www.japantimes.co.jp/business/2026/11/17/markets/taiwan-currency-paradox-ai-dollar/",
-   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/17/574464.jpg?v=3.1"
+   "url": "https://globalnews.ca/news/12153994/carney-xi-meeting-apec-summit/",
+   "img": "https://globalnews.ca/wp-content/uploads/2026/11/CP177288476.jpg?quality=65&strip=all&w=720&h=379&crop=1"
   },
   {
    "desk": "politics",
@@ -4219,7 +4198,7 @@
     "'Not welcome here' Filipinos protest ahead of Trump's visit to Manila – video",
     "US foreign policy Trump to embark on Asia trip in apparent foreign policy push before end of term",
     "US military Third US aircraft carrier brings thousands more troops to Middle East",
-    "Fossil fuels Russia, Saudi Arabia and Australia named as biggest CO2 exporters in history"
+    "Brexit Burnham says Brexit has dramatically diminished Britain’s global standing"
    ],
    "u": [
     "",
@@ -4260,7 +4239,7 @@
     "url": "https://www.youtube.com/watch?v=0TtsQz8oOv4",
     "img": "https://i.ytimg.com/vi/0TtsQz8oOv4/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "332",
+    "watching": "327",
     "rolling": true
    },
    {
@@ -4270,7 +4249,7 @@
     "url": "https://www.youtube.com/watch?v=FkhdzaXwok8",
     "img": "https://i.ytimg.com/vi/FkhdzaXwok8/hqdefault.jpg",
     "story": "ASEAN leaders and international partners gather for 49th summit",
-    "watching": "14"
+    "watching": "21"
    }
   ],
   "upcoming": [
@@ -4423,7 +4402,7 @@
    "story": "Iran war live: Houthis advance in Yemen as Vance rejects ‘forever war’",
    "title": "Iran war live: Houthis advance in Yemen as Vance rejects ‘forever war’",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/16/live-houthis-advance-in-yemen-as-tankers-hit-sea-mines-in-strait-of-hormuz?traffic_source=rss",
-   "updated": "2026-11-17T05:14:17+00:00",
+   "updated": "2026-11-17T05:21:08+00:00",
    "ended": false,
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/epa_6afbb820a25c-1794881568.jpg?resize=1200%2C630"
   }
@@ -4703,15 +4682,6 @@
      "tie": ""
     },
     {
-     "t": "Mon 1:33 p.m.",
-     "iso": "2026-11-16T18:33:32+00:00",
-     "outlet": "VOCM",
-     "title": "Churchill Falls ‘Will Not Be Renegotiated’ Premier Asserts Following Reports Quebec Minister Wants to ‘Rework’ Parts of Agreement",
-     "url": "https://vocm.com/2026/11/16/churchill-falls-will-not-be-renegotiated-premier-asserts-following-reports-quebec-minister-wants-to-rework-certain-parts-of-agreement/",
-     "ca": false,
-     "tie": ""
-    },
-    {
      "t": "Mon 11:42 a.m.",
      "iso": "2026-11-16T16:42:35+00:00",
      "outlet": "CBC News",
@@ -4727,6 +4697,15 @@
      "title": "Microsoft could be hit with Canadian class-action lawsuit following outage",
      "url": "https://dailyhive.com/canada/microsoft-outage-canada-class-action-lawsuit",
      "ca": false,
+     "tie": ""
+    },
+    {
+     "t": "Sun 3:18 p.m.",
+     "iso": "2026-11-15T20:18:00+00:00",
+     "outlet": "Toronto Star",
+     "title": "Flight ground stop in Canada, like the FAA's on Friday, unlikely: aviation expert",
+     "url": "https://www.thestar.com/news/canada/flight-ground-stop-in-canada-like-the-faa-s-on-friday-unlikely-aviation-expert/article_d6e0a6ff-bc7c-5aaa-9806-9d1f304ffd96.html",
+     "ca": true,
      "tie": ""
     }
    ],
@@ -4841,6 +4820,115 @@
   }
  },
  "bds": [
+  {
+   "id": "bd-auto-1f393a9c",
+   "auto": true,
+   "desk": "United States",
+   "status": "Developing",
+   "at": "2026-11-17T02:52:56+00:00",
+   "exact": true,
+   "img": "live/img/auto-1f393a9c-0ad67ecae6.jpg",
+   "credit": "via BNN Bloomberg",
+   "pic": "globe",
+   "h": "Nvidia rules out Jensen Huang comeback as campaign for his return grows",
+   "lede": "Nvidia’s board is not weighing a return for Jensen Huang as CEO, sources told Reuters, days after extramarital affairs forced his resignation.",
+   "newl": "Now carried by 8 independent newsrooms.",
+   "rows": [
+    [
+     "Al Jazeera",
+     "The Trump administration introduces export licence requirements for Malaysia, Thailand, Indonesia, Singapore and Brazil.",
+     [
+      1
+     ]
+    ],
+    [
+     "BBC News",
+     "A number of tech figures have backed an effort asking the AI chip giant to give Jensen Huang his job back.",
+     [
+      2
+     ]
+    ],
+    [
+     "CTV News",
+     "Nvidia’s board is not weighing a return for Jensen Huang as CEO, sources told Reuters, days after extramarital affairs forced his resignation.",
+     [
+      4
+     ]
+    ],
+    [
+     "CBS News",
+     "President Trump was on his way to Asia for a historic three-way meeting with the leaders of Russia and China. The meeting comes amid the fallout from the Nvidia scandal, but the president tried to downplay the impact. Weijia Jiang has more.",
+     [
+      7
+     ]
+    ],
+    [
+     "PBS NewsHour",
+     "Huang resigned last week from Nvidia, apparently ousted by the board after revelations that he had extramarital affairs, both with a Chinese businesswoman suspected of being an intelligence asset for Beijing and with a senior executive who reported to him.",
+     [
+      8
+     ]
+    ]
+   ],
+   "src": [
+    [
+     "Al Jazeera",
+     "US moves to block China’s remote access to AI chips amid Nvidia scandal",
+     "https://www.aljazeera.com/economy/2026/11/17/us-moves-to-block-chinas-remote-access-to-ai-chips-amid-nvidia-scandal?traffic_source=rss"
+    ],
+    [
+     "BBC News",
+     "Nvidia dismisses 'Bring Jensen Back' campaign as Trump backs effort to reinstate ex CEO",
+     "https://www.bbc.co.uk/news/articles/cry49plv8v3go?at_medium=RSS&at_campaign=rss"
+    ],
+    [
+     "The Guardian",
+     "Trump defends commerce secretary Lutnick for allegedly slow-walking Nvidia chip export restrictions – as it happened",
+     "https://www.theguardian.com/us-news/live/2026/nov/16/donald-trump-asia-visit-democrats-republicans-elizabeth-warren-faa-air-disruption-latest-news-updates"
+    ],
+    [
+     "CTV News",
+     "Nvidia rules out Jensen Huang comeback as campaign for his return grows",
+     "https://www.ctvnews.ca/business/article/nvidia-rules-out-jensen-huang-comeback-as-campaign-for-his-return-grows/"
+    ],
+    [
+     "CP24",
+     "Nvidia rules out Jensen Huang comeback as campaign for his return grows",
+     "https://www.cp24.com/news/money/2026/11/17/nvidia-rules-out-jensen-huang-comeback-as-campaign-for-his-return-grows/"
+    ],
+    [
+     "BNN Bloomberg",
+     "Nvidia rules out Jensen Huang comeback as campaign for his return grows",
+     "https://www.bnnbloomberg.ca/business/company-news/2026/11/17/nvidia-rules-out-jensen-huang-comeback-as-campaign-for-his-return-grows/"
+    ],
+    [
+     "CBS News",
+     "Trump traveling to China amid Nvidia scandal fallout",
+     "https://www.cbsnews.com/video/trump-traveling-china-amid-nvidia-scandal-fallout/"
+    ],
+    [
+     "PBS NewsHour",
+     "Trump backs campaign to reinstate Huang as CEO of Nvidia",
+     "https://www.pbs.org/newshour/politics/trump-backs-campaign-to-reinstate-huang-as-ceo-of-nvidia"
+    ],
+    [
+     "CBC News",
+     "Silicon Valley leaders call for reinstatement of Nvidia CEO with 'Stand With Jensen' petition",
+     "https://www.cbc.ca/news/business/nvidia-ceo-huang-calls-reinstatements-9.7423555"
+    ],
+    [
+     "The Hill",
+     "Nvidia’s board not considering return of Huang as CEO",
+     "https://thehill.com/policy/technology/6223454-nvidia-board-rejects-huang-return/"
+    ],
+    [
+     "ABC News",
+     "Trump says he 'would not mind' if Jensen Huang is reinstated as Nvidia CEO",
+     "https://abcnews.com/Business/trump-mind-jensen-huang-reinstated-nvidia-ceo/story?id=138174468"
+    ]
+   ],
+   "lead": 6
+  },
   {
    "id": "bd-auto-e60a0656",
    "auto": true,
