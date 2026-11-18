@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-18T07:29:11.134602+00:00",
- "checkedLabel": "Wed 2:29 a.m.",
+ "checked": "2026-11-18T07:39:10.353924+00:00",
+ "checkedLabel": "Wed 2:39 a.m.",
  "stories": [
   {
    "key": "top",
@@ -261,7 +261,7 @@
    "Toronto Star",
    "https://www.thestar.com/news/iran-war-dents-middle-east-sports-model-as-events-are-canceled-or-postponed-f1-bucks-the-trend/article_5fc72dce-5ed2-53f9-98ec-2f13cd69952e.html",
    "2026-11-18T05:10:59+00:00",
-   1
+   2
   ]
  ],
  "blogs": [
@@ -321,7 +321,7 @@
    "score": 17,
    "title": "‘Are u really threatening to play China off the U.S.?’ Trump trade adviser asks PM Carney",
    "url": "https://www.ctvnews.ca/world/trumps-tariffs/article/are-u-really-threatening-to-play-china-off-the-us-trump-trade-adviser-asks-pm-carney/",
-   "outlets": 30,
+   "outlets": 22,
    "why": [],
    "theme": ""
   },
@@ -374,17 +374,17 @@
    "theme": ""
   },
   {
-   "score": 9,
-   "title": "UAE company says 11 wounded, one missing after vessel attacked in Hormuz Strait",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/uae-company-says-11-wounded-one-missing-after-vessel-attacked-hormuz",
-   "outlets": 7,
+   "score": 10,
+   "title": "IIHF confirms cyberattack after website goes offline",
+   "url": "https://www.cbc.ca/news/world/iihf-website-hacked-russia-9.7424810",
+   "outlets": 10,
    "why": [],
    "theme": ""
   },
   {
    "score": 9,
-   "title": "Iran's foreign minister vows 'unforgettable response' if US-Israeli attacks target civilian infrastructure",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-foreign-minister-vows-unforgettable-response-if-us-israeli-attacks",
+   "title": "UAE company says 11 wounded, one missing after vessel attacked in Hormuz Strait",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/uae-company-says-11-wounded-one-missing-after-vessel-attacked-hormuz",
    "outlets": 7,
    "why": [],
    "theme": ""
@@ -414,11 +414,11 @@
      "democrats",
      "sullivan",
      "peltola",
-     "senate",
-     "alaska"
+     "alaska",
+     "senate"
     ],
     "score": 20,
-    "outlets": 12,
+    "outlets": 11,
     "carriers": 14,
     "tag": "Breaking",
     "title": "Mary Peltola wins U.S. Senate seat in Alaska for Democrats",
@@ -485,7 +485,7 @@
       "url": "https://www.aljazeera.com/news/2026/11/18/mary-peltola-wins-alaska-senate-seat-in-another-democratic-win?traffic_source=rss"
      }
     ],
-    "independent": 12,
+    "independent": 11,
     "reports": [
      {
       "t": "Wed 2:00 a.m.",
@@ -541,7 +541,7 @@
       "outlet": "Toronto Star",
       "title": "Why AP called the Alaska Senate race for Democrat Mary Peltola",
       "url": "https://www.thestar.com/news/world/united-states/why-ap-called-the-alaska-senate-race-for-democrat-mary-peltola/article_33b150e6-5149-5cae-af90-4d17581ac0b5.html",
-      "desc": ""
+      "desc": "WASHINGTON (AP) — The Associated Press declared Democrat Mary Peltola the winner in the race for U.S. Senate in Alaska on Tuesday, after an update in the vote count pushed"
      },
      {
       "t": "Tue 10:48 p.m.",
@@ -633,6 +633,11 @@
         "byline": "[{\"@type\":\"Person\",\"name\":\"The Canadian Press\"}] \"The Canadian Pr"
        },
        {
+        "outlet": "Toronto Star",
+        "src": "The Associated Press",
+        "byline": "\"The Associated Press\" \"The Associated Pr"
+       },
+       {
         "outlet": "CBC News",
         "src": "The Associated Press",
         "byline": "\"photoURL\":\"\"},\"recentContent\":{}} \"The Associated Press\"  The Associated Pr"
@@ -644,6 +649,10 @@
        }
       ],
       "copies": [
+       {
+        "outlet": "Toronto Star",
+        "url": "https://www.thestar.com/news/world/united-states/why-ap-called-the-alaska-senate-race-for-democrat-mary-peltola/article_33b150e6-5149-5cae-af90-4d17581ac0b5.html"
+       },
        {
         "outlet": "CBC News",
         "url": "https://www.cbc.ca/news/world/democrat-peltola-wins-alaska-senate-seat-9.7426095"
@@ -701,23 +710,6 @@
         "outlet": "The Guardian",
         "src": "The Guardian",
         "byline": "[{\"@type\":\"Person\",\"name\":\"Ed Pilkington\",}] \"Ed Pilkington\" \"Ed Pilkington in Anchorage, Alaska \" https://www.theguardi"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Tue 10:54 p.m.",
-      "primary": false,
-      "outlet": "Toronto Star",
-      "title": "Why AP called the Alaska Senate race for Democrat Mary Peltola",
-      "url": "https://www.thestar.com/news/world/united-states/why-ap-called-the-alaska-senate-race-for-democrat-mary-peltola/article_33b150e6-5149-5cae-af90-4d17581ac0b5.html",
-      "desc": "",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Toronto Star",
-        "src": "Torstar",
-        "byline": ""
        }
       ],
       "copies": []
@@ -837,18 +829,19 @@
     "incoherent": false,
     "popular": 0,
     "us_election": true,
-    "fronts": 6,
+    "fronts": 7,
     "fronts_ca": 2,
     "fronts_who": [
      "CBC News",
      "The Globe and Mail",
      "NBC News",
+     "CBS News",
      "ABC News",
      "The Guardian",
      "NPR"
     ],
     "judgment": "national",
-    "judgment_why": "National: leading 6 front pages (CBC News, The Globe and Mail, NBC News, ABC News, The Guardian, NPR).",
+    "judgment_why": "National: leading 7 front pages (CBC News, The Globe and Mail, NBC News, CBS News, ABC News, The Guardian).",
     "weight": 54,
     "videos": [
      {
@@ -886,16 +879,17 @@
     "live": "",
     "weight": 54,
     "score": 20,
-    "independent": 12,
+    "independent": 11,
     "most_read": 0,
     "canada": "tie",
     "theme": "",
     "top": true,
-    "fronts": 6,
+    "fronts": 7,
     "fronts_who": [
      "CBC News",
      "The Globe and Mail",
      "NBC News",
+     "CBS News",
      "ABC News",
      "The Guardian",
      "NPR"
@@ -903,7 +897,7 @@
     "rule": "Leading other newsrooms' front pages (Canadian ones among them): the story everyone is leading with",
     "carriers": 14,
     "judgment": "national",
-    "why_judged": "National: leading 6 front pages (CBC News, The Globe and Mail, NBC News, ABC News, The Guardian, NPR)."
+    "why_judged": "National: leading 7 front pages (CBC News, The Globe and Mail, NBC News, CBS News, ABC News, The Guardian)."
    },
    {
     "title": "Nvidia rejects Jensen Huang’s offer to return as CEO despite pressure from Silicon Valley",
@@ -983,8 +977,9 @@
     "canada": "none",
     "theme": "",
     "top": false,
-    "fronts": 1,
+    "fronts": 2,
     "fronts_who": [
+     "CBS News",
      "ABC News"
     ],
     "rule": "No Canadian tie",
@@ -1004,8 +999,10 @@
     "canada": "none",
     "theme": "",
     "top": false,
-    "fronts": 0,
-    "fronts_who": [],
+    "fronts": 1,
+    "fronts_who": [
+     "CBS News"
+    ],
     "rule": "No Canadian tie",
     "carriers": 4,
     "judgment": "regional",
@@ -1100,14 +1097,14 @@
     "why": "not built: only 2 independent report(s) (3 sites)"
    },
    {
+    "title": "IIHF confirms cyberattack after website goes offline",
+    "score": 10,
+    "why": "not built: only 2 independent report(s) (10 sites)"
+   },
+   {
     "title": "Car falls into massive pothole in downtown Montreal",
     "score": 8,
     "why": "not built: only 2 independent report(s) (4 sites)"
-   },
-   {
-    "title": "RFK Jr. faces fierce backlash after US loses measles-free status for first time in 26 years",
-    "score": 7,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
   ],
   "moved": [
@@ -1157,7 +1154,7 @@
      "alt": "Rare images of Indigenous group in Amazon highlight threats, advocates say",
      "outlet": "Al Jazeera",
      "url": "https://www.aljazeera.com/news/2026/11/18/rare-images-of-indigenous-group-in-amazon-highlight-threats-advocates-say?traffic_source=rss",
-     "since": "2026-11-18T07:30:58.926764+00:00"
+     "since": "2026-11-18T07:40:30.790916+00:00"
     },
     "photo_seen": [
      "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6afcf8097b422-1794963465.jpg?resize=1920%2C1333"
@@ -1387,7 +1384,7 @@
      "alt": "Ranchman’s to move into former Schanks location in south Calgary",
      "outlet": "CityNews Calgary",
      "url": "https://calgary.citynews.ca/2026/11/17/ranchmans-to-move-into-former-schanks-location-in-south-calgary/",
-     "since": "2026-11-18T07:30:57.260218+00:00"
+     "since": "2026-11-18T07:40:28.668821+00:00"
     },
     "photo_seen": [
      "https://calgary.citynews.ca/wp-content/blogs.dir/sites/8/2026/11/17/Untitled-November-17-2026-at-14.09.03-1.png"
@@ -1742,6 +1739,62 @@
    "geo": "unknown"
   },
   {
+   "id": "eOnBqYpnVho",
+   "r": "ca",
+   "o": "CTV News",
+   "t": "Global tech outages raise questions about vulnerabilities in digital infrastructure",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=eOnBqYpnVho",
+   "img": "https://i.ytimg.com/vi/eOnBqYpnVho/hqdefault.jpg",
+   "up": "2026-11-18",
+   "added": "2026-11-18T07:39:10.353924+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "NQ8B_zcf72A",
+   "r": "ca",
+   "o": "CTV News",
+   "t": "PBO finds Carney government spending has increased by more than $330 Billion",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=NQ8B_zcf72A",
+   "img": "https://i.ytimg.com/vi/NQ8B_zcf72A/hqdefault.jpg",
+   "up": "2026-11-17",
+   "added": "2026-11-18T07:39:10.353924+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "XHEK8KFMkoc",
+   "r": "ca",
+   "o": "APTN News",
+   "t": "More critical minerals through Port of Churchill, questions on benefiting First Nations | APTN News",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=XHEK8KFMkoc",
+   "img": "https://i.ytimg.com/vi/XHEK8KFMkoc/hqdefault.jpg",
+   "up": "2026-11-17",
+   "added": "2026-11-18T07:39:10.353924+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "BxY3xG9ADfY",
+   "r": "ca",
+   "o": "APTN News",
+   "t": "Guide released by Concordia University for conducting work in Indigenous communities | APTN News",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=BxY3xG9ADfY",
+   "img": "https://i.ytimg.com/vi/BxY3xG9ADfY/hqdefault.jpg",
+   "up": "2026-11-17",
+   "added": "2026-11-18T07:39:10.353924+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
    "id": "r2E6knuBNdk",
    "r": "us",
    "o": "PBS NewsHour",
@@ -1941,7 +1994,7 @@
    "id": "aVOPiQffJbI",
    "r": "us",
    "o": "Associated Press",
-   "t": "Archaeologists uncover a hidden medieval cathedral floor in Sudan",
+   "t": "A huge hidden medieval cathedral floor is uncovered in Sudan",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=aVOPiQffJbI",
@@ -2036,20 +2089,6 @@
    "geo": "unknown"
   },
   {
-   "id": "IR0XD-STRPU",
-   "r": "world",
-   "o": "BBC News",
-   "t": "Concerns over US cybersecurity amid tech outages | BBC News",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=IR0XD-STRPU",
-   "img": "https://i.ytimg.com/vi/IR0XD-STRPU/hqdefault.jpg",
-   "up": "2026-11-17",
-   "added": "2026-11-18T01:29:26.370590+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "ynr5xBdaNkk",
    "r": "world",
    "o": "BBC News",
@@ -2106,20 +2145,6 @@
    "geo": "unknown"
   },
   {
-   "id": "NljbnyhvcSo",
-   "r": "world",
-   "o": "Reuters",
-   "t": "India has a rice problem: it's growing too much of the stuff",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=NljbnyhvcSo",
-   "img": "https://i.ytimg.com/vi/NljbnyhvcSo/hqdefault.jpg",
-   "up": "2026-11-18",
-   "added": "2026-11-18T05:59:26.118618+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "Tahb2XGq0Mc",
    "r": "world",
    "o": "Sky News",
@@ -2158,6 +2183,34 @@
    "img": "https://i.ytimg.com/vi/qTDcij51OTA/hqdefault.jpg",
    "up": "2026-11-18",
    "added": "2026-11-18T06:59:11.276070+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "Y2bf32s2pQc",
+   "r": "world",
+   "o": "BBC News",
+   "t": "We fact-checked your top claims about small boats | BBC News",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=Y2bf32s2pQc",
+   "img": "https://i.ytimg.com/vi/Y2bf32s2pQc/hqdefault.jpg",
+   "up": "2026-11-18",
+   "added": "2026-11-18T07:39:10.353924+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "dr8CGlKN5SY",
+   "r": "world",
+   "o": "Reuters",
+   "t": "Haitians march to support Bukele's troop deployment",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=dr8CGlKN5SY",
+   "img": "https://i.ytimg.com/vi/dr8CGlKN5SY/hqdefault.jpg",
+   "up": "2026-11-18",
+   "added": "2026-11-18T07:39:10.353924+00:00",
    "pic": "globe",
    "geo": "unknown"
   }
@@ -2909,11 +2962,11 @@
    "tz": "America/Winnipeg",
    "world": false,
    "w": "Privacy",
-   "label": "Manitoba trio on Canada’s top employers list",
-   "u": "https://www.winnipegfreepress.com/business/2026/11/18/manitoba-trio-on-canadas-top-employers-list",
-   "title": "Manitoba trio on Canada’s top employers list",
-   "outlet": "The Canadian Press (via Winnipeg Free Press)",
-   "t": "Wed 2:00 a.m.",
+   "label": "IIHF website hit by cyberattack after Russia excluded from…",
+   "u": "https://winnipeg.citynews.ca/2026/11/17/iihf-website-hit-by-cyberattack-after-russia-excluded-from-world-juniors/",
+   "title": "IIHF website hit by cyberattack after Russia excluded from world juniors",
+   "outlet": "CityNews Winnipeg",
+   "t": "Tue 3:07 p.m.",
    "hot": false
   },
   {
@@ -2977,16 +3030,16 @@
    "hot": false
   },
   {
-   "city": "Kyiv",
-   "tz": "Europe/Kyiv",
+   "city": "Jerusalem",
+   "tz": "Asia/Jerusalem",
    "world": true,
    "w": "Attacks",
-   "label": "Germany, UK push back after US criticizes Ukraine's deep…",
-   "u": "https://kyivindependent.com/germany-uk-push-back-after-us-criticizes-ukraines-deep-strikes-into-russia/",
-   "title": "Germany, UK push back after US criticizes Ukraine's deep strikes into Russia",
-   "outlet": "Kyiv Independent",
-   "t": "Tue 10:54 p.m.",
-   "hot": false
+   "label": "Iran's foreign minister vows 'unforgettable response' if…",
+   "u": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-foreign-minister-vows-unforgettable-response-if-us-israeli-attacks",
+   "title": "Iran's foreign minister vows 'unforgettable response' if US-Israeli attacks target civilian infrastructure",
+   "outlet": "Middle East Eye",
+   "t": "Wed 2:22 a.m.",
+   "hot": true
   }
  ],
  "bigweek": [],
@@ -3004,18 +3057,6 @@
    "img": "https://i.abcnewsfe.com/a/088a36c0-7465-4e7e-81bf-b0880352e762/donald-trump-1-rt-gmh-261118_1794971613861_hpMain_16x9.jpg?w=1600"
   },
   {
-   "desk": "us",
-   "pic": "podium",
-   "t": "Wed 2:00 a.m.",
-   "iso": "2026-11-18T07:00:25+00:00",
-   "title": "Democrats win Alaska Senate race two weeks after midterms counting began",
-   "summary": "Confirmation of Mary Peltola's victory caps of the party's rout of the Republicans in the midterms Senate election.",
-   "outlet": "BBC News, CBC News + Times Colonist (AP), Euronews, ABC News, The Guardian, Toronto Star, CBS News, Al Jazeera",
-   "n": 8,
-   "url": "https://www.bbc.co.uk/news/articles/cqev3v2ygzlvo?at_medium=RSS&at_campaign=rss",
-   "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/8202/live/39cdb760-dc7a-11f1-b23d-9526db010e6c.jpg"
-  },
-  {
    "desk": "world",
    "pic": "globe",
    "t": "Tue 11:21 p.m.",
@@ -3026,6 +3067,18 @@
    "n": 8,
    "url": "https://www.japantimes.co.jp/news/2026/11/18/japan/crime-legal/aichi-burglary-attempted-murder/",
    "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/18/574637.jpg?v=3.1"
+  },
+  {
+   "desk": "us",
+   "pic": "podium",
+   "t": "Wed 2:00 a.m.",
+   "iso": "2026-11-18T07:00:25+00:00",
+   "title": "Democrats win Alaska Senate race two weeks after midterms counting began",
+   "summary": "Confirmation of Mary Peltola's victory caps of the party's rout of the Republicans in the midterms Senate election.",
+   "outlet": "BBC News, Toronto Star + CBC News + Times Colonist (AP), Euronews, ABC News, The Guardian, CBS News, Al Jazeera",
+   "n": 7,
+   "url": "https://www.bbc.co.uk/news/articles/cqev3v2ygzlvo?at_medium=RSS&at_campaign=rss",
+   "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/8202/live/39cdb760-dc7a-11f1-b23d-9526db010e6c.jpg"
   },
   {
    "desk": "world",
@@ -3162,14 +3215,14 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Wed 12:00 a.m.",
-   "iso": "2026-11-18T05:00:34+00:00",
-   "title": "‘Human’ wins Cambridge dictionary’s word of the year",
-   "summary": "Meaning and use of word has become more important in age of AI chatbot, says dictionary",
-   "outlet": "The Guardian, Toronto Star + CP24 + CBC News (AP)",
+   "t": "Tue 9:58 p.m.",
+   "iso": "2026-11-18T02:58:24.366000+00:00",
+   "title": "IIHF confirms cyberattack after website goes offline",
+   "summary": "The International Ice Hockey Federation has confirmed it has been targeted by a cyberattack, with the organization's website offline since Tuesday morning.",
+   "outlet": "CBC News + CityNews Winnipeg + CityNews Vancouver + CityNews Ottawa + 5 more (CP), Global News",
    "n": 2,
-   "url": "https://www.theguardian.com/science/2026/nov/18/cambridge-word-of-the-year-human",
-   "img": "https://i.guim.co.uk/img/media/d3bff27441734d18c2feb427a057b23c1ce14bdc/1004_0_4725_3780/master/4725.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=74f244dd20d7d6320996f0e7fd2e8401"
+   "url": "https://www.cbc.ca/news/world/iihf-website-hacked-russia-9.7424810",
+   "img": "https://i.cbc.ca/ais/d221d2e8-ed30-4742-9b5f-4cb273fa13f4,1794951421915/full/max/0/default.jpg?im=Crop%2Crect%3D%2828%2C30%2C470%2C264%29%3BResize%3D620"
   },
   {
    "desk": "us",
@@ -3322,7 +3375,7 @@
    "iso": "2026-11-18T01:00:46+00:00",
    "title": "House unanimously passes Conservative MP’s bill honouring son who died by suicide",
    "summary": "The Quebec MP has been championing the legislation while grieving the loss of his son who died by suicide after struggling with addiction and encounters with the justice system.",
-   "outlet": "Global News + Toronto Star + CP24",
+   "outlet": "Global News + Toronto Star + CP24 (CP)",
    "n": 1,
    "url": "https://globalnews.ca/news/12155515/house-conservative-mp-bill-son-suicide/",
    "img": "https://globalnews.ca/wp-content/uploads/2026/11/e22662f9cc843e59bf2be45b67da1051c1faeb54be71626593d040af370745ac.jpg?quality=65&strip=all&w=720&h=379&crop=1"
@@ -3464,7 +3517,7 @@
     "Multiple tech outages have Americans asking: Can somebody fix this?",
     "Mary Peltola wins U.S. Senate seat in Alaska for Democrats",
     "B.C. caregivers explain why a recent SNL sketch has struck a nerve",
-    "Ottawa man plays 365 sports matches in a year | The Moment"
+    "Calgary high school says too many students are getting food delivered"
    ],
    "u": [
     "",
@@ -3472,7 +3525,7 @@
     "https://www.cbc.ca/news/world/outages-faa-banks-microsoft-nsa-are-they-related-9.7425366",
     "https://www.cbc.ca/news/world/democrat-peltola-wins-alaska-senate-seat-9.7426095",
     "https://www.cbc.ca/news/canada/british-columbia/snl-sister-sketch-9.7425423",
-    ""
+    "https://www.cbc.ca/news/canada/calgary/st-francis-high-school-calgary-food-delivery-app-9.7425320"
    ]
   },
   {
@@ -3629,20 +3682,40 @@
    "o": "NBC News",
    "ca": false,
    "h": [
-    "Democrat Mary Peltola flips Alaska Senate seat, defeating GOP Sen. Dan Sullivan",
     "Trump heads to China for high-stakes talks with Xi and Putin",
     "Trump announces new Philippines trade deal",
+    "Democrat Mary Peltola flips Alaska Senate seat, defeating GOP Sen. Dan Sullivan",
     "Sean Duffy’s $50 billion demand for air travel fixes is met with yelling and skepticism in Congress",
     "Why so many major computer systems went down in a week, according to experts",
     "Nvidia enters the post-Jensen Huang era with a bang"
    ],
    "u": [
-    "https://www.nbcnews.com/politics/2026-election/mary-peltola-democrat-wins-alaska-senate-dan-sullivan-gop-rcna603307",
     "https://www.nbcnews.com/politics/trump-administration/live-blog/trump-xi-putin-summit-asia-trip-asean-live-updates-rcna609690",
     "https://www.nbcnews.com/politics/trump-administration/live-blog/trump-xi-putin-summit-asia-trip-asean-live-updates-rcna609690/rcrd124137?canonicalCard=true",
+    "https://www.nbcnews.com/politics/2026-election/mary-peltola-democrat-wins-alaska-senate-dan-sullivan-gop-rcna603307",
     "https://www.nbcnews.com/politics/congress/sean-duffys-50-billion-demand-groundstop-fixes-congress-skepitcal-rcna609844",
     "https://www.nbcnews.com/tech/security/microsoft-faa-chase-nsa-week-major-outages-tech-plan-conspiracy-down-rcna609876",
     "https://www.nbcnews.com/business/corporations/nvidia-post-jensen-huang-kress-earnings-rcna609782"
+   ]
+  },
+  {
+   "o": "CBS News",
+   "ca": false,
+   "h": [
+    "Mary Peltola wins Alaska Senate race, flipping seat for Dems",
+    "Trump in Asia for Putin, Xi summit; possible meeting with Kim Jong Un",
+    "U.S. launches strikes on Iran's Qeshm Island in Strait of Hormuz",
+    "White House drops its nomination for FDA commissioner",
+    "Epstein's death may not have been suicide, new analysis suggests",
+    "Rubio says there's \"zero evidence\" recent tech outages are related"
+   ],
+   "u": [
+    "https://www.cbsnews.com/news/alaska-2026-senate-sullivan-peltola/",
+    "https://www.cbsnews.com/news/trump-asia-trip-trilateral-summit-putin-xi/",
+    "https://www.cbsnews.com/live-updates/iran-war-us-nuclear-oil-strait-of-hormuz/",
+    "https://www.cbsnews.com/news/white-house-drops-heidi-overton-fda-commissioner/",
+    "https://www.cbsnews.com/news/jeffrey-epstein-death-suicide-forensics-expert-analysis/",
+    "https://www.cbsnews.com/news/marco-rubio-tech-outages-not-connected/"
    ]
   },
   {
@@ -3735,7 +3808,7 @@
     "url": "https://www.youtube.com/watch?v=SMD24yhY1mQ",
     "img": "https://i.ytimg.com/vi/SMD24yhY1mQ/hqdefault.jpg",
     "story": "PM Mark Carney speaks with reporters in Shenzhen, China",
-    "watching": "215",
+    "watching": "247",
     "also": [
      {
       "net": "Associated Press",
@@ -3805,6 +3878,74 @@
    }
   ],
   "upcoming": [
+   {
+    "net": "Associated Press",
+    "r": "us",
+    "title": "LIVE: Trump arrives in China for the APEC summit and talks with Xi and Putin",
+    "url": "https://www.youtube.com/watch?v=Yyq8fER2IzA",
+    "img": "https://i.ytimg.com/vi/Yyq8fER2IzA/hqdefault.jpg",
+    "story": "Trump arrives in China for the APEC summit and talks with Xi and Putin",
+    "when": "2026-11-18T08:15:00+00:00",
+    "breaking": false,
+    "reports": [
+     {
+      "outlet": "The Guardian",
+      "title": "Apec summit live: Xi and Putin start talks; Rubio says Trump serious about meeting Kim Jong-un",
+      "url": "https://www.theguardian.com/world/live/2026/nov/18/apec-summit-live-updates-xi-putin-trump-world-leaders-gather-in-china",
+      "t": "Wed 2:19 a.m.",
+      "iso": "2026-11-18T07:19:53+00:00"
+     },
+     {
+      "outlet": "The Japan Times",
+      "title": "Xi and Putin blast Western ‘protectionism’ and sanctions before meeting Trump at APEC",
+      "url": "https://www.japantimes.co.jp/news/2026/11/18/asia-pacific/politics/putin-xi-china-russia-meeting-apec/",
+      "t": "Wed 2:05 a.m.",
+      "iso": "2026-11-18T07:05:00+00:00"
+     },
+     {
+      "outlet": "CBS News",
+      "title": "Trump in Asia for Putin, Xi summit; possible meeting with Kim Jong Un",
+      "url": "https://www.cbsnews.com/news/trump-asia-trip-trilateral-summit-putin-xi/",
+      "t": "Wed 2:05 a.m.",
+      "iso": "2026-11-18T07:05:00+00:00"
+     },
+     {
+      "outlet": "Euronews",
+      "title": "China's Xi and Russia's Putin hold talks on eve of three-way summit with Trump",
+      "url": "https://www.euronews.com/2026/11/18/chinas-xi-jinping-and-putin-hold-talks-in-shenzhen-on-eve-of-three-way-summit-with-trump",
+      "t": "Wed 12:32 a.m.",
+      "iso": "2026-11-18T05:32:27+00:00"
+     },
+     {
+      "outlet": "CTV News",
+      "title": "Trump heads to China, betting on unscripted diplomacy with Xi and Putin",
+      "url": "https://www.ctvnews.ca/world/article/trump-heads-to-china-betting-on-unscripted-diplomacy-with-xi-and-putin/",
+      "t": "Tue 9:43 p.m.",
+      "iso": "2026-11-18T02:43:02+00:00"
+     },
+     {
+      "outlet": "CP24",
+      "title": "Trump heads to China, betting on unscripted diplomacy with Xi and Putin",
+      "url": "https://www.cp24.com/news/world/2026/11/18/trump-heads-to-china-betting-on-unscripted-diplomacy-with-xi-and-putin/",
+      "t": "Tue 9:43 p.m.",
+      "iso": "2026-11-18T02:43:02+00:00"
+     },
+     {
+      "outlet": "Al Jazeera",
+      "title": "What is Trump hoping to achieve at APEC meeting in China?",
+      "url": "https://www.aljazeera.com/news/2026/11/18/what-is-trump-hoping-to-achieve-at-apec-meeting-in-china?traffic_source=rss",
+      "t": "Tue 8:33 p.m.",
+      "iso": "2026-11-18T01:33:05+00:00"
+     },
+     {
+      "outlet": "PBS NewsHour",
+      "title": "Trump arrives in Philippines to kick off Asia trip with economic deals and talks with allies",
+      "url": "https://www.pbs.org/newshour/world/trump-arrives-in-philippines-to-kick-off-asia-trip-with-economic-deals-and-talks-with-allies",
+      "t": "Tue 4:23 p.m.",
+      "iso": "2026-11-17T21:23:57+00:00"
+     }
+    ]
+   },
    {
     "net": "CNN",
     "r": "us",
@@ -3899,15 +4040,6 @@
    "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Untitled_2.jpg"
   },
   {
-   "net": "The Guardian",
-   "story": "Apec summit live: Xi and Putin start talks; Rubio says Trump serious a",
-   "title": "Apec summit live: Xi and Putin start talks; Rubio says Trump serious about meeting Kim Jong-un",
-   "url": "https://www.theguardian.com/world/live/2026/nov/18/apec-summit-live-updates-xi-putin-trump-world-leaders-gather-in-china",
-   "updated": "2026-11-18T07:29:23+00:00",
-   "ended": false,
-   "img": "https://i.guim.co.uk/img/media/0011d23e2098b25ad493ea535b2c96ddaa8ef28f/579_0_4411_3529/master/4411.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=baa83860500e897460113b1727a2577b"
-  },
-  {
    "net": "Middle East Eye",
    "story": "Kuwait slams Iranian attacks on its territory",
    "title": "Kuwait slams Iranian attacks on its territory",
@@ -3940,24 +4072,6 @@
    "title": "Bahrain's civil defence evacuates multi-storey building due to fire",
    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/bahrains-civil-defence-evacuates-multi-storey-building-due-fire",
    "updated": "2026-11-18T04:43:21+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Untitled_2.jpg"
-  },
-  {
-   "net": "Middle East Eye",
-   "story": "Iran's army launches drone attack at Kuwait base used by US military",
-   "title": "Iran's army launches drone attack at Kuwait base used by US military",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-army-launches-drone-attack-kuwait-base-used-us-military",
-   "updated": "2026-11-18T04:35:47+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Untitled_2.jpg"
-  },
-  {
-   "net": "Middle East Eye",
-   "story": "US Centcom commander expected in Saudi Arabia with dozens of air defen",
-   "title": "US Centcom commander expected in Saudi Arabia with dozens of air defence experts, sources say",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-centcom-commander-expected-saudi-arabia-dozens-air-defence-experts",
-   "updated": "2026-11-18T04:32:24+00:00",
    "ended": false,
    "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Untitled_2.jpg"
   }
@@ -4106,62 +4220,75 @@
   }
  },
  "canangle_live": {
-  "https://www.theguardian.com/world/live/2026/nov/18/apec-summit-live-updates-xi-putin-trump-world-leaders-gather-in-china": {
-   "story": "Apec summit live: Xi and Putin start talks; Rubio says Trump serious about meeting Kim Jong-un",
-   "us": true,
-   "specific": 3,
-   "stories": [
-    {
-     "t": "Tue 1:58 p.m.",
-     "iso": "2026-11-17T18:58:57+00:00",
-     "outlet": "BBC News",
-     "title": "Carney looks to China as Trump tariffs squeeze Canada's car industry",
-     "url": "https://www.bbc.co.uk/news/articles/cq98xlz09ye0o?at_medium=RSS&at_campaign=rss",
-     "ca": false,
-     "tie": ""
-    },
-    {
-     "t": "Tue 1:40 p.m.",
-     "iso": "2026-11-17T18:40:37+00:00",
-     "outlet": "CP24",
-     "title": "‘Are u really threatening to play China off the U.S.?’ Trump trade adviser asks PM Carney",
-     "url": "https://www.cp24.com/news/world/2026/11/17/are-u-really-threatening-to-play-china-off-the-us-trump-trade-adviser-asks-pm-carney/",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Tue 7:17 a.m.",
-     "iso": "2026-11-17T12:17:31+00:00",
-     "outlet": "BNN Bloomberg",
-     "title": "Carney and Sheinbaum meet at summit in China, as both navigate Trump’s tumult",
-     "url": "https://www.bnnbloomberg.ca/business/politics/2026/11/17/carney-and-sheinbaum-meet-at-summit-in-china-as-both-navigate-trumps-tumult/",
-     "ca": true,
-     "tie": ""
-    }
-   ],
-   "official": [],
-   "views": []
-  },
-  "https://www.middleeasteye.net/live-blog/live-blog-update/us-centcom-commander-expected-saudi-arabia-dozens-air-defence-experts": {
-   "story": "US Centcom commander expected in Saudi Arabia with dozens of air defence experts, sources say",
-   "us": true,
-   "specific": 1,
-   "stories": [
-    {
-     "t": "Mon 7:10 p.m.",
-     "iso": "2026-11-17T00:10:00+00:00",
-     "outlet": "Yukon News",
-     "title": "U.S. consul general discusses defence, minerals during visit to the Yukon",
-     "url": "https://yukon-news.com/2026/11/16/u-s-consul-general-discusses-defence-minerals-during-visit-to-yukon/",
-     "ca": false,
-     "tie": ""
-    }
-   ],
-   "official": [],
-   "views": []
-  },
   "https://www.youtube.com/watch?v=fKh3MjNXBFA": {
    "story": "Putin arrives ahead of talks with Trump and Xi in China | Mornings with Ridge and Frost",
+   "us": true,
+   "specific": 5,
+   "stories": [
+    {
+     "t": "Wed 2:02 a.m.",
+     "iso": "2026-11-18T07:02:40+00:00",
+     "outlet": "Times Colonist",
+     "title": "Carney tells Pacific Rim businesses that China's growth a model for Canada",
+     "url": "https://www.timescolonist.com/the-mix/carney-tells-pacific-rim-businesses-that-chinas-growth-a-model-for-canada-13026196",
+     "ca": true,
+     "tie": ""
+    },
+    {
+     "t": "Wed 1:09 a.m.",
+     "iso": "2026-11-18T06:09:00+00:00",
+     "outlet": "The Japan Times",
+     "title": "After years on ice, Canada seeks trade-based reset with China, minister says",
+     "url": "https://www.japantimes.co.jp/news/2026/11/18/world/politics/canada-trade-reset-china/",
+     "ca": false,
+     "tie": ""
+    },
+    {
+     "t": "Tue 6:20 p.m.",
+     "iso": "2026-11-17T23:20:17+00:00",
+     "outlet": "PBS NewsHour",
+     "title": "China and Canada expand tariff relief while relations with the U.S. are strained",
+     "url": "https://www.pbs.org/newshour/world/china-and-canada-expand-tariff-relief-while-relations-with-the-u-s-are-strained",
+     "ca": false,
+     "tie": ""
+    },
+    {
+     "t": "Tue 3:54 p.m.",
+     "iso": "2026-11-17T20:54:14+00:00",
+     "outlet": "CP24",
+     "title": "Carney addressing Pacific Rim business leaders at APEC summit in China",
+     "url": "https://www.cp24.com/politics/2026/11/17/carney-addressing-pacific-rim-business-leaders-at-apec-summit-in-china/",
+     "ca": true,
+     "tie": ""
+    },
+    {
+     "t": "Tue 3:10 p.m.",
+     "iso": "2026-11-17T20:10:42+00:00",
+     "outlet": "Euronews",
+     "title": "EU climate chief Hoekstra: Electrification key for Europe to compete with China as COP pushes global target",
+     "url": "https://www.euronews.com/2026/11/17/eu-climate-chief-hoekstra-electrification-key-for-europe-to-compete-with-china-as-cop-push",
+     "ca": false,
+     "tie": ""
+    }
+   ],
+   "official": [
+    {
+     "outlet": "Mark Carney",
+     "title": "Prime Minister Carney meets with President of Mexico Claudia Sheinbaum",
+     "url": "https://www.pm.gc.ca/en/news/readouts/2026/11/17/prime-minister-carney-meets-president-mexico-claudia-sheinbaum",
+     "t": "Nov 17"
+    },
+    {
+     "outlet": "Mark Carney",
+     "title": "Prime Minister Carney meets with President of the People’s Republic of China Xi Jinping",
+     "url": "https://www.pm.gc.ca/en/news/readouts/2026/11/17/prime-minister-carney-meets-president-peoples-republic-china-xi-jinping",
+     "t": "Nov 17"
+    }
+   ],
+   "views": []
+  },
+  "https://www.youtube.com/watch?v=Yyq8fER2IzA": {
+   "story": "Trump arrives in China for the APEC summit and talks with Xi and Putin",
    "us": true,
    "specific": 5,
    "stories": [
