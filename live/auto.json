@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-18T08:23:30.881657+00:00",
- "checkedLabel": "Wed 3:23 a.m.",
+ "checked": "2026-11-18T08:28:25.368367+00:00",
+ "checkedLabel": "Wed 3:28 a.m.",
  "stories": [
   {
    "key": "top",
@@ -39,13 +39,22 @@
  ],
  "wire": [
   [
+   "Wed 3:26 a.m.",
+   "Latest",
+   "Iran live updates: US conducts airstrikes on Qeshm Island, US military official says",
+   "ABC News",
+   "https://abcnews.com/International/live-updates/iran-live-updates-tanker-attacked-strait-hormuz-ukmto/?id=138171071",
+   "2026-11-18T08:26:49+00:00",
+   1
+  ],
+  [
    "Wed 3:13 a.m.",
    "U.S.",
    "Trump in Asia for Putin, Xi summit; possible meeting with Kim Jong Un",
    "CBS News",
    "https://www.cbsnews.com/news/trump-asia-trip-trilateral-summit-putin-xi/",
    "2026-11-18T08:13:22+00:00",
-   4
+   5
   ],
   [
    "Wed 3:03 a.m.",
@@ -180,7 +189,7 @@
    "BBC News",
    "https://www.bbc.co.uk/news/articles/cqev3v2ygzlvo?at_medium=RSS&at_campaign=rss",
    "2026-11-18T07:00:25+00:00",
-   3
+   4
   ],
   [
    "Wed 2:00 a.m.",
@@ -253,15 +262,6 @@
    "https://www.bbc.co.uk/news/articles/c68798vdprwpo?at_medium=RSS&at_campaign=rss",
    "2026-11-18T06:04:21+00:00",
    1
-  ],
-  [
-   "Wed 1:00 a.m.",
-   "World",
-   "‘Deeply concerning’: NHS in England reports more than 3,000 incidents of staff snooping on patients’ records",
-   "The Guardian",
-   "https://www.theguardian.com/society/2026/nov/18/nhs-england-staff-snooping-patients-records",
-   "2026-11-18T06:00:34+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -296,7 +296,7 @@
    "score": 31,
    "title": "‘Are u really threatening to play China off the U.S.?’ Trump trade adviser asks PM Carney",
    "url": "https://www.ctvnews.ca/world/trumps-tariffs/article/are-u-really-threatening-to-play-china-off-the-us-trump-trade-adviser-asks-pm-carney/",
-   "outlets": 17,
+   "outlets": 16,
    "why": [
     "National Newswatch #2",
     "National Newswatch #9",
@@ -311,7 +311,7 @@
    "score": 20,
    "title": "Mary Peltola wins U.S. Senate seat in Alaska for Democrats",
    "url": "https://www.cbc.ca/news/world/democrat-peltola-wins-alaska-senate-seat-9.7426095",
-   "outlets": 15,
+   "outlets": 16,
    "why": [
     "CBC News front #3"
    ],
@@ -321,15 +321,7 @@
    "score": 17,
    "title": "‘Are u really threatening to play China off the U.S.?’ Trump trade adviser asks PM Carney",
    "url": "https://www.ctvnews.ca/world/trumps-tariffs/article/are-u-really-threatening-to-play-china-off-the-us-trump-trade-adviser-asks-pm-carney/",
-   "outlets": 19,
-   "why": [],
-   "theme": ""
-  },
-  {
-   "score": 14,
-   "title": "How important are Nvidia and Jensen Huang to the US economy?",
-   "url": "https://www.bbc.co.uk/news/articles/c68798vdprwpo?at_medium=RSS&at_campaign=rss",
-   "outlets": 14,
+   "outlets": 22,
    "why": [],
    "theme": ""
   },
@@ -345,10 +337,10 @@
    "theme": ""
   },
   {
-   "score": 11,
+   "score": 12,
    "title": "The ‘bluenami’ message was sent, Trump’s ignoring it",
    "url": "https://www.hilltimes.com/2026/11/16/the-bluenami-message-was-sent-trumps-ignoring-it/525985/",
-   "outlets": 9,
+   "outlets": 10,
    "why": [
     "National Newswatch #11"
    ],
@@ -366,6 +358,14 @@
    "theme": ""
   },
   {
+   "score": 10,
+   "title": "IIHF confirms cyberattack after website goes offline",
+   "url": "https://www.cbc.ca/news/world/iihf-website-hacked-russia-9.7424810",
+   "outlets": 10,
+   "why": [],
+   "theme": ""
+  },
+  {
    "score": 9,
    "title": "Fajardo tells fans he may stay with champion Elks",
    "url": "https://globalnews.ca/news/12155876/fajardo-tells-fans-he-may-stay-with-champion-elks/",
@@ -375,17 +375,17 @@
   },
   {
    "score": 9,
-   "title": "IIHF confirms cyberattack after website goes offline",
-   "url": "https://www.cbc.ca/news/world/iihf-website-hacked-russia-9.7424810",
-   "outlets": 9,
+   "title": "Apple outage hits App Store,  becoming the latest casualty of major cyber breakdowns",
+   "url": "https://www.euronews.com/2026/11/18/apple-outage-hits-app-store-becoming-the-latest-casualty-of-major-cyber-breakdowns",
+   "outlets": 7,
    "why": [],
-   "theme": ""
+   "theme": "Apple outage"
   },
   {
    "score": 8,
-   "title": "Car falls into massive pothole in downtown Montreal",
-   "url": "https://www.ctvnews.ca/montreal/article/car-falls-into-massive-pothole-in-downtown-montreal/",
-   "outlets": 8,
+   "title": "Iran live updates: US conducts airstrikes on Qeshm Island, US military official says",
+   "url": "https://abcnews.com/International/live-updates/iran-live-updates-tanker-attacked-strait-hormuz-ukmto/?id=138171071",
+   "outlets": 6,
    "why": [],
    "theme": ""
   }
@@ -408,283 +408,18 @@
   "stale_since": "2026-10-28T00:15:00+00:00",
   "stories": [
    {
-    "key": "auto-c6dd16a5",
-    "words": [
-     "crimean",
-     "putin",
-     "jong",
-     "kim"
-    ],
-    "score": 17,
-    "outlets": 4,
-    "carriers": 6,
-    "tag": "Breaking",
-    "title": "Trump in Asia for Putin, Xi summit; possible meeting with Kim Jong Un",
-    "url": "https://www.cbsnews.com/news/trump-asia-trip-trilateral-summit-putin-xi/",
-    "outlet": "CBS News",
-    "t": "Wed 3:13 a.m.",
-    "iso": "2026-11-18T08:13:22+00:00",
-    "summary": "The president is en route to China after a stop in the Philippines. He's slated have a summit in China with Vladimir Putin and Xi Jinping, and may meet with Kim Jong Un.",
-    "first": {
-     "outlet": "The Japan Times",
-     "url": "https://www.japantimes.co.jp/news/2026/11/18/world/society/ukraine-crimean-bridge-trump-putin/",
-     "t": "Tue 9:02 p.m.",
-     "title": "Ukraine hits Crimean bridge ahead of meeting between Trump, Xi and Putin",
-     "iso": "2026-11-18T02:02:00+00:00"
-    },
-    "newest": "2026-11-18T08:13:22+00:00",
-    "photo": {
-     "src": "live/img/auto-c6dd16a5-cd6c4cf8ca.jpg",
-     "orig": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/18/959233dc-6469-416b-b42d-c30bc07a6b04/thumbnail/1200x630/8a527d8400d1af479e92d451744fb571/gettyimages-2305130600.jpg",
-     "caption": "From: Trump in Asia for Putin, Xi summit; possible meeting with Kim Jong Un. — via CBS News",
-     "alt": "Trump in Asia for Putin, Xi summit; possible meeting with Kim Jong Un",
-     "outlet": "CBS News",
-     "url": "https://www.cbsnews.com/news/trump-asia-trip-trilateral-summit-putin-xi/",
-     "since": "2026-11-18T08:25:02.068718+00:00"
-    },
-    "photo_seen": [
-     "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/18/574781.jpg?v=3.1"
-    ],
-    "photos": [
-     {
-      "src": "live/img/auto-c6dd16a5-cd6c4cf8ca.jpg",
-      "orig": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/18/959233dc-6469-416b-b42d-c30bc07a6b04/thumbnail/1200x630/8a527d8400d1af479e92d451744fb571/gettyimages-2305130600.jpg",
-      "caption": "From: Trump in Asia for Putin, Xi summit; possible meeting with Kim Jong Un. — via CBS News",
-      "alt": "Trump in Asia for Putin, Xi summit; possible meeting with Kim Jong Un",
-      "outlet": "CBS News",
-      "url": "https://www.cbsnews.com/news/trump-asia-trip-trilateral-summit-putin-xi/"
-     },
-     {
-      "src": "live/img/auto-c6dd16a5-3e98f02ae4.jpg",
-      "orig": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/18/574781.jpg?v=3.1",
-      "caption": "From: Xi and Putin blast Western ‘protectionism’ and sanctions before meeting Trump at APEC. — via The Japan Times",
-      "alt": "Xi and Putin blast Western ‘protectionism’ and sanctions before meeting Trump at APEC",
-      "outlet": "The Japan Times",
-      "url": "https://www.japantimes.co.jp/news/2026/11/18/asia-pacific/politics/putin-xi-china-russia-meeting-apec/"
-     },
-     {
-      "src": "live/img/auto-c6dd16a5-e1f912efaf.jpg",
-      "orig": "https://www.ctvnews.ca/resizer/v2/IKOXMCXPJX3QHWGX3S4I3YA7SE.jpg?smart=true&auth=da182f587e342e6f71306b6cdfe9f2256780d05c0110add61425ec119e4ac36e&width=1200&height=630",
-      "caption": "President Donald Trump inspects an honor guard after stepping off Air Force One, Tuesday, Nov. 17, 2026, at Ninoy Aquino International Airport in Manila, Philippines. (AP Photo/Mark Schiefelbein). — via CTV News",
-      "alt": "President Donald Trump inspects an honor guard after stepping off Air Force One, Tuesday, Nov. 17, 2026, at Ninoy Aquino International Airport in Manila, Philip",
-      "outlet": "CTV News",
-      "url": "https://www.ctvnews.ca/world/article/trump-heads-to-china-betting-on-unscripted-diplomacy-with-xi-and-putin/"
-     }
-    ],
-    "independent": 4,
-    "reports": [
-     {
-      "t": "Wed 3:13 a.m.",
-      "iso": "2026-11-18T08:13:22+00:00",
-      "outlet": "CBS News",
-      "title": "Trump in Asia for Putin, Xi summit; possible meeting with Kim Jong Un",
-      "url": "https://www.cbsnews.com/news/trump-asia-trip-trilateral-summit-putin-xi/",
-      "desc": "The president is en route to China after a stop in the Philippines. He's slated have a summit in China with Vladimir Putin and Xi Jinping, and may meet with Kim Jong Un."
-     },
-     {
-      "t": "Wed 2:57 a.m.",
-      "iso": "2026-11-18T07:57:32+00:00",
-      "outlet": "The Guardian",
-      "title": "Apec summit live: Xi and Putin start talks; Rubio says Trump serious about meeting Kim Jong-un",
-      "url": "https://www.theguardian.com/world/live/2026/nov/18/apec-summit-live-updates-xi-putin-trump-world-leaders-gather-in-china",
-      "desc": "Summit in Chinese tech hub Shenzhen set to include highly anticipated meeting between Xi, Trump and Putin"
-     },
-     {
-      "t": "Wed 2:05 a.m.",
-      "iso": "2026-11-18T07:05:00+00:00",
-      "outlet": "The Japan Times",
-      "title": "Xi and Putin blast Western ‘protectionism’ and sanctions before meeting Trump at APEC",
-      "url": "https://www.japantimes.co.jp/news/2026/11/18/asia-pacific/politics/putin-xi-china-russia-meeting-apec/",
-      "desc": "The two leaders’ speeches set the stage for a high-stakes trilateral meeting with U.S. President Donald Trump."
-     },
-     {
-      "t": "Tue 9:43 p.m.",
-      "iso": "2026-11-18T02:43:02+00:00",
-      "outlet": "CTV News",
-      "title": "Trump heads to China, betting on unscripted diplomacy with Xi and Putin",
-      "url": "https://www.ctvnews.ca/world/article/trump-heads-to-china-betting-on-unscripted-diplomacy-with-xi-and-putin/",
-      "desc": "U.S. President Donald Trump departs Wednesday for China, where he will participate in a historic trilateral meeting with that country’s president, Xi Jinping, and Russian leader Vladimir Putin at a time when much of the world has been on edge because of the wars in Ukraine and Iran and the…"
-     },
-     {
-      "t": "Tue 9:43 p.m.",
-      "iso": "2026-11-18T02:43:02+00:00",
-      "outlet": "CP24",
-      "title": "Trump heads to China, betting on unscripted diplomacy with Xi and Putin",
-      "url": "https://www.cp24.com/news/world/2026/11/18/trump-heads-to-china-betting-on-unscripted-diplomacy-with-xi-and-putin/",
-      "desc": ""
-     },
-     {
-      "t": "Tue 9:29 p.m.",
-      "iso": "2026-11-18T02:29:53.275000+00:00",
-      "outlet": "CBC News",
-      "title": "Ukraine cripples Crimean bridge in blow to Putin before meeting with Xi, Trump",
-      "url": "https://www.cbc.ca/news/world/ukraine-drones-russia-crimea-bridge-9.7425197",
-      "desc": "Ukrainian drones and missiles destroyed the central road section of the bridge linking Russia and Crimea on Tuesday, inflicting a military and symbolic blow on Russian President Vladimir Putin two days before he is due to meet the leaders of China and the U.S."
-     }
-    ],
-    "sources": [
-     {
-      "t": "Wed 3:13 a.m.",
-      "primary": false,
-      "outlet": "CBS News",
-      "title": "Trump in Asia for Putin, Xi summit; possible meeting with Kim Jong Un",
-      "url": "https://www.cbsnews.com/news/trump-asia-trip-trilateral-summit-putin-xi/",
-      "desc": "The president is en route to China after a stop in the Philippines. He's slated have a summit in China with Vladimir Putin and Xi Jinping, and may meet with Kim Jong Un.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "CBS News",
-        "src": "CBS News",
-        "byline": "own staff: reporter"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Wed 2:57 a.m.",
-      "primary": false,
-      "outlet": "The Guardian",
-      "title": "Apec summit live: Xi and Putin start talks; Rubio says Trump serious about meeting Kim Jong-un",
-      "url": "https://www.theguardian.com/world/live/2026/nov/18/apec-summit-live-updates-xi-putin-trump-world-leaders-gather-in-china",
-      "desc": "Summit in Chinese tech hub Shenzhen set to include highly anticipated meeting between Xi, Trump and Putin",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "The Guardian",
-        "src": "The Guardian",
-        "byline": "[{\"@type\":\"Person\",\"name\":\"Kate Lamb\",},{\"@type\":\"Person\",\"name\":\"Taz Ali\",},{\"@type\":\"Person\",\"name\":\"Justin McCurry\",}"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Wed 2:05 a.m.",
-      "primary": false,
-      "outlet": "The Japan Times",
-      "title": "Xi and Putin blast Western ‘protectionism’ and sanctions before meeting Trump at APEC",
-      "url": "https://www.japantimes.co.jp/news/2026/11/18/asia-pacific/politics/putin-xi-china-russia-meeting-apec/",
-      "desc": "The two leaders’ speeches set the stage for a high-stakes trilateral meeting with U.S. President Donald Trump.",
-      "wire": "Reuters",
-      "by": [
-       {
-        "outlet": "The Japan Times",
-        "src": "Reuters",
-        "byline": "Reuters \n           By  Ale"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Tue 9:29 p.m.",
-      "primary": false,
-      "outlet": "CBC News",
-      "title": "Ukraine cripples Crimean bridge in blow to Putin before meeting with Xi, Trump",
-      "url": "https://www.cbc.ca/news/world/ukraine-drones-russia-crimea-bridge-9.7425197",
-      "desc": "Ukrainian drones and missiles destroyed the central road section of the bridge linking Russia and Crimea on Tuesday, inflicting a military and symbolic blow on Russian President Vladimir Putin two days before he is due to meet the leaders of China and the U.S.",
-      "wire": "The Associated Press",
-      "by": [
-       {
-        "outlet": "CBC News",
-        "src": "The Associated Press",
-        "byline": "centContent\":{}} \"Thomson Reuters\" \"The Associated Press\" \"The Associated Pr"
-       },
-       {
-        "outlet": "CTV News",
-        "src": "The Canadian Press",
-        "byline": "\"Derek Haggett\" \"The Associated Press\" \"The Canadian Press\" \"Spencer Van Dyk\""
-       },
-       {
-        "outlet": "CP24",
-        "src": "The Associated Press",
-        "byline": "\"@type\": \"Person\",\n      \"name\": \"The  Associated Press\",\n      \n    }\n  ]"
-       }
-      ],
-      "copies": [
-       {
-        "outlet": "CTV News",
-        "url": "https://www.ctvnews.ca/world/article/trump-heads-to-china-betting-on-unscripted-diplomacy-with-xi-and-putin/"
-       },
-       {
-        "outlet": "CP24",
-        "url": "https://www.cp24.com/news/world/2026/11/18/trump-heads-to-china-betting-on-unscripted-diplomacy-with-xi-and-putin/"
-       }
-      ]
-     }
-    ],
-    "replaces_top": false,
-    "events": [],
-    "theme": "",
-    "ca_angle": {
-     "specific": 3,
-     "official": 0
-    },
-    "canada": "tie",
-    "canus": false,
-    "incoherent": false,
-    "popular": 0,
-    "us_election": false,
-    "fronts": 6,
-    "fronts_ca": 1,
-    "fronts_who": [
-     "Toronto Star",
-     "NBC News",
-     "CBS News",
-     "ABC News",
-     "BBC News",
-     "The Guardian"
-    ],
-    "judgment": "national",
-    "judgment_why": "National: leading 6 front pages (Toronto Star, NBC News, CBS News, ABC News, BBC News, The Guardian).",
-    "weight": 38.0,
-    "held_top": "Still Breaking (newest report Wed 3:13 a.m.), so it stays above \"Mary Peltola wins U.S. Senate seat in Alaska for Democrats\", which leads 7 front pages to its 6: not twice as many",
-    "videos": [
-     {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=ZnWxhnOLNFs",
-      "title": "Ukraine strikes Crimean bridge in record drone strike on Russia",
-      "img": "https://i.ytimg.com/vi/ZnWxhnOLNFs/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CBS News",
-      "url": "https://www.youtube.com/watch?v=XWCrnmTmjSY",
-      "title": "NSA suffers latest U.S. tech issues, Trump readies for summit with Xi and Putin, more | The Takeout",
-      "img": "https://i.ytimg.com/vi/XWCrnmTmjSY/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CBS News",
-      "url": "https://www.youtube.com/watch?v=yBfhqYyg1Zk",
-      "title": "Ukraine and Russia trade strikes ahead of Trump's summit with Putin, Xi",
-      "img": "https://i.ytimg.com/vi/yBfhqYyg1Zk/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "ABC News",
-      "url": "https://www.youtube.com/watch?v=PevXsEuHdz8",
-      "title": "President Putin arrives in China ahead of trilateral with President Trump and President Xi",
-      "img": "https://i.ytimg.com/vi/PevXsEuHdz8/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     }
-    ]
-   },
-   {
     "key": "auto-55dbbd91",
     "words": [
      "republican",
      "democrats",
      "sullivan",
      "peltola",
-     "alaska",
-     "senate"
+     "senate",
+     "alaska"
     ],
     "score": 20,
-    "outlets": 10,
-    "carriers": 13,
+    "outlets": 11,
+    "carriers": 14,
     "tag": "Developing",
     "title": "Mary Peltola wins U.S. Senate seat in Alaska for Democrats",
     "url": "https://www.cbc.ca/news/world/democrat-peltola-wins-alaska-senate-seat-9.7426095",
@@ -736,23 +471,23 @@
       "url": "https://www.bbc.co.uk/news/articles/cqev3v2ygzlvo?at_medium=RSS&at_campaign=rss"
      },
      {
+      "src": "live/img/auto-55dbbd91-0c103d8b5c.jpg",
+      "orig": "https://images.euronews.com/articles/stories/09/99/71/80/1200x675_cmsv2_d9296fa6-8740-5337-be60-45f1731019a1-9997180.jpg",
+      "caption": "Democrat Mary Peltola unseats Republican and flips US Senate seat in tight race in Alaska. — via Euronews",
+      "alt": "Democrat Mary Peltola unseats Republican and flips US Senate seat in tight race in Alaska",
+      "outlet": "Euronews",
+      "url": "https://www.euronews.com/2026/11/18/democrat-mary-peltola-unseats-republican-and-flips-us-senate-seat-in-tight-race-in-alaska"
+     },
+     {
       "src": "live/img/auto-55dbbd91-945dd450cb.jpg",
       "orig": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6afd1b1e-1794972446.jpg?resize=1920%2C1440",
       "caption": "Mary Peltola flips Alaska Senate seat in another Democratic win. — via Al Jazeera",
       "alt": "Mary Peltola flips Alaska Senate seat in another Democratic win",
       "outlet": "Al Jazeera",
       "url": "https://www.aljazeera.com/news/2026/11/18/mary-peltola-wins-alaska-senate-seat-in-another-democratic-win?traffic_source=rss"
-     },
-     {
-      "src": "live/img/auto-55dbbd91-7634875ecf.jpg",
-      "orig": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/alaska-senate-election-results-mary-peltola.jpg",
-      "caption": "Mary Peltola flips Alaska Senate seat, dealing latest blow to Republicans. — via Fox News",
-      "alt": "Mary Peltola flips Alaska Senate seat, dealing latest blow to Republicans",
-      "outlet": "Fox News",
-      "url": "https://www.foxnews.com/politics/alaska-dem-peltola-defeats-sullivan-flipping-gop-senate-seat-decoy-dan-uproar"
      }
     ],
-    "independent": 10,
+    "independent": 11,
     "reports": [
      {
       "t": "Wed 2:00 a.m.",
@@ -769,6 +504,14 @@
       "title": "Democrat Mary Peltola wins US Senate race in Alaska, beating incumbent Republican Dan Sullivan",
       "url": "https://www.timescolonist.com/world-news/democrat-mary-peltola-wins-us-senate-race-in-alaska-beating-incumbent-republican-dan-sullivan-13030108",
       "desc": "JUNEAU, Alaska (AP) — Democrat Mary Peltola defeated two-term Republican Sen."
+     },
+     {
+      "t": "Wed 1:18 a.m.",
+      "iso": "2026-11-18T06:18:02+00:00",
+      "outlet": "Euronews",
+      "title": "Democrat Mary Peltola unseats Republican and flips US Senate seat in tight race in Alaska",
+      "url": "https://www.euronews.com/2026/11/18/democrat-mary-peltola-unseats-republican-and-flips-us-senate-seat-in-tight-race-in-alaska",
+      "desc": "Democrats will control 56 seats in the 100-seat Senate which will give them the power to block legislation, launch broad investigations into Trump's administration and thwart his judicial and senior government appointments."
      },
      {
       "t": "Wed 12:50 a.m.",
@@ -816,7 +559,7 @@
       "outlet": "CBS News",
       "title": "Mary Peltola wins Alaska Senate race, flipping seat for Dems",
       "url": "https://www.cbsnews.com/news/alaska-2026-senate-sullivan-peltola/",
-      "desc": "Peltola, 53, became the first Democrat to represent Alaska in the House in 50 years in 2022."
+      "desc": ""
      },
      {
       "t": "Tue 10:28 p.m.",
@@ -921,6 +664,23 @@
         "url": "https://www.timescolonist.com/world-news/democrat-mary-peltola-wins-us-senate-race-in-alaska-beating-incumbent-republican-dan-sullivan-13030108"
        }
       ]
+     },
+     {
+      "t": "Wed 1:18 a.m.",
+      "primary": false,
+      "outlet": "Euronews",
+      "title": "Democrat Mary Peltola unseats Republican and flips US Senate seat in tight race in Alaska",
+      "url": "https://www.euronews.com/2026/11/18/democrat-mary-peltola-unseats-republican-and-flips-us-senate-seat-in-tight-race-in-alaska",
+      "desc": "Democrats will control 56 seats in the 100-seat Senate which will give them the power to block legislation, launch broad investigations into Trump's administration and thwart his judicial and senior government appointments.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Euronews",
+        "src": "Euronews",
+        "byline": "[ { \"@type\": \"Person\", \"familyName\": \"Blackburn\", \"givenName\": \"Gavin\", \"name\": \"Gavin Blackburn\", , \"worksFor\": { \"@id\""
+       }
+      ],
+      "copies": []
      },
      {
       "t": "Wed 12:50 a.m.",
@@ -1095,395 +855,18 @@
       "up": ""
      },
      {
-      "net": "Fox News",
-      "url": "https://www.youtube.com/watch?v=Ok6ZUMcv0Y8",
-      "title": "BREAKING: Mary Peltola wins Alaska Senate seat, Fox News projects",
-      "img": "https://i.ytimg.com/vi/Ok6ZUMcv0Y8/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
       "net": "Associated Press",
       "url": "https://www.youtube.com/watch?v=cjwl5ZO56Tw",
       "title": "Democrat Mary Peltola wins Alaska Senate race, defeating Republican Dan Sullivan",
       "img": "https://i.ytimg.com/vi/cjwl5ZO56Tw/hqdefault.jpg",
       "rec": false,
       "up": ""
-     }
-    ]
-   },
-   {
-    "key": "auto-3d29059c",
-    "words": [
-     "negotiations",
-     "finalizing",
-     "leblanc",
-     "trade",
-     "india",
-     "envoy"
-    ],
-    "score": 31,
-    "outlets": 5,
-    "carriers": 16,
-    "tag": "Developing",
-    "title": "Canada, India on the cusp of finalizing free trade deal, says high envoy",
-    "url": "https://www.ctvnews.ca/politics/article/canada-india-on-the-cusp-of-finalizing-free-trade-deal-says-high-envoy/",
-    "outlet": "CTV News",
-    "t": "Tue 8:18 p.m.",
-    "iso": "2026-11-18T01:18:58+00:00",
-    "summary": "India’s high commissioner to Canada says the two countries are on the cusp of finalizing a free trade agreement, 16 years after talks first began.",
-    "first": {
-     "outlet": "BNN Bloomberg",
-     "url": "https://www.bnnbloomberg.ca/tariffs/2026/11/17/are-u-really-threatening-to-play-china-off-the-us-trump-trade-adviser-asks-pm-carney/",
-     "t": "Tue 1:40 p.m.",
-     "title": "‘Are u really threatening to play China off the U.S.?’ Trump trade adviser asks PM Carney",
-     "iso": "2026-11-17T18:40:37+00:00"
-    },
-    "newest": "2026-11-18T01:18:58+00:00",
-    "photo": {
-     "src": "live/img/auto-3d29059c-d9f4541bd4.jpg",
-     "orig": "https://www.ctvnews.ca/resizer/v2/FNZMHUJ3BZJ3L6ECBC5LC2XRIA.jpg?smart=true&auth=a64ee935ca79d0f5485cef2aea8eae634f154dacbf4f22b73715643ff7cd7572&width=1200&height=630",
-     "caption": "Dinesh Kumar Patnaik, High Commissioner of India to Canada, participates in a panel at the Canadian Global Affairs Institute 2026 Energy Security Forum Conference, in Ottawa, on Monday, Nov. 16, 2026. THE CANADIAN PRESS/Justin Tang. — via CTV News",
-     "alt": "Dinesh Kumar Patnaik, High Commissioner of India to Canada, participates in a panel at the Canadian Global Affairs Institute 2026 Energy Security Forum Conferen",
-     "outlet": "CTV News",
-     "url": "https://www.ctvnews.ca/politics/article/canada-india-on-the-cusp-of-finalizing-free-trade-deal-says-high-envoy/",
-     "since": "2026-11-18T08:15:03.191023+00:00"
-    },
-    "photo_seen": [
-     "https://www.ctvnews.ca/resizer/v2/FNZMHUJ3BZJ3L6ECBC5LC2XRIA.jpg?smart=true&auth=a64ee935ca79d0f5485cef2aea8eae634f154dacbf4f22b73715643ff7cd7572&width=1200&height=630"
-    ],
-    "photos": [
-     {
-      "src": "live/img/auto-3d29059c-d9f4541bd4.jpg",
-      "orig": "https://www.ctvnews.ca/resizer/v2/FNZMHUJ3BZJ3L6ECBC5LC2XRIA.jpg?smart=true&auth=a64ee935ca79d0f5485cef2aea8eae634f154dacbf4f22b73715643ff7cd7572&width=1200&height=630",
-      "caption": "Dinesh Kumar Patnaik, High Commissioner of India to Canada, participates in a panel at the Canadian Global Affairs Institute 2026 Energy Security Forum Conference, in Ottawa, on Monday, Nov. 16, 2026. THE CANADIAN PRESS/Justin Tang. — via CTV News",
-      "alt": "Dinesh Kumar Patnaik, High Commissioner of India to Canada, participates in a panel at the Canadian Global Affairs Institute 2026 Energy Security Forum Conferen",
-      "outlet": "CTV News",
-      "url": "https://www.ctvnews.ca/politics/article/canada-india-on-the-cusp-of-finalizing-free-trade-deal-says-high-envoy/"
      },
      {
-      "src": "live/img/auto-3d29059c-5c5426237e.jpg",
-      "orig": "https://www.narcity.com/media-library/canada-india-close-to-free-trade-deal-envoy.jpg?id=68705762&width=1200&height=600&coordinates=0%2C139%2C0%2C139",
-      "caption": "From: Canada, India on the cusp of finalizing free trade deal, says high envoy. — via Narcity",
-      "alt": "Canada, India on the cusp of finalizing free trade deal, says high envoy",
-      "outlet": "Narcity",
-      "url": "https://www.narcity.com/canada-india-close-to-free-trade-deal-envoy"
-     },
-     {
-      "src": "live/img/auto-3d29059c-eaa85fe007.jpg",
-      "orig": "https://globalnews.ca/wp-content/uploads/2026/11/6190dd51c91e4c339582bcbcfbe44031f146c97b8061ab840370298d9aa7f355.jpg?quality=65&strip=all&w=720&h=379&crop=1",
-      "caption": "Canada-U.S. Trade Minister Dominic LeBlanc and Janice Charette, chief trade negotiator to the United States, make their way to a meeting of the Standing Committee on International Trade (CIIT) in Ottawa on Tuesday, Nov. 17, 2026. — via Global News",
-      "alt": "Canada-U.S. Trade Minister Dominic LeBlanc and Janice Charette, chief trade negotiator to the United States, make their way to a meeting of the Standing Committ",
-      "outlet": "Global News",
-      "url": "https://globalnews.ca/news/12155184/cusma-talks-tariff-free-trade-charette/"
-     }
-    ],
-    "independent": 5,
-    "reports": [
-     {
-      "t": "Tue 8:18 p.m.",
-      "iso": "2026-11-18T01:18:58+00:00",
-      "outlet": "CTV News",
-      "title": "Canada, India on the cusp of finalizing free trade deal, says high envoy",
-      "url": "https://www.ctvnews.ca/politics/article/canada-india-on-the-cusp-of-finalizing-free-trade-deal-says-high-envoy/",
-      "desc": "India’s high commissioner to Canada says the two countries are on the cusp of finalizing a free trade agreement, 16 years after talks first began."
-     },
-     {
-      "t": "Tue 8:18 p.m.",
-      "iso": "2026-11-18T01:18:58+00:00",
-      "outlet": "CP24",
-      "title": "Canada, India on the cusp of finalizing free trade deal, says high envoy",
-      "url": "https://www.cp24.com/news/canada/2026/11/18/canada-india-on-the-cusp-of-finalizing-free-trade-deal-says-high-envoy/",
-      "desc": ""
-     },
-     {
-      "t": "Tue 8:18 p.m.",
-      "iso": "2026-11-18T01:18:58+00:00",
-      "outlet": "BNN Bloomberg",
-      "title": "Canada, India on the cusp of finalizing free trade deal, says high envoy",
-      "url": "https://www.bnnbloomberg.ca/business/politics/2026/11/18/canada-india-on-the-cusp-of-finalizing-free-trade-deal-says-high-envoy/",
-      "desc": ""
-     },
-     {
-      "t": "Tue 7:00 p.m.",
-      "iso": "2026-11-18T00:00:07+00:00",
-      "outlet": "Canada's National Observer",
-      "title": "LeBlanc fields questions about trade negotiations with Trump administration",
-      "url": "https://www.nationalobserver.com/2026/11/17/news/leblanc-fields-questions-about-trade-negotiations-trump-administration",
-      "desc": ""
-     },
-     {
-      "t": "Tue 6:49 p.m.",
-      "iso": "2026-11-17T23:49:10+00:00",
-      "outlet": "Narcity",
-      "title": "Canada, India on the cusp of finalizing free trade deal, says high envoy",
-      "url": "https://www.narcity.com/canada-india-close-to-free-trade-deal-envoy",
-      "desc": "Canada, India close to free trade deal: envoy"
-     },
-     {
-      "t": "Tue 6:48 p.m.",
-      "iso": "2026-11-17T23:48:27+00:00",
-      "outlet": "CityNews Vancouver",
-      "title": "Canada, India on the cusp of finalizing free trade deal, says high envoy",
-      "url": "https://vancouver.citynews.ca/2026/11/17/canada-india-on-the-cusp-of-finalizing-free-trade-deal-says-high-envoy/",
-      "desc": ""
-     },
-     {
-      "t": "Tue 6:48 p.m.",
-      "iso": "2026-11-17T23:48:27+00:00",
-      "outlet": "CityNews Ottawa",
-      "title": "Canada, India on the cusp of finalizing free trade deal, says high envoy",
-      "url": "https://ottawa.citynews.ca/2026/11/17/canada-india-on-the-cusp-of-finalizing-free-trade-deal-says-high-envoy/",
-      "desc": ""
-     },
-     {
-      "t": "Tue 6:48 p.m.",
-      "iso": "2026-11-17T23:48:27+00:00",
-      "outlet": "CityNews Halifax",
-      "title": "Canada, India on the cusp of finalizing free trade deal, says high envoy",
-      "url": "https://halifax.citynews.ca/2026/11/17/canada-india-on-the-cusp-of-finalizing-free-trade-deal-says-high-envoy/",
-      "desc": ""
-     },
-     {
-      "t": "Tue 6:48 p.m.",
-      "iso": "2026-11-17T23:48:27+00:00",
-      "outlet": "CityNews Edmonton",
-      "title": "Canada, India on the cusp of finalizing free trade deal, says high envoy",
-      "url": "https://edmonton.citynews.ca/2026/11/17/canada-india-on-the-cusp-of-finalizing-free-trade-deal-says-high-envoy/",
-      "desc": ""
-     },
-     {
-      "t": "Tue 6:48 p.m.",
-      "iso": "2026-11-17T23:48:27+00:00",
-      "outlet": "CityNews Calgary",
-      "title": "Canada, India on the cusp of finalizing free trade deal, says high envoy",
-      "url": "https://calgary.citynews.ca/2026/11/17/canada-india-on-the-cusp-of-finalizing-free-trade-deal-says-high-envoy/",
-      "desc": ""
-     },
-     {
-      "t": "Tue 6:48 p.m.",
-      "iso": "2026-11-17T23:48:27+00:00",
-      "outlet": "CityNews",
-      "title": "Canada, India on the cusp of finalizing free trade deal, says high envoy",
-      "url": "https://toronto.citynews.ca/2026/11/17/canada-india-on-the-cusp-of-finalizing-free-trade-deal-says-high-envoy/",
-      "desc": ""
-     },
-     {
-      "t": "Tue 6:48 p.m.",
-      "iso": "2026-11-17T23:48:27+00:00",
-      "outlet": "CKOM / PAnow",
-      "title": "Canada, India on the cusp of finalizing free trade deal, says high envoy",
-      "url": "https://www.ckom.com/2026/11/17/canada-india-on-the-cusp-of-finalizing-free-trade-deal-says-high-envoy/",
-      "desc": ""
-     },
-     {
-      "t": "Tue 6:48 p.m.",
-      "iso": "2026-11-17T23:48:00+00:00",
-      "outlet": "Toronto Star",
-      "title": "Canada, India on the cusp of finalizing free trade deal, says high envoy",
-      "url": "https://www.thestar.com/news/canada/canada-india-on-the-cusp-of-finalizing-free-trade-deal-says-high-envoy/article_6ba78681-4c93-527a-acb1-93d666392c52.html",
-      "desc": ""
-     },
-     {
-      "t": "Tue 5:53 p.m.",
-      "iso": "2026-11-17T22:53:30+00:00",
-      "outlet": "Global News",
-      "title": "Canada wants to get close to tariff-free trade in CUSMA talks: Charette",
-      "url": "https://globalnews.ca/news/12155184/cusma-talks-tariff-free-trade-charette/",
-      "desc": ""
-     }
-    ],
-    "sources": [
-     {
-      "t": "Tue 6:48 p.m.",
-      "primary": false,
-      "outlet": "Toronto Star",
-      "title": "Canada, India on the cusp of finalizing free trade deal, says high envoy",
-      "url": "https://www.thestar.com/news/canada/canada-india-on-the-cusp-of-finalizing-free-trade-deal-says-high-envoy/article_6ba78681-4c93-527a-acb1-93d666392c52.html",
-      "desc": "Prime Minister Mark Carney and Indian Prime Minister Narendra Modi formally revived trade negotiations almost a year ago.",
-      "wire": "The Canadian Press",
-      "by": [
-       {
-        "outlet": "Toronto Star",
-        "src": "The Canadian Press",
-        "byline": "\"Catherine Morrison The Canadian Press\" \"Catherine Morriso"
-       },
-       {
-        "outlet": "CityNews Vancouver",
-        "src": "The Canadian Press",
-        "byline": "[] \"Catherine Morrison, The Canadian Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews Ottawa",
-        "src": "The Canadian Press",
-        "byline": "[] \"Catherine Morrison, The Canadian Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews Halifax",
-        "src": "The Canadian Press",
-        "byline": "[] \"Catherine Morrison, The Canadian Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews Edmonton",
-        "src": "The Canadian Press",
-        "byline": "[] \"Catherine Morrison, The Canadian Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews Calgary",
-        "src": "The Canadian Press",
-        "byline": "[] \"Catherine Morrison, The Canadian Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews",
-        "src": "The Canadian Press",
-        "byline": "558ebed7c4ad73d\"}] \"Catherine Morrison, The Canadian Press\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CKOM / PAnow",
-        "src": "The Canadian Press",
-        "byline": "[{\"@type\":\"Person\",\"name\":\"The Canadian Press\"}] \"The Canadian Pr"
-       },
-       {
-        "outlet": "Narcity",
-        "src": "The Canadian Press",
-        "byline": "ma.org\",\"@type\":\"Person\",\"description\":\"The Canadian Press is Canada&#39;s tru"
-       },
-       {
-        "outlet": "CTV News",
-        "src": "The Canadian Press",
-        "byline": "\"@type\": \"Person\",\n      \"name\": \"The Canadian Press\",\n      \n    }\n  ]"
-       },
-       {
-        "outlet": "CP24",
-        "src": "The Canadian Press",
-        "byline": "\"@type\": \"Person\",\n      \"name\": \"The Canadian Press\",\n      \n    }\n  ]"
-       },
-       {
-        "outlet": "BNN Bloomberg",
-        "src": "The Canadian Press",
-        "byline": "\"@type\": \"Person\",\n      \"name\": \"The Canadian Press\",\n      \n    }\n  ]"
-       }
-      ],
-      "copies": [
-       {
-        "outlet": "CityNews Vancouver",
-        "url": "https://vancouver.citynews.ca/2026/11/17/canada-india-on-the-cusp-of-finalizing-free-trade-deal-says-high-envoy/"
-       },
-       {
-        "outlet": "CityNews Ottawa",
-        "url": "https://ottawa.citynews.ca/2026/11/17/canada-india-on-the-cusp-of-finalizing-free-trade-deal-says-high-envoy/"
-       },
-       {
-        "outlet": "CityNews Halifax",
-        "url": "https://halifax.citynews.ca/2026/11/17/canada-india-on-the-cusp-of-finalizing-free-trade-deal-says-high-envoy/"
-       },
-       {
-        "outlet": "CityNews Edmonton",
-        "url": "https://edmonton.citynews.ca/2026/11/17/canada-india-on-the-cusp-of-finalizing-free-trade-deal-says-high-envoy/"
-       },
-       {
-        "outlet": "CityNews Calgary",
-        "url": "https://calgary.citynews.ca/2026/11/17/canada-india-on-the-cusp-of-finalizing-free-trade-deal-says-high-envoy/"
-       },
-       {
-        "outlet": "CityNews",
-        "url": "https://toronto.citynews.ca/2026/11/17/canada-india-on-the-cusp-of-finalizing-free-trade-deal-says-high-envoy/"
-       },
-       {
-        "outlet": "CKOM / PAnow",
-        "url": "https://www.ckom.com/2026/11/17/canada-india-on-the-cusp-of-finalizing-free-trade-deal-says-high-envoy/"
-       },
-       {
-        "outlet": "Narcity",
-        "url": "https://www.narcity.com/canada-india-close-to-free-trade-deal-envoy"
-       },
-       {
-        "outlet": "CTV News",
-        "url": "https://www.ctvnews.ca/politics/article/canada-india-on-the-cusp-of-finalizing-free-trade-deal-says-high-envoy/"
-       },
-       {
-        "outlet": "CP24",
-        "url": "https://www.cp24.com/news/canada/2026/11/18/canada-india-on-the-cusp-of-finalizing-free-trade-deal-says-high-envoy/"
-       },
-       {
-        "outlet": "BNN Bloomberg",
-        "url": "https://www.bnnbloomberg.ca/business/politics/2026/11/18/canada-india-on-the-cusp-of-finalizing-free-trade-deal-says-high-envoy/"
-       }
-      ]
-     },
-     {
-      "t": "Tue 7:00 p.m.",
-      "primary": false,
-      "outlet": "Canada's National Observer",
-      "title": "LeBlanc fields questions about trade negotiations with Trump administration",
-      "url": "https://www.nationalobserver.com/2026/11/17/news/leblanc-fields-questions-about-trade-negotiations-trump-administration",
-      "desc": "",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Canada's National Observer",
-        "src": "Observer",
-        "byline": ""
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Tue 5:53 p.m.",
-      "primary": false,
-      "outlet": "Global News",
-      "title": "Canada wants to get close to tariff-free trade in CUSMA talks: Charette",
-      "url": "https://globalnews.ca/news/12155184/cusma-talks-tariff-free-trade-charette/",
-      "desc": "President Donald Trump said in July that the U.S. would not renew the CUSMA deal in its current form, forcing it to be reviewed annually.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Global News",
-        "src": "Corus",
-        "byline": "{\"@type\":\"Person\",\"name\":\"Sean Previl\",} Name Maddie Don&#039;t try this Gerald Anonymous Anonymous Not Ben Anonymous Tr"
-       }
-      ],
-      "copies": []
-     }
-    ],
-    "replaces_top": false,
-    "events": [],
-    "theme": "Canada and the U.S.",
-    "canada": "canadian",
-    "canus": true,
-    "incoherent": false,
-    "popular": 0,
-    "us_election": false,
-    "fronts": 1,
-    "fronts_ca": 1,
-    "fronts_who": [
-     "Toronto Star"
-    ],
-    "judgment": "national",
-    "judgment_why": "National: affects many people; carried across the country (6 cities).",
-    "weight": 54,
-    "videos": [
-     {
-      "net": "CP24",
-      "url": "https://www.youtube.com/watch?v=l1MKYdcy6Uc",
-      "title": "PM Carney secures strategic partnership with China in $400-million trade deal",
-      "img": "https://i.ytimg.com/vi/l1MKYdcy6Uc/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CBS News",
-      "url": "https://www.youtube.com/watch?v=ysLQMuvbRfU",
-      "title": "Trump, Thai leader speak on trade deal: \"We are going to do a lot of trade\"",
-      "img": "https://i.ytimg.com/vi/ysLQMuvbRfU/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "Bloomberg",
-      "url": "https://www.youtube.com/watch?v=c7-7dqGii1c",
-      "title": "Canada Has ‘Eyes Wide Open’ on China Says Trade Minister",
-      "img": "https://i.ytimg.com/vi/c7-7dqGii1c/hqdefault.jpg",
+      "net": "Fox News",
+      "url": "https://www.youtube.com/watch?v=Ok6ZUMcv0Y8",
+      "title": "BREAKING: Mary Peltola wins Alaska Senate seat, Fox News projects",
+      "img": "https://i.ytimg.com/vi/Ok6ZUMcv0Y8/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1492,39 +875,13 @@
   ],
   "considered": [
    {
-    "title": "Trump in Asia for Putin, Xi summit; possible meeting with Kim Jong Un",
-    "url": "https://www.cbsnews.com/news/trump-asia-trip-trilateral-summit-putin-xi/",
-    "rank": 1,
-    "live": "",
-    "weight": 38.0,
-    "score": 17,
-    "independent": 4,
-    "most_read": 0,
-    "canada": "tie",
-    "theme": "",
-    "top": true,
-    "fronts": 6,
-    "fronts_who": [
-     "Toronto Star",
-     "NBC News",
-     "CBS News",
-     "ABC News",
-     "BBC News",
-     "The Guardian"
-    ],
-    "rule": "Still Breaking (newest report Wed 3:13 a.m.), so it stays above \"Mary Peltola wins U.S. Senate seat in Alaska for Democrats\", which leads 7 front pages to its 6: not twice as many",
-    "carriers": 6,
-    "judgment": "national",
-    "why_judged": "National: leading 6 front pages (Toronto Star, NBC News, CBS News, ABC News, BBC News, The Guardian)."
-   },
-   {
     "title": "Mary Peltola wins U.S. Senate seat in Alaska for Democrats",
     "url": "https://www.cbc.ca/news/world/democrat-peltola-wins-alaska-senate-seat-9.7426095",
-    "rank": 2,
+    "rank": 1,
     "live": "",
     "weight": 47,
     "score": 20,
-    "independent": 10,
+    "independent": 11,
     "most_read": 0,
     "canada": "tie",
     "theme": "",
@@ -1540,58 +897,37 @@
      "NPR"
     ],
     "rule": "Leading other newsrooms' front pages (Canadian ones among them): the story everyone is leading with",
-    "carriers": 13,
+    "carriers": 14,
     "judgment": "national",
     "why_judged": "National: leading 7 front pages (CBC News, The Globe and Mail, NBC News, CBS News, ABC News, The Guardian)."
    },
    {
-    "title": "Canada, India on the cusp of finalizing free trade deal, says high envoy",
-    "url": "https://www.ctvnews.ca/politics/article/canada-india-on-the-cusp-of-finalizing-free-trade-deal-says-high-envoy/",
-    "rank": 3,
+    "title": "Apple outage hits App Store, becoming the latest casualty of major cyber breakdowns",
+    "url": "https://www.euronews.com/2026/11/18/apple-outage-hits-app-store-becoming-the-latest-casualty-of-major-cyber-breakdowns",
+    "rank": 2,
     "live": "",
-    "weight": 54,
-    "score": 31,
+    "weight": 31.5,
+    "score": 9,
     "independent": 5,
     "most_read": 0,
-    "canada": "canadian",
-    "theme": "Canada and the U.S.",
-    "top": true,
-    "fronts": 1,
-    "fronts_who": [
-     "Toronto Star"
-    ],
-    "rule": "Canadian, older",
-    "carriers": 16,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (6 cities)."
-   },
-   {
-    "title": "FAA Grounds New Router Installations After Nationwide Flight Disruptions",
-    "url": "https://vocm.com/2026/11/18/faa-grounds-new-router-installations-after-nationwide-flight-disruptions/",
-    "rank": 4,
-    "live": "",
-    "weight": 30.0,
-    "score": 8,
-    "independent": 5,
-    "most_read": 0,
-    "canada": "tie",
-    "theme": "FAA ground stop",
+    "canada": "none",
+    "theme": "Apple outage",
     "top": false,
     "fronts": 3,
     "fronts_who": [
-     "CBC News",
-     "The Guardian",
-     "NPR"
+     "CTV News",
+     "CP24",
+     "BNN Bloomberg"
     ],
     "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
-    "carriers": 6,
+    "carriers": 7,
     "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (national desks)."
+    "why_judged": "National: affects some people; carried across the country (national desks)."
    },
    {
     "title": "Rare images of Indigenous group in Amazon highlight threats, advocates say",
     "url": "https://www.aljazeera.com/news/2026/11/18/rare-images-of-indigenous-group-in-amazon-highlight-threats-advocates-say?traffic_source=rss",
-    "rank": 5,
+    "rank": 3,
     "live": "",
     "weight": 14.5,
     "score": 7,
@@ -1612,7 +948,7 @@
    {
     "title": "Mark Carney’s budget includes billions in borrowing beyond the deficit, new analysis finds",
     "url": "https://www.thestar.com/politics/federal/carney-s-budget-includes-billions-in-borrowing-beyond-the-deficit-new-analysis-finds/article_38335c9a-e698-4a3d-9d17-8c5e0c956265.html",
-    "rank": 6,
+    "rank": 4,
     "live": "",
     "weight": 25.5,
     "score": 7,
@@ -1633,10 +969,10 @@
    {
     "title": "Nvidia rejects Jensen Huang’s offer to return as CEO despite pressure from Silicon Valley",
     "url": "https://www.cp24.com/news/world/2026/11/17/nvidia-chairman-says-board-does-not-intend-to-reinstate-jensen-huang-as-ceo/",
-    "rank": 7,
+    "rank": 5,
     "live": "",
-    "weight": 39.0,
-    "score": 14,
+    "weight": 42.0,
+    "score": 17,
     "independent": 8,
     "most_read": 0,
     "canada": "none",
@@ -1658,10 +994,10 @@
    {
     "title": "White House pulls U.S. FDA nominee Heidi Overton after wavering support from Senate Republicans",
     "url": "https://www.cp24.com/news/world/2026/11/18/white-house-pulls-us-fda-nominee-heidi-overton-after-wavering-support-from-senate-republicans/",
-    "rank": 8,
+    "rank": 6,
     "live": "",
-    "weight": 32.5,
-    "score": 11,
+    "weight": 33.5,
+    "score": 12,
     "independent": 6,
     "most_read": 0,
     "canada": "none",
@@ -1676,6 +1012,48 @@
     "carriers": 9,
     "judgment": "national",
     "why_judged": "National: affects many people; carried across the country (national desks)."
+   },
+   {
+    "title": "Gulf nations on alert after U.S. strikes Iranian island",
+    "url": "https://www.japantimes.co.jp/news/2026/11/18/world/politics/gulf-us-strikes-iran-island/",
+    "rank": 7,
+    "live": "",
+    "weight": 13.0,
+    "score": 8,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": false,
+    "fronts": 1,
+    "fronts_who": [
+     "CBS News"
+    ],
+    "rule": "No Canadian tie",
+    "carriers": 4,
+    "judgment": "regional",
+    "why_judged": "Regional: affects some people; carried by a few newsrooms."
+   },
+   {
+    "title": "Canada, India on the cusp of finalizing free trade deal, says high envoy",
+    "url": "https://www.ctvnews.ca/politics/article/canada-india-on-the-cusp-of-finalizing-free-trade-deal-says-high-envoy/",
+    "rank": 8,
+    "live": "",
+    "weight": 54,
+    "score": 31,
+    "independent": 5,
+    "most_read": 0,
+    "canada": "canadian",
+    "theme": "Canada and the U.S.",
+    "top": false,
+    "fronts": 1,
+    "fronts_who": [
+     "Toronto Star"
+    ],
+    "rule": "Canadian, older",
+    "carriers": 15,
+    "judgment": "national",
+    "why_judged": "National: affects many people; carried across the country (5 cities)."
    },
    {
     "title": "China and Canada expand tariff relief while relations with the U.S. are strained",
@@ -1693,19 +1071,19 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
+    "title": "IIHF confirms cyberattack after website goes offline",
+    "score": 10,
+    "why": "not built: only 2 independent report(s) (10 sites)"
+   },
+   {
     "title": "Fajardo tells fans he may stay with champion Elks",
     "score": 9,
     "why": "not built: only 2 independent report(s) (3 sites)"
    },
    {
-    "title": "IIHF confirms cyberattack after website goes offline",
-    "score": 9,
-    "why": "not built: only 2 independent report(s) (9 sites)"
-   },
-   {
-    "title": "Car falls into massive pothole in downtown Montreal",
+    "title": "Google’s Ask Maps expands to 30 European countries – here’s how it works for travel planning",
     "score": 8,
-    "why": "not built: only 2 independent report(s) (4 sites)"
+    "why": "not built: only 2 independent report(s) (3 sites)"
    },
    {
     "title": "Saudi-backed forces launch major attack on Houthis, and other Mideast news",
@@ -1716,295 +1094,25 @@
     "title": "Waymo suspends driverless freeway rides across US after California ban",
     "score": 7,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "8 must-try bites at the Vancouver Christmas Market",
-    "score": 7,
-    "why": "not built: only 2 independent report(s) (3 sites)"
    }
   ],
-  "moved": [],
-  "top_n": 3,
-  "more": [
+  "moved": [
    {
-    "key": "auto-f753dc01",
-    "words": [
-     "during",
-     "ground",
-     "router",
-     "flight",
-     "duffy",
-     "faa"
-    ],
-    "score": 8,
-    "outlets": 5,
-    "carriers": 6,
-    "tag": "Breaking",
-    "title": "FAA Grounds New Router Installations After Nationwide Flight Disruptions",
-    "url": "https://vocm.com/2026/11/18/faa-grounds-new-router-installations-after-nationwide-flight-disruptions/",
-    "outlet": "VOCM",
-    "t": "Wed 2:29 a.m.",
-    "iso": "2026-11-18T07:29:33+00:00",
-    "summary": "The Federal Aviation Administration has suspended the installation of new network routers following a technical failure that temporarily grounded flig...",
-    "first": {
-     "outlet": "ABC News",
-     "url": "https://abcnews.com/Politics/duffy-asked-50b-air-traffic-control-after-ground/story?id=138183456",
-     "t": "Tue 9:08 a.m.",
-     "title": "Duffy asked for $50B for air traffic control after ground stop, a marked increase",
-     "iso": "2026-11-17T14:08:56+00:00"
-    },
-    "newest": "2026-11-18T07:29:33+00:00",
-    "photo": {
-     "src": "live/img/auto-f753dc01-b2fa424e7c.jpg",
-     "orig": "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/4023/files/2026/11/35651917-1200x675.jpg",
-     "caption": "From: FAA Grounds New Router Installations After Nationwide Flight Disruptions. — via VOCM",
-     "alt": "FAA Grounds New Router Installations After Nationwide Flight Disruptions",
-     "outlet": "VOCM",
-     "url": "https://vocm.com/2026/11/18/faa-grounds-new-router-installations-after-nationwide-flight-disruptions/",
-     "since": "2026-11-18T08:25:09.503681+00:00"
-    },
-    "photo_seen": [
-     "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/4023/files/2026/11/35651917-1200x675.jpg"
-    ],
-    "photos": [
-     {
-      "src": "live/img/auto-f753dc01-b2fa424e7c.jpg",
-      "orig": "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/4023/files/2026/11/35651917-1200x675.jpg",
-      "caption": "From: FAA Grounds New Router Installations After Nationwide Flight Disruptions. — via VOCM",
-      "alt": "FAA Grounds New Router Installations After Nationwide Flight Disruptions",
-      "outlet": "VOCM",
-      "url": "https://vocm.com/2026/11/18/faa-grounds-new-router-installations-after-nationwide-flight-disruptions/"
-     },
-     {
-      "src": "live/img/auto-f753dc01-7b4f7241d2.jpg",
-      "orig": "https://i.cbc.ca/ais/b91081a4-5c08-4df7-8a40-115e3e147d22,1794952887943/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C208%2C4000%2C2250%29%3BResize%3D620",
-      "caption": "A JetBlue and American Airlines planes park at gates at Ronald Reagan Washington National Airport after the US Federal Aviation Administration lifted a national ground stop issued last Friday. (Eric Lee/Reuters) — via CBC News",
-      "alt": "A JetBlue and American Airlines planes park at gates at Ronald Reagan Washington National Airport after the US Federal Aviation Administration lifted a national",
-      "outlet": "CBC News",
-      "url": "https://www.cbc.ca/news/world/faa-airport-ground-stop-routers-installation-halted-9.7425635"
-     },
-     {
-      "src": "live/img/auto-f753dc01-3a905e3c1c.jpg",
-      "orig": "https://i.cbc.ca/ais/b5e52c5a-c202-4258-90e3-767389eb2c24,1794875466038/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C81%2C1206%2C678%29%3BResize%3D620",
-      "caption": "Krampus is at the centre of controversy in Strathroy, Ont., after a tattoo and piercing shop was told it wasn’t allowed to show off the European Christmas character at the town’s upcoming Santa Claus parade. (Submitted by Tanya Griffin) — via CBC",
-      "alt": "Krampus is at the centre of controversy in Strathroy, Ont., after a tattoo and piercing shop was told it wasn’t allowed to show off the European Christmas chara",
-      "outlet": "CBC",
-      "url": "https://www.cbc.ca/news/canada/london/krampus-strathroy-9.7424513"
-     },
-     {
-      "src": "live/img/auto-f753dc01-5c1ab99d48.jpg",
-      "orig": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/09/21/6e00213c-d3cb-4aa7-8d3d-6f9514f34261/thumbnail/1200x630/1e01513283f93307ff99342546278ffa/gettyimages-2289770513.jpg",
-      "caption": "From: Airline schedules returning to normal after ground stop, FAA says. — via CBS News",
-      "alt": "Airline schedules returning to normal after ground stop, FAA says",
-      "outlet": "CBS News",
-      "url": "https://www.cbsnews.com/news/faa-ground-stop-canceled-flights-travelers-what-we-know/"
-     }
-    ],
-    "independent": 5,
-    "reports": [
-     {
-      "t": "Wed 2:29 a.m.",
-      "iso": "2026-11-18T07:29:33+00:00",
-      "outlet": "VOCM",
-      "title": "FAA Grounds New Router Installations After Nationwide Flight Disruptions",
-      "url": "https://vocm.com/2026/11/18/faa-grounds-new-router-installations-after-nationwide-flight-disruptions/",
-      "desc": "The Federal Aviation Administration has suspended the installation of new network routers following a technical failure that temporarily grounded flig..."
-     },
-     {
-      "t": "Tue 9:35 p.m.",
-      "iso": "2026-11-18T02:35:35+00:00",
-      "outlet": "CBS News",
-      "title": "Airline schedules returning to normal after ground stop, FAA says",
-      "url": "https://www.cbsnews.com/news/faa-ground-stop-canceled-flights-travelers-what-we-know/",
-      "desc": "Officials attributed the ground stop to aging system infrastructure and legacy technology."
-     },
-     {
-      "t": "Tue 5:28 p.m.",
-      "iso": "2026-11-17T22:28:35+00:00",
-      "outlet": "CBC News",
-      "title": "FAA halts installation of new routers linked to Friday's airport ground stop until root of problem found",
-      "url": "https://www.cbc.ca/news/world/faa-airport-ground-stop-routers-installation-halted-9.7425635",
-      "desc": "The U.S. Federal Aviation Administration has paused installing routers linked to last week's ground stop that caused chaos for travellers, the agency said Tuesday."
-     },
-     {
-      "t": "Tue 3:48 p.m.",
-      "iso": "2026-11-17T20:48:47+00:00",
-      "outlet": "ABC News",
-      "title": "Senate Democrats demand briefings about FAA ground stop amid $50B budget ask",
-      "url": "https://abcnews.com/Politics/senate-democrats-demand-briefings-faa-ground-stop-amid/story?id=138213462",
-      "desc": "The funding would go to new air traffic control centers and other improvements."
-     },
-     {
-      "t": "Tue 2:39 p.m.",
-      "iso": "2026-11-17T19:39:14+00:00",
-      "outlet": "The Hill",
-      "title": "FAA halts router upgrades after ground stop fuels infrastructure concerns",
-      "url": "https://thehill.com/policy/transportation/6225978-faa-halts-router-upgrades/",
-      "desc": ""
-     },
-     {
-      "t": "Tue 2:31 p.m.",
-      "iso": "2026-11-17T19:31:41+00:00",
-      "outlet": "CP24",
-      "title": "U.S. Homeland Security Mullin defends use of government plane to go to LSU-Texas game after ground stop",
-      "url": "https://www.cp24.com/news/world/2026/11/17/us-homeland-security-mullin-defends-use-of-government-plane-to-go-to-lsu-texas-game-after-ground-stop/",
-      "desc": "Homeland Security Secretary Markwayne Mullin on Tuesday defended his use of a government plane to fly to a college football game the day after a nationwide ground stop which caused massive travel disruptions and left people stranded across the country."
-     }
-    ],
-    "sources": [
-     {
-      "t": "Wed 2:29 a.m.",
-      "primary": false,
-      "outlet": "VOCM",
-      "title": "FAA Grounds New Router Installations After Nationwide Flight Disruptions",
-      "url": "https://vocm.com/2026/11/18/faa-grounds-new-router-installations-after-nationwide-flight-disruptions/",
-      "desc": "The Federal Aviation Administration has suspended the installation of new network routers following a technical failure that temporarily grounded flig...",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "VOCM",
-        "src": "VOCM",
-        "byline": "[{\"@type\":\"Person\",\"name\":\"Mariana A\"}] \"Mariana A\" Mariana A "
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Tue 9:35 p.m.",
-      "primary": false,
-      "outlet": "CBS News",
-      "title": "Airline schedules returning to normal after ground stop, FAA says",
-      "url": "https://www.cbsnews.com/news/faa-ground-stop-canceled-flights-travelers-what-we-know/",
-      "desc": "Officials attributed the ground stop to aging system infrastructure and legacy technology.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "CBS News",
-        "src": "CBS News",
-        "byline": "own staff: editor"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Tue 2:31 p.m.",
-      "primary": false,
-      "outlet": "CP24",
-      "title": "U.S. Homeland Security Mullin defends use of government plane to go to LSU-Texas game after ground stop",
-      "url": "https://www.cp24.com/news/world/2026/11/17/us-homeland-security-mullin-defends-use-of-government-plane-to-go-to-lsu-texas-game-after-ground-stop/",
-      "desc": "Homeland Security Secretary Markwayne Mullin on Tuesday defended his use of a government plane to fly to a college football game the day after a nationwide ground stop which caused massive travel disruptions and left people stranded across the country.",
-      "wire": "The Associated Press",
-      "by": [
-       {
-        "outlet": "CP24",
-        "src": "The Associated Press",
-        "byline": "\"@type\": \"Person\",\n      \"name\": \"The  Associated Press\",\n      \n    }\n  ]"
-       },
-       {
-        "outlet": "CBC News",
-        "src": "The Associated Press",
-        "byline": "\"photoURL\":\"\"},\"recentContent\":{}} \"The Associated Press\" \"Reuters\" \"The Ass"
-       }
-      ],
-      "copies": [
-       {
-        "outlet": "CBC News",
-        "url": "https://www.cbc.ca/news/world/faa-airport-ground-stop-routers-installation-halted-9.7425635"
-       }
-      ]
-     },
-     {
-      "t": "Tue 3:48 p.m.",
-      "primary": false,
-      "outlet": "ABC News",
-      "title": "Senate Democrats demand briefings about FAA ground stop amid $50B budget ask",
-      "url": "https://abcnews.com/Politics/senate-democrats-demand-briefings-faa-ground-stop-amid/story?id=138213462",
-      "desc": "The funding would go to new air traffic control centers and other improvements.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "ABC News",
-        "src": "ABC News",
-        "byline": "[{\"name\":\"Allison Pecorin\",,\"@type\":\"Person\"},{\"name\":\"Ayesha Ali\",,\"@type\":\"Person\"}] \"Allison Pecorin, Ayesha Ali\" [{\""
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Tue 2:39 p.m.",
-      "primary": false,
-      "outlet": "The Hill",
-      "title": "FAA halts router upgrades after ground stop fuels infrastructure concerns",
-      "url": "https://thehill.com/policy/transportation/6225978-faa-halts-router-upgrades/",
-      "desc": "px-captcha",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "The Hill",
-        "src": "The Hill",
-        "byline": ""
-       }
-      ],
-      "copies": []
-     }
-    ],
-    "replaces_top": false,
-    "events": [],
-    "theme": "FAA ground stop",
-    "ca_angle": {
-     "specific": 1,
-     "official": 0
-    },
-    "canada": "tie",
-    "canus": false,
-    "incoherent": false,
-    "popular": 0,
-    "us_election": false,
-    "fronts": 3,
-    "fronts_ca": 1,
-    "fronts_who": [
-     "CBC News",
-     "The Guardian",
-     "NPR"
-    ],
-    "judgment": "national",
-    "judgment_why": "National: affects many people; carried across the country (national desks).",
-    "weight": 30.0,
-    "videos": [
-     {
-      "net": "Forbes Breaking News",
-      "url": "https://www.youtube.com/watch?v=R1YwaHk6Thg",
-      "title": "Congress Returns To Session After Shock FAA Ground Stop",
-      "img": "https://i.ytimg.com/vi/R1YwaHk6Thg/hqdefault.jpg",
-      "rec": true,
-      "up": ""
-     },
-     {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=hLojcVlPERs",
-      "title": "FAA ground stop: FBI assisting in analyzing troubled router, US transportation secretary says",
-      "img": "https://i.ytimg.com/vi/hLojcVlPERs/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=mzhX7mwi3PI",
-      "title": "Battle brewing in US over air traffic control system funding after FAA ground stop",
-      "img": "https://i.ytimg.com/vi/mzhX7mwi3PI/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CBS News",
-      "url": "https://www.youtube.com/watch?v=aW5-LgrAIjA",
-      "title": "Former FAA air traffic controller says he is confident “nothing nefarious” caused the ground stop",
-      "img": "https://i.ytimg.com/vi/aW5-LgrAIjA/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     }
-    ]
-   },
+    "to": "canangle",
+    "key": "auto-3d29059c",
+    "title": "Canada, India on the cusp of finalizing free trade deal, says high envoy",
+    "url": "https://www.ctvnews.ca/politics/article/canada-india-on-the-cusp-of-finalizing-free-trade-deal-says-high-envoy/",
+    "outlet": "CTV News",
+    "t": "Tue 8:18 p.m.",
+    "iso": "2026-11-18T01:18:58+00:00",
+    "summary": "India’s high commissioner to Canada says the two countries are on the cusp of finalizing a free trade agreement, 16 years after talks first began.",
+    "img": "https://www.ctvnews.ca/resizer/v2/FNZMHUJ3BZJ3L6ECBC5LC2XRIA.jpg?smart=true&auth=a64ee935ca79d0f5485cef2aea8eae634f154dacbf4f22b73715643ff7cd7572&width=1200&height=630",
+    "scoop": false,
+    "into": "auto-55dbbd91"
+   }
+  ],
+  "top_n": 1,
+  "more": [
    {
     "key": "auto-413a3a09",
     "words": [
@@ -2035,7 +1143,7 @@
      "alt": "Rare images of Indigenous group in Amazon highlight threats, advocates say",
      "outlet": "Al Jazeera",
      "url": "https://www.aljazeera.com/news/2026/11/18/rare-images-of-indigenous-group-in-amazon-highlight-threats-advocates-say?traffic_source=rss",
-     "since": "2026-11-18T08:25:11.109463+00:00"
+     "since": "2026-11-18T08:30:59.897764+00:00"
     },
     "photo_seen": [
      "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6afcf8097b422-1794963465.jpg?resize=1920%2C1333"
@@ -2242,8 +1350,8 @@
      "ottawa's",
      "watchdog",
      "deficit",
-     "budget",
-     "beyond"
+     "beyond",
+     "budget"
     ],
     "score": 7,
     "outlets": 4,
@@ -2270,7 +1378,7 @@
      "alt": "Mark Carney’s budget includes billions in borrowing beyond the deficit, new analysis finds",
      "outlet": "Toronto Star",
      "url": "https://www.thestar.com/politics/federal/carney-s-budget-includes-billions-in-borrowing-beyond-the-deficit-new-analysis-finds/article_38335c9a-e698-4a3d-9d17-8c5e0c956265.html",
-     "since": "2026-11-18T08:25:13.482215+00:00"
+     "since": "2026-11-18T08:31:00.399317+00:00"
     },
     "photo_seen": [
      "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/f/d4/fd4a0a44-5175-5065-8fa2-6fd651ebb548/6afccadff0004.image.jpg?crop=1731%2C909%2C0%2C144&resize=1200%2C630&order=crop%2Cresize"
@@ -2283,6 +1391,14 @@
       "alt": "Mark Carney’s budget includes billions in borrowing beyond the deficit, new analysis finds",
       "outlet": "Toronto Star",
       "url": "https://www.thestar.com/politics/federal/carney-s-budget-includes-billions-in-borrowing-beyond-the-deficit-new-analysis-finds/article_38335c9a-e698-4a3d-9d17-8c5e0c956265.html"
+     },
+     {
+      "src": "live/img/auto-e8ba636c-e40f55cdbf.jpg",
+      "orig": "https://i.cbc.ca/ais/f6a5dee6-def0-46a7-8a67-ffa45371a75c,1794940289710/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C460%2C8511%2C4787%29%3BResize%3D620",
+      "caption": "Prime Minister Mark Carney met with Chinese President Xi Jinping on Tuesday, where the two leaders reached a new deal covering a wide range of products. (Adrian Wyld/The Canadian Press) — via CBC",
+      "alt": "Prime Minister Mark Carney met with Chinese President Xi Jinping on Tuesday, where the two leaders reached a new deal covering a wide range of products.",
+      "outlet": "CBC",
+      "url": "https://www.cbc.ca/news/politics/carney-xi-china-trade-9.7425325?cmp=rss"
      }
     ],
     "independent": 4,
@@ -2452,6 +1568,14 @@
    {
     "title": "White House pulls U.S. FDA nominee Heidi Overton after wavering support from Senate Republicans",
     "url": "https://www.cp24.com/news/world/2026/11/18/white-house-pulls-us-fda-nominee-heidi-overton-after-wavering-support-from-senate-republicans/"
+   },
+   {
+    "title": "Apple outage hits App Store, becoming the latest casualty of major cyber breakdowns",
+    "url": "https://www.euronews.com/2026/11/18/apple-outage-hits-app-store-becoming-the-latest-casualty-of-major-cyber-breakdowns"
+   },
+   {
+    "title": "Gulf nations on alert after U.S. strikes Iranian island",
+    "url": "https://www.japantimes.co.jp/news/2026/11/18/world/politics/gulf-us-strikes-iran-island/"
    }
   ]
  },
@@ -3034,7 +2158,7 @@
    "id": "Y2bf32s2pQc",
    "r": "world",
    "o": "BBC News",
-   "t": "Are asylum seeker numbers going up? We break down the numbers | BBC News",
+   "t": "Fact-checking the internet’s main claims about small boats | BBC News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=Y2bf32s2pQc",
@@ -3062,7 +2186,7 @@
    "id": "v3C6dhcw_L8",
    "r": "world",
    "o": "Sky News",
-   "t": "Inflation rises to 3.6%: Here's what's driving it",
+   "t": "Inflation rises as households face another energy bill squeeze",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=v3C6dhcw_L8",
@@ -3325,6 +2449,13 @@
  ],
  "eds": [
   [
+   "Toronto Star",
+   "Opinion",
+   "AI is turning children's photos into abuse material, and the laws aren't keeping up",
+   "https://www.thestar.com/opinion/star-columnists/ai-is-turning-children-s-photos-into-abuse-material-and-the-laws-aren-t-keeping-up/article_dd7f1b10-4152-4839-b5bf-27c3aea933a8.html",
+   "2026-11-18T00:15:00+00:00"
+  ],
+  [
    "Toronto Sun",
    "Editorial",
    "Immigration concerns are not racist",
@@ -3386,13 +2517,6 @@
    "Three Manila moments that give Trump momentum going into talks with China",
    "https://www.foxnews.com/opinion/three-manila-moments-give-trump-momentum-talks-china",
    "2026-11-17T20:20:27+00:00"
-  ],
-  [
-   "The Wall Street Journal (subscribers)",
-   "Opinion",
-   "Pepper…and Salt",
-   "https://www.wsj.com/opinion/pepperand-salt-7f5e9125?mod=rss_opinion",
-   "2026-11-18T05:00:00+00:00"
   ]
  ],
  "canus": {
@@ -3426,6 +2550,13 @@
     "url": "https://globalnews.ca/news/12155184/cusma-talks-tariff-free-trade-charette/"
    },
    {
+    "t": "Tue 3:10 p.m.",
+    "iso": "2026-11-17T20:10:42+00:00",
+    "outlet": "Euronews",
+    "title": "EU climate chief Hoekstra: Electrification key for Europe to compete with China as COP pushes global target",
+    "url": "https://www.euronews.com/2026/11/17/eu-climate-chief-hoekstra-electrification-key-for-europe-to-compete-with-china-as-cop-push"
+   },
+   {
     "t": "Tue 2:33 p.m.",
     "iso": "2026-11-17T19:33:27+00:00",
     "outlet": "CBC News",
@@ -3445,13 +2576,6 @@
     "outlet": "CBC News",
     "title": "Carney, Xi strike trade deal offering $400M in tariff relief",
     "url": "https://www.cbc.ca/player/play/video/9.7424607"
-   },
-   {
-    "t": "Mon 10:42 p.m.",
-    "iso": "2026-11-17T03:42:00+00:00",
-    "outlet": "Toronto Star",
-    "title": "Mark Carney, Xi Jinping deepen China ties with $400-million trade deal",
-    "url": "https://www.thestar.com/politics/federal/carney-xi-deepen-china-ties-with-400m-trade-deal/article_1479e592-3122-43bf-b500-eea0010a261c.html"
    }
   ],
   "usmedia": [
@@ -3470,8 +2594,8 @@
    "Good morning. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
    "Budget watchdog warns the cost of Ottawa’s borrowing goes beyond the deficit, Canada's National Observer reports.",
    "Democrat Mary Peltola wins US Senate race in Alaska, beating incumbent Republican Dan Sullivan, The Associated Press reports.",
-   "Ukraine hits Crimean bridge ahead of meeting between Trump, Xi and Putin, AFP reports.",
    "Nvidia rejected Jensen Huang’s offer to return as CEO, putting to rest for now any possible reinstatement of the celebrated artificial intelligence billionaire and industry evangelist,, The Associated Press reports.",
+   "The White House said Tuesday it has pulled the nomination of Dr, The Associated Press reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
   ]
  },
@@ -3782,24 +2906,24 @@
    "city": "St. John's",
    "tz": "America/St_Johns",
    "world": false,
-   "w": "Oil and shipping",
-   "label": "N.L. signals for stake in Bay du Nord offshore oil project…",
-   "u": "https://www.cbc.ca/news/canada/newfoundland-labrador/nl-stake-bay-du-nord-9.7425507?cmp=rss",
-   "title": "N.L. signals for stake in Bay du Nord offshore oil project - if numbers work out",
+   "w": "Privacy",
+   "label": "Equinor dealing with cyberattack against some of its IT…",
+   "u": "https://www.cbc.ca/news/canada/newfoundland-labrador/equinor-cyberattack-9.7425613?cmp=rss",
+   "title": "Equinor dealing with cyberattack against some of its IT systems",
    "outlet": "CBC News",
-   "t": "Tue 4:13 p.m.",
+   "t": "Tue 4:49 p.m.",
    "hot": false
   },
   {
    "city": "Halifax",
    "tz": "America/Halifax",
    "world": false,
-   "w": "Trade",
-   "label": "Canada, India on the cusp of finalizing free trade deal",
-   "u": "https://halifax.citynews.ca/2026/11/17/canada-india-on-the-cusp-of-finalizing-free-trade-deal-says-high-envoy/",
-   "title": "Canada, India on the cusp of finalizing free trade deal, says high envoy",
-   "outlet": "CityNews Halifax",
-   "t": "Tue 6:48 p.m.",
+   "w": "Privacy",
+   "label": "An Island hobby shop was the victim of a data breach. One…",
+   "u": "https://www.cbc.ca/news/canada/prince-edward-island/pei-charlottetown-hobby-shop-data-breach-9.7425776?cmp=rss",
+   "title": "An Island hobby shop was the victim of a data breach. One customer says trust may be gone",
+   "outlet": "CBC News",
+   "t": "Tue 7:09 p.m.",
    "hot": false
   },
   {
@@ -3890,7 +3014,7 @@
    "city": "Kyiv",
    "tz": "Europe/Kyiv",
    "world": true,
-   "w": "Canada–EU",
+   "w": "Attacks",
    "label": "Ukraine cripples Crimean bridge in blow to Putin before…",
    "u": "https://www.cbc.ca/news/world/ukraine-drones-russia-crimea-bridge-9.7425197",
    "title": "Ukraine cripples Crimean bridge in blow to Putin before meeting with Xi, Trump",
@@ -3908,8 +3032,8 @@
    "iso": "2026-11-18T08:13:22+00:00",
    "title": "Trump in Asia for Putin, Xi summit; possible meeting with Kim Jong Un",
    "summary": "The president is en route to China after a stop in the Philippines. He's slated have a summit in China with Vladimir Putin and Xi Jinping, and may meet with Kim Jong Un.",
-   "outlet": "CBS News, The Guardian, ABC News, The Japan Times (Reuters), CTV News + Times Colonist (CP), The Canadian Press (via Winnipeg Free Press), The Japan Times, Toronto Star",
-   "n": 8,
+   "outlet": "CBS News, The Guardian, ABC News, The Japan Times (Reuters), Times Colonist (CP), The Canadian Press (via Winnipeg Free Press), The Japan Times, BBC News, Euronews",
+   "n": 9,
    "url": "https://www.cbsnews.com/news/trump-asia-trip-trilateral-summit-putin-xi/",
    "img": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/18/959233dc-6469-416b-b42d-c30bc07a6b04/thumbnail/1200x630/8a527d8400d1af479e92d451744fb571/gettyimages-2305130600.jpg"
   },
@@ -3932,22 +3056,10 @@
    "iso": "2026-11-18T07:00:25+00:00",
    "title": "Democrats win Alaska Senate race two weeks after midterms counting began",
    "summary": "Confirmation of Mary Peltola's victory caps of the party's rout of the Republicans in the midterms Senate election.",
-   "outlet": "BBC News, CKOM / PAnow + Toronto Star + CBC News + Times Colonist (CP), ABC News, The Guardian, CBS News, Al Jazeera",
-   "n": 6,
+   "outlet": "BBC News, Toronto Star + CBC News + Times Colonist (AP), Euronews, ABC News, The Guardian, CBS News, Al Jazeera",
+   "n": 7,
    "url": "https://www.bbc.co.uk/news/articles/cqev3v2ygzlvo?at_medium=RSS&at_campaign=rss",
    "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/8202/live/39cdb760-dc7a-11f1-b23d-9526db010e6c.jpg"
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Wed 1:04 a.m.",
-   "iso": "2026-11-18T06:04:21+00:00",
-   "title": "How important are Nvidia and Jensen Huang to the US economy?",
-   "summary": "The former Nvidia chief executive has been at the centre of the artificial intelligence boom.",
-   "outlet": "BBC News, Toronto Star + CTV News + CP24 + BNN Bloomberg, Al Jazeera, The Japan Times (AFP), CBS News, NBC News",
-   "n": 6,
-   "url": "https://www.bbc.co.uk/news/articles/c68798vdprwpo?at_medium=RSS&at_campaign=rss",
-   "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/8241/live/e3e3a9c0-e2a7-11f1-8226-87dfa5049e9a.jpg"
   },
   {
    "desk": "us",
@@ -3964,50 +3076,14 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Wed 2:29 a.m.",
-   "iso": "2026-11-18T07:29:33+00:00",
-   "title": "FAA Grounds New Router Installations After Nationwide Flight Disruptions",
-   "summary": "The Federal Aviation Administration has suspended the installation of new network routers following a technical failure that temporarily grounded flig...",
-   "outlet": "VOCM, CBS News, CP24 + CBC News (AP), ABC News, The Hill",
+   "t": "Wed 3:26 a.m.",
+   "iso": "2026-11-18T08:26:49+00:00",
+   "title": "Iran live updates: US conducts airstrikes on Qeshm Island, US military official says",
+   "summary": "President Donald Trump announced \"major combat operations\" against Iran on Feb. 28.",
+   "outlet": "ABC News, Toronto Sun + The Japan Times (AFP), CBC News, Euronews, BBC News",
    "n": 5,
-   "url": "https://vocm.com/2026/11/18/faa-grounds-new-router-installations-after-nationwide-flight-disruptions/",
-   "img": "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/4023/files/2026/11/35651917-1200x675.jpg"
-  },
-  {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Tue 10:30 p.m.",
-   "iso": "2026-11-18T03:30:03+00:00",
-   "title": "Car falls into massive pothole in downtown Montreal",
-   "summary": "A massive pothole opened up in downtown Montreal Tuesday evening, drawing a crowd of onlookers.",
-   "outlet": "CTV News + CP24 + Toronto Star + Global News (CP), CBC News, VOCM, CP24, CityNews Ottawa",
-   "n": 5,
-   "url": "https://www.ctvnews.ca/montreal/article/car-falls-into-massive-pothole-in-downtown-montreal/",
-   "img": "https://www.ctvnews.ca/resizer/v2/KZW2A5QZPZELHG52RHWAIULTQ4.jpeg?smart=true&auth=a626b1ff002d9fd6e0fcd0f6febbaa9f02b13c70431ec076c49847ae75a6eb17&width=1200&height=630"
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Tue 8:17 p.m.",
-   "iso": "2026-11-18T01:17:30+00:00",
-   "title": "8 must-try bites at the Vancouver Christmas Market",
-   "summary": "We stopped by the Vancouver Christmas Market to check out some of the must-try food and drink options available this year.",
-   "outlet": "Daily Hive, Narcity, Toronto Star + CityNews + CP24 + CTV News, CityNews, SaltWire",
-   "n": 5,
-   "url": "https://dailyhive.com/vancouver/vancouver-christmas-market-food-2026",
-   "img": "https://images-dh-production-baselayer.dailyhive.com/uploads/2026/11/IMG_4050-2.jpg?format=auto"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Wed 12:34 a.m.",
-   "iso": "2026-11-18T05:34:57+00:00",
-   "title": "RFK Jr. faces fierce backlash after US loses measles-free status for first time in 26 years",
-   "summary": "Health and Human Services Secretary Robert F. Kennedy Jr. faces criticism after the U.S. lost measles elimination status amid over 5,400 confirmed cases this year.",
-   "outlet": "Fox News, CBS News, PBS NewsHour, BBC News",
-   "n": 4,
-   "url": "https://www.foxnews.com/health/rfk-jr-faces-fierce-backlash-us-loses-measles-free-status-first-time-26-years",
-   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2025/04/ap25106594512179-scaled.jpg"
+   "url": "https://abcnews.com/International/live-updates/iran-live-updates-tanker-attacked-strait-hormuz-ukmto/?id=138171071",
+   "img": "https://i.abcnewsfe.com/a/df5b7555-3eb9-41f4-b75a-9bf34dd06c39/iran-4-ht-gmh-261117_1794946119162_hpMain_16x9.jpg?w=1600"
   },
   {
    "desk": "us",
@@ -4024,6 +3100,18 @@
   {
    "desk": "world",
    "pic": "globe",
+   "t": "Tue 9:35 p.m.",
+   "iso": "2026-11-18T02:35:35+00:00",
+   "title": "Airline schedules returning to normal after ground stop, FAA says",
+   "summary": "Officials attributed the ground stop to aging system infrastructure and legacy technology.",
+   "outlet": "CBS News, CP24 + CBC News (AP), ABC News, The Hill",
+   "n": 4,
+   "url": "https://www.cbsnews.com/news/faa-ground-stop-canceled-flights-travelers-what-we-know/",
+   "img": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/09/21/6e00213c-d3cb-4aa7-8d3d-6f9514f34261/thumbnail/1200x630/1e01513283f93307ff99342546278ffa/gettyimages-2289770513.jpg"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
    "t": "Tue 9:29 p.m.",
    "iso": "2026-11-18T02:29:52+00:00",
    "title": "Pakistani man sentenced to 27 years for Iran-backed plot to kill Trump",
@@ -4034,28 +3122,28 @@
    "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/4eb6/live/fc391e70-e2f6-11f1-99a1-253766e7ad8b.jpg"
   },
   {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Wed 2:39 a.m.",
+   "iso": "2026-11-18T07:39:45+00:00",
+   "title": "Apple outage hits App Store, becoming the latest casualty of major cyber breakdowns",
+   "summary": "An update gone awry at Apple follows a rash of major outages in recent days, including problems affecting the Federal Aviation Administration, United Airlines and Microsoft.",
+   "outlet": "Euronews, CTV News + CP24 + BNN Bloomberg, The Hill",
+   "n": 3,
+   "url": "https://www.euronews.com/2026/11/18/apple-outage-hits-app-store-becoming-the-latest-casualty-of-major-cyber-breakdowns",
+   "img": "https://images.euronews.com/articles/stories/09/99/73/08/1200x675_cmsv2_12a41eb8-fd46-5b9f-b1fa-e67a90a8ebe4-9997308.jpg"
+  },
+  {
    "desk": "politics",
    "pic": "parliament",
    "t": "Wed 12:06 a.m.",
    "iso": "2026-11-18T05:06:26.671000+00:00",
    "title": "Carney secures another China trade deal — but at what cost?",
    "summary": "Prime Minister Mark Carney has brokered another trade deal with China that will deliver meaningful relief to Canadian sectors long stymied by tariffs and red tape. But Ottawa is also making concessions of its own, which has some China hawks feeling squeamish.",
-   "outlet": "CBC News, CityNews Vancouver + CityNews Ottawa + CityNews Halifax + CityNews Edmonton + 6 more (CP), Canada's National Observer",
+   "outlet": "CBC News, CityNews Vancouver + CityNews Ottawa + CityNews Halifax + CityNews Calgary + 6 more (CP), Canada's National Observer",
    "n": 3,
    "url": "https://www.cbc.ca/news/politics/carney-xi-china-trade-9.7425325",
    "img": "https://i.cbc.ca/ais/f6a5dee6-def0-46a7-8a67-ffa45371a75c,1794940289710/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C460%2C8511%2C4787%29%3BResize%3D620"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Tue 8:32 p.m.",
-   "iso": "2026-11-18T01:32:52+00:00",
-   "title": "Prosecutors allege man ‘destroyed’ US military plane at Irish airport",
-   "summary": "Daithi O'Corrain, 48, has been charged with damaging a US military C-130 aircraft while it was parked overnight.",
-   "outlet": "Al Jazeera, Toronto Star + CP24 (AP), ABC News",
-   "n": 3,
-   "url": "https://www.aljazeera.com/news/2026/11/18/prosecutors-allege-man-destroyed-us-military-plane-at-irish-airport?traffic_source=rss",
-   "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/AP26185740506030-1794957729.jpg?resize=1920%2C1440"
   },
   {
    "desk": "business",
@@ -4094,13 +3182,25 @@
    "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/3/f7/3f7c1165-06de-5510-8b7b-d8af9ccf2d73/6afadc5615985.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
   },
   {
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Tue 10:30 p.m.",
+   "iso": "2026-11-18T03:30:03+00:00",
+   "title": "Car falls into massive pothole in downtown Montreal",
+   "summary": "A massive pothole opened up in downtown Montreal Tuesday evening, drawing a crowd of onlookers.",
+   "outlet": "CTV News + CP24 + Toronto Star + Global News (CP), CityNews Ottawa",
+   "n": 2,
+   "url": "https://www.ctvnews.ca/montreal/article/car-falls-into-massive-pothole-in-downtown-montreal/",
+   "img": "https://www.ctvnews.ca/resizer/v2/KZW2A5QZPZELHG52RHWAIULTQ4.jpeg?smart=true&auth=a626b1ff002d9fd6e0fcd0f6febbaa9f02b13c70431ec076c49847ae75a6eb17&width=1200&height=630"
+  },
+  {
    "desk": "world",
    "pic": "globe",
    "t": "Tue 9:58 p.m.",
    "iso": "2026-11-18T02:58:24.366000+00:00",
    "title": "IIHF confirms cyberattack after website goes offline",
    "summary": "The International Ice Hockey Federation has confirmed it has been targeted by a cyberattack, with the organization's website offline since Tuesday morning.",
-   "outlet": "CBC News + CityNews Winnipeg + CityNews Vancouver + CityNews Ottawa + 4 more (CP), Global News",
+   "outlet": "CBC News + CityNews Winnipeg + CityNews Vancouver + CityNews Ottawa + 5 more (CP), Global News",
    "n": 2,
    "url": "https://www.cbc.ca/news/world/iihf-website-hacked-russia-9.7424810",
    "img": "https://i.cbc.ca/ais/d221d2e8-ed30-4742-9b5f-4cb273fa13f4,1794951421915/full/max/0/default.jpg?im=Crop%2Crect%3D%2828%2C30%2C470%2C264%29%3BResize%3D620"
@@ -4112,22 +3212,10 @@
    "iso": "2026-11-18T02:42:14+00:00",
    "title": "A Somali American Uber driver was strangled and run over by a passenger, authorities say",
    "summary": "An Uber passenger was charged with attempted murder in a weekend attack near Minneapolis on a Somali American driver, authorities said.",
-   "outlet": "CTV News + Toronto Star + CP24 (AP), Al Jazeera",
+   "outlet": "CTV News + Toronto Star + CP24, Al Jazeera",
    "n": 2,
    "url": "https://www.ctvnews.ca/world/article/a-somali-american-uber-driver-was-strangled-and-run-over-by-a-passenger-authorities-say/",
    "img": "https://www.ctvnews.ca/resizer/v2/W3IMCXKHI4P2GCA2BD2TVOT6Q4.jpg?smart=true&auth=326ae83b35b8f1f509a20df84f6fb3fae74047b6337e52071344ab4841e89faf&width=1200&height=630"
-  },
-  {
-   "desk": "us",
-   "pic": "podium",
-   "t": "Tue 9:12 p.m.",
-   "iso": "2026-11-18T02:12:23+00:00",
-   "title": "Apple, NSA, U.S. banks hit with outages, Trump says everything is ‘fine’",
-   "summary": "Apple joined a growing list of organizations affected by network disruptions over the past week when the App Store and Apple Music briefly went offline Tuesday afternoon.",
-   "outlet": "CTV News + CP24 + BNN Bloomberg, The Hill",
-   "n": 2,
-   "url": "https://www.ctvnews.ca/sci-tech/article/apple-nsa-us-banks-hit-with-outages-trump-says-everything-is-fine/",
-   "img": "https://www.ctvnews.ca/resizer/v2/7W67A66UPZEDXLI5JLCYYWJL64.jpg?smart=true&auth=612be8e0261215cb505ef6137012e2ca625af70453fd024f5f2aa0377cf040c3&width=1200&height=630"
   },
   {
    "desk": "politics",
@@ -4190,6 +3278,18 @@
    "img": "https://montreal.citynews.ca/wp-content/blogs.dir/sites/19/2026/11/Duhaime-Coulombe-1.jpg"
   },
   {
+   "desk": "us",
+   "pic": "podium",
+   "t": "Wed 2:57 a.m.",
+   "iso": "2026-11-18T07:57:16+00:00",
+   "title": "Trio helps West Virginia hold off Auburn 76-70 to reach semifinals of Players Era 8",
+   "summary": "LAS VEGAS (AP) — Brenen Lorient finished with 19 points, and Miles Sadler and Finley Bizjack both scored 18 to help West Virginia fend off Auburn 76-70 on Tuesday in the nightcap of the Players Era 8 at Michelob ULTRA Arena.",
+   "outlet": "The Canadian Press (via Winnipeg Free Press)",
+   "n": 1,
+   "url": "https://www.winnipegfreepress.com/uncategorized/2026/11/18/trio-helps-west-virginia-hold-off-auburn-76-70-to-reach-semifinals-of-players-era-8",
+   "img": ""
+  },
+  {
    "desk": "business",
    "pic": "chart",
    "t": "Wed 2:44 a.m.",
@@ -4200,6 +3300,30 @@
    "n": 1,
    "url": "https://www.theguardian.com/business/2026/nov/18/uk-inflation-rises-energy-prices-iran-war-oil",
    "img": "https://i.guim.co.uk/img/media/8ae5d123fc8871ebf2d020abb219f5c9483c3014/969_14_6501_5202/master/6501.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=d28508aad2cdd1ea03eac433fdfb3f8c"
+  },
+  {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Wed 1:22 a.m.",
+   "iso": "2026-11-18T06:22:59+00:00",
+   "title": "Africa’s economic future cannot depend on Washington",
+   "summary": "Trump's move to exclude South Africa and Rwanda from AGOA shows why Africa must accelerate its own economic integration.",
+   "outlet": "Al Jazeera",
+   "n": 1,
+   "url": "https://www.aljazeera.com/opinions/2026/11/18/africas-economic-future-cannot-depend-on-washington?traffic_source=rss",
+   "img": "https://www.aljazeera.com/wp-content/uploads/2023/11/33ZV879-Preview-1699273602.jpg?resize=1200%2C630"
+  },
+  {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Wed 1:14 a.m.",
+   "iso": "2026-11-18T06:14:59+00:00",
+   "title": "Anthropic’s IPO price is due today. What should investors know?",
+   "summary": "The Claude maker is expected to set its IPO price on Wednesday before a Nasdaq debut on Thursday. Retail investors in France, Germany and other European markets can apply through participating brokers.",
+   "outlet": "Euronews",
+   "n": 1,
+   "url": "https://www.euronews.com/2026/11/18/anthropics-ipo-price-is-due-today-what-should-investors-know",
+   "img": "https://images.euronews.com/articles/stories/09/96/76/54/1200x675_cmsv2_aceccf58-a679-5b4b-a457-03e9cdcfe53b-9967654.jpg"
   },
   {
    "desk": "politics",
@@ -4665,7 +3789,7 @@
     "url": "https://www.youtube.com/watch?v=Yyq8fER2IzA",
     "img": "https://i.ytimg.com/vi/Yyq8fER2IzA/hqdefault.jpg",
     "story": "Trump arrives in China for the APEC summit and talks with Xi and Putin",
-    "watching": "4.1K",
+    "watching": "3.6K",
     "also": [
      {
       "net": "Sky News",
@@ -4702,6 +3826,13 @@
       "iso": "2026-11-18T07:05:00+00:00"
      },
      {
+      "outlet": "Euronews",
+      "title": "China's Xi and Russia's Putin hold talks on eve of three-way summit with Trump",
+      "url": "https://www.euronews.com/2026/11/18/chinas-xi-jinping-and-putin-hold-talks-in-shenzhen-on-eve-of-three-way-summit-with-trump",
+      "t": "Wed 12:32 a.m.",
+      "iso": "2026-11-18T05:32:27+00:00"
+     },
+     {
       "outlet": "CTV News",
       "title": "Trump heads to China, betting on unscripted diplomacy with Xi and Putin",
       "url": "https://www.ctvnews.ca/world/article/trump-heads-to-china-betting-on-unscripted-diplomacy-with-xi-and-putin/",
@@ -4721,13 +3852,6 @@
       "url": "https://www.pbs.org/newshour/world/trump-arrives-in-philippines-to-kick-off-asia-trip-with-economic-deals-and-talks-with-allies",
       "t": "Tue 4:23 p.m.",
       "iso": "2026-11-17T21:23:57+00:00"
-     },
-     {
-      "outlet": "BNN Bloomberg",
-      "title": "Carney addressing Pacific Rim business leaders at APEC summit in China",
-      "url": "https://www.bnnbloomberg.ca/business/politics/2026/11/17/carney-addressing-pacific-rim-business-leaders-at-apec-summit-in-china/",
-      "t": "Tue 3:54 p.m.",
-      "iso": "2026-11-17T20:54:14+00:00"
      }
     ]
    },
@@ -4738,7 +3862,7 @@
     "url": "https://www.youtube.com/watch?v=4mz0DDhbObk",
     "img": "https://i.ytimg.com/vi/4mz0DDhbObk/hqdefault.jpg",
     "story": "Officials from various countries speak at COP31",
-    "watching": "7"
+    "watching": "12"
    }
   ],
   "upcoming": [
@@ -4810,6 +3934,24 @@
  "blogs_auto": [
   {
    "net": "ABC News",
+   "story": "Iran live updates: US conducts airstrikes on Qeshm Island, US military",
+   "title": "Iran live updates: US conducts airstrikes on Qeshm Island, US military official says",
+   "url": "https://abcnews.com/International/live-updates/iran-live-updates-tanker-attacked-strait-hormuz-ukmto/?id=138171071",
+   "updated": "2026-11-18T08:27:02+00:00",
+   "ended": false,
+   "img": "https://i.abcnewsfe.com/a/df5b7555-3eb9-41f4-b75a-9bf34dd06c39/iran-4-ht-gmh-261117_1794946119162_hpMain_16x9.jpg?w=1600"
+  },
+  {
+   "net": "The Guardian",
+   "story": "Apec summit live: Xi and Putin start talks; Rubio says Trump serious a",
+   "title": "Apec summit live: Xi and Putin start talks; Rubio says Trump serious about meeting Kim Jong-un",
+   "url": "https://www.theguardian.com/world/live/2026/nov/18/apec-summit-live-updates-xi-putin-trump-world-leaders-gather-in-china",
+   "updated": "2026-11-18T08:31:49+00:00",
+   "ended": false,
+   "img": "https://i.guim.co.uk/img/media/0011d23e2098b25ad493ea535b2c96ddaa8ef28f/579_0_4411_3529/master/4411.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=baa83860500e897460113b1727a2577b"
+  },
+  {
+   "net": "ABC News",
    "story": "Trump Asia trip live updates: Trump joins Philippine president in bila",
    "title": "Trump Asia trip live updates: Trump joins Philippine president in bilateral meeting",
    "url": "https://abcnews.com/Politics/live-updates/trump-asia-trip-2026/?id=138187702",
@@ -4819,58 +3961,6 @@
   }
  ],
  "related": {
-  "auto-c6dd16a5": {
-   "ties": [
-    "china"
-   ],
-   "stories": [],
-   "views": [
-    {
-     "outlet": "Atlantic Council",
-     "kind": "Think tank",
-     "title": "Russia’s colossal losses in Ukraine will not push Putin toward peace",
-     "url": "https://www.atlanticcouncil.org/blogs/ukrainealert/russias-colossal-losses-in-ukraine-will-not-push-putin-toward-peace/"
-    },
-    {
-     "outlet": "Atlantic Council",
-     "kind": "Think tank",
-     "title": "Ukraine’s Crimean Bridge attack is a very personal humiliation for Putin",
-     "url": "https://www.atlanticcouncil.org/blogs/ukrainealert/ukraines-crimean-bridge-attack-is-a-very-personal-humiliation-for-putin/"
-    }
-   ]
-  },
-  "auto-f753dc01": {
-   "ties": [
-    "FAA ground stop"
-   ],
-   "stories": [
-    {
-     "t": "Tue 4:03 p.m.",
-     "iso": "2026-11-17T21:03:36+00:00",
-     "outlet": "VOCM",
-     "title": "NL Passenger Recounts Flight Experience During FAA Ground Stop",
-     "url": "https://vocm.com/2026/11/17/316963/",
-     "tie": "FAA ground stop"
-    },
-    {
-     "t": "Mon 7:35 p.m.",
-     "iso": "2026-11-17T00:35:44+00:00",
-     "outlet": "CBC News",
-     "title": "Volunteers back in Manitoba after grounding of U.S. flights set them on long journey home",
-     "url": "https://www.cbc.ca/news/canada/manitoba/volunteers-operation-walk-manitoba-doug-brown-9.7424408?cmp=rss",
-     "tie": "FAA ground stop"
-    },
-    {
-     "t": "Mon 9:08 a.m.",
-     "iso": "2026-11-16T14:08:11+00:00",
-     "outlet": "CBC News",
-     "title": "'Utter chaos:' N.L. family stuck in Mexico frustrated with Air Canada after U.S. ground stop",
-     "url": "https://www.cbc.ca/news/canada/newfoundland-labrador/air-canada-mexico-9.7423258?cmp=rss",
-     "tie": "FAA ground stop"
-    }
-   ],
-   "views": []
-  },
   "auto-e8ba636c": {
    "ties": [
     "Federal budget"
@@ -4887,47 +3977,21 @@
   }
  },
  "canangle": {
-  "auto-c6dd16a5": {
-   "story": "Trump in Asia for Putin, Xi summit; possible meeting with Kim Jong Un",
-   "us": true,
-   "specific": 3,
-   "stories": [
-    {
-     "t": "Tue 1:58 p.m.",
-     "iso": "2026-11-17T18:58:57+00:00",
-     "outlet": "BBC News",
-     "title": "Carney looks to China as Trump tariffs squeeze Canada's car industry",
-     "url": "https://www.bbc.co.uk/news/articles/cq98xlz09ye0o?at_medium=RSS&at_campaign=rss",
-     "ca": false,
-     "tie": ""
-    },
-    {
-     "t": "Tue 1:40 p.m.",
-     "iso": "2026-11-17T18:40:37+00:00",
-     "outlet": "CP24",
-     "title": "‘Are u really threatening to play China off the U.S.?’ Trump trade adviser asks PM Carney",
-     "url": "https://www.cp24.com/news/world/2026/11/17/are-u-really-threatening-to-play-china-off-the-us-trump-trade-adviser-asks-pm-carney/",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Tue 7:17 a.m.",
-     "iso": "2026-11-17T12:17:31+00:00",
-     "outlet": "BNN Bloomberg",
-     "title": "Carney and Sheinbaum meet at summit in China, as both navigate Trump’s tumult",
-     "url": "https://www.bnnbloomberg.ca/business/politics/2026/11/17/carney-and-sheinbaum-meet-at-summit-in-china-as-both-navigate-trumps-tumult/",
-     "ca": true,
-     "tie": ""
-    }
-   ],
-   "official": [],
-   "views": []
-  },
   "auto-55dbbd91": {
    "story": "Democrats win Alaska Senate race two weeks after midterms counting began",
    "us": true,
    "specific": 0,
    "stories": [
+    {
+     "t": "Tue 8:18 p.m.",
+     "iso": "2026-11-18T01:18:58+00:00",
+     "outlet": "CTV News",
+     "title": "Canada, India on the cusp of finalizing free trade deal, says high envoy",
+     "url": "https://www.ctvnews.ca/politics/article/canada-india-on-the-cusp-of-finalizing-free-trade-deal-says-high-envoy/",
+     "ca": true,
+     "tie": "Canada and the U.S.",
+     "moved": true
+    },
     {
      "t": "Tue 7:12 p.m.",
      "iso": "2026-11-18T00:12:47+00:00",
@@ -4956,6 +4020,15 @@
      "tie": "Canada and the U.S."
     },
     {
+     "t": "Tue 3:10 p.m.",
+     "iso": "2026-11-17T20:10:42+00:00",
+     "outlet": "Euronews",
+     "title": "EU climate chief Hoekstra: Electrification key for Europe to compete with China as COP pushes global target",
+     "url": "https://www.euronews.com/2026/11/17/eu-climate-chief-hoekstra-electrification-key-for-europe-to-compete-with-china-as-cop-push",
+     "ca": false,
+     "tie": "Canada and the U.S."
+    },
+    {
      "t": "Tue 1:58 p.m.",
      "iso": "2026-11-17T18:58:57+00:00",
      "outlet": "BBC News",
@@ -4963,24 +4036,6 @@
      "url": "https://www.bbc.co.uk/news/articles/cq98xlz09ye0o?at_medium=RSS&at_campaign=rss",
      "ca": false,
      "tie": "Canada and the U.S."
-    }
-   ],
-   "official": [],
-   "views": []
-  },
-  "auto-f753dc01": {
-   "story": "FAA ground stop",
-   "us": false,
-   "specific": 1,
-   "stories": [
-    {
-     "t": "Sun 3:18 p.m.",
-     "iso": "2026-11-15T20:18:00+00:00",
-     "outlet": "Toronto Star",
-     "title": "Flight ground stop in Canada, like the FAA's on Friday, unlikely: aviation expert",
-     "url": "https://www.thestar.com/news/canada/flight-ground-stop-in-canada-like-the-faa-s-on-friday-unlikely-aviation-expert/article_d6e0a6ff-bc7c-5aaa-9806-9d1f304ffd96.html",
-     "ca": true,
-     "tie": ""
     }
    ],
    "official": [],
@@ -5015,6 +4070,60 @@
   }
  },
  "canangle_live": {
+  "https://abcnews.com/International/live-updates/iran-live-updates-tanker-attacked-strait-hormuz-ukmto/?id=138171071": {
+   "story": "Iran live updates: US conducts airstrikes on Qeshm Island, US military official says",
+   "us": true,
+   "specific": 1,
+   "stories": [
+    {
+     "t": "Tue 3:25 p.m.",
+     "iso": "2026-11-17T20:25:16+00:00",
+     "outlet": "Telegraph-Journal",
+     "title": "Canadians arrested after setting up camp on U.S. St. Croix island",
+     "url": "https://tj.news/saint-john-south/canadians-arrested-after-setting-up-camp-on-u-s-st-croix-island",
+     "ca": false,
+     "tie": ""
+    }
+   ],
+   "official": [],
+   "views": []
+  },
+  "https://www.theguardian.com/world/live/2026/nov/18/apec-summit-live-updates-xi-putin-trump-world-leaders-gather-in-china": {
+   "story": "Apec summit live: Xi and Putin start talks; Rubio says Trump serious about meeting Kim Jong-un",
+   "us": true,
+   "specific": 3,
+   "stories": [
+    {
+     "t": "Tue 1:58 p.m.",
+     "iso": "2026-11-17T18:58:57+00:00",
+     "outlet": "BBC News",
+     "title": "Carney looks to China as Trump tariffs squeeze Canada's car industry",
+     "url": "https://www.bbc.co.uk/news/articles/cq98xlz09ye0o?at_medium=RSS&at_campaign=rss",
+     "ca": false,
+     "tie": ""
+    },
+    {
+     "t": "Tue 1:40 p.m.",
+     "iso": "2026-11-17T18:40:37+00:00",
+     "outlet": "CP24",
+     "title": "‘Are u really threatening to play China off the U.S.?’ Trump trade adviser asks PM Carney",
+     "url": "https://www.cp24.com/news/world/2026/11/17/are-u-really-threatening-to-play-china-off-the-us-trump-trade-adviser-asks-pm-carney/",
+     "ca": true,
+     "tie": ""
+    },
+    {
+     "t": "Tue 7:17 a.m.",
+     "iso": "2026-11-17T12:17:31+00:00",
+     "outlet": "BNN Bloomberg",
+     "title": "Carney and Sheinbaum meet at summit in China, as both navigate Trump’s tumult",
+     "url": "https://www.bnnbloomberg.ca/business/politics/2026/11/17/carney-and-sheinbaum-meet-at-summit-in-china-as-both-navigate-trumps-tumult/",
+     "ca": true,
+     "tie": ""
+    }
+   ],
+   "official": [],
+   "views": []
+  },
   "https://www.youtube.com/watch?v=Yyq8fER2IzA": {
    "story": "Trump arrives in China for the APEC summit and talks with Xi and Putin",
    "us": true,
@@ -5057,12 +4166,12 @@
      "tie": ""
     },
     {
-     "t": "Tue 2:33 p.m.",
-     "iso": "2026-11-17T19:33:27+00:00",
-     "outlet": "CBC News",
-     "title": "Carney secures another China trade deal — but at what cost?",
-     "url": "https://www.cbc.ca/news/politics/carney-xi-china-trade-9.7425325?cmp=rss",
-     "ca": true,
+     "t": "Tue 3:10 p.m.",
+     "iso": "2026-11-17T20:10:42+00:00",
+     "outlet": "Euronews",
+     "title": "EU climate chief Hoekstra: Electrification key for Europe to compete with China as COP pushes global target",
+     "url": "https://www.euronews.com/2026/11/17/eu-climate-chief-hoekstra-electrification-key-for-europe-to-compete-with-china-as-cop-push",
+     "ca": false,
      "tie": ""
     }
    ],
@@ -5133,6 +4242,15 @@
      "tie": "Canada and the U.S."
     },
     {
+     "t": "Tue 3:10 p.m.",
+     "iso": "2026-11-17T20:10:42+00:00",
+     "outlet": "Euronews",
+     "title": "EU climate chief Hoekstra: Electrification key for Europe to compete with China as COP pushes global target",
+     "url": "https://www.euronews.com/2026/11/17/eu-climate-chief-hoekstra-electrification-key-for-europe-to-compete-with-china-as-cop-push",
+     "ca": false,
+     "tie": "Canada and the U.S."
+    },
+    {
      "t": "Tue 1:58 p.m.",
      "iso": "2026-11-17T18:58:57+00:00",
      "outlet": "BBC News",
@@ -5175,6 +4293,15 @@
      "title": "Canada wants to get close to tariff-free trade in CUSMA talks: Charette",
      "url": "https://globalnews.ca/news/12155184/cusma-talks-tariff-free-trade-charette/",
      "ca": true,
+     "tie": "Canada and the U.S."
+    },
+    {
+     "t": "Tue 3:10 p.m.",
+     "iso": "2026-11-17T20:10:42+00:00",
+     "outlet": "Euronews",
+     "title": "EU climate chief Hoekstra: Electrification key for Europe to compete with China as COP pushes global target",
+     "url": "https://www.euronews.com/2026/11/17/eu-climate-chief-hoekstra-electrification-key-for-europe-to-compete-with-china-as-cop-push",
+     "ca": false,
      "tie": "Canada and the U.S."
     },
     {
@@ -6135,11 +5262,5 @@
  "geo_blocked": [
   "-NabWfv-VdA"
  ],
- "noembed": [
-  "J3FV4iY8p5w",
-  "L6qtnHZxwEw",
-  "NuEr0Q_AS6U",
-  "ldElU-Q5Qyo",
-  "t_HBrWb84eY"
- ]
+ "noembed": []
 }
