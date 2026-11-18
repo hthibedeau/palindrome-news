@@ -1,38 +1,41 @@
 {
- "checked": "2026-11-18T04:36:20.573244+00:00",
- "labels": 216,
+ "checked": "2026-11-18T14:21:18.513758+00:00",
+ "labels": 208,
  "problems": [
   {
-   "label": "CBC News",
-   "opens": "https://www.cp24.com/news/canada/2026/11/17/joly-to-meet-with-stellantis-again-on-friday-in-wake-of-brampton-plant-sale/",
-   "section": "developed",
+   "label": "NBC News",
+   "opens": "https://www.today.com/video/trump-lands-in-china-ahead-of-historic-meeting-with-xi-and-putin-273718341601",
+   "section": "breakdown",
    "link": false,
-   "width": 390
-  },
-  {
-   "label": "The Canadian Press (via Winnipeg Free Press)",
-   "opens": "https://www.cp24.com/news/canada/2026/11/17/joly-to-meet-with-stellantis-again-on-friday-in-wake-of-brampton-plant-sale/",
-   "section": "developed",
-   "link": false,
-   "width": 390
+   "width": 1280
   }
  ],
  "guard": {
   "fixed": [
    {
+    "label": "Times Colonist ↗",
+    "was": "(card link) cbc.ca",
+    "now": "https://www.timescolonist.com/the-mix/carney-meets-trump-in-china-says-canadas-us-trade-much-more-complex-than-china-13030373"
+   },
+   {
+    "label": "CTV News ↗",
+    "was": "(card link) cbc.ca",
+    "now": "https://www.ctvnews.ca/politics/article/ctv-news-in-china-carney-and-trump-meet-at-apec-summit/"
+   },
+   {
+    "label": "BNN Bloomberg ↗",
+    "was": "(card link) cbc.ca",
+    "now": "https://www.bnnbloomberg.ca/business/politics/2026/11/17/carney-and-sheinbaum-meet-at-summit-in-china-as-both-navigate-trumps-tumult/"
+   },
+   {
+    "label": "CBS News",
+    "was": "(card link) cbsnews.com",
+    "now": "https://www.cbsnews.com/news/nvidia-stops-shipping-hopper-chips-china/"
+   },
+   {
     "label": "ABC News",
     "was": "(card link) abcnews.com",
-    "now": "https://abcnews.com/Politics/democrat-mary-peltola-wins-alaska-senate-race-defeating/story?id=137983873"
-   },
-   {
-    "label": "NPR",
-    "was": "(card link) npr.org",
-    "now": "https://www.npr.org/2026/11/17/g-s1-151567/alaska-senate-results-peltola-sullivan"
-   },
-   {
-    "label": "Politico",
-    "was": "(card link) politico.com",
-    "now": "https://www.politico.com/news/2026/11/17/mary-peltola-wins-alaska-senate-01172129"
+    "now": "https://abcnews.com/Politics/live-updates/trump-asia-trip-2026/?id=138187702"
    }
   ],
   "disabled": [],
