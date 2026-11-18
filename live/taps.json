@@ -1,9 +1,40 @@
 {
- "checked": "2026-11-17T23:05:31.011582+00:00",
- "labels": 247,
- "problems": [],
+ "checked": "2026-11-18T04:36:20.573244+00:00",
+ "labels": 216,
+ "problems": [
+  {
+   "label": "CBC News",
+   "opens": "https://www.cp24.com/news/canada/2026/11/17/joly-to-meet-with-stellantis-again-on-friday-in-wake-of-brampton-plant-sale/",
+   "section": "developed",
+   "link": false,
+   "width": 390
+  },
+  {
+   "label": "The Canadian Press (via Winnipeg Free Press)",
+   "opens": "https://www.cp24.com/news/canada/2026/11/17/joly-to-meet-with-stellantis-again-on-friday-in-wake-of-brampton-plant-sale/",
+   "section": "developed",
+   "link": false,
+   "width": 390
+  }
+ ],
  "guard": {
-  "fixed": [],
+  "fixed": [
+   {
+    "label": "ABC News",
+    "was": "(card link) abcnews.com",
+    "now": "https://abcnews.com/Politics/democrat-mary-peltola-wins-alaska-senate-race-defeating/story?id=137983873"
+   },
+   {
+    "label": "NPR",
+    "was": "(card link) npr.org",
+    "now": "https://www.npr.org/2026/11/17/g-s1-151567/alaska-senate-results-peltola-sullivan"
+   },
+   {
+    "label": "Politico",
+    "was": "(card link) politico.com",
+    "now": "https://www.politico.com/news/2026/11/17/mary-peltola-wins-alaska-senate-01172129"
+   }
+  ],
   "disabled": [],
   "lifted": []
  }
