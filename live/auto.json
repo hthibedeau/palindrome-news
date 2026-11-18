@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-18T09:12:55.877092+00:00",
- "checkedLabel": "Wed 4:12 a.m.",
+ "checked": "2026-11-18T09:22:55.770765+00:00",
+ "checkedLabel": "Wed 4:22 a.m.",
  "stories": [
   {
    "key": "top",
@@ -39,13 +39,22 @@
  ],
  "wire": [
   [
+   "Wed 4:16 a.m.",
+   "U.S.",
+   "Trump in China for Putin, Xi summit; possible meeting with Kim Jong Un",
+   "CBS News",
+   "https://www.cbsnews.com/news/trump-asia-trip-trilateral-summit-putin-xi/",
+   "2026-11-18T09:16:00+00:00",
+   11
+  ],
+  [
    "Wed 4:04 a.m.",
    "World",
    "What the U.S. might learn from Canada's privatized air traffic control",
    "CBC News",
    "https://www.cbc.ca/news/world/air-traffic-control-nav-canada-9.7425458",
    "2026-11-18T09:04:39.856000+00:00",
-   6
+   2
   ],
   [
    "Wed 4:04 a.m.",
@@ -81,7 +90,7 @@
    "Toronto Star",
    "https://www.thestar.com/news/canada/british-columbia/researchers-on-b-c-coast-use-drones-to-collect-whale-snot-for-genome-sequencing/article_5faed8e3-0dc8-5463-a1fc-86facdf0d274.html",
    "2026-11-18T09:00:18+00:00",
-   4
+   5
   ],
   [
    "Wed 4:00 a.m.",
@@ -99,7 +108,7 @@
    "Toronto Star",
    "https://www.thestar.com/news/canada/canada-s-alert-ready-system-to-be-tested-across-the-country-wednesday/article_b075383b-4313-5f64-b0be-af180954586c.html",
    "2026-11-18T09:00:08+00:00",
-   5
+   6
   ],
   [
    "Wed 4:00 a.m.",
@@ -118,15 +127,6 @@
    "https://www.cbc.ca/news/politics/ace-combat-grippen-f-35-canada-procurement-9.7425376?cmp=rss",
    "2026-11-18T09:00:00+00:00",
    1
-  ],
-  [
-   "Wed 3:58 a.m.",
-   "U.S.",
-   "Apec summit live: Xi and Putin start talks as Trump arrives in China",
-   "The Guardian",
-   "https://www.theguardian.com/world/live/2026/nov/18/apec-summit-live-updates-xi-putin-trump-world-leaders-gather-in-china",
-   "2026-11-18T08:58:07+00:00",
-   7
   ],
   [
    "Wed 3:55 a.m.",
@@ -243,7 +243,7 @@
    "Toronto Star",
    "https://www.thestar.com/news/world/middle-east/saudi-backed-forces-launch-major-attack-on-houthis-and-other-mideast-news/article_e21d5390-1023-5c98-8921-9a547029e2be.html",
    "2026-11-18T08:01:48+00:00",
-   2
+   1
   ],
   [
    "Wed 3:00 a.m.",
@@ -255,12 +255,12 @@
    1
   ],
   [
-   "Wed 3:00 a.m.",
-   "Latest",
-   "Saqib frustrates Sri Lanka as Pakistan extends lead to 123 in second cricket test",
-   "The Canadian Press (via Winnipeg Free Press)",
-   "https://www.winnipegfreepress.com/uncategorized/2026/11/18/saqib-frustrates-sri-lanka-as-pakistan-extends-lead-to-123-in-second-cricket-test",
-   "2026-11-18T08:00:28+00:00",
+   "Wed 2:58 a.m.",
+   "World",
+   "‘I didn’t notice his body being purple’: Byron Bay doula left newborn to inflate a jumping castle, court hears",
+   "The Guardian",
+   "https://www.theguardian.com/australia-news/2026/nov/18/byron-bay-doula-left-newborn-to-inflate-jumping-castle-freebirth-inquest-ntwnfb",
+   "2026-11-18T07:58:32+00:00",
    1
   ]
  ],
@@ -293,10 +293,10 @@
  ],
  "leads": [
   {
-   "score": 31,
+   "score": 33,
    "title": "‘Are u really threatening to play China off the U.S.?’ Trump trade adviser asks PM Carney",
    "url": "https://www.ctvnews.ca/world/trumps-tariffs/article/are-u-really-threatening-to-play-china-off-the-us-trump-trade-adviser-asks-pm-carney/",
-   "outlets": 15,
+   "outlets": 16,
    "why": [
     "National Newswatch #2",
     "National Newswatch #9",
@@ -304,6 +304,7 @@
     "National Newswatch #14",
     "National Newswatch #13",
     "CBC News front #1",
+    "CBC News front #3",
     "National Newswatch #4"
    ],
    "theme": "Canada and the U.S."
@@ -347,6 +348,14 @@
   },
   {
    "score": 10,
+   "title": "Canada's Alert Ready system to be tested across the country Wednesday",
+   "url": "https://www.narcity.com/alert-ready-system-to-be-tested-wednesday",
+   "outlets": 8,
+   "why": [],
+   "theme": ""
+  },
+  {
+   "score": 10,
    "title": "IIHF confirms cyberattack after website goes offline",
    "url": "https://www.cbc.ca/news/world/iihf-website-hacked-russia-9.7424810",
    "outlets": 10,
@@ -363,14 +372,6 @@
   },
   {
    "score": 9,
-   "title": "Canada's Alert Ready system to be tested across the country Wednesday",
-   "url": "https://www.narcity.com/alert-ready-system-to-be-tested-wednesday",
-   "outlets": 7,
-   "why": [],
-   "theme": ""
-  },
-  {
-   "score": 9,
    "title": "Iran live updates: US conducts airstrikes on Qeshm Island, US military official says",
    "url": "https://abcnews.com/International/live-updates/iran-live-updates-tanker-attacked-strait-hormuz-ukmto/?id=138171071",
    "outlets": 7,
@@ -378,10 +379,10 @@
    "theme": ""
   },
   {
-   "score": 9,
-   "title": "Iran's foreign minister vows 'unforgettable response' if US-Israeli attacks target civilian infrastructure",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-foreign-minister-vows-unforgettable-response-if-us-israeli-attacks",
-   "outlets": 7,
+   "score": 8,
+   "title": "Fajardo tells fans he may stay with champion Elks",
+   "url": "https://globalnews.ca/news/12155876/fajardo-tells-fans-he-may-stay-with-champion-elks/",
+   "outlets": 8,
    "why": [],
    "theme": ""
   }
@@ -457,12 +458,12 @@
     "outlets": 5,
     "carriers": 8,
     "tag": "Breaking",
-    "title": "Apec summit live: Xi and Putin start talks as Trump arrives in China",
-    "url": "https://www.theguardian.com/world/live/2026/nov/18/apec-summit-live-updates-xi-putin-trump-world-leaders-gather-in-china",
-    "outlet": "The Guardian",
-    "t": "Wed 3:58 a.m.",
-    "iso": "2026-11-18T08:58:07+00:00",
-    "summary": "Summit in Chinese tech hub Shenzhen set to include highly anticipated meeting between Xi, Trump and Putin",
+    "title": "Trump in China for Putin, Xi summit; possible meeting with Kim Jong Un",
+    "url": "https://www.cbsnews.com/news/trump-asia-trip-trilateral-summit-putin-xi/",
+    "outlet": "CBS News",
+    "t": "Wed 4:16 a.m.",
+    "iso": "2026-11-18T09:16:00+00:00",
+    "summary": "The president arrived in China after a stop in the Philippines. He's slated have a summit in China with Vladimir Putin and Xi Jinping, and may meet with Kim Jong Un.",
     "first": {
      "outlet": "The Japan Times",
      "url": "https://www.japantimes.co.jp/news/2026/11/18/world/society/ukraine-crimean-bridge-trump-putin/",
@@ -470,23 +471,23 @@
      "title": "Ukraine hits Crimean bridge ahead of meeting between Trump, Xi and Putin",
      "iso": "2026-11-18T02:02:00+00:00"
     },
-    "newest": "2026-11-18T08:58:07+00:00",
+    "newest": "2026-11-18T09:16:00+00:00",
     "photo": {
-     "src": "live/img/auto-c6dd16a5-f8ca4c0112.jpg",
-     "orig": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/18/4b9f8626-0eb2-4906-a4b2-5e31f3f667ca/thumbnail/1200x630/63c44be75d0e8e5afbf1a7a6466da8b6/gettyimages-2305160465.jpg",
+     "src": "live/img/auto-c6dd16a5-d655f9c58c.jpg",
+     "orig": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/18/4b9f8626-0eb2-4906-a4b2-5e31f3f667ca/thumbnail/1200x630g2/d70a6945fd5d8836165ee1d84a8d150c/gettyimages-2305160465.jpg",
      "caption": "From: Trump in China for Putin, Xi summit; possible meeting with Kim Jong Un. — via CBS News",
      "alt": "Trump in China for Putin, Xi summit; possible meeting with Kim Jong Un",
      "outlet": "CBS News",
      "url": "https://www.cbsnews.com/news/trump-asia-trip-trilateral-summit-putin-xi/",
-     "since": "2026-11-18T09:15:38.880964+00:00"
+     "since": "2026-11-18T09:25:23.603685+00:00"
     },
     "photo_seen": [
      "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/18/4b9f8626-0eb2-4906-a4b2-5e31f3f667ca/thumbnail/1200x630/63c44be75d0e8e5afbf1a7a6466da8b6/gettyimages-2305160465.jpg"
     ],
     "photos": [
      {
-      "src": "live/img/auto-c6dd16a5-f8ca4c0112.jpg",
-      "orig": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/18/4b9f8626-0eb2-4906-a4b2-5e31f3f667ca/thumbnail/1200x630/63c44be75d0e8e5afbf1a7a6466da8b6/gettyimages-2305160465.jpg",
+      "src": "live/img/auto-c6dd16a5-d655f9c58c.jpg",
+      "orig": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/18/4b9f8626-0eb2-4906-a4b2-5e31f3f667ca/thumbnail/1200x630g2/d70a6945fd5d8836165ee1d84a8d150c/gettyimages-2305160465.jpg",
       "caption": "From: Trump in China for Putin, Xi summit; possible meeting with Kim Jong Un. — via CBS News",
       "alt": "Trump in China for Putin, Xi summit; possible meeting with Kim Jong Un",
       "outlet": "CBS News",
@@ -520,20 +521,20 @@
     "independent": 5,
     "reports": [
      {
+      "t": "Wed 4:16 a.m.",
+      "iso": "2026-11-18T09:16:00+00:00",
+      "outlet": "CBS News",
+      "title": "Trump in China for Putin, Xi summit; possible meeting with Kim Jong Un",
+      "url": "https://www.cbsnews.com/news/trump-asia-trip-trilateral-summit-putin-xi/",
+      "desc": "The president arrived in China after a stop in the Philippines. He's slated have a summit in China with Vladimir Putin and Xi Jinping, and may meet with Kim Jong Un."
+     },
+     {
       "t": "Wed 3:58 a.m.",
       "iso": "2026-11-18T08:58:07+00:00",
       "outlet": "The Guardian",
       "title": "Apec summit live: Xi and Putin start talks as Trump arrives in China",
       "url": "https://www.theguardian.com/world/live/2026/nov/18/apec-summit-live-updates-xi-putin-trump-world-leaders-gather-in-china",
       "desc": "Summit in Chinese tech hub Shenzhen set to include highly anticipated meeting between Xi, Trump and Putin"
-     },
-     {
-      "t": "Wed 3:58 a.m.",
-      "iso": "2026-11-18T08:58:00+00:00",
-      "outlet": "CBS News",
-      "title": "Trump in China for Putin, Xi summit; possible meeting with Kim Jong Un",
-      "url": "https://www.cbsnews.com/news/trump-asia-trip-trilateral-summit-putin-xi/",
-      "desc": "The president arrived in China after a stop in the Philippines. He's slated have a summit in China with Vladimir Putin and Xi Jinping, and may meet with Kim Jong Un."
      },
      {
       "t": "Wed 3:33 a.m.",
@@ -586,6 +587,23 @@
     ],
     "sources": [
      {
+      "t": "Wed 4:16 a.m.",
+      "primary": false,
+      "outlet": "CBS News",
+      "title": "Trump in China for Putin, Xi summit; possible meeting with Kim Jong Un",
+      "url": "https://www.cbsnews.com/news/trump-asia-trip-trilateral-summit-putin-xi/",
+      "desc": "The president arrived in China after a stop in the Philippines. He's slated have a summit in China with Vladimir Putin and Xi Jinping, and may meet with Kim Jong Un.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "CBS News",
+        "src": "CBS News",
+        "byline": "own staff: reporter"
+       }
+      ],
+      "copies": []
+     },
+     {
       "t": "Wed 3:58 a.m.",
       "primary": false,
       "outlet": "The Guardian",
@@ -598,23 +616,6 @@
         "outlet": "The Guardian",
         "src": "The Guardian",
         "byline": "[{\"@type\":\"Person\",\"name\":\"Kate Lamb\",},{\"@type\":\"Person\",\"name\":\"Taz Ali\",},{\"@type\":\"Person\",\"name\":\"Justin McCurry\",}"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Wed 3:58 a.m.",
-      "primary": false,
-      "outlet": "CBS News",
-      "title": "Trump in China for Putin, Xi summit; possible meeting with Kim Jong Un",
-      "url": "https://www.cbsnews.com/news/trump-asia-trip-trilateral-summit-putin-xi/",
-      "desc": "The president arrived in China after a stop in the Philippines. He's slated have a summit in China with Vladimir Putin and Xi Jinping, and may meet with Kim Jong Un.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "CBS News",
-        "src": "CBS News",
-        "byline": "own staff: reporter"
        }
       ],
       "copies": []
@@ -711,19 +712,34 @@
     "incoherent": false,
     "popular": 0,
     "us_election": false,
-    "fronts": 5,
+    "fronts": 4,
     "fronts_ca": 1,
     "fronts_who": [
      "Toronto Star",
      "NBC News",
      "CBS News",
-     "BBC News",
      "The Guardian"
     ],
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (national desks).",
     "weight": 40.0,
     "videos": [
+     {
+      "net": "Associated Press",
+      "url": "https://www.youtube.com/watch?v=Yyq8fER2IzA",
+      "title": "Xi Jinping greets Trump as he arrives in China ahead of their meeting with Putin",
+      "img": "https://i.ytimg.com/vi/Yyq8fER2IzA/hqdefault.jpg",
+      "rec": true,
+      "up": ""
+     },
+     {
+      "net": "Global News",
+      "url": "https://www.youtube.com/watch?v=ZnWxhnOLNFs",
+      "title": "Ukraine strikes Crimean bridge in record drone strike on Russia",
+      "img": "https://i.ytimg.com/vi/ZnWxhnOLNFs/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
      {
       "net": "CBS News",
       "url": "https://www.youtube.com/watch?v=XWCrnmTmjSY",
@@ -739,22 +755,6 @@
       "img": "https://i.ytimg.com/vi/yBfhqYyg1Zk/hqdefault.jpg",
       "rec": false,
       "up": ""
-     },
-     {
-      "net": "ABC News",
-      "url": "https://www.youtube.com/watch?v=PevXsEuHdz8",
-      "title": "President Putin arrives in China ahead of trilateral with President Trump and President Xi",
-      "img": "https://i.ytimg.com/vi/PevXsEuHdz8/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "Fox News",
-      "url": "https://www.youtube.com/watch?v=YeXAZ0sxzNo",
-      "title": "OVERNIGHT: Ukraine attacks Crimean bridge in MAJOR drone attack",
-      "img": "https://i.ytimg.com/vi/YeXAZ0sxzNo/hqdefault.jpg",
-      "rec": false,
-      "up": ""
      }
     ]
    },
@@ -765,8 +765,8 @@
      "democrats",
      "sullivan",
      "peltola",
-     "alaska",
-     "senate"
+     "senate",
+     "alaska"
     ],
     "score": 18,
     "outlets": 10,
@@ -1181,18 +1181,18 @@
       "up": ""
      },
      {
-      "net": "Fox News",
-      "url": "https://www.youtube.com/watch?v=Ok6ZUMcv0Y8",
-      "title": "BREAKING: Mary Peltola wins Alaska Senate seat, Fox News projects",
-      "img": "https://i.ytimg.com/vi/Ok6ZUMcv0Y8/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
       "net": "Associated Press",
       "url": "https://www.youtube.com/watch?v=cjwl5ZO56Tw",
       "title": "Democrat Mary Peltola wins Alaska Senate race, defeating Republican Dan Sullivan",
       "img": "https://i.ytimg.com/vi/cjwl5ZO56Tw/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "Fox News",
+      "url": "https://www.youtube.com/watch?v=Ok6ZUMcv0Y8",
+      "title": "BREAKING: Mary Peltola wins Alaska Senate seat, Fox News projects",
+      "img": "https://i.ytimg.com/vi/Ok6ZUMcv0Y8/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1201,14 +1201,14 @@
    {
     "key": "auto-3d29059c",
     "words": [
-     "negotiations",
+     "administration",
      "finalizing",
-     "leblanc",
-     "envoy",
+     "fields",
      "trade",
+     "envoy",
      "india"
     ],
-    "score": 31,
+    "score": 33,
     "outlets": 5,
     "carriers": 14,
     "tag": "Developing",
@@ -1563,12 +1563,12 @@
     ],
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (5 cities).",
-    "weight": 54,
+    "weight": 56,
     "videos": [
      {
       "net": "Global News",
       "url": "https://www.youtube.com/watch?v=rhMOuGKeUnE",
-      "title": "Trump touts “incredible victory,” after signing trade deal with Thailand at ASEAN Summit",
+      "title": "Trump signs trade deal with Thailand PM on sidelines of ASEAN Summit",
       "img": "https://i.ytimg.com/vi/rhMOuGKeUnE/hqdefault.jpg",
       "rec": false,
       "up": ""
@@ -1602,8 +1602,8 @@
   ],
   "considered": [
    {
-    "title": "Apec summit live: Xi and Putin start talks as Trump arrives in China",
-    "url": "https://www.theguardian.com/world/live/2026/nov/18/apec-summit-live-updates-xi-putin-trump-world-leaders-gather-in-china",
+    "title": "Trump in China for Putin, Xi summit; possible meeting with Kim Jong Un",
+    "url": "https://www.cbsnews.com/news/trump-asia-trip-trilateral-summit-putin-xi/",
     "rank": 1,
     "live": "",
     "weight": 40.0,
@@ -1613,12 +1613,11 @@
     "canada": "tie",
     "theme": "",
     "top": true,
-    "fronts": 5,
+    "fronts": 4,
     "fronts_who": [
      "Toronto Star",
      "NBC News",
      "CBS News",
-     "BBC News",
      "The Guardian"
     ],
     "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
@@ -1657,8 +1656,8 @@
     "url": "https://www.ctvnews.ca/politics/article/canada-india-on-the-cusp-of-finalizing-free-trade-deal-says-high-envoy/",
     "rank": 3,
     "live": "",
-    "weight": 54,
-    "score": 31,
+    "weight": 56,
+    "score": 33,
     "independent": 5,
     "most_read": 0,
     "canada": "canadian",
@@ -1674,9 +1673,31 @@
     "why_judged": "National: affects many people; carried across the country (5 cities)."
    },
    {
+    "title": "FAA Grounds New Router Installations After Nationwide Flight Disruptions",
+    "url": "https://vocm.com/2026/11/18/faa-grounds-new-router-installations-after-nationwide-flight-disruptions/",
+    "rank": 4,
+    "live": "",
+    "weight": 27.0,
+    "score": 8,
+    "independent": 5,
+    "most_read": 0,
+    "canada": "tie",
+    "theme": "FAA ground stop",
+    "top": false,
+    "fronts": 2,
+    "fronts_who": [
+     "BBC News",
+     "NPR"
+    ],
+    "rule": "From abroad, tied to Canada",
+    "carriers": 6,
+    "judgment": "national",
+    "why_judged": "National: affects many people; carried across the country (national desks)."
+   },
+   {
     "title": "Nvidia rejects Jensen Huang’s offer to return as CEO despite pressure from Silicon Valley",
     "url": "https://www.cp24.com/news/world/2026/11/17/nvidia-chairman-says-board-does-not-intend-to-reinstate-jensen-huang-as-ceo/",
-    "rank": 4,
+    "rank": 5,
     "live": "",
     "weight": 36.0,
     "score": 14,
@@ -1700,42 +1721,24 @@
    {
     "title": "White House pulls U.S. FDA nominee Heidi Overton after wavering support from Senate Republicans",
     "url": "https://www.cp24.com/news/world/2026/11/18/white-house-pulls-us-fda-nominee-heidi-overton-after-wavering-support-from-senate-republicans/",
-    "rank": 5,
+    "rank": 6,
     "live": "",
-    "weight": 27.5,
-    "score": 9,
+    "weight": 22.0,
+    "score": 8,
     "independent": 6,
     "most_read": 0,
     "canada": "none",
     "theme": "",
     "top": false,
-    "fronts": 1,
+    "fronts": 2,
     "fronts_who": [
+     "NBC News",
      "CBS News"
     ],
     "rule": "No Canadian tie",
-    "carriers": 9,
+    "carriers": 8,
     "judgment": "national",
     "why_judged": "National: affects many people; carried across the country (national desks)."
-   },
-   {
-    "title": "Saudi-backed forces launch major attack on Houthis, and other Mideast news",
-    "url": "https://www.thestar.com/news/world/middle-east/saudi-backed-forces-launch-major-attack-on-houthis-and-other-mideast-news/article_e21d5390-1023-5c98-8921-9a547029e2be.html",
-    "rank": 6,
-    "live": "",
-    "weight": 25.0,
-    "score": 8,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "No Canadian tie",
-    "carriers": 6,
-    "judgment": "national",
-    "why_judged": "National: affects some people; carried across the country (national desks)."
    },
    {
     "title": "U.S. launches strikes on Iran's Qeshm Island in Strait of Hormuz",
@@ -1757,35 +1760,24 @@
     "why_judged": "Regional: affects some people; carried by a few newsrooms."
    },
    {
-    "title": "Claims by Netanyahu’s party of a 'stolen' Israeli election unravel",
-    "url": "https://www.cp24.com/news/world/2026/11/17/claims-by-netanyahus-party-of-a-stolen-israeli-election-unravel/",
-    "rank": 8,
-    "live": "",
-    "weight": 29.0,
-    "score": 9,
-    "independent": 6,
-    "most_read": 0,
-    "canada": "tie",
-    "theme": "",
-    "top": false,
-    "fronts": 1,
-    "fronts_who": [
-     "CTV News"
-    ],
-    "rule": "From abroad, tied to Canada",
-    "carriers": 6,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (national desks)."
+    "title": "Carney says Canada’s growing trade ties with China are not a top concern for Trump",
+    "score": 33,
+    "why": "not built: only 1 independent report(s) (1 sites)"
    },
    {
     "title": "China and Canada expand tariff relief while relations with the U.S. are strained",
-    "score": 31,
+    "score": 33,
     "why": "not built: only 1 independent report(s) (1 sites)"
    },
    {
     "title": "‘I would not’: Former national security adviser says she wouldn’t buy a Chinese EV",
     "score": 12,
     "why": "not built: only 1 independent report(s) (3 sites)"
+   },
+   {
+    "title": "Canada's Alert Ready system to be tested across the country Wednesday",
+    "score": 10,
+    "why": "not built: only 2 independent report(s) (7 sites)"
    },
    {
     "title": "IIHF confirms cyberattack after website goes offline",
@@ -1798,238 +1790,251 @@
     "why": "not built: only 2 independent report(s) (3 sites)"
    },
    {
-    "title": "Canada's Alert Ready system to be tested across the country Wednesday",
-    "score": 9,
-    "why": "not built: only 2 independent report(s) (6 sites)"
+    "title": "Fajardo tells fans he may stay with champion Elks",
+    "score": 8,
+    "why": "not built: only 2 independent report(s) (3 sites)"
    },
    {
-    "title": "Fajardo tells fans he may stay with champion Elks",
-    "score": 9,
-    "why": "not built: only 2 independent report(s) (3 sites)"
+    "title": "Waymo suspends driverless freeway rides across US after California ban",
+    "score": 8,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Car falls into massive pothole in downtown Montreal",
+    "score": 8,
+    "why": "not built: only 2 independent report(s) (4 sites)"
+   },
+   {
+    "title": "Trade talks between top Canada, U.S. officials ramping up: sources",
+    "score": 7,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Researchers on B.C. coast use drones to collect whale snot for genome sequencing",
+    "score": 7,
+    "why": "not built: only 1 independent report(s) (5 sites)"
    }
   ],
   "moved": [],
   "top_n": 3,
   "more": [
    {
-    "key": "auto-a4b3aaf6",
+    "key": "auto-f753dc01",
     "words": [
-     "israeli"
+     "ground",
+     "during",
+     "router",
+     "flight",
+     "duffy",
+     "faa"
     ],
-    "score": 9,
-    "outlets": 6,
+    "score": 8,
+    "outlets": 5,
     "carriers": 6,
     "tag": "Developing",
-    "title": "Claims by Netanyahu’s party of a 'stolen' Israeli election unravel",
-    "url": "https://www.cp24.com/news/world/2026/11/17/claims-by-netanyahus-party-of-a-stolen-israeli-election-unravel/",
-    "outlet": "CP24",
-    "t": "Tue 2:34 p.m.",
-    "iso": "2026-11-17T19:34:06+00:00",
-    "summary": "Israeli Prime Minister Benjamin Netanyahu’s party has repeatedly claimed the vote was 'stolen' by Arab-led parties, possibly with foreign assistance.",
+    "title": "FAA Grounds New Router Installations After Nationwide Flight Disruptions",
+    "url": "https://vocm.com/2026/11/18/faa-grounds-new-router-installations-after-nationwide-flight-disruptions/",
+    "outlet": "VOCM",
+    "t": "Wed 2:29 a.m.",
+    "iso": "2026-11-18T07:29:33+00:00",
+    "summary": "The Federal Aviation Administration has suspended the installation of new network routers following a technical failure that temporarily grounded flig...",
     "first": {
-     "outlet": "CBC News",
-     "url": "https://www.cbc.ca/news/world/united-kingdom-israel-west-bank-construction-companies-settlements-9.7425375",
-     "t": "Tue 2:27 p.m.",
-     "title": "U.K. sanctions Israeli companies involved in building illegal settlements in West Bank",
-     "iso": "2026-11-17T19:27:10.569000+00:00"
+     "outlet": "ABC News",
+     "url": "https://abcnews.com/Politics/duffy-asked-50b-air-traffic-control-after-ground/story?id=138183456",
+     "t": "Tue 9:08 a.m.",
+     "title": "Duffy asked for $50B for air traffic control after ground stop, a marked increase",
+     "iso": "2026-11-17T14:08:56+00:00"
     },
-    "newest": "2026-11-18T07:22:25+00:00",
+    "newest": "2026-11-18T07:29:33+00:00",
     "photo": {
-     "src": "live/img/auto-a4b3aaf6-c556b62c1f.jpg",
-     "orig": "https://www.cp24.com/resizer/v2/3UYREXKCDDR7XRKW3RZYYKWCLQ.jpg?smart=true&auth=c75c67395c8ba2df50e47b344e1c80d6641991e150a2dc27d3d5c044fe3279d7&width=1200&height=630",
-     "caption": "Israeli Prime Minister Benjamin Netanyahu, right, and lawmaker Gadi Eisenkot, pose for a group photo after the swearing-in ceremony for Israeli lawmakers at the Knesset, Israel's parliament, in Jerusalem on Nov. 10, 2026. (Ohad Zwigenberg / AP Photo). — via CP24",
-     "alt": "Israeli Prime Minister Benjamin Netanyahu, right, and lawmaker Gadi Eisenkot, pose for a group photo after the swearing-in ceremony for Israeli lawmakers at the",
-     "outlet": "CP24",
-     "url": "https://www.cp24.com/news/world/2026/11/17/claims-by-netanyahus-party-of-a-stolen-israeli-election-unravel/",
-     "since": "2026-11-18T09:15:47.828151+00:00"
+     "src": "live/img/auto-f753dc01-b2fa424e7c.jpg",
+     "orig": "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/4023/files/2026/11/35651917-1200x675.jpg",
+     "caption": "From: FAA Grounds New Router Installations After Nationwide Flight Disruptions. — via VOCM",
+     "alt": "FAA Grounds New Router Installations After Nationwide Flight Disruptions",
+     "outlet": "VOCM",
+     "url": "https://vocm.com/2026/11/18/faa-grounds-new-router-installations-after-nationwide-flight-disruptions/",
+     "since": "2026-11-18T09:25:34.292456+00:00"
     },
     "photo_seen": [
-     "https://www.cp24.com/resizer/v2/3UYREXKCDDR7XRKW3RZYYKWCLQ.jpg?smart=true&auth=c75c67395c8ba2df50e47b344e1c80d6641991e150a2dc27d3d5c044fe3279d7&width=1200&height=630"
+     "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/4023/files/2026/11/35651917-1200x675.jpg"
     ],
     "photos": [
      {
-      "src": "live/img/auto-a4b3aaf6-c556b62c1f.jpg",
-      "orig": "https://www.cp24.com/resizer/v2/3UYREXKCDDR7XRKW3RZYYKWCLQ.jpg?smart=true&auth=c75c67395c8ba2df50e47b344e1c80d6641991e150a2dc27d3d5c044fe3279d7&width=1200&height=630",
-      "caption": "Israeli Prime Minister Benjamin Netanyahu, right, and lawmaker Gadi Eisenkot, pose for a group photo after the swearing-in ceremony for Israeli lawmakers at the Knesset, Israel's parliament, in Jerusalem on Nov. 10, 2026. (Ohad Zwigenberg / AP Photo). — via CP24",
-      "alt": "Israeli Prime Minister Benjamin Netanyahu, right, and lawmaker Gadi Eisenkot, pose for a group photo after the swearing-in ceremony for Israeli lawmakers at the",
-      "outlet": "CP24",
-      "url": "https://www.cp24.com/news/world/2026/11/17/claims-by-netanyahus-party-of-a-stolen-israeli-election-unravel/"
+      "src": "live/img/auto-f753dc01-b2fa424e7c.jpg",
+      "orig": "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/4023/files/2026/11/35651917-1200x675.jpg",
+      "caption": "From: FAA Grounds New Router Installations After Nationwide Flight Disruptions. — via VOCM",
+      "alt": "FAA Grounds New Router Installations After Nationwide Flight Disruptions",
+      "outlet": "VOCM",
+      "url": "https://vocm.com/2026/11/18/faa-grounds-new-router-installations-after-nationwide-flight-disruptions/"
      },
      {
-      "src": "live/img/auto-a4b3aaf6-2c6c2d1999.jpg",
-      "orig": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1794975100.jpg?resize=1920%2C1080&quality=80",
-      "caption": "Australia issues sanctions targeting Israeli settlers. — via Al Jazeera",
-      "alt": "Australia issues sanctions targeting Israeli settlers",
-      "outlet": "Al Jazeera",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/18/australia-issues-sanctions-targeting-israeli-settlers?traffic_source=rss"
-     },
-     {
-      "src": "live/img/auto-a4b3aaf6-f70c41a133.jpg",
-      "orig": "https://i.cbc.ca/ais/9427ab8a-df96-4947-935a-d4b2f67290a6,1794939693151/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C223%2C4240%2C2385%29%3BResize%3D620",
-      "caption": "An Israeli settlement is seen as Israeli military machinery uproots olive trees in the Palestinian village of Beit Rima near Ramallah, in the occupied West Bank on Sept. 24. The U.K. announced new sanctions on Tuesday that would be imposed on eight Israeli construction companies involved involved in West Bank settlements. (Ali Sawafta/Reuters) — via CBC News",
-      "alt": "An Israeli settlement is seen as Israeli military machinery uproots olive trees in the Palestinian village of Beit Rima near Ramallah, in the occupied West Bank",
+      "src": "live/img/auto-f753dc01-7b4f7241d2.jpg",
+      "orig": "https://i.cbc.ca/ais/b91081a4-5c08-4df7-8a40-115e3e147d22,1794952887943/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C208%2C4000%2C2250%29%3BResize%3D620",
+      "caption": "A JetBlue and American Airlines planes park at gates at Ronald Reagan Washington National Airport after the US Federal Aviation Administration lifted a national ground stop issued last Friday. (Eric Lee/Reuters) — via CBC News",
+      "alt": "A JetBlue and American Airlines planes park at gates at Ronald Reagan Washington National Airport after the US Federal Aviation Administration lifted a national",
       "outlet": "CBC News",
-      "url": "https://www.cbc.ca/news/world/united-kingdom-israel-west-bank-construction-companies-settlements-9.7425375"
+      "url": "https://www.cbc.ca/news/world/faa-airport-ground-stop-routers-installation-halted-9.7425635"
      },
      {
-      "src": "live/img/auto-a4b3aaf6-98223db3c0.jpg",
-      "orig": "https://www.middleeasteye.net/sites/default/files/2026-11/Untitled_2.jpg",
-      "caption": "From: Iran's foreign minister vows 'unforgettable response' if US-Israeli attacks target civilian infrastructure. — via Middle East Eye",
-      "alt": "Iran's foreign minister vows 'unforgettable response' if US-Israeli attacks target civilian infrastructure",
-      "outlet": "Middle East Eye",
-      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-foreign-minister-vows-unforgettable-response-if-us-israeli-attacks"
+      "src": "live/img/auto-f753dc01-3a905e3c1c.jpg",
+      "orig": "https://i.cbc.ca/ais/b5e52c5a-c202-4258-90e3-767389eb2c24,1794875466038/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C81%2C1206%2C678%29%3BResize%3D620",
+      "caption": "Krampus is at the centre of controversy in Strathroy, Ont., after a tattoo and piercing shop was told it wasn’t allowed to show off the European Christmas character at the town’s upcoming Santa Claus parade. (Submitted by Tanya Griffin) — via CBC",
+      "alt": "Krampus is at the centre of controversy in Strathroy, Ont., after a tattoo and piercing shop was told it wasn’t allowed to show off the European Christmas chara",
+      "outlet": "CBC",
+      "url": "https://www.cbc.ca/news/canada/london/krampus-strathroy-9.7424513"
+     },
+     {
+      "src": "live/img/auto-f753dc01-5c1ab99d48.jpg",
+      "orig": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/09/21/6e00213c-d3cb-4aa7-8d3d-6f9514f34261/thumbnail/1200x630/1e01513283f93307ff99342546278ffa/gettyimages-2289770513.jpg",
+      "caption": "From: Airline schedules returning to normal after ground stop, FAA says. — via CBS News",
+      "alt": "Airline schedules returning to normal after ground stop, FAA says",
+      "outlet": "CBS News",
+      "url": "https://www.cbsnews.com/news/faa-ground-stop-canceled-flights-travelers-what-we-know/"
      }
     ],
-    "independent": 6,
+    "independent": 5,
     "reports": [
      {
-      "t": "Wed 2:22 a.m.",
-      "iso": "2026-11-18T07:22:25+00:00",
-      "outlet": "Middle East Eye",
-      "title": "Iran's foreign minister vows 'unforgettable response' if US-Israeli attacks target civilian infrastructure",
-      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-foreign-minister-vows-unforgettable-response-if-us-israeli-attacks",
+      "t": "Wed 2:29 a.m.",
+      "iso": "2026-11-18T07:29:33+00:00",
+      "outlet": "VOCM",
+      "title": "FAA Grounds New Router Installations After Nationwide Flight Disruptions",
+      "url": "https://vocm.com/2026/11/18/faa-grounds-new-router-installations-after-nationwide-flight-disruptions/",
+      "desc": "The Federal Aviation Administration has suspended the installation of new network routers following a technical failure that temporarily grounded flig..."
+     },
+     {
+      "t": "Tue 9:35 p.m.",
+      "iso": "2026-11-18T02:35:35+00:00",
+      "outlet": "CBS News",
+      "title": "Airline schedules returning to normal after ground stop, FAA says",
+      "url": "https://www.cbsnews.com/news/faa-ground-stop-canceled-flights-travelers-what-we-know/",
+      "desc": "Officials attributed the ground stop to aging system infrastructure and legacy technology."
+     },
+     {
+      "t": "Tue 5:28 p.m.",
+      "iso": "2026-11-17T22:28:35+00:00",
+      "outlet": "CBC News",
+      "title": "FAA halts installation of new routers linked to Friday's airport ground stop until root of problem found",
+      "url": "https://www.cbc.ca/news/world/faa-airport-ground-stop-routers-installation-halted-9.7425635",
+      "desc": "The U.S. Federal Aviation Administration has paused installing routers linked to last week's ground stop that caused chaos for travellers, the agency said Tuesday."
+     },
+     {
+      "t": "Tue 3:48 p.m.",
+      "iso": "2026-11-17T20:48:47+00:00",
+      "outlet": "ABC News",
+      "title": "Senate Democrats demand briefings about FAA ground stop amid $50B budget ask",
+      "url": "https://abcnews.com/Politics/senate-democrats-demand-briefings-faa-ground-stop-amid/story?id=138213462",
+      "desc": "The funding would go to new air traffic control centers and other improvements."
+     },
+     {
+      "t": "Tue 2:39 p.m.",
+      "iso": "2026-11-17T19:39:14+00:00",
+      "outlet": "The Hill",
+      "title": "FAA halts router upgrades after ground stop fuels infrastructure concerns",
+      "url": "https://thehill.com/policy/transportation/6225978-faa-halts-router-upgrades/",
       "desc": ""
      },
      {
-      "t": "Tue 11:12 p.m.",
-      "iso": "2026-11-18T04:12:03+00:00",
-      "outlet": "Al Jazeera",
-      "title": "Australia issues sanctions targeting Israeli settlers",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/18/australia-issues-sanctions-targeting-israeli-settlers?traffic_source=rss",
-      "desc": "Australia has imposed sanctions on three Israeli individuals and four organisations for illegal settlement expansion."
-     },
-     {
-      "t": "Tue 3:30 p.m.",
-      "iso": "2026-11-17T20:30:20+00:00",
-      "outlet": "BBC News",
-      "title": "Palestinian woman, 72, shot dead by Israeli settlers in West Bank, health ministry says",
-      "url": "https://www.bbc.co.uk/news/articles/cqrlg377638yo?at_medium=RSS&at_campaign=rss",
-      "desc": "Palestinians say there was an attack by settlers in al-Duyuk al-Tahta, while the Israeli military says the settlers fired after being attacked."
-     },
-     {
-      "t": "Tue 3:21 p.m.",
-      "iso": "2026-11-17T20:21:48+00:00",
-      "outlet": "The Guardian",
-      "title": "Palestinian woman shot dead by Israeli settlers near Jericho, witnesses say",
-      "url": "https://www.theguardian.com/world/2026/nov/17/palestinian-woman-shot-dead-israeli-settlers-near-jericho-witnesses-say",
-      "desc": "Bullet hit 72-year-old Fadha Wadha in head outside her home in al-Duyuk al-Tahta, in the West Bank, say residents"
-     },
-     {
-      "t": "Tue 2:34 p.m.",
-      "iso": "2026-11-17T19:34:06+00:00",
+      "t": "Tue 2:31 p.m.",
+      "iso": "2026-11-17T19:31:41+00:00",
       "outlet": "CP24",
-      "title": "Claims by Netanyahu’s party of a 'stolen' Israeli election unravel",
-      "url": "https://www.cp24.com/news/world/2026/11/17/claims-by-netanyahus-party-of-a-stolen-israeli-election-unravel/",
-      "desc": "Israeli Prime Minister Benjamin Netanyahu’s party has repeatedly claimed the vote was 'stolen' by Arab-led parties, possibly with foreign assistance."
-     },
-     {
-      "t": "Tue 2:27 p.m.",
-      "iso": "2026-11-17T19:27:10.569000+00:00",
-      "outlet": "CBC News",
-      "title": "U.K. sanctions Israeli companies involved in building illegal settlements in West Bank",
-      "url": "https://www.cbc.ca/news/world/united-kingdom-israel-west-bank-construction-companies-settlements-9.7425375",
-      "desc": "Britain said on Tuesday it would impose sanctions on eight Israeli construction companies involved in building settlements in the occupied West Bank, as part of its effort to protect the idea of a two-state solution."
+      "title": "U.S. Homeland Security Mullin defends use of government plane to go to LSU-Texas game after ground stop",
+      "url": "https://www.cp24.com/news/world/2026/11/17/us-homeland-security-mullin-defends-use-of-government-plane-to-go-to-lsu-texas-game-after-ground-stop/",
+      "desc": "Homeland Security Secretary Markwayne Mullin on Tuesday defended his use of a government plane to fly to a college football game the day after a nationwide ground stop which caused massive travel disruptions and left people stranded across the country."
      }
     ],
     "sources": [
      {
-      "t": "Wed 2:22 a.m.",
+      "t": "Wed 2:29 a.m.",
       "primary": false,
-      "outlet": "Middle East Eye",
-      "title": "Iran's foreign minister vows 'unforgettable response' if US-Israeli attacks target civilian infrastructure",
-      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-foreign-minister-vows-unforgettable-response-if-us-israeli-attacks",
-      "desc": "",
+      "outlet": "VOCM",
+      "title": "FAA Grounds New Router Installations After Nationwide Flight Disruptions",
+      "url": "https://vocm.com/2026/11/18/faa-grounds-new-router-installations-after-nationwide-flight-disruptions/",
+      "desc": "The Federal Aviation Administration has suspended the installation of new network routers following a technical failure that temporarily grounded flig...",
       "wire": "",
       "by": [
        {
-        "outlet": "Middle East Eye",
-        "src": "Middle East Eye",
-        "byline": "https://www.facebook.com/middleeasteye/"
+        "outlet": "VOCM",
+        "src": "VOCM",
+        "byline": "[{\"@type\":\"Person\",\"name\":\"Mariana A\"}] \"Mariana A\" Mariana A "
        }
       ],
       "copies": []
      },
      {
-      "t": "Tue 11:12 p.m.",
+      "t": "Tue 9:35 p.m.",
       "primary": false,
-      "outlet": "Al Jazeera",
-      "title": "Australia issues sanctions targeting Israeli settlers",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/18/australia-issues-sanctions-targeting-israeli-settlers?traffic_source=rss",
-      "desc": "Australia has imposed sanctions on three Israeli individuals and four organisations for illegal settlement expansion.",
+      "outlet": "CBS News",
+      "title": "Airline schedules returning to normal after ground stop, FAA says",
+      "url": "https://www.cbsnews.com/news/faa-ground-stop-canceled-flights-travelers-what-we-know/",
+      "desc": "Officials attributed the ground stop to aging system infrastructure and legacy technology.",
       "wire": "",
       "by": [
        {
-        "outlet": "Al Jazeera",
-        "src": "Al Jazeera",
-        "byline": " NewsFeed Add Al Jazeera on Google"
+        "outlet": "CBS News",
+        "src": "CBS News",
+        "byline": "own staff: editor"
        }
       ],
       "copies": []
      },
      {
-      "t": "Tue 3:30 p.m.",
-      "primary": false,
-      "outlet": "BBC News",
-      "title": "Palestinian woman, 72, shot dead by Israeli settlers in West Bank, health ministry says",
-      "url": "https://www.bbc.co.uk/news/articles/cqrlg377638yo?at_medium=RSS&at_campaign=rss",
-      "desc": "Palestinians say there was an attack by settlers in al-Duyuk al-Tahta, while the Israeli military says the settlers fired after being attacked.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "BBC News",
-        "src": "BBC News",
-        "byline": "[{\"@type\":\"Person\",\"name\":\"Yolande Knell\"},{\"@type\":\"Person\",\"name\":\"David Gritten\"}] https://www.facebook.com/bbcnews"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Tue 3:21 p.m.",
-      "primary": false,
-      "outlet": "The Guardian",
-      "title": "Palestinian woman shot dead by Israeli settlers near Jericho, witnesses say",
-      "url": "https://www.theguardian.com/world/2026/nov/17/palestinian-woman-shot-dead-israeli-settlers-near-jericho-witnesses-say",
-      "desc": "Bullet hit 72-year-old Fadha Wadha in head outside her home in al-Duyuk al-Tahta, in the West Bank, say residents",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "The Guardian",
-        "src": "The Guardian",
-        "byline": "[{\"@type\":\"Person\",\"name\":\"Lorenzo Tondo\",},{\"@type\":\"Person\",\"name\":\"Sufian Taha\",}] \"Lorenzo Tondo,Sufian Taha\" \"Loren"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Tue 2:34 p.m.",
+      "t": "Tue 2:31 p.m.",
       "primary": false,
       "outlet": "CP24",
-      "title": "Claims by Netanyahu’s party of a 'stolen' Israeli election unravel",
-      "url": "https://www.cp24.com/news/world/2026/11/17/claims-by-netanyahus-party-of-a-stolen-israeli-election-unravel/",
-      "desc": "Israeli Prime Minister Benjamin Netanyahu’s party has repeatedly claimed the vote was 'stolen' by Arab-led parties, possibly with foreign assistance.",
+      "title": "U.S. Homeland Security Mullin defends use of government plane to go to LSU-Texas game after ground stop",
+      "url": "https://www.cp24.com/news/world/2026/11/17/us-homeland-security-mullin-defends-use-of-government-plane-to-go-to-lsu-texas-game-after-ground-stop/",
+      "desc": "Homeland Security Secretary Markwayne Mullin on Tuesday defended his use of a government plane to fly to a college football game the day after a nationwide ground stop which caused massive travel disruptions and left people stranded across the country.",
       "wire": "The Associated Press",
       "by": [
        {
         "outlet": "CP24",
         "src": "The Associated Press",
         "byline": "\"@type\": \"Person\",\n      \"name\": \"The  Associated Press\",\n      \n    }\n  ]"
+       },
+       {
+        "outlet": "CBC News",
+        "src": "The Associated Press",
+        "byline": "\"photoURL\":\"\"},\"recentContent\":{}} \"The Associated Press\" \"Reuters\" \"The Ass"
+       }
+      ],
+      "copies": [
+       {
+        "outlet": "CBC News",
+        "url": "https://www.cbc.ca/news/world/faa-airport-ground-stop-routers-installation-halted-9.7425635"
+       }
+      ]
+     },
+     {
+      "t": "Tue 3:48 p.m.",
+      "primary": false,
+      "outlet": "ABC News",
+      "title": "Senate Democrats demand briefings about FAA ground stop amid $50B budget ask",
+      "url": "https://abcnews.com/Politics/senate-democrats-demand-briefings-faa-ground-stop-amid/story?id=138213462",
+      "desc": "The funding would go to new air traffic control centers and other improvements.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "ABC News",
+        "src": "ABC News",
+        "byline": "[{\"name\":\"Allison Pecorin\",,\"@type\":\"Person\"},{\"name\":\"Ayesha Ali\",,\"@type\":\"Person\"}] \"Allison Pecorin, Ayesha Ali\" [{\""
        }
       ],
       "copies": []
      },
      {
-      "t": "Tue 2:27 p.m.",
+      "t": "Tue 2:39 p.m.",
       "primary": false,
-      "outlet": "CBC News",
-      "title": "U.K. sanctions Israeli companies involved in building illegal settlements in West Bank",
-      "url": "https://www.cbc.ca/news/world/united-kingdom-israel-west-bank-construction-companies-settlements-9.7425375",
-      "desc": "Britain said on Tuesday it would impose sanctions on eight Israeli construction companies involved in building settlements in the occupied West Bank, as part of its effort to protect the idea of a two-state solution.",
-      "wire": "Reuters",
+      "outlet": "The Hill",
+      "title": "FAA halts router upgrades after ground stop fuels infrastructure concerns",
+      "url": "https://thehill.com/policy/transportation/6225978-faa-halts-router-upgrades/",
+      "desc": "px-captcha",
+      "wire": "",
       "by": [
        {
-        "outlet": "CBC News",
-        "src": "Reuters",
-        "byline": "toURL\":\"\"},\"recentContent\":{}} \"Thomson Reuters\"  Thomson Reuters"
+        "outlet": "The Hill",
+        "src": "The Hill",
+        "byline": ""
        }
       ],
       "copies": []
@@ -2037,24 +2042,60 @@
     ],
     "replaces_top": false,
     "events": [],
-    "theme": "",
+    "theme": "FAA ground stop",
     "ca_angle": {
-     "specific": 0,
+     "specific": 1,
      "official": 0
     },
     "canada": "tie",
     "canus": false,
-    "incoherent": true,
+    "incoherent": false,
     "popular": 0,
     "us_election": false,
-    "fronts": 1,
-    "fronts_ca": 1,
+    "fronts": 2,
+    "fronts_ca": 0,
     "fronts_who": [
-     "CTV News"
+     "BBC News",
+     "NPR"
     ],
+    "outled_ca": 1,
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (national desks).",
-    "weight": 29.0
+    "weight": 27.0,
+    "videos": [
+     {
+      "net": "Forbes Breaking News",
+      "url": "https://www.youtube.com/watch?v=R1YwaHk6Thg",
+      "title": "Congress Returns To Session After Shock FAA Ground Stop",
+      "img": "https://i.ytimg.com/vi/R1YwaHk6Thg/hqdefault.jpg",
+      "rec": true,
+      "up": ""
+     },
+     {
+      "net": "Global News",
+      "url": "https://www.youtube.com/watch?v=hLojcVlPERs",
+      "title": "FAA ground stop: “Lot of things happening right now… don’t know where it’s coming from,” Duffy says",
+      "img": "https://i.ytimg.com/vi/hLojcVlPERs/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "Global News",
+      "url": "https://www.youtube.com/watch?v=mzhX7mwi3PI",
+      "title": "Battle brewing in US over air traffic control system funding after FAA ground stop",
+      "img": "https://i.ytimg.com/vi/mzhX7mwi3PI/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CBS News",
+      "url": "https://www.youtube.com/watch?v=aW5-LgrAIjA",
+      "title": "Former FAA air traffic controller says he is confident “nothing nefarious” caused the ground stop",
+      "img": "https://i.ytimg.com/vi/aW5-LgrAIjA/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     }
+    ]
    }
   ],
   "passed_over": [
@@ -2069,10 +2110,6 @@
    {
     "title": "White House pulls U.S. FDA nominee Heidi Overton after wavering support from Senate Republicans",
     "url": "https://www.cp24.com/news/world/2026/11/18/white-house-pulls-us-fda-nominee-heidi-overton-after-wavering-support-from-senate-republicans/"
-   },
-   {
-    "title": "Saudi-backed forces launch major attack on Houthis, and other Mideast news",
-    "url": "https://www.thestar.com/news/world/middle-east/saudi-backed-forces-launch-major-attack-on-houthis-and-other-mideast-news/article_e21d5390-1023-5c98-8921-9a547029e2be.html"
    }
   ]
  },
@@ -2613,7 +2650,7 @@
    "id": "Y2bf32s2pQc",
    "r": "world",
    "o": "BBC News",
-   "t": "We fact-checked your top claims about small boats | BBC News",
+   "t": "Are asylum seeker numbers going up? We break down the numbers | BBC News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=Y2bf32s2pQc",
@@ -2627,7 +2664,7 @@
    "id": "v3C6dhcw_L8",
    "r": "world",
    "o": "Sky News",
-   "t": "Inflation rises as households face another energy bill squeeze",
+   "t": "Inflation rises to 3.6%: Here's what's driving it",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=v3C6dhcw_L8",
@@ -2683,7 +2720,7 @@
    "id": "3M_WC3CbHGg",
    "r": "world",
    "o": "Sky News",
-   "t": "Education secretary faces questions over school funding and student loans",
+   "t": "Lucy Powell responds to concerns over school budgets, teacher recruitment and student loans",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=3M_WC3CbHGg",
@@ -3089,6 +3126,7 @@
   "edition": "Wednesday morning, November 18",
   "lines": [
    "Good morning. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
+   "India’s high commissioner to Canada says the two countries are on the cusp of finalizing a free trade agreement, 16 years after talks first began, The Canadian Press reports.",
    "Democrat Mary Peltola wins US Senate race in Alaska, beating incumbent Republican Dan Sullivan, The Associated Press reports.",
    "The Asia-Pacific must pursue more open trade and equitable growth if it is to remain stable and dynamic, Chinese President Xi Jinping told business executives gathered.",
    "Nvidia rejected Jensen Huang’s offer to return as CEO, putting to rest for now any possible reinstatement of the celebrated artificial intelligence billionaire and industry evangelist,, The Associated Press reports.",
@@ -3402,12 +3440,12 @@
    "city": "St. John's",
    "tz": "America/St_Johns",
    "world": false,
-   "w": "Privacy",
-   "label": "Equinor dealing with cyberattack against some of its IT…",
-   "u": "https://www.cbc.ca/news/canada/newfoundland-labrador/equinor-cyberattack-9.7425613?cmp=rss",
-   "title": "Equinor dealing with cyberattack against some of its IT systems",
+   "w": "Oil and shipping",
+   "label": "N.L. signals for stake in Bay du Nord offshore oil project…",
+   "u": "https://www.cbc.ca/news/canada/newfoundland-labrador/nl-stake-bay-du-nord-9.7425507?cmp=rss",
+   "title": "N.L. signals for stake in Bay du Nord offshore oil project - if numbers work out",
    "outlet": "CBC News",
-   "t": "Tue 4:49 p.m.",
+   "t": "Tue 4:13 p.m.",
    "hot": false
   },
   {
@@ -3428,10 +3466,10 @@
    "world": false,
    "w": "Trade",
    "label": "Carney says Canada's trade relations with U.S. 'much more…",
-   "u": "https://www.thestar.com/news/canada/carney-says-canada-s-trade-relations-with-u-s-much-more-complex-than-with-china/article_715b9ff6-e1c2-5659-ba87-6c492f114d58.html",
+   "u": "https://www.timescolonist.com/national-news/carney-says-canadas-trade-relations-with-us-much-more-complex-than-with-china-13030293",
    "title": "Carney says Canada's trade relations with U.S. 'much more complex' than with China",
-   "outlet": "Toronto Star",
-   "t": "Wed 3:47 a.m.",
+   "outlet": "Times Colonist",
+   "t": "Wed 4:12 a.m.",
    "hot": true
   },
   {
@@ -3475,11 +3513,11 @@
    "tz": "America/New_York",
    "world": false,
    "w": "Summit",
-   "label": "Xi and Putin start talks as Trump arrives in China",
-   "u": "https://www.theguardian.com/world/live/2026/nov/18/apec-summit-live-updates-xi-putin-trump-world-leaders-gather-in-china",
-   "title": "Apec summit live: Xi and Putin start talks as Trump arrives in China",
-   "outlet": "The Guardian",
-   "t": "Wed 3:58 a.m.",
+   "label": "Trump in China for Putin, Xi summit",
+   "u": "https://www.cbsnews.com/news/trump-asia-trip-trilateral-summit-putin-xi/",
+   "title": "Trump in China for Putin, Xi summit; possible meeting with Kim Jong Un",
+   "outlet": "CBS News",
+   "t": "Wed 4:16 a.m.",
    "hot": true
   },
   {
@@ -3495,6 +3533,18 @@
    "hot": false
   },
   {
+   "city": "Kyiv",
+   "tz": "Europe/Kyiv",
+   "world": true,
+   "w": "Power grid",
+   "label": "Russian attacks kill 5, injure 15",
+   "u": "https://kyivindependent.com/russian-attacks-kill-5-injure-15-across-ukraine-over-past-day-as-russia-continues-energy-assault/",
+   "title": "Russian attacks kill 5, injure 15, across Ukraine over past day, as Russia continues energy assault",
+   "outlet": "Kyiv Independent",
+   "t": "Wed 4:06 a.m.",
+   "hot": true
+  },
+  {
    "city": "Jerusalem",
    "tz": "Asia/Jerusalem",
    "world": true,
@@ -3504,18 +3554,6 @@
    "title": "Iran's foreign minister vows 'unforgettable response' if US-Israeli attacks target civilian infrastructure",
    "outlet": "Middle East Eye",
    "t": "Wed 2:22 a.m.",
-   "hot": false
-  },
-  {
-   "city": "Kyiv",
-   "tz": "Europe/Kyiv",
-   "world": true,
-   "w": "Canada–EU",
-   "label": "Ukraine cripples Crimean bridge in blow to Putin before…",
-   "u": "https://www.cbc.ca/news/world/ukraine-drones-russia-crimea-bridge-9.7425197",
-   "title": "Ukraine cripples Crimean bridge in blow to Putin before meeting with Xi, Trump",
-   "outlet": "CBC News",
-   "t": "Tue 9:29 p.m.",
    "hot": false
   }
  ],
@@ -3528,8 +3566,8 @@
    "iso": "2026-11-18T06:04:21+00:00",
    "title": "How important are Nvidia and Jensen Huang to the US economy?",
    "summary": "The former Nvidia chief executive has been at the centre of the artificial intelligence boom.",
-   "outlet": "BBC News, Toronto Star + CTV News + CP24 + BNN Bloomberg, Al Jazeera, The Japan Times (AFP), CBS News, NBC News, CBC News (Reuters)",
-   "n": 7,
+   "outlet": "BBC News, Toronto Star, Al Jazeera, The Japan Times (AFP), CBS News, NBC News, Toronto Star + CTV News + CP24 + BNN Bloomberg, CBC News (Reuters)",
+   "n": 8,
    "url": "https://www.bbc.co.uk/news/articles/c68798vdprwpo?at_medium=RSS&at_campaign=rss",
    "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/8241/live/e3e3a9c0-e2a7-11f1-8226-87dfa5049e9a.jpg"
   },
@@ -3546,6 +3584,18 @@
    "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/18/574637.jpg?v=3.1"
   },
   {
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Wed 4:16 a.m.",
+   "iso": "2026-11-18T09:16:00+00:00",
+   "title": "Trump in China for Putin, Xi summit; possible meeting with Kim Jong Un",
+   "summary": "The president arrived in China after a stop in the Philippines. He's slated have a summit in China with Vladimir Putin and Xi Jinping, and may meet with Kim Jong Un.",
+   "outlet": "CBS News, Times Colonist (CP), Kyiv Independent, CBC News, The Guardian, Times Colonist",
+   "n": 6,
+   "url": "https://www.cbsnews.com/news/trump-asia-trip-trilateral-summit-putin-xi/",
+   "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/18/4b9f8626-0eb2-4906-a4b2-5e31f3f667ca/thumbnail/1200x630g2/d70a6945fd5d8836165ee1d84a8d150c/gettyimages-2305160465.jpg"
+  },
+  {
    "desk": "us",
    "pic": "podium",
    "t": "Wed 3:33 a.m.",
@@ -3560,14 +3610,14 @@
   {
    "desk": "us",
    "pic": "podium",
-   "t": "Wed 12:51 a.m.",
-   "iso": "2026-11-18T05:51:16+00:00",
-   "title": "White House pulls FDA nominee Heidi Overton after wavering support from Senate Republicans",
-   "summary": "WASHINGTON (AP) — The White House said Tuesday it has pulled the nomination of Dr. Heidi Overton to lead the Food and Drug Administration amid growing indications she didn’t have the votes needed to win Senate confirmation.",
-   "outlet": "Times Colonist + Toronto Star + CTV News + CP24 (AP), CBS News, The Guardian, The Hill, Fox News, NBC News",
+   "t": "Tue 10:30 p.m.",
+   "iso": "2026-11-18T03:30:49+00:00",
+   "title": "White House drops its nomination for FDA commissioner",
+   "summary": "The White House has dropped the nomination of Dr. Heidi Overton, President Trump's pick for FDA commissioner, CBS News has confirmed.",
+   "outlet": "CBS News, The Guardian, Toronto Star + CTV News + CP24 (AP), The Hill, Fox News, NBC News",
    "n": 6,
-   "url": "https://www.timescolonist.com/the-mix/white-house-pulls-fda-nominee-heidi-overton-after-wavering-support-from-senate-republicans-13029827",
-   "img": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/f7bd0fde20f2e5faecb596c094247a70e76e468004f17fc6ade45e8ebde8a8a7.jpg;w=1200;h=800;mode=crop"
+   "url": "https://www.cbsnews.com/news/white-house-drops-heidi-overton-fda-commissioner/",
+   "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/18/3f16f324-7605-4589-85b2-7dba2f1303dc/thumbnail/1200x630g2/f0ddf93a112ed59df423faaad0c79929/gettyimages-2296270843.jpg"
   },
   {
    "desk": "world",
@@ -3584,12 +3634,48 @@
   {
    "desk": "world",
    "pic": "globe",
+   "t": "Wed 2:29 a.m.",
+   "iso": "2026-11-18T07:29:33+00:00",
+   "title": "FAA Grounds New Router Installations After Nationwide Flight Disruptions",
+   "summary": "The Federal Aviation Administration has suspended the installation of new network routers following a technical failure that temporarily grounded flig...",
+   "outlet": "VOCM, CBS News, CP24 + CBC News (AP), ABC News, The Hill",
+   "n": 5,
+   "url": "https://vocm.com/2026/11/18/faa-grounds-new-router-installations-after-nationwide-flight-disruptions/",
+   "img": "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/4023/files/2026/11/35651917-1200x675.jpg"
+  },
+  {
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Tue 10:30 p.m.",
+   "iso": "2026-11-18T03:30:03+00:00",
+   "title": "Car falls into massive pothole in downtown Montreal",
+   "summary": "A massive pothole opened up in downtown Montreal Tuesday evening, drawing a crowd of onlookers.",
+   "outlet": "CTV News + CP24 + Toronto Star + Global News (CP), CBC News, VOCM, CP24, CityNews Ottawa",
+   "n": 5,
+   "url": "https://www.ctvnews.ca/montreal/article/car-falls-into-massive-pothole-in-downtown-montreal/",
+   "img": "https://www.ctvnews.ca/resizer/v2/KZW2A5QZPZELHG52RHWAIULTQ4.jpeg?smart=true&auth=a626b1ff002d9fd6e0fcd0f6febbaa9f02b13c70431ec076c49847ae75a6eb17&width=1200&height=630"
+  },
+  {
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Wed 4:12 a.m.",
+   "iso": "2026-11-18T09:12:35+00:00",
+   "title": "Carney says Canada’s growing trade ties with China are not a top concern for Trump",
+   "summary": "SHENZHEN, China (AP) — Canadian Prime Minister Mark Carney on Wednesday said that Canada ’s growing trade relations with China are not a top priority for U.S. President Donald Trump, pointing out that Canada primarily exports commodities to China rather than sensitive technologies such as advanced semiconductors.",
+   "outlet": "The Canadian Press (via Winnipeg Free Press), CBC News, CityNews Vancouver + CityNews Ottawa + CityNews Halifax + CityNews Calgary + 5 more (CP), Canada's National Observer",
+   "n": 4,
+   "url": "https://www.winnipegfreepress.com/business/2026/11/18/carney-says-canadas-growing-trade-ties-with-china-are-not-a-top-concern-for-trump",
+   "img": ""
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
    "t": "Wed 2:22 a.m.",
    "iso": "2026-11-18T07:22:25+00:00",
    "title": "Iran's foreign minister vows 'unforgettable response' if US-Israeli attacks target civilian infrastructure",
    "summary": "",
-   "outlet": "Middle East Eye, The Guardian + Toronto Star, BBC News, CP24 (AP), CBC News (Reuters)",
-   "n": 5,
+   "outlet": "Middle East Eye, The Guardian + Toronto Star, BBC News, CP24",
+   "n": 4,
    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-foreign-minister-vows-unforgettable-response-if-us-israeli-attacks",
    "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Untitled_2.jpg"
   },
@@ -3620,18 +3706,6 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Tue 9:35 p.m.",
-   "iso": "2026-11-18T02:35:35+00:00",
-   "title": "Airline schedules returning to normal after ground stop, FAA says",
-   "summary": "Officials attributed the ground stop to aging system infrastructure and legacy technology.",
-   "outlet": "CBS News, CP24 + CBC News (AP), ABC News, The Hill",
-   "n": 4,
-   "url": "https://www.cbsnews.com/news/faa-ground-stop-canceled-flights-travelers-what-we-know/",
-   "img": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/09/21/6e00213c-d3cb-4aa7-8d3d-6f9514f34261/thumbnail/1200x630/1e01513283f93307ff99342546278ffa/gettyimages-2289770513.jpg"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
    "t": "Tue 9:29 p.m.",
    "iso": "2026-11-18T02:29:52+00:00",
    "title": "Pakistani man sentenced to 27 years for Iran-backed plot to kill Trump",
@@ -3648,7 +3722,7 @@
    "iso": "2026-11-18T08:01:48+00:00",
    "title": "Saudi-backed forces launch major attack on Houthis, and other Mideast news",
    "summary": "The Saudi-led coalition said it launched a major air attack on Iranian-backed Houthis that the rebel group said killed at least 17 people. Iran claimed to have hit a U.S.",
-   "outlet": "Toronto Star + CTV News + CP24 + The Canadian Press (via Winnipeg Free Press), Al Jazeera, Middle East Eye",
+   "outlet": "Toronto Star + CTV News + CP24 (CP), Al Jazeera, Middle East Eye",
    "n": 3,
    "url": "https://www.thestar.com/news/world/middle-east/saudi-backed-forces-launch-major-attack-on-houthis-and-other-mideast-news/article_e21d5390-1023-5c98-8921-9a547029e2be.html",
    "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/3/f7/3f7c1165-06de-5510-8b7b-d8af9ccf2d73/6afadc5615985.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
@@ -3664,18 +3738,6 @@
    "n": 3,
    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/kuwait-slams-iranian-attacks-its-territory",
    "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Untitled_2.jpg"
-  },
-  {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Wed 12:06 a.m.",
-   "iso": "2026-11-18T05:06:26.671000+00:00",
-   "title": "Carney secures another China trade deal — but at what cost?",
-   "summary": "Prime Minister Mark Carney has brokered another trade deal with China that will deliver meaningful relief to Canadian sectors long stymied by tariffs and red tape. But Ottawa is also making concessions of its own, which has some China hawks feeling squeamish.",
-   "outlet": "CBC News, Toronto Star + CityNews Vancouver + CityNews Ottawa + CityNews Halifax + 6 more (CP), Canada's National Observer",
-   "n": 3,
-   "url": "https://www.cbc.ca/news/politics/carney-xi-china-trade-9.7425325",
-   "img": "https://i.cbc.ca/ais/f6a5dee6-def0-46a7-8a67-ffa45371a75c,1794940289710/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C460%2C8511%2C4787%29%3BResize%3D620"
   },
   {
    "desk": "business",
@@ -3700,18 +3762,6 @@
    "n": 2,
    "url": "https://www.theguardian.com/us-news/2026/nov/18/zero-evidence-recent-tech-outages-linked-marco-rubio",
    "img": "https://i.guim.co.uk/img/media/d8053b9038ce3a18aaa3b2cbcffef1cb0d77b18b/475_0_4164_3333/master/4164.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=6c7e8d6610d700dea47d1a4f82fdcdbf"
-  },
-  {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Tue 10:30 p.m.",
-   "iso": "2026-11-18T03:30:03+00:00",
-   "title": "Car falls into massive pothole in downtown Montreal",
-   "summary": "A massive pothole opened up in downtown Montreal Tuesday evening, drawing a crowd of onlookers.",
-   "outlet": "CTV News + CP24 + Toronto Star + Global News (CP), CityNews Ottawa",
-   "n": 2,
-   "url": "https://www.ctvnews.ca/montreal/article/car-falls-into-massive-pothole-in-downtown-montreal/",
-   "img": "https://www.ctvnews.ca/resizer/v2/KZW2A5QZPZELHG52RHWAIULTQ4.jpeg?smart=true&auth=a626b1ff002d9fd6e0fcd0f6febbaa9f02b13c70431ec076c49847ae75a6eb17&width=1200&height=630"
   },
   {
    "desk": "us",
@@ -3856,18 +3906,6 @@
    "n": 1,
    "url": "https://www.cp24.com/news/canada/2026/11/17/carney-secures-china-trade-concessions-as-tensions-over-auto-investment-persist/",
    "img": "https://www.cp24.com/resizer/v2/PWLZZHE4DBFQZP7WXJ2YRLUWFU.JPG?smart=true&auth=13030317652dcaaeeac14225f08ee9dab78c4ff7c8447b28f6829e0bb6004128&width=1200&height=630"
-  },
-  {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Tue 6:02 p.m.",
-   "iso": "2026-11-17T23:02:26+00:00",
-   "title": "Canada following Ukraine’s Starshield difficulties ‘very closely’: defence minister",
-   "summary": "Ukraine’s struggles with the Starshield military satellite network show why Canada is pursuing its own sovereign low-Earth orbit satellite network, Defence Minister David McGuinty said Tuesday.",
-   "outlet": "CP24 (CP)",
-   "n": 1,
-   "url": "https://www.cp24.com/news/world/2026/11/17/canada-following-ukraines-starshield-difficulties-very-closely-defence-minister/",
-   "img": "https://www.cp24.com/resizer/v2/ZW465ESQKCQMMIOAMXQ2X5U6FQ.jpg?smart=true&auth=866f7faaa104fda4ef31ed512789e10889e682318baab0edd1872c60464cff3b&width=1200&height=630"
   },
   {
    "desk": "business",
@@ -4159,7 +4197,7 @@
    "o": "NBC News",
    "ca": false,
    "h": [
-    "Trump arrives in China for historic talks with Xi and Putin",
+    "Xi greets Trump in China ahead of historic three-way talks with Putin",
     "Democrat Mary Peltola flips Alaska Senate seat, defeating GOP Sen. Dan Sullivan",
     "Sean Duffy’s $50 billion demand for air travel fixes is met with yelling and skepticism in Congress",
     "Why so many major computer systems went down in a week, according to experts",
@@ -4219,7 +4257,7 @@
    "o": "BBC News",
    "ca": false,
    "h": [
-    "Trump lands in China for unprecedented meeting with Xi and Putin",
+    "Xi welcomes Trump to China at Shenzhen airport in unprecedented honour",
     "As Trump and Xi meet, China's AI dreams face an unexpected hurdle: the Nvidia spy scandal",
     "The EU that Burnham is eyeing up is very different to the one Britain left",
     "Harry Styles, Cher, Sam Fender and Billie Eilish to headline Glastonbury 2027",
@@ -4279,24 +4317,27 @@
  "live": {
   "now": [
    {
-    "net": "Associated Press",
-    "r": "us",
-    "title": "LIVE: Xi Jinping greets Trump as he arrives in China",
-    "url": "https://www.youtube.com/watch?v=Yyq8fER2IzA",
-    "img": "https://i.ytimg.com/vi/Yyq8fER2IzA/hqdefault.jpg",
-    "story": "Xi Jinping greets Trump as he arrives in China",
-    "watching": "6.9K",
+    "net": "Reuters",
+    "r": "world",
+    "title": "LIVE: Trump arrives in China for APEC summit",
+    "url": "https://www.youtube.com/watch?v=Od0xcS2QrGs",
+    "img": "https://i.ytimg.com/vi/Od0xcS2QrGs/hqdefault.jpg",
+    "story": "Trump arrives in China for APEC summit",
+    "watching": "256",
     "also": [
-     {
-      "net": "Reuters",
-      "url": "https://www.youtube.com/watch?v=Od0xcS2QrGs"
-     },
      {
       "net": "Sky News",
       "url": "https://www.youtube.com/watch?v=flZOM5jcMXg"
      }
     ],
     "reports": [
+     {
+      "outlet": "CBS News",
+      "title": "Trump in China for Putin, Xi summit; possible meeting with Kim Jong Un",
+      "url": "https://www.cbsnews.com/news/trump-asia-trip-trilateral-summit-putin-xi/",
+      "t": "Wed 4:16 a.m.",
+      "iso": "2026-11-18T09:16:00+00:00"
+     },
      {
       "outlet": "The Guardian",
       "title": "Apec summit live: Xi and Putin start talks as Trump arrives in China",
@@ -4305,11 +4346,32 @@
       "iso": "2026-11-18T08:58:07+00:00"
      },
      {
+      "outlet": "Al Jazeera",
+      "title": "Russia, China should ‘lead’ push to multipolar world, Xi tells APEC summit",
+      "url": "https://www.aljazeera.com/news/2026/11/18/president-xi-says-russia-and-china-should-lead-push-to-multipolar-world?traffic_source=rss",
+      "t": "Wed 2:50 a.m.",
+      "iso": "2026-11-18T07:50:47+00:00"
+     },
+     {
       "outlet": "Toronto Star",
       "title": "Xi says Asia-Pacific needs open trade and Putin condemns sanctions as Trump arrives in China",
       "url": "https://www.thestar.com/news/world/china-s-xi-and-other-asian-leaders-say-asia-pacific-must-embrace-open-trade-fair-growth/article_e8cdb973-1e94-578b-918d-11d6194fbc5d.html",
       "t": "Wed 12:14 a.m.",
       "iso": "2026-11-18T05:14:04+00:00"
+     },
+     {
+      "outlet": "CP24",
+      "title": "Carney addressing Pacific Rim business leaders at APEC summit in China",
+      "url": "https://www.cp24.com/politics/2026/11/17/carney-addressing-pacific-rim-business-leaders-at-apec-summit-in-china/",
+      "t": "Tue 3:54 p.m.",
+      "iso": "2026-11-17T20:54:14+00:00"
+     },
+     {
+      "outlet": "BNN Bloomberg",
+      "title": "Carney addressing Pacific Rim business leaders at APEC summit in China",
+      "url": "https://www.bnnbloomberg.ca/business/politics/2026/11/17/carney-addressing-pacific-rim-business-leaders-at-apec-summit-in-china/",
+      "t": "Tue 3:54 p.m.",
+      "iso": "2026-11-17T20:54:14+00:00"
      }
     ]
    },
@@ -4320,7 +4382,7 @@
     "url": "https://www.youtube.com/watch?v=4mz0DDhbObk",
     "img": "https://i.ytimg.com/vi/4mz0DDhbObk/hqdefault.jpg",
     "story": "Officials from various countries speak at COP31",
-    "watching": "9"
+    "watching": "6"
    }
   ],
   "upcoming": [
@@ -4390,6 +4452,15 @@
  },
  "pm": [],
  "blogs_auto": [
+  {
+   "net": "The Guardian",
+   "story": "Apec summit live: Xi and Putin start talks as Trump arrives in China",
+   "title": "Apec summit live: Xi and Putin start talks as Trump arrives in China",
+   "url": "https://www.theguardian.com/world/live/2026/nov/18/apec-summit-live-updates-xi-putin-trump-world-leaders-gather-in-china",
+   "updated": "2026-11-18T09:27:05+00:00",
+   "ended": false,
+   "img": "https://i.guim.co.uk/img/media/0011d23e2098b25ad493ea535b2c96ddaa8ef28f/579_0_4411_3529/master/4411.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=baa83860500e897460113b1727a2577b"
+  },
   {
    "net": "ABC News",
    "story": "Iran live updates: US conducts airstrikes on Qeshm Island, US military",
@@ -4483,14 +4554,55 @@
      "url": "https://www.atlanticcouncil.org/blogs/ukrainealert/ukraines-crimean-bridge-attack-is-a-very-personal-humiliation-for-putin/"
     }
    ]
+  },
+  "auto-f753dc01": {
+   "ties": [
+    "FAA ground stop"
+   ],
+   "stories": [
+    {
+     "t": "Tue 4:03 p.m.",
+     "iso": "2026-11-17T21:03:36+00:00",
+     "outlet": "VOCM",
+     "title": "NL Passenger Recounts Flight Experience During FAA Ground Stop",
+     "url": "https://vocm.com/2026/11/17/316963/",
+     "tie": "FAA ground stop"
+    },
+    {
+     "t": "Mon 7:35 p.m.",
+     "iso": "2026-11-17T00:35:44+00:00",
+     "outlet": "CBC News",
+     "title": "Volunteers back in Manitoba after grounding of U.S. flights set them on long journey home",
+     "url": "https://www.cbc.ca/news/canada/manitoba/volunteers-operation-walk-manitoba-doug-brown-9.7424408?cmp=rss",
+     "tie": "FAA ground stop"
+    },
+    {
+     "t": "Mon 9:08 a.m.",
+     "iso": "2026-11-16T14:08:11+00:00",
+     "outlet": "CBC News",
+     "title": "'Utter chaos:' N.L. family stuck in Mexico frustrated with Air Canada after U.S. ground stop",
+     "url": "https://www.cbc.ca/news/canada/newfoundland-labrador/air-canada-mexico-9.7423258?cmp=rss",
+     "tie": "FAA ground stop"
+    }
+   ],
+   "views": []
   }
  },
  "canangle": {
   "auto-c6dd16a5": {
-   "story": "Apec summit live: Xi and Putin start talks as Trump arrives in China",
+   "story": "Trump in China for Putin, Xi summit; possible meeting with Kim Jong Un",
    "us": true,
    "specific": 3,
    "stories": [
+    {
+     "t": "Wed 4:12 a.m.",
+     "iso": "2026-11-18T09:12:35+00:00",
+     "outlet": "The Canadian Press (via Winnipeg Free Press)",
+     "title": "Carney says Canada’s growing trade ties with China are not a top concern for Trump",
+     "url": "https://www.winnipegfreepress.com/business/2026/11/18/carney-says-canadas-growing-trade-ties-with-china-are-not-a-top-concern-for-trump",
+     "ca": true,
+     "tie": ""
+    },
     {
      "t": "Tue 1:58 p.m.",
      "iso": "2026-11-17T18:58:57+00:00",
@@ -4498,15 +4610,6 @@
      "title": "Carney looks to China as Trump tariffs squeeze Canada's car industry",
      "url": "https://www.bbc.co.uk/news/articles/cq98xlz09ye0o?at_medium=RSS&at_campaign=rss",
      "ca": false,
-     "tie": ""
-    },
-    {
-     "t": "Tue 1:40 p.m.",
-     "iso": "2026-11-17T18:40:37+00:00",
-     "outlet": "CP24",
-     "title": "‘Are u really threatening to play China off the U.S.?’ Trump trade adviser asks PM Carney",
-     "url": "https://www.cp24.com/news/world/2026/11/17/are-u-really-threatening-to-play-china-off-the-us-trump-trade-adviser-asks-pm-carney/",
-     "ca": true,
      "tie": ""
     },
     {
@@ -4566,9 +4669,94 @@
    ],
    "official": [],
    "views": []
+  },
+  "auto-f753dc01": {
+   "story": "FAA ground stop",
+   "us": false,
+   "specific": 1,
+   "stories": [
+    {
+     "t": "Sun 3:18 p.m.",
+     "iso": "2026-11-15T20:18:00+00:00",
+     "outlet": "Toronto Star",
+     "title": "Flight ground stop in Canada, like the FAA's on Friday, unlikely: aviation expert",
+     "url": "https://www.thestar.com/news/canada/flight-ground-stop-in-canada-like-the-faa-s-on-friday-unlikely-aviation-expert/article_d6e0a6ff-bc7c-5aaa-9806-9d1f304ffd96.html",
+     "ca": true,
+     "tie": ""
+    }
+   ],
+   "official": [],
+   "views": []
   }
  },
  "canangle_live": {
+  "https://www.theguardian.com/world/live/2026/nov/18/apec-summit-live-updates-xi-putin-trump-world-leaders-gather-in-china": {
+   "story": "Apec summit live: Xi and Putin start talks as Trump arrives in China",
+   "us": true,
+   "specific": 5,
+   "stories": [
+    {
+     "t": "Wed 4:12 a.m.",
+     "iso": "2026-11-18T09:12:59+00:00",
+     "outlet": "Times Colonist",
+     "title": "Carney says Canada's trade relations with U.S. 'much more complex' than with China",
+     "url": "https://www.timescolonist.com/national-news/carney-says-canadas-trade-relations-with-us-much-more-complex-than-with-china-13030293",
+     "ca": true,
+     "tie": ""
+    },
+    {
+     "t": "Wed 4:12 a.m.",
+     "iso": "2026-11-18T09:12:35+00:00",
+     "outlet": "The Canadian Press (via Winnipeg Free Press)",
+     "title": "Carney says Canada’s growing trade ties with China are not a top concern for Trump",
+     "url": "https://www.winnipegfreepress.com/business/2026/11/18/carney-says-canadas-growing-trade-ties-with-china-are-not-a-top-concern-for-trump",
+     "ca": true,
+     "tie": ""
+    },
+    {
+     "t": "Wed 1:09 a.m.",
+     "iso": "2026-11-18T06:09:00+00:00",
+     "outlet": "The Japan Times",
+     "title": "After years on ice, Canada seeks trade-based reset with China, minister says",
+     "url": "https://www.japantimes.co.jp/news/2026/11/18/world/politics/canada-trade-reset-china/",
+     "ca": false,
+     "tie": ""
+    },
+    {
+     "t": "Tue 6:20 p.m.",
+     "iso": "2026-11-17T23:20:17+00:00",
+     "outlet": "PBS NewsHour",
+     "title": "China and Canada expand tariff relief while relations with the U.S. are strained",
+     "url": "https://www.pbs.org/newshour/world/china-and-canada-expand-tariff-relief-while-relations-with-the-u-s-are-strained",
+     "ca": false,
+     "tie": ""
+    },
+    {
+     "t": "Tue 3:54 p.m.",
+     "iso": "2026-11-17T20:54:14+00:00",
+     "outlet": "CP24",
+     "title": "Carney addressing Pacific Rim business leaders at APEC summit in China",
+     "url": "https://www.cp24.com/politics/2026/11/17/carney-addressing-pacific-rim-business-leaders-at-apec-summit-in-china/",
+     "ca": true,
+     "tie": ""
+    }
+   ],
+   "official": [
+    {
+     "outlet": "Mark Carney",
+     "title": "Prime Minister Carney meets with President of Mexico Claudia Sheinbaum",
+     "url": "https://www.pm.gc.ca/en/news/readouts/2026/11/17/prime-minister-carney-meets-president-mexico-claudia-sheinbaum",
+     "t": "Nov 17"
+    },
+    {
+     "outlet": "Mark Carney",
+     "title": "Prime Minister Carney meets with President of the People’s Republic of China Xi Jinping",
+     "url": "https://www.pm.gc.ca/en/news/readouts/2026/11/17/prime-minister-carney-meets-president-peoples-republic-china-xi-jinping",
+     "t": "Nov 17"
+    }
+   ],
+   "views": []
+  },
   "https://abcnews.com/International/live-updates/iran-live-updates-tanker-attacked-strait-hormuz-ukmto/?id=138171071": {
    "story": "Iran live updates: US conducts airstrikes on Qeshm Island, US military official says",
    "us": true,
@@ -4587,26 +4775,26 @@
    "official": [],
    "views": []
   },
-  "https://www.youtube.com/watch?v=Yyq8fER2IzA": {
-   "story": "Xi Jinping greets Trump as he arrives in China",
+  "https://www.youtube.com/watch?v=Od0xcS2QrGs": {
+   "story": "Trump arrives in China for APEC summit",
    "us": true,
    "specific": 5,
    "stories": [
     {
-     "t": "Wed 3:47 a.m.",
-     "iso": "2026-11-18T08:47:58+00:00",
-     "outlet": "Toronto Star",
+     "t": "Wed 4:12 a.m.",
+     "iso": "2026-11-18T09:12:59+00:00",
+     "outlet": "Times Colonist",
      "title": "Carney says Canada's trade relations with U.S. 'much more complex' than with China",
-     "url": "https://www.thestar.com/news/canada/carney-says-canada-s-trade-relations-with-u-s-much-more-complex-than-with-china/article_715b9ff6-e1c2-5659-ba87-6c492f114d58.html",
+     "url": "https://www.timescolonist.com/national-news/carney-says-canadas-trade-relations-with-us-much-more-complex-than-with-china-13030293",
      "ca": true,
      "tie": ""
     },
     {
-     "t": "Wed 2:02 a.m.",
-     "iso": "2026-11-18T07:02:40+00:00",
-     "outlet": "Times Colonist",
-     "title": "Carney tells Pacific Rim businesses that China's growth a model for Canada",
-     "url": "https://www.timescolonist.com/the-mix/carney-tells-pacific-rim-businesses-that-chinas-growth-a-model-for-canada-13026196",
+     "t": "Wed 4:12 a.m.",
+     "iso": "2026-11-18T09:12:35+00:00",
+     "outlet": "The Canadian Press (via Winnipeg Free Press)",
+     "title": "Carney says Canada’s growing trade ties with China are not a top concern for Trump",
+     "url": "https://www.winnipegfreepress.com/business/2026/11/18/carney-says-canadas-growing-trade-ties-with-china-are-not-a-top-concern-for-trump",
      "ca": true,
      "tie": ""
     },
@@ -4678,20 +4866,20 @@
    "specific": 5,
    "stories": [
     {
-     "t": "Wed 3:47 a.m.",
-     "iso": "2026-11-18T08:47:58+00:00",
-     "outlet": "Toronto Star",
+     "t": "Wed 4:12 a.m.",
+     "iso": "2026-11-18T09:12:59+00:00",
+     "outlet": "Times Colonist",
      "title": "Carney says Canada's trade relations with U.S. 'much more complex' than with China",
-     "url": "https://www.thestar.com/news/canada/carney-says-canada-s-trade-relations-with-u-s-much-more-complex-than-with-china/article_715b9ff6-e1c2-5659-ba87-6c492f114d58.html",
+     "url": "https://www.timescolonist.com/national-news/carney-says-canadas-trade-relations-with-us-much-more-complex-than-with-china-13030293",
      "ca": true,
      "tie": ""
     },
     {
-     "t": "Wed 2:02 a.m.",
-     "iso": "2026-11-18T07:02:40+00:00",
-     "outlet": "Times Colonist",
-     "title": "Carney tells Pacific Rim businesses that China's growth a model for Canada",
-     "url": "https://www.timescolonist.com/the-mix/carney-tells-pacific-rim-businesses-that-chinas-growth-a-model-for-canada-13026196",
+     "t": "Wed 4:12 a.m.",
+     "iso": "2026-11-18T09:12:35+00:00",
+     "outlet": "The Canadian Press (via Winnipeg Free Press)",
+     "title": "Carney says Canada’s growing trade ties with China are not a top concern for Trump",
+     "url": "https://www.winnipegfreepress.com/business/2026/11/18/carney-says-canadas-growing-trade-ties-with-china-are-not-a-top-concern-for-trump",
      "ca": true,
      "tie": ""
     },
@@ -4908,95 +5096,11 @@
    "lead": 6
   },
   {
-   "id": "bd-auto-a4b3aaf6",
-   "auto": true,
-   "desk": "World",
-   "status": "Developing",
-   "at": "2026-11-18T07:22:25+00:00",
-   "exact": true,
-   "img": "live/img/auto-a4b3aaf6-c556b62c1f.jpg",
-   "credit": "via CP24",
-   "pic": "globe",
-   "h": "Claims by Netanyahu’s party of a 'stolen' Israeli election unravel",
-   "lede": "Israeli Prime Minister Benjamin Netanyahu’s party has repeatedly claimed the vote was 'stolen' by Arab-led parties, possibly with foreign assistance.",
-   "newl": "Now carried by 6 independent newsrooms.",
-   "rows": [
-    [
-     "Al Jazeera",
-     "Australia has imposed sanctions on three Israeli individuals and four organisations for illegal settlement expansion.",
-     [
-      2
-     ]
-    ],
-    [
-     "BBC News",
-     "Palestinians say there was an attack by settlers in al-Duyuk al-Tahta, while the Israeli military says the settlers fired after being attacked.",
-     [
-      3
-     ]
-    ],
-    [
-     "The Guardian",
-     "Bullet hit 72-year-old Fadha Wadha in head outside her home in al-Duyuk al-Tahta, in the West Bank, say residents",
-     [
-      4
-     ]
-    ],
-    [
-     "CP24",
-     "Israeli Prime Minister Benjamin Netanyahu’s party has repeatedly claimed the vote was 'stolen' by Arab-led parties, possibly with foreign assistance.",
-     [
-      5
-     ]
-    ],
-    [
-     "CBC News",
-     "Britain said on Tuesday it would impose sanctions on eight Israeli construction companies involved in building settlements in the occupied West Bank, as part of its effort to protect the idea of a two-state solution.",
-     [
-      6
-     ]
-    ]
-   ],
-   "src": [
-    [
-     "Middle East Eye",
-     "Iran's foreign minister vows 'unforgettable response' if US-Israeli attacks target civilian infrastructure",
-     "https://www.middleeasteye.net/live-blog/live-blog-update/irans-foreign-minister-vows-unforgettable-response-if-us-israeli-attacks"
-    ],
-    [
-     "Al Jazeera",
-     "Australia issues sanctions targeting Israeli settlers",
-     "https://www.aljazeera.com/video/newsfeed/2026/11/18/australia-issues-sanctions-targeting-israeli-settlers?traffic_source=rss"
-    ],
-    [
-     "BBC News",
-     "Palestinian woman, 72, shot dead by Israeli settlers in West Bank, health ministry says",
-     "https://www.bbc.co.uk/news/articles/cqrlg377638yo?at_medium=RSS&at_campaign=rss"
-    ],
-    [
-     "The Guardian",
-     "Palestinian woman shot dead by Israeli settlers near Jericho, witnesses say",
-     "https://www.theguardian.com/world/2026/nov/17/palestinian-woman-shot-dead-israeli-settlers-near-jericho-witnesses-say"
-    ],
-    [
-     "CP24",
-     "Claims by Netanyahu’s party of a 'stolen' Israeli election unravel",
-     "https://www.cp24.com/news/world/2026/11/17/claims-by-netanyahus-party-of-a-stolen-israeli-election-unravel/"
-    ],
-    [
-     "CBC News",
-     "U.K. sanctions Israeli companies involved in building illegal settlements in West Bank",
-     "https://www.cbc.ca/news/world/united-kingdom-israel-west-bank-construction-companies-settlements-9.7425375"
-    ]
-   ],
-   "lead": 5
-  },
-  {
    "id": "bd-auto-a8a83da7",
    "auto": true,
    "desk": "United States",
-   "status": "Developing",
-   "at": "2026-11-18T05:51:16+00:00",
+   "status": "Ongoing",
+   "at": "2026-11-18T02:57:58+00:00",
    "exact": true,
    "img": "live/img/auto-a8a83da7-5dbab6dd14.jpg",
    "credit": "via CP24",
@@ -5006,40 +5110,42 @@
    "newl": "Now carried by 6 independent newsrooms.",
    "rows": [
     [
-     "Times Colonist",
-     "WASHINGTON (AP) — The White House said Tuesday it has pulled the nomination of Dr. Heidi Overton to lead the Food and Drug Administration amid growing indications she didn’t have the votes needed to win Senate confirmation.",
-     [
-      1
-     ]
-    ],
-    [
      "CTV News",
      "The White House said Tuesday it has pulled the nomination of Dr. Heidi Overton to lead the U.S. Food and Drug Administration amid growing indications she didn’t have the votes needed to win Senate confirmation.",
      [
-      3
+      2
      ]
     ],
     [
      "CBS News",
      "Heidi Overton, Trump's pick to be FDA commissioner, is having trouble finding enough Republican support to advance her nomination, which could be pulled if she falls short.",
      [
-      5
+      4
      ]
     ],
     [
      "Fox News",
      "President Donald Trump's FDA pick, Heidi Overton, saw her nomination pulled one day before a Senate committee vote, a White House official confirmed.",
      [
+      6
+     ]
+    ],
+    [
+     "Toronto Star",
+     "WASHINGTON (AP) — The White House said Tuesday it has pulled the nomination of Dr. Heidi Overton to lead the Food and Drug Administration amid growing indications she didn’t have",
+     [
       7
+     ]
+    ],
+    [
+     "NBC News",
+     "The move leaves the Food and Drug Administration without a permanent leader as it nears a decision on the abortion pill mifepristone.",
+     [
+      8
      ]
     ]
    ],
    "src": [
-    [
-     "Times Colonist",
-     "White House pulls FDA nominee Heidi Overton after wavering support from Senate Republicans",
-     "https://www.timescolonist.com/the-mix/white-house-pulls-fda-nominee-heidi-overton-after-wavering-support-from-senate-republicans-13029827"
-    ],
     [
      "The Guardian",
      "White House pulls nomination of Heidi Overton to lead Food and Drug Administration – as it happened",
@@ -5081,7 +5187,7 @@
      "https://www.nbcnews.com/health/health-care/white-house-drops-dr-heidi-overton-fda-nomination-commissioner-rcna609883"
     ]
    ],
-   "lead": 4
+   "lead": 3
   }
  ],
  "geo": {
@@ -5814,6 +5920,7 @@
   "-NabWfv-VdA"
  ],
  "noembed": [
+  "J3FV4iY8p5w",
   "L6qtnHZxwEw",
   "NuEr0Q_AS6U",
   "ldElU-Q5Qyo",
