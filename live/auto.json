@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-19T01:58:41.303096+00:00",
- "checkedLabel": "Wed 8:58 p.m.",
+ "checked": "2026-11-19T02:04:25.535777+00:00",
+ "checkedLabel": "Wed 9:04 p.m.",
  "stories": [
   {
    "key": "top",
@@ -14,15 +14,7 @@
    "key": "maid-bill-2026-10-27",
    "name": "MAID bill",
    "since": "2026-11-17T21:23:00+00:00",
-   "reports": [
-    {
-     "t": "Wed 3:45 p.m.",
-     "iso": "2026-11-18T20:45:00+00:00",
-     "outlet": "Toronto Star",
-     "title": "Liberal MP who chaired MAID study agrees with Tory proposal for separate votes",
-     "url": "https://www.thestar.com/politics/federal/liberal-mp-who-chaired-maid-study-agrees-with-tory-proposal-for-separate-votes/article_04060efa-5640-4521-b302-41a5d16a749f.html"
-    }
-   ],
+   "reports": [],
    "photo": {
     "src": "live/img/cbc-news-maid-bill-1117-2205.jpg",
     "orig": "https://i.cbc.ca/ais/0aa14623-09a4-44aa-8674-20f5dc3be8c3,1794952529127/full/max/0/default.jpg?im=Resize%3D1280",
@@ -34,17 +26,19 @@
     "when": "2026-11-17T22:05:09.794000+00:00",
     "t": "Tue 5:05 p.m."
    },
-   "coverage": [
-    {
-     "outlet": "Toronto Star",
-     "url": "https://www.thestar.com/politics/federal/liberal-mp-who-chaired-maid-study-agrees-with-tory-proposal-for-separate-votes/article_04060efa-5640-4521-b302-41a5d16a749f.html",
-     "iso": "2026-11-18T20:45:00+00:00",
-     "t": "Wed 3:45 p.m."
-    }
-   ]
+   "coverage": []
   }
  ],
  "wire": [
+  [
+   "Wed 8:58 p.m.",
+   "Latest",
+   "Female pedestrian dead after being struck by Eglinton LRT vehicle",
+   "CTV News",
+   "https://www.ctvnews.ca/toronto/article/female-pedestrian-dead-after-being-struck-by-eglinton-lrt-vehicle/",
+   "2026-11-19T01:58:46+00:00",
+   3
+  ],
   [
    "Wed 8:49 p.m.",
    "Latest",
@@ -97,6 +91,15 @@
    "CBC News",
    "https://www.cbc.ca/news/world/fiona-hippo-zoo-hat-9.7426251",
    "2026-11-19T01:41:41.333000+00:00",
+   1
+  ],
+  [
+   "Wed 8:39 p.m.",
+   "U.S.",
+   "What to expect from Trump's meeting with Putin and Xi Jinping",
+   "NBC News",
+   "https://www.nbcnews.com/video/what-to-expect-from-trump-s-meeting-with-putin-and-xi-jinping-273779781736",
+   "2026-11-19T01:39:13+00:00",
    1
   ],
   [
@@ -208,24 +211,6 @@
    1
   ],
   [
-   "Wed 8:11 p.m.",
-   "Latest",
-   "Ford apologizes for poor French",
-   "CBC News",
-   "https://www.cbc.ca/player/play/video/9.7427592",
-   "2026-11-19T01:11:09.914000+00:00",
-   1
-  ],
-  [
-   "Wed 8:09 p.m.",
-   "Canada",
-   "Pedestrian struck by LRT vehicle among 5 collisions reported across Toronto",
-   "CTV News",
-   "https://www.ctvnews.ca/toronto/article/pedestrian-struck-by-lrt-vehicle-among-5-collisions-reported-across-toronto/",
-   "2026-11-19T01:09:42+00:00",
-   2
-  ],
-  [
    "Wed 8:07 p.m.",
    "World",
    "Elon Musk claims ‘I’m not Maga’ and says he regrets vast sums to back Republicans",
@@ -273,6 +258,11 @@
  ],
  "blogs": [
   {
+   "url": "https://www.thestar.com/news/gta/toronto-election-results-live/article_3ec1c84c-3d92-4440-b764-ac02c6602fb0.html",
+   "updated": "2026-11-18T13:35:58+00:00",
+   "ended": true
+  },
+  {
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/27/israel-election-results-live-exit-polls-soon-as-netanyahu-faces-tight-race",
    "updated": "2026-10-28T22:40:53+00:00",
    "ended": true
@@ -298,7 +288,7 @@
    "score": 23,
    "title": "If Carney tries to play China against the U.S., Canada will lose",
    "url": "https://ca.news.yahoo.com/tasha-kheiriddin-carney-tries-play-192307577.html",
-   "outlets": 23,
+   "outlets": 22,
    "why": [
     "National Newswatch #12",
     "National Newswatch #13",
@@ -333,17 +323,6 @@
    "theme": ""
   },
   {
-   "score": 12,
-   "title": "The National | Carney meets Trump face-to-face",
-   "url": "https://www.cbc.ca/player/play/video/9.4236164",
-   "outlets": 4,
-   "why": [
-    "National Newswatch #4",
-    "CBC News front #4"
-   ],
-   "theme": "Canada and the U.S."
-  },
-  {
    "score": 11,
    "title": "Green Light? Canadians open to Chinese EV manufacturing domestically, but concerns persist over jobs and security",
    "url": "https://angusreid.org/canada-china-electric-vehicles-carney/",
@@ -364,9 +343,20 @@
   },
   {
    "score": 10,
+   "title": "The National | Carney meets Trump face-to-face",
+   "url": "https://www.cbc.ca/player/play/video/9.4236164",
+   "outlets": 2,
+   "why": [
+    "National Newswatch #4",
+    "CBC News front #4"
+   ],
+   "theme": "Canada and the U.S."
+  },
+  {
+   "score": 9,
    "title": "Anthropic is said to price IPO above range at $83 per share",
    "url": "https://www.japantimes.co.jp/business/2026/11/19/tech/anthropic-ipo-83-per-share/",
-   "outlets": 8,
+   "outlets": 7,
    "why": [],
    "theme": ""
   },
@@ -379,10 +369,10 @@
    "theme": ""
   },
   {
-   "score": 9,
-   "title": "Canadian Air Force major charged with negligent performance, abuse of subordinates",
-   "url": "https://www.cbc.ca/news/politics/air-force-major-charged-negligence-abuse-9.7427221?cmp=rss",
-   "outlets": 9,
+   "score": 8,
+   "title": "Operation Vivaldi: Ukraine melds man and machine to repel Russians",
+   "url": "https://www.japantimes.co.jp/news/2026/11/19/world/operation-vivaldi-ukraine-russia/",
+   "outlets": 6,
    "why": [],
    "theme": ""
   }
@@ -592,270 +582,9 @@
   "stale_since": "2026-10-28T00:15:00+00:00",
   "stories": [
    {
-    "key": "auto-f1193f5f",
-    "words": [
-     "anthropic's",
-     "ipo",
-     "ai"
-    ],
-    "score": 10,
-    "outlets": 6,
-    "carriers": 7,
-    "tag": "Breaking",
-    "title": "Anthropic prices IPO at $83 US per share, valuing AI giant at $1.51 trillion US",
-    "url": "https://www.cbc.ca/news/business/anthropic-ipo-share-price-nasdaq-9.7426856",
-    "outlet": "CBC News",
-    "t": "Wed 6:58 p.m.",
-    "iso": "2026-11-18T23:58:40.038000+00:00",
-    "summary": "Anthropic has set a stock price of $83 US per share for its hotly anticipated initial public offering, with shares of the U.S. artificial intelligence giant set to debut on the Nasdaq exchange on Thursday.",
-    "first": {
-     "outlet": "BBC News",
-     "url": "https://www.bbc.co.uk/news/articles/cj4gnpzll020o?at_medium=RSS&at_campaign=rss",
-     "t": "Wed 4:28 p.m.",
-     "title": "Can Anthropic's record-breaking IPO stop the AI bubble bursting?",
-     "iso": "2026-11-18T21:28:08+00:00"
-    },
-    "newest": "2026-11-19T01:38:00+00:00",
-    "photo": {
-     "src": "live/img/auto-f1193f5f-28f9ce2b64.jpg",
-     "orig": "https://i.cbc.ca/ais/4fed3498-d2a6-4964-8762-1d91ebb7f3b7,1795046620119/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C294%2C3000%2C1687%29%3BResize%3D620",
-     "caption": "Anthropic CEO and co-founder Dario Amodei at the World Economic Forum in Davos, Switzerland, in January 2025. ((AP Photo/Markus Schreiber)) — via CBC News",
-     "alt": "Anthropic CEO and co-founder Dario Amodei at the World Economic Forum in Davos, Switzerland, in January 2025.",
-     "outlet": "CBC News",
-     "url": "https://www.cbc.ca/news/business/anthropic-ipo-share-price-nasdaq-9.7426856",
-     "since": "2026-11-19T01:50:45.325876+00:00"
-    },
-    "photo_seen": [
-     "https://d3i6fh83elv35t.cloudfront.net/static/2026/11/2026-10-26T184012Z_1521056589_RC23BOAQ27IX_RTRMADP_3_USA-STOCKS-1024x683.jpg"
-    ],
-    "photos": [
-     {
-      "src": "live/img/auto-f1193f5f-28f9ce2b64.jpg",
-      "orig": "https://i.cbc.ca/ais/4fed3498-d2a6-4964-8762-1d91ebb7f3b7,1795046620119/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C294%2C3000%2C1687%29%3BResize%3D620",
-      "caption": "Anthropic CEO and co-founder Dario Amodei at the World Economic Forum in Davos, Switzerland, in January 2025. ((AP Photo/Markus Schreiber)) — via CBC News",
-      "alt": "Anthropic CEO and co-founder Dario Amodei at the World Economic Forum in Davos, Switzerland, in January 2025.",
-      "outlet": "CBC News",
-      "url": "https://www.cbc.ca/news/business/anthropic-ipo-share-price-nasdaq-9.7426856"
-     },
-     {
-      "src": "live/img/auto-f1193f5f-c901f5cb83.jpg",
-      "orig": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/19/574890.jpg?v=3.1",
-      "caption": "From: Anthropic is said to price IPO above range at $83 per share. — via The Japan Times",
-      "alt": "Anthropic is said to price IPO above range at $83 per share",
-      "outlet": "The Japan Times",
-      "url": "https://www.japantimes.co.jp/business/2026/11/19/tech/anthropic-ipo-83-per-share/"
-     },
-     {
-      "src": "live/img/auto-f1193f5f-665259b4b8.jpg",
-      "orig": "https://d3i6fh83elv35t.cloudfront.net/static/2026/11/2026-10-26T184012Z_1521056589_RC23BOAQ27IX_RTRMADP_3_USA-STOCKS-1024x683.jpg",
-      "caption": "From: Anthropic prices its IPO at $83 per share, valuing the AI giant at $1.5 trillion. — via PBS NewsHour",
-      "alt": "Anthropic prices its IPO at $83 per share, valuing the AI giant at $1.5 trillion",
-      "outlet": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/economy/anthropic-prices-its-ipo-at-83-per-share-valuing-the-ai-giant-at-1-5-trillion"
-     },
-     {
-      "src": "live/img/auto-f1193f5f-bcb32b37e1.jpg",
-      "orig": "https://i.abcnewsfe.com/a/4a601758-7905-47fd-8095-16ffd638e799/anthropic-rt-er-261118_1795035834175_hpMain_16x9.jpg?w=1600",
-      "caption": "From: Anthropic announces price of $83 per share for IPO. — via ABC News",
-      "alt": "Anthropic announces price of $83 per share for IPO",
-      "outlet": "ABC News",
-      "url": "https://abcnews.com/Business/anthropic-announces-price-83-share-ipo/story?id=138245320"
-     }
-    ],
-    "independent": 6,
-    "reports": [
-     {
-      "t": "Wed 8:38 p.m.",
-      "iso": "2026-11-19T01:38:00+00:00",
-      "outlet": "The Japan Times",
-      "title": "Anthropic is said to price IPO above range at $83 per share",
-      "url": "https://www.japantimes.co.jp/business/2026/11/19/tech/anthropic-ipo-83-per-share/",
-      "desc": "The pricing makes it the biggest first-time share sale on record."
-     },
-     {
-      "t": "Wed 8:22 p.m.",
-      "iso": "2026-11-19T01:22:17+00:00",
-      "outlet": "Toronto Sun",
-      "title": "Hot demand lifts Anthropic IPO price to $83 per share, breaking SpaceX record",
-      "url": "https://torontosun.com/business/hot-demand-lifts-anthropic-ipo-price-to-83-per-share-breaking-spacex-record",
-      "desc": ""
-     },
-     {
-      "t": "Wed 7:54 p.m.",
-      "iso": "2026-11-19T00:54:39+00:00",
-      "outlet": "PBS NewsHour",
-      "title": "Anthropic prices its IPO at $83 per share, valuing the AI giant at $1.5 trillion",
-      "url": "https://www.pbs.org/newshour/economy/anthropic-prices-its-ipo-at-83-per-share-valuing-the-ai-giant-at-1-5-trillion",
-      "desc": "The higher-than-anticipated pricing signals broad investor enthusiasm for AI stocks even amid some uncertainty in the market stemming from the ouster of Nvidia's CEO and worries about an AI bubble."
-     },
-     {
-      "t": "Wed 7:44 p.m.",
-      "iso": "2026-11-19T00:44:55+00:00",
-      "outlet": "ABC News",
-      "title": "Anthropic announces price of $83 per share for IPO",
-      "url": "https://abcnews.com/Business/anthropic-announces-price-83-share-ipo/story?id=138245320",
-      "desc": "Anthropic is set for a valuation well above $1 trillion."
-     },
-     {
-      "t": "Wed 6:58 p.m.",
-      "iso": "2026-11-18T23:58:40.038000+00:00",
-      "outlet": "CBC News",
-      "title": "Anthropic prices IPO at $83 US per share, valuing AI giant at $1.51 trillion US",
-      "url": "https://www.cbc.ca/news/business/anthropic-ipo-share-price-nasdaq-9.7426856",
-      "desc": "Anthropic has set a stock price of $83 US per share for its hotly anticipated initial public offering, with shares of the U.S. artificial intelligence giant set to debut on the Nasdaq exchange on Thursday."
-     },
-     {
-      "t": "Wed 6:50 p.m.",
-      "iso": "2026-11-18T23:50:09+00:00",
-      "outlet": "CBS News",
-      "title": "How Anthropic's IPO could affect your 401(k) and the AI industry",
-      "url": "https://www.cbsnews.com/video/how-anthropics-ipo-could-affect-your-401k-ai-industry/",
-      "desc": "Claude maker Anthropic is set to go public on Thursday. CBS News' Kelly O'Grady explains what this could mean for the AI boom and for your retirement savings."
-     },
-     {
-      "t": "Wed 4:28 p.m.",
-      "iso": "2026-11-18T21:28:08+00:00",
-      "outlet": "BBC News",
-      "title": "Can Anthropic's record-breaking IPO stop the AI bubble bursting?",
-      "url": "https://www.bbc.co.uk/news/articles/cj4gnpzll020o?at_medium=RSS&at_campaign=rss",
-      "desc": "Anthropic's hotly anticipated IPO is expected to put it in the top 10 most valuable US companies, but the future is uncertain."
-     }
-    ],
-    "sources": [
-     {
-      "t": "Wed 8:38 p.m.",
-      "primary": false,
-      "outlet": "The Japan Times",
-      "title": "Anthropic is said to price IPO above range at $83 per share",
-      "url": "https://www.japantimes.co.jp/business/2026/11/19/tech/anthropic-ipo-83-per-share/",
-      "desc": "The pricing makes it the biggest first-time share sale on record.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "The Japan Times",
-        "src": "The Japan Times",
-        "byline": "{ \"@type\": \"Organization\", \"name\": \"The Japan Times\" } { \"@type\": \"Organization\", \"name\": \"The Japan Times\", } No Author"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Wed 8:22 p.m.",
-      "primary": false,
-      "outlet": "Toronto Sun",
-      "title": "Hot demand lifts Anthropic IPO price to $83 per share, breaking SpaceX record",
-      "url": "https://torontosun.com/business/hot-demand-lifts-anthropic-ipo-price-to-83-per-share-breaking-spacex-record",
-      "desc": "",
-      "wire": "AFP",
-      "by": [
-       {
-        "outlet": "Toronto Sun",
-        "src": "AFP",
-        "byline": "[{\"@type\": \"Person\", \"name\": \"AFP\", \"alternateName\":"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Wed 6:58 p.m.",
-      "primary": false,
-      "outlet": "CBC News",
-      "title": "Anthropic prices IPO at $83 US per share, valuing AI giant at $1.51 trillion US",
-      "url": "https://www.cbc.ca/news/business/anthropic-ipo-share-price-nasdaq-9.7426856",
-      "desc": "Anthropic has set a stock price of $83 US per share for its hotly anticipated initial public offering, with shares of the U.S. artificial intelligence giant set to debut on the Nasdaq exchange on Thursday.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "CBC News",
-        "src": "CBC",
-        "byline": "own staff: reporter"
-       },
-       {
-        "outlet": "PBS NewsHour",
-        "src": "The Associated Press",
-        "byline": "Barbara Ortutay, Associated Press"
-       }
-      ],
-      "copies": [
-       {
-        "outlet": "PBS NewsHour",
-        "url": "https://www.pbs.org/newshour/economy/anthropic-prices-its-ipo-at-83-per-share-valuing-the-ai-giant-at-1-5-trillion"
-       }
-      ]
-     },
-     {
-      "t": "Wed 7:44 p.m.",
-      "primary": false,
-      "outlet": "ABC News",
-      "title": "Anthropic announces price of $83 per share for IPO",
-      "url": "https://abcnews.com/Business/anthropic-announces-price-83-share-ipo/story?id=138245320",
-      "desc": "Anthropic is set for a valuation well above $1 trillion.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "ABC News",
-        "src": "ABC News",
-        "byline": "[{\"name\":\"Max Zahn\",,\"@type\":\"Person\"}] \"Max Zahn\" [{\"name\":\"Max Zahn\",,\"@type\":\"Person\"}] \"ABC News\" \"Max Zahn\" \"ABC Ne"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Wed 6:50 p.m.",
-      "primary": false,
-      "outlet": "CBS News",
-      "title": "How Anthropic's IPO could affect your 401(k) and the AI industry",
-      "url": "https://www.cbsnews.com/video/how-anthropics-ipo-could-affect-your-401k-ai-industry/",
-      "desc": "Claude maker Anthropic is set to go public on Thursday. CBS News' Kelly O'Grady explains what this could mean for the AI boom and for your retirement savings.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "CBS News",
-        "src": "CBS News",
-        "byline": ""
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Wed 4:28 p.m.",
-      "primary": false,
-      "outlet": "BBC News",
-      "title": "Can Anthropic's record-breaking IPO stop the AI bubble bursting?",
-      "url": "https://www.bbc.co.uk/news/articles/cj4gnpzll020o?at_medium=RSS&at_campaign=rss",
-      "desc": "Anthropic's hotly anticipated IPO is expected to put it in the top 10 most valuable US companies, but the future is uncertain.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "BBC News",
-        "src": "BBC News",
-        "byline": "[{\"@type\":\"Person\",\"name\":\"Simon Jack\",}] https://www.facebook.com/bbcnews"
-       }
-      ],
-      "copies": []
-     }
-    ],
-    "replaces_top": false,
-    "events": [],
-    "theme": "",
-    "canada": "none",
-    "canus": false,
-    "incoherent": false,
-    "popular": 0,
-    "us_election": false,
-    "fronts": 2,
-    "fronts_ca": 0,
-    "fronts_who": [
-     "NBC News",
-     "ABC News"
-    ],
-    "judgment": "national",
-    "judgment_why": "National: affects many people; carried beyond one city.",
-    "weight": 33.5
-   },
-   {
     "key": "auto-e7a3658e",
     "words": [
+     "trump's",
      "putin"
     ],
     "score": 23,
@@ -875,7 +604,7 @@
      "title": "Trump and Putin to meet one-on-one in China Thursday",
      "iso": "2026-11-18T20:12:20+00:00"
     },
-    "newest": "2026-11-19T01:31:31+00:00",
+    "newest": "2026-11-19T01:39:13+00:00",
     "photo": {
      "src": "live/img/auto-e7a3658e-89481ff7da.jpg",
      "orig": "https://www.cp24.com/resizer/v2/M6POFKUGAJFPTLBCJJLUGMZK6A.jpg?smart=true&auth=df707b29b4fc104c51b039f92f91e0f70c094df287c101bbf4a4d372b18b4056&width=1200&height=630",
@@ -898,6 +627,14 @@
       "url": "https://www.cp24.com/news/world/2026/11/18/trump-plans-to-meet-separately-with-putin-on-his-china-trip-in-addition-to-their-3-way-talks-with-xi/"
      },
      {
+      "src": "live/img/auto-e7a3658e-d51ae9d0a5.jpg",
+      "orig": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/mpx/2704722219/2026_11/1795052345616_now_topstory_trilateral_trump_putin_xijinping_261118_S3_1920x1080-e3375f.jpg",
+      "caption": "From: What to expect from Trump's meeting with Putin and Xi Jinping. — via NBC News",
+      "alt": "What to expect from Trump's meeting with Putin and Xi Jinping",
+      "outlet": "NBC News",
+      "url": "https://www.nbcnews.com/video/what-to-expect-from-trump-s-meeting-with-putin-and-xi-jinping-273779781736"
+     },
+     {
       "src": "live/img/auto-e7a3658e-5829e8cc73.jpg",
       "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/b/84/b84f0bb3-f6b1-5618-bbc8-c4bc7493df54/6afe4b3d15b63.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize",
       "caption": "From: Trump meets Xi and Putin in China with nuclear arms and two wars on the table. — via Toronto Star",
@@ -912,18 +649,18 @@
       "alt": "Latest on Trump's summit with Xi, Putin",
       "outlet": "CBS News",
       "url": "https://www.cbsnews.com/video/latest-on-trumps-summit-with-xi-putin/"
-     },
-     {
-      "src": "live/img/auto-e7a3658e-73b9b093a3.jpg",
-      "orig": "https://d3i6fh83elv35t.cloudfront.net/static/2026/11/china-1024x683.jpg",
-      "caption": "From: Trump lands in China for trade talks and high-stakes summit with Xi and Putin. — via PBS NewsHour",
-      "alt": "Trump lands in China for trade talks and high-stakes summit with Xi and Putin",
-      "outlet": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/trump-lands-in-china-for-trade-talks-and-high-stakes-summit-with-xi-and-putin"
      }
     ],
     "independent": 6,
     "reports": [
+     {
+      "t": "Wed 8:39 p.m.",
+      "iso": "2026-11-19T01:39:13+00:00",
+      "outlet": "NBC News",
+      "title": "What to expect from Trump's meeting with Putin and Xi Jinping",
+      "url": "https://www.nbcnews.com/video/what-to-expect-from-trump-s-meeting-with-putin-and-xi-jinping-273779781736",
+      "desc": "NBC News' Janis Mackey Frayer and Gabe Gutierrez go over what to potentially expect from President Trump's meeting with President Putin and President Xi Jinping during the APEC summit and what each country may ask for."
+     },
      {
       "t": "Wed 8:31 p.m.",
       "iso": "2026-11-19T01:31:31+00:00",
@@ -954,7 +691,7 @@
       "outlet": "Toronto Star",
       "title": "Trump meets Xi and Putin in China with nuclear arms and two wars on the table",
       "url": "https://www.thestar.com/news/world/asia/trump-meets-xi-and-putin-in-china-with-nuclear-arms-and-two-wars-on-the-table/article_4e841119-2046-5feb-bf0d-ab499b0e9667.html",
-      "desc": "SHENZHEN, China (AP) — When President Donald Trump meets on Thursday with China’s Xi Jinping and Russia’s Vladimir Putin, it could mark a pivot in world history — or become"
+      "desc": "SHENZHEN, China (AP) — When President Donald Trump meets Thursday with China’s Xi Jinping and Russia’s Vladimir Putin, it could mark a pivot in world history — or become a"
      },
      {
       "t": "Wed 8:01 p.m.",
@@ -962,7 +699,7 @@
       "outlet": "The Canadian Press (via Winnipeg Free Press)",
       "title": "Trump meets Xi and Putin in China with nuclear arms and two wars on the table",
       "url": "https://www.winnipegfreepress.com/world/2026/11/18/trump-meets-xi-and-putin-in-china-with-nuclear-arms-and-two-wars-on-the-table",
-      "desc": "SHENZHEN, China (AP) — When President Donald Trump meets Thursday with China’s Xi Jinping and Russia’s Vladimir Putin, it could mark a pivot in world history — or become a quickly forgotten photo op."
+      "desc": ""
      },
      {
       "t": "Wed 8:01 p.m.",
@@ -970,7 +707,7 @@
       "outlet": "CityNews Winnipeg",
       "title": "Trump meets Xi and Putin in China with nuclear arms and two wars on the table",
       "url": "https://winnipeg.citynews.ca/2026/11/18/trump-meets-xi-and-putin-in-china-with-nuclear-arms-and-two-wars-on-the-table/",
-      "desc": ""
+      "desc": "SHENZHEN, China (AP) — When President Donald Trump meets on Thursday with China’s Xi Jinping and Russia’s Vladimir Putin, it could mark a pivot in world history — or become a quickly forgotten photo op."
      },
      {
       "t": "Wed 8:01 p.m.",
@@ -1027,24 +764,33 @@
       "title": "Xi, Putin ‘not our friends’ Republicans warn Trump ahead of trilateral",
       "url": "https://thehill.com/homenews/6229121-gop-warns-trump-trilateral-summit/",
       "desc": ""
-     },
-     {
-      "t": "Wed 6:55 p.m.",
-      "iso": "2026-11-18T23:55:44+00:00",
-      "outlet": "PBS NewsHour",
-      "title": "Trump lands in China for trade talks and high-stakes summit with Xi and Putin",
-      "url": "https://www.pbs.org/newshour/show/trump-lands-in-china-for-trade-talks-and-high-stakes-summit-with-xi-and-putin",
-      "desc": ""
      }
     ],
     "sources": [
+     {
+      "t": "Wed 8:39 p.m.",
+      "primary": false,
+      "outlet": "NBC News",
+      "title": "What to expect from Trump's meeting with Putin and Xi Jinping",
+      "url": "https://www.nbcnews.com/video/what-to-expect-from-trump-s-meeting-with-putin-and-xi-jinping-273779781736",
+      "desc": "NBC News' Janis Mackey Frayer and Gabe Gutierrez go over what to potentially expect from President Trump's meeting with President Putin and President Xi Jinping during the APEC summit and what each country may ask for.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "NBC News",
+        "src": "NBC News",
+        "byline": "\"NBCNews.com\" [{\"@context\":\"https://schema.org/\",\"@type\":\"NewsMediaOrganization\",\"name\":\"NBC News\",}] \"mps\" "
+       }
+      ],
+      "copies": []
+     },
      {
       "t": "Wed 8:01 p.m.",
       "primary": false,
       "outlet": "Toronto Star",
       "title": "Trump meets Xi and Putin in China with nuclear arms and two wars on the table",
       "url": "https://www.thestar.com/news/world/asia/trump-meets-xi-and-putin-in-china-with-nuclear-arms-and-two-wars-on-the-table/article_4e841119-2046-5feb-bf0d-ab499b0e9667.html",
-      "desc": "SHENZHEN, China (AP) — When President Donald Trump meets on Thursday with China’s Xi Jinping and Russia’s Vladimir Putin, it could mark a pivot in world history — or become",
+      "desc": "SHENZHEN, China (AP) — When President Donald Trump meets Thursday with China’s Xi Jinping and Russia’s Vladimir Putin, it could mark a pivot in world history — or become a",
       "wire": "The Associated Press",
       "by": [
        {
@@ -1090,7 +836,7 @@
        {
         "outlet": "CTV News",
         "src": "The Canadian Press",
-        "byline": "Aguilar\" \"Bryann Aguilar\" \"Todd Coyne\" \"The Canadian Press\" \"The Canadian Pres"
+        "byline": "nn Aguilar\" \"Lisa Steacy\" \"Todd Coyne\" \"The Canadian Press\" \"Brittany Ekelund\""
        },
        {
         "outlet": "CP24",
@@ -1179,23 +925,6 @@
        }
       ],
       "copies": []
-     },
-     {
-      "t": "Wed 6:55 p.m.",
-      "primary": false,
-      "outlet": "PBS NewsHour",
-      "title": "Trump lands in China for trade talks and high-stakes summit with Xi and Putin",
-      "url": "https://www.pbs.org/newshour/show/trump-lands-in-china-for-trade-talks-and-high-stakes-summit-with-xi-and-putin",
-      "desc": "President Trump landed in southern China after signing a trade deal and pledging increased defense cooperation with the Philippines. On Thursday, Trump will hold a historic summit with the Chinese and Russian presidents on the sidelines of a meeting of Asia-Pacific countries in Shenzhen, China. Nick Schifrin reports.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "PBS NewsHour",
-        "src": "PBS NewsHour",
-        "byline": "[{\"@type\":\"Person\",\"name\":\"Nick Schifrin\"},{\"@type\":\"Person\",\"name\":\"Madison Staten\"}] By — Nick Schifrin Nick Schifrin "
-       }
-      ],
-      "copies": []
      }
     ],
     "replaces_top": false,
@@ -1210,10 +939,12 @@
     "incoherent": false,
     "popular": 0,
     "us_election": false,
-    "fronts": 2,
+    "fronts": 4,
     "fronts_ca": 0,
     "fronts_who": [
      "NBC News",
+     "CBS News",
+     "BBC News",
      "The Guardian"
     ],
     "judgment": "national",
@@ -1450,7 +1181,7 @@
        {
         "outlet": "CTV News",
         "src": "The Canadian Press",
-        "byline": "Aguilar\" \"Bryann Aguilar\" \"Todd Coyne\" \"The Canadian Press\" \"Brittany Ekelund\""
+        "byline": "nn Aguilar\" \"Lisa Steacy\" \"Todd Coyne\" \"The Canadian Press\" \"Brittany Ekelund\""
        },
        {
         "outlet": "CBC News",
@@ -1544,14 +1275,6 @@
       "up": ""
      },
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=Vyx3Eumg4Pw",
-      "title": "Grand Theft Auto VI could be the biggest video game release ever",
-      "img": "https://i.ytimg.com/vi/Vyx3Eumg4Pw/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
       "net": "CP24",
       "url": "https://www.youtube.com/watch?v=CqNly31Om8Y",
       "title": "Fraudsters seek to take advantage of highly anticipated Grand Theft Auto VI release",
@@ -1560,10 +1283,284 @@
       "up": ""
      },
      {
-      "net": "CityNews",
-      "url": "https://www.youtube.com/watch?v=-Q_wPGtqqK8",
-      "title": "Grand Theft Auto 6 release set to be the biggest in gaming history",
-      "img": "https://i.ytimg.com/vi/-Q_wPGtqqK8/hqdefault.jpg",
+      "net": "Global News",
+      "url": "https://www.youtube.com/watch?v=Vyx3Eumg4Pw",
+      "title": "Grand Theft Auto VI rolls out worldwide after 13-year wait",
+      "img": "https://i.ytimg.com/vi/Vyx3Eumg4Pw/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "NBC News",
+      "url": "https://www.youtube.com/watch?v=HrqGdW4Kb0A",
+      "title": "Zelenskyy Calls Out Being Shut Out; Nvidia’s Post-Huang Era, Grand Theft Auto OOO - Nov. 18",
+      "img": "https://i.ytimg.com/vi/HrqGdW4Kb0A/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     }
+    ]
+   },
+   {
+    "key": "auto-f1193f5f",
+    "words": [
+     "anthropic's",
+     "ipo",
+     "ai"
+    ],
+    "score": 9,
+    "outlets": 6,
+    "carriers": 6,
+    "tag": "Breaking",
+    "title": "Anthropic is said to price IPO above range at $83 per share",
+    "url": "https://www.japantimes.co.jp/business/2026/11/19/tech/anthropic-ipo-83-per-share/",
+    "outlet": "The Japan Times",
+    "t": "Wed 8:38 p.m.",
+    "iso": "2026-11-19T01:38:00+00:00",
+    "summary": "The pricing makes it the biggest first-time share sale on record.",
+    "first": {
+     "outlet": "BBC News",
+     "url": "https://www.bbc.co.uk/news/articles/cj4gnpzll020o?at_medium=RSS&at_campaign=rss",
+     "t": "Wed 4:28 p.m.",
+     "title": "Can Anthropic's record-breaking IPO stop the AI bubble bursting?",
+     "iso": "2026-11-18T21:28:08+00:00"
+    },
+    "newest": "2026-11-19T01:38:00+00:00",
+    "photo": {
+     "src": "live/img/auto-f1193f5f-c901f5cb83.jpg",
+     "orig": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/19/574890.jpg?v=3.1",
+     "caption": "From: Anthropic is said to price IPO above range at $83 per share. — via The Japan Times",
+     "alt": "Anthropic is said to price IPO above range at $83 per share",
+     "outlet": "The Japan Times",
+     "url": "https://www.japantimes.co.jp/business/2026/11/19/tech/anthropic-ipo-83-per-share/",
+     "since": "2026-11-19T02:08:17.231616+00:00"
+    },
+    "photo_seen": [
+     "https://d3i6fh83elv35t.cloudfront.net/static/2026/11/2026-10-26T184012Z_1521056589_RC23BOAQ27IX_RTRMADP_3_USA-STOCKS-1024x683.jpg"
+    ],
+    "photos": [
+     {
+      "src": "live/img/auto-f1193f5f-c901f5cb83.jpg",
+      "orig": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/19/574890.jpg?v=3.1",
+      "caption": "From: Anthropic is said to price IPO above range at $83 per share. — via The Japan Times",
+      "alt": "Anthropic is said to price IPO above range at $83 per share",
+      "outlet": "The Japan Times",
+      "url": "https://www.japantimes.co.jp/business/2026/11/19/tech/anthropic-ipo-83-per-share/"
+     },
+     {
+      "src": "live/img/auto-f1193f5f-28f9ce2b64.jpg",
+      "orig": "https://i.cbc.ca/ais/4fed3498-d2a6-4964-8762-1d91ebb7f3b7,1795046620119/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C294%2C3000%2C1687%29%3BResize%3D620",
+      "caption": "Anthropic CEO and co-founder Dario Amodei at the World Economic Forum in Davos, Switzerland, in January 2025. ((AP Photo/Markus Schreiber)) — via CBC News",
+      "alt": "Anthropic CEO and co-founder Dario Amodei at the World Economic Forum in Davos, Switzerland, in January 2025.",
+      "outlet": "CBC News",
+      "url": "https://www.cbc.ca/news/business/anthropic-ipo-share-price-nasdaq-9.7426856"
+     },
+     {
+      "src": "live/img/auto-f1193f5f-665259b4b8.jpg",
+      "orig": "https://d3i6fh83elv35t.cloudfront.net/static/2026/11/2026-10-26T184012Z_1521056589_RC23BOAQ27IX_RTRMADP_3_USA-STOCKS-1024x683.jpg",
+      "caption": "From: Anthropic prices its IPO at $83 per share, valuing the AI giant at $1.5 trillion. — via PBS NewsHour",
+      "alt": "Anthropic prices its IPO at $83 per share, valuing the AI giant at $1.5 trillion",
+      "outlet": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/economy/anthropic-prices-its-ipo-at-83-per-share-valuing-the-ai-giant-at-1-5-trillion"
+     },
+     {
+      "src": "live/img/auto-f1193f5f-bcb32b37e1.jpg",
+      "orig": "https://i.abcnewsfe.com/a/4a601758-7905-47fd-8095-16ffd638e799/anthropic-rt-er-261118_1795035834175_hpMain_16x9.jpg?w=1600",
+      "caption": "From: Anthropic announces price of $83 per share for IPO. — via ABC News",
+      "alt": "Anthropic announces price of $83 per share for IPO",
+      "outlet": "ABC News",
+      "url": "https://abcnews.com/Business/anthropic-announces-price-83-share-ipo/story?id=138245320"
+     }
+    ],
+    "independent": 6,
+    "reports": [
+     {
+      "t": "Wed 8:38 p.m.",
+      "iso": "2026-11-19T01:38:00+00:00",
+      "outlet": "The Japan Times",
+      "title": "Anthropic is said to price IPO above range at $83 per share",
+      "url": "https://www.japantimes.co.jp/business/2026/11/19/tech/anthropic-ipo-83-per-share/",
+      "desc": "The pricing makes it the biggest first-time share sale on record."
+     },
+     {
+      "t": "Wed 8:22 p.m.",
+      "iso": "2026-11-19T01:22:17+00:00",
+      "outlet": "Toronto Sun",
+      "title": "Hot demand lifts Anthropic IPO price to $83 per share, breaking SpaceX record",
+      "url": "https://torontosun.com/business/hot-demand-lifts-anthropic-ipo-price-to-83-per-share-breaking-spacex-record",
+      "desc": ""
+     },
+     {
+      "t": "Wed 7:54 p.m.",
+      "iso": "2026-11-19T00:54:39+00:00",
+      "outlet": "PBS NewsHour",
+      "title": "Anthropic prices its IPO at $83 per share, valuing the AI giant at $1.5 trillion",
+      "url": "https://www.pbs.org/newshour/economy/anthropic-prices-its-ipo-at-83-per-share-valuing-the-ai-giant-at-1-5-trillion",
+      "desc": "The higher-than-anticipated pricing signals broad investor enthusiasm for AI stocks even amid some uncertainty in the market stemming from the ouster of Nvidia's CEO and worries about an AI bubble."
+     },
+     {
+      "t": "Wed 7:44 p.m.",
+      "iso": "2026-11-19T00:44:55+00:00",
+      "outlet": "ABC News",
+      "title": "Anthropic announces price of $83 per share for IPO",
+      "url": "https://abcnews.com/Business/anthropic-announces-price-83-share-ipo/story?id=138245320",
+      "desc": "Anthropic is set for a valuation well above $1 trillion."
+     },
+     {
+      "t": "Wed 6:50 p.m.",
+      "iso": "2026-11-18T23:50:09+00:00",
+      "outlet": "CBS News",
+      "title": "How Anthropic's IPO could affect your 401(k) and the AI industry",
+      "url": "https://www.cbsnews.com/video/how-anthropics-ipo-could-affect-your-401k-ai-industry/",
+      "desc": "Claude maker Anthropic is set to go public on Thursday. CBS News' Kelly O'Grady explains what this could mean for the AI boom and for your retirement savings."
+     },
+     {
+      "t": "Wed 4:28 p.m.",
+      "iso": "2026-11-18T21:28:08+00:00",
+      "outlet": "BBC News",
+      "title": "Can Anthropic's record-breaking IPO stop the AI bubble bursting?",
+      "url": "https://www.bbc.co.uk/news/articles/cj4gnpzll020o?at_medium=RSS&at_campaign=rss",
+      "desc": "Anthropic's hotly anticipated IPO is expected to put it in the top 10 most valuable US companies, but the future is uncertain."
+     }
+    ],
+    "sources": [
+     {
+      "t": "Wed 8:38 p.m.",
+      "primary": false,
+      "outlet": "The Japan Times",
+      "title": "Anthropic is said to price IPO above range at $83 per share",
+      "url": "https://www.japantimes.co.jp/business/2026/11/19/tech/anthropic-ipo-83-per-share/",
+      "desc": "The pricing makes it the biggest first-time share sale on record.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "The Japan Times",
+        "src": "The Japan Times",
+        "byline": "{ \"@type\": \"Organization\", \"name\": \"The Japan Times\" } { \"@type\": \"Organization\", \"name\": \"The Japan Times\", } No Author"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Wed 8:22 p.m.",
+      "primary": false,
+      "outlet": "Toronto Sun",
+      "title": "Hot demand lifts Anthropic IPO price to $83 per share, breaking SpaceX record",
+      "url": "https://torontosun.com/business/hot-demand-lifts-anthropic-ipo-price-to-83-per-share-breaking-spacex-record",
+      "desc": "",
+      "wire": "AFP",
+      "by": [
+       {
+        "outlet": "Toronto Sun",
+        "src": "AFP",
+        "byline": "[{\"@type\": \"Person\", \"name\": \"AFP\", \"alternateName\":"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Wed 7:54 p.m.",
+      "primary": false,
+      "outlet": "PBS NewsHour",
+      "title": "Anthropic prices its IPO at $83 per share, valuing the AI giant at $1.5 trillion",
+      "url": "https://www.pbs.org/newshour/economy/anthropic-prices-its-ipo-at-83-per-share-valuing-the-ai-giant-at-1-5-trillion",
+      "desc": "The higher-than-anticipated pricing signals broad investor enthusiasm for AI stocks even amid some uncertainty in the market stemming from the ouster of Nvidia's CEO and worries about an AI bubble.",
+      "wire": "The Associated Press",
+      "by": [
+       {
+        "outlet": "PBS NewsHour",
+        "src": "The Associated Press",
+        "byline": "Barbara Ortutay, Associated Press"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Wed 7:44 p.m.",
+      "primary": false,
+      "outlet": "ABC News",
+      "title": "Anthropic announces price of $83 per share for IPO",
+      "url": "https://abcnews.com/Business/anthropic-announces-price-83-share-ipo/story?id=138245320",
+      "desc": "Anthropic is set for a valuation well above $1 trillion.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "ABC News",
+        "src": "ABC News",
+        "byline": "[{\"name\":\"Max Zahn\",,\"@type\":\"Person\"}] \"Max Zahn\" [{\"name\":\"Max Zahn\",,\"@type\":\"Person\"}] \"ABC News\" \"Max Zahn\" \"ABC Ne"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Wed 6:50 p.m.",
+      "primary": false,
+      "outlet": "CBS News",
+      "title": "How Anthropic's IPO could affect your 401(k) and the AI industry",
+      "url": "https://www.cbsnews.com/video/how-anthropics-ipo-could-affect-your-401k-ai-industry/",
+      "desc": "Claude maker Anthropic is set to go public on Thursday. CBS News' Kelly O'Grady explains what this could mean for the AI boom and for your retirement savings.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "CBS News",
+        "src": "CBS News",
+        "byline": ""
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Wed 4:28 p.m.",
+      "primary": false,
+      "outlet": "BBC News",
+      "title": "Can Anthropic's record-breaking IPO stop the AI bubble bursting?",
+      "url": "https://www.bbc.co.uk/news/articles/cj4gnpzll020o?at_medium=RSS&at_campaign=rss",
+      "desc": "Anthropic's hotly anticipated IPO is expected to put it in the top 10 most valuable US companies, but the future is uncertain.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "BBC News",
+        "src": "BBC News",
+        "byline": "[{\"@type\":\"Person\",\"name\":\"Simon Jack\",}] https://www.facebook.com/bbcnews"
+       }
+      ],
+      "copies": []
+     }
+    ],
+    "replaces_top": false,
+    "events": [],
+    "theme": "",
+    "ca_angle": {
+     "specific": 1,
+     "official": 0
+    },
+    "canada": "tie",
+    "canus": false,
+    "incoherent": false,
+    "popular": 0,
+    "us_election": false,
+    "fronts": 2,
+    "fronts_ca": 0,
+    "fronts_who": [
+     "NBC News",
+     "ABC News"
+    ],
+    "judgment": "regional",
+    "judgment_why": "Regional: affects some people; carried by a few newsrooms.",
+    "weight": 24.0,
+    "videos": [
+     {
+      "net": "ABC News",
+      "url": "https://www.youtube.com/watch?v=eF80LtuSnJw",
+      "title": "Inside Anthropic's potentially record-breaking IPO",
+      "img": "https://i.ytimg.com/vi/eF80LtuSnJw/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "Sky News",
+      "url": "https://www.youtube.com/watch?v=2r-lgy94M_s",
+      "title": "Anthropic IPO: Can the company keep on growing?",
+      "img": "https://i.ytimg.com/vi/2r-lgy94M_s/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1572,31 +1569,9 @@
   ],
   "considered": [
    {
-    "title": "Anthropic prices IPO at $83 US per share, valuing AI giant at $1.51 trillion US",
-    "url": "https://www.cbc.ca/news/business/anthropic-ipo-share-price-nasdaq-9.7426856",
-    "rank": 1,
-    "live": "",
-    "weight": 33.5,
-    "score": 10,
-    "independent": 6,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": true,
-    "fronts": 2,
-    "fronts_who": [
-     "NBC News",
-     "ABC News"
-    ],
-    "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
-    "carriers": 7,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried beyond one city."
-   },
-   {
     "title": "Trump meets Xi and Putin in China with nuclear arms and two wars on the table",
     "url": "https://www.cp24.com/news/world/2026/11/18/trump-plans-to-meet-separately-with-putin-on-his-china-trip-in-addition-to-their-3-way-talks-with-xi/",
-    "rank": 2,
+    "rank": 1,
     "live": "",
     "weight": 49,
     "score": 23,
@@ -1605,9 +1580,11 @@
     "canada": "tie",
     "theme": "",
     "top": true,
-    "fronts": 2,
+    "fronts": 4,
     "fronts_who": [
      "NBC News",
+     "CBS News",
+     "BBC News",
      "The Guardian"
     ],
     "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
@@ -1618,7 +1595,7 @@
    {
     "title": "‘Grand Theft Auto VI’ is almost here. What to know about the characters, music and all the hype",
     "url": "https://www.bnnbloomberg.ca/business/technology/2026/11/18/after-a-13-year-wait-grand-theft-auto-vi-arrives-with-enormous-hype-and-expectations/",
-    "rank": 3,
+    "rank": 2,
     "live": "",
     "weight": 29.0,
     "score": 13,
@@ -1636,6 +1613,28 @@
     "carriers": 8,
     "judgment": "regional",
     "why_judged": "Regional: affects some people; carried beyond one city."
+   },
+   {
+    "title": "Anthropic is said to price IPO above range at $83 per share",
+    "url": "https://www.japantimes.co.jp/business/2026/11/19/tech/anthropic-ipo-83-per-share/",
+    "rank": 3,
+    "live": "",
+    "weight": 24.0,
+    "score": 9,
+    "independent": 6,
+    "most_read": 0,
+    "canada": "tie",
+    "theme": "",
+    "top": true,
+    "fronts": 2,
+    "fronts_who": [
+     "NBC News",
+     "ABC News"
+    ],
+    "rule": "From abroad, tied to Canada",
+    "carriers": 6,
+    "judgment": "regional",
+    "why_judged": "Regional: affects some people; carried by a few newsrooms."
    },
    {
     "title": "Crimea bridge attacked again, Russian governor says",
@@ -1656,38 +1655,15 @@
      "BBC News",
      "The Guardian"
     ],
-    "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
+    "rule": "No Canadian tie",
     "carriers": 13,
     "judgment": "national",
     "why_judged": "National: affects many people; carried across the country (4 cities)."
    },
    {
-    "title": "Hakeem Jeffries’ progressive defectors reveal the limits of their power: From the Politics Desk",
-    "url": "https://www.nbcnews.com/politics/politics-news/hakeem-jeffries-defectors-reveal-limits-power-politics-desk-rcna610100",
-    "rank": 5,
-    "live": "",
-    "weight": 14.0,
-    "score": 8,
-    "independent": 4,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 3,
-    "fronts_who": [
-     "NBC News",
-     "ABC News",
-     "NPR"
-    ],
-    "rule": "No Canadian tie",
-    "carriers": 4,
-    "judgment": "regional",
-    "why_judged": "Regional: affects some people; carried beyond one city."
-   },
-   {
     "title": "'If the U.S. doesn't want to do a deal, we're busy,' says PM Carney",
     "url": "https://www.cbc.ca/player/play/video/9.7427267",
-    "rank": 6,
+    "rank": 5,
     "live": "",
     "weight": 17.5,
     "score": 0,
@@ -1704,24 +1680,31 @@
     "why_judged": "National: affects many people; carried by a few newsrooms."
    },
    {
+    "title": "Cornyn blocks top Justice Department official nominated for judicial vacancy in Texas",
+    "url": "https://www.pbs.org/newshour/politics/cornyn-blocks-top-justice-department-official-nominated-for-judicial-vacancy-in-texas",
+    "rank": 6,
+    "live": "",
+    "weight": 11.5,
+    "score": 7,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "tie",
+    "theme": "",
+    "top": false,
+    "fronts": 2,
+    "fronts_who": [
+     "CBC News",
+     "CBS News"
+    ],
+    "rule": "From abroad, tied to Canada",
+    "carriers": 3,
+    "judgment": "regional",
+    "why_judged": "Regional: affects some people; carried by a few newsrooms."
+   },
+   {
     "title": "Women's group says MPs gutted protections for women in Divorce Act bill",
     "score": 12,
     "why": "not built: only 1 independent report(s) (12 sites)"
-   },
-   {
-    "title": "'If the U.S. doesn't want to do a deal, we're busy,' Carney says of ongoing trade talks",
-    "score": 12,
-    "why": "not built: only 1 independent report(s) (1 sites)"
-   },
-   {
-    "title": "The National | Carney meets Trump face-to-face",
-    "score": 12,
-    "why": "not built: only 1 independent report(s) (1 sites)"
-   },
-   {
-    "title": "Carney says deal with U.S. possible but not there yet, after meeting Trump in China",
-    "score": 12,
-    "why": "not built: only 1 independent report(s) (1 sites)"
    },
    {
     "title": "Green Light? Canadians open to Chinese EV manufacturing domestically, but concerns persist over jobs and security",
@@ -1734,19 +1717,34 @@
     "why": "not built: only 1 independent report(s) (9 sites)"
    },
    {
+    "title": "'If the U.S. doesn't want to do a deal, we're busy,' Carney says of ongoing trade talks",
+    "score": 10,
+    "why": "not built: only 1 independent report(s) (1 sites)"
+   },
+   {
+    "title": "The National | Carney meets Trump face-to-face",
+    "score": 10,
+    "why": "not built: only 1 independent report(s) (1 sites)"
+   },
+   {
+    "title": "Carney says deal with U.S. possible but not there yet, after meeting Trump in China",
+    "score": 10,
+    "why": "not built: only 1 independent report(s) (1 sites)"
+   },
+   {
     "title": "South Florida hit with over 15 inches of rain",
     "score": 9,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Canadian Air Force major charged with negligent performance, abuse of subordinates",
-    "score": 9,
-    "why": "not built: only 1 independent report(s) (9 sites)"
-   },
-   {
     "title": "Operation Vivaldi: Ukraine melds man and machine to repel Russians",
     "score": 8,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Canadian Air Force major charged with negligent performance, abuse of subordinates",
+    "score": 8,
+    "why": "not built: only 1 independent report(s) (8 sites)"
    },
    {
     "title": "'If the U.S. doesn't want to do a deal, we're busy,' Carney says of a possible trade agreement",
@@ -1764,9 +1762,9 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Ontario has a Scandinavian Christmas village with hidden gnomes and a dazzling market",
+    "title": "Norwegian cruise line drops 17 stops in Halifax, citing guest feedback",
     "score": 7,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+    "why": "not built: only 1 independent report(s) (3 sites)"
    }
   ],
   "moved": [],
@@ -1857,16 +1855,160 @@
       "up": ""
      }
     ]
+   },
+   {
+    "key": "auto-0c48d3ef",
+    "words": [
+     "justice",
+     "khalil"
+    ],
+    "score": 7,
+    "outlets": 3,
+    "carriers": 3,
+    "tag": "Developing",
+    "title": "Cornyn blocks top Justice Department official nominated for judicial vacancy in Texas",
+    "url": "https://www.pbs.org/newshour/politics/cornyn-blocks-top-justice-department-official-nominated-for-judicial-vacancy-in-texas",
+    "outlet": "PBS NewsHour",
+    "t": "Wed 4:02 p.m.",
+    "iso": "2026-11-18T21:02:57+00:00",
+    "summary": "A senior outgoing Republican senator said Wednesday that he will block one of President Donald Trump’s final judicial picks for a court vacancy in Texas, as the GOP-led Senate scrambles to fill all the remaining vacancies in the federal courts before Democrats assume power in January.",
+    "first": {
+     "outlet": "PBS NewsHour",
+     "url": "https://www.pbs.org/newshour/politics/cornyn-blocks-top-justice-department-official-nominated-for-judicial-vacancy-in-texas",
+     "t": "Wed 4:02 p.m.",
+     "title": "Cornyn blocks top Justice Department official nominated for judicial vacancy in Texas",
+     "iso": "2026-11-18T21:02:57+00:00"
+    },
+    "newest": "2026-11-18T22:09:35+00:00",
+    "photo": {
+     "src": "live/img/auto-0c48d3ef-085889c476.jpg",
+     "orig": "https://d3i6fh83elv35t.cloudfront.net/static/2026/11/2026-11-10T211113Z_1942347810_RC27LOAJQ4E6_RTRMADP_3_USA-CONGRESS-REPUBLICANS-1024x683.jpg",
+     "caption": "From: Cornyn blocks top Justice Department official nominated for judicial vacancy in Texas. — via PBS NewsHour",
+     "alt": "Cornyn blocks top Justice Department official nominated for judicial vacancy in Texas",
+     "outlet": "PBS NewsHour",
+     "url": "https://www.pbs.org/newshour/politics/cornyn-blocks-top-justice-department-official-nominated-for-judicial-vacancy-in-texas",
+     "since": "2026-11-19T02:08:19.835038+00:00"
+    },
+    "photo_seen": [
+     "https://d3i6fh83elv35t.cloudfront.net/static/2026/11/2026-11-10T211113Z_1942347810_RC27LOAJQ4E6_RTRMADP_3_USA-CONGRESS-REPUBLICANS-1024x683.jpg"
+    ],
+    "photos": [
+     {
+      "src": "live/img/auto-0c48d3ef-085889c476.jpg",
+      "orig": "https://d3i6fh83elv35t.cloudfront.net/static/2026/11/2026-11-10T211113Z_1942347810_RC27LOAJQ4E6_RTRMADP_3_USA-CONGRESS-REPUBLICANS-1024x683.jpg",
+      "caption": "From: Cornyn blocks top Justice Department official nominated for judicial vacancy in Texas. — via PBS NewsHour",
+      "alt": "Cornyn blocks top Justice Department official nominated for judicial vacancy in Texas",
+      "outlet": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/cornyn-blocks-top-justice-department-official-nominated-for-judicial-vacancy-in-texas"
+     }
+    ],
+    "independent": 3,
+    "reports": [
+     {
+      "t": "Wed 5:09 p.m.",
+      "iso": "2026-11-18T22:09:35+00:00",
+      "outlet": "Middle East Eye",
+      "title": "Mahmoud Khalil sues US Justice Department over failure to disclose correspondence with immigration judge",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/mahmoud-khalil-sues-us-justice-department-over-failure-disclose",
+      "desc": ""
+     },
+     {
+      "t": "Wed 4:10 p.m.",
+      "iso": "2026-11-18T21:10:36+00:00",
+      "outlet": "SaltWire",
+      "title": "P.E.I. appoints Justice Duncan Beveridge to lead review of Byron Carr murder investigation",
+      "url": "https://www.saltwire.com/prince-edward-island/pei-appoints-justice-review-of-byron-carr-murder-investigation",
+      "desc": ""
+     },
+     {
+      "t": "Wed 4:02 p.m.",
+      "iso": "2026-11-18T21:02:57+00:00",
+      "outlet": "PBS NewsHour",
+      "title": "Cornyn blocks top Justice Department official nominated for judicial vacancy in Texas",
+      "url": "https://www.pbs.org/newshour/politics/cornyn-blocks-top-justice-department-official-nominated-for-judicial-vacancy-in-texas",
+      "desc": "A senior outgoing Republican senator said Wednesday that he will block one of President Donald Trump’s final judicial picks for a court vacancy in Texas, as the GOP-led Senate scrambles to fill all the remaining vacancies in the federal courts before Democrats assume power in January."
+     }
+    ],
+    "sources": [
+     {
+      "t": "Wed 5:09 p.m.",
+      "primary": false,
+      "outlet": "Middle East Eye",
+      "title": "Mahmoud Khalil sues US Justice Department over failure to disclose correspondence with immigration judge",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/mahmoud-khalil-sues-us-justice-department-over-failure-disclose",
+      "desc": "",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Middle East Eye",
+        "src": "Middle East Eye",
+        "byline": "https://www.facebook.com/middleeasteye/"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Wed 4:10 p.m.",
+      "primary": false,
+      "outlet": "SaltWire",
+      "title": "P.E.I. appoints Justice Duncan Beveridge to lead review of Byron Carr murder investigation",
+      "url": "https://www.saltwire.com/prince-edward-island/pei-appoints-justice-review-of-byron-carr-murder-investigation",
+      "desc": "",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "SaltWire",
+        "src": "SaltWire",
+        "byline": "[{\"@type\": \"Person\", \"name\": \"Stu Neatby\", \"alternateName\": \"sneatby\", , , \"email\": \"sneatby@postmedia.com\", \"sameAs\": ["
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Wed 4:02 p.m.",
+      "primary": false,
+      "outlet": "PBS NewsHour",
+      "title": "Cornyn blocks top Justice Department official nominated for judicial vacancy in Texas",
+      "url": "https://www.pbs.org/newshour/politics/cornyn-blocks-top-justice-department-official-nominated-for-judicial-vacancy-in-texas",
+      "desc": "A senior outgoing Republican senator said Wednesday that he will block one of President Donald Trump’s final judicial picks for a court vacancy in Texas, as the GOP-led Senate scrambles to fill all the remaining vacancies in the federal courts before Democrats assume power in January.",
+      "wire": "The Associated Press",
+      "by": [
+       {
+        "outlet": "PBS NewsHour",
+        "src": "The Associated Press",
+        "byline": "Seung Min Kim, Associated Press"
+       }
+      ],
+      "copies": []
+     }
+    ],
+    "replaces_top": false,
+    "events": [],
+    "theme": "",
+    "ca_angle": {
+     "specific": 2,
+     "official": 0
+    },
+    "canada": "tie",
+    "canus": true,
+    "incoherent": true,
+    "popular": 0,
+    "us_election": false,
+    "fronts": 2,
+    "fronts_ca": 1,
+    "fronts_who": [
+     "CBC News",
+     "CBS News"
+    ],
+    "judgment": "regional",
+    "judgment_why": "Regional: affects some people; carried by a few newsrooms.",
+    "weight": 11.5
    }
   ],
   "passed_over": [
    {
     "title": "Crimea bridge attacked again, Russian governor says",
     "url": "https://www.cbc.ca/news/world/crimea-bridge-attacked-9.7427374"
-   },
-   {
-    "title": "Hakeem Jeffries’ progressive defectors reveal the limits of their power: From the Politics Desk",
-    "url": "https://www.nbcnews.com/politics/politics-news/hakeem-jeffries-defectors-reveal-limits-power-politics-desk-rcna610100"
    }
   ]
  },
@@ -1917,7 +2059,7 @@
    "id": "yoaj1PMNEqU",
    "r": "ca",
    "o": "Global News",
-   "t": "Explosion, fire destroy building in downtown Glace Bay and sends 14 to hospital",
+   "t": "14 injured on Cape Breton’s Glace Bay after building explosion and fire",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=yoaj1PMNEqU",
@@ -2040,30 +2182,30 @@
    "geo": "unknown"
   },
   {
-   "id": "U2_khnZOVBk",
+   "id": "tfVCxKxCJ7c",
    "r": "ca",
    "o": "CTV News",
-   "t": "Sudbury police identify woman found dead on Lorne Street",
+   "t": "Alberta could change where data centres are built | CTV News Calgary at 6 for November 18, 2026",
    "rec": false,
    "d": "",
-   "u": "https://www.youtube.com/watch?v=U2_khnZOVBk",
-   "img": "https://i.ytimg.com/vi/U2_khnZOVBk/hqdefault.jpg",
+   "u": "https://www.youtube.com/watch?v=tfVCxKxCJ7c",
+   "img": "https://i.ytimg.com/vi/tfVCxKxCJ7c/hqdefault.jpg",
    "up": "2026-11-18",
-   "added": "2026-11-19T01:58:41.303096+00:00",
+   "added": "2026-11-19T02:04:25.535777+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
   {
-   "id": "CiMJSm9vgg0",
+   "id": "zjh3UaJ0aYs",
    "r": "ca",
    "o": "CTV News",
-   "t": "Toddler dies from opioids, mother charged | CTV News Edmonton at Six for Nov. 18, 2026",
+   "t": "Magnetawan First Nation settles land provincial claim | CTV News Northern Ontario at 6 p.m. Nov. 18",
    "rec": false,
    "d": "",
-   "u": "https://www.youtube.com/watch?v=CiMJSm9vgg0",
-   "img": "https://i.ytimg.com/vi/CiMJSm9vgg0/hqdefault.jpg",
+   "u": "https://www.youtube.com/watch?v=zjh3UaJ0aYs",
+   "img": "https://i.ytimg.com/vi/zjh3UaJ0aYs/hqdefault.jpg",
    "up": "2026-11-18",
-   "added": "2026-11-19T01:58:41.303096+00:00",
+   "added": "2026-11-19T02:04:25.535777+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2491,11 +2633,11 @@
  "ledes": [
   {
    "o": "CBS News",
-   "h": "Girlfriend of American killed in Costa Rica arrested",
-   "u": "https://www.cbsnews.com/news/kurt-van-dyke-killed-costa-rica-girlfriend-arrest/",
-   "img": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/11/19/ad2ada3a-cf80-40fe-993d-435bcce9bc0d/thumbnail/1200x630/16755f2a082206d9bc9b1fa750bf7303/a52-evans-surfer-killed-final-frame-383.jpg",
-   "w": "Wed 8:31 p.m.",
-   "iso": "2026-11-19T01:31:03+00:00"
+   "h": "Xi speaks at APEC summit ahead of rare meeting with Trump and Putin",
+   "u": "https://www.cbsnews.com/news/trump-xi-putin-china-apec-summit/",
+   "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/19/1a4e5cee-c824-4e43-8f1c-3825b7b029f4/thumbnail/1200x630/152958fb5fa892e550fa4ff5279a17bb/ap26323071746473.jpg",
+   "w": "Wed 9:04 p.m.",
+   "iso": "2026-11-19T02:04:29+00:00"
   },
   {
    "o": "ABC News",
@@ -2595,32 +2737,6 @@
    "auto": true
   },
   {
-   "inst": "AEI",
-   "place": "Washington",
-   "kind": "Publication",
-   "by": "",
-   "date": "Nov. 18, 2026",
-   "d": "2026-11-18",
-   "pic": "chart",
-   "u": "https://www.aei.org/domestic-policy/private-lending-can-help-fill-the-gap-left-by-grad-plus-but-are-we-making-it-too-hard/",
-   "t": "Private Lending Can Help Fill the Gap Left by Grad PLUS. But Are We Making It Too Hard?",
-   "g": "Steps should be taken to ensure that the private market can, and will, continue to make informed bets on postgraduate education. The post Private Lending Can Help Fill the Gap Left by Grad PLUS. But Are We Making It Too Hard? appeared first on American Enterprise Institute - AEI .",
-   "auto": true
-  },
-  {
-   "inst": "AEI",
-   "place": "Washington",
-   "kind": "Publication",
-   "by": "",
-   "date": "Nov. 18, 2026",
-   "d": "2026-11-18",
-   "pic": "chart",
-   "u": "https://www.aei.org/domestic-policy/if-you-give-california-a-cookie-its-gonna-want-rate-regulation-and-net-neutrality/",
-   "t": "If You Give California a Cookie, It’s Gonna Want Rate Regulation and Net Neutrality",
-   "g": "This standoff threatens to delay BEAD build-out, holding 270,000 unserved California locations hostage to the Golden State’s bid to prevent federal policy from applying to federally funded network providers. The post If You Give California a Cookie, It’s Gonna Want Rate Regulation and Net Neutrality appeared first on…",
-   "auto": true
-  },
-  {
    "inst": "Heritage Foundation",
    "place": "Washington",
    "kind": "Publication",
@@ -2712,33 +2828,66 @@
    "auto": true
   },
   {
-   "inst": "Fraser Institute",
-   "place": "Vancouver",
+   "inst": "Frontier Centre for Public Policy",
+   "place": "Winnipeg",
    "kind": "Publication",
    "by": "",
    "date": "Nov. 17, 2026",
    "d": "2026-11-17",
    "pic": "chart",
-   "u": "https://www.fraserinstitute.org/commentary/canadas-private-sector-struggles-create-jobs-amid-population-boom",
-   "t": "Canada’s private sector struggles to create jobs amid population boom",
-   "g": "Canada’s private sector struggles to create jobs amid population boom beng Tue, 11/17/2026 - 07:47 EST. READ TIME 3 MIN. In its recent budget, the Carney government noted Canada’s strong private-sector job growth over the past year. This is, of course, a welcome development. But it will take more than one year of…",
+   "u": "https://frontiercentre.org/2026/11/17/can-indigenous-land-claims-override-private-property-rights/?utm_source=rss&utm_medium=rss&utm_campaign=can-indigenous-land-claims-override-private-property-rights",
+   "t": "Can Indigenous Land Claims Override Private Property Rights?",
+   "g": "B.C. Conservatives promise to repeal DRIPA, while a First Nations grand chief says that would be a \"declaration of war.\"",
    "auto": true
   },
   {
-   "inst": "Fraser Institute",
-   "place": "Vancouver",
+   "inst": "Frontier Centre for Public Policy",
+   "place": "Winnipeg",
    "kind": "Publication",
    "by": "",
    "date": "Nov. 17, 2026",
    "d": "2026-11-17",
    "pic": "chart",
-   "u": "https://www.fraserinstitute.org/commentary/rising-interest-rates-threaten-debt-heavy-governments-canada",
-   "t": "Rising interest rates threaten debt-heavy governments in Canada",
-   "g": "Rising interest rates threaten debt-heavy governments in Canada beng Tue, 11/17/2026 - 07:43 EST. READ TIME 4 MIN. Rising global bond yields threaten the sustainability of government debt in many countries including Canada, and the federal and provincial governments should take notice of the recent experience of…",
+   "u": "https://frontiercentre.org/2026/11/17/woke-ideology-is-a-threat-to-liberal-democracy/?utm_source=rss&utm_medium=rss&utm_campaign=woke-ideology-is-a-threat-to-liberal-democracy",
+   "t": "Woke ideology is a threat to liberal democracy",
+   "g": "Stephen Perrott reviews The Peril of Woke Schools, praising its accessible critique of progressive education, identity politics, and declining academic standards. He urges readers to recognize the consequences for schools, universities, and civic culture.",
+   "auto": true
+  },
+  {
+   "inst": "Heritage Foundation",
+   "place": "Washington",
+   "kind": "Publication",
+   "by": "",
+   "date": "Nov. 17, 2026",
+   "d": "2026-11-17",
+   "pic": "chart",
+   "u": "https://www.heritage.org/defense/commentary/the-us-navy-needs-new-battlecruiser-will-it-get-one",
+   "t": "The U.S. Navy Needs a New Battlecruiser. Will It Get One?",
+   "g": "Last December, President Donald Trump introduced his vision for the United States Navy: a 30-year shipbuilding plan called the “ Golden Fleet .” Flanking him during his unveiling of this plan were renderings of a core component of that future Navy: USS Defiant , the lead ship of a new, modern class of battleship. But…",
+   "auto": true
+  },
+  {
+   "inst": "Peterson Institute",
+   "place": "Washington",
+   "kind": "Publication",
+   "by": "",
+   "date": "Nov. 17, 2026",
+   "d": "2026-11-17",
+   "pic": "chart",
+   "u": "https://www.piie.com/blogs/realtime-economics/2026/consumers-can-handle-stock-crash",
+   "t": "Consumers Can Handle a Stock Crash",
+   "g": "This is the third in what I expect will be a series of five posts on the vulnerability of the economy to a collapse in what could be an AI bubble. The first used the Fed’s large-scale macroeconomic model, FRB/US, to estimate the contribution of the AI boom to the economy and the second assessed the magnitude of…",
    "auto": true
   }
  ],
  "eds": [
+  [
+   "Toronto Star",
+   "Opinion",
+   "Correction",
+   "https://www.thestar.com/opinion/correction/article_292b0b63-3302-4cab-a6a2-5bf99a1bc74e.html",
+   "2026-11-18T23:00:00+00:00"
+  ],
   [
    "Toronto Sun",
    "Editorial",
@@ -2801,13 +2950,6 @@
    "Trump holds the nuclear cards to play against China and Russia on arms control",
    "https://www.foxnews.com/opinion/trump-holds-nuclear-cards-play-against-china-russia-arms-control",
    "2026-11-18T20:35:46+00:00"
-  ],
-  [
-   "The Wall Street Journal (subscribers)",
-   "Opinion",
-   "Extreme Poverty Is a Thing of the Past in India",
-   "https://www.wsj.com/opinion/extreme-poverty-is-a-thing-of-the-past-in-india-a6f7b0a9?mod=rss_opinion",
-   "2026-11-18T22:56:00+00:00"
   ]
  ],
  "canus": {
@@ -2832,13 +2974,6 @@
     "outlet": "CBC News",
     "title": "Nearly 300,000 people sign petition demanding U.S. Ambassador Pete Hoekstra's removal",
     "url": "https://www.cbc.ca/news/politics/hoekstra-petition-9.7426916?cmp=rss"
-   },
-   {
-    "t": "Wed 2:30 p.m.",
-    "iso": "2026-11-18T19:30:00+00:00",
-    "outlet": "Toronto Star",
-    "title": "Mark Carney has surprise meeting with Donald Trump in China, but no progress on U.S.-Canada trade deal",
-    "url": "https://www.thestar.com/politics/federal/mark-carney-has-surprise-meeting-with-donald-trump-at-apec-summit-in-china/article_1add44b9-7acb-42ea-9d63-47d032bf61fc.html"
    },
    {
     "t": "Wed 1:27 p.m.",
@@ -2867,6 +3002,13 @@
     "outlet": "Global News",
     "title": "Trade talks with U.S. ‘more complex’ than other partners, Carney says",
     "url": "https://globalnews.ca/news/12156009/carney-trump-china-meeting/"
+   },
+   {
+    "t": "Wed 4:21 a.m.",
+    "iso": "2026-11-18T09:21:34+00:00",
+    "outlet": "Lethbridge Herald",
+    "title": "In the news today: Carney at APEC, complex U.S. trade talks, whale snot science",
+    "url": "https://lethbridgeherald.com/news/national-news/2026/11/18/in-the-news-today-carney-at-apec-complex-u-s-trade-talks-whale-snot-science/"
    }
   ],
   "usmedia": [
@@ -2894,13 +3036,12 @@
   ]
  },
  "brief": {
-  "edition": "Wednesday evening, November 18",
+  "edition": "Wednesday night, November 18",
   "lines": [
    "Good evening. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
-   "Prime Minister Mark Carney said a \"very good trade arrangement\" with the United States is possible but those talks are far more complex than the trade discussions Canada is having with China and other partners, The Canadian Press reports.",
    "A Russian man who prosecutors say was recruited by his government has been charged with stalking employees of a Silicon Valley technology and defence company in order to gather intelligence, the Justice Department said Wednesday.",
    "“Grand Theft Auto” has never been much for following the rules, The Associated Press reports.",
-   "Anthropic prices IPO at $83 US per share, valuing AI giant at $1.51 trillion US, CBC News reports.",
+   "Anthropic’s hotly anticipated IPO is expected to put it in the top 10 most valuable US companies, but the future is uncertain, BBC News reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
   ]
  },
@@ -3192,8 +3333,8 @@
    "h": "Ottawa is reviewing Cadet and Junior Canadian programs, including those on Vancouver Island",
    "u": "https://cheknews.ca/ottawa-is-reviewing-cadet-and-junior-canadian-programs-including-those-on-vancouver-island-1362465/",
    "t": "Wed 8:16 p.m.",
-   "desc": "The Department of National Defence says its Cadets and Junior Canadian Rangers programs are reviewing their financial plans",
-   "img": "https://cheknews.ca/wp-content/uploads/2026/11/Nanaimo-Navy-League.jpg"
+   "desc": "",
+   "img": ""
   },
   {
    "o": "CKOM / PAnow",
@@ -3241,7 +3382,7 @@
    "title": "The National | Carney meets Trump face-to-face",
    "outlet": "CBC News",
    "t": "Wed 9:00 p.m.",
-   "hot": true
+   "hot": false
   },
   {
    "city": "Winnipeg",
@@ -3296,11 +3437,11 @@
    "tz": "Europe/Moscow",
    "world": true,
    "w": "Nuclear",
-   "label": "Trump meets Xi and Putin in China with nuclear arms and…",
-   "u": "https://www.ctvnews.ca/world/article/trump-plans-to-meet-separately-with-putin-on-his-china-trip-in-addition-to-their-3-way-talks-with-xi/",
-   "title": "Trump meets Xi and Putin in China with nuclear arms and two wars on the table",
-   "outlet": "CTV News",
-   "t": "Wed 8:31 p.m.",
+   "label": "What to expect from Trump's meeting with Putin and Xi…",
+   "u": "https://www.nbcnews.com/video/what-to-expect-from-trump-s-meeting-with-putin-and-xi-jinping-273779781736",
+   "title": "What to expect from Trump's meeting with Putin and Xi Jinping",
+   "outlet": "NBC News",
+   "t": "Wed 8:39 p.m.",
    "hot": true
   },
   {
@@ -3337,7 +3478,7 @@
    "iso": "2026-11-19T01:38:00+00:00",
    "title": "Anthropic is said to price IPO above range at $83 per share",
    "summary": "The pricing makes it the biggest first-time share sale on record.",
-   "outlet": "The Japan Times, Toronto Sun (AFP), CBC News + PBS NewsHour, ABC News, CBS News, BBC News, The Guardian",
+   "outlet": "The Japan Times, Toronto Sun (AFP), PBS NewsHour (AP), ABC News, CBS News, BBC News, The Guardian",
    "n": 7,
    "url": "https://www.japantimes.co.jp/business/2026/11/19/tech/anthropic-ipo-83-per-share/",
    "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/19/574890.jpg?v=3.1"
@@ -3391,30 +3532,6 @@
    "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/19/574883.JPG?v=3.1"
   },
   {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Wed 8:00 p.m.",
-   "iso": "2026-11-19T01:00:01+00:00",
-   "title": "Ontario has a Scandinavian Christmas village with hidden gnomes and a dazzling market",
-   "summary": "You can enjoy a little slice of Scandinavian Christmas right here in Ontario. This enchanting holiday market features a magical village and festive attractions that will whisk you away to Finland.",
-   "outlet": "Narcity, CTV News (CP), Daily Hive, VOCM",
-   "n": 4,
-   "url": "https://www.narcity.com/christmas-market-niemi-family-farm-scandinavian-market-tickets",
-   "img": "https://www.narcity.com/media-library/a-snowy-christmas-markets-at-night-with-lit-trees-wooden-stalls-and-visitors.jpg?id=68705490&width=1200&height=600&coordinates=0%2C36%2C0%2C36"
-  },
-  {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Wed 7:58 p.m.",
-   "iso": "2026-11-19T00:58:30+00:00",
-   "title": "Carney says deal with U.S. possible but not there yet, after meeting Trump in China",
-   "summary": "SHENZHEN — Prime Minister Mark Carney said a \"very good trade arrangement\" with the United States is possible but those talks are far more complex than the trade discussions Canada is having with China and other partners.",
-   "outlet": "Times Colonist (CP), CBC News, BBC News, Toronto Star",
-   "n": 4,
-   "url": "https://www.timescolonist.com/the-mix/carney-says-deal-with-us-possible-but-not-there-yet-after-meeting-trump-in-china-13030373",
-   "img": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/6ccf962388acfcd50d6d1e88d7dfa4b41ac2c6daf7015859227947b0cd91eee2.jpg;w=1200;h=800;mode=crop"
-  },
-  {
    "desk": "us",
    "pic": "podium",
    "t": "Wed 6:52 p.m.",
@@ -3433,7 +3550,7 @@
    "iso": "2026-11-18T23:50:09+00:00",
    "title": "U.S. and Venezuela sign a deal to reestablish military ties, Hegseth says in visit to Caracas",
    "summary": "The United States and Venezuela have signed a deal to re-establish military ties, from training to intelligence sharing, U.S. Defense Secretary Pete Hegseth said Wednesday on a visit with the South American nation’s interim leaders.",
-   "outlet": "CTV News + CP24 + PBS NewsHour (AP), Euronews, Al Jazeera, The Guardian",
+   "outlet": "CTV News + CP24 (CP), Euronews, Al Jazeera, The Guardian",
    "n": 4,
    "url": "https://www.ctvnews.ca/world/article/hegseth-visiting-venezuela-says-the-nations-have-signed-a-deal-to-re-establish-military-ties/",
    "img": "https://www.ctvnews.ca/resizer/v2/Y7RVD2EIFHP7KH3CCF24IHBRF4.jpg?smart=true&auth=3adfc8113dea96080e48398bef51cf6a9449866ad5456f72f8b18a29a8ccd887&width=1200&height=630"
@@ -3451,6 +3568,30 @@
    "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/eb01/live/85dba110-e39d-11f1-a094-5fdc692f3e33.jpg"
   },
   {
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Wed 6:12 p.m.",
+   "iso": "2026-11-18T23:12:09+00:00",
+   "title": "Victoria Hospital’s new ER will not have an ICU: Premier",
+   "summary": "The province says it will reopen Victoria Hospital’s emergency department next summer, yet despite extensive renovations, a key piece is missing and it’s raising serious questions.",
+   "outlet": "CTV News + CP24 (CP), Global News, Al Jazeera, CityNews Ottawa + CityNews",
+   "n": 4,
+   "url": "https://www.ctvnews.ca/winnipeg/article/victoria-hospitals-new-er-will-not-have-an-icu-premier/",
+   "img": "https://www.ctvnews.ca/resizer/v2/YQJNRXMU2JHP5P6J6Q2PCYULEU.jpeg?smart=true&auth=fdfe72aeb439d06fe0780069c9fdedf469eb5cfd577c2d6456f2b5c581ee290c&width=1200&height=630"
+  },
+  {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Wed 8:00 p.m.",
+   "iso": "2026-11-19T01:00:01+00:00",
+   "title": "Ontario has a Scandinavian Christmas village with hidden gnomes and a dazzling market",
+   "summary": "You can enjoy a little slice of Scandinavian Christmas right here in Ontario. This enchanting holiday market features a magical village and festive attractions that will whisk you away to Finland.",
+   "outlet": "Narcity, CTV News (CP), Daily Hive",
+   "n": 3,
+   "url": "https://www.narcity.com/christmas-market-niemi-family-farm-scandinavian-market-tickets",
+   "img": "https://www.narcity.com/media-library/a-snowy-christmas-markets-at-night-with-lit-trees-wooden-stalls-and-visitors.jpg?id=68705490&width=1200&height=600&coordinates=0%2C36%2C0%2C36"
+  },
+  {
    "desk": "us",
    "pic": "podium",
    "t": "Wed 7:55 p.m.",
@@ -3461,18 +3602,6 @@
    "n": 3,
    "url": "https://www.foxnews.com/outkick-sports/no-1-florida-loses-houston-four-preseason-ap-top-five-fall-before-thanksgiving",
    "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/thomas-haugh-florida-gators-houston-cougars.jpg"
-  },
-  {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Wed 6:12 p.m.",
-   "iso": "2026-11-18T23:12:09+00:00",
-   "title": "Victoria Hospital’s new ER will not have an ICU: Premier",
-   "summary": "The province says it will reopen Victoria Hospital’s emergency department next summer, yet despite extensive renovations, a key piece is missing and it’s raising serious questions.",
-   "outlet": "CTV News + CP24 (CP), Global News, CityNews Ottawa + CityNews",
-   "n": 3,
-   "url": "https://www.ctvnews.ca/winnipeg/article/victoria-hospitals-new-er-will-not-have-an-icu-premier/",
-   "img": "https://www.ctvnews.ca/resizer/v2/YQJNRXMU2JHP5P6J6Q2PCYULEU.jpeg?smart=true&auth=fdfe72aeb439d06fe0780069c9fdedf469eb5cfd577c2d6456f2b5c581ee290c&width=1200&height=630"
   },
   {
    "desk": "world",
@@ -3499,16 +3628,16 @@
    "img": "https://www.middleeasteye.net/sites/default/files/2026-11/000_D47W474.jpg"
   },
   {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Wed 6:30 p.m.",
-   "iso": "2026-11-18T23:30:00+00:00",
-   "title": "Ontario elementary school teachers become third union to vote for strike mandate",
-   "summary": "The Elementary Teachers’ Federation of Ontario became the third union to do so ahead of talks.",
-   "outlet": "Toronto Star, CP24",
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Wed 7:58 p.m.",
+   "iso": "2026-11-19T00:58:30+00:00",
+   "title": "Carney says deal with U.S. possible but not there yet, after meeting Trump in China",
+   "summary": "SHENZHEN — Prime Minister Mark Carney said a \"very good trade arrangement\" with the United States is possible but those talks are far more complex than the trade discussions Canada is having with China and other partners.",
+   "outlet": "Times Colonist (CP), CBC News",
    "n": 2,
-   "url": "https://www.thestar.com/politics/provincial/ontario-elementary-school-teachers-become-third-union-to-vote-for-strike-mandate/article_652825ec-a4cb-41bf-9f0e-c29674d62b19.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/0/e4/0e49957a-f2c7-5a0e-a309-9cdb8ae6ecb7/6afe26362d1f5.image.jpg?crop=1763%2C926%2C0%2C124&resize=1200%2C630&order=crop%2Cresize"
+   "url": "https://www.timescolonist.com/the-mix/carney-says-deal-with-us-possible-but-not-there-yet-after-meeting-trump-in-china-13030373",
+   "img": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/6ccf962388acfcd50d6d1e88d7dfa4b41ac2c6daf7015859227947b0cd91eee2.jpg;w=1200;h=800;mode=crop"
   },
   {
    "desk": "politics",
@@ -3643,6 +3772,18 @@
    "img": "https://edmonton.citynews.ca/wp-content/blogs.dir/sites/15/bus-pic.jpg"
   },
   {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Wed 7:11 p.m.",
+   "iso": "2026-11-19T00:11:40+00:00",
+   "title": "EU governments approve trade deal with Indonesia to offset Trump tariffs",
+   "summary": "The deal, initially concluded in 2025, will see both sides remove import duties on more than 90 percent of products.",
+   "outlet": "Al Jazeera",
+   "n": 1,
+   "url": "https://www.aljazeera.com/economy/2026/11/19/eu-governments-approve-trade-deal-with-indonesia-to-offset-trump-tariffs?traffic_source=rss",
+   "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/2025-02-12T074119Z_1802006394_RC2RSCAYO210_RTRMADP_3_TOTW-TRADE-1795042196.jpg?resize=1920%2C1440"
+  },
+  {
    "desk": "politics",
    "pic": "parliament",
    "t": "Wed 6:17 p.m.",
@@ -3681,14 +3822,14 @@
   {
    "desk": "politics",
    "pic": "parliament",
-   "t": "Wed 2:51 p.m.",
-   "iso": "2026-11-18T19:51:17+00:00",
-   "title": "Carney striking trade deals at ‘lightning speed’ amid diversification push: expert",
-   "summary": "Prime Minister Mark Carney is moving fast to secure new trade deals as his government attempts to make Canada less dependent on the U.S., but there’s reason to be optimistic that an agreement between Ottawa and Washington could come soon, an expert says.",
-   "outlet": "CP24",
+   "t": "Wed 3:02 p.m.",
+   "iso": "2026-11-18T20:02:02+00:00",
+   "title": "Why Carney is looking to China as Canada's car industry comes under US pressure",
+   "summary": "Prime Minister Carney said on Wednesday that \"if the US doesn't want to do the deal, we're busy\", as he eyes alternatives for Canada's auto sector in Beijing.",
+   "outlet": "BBC News",
    "n": 1,
-   "url": "https://www.cp24.com/news/money/2026/11/18/carney-striking-trade-deals-at-lightning-speed-amid-diversification-push-expert/",
-   "img": "https://www.cp24.com/resizer/v2/C6N4IF265VHINHIJPKCOI3TSCE.jpg?smart=true&auth=2d2e892ea3cef7f8f85fb6184388d4eb35ba86dafa25f4e6d210c006bbbafe4d&width=1200&height=630"
+   "url": "https://www.bbc.co.uk/news/articles/cq98xlz09ye0o?at_medium=RSS&at_campaign=rss",
+   "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/f49e/live/7260e220-e38a-11f1-a8ca-d7dfade8c64d.jpg"
   }
  ],
  "reads": [
@@ -3899,19 +4040,19 @@
    "ca": true,
    "h": [
     "Female pedestrian dead after being struck by Eglinton LRT vehicle",
-    "Firefighters round up 22 chickens on the loose in Toronto parking lot",
     "Toronto police ID man captured on video assaulting demonstrators outside Chinese consulate",
     "Murder plot foiled as part of probe into Toronto tow truck violence, company under contract to police implicated",
     "Three suspects wanted in alleged TTC subway assault",
-    "‘I definitely didn’t teach him this’: Duolingo owl chirps at Doug Ford’s French"
+    "‘I definitely didn’t teach him this’: Duolingo owl chirps at Doug Ford’s French",
+    "Mayor Chow lays out vision for new term, Malik elected as new speaker"
    ],
    "u": [
     "https://www.cp24.com/local/toronto/2026/11/19/female-pedestrian-dead-after-being-struck-by-eglinton-lrt-vehicle/",
-    "https://www.cp24.com/local/toronto/2026/11/18/firefighters-round-up-22-chickens-on-the-loose-in-toronto-parking-lot/",
     "https://www.cp24.com/local/toronto/2026/11/18/toronto-police-identify-man-wanted-in-assault-outside-chinese-consulate/",
     "https://www.cp24.com/local/toronto/2026/11/18/toronto-police-foil-murder-plot-as-part-of-investigation-into-violence-connected-to-towing-industry/",
     "https://www.cp24.com/local/toronto/2026/11/18/three-suspects-wanted-in-alleged-ttc-subway-assault/",
-    "https://www.cp24.com/politics/queens-park/2026/11/18/i-definitely-didnt-teach-him-this-duolingo-owl-chirps-at-doug-fords-french/"
+    "https://www.cp24.com/politics/queens-park/2026/11/18/i-definitely-didnt-teach-him-this-duolingo-owl-chirps-at-doug-fords-french/",
+    "https://www.cp24.com/politics/toronto-city-hall/2026/11/18/mayor-chow-lays-out-vision-for-new-term-malik-elected-as-new-speaker/"
    ]
   },
   {
@@ -3968,7 +4109,7 @@
    "o": "CBS News",
    "ca": false,
    "h": [
-    "What to know about Trump's meeting with Xi in China",
+    "Xi speaks at APEC summit ahead of rare meeting with Trump and Putin",
     "Iran ramps up attacks on Gulf countries after U.S. strikes",
     "NSA network outage linked to software vulnerability",
     "Mystery firm spending millions to attend Trump crypto gala",
@@ -3976,7 +4117,7 @@
     "Cornyn blocks Trump's nominee to federal district court in Texas"
    ],
    "u": [
-    "https://www.cbsnews.com/news/trump-xi-meet-china-chips-ai/",
+    "https://www.cbsnews.com/news/trump-xi-putin-china-apec-summit/",
     "https://www.cbsnews.com/live-updates/iran-war-us-gulf-retaliation-strikes-strait-of-hormuz/",
     "https://www.cbsnews.com/news/national-security-agency-network-outage-software-vulnerability/",
     "https://www.cbsnews.com/news/trump-crypto-gala-fastx-meme-coin/",
@@ -4074,7 +4215,7 @@
     "url": "https://www.youtube.com/watch?v=5VzAaR2TlNo",
     "img": "https://i.ytimg.com/vi/5VzAaR2TlNo/hqdefault.jpg",
     "story": "WATCH: Trump, Xi and Putin to meet after APEC leaders pose for a famil",
-    "watching": "81",
+    "watching": "649",
     "reports": [
      {
       "outlet": "The Japan Times",
@@ -4127,7 +4268,7 @@
     "url": "https://www.youtube.com/watch?v=CiursXbr7kk",
     "img": "https://i.ytimg.com/vi/CiursXbr7kk/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "877",
+    "watching": "881",
     "rolling": true
    }
   ],
@@ -4318,7 +4459,16 @@
    "ties": [
     "anthropic"
    ],
-   "stories": [],
+   "stories": [
+    {
+     "t": "Wed 4:13 p.m.",
+     "iso": "2026-11-18T21:13:31+00:00",
+     "outlet": "NBC News",
+     "title": "Anthropic is about to be worth more than $1 trillion. What that means for the rest of us.",
+     "url": "https://www.nbcnews.com/business/markets/anthropic-ipo-valuation-ai-boom-rcna610069",
+     "tie": "Anthropic"
+    }
+   ],
    "views": [
     {
      "outlet": "The Hub",
@@ -4337,6 +4487,12 @@
      "kind": "Think tank",
      "title": "Could Canada’s dodgy Ecuador trade deal fail on a technicality?",
      "url": "https://www.policyalternatives.ca/news-research/could-canadas-dodgy-ecuador-trade-deal-fail-on-a-technicality/"
+    },
+    {
+     "outlet": "Frontier Centre for Public Policy",
+     "kind": "Think tank",
+     "title": "Can Indigenous Land Claims Override Private Property Rights?",
+     "url": "https://frontiercentre.org/2026/11/17/can-indigenous-land-claims-override-private-property-rights/?utm_source=rss&utm_medium=rss&utm_campaign=can-indigenous-land-claims-override-private-property-rights"
     }
    ]
   },
@@ -4351,6 +4507,14 @@
      "outlet": "Times Colonist",
      "title": "Carney says deal with U.S. possible but not there yet, after meeting Trump in China",
      "url": "https://www.timescolonist.com/the-mix/carney-says-deal-with-us-possible-but-not-there-yet-after-meeting-trump-in-china-13030373",
+     "tie": "Canada and the U.S."
+    },
+    {
+     "t": "Wed 3:02 p.m.",
+     "iso": "2026-11-18T20:02:02+00:00",
+     "outlet": "BBC News",
+     "title": "Why Carney is looking to China as Canada's car industry comes under US pressure",
+     "url": "https://www.bbc.co.uk/news/articles/cq98xlz09ye0o?at_medium=RSS&at_campaign=rss",
      "tie": "Canada and the U.S."
     },
     {
@@ -4400,14 +4564,6 @@
      "title": "In the news today: Carney at APEC, complex U.S. trade talks, whale snot science",
      "url": "https://lethbridgeherald.com/news/national-news/2026/11/18/in-the-news-today-carney-at-apec-complex-u-s-trade-talks-whale-snot-science/",
      "tie": "Canada and the U.S."
-    },
-    {
-     "t": "Tue 8:18 p.m.",
-     "iso": "2026-11-18T01:18:58+00:00",
-     "outlet": "BNN Bloomberg",
-     "title": "Canada, India on the cusp of finalizing free trade deal, says high envoy",
-     "url": "https://www.bnnbloomberg.ca/business/politics/2026/11/18/canada-india-on-the-cusp-of-finalizing-free-trade-deal-says-high-envoy/",
-     "tie": "Canada and the U.S."
     }
    ],
    "views": [
@@ -4422,7 +4578,7 @@
  },
  "canangle": {
   "auto-e7a3658e": {
-   "story": "Trump meets Xi and Putin in China with nuclear arms and two wars on the table",
+   "story": "What to expect from Trump's meeting with Putin and Xi Jinping",
    "us": true,
    "specific": 5,
    "stories": [
@@ -4480,6 +4636,51 @@
      "t": "Nov 18"
     }
    ],
+   "views": []
+  },
+  "auto-f1193f5f": {
+   "story": "Anthropic is said to price IPO above range at $83 per share",
+   "us": false,
+   "specific": 1,
+   "stories": [
+    {
+     "t": "Wed 6:58 p.m.",
+     "iso": "2026-11-18T23:58:40.038000+00:00",
+     "outlet": "CBC News",
+     "title": "Anthropic's public offering exceeds every Canadian IPO combined over last 30 years",
+     "url": "https://www.cbc.ca/news/business/anthropic-ipo-share-price-nasdaq-9.7426856",
+     "ca": true,
+     "tie": ""
+    }
+   ],
+   "official": [],
+   "views": []
+  },
+  "auto-0c48d3ef": {
+   "story": "Mahmoud Khalil sues US Justice Department over failure to disclose correspondence with immigration judge",
+   "us": true,
+   "specific": 2,
+   "stories": [
+    {
+     "t": "Wed 7:30 p.m.",
+     "iso": "2026-11-19T00:30:00+00:00",
+     "outlet": "CBC News",
+     "title": "P.E.I. tasks retired N.S. justice to lead independent review into Byron Carr murder case",
+     "url": "https://www.cbc.ca/news/canada/prince-edward-island/pei-justice-duncan-beveridge-9.7427275?cmp=rss",
+     "ca": true,
+     "tie": ""
+    },
+    {
+     "t": "Wed 4:25 p.m.",
+     "iso": "2026-11-18T21:25:50+00:00",
+     "outlet": "CityNews Montreal",
+     "title": "Quebec Bar Association wants new hotline, tax credit to improve access to justice",
+     "url": "https://montreal.citynews.ca/2026/11/18/quebec-bar-wants-new-hotline-tax-credit-improve-access/",
+     "ca": true,
+     "tie": ""
+    }
+   ],
+   "official": [],
    "views": []
   }
  },
@@ -4644,6 +4845,67 @@
   },
   "https://www.youtube.com/watch?v=MDVDJ33PbXM": {
    "story": "Trump, Putin and Xi hold historic trilateral meeting",
+   "us": true,
+   "specific": 5,
+   "stories": [
+    {
+     "t": "Wed 7:58 p.m.",
+     "iso": "2026-11-19T00:58:30+00:00",
+     "outlet": "Times Colonist",
+     "title": "Carney says deal with U.S. possible but not there yet, after meeting Trump in China",
+     "url": "https://www.timescolonist.com/the-mix/carney-says-deal-with-us-possible-but-not-there-yet-after-meeting-trump-in-china-13030373",
+     "ca": true,
+     "tie": ""
+    },
+    {
+     "t": "Wed 2:19 p.m.",
+     "iso": "2026-11-18T19:19:43+00:00",
+     "outlet": "The Hill",
+     "title": "Carney: Trump not concerned about growing Canada trade ties with China",
+     "url": "https://thehill.com/policy/international/6228336-carney-trump-china-trade-ties/",
+     "ca": false,
+     "tie": ""
+    },
+    {
+     "t": "Wed 12:24 p.m.",
+     "iso": "2026-11-18T17:24:11+00:00",
+     "outlet": "Politico",
+     "title": "Carney says Trump’s trade war is giving China an edge on EVs",
+     "url": "https://www.politico.com/news/2026/11/18/mark-carney-deal-book-donald-trump-01172408",
+     "ca": false,
+     "tie": ""
+    },
+    {
+     "t": "Wed 11:34 a.m.",
+     "iso": "2026-11-18T16:34:19+00:00",
+     "outlet": "CP24",
+     "title": "CTV News in China: Carney and Trump meet at APEC summit",
+     "url": "https://www.cp24.com/news/canada/2026/11/18/ctv-news-in-china-carney-and-trump-meet-at-apec-summit/",
+     "ca": true,
+     "tie": ""
+    },
+    {
+     "t": "Tue 7:17 a.m.",
+     "iso": "2026-11-17T12:17:31+00:00",
+     "outlet": "BNN Bloomberg",
+     "title": "Carney and Sheinbaum meet at summit in China, as both navigate Trump’s tumult",
+     "url": "https://www.bnnbloomberg.ca/business/politics/2026/11/17/carney-and-sheinbaum-meet-at-summit-in-china-as-both-navigate-trumps-tumult/",
+     "ca": true,
+     "tie": ""
+    }
+   ],
+   "official": [
+    {
+     "outlet": "Mark Carney",
+     "title": "Prime Minister Carney meets with President of the United States Donald J. Trump",
+     "url": "https://www.pm.gc.ca/en/news/readouts/2026/11/18/prime-minister-carney-meets-president-united-states-donald-j-trump",
+     "t": "Nov 18"
+    }
+   ],
+   "views": []
+  },
+  "https://www.cbsnews.com/news/trump-xi-putin-china-apec-summit/": {
+   "story": "Xi speaks at APEC summit ahead of rare meeting with Trump and Putin",
    "us": true,
    "specific": 5,
    "stories": [
@@ -5585,7 +5847,6 @@
   "J3FV4iY8p5w",
   "L6qtnHZxwEw",
   "NuEr0Q_AS6U",
-  "RBKlS2sT34Q",
   "c9v26lW7-j4",
   "ldElU-Q5Qyo",
   "nfy6JJILPJI",
