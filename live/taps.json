@@ -1,23 +1,38 @@
 {
- "checked": "2026-11-19T03:43:44.652693+00:00",
- "labels": 265,
- "problems": [],
+ "checked": "2026-11-19T13:35:18.620704+00:00",
+ "labels": 216,
+ "problems": [
+  {
+   "label": "ABC News",
+   "opens": "https://globalnews.ca/news/12157663/new-designer-drug-found-in-toronto-fentanyl-supply/",
+   "section": "developed",
+   "link": false,
+   "width": 390
+  },
+  {
+   "label": "The Hill",
+   "opens": "https://globalnews.ca/news/12157663/new-designer-drug-found-in-toronto-fentanyl-supply/",
+   "section": "developed",
+   "link": false,
+   "width": 390
+  }
+ ],
  "guard": {
   "fixed": [
    {
-    "label": "CBS News",
-    "was": "(card link) cbsnews.com",
-    "now": "https://www.cbsnews.com/news/trump-xi-meet-china-chips-ai/"
+    "label": "CBC News ↗",
+    "was": "(card link) bnnbloomberg.ca",
+    "now": "https://www.cbc.ca/news/canada/british-columbia/surrey-landscaping-company-grand-theft-auto-6-9.7427305"
    },
    {
     "label": "ABC News",
     "was": "(card link) abcnews.com",
-    "now": "https://abcnews.com/GMA/Culture/cma-awards-2026-dolly-parton-honored-moving-tribute/story?id=138230261"
+    "now": "https://abcnews.com/Politics/live-updates/trump-asia-trip-2026/?id=138187702"
    },
    {
-    "label": "NBC News",
-    "was": "(card link) nbcnews.com",
-    "now": "https://www.nbcnews.com/politics/congress/democrats-formally-nominate-rep-hakeem-jeffries-paving-way-first-black-rcna609619"
+    "label": "The Hill",
+    "was": "(card link) thehill.com",
+    "now": "https://thehill.com/homenews/administration/6229360-live-updates-trump-xi-putin-china-summit-crypto-alaska-tech-outages/"
    }
   ],
   "disabled": [],
