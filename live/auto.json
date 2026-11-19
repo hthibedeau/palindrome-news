@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-19T01:13:51.523710+00:00",
- "checkedLabel": "Wed 8:13 p.m.",
+ "checked": "2026-11-19T01:18:41.990526+00:00",
+ "checkedLabel": "Wed 8:18 p.m.",
  "stories": [
   {
    "key": "top",
@@ -45,6 +45,15 @@
   }
  ],
  "wire": [
+  [
+   "Wed 8:09 p.m.",
+   "Canada",
+   "Pedestrian struck by LRT vehicle among 5 collisions reported across Toronto",
+   "CTV News",
+   "https://www.ctvnews.ca/toronto/article/pedestrian-struck-by-lrt-vehicle-among-5-collisions-reported-across-toronto/",
+   "2026-11-19T01:09:42+00:00",
+   2
+  ],
   [
    "Wed 8:07 p.m.",
    "World",
@@ -260,15 +269,6 @@
    "https://www.cbsnews.com/live-updates/iran-war-us-gulf-retaliation-strikes-strait-of-hormuz/",
    "2026-11-19T00:46:41+00:00",
    2
-  ],
-  [
-   "Wed 7:44 p.m.",
-   "Canada",
-   "Saskatoon proposes 5.45% property tax increase in next year’s budget",
-   "Global News",
-   "https://globalnews.ca/news/12156928/saskatoon-proposes-5-45-property-tax-increase-in-next-years-budget/",
-   "2026-11-19T00:44:53+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -501,8 +501,8 @@
    "region": "National",
    "title": "Inuit-led program to replace Child First Initiative with $575M in proposed funding",
    "summary": "Inuit Tapiriit Kanatami (ITK) President Natan Obed and (ISC) Minister Mandy Gull-Masty released the Pirutsiagutiit National Framework today",
-   "outlet": "APTN News, CBC News, Nunatsiaq News",
-   "n": 3,
+   "outlet": "APTN News, CBC News",
+   "n": 2,
    "url": "https://www.aptnnews.ca/national-news/inuit-led-program-to-replace-child-first-initiative-with-575m-in-proposed-funding/",
    "img": "https://www.aptnnews.ca/wp-content/uploads/2026/11/Mandy-Gull-Masty-and-Natan-Obed.jpg"
   },
@@ -879,10 +879,10 @@
       "up": ""
      },
      {
-      "net": "CP24",
-      "url": "https://www.youtube.com/watch?v=CqNly31Om8Y",
-      "title": "Fraudsters seek to take advantage of highly anticipated Grand Theft Auto VI release",
-      "img": "https://i.ytimg.com/vi/CqNly31Om8Y/hqdefault.jpg",
+      "net": "NBC News",
+      "url": "https://www.youtube.com/watch?v=HrqGdW4Kb0A",
+      "title": "Nvidia’s Post-Huang Era, Grand Theft Auto OOO; Zelenskyy Calls Out Being Shut Out - Nov. 18",
+      "img": "https://i.ytimg.com/vi/HrqGdW4Kb0A/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1521,7 +1521,6 @@
      "CBS News",
      "NPR"
     ],
-    "outled_ca": 1,
     "judgment": "regional",
     "judgment_why": "Regional: affects some people; carried beyond one city.",
     "weight": 45.0,
@@ -1653,28 +1652,9 @@
     "why_judged": "National: affects many people; carried beyond one city."
    },
    {
-    "title": "Competition Bureau examining marketing practices by Gap, Old Navy",
-    "url": "https://www.cbc.ca/news/business/competition-bureau-gap-old-navy-advertising-9.7426966",
-    "rank": 5,
-    "live": "",
-    "weight": 26.5,
-    "score": 7,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "general",
-    "theme": "",
-    "top": false,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
-    "carriers": 5,
-    "judgment": "national",
-    "why_judged": "National: affects some people; carried across the country (national desks)."
-   },
-   {
     "title": "U.S. and Venezuela sign a deal to reestablish military ties, Hegseth says in visit to Caracas",
     "url": "https://www.ctvnews.ca/world/article/hegseth-visiting-venezuela-says-the-nations-have-signed-a-deal-to-re-establish-military-ties/",
-    "rank": 6,
+    "rank": 5,
     "live": "",
     "weight": 24.5,
     "score": 8,
@@ -1693,7 +1673,7 @@
    {
     "title": "Hakeem Jeffries’ progressive defectors reveal the limits of their power: From the Politics Desk",
     "url": "https://www.nbcnews.com/politics/politics-news/hakeem-jeffries-defectors-reveal-limits-power-politics-desk-rcna610100",
-    "rank": 7,
+    "rank": 6,
     "live": "",
     "weight": 19.5,
     "score": 9,
@@ -1717,7 +1697,7 @@
    {
     "title": "'If the U.S. doesn't want to do a deal, we're busy,' says PM Carney",
     "url": "https://www.cbc.ca/player/play/video/9.7427267",
-    "rank": 8,
+    "rank": 7,
     "live": "",
     "weight": 20.5,
     "score": 0,
@@ -1736,7 +1716,7 @@
    {
     "title": "'If the U.S. doesn't want to do a deal, we're busy,' Carney says of ongoing trade talks",
     "url": "https://www.cbc.ca/news/politics/carney-trump-trade-canada-busy-9.7426568",
-    "rank": 9,
+    "rank": 8,
     "live": "",
     "weight": 30.5,
     "score": 10,
@@ -1745,9 +1725,8 @@
     "canada": "canadian",
     "theme": "Canada and the U.S.",
     "top": false,
-    "fronts": 2,
+    "fronts": 1,
     "fronts_who": [
-     "Toronto Star",
      "CBS News"
     ],
     "rule": "Canadian, still developing",
@@ -1791,6 +1770,11 @@
     "why": "not built: only 1 independent report(s) (1 sites)"
    },
    {
+    "title": "Operation Vivaldi: Ukraine melds man and machine to repel Russians",
+    "score": 8,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
     "title": "Judge orders Kinew government to disclose who excluded Tesla from Manitoba EV rebate program and why",
     "score": 7,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
@@ -1810,197 +1794,11 @@
   "top_n": 3,
   "more": [
    {
-    "key": "auto-eedbfa39",
-    "words": [
-     "bureau",
-     "navy",
-     "gap"
-    ],
-    "score": 7,
-    "outlets": 3,
-    "carriers": 5,
-    "tag": "Developing",
-    "title": "Competition Bureau examining marketing practices by Gap, Old Navy",
-    "url": "https://www.cbc.ca/news/business/competition-bureau-gap-old-navy-advertising-9.7426966",
-    "outlet": "CBC News",
-    "t": "Wed 7:22 p.m.",
-    "iso": "2026-11-19T00:22:43.575000+00:00",
-    "summary": "The Competition Bureau is moving ahead with an investigation into whether clothing giants Gap and Old Navy are violating marketing regulations by making potentially false or misleading claims in their advertising.",
-    "first": {
-     "outlet": "Global News",
-     "url": "https://globalnews.ca/news/12156829/old-navy-gap-investigation/",
-     "t": "Wed 3:56 p.m.",
-     "title": "Old Navy and Gap face probe over ‘deceptive’ marketing claims in Canada",
-     "iso": "2026-11-18T20:56:36+00:00"
-    },
-    "newest": "2026-11-19T00:22:43.575000+00:00",
-    "photo": {
-     "src": "live/img/auto-eedbfa39-8ce006ccce.jpg",
-     "orig": "https://i.cbc.ca/ais/1.7452028,1738855093000/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1919%2C1079%29%3BResize%3D620",
-     "caption": "An Old Navy location is seen in the Greater Toronto Area. Canada's competition watchdog is looking into the marketing practices of both Gap and Old Navy stores. (David MacIntosh/CBC) — via CBC News",
-     "alt": "An Old Navy location is seen in the Greater Toronto Area. Canada's competition watchdog is looking into the marketing practices of both Gap and Old Navy stores.",
-     "outlet": "CBC News",
-     "url": "https://www.cbc.ca/news/business/competition-bureau-gap-old-navy-advertising-9.7426966",
-     "since": "2026-11-19T01:15:30.194095+00:00"
-    },
-    "photo_seen": [
-     "https://i.cbc.ca/ais/1.7452028,1738855093000/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1919%2C1079%29%3BResize%3D620"
-    ],
-    "photos": [
-     {
-      "src": "live/img/auto-eedbfa39-8ce006ccce.jpg",
-      "orig": "https://i.cbc.ca/ais/1.7452028,1738855093000/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1919%2C1079%29%3BResize%3D620",
-      "caption": "An Old Navy location is seen in the Greater Toronto Area. Canada's competition watchdog is looking into the marketing practices of both Gap and Old Navy stores. (David MacIntosh/CBC) — via CBC News",
-      "alt": "An Old Navy location is seen in the Greater Toronto Area. Canada's competition watchdog is looking into the marketing practices of both Gap and Old Navy stores.",
-      "outlet": "CBC News",
-      "url": "https://www.cbc.ca/news/business/competition-bureau-gap-old-navy-advertising-9.7426966"
-     },
-     {
-      "src": "live/img/auto-eedbfa39-f4ae28882a.jpg",
-      "orig": "https://www.ctvnews.ca/resizer/v2/HXSYDMCDYRFLFA42MNLNBBR3MA.jpg?smart=true&auth=e8a64ee4134850eb4ff468d8c8e09fca4cbcc86b4892abd557d294108fc77918&width=1200&height=630",
-      "caption": "A Gap logo and an Old Navy logo in a combination photo (AP Photo/Steven Senne/Nam Y. Huh). — via CTV News",
-      "alt": "A Gap logo and an Old Navy logo in a combination photo (AP Photo/Steven Senne/Nam Y. Huh)",
-      "outlet": "CTV News",
-      "url": "https://www.ctvnews.ca/canada/article/competition-bureau-investigating-potentially-false-or-misleading-claims-made-by-old-navy-and-gap/"
-     }
-    ],
-    "independent": 3,
-    "reports": [
-     {
-      "t": "Wed 7:22 p.m.",
-      "iso": "2026-11-19T00:22:43.575000+00:00",
-      "outlet": "CBC News",
-      "title": "Competition Bureau examining marketing practices by Gap, Old Navy",
-      "url": "https://www.cbc.ca/news/business/competition-bureau-gap-old-navy-advertising-9.7426966",
-      "desc": "The Competition Bureau is moving ahead with an investigation into whether clothing giants Gap and Old Navy are violating marketing regulations by making potentially false or misleading claims in their advertising."
-     },
-     {
-      "t": "Wed 7:01 p.m.",
-      "iso": "2026-11-19T00:01:13+00:00",
-      "outlet": "CTV News",
-      "title": "Competition Bureau investigating ‘potentially false or misleading claims’ made by Old Navy and Gap",
-      "url": "https://www.ctvnews.ca/canada/article/competition-bureau-investigating-potentially-false-or-misleading-claims-made-by-old-navy-and-gap/",
-      "desc": "The Competition Bureau says it has obtained a court order to advance an ongoing investigation into Old Navy and Gap."
-     },
-     {
-      "t": "Wed 7:01 p.m.",
-      "iso": "2026-11-19T00:01:13+00:00",
-      "outlet": "CP24",
-      "title": "Competition Bureau investigating ‘potentially false or misleading claims’ made by Old Navy and Gap",
-      "url": "https://www.cp24.com/news/canada/2026/11/18/competition-bureau-investigating-potentially-false-or-misleading-claims-made-by-old-navy-and-gap/",
-      "desc": ""
-     },
-     {
-      "t": "Wed 7:01 p.m.",
-      "iso": "2026-11-19T00:01:13+00:00",
-      "outlet": "BNN Bloomberg",
-      "title": "Competition Bureau investigating ‘potentially false or misleading claims’ made by Old Navy and Gap",
-      "url": "https://www.bnnbloomberg.ca/business/company-news/2026/11/18/competition-bureau-investigating-potentially-false-or-misleading-claims-made-by-old-navy-and-gap/",
-      "desc": ""
-     },
-     {
-      "t": "Wed 3:56 p.m.",
-      "iso": "2026-11-18T20:56:36+00:00",
-      "outlet": "Global News",
-      "title": "Old Navy and Gap face probe over ‘deceptive’ marketing claims in Canada",
-      "url": "https://globalnews.ca/news/12156829/old-navy-gap-investigation/",
-      "desc": "The Competition Bureau said it is beginning an investigating into 'potentially false or misleading claims made by Old Navy and Gap.'"
-     }
-    ],
-    "sources": [
-     {
-      "t": "Wed 7:22 p.m.",
-      "primary": false,
-      "outlet": "CBC News",
-      "title": "Competition Bureau examining marketing practices by Gap, Old Navy",
-      "url": "https://www.cbc.ca/news/business/competition-bureau-gap-old-navy-advertising-9.7426966",
-      "desc": "The Competition Bureau is moving ahead with an investigation into whether clothing giants Gap and Old Navy are violating marketing regulations by making potentially false or misleading claims in their advertising.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "CBC News",
-        "src": "CBC",
-        "byline": "[{\"@type\":\"NewsMediaOrganization\",,\"name\":\"CBC\"}] [{\"@type\":\"NewsMediaOrganization\",,\"name\":\"CBC\"}] {\"profile\":{\"title\":"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Wed 7:01 p.m.",
-      "primary": false,
-      "outlet": "CTV News",
-      "title": "Competition Bureau investigating ‘potentially false or misleading claims’ made by Old Navy and Gap",
-      "url": "https://www.ctvnews.ca/canada/article/competition-bureau-investigating-potentially-false-or-misleading-claims-made-by-old-navy-and-gap/",
-      "desc": "The Competition Bureau says it has obtained a court order to advance an ongoing investigation into Old Navy and Gap.",
-      "wire": "The Canadian Press",
-      "by": [
-       {
-        "outlet": "CTV News",
-        "src": "The Canadian Press",
-        "byline": "Aguilar\" \"Bryann Aguilar\" \"Todd Coyne\" \"The Canadian Press\" \"Jordan Kanygin\" \""
-       },
-       {
-        "outlet": "CP24",
-        "src": "The Canadian Press",
-        "byline": "[ { \"@type\": \"Person\", \"name\": \"Kayla Thompson\", } ] \"Kayla Thompson\" \"Kayla Thompson\" \"\" \"\" \"\" \"\" Kayla Thompson By Kay"
-       },
-       {
-        "outlet": "BNN Bloomberg",
-        "src": "The Canadian Press",
-        "byline": "[ { \"@type\": \"Person\", \"name\": \"Kayla Thompson\", } ] \"Kayla Thompson\" \"Kayla Thompson\" \"\" \"\" \"\" \"\" Kayla Thompson By Kay"
-       }
-      ],
-      "copies": [
-       {
-        "outlet": "CP24",
-        "url": "https://www.cp24.com/news/canada/2026/11/18/competition-bureau-investigating-potentially-false-or-misleading-claims-made-by-old-navy-and-gap/"
-       },
-       {
-        "outlet": "BNN Bloomberg",
-        "url": "https://www.bnnbloomberg.ca/business/company-news/2026/11/18/competition-bureau-investigating-potentially-false-or-misleading-claims-made-by-old-navy-and-gap/"
-       }
-      ]
-     },
-     {
-      "t": "Wed 3:56 p.m.",
-      "primary": false,
-      "outlet": "Global News",
-      "title": "Old Navy and Gap face probe over ‘deceptive’ marketing claims in Canada",
-      "url": "https://globalnews.ca/news/12156829/old-navy-gap-investigation/",
-      "desc": "The Competition Bureau said it is beginning an investigating into 'potentially false or misleading claims made by Old Navy and Gap.'",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Global News",
-        "src": "Corus",
-        "byline": "{\"@type\":\"Person\",\"name\":\"Uday Rana\",} Name Les By Uday Rana Global News Posted November 18, 2026 3:56 pm 1 min read "
-       }
-      ],
-      "copies": []
-     }
-    ],
-    "replaces_top": false,
-    "events": [],
-    "theme": "",
-    "canada": "general",
-    "canus": false,
-    "incoherent": false,
-    "popular": 0,
-    "us_election": false,
-    "fronts": 0,
-    "fronts_ca": 0,
-    "fronts_who": [],
-    "outled_ca": 1,
-    "judgment": "national",
-    "judgment_why": "National: affects some people; carried across the country (national desks).",
-    "weight": 26.5
-   },
-   {
     "key": "auto-10772fcf",
     "words": [
      "venezuela",
-     "caracas",
-     "hegseth"
+     "hegseth",
+     "caracas"
     ],
     "score": 8,
     "outlets": 3,
@@ -2027,7 +1825,7 @@
      "alt": "In this photo released by Miraflores presidential press office, U.S. Defense Secretary Pete Hegseth, right, meets with Venezuela's acting President Delcy Rodrig",
      "outlet": "CTV News",
      "url": "https://www.ctvnews.ca/world/article/hegseth-visiting-venezuela-says-the-nations-have-signed-a-deal-to-re-establish-military-ties/",
-     "since": "2026-11-19T01:05:31.885688+00:00"
+     "since": "2026-11-19T01:21:13.212404+00:00"
     },
     "photo_seen": [
      "https://www.ctvnews.ca/resizer/v2/Y7RVD2EIFHP7KH3CCF24IHBRF4.jpg?smart=true&auth=3adfc8113dea96080e48398bef51cf6a9449866ad5456f72f8b18a29a8ccd887&width=1200&height=630"
@@ -2119,7 +1917,7 @@
        {
         "outlet": "CTV News",
         "src": "The Canadian Press",
-        "byline": "Aguilar\" \"Bryann Aguilar\" \"Todd Coyne\" \"The Canadian Press\" \"Jordan Kanygin\" \""
+        "byline": "Aguilar\" \"Bryann Aguilar\" \"Todd Coyne\" \"The Canadian Press\" \"Brittany Ekelund\""
        },
        {
         "outlet": "CP24",
@@ -2188,7 +1986,6 @@
     "fronts": 0,
     "fronts_ca": 0,
     "fronts_who": [],
-    "outled_ca": 1,
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (national desks).",
     "weight": 24.5,
@@ -2284,6 +2081,183 @@
       "url": "https://www.youtube.com/watch?v=0PnS6-qdqVM",
       "title": "'If the U.S. doesn't want to do a deal, we're busy,' says PM Carney | Power & Politics",
       "img": "https://i.ytimg.com/vi/0PnS6-qdqVM/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     }
+    ]
+   },
+   {
+    "key": "auto-c873a348",
+    "words": [
+     "china",
+     "trade"
+    ],
+    "score": 10,
+    "outlets": 3,
+    "carriers": 3,
+    "tag": "Developing",
+    "title": "'If the U.S. doesn't want to do a deal, we're busy,' Carney says of ongoing trade talks",
+    "url": "https://www.cbc.ca/news/politics/carney-trump-trade-canada-busy-9.7426568",
+    "outlet": "CBC News",
+    "t": "Wed 4:28 p.m.",
+    "iso": "2026-11-18T21:28:35.475000+00:00",
+    "summary": "Prime Minister Mark Carney said Wednesday that Canada is willing to sign a mutually beneficial deal with the Americans, but if U.S. President Donald Trump can't agree to those terms, then Ottawa will continue on its current trajectory: Aggressively diversifying away from the United States.",
+    "first": {
+     "outlet": "The Hill",
+     "url": "https://thehill.com/policy/international/6228336-carney-trump-china-trade-ties/",
+     "t": "Wed 2:19 p.m.",
+     "title": "Carney: Trump not concerned about growing Canada trade ties with China",
+     "iso": "2026-11-18T19:19:43+00:00"
+    },
+    "newest": "2026-11-18T21:28:35.475000+00:00",
+    "photo": {
+     "src": "live/img/auto-c873a348-59f73121bf.jpg",
+     "orig": "https://i.cbc.ca/ais/9d04ffee-448c-4393-997a-1f11c7d1f515,1795020434081/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C625%2C6000%2C3375%29%3BResize%3D620",
+     "caption": "Prime Minister Mark Carney holds a news conference on the sidelines of the APEC summit in Shenzhen, China, on Wednesday. (Florence Lo/Reuters) — via CBC News",
+     "alt": "Prime Minister Mark Carney holds a news conference on the sidelines of the APEC summit in Shenzhen, China, on Wednesday.",
+     "outlet": "CBC News",
+     "url": "https://www.cbc.ca/news/politics/carney-trump-trade-canada-busy-9.7426568",
+     "since": "2026-11-19T01:21:11.985701+00:00"
+    },
+    "photo_seen": [
+     "https://i.cbc.ca/ais/9d04ffee-448c-4393-997a-1f11c7d1f515,1795020434081/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C625%2C6000%2C3375%29%3BResize%3D620"
+    ],
+    "photos": [
+     {
+      "src": "live/img/auto-c873a348-59f73121bf.jpg",
+      "orig": "https://i.cbc.ca/ais/9d04ffee-448c-4393-997a-1f11c7d1f515,1795020434081/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C625%2C6000%2C3375%29%3BResize%3D620",
+      "caption": "Prime Minister Mark Carney holds a news conference on the sidelines of the APEC summit in Shenzhen, China, on Wednesday. (Florence Lo/Reuters) — via CBC News",
+      "alt": "Prime Minister Mark Carney holds a news conference on the sidelines of the APEC summit in Shenzhen, China, on Wednesday.",
+      "outlet": "CBC News",
+      "url": "https://www.cbc.ca/news/politics/carney-trump-trade-canada-busy-9.7426568"
+     }
+    ],
+    "independent": 3,
+    "reports": [
+     {
+      "t": "Wed 4:28 p.m.",
+      "iso": "2026-11-18T21:28:35.475000+00:00",
+      "outlet": "CBC News",
+      "title": "'If the U.S. doesn't want to do a deal, we're busy,' Carney says of ongoing trade talks",
+      "url": "https://www.cbc.ca/news/politics/carney-trump-trade-canada-busy-9.7426568",
+      "desc": "Prime Minister Mark Carney said Wednesday that Canada is willing to sign a mutually beneficial deal with the Americans, but if U.S. President Donald Trump can't agree to those terms, then Ottawa will continue on its current trajectory: Aggressively diversifying away from the United States."
+     },
+     {
+      "t": "Wed 2:30 p.m.",
+      "iso": "2026-11-18T19:30:00+00:00",
+      "outlet": "Toronto Star",
+      "title": "Mark Carney has surprise meeting with Donald Trump in China, but no progress on U.S.-Canada trade deal",
+      "url": "https://www.thestar.com/politics/federal/mark-carney-has-surprise-meeting-with-donald-trump-at-apec-summit-in-china/article_1add44b9-7acb-42ea-9d63-47d032bf61fc.html",
+      "desc": "Carney and Trump discussed “the work underway to reach a mutually beneficial trade agreement,” according to an official readout from the Canadian side."
+     },
+     {
+      "t": "Wed 2:19 p.m.",
+      "iso": "2026-11-18T19:19:43+00:00",
+      "outlet": "The Hill",
+      "title": "Carney: Trump not concerned about growing Canada trade ties with China",
+      "url": "https://thehill.com/policy/international/6228336-carney-trump-china-trade-ties/",
+      "desc": ""
+     }
+    ],
+    "sources": [
+     {
+      "t": "Wed 4:28 p.m.",
+      "primary": false,
+      "outlet": "CBC News",
+      "title": "'If the U.S. doesn't want to do a deal, we're busy,' Carney says of ongoing trade talks",
+      "url": "https://www.cbc.ca/news/politics/carney-trump-trade-canada-busy-9.7426568",
+      "desc": "Prime Minister Mark Carney said Wednesday that Canada is willing to sign a mutually beneficial deal with the Americans, but if U.S. President Donald Trump can't agree to those terms, then Ottawa will continue on its current trajectory: Aggressively diversifying away from the United States.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "CBC News",
+        "src": "CBC",
+        "byline": "own staff: reporter"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Wed 2:30 p.m.",
+      "primary": false,
+      "outlet": "Toronto Star",
+      "title": "Mark Carney has surprise meeting with Donald Trump in China, but no progress on U.S.-Canada trade deal",
+      "url": "https://www.thestar.com/politics/federal/mark-carney-has-surprise-meeting-with-donald-trump-at-apec-summit-in-china/article_1add44b9-7acb-42ea-9d63-47d032bf61fc.html",
+      "desc": "Carney and Trump discussed “the work underway to reach a mutually beneficial trade agreement,” according to an official readout from the Canadian side.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Toronto Star",
+        "src": "Torstar",
+        "byline": "own staff: Bureau Chief"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Wed 2:19 p.m.",
+      "primary": false,
+      "outlet": "The Hill",
+      "title": "Carney: Trump not concerned about growing Canada trade ties with China",
+      "url": "https://thehill.com/policy/international/6228336-carney-trump-china-trade-ties/",
+      "desc": "px-captcha",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "The Hill",
+        "src": "The Hill",
+        "byline": ""
+       }
+      ],
+      "copies": []
+     }
+    ],
+    "replaces_top": false,
+    "events": [],
+    "theme": "Canada and the U.S.",
+    "canada": "canadian",
+    "canus": true,
+    "incoherent": true,
+    "popular": 0,
+    "us_election": false,
+    "fronts": 1,
+    "fronts_ca": 0,
+    "fronts_who": [
+     "CBS News"
+    ],
+    "judgment": "national",
+    "judgment_why": "National: affects many people; carried across the country (national desks).",
+    "weight": 30.5,
+    "videos": [
+     {
+      "net": "Global News",
+      "url": "https://www.youtube.com/watch?v=rhMOuGKeUnE",
+      "title": "Trump signs trade deal with Thailand PM on sidelines of ASEAN Summit",
+      "img": "https://i.ytimg.com/vi/rhMOuGKeUnE/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=qI6erorz7dY",
+      "title": "Carney says Canada's trade with China isn't Trump's top concern after meeting at APEC",
+      "img": "https://i.ytimg.com/vi/qI6erorz7dY/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=67AH4_-TOQg",
+      "title": "Why does China want to build cars in Canada anyway? Unifor wants to know | Power & Politics",
+      "img": "https://i.ytimg.com/vi/67AH4_-TOQg/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CBS News",
+      "url": "https://www.youtube.com/watch?v=0T4Qjxfg4Uo",
+      "title": "Trump in China for talks with Xi and Putin: What to expect",
+      "img": "https://i.ytimg.com/vi/0T4Qjxfg4Uo/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -2401,76 +2375,6 @@
    "geo": "unknown"
   },
   {
-   "id": "WcYDvfHGvIE",
-   "r": "ca",
-   "o": "CBC News",
-   "t": "'This is the last thing we need': NDP asks feds to block Quebecor's Telus bid | Power & Politics",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=WcYDvfHGvIE",
-   "img": "https://i.ytimg.com/vi/WcYDvfHGvIE/hqdefault.jpg",
-   "up": "2026-11-18",
-   "added": "2026-11-19T00:17:46.302525+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "P7RBGZn9jAI",
-   "r": "ca",
-   "o": "CityNews",
-   "t": "Temperatures set to plunge early next week",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=P7RBGZn9jAI",
-   "img": "https://i.ytimg.com/vi/P7RBGZn9jAI/hqdefault.jpg",
-   "up": "2026-11-18",
-   "added": "2026-11-19T00:33:51.749920+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "lmr69evipE0",
-   "r": "ca",
-   "o": "CP24",
-   "t": "Police foil murder plot in towing industry investigation | CTV News Toronto at Six for Nov. 18, 2026",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=lmr69evipE0",
-   "img": "https://i.ytimg.com/vi/lmr69evipE0/hqdefault.jpg",
-   "up": "2026-11-18",
-   "added": "2026-11-19T01:03:51.305969+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "u1wHH-1lj-I",
-   "r": "ca",
-   "o": "CTV News",
-   "t": "Team of the Week: Inclusive program teaches blind hockey",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=u1wHH-1lj-I",
-   "img": "https://i.ytimg.com/vi/u1wHH-1lj-I/hqdefault.jpg",
-   "up": "2026-11-18",
-   "added": "2026-11-19T01:13:51.523710+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "B_dnuWHIeZE",
-   "r": "ca",
-   "o": "CTV News",
-   "t": "Cross-examination in ‘Crypto King’ case continues",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=B_dnuWHIeZE",
-   "img": "https://i.ytimg.com/vi/B_dnuWHIeZE/hqdefault.jpg",
-   "up": "2026-11-18",
-   "added": "2026-11-19T01:13:51.523710+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "t13jxmKwmFA",
    "r": "ca",
    "o": "CityNews",
@@ -2485,16 +2389,58 @@
    "geo": "unknown"
   },
   {
-   "id": "K_MY3RBX4cY",
+   "id": "wV6VLWU1FOE",
    "r": "ca",
-   "o": "CP24",
-   "t": "Cross-examination in ‘Crypto King’ case continues",
+   "o": "CBC News",
+   "t": "Fourteen people taken to hospital after N.S. building collapse, structure fire | Hanomansing Live",
    "rec": false,
    "d": "",
-   "u": "https://www.youtube.com/watch?v=K_MY3RBX4cY",
-   "img": "https://i.ytimg.com/vi/K_MY3RBX4cY/hqdefault.jpg",
+   "u": "https://www.youtube.com/watch?v=wV6VLWU1FOE",
+   "img": "https://i.ytimg.com/vi/wV6VLWU1FOE/hqdefault.jpg",
    "up": "2026-11-18",
-   "added": "2026-11-19T01:13:51.523710+00:00",
+   "added": "2026-11-19T01:18:41.990526+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "sngnYarEl_U",
+   "r": "ca",
+   "o": "CTV News",
+   "t": "Ontario government reacts to preview of meeting with Stellantis",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=sngnYarEl_U",
+   "img": "https://i.ytimg.com/vi/sngnYarEl_U/hqdefault.jpg",
+   "up": "2026-11-18",
+   "added": "2026-11-19T01:18:41.990526+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "YQNY5wCSXQA",
+   "r": "ca",
+   "o": "CTV News",
+   "t": "Hospital occupancy hits 124% in surge",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=YQNY5wCSXQA",
+   "img": "https://i.ytimg.com/vi/YQNY5wCSXQA/hqdefault.jpg",
+   "up": "2026-11-18",
+   "added": "2026-11-19T01:18:41.990526+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "lHl-hUryw-Q",
+   "r": "ca",
+   "o": "CityNews",
+   "t": "Petition for new ice rink in Vancouver",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=lHl-hUryw-Q",
+   "img": "https://i.ytimg.com/vi/lHl-hUryw-Q/hqdefault.jpg",
+   "up": "2026-11-18",
+   "added": "2026-11-19T01:18:41.990526+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2810,7 +2756,7 @@
    "id": "pkQYPVKzHj8",
    "r": "world",
    "o": "Sky News",
-   "t": "Take down Russell Brand's YouTube account, government asks Google",
+   "t": "UK government asks YouTube to deactivate Russell Brand's account",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=pkQYPVKzHj8",
@@ -2987,19 +2933,6 @@
  ],
  "papers": [
   {
-   "inst": "C.D. Howe Institute",
-   "place": "Toronto",
-   "kind": "Publication",
-   "by": "",
-   "date": "Nov. 18, 2026",
-   "d": "2026-11-18",
-   "pic": "chart",
-   "u": "https://cdhowe.org/publication/bill-c-39-doesnt-mean-durable-investor-certainty/",
-   "t": "Bill C-39 Doesn’t Mean Durable Investor Certainty",
-   "g": "From: Kate Koplovich To: Major project watchers Date: November 18, 2026 Re: Bill C-39 Doesn’t Mean Durable Investor Certainty Bill C-39, the Building Canada Strong Act, which the federal government tabled last month, does improve the country’s laws on project approvals, but there is more Ottawa could do to create real…",
-   "auto": true
-  },
-  {
    "inst": "Macdonald-Laurier Institute",
    "place": "Ottawa",
    "kind": "Publication",
@@ -3036,6 +2969,32 @@
    "u": "https://www.policyalternatives.ca/news-research/could-canadas-dodgy-ecuador-trade-deal-fail-on-a-technicality/",
    "t": "Could Canada’s dodgy Ecuador trade deal fail on a technicality?",
    "g": "Twenty-five former Ecuadorian ministers ask Ottawa not to ratify free trade deal with unconstitutional investment chapter intact The post Could Canada’s dodgy Ecuador trade deal fail on a technicality? appeared first on CCPA .",
+   "auto": true
+  },
+  {
+   "inst": "AEI",
+   "place": "Washington",
+   "kind": "Publication",
+   "by": "",
+   "date": "Nov. 18, 2026",
+   "d": "2026-11-18",
+   "pic": "chart",
+   "u": "https://www.aei.org/domestic-policy/private-lending-can-help-fill-the-gap-left-by-grad-plus-but-are-we-making-it-too-hard/",
+   "t": "Private Lending Can Help Fill the Gap Left by Grad PLUS. But Are We Making It Too Hard?",
+   "g": "Steps should be taken to ensure that the private market can, and will, continue to make informed bets on postgraduate education. The post Private Lending Can Help Fill the Gap Left by Grad PLUS. But Are We Making It Too Hard? appeared first on American Enterprise Institute - AEI .",
+   "auto": true
+  },
+  {
+   "inst": "AEI",
+   "place": "Washington",
+   "kind": "Publication",
+   "by": "",
+   "date": "Nov. 18, 2026",
+   "d": "2026-11-18",
+   "pic": "chart",
+   "u": "https://www.aei.org/domestic-policy/if-you-give-california-a-cookie-its-gonna-want-rate-regulation-and-net-neutrality/",
+   "t": "If You Give California a Cookie, It’s Gonna Want Rate Regulation and Net Neutrality",
+   "g": "This standoff threatens to delay BEAD build-out, holding 270,000 unserved California locations hostage to the Golden State’s bid to prevent federal policy from applying to federally funded network providers. The post If You Give California a Cookie, It’s Gonna Want Rate Regulation and Net Neutrality appeared first on…",
    "auto": true
   },
   {
@@ -3130,42 +3089,29 @@
    "auto": true
   },
   {
-   "inst": "C.D. Howe Institute",
-   "place": "Toronto",
+   "inst": "Fraser Institute",
+   "place": "Vancouver",
    "kind": "Publication",
    "by": "",
    "date": "Nov. 17, 2026",
    "d": "2026-11-17",
    "pic": "chart",
-   "u": "https://cdhowe.org/publication/budget-changes-give-welcome-encouragement-to-competition-in-finance/",
-   "t": "Budget Changes Give Welcome Encouragement to Competition in Finance",
-   "g": "Published in Financial Post By Jeremy Kronick, Peter MacKenzie and Mawakina Bafale Regulator gets mandate to ease burden on new entrants, which should help innovation Post-budget discussion usually focuses on big things like the deficit or multibillion-dollar items like the “productivity mega deduction” and loses…",
+   "u": "https://www.fraserinstitute.org/commentary/canadas-private-sector-struggles-create-jobs-amid-population-boom",
+   "t": "Canada’s private sector struggles to create jobs amid population boom",
+   "g": "Canada’s private sector struggles to create jobs amid population boom beng Tue, 11/17/2026 - 07:47 EST. READ TIME 3 MIN. In its recent budget, the Carney government noted Canada’s strong private-sector job growth over the past year. This is, of course, a welcome development. But it will take more than one year of…",
    "auto": true
   },
   {
-   "inst": "Heritage Foundation",
-   "place": "Washington",
+   "inst": "Fraser Institute",
+   "place": "Vancouver",
    "kind": "Publication",
    "by": "",
    "date": "Nov. 17, 2026",
    "d": "2026-11-17",
    "pic": "chart",
-   "u": "https://www.heritage.org/defense/commentary/the-us-navy-needs-new-battlecruiser-will-it-get-one",
-   "t": "The U.S. Navy Needs a New Battlecruiser. Will It Get One?",
-   "g": "Last December, President Donald Trump introduced his vision for the United States Navy: a 30-year shipbuilding plan called the “ Golden Fleet .” Flanking him during his unveiling of this plan were renderings of a core component of that future Navy: USS Defiant , the lead ship of a new, modern class of battleship. But…",
-   "auto": true
-  },
-  {
-   "inst": "Peterson Institute",
-   "place": "Washington",
-   "kind": "Publication",
-   "by": "",
-   "date": "Nov. 17, 2026",
-   "d": "2026-11-17",
-   "pic": "chart",
-   "u": "https://www.piie.com/blogs/realtime-economics/2026/consumers-can-handle-stock-crash",
-   "t": "Consumers Can Handle a Stock Crash",
-   "g": "This is the third in what I expect will be a series of five posts on the vulnerability of the economy to a collapse in what could be an AI bubble. The first used the Fed’s large-scale macroeconomic model, FRB/US, to estimate the contribution of the AI boom to the economy and the second assessed the magnitude of…",
+   "u": "https://www.fraserinstitute.org/commentary/rising-interest-rates-threaten-debt-heavy-governments-canada",
+   "t": "Rising interest rates threaten debt-heavy governments in Canada",
+   "g": "Rising interest rates threaten debt-heavy governments in Canada beng Tue, 11/17/2026 - 07:43 EST. READ TIME 4 MIN. Rising global bond yields threaten the sustainability of government debt in many countries including Canada, and the federal and provincial governments should take notice of the recent experience of…",
    "auto": true
   }
  ],
@@ -3328,7 +3274,7 @@
   "edition": "Wednesday evening, November 18",
   "lines": [
    "Good evening. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
-   "Carney says deal with U.S. possible but not there yet, after meeting Trump in China, The Canadian Press reports.",
+   "Premier Doug Ford may no longer be enjoying the Trump bump that propelled his popularity for months, a new poll suggests, Toronto Star reports.",
    "Trump meets Xi and Putin in China with nuclear arms and two wars on the table, The Associated Press reports.",
    "A Russian man who prosecutors say was recruited by his government has been charged with stalking employees of a Silicon Valley technology and defence company in order to gather intelligence, the Justice Department said Wednesday.",
    "‘Grand Theft Auto VI’ is almost here. What to know about the characters, music and all the hype, The Associated Press reports.",
@@ -3467,12 +3413,23 @@
  ],
  "mostread": {
   "sites": [
+   "Toronto Star",
    "Winnipeg Free Press",
    "Global News",
-   "Nunatsiaq News",
    "Daily Hive"
   ],
   "list": [
+   {
+    "h": "Mark McQueen: Mark Carney should require ‘permanent residents’ to be more permanent",
+    "u": "https://www.thestar.com/opinion/star-columnists/carney-should-require-permanent-residents-to-be-more-permanent/article_408be317-c6cd-48a1-b146-7076d7bbcc68.html",
+    "o": [
+     [
+      "Toronto Star",
+      1,
+      "https://www.thestar.com/opinion/star-columnists/carney-should-require-permanent-residents-to-be-more-permanent/article_408be317-c6cd-48a1-b146-7076d7bbcc68.html"
+     ]
+    ]
+   },
    {
     "h": "Klinic doctor accused of pursuing sexual relationship with patient suspended by medical regulator",
     "u": "https://www.winnipegfreepress.com/breakingnews/2026/11/17/doctor-suspended-manitoba-klinic-patient-relationship",
@@ -3496,17 +3453,6 @@
     ]
    },
    {
-    "h": "Iqaluit Northern store’s security guards get tactical makeover",
-    "u": "https://nunatsiaq.com/stories/article/iqaluit-northern-stores-security-guards-get-tactical-makeover/",
-    "o": [
-     [
-      "Nunatsiaq News",
-      1,
-      "https://nunatsiaq.com/stories/article/iqaluit-northern-stores-security-guards-get-tactical-makeover/"
-     ]
-    ]
-   },
-   {
     "h": "Business & Tech 14 B.C. employers recognized for treating their workers best",
     "u": "https://dailyhive.com/vancouver/bc-companies-canada-top-100-employers-2027",
     "o": [
@@ -3514,6 +3460,17 @@
       "Daily Hive",
       1,
       "https://dailyhive.com/vancouver/bc-companies-canada-top-100-employers-2027"
+     ]
+    ]
+   },
+   {
+    "h": "Developer at centre of secret Muskoka land deal with province changes course on waterfront project",
+    "u": "https://www.thestar.com/real-estate/developer-at-centre-of-secret-muskoka-land-deal-with-province-to-change-course-on-waterfront-project/article_f72ae855-3423-4bf0-8a5a-d8bc90a97712.html",
+    "o": [
+     [
+      "Toronto Star",
+      2,
+      "https://www.thestar.com/real-estate/developer-at-centre-of-secret-muskoka-land-deal-with-province-to-change-course-on-waterfront-project/article_f72ae855-3423-4bf0-8a5a-d8bc90a97712.html"
      ]
     ]
    },
@@ -3529,17 +3486,6 @@
     ]
    },
    {
-    "h": "‘There’s probably 10,000 reasons’: MLA Brian Koonoo resigns from cabinet",
-    "u": "https://nunatsiaq.com/stories/article/theres-probably-10000-reasons-mla-brian-koonoo-resigns-from-cabinet/",
-    "o": [
-     [
-      "Nunatsiaq News",
-      2,
-      "https://nunatsiaq.com/stories/article/theres-probably-10000-reasons-mla-brian-koonoo-resigns-from-cabinet/"
-     ]
-    ]
-   },
-   {
     "h": "Urbanized Amazon's latest consolidation into The Post sends Downtown Vancouver office vacancy to its highest level in 22 years",
     "u": "https://dailyhive.com/vancouver/amazon-downtown-vancouver-office-vacancy-impact-q3-2026",
     "o": [
@@ -3547,6 +3493,17 @@
       "Daily Hive",
       2,
       "https://dailyhive.com/vancouver/amazon-downtown-vancouver-office-vacancy-impact-q3-2026"
+     ]
+    ]
+   },
+   {
+    "h": "What ‘Godzilla El Niño’ means for Toronto snowfall and the prospect of a white Christmas",
+    "u": "https://www.thestar.com/news/gta/what-godzilla-el-ni-o-means-for-toronto-snowfall-and-the-prospect-of-a-white-christmas/article_2e8c074c-1c5c-4bc0-9b63-58f114549443.html",
+    "o": [
+     [
+      "Toronto Star",
+      3,
+      "https://www.thestar.com/news/gta/what-godzilla-el-ni-o-means-for-toronto-snowfall-and-the-prospect-of-a-white-christmas/article_2e8c074c-1c5c-4bc0-9b63-58f114549443.html"
      ]
     ]
    },
@@ -3569,17 +3526,6 @@
       "Global News",
       3,
       "https://globalnews.ca/news/12156551/china-electric-vehicle-security-risks-canada/"
-     ]
-    ]
-   },
-   {
-    "h": "NuBrew stops canning, blames regulatory changes",
-    "u": "https://nunatsiaq.com/stories/article/nubrew-stops-canning-blames-regulatory-changes/",
-    "o": [
-     [
-      "Nunatsiaq News",
-      3,
-      "https://nunatsiaq.com/stories/article/nubrew-stops-canning-blames-regulatory-changes/"
      ]
     ]
    }
@@ -3617,6 +3563,16 @@
    "img": "https://yellowknifer.com/wp-content/uploads/sites/55/2026/11/WhatC3AC20RCMP20seizure.jpg?w=708"
   },
   {
+   "o": "CHEK News",
+   "region": "Vancouver Island",
+   "arctic": false,
+   "h": "Ottawa is reviewing Cadet and Junior Canadian programs, including those on Vancouver Island",
+   "u": "https://cheknews.ca/ottawa-is-reviewing-cadet-and-junior-canadian-programs-including-those-on-vancouver-island-1362465/",
+   "t": "Wed 8:16 p.m.",
+   "desc": "The Department of National Defence says its Cadets and Junior Canadian Rangers programs are reviewing their financial plans",
+   "img": "https://cheknews.ca/wp-content/uploads/2026/11/Nanaimo-Navy-League.jpg"
+  },
+  {
    "o": "CKOM / PAnow",
    "region": "Saskatchewan",
    "arctic": false,
@@ -3625,16 +3581,6 @@
    "t": "Wed 8:06 p.m.",
    "desc": "After concerns were voiced about the price tag, a recommendation to proceed with a $400,000 City of Regina traffic, parking, and transit study of the city centre was defeated a second time by council.",
    "img": "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/648/files/2026/11/regina-city-council-nov-18-2026.jpg"
-  },
-  {
-   "o": "CHEK News",
-   "region": "Vancouver Island",
-   "arctic": false,
-   "h": "More seniors are staying in the workforce longer: report",
-   "u": "https://cheknews.ca/more-seniors-are-staying-in-the-workforce-longer-report-1362458/",
-   "t": "Wed 8:02 p.m.",
-   "desc": "A multi-year report from the National Institute of Ageing has found that seniors are continuing to work longer, pushing the average retirement age to a new high in 50 years.",
-   "img": "https://cheknews.ca/wp-content/uploads/2026/11/Copy-of-Blank-background-for-pictures-2026-11-18T180049.492.png"
   }
  ],
  "clocks": [
@@ -4016,6 +3962,18 @@
   {
    "desk": "us",
    "pic": "podium",
+   "t": "Wed 8:11 p.m.",
+   "iso": "2026-11-19T01:11:24+00:00",
+   "title": "Musk on midterms spending: ‘I feel pretty foolish’",
+   "summary": "",
+   "outlet": "The Hill",
+   "n": 1,
+   "url": "https://thehill.com/homenews/campaign/6229195-musk-regrets-gop-spending/",
+   "img": ""
+  },
+  {
+   "desk": "us",
+   "pic": "podium",
    "t": "Wed 8:07 p.m.",
    "iso": "2026-11-19T01:07:51+00:00",
    "title": "Elon Musk claims ‘I’m not Maga’ and says he regrets vast sums to back Republicans",
@@ -4024,18 +3982,6 @@
    "n": 1,
    "url": "https://www.theguardian.com/us-news/2026/nov/18/elon-musk-maga-trump",
    "img": "https://i.guim.co.uk/img/media/0d10d08459c8b09152e92f3ebf55f9712a98d380/2128_149_4811_3852/master/4811.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=4c8d1e64dd80bf5804442c94adb07472"
-  },
-  {
-   "desk": "us",
-   "pic": "podium",
-   "t": "Wed 8:03 p.m.",
-   "iso": "2026-11-19T01:03:34+00:00",
-   "title": "Record-breaking rain lashes California’s Bay area as ‘atmospheric river’ arrives",
-   "summary": "Storm expected to move into southern California, with LA residents warned of potential evacuation orders",
-   "outlet": "The Guardian",
-   "n": 1,
-   "url": "https://www.theguardian.com/us-news/2026/nov/18/california-atmospheric-river-flooding",
-   "img": "https://i.guim.co.uk/img/media/f9f5212fc0956900ba97c6edec783a649f9bb14b/630_0_6300_5042/master/6300.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=0d473755fcf9607a2ec2dc7a2b090824"
   },
   {
    "desk": "business",
@@ -4091,11 +4037,11 @@
    "t": "Wed 6:01 p.m.",
    "iso": "2026-11-18T23:01:23+00:00",
    "title": "Manitoba has added more than 500 doctors, surpassing 2023 promise: health minister",
-   "summary": "Manitoba Health Minister Uzoma Asagwara says the government has added more than 500 doctors as part of an aggressive hiring campaign.",
+   "summary": "Manitoba's premier says he isn't worried about opening a new Winnipeg ER without an intensive care unit because the step-down unit for emergency patients needing regular monitoring will have one nurse caring for every patient.",
    "outlet": "CBC News (CP)",
    "n": 1,
    "url": "https://www.cbc.ca/news/canada/manitoba/500-doctors-hired-9.7427331?cmp=rss",
-   "img": "https://i.cbc.ca/ais/88a27eed-fac3-4afb-b7a0-71217c4dee11,1795042419877/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C263%2C3488%2C1962%29%3BResize%3D620"
+   "img": "https://i.cbc.ca/ais/8e51326a-c2f6-4ce1-aa05-490f0313b536,1795047173813/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1920%2C1080%29%3BResize%3D620"
   },
   {
    "desk": "politics",
@@ -4270,18 +4216,18 @@
    "ca": true,
    "h": [
     "Toronto Star News - Breaking News Stories",
-    "Mayor Olivia Chow opens new term of city council with pledge to ‘stand up’ for Torontonians",
+    "‘Last chance’ meeting with Stellantis looms Friday in hopes of saving Brampton plant for auto production",
     "Toronto police uncover alleged murder plot against rival tow truck operator, arrest 21 in sweeping towing probe",
-    "Another driver left a Toronto coach with a broken neck. Now his wrestling gym is rallying to get him back in the ring",
-    "Mark Carney has surprise meeting with Donald Trump in China, but no progress on U.S.-Canada trade deal",
+    "Mayor Olivia Chow opens new term of city council with pledge to ‘stand up’ for Torontonians",
+    "What ‘Godzilla El Niño’ means for Toronto snowfall and the prospect of a white Christmas",
     "Why Mark Carney is right about Chinese EVs and why Doug Ford must get on board"
    ],
    "u": [
     "",
-    "https://www.thestar.com/news/gta/mayor-olivia-chow-opens-new-term-of-city-council-with-pledge-to-stand-up-for-torontonians/article_6ba0efc1-6855-4f59-9e31-0bd537061e4a.html",
+    "https://www.thestar.com/politics/provincial/last-chance-meeting-with-stellantis-looms-friday-in-hopes-of-saving-brampton-plant-for-auto-production/article_f3ab9b40-bdb3-4d54-bc9c-e5d7bc8918a7.html",
     "https://www.thestar.com/news/gta/toronto-police-to-announce-results-of-organized-crime-tow-truck-industry-probe/article_cc9f7884-9f3e-47e1-85de-7850c4fcd9ad.html",
-    "https://www.thestar.com/news/gta/another-driver-left-a-toronto-coach-with-a-broken-neck-now-his-wrestling-gym-is-rallying-to-get-him-back-in-the-ring/article_020247dc-c1a7-4b96-a613-dfaa5e9fdbdf.html",
-    "https://www.thestar.com/politics/federal/mark-carney-has-surprise-meeting-with-donald-trump-at-apec-summit-in-china/article_1add44b9-7acb-42ea-9d63-47d032bf61fc.html",
+    "https://www.thestar.com/news/gta/mayor-olivia-chow-opens-new-term-of-city-council-with-pledge-to-stand-up-for-torontonians/article_6ba0efc1-6855-4f59-9e31-0bd537061e4a.html",
+    "https://www.thestar.com/news/gta/what-godzilla-el-ni-o-means-for-toronto-snowfall-and-the-prospect-of-a-white-christmas/article_2e8c074c-1c5c-4bc0-9b63-58f114549443.html",
     "https://www.thestar.com/opinion/contributors/why-mark-carney-is-right-about-chinese-evs-and-why-doug-ford-must-get-on-board/article_f29a3ef5-ce48-4576-ad60-854fe24d5986.html"
    ]
   },
@@ -4499,26 +4445,13 @@
  "live": {
   "now": [
    {
-    "net": "LiveNOW from FOX",
-    "r": "us",
-    "title": "Rolling live news coverage, as it happens",
-    "url": "https://www.youtube.com/watch?v=CiursXbr7kk",
-    "img": "https://i.ytimg.com/vi/CiursXbr7kk/hqdefault.jpg",
-    "story": "Live news, as it happens",
-    "watching": "763",
-    "rolling": true
-   }
-  ],
-  "upcoming": [
-   {
     "net": "Associated Press",
     "r": "us",
     "title": "WATCH: Trump, Xi and Putin to meet after APEC leaders pose for a family photo",
     "url": "https://www.youtube.com/watch?v=MdobN8UflIM",
     "img": "https://i.ytimg.com/vi/MdobN8UflIM/hqdefault.jpg",
     "story": "WATCH: Trump, Xi and Putin to meet after APEC leaders pose for a famil",
-    "when": "2026-11-19T01:45:00+00:00",
-    "breaking": false,
+    "watching": "471",
     "reports": [
      {
       "outlet": "The Japan Times",
@@ -4564,6 +4497,18 @@
      }
     ]
    },
+   {
+    "net": "LiveNOW from FOX",
+    "r": "us",
+    "title": "Rolling live news coverage, as it happens",
+    "url": "https://www.youtube.com/watch?v=CiursXbr7kk",
+    "img": "https://i.ytimg.com/vi/CiursXbr7kk/hqdefault.jpg",
+    "story": "Live news, as it happens",
+    "watching": "733",
+    "rolling": true
+   }
+  ],
+  "upcoming": [
    {
     "net": "Associated Press",
     "r": "us",
@@ -4823,6 +4768,20 @@
      "tie": "Canada and the U.S."
     }
    ],
+   "views": [
+    {
+     "outlet": "Canadian Centre for Policy Alternatives",
+     "kind": "Think tank",
+     "title": "Could Canada’s dodgy Ecuador trade deal fail on a technicality?",
+     "url": "https://www.policyalternatives.ca/news-research/could-canadas-dodgy-ecuador-trade-deal-fail-on-a-technicality/"
+    }
+   ]
+  },
+  "auto-c873a348": {
+   "ties": [
+    "china"
+   ],
+   "stories": [],
    "views": [
     {
      "outlet": "Canadian Centre for Policy Alternatives",
