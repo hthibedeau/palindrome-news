@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-20T04:49:00.271064+00:00",
- "checkedLabel": "Thu 11:49 p.m.",
+ "checked": "2026-11-20T04:58:59.798548+00:00",
+ "checkedLabel": "Thu 11:58 p.m.",
  "stories": [
   {
    "key": "top",
@@ -63,6 +63,12 @@
      "t": "Thu 6:14 p.m."
     },
     {
+     "outlet": "Toronto Star",
+     "url": "https://www.thestar.com/politics/college-of-physicians-not-investigating-mp-over-maid-comments/article_11114ff4-2c39-50f7-a0c8-d4a10bb74b69.html",
+     "iso": "2026-11-19T21:07:48+00:00",
+     "t": "Thu 4:07 p.m."
+    },
+    {
      "outlet": "CityNews Vancouver",
      "url": "https://vancouver.citynews.ca/2026/11/19/college-of-physicians-not-investigating-mp-over-maid-comments/",
      "iso": "2026-11-19T21:07:48+00:00",
@@ -90,6 +96,15 @@
   }
  ],
  "wire": [
+  [
+   "Thu 11:52 p.m.",
+   "Latest",
+   "Northwestern State women’s basketball player Stephie Salumu collapses during loss to No. 14 Oklahoma",
+   "The Canadian Press (via Winnipeg Free Press)",
+   "https://www.winnipegfreepress.com/uncategorized/2026/11/19/northwestern-state-womens-basketball-player-stephie-salumu-collapses-during-loss-to-no-14-oklahoma",
+   "2026-11-20T04:52:47+00:00",
+   1
+  ],
   [
    "Thu 11:37 p.m.",
    "World",
@@ -305,15 +320,6 @@
    "https://www.ctvnews.ca/health/article/what-is-ibd-and-how-do-doctors-treat-it/",
    "2026-11-20T03:01:37+00:00",
    2
-  ],
-  [
-   "Thu 10:01 p.m.",
-   "Politics",
-   "Trump trade adviser hurls insults at federal government as Canada-U.S. trade talks heat up",
-   "CTV News",
-   "https://www.ctvnews.ca/politics/article/trump-trade-adviser-hurls-insults-at-federal-government-as-canada-us-trade-talks-heat-up/",
-   "2026-11-20T03:01:09+00:00",
-   2
   ]
  ],
  "blogs": [
@@ -345,10 +351,10 @@
  ],
  "leads": [
   {
-   "score": 16,
+   "score": 17,
    "title": "With Putin in the room, Carney condemns Russia's illegal invasion of Ukraine",
    "url": "https://www.cbc.ca/news/politics/carney-putin-apec-ukraine-9.7428573",
-   "outlets": 9,
+   "outlets": 10,
    "why": [
     "National Newswatch #3",
     "CBC News front #2"
@@ -366,6 +372,17 @@
    "theme": ""
   },
   {
+   "score": 14,
+   "title": "A Changing Political Focus: The Liberals maintain their lead as economic concerns persist and attention to Canada-US relations moderates.",
+   "url": "https://niknanos.substack.com/p/a-changing-political-focus-the-liberals",
+   "outlets": 6,
+   "why": [
+    "National Newswatch #5",
+    "National Newswatch #7"
+   ],
+   "theme": "Canada and the U.S."
+  },
+  {
    "score": 13,
    "title": "Trump administration moves to drop lawsuit challenging Alaska Senate election result",
    "url": "https://www.cbc.ca/news/world/trump-doj-alaska-lawsuit-dismissed-peltola-9.7429320",
@@ -374,17 +391,6 @@
     "CBC News front #6"
    ],
    "theme": ""
-  },
-  {
-   "score": 13,
-   "title": "A Changing Political Focus: The Liberals maintain their lead as economic concerns persist and attention to Canada-US relations moderates.",
-   "url": "https://niknanos.substack.com/p/a-changing-political-focus-the-liberals",
-   "outlets": 5,
-   "why": [
-    "National Newswatch #5",
-    "National Newswatch #7"
-   ],
-   "theme": "Canada and the U.S."
   },
   {
    "score": 10,
@@ -401,14 +407,6 @@
    "score": 8,
    "title": "CUPE education workers in Ontario vote in favour of strike mandate",
    "url": "https://ottawa.citynews.ca/2026/11/19/cupe-education-workers-in-ontario-vote-in-favour-of-strike-mandate/",
-   "outlets": 6,
-   "why": [],
-   "theme": ""
-  },
-  {
-   "score": 8,
-   "title": "Fiona the hippo dies after ingesting knitted hat at Cincinnati zoo",
-   "url": "https://www.theguardian.com/world/2026/nov/19/fiona-hippo-cincinnati-zoo-knit-hat",
    "outlets": 6,
    "why": [],
    "theme": ""
@@ -432,6 +430,14 @@
    "why": [
     "National Newswatch #17"
    ],
+   "theme": ""
+  },
+  {
+   "score": 7,
+   "title": "Fiona the hippo dies after ingesting knitted hat at Cincinnati zoo",
+   "url": "https://www.theguardian.com/world/2026/nov/19/fiona-hippo-cincinnati-zoo-knit-hat",
+   "outlets": 5,
+   "why": [],
    "theme": ""
   },
   {
@@ -652,16 +658,16 @@
    {
     "key": "auto-e45b2fd0",
     "words": [
-     "sooner",
+     "canada-u.s",
+     "private",
      "rather",
-     "trade",
-     "later",
-     "makes",
-     "talks"
+     "sooner",
+     "talks",
+     "trade"
     ],
-    "score": 13,
-    "outlets": 3,
-    "carriers": 4,
+    "score": 14,
+    "outlets": 4,
+    "carriers": 5,
     "tag": "Developing",
     "title": "‘Multiple trade issues’ outstanding in Canada, U.S. trade talks: Sources",
     "url": "https://globalnews.ca/news/12158821/canada-us-trade-talks-outstanding-issues/",
@@ -705,9 +711,17 @@
       "alt": "Canada’s Prime Minister Mark Carney speaks with U.S. President Donald Trump at the G7 working luncheon. THE CANADIAN PRESS/Christopher Katsarov",
       "outlet": "BNN Bloomberg",
       "url": "https://www.bnnbloomberg.ca/tariffs/2026/11/20/canada-makes-case-for-us-trade-deal-sooner-rather-than-later-in-private-meeting/"
+     },
+     {
+      "src": "live/img/auto-e45b2fd0-19813bc2e9.jpg",
+      "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/7/ce/7cee4e31-bf83-4df8-b89c-3e7c0f5c0347/6affa0050be68.image.png?crop=1440%2C756%2C0%2C162&resize=1200%2C630&order=crop%2Cresize",
+      "caption": "From: Trump's midterm defeat hasn't moved Canada-U.S. trade talks, sources say. — via Toronto Star",
+      "alt": "Trump's midterm defeat hasn't moved Canada-U.S. trade talks, sources say",
+      "outlet": "Toronto Star",
+      "url": "https://www.thestar.com/politics/donald-trump-s-midterm-drubbing-hasn-t-sped-up-canada-s-trade-talks-sources-say/article_ddb8650a-a844-434a-8513-7441ceba77d3.html"
      }
     ],
-    "independent": 3,
+    "independent": 4,
     "reports": [
      {
       "t": "Thu 6:55 p.m.",
@@ -741,6 +755,14 @@
       "title": "Canada makes case for U.S. trade deal sooner rather than later in private meeting",
       "url": "https://www.bnnbloomberg.ca/tariffs/2026/11/20/canada-makes-case-for-us-trade-deal-sooner-rather-than-later-in-private-meeting/",
       "desc": "Canada’s top trade negotiators made the case behind closed doors Thursday for the government to seize the opportunity to strike a trade deal with The White House in the near term and not risk the economic pain of waiting out the final two years of the Trump administration."
+     },
+     {
+      "t": "Thu 7:30 p.m.",
+      "iso": "2026-11-20T00:30:00+00:00",
+      "outlet": "Toronto Star",
+      "title": "Trump's midterm defeat hasn't moved Canada-U.S. trade talks, sources say",
+      "url": "https://www.thestar.com/politics/donald-trump-s-midterm-drubbing-hasn-t-sped-up-canada-s-trade-talks-sources-say/article_ddb8650a-a844-434a-8513-7441ceba77d3.html",
+      "desc": "Sources say Canada-U.S. trade talks have not meaningfully changed since the U.S. midterm vote."
      }
     ],
     "sources": [
@@ -805,6 +827,23 @@
        }
       ],
       "copies": []
+     },
+     {
+      "t": "Thu 7:30 p.m.",
+      "primary": false,
+      "outlet": "Toronto Star",
+      "title": "Trump's midterm defeat hasn't moved Canada-U.S. trade talks, sources say",
+      "url": "https://www.thestar.com/politics/donald-trump-s-midterm-drubbing-hasn-t-sped-up-canada-s-trade-talks-sources-say/article_ddb8650a-a844-434a-8513-7441ceba77d3.html",
+      "desc": "Sources say Canada-U.S. trade talks have not meaningfully changed since the U.S. midterm vote.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Toronto Star",
+        "src": "Torstar",
+        "byline": "own staff: reporter"
+       }
+      ],
+      "copies": []
      }
     ],
     "replaces_top": false,
@@ -815,14 +854,15 @@
     "incoherent": false,
     "popular": 5,
     "us_election": false,
-    "fronts": 1,
-    "fronts_ca": 1,
+    "fronts": 2,
+    "fronts_ca": 2,
     "fronts_who": [
-     "CTV News"
+     "CTV News",
+     "Toronto Star"
     ],
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (national desks).",
-    "weight": 42.0,
+    "weight": 44.5,
     "scoop": true,
     "scoop_outlet": "Global News",
     "exclusive": {
@@ -831,11 +871,37 @@
      "title": "‘Multiple trade issues’ outstanding in Canada, U.S. trade talks: Sources",
      "t": "Thu 6:55 p.m.",
      "iso": "2026-11-19T23:55:40+00:00",
-     "confirmed_by": []
+     "confirmed_by": [
+      "Toronto Star"
+     ]
     },
     "was_title": "Trump trade adviser hurls insults at federal government as Canada-U.S. trade talks heat up",
-    "scoop_why": "Exclusive: Global News reported it from its own sources (Thu 6:55 p.m.); credited and led with its report.",
+    "scoop_why": "Exclusive: Global News reported it from its own sources (Thu 6:55 p.m.), since confirmed by Toronto Star; credited and led with its report.",
     "videos": [
+     {
+      "net": "Global News",
+      "url": "https://www.youtube.com/watch?v=2Pz3MUl83mc",
+      "title": "Where does Canada stand in US trade talks?",
+      "img": "https://i.ytimg.com/vi/2Pz3MUl83mc/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=Oi-5ssIs_kE",
+      "title": "What 'not enough' progress in trade talks with the U.S. could mean for Canada | Power & Politics",
+      "img": "https://i.ytimg.com/vi/Oi-5ssIs_kE/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=h-dbsOTaoRU",
+      "title": "Canada seeking interim trade deal with U.S. by year-end",
+      "img": "https://i.ytimg.com/vi/h-dbsOTaoRU/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
      {
       "net": "CTV News",
       "url": "https://www.youtube.com/watch?v=TDxv7aCAlog",
@@ -856,7 +922,7 @@
     "score": 13,
     "outlets": 6,
     "carriers": 8,
-    "tag": "Breaking",
+    "tag": "Developing",
     "title": "Trump administration moves to drop lawsuit challenging Alaska Senate election result",
     "url": "https://www.cbc.ca/news/world/trump-doj-alaska-lawsuit-dismissed-peltola-9.7429320",
     "outlet": "CBC News",
@@ -1111,33 +1177,33 @@
     "events": [],
     "theme": "",
     "ca_angle": {
-     "specific": 1,
+     "specific": 2,
      "official": 0
     },
     "canada": "tie",
     "canus": false,
     "incoherent": false,
     "popular": 0,
-    "us_election": true,
+    "us_election": false,
     "fronts": 2,
     "fronts_ca": 0,
     "fronts_who": [
      "NBC News",
      "ABC News"
     ],
-    "outled_ca": 1,
+    "outled_ca": 2,
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (national desks).",
-    "weight": 41.0
+    "weight": 34.0
    },
    {
     "key": "auto-80d996b3",
     "words": [
      "putin"
     ],
-    "score": 16,
-    "outlets": 5,
-    "carriers": 5,
+    "score": 17,
+    "outlets": 4,
+    "carriers": 4,
     "tag": "Developing",
     "title": "Xi, Putin and Trump walked into a room. But it was Russia's autocrat who came out the biggest winner",
     "url": "https://www.cbc.ca/news/world/xi-putin-trump-9.7428276",
@@ -1200,7 +1266,7 @@
       "url": "https://kyivindependent.com/russia-launches-mass-missile-attack-against-ukraine-after-putin-vows-revenge/"
      }
     ],
-    "independent": 5,
+    "independent": 4,
     "reports": [
      {
       "t": "Thu 9:03 p.m.",
@@ -1233,14 +1299,6 @@
       "title": "Russia launches mass missile attack against Ukraine after Putin vows retaliation",
       "url": "https://kyivindependent.com/russia-launches-mass-missile-attack-against-ukraine-after-putin-vows-revenge/",
       "desc": "Explosions rocked Kyiv at around 1:25 a.m. on Nov. 20, according to Kyiv Independent journalists on the ground. Earlier, monitoring channels reported that Russia had launched Tu-160 strategic bombers."
-     },
-     {
-      "t": "Thu 6:03 p.m.",
-      "iso": "2026-11-19T23:03:20+00:00",
-      "outlet": "ABC News",
-      "title": "At China summit, Trump calls Putin 'my friend' amid Ukraine war",
-      "url": "https://abcnews.com/International/china-summit-trump-calls-putin-friend-amid-ukraine/story?id=138282642",
-      "desc": "The West has been trying to isolate the Russian leader for years."
      }
     ],
     "sources": [
@@ -1311,23 +1369,6 @@
        }
       ],
       "copies": []
-     },
-     {
-      "t": "Thu 6:03 p.m.",
-      "primary": false,
-      "outlet": "ABC News",
-      "title": "At China summit, Trump calls Putin 'my friend' amid Ukraine war",
-      "url": "https://abcnews.com/International/china-summit-trump-calls-putin-friend-amid-ukraine/story?id=138282642",
-      "desc": "The West has been trying to isolate the Russian leader for years.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "ABC News",
-        "src": "ABC News",
-        "byline": "[{\"name\":\"Patrick Reevell\",,\"@type\":\"Person\"}] \"Patrick Reevell\" [{\"name\":\"Patrick Reevell\",,\"@type\":\"Person\"}] \"ABC New"
-       }
-      ],
-      "copies": []
      }
     ],
     "replaces_top": false,
@@ -1350,9 +1391,10 @@
      "BBC News",
      "NPR"
     ],
+    "outled_ca": 2,
     "judgment": "regional",
     "judgment_why": "Regional: affects some people; carried beyond one city.",
-    "weight": 26.5,
+    "weight": 26.0,
     "videos": [
      {
       "net": "PBS NewsHour",
@@ -1395,19 +1437,20 @@
     "url": "https://globalnews.ca/news/12158821/canada-us-trade-talks-outstanding-issues/",
     "rank": 1,
     "live": "",
-    "weight": 42.0,
-    "score": 13,
-    "independent": 3,
+    "weight": 44.5,
+    "score": 14,
+    "independent": 4,
     "most_read": 5,
     "canada": "canadian",
     "theme": "Canada and the U.S.",
     "top": true,
-    "fronts": 1,
+    "fronts": 2,
     "fronts_who": [
-     "CTV News"
+     "CTV News",
+     "Toronto Star"
     ],
     "rule": "Big Canadian exclusive: a major newsroom's interview or scoop, shown as Exclusive with the newsroom credited; ahead of any story from abroad",
-    "carriers": 4,
+    "carriers": 5,
     "judgment": "national",
     "why_judged": "National: affects many people; carried across the country (national desks)."
    },
@@ -1416,7 +1459,7 @@
     "url": "https://www.cbc.ca/news/world/trump-doj-alaska-lawsuit-dismissed-peltola-9.7429320",
     "rank": 2,
     "live": "",
-    "weight": 41.0,
+    "weight": 34.0,
     "score": 13,
     "independent": 6,
     "most_read": 0,
@@ -1428,7 +1471,7 @@
      "NBC News",
      "ABC News"
     ],
-    "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
+    "rule": "From abroad, tied to Canada",
     "carriers": 8,
     "judgment": "national",
     "why_judged": "National: affects many people; carried across the country (national desks)."
@@ -1438,9 +1481,9 @@
     "url": "https://www.cbc.ca/news/world/xi-putin-trump-9.7428276",
     "rank": 3,
     "live": "",
-    "weight": 26.5,
-    "score": 16,
-    "independent": 5,
+    "weight": 26.0,
+    "score": 17,
+    "independent": 4,
     "most_read": 0,
     "canada": "tie",
     "theme": "",
@@ -1453,49 +1496,7 @@
      "NPR"
     ],
     "rule": "From abroad, tied to Canada",
-    "carriers": 5,
-    "judgment": "regional",
-    "why_judged": "Regional: affects some people; carried beyond one city."
-   },
-   {
-    "title": "Army delays detonation in Iowa that could send toxic dust into Illinois",
-    "url": "https://www.cbsnews.com/news/army-lead-azide-detonation-iowa-toxic-dust-plume/",
-    "rank": 4,
-    "live": "",
-    "weight": 18.0,
-    "score": 6,
-    "independent": 4,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "No Canadian tie",
     "carriers": 4,
-    "judgment": "regional",
-    "why_judged": "Regional: affects some people; carried by a few newsrooms."
-   },
-   {
-    "title": "Cincinnati Zoo says Fiona the hippo has died, days after ingesting a visitor’s hat",
-    "url": "https://www.ctvnews.ca/climate-and-environment/article/cincinnati-zoo-hopes-a-little-shake-will-help-fiona-the-hippo-pass-a-swallowed-hat/",
-    "rank": 5,
-    "live": "",
-    "weight": 17.5,
-    "score": 8,
-    "independent": 4,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 3,
-    "fronts_who": [
-     "CTV News",
-     "Global News",
-     "ABC News"
-    ],
-    "rule": "No Canadian tie",
-    "carriers": 5,
     "judgment": "regional",
     "why_judged": "Regional: affects some people; carried beyond one city."
    },
@@ -1506,7 +1507,7 @@
    },
    {
     "title": "Why Canada is embracing AI data centres while the US pushes back",
-    "score": 13,
+    "score": 14,
     "why": "not built: only 1 independent report(s) (1 sites)"
    },
    {
@@ -1525,14 +1526,19 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Regulatory harmonization not a goal of associate membership for Canada: EU ambassador",
-    "score": 7,
-    "why": "not built: only 1 independent report(s) (4 sites)"
-   },
-   {
     "title": "Elon Musk’s Tesla is the biggest beneficiary of Canada’s China EV policy so far",
     "score": 7,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Regulatory harmonization not a goal of associate membership for Canada: EU ambassador",
+    "score": 7,
+    "why": "not built: only 1 independent report(s) (5 sites)"
+   },
+   {
+    "title": "Fiona the hippo dies after ingesting knitted hat at Cincinnati zoo",
+    "score": 7,
+    "why": "not built: only 2 independent report(s) (3 sites)"
    },
    {
     "title": "Texas death row execution takes more than an hour as inmate heard complaining of pain",
@@ -1558,21 +1564,17 @@
     "title": "Sorry, Pierre Poilievre, Tim Hortons is a Liberal hangout now",
     "score": 5,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "The ‘bluenami’ message was sent, Trump’s ignoring it",
+    "score": 5,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
   ],
   "moved": [],
   "top_n": 3,
   "more": [],
-  "passed_over": [
-   {
-    "title": "Cincinnati Zoo says Fiona the hippo has died, days after ingesting a visitor’s hat",
-    "url": "https://www.ctvnews.ca/climate-and-environment/article/cincinnati-zoo-hopes-a-little-shake-will-help-fiona-the-hippo-pass-a-swallowed-hat/"
-   },
-   {
-    "title": "Army delays detonation in Iowa that could send toxic dust into Illinois",
-    "url": "https://www.cbsnews.com/news/army-lead-azide-detonation-iowa-toxic-dust-plume/"
-   }
-  ]
+  "passed_over": []
  },
  "clips": [
   {
@@ -1600,20 +1602,6 @@
    "img": "https://i.ytimg.com/vi/W3y5o-oW7hQ/hqdefault.jpg",
    "up": "2026-11-19",
    "added": "2026-11-20T01:47:28.683597+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "rJcyVzdv_gk",
-   "r": "ca",
-   "o": "CityNews",
-   "t": "Provincial bill brings the future of Calgary’s bike lanes into question",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=rJcyVzdv_gk",
-   "img": "https://i.ytimg.com/vi/rJcyVzdv_gk/hqdefault.jpg",
-   "up": "2026-11-19",
-   "added": "2026-11-20T02:52:46.051366+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1705,7 +1693,7 @@
    "id": "MCRzk1vTeFA",
    "r": "ca",
    "o": "Global News",
-   "t": "GTA 6 expected to generate billions in revenue as gaming industry faces uncertainty",
+   "t": "GTA 6 finally hits shelves, but will it benefit the gaming industry?",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=MCRzk1vTeFA",
@@ -1740,6 +1728,48 @@
    "img": "https://i.ytimg.com/vi/v9P4GUYn3po/hqdefault.jpg",
    "up": "2026-11-19",
    "added": "2026-11-20T04:49:00.271064+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "4vU_Wp_GL7g",
+   "r": "ca",
+   "o": "CBC News",
+   "t": "Former Mountie guilty of assaulting teen granted conditional discharge | Hanomansing Live",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=4vU_Wp_GL7g",
+   "img": "https://i.ytimg.com/vi/4vU_Wp_GL7g/hqdefault.jpg",
+   "up": "2026-11-19",
+   "added": "2026-11-20T04:58:59.798548+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "gHPcXMwqb1U",
+   "r": "ca",
+   "o": "CBC News",
+   "t": "Will the drop in gas prices lead to a drop in the inflation rate? | Hanomansing Live",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=gHPcXMwqb1U",
+   "img": "https://i.ytimg.com/vi/gHPcXMwqb1U/hqdefault.jpg",
+   "up": "2026-11-19",
+   "added": "2026-11-20T04:58:59.798548+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "djqYd5YO7V4",
+   "r": "ca",
+   "o": "CityNews",
+   "t": "Canada's new top 25 most wanted list released",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=djqYd5YO7V4",
+   "img": "https://i.ytimg.com/vi/djqYd5YO7V4/hqdefault.jpg",
+   "up": "2026-11-19",
+   "added": "2026-11-20T04:58:59.798548+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1803,7 +1833,7 @@
    "id": "oYr99qm54MM",
    "r": "us",
    "o": "Bloomberg",
-   "t": "Why San Francisco’s AI Boom is Unlike Anything Else",
+   "t": "How AI is Transforming San Francisco",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=oYr99qm54MM",
@@ -2041,7 +2071,7 @@
    "id": "XznKBqiGbZE",
    "r": "world",
    "o": "Sky News",
-   "t": "Leaders publish four-point agreement after Trump-Putin-Xi talks at APEC summit",
+   "t": "One clear winner: What we learned from Trump, Xi and Putin talks",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=XznKBqiGbZE",
@@ -2069,7 +2099,7 @@
    "id": "fORAqPfewZo",
    "r": "world",
    "o": "Sky News",
-   "t": "How Joanne Young's abusers were brought to justice",
+   "t": "Four men convicted of abusing woman drugged by her ex-Tory councillor husband",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=fORAqPfewZo",
@@ -2125,7 +2155,7 @@
    "id": "vOpPMqxLUHg",
    "r": "world",
    "o": "BBC News",
-   "t": "How South Korea is trying to catch cheats in ‘hardest exam in the world’ | BBC News",
+   "t": "What is South Korea’s 8-hour mega exam, and how do they avoid cheating? | BBC News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=vOpPMqxLUHg",
@@ -2416,6 +2446,13 @@
  ],
  "eds": [
   [
+   "Toronto Star",
+   "Opinion",
+   "As Trump, Putin and Xi meet, Ukraine sends a message",
+   "https://www.thestar.com/opinion/star-columnists/as-trump-putin-and-xi-meet-ukraine-sends-a-message/article_eb5ef934-c7ac-4869-8e25-f18a2671c79e.html",
+   "2026-11-20T00:00:00+00:00"
+  ],
+  [
    "Toronto Sun",
    "Editorial",
    "The environmental case for Canadian oil and gas",
@@ -2477,13 +2514,6 @@
    "Washington voters protected women’s sports. ACLU wants to overturn democracy",
    "https://www.foxnews.com/opinion/washington-voters-protected-womens-sports-aclu-wants-overturn-democracy",
    "2026-11-19T22:53:02+00:00"
-  ],
-  [
-   "The Wall Street Journal (subscribers)",
-   "Opinion",
-   "The Astonishing Wealth of Anthropic",
-   "https://www.wsj.com/opinion/the-astonishing-wealth-of-anthropic-a6bb9746?mod=rss_opinion",
-   "2026-11-20T00:50:00+00:00"
   ]
  ],
  "canus": {
@@ -2501,6 +2531,13 @@
     "outlet": "CTV News",
     "title": "Canada makes case for U.S. trade deal sooner rather than later in private meeting",
     "url": "https://www.ctvnews.ca/world/trumps-tariffs/article/canada-makes-case-for-us-trade-deal-sooner-rather-than-later-in-private-meeting/"
+   },
+   {
+    "t": "Thu 7:30 p.m.",
+    "iso": "2026-11-20T00:30:00+00:00",
+    "outlet": "Toronto Star",
+    "title": "Trump's midterm defeat hasn't moved Canada-U.S. trade talks, sources say",
+    "url": "https://www.thestar.com/politics/donald-trump-s-midterm-drubbing-hasn-t-sped-up-canada-s-trade-talks-sources-say/article_ddb8650a-a844-434a-8513-7441ceba77d3.html"
    },
    {
     "t": "Thu 6:55 p.m.",
@@ -2536,13 +2573,6 @@
     "outlet": "CityNews Halifax",
     "title": "LeBlanc to chair first meeting of Canada-U.S. advisory committee since midterms",
     "url": "https://halifax.citynews.ca/2026/11/19/leblanc-to-chair-first-meeting-of-canada-u-s-advisory-committee-since-midterms/"
-   },
-   {
-    "t": "Wed 2:51 p.m.",
-    "iso": "2026-11-18T19:51:17+00:00",
-    "outlet": "BNN Bloomberg",
-    "title": "Carney striking trade deals at ‘lightning speed’ amid diversification push: expert",
-    "url": "https://www.bnnbloomberg.ca/tariffs/2026/11/18/carney-striking-trade-deals-at-lightning-speed-amid-diversification-push-expert/"
    }
   ],
   "usmedia": [
@@ -2566,10 +2596,9 @@
   "edition": "Thursday night, November 19",
   "lines": [
    "Good evening. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
+   "With Putin in the room, Carney condemns Russia’s illegal invasion of Ukraine, CBC News reports.",
    "Canada makes case for U.S. trade deal sooner rather than later in private meeting, The Canadian Press reports.",
-   "At China summit, Trump calls Putin ‘my friend’ amid Ukraine war, ABC News reports.",
    "The Trump administration on Thursday moved to effectively drop its lawsuit that sought to block the certification of Democrat Mary Peltola’s victory in Alaska’s U.S, The Associated Press reports.",
-   "US Army delays detonation of bomb-making chemicals in Iowa after public safety concerns raised, The Associated Press reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
   ]
  },
@@ -2989,6 +3018,18 @@
  "bigweek": [],
  "desks": [
   {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Thu 9:36 p.m.",
+   "iso": "2026-11-20T02:36:00+00:00",
+   "title": "Japan Tobacco hit by $8.9 billion charge on Russia seizure",
+   "summary": "The Tokyo-based company now expects an operating loss of ¥368 billion instead of a ¥1 trillion profit.",
+   "outlet": "The Japan Times, CBC News, The Japan Times (Reuters), BBC News, ABC News, PBS NewsHour, Fox News, Kyiv Independent, Middle East Eye",
+   "n": 9,
+   "url": "https://www.japantimes.co.jp/business/2026/11/20/japan-tobacco-russia-seizure-charge/",
+   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/19/575057.jpg?v=3.1"
+  },
+  {
    "desk": "us",
    "pic": "podium",
    "t": "Thu 11:02 p.m.",
@@ -2999,18 +3040,6 @@
    "n": 8,
    "url": "https://www.cbc.ca/news/world/cairncross-out-cyber-white-house-9.7429359",
    "img": "https://i.cbc.ca/ais/793b09b2-1c23-4481-9ba2-4c66e5eedf6e,1795141430584/full/max/0/default.jpg?im=Crop%2Crect%3D%28536%2C85%2C4013%2C2257%29%3BResize%3D620"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Thu 9:36 p.m.",
-   "iso": "2026-11-20T02:36:00+00:00",
-   "title": "Japan Tobacco hit by $8.9 billion charge on Russia seizure",
-   "summary": "The Tokyo-based company now expects an operating loss of ¥368 billion instead of a ¥1 trillion profit.",
-   "outlet": "The Japan Times, CBC News, The Japan Times (Reuters), BBC News, PBS NewsHour, Fox News, Kyiv Independent, ABC News",
-   "n": 8,
-   "url": "https://www.japantimes.co.jp/business/2026/11/20/japan-tobacco-russia-seizure-charge/",
-   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/19/575057.jpg?v=3.1"
   },
   {
    "desk": "us",
@@ -3025,30 +3054,6 @@
    "img": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/04/67d7fb9f-e206-4208-a497-def228f6a273/thumbnail/1200x630g2/b91506905916df295ca8ff9c0f109469/sullivan-peltola.jpg"
   },
   {
-   "desk": "us",
-   "pic": "podium",
-   "t": "Thu 11:16 p.m.",
-   "iso": "2026-11-20T04:16:14+00:00",
-   "title": "Army delays detonation in Iowa that could send toxic dust into Illinois",
-   "summary": "The U.S. Army has delayed plans to detonate unstable explosives at a munition plant in Iowa, amid concerns about the risks of a plume of dust containing toxic lead particles that could spread across parts of Iowa and Illinois.",
-   "outlet": "CBS News, Fox News, Times Colonist (AP), The Hill",
-   "n": 4,
-   "url": "https://www.cbsnews.com/news/army-lead-azide-detonation-iowa-toxic-dust-plume/",
-   "img": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/11/19/056d7375-0455-4cb1-989b-311ac3bb78ef/thumbnail/1200x630/4d90fe6067da1407b95de2b1ca8770f4/iowa-army-lead-detonation-26322823699168.jpg"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Thu 10:05 p.m.",
-   "iso": "2026-11-20T03:05:59+00:00",
-   "title": "Fiona the hippo dies after ingesting knitted hat at Cincinnati zoo",
-   "summary": "Zoo staff tried a colonoscopy, vibration plate and other procedures to aid the hippo in passing the hat to no avail",
-   "outlet": "The Guardian, CTV News + CP24 (CP), BBC News, CBS News",
-   "n": 4,
-   "url": "https://www.theguardian.com/world/2026/nov/19/fiona-hippo-cincinnati-zoo-knit-hat",
-   "img": "https://i.guim.co.uk/img/media/136d787561384507373cd58a8fdcc3a64d11d04f/480_0_4228_3382/master/4228.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=38ab90fbe0138e0f1bbe7397eb2c54f6"
-  },
-  {
    "desk": "politics",
    "pic": "parliament",
    "t": "Thu 11:28 p.m.",
@@ -3059,6 +3064,30 @@
    "n": 3,
    "url": "https://vancouversun.com/news/international-space-station-will-be-visible-over-vancouver",
    "img": ""
+  },
+  {
+   "desk": "us",
+   "pic": "podium",
+   "t": "Thu 11:16 p.m.",
+   "iso": "2026-11-20T04:16:14+00:00",
+   "title": "Army delays detonation in Iowa that could send toxic dust into Illinois",
+   "summary": "The U.S. Army has delayed plans to detonate unstable explosives at a munition plant in Iowa, amid concerns about the risks of a plume of dust containing toxic lead particles that could spread across parts of Iowa and Illinois.",
+   "outlet": "CBS News, Fox News, Times Colonist (AP)",
+   "n": 3,
+   "url": "https://www.cbsnews.com/news/army-lead-azide-detonation-iowa-toxic-dust-plume/",
+   "img": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/11/19/056d7375-0455-4cb1-989b-311ac3bb78ef/thumbnail/1200x630/4d90fe6067da1407b95de2b1ca8770f4/iowa-army-lead-detonation-26322823699168.jpg"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Thu 10:05 p.m.",
+   "iso": "2026-11-20T03:05:59+00:00",
+   "title": "Fiona the hippo dies after ingesting knitted hat at Cincinnati zoo",
+   "summary": "Zoo staff tried a colonoscopy, vibration plate and other procedures to aid the hippo in passing the hat to no avail",
+   "outlet": "The Guardian, CTV News + CP24 (CP), BBC News",
+   "n": 3,
+   "url": "https://www.theguardian.com/world/2026/nov/19/fiona-hippo-cincinnati-zoo-knit-hat",
+   "img": "https://i.guim.co.uk/img/media/136d787561384507373cd58a8fdcc3a64d11d04f/480_0_4228_3382/master/4228.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=38ab90fbe0138e0f1bbe7397eb2c54f6"
   },
   {
    "desk": "politics",
@@ -3211,7 +3240,7 @@
    "iso": "2026-11-20T00:19:26+00:00",
    "title": "Liberals’ 2026 budget passes in House of Commons",
    "summary": "Members of Parliament have voted to pass the 2026 federal budget in the House of Commons.",
-   "outlet": "CTV News + Lethbridge Herald + CityNews Halifax + Global News + 2 more (CP), Yukon News",
+   "outlet": "CTV News + Lethbridge Herald + CityNews Halifax + Toronto Star + 3 more (CP), Yukon News",
    "n": 2,
    "url": "https://www.ctvnews.ca/politics/article/liberals-2026-budget-passes-in-house-of-commons/",
    "img": "https://www.ctvnews.ca/resizer/v2/EMF466S4CMCNAFDDTWQHO5756E.jpg?smart=true&auth=3e6f8bb603f12df8b8f1350cff2e30deacd22ec98c8091678cd28df66c6323c0&width=1200&height=630"
@@ -3493,6 +3522,26 @@
    ]
   },
   {
+   "o": "Toronto Star",
+   "ca": true,
+   "h": [
+    "Toronto Star News - Breaking News Stories",
+    "Trump’s midterm defeat hasn’t moved Canada-U.S. trade talks, sources say",
+    "Scarborough’s Paul Ainslie steps in as TTC chair amid CEO probe and deep budget deficit",
+    "Olivia Chow revamps council committees, appoints Mike Layton and Nate Erskine-Smith to key roles",
+    "The Northlander train is back — and scheduled to start in December. Here’s what riders need to know",
+    "Toronto trio guilty of murder again. Jury never heard Crown’s gang motive allegation"
+   ],
+   "u": [
+    "",
+    "https://www.thestar.com/politics/donald-trump-s-midterm-drubbing-hasn-t-sped-up-canada-s-trade-talks-sources-say/article_ddb8650a-a844-434a-8513-7441ceba77d3.html",
+    "https://www.thestar.com/news/gta/scarborough-s-paul-ainslie-steps-in-as-ttc-chair-amid-ceo-probe-and-deep-budget-deficit/article_3d4bfdd4-ea88-4616-8605-116e4aebbcd0.html",
+    "https://www.thestar.com/news/gta/olivia-chow-appoints-mike-layton-and-nate-erskine-smith-to-lead-key-city-council-committees/article_06b24245-4f68-499a-aff9-436834661fec.html",
+    "https://www.thestar.com/politics/provincial/the-northlander-train-is-back-and-scheduled-to-start-in-december-here-s-what-riders-need-to-know/article_a17324d9-5fe7-4ec5-8bd3-1a809240675a.html",
+    "https://www.thestar.com/news/gta/toronto-trio-guilty-of-murder-again-jury-wasn-t-told-they-gunned-down-bystander-at-random-over-gang-conflcit/article_e3048b6c-cdec-4fe6-bb91-6b777df8cf4e.html"
+   ]
+  },
+  {
    "o": "National Post",
    "ca": true,
    "h": [
@@ -3627,7 +3676,7 @@
    "ca": false,
    "h": [
     "DOJ dropping Alaska midterms Senate certification lawsuit, saying case is 'moot'",
-    "World News Tonight with David Muir",
+    "Good Morning America First Look",
     "Army postpones plan to detonate nearly 10,000 pounds of lead azide until Monday",
     "At China summit, Trump calls Putin 'my friend' amid Ukraine war",
     "Cincinnati Zoo mourns Fiona the hippo after fatal incident involving hat",
@@ -3646,7 +3695,7 @@
    "o": "BBC News",
    "ca": false,
    "h": [
-    "UK and EU to agree youth mobility scheme, BBC understands",
+    "UK and EU to agree youth mobility scheme for up to 200,000 people a year, BBC understands",
     "Anthropic becomes one of world's most valuable public companies in stock market debut",
     "GTA 6 breaks records as sales top $2.3bn - industry estimate",
     "Watch: What did Trump, Xi and Putin get out of their historic meeting?",
@@ -3712,7 +3761,7 @@
     "url": "https://www.youtube.com/watch?v=v0-JdZfzsnI",
     "img": "https://i.ytimg.com/vi/v0-JdZfzsnI/hqdefault.jpg",
     "story": "Senate meets for legislative business as Trump returns from Putin-Xi t",
-    "watching": "49"
+    "watching": "55"
    },
    {
     "net": "LiveNOW from FOX",
@@ -3721,7 +3770,7 @@
     "url": "https://www.youtube.com/watch?v=CiursXbr7kk",
     "img": "https://i.ytimg.com/vi/CiursXbr7kk/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "376",
+    "watching": "367",
     "rolling": true
    }
   ],
@@ -3864,39 +3913,27 @@
    "story": "Iran war live: Houthis escalate attacks on Saudi capital",
    "title": "Iran war live: Houthis escalate attacks on Saudi capital",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/19/iran-war-live-houthis-escalate-attacks-on-saudi-capital?traffic_source=rss",
-   "updated": "2026-11-20T04:49:06+00:00",
+   "updated": "2026-11-20T05:00:47+00:00",
    "ended": false,
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6aff72954cc3-1795125909.jpg?resize=1200%2C675"
   }
  ],
- "related": {
-  "auto-80d996b3": {
-   "ties": [
-    "ukraine"
-   ],
-   "stories": [],
-   "views": [
-    {
-     "outlet": "Atlantic Council",
-     "kind": "Think tank",
-     "title": "Putin didn’t get his Yalta, but he’s happy nonetheless",
-     "url": "https://www.atlanticcouncil.org/dispatches/putin-didnt-get-his-yalta-but-hes-happy-nonetheless/"
-    },
-    {
-     "outlet": "Atlantic Council",
-     "kind": "Think tank",
-     "title": "What the Trump-Putin-Xi meeting actually achieved",
-     "url": "https://www.atlanticcouncil.org/content-series/fastthinking/what-the-trump-putin-xi-meeting-actually-achieved/"
-    }
-   ]
-  }
- },
+ "related": {},
  "canangle": {
   "auto-89dcdb50": {
    "story": "DOJ moves to dismiss lawsuit over Alaska Senate race",
    "us": true,
-   "specific": 1,
+   "specific": 2,
    "stories": [
+    {
+     "t": "Thu 7:30 p.m.",
+     "iso": "2026-11-20T00:30:00+00:00",
+     "outlet": "Toronto Star",
+     "title": "Trump's midterm defeat hasn't moved Canada-U.S. trade talks, sources say",
+     "url": "https://www.thestar.com/politics/donald-trump-s-midterm-drubbing-hasn-t-sped-up-canada-s-trade-talks-sources-say/article_ddb8650a-a844-434a-8513-7441ceba77d3.html",
+     "ca": true,
+     "tie": ""
+    },
     {
      "t": "Thu 11:15 a.m.",
      "iso": "2026-11-19T16:15:37+00:00",
@@ -4026,12 +4063,12 @@
      "tie": ""
     },
     {
-     "t": "Wed 4:58 p.m.",
-     "iso": "2026-11-18T21:58:12+00:00",
-     "outlet": "Politico",
-     "title": "Canada PM pitches China on global AI board",
-     "url": "https://www.politico.com/news/2026/11/18/carney-china-global-ai-board-01173981",
-     "ca": false,
+     "t": "Thu 5:00 a.m.",
+     "iso": "2026-11-19T10:00:00+00:00",
+     "outlet": "Toronto Star",
+     "title": "Canada's steel industry says China deal undercuts fight against cheap imports",
+     "url": "https://www.thestar.com/business/carney-s-new-deal-with-xi-jinping-has-jeopardized-progress-to-reduce-chinese-steel-imports-steel-producers/article_c06b94aa-1202-48e3-ae32-b8e503909661.html",
+     "ca": true,
      "tie": ""
     }
    ],
@@ -4066,8 +4103,17 @@
   "https://abcnews.com/Politics/doj-dropping-alaska-midterms-senate-certification-lawsuit-case/story?id=138307517": {
    "story": "DOJ dropping Alaska midterms Senate certification lawsuit, saying case is 'moot'",
    "us": true,
-   "specific": 1,
+   "specific": 2,
    "stories": [
+    {
+     "t": "Thu 7:30 p.m.",
+     "iso": "2026-11-20T00:30:00+00:00",
+     "outlet": "Toronto Star",
+     "title": "Trump's midterm defeat hasn't moved Canada-U.S. trade talks, sources say",
+     "url": "https://www.thestar.com/politics/donald-trump-s-midterm-drubbing-hasn-t-sped-up-canada-s-trade-talks-sources-say/article_ddb8650a-a844-434a-8513-7441ceba77d3.html",
+     "ca": true,
+     "tie": ""
+    },
     {
      "t": "Thu 11:15 a.m.",
      "iso": "2026-11-19T16:15:37+00:00",
@@ -4084,8 +4130,17 @@
   "https://www.nbcnews.com/politics/2026-election/doj-seeks-dismissal-lawsuit-alaska-senate-dan-sullivan-mary-peltola-rcna610343": {
    "story": "Justice Department seeks dismissal of its lawsuit in the Alaska Senate race",
    "us": true,
-   "specific": 1,
+   "specific": 2,
    "stories": [
+    {
+     "t": "Thu 7:30 p.m.",
+     "iso": "2026-11-20T00:30:00+00:00",
+     "outlet": "Toronto Star",
+     "title": "Trump's midterm defeat hasn't moved Canada-U.S. trade talks, sources say",
+     "url": "https://www.thestar.com/politics/donald-trump-s-midterm-drubbing-hasn-t-sped-up-canada-s-trade-talks-sources-say/article_ddb8650a-a844-434a-8513-7441ceba77d3.html",
+     "ca": true,
+     "tie": ""
+    },
     {
      "t": "Thu 11:15 a.m.",
      "iso": "2026-11-19T16:15:37+00:00",
