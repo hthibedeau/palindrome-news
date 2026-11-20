@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-20T09:51:26.472871+00:00",
- "checkedLabel": "Fri 4:51 a.m.",
+ "checked": "2026-11-20T10:01:26.125403+00:00",
+ "checkedLabel": "Fri 5:01 a.m.",
  "stories": [
   {
    "key": "top",
@@ -89,6 +89,24 @@
  ],
  "wire": [
   [
+   "Fri 4:53 a.m.",
+   "World",
+   "Russian attacks on Kyiv kill 3, cripple bridges and cut power",
+   "CBC News",
+   "https://www.cbc.ca/news/world/russian-attacks-on-kyiv-9.7429460",
+   "2026-11-20T09:53:33.871000+00:00",
+   5
+  ],
+  [
+   "Fri 4:50 a.m.",
+   "World",
+   "EU says Brexit reset deal with UK will not come into force without agreement on tuition fees – live",
+   "The Guardian",
+   "https://www.theguardian.com/world/live/2026/nov/20/uk-eu-european-union-brexit-deal-andy-burnham-latest-news-updates",
+   "2026-11-20T09:50:17+00:00",
+   3
+  ],
+  [
    "Fri 4:48 a.m.",
    "World",
    "Italy strike draws workers, students into nationwide protests over wages and living costs",
@@ -96,24 +114,6 @@
    "https://www.winnipegfreepress.com/world/2026/11/20/italy-strike-draws-workers-students-into-nationwide-protests-over-wages-and-living-costs",
    "2026-11-20T09:48:25+00:00",
    1
-  ],
-  [
-   "Fri 4:36 a.m.",
-   "World",
-   "UK and EU close in on Brexit reset deal but tuition fees remain a stumbling block – live",
-   "The Guardian",
-   "https://www.theguardian.com/world/live/2026/nov/20/uk-eu-european-union-brexit-deal-andy-burnham-latest-news-updates",
-   "2026-11-20T09:36:53+00:00",
-   3
-  ],
-  [
-   "Fri 4:31 a.m.",
-   "World",
-   "Three Kyiv bridges hit during major Russian missile attack",
-   "BBC News",
-   "https://www.bbc.co.uk/news/articles/c6x29gn4pdn9o?at_medium=RSS&at_campaign=rss",
-   "2026-11-20T09:31:24+00:00",
-   4
   ],
   [
    "Fri 4:30 a.m.",
@@ -131,7 +131,7 @@
    "The Canadian Press (via Winnipeg Free Press)",
    "https://www.winnipegfreepress.com/canada/2026/11/20/in-the-news-today-budget-passes-ontario-liberals-vote-o-canada-bill-rcmp-museum",
    "2026-11-20T09:22:45+00:00",
-   3
+   5
   ],
   [
    "Fri 4:18 a.m.",
@@ -170,6 +170,15 @@
    1
   ],
   [
+   "Fri 4:01 a.m.",
+   "Canada",
+   "Historic guns locked away as RCMP centre set to become next national museum",
+   "Narcity",
+   "https://www.narcity.com/empty-gun-cases-at-future-national-rcmp-museum",
+   "2026-11-20T09:01:06+00:00",
+   5
+  ],
+  [
    "Fri 4:00 a.m.",
    "World",
    "British Library to outsource security and ‘repurpose’ reading rooms as business spaces",
@@ -190,20 +199,11 @@
   [
    "Fri 4:00 a.m.",
    "Canada",
-   "Historic guns locked away as RCMP centre set to become next national museum",
-   "Toronto Star",
-   "https://www.thestar.com/news/canada/saskatchewan/historic-guns-locked-away-as-rcmp-centre-set-to-become-next-national-museum/article_5b99303c-5ce0-5cd9-abe2-abe86049bc04.html",
-   "2026-11-20T09:00:12+00:00",
-   6
-  ],
-  [
-   "Fri 4:00 a.m.",
-   "Canada",
    "Who are the four candidates vying to lead the Ontario Liberals?",
-   "Toronto Star",
-   "https://www.thestar.com/news/ontario/who-are-the-four-candidates-vying-to-lead-the-ontario-liberals/article_13b10c39-15f6-56aa-ac1c-5b1c1c027e76.html",
+   "The Canadian Press (via Winnipeg Free Press)",
+   "https://www.winnipegfreepress.com/business/2026/11/20/who-are-the-four-candidates-vying-to-lead-the-ontario-liberals",
    "2026-11-20T09:00:11+00:00",
-   5
+   4
   ],
   [
    "Fri 4:00 a.m.",
@@ -343,12 +343,13 @@
  ],
  "leads": [
   {
-   "score": 21,
+   "score": 24,
    "title": "With Putin in the room, Carney condemns Russia's illegal invasion of Ukraine",
    "url": "https://www.cbc.ca/news/politics/carney-putin-apec-ukraine-9.7428573",
    "outlets": 17,
    "why": [
-    "National Newswatch #3"
+    "National Newswatch #3",
+    "CBC News front #3"
    ],
    "theme": ""
   },
@@ -361,31 +362,31 @@
    "theme": ""
   },
   {
-   "score": 14,
+   "score": 13,
    "title": "Myanmar dismisses UN court ruling finding country responsible of Rohingya genocide as 'unfair'",
    "url": "https://www.timescolonist.com/world-news/myanmar-dismisses-un-court-ruling-finding-country-responsible-of-rohingya-genocide-as-unfair-13040247",
-   "outlets": 12,
+   "outlets": 11,
    "why": [],
    "theme": ""
   },
   {
    "score": 13,
-   "title": "Canadian negotiators dispel idea Canada can just play for time in trade talks with Trump",
-   "url": "https://www.ctvnews.ca/world/trumps-tariffs/article/canadian-negotiators-dispel-idea-canada-can-just-play-for-time-in-trade-talks-with-trump/",
+   "title": "In the news today: budget passes, Ontario Liberals vote, O Canada bill, RCMP museum",
+   "url": "https://www.timescolonist.com/national-news/in-the-news-today-budget-passes-ontario-liberals-vote-o-canada-bill-rcmp-museum-13040284",
+   "outlets": 11,
+   "why": [],
+   "theme": "Federal budget"
+  },
+  {
+   "score": 13,
+   "title": "A Changing Political Focus: The Liberals maintain their lead as economic concerns persist and attention to Canada-US relations moderates.",
+   "url": "https://niknanos.substack.com/p/a-changing-political-focus-the-liberals",
    "outlets": 7,
    "why": [
     "National Newswatch #5",
     "National Newswatch #7"
    ],
    "theme": "Canada and the U.S."
-  },
-  {
-   "score": 12,
-   "title": "OpenAI asks judge to throw out Tumbler Ridge shooting lawsuits and keep chat records sealed",
-   "url": "https://thelogic.co/news/tumbler-ridge-shooting-openai-lawsuit-first-amendment/",
-   "outlets": 12,
-   "why": [],
-   "theme": ""
   },
   {
    "score": 11,
@@ -397,36 +398,34 @@
   },
   {
    "score": 11,
+   "title": "OpenAI asks judge to throw out Tumbler Ridge shooting lawsuits and keep chat records sealed",
+   "url": "https://thelogic.co/news/tumbler-ridge-shooting-openai-lawsuit-first-amendment/",
+   "outlets": 11,
+   "why": [],
+   "theme": ""
+  },
+  {
+   "score": 10,
    "title": "Beloved hippo Fiona dies days after swallowing hat",
    "url": "https://www.cbsnews.com/news/fiona-the-hippo-dies-cincinnati-zoo/",
-   "outlets": 11,
+   "outlets": 10,
    "why": [],
    "theme": ""
   },
   {
-   "score": 11,
+   "score": 10,
    "title": "DOJ moves to dismiss lawsuit over Alaska Senate race",
    "url": "https://www.cbsnews.com/news/trump-administration-dismiss-alaska-senate-lawsuit/",
-   "outlets": 11,
+   "outlets": 10,
    "why": [],
    "theme": ""
   },
   {
-   "score": 11,
-   "title": "In the news today: budget passes, Ontario Liberals vote, O Canada bill, RCMP museum",
-   "url": "https://www.winnipegfreepress.com/canada/2026/11/20/in-the-news-today-budget-passes-ontario-liberals-vote-o-canada-bill-rcmp-museum",
-   "outlets": 9,
+   "score": 9,
+   "title": "Video shows isolated Awá Indigenous people make contact with government team in Brazil",
+   "url": "https://www.euronews.com/video/2026/11/20/video-shows-isolated-awa-indigenous-people-make-contact-with-government-team-in-brazil",
+   "outlets": 7,
    "why": [],
-   "theme": "Federal budget"
-  },
-  {
-   "score": 8,
-   "title": "Elon Musk’s Tesla is the biggest beneficiary of Canada’s China EV policy so far",
-   "url": "https://www.ctvnews.ca/business/autos/article/elon-musks-tesla-is-the-biggest-benefactor-of-canadas-china-ev-policy-so-far/",
-   "outlets": 6,
-   "why": [
-    "National Newswatch #17"
-   ],
    "theme": ""
   }
  ],
@@ -517,14 +516,14 @@
     "key": "auto-7fd31435",
     "words": [
      "canada-u.s",
-     "private",
-     "sooner",
+     "meeting",
+     "rather",
+     "makes",
      "trade",
-     "talks",
-     "later"
+     "talks"
     ],
     "score": 13,
-    "outlets": 5,
+    "outlets": 4,
     "carriers": 6,
     "tag": "Developing",
     "title": "‘Multiple trade issues’ outstanding in Canada, U.S. trade talks: Sources",
@@ -584,7 +583,7 @@
       "url": "https://www.thestar.com/politics/donald-trump-s-midterm-drubbing-hasn-t-sped-up-canada-s-trade-talks-sources-say/article_ddb8650a-a844-434a-8513-7441ceba77d3.html"
      }
     ],
-    "independent": 5,
+    "independent": 4,
     "reports": [
      {
       "t": "Thu 6:55 p.m.",
@@ -656,18 +655,23 @@
       "exclusive": true
      },
      {
-      "t": "Thu 10:01 p.m.",
+      "t": "Thu 10:00 p.m.",
       "primary": false,
-      "outlet": "CTV News",
-      "title": "Trump trade adviser hurls insults at federal government as Canada-U.S. trade talks heat up",
-      "url": "https://www.ctvnews.ca/politics/article/trump-trade-adviser-hurls-insults-at-federal-government-as-canada-us-trade-talks-heat-up/",
-      "desc": "A senior adviser to U.S. President Donald Trump is once again hurling insults and threats at the federal government as trade negotiations between Canada and the U.S. continue.",
+      "outlet": "BNN Bloomberg",
+      "title": "Canada makes case for U.S. trade deal sooner rather than later in private meeting",
+      "url": "https://www.bnnbloomberg.ca/tariffs/2026/11/20/canada-makes-case-for-us-trade-deal-sooner-rather-than-later-in-private-meeting/",
+      "desc": "Canada’s top trade negotiators made the case behind closed doors Thursday for the government to seize the opportunity to strike a trade deal with The White House in the near term and not risk the economic pain of waiting out the final two years of the Trump administration.",
       "wire": "The Canadian Press",
       "by": [
        {
+        "outlet": "BNN Bloomberg",
+        "src": "The Canadian Press",
+        "byline": "[ { \"@type\": \"Person\", \"name\": \"Vassy Kapelos\", }, { \"@type\": \"Person\", \"name\": \"Stephanie Ha\", }, { \"@type\": \"Person\", "
+       },
+       {
         "outlet": "CTV News",
         "src": "The Canadian Press",
-        "byline": "es\" \"Bryann Aguilar\" \"Melanie Kentner\" \"The Canadian Press\" \"Megan Yamoah\" \"Sc"
+        "byline": "McMackon\" \"Ted Raymond\" \"Dylan Dyson\" \"The Canadian Press\" \"Swidda Rassy\" \"Ha"
        },
        {
         "outlet": "CP24",
@@ -677,27 +681,14 @@
       ],
       "copies": [
        {
+        "outlet": "CTV News",
+        "url": "https://www.ctvnews.ca/politics/article/trump-trade-adviser-hurls-insults-at-federal-government-as-canada-us-trade-talks-heat-up/"
+       },
+       {
         "outlet": "CP24",
         "url": "https://www.cp24.com/politics/2026/11/20/trump-trade-adviser-hurls-insults-at-federal-government-as-canada-us-trade-talks-heat-up/"
        }
       ]
-     },
-     {
-      "t": "Thu 10:00 p.m.",
-      "primary": false,
-      "outlet": "BNN Bloomberg",
-      "title": "Canada makes case for U.S. trade deal sooner rather than later in private meeting",
-      "url": "https://www.bnnbloomberg.ca/tariffs/2026/11/20/canada-makes-case-for-us-trade-deal-sooner-rather-than-later-in-private-meeting/",
-      "desc": "Canada’s top trade negotiators made the case behind closed doors Thursday for the government to seize the opportunity to strike a trade deal with The White House in the near term and not risk the economic pain of waiting out the final two years of the Trump administration.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "BNN Bloomberg",
-        "src": "Bell",
-        "byline": "[ { \"@type\": \"Person\", \"name\": \"Vassy Kapelos\", }, { \"@type\": \"Person\", \"name\": \"Stephanie Ha\", }, { \"@type\": \"Person\", "
-       }
-      ],
-      "copies": []
      },
      {
       "t": "Thu 7:30 p.m.",
@@ -752,7 +743,7 @@
     "leads_ca": true,
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (national desks).",
-    "weight": 38.0,
+    "weight": 37.0,
     "scoop": true,
     "scoop_outlet": "Global News",
     "exclusive": {
@@ -785,14 +776,6 @@
       "up": ""
      },
      {
-      "net": "CTV News",
-      "url": "https://www.youtube.com/watch?v=TDxv7aCAlog",
-      "title": "Canada makes case for U.S. trade deal in private meeting | CTV National News for Nov.19, 2026",
-      "img": "https://i.ytimg.com/vi/TDxv7aCAlog/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
       "net": "CPAC",
       "url": "https://www.youtube.com/watch?v=Slw_z-Pu8OM",
       "title": "MPs comment on concerns over federal Telesat contract, Canada-U.S. trade talks – November 19, 2026",
@@ -807,21 +790,21 @@
     "words": [
      "liberals",
      "commons",
-     "budget",
+     "museum",
      "passes",
-     "house",
+     "budget",
      "rcmp"
     ],
-    "score": 11,
+    "score": 13,
     "outlets": 2,
-    "carriers": 9,
+    "carriers": 11,
     "tag": "Developing",
     "title": "In the news today: budget passes, Ontario Liberals vote, O Canada bill, RCMP museum",
-    "url": "https://www.winnipegfreepress.com/canada/2026/11/20/in-the-news-today-budget-passes-ontario-liberals-vote-o-canada-bill-rcmp-museum",
-    "outlet": "The Canadian Press (via Winnipeg Free Press)",
+    "url": "https://www.timescolonist.com/national-news/in-the-news-today-budget-passes-ontario-liberals-vote-o-canada-bill-rcmp-museum-13040284",
+    "outlet": "Times Colonist",
     "t": "Fri 4:22 a.m.",
     "iso": "2026-11-20T09:22:45+00:00",
-    "summary": "Here is a roundup of stories from The Canadian Press designed to bring you up to speed …",
+    "summary": "Here is a roundup of stories from The Canadian Press designed to bring you up to speed … Liberals' 2026 budget passes in House of Commons Members of Parliament voted Thursday to pass the 2026 federal budget in the House of Commons, 162 to 151.",
     "first": {
      "outlet": "Yukon News",
      "url": "https://yukon-news.com/2026/11/19/adjustments-coming-to-canadian-cadet-junior-ranger-programs-amid-budget-constraints/",
@@ -831,20 +814,37 @@
     },
     "newest": "2026-11-20T09:22:45+00:00",
     "photo": {
-     "src": "live/img/auto-92ab7d24-ff722e977f.jpg",
-     "orig": "https://www.ctvnews.ca/resizer/v2/EMF466S4CMCNAFDDTWQHO5756E.jpg?smart=true&auth=3e6f8bb603f12df8b8f1350cff2e30deacd22ec98c8091678cd28df66c6323c0&width=1200&height=630",
-     "caption": "Prime Minister Mark Carney and Finance and National Revenue Minister Francois-Philippe Champagne are seen on Parliament Hill before the federal budget in Ottawa, Thursday, Nov. 5, 2026. THE CANADIAN PRESS/Adrian Wyld. — via CTV News",
-     "alt": "Prime Minister Mark Carney and Finance and National Revenue Minister Francois-Philippe Champagne are seen on Parliament Hill before the federal budget in Ottawa",
-     "outlet": "CTV News",
-     "url": "https://www.ctvnews.ca/politics/article/liberals-2026-budget-passes-in-house-of-commons/",
-     "since": "2026-11-20T09:54:11.132860+00:00"
+     "src": "live/img/auto-92ab7d24-79ac6ca11e.jpg",
+     "orig": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/236d9110c1ae4375d8240f529bd1360f733c5c2080d4095d917299b6ecff2a10.jpg;w=1200;h=800;mode=crop",
+     "caption": "From: In the news today: budget passes, Ontario Liberals vote, O Canada bill, RCMP museum. — via Times Colonist",
+     "alt": "In the news today: budget passes, Ontario Liberals vote, O Canada bill, RCMP museum",
+     "outlet": "Times Colonist",
+     "url": "https://www.timescolonist.com/national-news/in-the-news-today-budget-passes-ontario-liberals-vote-o-canada-bill-rcmp-museum-13040284",
+     "since": "2026-11-20T10:03:29.205744+00:00"
     },
     "photo_seen": [
      "https://www.ctvnews.ca/resizer/v2/EMF466S4CMCNAFDDTWQHO5756E.jpg?smart=true&auth=3e6f8bb603f12df8b8f1350cff2e30deacd22ec98c8091678cd28df66c6323c0&width=1200&height=630"
     ],
-    "photos": [],
+    "photos": [
+     {
+      "src": "live/img/auto-92ab7d24-79ac6ca11e.jpg",
+      "orig": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/236d9110c1ae4375d8240f529bd1360f733c5c2080d4095d917299b6ecff2a10.jpg;w=1200;h=800;mode=crop",
+      "caption": "From: In the news today: budget passes, Ontario Liberals vote, O Canada bill, RCMP museum. — via Times Colonist",
+      "alt": "In the news today: budget passes, Ontario Liberals vote, O Canada bill, RCMP museum",
+      "outlet": "Times Colonist",
+      "url": "https://www.timescolonist.com/national-news/in-the-news-today-budget-passes-ontario-liberals-vote-o-canada-bill-rcmp-museum-13040284"
+     }
+    ],
     "independent": 2,
     "reports": [
+     {
+      "t": "Fri 4:22 a.m.",
+      "iso": "2026-11-20T09:22:45+00:00",
+      "outlet": "Times Colonist",
+      "title": "In the news today: budget passes, Ontario Liberals vote, O Canada bill, RCMP museum",
+      "url": "https://www.timescolonist.com/national-news/in-the-news-today-budget-passes-ontario-liberals-vote-o-canada-bill-rcmp-museum-13040284",
+      "desc": "Here is a roundup of stories from The Canadian Press designed to bring you up to speed … Liberals' 2026 budget passes in House of Commons Members of Parliament voted Thursday to pass the 2026 federal budget in the House of Commons, 162 to 151."
+     },
      {
       "t": "Fri 4:22 a.m.",
       "iso": "2026-11-20T09:22:45+00:00",
@@ -859,7 +859,7 @@
       "outlet": "Medicine Hat News",
       "title": "In the news today: budget passes, Ontario Liberals vote, O Canada bill, RCMP museum",
       "url": "https://medicinehatnews.com/news/national-news/2026/11/20/in-the-news-today-budget-passes-ontario-liberals-vote-o-canada-bill-rcmp-museum/",
-      "desc": "Here is a roundup of stories from The Canadian Press designed to bring you up to speed … Liberals’ 2026 budget passes in House of Commons Members of Parliament voted Thursday to pass the 2026 federal budget in the House of Commons, 162 to 151. The budget, tabled Nov. 5, outlined billions of dollars…"
+      "desc": ""
      },
      {
       "t": "Fri 4:22 a.m.",
@@ -867,6 +867,14 @@
       "outlet": "Lethbridge Herald",
       "title": "In the news today: budget passes, Ontario Liberals vote, O Canada bill, RCMP museum",
       "url": "https://lethbridgeherald.com/news/national-news/2026/11/20/in-the-news-today-budget-passes-ontario-liberals-vote-o-canada-bill-rcmp-museum/",
+      "desc": ""
+     },
+     {
+      "t": "Fri 4:22 a.m.",
+      "iso": "2026-11-20T09:22:45+00:00",
+      "outlet": "CKOM / PAnow",
+      "title": "In the news today: budget passes, Ontario Liberals vote, O Canada bill, RCMP museum",
+      "url": "https://www.ckom.com/2026/11/20/in-the-news-today-budget-passes-ontario-liberals-vote-o-canada-bill-rcmp-museum/",
       "desc": ""
      },
      {
@@ -899,7 +907,7 @@
       "outlet": "Global News",
       "title": "Liberals’ 2026 budget passes in House of Commons",
       "url": "https://globalnews.ca/news/12158925/budget-2026-passes/",
-      "desc": "The budget, tabled Nov. 5, outlined billions of dollars in new borrowing and tax measures largely aimed at stimulating infrastructure construction and other capital projects."
+      "desc": ""
      },
      {
       "t": "Thu 6:05 p.m.",
@@ -907,7 +915,7 @@
       "outlet": "Toronto Star",
       "title": "Liberals' 2026 budget passes in House of Commons",
       "url": "https://www.thestar.com/politics/federal/liberals-expected-to-face-house-of-commons-vote-on-budget-2026-today/article_21935b2f-5ff9-5445-b81d-39920771cc26.html",
-      "desc": "OTTAWA - Members of Parliament have voted to pass the 2026 federal budget in the House of Commons."
+      "desc": ""
      },
      {
       "t": "Thu 4:52 p.m.",
@@ -954,6 +962,11 @@
         "byline": "\"@type\": \"Person\",\n      \"name\": \"The Canadian Press\",\n      \n    }\n  ]"
        },
        {
+        "outlet": "Times Colonist",
+        "src": "The Canadian Press",
+        "byline": "\"Canadian Press\" \r\n             \r\nC"
+       },
+       {
         "outlet": "The Canadian Press (via Winnipeg Free Press)",
         "src": "The Canadian Press",
         "byline": "{\n\t\t\t\t\"@type\": \"Person\",\n\t\t\t\t\"name\": \"The Canadian Press\"\n\t\t\t} [{\"@type\":\"Pe"
@@ -967,6 +980,11 @@
         "outlet": "Lethbridge Herald",
         "src": "The Canadian Press",
         "byline": "{\"name\":\"Canadian Press\",\"@id\":\"https:\\/\\/l"
+       },
+       {
+        "outlet": "CKOM / PAnow",
+        "src": "The Canadian Press",
+        "byline": "[{\"@type\":\"Person\",\"name\":\"The Canadian Press\"}] \"The Canadian Pr"
        }
       ],
       "copies": [
@@ -987,6 +1005,10 @@
         "url": "https://www.bnnbloomberg.ca/business/politics/2026/11/19/liberals-2026-budget-passes-in-house-of-commons/"
        },
        {
+        "outlet": "Times Colonist",
+        "url": "https://www.timescolonist.com/national-news/in-the-news-today-budget-passes-ontario-liberals-vote-o-canada-bill-rcmp-museum-13040284"
+       },
+       {
         "outlet": "The Canadian Press (via Winnipeg Free Press)",
         "url": "https://www.winnipegfreepress.com/canada/2026/11/20/in-the-news-today-budget-passes-ontario-liberals-vote-o-canada-bill-rcmp-museum"
        },
@@ -997,6 +1019,10 @@
        {
         "outlet": "Lethbridge Herald",
         "url": "https://lethbridgeherald.com/news/national-news/2026/11/20/in-the-news-today-budget-passes-ontario-liberals-vote-o-canada-bill-rcmp-museum/"
+       },
+       {
+        "outlet": "CKOM / PAnow",
+        "url": "https://www.ckom.com/2026/11/20/in-the-news-today-budget-passes-ontario-liberals-vote-o-canada-bill-rcmp-museum/"
        }
       ]
      },
@@ -1024,7 +1050,7 @@
     "canada": "canadian",
     "canus": false,
     "incoherent": false,
-    "popular": 3,
+    "popular": 0,
     "us_election": false,
     "fronts": 0,
     "fronts_ca": 0,
@@ -1042,6 +1068,347 @@
       "up": ""
      }
     ]
+   },
+   {
+    "key": "auto-8871d02c",
+    "words": [
+     "putin"
+    ],
+    "score": 24,
+    "outlets": 9,
+    "carriers": 9,
+    "tag": "Developing",
+    "title": "Trump-Putin-Xi meeting updates: Schumer calls trip a 'historical embarrassment'",
+    "url": "https://abcnews.com/Politics/live-updates/trump-asia-trip-2026/?id=138187702",
+    "outlet": "ABC News",
+    "t": "Fri 12:54 a.m.",
+    "iso": "2026-11-20T05:54:00+00:00",
+    "summary": "Trump participated on Thursday in the first-ever trilateral meeting with Putin and Xi.",
+    "first": {
+     "outlet": "CBS News",
+     "url": "https://www.cbsnews.com/news/trump-xi-putin-china-apec-summit/",
+     "t": "Thu 12:18 p.m.",
+     "title": "Trump meeting with Putin and Xi in China appears to achieve little",
+     "iso": "2026-11-19T17:18:00+00:00"
+    },
+    "newest": "2026-11-20T08:35:21+00:00",
+    "photo": {
+     "src": "live/img/auto-8871d02c-064dfdc6c6.jpg",
+     "orig": "https://i.abcnewsfe.com/a/dc48fb0c-1ccf-4583-b742-a144e478b0d0/donald-trump-1-gty-gmh-261119_1795090525810_hpMain_16x9.jpg?w=1600",
+     "caption": "From: Trump-Putin-Xi meeting updates: Schumer calls trip a 'historical embarrassment'. — via ABC News",
+     "alt": "Trump-Putin-Xi meeting updates: Schumer calls trip a 'historical embarrassment'",
+     "outlet": "ABC News",
+     "url": "https://abcnews.com/Politics/live-updates/trump-asia-trip-2026/?id=138187702",
+     "since": "2026-11-20T10:03:25.900426+00:00"
+    },
+    "photo_seen": [
+     "https://i.abcnewsfe.com/a/dc48fb0c-1ccf-4583-b742-a144e478b0d0/donald-trump-1-gty-gmh-261119_1795090525810_hpMain_16x9.jpg?w=1600"
+    ],
+    "photos": [
+     {
+      "src": "live/img/auto-8871d02c-064dfdc6c6.jpg",
+      "orig": "https://i.abcnewsfe.com/a/dc48fb0c-1ccf-4583-b742-a144e478b0d0/donald-trump-1-gty-gmh-261119_1795090525810_hpMain_16x9.jpg?w=1600",
+      "caption": "From: Trump-Putin-Xi meeting updates: Schumer calls trip a 'historical embarrassment'. — via ABC News",
+      "alt": "Trump-Putin-Xi meeting updates: Schumer calls trip a 'historical embarrassment'",
+      "outlet": "ABC News",
+      "url": "https://abcnews.com/Politics/live-updates/trump-asia-trip-2026/?id=138187702"
+     },
+     {
+      "src": "live/img/auto-8871d02c-4e75baa423.jpg",
+      "orig": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/56c4/live/c36d8970-e448-11f1-a094-5fdc692f3e33.jpg",
+      "caption": "Putin Xi and Trump. — via BBC News",
+      "alt": "Putin Xi and Trump",
+      "outlet": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c623j4ln97x7o?at_medium=RSS&at_campaign=rss"
+     }
+    ],
+    "independent": 9,
+    "reports": [
+     {
+      "t": "Fri 3:35 a.m.",
+      "iso": "2026-11-20T08:35:21+00:00",
+      "outlet": "Euronews",
+      "title": "Meeting between Trump, Putin and Xi was 'a photo-op', says Trump former advisor",
+      "url": "https://www.euronews.com/video/2026/11/20/meeting-between-trump-putin-and-xi-was-a-photo-op-says-trump-former-advisor",
+      "desc": ""
+     },
+     {
+      "t": "Fri 12:54 a.m.",
+      "iso": "2026-11-20T05:54:00+00:00",
+      "outlet": "ABC News",
+      "title": "Trump-Putin-Xi meeting updates: Schumer calls trip a 'historical embarrassment'",
+      "url": "https://abcnews.com/Politics/live-updates/trump-asia-trip-2026/?id=138187702",
+      "desc": "Trump participated on Thursday in the first-ever trilateral meeting with Putin and Xi."
+     },
+     {
+      "t": "Fri 12:35 a.m.",
+      "iso": "2026-11-20T05:35:00+00:00",
+      "outlet": "The Japan Times",
+      "title": "Trump’s camaraderie with Xi and Putin draws pushback at home",
+      "url": "https://www.japantimes.co.jp/news/2026/11/20/world/politics/trump-xi-putin-pushback/",
+      "desc": "His embrace of the U.S.’s foremost geopolitical rivals further undercut the president’s standing with American allies and national-security hawks."
+     },
+     {
+      "t": "Thu 8:55 p.m.",
+      "iso": "2026-11-20T01:55:00+00:00",
+      "outlet": "CBS News",
+      "title": "No major agreements from Trump summit with Putin, Xi",
+      "url": "https://www.cbsnews.com/video/no-major-agreements-from-trump-summit-with-putin-xi/",
+      "desc": "President Trump, Chinese President Xi Jinping and Russian President Vladimir Putin held a historic summit this week in China, but they didn't reach any major agreements. Zeke Miller, deputy Washington bureau chief at the Associated Press, joins CBS News to discuss."
+     },
+     {
+      "t": "Thu 6:55 p.m.",
+      "iso": "2026-11-19T23:55:57+00:00",
+      "outlet": "PBS NewsHour",
+      "title": "Inside the historic summit between Trump, Xi and Putin",
+      "url": "https://www.pbs.org/newshour/show/inside-the-historic-summit-between-trump-xi-and-putin",
+      "desc": "It was the summit seen around the world. The first-ever trilateral meeting between the leaders of the United States, China and Russia resulted in a joint statement that included promises to release more oil and hold formal talks about nuclear weapons. Nick Schifrin reports from Shenzhen."
+     },
+     {
+      "t": "Thu 6:45 p.m.",
+      "iso": "2026-11-19T23:45:05.028000+00:00",
+      "outlet": "CBC News",
+      "title": "Trump greets 'my friend' Putin at China summit",
+      "url": "https://www.cbc.ca/player/play/video/9.7429162",
+      "desc": "U.S. President Donald Trump greets Russian President Vladimir Putin like an old pal at a reunion as the leaders of the three largest nuclear powers sit down for their first-ever trilateral meeting. Power & Politics asks former Canadian ambassador to Ukraine Roman Waschuk what implications this…"
+     },
+     {
+      "t": "Thu 3:59 p.m.",
+      "iso": "2026-11-19T20:59:45+00:00",
+      "outlet": "The Hill",
+      "title": "Hunter Biden slams Trump for ‘great betrayal’ after calling Putin ‘friend’",
+      "url": "https://thehill.com/policy/international/6231503-hunter-biden-criticizes-trump-putin/",
+      "desc": ""
+     },
+     {
+      "t": "Thu 12:38 p.m.",
+      "iso": "2026-11-19T17:38:22+00:00",
+      "outlet": "BBC News",
+      "title": "Trump, Putin and Xi release 'peace declaration' after historic meeting",
+      "url": "https://www.bbc.co.uk/news/articles/c623j4ln97x7o?at_medium=RSS&at_campaign=rss",
+      "desc": "While the presidents have previously met for one-on-one meetings, this is their first trilateral discussion."
+     },
+     {
+      "t": "Thu 12:23 p.m.",
+      "iso": "2026-11-19T17:23:44+00:00",
+      "outlet": "Kyiv Independent",
+      "title": "'We will not negotiate' — Putin addresses Ukraine's strikes on Crimean Bridge",
+      "url": "https://kyivindependent.com/we-will-not-negotiate-putin-addresses-ukraines-strikes-on-crimean-bridge/",
+      "desc": ""
+     }
+    ],
+    "sources": [
+     {
+      "t": "Fri 3:35 a.m.",
+      "primary": false,
+      "outlet": "Euronews",
+      "title": "Meeting between Trump, Putin and Xi was 'a photo-op', says Trump former advisor",
+      "url": "https://www.euronews.com/video/2026/11/20/meeting-between-trump-putin-and-xi-was-a-photo-op-says-trump-former-advisor",
+      "desc": "",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Euronews",
+        "src": "Euronews",
+        "byline": ""
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Fri 12:54 a.m.",
+      "primary": false,
+      "outlet": "ABC News",
+      "title": "Trump-Putin-Xi meeting updates: Schumer calls trip a 'historical embarrassment'",
+      "url": "https://abcnews.com/Politics/live-updates/trump-asia-trip-2026/?id=138187702",
+      "desc": "Trump participated on Thursday in the first-ever trilateral meeting with Putin and Xi.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "ABC News",
+        "src": "ABC News",
+        "byline": "[{\"name\":\"ABC NEWS\",,\"@type\":\"Person\"}] {\"@type\":\"Organization\",\"name\":\"ABC News\",} {\"@type\":\"Organization\",\"name\":\"ABC "
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Fri 12:35 a.m.",
+      "primary": false,
+      "outlet": "The Japan Times",
+      "title": "Trump’s camaraderie with Xi and Putin draws pushback at home",
+      "url": "https://www.japantimes.co.jp/news/2026/11/20/world/politics/trump-xi-putin-pushback/",
+      "desc": "His embrace of the U.S.’s foremost geopolitical rivals further undercut the president’s standing with American allies and national-security hawks.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "The Japan Times",
+        "src": "The Japan Times",
+        "byline": "{ \"@type\": \"Organization\", \"name\": \"The Japan Times\" } { \"@type\": \"Organization\", \"name\": \"The Japan Times\", } No Author"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Thu 8:55 p.m.",
+      "primary": false,
+      "outlet": "CBS News",
+      "title": "No major agreements from Trump summit with Putin, Xi",
+      "url": "https://www.cbsnews.com/video/no-major-agreements-from-trump-summit-with-putin-xi/",
+      "desc": "President Trump, Chinese President Xi Jinping and Russian President Vladimir Putin held a historic summit this week in China, but they didn't reach any major agreements. Zeke Miller, deputy Washington bureau chief at the Associated Press, joins CBS News to discuss.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "CBS News",
+        "src": "CBS News",
+        "byline": ""
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Thu 6:55 p.m.",
+      "primary": false,
+      "outlet": "PBS NewsHour",
+      "title": "Inside the historic summit between Trump, Xi and Putin",
+      "url": "https://www.pbs.org/newshour/show/inside-the-historic-summit-between-trump-xi-and-putin",
+      "desc": "It was the summit seen around the world. The first-ever trilateral meeting between the leaders of the United States, China and Russia resulted in a joint statement that included promises to release more oil and hold formal talks about nuclear weapons. Nick Schifrin reports from Shenzhen.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "PBS NewsHour",
+        "src": "PBS NewsHour",
+        "byline": "[{\"@type\":\"Person\",\"name\":\"Nick Schifrin\"},{\"@type\":\"Person\",\"name\":\"Madison Staten\"}] By — Nick Schifrin Nick Schifrin "
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Thu 6:45 p.m.",
+      "primary": false,
+      "outlet": "CBC News",
+      "title": "Trump greets 'my friend' Putin at China summit",
+      "url": "https://www.cbc.ca/player/play/video/9.7429162",
+      "desc": "U.S. President Donald Trump greets Russian President Vladimir Putin like an old pal at a reunion as the leaders of the three largest nuclear powers sit down for their first-ever trilateral meeting. Power & Politics asks former Canadian ambassador to Ukraine Roman Waschuk what implications this…",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "CBC News",
+        "src": "CBC",
+        "byline": "{\"profile\":{\"title\":\"\",\"name\":\"\",\"biography\":\"\",\"sourceId\":\"\",,\"links\":null,\"photoURL\":\"\"},\"recentContent\":{}} \"\" "
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Thu 3:59 p.m.",
+      "primary": false,
+      "outlet": "The Hill",
+      "title": "Hunter Biden slams Trump for ‘great betrayal’ after calling Putin ‘friend’",
+      "url": "https://thehill.com/policy/international/6231503-hunter-biden-criticizes-trump-putin/",
+      "desc": "px-captcha",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "The Hill",
+        "src": "The Hill",
+        "byline": ""
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Thu 12:38 p.m.",
+      "primary": false,
+      "outlet": "BBC News",
+      "title": "Trump, Putin and Xi release 'peace declaration' after historic meeting",
+      "url": "https://www.bbc.co.uk/news/articles/c623j4ln97x7o?at_medium=RSS&at_campaign=rss",
+      "desc": "While the presidents have previously met for one-on-one meetings, this is their first trilateral discussion.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "BBC News",
+        "src": "BBC News",
+        "byline": "[{\"@type\":\"Person\",\"name\":\"Harriet Whitehead\"},{\"@type\":\"Person\",\"name\":\"Jaroslav Lukiv\"}] https://www.facebook.com/bbcn"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Thu 12:23 p.m.",
+      "primary": false,
+      "outlet": "Kyiv Independent",
+      "title": "'We will not negotiate' — Putin addresses Ukraine's strikes on Crimean Bridge",
+      "url": "https://kyivindependent.com/we-will-not-negotiate-putin-addresses-ukraines-strikes-on-crimean-bridge/",
+      "desc": "The remarks marked the Russian president's first public reaction to the attacks on the bridge, which he described as having sustained \"serious damage.\"",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Kyiv Independent",
+        "src": "Kyiv Independent",
+        "byline": "own staff: Reporter"
+       }
+      ],
+      "copies": []
+     }
+    ],
+    "replaces_top": false,
+    "events": [],
+    "theme": "",
+    "ca_angle": {
+     "specific": 1,
+     "official": 0
+    },
+    "canada": "tie",
+    "canus": false,
+    "incoherent": false,
+    "popular": 0,
+    "us_election": false,
+    "fronts": 3,
+    "fronts_ca": 1,
+    "fronts_who": [
+     "The Globe and Mail",
+     "CBS News",
+     "ABC News"
+    ],
+    "outled_ca": 3,
+    "judgment": "regional",
+    "judgment_why": "Regional: affects some people; carried by a few newsrooms.",
+    "weight": 40.5,
+    "videos": [
+     {
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=7vICfjBuS0k",
+      "title": "Trump greets 'my friend' Putin at China summit | Power & Politics",
+      "img": "https://i.ytimg.com/vi/7vICfjBuS0k/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CBS News",
+      "url": "https://www.youtube.com/watch?v=78JvLLXQYtk",
+      "title": "Husband of American detained in Russia says case was not mentioned during Trump meeting with Putin",
+      "img": "https://i.ytimg.com/vi/78JvLLXQYtk/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CBS News",
+      "url": "https://www.youtube.com/watch?v=Mc2xSp_VOJI",
+      "title": "Rahm Emanuel says Trump \"confuses friend with foe\" amid meeting with Xi, Putin",
+      "img": "https://i.ytimg.com/vi/Mc2xSp_VOJI/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CBS News",
+      "url": "https://www.youtube.com/watch?v=H5P4vFVnVH8",
+      "title": "Here's what Trump's meeting with Xi and Putin accomplished as he leaves China",
+      "img": "https://i.ytimg.com/vi/H5P4vFVnVH8/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     }
+    ]
    }
   ],
   "considered": [
@@ -1050,9 +1417,9 @@
     "url": "https://globalnews.ca/news/12158821/canada-us-trade-talks-outstanding-issues/",
     "rank": 1,
     "live": "",
-    "weight": 38.0,
+    "weight": 37.0,
     "score": 13,
-    "independent": 5,
+    "independent": 4,
     "most_read": 5,
     "canada": "canadian",
     "theme": "Canada and the U.S.",
@@ -1070,30 +1437,53 @@
    },
    {
     "title": "In the news today: budget passes, Ontario Liberals vote, O Canada bill, RCMP museum",
-    "url": "https://www.winnipegfreepress.com/canada/2026/11/20/in-the-news-today-budget-passes-ontario-liberals-vote-o-canada-bill-rcmp-museum",
+    "url": "https://www.timescolonist.com/national-news/in-the-news-today-budget-passes-ontario-liberals-vote-o-canada-bill-rcmp-museum-13040284",
     "rank": 2,
     "live": "",
     "weight": 42.5,
-    "score": 11,
+    "score": 13,
     "independent": 2,
-    "most_read": 3,
+    "most_read": 0,
     "canada": "canadian",
     "theme": "Federal budget",
     "top": true,
     "fronts": 0,
     "fronts_who": [],
     "rule": "Canadian, still developing",
-    "carriers": 9,
+    "carriers": 11,
     "judgment": "national",
     "why_judged": "National: affects many people; carried across the country (national desks)."
    },
    {
-    "title": "Trump administration moves to drop lawsuit challenging Alaska Senate election result",
-    "url": "https://www.cbc.ca/news/world/trump-doj-alaska-lawsuit-dismissed-peltola-9.7429320",
+    "title": "Trump-Putin-Xi meeting updates: Schumer calls trip a 'historical embarrassment'",
+    "url": "https://abcnews.com/Politics/live-updates/trump-asia-trip-2026/?id=138187702",
     "rank": 3,
     "live": "",
-    "weight": 29.0,
-    "score": 11,
+    "weight": 40.5,
+    "score": 24,
+    "independent": 9,
+    "most_read": 0,
+    "canada": "tie",
+    "theme": "",
+    "top": true,
+    "fronts": 3,
+    "fronts_who": [
+     "The Globe and Mail",
+     "CBS News",
+     "ABC News"
+    ],
+    "rule": "From abroad, tied to Canada",
+    "carriers": 9,
+    "judgment": "regional",
+    "why_judged": "Regional: affects some people; carried by a few newsrooms."
+   },
+   {
+    "title": "Trump administration moves to drop lawsuit challenging Alaska Senate election result",
+    "url": "https://www.cbc.ca/news/world/trump-doj-alaska-lawsuit-dismissed-peltola-9.7429320",
+    "rank": 4,
+    "live": "",
+    "weight": 23.0,
+    "score": 10,
     "independent": 6,
     "most_read": 0,
     "canada": "tie",
@@ -1105,39 +1495,17 @@
      "ABC News"
     ],
     "rule": "From abroad, tied to Canada",
-    "carriers": 8,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (national desks)."
-   },
-   {
-    "title": "Inside the historic summit between Trump, Xi and Putin",
-    "url": "https://www.pbs.org/newshour/show/inside-the-historic-summit-between-trump-xi-and-putin",
-    "rank": 4,
-    "live": "",
-    "weight": 26.0,
-    "score": 21,
-    "independent": 6,
-    "most_read": 0,
-    "canada": "tie",
-    "theme": "",
-    "top": false,
-    "fronts": 2,
-    "fronts_who": [
-     "The Globe and Mail",
-     "ABC News"
-    ],
-    "rule": "From abroad, tied to Canada",
     "carriers": 6,
-    "judgment": "regional",
-    "why_judged": "Regional: affects some people; carried by a few newsrooms."
+    "judgment": "national",
+    "why_judged": "National: affects many people; carried beyond one city."
    },
    {
     "title": "New report on Tumbler Ridge shooter's AI chats 'deeply disturbing'",
     "url": "https://www.ctvnews.ca/vancouver/article/new-report-on-tumbler-ridge-shooters-ai-chats-deeply-disturbing/",
     "rank": 5,
     "live": "",
-    "weight": 34.0,
-    "score": 12,
+    "weight": 32.5,
+    "score": 11,
     "independent": 4,
     "most_read": 0,
     "canada": "canadian",
@@ -1148,59 +1516,17 @@
      "The Globe and Mail"
     ],
     "rule": "Canadian, older",
-    "carriers": 12,
+    "carriers": 11,
     "judgment": "national",
     "why_judged": "National: affects some people; carried across the country (8 cities)."
    },
    {
-    "title": "U of T students take test drive of 'Grand Theft Auto VI' during launch event",
-    "url": "https://www.timescolonist.com/the-mix/u-of-t-students-take-test-drive-of-grand-theft-auto-vi-during-launch-event-13039676",
-    "rank": 6,
-    "live": "",
-    "weight": 26.5,
-    "score": 17,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "canadian",
-    "theme": "",
-    "top": false,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "Canadian, older",
-    "carriers": 5,
-    "judgment": "regional",
-    "why_judged": "Regional: affects some people; carried beyond one city."
-   },
-   {
-    "title": "Beloved hippo Fiona dies days after swallowing hat",
-    "url": "https://www.cbsnews.com/news/fiona-the-hippo-dies-cincinnati-zoo/",
-    "rank": 7,
-    "live": "",
-    "weight": 30.0,
-    "score": 11,
-    "independent": 4,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 3,
-    "fronts_who": [
-     "CTV News",
-     "Global News",
-     "ABC News"
-    ],
-    "rule": "No Canadian tie",
-    "carriers": 8,
-    "judgment": "national",
-    "why_judged": "National: affects some people; carried across the country (national desks)."
-   },
-   {
     "title": "Myanmar dismisses UN court ruling finding country responsible of Rohingya genocide as 'unfair'",
     "url": "https://www.timescolonist.com/world-news/myanmar-dismisses-un-court-ruling-finding-country-responsible-of-rohingya-genocide-as-unfair-13040247",
-    "rank": 8,
+    "rank": 6,
     "live": "",
-    "weight": 28.5,
-    "score": 14,
+    "weight": 24.0,
+    "score": 13,
     "independent": 5,
     "most_read": 0,
     "canada": "none",
@@ -1211,9 +1537,50 @@
      "The Guardian"
     ],
     "rule": "No Canadian tie",
+    "carriers": 6,
+    "judgment": "regional",
+    "why_judged": "Regional: a single incident touching a few people; carried by a few newsrooms."
+   },
+   {
+    "title": "Beloved hippo Fiona dies days after swallowing hat",
+    "url": "https://www.cbsnews.com/news/fiona-the-hippo-dies-cincinnati-zoo/",
+    "rank": 7,
+    "live": "",
+    "weight": 17.5,
+    "score": 10,
+    "independent": 4,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": false,
+    "fronts": 2,
+    "fronts_who": [
+     "Global News",
+     "ABC News"
+    ],
+    "rule": "No Canadian tie",
     "carriers": 7,
     "judgment": "regional",
-    "why_judged": "Regional: a single incident touching a few people; carried beyond one city."
+    "why_judged": "Regional: affects some people; carried beyond one city."
+   },
+   {
+    "title": "Canada's Jacobs improves to 3-0 with win over Bottcher at Grand Slam of Curling event",
+    "url": "https://www.timescolonist.com/national-sports/canadas-jacobs-improves-to-3-0-with-win-over-bottcher-at-grand-slam-of-curling-event-13040154",
+    "rank": 8,
+    "live": "",
+    "weight": 35.5,
+    "score": 17,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "canadian",
+    "theme": "",
+    "top": false,
+    "fronts": 0,
+    "fronts_who": [],
+    "rule": "Canadian, still developing",
+    "carriers": 3,
+    "judgment": "regional",
+    "why_judged": "Regional: affects some people; carried only by Nova-Scotia desks."
    },
    {
     "title": "Why Canada is embracing AI data centres while the US pushes back",
@@ -1227,18 +1594,18 @@
    }
   ],
   "moved": [],
-  "top_n": 2,
+  "top_n": 3,
   "more": [
    {
-    "key": "auto-89dcdb50",
+    "key": "auto-1a406006",
     "words": [
-     "senate",
      "alaska",
+     "senate",
      "doj"
     ],
-    "score": 11,
+    "score": 10,
     "outlets": 6,
-    "carriers": 8,
+    "carriers": 6,
     "tag": "Developing",
     "title": "Trump administration moves to drop lawsuit challenging Alaska Senate election result",
     "url": "https://www.cbc.ca/news/world/trump-doj-alaska-lawsuit-dismissed-peltola-9.7429320",
@@ -1247,28 +1614,28 @@
     "iso": "2026-11-20T03:37:47.832000+00:00",
     "summary": "The Trump administration on Thursday moved to effectively drop its lawsuit that sought to block the certification of Democrat Mary Peltola's victory in Alaska's U.S. Senate race, ending a much-criticized gambit by the president to prevent one of his political rivals from taking office.",
     "first": {
-     "outlet": "CKOM / PAnow",
-     "url": "https://www.ckom.com/2026/11/19/trump-administration-moves-to-have-lawsuit-dismissed-in-challenge-to-alaskas-us-senate-race/",
-     "t": "Thu 7:57 p.m.",
-     "title": "Trump administration moves to have lawsuit dismissed in challenge to Alaska’s US Senate race",
-     "iso": "2026-11-20T00:57:18+00:00"
+     "outlet": "The Hill",
+     "url": "https://thehill.com/homenews/campaign/6231009-mary-peltola-alaska-senate-win/",
+     "t": "Thu 1:34 p.m.",
+     "title": "Peltola says Alaska voters did not elect her to be partisan",
+     "iso": "2026-11-19T18:34:16+00:00"
     },
     "newest": "2026-11-20T03:55:45+00:00",
     "photo": {
-     "src": "live/img/auto-89dcdb50-6394a782b6.jpg",
+     "src": "live/img/auto-1a406006-6394a782b6.jpg",
      "orig": "https://i.cbc.ca/ais/b0a8a741-d22f-4759-b8ee-6973d3b9bd0e,1795137609336/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C217%2C4176%2C2349%29%3BResize%3D620",
      "caption": "Democratic U.S. Senate candidate Mary Peltola was declared the winner of the state's Senate race Tuesday. Two days later, the Trump administration moved to get its lawsuit blocking the victory from being certified dismissed. (Kerry Tasker/Reuters) — via CBC News",
      "alt": "Democratic U.S. Senate candidate Mary Peltola was declared the winner of the state's Senate race Tuesday. Two days later, the Trump administration moved to get ",
      "outlet": "CBC News",
      "url": "https://www.cbc.ca/news/world/trump-doj-alaska-lawsuit-dismissed-peltola-9.7429320",
-     "since": "2026-11-20T09:54:09.749071+00:00"
+     "since": "2026-11-20T10:03:35.245225+00:00"
     },
     "photo_seen": [
      "https://i.cbc.ca/ais/b0a8a741-d22f-4759-b8ee-6973d3b9bd0e,1795137609336/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C217%2C4176%2C2349%29%3BResize%3D620"
     ],
     "photos": [
      {
-      "src": "live/img/auto-89dcdb50-6394a782b6.jpg",
+      "src": "live/img/auto-1a406006-6394a782b6.jpg",
       "orig": "https://i.cbc.ca/ais/b0a8a741-d22f-4759-b8ee-6973d3b9bd0e,1795137609336/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C217%2C4176%2C2349%29%3BResize%3D620",
       "caption": "Democratic U.S. Senate candidate Mary Peltola was declared the winner of the state's Senate race Tuesday. Two days later, the Trump administration moved to get its lawsuit blocking the victory from being certified dismissed. (Kerry Tasker/Reuters) — via CBC News",
       "alt": "Democratic U.S. Senate candidate Mary Peltola was declared the winner of the state's Senate race Tuesday. Two days later, the Trump administration moved to get ",
@@ -1276,7 +1643,7 @@
       "url": "https://www.cbc.ca/news/world/trump-doj-alaska-lawsuit-dismissed-peltola-9.7429320"
      },
      {
-      "src": "live/img/auto-89dcdb50-42a48b0513.jpg",
+      "src": "live/img/auto-1a406006-42a48b0513.jpg",
       "orig": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/04/67d7fb9f-e206-4208-a497-def228f6a273/thumbnail/1200x630g2/b91506905916df295ca8ff9c0f109469/sullivan-peltola.jpg",
       "caption": "From: DOJ moves to dismiss lawsuit over Alaska Senate race. — via CBS News",
       "alt": "DOJ moves to dismiss lawsuit over Alaska Senate race",
@@ -1284,7 +1651,7 @@
       "url": "https://www.cbsnews.com/news/trump-administration-dismiss-alaska-senate-lawsuit/"
      },
      {
-      "src": "live/img/auto-89dcdb50-1bce169cb5.jpg",
+      "src": "live/img/auto-1a406006-1bce169cb5.jpg",
       "orig": "https://i.abcnewsfe.com/a/bbb99700-f187-442d-88ca-7db506e018e3/alaska-2-rt-gmh-261030_1793380027346_hpMain_2_16x9.jpg?w=1600",
       "caption": "From: DOJ dropping Alaska midterms Senate certification lawsuit, saying case is 'moot'. — via ABC News",
       "alt": "DOJ dropping Alaska midterms Senate certification lawsuit, saying case is 'moot'",
@@ -1292,7 +1659,7 @@
       "url": "https://abcnews.com/Politics/doj-dropping-alaska-midterms-senate-certification-lawsuit-case/story?id=138307517"
      },
      {
-      "src": "live/img/auto-89dcdb50-0678aca7ca.jpg",
+      "src": "live/img/auto-1a406006-0678aca7ca.jpg",
       "orig": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-11/261119-mary-peltola-ww-1718-f423d7.jpg",
       "caption": "From: Justice Department seeks dismissal of its lawsuit in Alaska Senate race. — via NBC News",
       "alt": "Justice Department seeks dismissal of its lawsuit in Alaska Senate race",
@@ -1349,22 +1716,6 @@
       "title": "Justice Department seeks dismissal of its lawsuit in Alaska Senate race",
       "url": "https://www.nbcnews.com/politics/2026-election/doj-seeks-dismissal-lawsuit-alaska-senate-dan-sullivan-mary-peltola-rcna610343",
       "desc": "The Trump administration had sought to block certification of the election results if Republican Sen. Dan Sullivan lost. Democrat Mary Peltola won the race."
-     },
-     {
-      "t": "Thu 7:57 p.m.",
-      "iso": "2026-11-20T00:57:18+00:00",
-      "outlet": "Toronto Star",
-      "title": "Trump administration moves to have lawsuit dismissed in challenge to Alaska's US Senate race",
-      "url": "https://www.thestar.com/news/world/united-states/trump-administration-moves-to-have-lawsuit-dismissed-in-challenge-to-alaska-s-us-senate-race/article_0b6899e5-6ff3-5ef4-b593-b63b8bf4cf21.html",
-      "desc": "JUNEAU, Alaska (AP) — The Trump administration on Thursday moved to effectively drop its lawsuit that sought to block the certification of Democrat Mary Peltola's victory in Alaska's U.S. Senate"
-     },
-     {
-      "t": "Thu 7:57 p.m.",
-      "iso": "2026-11-20T00:57:18+00:00",
-      "outlet": "CKOM / PAnow",
-      "title": "Trump administration moves to have lawsuit dismissed in challenge to Alaska’s US Senate race",
-      "url": "https://www.ckom.com/2026/11/19/trump-administration-moves-to-have-lawsuit-dismissed-in-challenge-to-alaskas-us-senate-race/",
-      "desc": ""
      }
     ],
     "sources": [
@@ -1403,40 +1754,21 @@
       "copies": []
      },
      {
-      "t": "Thu 7:57 p.m.",
+      "t": "Thu 10:37 p.m.",
       "primary": false,
-      "outlet": "Toronto Star",
-      "title": "Trump administration moves to have lawsuit dismissed in challenge to Alaska's US Senate race",
-      "url": "https://www.thestar.com/news/world/united-states/trump-administration-moves-to-have-lawsuit-dismissed-in-challenge-to-alaska-s-us-senate-race/article_0b6899e5-6ff3-5ef4-b593-b63b8bf4cf21.html",
-      "desc": "JUNEAU, Alaska (AP) — The Trump administration on Thursday moved to effectively drop its lawsuit that sought to block the certification of Democrat Mary Peltola's victory in Alaska's U.S. Senate",
+      "outlet": "CBC News",
+      "title": "Trump administration moves to drop lawsuit challenging Alaska Senate election result",
+      "url": "https://www.cbc.ca/news/world/trump-doj-alaska-lawsuit-dismissed-peltola-9.7429320",
+      "desc": "The Trump administration on Thursday moved to effectively drop its lawsuit that sought to block the certification of Democrat Mary Peltola's victory in Alaska's U.S. Senate race, ending a much-criticized gambit by the president to prevent one of his political rivals from taking office.",
       "wire": "The Associated Press",
       "by": [
-       {
-        "outlet": "Toronto Star",
-        "src": "The Associated Press",
-        "byline": "\"Nicholas Riccardi And Becky Bohrer The Associated Press\" \"Nicholas Riccardi"
-       },
-       {
-        "outlet": "CKOM / PAnow",
-        "src": "The Canadian Press",
-        "byline": "[{\"@type\":\"Person\",\"name\":\"The Canadian Press\"}] \"The Canadian Pr"
-       },
        {
         "outlet": "CBC News",
         "src": "The Associated Press",
         "byline": "\"photoURL\":\"\"},\"recentContent\":{}} \"The Associated Press\" \"CBC News\" {\"name\""
        }
       ],
-      "copies": [
-       {
-        "outlet": "CKOM / PAnow",
-        "url": "https://www.ckom.com/2026/11/19/trump-administration-moves-to-have-lawsuit-dismissed-in-challenge-to-alaskas-us-senate-race/"
-       },
-       {
-        "outlet": "CBC News",
-        "url": "https://www.cbc.ca/news/world/trump-doj-alaska-lawsuit-dismissed-peltola-9.7429320"
-       }
-      ]
+      "copies": []
      },
      {
       "t": "Thu 10:25 p.m.",
@@ -1510,289 +1842,8 @@
     ],
     "outled_ca": 3,
     "judgment": "national",
-    "judgment_why": "National: affects many people; carried across the country (national desks).",
-    "weight": 29.0
-   },
-   {
-    "key": "auto-9be8a937",
-    "words": [
-     "putin"
-    ],
-    "score": 21,
-    "outlets": 6,
-    "carriers": 6,
-    "tag": "Developing",
-    "title": "Inside the historic summit between Trump, Xi and Putin",
-    "url": "https://www.pbs.org/newshour/show/inside-the-historic-summit-between-trump-xi-and-putin",
-    "outlet": "PBS NewsHour",
-    "t": "Thu 6:55 p.m.",
-    "iso": "2026-11-19T23:55:57+00:00",
-    "summary": "It was the summit seen around the world. The first-ever trilateral meeting between the leaders of the United States, China and Russia resulted in a joint statement that included promises to release more oil and hold formal talks about nuclear weapons. Nick Schifrin reports from Shenzhen.",
-    "first": {
-     "outlet": "BBC News",
-     "url": "https://www.bbc.co.uk/news/articles/c623j4ln97x7o?at_medium=RSS&at_campaign=rss",
-     "t": "Thu 12:38 p.m.",
-     "title": "Trump, Putin and Xi release 'peace declaration' after historic meeting",
-     "iso": "2026-11-19T17:38:22+00:00"
-    },
-    "newest": "2026-11-20T01:26:16+00:00",
-    "photo": {
-     "src": "live/img/auto-9be8a937-14d8ec69ab.jpg",
-     "orig": "https://d3i6fh83elv35t.cloudfront.net/static/2026/11/summit-1024x683.jpg",
-     "caption": "From: Inside the historic summit between Trump, Xi and Putin. — via PBS NewsHour",
-     "alt": "Inside the historic summit between Trump, Xi and Putin",
-     "outlet": "PBS NewsHour",
-     "url": "https://www.pbs.org/newshour/show/inside-the-historic-summit-between-trump-xi-and-putin",
-     "since": "2026-11-20T09:53:58.999129+00:00"
-    },
-    "photo_seen": [
-     "https://d3i6fh83elv35t.cloudfront.net/static/2026/11/summit-1024x683.jpg"
-    ],
-    "photos": [
-     {
-      "src": "live/img/auto-9be8a937-14d8ec69ab.jpg",
-      "orig": "https://d3i6fh83elv35t.cloudfront.net/static/2026/11/summit-1024x683.jpg",
-      "caption": "From: Inside the historic summit between Trump, Xi and Putin. — via PBS NewsHour",
-      "alt": "Inside the historic summit between Trump, Xi and Putin",
-      "outlet": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/inside-the-historic-summit-between-trump-xi-and-putin"
-     },
-     {
-      "src": "live/img/auto-9be8a937-4e75baa423.jpg",
-      "orig": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/56c4/live/c36d8970-e448-11f1-a094-5fdc692f3e33.jpg",
-      "caption": "Putin Xi and Trump. — via BBC News",
-      "alt": "Putin Xi and Trump",
-      "outlet": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c623j4ln97x7o?at_medium=RSS&at_campaign=rss"
-     },
-     {
-      "src": "live/img/auto-9be8a937-fc129f4320.jpg",
-      "orig": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/11/20/ffa8ed39-4288-4d0a-95dc-dba85f062a8e/thumbnail/1200x630/8b4322aa0c12c72d487f7e1729864c58/cbsn-fusion-husband-of-american-detained-in-russia-speaks-out-thumbnail.jpg",
-      "caption": "From: Husband of American detained in Russia says case was not mentioned during Trump meeting with Putin. — via CBS News",
-      "alt": "Husband of American detained in Russia says case was not mentioned during Trump meeting with Putin",
-      "outlet": "CBS News",
-      "url": "https://www.cbsnews.com/video/husband-of-american-detained-in-russia-speaks-out/"
-     },
-     {
-      "src": "live/img/auto-9be8a937-a43cd13c64.jpg",
-      "orig": "https://i.cbc.ca/ais/1ddff01d-fbdc-404d-90af-95f979c25fed,1795131475928/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1920%2C1080%29%3B",
-      "caption": "From: Trump greets 'my friend' Putin at China summit. — via CBC News",
-      "alt": "Trump greets 'my friend' Putin at China summit",
-      "outlet": "CBC News",
-      "url": "https://www.cbc.ca/player/play/video/9.7429162"
-     }
-    ],
-    "independent": 6,
-    "reports": [
-     {
-      "t": "Thu 8:26 p.m.",
-      "iso": "2026-11-20T01:26:16+00:00",
-      "outlet": "CBS News",
-      "title": "Husband of American detained in Russia says case was not mentioned during Trump meeting with Putin",
-      "url": "https://www.cbsnews.com/video/husband-of-american-detained-in-russia-speaks-out/",
-      "desc": "Harold Jezler is the husband of Olga Jezler, an American who has been detained in Russia for over four years. He joins \"The Takeout\" to share details on his wife's condition and call for her safe return."
-     },
-     {
-      "t": "Thu 6:55 p.m.",
-      "iso": "2026-11-19T23:55:57+00:00",
-      "outlet": "PBS NewsHour",
-      "title": "Inside the historic summit between Trump, Xi and Putin",
-      "url": "https://www.pbs.org/newshour/show/inside-the-historic-summit-between-trump-xi-and-putin",
-      "desc": "It was the summit seen around the world. The first-ever trilateral meeting between the leaders of the United States, China and Russia resulted in a joint statement that included promises to release more oil and hold formal talks about nuclear weapons. Nick Schifrin reports from Shenzhen."
-     },
-     {
-      "t": "Thu 6:45 p.m.",
-      "iso": "2026-11-19T23:45:05.028000+00:00",
-      "outlet": "CBC News",
-      "title": "Trump greets 'my friend' Putin at China summit",
-      "url": "https://www.cbc.ca/player/play/video/9.7429162",
-      "desc": "U.S. President Donald Trump greets Russian President Vladimir Putin like an old pal at a reunion as the leaders of the three largest nuclear powers sit down for their first-ever trilateral meeting. Power & Politics asks former Canadian ambassador to Ukraine Roman Waschuk what implications this…"
-     },
-     {
-      "t": "Thu 3:59 p.m.",
-      "iso": "2026-11-19T20:59:45+00:00",
-      "outlet": "The Hill",
-      "title": "Hunter Biden slams Trump for ‘great betrayal’ after calling Putin ‘friend’",
-      "url": "https://thehill.com/policy/international/6231503-hunter-biden-criticizes-trump-putin/",
-      "desc": ""
-     },
-     {
-      "t": "Thu 1:46 p.m.",
-      "iso": "2026-11-19T18:46:56+00:00",
-      "outlet": "ABC News",
-      "title": "WATCH: Trump calls Putin, Xi his friends after meeting",
-      "url": "https://abcnews.com/video/138294590/",
-      "desc": "Doug Lute, former U.S. ambassador to NATO, says President Donald Trump referring to Putin and Xi as friends is \"concerning for America's allies.\""
-     },
-     {
-      "t": "Thu 12:38 p.m.",
-      "iso": "2026-11-19T17:38:22+00:00",
-      "outlet": "BBC News",
-      "title": "Trump, Putin and Xi release 'peace declaration' after historic meeting",
-      "url": "https://www.bbc.co.uk/news/articles/c623j4ln97x7o?at_medium=RSS&at_campaign=rss",
-      "desc": "While the presidents have previously met for one-on-one meetings, this is their first trilateral discussion."
-     }
-    ],
-    "sources": [
-     {
-      "t": "Thu 8:26 p.m.",
-      "primary": false,
-      "outlet": "CBS News",
-      "title": "Husband of American detained in Russia says case was not mentioned during Trump meeting with Putin",
-      "url": "https://www.cbsnews.com/video/husband-of-american-detained-in-russia-speaks-out/",
-      "desc": "Harold Jezler is the husband of Olga Jezler, an American who has been detained in Russia for over four years. He joins \"The Takeout\" to share details on his wife's condition and call for her safe return.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "CBS News",
-        "src": "CBS News",
-        "byline": ""
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Thu 6:55 p.m.",
-      "primary": false,
-      "outlet": "PBS NewsHour",
-      "title": "Inside the historic summit between Trump, Xi and Putin",
-      "url": "https://www.pbs.org/newshour/show/inside-the-historic-summit-between-trump-xi-and-putin",
-      "desc": "It was the summit seen around the world. The first-ever trilateral meeting between the leaders of the United States, China and Russia resulted in a joint statement that included promises to release more oil and hold formal talks about nuclear weapons. Nick Schifrin reports from Shenzhen.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "PBS NewsHour",
-        "src": "PBS NewsHour",
-        "byline": "[{\"@type\":\"Person\",\"name\":\"Nick Schifrin\"},{\"@type\":\"Person\",\"name\":\"Madison Staten\"}] By — Nick Schifrin Nick Schifrin "
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Thu 6:45 p.m.",
-      "primary": false,
-      "outlet": "CBC News",
-      "title": "Trump greets 'my friend' Putin at China summit",
-      "url": "https://www.cbc.ca/player/play/video/9.7429162",
-      "desc": "U.S. President Donald Trump greets Russian President Vladimir Putin like an old pal at a reunion as the leaders of the three largest nuclear powers sit down for their first-ever trilateral meeting. Power & Politics asks former Canadian ambassador to Ukraine Roman Waschuk what implications this…",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "CBC News",
-        "src": "CBC",
-        "byline": "{\"profile\":{\"title\":\"\",\"name\":\"\",\"biography\":\"\",\"sourceId\":\"\",,\"links\":null,\"photoURL\":\"\"},\"recentContent\":{}} \"\" "
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Thu 3:59 p.m.",
-      "primary": false,
-      "outlet": "The Hill",
-      "title": "Hunter Biden slams Trump for ‘great betrayal’ after calling Putin ‘friend’",
-      "url": "https://thehill.com/policy/international/6231503-hunter-biden-criticizes-trump-putin/",
-      "desc": "px-captcha",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "The Hill",
-        "src": "The Hill",
-        "byline": ""
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Thu 1:46 p.m.",
-      "primary": false,
-      "outlet": "ABC News",
-      "title": "WATCH: Trump calls Putin, Xi his friends after meeting",
-      "url": "https://abcnews.com/video/138294590/",
-      "desc": "Doug Lute, former U.S. ambassador to NATO, says President Donald Trump referring to Putin and Xi as friends is \"concerning for America's allies.\"",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "ABC News",
-        "src": "ABC News",
-        "byline": "ABC News"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Thu 12:38 p.m.",
-      "primary": false,
-      "outlet": "BBC News",
-      "title": "Trump, Putin and Xi release 'peace declaration' after historic meeting",
-      "url": "https://www.bbc.co.uk/news/articles/c623j4ln97x7o?at_medium=RSS&at_campaign=rss",
-      "desc": "While the presidents have previously met for one-on-one meetings, this is their first trilateral discussion.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "BBC News",
-        "src": "BBC News",
-        "byline": "[{\"@type\":\"Person\",\"name\":\"Harriet Whitehead\"},{\"@type\":\"Person\",\"name\":\"Jaroslav Lukiv\"}] https://www.facebook.com/bbcn"
-       }
-      ],
-      "copies": []
-     }
-    ],
-    "replaces_top": false,
-    "events": [],
-    "theme": "",
-    "ca_angle": {
-     "specific": 1,
-     "official": 0
-    },
-    "canada": "tie",
-    "canus": false,
-    "incoherent": false,
-    "popular": 0,
-    "us_election": false,
-    "fronts": 2,
-    "fronts_ca": 1,
-    "fronts_who": [
-     "The Globe and Mail",
-     "ABC News"
-    ],
-    "outled_ca": 3,
-    "judgment": "regional",
-    "judgment_why": "Regional: affects some people; carried by a few newsrooms.",
-    "weight": 26.0,
-    "videos": [
-     {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=8yYtUgNJ6ME",
-      "title": "Trump, Putin and Xi issue ‘peace declaration’ after nuclear talks in China",
-      "img": "https://i.ytimg.com/vi/8yYtUgNJ6ME/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CBS News",
-      "url": "https://www.youtube.com/watch?v=wDQT-wzwUTk",
-      "title": "Trump holds summit with Putin and Xi, Anthropic sets record IPO, more | The Takeout",
-      "img": "https://i.ytimg.com/vi/wDQT-wzwUTk/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CBS News",
-      "url": "https://www.youtube.com/watch?v=78JvLLXQYtk",
-      "title": "Husband of American detained in Russia says case was not mentioned during Trump meeting with Putin",
-      "img": "https://i.ytimg.com/vi/78JvLLXQYtk/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CBS News",
-      "url": "https://www.youtube.com/watch?v=XdCtOBbRNO8",
-      "title": "Trump to speak Friday about summit with Xi and Putin; Zelenskyy meets with U.S. envoys",
-      "img": "https://i.ytimg.com/vi/XdCtOBbRNO8/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     }
-    ]
+    "judgment_why": "National: affects many people; carried beyond one city.",
+    "weight": 23.0
    },
    {
     "key": "auto-8105b4bc",
@@ -1801,9 +1852,9 @@
      "ridge",
      "ai"
     ],
-    "score": 12,
+    "score": 11,
     "outlets": 4,
-    "carriers": 12,
+    "carriers": 11,
     "tag": "Developing",
     "title": "New report on Tumbler Ridge shooter's AI chats 'deeply disturbing'",
     "url": "https://www.ctvnews.ca/vancouver/article/new-report-on-tumbler-ridge-shooters-ai-chats-deeply-disturbing/",
@@ -1826,7 +1877,7 @@
      "alt": "A piece of wood carved with \"TR\" and the names of victims on it is shown at a vigil for the victims of a mass shooting, in Tumbler Ridge, B.C., Friday, Feb. 13,",
      "outlet": "CTV News",
      "url": "https://www.ctvnews.ca/vancouver/article/new-report-on-tumbler-ridge-shooters-ai-chats-deeply-disturbing/",
-     "since": "2026-11-20T09:54:05.934071+00:00"
+     "since": "2026-11-20T10:03:32.200601+00:00"
     },
     "photo_seen": [
      "https://www.ctvnews.ca/resizer/v2/KJR2GDONPRY6FPCRLUOHFOWYHM.jpg?smart=true&auth=d67339df119cfa903494d9b39fc741645931faa5f86e251d7505d4bae78836f3&width=1200&height=630"
@@ -1841,12 +1892,12 @@
       "url": "https://www.ctvnews.ca/vancouver/article/new-report-on-tumbler-ridge-shooters-ai-chats-deeply-disturbing/"
      },
      {
-      "src": "live/img/auto-8105b4bc-cc84b8126d.jpg",
-      "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/7/94/794d7e92-ff64-5000-a0c7-a7a3f9430010/6999fe5d1794b.image.jpg?crop=1400%2C735%2C0%2C99&resize=1200%2C630&order=crop%2Cresize",
-      "caption": "From: New report on Tumbler Ridge shooter's AI chats 'deeply disturbing'. — via Toronto Star",
-      "alt": "New report on Tumbler Ridge shooter's AI chats 'deeply disturbing'",
-      "outlet": "Toronto Star",
-      "url": "https://www.thestar.com/news/canada/new-report-on-tumbler-ridge-shooter-s-ai-chats-deeply-disturbing/article_719b31d3-92f1-59d9-9dff-1f7d348354db.html"
+      "src": "live/img/auto-8105b4bc-158238edd1.jpg",
+      "orig": "https://winnipeg.citynews.ca/wp-content/blogs.dir/sites/13/2026/02/0f21c70e64de949d78405c445bf837e90d828d6474f84774c96ac365ba9c47cd.jpg",
+      "caption": "From: New report on Tumbler Ridge shooter’s AI chats ‘deeply disturbing’. — via CityNews Winnipeg",
+      "alt": "New report on Tumbler Ridge shooter’s AI chats ‘deeply disturbing’",
+      "outlet": "CityNews Winnipeg",
+      "url": "https://winnipeg.citynews.ca/2026/11/19/new-report-on-tumbler-ridge-shooters-ai-chats-deeply-disturbing/"
      },
      {
       "src": "live/img/auto-8105b4bc-6a1d5b855b.jpg",
@@ -1874,14 +1925,6 @@
       "title": "New report on Tumbler Ridge shooter's AI chats 'deeply disturbing'",
       "url": "https://www.ctvnews.ca/vancouver/article/new-report-on-tumbler-ridge-shooters-ai-chats-deeply-disturbing/",
       "desc": "British Columbia’s departing attorney general, Niki Sharma, says new details about the Tumbler Ridge shooter’s gun-related conversations with ChatGPT are “deeply disturbing” and painful."
-     },
-     {
-      "t": "Thu 5:10 p.m.",
-      "iso": "2026-11-19T22:10:34+00:00",
-      "outlet": "Toronto Star",
-      "title": "New report on Tumbler Ridge shooter's AI chats 'deeply disturbing'",
-      "url": "https://www.thestar.com/news/canada/new-report-on-tumbler-ridge-shooter-s-ai-chats-deeply-disturbing/article_719b31d3-92f1-59d9-9dff-1f7d348354db.html",
-      "desc": "A new report about the Tumbler Ridge shooter's apparent gun-related conversations with ChatGPT are \"deeply disturbing\" and painful, British Columbia's departing attorney general Niki Sharma said Thursday as she repeated"
      },
      {
       "t": "Thu 5:10 p.m.",
@@ -1977,17 +2020,12 @@
      {
       "t": "Thu 5:10 p.m.",
       "primary": false,
-      "outlet": "Toronto Star",
-      "title": "New report on Tumbler Ridge shooter's AI chats 'deeply disturbing'",
-      "url": "https://www.thestar.com/news/canada/new-report-on-tumbler-ridge-shooter-s-ai-chats-deeply-disturbing/article_719b31d3-92f1-59d9-9dff-1f7d348354db.html",
-      "desc": "A new report about the Tumbler Ridge shooter's apparent gun-related conversations with ChatGPT are \"deeply disturbing\" and painful, British Columbia's departing attorney general Niki Sharma said Thursday as she repeated",
+      "outlet": "CityNews Winnipeg",
+      "title": "New report on Tumbler Ridge shooter’s AI chats ‘deeply disturbing’",
+      "url": "https://winnipeg.citynews.ca/2026/11/19/new-report-on-tumbler-ridge-shooters-ai-chats-deeply-disturbing/",
+      "desc": "British Columbia's departing attorney general, Niki Sharma, says new details about the Tumbler Ridge shooter's gun-related conversations with ChatGPT are \"deeply disturbing\" and painful.",
       "wire": "The Canadian Press",
       "by": [
-       {
-        "outlet": "Toronto Star",
-        "src": "The Canadian Press",
-        "byline": "\"Brenna Owen The Canadian Press\" \"Brenna Owen <span"
-       },
        {
         "outlet": "CityNews Winnipeg",
         "src": "The Canadian Press",
@@ -2030,10 +2068,6 @@
        }
       ],
       "copies": [
-       {
-        "outlet": "CityNews Winnipeg",
-        "url": "https://winnipeg.citynews.ca/2026/11/19/new-report-on-tumbler-ridge-shooters-ai-chats-deeply-disturbing/"
-       },
        {
         "outlet": "CityNews Vancouver",
         "url": "https://vancouver.citynews.ca/2026/11/19/new-report-on-tumbler-ridge-shooters-ai-chats-deeply-disturbing/"
@@ -2114,7 +2148,152 @@
     ],
     "judgment": "national",
     "judgment_why": "National: affects some people; carried across the country (8 cities).",
-    "weight": 34.0
+    "weight": 32.5
+   },
+   {
+    "key": "auto-fb9aeaa3",
+    "words": [
+     "championships",
+     "hearinglife",
+     "curling",
+     "results",
+     "scenes",
+     "photos"
+    ],
+    "score": 17,
+    "outlets": 3,
+    "carriers": 3,
+    "tag": "Developing",
+    "title": "Canada's Jacobs improves to 3-0 with win over Bottcher at Grand Slam of Curling event",
+    "url": "https://www.timescolonist.com/national-sports/canadas-jacobs-improves-to-3-0-with-win-over-bottcher-at-grand-slam-of-curling-event-13040154",
+    "outlet": "Times Colonist",
+    "t": "Thu 11:05 p.m.",
+    "iso": "2026-11-20T04:05:31+00:00",
+    "summary": "SYDNEY — Brad Jacobs continued his winning ways with a 6-3 win over Brendan Bottcher in an all-Canadian round-robin matchup in Grand Slam of Curling action on Thursday.",
+    "first": {
+     "outlet": "CBC News",
+     "url": "https://www.cbc.ca/news/canada/nova-scotia/tenant-escaped-glace-bay-building-collapse-9.7428215?cmp=rss",
+     "t": "Thu 12:52 p.m.",
+     "title": "'We could have been dead,' says tenant who escaped Cape Breton building collapse",
+     "iso": "2026-11-19T17:52:17+00:00"
+    },
+    "newest": "2026-11-20T09:31:43+00:00",
+    "photo": {
+     "src": "live/img/auto-fb9aeaa3-48b2be38ab.jpg",
+     "orig": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/2d93309eb03c9ae50831315b399cf809431706dbe53b2f0dce4fadac78bda7d2.jpg;w=1200;h=800;mode=crop",
+     "caption": "From: Canada's Jacobs improves to 3-0 with win over Bottcher at Grand Slam of Curling event. — via Times Colonist",
+     "alt": "Canada's Jacobs improves to 3-0 with win over Bottcher at Grand Slam of Curling event",
+     "outlet": "Times Colonist",
+     "url": "https://www.timescolonist.com/national-sports/canadas-jacobs-improves-to-3-0-with-win-over-bottcher-at-grand-slam-of-curling-event-13040154",
+     "since": "2026-11-20T10:03:27.007825+00:00"
+    },
+    "photo_seen": [
+     "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/2d93309eb03c9ae50831315b399cf809431706dbe53b2f0dce4fadac78bda7d2.jpg;w=1200;h=800;mode=crop"
+    ],
+    "photos": [
+     {
+      "src": "live/img/auto-fb9aeaa3-48b2be38ab.jpg",
+      "orig": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/2d93309eb03c9ae50831315b399cf809431706dbe53b2f0dce4fadac78bda7d2.jpg;w=1200;h=800;mode=crop",
+      "caption": "From: Canada's Jacobs improves to 3-0 with win over Bottcher at Grand Slam of Curling event. — via Times Colonist",
+      "alt": "Canada's Jacobs improves to 3-0 with win over Bottcher at Grand Slam of Curling event",
+      "outlet": "Times Colonist",
+      "url": "https://www.timescolonist.com/national-sports/canadas-jacobs-improves-to-3-0-with-win-over-bottcher-at-grand-slam-of-curling-event-13040154"
+     }
+    ],
+    "independent": 3,
+    "reports": [
+     {
+      "t": "Fri 4:31 a.m.",
+      "iso": "2026-11-20T09:31:43+00:00",
+      "outlet": "SaltWire",
+      "title": "Down, down, down: Gas, diesel prices drop in Cape Breton, Nova Scotia",
+      "url": "https://www.saltwire.com/cape-breton/down-down-down-gas-diesel-prices-drop-in-cape-breton-nova-scotia",
+      "desc": ""
+     },
+     {
+      "t": "Thu 11:05 p.m.",
+      "iso": "2026-11-20T04:05:31+00:00",
+      "outlet": "Times Colonist",
+      "title": "Canada's Jacobs improves to 3-0 with win over Bottcher at Grand Slam of Curling event",
+      "url": "https://www.timescolonist.com/national-sports/canadas-jacobs-improves-to-3-0-with-win-over-bottcher-at-grand-slam-of-curling-event-13040154",
+      "desc": "SYDNEY — Brad Jacobs continued his winning ways with a 6-3 win over Brendan Bottcher in an all-Canadian round-robin matchup in Grand Slam of Curling action on Thursday."
+     },
+     {
+      "t": "Thu 2:58 p.m.",
+      "iso": "2026-11-19T19:58:14+00:00",
+      "outlet": "CBC News",
+      "title": "Province to build causeway next to Cape Breton bridge damaged by grader",
+      "url": "https://www.cbc.ca/news/canada/nova-scotia/ns-to-build-causeway-next-to-cape-breton-bridge-9.7428600?cmp=rss",
+      "desc": "About two dozen residents of South Head, an island off Cape Breton east of Sydney, will soon have a causeway to restore vehicle access thanks to Nova Scotia's Public Works Department."
+     }
+    ],
+    "sources": [
+     {
+      "t": "Fri 4:31 a.m.",
+      "primary": false,
+      "outlet": "SaltWire",
+      "title": "Down, down, down: Gas, diesel prices drop in Cape Breton, Nova Scotia",
+      "url": "https://www.saltwire.com/cape-breton/down-down-down-gas-diesel-prices-drop-in-cape-breton-nova-scotia",
+      "desc": "",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "SaltWire",
+        "src": "SaltWire",
+        "byline": "own staff: journalist"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Thu 11:05 p.m.",
+      "primary": false,
+      "outlet": "Times Colonist",
+      "title": "Canada's Jacobs improves to 3-0 with win over Bottcher at Grand Slam of Curling event",
+      "url": "https://www.timescolonist.com/national-sports/canadas-jacobs-improves-to-3-0-with-win-over-bottcher-at-grand-slam-of-curling-event-13040154",
+      "desc": "SYDNEY — Brad Jacobs continued his winning ways with a 6-3 win over Brendan Bottcher in an all-Canadian round-robin matchup in Grand Slam of Curling action on Thursday.",
+      "wire": "The Canadian Press",
+      "by": [
+       {
+        "outlet": "Times Colonist",
+        "src": "The Canadian Press",
+        "byline": "\"Canadian Press\" \r\n             \r\nC"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Thu 2:58 p.m.",
+      "primary": false,
+      "outlet": "CBC News",
+      "title": "Province to build causeway next to Cape Breton bridge damaged by grader",
+      "url": "https://www.cbc.ca/news/canada/nova-scotia/ns-to-build-causeway-next-to-cape-breton-bridge-9.7428600?cmp=rss",
+      "desc": "About two dozen residents of South Head, an island off Cape Breton east of Sydney, will soon have a causeway to restore vehicle access thanks to Nova Scotia's Public Works Department.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "CBC News",
+        "src": "CBC",
+        "byline": "own staff: Reporter"
+       }
+      ],
+      "copies": []
+     }
+    ],
+    "replaces_top": false,
+    "events": [],
+    "theme": "",
+    "canada": "canadian",
+    "canus": false,
+    "incoherent": true,
+    "popular": 0,
+    "us_election": false,
+    "fronts": 0,
+    "fronts_ca": 0,
+    "fronts_who": [],
+    "judgment": "regional",
+    "judgment_why": "Regional: affects some people; carried only by Nova-Scotia desks.",
+    "weight": 35.5
    }
   ],
   "passed_over": [
@@ -2222,36 +2401,8 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=djqYd5YO7V4",
    "img": "https://i.ytimg.com/vi/djqYd5YO7V4/hqdefault.jpg",
-   "up": "2026-11-19",
+   "up": "2026-11-20",
    "added": "2026-11-20T04:58:59.798548+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "v9P4GUYn3po",
-   "r": "ca",
-   "o": "CTV News",
-   "t": "B.C. ranchers bracing for bleak winter after devastating wildfires",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=v9P4GUYn3po",
-   "img": "https://i.ytimg.com/vi/v9P4GUYn3po/hqdefault.jpg",
-   "up": "2026-11-19",
-   "added": "2026-11-20T05:54:09.358473+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "TDxv7aCAlog",
-   "r": "ca",
-   "o": "CTV News",
-   "t": "Canada makes case for U.S. trade deal in private meeting | CTV National News for Nov.19, 2026",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=TDxv7aCAlog",
-   "img": "https://i.ytimg.com/vi/TDxv7aCAlog/hqdefault.jpg",
-   "up": "2026-11-19",
-   "added": "2026-11-20T05:54:09.358473+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2259,7 +2410,7 @@
    "id": "MCRzk1vTeFA",
    "r": "ca",
    "o": "Global News",
-   "t": "GTA 6 finally released after 13 years as gaming industry hits troubling times",
+   "t": "GTA 6 expected to generate billions in revenue as gaming industry faces uncertainty",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=MCRzk1vTeFA",
@@ -2452,20 +2603,6 @@
    "geo": "unknown"
   },
   {
-   "id": "K9gK3NXRtZY",
-   "r": "us",
-   "o": "ABC News",
-   "t": "'Real Housewives' star Teresa Giudice tells all",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=K9gK3NXRtZY",
-   "img": "https://i.ytimg.com/vi/K9gK3NXRtZY/hqdefault.jpg",
-   "up": "2026-11-20",
-   "added": "2026-11-20T07:21:58.135397+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "qDxjfdkzegY",
    "r": "us",
    "o": "CNN",
@@ -2474,7 +2611,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=qDxjfdkzegY",
    "img": "https://i.ytimg.com/vi/qDxjfdkzegY/hqdefault.jpg",
-   "up": "2026-11-19",
+   "up": "2026-11-20",
    "added": "2026-11-20T07:31:58.157608+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -2606,6 +2743,20 @@
    "geo": "unknown"
   },
   {
+   "id": "z8RPw_lwhqo",
+   "r": "us",
+   "o": "ABC News",
+   "t": "Nightline Full Broadcast — Thursday, November 19, 2026",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=z8RPw_lwhqo",
+   "img": "https://i.ytimg.com/vi/z8RPw_lwhqo/hqdefault.jpg",
+   "up": "2026-11-20",
+   "added": "2026-11-20T10:01:26.125403+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
    "id": "F3D3Pch9iWg",
    "r": "world",
    "o": "Reuters",
@@ -2614,7 +2765,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=F3D3Pch9iWg",
    "img": "https://i.ytimg.com/vi/F3D3Pch9iWg/hqdefault.jpg",
-   "up": "2026-11-19",
+   "up": "2026-11-20",
    "added": "2026-11-20T06:28:23.369763+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -2781,19 +2932,19 @@
   },
   {
    "o": "Fox News",
-   "h": "FBI arrests Georgia man accused of sending cryptocurrency to ISIS-linked individuals and groups",
-   "u": "https://www.foxnews.com/us/fbi-arrests-georgia-man-accused-sending-cryptocurrency-isis-linked-individuals-groups",
-   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/younes-moustafa-younes-georgia-isis-investigation.jpg",
-   "w": "Fri 3:09 a.m.",
-   "iso": "2026-11-20T08:09:46+00:00"
+   "h": "Trump will face reporters after historic Xi-Putin talks as war questions linger",
+   "u": "https://www.foxnews.com/politics/trump-face-reporters-historic-xi-putin-talks-war-questions-linger",
+   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/donald-trump-xi-jinping-apec-tarmac-5.jpg",
+   "w": "Fri 5:00 a.m.",
+   "iso": "2026-11-20T10:00:11+00:00"
   },
   {
    "o": "NPR",
-   "h": "The U.K. and EU hold a rare summit to strengthen ties",
-   "u": "https://www.npr.org/2026/11/20/g-s1-154576/uk-eu-summit",
-   "img": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5303x2983+0+276/resize/1400/quality/85/format/webp/?url=https%3A%2F%2Fnpr-production-npr.s3.us-east-1.amazonaws.com%2Fbrightspot%2Faf%2Fca%2F5e1352384fd6bdc90c42b50069e8%2Fap26316633592372.jpg",
-   "w": "Fri 4:14 a.m.",
-   "iso": "2026-11-20T09:14:41+00:00"
+   "h": "Critics are calling what brand-new release a masterpiece? The quiz knows",
+   "u": "https://www.npr.org/2026/11/20/g-s1-154337/florida-starship-bond-schumer-ai-flu-alaska-news-quiz",
+   "img": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5654x3180+0+1/resize/1400/quality/85/format/webp/?url=https%3A%2F%2Fnpr-production-npr.s3.us-east-1.amazonaws.com%2Fbrightspot%2Ffe%2F67%2F739e92b8400ab6cec0b96f5e74be%2Fchris-ncuti-mary.jpg",
+   "w": "Fri 5:00 a.m.",
+   "iso": "2026-11-20T10:00:00+00:00"
   },
   {
    "o": "The Hill",
@@ -2805,11 +2956,11 @@
   },
   {
    "o": "Politico",
-   "h": "Rob Sand shuts down any talk of 2028",
-   "u": "https://www.politico.com/news/2026/11/19/rob-sand-iowa-2028-01177322",
+   "h": "The nation’s cartoonists on the week in politics",
+   "u": "https://www.politico.com/gallery/2026/11/20/the-nations-cartoonists-on-the-week-in-politics-01177665",
    "img": "",
-   "w": "Thu 6:54 p.m.",
-   "iso": "2026-11-19T23:54:25+00:00"
+   "w": "Fri 5:00 a.m.",
+   "iso": "2026-11-20T10:00:00+00:00"
   }
  ],
  "papers": [
@@ -2998,6 +3149,13 @@
  ],
  "eds": [
   [
+   "Toronto Star",
+   "Opinion",
+   "Internet security: let’s stop connecting everything",
+   "https://www.thestar.com/opinion/contributors/internet-security-let-s-stop-connecting-everything/article_dc101da8-dc91-4680-8c2a-d78eb6b247aa.html",
+   "2026-11-20T10:00:00+00:00"
+  ],
+  [
    "Toronto Sun",
    "Editorial",
    "The environmental case for Canadian oil and gas",
@@ -3042,16 +3200,16 @@
   [
    "The Hub",
    "Opinion",
-   "It’s time for Canada’s Italian community to stand in solidarity with our Jewish neighbours",
-   "https://thehub.ca/2026/11/20/its-time-for-canadas-italian-community-to-stand-in-solidarity-with-our-jewish-neighbours/",
-   "2026-11-20T08:00:58+00:00"
+   "Why the University of Toronto won’t adopt its own anti-Muslim discrimination report",
+   "https://thehub.ca/2026/11/20/why-the-university-of-toronto-wont-adopt-its-own-anti-muslim-discrimination-report/",
+   "2026-11-20T09:54:40+00:00"
   ],
   [
    "The New York Times",
    "Opinion",
-   "Can a Country Be Guilty of Genocide? Finally, the Answer Is Yes.",
-   "https://www.nytimes.com/2026/11/20/opinion/genocide-gambia-rwanda-rohingya-israel.html",
-   "2026-11-20T06:00:05+00:00"
+   "I’m a Socialist. Wokeness Is Still the Left’s Biggest Liability.",
+   "https://www.nytimes.com/2026/11/20/opinion/democrats-woke-1-socialist.html",
+   "2026-11-20T10:01:43+00:00"
   ],
   [
    "Fox News",
@@ -3059,13 +3217,6 @@
    "Washington voters protected women’s sports. ACLU wants to overturn democracy",
    "https://www.foxnews.com/opinion/washington-voters-protected-womens-sports-aclu-wants-overturn-democracy",
    "2026-11-19T22:53:02+00:00"
-  ],
-  [
-   "The Wall Street Journal (subscribers)",
-   "Opinion",
-   "Pepper…and Salt",
-   "https://www.wsj.com/opinion/pepperand-salt-76e8dd0e?mod=rss_opinion",
-   "2026-11-20T05:00:00+00:00"
   ]
  ],
  "canus": {
@@ -3148,12 +3299,12 @@
   "edition": "Friday morning, November 20",
   "lines": [
    "Good morning. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
-   "Inside the historic summit between Trump, Xi and Putin, PBS NewsHour reports.",
+   "PHOTOS: Scenes from Day 3 of the Grand Slam of Curling HearingLife National in Cape Breton, SaltWire reports.",
    "LeBlanc gives update on U.S. trade talks to Canada-U.S. advisory committee, The Canadian Press reports.",
+   "The federal government is increasing its investment in the 2028 North American Indigenous Games by $1.3M, bringing its total contribution to $6.2M, The Canadian Press reports.",
    "A woman allegedly held hostage for several days was rescued by Airdrie RCMP following a lengthy standoff, CityNews Edmonton reports.",
-   "Only hours after the release of \"Grand Theft Auto VI,\" Sera Tulk sat in a University of Toronto lecture hall, playing the year’s most hotly anticipated video game, The Canadian Press reports.",
+   "Trump, Putin and Xi release ‘peace declaration’ after historic meeting, BBC News reports.",
    "Myanmar’s government on Friday dismissed a landmark judgment by the United Nations’ top court finding the country guilty of genocide against its Rohingya minority as “unfair,” The Associated Press reports.",
-   "British Columbia’s departing attorney general, Niki Sharma, says new details about the Tumbler Ridge shooter’s gun-related conversations with ChatGPT are “deeply disturbing” and painful, The Canadian Press reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
   ]
  },
@@ -3289,12 +3440,24 @@
  ],
  "mostread": {
   "sites": [
+   "Toronto Star",
    "Winnipeg Free Press",
    "Global News",
    "Nunatsiaq News",
    "Daily Hive"
   ],
   "list": [
+   {
+    "h": "The Northlander train is back — and scheduled to start in December. Here’s what riders need to know",
+    "u": "https://www.thestar.com/politics/provincial/the-northlander-train-is-back-and-scheduled-to-start-in-december-here-s-what-riders-need-to-know/article_a17324d9-5fe7-4ec5-8bd3-1a809240675a.html",
+    "o": [
+     [
+      "Toronto Star",
+      1,
+      "https://www.thestar.com/politics/provincial/the-northlander-train-is-back-and-scheduled-to-start-in-december-here-s-what-riders-need-to-know/article_a17324d9-5fe7-4ec5-8bd3-1a809240675a.html"
+     ]
+    ]
+   },
    {
     "h": "Blue Bombers fire head coach Mike O'Shea after 12 seasons",
     "u": "https://www.winnipegfreepress.com/breakingnews/2026/11/19/winnipeg-blue-bombers-mike-oshea",
@@ -3340,6 +3503,17 @@
     ]
    },
    {
+    "h": "Scarborough’s Paul Ainslie steps in as TTC chair amid CEO probe and deep budget deficit",
+    "u": "https://www.thestar.com/news/gta/scarborough-s-paul-ainslie-steps-in-as-ttc-chair-amid-ceo-probe-and-deep-budget-deficit/article_3d4bfdd4-ea88-4616-8605-116e4aebbcd0.html",
+    "o": [
+     [
+      "Toronto Star",
+      2,
+      "https://www.thestar.com/news/gta/scarborough-s-paul-ainslie-steps-in-as-ttc-chair-amid-ceo-probe-and-deep-budget-deficit/article_3d4bfdd4-ea88-4616-8605-116e4aebbcd0.html"
+     ]
+    ]
+   },
+   {
     "h": "Klinic doctor accused of pursuing sexual relationship with patient suspended by medical regulator",
     "u": "https://www.winnipegfreepress.com/breakingnews/2026/11/17/doctor-suspended-manitoba-klinic-patient-relationship",
     "o": [
@@ -3380,28 +3554,6 @@
       "Daily Hive",
       2,
       "https://dailyhive.com/vancouver/bc-companies-canada-top-100-employers-2027"
-     ]
-    ]
-   },
-   {
-    "h": "New designer drug found in Toronto fentanyl supply",
-    "u": "https://www.winnipegfreepress.com/canada/2026/11/19/new-designer-drug-found-in-toronto-fentanyl-supply",
-    "o": [
-     [
-      "Winnipeg Free Press",
-      3,
-      "https://www.winnipegfreepress.com/canada/2026/11/19/new-designer-drug-found-in-toronto-fentanyl-supply"
-     ]
-    ]
-   },
-   {
-    "h": "Liberals’ 2026 budget passes in House of Commons",
-    "u": "https://globalnews.ca/news/12158925/budget-2026-passes/",
-    "o": [
-     [
-      "Global News",
-      3,
-      "https://globalnews.ca/news/12158925/budget-2026-passes/"
      ]
     ]
    }
@@ -3464,12 +3616,12 @@
    "city": "St. John's",
    "tz": "America/St_Johns",
    "world": false,
-   "w": "Theft Auto VI",
-   "label": "Grand Theft Auto VI is on every screen at this Corner…",
-   "u": "https://www.cbc.ca/player/play/9.7428535?cmp=rss",
-   "title": "Grand Theft Auto VI is on every screen at this Corner Brook arcade",
-   "outlet": "CBC News",
-   "t": "Thu 2:07 p.m.",
+   "w": "Underway",
+   "label": "Search Underway in Corner Brook Region for Man on the Run",
+   "u": "https://vocm.com/2026/11/19/search-underway-in-corner-brook-region-for-man-wanted-on-serious-charges/",
+   "title": "Search Underway in Corner Brook Region for Man on the Run",
+   "outlet": "VOCM",
+   "t": "Thu 7:08 p.m.",
    "hot": false
   },
   {
@@ -3490,9 +3642,9 @@
    "world": false,
    "w": "The vote",
    "label": "In the news today: budget passes, Ontario Liberals vote",
-   "u": "https://www.winnipegfreepress.com/canada/2026/11/20/in-the-news-today-budget-passes-ontario-liberals-vote-o-canada-bill-rcmp-museum",
+   "u": "https://www.timescolonist.com/national-news/in-the-news-today-budget-passes-ontario-liberals-vote-o-canada-bill-rcmp-museum-13040284",
    "title": "In the news today: budget passes, Ontario Liberals vote, O Canada bill, RCMP museum",
-   "outlet": "The Canadian Press (via Winnipeg Free Press)",
+   "outlet": "Times Colonist",
    "t": "Fri 4:22 a.m.",
    "hot": true
   },
@@ -3537,11 +3689,11 @@
    "tz": "America/New_York",
    "world": false,
    "w": "Summit",
-   "label": "Kushner: Trump open to NATO-like security guarantees for…",
-   "u": "https://www.aljazeera.com/video/newsfeed/2026/11/20/kushner-trump-open-to-nato-like-security-guarantees-for-ukraine?traffic_source=rss",
-   "title": "Kushner: Trump open to NATO-like security guarantees for Ukraine",
-   "outlet": "Al Jazeera",
-   "t": "Thu 11:44 p.m.",
+   "label": "Meeting between Trump, Putin and Xi was 'a photo-op'",
+   "u": "https://www.euronews.com/video/2026/11/20/meeting-between-trump-putin-and-xi-was-a-photo-op-says-trump-former-advisor",
+   "title": "Meeting between Trump, Putin and Xi was 'a photo-op', says Trump former advisor",
+   "outlet": "Euronews",
+   "t": "Fri 3:35 a.m.",
    "hot": false
   },
   {
@@ -3557,43 +3709,43 @@
    "hot": true
   },
   {
-   "city": "Moscow",
-   "tz": "Europe/Moscow",
-   "world": true,
-   "w": "Summit",
-   "label": "With Putin in the room, Carney condemns Russia's illegal…",
-   "u": "https://www.cbc.ca/news/politics/carney-putin-apec-ukraine-9.7428573",
-   "title": "With Putin in the room, Carney condemns Russia's illegal invasion of Ukraine",
-   "outlet": "CBC News",
-   "t": "Fri 1:00 a.m.",
-   "hot": false
-  },
-  {
    "city": "Kyiv",
    "tz": "Europe/Kyiv",
    "world": true,
-   "w": "Missile strikes",
-   "label": "Three Kyiv bridges hit during major Russian missile attack",
-   "u": "https://www.bbc.co.uk/news/articles/c6x29gn4pdn9o?at_medium=RSS&at_campaign=rss",
-   "title": "Three Kyiv bridges hit during major Russian missile attack",
-   "outlet": "BBC News",
-   "t": "Fri 4:31 a.m.",
+   "w": "Attacks",
+   "label": "Russian attacks on Kyiv kill 3",
+   "u": "https://www.cbc.ca/news/world/russian-attacks-on-kyiv-9.7429460",
+   "title": "Russian attacks on Kyiv kill 3, cripple bridges and cut power",
+   "outlet": "CBC News",
+   "t": "Fri 4:53 a.m.",
    "hot": true
+  },
+  {
+   "city": "Brussels",
+   "tz": "Europe/Brussels",
+   "world": true,
+   "w": "Canada–EU",
+   "label": "Can Andy Burnham bring British brio back to Brussels?",
+   "u": "https://www.euronews.com/2026/11/20/can-andy-burnham-bring-british-brio-back-to-brussels",
+   "title": "Can Andy Burnham bring British brio back to Brussels?",
+   "outlet": "Euronews",
+   "t": "Fri 2:34 a.m.",
+   "hot": false
   }
  ],
  "bigweek": [],
  "desks": [
   {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Fri 4:31 a.m.",
-   "iso": "2026-11-20T09:31:24+00:00",
-   "title": "Three Kyiv bridges hit during major Russian missile attack",
-   "summary": "Five people were killed in a wave of strikes which follow Ukraine's successful targeting of the Crimean Bridge.",
-   "outlet": "BBC News, The Guardian, Kyiv Independent, Toronto Star + The Canadian Press (via Winnipeg Free Press), CBC News, Toronto Star, Politico, The Japan Times",
-   "n": 8,
-   "url": "https://www.bbc.co.uk/news/articles/c6x29gn4pdn9o?at_medium=RSS&at_campaign=rss",
-   "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/78b1/live/a02c1e30-e4b7-11f1-808e-7d48dd17194a.jpg"
+   "desk": "us",
+   "pic": "podium",
+   "t": "Thu 10:55 p.m.",
+   "iso": "2026-11-20T03:55:45+00:00",
+   "title": "DOJ moves to dismiss lawsuit over Alaska Senate race",
+   "summary": "The Trump administration is moving to effectively drop its legal challenge to Democrat Mary Peltola's win in Alaska's Senate race.",
+   "outlet": "CBS News, ABC News, CBC News (AP), The Hill, The Guardian, NBC News, CKOM / PAnow, Vancouver Sun, CityNews Vancouver",
+   "n": 9,
+   "url": "https://www.cbsnews.com/news/trump-administration-dismiss-alaska-senate-lawsuit/",
+   "img": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/04/67d7fb9f-e206-4208-a497-def228f6a273/thumbnail/1200x630g2/b91506905916df295ca8ff9c0f109469/sullivan-peltola.jpg"
   },
   {
    "desk": "world",
@@ -3602,22 +3754,34 @@
    "iso": "2026-11-20T08:51:28+00:00",
    "title": "Myanmar dismisses UN court ruling finding country responsible of Rohingya genocide as 'unfair'",
    "summary": "BANGKOK (AP) — Myanmar’s government on Friday dismissed a landmark judgment by the United Nations’ top court finding the country guilty of genocide against its Rohingya minority as “unfair.",
-   "outlet": "Times Colonist + Toronto Star + The Canadian Press (via Winnipeg Free Press), Al Jazeera, The Japan Times (AFP), The Japan Times (Reuters), PBS NewsHour, Toronto Star + CKOM / PAnow, CTV News + CP24",
+   "outlet": "Times Colonist + CTV News + CP24 + Toronto Star + 1 more (CP), Al Jazeera, The Japan Times (AFP), The Japan Times (Reuters), PBS NewsHour, The Hill, BBC News",
    "n": 7,
    "url": "https://www.timescolonist.com/world-news/myanmar-dismisses-un-court-ruling-finding-country-responsible-of-rohingya-genocide-as-unfair-13040247",
    "img": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/24a14a8bf838415f835b129baddebd2b74b27ee6d9b0dc6de2c85c008500af13.jpg;w=1200;h=800;mode=crop"
   },
   {
-   "desk": "us",
-   "pic": "podium",
-   "t": "Thu 10:55 p.m.",
-   "iso": "2026-11-20T03:55:45+00:00",
-   "title": "DOJ moves to dismiss lawsuit over Alaska Senate race",
-   "summary": "The Trump administration is moving to effectively drop its legal challenge to Democrat Mary Peltola's win in Alaska's Senate race.",
-   "outlet": "CBS News, ABC News, Toronto Star + CKOM / PAnow + CBC News (AP), The Hill, The Guardian, NBC News, Vancouver Sun",
-   "n": 7,
-   "url": "https://www.cbsnews.com/news/trump-administration-dismiss-alaska-senate-lawsuit/",
-   "img": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/04/67d7fb9f-e206-4208-a497-def228f6a273/thumbnail/1200x630g2/b91506905916df295ca8ff9c0f109469/sullivan-peltola.jpg"
+   "desk": "world",
+   "pic": "globe",
+   "t": "Fri 4:53 a.m.",
+   "iso": "2026-11-20T09:53:33.871000+00:00",
+   "title": "Russian attacks on Kyiv kill 3, cripple bridges and cut power",
+   "summary": "Russia launched missiles and drones across Kyiv overnight that killed three people, injured nine others and damaged bridges and transport infrastructure, local authorities said Friday.",
+   "outlet": "CBC News + The Canadian Press (via Winnipeg Free Press), Euronews, BBC News, The Guardian, Kyiv Independent, CBC News",
+   "n": 6,
+   "url": "https://www.cbc.ca/news/world/russian-attacks-on-kyiv-9.7429460",
+   "img": "https://i.cbc.ca/ais/c03853e2-7c32-4406-8c5f-102cf35a4bb4,1795167098286/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C435%2C4176%2C2349%29%3BResize%3D620"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Fri 4:50 a.m.",
+   "iso": "2026-11-20T09:50:17+00:00",
+   "title": "EU says Brexit reset deal with UK will not come into force without agreement on tuition fees – live",
+   "summary": "EU aims for leverage over UK by making the deals agreed today contingent on future agreement on tuition fees",
+   "outlet": "The Guardian, BBC News, Al Jazeera, Euronews, CBC News, VOCM",
+   "n": 6,
+   "url": "https://www.theguardian.com/world/live/2026/nov/20/uk-eu-european-union-brexit-deal-andy-burnham-latest-news-updates",
+   "img": "https://i.guim.co.uk/img/media/60fe7afcc38cece0b30217ae61a1689ce6c6e1f0/176_0_1854_1483/master/1854.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=d29f317f4da17545b59bce5b6dda3ff7"
   },
   {
    "desk": "politics",
@@ -3638,7 +3802,7 @@
    "iso": "2026-11-20T06:57:11+00:00",
    "title": "Beloved hippo Fiona dies days after swallowing hat",
    "summary": "Fiona the hippo, who survived being born prematurely and rose to global fame, has died, the Cincinnati Zoo & Botanical Garden announced Thursday.",
-   "outlet": "CBS News, PBS NewsHour + CTV News + CP24 + Toronto Star + 1 more (AP), The Guardian, BBC News, The Hill, Global News",
+   "outlet": "CBS News, PBS NewsHour + CTV News + CP24 + Times Colonist (AP), The Guardian, BBC News, The Hill, Global News",
    "n": 6,
    "url": "https://www.cbsnews.com/news/fiona-the-hippo-dies-cincinnati-zoo/",
    "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/19/6e294b5f-56fe-4c30-a6f0-0e2835d04ea7/thumbnail/1200x630/fda5c24a16515c4fa385e098a0a643c0/ap18068671681006.jpg"
@@ -3646,14 +3810,14 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Fri 4:36 a.m.",
-   "iso": "2026-11-20T09:36:53+00:00",
-   "title": "UK and EU close in on Brexit reset deal but tuition fees remain a stumbling block – live",
-   "summary": "EU aims for leverage over UK by making the deals agreed today contingent on future agreement on tuition fees",
-   "outlet": "The Guardian, BBC News, Al Jazeera, Toronto Star (AP)",
-   "n": 4,
-   "url": "https://www.theguardian.com/world/live/2026/nov/20/uk-eu-european-union-brexit-deal-andy-burnham-latest-news-updates",
-   "img": "https://i.guim.co.uk/img/media/af3956cdcf10af7df210962e593a86f0d4b45353/0_144_2647_2117/master/2647.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=74737c11e9babc83e82a14b600ceff61"
+   "t": "Fri 3:43 a.m.",
+   "iso": "2026-11-20T08:43:27+00:00",
+   "title": "Meet Anthropic's 7 co-founders, now worth about $20 billion each",
+   "summary": "Dario Amodei and the company's other six co-founders instantly joined the ranks of America's richest citizens with the AI giant's initial public offering.",
+   "outlet": "CBS News, Euronews, Al Jazeera, Canada's National Observer, CP24 + BNN Bloomberg",
+   "n": 5,
+   "url": "https://www.cbsnews.com/news/anthropic-ipo-founders-net-worth/",
+   "img": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/19/260f80ea-41ca-4fca-aa84-2bd1a21f0082/thumbnail/1200x630/3687ab11430e307e7db7e7fdd8e3dcd5/gettyimages-2305321358.jpg"
   },
   {
    "desk": "politics",
@@ -3686,10 +3850,22 @@
    "iso": "2026-11-19T23:28:35+00:00",
    "title": "ChatGPT guided Tumbler Ridge shooter on how to modify guns, avoid being flagged: report",
    "summary": "",
-   "outlet": "Vancouver Sun, Toronto Star + CityNews Winnipeg + CityNews Vancouver + CityNews Ottawa + 5 more (CP), CBC News, The Logic (subscribers)",
+   "outlet": "Vancouver Sun, CityNews Winnipeg + CityNews Vancouver + CityNews Ottawa + CityNews Montreal + 4 more (CP), CBC News, The Logic (subscribers)",
    "n": 4,
    "url": "https://vancouversun.com/news/chatgpt-guided-tumbler-ridge-shooter-on-how-to-modify-guns-avoid-being-flagged-report",
    "img": ""
+  },
+  {
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Fri 4:51 a.m.",
+   "iso": "2026-11-20T09:51:27+00:00",
+   "title": "Gas Tax Bill Passes in Time for Dec. 1 Break, But Not Without Hurdles",
+   "summary": "The provincial government's gas tax legislation passed in the House of Assembly last night, meaning the price ...",
+   "outlet": "VOCM, The Tyee, Daily Hive",
+   "n": 3,
+   "url": "https://vocm.com/2026/11/20/gas-tax-bill-passes-in-time-for-dec-1-break-to-take-effect/",
+   "img": "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/900/files/2026/06/gas-fuel-prices-pumps-gas-station-pub-public-utilities-board.jpg"
   },
   {
    "desk": "politics",
@@ -3706,14 +3882,14 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Fri 3:31 a.m.",
-   "iso": "2026-11-20T08:31:00+00:00",
-   "title": "Indonesia’s Prabowo and China’s Xi discuss future South China Sea cooperation",
-   "summary": "Cooperation agreements with China in the waterway have for years made nations wary they could be interpreted as legitimizing Beijing’s claims.",
-   "outlet": "The Japan Times (Reuters), Toronto Star + The Canadian Press (via Winnipeg Free Press), ABC News",
+   "t": "Fri 3:52 a.m.",
+   "iso": "2026-11-20T08:52:01+00:00",
+   "title": "Hackers leak stolen data on 16,000 Visa, Mastercard and JPMorgan customers",
+   "summary": "",
+   "outlet": "Euronews, CityNews Winnipeg + CityNews Ottawa + CityNews Montreal + CityNews Edmonton (AP), The Hill",
    "n": 3,
-   "url": "https://www.japantimes.co.jp/news/2026/11/20/asia-pacific/politics/indonesia-south-china-sea-xi/",
-   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/20/575222.JPG?v=3.1"
+   "url": "https://www.euronews.com/2026/11/20/hackers-leak-stolen-data-on-16000-visa-mastercard-and-jpmorgan-customers",
+   "img": ""
   },
   {
    "desk": "us",
@@ -3726,18 +3902,6 @@
    "n": 3,
    "url": "https://www.cbsnews.com/news/texas-execution-delayed-over-an-hour-november-2026/",
    "img": "https://assets3.cbsnewsstatic.com/hub/i/r/2020/08/01/c001aecc-2563-4780-aca4-bd140991b08c/thumbnail/1200x630/df5d64e42c6bac45276e2000fb08d35a/GettyImages-1304784.jpg"
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Thu 10:21 p.m.",
-   "iso": "2026-11-20T03:21:23+00:00",
-   "title": "Global shares drop on AI worries, echoing Wall Street's decline despite the strong Anthropic debut",
-   "summary": "TOKYO (AP) — Asian shares dropped in Friday trading as a wide selloff hits issues related to artificial intelligence and computer chips.",
-   "outlet": "Toronto Star (AP), Al Jazeera, CP24 + BNN Bloomberg",
-   "n": 3,
-   "url": "https://www.thestar.com/news/world/asia-shares-drop-on-ai-worries-echoing-wall-street-s-decline-despite-the-strong-anthropic-debut/article_abb6d10a-bbaf-570a-bd8a-66b0a8a5ba3d.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/d/47/d476b295-5723-52c3-868d-41b95c33e41c/6affbd8ef4014.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
   },
   {
    "desk": "politics",
@@ -3793,23 +3957,11 @@
    "t": "Fri 4:22 a.m.",
    "iso": "2026-11-20T09:22:45+00:00",
    "title": "In the news today: budget passes, Ontario Liberals vote, O Canada bill, RCMP museum",
-   "summary": "Here is a roundup of stories from The Canadian Press designed to bring you up to speed …",
-   "outlet": "The Canadian Press (via Winnipeg Free Press) + Toronto Star + Global News + CTV News + 4 more, Yukon News",
+   "summary": "Here is a roundup of stories from The Canadian Press designed to bring you up to speed … Liberals' 2026 budget passes in House of Commons Members of Parliament voted Thursday to pass the 2026 federal budget in the House of Commons, 162 to 151.",
+   "outlet": "Times Colonist + Toronto Star + Global News + CTV News + 6 more (CP), Yukon News",
    "n": 2,
-   "url": "https://www.winnipegfreepress.com/canada/2026/11/20/in-the-news-today-budget-passes-ontario-liberals-vote-o-canada-bill-rcmp-museum",
-   "img": ""
-  },
-  {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Fri 3:10 a.m.",
-   "iso": "2026-11-20T08:10:00+00:00",
-   "title": "Vancouver Council Passes ‘the People’s Audit’",
-   "summary": "",
-   "outlet": "The Tyee, Daily Hive",
-   "n": 2,
-   "url": "https://thetyee.ca/News/2026/11/20/Vancouver-Council-Passes-Peoples-Audit/",
-   "img": ""
+   "url": "https://www.timescolonist.com/national-news/in-the-news-today-budget-passes-ontario-liberals-vote-o-canada-bill-rcmp-museum-13040284",
+   "img": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/236d9110c1ae4375d8240f529bd1360f733c5c2080d4095d917299b6ecff2a10.jpg;w=1200;h=800;mode=crop"
   },
   {
    "desk": "us",
@@ -3829,23 +3981,23 @@
    "t": "Fri 2:17 a.m.",
    "iso": "2026-11-20T07:17:21+00:00",
    "title": "AP reporter says Texas execution was like no other he's witnessed before",
-   "summary": "HUNTSVILLE, Texas (AP) — After covering capital punishment for The Associated Press in Texas since 1983 — and witnessing nearly 500 lethal injections — I've become accustomed to a certain",
-   "outlet": "Toronto Star + Times Colonist (AP), Politico",
+   "summary": "HUNTSVILLE, Texas (AP) — After covering capital punishment for The Associated Press in Texas since 1983 — and witnessing nearly 500 lethal injections — I've become accustomed to a certain routine in the procedure, although I'm reticent to describe an",
+   "outlet": "Times Colonist (AP), Politico",
    "n": 2,
-   "url": "https://www.thestar.com/news/world/united-states/ap-reporter-says-texas-execution-was-like-no-other-he-s-witnessed-before/article_9616552d-2917-5e14-80c8-351b63c7cd14.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/e/aa/eaa135e4-ee13-55e0-b0df-7e1597c78b03/6afff4a1e582a.image.jpg?crop=1624%2C853%2C0%2C113&resize=1200%2C630&order=crop%2Cresize"
+   "url": "https://www.timescolonist.com/world-news/ap-reporter-says-texas-execution-was-like-no-other-hes-witnessed-before-13040237",
+   "img": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/c43daef0befec815e5d393db8efa85136303a961eee35ab8bab2d0af1a0a8528.jpg;w=1200;h=800;mode=crop"
   },
   {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Fri 12:10 a.m.",
-   "iso": "2026-11-20T05:10:59+00:00",
-   "title": "(Not) up in the air: Travelers' trepidations spike as Thanksgiving nears and tech hiccups abound",
-   "summary": "NEW YORK (AP) — At this point, it's practically as much of a Thanksgiving tradition as turkey and stuffing — crowded airports, long lines, jam-packed flights, the ever-present worry about",
-   "outlet": "Toronto Star + PBS NewsHour + Times Colonist (AP), Fox News",
+   "desk": "business",
+   "pic": "chart",
+   "t": "Thu 8:45 p.m.",
+   "iso": "2026-11-20T01:45:19+00:00",
+   "title": "What does The Children’s Place filing for bankruptcy mean for Canadian customers?",
+   "summary": "After The Children’s Place filed for bankruptcy last week in the United States, a retail analyst says the move may immediately affect customers who want to buy gifts during the Christmas season.",
+   "outlet": "CTV News + CP24 + BNN Bloomberg, VOCM",
    "n": 2,
-   "url": "https://www.thestar.com/news/world/united-states/not-up-in-the-air-travelers-trepidations-spike-as-thanksgiving-nears-and-tech-hiccups-abound/article_d04f48bf-00d7-5861-a19e-30dcdd8f5297.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/e/cd/ecd005d1-c375-5da0-8597-4831b022fd70/6affd757284b0.image.jpg?crop=1615%2C848%2C0%2C116&resize=1200%2C630&order=crop%2Cresize"
+   "url": "https://www.ctvnews.ca/business/article/what-does-the-childrens-place-filing-for-bankruptcy-mean-for-canadian-customers/",
+   "img": "https://www.ctvnews.ca/resizer/v2/TIOTKNQCUNBVXFJWP5HGMZ3NF4.jpg?smart=true&auth=d465f9c329f22bffeac41a7c5481a924dc2a5ccde2ac11b0542ab337fbf72be7&width=1200&height=630"
   },
   {
    "desk": "business",
@@ -3858,18 +4010,6 @@
    "n": 2,
    "url": "https://www.ctvnews.ca/regina/article/experts-say-saskatchewan-gas-prices-to-remain-steady-as-winter-approaches/",
    "img": "https://www.ctvnews.ca/resizer/v2/2KT6M76QVBDNLMGI5AKANG7DDM.jpg?smart=true&auth=da1cf45fcb1abaff1be97c15dc443b7174ab0eb0582adf2e23c222e27fcaa87c&width=1200&height=630"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Thu 2:48 p.m.",
-   "iso": "2026-11-19T19:48:18+00:00",
-   "title": "A cyberattack leaks thousands of Chase customer emails and some phone numbers",
-   "summary": "NEW YORK (AP) — Personal information belonging to thousands of JPMorgan Chase customers was leaked onto the internet Thursday after third-party vendors at the bank were targeted in a cyberattack. The leak is unrelated a bank outage earlier this week and the information involved did not include credit card or particularly sensitive personal information, the bank said.",
-   "outlet": "CityNews Winnipeg + CityNews Ottawa + CityNews Montreal + CityNews Edmonton (AP), The Hill",
-   "n": 2,
-   "url": "https://winnipeg.citynews.ca/2026/11/19/a-cyberattack-leaks-thousands-of-chase-customer-emails-and-some-phone-numbers/",
-   "img": "https://winnipeg.citynews.ca/wp-content/blogs.dir/sites/13/2026/01/325c9f9791b0e4e93a57604372d13915e9333d999a584f38efd6efc76e4ec578.jpg"
   },
   {
    "desk": "business",
@@ -3890,7 +4030,7 @@
    "iso": "2026-11-20T04:19:29+00:00",
    "title": "CUPE education workers in Ontario vote in favour of strike mandate",
    "summary": "Education workers represented by the Canadian Union of Public Employees in Ontario have voted in favour of a strike mandate. The Ontario School Board Council of Unions says voting members were more than 94 per cent in favour. It represents educational assistants, early childhood educators, custodians, secretaries and library staff, among other workers. The union […]",
-   "outlet": "CityNews Ottawa + CTV News + CP24 + Toronto Star + 1 more (CP)",
+   "outlet": "CityNews Ottawa + CTV News + CP24 + CityNews (CP)",
    "n": 1,
    "url": "https://ottawa.citynews.ca/2026/11/19/cupe-education-workers-in-ontario-vote-in-favour-of-strike-mandate/",
    "img": "https://ottawa.citynews.ca/wp-content/blogs.dir/sites/4/2026/11/19/cupe-flags.jpg"
@@ -3922,18 +4062,6 @@
   {
    "desk": "business",
    "pic": "chart",
-   "t": "Thu 8:45 p.m.",
-   "iso": "2026-11-20T01:45:19+00:00",
-   "title": "What does The Children’s Place filing for bankruptcy mean for Canadian customers?",
-   "summary": "After The Children’s Place filed for bankruptcy last week in the United States, a retail analyst says the move may immediately affect customers who want to buy gifts during the Christmas season.",
-   "outlet": "CTV News + CP24 + BNN Bloomberg",
-   "n": 1,
-   "url": "https://www.ctvnews.ca/business/article/what-does-the-childrens-place-filing-for-bankruptcy-mean-for-canadian-customers/",
-   "img": "https://www.ctvnews.ca/resizer/v2/TIOTKNQCUNBVXFJWP5HGMZ3NF4.jpg?smart=true&auth=d465f9c329f22bffeac41a7c5481a924dc2a5ccde2ac11b0542ab337fbf72be7&width=1200&height=630"
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
    "t": "Thu 8:09 p.m.",
    "iso": "2026-11-20T01:09:10+00:00",
    "title": "Decision to stop work on banning thermal coal exports was political: ECCC officials",
@@ -3942,6 +4070,30 @@
    "n": 1,
    "url": "https://www.ctvnews.ca/politics/article/decision-to-stop-work-on-banning-thermal-coal-exports-was-political-eccc-officials/",
    "img": "https://www.ctvnews.ca/resizer/v2/JCC7TFHX4UUCT4Z7JEQG25XEZU.jpg?smart=true&auth=43543b46acb89e0f2d79b2b8010f32ece413a2e3e6c2febbbdae2f1ddd09dcec&width=1200&height=630"
+  },
+  {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Thu 7:31 p.m.",
+   "iso": "2026-11-20T00:31:36+00:00",
+   "title": "Walmart stocks up on inflation-weary shoppers ahead of the holidays",
+   "summary": "The discount giant expects a “strong holiday season” as cost concerns drive customers to retailers that are cutting prices and pushing value deals.",
+   "outlet": "NBC News",
+   "n": 1,
+   "url": "https://www.nbcnews.com/business/consumer/walmart-holiday-shopping-sales-outlook-rcna610193",
+   "img": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-11/261119-walmart-mb-1356-e96235.jpg"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Thu 6:14 p.m.",
+   "iso": "2026-11-19T23:14:27+00:00",
+   "title": "College of physicians not investigating MP over MAID comments",
+   "summary": "The College of Physicians and Surgeons of Ontario says it’s not investigating a member of Parliament who received a complaint over comments he made about medical assistance in dying.",
+   "outlet": "CP24 + Toronto Star + CityNews Vancouver + CityNews Ottawa + 1 more (CP)",
+   "n": 1,
+   "url": "https://www.cp24.com/news/canada/2026/11/19/college-of-physicians-not-investigating-mp-over-maid-comments/",
+   "img": "https://www.cp24.com/resizer/v2/GN37GDG7U4TDILMQGGOZJNOAKE.jpg?smart=true&auth=3e21ccc38ac10245d71cf5c0c5dd65ac71c47cf875f8c73d90f66be43398699b&width=1200&height=630"
   }
  ],
  "reads": [
@@ -4051,20 +4203,20 @@
    "o": "CTV News",
    "ca": true,
    "h": [
+    "Little hope of averting Stellantis’ sale ahead of Friday meeting with Joly",
     "Canada makes case for U.S. trade deal sooner rather than later in private meeting",
+    "Do women need annual pelvic ultrasounds? Here’s what doctors say",
     "Trump trade adviser hurls insults at federal government as Canada-U.S. trade talks heat up",
     "Canada’s most wanted list gets an AI-powered makeover",
-    "Woman rescued after being held against her will for 'several days,' Alberta police say",
-    "Cincinnati Zoo says Fiona the hippo has died, days after ingesting a visitor’s hat",
-    "What does The Children’s Place filing for bankruptcy mean for Canadian customers?"
+    "Woman rescued after being held against her will for 'several days,' Alberta police say"
    ],
    "u": [
+    "https://www.ctvnews.ca/politics/article/little-hope-of-averting-stellantis-sale-ahead-of-friday-meeting-with-joly/",
     "https://www.ctvnews.ca/world/trumps-tariffs/article/canada-makes-case-for-us-trade-deal-sooner-rather-than-later-in-private-meeting/",
+    "https://www.ctvnews.ca/health/article/do-women-need-annual-pelvic-ultrasounds-heres-what-doctors-say/",
     "https://www.ctvnews.ca/politics/article/trump-trade-adviser-hurls-insults-at-federal-government-as-canada-us-trade-talks-heat-up/",
     "https://www.ctvnews.ca/canada/article/canadas-most-wanted-list-gets-an-ai-powered-makeover/",
-    "https://www.ctvnews.ca/calgary/article/woman-rescued-by-airdrie-rcmp-after-being-held-hostage-for-several-days/",
-    "https://www.ctvnews.ca/climate-and-environment/article/cincinnati-zoo-hopes-a-little-shake-will-help-fiona-the-hippo-pass-a-swallowed-hat/",
-    "https://www.ctvnews.ca/business/article/what-does-the-childrens-place-filing-for-bankruptcy-mean-for-canadian-customers/"
+    "https://www.ctvnews.ca/calgary/article/woman-rescued-by-airdrie-rcmp-after-being-held-hostage-for-several-days/"
    ]
   },
   {
@@ -4205,7 +4357,7 @@
     "Justice Department seeks dismissal of its lawsuit in Alaska Senate race",
     "Trump’s pick for agency providing election security says Jan. 6 was not an attack",
     "Trump touts ‘unbelievable’ talks with Putin and Xi, though peace deals remain elusive",
-    "White House national cyber director is leaving the administration",
+    "Jamie Raskin says Trump officials are ‘openly flouting’ the law, citing Signal app use",
     "Why Anthropic’s $1.7 trillion debut wasn’t enough to save the market from a drop"
    ],
    "u": [
@@ -4213,8 +4365,28 @@
     "https://www.nbcnews.com/politics/2026-election/doj-seeks-dismissal-lawsuit-alaska-senate-dan-sullivan-mary-peltola-rcna610343",
     "https://www.nbcnews.com/politics/trump-administration/trumps-pick-agency-providing-election-security-says-jan-6-was-not-atta-rcna610298",
     "https://www.nbcnews.com/politics/donald-trump/trump-touts-unbelievable-summit-putin-xi-though-peace-deals-remain-elu-rcna610014",
-    "https://www.nbcnews.com/politics/white-house/national-cyber-director-sean-cairncross-leaving-kirsten-davies-replaci-rcna610329",
+    "https://www.nbcnews.com/politics/congress/rep-jamie-raskin-says-trump-officials-are-openly-flouting-law-citing-s-rcna610226",
     "https://www.nbcnews.com/business/markets/anthropic-ipo-nasadq-ai-concerns-rcna610273"
+   ]
+  },
+  {
+   "o": "CBS News",
+   "ca": false,
+   "h": [
+    "Trump meeting with Putin and Xi in China appears to achieve little",
+    "White House national cyber director leaving his post",
+    "Stocks plunge as investors take cover amid growing uncertainty",
+    "Iran may be working on biological weapons, Trump says",
+    "Marine Corps hero under federal investigation",
+    "Meet Anthropic's 7 co-founders, now worth about $20 billion each"
+   ],
+   "u": [
+    "https://www.cbsnews.com/news/trump-xi-putin-china-apec-summit/",
+    "https://www.cbsnews.com/news/white-house-national-cyber-director-sean-cairncross-leaving/",
+    "https://www.cbsnews.com/news/dow-tumbles-wall-street-ai-fears/",
+    "https://www.cbsnews.com/live-updates/iran-war-us-gulf-retaliation-strikes-strait-of-hormuz/",
+    "https://www.cbsnews.com/news/marine-corps-hero-brad-kasal-federal-investigation/",
+    "https://www.cbsnews.com/news/anthropic-ipo-founders-net-worth/"
    ]
   },
   {
@@ -4266,7 +4438,7 @@
     "Law Myanmar committed genocide against Rohingya minority, world’s top court rules",
     "Analysis Myanmar ruling gives new relevance to genocide convention and is ‘full of messages’ for Israel",
     "‘Everyone struggled for this justice’ Tears in court as Rohingya vindicated in Myanmar genocide ruling",
-    "Live Cop31: crunch time as deeply divided climate talks enter final day"
+    "Europe live EU says Brexit reset deal with UK will not take effect without agreement on tuition fees"
    ],
    "u": [
     "",
@@ -4307,7 +4479,7 @@
     "url": "https://www.youtube.com/watch?v=v0-JdZfzsnI",
     "img": "https://i.ytimg.com/vi/v0-JdZfzsnI/hqdefault.jpg",
     "story": "Senate meets for legislative business as Trump returns from Putin-Xi t",
-    "watching": "47"
+    "watching": "48"
    },
    {
     "net": "LiveNOW from FOX",
@@ -4316,7 +4488,7 @@
     "url": "https://www.youtube.com/watch?v=CiursXbr7kk",
     "img": "https://i.ytimg.com/vi/CiursXbr7kk/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "336",
+    "watching": "334",
     "rolling": true
    },
    {
@@ -4326,7 +4498,7 @@
     "url": "https://www.youtube.com/watch?v=vI43BhILqVA",
     "img": "https://i.ytimg.com/vi/vI43BhILqVA/hqdefault.jpg",
     "story": "Students protest in Italy",
-    "watching": "18"
+    "watching": "15"
    },
    {
     "net": "Sky News",
@@ -4335,16 +4507,7 @@
     "url": "https://www.youtube.com/watch?v=smg_4SEdgm8",
     "img": "https://i.ytimg.com/vi/smg_4SEdgm8/hqdefault.jpg",
     "story": "PM arrives in Brussels for long-awaited EU summit",
-    "watching": "130"
-   },
-   {
-    "net": "Sky News",
-    "r": "world",
-    "title": "PM in Brussels for Brexit reset talks with EU leaders | Mornings with Jones and Melbourne",
-    "url": "https://www.youtube.com/watch?v=mT_oMyFx0f0",
-    "img": "https://i.ytimg.com/vi/mT_oMyFx0f0/hqdefault.jpg",
-    "story": "PM in Brussels for Brexit reset talks with EU leaders",
-    "watching": "1K"
+    "watching": "769"
    }
   ],
   "upcoming": [
@@ -4428,6 +4591,15 @@
  "pm": [],
  "blogs_auto": [
   {
+   "net": "The Guardian",
+   "story": "EU says Brexit reset deal with UK will not come into force without agr",
+   "title": "EU says Brexit reset deal with UK will not come into force without agreement on tuition fees – live",
+   "url": "https://www.theguardian.com/world/live/2026/nov/20/uk-eu-european-union-brexit-deal-andy-burnham-latest-news-updates",
+   "updated": "2026-11-20T10:03:22+00:00",
+   "ended": false,
+   "img": "https://i.guim.co.uk/img/media/60fe7afcc38cece0b30217ae61a1689ce6c6e1f0/176_0_1854_1483/master/1854.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=d29f317f4da17545b59bce5b6dda3ff7"
+  },
+  {
    "net": "Politico",
    "story": "Don’t let employees auto-delete messages, top House Democrat warns DOJ",
    "title": "Don’t let employees auto-delete messages, top House Democrat warns DOJ, DHS",
@@ -4444,20 +4616,29 @@
    "updated": "2026-11-20T09:44:00+00:00",
    "ended": false,
    "img": ""
-  },
-  {
-   "net": "The Guardian",
-   "story": "UK and EU close in on Brexit reset deal but tuition fees remain a stum",
-   "title": "UK and EU close in on Brexit reset deal but tuition fees remain a stumbling block – live",
-   "url": "https://www.theguardian.com/world/live/2026/nov/20/uk-eu-european-union-brexit-deal-andy-burnham-latest-news-updates",
-   "updated": "2026-11-20T09:55:17+00:00",
-   "ended": false,
-   "img": "https://i.guim.co.uk/img/media/af3956cdcf10af7df210962e593a86f0d4b45353/0_144_2647_2117/master/2647.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=74737c11e9babc83e82a14b600ceff61"
   }
  ],
  "related": {},
  "canangle": {
-  "auto-89dcdb50": {
+  "auto-8871d02c": {
+   "story": "Meeting between Trump, Putin and Xi was 'a photo-op', says Trump former advisor",
+   "us": true,
+   "specific": 1,
+   "stories": [
+    {
+     "t": "Thu 2:33 p.m.",
+     "iso": "2026-11-19T19:33:17+00:00",
+     "outlet": "CBC News",
+     "title": "With Putin in the room, Carney condemns Russia's illegal invasion of Ukraine",
+     "url": "https://www.cbc.ca/news/politics/carney-putin-apec-ukraine-9.7428573?cmp=rss",
+     "ca": true,
+     "tie": ""
+    }
+   ],
+   "official": [],
+   "views": []
+  },
+  "auto-1a406006": {
    "story": "DOJ moves to dismiss lawsuit over Alaska Senate race",
    "us": true,
    "specific": 2,
@@ -4477,24 +4658,6 @@
      "outlet": "CityNews Halifax",
      "title": "LeBlanc to chair first meeting of Canada-U.S. advisory committee since midterms",
      "url": "https://halifax.citynews.ca/2026/11/19/leblanc-to-chair-first-meeting-of-canada-u-s-advisory-committee-since-midterms/",
-     "ca": true,
-     "tie": ""
-    }
-   ],
-   "official": [],
-   "views": []
-  },
-  "auto-9be8a937": {
-   "story": "Husband of American detained in Russia says case was not mentioned during Trump meeting with Putin",
-   "us": true,
-   "specific": 1,
-   "stories": [
-    {
-     "t": "Thu 2:33 p.m.",
-     "iso": "2026-11-19T19:33:17+00:00",
-     "outlet": "CBC News",
-     "title": "With Putin in the room, Carney condemns Russia's illegal invasion of Ukraine",
-     "url": "https://www.cbc.ca/news/politics/carney-putin-apec-ukraine-9.7428573?cmp=rss",
      "ca": true,
      "tie": ""
     }
@@ -4727,6 +4890,24 @@
    "official": [],
    "views": []
   },
+  "https://www.foxnews.com/politics/trump-face-reporters-historic-xi-putin-talks-war-questions-linger": {
+   "story": "Trump will face reporters after historic Xi-Putin talks as war questions linger",
+   "us": true,
+   "specific": 1,
+   "stories": [
+    {
+     "t": "Thu 2:33 p.m.",
+     "iso": "2026-11-19T19:33:17+00:00",
+     "outlet": "CBC News",
+     "title": "With Putin in the room, Carney condemns Russia's illegal invasion of Ukraine",
+     "url": "https://www.cbc.ca/news/politics/carney-putin-apec-ukraine-9.7428573?cmp=rss",
+     "ca": true,
+     "tie": ""
+    }
+   ],
+   "official": [],
+   "views": []
+  },
   "https://thehill.com/blogs/in-the-know/6232403-melania-trump-prime-video-series/": {
    "story": "Melania Trump marks world premiere of Prime Video docuseries",
    "us": true,
@@ -4770,97 +4951,13 @@
  },
  "bds": [
   {
-   "id": "bd-auto-9be8a937",
+   "id": "bd-auto-1a406006",
    "auto": true,
    "desk": "United States",
    "status": "Ongoing",
-   "at": "2026-11-20T01:26:16+00:00",
-   "exact": true,
-   "img": "live/img/auto-9be8a937-14d8ec69ab.jpg",
-   "credit": "via PBS NewsHour",
-   "pic": "globe",
-   "h": "Inside the historic summit between Trump, Xi and Putin",
-   "lede": "It was the summit seen around the world. The first-ever trilateral meeting between the leaders of the United States, China and Russia resulted in a joint statement that included promises to release more oil and hold formal talks about nuclear weapons. Nick Schifrin reports from Shenzhen.",
-   "newl": "Now carried by 6 independent newsrooms.",
-   "rows": [
-    [
-     "CBS News",
-     "Harold Jezler is the husband of Olga Jezler, an American who has been detained in Russia for over four years. He joins \"The Takeout\" to share details on his wife's condition and call for her safe return.",
-     [
-      1
-     ]
-    ],
-    [
-     "PBS NewsHour",
-     "It was the summit seen around the world. The first-ever trilateral meeting between the leaders of the United States, China and Russia resulted in a joint statement that included promises to release more oil and hold formal talks about nuclear weapons. Nick Schifrin reports from Shenzhen.",
-     [
-      2
-     ]
-    ],
-    [
-     "CBC News",
-     "U.S. President Donald Trump greets Russian President Vladimir Putin like an old pal at a reunion as the leaders of the three largest nuclear powers sit down for their first-ever trilateral meeting. Power & Politics asks former Canadian ambassador to Ukraine Roman Waschuk what implications this…",
-     [
-      3
-     ]
-    ],
-    [
-     "ABC News",
-     "Doug Lute, former U.S. ambassador to NATO, says President Donald Trump referring to Putin and Xi as friends is \"concerning for America's allies.\"",
-     [
-      5
-     ]
-    ],
-    [
-     "BBC News",
-     "While the presidents have previously met for one-on-one meetings, this is their first trilateral discussion.",
-     [
-      6
-     ]
-    ]
-   ],
-   "src": [
-    [
-     "CBS News",
-     "Husband of American detained in Russia says case was not mentioned during Trump meeting with Putin",
-     "https://www.cbsnews.com/video/husband-of-american-detained-in-russia-speaks-out/"
-    ],
-    [
-     "PBS NewsHour",
-     "Inside the historic summit between Trump, Xi and Putin",
-     "https://www.pbs.org/newshour/show/inside-the-historic-summit-between-trump-xi-and-putin"
-    ],
-    [
-     "CBC News",
-     "Trump greets 'my friend' Putin at China summit",
-     "https://www.cbc.ca/player/play/video/9.7429162"
-    ],
-    [
-     "The Hill",
-     "Hunter Biden slams Trump for ‘great betrayal’ after calling Putin ‘friend’",
-     "https://thehill.com/policy/international/6231503-hunter-biden-criticizes-trump-putin/"
-    ],
-    [
-     "ABC News",
-     "WATCH: Trump calls Putin, Xi his friends after meeting",
-     "https://abcnews.com/video/138294590/"
-    ],
-    [
-     "BBC News",
-     "Trump, Putin and Xi release 'peace declaration' after historic meeting",
-     "https://www.bbc.co.uk/news/articles/c623j4ln97x7o?at_medium=RSS&at_campaign=rss"
-    ]
-   ],
-   "lead": 2
-  },
-  {
-   "id": "bd-auto-89dcdb50",
-   "auto": true,
-   "desk": "United States",
-   "status": "Developing",
    "at": "2026-11-20T03:55:45+00:00",
    "exact": true,
-   "img": "live/img/auto-89dcdb50-6394a782b6.jpg",
+   "img": "live/img/auto-1a406006-6394a782b6.jpg",
    "credit": "via CBC News",
    "pic": "globe",
    "h": "Trump administration moves to drop lawsuit challenging Alaska Senate election result",
@@ -4894,13 +4991,6 @@
      [
       6
      ]
-    ],
-    [
-     "Toronto Star",
-     "JUNEAU, Alaska (AP) — The Trump administration on Thursday moved to effectively drop its lawsuit that sought to block the certification of Democrat Mary Peltola's victory in Alaska's U.S. Senate",
-     [
-      7
-     ]
     ]
    ],
    "src": [
@@ -4933,16 +5023,6 @@
      "NBC News",
      "Justice Department seeks dismissal of its lawsuit in Alaska Senate race",
      "https://www.nbcnews.com/politics/2026-election/doj-seeks-dismissal-lawsuit-alaska-senate-dan-sullivan-mary-peltola-rcna610343"
-    ],
-    [
-     "Toronto Star",
-     "Trump administration moves to have lawsuit dismissed in challenge to Alaska's US Senate race",
-     "https://www.thestar.com/news/world/united-states/trump-administration-moves-to-have-lawsuit-dismissed-in-challenge-to-alaska-s-us-senate-race/article_0b6899e5-6ff3-5ef4-b593-b63b8bf4cf21.html"
-    ],
-    [
-     "CKOM / PAnow",
-     "Trump administration moves to have lawsuit dismissed in challenge to Alaska’s US Senate race",
-     "https://www.ckom.com/2026/11/19/trump-administration-moves-to-have-lawsuit-dismissed-in-challenge-to-alaskas-us-senate-race/"
     ]
    ],
    "lead": 3
@@ -5677,5 +5757,11 @@
  "geo_blocked": [
   "-NabWfv-VdA"
  ],
- "noembed": []
+ "noembed": [
+  "J3FV4iY8p5w",
+  "L6qtnHZxwEw",
+  "NuEr0Q_AS6U",
+  "ldElU-Q5Qyo",
+  "t_HBrWb84eY"
+ ]
 }
