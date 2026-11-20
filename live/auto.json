@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-20T17:13:47.421952+00:00",
- "checkedLabel": "Fri 12:13 p.m.",
+ "checked": "2026-11-20T17:19:16.646187+00:00",
+ "checkedLabel": "Fri 12:19 p.m.",
  "stories": [
   {
    "key": "top",
@@ -37,6 +37,24 @@
   }
  ],
  "wire": [
+  [
+   "Fri 12:16 p.m.",
+   "Latest",
+   "Major construction set to disrupt King Street West through 2027",
+   "CTV News",
+   "https://www.ctvnews.ca/toronto/article/major-construction-set-to-disrupt-king-street-west-through-2027/",
+   "2026-11-20T17:16:04+00:00",
+   3
+  ],
+  [
+   "Fri 12:13 p.m.",
+   "World",
+   "Russian missiles land in Poland, as Europe held military drills nearby. NATO calls it a violation",
+   "CTV News",
+   "https://www.ctvnews.ca/world/russia-ukraine-war/article/russia-bombards-ukraine-killing-at-least-8-after-putin-vowed-retaliation-for-kerch-bridge-attack/",
+   "2026-11-20T17:13:11+00:00",
+   8
+  ],
   [
    "Fri 12:12 p.m.",
    "World",
@@ -102,21 +120,21 @@
   ],
   [
    "Fri 12:05 p.m.",
+   "Latest",
+   "Dissident sues Iranian regime over assassination plots",
+   "CBS News",
+   "https://www.cbsnews.com/video/dissident-sues-iranian-regime-over-assassination-plots/",
+   "2026-11-20T17:05:47+00:00",
+   1
+  ],
+  [
+   "Fri 12:05 p.m.",
    "World",
    "LeBlanc gives update on U.S. trade talks to Canada-U.S. advisory committee",
    "CTV News",
    "https://www.ctvnews.ca/world/trumps-tariffs/article/leblanc-gives-update-on-us-trade-talks-to-canada-us-advisory-committee/",
    "2026-11-20T17:05:25+00:00",
    3
-  ],
-  [
-   "Fri 12:01 p.m.",
-   "World",
-   "Russian missiles land in Poland, as Europe held military drills nearby. NATO calls it a violation",
-   "CTV News",
-   "https://www.ctvnews.ca/world/russia-ukraine-war/article/russia-bombards-ukraine-killing-at-least-8-after-putin-vowed-retaliation-for-kerch-bridge-attack/",
-   "2026-11-20T17:01:28+00:00",
-   10
   ],
   [
    "Fri 12:01 p.m.",
@@ -243,24 +261,6 @@
    "https://www.cbsnews.com/news/plot-assassinate-sikh-dissident-nyc-prison-sentence/",
    "2026-11-20T16:45:54+00:00",
    1
-  ],
-  [
-   "Fri 11:45 a.m.",
-   "World",
-   "Cost of living protests sweep across Europe",
-   "BBC News",
-   "https://www.bbc.co.uk/news/videos/c6dx12ppeqn4o?at_medium=RSS&at_campaign=rss",
-   "2026-11-20T16:45:34+00:00",
-   5
-  ],
-  [
-   "Fri 11:44 a.m.",
-   "World",
-   "‘No shortage of depraved men’ willing to kill British woman on porn site Motherless, U.S. court hears",
-   "CTV News",
-   "https://www.ctvnews.ca/world/article/no-shortage-of-depraved-men-willing-to-kill-british-woman-on-porn-site-motherless-us-court-hears/",
-   "2026-11-20T16:44:26+00:00",
-   2
   ]
  ],
  "blogs": [
@@ -309,6 +309,14 @@
   },
   {
    "score": 17,
+   "title": "Canadian negotiators dispel idea Canada can just play for time in trade talks with Trump",
+   "url": "https://www.ctvnews.ca/world/trumps-tariffs/article/canadian-negotiators-dispel-idea-canada-can-just-play-for-time-in-trade-talks-with-trump/",
+   "outlets": 16,
+   "why": [],
+   "theme": ""
+  },
+  {
+   "score": 17,
    "title": "Hopes dim ahead of high-stakes meeting with Stellantis to avert Brampton plant sale",
    "url": "https://www.ctvnews.ca/politics/article/little-hope-of-averting-stellantis-sale-ahead-of-friday-meeting-with-joly/",
    "outlets": 11,
@@ -328,14 +336,6 @@
    "theme": ""
   },
   {
-   "score": 16,
-   "title": "LIVE:  President Trump to hold news conference following Asia trip",
-   "url": "https://abcnews.com/video/41463246/",
-   "outlets": 14,
-   "why": [],
-   "theme": ""
-  },
-  {
    "score": 15,
    "title": "From hockey game to eateries to door-knocking, Poilievre makes repeated visits to Brantford-Brant South",
    "url": "https://www.brantfordexpositor.ca/news/from-hockey-game-to-eateries-to-door-knocking-poilievre-makes-repeated-visits-to-brantford-brant-south/",
@@ -348,11 +348,13 @@
    "theme": ""
   },
   {
-   "score": 14,
-   "title": "Canadian negotiators dispel idea Canada can just play for time in trade talks with Trump",
-   "url": "https://www.ctvnews.ca/world/trumps-tariffs/article/canadian-negotiators-dispel-idea-canada-can-just-play-for-time-in-trade-talks-with-trump/",
-   "outlets": 12,
-   "why": [],
+   "score": 10,
+   "title": "Nasdaq wipes out 2026 gains as Anthropic and AI stocks push lower",
+   "url": "https://www.cbc.ca/news/business/anthropic-ipo-markets-today-9.7429534",
+   "outlets": 5,
+   "why": [
+    "CBC News front #1"
+   ],
    "theme": ""
   },
   {
@@ -384,16 +386,36 @@
   },
   {
    "score": 9,
-   "title": "Tech stocks pull U.S. markets lower, Anthropic shares fall",
-   "url": "https://www.cbc.ca/news/business/anthropic-ipo-markets-today-9.7429534",
-   "outlets": 4,
-   "why": [
-    "CBC News front #2"
-   ],
+   "title": "Audacious California train thieves film multimillion-dollar robberies",
+   "url": "https://www.cbsnews.com/news/california-train-theft-ring-arrests/",
+   "outlets": 7,
+   "why": [],
    "theme": ""
   }
  ],
  "canada": [
+  {
+   "t": "Fri 12:16 p.m.",
+   "iso": "2026-11-20T17:16:41.833000+00:00",
+   "region": "N.L.",
+   "title": "Bay du Nord offshore oil project off N.L. clears last major regulatory hurdle",
+   "summary": "Whether or not the Bay du Nord offshore oil project moves ahead is now up to the companies behind it, as the project has secured its last milestone approval from government.",
+   "outlet": "CBC News (CP)",
+   "n": 1,
+   "url": "https://www.cbc.ca/news/canada/newfoundland-labrador/bay-du-nord-offshore-oil-project-off-n-l-clears-last-major-regulatory-hurdle-9.7429538",
+   "img": "https://i.cbc.ca/ais/6e9891c9-f4b5-48db-a1f7-f38c1b0c2ee3,1768940155895/full/max/0/default.jpg?im=Crop%2Crect%3D%2859%2C0%2C1236%2C695%29%3BResize%3D620"
+  },
+  {
+   "t": "Fri 12:14 p.m.",
+   "iso": "2026-11-20T17:14:28.289000+00:00",
+   "region": "Alberta",
+   "title": "Calgary Co-op not taking care of vulnerable employees, family member says",
+   "summary": "A group of Calgary Co-op employees, many of whom have disabilities, are facing a difficult choice: take fewer hours and less benefits or go on leave. For one Calgary man who’s worked for the company for almost 30 years, neither option is a good one.",
+   "outlet": "CBC News",
+   "n": 1,
+   "url": "https://www.cbc.ca/news/canada/calgary/calgary-co-op-employees-disability-9.7429802",
+   "img": "https://i.cbc.ca/ais/ef32a469-1bb7-4587-afa9-e2246e728b79,1795190037394/full/max/0/default.jpg?im=Crop%2Crect%3D%28161%2C56%2C1401%2C788%29%3BResize%3D620"
+  },
   {
    "t": "Fri 12:06 p.m.",
    "iso": "2026-11-20T17:06:03+00:00",
@@ -470,17 +492,6 @@
    "n": 1,
    "url": "https://www.cbc.ca/news/canada/newfoundland-labrador/st-johns-foot-patrols-funding-9.7429497",
    "img": "https://i.cbc.ca/ais/534d18ea-70e2-4a68-a9fb-a44f639c799f,1795178227118/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C444%2C4032%2C2268%29%3BResize%3D620"
-  },
-  {
-   "t": "Fri 10:56 a.m.",
-   "iso": "2026-11-20T15:56:16.786000+00:00",
-   "region": "Alberta",
-   "title": "Province to install ‘City of Champions’ signs on highways into Edmonton",
-   "summary": "After a historic Grey Cup victory for the Edmonton Elks, questions whirled around about whether the city should reinstate the “City of Champions” slogan on its welcome sign. Alberta’s Transportation Minister, Devin Dreeshen, says he wants to make that happen.",
-   "outlet": "CBC News",
-   "n": 1,
-   "url": "https://www.cbc.ca/news/canada/edmonton/city-of-champions-sign-edmonton-9.7429428",
-   "img": "https://i.cbc.ca/ais/c1ef960f-0344-4673-95e0-604fa246ac38,1795145794648/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C137%2C2048%2C1152%29%3BResize%3D620"
   },
   {
    "t": "Fri 10:21 a.m.",
@@ -580,17 +591,6 @@
    "n": 1,
    "url": "https://www.halifaxexaminer.ca/data-centres/nova-scotians-ask-questions-about-digital-sovereignty-diesel-generators-wind-farms-at-public-sessions-on-everwinds-ai-data-centre/",
    "img": "https://www.halifaxexaminer.ca/wp-content/uploads/2026/11/Final-public-session-1-scaled.jpg"
-  },
-  {
-   "t": "Fri 6:00 a.m.",
-   "iso": "2026-11-20T11:00:00+00:00",
-   "region": "Saskatchewan",
-   "title": "Threatening message about City of Weyburn pool project sparks calls to improve discourse",
-   "summary": "The now-deleted comment, which made reference to shooting city officials, is part of \"a broader pattern of hostile and personally directed comments toward members of City Council and municipal employees across the country,\" the city said in a statement.",
-   "outlet": "CBC News",
-   "n": 1,
-   "url": "https://www.cbc.ca/news/canada/saskatchewan/threatening-message-about-city-of-weyburn-pool-project-sparks-calls-to-improve-discourse-9.7428720",
-   "img": "https://i.cbc.ca/ais/1.5054332,1795122750306/full/max/0/default.jpg?im=Crop%2Crect%3D%28847%2C574%2C2975%2C1673%29%3BResize%3D620"
   }
  ],
  "auto": {
@@ -598,19 +598,302 @@
   "stale_since": "2026-10-28T00:15:00+00:00",
   "stories": [
    {
+    "key": "auto-2cdf44d6",
+    "words": [
+     "arabia",
+     "grand",
+     "theft",
+     "auto",
+     "now",
+     "vi"
+    ],
+    "score": 16,
+    "outlets": 4,
+    "carriers": 7,
+    "tag": "Breaking",
+    "title": "Sales of 'Grand Theft Auto VI' skyrocket as the series makes its return after 13-year absence",
+    "url": "https://www.bnnbloomberg.ca/business/company-news/2026/11/20/sales-of-grand-theft-auto-vi-skyrocket-as-the-series-makes-its-return-after-13-year-absence/",
+    "outlet": "BNN Bloomberg",
+    "t": "Fri 11:27 a.m.",
+    "iso": "2026-11-20T16:27:43+00:00",
+    "summary": "Sales of “Grand Theft Auto VI” are skyrocketing, as gamers’ insatiable appetite for the series continues. The game has hit US$2.36 billion in revenue.",
+    "first": {
+     "outlet": "CBC News",
+     "url": "https://www.cbc.ca/news/entertainment/gta6-parents-kids-tips-9.7425673",
+     "t": "Fri 8:00 a.m.",
+     "title": "Your kid wants to play Grand Theft Auto VI? Here's what you need to know",
+     "iso": "2026-11-20T13:00:00+00:00"
+    },
+    "newest": "2026-11-20T16:27:43+00:00",
+    "photo": {
+     "src": "live/img/auto-2cdf44d6-bf31cba098.jpg",
+     "orig": "https://www.bnnbloomberg.ca/resizer/v2/YONIEL4DJRGM5J3UB5P6FWG2WA.jpg?smart=true&auth=476999f0be39392723a6dbba974bc2a1dce6dfcd42bcef1d1b7642c195c6c37b&width=1200&height=630",
+     "caption": "People walk past a billboard announcing the release of the \"Grand Theft Auto VI\" video game near Times Square, Tuesday, Nov. 17, 2026, in New York. (AP Photo/Yuki Iwamura). — via BNN Bloomberg",
+     "alt": "People walk past a billboard announcing the release of the \"Grand Theft Auto VI\" video game near Times Square, Tuesday, Nov. 17, 2026, in New York. (AP Photo/Yu",
+     "outlet": "BNN Bloomberg",
+     "url": "https://www.bnnbloomberg.ca/business/company-news/2026/11/20/sales-of-grand-theft-auto-vi-skyrocket-as-the-series-makes-its-return-after-13-year-absence/",
+     "since": "2026-11-20T17:22:40.848310+00:00"
+    },
+    "photo_seen": [
+     "https://www.bnnbloomberg.ca/resizer/v2/YONIEL4DJRGM5J3UB5P6FWG2WA.jpg?smart=true&auth=476999f0be39392723a6dbba974bc2a1dce6dfcd42bcef1d1b7642c195c6c37b&width=1200&height=630",
+     "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/4f2c6e611f27f193c14ce826fb9177d4608ee47c31737c1a3f2f6d50e421ac3d.jpg;w=1200;h=1200;mode=crop"
+    ],
+    "photos": [
+     {
+      "src": "live/img/auto-2cdf44d6-bf31cba098.jpg",
+      "orig": "https://www.bnnbloomberg.ca/resizer/v2/YONIEL4DJRGM5J3UB5P6FWG2WA.jpg?smart=true&auth=476999f0be39392723a6dbba974bc2a1dce6dfcd42bcef1d1b7642c195c6c37b&width=1200&height=630",
+      "caption": "People walk past a billboard announcing the release of the \"Grand Theft Auto VI\" video game near Times Square, Tuesday, Nov. 17, 2026, in New York. (AP Photo/Yuki Iwamura). — via BNN Bloomberg",
+      "alt": "People walk past a billboard announcing the release of the \"Grand Theft Auto VI\" video game near Times Square, Tuesday, Nov. 17, 2026, in New York. (AP Photo/Yu",
+      "outlet": "BNN Bloomberg",
+      "url": "https://www.bnnbloomberg.ca/business/company-news/2026/11/20/sales-of-grand-theft-auto-vi-skyrocket-as-the-series-makes-its-return-after-13-year-absence/"
+     },
+     {
+      "src": "live/img/auto-2cdf44d6-3752e7fe76.jpg",
+      "orig": "https://www.cp24.com/resizer/v2/S4YNDEB3VZRYMIX3HYHLRLGGLA.jpg?smart=true&auth=67b06f8a4cc49b2884a34b5377ba0394a2cd1a688e8091c2c4ab1fc4e01d3d25&width=1200&height=630",
+      "caption": "A billboard announcing the release of the \"Grand Theft Auto VI\" video game is displayed near Times Square, Tuesday, Nov. 17, 2026, in New York. (AP Photo/Yuki Iwamura). — via CP24",
+      "alt": "A billboard announcing the release of the \"Grand Theft Auto VI\" video game is displayed near Times Square, Tuesday, Nov. 17, 2026, in New York. (AP Photo/Yuki I",
+      "outlet": "CP24",
+      "url": "https://www.cp24.com/news/money/2026/11/20/saudi-arabia-once-banned-grand-theft-auto-now-its-got-a-stake-in-it/"
+     },
+     {
+      "src": "live/img/auto-2cdf44d6-8a6b1ca786.jpg",
+      "orig": "https://i.cbc.ca/ais/19b4853a-5be9-4956-a2a1-bef036684d99,1794953561393/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C8318%2C4678%29%3BResize%3D620",
+      "caption": "The jumbo screens in Sankofa Square in downtown Toronto display ads for Grand Theft Auto VI on Monday. The latest instalment in the GTA series launched worldwide on Nov. 19. (Evan Mitsui/CBC) — via CBC News",
+      "alt": "The jumbo screens in Sankofa Square in downtown Toronto display ads for Grand Theft Auto VI on Monday. The latest instalment in the GTA series launched worldwid",
+      "outlet": "CBC News",
+      "url": "https://www.cbc.ca/news/entertainment/gta6-parents-kids-tips-9.7425673"
+     },
+     {
+      "src": "live/img/auto-2cdf44d6-76e5f200d7.jpg",
+      "orig": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/4f2c6e611f27f193c14ce826fb9177d4608ee47c31737c1a3f2f6d50e421ac3d.jpg;w=1200;h=1200;mode=crop",
+      "caption": "From: Sales of 'Grand Theft Auto VI' skyrocket as the series makes its return after 13-year absence. — via Times Colonist",
+      "alt": "Sales of 'Grand Theft Auto VI' skyrocket as the series makes its return after 13-year absence",
+      "outlet": "Times Colonist",
+      "url": "https://www.timescolonist.com/the-mix/sales-of-grand-theft-auto-vi-skyrocket-as-the-series-makes-its-return-after-13-year-absence-13041440"
+     }
+    ],
+    "independent": 4,
+    "reports": [
+     {
+      "t": "Fri 11:27 a.m.",
+      "iso": "2026-11-20T16:27:43+00:00",
+      "outlet": "BNN Bloomberg",
+      "title": "Sales of 'Grand Theft Auto VI' skyrocket as the series makes its return after 13-year absence",
+      "url": "https://www.bnnbloomberg.ca/business/company-news/2026/11/20/sales-of-grand-theft-auto-vi-skyrocket-as-the-series-makes-its-return-after-13-year-absence/",
+      "desc": "Sales of “Grand Theft Auto VI” are skyrocketing, as gamers’ insatiable appetite for the series continues. The game has hit US$2.36 billion in revenue."
+     },
+     {
+      "t": "Fri 11:04 a.m.",
+      "iso": "2026-11-20T16:04:51+00:00",
+      "outlet": "Times Colonist",
+      "title": "Sales of 'Grand Theft Auto VI' skyrocket as the series makes its return after 13-year absence",
+      "url": "https://www.timescolonist.com/the-mix/sales-of-grand-theft-auto-vi-skyrocket-as-the-series-makes-its-return-after-13-year-absence-13041440",
+      "desc": ""
+     },
+     {
+      "t": "Fri 11:04 a.m.",
+      "iso": "2026-11-20T16:04:51+00:00",
+      "outlet": "CityNews",
+      "title": "Sales of ‘Grand Theft Auto VI’ skyrocket as the series makes its return after 13-year absence",
+      "url": "https://toronto.citynews.ca/2026/11/20/sales-of-grand-theft-auto-vi-skyrocket-as-the-series-makes-its-return-after-13-year-absence/",
+      "desc": ""
+     },
+     {
+      "t": "Fri 11:04 a.m.",
+      "iso": "2026-11-20T16:04:00+00:00",
+      "outlet": "Toronto Star",
+      "title": "Sales of 'Grand Theft Auto VI' skyrocket as the series makes its return after 13-year absence",
+      "url": "https://www.thestar.com/news/world/sales-of-grand-theft-auto-vi-skyrocket-as-the-series-makes-its-return-after-13-year-absence/article_4fd3752b-6c1a-5594-a3d9-28a90087be0b.html",
+      "desc": ""
+     },
+     {
+      "t": "Fri 9:48 a.m.",
+      "iso": "2026-11-20T14:48:28+00:00",
+      "outlet": "The Hill",
+      "title": "Burchett says you’re a ‘bad parent’ if you let your child play ‘Grand Theft Auto VI’",
+      "url": "https://thehill.com/homenews/house/6232789-gop-rep-warns-parents-gta-6/",
+      "desc": ""
+     },
+     {
+      "t": "Fri 9:23 a.m.",
+      "iso": "2026-11-20T14:23:47+00:00",
+      "outlet": "CP24",
+      "title": "Saudi Arabia once banned Grand Theft Auto. Now it’s got a stake in it",
+      "url": "https://www.cp24.com/news/money/2026/11/20/saudi-arabia-once-banned-grand-theft-auto-now-its-got-a-stake-in-it/",
+      "desc": "Grand Theft Auto, banned in Saudi Arabia until last year, is now being embraced not only by its gamers - a category that includes Crown Prince Mohammed bin Salman - but also by its sovereign wealth fund, which the prince chairs."
+     },
+     {
+      "t": "Fri 8:00 a.m.",
+      "iso": "2026-11-20T13:00:00+00:00",
+      "outlet": "CBC News",
+      "title": "Your kid wants to play Grand Theft Auto VI? Here's what you need to know",
+      "url": "https://www.cbc.ca/news/entertainment/gta6-parents-kids-tips-9.7425673",
+      "desc": "The latest Grand Theft Auto instalment continues in the franchise tradition of riling folks up with its mature content, inevitably boosting the game's illicit allure for kids. Experts share tips on navigating its release with young gamers."
+     }
+    ],
+    "sources": [
+     {
+      "t": "Fri 11:04 a.m.",
+      "primary": false,
+      "outlet": "Toronto Star",
+      "title": "Sales of 'Grand Theft Auto VI' skyrocket as the series makes its return after 13-year absence",
+      "url": "https://www.thestar.com/news/world/sales-of-grand-theft-auto-vi-skyrocket-as-the-series-makes-its-return-after-13-year-absence/article_4fd3752b-6c1a-5594-a3d9-28a90087be0b.html",
+      "desc": "Sales of “Grand Theft Auto VI” are skyrocketing, as gamers' insatiable appetite for the series continues.",
+      "wire": "The Associated Press",
+      "by": [
+       {
+        "outlet": "Toronto Star",
+        "src": "The Associated Press",
+        "byline": "\"Michelle Chapman The Associated Press\" \"Michelle Chapman"
+       },
+       {
+        "outlet": "Times Colonist",
+        "src": "The Associated Press",
+        "byline": "\"Michelle Chapman, The Associated Press\" \r\n             \r\nM"
+       },
+       {
+        "outlet": "CityNews",
+        "src": "The Associated Press",
+        "byline": "8ebed7c4ad73d\"}] \"Michelle Chapman, The Associated Press,\" News Staff \n\t\t\tBy"
+       },
+       {
+        "outlet": "BNN Bloomberg",
+        "src": "The Associated Press",
+        "byline": "\"@type\": \"Person\",\n      \"name\": \"The  Associated Press\",\n      \n    }\n  ]"
+       }
+      ],
+      "copies": [
+       {
+        "outlet": "Times Colonist",
+        "url": "https://www.timescolonist.com/the-mix/sales-of-grand-theft-auto-vi-skyrocket-as-the-series-makes-its-return-after-13-year-absence-13041440"
+       },
+       {
+        "outlet": "CityNews",
+        "url": "https://toronto.citynews.ca/2026/11/20/sales-of-grand-theft-auto-vi-skyrocket-as-the-series-makes-its-return-after-13-year-absence/"
+       },
+       {
+        "outlet": "BNN Bloomberg",
+        "url": "https://www.bnnbloomberg.ca/business/company-news/2026/11/20/sales-of-grand-theft-auto-vi-skyrocket-as-the-series-makes-its-return-after-13-year-absence/"
+       }
+      ]
+     },
+     {
+      "t": "Fri 9:48 a.m.",
+      "primary": false,
+      "outlet": "The Hill",
+      "title": "Burchett says you’re a ‘bad parent’ if you let your child play ‘Grand Theft Auto VI’",
+      "url": "https://thehill.com/homenews/house/6232789-gop-rep-warns-parents-gta-6/",
+      "desc": "px-captcha",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "The Hill",
+        "src": "The Hill",
+        "byline": ""
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Fri 9:23 a.m.",
+      "primary": false,
+      "outlet": "CP24",
+      "title": "Saudi Arabia once banned Grand Theft Auto. Now it’s got a stake in it",
+      "url": "https://www.cp24.com/news/money/2026/11/20/saudi-arabia-once-banned-grand-theft-auto-now-its-got-a-stake-in-it/",
+      "desc": "Grand Theft Auto, banned in Saudi Arabia until last year, is now being embraced not only by its gamers - a category that includes Crown Prince Mohammed bin Salman - but also by its sovereign wealth fund, which the prince chairs.",
+      "wire": "Reuters",
+      "by": [
+       {
+        "outlet": "CP24",
+        "src": "Reuters",
+        "byline": "\"@type\": \"Person\",\n      \"name\": \"Reuters Staff\","
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Fri 8:00 a.m.",
+      "primary": false,
+      "outlet": "CBC News",
+      "title": "Your kid wants to play Grand Theft Auto VI? Here's what you need to know",
+      "url": "https://www.cbc.ca/news/entertainment/gta6-parents-kids-tips-9.7425673",
+      "desc": "The latest Grand Theft Auto instalment continues in the franchise tradition of riling folks up with its mature content, inevitably boosting the game's illicit allure for kids. Experts share tips on navigating its release with young gamers.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "CBC News",
+        "src": "CBC",
+        "byline": "[{\"@type\":\"Person\",\"@id\":\"https://www.cbc.ca/author/jessica-wong-1.3547319/#author\",\"name\":\"Jessica Wong\",}] [{\"@type\":\""
+       }
+      ],
+      "copies": []
+     }
+    ],
+    "replaces_top": false,
+    "events": [],
+    "theme": "",
+    "canada": "general",
+    "canus": false,
+    "incoherent": false,
+    "popular": 0,
+    "us_election": false,
+    "fronts": 1,
+    "fronts_ca": 1,
+    "fronts_who": [
+     "BNN Bloomberg"
+    ],
+    "judgment": "national",
+    "judgment_why": "National: affects some people; carried across the country (national desks).",
+    "weight": 37.5,
+    "videos": [
+     {
+      "net": "CBS News",
+      "url": "https://www.youtube.com/watch?v=OJ-QZ6Wa3HA",
+      "title": "“Grand Theft Auto VI” officially released after 13-year wait",
+      "img": "https://i.ytimg.com/vi/OJ-QZ6Wa3HA/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CP24",
+      "url": "https://www.youtube.com/watch?v=4sjRVYLdaUU",
+      "title": "Torontonians dive into ‘Grand Theft Auto VI’",
+      "img": "https://i.ytimg.com/vi/4sjRVYLdaUU/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CP24",
+      "url": "https://www.youtube.com/watch?v=nlHMStveV2o",
+      "title": "Long lines of fans in Toronto await release of Grand Theft Auto IV in 2008 | From the Archives",
+      "img": "https://i.ytimg.com/vi/nlHMStveV2o/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CP24",
+      "url": "https://www.youtube.com/watch?v=ANnUf0W1wMY",
+      "title": "How much money is 'Grand Theft Auto VI' expected make? Brand expert explains",
+      "img": "https://i.ytimg.com/vi/ANnUf0W1wMY/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     }
+    ]
+   },
+   {
     "key": "auto-2dbd6be2",
     "words": [
      "stellantis",
      "officials",
-     "brampton",
      "showdown",
      "latest",
-     "plant"
+     "plant",
+     "ahead"
     ],
     "score": 17,
     "outlets": 2,
     "carriers": 13,
-    "tag": "Breaking",
+    "tag": "Developing",
     "title": "Joly, Stellantis officials set for latest showdown on Friday",
     "url": "https://www.timescolonist.com/the-mix/joly-stellantis-officials-set-for-latest-showdown-on-friday-13041208",
     "outlet": "Times Colonist",
@@ -632,10 +915,11 @@
      "alt": "Joly, Stellantis officials set for latest showdown on Friday",
      "outlet": "Times Colonist",
      "url": "https://www.timescolonist.com/the-mix/joly-stellantis-officials-set-for-latest-showdown-on-friday-13041208",
-     "since": "2026-11-20T16:46:42.373617+00:00"
+     "since": "2026-11-20T17:22:38.294548+00:00"
     },
     "photo_seen": [
-     "https://www.narcity.com/media-library/joly-stellantis-officials-set-for-latest-showdown.jpg?id=68730939&width=1200&height=600&coordinates=0%2C116%2C0%2C117"
+     "https://www.narcity.com/media-library/joly-stellantis-officials-set-for-latest-showdown.jpg?id=68730939&width=1200&height=600&coordinates=0%2C116%2C0%2C117",
+     "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/d159dd6c316d83a1f0057085746144e56d5c2d32ce1590f945a3945d6b65127e.jpg;w=1200;h=800;mode=crop"
     ],
     "photos": [
      {
@@ -912,16 +1196,7 @@
     "fronts_who": [],
     "judgment": "national",
     "judgment_why": "National: affects some people; carried across the country (8 cities).",
-    "weight": 64,
-    "live": {
-     "state": "now",
-     "net": "Global News",
-     "url": "https://www.youtube.com/watch?v=x7GV5BedGlM",
-     "title": "Melanie Joly, Doug Ford and Lana Payne announce reopening of Ford's Oakville plant",
-     "img": "https://i.ytimg.com/vi/x7GV5BedGlM/hqdefault.jpg",
-     "when": "",
-     "also": []
-    },
+    "weight": 44,
     "videos": [
      {
       "net": "CTV News",
@@ -930,516 +1205,207 @@
       "img": "https://i.ytimg.com/vi/gETUJTV1ST0/hqdefault.jpg",
       "rec": false,
       "up": ""
-     },
-     {
-      "net": "CTV News",
-      "url": "https://www.youtube.com/watch?v=-WX3rjIJK2A",
-      "title": "Ottawa expected to 'throw some punches' to keep plant in Stellantis' hands, Volpe says",
-      "img": "https://i.ytimg.com/vi/-WX3rjIJK2A/hqdefault.jpg",
-      "rec": false,
-      "up": ""
      }
     ]
    },
    {
-    "key": "auto-f7cb95ca",
+    "key": "auto-b798b160",
     "words": [
-     "putin",
-     "apec"
+     "polish",
+     "poland",
+     "nato"
     ],
-    "score": 16,
-    "outlets": 5,
+    "score": 17,
+    "outlets": 4,
     "carriers": 6,
     "tag": "Breaking",
-    "title": "Trump calling Putin ‘my friend’ at APEC summit sparks backlash",
-    "url": "https://www.nbcnews.com/world/europe/trump-friend-greeting-putin-causes-alarm-europe-ukraine-rcna610373",
-    "outlet": "NBC News",
-    "t": "Fri 12:01 p.m.",
-    "iso": "2026-11-20T17:01:20+00:00",
-    "summary": "The American president has a long history of warm words toward his Russian counterpart. But for alarmed onlookers in Europe, this time felt different.",
-    "first": {
-     "outlet": "NBC News",
-     "url": "https://www.nbcnews.com/world/ukraine/russia-strikes-kyiv-bridges-ukraine-crimea-putin-zelenskyy-apec-trump-rcna610372",
-     "t": "Fri 6:42 a.m.",
-     "title": "Deadly Russian strikes hit 3 Kyiv bridges after Putin vows revenge for Crimea attacks",
-     "iso": "2026-11-20T11:42:16+00:00"
-    },
-    "newest": "2026-11-20T17:01:20+00:00",
-    "photo": {
-     "src": "live/img/auto-f7cb95ca-66f31c668e.jpg",
-     "orig": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-11/261120-trump-putin-mb-0944-42ee95.jpg",
-     "caption": "From: Trump calling Putin ‘my friend’ at APEC summit sparks backlash. — via NBC News",
-     "alt": "Trump calling Putin ‘my friend’ at APEC summit sparks backlash",
-     "outlet": "NBC News",
-     "url": "https://www.nbcnews.com/world/europe/trump-friend-greeting-putin-causes-alarm-europe-ukraine-rcna610373",
-     "since": "2026-11-20T17:15:40.214071+00:00"
-    },
-    "photo_seen": [
-     "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-11/261120-trump-putin-mb-0944-42ee95.jpg"
-    ],
-    "photos": [
-     {
-      "src": "live/img/auto-f7cb95ca-66f31c668e.jpg",
-      "orig": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-11/261120-trump-putin-mb-0944-42ee95.jpg",
-      "caption": "From: Trump calling Putin ‘my friend’ at APEC summit sparks backlash. — via NBC News",
-      "alt": "Trump calling Putin ‘my friend’ at APEC summit sparks backlash",
-      "outlet": "NBC News",
-      "url": "https://www.nbcnews.com/world/europe/trump-friend-greeting-putin-causes-alarm-europe-ukraine-rcna610373"
-     },
-     {
-      "src": "live/img/auto-f7cb95ca-da6129c31b.jpg",
-      "orig": "https://www.aljazeera.com/wp-content/uploads/2026/05/2026-04-20T163141Z_958203687_RC23TKA36O31_RTRMADP_3_OIL-INVENTORIES-EIA-1778555463.jpg?resize=1920%2C1440",
-      "caption": "Trump, Putin, Xi pledge to increase global petrol supplies – but how?. — via Al Jazeera",
-      "alt": "Trump, Putin, Xi pledge to increase global petrol supplies – but how?",
-      "outlet": "Al Jazeera",
-      "url": "https://www.aljazeera.com/news/2026/11/20/trump-putin-xi-pledge-to-increase-global-petrol-supplies-but-how?traffic_source=rss"
-     },
-     {
-      "src": "live/img/auto-f7cb95ca-aa14187415.jpg",
-      "orig": "https://www.cp24.com/resizer/v2/DFJCTPUQCK2ZCMPA6PHBJMRZVQ.jpg?smart=true&auth=e8a73457e76685501294d0a12afe0a61aa713cb68943d902dffacf4a696bb8ef&width=1200&height=630",
-      "caption": "Chinese President Xi Jinping attends a trilateral meeting with Russian President Vladimir Putin and U.S. President Donald Trump arrive for a trilateral meeting at the Kylin Villa in Shenzhen in southern China's Guangdong Province, Thursday, Nov. 19, 2026. (Sergei Bobylev/Kremlin Pool Photo via AP). — via CP24",
-      "alt": "Chinese President Xi Jinping attends a trilateral meeting with Russian President Vladimir Putin and U.S. President Donald Trump arrive for a trilateral meeting ",
-      "outlet": "CP24",
-      "url": "https://www.cp24.com/news/world/2026/11/20/xi-projects-chinas-global-influence-after-hosting-trump-and-putin-at-apec/"
-     },
-     {
-      "src": "live/img/auto-f7cb95ca-3a55056304.jpg",
-      "orig": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/11/20/ef39d380-6602-4547-86c1-385ee5b146bd/thumbnail/1200x630/df7902d41f1d7937428ecf9860b12416/cbsn-fusion-world-reacts-to-trumps-meeting-with-xi-jinping-and-vladimir-putin-thumbnail.jpg",
-      "caption": "From: World reacts to Trump's meeting with Xi Jinping and Vladimir Putin. — via CBS News",
-      "alt": "World reacts to Trump's meeting with Xi Jinping and Vladimir Putin",
-      "outlet": "CBS News",
-      "url": "https://www.cbsnews.com/video/world-reacts-to-trumps-meeting-with-xi-jinping-and-vladimir-putin/"
-     }
-    ],
-    "independent": 5,
-    "reports": [
-     {
-      "t": "Fri 12:01 p.m.",
-      "iso": "2026-11-20T17:01:20+00:00",
-      "outlet": "NBC News",
-      "title": "Trump calling Putin ‘my friend’ at APEC summit sparks backlash",
-      "url": "https://www.nbcnews.com/world/europe/trump-friend-greeting-putin-causes-alarm-europe-ukraine-rcna610373",
-      "desc": "The American president has a long history of warm words toward his Russian counterpart. But for alarmed onlookers in Europe, this time felt different."
-     },
-     {
-      "t": "Fri 10:05 a.m.",
-      "iso": "2026-11-20T15:05:26+00:00",
-      "outlet": "CBS News",
-      "title": "World reacts to Trump's meeting with Xi Jinping and Vladimir Putin",
-      "url": "https://www.cbsnews.com/video/world-reacts-to-trumps-meeting-with-xi-jinping-and-vladimir-putin/",
-      "desc": "European leaders are reacting to President Trump's summit with China's Xi Jinping and Russia's Vladimir Putin. This comes as questions linger about the war with Iran. CBS News' Chris Livesay and Dov Lieber report."
-     },
-     {
-      "t": "Fri 9:47 a.m.",
-      "iso": "2026-11-20T14:47:58+00:00",
-      "outlet": "The Hill",
-      "title": "Bolton: ‘No substance’ to Trump meeting with Putin, Xi",
-      "url": "https://thehill.com/policy/international/6232720-john-bolton-trump-putin-xi-trilateral-meeting/",
-      "desc": ""
-     },
-     {
-      "t": "Fri 8:42 a.m.",
-      "iso": "2026-11-20T13:42:56+00:00",
-      "outlet": "Al Jazeera",
-      "title": "Trump, Putin, Xi pledge to increase global petrol supplies – but how?",
-      "url": "https://www.aljazeera.com/news/2026/11/20/trump-putin-xi-pledge-to-increase-global-petrol-supplies-but-how?traffic_source=rss",
-      "desc": "Analysts are sceptical about how this will be achieved amid the ongoing wars in Ukraine and Iran."
-     },
-     {
-      "t": "Fri 7:43 a.m.",
-      "iso": "2026-11-20T12:43:44+00:00",
-      "outlet": "CP24",
-      "title": "Xi projects China’s global influence after hosting Trump and Putin at APEC",
-      "url": "https://www.cp24.com/news/world/2026/11/20/xi-projects-chinas-global-influence-after-hosting-trump-and-putin-at-apec/",
-      "desc": "Results matter in the international arena, but so do optics."
-     },
-     {
-      "t": "Fri 7:43 a.m.",
-      "iso": "2026-11-20T12:43:44+00:00",
-      "outlet": "BNN Bloomberg",
-      "title": "Xi projects China’s global influence after hosting Trump and Putin at APEC",
-      "url": "https://www.bnnbloomberg.ca/business/international/2026/11/20/xi-projects-chinas-global-influence-after-hosting-trump-and-putin-at-apec/",
-      "desc": ""
-     }
-    ],
-    "sources": [
-     {
-      "t": "Fri 12:01 p.m.",
-      "primary": false,
-      "outlet": "NBC News",
-      "title": "Trump calling Putin ‘my friend’ at APEC summit sparks backlash",
-      "url": "https://www.nbcnews.com/world/europe/trump-friend-greeting-putin-causes-alarm-europe-ukraine-rcna610373",
-      "desc": "The American president has a long history of warm words toward his Russian counterpart. But for alarmed onlookers in Europe, this time felt different.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "NBC News",
-        "src": "NBC News",
-        "byline": "own staff: Reporter"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Fri 10:05 a.m.",
-      "primary": false,
-      "outlet": "CBS News",
-      "title": "World reacts to Trump's meeting with Xi Jinping and Vladimir Putin",
-      "url": "https://www.cbsnews.com/video/world-reacts-to-trumps-meeting-with-xi-jinping-and-vladimir-putin/",
-      "desc": "European leaders are reacting to President Trump's summit with China's Xi Jinping and Russia's Vladimir Putin. This comes as questions linger about the war with Iran. CBS News' Chris Livesay and Dov Lieber report.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "CBS News",
-        "src": "CBS News",
-        "byline": ""
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Fri 9:47 a.m.",
-      "primary": false,
-      "outlet": "The Hill",
-      "title": "Bolton: ‘No substance’ to Trump meeting with Putin, Xi",
-      "url": "https://thehill.com/policy/international/6232720-john-bolton-trump-putin-xi-trilateral-meeting/",
-      "desc": "px-captcha",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "The Hill",
-        "src": "The Hill",
-        "byline": ""
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Fri 8:42 a.m.",
-      "primary": false,
-      "outlet": "Al Jazeera",
-      "title": "Trump, Putin, Xi pledge to increase global petrol supplies – but how?",
-      "url": "https://www.aljazeera.com/news/2026/11/20/trump-putin-xi-pledge-to-increase-global-petrol-supplies-but-how?traffic_source=rss",
-      "desc": "Analysts are sceptical about how this will be achieved amid the ongoing wars in Ukraine and Iran.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Al Jazeera",
-        "src": "Al Jazeera",
-        "byline": "{\"@type\":\"Person\",\"name\":\"Priyanka Shankar\",} Priyanka Shankar Add Al Jazeera on Google By "
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Fri 7:43 a.m.",
-      "primary": false,
-      "outlet": "CP24",
-      "title": "Xi projects China’s global influence after hosting Trump and Putin at APEC",
-      "url": "https://www.cp24.com/news/world/2026/11/20/xi-projects-chinas-global-influence-after-hosting-trump-and-putin-at-apec/",
-      "desc": "Results matter in the international arena, but so do optics.",
-      "wire": "The Associated Press",
-      "by": [
-       {
-        "outlet": "CP24",
-        "src": "The Associated Press",
-        "byline": "\"@type\": \"Person\",\n      \"name\": \"The  Associated Press\",\n      \n    }\n  ]"
-       },
-       {
-        "outlet": "BNN Bloomberg",
-        "src": "The Associated Press",
-        "byline": "\"@type\": \"Person\",\n      \"name\": \"The  Associated Press\",\n      \n    }\n  ]"
-       }
-      ],
-      "copies": [
-       {
-        "outlet": "BNN Bloomberg",
-        "url": "https://www.bnnbloomberg.ca/business/international/2026/11/20/xi-projects-chinas-global-influence-after-hosting-trump-and-putin-at-apec/"
-       }
-      ]
-     }
-    ],
-    "replaces_top": false,
-    "events": [],
-    "theme": "",
-    "ca_angle": {
-     "specific": 4,
-     "official": 0
-    },
-    "canada": "tie",
-    "canus": false,
-    "incoherent": false,
-    "popular": 0,
-    "us_election": false,
-    "fronts": 1,
-    "fronts_ca": 0,
-    "fronts_who": [
-     "NPR"
-    ],
-    "judgment": "national",
-    "judgment_why": "National: affects some people; carried across the country (national desks).",
-    "weight": 38.0,
-    "videos": [
-     {
-      "net": "CityNews",
-      "url": "https://www.youtube.com/watch?v=gNaE1SGgrpg",
-      "title": "Trump, Xi and Putin Hold Historic Summit",
-      "img": "https://i.ytimg.com/vi/gNaE1SGgrpg/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CBS News",
-      "url": "https://www.youtube.com/watch?v=wDQT-wzwUTk",
-      "title": "Trump holds summit with Putin and Xi, Anthropic sets record IPO, more | The Takeout",
-      "img": "https://i.ytimg.com/vi/wDQT-wzwUTk/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CBS News",
-      "url": "https://www.youtube.com/watch?v=XdCtOBbRNO8",
-      "title": "Trump to speak Friday about summit with Xi and Putin; Zelenskyy meets with U.S. envoys",
-      "img": "https://i.ytimg.com/vi/XdCtOBbRNO8/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=TqMPzWfnkIw",
-      "title": "This Week in Washington: Trump facing Republican pushback over summit with Xi, Putin",
-      "img": "https://i.ytimg.com/vi/TqMPzWfnkIw/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     }
-    ]
-   },
-   {
-    "key": "auto-2cdf44d6",
-    "words": [
-     "arabia",
-     "theft",
-     "grand",
-     "auto",
-     "now",
-     "vi"
-    ],
-    "score": 16,
-    "outlets": 4,
-    "carriers": 7,
-    "tag": "Breaking",
-    "title": "Sales of 'Grand Theft Auto VI' skyrocket as the series makes its return after 13-year absence",
-    "url": "https://www.bnnbloomberg.ca/business/company-news/2026/11/20/sales-of-grand-theft-auto-vi-skyrocket-as-the-series-makes-its-return-after-13-year-absence/",
-    "outlet": "BNN Bloomberg",
-    "t": "Fri 11:27 a.m.",
-    "iso": "2026-11-20T16:27:43+00:00",
-    "summary": "Sales of “Grand Theft Auto VI” are skyrocketing, as gamers’ insatiable appetite for the series continues. The game has hit US$2.36 billion in revenue.",
+    "title": "Russian missiles land in Poland, as Europe held military drills nearby. NATO calls it a violation",
+    "url": "https://www.ctvnews.ca/world/russia-ukraine-war/article/russia-bombards-ukraine-killing-at-least-8-after-putin-vowed-retaliation-for-kerch-bridge-attack/",
+    "outlet": "CTV News",
+    "t": "Fri 12:13 p.m.",
+    "iso": "2026-11-20T17:13:11+00:00",
+    "summary": "Two Russian missiles and a suspected drone came down in Poland on Friday in what its prime minister said was likely a provocation timed to coincide with European military exercises in his country for a possible postwar mission in Ukraine.",
     "first": {
      "outlet": "CBC News",
-     "url": "https://www.cbc.ca/news/entertainment/gta6-parents-kids-tips-9.7425673",
-     "t": "Fri 8:00 a.m.",
-     "title": "Your kid wants to play Grand Theft Auto VI? Here's what you need to know",
-     "iso": "2026-11-20T13:00:00+00:00"
+     "url": "https://www.cbc.ca/news/world/russian-attacks-on-kyiv-9.7429460",
+     "t": "Fri 7:30 a.m.",
+     "title": "Russia fires hundreds of missiles, drones at Ukraine — and allegedly into Poland",
+     "iso": "2026-11-20T12:30:37.651000+00:00"
     },
-    "newest": "2026-11-20T16:27:43+00:00",
+    "newest": "2026-11-20T17:13:11+00:00",
     "photo": {
-     "src": "live/img/auto-2cdf44d6-bf31cba098.jpg",
-     "orig": "https://www.bnnbloomberg.ca/resizer/v2/YONIEL4DJRGM5J3UB5P6FWG2WA.jpg?smart=true&auth=476999f0be39392723a6dbba974bc2a1dce6dfcd42bcef1d1b7642c195c6c37b&width=1200&height=630",
-     "caption": "People walk past a billboard announcing the release of the \"Grand Theft Auto VI\" video game near Times Square, Tuesday, Nov. 17, 2026, in New York. (AP Photo/Yuki Iwamura). — via BNN Bloomberg",
-     "alt": "People walk past a billboard announcing the release of the \"Grand Theft Auto VI\" video game near Times Square, Tuesday, Nov. 17, 2026, in New York. (AP Photo/Yu",
-     "outlet": "BNN Bloomberg",
-     "url": "https://www.bnnbloomberg.ca/business/company-news/2026/11/20/sales-of-grand-theft-auto-vi-skyrocket-as-the-series-makes-its-return-after-13-year-absence/",
-     "since": "2026-11-20T16:46:36.578730+00:00"
+     "src": "live/img/auto-b798b160-8735aafe30.jpg",
+     "orig": "https://www.ctvnews.ca/resizer/v2/OXDHVP7E6YMRVMXF66UXDEGVKI.jpg?smart=true&auth=b4904fc40bbb8ca53b8ec71f2f49a931644aea0008ab623106f319b2142066b8&width=1200&height=630",
+     "caption": "In this photo provided Friday, Nov. 20, 2026, a residential building is seen on fire after a Russian strike on Zhovti Vody, Ukraine. (Ukrainian Emergency Service via AP). — via CTV News",
+     "alt": "In this photo provided Friday, Nov. 20, 2026, a residential building is seen on fire after a Russian strike on Zhovti Vody, Ukraine. (Ukrainian Emergency Servic",
+     "outlet": "CTV News",
+     "url": "https://www.ctvnews.ca/world/russia-ukraine-war/article/russia-bombards-ukraine-killing-at-least-8-after-putin-vowed-retaliation-for-kerch-bridge-attack/",
+     "since": "2026-11-20T17:22:35.774123+00:00"
     },
     "photo_seen": [
-     "https://www.bnnbloomberg.ca/resizer/v2/YONIEL4DJRGM5J3UB5P6FWG2WA.jpg?smart=true&auth=476999f0be39392723a6dbba974bc2a1dce6dfcd42bcef1d1b7642c195c6c37b&width=1200&height=630"
+     "https://www.ctvnews.ca/resizer/v2/OXDHVP7E6YMRVMXF66UXDEGVKI.jpg?smart=true&auth=b4904fc40bbb8ca53b8ec71f2f49a931644aea0008ab623106f319b2142066b8&width=1200&height=630"
     ],
     "photos": [
      {
-      "src": "live/img/auto-2cdf44d6-bf31cba098.jpg",
-      "orig": "https://www.bnnbloomberg.ca/resizer/v2/YONIEL4DJRGM5J3UB5P6FWG2WA.jpg?smart=true&auth=476999f0be39392723a6dbba974bc2a1dce6dfcd42bcef1d1b7642c195c6c37b&width=1200&height=630",
-      "caption": "People walk past a billboard announcing the release of the \"Grand Theft Auto VI\" video game near Times Square, Tuesday, Nov. 17, 2026, in New York. (AP Photo/Yuki Iwamura). — via BNN Bloomberg",
-      "alt": "People walk past a billboard announcing the release of the \"Grand Theft Auto VI\" video game near Times Square, Tuesday, Nov. 17, 2026, in New York. (AP Photo/Yu",
-      "outlet": "BNN Bloomberg",
-      "url": "https://www.bnnbloomberg.ca/business/company-news/2026/11/20/sales-of-grand-theft-auto-vi-skyrocket-as-the-series-makes-its-return-after-13-year-absence/"
+      "src": "live/img/auto-b798b160-8735aafe30.jpg",
+      "orig": "https://www.ctvnews.ca/resizer/v2/OXDHVP7E6YMRVMXF66UXDEGVKI.jpg?smart=true&auth=b4904fc40bbb8ca53b8ec71f2f49a931644aea0008ab623106f319b2142066b8&width=1200&height=630",
+      "caption": "In this photo provided Friday, Nov. 20, 2026, a residential building is seen on fire after a Russian strike on Zhovti Vody, Ukraine. (Ukrainian Emergency Service via AP). — via CTV News",
+      "alt": "In this photo provided Friday, Nov. 20, 2026, a residential building is seen on fire after a Russian strike on Zhovti Vody, Ukraine. (Ukrainian Emergency Servic",
+      "outlet": "CTV News",
+      "url": "https://www.ctvnews.ca/world/russia-ukraine-war/article/russia-bombards-ukraine-killing-at-least-8-after-putin-vowed-retaliation-for-kerch-bridge-attack/"
      },
      {
-      "src": "live/img/auto-2cdf44d6-3752e7fe76.jpg",
-      "orig": "https://www.cp24.com/resizer/v2/S4YNDEB3VZRYMIX3HYHLRLGGLA.jpg?smart=true&auth=67b06f8a4cc49b2884a34b5377ba0394a2cd1a688e8091c2c4ab1fc4e01d3d25&width=1200&height=630",
-      "caption": "A billboard announcing the release of the \"Grand Theft Auto VI\" video game is displayed near Times Square, Tuesday, Nov. 17, 2026, in New York. (AP Photo/Yuki Iwamura). — via CP24",
-      "alt": "A billboard announcing the release of the \"Grand Theft Auto VI\" video game is displayed near Times Square, Tuesday, Nov. 17, 2026, in New York. (AP Photo/Yuki I",
-      "outlet": "CP24",
-      "url": "https://www.cp24.com/news/money/2026/11/20/saudi-arabia-once-banned-grand-theft-auto-now-its-got-a-stake-in-it/"
+      "src": "live/img/auto-b798b160-cb5a033846.jpg",
+      "orig": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/cbb7/live/b5de9720-e4ea-11f1-99b6-a35a62fa4264.jpg",
+      "caption": "explosion seen in Poland. — via BBC News",
+      "alt": "explosion seen in Poland",
+      "outlet": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cqx2x9dklxnro?at_medium=RSS&at_campaign=rss"
      },
      {
-      "src": "live/img/auto-2cdf44d6-8a6b1ca786.jpg",
-      "orig": "https://i.cbc.ca/ais/19b4853a-5be9-4956-a2a1-bef036684d99,1794953561393/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C8318%2C4678%29%3BResize%3D620",
-      "caption": "The jumbo screens in Sankofa Square in downtown Toronto display ads for Grand Theft Auto VI on Monday. The latest instalment in the GTA series launched worldwide on Nov. 19. (Evan Mitsui/CBC) — via CBC News",
-      "alt": "The jumbo screens in Sankofa Square in downtown Toronto display ads for Grand Theft Auto VI on Monday. The latest instalment in the GTA series launched worldwid",
-      "outlet": "CBC News",
-      "url": "https://www.cbc.ca/news/entertainment/gta6-parents-kids-tips-9.7425673"
-     },
-     {
-      "src": "live/img/auto-2cdf44d6-76e5f200d7.jpg",
-      "orig": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/4f2c6e611f27f193c14ce826fb9177d4608ee47c31737c1a3f2f6d50e421ac3d.jpg;w=1200;h=1200;mode=crop",
-      "caption": "From: Sales of 'Grand Theft Auto VI' skyrocket as the series makes its return after 13-year absence. — via Times Colonist",
-      "alt": "Sales of 'Grand Theft Auto VI' skyrocket as the series makes its return after 13-year absence",
-      "outlet": "Times Colonist",
-      "url": "https://www.timescolonist.com/the-mix/sales-of-grand-theft-auto-vi-skyrocket-as-the-series-makes-its-return-after-13-year-absence-13041440"
+      "src": "live/img/auto-b798b160-f3710e7989.jpg",
+      "orig": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/20/1ae49c17-83f2-47a1-8f33-1da27e18b43e/thumbnail/1200x630/61884d8ef5100c1f56239413db222432/poland-russia-missile-ukraine.jpg",
+      "caption": "From: Russia missiles pummel Ukraine and hit NATO soil in Poland. — via CBS News",
+      "alt": "Russia missiles pummel Ukraine and hit NATO soil in Poland",
+      "outlet": "CBS News",
+      "url": "https://www.cbsnews.com/news/ukraine-war-russia-intentional-provocation-poland-missiles-nato/"
      }
     ],
     "independent": 4,
     "reports": [
      {
-      "t": "Fri 11:27 a.m.",
-      "iso": "2026-11-20T16:27:43+00:00",
-      "outlet": "BNN Bloomberg",
-      "title": "Sales of 'Grand Theft Auto VI' skyrocket as the series makes its return after 13-year absence",
-      "url": "https://www.bnnbloomberg.ca/business/company-news/2026/11/20/sales-of-grand-theft-auto-vi-skyrocket-as-the-series-makes-its-return-after-13-year-absence/",
-      "desc": "Sales of “Grand Theft Auto VI” are skyrocketing, as gamers’ insatiable appetite for the series continues. The game has hit US$2.36 billion in revenue."
+      "t": "Fri 12:13 p.m.",
+      "iso": "2026-11-20T17:13:11+00:00",
+      "outlet": "CTV News",
+      "title": "Russian missiles land in Poland, as Europe held military drills nearby. NATO calls it a violation",
+      "url": "https://www.ctvnews.ca/world/russia-ukraine-war/article/russia-bombards-ukraine-killing-at-least-8-after-putin-vowed-retaliation-for-kerch-bridge-attack/",
+      "desc": "Two Russian missiles and a suspected drone came down in Poland on Friday in what its prime minister said was likely a provocation timed to coincide with European military exercises in his country for a possible postwar mission in Ukraine."
      },
      {
-      "t": "Fri 11:04 a.m.",
-      "iso": "2026-11-20T16:04:51+00:00",
-      "outlet": "Times Colonist",
-      "title": "Sales of 'Grand Theft Auto VI' skyrocket as the series makes its return after 13-year absence",
-      "url": "https://www.timescolonist.com/the-mix/sales-of-grand-theft-auto-vi-skyrocket-as-the-series-makes-its-return-after-13-year-absence-13041440",
-      "desc": ""
-     },
-     {
-      "t": "Fri 11:04 a.m.",
-      "iso": "2026-11-20T16:04:51+00:00",
-      "outlet": "CityNews",
-      "title": "Sales of ‘Grand Theft Auto VI’ skyrocket as the series makes its return after 13-year absence",
-      "url": "https://toronto.citynews.ca/2026/11/20/sales-of-grand-theft-auto-vi-skyrocket-as-the-series-makes-its-return-after-13-year-absence/",
-      "desc": ""
-     },
-     {
-      "t": "Fri 11:04 a.m.",
-      "iso": "2026-11-20T16:04:00+00:00",
-      "outlet": "Toronto Star",
-      "title": "Sales of 'Grand Theft Auto VI' skyrocket as the series makes its return after 13-year absence",
-      "url": "https://www.thestar.com/news/world/sales-of-grand-theft-auto-vi-skyrocket-as-the-series-makes-its-return-after-13-year-absence/article_4fd3752b-6c1a-5594-a3d9-28a90087be0b.html",
-      "desc": ""
-     },
-     {
-      "t": "Fri 9:48 a.m.",
-      "iso": "2026-11-20T14:48:28+00:00",
-      "outlet": "The Hill",
-      "title": "Burchett says you’re a ‘bad parent’ if you let your child play ‘Grand Theft Auto VI’",
-      "url": "https://thehill.com/homenews/house/6232789-gop-rep-warns-parents-gta-6/",
-      "desc": ""
-     },
-     {
-      "t": "Fri 9:23 a.m.",
-      "iso": "2026-11-20T14:23:47+00:00",
+      "t": "Fri 12:13 p.m.",
+      "iso": "2026-11-20T17:13:11+00:00",
       "outlet": "CP24",
-      "title": "Saudi Arabia once banned Grand Theft Auto. Now it’s got a stake in it",
-      "url": "https://www.cp24.com/news/money/2026/11/20/saudi-arabia-once-banned-grand-theft-auto-now-its-got-a-stake-in-it/",
-      "desc": "Grand Theft Auto, banned in Saudi Arabia until last year, is now being embraced not only by its gamers - a category that includes Crown Prince Mohammed bin Salman - but also by its sovereign wealth fund, which the prince chairs."
+      "title": "Russian missiles land in Poland, as Europe held military drills nearby. NATO calls it a violation",
+      "url": "https://www.cp24.com/news/world/2026/11/20/russia-bombards-ukraine-killing-at-least-8-after-putin-vowed-retaliation-for-kerch-bridge-attack/",
+      "desc": ""
      },
      {
-      "t": "Fri 8:00 a.m.",
-      "iso": "2026-11-20T13:00:00+00:00",
+      "t": "Fri 11:54 a.m.",
+      "iso": "2026-11-20T16:54:29+00:00",
+      "outlet": "BBC News",
+      "title": "Russian missile hits Poland as Ukraine's allies hold military exercise, says Tusk",
+      "url": "https://www.bbc.co.uk/news/articles/cqx2x9dklxnro?at_medium=RSS&at_campaign=rss",
+      "desc": "Nobody was hurt and no damage has been reported, but Warsaw described the incident as a \"provocation\" from Moscow."
+     },
+     {
+      "t": "Fri 11:16 a.m.",
+      "iso": "2026-11-20T16:16:01+00:00",
+      "outlet": "The Guardian",
+      "title": "Russian missiles and drone hit Poland during attacks on Ukraine",
+      "url": "https://www.theguardian.com/world/2026/nov/20/russian-missiles-drone-poland-attacks-ukraine",
+      "desc": "Polish PM calls strikes, which took place amid western military exercises, ‘an intentional provocation’ by Moscow"
+     },
+     {
+      "t": "Fri 10:39 a.m.",
+      "iso": "2026-11-20T15:39:50+00:00",
+      "outlet": "CBS News",
+      "title": "Russia missiles pummel Ukraine and hit NATO soil in Poland",
+      "url": "https://www.cbsnews.com/news/ukraine-war-russia-intentional-provocation-poland-missiles-nato/",
+      "desc": ""
+     },
+     {
+      "t": "Fri 7:30 a.m.",
+      "iso": "2026-11-20T12:30:37.651000+00:00",
       "outlet": "CBC News",
-      "title": "Your kid wants to play Grand Theft Auto VI? Here's what you need to know",
-      "url": "https://www.cbc.ca/news/entertainment/gta6-parents-kids-tips-9.7425673",
-      "desc": "The latest Grand Theft Auto instalment continues in the franchise tradition of riling folks up with its mature content, inevitably boosting the game's illicit allure for kids. Experts share tips on navigating its release with young gamers."
+      "title": "Russia fires hundreds of missiles, drones at Ukraine — and allegedly into Poland",
+      "url": "https://www.cbc.ca/news/world/russian-attacks-on-kyiv-9.7429460",
+      "desc": "Russian firepower hit three bridges in Kyiv overnight, killing six people in the capital and two elsewhere according to Ukrainian ‌officials, while also allegedly entering Polish airspace, prompting a rebuke from Warsaw."
      }
     ],
     "sources": [
      {
-      "t": "Fri 11:04 a.m.",
+      "t": "Fri 7:30 a.m.",
       "primary": false,
-      "outlet": "Toronto Star",
-      "title": "Sales of 'Grand Theft Auto VI' skyrocket as the series makes its return after 13-year absence",
-      "url": "https://www.thestar.com/news/world/sales-of-grand-theft-auto-vi-skyrocket-as-the-series-makes-its-return-after-13-year-absence/article_4fd3752b-6c1a-5594-a3d9-28a90087be0b.html",
-      "desc": "Sales of “Grand Theft Auto VI” are skyrocketing, as gamers' insatiable appetite for the series continues.",
+      "outlet": "CBC News",
+      "title": "Russia fires hundreds of missiles, drones at Ukraine — and allegedly into Poland",
+      "url": "https://www.cbc.ca/news/world/russian-attacks-on-kyiv-9.7429460",
+      "desc": "Russian firepower hit three bridges in Kyiv overnight, killing six people in the capital and two elsewhere according to Ukrainian ‌officials, while also allegedly entering Polish airspace, prompting a rebuke from Warsaw.",
       "wire": "The Associated Press",
       "by": [
        {
-        "outlet": "Toronto Star",
+        "outlet": "CBC News",
         "src": "The Associated Press",
-        "byline": "\"Michelle Chapman The Associated Press\" \"Michelle Chapman"
+        "byline": "son Reuters\" \"CBC News\" \"CBC News\" \"The Associated Press\" \"The Associated Pr"
        },
        {
-        "outlet": "Times Colonist",
-        "src": "The Associated Press",
-        "byline": "\"Michelle Chapman, The Associated Press\" \r\n             \r\nM"
+        "outlet": "CTV News",
+        "src": "The Canadian Press",
+        "byline": "aconvert\" \"\" \"\" \"\" \"\" \"Bryann Aguilar\" \"The Canadian Press\" \"The Canadian Pres"
        },
        {
-        "outlet": "CityNews",
-        "src": "The Associated Press",
-        "byline": "8ebed7c4ad73d\"}] \"Michelle Chapman, The Associated Press,\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "BNN Bloomberg",
+        "outlet": "CP24",
         "src": "The Associated Press",
         "byline": "\"@type\": \"Person\",\n      \"name\": \"The  Associated Press\",\n      \n    }\n  ]"
        }
       ],
       "copies": [
        {
-        "outlet": "Times Colonist",
-        "url": "https://www.timescolonist.com/the-mix/sales-of-grand-theft-auto-vi-skyrocket-as-the-series-makes-its-return-after-13-year-absence-13041440"
+        "outlet": "CTV News",
+        "url": "https://www.ctvnews.ca/world/russia-ukraine-war/article/russia-bombards-ukraine-killing-at-least-8-after-putin-vowed-retaliation-for-kerch-bridge-attack/"
        },
        {
-        "outlet": "CityNews",
-        "url": "https://toronto.citynews.ca/2026/11/20/sales-of-grand-theft-auto-vi-skyrocket-as-the-series-makes-its-return-after-13-year-absence/"
-       },
-       {
-        "outlet": "BNN Bloomberg",
-        "url": "https://www.bnnbloomberg.ca/business/company-news/2026/11/20/sales-of-grand-theft-auto-vi-skyrocket-as-the-series-makes-its-return-after-13-year-absence/"
+        "outlet": "CP24",
+        "url": "https://www.cp24.com/news/world/2026/11/20/russia-bombards-ukraine-killing-at-least-8-after-putin-vowed-retaliation-for-kerch-bridge-attack/"
        }
       ]
      },
      {
-      "t": "Fri 9:48 a.m.",
+      "t": "Fri 11:54 a.m.",
       "primary": false,
-      "outlet": "The Hill",
-      "title": "Burchett says you’re a ‘bad parent’ if you let your child play ‘Grand Theft Auto VI’",
-      "url": "https://thehill.com/homenews/house/6232789-gop-rep-warns-parents-gta-6/",
-      "desc": "px-captcha",
+      "outlet": "BBC News",
+      "title": "Russian missile hits Poland as Ukraine's allies hold military exercise, says Tusk",
+      "url": "https://www.bbc.co.uk/news/articles/cqx2x9dklxnro?at_medium=RSS&at_campaign=rss",
+      "desc": "Nobody was hurt and no damage has been reported, but Warsaw described the incident as a \"provocation\" from Moscow.",
       "wire": "",
       "by": [
        {
-        "outlet": "The Hill",
-        "src": "The Hill",
-        "byline": ""
+        "outlet": "BBC News",
+        "src": "BBC News",
+        "byline": "[{\"@type\":\"Person\",\"name\":\"Phoebe Hopson\"},{\"@type\":\"Person\",\"name\":\"Paul Kirby\"}] https://www.facebook.com/bbcnews"
        }
       ],
       "copies": []
      },
      {
-      "t": "Fri 9:23 a.m.",
+      "t": "Fri 11:16 a.m.",
       "primary": false,
-      "outlet": "CP24",
-      "title": "Saudi Arabia once banned Grand Theft Auto. Now it’s got a stake in it",
-      "url": "https://www.cp24.com/news/money/2026/11/20/saudi-arabia-once-banned-grand-theft-auto-now-its-got-a-stake-in-it/",
-      "desc": "Grand Theft Auto, banned in Saudi Arabia until last year, is now being embraced not only by its gamers - a category that includes Crown Prince Mohammed bin Salman - but also by its sovereign wealth fund, which the prince chairs.",
-      "wire": "Reuters",
+      "outlet": "The Guardian",
+      "title": "Russian missiles and drone hit Poland during attacks on Ukraine",
+      "url": "https://www.theguardian.com/world/2026/nov/20/russian-missiles-drone-poland-attacks-ukraine",
+      "desc": "Polish PM calls strikes, which took place amid western military exercises, ‘an intentional provocation’ by Moscow",
+      "wire": "",
       "by": [
        {
-        "outlet": "CP24",
-        "src": "Reuters",
-        "byline": "\"@type\": \"Person\",\n      \"name\": \"Reuters Staff\","
+        "outlet": "The Guardian",
+        "src": "The Guardian",
+        "byline": "[{\"@type\":\"Person\",\"name\":\"Jakub Krupa\",}] \"Jakub Krupa\" \"Jakub Krupa\" https://www.theguardian.com/profile/jakub-krupa"
        }
       ],
       "copies": []
      },
      {
-      "t": "Fri 8:00 a.m.",
+      "t": "Fri 10:39 a.m.",
       "primary": false,
-      "outlet": "CBC News",
-      "title": "Your kid wants to play Grand Theft Auto VI? Here's what you need to know",
-      "url": "https://www.cbc.ca/news/entertainment/gta6-parents-kids-tips-9.7425673",
-      "desc": "The latest Grand Theft Auto instalment continues in the franchise tradition of riling folks up with its mature content, inevitably boosting the game's illicit allure for kids. Experts share tips on navigating its release with young gamers.",
+      "outlet": "CBS News",
+      "title": "Russia missiles pummel Ukraine and hit NATO soil in Poland",
+      "url": "https://www.cbsnews.com/news/ukraine-war-russia-intentional-provocation-poland-missiles-nato/",
+      "desc": "",
       "wire": "",
       "by": [
        {
-        "outlet": "CBC News",
-        "src": "CBC",
-        "byline": "[{\"@type\":\"Person\",\"@id\":\"https://www.cbc.ca/author/jessica-wong-1.3547319/#author\",\"name\":\"Jessica Wong\",}] [{\"@type\":\""
+        "outlet": "CBS News",
+        "src": "CBS News",
+        "byline": "own staff: journalist"
        }
       ],
       "copies": []
@@ -1448,62 +1414,53 @@
     "replaces_top": false,
     "events": [],
     "theme": "",
-    "canada": "general",
+    "canada": "none",
     "canus": false,
     "incoherent": false,
     "popular": 0,
     "us_election": false,
-    "fronts": 1,
+    "fronts": 5,
     "fronts_ca": 1,
     "fronts_who": [
-     "BNN Bloomberg"
+     "The Globe and Mail",
+     "NBC News",
+     "CBS News",
+     "BBC News",
+     "The Guardian"
     ],
     "judgment": "national",
-    "judgment_why": "National: affects some people; carried across the country (national desks).",
-    "weight": 37.5,
-    "videos": [
-     {
-      "net": "CP24",
-      "url": "https://www.youtube.com/watch?v=4sjRVYLdaUU",
-      "title": "Torontonians dive into ‘Grand Theft Auto VI’",
-      "img": "https://i.ytimg.com/vi/4sjRVYLdaUU/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CP24",
-      "url": "https://www.youtube.com/watch?v=nlHMStveV2o",
-      "title": "Long lines of fans in Toronto await release of Grand Theft Auto IV in 2008 | From the Archives",
-      "img": "https://i.ytimg.com/vi/nlHMStveV2o/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CP24",
-      "url": "https://www.youtube.com/watch?v=ANnUf0W1wMY",
-      "title": "How much money is 'Grand Theft Auto VI' expected make? Brand expert explains",
-      "img": "https://i.ytimg.com/vi/ANnUf0W1wMY/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CBC News",
-      "url": "https://www.youtube.com/watch?v=T_jcrFDZzn8",
-      "title": "Grand Theft Auto VI is here — and it might change things for Quebec’s gaming industry",
-      "img": "https://i.ytimg.com/vi/T_jcrFDZzn8/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     }
-    ]
+    "judgment_why": "National: affects many people; carried across the country (national desks).",
+    "weight": 38.0
    }
   ],
   "considered": [
    {
+    "title": "Sales of 'Grand Theft Auto VI' skyrocket as the series makes its return after 13-year absence",
+    "url": "https://www.bnnbloomberg.ca/business/company-news/2026/11/20/sales-of-grand-theft-auto-vi-skyrocket-as-the-series-makes-its-return-after-13-year-absence/",
+    "rank": 1,
+    "live": "",
+    "weight": 37.5,
+    "score": 16,
+    "independent": 4,
+    "most_read": 0,
+    "canada": "general",
+    "theme": "",
+    "top": true,
+    "fronts": 1,
+    "fronts_who": [
+     "BNN Bloomberg"
+    ],
+    "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
+    "carriers": 7,
+    "judgment": "national",
+    "why_judged": "National: affects some people; carried across the country (national desks)."
+   },
+   {
     "title": "Joly, Stellantis officials set for latest showdown on Friday",
     "url": "https://www.timescolonist.com/the-mix/joly-stellantis-officials-set-for-latest-showdown-on-friday-13041208",
-    "rank": 1,
-    "live": "Melanie Joly, Doug Ford and Lana Payne announce reopening of Ford's Oakville plant",
-    "weight": 64,
+    "rank": 2,
+    "live": "",
+    "weight": 44,
     "score": 17,
     "independent": 2,
     "most_read": 0,
@@ -1512,76 +1469,40 @@
     "top": true,
     "fronts": 0,
     "fronts_who": [],
-    "rule": "Canadian and breaking",
+    "rule": "Canadian, still developing",
     "carriers": 13,
     "judgment": "national",
     "why_judged": "National: affects some people; carried across the country (8 cities)."
    },
    {
-    "title": "Trump calling Putin ‘my friend’ at APEC summit sparks backlash",
-    "url": "https://www.nbcnews.com/world/europe/trump-friend-greeting-putin-causes-alarm-europe-ukraine-rcna610373",
-    "rank": 2,
+    "title": "Russian missiles land in Poland, as Europe held military drills nearby. NATO calls it a violation",
+    "url": "https://www.ctvnews.ca/world/russia-ukraine-war/article/russia-bombards-ukraine-killing-at-least-8-after-putin-vowed-retaliation-for-kerch-bridge-attack/",
+    "rank": 3,
     "live": "",
     "weight": 38.0,
-    "score": 16,
-    "independent": 5,
+    "score": 17,
+    "independent": 4,
     "most_read": 0,
-    "canada": "tie",
+    "canada": "none",
     "theme": "",
     "top": true,
-    "fronts": 1,
+    "fronts": 5,
     "fronts_who": [
-     "NPR"
+     "The Globe and Mail",
+     "NBC News",
+     "CBS News",
+     "BBC News",
+     "The Guardian"
     ],
     "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
     "carriers": 6,
-    "judgment": "national",
-    "why_judged": "National: affects some people; carried across the country (national desks)."
-   },
-   {
-    "title": "Sales of 'Grand Theft Auto VI' skyrocket as the series makes its return after 13-year absence",
-    "url": "https://www.bnnbloomberg.ca/business/company-news/2026/11/20/sales-of-grand-theft-auto-vi-skyrocket-as-the-series-makes-its-return-after-13-year-absence/",
-    "rank": 3,
-    "live": "",
-    "weight": 37.5,
-    "score": 16,
-    "independent": 4,
-    "most_read": 0,
-    "canada": "general",
-    "theme": "",
-    "top": true,
-    "fronts": 1,
-    "fronts_who": [
-     "BNN Bloomberg"
-    ],
-    "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
-    "carriers": 7,
-    "judgment": "national",
-    "why_judged": "National: affects some people; carried across the country (national desks)."
-   },
-   {
-    "title": "Regulatory harmonization not a goal of associate membership for Canada: EU ambassador",
-    "url": "https://www.bnnbloomberg.ca/business/politics/2026/11/19/regulatory-harmonization-not-a-goal-of-associate-membership-for-canada-eu-ambassador/",
-    "rank": 4,
-    "live": "",
-    "weight": 35.5,
-    "score": 10,
-    "independent": 2,
-    "most_read": 0,
-    "canada": "canadian",
-    "theme": "Canada and the EU",
-    "top": false,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "Canadian, still developing",
-    "carriers": 3,
     "judgment": "national",
     "why_judged": "National: affects many people; carried across the country (national desks)."
    },
    {
     "title": "Veterans' group still optimistic about Amherst housing plan after federal budget",
     "url": "https://www.cbc.ca/news/canada/nova-scotia/vets-canada-amherst-armoury-9.7428348?cmp=rss",
-    "rank": 5,
+    "rank": 4,
     "live": "",
     "weight": 27.5,
     "score": 10,
@@ -1596,29 +1517,6 @@
     "carriers": 5,
     "judgment": "national",
     "why_judged": "National: affects many people; carried across the country (national desks)."
-   },
-   {
-    "title": "EU wants ‘closest possible relationship’ with UK after agreeing Brexit reset deal – live",
-    "url": "https://www.theguardian.com/world/live/2026/nov/20/uk-eu-european-union-brexit-deal-andy-burnham-latest-news-updates",
-    "rank": 6,
-    "live": "",
-    "weight": 32.5,
-    "score": 14,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 3,
-    "fronts_who": [
-     "The Globe and Mail",
-     "BBC News",
-     "The Guardian"
-    ],
-    "rule": "No Canadian tie",
-    "carriers": 3,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried by a few newsrooms."
    },
    {
     "title": "LeBlanc gives update on U.S. trade talks to Canada-U.S. advisory committee",
@@ -1636,6 +1534,11 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
+    "title": "Nasdaq wipes out 2026 gains as Anthropic and AI stocks push lower",
+    "score": 10,
+    "why": "not built: only 2 independent report(s) (4 sites)"
+   },
+   {
     "title": "'Most ambitious since Avro': Ottawa defence startup unveils partners for Scout drone",
     "score": 10,
     "why": "not built: only 1 independent report(s) (8 sites)"
@@ -1646,14 +1549,14 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
+    "title": "Regulatory harmonization not a goal of associate membership for Canada: EU ambassador",
+    "score": 10,
+    "why": "not built: only 1 independent report(s) (2 sites)"
+   },
+   {
     "title": "Melanie Joly, Doug Ford to announce supports for Canada’s auto industry",
     "score": 9,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Tech stocks pull U.S. markets lower, Anthropic shares fall",
-    "score": 9,
-    "why": "not built: only 2 independent report(s) (4 sites)"
    },
    {
     "title": "Audacious California train thieves film multimillion-dollar robberies",
@@ -1674,164 +1577,23 @@
     "title": "Industry minister announces new funding for auto manufacturing in Oakville, Ont.",
     "score": 8,
     "why": "not built: only 2 independent report(s) (6 sites)"
+   },
+   {
+    "title": "Ontario, Ottawa committing $250 million to help fund new port in Sault Ste. Marie",
+    "score": 8,
+    "why": "not built: only 1 independent report(s) (6 sites)"
    }
   ],
   "moved": [],
   "top_n": 3,
   "more": [
    {
-    "key": "auto-dcabd03f",
-    "words": [
-     "harmonization",
-     "ambassador",
-     "regulatory",
-     "membership",
-     "associate",
-     "eu"
-    ],
-    "score": 10,
-    "outlets": 2,
-    "carriers": 3,
-    "tag": "Developing",
-    "title": "Regulatory harmonization not a goal of associate membership for Canada: EU ambassador",
-    "url": "https://www.bnnbloomberg.ca/business/politics/2026/11/19/regulatory-harmonization-not-a-goal-of-associate-membership-for-canada-eu-ambassador/",
-    "outlet": "BNN Bloomberg",
-    "t": "Thu 3:07 p.m.",
-    "iso": "2026-11-19T20:07:42+00:00",
-    "summary": "Canada and the European Union aren’t looking at sweeping regulatory harmonization as they work to establish closer ties, the EU’s ambassador to Canada said Thursday.",
-    "first": {
-     "outlet": "Toronto Star",
-     "url": "https://www.thestar.com/news/canada/regulatory-harmonization-not-a-goal-of-associate-membership-for-canada-eu-ambassador/article_c7c590bb-3c34-5015-8334-151c8c05f069.html",
-     "t": "Thu 1:29 p.m.",
-     "title": "Regulatory harmonization not a goal of associate membership for Canada: EU ambassador",
-     "iso": "2026-11-19T18:29:01+00:00"
-    },
-    "newest": "2026-11-20T16:21:57+00:00",
-    "photo": {
-     "src": "live/img/auto-dcabd03f-945017553e.jpg",
-     "orig": "https://www.bnnbloomberg.ca/resizer/v2/7IG544YPANPCGNMIB3GK4ZD3AI.jpg?smart=true&auth=89844eb6911342614a2e5e771574efd9c52f1cc18ad461e180cc5dedee452be1&width=1200&height=630",
-     "caption": "Genevieve Tuts, ambassador of the European Union to Canada, centre, and other representatives of European Union countries meet with Manitoba Premier Wab Kinew, right, at the Manitoba Legislature in Winnipeg on Tuesday, April 15, 2025. THE CANADIAN PRESS/Steve Lambert. — via BNN Bloomberg",
-     "alt": "Genevieve Tuts, ambassador of the European Union to Canada, centre, and other representatives of European Union countries meet with Manitoba Premier Wab Kinew, ",
-     "outlet": "BNN Bloomberg",
-     "url": "https://www.bnnbloomberg.ca/business/politics/2026/11/19/regulatory-harmonization-not-a-goal-of-associate-membership-for-canada-eu-ambassador/",
-     "since": "2026-11-20T17:05:48.783650+00:00"
-    },
-    "photo_seen": [
-     "https://www.bnnbloomberg.ca/resizer/v2/7IG544YPANPCGNMIB3GK4ZD3AI.jpg?smart=true&auth=89844eb6911342614a2e5e771574efd9c52f1cc18ad461e180cc5dedee452be1&width=1200&height=630"
-    ],
-    "photos": [
-     {
-      "src": "live/img/auto-dcabd03f-945017553e.jpg",
-      "orig": "https://www.bnnbloomberg.ca/resizer/v2/7IG544YPANPCGNMIB3GK4ZD3AI.jpg?smart=true&auth=89844eb6911342614a2e5e771574efd9c52f1cc18ad461e180cc5dedee452be1&width=1200&height=630",
-      "caption": "Genevieve Tuts, ambassador of the European Union to Canada, centre, and other representatives of European Union countries meet with Manitoba Premier Wab Kinew, right, at the Manitoba Legislature in Winnipeg on Tuesday, April 15, 2025. THE CANADIAN PRESS/Steve Lambert. — via BNN Bloomberg",
-      "alt": "Genevieve Tuts, ambassador of the European Union to Canada, centre, and other representatives of European Union countries meet with Manitoba Premier Wab Kinew, ",
-      "outlet": "BNN Bloomberg",
-      "url": "https://www.bnnbloomberg.ca/business/politics/2026/11/19/regulatory-harmonization-not-a-goal-of-associate-membership-for-canada-eu-ambassador/"
-     },
-     {
-      "src": "live/img/auto-dcabd03f-a75070b0a1.jpg",
-      "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/9/39/939fd3ed-147c-575b-922d-2b952ab1214d/6aff402d1479b.image.jpg?crop=1400%2C735%2C0%2C157&resize=1200%2C630&order=crop%2Cresize",
-      "caption": "From: Regulatory harmonization not a goal of associate membership for Canada: EU ambassador. — via Toronto Star",
-      "alt": "Regulatory harmonization not a goal of associate membership for Canada: EU ambassador",
-      "outlet": "Toronto Star",
-      "url": "https://www.thestar.com/news/canada/regulatory-harmonization-not-a-goal-of-associate-membership-for-canada-eu-ambassador/article_c7c590bb-3c34-5015-8334-151c8c05f069.html"
-     }
-    ],
-    "independent": 2,
-    "reports": [
-     {
-      "t": "Fri 11:21 a.m.",
-      "iso": "2026-11-20T16:21:57+00:00",
-      "outlet": "Euronews",
-      "title": "Deepening EU–Canada ties: From critical minerals and defence to erasmus+",
-      "url": "https://www.euronews.com/2026/11/20/deepening-eucanada-ties-from-critical-minerals-and-defence-to-erasmus",
-      "desc": ""
-     },
-     {
-      "t": "Thu 3:07 p.m.",
-      "iso": "2026-11-19T20:07:42+00:00",
-      "outlet": "BNN Bloomberg",
-      "title": "Regulatory harmonization not a goal of associate membership for Canada: EU ambassador",
-      "url": "https://www.bnnbloomberg.ca/business/politics/2026/11/19/regulatory-harmonization-not-a-goal-of-associate-membership-for-canada-eu-ambassador/",
-      "desc": "Canada and the European Union aren’t looking at sweeping regulatory harmonization as they work to establish closer ties, the EU’s ambassador to Canada said Thursday."
-     },
-     {
-      "t": "Thu 1:29 p.m.",
-      "iso": "2026-11-19T18:29:01+00:00",
-      "outlet": "Toronto Star",
-      "title": "Regulatory harmonization not a goal of associate membership for Canada: EU ambassador",
-      "url": "https://www.thestar.com/news/canada/regulatory-harmonization-not-a-goal-of-associate-membership-for-canada-eu-ambassador/article_c7c590bb-3c34-5015-8334-151c8c05f069.html",
-      "desc": "OTTAWA - Canada and the European Union aren't looking at sweeping regulatory harmonization as they work to establish closer ties, the EU's ambassador to Canada said Thursday."
-     }
-    ],
-    "sources": [
-     {
-      "t": "Fri 11:21 a.m.",
-      "primary": false,
-      "outlet": "Euronews",
-      "title": "Deepening EU–Canada ties: From critical minerals and defence to erasmus+",
-      "url": "https://www.euronews.com/2026/11/20/deepening-eucanada-ties-from-critical-minerals-and-defence-to-erasmus",
-      "desc": "",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Euronews",
-        "src": "Euronews",
-        "byline": ""
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Thu 1:29 p.m.",
-      "primary": false,
-      "outlet": "Toronto Star",
-      "title": "Regulatory harmonization not a goal of associate membership for Canada: EU ambassador",
-      "url": "https://www.thestar.com/news/canada/regulatory-harmonization-not-a-goal-of-associate-membership-for-canada-eu-ambassador/article_c7c590bb-3c34-5015-8334-151c8c05f069.html",
-      "desc": "OTTAWA - Canada and the European Union aren't looking at sweeping regulatory harmonization as they work to establish closer ties, the EU's ambassador to Canada said Thursday.",
-      "wire": "The Canadian Press",
-      "by": [
-       {
-        "outlet": "Toronto Star",
-        "src": "The Canadian Press",
-        "byline": "\"David Baxter The Canadian Press\" \"David Baxter <spa"
-       },
-       {
-        "outlet": "BNN Bloomberg",
-        "src": "The Canadian Press",
-        "byline": "\"@type\": \"Person\",\n      \"name\": \"The Canadian Press\",\n      \n    }\n  ]"
-       }
-      ],
-      "copies": [
-       {
-        "outlet": "BNN Bloomberg",
-        "url": "https://www.bnnbloomberg.ca/business/politics/2026/11/19/regulatory-harmonization-not-a-goal-of-associate-membership-for-canada-eu-ambassador/"
-       }
-      ]
-     }
-    ],
-    "replaces_top": false,
-    "events": [],
-    "theme": "Canada and the EU",
-    "canada": "canadian",
-    "canus": false,
-    "incoherent": false,
-    "popular": 0,
-    "us_election": false,
-    "fronts": 0,
-    "fronts_ca": 0,
-    "fronts_who": [],
-    "judgment": "national",
-    "judgment_why": "National: affects many people; carried across the country (national desks).",
-    "weight": 35.5
-   },
-   {
     "key": "auto-92ab7d24",
     "words": [
      "liberals",
      "commons",
-     "budget",
      "passes",
+     "budget",
      "house"
     ],
     "score": 10,
@@ -1859,7 +1621,7 @@
      "alt": "Jim Lowther and Debbie Lowther, co-founders of Veterans Emergency Services Canada, stand in front of plans for the Amherst armoury.",
      "outlet": "CBC News",
      "url": "https://www.cbc.ca/news/canada/nova-scotia/vets-canada-amherst-armoury-9.7428348?cmp=rss",
-     "since": "2026-11-20T17:15:43.319578+00:00"
+     "since": "2026-11-20T17:22:42.948493+00:00"
     },
     "photo_seen": [
      "https://i.cbc.ca/ais/a7781dbb-d593-4157-b8f8-dae7c4e80cae,1770749198595/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C86%2C3840%2C2160%29%3BResize%3D620"
@@ -2015,12 +1777,7 @@
     ]
    }
   ],
-  "passed_over": [
-   {
-    "title": "EU wants ‘closest possible relationship’ with UK after agreeing Brexit reset deal – live",
-    "url": "https://www.theguardian.com/world/live/2026/nov/20/uk-eu-european-union-brexit-deal-andy-burnham-latest-news-updates"
-   }
-  ]
+  "passed_over": []
  },
  "clips": [
   {
@@ -2062,34 +1819,6 @@
    "img": "https://i.ytimg.com/vi/Aba6RyYgJ2E/hqdefault.jpg",
    "up": "2026-11-20",
    "added": "2026-11-20T11:50:39.858876+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "4vU_Wp_GL7g",
-   "r": "ca",
-   "o": "CBC News",
-   "t": "Former Mountie guilty of assaulting teen granted conditional discharge | Hanomansing Live",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=4vU_Wp_GL7g",
-   "img": "https://i.ytimg.com/vi/4vU_Wp_GL7g/hqdefault.jpg",
-   "up": "2026-11-19",
-   "added": "2026-11-20T12:05:21.512918+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "qT_zAMXvh-E",
-   "r": "ca",
-   "o": "CBC News",
-   "t": "Canada is cutting back on cadet activities. What does it mean for kids?",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=qT_zAMXvh-E",
-   "img": "https://i.ytimg.com/vi/qT_zAMXvh-E/hqdefault.jpg",
-   "up": "2026-11-20",
-   "added": "2026-11-20T13:54:36.573933+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2139,7 +1868,7 @@
    "id": "TqMPzWfnkIw",
    "r": "ca",
    "o": "Global News",
-   "t": "This Week in Washington: Trump facing Republican pushback over summit with Xi, Putin",
+   "t": "This Week in Washington: What came out of Trump’s summit with Xi and Putin?",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=TqMPzWfnkIw",
@@ -2153,7 +1882,7 @@
    "id": "SeJ31bgsBag",
    "r": "ca",
    "o": "Global News",
-   "t": "Vancouver landlords fined $90K now facing prosecution over West Side property",
+   "t": "Vancouver landlords again accused of bylaw violations after previous hefty fine",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=SeJ31bgsBag",
@@ -2174,20 +1903,6 @@
    "img": "https://i.ytimg.com/vi/rOvoVw5BvFs/hqdefault.jpg",
    "up": "2026-11-20",
    "added": "2026-11-20T16:22:54.522847+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "z8aU4kadNqQ",
-   "r": "ca",
-   "o": "CTV News",
-   "t": "Your Morning Vancouver Weather Star: Zoe Driedger",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=z8aU4kadNqQ",
-   "img": "https://i.ytimg.com/vi/z8aU4kadNqQ/hqdefault.jpg",
-   "up": "2026-11-20",
-   "added": "2026-11-20T16:43:48.272569+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2216,6 +1931,48 @@
    "img": "https://i.ytimg.com/vi/5RQcZkqNX_E/hqdefault.jpg",
    "up": "2026-11-20",
    "added": "2026-11-20T17:13:47.421952+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "w-g7Y9LTV7g",
+   "r": "ca",
+   "o": "CBC News",
+   "t": "Anthropic stock tumbles after first day on market",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=w-g7Y9LTV7g",
+   "img": "https://i.ytimg.com/vi/w-g7Y9LTV7g/hqdefault.jpg",
+   "up": "2026-11-20",
+   "added": "2026-11-20T17:19:16.646187+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "0wqgZz4Gm6k",
+   "r": "ca",
+   "o": "CBC News",
+   "t": "Houthi missile hits Saudi capital's tallest skyscraper as UN calls for civilian protection",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=0wqgZz4Gm6k",
+   "img": "https://i.ytimg.com/vi/0wqgZz4Gm6k/hqdefault.jpg",
+   "up": "2026-11-20",
+   "added": "2026-11-20T17:19:16.646187+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "CsZiF0DRvYw",
+   "r": "ca",
+   "o": "CTV News",
+   "t": "Province aims to seize control of bike lanes | CTV Your Morning Calgary for Nov. 20, 2026",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=CsZiF0DRvYw",
+   "img": "https://i.ytimg.com/vi/CsZiF0DRvYw/hqdefault.jpg",
+   "up": "2026-11-20",
+   "added": "2026-11-20T17:19:16.646187+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2258,20 +2015,6 @@
    "img": "https://i.ytimg.com/vi/SPFBpZ9CY_g/hqdefault.jpg",
    "up": "2026-11-19",
    "added": "2026-11-20T14:41:26.026871+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "b36VO80qr_U",
-   "r": "us",
-   "o": "CNN",
-   "t": "Trump 2.0 is starting to look a lot like Trump 1.0: Laura Coates",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=b36VO80qr_U",
-   "img": "https://i.ytimg.com/vi/b36VO80qr_U/hqdefault.jpg",
-   "up": "2026-11-20",
-   "added": "2026-11-20T14:51:25.431743+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2332,24 +2075,10 @@
    "geo": "unknown"
   },
   {
-   "id": "FFrERn7sECI",
-   "r": "us",
-   "o": "CBS News",
-   "t": "The U.S. plans to detonate unstable explosives in Iowa. The move may affect thousands of Americans.",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=FFrERn7sECI",
-   "img": "https://i.ytimg.com/vi/FFrERn7sECI/hqdefault.jpg",
-   "up": "2026-11-20",
-   "added": "2026-11-20T16:02:55.066463+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "-kYP-XajFCg",
    "r": "us",
    "o": "Fox News",
-   "t": "‘RATHER UNUSUAL’: Judge orders release of Ilhan Omar records",
+   "t": "DETAILS: Ilhan Omar probe takes NEW TURN after judge’s ruling",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=-kYP-XajFCg",
@@ -2391,7 +2120,7 @@
    "id": "-6S8UA8j-ns",
    "r": "us",
    "o": "Associated Press",
-   "t": "Protestors in Italy speak about their reasons for joining general strike",
+   "t": "General strike in Italy over wages and living costs",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=-6S8UA8j-ns",
@@ -2500,6 +2229,34 @@
    "geo": "unknown"
   },
   {
+   "id": "4KfzrPcr2-c",
+   "r": "us",
+   "o": "CBS News",
+   "t": "Dissident sues Iranian regime over assassination plots",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=4KfzrPcr2-c",
+   "img": "https://i.ytimg.com/vi/4KfzrPcr2-c/hqdefault.jpg",
+   "up": "2026-11-20",
+   "added": "2026-11-20T17:19:16.646187+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "GmtursogRsY",
+   "r": "us",
+   "o": "CNN",
+   "t": "Russia hits Ukraine hours after Trump meets Putin",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=GmtursogRsY",
+   "img": "https://i.ytimg.com/vi/GmtursogRsY/hqdefault.jpg",
+   "up": "2026-11-20",
+   "added": "2026-11-20T17:19:16.646187+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
    "id": "eZ7mNSVh1xk",
    "r": "world",
    "o": "BBC News",
@@ -2531,7 +2288,7 @@
    "id": "3jdHuF947Fo",
    "r": "world",
    "o": "Al Jazeera",
-   "t": "Who pays the price for the world’s appetite for gold? | Fault Lines Documentary",
+   "t": "The Munduruku’s fight for survival in the Brazilian Amazon | Fault Lines Documentary",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=3jdHuF947Fo",
@@ -2643,11 +2400,11 @@
  "ledes": [
   {
    "o": "CBS News",
-   "h": "White House national cyber director leaving his post",
-   "u": "https://www.cbsnews.com/news/white-house-national-cyber-director-sean-cairncross-leaving/",
-   "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/19/787a3b3e-f5a0-4042-a85c-6be1659ed842/thumbnail/1200x630g2/2b076860b3f77dd9d1af8a957147cc7e/ap26320828805068.jpg",
-   "w": "Fri 12:09 p.m.",
-   "iso": "2026-11-20T17:09:20+00:00"
+   "h": "This week on \"Sunday Morning\" (Nov. 22): The Food Issue",
+   "u": "https://www.cbsnews.com/news/this-week-on-sunday-morning-nov-22-2026-the-food-issue/",
+   "img": "https://assets1.cbsnewsstatic.com/hub/i/r/2025/11/20/6f1c079d-ee34-44f9-9970-5259470816d3/thumbnail/1200x630/ad2b90962824fc00e4e995f53cab0076/sm-2025-food-issue-graphic-1920.jpg",
+   "w": "Fri 12:20 p.m.",
+   "iso": "2026-11-20T17:20:26+00:00"
   },
   {
    "o": "ABC News",
@@ -2938,7 +2695,7 @@
    "Opinion",
    "Elon Musk Has Regrets",
    "https://www.nytimes.com/2026/11/20/opinion/elon-musk-regrets-moderate.html",
-   "2026-11-20T12:08:09+00:00"
+   "2026-11-20T17:19:51+00:00"
   ],
   [
    "Fox News",
@@ -2950,9 +2707,9 @@
   [
    "The Wall Street Journal (subscribers)",
    "Opinion",
-   "Ukraine’s Long Russian War",
-   "https://www.wsj.com/opinion/ukraines-long-russian-war-6c14160f?mod=rss_opinion",
-   "2026-11-20T17:12:00+00:00"
+   "Let Congress Keep Doing Its Job With the FAA",
+   "https://www.wsj.com/opinion/let-congress-keep-doing-its-job-with-the-faa-ab41517c?mod=rss_opinion",
+   "2026-11-20T17:19:00+00:00"
   ],
   [
    "Washington Examiner",
@@ -3042,9 +2799,9 @@
   "edition": "Friday afternoon, November 20",
   "lines": [
    "Good afternoon. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
+   "Russian missiles land in Poland, as Europe held military drills nearby. NATO calls it a violation, The Canadian Press reports.",
    "Sales of “Grand Theft Auto VI” are skyrocketing, as gamers’ insatiable appetite for the series continues, The Associated Press reports.",
-   "Xi projects China’s global influence after hosting Trump and Putin at APEC, The Associated Press reports.",
-   "Furious Farage accuses Burnham of betraying Brexit as EU-UK summit gets underway, Euronews reports.",
+   "Members of Parliament have voted to pass the 2026 federal budget in the House of Commons, The Canadian Press reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
   ]
  },
@@ -3210,7 +2967,7 @@
     ]
    },
    {
-    "h": "Melanie Joly, Doug Ford to announce supports for Canada’s auto industry",
+    "h": "As trade war hits auto sector, Ford gets $760M from taxpayers for Ontario plant As trade war hits auto sector, Ford gets $760M from taxpayers for Ontario plant Stellantis, the parent company of Jeep, announced earlier this month a deal to sell its Brampton, Ont. vehicle assembly plant to defence manufacturer Roshel. Economy 3 hours 3 min read",
     "u": "https://globalnews.ca/news/12159444/auto-supports-canada-melanie-joly-doug-ford/",
     "o": [
      [
@@ -3265,6 +3022,17 @@
     ]
    },
    {
+    "h": "Ontario fugitive arrested in Winnipeg hours after making most wanted list",
+    "u": "https://globalnews.ca/news/12159374/filmon-fesshaghirgis-arrested-canada-most-wanted/",
+    "o": [
+     [
+      "Global News",
+      2,
+      "https://globalnews.ca/news/12159374/filmon-fesshaghirgis-arrested-canada-most-wanted/"
+     ]
+    ]
+   },
+   {
     "h": "‘There’s probably 10,000 reasons’: MLA Brian Koonoo resigns from cabinet",
     "u": "https://nunatsiaq.com/stories/article/theres-probably-10000-reasons-mla-brian-koonoo-resigns-from-cabinet/",
     "o": [
@@ -3283,17 +3051,6 @@
       "Daily Hive",
       2,
       "https://dailyhive.com/vancouver/canucks-players-meeting-chipotle"
-     ]
-    ]
-   },
-   {
-    "h": "He’s finally living the NHL dream as a Maple Leafs goaltender — but not the way he expected",
-    "u": "https://www.thestar.com/sports/leafs/plan-b-between-the-pipes-how-a-mississauga-kid-landed-the-leafs-most-unusual-roster-spot/article_3aadc0a5-2b1a-474a-be19-c467b362e829.html",
-    "o": [
-     [
-      "Toronto Star",
-      3,
-      "https://www.thestar.com/sports/leafs/plan-b-between-the-pipes-how-a-mississauga-kid-landed-the-leafs-most-unusual-roster-spot/article_3aadc0a5-2b1a-474a-be19-c467b362e829.html"
      ]
     ]
    }
@@ -3331,21 +3088,21 @@
    "img": "https://cabinradio.ca/wp-content/uploads/2023/03/Ollie-Legislature-20230309-Pic-748.jpg"
   },
   {
+   "o": "BayToday",
+   "region": "North Bay",
+   "arctic": false,
+   "h": "Save big on furniture this Black Friday and enter to win a $2,000 getaway",
+   "u": "https://o25Ovg.short.gy/RCGfGj",
+   "t": "Fri 12:10 p.m.",
+   "desc": "Shop Ashley Furniture, Home Decor, Appliances, Mattresses & more! Find all things to make your house a home! Quality furniture and products at an affordable price. Shop now for items you want at prices you’ll love.",
+   "img": "https://cdn.shopify.com/s/files/1/0289/4082/8725/files/Ashley-Logo-Vertical_JPG_lsqdh3.jpg?v=1714059011"
+  },
+  {
    "o": "SaltWire",
    "region": "Atlantic Canada",
    "arctic": false,
    "h": "Hammonds Plains man headed to trial on slew of domestic violence charges",
    "u": "https://www.saltwire.com/nova-scotia/halifax/hammonds-plains-man-trial-19-domestic-violence-charges-abuse",
-   "t": "Fri 12:04 p.m.",
-   "desc": "",
-   "img": ""
-  },
-  {
-   "o": "Moose Jaw Today",
-   "region": "Saskatchewan",
-   "arctic": false,
-   "h": "Mayor opens 2026 Salvation Army kettle campaign with ceremonial first donation",
-   "u": "https://www.moosejawtoday.com/local-news/mayor-opens-2026-salvation-army-kettle-campaign-with-ceremonial-first-donation-13041559",
    "t": "Fri 12:04 p.m.",
    "desc": "",
    "img": ""
@@ -3356,12 +3113,12 @@
    "city": "St. John's",
    "tz": "America/St_Johns",
    "world": false,
-   "w": "Presence",
-   "label": "$200K from N.L. going to downtown St. John’s for private…",
-   "u": "https://www.cbc.ca/news/canada/newfoundland-labrador/st-johns-foot-patrols-funding-9.7429497?cmp=rss",
-   "title": "$200K from N.L. going to downtown St. John’s for private security foot patrols",
+   "w": "Oil and shipping",
+   "label": "Bay du Nord offshore oil project off N.L. clears last…",
+   "u": "https://www.cbc.ca/news/canada/newfoundland-labrador/bay-du-nord-offshore-oil-project-off-n-l-clears-last-major-regulatory-hurdle-9.7429538?cmp=rss",
+   "title": "Bay du Nord offshore oil project off N.L. clears last major regulatory hurdle",
    "outlet": "CBC News",
-   "t": "Fri 10:57 a.m.",
+   "t": "Fri 12:12 p.m.",
    "hot": false
   },
   {
@@ -3392,12 +3149,12 @@
    "city": "Winnipeg",
    "tz": "America/Winnipeg",
    "world": false,
-   "w": "Health",
-   "label": "New PET/CT scanner coming to Saskatoon’s Royal University…",
-   "u": "https://www.ckom.com/2026/11/20/new-petct-scanner-coming-to-saskatoons-royal-university-hospital/",
-   "title": "New PET/CT scanner coming to Saskatoon’s Royal University Hospital",
-   "outlet": "CKOM / PAnow",
-   "t": "Fri 11:52 a.m.",
+   "w": "Police",
+   "label": "Winnipeg police respond to ‘serious incident’ in Sage…",
+   "u": "https://winnipeg.citynews.ca/2026/11/20/winnipeg-police-respond-to-serious-incident-in-sage-creek/",
+   "title": "Winnipeg police respond to ‘serious incident’ in Sage Creek",
+   "outlet": "CityNews Winnipeg",
+   "t": "Fri 12:17 p.m.",
    "hot": false
   },
   {
@@ -3437,6 +3194,18 @@
    "hot": true
   },
   {
+   "city": "Beijing",
+   "tz": "Asia/Shanghai",
+   "world": true,
+   "w": "Talks",
+   "label": "Russia paints Putin's talks with Trump and Xi as a…",
+   "u": "https://www.thestar.com/news/world/europe/russia-paints-putin-s-talks-with-trump-and-xi-as-a-watershed-moment-and-a-snub-to-europe/article_1312b803-1386-512c-9aa0-a805adbdb472.html",
+   "title": "Russia paints Putin's talks with Trump and Xi as a watershed moment and a snub to Europe",
+   "outlet": "Toronto Star",
+   "t": "Fri 11:21 a.m.",
+   "hot": true
+  },
+  {
    "city": "Moscow",
    "tz": "Europe/Moscow",
    "world": true,
@@ -3453,39 +3222,27 @@
    "tz": "Europe/Kyiv",
    "world": true,
    "w": "Missile strikes",
-   "label": "Putin launches Ukraine barrage hours after Trump meeting…",
-   "u": "https://www.foxnews.com/world/putin-launches-ukraine-barrage-hours-after-trump-meeting-amid-alleged-russian-missile-breach-nato-airspace",
-   "title": "Putin launches Ukraine barrage hours after Trump meeting amid alleged Russian missile breach of NATO airspace",
-   "outlet": "Fox News",
-   "t": "Fri 10:13 a.m.",
-   "hot": false
-  },
-  {
-   "city": "Brussels",
-   "tz": "Europe/Brussels",
-   "world": true,
-   "w": "Missile strikes",
-   "label": "Russian missiles land in Poland",
-   "u": "https://www.ctvnews.ca/world/russia-ukraine-war/article/russia-bombards-ukraine-killing-at-least-8-after-putin-vowed-retaliation-for-kerch-bridge-attack/",
-   "title": "Russian missiles land in Poland, as Europe held military drills nearby. NATO calls it a violation",
-   "outlet": "CTV News",
-   "t": "Fri 12:01 p.m.",
+   "label": "Russian missile hits Poland as Ukraine's allies hold…",
+   "u": "https://www.bbc.co.uk/news/articles/cqx2x9dklxnro?at_medium=RSS&at_campaign=rss",
+   "title": "Russian missile hits Poland as Ukraine's allies hold military exercise, says Tusk",
+   "outlet": "BBC News",
+   "t": "Fri 11:54 a.m.",
    "hot": true
   }
  ],
  "bigweek": [],
  "desks": [
   {
-   "desk": "us",
-   "pic": "podium",
-   "t": "Fri 12:05 p.m.",
-   "iso": "2026-11-20T17:05:54+00:00",
-   "title": "Trump to hold news conference Friday on his Asia trip",
-   "summary": "Trump is expected to hold news conference on Friday on his trip to Asia and his meeting in China with presidents Xi Jinping of China and Vladimir Putin of Russia.",
-   "outlet": "ABC News, NBC News, Fox News, Euronews, The Hill, Kyiv Independent, Al Jazeera, BBC News, CP24 (AP)",
-   "n": 9,
-   "url": "https://abcnews.com/Politics/trump-hold-news-conference-friday-asia-trip/story?id=138307456",
-   "img": "https://i.abcnewsfe.com/a/49dee65f-3ab5-4c62-9b17-04f4defb628b/donald-trump-11-gty-gmh-261119_1795093777769_hpMain_16x9.jpg?w=1600"
+   "desk": "world",
+   "pic": "globe",
+   "t": "Fri 12:13 p.m.",
+   "iso": "2026-11-20T17:13:11+00:00",
+   "title": "Russian missiles land in Poland, as Europe held military drills nearby. NATO calls it a violation",
+   "summary": "Two Russian missiles and a suspected drone came down in Poland on Friday in what its prime minister said was likely a provocation timed to coincide with European military exercises in his country for a possible postwar mission in Ukraine.",
+   "outlet": "CTV News + Toronto Star + The Canadian Press (via Winnipeg Free Press) + CP24, ABC News, NBC News, BBC News, The Hill, Kyiv Independent, The Guardian, CTV News + CP24",
+   "n": 8,
+   "url": "https://www.ctvnews.ca/world/russia-ukraine-war/article/russia-bombards-ukraine-killing-at-least-8-after-putin-vowed-retaliation-for-kerch-bridge-attack/",
+   "img": "https://www.ctvnews.ca/resizer/v2/OXDHVP7E6YMRVMXF66UXDEGVKI.jpg?smart=true&auth=b4904fc40bbb8ca53b8ec71f2f49a931644aea0008ab623106f319b2142066b8&width=1200&height=630"
   },
   {
    "desk": "world",
@@ -3500,28 +3257,16 @@
    "img": "https://www.bnnbloomberg.ca/resizer/v2/YONIEL4DJRGM5J3UB5P6FWG2WA.jpg?smart=true&auth=476999f0be39392723a6dbba974bc2a1dce6dfcd42bcef1d1b7642c195c6c37b&width=1200&height=630"
   },
   {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Fri 12:01 p.m.",
-   "iso": "2026-11-20T17:01:28+00:00",
-   "title": "Russian missiles land in Poland, as Europe held military drills nearby. NATO calls it a violation",
-   "summary": "Two Russian missiles and a suspected drone came down in Poland on Friday in what its prime minister said was likely a provocation timed to coincide with European military exercises in his country for a possible postwar mission in Ukraine.",
-   "outlet": "CTV News + Toronto Star + The Canadian Press (via Winnipeg Free Press) + CP24, BBC News, The Guardian, Al Jazeera, CTV News + CP24",
-   "n": 5,
-   "url": "https://www.ctvnews.ca/world/russia-ukraine-war/article/russia-bombards-ukraine-killing-at-least-8-after-putin-vowed-retaliation-for-kerch-bridge-attack/",
-   "img": "https://www.ctvnews.ca/resizer/v2/OXDHVP7E6YMRVMXF66UXDEGVKI.jpg?smart=true&auth=b4904fc40bbb8ca53b8ec71f2f49a931644aea0008ab623106f319b2142066b8&width=1200&height=630"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Fri 10:03 a.m.",
-   "iso": "2026-11-20T15:03:59+00:00",
-   "title": "Russia stalls UN bid to regulate AI 'killer robots' as talks near deadline",
-   "summary": "",
-   "outlet": "Euronews, CTV News + CP24 + BNN Bloomberg, CP24 + BNN Bloomberg, Canada's National Observer",
-   "n": 4,
-   "url": "https://www.euronews.com/2026/11/20/russia-stalls-un-bid-to-regulate-ai-killer-robots-as-talks-near-deadline",
-   "img": ""
+   "desk": "business",
+   "pic": "chart",
+   "t": "Fri 12:17 p.m.",
+   "iso": "2026-11-20T17:17:19.189000+00:00",
+   "title": "Nasdaq wipes out 2026 gains as Anthropic and AI stocks push lower",
+   "summary": "U.S. markets are pushing lower on Friday, including Anthropic shares on their second day of trading.",
+   "outlet": "CBC News, CTV News + CP24 + BNN Bloomberg, NBC News",
+   "n": 3,
+   "url": "https://www.cbc.ca/news/business/anthropic-ipo-markets-today-9.7429534",
+   "img": "https://i.cbc.ca/ais/1.421607,1795181368260/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C620%2C348%29%3BResize%3D620"
   },
   {
    "desk": "us",
@@ -3536,18 +3281,6 @@
    "img": "https://i.guim.co.uk/img/media/ae323a28e78350bfb8aa0cc58ada95d577e65d9c/516_0_4393_3514/master/4393.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=cab60c8b7d4345217a3b3df5414fc0ca"
   },
   {
-   "desk": "us",
-   "pic": "podium",
-   "t": "Fri 11:43 a.m.",
-   "iso": "2026-11-20T16:43:10+00:00",
-   "title": "Infamous Rikers Island jail is closing, New York Mayor Zohran Mamdani says",
-   "summary": "Rikers Island is notorious for being plagued by violence and dysfunction caused in part by overcrowding and poor living conditions.",
-   "outlet": "Global News, CTV News + CP24 (CP), Euronews",
-   "n": 3,
-   "url": "https://globalnews.ca/news/12159423/rikers-island-closing-new-york-city-zohran-mamdani/",
-   "img": "https://globalnews.ca/wp-content/uploads/2026/11/Rikers-Island-closing-New-York-City.jpg?quality=65&strip=all&w=720&h=379&crop=1"
-  },
-  {
    "desk": "business",
    "pic": "chart",
    "t": "Fri 5:00 a.m.",
@@ -3560,28 +3293,40 @@
    "img": "https://i.cbc.ca/ais/a7781dbb-d593-4157-b8f8-dae7c4e80cae,1770749198595/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C86%2C3840%2C2160%29%3BResize%3D620"
   },
   {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Fri 12:16 p.m.",
+   "iso": "2026-11-20T17:16:04+00:00",
+   "title": "Major construction set to disrupt King Street West through 2027",
+   "summary": "Major construction work along Toronto’s busy King Street West is set to begin next week, with lane reductions, intersection closures and streetcar diversions expected to continue through 2027.",
+   "outlet": "CTV News + CP24 (CP), CityNews",
+   "n": 2,
+   "url": "https://www.ctvnews.ca/toronto/article/major-construction-set-to-disrupt-king-street-west-through-2027/",
+   "img": "https://www.ctvnews.ca/resizer/v2/JQO7HDNINRFFXIFROBOEY5AOKE.jpg?smart=true&auth=22a22255a63aba0dba60f5d185227ecae3b28e28f2ffd978837bb93e47c70d9a&width=1200&height=630"
+  },
+  {
    "desk": "politics",
    "pic": "parliament",
    "t": "Fri 12:08 p.m.",
    "iso": "2026-11-20T17:08:54+00:00",
    "title": "Pierre Poilievre calls no jail sentence for child rapist ‘abhorrent’",
-   "summary": "",
+   "summary": "The federal leader of the Conservative Party has shared strong words in reaction to a central Ontario court case.",
    "outlet": "CTV News (CP), BBC News",
    "n": 2,
    "url": "https://www.ctvnews.ca/barrie/article/pierre-poilievre-calls-no-jail-sentence-for-child-rapist-abhorrent/",
    "img": "https://www.ctvnews.ca/resizer/v2/HZZKEDEXFZAJHPKBGECZGKJI2I.png?smart=true&auth=87a254a21ae9175a2be5cbeed47ce751d4d9a1fa417984f31bed979a23854c1f&width=1200&height=630"
   },
   {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Fri 11:36 a.m.",
-   "iso": "2026-11-20T16:36:10+00:00",
-   "title": "At least 1,144 children killed or injured in Ukraine during Russia's war this year, UNICEF says",
-   "summary": "In October alone, child casualties rose by 150% compared with the same month last year, reaching at least 146, UNICEF said.",
-   "outlet": "Kyiv Independent, CTV News + CP24 (CP)",
+   "desk": "us",
+   "pic": "podium",
+   "t": "Fri 11:43 a.m.",
+   "iso": "2026-11-20T16:43:10+00:00",
+   "title": "Infamous Rikers Island jail is closing, New York Mayor Zohran Mamdani says",
+   "summary": "Rikers Island is notorious for being plagued by violence and dysfunction caused in part by overcrowding and poor living conditions.",
+   "outlet": "Global News, CTV News + CP24 (CP)",
    "n": 2,
-   "url": "https://kyivindependent.com/at-least-1-144-children-killed-or-injured-in-ukraine-during-russias-war-this-year-unicef-says/",
-   "img": "https://assets.kyivindependent.com/content/images/2026/11/GettyImages-2305848214_20261120-161624.jpg"
+   "url": "https://globalnews.ca/news/12159423/rikers-island-closing-new-york-city-zohran-mamdani/",
+   "img": "https://globalnews.ca/wp-content/uploads/2026/11/Rikers-Island-closing-New-York-City.jpg?quality=65&strip=all&w=720&h=379&crop=1"
   },
   {
    "desk": "business",
@@ -3608,6 +3353,18 @@
    "img": "https://i.guim.co.uk/img/media/4cafb92aa24ab1dd66791308efa6469d336ac8e2/17_0_1880_1504/master/1880.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=f75dc1b69094f060a6fba33143f561e1"
   },
   {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Fri 10:59 a.m.",
+   "iso": "2026-11-20T15:59:02+00:00",
+   "title": "Workers and students protest across Europe as a strike in Italy disrupts services",
+   "summary": "Workers and students protested across Europe on Friday as a nationwide strike disrupted transport and school services in Italy and demonstrators gathered in several countries to press demands on issues ranging from wages and living costs to education and military spending.",
+   "outlet": "CTV News + CP24 + BNN Bloomberg, The Guardian",
+   "n": 2,
+   "url": "https://www.ctvnews.ca/world/article/workers-and-students-protest-across-europe-as-a-strike-in-italy-disrupts-services/",
+   "img": "https://www.ctvnews.ca/resizer/v2/PCYHSTYRL2WKFLQKCQ74PABB7I.jpg?smart=true&auth=b46411f7f4fd2e8e1a9f2a95e42df2547798a81f864137790a6cc9855d43674f&width=1200&height=630"
+  },
+  {
    "desk": "business",
    "pic": "chart",
    "t": "Fri 10:34 a.m.",
@@ -3618,18 +3375,6 @@
    "n": 2,
    "url": "https://thehill.com/policy/energy-environment/6233084-doj-approves-nextera-dominion-merger/",
    "img": ""
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Fri 10:19 a.m.",
-   "iso": "2026-11-20T15:19:17+00:00",
-   "title": "U.S. stocks waver as tech sell-off continues and Anthropic falls",
-   "summary": "Stocks wavered in morning trading on Wall Street Friday under the heavy weight of falling AI companies. The S&P 500 index was mostly unchanged.",
-   "outlet": "CTV News + CP24 + BNN Bloomberg, CBC News",
-   "n": 2,
-   "url": "https://www.ctvnews.ca/business/article/tech-stocks-pull-us-markets-lower-early-with-anthropics-historic-debut-doing-little-to-slow-rout/",
-   "img": "https://www.ctvnews.ca/resizer/v2/3SMI6ZBDOQLIV2DA75LFRTQZAI.jpg?smart=true&auth=71bc6e09b75747ef6544839e3144b377177ae0661f25d0f14b8392f10efc4f56&width=1200&height=630"
   },
   {
    "desk": "us",
@@ -3646,14 +3391,14 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Fri 9:34 a.m.",
-   "iso": "2026-11-20T14:34:50+00:00",
-   "title": "Transport truck driver charged after rollerblader struck and killed in Ajax: police",
-   "summary": "A driver is facing charges after a rollerblader was struck and killed by a transport truck in Ajax earlier this year.",
-   "outlet": "CTV News + CP24 (CP), CityNews",
+   "t": "Fri 9:19 a.m.",
+   "iso": "2026-11-20T14:19:50+00:00",
+   "title": "UN climate talks slammed by activists, leaders as fossil fuels go unmentioned in draft agreement",
+   "summary": "This year’s UN climate talks are wrapping up in Turkiye, with negotiators still debating how to address global warming and experts warning that only slashing fossil fuels can avert its most catastrophic effects.",
+   "outlet": "CP24 + BNN Bloomberg, Canada's National Observer",
    "n": 2,
-   "url": "https://www.ctvnews.ca/toronto/article/transport-truck-driver-charged-after-rollerblader-struck-and-killed-in-ajax-police/",
-   "img": "https://www.ctvnews.ca/resizer/v2/5EBWZFETGFBRXILSZIGKQELK7A.jpg?smart=true&auth=84f854ae43f21bf45b65cd5f02debe099df0bf1ee785d587750f23390780af8b&width=1200&height=630"
+   "url": "https://www.cp24.com/news/world/2026/11/20/un-climate-talks-slammed-by-activists-leaders-as-fossil-fuels-go-unmentioned-in-draft-agreement/",
+   "img": "https://www.cp24.com/resizer/v2/X2MMWKJZCISLJXNIIJARSAGHTU.jpg?smart=true&auth=76a790505bad7d94d5ac1b496cb3f3f5c6d94097e29f9c9e56e1e184423df136&width=1200&height=630"
   },
   {
    "desk": "us",
@@ -3678,6 +3423,18 @@
    "n": 2,
    "url": "https://www.bnnbloomberg.ca/faq/2025/10/24/heres-whos-appearing-on-bnn-bloomberg-market-call/",
    "img": "https://www.bnnbloomberg.ca/resizer/v2/SRWSMTWZKHKVGLH6BZHSBUW5JU.jpg?smart=true&auth=9b3c218d7a354bedc747ad445581d38ee1103930b0b2c6fa1c609b2931ed756c&width=1200&height=630"
+  },
+  {
+   "desk": "us",
+   "pic": "podium",
+   "t": "Fri 12:09 p.m.",
+   "iso": "2026-11-20T17:09:20+00:00",
+   "title": "White House national cyber director leaving his post",
+   "summary": "White House National Cyber Director Sean Cairncross will be leaving his position, a White House official told CBS News.",
+   "outlet": "CBS News",
+   "n": 1,
+   "url": "https://www.cbsnews.com/news/white-house-national-cyber-director-sean-cairncross-leaving/",
+   "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/19/787a3b3e-f5a0-4042-a85c-6be1659ed842/thumbnail/1200x630g2/2b076860b3f77dd9d1af8a957147cc7e/ap26320828805068.jpg"
   },
   {
    "desk": "business",
@@ -3730,18 +3487,6 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Fri 11:44 a.m.",
-   "iso": "2026-11-20T16:44:26+00:00",
-   "title": "‘No shortage of depraved men’ willing to kill British woman on porn site Motherless, U.S. court hears",
-   "summary": "A Florida man is on trial accused of kidnapping and killing a British woman last year after meeting her on the now defunct Motherless.com, an extreme porn site.",
-   "outlet": "CTV News + CP24 (CP)",
-   "n": 1,
-   "url": "https://www.ctvnews.ca/world/article/no-shortage-of-depraved-men-willing-to-kill-british-woman-on-porn-site-motherless-us-court-hears/",
-   "img": "https://www.ctvnews.ca/resizer/v2/GHAZIAJYUBBOLPZMPBYS77EGGI.JPG?smart=true&auth=720891811d16f57050ab3df60d32e44637a4b17242c476402cf7b63fa49f510a&width=1200&height=630"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
    "t": "Fri 11:11 a.m.",
    "iso": "2026-11-20T16:11:34+00:00",
    "title": "Scarborough real estate brokerage shut down after complaints over $500K in deposits",
@@ -3762,6 +3507,18 @@
    "n": 1,
    "url": "https://www.ctvnews.ca/politics/article/no-changes-to-core-cadet-programming-after-cancellation-emails-defence-minister/",
    "img": "https://www.ctvnews.ca/resizer/v2/ZIDCJHKV2BCW6IN57DS7Z4SN5Y.jpg?smart=true&auth=b55a6ff85ca6886dfc758ceb5e558925e07a3094d8f340835b921f67d6cf9932&width=1200&height=630"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Fri 10:24 a.m.",
+   "iso": "2026-11-20T15:24:37+00:00",
+   "title": "New federal 'digital transformation' chief says he took the job for $1 a year",
+   "summary": "The head of a new federal agency tasked with driving adoption of AI and other technologies across the public service says he took the job for a salary of $1 a year.",
+   "outlet": "CTV News + Toronto Star + CKOM / PAnow + CP24 (CP)",
+   "n": 1,
+   "url": "https://www.ctvnews.ca/politics/article/new-federal-digital-transformation-chief-says-he-took-the-job-for-1-a-year/",
+   "img": "https://www.ctvnews.ca/resizer/v2/IQOMU3TG3DMUQ6TK47KWUW6HYU.jpg?smart=true&auth=b3296dc5127973c1aed3c9107c2a88ce78a79a9f2b68a8ffae42fa42e56316dd&width=1200&height=630"
   },
   {
    "desk": "politics",
@@ -3924,19 +3681,19 @@
    "ca": true,
    "h": [
     "CBC News - Latest Canada, World, Entertainment and Business News",
-    "A Montrealer died in Istanbul. Authorities blame food poisoning but what we found suggests something else",
-    "Illegal use of pesticide in Turkey linked to deaths of other tourists and residents",
-    "An exterminator explains difference between legal and lethal treatments to kill bedbugs",
-    "Tech stocks pull U.S. markets lower, Anthropic shares fall",
-    "White nationalist demonstrators need to 'get out of our city,' Hamilton mayor says at 1st news conference"
+    "Nasdaq wipes out 2026 gains as Anthropic and AI stocks push lower",
+    "U.S. stocks are sliding the day after Anthropic's blockbuster IPO",
+    "The Nvidia scandal has wiped away $1T in value. What that means for your investments",
+    "Anthropic stock soars by double-digits, a 'big near-term win' for a 'very nervous' tech sector",
+    "A Montrealer died in Istanbul. Authorities blame food poisoning but what we found suggests something else"
    ],
    "u": [
     "",
-    "https://www.cbc.ca/news/canada/canadian-death-istanbul-9.7427069",
-    "",
-    "https://www.cbc.ca/player/play/video/9.7427422",
     "https://www.cbc.ca/news/business/anthropic-ipo-markets-today-9.7429534",
-    "https://www.cbc.ca/news/canada/hamilton/leaders-respond-to-pro-nazi-demonstration-9.7428715"
+    "",
+    "https://www.cbc.ca/news/business/nvidia-jensen-huang-ceo-selloff-investments-retirement-9.7420093",
+    "https://www.cbc.ca/news/business/anthropic-first-day-trading-9.7428367",
+    "https://www.cbc.ca/news/canada/canadian-death-istanbul-9.7427069"
    ]
   },
   {
@@ -3980,12 +3737,32 @@
    ]
   },
   {
+   "o": "Toronto Star",
+   "ca": true,
+   "h": [
+    "Toronto Star News - Breaking News Stories",
+    "His legs were badly hurt in a job accident. His workers’ benefits ran out in 2 years — due to his age",
+    "Ford ‘not going anywhere,’ national CEO says as Oakville assembly plant reopens",
+    "Inside the Toronto murder acquittal of this ‘completely innocent’ man",
+    "He’s finally living the NHL dream as a Maple Leafs goaltender — but not the way he expected",
+    "Toronto tenants face fourth above-guideline rent hike as landlord racks up 26 AGI applications since 2020"
+   ],
+   "u": [
+    "",
+    "https://www.thestar.com/news/canada/his-legs-were-badly-hurt-in-a-job-accident-his-workers-benefits-ran-out-in-2-years-due-to-his-age/article_92d407cd-51ac-42b6-9b73-4d6eecbdbd64.html",
+    "https://www.thestar.com/business/ford-not-going-anywhere-national-ceo-says-as-oakville-assembly-plant-reopens/article_f45d4eef-42c1-45f4-a93b-fd2f9a4da49e.html",
+    "https://www.thestar.com/news/gta/inside-the-murder-acquittal-of-this-completely-innocent-toronto-man/article_4adf5480-dd15-46bb-b610-fb9dfea2cb1c.html",
+    "https://www.thestar.com/sports/leafs/plan-b-between-the-pipes-how-a-mississauga-kid-landed-the-leafs-most-unusual-roster-spot/article_3aadc0a5-2b1a-474a-be19-c467b362e829.html",
+    "https://www.thestar.com/real-estate/toronto-tenants-face-fourth-above-guideline-rent-hike-as-landlord-racks-up-26-agi-applications-since-2020/article_9ce813c2-2ba3-473d-8f5b-501cc8cc72ca.html"
+   ]
+  },
+  {
    "o": "National Post",
    "ca": true,
    "h": [
     "FIRST READING: It turns out all those Chinese EVs might be a security risk",
     "Carney eyes Chinese automakers, but can they save Canadian auto jobs?",
-    "Two young Ontario hockey players get 40 months behind bars for 'joint sexual violation'",
+    "Bronfmans make major donation of glassworks and endowment fund to National Gallery",
     "Lucy Hargreaves: Liberals shouldn't be picking which entrepreneurs get tax breaks",
     "Raymond J. de Souza: Michael Chong red-flags Carney's alternate reality",
     "Lucy Gay: Students at religious, arts schools hurt by Ontario's OSAP pause"
@@ -3993,7 +3770,7 @@
    "u": [
     "https://nationalpost.com/opinion/first-reading-it-turns-out-all-those-chinese-evs-might-be-a-security-risk/",
     "https://nationalpost.com/news/carney-eyes-chinese-automakers-but-can-they-save-canadian-auto-jobs/",
-    "https://nationalpost.com/news/canada/ontario-hockey-players-sentenced-unwanted-threesome/",
+    "https://nationalpost.com/news/canada/bronfmans-make-major-donation-of-glassworks-and-endowment-fund-to-national-gallery/",
     "https://nationalpost.com/opinion/lucy-hargreaves-liberals-shouldnt-be-picking-which-entrepreneurs-get-tax-breaks/",
     "https://nationalpost.com/opinion/raymond-j-de-souza-michael-chong-red-flags-carneys-alternate-reality/",
     "https://nationalpost.com/opinion/students-at-religious-arts-schools-hurt-by-ontarios-osap-pause/"
@@ -4046,16 +3823,16 @@
     "Canada and Japan make their own moves as Trump courts Xi, Putin",
     "The Canadian economy has ‘gotten much weaker than people were expecting’: Harris",
     "Ford Super Duty pickup trucks begin rolling out after retool at Oakville, Ont., plant",
-    "S&P/TSX composite down more than 350 points as tech and base metal stocks sink",
     "Alberta tweaks carbon capture incentive program to allow grants during construction",
+    "U.S. stocks tumble, and the S&P 500 drops as the sell-off for AI stocks accelerates",
     "Sales of 'Grand Theft Auto VI' skyrocket as the series makes its return after 13-year absence"
    ],
    "u": [
     "https://www.bnnbloomberg.ca/business/politics/2026/11/20/as-trump-courts-xi-and-putin-middle-powers-make-their-own-moves/",
     "https://www.bnnbloomberg.ca/video/shows/the-open/2026/11/20/the-canadian-economy-has-gotten-much-weaker-than-people-were-expecting-harris/",
     "https://www.bnnbloomberg.ca/business/company-news/2026/11/20/ford-super-duty-pickup-trucks-begin-rolling-out-after-retool-at-oakville-ont-plant/",
-    "https://www.bnnbloomberg.ca/markets/2026/11/20/sptsx-composite-down-more-than-350-points-as-tech-and-base-metal-stocks-sink/",
     "https://www.bnnbloomberg.ca/business/politics/2026/11/20/alberta-tweaks-carbon-capture-incentive-program-to-allow-grants-during-construction/",
+    "https://www.bnnbloomberg.ca/markets/2026/11/20/tech-stocks-pull-us-markets-lower-early-with-anthropics-historic-debut-doing-little-to-slow-rout/",
     "https://www.bnnbloomberg.ca/business/company-news/2026/11/20/sales-of-grand-theft-auto-vi-skyrocket-as-the-series-makes-its-return-after-13-year-absence/"
    ]
   },
@@ -4155,18 +3932,18 @@
    "h": [
     "Poland Russian missiles and drone hit Poland during attacks on Ukraine",
     "Ukraine war briefing Trump ‘open’ to Kyiv getting Nato-like mutual defence guarantee, says Kushner",
-    "US politics live Trump to hold press conference as House speaker launches last-ditch effort to push through Republican agenda",
     "Europe live EU wants ‘closest possible relationship’ with UK after agreeing Brexit reset deal",
     "Trade policy Burnham has agreed EU reset deal with tuition fees issue unresolved, says No 10",
-    "Explainer What impact has Brexit had on the UK and EU economies?"
+    "Explainer What impact has Brexit had on the UK and EU economies?",
+    "Law US reacts cautiously to Myanmar genocide ruling as EU praises ‘critical’ role of UN’s top court"
    ],
    "u": [
     "",
     "https://www.theguardian.com/world/2026/nov/20/ukraine-war-briefing-trump-open-to-kyiv-getting-nato-like-mutual-defence-guarantee-says-kushner",
-    "https://www.theguardian.com/us-news/live/2026/nov/20/donald-trump-brooke-rollins-religion-sean-cairncross-senate-alaska-white-house-press-conference-us-politics-latest-news-updates",
     "",
     "https://www.theguardian.com/politics/2026/nov/20/fallout-over-tuition-fees-may-snag-burnhams-eu-deal-say-insiders",
-    "https://www.theguardian.com/business/2026/nov/20/what-impact-brexit-uk-eu-economies"
+    "https://www.theguardian.com/business/2026/nov/20/what-impact-brexit-uk-eu-economies",
+    ""
    ]
   },
   {
@@ -4193,26 +3970,14 @@
  "live": {
   "now": [
    {
-    "net": "NBC News",
-    "r": "us",
-    "title": "LIVE: Trump holds press briefing after historic meeting with Xi and Putin | NBC News",
-    "url": "https://www.youtube.com/watch?v=T8OUcBT37dI",
-    "img": "https://i.ytimg.com/vi/T8OUcBT37dI/hqdefault.jpg",
-    "story": "Trump holds press briefing after historic meeting with Xi and Putin",
-    "watching": "662",
+    "net": "CPAC",
+    "r": "ca",
+    "title": "12:15 ET / 10:15 PCT: Defence Minister David McGuinty holds a press conference",
+    "url": "https://www.youtube.com/watch?v=VqWRX1TKywo",
+    "img": "https://i.ytimg.com/vi/VqWRX1TKywo/hqdefault.jpg",
+    "story": "12:15 ET / 10:15 PCT: Defence Minister David McGuinty holds a press co",
+    "watching": "1",
     "also": [
-     {
-      "net": "PBS NewsHour",
-      "url": "https://www.youtube.com/watch?v=XBt_02mMN7U"
-     },
-     {
-      "net": "CNBC",
-      "url": "https://www.youtube.com/watch?v=xKDzMYHi-uw"
-     },
-     {
-      "net": "C-SPAN",
-      "url": "https://www.youtube.com/watch?v=IidTrEpdcCQ"
-     },
      {
       "net": "Associated Press",
       "url": "https://www.youtube.com/watch?v=VD-KP5xTESY"
@@ -4236,6 +4001,34 @@
      {
       "net": "The White House",
       "url": "https://www.youtube.com/watch?v=FHE3DAJXsMM"
+     },
+     {
+      "net": "The White House live",
+      "url": "https://www.whitehouse.gov/live/",
+      "official": true
+     }
+    ]
+   },
+   {
+    "net": "NBC News",
+    "r": "us",
+    "title": "LIVE: Trump holds press briefing after historic meeting with Xi and Putin | NBC News",
+    "url": "https://www.youtube.com/watch?v=T8OUcBT37dI",
+    "img": "https://i.ytimg.com/vi/T8OUcBT37dI/hqdefault.jpg",
+    "story": "Trump holds press briefing after historic meeting with Xi and Putin",
+    "watching": "738",
+    "also": [
+     {
+      "net": "PBS NewsHour",
+      "url": "https://www.youtube.com/watch?v=XBt_02mMN7U"
+     },
+     {
+      "net": "CNBC",
+      "url": "https://www.youtube.com/watch?v=xKDzMYHi-uw"
+     },
+     {
+      "net": "C-SPAN",
+      "url": "https://www.youtube.com/watch?v=IidTrEpdcCQ"
      },
      {
       "net": "The White House live",
@@ -4281,60 +4074,16 @@
     "url": "https://www.youtube.com/watch?v=fDifK2UkzLc",
     "img": "https://i.ytimg.com/vi/fDifK2UkzLc/hqdefault.jpg",
     "story": "Industry minister announces new funding for auto manufacturing in Oakv",
-    "watching": "186"
+    "watching": "101"
    },
    {
-    "net": "Global News",
+    "net": "CPAC",
     "r": "ca",
-    "title": "Melanie Joly, Doug Ford and Lana Payne announce reopening of Ford's Oakville plant | LIVE",
-    "url": "https://www.youtube.com/watch?v=x7GV5BedGlM",
-    "img": "https://i.ytimg.com/vi/x7GV5BedGlM/hqdefault.jpg",
-    "story": "Melanie Joly, Doug Ford and Lana Payne announce reopening of Ford's Oa",
-    "watching": "370",
-    "reports": [
-     {
-      "outlet": "CTV News",
-      "title": "Ford Super Duty pickup trucks begin rolling out after retool at Oakville, Ont., plant",
-      "url": "https://www.ctvnews.ca/business/autos/article/ford-super-duty-pickup-trucks-begin-rolling-out-after-retool-at-oakville-ont-plant/",
-      "t": "Fri 11:10 a.m.",
-      "iso": "2026-11-20T16:10:30+00:00"
-     },
-     {
-      "outlet": "CP24",
-      "title": "Ford Super Duty pickup trucks begin rolling out after retool at Oakville, Ont., plant",
-      "url": "https://www.cp24.com/news/money/2026/11/20/ford-super-duty-pickup-trucks-begin-rolling-out-after-retool-at-oakville-ont-plant/",
-      "t": "Fri 11:10 a.m.",
-      "iso": "2026-11-20T16:10:30+00:00"
-     },
-     {
-      "outlet": "BNN Bloomberg",
-      "title": "Ford Super Duty pickup trucks begin rolling out after retool at Oakville, Ont., plant",
-      "url": "https://www.bnnbloomberg.ca/business/company-news/2026/11/20/ford-super-duty-pickup-trucks-begin-rolling-out-after-retool-at-oakville-ont-plant/",
-      "t": "Fri 11:10 a.m.",
-      "iso": "2026-11-20T16:10:30+00:00"
-     },
-     {
-      "outlet": "CityNews Ottawa",
-      "title": "Ford Super Duty pickup trucks begin rolling out after retool at Oakville, Ont., plant",
-      "url": "https://ottawa.citynews.ca/2026/11/20/ford-oakville-production-ontario/",
-      "t": "Fri 11:00 a.m.",
-      "iso": "2026-11-20T16:00:14+00:00"
-     },
-     {
-      "outlet": "CityNews",
-      "title": "Ford Super Duty pickup trucks begin rolling out after retool at Oakville, Ont., plant",
-      "url": "https://toronto.citynews.ca/2026/11/20/ford-oakville-production-ontario/",
-      "t": "Fri 11:00 a.m.",
-      "iso": "2026-11-20T16:00:14+00:00"
-     },
-     {
-      "outlet": "Global News",
-      "title": "Melanie Joly, Doug Ford to announce supports for Canada’s auto industry",
-      "url": "https://globalnews.ca/news/12159444/auto-supports-canada-melanie-joly-doug-ford/",
-      "t": "Fri 9:51 a.m.",
-      "iso": "2026-11-20T14:51:30+00:00"
-     }
-    ]
+    "title": "12:30 ET / 10:30 PCT: Conservative Leader Pierre Poilievre speaks with reporters in Ottawa",
+    "url": "https://www.youtube.com/watch?v=Ly2vWB53iA0",
+    "img": "https://i.ytimg.com/vi/Ly2vWB53iA0/hqdefault.jpg",
+    "story": "12:30 ET / 10:30 PCT: Conservative Leader Pierre Poilievre speaks with",
+    "watching": "22"
    },
    {
     "net": "PBS NewsHour",
@@ -4343,7 +4092,7 @@
     "url": "https://www.youtube.com/watch?v=2qVuRMqRBIs",
     "img": "https://i.ytimg.com/vi/2qVuRMqRBIs/hqdefault.jpg",
     "story": "Senate convenes ahead of Thanksgiving recess",
-    "watching": "92"
+    "watching": "80"
    },
    {
     "net": "Fox News",
@@ -4352,7 +4101,7 @@
     "url": "https://www.youtube.com/watch?v=EjCg8HOwfqI",
     "img": "https://i.ytimg.com/vi/EjCg8HOwfqI/hqdefault.jpg",
     "story": "Trump addresses the nation following Asia trip",
-    "watching": "5.4K",
+    "watching": "6.5K",
     "reports": [
      {
       "outlet": "ABC News",
@@ -4370,7 +4119,7 @@
     "url": "https://www.youtube.com/watch?v=DLqpTLQL-u4",
     "img": "https://i.ytimg.com/vi/DLqpTLQL-u4/hqdefault.jpg",
     "story": "Nov. 20— Breaking News & Top Headlines",
-    "watching": "15"
+    "watching": "17"
    },
    {
     "net": "LiveNOW from FOX",
@@ -4389,7 +4138,7 @@
     "url": "https://www.youtube.com/watch?v=008kxEtm6oQ",
     "img": "https://i.ytimg.com/vi/008kxEtm6oQ/hqdefault.jpg",
     "story": "The Capitol Christmas Tree arrives in DC 🎄",
-    "watching": "19"
+    "watching": "26"
    }
   ],
   "upcoming": [],
@@ -4448,15 +4197,6 @@
    "img": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/11/19/c0ff51ff-e0b7-4ae2-9398-0b227e7d804d/thumbnail/1200x630/9fb82ebe0438d83e21d94082a1c4916b/gettyimages-2303930782.jpg"
   },
   {
-   "net": "The Hill",
-   "story": "Trump briefs on Asia trip after Xi, Putin summit",
-   "title": "Watch live: Trump briefs on Asia trip after Xi, Putin summit",
-   "url": "https://thehill.com/video-clips/6233321-watch-live-donald-trump-press-briefing-asia-trip-putin-xi-meeting/",
-   "updated": "2026-11-20T16:44:13+00:00",
-   "ended": false,
-   "img": ""
-  },
-  {
    "net": "ABC News",
    "story": "Iran live updates: Another tanker struck in Strait of Hormuz, UKMTO sa",
    "title": "Iran live updates: Another tanker struck in Strait of Hormuz, UKMTO says",
@@ -4475,13 +4215,13 @@
    "img": ""
   },
   {
-   "net": "The Guardian",
-   "story": "EU wants ‘closest possible relationship’ with UK after agreeing Brexit",
-   "title": "EU wants ‘closest possible relationship’ with UK after agreeing Brexit reset deal – live",
-   "url": "https://www.theguardian.com/world/live/2026/nov/20/uk-eu-european-union-brexit-deal-andy-burnham-latest-news-updates",
-   "updated": "2026-11-20T17:16:07+00:00",
+   "net": "The Hill",
+   "story": "Trump briefs on Asia trip after Xi, Putin summit",
+   "title": "Watch live: Trump briefs on Asia trip after Xi, Putin summit",
+   "url": "https://thehill.com/video-clips/6233321-watch-live-donald-trump-press-briefing-asia-trip-putin-xi-meeting/",
+   "updated": "2026-11-20T16:44:13+00:00",
    "ended": false,
-   "img": "https://i.guim.co.uk/img/media/bb99120c2f7d41fd909aef903d962db65654e712/450_38_3420_2737/master/3420.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=410063a1e1660876f96a262f7ae98c49"
+   "img": ""
   },
   {
    "net": "CBS News",
@@ -4529,53 +4269,7 @@
    "views": []
   }
  },
- "canangle": {
-  "auto-f7cb95ca": {
-   "story": "Trump calling Putin ‘my friend’ at APEC summit sparks backlash",
-   "us": true,
-   "specific": 4,
-   "stories": [
-    {
-     "t": "Fri 8:06 a.m.",
-     "iso": "2026-11-20T13:06:33+00:00",
-     "outlet": "CTV News",
-     "title": "Canada and Japan make their own moves as Trump courts Xi, Putin",
-     "url": "https://www.ctvnews.ca/world/article/as-trump-courts-xi-and-putin-middle-powers-make-their-own-moves/",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Thu 2:33 p.m.",
-     "iso": "2026-11-19T19:33:17+00:00",
-     "outlet": "CBC News",
-     "title": "With Putin in the room, Carney condemns Russia's illegal invasion of Ukraine",
-     "url": "https://www.cbc.ca/news/politics/carney-putin-apec-ukraine-9.7428573?cmp=rss",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Thu 6:36 a.m.",
-     "iso": "2026-11-19T11:36:58+00:00",
-     "outlet": "Canada's National Observer",
-     "title": "Carney says deal with U.S. possible but not there yet, after meeting Trump in China",
-     "url": "https://www.nationalobserver.com/2026/11/19/news/carney-says-deal-us-possible-not-there-yet-after-meeting-trump-china",
-     "ca": false,
-     "tie": ""
-    },
-    {
-     "t": "Wed 12:24 p.m.",
-     "iso": "2026-11-18T17:24:11+00:00",
-     "outlet": "Politico",
-     "title": "Carney says Trump’s trade war is giving China an edge on EVs",
-     "url": "https://www.politico.com/news/2026/11/18/mark-carney-deal-book-donald-trump-01172408",
-     "ca": false,
-     "tie": ""
-    }
-   ],
-   "official": [],
-   "views": []
-  }
- },
+ "canangle": {},
  "canangle_live": {
   "https://www.cbsnews.com/live-updates/trump-press-conference-live-stream-2026-11-20/": {
    "story": "Trump holds news conference after meeting with Xi, Putin",
@@ -4616,33 +4310,6 @@
      "title": "Carney says Trump’s trade war is giving China an edge on EVs",
      "url": "https://www.politico.com/news/2026/11/18/mark-carney-deal-book-donald-trump-01172408",
      "ca": false,
-     "tie": ""
-    }
-   ],
-   "official": [],
-   "views": []
-  },
-  "https://thehill.com/video-clips/6233321-watch-live-donald-trump-press-briefing-asia-trip-putin-xi-meeting/": {
-   "story": "Trump briefs on Asia trip after Xi, Putin summit",
-   "us": true,
-   "specific": 2,
-   "stories": [
-    {
-     "t": "Fri 8:06 a.m.",
-     "iso": "2026-11-20T13:06:33+00:00",
-     "outlet": "CTV News",
-     "title": "Canada and Japan make their own moves as Trump courts Xi, Putin",
-     "url": "https://www.ctvnews.ca/world/article/as-trump-courts-xi-and-putin-middle-powers-make-their-own-moves/",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Thu 2:33 p.m.",
-     "iso": "2026-11-19T19:33:17+00:00",
-     "outlet": "CBC News",
-     "title": "With Putin in the room, Carney condemns Russia's illegal invasion of Ukraine",
-     "url": "https://www.cbc.ca/news/politics/carney-putin-apec-ukraine-9.7428573?cmp=rss",
-     "ca": true,
      "tie": ""
     }
    ],
@@ -4709,6 +4376,33 @@
      "url": "https://frontiercentre.org/2026/11/19/can-europe-and-china-replace-canadas-u-s-trade/?utm_source=rss&utm_medium=rss&utm_campaign=can-europe-and-china-replace-canadas-u-s-trade"
     }
    ]
+  },
+  "https://thehill.com/video-clips/6233321-watch-live-donald-trump-press-briefing-asia-trip-putin-xi-meeting/": {
+   "story": "Trump briefs on Asia trip after Xi, Putin summit",
+   "us": true,
+   "specific": 2,
+   "stories": [
+    {
+     "t": "Fri 8:06 a.m.",
+     "iso": "2026-11-20T13:06:33+00:00",
+     "outlet": "CTV News",
+     "title": "Canada and Japan make their own moves as Trump courts Xi, Putin",
+     "url": "https://www.ctvnews.ca/world/article/as-trump-courts-xi-and-putin-middle-powers-make-their-own-moves/",
+     "ca": true,
+     "tie": ""
+    },
+    {
+     "t": "Thu 2:33 p.m.",
+     "iso": "2026-11-19T19:33:17+00:00",
+     "outlet": "CBC News",
+     "title": "With Putin in the room, Carney condemns Russia's illegal invasion of Ukraine",
+     "url": "https://www.cbc.ca/news/politics/carney-putin-apec-ukraine-9.7428573?cmp=rss",
+     "ca": true,
+     "tie": ""
+    }
+   ],
+   "official": [],
+   "views": []
   },
   "https://www.youtube.com/watch?v=T8OUcBT37dI": {
    "story": "Trump holds press briefing after historic meeting with Xi and Putin | NBC News",
@@ -5514,10 +5208,6 @@
   "-NabWfv-VdA"
  ],
  "noembed": [
-  "J3FV4iY8p5w",
-  "L6qtnHZxwEw",
-  "NuEr0Q_AS6U",
-  "PJtW3-Kgod8",
   "ldElU-Q5Qyo",
   "t_HBrWb84eY"
  ]
