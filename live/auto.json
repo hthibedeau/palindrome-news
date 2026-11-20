@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-20T07:01:57.887440+00:00",
- "checkedLabel": "Fri 2:01 a.m.",
+ "checked": "2026-11-20T07:11:57.718659+00:00",
+ "checkedLabel": "Fri 2:11 a.m.",
  "stories": [
   {
    "key": "top",
@@ -88,6 +88,15 @@
   }
  ],
  "wire": [
+  [
+   "Fri 2:03 a.m.",
+   "U.S.",
+   "White House national cyber director fired after wave of tech outages",
+   "Euronews",
+   "https://www.euronews.com/2026/11/20/white-house-national-cyber-director-fired-after-wave-of-tech-outages",
+   "2026-11-20T07:03:40+00:00",
+   2
+  ],
   [
    "Fri 2:00 a.m.",
    "Latest",
@@ -303,15 +312,6 @@
    "https://www.thestar.com/news/world/africa/us-deportees-in-south-sudan-went-hungry-as-guards-pocketed-money-from-relatives-families-say/article_13fea6ac-c62b-5679-8976-c51953e3f5b5.html",
    "2026-11-20T05:02:10+00:00",
    1
-  ],
-  [
-   "Fri 12:01 a.m.",
-   "World",
-   "Gaza Civil Defence struggles to rescue lives as vehicles break down",
-   "Al Jazeera",
-   "https://www.aljazeera.com/news/2026/11/20/gaza-civil-defence-struggles-to-rescue-lives-as-vehicles-fall-into-disrepair?traffic_source=rss",
-   "2026-11-20T05:01:40+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -346,10 +346,20 @@
    "score": 24,
    "title": "With Putin in the room, Carney condemns Russia's illegal invasion of Ukraine",
    "url": "https://www.cbc.ca/news/politics/carney-putin-apec-ukraine-9.7428573",
-   "outlets": 16,
+   "outlets": 17,
    "why": [
     "National Newswatch #3",
     "CBC News front #1"
+   ],
+   "theme": ""
+  },
+  {
+   "score": 16,
+   "title": "Sean Cairncross out, Kirsten A. Davies in as White House national cyber director: source",
+   "url": "https://www.cbc.ca/news/world/cairncross-out-cyber-white-house-9.7429359",
+   "outlets": 11,
+   "why": [
+    "CBC News front #4"
    ],
    "theme": ""
   },
@@ -360,16 +370,6 @@
    "outlets": 11,
    "why": [
     "CBC News front #6"
-   ],
-   "theme": ""
-  },
-  {
-   "score": 13,
-   "title": "Sean Cairncross out, Kirsten A. Davies in as White House national cyber director: source",
-   "url": "https://www.cbc.ca/news/world/cairncross-out-cyber-white-house-9.7429359",
-   "outlets": 10,
-   "why": [
-    "CBC News front #4"
    ],
    "theme": ""
   },
@@ -429,8 +429,8 @@
   },
   {
    "score": 9,
-   "title": "Asian American women feel the impact of Nvidia CEO affair scandal and 'spy' accusations",
-   "url": "https://www.thestar.com/news/world/united-states/asian-american-women-feel-the-impact-of-nvidia-ceo-affair-scandal-and-spy-accusations/article_13f36071-ca8a-542e-9ce8-ed52d0fe6462.html",
+   "title": "Stocks, gold and silver fall after blockbuster Anthropic IPO",
+   "url": "https://www.euronews.com/2026/11/20/stocks-gold-and-silver-fall-after-blockbuster-anthropic-ipo",
    "outlets": 7,
    "why": [],
    "theme": ""
@@ -459,8 +459,8 @@
      "canada-u.s",
      "private",
      "sooner",
-     "rather",
      "trade",
+     "makes",
      "talks"
     ],
     "score": 13,
@@ -707,14 +707,6 @@
     "scoop_why": "Exclusive: Global News reported it from its own sources (Thu 6:55 p.m.), since confirmed by Toronto Star; credited and led with its report.",
     "videos": [
      {
-      "net": "CTV News",
-      "url": "https://www.youtube.com/watch?v=TDxv7aCAlog",
-      "title": "Canada makes case for U.S. trade deal in private meeting | CTV National News for Nov.19, 2026",
-      "img": "https://i.ytimg.com/vi/TDxv7aCAlog/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
       "net": "CBC News",
       "url": "https://www.youtube.com/watch?v=Oi-5ssIs_kE",
       "title": "What 'not enough' progress in trade talks with the U.S. could mean for Canada | Power & Politics",
@@ -737,14 +729,22 @@
       "img": "https://i.ytimg.com/vi/Slw_z-Pu8OM/hqdefault.jpg",
       "rec": false,
       "up": ""
+     },
+     {
+      "net": "CTV News",
+      "url": "https://www.youtube.com/watch?v=TDxv7aCAlog",
+      "title": "Canada makes case for U.S. trade deal in private meeting | CTV National News for Nov.19, 2026",
+      "img": "https://i.ytimg.com/vi/TDxv7aCAlog/hqdefault.jpg",
+      "rec": false,
+      "up": ""
      }
     ]
    },
    {
     "key": "auto-dffa9f7f",
     "words": [
-     "zoo's",
      "fiona",
+     "zoo's",
      "zoo"
     ],
     "score": 13,
@@ -1004,8 +1004,8 @@
      "putin"
     ],
     "score": 24,
-    "outlets": 8,
-    "carriers": 8,
+    "outlets": 9,
+    "carriers": 9,
     "tag": "Developing",
     "title": "Trump-Putin-Xi meeting updates: Schumer calls trip a 'historical embarrassment'",
     "url": "https://abcnews.com/Politics/live-updates/trump-asia-trip-2026/?id=138187702",
@@ -1028,10 +1028,11 @@
      "alt": "Trump-Putin-Xi meeting updates: Schumer calls trip a 'historical embarrassment'",
      "outlet": "ABC News",
      "url": "https://abcnews.com/Politics/live-updates/trump-asia-trip-2026/?id=138187702",
-     "since": "2026-11-20T06:39:17.173476+00:00"
+     "since": "2026-11-20T07:13:21.690488+00:00"
     },
     "photo_seen": [
-     "https://i.abcnewsfe.com/a/dc48fb0c-1ccf-4583-b742-a144e478b0d0/donald-trump-1-gty-gmh-261119_1795090525810_hpMain_16x9.jpg?w=1600"
+     "https://i.abcnewsfe.com/a/dc48fb0c-1ccf-4583-b742-a144e478b0d0/donald-trump-1-gty-gmh-261119_1795090525810_hpMain_16x9.jpg?w=1600",
+     "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/20/575088.jpg?v=3.1"
     ],
     "photos": [
      {
@@ -1051,7 +1052,7 @@
       "url": "https://www.bbc.co.uk/news/articles/c623j4ln97x7o?at_medium=RSS&at_campaign=rss"
      }
     ],
-    "independent": 8,
+    "independent": 9,
     "reports": [
      {
       "t": "Fri 12:54 a.m.",
@@ -1102,6 +1103,14 @@
       "desc": ""
      },
      {
+      "t": "Thu 1:50 p.m.",
+      "iso": "2026-11-19T18:50:06+00:00",
+      "outlet": "Euronews",
+      "title": "European leaders reject 'Yalta 2.0' for Ukraine after Trump meets Putin and Xi",
+      "url": "https://www.euronews.com/2026/11/19/european-leaders-reject-yalta-20-deal-for-ukraine-after-trump-meets-putin-and-xi",
+      "desc": ""
+     },
+     {
       "t": "Thu 12:38 p.m.",
       "iso": "2026-11-19T17:38:22+00:00",
       "outlet": "BBC News",
@@ -1115,7 +1124,7 @@
       "outlet": "Kyiv Independent",
       "title": "'We will not negotiate' — Putin addresses Ukraine's strikes on Crimean Bridge",
       "url": "https://kyivindependent.com/we-will-not-negotiate-putin-addresses-ukraines-strikes-on-crimean-bridge/",
-      "desc": "The remarks marked the Russian president's first public reaction to the attacks on the bridge, which he described as having sustained \"serious damage.\""
+      "desc": ""
      }
     ],
     "sources": [
@@ -1222,6 +1231,23 @@
       "copies": []
      },
      {
+      "t": "Thu 1:50 p.m.",
+      "primary": false,
+      "outlet": "Euronews",
+      "title": "European leaders reject 'Yalta 2.0' for Ukraine after Trump meets Putin and Xi",
+      "url": "https://www.euronews.com/2026/11/19/european-leaders-reject-yalta-20-deal-for-ukraine-after-trump-meets-putin-and-xi",
+      "desc": "",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Euronews",
+        "src": "Euronews",
+        "byline": ""
+       }
+      ],
+      "copies": []
+     },
+     {
       "t": "Thu 12:38 p.m.",
       "primary": false,
       "outlet": "BBC News",
@@ -1280,16 +1306,8 @@
     "outled_ca": 3,
     "judgment": "regional",
     "judgment_why": "Regional: affects some people; carried by a few newsrooms.",
-    "weight": 39.0,
+    "weight": 40.5,
     "videos": [
-     {
-      "net": "CityNews",
-      "url": "https://www.youtube.com/watch?v=gNaE1SGgrpg",
-      "title": "Trump, Xi and Putin Hold Historic Summit",
-      "img": "https://i.ytimg.com/vi/gNaE1SGgrpg/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
      {
       "net": "CBS News",
       "url": "https://www.youtube.com/watch?v=78JvLLXQYtk",
@@ -1303,6 +1321,14 @@
       "url": "https://www.youtube.com/watch?v=Mc2xSp_VOJI",
       "title": "Rahm Emanuel says Trump \"confuses friend with foe\" amid meeting with Xi, Putin",
       "img": "https://i.ytimg.com/vi/Mc2xSp_VOJI/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CBS News",
+      "url": "https://www.youtube.com/watch?v=rFoG92DMCtM",
+      "title": "Trump meets with Xi Jinping and Vladimir Putin in historic sit-down | Special Report",
+      "img": "https://i.ytimg.com/vi/rFoG92DMCtM/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
@@ -1369,9 +1395,9 @@
     "url": "https://abcnews.com/Politics/live-updates/trump-asia-trip-2026/?id=138187702",
     "rank": 3,
     "live": "",
-    "weight": 39.0,
+    "weight": 40.5,
     "score": 24,
-    "independent": 8,
+    "independent": 9,
     "most_read": 0,
     "canada": "tie",
     "theme": "",
@@ -1385,7 +1411,7 @@
      "NPR"
     ],
     "rule": "From abroad, tied to Canada",
-    "carriers": 8,
+    "carriers": 9,
     "judgment": "regional",
     "why_judged": "Regional: affects some people; carried by a few newsrooms."
    },
@@ -1456,7 +1482,7 @@
     "url": "https://www.thestar.com/news/world/asia/rohingya-in-bangladesh-welcome-un-court-s-genocide-verdict-but-say-they-want-to-go-home-to-myanmar/article_4f9535ab-6b31-5150-8d69-67e7571aae22.html",
     "rank": 7,
     "live": "",
-    "weight": 25.5,
+    "weight": 22.5,
     "score": 12,
     "independent": 5,
     "most_read": 0,
@@ -1478,7 +1504,7 @@
     "rank": 8,
     "live": "",
     "weight": 28.5,
-    "score": 13,
+    "score": 16,
     "independent": 3,
     "most_read": 0,
     "canada": "none",
@@ -1540,7 +1566,7 @@
      "alt": "A piece of wood carved with \"TR\" and the names of victims on it is shown at a vigil for the victims of a mass shooting, in Tumbler Ridge, B.C., Friday, Feb. 13,",
      "outlet": "CTV News",
      "url": "https://www.ctvnews.ca/vancouver/article/new-report-on-tumbler-ridge-shooters-ai-chats-deeply-disturbing/",
-     "since": "2026-11-20T06:49:31.659577+00:00"
+     "since": "2026-11-20T07:13:28.128154+00:00"
     },
     "photo_seen": [
      "https://www.ctvnews.ca/resizer/v2/KJR2GDONPRY6FPCRLUOHFOWYHM.jpg?smart=true&auth=d67339df119cfa903494d9b39fc741645931faa5f86e251d7505d4bae78836f3&width=1200&height=630"
@@ -1555,12 +1581,12 @@
       "url": "https://www.ctvnews.ca/vancouver/article/new-report-on-tumbler-ridge-shooters-ai-chats-deeply-disturbing/"
      },
      {
-      "src": "live/img/auto-8105b4bc-158238edd1.jpg",
-      "orig": "https://winnipeg.citynews.ca/wp-content/blogs.dir/sites/13/2026/02/0f21c70e64de949d78405c445bf837e90d828d6474f84774c96ac365ba9c47cd.jpg",
-      "caption": "From: New report on Tumbler Ridge shooter’s AI chats ‘deeply disturbing’. — via CityNews Winnipeg",
-      "alt": "New report on Tumbler Ridge shooter’s AI chats ‘deeply disturbing’",
-      "outlet": "CityNews Winnipeg",
-      "url": "https://winnipeg.citynews.ca/2026/11/19/new-report-on-tumbler-ridge-shooters-ai-chats-deeply-disturbing/"
+      "src": "live/img/auto-8105b4bc-cc84b8126d.jpg",
+      "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/7/94/794d7e92-ff64-5000-a0c7-a7a3f9430010/6999fe5d1794b.image.jpg?crop=1400%2C735%2C0%2C99&resize=1200%2C630&order=crop%2Cresize",
+      "caption": "From: New report on Tumbler Ridge shooter's AI chats 'deeply disturbing'. — via Toronto Star",
+      "alt": "New report on Tumbler Ridge shooter's AI chats 'deeply disturbing'",
+      "outlet": "Toronto Star",
+      "url": "https://www.thestar.com/news/canada/new-report-on-tumbler-ridge-shooter-s-ai-chats-deeply-disturbing/article_719b31d3-92f1-59d9-9dff-1f7d348354db.html"
      },
      {
       "src": "live/img/auto-8105b4bc-6a1d5b855b.jpg",
@@ -1595,7 +1621,7 @@
       "outlet": "Toronto Star",
       "title": "New report on Tumbler Ridge shooter's AI chats 'deeply disturbing'",
       "url": "https://www.thestar.com/news/canada/new-report-on-tumbler-ridge-shooter-s-ai-chats-deeply-disturbing/article_719b31d3-92f1-59d9-9dff-1f7d348354db.html",
-      "desc": ""
+      "desc": "A new report about the Tumbler Ridge shooter's apparent gun-related conversations with ChatGPT are \"deeply disturbing\" and painful, British Columbia's departing attorney general Niki Sharma said Thursday as she repeated"
      },
      {
       "t": "Thu 5:10 p.m.",
@@ -1702,13 +1728,13 @@
       "outlet": "Toronto Star",
       "title": "New report on Tumbler Ridge shooter's AI chats 'deeply disturbing'",
       "url": "https://www.thestar.com/news/canada/new-report-on-tumbler-ridge-shooter-s-ai-chats-deeply-disturbing/article_719b31d3-92f1-59d9-9dff-1f7d348354db.html",
-      "desc": "",
-      "wire": "",
+      "desc": "A new report about the Tumbler Ridge shooter's apparent gun-related conversations with ChatGPT are \"deeply disturbing\" and painful, British Columbia's departing attorney general Niki Sharma said Thursday as she repeated",
+      "wire": "The Canadian Press",
       "by": [
        {
         "outlet": "Toronto Star",
-        "src": "Torstar",
-        "byline": ""
+        "src": "The Canadian Press",
+        "byline": "\"Brenna Owen The Canadian Press\" \"Brenna Owen <span"
        },
        {
         "outlet": "CityNews Winnipeg",
@@ -1853,8 +1879,8 @@
      "theft",
      "grand",
      "auto",
-     "gta",
      "b.c",
+     "gta",
      "vi"
     ],
     "score": 13,
@@ -1882,7 +1908,7 @@
      "alt": "U of T students take test drive of 'Grand Theft Auto VI' during launch event",
      "outlet": "Times Colonist",
      "url": "https://www.timescolonist.com/the-mix/u-of-t-students-take-test-drive-of-grand-theft-auto-vi-during-launch-event-13039676",
-     "since": "2026-11-20T07:04:43.358959+00:00"
+     "since": "2026-11-20T07:13:25.764685+00:00"
     },
     "photo_seen": [
      "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/14a3cda52b2cc3b484b507b5765a72e483e81a00be355370a39c783aca2bd314.jpg;w=1200;h=800;mode=crop"
@@ -2069,6 +2095,22 @@
     "weight": 28.0,
     "videos": [
      {
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=T_jcrFDZzn8",
+      "title": "Grand Theft Auto VI is here — and it might change things for Quebec’s gaming industry",
+      "img": "https://i.ytimg.com/vi/T_jcrFDZzn8/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CBS News",
+      "url": "https://www.youtube.com/watch?v=OJ-QZ6Wa3HA",
+      "title": "“Grand Theft Auto VI” officially released after 13-year wait",
+      "img": "https://i.ytimg.com/vi/OJ-QZ6Wa3HA/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
       "net": "CTV News",
       "url": "https://www.youtube.com/watch?v=rASYJ0Tuvo4",
       "title": "Grand Theft Auto steals workday",
@@ -2081,22 +2123,6 @@
       "url": "https://www.youtube.com/watch?v=4sjRVYLdaUU",
       "title": "Torontonians dive into ‘Grand Theft Auto VI’",
       "img": "https://i.ytimg.com/vi/4sjRVYLdaUU/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CP24",
-      "url": "https://www.youtube.com/watch?v=nlHMStveV2o",
-      "title": "Long lines of fans in Toronto await release of Grand Theft Auto IV in 2008 | From the Archives",
-      "img": "https://i.ytimg.com/vi/nlHMStveV2o/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CP24",
-      "url": "https://www.youtube.com/watch?v=ANnUf0W1wMY",
-      "title": "‘Grand Theft Auto VI’ represents the 'future of marketing,' brand expert explains",
-      "img": "https://i.ytimg.com/vi/ANnUf0W1wMY/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -2134,7 +2160,7 @@
      "alt": "Democratic U.S. Senate candidate Mary Peltola was declared the winner of the state's Senate race Tuesday. Two days later, the Trump administration moved to get ",
      "outlet": "CBC News",
      "url": "https://www.cbc.ca/news/world/trump-doj-alaska-lawsuit-dismissed-peltola-9.7429320",
-     "since": "2026-11-20T07:04:40.245231+00:00"
+     "since": "2026-11-20T07:13:22.642561+00:00"
     },
     "photo_seen": [
      "https://i.cbc.ca/ais/b0a8a741-d22f-4759-b8ee-6973d3b9bd0e,1795137609336/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C217%2C4176%2C2349%29%3BResize%3D620"
@@ -2473,7 +2499,7 @@
    "id": "Fe1B2B-ERkE",
    "r": "ca",
    "o": "Global News",
-   "t": "Christianity could lose position as world's largest religion to Islam by 2035: Pew Research",
+   "t": "Islam projected to surpass Christianity as world's largest religion by 2035: Research",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=Fe1B2B-ERkE",
@@ -2487,7 +2513,7 @@
    "id": "MCRzk1vTeFA",
    "r": "ca",
    "o": "Global News",
-   "t": "GTA 6 expected to generate billions in revenue as gaming industry faces uncertainty",
+   "t": "GTA 6 finally hits shelves, but will it benefit the gaming industry?",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=MCRzk1vTeFA",
@@ -2515,7 +2541,7 @@
    "id": "gHPcXMwqb1U",
    "r": "ca",
    "o": "CBC News",
-   "t": "Will the drop in gas prices impact the cost of living? | Hanomansing Live",
+   "t": "Will the drop in gas prices lead to a drop in the inflation rate? | Hanomansing Live",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=gHPcXMwqb1U",
@@ -2862,16 +2888,16 @@
    "geo": "unknown"
   },
   {
-   "id": "lb0z1fQNVQY",
+   "id": "zrNa62ODC34",
    "r": "us",
    "o": "Bloomberg",
-   "t": "Global Stocks Set for Worst Run Since 2023 as AI Enthusiasm Fades",
+   "t": "Anthropic Soars Then Slips as AI Trade Fears Linger",
    "rec": false,
    "d": "",
-   "u": "https://www.youtube.com/watch?v=lb0z1fQNVQY",
-   "img": "https://i.ytimg.com/vi/lb0z1fQNVQY/hqdefault.jpg",
+   "u": "https://www.youtube.com/watch?v=zrNa62ODC34",
+   "img": "https://i.ytimg.com/vi/zrNa62ODC34/hqdefault.jpg",
    "up": "2026-11-20",
-   "added": "2026-11-20T06:51:57.935223+00:00",
+   "added": "2026-11-20T07:11:57.718659+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2879,7 +2905,7 @@
    "id": "fORAqPfewZo",
    "r": "world",
    "o": "Sky News",
-   "t": "Four men convicted of abusing woman drugged by her ex-Tory councillor husband",
+   "t": "How Joanne Young's abusers were brought to justice",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=fORAqPfewZo",
@@ -2893,7 +2919,7 @@
    "id": "vOpPMqxLUHg",
    "r": "world",
    "o": "BBC News",
-   "t": "Unpacking South Korea's extreme measures to catch college entrance cheaters | BBC News",
+   "t": "What is South Korea’s 8-hour mega exam, and how do they avoid cheating? | BBC News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=vOpPMqxLUHg",
@@ -3005,7 +3031,7 @@
    "id": "OdQ4gEdopng",
    "r": "world",
    "o": "Sky News",
-   "t": "Brexit's economic impact: What the data reveals | Ed Conway analysis",
+   "t": "What has Brexit really done to Britain's economy? | Ed Conway analysis",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=OdQ4gEdopng",
@@ -3268,13 +3294,6 @@
  ],
  "eds": [
   [
-   "Toronto Star",
-   "Opinion",
-   "As Trump, Putin and Xi meet, Ukraine sends a message",
-   "https://www.thestar.com/opinion/star-columnists/as-trump-putin-and-xi-meet-ukraine-sends-a-message/article_eb5ef934-c7ac-4869-8e25-f18a2671c79e.html",
-   "2026-11-20T00:00:00+00:00"
-  ],
-  [
    "Toronto Sun",
    "Editorial",
    "The environmental case for Canadian oil and gas",
@@ -3290,10 +3309,10 @@
   ],
   [
    "Calgary Herald",
-   "Column · Bell",
-   "Bike lane crackdown, Danielle Smith's UCP lays down the law",
-   "https://calgaryherald.com/opinion/columnists/bell-alberta-bike-lane-ucp-crackdown",
-   "2026-11-19T01:07:41+00:00"
+   "Opinion",
+   "As the world evolves, so must Canada",
+   "https://calgaryherald.com/opinion/columnists/opinion-as-the-world-evolves-so-must-canada",
+   "2026-11-19T12:00:04+00:00"
   ],
   [
    "Edmonton Journal",
@@ -3336,6 +3355,13 @@
    "Washington voters protected women’s sports. ACLU wants to overturn democracy",
    "https://www.foxnews.com/opinion/washington-voters-protected-womens-sports-aclu-wants-overturn-democracy",
    "2026-11-19T22:53:02+00:00"
+  ],
+  [
+   "The Wall Street Journal (subscribers)",
+   "Opinion",
+   "Pepper…and Salt",
+   "https://www.wsj.com/opinion/pepperand-salt-76e8dd0e?mod=rss_opinion",
+   "2026-11-20T05:00:00+00:00"
   ]
  ],
  "canus": {
@@ -3421,8 +3447,8 @@
    "LeBlanc gives update on U.S. trade talks to Canada-U.S. advisory committee, The Canadian Press reports.",
    "The federal government is increasing its investment in the 2028 North American Indigenous Games by $1.3M, bringing its total contribution to $6.2M, The Canadian Press reports.",
    "Inside the historic summit between Trump, Xi and Putin, PBS NewsHour reports.",
-   "The Trump administration on Thursday moved to effectively drop its lawsuit that sought to block the certification of Democrat Mary Peltola’s victory in Alaska’s U.S, The Associated Press reports.",
    "Sanders pours cold water on 2028 White House bid, The Hill reports.",
+   "The Trump administration on Thursday moved to effectively drop its lawsuit that sought to block the certification of Democrat Mary Peltola’s victory in Alaska’s U.S, The Associated Press reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
   ]
  },
@@ -3855,14 +3881,26 @@
   {
    "desk": "us",
    "pic": "podium",
-   "t": "Thu 11:02 p.m.",
-   "iso": "2026-11-20T04:02:19.107000+00:00",
-   "title": "Sean Cairncross out, Kirsten A. Davies in as White House national cyber director: source",
-   "summary": "Sean Cairncross is out as the White House's national cyber director, a source close to the White House told CBC News on Thursday.",
-   "outlet": "CBC News (Reuters), CBS News, Toronto Star, Fox News, CTV News + CP24 (CP), NBC News, The Hill, PBS NewsHour, CBC News",
-   "n": 9,
-   "url": "https://www.cbc.ca/news/world/cairncross-out-cyber-white-house-9.7429359",
-   "img": "https://i.cbc.ca/ais/793b09b2-1c23-4481-9ba2-4c66e5eedf6e,1795141430584/full/max/0/default.jpg?im=Crop%2Crect%3D%28536%2C85%2C4013%2C2257%29%3BResize%3D620"
+   "t": "Fri 2:03 a.m.",
+   "iso": "2026-11-20T07:03:40+00:00",
+   "title": "White House national cyber director fired after wave of tech outages",
+   "summary": "The national cyber director is tasked with advising the president on cybersecurity policy and strategy, including information security and data protection as well as deterrence of \"malicious\" activity.",
+   "outlet": "Euronews + Toronto Star (AP), CBC News (Reuters), CBS News, Fox News, CTV News + CP24 (CP), NBC News, The Hill, PBS NewsHour",
+   "n": 8,
+   "url": "https://www.euronews.com/2026/11/20/white-house-national-cyber-director-fired-after-wave-of-tech-outages",
+   "img": "https://images.euronews.com/articles/stories/10/00/10/29/1200x675_cmsv2_3461f1d0-fca0-561a-8ab7-083e12a778b3-10001029.jpg"
+  },
+  {
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Fri 1:00 a.m.",
+   "iso": "2026-11-20T06:00:22.924000+00:00",
+   "title": "With Putin in the room, Carney condemns Russia's illegal invasion of Ukraine",
+   "summary": "Prime Minister Mark Carney condemned Russia's war with Ukraine while President Vladimir Putin, the man prosecuting that war, was in the room for leaders' speeches at the APEC summit in China.",
+   "outlet": "CBC News, ABC News, The Japan Times, Euronews, Politico, The Hill, BBC News",
+   "n": 7,
+   "url": "https://www.cbc.ca/news/politics/carney-putin-apec-ukraine-9.7428573",
+   "img": "https://i.cbc.ca/ais/eacece62-df86-49b8-89be-93c466bf53d0,1795116383312/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C219%2C4206%2C2365%29%3BResize%3D620"
   },
   {
    "desk": "us",
@@ -3889,16 +3927,16 @@
    "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/19/6e294b5f-56fe-4c30-a6f0-0e2835d04ea7/thumbnail/1200x630/fda5c24a16515c4fa385e098a0a643c0/ap18068671681006.jpg"
   },
   {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Fri 1:00 a.m.",
-   "iso": "2026-11-20T06:00:22.924000+00:00",
-   "title": "With Putin in the room, Carney condemns Russia's illegal invasion of Ukraine",
-   "summary": "Prime Minister Mark Carney condemned Russia's war with Ukraine while President Vladimir Putin, the man prosecuting that war, was in the room for leaders' speeches at the APEC summit in China.",
-   "outlet": "CBC News, ABC News, The Japan Times, Politico, The Hill, BBC News",
+   "desk": "business",
+   "pic": "chart",
+   "t": "Fri 12:48 a.m.",
+   "iso": "2026-11-20T05:48:38+00:00",
+   "title": "Stocks, gold and silver fall after blockbuster Anthropic IPO",
+   "summary": "Anthropic shares rose 17% on their Nasdaq debut, but the record IPO failed to halt a Wall Street sell-off. Asian stocks followed US markets lower on Friday, while gold and silver fell as investors braced for a US rate rise.",
+   "outlet": "Euronews, Toronto Star (AP), Al Jazeera, Canada's National Observer, CP24 + BNN Bloomberg, The Logic (subscribers)",
    "n": 6,
-   "url": "https://www.cbc.ca/news/politics/carney-putin-apec-ukraine-9.7428573",
-   "img": "https://i.cbc.ca/ais/eacece62-df86-49b8-89be-93c466bf53d0,1795116383312/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C219%2C4206%2C2365%29%3BResize%3D620"
+   "url": "https://www.euronews.com/2026/11/20/stocks-gold-and-silver-fall-after-blockbuster-anthropic-ipo",
+   "img": "https://images.euronews.com/articles/stories/10/00/09/74/1200x675_cmsv2_de441e6e-b389-5fd4-8662-5c78ef6dcd18-10000974.jpg"
   },
   {
    "desk": "us",
@@ -3911,6 +3949,30 @@
    "n": 6,
    "url": "https://www.thestar.com/news/world/united-states/asian-american-women-feel-the-impact-of-nvidia-ceo-affair-scandal-and-spy-accusations/article_13f36071-ca8a-542e-9ce8-ed52d0fe6462.html",
    "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/a/2b/a2b44dfe-c5b6-518a-a18e-f094c43e251f/6af421af65e2e.image.jpg?crop=1473%2C773%2C0%2C153&resize=1200%2C630&order=crop%2Cresize"
+  },
+  {
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Thu 10:19 p.m.",
+   "iso": "2026-11-20T03:19:53+00:00",
+   "title": "El Salvador President Nayib Bukele seeks third term at home while fighting gangs in Haiti",
+   "summary": "SAN SALVADOR (AP) — El Salvador President Nayib Bukele on Thursday night officially launched his candidacy for a third term in office after years of paving the way to stay",
+   "outlet": "Toronto Star (AP), Al Jazeera, Euronews, CBC News, VOCM",
+   "n": 5,
+   "url": "https://www.thestar.com/news/world/americas/el-salvador-president-nayib-bukele-seeks-third-term-while-attacking-gangs-at-home-and-in-haiti/article_2a32774a-4dcd-574b-bf98-613855c705c2.html",
+   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/f/99/f99785dd-14b4-53c9-a424-a77563cfd158/6affbd8cd8121.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Fri 1:00 a.m.",
+   "iso": "2026-11-20T06:00:33+00:00",
+   "title": "A rare EU-UK summit as Andy Burnham seeks to mend Brexit damage",
+   "summary": "BRUSSELS (AP) — A decade after the people of Britain voted to leave the European Union, top EU officials are meeting with Prime Minister Andy Burnham on Friday, looking to",
+   "outlet": "Toronto Star (AP), BBC News, Euronews, The Guardian",
+   "n": 4,
+   "url": "https://www.thestar.com/news/world/a-rare-eu-uk-summit-as-andy-burnham-seeks-to-mend-brexit-damage/article_b3eca4b5-1ec7-5852-83ef-6268472306ec.html",
+   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/7/e7/7e7a493e-6a18-53de-94a1-c7cd6bc31941/6afe837fbfd3e.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
   },
   {
    "desk": "politics",
@@ -3935,30 +3997,6 @@
    "n": 4,
    "url": "https://thehill.com/homenews/administration/6231922-senate-holds-losapio-cisa-nomination/",
    "img": ""
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Fri 1:00 a.m.",
-   "iso": "2026-11-20T06:00:33+00:00",
-   "title": "A rare EU-UK summit as Andy Burnham seeks to mend Brexit damage",
-   "summary": "BRUSSELS (AP) — A decade after the people of Britain voted to leave the European Union, top EU officials are meeting with Prime Minister Andy Burnham on Friday, looking to",
-   "outlet": "Toronto Star (AP), BBC News, The Guardian",
-   "n": 3,
-   "url": "https://www.thestar.com/news/world/a-rare-eu-uk-summit-as-andy-burnham-seeks-to-mend-brexit-damage/article_b3eca4b5-1ec7-5852-83ef-6268472306ec.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/7/e7/7e7a493e-6a18-53de-94a1-c7cd6bc31941/6afe837fbfd3e.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Thu 10:21 p.m.",
-   "iso": "2026-11-20T03:21:23+00:00",
-   "title": "Asia shares drop on AI worries, echoing Wall Street's decline despite the strong Anthropic debut",
-   "summary": "TOKYO (AP) — Asian shares dropped in trading early Friday as a wide selloff hits issues related to artificial intelligence and computer chips.",
-   "outlet": "Toronto Star (AP), Al Jazeera, CP24 + BNN Bloomberg",
-   "n": 3,
-   "url": "https://www.thestar.com/news/world/asia-shares-drop-on-ai-worries-echoing-wall-street-s-decline-despite-the-strong-anthropic-debut/article_abb6d10a-bbaf-570a-bd8a-66b0a8a5ba3d.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/d/47/d476b295-5723-52c3-868d-41b95c33e41c/6affbd8ef4014.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
   },
   {
    "desk": "politics",
@@ -4015,7 +4053,7 @@
    "iso": "2026-11-19T23:28:35+00:00",
    "title": "ChatGPT guided Tumbler Ridge shooter on how to modify guns, avoid being flagged: report",
    "summary": "",
-   "outlet": "Vancouver Sun, Toronto Star + CityNews Winnipeg + CityNews Vancouver + CityNews Ottawa + 6 more, The Logic (subscribers)",
+   "outlet": "Vancouver Sun, Toronto Star + CityNews Winnipeg + CityNews Vancouver + CityNews Ottawa + 6 more (CP), The Logic (subscribers)",
    "n": 3,
    "url": "https://vancouversun.com/news/chatgpt-guided-tumbler-ridge-shooter-on-how-to-modify-guns-avoid-being-flagged-report",
    "img": ""
@@ -4117,18 +4155,6 @@
    "img": "https://www.ctvnews.ca/resizer/v2/2KT6M76QVBDNLMGI5AKANG7DDM.jpg?smart=true&auth=da1cf45fcb1abaff1be97c15dc443b7174ab0eb0582adf2e23c222e27fcaa87c&width=1200&height=630"
   },
   {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Thu 7:56 p.m.",
-   "iso": "2026-11-20T00:56:59+00:00",
-   "title": "Dozens gather at Yukon legislature building to protest end of rent control, return of no-cause evictions",
-   "summary": "About 50 people gathered outside the Jim Smith building in Whitehorse on Thursday, protesting recent amendments to the territory’s Residential Tenancies Act which removed the rent cap and brought back no-cause evictions.",
-   "outlet": "CBC News, Yukon News",
-   "n": 2,
-   "url": "https://www.cbc.ca/news/canada/north/dozens-gather-at-yukon-legislature-building-to-protest-end-of-rent-control-return-of-no-cause-evictions-9.7429226?cmp=rss",
-   "img": "https://i.cbc.ca/ais/7670d6d0-99d6-4895-a7ef-8a54d0f31563,1795134469414/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C610%2C5712%2C3213%29%3BResize%3D620"
-  },
-  {
    "desk": "world",
    "pic": "globe",
    "t": "Thu 2:48 p.m.",
@@ -4139,6 +4165,18 @@
    "n": 2,
    "url": "https://winnipeg.citynews.ca/2026/11/19/a-cyberattack-leaks-thousands-of-chase-customer-emails-and-some-phone-numbers/",
    "img": "https://winnipeg.citynews.ca/wp-content/blogs.dir/sites/13/2026/01/325c9f9791b0e4e93a57604372d13915e9333d999a584f38efd6efc76e4ec578.jpg"
+  },
+  {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Fri 1:42 a.m.",
+   "iso": "2026-11-20T06:42:00+00:00",
+   "title": "Japan’s GDP slump might be more than just a blip",
+   "summary": "Inflation and uncertainty are weighing on consumers already fatigued by price increases and years of stagnant wages.",
+   "outlet": "The Japan Times",
+   "n": 1,
+   "url": "https://www.japantimes.co.jp/business/2026/11/20/economy/gdp-weak-consumption/",
+   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/20/575228.jpg?v=3.1"
   },
   {
    "desk": "business",
@@ -4187,18 +4225,6 @@
    "n": 1,
    "url": "https://www.japantimes.co.jp/business/2026/11/20/economy/cpi-up-boj-rate-hike/",
    "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/20/575141.jpg?v=3.1"
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Thu 7:31 p.m.",
-   "iso": "2026-11-20T00:31:36+00:00",
-   "title": "Walmart stocks up on inflation-weary shoppers ahead of the holidays",
-   "summary": "The discount giant expects a “strong holiday season” as cost concerns drive customers to retailers that are cutting prices and pushing value deals.",
-   "outlet": "NBC News",
-   "n": 1,
-   "url": "https://www.nbcnews.com/business/consumer/walmart-holiday-shopping-sales-outlook-rcna610193",
-   "img": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-11/261119-walmart-mb-1356-e96235.jpg"
   },
   {
    "desk": "world",
@@ -4596,7 +4622,7 @@
     "url": "https://www.youtube.com/watch?v=v0-JdZfzsnI",
     "img": "https://i.ytimg.com/vi/v0-JdZfzsnI/hqdefault.jpg",
     "story": "Senate meets for legislative business as Trump returns from Putin-Xi t",
-    "watching": "36"
+    "watching": "28"
    },
    {
     "net": "Associated Press",
@@ -4605,7 +4631,7 @@
     "url": "https://www.youtube.com/watch?v=R6F97RmDgkA",
     "img": "https://i.ytimg.com/vi/R6F97RmDgkA/hqdefault.jpg",
     "story": "Vatican's Christmas tree arrives in St. Peter's Square",
-    "watching": "187"
+    "watching": "257"
    },
    {
     "net": "LiveNOW from FOX",
@@ -4614,7 +4640,7 @@
     "url": "https://www.youtube.com/watch?v=CiursXbr7kk",
     "img": "https://i.ytimg.com/vi/CiursXbr7kk/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "319",
+    "watching": "310",
     "rolling": true
    },
    {
@@ -4624,7 +4650,7 @@
     "url": "https://www.youtube.com/watch?v=mT_oMyFx0f0",
     "img": "https://i.ytimg.com/vi/mT_oMyFx0f0/hqdefault.jpg",
     "story": "Mornings with Jones and Melbourne",
-    "watching": "934"
+    "watching": "990"
    },
    {
     "net": "euronews",
@@ -4633,7 +4659,7 @@
     "url": "https://www.youtube.com/watch?v=Z9ucPCgdVDM",
     "img": "https://i.ytimg.com/vi/Z9ucPCgdVDM/hqdefault.jpg",
     "story": "Europe Today",
-    "watching": "25"
+    "watching": "34"
    }
   ],
   "upcoming": [
@@ -4735,7 +4761,28 @@
    "img": ""
   }
  ],
- "related": {},
+ "related": {
+  "auto-55148766": {
+   "ties": [
+    "ukraine"
+   ],
+   "stories": [],
+   "views": [
+    {
+     "outlet": "Atlantic Council",
+     "kind": "Think tank",
+     "title": "Putin didn’t get his Yalta, but he’s happy nonetheless",
+     "url": "https://www.atlanticcouncil.org/dispatches/putin-didnt-get-his-yalta-but-hes-happy-nonetheless/"
+    },
+    {
+     "outlet": "Atlantic Council",
+     "kind": "Think tank",
+     "title": "What the Trump-Putin-Xi meeting actually achieved",
+     "url": "https://www.atlanticcouncil.org/content-series/fastthinking/what-the-trump-putin-xi-meeting-actually-achieved/"
+    }
+   ]
+  }
+ },
  "canangle": {
   "auto-55148766": {
    "story": "Trump-Putin-Xi meeting updates: Schumer calls trip a 'historical embarrassment'",
@@ -5867,12 +5914,10 @@
   "-NabWfv-VdA"
  ],
  "noembed": [
-  "0bLqaqPAt_k",
   "J3FV4iY8p5w",
   "L6qtnHZxwEw",
   "NuEr0Q_AS6U",
   "ldElU-Q5Qyo",
-  "nfy6JJILPJI",
   "t_HBrWb84eY"
  ]
 }
