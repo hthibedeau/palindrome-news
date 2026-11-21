@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-21T11:25:03.175944+00:00",
- "checkedLabel": "Sat 6:25 a.m.",
+ "checked": "2026-11-21T11:35:02.445759+00:00",
+ "checkedLabel": "Sat 6:35 a.m.",
  "stories": [
   {
    "key": "top",
@@ -30,6 +30,15 @@
   }
  ],
  "wire": [
+  [
+   "Sat 6:29 a.m.",
+   "Latest",
+   "Lauren Price new undisputed champion and wants ‘big fights’ as promoter calls out Claressa Shields",
+   "The Canadian Press (via Winnipeg Free Press)",
+   "https://www.winnipegfreepress.com/uncategorized/2026/11/21/lauren-price-new-undisputed-champion-and-wants-big-fights-as-promoter-calls-out-claressa-shields",
+   "2026-11-21T11:29:01+00:00",
+   1
+  ],
   [
    "Sat 6:18 a.m.",
    "Latest",
@@ -245,15 +254,6 @@
    "https://www.thestar.com/politics/provincial/ontario-liberal-leadership-live/article_1f6f280d-80d7-4d59-92d0-2087a8a883e7.html",
    "2026-11-21T10:00:00+00:00",
    1
-  ],
-  [
-   "Sat 5:00 a.m.",
-   "Latest",
-   "Downtown Eastside housing workers resist B.C. non-profit's facial recognition plans",
-   "Toronto Star",
-   "https://www.thestar.com/news/canada/british-columbia/downtown-eastside-housing-workers-resist-b-c-non-profit-s-facial-recognition-plans/article_60c98ed7-4650-592b-844b-0e23130f9dca.html",
-   "2026-11-21T10:00:00+00:00",
-   2
   ]
  ],
  "blogs": [
@@ -301,18 +301,10 @@
    "theme": "Canada and the U.S."
   },
   {
-   "score": 15,
-   "title": "Trump calls Xi and Putin a notable word, and we finally get ‘GTA VI’ after all: The news quiz",
-   "url": "https://www.nbcnews.com/news/news-quiz/trump-xi-putin-gta-news-quiz-rcna610276",
-   "outlets": 13,
-   "why": [],
-   "theme": ""
-  },
-  {
-   "score": 14,
+   "score": 17,
    "title": "A Changing Political Focus: The Liberals maintain their lead as economic concerns persist and attention to Canada-US relations moderates.",
    "url": "https://niknanos.substack.com/p/a-changing-political-focus-the-liberals",
-   "outlets": 14,
+   "outlets": 24,
    "why": [],
    "theme": ""
   },
@@ -380,6 +372,14 @@
    "score": 9,
    "title": "Man convicted of starting Palisades fire in Los Angeles",
    "url": "https://www.bbc.co.uk/news/articles/c64gn0gy8rj3o?at_medium=RSS&at_campaign=rss",
+   "outlets": 9,
+   "why": [],
+   "theme": ""
+  },
+  {
+   "score": 9,
+   "title": "China's nuclear buildup is 'hot and heavy,' Trump says a day after meeting with Xi",
+   "url": "https://www.cp24.com/news/world/2026/11/20/chinas-nuclear-buildup-is-hot-and-heavy-trump-says-a-day-after-meeting-with-xi/",
    "outlets": 9,
    "why": [],
    "theme": ""
@@ -537,10 +537,9 @@
    {
     "key": "auto-9e14b5c4",
     "words": [
-     "trump's",
      "putin"
     ],
-    "score": 15,
+    "score": 17,
     "outlets": 9,
     "carriers": 9,
     "tag": "Developing",
@@ -647,14 +646,6 @@
       "desc": "David Brooks of The Atlantic and Jonathan Capehart of MS NOW join Amna Nawaz to discuss the week in politics, including President Trump's trilateral summit with Xi and Putin, the ongoing debate surrounding data centers, and Elon Musk's attempt to distance himself from MAGA."
      },
      {
-      "t": "Fri 5:43 p.m.",
-      "iso": "2026-11-20T22:43:00+00:00",
-      "outlet": "CBS News",
-      "title": "What we learned from Trump's first press conference following summit with Xi, Putin",
-      "url": "https://www.cbsnews.com/video/what-we-learned-from-trumps-first-press-conference-following-summit-with-xi-putin/",
-      "desc": ""
-     },
-     {
       "t": "Fri 5:09 p.m.",
       "iso": "2026-11-20T22:09:39+00:00",
       "outlet": "ABC News",
@@ -669,6 +660,14 @@
       "title": "Trump defends calling Putin a friend but says he ‘can’t speak’ to whether he’s a friend to the U.S.",
       "url": "https://www.cp24.com/news/world/2026/11/20/trump-defends-calling-putin-a-friend-but-says-he-cant-speak-to-whether-hes-a-friend-to-the-us/",
       "desc": "U.S. President Donald Trump has defended calling Russian President Vladimir Putin a friend but says he “can’t speak” to whether the Russian leader is a friend to the U.S."
+     },
+     {
+      "t": "Fri 2:00 p.m.",
+      "iso": "2026-11-20T19:00:00+00:00",
+      "outlet": "CBS News",
+      "title": "Trump touts Asia trip, meeting with Putin and Xi at news conference",
+      "url": "https://www.cbsnews.com/live-updates/trump-press-conference-live-stream-2026-11-20/",
+      "desc": "President Trump touted his trip to Asia this week and his meetings with China's Xi Jinping and Russia's Vladimir Putin at a press conference at the White House."
      },
      {
       "t": "Fri 1:55 p.m.",
@@ -766,23 +765,6 @@
       "copies": []
      },
      {
-      "t": "Fri 5:43 p.m.",
-      "primary": false,
-      "outlet": "CBS News",
-      "title": "What we learned from Trump's first press conference following summit with Xi, Putin",
-      "url": "https://www.cbsnews.com/video/what-we-learned-from-trumps-first-press-conference-following-summit-with-xi-putin/",
-      "desc": "",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "CBS News",
-        "src": "CBS News",
-        "byline": ""
-       }
-      ],
-      "copies": []
-     },
-     {
       "t": "Fri 5:09 p.m.",
       "primary": false,
       "outlet": "ABC News",
@@ -812,6 +794,23 @@
         "outlet": "CP24",
         "src": "The Associated Press",
         "byline": "\"@type\": \"Person\",\n      \"name\": \"The  Associated Press\",\n      \n    }\n  ]"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Fri 2:00 p.m.",
+      "primary": false,
+      "outlet": "CBS News",
+      "title": "Trump touts Asia trip, meeting with Putin and Xi at news conference",
+      "url": "https://www.cbsnews.com/live-updates/trump-press-conference-live-stream-2026-11-20/",
+      "desc": "President Trump touted his trip to Asia this week and his meetings with China's Xi Jinping and Russia's Vladimir Putin at a press conference at the White House.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "CBS News",
+        "src": "CBS News",
+        "byline": "own staff: reporter"
        }
       ],
       "copies": []
@@ -851,11 +850,19 @@
     "fronts_who": [
      "BBC News"
     ],
-    "outled_ca": 1,
+    "outled_ca": 2,
     "judgment": "regional",
     "judgment_why": "Regional: affects some people; carried beyond one city.",
-    "weight": 31.5,
+    "weight": 33.5,
     "videos": [
+     {
+      "net": "Global News",
+      "url": "https://www.youtube.com/watch?v=7Gpw3vAaK8E",
+      "title": "Trump defends meeting with Putin, Xi",
+      "img": "https://i.ytimg.com/vi/7Gpw3vAaK8E/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
      {
       "net": "CBS News",
       "url": "https://www.youtube.com/watch?v=cScZ1ghjvVo",
@@ -873,18 +880,10 @@
       "up": ""
      },
      {
-      "net": "CNN",
-      "url": "https://www.youtube.com/watch?v=UDTiQ1yBAKw",
-      "title": "Trump: “Can’t Speak to” Whether Putin a Friend of U.S.",
-      "img": "https://i.ytimg.com/vi/UDTiQ1yBAKw/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CNN",
-      "url": "https://www.youtube.com/watch?v=nl7MySIyYjY",
-      "title": "Trump Greets “My Friend” Putin; Touts “Outstanding Bond” with Xi",
-      "img": "https://i.ytimg.com/vi/nl7MySIyYjY/hqdefault.jpg",
+      "net": "PBS NewsHour",
+      "url": "https://www.youtube.com/watch?v=h9P1JTOJNoQ",
+      "title": "WATCH: After calling Putin his friend, Trump ‘can’t speak to’ whether Putin is a friend to America",
+      "img": "https://i.ytimg.com/vi/h9P1JTOJNoQ/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -894,8 +893,8 @@
     "key": "auto-aec14b1b",
     "words": [
      "challenging",
-     "stellantis",
      "productive",
+     "stellantis",
      "meeting",
      "plant",
      "ford"
@@ -1060,7 +1059,7 @@
        {
         "outlet": "CTV News",
         "src": "The Canadian Press",
-        "byline": "\"\" \"\" \"\" \"\" \"\" \"mediaconvert\" \"\" \"\" \"\" \"The Canadian Press\" \"The Canadian Pres"
+        "byline": "\"\" \"\" \"\" \"\" \"\" \"mediaconvert\" \"\" \"\" \"\" \"The Canadian Press\" \"Jermaine Wilson\""
        },
        {
         "outlet": "CP24",
@@ -1131,9 +1130,10 @@
     "incoherent": false,
     "popular": 3,
     "us_election": false,
-    "fronts": 1,
-    "fronts_ca": 1,
+    "fronts": 2,
+    "fronts_ca": 2,
     "fronts_who": [
+     "Toronto Star",
      "The Globe and Mail"
     ],
     "judgment": "national",
@@ -1151,14 +1151,6 @@
     "scoop_why": "Exclusive credit kept: Toronto Star broke this story (Fri 6:30 p.m.).",
     "videos": [
      {
-      "net": "CP24",
-      "url": "https://www.youtube.com/watch?v=FNlJJLpy2yA",
-      "title": "High-stakes meeting held with Stellantis to avert plant sale | CP24 Live at Five for Nov. 20, 2026",
-      "img": "https://i.ytimg.com/vi/FNlJJLpy2yA/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
       "net": "CTV News",
       "url": "https://www.youtube.com/watch?v=c1ctuQHMXHU",
       "title": "‘We are in slim hope territory’: Reid on possibility of reversing Stellantis plant sale",
@@ -1171,6 +1163,22 @@
       "url": "https://www.youtube.com/watch?v=X7e29Cl5Gq0",
       "title": "Showdown with Stellantis to protect workers | CTV News Windsor at 6, Fri. Nov. 20, 2026",
       "img": "https://i.ytimg.com/vi/X7e29Cl5Gq0/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=gTrDKC7uuCM",
+      "title": "'We deserve answers,' says laid-off Stellantis worker | Hanomansing Live",
+      "img": "https://i.ytimg.com/vi/gTrDKC7uuCM/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=8VWN2mnHc-I",
+      "title": "A 'tiny bit of a door open' for feds to stop sale of Stellantis plant: Unifor | Power & Politics",
+      "img": "https://i.ytimg.com/vi/8VWN2mnHc-I/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1350,7 +1358,7 @@
      "CBS News",
      "BBC News"
     ],
-    "outled_ca": 1,
+    "outled_ca": 2,
     "judgment": "national",
     "judgment_why": "National: affects many people; carried beyond one city.",
     "weight": 30.0
@@ -1362,8 +1370,8 @@
     "url": "https://www.cp24.com/news/world/2026/11/20/trump-defends-calling-putin-a-friend-but-says-he-cant-speak-to-whether-hes-a-friend-to-the-us/",
     "rank": 1,
     "live": "",
-    "weight": 31.5,
-    "score": 15,
+    "weight": 33.5,
+    "score": 17,
     "independent": 9,
     "most_read": 0,
     "canada": "tie",
@@ -1390,8 +1398,9 @@
     "canada": "canadian",
     "theme": "Canadian auto jobs",
     "top": true,
-    "fronts": 1,
+    "fronts": 2,
     "fronts_who": [
+     "Toronto Star",
      "The Globe and Mail"
     ],
     "rule": "Canadian, older",
@@ -1422,20 +1431,21 @@
     "why_judged": "National: affects many people; carried beyond one city."
    },
    {
-    "title": "Trump turns White House press conference into a 2028 succession audition",
-    "url": "https://www.theguardian.com/us-news/2026/nov/20/trump-republican-succession-battle-vance-rubio",
+    "title": "Anthropic worker claims to have solved a Holy Grail of math problems with the help of AI",
+    "url": "https://www.thestar.com/news/world/united-states/anthropic-worker-claims-to-have-solved-a-holy-grail-of-math-problems-with-the-help-of-ai/article_9ef769cf-1bd5-5aa4-bda7-bb668acf0508.html",
     "rank": 4,
     "live": "",
-    "weight": 23.0,
-    "score": 14,
-    "independent": 3,
+    "weight": 24.0,
+    "score": 7,
+    "independent": 4,
     "most_read": 0,
     "canada": "tie",
     "theme": "",
     "top": false,
-    "fronts": 1,
+    "fronts": 2,
     "fronts_who": [
-     "The Guardian"
+     "NBC News",
+     "CBS News"
     ],
     "rule": "From abroad, tied to Canada",
     "carriers": 4,
@@ -1464,30 +1474,9 @@
     "why_judged": "National: affects some people; carried across the country (national desks)."
    },
    {
-    "title": "Detonation of unstable explosives in Iowa paused indefinitely by court",
-    "url": "https://www.cbsnews.com/news/iowa-detonation-lead-azide-paused-indefinitely-court-order/",
-    "rank": 6,
-    "live": "",
-    "weight": 11.0,
-    "score": 8,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "general",
-    "theme": "",
-    "top": false,
-    "fronts": 1,
-    "fronts_who": [
-     "CBS News"
-    ],
-    "rule": "From abroad, tied to Canada",
-    "carriers": 8,
-    "judgment": "regional",
-    "why_judged": "Regional: a single incident touching a few people; carried across the country (5 cities)."
-   },
-   {
     "title": "Federal jury convicts man of starting the deadly 2025 Palisades Fire in Los Angeles",
     "url": "https://www.cp24.com/news/world/2026/11/21/federal-jury-convicts-man-of-starting-the-deadly-2025-palisades-fire-in-los-angeles/",
-    "rank": 7,
+    "rank": 6,
     "live": "",
     "weight": 23.5,
     "score": 9,
@@ -1554,175 +1543,180 @@
     "title": "Cadbury chocolate bar recalled due to undeclared pistachio",
     "score": 8,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Chicago Mayor Brandon Johnson fights to stay on 2027 ballot amid City Hall exodus, credit warning",
+    "score": 7,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
   ],
   "moved": [],
   "top_n": 3,
   "more": [
    {
-    "key": "auto-445a36fc",
+    "key": "auto-e1ee746b",
     "words": [
-     "white"
+     "anthropic",
+     "ai"
     ],
-    "score": 14,
-    "outlets": 3,
+    "score": 7,
+    "outlets": 4,
     "carriers": 4,
     "tag": "Developing",
-    "title": "Trump turns White House press conference into a 2028 succession audition",
-    "url": "https://www.theguardian.com/us-news/2026/nov/20/trump-republican-succession-battle-vance-rubio",
-    "outlet": "The Guardian",
-    "t": "Fri 7:16 p.m.",
-    "iso": "2026-11-21T00:16:26+00:00",
-    "summary": "The president appeared to put Vance and Rubio through their paces as potential successors, while Stephen Miller unexpectedly stole the spotlight",
+    "title": "Anthropic worker claims to have solved a Holy Grail of math problems with the help of AI",
+    "url": "https://www.thestar.com/news/world/united-states/anthropic-worker-claims-to-have-solved-a-holy-grail-of-math-problems-with-the-help-of-ai/article_9ef769cf-1bd5-5aa4-bda7-bb668acf0508.html",
+    "outlet": "Toronto Star",
+    "t": "Fri 11:36 p.m.",
+    "iso": "2026-11-21T04:36:23+00:00",
+    "summary": "A mathematician who works for artificial intelligence giant Anthropic claims he has solved a Holy Grail of math problems with the help of the company's AI tool Claude.",
     "first": {
-     "outlet": "CBC News",
-     "url": "https://www.cbc.ca/news/world/katie-zacharia-california-state-bar-investigation-9.7430437",
-     "t": "Fri 4:21 p.m.",
-     "title": "Former White House press secretary Katie Zacharia investigated by California state bar",
-     "iso": "2026-11-20T21:21:40.603000+00:00"
+     "outlet": "Global News",
+     "url": "https://globalnews.ca/news/12159879/anthropic-stock-correction/",
+     "t": "Fri 2:07 p.m.",
+     "title": "S&P 500, Dow on track for correction as Anthropic retreat weighs on AI stocks",
+     "iso": "2026-11-20T19:07:42+00:00"
     },
-    "newest": "2026-11-21T00:16:26+00:00",
+    "newest": "2026-11-21T10:18:01+00:00",
     "photo": {
-     "src": "live/img/auto-445a36fc-95b74ab5ab.jpg",
-     "orig": "https://i.cbc.ca/ais/a67e801f-9f62-4319-be5b-9fbdc908f128,1795209228409/full/max/0/default.jpg?im=Crop%2Crect%3D%28124%2C0%2C4111%2C2312%29%3BResize%3D620",
-     "caption": "Katie Zacharia arrives to hold her first and only press briefing as White House press secretary on Oct. 13. (Kevin Lamarque/Reuters) — via CBC News",
-     "alt": "Katie Zacharia arrives to hold her first and only press briefing as White House press secretary on Oct. 13.",
-     "outlet": "CBC News",
-     "url": "https://www.cbc.ca/news/world/katie-zacharia-california-state-bar-investigation-9.7430437",
-     "since": "2026-11-21T11:27:41.453500+00:00"
+     "src": "live/img/auto-e1ee746b-b27c229bff.jpg",
+     "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/c/44/c44128ff-c736-5397-9a66-2d701e91de3b/6b0120a3029e9.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize",
+     "caption": "From: Anthropic worker claims to have solved a Holy Grail of math problems with the help of AI. — via Toronto Star",
+     "alt": "Anthropic worker claims to have solved a Holy Grail of math problems with the help of AI",
+     "outlet": "Toronto Star",
+     "url": "https://www.thestar.com/news/world/united-states/anthropic-worker-claims-to-have-solved-a-holy-grail-of-math-problems-with-the-help-of-ai/article_9ef769cf-1bd5-5aa4-bda7-bb668acf0508.html",
+     "since": "2026-11-21T11:36:48.533451+00:00"
     },
     "photo_seen": [
-     "https://d3i6fh83elv35t.cloudfront.net/static/2026/11/trump-1024x712.jpg"
+     "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/c/44/c44128ff-c736-5397-9a66-2d701e91de3b/6b0120a3029e9.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
     ],
     "photos": [
      {
-      "src": "live/img/auto-445a36fc-95b74ab5ab.jpg",
-      "orig": "https://i.cbc.ca/ais/a67e801f-9f62-4319-be5b-9fbdc908f128,1795209228409/full/max/0/default.jpg?im=Crop%2Crect%3D%28124%2C0%2C4111%2C2312%29%3BResize%3D620",
-      "caption": "Katie Zacharia arrives to hold her first and only press briefing as White House press secretary on Oct. 13. (Kevin Lamarque/Reuters) — via CBC News",
-      "alt": "Katie Zacharia arrives to hold her first and only press briefing as White House press secretary on Oct. 13.",
-      "outlet": "CBC News",
-      "url": "https://www.cbc.ca/news/world/katie-zacharia-california-state-bar-investigation-9.7430437"
-     },
-     {
-      "src": "live/img/auto-445a36fc-5f368b59d0.jpg",
-      "orig": "https://d3i6fh83elv35t.cloudfront.net/static/2026/11/trump-1024x712.jpg",
-      "caption": "From: What Trump addressed during his lengthy White House news conference. — via PBS NewsHour",
-      "alt": "What Trump addressed during his lengthy White House news conference",
-      "outlet": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/what-trump-addressed-during-his-lengthy-white-house-news-conference"
-     },
-     {
-      "src": "live/img/auto-445a36fc-14a0596064.jpg",
-      "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/7/cb/7cb98c89-6067-5cac-b228-57922aa93dda/6b00c79168162.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize",
-      "caption": "From: Trump auditions potential successors as Rubio and Vance join him for White House briefing. — via Toronto Star",
-      "alt": "Trump auditions potential successors as Rubio and Vance join him for White House briefing",
+      "src": "live/img/auto-e1ee746b-b27c229bff.jpg",
+      "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/c/44/c44128ff-c736-5397-9a66-2d701e91de3b/6b0120a3029e9.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize",
+      "caption": "From: Anthropic worker claims to have solved a Holy Grail of math problems with the help of AI. — via Toronto Star",
+      "alt": "Anthropic worker claims to have solved a Holy Grail of math problems with the help of AI",
       "outlet": "Toronto Star",
-      "url": "https://www.thestar.com/news/world/united-states/trump-auditions-potential-successors-as-rubio-and-vance-join-him-for-white-house-briefing/article_f0ee8d50-5cce-59bc-9221-758bc6e2b4f2.html"
+      "url": "https://www.thestar.com/news/world/united-states/anthropic-worker-claims-to-have-solved-a-holy-grail-of-math-problems-with-the-help-of-ai/article_9ef769cf-1bd5-5aa4-bda7-bb668acf0508.html"
+     },
+     {
+      "src": "live/img/auto-e1ee746b-569cef02d9.jpg",
+      "orig": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/78a0/live/a0688a80-e531-11f1-99b6-a35a62fa4264.jpg",
+      "caption": "Anthropic's name on a video billboard in Times Square, New York, with a background of dark colors swirling around it. — via BBC News",
+      "alt": "Anthropic's name on a video billboard in Times Square, New York, with a background of dark colors swirling around it.",
+      "outlet": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c6pqr2g7w059o?at_medium=RSS&at_campaign=rss"
      }
     ],
-    "independent": 3,
+    "independent": 4,
     "reports": [
      {
-      "t": "Fri 7:16 p.m.",
-      "iso": "2026-11-21T00:16:26+00:00",
-      "outlet": "The Guardian",
-      "title": "Trump turns White House press conference into a 2028 succession audition",
-      "url": "https://www.theguardian.com/us-news/2026/nov/20/trump-republican-succession-battle-vance-rubio",
-      "desc": "The president appeared to put Vance and Rubio through their paces as potential successors, while Stephen Miller unexpectedly stole the spotlight"
+      "t": "Sat 5:18 a.m.",
+      "iso": "2026-11-21T10:18:01+00:00",
+      "outlet": "Euronews",
+      "title": "Anthropic worker claims to have solved famed 167-year-old maths problem with help of AI",
+      "url": "https://www.euronews.com/2026/11/21/anthropic-worker-claims-to-have-solved-famed-167-year-old-maths-problem-with-help-of-ai",
+      "desc": ""
      },
      {
-      "t": "Fri 6:55 p.m.",
-      "iso": "2026-11-20T23:55:30+00:00",
-      "outlet": "PBS NewsHour",
-      "title": "What Trump addressed during his lengthy White House news conference",
-      "url": "https://www.pbs.org/newshour/show/what-trump-addressed-during-his-lengthy-white-house-news-conference",
-      "desc": "In a lengthy press conference, President Trump touted his recent trip to Asia and defended his relationship with Chinese President Xi Jinping and Russian President Vladimir Putin. White House correspondent Liz Landers was in the briefing room as the president took questions from reporters."
-     },
-     {
-      "t": "Fri 5:18 p.m.",
-      "iso": "2026-11-20T22:18:00+00:00",
+      "t": "Fri 11:36 p.m.",
+      "iso": "2026-11-21T04:36:23+00:00",
       "outlet": "Toronto Star",
-      "title": "Trump auditions potential successors as Rubio and Vance join him for White House briefing",
-      "url": "https://www.thestar.com/news/world/united-states/trump-auditions-potential-successors-as-rubio-and-vance-join-him-for-white-house-briefing/article_f0ee8d50-5cce-59bc-9221-758bc6e2b4f2.html",
-      "desc": "Marco Rubio fidgeted and sighed. JD Vance smiled and furrowed his brow."
+      "title": "Anthropic worker claims to have solved a Holy Grail of math problems with the help of AI",
+      "url": "https://www.thestar.com/news/world/united-states/anthropic-worker-claims-to-have-solved-a-holy-grail-of-math-problems-with-the-help-of-ai/article_9ef769cf-1bd5-5aa4-bda7-bb668acf0508.html",
+      "desc": "A mathematician who works for artificial intelligence giant Anthropic claims he has solved a Holy Grail of math problems with the help of the company's AI tool Claude."
      },
      {
-      "t": "Fri 4:21 p.m.",
-      "iso": "2026-11-20T21:21:40.603000+00:00",
-      "outlet": "CBC News",
-      "title": "Former White House press secretary Katie Zacharia investigated by California state bar",
-      "url": "https://www.cbc.ca/news/world/katie-zacharia-california-state-bar-investigation-9.7430437",
-      "desc": "California's state bar is investigating former White House press secretary Katie Zacharia after a complaint she represented herself as a lawyer without having ever passed the bar exam."
+      "t": "Fri 6:08 p.m.",
+      "iso": "2026-11-20T23:08:57+00:00",
+      "outlet": "BBC News",
+      "title": "In a year of AI solving maths problems, Anthropic may have just solved the biggest",
+      "url": "https://www.bbc.co.uk/news/articles/c6pqr2g7w059o?at_medium=RSS&at_campaign=rss",
+      "desc": "A mathematician at Anthropic says he used an AI to prove the famed Riemann hypothesis, though verification will take some time."
+     },
+     {
+      "t": "Fri 2:07 p.m.",
+      "iso": "2026-11-20T19:07:42+00:00",
+      "outlet": "Global News",
+      "title": "S&P 500, Dow on track for correction as Anthropic retreat weighs on AI stocks",
+      "url": "https://globalnews.ca/news/12159879/anthropic-stock-correction/",
+      "desc": "Both benchmarks were down 10 per cent from their record closing highs. An index falling 10 per cent or more below its record high on a close-to-close basis is called a correction."
      }
     ],
     "sources": [
      {
-      "t": "Fri 7:16 p.m.",
+      "t": "Sat 5:18 a.m.",
       "primary": false,
-      "outlet": "The Guardian",
-      "title": "Trump turns White House press conference into a 2028 succession audition",
-      "url": "https://www.theguardian.com/us-news/2026/nov/20/trump-republican-succession-battle-vance-rubio",
-      "desc": "The president appeared to put Vance and Rubio through their paces as potential successors, while Stephen Miller unexpectedly stole the spotlight",
+      "outlet": "Euronews",
+      "title": "Anthropic worker claims to have solved famed 167-year-old maths problem with help of AI",
+      "url": "https://www.euronews.com/2026/11/21/anthropic-worker-claims-to-have-solved-famed-167-year-old-maths-problem-with-help-of-ai",
+      "desc": "",
       "wire": "",
       "by": [
        {
-        "outlet": "The Guardian",
-        "src": "The Guardian",
-        "byline": "[{\"@type\":\"Person\",\"name\":\"David Smith\",}] \"David Smith\" \"David Smith in Washington\" https://www.theguardian.com/profile"
+        "outlet": "Euronews",
+        "src": "Euronews",
+        "byline": ""
        }
       ],
       "copies": []
      },
      {
-      "t": "Fri 6:55 p.m.",
+      "t": "Fri 11:36 p.m.",
       "primary": false,
-      "outlet": "PBS NewsHour",
-      "title": "What Trump addressed during his lengthy White House news conference",
-      "url": "https://www.pbs.org/newshour/show/what-trump-addressed-during-his-lengthy-white-house-news-conference",
-      "desc": "In a lengthy press conference, President Trump touted his recent trip to Asia and defended his relationship with Chinese President Xi Jinping and Russian President Vladimir Putin. White House correspondent Liz Landers was in the briefing room as the president took questions from reporters.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "PBS NewsHour",
-        "src": "PBS NewsHour",
-        "byline": "[{\"@type\":\"Person\",\"name\":\"Amna Nawaz\"},{\"@type\":\"Person\",\"name\":\"Liz Landers\"}] By — Amna Nawaz Amna Nawaz By — Liz Lan"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Fri 4:21 p.m.",
-      "primary": false,
-      "outlet": "CBC News",
-      "title": "Former White House press secretary Katie Zacharia investigated by California state bar",
-      "url": "https://www.cbc.ca/news/world/katie-zacharia-california-state-bar-investigation-9.7430437",
-      "desc": "California's state bar is investigating former White House press secretary Katie Zacharia after a complaint she represented herself as a lawyer without having ever passed the bar exam.",
+      "outlet": "Toronto Star",
+      "title": "Anthropic worker claims to have solved a Holy Grail of math problems with the help of AI",
+      "url": "https://www.thestar.com/news/world/united-states/anthropic-worker-claims-to-have-solved-a-holy-grail-of-math-problems-with-the-help-of-ai/article_9ef769cf-1bd5-5aa4-bda7-bb668acf0508.html",
+      "desc": "A mathematician who works for artificial intelligence giant Anthropic claims he has solved a Holy Grail of math problems with the help of the company's AI tool Claude.",
       "wire": "The Associated Press",
       "by": [
        {
-        "outlet": "CBC News",
-        "src": "The Associated Press",
-        "byline": "\"\"},\"recentContent\":{}} \"CBC News\" \"The Associated Press\" {\"name\":\"\",,\"displ"
-       },
-       {
         "outlet": "Toronto Star",
         "src": "The Associated Press",
-        "byline": "\"Jonathan J. Cooper The Associated Press\" \"Jonathan J. Coope"
+        "byline": "\"Hallie Golden The Associated Press\" \"Hallie Golden The"
        }
       ],
-      "copies": [
+      "copies": []
+     },
+     {
+      "t": "Fri 6:08 p.m.",
+      "primary": false,
+      "outlet": "BBC News",
+      "title": "In a year of AI solving maths problems, Anthropic may have just solved the biggest",
+      "url": "https://www.bbc.co.uk/news/articles/c6pqr2g7w059o?at_medium=RSS&at_campaign=rss",
+      "desc": "A mathematician at Anthropic says he used an AI to prove the famed Riemann hypothesis, though verification will take some time.",
+      "wire": "",
+      "by": [
        {
-        "outlet": "Toronto Star",
-        "url": "https://www.thestar.com/news/world/united-states/trump-auditions-potential-successors-as-rubio-and-vance-join-him-for-white-house-briefing/article_f0ee8d50-5cce-59bc-9221-758bc6e2b4f2.html"
+        "outlet": "BBC News",
+        "src": "BBC News",
+        "byline": "[{\"@type\":\"Person\",\"name\":\"Kali Hays\"}] https://www.facebook.com/bbcnews"
        }
-      ]
+      ],
+      "copies": []
+     },
+     {
+      "t": "Fri 2:07 p.m.",
+      "primary": false,
+      "outlet": "Global News",
+      "title": "S&P 500, Dow on track for correction as Anthropic retreat weighs on AI stocks",
+      "url": "https://globalnews.ca/news/12159879/anthropic-stock-correction/",
+      "desc": "Both benchmarks were down 10 per cent from their record closing highs. An index falling 10 per cent or more below its record high on a close-to-close basis is called a correction.",
+      "wire": "Reuters",
+      "by": [
+       {
+        "outlet": "Global News",
+        "src": "Reuters",
+        "byline": "arsh Hathi and Ragini Mathur \n\t\t\t\t\t\t\t\t\t\tReuters"
+       }
+      ],
+      "copies": []
      }
     ],
     "replaces_top": false,
     "events": [],
     "theme": "",
     "ca_angle": {
-     "specific": 1,
+     "specific": 2,
      "official": 0
     },
     "canada": "tie",
@@ -1730,15 +1724,16 @@
     "incoherent": false,
     "popular": 0,
     "us_election": false,
-    "fronts": 1,
+    "fronts": 2,
     "fronts_ca": 0,
     "fronts_who": [
-     "The Guardian"
+     "NBC News",
+     "CBS News"
     ],
-    "outled_ca": 1,
+    "outled_ca": 2,
     "judgment": "national",
     "judgment_why": "National: affects some people; carried across the country (national desks).",
-    "weight": 23.0
+    "weight": 24.0
    },
    {
     "key": "auto-22e3a384",
@@ -1771,7 +1766,7 @@
      "alt": "Flowers, handwritten notes, watermelons and other items are displayed at a memorial for Fiona the hippo at the Cincinnati Zoo in Cincinnati, Friday, Nov. 20, 20",
      "outlet": "CTV News",
      "url": "https://www.ctvnews.ca/climate-and-environment/article/exam-shows-that-hat-fiona-the-hippo-ate-was-deep-into-her-small-intestine/",
-     "since": "2026-11-21T11:27:49.970821+00:00"
+     "since": "2026-11-21T11:36:47.987415+00:00"
     },
     "photo_seen": [
      "https://www.ctvnews.ca/resizer/v2/TZBMSTNGC7OV7SFH6DP4NMTU5M.jpg?smart=true&auth=d3ad234a9a7e8925cce729f070447b3c078357e2be98d3e274e95f9a31caf52f&width=1200&height=630"
@@ -1984,7 +1979,7 @@
     "fronts_who": [
      "BBC News"
     ],
-    "outled_ca": 1,
+    "outled_ca": 2,
     "judgment": "national",
     "judgment_why": "National: affects some people; carried across the country (national desks).",
     "weight": 19.5,
@@ -1994,278 +1989,6 @@
       "url": "https://www.youtube.com/watch?v=MbX02FGlnno",
       "title": "Cincinnati Zoo's Fiona the hippo dies days after eating a visitor’s hat",
       "img": "https://i.ytimg.com/vi/MbX02FGlnno/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     }
-    ]
-   },
-   {
-    "key": "auto-0f959407",
-    "words": [
-     "iowa",
-     "army"
-    ],
-    "score": 8,
-    "outlets": 3,
-    "carriers": 8,
-    "tag": "Developing",
-    "title": "Detonation of unstable explosives in Iowa paused indefinitely by court",
-    "url": "https://www.cbsnews.com/news/iowa-detonation-lead-azide-paused-indefinitely-court-order/",
-    "outlet": "CBS News",
-    "t": "Fri 8:29 p.m.",
-    "iso": "2026-11-21T01:29:59+00:00",
-    "summary": "The U.S. Army's plan to detonate five tons of unstable explosives containing lead azide at a munitions plant in Iowa has been put on indefinite hold by a federal court Friday.",
-    "first": {
-     "outlet": "CityNews",
-     "url": "https://toronto.citynews.ca/2026/11/20/court-stay-prevents-u-s-army-from-detonating-bomb-making-chemicals-in-iowa/",
-     "t": "Fri 1:48 p.m.",
-     "title": "Court stay prevents US Army from detonating bomb-making chemicals in Iowa",
-     "iso": "2026-11-20T18:48:17+00:00"
-    },
-    "newest": "2026-11-21T01:50:25+00:00",
-    "photo": {
-     "src": "live/img/auto-0f959407-98c9cb24cc.jpg",
-     "orig": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/11/20/e76f478f-2c32-4948-b2c6-06d281c51ae4/thumbnail/1200x630/998bf3a937ef628b946e019417c219a6/gettyimages-2305973748.jpg",
-     "caption": "From: Detonation of unstable explosives in Iowa paused indefinitely by court. — via CBS News",
-     "alt": "Detonation of unstable explosives in Iowa paused indefinitely by court",
-     "outlet": "CBS News",
-     "url": "https://www.cbsnews.com/news/iowa-detonation-lead-azide-paused-indefinitely-court-order/",
-     "since": "2026-11-21T11:27:51.690754+00:00"
-    },
-    "photo_seen": [
-     "https://assets1.cbsnewsstatic.com/hub/i/r/2026/11/20/e76f478f-2c32-4948-b2c6-06d281c51ae4/thumbnail/1200x630/998bf3a937ef628b946e019417c219a6/gettyimages-2305973748.jpg"
-    ],
-    "photos": [
-     {
-      "src": "live/img/auto-0f959407-98c9cb24cc.jpg",
-      "orig": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/11/20/e76f478f-2c32-4948-b2c6-06d281c51ae4/thumbnail/1200x630/998bf3a937ef628b946e019417c219a6/gettyimages-2305973748.jpg",
-      "caption": "From: Detonation of unstable explosives in Iowa paused indefinitely by court. — via CBS News",
-      "alt": "Detonation of unstable explosives in Iowa paused indefinitely by court",
-      "outlet": "CBS News",
-      "url": "https://www.cbsnews.com/news/iowa-detonation-lead-azide-paused-indefinitely-court-order/"
-     },
-     {
-      "src": "live/img/auto-0f959407-8648a66ca6.jpg",
-      "orig": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/mpx/2704722219/2026_11/1795225820712_now_topstory_iowa_lead_detonation_261120_S3_1920x1080-zocz0u.jpg",
-      "caption": "From: Army detonation of bomb-making chemicals in Iowa delayed indefinitely. — via NBC News",
-      "alt": "Army detonation of bomb-making chemicals in Iowa delayed indefinitely",
-      "outlet": "NBC News",
-      "url": "https://www.nbcnews.com/video/army-detonation-of-bomb-making-chemicals-in-iowa-delayed-indefinitely-273940037981"
-     },
-     {
-      "src": "live/img/auto-0f959407-5e7569d914.jpg",
-      "orig": "https://d3i6fh83elv35t.cloudfront.net/static/2026/11/1000w_q95.jpg",
-      "caption": "From: Court grants request to prevent military from detonating bomb-making chemicals in Iowa. — via PBS NewsHour",
-      "alt": "Court grants request to prevent military from detonating bomb-making chemicals in Iowa",
-      "outlet": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/court-grants-request-to-prevent-military-from-detonating-bomb-making-chemicals-in-iowa"
-     },
-     {
-      "src": "live/img/auto-0f959407-db9d08d250.jpg",
-      "orig": "https://ottawa.citynews.ca/wp-content/blogs.dir/sites/4/2026/11/8cce001df9829b6ac8d414a7ab59bfcaf92e91da3d9acb019c319b2e70b69428-1.jpg",
-      "caption": "From: Court stay prevents U.S. Army from detonating bomb-making chemicals in Iowa. — via CityNews Ottawa",
-      "alt": "Court stay prevents U.S. Army from detonating bomb-making chemicals in Iowa",
-      "outlet": "CityNews Ottawa",
-      "url": "https://ottawa.citynews.ca/2026/11/20/court-stay-prevents-u-s-army-from-detonating-bomb-making-chemicals-in-iowa/"
-     }
-    ],
-    "independent": 3,
-    "reports": [
-     {
-      "t": "Fri 8:50 p.m.",
-      "iso": "2026-11-21T01:50:25+00:00",
-      "outlet": "NBC News",
-      "title": "Army detonation of bomb-making chemicals in Iowa delayed indefinitely",
-      "url": "https://www.nbcnews.com/video/army-detonation-of-bomb-making-chemicals-in-iowa-delayed-indefinitely-273940037981",
-      "desc": "A federal appeals court decided to delay a detonation of several tons of bomb-making chemicals in Iowa indefinitely. This comes after an outpouring of public concern that a cloud of lead dust could cause environmental contamination and health problems. NBC News' Andres Gutierrez has the latest."
-     },
-     {
-      "t": "Fri 8:29 p.m.",
-      "iso": "2026-11-21T01:29:59+00:00",
-      "outlet": "CBS News",
-      "title": "Detonation of unstable explosives in Iowa paused indefinitely by court",
-      "url": "https://www.cbsnews.com/news/iowa-detonation-lead-azide-paused-indefinitely-court-order/",
-      "desc": "The U.S. Army's plan to detonate five tons of unstable explosives containing lead azide at a munitions plant in Iowa has been put on indefinite hold by a federal court Friday."
-     },
-     {
-      "t": "Fri 2:27 p.m.",
-      "iso": "2026-11-20T19:27:47+00:00",
-      "outlet": "PBS NewsHour",
-      "title": "Court grants request to prevent military from detonating bomb-making chemicals in Iowa",
-      "url": "https://www.pbs.org/newshour/nation/court-grants-request-to-prevent-military-from-detonating-bomb-making-chemicals-in-iowa",
-      "desc": "The detonation was initially planned for Friday, but the Army pushed it to Monday following an outpouring of public concern about the potential health and environmental consequences."
-     },
-     {
-      "t": "Fri 1:48 p.m.",
-      "iso": "2026-11-20T18:48:17+00:00",
-      "outlet": "CityNews Ottawa",
-      "title": "Court stay prevents U.S. Army from detonating bomb-making chemicals in Iowa",
-      "url": "https://ottawa.citynews.ca/2026/11/20/court-stay-prevents-u-s-army-from-detonating-bomb-making-chemicals-in-iowa/",
-      "desc": "A federal appeals court has granted a request by environmentalists to put on hold a permit that cleared the way for the U.S. Army to detonate several tons of bomb-making chemicals in Iowa."
-     },
-     {
-      "t": "Fri 1:48 p.m.",
-      "iso": "2026-11-20T18:48:17+00:00",
-      "outlet": "CityNews Halifax",
-      "title": "Court stay prevents U.S. Army from detonating bomb-making chemicals in Iowa",
-      "url": "https://halifax.citynews.ca/2026/11/20/court-stay-prevents-u-s-army-from-detonating-bomb-making-chemicals-in-iowa/",
-      "desc": ""
-     },
-     {
-      "t": "Fri 1:48 p.m.",
-      "iso": "2026-11-20T18:48:17+00:00",
-      "outlet": "CityNews Edmonton",
-      "title": "Court stay prevents U.S. Army from detonating bomb-making chemicals in Iowa",
-      "url": "https://edmonton.citynews.ca/2026/11/20/court-stay-prevents-u-s-army-from-detonating-bomb-making-chemicals-in-iowa/",
-      "desc": ""
-     },
-     {
-      "t": "Fri 1:48 p.m.",
-      "iso": "2026-11-20T18:48:17+00:00",
-      "outlet": "CityNews Calgary",
-      "title": "Court stay prevents U.S. Army from detonating bomb-making chemicals in Iowa",
-      "url": "https://calgary.citynews.ca/2026/11/20/court-stay-prevents-u-s-army-from-detonating-bomb-making-chemicals-in-iowa/",
-      "desc": ""
-     },
-     {
-      "t": "Fri 1:48 p.m.",
-      "iso": "2026-11-20T18:48:17+00:00",
-      "outlet": "CityNews",
-      "title": "Court stay prevents US Army from detonating bomb-making chemicals in Iowa",
-      "url": "https://toronto.citynews.ca/2026/11/20/court-stay-prevents-u-s-army-from-detonating-bomb-making-chemicals-in-iowa/",
-      "desc": ""
-     }
-    ],
-    "sources": [
-     {
-      "t": "Fri 8:50 p.m.",
-      "primary": false,
-      "outlet": "NBC News",
-      "title": "Army detonation of bomb-making chemicals in Iowa delayed indefinitely",
-      "url": "https://www.nbcnews.com/video/army-detonation-of-bomb-making-chemicals-in-iowa-delayed-indefinitely-273940037981",
-      "desc": "A federal appeals court decided to delay a detonation of several tons of bomb-making chemicals in Iowa indefinitely. This comes after an outpouring of public concern that a cloud of lead dust could cause environmental contamination and health problems. NBC News' Andres Gutierrez has the latest.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "NBC News",
-        "src": "NBC News",
-        "byline": "\"NBCNews.com\" [{\"@context\":\"https://schema.org/\",\"@type\":\"NewsMediaOrganization\",\"name\":\"NBC News\",}] \"mps\" "
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Fri 8:29 p.m.",
-      "primary": false,
-      "outlet": "CBS News",
-      "title": "Detonation of unstable explosives in Iowa paused indefinitely by court",
-      "url": "https://www.cbsnews.com/news/iowa-detonation-lead-azide-paused-indefinitely-court-order/",
-      "desc": "The U.S. Army's plan to detonate five tons of unstable explosives containing lead azide at a munitions plant in Iowa has been put on indefinite hold by a federal court Friday.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "CBS News",
-        "src": "CBS News",
-        "byline": "own staff: Producer"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Fri 1:48 p.m.",
-      "primary": false,
-      "outlet": "CityNews Ottawa",
-      "title": "Court stay prevents U.S. Army from detonating bomb-making chemicals in Iowa",
-      "url": "https://ottawa.citynews.ca/2026/11/20/court-stay-prevents-u-s-army-from-detonating-bomb-making-chemicals-in-iowa/",
-      "desc": "A federal appeals court has granted a request by environmentalists to put on hold a permit that cleared the way for the U.S. Army to detonate several tons of bomb-making chemicals in Iowa.",
-      "wire": "The Associated Press",
-      "by": [
-       {
-        "outlet": "CityNews Ottawa",
-        "src": "The Associated Press",
-        "byline": "Fingerhut And Susan Montoya Bryan, The Associated Press,\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews Halifax",
-        "src": "The Associated Press",
-        "byline": "Fingerhut And Susan Montoya Bryan, The Associated Press,\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews Edmonton",
-        "src": "The Associated Press",
-        "byline": "Fingerhut And Susan Montoya Bryan, The Associated Press,\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews Calgary",
-        "src": "The Associated Press",
-        "byline": "Fingerhut And Susan Montoya Bryan, The Associated Press,\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews",
-        "src": "The Associated Press",
-        "byline": "Fingerhut And Susan Montoya Bryan, The Associated Press,\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "PBS NewsHour",
-        "src": "The Associated Press",
-        "byline": "Hannah Fingerhut, Associated Press"
-       }
-      ],
-      "copies": [
-       {
-        "outlet": "CityNews Halifax",
-        "url": "https://halifax.citynews.ca/2026/11/20/court-stay-prevents-u-s-army-from-detonating-bomb-making-chemicals-in-iowa/"
-       },
-       {
-        "outlet": "CityNews Edmonton",
-        "url": "https://edmonton.citynews.ca/2026/11/20/court-stay-prevents-u-s-army-from-detonating-bomb-making-chemicals-in-iowa/"
-       },
-       {
-        "outlet": "CityNews Calgary",
-        "url": "https://calgary.citynews.ca/2026/11/20/court-stay-prevents-u-s-army-from-detonating-bomb-making-chemicals-in-iowa/"
-       },
-       {
-        "outlet": "CityNews",
-        "url": "https://toronto.citynews.ca/2026/11/20/court-stay-prevents-u-s-army-from-detonating-bomb-making-chemicals-in-iowa/"
-       },
-       {
-        "outlet": "PBS NewsHour",
-        "url": "https://www.pbs.org/newshour/nation/court-grants-request-to-prevent-military-from-detonating-bomb-making-chemicals-in-iowa"
-       }
-      ]
-     }
-    ],
-    "replaces_top": false,
-    "events": [],
-    "theme": "",
-    "canada": "general",
-    "canus": false,
-    "incoherent": false,
-    "popular": 0,
-    "us_election": false,
-    "fronts": 1,
-    "fronts_ca": 0,
-    "fronts_who": [
-     "CBS News"
-    ],
-    "outled_ca": 1,
-    "judgment": "regional",
-    "judgment_why": "Regional: a single incident touching a few people; carried across the country (5 cities).",
-    "weight": 11.0,
-    "videos": [
-     {
-      "net": "CBS News",
-      "url": "https://www.youtube.com/watch?v=ygjwFhmak0Y",
-      "title": "Court indefinitely halts Army's planned detonation of unstable explosives in Iowa",
-      "img": "https://i.ytimg.com/vi/ygjwFhmak0Y/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "NBC News",
-      "url": "https://www.youtube.com/watch?v=xAQdGPV9HOc",
-      "title": "Army detonation of bomb-making chemicals in Iowa delayed indefinitely",
-      "img": "https://i.ytimg.com/vi/xAQdGPV9HOc/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -2284,7 +2007,7 @@
    "id": "g5G4kZkAx5Y",
    "r": "ca",
    "o": "Global News",
-   "t": "Global National: Nov. 20, 2026 | Ford car assembly plant reopens in Ontario",
+   "t": "Global National: Nov. 20, 2026 | Ford gets $760M from taxpayers for Ontario plant",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=g5G4kZkAx5Y",
@@ -2438,13 +2161,41 @@
    "id": "povTxg_tDB4",
    "r": "ca",
    "o": "CTV News",
-   "t": "Two hunters fined for trespassing on St. Joseph Island",
+   "t": "Hunter suspended, fined $3,500 for trespassing",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=povTxg_tDB4",
    "img": "https://i.ytimg.com/vi/povTxg_tDB4/hqdefault.jpg",
    "up": "2026-11-21",
    "added": "2026-11-21T11:08:57.402605+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "meeM94wmv7M",
+   "r": "ca",
+   "o": "CBC News",
+   "t": "B.C. arbitrator imposes 1st union contract for Amazon workers in North America | Hanomansing Live",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=meeM94wmv7M",
+   "img": "https://i.ytimg.com/vi/meeM94wmv7M/hqdefault.jpg",
+   "up": "2026-11-20",
+   "added": "2026-11-21T11:35:02.445759+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "gTrDKC7uuCM",
+   "r": "ca",
+   "o": "CBC News",
+   "t": "'We deserve answers,' says laid-off Stellantis worker | Hanomansing Live",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=gTrDKC7uuCM",
+   "img": "https://i.ytimg.com/vi/gTrDKC7uuCM/hqdefault.jpg",
+   "up": "2026-11-20",
+   "added": "2026-11-21T11:35:02.445759+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2606,41 +2357,13 @@
    "id": "RGmCWiSmNx4",
    "r": "us",
    "o": "CNN",
-   "t": "Zelensky: This is not war, it is ‘terrorism against civilians’",
+   "t": "Zelensky reacts to Trump calling Putin a friend",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=RGmCWiSmNx4",
    "img": "https://i.ytimg.com/vi/RGmCWiSmNx4/hqdefault.jpg",
    "up": "2026-11-20",
    "added": "2026-11-21T08:25:26.888566+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "eF-88KLwajY",
-   "r": "us",
-   "o": "Fox News",
-   "t": "GLOBAL SUPERPOWERS: President Trump calls maintaining a good relationship CRUCIAL",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=eF-88KLwajY",
-   "img": "https://i.ytimg.com/vi/eF-88KLwajY/hqdefault.jpg",
-   "up": "2026-11-21",
-   "added": "2026-11-21T10:04:56.971621+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "JmeyzXJSJWE",
-   "r": "us",
-   "o": "Associated Press",
-   "t": "‘Stranger Things: The Diner’ opens in New York",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=JmeyzXJSJWE",
-   "img": "https://i.ytimg.com/vi/JmeyzXJSJWE/hqdefault.jpg",
-   "up": "2026-11-21",
-   "added": "2026-11-21T10:14:57.136865+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2701,20 +2424,6 @@
    "geo": "unknown"
   },
   {
-   "id": "0RiaGxfSpzg",
-   "r": "us",
-   "o": "Fox News",
-   "t": "Watters: It’s my world, but why is it falling apart?",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=0RiaGxfSpzg",
-   "img": "https://i.ytimg.com/vi/0RiaGxfSpzg/hqdefault.jpg",
-   "up": "2026-11-21",
-   "added": "2026-11-21T11:08:57.402605+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "x2rn_u_bvzg",
    "r": "us",
    "o": "Associated Press",
@@ -2725,6 +2434,20 @@
    "img": "https://i.ytimg.com/vi/x2rn_u_bvzg/hqdefault.jpg",
    "up": "2026-11-21",
    "added": "2026-11-21T11:08:57.402605+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "bxX3Nk95Bi0",
+   "r": "us",
+   "o": "Associated Press",
+   "t": "How water specialists go door to door to save every drop in drought-stricken Arizona city",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=bxX3Nk95Bi0",
+   "img": "https://i.ytimg.com/vi/bxX3Nk95Bi0/hqdefault.jpg",
+   "up": "2026-11-21",
+   "added": "2026-11-21T11:35:02.445759+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2872,11 +2595,11 @@
  "ledes": [
   {
    "o": "CBS News",
-   "h": "Recipe: Collard Greens & Cabbage with Smoke Neck Bones",
-   "u": "https://www.cbsnews.com/news/recipe-collard-greens-cabbage-with-smoke-neck-bones/",
-   "img": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/20/24d1665a-6675-48df-8d84-c87a5465553b/thumbnail/1200x630/3397ab03bb1df46859fcf0be3dce74cc/collard-greens.jpg",
-   "w": "Sat 6:23 a.m.",
-   "iso": "2026-11-21T11:23:03+00:00"
+   "h": "Recipe: Nigella's Sticky Toffee Pudding",
+   "u": "https://www.cbsnews.com/news/recipe-nigellas-sticky-toffee-pudding/",
+   "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/17/6f1f7cbc-fef4-493d-a43a-dca6196b9805/thumbnail/1200x630/ca97be24d57366c5894b7ea2a9f6f5f7/fw-sticky-toffee-pudding-1280.jpg",
+   "w": "Sat 6:33 a.m.",
+   "iso": "2026-11-21T11:33:18+00:00"
   },
   {
    "o": "ABC News",
@@ -2920,11 +2643,11 @@
   },
   {
    "o": "The Hill",
-   "h": "Virginia reports first measles-related death of 2026",
-   "u": "https://thehill.com/policy/healthcare/6234958-virginia-child-measles-death-elimination-status/",
+   "h": "Democrats want 'Medicare for More.' Then comes the hard part",
+   "u": "https://thehill.com/policy/healthcare/6231776-democrats-expand-medicare-coverage/",
    "img": "",
-   "w": "Fri 11:20 p.m.",
-   "iso": "2026-11-21T04:20:20+00:00"
+   "w": "Sat 6:00 a.m.",
+   "iso": "2026-11-21T11:00:00+00:00"
   },
   {
    "o": "Politico",
@@ -3186,8 +2909,8 @@
   [
    "Washington Examiner",
    "Opinion",
-   "In Nigeria’s refugee camps, will they even know it’s Christmas?",
-   "https://www.washingtonexaminer.com/op-eds/4805048/nigerian-christian-refugees-abuja-camps/",
+   "If Trump is Krasnov, Moscow should ask for a refund",
+   "https://www.washingtonexaminer.com/op-eds/4810251/is-trump-a-russian-asset-the-record-soviet-interior-ministry-moscow-wish-list/",
    "2026-11-21T11:00:00+00:00"
   ]
  ],
@@ -3272,8 +2995,8 @@
   "lines": [
    "Good morning. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
    "Zelensky says Putin is a ‘killer’ after Trump calls Russian leader a friend, BBC News reports.",
-   "Trump turns White House press conference into a 2028 succession audition, The Guardian reports.",
    "A behind-closed-doors meeting with the top officials of Stellantis about the sale of the Brampton Assembly plant was challenging but productive, Ontario Premier Doug Ford says.",
+   "NATO calls Russian missiles landing in Poland a ‘grave violation’ of airspace, The Associated Press reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
   ]
  },
@@ -3547,11 +3270,11 @@
    "o": "SooToday",
    "region": "Sault Ste. Marie",
    "arctic": false,
-   "h": "Good morning, Sault Ste. Marie! Here's today's weather!",
-   "u": "https://www.sootoday.com/good-morning/good-morning-sault-ste-marie-heres-todays-weather-13042904",
-   "t": "Sat 6:00 a.m.",
-   "desc": "Here's a look at the current local weather and gas prices",
-   "img": "https://www.vmcdn.ca/f/files/shared/good-morning/soo/20261117-gm-sault-sherri-pierman2.jpg;w=1200;h=800;mode=crop"
+   "h": "November 21st Weather Discussion",
+   "u": "https://www.sootoday.com/weather/november-21st-weather-discussion-13040316",
+   "t": "Sat 6:30 a.m.",
+   "desc": "Today will be the warmest day of this mild spell, with a high near 16°C, setting a new record high for this date. Cloud cover from overnight will diminish through the morning, giving way to mostly sunny skies across much of the area. Breezy",
+   "img": "https://www.vmcdn.ca/f/files/shared/site_images/weather/share_weather_soo.png"
   },
   {
    "o": "BayToday",
@@ -3641,13 +3364,13 @@
    "city": "Washington",
    "tz": "America/New_York",
    "world": false,
-   "w": "Trade",
-   "label": "Trump says he's working on a 'fair' trade deal with Canada",
-   "u": "https://www.cbc.ca/news/world/trump-canada-tariffs-trade-news-conference-9.7430092",
-   "title": "Trump says he's working on a 'fair' trade deal with Canada",
-   "outlet": "CBC News",
-   "t": "Sat 2:55 a.m.",
-   "hot": false
+   "w": "Putin",
+   "label": "Trump Orders Federal Contractors to Notify White House of…",
+   "u": "https://vocm.com/2026/11/21/trump-orders-federal-contractors-to-notify-white-house-of-congressional/",
+   "title": "Trump Orders Federal Contractors to Notify White House of Congressional",
+   "outlet": "VOCM",
+   "t": "Sat 5:59 a.m.",
+   "hot": true
   },
   {
    "city": "Beijing",
@@ -3689,16 +3412,16 @@
  "bigweek": [],
  "desks": [
   {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Sat 5:15 a.m.",
-   "iso": "2026-11-21T10:15:00+00:00",
-   "title": "Trump calls Xi and Putin a notable word, and we finally get ‘GTA VI’ after all: The news quiz",
-   "summary": "How closely have you been following the news about gatherings, games and generative AI?",
-   "outlet": "NBC News, Kyiv Independent, BBC News, Euronews, The Japan Times (Reuters), BNN Bloomberg, PBS NewsHour, CBC News",
-   "n": 8,
-   "url": "https://www.nbcnews.com/news/news-quiz/trump-xi-putin-gta-news-quiz-rcna610276",
-   "img": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-11/261120-news-quiz-grid-sjr-4f7efc.png"
+   "desk": "us",
+   "pic": "podium",
+   "t": "Sat 5:59 a.m.",
+   "iso": "2026-11-21T10:59:55+00:00",
+   "title": "Trump Orders Federal Contractors to Notify White House of Congressional",
+   "summary": "President Donald Trump signed an executive order on November 20, 2026, requiring federal contractors and subcontractors to notify the White House abou...",
+   "outlet": "VOCM, NBC News, Kyiv Independent, BBC News, Euronews, The Japan Times (Reuters), Toronto Star + ABC News, BNN Bloomberg, The Guardian, PBS NewsHour",
+   "n": 10,
+   "url": "https://vocm.com/2026/11/21/trump-orders-federal-contractors-to-notify-white-house-of-congressional/",
+   "img": "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/4023/files/2026/07/287884442-1200x675.jpg"
   },
   {
    "desk": "world",
@@ -3725,6 +3448,18 @@
    "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/8053/live/b01bb4f0-e556-11f1-ad51-c3505e495cd9.jpg"
   },
   {
+   "desk": "us",
+   "pic": "podium",
+   "t": "Fri 5:51 p.m.",
+   "iso": "2026-11-20T22:51:28.515000+00:00",
+   "title": "Trump threatens 'tremendous tax' on U.S. tech companies that build AI data centres in other countries",
+   "summary": "U.S. tech companies that build artificial intelligence data centers in other countries will face \"a tremendous tax,\" President Donald Trump said on Friday.",
+   "outlet": "CBC News + ABC News (AP), The Guardian, BBC News, VOCM, NBC News, The Hill",
+   "n": 6,
+   "url": "https://www.cbc.ca/news/world/ai-data-centres-us-tech-companies-trump-9.7430426",
+   "img": "https://i.cbc.ca/ais/835a0414-341d-444e-9dcb-17bb050c5d01,1795206527673/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C199%2C5616%2C3159%29%3BResize%3D620"
+  },
+  {
    "desk": "world",
    "pic": "globe",
    "t": "Sat 5:18 a.m.",
@@ -3735,30 +3470,6 @@
    "n": 5,
    "url": "https://www.euronews.com/2026/11/21/anthropic-worker-claims-to-have-solved-famed-167-year-old-maths-problem-with-help-of-ai",
    "img": ""
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Fri 7:34 p.m.",
-   "iso": "2026-11-21T00:34:00+00:00",
-   "title": "Fresh off China trip, Trump bobs and weaves in freewheeling news conference",
-   "summary": "Rather than sell the successes of his trip to the public, the president pivoted from the topic at hand.",
-   "outlet": "The Japan Times (Reuters), The Guardian, PBS NewsHour, CBC News + Toronto Star (AP), Global News",
-   "n": 5,
-   "url": "https://www.japantimes.co.jp/news/2026/11/21/world/politics/trump-freewheeling-news-conference/",
-   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/21/575291.JPG?v=3.1"
-  },
-  {
-   "desk": "us",
-   "pic": "podium",
-   "t": "Fri 5:51 p.m.",
-   "iso": "2026-11-20T22:51:28.515000+00:00",
-   "title": "Trump threatens 'tremendous tax' on U.S. tech companies that build AI data centres in other countries",
-   "summary": "U.S. tech companies that build artificial intelligence data centers in other countries will face \"a tremendous tax,\" President Donald Trump said on Friday.",
-   "outlet": "CBC News + ABC News (AP), The Guardian, BBC News, NBC News, The Hill",
-   "n": 5,
-   "url": "https://www.cbc.ca/news/world/ai-data-centres-us-tech-companies-trump-9.7430426",
-   "img": "https://i.cbc.ca/ais/835a0414-341d-444e-9dcb-17bb050c5d01,1795206527673/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C199%2C5616%2C3159%29%3BResize%3D620"
   },
   {
    "desk": "world",
@@ -3821,6 +3532,18 @@
    "img": "https://www.cp24.com/resizer/v2/QIJVT4OG7NGGBP3QYIK5WRCKYU.jpg?smart=true&auth=6a9fe27b3e361d4a8d338b5a631e0adf750fab306eb15c495cc91d99b149c8ee&width=1200&height=630"
   },
   {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Sat 6:08 a.m.",
+   "iso": "2026-11-21T11:08:31+00:00",
+   "title": "Strait of Hormuz attacks have increased to highest level since Iran war began",
+   "summary": "Reported Strait of Hormuz attacks have been higher in number in October and November than other months since the war between the U.S., Israel and Iran began, data shows.",
+   "outlet": "ABC News, Al Jazeera, Toronto Star (AP)",
+   "n": 3,
+   "url": "https://abcnews.com/International/strait-hormuz-attacks-increased-highest-level-iran-war/story?id=138304456",
+   "img": "https://i.abcnewsfe.com/a/029b6e86-e3ea-4a87-8c38-fb4db48ecfa1/hormuz-strike-ap-jt-261119_1795129033197_hpMain_16x9.jpg?w=1600"
+  },
+  {
    "desk": "us",
    "pic": "podium",
    "t": "Sat 6:00 a.m.",
@@ -3831,6 +3554,18 @@
    "n": 3,
    "url": "https://www.theguardian.com/us-news/2026/nov/21/democrats-florida-midterm-election-loss",
    "img": "https://i.guim.co.uk/img/media/2a8b141d0ac692a3128edbd0b58410a43425def6/1193_620_4227_3380/master/4227.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=56eb8af0b19db12a6e94c12a2b5b55dd"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Sat 5:26 a.m.",
+   "iso": "2026-11-21T10:26:36+00:00",
+   "title": "Denmark accuses Russia of plotting to assassinate US-Ukrainian rapper",
+   "summary": "The Russian embassy in Denmark has denied the allegation, which has led to Russia's defence attaché being expelled.",
+   "outlet": "BBC News, NBC News (AP), Kyiv Independent",
+   "n": 3,
+   "url": "https://www.bbc.co.uk/news/articles/cmde1lj4yjxno?at_medium=RSS&at_campaign=rss",
+   "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/9834/live/684cb9a0-e527-11f1-b32f-b1f1a32fbf0e.jpg"
   },
   {
    "desk": "business",
@@ -3929,18 +3664,6 @@
    "img": "https://i.cbc.ca/ais/e7be82db-c6a4-47b0-b535-48f6d02d5488,1795213793884/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C435%2C8356%2C4700%29%3BResize%3D620"
   },
   {
-   "desk": "us",
-   "pic": "podium",
-   "t": "Fri 6:55 p.m.",
-   "iso": "2026-11-20T23:55:24+00:00",
-   "title": "USDA releases decades of Bigfoot files, including 1982 Forest Service investigation in Washington state",
-   "summary": "The USDA's Bigfoot/Sasquatch Records include an official 1982 Forest Service probe into footprints in Washington state's Umatilla National Forest.",
-   "outlet": "Fox News, Toronto Star (AP)",
-   "n": 2,
-   "url": "https://www.foxnews.com/us/usda-releases-decades-bigfoot-files-1982-forest-service-investigation-washington-state",
-   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/bigfoot-happy-camp-klamath-forest.jpg"
-  },
-  {
    "desk": "politics",
    "pic": "parliament",
    "t": "Fri 5:00 p.m.",
@@ -3951,6 +3674,18 @@
    "n": 2,
    "url": "https://www.thestar.com/politics/federal/pierre-poilievre-says-he-won-t-resign-if-conservatives-lose-brantford-byelection/article_67342d13-a880-4f89-961f-b6bf8e97cfe5.html",
    "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/9/a6/9a663740-5457-51c8-9c58-c105787f32f1/6b00c1f259f8f.image.jpg?crop=1695%2C890%2C0%2C166&resize=1200%2C630&order=crop%2Cresize"
+  },
+  {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Sat 6:30 a.m.",
+   "iso": "2026-11-21T11:30:00+00:00",
+   "title": "Tower developer gets $4.6M tax break in return for below-market units",
+   "summary": "Ten per cent of the units in the 266-unit View Street rental building would be rented at about 30 per cent below the market rate.",
+   "outlet": "Times Colonist",
+   "n": 1,
+   "url": "https://www.timescolonist.com/local-news/tower-developer-gets-46m-tax-break-in-return-for-below-market-units-13042094",
+   "img": "https://www.vmcdn.ca/f/files/victoriatimescolonist/json/2026/11/web1_vka-construction-03345.jpg;w=1000;h=667;mode=crop"
   },
   {
    "desk": "politics",
@@ -4035,18 +3770,6 @@
    "n": 1,
    "url": "https://www.thestar.com/politics/provincial/ontario-liberal-leadership-live/article_1f6f280d-80d7-4d59-92d0-2087a8a883e7.html",
    "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/e/7b/e7bfbafe-8472-5ef4-abd0-f8494d25959f/6aff114af05f5.image.jpg?crop=1200%2C630%2C0%2C85"
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Sat 1:00 a.m.",
-   "iso": "2026-11-21T06:00:27+00:00",
-   "title": "Soil degradation could cost the EU up to €509 billion over its next budget, campaigners warn",
-   "summary": "Soil degradation could cost the EU between €286 billion and €509 billion over its next long-term budget if losses stay at current levels, campaign group Save Soil estimates, urging the bloc to pay farmers for measurable gains in soil health through its next farm subsidy scheme.",
-   "outlet": "Euronews",
-   "n": 1,
-   "url": "https://www.euronews.com/2026/11/21/soil-degradation-could-cost-the-eu-up-to-509-billion-over-its-next-budget-campaigners-warn",
-   "img": "https://images.euronews.com/articles/stories/09/99/93/21/1200x675_cmsv2_570404e8-813e-54cc-a5bf-e1610571f24e-9999321.jpg"
   }
  ],
  "reads": [
@@ -4200,6 +3923,26 @@
    ],
    "u": [
     ""
+   ]
+  },
+  {
+   "o": "Toronto Star",
+   "ca": true,
+   "h": [
+    "Toronto Star News - Breaking News Stories",
+    "Doug Ford urges Ottawa to ditch industrial carbon price to save Stellantis Brampton plant",
+    "Ford Canada ‘not going anywhere,’ national CEO says as Oakville assembly plant reopens",
+    "Pierre Poilievre says he won’t resign if Conservatives lose Brantford byelection",
+    "Two men convicted in the murder of a Canadian animation pioneer to be sentenced in Dominica",
+    "U.S. sanctions against ’Ndrangheta Mafia include Toronto-area funeral homes and alleged crime boss at centre of Star investigation"
+   ],
+   "u": [
+    "",
+    "https://www.thestar.com/politics/provincial/doug-ford-urges-ottawa-to-ditch-industrial-carbon-price-to-save-stellantis-brampton-plant/article_9dbe6c5e-6055-4515-9f88-255fff1e21f2.html",
+    "https://www.thestar.com/business/ford-not-going-anywhere-national-ceo-says-as-oakville-assembly-plant-reopens/article_f45d4eef-42c1-45f4-a93b-fd2f9a4da49e.html",
+    "https://www.thestar.com/politics/federal/pierre-poilievre-says-he-won-t-resign-if-conservatives-lose-brantford-byelection/article_67342d13-a880-4f89-961f-b6bf8e97cfe5.html",
+    "https://www.thestar.com/news/canada/two-men-convicted-in-the-murder-of-a-canadian-animation-pioneer-to-be-sentenced-in-dominica/article_b91e570c-dc9d-4068-b39e-4b9f8172d497.html",
+    "https://www.thestar.com/news/gta/u-s-sanctions-against-ndrangheta-include-owner-of-gta-funeral-homes-man-at-centre-of-star-investigation/article_d1aa04d4-dca2-47ff-95ac-ea278ce3fbe8.html"
    ]
   },
   {
@@ -4422,7 +4165,7 @@
     "url": "https://www.youtube.com/watch?v=wcY4K5CNVx4",
     "img": "https://i.ytimg.com/vi/wcY4K5CNVx4/hqdefault.jpg",
     "story": "Fox News All-American Christmas tree lighting",
-    "watching": "190",
+    "watching": "178",
     "reports": [
      {
       "outlet": "Fox News",
@@ -4440,7 +4183,7 @@
     "url": "https://www.youtube.com/watch?v=YhYAt1Hxe1U",
     "img": "https://i.ytimg.com/vi/YhYAt1Hxe1U/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "351",
+    "watching": "377",
     "rolling": true
    }
   ],
@@ -4501,6 +4244,20 @@
   }
  ],
  "related": {
+  "auto-9e14b5c4": {
+   "ties": [
+    "asia"
+   ],
+   "stories": [],
+   "views": [
+    {
+     "outlet": "Atlantic Council",
+     "kind": "Think tank",
+     "title": "Will Putin achieve by guile what Stalin achieved with millions of troops?",
+     "url": "https://www.atlanticcouncil.org/blogs/ukrainealert/will-putin-achieve-by-guile-what-stalin-achieved-with-millions-of-troops/"
+    }
+   ]
+  },
   "auto-aec14b1b": {
    "ties": [
     "Canadian auto jobs"
@@ -4546,18 +4303,27 @@
    "official": [],
    "views": []
   },
-  "auto-445a36fc": {
-   "story": "Trump turns White House press conference into a 2028 succession audition",
-   "us": true,
-   "specific": 1,
+  "auto-e1ee746b": {
+   "story": "Anthropic worker claims to have solved famed 167-year-old maths problem with help of AI",
+   "us": false,
+   "specific": 2,
    "stories": [
     {
-     "t": "Fri 11:02 a.m.",
-     "iso": "2026-11-20T16:02:27+00:00",
-     "outlet": "Daily Hive",
-     "title": "Here's how often Edmonton has had a white Christmas since 2000",
-     "url": "https://dailyhive.com/edmonton/how-often-edmonton-white-christmas-snow-since-2000-weather",
+     "t": "Thu 1:42 p.m.",
+     "iso": "2026-11-19T18:42:33+00:00",
+     "outlet": "The Logic",
+     "title": "Anthropic’s record IPO sets up a windfall for Canadian pension funds",
+     "url": "https://thelogic.co/news/anthropic-ipo-canada-pensions/",
      "ca": false,
+     "tie": ""
+    },
+    {
+     "t": "Thu 11:54 a.m.",
+     "iso": "2026-11-19T16:54:48+00:00",
+     "outlet": "BNN Bloomberg",
+     "title": "Anthropic is hiring a gas lead for Canada with a salary up to half a million dollars",
+     "url": "https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/11/19/anthropic-is-hiring-a-gas-lead-for-canada-with-a-salary-of-up-to-half-a-million-dollars/",
+     "ca": true,
      "tie": ""
     }
    ],
@@ -5433,5 +5199,12 @@
  "geo_blocked": [
   "-NabWfv-VdA"
  ],
- "noembed": []
+ "noembed": [
+  "IJs72_NHq3g",
+  "J3FV4iY8p5w",
+  "L6qtnHZxwEw",
+  "NuEr0Q_AS6U",
+  "ldElU-Q5Qyo",
+  "t_HBrWb84eY"
+ ]
 }
