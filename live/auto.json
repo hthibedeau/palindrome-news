@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-21T04:24:11.434659+00:00",
- "checkedLabel": "Fri 11:24 p.m.",
+ "checked": "2026-11-21T04:34:11.484896+00:00",
+ "checkedLabel": "Fri 11:34 p.m.",
  "stories": [
   {
    "key": "top",
@@ -30,6 +30,15 @@
   }
  ],
  "wire": [
+  [
+   "Fri 11:19 p.m.",
+   "U.S.",
+   "FBI investigating potential breach of its crime database",
+   "NBC News",
+   "https://www.nbcnews.com/politics/justice-department/fbi-investigating-potential-breach-crime-database-rcna610536",
+   "2026-11-21T04:19:51+00:00",
+   1
+  ],
   [
    "Fri 11:06 p.m.",
    "Latest",
@@ -245,15 +254,6 @@
    "https://www.thestar.com/news/world/climate-talks-in-overtime-as-nations-wrestle-with-response-to-worsening-global-warming/article_99cb9af3-06cb-5104-8631-3b13769ce979.html",
    "2026-11-21T02:09:25+00:00",
    1
-  ],
-  [
-   "Fri 9:08 p.m.",
-   "World",
-   "World leaders gather in Halifax for international security forum",
-   "CTV News",
-   "https://www.ctvnews.ca/canada/article/world-leaders-gather-in-halifax-for-international-security-forum/",
-   "2026-11-21T02:08:00+00:00",
-   2
   ]
  ],
  "blogs": [
@@ -349,21 +349,11 @@
    "theme": ""
   },
   {
-   "score": 9,
+   "score": 8,
    "title": "Flurry of luxury mansion sales this fall in West Vancouver",
    "url": "https://www.timescolonist.com/real-estate/flurry-of-luxury-mansion-sales-this-fall-in-west-vancouver-13029554",
-   "outlets": 7,
+   "outlets": 6,
    "why": [],
-   "theme": ""
-  },
-  {
-   "score": 8,
-   "title": "The ‘bluenami’ message was sent, Trump’s ignoring it",
-   "url": "https://www.hilltimes.com/2026/11/16/the-bluenami-message-was-sent-trumps-ignoring-it/525985/",
-   "outlets": 4,
-   "why": [
-    "National Newswatch #14"
-   ],
    "theme": ""
   },
   {
@@ -372,6 +362,16 @@
    "url": "https://winnipeg.citynews.ca/2026/11/20/cadbury-chocolate-bar-recalled-due-to-undeclared-pistachio/",
    "outlets": 8,
    "why": [],
+   "theme": ""
+  },
+  {
+   "score": 6,
+   "title": "The ‘bluenami’ message was sent, Trump’s ignoring it",
+   "url": "https://www.hilltimes.com/2026/11/16/the-bluenami-message-was-sent-trumps-ignoring-it/525985/",
+   "outlets": 2,
+   "why": [
+    "National Newswatch #14"
+   ],
    "theme": ""
   },
   {
@@ -387,6 +387,17 @@
  ],
  "canada": [
   {
+   "t": "Fri 11:23 p.m.",
+   "iso": "2026-11-21T04:23:24.267000+00:00",
+   "region": "Ontario",
+   "title": "Child attacked by coyote at Edwards Gardens in Toronto, police say",
+   "summary": "Police are warning the public after a coyote attacked a child in a northeast Toronto park this week.",
+   "outlet": "CBC News, CP24",
+   "n": 2,
+   "url": "https://www.cbc.ca/news/canada/toronto/edward-gardens-coyote-attack-child-toronto-police-9.7430082",
+   "img": "https://i.cbc.ca/ais/29a07f1d-350c-408a-8aff-dd6e5cb47106,1795206775818/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C464%2C4032%2C2268%29%3BResize%3D620"
+  },
+  {
    "t": "Fri 11:00 p.m.",
    "iso": "2026-11-21T04:00:00+00:00",
    "region": "New Brunswick",
@@ -396,17 +407,6 @@
    "n": 1,
    "url": "https://www.cbc.ca/news/canada/new-brunswick/students-push-back-as-n-b-high-schools-prepare-for-full-cellphone-ban-9.7430433",
    "img": "https://i.cbc.ca/ais/1.5054106,1724797983000/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C39%2C5472%2C3078%29%3BResize%3D620"
-  },
-  {
-   "t": "Fri 10:35 p.m.",
-   "iso": "2026-11-21T03:35:38.966000+00:00",
-   "region": "Ontario",
-   "title": "University of Ottawa contract professor charged with voyeurism offences in downtown Ottawa",
-   "summary": "The University of Ottawa says one of its contract professors has been arrested and charged following a police investigation into alleged voyeuristic behaviour.",
-   "outlet": "CBC News, Ottawa Citizen",
-   "n": 2,
-   "url": "https://www.cbc.ca/news/canada/ottawa/ottawa-university-of-ottawa-contract-professor-charged-voyeurism-offences-9.7431132",
-   "img": "https://i.cbc.ca/ais/1.6668797,1694463377000/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C2%2C1195%2C672%29%3BResize%3D620"
   },
   {
    "t": "Fri 8:50 p.m.",
@@ -592,12 +592,12 @@
    {
     "key": "auto-2dbd6be2",
     "words": [
+     "productive",
      "stellantis",
      "officials",
      "brampton",
      "meeting",
-     "plant",
-     "ford"
+     "plant"
     ],
     "score": 17,
     "outlets": 4,
@@ -878,18 +878,26 @@
     "scoop_why": "Exclusive: Toronto Star reported it from its own sources (Fri 6:30 p.m.); credited and led with its report.",
     "videos": [
      {
-      "net": "CTV News",
-      "url": "https://www.youtube.com/watch?v=c1ctuQHMXHU",
-      "title": "‘We are in slim hope territory’: Reid on possibility of reversing Stellantis plant sale",
-      "img": "https://i.ytimg.com/vi/c1ctuQHMXHU/hqdefault.jpg",
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=gTrDKC7uuCM",
+      "title": "'We deserve answers,' says laid-off Stellantis worker | Hanomansing Live",
+      "img": "https://i.ytimg.com/vi/gTrDKC7uuCM/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "CTV News",
-      "url": "https://www.youtube.com/watch?v=X7e29Cl5Gq0",
-      "title": "Showdown with Stellantis to protect workers | CTV News Windsor at 6, Fri. Nov. 20, 2026",
-      "img": "https://i.ytimg.com/vi/X7e29Cl5Gq0/hqdefault.jpg",
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=8VWN2mnHc-I",
+      "title": "A 'tiny bit of a door open' for feds to stop sale of Stellantis plant: Unifor | Power & Politics",
+      "img": "https://i.ytimg.com/vi/8VWN2mnHc-I/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=Jbx5sHvGK6Y",
+      "title": "Ottawa, Ontario announce investment in Oakville's Ford auto plant ahead of Stellantis meeting",
+      "img": "https://i.ytimg.com/vi/Jbx5sHvGK6Y/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
@@ -900,332 +908,147 @@
       "img": "https://i.ytimg.com/vi/FNlJJLpy2yA/hqdefault.jpg",
       "rec": false,
       "up": ""
-     },
-     {
-      "net": "CBC News",
-      "url": "https://www.youtube.com/watch?v=gTrDKC7uuCM",
-      "title": "'We deserve answers,' says laid-off Stellantis worker | Hanomansing Live",
-      "img": "https://i.ytimg.com/vi/gTrDKC7uuCM/hqdefault.jpg",
-      "rec": false,
-      "up": ""
      }
     ]
    },
    {
-    "key": "auto-35a6059b",
+    "key": "auto-3075da18",
     "words": [
-     "palisades",
-     "angeles",
-     "los"
+     "doerkson",
+     "lorne",
+     "b.c"
     ],
-    "score": 11,
-    "outlets": 7,
-    "carriers": 11,
+    "score": 5,
+    "outlets": 3,
+    "carriers": 3,
     "tag": "Developing",
-    "title": "Federal jury convicts man of starting the deadly 2025 Palisades Fire in Los Angeles",
-    "url": "https://www.cp24.com/news/world/2026/11/21/federal-jury-convicts-man-of-starting-the-deadly-2025-palisades-fire-in-los-angeles/",
-    "outlet": "CP24",
-    "t": "Fri 7:54 p.m.",
-    "iso": "2026-11-21T00:54:51+00:00",
-    "summary": "The man accused of sparking last year’s deadly Palisades Fire was found guilty of arson charges Friday after his first federal case earlier this year ended in a mistrial.",
+    "title": "Premier Lorne Doerkson cites Newton SkyTrain extension 'commitment' in naming Surrey MLA to TransLink role",
+    "url": "https://dailyhive.com/vancouver/premier-lorne-doerkson-newton-skytrain-extension-november-2026",
+    "outlet": "Daily Hive",
+    "t": "Fri 9:36 p.m.",
+    "iso": "2026-11-21T02:36:59+00:00",
+    "summary": "Premier Lorne Doerkson says his new Conservative government will follow through on building the Newton SkyTrain extension in Surrey.",
     "first": {
-     "outlet": "NBC News",
-     "url": "https://www.nbcnews.com/news/us-news/pacific-palisades-fire-retrial-jonathan-rinderknecht-rcna610336",
-     "t": "Fri 5:51 p.m.",
-     "title": "Man found guilty of starting deadly Palisades Fire in Los Angeles",
-     "iso": "2026-11-20T22:51:54+00:00"
+     "outlet": "CBC News",
+     "url": "https://www.cbc.ca/news/canada/british-columbia/premier-cabinet-sworn-in-conservative-9.7429384",
+     "t": "Fri 6:42 p.m.",
+     "title": "Premier Lorne Doerkson sworn in alongside 1st B.C. Conservative cabinet",
+     "iso": "2026-11-20T23:42:43.812000+00:00"
     },
-    "newest": "2026-11-21T02:02:18+00:00",
+    "newest": "2026-11-21T02:36:59+00:00",
     "photo": {
-     "src": "live/img/auto-35a6059b-12232b19f1.jpg",
-     "orig": "https://www.cp24.com/resizer/v2/D5XU5DPN3V4TPRT2T5V6YV6TXE.jpg?smart=true&auth=dd0a59f73bdd1913b706bbddf7864c15494161b6e4a9c9feaf88c7c875092512&width=1200&height=630",
-     "caption": "Water is dropped by helicopter on the advancing Palisades Fire in the Pacific Palisades neighborhood of Los Angeles, Jan. 7, 2025. (AP Photo/Etienne Laurent, File). — via CP24",
-     "alt": "Water is dropped by helicopter on the advancing Palisades Fire in the Pacific Palisades neighborhood of Los Angeles, Jan. 7, 2025. (AP Photo/Etienne Laurent, Fi",
-     "outlet": "CP24",
-     "url": "https://www.cp24.com/news/world/2026/11/21/federal-jury-convicts-man-of-starting-the-deadly-2025-palisades-fire-in-los-angeles/",
-     "since": "2026-11-21T04:26:03.460893+00:00"
+     "src": "live/img/auto-3075da18-3dcfcd47fa.jpg",
+     "orig": "https://images-dh-production-baselayer.dailyhive.com/uploads/2026/11/surrey-langley-skytrain-fraser-highway-construction-february-2026-f.jpg?format=auto",
+     "caption": "From: Premier Lorne Doerkson cites Newton SkyTrain extension 'commitment' in naming Surrey MLA to TransLink role. — via Daily Hive",
+     "alt": "Premier Lorne Doerkson cites Newton SkyTrain extension 'commitment' in naming Surrey MLA to TransLink role",
+     "outlet": "Daily Hive",
+     "url": "https://dailyhive.com/vancouver/premier-lorne-doerkson-newton-skytrain-extension-november-2026",
+     "since": "2026-11-21T04:36:17.259429+00:00"
     },
     "photo_seen": [
-     "https://www.cp24.com/resizer/v2/D5XU5DPN3V4TPRT2T5V6YV6TXE.jpg?smart=true&auth=dd0a59f73bdd1913b706bbddf7864c15494161b6e4a9c9feaf88c7c875092512&width=1200&height=630"
+     "https://images-dh-production-baselayer.dailyhive.com/uploads/2026/11/surrey-langley-skytrain-fraser-highway-construction-february-2026-f.jpg?format=auto"
     ],
     "photos": [
      {
-      "src": "live/img/auto-35a6059b-12232b19f1.jpg",
-      "orig": "https://www.cp24.com/resizer/v2/D5XU5DPN3V4TPRT2T5V6YV6TXE.jpg?smart=true&auth=dd0a59f73bdd1913b706bbddf7864c15494161b6e4a9c9feaf88c7c875092512&width=1200&height=630",
-      "caption": "Water is dropped by helicopter on the advancing Palisades Fire in the Pacific Palisades neighborhood of Los Angeles, Jan. 7, 2025. (AP Photo/Etienne Laurent, File). — via CP24",
-      "alt": "Water is dropped by helicopter on the advancing Palisades Fire in the Pacific Palisades neighborhood of Los Angeles, Jan. 7, 2025. (AP Photo/Etienne Laurent, Fi",
-      "outlet": "CP24",
-      "url": "https://www.cp24.com/news/world/2026/11/21/federal-jury-convicts-man-of-starting-the-deadly-2025-palisades-fire-in-los-angeles/"
+      "src": "live/img/auto-3075da18-3dcfcd47fa.jpg",
+      "orig": "https://images-dh-production-baselayer.dailyhive.com/uploads/2026/11/surrey-langley-skytrain-fraser-highway-construction-february-2026-f.jpg?format=auto",
+      "caption": "From: Premier Lorne Doerkson cites Newton SkyTrain extension 'commitment' in naming Surrey MLA to TransLink role. — via Daily Hive",
+      "alt": "Premier Lorne Doerkson cites Newton SkyTrain extension 'commitment' in naming Surrey MLA to TransLink role",
+      "outlet": "Daily Hive",
+      "url": "https://dailyhive.com/vancouver/premier-lorne-doerkson-newton-skytrain-extension-november-2026"
      },
      {
-      "src": "live/img/auto-35a6059b-e590021539.jpg",
-      "orig": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/06/25/bcceb9e4-fcb2-4ffb-a586-781e3cff6fb7/thumbnail/1200x630/b7a3fbd6ef66b025cdd05441563a093e/bill-robles-sketch-of-rinderk.jpg",
-      "caption": "From: Jonathan Rinderknecht found guilty in Palisades Fire case. — via CBS News",
-      "alt": "Jonathan Rinderknecht found guilty in Palisades Fire case",
-      "outlet": "CBS News",
-      "url": "https://www.cbsnews.com/news/jonathan-rinderknecht-found-guilty-in-palisades-fire-case/"
+      "src": "live/img/auto-3075da18-39fcd9b410.jpg",
+      "orig": "https://globalnews.ca/wp-content/uploads/2026/11/2003bcc2bff49d720bc89ca63a5b549669481788eeb95e240eaa78d3c5357f08.jpg?quality=65&strip=all&w=720&h=379&crop=1",
+      "caption": "Premier-designate Lorne Doerkson shakes hands with fellow MLAs ahead of a swearing-in ceremony in the chamber at legislature in Victoria, on Thursday, Nov. 19, 2026. THE CANADIAN PRESS/Chad Hipolito. — via Global News",
+      "alt": "Premier-designate Lorne Doerkson shakes hands with fellow MLAs ahead of a swearing-in ceremony in the chamber at legislature in Victoria, on Thursday, Nov. 19, ",
+      "outlet": "Global News",
+      "url": "https://globalnews.ca/news/12159369/lorne-doerkson-swearing-in/"
      },
      {
-      "src": "live/img/auto-35a6059b-d127637381.jpg",
-      "orig": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/mpx/2704722219/2026_11/1795225805580_now_topstory_man_guikty_palisades_fire_261120_S3_1920x1080-gv7a6d.jpg",
-      "caption": "From: California man found guilty of starting deadly Palisades Fire. — via NBC News",
-      "alt": "California man found guilty of starting deadly Palisades Fire",
-      "outlet": "NBC News",
-      "url": "https://www.nbcnews.com/video/california-man-found-guilty-of-starting-deadly-palisades-fire-273941061702"
-     },
-     {
-      "src": "live/img/auto-35a6059b-0ee441cce2.jpg",
-      "orig": "https://i.abcnewsfe.com/a/a9512f4c-fd08-4027-be63-50389c9f684e/Rinderknecht-ap-er-261120_1795217240993_hpMain_16x9.jpg?w=1600",
-      "caption": "From: Man accused of starting blaze that became Palisades Fire found guilty of arson. — via ABC News",
-      "alt": "Man accused of starting blaze that became Palisades Fire found guilty of arson",
-      "outlet": "ABC News",
-      "url": "https://abcnews.com/US/man-accused-starting-blaze-palisades-fire-found-guilty/story?id=138333631"
+      "src": "live/img/auto-3075da18-8368b8bc04.jpg",
+      "orig": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/d086a56ada7e2c038908e8130a47feb845f181f33cacfd7bd47cf654f65dbae7.jpg;w=1200;h=800;mode=crop",
+      "caption": "From: Promises of new B.C. government are a 'gargantuan' task, Doerkson says. — via Times Colonist",
+      "alt": "Promises of new B.C. government are a 'gargantuan' task, Doerkson says",
+      "outlet": "Times Colonist",
+      "url": "https://www.timescolonist.com/the-mix/promises-of-new-bc-government-are-a-gargantuan-task-doerkson-says-13044143"
      }
     ],
-    "independent": 7,
+    "independent": 3,
     "reports": [
      {
-      "t": "Fri 9:02 p.m.",
-      "iso": "2026-11-21T02:02:18+00:00",
-      "outlet": "CBS News",
-      "title": "Jonathan Rinderknecht found guilty in Palisades Fire case",
-      "url": "https://www.cbsnews.com/news/jonathan-rinderknecht-found-guilty-in-palisades-fire-case/",
-      "desc": "A Los Angeles County jury has found Jonathan Rinderknecht guilty of starting a blaze that erupted into the deadly and destructive Palisades Fire in 2025."
+      "t": "Fri 9:36 p.m.",
+      "iso": "2026-11-21T02:36:59+00:00",
+      "outlet": "Daily Hive",
+      "title": "Premier Lorne Doerkson cites Newton SkyTrain extension 'commitment' in naming Surrey MLA to TransLink role",
+      "url": "https://dailyhive.com/vancouver/premier-lorne-doerkson-newton-skytrain-extension-november-2026",
+      "desc": "Premier Lorne Doerkson says his new Conservative government will follow through on building the Newton SkyTrain extension in Surrey."
      },
      {
-      "t": "Fri 8:50 p.m.",
-      "iso": "2026-11-21T01:50:11+00:00",
-      "outlet": "NBC News",
-      "title": "California man found guilty of starting deadly Palisades Fire",
-      "url": "https://www.nbcnews.com/video/california-man-found-guilty-of-starting-deadly-palisades-fire-273941061702",
-      "desc": "A California jury found a man guilty of starting the devastating 2025 Palisades Fire in Los Angeles that displaced thousands of people and became the most destructive wildfire in Los Angeles city history. NBC News' Steve Patterson has the details."
-     },
-     {
-      "t": "Fri 8:43 p.m.",
-      "iso": "2026-11-21T01:43:15+00:00",
-      "outlet": "The Guardian",
-      "title": "Man accused of sparking deadly Los Angeles wildfire found guilty",
-      "url": "https://www.theguardian.com/us-news/2026/nov/20/los-angeles-palisades-wildfire-trial-verdict",
-      "desc": "Verdict in case against former Uber driver Jonathan Rinderknecht comes after first trial ended with hung jury"
-     },
-     {
-      "t": "Fri 8:30 p.m.",
-      "iso": "2026-11-21T01:30:51+00:00",
-      "outlet": "The Hill",
-      "title": "California man found guilty of sparking blaze that became deadly Palisades Fire",
-      "url": "https://thehill.com/homenews/state-watch/6234829-uber-driver-palisades-fire-conviction/",
-      "desc": ""
-     },
-     {
-      "t": "Fri 7:59 p.m.",
-      "iso": "2026-11-21T00:59:34+00:00",
-      "outlet": "ABC News",
-      "title": "Man accused of starting blaze that became Palisades Fire found guilty of arson",
-      "url": "https://abcnews.com/US/man-accused-starting-blaze-palisades-fire-found-guilty/story?id=138333631",
-      "desc": "The defendant was found guilty of two arson counts during a retrial."
-     },
-     {
-      "t": "Fri 7:54 p.m.",
-      "iso": "2026-11-21T00:54:51+00:00",
-      "outlet": "CTV News",
-      "title": "Federal jury convicts man of starting the deadly 2025 Palisades Fire in Los Angeles",
-      "url": "https://www.ctvnews.ca/world/article/federal-jury-convicts-man-of-starting-the-deadly-2025-palisades-fire-in-los-angeles/",
-      "desc": "The man accused of sparking last year’s deadly Palisades Fire was found guilty of arson charges Friday after his first federal case earlier this year ended in a mistrial."
-     },
-     {
-      "t": "Fri 7:54 p.m.",
-      "iso": "2026-11-21T00:54:51+00:00",
-      "outlet": "CP24",
-      "title": "Federal jury convicts man of starting the deadly 2025 Palisades Fire in Los Angeles",
-      "url": "https://www.cp24.com/news/world/2026/11/21/federal-jury-convicts-man-of-starting-the-deadly-2025-palisades-fire-in-los-angeles/",
-      "desc": ""
-     },
-     {
-      "t": "Fri 7:31 p.m.",
-      "iso": "2026-11-21T00:31:48+00:00",
+      "t": "Fri 7:43 p.m.",
+      "iso": "2026-11-21T00:43:42+00:00",
       "outlet": "Times Colonist",
-      "title": "Federal jury convicts man of starting the deadly 2025 Palisades Fire in Los Angeles",
-      "url": "https://www.timescolonist.com/world-news/federal-jury-convicts-man-of-starting-the-deadly-2025-palisades-fire-in-los-angeles-13044528",
-      "desc": "LOS ANGELES (AP) — The man accused of sparking last year’s deadly Palisades Fire was found guilty of arson charges Friday after his first federal case earlier this year ended in a mistrial ."
+      "title": "Promises of new B.C. government are a 'gargantuan' task, Doerkson says",
+      "url": "https://www.timescolonist.com/the-mix/promises-of-new-bc-government-are-a-gargantuan-task-doerkson-says-13044143",
+      "desc": "VICTORIA — British Columbia has a new Conservative government after almost a century, along with a premier and a novice cabinet that now needs to fulfil a long list of promises made by Lorne Doerkson during the election campaign."
      },
      {
-      "t": "Fri 7:01 p.m.",
-      "iso": "2026-11-21T00:01:50+00:00",
-      "outlet": "PBS NewsHour",
-      "title": "Federal jury convicts man of starting deadly 2025 Palisades Fire in Los Angeles",
-      "url": "https://www.pbs.org/newshour/nation/federal-jury-convicts-man-of-starting-deadly-2025-palisades-fire-in-los-angeles",
-      "desc": ""
-     },
-     {
-      "t": "Fri 6:10 p.m.",
-      "iso": "2026-11-20T23:10:38+00:00",
-      "outlet": "Fox News",
-      "title": "Verdict reached in Los Angeles retrial over 2025 Pacific Palisades wildfire that killed 12 people",
-      "url": "https://www.foxnews.com/us/verdict-reached-los-angeles-retrial-2025-pacific-palisades-wildfire-killed-12-people",
-      "desc": ""
-     },
-     {
-      "t": "Fri 6:07 p.m.",
-      "iso": "2026-11-20T23:07:51+00:00",
-      "outlet": "Toronto Star",
-      "title": "Federal jury convicts man of starting the deadly 2025 Palisades Fire in Los Angeles",
-      "url": "https://www.thestar.com/news/world/united-states/federal-jury-convicts-man-of-starting-the-deadly-2025-palisades-fire-in-los-angeles/article_ac15c5da-0955-5462-a3e8-25c67a99c1a1.html",
-      "desc": ""
+      "t": "Fri 6:42 p.m.",
+      "iso": "2026-11-20T23:42:43.812000+00:00",
+      "outlet": "CBC News",
+      "title": "Premier Lorne Doerkson sworn in alongside 1st B.C. Conservative cabinet",
+      "url": "https://www.cbc.ca/news/canada/british-columbia/premier-cabinet-sworn-in-conservative-9.7429384",
+      "desc": "Lorne Doerkson announced his cabinet Friday after being sworn in as B.C.'s 38th premier by Lt.-Gov. Wendy Cocchia. It is the first time the B.C. Conservative Party has been elected to government in more than 100 years."
      }
     ],
     "sources": [
      {
-      "t": "Fri 9:02 p.m.",
+      "t": "Fri 9:36 p.m.",
       "primary": false,
-      "outlet": "CBS News",
-      "title": "Jonathan Rinderknecht found guilty in Palisades Fire case",
-      "url": "https://www.cbsnews.com/news/jonathan-rinderknecht-found-guilty-in-palisades-fire-case/",
-      "desc": "A Los Angeles County jury has found Jonathan Rinderknecht guilty of starting a blaze that erupted into the deadly and destructive Palisades Fire in 2025.",
+      "outlet": "Daily Hive",
+      "title": "Premier Lorne Doerkson cites Newton SkyTrain extension 'commitment' in naming Surrey MLA to TransLink role",
+      "url": "https://dailyhive.com/vancouver/premier-lorne-doerkson-newton-skytrain-extension-november-2026",
+      "desc": "Premier Lorne Doerkson says his new Conservative government will follow through on building the Newton SkyTrain extension in Surrey.",
       "wire": "",
       "by": [
        {
-        "outlet": "CBS News",
-        "src": "CBS News",
-        "byline": "own staff: producer"
+        "outlet": "Daily Hive",
+        "src": "Daily Hive",
+        "byline": "[{\"@type\":\"Person\",\"name\":\"Kenneth Chan\",}] "
        }
       ],
       "copies": []
      },
      {
-      "t": "Fri 8:50 p.m.",
+      "t": "Fri 7:43 p.m.",
       "primary": false,
-      "outlet": "NBC News",
-      "title": "California man found guilty of starting deadly Palisades Fire",
-      "url": "https://www.nbcnews.com/video/california-man-found-guilty-of-starting-deadly-palisades-fire-273941061702",
-      "desc": "A California jury found a man guilty of starting the devastating 2025 Palisades Fire in Los Angeles that displaced thousands of people and became the most destructive wildfire in Los Angeles city history. NBC News' Steve Patterson has the details.",
-      "wire": "",
+      "outlet": "Times Colonist",
+      "title": "Promises of new B.C. government are a 'gargantuan' task, Doerkson says",
+      "url": "https://www.timescolonist.com/the-mix/promises-of-new-bc-government-are-a-gargantuan-task-doerkson-says-13044143",
+      "desc": "VICTORIA — British Columbia has a new Conservative government after almost a century, along with a premier and a novice cabinet that now needs to fulfil a long list of promises made by Lorne Doerkson during the election campaign.",
+      "wire": "The Canadian Press",
       "by": [
-       {
-        "outlet": "NBC News",
-        "src": "NBC News",
-        "byline": "\"NBCNews.com\" [{\"@context\":\"https://schema.org/\",\"@type\":\"NewsMediaOrganization\",\"name\":\"NBC News\",}] \"mps\" "
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Fri 8:43 p.m.",
-      "primary": false,
-      "outlet": "The Guardian",
-      "title": "Man accused of sparking deadly Los Angeles wildfire found guilty",
-      "url": "https://www.theguardian.com/us-news/2026/nov/20/los-angeles-palisades-wildfire-trial-verdict",
-      "desc": "Verdict in case against former Uber driver Jonathan Rinderknecht comes after first trial ended with hung jury",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "The Guardian",
-        "src": "The Guardian",
-        "byline": "[{\"@type\":\"Person\",\"name\":\"Uwa Ede-Osifo\",}] \"Uwa Ede-Osifo\" \"Uwa Ede-Osifo\" https://www.theguardian.com/profile/uwa-ede"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Fri 8:30 p.m.",
-      "primary": false,
-      "outlet": "The Hill",
-      "title": "California man found guilty of sparking blaze that became deadly Palisades Fire",
-      "url": "https://thehill.com/homenews/state-watch/6234829-uber-driver-palisades-fire-conviction/",
-      "desc": "px-captcha",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "The Hill",
-        "src": "The Hill",
-        "byline": ""
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Fri 7:59 p.m.",
-      "primary": false,
-      "outlet": "ABC News",
-      "title": "Man accused of starting blaze that became Palisades Fire found guilty of arson",
-      "url": "https://abcnews.com/US/man-accused-starting-blaze-palisades-fire-found-guilty/story?id=138333631",
-      "desc": "The defendant was found guilty of two arson counts during a retrial.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "ABC News",
-        "src": "ABC News",
-        "byline": "[{\"name\":\"Alex Stone\",,\"@type\":\"Person\"},{\"name\":\"Meredith Deliso\",,\"@type\":\"Person\"}] \"Alex Stone, Meredith Deliso\" [{\""
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Fri 6:07 p.m.",
-      "primary": false,
-      "outlet": "Toronto Star",
-      "title": "Federal jury convicts man of starting the deadly 2025 Palisades Fire in Los Angeles",
-      "url": "https://www.thestar.com/news/world/united-states/federal-jury-convicts-man-of-starting-the-deadly-2025-palisades-fire-in-los-angeles/article_ac15c5da-0955-5462-a3e8-25c67a99c1a1.html",
-      "desc": "LOS ANGELES (AP) — The man accused of sparking last year’s deadly Palisades Fire was found guilty of arson charges Friday after his first federal case earlier this year ended",
-      "wire": "The Associated Press",
-      "by": [
-       {
-        "outlet": "Toronto Star",
-        "src": "The Associated Press",
-        "byline": "\"Jaimie Ding The Associated Press\" \"Jaimie Ding The A"
-       },
-       {
-        "outlet": "PBS NewsHour",
-        "src": "The Associated Press",
-        "byline": "Jaimie Ding, Associated Press"
-       },
        {
         "outlet": "Times Colonist",
-        "src": "The Associated Press",
-        "byline": "\"Jaimie Ding, The Associated Press\" \r\n             \r\nJ"
-       },
-       {
-        "outlet": "CTV News",
         "src": "The Canadian Press",
-        "byline": "Yamoah\" \"Devika Desai\" \"Reuters\" \"AFP\" \"The Canadian Press\" \"The Canadian Pres"
-       },
-       {
-        "outlet": "CP24",
-        "src": "The Associated Press",
-        "byline": "\"@type\": \"Person\",\n      \"name\": \"The  Associated Press\",\n      \n    }\n  ]"
+        "byline": "\"Wolfgang Depner, The Canadian Press\" \r\n             \r\nW"
        }
       ],
-      "copies": [
-       {
-        "outlet": "PBS NewsHour",
-        "url": "https://www.pbs.org/newshour/nation/federal-jury-convicts-man-of-starting-deadly-2025-palisades-fire-in-los-angeles"
-       },
-       {
-        "outlet": "Times Colonist",
-        "url": "https://www.timescolonist.com/world-news/federal-jury-convicts-man-of-starting-the-deadly-2025-palisades-fire-in-los-angeles-13044528"
-       },
-       {
-        "outlet": "CTV News",
-        "url": "https://www.ctvnews.ca/world/article/federal-jury-convicts-man-of-starting-the-deadly-2025-palisades-fire-in-los-angeles/"
-       },
-       {
-        "outlet": "CP24",
-        "url": "https://www.cp24.com/news/world/2026/11/21/federal-jury-convicts-man-of-starting-the-deadly-2025-palisades-fire-in-los-angeles/"
-       }
-      ]
+      "copies": []
      },
      {
-      "t": "Fri 6:10 p.m.",
+      "t": "Fri 6:42 p.m.",
       "primary": false,
-      "outlet": "Fox News",
-      "title": "Verdict reached in Los Angeles retrial over 2025 Pacific Palisades wildfire that killed 12 people",
-      "url": "https://www.foxnews.com/us/verdict-reached-los-angeles-retrial-2025-pacific-palisades-wildfire-killed-12-people",
-      "desc": "Jonathan Rinderknecht was convicted of federal arson in the Pacific Palisades fire that killed 12 and destroyed nearly 7,000 homes after a mistrial.",
+      "outlet": "CBC News",
+      "title": "Premier Lorne Doerkson sworn in alongside 1st B.C. Conservative cabinet",
+      "url": "https://www.cbc.ca/news/canada/british-columbia/premier-cabinet-sworn-in-conservative-9.7429384",
+      "desc": "Lorne Doerkson announced his cabinet Friday after being sworn in as B.C.'s 38th premier by Lt.-Gov. Wendy Cocchia. It is the first time the B.C. Conservative Party has been elected to government in more than 100 years.",
       "wire": "",
       "by": [
        {
-        "outlet": "Fox News",
-        "src": "Fox News",
-        "byline": "own staff: reporter"
+        "outlet": "CBC News",
+        "src": "CBC",
+        "byline": ""
        }
       ],
       "copies": []
@@ -1234,21 +1057,43 @@
     "replaces_top": false,
     "events": [],
     "theme": "",
-    "canada": "none",
+    "canada": "canadian",
     "canus": false,
     "incoherent": false,
-    "popular": 0,
+    "popular": 4,
     "us_election": false,
-    "fronts": 2,
+    "fronts": 0,
     "fronts_ca": 0,
-    "fronts_who": [
-     "NBC News",
-     "ABC News"
-    ],
-    "outled_ca": 3,
-    "judgment": "national",
-    "judgment_why": "National: affects many people; carried across the country (national desks).",
-    "weight": 34.5
+    "fronts_who": [],
+    "judgment": "regional",
+    "judgment_why": "Regional: affects many people; carried only by British-Columbia desks.",
+    "weight": 24.5,
+    "videos": [
+     {
+      "net": "Global News",
+      "url": "https://www.youtube.com/watch?v=UnHgZkwSFS4",
+      "title": "New BC premier Lorne Doerkson and his cabinet officially sworn in",
+      "img": "https://i.ytimg.com/vi/UnHgZkwSFS4/hqdefault.jpg",
+      "rec": true,
+      "up": ""
+     },
+     {
+      "net": "CPAC",
+      "url": "https://www.youtube.com/watch?v=lKQFCaMrP70",
+      "title": "Swearing-in ceremony for B.C. Premier-Designate Lorne Doerkson, cabinet – November 20, 2026",
+      "img": "https://i.ytimg.com/vi/lKQFCaMrP70/hqdefault.jpg",
+      "rec": true,
+      "up": ""
+     },
+     {
+      "net": "CityNews",
+      "url": "https://www.youtube.com/watch?v=BGTTntDwvo4",
+      "title": "Lorne Doerkson is officially B.C.’s 38th premier, unveils new cabinet",
+      "img": "https://i.ytimg.com/vi/BGTTntDwvo4/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     }
+    ]
    }
   ],
   "considered": [
@@ -1276,9 +1121,28 @@
     "why_judged": "National: affects many people; carried across the country (national desks)."
    },
    {
+    "title": "Premier Lorne Doerkson cites Newton SkyTrain extension 'commitment' in naming Surrey MLA to TransLink role",
+    "url": "https://dailyhive.com/vancouver/premier-lorne-doerkson-newton-skytrain-extension-november-2026",
+    "rank": 2,
+    "live": "",
+    "weight": 24.5,
+    "score": 5,
+    "independent": 3,
+    "most_read": 4,
+    "canada": "canadian",
+    "theme": "",
+    "top": true,
+    "fronts": 0,
+    "fronts_who": [],
+    "rule": "Canadian, still developing",
+    "carriers": 3,
+    "judgment": "regional",
+    "why_judged": "Regional: affects many people; carried only by British-Columbia desks."
+   },
+   {
     "title": "Federal jury convicts man of starting the deadly 2025 Palisades Fire in Los Angeles",
     "url": "https://www.cp24.com/news/world/2026/11/21/federal-jury-convicts-man-of-starting-the-deadly-2025-palisades-fire-in-los-angeles/",
-    "rank": 2,
+    "rank": 3,
     "live": "",
     "weight": 34.5,
     "score": 11,
@@ -1286,7 +1150,7 @@
     "most_read": 0,
     "canada": "none",
     "theme": "",
-    "top": true,
+    "top": false,
     "fronts": 2,
     "fronts_who": [
      "NBC News",
@@ -1300,7 +1164,7 @@
    {
     "title": "Judge approves $7.25bn settlement for Roundup weedkiller cancer claims",
     "url": "https://www.bbc.co.uk/news/articles/cwvg21gyl650o?at_medium=RSS&at_campaign=rss",
-    "rank": 3,
+    "rank": 4,
     "live": "",
     "weight": 15.5,
     "score": 5,
@@ -1319,10 +1183,10 @@
    {
     "title": "Mamdani announces plan to close New York's Rikers Island jail by 2032",
     "url": "https://www.bbc.co.uk/news/articles/cmjeqv89egylo?at_medium=RSS&at_campaign=rss",
-    "rank": 4,
+    "rank": 5,
     "live": "",
-    "weight": 13.5,
-    "score": 9,
+    "weight": 12.5,
+    "score": 8,
     "independent": 3,
     "most_read": 0,
     "canada": "none",
@@ -1340,7 +1204,7 @@
    {
     "title": "Zelensky says Putin must understand Crimean Bridge 'will not stay,' warns Russia increasing double-tap strikes",
     "url": "https://kyivindependent.com/zelensky-says-putin-must-understand-crimean-bridge-will-not-stay-warns-russia-increasing-double-tap-strikes/",
-    "rank": 5,
+    "rank": 6,
     "live": "",
     "weight": 20.0,
     "score": 14,
@@ -1362,9 +1226,9 @@
    {
     "title": "Peguis First Nation members, including chief and councillor, try to oust CFS leader",
     "url": "https://www.cbc.ca/news/canada/manitoba/peguis-tries-to-oust-cfs-leader-9.7429796?cmp=rss",
-    "rank": 6,
+    "rank": 7,
     "live": "",
-    "weight": 15.5,
+    "weight": 12.5,
     "score": 5,
     "independent": 3,
     "most_read": 0,
@@ -1377,44 +1241,6 @@
     "carriers": 3,
     "judgment": "regional",
     "why_judged": "Regional: affects some people; carried beyond one city."
-   },
-   {
-    "title": "For families of the fallen, Trump’s proposed arch casts a shadow over Arlington National Cemetery",
-    "url": "https://www.timescolonist.com/the-mix/for-families-of-the-fallen-trumps-proposed-arch-casts-a-shadow-over-arlington-national-cemetery-13040330",
-    "rank": 7,
-    "live": "",
-    "weight": 24.0,
-    "score": 8,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "No Canadian tie",
-    "carriers": 4,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried beyond one city."
-   },
-   {
-    "title": "Three French police officers sentenced over racist assault on Black man",
-    "url": "https://www.aljazeera.com/news/2026/11/21/three-french-police-officers-sentenced-over-racist-assault-on-black-man?traffic_source=rss",
-    "rank": 8,
-    "live": "",
-    "weight": 13.5,
-    "score": 6,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "No Canadian tie",
-    "carriers": 3,
-    "judgment": "regional",
-    "why_judged": "Regional: a single incident touching a few people; carried by a few newsrooms."
    },
    {
     "title": "Trump says Canada feeling 'emboldened' but he's seeking a 'fair' trade deal",
@@ -1442,6 +1268,11 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
+    "title": "The ‘bluenami’ message was sent, Trump’s ignoring it",
+    "score": 6,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
     "title": "Staples Canada says customer data accessed during 'security incident' on print website",
     "score": 6,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
@@ -1450,6 +1281,16 @@
     "title": "Exam shows that the hat Fiona the hippo ate was deep in her small intestine",
     "score": 6,
     "why": "not built: only 2 independent report(s) (4 sites)"
+   },
+   {
+    "title": "Three French police officers sentenced over racist assault on Black man",
+    "score": 5,
+    "why": "not built: only 2 independent report(s) (2 sites)"
+   },
+   {
+    "title": "B.C. restaurant group alleges $2.1M in missing staff tips, sues payment company executives",
+    "score": 4,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
   ],
   "moved": [],
@@ -1486,7 +1327,7 @@
      "alt": "Zelensky says Putin must understand Crimean Bridge 'will not stay,' warns Russia increasing double-tap strikes",
      "outlet": "Kyiv Independent",
      "url": "https://kyivindependent.com/zelensky-says-putin-must-understand-crimean-bridge-will-not-stay-warns-russia-increasing-double-tap-strikes/",
-     "since": "2026-11-21T04:26:00.392508+00:00"
+     "since": "2026-11-21T04:36:06.838090+00:00"
     },
     "photo_seen": [
      "https://assets.kyivindependent.com/content/images/2026/11/GettyImages-2305363555_20261121-003928_20261121-004954.jpg"
@@ -1662,18 +1503,18 @@
       "up": ""
      },
      {
-      "net": "CBS News",
-      "url": "https://www.youtube.com/watch?v=DTMaBaKJPvg",
-      "title": "Russia strikes Ukraine after Trump's meeting with Putin and Xi in China",
-      "img": "https://i.ytimg.com/vi/DTMaBaKJPvg/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
       "net": "NBC News",
       "url": "https://www.youtube.com/watch?v=5fIYpSpklMk",
       "title": "Trump says he has 'fantastic relationship' with Putin following APEC summit",
       "img": "https://i.ytimg.com/vi/5fIYpSpklMk/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "PBS NewsHour",
+      "url": "https://www.youtube.com/watch?v=QDfDA6VSd6I",
+      "title": "Brooks and Capehart on Trump's summit with Putin and Xi",
+      "img": "https://i.ytimg.com/vi/QDfDA6VSd6I/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1709,7 +1550,7 @@
      "alt": "Dozens of members from George Gordon First Nation gathered on Friday to discuss life in recovery from drugs and alcohol. (Mick Favel / CTV News)",
      "outlet": "CTV News",
      "url": "https://www.ctvnews.ca/regina/article/drug-and-alcohol-awareness-day-a-success-for-george-gordon-first-nation/",
-     "since": "2026-11-21T04:26:08.790686+00:00"
+     "since": "2026-11-21T04:36:17.074555+00:00"
     },
     "photo_seen": [
      "https://www.ctvnews.ca/resizer/v2/WC7KBTPS3VG7DCEMUUK6MMDHZA.png?smart=true&auth=f03c7c1572bd531501955fdd4d99633061191ce867b006ff070bf94542514adf&width=1200&height=630"
@@ -1826,21 +1667,17 @@
     "outled_ca": 3,
     "judgment": "regional",
     "judgment_why": "Regional: affects some people; carried beyond one city.",
-    "weight": 15.5
+    "weight": 12.5
    }
   ],
   "passed_over": [
    {
+    "title": "Federal jury convicts man of starting the deadly 2025 Palisades Fire in Los Angeles",
+    "url": "https://www.cp24.com/news/world/2026/11/21/federal-jury-convicts-man-of-starting-the-deadly-2025-palisades-fire-in-los-angeles/"
+   },
+   {
     "title": "Mamdani announces plan to close New York's Rikers Island jail by 2032",
     "url": "https://www.bbc.co.uk/news/articles/cmjeqv89egylo?at_medium=RSS&at_campaign=rss"
-   },
-   {
-    "title": "For families of the fallen, Trump’s proposed arch casts a shadow over Arlington National Cemetery",
-    "url": "https://www.timescolonist.com/the-mix/for-families-of-the-fallen-trumps-proposed-arch-casts-a-shadow-over-arlington-national-cemetery-13040330"
-   },
-   {
-    "title": "Three French police officers sentenced over racist assault on Black man",
-    "url": "https://www.aljazeera.com/news/2026/11/21/three-french-police-officers-sentenced-over-racist-assault-on-black-man?traffic_source=rss"
    },
    {
     "title": "Judge approves $7.25bn settlement for Roundup weedkiller cancer claims",
@@ -1909,7 +1746,7 @@
    "id": "vZAkj6MOT5U",
    "r": "ca",
    "o": "Global News",
-   "t": "Defence ministers react after suspected Russian missiles, drone hit Poland",
+   "t": "Russia blamed for missiles, drone that landed in Poland",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=vZAkj6MOT5U",
@@ -1993,7 +1830,7 @@
    "id": "g5G4kZkAx5Y",
    "r": "ca",
    "o": "Global News",
-   "t": "Global National: Nov. 20, 2026 | Reopening of Ontario Ford truck assembly plant",
+   "t": "Global National: Nov. 20, 2026 | Ford car assembly plant reopens in Ontario",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=g5G4kZkAx5Y",
@@ -2035,7 +1872,7 @@
    "id": "kK0_UhkbDOA",
    "r": "ca",
    "o": "CTV News",
-   "t": "Ford Super Duty trucks begin rolling out at Oakville plant | CTV National News for Nov.20 2026",
+   "t": "Ford Super Duty trucks begin roll out at Oakville plant | CTV National News for Nov. 20, 2026",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=kK0_UhkbDOA",
@@ -2357,7 +2194,7 @@
    "id": "2yc7ULWfKHo",
    "r": "world",
    "o": "Reuters",
-   "t": "Trump touts Putin talks as Europe warns against a Ukraine deal without allies | Reuters World News",
+   "t": "Anthropic slips after blockbuster debut as AI stocks face fresh doubts | Reuters World News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=2yc7ULWfKHo",
@@ -2441,7 +2278,7 @@
    "id": "LOGSmFiVePI",
    "r": "world",
    "o": "BBC News",
-   "t": "Donald Trump stands by his decision to attack Iran | BBC News",
+   "t": "Trump defends attacking Iran: 'I'd do it again' | BBC News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=LOGSmFiVePI",
@@ -2485,11 +2322,11 @@
   },
   {
    "o": "NBC News",
-   "h": "New cervical cancer guidance to favor HPV screening over traditional Pap tests",
-   "u": "https://www.nbcnews.com/health/womens-health/cervical-cancer-screening-federal-guidance-hpv-tests-pap-smear-rcna610282",
-   "img": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-11/261119-cervical-cancer-screening-pap-hpv-ew-455p-345e13.jpg",
-   "w": "Fri 5:33 p.m.",
-   "iso": "2026-11-20T22:33:19+00:00"
+   "h": "FBI investigating potential breach of its crime database",
+   "u": "https://www.nbcnews.com/politics/justice-department/fbi-investigating-potential-breach-crime-database-rcna610536",
+   "img": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-11/261120-fbi-hq-vsb-2248-faa843.jpg",
+   "w": "Fri 11:19 p.m.",
+   "iso": "2026-11-21T04:19:51+00:00"
   },
   {
    "o": "PBS News",
@@ -2718,6 +2555,13 @@
  ],
  "eds": [
   [
+   "Toronto Star",
+   "Opinion",
+   "Hazel Mae's memoir traces remarkable career in sports television",
+   "https://www.thestar.com/opinion/hazel-mae-s-memoir-traces-remarkable-career-in-sports-television/article_53b62425-3421-4477-b5be-9112570abe4c.html",
+   "2026-11-20T23:40:00+00:00"
+  ],
+  [
    "Toronto Sun",
    "Editorial",
    "Carney should boost cadets, not cut them",
@@ -2779,13 +2623,6 @@
    "Why China Wants to Control a Yacht Maker",
    "https://www.wsj.com/opinion/why-china-wants-to-control-a-yacht-maker-69ca60c7?mod=rss_opinion",
    "2026-11-20T23:11:00+00:00"
-  ],
-  [
-   "Washington Examiner",
-   "Opinion",
-   "Democrats argue that ‘no one is above the law,’ except themselves",
-   "https://www.washingtonexaminer.com/opinion/beltway-confidential/4810178/democrats-argue-no-one-above-the-law-except-themselves/",
-   "2026-11-20T18:54:26+00:00"
   ]
  ],
  "canus": {
@@ -2868,7 +2705,6 @@
   "edition": "Friday night, November 20",
   "lines": [
    "Good evening. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
-   "What could Trump’s data centre comments mean as Meta builds in Alberta?, The Canadian Press reports.",
    "Dozens of members from George Gordon First Nation gathered for a day to discuss life in recovery from drugs and alcohol, The Canadian Press reports.",
    "Ford calls meeting with Stellantis officials over fate of Brampton plant ‘challenging’ but productive, The Canadian Press reports.",
    "The man accused of sparking last year’s deadly Palisades Fire was found guilty of arson charges Friday after his first federal case earlier this year ended in a mistrial, The Associated Press reports.",
@@ -3232,12 +3068,12 @@
    "city": "Edmonton",
    "tz": "America/Edmonton",
    "world": false,
-   "w": "Trump",
-   "label": "What could Trump’s data centre comments mean as Meta…",
-   "u": "https://www.ctvnews.ca/edmonton/article/what-could-trumps-data-centre-comments-mean-as-meta-builds-in-alberta/",
-   "title": "What could Trump’s data centre comments mean as Meta builds in Alberta?",
+   "w": "First Nation",
+   "label": "A First Nation has its eye on an Edmonton neighbourhood.…",
+   "u": "https://www.ctvnews.ca/edmonton/article/a-first-nation-has-its-eye-on-an-edmonton-neighbourhood-heres-what-that-might-mean/",
+   "title": "A First Nation has its eye on an Edmonton neighbourhood. Here’s what that might mean",
    "outlet": "CTV News",
-   "t": "Fri 5:27 p.m.",
+   "t": "Fri 6:50 p.m.",
    "hot": false
   },
   {
@@ -3250,7 +3086,7 @@
    "title": "Flurry of luxury mansion sales this fall in West Vancouver",
    "outlet": "Times Colonist",
    "t": "Fri 10:30 p.m.",
-   "hot": true
+   "hot": false
   },
   {
    "city": "Washington",
@@ -3294,23 +3130,11 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Fri 10:01 p.m.",
-   "iso": "2026-11-21T03:01:24+00:00",
-   "title": "Three French police officers sentenced over racist assault on Black man",
-   "summary": "Paris criminal court finds racism was an aggravating factor in the 2020 assault of Black music producer Michel Zecler.",
-   "outlet": "Al Jazeera, Toronto Sun, BBC News, Fox News",
-   "n": 4,
-   "url": "https://www.aljazeera.com/news/2026/11/21/three-french-police-officers-sentenced-over-racist-assault-on-black-man?traffic_source=rss",
-   "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6b00f269-1795224169.jpg?resize=1920%2C1440"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
    "t": "Fri 9:09 p.m.",
    "iso": "2026-11-21T02:09:46+00:00",
    "title": "Russian missile hits Poland as Ukraine's allies hold military exercise, says Tusk",
    "summary": "Nobody was hurt and no damage has been reported, but Warsaw described the incident as a \"provocation\" from Moscow.",
-   "outlet": "BBC News, Al Jazeera, CP24 + PBS NewsHour (AP), The Hill",
+   "outlet": "BBC News, Al Jazeera, PBS NewsHour (AP), The Hill",
    "n": 4,
    "url": "https://www.bbc.co.uk/news/articles/cqx2x9dklxnro?at_medium=RSS&at_campaign=rss",
    "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/cbb7/live/b5de9720-e4ea-11f1-99b6-a35a62fa4264.jpg"
@@ -3330,18 +3154,6 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Fri 10:51 p.m.",
-   "iso": "2026-11-21T03:51:03+00:00",
-   "title": "‘A new record for entertainment’: Grand Theft Auto VI sales hit $3.8bn on first day of release, developer says",
-   "summary": "The announcement from Rockstar Games would mean GTA VI has already earned more than the entire box office run of the highest-grossing film of all time",
-   "outlet": "The Guardian, Times Colonist (CP), Times Colonist (AP)",
-   "n": 3,
-   "url": "https://www.theguardian.com/games/2026/nov/21/a-new-record-for-entertainment-grand-theft-auto-vi-sales-hit-38bn-on-first-day-of-release-developer-says",
-   "img": "https://i.guim.co.uk/img/media/5988d7ddcc73c1dddca7f0d330ee2d523648a57a/1183_0_6827_5464/master/6827.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=95042df6a5e99cce15a43e1023e3bd22"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
    "t": "Fri 10:49 p.m.",
    "iso": "2026-11-21T03:49:09+00:00",
    "title": "Judge approves $7.25bn settlement for Roundup weedkiller cancer claims",
@@ -3350,6 +3162,18 @@
    "n": 3,
    "url": "https://www.bbc.co.uk/news/articles/cwvg21gyl650o?at_medium=RSS&at_campaign=rss",
    "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/39e3/live/c6e1e8a0-e559-11f1-b23f-abf0ac4ebbc0.jpg"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Fri 10:01 p.m.",
+   "iso": "2026-11-21T03:01:24+00:00",
+   "title": "Three French police officers sentenced over racist assault on Black man",
+   "summary": "Paris criminal court finds racism was an aggravating factor in the 2020 assault of Black music producer Michel Zecler.",
+   "outlet": "Al Jazeera, Toronto Sun, BBC News",
+   "n": 3,
+   "url": "https://www.aljazeera.com/news/2026/11/21/three-french-police-officers-sentenced-over-racist-assault-on-black-man?traffic_source=rss",
+   "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6b00f269-1795224169.jpg?resize=1920%2C1440"
   },
   {
    "desk": "politics",
@@ -3362,6 +3186,30 @@
    "n": 3,
    "url": "https://dailyhive.com/vancouver/premier-lorne-doerkson-newton-skytrain-extension-november-2026",
    "img": "https://images-dh-production-baselayer.dailyhive.com/uploads/2026/11/surrey-langley-skytrain-fraser-highway-construction-february-2026-f.jpg?format=auto"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Fri 11:24 p.m.",
+   "iso": "2026-11-21T04:24:13+00:00",
+   "title": "Airstrikes target two districts in Yemen's Taiz, Houthi media says",
+   "summary": "",
+   "outlet": "Middle East Eye, Al Jazeera",
+   "n": 2,
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/airstrikes-target-two-districts-yemens-taiz-houthi-media-says",
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/000_D86P464.jpg"
+  },
+  {
+   "desk": "us",
+   "pic": "podium",
+   "t": "Fri 10:09 p.m.",
+   "iso": "2026-11-21T03:09:44+00:00",
+   "title": "Democratic Sen.-elect Colom responds to Trump’s praise",
+   "summary": "",
+   "outlet": "The Hill, Times Colonist (AP)",
+   "n": 2,
+   "url": "https://thehill.com/homenews/campaign/6234930-scott-colom-trump-praise-response/",
+   "img": ""
   },
   {
    "desk": "world",
@@ -3422,6 +3270,18 @@
    "n": 2,
    "url": "https://www.cbc.ca/news/politics/ndp-liberals-bill-c39-indigenous-concerns-9.7430722?cmp=rss",
    "img": "https://i.cbc.ca/ais/e7be82db-c6a4-47b0-b535-48f6d02d5488,1795213793884/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C435%2C8356%2C4700%29%3BResize%3D620"
+  },
+  {
+   "desk": "us",
+   "pic": "podium",
+   "t": "Fri 11:19 p.m.",
+   "iso": "2026-11-21T04:19:51+00:00",
+   "title": "FBI investigating potential breach of its crime database",
+   "summary": "The apparent breach on the FBI database comes after the U.S. Department of Agriculture faced its own cyberattack this week.",
+   "outlet": "NBC News",
+   "n": 1,
+   "url": "https://www.nbcnews.com/politics/justice-department/fbi-investigating-potential-breach-crime-database-rcna610536",
+   "img": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-11/261120-fbi-hq-vsb-2248-faa843.jpg"
   },
   {
    "desk": "us",
@@ -3494,30 +3354,6 @@
    "n": 1,
    "url": "https://www.ctvnews.ca/world/article/leaders-of-mexican-drug-cartel-and-19-others-indicted-for-smuggling-guns-drugs-and-people/",
    "img": "https://www.ctvnews.ca/resizer/v2/S5T6CDW6Z6N63Y6B6NW4MRQYRI.jpg?smart=true&auth=ad4652dd691d9f12ae11e0730226488118e8a8d53bf37fc0bc3e05220a136443&width=1200&height=630"
-  },
-  {
-   "desk": "us",
-   "pic": "podium",
-   "t": "Fri 9:12 p.m.",
-   "iso": "2026-11-21T02:12:44+00:00",
-   "title": "Alabama woman pleads guilty after reportedly using smart glasses to target drug trial witnesses",
-   "summary": "Tierra Shatalia Douglas pleaded guilty to conspiracy to retaliate against a witness after targeting people who testified in a federal drug trial.",
-   "outlet": "Fox News",
-   "n": 1,
-   "url": "https://www.foxnews.com/us/alabama-woman-pleads-guilty-reportedly-using-smart-glasses-target-drug-trial-witnesses",
-   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/alabama-woman-douglas.jpg"
-  },
-  {
-   "desk": "us",
-   "pic": "podium",
-   "t": "Fri 9:07 p.m.",
-   "iso": "2026-11-21T02:07:50+00:00",
-   "title": "Federal judge denies a request to release man shot by immigration agents in New York",
-   "summary": "NEW YORK (AP) — A federal judge on Friday declined to release from custody a man who was shot and wounded by immigration officers as they arrested him in New",
-   "outlet": "Toronto Star (AP)",
-   "n": 1,
-   "url": "https://www.thestar.com/news/world/united-states/federal-judge-denies-a-request-to-release-man-shot-by-immigration-agents-in-new-york/article_73d476bd-f043-58a3-a697-5e53ffce0810.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/e/89/e89daece-5f2f-5c75-8e9b-9643e02217d3/6acffdb9b0d89.image.jpg?crop=1871%2C982%2C0%2C48&resize=1200%2C630&order=crop%2Cresize"
   },
   {
    "desk": "politics",
@@ -3755,10 +3591,20 @@
    "o": "Global News",
    "ca": true,
    "h": [
-    "Add Global News to Home Screen Close"
+    "Add Global News to Home Screen Close",
+    "Bidding war for Telus expected, analysts say, as Quebecor calls out Bell",
+    "‘Multiple trade issues’ outstanding in Canada, U.S. trade talks: Sources",
+    "Ontario fugitive arrested in Winnipeg hours after making most wanted list",
+    "Secularism to pass Christianity as main group in Canada by 2050: Pew",
+    "Trump threatens U.S. firms building data centres elsewhere with major taxes"
    ],
    "u": [
-    ""
+    "",
+    "https://globalnews.ca/news/12158293/quebecor-bell-telus-merger-talks/",
+    "https://globalnews.ca/news/12158821/canada-us-trade-talks-outstanding-issues/",
+    "",
+    "https://globalnews.ca/news/12158315/decline-in-christianity-canada/",
+    "https://globalnews.ca/news/12159793/donald-trump-us-data-centre-tax/"
    ]
   },
   {
@@ -3786,16 +3632,16 @@
    "ca": true,
    "h": [
     "Canadians and Americans have very different views about abortion, poll finds",
-    "Is Connor McDavid moving to Toronto? Wife addresses speculation after couple buy a new home",
     "Scott Stinson: If Stellantis is a cautionary tale, governments don't seem to be learning",
+    "Is Connor McDavid moving to Toronto? Wife addresses speculation after couple buy a new home",
     "Avi Benlolo: Canada's continued failure to hold Palestinians to account",
     "Courtney C. Radsch: Big Tech can't be trusted",
     "In bed by 9: The rise of early dining and day drinking"
    ],
    "u": [
     "https://nationalpost.com/news/majority-of-canadians-see-no-point-in-reopening-abortion-debate-unlike-americans-poll/",
-    "https://nationalpost.com/news/canada/connor-mcdavid-captain-of-the-edmonton-oilers-has-bought-a-home-in-the-toronto-area/",
     "https://nationalpost.com/opinion/scott-stinson-stellantis-a-cautionary-tale-governments-not-learning/",
+    "https://nationalpost.com/news/canada/connor-mcdavid-captain-of-the-edmonton-oilers-has-bought-a-home-in-the-toronto-area/",
     "https://nationalpost.com/opinion/canadas-continued-failure-to-hold-palestinians-to-account/",
     "https://nationalpost.com/opinion/big-tech-cant-be-trusted/",
     "https://nationalpost.com/modern-life/rise-of-early-dining-day-drinking/"
@@ -3916,7 +3762,7 @@
    "ca": false,
    "h": [
     "Man accused of starting blaze that became Palisades Fire found guilty of arson",
-    "ABCNL Prime with Linsey Davis",
+    "World News Tonight with David Muir",
     "Judge denies Alex Murdaugh's bid to dismiss murder charges",
     "Bed bugs discovered in office at FEMA headquarters in DC",
     "USDA hit with cyberattack: Sources",
@@ -4001,7 +3847,7 @@
     "url": "https://www.youtube.com/watch?v=wcY4K5CNVx4",
     "img": "https://i.ytimg.com/vi/wcY4K5CNVx4/hqdefault.jpg",
     "story": "Fox News All-American Christmas tree lighting",
-    "watching": "347",
+    "watching": "339",
     "reports": [
      {
       "outlet": "Fox News",
@@ -4019,7 +3865,7 @@
     "url": "https://www.youtube.com/watch?v=YhYAt1Hxe1U",
     "img": "https://i.ytimg.com/vi/YhYAt1Hxe1U/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "415",
+    "watching": "380",
     "rolling": true
    }
   ],
@@ -4028,10 +3874,6 @@
    {
     "net": "CBC News",
     "url": "https://www.youtube.com/watch?v=5vfaDsMhCF4"
-   },
-   {
-    "net": "CBS News",
-    "url": "https://www.youtube.com/watch?v=bPYHE3vcFvM"
    },
    {
     "net": "NBC News",
@@ -4064,11 +3906,24 @@
    {
     "net": "LiveNOW from FOX",
     "url": "https://www.youtube.com/watch?v=C96oohpWBGw"
+   },
+   {
+    "net": "FRANCE 24 English",
+    "url": "https://www.youtube.com/watch?v=HvZt-nh9sGg"
    }
   ]
  },
  "pm": [],
  "blogs_auto": [
+  {
+   "net": "Middle East Eye",
+   "story": "Airstrikes target two districts in Yemen's Taiz, Houthi media says",
+   "title": "Airstrikes target two districts in Yemen's Taiz, Houthi media says",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/airstrikes-target-two-districts-yemens-taiz-houthi-media-says",
+   "updated": "2026-11-21T04:24:13+00:00",
+   "ended": false,
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/000_D86P464.jpg"
+  },
   {
    "net": "Middle East Eye",
    "story": "Israel has not acted on calls to protect Palestinian olive farmers, Oc",
@@ -4181,7 +4036,124 @@
   }
  },
  "canangle_live": {},
- "bds": [],
+ "bds": [
+  {
+   "id": "bd-auto-35a6059b",
+   "auto": true,
+   "desk": "United States",
+   "status": "Developing",
+   "at": "2026-11-21T02:02:18+00:00",
+   "exact": true,
+   "img": "live/img/auto-35a6059b-12232b19f1.jpg",
+   "credit": "via CP24",
+   "pic": "globe",
+   "h": "Federal jury convicts man of starting the deadly 2025 Palisades Fire in Los Angeles",
+   "lede": "The man accused of sparking last year’s deadly Palisades Fire was found guilty of arson charges Friday after his first federal case earlier this year ended in a mistrial.",
+   "newl": "Now carried by 7 independent newsrooms.",
+   "rows": [
+    [
+     "CBS News",
+     "A Los Angeles County jury has found Jonathan Rinderknecht guilty of starting a blaze that erupted into the deadly and destructive Palisades Fire in 2025.",
+     [
+      1
+     ]
+    ],
+    [
+     "NBC News",
+     "A California jury found a man guilty of starting the devastating 2025 Palisades Fire in Los Angeles that displaced thousands of people and became the most destructive wildfire in Los Angeles city history. NBC News' Steve Patterson has the details.",
+     [
+      2
+     ]
+    ],
+    [
+     "The Guardian",
+     "Verdict in case against former Uber driver Jonathan Rinderknecht comes after first trial ended with hung jury",
+     [
+      3
+     ]
+    ],
+    [
+     "ABC News",
+     "The defendant was found guilty of two arson counts during a retrial.",
+     [
+      5
+     ]
+    ],
+    [
+     "CTV News",
+     "The man accused of sparking last year’s deadly Palisades Fire was found guilty of arson charges Friday after his first federal case earlier this year ended in a mistrial.",
+     [
+      6
+     ]
+    ],
+    [
+     "Times Colonist",
+     "LOS ANGELES (AP) — The man accused of sparking last year’s deadly Palisades Fire was found guilty of arson charges Friday after his first federal case earlier this year ended in a mistrial .",
+     [
+      8
+     ]
+    ]
+   ],
+   "src": [
+    [
+     "CBS News",
+     "Jonathan Rinderknecht found guilty in Palisades Fire case",
+     "https://www.cbsnews.com/news/jonathan-rinderknecht-found-guilty-in-palisades-fire-case/"
+    ],
+    [
+     "NBC News",
+     "California man found guilty of starting deadly Palisades Fire",
+     "https://www.nbcnews.com/video/california-man-found-guilty-of-starting-deadly-palisades-fire-273941061702"
+    ],
+    [
+     "The Guardian",
+     "Man accused of sparking deadly Los Angeles wildfire found guilty",
+     "https://www.theguardian.com/us-news/2026/nov/20/los-angeles-palisades-wildfire-trial-verdict"
+    ],
+    [
+     "The Hill",
+     "California man found guilty of sparking blaze that became deadly Palisades Fire",
+     "https://thehill.com/homenews/state-watch/6234829-uber-driver-palisades-fire-conviction/"
+    ],
+    [
+     "ABC News",
+     "Man accused of starting blaze that became Palisades Fire found guilty of arson",
+     "https://abcnews.com/US/man-accused-starting-blaze-palisades-fire-found-guilty/story?id=138333631"
+    ],
+    [
+     "CTV News",
+     "Federal jury convicts man of starting the deadly 2025 Palisades Fire in Los Angeles",
+     "https://www.ctvnews.ca/world/article/federal-jury-convicts-man-of-starting-the-deadly-2025-palisades-fire-in-los-angeles/"
+    ],
+    [
+     "CP24",
+     "Federal jury convicts man of starting the deadly 2025 Palisades Fire in Los Angeles",
+     "https://www.cp24.com/news/world/2026/11/21/federal-jury-convicts-man-of-starting-the-deadly-2025-palisades-fire-in-los-angeles/"
+    ],
+    [
+     "Times Colonist",
+     "Federal jury convicts man of starting the deadly 2025 Palisades Fire in Los Angeles",
+     "https://www.timescolonist.com/world-news/federal-jury-convicts-man-of-starting-the-deadly-2025-palisades-fire-in-los-angeles-13044528"
+    ],
+    [
+     "PBS NewsHour",
+     "Federal jury convicts man of starting deadly 2025 Palisades Fire in Los Angeles",
+     "https://www.pbs.org/newshour/nation/federal-jury-convicts-man-of-starting-deadly-2025-palisades-fire-in-los-angeles"
+    ],
+    [
+     "Fox News",
+     "Verdict reached in Los Angeles retrial over 2025 Pacific Palisades wildfire that killed 12 people",
+     "https://www.foxnews.com/us/verdict-reached-los-angeles-retrial-2025-pacific-palisades-wildfire-killed-12-people"
+    ],
+    [
+     "Toronto Star",
+     "Federal jury convicts man of starting the deadly 2025 Palisades Fire in Los Angeles",
+     "https://www.thestar.com/news/world/united-states/federal-jury-convicts-man-of-starting-the-deadly-2025-palisades-fire-in-los-angeles/article_ac15c5da-0955-5462-a3e8-25c67a99c1a1.html"
+    ]
+   ],
+   "lead": 7
+  }
+ ],
  "geo": {
   "-YVOgH-f4qQ": {
    "v": "unknown",
