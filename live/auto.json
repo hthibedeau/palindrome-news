@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-22T02:06:02.755958+00:00",
- "checkedLabel": "Sat 9:06 p.m.",
+ "checked": "2026-11-22T02:16:02.913952+00:00",
+ "checkedLabel": "Sat 9:16 p.m.",
  "stories": [
   {
    "key": "top",
@@ -30,6 +30,33 @@
   }
  ],
  "wire": [
+  [
+   "Sat 9:14 p.m.",
+   "Latest",
+   "This week on \"Sunday Morning\" (Nov. 22): The Food Issue",
+   "CBS News",
+   "https://www.cbsnews.com/news/this-week-on-sunday-morning-nov-22-2026-the-food-issue/",
+   "2026-11-22T02:14:20+00:00",
+   1
+  ],
+  [
+   "Sat 9:12 p.m.",
+   "U.S.",
+   "FBI's national crime database targeted in hack, Trump says",
+   "ABC News",
+   "https://abcnews.com/US/fbis-national-crime-database-targeted-hack-trump/story?id=138347810",
+   "2026-11-22T02:12:39+00:00",
+   1
+  ],
+  [
+   "Sat 9:08 p.m.",
+   "World",
+   "Victorian Greens seek urgent injunction over how-to-vote cards mimicking party’s branding but preferencing it last",
+   "The Guardian",
+   "https://www.theguardian.com/australia-news/2026/nov/21/victorian-greens-seek-urgent-injunction-over-how-to-vote-cards-mimicking-branding-but-preferencing-it-last-ntwnfb",
+   "2026-11-22T02:08:49+00:00",
+   1
+  ],
   [
    "Sat 9:04 p.m.",
    "Latest",
@@ -193,15 +220,6 @@
    1
   ],
   [
-   "Sat 8:10 p.m.",
-   "U.S.",
-   "FBI's national crime database targeted in hack, Trump says",
-   "ABC News",
-   "https://abcnews.com/US/fbis-national-crime-database-targeted-hack-trump/story?id=138347810",
-   "2026-11-22T01:10:51+00:00",
-   1
-  ],
-  [
    "Sat 8:07 p.m.",
    "World",
    "Moviegoers head for the exits as quake strikes Peru",
@@ -220,15 +238,6 @@
    1
   ],
   [
-   "Sat 7:55 p.m.",
-   "Latest",
-   "This week on \"Sunday Morning\" (Nov. 22): The Food Issue",
-   "CBS News",
-   "https://www.cbsnews.com/news/this-week-on-sunday-morning-nov-22-2026-the-food-issue/",
-   "2026-11-22T00:55:48+00:00",
-   1
-  ],
-  [
    "Sat 7:37 p.m.",
    "World",
    "Clashes erupt across France in another night of protest",
@@ -244,15 +253,6 @@
    "NBC News",
    "https://www.nbcnews.com/politics/donald-trump/abdul-el-sayed-catches-trumps-attention-pitch-trumpcare-rcna610626",
    "2026-11-22T00:37:21+00:00",
-   1
-  ],
-  [
-   "Sat 7:26 p.m.",
-   "World",
-   "Fred Nile, former NSW politician and figurehead of the rightwing Christian Democratic party, dies aged 92",
-   "The Guardian",
-   "https://www.theguardian.com/australia-news/2026/nov/22/fred-nile-former-nsw-politician-and-figurehead-of-the-rightwing-christian-democratic-party-dies-aged-92",
-   "2026-11-22T00:26:35+00:00",
    1
   ]
  ],
@@ -300,16 +300,6 @@
   },
   {
    "score": 12,
-   "title": "Capture of cartel leader in northern Mexico sets off gunfight that leaves 11 dead",
-   "url": "https://www.cbc.ca/news/world/mexico-detains-sinaloa-cartel-boss-el-chapo-isidro-9.7431280",
-   "outlets": 7,
-   "why": [
-    "CBC News front #5"
-   ],
-   "theme": ""
-  },
-  {
-   "score": 12,
    "title": "Canada’s “Trump Conservatives”: more trust in Elon and autocrats, more doubts about science.",
    "url": "https://bruce728.substack.com/p/canadas-trump-conservatives-more",
    "outlets": 1,
@@ -320,6 +310,16 @@
     "National Newswatch #20"
    ],
    "theme": "Canada and the U.S."
+  },
+  {
+   "score": 10,
+   "title": "Capture of cartel leader in northern Mexico sets off gunfight that leaves 11 dead",
+   "url": "https://www.cbc.ca/news/world/mexico-detains-sinaloa-cartel-boss-el-chapo-isidro-9.7431280",
+   "outlets": 7,
+   "why": [
+    "CBC News front #5"
+   ],
+   "theme": ""
   },
   {
    "score": 9,
@@ -338,14 +338,6 @@
     "National Newswatch #1",
     "National Newswatch #10"
    ],
-   "theme": ""
-  },
-  {
-   "score": 8,
-   "title": "FBI reportedly investigating apparent hack of its criminal database",
-   "url": "https://www.bbc.co.uk/news/articles/cvze7de86pk3o?at_medium=RSS&at_campaign=rss",
-   "outlets": 6,
-   "why": [],
    "theme": ""
   },
   {
@@ -381,6 +373,14 @@
    "score": 6,
    "title": "This train from Toronto takes you to one of the world's absolute best places to spend Christmas",
    "url": "https://www.narcity.com/toronto/via-rail-toronto-to-montreal-tickets-christmas-things-to-do",
+   "outlets": 4,
+   "why": [],
+   "theme": ""
+  },
+  {
+   "score": 6,
+   "title": "Conference designed to launch Christian education initiatives held at Regina Victory Church",
+   "url": "https://www.ctvnews.ca/regina/article/conference-designed-to-launch-christian-education-initiatives-held-at-regina-victory-church/",
    "outlets": 4,
    "why": [],
    "theme": ""
@@ -855,16 +855,8 @@
      {
       "net": "Global News",
       "url": "https://www.youtube.com/watch?v=8tZq2Lp1nOM",
-      "title": "Ontario politics: who is new Liberal party leader Navdeep Bains?",
-      "img": "https://i.ytimg.com/vi/8tZq2Lp1nOM/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CityNews",
-      "url": "https://www.youtube.com/watch?v=oJQp-ma4dTc",
       "title": "Navdeep Bains named new Ontario Liberal leader",
-      "img": "https://i.ytimg.com/vi/oJQp-ma4dTc/hqdefault.jpg",
+      "img": "https://i.ytimg.com/vi/8tZq2Lp1nOM/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
@@ -883,155 +875,154 @@
       "img": "https://i.ytimg.com/vi/arcfej6UG5M/hqdefault.jpg",
       "rec": false,
       "up": ""
+     },
+     {
+      "net": "CityNews",
+      "url": "https://www.youtube.com/watch?v=oJQp-ma4dTc",
+      "title": "Navdeep Bains named new Ontario Liberal leader",
+      "img": "https://i.ytimg.com/vi/oJQp-ma4dTc/hqdefault.jpg",
+      "rec": false,
+      "up": ""
      }
     ]
    },
    {
-    "key": "auto-c5d800d3",
+    "key": "auto-cf256c2a",
     "words": [
-     "fbi",
-     "ap"
+     "seattle",
+     "ice"
     ],
-    "score": 8,
+    "score": 7,
     "outlets": 3,
     "carriers": 5,
     "tag": "Developing",
-    "title": "FBI reportedly investigating apparent hack of its criminal database",
-    "url": "https://www.bbc.co.uk/news/articles/cvze7de86pk3o?at_medium=RSS&at_campaign=rss",
-    "outlet": "BBC News",
-    "t": "Sat 7:10 p.m.",
-    "iso": "2026-11-22T00:10:44+00:00",
-    "summary": "The National Crime Information Center database is used by federal and local law enforcement to share information.",
+    "title": "ICE officers arrest 2 passengers boarding flight in Seattle",
+    "url": "https://www.cbsnews.com/news/ice-arrest-alaska-airlines-flight-seattle/",
+    "outlet": "CBS News",
+    "t": "Sat 8:41 p.m.",
+    "iso": "2026-11-22T01:41:00+00:00",
+    "summary": "Masked immigration officers arrested two passengers on a crowded airport jet bridge in Seattle as people were boarding Saturday",
     "first": {
-     "outlet": "Global News",
-     "url": "https://globalnews.ca/news/12160986/fbi-hack-investigation/",
-     "t": "Sat 3:46 p.m.",
-     "title": "FBI investigating apparent hack of key criminal justice info database: AP source",
-     "iso": "2026-11-21T20:46:59+00:00"
+     "outlet": "Toronto Star",
+     "url": "https://www.thestar.com/news/world/united-states/immigration-officers-make-arrest-at-seattle-airport-in-distressing-scene-delaying-flight/article_0db2d1af-8859-5f3f-a177-cbbbbd0b2b35.html",
+     "t": "Sat 6:41 p.m.",
+     "title": "Immigration officers make arrests at Seattle airport in 'distressing' scene, delaying flight",
+     "iso": "2026-11-21T23:41:51+00:00"
     },
-    "newest": "2026-11-22T00:10:44+00:00",
+    "newest": "2026-11-22T01:57:37+00:00",
     "photo": {
-     "src": "live/img/auto-c5d800d3-3c3c946c02.jpg",
-     "orig": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/mpx/2704722219/2026_11/1795305581966_wnn_jts_fbi_investigates_crime_database_breach_261121_S3_1920x1080-o9s5kc.jpg",
-     "caption": "From: FBI investigates apparent hack of critical crime database. — via NBC News",
-     "alt": "FBI investigates apparent hack of critical crime database",
-     "outlet": "NBC News",
-     "url": "https://www.nbcnews.com/nightly-news/video/fbi-investigates-apparent-hack-of-critical-crime-database-273966149722",
-     "since": "2026-11-22T01:47:53.608297+00:00"
+     "src": "live/img/auto-cf256c2a-8e3a833acf.jpg",
+     "orig": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/22/3a21ffe4-5d69-4a6e-8269-e58dcf41fb97/thumbnail/1200x630/2f7e4b1b76e50db5af7676e06647cccc/ap26325789842711.jpg",
+     "caption": "From: ICE officers arrest 2 passengers boarding flight in Seattle. — via CBS News",
+     "alt": "ICE officers arrest 2 passengers boarding flight in Seattle",
+     "outlet": "CBS News",
+     "url": "https://www.cbsnews.com/news/ice-arrest-alaska-airlines-flight-seattle/",
+     "since": "2026-11-22T02:17:38.387321+00:00"
     },
     "photo_seen": [
-     "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/3fd7/live/9009b220-e58d-11f1-99a1-253766e7ad8b.jpg",
-     "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/mpx/2704722219/2026_11/1795305581966_wnn_jts_fbi_investigates_crime_database_breach_261121_S3_1920x1080-o9s5kc.jpg"
+     "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/22/3a21ffe4-5d69-4a6e-8269-e58dcf41fb97/thumbnail/1200x630/2f7e4b1b76e50db5af7676e06647cccc/ap26325789842711.jpg"
     ],
     "photos": [
      {
-      "src": "live/img/auto-c5d800d3-3c3c946c02.jpg",
-      "orig": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/mpx/2704722219/2026_11/1795305581966_wnn_jts_fbi_investigates_crime_database_breach_261121_S3_1920x1080-o9s5kc.jpg",
-      "caption": "From: FBI investigates apparent hack of critical crime database. — via NBC News",
-      "alt": "FBI investigates apparent hack of critical crime database",
-      "outlet": "NBC News",
-      "url": "https://www.nbcnews.com/nightly-news/video/fbi-investigates-apparent-hack-of-critical-crime-database-273966149722"
-     },
-     {
-      "src": "live/img/auto-c5d800d3-d3cdf5bc85.jpg",
-      "orig": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/3fd7/live/9009b220-e58d-11f1-99a1-253766e7ad8b.jpg",
-      "caption": "The FBI headquarters in Washington DC. File photo. — via BBC News",
-      "alt": "The FBI headquarters in Washington DC. File photo",
-      "outlet": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cvze7de86pk3o?at_medium=RSS&at_campaign=rss"
+      "src": "live/img/auto-cf256c2a-8e3a833acf.jpg",
+      "orig": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/22/3a21ffe4-5d69-4a6e-8269-e58dcf41fb97/thumbnail/1200x630/2f7e4b1b76e50db5af7676e06647cccc/ap26325789842711.jpg",
+      "caption": "From: ICE officers arrest 2 passengers boarding flight in Seattle. — via CBS News",
+      "alt": "ICE officers arrest 2 passengers boarding flight in Seattle",
+      "outlet": "CBS News",
+      "url": "https://www.cbsnews.com/news/ice-arrest-alaska-airlines-flight-seattle/"
      }
     ],
     "independent": 3,
     "reports": [
      {
-      "t": "Sat 7:10 p.m.",
-      "iso": "2026-11-22T00:10:44+00:00",
-      "outlet": "BBC News",
-      "title": "FBI reportedly investigating apparent hack of its criminal database",
-      "url": "https://www.bbc.co.uk/news/articles/cvze7de86pk3o?at_medium=RSS&at_campaign=rss",
-      "desc": "The National Crime Information Center database is used by federal and local law enforcement to share information."
-     },
-     {
-      "t": "Sat 6:59 p.m.",
-      "iso": "2026-11-21T23:59:47+00:00",
-      "outlet": "NBC News",
-      "title": "FBI investigates apparent hack of critical crime database",
-      "url": "https://www.nbcnews.com/nightly-news/video/fbi-investigates-apparent-hack-of-critical-crime-database-273966149722",
-      "desc": "The FBI is investigating an apparent breach of its National Crime Information Center, two people briefed on the matter told NBC News. The FBI’s National Crime Information Center is used to connect federal, state and local authorities so that important law enforcement information is available…"
-     },
-     {
-      "t": "Sat 4:17 p.m.",
-      "iso": "2026-11-21T21:17:38+00:00",
-      "outlet": "CTV News",
-      "title": "FBI investigating apparent hack of its key national criminal justice database, AP source says",
-      "url": "https://www.ctvnews.ca/world/article/fbi-investigating-apparent-hack-of-its-key-national-criminal-justice-database-ap-source-says/",
-      "desc": "The FBI is investigating an apparent hack of a national law enforcement database that it maintains, a person familiar with the matter said Saturday."
-     },
-     {
-      "t": "Sat 4:17 p.m.",
-      "iso": "2026-11-21T21:17:38+00:00",
-      "outlet": "CP24",
-      "title": "FBI investigating apparent hack of its key national criminal justice database, AP source says",
-      "url": "https://www.cp24.com/news/world/2026/11/21/fbi-investigating-apparent-hack-of-its-key-national-criminal-justice-database-ap-source-says/",
+      "t": "Sat 8:57 p.m.",
+      "iso": "2026-11-22T01:57:37+00:00",
+      "outlet": "The Hill",
+      "title": "Washington governor decries ‘out-of-control’ ICE at Seattle airport",
+      "url": "https://thehill.com/homenews/state-watch/6235558-ferguson-condemns-ice-airport-detention/",
       "desc": ""
      },
      {
-      "t": "Sat 3:46 p.m.",
-      "iso": "2026-11-21T20:46:59+00:00",
-      "outlet": "Global News",
-      "title": "FBI investigating apparent hack of key criminal justice info database: AP source",
-      "url": "https://globalnews.ca/news/12160986/fbi-hack-investigation/",
+      "t": "Sat 8:41 p.m.",
+      "iso": "2026-11-22T01:41:00+00:00",
+      "outlet": "CBS News",
+      "title": "ICE officers arrest 2 passengers boarding flight in Seattle",
+      "url": "https://www.cbsnews.com/news/ice-arrest-alaska-airlines-flight-seattle/",
+      "desc": "Masked immigration officers arrested two passengers on a crowded airport jet bridge in Seattle as people were boarding Saturday"
+     },
+     {
+      "t": "Sat 8:30 p.m.",
+      "iso": "2026-11-22T01:30:12+00:00",
+      "outlet": "CTV News",
+      "title": "U.S. immigration officers make arrest at Seattle airport in ‘distressing’ scene, delaying flight",
+      "url": "https://www.ctvnews.ca/world/article/us-immigration-officers-make-arrest-at-seattle-airport-in-distressing-scene-delaying-flight/",
+      "desc": "Masked immigration officers detained two people on a crowded airport jet bridge in Seattle as people were boarding Saturday, causing what the airline called a “distressing” scene for passengers and employees and delaying the Los Angeles-bound flight."
+     },
+     {
+      "t": "Sat 8:30 p.m.",
+      "iso": "2026-11-22T01:30:12+00:00",
+      "outlet": "CP24",
+      "title": "U.S. immigration officers make arrest at Seattle airport in ‘distressing’ scene, delaying flight",
+      "url": "https://www.cp24.com/news/world/2026/11/22/us-immigration-officers-make-arrest-at-seattle-airport-in-distressing-scene-delaying-flight/",
+      "desc": ""
+     },
+     {
+      "t": "Sat 6:41 p.m.",
+      "iso": "2026-11-21T23:41:51+00:00",
+      "outlet": "Toronto Star",
+      "title": "Immigration officers make arrests at Seattle airport in 'distressing' scene, delaying flight",
+      "url": "https://www.thestar.com/news/world/united-states/immigration-officers-make-arrest-at-seattle-airport-in-distressing-scene-delaying-flight/article_0db2d1af-8859-5f3f-a177-cbbbbd0b2b35.html",
       "desc": ""
      }
     ],
     "sources": [
      {
-      "t": "Sat 7:10 p.m.",
+      "t": "Sat 8:57 p.m.",
       "primary": false,
-      "outlet": "BBC News",
-      "title": "FBI reportedly investigating apparent hack of its criminal database",
-      "url": "https://www.bbc.co.uk/news/articles/cvze7de86pk3o?at_medium=RSS&at_campaign=rss",
-      "desc": "The National Crime Information Center database is used by federal and local law enforcement to share information.",
+      "outlet": "The Hill",
+      "title": "Washington governor decries ‘out-of-control’ ICE at Seattle airport",
+      "url": "https://thehill.com/homenews/state-watch/6235558-ferguson-condemns-ice-airport-detention/",
+      "desc": "px-captcha",
       "wire": "",
       "by": [
        {
-        "outlet": "BBC News",
-        "src": "BBC News",
-        "byline": "[{\"@type\":\"Person\",\"name\":\"Jaroslav Lukiv\"}] https://www.facebook.com/bbcnews"
+        "outlet": "The Hill",
+        "src": "The Hill",
+        "byline": ""
        }
       ],
       "copies": []
      },
      {
-      "t": "Sat 6:59 p.m.",
+      "t": "Sat 8:41 p.m.",
       "primary": false,
-      "outlet": "NBC News",
-      "title": "FBI investigates apparent hack of critical crime database",
-      "url": "https://www.nbcnews.com/nightly-news/video/fbi-investigates-apparent-hack-of-critical-crime-database-273966149722",
-      "desc": "The FBI is investigating an apparent breach of its National Crime Information Center, two people briefed on the matter told NBC News. The FBI’s National Crime Information Center is used to connect federal, state and local authorities so that important law enforcement information is available…",
+      "outlet": "CBS News",
+      "title": "ICE officers arrest 2 passengers boarding flight in Seattle",
+      "url": "https://www.cbsnews.com/news/ice-arrest-alaska-airlines-flight-seattle/",
+      "desc": "Masked immigration officers arrested two passengers on a crowded airport jet bridge in Seattle as people were boarding Saturday",
       "wire": "",
       "by": [
        {
-        "outlet": "NBC News",
-        "src": "NBC News",
-        "byline": "\"NBCNews.com\" [{\"@context\":\"https://schema.org/\",\"@type\":\"NewsMediaOrganization\",\"name\":\"NBC News\",}] \"mps\" "
+        "outlet": "CBS News",
+        "src": "CBS News",
+        "byline": ""
        }
       ],
       "copies": []
      },
      {
-      "t": "Sat 3:46 p.m.",
+      "t": "Sat 6:41 p.m.",
       "primary": false,
-      "outlet": "Global News",
-      "title": "FBI investigating apparent hack of key criminal justice info database: AP source",
-      "url": "https://globalnews.ca/news/12160986/fbi-hack-investigation/",
-      "desc": "The FBI is investigating an apparent hack of a national law enforcement database that it maintains, a person familiar with the matter said Saturday.",
-      "wire": "The Associated Press",
+      "outlet": "Toronto Star",
+      "title": "Immigration officers make arrests at Seattle airport in 'distressing' scene, delaying flight",
+      "url": "https://www.thestar.com/news/world/united-states/immigration-officers-make-arrest-at-seattle-airport-in-distressing-scene-delaying-flight/article_0db2d1af-8859-5f3f-a177-cbbbbd0b2b35.html",
+      "desc": "",
+      "wire": "",
       "by": [
        {
-        "outlet": "Global News",
-        "src": "The Associated Press",
-        "byline": "By Eric Tucker \n\t\t\t\t\t\t\t\t\t\tThe Associated Press"
+        "outlet": "Toronto Star",
+        "src": "Torstar",
+        "byline": ""
        },
        {
         "outlet": "CTV News",
@@ -1047,11 +1038,11 @@
       "copies": [
        {
         "outlet": "CTV News",
-        "url": "https://www.ctvnews.ca/world/article/fbi-investigating-apparent-hack-of-its-key-national-criminal-justice-database-ap-source-says/"
+        "url": "https://www.ctvnews.ca/world/article/us-immigration-officers-make-arrest-at-seattle-airport-in-distressing-scene-delaying-flight/"
        },
        {
         "outlet": "CP24",
-        "url": "https://www.cp24.com/news/world/2026/11/21/fbi-investigating-apparent-hack-of-its-key-national-criminal-justice-database-ap-source-says/"
+        "url": "https://www.cp24.com/news/world/2026/11/22/us-immigration-officers-make-arrest-at-seattle-airport-in-distressing-scene-delaying-flight/"
        }
       ]
      }
@@ -1064,13 +1055,16 @@
     "incoherent": false,
     "popular": 0,
     "us_election": false,
-    "fronts": 0,
-    "fronts_ca": 0,
-    "fronts_who": [],
+    "fronts": 2,
+    "fronts_ca": 1,
+    "fronts_who": [
+     "CTV News",
+     "CBS News"
+    ],
     "outled_ca": 5,
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (national desks).",
-    "weight": 24.5
+    "weight": 26.5
    }
   ],
   "considered": [
@@ -1100,17 +1094,39 @@
     "why_judged": "National: affects some people; carried across the country (national desks)."
    },
    {
-    "title": "FBI reportedly investigating apparent hack of its criminal database",
-    "url": "https://www.bbc.co.uk/news/articles/cvze7de86pk3o?at_medium=RSS&at_campaign=rss",
+    "title": "ICE officers arrest 2 passengers boarding flight in Seattle",
+    "url": "https://www.cbsnews.com/news/ice-arrest-alaska-airlines-flight-seattle/",
     "rank": 2,
     "live": "",
-    "weight": 24.5,
-    "score": 8,
+    "weight": 26.5,
+    "score": 7,
     "independent": 3,
     "most_read": 0,
     "canada": "none",
     "theme": "",
     "top": true,
+    "fronts": 2,
+    "fronts_who": [
+     "CTV News",
+     "CBS News"
+    ],
+    "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
+    "carriers": 5,
+    "judgment": "national",
+    "why_judged": "National: affects many people; carried across the country (national desks)."
+   },
+   {
+    "title": "FBI reportedly investigating apparent hack of its criminal database",
+    "url": "https://www.bbc.co.uk/news/articles/cvze7de86pk3o?at_medium=RSS&at_campaign=rss",
+    "rank": 3,
+    "live": "",
+    "weight": 22.5,
+    "score": 6,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": false,
     "fronts": 0,
     "fronts_who": [],
     "rule": "No Canadian tie",
@@ -1121,9 +1137,9 @@
    {
     "title": "'Business as usual' between Canada and U.S., McGuinty says following Pentagon restrictions report",
     "url": "https://www.cbc.ca/player/play/video/9.7431596",
-    "rank": 3,
+    "rank": 4,
     "live": "",
-    "weight": 15.5,
+    "weight": 12.5,
     "score": 0,
     "independent": 1,
     "most_read": 0,
@@ -1145,14 +1161,14 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Capture of cartel leader in northern Mexico sets off gunfight that leaves 11 dead",
-    "score": 12,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
     "title": "Rounds: Pentagon restricted socialization between US, Canada defense officials",
     "score": 12,
     "why": "not built: only 1 independent report(s) (1 sites)"
+   },
+   {
+    "title": "Capture of cartel leader in northern Mexico sets off gunfight that leaves 11 dead",
+    "score": 10,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
     "title": "Pierre Poilievre says he won’t resign if Conservatives lose Brantford byelection",
@@ -1163,11 +1179,6 @@
     "title": "Hegseth reportedly moves to restrict defence ties with Canada, but Ottawa sees no change",
     "score": 7,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Washington governor decries ‘out-of-control’ ICE at Seattle airport",
-    "score": 7,
-    "why": "not built: only 2 independent report(s) (5 sites)"
    },
    {
     "title": "Montreal police arrest 2 ex-officers for alleged assault, criminal harassment, breach of trust",
@@ -1200,12 +1211,12 @@
     "why": "not built: only 1 independent report(s) (1 sites)"
    },
    {
-    "title": "Satellites are constantly photographing Earth. A Waterloo student has compiled the pictures into one spot",
+    "title": "Former White House press secretary under investigation for lawyer claims",
     "score": 5,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+    "why": "not built: only 2 independent report(s) (3 sites)"
    },
    {
-    "title": "Former White House press secretary under investigation for lawyer claims",
+    "title": "Pedestrian struck by vehicle in Scarborough suffers life-threatening injuries",
     "score": 5,
     "why": "not built: only 2 independent report(s) (3 sites)"
    }
@@ -1291,7 +1302,7 @@
     ],
     "judgment": "regional",
     "judgment_why": "Regional: affects some people; carried by a few newsrooms.",
-    "weight": 15.5,
+    "weight": 12.5,
     "videos": [
      {
       "net": "CPAC",
@@ -1304,7 +1315,12 @@
     ]
    }
   ],
-  "passed_over": []
+  "passed_over": [
+   {
+    "title": "FBI reportedly investigating apparent hack of its criminal database",
+    "url": "https://www.bbc.co.uk/news/articles/cvze7de86pk3o?at_medium=RSS&at_campaign=rss"
+   }
+  ]
  },
  "clips": [
   {
@@ -1409,7 +1425,7 @@
    "id": "TgaahQeSfLA",
    "r": "ca",
    "o": "Global News",
-   "t": "Focus Ontario: Nov. 21, 2026 | What a credit downgrade could mean for the province",
+   "t": "Focus Ontario: Nov. 21, 2026 | Can Ontario avoid a credit rating downgrade?",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=TgaahQeSfLA",
@@ -1465,41 +1481,13 @@
    "id": "8tZq2Lp1nOM",
    "r": "ca",
    "o": "Global News",
-   "t": "Ontario politics: who is new Liberal party leader Navdeep Bains?",
+   "t": "Navdeep Bains named new Ontario Liberal leader",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=8tZq2Lp1nOM",
    "img": "https://i.ytimg.com/vi/8tZq2Lp1nOM/hqdefault.jpg",
    "up": "2026-11-21",
    "added": "2026-11-22T01:46:02.854002+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "RhyXPo87kp8",
-   "r": "ca",
-   "o": "CTV News",
-   "t": "Families flock to Help Santa Toy parade | CTV News Ottawa at Six for November 21, 2026",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=RhyXPo87kp8",
-   "img": "https://i.ytimg.com/vi/RhyXPo87kp8/hqdefault.jpg",
-   "up": "2026-11-21",
-   "added": "2026-11-22T01:56:02.473175+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "jpWdnlfgKek",
-   "r": "ca",
-   "o": "CTV News",
-   "t": "Thousands pack Help Santa Toy Parade",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=jpWdnlfgKek",
-   "img": "https://i.ytimg.com/vi/jpWdnlfgKek/hqdefault.jpg",
-   "up": "2026-11-21",
-   "added": "2026-11-22T01:56:02.473175+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1756,6 +1744,34 @@
    "geo": "unknown"
   },
   {
+   "id": "R_rXiysihBI",
+   "r": "us",
+   "o": "CNN",
+   "t": "Nvidia scandal, Trump’s summit & more | NewsNight this week",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=R_rXiysihBI",
+   "img": "https://i.ytimg.com/vi/R_rXiysihBI/hqdefault.jpg",
+   "up": "2026-11-21",
+   "added": "2026-11-22T02:16:02.913952+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "_YdHi9o97P4",
+   "r": "us",
+   "o": "CNN",
+   "t": "Air Traffic Control’s ‘patchwork’ system, explained",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=_YdHi9o97P4",
+   "img": "https://i.ytimg.com/vi/_YdHi9o97P4/hqdefault.jpg",
+   "up": "2026-11-21",
+   "added": "2026-11-22T02:16:02.913952+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
    "id": "VVQ1c_znNrI",
    "r": "world",
    "o": "Sky News",
@@ -1899,11 +1915,11 @@
  "ledes": [
   {
    "o": "CBS News",
-   "h": "ICE officers arrest 2 passengers boarding flight in Seattle",
-   "u": "https://www.cbsnews.com/news/ice-arrest-alaska-airlines-flight-seattle/",
-   "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/22/3a21ffe4-5d69-4a6e-8269-e58dcf41fb97/thumbnail/1200x630/2f7e4b1b76e50db5af7676e06647cccc/ap26325789842711.jpg",
-   "w": "Sat 8:41 p.m.",
-   "iso": "2026-11-22T01:41:00+00:00"
+   "h": "This week on \"Sunday Morning\" (Nov. 22): The Food Issue",
+   "u": "https://www.cbsnews.com/news/this-week-on-sunday-morning-nov-22-2026-the-food-issue/",
+   "img": "https://assets1.cbsnewsstatic.com/hub/i/r/2025/11/20/6f1c079d-ee34-44f9-9970-5259470816d3/thumbnail/1200x630/ad2b90962824fc00e4e995f53cab0076/sm-2025-food-issue-graphic-1920.jpg",
+   "w": "Sat 9:14 p.m.",
+   "iso": "2026-11-22T02:14:20+00:00"
   },
   {
    "o": "ABC News",
@@ -1931,11 +1947,11 @@
   },
   {
    "o": "Fox News",
-   "h": "17 major federal agencies flagged over cybersecurity gaps as watchdog warns of increased attack risk",
-   "u": "https://www.foxnews.com/politics/17-major-federal-agencies-flagged-cybersecurity-gaps-watchdog-warns-increased-attack-risk",
-   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2025/08/internet-scammer-presents-cybersecurity-threat.jpg",
-   "w": "Sat 8:36 p.m.",
-   "iso": "2026-11-22T01:36:18+00:00"
+   "h": "UCLA QB concerns deepen as Ty Dieffenbach is carted off in triple-overtime upset loss to Michigan",
+   "u": "https://www.foxnews.com/outkick-sports/ucla-qb-concerns-deepen-ty-dieffenbach-carted-off-triple-overtime-upset-loss-michigan",
+   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/Ty-Dieffenbach-UCLA-QB.jpg",
+   "w": "Sat 9:00 p.m.",
+   "iso": "2026-11-22T02:00:18+00:00"
   },
   {
    "o": "NPR",
@@ -2148,13 +2164,6 @@
  ],
  "eds": [
   [
-   "Toronto Star",
-   "Opinion",
-   "Pete Hegseth's secret memo on the U.S.-Canada defence relationship is another boneheaded move",
-   "https://www.thestar.com/opinion/star-columnists/hegseth-s-secret-memo-on-the-u-s-canada-defence-relationship-is-another-boneheaded-move/article_d80d0e3f-a928-4832-a498-fa27e658725b.html",
-   "2026-11-21T20:00:00+00:00"
-  ],
-  [
    "Toronto Sun",
    "Editorial",
    "U.S. Democrats can’t save us from Trump",
@@ -2216,6 +2225,13 @@
    "Defining Genocide Down at the International Court of Justice",
    "https://www.wsj.com/opinion/international-court-of-justice-genocide-definition-israel-1f650a2e?mod=rss_opinion",
    "2026-11-21T21:19:00+00:00"
+  ],
+  [
+   "Washington Examiner",
+   "Opinion",
+   "Trump kept his promises. It cost Republicans the midterm elections",
+   "https://www.washingtonexaminer.com/op-eds/4811022/2026-midterm-results-trump-kept-promises/",
+   "2026-11-21T17:00:00+00:00"
   ]
  ],
  "canus": {
@@ -2642,12 +2658,12 @@
    "city": "Edmonton",
    "tz": "America/Edmonton",
    "world": false,
-   "w": "Police",
-   "label": "A B.C.-founded social sauna club is opening its first…",
-   "u": "https://dailyhive.com/edmonton/tality-wellness-sherwood-park-alberta",
-   "title": "A B.C.-founded social sauna club is opening its first Alberta location near Edmonton",
-   "outlet": "Daily Hive",
-   "t": "Sat 6:27 p.m.",
+   "w": "Buddy Bench",
+   "label": "‘Be a friend’: 9-year-old inspires city planners to…",
+   "u": "https://www.ctvnews.ca/edmonton/article/be-a-friend-9-year-old-inspires-city-planners-to-install-new-buddy-bench-at-new-playground/",
+   "title": "‘Be a friend’: 9-year-old inspires city planners to install new ‘Buddy Bench’ at new playground",
+   "outlet": "CTV News",
+   "t": "Sat 6:48 p.m.",
    "hot": false
   },
   {
@@ -2714,6 +2730,30 @@
    "img": "https://www.ctvnews.ca/resizer/v2/R7R4V5U6XVCQBLM7LA4EXDPG5E.jpg?smart=true&auth=87db4f0e7a6d709d6e0f5486ad7fcfea85b077163e51c16b5c20b48f5c705a44&width=1200&height=630"
   },
   {
+   "desk": "us",
+   "pic": "podium",
+   "t": "Sat 8:57 p.m.",
+   "iso": "2026-11-22T01:57:37+00:00",
+   "title": "Washington governor decries ‘out-of-control’ ICE at Seattle airport",
+   "summary": "",
+   "outlet": "The Hill, CBS News, Toronto Star + CTV News + CP24",
+   "n": 3,
+   "url": "https://thehill.com/homenews/state-watch/6235558-ferguson-condemns-ice-airport-detention/",
+   "img": ""
+  },
+  {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Sat 8:00 p.m.",
+   "iso": "2026-11-22T01:00:01+00:00",
+   "title": "Ontario's Christkindl Market is like a mini trip to Germany with twinkly huts and mulled wine",
+   "summary": "If you've ever dreamed of spending the holiday season in Germany, you might want to plan a trip to this dazzling Ontario Christmas market.",
+   "outlet": "Narcity, Middle East Eye, CKOM / PAnow (AP)",
+   "n": 3,
+   "url": "https://www.narcity.com/christkindl-market-kitchener-german-christmas-market-ontario",
+   "img": "https://www.narcity.com/media-library/hands-hold-fresh-pretzels-at-a-market-right-a-snowy-crowded-holiday-market-glows-at-night.jpg?id=68700258&width=1200&height=600&coordinates=0%2C36%2C0%2C36"
+  },
+  {
    "desk": "world",
    "pic": "globe",
    "t": "Sat 7:13 p.m.",
@@ -2726,16 +2766,40 @@
    "img": ""
   },
   {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Sat 6:59 p.m.",
+   "iso": "2026-11-21T23:59:03+00:00",
+   "title": "Iran war live: Iran targets US bases in Bahrain; Houthi strikes continue",
+   "summary": "Bahrain has condemned Iran's strikes on US military assets in the Gulf country, as Houthis keep Saudi Arabia on edge.",
+   "outlet": "Al Jazeera, Middle East Eye, Euronews",
+   "n": 3,
+   "url": "https://www.aljazeera.com/news/liveblog/2026/11/21/iran-war-live-iran-targets-us-military-in-bahrain-houthi-strikes-continue?traffic_source=rss",
+   "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6b022741d913-1795303233.jpg?resize=1920%2C1440"
+  },
+  {
    "desk": "us",
    "pic": "podium",
-   "t": "Sat 8:57 p.m.",
-   "iso": "2026-11-22T01:57:37+00:00",
-   "title": "Washington governor decries ‘out-of-control’ ICE at Seattle airport",
-   "summary": "",
-   "outlet": "The Hill, Toronto Star + CTV News + CP24 + CBS News (AP)",
+   "t": "Sat 9:12 p.m.",
+   "iso": "2026-11-22T02:12:39+00:00",
+   "title": "FBI's national crime database targeted in hack, Trump says",
+   "summary": "President Donald Trump confirmed on Saturday that the FBI’s National Crime Information Center database was targeted in a hack.",
+   "outlet": "ABC News, The Japan Times (Reuters)",
    "n": 2,
-   "url": "https://thehill.com/homenews/state-watch/6235558-ferguson-condemns-ice-airport-detention/",
-   "img": ""
+   "url": "https://abcnews.com/US/fbis-national-crime-database-targeted-hack-trump/story?id=138347810",
+   "img": "https://i.abcnewsfe.com/a/f00b342d-93ec-4ff7-939f-21f8331ca772/fbi-building-gty-lv-230124_1674604652411_hpMain_16x9.jpg?w=1600"
+  },
+  {
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Sat 9:08 p.m.",
+   "iso": "2026-11-22T02:08:49+00:00",
+   "title": "Victorian Greens seek urgent injunction over how-to-vote cards mimicking party’s branding but preferencing it last",
+   "summary": "Exclusive: Independent candidate Tosh-Jake Finnigan’s cards instruct people to vote in a way that would benefit Liberal party",
+   "outlet": "The Guardian, Daily Hive",
+   "n": 2,
+   "url": "https://www.theguardian.com/australia-news/2026/nov/21/victorian-greens-seek-urgent-injunction-over-how-to-vote-cards-mimicking-branding-but-preferencing-it-last-ntwnfb",
+   "img": "https://i.guim.co.uk/img/media/96ab340872e588ad309196b07390be6b1c05c064/0_0_935_748/master/935.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=f6c43a047d6bddbcd7f34ffc8dc3255d"
   },
   {
    "desk": "us",
@@ -2752,18 +2816,6 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Sat 8:47 p.m.",
-   "iso": "2026-11-22T01:47:36+00:00",
-   "title": "Fears about toxic lead dust spur battle over U.S. Army plan to detonate bomb-making material in Iowa. Here’s what we know",
-   "summary": "Residents in southeastern Iowa are waiting to learn whether the U.S. Army will detonate five tons of lead azide at a munitions plant after a judge ordered a temporary pause, with environmental activists and local officials expressing concern over possible health risks.",
-   "outlet": "CTV News + CP24 (CP), Al Jazeera",
-   "n": 2,
-   "url": "https://www.ctvnews.ca/world/article/fears-about-toxic-lead-dust-spur-battle-over-us-army-plan-to-detonate-bomb-making-material-in-iowa-heres-what-we-know/",
-   "img": "https://www.ctvnews.ca/resizer/v2/AIEEOJBV7REOFN4ZBHNGQRBBEU.JPG?smart=true&auth=1b3ebe4050d9b3ce2ec71b90247fbacaec6439674283f044e84ffbc63172d0bd&width=1200&height=630"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
    "t": "Sat 8:37 p.m.",
    "iso": "2026-11-22T01:37:38+00:00",
    "title": "Pedestrian struck by vehicle in Scarborough suffers life-threatening injuries",
@@ -2772,18 +2824,6 @@
    "n": 2,
    "url": "https://www.ctvnews.ca/toronto/article/pedestrian-struck-by-vehicle-in-scarborough-suffers-life-threatening-injuries-3/",
    "img": "https://www.ctvnews.ca/resizer/v2/S5TT2CR7A5CEHMWHAXTCBU57M4.png?smart=true&auth=b0b049f921a8f80c674cf78686aafab426f6570ec566a728b125a2dee9fe4878&width=1200&height=630"
-  },
-  {
-   "desk": "us",
-   "pic": "podium",
-   "t": "Sat 8:10 p.m.",
-   "iso": "2026-11-22T01:10:51+00:00",
-   "title": "FBI's national crime database targeted in hack, Trump says",
-   "summary": "President Donald Trump confirmed on Saturday that the FBI’s National Crime Information Center database was targeted in a hack.",
-   "outlet": "ABC News, The Japan Times (Reuters)",
-   "n": 2,
-   "url": "https://abcnews.com/US/fbis-national-crime-database-targeted-hack-trump/story?id=138347810",
-   "img": "https://i.abcnewsfe.com/a/f00b342d-93ec-4ff7-939f-21f8331ca772/fbi-building-gty-lv-230124_1674604652411_hpMain_16x9.jpg?w=1600"
   },
   {
    "desk": "us",
@@ -2846,16 +2886,28 @@
    "img": "https://d3i6fh83elv35t.cloudfront.net/static/2026/11/2026-10-23T110237Z_1721394900_RC2UFMAGSKQ9_RTRMADP_3_AMERICAN-EXPRESS-RESULTS-2-1024x683.jpg"
   },
   {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Sat 9:09 p.m.",
+   "iso": "2026-11-22T02:09:24+00:00",
+   "title": "Pezeshkian says Iran engaged in 'silent economic war' as blockade completes 130 days",
+   "summary": "",
+   "outlet": "Middle East Eye",
+   "n": 1,
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/pezeshkian-says-iran-engaged-silent-economic-war-blockade-completes-130",
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/000_C7FN2G9%281%29.jpg"
+  },
+  {
    "desk": "world",
    "pic": "globe",
-   "t": "Sat 3:29 p.m.",
-   "iso": "2026-11-21T20:29:57+00:00",
-   "title": "Iran unveils underground missile launcher as Israeli strike in Gaza kills 3",
-   "summary": "Brig. Gen. Seyyed Majid Mousavi, commander of Iran’s Aerospace Force, said the country's “capabilities have expanded significantly,\" adding it had integrated ‘surprises’ into its combat structure.",
-   "outlet": "CKOM / PAnow (AP), CTV News + CP24 (CP)",
-   "n": 2,
-   "url": "https://www.ckom.com/2026/11/21/iran-unveils-underground-missile-launcher-as-israeli-strike-in-gaza-kills-3/",
-   "img": "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/648/files/2026/11/gaza-ap-112126.jpg"
+   "t": "Sat 8:47 p.m.",
+   "iso": "2026-11-22T01:47:36+00:00",
+   "title": "Fears about toxic lead dust spur battle over U.S. Army plan to detonate bomb-making material in Iowa. Here’s what we know",
+   "summary": "Residents in southeastern Iowa are waiting to learn whether the U.S. Army will detonate five tons of lead azide at a munitions plant after a judge ordered a temporary pause, with environmental activists and local officials expressing concern over possible health risks.",
+   "outlet": "CTV News + CP24 (CP)",
+   "n": 1,
+   "url": "https://www.ctvnews.ca/world/article/fears-about-toxic-lead-dust-spur-battle-over-us-army-plan-to-detonate-bomb-making-material-in-iowa-heres-what-we-know/",
+   "img": "https://www.ctvnews.ca/resizer/v2/AIEEOJBV7REOFN4ZBHNGQRBBEU.JPG?smart=true&auth=1b3ebe4050d9b3ce2ec71b90247fbacaec6439674283f044e84ffbc63172d0bd&width=1200&height=630"
   },
   {
    "desk": "world",
@@ -2880,18 +2932,6 @@
    "n": 1,
    "url": "https://www.ctvnews.ca/sci-tech/article/little-mercury-gets-its-first-visitor-in-years-as-a-pair-of-spacecraft-loop-into-orbit/",
    "img": "https://www.ctvnews.ca/resizer/v2/ILQTNIMNQZDDSSHQZSVVYBGKSQ.jpg?smart=true&auth=da6703fd4aafc7f0f5b09281fd160c2955b60f999e761f3153bb3ff6fc5d3e9b&width=1200&height=630"
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Sat 8:00 p.m.",
-   "iso": "2026-11-22T01:00:01+00:00",
-   "title": "Ontario's Christkindl Market is like a mini trip to Germany with twinkly huts and mulled wine",
-   "summary": "If you've ever dreamed of spending the holiday season in Germany, you might want to plan a trip to this dazzling Ontario Christmas market.",
-   "outlet": "Narcity",
-   "n": 1,
-   "url": "https://www.narcity.com/christkindl-market-kitchener-german-christmas-market-ontario",
-   "img": "https://www.narcity.com/media-library/hands-hold-fresh-pretzels-at-a-market-right-a-snowy-crowded-holiday-market-glows-at-night.jpg?id=68700258&width=1200&height=600&coordinates=0%2C36%2C0%2C36"
   },
   {
    "desk": "business",
@@ -2966,18 +3006,6 @@
    "img": "https://winnipeg.citynews.ca/wp-content/blogs.dir/sites/13/IMG_1969-e1795297030130.jpeg"
   },
   {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Sat 3:58 p.m.",
-   "iso": "2026-11-21T20:58:31+00:00",
-   "title": "B.C. Conservatives give two ministers housing roles as NDP and Greens criticize shakeup",
-   "summary": "B.C. Conservatives have given two ministers housing roles, but the NDP and Greens say grouping housing with sport and culture makes it less of a priority.",
-   "outlet": "Daily Hive",
-   "n": 1,
-   "url": "https://dailyhive.com/vancouver/cathie-ounsted-zeeshan-wahal-bc-housing-ministers-cabinet",
-   "img": "https://images-dh-production-baselayer.dailyhive.com/uploads/2026/11/Cathie-Ounsted-Zeeshan-Wahla-housing-bc-ministers-f.jpg.jpg?format=auto"
-  },
-  {
    "desk": "business",
    "pic": "chart",
    "t": "Sat 3:44 p.m.",
@@ -3018,7 +3046,7 @@
    "pic": "parliament",
    "t": "Sat 1:20 p.m.",
    "iso": "2026-11-21T18:20:57+00:00",
-   "title": "Alberta NDP to nominate outspoken ER physician in conservative stronghold",
+   "title": "Alberta NDP nominate outspoken ER physician in conservative stronghold",
    "summary": "",
    "outlet": "Calgary Herald",
    "n": 1,
@@ -3036,18 +3064,6 @@
    "n": 1,
    "url": "https://vancouver.citynews.ca/2026/11/21/conservative-premier-doerkson-gets-ready-to-tear-housing-plans-ndp-interim-leader/",
    "img": "https://vancouver.citynews.ca/wp-content/blogs.dir/sites/9/2025/05/ead605bf8e8e7018ba0aa146dd4c2f36dce1840903e5497242a99085bb17845e.jpg"
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Sat 11:28 a.m.",
-   "iso": "2026-11-21T16:28:03+00:00",
-   "title": "Downtown Eastside housing workers resist B.C. non-profit's facial recognition plans",
-   "summary": "The union representing workers at a Downtown Eastside housing non-profit in Vancouver is resisting a plan to implement facial recognition technology for employees.",
-   "outlet": "CTV News (CP)",
-   "n": 1,
-   "url": "https://www.ctvnews.ca/vancouver/article/downtown-eastside-housing-workers-resist-bc-non-profits-facial-recognition-plans/",
-   "img": "https://www.ctvnews.ca/resizer/v2/PTR5UJNEZXADSZKGORQ45Y3YRQ.jpg?smart=true&auth=e2e6db954f688445954c64f4c74f38bb1de5e6b269ef509aa2f1e9282d946643&width=1200&height=630"
   }
  ],
  "reads": [
@@ -3453,7 +3469,7 @@
     "url": "https://www.youtube.com/watch?v=wcY4K5CNVx4",
     "img": "https://i.ytimg.com/vi/wcY4K5CNVx4/hqdefault.jpg",
     "story": "Fox News' All-American Christmas tree",
-    "watching": "191"
+    "watching": "180"
    },
    {
     "net": "LiveNOW from FOX",
@@ -3462,7 +3478,7 @@
     "url": "https://www.youtube.com/watch?v=9ZvbYvsufDE",
     "img": "https://i.ytimg.com/vi/9ZvbYvsufDE/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "777",
+    "watching": "779",
     "rolling": true
    }
   ],
@@ -3513,21 +3529,75 @@
  "pm": [],
  "blogs_auto": [
   {
+   "net": "Middle East Eye",
+   "story": "Pezeshkian says Iran engaged in 'silent economic war' as blockade comp",
+   "title": "Pezeshkian says Iran engaged in 'silent economic war' as blockade completes 130 days",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/pezeshkian-says-iran-engaged-silent-economic-war-blockade-completes-130",
+   "updated": "2026-11-22T02:09:24+00:00",
+   "ended": false,
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/000_C7FN2G9%281%29.jpg"
+  },
+  {
+   "net": "Middle East Eye",
+   "story": "Israeli settlers attack Palestinian homes in Hebron, Ramallah",
+   "title": "Israeli settlers attack Palestinian homes in Hebron, Ramallah",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-attack-palestinian-homes-hebron-ramallah",
+   "updated": "2026-11-22T01:35:25+00:00",
+   "ended": false,
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/000_C7FN2G9%281%29.jpg"
+  },
+  {
+   "net": "Middle East Eye",
+   "story": "Turkey says Israel blocking thousands of container homes from entering",
+   "title": "Turkey says Israel blocking thousands of container homes from entering Gaza",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/turkey-says-israel-blocking-thousands-container-homes-entering-gaza",
+   "updated": "2026-11-22T01:04:57+00:00",
+   "ended": false,
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/000_C7FN2G9%281%29.jpg"
+  },
+  {
+   "net": "Middle East Eye",
+   "story": "Hind Rajab Foundation urges Germany to arrest Israeli soldier over Gaz",
+   "title": "Hind Rajab Foundation urges Germany to arrest Israeli soldier over Gaza war crimes",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/hind-rajab-foundation-urges-germany-arrest-israeli-soldier-over-gaza-war",
+   "updated": "2026-11-22T00:44:32+00:00",
+   "ended": false,
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/000_C7FN2G9%281%29.jpg"
+  },
+  {
+   "net": "Middle East Eye",
+   "story": "Gaza death toll rises to 1,671",
+   "title": "Gaza death toll rises to 1,671",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/gaza-death-toll-rises-1671",
+   "updated": "2026-11-22T00:04:17+00:00",
+   "ended": false,
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/000_C7FN2G9%281%29.jpg"
+  },
+  {
    "net": "Al Jazeera",
    "story": "Iran war live: Iran targets US bases in Bahrain; Houthi strikes contin",
    "title": "Iran war live: Iran targets US bases in Bahrain; Houthi strikes continue",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/21/iran-war-live-iran-targets-us-military-in-bahrain-houthi-strikes-continue?traffic_source=rss",
-   "updated": "2026-11-22T02:03:59+00:00",
+   "updated": "2026-11-22T02:15:00+00:00",
    "ended": false,
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6b022741d913-1795303233.jpg?resize=1920%2C1440"
+  },
+  {
+   "net": "Middle East Eye",
+   "story": "Houthis deny threat to Saudi Arabia’s holy city of Mecca",
+   "title": "Houthis deny threat to Saudi Arabia’s holy city of Mecca",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-deny-threat-saudi-arabias-holy-city-mecca",
+   "updated": "2026-11-21T23:39:48+00:00",
+   "ended": false,
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/000_C7FN2G9%281%29.jpg"
   }
  ],
  "related": {
   "auto-b70837ca": {
    "ties": [
     "bains",
-    "becky",
-    "tory"
+    "tory",
+    "becky"
    ],
    "stories": [],
    "views": [
@@ -3614,6 +3684,24 @@
  },
  "canangle": {},
  "canangle_live": {
+  "https://www.middleeasteye.net/live-blog/live-blog-update/hind-rajab-foundation-urges-germany-arrest-israeli-soldier-over-gaza-war": {
+   "story": "Hind Rajab Foundation urges Germany to arrest Israeli soldier over Gaza war crimes",
+   "us": false,
+   "specific": 1,
+   "stories": [
+    {
+     "t": "Sat 8:00 p.m.",
+     "iso": "2026-11-22T01:00:01+00:00",
+     "outlet": "Narcity",
+     "title": "Ontario's Christkindl Market is like a mini trip to Germany with twinkly huts and mulled wine",
+     "url": "https://www.narcity.com/christkindl-market-kitchener-german-christmas-market-ontario",
+     "ca": false,
+     "tie": ""
+    }
+   ],
+   "official": [],
+   "views": []
+  },
   "https://www.npr.org/2026/11/21/g-s1-154966/trump-contractors-congress": {
    "story": "Trump orders federal contractors to check with White House before responding to Congress",
    "us": true,
