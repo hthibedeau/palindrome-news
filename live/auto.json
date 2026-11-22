@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-22T01:56:02.473175+00:00",
- "checkedLabel": "Sat 8:56 p.m.",
+ "checked": "2026-11-22T02:06:02.755958+00:00",
+ "checkedLabel": "Sat 9:06 p.m.",
  "stories": [
   {
    "key": "top",
@@ -30,6 +30,15 @@
   }
  ],
  "wire": [
+  [
+   "Sat 9:04 p.m.",
+   "Latest",
+   "No. 5 Duke pulls away from Columbia 71-47 behind Emilee Skinner’s 17 points",
+   "The Canadian Press (via Winnipeg Free Press)",
+   "https://www.winnipegfreepress.com/uncategorized/2026/11/21/no-5-duke-pulls-away-from-columbia-71-47-behind-emilee-skinners-17-points",
+   "2026-11-22T02:04:41+00:00",
+   1
+  ],
   [
    "Sat 8:52 p.m.",
    "Latest",
@@ -100,7 +109,7 @@
    "CBS News",
    "https://www.cbsnews.com/news/ice-arrest-alaska-airlines-flight-seattle/",
    "2026-11-22T01:41:00+00:00",
-   4
+   5
   ],
   [
    "Sat 8:40 p.m.",
@@ -245,15 +254,6 @@
    "https://www.theguardian.com/australia-news/2026/nov/22/fred-nile-former-nsw-politician-and-figurehead-of-the-rightwing-christian-democratic-party-dies-aged-92",
    "2026-11-22T00:26:35+00:00",
    1
-  ],
-  [
-   "Sat 7:10 p.m.",
-   "U.S.",
-   "FBI reportedly investigating apparent hack of its criminal database",
-   "BBC News",
-   "https://www.bbc.co.uk/news/articles/cvze7de86pk3o?at_medium=RSS&at_campaign=rss",
-   "2026-11-22T00:10:44+00:00",
-   2
   ]
  ],
  "blogs": [
@@ -322,7 +322,7 @@
    "theme": "Canada and the U.S."
   },
   {
-   "score": 11,
+   "score": 9,
    "title": "Ontario Liberals elect Navdeep Bains as new party leader",
    "url": "https://www.cbc.ca/news/canada/toronto/liberal-leadership-race-results-9.7431298",
    "outlets": 9,
@@ -360,6 +360,14 @@
    "theme": ""
   },
   {
+   "score": 7,
+   "title": "Washington governor decries ‘out-of-control’ ICE at Seattle airport",
+   "url": "https://thehill.com/homenews/state-watch/6235558-ferguson-condemns-ice-airport-detention/",
+   "outlets": 5,
+   "why": [],
+   "theme": ""
+  },
+  {
    "score": 6,
    "title": "Montreal police arrest 2 ex-officers for alleged assault, criminal harassment, breach of trust",
    "url": "https://www.cbc.ca/news/canada/montreal/spvm-arrest-two-officers-racism-scandal-9.7431306",
@@ -371,18 +379,8 @@
   },
   {
    "score": 6,
-   "title": "Satellites are constantly photographing Earth. A Waterloo student has compiled the pictures into one spot",
-   "url": "https://www.cbc.ca/news/canada/kitchener-waterloo/satellites-are-constantly-photographing-earth-a-waterloo-student-has-compiled-the-pictures-into-one-spot-9.7428257",
-   "outlets": 3,
-   "why": [
-    "CBC News front #6"
-   ],
-   "theme": ""
-  },
-  {
-   "score": 6,
-   "title": "Canada, U.S. leaders respond to Pentagon memo report",
-   "url": "https://www.ctvnews.ca/politics/article/canada-us-leaders-respond-to-pentagon-memo-report/",
+   "title": "This train from Toronto takes you to one of the world's absolute best places to spend Christmas",
+   "url": "https://www.narcity.com/toronto/via-rail-toronto-to-montreal-tickets-christmas-things-to-do",
    "outlets": 4,
    "why": [],
    "theme": ""
@@ -598,11 +596,11 @@
      "navdeep",
      "liberal",
      "druhan",
-     "becky",
      "bains",
+     "becky",
      "tory"
     ],
-    "score": 11,
+    "score": 9,
     "outlets": 3,
     "carriers": 8,
     "tag": "Developing",
@@ -840,10 +838,11 @@
     "incoherent": false,
     "popular": 5,
     "us_election": false,
-    "fronts": 4,
-    "fronts_ca": 4,
+    "fronts": 5,
+    "fronts_ca": 5,
     "fronts_who": [
      "CTV News",
+     "Toronto Star",
      "National Post",
      "The Globe and Mail",
      "CP24"
@@ -851,12 +850,12 @@
     "leads_ca": true,
     "judgment": "national",
     "judgment_why": "National: affects some people; carried across the country (national desks).",
-    "weight": 42.0,
+    "weight": 40.0,
     "videos": [
      {
       "net": "Global News",
       "url": "https://www.youtube.com/watch?v=8tZq2Lp1nOM",
-      "title": "Navdeep Bains named new Ontario Liberal leader",
+      "title": "Ontario politics: who is new Liberal party leader Navdeep Bains?",
       "img": "https://i.ytimg.com/vi/8tZq2Lp1nOM/hqdefault.jpg",
       "rec": false,
       "up": ""
@@ -1037,7 +1036,7 @@
        {
         "outlet": "CTV News",
         "src": "The Canadian Press",
-        "byline": "nski\" \"Wayne Mantyka\" \"Hannah Schmidt\" \"The Canadian Press\" \"Stacey Hein\" \"Hay"
+        "byline": "\" \"Caitlin Brezinski\" \"Hannah Schmidt\" \"The Canadian Press\" \"Stacey Hein\" \"Hay"
        },
        {
         "outlet": "CP24",
@@ -1068,7 +1067,7 @@
     "fronts": 0,
     "fronts_ca": 0,
     "fronts_who": [],
-    "outled_ca": 4,
+    "outled_ca": 5,
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (national desks).",
     "weight": 24.5
@@ -1080,16 +1079,17 @@
     "url": "https://www.cbc.ca/news/canada/toronto/liberal-leadership-race-results-9.7431298",
     "rank": 1,
     "live": "",
-    "weight": 42.0,
-    "score": 11,
+    "weight": 40.0,
+    "score": 9,
     "independent": 3,
     "most_read": 5,
     "canada": "canadian",
     "theme": "",
     "top": true,
-    "fronts": 4,
+    "fronts": 5,
     "fronts_who": [
      "CTV News",
+     "Toronto Star",
      "National Post",
      "The Globe and Mail",
      "CP24"
@@ -1165,12 +1165,22 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
+    "title": "Washington governor decries ‘out-of-control’ ICE at Seattle airport",
+    "score": 7,
+    "why": "not built: only 2 independent report(s) (5 sites)"
+   },
+   {
     "title": "Montreal police arrest 2 ex-officers for alleged assault, criminal harassment, breach of trust",
     "score": 6,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Satellites are constantly photographing Earth. A Waterloo student has compiled the pictures into one spot",
+    "title": "This train from Toronto takes you to one of the world's absolute best places to spend Christmas",
+    "score": 6,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Conference designed to launch Christian education initiatives held at Regina Victory Church",
     "score": 6,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
@@ -1180,29 +1190,19 @@
     "why": "not built: only 2 independent report(s) (4 sites)"
    },
    {
-    "title": "ICE officers arrest 2 passengers boarding flight in Seattle",
-    "score": 6,
-    "why": "not built: only 1 independent report(s) (4 sites)"
-   },
-   {
     "title": "Little Mercury gets its first visitor in years as a pair of spacecraft loop into orbit",
     "score": 6,
     "why": "not built: only 1 independent report(s) (4 sites)"
    },
    {
-    "title": "Paolo Bulgari, the Italian jeweller who turned a family business into global luxury brand, dies at 89",
-    "score": 6,
-    "why": "not built: only 1 independent report(s) (4 sites)"
-   },
-   {
-    "title": "Quebec students consider general strike to protest affordability crisis",
-    "score": 6,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
     "title": "Sunrise on the Reaping may be a prequel, but it's the worst way to start The Hunger Games",
     "score": 5,
     "why": "not built: only 1 independent report(s) (1 sites)"
+   },
+   {
+    "title": "Satellites are constantly photographing Earth. A Waterloo student has compiled the pictures into one spot",
+    "score": 5,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
     "title": "Former White House press secretary under investigation for lawyer claims",
@@ -1409,7 +1409,7 @@
    "id": "TgaahQeSfLA",
    "r": "ca",
    "o": "Global News",
-   "t": "Focus Ontario: Nov. 21, 2026 | Can Ontario avoid a credit rating downgrade?",
+   "t": "Focus Ontario: Nov. 21, 2026 | What a credit downgrade could mean for the province",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=TgaahQeSfLA",
@@ -1437,7 +1437,7 @@
    "id": "lNKEVlE9gdY",
    "r": "ca",
    "o": "APTN News",
-   "t": "Troubled Waters: Is Winnipeg’s water costing another community its way of life? | APTN Investigates",
+   "t": "Troubled Waters: The impact of one city’s water supply | APTN Investigates",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=lNKEVlE9gdY",
@@ -1465,7 +1465,7 @@
    "id": "8tZq2Lp1nOM",
    "r": "ca",
    "o": "Global News",
-   "t": "Navdeep Bains named new Ontario Liberal leader",
+   "t": "Ontario politics: who is new Liberal party leader Navdeep Bains?",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=8tZq2Lp1nOM",
@@ -1479,7 +1479,7 @@
    "id": "RhyXPo87kp8",
    "r": "ca",
    "o": "CTV News",
-   "t": "Santa rolls into Ottawa for 57th parade | CTV News Ottawa at Six for November 21, 2026",
+   "t": "Families flock to Help Santa Toy parade | CTV News Ottawa at Six for November 21, 2026",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=RhyXPo87kp8",
@@ -1493,7 +1493,7 @@
    "id": "jpWdnlfgKek",
    "r": "ca",
    "o": "CTV News",
-   "t": "Christmas magic: Families line street for 57th toy parade",
+   "t": "Thousands pack Help Santa Toy Parade",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=jpWdnlfgKek",
@@ -1514,20 +1514,6 @@
    "img": "https://i.ytimg.com/vi/UWJEXo1LGfg/hqdefault.jpg",
    "up": "2026-11-21",
    "added": "2026-11-21T18:47:53.098591+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "_YdHi9o97P4",
-   "r": "us",
-   "o": "CNN",
-   "t": "The race to fix the US’ outdated air traffic control system",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=_YdHi9o97P4",
-   "img": "https://i.ytimg.com/vi/_YdHi9o97P4/hqdefault.jpg",
-   "up": "2026-11-21",
-   "added": "2026-11-21T19:13:02.403638+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1570,20 +1556,6 @@
    "img": "https://i.ytimg.com/vi/N2ilH4A6wAQ/hqdefault.jpg",
    "up": "2026-11-21",
    "added": "2026-11-21T20:50:46.981574+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "R_rXiysihBI",
-   "r": "us",
-   "o": "CNN",
-   "t": "Nvidia scandal, Trump’s summit & more | NewsNight this week",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=R_rXiysihBI",
-   "img": "https://i.ytimg.com/vi/R_rXiysihBI/hqdefault.jpg",
-   "up": "2026-11-21",
-   "added": "2026-11-21T21:00:47.190643+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1728,20 +1700,6 @@
    "geo": "unknown"
   },
   {
-   "id": "mR0DVTvvu7U",
-   "r": "us",
-   "o": "Fox News",
-   "t": "House intel rep: Our enemies try EVERY DAY to target our systems",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=mR0DVTvvu7U",
-   "img": "https://i.ytimg.com/vi/mR0DVTvvu7U/hqdefault.jpg",
-   "up": "2026-11-21",
-   "added": "2026-11-22T01:46:02.854002+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "y3WfO4cu5f0",
    "r": "us",
    "o": "PBS NewsHour",
@@ -1784,10 +1742,24 @@
    "geo": "unknown"
   },
   {
+   "id": "BMwKuWACIHo",
+   "r": "us",
+   "o": "Fox News",
+   "t": "President Trump says deal with Iran would be ‘permanent’",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=BMwKuWACIHo",
+   "img": "https://i.ytimg.com/vi/BMwKuWACIHo/hqdefault.jpg",
+   "up": "2026-11-21",
+   "added": "2026-11-22T02:06:02.755958+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
    "id": "VVQ1c_znNrI",
    "r": "world",
    "o": "Sky News",
-   "t": "German bidder stages last-gasp bid to rescue Poundland",
+   "t": "German investment firm makes last-minute bid for Poundland",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=VVQ1c_znNrI",
@@ -1975,11 +1947,11 @@
   },
   {
    "o": "The Hill",
-   "h": "Rounds: Pentagon restricted socialization between US, Canada defense officials",
-   "u": "https://thehill.com/policy/defense/6235519-dod-limits-us-canada-socializing/",
+   "h": "Washington governor decries ‘out-of-control’ ICE at Seattle airport",
+   "u": "https://thehill.com/homenews/state-watch/6235558-ferguson-condemns-ice-airport-detention/",
    "img": "",
-   "w": "Sat 6:52 p.m.",
-   "iso": "2026-11-21T23:52:23+00:00"
+   "w": "Sat 8:57 p.m.",
+   "iso": "2026-11-22T01:57:37+00:00"
   },
   {
    "o": "Politico",
@@ -2176,6 +2148,13 @@
  ],
  "eds": [
   [
+   "Toronto Star",
+   "Opinion",
+   "Pete Hegseth's secret memo on the U.S.-Canada defence relationship is another boneheaded move",
+   "https://www.thestar.com/opinion/star-columnists/hegseth-s-secret-memo-on-the-u-s-canada-defence-relationship-is-another-boneheaded-move/article_d80d0e3f-a928-4832-a498-fa27e658725b.html",
+   "2026-11-21T20:00:00+00:00"
+  ],
+  [
    "Toronto Sun",
    "Editorial",
    "U.S. Democrats can’t save us from Trump",
@@ -2237,13 +2216,6 @@
    "Defining Genocide Down at the International Court of Justice",
    "https://www.wsj.com/opinion/international-court-of-justice-genocide-definition-israel-1f650a2e?mod=rss_opinion",
    "2026-11-21T21:19:00+00:00"
-  ],
-  [
-   "Washington Examiner",
-   "Opinion",
-   "Trump kept his promises. It cost Republicans the midterm elections",
-   "https://www.washingtonexaminer.com/op-eds/4811022/2026-midterm-results-trump-kept-promises/",
-   "2026-11-21T17:00:00+00:00"
   ]
  ],
  "canus": {
@@ -2600,21 +2572,21 @@
    "o": "CHEK News",
    "region": "Vancouver Island",
    "arctic": false,
-   "h": "‘Frustrating’: 2nd major cleanup of illegal dumping in a year near Qualicum",
-   "u": "https://cheknews.ca/frustrating-2nd-major-cleanup-of-illegal-dumping-in-a-year-near-qualicum-1363195/",
-   "t": "Sat 8:53 p.m.",
-   "desc": "The Four Wheel Drive Association of BC gathered nearly three dozen volunteers Saturday to clean up a large area near Whiskey Creek.",
-   "img": "https://cheknews.ca/wp-content/uploads/2026/11/Copy-of-Blank-background-for-pictures-2026-11-21T185046.992.png"
+   "h": "‘It’s a dream come true’: Nanaimo teen rides to top of equestrian championships",
+   "u": "https://cheknews.ca/its-a-dream-come-true-nanaimo-teen-rides-to-top-of-equestrian-championships-1362756/",
+   "t": "Sat 9:01 p.m.",
+   "desc": "A Nanaimo teen is turning his love of horses into international success, as he wins riding championships that he's dreamed of for years.",
+   "img": "https://cheknews.ca/wp-content/uploads/2026/11/Copy-of-Blank-background-for-pictures-2026-11-21T190013.077.png"
   },
   {
-   "o": "Thunder Bay Newswatch",
-   "region": "Thunder Bay",
+   "o": "SooToday",
+   "region": "Sault Ste. Marie",
    "arctic": false,
-   "h": "Thunderwolves can't hang with Lancers in lopsided loss",
-   "u": "https://www.tbnewswatch.com/local-news/thunderwolves-cant-hang-with-lancers-in-lopsided-loss-13045918",
-   "t": "Sat 8:30 p.m.",
-   "desc": "Read the full story and comment on Tbnewswatch.com",
-   "img": "https://www.vmcdn.ca/f/files/tbnewswatch/images/local/thunderwolves-basketball/2026-27/women/keira-chow.jpg;w=1200;h=800;mode=crop"
+   "h": "GALLERY: Rotary Santa Claus Parade brings the holiday cheer",
+   "u": "https://www.sootoday.com/local-news/gallery-rotary-santa-claus-parade-brings-the-holiday-cheer-13045856",
+   "t": "Sat 9:00 p.m.",
+   "desc": "Unseasonably warm temperatures were an added bonus for this year's event",
+   "img": "https://www.vmcdn.ca/f/files/sootoday/images/events/santa-claus-parade/2026/2026-11-21-santaclausparadejh09.jpg;w=1200;h=800;mode=crop"
   }
  ],
  "clocks": [
@@ -2658,24 +2630,24 @@
    "city": "Winnipeg",
    "tz": "America/Winnipeg",
    "world": false,
-   "w": "Transportation",
-   "label": "City of Regina plans to shut down public transit starting…",
-   "u": "https://www.cbc.ca/news/canada/saskatchewan/regina-shut-down-public-transit-bargaining-9.7431432",
-   "title": "City of Regina plans to shut down public transit starting Monday",
-   "outlet": "CBC News",
-   "t": "Sat 7:34 p.m.",
-   "hot": false
+   "w": "Labour",
+   "label": "Conference designed to launch Christian education…",
+   "u": "https://www.ctvnews.ca/regina/article/conference-designed-to-launch-christian-education-initiatives-held-at-regina-victory-church/",
+   "title": "Conference designed to launch Christian education initiatives held at Regina Victory Church",
+   "outlet": "CTV News",
+   "t": "Sat 8:52 p.m.",
+   "hot": true
   },
   {
    "city": "Edmonton",
    "tz": "America/Edmonton",
    "world": false,
-   "w": "Buddy Bench",
-   "label": "‘Be a friend’: 9-year-old inspires city planners to…",
-   "u": "https://www.ctvnews.ca/edmonton/article/be-a-friend-9-year-old-inspires-city-planners-to-install-new-buddy-bench-at-new-playground/",
-   "title": "‘Be a friend’: 9-year-old inspires city planners to install new ‘Buddy Bench’ at new playground",
-   "outlet": "CTV News",
-   "t": "Sat 6:48 p.m.",
+   "w": "Police",
+   "label": "A B.C.-founded social sauna club is opening its first…",
+   "u": "https://dailyhive.com/edmonton/tality-wellness-sherwood-park-alberta",
+   "title": "A B.C.-founded social sauna club is opening its first Alberta location near Edmonton",
+   "outlet": "Daily Hive",
+   "t": "Sat 6:27 p.m.",
    "hot": false
   },
   {
@@ -2732,14 +2704,14 @@
   {
    "desk": "politics",
    "pic": "parliament",
-   "t": "Sat 7:34 p.m.",
-   "iso": "2026-11-22T00:34:29.464000+00:00",
-   "title": "City of Regina plans to shut down public transit starting Monday",
-   "summary": "ATU Canada president said workers have not had a new collective agreement for almost two years and the city chose to suspend services after the union said it would implement a ban on voluntary overtime starting Monday.",
-   "outlet": "CBC News, CKOM / PAnow, CTV News (CP)",
-   "n": 3,
-   "url": "https://www.cbc.ca/news/canada/saskatchewan/regina-shut-down-public-transit-bargaining-9.7431432",
-   "img": ""
+   "t": "Sat 8:52 p.m.",
+   "iso": "2026-11-22T01:52:55+00:00",
+   "title": "Conference designed to launch Christian education initiatives held at Regina Victory Church",
+   "summary": "To launch Christ-centered education initiatives, those gathered on Saturday at the Regina Victory Church for the “Education is Discipleship Conference.”",
+   "outlet": "CTV News (CP), The Guardian, CBC News, CKOM / PAnow",
+   "n": 4,
+   "url": "https://www.ctvnews.ca/regina/article/conference-designed-to-launch-christian-education-initiatives-held-at-regina-victory-church/",
+   "img": "https://www.ctvnews.ca/resizer/v2/R7R4V5U6XVCQBLM7LA4EXDPG5E.jpg?smart=true&auth=87db4f0e7a6d709d6e0f5486ad7fcfea85b077163e51c16b5c20b48f5c705a44&width=1200&height=630"
   },
   {
    "desk": "world",
@@ -2754,16 +2726,16 @@
    "img": ""
   },
   {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Sat 3:51 p.m.",
-   "iso": "2026-11-21T20:51:52+00:00",
-   "title": "As a hot sleeper, I live in these Cozy Earth pajamas every winter — now 20% off for FOX readers",
-   "summary": "Cozy Earth bamboo pajamas are breathable and perfect for hot sleepers and they're 15% off for Black Friday.",
-   "outlet": "Fox News, CTV News (CP), CBC News",
-   "n": 3,
-   "url": "https://www.foxnews.com/deals/cozy-earth-bamboo-pajamas",
-   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/cozy.png"
+   "desk": "us",
+   "pic": "podium",
+   "t": "Sat 8:57 p.m.",
+   "iso": "2026-11-22T01:57:37+00:00",
+   "title": "Washington governor decries ‘out-of-control’ ICE at Seattle airport",
+   "summary": "",
+   "outlet": "The Hill, Toronto Star + CTV News + CP24 + CBS News (AP)",
+   "n": 2,
+   "url": "https://thehill.com/homenews/state-watch/6235558-ferguson-condemns-ice-airport-detention/",
+   "img": ""
   },
   {
    "desk": "us",
@@ -2886,16 +2858,16 @@
    "img": "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/648/files/2026/11/gaza-ap-112126.jpg"
   },
   {
-   "desk": "us",
-   "pic": "podium",
-   "t": "Sat 8:41 p.m.",
-   "iso": "2026-11-22T01:41:00+00:00",
-   "title": "ICE officers arrest 2 passengers boarding flight in Seattle",
-   "summary": "Masked immigration officers arrested two passengers on a crowded airport jet bridge in Seattle as people were boarding Saturday",
-   "outlet": "CBS News + Toronto Star + CTV News + CP24 (AP)",
+   "desk": "world",
+   "pic": "globe",
+   "t": "Sat 8:36 p.m.",
+   "iso": "2026-11-22T01:36:34+00:00",
+   "title": "UN climate talk negotiators go into second day of overtime while at odds over fossil fuels",
+   "summary": "Negotiators at the United Nations climate conference are being asked to consider a last-minute proposal by Turkish officials, an attempt to reach an agreement and salvage the talks that have stretched into a second day of overtime.",
+   "outlet": "CTV News + CP24 (CP)",
    "n": 1,
-   "url": "https://www.cbsnews.com/news/ice-arrest-alaska-airlines-flight-seattle/",
-   "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/22/3a21ffe4-5d69-4a6e-8269-e58dcf41fb97/thumbnail/1200x630/2f7e4b1b76e50db5af7676e06647cccc/ap26325789842711.jpg"
+   "url": "https://www.ctvnews.ca/climate-and-environment/article/climate-talks-in-overtime-as-nations-wrestle-with-response-to-worsening-global-warming/",
+   "img": "https://www.ctvnews.ca/resizer/v2/WLYUU2OEXUNTPZ243DE67GQ624.jpg?smart=true&auth=c7b76477a3a6d9a9ee97db3c539363105ddc1542ca51bf33a33b404dbcd57f21&width=1200&height=630"
   },
   {
    "desk": "world",
@@ -3242,6 +3214,26 @@
    ]
   },
   {
+   "o": "Toronto Star",
+   "ca": true,
+   "h": [
+    "Toronto Star News - Breaking News Stories",
+    "Ontario Liberals bet on Navdeep Bains to revive party fortunes",
+    "Martin Regg Cohn: Navdeep Bains eked out the Liberal leadership. Winning Ontario will be even harder",
+    "Ontario Liberal leadership race recap: Navdeep Bains named new party leader",
+    "From Trudeau cabinet minister to Ontario Liberal leader: Who is Navdeep Bains?",
+    "Mark Carney keeps an insane pace in his quest for a saner world"
+   ],
+   "u": [
+    "",
+    "https://www.thestar.com/politics/provincial/navdeep-bains-wins-ontario-liberal-leadership-on-third-ballot/article_e1e1b4f9-3fc6-4f82-b65a-cb28c775ca9f.html",
+    "https://www.thestar.com/politics/political-opinion/navdeep-bains-eked-out-the-liberal-leadership-winning-ontario-will-be-even-harder/article_dcebbd9d-3440-4ef7-aaeb-dab0c5ac6195.html",
+    "https://www.thestar.com/politics/provincial/ontario-liberal-leadership-live/article_1f6f280d-80d7-4d59-92d0-2087a8a883e7.html",
+    "https://www.thestar.com/politics/provincial/from-trudeau-cabinet-minister-to-ontario-liberal-leader-who-is-navdeep-bains/article_a91177ba-f47f-419b-9f7a-ff2b8a173120.html",
+    "https://www.thestar.com/politics/federal/mark-carney-keeps-an-insane-pace-in-his-quest-for-a-saner-world/article_03cd7af6-6f0b-499d-a213-04d9e91b02dc.html"
+   ]
+  },
+  {
    "o": "National Post",
    "ca": true,
    "h": [
@@ -3461,7 +3453,7 @@
     "url": "https://www.youtube.com/watch?v=wcY4K5CNVx4",
     "img": "https://i.ytimg.com/vi/wcY4K5CNVx4/hqdefault.jpg",
     "story": "Fox News' All-American Christmas tree",
-    "watching": "197"
+    "watching": "191"
    },
    {
     "net": "LiveNOW from FOX",
@@ -3470,7 +3462,7 @@
     "url": "https://www.youtube.com/watch?v=9ZvbYvsufDE",
     "img": "https://i.ytimg.com/vi/9ZvbYvsufDE/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "757",
+    "watching": "777",
     "rolling": true
    }
   ],
@@ -3525,7 +3517,7 @@
    "story": "Iran war live: Iran targets US bases in Bahrain; Houthi strikes contin",
    "title": "Iran war live: Iran targets US bases in Bahrain; Houthi strikes continue",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/21/iran-war-live-iran-targets-us-military-in-bahrain-houthi-strikes-continue?traffic_source=rss",
-   "updated": "2026-11-22T01:45:00+00:00",
+   "updated": "2026-11-22T02:03:59+00:00",
    "ended": false,
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6b022741d913-1795303233.jpg?resize=1920%2C1440"
   }
@@ -3534,8 +3526,8 @@
   "auto-b70837ca": {
    "ties": [
     "bains",
-    "tory",
-    "becky"
+    "becky",
+    "tory"
    ],
    "stories": [],
    "views": [
