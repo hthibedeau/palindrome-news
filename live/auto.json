@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-22T07:06:35.328647+00:00",
- "checkedLabel": "Sun 2:06 a.m.",
+ "checked": "2026-11-22T07:16:35.837887+00:00",
+ "checkedLabel": "Sun 2:16 a.m.",
  "stories": [
   {
    "key": "top",
@@ -30,6 +30,15 @@
   }
  ],
  "wire": [
+  [
+   "Sun 2:11 a.m.",
+   "World",
+   "Fire at confectionary factory in Indonesia leaves at least three dead and dozens missing",
+   "The Guardian",
+   "https://www.theguardian.com/world/2026/nov/22/fire-confectionary-factory-indonesia-jakarta",
+   "2026-11-22T07:11:17+00:00",
+   1
+  ],
   [
    "Sun 2:04 a.m.",
    "Latest",
@@ -118,7 +127,7 @@
    "BBC News",
    "https://www.bbc.co.uk/news/articles/cw8dvg5pgm0eo?at_medium=RSS&at_campaign=rss",
    "2026-11-22T06:05:00+00:00",
-   2
+   1
   ],
   [
    "Sun 1:00 a.m.",
@@ -217,15 +226,6 @@
    "Al Jazeera",
    "https://www.aljazeera.com/video/newsfeed/2026/11/22/first-images-of-mexican-cartel-boss-el-chapo-isidro-after-arrest?traffic_source=rss",
    "2026-11-22T04:42:02+00:00",
-   1
-  ],
-  [
-   "Sat 11:15 p.m.",
-   "Latest",
-   "Kansas City Current capture first NWSL trophy",
-   "CBS News",
-   "https://www.cbsnews.com/news/nwsl-championship-kansas-city-current-washington-spirit/",
-   "2026-11-22T04:15:00+00:00",
    1
   ]
  ],
@@ -331,14 +331,6 @@
   },
   {
    "score": 8,
-   "title": "Gadi Eisenkot invites Netanyahu's Likud party for 'marathon' coalition talks",
-   "url": "https://www.euronews.com/2026/11/22/gadi-eisenkot-invites-netanyahus-likud-party-for-marathon-coalition-talks",
-   "outlets": 6,
-   "why": [],
-   "theme": ""
-  },
-  {
-   "score": 8,
    "title": "Former White House press secretary under investigation for lawyer claims",
    "url": "https://www.ctvnews.ca/world/article/former-white-house-press-secretary-katie-zacharia-under-investigation-for-lawyer-claims/",
    "outlets": 8,
@@ -355,6 +347,14 @@
     "CBC News front #1"
    ],
    "theme": ""
+  },
+  {
+   "score": 7,
+   "title": "No change to Canada-U.S. defence co-operation, military sources say amid report of new restrictions by Washington",
+   "url": "https://www.theglobeandmail.com/world/us-politics/article-no-change-to-canada-us-defence-co-operation-military-sources-say-amid/",
+   "outlets": 5,
+   "why": [],
+   "theme": ""
   }
  ],
  "canada": [],
@@ -366,8 +366,8 @@
     "key": "auto-0fb368b8",
     "words": [
      "liberals",
-     "navdeep",
      "liberal",
+     "navdeep",
      "bains"
     ],
     "score": 10,
@@ -619,11 +619,10 @@
     "incoherent": false,
     "popular": 0,
     "us_election": false,
-    "fronts": 5,
-    "fronts_ca": 5,
+    "fronts": 4,
+    "fronts_ca": 4,
     "fronts_who": [
      "CTV News",
-     "Toronto Star",
      "National Post",
      "The Globe and Mail",
      "CP24"
@@ -634,14 +633,6 @@
     "weight": 22.0,
     "videos": [
      {
-      "net": "CityNews",
-      "url": "https://www.youtube.com/watch?v=oJQp-ma4dTc",
-      "title": "Navdeep Bains named new Ontario Liberal leader",
-      "img": "https://i.ytimg.com/vi/oJQp-ma4dTc/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
       "net": "CTV News",
       "url": "https://www.youtube.com/watch?v=9oQLhkwOxYs",
       "title": "Navdeep Bains elected as new Ontario Liberal leader | CTV News Toronto at Six for Nov. 21, 2026",
@@ -650,18 +641,18 @@
       "up": ""
      },
      {
-      "net": "CP24",
-      "url": "https://www.youtube.com/watch?v=mC3_LM6s1ic",
-      "title": "Navdeep Bains elected as new Ontario Liberal leader | CTV News Toronto at Six for Nov. 21, 2026",
-      "img": "https://i.ytimg.com/vi/mC3_LM6s1ic/hqdefault.jpg",
+      "net": "Global News",
+      "url": "https://www.youtube.com/watch?v=8tZq2Lp1nOM",
+      "title": "Navdeep Bains named new Ontario Liberal leader",
+      "img": "https://i.ytimg.com/vi/8tZq2Lp1nOM/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "CP24",
-      "url": "https://www.youtube.com/watch?v=GkuIL-oedxQ",
-      "title": "Navdeep Bains wins Ontario Liberal leadership vote by one per cent",
-      "img": "https://i.ytimg.com/vi/GkuIL-oedxQ/hqdefault.jpg",
+      "net": "CityNews",
+      "url": "https://www.youtube.com/watch?v=oJQp-ma4dTc",
+      "title": "Navdeep Bains named new Ontario Liberal leader",
+      "img": "https://i.ytimg.com/vi/oJQp-ma4dTc/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -892,10 +883,9 @@
     "canada": "canadian",
     "theme": "",
     "top": true,
-    "fronts": 5,
+    "fronts": 4,
     "fronts_who": [
      "CTV News",
-     "Toronto Star",
      "National Post",
      "The Globe and Mail",
      "CP24"
@@ -973,28 +963,9 @@
     "why_judged": "National: affects many people; carried across the country (national desks)."
    },
    {
-    "title": "Displaced Palestinians protest as Israeli air strikes continue in Gaza",
-    "url": "https://www.aljazeera.com/news/2026/11/22/displaced-palestinians-protest-as-israeli-air-strikes-continue-in-gaza?traffic_source=rss",
-    "rank": 5,
-    "live": "",
-    "weight": 25.0,
-    "score": 8,
-    "independent": 4,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "No Canadian tie",
-    "carriers": 4,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried beyond one city."
-   },
-   {
     "title": "Mexico captures top drug lord ‘El Chapo Isidro,’ latest in string of arrests",
     "url": "https://www.japantimes.co.jp/news/2026/11/22/world/crime-legal/mexico-captures-el-chapo-isidro/",
-    "rank": 6,
+    "rank": 5,
     "live": "",
     "weight": 17.0,
     "score": 6,
@@ -1010,6 +981,25 @@
     ],
     "rule": "No Canadian tie",
     "carriers": 6,
+    "judgment": "regional",
+    "why_judged": "Regional: affects some people; carried beyond one city."
+   },
+   {
+    "title": "Displaced Palestinians protest as Israeli air strikes continue in Gaza",
+    "url": "https://www.aljazeera.com/news/2026/11/22/displaced-palestinians-protest-as-israeli-air-strikes-continue-in-gaza?traffic_source=rss",
+    "rank": 6,
+    "live": "",
+    "weight": 10.5,
+    "score": 6,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": false,
+    "fronts": 0,
+    "fronts_who": [],
+    "rule": "No Canadian tie",
+    "carriers": 3,
     "judgment": "regional",
     "why_judged": "Regional: affects some people; carried beyond one city."
    },
@@ -1070,14 +1060,14 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Bahrain says Iran struck industrial site as tankers hit in Hormuz",
-    "score": 5,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
     "title": "Mercury gets its first visitor in years as a pair of spacecraft loop into orbit",
     "score": 5,
     "why": "not built: only 1 independent report(s) (4 sites)"
+   },
+   {
+    "title": "Stabbing in downtown Toronto leaves woman with serious injuries",
+    "score": 5,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
   ],
   "moved": [],
@@ -1114,7 +1104,7 @@
      "alt": "Former White House press secretary Katie Zacharia speaks with reporters in the James Brady Press Briefing Room at the White House, Tuesday, Oct. 13, 2026, in Wa",
      "outlet": "CTV News",
      "url": "https://www.ctvnews.ca/world/article/former-white-house-press-secretary-katie-zacharia-under-investigation-for-lawyer-claims/",
-     "since": "2026-11-22T07:07:48.515280+00:00"
+     "since": "2026-11-22T07:17:40.026480+00:00"
     },
     "photo_seen": [
      "https://www.ctvnews.ca/resizer/v2/YE5QKAGNM5AOXD3U6MHXYW7NTY.jpg?smart=true&auth=4197fbe5b29c290e632f35e731963928cca8fa358e77b5861eb8b4f91e5e0915&width=1200&height=630"
@@ -1279,7 +1269,7 @@
      "NBC News",
      "ABC News"
     ],
-    "outled_ca": 5,
+    "outled_ca": 4,
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (national desks).",
     "weight": 21.5
@@ -1365,7 +1355,7 @@
    "id": "vdSGPj15ftw",
    "r": "ca",
    "o": "Global News",
-   "t": "Russia-Ukraine war: Diplomats gather in Nova Scotia to discuss Ukraine’s defence",
+   "t": "Ukraine defence top of mind at Halifax International Security Forum",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=vdSGPj15ftw",
@@ -1446,38 +1436,10 @@
    "geo": "unknown"
   },
   {
-   "id": "mC3_LM6s1ic",
-   "r": "ca",
-   "o": "CP24",
-   "t": "Navdeep Bains elected as new Ontario Liberal leader | CTV News Toronto at Six for Nov. 21, 2026",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=mC3_LM6s1ic",
-   "img": "https://i.ytimg.com/vi/mC3_LM6s1ic/hqdefault.jpg",
-   "up": "2026-11-22",
-   "added": "2026-11-22T06:31:57.586245+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "DmGLou2LtW8",
-   "r": "ca",
-   "o": "CP24",
-   "t": "TTC unveils festive holiday fleet featuring children’s artwork",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=DmGLou2LtW8",
-   "img": "https://i.ytimg.com/vi/DmGLou2LtW8/hqdefault.jpg",
-   "up": "2026-11-21",
-   "added": "2026-11-22T06:31:57.586245+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "lNKEVlE9gdY",
    "r": "ca",
    "o": "APTN News",
-   "t": "Troubled Waters: The impact of one city’s water supply | APTN Investigates",
+   "t": "Troubled Waters: Inside Shoal Lake’s lawsuit against Winnipeg | APTN Investigates",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=lNKEVlE9gdY",
@@ -1617,7 +1579,7 @@
    "id": "_YdHi9o97P4",
    "r": "us",
    "o": "CNN",
-   "t": "The race to fix the US’ outdated air traffic control system",
+   "t": "What it would take to fix the US’s outdated ATC system",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=_YdHi9o97P4",
@@ -2326,7 +2288,7 @@
    "Ontario Liberals have elected Navdeep Bains as the party’s new leader after a marathon nine-month leadership race, with Bains emerging as victor less than one percentage point ahead of his next closest competitor, provincial caucus member Lee Fairclough, The Canadian Press reports.",
    "Ahead of the reported attack, a temporary ground stop was imposed at Krasnodar Airport, officials reported, amid the presence of drones in the nearby airspace, Kyiv Independent reports.",
    "Masked immigration officers arrested two passengers on a crowded airport jet bridge in Seattle as people were boarding Saturday, The Associated Press reports.",
-   "Eisenkot invites Netanyahu’s party for Israeli coalition talks, Middle East Eye reports.",
+   "Gadi Eisenkot, who is tasked with forming the next Israeli government, has invited the right-wing Likud party of caretaker prime minister Benjamin Netanyahu for coalition talks, his party said on Saturday.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
   ]
  },
@@ -2730,18 +2692,6 @@
    "hot": false
   },
   {
-   "city": "Tehran",
-   "tz": "Asia/Tehran",
-   "world": true,
-   "w": "Hormuz",
-   "label": "Bahrain says Iran struck industrial site as tankers hit in…",
-   "u": "https://www.japantimes.co.jp/news/2026/11/22/world/bahrain-iran-attack-hormuz/",
-   "title": "Bahrain says Iran struck industrial site as tankers hit in Hormuz",
-   "outlet": "The Japan Times",
-   "t": "Sun 12:19 a.m.",
-   "hot": false
-  },
-  {
    "city": "Jerusalem",
    "tz": "Asia/Jerusalem",
    "world": true,
@@ -2779,6 +2729,18 @@
    "n": 6,
    "url": "https://www.cbc.ca/news/canada/toronto/liberal-leadership-race-results-9.7431298",
    "img": "https://i.cbc.ca/ais/30690b4b-150c-4b8b-9883-ce3f56442a81,1795278309500/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C8%2C8640%2C4860%29%3BResize%3D620"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Sun 1:58 a.m.",
+   "iso": "2026-11-22T06:58:01+00:00",
+   "title": "Gadi Eisenkot invites Netanyahu's Likud party for 'marathon' coalition talks",
+   "summary": "",
+   "outlet": "Euronews, Al Jazeera, CKOM / PAnow (AP), CP24 (AFP)",
+   "n": 4,
+   "url": "https://www.euronews.com/2026/11/22/gadi-eisenkot-invites-netanyahus-likud-party-for-marathon-coalition-talks",
+   "img": ""
   },
   {
    "desk": "world",
@@ -2827,18 +2789,6 @@
    "n": 3,
    "url": "https://abcnews.com/US/washington-state-officials-condemn-ice-after-2-arrested/story?id=138349974",
    "img": "https://i.abcnewsfe.com/a/6a2c2e2a-f814-40d7-ba40-7ca92e33df4d/sea-tac-airport-2_1795310671098_hpMain_16x9.jpg?w=1600"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Sun 12:19 a.m.",
-   "iso": "2026-11-22T05:19:00+00:00",
-   "title": "Bahrain says Iran struck industrial site as tankers hit in Hormuz",
-   "summary": "The Gulf kingdom suffered several attacks last week, ending a lull in the conflict that began with U.S.-Israeli strikes on Iran in late February.",
-   "outlet": "The Japan Times (AFP), CBS News, Middle East Eye",
-   "n": 3,
-   "url": "https://www.japantimes.co.jp/news/2026/11/22/world/bahrain-iran-attack-hormuz/",
-   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/22/575399.JPG?v=3.1"
   },
   {
    "desk": "us",
@@ -2967,7 +2917,7 @@
    "iso": "2026-11-21T21:20:34+00:00",
    "title": "Trump vows to work with Democrats to cap credit card interest rates at 10%",
    "summary": "The standard proposal would substantially reduce what credit card companies can charge customers. The median credit card interest rate is roughly 22.2%, according to an August survey by the New York Federal Reserve.",
-   "outlet": "PBS NewsHour + Toronto Star + CBS News, The Hill",
+   "outlet": "PBS NewsHour + Toronto Star + CBS News (AP), The Hill",
    "n": 2,
    "url": "https://www.pbs.org/newshour/politics/trump-vows-to-work-with-democrats-to-cap-credit-card-interest-rates-at-10",
    "img": "https://d3i6fh83elv35t.cloudfront.net/static/2026/11/2026-10-23T110237Z_1721394900_RC2UFMAGSKQ9_RTRMADP_3_AMERICAN-EXPRESS-RESULTS-2-1024x683.jpg"
@@ -2975,26 +2925,14 @@
   {
    "desk": "business",
    "pic": "chart",
-   "t": "Sat 10:18 p.m.",
-   "iso": "2026-11-22T03:18:23+00:00",
-   "title": "Turkish foreign minister says Iran war fallout threatening global markets",
-   "summary": "",
-   "outlet": "Middle East Eye",
+   "t": "Sat 8:00 p.m.",
+   "iso": "2026-11-22T01:00:01+00:00",
+   "title": "Ontario's Christkindl Market is like a mini trip to Germany with twinkly huts and mulled wine",
+   "summary": "If you've ever dreamed of spending the holiday season in Germany, you might want to plan a trip to this dazzling Ontario Christmas market.",
+   "outlet": "Narcity",
    "n": 1,
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/turkish-foreign-minister-says-iran-war-fallout-threatening-global",
-   "img": "https://www.middleeasteye.net/sites/default/files/images-story/iran-irgc-rocket-hormuz-february-2026-sepah-news-afp.jpg"
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Sat 9:09 p.m.",
-   "iso": "2026-11-22T02:09:24+00:00",
-   "title": "Pezeshkian says Iran engaged in 'silent economic war' as blockade completes 130 days",
-   "summary": "",
-   "outlet": "Middle East Eye",
-   "n": 1,
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/pezeshkian-says-iran-engaged-silent-economic-war-blockade-completes-130",
-   "img": "https://www.middleeasteye.net/sites/default/files/images-story/iran-irgc-rocket-hormuz-february-2026-sepah-news-afp.jpg"
+   "url": "https://www.narcity.com/christkindl-market-kitchener-german-christmas-market-ontario",
+   "img": "https://www.narcity.com/media-library/hands-hold-fresh-pretzels-at-a-market-right-a-snowy-crowded-holiday-market-glows-at-night.jpg?id=68700258&width=1200&height=600&coordinates=0%2C36%2C0%2C36"
   },
   {
    "desk": "business",
@@ -3115,6 +3053,18 @@
    "n": 1,
    "url": "https://calgaryherald.com/news/local-news/alberta-ndp-to-nominate-outspoken-er-physician-in-conservative-stronghold",
    "img": ""
+  },
+  {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Sat 11:28 a.m.",
+   "iso": "2026-11-21T16:28:03+00:00",
+   "title": "Downtown Eastside housing workers resist B.C. non-profit's facial recognition plans",
+   "summary": "The union representing workers at a Downtown Eastside housing non-profit in Vancouver is resisting a plan to implement facial recognition technology for employees.",
+   "outlet": "CTV News (CP)",
+   "n": 1,
+   "url": "https://www.ctvnews.ca/vancouver/article/downtown-eastside-housing-workers-resist-bc-non-profits-facial-recognition-plans/",
+   "img": "https://www.ctvnews.ca/resizer/v2/PTR5UJNEZXADSZKGORQ45Y3YRQ.jpg?smart=true&auth=e2e6db954f688445954c64f4c74f38bb1de5e6b269ef509aa2f1e9282d946643&width=1200&height=630"
   }
  ],
  "reads": [
@@ -3278,26 +3228,6 @@
     "",
     "",
     "https://globalnews.ca/news/12160464/staples-print-hack/"
-   ]
-  },
-  {
-   "o": "Toronto Star",
-   "ca": true,
-   "h": [
-    "Toronto Star News - Breaking News Stories",
-    "Mark Carney keeps an insane pace in his quest for a saner world",
-    "An ‘urgent’ power crisis emerged after Cohere joined this Ontario data centre. Now electricity bills are rising",
-    "Ontario Liberals bet on Navdeep Bains to revive party fortunes",
-    "Martin Regg Cohn: Navdeep Bains eked out the Liberal leadership. Winning Ontario will be even harder",
-    "From Trudeau cabinet minister to Ontario Liberal leader: Who is Navdeep Bains?"
-   ],
-   "u": [
-    "",
-    "https://www.thestar.com/politics/federal/mark-carney-keeps-an-insane-pace-in-his-quest-for-a-saner-world/article_03cd7af6-6f0b-499d-a213-04d9e91b02dc.html",
-    "https://www.thestar.com/business/a-data-centre-moved-into-this-small-ontario-city-an-urgent-power-crisis-emerged/article_20db1607-0c73-458d-8933-4e2d294646ff.html",
-    "https://www.thestar.com/politics/provincial/navdeep-bains-wins-ontario-liberal-leadership-on-third-ballot/article_e1e1b4f9-3fc6-4f82-b65a-cb28c775ca9f.html",
-    "https://www.thestar.com/politics/political-opinion/navdeep-bains-eked-out-the-liberal-leadership-winning-ontario-will-be-even-harder/article_dcebbd9d-3440-4ef7-aaeb-dab0c5ac6195.html",
-    "https://www.thestar.com/politics/provincial/from-trudeau-cabinet-minister-to-ontario-liberal-leader-who-is-navdeep-bains/article_a91177ba-f47f-419b-9f7a-ff2b8a173120.html"
    ]
   },
   {
@@ -3520,7 +3450,7 @@
     "url": "https://www.youtube.com/watch?v=wcY4K5CNVx4",
     "img": "https://i.ytimg.com/vi/wcY4K5CNVx4/hqdefault.jpg",
     "story": "Fox News' All-American Christmas tree",
-    "watching": "85"
+    "watching": "96"
    },
    {
     "net": "LiveNOW from FOX",
@@ -3529,7 +3459,7 @@
     "url": "https://www.youtube.com/watch?v=9ZvbYvsufDE",
     "img": "https://i.ytimg.com/vi/9ZvbYvsufDE/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "434",
+    "watching": "383",
     "rolling": true
    }
   ],
@@ -3578,53 +3508,7 @@
   ]
  },
  "pm": [],
- "blogs_auto": [
-  {
-   "net": "Middle East Eye",
-   "story": "Israeli puts 'Gaza mosque crescent finial' up for sale, rights group s",
-   "title": "Israeli puts 'Gaza mosque crescent finial' up for sale, rights group says",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-puts-gaza-mosque-crescent-finial-sale-rights-group-says",
-   "updated": "2026-11-22T06:12:38+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/images-story/iran-irgc-rocket-hormuz-february-2026-sepah-news-afp.jpg"
-  },
-  {
-   "net": "Middle East Eye",
-   "story": "World Central Kitchen founder says three killed in Gaza strike 'not pa",
-   "title": "World Central Kitchen founder says three killed in Gaza strike 'not part of our team'",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/world-central-kitchen-founder-says-three-killed-gaza-strike-not-part-our",
-   "updated": "2026-11-22T05:48:18+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/images-story/iran-irgc-rocket-hormuz-february-2026-sepah-news-afp.jpg"
-  },
-  {
-   "net": "Middle East Eye",
-   "story": "Two Palestinians succumb to wounds sustained in Israeli strike on Gaza",
-   "title": "Two Palestinians succumb to wounds sustained in Israeli strike on Gaza",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/two-palestinians-succumb-wounds-sustained-israeli-strike-gaza",
-   "updated": "2026-11-22T05:23:19+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/images-story/iran-irgc-rocket-hormuz-february-2026-sepah-news-afp.jpg"
-  },
-  {
-   "net": "Middle East Eye",
-   "story": "Pro-Israel Hakeem Jeffries says he will push legislation targeting set",
-   "title": "Pro-Israel Hakeem Jeffries says he will push legislation targeting settler violence",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/pro-israel-jeffries-says-he-will-push-legislation-targeting-settler",
-   "updated": "2026-11-22T04:51:33+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/images-story/iran-irgc-rocket-hormuz-february-2026-sepah-news-afp.jpg"
-  },
-  {
-   "net": "Middle East Eye",
-   "story": "Former UN envoy says Iran war was 'perfectly avoidable'",
-   "title": "Former UN envoy says Iran war was 'perfectly avoidable'",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/former-un-envoy-says-iran-war-was-perfectly-avoidable",
-   "updated": "2026-11-22T04:22:04+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/images-story/iran-irgc-rocket-hormuz-february-2026-sepah-news-afp.jpg"
-  }
- ],
+ "blogs_auto": [],
  "related": {
   "auto-0fb368b8": {
    "ties": [
