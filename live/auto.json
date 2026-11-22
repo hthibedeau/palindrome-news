@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-22T02:16:02.913952+00:00",
- "checkedLabel": "Sat 9:16 p.m.",
+ "checked": "2026-11-22T02:20:06.647004+00:00",
+ "checkedLabel": "Sat 9:20 p.m.",
  "stories": [
   {
    "key": "top",
@@ -136,7 +136,7 @@
    "CBS News",
    "https://www.cbsnews.com/news/ice-arrest-alaska-airlines-flight-seattle/",
    "2026-11-22T01:41:00+00:00",
-   5
+   4
   ],
   [
    "Sat 8:40 p.m.",
@@ -190,7 +190,7 @@
    "CTV News",
    "https://www.ctvnews.ca/sci-tech/article/little-mercury-gets-its-first-visitor-in-years-as-a-pair-of-spacecraft-loop-into-orbit/",
    "2026-11-22T01:33:06+00:00",
-   4
+   3
   ],
   [
    "Sat 8:30 p.m.",
@@ -352,14 +352,6 @@
    "theme": ""
   },
   {
-   "score": 7,
-   "title": "Washington governor decries ‘out-of-control’ ICE at Seattle airport",
-   "url": "https://thehill.com/homenews/state-watch/6235558-ferguson-condemns-ice-airport-detention/",
-   "outlets": 5,
-   "why": [],
-   "theme": ""
-  },
-  {
    "score": 6,
    "title": "Montreal police arrest 2 ex-officers for alleged assault, criminal harassment, breach of trust",
    "url": "https://www.cbc.ca/news/canada/montreal/spvm-arrest-two-officers-racism-scandal-9.7431306",
@@ -373,6 +365,14 @@
    "score": 6,
    "title": "This train from Toronto takes you to one of the world's absolute best places to spend Christmas",
    "url": "https://www.narcity.com/toronto/via-rail-toronto-to-montreal-tickets-christmas-things-to-do",
+   "outlets": 4,
+   "why": [],
+   "theme": ""
+  },
+  {
+   "score": 6,
+   "title": "Washington governor decries ‘out-of-control’ ICE at Seattle airport",
+   "url": "https://thehill.com/homenews/state-watch/6235558-ferguson-condemns-ice-airport-detention/",
    "outlets": 4,
    "why": [],
    "theme": ""
@@ -593,11 +593,11 @@
    {
     "key": "auto-b70837ca",
     "words": [
-     "navdeep",
      "liberal",
+     "navdeep",
      "druhan",
-     "bains",
      "becky",
+     "bains",
      "tory"
     ],
     "score": 9,
@@ -853,9 +853,17 @@
     "weight": 40.0,
     "videos": [
      {
+      "net": "CityNews",
+      "url": "https://www.youtube.com/watch?v=oJQp-ma4dTc",
+      "title": "Navdeep Bains named new Ontario Liberal leader",
+      "img": "https://i.ytimg.com/vi/oJQp-ma4dTc/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
       "net": "Global News",
       "url": "https://www.youtube.com/watch?v=8tZq2Lp1nOM",
-      "title": "Navdeep Bains named new Ontario Liberal leader",
+      "title": "Ontario Liberals select Navdeep Bains as new party leader",
       "img": "https://i.ytimg.com/vi/8tZq2Lp1nOM/hqdefault.jpg",
       "rec": false,
       "up": ""
@@ -875,26 +883,18 @@
       "img": "https://i.ytimg.com/vi/arcfej6UG5M/hqdefault.jpg",
       "rec": false,
       "up": ""
-     },
-     {
-      "net": "CityNews",
-      "url": "https://www.youtube.com/watch?v=oJQp-ma4dTc",
-      "title": "Navdeep Bains named new Ontario Liberal leader",
-      "img": "https://i.ytimg.com/vi/oJQp-ma4dTc/hqdefault.jpg",
-      "rec": false,
-      "up": ""
      }
     ]
    },
    {
-    "key": "auto-cf256c2a",
+    "key": "auto-f93a1f88",
     "words": [
      "seattle",
      "ice"
     ],
-    "score": 7,
+    "score": 6,
     "outlets": 3,
-    "carriers": 5,
+    "carriers": 4,
     "tag": "Developing",
     "title": "ICE officers arrest 2 passengers boarding flight in Seattle",
     "url": "https://www.cbsnews.com/news/ice-arrest-alaska-airlines-flight-seattle/",
@@ -903,28 +903,28 @@
     "iso": "2026-11-22T01:41:00+00:00",
     "summary": "Masked immigration officers arrested two passengers on a crowded airport jet bridge in Seattle as people were boarding Saturday",
     "first": {
-     "outlet": "Toronto Star",
-     "url": "https://www.thestar.com/news/world/united-states/immigration-officers-make-arrest-at-seattle-airport-in-distressing-scene-delaying-flight/article_0db2d1af-8859-5f3f-a177-cbbbbd0b2b35.html",
-     "t": "Sat 6:41 p.m.",
-     "title": "Immigration officers make arrests at Seattle airport in 'distressing' scene, delaying flight",
-     "iso": "2026-11-21T23:41:51+00:00"
+     "outlet": "CP24",
+     "url": "https://www.cp24.com/news/world/2026/11/22/us-immigration-officers-make-arrest-at-seattle-airport-in-distressing-scene-delaying-flight/",
+     "t": "Sat 8:30 p.m.",
+     "title": "U.S. immigration officers make arrest at Seattle airport in ‘distressing’ scene, delaying flight",
+     "iso": "2026-11-22T01:30:12+00:00"
     },
     "newest": "2026-11-22T01:57:37+00:00",
     "photo": {
-     "src": "live/img/auto-cf256c2a-8e3a833acf.jpg",
+     "src": "live/img/auto-f93a1f88-8e3a833acf.jpg",
      "orig": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/22/3a21ffe4-5d69-4a6e-8269-e58dcf41fb97/thumbnail/1200x630/2f7e4b1b76e50db5af7676e06647cccc/ap26325789842711.jpg",
      "caption": "From: ICE officers arrest 2 passengers boarding flight in Seattle. — via CBS News",
      "alt": "ICE officers arrest 2 passengers boarding flight in Seattle",
      "outlet": "CBS News",
      "url": "https://www.cbsnews.com/news/ice-arrest-alaska-airlines-flight-seattle/",
-     "since": "2026-11-22T02:17:38.387321+00:00"
+     "since": "2026-11-22T02:21:11.052777+00:00"
     },
     "photo_seen": [
      "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/22/3a21ffe4-5d69-4a6e-8269-e58dcf41fb97/thumbnail/1200x630/2f7e4b1b76e50db5af7676e06647cccc/ap26325789842711.jpg"
     ],
     "photos": [
      {
-      "src": "live/img/auto-cf256c2a-8e3a833acf.jpg",
+      "src": "live/img/auto-f93a1f88-8e3a833acf.jpg",
       "orig": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/22/3a21ffe4-5d69-4a6e-8269-e58dcf41fb97/thumbnail/1200x630/2f7e4b1b76e50db5af7676e06647cccc/ap26325789842711.jpg",
       "caption": "From: ICE officers arrest 2 passengers boarding flight in Seattle. — via CBS News",
       "alt": "ICE officers arrest 2 passengers boarding flight in Seattle",
@@ -965,14 +965,6 @@
       "title": "U.S. immigration officers make arrest at Seattle airport in ‘distressing’ scene, delaying flight",
       "url": "https://www.cp24.com/news/world/2026/11/22/us-immigration-officers-make-arrest-at-seattle-airport-in-distressing-scene-delaying-flight/",
       "desc": ""
-     },
-     {
-      "t": "Sat 6:41 p.m.",
-      "iso": "2026-11-21T23:41:51+00:00",
-      "outlet": "Toronto Star",
-      "title": "Immigration officers make arrests at Seattle airport in 'distressing' scene, delaying flight",
-      "url": "https://www.thestar.com/news/world/united-states/immigration-officers-make-arrest-at-seattle-airport-in-distressing-scene-delaying-flight/article_0db2d1af-8859-5f3f-a177-cbbbbd0b2b35.html",
-      "desc": ""
      }
     ],
     "sources": [
@@ -1011,19 +1003,14 @@
       "copies": []
      },
      {
-      "t": "Sat 6:41 p.m.",
+      "t": "Sat 8:30 p.m.",
       "primary": false,
-      "outlet": "Toronto Star",
-      "title": "Immigration officers make arrests at Seattle airport in 'distressing' scene, delaying flight",
-      "url": "https://www.thestar.com/news/world/united-states/immigration-officers-make-arrest-at-seattle-airport-in-distressing-scene-delaying-flight/article_0db2d1af-8859-5f3f-a177-cbbbbd0b2b35.html",
-      "desc": "",
-      "wire": "",
+      "outlet": "CTV News",
+      "title": "U.S. immigration officers make arrest at Seattle airport in ‘distressing’ scene, delaying flight",
+      "url": "https://www.ctvnews.ca/world/article/us-immigration-officers-make-arrest-at-seattle-airport-in-distressing-scene-delaying-flight/",
+      "desc": "Masked immigration officers detained two people on a crowded airport jet bridge in Seattle as people were boarding Saturday, causing what the airline called a “distressing” scene for passengers and employees and delaying the Los Angeles-bound flight.",
+      "wire": "The Canadian Press",
       "by": [
-       {
-        "outlet": "Toronto Star",
-        "src": "Torstar",
-        "byline": ""
-       },
        {
         "outlet": "CTV News",
         "src": "The Canadian Press",
@@ -1036,10 +1023,6 @@
        }
       ],
       "copies": [
-       {
-        "outlet": "CTV News",
-        "url": "https://www.ctvnews.ca/world/article/us-immigration-officers-make-arrest-at-seattle-airport-in-distressing-scene-delaying-flight/"
-       },
        {
         "outlet": "CP24",
         "url": "https://www.cp24.com/news/world/2026/11/22/us-immigration-officers-make-arrest-at-seattle-airport-in-distressing-scene-delaying-flight/"
@@ -1064,7 +1047,7 @@
     "outled_ca": 5,
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (national desks).",
-    "weight": 26.5
+    "weight": 25.0
    }
   ],
   "considered": [
@@ -1098,8 +1081,8 @@
     "url": "https://www.cbsnews.com/news/ice-arrest-alaska-airlines-flight-seattle/",
     "rank": 2,
     "live": "",
-    "weight": 26.5,
-    "score": 7,
+    "weight": 25.0,
+    "score": 6,
     "independent": 3,
     "most_read": 0,
     "canada": "none",
@@ -1111,7 +1094,7 @@
      "CBS News"
     ],
     "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
-    "carriers": 5,
+    "carriers": 4,
     "judgment": "national",
     "why_judged": "National: affects many people; carried across the country (national desks)."
    },
@@ -1201,11 +1184,6 @@
     "why": "not built: only 2 independent report(s) (4 sites)"
    },
    {
-    "title": "Little Mercury gets its first visitor in years as a pair of spacecraft loop into orbit",
-    "score": 6,
-    "why": "not built: only 1 independent report(s) (4 sites)"
-   },
-   {
     "title": "Sunrise on the Reaping may be a prequel, but it's the worst way to start The Hunger Games",
     "score": 5,
     "why": "not built: only 1 independent report(s) (1 sites)"
@@ -1219,6 +1197,11 @@
     "title": "Pedestrian struck by vehicle in Scarborough suffers life-threatening injuries",
     "score": 5,
     "why": "not built: only 2 independent report(s) (3 sites)"
+   },
+   {
+    "title": "Little Mercury gets its first visitor in years as a pair of spacecraft loop into orbit",
+    "score": 5,
+    "why": "not built: only 1 independent report(s) (3 sites)"
    }
   ],
   "moved": [],
@@ -1425,7 +1408,7 @@
    "id": "TgaahQeSfLA",
    "r": "ca",
    "o": "Global News",
-   "t": "Focus Ontario: Nov. 21, 2026 | Can Ontario avoid a credit rating downgrade?",
+   "t": "Focus Ontario: Nov. 21, 2026 | Ontario’s debt debacle",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=TgaahQeSfLA",
@@ -1481,13 +1464,41 @@
    "id": "8tZq2Lp1nOM",
    "r": "ca",
    "o": "Global News",
-   "t": "Navdeep Bains named new Ontario Liberal leader",
+   "t": "Ontario Liberals select Navdeep Bains as new party leader",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=8tZq2Lp1nOM",
    "img": "https://i.ytimg.com/vi/8tZq2Lp1nOM/hqdefault.jpg",
    "up": "2026-11-21",
    "added": "2026-11-22T01:46:02.854002+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "RhyXPo87kp8",
+   "r": "ca",
+   "o": "CTV News",
+   "t": "Help Santa Toy parade kicks off holidays | CTV News Ottawa at Six for November 21, 2026",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=RhyXPo87kp8",
+   "img": "https://i.ytimg.com/vi/RhyXPo87kp8/hqdefault.jpg",
+   "up": "2026-11-21",
+   "added": "2026-11-22T02:20:06.647004+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "jpWdnlfgKek",
+   "r": "ca",
+   "o": "CTV News",
+   "t": "Thousands pack Help Santa Toy Parade",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=jpWdnlfgKek",
+   "img": "https://i.ytimg.com/vi/jpWdnlfgKek/hqdefault.jpg",
+   "up": "2026-11-21",
+   "added": "2026-11-22T02:20:06.647004+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1761,7 +1772,7 @@
    "id": "_YdHi9o97P4",
    "r": "us",
    "o": "CNN",
-   "t": "Air Traffic Control’s ‘patchwork’ system, explained",
+   "t": "The race to fix the US’ outdated air traffic control system",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=_YdHi9o97P4",
@@ -1775,7 +1786,7 @@
    "id": "VVQ1c_znNrI",
    "r": "world",
    "o": "Sky News",
-   "t": "German investment firm makes last-minute bid for Poundland",
+   "t": "German bidder stages last-gasp bid to rescue Poundland",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=VVQ1c_znNrI",
@@ -2384,6 +2395,38 @@
    "auto": true
   },
   {
+   "cat": "intl",
+   "media": "none",
+   "initials": "UN",
+   "name": "United Nations",
+   "role": "UN News",
+   "date": "Nov 21",
+   "platform": "Official statement",
+   "handle": "news.un.org",
+   "hed": "‘We escaped with only our lives’: Fighting to give birth in war-torn Yemen",
+   "summary": "When fighting suddenly escalated around Taiz, in southwestern Yemen two months ago, midwife Anisa Fadhl had no time to pack a bag before she fled, leaving behind her home and her clinic. Both were later looted and destroyed.",
+   "href": "https://news.un.org/feed/view/en/story/2026/11/1168851",
+   "report": false,
+   "iso": "2026-11-21T12:00:00+00:00",
+   "auto": true
+  },
+  {
+   "cat": "intl",
+   "media": "none",
+   "initials": "UN",
+   "name": "United Nations",
+   "role": "UN News",
+   "date": "Nov 21",
+   "platform": "Official statement",
+   "handle": "news.un.org",
+   "hed": "Homes abandoned, harvests failing: Haiti’s farmers rebuild amid violence, hunger and El Niño",
+   "summary": "Years of insecurity, violence perpetrated by murderous armed gangs and economic instability, combined with displacement, poor agricultural performance and climate shocks, have left millions of Haitians struggling to meet their food needs.",
+   "href": "https://news.un.org/feed/view/en/story/2026/11/1168834",
+   "report": false,
+   "iso": "2026-11-21T12:00:00+00:00",
+   "auto": true
+  },
+  {
    "cat": "premier",
    "media": "none",
    "initials": "ON",
@@ -2413,22 +2456,6 @@
    "href": "https://news.ontario.ca/en/advisory/1008314/minister_pirie_to_hold_a_press_conference",
    "report": false,
    "iso": "2026-11-20T20:00:00+00:00",
-   "auto": true
-  },
-  {
-   "cat": "premier",
-   "media": "none",
-   "initials": "BC",
-   "name": "Government of B.C.",
-   "role": "Provincial government news",
-   "date": "Nov 20",
-   "platform": "Official statement",
-   "handle": "news.gov.bc.ca",
-   "hed": "New cabinet sworn in with focus on restoring confidence, building a stronger B.C.",
-   "summary": "Premier Lorne Doerkson has unveiled British Columbia’s new cabinet, bringing together a team focused on restoring confidence in government and delivering a stronger future for people throughout the province.",
-   "href": "https://news.gov.bc.ca/releases/2026PREM0069-001142",
-   "report": false,
-   "iso": "2026-11-20T18:56:00+00:00",
    "auto": true
   }
  ],
@@ -2612,7 +2639,7 @@
    "world": false,
    "w": "Hansen Returns",
    "label": "Rick Hansen Returns to St. John’s for National 40th…",
-   "u": "https://vocm.com/2026/11/21/317378/",
+   "u": "http://vocm.com/2026/11/21/317378/",
    "title": "Rick Hansen Returns to St. John’s for National 40th Anniversary Tour",
    "outlet": "VOCM",
    "t": "Sat 1:00 p.m.",
@@ -2736,7 +2763,7 @@
    "iso": "2026-11-22T01:57:37+00:00",
    "title": "Washington governor decries ‘out-of-control’ ICE at Seattle airport",
    "summary": "",
-   "outlet": "The Hill, CBS News, Toronto Star + CTV News + CP24",
+   "outlet": "The Hill, CBS News, CTV News + CP24 (CP)",
    "n": 3,
    "url": "https://thehill.com/homenews/state-watch/6235558-ferguson-condemns-ice-airport-detention/",
    "img": ""
@@ -2824,6 +2851,18 @@
    "n": 2,
    "url": "https://www.ctvnews.ca/toronto/article/pedestrian-struck-by-vehicle-in-scarborough-suffers-life-threatening-injuries-3/",
    "img": "https://www.ctvnews.ca/resizer/v2/S5TT2CR7A5CEHMWHAXTCBU57M4.png?smart=true&auth=b0b049f921a8f80c674cf78686aafab426f6570ec566a728b125a2dee9fe4878&width=1200&height=630"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Sat 8:30 p.m.",
+   "iso": "2026-11-22T01:30:56+00:00",
+   "title": "UK to produce 'middle strike,' long-range drones for Ukraine in Britain",
+   "summary": "Kyiv and London finalized an agreement on Nov. 21 that will see the United Kingdom manufacture \"middle strike\" and long-range drones for Ukraine on British soil, Ukraine's Defense Ministry announced.",
+   "outlet": "Kyiv Independent, CBC News (AP)",
+   "n": 2,
+   "url": "https://kyivindependent.com/uk-to-produce-middle-strike-long-range-drones-for-ukraine-in-britain/",
+   "img": "https://assets.kyivindependent.com/content/images/2026/11/photo_2026-11-21_13-10-45_20261122-011918.jpg"
   },
   {
    "desk": "us",
@@ -2928,7 +2967,7 @@
    "iso": "2026-11-22T01:33:06+00:00",
    "title": "Little Mercury gets its first visitor in years as a pair of spacecraft loop into orbit",
    "summary": "A pair of spacecraft slipped into orbit around Mercury on Saturday after an eight-year cruise through the inner solar system to unravel our littlest planet’s mountain of mysteries.",
-   "outlet": "CTV News + Toronto Star + CityNews + CP24 (AP)",
+   "outlet": "CTV News + CityNews + CP24 (AP)",
    "n": 1,
    "url": "https://www.ctvnews.ca/sci-tech/article/little-mercury-gets-its-first-visitor-in-years-as-a-pair-of-spacecraft-loop-into-orbit/",
    "img": "https://www.ctvnews.ca/resizer/v2/ILQTNIMNQZDDSSHQZSVVYBGKSQ.jpg?smart=true&auth=da6703fd4aafc7f0f5b09281fd160c2955b60f999e761f3153bb3ff6fc5d3e9b&width=1200&height=630"
@@ -2944,18 +2983,6 @@
    "n": 1,
    "url": "https://www.japantimes.co.jp/news/2026/11/22/asia-pacific/politics/australia-criticizes-us-aukus-comments/",
    "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/22/575337.JPG?v=3.1"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Sat 7:02 p.m.",
-   "iso": "2026-11-22T00:02:44+00:00",
-   "title": "Paolo Bulgari, the Italian jeweller who turned a family business into global luxury brand, dies at 89",
-   "summary": "Paolo Bulgari, the grandson of a Greek silversmith who helped transform the family jewelry business into a global luxury brand synonymous with Italian glamour and design, has died. He was 89.",
-   "outlet": "CTV News + Toronto Star + CityNews + BNN Bloomberg",
-   "n": 1,
-   "url": "https://www.ctvnews.ca/business/article/paolo-bulgari-the-italian-jeweller-who-turned-a-family-business-into-global-luxury-brand-dies-at-89/",
-   "img": "https://www.ctvnews.ca/resizer/v2/7F6E5LCSO4JXTBY74HIIJINXEI.jpg?smart=true&auth=4f24c2b6d4389e04bae785ec4cdd7253767691df17a921242900c5b6490c3271&width=1200&height=630"
   },
   {
    "desk": "business",
@@ -3469,7 +3496,7 @@
     "url": "https://www.youtube.com/watch?v=wcY4K5CNVx4",
     "img": "https://i.ytimg.com/vi/wcY4K5CNVx4/hqdefault.jpg",
     "story": "Fox News' All-American Christmas tree",
-    "watching": "180"
+    "watching": "184"
    },
    {
     "net": "LiveNOW from FOX",
@@ -3478,7 +3505,7 @@
     "url": "https://www.youtube.com/watch?v=9ZvbYvsufDE",
     "img": "https://i.ytimg.com/vi/9ZvbYvsufDE/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "779",
+    "watching": "777",
     "rolling": true
    }
   ],
@@ -3702,6 +3729,24 @@
    "official": [],
    "views": []
   },
+  "https://abcnews.com/US/fbis-national-crime-database-targeted-hack-trump/story?id=138347810": {
+   "story": "FBI's national crime database targeted in hack, Trump says",
+   "us": true,
+   "specific": 1,
+   "stories": [
+    {
+     "t": "Fri 8:06 a.m.",
+     "iso": "2026-11-20T13:06:33+00:00",
+     "outlet": "BNN Bloomberg",
+     "title": "Canada and Japan make their own moves as Trump courts Xi, Putin",
+     "url": "https://www.bnnbloomberg.ca/business/politics/2026/11/20/as-trump-courts-xi-and-putin-middle-powers-make-their-own-moves/",
+     "ca": true,
+     "tie": ""
+    }
+   ],
+   "official": [],
+   "views": []
+  },
   "https://www.npr.org/2026/11/21/g-s1-154966/trump-contractors-congress": {
    "story": "Trump orders federal contractors to check with White House before responding to Congress",
    "us": true,
@@ -3723,24 +3768,6 @@
      "title": "Here's how often Edmonton has had a white Christmas since 2000",
      "url": "https://dailyhive.com/edmonton/how-often-edmonton-white-christmas-snow-since-2000-weather",
      "ca": false,
-     "tie": ""
-    }
-   ],
-   "official": [],
-   "views": []
-  },
-  "https://www.politico.com/news/2026/11/21/republican-chairs-know-stuck-with-trump-2028-01179393": {
-   "story": "‘Grandfather’ or ‘godfather’? Republicans know they’re stuck with Trump",
-   "us": true,
-   "specific": 1,
-   "stories": [
-    {
-     "t": "Thu 7:30 p.m.",
-     "iso": "2026-11-20T00:30:00+00:00",
-     "outlet": "Toronto Star",
-     "title": "Trump's midterm defeat hasn't moved Canada-U.S. trade talks, sources say",
-     "url": "https://www.thestar.com/politics/donald-trump-s-midterm-drubbing-hasn-t-sped-up-canada-s-trade-talks-sources-say/article_ddb8650a-a844-434a-8513-7441ceba77d3.html",
-     "ca": true,
      "tie": ""
     }
    ],
