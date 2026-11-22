@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-22T14:04:24.761367+00:00",
- "checkedLabel": "Sun 9:04 a.m.",
+ "checked": "2026-11-22T14:09:37.262658+00:00",
+ "checkedLabel": "Sun 9:09 a.m.",
  "stories": [
   {
    "key": "top",
@@ -30,6 +30,24 @@
   }
  ],
  "wire": [
+  [
+   "Sun 9:05 a.m.",
+   "World",
+   "Three killed and dozens missing after fire at Indonesian factory",
+   "BBC News",
+   "https://www.bbc.co.uk/news/articles/cw8dvg5pgm0eo?at_medium=RSS&at_campaign=rss",
+   "2026-11-22T14:05:20+00:00",
+   2
+  ],
+  [
+   "Sun 9:00 a.m.",
+   "World",
+   "What next for Iraq’s push against militias following Jurf al-Sakhar deal?",
+   "Al Jazeera",
+   "https://www.aljazeera.com/news/2026/11/22/what-next-for-iraqs-push-against-militias-following-jurf-al-sakhar-deal?traffic_source=rss",
+   "2026-11-22T14:00:31+00:00",
+   1
+  ],
   [
    "Sun 8:55 a.m.",
    "Latest",
@@ -236,24 +254,6 @@
    "https://www.ctvnews.ca/climate-and-environment/article/nations-object-to-un-climate-talks-deal-because-it-does-not-mention-fossil-fuels/",
    "2026-11-22T12:40:45+00:00",
    3
-  ],
-  [
-   "Sun 7:36 a.m.",
-   "U.S.",
-   "‘Just wrong’: British right distances itself from Trump after Putin ‘friend’ post",
-   "The Guardian",
-   "https://www.theguardian.com/politics/2026/nov/22/british-right-reform-tory-party-distances-itself-from-trump-putin-friend-post",
-   "2026-11-22T12:36:58+00:00",
-   1
-  ],
-  [
-   "Sun 7:34 a.m.",
-   "Latest",
-   "Iran live updates: IRGC says Bahrain attacks targeted US Patriot sites",
-   "ABC News",
-   "https://abcnews.com/International/live-updates/iran-live-updates-tanker-attacked-strait-hormuz-ukmto/?id=138171071",
-   "2026-11-22T12:34:21+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -302,8 +302,8 @@
   },
   {
    "score": 16,
-   "title": "Man rushed to hospital after stabbing in downtown Toronto, suspect arrested",
-   "url": "https://www.ctvnews.ca/toronto/article/man-rushed-to-hospital-after-stabbing-in-downtown-toronto-suspect-arrested/",
+   "title": "'We are thriving': In an age of AI and internet, Vancouver used-book stores find continuity is popular",
+   "url": "https://vancouversun.com/news/we-are-thriving-in-an-age-of-ai-and-internet-vancouver-used-book-stores-find-continuity",
    "outlets": 14,
    "why": [],
    "theme": ""
@@ -363,7 +363,7 @@
   {
    "score": 8,
    "title": "UN climate talks break down without an overarching agreement",
-   "url": "https://www.timescolonist.com/world-news/un-climate-talks-break-down-without-an-overarching-agreement-13046220",
+   "url": "https://www.timescolonist.com/the-mix/un-climate-talks-break-down-without-an-overarching-agreement-13046249",
    "outlets": 6,
    "why": [],
    "theme": ""
@@ -785,14 +785,12 @@
     "incoherent": false,
     "popular": 0,
     "us_election": false,
-    "fronts": 3,
-    "fronts_ca": 3,
+    "fronts": 2,
+    "fronts_ca": 2,
     "fronts_who": [
-     "Toronto Star",
      "National Post",
      "The Globe and Mail"
     ],
-    "leads_ca": true,
     "judgment": "regional",
     "judgment_why": "Regional: affects some people; carried beyond one city.",
     "weight": 23.5,
@@ -800,8 +798,16 @@
      {
       "net": "Global News",
       "url": "https://www.youtube.com/watch?v=8tZq2Lp1nOM",
-      "title": "Ontario politics: who is new Liberal party leader Navdeep Bains?",
+      "title": "Ontario Liberals select Navdeep Bains as new party leader",
       "img": "https://i.ytimg.com/vi/8tZq2Lp1nOM/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CTV News",
+      "url": "https://www.youtube.com/watch?v=9oQLhkwOxYs",
+      "title": "Navdeep Bains elected as new Ontario Liberal leader | CTV News Toronto at Six for Nov. 21, 2026",
+      "img": "https://i.ytimg.com/vi/9oQLhkwOxYs/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
@@ -820,191 +826,171 @@
       "img": "https://i.ytimg.com/vi/GkuIL-oedxQ/hqdefault.jpg",
       "rec": false,
       "up": ""
-     },
-     {
-      "net": "CP24",
-      "url": "https://www.youtube.com/watch?v=arcfej6UG5M",
-      "title": "Navdeep Bains delivers speech after winning Ontario Liberal leadership race",
-      "img": "https://i.ytimg.com/vi/arcfej6UG5M/hqdefault.jpg",
-      "rec": false,
-      "up": ""
      }
     ]
    },
    {
-    "key": "auto-cb250237",
+    "key": "auto-700c6ca4",
     "words": [
-     "russia-bound",
-     "kaliningrad",
-     "finland",
-     "gulf"
+     "hormuz",
+     "strait"
     ],
-    "score": 8,
+    "score": 10,
     "outlets": 4,
-    "carriers": 5,
+    "carriers": 4,
     "tag": "Breaking",
-    "title": "Air alert sounds in Kaliningrad hours after Russia-bound ship attacked in the Gulf of Finland",
-    "url": "https://www.ctvnews.ca/world/russia-ukraine-war/article/air-alert-sounds-in-kaliningrad-hours-after-russia-bound-ship-attacked-in-the-gulf-of-finland/",
-    "outlet": "CTV News",
-    "t": "Sun 8:08 a.m.",
-    "iso": "2026-11-22T13:08:03+00:00",
-    "summary": "A rare air alert sounded in Kaliningrad, the Russian exclave near Poland and Lithuania, according to the local governor, as claims circulated online of drone activity near a major naval base there.",
+    "title": "Briton swims length of strait of Hormuz to highlight environmental cost of war",
+    "url": "https://www.theguardian.com/world/2026/nov/22/briton-lewis-pugh-swims-strait-of-hormuz-environment-war",
+    "outlet": "The Guardian",
+    "t": "Sun 8:36 a.m.",
+    "iso": "2026-11-22T13:36:01+00:00",
+    "summary": "UN patron Lewis Pugh saw ships ablaze and fighter jets overhead during three-day swim as Iran conflict continues",
     "first": {
-     "outlet": "Kyiv Independent",
-     "url": "https://kyivindependent.com/russian-military-linked-cargo-ship-catches-fire-after-reported-drone-strike-in-gulf-of-finland/",
-     "t": "Sat 12:39 p.m.",
-     "title": "Russian military-linked cargo ship could sink after drone strike in Gulf of Finland, Finnish official warns",
-     "iso": "2026-11-21T17:39:48+00:00"
+     "outlet": "CBS News",
+     "url": "https://www.cbsnews.com/news/athlete-swims-strait-of-hormuz-iran-war-wildlife/",
+     "t": "Sat 8:30 p.m.",
+     "title": "Athlete swims Strait of Hormuz to highlight Iran war's wildlife toll",
+     "iso": "2026-11-22T01:30:53+00:00"
     },
-    "newest": "2026-11-22T13:08:03+00:00",
+    "newest": "2026-11-22T13:36:01+00:00",
     "photo": {
-     "src": "live/img/auto-cb250237-f1bb7a612d.jpg",
-     "orig": "https://www.ctvnews.ca/resizer/v2/SSEAXBTKWKSRXNMI5HIZ4EW4FU.jpg?smart=true&auth=cf56db995b39d18058b768e72996a3714de99c261c5ebcd6e825e05ede8ca38e&width=1200&height=630",
-     "caption": "In this photo released by the Finnish Border Guard, two ships try to extinguish a fire in the Russian cargo ship Sparta II after a drone strike in the Gulf of Finland, Sunday, Nov. 22, 2026. (Finnish Border Guard/Lehtikuva via AP). — via CTV News",
-     "alt": "In this photo released by the Finnish Border Guard, two ships try to extinguish a fire in the Russian cargo ship Sparta II after a drone strike in the Gulf of F",
-     "outlet": "CTV News",
-     "url": "https://www.ctvnews.ca/world/russia-ukraine-war/article/air-alert-sounds-in-kaliningrad-hours-after-russia-bound-ship-attacked-in-the-gulf-of-finland/",
-     "since": "2026-11-22T13:56:35.514452+00:00"
+     "src": "live/img/auto-700c6ca4-4c48d21769.jpg",
+     "orig": "https://images.euronews.com/articles/stories/10/00/32/18/1200x675_cmsv2_a2f6078b-215d-5e59-9c8a-4f9c96f9b538-10003218.jpg",
+     "caption": "Tracking site says Iranian tanker reportedly sailing through Strait of Hormuz does not exist. — via Euronews",
+     "alt": "Tracking site says Iranian tanker reportedly sailing through Strait of Hormuz does not exist",
+     "outlet": "Euronews",
+     "url": "https://www.euronews.com/2026/11/22/tracking-site-says-iranian-tanker-reportedly-sailing-through-strait-of-hormuz-does-not-exi",
+     "since": "2026-11-22T14:10:52.790846+00:00"
     },
     "photo_seen": [
-     "https://www.ctvnews.ca/resizer/v2/SSEAXBTKWKSRXNMI5HIZ4EW4FU.jpg?smart=true&auth=cf56db995b39d18058b768e72996a3714de99c261c5ebcd6e825e05ede8ca38e&width=1200&height=630"
+     "https://images.euronews.com/articles/stories/10/00/32/18/1200x675_cmsv2_a2f6078b-215d-5e59-9c8a-4f9c96f9b538-10003218.jpg"
     ],
     "photos": [
      {
-      "src": "live/img/auto-cb250237-f1bb7a612d.jpg",
-      "orig": "https://www.ctvnews.ca/resizer/v2/SSEAXBTKWKSRXNMI5HIZ4EW4FU.jpg?smart=true&auth=cf56db995b39d18058b768e72996a3714de99c261c5ebcd6e825e05ede8ca38e&width=1200&height=630",
-      "caption": "In this photo released by the Finnish Border Guard, two ships try to extinguish a fire in the Russian cargo ship Sparta II after a drone strike in the Gulf of Finland, Sunday, Nov. 22, 2026. (Finnish Border Guard/Lehtikuva via AP). — via CTV News",
-      "alt": "In this photo released by the Finnish Border Guard, two ships try to extinguish a fire in the Russian cargo ship Sparta II after a drone strike in the Gulf of F",
-      "outlet": "CTV News",
-      "url": "https://www.ctvnews.ca/world/russia-ukraine-war/article/air-alert-sounds-in-kaliningrad-hours-after-russia-bound-ship-attacked-in-the-gulf-of-finland/"
+      "src": "live/img/auto-700c6ca4-4c48d21769.jpg",
+      "orig": "https://images.euronews.com/articles/stories/10/00/32/18/1200x675_cmsv2_a2f6078b-215d-5e59-9c8a-4f9c96f9b538-10003218.jpg",
+      "caption": "Tracking site says Iranian tanker reportedly sailing through Strait of Hormuz does not exist. — via Euronews",
+      "alt": "Tracking site says Iranian tanker reportedly sailing through Strait of Hormuz does not exist",
+      "outlet": "Euronews",
+      "url": "https://www.euronews.com/2026/11/22/tracking-site-says-iranian-tanker-reportedly-sailing-through-strait-of-hormuz-does-not-exi"
      },
      {
-      "src": "live/img/auto-cb250237-0a5fe2053d.jpg",
-      "orig": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1795346116.jpg?resize=1920%2C1080&quality=80",
-      "caption": "Russian ship attacked by drone in Baltic Sea off Finland. — via Al Jazeera",
-      "alt": "Russian ship attacked by drone in Baltic Sea off Finland",
-      "outlet": "Al Jazeera",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/22/russian-ship-attacked-by-drone-in-baltic-sea-off-finland?traffic_source=rss"
+      "src": "live/img/auto-700c6ca4-cdc53ca10a.jpg",
+      "orig": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/22/575399.JPG?v=3.1",
+      "caption": "From: Bahrain says Iran struck industrial site as tankers hit in Hormuz. — via The Japan Times",
+      "alt": "Bahrain says Iran struck industrial site as tankers hit in Hormuz",
+      "outlet": "The Japan Times",
+      "url": "https://www.japantimes.co.jp/news/2026/11/22/world/bahrain-iran-attack-hormuz/"
+     },
+     {
+      "src": "live/img/auto-700c6ca4-d8f1a7ac71.jpg",
+      "orig": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/22/6f642d8d-a281-49af-8e39-8f6417483e55/thumbnail/1200x630/e4ef39168b9187cc5a8ff2ee8d77bd8a/ap26324612213940.jpg",
+      "caption": "From: Athlete swims Strait of Hormuz to highlight Iran war's wildlife toll. — via CBS News",
+      "alt": "Athlete swims Strait of Hormuz to highlight Iran war's wildlife toll",
+      "outlet": "CBS News",
+      "url": "https://www.cbsnews.com/news/athlete-swims-strait-of-hormuz-iran-war-wildlife/"
      }
     ],
     "independent": 4,
     "reports": [
      {
-      "t": "Sun 8:08 a.m.",
-      "iso": "2026-11-22T13:08:03+00:00",
-      "outlet": "CTV News",
-      "title": "Air alert sounds in Kaliningrad hours after Russia-bound ship attacked in the Gulf of Finland",
-      "url": "https://www.ctvnews.ca/world/russia-ukraine-war/article/air-alert-sounds-in-kaliningrad-hours-after-russia-bound-ship-attacked-in-the-gulf-of-finland/",
-      "desc": "A rare air alert sounded in Kaliningrad, the Russian exclave near Poland and Lithuania, according to the local governor, as claims circulated online of drone activity near a major naval base there."
+      "t": "Sun 8:36 a.m.",
+      "iso": "2026-11-22T13:36:01+00:00",
+      "outlet": "The Guardian",
+      "title": "Briton swims length of strait of Hormuz to highlight environmental cost of war",
+      "url": "https://www.theguardian.com/world/2026/nov/22/briton-lewis-pugh-swims-strait-of-hormuz-environment-war",
+      "desc": "UN patron Lewis Pugh saw ships ablaze and fighter jets overhead during three-day swim as Iran conflict continues"
      },
      {
-      "t": "Sun 8:08 a.m.",
-      "iso": "2026-11-22T13:08:03+00:00",
-      "outlet": "CP24",
-      "title": "Air alert sounds in Kaliningrad hours after Russia-bound ship attacked in the Gulf of Finland",
-      "url": "https://www.cp24.com/news/world/2026/11/22/air-alert-sounds-in-kaliningrad-hours-after-russia-bound-ship-attacked-in-the-gulf-of-finland/",
-      "desc": ""
+      "t": "Sun 4:54 a.m.",
+      "iso": "2026-11-22T09:54:50+00:00",
+      "outlet": "Euronews",
+      "title": "Tracking site says Iranian tanker reportedly sailing through Strait of Hormuz does not exist",
+      "url": "https://www.euronews.com/2026/11/22/tracking-site-says-iranian-tanker-reportedly-sailing-through-strait-of-hormuz-does-not-exi",
+      "desc": "The US military said Saturday marked 130 consecutive days of its naval blockade against Iran, which it says is preventing the Islamic Revolutionary Guard Corps from exporting \"billions of dollars in crude oil.\""
      },
      {
-      "t": "Sun 6:25 a.m.",
-      "iso": "2026-11-22T11:25:14+00:00",
-      "outlet": "BBC News",
-      "title": "Russia-bound ship still on fire after attack in Gulf of Finland",
-      "url": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
-      "desc": "Finnish defence forces say that Ukraine was likely behind the drone attack on the vessel."
+      "t": "Sun 12:19 a.m.",
+      "iso": "2026-11-22T05:19:00+00:00",
+      "outlet": "The Japan Times",
+      "title": "Bahrain says Iran struck industrial site as tankers hit in Hormuz",
+      "url": "https://www.japantimes.co.jp/news/2026/11/22/world/bahrain-iran-attack-hormuz/",
+      "desc": "The Gulf kingdom suffered several attacks last week, ending a lull in the conflict that began with U.S.-Israeli strikes on Iran in late February."
      },
      {
-      "t": "Sun 6:15 a.m.",
-      "iso": "2026-11-22T11:15:27+00:00",
-      "outlet": "Al Jazeera",
-      "title": "Russian ship attacked by drone in Baltic Sea off Finland",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/22/russian-ship-attacked-by-drone-in-baltic-sea-off-finland?traffic_source=rss",
-      "desc": "Russian ship attacked by drone in Baltic Sea off Finland"
-     },
-     {
-      "t": "Sat 6:35 p.m.",
-      "iso": "2026-11-21T23:35:21+00:00",
-      "outlet": "Kyiv Independent",
-      "title": "Moldova, Finland report Russian airspace violations day after suspected Russian missiles flew into Poland",
-      "url": "https://kyivindependent.com/moldova-finland-report-russian-airspace-violations-day-after-suspected-russian-missiles-flew-into-poland/",
-      "desc": "Both Moldova and Finland reported separate instances of airspace violations by Russia on Nov. 21, officials said, just one day after two suspected Russian missiles and a jet-powered drone fell on Polish territory."
+      "t": "Sat 8:30 p.m.",
+      "iso": "2026-11-22T01:30:53+00:00",
+      "outlet": "CBS News",
+      "title": "Athlete swims Strait of Hormuz to highlight Iran war's wildlife toll",
+      "url": "https://www.cbsnews.com/news/athlete-swims-strait-of-hormuz-iran-war-wildlife/",
+      "desc": "British endurance swimmer Lewis Pugh has swum the Strait of Hormuz to highlight environmental threats during ongoing conflict."
      }
     ],
     "sources": [
      {
-      "t": "Sun 8:08 a.m.",
+      "t": "Sun 8:36 a.m.",
       "primary": false,
-      "outlet": "CTV News",
-      "title": "Air alert sounds in Kaliningrad hours after Russia-bound ship attacked in the Gulf of Finland",
-      "url": "https://www.ctvnews.ca/world/russia-ukraine-war/article/air-alert-sounds-in-kaliningrad-hours-after-russia-bound-ship-attacked-in-the-gulf-of-finland/",
-      "desc": "A rare air alert sounded in Kaliningrad, the Russian exclave near Poland and Lithuania, according to the local governor, as claims circulated online of drone activity near a major naval base there.",
-      "wire": "The Canadian Press",
-      "by": [
-       {
-        "outlet": "CTV News",
-        "src": "The Canadian Press",
-        "byline": "Wilson\" \"Ian Holliday\" \"Ian Holliday\" \"The Canadian Press\" \"Christl Dabu\" \"Ad"
-       },
-       {
-        "outlet": "CP24",
-        "src": "The Associated Press",
-        "byline": "\"@type\": \"Person\",\n      \"name\": \"The  Associated Press\",\n      \n    }\n  ]"
-       }
-      ],
-      "copies": [
-       {
-        "outlet": "CP24",
-        "url": "https://www.cp24.com/news/world/2026/11/22/air-alert-sounds-in-kaliningrad-hours-after-russia-bound-ship-attacked-in-the-gulf-of-finland/"
-       }
-      ]
-     },
-     {
-      "t": "Sun 6:25 a.m.",
-      "primary": false,
-      "outlet": "BBC News",
-      "title": "Russia-bound ship still on fire after attack in Gulf of Finland",
-      "url": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
-      "desc": "Finnish defence forces say that Ukraine was likely behind the drone attack on the vessel.",
+      "outlet": "The Guardian",
+      "title": "Briton swims length of strait of Hormuz to highlight environmental cost of war",
+      "url": "https://www.theguardian.com/world/2026/nov/22/briton-lewis-pugh-swims-strait-of-hormuz-environment-war",
+      "desc": "UN patron Lewis Pugh saw ships ablaze and fighter jets overhead during three-day swim as Iran conflict continues",
       "wire": "",
       "by": [
        {
-        "outlet": "BBC News",
-        "src": "BBC News",
-        "byline": "[{\"@type\":\"Person\",\"name\":\"Hafsa Khalil\"}] https://www.facebook.com/bbcnews"
+        "outlet": "The Guardian",
+        "src": "The Guardian",
+        "byline": "[{\"@type\":\"Person\",\"name\":\"Rachel Hall\",}] \"Rachel Hall\" \"Rachel Hall\" https://www.theguardian.com/profile/rachel-hall"
        }
       ],
       "copies": []
      },
      {
-      "t": "Sun 6:15 a.m.",
+      "t": "Sun 4:54 a.m.",
       "primary": false,
-      "outlet": "Al Jazeera",
-      "title": "Russian ship attacked by drone in Baltic Sea off Finland",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/22/russian-ship-attacked-by-drone-in-baltic-sea-off-finland?traffic_source=rss",
-      "desc": "Russian ship attacked by drone in Baltic Sea off Finland",
+      "outlet": "Euronews",
+      "title": "Tracking site says Iranian tanker reportedly sailing through Strait of Hormuz does not exist",
+      "url": "https://www.euronews.com/2026/11/22/tracking-site-says-iranian-tanker-reportedly-sailing-through-strait-of-hormuz-does-not-exi",
+      "desc": "The US military said Saturday marked 130 consecutive days of its naval blockade against Iran, which it says is preventing the Islamic Revolutionary Guard Corps from exporting \"billions of dollars in crude oil.\"",
       "wire": "",
       "by": [
        {
-        "outlet": "Al Jazeera",
-        "src": "Al Jazeera",
-        "byline": " NewsFeed Add Al Jazeera on Google"
+        "outlet": "Euronews",
+        "src": "Euronews",
+        "byline": "[ { \"@type\": \"Person\", \"familyName\": \"Mirmohammadsadeghi\", \"givenName\": \"Farhad\", \"name\": \"Farhad Mirmohammadsadeghi\", ,"
        }
       ],
       "copies": []
      },
      {
-      "t": "Sat 6:35 p.m.",
+      "t": "Sun 12:19 a.m.",
       "primary": false,
-      "outlet": "Kyiv Independent",
-      "title": "Moldova, Finland report Russian airspace violations day after suspected Russian missiles flew into Poland",
-      "url": "https://kyivindependent.com/moldova-finland-report-russian-airspace-violations-day-after-suspected-russian-missiles-flew-into-poland/",
-      "desc": "Both Moldova and Finland reported separate instances of airspace violations by Russia on Nov. 21, officials said, just one day after two suspected Russian missiles and a jet-powered drone fell on Polish territory.",
+      "outlet": "The Japan Times",
+      "title": "Bahrain says Iran struck industrial site as tankers hit in Hormuz",
+      "url": "https://www.japantimes.co.jp/news/2026/11/22/world/bahrain-iran-attack-hormuz/",
+      "desc": "The Gulf kingdom suffered several attacks last week, ending a lull in the conflict that began with U.S.-Israeli strikes on Iran in late February.",
+      "wire": "AFP",
+      "by": [
+       {
+        "outlet": "The Japan Times",
+        "src": "AFP",
+        "byline": "AFP-Jiji \n           By"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Sat 8:30 p.m.",
+      "primary": false,
+      "outlet": "CBS News",
+      "title": "Athlete swims Strait of Hormuz to highlight Iran war's wildlife toll",
+      "url": "https://www.cbsnews.com/news/athlete-swims-strait-of-hormuz-iran-war-wildlife/",
+      "desc": "British endurance swimmer Lewis Pugh has swum the Strait of Hormuz to highlight environmental threats during ongoing conflict.",
       "wire": "",
       "by": [
        {
-        "outlet": "Kyiv Independent",
-        "src": "Kyiv Independent",
-        "byline": "own staff: Editor"
+        "outlet": "CBS News",
+        "src": "CBS News",
+        "byline": " Lewis Pugh Foundation via AP Lewis Pugh Foundation via AP Alastair Grant/AP Photo "
        }
       ],
       "copies": []
@@ -1019,14 +1005,14 @@
     "popular": 0,
     "us_election": false,
     "fronts": 1,
-    "fronts_ca": 0,
+    "fronts_ca": 1,
     "fronts_who": [
-     "BBC News"
+     "BNN Bloomberg"
     ],
-    "outled_ca": 3,
+    "outled_ca": 2,
     "judgment": "national",
-    "judgment_why": "National: affects some people; carried across the country (national desks).",
-    "weight": 28.5
+    "judgment_why": "National: affects many people; carried by a few newsrooms.",
+    "weight": 30.0
    }
   ],
   "considered": [
@@ -1042,42 +1028,20 @@
     "canada": "canadian",
     "theme": "",
     "top": true,
-    "fronts": 3,
+    "fronts": 2,
     "fronts_who": [
-     "Toronto Star",
      "National Post",
      "The Globe and Mail"
     ],
-    "rule": "Canadian, leading the most Canadian front pages: the story Canada's newsrooms are leading with",
+    "rule": "Canadian, older",
     "carriers": 7,
     "judgment": "regional",
     "why_judged": "Regional: affects some people; carried beyond one city."
    },
    {
-    "title": "Air alert sounds in Kaliningrad hours after Russia-bound ship attacked in the Gulf of Finland",
-    "url": "https://www.ctvnews.ca/world/russia-ukraine-war/article/air-alert-sounds-in-kaliningrad-hours-after-russia-bound-ship-attacked-in-the-gulf-of-finland/",
-    "rank": 2,
-    "live": "",
-    "weight": 28.5,
-    "score": 8,
-    "independent": 4,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": true,
-    "fronts": 1,
-    "fronts_who": [
-     "BBC News"
-    ],
-    "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
-    "carriers": 5,
-    "judgment": "national",
-    "why_judged": "National: affects some people; carried across the country (national desks)."
-   },
-   {
     "title": "Briton swims length of strait of Hormuz to highlight environmental cost of war",
     "url": "https://www.theguardian.com/world/2026/nov/22/briton-lewis-pugh-swims-strait-of-hormuz-environment-war",
-    "rank": 3,
+    "rank": 2,
     "live": "",
     "weight": 30.0,
     "score": 10,
@@ -1085,7 +1049,7 @@
     "most_read": 0,
     "canada": "none",
     "theme": "",
-    "top": false,
+    "top": true,
     "fronts": 1,
     "fronts_who": [
      "BNN Bloomberg"
@@ -1096,9 +1060,9 @@
     "why_judged": "National: affects many people; carried by a few newsrooms."
    },
    {
-    "title": "'We live in fear' — Russian attack near Kyiv kills 2, leaves families waiting as rescuers search rubble",
-    "url": "https://kyivindependent.com/apartment-building-destroyed-in-kyiv-oblast-following-russian-drone-attack/",
-    "rank": 4,
+    "title": "15 people missing after Russian drone strike on Kyiv region",
+    "url": "https://www.euronews.com/2026/11/22/14-people-missing-after-russian-drone-strike-on-kyiv-region",
+    "rank": 3,
     "live": "",
     "weight": 29.0,
     "score": 12,
@@ -1107,14 +1071,33 @@
     "canada": "none",
     "theme": "",
     "top": false,
-    "fronts": 1,
-    "fronts_who": [
-     "CBS News"
-    ],
+    "fronts": 0,
+    "fronts_who": [],
     "rule": "No Canadian tie",
     "carriers": 4,
     "judgment": "national",
     "why_judged": "National: affects many people; carried by a few newsrooms."
+   },
+   {
+    "title": "Air alert sounds in Kaliningrad hours after Russia-bound ship attacked in the Gulf of Finland",
+    "url": "https://www.ctvnews.ca/world/russia-ukraine-war/article/air-alert-sounds-in-kaliningrad-hours-after-russia-bound-ship-attacked-in-the-gulf-of-finland/",
+    "rank": 4,
+    "live": "",
+    "weight": 25.5,
+    "score": 8,
+    "independent": 4,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": false,
+    "fronts": 1,
+    "fronts_who": [
+     "BBC News"
+    ],
+    "rule": "No Canadian tie",
+    "carriers": 5,
+    "judgment": "national",
+    "why_judged": "National: affects some people; carried across the country (national desks)."
    },
    {
     "title": "What to know about tear gas and reproductive health as people raise concerns in France",
@@ -1138,28 +1121,9 @@
     "why_judged": "National: affects some people; carried across the country (national desks)."
    },
    {
-    "title": "Three killed and dozens missing after fire at Indonesian factory",
-    "url": "https://www.bbc.co.uk/news/articles/cw8dvg5pgm0eo?at_medium=RSS&at_campaign=rss",
-    "rank": 6,
-    "live": "",
-    "weight": 22.5,
-    "score": 7,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "No Canadian tie",
-    "carriers": 3,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried beyond one city."
-   },
-   {
     "title": "Stephen A Smith isn't the only one who knows dissing White people comes without consequences",
     "url": "https://www.foxnews.com/outkick-sports/stephen-a-smith-isnt-only-one-knows-dissing-white-people-comes-without-consequences",
-    "rank": 7,
+    "rank": 6,
     "live": "",
     "weight": 31.5,
     "score": 12,
@@ -1181,7 +1145,7 @@
    {
     "title": "Will Canadian workers refuse to handle Israeli goods? Why unions increasingly say they should",
     "url": "https://www.cbc.ca/news/canada/clc-resolution-canadian-unions-israel-9.7428991",
-    "rank": 8,
+    "rank": 7,
     "live": "",
     "weight": 27.5,
     "score": 7,
@@ -1206,7 +1170,7 @@
     "why": "not built: only 1 independent report(s) (1 sites)"
    },
    {
-    "title": "Man rushed to hospital after stabbing in downtown Toronto, suspect arrested",
+    "title": "'We are thriving': In an age of AI and internet, Vancouver used-book stores find continuity is popular",
     "score": 16,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
@@ -1233,6 +1197,16 @@
    {
     "title": "City of Regina plans to shut down public transit starting Monday",
     "score": 7,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Liberals Maintain Strong Lead Following Federal Budget as Political Landscape Remains Stable",
+    "score": 6,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Quebecor CEO defends Telus bid, cites falling wireless prices and Canada's sovereignty",
+    "score": 6,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
   ],
@@ -1270,7 +1244,7 @@
      "alt": "Stephen A Smith isn't the only one who knows dissing White people comes without consequences",
      "outlet": "Fox News",
      "url": "https://www.foxnews.com/outkick-sports/stephen-a-smith-isnt-only-one-knows-dissing-white-people-comes-without-consequences",
-     "since": "2026-11-22T14:06:19.308312+00:00"
+     "since": "2026-11-22T14:10:52.547750+00:00"
     },
     "photo_seen": [
      "https://static.foxnews.com/foxnews.com/content/uploads/2026/07/stephen-a-smith-111525.jpg"
@@ -1374,7 +1348,7 @@
        {
         "outlet": "CTV News",
         "src": "The Canadian Press",
-        "byline": "Wilson\" \"Ian Holliday\" \"Ian Holliday\" \"The Canadian Press\" \"Christl Dabu\" \"Ad"
+        "byline": "Wilson\" \"Ian Holliday\" \"Ian Holliday\" \"The Canadian Press\" \"The Canadian Pres"
        },
        {
         "outlet": "CP24",
@@ -1435,7 +1409,7 @@
      "NBC News",
      "ABC News"
     ],
-    "outled_ca": 3,
+    "outled_ca": 2,
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (national desks).",
     "weight": 31.5
@@ -1470,7 +1444,7 @@
      "alt": "Two Palestinians succumb to wounds sustained in Israeli strike on Gaza",
      "outlet": "Middle East Eye",
      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/two-palestinians-succumb-wounds-sustained-israeli-strike-gaza",
-     "since": "2026-11-22T14:06:24.929941+00:00"
+     "since": "2026-11-22T14:10:55.785405+00:00"
     },
     "photo_seen": [
      "https://www.middleeasteye.net/sites/default/files/images-story/iran-irgc-rocket-hormuz-february-2026-sepah-news-afp.jpg"
@@ -1586,20 +1560,16 @@
   ],
   "passed_over": [
    {
-    "title": "'We live in fear' — Russian attack near Kyiv kills 2, leaves families waiting as rescuers search rubble",
-    "url": "https://kyivindependent.com/apartment-building-destroyed-in-kyiv-oblast-following-russian-drone-attack/"
+    "title": "15 people missing after Russian drone strike on Kyiv region",
+    "url": "https://www.euronews.com/2026/11/22/14-people-missing-after-russian-drone-strike-on-kyiv-region"
    },
    {
-    "title": "Briton swims length of strait of Hormuz to highlight environmental cost of war",
-    "url": "https://www.theguardian.com/world/2026/nov/22/briton-lewis-pugh-swims-strait-of-hormuz-environment-war"
+    "title": "Air alert sounds in Kaliningrad hours after Russia-bound ship attacked in the Gulf of Finland",
+    "url": "https://www.ctvnews.ca/world/russia-ukraine-war/article/air-alert-sounds-in-kaliningrad-hours-after-russia-bound-ship-attacked-in-the-gulf-of-finland/"
    },
    {
     "title": "What to know about tear gas and reproductive health as people raise concerns in France",
     "url": "https://www.ctvnews.ca/health/article/what-to-know-about-tear-gas-and-reproductive-health-as-people-raise-concerns-in-france/"
-   },
-   {
-    "title": "Three killed and dozens missing after fire at Indonesian factory",
-    "url": "https://www.bbc.co.uk/news/articles/cw8dvg5pgm0eo?at_medium=RSS&at_campaign=rss"
    }
   ]
  },
@@ -1664,7 +1634,7 @@
    "id": "P-5616L0fJ8",
    "r": "ca",
    "o": "Global News",
-   "t": "BC shooter reportedly received instructions from ChatGPT on modifying weapons",
+   "t": "Tumbler Ridge shooter reportedly received detailed instructions from AI on modifying weapons",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=P-5616L0fJ8",
@@ -1913,34 +1883,6 @@
    "geo": "unknown"
   },
   {
-   "id": "zD4gOHUOWEE",
-   "r": "us",
-   "o": "CBS News",
-   "t": "Inside China's workaround to access U.S.-made AI chips",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=zD4gOHUOWEE",
-   "img": "https://i.ytimg.com/vi/zD4gOHUOWEE/hqdefault.jpg",
-   "up": "2026-11-21",
-   "added": "2026-11-22T09:53:33.271529+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "iIbC99xZpVk",
-   "r": "us",
-   "o": "CBS News",
-   "t": "Southwest Airlines announces sweeping changes as Thanksgiving travel rush approaches",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=iIbC99xZpVk",
-   "img": "https://i.ytimg.com/vi/iIbC99xZpVk/hqdefault.jpg",
-   "up": "2026-11-21",
-   "added": "2026-11-22T09:53:33.271529+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "NKUm1p0-Fp8",
    "r": "us",
    "o": "ABC News",
@@ -1958,7 +1900,7 @@
    "id": "hChw30vwgUc",
    "r": "us",
    "o": "CNN",
-   "t": "America’s past and present are Latino | United Shades of America‌",
+   "t": "The LA Latino culture most tourists don’t see | United Shades of America‌",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=hChw30vwgUc",
@@ -1993,20 +1935,6 @@
    "img": "https://i.ytimg.com/vi/5fYXm7yJgdY/hqdefault.jpg",
    "up": "2026-11-22",
    "added": "2026-11-22T12:59:53.401838+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "qXpEUeDxdMQ",
-   "r": "us",
-   "o": "Bloomberg",
-   "t": "Luxury ADUs Test California Housing Rules",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=qXpEUeDxdMQ",
-   "img": "https://i.ytimg.com/vi/qXpEUeDxdMQ/hqdefault.jpg",
-   "up": "2026-11-22",
-   "added": "2026-11-22T13:24:25.173865+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2067,6 +1995,20 @@
    "geo": "unknown"
   },
   {
+   "id": "EJIMMebnHtk",
+   "r": "us",
+   "o": "Bloomberg",
+   "t": "Nvidia Board Faces a Governance Reckoning",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=EJIMMebnHtk",
+   "img": "https://i.ytimg.com/vi/EJIMMebnHtk/hqdefault.jpg",
+   "up": "2026-11-22",
+   "added": "2026-11-22T14:09:37.262658+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
    "id": "g7m27fV-gyQ",
    "r": "world",
    "o": "Al Jazeera",
@@ -2112,7 +2054,7 @@
    "id": "Qla1B9VVjG0",
    "r": "world",
    "o": "BBC News",
-   "t": "What is the Pip disability benefit and how does it work? | BBC News",
+   "t": "Why is everyone talking about Pip? | BBC News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=Qla1B9VVjG0",
@@ -2154,7 +2096,7 @@
    "id": "4wcTnS-bYJI",
    "r": "world",
    "o": "DW News",
-   "t": "A new power bloc is emerging. Should Europe worry? | The Dip Podcast",
+   "t": "Why the world is watching Xi, Trump & Putin | The Dip Podcast",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=4wcTnS-bYJI",
@@ -2182,7 +2124,7 @@
    "id": "isqKv2r2LHQ",
    "r": "world",
    "o": "BBC News",
-   "t": "Comedian Bob Mortimer doesn't think he is a national treasure | BBC News",
+   "t": "Is comedian Bob Mortimer a national treasure? | BBC News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=isqKv2r2LHQ",
@@ -2332,6 +2274,32 @@
    "auto": true
   },
   {
+   "inst": "Fraser Institute",
+   "place": "Vancouver",
+   "kind": "Publication",
+   "by": "",
+   "date": "Nov. 20, 2026",
+   "d": "2026-11-20",
+   "pic": "chart",
+   "u": "https://www.fraserinstitute.org/commentary/what-really-matters-competition-contestability",
+   "t": "What really matters for competition is contestability",
+   "g": "What really matters for competition is contestability beng Fri, 11/20/2026 - 15:28 EST. READ TIME 3 MIN. Quebecor’s proposed takeover of Telus raises an obvious competition policy issue. Prime Minister Mark Carney, while declining to comment directly on the proposed takeover, advanced an intriguing theory of market…",
+   "auto": true
+  },
+  {
+   "inst": "Fraser Institute",
+   "place": "Vancouver",
+   "kind": "Publication",
+   "by": "",
+   "date": "Nov. 20, 2026",
+   "d": "2026-11-20",
+   "pic": "chart",
+   "u": "https://www.fraserinstitute.org/commentary/ottawas-new-proposed-medical-record-legislation-misses-mark",
+   "t": "Ottawa’s new proposed medical record legislation misses the mark",
+   "g": "Ottawa’s new proposed medical record legislation misses the mark beng Fri, 11/20/2026 - 14:01 EST. READ TIME 3 MIN. If you've managed to endure the ever-increasing wait to see a specialist in Canada or had to visit a hospital, it’s likely you’ve had to spend at least some portion of your appointment repeating your…",
+   "auto": true
+  },
+  {
    "inst": "Macdonald-Laurier Institute",
    "place": "Ottawa",
    "kind": "Publication",
@@ -2355,6 +2323,19 @@
    "u": "https://macdonaldlaurier.ca/dont-let-the-trade-war-scuttle-sensible-drug-reforms-nigel-rawson-john-adams-and-andrew-darke-in-the-financial-post/",
    "t": "Don’t let the trade war scuttle sensible drug reforms: Nigel Rawson, John Adams and Andrew Darke in The Financial Post",
    "g": "This article originally appeared in the Financial Post. Below is an excerpt from the article. By Nigel Rawson, John Adams and Andrew Darke, November 20, 2026 Part of the current […] The post Don’t let the trade war scuttle sensible drug reforms: Nigel Rawson, John Adams and Andrew Darke in The Financial Post appeared…",
+   "auto": true
+  },
+  {
+   "inst": "AEI",
+   "place": "Washington",
+   "kind": "Publication",
+   "by": "",
+   "date": "Nov. 20, 2026",
+   "d": "2026-11-20",
+   "pic": "chart",
+   "u": "https://www.aei.org/economics/ignore-the-european-central-banks-ai-warning-at-your-peril/",
+   "t": "Ignore the European Central Bank’s AI Warning at Your Peril",
+   "g": "In its latest Global Financial Stability Report, the ECB explicitly warns that there are uncomfortable parallels between today’s financial market situation and what preceded the 2001 bursting of the dot-com bubble and the 2008 US subprime mortgage crisis. The post Ignore the European Central Bank’s AI Warning at Your…",
    "auto": true
   },
   {
@@ -2407,45 +2388,6 @@
    "u": "https://www.atlanticcouncil.org/commentary/event-recap/pennsylvania-governor-josh-shapiro-outlines-his-vision-for-us-leadership-in-the-world/",
    "t": "Pennsylvania Governor Josh Shapiro outlines his vision for US leadership in the world",
    "g": "At the Atlantic Council's NATO in America conference, Shapiro said the United States has an opportunity to push forward a new foreign policy centered on security and prosperity. The post Pennsylvania Governor Josh Shapiro outlines his vision for US leadership in the world appeared first on Atlantic Council .",
-   "auto": true
-  },
-  {
-   "inst": "Pew Research Center",
-   "place": "Washington",
-   "kind": "Publication",
-   "by": "",
-   "date": "Nov. 20, 2026",
-   "d": "2026-11-20",
-   "pic": "chart",
-   "u": "https://www.pewresearch.org/short-reads/2026/11/20/2024-elections-show-more-partisan-splits-between-states-presidential-and-senate-votes-than-in-recent-past/",
-   "t": "Democrats Won Senate Races in 10 States Trump Carried in 2024. How Uncommon Is That?",
-   "g": "Voters in 10 states that voted for Republican Donald Trump in 2024 elected Democratic senators this year.",
-   "auto": true
-  },
-  {
-   "inst": "Lowy Institute",
-   "place": "Sydney",
-   "kind": "Publication",
-   "by": "",
-   "date": "Nov. 20, 2026",
-   "d": "2026-11-20",
-   "pic": "chart",
-   "u": "https://www.lowyinstitute.org/the-interpreter/marape-reassures-beijing-after-png-s-pacts-with-the-west",
-   "t": "Marape reassures Beijing after PNG’s pacts with the West",
-   "g": "Infrastructure, roads and gas money explain why Port Moresby will play both sides in the China–US rivalry.",
-   "auto": true
-  },
-  {
-   "inst": "Lowy Institute",
-   "place": "Sydney",
-   "kind": "Publication",
-   "by": "",
-   "date": "Nov. 19, 2026",
-   "d": "2026-11-19",
-   "pic": "chart",
-   "u": "https://www.lowyinstitute.org/the-interpreter/bluey-is-a-triumph-but-not-a-soft-power-strategy",
-   "t": "Bluey is a triumph, but not a soft-power strategy",
-   "g": "Japan, Korea and China treat cartoons as a tool of influence rather than mere entertainment.",
    "auto": true
   }
  ],
@@ -2610,7 +2552,7 @@
    "Good morning. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
    "Ontario Liberals have elected Navdeep Bains as the party’s new leader after a marathon nine-month leadership race, with Bains emerging as victor less than one percentage point ahead of his next closest competitor, provincial caucus member Lee Fairclough, The Canadian Press reports.",
    "Gadi Eisenkot, who is tasked with forming the next Israeli government, has invited the right-wing Likud party of caretaker prime minister Benjamin Netanyahu for coalition talks, his party said on Saturday.",
-   "15 people missing after Russian drone strike on Kyiv region, Euronews reports.",
+   "15 people missing after Russian drone strike on Kyiv region, The Associated Press reports.",
    "British endurance swimmer Lewis Pugh has swum the Strait of Hormuz to highlight environmental threats during ongoing conflict, CBS News reports.",
    "Both Moldova and Finland reported separate instances of airspace violations by Russia on Nov. 21, officials said, just one day after two suspected Russian missiles and a jet-powered drone fell on Polish territory, Kyiv Independent reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
@@ -2969,12 +2911,12 @@
    "tz": "America/Vancouver",
    "world": false,
    "w": "Toronto",
-   "label": "Luxury home sales slump in Toronto, Vancouver",
-   "u": "https://www.narcity.com/toronto/luxury-home-sales-slump-as-wealthy-buyers-waiting",
-   "title": "Luxury home sales slump in Toronto, Vancouver, but top-end properties buck trend",
-   "outlet": "Narcity",
-   "t": "Sun 6:01 a.m.",
-   "hot": false
+   "label": "'We are thriving': In an age of AI and internet",
+   "u": "https://vancouversun.com/news/we-are-thriving-in-an-age-of-ai-and-internet-vancouver-used-book-stores-find-continuity",
+   "title": "'We are thriving': In an age of AI and internet, Vancouver used-book stores find continuity is popular",
+   "outlet": "Vancouver Sun",
+   "t": "Sun 9:00 a.m.",
+   "hot": true
   },
   {
    "city": "Washington",
@@ -3046,8 +2988,8 @@
    "iso": "2026-11-22T13:56:36+00:00",
    "title": "Jacobs' foursome advances to final at GSOC National in Sydney",
    "summary": "Brad Jacobs and his Calgary squad scored a deuce in the sixth end and stole two more in the seventh en route to a 7-3 victory over Oskar Eriksson of Sweden in the men’s semifinals of the Grand Slam of Curling National event on Saturday night.",
-   "outlet": "CTV News + Toronto Star (CP), Euronews, Kyiv Independent, The Guardian, Toronto Star (AP), The Japan Times (Reuters), CBC News",
-   "n": 7,
+   "outlet": "CTV News + Toronto Star (CP), Toronto Star + Euronews (AP), Kyiv Independent, The Guardian, The Japan Times (Reuters), CBC News",
+   "n": 6,
    "url": "https://www.ctvnews.ca/calgary/article/jacobs-foursome-advances-to-final-at-gsoc-national-in-sydney/",
    "img": "https://www.ctvnews.ca/resizer/v2/UCTFEDTQWYHXKYST35WN4DURVE.jpg?smart=true&auth=ad331ba82b7356585f9476f18458b48453ca176976c57d24be3e6195d04d6304&width=1200&height=630"
   },
@@ -3078,18 +3020,6 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Sun 8:18 a.m.",
-   "iso": "2026-11-22T13:18:44+00:00",
-   "title": "Indonesia candy factory fire leaves multiple dead, dozens missing",
-   "summary": "A massive fire tore through PT Fonusa Agung Mulia's candy factory in Indonesia's Banten, killing at least three with about 50 workers missing.",
-   "outlet": "Fox News, Euronews, The Guardian, BBC News, Toronto Star",
-   "n": 5,
-   "url": "https://www.foxnews.com/world/indonesia-candy-factory-fire-leaves-multiple-dead-dozens-missing",
-   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/indonesia-candy-factory-fire.gif"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
    "t": "Sun 7:51 a.m.",
    "iso": "2026-11-22T12:51:09+00:00",
    "title": "What to know about tear gas and reproductive health as people raise concerns in France",
@@ -3110,6 +3040,18 @@
    "n": 4,
    "url": "https://www.ctvnews.ca/regina/article/conference-designed-to-launch-christian-education-initiatives-held-at-regina-victory-church/",
    "img": "https://www.ctvnews.ca/resizer/v2/R7R4V5U6XVCQBLM7LA4EXDPG5E.jpg?smart=true&auth=87db4f0e7a6d709d6e0f5486ad7fcfea85b077163e51c16b5c20b48f5c705a44&width=1200&height=630"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Sun 9:05 a.m.",
+   "iso": "2026-11-22T14:05:20+00:00",
+   "title": "Three killed and dozens missing after fire at Indonesian factory",
+   "summary": "At least three people were killed and many more feared dead after a fire at a confectionary factory.",
+   "outlet": "BBC News, Toronto Star + Euronews (AP), The Guardian",
+   "n": 3,
+   "url": "https://www.bbc.co.uk/news/articles/cw8dvg5pgm0eo?at_medium=RSS&at_campaign=rss",
+   "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/0675/live/85d2f2e0-e62c-11f1-b2ea-350d14ed1ad7.jpg"
   },
   {
    "desk": "world",
@@ -3160,16 +3102,28 @@
    "img": "https://i.abcnewsfe.com/a/6a2c2e2a-f814-40d7-ba40-7ca92e33df4d/sea-tac-airport-2_1795310671098_hpMain_16x9.jpg?w=1600"
   },
   {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Sun 8:54 a.m.",
+   "iso": "2026-11-22T13:54:19+00:00",
+   "title": "UN climate talks break down without an overarching agreement",
+   "summary": "",
+   "outlet": "Times Colonist + CTV News + CP24 + Toronto Star + 1 more (CP), PBS NewsHour",
+   "n": 2,
+   "url": "https://www.timescolonist.com/the-mix/un-climate-talks-break-down-without-an-overarching-agreement-13046249",
+   "img": ""
+  },
+  {
    "desk": "politics",
    "pic": "parliament",
    "t": "Sun 6:26 a.m.",
    "iso": "2026-11-22T11:26:08+00:00",
    "title": "Vape Ban Opposition Group Claims NL has ‘Lowest’ Rate in Canada",
-   "summary": "",
+   "summary": "Those who support the government-ordered ban on flavoured vape products say Newfoundland and Labrador has some...",
    "outlet": "VOCM, Times Colonist",
    "n": 2,
    "url": "https://vocm.com/2026/11/22/317434/",
-   "img": ""
+   "img": "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/900/files/2026/11/vape-flavoured-vapes-vapour-tobacco.jpg"
   },
   {
    "desk": "us",
@@ -3254,18 +3208,6 @@
    "n": 2,
    "url": "https://www.pbs.org/newshour/politics/trump-vows-to-work-with-democrats-to-cap-credit-card-interest-rates-at-10",
    "img": "https://d3i6fh83elv35t.cloudfront.net/static/2026/11/2026-10-23T110237Z_1721394900_RC2UFMAGSKQ9_RTRMADP_3_AMERICAN-EXPRESS-RESULTS-2-1024x683.jpg"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Sun 8:40 a.m.",
-   "iso": "2026-11-22T13:40:52+00:00",
-   "title": "UN climate talks break down without an overarching agreement",
-   "summary": "ANTALYA, Turkey (AP) — Chaotic United Nations climate talks in Turkey could not reach an overarching agreement amid disagreements over whether to mention the fossil fuels that cause global warming.",
-   "outlet": "Times Colonist + PBS NewsHour + CTV News + CP24 + 2 more (AP)",
-   "n": 1,
-   "url": "https://www.timescolonist.com/world-news/un-climate-talks-break-down-without-an-overarching-agreement-13046220",
-   "img": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/bbccc99042e0fe404647fee6103f06e09b1c60f8b27a256911aca86bd207088a.jpg;w=1200;h=800;mode=crop"
   },
   {
    "desk": "business",
@@ -3542,26 +3484,6 @@
    ]
   },
   {
-   "o": "Toronto Star",
-   "ca": true,
-   "h": [
-    "Toronto Star News - Breaking News Stories",
-    "The fate of York U’s Glendon campus will soon be decided. Students and teachers are fighting to keep it",
-    "From Trudeau cabinet minister to Ontario Liberal leader: Who is Navdeep Bains?",
-    "Teens love AI. Or do they? Five Toronto-area kids on why they’re bucking the trend",
-    "When patients attack: Canadian doctors say they don’t get much help in the face of violence",
-    "If we punish Stellantis, we punish ourselves. Here’s what Canada should do instead"
-   ],
-   "u": [
-    "",
-    "https://www.thestar.com/news/gta/the-fate-of-york-u-s-glendon-campus-will-soon-be-decided-students-and-teachers-are-fighting-to-keep-it/article_aaab7c2b-1cab-4f73-abae-8a2e25164c63.html",
-    "https://www.thestar.com/politics/provincial/from-trudeau-cabinet-minister-to-ontario-liberal-leader-who-is-navdeep-bains/article_a91177ba-f47f-419b-9f7a-ff2b8a173120.html",
-    "https://www.thestar.com/news/gta/teens-love-ai-or-do-they-5-toronto-area-kids-on-why-they-re-bucking-the-trend/article_f6745d72-b50d-44e1-a88a-027793711f06.html",
-    "https://www.thestar.com/news/insight/when-patients-attack-canadian-doctors-say-they-don-t-get-much-help-in-the-face-of-violence/article_c8db2bdb-fd4c-408e-908d-0bf848a3c3bf.html",
-    "https://www.thestar.com/news/insight/if-we-punish-stellantis-we-punish-ourselves-here-s-what-canada-should-do-instead/article_b0d32ec8-acd7-4b54-bac6-a7753bfa7a41.html"
-   ]
-  },
-  {
    "o": "National Post",
    "ca": true,
    "h": [
@@ -3586,19 +3508,19 @@
    "ca": true,
    "h": [
     "With the world’s lowest birth rates, South Korea is paying families to have kids",
+    "UN climate summit ends without major agreement",
     "Ontario Liberals choose Navdeep Bains as new leader",
     "The wild East Coast shores that draw surfers all year long",
     "‘This is about power and consent’: A digital gadfly brings his Big Tech fight to Canada",
-    "Film and television industry left in the dark",
-    "Free museum access, but what about the little guys?"
+    "Film and television industry left in the dark"
    ],
    "u": [
     "https://www.theglobeandmail.com/life/article-worlds-lowest-birth-rates-south-korea-is-paying-families-to-have-kids/",
+    "https://www.theglobeandmail.com/world/article-un-climate-summit-ends-without-major-agreement/",
     "https://www.theglobeandmail.com/canada/article-ontario-liberal-party-new-leader-navdeep-bains/",
     "https://www.theglobeandmail.com/canada/article-nova-scotia-surfing-scene-lawrencetown-beach-underexposed/",
     "https://www.theglobeandmail.com/business/article-imran-ahmed-brings-his-big-tech-fight-to-canada/",
-    "https://www.theglobeandmail.com/culture/film-and-tv/film/article-federal-budget-2026-film-and-television/",
-    "https://www.theglobeandmail.com/culture/art-and-architecture/article-federal-budget-2026-reaction-museums/"
+    "https://www.theglobeandmail.com/culture/film-and-tv/film/article-federal-budget-2026-film-and-television/"
    ]
   },
   {
@@ -3669,26 +3591,6 @@
     "https://www.nbcnews.com/politics/congress/republican-hopes-fade-one-last-party-line-bill-gop-loses-majorities-rcna610256",
     "https://www.nbcnews.com/science/climate-change/cop31-climate-talks-break-angry-dispute-fossil-fuels-rcna610656",
     "https://www.nbcnews.com/business/consumer/outages-consumers-rights-need-know-rcna610475"
-   ]
-  },
-  {
-   "o": "CBS News",
-   "ca": false,
-   "h": [
-    "U.N. climate summit ends without deal after contentious fossil fuel debate",
-    "Families frustrated with Pentagon probe of deadly drone strike",
-    "ICE officers arrest 2 passengers boarding flight in Seattle",
-    "Army plans to carry out detonation at Iowa plant despite indefinite pause",
-    "Trump says he wants \"permanent\" deal with Iran",
-    "Why the Army says it needs to detonate unstable explosives in Iowa"
-   ],
-   "u": [
-    "https://www.cbsnews.com/news/un-cop31-climate-conference-ends-no-agreement-fossil-fuel-debate-standstill/",
-    "https://www.cbsnews.com/news/pentagon-troops-killed-iran-port-shuaiba-kuwait-families/",
-    "https://www.cbsnews.com/news/ice-arrest-alaska-airlines-flight-seattle/",
-    "https://www.cbsnews.com/news/us-army-iowa-plant-detonation-court-records/",
-    "https://www.cbsnews.com/live-updates/iran-war-trump-tehran-denies-chemical-weapons/",
-    ""
    ]
   },
   {
@@ -3775,19 +3677,41 @@
  "live": {
   "now": [
    {
+    "net": "Fox News",
+    "r": "us",
+    "title": "WATCH LIVE: Fox News' All-American Christmas tree",
+    "url": "https://www.youtube.com/watch?v=wcY4K5CNVx4",
+    "img": "https://i.ytimg.com/vi/wcY4K5CNVx4/hqdefault.jpg",
+    "story": "Fox News' All-American Christmas tree",
+    "watching": "128"
+   },
+   {
+    "net": "Bloomberg",
+    "r": "us",
+    "title": "AI-Led Selloff Fears, Russia Hits Ukrainian Energy Facilities | Bloomberg This Weekend: Nov 22, 2026",
+    "url": "https://www.youtube.com/watch?v=emyNoh1bWz0",
+    "img": "https://i.ytimg.com/vi/emyNoh1bWz0/hqdefault.jpg",
+    "story": "AI-Led Selloff Fears, Russia Hits Ukrainian Energy Facilities",
+    "watching": "438"
+   },
+   {
+    "net": "LiveNOW from FOX",
+    "r": "us",
+    "title": "Rolling live news coverage, as it happens",
+    "url": "https://www.youtube.com/watch?v=9ZvbYvsufDE",
+    "img": "https://i.ytimg.com/vi/9ZvbYvsufDE/hqdefault.jpg",
+    "story": "Live news, as it happens",
+    "watching": "485",
+    "rolling": true
+   },
+   {
     "net": "Sky News",
     "r": "world",
     "title": "COP31 climate talks collapse after deal rejected",
     "url": "https://www.youtube.com/watch?v=tP8etKB7IIk",
     "img": "https://i.ytimg.com/vi/tP8etKB7IIk/hqdefault.jpg",
     "story": "COP31 climate talks collapse after deal rejected",
-    "watching": "197",
-    "also": [
-     {
-      "net": "DW News",
-      "url": "https://www.youtube.com/watch?v=ouG7Yty3Wak"
-     }
-    ],
+    "watching": "189",
     "reports": [
      {
       "outlet": "NBC News",
@@ -3839,34 +3763,6 @@
       "iso": "2026-11-22T05:47:00+00:00"
      }
     ]
-   },
-   {
-    "net": "Fox News",
-    "r": "us",
-    "title": "WATCH LIVE: Fox News' All-American Christmas tree",
-    "url": "https://www.youtube.com/watch?v=wcY4K5CNVx4",
-    "img": "https://i.ytimg.com/vi/wcY4K5CNVx4/hqdefault.jpg",
-    "story": "Fox News' All-American Christmas tree",
-    "watching": "125"
-   },
-   {
-    "net": "Bloomberg",
-    "r": "us",
-    "title": "AI-Led Selloff Fears, Russia Hits Ukrainian Energy Facilities | Bloomberg This Weekend: Nov 22, 2026",
-    "url": "https://www.youtube.com/watch?v=emyNoh1bWz0",
-    "img": "https://i.ytimg.com/vi/emyNoh1bWz0/hqdefault.jpg",
-    "story": "AI-Led Selloff Fears, Russia Hits Ukrainian Energy Facilities",
-    "watching": "448"
-   },
-   {
-    "net": "LiveNOW from FOX",
-    "r": "us",
-    "title": "Rolling live news coverage, as it happens",
-    "url": "https://www.youtube.com/watch?v=9ZvbYvsufDE",
-    "img": "https://i.ytimg.com/vi/9ZvbYvsufDE/hqdefault.jpg",
-    "story": "Live news, as it happens",
-    "watching": "483",
-    "rolling": true
    }
   ],
   "upcoming": [],
@@ -3959,15 +3855,6 @@
    "updated": "2026-11-22T12:34:28+00:00",
    "ended": false,
    "img": "https://i.abcnewsfe.com/a/67151f4e-fd8f-48ce-99fb-fc62371cf0db/Bahrain-fire-DB-261122_1795339373031_hpMain_16x9.jpg?w=1600"
-  },
-  {
-   "net": "Middle East Eye",
-   "story": "Araghchi talks down Qatari visit",
-   "title": "Araghchi talks down Qatari visit",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/araghchi-talks-down-qatari-visit",
-   "updated": "2026-11-22T11:09:15+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/images-story/iran-irgc-rocket-hormuz-february-2026-sepah-news-afp.jpg"
   }
  ],
  "related": {
