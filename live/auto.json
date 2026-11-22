@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-22T11:07:39.284047+00:00",
- "checkedLabel": "Sun 6:07 a.m.",
+ "checked": "2026-11-22T11:10:58.826393+00:00",
+ "checkedLabel": "Sun 6:10 a.m.",
  "stories": [
   {
    "key": "top",
@@ -46,7 +46,7 @@
    "Narcity",
    "https://www.narcity.com/toronto/secrets-behind-raymond-chos-90-years-on-earth",
    "2026-11-22T11:01:05+00:00",
-   2
+   3
   ],
   [
    "Sun 6:00 a.m.",
@@ -55,7 +55,7 @@
    "The Canadian Press (via Winnipeg Free Press)",
    "https://www.winnipegfreepress.com/business/2026/11/22/luxury-home-sales-slump-in-toronto-vancouver-but-top-end-properties-buck-trend",
    "2026-11-22T11:00:15+00:00",
-   3
+   4
   ],
   [
    "Sun 6:00 a.m.",
@@ -73,7 +73,7 @@
    "Toronto Star",
    "https://www.thestar.com/news/canada/all-signs-show-canada-can-t-meet-its-paris-target-here-s-why-ottawa-won-t-admit-it/article_2df27d53-ee30-5e8b-8683-527816deac68.html",
    "2026-11-22T11:00:03+00:00",
-   2
+   4
   ],
   [
    "Sun 5:52 a.m.",
@@ -330,28 +330,18 @@
    "theme": ""
   },
   {
-   "score": 12,
+   "score": 11,
    "title": "Russian cargo ship still on fire off Finland after drone attack",
    "url": "https://www.aljazeera.com/news/2026/11/22/russian-cargo-ship-still-on-fire-off-finland-after-drone-attack?traffic_source=rss",
-   "outlets": 10,
+   "outlets": 9,
    "why": [],
    "theme": ""
   },
   {
-   "score": 8,
-   "title": "Will Canadian workers refuse to handle Israeli goods? Why unions increasingly say they should",
-   "url": "https://www.cbc.ca/news/canada/clc-resolution-canadian-unions-israel-9.7428991",
-   "outlets": 5,
-   "why": [
-    "CBC News front #3"
-   ],
-   "theme": ""
-  },
-  {
-   "score": 8,
+   "score": 9,
    "title": "Luxury home sales slump in Toronto, Vancouver, but top-end properties buck trend",
    "url": "https://www.narcity.com/toronto/luxury-home-sales-slump-as-wealthy-buyers-waiting",
-   "outlets": 6,
+   "outlets": 7,
    "why": [],
    "theme": ""
   },
@@ -371,6 +361,16 @@
    "why": [
     "National Newswatch #2",
     "National Newswatch #11"
+   ],
+   "theme": ""
+  },
+  {
+   "score": 7,
+   "title": "Will Canadian workers refuse to handle Israeli goods? Why unions increasingly say they should",
+   "url": "https://www.cbc.ca/news/canada/clc-resolution-canadian-unions-israel-9.7428991",
+   "outlets": 4,
+   "why": [
+    "CBC News front #3"
    ],
    "theme": ""
   },
@@ -792,10 +792,9 @@
     "incoherent": false,
     "popular": 0,
     "us_election": false,
-    "fronts": 4,
-    "fronts_ca": 4,
+    "fronts": 3,
+    "fronts_ca": 3,
     "fronts_who": [
-     "Toronto Star",
      "National Post",
      "The Globe and Mail",
      "CP24"
@@ -814,26 +813,26 @@
       "up": ""
      },
      {
+      "net": "Global News",
+      "url": "https://www.youtube.com/watch?v=8tZq2Lp1nOM",
+      "title": "Ontario Liberals select Navdeep Bains as new party leader",
+      "img": "https://i.ytimg.com/vi/8tZq2Lp1nOM/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CTV News",
+      "url": "https://www.youtube.com/watch?v=9oQLhkwOxYs",
+      "title": "Navdeep Bains elected as new Ontario Liberal leader | CTV News Toronto at Six for Nov. 21, 2026",
+      "img": "https://i.ytimg.com/vi/9oQLhkwOxYs/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
       "net": "CP24",
       "url": "https://www.youtube.com/watch?v=mC3_LM6s1ic",
       "title": "Navdeep Bains elected as new Ontario Liberal leader | CTV News Toronto at Six for Nov. 21, 2026",
       "img": "https://i.ytimg.com/vi/mC3_LM6s1ic/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CP24",
-      "url": "https://www.youtube.com/watch?v=GkuIL-oedxQ",
-      "title": "Navdeep Bains wins Ontario Liberal leadership vote by one per cent",
-      "img": "https://i.ytimg.com/vi/GkuIL-oedxQ/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CP24",
-      "url": "https://www.youtube.com/watch?v=arcfej6UG5M",
-      "title": "Navdeep Bains delivers speech after winning Ontario Liberal leadership race",
-      "img": "https://i.ytimg.com/vi/arcfej6UG5M/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -845,7 +844,7 @@
      "russian",
      "poland"
     ],
-    "score": 12,
+    "score": 11,
     "outlets": 5,
     "carriers": 5,
     "tag": "Breaking",
@@ -1044,10 +1043,10 @@
     "fronts_who": [
      "The Guardian"
     ],
-    "outled_ca": 4,
+    "outled_ca": 3,
     "judgment": "national",
     "judgment_why": "National: affects many people; carried beyond one city.",
-    "weight": 33.5
+    "weight": 32.5
    }
   ],
   "considered": [
@@ -1063,9 +1062,8 @@
     "canada": "canadian",
     "theme": "",
     "top": true,
-    "fronts": 4,
+    "fronts": 3,
     "fronts_who": [
-     "Toronto Star",
      "National Post",
      "The Globe and Mail",
      "CP24"
@@ -1080,8 +1078,8 @@
     "url": "https://kyivindependent.com/apartment-building-destroyed-in-kyiv-oblast-following-russian-drone-attack/",
     "rank": 2,
     "live": "",
-    "weight": 33.5,
-    "score": 12,
+    "weight": 32.5,
+    "score": 11,
     "independent": 5,
     "most_read": 0,
     "canada": "none",
@@ -1206,9 +1204,9 @@
     "url": "https://www.cbc.ca/news/canada/clc-resolution-canadian-unions-israel-9.7428991",
     "rank": 8,
     "live": "",
-    "weight": 33.0,
-    "score": 8,
-    "independent": 4,
+    "weight": 30.5,
+    "score": 7,
+    "independent": 3,
     "most_read": 0,
     "canada": "canadian",
     "theme": "",
@@ -1218,7 +1216,7 @@
      "NBC News"
     ],
     "rule": "Canadian, still developing",
-    "carriers": 4,
+    "carriers": 3,
     "judgment": "national",
     "why_judged": "National: affects some people; carried across the country (national desks)."
    },
@@ -1234,7 +1232,7 @@
    },
    {
     "title": "Luxury home sales slump in Toronto, Vancouver, but top-end properties buck trend",
-    "score": 8,
+    "score": 9,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
@@ -1249,6 +1247,11 @@
    },
    {
     "title": "A California billionaire tax proposal faced a major setback despite big wins for progressives",
+    "score": 6,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "All signs show Canada can’t meet its Paris target — here’s why Ottawa won’t admit it",
     "score": 6,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
@@ -1287,7 +1290,7 @@
      "alt": "Former White House press secretary Katie Zacharia speaks with reporters in the James Brady Press Briefing Room at the White House, Tuesday, Oct. 13, 2026, in Wa",
      "outlet": "CTV News",
      "url": "https://www.ctvnews.ca/world/article/former-white-house-press-secretary-katie-zacharia-under-investigation-for-lawyer-claims/",
-     "since": "2026-11-22T11:08:52.747262+00:00"
+     "since": "2026-11-22T11:13:46.984948+00:00"
     },
     "photo_seen": [
      "https://www.ctvnews.ca/resizer/v2/YE5QKAGNM5AOXD3U6MHXYW7NTY.jpg?smart=true&auth=4197fbe5b29c290e632f35e731963928cca8fa358e77b5861eb8b4f91e5e0915&width=1200&height=630"
@@ -1452,7 +1455,7 @@
      "NBC News",
      "ABC News"
     ],
-    "outled_ca": 4,
+    "outled_ca": 3,
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (national desks).",
     "weight": 17.5
@@ -1487,7 +1490,7 @@
      "alt": "Defence Minister David McGuinty addresses media at the Halifax International Security Forum on Saturday, Nov. 21, 2026.",
      "outlet": "CTV News",
      "url": "https://www.ctvnews.ca/politics/article/canada-us-leaders-respond-to-pentagon-memo-report/",
-     "since": "2026-11-22T11:08:54.409672+00:00"
+     "since": "2026-11-22T11:13:50.312961+00:00"
     },
     "photo_seen": [
      "https://www.ctvnews.ca/resizer/v2/RP6NU4BMIJFOVFX4MXLESIBU4I.jpeg?smart=true&auth=c9b9bbebf9a40ae69518530daa67cf13252c93adb73f5cbfea1e1a52b5c43901&width=1200&height=630"
@@ -1664,9 +1667,9 @@
     "words": [
      "israeli"
     ],
-    "score": 8,
-    "outlets": 4,
-    "carriers": 4,
+    "score": 7,
+    "outlets": 3,
+    "carriers": 3,
     "tag": "Developing",
     "title": "Will Canadian workers refuse to handle Israeli goods? Why unions increasingly say they should",
     "url": "https://www.cbc.ca/news/canada/clc-resolution-canadian-unions-israel-9.7428991",
@@ -1689,7 +1692,7 @@
      "alt": "Displaced Palestinians protest as Israeli air strikes continue in Gaza",
      "outlet": "Al Jazeera",
      "url": "https://www.aljazeera.com/news/2026/11/22/displaced-palestinians-protest-as-israeli-air-strikes-continue-in-gaza?traffic_source=rss",
-     "since": "2026-11-22T11:08:51.273167+00:00"
+     "since": "2026-11-22T11:13:47.371724+00:00"
     },
     "photo_seen": [
      "https://www.aljazeera.com/wp-content/uploads/2026/11/epa_6b00990b1735-1795201291.jpg?resize=1920%2C1440"
@@ -1702,17 +1705,9 @@
       "alt": "Displaced Palestinians protest as Israeli air strikes continue in Gaza",
       "outlet": "Al Jazeera",
       "url": "https://www.aljazeera.com/news/2026/11/22/displaced-palestinians-protest-as-israeli-air-strikes-continue-in-gaza?traffic_source=rss"
-     },
-     {
-      "src": "live/img/auto-392d3b61-54ca746ef7.jpg",
-      "orig": "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/648/files/2026/11/gaza-ap-112126.jpg",
-      "caption": "From: Iran unveils underground missile launcher as Israeli strike in Gaza kills 3. — via CKOM / PAnow",
-      "alt": "Iran unveils underground missile launcher as Israeli strike in Gaza kills 3",
-      "outlet": "CKOM / PAnow",
-      "url": "https://www.ckom.com/2026/11/21/iran-unveils-underground-missile-launcher-as-israeli-strike-in-gaza-kills-3/"
      }
     ],
-    "independent": 4,
+    "independent": 3,
     "reports": [
      {
       "t": "Sun 4:00 a.m.",
@@ -1729,14 +1724,6 @@
       "title": "Displaced Palestinians protest as Israeli air strikes continue in Gaza",
       "url": "https://www.aljazeera.com/news/2026/11/22/displaced-palestinians-protest-as-israeli-air-strikes-continue-in-gaza?traffic_source=rss",
       "desc": "Israeli forces continue to destroy residential buildings as part of a 'gradual displacement' policy, a Gaza mayor says."
-     },
-     {
-      "t": "Sat 3:29 p.m.",
-      "iso": "2026-11-21T20:29:57+00:00",
-      "outlet": "CKOM / PAnow",
-      "title": "Iran unveils underground missile launcher as Israeli strike in Gaza kills 3",
-      "url": "https://www.ckom.com/2026/11/21/iran-unveils-underground-missile-launcher-as-israeli-strike-in-gaza-kills-3/",
-      "desc": "Brig. Gen. Seyyed Majid Mousavi, commander of Iran’s Aerospace Force, said the country's “capabilities have expanded significantly,\" adding it had integrated ‘surprises’ into its combat structure."
      },
      {
       "t": "Sat 3:12 p.m.",
@@ -1783,23 +1770,6 @@
       "copies": []
      },
      {
-      "t": "Sat 3:29 p.m.",
-      "primary": false,
-      "outlet": "CKOM / PAnow",
-      "title": "Iran unveils underground missile launcher as Israeli strike in Gaza kills 3",
-      "url": "https://www.ckom.com/2026/11/21/iran-unveils-underground-missile-launcher-as-israeli-strike-in-gaza-kills-3/",
-      "desc": "Brig. Gen. Seyyed Majid Mousavi, commander of Iran’s Aerospace Force, said the country's “capabilities have expanded significantly,\" adding it had integrated ‘surprises’ into its combat structure.",
-      "wire": "The Associated Press",
-      "by": [
-       {
-        "outlet": "CKOM / PAnow",
-        "src": "The Associated Press",
-        "byline": "\":\"Sally Abou Aljoud and Wafaa Shurafa, Associated Press\"}] \"Sally Abou Aljo"
-       }
-      ],
-      "copies": []
-     },
-     {
       "t": "Sat 3:12 p.m.",
       "primary": false,
       "outlet": "CP24",
@@ -1832,7 +1802,7 @@
     ],
     "judgment": "national",
     "judgment_why": "National: affects some people; carried across the country (national desks).",
-    "weight": 33.0
+    "weight": 30.5
    }
   ],
   "passed_over": [
@@ -1925,7 +1895,7 @@
    "id": "P-5616L0fJ8",
    "r": "ca",
    "o": "Global News",
-   "t": "BC shooter reportedly received instructions from ChatGPT on modifying weapons",
+   "t": "Tumbler Ridge shooter reportedly received detailed instructions from AI on modifying weapons",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=P-5616L0fJ8",
@@ -1981,7 +1951,7 @@
    "id": "lNKEVlE9gdY",
    "r": "ca",
    "o": "APTN News",
-   "t": "Troubled Waters: Is Winnipeg’s water costing another community its way of life? | APTN Investigates",
+   "t": "Troubled Waters: The impact of one city’s water supply | APTN Investigates",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=lNKEVlE9gdY",
@@ -2037,7 +2007,7 @@
    "id": "clAgyo_30eo",
    "r": "ca",
    "o": "CTV News",
-   "t": "Robert Downey Jr. discusses playing Doctor Doom in new video",
+   "t": "Avengers: Doomsday hype grows with new video",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=clAgyo_30eo",
@@ -2457,7 +2427,7 @@
    "id": "juY_dfKR14o",
    "r": "world",
    "o": "Sky News",
-   "t": "UK politicians are united in opposing 'Russia's barbaric, illegal war', says govt minister",
+   "t": "Govt minister says the PM 'in no way pulling punches' with Trump about 'butcher' Putin",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=juY_dfKR14o",
@@ -2503,11 +2473,11 @@
   },
   {
    "o": "Fox News",
-   "h": "American Culture Quiz: Test yourself on maritime mysteries and patriotic performers",
-   "u": "https://www.foxnews.com/lifestyle/american-culture-quiz-test-yourself-maritime-mysteries-patriotic-performers",
-   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/updated-quiz-collage-1122.jpg",
-   "w": "Sun 5:00 a.m.",
-   "iso": "2026-11-22T10:00:35+00:00"
+   "h": "Jeffries calling Jerusalem NYC's ‘sixth borough’ resurfaces as progressives swing against Israel",
+   "u": "https://www.foxnews.com/politics/jeffries-calling-jerusalem-nycs-sixth-borough-resurfaces-progressives-swing-against-israel",
+   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/03/hakeem-jeffries-march-2026.jpg",
+   "w": "Sun 6:00 a.m.",
+   "iso": "2026-11-22T11:00:54+00:00"
   },
   {
    "o": "NPR",
@@ -2580,19 +2550,6 @@
    "auto": true
   },
   {
-   "inst": "Fraser Institute",
-   "place": "Vancouver",
-   "kind": "Publication",
-   "by": "",
-   "date": "Nov. 20, 2026",
-   "d": "2026-11-20",
-   "pic": "chart",
-   "u": "https://www.fraserinstitute.org/commentary/ottawas-new-proposed-medical-record-legislation-misses-mark",
-   "t": "Ottawa’s new proposed medical record legislation misses the mark",
-   "g": "Ottawa’s new proposed medical record legislation misses the mark beng Fri, 11/20/2026 - 14:01 EST. READ TIME 3 MIN. If you've managed to endure the ever-increasing wait to see a specialist in Canada or had to visit a hospital, it’s likely you’ve had to spend at least some portion of your appointment repeating your…",
-   "auto": true
-  },
-  {
    "inst": "Macdonald-Laurier Institute",
    "place": "Ottawa",
    "kind": "Publication",
@@ -2616,19 +2573,6 @@
    "u": "https://macdonaldlaurier.ca/dont-let-the-trade-war-scuttle-sensible-drug-reforms-nigel-rawson-john-adams-and-andrew-darke-in-the-financial-post/",
    "t": "Don’t let the trade war scuttle sensible drug reforms: Nigel Rawson, John Adams and Andrew Darke in The Financial Post",
    "g": "This article originally appeared in the Financial Post. Below is an excerpt from the article. By Nigel Rawson, John Adams and Andrew Darke, November 20, 2026 Part of the current […] The post Don’t let the trade war scuttle sensible drug reforms: Nigel Rawson, John Adams and Andrew Darke in The Financial Post appeared…",
-   "auto": true
-  },
-  {
-   "inst": "AEI",
-   "place": "Washington",
-   "kind": "Publication",
-   "by": "",
-   "date": "Nov. 20, 2026",
-   "d": "2026-11-20",
-   "pic": "chart",
-   "u": "https://www.aei.org/economics/ignore-the-european-central-banks-ai-warning-at-your-peril/",
-   "t": "Ignore the European Central Bank’s AI Warning at Your Peril",
-   "g": "In its latest Global Financial Stability Report, the ECB explicitly warns that there are uncomfortable parallels between today’s financial market situation and what preceded the 2001 bursting of the dot-com bubble and the 2008 US subprime mortgage crisis. The post Ignore the European Central Bank’s AI Warning at Your…",
    "auto": true
   },
   {
@@ -2708,16 +2652,35 @@
    "t": "Marape reassures Beijing after PNG’s pacts with the West",
    "g": "Infrastructure, roads and gas money explain why Port Moresby will play both sides in the China–US rivalry.",
    "auto": true
+  },
+  {
+   "inst": "Frontier Centre for Public Policy",
+   "place": "Winnipeg",
+   "kind": "Publication",
+   "by": "",
+   "date": "Nov. 19, 2026",
+   "d": "2026-11-19",
+   "pic": "chart",
+   "u": "https://frontiercentre.org/2026/11/19/can-europe-and-china-replace-canadas-u-s-trade/?utm_source=rss&utm_medium=rss&utm_campaign=can-europe-and-china-replace-canadas-u-s-trade",
+   "t": "Can Europe and China Replace Canada’s U.S. Trade?",
+   "g": "Is Canada turning to the EU and China the answer? With trade tensions creating uncertainty, Canada is looking to build stronger economic ties with Europe and China.",
+   "auto": true
+  },
+  {
+   "inst": "Lowy Institute",
+   "place": "Sydney",
+   "kind": "Publication",
+   "by": "",
+   "date": "Nov. 19, 2026",
+   "d": "2026-11-19",
+   "pic": "chart",
+   "u": "https://www.lowyinstitute.org/the-interpreter/bluey-is-a-triumph-but-not-a-soft-power-strategy",
+   "t": "Bluey is a triumph, but not a soft-power strategy",
+   "g": "Japan, Korea and China treat cartoons as a tool of influence rather than mere entertainment.",
+   "auto": true
   }
  ],
  "eds": [
-  [
-   "Toronto Star",
-   "Opinion",
-   "In Graeme MacKay's cartoon, Mark Carney calls to diversify Canada’s trade, while Donald Trump focusses on his legacy.",
-   "https://www.thestar.com/opinion/editorial-cartoons/in-graeme-mackay-s-cartoon-mark-carney-calls-to-diversify-canada-s-trade-while-donald-trump-focusses-on-his-legacy/article_732808a4-7f26-4cd7-8636-3b7efafe3357.html",
-   "2026-11-22T11:00:00+00:00"
-  ],
   [
    "Toronto Sun",
    "Editorial",
@@ -2780,6 +2743,13 @@
    "Defining Genocide Down at the International Court of Justice",
    "https://www.wsj.com/opinion/international-court-of-justice-genocide-definition-israel-1f650a2e?mod=rss_opinion",
    "2026-11-21T21:19:00+00:00"
+  ],
+  [
+   "Washington Examiner",
+   "Editorial",
+   "Students learn more when schools lock up phones",
+   "https://www.washingtonexaminer.com/opinion/editorials/4809975/students-learn-more-when-schools-lock-up-phones/",
+   "2026-11-22T10:00:00+00:00"
   ]
  ],
  "canus": {
@@ -3278,16 +3248,16 @@
    "hot": true
   },
   {
-   "city": "Jerusalem",
-   "tz": "Asia/Jerusalem",
+   "city": "Paris",
+   "tz": "Europe/Paris",
    "world": true,
-   "w": "Jobs",
-   "label": "Will Canadian workers refuse to handle Israeli goods? Why…",
-   "u": "https://www.cbc.ca/news/canada/clc-resolution-canadian-unions-israel-9.7428991",
-   "title": "Will Canadian workers refuse to handle Israeli goods? Why unions increasingly say they should",
-   "outlet": "CBC News",
-   "t": "Sun 4:00 a.m.",
-   "hot": false
+   "w": "Ottawa",
+   "label": "All signs show Canada can’t meet its Paris target — here’s…",
+   "u": "https://www.narcity.com/why-ottawa-wont-admit-it-will-miss-2030-target",
+   "title": "All signs show Canada can’t meet its Paris target — here’s why Ottawa won’t admit it",
+   "outlet": "Narcity",
+   "t": "Sun 6:00 a.m.",
+   "hot": true
   },
   {
    "city": "Mexico City",
@@ -3359,7 +3329,7 @@
    "iso": "2026-11-22T11:01:24+00:00",
    "title": "Luxury home sales slump in Toronto, Vancouver, but top-end properties buck trend",
    "summary": "Luxury home sales slump as wealthy buyers waiting",
-   "outlet": "Narcity + CTV News + CP24 + Times Colonist + 1 more (CP), CityNews, CTV News + CP24",
+   "outlet": "Narcity + CTV News + CP24 + Times Colonist + 2 more (CP), CityNews, CTV News + CP24",
    "n": 3,
    "url": "https://www.narcity.com/toronto/luxury-home-sales-slump-as-wealthy-buyers-waiting",
    "img": "https://www.narcity.com/media-library/luxury-home-sales-slump-as-wealthy-buyers-waiting.jpg?id=68744183&width=1200&height=600&coordinates=0%2C153%2C0%2C154"
@@ -3370,11 +3340,11 @@
    "t": "Sun 6:01 a.m.",
    "iso": "2026-11-22T11:01:21+00:00",
    "title": "A California billionaire tax proposal faced a major setback despite big wins for progressives",
-   "summary": "",
+   "summary": "SACRAMENTO, Calif. (AP) — In an election with major wins for Democrats and progressives nationwide, California voters not only rejected the biggest test yet for a state wealth tax, they",
    "outlet": "Toronto Star + The Canadian Press (via Winnipeg Free Press), ABC News, The Hill",
    "n": 3,
    "url": "https://www.thestar.com/news/world/united-states/a-california-billionaire-tax-proposal-faced-a-major-setback-despite-big-wins-for-progressives/article_4008a572-e44e-514f-a419-ad735b24ed5c.html",
-   "img": ""
+   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/4/c0/4c0a05fb-ae8b-532d-b51f-c83a6f24c285/6b02cc5fe2403.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
   },
   {
    "desk": "world",
@@ -3454,23 +3424,11 @@
    "t": "Sun 3:56 a.m.",
    "iso": "2026-11-22T08:56:19+00:00",
    "title": "Reported FBI hack 'not good' but could have benefits, Trump says",
-   "summary": "",
-   "outlet": "Euronews, The Hill",
+   "summary": "The reported breach comes amid a wave of tech outages in the US, which have impacted travel, communications and banking, as well as an internal system used by the National Security Agency.",
+   "outlet": "Euronews (AP), The Hill",
    "n": 2,
    "url": "https://www.euronews.com/2026/11/22/reported-fbi-hack-not-good-but-could-have-benefits-trump-says",
-   "img": ""
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Sat 9:45 p.m.",
-   "iso": "2026-11-22T02:45:36+00:00",
-   "title": "Overturned boat carrying mourners to funeral kills at least 24 in Nigeria",
-   "summary": "Police say the boat driver fled and the vessel’s manager was taken into custody.",
-   "outlet": "Al Jazeera, Toronto Star + Global News (AP)",
-   "n": 2,
-   "url": "https://www.aljazeera.com/news/2026/11/22/overturned-boat-carrying-mourners-to-funeral-kills-at-least-four-in-nigeria?traffic_source=rss",
-   "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/AP26325766410570-1795313225.jpg?resize=1920%2C1440"
+   "img": "https://images.euronews.com/articles/stories/10/00/32/02/1200x675_cmsv2_77ec09af-1d4b-5b7b-942d-44534911dff7-10003202.jpg"
   },
   {
    "desk": "politics",
@@ -3527,10 +3485,22 @@
    "iso": "2026-11-22T11:01:17+00:00",
    "title": "'Such hard work:' professor and Métis builder team up on 13-foot birch-bark canoe",
    "summary": "Birch-bark canoe carries tradition forward",
-   "outlet": "Narcity + Toronto Star + Times Colonist",
+   "outlet": "Narcity + Toronto Star + Times Colonist (CP)",
    "n": 1,
    "url": "https://www.narcity.com/birch-bark-canoe-carries-tradition-forward",
    "img": "https://www.narcity.com/media-library/birch-bark-canoe-carries-tradition-forward.jpg?id=68744182&width=1200&height=600&coordinates=0%2C116%2C0%2C117"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Sun 6:01 a.m.",
+   "iso": "2026-11-22T11:01:05+00:00",
+   "title": "'Happy, exercise, help others': The secrets behind Raymond Cho's 90 years on Earth",
+   "summary": "Secrets behind Raymond Cho's 90 years on Earth",
+   "outlet": "Narcity + Times Colonist + CKOM / PAnow",
+   "n": 1,
+   "url": "https://www.narcity.com/toronto/secrets-behind-raymond-chos-90-years-on-earth",
+   "img": "https://www.narcity.com/media-library/secrets-behind-raymond-cho-s-90-years-on-earth.jpg?id=68744181&width=1200&height=600&coordinates=0%2C80%2C0%2C80"
   },
   {
    "desk": "business",
@@ -3647,7 +3617,7 @@
    "iso": "2026-11-21T19:43:07+00:00",
    "title": "B.C. business groups are praising plans by Conservative government to cut red tape",
    "summary": "Various business group are praising plans by Conservative Premier Lorne Doerkson to cut red tape and speed up approvals through the creation of a dedicated cabinet post.",
-   "outlet": "CityNews Vancouver + Toronto Star + CKOM / PAnow (CP)",
+   "outlet": "CityNews Vancouver + Toronto Star (CP)",
    "n": 1,
    "url": "https://vancouver.citynews.ca/2026/11/21/b-c-business-groups-are-praising-plans-by-conservative-government-to-cut-red-tape/",
    "img": "https://vancouver.citynews.ca/wp-content/blogs.dir/sites/9/2026/11/cb10c5e538807fccd5fd608b76b75b26ab60cf7f97589124652ca05695c82797.jpg"
@@ -3826,26 +3796,6 @@
     "",
     "",
     "https://globalnews.ca/news/12160464/staples-print-hack/"
-   ]
-  },
-  {
-   "o": "Toronto Star",
-   "ca": true,
-   "h": [
-    "Toronto Star News - Breaking News Stories",
-    "Mark Carney keeps an insane pace in his quest for a saner world",
-    "An ‘urgent’ power crisis emerged after Cohere joined this Ontario data centre. Now electricity bills are rising",
-    "Ontario Liberals bet on Navdeep Bains to revive party fortunes",
-    "Martin Regg Cohn: Navdeep Bains eked out the Liberal leadership. Winning Ontario will be even harder",
-    "From Trudeau cabinet minister to Ontario Liberal leader: Who is Navdeep Bains?"
-   ],
-   "u": [
-    "",
-    "https://www.thestar.com/politics/federal/mark-carney-keeps-an-insane-pace-in-his-quest-for-a-saner-world/article_03cd7af6-6f0b-499d-a213-04d9e91b02dc.html",
-    "https://www.thestar.com/business/a-data-centre-moved-into-this-small-ontario-city-an-urgent-power-crisis-emerged/article_20db1607-0c73-458d-8933-4e2d294646ff.html",
-    "https://www.thestar.com/politics/provincial/navdeep-bains-wins-ontario-liberal-leadership-on-third-ballot/article_e1e1b4f9-3fc6-4f82-b65a-cb28c775ca9f.html",
-    "https://www.thestar.com/politics/political-opinion/navdeep-bains-eked-out-the-liberal-leadership-winning-ontario-will-be-even-harder/article_dcebbd9d-3440-4ef7-aaeb-dab0c5ac6195.html",
-    "https://www.thestar.com/politics/provincial/from-trudeau-cabinet-minister-to-ontario-liberal-leader-who-is-navdeep-bains/article_a91177ba-f47f-419b-9f7a-ff2b8a173120.html"
    ]
   },
   {
@@ -4068,7 +4018,7 @@
     "url": "https://www.youtube.com/watch?v=wcY4K5CNVx4",
     "img": "https://i.ytimg.com/vi/wcY4K5CNVx4/hqdefault.jpg",
     "story": "Fox News' All-American Christmas tree",
-    "watching": "104"
+    "watching": "95"
    },
    {
     "net": "LiveNOW from FOX",
@@ -4077,7 +4027,7 @@
     "url": "https://www.youtube.com/watch?v=9ZvbYvsufDE",
     "img": "https://i.ytimg.com/vi/9ZvbYvsufDE/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "372",
+    "watching": "356",
     "rolling": true
    },
    {
@@ -4087,7 +4037,7 @@
     "url": "https://www.youtube.com/watch?v=Bs-0e6rFckg",
     "img": "https://i.ytimg.com/vi/Bs-0e6rFckg/hqdefault.jpg",
     "story": "Drone attack destroys apartment building in Kyiv",
-    "watching": "177",
+    "watching": "155",
     "reports": [
      {
       "outlet": "Kyiv Independent",
@@ -4105,7 +4055,7 @@
     "url": "https://www.youtube.com/watch?v=tP8etKB7IIk",
     "img": "https://i.ytimg.com/vi/tP8etKB7IIk/hqdefault.jpg",
     "story": "EU delegation 'profoundly disappointed' with final draft at COP31 summ",
-    "watching": "53"
+    "watching": "67"
    }
   ],
   "upcoming": [],
@@ -4218,8 +4168,8 @@
    "at": "2026-10-29T02:33:18.869844+00:00"
   },
   "0bLqaqPAt_k": {
-   "v": "ok",
-   "at": "2026-11-22T04:42:29.480977+00:00"
+   "v": "unplayable",
+   "at": "2026-11-22T11:10:58.826393+00:00"
   },
   "0tRhtNBdSb0": {
    "v": "unknown",
@@ -4778,8 +4728,8 @@
    "at": "2026-10-29T02:33:18.869844+00:00"
   },
   "nfy6JJILPJI": {
-   "v": "ok",
-   "at": "2026-11-22T04:42:29.480977+00:00"
+   "v": "unplayable",
+   "at": "2026-11-22T11:10:58.826393+00:00"
   },
   "p0SJIuzrM0A": {
    "v": "unknown",
@@ -4919,16 +4869,12 @@
   }
  },
  "geo_blocked": [
-  "-NabWfv-VdA"
+  "-NabWfv-VdA",
+  "0bLqaqPAt_k",
+  "nfy6JJILPJI"
  ],
  "noembed": [
-  "0bLqaqPAt_k",
-  "IJs72_NHq3g",
-  "J3FV4iY8p5w",
-  "L6qtnHZxwEw",
-  "NuEr0Q_AS6U",
   "ldElU-Q5Qyo",
-  "nfy6JJILPJI",
   "t_HBrWb84eY"
  ]
 }
