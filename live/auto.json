@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-22T11:20:58.977657+00:00",
- "checkedLabel": "Sun 6:20 a.m.",
+ "checked": "2026-11-22T11:30:58.618417+00:00",
+ "checkedLabel": "Sun 6:30 a.m.",
  "stories": [
   {
    "key": "top",
@@ -30,6 +30,33 @@
   }
  ],
  "wire": [
+  [
+   "Sun 6:25 a.m.",
+   "World",
+   "Russia-bound ship still on fire after attack in Gulf of Finland",
+   "BBC News",
+   "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
+   "2026-11-22T11:25:14+00:00",
+   2
+  ],
+  [
+   "Sun 6:20 a.m.",
+   "World",
+   "14 people missing after Russian drone strike on Kyiv region",
+   "Euronews",
+   "https://www.euronews.com/2026/11/22/14-people-missing-after-russian-drone-strike-on-kyiv-region",
+   "2026-11-22T11:20:26+00:00",
+   2
+  ],
+  [
+   "Sun 6:15 a.m.",
+   "World",
+   "Russian ship attacked by drone in Baltic Sea off Finland",
+   "Al Jazeera",
+   "https://www.aljazeera.com/video/newsfeed/2026/11/22/russian-ship-attacked-by-drone-in-baltic-sea-off-finland?traffic_source=rss",
+   "2026-11-22T11:15:27+00:00",
+   1
+  ],
   [
    "Sun 6:01 a.m.",
    "U.S.",
@@ -100,7 +127,7 @@
    "Toronto Star",
    "https://www.thestar.com/news/canada/all-signs-show-canada-can-t-meet-its-paris-target-here-s-why-ottawa-won-t-admit-it/article_2df27d53-ee30-5e8b-8683-527816deac68.html",
    "2026-11-22T11:00:03+00:00",
-   4
+   5
   ],
   [
    "Sun 5:52 a.m.",
@@ -109,24 +136,6 @@
    "CTV News",
    "https://www.ctvnews.ca/toronto/article/mississauga-based-chocolate-maker-faces-double-whammy-of-rising-cocoa-costs-and-50-per-cent-tariffs/",
    "2026-11-22T10:52:35+00:00",
-   2
-  ],
-  [
-   "Sun 5:39 a.m.",
-   "World",
-   "Russian cargo ship still on fire off Finland after drone attack",
-   "Al Jazeera",
-   "https://www.aljazeera.com/news/2026/11/22/russian-cargo-ship-still-on-fire-off-finland-after-drone-attack?traffic_source=rss",
-   "2026-11-22T10:39:50+00:00",
-   1
-  ],
-  [
-   "Sun 5:39 a.m.",
-   "World",
-   "Ukraine: Up to seven feared trapped beneath rubble near Kyiv after Russian attack",
-   "Euronews",
-   "https://www.euronews.com/video/2026/11/22/ukraine-up-to-seven-feared-trapped-beneath-rubble-near-kyiv-after-russian-attack",
-   "2026-11-22T10:39:01+00:00",
    2
   ],
   [
@@ -245,15 +254,6 @@
    "https://www.theguardian.com/world/2026/nov/22/india-congress-meta-protests-police-hyderabad",
    "2026-11-22T09:14:27+00:00",
    1
-  ],
-  [
-   "Sun 4:06 a.m.",
-   "U.S.",
-   "‘Trump’s exit strategy may depend on quietly lifting Iran blockade’",
-   "Al Jazeera",
-   "https://www.aljazeera.com/video/newsfeed/2026/11/22/trumps-exit-strategy-may-depend-on-quietly-lifting-iran?traffic_source=rss",
-   "2026-11-22T09:06:27+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -320,6 +320,14 @@
    "theme": ""
   },
   {
+   "score": 13,
+   "title": "Russia-bound ship still on fire after attack in Gulf of Finland",
+   "url": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
+   "outlets": 11,
+   "why": [],
+   "theme": ""
+  },
+  {
    "score": 12,
    "title": "Chinese investment in Canada’s auto sector will ‘play out over the next year’: federal government",
    "url": "https://www.ctvnews.ca/politics/article/chinese-investment-in-canadas-auto-sector-will-play-out-over-the-next-year-federal-government/",
@@ -327,14 +335,6 @@
    "why": [
     "National Newswatch #1"
    ],
-   "theme": ""
-  },
-  {
-   "score": 12,
-   "title": "Russian cargo ship still on fire off Finland after drone attack",
-   "url": "https://www.aljazeera.com/news/2026/11/22/russian-cargo-ship-still-on-fire-off-finland-after-drone-attack?traffic_source=rss",
-   "outlets": 10,
-   "why": [],
    "theme": ""
   },
   {
@@ -376,9 +376,9 @@
   },
   {
    "score": 7,
-   "title": "Wash. officials condemn ICE after 2 arrested boarding flight at Seattle airport",
-   "url": "https://abcnews.com/US/washington-state-officials-condemn-ice-after-2-arrested/story?id=138349974",
-   "outlets": 7,
+   "title": "All signs show Canada can’t meet its Paris target — here’s why Ottawa won’t admit it",
+   "url": "https://www.narcity.com/why-ottawa-wont-admit-it-will-miss-2030-target",
+   "outlets": 5,
    "why": [],
    "theme": ""
   }
@@ -806,14 +806,6 @@
     "weight": 25.0,
     "videos": [
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=8tZq2Lp1nOM",
-      "title": "Ontario Liberals select Navdeep Bains as new party leader",
-      "img": "https://i.ytimg.com/vi/8tZq2Lp1nOM/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
       "net": "CTV News",
       "url": "https://www.youtube.com/watch?v=9oQLhkwOxYs",
       "title": "Navdeep Bains elected as new Ontario Liberal leader | CTV News Toronto at Six for Nov. 21, 2026",
@@ -822,18 +814,26 @@
       "up": ""
      },
      {
-      "net": "CityNews",
-      "url": "https://www.youtube.com/watch?v=oJQp-ma4dTc",
-      "title": "Navdeep Bains named new Ontario Liberal leader",
-      "img": "https://i.ytimg.com/vi/oJQp-ma4dTc/hqdefault.jpg",
+      "net": "CP24",
+      "url": "https://www.youtube.com/watch?v=mC3_LM6s1ic",
+      "title": "Navdeep Bains elected as new Ontario Liberal leader | CTV News Toronto at Six for Nov. 21, 2026",
+      "img": "https://i.ytimg.com/vi/mC3_LM6s1ic/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
       "net": "CP24",
-      "url": "https://www.youtube.com/watch?v=mC3_LM6s1ic",
-      "title": "Navdeep Bains elected as new Ontario Liberal leader | CTV News Toronto at Six for Nov. 21, 2026",
-      "img": "https://i.ytimg.com/vi/mC3_LM6s1ic/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=GkuIL-oedxQ",
+      "title": "Navdeep Bains wins Ontario Liberal leadership vote by one per cent",
+      "img": "https://i.ytimg.com/vi/GkuIL-oedxQ/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CP24",
+      "url": "https://www.youtube.com/watch?v=arcfej6UG5M",
+      "title": "Navdeep Bains delivers speech after winning Ontario Liberal leadership race",
+      "img": "https://i.ytimg.com/vi/arcfej6UG5M/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -845,16 +845,16 @@
      "russian",
      "poland"
     ],
-    "score": 12,
+    "score": 13,
     "outlets": 5,
     "carriers": 5,
     "tag": "Breaking",
-    "title": "14 feared trapped after Russian drone hits apartment building near Kyiv, injuring 2",
-    "url": "https://kyivindependent.com/apartment-building-destroyed-in-kyiv-oblast-following-russian-drone-attack/",
-    "outlet": "Kyiv Independent",
-    "t": "Sat 11:49 p.m.",
-    "iso": "2026-11-22T04:49:11+00:00",
-    "summary": "\"People may still be trapped under the rubble,\" President Volodymyr Zelensky said.",
+    "title": "14 people missing after Russian drone strike on Kyiv region",
+    "url": "https://www.euronews.com/2026/11/22/14-people-missing-after-russian-drone-strike-on-kyiv-region",
+    "outlet": "Euronews",
+    "t": "Sun 6:20 a.m.",
+    "iso": "2026-11-22T11:20:26+00:00",
+    "summary": "Timur Tkachenko, the head of the Kyiv Regional Military Administration, said the body of one person had been recovered from the rubble and that three people had been injured. #EuropeNews",
     "first": {
      "outlet": "CP24",
      "url": "https://www.cp24.com/news/world/2026/11/21/nato-chief-pledges-to-defend-poland-after-russian-missile-incursion/",
@@ -862,15 +862,15 @@
      "title": "NATO chief pledges to defend Poland after Russian missile incursion",
      "iso": "2026-11-21T17:58:08+00:00"
     },
-    "newest": "2026-11-22T10:39:01+00:00",
+    "newest": "2026-11-22T11:20:26+00:00",
     "photo": {
-     "src": "live/img/auto-b55420c9-6c4b90f2de.jpg",
-     "orig": "https://assets.kyivindependent.com/content/images/2026/11/photo_2026-11-22_09-19-29_20261122-081437.jpg",
-     "caption": "From: 14 feared trapped after Russian drone hits apartment building near Kyiv, injuring 2. — via Kyiv Independent",
-     "alt": "14 feared trapped after Russian drone hits apartment building near Kyiv, injuring 2",
-     "outlet": "Kyiv Independent",
-     "url": "https://kyivindependent.com/apartment-building-destroyed-in-kyiv-oblast-following-russian-drone-attack/",
-     "since": "2026-11-22T11:22:51.065869+00:00"
+     "src": "live/img/auto-b55420c9-094d99396d.jpg",
+     "orig": "https://images.euronews.com/articles/stories/10/00/32/58/1200x675_cmsv2_bda95ddb-450a-51a2-ad8a-c9b1d73df349-10003258.jpg",
+     "caption": "14 people missing after Russian drone strike on Kyiv region. — via Euronews",
+     "alt": "14 people missing after Russian drone strike on Kyiv region",
+     "outlet": "Euronews",
+     "url": "https://www.euronews.com/2026/11/22/14-people-missing-after-russian-drone-strike-on-kyiv-region",
+     "since": "2026-11-22T11:32:49.328586+00:00"
     },
     "photo_seen": [
      "https://assets.kyivindependent.com/content/images/2026/11/photo_2026-11-22_09-19-29_20261122-081437.jpg",
@@ -878,20 +878,12 @@
     ],
     "photos": [
      {
-      "src": "live/img/auto-b55420c9-6c4b90f2de.jpg",
-      "orig": "https://assets.kyivindependent.com/content/images/2026/11/photo_2026-11-22_09-19-29_20261122-081437.jpg",
-      "caption": "From: 14 feared trapped after Russian drone hits apartment building near Kyiv, injuring 2. — via Kyiv Independent",
-      "alt": "14 feared trapped after Russian drone hits apartment building near Kyiv, injuring 2",
-      "outlet": "Kyiv Independent",
-      "url": "https://kyivindependent.com/apartment-building-destroyed-in-kyiv-oblast-following-russian-drone-attack/"
-     },
-     {
-      "src": "live/img/auto-b55420c9-0c53a7f0c3.jpg",
-      "orig": "https://images.euronews.com/articles/stories/10/00/33/07/1200x675_cmsv2_21c6d2b1-44d1-5165-969c-5598d0392928-10003307.jpg",
-      "caption": "Ukraine: Up to seven feared trapped beneath rubble near Kyiv after Russian attack. — via Euronews",
-      "alt": "Ukraine: Up to seven feared trapped beneath rubble near Kyiv after Russian attack",
+      "src": "live/img/auto-b55420c9-094d99396d.jpg",
+      "orig": "https://images.euronews.com/articles/stories/10/00/32/58/1200x675_cmsv2_bda95ddb-450a-51a2-ad8a-c9b1d73df349-10003258.jpg",
+      "caption": "14 people missing after Russian drone strike on Kyiv region. — via Euronews",
+      "alt": "14 people missing after Russian drone strike on Kyiv region",
       "outlet": "Euronews",
-      "url": "https://www.euronews.com/video/2026/11/22/ukraine-up-to-seven-feared-trapped-beneath-rubble-near-kyiv-after-russian-attack"
+      "url": "https://www.euronews.com/2026/11/22/14-people-missing-after-russian-drone-strike-on-kyiv-region"
      },
      {
       "src": "live/img/auto-b55420c9-858d3ce3e9.jpg",
@@ -900,17 +892,25 @@
       "alt": "Dashcam captures Russian missile strike on Lviv, Ukraine",
       "outlet": "Al Jazeera",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/22/dashcam-captures-russian-missile-strike-on-lviv-ukraine?traffic_source=rss"
+     },
+     {
+      "src": "live/img/auto-b55420c9-6c4b90f2de.jpg",
+      "orig": "https://assets.kyivindependent.com/content/images/2026/11/photo_2026-11-22_09-19-29_20261122-081437.jpg",
+      "caption": "From: 14 feared trapped after Russian drone hits apartment building near Kyiv, injuring 2. — via Kyiv Independent",
+      "alt": "14 feared trapped after Russian drone hits apartment building near Kyiv, injuring 2",
+      "outlet": "Kyiv Independent",
+      "url": "https://kyivindependent.com/apartment-building-destroyed-in-kyiv-oblast-following-russian-drone-attack/"
      }
     ],
     "independent": 5,
     "reports": [
      {
-      "t": "Sun 5:39 a.m.",
-      "iso": "2026-11-22T10:39:01+00:00",
+      "t": "Sun 6:20 a.m.",
+      "iso": "2026-11-22T11:20:26+00:00",
       "outlet": "Euronews",
-      "title": "Ukraine: Up to seven feared trapped beneath rubble near Kyiv after Russian attack",
-      "url": "https://www.euronews.com/video/2026/11/22/ukraine-up-to-seven-feared-trapped-beneath-rubble-near-kyiv-after-russian-attack",
-      "desc": "Video. A Russian strike partially destroyed an apartment building in Dymer, north of Kyiv, on Sunday. Nine people, including a child, were evacuated as rescuers searched the rubble for up to seven others feared trapped."
+      "title": "14 people missing after Russian drone strike on Kyiv region",
+      "url": "https://www.euronews.com/2026/11/22/14-people-missing-after-russian-drone-strike-on-kyiv-region",
+      "desc": "Timur Tkachenko, the head of the Kyiv Regional Military Administration, said the body of one person had been recovered from the rubble and that three people had been injured. #EuropeNews"
      },
      {
       "t": "Sun 2:59 a.m.",
@@ -947,18 +947,18 @@
     ],
     "sources": [
      {
-      "t": "Sun 5:39 a.m.",
+      "t": "Sun 6:20 a.m.",
       "primary": false,
       "outlet": "Euronews",
-      "title": "Ukraine: Up to seven feared trapped beneath rubble near Kyiv after Russian attack",
-      "url": "https://www.euronews.com/video/2026/11/22/ukraine-up-to-seven-feared-trapped-beneath-rubble-near-kyiv-after-russian-attack",
-      "desc": "Video. A Russian strike partially destroyed an apartment building in Dymer, north of Kyiv, on Sunday. Nine people, including a child, were evacuated as rescuers searched the rubble for up to seven others feared trapped.",
-      "wire": "",
+      "title": "14 people missing after Russian drone strike on Kyiv region",
+      "url": "https://www.euronews.com/2026/11/22/14-people-missing-after-russian-drone-strike-on-kyiv-region",
+      "desc": "Timur Tkachenko, the head of the Kyiv Regional Military Administration, said the body of one person had been recovered from the rubble and that three people had been injured. #EuropeNews",
+      "wire": "The Associated Press",
       "by": [
        {
         "outlet": "Euronews",
-        "src": "Euronews",
-        "byline": "Alexis Caraco"
+        "src": "The Associated Press",
+        "byline": "] Nathan Rennolds Copyright 2026 The Associated Press. All rights reserve"
        }
       ],
       "copies": []
@@ -1048,7 +1048,7 @@
     "outled_ca": 4,
     "judgment": "national",
     "judgment_why": "National: affects many people; carried beyond one city.",
-    "weight": 33.5
+    "weight": 34.5
    }
   ],
   "considered": [
@@ -1077,12 +1077,12 @@
     "why_judged": "Regional: affects some people; carried beyond one city."
    },
    {
-    "title": "14 feared trapped after Russian drone hits apartment building near Kyiv, injuring 2",
-    "url": "https://kyivindependent.com/apartment-building-destroyed-in-kyiv-oblast-following-russian-drone-attack/",
+    "title": "14 people missing after Russian drone strike on Kyiv region",
+    "url": "https://www.euronews.com/2026/11/22/14-people-missing-after-russian-drone-strike-on-kyiv-region",
     "rank": 2,
     "live": "",
-    "weight": 33.5,
-    "score": 12,
+    "weight": 34.5,
+    "score": 13,
     "independent": 5,
     "most_read": 0,
     "canada": "none",
@@ -1124,9 +1124,9 @@
     "url": "https://abcnews.com/US/washington-state-officials-condemn-ice-after-2-arrested/story?id=138349974",
     "rank": 4,
     "live": "",
-    "weight": 22.5,
+    "weight": 23.5,
     "score": 7,
-    "independent": 4,
+    "independent": 5,
     "most_read": 0,
     "canada": "none",
     "theme": "",
@@ -1225,6 +1225,11 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
+    "title": "All signs show Canada can’t meet its Paris target — here’s why Ottawa won’t admit it",
+    "score": 7,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
     "title": "The ‘bluenami’ message was sent, Trump’s ignoring it",
     "score": 6,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
@@ -1243,11 +1248,6 @@
     "title": "'Happy, exercise, help others': The secrets behind Raymond Cho's 90 years on Earth",
     "score": 6,
     "why": "not built: only 1 independent report(s) (4 sites)"
-   },
-   {
-    "title": "All signs show Canada can’t meet its Paris target — here’s why Ottawa won’t admit it",
-    "score": 6,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
   ],
   "moved": [],
@@ -1284,7 +1284,7 @@
      "alt": "Former White House press secretary Katie Zacharia speaks with reporters in the James Brady Press Briefing Room at the White House, Tuesday, Oct. 13, 2026, in Wa",
      "outlet": "CTV News",
      "url": "https://www.ctvnews.ca/world/article/former-white-house-press-secretary-katie-zacharia-under-investigation-for-lawyer-claims/",
-     "since": "2026-11-22T11:22:51.440113+00:00"
+     "since": "2026-11-22T11:32:49.757135+00:00"
     },
     "photo_seen": [
      "https://www.ctvnews.ca/resizer/v2/YE5QKAGNM5AOXD3U6MHXYW7NTY.jpg?smart=true&auth=4197fbe5b29c290e632f35e731963928cca8fa358e77b5861eb8b4f91e5e0915&width=1200&height=630"
@@ -1484,7 +1484,7 @@
      "alt": "Displaced Palestinians protest as Israeli air strikes continue in Gaza",
      "outlet": "Al Jazeera",
      "url": "https://www.aljazeera.com/news/2026/11/22/displaced-palestinians-protest-as-israeli-air-strikes-continue-in-gaza?traffic_source=rss",
-     "since": "2026-11-22T11:22:51.750784+00:00"
+     "since": "2026-11-22T11:32:51.062503+00:00"
     },
     "photo_seen": [
      "https://www.aljazeera.com/wp-content/uploads/2026/11/epa_6b00990b1735-1795201291.jpg?resize=1920%2C1440"
@@ -1673,7 +1673,7 @@
    "id": "vdSGPj15ftw",
    "r": "ca",
    "o": "Global News",
-   "t": "“No way to win this war” without US support, former Ukraine PM says at security forum",
+   "t": "Russia-Ukraine war: Diplomats gather in Nova Scotia to discuss Ukraine’s defence",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=vdSGPj15ftw",
@@ -1687,7 +1687,7 @@
    "id": "P-5616L0fJ8",
    "r": "ca",
    "o": "Global News",
-   "t": "Tumbler Ridge shooting: Shooter reportedly received instructions on modifying weapons before attack",
+   "t": "BC shooter reportedly received instructions from ChatGPT on modifying weapons",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=P-5616L0fJ8",
@@ -2090,48 +2090,6 @@
    "geo": "unknown"
   },
   {
-   "id": "HSu_IW2YI0c",
-   "r": "world",
-   "o": "Reuters",
-   "t": "Mexican forces capture alleged drug lord 'El Chapo Isidro'",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=HSu_IW2YI0c",
-   "img": "https://i.ytimg.com/vi/HSu_IW2YI0c/hqdefault.jpg",
-   "up": "2026-11-21",
-   "added": "2026-11-22T06:21:57.814574+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "Zp07qhhmOG0",
-   "r": "world",
-   "o": "Reuters",
-   "t": "National Guard fan boat rescues stranded woman in Florida",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=Zp07qhhmOG0",
-   "img": "https://i.ytimg.com/vi/Zp07qhhmOG0/hqdefault.jpg",
-   "up": "2026-11-21",
-   "added": "2026-11-22T06:21:57.814574+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "73B6ivC3iCs",
-   "r": "world",
-   "o": "BBC News",
-   "t": "Is the UK ready to reopen the Brexit debate? | BBC Newscast",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=73B6ivC3iCs",
-   "img": "https://i.ytimg.com/vi/73B6ivC3iCs/hqdefault.jpg",
-   "up": "2026-11-22",
-   "added": "2026-11-22T08:35:07.993500+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "M3XNgBGDSL0",
    "r": "world",
    "o": "Al Jazeera",
@@ -2156,20 +2114,6 @@
    "img": "https://i.ytimg.com/vi/g7m27fV-gyQ/hqdefault.jpg",
    "up": "2026-11-22",
    "added": "2026-11-22T09:19:03.711631+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "MgDRV4q-L0M",
-   "r": "world",
-   "o": "DW News",
-   "t": "Why COP31 negotiators are refusing to mention fossil fuels | DW News",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=MgDRV4q-L0M",
-   "img": "https://i.ytimg.com/vi/MgDRV4q-L0M/hqdefault.jpg",
-   "up": "2026-11-22",
-   "added": "2026-11-22T09:39:03.967343+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2205,7 +2149,7 @@
    "id": "juY_dfKR14o",
    "r": "world",
    "o": "Sky News",
-   "t": "UK politicians are united in opposing 'Russia's barbaric, illegal war', says govt minister",
+   "t": "Govt minister says the PM 'in no way pulling punches' with Trump about 'butcher' Putin",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=juY_dfKR14o",
@@ -2219,13 +2163,41 @@
    "id": "VUSJi1QuGnM",
    "r": "world",
    "o": "Sky News",
-   "t": "Putin is a ‘murderous dictator’ and ‘not our friend’, says Reform deputy leader",
+   "t": "Farage disagreements with Trump are 'growing', says Reform's deputy leader",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=VUSJi1QuGnM",
    "img": "https://i.ytimg.com/vi/VUSJi1QuGnM/hqdefault.jpg",
    "up": "2026-11-22",
    "added": "2026-11-22T11:20:58.977657+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "Qla1B9VVjG0",
+   "r": "world",
+   "o": "BBC News",
+   "t": "What is the Pip disability benefit and how does it work? | BBC News",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=Qla1B9VVjG0",
+   "img": "https://i.ytimg.com/vi/Qla1B9VVjG0/hqdefault.jpg",
+   "up": "2026-11-22",
+   "added": "2026-11-22T11:30:58.618417+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "4wcTnS-bYJI",
+   "r": "world",
+   "o": "DW News",
+   "t": "Why the world is watching Xi, Trump & Putin | The Dip Podcast",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=4wcTnS-bYJI",
+   "img": "https://i.ytimg.com/vi/4wcTnS-bYJI/hqdefault.jpg",
+   "up": "2026-11-22",
+   "added": "2026-11-22T11:30:58.618417+00:00",
    "pic": "globe",
    "geo": "unknown"
   }
@@ -2474,6 +2446,13 @@
  ],
  "eds": [
   [
+   "Toronto Star",
+   "Opinion",
+   "In Graeme MacKay's cartoon, Mark Carney calls to diversify Canada’s trade, while Donald Trump focusses on his legacy.",
+   "https://www.thestar.com/opinion/editorial-cartoons/in-graeme-mackay-s-cartoon-mark-carney-calls-to-diversify-canada-s-trade-while-donald-trump-focusses-on-his-legacy/article_732808a4-7f26-4cd7-8636-3b7efafe3357.html",
+   "2026-11-22T11:00:00+00:00"
+  ],
+  [
    "Toronto Sun",
    "Editorial",
    "U.S. Democrats can’t save us from Trump",
@@ -2535,13 +2514,6 @@
    "Defining Genocide Down at the International Court of Justice",
    "https://www.wsj.com/opinion/international-court-of-justice-genocide-definition-israel-1f650a2e?mod=rss_opinion",
    "2026-11-21T21:19:00+00:00"
-  ],
-  [
-   "Washington Examiner",
-   "Editorial",
-   "Students learn more when schools lock up phones",
-   "https://www.washingtonexaminer.com/opinion/editorials/4809975/students-learn-more-when-schools-lock-up-phones/",
-   "2026-11-22T10:00:00+00:00"
   ]
  ],
  "canus": {
@@ -2634,8 +2606,8 @@
    "Ontario Liberals have elected Navdeep Bains as the party’s new leader after a marathon nine-month leadership race, with Bains emerging as victor less than one percentage point ahead of his next closest competitor, provincial caucus member Lee Fairclough, The Canadian Press reports.",
    "Gadi Eisenkot, who is tasked with forming the next Israeli government, has invited the right-wing Likud party of caretaker prime minister Benjamin Netanyahu for coalition talks, his party said on Saturday.",
    "Alleged Mexican drug cartel boss ‘El Chapo Isidro’ arrested in special forces raid, The Guardian reports.",
-   "Swedish Gripen pilot unable to shoot down suspected Russian missile over Poland due to poor weather, commander says, Kyiv Independent reports.",
-   "Masked immigration officers arrested two passengers on a crowded airport jet bridge in Seattle as people were boarding Saturday, The Associated Press reports.",
+   "14 people missing after Russian drone strike on Kyiv region, The Associated Press reports.",
+   "Masked immigration officers detained two people on a crowded airport jet bridge in Seattle as people were boarding Saturday, causing what the airline called a “distressing” scene for passengers and employees and delaying the Los Angeles-bound flight, The Canadian Press reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
   ]
  },
@@ -2925,11 +2897,11 @@
    "o": "SooToday",
    "region": "Sault Ste. Marie",
    "arctic": false,
-   "h": "Good morning, Sault Ste. Marie! Here's today's weather!",
-   "u": "https://www.sootoday.com/good-morning/good-morning-sault-ste-marie-heres-todays-weather-13042924",
-   "t": "Sun 6:00 a.m.",
-   "desc": "Here's a look at the current local weather and gas prices",
-   "img": "https://www.vmcdn.ca/f/files/shared/good-morning/soo/20261117-gm-sault-bob-mcgauley5.JPG;w=1024;h=684;mode=crop"
+   "h": "November 22nd Weather Discussion",
+   "u": "https://www.sootoday.com/weather/november-22nd-weather-discussion-13044945",
+   "t": "Sun 6:30 a.m.",
+   "desc": "A cold front will advance across the region today, bringing a notable change in conditions. The day will begin mild, with temperatures climbing to near 13°C, but cloud cover will increase steadily through the morning and afternoon ahead of ",
+   "img": "https://www.vmcdn.ca/f/files/shared/site_images/weather/share_weather_soo.png"
   },
   {
    "o": "BayToday",
@@ -3031,12 +3003,12 @@
    "city": "Kyiv",
    "tz": "Europe/Kyiv",
    "world": true,
-   "w": "Attacks",
-   "label": "Ukraine: Up to seven feared trapped beneath rubble near…",
-   "u": "https://www.euronews.com/video/2026/11/22/ukraine-up-to-seven-feared-trapped-beneath-rubble-near-kyiv-after-russian-attack",
-   "title": "Ukraine: Up to seven feared trapped beneath rubble near Kyiv after Russian attack",
+   "w": "Drone strikes",
+   "label": "14 people missing after Russian drone strike on Kyiv…",
+   "u": "https://www.euronews.com/2026/11/22/14-people-missing-after-russian-drone-strike-on-kyiv-region",
+   "title": "14 people missing after Russian drone strike on Kyiv region",
    "outlet": "Euronews",
-   "t": "Sun 5:39 a.m.",
+   "t": "Sun 6:20 a.m.",
    "hot": true
   },
   {
@@ -3069,14 +3041,14 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Sun 5:39 a.m.",
-   "iso": "2026-11-22T10:39:50+00:00",
-   "title": "Russian cargo ship still on fire off Finland after drone attack",
-   "summary": "The ship, bound for Russia's Kaliningrad, was damaged in international waters before drifting into Finnish territory.",
-   "outlet": "Al Jazeera, Kyiv Independent, CBC News, CTV News + Toronto Star (CP), The Japan Times (Reuters)",
-   "n": 5,
-   "url": "https://www.aljazeera.com/news/2026/11/22/russian-cargo-ship-still-on-fire-off-finland-after-drone-attack?traffic_source=rss",
-   "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6b02b08a-1795338378.jpg?resize=1200%2C675"
+   "t": "Sun 6:25 a.m.",
+   "iso": "2026-11-22T11:25:14+00:00",
+   "title": "Russia-bound ship still on fire after attack in Gulf of Finland",
+   "summary": "Finnish defence forces say that Ukraine was likely behind the drone attack on the vessel.",
+   "outlet": "BBC News, Toronto Star + Euronews (AP), Kyiv Independent, Al Jazeera, CBC News, Toronto Star, CTV News",
+   "n": 7,
+   "url": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
+   "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/bf94/live/3bc66860-e665-11f1-8ebd-1d2173202734.jpg"
   },
   {
    "desk": "politics",
@@ -3089,6 +3061,18 @@
    "n": 5,
    "url": "https://www.cbc.ca/news/canada/toronto/liberal-leadership-race-results-9.7431298",
    "img": "https://i.cbc.ca/ais/30690b4b-150c-4b8b-9883-ce3f56442a81,1795278309500/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C8%2C8640%2C4860%29%3BResize%3D620"
+  },
+  {
+   "desk": "us",
+   "pic": "podium",
+   "t": "Sun 1:22 a.m.",
+   "iso": "2026-11-22T06:22:38+00:00",
+   "title": "Wash. officials condemn ICE after 2 arrested boarding flight at Seattle airport",
+   "summary": "Plainclothes officers in masks detained two people who were boarding a flight at Seattle-Tacoma International Airport.",
+   "outlet": "ABC News, CBS News, The Hill, Toronto Star + CTV News + CP24",
+   "n": 4,
+   "url": "https://abcnews.com/US/washington-state-officials-condemn-ice-after-2-arrested/story?id=138349974",
+   "img": "https://i.abcnewsfe.com/a/6a2c2e2a-f814-40d7-ba40-7ca92e33df4d/sea-tac-airport-2_1795310671098_hpMain_16x9.jpg?w=1600"
   },
   {
    "desk": "politics",
@@ -3132,23 +3116,11 @@
    "t": "Sun 6:01 a.m.",
    "iso": "2026-11-22T11:01:21+00:00",
    "title": "A California billionaire tax proposal faced a major setback despite big wins for progressives",
-   "summary": "SACRAMENTO, Calif. (AP) — In an election with major wins for Democrats and progressives nationwide, California voters not only rejected the biggest test yet for a state wealth tax, they",
+   "summary": "",
    "outlet": "Toronto Star + The Canadian Press (via Winnipeg Free Press), ABC News, The Hill",
    "n": 3,
    "url": "https://www.thestar.com/news/world/united-states/a-california-billionaire-tax-proposal-faced-a-major-setback-despite-big-wins-for-progressives/article_4008a572-e44e-514f-a419-ad735b24ed5c.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/4/c0/4c0a05fb-ae8b-532d-b51f-c83a6f24c285/6b02cc5fe2403.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Sun 5:45 a.m.",
-   "iso": "2026-11-22T10:45:04+00:00",
-   "title": "Zelensky says US delays on Patriot missiles are 'difficult to understand' as Russia fires 165 missiles in a week",
-   "summary": "President Volodymyr Zelensky again urged Washington to authorize the transfer of Patriot missiles that Ukraine's allies have already paid for.",
-   "outlet": "Kyiv Independent, Toronto Star (AP), BBC News",
-   "n": 3,
-   "url": "https://kyivindependent.com/zelensky-says-us-delays-on-patriot-missiles-are-difficult-to-understand-as-russia-fires-165-missiles-in-a-week/",
-   "img": "https://assets.kyivindependent.com/content/images/2026/11/GettyImages-2302905075_20261106-001404.jpg"
+   "img": ""
   },
   {
    "desk": "world",
@@ -3199,16 +3171,16 @@
    "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/11c4/live/b30a2e00-e635-11f1-bcaa-b74b42067918.jpg"
   },
   {
-   "desk": "us",
-   "pic": "podium",
-   "t": "Sun 1:22 a.m.",
-   "iso": "2026-11-22T06:22:38+00:00",
-   "title": "Wash. officials condemn ICE after 2 arrested boarding flight at Seattle airport",
-   "summary": "Plainclothes officers in masks detained two people who were boarding a flight at Seattle-Tacoma International Airport.",
-   "outlet": "ABC News, Toronto Star + CTV News + CP24 + CBS News (AP), The Hill",
-   "n": 3,
-   "url": "https://abcnews.com/US/washington-state-officials-condemn-ice-after-2-arrested/story?id=138349974",
-   "img": "https://i.abcnewsfe.com/a/6a2c2e2a-f814-40d7-ba40-7ca92e33df4d/sea-tac-airport-2_1795310671098_hpMain_16x9.jpg?w=1600"
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Sun 6:26 a.m.",
+   "iso": "2026-11-22T11:26:08+00:00",
+   "title": "Vape Ban Opposition Group Claims NL has ‘Lowest’ Rate in Canada",
+   "summary": "Those who support the government-ordered ban on flavoured vape products say Newfoundland and Labrador has some...",
+   "outlet": "VOCM, Times Colonist",
+   "n": 2,
+   "url": "https://vocm.com/2026/11/22/317434/",
+   "img": "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/900/files/2026/11/vape-flavoured-vapes-vapour-tobacco.jpg"
   },
   {
    "desk": "us",
@@ -3233,6 +3205,18 @@
    "n": 2,
    "url": "https://www.euronews.com/2026/11/22/reported-fbi-hack-not-good-but-could-have-benefits-trump-says",
    "img": "https://images.euronews.com/articles/stories/10/00/32/02/1200x675_cmsv2_77ec09af-1d4b-5b7b-942d-44534911dff7-10003202.jpg"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Sat 9:45 p.m.",
+   "iso": "2026-11-22T02:45:36+00:00",
+   "title": "Overturned boat carrying mourners to funeral kills at least 24 in Nigeria",
+   "summary": "Police say the boat driver fled and the vessel’s manager was taken into custody.",
+   "outlet": "Al Jazeera, Toronto Star + Global News (AP)",
+   "n": 2,
+   "url": "https://www.aljazeera.com/news/2026/11/22/overturned-boat-carrying-mourners-to-funeral-kills-at-least-four-in-nigeria?traffic_source=rss",
+   "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/AP26325766410570-1795313225.jpg?resize=1920%2C1440"
   },
   {
    "desk": "politics",
@@ -3269,18 +3253,6 @@
    "n": 2,
    "url": "https://www.pbs.org/newshour/politics/trump-vows-to-work-with-democrats-to-cap-credit-card-interest-rates-at-10",
    "img": "https://d3i6fh83elv35t.cloudfront.net/static/2026/11/2026-10-23T110237Z_1721394900_RC2UFMAGSKQ9_RTRMADP_3_AMERICAN-EXPRESS-RESULTS-2-1024x683.jpg"
-  },
-  {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Sun 6:15 a.m.",
-   "iso": "2026-11-22T11:15:00+00:00",
-   "title": "B.C. Opposition says Housing Ministry merger signals plans to scrap legislation",
-   "summary": "",
-   "outlet": "Times Colonist",
-   "n": 1,
-   "url": "https://www.timescolonist.com/local-news/bc-opposition-says-housing-ministry-merger-signals-plans-to-scrap-legislation-13045821",
-   "img": ""
   },
   {
    "desk": "world",
@@ -3765,7 +3737,7 @@
    "ca": false,
    "h": [
     "COP31 climate talks in jeopardy as EU formally rejects latest draft after fossil fuels row",
-    "Russia-bound ship attacked in Gulf of Finland",
+    "Russia-bound ship still on fire after attack in Gulf of Finland",
     "Miley Cyrus marries Maxx Morando in California ceremony",
     "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out",
     "South Korea education minister resigns over exam cheating scandal",
@@ -3830,7 +3802,7 @@
     "url": "https://www.youtube.com/watch?v=wcY4K5CNVx4",
     "img": "https://i.ytimg.com/vi/wcY4K5CNVx4/hqdefault.jpg",
     "story": "Fox News' All-American Christmas tree",
-    "watching": "83"
+    "watching": "113"
    },
    {
     "net": "LiveNOW from FOX",
@@ -3839,17 +3811,40 @@
     "url": "https://www.youtube.com/watch?v=9ZvbYvsufDE",
     "img": "https://i.ytimg.com/vi/9ZvbYvsufDE/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "358",
+    "watching": "385",
     "rolling": true
    },
    {
     "net": "Sky News",
     "r": "world",
-    "title": "EU delegation 'profoundly disappointed' with final draft at COP31 summit",
+    "title": "EU delegation refuses to accept COP31 draft deal",
     "url": "https://www.youtube.com/watch?v=tP8etKB7IIk",
     "img": "https://i.ytimg.com/vi/tP8etKB7IIk/hqdefault.jpg",
-    "story": "EU delegation 'profoundly disappointed' with final draft at COP31 summ",
-    "watching": "174"
+    "story": "EU delegation refuses to accept COP31 draft deal",
+    "watching": "183",
+    "reports": [
+     {
+      "outlet": "Euronews",
+      "title": "New COP31 draft deal tabled as countries scramble to salvage climate talks",
+      "url": "https://www.euronews.com/2026/11/22/new-cop31-draft-deal-tabled-as-countries-scramble-to-salvage-climate-talks",
+      "t": "Sun 2:50 a.m.",
+      "iso": "2026-11-22T07:50:54+00:00"
+     },
+     {
+      "outlet": "The Japan Times",
+      "title": "Fossil fuels still missing from latest COP31 draft deal",
+      "url": "https://www.japantimes.co.jp/environment/2026/11/22/climate-change/cop31-climate-talks/",
+      "t": "Sun 12:47 a.m.",
+      "iso": "2026-11-22T05:47:00+00:00"
+     },
+     {
+      "outlet": "Al Jazeera",
+      "title": "COP31 climate talks on the brink as new draft deal faces scrutiny",
+      "url": "https://www.aljazeera.com/news/2026/11/22/fossil-fuel-impasse-pushes-cop31-climate-talks-into-second-day-of-overtime?traffic_source=rss",
+      "t": "Sat 11:51 p.m.",
+      "iso": "2026-11-22T04:51:35+00:00"
+     }
+    ]
    }
   ],
   "upcoming": [],
@@ -3897,17 +3892,7 @@
   ]
  },
  "pm": [],
- "blogs_auto": [
-  {
-   "net": "The Guardian",
-   "story": "Burnham should ‘move on’ from Brexit, says Theresa May, as critics hit",
-   "title": "Burnham should ‘move on’ from Brexit, says Theresa May, as critics hit out over closer EU ties – UK politics live",
-   "url": "https://www.theguardian.com/politics/live/2026/nov/22/andy-burnham-brexit-theresa-may-michael-gove-latest-news-updates",
-   "updated": "2026-11-22T11:22:34+00:00",
-   "ended": false,
-   "img": "https://i.guim.co.uk/img/media/fe3c1f101f487524f1490010fbd18d991551cffe/198_0_1961_1569/master/1961.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=a359cfe5838bc07f1906f2a1f115b0e1"
-  }
- ],
+ "blogs_auto": [],
  "related": {
   "auto-0fb368b8": {
    "ties": [
@@ -4676,13 +4661,13 @@
   "-NabWfv-VdA"
  ],
  "noembed": [
-  "0bLqaqPAt_k",
+  "A_p82aTTRbE",
   "IJs72_NHq3g",
   "J3FV4iY8p5w",
   "L6qtnHZxwEw",
   "NuEr0Q_AS6U",
+  "c9v26lW7-j4",
   "ldElU-Q5Qyo",
-  "nfy6JJILPJI",
   "t_HBrWb84eY"
  ]
 }
