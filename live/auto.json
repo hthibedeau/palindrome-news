@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-22T14:39:36.859721+00:00",
- "checkedLabel": "Sun 9:39 a.m.",
+ "checked": "2026-11-22T14:49:36.337145+00:00",
+ "checkedLabel": "Sun 9:49 a.m.",
  "stories": [
   {
    "key": "top",
@@ -31,12 +31,30 @@
  ],
  "wire": [
   [
-   "Sun 9:36 a.m.",
+   "Sun 9:49 a.m.",
+   "Latest",
+   "New book recommendations from The Reader and \"Sunday Morning\"",
+   "CBS News",
+   "https://www.cbsnews.com/news/new-book-recommendations-from-the-reader-fall-2026/",
+   "2026-11-22T14:49:14+00:00",
+   1
+  ],
+  [
+   "Sun 9:48 a.m.",
    "Latest",
    "This week on \"Sunday Morning\" (Nov. 22): The Food Issue",
    "CBS News",
    "https://www.cbsnews.com/news/this-week-on-sunday-morning-nov-22-2026-the-food-issue/",
-   "2026-11-22T14:36:10+00:00",
+   "2026-11-22T14:48:29+00:00",
+   1
+  ],
+  [
+   "Sun 9:48 a.m.",
+   "Latest",
+   "Kwame Onwuachi's culinary journey",
+   "CBS News",
+   "https://www.cbsnews.com/video/kwame-onwuachis-culinary-journey/",
+   "2026-11-22T14:48:19+00:00",
    1
   ],
   [
@@ -73,7 +91,7 @@
    "Global News",
    "https://globalnews.ca/news/12161490/cop31-climate-talks-fail/",
    "2026-11-22T14:23:15+00:00",
-   7
+   5
   ],
   [
    "Sun 9:22 a.m.",
@@ -145,7 +163,7 @@
    "BBC News",
    "https://www.bbc.co.uk/news/articles/cw8dvg5pgm0eo?at_medium=RSS&at_campaign=rss",
    "2026-11-22T14:05:20+00:00",
-   2
+   1
   ],
   [
    "Sun 9:00 a.m.",
@@ -193,15 +211,6 @@
    1
   ],
   [
-   "Sun 8:48 a.m.",
-   "Latest",
-   "New book recommendations from The Reader and \"Sunday Morning\"",
-   "CBS News",
-   "https://www.cbsnews.com/news/new-book-recommendations-from-the-reader-fall-2026/",
-   "2026-11-22T13:48:40+00:00",
-   1
-  ],
-  [
    "Sun 8:36 a.m.",
    "World",
    "Briton swims length of strait of Hormuz to highlight environmental cost of war",
@@ -245,15 +254,6 @@
    "https://www.theguardian.com/uk-news/2026/nov/22/man-who-killed-three-during-psychotic-episode-had-been-released-after-catalogue-of-failures-investigation-finds-alexander-lewis-ranwell",
    "2026-11-22T13:24:10+00:00",
    1
-  ],
-  [
-   "Sun 8:19 a.m.",
-   "Canada",
-   "Man rushed to hospital after stabbing in downtown Toronto, suspect arrested",
-   "CTV News",
-   "https://www.ctvnews.ca/toronto/article/man-rushed-to-hospital-after-stabbing-in-downtown-toronto-suspect-arrested/",
-   "2026-11-22T13:19:45+00:00",
-   2
   ]
  ],
  "blogs": [
@@ -310,22 +310,6 @@
   },
   {
    "score": 13,
-   "title": "COP31 climate talks fail after EU and others reject final deal proposal",
-   "url": "https://www.euronews.com/2026/11/22/cop31-climate-talks-fail-after-eu-and-others-reject-final-deal-proposal",
-   "outlets": 11,
-   "why": [],
-   "theme": ""
-  },
-  {
-   "score": 13,
-   "title": "DNI Clayton: Putin is ‘not America’s friend in Ukraine’",
-   "url": "https://abcnews.com/Politics/dni-clayton-putin-americas-friend-ukraine/story?id=138356905",
-   "outlets": 11,
-   "why": [],
-   "theme": ""
-  },
-  {
-   "score": 13,
    "title": "All signs show Canada can’t meet its Paris target — here’s why Ottawa won’t admit it",
    "url": "https://www.ctvnews.ca/canada/article/all-signs-show-canada-cant-meet-its-paris-target-heres-why-ottawa-wont-admit-it/",
    "outlets": 13,
@@ -344,9 +328,25 @@
   },
   {
    "score": 12,
+   "title": "DNI Clayton: Putin is ‘not America’s friend in Ukraine’",
+   "url": "https://abcnews.com/Politics/dni-clayton-putin-americas-friend-ukraine/story?id=138356905",
+   "outlets": 10,
+   "why": [],
+   "theme": ""
+  },
+  {
+   "score": 12,
    "title": "Stephen A Smith isn't the only one who knows dissing White people comes without consequences",
    "url": "https://www.foxnews.com/outkick-sports/stephen-a-smith-isnt-only-one-knows-dissing-white-people-comes-without-consequences",
    "outlets": 10,
+   "why": [],
+   "theme": ""
+  },
+  {
+   "score": 11,
+   "title": "UN climate talks break down at COP31 with overarching agreement",
+   "url": "https://globalnews.ca/news/12161490/cop31-climate-talks-fail/",
+   "outlets": 9,
    "why": [],
    "theme": ""
   },
@@ -361,19 +361,17 @@
    "theme": ""
   },
   {
-   "score": 9,
-   "title": "Will Canadian workers refuse to handle Israeli goods? Why unions increasingly say they should",
-   "url": "https://www.cbc.ca/news/canada/clc-resolution-canadian-unions-israel-9.7428991",
-   "outlets": 4,
-   "why": [
-    "CBC News front #5"
-   ],
+   "score": 8,
+   "title": "Washington governor calls ICE ‘out of control’ after airport arrests",
+   "url": "https://www.ctvnews.ca/world/article/washington-governor-calls-ice-out-of-control-after-airport-arrests/",
+   "outlets": 6,
+   "why": [],
    "theme": ""
   },
   {
    "score": 8,
-   "title": "Washington governor calls ICE ‘out of control’ after airport arrests",
-   "url": "https://www.ctvnews.ca/world/article/washington-governor-calls-ice-out-of-control-after-airport-arrests/",
+   "title": "Air alert sounds in Kaliningrad hours after Russia-bound ship attacked in the Gulf of Finland",
+   "url": "https://www.ctvnews.ca/world/russia-ukraine-war/article/air-alert-sounds-in-kaliningrad-hours-after-russia-bound-ship-attacked-in-the-gulf-of-finland/",
    "outlets": 6,
    "why": [],
    "theme": ""
@@ -381,15 +379,26 @@
  ],
  "canada": [
   {
-   "t": "Sun 8:33 a.m.",
-   "iso": "2026-11-22T13:33:47.240000+00:00",
+   "t": "Sun 9:45 a.m.",
+   "iso": "2026-11-22T14:45:26.186000+00:00",
    "region": "Manitoba",
-   "title": "Hearing may not see 'full scope' of pain caused by daughter's death after dental procedure, family says",
-   "summary": "The family of a young woman who died after a dental procedure at a southern Manitoba clinic say they have concerns about an upcoming inquiry hearing after sections were removed from prepared statements about how her death affected them.",
+   "title": "Manitoba government quietly ends court fine work program, then reinstates it after concerns raised",
+   "summary": "The Manitoba government has reinstated a program that allows people to work off court fines they couldn't otherwise afford to pay, after quietly phasing it out last month.",
    "outlet": "CBC News",
    "n": 1,
-   "url": "https://www.cbc.ca/news/canada/manitoba/virginia-blatz-manitoba-dental-association-hearing-9.7430335",
-   "img": "https://i.cbc.ca/ais/3f4a39db-3db6-48be-a213-f728c7692507,1788886331000/full/max/0/default.jpg?im=Crop%2Crect%3D%28282%2C287%2C911%2C512%29%3BResize%3D620"
+   "url": "https://www.cbc.ca/news/canada/manitoba/fine-option-program-ends-reinstated-9.7430623",
+   "img": "https://i.cbc.ca/ais/1.5020677,1680057363000/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1919%2C1079%29%3BResize%3D620"
+  },
+  {
+   "t": "Sun 9:39 a.m.",
+   "iso": "2026-11-22T14:39:04.952000+00:00",
+   "region": "Manitoba",
+   "title": "Man in critical condition after pedestrian hit by vehicle in Elmwood",
+   "summary": "A man was taken to hospital in critical condition after a pedestrian was hit in Winnipeg's Elmwood area on Friday night.",
+   "outlet": "CBC News",
+   "n": 1,
+   "url": "https://www.cbc.ca/news/canada/manitoba/winnipeg-elmwood-pedestrian-collision-9.7431775",
+   "img": "https://i.cbc.ca/ais/1f1a8be1-169e-41e9-a1ae-a08238d12e3f,1795358137210/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C709%2C5712%2C3213%29%3BResize%3D620"
   },
   {
    "t": "Sun 8:20 a.m.",
@@ -491,17 +500,6 @@
    "img": "https://i.cbc.ca/ais/e32e25d4-748f-4228-ae8d-e6390e8bc919,1795215866569/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C526%2C5712%2C3213%29%3BResize%3D620"
   },
   {
-   "t": "Sun 6:00 a.m.",
-   "iso": "2026-11-22T11:00:00+00:00",
-   "region": "Manitoba",
-   "title": "Manitoba government quietly ends court fine work program, then reinstates it after concerns raised",
-   "summary": "The Manitoba government has reinstated a program that allows people to work off court fines they couldn't otherwise afford to pay, after quietly phasing it out last month.",
-   "outlet": "CBC News",
-   "n": 1,
-   "url": "https://www.cbc.ca/news/canada/manitoba/fine-option-program-ends-reinstated-9.7430623",
-   "img": "https://i.cbc.ca/ais/1.5020677,1680057363000/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1919%2C1079%29%3BResize%3D620"
-  },
-  {
    "t": "Sun 5:00 a.m.",
    "iso": "2026-11-22T10:00:00+00:00",
    "region": "New Brunswick",
@@ -554,8 +552,8 @@
     "key": "auto-938a85e0",
     "words": [
      "liberals",
-     "liberal",
      "navdeep",
+     "liberal",
      "bains"
     ],
     "score": 12,
@@ -799,26 +797,18 @@
     "weight": 23.5,
     "videos": [
      {
-      "net": "CityNews",
-      "url": "https://www.youtube.com/watch?v=oJQp-ma4dTc",
-      "title": "Navdeep Bains named new Ontario Liberal leader",
-      "img": "https://i.ytimg.com/vi/oJQp-ma4dTc/hqdefault.jpg",
+      "net": "CTV News",
+      "url": "https://www.youtube.com/watch?v=9oQLhkwOxYs",
+      "title": "Navdeep Bains elected as new Ontario Liberal leader | CTV News Toronto at Six for Nov. 21, 2026",
+      "img": "https://i.ytimg.com/vi/9oQLhkwOxYs/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
       "net": "Global News",
       "url": "https://www.youtube.com/watch?v=8tZq2Lp1nOM",
-      "title": "Ontario politics: who is new Liberal party leader Navdeep Bains?",
+      "title": "Navdeep Bains named new Ontario Liberal leader",
       "img": "https://i.ytimg.com/vi/8tZq2Lp1nOM/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CTV News",
-      "url": "https://www.youtube.com/watch?v=9oQLhkwOxYs",
-      "title": "Navdeep Bains elected as new Ontario Liberal leader | CTV News Toronto at Six for Nov. 21, 2026",
-      "img": "https://i.ytimg.com/vi/9oQLhkwOxYs/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
@@ -829,130 +819,168 @@
       "img": "https://i.ytimg.com/vi/mC3_LM6s1ic/hqdefault.jpg",
       "rec": false,
       "up": ""
+     },
+     {
+      "net": "CP24",
+      "url": "https://www.youtube.com/watch?v=GkuIL-oedxQ",
+      "title": "Navdeep Bains wins Ontario Liberal leadership vote by one per cent",
+      "img": "https://i.ytimg.com/vi/GkuIL-oedxQ/hqdefault.jpg",
+      "rec": false,
+      "up": ""
      }
     ]
    },
    {
-    "key": "auto-2522b16b",
+    "key": "auto-cb250237",
     "words": [
-     "russian"
+     "russia-bound",
+     "kaliningrad",
+     "finland",
+     "gulf"
     ],
-    "score": 13,
+    "score": 8,
     "outlets": 4,
-    "carriers": 4,
+    "carriers": 5,
     "tag": "Developing",
-    "title": "15 people missing after Russian drone strike on Kyiv region",
-    "url": "https://www.euronews.com/2026/11/22/14-people-missing-after-russian-drone-strike-on-kyiv-region",
-    "outlet": "Euronews",
-    "t": "Sun 6:20 a.m.",
-    "iso": "2026-11-22T11:20:26+00:00",
-    "summary": "Timur Tkachenko, the head of the Kyiv Regional Military Administration, said the bodies of two people had been recovered from the rubble and that at least four people had been injured. #EuropeNews",
+    "title": "Air alert sounds in Kaliningrad hours after Russia-bound ship attacked in the Gulf of Finland",
+    "url": "https://www.ctvnews.ca/world/russia-ukraine-war/article/air-alert-sounds-in-kaliningrad-hours-after-russia-bound-ship-attacked-in-the-gulf-of-finland/",
+    "outlet": "CTV News",
+    "t": "Sun 8:08 a.m.",
+    "iso": "2026-11-22T13:08:03+00:00",
+    "summary": "A rare air alert sounded in Kaliningrad, the Russian exclave near Poland and Lithuania, according to the local governor, as claims circulated online of drone activity near a major naval base there.",
     "first": {
-     "outlet": "The Japan Times",
-     "url": "https://www.japantimes.co.jp/news/2026/11/22/world/ukraine-russia-logistics-crimean-bridge-strikes/",
-     "t": "Sat 6:55 p.m.",
-     "title": "Ukraine strains Russian logistics with Crimean bridge strikes",
-     "iso": "2026-11-21T23:55:00+00:00"
+     "outlet": "Kyiv Independent",
+     "url": "https://kyivindependent.com/russian-military-linked-cargo-ship-catches-fire-after-reported-drone-strike-in-gulf-of-finland/",
+     "t": "Sat 12:39 p.m.",
+     "title": "Russian military-linked cargo ship could sink after drone strike in Gulf of Finland, Finnish official warns",
+     "iso": "2026-11-21T17:39:48+00:00"
     },
-    "newest": "2026-11-22T11:20:26+00:00",
+    "newest": "2026-11-22T13:08:03+00:00",
     "photo": {
-     "src": "live/img/auto-2522b16b-094d99396d.jpg",
-     "orig": "https://images.euronews.com/articles/stories/10/00/32/58/1200x675_cmsv2_bda95ddb-450a-51a2-ad8a-c9b1d73df349-10003258.jpg",
-     "caption": "15 people missing after Russian drone strike on Kyiv region. — via Euronews",
-     "alt": "15 people missing after Russian drone strike on Kyiv region",
-     "outlet": "Euronews",
-     "url": "https://www.euronews.com/2026/11/22/14-people-missing-after-russian-drone-strike-on-kyiv-region",
-     "since": "2026-11-22T14:40:39.935446+00:00"
+     "src": "live/img/auto-cb250237-f1bb7a612d.jpg",
+     "orig": "https://www.ctvnews.ca/resizer/v2/SSEAXBTKWKSRXNMI5HIZ4EW4FU.jpg?smart=true&auth=cf56db995b39d18058b768e72996a3714de99c261c5ebcd6e825e05ede8ca38e&width=1200&height=630",
+     "caption": "In this photo released by the Finnish Border Guard, two ships try to extinguish a fire in the Russian cargo ship Sparta II after a drone strike in the Gulf of Finland, Sunday, Nov. 22, 2026. (Finnish Border Guard/Lehtikuva via AP). — via CTV News",
+     "alt": "In this photo released by the Finnish Border Guard, two ships try to extinguish a fire in the Russian cargo ship Sparta II after a drone strike in the Gulf of F",
+     "outlet": "CTV News",
+     "url": "https://www.ctvnews.ca/world/russia-ukraine-war/article/air-alert-sounds-in-kaliningrad-hours-after-russia-bound-ship-attacked-in-the-gulf-of-finland/",
+     "since": "2026-11-22T14:50:56.005676+00:00"
     },
     "photo_seen": [
-     "https://images.euronews.com/articles/stories/10/00/32/58/1200x675_cmsv2_bda95ddb-450a-51a2-ad8a-c9b1d73df349-10003258.jpg"
+     "https://www.ctvnews.ca/resizer/v2/SSEAXBTKWKSRXNMI5HIZ4EW4FU.jpg?smart=true&auth=cf56db995b39d18058b768e72996a3714de99c261c5ebcd6e825e05ede8ca38e&width=1200&height=630"
     ],
     "photos": [
      {
-      "src": "live/img/auto-2522b16b-094d99396d.jpg",
-      "orig": "https://images.euronews.com/articles/stories/10/00/32/58/1200x675_cmsv2_bda95ddb-450a-51a2-ad8a-c9b1d73df349-10003258.jpg",
-      "caption": "15 people missing after Russian drone strike on Kyiv region. — via Euronews",
-      "alt": "15 people missing after Russian drone strike on Kyiv region",
-      "outlet": "Euronews",
-      "url": "https://www.euronews.com/2026/11/22/14-people-missing-after-russian-drone-strike-on-kyiv-region"
+      "src": "live/img/auto-cb250237-f1bb7a612d.jpg",
+      "orig": "https://www.ctvnews.ca/resizer/v2/SSEAXBTKWKSRXNMI5HIZ4EW4FU.jpg?smart=true&auth=cf56db995b39d18058b768e72996a3714de99c261c5ebcd6e825e05ede8ca38e&width=1200&height=630",
+      "caption": "In this photo released by the Finnish Border Guard, two ships try to extinguish a fire in the Russian cargo ship Sparta II after a drone strike in the Gulf of Finland, Sunday, Nov. 22, 2026. (Finnish Border Guard/Lehtikuva via AP). — via CTV News",
+      "alt": "In this photo released by the Finnish Border Guard, two ships try to extinguish a fire in the Russian cargo ship Sparta II after a drone strike in the Gulf of F",
+      "outlet": "CTV News",
+      "url": "https://www.ctvnews.ca/world/russia-ukraine-war/article/air-alert-sounds-in-kaliningrad-hours-after-russia-bound-ship-attacked-in-the-gulf-of-finland/"
      },
      {
-      "src": "live/img/auto-2522b16b-858d3ce3e9.jpg",
-      "orig": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1795334360.jpg?resize=1920%2C1080&quality=80",
-      "caption": "Dashcam captures Russian missile strike on Lviv, Ukraine. — via Al Jazeera",
-      "alt": "Dashcam captures Russian missile strike on Lviv, Ukraine",
+      "src": "live/img/auto-cb250237-0a5fe2053d.jpg",
+      "orig": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1795346116.jpg?resize=1920%2C1080&quality=80",
+      "caption": "Russian ship attacked by drone in Baltic Sea off Finland. — via Al Jazeera",
+      "alt": "Russian ship attacked by drone in Baltic Sea off Finland",
       "outlet": "Al Jazeera",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/22/dashcam-captures-russian-missile-strike-on-lviv-ukraine?traffic_source=rss"
-     },
-     {
-      "src": "live/img/auto-2522b16b-1d027c6c1d.jpg",
-      "orig": "https://assets.kyivindependent.com/content/images/2026/11/occhicone_KI_nov-22-26_-4_20261122-130355.jpg",
-      "caption": "From: 'We live in fear' — Russian attack near Kyiv kills 2, leaves families waiting as rescuers search rubble. — via Kyiv Independent",
-      "alt": "'We live in fear' — Russian attack near Kyiv kills 2, leaves families waiting as rescuers search rubble",
-      "outlet": "Kyiv Independent",
-      "url": "https://kyivindependent.com/apartment-building-destroyed-in-kyiv-oblast-following-russian-drone-attack/"
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/22/russian-ship-attacked-by-drone-in-baltic-sea-off-finland?traffic_source=rss"
      }
     ],
     "independent": 4,
     "reports": [
      {
-      "t": "Sun 6:20 a.m.",
-      "iso": "2026-11-22T11:20:26+00:00",
-      "outlet": "Euronews",
-      "title": "15 people missing after Russian drone strike on Kyiv region",
-      "url": "https://www.euronews.com/2026/11/22/14-people-missing-after-russian-drone-strike-on-kyiv-region",
-      "desc": "Timur Tkachenko, the head of the Kyiv Regional Military Administration, said the bodies of two people had been recovered from the rubble and that at least four people had been injured. #EuropeNews"
+      "t": "Sun 8:08 a.m.",
+      "iso": "2026-11-22T13:08:03+00:00",
+      "outlet": "CTV News",
+      "title": "Air alert sounds in Kaliningrad hours after Russia-bound ship attacked in the Gulf of Finland",
+      "url": "https://www.ctvnews.ca/world/russia-ukraine-war/article/air-alert-sounds-in-kaliningrad-hours-after-russia-bound-ship-attacked-in-the-gulf-of-finland/",
+      "desc": "A rare air alert sounded in Kaliningrad, the Russian exclave near Poland and Lithuania, according to the local governor, as claims circulated online of drone activity near a major naval base there."
      },
      {
-      "t": "Sun 2:59 a.m.",
-      "iso": "2026-11-22T07:59:29+00:00",
+      "t": "Sun 8:08 a.m.",
+      "iso": "2026-11-22T13:08:03+00:00",
+      "outlet": "CP24",
+      "title": "Air alert sounds in Kaliningrad hours after Russia-bound ship attacked in the Gulf of Finland",
+      "url": "https://www.cp24.com/news/world/2026/11/22/air-alert-sounds-in-kaliningrad-hours-after-russia-bound-ship-attacked-in-the-gulf-of-finland/",
+      "desc": ""
+     },
+     {
+      "t": "Sun 6:25 a.m.",
+      "iso": "2026-11-22T11:25:14+00:00",
+      "outlet": "BBC News",
+      "title": "Russia-bound ship still on fire after attack in Gulf of Finland",
+      "url": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
+      "desc": "Finnish defence forces say that Ukraine was likely behind the drone attack on the vessel."
+     },
+     {
+      "t": "Sun 6:15 a.m.",
+      "iso": "2026-11-22T11:15:27+00:00",
       "outlet": "Al Jazeera",
-      "title": "Dashcam captures Russian missile strike on Lviv, Ukraine",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/22/dashcam-captures-russian-missile-strike-on-lviv-ukraine?traffic_source=rss",
-      "desc": "Dashcam video captured the moment a missile struck a residential neighbourhood in Lviv, western Ukraine."
+      "title": "Russian ship attacked by drone in Baltic Sea off Finland",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/22/russian-ship-attacked-by-drone-in-baltic-sea-off-finland?traffic_source=rss",
+      "desc": "Russian ship attacked by drone in Baltic Sea off Finland"
      },
      {
-      "t": "Sat 11:49 p.m.",
-      "iso": "2026-11-22T04:49:11+00:00",
+      "t": "Sat 6:35 p.m.",
+      "iso": "2026-11-21T23:35:21+00:00",
       "outlet": "Kyiv Independent",
-      "title": "'We live in fear' — Russian attack near Kyiv kills 2, leaves families waiting as rescuers search rubble",
-      "url": "https://kyivindependent.com/apartment-building-destroyed-in-kyiv-oblast-following-russian-drone-attack/",
-      "desc": "\"People may still be trapped under the rubble,\" President Volodymyr Zelensky said."
-     },
-     {
-      "t": "Sat 6:55 p.m.",
-      "iso": "2026-11-21T23:55:00+00:00",
-      "outlet": "The Japan Times",
-      "title": "Ukraine strains Russian logistics with Crimean bridge strikes",
-      "url": "https://www.japantimes.co.jp/news/2026/11/22/world/ukraine-russia-logistics-crimean-bridge-strikes/",
-      "desc": "Last week’s attacks pile pressure on an already strained logistics network in ways that Russia could struggle to mitigate."
+      "title": "Moldova, Finland report Russian airspace violations day after suspected Russian missiles flew into Poland",
+      "url": "https://kyivindependent.com/moldova-finland-report-russian-airspace-violations-day-after-suspected-russian-missiles-flew-into-poland/",
+      "desc": "Both Moldova and Finland reported separate instances of airspace violations by Russia on Nov. 21, officials said, just one day after two suspected Russian missiles and a jet-powered drone fell on Polish territory."
      }
     ],
     "sources": [
      {
-      "t": "Sun 6:20 a.m.",
+      "t": "Sun 8:08 a.m.",
       "primary": false,
-      "outlet": "Euronews",
-      "title": "15 people missing after Russian drone strike on Kyiv region",
-      "url": "https://www.euronews.com/2026/11/22/14-people-missing-after-russian-drone-strike-on-kyiv-region",
-      "desc": "Timur Tkachenko, the head of the Kyiv Regional Military Administration, said the bodies of two people had been recovered from the rubble and that at least four people had been injured. #EuropeNews",
-      "wire": "The Associated Press",
+      "outlet": "CTV News",
+      "title": "Air alert sounds in Kaliningrad hours after Russia-bound ship attacked in the Gulf of Finland",
+      "url": "https://www.ctvnews.ca/world/russia-ukraine-war/article/air-alert-sounds-in-kaliningrad-hours-after-russia-bound-ship-attacked-in-the-gulf-of-finland/",
+      "desc": "A rare air alert sounded in Kaliningrad, the Russian exclave near Poland and Lithuania, according to the local governor, as claims circulated online of drone activity near a major naval base there.",
+      "wire": "The Canadian Press",
       "by": [
        {
-        "outlet": "Euronews",
+        "outlet": "CTV News",
+        "src": "The Canadian Press",
+        "byline": "Wilson\" \"Ian Holliday\" \"Ian Holliday\" \"The Canadian Press\" \"The Canadian Pres"
+       },
+       {
+        "outlet": "CP24",
         "src": "The Associated Press",
-        "byline": "] Nathan Rennolds Copyright 2026 The Associated Press. All rights reserve"
+        "byline": "\"@type\": \"Person\",\n      \"name\": \"The  Associated Press\",\n      \n    }\n  ]"
+       }
+      ],
+      "copies": [
+       {
+        "outlet": "CP24",
+        "url": "https://www.cp24.com/news/world/2026/11/22/air-alert-sounds-in-kaliningrad-hours-after-russia-bound-ship-attacked-in-the-gulf-of-finland/"
+       }
+      ]
+     },
+     {
+      "t": "Sun 6:25 a.m.",
+      "primary": false,
+      "outlet": "BBC News",
+      "title": "Russia-bound ship still on fire after attack in Gulf of Finland",
+      "url": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
+      "desc": "Finnish defence forces say that Ukraine was likely behind the drone attack on the vessel.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "BBC News",
+        "src": "BBC News",
+        "byline": "[{\"@type\":\"Person\",\"name\":\"Hafsa Khalil\"}] https://www.facebook.com/bbcnews"
        }
       ],
       "copies": []
      },
      {
-      "t": "Sun 2:59 a.m.",
+      "t": "Sun 6:15 a.m.",
       "primary": false,
       "outlet": "Al Jazeera",
-      "title": "Dashcam captures Russian missile strike on Lviv, Ukraine",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/22/dashcam-captures-russian-missile-strike-on-lviv-ukraine?traffic_source=rss",
-      "desc": "Dashcam video captured the moment a missile struck a residential neighbourhood in Lviv, western Ukraine.",
+      "title": "Russian ship attacked by drone in Baltic Sea off Finland",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/22/russian-ship-attacked-by-drone-in-baltic-sea-off-finland?traffic_source=rss",
+      "desc": "Russian ship attacked by drone in Baltic Sea off Finland",
       "wire": "",
       "by": [
        {
@@ -964,35 +992,18 @@
       "copies": []
      },
      {
-      "t": "Sat 11:49 p.m.",
+      "t": "Sat 6:35 p.m.",
       "primary": false,
       "outlet": "Kyiv Independent",
-      "title": "'We live in fear' — Russian attack near Kyiv kills 2, leaves families waiting as rescuers search rubble",
-      "url": "https://kyivindependent.com/apartment-building-destroyed-in-kyiv-oblast-following-russian-drone-attack/",
-      "desc": "\"People may still be trapped under the rubble,\" President Volodymyr Zelensky said.",
+      "title": "Moldova, Finland report Russian airspace violations day after suspected Russian missiles flew into Poland",
+      "url": "https://kyivindependent.com/moldova-finland-report-russian-airspace-violations-day-after-suspected-russian-missiles-flew-into-poland/",
+      "desc": "Both Moldova and Finland reported separate instances of airspace violations by Russia on Nov. 21, officials said, just one day after two suspected Russian missiles and a jet-powered drone fell on Polish territory.",
       "wire": "",
       "by": [
        {
         "outlet": "Kyiv Independent",
         "src": "Kyiv Independent",
         "byline": "own staff: Editor"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Sat 6:55 p.m.",
-      "primary": false,
-      "outlet": "The Japan Times",
-      "title": "Ukraine strains Russian logistics with Crimean bridge strikes",
-      "url": "https://www.japantimes.co.jp/news/2026/11/22/world/ukraine-russia-logistics-crimean-bridge-strikes/",
-      "desc": "Last week’s attacks pile pressure on an already strained logistics network in ways that Russia could struggle to mitigate.",
-      "wire": "Reuters",
-      "by": [
-       {
-        "outlet": "The Japan Times",
-        "src": "Reuters",
-        "byline": "Reuters \n           By  Ale"
        }
       ],
       "copies": []
@@ -1009,12 +1020,12 @@
     "fronts": 1,
     "fronts_ca": 0,
     "fronts_who": [
-     "CBS News"
+     "BBC News"
     ],
     "outled_ca": 2,
     "judgment": "national",
-    "judgment_why": "National: affects many people; carried by a few newsrooms.",
-    "weight": 27.0
+    "judgment_why": "National: affects some people; carried across the country (national desks).",
+    "weight": 25.5
    }
   ],
   "considered": [
@@ -1041,30 +1052,9 @@
     "why_judged": "Regional: affects some people; carried beyond one city."
    },
    {
-    "title": "15 people missing after Russian drone strike on Kyiv region",
-    "url": "https://www.euronews.com/2026/11/22/14-people-missing-after-russian-drone-strike-on-kyiv-region",
-    "rank": 2,
-    "live": "",
-    "weight": 27.0,
-    "score": 13,
-    "independent": 4,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": true,
-    "fronts": 1,
-    "fronts_who": [
-     "CBS News"
-    ],
-    "rule": "No Canadian tie",
-    "carriers": 4,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried by a few newsrooms."
-   },
-   {
     "title": "Air alert sounds in Kaliningrad hours after Russia-bound ship attacked in the Gulf of Finland",
     "url": "https://www.ctvnews.ca/world/russia-ukraine-war/article/air-alert-sounds-in-kaliningrad-hours-after-russia-bound-ship-attacked-in-the-gulf-of-finland/",
-    "rank": 3,
+    "rank": 2,
     "live": "",
     "weight": 25.5,
     "score": 8,
@@ -1072,7 +1062,7 @@
     "most_read": 0,
     "canada": "none",
     "theme": "",
-    "top": false,
+    "top": true,
     "fronts": 1,
     "fronts_who": [
      "BBC News"
@@ -1083,49 +1073,9 @@
     "why_judged": "National: affects some people; carried across the country (national desks)."
    },
    {
-    "title": "Briton swims length of strait of Hormuz to highlight environmental cost of war",
-    "url": "https://www.theguardian.com/world/2026/nov/22/briton-lewis-pugh-swims-strait-of-hormuz-environment-war",
-    "rank": 4,
-    "live": "",
-    "weight": 25.0,
-    "score": 8,
-    "independent": 4,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 1,
-    "fronts_who": [
-     "BNN Bloomberg"
-    ],
-    "rule": "No Canadian tie",
-    "carriers": 4,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried by a few newsrooms."
-   },
-   {
-    "title": "What to know about tear gas and reproductive health as people raise concerns in France",
-    "url": "https://www.ctvnews.ca/health/article/what-to-know-about-tear-gas-and-reproductive-health-as-people-raise-concerns-in-france/",
-    "rank": 5,
-    "live": "",
-    "weight": 24.5,
-    "score": 8,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "No Canadian tie",
-    "carriers": 5,
-    "judgment": "national",
-    "why_judged": "National: affects some people; carried across the country (national desks)."
-   },
-   {
     "title": "Wash. officials condemn ICE after 2 arrested boarding flight at Seattle airport",
     "url": "https://abcnews.com/US/washington-state-officials-condemn-ice-after-2-arrested/story?id=138349974",
-    "rank": 6,
+    "rank": 3,
     "live": "",
     "weight": 18.0,
     "score": 8,
@@ -1145,9 +1095,30 @@
     "why_judged": "National: affects many people; carried across the country (national desks)."
    },
    {
+    "title": "2 men killed, 1 injured in Scarborough triple shooting",
+    "url": "https://toronto.citynews.ca/2026/11/22/2-men-killed-1-injured-in-scarborough-triple-shooting/",
+    "rank": 4,
+    "live": "",
+    "weight": 8.5,
+    "score": 7,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "general",
+    "theme": "",
+    "top": false,
+    "fronts": 1,
+    "fronts_who": [
+     "CP24"
+    ],
+    "rule": "No Canadian tie",
+    "carriers": 5,
+    "judgment": "local",
+    "why_judged": "Local: a single incident touching a few people; carried only by Toronto desks."
+   },
+   {
     "title": "Stephen A Smith isn't the only one who knows dissing White people comes without consequences",
     "url": "https://www.foxnews.com/outkick-sports/stephen-a-smith-isnt-only-one-knows-dissing-white-people-comes-without-consequences",
-    "rank": 7,
+    "rank": 5,
     "live": "",
     "weight": 28.5,
     "score": 12,
@@ -1167,6 +1138,27 @@
     "why_judged": "National: affects many people; carried across the country (national desks)."
    },
    {
+    "title": "'We live in fear' — Russian attack near Kyiv kills 2, leaves families waiting as rescuers search rubble",
+    "url": "https://kyivindependent.com/apartment-building-destroyed-in-kyiv-oblast-following-russian-drone-attack/",
+    "rank": 6,
+    "live": "",
+    "weight": 12.5,
+    "score": 12,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": false,
+    "fronts": 1,
+    "fronts_who": [
+     "CBS News"
+    ],
+    "rule": "No Canadian tie",
+    "carriers": 3,
+    "judgment": "regional",
+    "why_judged": "Regional: affects some people; carried by a few newsrooms."
+   },
+   {
     "title": "Rounds: Pentagon restricted socialization between US, Canada defense officials",
     "score": 17,
     "why": "not built: only 1 independent report(s) (1 sites)"
@@ -1177,14 +1169,14 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "COP31 climate talks fail after EU and others reject final deal proposal",
-    "score": 13,
-    "why": "not built: only 1 independent report(s) (6 sites)"
-   },
-   {
     "title": "All signs show Canada can’t meet its Paris target — here’s why Ottawa won’t admit it",
     "score": 13,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "UN climate talks break down at COP31 with overarching agreement",
+    "score": 11,
+    "why": "not built: only 1 independent report(s) (6 sites)"
    },
    {
     "title": "Chinese investment in Canada’s auto sector will ‘play out over the next year’: federal government",
@@ -1192,14 +1184,14 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Will Canadian workers refuse to handle Israeli goods? Why unions increasingly say they should",
-    "score": 9,
-    "why": "not built: only 2 independent report(s) (2 sites)"
-   },
-   {
     "title": "Pierre Poilievre says he won’t resign if Conservatives lose Brantford byelection",
     "score": 7,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "What to know about tear gas and reproductive health as people raise concerns in France",
+    "score": 7,
+    "why": "not built: only 2 independent report(s) (4 sites)"
    },
    {
     "title": "Liberals Maintain Strong Lead Following Federal Budget as Political Landscape Remains Stable",
@@ -1210,11 +1202,202 @@
     "title": "Quebecor CEO defends Telus bid, cites falling wireless prices and Canada's sovereignty",
     "score": 6,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "How a rainy afternoon in Montreal inspired an iconic Canadian board game",
+    "score": 6,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
   ],
   "moved": [],
   "top_n": 2,
   "more": [
+   {
+    "key": "auto-9305323b",
+    "words": [
+     "scarborough"
+    ],
+    "score": 7,
+    "outlets": 3,
+    "carriers": 5,
+    "tag": "Developing",
+    "title": "2 men killed, 1 injured in Scarborough triple shooting",
+    "url": "https://toronto.citynews.ca/2026/11/22/2-men-killed-1-injured-in-scarborough-triple-shooting/",
+    "outlet": "CityNews",
+    "t": "Sun 7:15 a.m.",
+    "iso": "2026-11-22T12:15:16+00:00",
+    "summary": "Emergency crews were called to the area of Ellesmere and Brimley Roads just after 12:30 a.m. for reports of three men who were shot.",
+    "first": {
+     "outlet": "CityNews",
+     "url": "https://toronto.citynews.ca/2026/11/21/male-struck-by-vehicle-in-scarborough-critically-injured/",
+     "t": "Sat 6:53 p.m.",
+     "title": "Male struck by vehicle in Scarborough, critically injured",
+     "iso": "2026-11-21T23:53:40+00:00"
+    },
+    "newest": "2026-11-22T14:47:03+00:00",
+    "photo": {
+     "src": "live/img/auto-9305323b-4140c41cef.jpg",
+     "orig": "https://toronto.citynews.ca/wp-content/blogs.dir/sites/10/2026/11/22/IMG_2529-scaled.jpeg",
+     "caption": "From: 2 men killed, 1 injured in Scarborough triple shooting. — via CityNews",
+     "alt": "2 men killed, 1 injured in Scarborough triple shooting",
+     "outlet": "CityNews",
+     "url": "https://toronto.citynews.ca/2026/11/22/2-men-killed-1-injured-in-scarborough-triple-shooting/",
+     "since": "2026-11-22T14:50:56.852954+00:00"
+    },
+    "photo_seen": [
+     "https://toronto.citynews.ca/wp-content/blogs.dir/sites/10/2026/11/22/IMG_2529-scaled.jpeg"
+    ],
+    "photos": [
+     {
+      "src": "live/img/auto-9305323b-4140c41cef.jpg",
+      "orig": "https://toronto.citynews.ca/wp-content/blogs.dir/sites/10/2026/11/22/IMG_2529-scaled.jpeg",
+      "caption": "From: 2 men killed, 1 injured in Scarborough triple shooting. — via CityNews",
+      "alt": "2 men killed, 1 injured in Scarborough triple shooting",
+      "outlet": "CityNews",
+      "url": "https://toronto.citynews.ca/2026/11/22/2-men-killed-1-injured-in-scarborough-triple-shooting/"
+     },
+     {
+      "src": "live/img/auto-9305323b-1d4cd627a9.jpg",
+      "orig": "https://www.ctvnews.ca/resizer/v2/OLHIFTDBYNDADG33OMHCQUUURI.jpeg?smart=true&auth=60ac131374f2e3f6ab95bfe54ef7a9579386c39582f5c5e764bca24d24d55bc8&width=1200&height=630",
+      "caption": "Police investigating after a triple shooting in Scarborough outside a gas station on Sunday Nov. 22, 2026 (CP24 photo). — via CTV News",
+      "alt": "Police investigating after a triple shooting in Scarborough outside a gas station on Sunday Nov. 22, 2026 (CP24 photo).",
+      "outlet": "CTV News",
+      "url": "https://www.ctvnews.ca/toronto/article/two-people-dead-one-seriously-injured-after-triple-shooting-in-scarborough/"
+     }
+    ],
+    "independent": 3,
+    "reports": [
+     {
+      "t": "Sun 9:47 a.m.",
+      "iso": "2026-11-22T14:47:03+00:00",
+      "outlet": "Narcity",
+      "title": "Two dead following triple shooting overnight in Scarborough",
+      "url": "https://www.narcity.com/toronto/two-dead-in-scarborough-triple-shooting",
+      "desc": ""
+     },
+     {
+      "t": "Sun 7:15 a.m.",
+      "iso": "2026-11-22T12:15:16+00:00",
+      "outlet": "CityNews",
+      "title": "2 men killed, 1 injured in Scarborough triple shooting",
+      "url": "https://toronto.citynews.ca/2026/11/22/2-men-killed-1-injured-in-scarborough-triple-shooting/",
+      "desc": "Emergency crews were called to the area of Ellesmere and Brimley Roads just after 12:30 a.m. for reports of three men who were shot."
+     },
+     {
+      "t": "Sun 7:10 a.m.",
+      "iso": "2026-11-22T12:10:12+00:00",
+      "outlet": "CTV News",
+      "title": "Two people dead, one seriously injured after triple shooting in Scarborough",
+      "url": "https://www.ctvnews.ca/toronto/article/two-people-dead-one-seriously-injured-after-triple-shooting-in-scarborough/",
+      "desc": "Two people are dead and another is in hospital with serious injuries after a triple shooting outside a Scarborough gas station early Sunday morning."
+     },
+     {
+      "t": "Sun 7:10 a.m.",
+      "iso": "2026-11-22T12:10:12+00:00",
+      "outlet": "CP24",
+      "title": "Two people dead, one seriously injured after triple shooting in Scarborough",
+      "url": "https://www.cp24.com/local/toronto/2026/11/22/two-people-dead-one-seriously-injured-after-triple-shooting-in-scarborough/",
+      "desc": ""
+     },
+     {
+      "t": "Sun 7:08 a.m.",
+      "iso": "2026-11-22T12:08:00+00:00",
+      "outlet": "Toronto Star",
+      "title": "Two dead, one injured after shooting in Scarborough",
+      "url": "https://www.thestar.com/news/gta/two-dead-one-injured-after-shooting-in-scarborough/article_2bd3a67e-2b78-423e-8bb1-9595cc42101b.html",
+      "desc": "Police responded to call for a shooting at 12:30 a.m. in the area of Ellesmere Road and Brimley Road where they found three men with gunshot wounds."
+     }
+    ],
+    "sources": [
+     {
+      "t": "Sun 7:10 a.m.",
+      "primary": false,
+      "outlet": "CTV News",
+      "title": "Two people dead, one seriously injured after triple shooting in Scarborough",
+      "url": "https://www.ctvnews.ca/toronto/article/two-people-dead-one-seriously-injured-after-triple-shooting-in-scarborough/",
+      "desc": "Two people are dead and another is in hospital with serious injuries after a triple shooting outside a Scarborough gas station early Sunday morning.",
+      "wire": "The Canadian Press",
+      "by": [
+       {
+        "outlet": "CTV News",
+        "src": "The Canadian Press",
+        "byline": "Wilson\" \"Ian Holliday\" \"Ian Holliday\" \"The Canadian Press\" \"The Canadian Pres"
+       },
+       {
+        "outlet": "CP24",
+        "src": "The Canadian Press",
+        "byline": "[ { \"@type\": \"Person\", \"name\": \"Jermaine Wilson\", } ] \"Jermaine Wilson\" \"Jermaine Wilson\" \"\" \"\" \"\" \"\" \"\" \"\" \"mediaconver"
+       },
+       {
+        "outlet": "Narcity",
+        "src": "The Canadian Press",
+        "byline": "\"jobTitle\": \"Writer\",\n        \"name\": \"The Canadian Press\",\n        ,\n\t\t\"iden"
+       }
+      ],
+      "copies": [
+       {
+        "outlet": "CP24",
+        "url": "https://www.cp24.com/local/toronto/2026/11/22/two-people-dead-one-seriously-injured-after-triple-shooting-in-scarborough/"
+       },
+       {
+        "outlet": "Narcity",
+        "url": "https://www.narcity.com/toronto/two-dead-in-scarborough-triple-shooting"
+       }
+      ]
+     },
+     {
+      "t": "Sun 7:15 a.m.",
+      "primary": false,
+      "outlet": "CityNews",
+      "title": "2 men killed, 1 injured in Scarborough triple shooting",
+      "url": "https://toronto.citynews.ca/2026/11/22/2-men-killed-1-injured-in-scarborough-triple-shooting/",
+      "desc": "Emergency crews were called to the area of Ellesmere and Brimley Roads just after 12:30 a.m. for reports of three men who were shot.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "CityNews",
+        "src": "Rogers",
+        "byline": "[{\"@id\":\"https://toronto.citynews.ca/#/schema/person/image/145779556c65659268f809669825b216\"}] \"denio-lourenco\" Denio Lo"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Sun 7:08 a.m.",
+      "primary": false,
+      "outlet": "Toronto Star",
+      "title": "Two dead, one injured after shooting in Scarborough",
+      "url": "https://www.thestar.com/news/gta/two-dead-one-injured-after-shooting-in-scarborough/article_2bd3a67e-2b78-423e-8bb1-9595cc42101b.html",
+      "desc": "Police responded to call for a shooting at 12:30 a.m. in the area of Ellesmere Road and Brimley Road where they found three men with gunshot wounds.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Toronto Star",
+        "src": "Torstar",
+        "byline": "own staff: Reporter"
+       }
+      ],
+      "copies": []
+     }
+    ],
+    "replaces_top": false,
+    "events": [],
+    "theme": "",
+    "canada": "general",
+    "canus": false,
+    "incoherent": false,
+    "popular": 0,
+    "us_election": false,
+    "fronts": 1,
+    "fronts_ca": 1,
+    "fronts_who": [
+     "CP24"
+    ],
+    "outled_ca": 2,
+    "judgment": "local",
+    "judgment_why": "Local: a single incident touching a few people; carried only by Toronto desks.",
+    "weight": 8.5
+   },
    {
     "key": "auto-658564f8",
     "words": [
@@ -1246,7 +1429,7 @@
      "alt": "Stephen A Smith isn't the only one who knows dissing White people comes without consequences",
      "outlet": "Fox News",
      "url": "https://www.foxnews.com/outkick-sports/stephen-a-smith-isnt-only-one-knows-dissing-white-people-comes-without-consequences",
-     "since": "2026-11-22T14:40:41.888150+00:00"
+     "since": "2026-11-22T14:50:54.081939+00:00"
     },
     "photo_seen": [
      "https://static.foxnews.com/foxnews.com/content/uploads/2026/07/stephen-a-smith-111525.jpg"
@@ -1419,20 +1602,12 @@
   ],
   "passed_over": [
    {
+    "title": "'We live in fear' — Russian attack near Kyiv kills 2, leaves families waiting as rescuers search rubble",
+    "url": "https://kyivindependent.com/apartment-building-destroyed-in-kyiv-oblast-following-russian-drone-attack/"
+   },
+   {
     "title": "Wash. officials condemn ICE after 2 arrested boarding flight at Seattle airport",
     "url": "https://abcnews.com/US/washington-state-officials-condemn-ice-after-2-arrested/story?id=138349974"
-   },
-   {
-    "title": "Briton swims length of strait of Hormuz to highlight environmental cost of war",
-    "url": "https://www.theguardian.com/world/2026/nov/22/briton-lewis-pugh-swims-strait-of-hormuz-environment-war"
-   },
-   {
-    "title": "Air alert sounds in Kaliningrad hours after Russia-bound ship attacked in the Gulf of Finland",
-    "url": "https://www.ctvnews.ca/world/russia-ukraine-war/article/air-alert-sounds-in-kaliningrad-hours-after-russia-bound-ship-attacked-in-the-gulf-of-finland/"
-   },
-   {
-    "title": "What to know about tear gas and reproductive health as people raise concerns in France",
-    "url": "https://www.ctvnews.ca/health/article/what-to-know-about-tear-gas-and-reproductive-health-as-people-raise-concerns-in-france/"
    }
   ]
  },
@@ -1483,7 +1658,7 @@
    "id": "vdSGPj15ftw",
    "r": "ca",
    "o": "Global News",
-   "t": "Ukraine defence top of mind at Halifax International Security Forum",
+   "t": "“No way to win this war” without US support, former Ukraine PM says at security forum",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=vdSGPj15ftw",
@@ -1497,7 +1672,7 @@
    "id": "P-5616L0fJ8",
    "r": "ca",
    "o": "Global News",
-   "t": "BC shooter reportedly received instructions from ChatGPT on modifying weapons",
+   "t": "Tumbler Ridge shooter reportedly received detailed instructions from AI on modifying weapons",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=P-5616L0fJ8",
@@ -1707,7 +1882,7 @@
    "id": "hChw30vwgUc",
    "r": "us",
    "o": "CNN",
-   "t": "America’s past and present are Latino | United Shades of America‌",
+   "t": "The LA Latino culture most tourists don’t see | United Shades of America‌",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=hChw30vwgUc",
@@ -1735,7 +1910,7 @@
    "id": "ZOOIz8_6VP4",
    "r": "us",
    "o": "CNN",
-   "t": "Harry’s top 2028 GOP presidential candidates, ranked (it’s really close)",
+   "t": "Harry’s 2028 presidential election prediction: GOP candidates (it’s really close)",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=ZOOIz8_6VP4",
@@ -1802,20 +1977,6 @@
    "geo": "unknown"
   },
   {
-   "id": "BjLvRgCpwM0",
-   "r": "us",
-   "o": "ABC News",
-   "t": "Good Morning America: News to start your day | November 22",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=BjLvRgCpwM0",
-   "img": "https://i.ytimg.com/vi/BjLvRgCpwM0/hqdefault.jpg",
-   "up": "2026-11-22",
-   "added": "2026-11-22T14:19:36.343681+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "24948lY16HM",
    "r": "us",
    "o": "Associated Press",
@@ -1840,20 +2001,6 @@
    "img": "https://i.ytimg.com/vi/RgNfymYYQbs/hqdefault.jpg",
    "up": "2026-11-22",
    "added": "2026-11-22T14:19:36.343681+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "ANnFq78jOpk",
-   "r": "us",
-   "o": "NBC News",
-   "t": "Abdul El-Sayed says passing Medicare for all with Trump support would be ‘the ultimate trump card’",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=ANnFq78jOpk",
-   "img": "https://i.ytimg.com/vi/ANnFq78jOpk/hqdefault.jpg",
-   "up": "2026-11-22",
-   "added": "2026-11-22T14:29:37.119917+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1900,16 +2047,30 @@
    "geo": "unknown"
   },
   {
-   "id": "g7m27fV-gyQ",
-   "r": "world",
-   "o": "Al Jazeera",
-   "t": "Israeli attacks kill two Palestinians in Gaza as ceasefire violations continue",
+   "id": "yKTQ845zBLI",
+   "r": "us",
+   "o": "NBC News",
+   "t": "John Kennedy says Trump is not putting enough pressure on Russia: Full interview",
    "rec": false,
    "d": "",
-   "u": "https://www.youtube.com/watch?v=g7m27fV-gyQ",
-   "img": "https://i.ytimg.com/vi/g7m27fV-gyQ/hqdefault.jpg",
+   "u": "https://www.youtube.com/watch?v=yKTQ845zBLI",
+   "img": "https://i.ytimg.com/vi/yKTQ845zBLI/hqdefault.jpg",
    "up": "2026-11-22",
-   "added": "2026-11-22T09:19:03.711631+00:00",
+   "added": "2026-11-22T14:49:36.337145+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "uxyXxd7lP9g",
+   "r": "us",
+   "o": "ABC News",
+   "t": "ICE arrests at Seattle airport spark outrage",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=uxyXxd7lP9g",
+   "img": "https://i.ytimg.com/vi/uxyXxd7lP9g/hqdefault.jpg",
+   "up": "2026-11-22",
+   "added": "2026-11-22T14:49:36.337145+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1931,7 +2092,7 @@
    "id": "VUSJi1QuGnM",
    "r": "world",
    "o": "Sky News",
-   "t": "Farage disagreements with Trump are 'growing', says Reform's deputy leader",
+   "t": "Putin is a ‘murderous dictator’ and ‘not our friend’, says Reform deputy leader",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=VUSJi1QuGnM",
@@ -1945,7 +2106,7 @@
    "id": "Qla1B9VVjG0",
    "r": "world",
    "o": "BBC News",
-   "t": "What is the Pip disability benefit and how does it work? | BBC News",
+   "t": "Why is everyone talking about Pip? | BBC News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=Qla1B9VVjG0",
@@ -2012,20 +2173,6 @@
    "geo": "unknown"
   },
   {
-   "id": "TroK5Ul13oI",
-   "r": "world",
-   "o": "Reuters",
-   "t": "In Kyiv, restaurants are closing as war pressures mount",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=TroK5Ul13oI",
-   "img": "https://i.ytimg.com/vi/TroK5Ul13oI/hqdefault.jpg",
-   "up": "2026-11-22",
-   "added": "2026-11-22T14:19:36.343681+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "hbn3SLuc9D4",
    "r": "world",
    "o": "Reuters",
@@ -2038,16 +2185,44 @@
    "added": "2026-11-22T14:39:36.859721+00:00",
    "pic": "globe",
    "geo": "unknown"
+  },
+  {
+   "id": "FNU40lY1Oo8",
+   "r": "world",
+   "o": "Reuters",
+   "t": "Riot police in Paris fire tear gas, charge at protesters",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=FNU40lY1Oo8",
+   "img": "https://i.ytimg.com/vi/FNU40lY1Oo8/hqdefault.jpg",
+   "up": "2026-11-22",
+   "added": "2026-11-22T14:49:36.337145+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "99T7-xaIJBY",
+   "r": "world",
+   "o": "Al Jazeera",
+   "t": "Why antibiotics are no longer enough | Featured Documentary",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=99T7-xaIJBY",
+   "img": "https://i.ytimg.com/vi/99T7-xaIJBY/hqdefault.jpg",
+   "up": "2026-11-22",
+   "added": "2026-11-22T14:49:36.337145+00:00",
+   "pic": "globe",
+   "geo": "unknown"
   }
  ],
  "ledes": [
   {
    "o": "CBS News",
-   "h": "This week on \"Sunday Morning\" (Nov. 22): The Food Issue",
-   "u": "https://www.cbsnews.com/news/this-week-on-sunday-morning-nov-22-2026-the-food-issue/",
-   "img": "https://assets1.cbsnewsstatic.com/hub/i/r/2025/11/20/6f1c079d-ee34-44f9-9970-5259470816d3/thumbnail/1200x630/ad2b90962824fc00e4e995f53cab0076/sm-2025-food-issue-graphic-1920.jpg",
-   "w": "Sun 9:19 a.m.",
-   "iso": "2026-11-22T14:19:40+00:00"
+   "h": "New book recommendations from The Reader and \"Sunday Morning\"",
+   "u": "https://www.cbsnews.com/news/new-book-recommendations-from-the-reader-fall-2026/",
+   "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/21/77b9eb4b-0d5d-46e3-a6e9-be7c383711b8/thumbnail/1200x630/2317ffd16c2f89794e99fc746955cc2b/the-reader-sun.jpg",
+   "w": "Sun 9:49 a.m.",
+   "iso": "2026-11-22T14:49:14+00:00"
   },
   {
    "o": "ABC News",
@@ -2442,9 +2617,9 @@
   "lines": [
    "Good morning. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
    "Ontario Liberals have elected Navdeep Bains as the party’s new leader after a marathon nine-month leadership race, with Bains emerging as victor less than one percentage point ahead of his next closest competitor, provincial caucus member Lee Fairclough, The Canadian Press reports.",
-   "15 people missing after Russian drone strike on Kyiv region, The Associated Press reports.",
    "Masked immigration officers arrested two passengers on a crowded airport jet bridge in Seattle as people were boarding Saturday, The Associated Press reports.",
-   "British endurance swimmer Lewis Pugh has swum the Strait of Hormuz to highlight environmental threats during ongoing conflict, CBS News reports.",
+   "Both Moldova and Finland reported separate instances of airspace violations by Russia on Nov. 21, officials said, just one day after two suspected Russian missiles and a jet-powered drone fell on Polish territory, Kyiv Independent reports.",
+   "Two people dead, one seriously injured after triple shooting in Scarborough, The Canadian Press reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
   ]
  },
@@ -2715,6 +2890,16 @@
    "img": "https://yukon-news.com/wp-content/uploads/sites/7/2026/11/Screenshot202026-11-0420at2014.52.52.jpg?w=1024"
   },
   {
+   "o": "Moose Jaw Today",
+   "region": "Saskatchewan",
+   "arctic": false,
+   "h": "Update: Highway conditions improve in Saskatchewan",
+   "u": "https://www.moosejawtoday.com/provincial-news/snow-and-wind-creates-challenging-driving-conditions-in-saskatchewan-13045063",
+   "t": "Sun 9:30 a.m.",
+   "desc": "",
+   "img": ""
+  },
+  {
    "o": "Thunder Bay Newswatch",
    "region": "Thunder Bay",
    "arctic": false,
@@ -2723,16 +2908,6 @@
    "t": "Sun 9:10 a.m.",
    "desc": "",
    "img": ""
-  },
-  {
-   "o": "CHEK News",
-   "region": "Vancouver Island",
-   "arctic": false,
-   "h": "New mini pharmacy opens in remote Ahousaht community of Maaqtusiis",
-   "u": "https://cheknews.ca/new-mini-pharmacy-opens-in-remote-ahousaht-community-of-maaqtusiis-1362993/",
-   "t": "Sun 9:00 a.m.",
-   "desc": "A new mini pharmacy in the remote Ahousaht First Nation community of Maaqtusiis on Flores Island is a game changer for its 1,200 residents.",
-   "img": "https://i0.wp.com/cheknews.ca/wp-content/uploads/2026/11/168b2b67fdc6f7f7d0c15fb6e5fc30440cb2ee4eebdecccef28835e53acae4b7-e1795213851914.jpg?fit=1400%2C790&ssl=1"
   }
  ],
  "clocks": [
@@ -2776,7 +2951,7 @@
    "city": "Winnipeg",
    "tz": "America/Winnipeg",
    "world": false,
-   "w": "City hall",
+   "w": "Transportation",
    "label": "Conference designed to launch Christian education…",
    "u": "https://www.ctvnews.ca/regina/article/conference-designed-to-launch-christian-education-initiatives-held-at-regina-victory-church/",
    "title": "Conference designed to launch Christian education initiatives held at Regina Victory Church",
@@ -2821,27 +2996,27 @@
    "hot": false
   },
   {
-   "city": "Tehran",
-   "tz": "Asia/Tehran",
+   "city": "Sydney",
+   "tz": "Australia/Sydney",
    "world": true,
-   "w": "Hormuz",
-   "label": "Briton swims length of strait of Hormuz to highlight…",
-   "u": "https://www.theguardian.com/world/2026/nov/22/briton-lewis-pugh-swims-strait-of-hormuz-environment-war",
-   "title": "Briton swims length of strait of Hormuz to highlight environmental cost of war",
-   "outlet": "The Guardian",
-   "t": "Sun 8:36 a.m.",
-   "hot": false
+   "w": "Police",
+   "label": "Jacobs' foursome advances to final at GSOC National in…",
+   "u": "https://www.ctvnews.ca/calgary/article/jacobs-foursome-advances-to-final-at-gsoc-national-in-sydney/",
+   "title": "Jacobs' foursome advances to final at GSOC National in Sydney",
+   "outlet": "CTV News",
+   "t": "Sun 8:56 a.m.",
+   "hot": true
   },
   {
    "city": "Kyiv",
    "tz": "Europe/Kyiv",
    "world": true,
    "w": "Drone strikes",
-   "label": "15 people missing after Russian drone strike on Kyiv…",
-   "u": "https://www.euronews.com/2026/11/22/14-people-missing-after-russian-drone-strike-on-kyiv-region",
-   "title": "15 people missing after Russian drone strike on Kyiv region",
-   "outlet": "Euronews",
-   "t": "Sun 6:20 a.m.",
+   "label": "Russian attacks across Ukraine injure 30 over past day as…",
+   "u": "https://kyivindependent.com/russian-attacks-across-ukraine-injure-30-over-past-day-as-rescue-operation-continues-near-kyiv-after-drone-strike/",
+   "title": "Russian attacks across Ukraine injure 30 over past day as rescue operation continues near Kyiv after drone strike",
+   "outlet": "Kyiv Independent",
+   "t": "Sun 4:54 a.m.",
    "hot": false
   },
   {
@@ -2862,38 +3037,14 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Sun 9:23 a.m.",
-   "iso": "2026-11-22T14:23:49+00:00",
-   "title": "COP31 climate talks fail after EU and others reject final deal proposal",
-   "summary": "A new COP31 draft agreement had been published early on Sunday amid a row over fossil fuels, which have been a flashpoint at the talks.",
-   "outlet": "Euronews + CTV News + CP24 + Times Colonist + 1 more (CP), Times Colonist, NBC News, Middle East Eye, Euronews, The Japan Times",
-   "n": 6,
-   "url": "https://www.euronews.com/2026/11/22/cop31-climate-talks-fail-after-eu-and-others-reject-final-deal-proposal",
-   "img": "https://images.euronews.com/articles/stories/10/00/34/69/1200x675_cmsv2_46cbae24-c8ca-5789-947b-7639c5bcdb04-10003469.jpg"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
    "t": "Sun 9:05 a.m.",
    "iso": "2026-11-22T14:05:43+00:00",
    "title": "Ex-UK PM tells successor to ‘move on’ from Brexit",
    "summary": "Former British prime minister Theresa May said she was “aghast” her successor could be considering rejoining the European Union and urged him to “move on” from Brexit, in comments broadcast Sunday.",
-   "outlet": "CTV News + CP24 (CP), The Guardian, Toronto Star + Euronews (AP), Kyiv Independent, The Japan Times (Reuters), CBC News",
+   "outlet": "CTV News + CP24 (CP), The Guardian, Kyiv Independent, Toronto Star (AP), The Japan Times (Reuters), CBC News",
    "n": 6,
    "url": "https://www.ctvnews.ca/world/article/ex-uk-pm-tells-successor-to-move-on-from-brexit/",
    "img": "https://www.ctvnews.ca/resizer/v2/WAP4W4RHH62UQBFD54VG7BVQVI.jpg?smart=true&auth=8f6aab6cf16f6a77d12474b60e73d5b40a345eaf86f4ecf336b20e15ce1bad9d&width=1200&height=630"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Sun 8:36 a.m.",
-   "iso": "2026-11-22T13:36:01+00:00",
-   "title": "Briton swims length of strait of Hormuz to highlight environmental cost of war",
-   "summary": "UN patron Lewis Pugh saw ships ablaze and fighter jets overhead during three-day swim as Iran conflict continues",
-   "outlet": "The Guardian, Middle East Eye, Al Jazeera, Euronews, The Japan Times (AFP), CBS News",
-   "n": 6,
-   "url": "https://www.theguardian.com/world/2026/nov/22/briton-lewis-pugh-swims-strait-of-hormuz-environment-war",
-   "img": "https://i.guim.co.uk/img/media/7d1fe0b76a02fb1cbed49470fb53746f00e897fd/418_0_5000_4000/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=d6ba6f1ba978579eaac25368eafeacad"
   },
   {
    "desk": "world",
@@ -2922,26 +3073,26 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Sun 9:05 a.m.",
-   "iso": "2026-11-22T14:05:20+00:00",
-   "title": "Three killed and dozens missing after fire at Indonesian factory",
-   "summary": "At least three people were killed and many more feared dead after a fire at a confectionary factory.",
-   "outlet": "BBC News, Euronews, The Guardian, Toronto Star (AP)",
-   "n": 4,
-   "url": "https://www.bbc.co.uk/news/articles/cw8dvg5pgm0eo?at_medium=RSS&at_campaign=rss",
-   "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/0675/live/85d2f2e0-e62c-11f1-b2ea-350d14ed1ad7.jpg"
+   "t": "Sun 9:47 a.m.",
+   "iso": "2026-11-22T14:47:03+00:00",
+   "title": "Two dead following triple shooting overnight in Scarborough",
+   "summary": "",
+   "outlet": "Narcity + CTV News + CP24 (CP), CityNews, Toronto Star",
+   "n": 3,
+   "url": "https://www.narcity.com/toronto/two-dead-in-scarborough-triple-shooting",
+   "img": "https://www.narcity.com/media-library/two-dead-in-scarborough-triple-shooting.jpg?id=68744837&width=1200&height=600&coordinates=0%2C115%2C0%2C116"
   },
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Sun 7:51 a.m.",
-   "iso": "2026-11-22T12:51:09+00:00",
-   "title": "What to know about tear gas and reproductive health as people raise concerns in France",
-   "summary": "French activists and lawmakers are demanding after recent street protests that authorities suspend the use of tear gas to disperse crowds over concerns it’s caused menstrual changes and other reproductive health problems, though scientists have not confirmed a medical connection.",
-   "outlet": "CTV News + Toronto Star + CP24 (AP), Al Jazeera, The Japan Times (AFP), Euronews",
-   "n": 4,
-   "url": "https://www.ctvnews.ca/health/article/what-to-know-about-tear-gas-and-reproductive-health-as-people-raise-concerns-in-france/",
-   "img": "https://www.ctvnews.ca/resizer/v2/HM4Q4DB2QE2P4WRJCJVSCGNR6A.jpg?smart=true&auth=870c9a7fbdc1d8c657b2435cee0947b98fb4fd0f705ef2d26062bac9743cea68&width=1200&height=630"
+   "t": "Sun 9:23 a.m.",
+   "iso": "2026-11-22T14:23:15+00:00",
+   "title": "UN climate talks break down at COP31 with overarching agreement",
+   "summary": "Several countries and the 27-nation European Union said they couldn't accept the final proposal from the joint Turkish-Australia leadership that didn’t mention fossil fuels.",
+   "outlet": "Global News + CTV News + CP24 + Toronto Star + 2 more (CP), NBC News, The Japan Times (Reuters)",
+   "n": 3,
+   "url": "https://globalnews.ca/news/12161490/cop31-climate-talks-fail/",
+   "img": "https://globalnews.ca/wp-content/uploads/2026/11/COP31-climate-talks-fail.jpg?quality=65&strip=all&w=720&h=379&crop=1"
   },
   {
    "desk": "us",
@@ -2958,14 +3109,26 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Sun 7:15 a.m.",
-   "iso": "2026-11-22T12:15:16+00:00",
-   "title": "2 men killed, 1 injured in Scarborough triple shooting",
-   "summary": "Emergency crews were called to the area of Ellesmere and Brimley Roads just after 12:30 a.m. for reports of three men who were shot.",
-   "outlet": "CityNews, CTV News + CP24 (CP), Toronto Star",
+   "t": "Sun 8:36 a.m.",
+   "iso": "2026-11-22T13:36:01+00:00",
+   "title": "Briton swims length of strait of Hormuz to highlight environmental cost of war",
+   "summary": "UN patron Lewis Pugh saw ships ablaze and fighter jets overhead during three-day swim as Iran conflict continues",
+   "outlet": "The Guardian, The Japan Times (AFP), CBS News",
    "n": 3,
-   "url": "https://toronto.citynews.ca/2026/11/22/2-men-killed-1-injured-in-scarborough-triple-shooting/",
-   "img": "https://toronto.citynews.ca/wp-content/blogs.dir/sites/10/2026/11/22/IMG_2529-scaled.jpeg"
+   "url": "https://www.theguardian.com/world/2026/nov/22/briton-lewis-pugh-swims-strait-of-hormuz-environment-war",
+   "img": "https://i.guim.co.uk/img/media/7d1fe0b76a02fb1cbed49470fb53746f00e897fd/418_0_5000_4000/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=d6ba6f1ba978579eaac25368eafeacad"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Sun 7:51 a.m.",
+   "iso": "2026-11-22T12:51:09+00:00",
+   "title": "What to know about tear gas and reproductive health as people raise concerns in France",
+   "summary": "French activists and lawmakers are demanding after recent street protests that authorities suspend the use of tear gas to disperse crowds over concerns it’s caused menstrual changes and other reproductive health problems, though scientists have not confirmed a medical connection.",
+   "outlet": "CTV News + Toronto Star + CP24 (AP), Al Jazeera, The Japan Times (AFP)",
+   "n": 3,
+   "url": "https://www.ctvnews.ca/health/article/what-to-know-about-tear-gas-and-reproductive-health-as-people-raise-concerns-in-france/",
+   "img": "https://www.ctvnews.ca/resizer/v2/HM4Q4DB2QE2P4WRJCJVSCGNR6A.jpg?smart=true&auth=870c9a7fbdc1d8c657b2435cee0947b98fb4fd0f705ef2d26062bac9743cea68&width=1200&height=630"
   },
   {
    "desk": "us",
@@ -2980,18 +3143,6 @@
    "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/4/c0/4c0a05fb-ae8b-532d-b51f-c83a6f24c285/6b02cc5fe2403.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
   },
   {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Sun 2:12 a.m.",
-   "iso": "2026-11-22T07:12:41+00:00",
-   "title": "Italian jeweller and businessman Paolo Bulgari dies aged 89",
-   "summary": "In a statement to Italian media, his family remember him as \"the greatest jeweller of our time\".",
-   "outlet": "BBC News, Toronto Star + CityNews + CTV News + BNN Bloomberg, Euronews",
-   "n": 3,
-   "url": "https://www.bbc.co.uk/news/articles/c8e39qk5vrpdo?at_medium=RSS&at_campaign=rss",
-   "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/11c4/live/b30a2e00-e635-11f1-bcaa-b74b42067918.jpg"
-  },
-  {
    "desk": "politics",
    "pic": "parliament",
    "t": "Sat 8:52 p.m.",
@@ -3002,6 +3153,18 @@
    "n": 3,
    "url": "https://www.ctvnews.ca/regina/article/conference-designed-to-launch-christian-education-initiatives-held-at-regina-victory-church/",
    "img": "https://www.ctvnews.ca/resizer/v2/R7R4V5U6XVCQBLM7LA4EXDPG5E.jpg?smart=true&auth=87db4f0e7a6d709d6e0f5486ad7fcfea85b077163e51c16b5c20b48f5c705a44&width=1200&height=630"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Sun 8:56 a.m.",
+   "iso": "2026-11-22T13:56:36+00:00",
+   "title": "Jacobs' foursome advances to final at GSOC National in Sydney",
+   "summary": "Brad Jacobs and his Calgary squad scored a deuce in the sixth end and stole two more in the seventh en route to a 7-3 victory over Oskar Eriksson of Sweden in the men’s semifinals of the Grand Slam of Curling National event on Saturday night.",
+   "outlet": "CTV News + Toronto Star (CP), The Guardian",
+   "n": 2,
+   "url": "https://www.ctvnews.ca/calgary/article/jacobs-foursome-advances-to-final-at-gsoc-national-in-sydney/",
+   "img": "https://www.ctvnews.ca/resizer/v2/UCTFEDTQWYHXKYST35WN4DURVE.jpg?smart=true&auth=ad331ba82b7356585f9476f18458b48453ca176976c57d24be3e6195d04d6304&width=1200&height=630"
   },
   {
    "desk": "politics",
@@ -3016,16 +3179,16 @@
    "img": "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/900/files/2026/11/vape-flavoured-vapes-vapour-tobacco.jpg"
   },
   {
-   "desk": "us",
-   "pic": "podium",
-   "t": "Sun 3:56 a.m.",
-   "iso": "2026-11-22T08:56:19+00:00",
-   "title": "Reported FBI hack 'not good' but could have benefits, Trump says",
-   "summary": "The reported breach comes amid a wave of tech outages in the US, which have impacted travel, communications and banking, as well as an internal system used by the National Security Agency.",
-   "outlet": "Euronews (AP), The Hill",
+   "desk": "world",
+   "pic": "globe",
+   "t": "Sun 2:12 a.m.",
+   "iso": "2026-11-22T07:12:41+00:00",
+   "title": "Italian jeweller and businessman Paolo Bulgari dies aged 89",
+   "summary": "In a statement to Italian media, his family remember him as \"the greatest jeweller of our time\".",
+   "outlet": "BBC News, Toronto Star + CityNews + CTV News + BNN Bloomberg",
    "n": 2,
-   "url": "https://www.euronews.com/2026/11/22/reported-fbi-hack-not-good-but-could-have-benefits-trump-says",
-   "img": "https://images.euronews.com/articles/stories/10/00/32/02/1200x675_cmsv2_77ec09af-1d4b-5b7b-942d-44534911dff7-10003202.jpg"
+   "url": "https://www.bbc.co.uk/news/articles/c8e39qk5vrpdo?at_medium=RSS&at_campaign=rss",
+   "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/11c4/live/b30a2e00-e635-11f1-bcaa-b74b42067918.jpg"
   },
   {
    "desk": "politics",
@@ -3058,7 +3221,7 @@
    "iso": "2026-11-22T00:10:44+00:00",
    "title": "FBI reportedly investigating apparent hack of its criminal database",
    "summary": "The National Crime Information Center database is used by federal and local law enforcement to share information.",
-   "outlet": "BBC News, Global News + CTV News + CP24 (AP)",
+   "outlet": "BBC News, Global News + CP24 (AP)",
    "n": 2,
    "url": "https://www.bbc.co.uk/news/articles/cvze7de86pk3o?at_medium=RSS&at_campaign=rss",
    "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/3fd7/live/9009b220-e58d-11f1-99a1-253766e7ad8b.jpg"
@@ -3102,6 +3265,18 @@
   {
    "desk": "business",
    "pic": "chart",
+   "t": "Sun 9:41 a.m.",
+   "iso": "2026-11-22T14:41:39+00:00",
+   "title": "Shane Beamer shares bizarre explanation as to why LaNorris Sellers didn't walk for South Carolina senior night",
+   "summary": "Shane Beamer kept LaNorris Sellers out of senior night, then admitted he didn't know how the South Carolina quarterback was listed on the roster.",
+   "outlet": "Fox News",
+   "n": 1,
+   "url": "https://www.foxnews.com/outkick-sports/shane-beamer-shares-bizarre-explanation-lanorris-sellers-didnt-walk-south-carolina-senior-night",
+   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/shane-beamer-reacts-texas-aggies.jpg"
+  },
+  {
+   "desk": "business",
+   "pic": "chart",
    "t": "Sun 9:16 a.m.",
    "iso": "2026-11-22T14:16:43+00:00",
    "title": "Taking on credit card debt to buy food",
@@ -3110,6 +3285,18 @@
    "n": 1,
    "url": "https://www.cbsnews.com/news/taking-on-credit-card-debt-to-buy-food/",
    "img": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/11/21/45c9ee34-42e2-48fc-9703-2c5d065836f9/thumbnail/1200x630/5900ca5fe214c02c1d7829bbceaed4b5/supermarket-checkout-1280.jpg"
+  },
+  {
+   "desk": "us",
+   "pic": "podium",
+   "t": "Sun 8:49 a.m.",
+   "iso": "2026-11-22T13:49:58+00:00",
+   "title": "Miley Cyrus weds drummer Maxx Morando in California – reports",
+   "summary": "Grammy-winning pop star and Morando reportedly tied the knot ⁠at a private ceremony in Palm ​Springs",
+   "outlet": "The Guardian",
+   "n": 1,
+   "url": "https://www.theguardian.com/music/2026/nov/22/miley-cyrus-maxx-morando-wedding",
+   "img": "https://i.guim.co.uk/img/media/2a2f0114783b1c2301b4cf2144c92a520f67e4e2/235_0_5000_4000/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=619ba0c5334c8ed058cfb9dad4e45c25"
   },
   {
    "desk": "business",
@@ -3170,18 +3357,6 @@
    "n": 1,
    "url": "https://www.ctvnews.ca/canada/article/can-a-drone-really-replace-a-million-dollar-farm-sprayer-in-canada/",
    "img": "https://www.ctvnews.ca/resizer/v2/P7TWBB7WM5GGDN2KGCCZZDHYSM.JPG?smart=true&auth=b31fc02b64968f57ebe056731db4ea93ed0c8a19f75a6b756bd8604a9efc973f&width=1200&height=630"
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Sat 10:18 p.m.",
-   "iso": "2026-11-22T03:18:23+00:00",
-   "title": "Turkish foreign minister says Iran war fallout threatening global markets",
-   "summary": "",
-   "outlet": "Middle East Eye",
-   "n": 1,
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/turkish-foreign-minister-says-iran-war-fallout-threatening-global",
-   "img": "https://www.middleeasteye.net/sites/default/files/images-story/iran-irgc-rocket-hormuz-february-2026-sepah-news-afp.jpg"
   },
   {
    "desk": "politics",
@@ -3350,17 +3525,17 @@
     "Early test results for U.S. drug ‘one of the biggest breakthroughs’ for cancer, says Canadian oncologist",
     "U.S. senator says Hegseth memo does not change military co-operation with Canada",
     "Chinese investment in Canada’s auto sector to evolve over next year: federal government",
-    "Canadian provinces looking further afield to fix family doctor shortage",
     "China slams ‘malicious’ U.S. ban on telecom firms’ phone number access",
-    "Ex-UK PM tells successor to ‘move on’ from Brexit"
+    "Ex-U.K. PM tells successor to ‘move on’ from Brexit",
+    "What to know about tear gas and reproductive health as people raise concerns in France"
    ],
    "u": [
-    "https://www.ctvnews.ca/health/article/early-test-results-for-us-drug-biggest-breakthrough-for-pancreatic-cancer-says-canadian-oncologist/",
+    "https://www.ctvnews.ca/health/article/early-test-results-for-us-drug-one-of-the-biggest-breakthroughs-for-cancer-says-canadian-oncologist/",
     "https://www.ctvnews.ca/canada/article/us-senator-says-hegseth-memo-does-not-change-military-co-operation-with-canada/",
-    "https://www.ctvnews.ca/politics/article/chinese-investment-in-canadas-auto-sector-will-play-out-over-the-next-year-federal-government/",
-    "https://www.ctvnews.ca/canada/article/provinces-look-overseas-for-doctors-as-new-wave-of-federal-health-care-spending-hits/",
+    "https://www.ctvnews.ca/politics/article/chinese-investment-in-canadas-auto-sector-to-evolve-over-next-year-federal-government/",
     "https://www.ctvnews.ca/world/article/china-slams-malicious-us-ban-on-telecom-firms-phone-number-access/",
-    "https://www.ctvnews.ca/world/article/ex-uk-pm-tells-successor-to-move-on-from-brexit/"
+    "https://www.ctvnews.ca/world/article/ex-uk-pm-tells-successor-to-move-on-from-brexit/",
+    "https://www.ctvnews.ca/health/article/what-to-know-about-tear-gas-and-reproductive-health-as-people-raise-concerns-in-france/"
    ]
   },
   {
@@ -3460,7 +3635,7 @@
     "https://www.cp24.com/local/toronto/2026/11/22/man-rushed-to-hospital-after-stabbing-in-downtown-toronto-suspect-arrested/",
     "https://www.cp24.com/news/sports/2026/11/22/we-should-be-embarrassed-leafs-squander-another-lead-winless-run-extends-to-nine/",
     "https://www.cp24.com/local/toronto/2026/11/21/santa-claus-is-coming-to-town-this-weekend-what-to-know-about-road-and-transit-closures/",
-    "https://www.cp24.com/news/canada/2026/11/22/early-test-results-for-us-drug-biggest-breakthrough-for-pancreatic-cancer-says-canadian-oncologist/"
+    "https://www.cp24.com/news/canada/2026/11/22/early-test-results-for-us-drug-one-of-the-biggest-breakthroughs-for-cancer-says-canadian-oncologist/"
    ]
   },
   {
@@ -3559,15 +3734,15 @@
    "h": [
     "COP31 climate talks fail to agree deal as EU and others reject draft over fossil fuels row",
     "Russia-bound ship still on fire after attack in Gulf of Finland",
-    "Miley Cyrus marries Maxx Morando in California ceremony",
+    "Hamilton-Leclerc collision completely unacceptable, says Ferrari boss",
     "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out",
-    "South Korea education minister resigns over exam cheating scandal",
-    "Former UK PM May 'aghast' at Burnham's EU plans and says 'Brexit is done'"
+    "Former UK PM May 'aghast' at Burnham's EU plans and says 'Brexit is done'",
+    "South Korea education minister resigns over exam cheating scandal"
    ],
    "u": [
     "https://www.bbc.com/news/live/crly5w901n20t",
     "",
-    "https://www.bbc.com/news/articles/cq8e0p87l89lo",
+    "https://www.bbc.com/sport/formula1/articles/c6j9mepj0j1go",
     "https://www.bbc.com/news/articles/ckz749ey0r75o",
     "",
     ""
@@ -3623,7 +3798,7 @@
     "url": "https://www.youtube.com/watch?v=wcY4K5CNVx4",
     "img": "https://i.ytimg.com/vi/wcY4K5CNVx4/hqdefault.jpg",
     "story": "Fox News' All-American Christmas tree",
-    "watching": "112"
+    "watching": "118"
    },
    {
     "net": "Bloomberg",
@@ -3632,7 +3807,7 @@
     "url": "https://www.youtube.com/watch?v=emyNoh1bWz0",
     "img": "https://i.ytimg.com/vi/emyNoh1bWz0/hqdefault.jpg",
     "story": "AI-Led Selloff Fears, Russia Hits Ukrainian Energy Facilities",
-    "watching": "409"
+    "watching": "379"
    },
    {
     "net": "LiveNOW from FOX",
@@ -3641,7 +3816,7 @@
     "url": "https://www.youtube.com/watch?v=9ZvbYvsufDE",
     "img": "https://i.ytimg.com/vi/9ZvbYvsufDE/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "551",
+    "watching": "572",
     "rolling": true
    },
    {
@@ -3651,15 +3826,8 @@
     "url": "https://www.youtube.com/watch?v=tP8etKB7IIk",
     "img": "https://i.ytimg.com/vi/tP8etKB7IIk/hqdefault.jpg",
     "story": "COP31 climate talks collapse after deal rejected",
-    "watching": "203",
+    "watching": "194",
     "reports": [
-     {
-      "outlet": "Euronews",
-      "title": "COP31 climate talks fail after EU and others reject final deal proposal",
-      "url": "https://www.euronews.com/2026/11/22/cop31-climate-talks-fail-after-eu-and-others-reject-final-deal-proposal",
-      "t": "Sun 9:23 a.m.",
-      "iso": "2026-11-22T14:23:49+00:00"
-     },
      {
       "outlet": "Global News",
       "title": "UN climate talks break down at COP31 with overarching agreement",
@@ -3680,13 +3848,6 @@
       "url": "https://www.theguardian.com/environment/2026/nov/22/cop31-climate-talks-set-to-end-in-deep-division-as-key-deal-rejected",
       "t": "Sun 7:54 a.m.",
       "iso": "2026-11-22T12:54:41+00:00"
-     },
-     {
-      "outlet": "Middle East Eye",
-      "title": "Cop31 ends in failure as countries reject climate deal over fossil fuels",
-      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/cop31-ends-failure-countries-reject-climate-deal-over-fossil-fuels",
-      "t": "Sun 7:51 a.m.",
-      "iso": "2026-11-22T12:51:37+00:00"
      },
      {
       "outlet": "CTV News",
@@ -3759,15 +3920,6 @@
  "pm": [],
  "blogs_auto": [
   {
-   "net": "Middle East Eye",
-   "story": "Israel: Eisenkot and Netanyahu parties meet again for unity government",
-   "title": "Israel: Eisenkot and Netanyahu parties meet again for unity government talks",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-eisenkot-and-netanyahu-parties-meet-again-unity-government-talks",
-   "updated": "2026-11-22T14:19:24+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/images-story/iran-irgc-rocket-hormuz-february-2026-sepah-news-afp.jpg"
-  },
-  {
    "net": "The Hill",
    "story": "Live updates: Congress heads home for Thanksgiving, leadership fight r",
    "title": "Live updates: Congress heads home for Thanksgiving, leadership fight ramps up",
@@ -3775,33 +3927,6 @@
    "updated": "2026-11-22T13:51:37+00:00",
    "ended": false,
    "img": ""
-  },
-  {
-   "net": "Middle East Eye",
-   "story": "Saudi Arabia, Qatar join condemnation of Iran attack on Bahrain",
-   "title": "Saudi Arabia, Qatar join condemnation of Iran attack on Bahrain",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-qatar-join-condemnation-iran-attack-bahrain",
-   "updated": "2026-11-22T13:27:42+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/images-story/iran-irgc-rocket-hormuz-february-2026-sepah-news-afp.jpg"
-  },
-  {
-   "net": "Middle East Eye",
-   "story": "Cop31 ends in failure as countries reject climate deal over fossil fue",
-   "title": "Cop31 ends in failure as countries reject climate deal over fossil fuels",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/cop31-ends-failure-countries-reject-climate-deal-over-fossil-fuels",
-   "updated": "2026-11-22T12:51:37+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/images-story/iran-irgc-rocket-hormuz-february-2026-sepah-news-afp.jpg"
-  },
-  {
-   "net": "Middle East Eye",
-   "story": "'Jewish terrorism in every sense': Eisenkot blames Smotrich and Ben Gv",
-   "title": "'Jewish terrorism in every sense': Eisenkot blames Smotrich and Ben Gvir for settler attacks",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/jewish-terrorism-every-sense-eisenkot-blames-smotrich-and-ben-gvir",
-   "updated": "2026-11-22T12:45:01+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/images-story/iran-irgc-rocket-hormuz-february-2026-sepah-news-afp.jpg"
   }
  ],
  "related": {
