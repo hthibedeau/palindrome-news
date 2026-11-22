@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-22T10:27:39.873043+00:00",
- "checkedLabel": "Sun 5:27 a.m.",
+ "checked": "2026-11-22T10:37:40.003567+00:00",
+ "checkedLabel": "Sun 5:37 a.m.",
  "stories": [
   {
    "key": "top",
@@ -31,12 +31,12 @@
  ],
  "wire": [
   [
-   "Sun 5:10 a.m.",
+   "Sun 5:27 a.m.",
    "Politics",
    "Burnham should ‘move on’ from Brexit, says Theresa May, as critics hit out over closer EU ties – UK politics live",
    "The Guardian",
    "https://www.theguardian.com/politics/live/2026/nov/22/andy-burnham-brexit-theresa-may-michael-gove-latest-news-updates",
-   "2026-11-22T10:10:39+00:00",
+   "2026-11-22T10:27:32+00:00",
    1
   ],
   [
@@ -257,11 +257,11 @@
     "National Newswatch #3",
     "National Newswatch #4",
     "National Newswatch #7",
-    "National Newswatch #14",
+    "National Newswatch #15",
     "National Newswatch #11",
     "National Newswatch #12",
-    "National Newswatch #15",
-    "National Newswatch #17"
+    "National Newswatch #16",
+    "National Newswatch #18"
    ],
    "theme": "Canada and the U.S."
   },
@@ -292,10 +292,10 @@
    "theme": ""
   },
   {
-   "score": 12,
+   "score": 10,
    "title": "Will Canadian workers refuse to handle Israeli goods? Why unions increasingly say they should",
    "url": "https://www.cbc.ca/news/canada/clc-resolution-canadian-unions-israel-9.7428991",
-   "outlets": 7,
+   "outlets": 5,
    "why": [
     "CBC News front #3"
    ],
@@ -340,13 +340,10 @@
   },
   {
    "score": 7,
-   "title": "Hegseth reportedly moves to restrict defence ties with Canada, but Ottawa sees no change",
-   "url": "https://www.cbc.ca/news/politics/canada-us-pentagon-restrictions-hegseth-9.7431302",
-   "outlets": 1,
-   "why": [
-    "National Newswatch #5",
-    "CBC News front #6"
-   ],
+   "title": "Wash. officials condemn ICE after 2 arrested boarding flight at Seattle airport",
+   "url": "https://abcnews.com/US/washington-state-officials-condemn-ice-after-2-arrested/story?id=138349974",
+   "outlets": 7,
+   "why": [],
    "theme": ""
   }
  ],
@@ -759,26 +756,26 @@
       "up": ""
      },
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=8tZq2Lp1nOM",
-      "title": "Ontario Liberals select Navdeep Bains as new party leader",
-      "img": "https://i.ytimg.com/vi/8tZq2Lp1nOM/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CTV News",
-      "url": "https://www.youtube.com/watch?v=9oQLhkwOxYs",
+      "net": "CP24",
+      "url": "https://www.youtube.com/watch?v=mC3_LM6s1ic",
       "title": "Navdeep Bains elected as new Ontario Liberal leader | CTV News Toronto at Six for Nov. 21, 2026",
-      "img": "https://i.ytimg.com/vi/9oQLhkwOxYs/hqdefault.jpg",
+      "img": "https://i.ytimg.com/vi/mC3_LM6s1ic/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
       "net": "CP24",
-      "url": "https://www.youtube.com/watch?v=mC3_LM6s1ic",
-      "title": "Navdeep Bains elected as new Ontario Liberal leader | CTV News Toronto at Six for Nov. 21, 2026",
-      "img": "https://i.ytimg.com/vi/mC3_LM6s1ic/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=GkuIL-oedxQ",
+      "title": "Navdeep Bains wins Ontario Liberal leadership vote by one per cent",
+      "img": "https://i.ytimg.com/vi/GkuIL-oedxQ/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CP24",
+      "url": "https://www.youtube.com/watch?v=arcfej6UG5M",
+      "title": "Navdeep Bains delivers speech after winning Ontario Liberal leadership race",
+      "img": "https://i.ytimg.com/vi/arcfej6UG5M/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1034,9 +1031,28 @@
     "why_judged": "National: affects many people; carried across the country (national desks)."
    },
    {
+    "title": "Canada, U.S. leaders respond to Pentagon memo report",
+    "url": "https://www.ctvnews.ca/politics/article/canada-us-leaders-respond-to-pentagon-memo-report/",
+    "rank": 3,
+    "live": "",
+    "weight": 23.5,
+    "score": 6,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "canadian",
+    "theme": "",
+    "top": false,
+    "fronts": 0,
+    "fronts_who": [],
+    "rule": "Canadian, older",
+    "carriers": 5,
+    "judgment": "national",
+    "why_judged": "National: affects some people; carried across the country (national desks)."
+   },
+   {
     "title": "Wash. officials condemn ICE after 2 arrested boarding flight at Seattle airport",
     "url": "https://abcnews.com/US/washington-state-officials-condemn-ice-after-2-arrested/story?id=138349974",
-    "rank": 3,
+    "rank": 4,
     "live": "",
     "weight": 22.5,
     "score": 7,
@@ -1059,7 +1075,7 @@
    {
     "title": "Mexico captures top drug lord ‘El Chapo Isidro,’ latest in string of arrests",
     "url": "https://www.japantimes.co.jp/news/2026/11/22/world/crime-legal/mexico-captures-el-chapo-isidro/",
-    "rank": 4,
+    "rank": 5,
     "live": "",
     "weight": 22.0,
     "score": 14,
@@ -1081,7 +1097,7 @@
    {
     "title": "Italian jeweller and businessman Paolo Bulgari dies aged 89",
     "url": "https://www.bbc.co.uk/news/articles/c8e39qk5vrpdo?at_medium=RSS&at_campaign=rss",
-    "rank": 5,
+    "rank": 6,
     "live": "",
     "weight": 20.0,
     "score": 6,
@@ -1098,34 +1114,13 @@
     "why_judged": "National: affects some people; carried across the country (national desks)."
    },
    {
-    "title": "Tracking site says Iranian tanker reportedly sailing through Strait of Hormuz does not exist",
-    "url": "https://www.euronews.com/2026/11/22/tracking-site-says-iranian-tanker-reportedly-sailing-through-strait-of-hormuz-does-not-exi",
-    "rank": 6,
-    "live": "",
-    "weight": 16.5,
-    "score": 6,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 1,
-    "fronts_who": [
-     "BNN Bloomberg"
-    ],
-    "rule": "No Canadian tie",
-    "carriers": 3,
-    "judgment": "regional",
-    "why_judged": "Regional: affects some people; carried by a few newsrooms."
-   },
-   {
     "title": "Will Canadian workers refuse to handle Israeli goods? Why unions increasingly say they should",
     "url": "https://www.cbc.ca/news/canada/clc-resolution-canadian-unions-israel-9.7428991",
     "rank": 7,
     "live": "",
-    "weight": 38.5,
-    "score": 12,
-    "independent": 5,
+    "weight": 35.0,
+    "score": 10,
+    "independent": 4,
     "most_read": 0,
     "canada": "canadian",
     "theme": "",
@@ -1135,9 +1130,9 @@
      "NBC News"
     ],
     "rule": "Canadian, still developing",
-    "carriers": 5,
+    "carriers": 4,
     "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (national desks)."
+    "why_judged": "National: affects some people; carried across the country (national desks)."
    },
    {
     "title": "14 feared trapped after Russian drone hits apartment building near Kyiv, injuring 2",
@@ -1182,7 +1177,7 @@
    },
    {
     "title": "Hegseth reportedly moves to restrict defence ties with Canada, but Ottawa sees no change",
-    "score": 7,
+    "score": 6,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
@@ -1205,14 +1200,215 @@
   "top_n": 2,
   "more": [
    {
+    "key": "auto-f885f355",
+    "words": [
+     "pentagon"
+    ],
+    "score": 6,
+    "outlets": 3,
+    "carriers": 5,
+    "tag": "Developing",
+    "title": "Canada, U.S. leaders respond to Pentagon memo report",
+    "url": "https://www.ctvnews.ca/politics/article/canada-us-leaders-respond-to-pentagon-memo-report/",
+    "outlet": "CTV News",
+    "t": "Sat 8:48 p.m.",
+    "iso": "2026-11-22T01:48:52+00:00",
+    "summary": "Responding to a report that U.S. Defence Secretary Pete Hegseth issued a classified memo imposing new restrictions on his country’s military co-operation with Canada, Canadian Defence Minister David McGuinty said he is in the dark about its contents.",
+    "first": {
+     "outlet": "CBS News",
+     "url": "https://www.cbsnews.com/news/pentagon-troops-killed-iran-port-shuaiba-kuwait-families/",
+     "t": "Sat 12:02 p.m.",
+     "title": "Families frustrated with Pentagon probe of deadly drone strike",
+     "iso": "2026-11-21T17:02:37+00:00"
+    },
+    "newest": "2026-11-22T01:48:52+00:00",
+    "photo": {
+     "src": "live/img/auto-f885f355-6bfbb6eee1.jpg",
+     "orig": "https://www.ctvnews.ca/resizer/v2/RP6NU4BMIJFOVFX4MXLESIBU4I.jpeg?smart=true&auth=c9b9bbebf9a40ae69518530daa67cf13252c93adb73f5cbfea1e1a52b5c43901&width=1200&height=630",
+     "caption": "Defence Minister David McGuinty addresses media at the Halifax International Security Forum on Saturday, Nov. 21, 2026. — via CTV News",
+     "alt": "Defence Minister David McGuinty addresses media at the Halifax International Security Forum on Saturday, Nov. 21, 2026.",
+     "outlet": "CTV News",
+     "url": "https://www.ctvnews.ca/politics/article/canada-us-leaders-respond-to-pentagon-memo-report/",
+     "since": "2026-11-22T10:38:41.775259+00:00"
+    },
+    "photo_seen": [
+     "https://www.ctvnews.ca/resizer/v2/RP6NU4BMIJFOVFX4MXLESIBU4I.jpeg?smart=true&auth=c9b9bbebf9a40ae69518530daa67cf13252c93adb73f5cbfea1e1a52b5c43901&width=1200&height=630"
+    ],
+    "photos": [
+     {
+      "src": "live/img/auto-f885f355-6bfbb6eee1.jpg",
+      "orig": "https://www.ctvnews.ca/resizer/v2/RP6NU4BMIJFOVFX4MXLESIBU4I.jpeg?smart=true&auth=c9b9bbebf9a40ae69518530daa67cf13252c93adb73f5cbfea1e1a52b5c43901&width=1200&height=630",
+      "caption": "Defence Minister David McGuinty addresses media at the Halifax International Security Forum on Saturday, Nov. 21, 2026. — via CTV News",
+      "alt": "Defence Minister David McGuinty addresses media at the Halifax International Security Forum on Saturday, Nov. 21, 2026.",
+      "outlet": "CTV News",
+      "url": "https://www.ctvnews.ca/politics/article/canada-us-leaders-respond-to-pentagon-memo-report/"
+     },
+     {
+      "src": "live/img/auto-f885f355-074e633e04.jpg",
+      "orig": "https://i.cbc.ca/ais/fcca9324-dee8-4760-8be9-f53eff323fa8,1795308264609/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1920%2C1080%29%3B",
+      "caption": "From: 'Business as usual' between Canada and U.S., McGuinty says following Pentagon restrictions report. — via CBC News",
+      "alt": "'Business as usual' between Canada and U.S., McGuinty says following Pentagon restrictions report",
+      "outlet": "CBC News",
+      "url": "https://www.cbc.ca/player/play/video/9.7431596"
+     },
+     {
+      "src": "live/img/auto-f885f355-17d1cb66b3.jpg",
+      "orig": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/04/08/f7e9b198-2ed5-435f-951f-a0bae1880da0/thumbnail/1200x630g6/fa64da75c788d35dadf1e52dd585a875/img-0213.jpg",
+      "caption": "From: Families frustrated with Pentagon probe of deadly drone strike. — via CBS News",
+      "alt": "Families frustrated with Pentagon probe of deadly drone strike",
+      "outlet": "CBS News",
+      "url": "https://www.cbsnews.com/news/pentagon-troops-killed-iran-port-shuaiba-kuwait-families/"
+     }
+    ],
+    "independent": 3,
+    "reports": [
+     {
+      "t": "Sat 8:48 p.m.",
+      "iso": "2026-11-22T01:48:52+00:00",
+      "outlet": "CTV News",
+      "title": "Canada, U.S. leaders respond to Pentagon memo report",
+      "url": "https://www.ctvnews.ca/politics/article/canada-us-leaders-respond-to-pentagon-memo-report/",
+      "desc": "Responding to a report that U.S. Defence Secretary Pete Hegseth issued a classified memo imposing new restrictions on his country’s military co-operation with Canada, Canadian Defence Minister David McGuinty said he is in the dark about its contents."
+     },
+     {
+      "t": "Sat 8:48 p.m.",
+      "iso": "2026-11-22T01:48:52+00:00",
+      "outlet": "CP24",
+      "title": "Canada, U.S. leaders respond to Pentagon memo report",
+      "url": "https://www.cp24.com/news/canada/2026/11/22/canada-us-leaders-respond-to-pentagon-memo-report/",
+      "desc": ""
+     },
+     {
+      "t": "Sat 8:48 p.m.",
+      "iso": "2026-11-22T01:48:52+00:00",
+      "outlet": "BNN Bloomberg",
+      "title": "Canada, U.S. leaders respond to Pentagon memo report",
+      "url": "https://www.bnnbloomberg.ca/business/politics/2026/11/22/canada-us-leaders-respond-to-pentagon-memo-report/",
+      "desc": ""
+     },
+     {
+      "t": "Sat 8:11 p.m.",
+      "iso": "2026-11-22T01:11:18.542000+00:00",
+      "outlet": "CBC News",
+      "title": "'Business as usual' between Canada and U.S., McGuinty says following Pentagon restrictions report",
+      "url": "https://www.cbc.ca/player/play/video/9.7431596",
+      "desc": "In an interview with CBC News chief correspondent Adrienne Arsenault, Defence Minister David McGuinty responded to a Washington Post report that U.S. Secretary of War Pete Hegseth has issued a classified directive restricting military co-operation between the U.S. and Canada. McGuinty declined to…",
+      "exclusive": true
+     },
+     {
+      "t": "Sat 12:02 p.m.",
+      "iso": "2026-11-21T17:02:37+00:00",
+      "outlet": "CBS News",
+      "title": "Families frustrated with Pentagon probe of deadly drone strike",
+      "url": "https://www.cbsnews.com/news/pentagon-troops-killed-iran-port-shuaiba-kuwait-families/",
+      "desc": "The Pentagon is preparing to release findings of its investigation into the attack that killed six U.S. soldiers in Kuwait early in the Iran war."
+     }
+    ],
+    "sources": [
+     {
+      "t": "Sat 8:48 p.m.",
+      "primary": false,
+      "outlet": "CTV News",
+      "title": "Canada, U.S. leaders respond to Pentagon memo report",
+      "url": "https://www.ctvnews.ca/politics/article/canada-us-leaders-respond-to-pentagon-memo-report/",
+      "desc": "Responding to a report that U.S. Defence Secretary Pete Hegseth issued a classified memo imposing new restrictions on his country’s military co-operation with Canada, Canadian Defence Minister David McGuinty said he is in the dark about its contents.",
+      "wire": "The Canadian Press",
+      "by": [
+       {
+        "outlet": "CTV News",
+        "src": "The Canadian Press",
+        "byline": "e Huot\" \"Avery MacRae\" \"Harrison Shin\" \"The Canadian Press\" \"Caitlin Brezinski"
+       },
+       {
+        "outlet": "CP24",
+        "src": "The Canadian Press",
+        "byline": "[ { \"@type\": \"Person\", \"name\": \"Paul Hollingsworth\", } ] \"Paul Hollingsworth\" \"Paul Hollingsworth\" \"\" \"\" \"\" \"\" \"\" \"\" \"\" "
+       },
+       {
+        "outlet": "BNN Bloomberg",
+        "src": "The Canadian Press",
+        "byline": "[ { \"@type\": \"Person\", \"name\": \"Paul Hollingsworth\", } ] \"Paul Hollingsworth\" \"Paul Hollingsworth\" \"\" \"\" \"\" \"\" \"\" \"\" \"\" "
+       }
+      ],
+      "copies": [
+       {
+        "outlet": "CP24",
+        "url": "https://www.cp24.com/news/canada/2026/11/22/canada-us-leaders-respond-to-pentagon-memo-report/"
+       },
+       {
+        "outlet": "BNN Bloomberg",
+        "url": "https://www.bnnbloomberg.ca/business/politics/2026/11/22/canada-us-leaders-respond-to-pentagon-memo-report/"
+       }
+      ]
+     },
+     {
+      "t": "Sat 8:11 p.m.",
+      "primary": false,
+      "outlet": "CBC News",
+      "title": "'Business as usual' between Canada and U.S., McGuinty says following Pentagon restrictions report",
+      "url": "https://www.cbc.ca/player/play/video/9.7431596",
+      "desc": "In an interview with CBC News chief correspondent Adrienne Arsenault, Defence Minister David McGuinty responded to a Washington Post report that U.S. Secretary of War Pete Hegseth has issued a classified directive restricting military co-operation between the U.S. and Canada. McGuinty declined to…",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "CBC News",
+        "src": "CBC",
+        "byline": "{\"profile\":{\"title\":\"\",\"name\":\"\",\"biography\":\"\",\"sourceId\":\"\",,\"links\":null,\"photoURL\":\"\"},\"recentContent\":{}} \"\" "
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Sat 12:02 p.m.",
+      "primary": false,
+      "outlet": "CBS News",
+      "title": "Families frustrated with Pentagon probe of deadly drone strike",
+      "url": "https://www.cbsnews.com/news/pentagon-troops-killed-iran-port-shuaiba-kuwait-families/",
+      "desc": "The Pentagon is preparing to release findings of its investigation into the attack that killed six U.S. soldiers in Kuwait early in the Iran war.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "CBS News",
+        "src": "CBS News",
+        "byline": "own staff: correspondent"
+       }
+      ],
+      "copies": []
+     }
+    ],
+    "replaces_top": false,
+    "events": [],
+    "theme": "",
+    "canada": "canadian",
+    "canus": true,
+    "incoherent": false,
+    "popular": 0,
+    "us_election": false,
+    "fronts": 0,
+    "fronts_ca": 0,
+    "fronts_who": [],
+    "judgment": "national",
+    "judgment_why": "National: affects some people; carried across the country (national desks).",
+    "weight": 23.5,
+    "exclusive": {
+     "outlet": "CBC News",
+     "url": "https://www.cbc.ca/player/play/video/9.7431596",
+     "title": "'Business as usual' between Canada and U.S., McGuinty says following Pentagon restrictions report",
+     "t": "Sat 8:11 p.m.",
+     "iso": "2026-11-22T01:11:18.542000+00:00",
+     "confirmed_by": []
+    },
+    "scoop_outlet": "CBC News",
+    "scoop_why": "Exclusive credit kept: CBC News broke this story (Sat 8:11 p.m.)."
+   },
+   {
     "key": "auto-392d3b61",
     "words": [
-     "palestinians",
      "israeli"
     ],
-    "score": 12,
-    "outlets": 5,
-    "carriers": 5,
+    "score": 10,
+    "outlets": 4,
+    "carriers": 4,
     "tag": "Developing",
     "title": "Will Canadian workers refuse to handle Israeli goods? Why unions increasingly say they should",
     "url": "https://www.cbc.ca/news/canada/clc-resolution-canadian-unions-israel-9.7428991",
@@ -1235,10 +1431,10 @@
      "alt": "Displaced Palestinians protest as Israeli air strikes continue in Gaza",
      "outlet": "Al Jazeera",
      "url": "https://www.aljazeera.com/news/2026/11/22/displaced-palestinians-protest-as-israeli-air-strikes-continue-in-gaza?traffic_source=rss",
-     "since": "2026-11-22T10:28:37.104932+00:00"
+     "since": "2026-11-22T10:38:38.172764+00:00"
     },
     "photo_seen": [
-     "https://www.middleeasteye.net/sites/default/files/images-story/iran-irgc-rocket-hormuz-february-2026-sepah-news-afp.jpg"
+     "https://www.aljazeera.com/wp-content/uploads/2026/11/epa_6b00990b1735-1795201291.jpg?resize=1920%2C1440"
     ],
     "photos": [
      {
@@ -1250,14 +1446,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/22/displaced-palestinians-protest-as-israeli-air-strikes-continue-in-gaza?traffic_source=rss"
      },
      {
-      "src": "live/img/auto-392d3b61-09b6a36d5a.jpg",
-      "orig": "https://www.middleeasteye.net/sites/default/files/images-story/iran-irgc-rocket-hormuz-february-2026-sepah-news-afp.jpg",
-      "caption": "From: Two Palestinians succumb to wounds sustained in Israeli strike on Gaza. — via Middle East Eye",
-      "alt": "Two Palestinians succumb to wounds sustained in Israeli strike on Gaza",
-      "outlet": "Middle East Eye",
-      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/two-palestinians-succumb-wounds-sustained-israeli-strike-gaza"
-     },
-     {
       "src": "live/img/auto-392d3b61-54ca746ef7.jpg",
       "orig": "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/648/files/2026/11/gaza-ap-112126.jpg",
       "caption": "From: Iran unveils underground missile launcher as Israeli strike in Gaza kills 3. — via CKOM / PAnow",
@@ -1266,7 +1454,7 @@
       "url": "https://www.ckom.com/2026/11/21/iran-unveils-underground-missile-launcher-as-israeli-strike-in-gaza-kills-3/"
      }
     ],
-    "independent": 5,
+    "independent": 4,
     "reports": [
      {
       "t": "Sun 4:00 a.m.",
@@ -1275,14 +1463,6 @@
       "title": "Will Canadian workers refuse to handle Israeli goods? Why unions increasingly say they should",
       "url": "https://www.cbc.ca/news/canada/clc-resolution-canadian-unions-israel-9.7428991",
       "desc": "A movement to cut off Israeli goods is spreading across Canada's unions. The Canadian Labour Congress, which represents more than 3 million workers, passed a resolution last month declaring trade, services and relationships with Israel to be “hot cargo,\" emphasizing a call for workers to refuse to…"
-     },
-     {
-      "t": "Sun 12:23 a.m.",
-      "iso": "2026-11-22T05:23:19+00:00",
-      "outlet": "Middle East Eye",
-      "title": "Two Palestinians succumb to wounds sustained in Israeli strike on Gaza",
-      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/two-palestinians-succumb-wounds-sustained-israeli-strike-gaza",
-      "desc": ""
      },
      {
       "t": "Sat 9:14 p.m.",
@@ -1323,23 +1503,6 @@
         "outlet": "CBC News",
         "src": "Reuters",
         "byline": ""
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Sun 12:23 a.m.",
-      "primary": false,
-      "outlet": "Middle East Eye",
-      "title": "Two Palestinians succumb to wounds sustained in Israeli strike on Gaza",
-      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/two-palestinians-succumb-wounds-sustained-israeli-strike-gaza",
-      "desc": "",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Middle East Eye",
-        "src": "Middle East Eye",
-        "byline": "https://www.facebook.com/middleeasteye/"
        }
       ],
       "copies": []
@@ -1410,8 +1573,8 @@
      "NBC News"
     ],
     "judgment": "national",
-    "judgment_why": "National: affects many people; carried across the country (national desks).",
-    "weight": 38.5
+    "judgment_why": "National: affects some people; carried across the country (national desks).",
+    "weight": 35.0
    }
   ],
   "passed_over": [
@@ -1426,10 +1589,6 @@
    {
     "title": "Wash. officials condemn ICE after 2 arrested boarding flight at Seattle airport",
     "url": "https://abcnews.com/US/washington-state-officials-condemn-ice-after-2-arrested/story?id=138349974"
-   },
-   {
-    "title": "Tracking site says Iranian tanker reportedly sailing through Strait of Hormuz does not exist",
-    "url": "https://www.euronews.com/2026/11/22/tracking-site-says-iranian-tanker-reportedly-sailing-through-strait-of-hormuz-does-not-exi"
    },
    {
     "title": "Italian jeweller and businessman Paolo Bulgari dies aged 89",
@@ -1498,7 +1657,7 @@
    "id": "vdSGPj15ftw",
    "r": "ca",
    "o": "Global News",
-   "t": "“No way to win this war” without US support, former Ukraine PM says at security forum",
+   "t": "Ukraine defence top of mind at Halifax International Security Forum",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=vdSGPj15ftw",
@@ -1512,7 +1671,7 @@
    "id": "P-5616L0fJ8",
    "r": "ca",
    "o": "Global News",
-   "t": "Tumbler Ridge shooter reportedly received detailed instructions from AI on modifying weapons",
+   "t": "BC shooter reportedly received instructions from ChatGPT on modifying weapons",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=P-5616L0fJ8",
@@ -1946,7 +2105,7 @@
    "id": "eAshcLzGd0E",
    "r": "world",
    "o": "Sky News",
-   "t": "Is the cyber panic real? The answer might surprise you",
+   "t": "I went looking for cyber 'armageddon'. What I found surprised me",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=eAshcLzGd0E",
@@ -2002,7 +2161,7 @@
    "id": "MgDRV4q-L0M",
    "r": "world",
    "o": "DW News",
-   "t": "Is COP31 heading for historic failure? | DW News",
+   "t": "Why COP31 negotiators are refusing to mention fossil fuels | DW News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=MgDRV4q-L0M",
@@ -2299,6 +2458,13 @@
  ],
  "eds": [
   [
+   "Toronto Star",
+   "Opinion",
+   "From activist to federal minister, I’ve hoped for high-speed rail for most of my life. This is why the Alto plan is the right one for Canada",
+   "https://www.thestar.com/opinion/contributors/from-activist-to-federal-minister-i-ve-hoped-for-high-speed-rail-for-most-of-my-life-this-is-why-the-alto-plan-is-the-right-one-for-canada/article_1a8ca989-5ff1-44a6-8210-a7db2e8678cb.html",
+   "2026-11-22T10:00:00+00:00"
+  ],
+  [
    "Toronto Sun",
    "Editorial",
    "U.S. Democrats can’t save us from Trump",
@@ -2360,13 +2526,6 @@
    "Defining Genocide Down at the International Court of Justice",
    "https://www.wsj.com/opinion/international-court-of-justice-genocide-definition-israel-1f650a2e?mod=rss_opinion",
    "2026-11-21T21:19:00+00:00"
-  ],
-  [
-   "Washington Examiner",
-   "Editorial",
-   "Students learn more when schools lock up phones",
-   "https://www.washingtonexaminer.com/opinion/editorials/4809975/students-learn-more-when-schools-lock-up-phones/",
-   "2026-11-22T10:00:00+00:00"
   ]
  ],
  "canus": {
@@ -2384,6 +2543,13 @@
     "outlet": "Canada's National Observer",
     "title": "Trump says Canada feeling 'emboldened' but he's seeking a 'fair' trade deal",
     "url": "https://www.nationalobserver.com/2026/11/20/news/trump-says-canada-feeling-emboldened-hes-seeking-fair-trade-deal"
+   },
+   {
+    "t": "Fri 6:52 p.m.",
+    "iso": "2026-11-20T23:52:28.071000+00:00",
+    "outlet": "CBC News",
+    "title": "Canadians need a trade deal, not promises: Conservative critic",
+    "url": "https://www.cbc.ca/player/play/video/9.7430721"
    },
    {
     "t": "Fri 1:49 p.m.",
@@ -2407,25 +2573,18 @@
     "url": "https://www.bnnbloomberg.ca/tariffs/2026/11/20/trump-trade-adviser-hurls-insults-at-federal-government-as-canada-us-trade-talks-heat-up/"
    },
    {
+    "t": "Thu 10:01 p.m.",
+    "iso": "2026-11-20T03:01:51.162000+00:00",
+    "outlet": "CBC News",
+    "title": "Canada pursues tariff relief through interim U.S. trade deal",
+    "url": "https://www.cbc.ca/player/play/video/9.7429383"
+   },
+   {
     "t": "Thu 10:00 p.m.",
     "iso": "2026-11-20T03:00:13+00:00",
     "outlet": "BNN Bloomberg",
     "title": "Canada makes case for U.S. trade deal sooner rather than later in private meeting",
     "url": "https://www.bnnbloomberg.ca/tariffs/2026/11/20/canada-makes-case-for-us-trade-deal-sooner-rather-than-later-in-private-meeting/"
-   },
-   {
-    "t": "Thu 8:05 p.m.",
-    "iso": "2026-11-20T01:05:33.546000+00:00",
-    "outlet": "CBC News",
-    "title": "At Issue | What would an interim U.S. trade deal mean for Canadians?",
-    "url": "https://www.cbc.ca/player/play/video/9.7429264"
-   },
-   {
-    "t": "Thu 7:30 p.m.",
-    "iso": "2026-11-20T00:30:00+00:00",
-    "outlet": "Toronto Star",
-    "title": "Trump's midterm defeat hasn't moved Canada-U.S. trade talks, sources say",
-    "url": "https://www.thestar.com/politics/donald-trump-s-midterm-drubbing-hasn-t-sped-up-canada-s-trade-talks-sources-say/article_ddb8650a-a844-434a-8513-7441ceba77d3.html"
    }
   ],
   "usmedia": [
@@ -2456,7 +2615,7 @@
   "edition": "Sunday morning, November 22",
   "lines": [
    "Good morning. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
-   "Two Palestinians succumb to wounds sustained in Israeli strike on Gaza, Middle East Eye reports.",
+   "Gadi Eisenkot, who is tasked with forming the next Israeli government, has invited the right-wing Likud party of caretaker prime minister Benjamin Netanyahu for coalition talks, his party said on Saturday.",
    "Ontario Liberals have elected Navdeep Bains as the party’s new leader after a marathon nine-month leadership race, with Bains emerging as victor less than one percentage point ahead of his next closest competitor, provincial caucus member Lee Fairclough, The Canadian Press reports.",
    "Alleged Mexican drug cartel boss ‘El Chapo Isidro’ arrested in special forces raid, The Guardian reports.",
    "Swedish Gripen pilot unable to shoot down suspected Russian missile over Poland due to poor weather, commander says, Kyiv Independent reports.",
@@ -2916,18 +3075,6 @@
    "img": "https://assets.kyivindependent.com/content/images/2026/11/photo_2026-11-22_09-19-31_20261122-093845.jpg"
   },
   {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Sun 4:54 a.m.",
-   "iso": "2026-11-22T09:54:50+00:00",
-   "title": "Tracking site says Iranian tanker reportedly sailing through Strait of Hormuz does not exist",
-   "summary": "The US military said Saturday marked 130 consecutive days of its naval blockade against Iran, which it says is preventing the Islamic Revolutionary Guard Corps from exporting \"billions of dollars in crude oil.\"",
-   "outlet": "Euronews, Middle East Eye, The Japan Times (AFP), CBS News",
-   "n": 4,
-   "url": "https://www.euronews.com/2026/11/22/tracking-site-says-iranian-tanker-reportedly-sailing-through-strait-of-hormuz-does-not-exi",
-   "img": "https://images.euronews.com/articles/stories/10/00/32/18/1200x675_cmsv2_a2f6078b-215d-5e59-9c8a-4f9c96f9b538-10003218.jpg"
-  },
-  {
    "desk": "politics",
    "pic": "parliament",
    "t": "Sat 8:52 p.m.",
@@ -2950,6 +3097,18 @@
    "n": 4,
    "url": "https://www.ctvnews.ca/world/article/former-white-house-press-secretary-katie-zacharia-under-investigation-for-lawyer-claims/",
    "img": "https://www.ctvnews.ca/resizer/v2/YE5QKAGNM5AOXD3U6MHXYW7NTY.jpg?smart=true&auth=4197fbe5b29c290e632f35e731963928cca8fa358e77b5861eb8b4f91e5e0915&width=1200&height=630"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Sun 4:54 a.m.",
+   "iso": "2026-11-22T09:54:50+00:00",
+   "title": "Tracking site says Iranian tanker reportedly sailing through Strait of Hormuz does not exist",
+   "summary": "The US military said Saturday marked 130 consecutive days of its naval blockade against Iran, which it says is preventing the Islamic Revolutionary Guard Corps from exporting \"billions of dollars in crude oil.\"",
+   "outlet": "Euronews, The Japan Times (AFP), CBS News",
+   "n": 3,
+   "url": "https://www.euronews.com/2026/11/22/tracking-site-says-iranian-tanker-reportedly-sailing-through-strait-of-hormuz-does-not-exi",
+   "img": "https://images.euronews.com/articles/stories/10/00/32/18/1200x675_cmsv2_a2f6078b-215d-5e59-9c8a-4f9c96f9b538-10003218.jpg"
   },
   {
    "desk": "world",
@@ -3134,26 +3293,14 @@
   {
    "desk": "business",
    "pic": "chart",
-   "t": "Sat 10:18 p.m.",
-   "iso": "2026-11-22T03:18:23+00:00",
-   "title": "Turkish foreign minister says Iran war fallout threatening global markets",
-   "summary": "",
-   "outlet": "Middle East Eye",
+   "t": "Sat 8:00 p.m.",
+   "iso": "2026-11-22T01:00:01+00:00",
+   "title": "Ontario's Christkindl Market is like a mini trip to Germany with twinkly huts and mulled wine",
+   "summary": "If you've ever dreamed of spending the holiday season in Germany, you might want to plan a trip to this dazzling Ontario Christmas market.",
+   "outlet": "Narcity",
    "n": 1,
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/turkish-foreign-minister-says-iran-war-fallout-threatening-global",
-   "img": "https://www.middleeasteye.net/sites/default/files/images-story/iran-irgc-rocket-hormuz-february-2026-sepah-news-afp.jpg"
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Sat 9:09 p.m.",
-   "iso": "2026-11-22T02:09:24+00:00",
-   "title": "Pezeshkian says Iran engaged in 'silent economic war' as blockade completes 130 days",
-   "summary": "",
-   "outlet": "Middle East Eye",
-   "n": 1,
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/pezeshkian-says-iran-engaged-silent-economic-war-blockade-completes-130",
-   "img": "https://www.middleeasteye.net/sites/default/files/images-story/iran-irgc-rocket-hormuz-february-2026-sepah-news-afp.jpg"
+   "url": "https://www.narcity.com/christkindl-market-kitchener-german-christmas-market-ontario",
+   "img": "https://www.narcity.com/media-library/hands-hold-fresh-pretzels-at-a-market-right-a-snowy-crowded-holiday-market-glows-at-night.jpg?id=68700258&width=1200&height=600&coordinates=0%2C36%2C0%2C36"
   },
   {
    "desk": "business",
@@ -3226,6 +3373,18 @@
    "n": 1,
    "url": "https://winnipeg.citynews.ca/2026/11/21/winnipeg-non-profit-calls-on-community-to-donate-essentials-ahead-of-winter/",
    "img": "https://winnipeg.citynews.ca/wp-content/blogs.dir/sites/13/IMG_1969-e1795297030130.jpeg"
+  },
+  {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Sat 3:44 p.m.",
+   "iso": "2026-11-21T20:44:20+00:00",
+   "title": "A study commissioned by Alto finds it would add $24.5 billion annually to the GDP",
+   "summary": "MONTREAL - A high-speed train line between Quebec City and Toronto would add $24.5 billion annually to Canada’s GDP, primarily due to productivity gains, according to a recent study commissioned",
+   "outlet": "Toronto Star + CKOM / PAnow (CP)",
+   "n": 1,
+   "url": "https://www.thestar.com/business/a-study-commissioned-by-alto-finds-it-would-add-24-5-billion-annually-to-the-gdp/article_1a4d5a24-6840-53a7-a218-80fbbed68d6c.html",
+   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/4/a6/4a6739b7-7fb9-5e9c-850e-a5f9ff095b36/6b0202dfbb631.image.jpg?crop=1714%2C900%2C0%2C90&resize=1200%2C630&order=crop%2Cresize"
   },
   {
    "desk": "politics",
@@ -3611,10 +3770,10 @@
    "h": [
     "Live Cop31: final session under way at divided climate summit as chance of deal hangs in the balance",
     "Cop31 Climate talks stall as countries mull showdown with Saudi Arabia over fossil fuel phaseout",
+    "Science It will soon be too late to regulate use of autonomous weapons, warns Red Cross",
     "Indonesia Fire at confectionery factory in Indonesia leaves at least three dead and dozens missing",
     "Cotton Capital Highly lucrative: Bank of England directors illegally profited from post-abolition enslavement in Cuba",
-    "Ukraine war briefing Russian cargo ship hit by drone in Baltic Sea as Finland PM says conflict ‘spilling over’",
-    "Ukraine ‘So what if there’s a hole? It hasn’t collapsed’: Kyiv residents unbothered by Russian attacks on city’s bridges"
+    "Ukraine war briefing Russian cargo ship hit by drone in Baltic Sea as Finland PM says conflict ‘spilling over’"
    ],
    "u": [
     "",
@@ -3622,7 +3781,7 @@
     "",
     "",
     "",
-    "https://www.theguardian.com/world/2026/nov/21/kyiv-russian-attacks-bridges"
+    ""
    ]
   },
   {
@@ -3655,7 +3814,7 @@
     "url": "https://www.youtube.com/watch?v=wcY4K5CNVx4",
     "img": "https://i.ytimg.com/vi/wcY4K5CNVx4/hqdefault.jpg",
     "story": "Fox News' All-American Christmas tree",
-    "watching": "94"
+    "watching": "104"
    },
    {
     "net": "LiveNOW from FOX",
@@ -3664,7 +3823,7 @@
     "url": "https://www.youtube.com/watch?v=9ZvbYvsufDE",
     "img": "https://i.ytimg.com/vi/9ZvbYvsufDE/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "355",
+    "watching": "344",
     "rolling": true
    },
    {
@@ -3674,7 +3833,7 @@
     "url": "https://www.youtube.com/watch?v=Bs-0e6rFckg",
     "img": "https://i.ytimg.com/vi/Bs-0e6rFckg/hqdefault.jpg",
     "story": "Drone attack destroys apartment building in Kyiv",
-    "watching": "220",
+    "watching": "208",
     "reports": [
      {
       "outlet": "Kyiv Independent",
@@ -3692,7 +3851,7 @@
     "url": "https://www.youtube.com/watch?v=tP8etKB7IIk",
     "img": "https://i.ytimg.com/vi/tP8etKB7IIk/hqdefault.jpg",
     "story": "New draft climate agreement published at COP31 summit",
-    "watching": "58",
+    "watching": "40",
     "reports": [
      {
       "outlet": "Euronews",
@@ -3756,44 +3915,7 @@
   ]
  },
  "pm": [],
- "blogs_auto": [
-  {
-   "net": "Middle East Eye",
-   "story": "UAE condemns Iranian attack on Bahrain",
-   "title": "UAE condemns Iranian attack on Bahrain",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/uae-condemns-iranian-attack-bahrain",
-   "updated": "2026-11-22T09:53:34+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/images-story/iran-irgc-rocket-hormuz-february-2026-sepah-news-afp.jpg"
-  },
-  {
-   "net": "Middle East Eye",
-   "story": "Morning update",
-   "title": "Morning update",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-677",
-   "updated": "2026-11-22T07:59:32+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/images-story/iran-irgc-rocket-hormuz-february-2026-sepah-news-afp.jpg"
-  },
-  {
-   "net": "Middle East Eye",
-   "story": "Israeli settlers torch vehicles in West Bank, paint 'racist' graffiti ",
-   "title": "Israeli settlers torch vehicles in West Bank, paint 'racist' graffiti on homes",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-torch-vehicles-west-bank-paint-racist-graffiti-homes",
-   "updated": "2026-11-22T07:47:53+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/images-story/iran-irgc-rocket-hormuz-february-2026-sepah-news-afp.jpg"
-  },
-  {
-   "net": "Middle East Eye",
-   "story": "Explosion inside Libyan naval base ammunition depot triggers fire",
-   "title": "Explosion inside Libyan naval base ammunition depot triggers fire",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/explosion-inside-libyan-naval-base-ammunition-depot-triggers-fire",
-   "updated": "2026-11-22T07:36:00+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/images-story/iran-irgc-rocket-hormuz-february-2026-sepah-news-afp.jpg"
-  }
- ],
+ "blogs_auto": [],
  "related": {
   "auto-0fb368b8": {
    "ties": [
@@ -4561,5 +4683,12 @@
  "geo_blocked": [
   "-NabWfv-VdA"
  ],
- "noembed": []
+ "noembed": [
+  "IJs72_NHq3g",
+  "J3FV4iY8p5w",
+  "L6qtnHZxwEw",
+  "NuEr0Q_AS6U",
+  "ldElU-Q5Qyo",
+  "t_HBrWb84eY"
+ ]
 }
