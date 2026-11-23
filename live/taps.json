@@ -1,24 +1,56 @@
 {
- "checked": "2026-11-23T03:50:23.540445+00:00",
- "labels": 201,
- "problems": [],
+ "checked": "2026-11-23T15:00:53.123799+00:00",
+ "labels": 232,
+ "problems": [
+  {
+   "label": "CBC News",
+   "opens": "https://toronto.citynews.ca/2026/11/23/nvidia-board-reinstates-jensen-huang-as-ceo-president/",
+   "section": "developed",
+   "link": false,
+   "width": 390
+  },
+  {
+   "label": "BNN Bloomberg",
+   "opens": "https://toronto.citynews.ca/2026/11/23/nvidia-board-reinstates-jensen-huang-as-ceo-president/",
+   "section": "developed",
+   "link": false,
+   "width": 390
+  },
+  {
+   "label": "CP24",
+   "opens": "https://toronto.citynews.ca/2026/11/23/nvidia-board-reinstates-jensen-huang-as-ceo-president/",
+   "section": "developed",
+   "link": false,
+   "width": 390
+  }
+ ],
  "guard": {
   "fixed": [
    {
-    "label": "NBC News",
-    "was": "(card link) nbcnews.com",
-    "now": "https://www.nbcnews.com/politics/congress/house-democrats-win-largest-house-majority-hubbard-north-carolina-rcna610708"
+    "label": "CTV News ↗",
+    "was": "(card link) cbsnews.com",
+    "now": "https://www.ctvnews.ca/vancouver/article/seattle-man-wins-jensen-huang-lookalike-contest-in-vancouver/"
    },
    {
-    "label": "PBS News",
-    "was": "(card link) pbs.org",
-    "now": "https://www.pbs.org/newshour/nation/lawyer-father-and-daughter-detained-by-ice-at-seattle-airport-were-traveling-to-family-baptism"
+    "label": "ABC News",
+    "was": "(card link) abcnews.com",
+    "now": "https://abcnews.com/Business/nvidia-reinstates-jensen-huang-ceo/story?id=138375516"
+   },
+   {
+    "label": "NBC News",
+    "was": "(card link) nbcnews.com",
+    "now": "https://www.nbcnews.com/tech/tech-news/nvidia-reinstates-jensen-huang-rcna610864"
+   },
+   {
+    "label": "The Hill",
+    "was": "(card link) thehill.com",
+    "now": "https://thehill.com/homenews/administration/6236924-trump-praises-nvidia-ceo-reinstatement/"
    }
   ],
   "disabled": [
    {
-    "label": "The Hill Timessubscribers",
-    "href": "https://www.hilltimes.com/2026/10/21/canada-should-continue-to-speak-loudly-and-clearly-despite-u-s-envoys-interference-claims-say-former-diplomats-and-ex-mp/522696/"
+    "label": "NBC News",
+    "href": "https://www.today.com/video/video-shows-distressing-ice-arrests-of-father-and-daughter-274005061831"
    }
   ],
   "lifted": []
