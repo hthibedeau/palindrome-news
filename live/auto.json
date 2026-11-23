@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-23T03:32:01.313143+00:00",
- "checkedLabel": "Sun 10:32 p.m.",
+ "checked": "2026-11-23T03:36:45.446129+00:00",
+ "checkedLabel": "Sun 10:36 p.m.",
  "stories": [
   {
    "key": "top",
@@ -31,6 +31,24 @@
  ],
  "wire": [
   [
+   "Sun 10:28 p.m.",
+   "World",
+   "Australian politics live: Crossbenchers urge protection for political cartoons from AI; Singapore PM flying in via Western Sydney airport",
+   "The Guardian",
+   "https://www.theguardian.com/australia-news/live/2026/nov/23/anthony-albanese-digital-duty-of-care-labor-greens-coalition-one-nation-angus-taylor-pauline-hanson-penny-wong-ai-ntwnfb",
+   "2026-11-23T03:28:27+00:00",
+   1
+  ],
+  [
+   "Sun 10:27 p.m.",
+   "World",
+   "Manchester’s Co-op Live arena evacuated after apparent tear gas incident at Don Toliver concert",
+   "The Guardian",
+   "https://www.theguardian.com/uk-news/2026/nov/23/manchester-co-op-live-arena-evacuated-tear-gas-don-toliver-concert",
+   "2026-11-23T03:27:53+00:00",
+   1
+  ],
+  [
    "Sun 10:27 p.m.",
    "Latest",
    "Army moves detonation of 10,000 pounds of lead azide to Wednesday",
@@ -40,12 +58,12 @@
    1
   ],
   [
-   "Sun 10:24 p.m.",
+   "Sun 10:15 p.m.",
    "World",
-   "Australian politics live: Crossbenchers urge protection for political cartoons from AI; Singapore PM flying in via Western Sydney airport",
-   "The Guardian",
-   "https://www.theguardian.com/australia-news/live/2026/nov/23/anthony-albanese-digital-duty-of-care-labor-greens-coalition-one-nation-angus-taylor-pauline-hanson-penny-wong-ai-ntwnfb",
-   "2026-11-23T03:24:48+00:00",
+   "Belgium’s airports set to shut down due to anti-austerity strike",
+   "Al Jazeera",
+   "https://www.aljazeera.com/news/2026/11/23/belgiums-airports-set-to-shut-down-due-to-anti-austerity-strike?traffic_source=rss",
+   "2026-11-23T03:15:55+00:00",
    1
   ],
   [
@@ -236,24 +254,6 @@
    "https://www.cbsnews.com/news/un-cop31-climate-conference-ends-no-agreement-fossil-fuel-debate-standstill/",
    "2026-11-23T01:57:00+00:00",
    1
-  ],
-  [
-   "Sun 8:56 p.m.",
-   "Latest",
-   "International climate talks fall apart over fossil fuels",
-   "CBS News",
-   "https://www.cbsnews.com/video/international-climate-talks-fall-apart-over-fossil-fuels/",
-   "2026-11-23T01:56:06+00:00",
-   1
-  ],
-  [
-   "Sun 8:55 p.m.",
-   "Politics",
-   "Carney, opposition leaders trade comedic jabs at press gallery dinner",
-   "CBC News",
-   "https://www.cbc.ca/news/politics/carney-press-gallery-dinner-9.7432138?cmp=rss",
-   "2026-11-23T01:55:29+00:00",
-   2
   ]
  ],
  "blogs": [
@@ -321,22 +321,6 @@
    "theme": ""
   },
   {
-   "score": 10,
-   "title": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
-   "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
-   "outlets": 8,
-   "why": [],
-   "theme": ""
-  },
-  {
-   "score": 10,
-   "title": "This picturesque city 1 hour from Toronto was named the best spot to live in Canada in 2026",
-   "url": "https://www.narcity.com/best-places-to-live-in-canada-guelph-ontario-real-estate",
-   "outlets": 8,
-   "why": [],
-   "theme": ""
-  },
-  {
    "score": 9,
    "title": "COP31 climate talks collapse after member states reject deal for not mentioning fossil fuels",
    "url": "https://www.cbc.ca/news/world/cop31-talks-collapse-fossil-fuel-9.7431847",
@@ -344,6 +328,22 @@
    "why": [
     "CBC News front #1"
    ],
+   "theme": ""
+  },
+  {
+   "score": 9,
+   "title": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
+   "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
+   "outlets": 7,
+   "why": [],
+   "theme": ""
+  },
+  {
+   "score": 9,
+   "title": "This picturesque city 1 hour from Toronto was named the best spot to live in Canada in 2026",
+   "url": "https://www.narcity.com/best-places-to-live-in-canada-guelph-ontario-real-estate",
+   "outlets": 7,
+   "why": [],
    "theme": ""
   },
   {
@@ -1021,7 +1021,7 @@
     "fronts_who": [
      "BBC News"
     ],
-    "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
+    "rule": "From abroad, tied to Canada",
     "carriers": 6,
     "judgment": "national",
     "why_judged": "National: affects some people; carried across the country (national desks)."
@@ -1052,8 +1052,8 @@
     "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
     "rank": 3,
     "live": "",
-    "weight": 28.5,
-    "score": 10,
+    "weight": 27.5,
+    "score": 9,
     "independent": 3,
     "most_read": 0,
     "canada": "none",
@@ -1114,7 +1114,7 @@
    },
    {
     "title": "This picturesque city 1 hour from Toronto was named the best spot to live in Canada in 2026",
-    "score": 10,
+    "score": 9,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
@@ -1163,12 +1163,12 @@
   "more": [],
   "passed_over": [
    {
-    "title": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
-    "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss"
-   },
-   {
     "title": "COP31 fails to reach major climate deal as talks expose deep divisions",
     "url": "https://www.bbc.co.uk/news/articles/cqwy06zrd26lo?at_medium=RSS&at_campaign=rss"
+   },
+   {
+    "title": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
+    "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss"
    }
   ]
  },
@@ -1177,7 +1177,7 @@
    "id": "lNKEVlE9gdY",
    "r": "ca",
    "o": "APTN News",
-   "t": "Troubled Waters: The impact of one city’s water supply | APTN Investigates",
+   "t": "Troubled Waters: Inside Shoal Lake’s lawsuit against Winnipeg | APTN Investigates",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=lNKEVlE9gdY",
@@ -1233,7 +1233,7 @@
    "id": "cZkndM9B7EY",
    "r": "ca",
    "o": "CTV News",
-   "t": "Tariff squeeze: Small vendors seek Buy Canadian boost",
+   "t": "Buy Canadian lifts maker's sales 150%",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=cZkndM9B7EY",
@@ -1345,7 +1345,7 @@
    "id": "BqzapKpy9aI",
    "r": "ca",
    "o": "Global News",
-   "t": "Government of Canada guts blended refugee program, blindsiding community groups",
+   "t": "Ottawa cancels sponsor, support program for refugees coming to Canada",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=BqzapKpy9aI",
@@ -1415,7 +1415,7 @@
    "id": "ZXPQKcCbgOU",
    "r": "us",
    "o": "CNN",
-   "t": "Generation rage: Inside the wave of protests sweeping Europe",
+   "t": "Inside the Gen Z movements sparking protests across Europe",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=ZXPQKcCbgOU",
@@ -1785,11 +1785,11 @@
   },
   {
    "o": "The Hill",
-   "h": "Van Hollen says Democrats have a 'generational opportunity' in the Senate, but the party is 'on probation'",
-   "u": "https://thehill.com/the-120/6236489-van-hollen-democrats-have-a-generational-opportunity-in-the-senate-but-the-party-is-on-probation/",
+   "h": "Kennedy calls Trump, Putin and Xi meeting a 'good thing'",
+   "u": "https://thehill.com/policy/international/6236521-kennedy-calls-trump-putin-and-xi-meeting-a-good-thing/",
    "img": "",
-   "w": "Sun 9:09 p.m.",
-   "iso": "2026-11-23T02:09:55+00:00"
+   "w": "Sun 9:55 p.m.",
+   "iso": "2026-11-23T02:55:10+00:00"
   }
  ],
  "papers": [
@@ -2114,8 +2114,8 @@
   "edition": "Sunday night, November 22",
   "lines": [
    "Good evening. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
-   "U.N. urges probe after Russian ship attacked off Libya, AFP reports.",
    "COP31 climate talks collapse after member states reject deal for not mentioning fossil fuels, CBC News reports.",
+   "U.N. urges probe after Russian ship attacked off Libya, AFP reports.",
    "A father and daughter detained by masked immigration officers on an airport jet bridge in Seattle, causing chaos in front of other passengers, were heading to a family baptism ceremony in California, their lawyer said Sunday.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
   ]
@@ -2510,8 +2510,8 @@
    "iso": "2026-11-23T02:59:35+00:00",
    "title": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
    "summary": "Libya's eastern government says the ship had stopped for fuel and supplies on its way back to Russia.",
-   "outlet": "BBC News, Al Jazeera, Fox News, Kyiv Independent, The Japan Times (AFP), The Hill, The Guardian",
-   "n": 7,
+   "outlet": "BBC News, Al Jazeera, Fox News, Kyiv Independent, The Japan Times (AFP), The Hill",
+   "n": 6,
    "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
    "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/a198/live/5b2f71d0-e6ae-11f1-a094-5fdc692f3e33.jpg"
   },
@@ -3243,7 +3243,7 @@
     "url": "https://www.youtube.com/watch?v=wcY4K5CNVx4",
     "img": "https://i.ytimg.com/vi/wcY4K5CNVx4/hqdefault.jpg",
     "story": "Fox News' All-American Christmas tree",
-    "watching": "111"
+    "watching": "117"
    },
    {
     "net": "LiveNOW from FOX",
@@ -3252,7 +3252,7 @@
     "url": "https://www.youtube.com/watch?v=cQokJ-09vlk",
     "img": "https://i.ytimg.com/vi/cQokJ-09vlk/hqdefault.jpg",
     "story": "Video of ICE detaining father and daughter while boarding fl",
-    "watching": "401",
+    "watching": "408",
     "reports": [
      {
       "outlet": "CBS News",
@@ -3288,13 +3288,6 @@
       "url": "https://www.thestar.com/news/world/united-states/lawyer-father-and-daughter-detained-by-ice-at-seattle-airport-were-travelling-to-family-baptism/article_dec24d2d-548c-5dca-be27-4eb95a009dbf.html",
       "t": "Sun 6:33 p.m.",
       "iso": "2026-11-22T23:33:00+00:00"
-     },
-     {
-      "outlet": "Al Jazeera",
-      "title": "‘Horrific’ and ‘chilling’: Officials condemn ICE arrests at Seattle airport",
-      "url": "https://www.aljazeera.com/news/2026/11/22/horrific-and-chilling-officials-condemn-ice-arrests-at-seattle-airport?traffic_source=rss",
-      "t": "Sun 2:10 p.m.",
-      "iso": "2026-11-22T19:10:00+00:00"
      }
     ]
    }
@@ -3350,9 +3343,9 @@
    "story": "Australian politics live: Crossbenchers urge protection for political ",
    "title": "Australian politics live: Crossbenchers urge protection for political cartoons from AI; Singapore PM flying in via Western Sydney airport",
    "url": "https://www.theguardian.com/australia-news/live/2026/nov/23/anthony-albanese-digital-duty-of-care-labor-greens-coalition-one-nation-angus-taylor-pauline-hanson-penny-wong-ai-ntwnfb",
-   "updated": "2026-11-23T03:34:34+00:00",
+   "updated": "2026-11-23T03:39:17+00:00",
    "ended": false,
-   "img": "https://i.guim.co.uk/img/media/0992e3b6b0f7bc5a000ad9d071fae956ac18557d/0_196_5733_4586/master/5733.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=36b70ce3440f5cfd3af0a736eeddd6ae"
+   "img": "https://i.guim.co.uk/img/media/35a374f84bc824555da32cc7289f03d9c9d3d129/688_0_6880_5504/master/6880.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=d960efa7edf45c91171be1b6fbcdfcc5"
   },
   {
    "net": "Al Jazeera",
@@ -4216,10 +4209,5 @@
  "geo_blocked": [
   "-NabWfv-VdA"
  ],
- "noembed": [
-  "J3FV4iY8p5w",
-  "NuEr0Q_AS6U",
-  "ldElU-Q5Qyo",
-  "t_HBrWb84eY"
- ]
+ "noembed": []
 }
