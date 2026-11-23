@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-23T04:06:46.158568+00:00",
- "checkedLabel": "Sun 11:06 p.m.",
+ "checked": "2026-11-23T04:16:46.121395+00:00",
+ "checkedLabel": "Sun 11:16 p.m.",
  "stories": [
   {
    "key": "top",
@@ -31,12 +31,30 @@
  ],
  "wire": [
   [
-   "Sun 10:52 p.m.",
+   "Sun 11:09 p.m.",
    "World",
-   "Australian politics live: Opposition hammers Labor over $150m ‘Cop flop’; Tehan kicked out of question time for ‘taking the mickey’",
+   "Australian politics live: Opposition hammers Labor over $150m ‘Cop flop’; Tehan kicked out of parliament for ‘taking mickey’ with Molly Meldrum catchphrase",
    "The Guardian",
    "https://www.theguardian.com/australia-news/live/2026/nov/23/anthony-albanese-digital-duty-of-care-labor-greens-coalition-one-nation-angus-taylor-pauline-hanson-penny-wong-ai-ntwnfb",
-   "2026-11-23T03:52:51+00:00",
+   "2026-11-23T04:09:17+00:00",
+   1
+  ],
+  [
+   "Sun 11:03 p.m.",
+   "World",
+   "Doula thought self-described birth keeper was clinically trained before NSW baby death, inquest hears",
+   "The Guardian",
+   "https://www.theguardian.com/australia-news/2026/nov/23/doula-thought-self-described-birth-keeper-was-clinically-trained-before-nsw-baby-death-inquest-hears-ntwnfb",
+   "2026-11-23T04:03:07+00:00",
+   1
+  ],
+  [
+   "Sun 11:00 p.m.",
+   "World",
+   "Israel’s destruction of Gaza has created a ‘toxic wasteland’, experts find",
+   "The Guardian",
+   "https://www.theguardian.com/world/2026/nov/23/israel-gaza-destruction-created-toxic-wasteland-oxfam-report",
+   "2026-11-23T04:00:45+00:00",
    1
   ],
   [
@@ -236,24 +254,6 @@
    "https://www.cbsnews.com/video/kate-middleton-shares-cancer-journey-details-surprise-documentary/",
    "2026-11-23T02:05:32+00:00",
    1
-  ],
-  [
-   "Sun 9:04 p.m.",
-   "Canada",
-   "Mild weather draws big crowds to Toronto's Santa Claus Parade",
-   "Toronto Star",
-   "https://www.thestar.com/news/gta/mild-weather-draws-big-crowds-to-toronto-s-santa-claus-parade/article_d96d259a-449a-4f8f-80cf-9109f0122c14.html",
-   "2026-11-23T02:04:00+00:00",
-   1
-  ],
-  [
-   "Sun 9:02 p.m.",
-   "Latest",
-   "Consumers expected to set Cyber Monday spending record this year",
-   "CBS News",
-   "https://www.cbsnews.com/video/consumers-expected-set-cyber-monday-spending-record-year/",
-   "2026-11-23T02:02:04+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -303,21 +303,11 @@
    "theme": "Canada and the U.S."
   },
   {
-   "score": 10,
+   "score": 9,
    "title": "Male injured in downtown Toronto collision",
    "url": "https://toronto.citynews.ca/2026/11/22/male-injured-in-downtown-toronto-collision/",
-   "outlets": 8,
+   "outlets": 7,
    "why": [],
-   "theme": ""
-  },
-  {
-   "score": 8,
-   "title": "Pay halted for suspended Vancouver police officer charged with fraud and theft",
-   "url": "https://www.cbc.ca/news/canada/british-columbia/kal-dosanjh-pay-discontinued-9.7431776",
-   "outlets": 3,
-   "why": [
-    "CBC News front #4"
-   ],
    "theme": ""
   },
   {
@@ -380,6 +370,17 @@
    "url": "https://www.thestar.com/news/gta/man-charged-with-murder-in-fatal-etobicoke-shooting-of-malik-abass/article_e95a8c3d-8a7e-4213-ba91-cfb8f2942d85.html",
    "outlets": 5,
    "why": [],
+   "theme": ""
+  },
+  {
+   "score": 6,
+   "title": "Hegseth reportedly moves to restrict defence ties with Canada, but Ottawa sees no change",
+   "url": "https://www.cbc.ca/news/politics/canada-us-pentagon-restrictions-hegseth-9.7431302",
+   "outlets": 1,
+   "why": [
+    "National Newswatch #16",
+    "CBC News front #6"
+   ],
    "theme": ""
   }
  ],
@@ -797,14 +798,6 @@
       "up": ""
      },
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=GXDep_OnC3o",
-      "title": "ICE arrest at Seattle airport prompts protests, calls for abolishment",
-      "img": "https://i.ytimg.com/vi/GXDep_OnC3o/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
       "net": "ABC News",
       "url": "https://www.youtube.com/watch?v=uxyXxd7lP9g",
       "title": "ICE arrests at Seattle airport spark outrage",
@@ -817,8 +810,8 @@
    {
     "key": "auto-5a1c48f9",
     "words": [
-     "malik",
-     "abass"
+     "abass",
+     "malik"
     ],
     "score": 7,
     "outlets": 3,
@@ -1076,11 +1069,10 @@
     "canada": "none",
     "theme": "",
     "top": false,
-    "fronts": 4,
+    "fronts": 3,
     "fronts_who": [
      "CBC News",
      "BBC News",
-     "The Guardian",
      "NPR"
     ],
     "rule": "No Canadian tie",
@@ -1100,12 +1092,7 @@
    },
    {
     "title": "Male injured in downtown Toronto collision",
-    "score": 10,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Pay halted for suspended Vancouver police officer charged with fraud and theft",
-    "score": 8,
+    "score": 9,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
@@ -1129,8 +1116,13 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Delta Air Lines says system issue that delayed flights nationwide has been resolved",
+    "title": "Pay halted for suspended Vancouver police officer charged with fraud and theft",
     "score": 6,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Delta Air Lines says system issue that delayed flights nationwide has been resolved",
+    "score": 5,
     "why": "not built: only 2 independent report(s) (3 sites)"
    },
    {
@@ -1173,7 +1165,7 @@
    "id": "lNKEVlE9gdY",
    "r": "ca",
    "o": "APTN News",
-   "t": "Troubled Waters: Is Winnipeg’s water costing another community its way of life? | APTN Investigates",
+   "t": "Troubled Waters: The impact of one city’s water supply | APTN Investigates",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=lNKEVlE9gdY",
@@ -1310,34 +1302,6 @@
    "geo": "unknown"
   },
   {
-   "id": "lHX2cw06q-Q",
-   "r": "ca",
-   "o": "Global News",
-   "t": "Montreal students win international NASA competition with revolutionary device",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=lHX2cw06q-Q",
-   "img": "https://i.ytimg.com/vi/lHX2cw06q-Q/hqdefault.jpg",
-   "up": "2026-11-22",
-   "added": "2026-11-23T03:46:46.294556+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "oDjWp7cWtkQ",
-   "r": "ca",
-   "o": "CTV News",
-   "t": "Canada to join billion-dollar NATO innovation fund",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=oDjWp7cWtkQ",
-   "img": "https://i.ytimg.com/vi/oDjWp7cWtkQ/hqdefault.jpg",
-   "up": "2026-11-22",
-   "added": "2026-11-23T03:56:46.318075+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "P-1MHJh48E4",
    "r": "ca",
    "o": "CTV News",
@@ -1355,13 +1319,41 @@
    "id": "jdF7UAfMPoo",
    "r": "ca",
    "o": "Global News",
-   "t": "Airbnb’s new house rules limiting checkout chores come into effect",
+   "t": "New Airbnb rules protecting, benefitting guests now in effect",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=jdF7UAfMPoo",
    "img": "https://i.ytimg.com/vi/jdF7UAfMPoo/hqdefault.jpg",
    "up": "2026-11-22",
    "added": "2026-11-23T04:06:46.158568+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "jm3E6-CgLW0",
+   "r": "ca",
+   "o": "CTV News",
+   "t": "Youth demand stronger social media protections from federal government",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=jm3E6-CgLW0",
+   "img": "https://i.ytimg.com/vi/jm3E6-CgLW0/hqdefault.jpg",
+   "up": "2026-11-22",
+   "added": "2026-11-23T04:16:46.121395+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "kzIo9FJhaxM",
+   "r": "ca",
+   "o": "Global News",
+   "t": "“Deeply saddened”: 2 teens dead, 1 injured after Scarborough shooting",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=kzIo9FJhaxM",
+   "img": "https://i.ytimg.com/vi/kzIo9FJhaxM/hqdefault.jpg",
+   "up": "2026-11-22",
+   "added": "2026-11-23T04:16:46.121395+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1411,7 +1403,7 @@
    "id": "ZXPQKcCbgOU",
    "r": "us",
    "o": "CNN",
-   "t": "Generation rage: Inside the wave of anger sweeping Europe",
+   "t": "Inside the Gen Z movements sparking protests across Europe",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=ZXPQKcCbgOU",
@@ -2428,12 +2420,12 @@
    "city": "Winnipeg",
    "tz": "America/Winnipeg",
    "world": false,
-   "w": "Privacy",
-   "label": "Cyberattack compromised personal customer information",
-   "u": "https://www.cbc.ca/news/canada/manitoba/cyberattack-compromised-customer-information-bell-mts-9.7432132?cmp=rss",
-   "title": "Cyberattack compromised personal customer information, Bell MTS says",
-   "outlet": "CBC News",
-   "t": "Sun 9:10 p.m.",
+   "w": "Christmas",
+   "label": "‘This is what Christmas is all about’",
+   "u": "https://www.ctvnews.ca/saskatoon/article/this-is-what-christmas-is-all-about-festival-of-trees-returns-to-saskatoon/",
+   "title": "‘This is what Christmas is all about’: Festival of Trees returns to Saskatoon",
+   "outlet": "CTV News",
+   "t": "Sun 6:00 p.m.",
    "hot": false
   },
   {
@@ -3185,8 +3177,8 @@
     "Ukraine war briefing Race to find survivors after Russian attack on apartment block kills at least nine",
     "US-Russia relations US intelligence head says he trusts Trump’s calling Putin ‘my friend’",
     "UK ‘Just wrong’: British right distances itself from Trump after Putin ‘friend’ post",
-    "Environment Cop31 climate talks break down as key deal rejected",
-    "Diplomacy Cop31 left co-chair Chris Bowen stuck between petrostates and climate reality. But the failure to say the f-word is not his alone"
+    "Israel-Gaza war Israel’s destruction of Gaza has created a ‘toxic wasteland’, experts find",
+    "West Bank Netanyahu rival condemns ‘Jewish terrorism’ after settler attacks on Palestinian villages"
    ],
    "u": [
     "",
@@ -3194,7 +3186,7 @@
     "https://www.theguardian.com/us-news/2026/nov/22/intelligence-chief-jay-clayton-trump-putin-my-friend",
     "https://www.theguardian.com/politics/2026/nov/22/british-right-reform-tory-party-distances-itself-from-trump-putin-friend-post",
     "",
-    "https://www.theguardian.com/environment/2026/nov/23/cop31-left-chris-bowen-stuck-between-petrostates-and-climate-reality-but-the-failure-to-say-the-f-word-is-not-his-alone"
+    "https://www.theguardian.com/world/2026/nov/22/netanyahu-rival-condemns-settler-arson-attacks-palestinian-villages-west-bank"
    ]
   },
   {
@@ -3227,7 +3219,7 @@
     "url": "https://www.youtube.com/watch?v=wcY4K5CNVx4",
     "img": "https://i.ytimg.com/vi/wcY4K5CNVx4/hqdefault.jpg",
     "story": "Fox News' All-American Christmas tree",
-    "watching": "130"
+    "watching": "133"
    },
    {
     "net": "LiveNOW from FOX",
@@ -3236,7 +3228,7 @@
     "url": "https://www.youtube.com/watch?v=cQokJ-09vlk",
     "img": "https://i.ytimg.com/vi/cQokJ-09vlk/hqdefault.jpg",
     "story": "Video of ICE detaining father and daughter while boarding fl",
-    "watching": "411",
+    "watching": "364",
     "reports": [
      {
       "outlet": "CBS News",
@@ -3325,9 +3317,9 @@
   {
    "net": "The Guardian",
    "story": "Australian politics live: Opposition hammers Labor over $150m ‘Cop flo",
-   "title": "Australian politics live: Opposition hammers Labor over $150m ‘Cop flop’; Tehan kicked out of question time for ‘taking the mickey’",
+   "title": "Australian politics live: Opposition hammers Labor over $150m ‘Cop flop’; Tehan kicked out of parliament for ‘taking mickey’ with Molly Meldrum catchphrase",
    "url": "https://www.theguardian.com/australia-news/live/2026/nov/23/anthony-albanese-digital-duty-of-care-labor-greens-coalition-one-nation-angus-taylor-pauline-hanson-penny-wong-ai-ntwnfb",
-   "updated": "2026-11-23T04:09:18+00:00",
+   "updated": "2026-11-23T04:19:17+00:00",
    "ended": false,
    "img": "https://i.guim.co.uk/img/media/35a374f84bc824555da32cc7289f03d9c9d3d129/688_0_6880_5504/master/6880.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=d960efa7edf45c91171be1b6fbcdfcc5"
   },
@@ -3336,7 +3328,7 @@
    "story": "Iran war live: Tankers set ablaze in Hormuz as IRGC warns of unrest th",
    "title": "Iran war live: Tankers set ablaze in Hormuz as IRGC warns of unrest threat",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/22/iran-war-live-tankers-set-ablaze-in-hormuz-as-irgc-warns-of-unrest-threat?traffic_source=rss",
-   "updated": "2026-11-23T04:00:00+00:00",
+   "updated": "2026-11-23T04:14:35+00:00",
    "ended": false,
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6b031d3b43da-1795366203.jpg?resize=1200%2C675"
   }
@@ -3372,6 +3364,24 @@
   }
  },
  "canangle_live": {
+  "https://www.theguardian.com/australia-news/live/2026/nov/23/anthony-albanese-digital-duty-of-care-labor-greens-coalition-one-nation-angus-taylor-pauline-hanson-penny-wong-ai-ntwnfb": {
+   "story": "Australian politics live: Opposition hammers Labor over $150m ‘Cop flop’; Tehan kicked out of parliament for ‘taking mickey’ with Molly Meldrum catchphrase",
+   "us": false,
+   "specific": 1,
+   "stories": [
+    {
+     "t": "Sun 8:55 p.m.",
+     "iso": "2026-11-23T01:55:29+00:00",
+     "outlet": "CBC News",
+     "title": "Carney, opposition leaders trade comedic jabs at press gallery dinner",
+     "url": "https://www.cbc.ca/news/politics/carney-press-gallery-dinner-9.7432138?cmp=rss",
+     "ca": true,
+     "tie": ""
+    }
+   ],
+   "official": [],
+   "views": []
+  },
   "https://www.youtube.com/watch?v=cQokJ-09vlk": {
    "story": "TOP STORIES: Seattle Airport ICE arrest, Mideast latest, FBI hack",
    "us": false,
