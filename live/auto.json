@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-22T23:53:15.570155+00:00",
- "checkedLabel": "Sun 6:53 p.m.",
+ "checked": "2026-11-23T00:03:16.172558+00:00",
+ "checkedLabel": "Sun 7:03 p.m.",
  "stories": [
   {
    "key": "top",
@@ -32,11 +32,20 @@
  "wire": [
   [
    "Sun 6:51 p.m.",
+   "World",
+   "Australian politics live: Tehan says Bowen should resign over Cop; Taylor pays tribute to ‘kind, gentle’ Meldrum",
+   "The Guardian",
+   "https://www.theguardian.com/australia-news/live/2026/nov/23/anthony-albanese-digital-duty-of-care-labor-greens-coalition-one-nation-angus-taylor-pauline-hanson-penny-wong-ai-ntwnfb",
+   "2026-11-22T23:51:38+00:00",
+   1
+  ],
+  [
+   "Sun 6:51 p.m.",
    "Canada",
    "Understanding Canada’s commitment to the $100 million NATO Innovation Fund",
    "CTV News",
    "https://www.ctvnews.ca/canada/article/understanding-canadas-commitment-to-the-100-million-nato-innovation-fund/",
-   "2026-11-22T23:51:30.852000+00:00",
+   "2026-11-22T23:51:30+00:00",
    2
   ],
   [
@@ -47,15 +56,6 @@
    "https://www.pbs.org/newshour/nation/lawyer-father-and-daughter-detained-by-ice-at-seattle-airport-were-traveling-to-family-baptism",
    "2026-11-22T23:46:56+00:00",
    3
-  ],
-  [
-   "Sun 6:37 p.m.",
-   "World",
-   "Australian politics live: Tehan says Bowen should resign over Cop; Taylor pays tribute to ‘kind, gentle’ Meldrum",
-   "The Guardian",
-   "https://www.theguardian.com/australia-news/live/2026/nov/23/anthony-albanese-digital-duty-of-care-labor-greens-coalition-one-nation-angus-taylor-pauline-hanson-penny-wong-ai-ntwnfb",
-   "2026-11-22T23:37:21+00:00",
-   1
   ],
   [
    "Sun 6:33 p.m.",
@@ -148,6 +148,15 @@
    1
   ],
   [
+   "Sun 5:50 p.m.",
+   "Latest",
+   "Tech outages and hacks: the response and what experts are saying",
+   "CBS News",
+   "https://www.cbsnews.com/video/tech-outages-hacks-response-what-experts-saying/",
+   "2026-11-22T22:50:00+00:00",
+   1
+  ],
+  [
    "Sun 5:47 p.m.",
    "U.S.",
    "9 people shot at a central California concert; 1 in critical condition",
@@ -168,7 +177,7 @@
   [
    "Sun 5:45 p.m.",
    "Canada",
-   "Trump impersonator joins Prime Minister Mark Carney at Ottawa press dinner",
+   "Trump impersonator joins Carney at press dinner",
    "CTV News",
    "https://www.ctvnews.ca/canada/article/trump-impersonator-joins-prime-minister-mark-carney-at-ottawa-press-dinner/",
    "2026-11-22T22:45:18+00:00",
@@ -245,15 +254,6 @@
    "https://www.pbs.org/newshour/nation/todays-thanksgiving-holiday-was-invented-amid-the-civil-war-to-unite-a-divided-country",
    "2026-11-22T22:18:44+00:00",
    1
-  ],
-  [
-   "Sun 5:05 p.m.",
-   "Canada",
-   "Carney, federal party leaders bust out comedic chops at press gallery dinner",
-   "Toronto Star",
-   "https://www.thestar.com/news/canada/carney-federal-party-leaders-bust-out-comedic-chops-at-press-gallery-dinner/article_3e7bd325-778e-5213-bc4d-5941d1d1d63a.html",
-   "2026-11-22T22:05:00+00:00",
-   6
   ]
  ],
  "blogs": [
@@ -342,6 +342,16 @@
   },
   {
    "score": 10,
+   "title": "Canada's unions are moving to cut ties with Israel",
+   "url": "https://www.cbc.ca/news/canada/clc-resolution-canadian-unions-israel-9.7428991",
+   "outlets": 5,
+   "why": [
+    "CBC News front #5"
+   ],
+   "theme": ""
+  },
+  {
+   "score": 10,
    "title": "Bombardier workers reject contract offer, vote for strike mandate",
    "url": "https://www.ctvnews.ca/montreal/article/bombardier-workers-reject-contract-offer-vote-for-strike-mandate/",
    "outlets": 10,
@@ -355,16 +365,6 @@
    "outlets": 2,
    "why": [
     "National Newswatch #2"
-   ],
-   "theme": ""
-  },
-  {
-   "score": 9,
-   "title": "Canada's unions are moving to cut ties with Israel",
-   "url": "https://www.cbc.ca/news/canada/clc-resolution-canadian-unions-israel-9.7428991",
-   "outlets": 4,
-   "why": [
-    "CBC News front #5"
    ],
    "theme": ""
   },
@@ -406,7 +406,7 @@
    "t": "Sun 5:45 p.m.",
    "iso": "2026-11-22T22:45:18+00:00",
    "region": "Ontario",
-   "title": "Trump impersonator joins Prime Minister Mark Carney at Ottawa press dinner",
+   "title": "Trump impersonator joins Carney at press dinner",
    "summary": "An impersonator of U.S. President Donald Trump joined Prime Minister Mark Carney last night for his comedic address at the annual Parliamentary Press Gallery Dinner in Ottawa.",
    "outlet": "CP24, CityNews (CP)",
    "n": 2,
@@ -801,7 +801,7 @@
     "weight": 36.0
    },
    {
-    "key": "auto-0c91c75e",
+    "key": "auto-bfe782d9",
     "words": [
      "ukrainian",
      "benghazi",
@@ -810,47 +810,46 @@
      "libya"
     ],
     "score": 13,
-    "outlets": 6,
-    "carriers": 10,
+    "outlets": 5,
+    "carriers": 9,
     "tag": "Developing",
-    "title": "Poland says Russia allegedly twice tried to kill a Ukrainian American rapper",
-    "url": "https://www.cp24.com/news/world/2026/11/22/poland-says-russia-allegedly-twice-tried-to-kill-a-ukrainian-american-rapper/",
-    "outlet": "CP24",
-    "t": "Sun 3:16 p.m.",
-    "iso": "2026-11-22T20:16:35+00:00",
-    "summary": "Denmark has expelled a Russian official after it said it had thwarted an alleged plot to kill a Ukrainian American citizen on Danish soil. The case took a new twist Sunday when Polish authorities revealed that the same man was allegedly targeted by Moscow’s intelligence services last summer in Poland.",
+    "title": "Russian warship sinks in Benghazi after suspected Ukrainian drone attack",
+    "url": "https://www.theguardian.com/world/2026/nov/22/blast-russian-ship-suspected-drone-attack-benghazi-libya",
+    "outlet": "The Guardian",
+    "t": "Sun 4:33 p.m.",
+    "iso": "2026-11-22T21:33:44+00:00",
+    "summary": "No one has claimed responsibility for the strike on the vessel, which had docked on its way back to Russia",
     "first": {
-     "outlet": "Kyiv Independent",
-     "url": "https://kyivindependent.com/russian-warship-docked-in-benghazi-hit-by-suspected-drone-attack-libyan-officials-say/",
-     "t": "Sun 1:02 p.m.",
-     "title": "Russian warship docked in Benghazi hit by suspected drone attack, Libyan officials say",
-     "iso": "2026-11-22T18:02:49+00:00"
+     "outlet": "Al Jazeera",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/22/suspected-drone-attack-causes-explosion-on-russian-ship-in-libya?traffic_source=rss",
+     "t": "Sun 1:11 p.m.",
+     "title": "Suspected drone attack causes explosion on Russian ship in Libya",
+     "iso": "2026-11-22T18:11:30+00:00"
     },
     "newest": "2026-11-22T21:33:44+00:00",
     "photo": {
-     "src": "live/img/auto-0c91c75e-a7a268f4b3.jpg",
-     "orig": "https://www.cp24.com/resizer/v2/SBOIWQNZQ3GG4AKG2NFJY5QNXI.jpg?smart=true&auth=5b25667023f28cbb2fead01a5c4067717b1ed00356277375ffe3b0cf412fe66d&width=1200&height=630",
-     "caption": "Poland's Prime Minister Donald Tusk speaks with the media as he arrives for the EU Summit in Nicosia, Cyprus, on April 24, 2026. (AP Photo/Petros Karadjias, File). — via CP24",
-     "alt": "Poland's Prime Minister Donald Tusk speaks with the media as he arrives for the EU Summit in Nicosia, Cyprus, on April 24, 2026. (AP Photo/Petros Karadjias, Fil",
-     "outlet": "CP24",
-     "url": "https://www.cp24.com/news/world/2026/11/22/poland-says-russia-allegedly-twice-tried-to-kill-a-ukrainian-american-rapper/",
-     "since": "2026-11-22T23:56:11.972706+00:00"
+     "src": "live/img/auto-bfe782d9-5b3589c596.jpg",
+     "orig": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1795370938.jpg?resize=1791%2C1080&quality=80",
+     "caption": "Suspected drone attack causes explosion on Russian ship in Libya. — via Al Jazeera",
+     "alt": "Suspected drone attack causes explosion on Russian ship in Libya",
+     "outlet": "Al Jazeera",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/22/suspected-drone-attack-causes-explosion-on-russian-ship-in-libya?traffic_source=rss",
+     "since": "2026-11-23T00:05:25.541718+00:00"
     },
     "photo_seen": [
-     "https://www.cp24.com/resizer/v2/SBOIWQNZQ3GG4AKG2NFJY5QNXI.jpg?smart=true&auth=5b25667023f28cbb2fead01a5c4067717b1ed00356277375ffe3b0cf412fe66d&width=1200&height=630",
      "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/648/files/2026/11/libya-1-ap-112226.jpg"
     ],
     "photos": [
      {
-      "src": "live/img/auto-0c91c75e-a7a268f4b3.jpg",
-      "orig": "https://www.cp24.com/resizer/v2/SBOIWQNZQ3GG4AKG2NFJY5QNXI.jpg?smart=true&auth=5b25667023f28cbb2fead01a5c4067717b1ed00356277375ffe3b0cf412fe66d&width=1200&height=630",
-      "caption": "Poland's Prime Minister Donald Tusk speaks with the media as he arrives for the EU Summit in Nicosia, Cyprus, on April 24, 2026. (AP Photo/Petros Karadjias, File). — via CP24",
-      "alt": "Poland's Prime Minister Donald Tusk speaks with the media as he arrives for the EU Summit in Nicosia, Cyprus, on April 24, 2026. (AP Photo/Petros Karadjias, Fil",
-      "outlet": "CP24",
-      "url": "https://www.cp24.com/news/world/2026/11/22/poland-says-russia-allegedly-twice-tried-to-kill-a-ukrainian-american-rapper/"
+      "src": "live/img/auto-bfe782d9-5b3589c596.jpg",
+      "orig": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1795370938.jpg?resize=1791%2C1080&quality=80",
+      "caption": "Suspected drone attack causes explosion on Russian ship in Libya. — via Al Jazeera",
+      "alt": "Suspected drone attack causes explosion on Russian ship in Libya",
+      "outlet": "Al Jazeera",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/22/suspected-drone-attack-causes-explosion-on-russian-ship-in-libya?traffic_source=rss"
      },
      {
-      "src": "live/img/auto-0c91c75e-5af4286a09.jpg",
+      "src": "live/img/auto-bfe782d9-5af4286a09.jpg",
       "orig": "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/648/files/2026/11/libya-1-ap-112226.jpg",
       "caption": "From: Suspected Ukrainian drones hit Russian warship in Libya port. — via CKOM / PAnow",
       "alt": "Suspected Ukrainian drones hit Russian warship in Libya port",
@@ -858,23 +857,23 @@
       "url": "https://www.ckom.com/2026/11/22/suspected-ukrainian-drones-hit-russian-warship-in-libya-port/"
      },
      {
-      "src": "live/img/auto-0c91c75e-ebcc22f5fa.jpg",
+      "src": "live/img/auto-bfe782d9-7a8d0af93d.jpg",
+      "orig": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/a198/live/5b2f71d0-e6ae-11f1-a094-5fdc692f3e33.jpg",
+      "caption": "A still from a video shows flames and sparks rising in the dark sky in the distance. — via BBC News",
+      "alt": "A still from a video shows flames and sparks rising in the dark sky in the distance.",
+      "outlet": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss"
+     },
+     {
+      "src": "live/img/auto-bfe782d9-ebcc22f5fa.jpg",
       "orig": "https://d3i6fh83elv35t.cloudfront.net/static/2026/11/2026-11-03T145803Z_444924507_RC2DGOAT32R7_RTRMADP_3_DENMARK-POLITICS-1024x683.jpg",
       "caption": "From: Poland says Russia allegedly twice tried to kill a Ukrainian American rapper. — via PBS NewsHour",
       "alt": "Poland says Russia allegedly twice tried to kill a Ukrainian American rapper",
       "outlet": "PBS NewsHour",
       "url": "https://www.pbs.org/newshour/world/poland-says-russia-allegedly-twice-tried-to-kill-a-ukrainian-american-rapper"
-     },
-     {
-      "src": "live/img/auto-0c91c75e-7689eda30b.jpg",
-      "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/a/f0/af03706c-b918-5777-bcb7-b676ad1890ef/6b033125ca6ad.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize",
-      "caption": "From: Poland says Russia allegedly twice tried to kill a Ukrainian American rapper. — via Toronto Star",
-      "alt": "Poland says Russia allegedly twice tried to kill a Ukrainian American rapper",
-      "outlet": "Toronto Star",
-      "url": "https://www.thestar.com/news/world/europe/poland-says-russia-allegedly-twice-tried-to-kill-a-ukrainian-american-rapper/article_9bb6a7a6-e986-5e11-b003-0e37f054d079.html"
      }
     ],
-    "independent": 6,
+    "independent": 5,
     "reports": [
      {
       "t": "Sun 4:33 p.m.",
@@ -946,14 +945,6 @@
       "outlet": "Al Jazeera",
       "title": "Suspected drone attack causes explosion on Russian ship in Libya",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/22/suspected-drone-attack-causes-explosion-on-russian-ship-in-libya?traffic_source=rss",
-      "desc": ""
-     },
-     {
-      "t": "Sun 1:02 p.m.",
-      "iso": "2026-11-22T18:02:49+00:00",
-      "outlet": "Kyiv Independent",
-      "title": "Russian warship docked in Benghazi hit by suspected drone attack, Libyan officials say",
-      "url": "https://kyivindependent.com/russian-warship-docked-in-benghazi-hit-by-suspected-drone-attack-libyan-officials-say/",
       "desc": ""
      }
     ],
@@ -1079,23 +1070,6 @@
        }
       ],
       "copies": []
-     },
-     {
-      "t": "Sun 1:02 p.m.",
-      "primary": false,
-      "outlet": "Kyiv Independent",
-      "title": "Russian warship docked in Benghazi hit by suspected drone attack, Libyan officials say",
-      "url": "https://kyivindependent.com/russian-warship-docked-in-benghazi-hit-by-suspected-drone-attack-libyan-officials-say/",
-      "desc": "Libyan officials have reported that the Russian Navy corvette Merkury was severely damaged by Ukrainian sea drones. Kyiv has not commented on the claim.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Kyiv Independent",
-        "src": "Kyiv Independent",
-        "byline": "own staff: Editor"
-       }
-      ],
-      "copies": []
      }
     ],
     "replaces_top": false,
@@ -1114,7 +1088,7 @@
     ],
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (national desks).",
-    "weight": 35.0
+    "weight": 33.5
    }
   ],
   "considered": [
@@ -1142,13 +1116,13 @@
     "why_judged": "National: affects some people; carried across the country (national desks)."
    },
    {
-    "title": "Poland says Russia allegedly twice tried to kill a Ukrainian American rapper",
-    "url": "https://www.cp24.com/news/world/2026/11/22/poland-says-russia-allegedly-twice-tried-to-kill-a-ukrainian-american-rapper/",
+    "title": "Russian warship sinks in Benghazi after suspected Ukrainian drone attack",
+    "url": "https://www.theguardian.com/world/2026/nov/22/blast-russian-ship-suspected-drone-attack-benghazi-libya",
     "rank": 2,
     "live": "",
-    "weight": 35.0,
+    "weight": 33.5,
     "score": 13,
-    "independent": 6,
+    "independent": 5,
     "most_read": 0,
     "canada": "none",
     "theme": "",
@@ -1159,7 +1133,7 @@
      "The Guardian"
     ],
     "rule": "No Canadian tie",
-    "carriers": 10,
+    "carriers": 9,
     "judgment": "national",
     "why_judged": "National: affects many people; carried across the country (national desks)."
    },
@@ -1168,8 +1142,8 @@
     "url": "https://www.foxnews.com/media/abdul-el-sayed-suggests-israel-should-not-be-jewish-state-opposes-ethno-states",
     "rank": 3,
     "live": "",
-    "weight": 16.5,
-    "score": 9,
+    "weight": 17.5,
+    "score": 10,
     "independent": 3,
     "most_read": 0,
     "canada": "none",
@@ -1183,7 +1157,7 @@
     "why_judged": "Regional: affects some people; carried by a few newsrooms."
    },
    {
-    "title": "Trump impersonator joins Prime Minister Mark Carney at Ottawa press dinner",
+    "title": "Trump impersonator joins Carney at press dinner",
     "score": 21,
     "why": "not built: only 1 independent report(s) (2 sites)"
    },
@@ -1349,20 +1323,6 @@
    "geo": "unknown"
   },
   {
-   "id": "GXDep_OnC3o",
-   "r": "ca",
-   "o": "Global News",
-   "t": "Washington governor says ICE “out of control” after jet bridge arrest goes viral",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=GXDep_OnC3o",
-   "img": "https://i.ytimg.com/vi/GXDep_OnC3o/hqdefault.jpg",
-   "up": "2026-11-22",
-   "added": "2026-11-22T21:04:05.388644+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "YFnvqL2a6D8",
    "r": "ca",
    "o": "CP24",
@@ -1380,39 +1340,11 @@
    "id": "dRZjLD4UvJc",
    "r": "ca",
    "o": "Global News",
-   "t": "Indonesia factory fire: 3 dead, dozens missing after incident at candy plant",
+   "t": "Fatal fire at candy factory in Indonesia believed to have originated from cooling unit",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=dRZjLD4UvJc",
    "img": "https://i.ytimg.com/vi/dRZjLD4UvJc/hqdefault.jpg",
-   "up": "2026-11-22",
-   "added": "2026-11-22T22:43:09.916746+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "Bh-sp-zCv68",
-   "r": "ca",
-   "o": "CityNews",
-   "t": "HomeSpace seeks new location for supportive housing project after Calgary council rejection",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=Bh-sp-zCv68",
-   "img": "https://i.ytimg.com/vi/Bh-sp-zCv68/hqdefault.jpg",
-   "up": "2026-11-22",
-   "added": "2026-11-22T22:43:09.916746+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "XH_K3laP4Y8",
-   "r": "ca",
-   "o": "CityNews",
-   "t": "Calgary Police Service looking for big budget increase to meet needs of a growing city",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=XH_K3laP4Y8",
-   "img": "https://i.ytimg.com/vi/XH_K3laP4Y8/hqdefault.jpg",
    "up": "2026-11-22",
    "added": "2026-11-22T22:43:09.916746+00:00",
    "pic": "globe",
@@ -1457,6 +1389,48 @@
    "img": "https://i.ytimg.com/vi/YdXRyCy5rjo/hqdefault.jpg",
    "up": "2026-11-22",
    "added": "2026-11-22T23:37:46.118565+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "xADqCxBxm08",
+   "r": "ca",
+   "o": "Global News",
+   "t": "One of FBI’s most wanted captured in operation that killed at least 11 in Mexico",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=xADqCxBxm08",
+   "img": "https://i.ytimg.com/vi/xADqCxBxm08/hqdefault.jpg",
+   "up": "2026-11-22",
+   "added": "2026-11-23T00:03:16.172558+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "lRzq_XIOqck",
+   "r": "ca",
+   "o": "CityNews",
+   "t": "Santa Claus comes to town for 122nd annual Toronto parade",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=lRzq_XIOqck",
+   "img": "https://i.ytimg.com/vi/lRzq_XIOqck/hqdefault.jpg",
+   "up": "2026-11-22",
+   "added": "2026-11-23T00:03:16.172558+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "yj5c6SbsyJI",
+   "r": "ca",
+   "o": "CityNews",
+   "t": "Two teens killed, third wounded in Scarborough shooting",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=yj5c6SbsyJI",
+   "img": "https://i.ytimg.com/vi/yj5c6SbsyJI/hqdefault.jpg",
+   "up": "2026-11-22",
+   "added": "2026-11-23T00:03:16.172558+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1671,24 +1645,10 @@
    "geo": "unknown"
   },
   {
-   "id": "Qnm6kTb5Nog",
-   "r": "us",
-   "o": "Fox News",
-   "t": "Trump RIPS Schumer in heated response: 'HE WILL FAIL'",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=Qnm6kTb5Nog",
-   "img": "https://i.ytimg.com/vi/Qnm6kTb5Nog/hqdefault.jpg",
-   "up": "2026-11-22",
-   "added": "2026-11-22T22:07:49.022630+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "jwDSWRIQO3E",
    "r": "us",
    "o": "CNN",
-   "t": "Comedians roast Mamdani’s bromance with Trump (feat. Mamdani) | Have I Got News For You",
+   "t": "Comedians roast Mamdani IRL & his bromance with Trump | Have I Got News For You",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=jwDSWRIQO3E",
@@ -1702,7 +1662,7 @@
    "id": "ZXPQKcCbgOU",
    "r": "us",
    "o": "CNN",
-   "t": "Generation rage: Inside the wave of protests sweeping Europe",
+   "t": "Generation rage: Inside the wave of anger sweeping Europe",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=ZXPQKcCbgOU",
@@ -1723,6 +1683,20 @@
    "img": "https://i.ytimg.com/vi/zvUjoqVwcUo/hqdefault.jpg",
    "up": "2026-11-22",
    "added": "2026-11-22T23:03:09.592756+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "dYMohGQvxIM",
+   "r": "us",
+   "o": "Fox News",
+   "t": "Delta Airlines outage triggers MASSIVE Thanksgiving travel delays",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=dYMohGQvxIM",
+   "img": "https://i.ytimg.com/vi/dYMohGQvxIM/hqdefault.jpg",
+   "up": "2026-11-22",
+   "added": "2026-11-23T00:03:16.172558+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1828,7 +1802,7 @@
    "id": "BfZFWJ_qIRE",
    "r": "world",
    "o": "BBC News",
-   "t": "How Amazon is shaping the next era of James Bond | The Global Story",
+   "t": "Twilight to 007: Can Pattinson pull off His Majesty's most iconic spy? | The Global Story",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=BfZFWJ_qIRE",
@@ -1902,11 +1876,11 @@
   },
   {
    "o": "Fox News",
-   "h": "Trump says Iran unleashed missile, drone surge after midterms",
-   "u": "https://www.foxnews.com/world/trump-says-iran-unleashed-missile-drone-surge-after-midterms",
-   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/02/donald-trump-black-history-month-feb.-18-2026.jpg",
-   "w": "Sun 6:33 p.m.",
-   "iso": "2026-11-22T23:33:06+00:00"
+   "h": "Chiefs and Bills take care of business ahead of the NFL’s biggest regular-season game",
+   "u": "https://www.foxnews.com/outkick-sports/chiefs-bills-take-care-business-ahead-nfl-biggest-regular-season-game",
+   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/patrick-mahomes-josh-allen-chiefs-bills-playoff.jpg",
+   "w": "Sun 6:46 p.m.",
+   "iso": "2026-11-22T23:46:08+00:00"
   },
   {
    "o": "NPR",
@@ -2270,6 +2244,22 @@
    "date": "Nov 22",
    "platform": "Official statement",
    "handle": "canada.ca",
+   "hed": "Minister McGuinty concludes Halifax International Security Forum, advancing Canada's defence priorities and partnerships with Allies",
+   "summary": "Today, the Honourable David J. McGuinty, Minister of National Defence, concluded his participation in the 18th annual Halifax International Security Forum (HISF), where he advanced Canada's defence priorities, announced new investments,…",
+   "href": "https://www.canada.ca/en/department-national-defence/news/2026/11/minister-mcguinty-concludes-halifax-international-security-forum-advancing-canadas-defence-priorities-and-partnerships-with-allies.html",
+   "report": false,
+   "iso": "2026-11-22T23:55:20+00:00",
+   "auto": true
+  },
+  {
+   "cat": "mp",
+   "media": "none",
+   "initials": "GC",
+   "name": "Government of Canada",
+   "role": "Official news releases",
+   "date": "Nov 22",
+   "platform": "Official statement",
+   "handle": "canada.ca",
    "hed": "Government of Canada helps keep Toronto’s holiday magic going",
    "summary": "Federal investment to enhance the Original Santa Claus Parade experience and support a beloved Toronto tradition.",
    "href": "https://www.canada.ca/en/economic-development-southern-ontario/news/2026/11/government-of-canada-helps-keep-torontos-holiday-magic-going.html",
@@ -2323,22 +2313,6 @@
    "href": "https://www.pm.gc.ca/en/news/media-advisories/2026/11/21/update-saturday-november-21-2026",
    "report": false,
    "iso": "2026-11-21T16:30:00+00:00",
-   "auto": true
-  },
-  {
-   "cat": "mp",
-   "media": "none",
-   "initials": "GC",
-   "name": "Government of Canada",
-   "role": "Official news releases",
-   "date": "Nov 21",
-   "platform": "Official statement",
-   "handle": "canada.ca",
-   "hed": "Canada to Join the NATO Innovation Fund",
-   "summary": "Today, the Minister of National Defence, the Honourable David J. McGuinty, announced that Canada has concluded negotiations and formally joined the North Atlantic Treaty Organization (NATO) Innovation Fund (NIF), becoming the 25th NATO…",
-   "href": "https://www.canada.ca/en/department-national-defence/news/2026/11/canada-to-join-the-nato-innovation-fund.html",
-   "report": false,
-   "iso": "2026-11-21T15:54:26+00:00",
    "auto": true
   },
   {
@@ -2560,12 +2534,12 @@
    "city": "Ottawa",
    "tz": "America/Toronto",
    "world": false,
-   "w": "Prime Minister Mark",
-   "label": "Trump impersonator joins Prime Minister Mark Carney at…",
-   "u": "https://www.ctvnews.ca/canada/article/trump-impersonator-joins-prime-minister-mark-carney-at-ottawa-press-dinner/",
-   "title": "Trump impersonator joins Prime Minister Mark Carney at Ottawa press dinner",
+   "w": "In court",
+   "label": "Man charged with assaulting officers after man wields…",
+   "u": "https://www.ctvnews.ca/ottawa/article/man-charged-with-assaulting-officers-after-man-wields-knife-near-rideau-centre/",
+   "title": "Man charged with assaulting officers after man wields knife near Rideau Centre",
    "outlet": "CTV News",
-   "t": "Sun 5:45 p.m.",
+   "t": "Sun 5:57 p.m.",
    "hot": false
   },
   {
@@ -2738,18 +2712,6 @@
    "n": 2,
    "url": "https://www.aljazeera.com/news/2026/11/22/trump-criticises-schumer-amid-push-for-new-democrat-leadership-in-us-senate?traffic_source=rss",
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6b03755c-1795388764.jpg?resize=1920%2C1440"
-  },
-  {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Sun 5:45 p.m.",
-   "iso": "2026-11-22T22:45:18+00:00",
-   "title": "Trump impersonator joins Prime Minister Mark Carney at Ottawa press dinner",
-   "summary": "An impersonator of U.S. President Donald Trump joined Prime Minister Mark Carney last night for his comedic address at the annual Parliamentary Press Gallery Dinner in Ottawa.",
-   "outlet": "CTV News + CP24 (CP), Global News",
-   "n": 2,
-   "url": "https://www.ctvnews.ca/canada/article/trump-impersonator-joins-prime-minister-mark-carney-at-ottawa-press-dinner/",
-   "img": "https://www.ctvnews.ca/resizer/v2/H3HUDEJSPZFWTB5LZLQXVFZQUQ.JPG?smart=true&auth=1939c27249a44dc8e1a1a83bac7a77c7c4f0e186993464798df65e0fe699bbf7&width=1200&height=630"
   },
   {
    "desk": "world",
@@ -2978,18 +2940,6 @@
    "n": 1,
    "url": "https://www.ctvnews.ca/politics/article/chinese-investment-in-canadas-auto-sector-to-evolve-over-next-year-federal-government/",
    "img": "https://www.ctvnews.ca/resizer/v2/G3WXHGROGRAD3BNXI4OUG2MQZ4.jpeg?smart=true&auth=a4b50dd9bed89d466fe846b112ea3870a8281f355efc2a1e4955227d7e5c6169&width=1200&height=630"
-  },
-  {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Sat 6:57 p.m.",
-   "iso": "2026-11-21T23:57:32.603000+00:00",
-   "title": "Ontario Liberals elect Navdeep Bains as new party leader",
-   "summary": "Ontario Liberals have elected Navdeep Bains as the party's new leader after a marathon nine-month leadership race, with Bains emerging as victor less than one percentage point ahead of his next closest competitor, provincial caucus member Lee Fairclough.",
-   "outlet": "CBC News (CP)",
-   "n": 1,
-   "url": "https://www.cbc.ca/news/canada/toronto/liberal-leadership-race-results-9.7431298",
-   "img": "https://i.cbc.ca/ais/30690b4b-150c-4b8b-9883-ce3f56442a81,1795278309500/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C8%2C8640%2C4860%29%3BResize%3D620"
   }
  ],
  "reads": [
@@ -3015,18 +2965,6 @@
    "href": "https://thetyee.ca/News/2026/11/21/Lorne-Doerkson-Trimmed-Down-BC-Cabinet/",
    "img": "",
    "dek": "",
-   "auto": true
-  },
-  {
-   "pic": "city",
-   "author": "",
-   "outlet": "The Logic",
-   "date": "Sat 7:00 a.m.",
-   "iso": "2026-11-21T12:00:33+00:00",
-   "hed": "Carmichael: Mark Carney’s leadership style is creating key-man risk",
-   "href": "https://thelogic.co/commentary/mark-carney-leadership-key-man-risk/",
-   "img": "https://thelogic.co/wp-content/uploads/2026/11/Mark_Carney-Shenzhen_China-Nov_2026-P-Adrian_Wyld-CP177301394-1920x1280-1.jpeg",
-   "dek": "Would-be investors in Canada are wondering if rewiring the country’s economy depends too much on one person",
    "auto": true
   }
  ],
@@ -3107,20 +3045,20 @@
    "o": "CTV News",
    "ca": true,
    "h": [
-    "Trump impersonator joins Prime Minister Mark Carney at Ottawa press dinner",
+    "Trump impersonator joins Carney at press dinner",
     "U.S., Canada ‘fairly close’ to trade deal: Greer",
-    "’Once it’s out, it’s out’: Tech analyst criticizes Staples Canada’s response to data breach",
     "Understanding Canada’s commitment to the $100 million NATO Innovation Fund",
     "Canadian provinces looking further afield to fix family doctor shortage",
-    "ICE ‘out of control’, Washington governor says after Seattle airport arrests"
+    "’Once it’s out, it’s out’: Tech analyst criticizes Staples Canada’s response to data breach",
+    "‘We got here at 3:00 a.m.’ Hundreds line up as Wasaga Beach Costco opens its doors"
    ],
    "u": [
     "https://www.ctvnews.ca/canada/article/trump-impersonator-joins-prime-minister-mark-carney-at-ottawa-press-dinner/",
     "https://www.ctvnews.ca/world/trumps-tariffs/article/us-canada-fairly-close-to-trade-deal-greer/",
-    "https://www.ctvnews.ca/canada/article/woefully-inadequate-tech-analyst-criticizes-staples-canadas-response-to-data-breach/",
     "https://www.ctvnews.ca/canada/article/understanding-canadas-commitment-to-the-100-million-nato-innovation-fund/",
     "https://www.ctvnews.ca/health/article/canadian-provinces-looking-further-afield-to-fix-family-doctor-shortage-2/",
-    "https://www.ctvnews.ca/world/article/ice-out-of-control-washington-governor-says-after-seattle-airport-arrests/"
+    "https://www.ctvnews.ca/canada/article/woefully-inadequate-tech-analyst-criticizes-staples-canadas-response-to-data-breach/",
+    "https://www.ctvnews.ca/barrie/article/hundreds-line-up-as-wasaga-beach-costco-opens-its-doors/"
    ]
   },
   {
@@ -3208,7 +3146,7 @@
    "ca": true,
    "h": [
     "Candlelight vigil held for 4 members of same family killed in Burlington fire",
-    "2 teenage boys killed in Scarborough shooting, 1 in hospital",
+    "Toronto police ID 2 teenage boys killed in Scarborough shooting, 1 still in hospital",
     "Early test results for U.S. drug ‘one of the biggest breakthroughs’ for cancer, says Canadian oncologist",
     "Group calls on people to give coyote space following Edward Gardens incident",
     "Gas price prediction: What an expert says Canadians can likely expect at the pumps",
@@ -3322,7 +3260,7 @@
     "Burnham to tell MPs 'landmark' EU deal could make next decade 'much better'",
     "Miley Cyrus marries Maxx Morando in California ceremony",
     "US Army to detonate tonnes of unstable explosives in Iowa despite court order",
-    "Boy, 7, pulled from rubble hours after Russian strike in Ukraine, rescuers say"
+    "Boy, 7, rescued from rubble hours after Russian strike in Ukraine, rescuers say"
    ],
    "u": [
     "https://www.bbc.com/news/articles/cqwy06zrd26lo",
@@ -3383,7 +3321,7 @@
     "url": "https://www.youtube.com/watch?v=wcY4K5CNVx4",
     "img": "https://i.ytimg.com/vi/wcY4K5CNVx4/hqdefault.jpg",
     "story": "Fox News' All-American Christmas tree",
-    "watching": "154"
+    "watching": "134"
    },
    {
     "net": "LiveNOW from FOX",
@@ -3392,7 +3330,7 @@
     "url": "https://www.youtube.com/watch?v=cQokJ-09vlk",
     "img": "https://i.ytimg.com/vi/cQokJ-09vlk/hqdefault.jpg",
     "story": "TOP STORIES: Seattle Airport ICE arrest, Mideast latest, FBI hack",
-    "watching": "554",
+    "watching": "573",
     "reports": [
      {
       "outlet": "PBS NewsHour",
@@ -3501,9 +3439,9 @@
    "story": "Australian politics live: Tehan says Bowen should resign over Cop; Tay",
    "title": "Australian politics live: Tehan says Bowen should resign over Cop; Taylor pays tribute to ‘kind, gentle’ Meldrum",
    "url": "https://www.theguardian.com/australia-news/live/2026/nov/23/anthony-albanese-digital-duty-of-care-labor-greens-coalition-one-nation-angus-taylor-pauline-hanson-penny-wong-ai-ntwnfb",
-   "updated": "2026-11-22T23:55:21+00:00",
+   "updated": "2026-11-23T00:06:07+00:00",
    "ended": false,
-   "img": "https://i.guim.co.uk/img/media/a1733c8d20d91e90b3db6172e139927f1099faab/688_0_6880_5504/master/6880.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=7272f5d34e8f1b41019b66d3819203ea"
+   "img": "https://i.guim.co.uk/img/media/2778355ecb84fbdd945291563fda9cdd5665b91e/688_0_6880_5504/master/6880.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=ab79c7ba758d99f85511157aefdbe40b"
   }
  ],
  "related": {},
@@ -3712,60 +3650,6 @@
      "url": "https://www.cbc.ca/news/canada/new-brunswick/daughter-hand-out-medals-speed-skating-meet-named-for-her-father-9.7432039?cmp=rss",
      "ca": true,
      "tie": ""
-    }
-   ],
-   "official": [],
-   "views": []
-  },
-  "https://www.foxnews.com/world/trump-says-iran-unleashed-missile-drone-surge-after-midterms": {
-   "story": "Trump says Iran unleashed missile, drone surge after midterms",
-   "us": true,
-   "specific": 1,
-   "stories": [
-    {
-     "t": "Thu 7:30 p.m.",
-     "iso": "2026-11-20T00:30:00+00:00",
-     "outlet": "Toronto Star",
-     "title": "Trump's midterm defeat hasn't moved Canada-U.S. trade talks, sources say",
-     "url": "https://www.thestar.com/politics/donald-trump-s-midterm-drubbing-hasn-t-sped-up-canada-s-trade-talks-sources-say/article_ddb8650a-a844-434a-8513-7441ceba77d3.html",
-     "ca": true,
-     "tie": ""
-    },
-    {
-     "t": "Sun 12:47 p.m.",
-     "iso": "2026-11-22T17:47:57+00:00",
-     "outlet": "CTV News",
-     "title": "U.S., Canada ‘fairly close’ to trade deal: Greer",
-     "url": "https://www.ctvnews.ca/world/trumps-tariffs/article/us-canada-fairly-close-to-trade-deal-greer/",
-     "ca": true,
-     "tie": "Canada and the U.S."
-    },
-    {
-     "t": "Sat 6:52 p.m.",
-     "iso": "2026-11-21T23:52:23+00:00",
-     "outlet": "The Hill",
-     "title": "Rounds: Pentagon restricted socialization between US, Canada defense officials",
-     "url": "https://thehill.com/policy/defense/6235519-dod-limits-us-canada-socializing/",
-     "ca": false,
-     "tie": "Canada and the U.S."
-    },
-    {
-     "t": "Fri 7:25 p.m.",
-     "iso": "2026-11-21T00:25:49+00:00",
-     "outlet": "CBC News",
-     "title": "U.S. senator says Canada should make interim tariff agreement, let Congress 'legislate' long-term deal",
-     "url": "https://www.cbc.ca/news/politics/us-canada-interim-deal-tariffs-senator-long-term-9.7430913?cmp=rss",
-     "ca": true,
-     "tie": "Canada and the U.S."
-    },
-    {
-     "t": "Fri 7:15 p.m.",
-     "iso": "2026-11-21T00:15:32+00:00",
-     "outlet": "Canada's National Observer",
-     "title": "Trump says Canada feeling 'emboldened' but he's seeking a 'fair' trade deal",
-     "url": "https://www.nationalobserver.com/2026/11/20/news/trump-says-canada-feeling-emboldened-hes-seeking-fair-trade-deal",
-     "ca": false,
-     "tie": "Canada and the U.S."
     }
    ],
    "official": [],
@@ -4502,5 +4386,12 @@
  "geo_blocked": [
   "-NabWfv-VdA"
  ],
- "noembed": []
+ "noembed": [
+  "J3FV4iY8p5w",
+  "L6qtnHZxwEw",
+  "NuEr0Q_AS6U",
+  "ldElU-Q5Qyo",
+  "t_HBrWb84eY",
+  "tv6kdVPMDMY"
+ ]
 }
