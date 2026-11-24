@@ -1,41 +1,21 @@
 {
- "checked": "2026-11-24T12:48:08.405813+00:00",
- "labels": 196,
- "problems": [
-  {
-   "label": "ABC News",
-   "opens": "https://www.halifaxexaminer.ca/data-centres/emissions-are-another-reason-for-an-environmental-review-of-everwinds-hyperscale-data-centre/",
-   "section": "developed",
-   "link": false,
-   "width": 390
-  },
-  {
-   "label": "NBC News",
-   "opens": "https://www.halifaxexaminer.ca/data-centres/emissions-are-another-reason-for-an-environmental-review-of-everwinds-hyperscale-data-centre/",
-   "section": "developed",
-   "link": false,
-   "width": 390
-  }
- ],
+ "checked": "2026-11-24T23:09:30.205006+00:00",
+ "labels": 216,
+ "problems": [],
  "guard": {
   "fixed": [
    {
     "label": "ABC News",
     "was": "(card link) abcnews.com",
-    "now": "https://abcnews.com/US/trump-administration-assured-nvidia-huang-facing-criminal-charges/story?id=138405808"
-   },
-   {
-    "label": "NPR",
-    "was": "(card link) npr.org",
-    "now": "https://www.npr.org/2026/11/24/g-s1-155227/up-first-newsletter-nvidia-jensen-huang-trump-ukraine-russia-jimmy-gomez"
-   },
-   {
-    "label": "Politico",
-    "was": "(card link) politico.com",
-    "now": "https://www.politico.com/news/2026/11/23/democrats-2028-nvidia-trump-corruption-message-01181056"
+    "now": "https://abcnews.com/US/threat-finally-real-judge-rips-white-house-weaponization/story?id=138417990"
    }
   ],
-  "disabled": [],
+  "disabled": [
+   {
+    "label": "The Hill Timessubscribers",
+    "href": "https://www.hilltimes.com/2026/10/21/canada-should-continue-to-speak-loudly-and-clearly-despite-u-s-envoys-interference-claims-say-former-diplomats-and-ex-mp/522696/"
+   }
+  ],
   "lifted": []
  }
 }
