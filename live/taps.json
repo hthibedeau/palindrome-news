@@ -1,24 +1,40 @@
 {
- "checked": "2026-11-24T02:24:52.876590+00:00",
- "labels": 213,
+ "checked": "2026-11-24T12:48:08.405813+00:00",
+ "labels": 196,
  "problems": [
   {
-   "label": "The Japan Times",
-   "opens": "https://www.cbc.ca/news/canada/new-brunswick/coroner-inquest-death-david-virgil-dykeman-saint-john-police-custody-9.7429945",
+   "label": "ABC News",
+   "opens": "https://www.halifaxexaminer.ca/data-centres/emissions-are-another-reason-for-an-environmental-review-of-everwinds-hyperscale-data-centre/",
    "section": "developed",
    "link": false,
    "width": 390
   },
   {
    "label": "NBC News",
-   "opens": "https://www.cbc.ca/news/canada/new-brunswick/coroner-inquest-death-david-virgil-dykeman-saint-john-police-custody-9.7429945",
+   "opens": "https://www.halifaxexaminer.ca/data-centres/emissions-are-another-reason-for-an-environmental-review-of-everwinds-hyperscale-data-centre/",
    "section": "developed",
    "link": false,
    "width": 390
   }
  ],
  "guard": {
-  "fixed": [],
+  "fixed": [
+   {
+    "label": "ABC News",
+    "was": "(card link) abcnews.com",
+    "now": "https://abcnews.com/US/trump-administration-assured-nvidia-huang-facing-criminal-charges/story?id=138405808"
+   },
+   {
+    "label": "NPR",
+    "was": "(card link) npr.org",
+    "now": "https://www.npr.org/2026/11/24/g-s1-155227/up-first-newsletter-nvidia-jensen-huang-trump-ukraine-russia-jimmy-gomez"
+   },
+   {
+    "label": "Politico",
+    "was": "(card link) politico.com",
+    "now": "https://www.politico.com/news/2026/11/23/democrats-2028-nvidia-trump-corruption-message-01181056"
+   }
+  ],
   "disabled": [],
   "lifted": []
  }
