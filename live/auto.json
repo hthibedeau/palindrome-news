@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-25T06:37:50.624382+00:00",
- "checkedLabel": "Wed 1:37 a.m.",
+ "checked": "2026-11-25T06:47:50.323342+00:00",
+ "checkedLabel": "Wed 1:47 a.m.",
  "stories": [
   {
    "key": "top",
@@ -31,6 +31,15 @@
  ],
  "wire": [
   [
+   "Wed 1:45 a.m.",
+   "Latest",
+   "Small plane crash off Mississippi kills 6, including 2 children",
+   "CBS News",
+   "https://www.cbsnews.com/news/small-plane-crash-off-mississippi-6-dead-2-children/",
+   "2026-11-25T06:45:39+00:00",
+   3
+  ],
+  [
    "Wed 1:36 a.m.",
    "U.S.",
    "Kilmar Ábrego García leaves US for Spain, ending Trump deportation battle",
@@ -46,7 +55,7 @@
    "CBC News",
    "https://www.cbc.ca/news/world/trump-jensen-huang-nvidia-china-9.7433543",
    "2026-11-25T06:25:40.774000+00:00",
-   3
+   2
   ],
   [
    "Wed 1:18 a.m.",
@@ -94,13 +103,13 @@
    2
   ],
   [
-   "Wed 12:30 a.m.",
-   "Latest",
-   "6 dead after plane crashes off Mississippi coast: US Coast Guard",
-   "ABC News",
-   "https://abcnews.com/US/plane-carrying-6-people-crashes-off-mississippi-coast/story?id=138427173",
-   "2026-11-25T05:30:21+00:00",
-   2
+   "Wed 12:35 a.m.",
+   "World",
+   "North Korea expels head of Swiss diplomatic office, state media reports",
+   "The Japan Times",
+   "https://www.japantimes.co.jp/news/2026/11/25/asia-pacific/north-korea-swiss-diplomatic-office/",
+   "2026-11-25T05:35:00+00:00",
+   3
   ],
   [
    "Wed 12:27 a.m.",
@@ -245,15 +254,6 @@
    "https://www.aljazeera.com/video/newsfeed/2026/11/25/protesters-clash-with-police-over-venezuelas-poor-minimum-wage?traffic_source=rss",
    "2026-11-25T04:27:10+00:00",
    1
-  ],
-  [
-   "Tue 11:17 p.m.",
-   "Canada",
-   "Canadian astronaut's wife gives birth with husband aboard ISS",
-   "CBS News",
-   "https://www.cbsnews.com/news/wife-canadian-astronaut-international-space-station-gives-birth-joshua-kutryk/",
-   "2026-11-25T04:17:44+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -311,10 +311,10 @@
    "theme": ""
   },
   {
-   "score": 13,
+   "score": 14,
    "title": "Canadian Forces Military Police member charged with five service offences",
    "url": "https://www.ctvnews.ca/canada/article/canadian-forces-military-police-member-charged-with-five-service-offences/",
-   "outlets": 13,
+   "outlets": 14,
    "why": [],
    "theme": ""
   },
@@ -356,6 +356,14 @@
   },
   {
    "score": 11,
+   "title": "Small plane crash off Mississippi kills 6, including 2 children",
+   "url": "https://www.cbsnews.com/news/small-plane-crash-off-mississippi-6-dead-2-children/",
+   "outlets": 9,
+   "why": [],
+   "theme": ""
+  },
+  {
+   "score": 11,
    "title": "New Canada-Qatar deal will 'open the door' to more trade and investment: minister",
    "url": "https://www.cbc.ca/player/play/video/9.7434761",
    "outlets": 11,
@@ -366,14 +374,6 @@
    "score": 10,
    "title": "Kilmar Ábrego García leaves US for Spain, ending Trump deportation battle",
    "url": "https://www.bbc.co.uk/news/articles/c6808pyy5dl9o?at_medium=RSS&at_campaign=rss",
-   "outlets": 8,
-   "why": [],
-   "theme": ""
-  },
-  {
-   "score": 10,
-   "title": "Plane crash off the coast of Mississippi kills 6, including 2 children",
-   "url": "https://www.timescolonist.com/world-news/plane-crash-off-the-coast-of-mississippi-kills-6-including-2-children-13056581",
    "outlets": 8,
    "why": [],
    "theme": ""
@@ -400,9 +400,9 @@
     "key": "auto-25d33bc5",
     "words": [
      "anthropic",
+     "trump's",
      "huang’s",
      "huang's",
-     "trump's",
      "jensen",
      "nvidia"
     ],
@@ -727,11 +727,10 @@
     "incoherent": false,
     "popular": 0,
     "us_election": false,
-    "fronts": 3,
+    "fronts": 2,
     "fronts_ca": 0,
     "fronts_who": [
      "NBC News",
-     "CBS News",
      "BBC News"
     ],
     "outled_ca": 2,
@@ -909,14 +908,6 @@
     "weight": 20.0,
     "videos": [
      {
-      "net": "CTV News",
-      "url": "https://www.youtube.com/watch?v=P55FCHVvSO8",
-      "title": "Stellantis sues Unifor over alleged blockade at Brampton plant | CTV National News for Nov.24, 2026",
-      "img": "https://i.ytimg.com/vi/P55FCHVvSO8/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
       "net": "CBC News",
       "url": "https://www.youtube.com/watch?v=MX8e8k6w8FA",
       "title": "'They owe us': president of union at Stellantis's Brampton, Ont., plant",
@@ -931,6 +922,14 @@
       "img": "https://i.ytimg.com/vi/PMXGs9B4jZI/hqdefault.jpg",
       "rec": false,
       "up": ""
+     },
+     {
+      "net": "CTV News",
+      "url": "https://www.youtube.com/watch?v=P55FCHVvSO8",
+      "title": "Stellantis sues Unifor over alleged blockade at Brampton plant | CTV National News for Nov.24, 2026",
+      "img": "https://i.ytimg.com/vi/P55FCHVvSO8/hqdefault.jpg",
+      "rec": false,
+      "up": ""
      }
     ]
    },
@@ -940,16 +939,16 @@
      "mississippi",
      "guard"
     ],
-    "score": 10,
+    "score": 11,
     "outlets": 4,
-    "carriers": 5,
+    "carriers": 6,
     "tag": "Breaking",
-    "title": "Plane crash off the coast of Mississippi kills 6, including 2 children",
-    "url": "https://www.timescolonist.com/world-news/plane-crash-off-the-coast-of-mississippi-kills-6-including-2-children-13056581",
-    "outlet": "Times Colonist",
-    "t": "Wed 1:03 a.m.",
-    "iso": "2026-11-25T06:03:48+00:00",
-    "summary": "Six people, including two children, have been found dead after a plane crashed off the coast of Mississippi Tuesday, according to the U.S. Coast Guard.",
+    "title": "Small plane crash off Mississippi kills 6, including 2 children",
+    "url": "https://www.cbsnews.com/news/small-plane-crash-off-mississippi-6-dead-2-children/",
+    "outlet": "CBS News",
+    "t": "Wed 1:45 a.m.",
+    "iso": "2026-11-25T06:45:39+00:00",
+    "summary": "Six people, including two children, have been found dead after a plane crashed off the coast of Mississippi, according to the Coast Guard.",
     "first": {
      "outlet": "Fox News",
      "url": "https://www.foxnews.com/us/coast-guard-searching-2-children-4-adults-after-plane-crashes-off-mississippi-coast",
@@ -957,30 +956,31 @@
      "title": "Coast Guard searching for 2 children, 4 adults after plane crashes off Mississippi coast",
      "iso": "2026-11-25T00:45:06+00:00"
     },
-    "newest": "2026-11-25T06:03:48+00:00",
+    "newest": "2026-11-25T06:45:39+00:00",
     "photo": {
-     "src": "live/img/auto-0eda8fdf-c6e13df16a.jpg",
-     "orig": "https://www.vmcdn.ca/f/files/shared/site_images/world_news_2017.jpg",
-     "caption": "From: Plane crash off the coast of Mississippi kills 6, including 2 children. — via Times Colonist",
-     "alt": "Plane crash off the coast of Mississippi kills 6, including 2 children",
-     "outlet": "Times Colonist",
-     "url": "https://www.timescolonist.com/world-news/plane-crash-off-the-coast-of-mississippi-kills-6-including-2-children-13056581",
-     "since": "2026-11-25T06:40:24.065538+00:00"
+     "src": "live/img/auto-0eda8fdf-b7d6d16929.jpg",
+     "orig": "https://assets3.cbsnewsstatic.com/hub/i/r/2025/08/27/27400870-d258-4de1-a176-24a5dfcf1773/thumbnail/1200x630/955e91a8c731bce77e1f20d1994d4773/gettyimages-1889004791.jpg",
+     "caption": "From: Small plane crash off Mississippi kills 6, including 2 children. — via CBS News",
+     "alt": "Small plane crash off Mississippi kills 6, including 2 children",
+     "outlet": "CBS News",
+     "url": "https://www.cbsnews.com/news/small-plane-crash-off-mississippi-6-dead-2-children/",
+     "since": "2026-11-25T06:49:08.238976+00:00"
     },
     "photo_seen": [
      "https://www.vmcdn.ca/f/files/shared/site_images/world_news_2017.jpg",
      "https://i.abcnewsfe.com/a/4cc9cc62-722c-4938-9204-83745f85d781/coast-guard-logo-gty-jt-260204_1771525657607_hpMain_16x9.jpg?w=1600",
      "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/custom/image/f84403b8-7d76-11ee-9d02-a72a4951957f.png?resize=600%2C600",
-     "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-11/261124-coast-guard-mississippi-mn-1950-bfed00.jpg"
+     "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-11/261124-coast-guard-mississippi-mn-1950-bfed00.jpg",
+     "https://assets3.cbsnewsstatic.com/hub/i/r/2025/08/27/27400870-d258-4de1-a176-24a5dfcf1773/thumbnail/1200x630/955e91a8c731bce77e1f20d1994d4773/gettyimages-1889004791.jpg"
     ],
     "photos": [
      {
-      "src": "live/img/auto-0eda8fdf-c6e13df16a.jpg",
-      "orig": "https://www.vmcdn.ca/f/files/shared/site_images/world_news_2017.jpg",
-      "caption": "From: Plane crash off the coast of Mississippi kills 6, including 2 children. — via Times Colonist",
-      "alt": "Plane crash off the coast of Mississippi kills 6, including 2 children",
-      "outlet": "Times Colonist",
-      "url": "https://www.timescolonist.com/world-news/plane-crash-off-the-coast-of-mississippi-kills-6-including-2-children-13056581"
+      "src": "live/img/auto-0eda8fdf-b7d6d16929.jpg",
+      "orig": "https://assets3.cbsnewsstatic.com/hub/i/r/2025/08/27/27400870-d258-4de1-a176-24a5dfcf1773/thumbnail/1200x630/955e91a8c731bce77e1f20d1994d4773/gettyimages-1889004791.jpg",
+      "caption": "From: Small plane crash off Mississippi kills 6, including 2 children. — via CBS News",
+      "alt": "Small plane crash off Mississippi kills 6, including 2 children",
+      "outlet": "CBS News",
+      "url": "https://www.cbsnews.com/news/small-plane-crash-off-mississippi-6-dead-2-children/"
      },
      {
       "src": "live/img/auto-0eda8fdf-414f7a1d1d.jpg",
@@ -994,12 +994,20 @@
     "independent": 4,
     "reports": [
      {
+      "t": "Wed 1:45 a.m.",
+      "iso": "2026-11-25T06:45:39+00:00",
+      "outlet": "CBS News",
+      "title": "Small plane crash off Mississippi kills 6, including 2 children",
+      "url": "https://www.cbsnews.com/news/small-plane-crash-off-mississippi-6-dead-2-children/",
+      "desc": "Six people, including two children, have been found dead after a plane crashed off the coast of Mississippi, according to the Coast Guard."
+     },
+     {
       "t": "Wed 1:03 a.m.",
       "iso": "2026-11-25T06:03:48+00:00",
       "outlet": "Times Colonist",
       "title": "Plane crash off the coast of Mississippi kills 6, including 2 children",
       "url": "https://www.timescolonist.com/world-news/plane-crash-off-the-coast-of-mississippi-kills-6-including-2-children-13056581",
-      "desc": "Six people, including two children, have been found dead after a plane crashed off the coast of Mississippi Tuesday, according to the U.S. Coast Guard."
+      "desc": ""
      },
      {
       "t": "Wed 12:30 a.m.",
@@ -1053,12 +1061,21 @@
         "outlet": "Times Colonist",
         "src": "The Associated Press",
         "byline": "\"Gene Johnson, The Associated Press\" \r\n             \r\nG"
+       },
+       {
+        "outlet": "CBS News",
+        "src": "CBS News",
+        "byline": ""
        }
       ],
       "copies": [
        {
         "outlet": "Times Colonist",
         "url": "https://www.timescolonist.com/world-news/plane-crash-off-the-coast-of-mississippi-kills-6-including-2-children-13056581"
+       },
+       {
+        "outlet": "CBS News",
+        "url": "https://www.cbsnews.com/news/small-plane-crash-off-mississippi-6-dead-2-children/"
        }
       ]
      },
@@ -1130,7 +1147,7 @@
     "outled_ca": 2,
     "judgment": "national",
     "judgment_why": "National: affects many people; carried beyond one city.",
-    "weight": 30.5
+    "weight": 32.0
    }
   ],
   "considered": [
@@ -1146,10 +1163,9 @@
     "canada": "none",
     "theme": "",
     "top": true,
-    "fronts": 3,
+    "fronts": 2,
     "fronts_who": [
      "NBC News",
-     "CBS News",
      "BBC News"
     ],
     "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
@@ -1180,12 +1196,12 @@
     "why_judged": "Regional: a single incident touching a few people; carried beyond one city."
    },
    {
-    "title": "Plane crash off the coast of Mississippi kills 6, including 2 children",
-    "url": "https://www.timescolonist.com/world-news/plane-crash-off-the-coast-of-mississippi-kills-6-including-2-children-13056581",
+    "title": "Small plane crash off Mississippi kills 6, including 2 children",
+    "url": "https://www.cbsnews.com/news/small-plane-crash-off-mississippi-6-dead-2-children/",
     "rank": 3,
     "live": "",
-    "weight": 30.5,
-    "score": 10,
+    "weight": 32.0,
+    "score": 11,
     "independent": 4,
     "most_read": 0,
     "canada": "none",
@@ -1196,7 +1212,7 @@
      "ABC News"
     ],
     "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
-    "carriers": 5,
+    "carriers": 6,
     "judgment": "national",
     "why_judged": "National: affects many people; carried beyond one city."
    },
@@ -1220,7 +1236,7 @@
     "why_judged": "National: affects many people; carried across the country (national desks)."
    },
    {
-    "title": "Thomas Markle indicted in US for possessing child sex abuse images",
+    "title": "Thomas Markle charged in US for possessing child sex abuse images",
     "url": "https://www.bbc.co.uk/news/articles/crwy4egxn592o?at_medium=RSS&at_campaign=rss",
     "rank": 5,
     "live": "",
@@ -1253,10 +1269,9 @@
     "canada": "none",
     "theme": "",
     "top": false,
-    "fronts": 3,
+    "fronts": 2,
     "fronts_who": [
      "NBC News",
-     "CBS News",
      "ABC News"
     ],
     "rule": "No Canadian tie",
@@ -1308,7 +1323,7 @@
    },
    {
     "title": "Canadian Forces Military Police member charged with five service offences",
-    "score": 13,
+    "score": 14,
     "why": "not built: only 1 independent report(s) (13 sites)"
    },
    {
@@ -1335,11 +1350,6 @@
     "title": "Canada, India negotiate defence and information security pacts ahead of Modi visit",
     "score": 9,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Europe’s most popular cities for Christmas getaways – according to search trends",
-    "score": 9,
-    "why": "not built: only 2 independent report(s) (2 sites)"
    }
   ],
   "moved": [],
@@ -1351,7 +1361,7 @@
     "url": "https://www.japantimes.co.jp/business/2026/11/25/tech/china-huawei-us-iran-business/"
    },
    {
-    "title": "Thomas Markle indicted in US for possessing child sex abuse images",
+    "title": "Thomas Markle charged in US for possessing child sex abuse images",
     "url": "https://www.bbc.co.uk/news/articles/crwy4egxn592o?at_medium=RSS&at_campaign=rss"
    },
    {
@@ -1518,7 +1528,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=sHkcPNuEuX8",
    "img": "https://i.ytimg.com/vi/sHkcPNuEuX8/hqdefault.jpg",
-   "up": "2026-11-25",
+   "up": "2026-11-24",
    "added": "2026-11-25T04:50:54.714047+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1532,7 +1542,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=wR1L4I2SL8A",
    "img": "https://i.ytimg.com/vi/wR1L4I2SL8A/hqdefault.jpg",
-   "up": "2026-11-25",
+   "up": "2026-11-24",
    "added": "2026-11-25T04:50:54.714047+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1742,7 +1752,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=Lc7PAAonqJc",
    "img": "https://i.ytimg.com/vi/Lc7PAAonqJc/hqdefault.jpg",
-   "up": "2026-11-25",
+   "up": "2026-11-24",
    "added": "2026-11-25T06:21:39.113659+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1786,6 +1796,34 @@
    "img": "https://i.ytimg.com/vi/moHPeN65X54/hqdefault.jpg",
    "up": "2026-11-25",
    "added": "2026-11-25T06:31:38.535553+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "fh-rp70i4Kc",
+   "r": "us",
+   "o": "Associated Press",
+   "t": "Inside New York's Rikers Island as jail staff cook Thanksgiving turkeys for inmates",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=fh-rp70i4Kc",
+   "img": "https://i.ytimg.com/vi/fh-rp70i4Kc/hqdefault.jpg",
+   "up": "2026-11-25",
+   "added": "2026-11-25T06:47:50.323342+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "jTfADqVyYiI",
+   "r": "us",
+   "o": "Associated Press",
+   "t": "Thousands of Indian pilgrims visit Pakistani shrine for Guru Nanak, the founder of Sikhism",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=jTfADqVyYiI",
+   "img": "https://i.ytimg.com/vi/jTfADqVyYiI/hqdefault.jpg",
+   "up": "2026-11-25",
+   "added": "2026-11-25T06:47:50.323342+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1891,7 +1929,7 @@
    "id": "pqw0QA9YF4g",
    "r": "world",
    "o": "Sky News",
-   "t": "Why are people having less sex than they used to?",
+   "t": "Why are Britons getting half as much sex as they used to?",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=pqw0QA9YF4g",
@@ -1933,11 +1971,11 @@
  "ledes": [
   {
    "o": "CBS News",
-   "h": "Army to detonate unstable explosives in Iowa Wednesday morning",
-   "u": "https://www.cbsnews.com/news/army-iowa-explosives-trump-appeals-court/",
-   "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/23/92eabf07-5631-4d13-bd7d-555571190eb6/thumbnail/1200x630/dc5fac32e6d2d81a3d442048e904db52/ap26322823699168.jpg",
-   "w": "Tue 11:51 p.m.",
-   "iso": "2026-11-25T04:51:33+00:00"
+   "h": "Small plane crash off Mississippi kills 6, including 2 children",
+   "u": "https://www.cbsnews.com/news/small-plane-crash-off-mississippi-6-dead-2-children/",
+   "img": "https://assets3.cbsnewsstatic.com/hub/i/r/2025/08/27/27400870-d258-4de1-a176-24a5dfcf1773/thumbnail/1200x630/955e91a8c731bce77e1f20d1994d4773/gettyimages-1889004791.jpg",
+   "w": "Wed 1:45 a.m.",
+   "iso": "2026-11-25T06:45:39+00:00"
   },
   {
    "o": "ABC News",
@@ -2750,16 +2788,16 @@
  "bigweek": [],
  "desks": [
   {
-   "desk": "us",
-   "pic": "podium",
-   "t": "Tue 11:03 p.m.",
-   "iso": "2026-11-25T04:03:16+00:00",
-   "title": "Colom says he’s ‘excited’ to work with Trump at Itawamba County town hall",
-   "summary": "",
-   "outlet": "The Hill, NBC News, Toronto Star (AP), CTV News (CP), Toronto Star, Middle East Eye, ABC News",
+   "desk": "world",
+   "pic": "globe",
+   "t": "Tue 11:48 p.m.",
+   "iso": "2026-11-25T04:48:57+00:00",
+   "title": "UK warns companies of potential Russian sabotage threat",
+   "summary": "Britain's Defence Ministry and security service warn of the threat in unusual public announcement.",
+   "outlet": "Al Jazeera, Kyiv Independent, The Japan Times, PBS NewsHour, Euronews (AP), Euronews, CP24",
    "n": 7,
-   "url": "https://thehill.com/homenews/senate/6241772-colom-trump-healthcare-cooperation/",
-   "img": ""
+   "url": "https://www.aljazeera.com/news/2026/11/25/uk-warns-companies-of-potential-russian-sabotage-threat?traffic_source=rss",
+   "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/2024-11-17T142342Z_505293507_RC227BANRU6A_RTRMADP_3_UKRAINE-CRISIS-ANNIVERSARY-BRITAIN-PROTEST-1795573872.jpg?resize=1920%2C1440"
   },
   {
    "desk": "us",
@@ -2774,16 +2812,28 @@
    "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/3c4a/live/dcbcfdf0-e85a-11f1-9b85-e50d1e9de678.jpg"
   },
   {
+   "desk": "us",
+   "pic": "podium",
+   "t": "Tue 11:03 p.m.",
+   "iso": "2026-11-25T04:03:16+00:00",
+   "title": "Colom says he’s ‘excited’ to work with Trump at Itawamba County town hall",
+   "summary": "",
+   "outlet": "The Hill, NBC News, Toronto Star (AP), CTV News (CP), Middle East Eye, ABC News",
+   "n": 6,
+   "url": "https://thehill.com/homenews/senate/6241772-colom-trump-healthcare-cooperation/",
+   "img": ""
+  },
+  {
    "desk": "world",
    "pic": "globe",
-   "t": "Tue 11:48 p.m.",
-   "iso": "2026-11-25T04:48:57+00:00",
-   "title": "UK warns companies of potential Russian sabotage threat",
-   "summary": "Britain's Defence Ministry and security service warn of the threat in unusual public announcement.",
-   "outlet": "Al Jazeera, Kyiv Independent, The Japan Times, PBS NewsHour, Euronews, CP24",
-   "n": 6,
-   "url": "https://www.aljazeera.com/news/2026/11/25/uk-warns-companies-of-potential-russian-sabotage-threat?traffic_source=rss",
-   "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/2024-11-17T142342Z_505293507_RC227BANRU6A_RTRMADP_3_UKRAINE-CRISIS-ANNIVERSARY-BRITAIN-PROTEST-1795573872.jpg?resize=1920%2C1440"
+   "t": "Wed 1:45 a.m.",
+   "iso": "2026-11-25T06:45:39+00:00",
+   "title": "Small plane crash off Mississippi kills 6, including 2 children",
+   "summary": "Six people, including two children, have been found dead after a plane crashed off the coast of Mississippi, according to the Coast Guard.",
+   "outlet": "CBS News + Toronto Star + CTV News + CP24 + 1 more (AP), ABC News, NBC News, Fox News, PBS NewsHour",
+   "n": 5,
+   "url": "https://www.cbsnews.com/news/small-plane-crash-off-mississippi-6-dead-2-children/",
+   "img": "https://assets3.cbsnewsstatic.com/hub/i/r/2025/08/27/27400870-d258-4de1-a176-24a5dfcf1773/thumbnail/1200x630/955e91a8c731bce77e1f20d1994d4773/gettyimages-1889004791.jpg"
   },
   {
    "desk": "world",
@@ -2803,23 +2853,11 @@
    "t": "Wed 12:12 a.m.",
    "iso": "2026-11-25T05:12:28+00:00",
    "title": "China sends first foreign astronaut to its space station as Pakistani joins Shenzhou 24 crew",
-   "summary": "The crew will carry out more than 90 scientific experiments and technology tests. according to China's state media reports.",
+   "summary": "",
    "outlet": "Euronews, CP24 + BNN Bloomberg + Toronto Star + CBS News + 2 more, BBC News, The Japan Times (Reuters), Toronto Sun + The Japan Times (AFP)",
    "n": 5,
    "url": "https://www.euronews.com/2026/11/25/china-sends-first-foreign-astronaut-to-its-space-station-as-pakistani-joins-shenzhou-24-cr",
-   "img": "https://images.euronews.com/articles/stories/10/00/69/66/1200x675_cmsv2_35f4a487-e2e6-5255-9d47-9dc446d060dc-10006966.jpg"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Wed 1:03 a.m.",
-   "iso": "2026-11-25T06:03:48+00:00",
-   "title": "Plane crash off the coast of Mississippi kills 6, including 2 children",
-   "summary": "Six people, including two children, have been found dead after a plane crashed off the coast of Mississippi Tuesday, according to the U.S. Coast Guard.",
-   "outlet": "Times Colonist + PBS NewsHour + Toronto Star + CTV News + 1 more (AP), ABC News, NBC News, Fox News",
-   "n": 4,
-   "url": "https://www.timescolonist.com/world-news/plane-crash-off-the-coast-of-mississippi-kills-6-including-2-children-13056581",
-   "img": "https://www.vmcdn.ca/f/files/shared/site_images/world_news_2017.jpg"
+   "img": ""
   },
   {
    "desk": "world",
@@ -2838,7 +2876,7 @@
    "pic": "globe",
    "t": "Tue 8:40 p.m.",
    "iso": "2026-11-25T01:40:42+00:00",
-   "title": "Thomas Markle indicted in US for possessing child sex abuse images",
+   "title": "Thomas Markle charged in US for possessing child sex abuse images",
    "summary": "The FBI arrested Markle on 6 November after a search of a storage unit he had allegedly rented in Los Angeles uncovered the abuse material.",
    "outlet": "BBC News, Toronto Sun, CityNews Winnipeg + CityNews Vancouver + CityNews Ottawa + CityNews Montreal + 4 more (AP), CBS News",
    "n": 4,
@@ -2846,16 +2884,16 @@
    "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/a486/live/58170a20-e862-11f1-a094-5fdc692f3e33.png"
   },
   {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Tue 6:42 p.m.",
-   "iso": "2026-11-24T23:42:26+00:00",
-   "title": "Vatican releases Pope Francis' private diary detailing spiritual crisis, encounters with the devil",
-   "summary": "Pope Francis' private diary reveals a two-year spiritual crisis from 2021, with the late pontiff writing he felt tempted by the devil and saw hell in 2018.",
-   "outlet": "Fox News, CP24 (AP), The Hill, Euronews",
+   "desk": "business",
+   "pic": "chart",
+   "t": "Tue 8:00 p.m.",
+   "iso": "2026-11-25T01:00:01+00:00",
+   "title": "This Toronto Christmas market was just named among the best in the world for 2026",
+   "summary": "When you think of the world's best Christmas markets, magical locations in Germany and across Europe probably come to mind. However, you don't need to leave the country to enjoy one of the top holiday markets.",
+   "outlet": "Narcity, Toronto Star, Global News, CP24",
    "n": 4,
-   "url": "https://www.foxnews.com/world/vatican-releases-pope-francis-private-diary-detailing-spiritual-crisis-encounters-devil",
-   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2018/09/2e42a093-pope-francis.jpg"
+   "url": "https://www.narcity.com/toronto/toronto-christmas-market-distillery-winter-village-best-christmas-market-2026",
+   "img": "https://www.narcity.com/media-library/woman-at-a-christmas-market-right-a-festive-pretzel-stall.jpg?id=68764633&width=1200&height=600&coordinates=0%2C36%2C0%2C36"
   },
   {
    "desk": "world",
@@ -2868,6 +2906,18 @@
    "n": 3,
    "url": "https://www.japantimes.co.jp/news/2026/11/25/asia-pacific/north-korea-swiss-diplomatic-office/",
    "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/25/575877.JPG?v=3.1"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Wed 12:02 a.m.",
+   "iso": "2026-11-25T05:02:20+00:00",
+   "title": "Macy’s Thanksgiving Day Parade to celebrate a milestone with Blue Hippo, Bluey and Megan Moroney",
+   "summary": "NEW YORK (AP) — One of the stars of this year’s Macy’s Thanksgiving Day Parade should be very easy to spot. Just look in the sky for a gigantic blue",
+   "outlet": "Toronto Star + Times Colonist (AP), The Hill, Telegraph-Journal",
+   "n": 3,
+   "url": "https://www.thestar.com/news/world/united-states/macy-s-thanksgiving-day-parade-to-celebrate-a-milestone-with-blue-hippo-bluey-and-megan-moroney/article_566fbd16-7008-5146-b4da-50bcd82ee7fe.html",
+   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/1/1d/11d47ee8-8185-5731-ba12-49d4775a5cec/6b066c83cdcc5.image.jpg?crop=1558%2C818%2C0%2C131&resize=1200%2C630&order=crop%2Cresize"
   },
   {
    "desk": "us",
@@ -2966,6 +3016,18 @@
    "img": "https://www.ctvnews.ca/resizer/v2/2JMJGXT2C5HFLCXOABEMBGF5NQ.jpg?smart=true&auth=977560a871af6a38f7e1dcf0e8d83738e49f596c944379aed987921025d1b4b0&width=1200&height=630"
   },
   {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Tue 6:30 p.m.",
+   "iso": "2026-11-24T23:30:23+00:00",
+   "title": "Manitoba Possible workers announce strike mandate vote as they bargain for better wages",
+   "summary": "Manitoba Possible’s redeveloped building is set to reopen Wednesday, featuring a range of new and improved accessibility features. However, the union representing Manitoba Possible workers says employees have voted in favour of a strike mandate amid ongoing collective bargaining negotiations. The union says workers are seeking a wage increase, arguing many employees are struggling to […]",
+   "outlet": "CityNews Winnipeg, VOCM",
+   "n": 2,
+   "url": "https://winnipeg.citynews.ca/2026/11/24/manitoba-possible-workers-strike-mandate-vote-bargain-better-wages/",
+   "img": "https://winnipeg.citynews.ca/wp-content/blogs.dir/sites/13/Manitoba-Possible-workers.jpg"
+  },
+  {
    "desk": "politics",
    "pic": "parliament",
    "t": "Tue 6:08 p.m.",
@@ -2996,7 +3058,7 @@
    "iso": "2026-11-24T18:40:09+00:00",
    "title": "Quebec appeals ruling reinstating oath to King as legislature opening looms",
    "summary": "Quebec opposition leaders are urging Premier Paul St-Pierre Plamondon not to delay opening the parliamentary session over the oath to the King.",
-   "outlet": "Global News, Toronto Star",
+   "outlet": "Global News, Toronto Star (CP)",
    "n": 2,
    "url": "https://globalnews.ca/news/12164381/quebec-king-oath/",
    "img": "https://globalnews.ca/wp-content/uploads/2026/11/a77b3a2657cdfd02919f85c9cb987c3f09684340433855a20f38a734090c1c4e.jpg?quality=65&strip=all&w=720&h=379&crop=1"
@@ -3048,30 +3110,6 @@
    "n": 1,
    "url": "https://www.aljazeera.com/news/2026/11/25/asias-stock-markets-dive-as-doubts-to-swirl-over-ai-boom?traffic_source=rss",
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/AP26328080652490-1795572292.jpg?resize=1920%2C1440"
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Tue 9:45 p.m.",
-   "iso": "2026-11-25T02:45:00+00:00",
-   "title": "Calgary budget proposes hiring more than 3,500 new staff over four years",
-   "summary": "The increased hiring would also require an additional $2.4 million starting in 2028 for the City of Calgary to lease more third-party office space.",
-   "outlet": "Global News",
-   "n": 1,
-   "url": "https://globalnews.ca/news/12164690/calgary-budget-proposes-hiring-more-than-3500-new-staff-over-four-years/",
-   "img": "https://globalnews.ca/wp-content/uploads/2026/11/city-hall00000001.png?w=720&h=379&crop=1"
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Tue 9:01 p.m.",
-   "iso": "2026-11-25T02:01:00+00:00",
-   "title": "Japan stocks’ rebound threatened as retail margin losses balloon",
-   "summary": "Unrealized losses on long margin positions averaged 19.7% on Tuesday, hovering near the 20% level associated with a heightened risk of forced selling.",
-   "outlet": "The Japan Times",
-   "n": 1,
-   "url": "https://www.japantimes.co.jp/business/2026/11/25/japan-stocks-retail-losses/",
-   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/25/575837.jpg?v=3.1"
   },
   {
    "desk": "politics",
@@ -3404,26 +3442,6 @@
    ]
   },
   {
-   "o": "CBS News",
-   "ca": false,
-   "h": [
-    "Kilmar Abrego Garcia leaves U.S. for Spain",
-    "Army to detonate unstable explosives in Iowa Wednesday morning",
-    "5 questions Nvidia still faces after bringing back Jensen Huang",
-    "NATO allies anxious as war spreads beyond Ukraine, Russia borders",
-    "Iran developing chemical weapons, Israeli defense minister says",
-    "Iranian women praise singer lashed for not wearing a hijab"
-   ],
-   "u": [
-    "https://www.cbsnews.com/news/kilmar-abrego-garcia-leaving-us-europe/",
-    "https://www.cbsnews.com/news/army-iowa-explosives-trump-appeals-court/",
-    "https://www.cbsnews.com/news/nvidia-jensen-huang-challenges/",
-    "https://www.cbsnews.com/news/ukraine-russia-war-warship-cargo-ship-attacks-nato-allies-anxiety/",
-    "https://www.cbsnews.com/live-updates/iran-war-us-trump-blockade-strait-of-hormuz-ship-attacks/",
-    "https://www.cbsnews.com/news/iran-singer-parastoo-ahmadi-lashed-performing-no-hijab/"
-   ]
-  },
-  {
    "o": "ABC News",
    "ca": false,
    "h": [
@@ -3450,7 +3468,7 @@
     "US attorney general dodges questions about Nvidia investigation",
     "With Huang rescue, Trump riskily ties his political fortunes to Nvidia",
     "Xi's anti-corruption campaign ensnares rising star in Chinese Communist Party",
-    "Thomas Markle indicted in US for possessing child sex abuse images",
+    "Thomas Markle charged in US for possessing child sex abuse images",
     "Russia's own figures show almost 500,000 deaths in war in Ukraine",
     "My family died in Ukraine. My mum blamed Zelensky's troops - the truth is complicated"
    ],
@@ -3493,7 +3511,7 @@
     "url": "https://www.youtube.com/watch?v=wcY4K5CNVx4",
     "img": "https://i.ytimg.com/vi/wcY4K5CNVx4/hqdefault.jpg",
     "story": "Fox News' All-American Christmas tree",
-    "watching": "125"
+    "watching": "106"
    },
    {
     "net": "LiveNOW from FOX",
@@ -3502,7 +3520,7 @@
     "url": "https://www.youtube.com/watch?v=ittTOE93Irc",
     "img": "https://i.ytimg.com/vi/ittTOE93Irc/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "282",
+    "watching": "275",
     "rolling": true
    },
    {
@@ -3512,7 +3530,7 @@
     "url": "https://www.youtube.com/watch?v=OF9_Adiywro",
     "img": "https://i.ytimg.com/vi/OF9_Adiywro/hqdefault.jpg",
     "story": "Burnham says his government will look at whether or not to stagger the",
-    "watching": "119"
+    "watching": "209"
    }
   ],
   "upcoming": [
@@ -4338,8 +4356,8 @@
    "at": "2026-11-23T18:20:17.357322+00:00"
   },
   "nfy6JJILPJI": {
-   "v": "unplayable",
-   "at": "2026-11-25T06:37:50.624382+00:00"
+   "v": "ok",
+   "at": "2026-11-25T06:47:50.323342+00:00"
   },
   "p0SJIuzrM0A": {
    "v": "unknown",
@@ -4479,8 +4497,17 @@
   }
  },
  "geo_blocked": [
-  "-NabWfv-VdA",
-  "nfy6JJILPJI"
+  "-NabWfv-VdA"
  ],
- "noembed": []
+ "noembed": [
+  "0bLqaqPAt_k",
+  "A_p82aTTRbE",
+  "J3FV4iY8p5w",
+  "L6qtnHZxwEw",
+  "NuEr0Q_AS6U",
+  "aoNvOKfjOCc",
+  "ldElU-Q5Qyo",
+  "nfy6JJILPJI",
+  "t_HBrWb84eY"
+ ]
 }
