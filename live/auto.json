@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-26T03:07:12.600061+00:00",
- "checkedLabel": "Wed 10:07 p.m.",
+ "checked": "2026-11-26T03:17:12.900365+00:00",
+ "checkedLabel": "Wed 10:17 p.m.",
  "stories": [
   {
    "key": "top",
@@ -30,6 +30,15 @@
   }
  ],
  "wire": [
+  [
+   "Wed 10:08 p.m.",
+   "U.S.",
+   "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
+   "CTV News",
+   "https://www.ctvnews.ca/world/article/north-koreas-kim-vows-to-build-more-nuclear-weapons-after-ignoring-trumps-overture/",
+   "2026-11-26T03:08:30+00:00",
+   3
+  ],
   [
    "Wed 10:01 p.m.",
    "World",
@@ -67,22 +76,13 @@
    2
   ],
   [
-   "Wed 9:47 p.m.",
-   "Latest",
-   "Paul McNeil Jr. scores 20 points and NC State rolls in second half for 80-49 win over Norfolk State",
-   "The Canadian Press (via Winnipeg Free Press)",
-   "https://www.winnipegfreepress.com/uncategorized/2026/11/25/paul-mcneil-jr-scores-20-points-and-nc-state-rolls-in-second-half-for-80-49-win-over-norfolk-state",
-   "2026-11-26T02:47:59+00:00",
-   1
-  ],
-  [
    "Wed 9:43 p.m.",
    "World",
    "U.S. army calls detonation of bomb chemicals in Iowa a success after earlier fears of a toxic plume",
    "CTV News",
    "https://www.ctvnews.ca/world/article/us-army-blows-up-bomb-chemicals-in-iowa-despite-fears-a-toxic-plume-could-endanger-residents/",
    "2026-11-26T02:43:15+00:00",
-   5
+   3
   ],
   [
    "Wed 9:38 p.m.",
@@ -118,7 +118,7 @@
    "CTV News",
    "https://www.ctvnews.ca/politics/article/poilievre-says-nurse-may-lose-job-after-photo-with-him-at-wainwright/",
    "2026-11-26T02:25:54+00:00",
-   5
+   4
   ],
   [
    "Wed 9:18 p.m.",
@@ -285,11 +285,21 @@
  ],
  "leads": [
   {
-   "score": 17,
+   "score": 15,
    "title": "U.S. army calls detonation of bomb chemicals in Iowa a success after earlier fears of a toxic plume",
    "url": "https://www.ctvnews.ca/world/article/us-army-blows-up-bomb-chemicals-in-iowa-despite-fears-a-toxic-plume-could-endanger-residents/",
-   "outlets": 22,
+   "outlets": 13,
    "why": [],
+   "theme": ""
+  },
+  {
+   "score": 13,
+   "title": "Poilievre claims constituent's job was threatened after meeting at CFB Wainwright",
+   "url": "https://www.cbc.ca/news/politics/poilievre-wainwright-nurse-employment-9.7436563",
+   "outlets": 8,
+   "why": [
+    "CBC News front #2"
+   ],
    "theme": ""
   },
   {
@@ -299,16 +309,6 @@
    "outlets": 10,
    "why": [
     "CBC News front #6"
-   ],
-   "theme": ""
-  },
-  {
-   "score": 12,
-   "title": "Poilievre claims constituent's job was threatened after meeting at CFB Wainwright",
-   "url": "https://www.cbc.ca/news/politics/poilievre-wainwright-nurse-employment-9.7436563",
-   "outlets": 7,
-   "why": [
-    "CBC News front #2"
    ],
    "theme": ""
   },
@@ -353,27 +353,28 @@
   },
   {
    "score": 7,
-   "title": "Mark Carney is on a constitutional collision course with Quebec",
-   "url": "https://www.thestar.com/politics/political-opinion/mark-carney-is-on-a-constitutional-collision-course-with-quebec/article_3509c84a-64a1-4f18-8740-ec5d032d8aec.html",
-   "outlets": 2,
+   "title": "Concerns Canada’s EV policy opens door to Chinese ‘Trojan horse’",
+   "url": "https://www.ctvnews.ca/business/autos/article/concerns-canadas-ev-policy-opens-door-to-chinese-trojan-horse/",
+   "outlets": 0,
    "why": [
-    "National Newswatch #6",
-    "National Newswatch #13"
+    "National Newswatch #5",
+    "National Newswatch #13",
+    "National Newswatch #17"
    ],
    "theme": ""
   },
   {
    "score": 7,
-   "title": "US announces new tariffs on host of countries including China",
-   "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
+   "title": "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
+   "url": "https://www.ctvnews.ca/world/article/north-koreas-kim-vows-to-build-more-nuclear-weapons-after-ignoring-trumps-overture/",
    "outlets": 5,
    "why": [],
    "theme": ""
   },
   {
    "score": 7,
-   "title": "Ábrego García, a Salvadoran mistakenly deported by U.S., goes to Spain but hopes to return after Trump",
-   "url": "https://www.ctvnews.ca/world/article/abrego-garcia-a-salvadoran-mistakenly-deported-by-us-goes-to-spain-but-hopes-to-return-after-trump/",
+   "title": "US announces new tariffs on host of countries including China",
+   "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
    "outlets": 5,
    "why": [],
    "theme": ""
@@ -584,235 +585,125 @@
   "stale_since": "2026-10-28T00:15:00+00:00",
   "stories": [
    {
-    "key": "auto-9992c255",
+    "key": "auto-d2138648",
     "words": [
-     "parade",
-     "macy’s",
-     "macy's"
+     "korea's",
+     "trump's",
+     "kim"
     ],
-    "score": 17,
-    "outlets": 6,
-    "carriers": 18,
-    "tag": "Breaking",
-    "title": "Bad weather postpones Macy’s Thanksgiving Day Parade for first time ever",
-    "url": "https://www.cp24.com/news/world/2026/11/25/macys-thanksgiving-day-parade-postponed-to-saturday-due-to-expected-bad-weather/",
-    "outlet": "CP24",
-    "t": "Wed 9:38 p.m.",
-    "iso": "2026-11-26T02:38:24+00:00",
-    "summary": "Macy’s 100th Thanksgiving Day Parade will also be a first: Organizers made an unprecedented decision to postpone the event to Saturday because of bad weather.",
+    "score": 7,
+    "outlets": 3,
+    "carriers": 5,
+    "tag": "Developing",
+    "title": "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
+    "url": "https://www.ctvnews.ca/world/article/north-koreas-kim-vows-to-build-more-nuclear-weapons-after-ignoring-trumps-overture/",
+    "outlet": "CTV News",
+    "t": "Wed 10:08 p.m.",
+    "iso": "2026-11-26T03:08:30+00:00",
+    "summary": "North Korean leader Kim Jong Un visited facilities that produce nuclear ingredients and called for building more nuclear weapons.",
     "first": {
-     "outlet": "Toronto Star",
-     "url": "https://www.thestar.com/news/world/united-states/macy-s-announces-thanksgiving-day-parade-postponed-to-saturday-due-to-expected-bad-weather/article_bec4eab7-4762-5d49-bfcf-afc47b702732.html",
-     "t": "Wed 4:10 p.m.",
-     "title": "Bad weather postpones Macy’s Thanksgiving Day Parade for first time ever",
-     "iso": "2026-11-25T21:10:00+00:00"
+     "outlet": "PBS NewsHour",
+     "url": "https://www.pbs.org/newshour/show/how-trumps-newest-tariffs-could-impact-americans-and-the-economy",
+     "t": "Wed 6:50 p.m.",
+     "title": "How Trump's newest tariffs could impact Americans and the economy",
+     "iso": "2026-11-25T23:50:40+00:00"
     },
-    "newest": "2026-11-26T02:38:24+00:00",
+    "newest": "2026-11-26T03:08:30+00:00",
     "photo": {
-     "src": "live/img/auto-9992c255-c189b19d9a.jpg",
-     "orig": "https://www.cp24.com/resizer/v2/W66R7VUZGHKLLO54BPKTM5KWGU.jpg?smart=true&auth=ec0809979b20489b9609f61d89896588f38aac36947b7a26df741e0965553fad&width=1200&height=630",
-     "caption": "People inflate a balloon for the Macy's Thanksgiving Day Parade, Wednesday, Nov. 25, 2026, in New York. (AP Photo/Yuki Iwamura). — via CP24",
-     "alt": "People inflate a balloon for the Macy's Thanksgiving Day Parade, Wednesday, Nov. 25, 2026, in New York. (AP Photo/Yuki Iwamura)",
-     "outlet": "CP24",
-     "url": "https://www.cp24.com/news/world/2026/11/25/macys-thanksgiving-day-parade-postponed-to-saturday-due-to-expected-bad-weather/",
-     "since": "2026-11-26T03:03:40.735628+00:00"
+     "src": "live/img/auto-d2138648-198b17d1ec.jpg",
+     "orig": "https://static.foxnews.com/foxnews.com/content/uploads/2025/06/blanche-trump-bove.jpg",
+     "caption": "Trump wins appeals court ruling to move hush money case to federal court. — via Fox News",
+     "alt": "Trump wins appeals court ruling to move hush money case to federal court",
+     "outlet": "Fox News",
+     "url": "https://www.foxnews.com/politics/second-circuit-deals-blow-manhattan-da-breathes-new-life-trump-hush-money-appeal",
+     "since": "2026-11-26T03:19:39.029645+00:00"
     },
     "photo_seen": [
-     "https://www.cp24.com/resizer/v2/W66R7VUZGHKLLO54BPKTM5KWGU.jpg?smart=true&auth=ec0809979b20489b9609f61d89896588f38aac36947b7a26df741e0965553fad&width=1200&height=630"
+     "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/3/27/327c3978-b81b-5c9d-9d55-282209cd8925/6aea8cf23d909.image.jpg?crop=1661%2C872%2C0%2C103&resize=1200%2C630&order=crop%2Cresize"
     ],
     "photos": [
      {
-      "src": "live/img/auto-9992c255-c189b19d9a.jpg",
-      "orig": "https://www.cp24.com/resizer/v2/W66R7VUZGHKLLO54BPKTM5KWGU.jpg?smart=true&auth=ec0809979b20489b9609f61d89896588f38aac36947b7a26df741e0965553fad&width=1200&height=630",
-      "caption": "People inflate a balloon for the Macy's Thanksgiving Day Parade, Wednesday, Nov. 25, 2026, in New York. (AP Photo/Yuki Iwamura). — via CP24",
-      "alt": "People inflate a balloon for the Macy's Thanksgiving Day Parade, Wednesday, Nov. 25, 2026, in New York. (AP Photo/Yuki Iwamura)",
-      "outlet": "CP24",
-      "url": "https://www.cp24.com/news/world/2026/11/25/macys-thanksgiving-day-parade-postponed-to-saturday-due-to-expected-bad-weather/"
+      "src": "live/img/auto-d2138648-198b17d1ec.jpg",
+      "orig": "https://static.foxnews.com/foxnews.com/content/uploads/2025/06/blanche-trump-bove.jpg",
+      "caption": "Trump wins appeals court ruling to move hush money case to federal court. — via Fox News",
+      "alt": "Trump wins appeals court ruling to move hush money case to federal court",
+      "outlet": "Fox News",
+      "url": "https://www.foxnews.com/politics/second-circuit-deals-blow-manhattan-da-breathes-new-life-trump-hush-money-appeal"
      },
      {
-      "src": "live/img/auto-9992c255-9f7feec8e8.jpg",
-      "orig": "https://www.aljazeera.com/wp-content/uploads/2026/11/epa_6b07734041ed-1795650368.jpg?resize=1920%2C1440",
-      "caption": "Storms push Macy’s Thanksgiving Day Parade in New York City to Saturday. — via Al Jazeera",
-      "alt": "Storms push Macy’s Thanksgiving Day Parade in New York City to Saturday",
-      "outlet": "Al Jazeera",
-      "url": "https://www.aljazeera.com/news/2026/11/26/storms-push-macys-thanksgiving-day-parade-in-new-york-city-to-saturday?traffic_source=rss"
+      "src": "live/img/auto-d2138648-fec3a6bbe2.jpg",
+      "orig": "https://i.cbc.ca/ais/a7abe22c-6237-4cee-b934-7c8281b29e4c,1795656578066/full/max/0/default.jpg?im=Crop%2Crect%3D%28739%2C1505%2C4294%2C2415%29%3BResize%3D620",
+      "caption": "U.S. Federal Communications Commission (FCC) chair Brendan Carr speaking during a press conference in Washington in July. A judge said Carr 'has taken President Trump's rhetoric as his marching orders' in a decision Wednesday that blocked the FCC from revoking the licences of eight ABC TV stations. (Kylie Cooper/Reuters) — via CBC",
+      "alt": "U.S. Federal Communications Commission (FCC) chair Brendan Carr speaking during a press conference in Washington in July. A judge said Carr 'has taken President",
+      "outlet": "CBC",
+      "url": "https://www.cbc.ca/news/world/judge-blocks-fcc-revoking-abc-licences-9.7436635"
      },
      {
-      "src": "live/img/auto-9992c255-4a01fa0317.jpg",
-      "orig": "https://globalnews.ca/wp-content/uploads/2026/11/Screenshot-2026-11-25-175132.png?w=720&h=379&crop=1",
-      "caption": "Macy's Thanksgiving Day Parade 2025. — via Global News",
-      "alt": "Macy's Thanksgiving Day Parade 2025.",
-      "outlet": "Global News",
-      "url": "https://globalnews.ca/news/12166602/macys-thanksgiving-parade-postponed/"
-     },
-     {
-      "src": "live/img/auto-9992c255-99d247d76d.jpg",
-      "orig": "https://i.cbc.ca/ais/b6d6a6d6-2728-4f87-9079-bf1840a75189,1795644238510/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C312%2C6000%2C3375%29%3BResize%3D620",
-      "caption": "A float featuring a turkey is prepared the day before Macy's Thanksgiving Day Parade in New York City. The parade has been postponed from Thursday to Saturday due to bad weather. (Timothy A. Clary/AFP/Getty Images) — via CBC News",
-      "alt": "A float featuring a turkey is prepared the day before Macy's Thanksgiving Day Parade in New York City. The parade has been postponed from Thursday to Saturday d",
-      "outlet": "CBC News",
-      "url": "https://www.cbc.ca/news/world/macy-s-thanksgiving-parade-postponed-9.7436280"
+      "src": "live/img/auto-d2138648-e960c60aba.jpg",
+      "orig": "https://d3i6fh83elv35t.cloudfront.net/static/2026/11/tariffs-1024x683.jpg",
+      "caption": "From: How Trump's newest tariffs could impact Americans and the economy. — via PBS NewsHour",
+      "alt": "How Trump's newest tariffs could impact Americans and the economy",
+      "outlet": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/show/how-trumps-newest-tariffs-could-impact-americans-and-the-economy"
      }
     ],
-    "independent": 6,
+    "independent": 3,
     "reports": [
      {
-      "t": "Wed 9:38 p.m.",
-      "iso": "2026-11-26T02:38:24+00:00",
+      "t": "Wed 10:08 p.m.",
+      "iso": "2026-11-26T03:08:30+00:00",
       "outlet": "CTV News",
-      "title": "Bad weather postpones Macy’s Thanksgiving Day Parade for first time ever",
-      "url": "https://www.ctvnews.ca/world/article/macys-thanksgiving-day-parade-postponed-to-saturday-due-to-expected-bad-weather/",
-      "desc": "Macy’s 100th Thanksgiving Day Parade will also be a first: Organizers made an unprecedented decision to postpone the event to Saturday because of bad weather."
+      "title": "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
+      "url": "https://www.ctvnews.ca/world/article/north-koreas-kim-vows-to-build-more-nuclear-weapons-after-ignoring-trumps-overture/",
+      "desc": "North Korean leader Kim Jong Un visited facilities that produce nuclear ingredients and called for building more nuclear weapons."
      },
      {
-      "t": "Wed 9:38 p.m.",
-      "iso": "2026-11-26T02:38:24+00:00",
+      "t": "Wed 10:08 p.m.",
+      "iso": "2026-11-26T03:08:30+00:00",
       "outlet": "CP24",
-      "title": "Bad weather postpones Macy’s Thanksgiving Day Parade for first time ever",
-      "url": "https://www.cp24.com/news/world/2026/11/25/macys-thanksgiving-day-parade-postponed-to-saturday-due-to-expected-bad-weather/",
+      "title": "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
+      "url": "https://www.cp24.com/news/world/2026/11/26/north-koreas-kim-vows-to-build-more-nuclear-weapons-after-ignoring-trumps-overture/",
       "desc": ""
      },
      {
-      "t": "Wed 8:46 p.m.",
-      "iso": "2026-11-26T01:46:00+00:00",
-      "outlet": "CBS News",
-      "title": "Macy's Thanksgiving Day Parade postponed for 1st time in history",
-      "url": "https://www.cbsnews.com/news/macys-thanksgiving-day-parade-postponed/",
-      "desc": "For the first time in history, the Macy's Thanksgiving Day Parade has been postponed due to weather, Macy's said Wednesday."
+      "t": "Wed 8:16 p.m.",
+      "iso": "2026-11-26T01:16:29+00:00",
+      "outlet": "Toronto Star",
+      "title": "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
+      "url": "https://www.thestar.com/news/world/asia/north-korea-s-kim-vows-to-build-more-nuclear-weapons-after-ignoring-trump-s-overture/article_0bdbde20-604a-53b6-b699-ed7a56be46ba.html",
+      "desc": "SEOUL, South Korea (AP) — North Korean leader Kim Jong Un visited facilities that produce nuclear ingredients and called for building more nuclear weapons, days after ignoring U.S. President Donald"
      },
      {
-      "t": "Wed 8:32 p.m.",
-      "iso": "2026-11-26T01:32:52+00:00",
-      "outlet": "Times Colonist",
-      "title": "Bad weather postpones Macy’s Thanksgiving Day Parade for first time ever",
-      "url": "https://www.timescolonist.com/the-mix/bad-weather-postpones-macys-thanksgiving-day-parade-for-first-time-ever-13060315",
-      "desc": "NEW YORK (AP) — Macy’s 100th Thanksgiving Day Parade will also be a first: Organizers made an unprecedented decision to postpone the event to Saturday because of bad weather ."
-     },
-     {
-      "t": "Wed 7:52 p.m.",
-      "iso": "2026-11-26T00:52:56+00:00",
-      "outlet": "Al Jazeera",
-      "title": "Storms push Macy’s Thanksgiving Day Parade in New York City to Saturday",
-      "url": "https://www.aljazeera.com/news/2026/11/26/storms-push-macys-thanksgiving-day-parade-in-new-york-city-to-saturday?traffic_source=rss",
-      "desc": "The parade, which marks its 100th edition, got a last-minute rain check ahead of heavy gusts on Thursday."
-     },
-     {
-      "t": "Wed 6:20 p.m.",
-      "iso": "2026-11-25T23:20:13+00:00",
-      "outlet": "PBS NewsHour",
-      "title": "From her apartment, photographer captures unique view of Macy's Thanksgiving Day Parade",
-      "url": "https://www.pbs.org/newshour/show/from-her-apartment-photographer-captures-unique-view-of-macys-thanksgiving-day-parade",
-      "desc": "The Macy’s Thanksgiving Day Parade has been postponed to Saturday due to severe weather. When the balloons rise above Manhattan, few will have the same view of the spectacle as Elizabeth Kahane. The New York photographer has been capturing images of the parade from her apartment for almost three…"
-     },
-     {
-      "t": "Wed 5:58 p.m.",
-      "iso": "2026-11-25T22:58:52+00:00",
-      "outlet": "Global News",
-      "title": "Macy’s Thanksgiving Day Parade postponed due to inclement weather",
-      "url": "https://globalnews.ca/news/12166602/macys-thanksgiving-parade-postponed/",
-      "desc": "NBC, the official broadcaster of the parade, said it would air a rerun of the 2025 parade on Thursday and the 2026 parade would happen on Saturday."
-     },
-     {
-      "t": "Wed 5:21 p.m.",
-      "iso": "2026-11-25T22:21:25.759000+00:00",
-      "outlet": "CBC News",
-      "title": "Macy's Thanksgiving Parade postponed to Saturday due to expected high winds",
-      "url": "https://www.cbc.ca/news/world/macy-s-thanksgiving-parade-postponed-9.7436280",
-      "desc": "Macy's 100th annual U.S. Thanksgiving Day Parade has been postponed from Thursday to Saturday as powerful winds are expected to bear down on New York during the annual event, organizers said Wednesday."
-     },
-     {
-      "t": "Wed 4:46 p.m.",
-      "iso": "2026-11-25T21:46:31+00:00",
+      "t": "Wed 7:00 p.m.",
+      "iso": "2026-11-26T00:00:15+00:00",
       "outlet": "Fox News",
-      "title": "100th Macy’s Thanksgiving Day Parade postponed: What to know",
-      "url": "https://www.foxnews.com/us/100th-macys-thanksgiving-day-parade-postponed-what-know",
-      "desc": ""
+      "title": "2nd Circuit deals blow to Manhattan DA, breathes new life into Trump's hush money appeal",
+      "url": "https://www.foxnews.com/politics/second-circuit-deals-blow-manhattan-da-breathes-new-life-trump-hush-money-appeal",
+      "desc": "President Donald Trump's bid to move his New York hush money case to federal court is revived after the 2nd Circuit cited errors in a prior denial."
      },
      {
-      "t": "Wed 4:10 p.m.",
-      "iso": "2026-11-25T21:10:33+00:00",
-      "outlet": "CityNews Winnipeg",
-      "title": "Macy’s announces Thanksgiving Day Parade postponed to Saturday due to expected bad weather",
-      "url": "https://winnipeg.citynews.ca/2026/11/25/macys-announces-thanksgiving-day-parade-postponed-to-saturday-due-to-expected-bad-weather/",
-      "desc": ""
-     },
-     {
-      "t": "Wed 4:10 p.m.",
-      "iso": "2026-11-25T21:10:33+00:00",
-      "outlet": "CityNews Vancouver",
-      "title": "Macy’s announces Thanksgiving Day Parade postponed to Saturday due to expected bad weather",
-      "url": "https://vancouver.citynews.ca/2026/11/25/macys-announces-thanksgiving-day-parade-postponed-to-saturday-due-to-expected-bad-weather/",
-      "desc": ""
-     },
-     {
-      "t": "Wed 4:10 p.m.",
-      "iso": "2026-11-25T21:10:33+00:00",
-      "outlet": "CityNews Ottawa",
-      "title": "Macy’s announces Thanksgiving Day Parade postponed to Saturday due to expected bad weather",
-      "url": "https://ottawa.citynews.ca/2026/11/25/macys-announces-thanksgiving-day-parade-postponed-to-saturday-due-to-expected-bad-weather/",
-      "desc": ""
-     },
-     {
-      "t": "Wed 4:10 p.m.",
-      "iso": "2026-11-25T21:10:33+00:00",
-      "outlet": "CityNews Montreal",
-      "title": "Macy’s announces Thanksgiving Day Parade postponed to Saturday due to expected bad weather",
-      "url": "https://montreal.citynews.ca/2026/11/25/macys-announces-thanksgiving-day-parade-postponed-to-saturday-due-to-expected-bad-weather/",
-      "desc": ""
-     },
-     {
-      "t": "Wed 4:10 p.m.",
-      "iso": "2026-11-25T21:10:33+00:00",
-      "outlet": "CityNews Halifax",
-      "title": "Macy’s announces Thanksgiving Day Parade postponed to Saturday due to expected bad weather",
-      "url": "https://halifax.citynews.ca/2026/11/25/macys-announces-thanksgiving-day-parade-postponed-to-saturday-due-to-expected-bad-weather/",
-      "desc": ""
+      "t": "Wed 6:50 p.m.",
+      "iso": "2026-11-25T23:50:40+00:00",
+      "outlet": "PBS NewsHour",
+      "title": "How Trump's newest tariffs could impact Americans and the economy",
+      "url": "https://www.pbs.org/newshour/show/how-trumps-newest-tariffs-could-impact-americans-and-the-economy",
+      "desc": "The Trump administration announced plans for a new round of tariffs on China, the European Union and 12 other major trading partners. China would face the highest rate with a new 20% tariff on most products. To discuss how this will impact Americans and the economy, Lisa Desjardins spoke with Gavin…"
      }
     ],
     "sources": [
      {
-      "t": "Wed 4:10 p.m.",
+      "t": "Wed 8:16 p.m.",
       "primary": false,
-      "outlet": "CityNews Winnipeg",
-      "title": "Macy’s announces Thanksgiving Day Parade postponed to Saturday due to expected bad weather",
-      "url": "https://winnipeg.citynews.ca/2026/11/25/macys-announces-thanksgiving-day-parade-postponed-to-saturday-due-to-expected-bad-weather/",
-      "desc": "NEW YORK (AP) — Macy’s announces Thanksgiving Day Parade postponed to Saturday due to expected bad weather.",
+      "outlet": "Toronto Star",
+      "title": "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
+      "url": "https://www.thestar.com/news/world/asia/north-korea-s-kim-vows-to-build-more-nuclear-weapons-after-ignoring-trump-s-overture/article_0bdbde20-604a-53b6-b699-ed7a56be46ba.html",
+      "desc": "SEOUL, South Korea (AP) — North Korean leader Kim Jong Un visited facilities that produce nuclear ingredients and called for building more nuclear weapons, days after ignoring U.S. President Donald",
       "wire": "The Associated Press",
       "by": [
        {
-        "outlet": "CityNews Winnipeg",
+        "outlet": "Toronto Star",
         "src": "The Associated Press",
-        "byline": "[] \"The Associated Press,\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews Vancouver",
-        "src": "The Associated Press",
-        "byline": "[] \"The Associated Press,\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews Ottawa",
-        "src": "The Associated Press",
-        "byline": "[] \"The Associated Press,\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews Montreal",
-        "src": "The Associated Press",
-        "byline": "[] \"The Associated Press,\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CityNews Halifax",
-        "src": "The Associated Press",
-        "byline": "[] \"The Associated Press,\" News Staff \n\t\t\tBy"
-       },
-       {
-        "outlet": "CBC News",
-        "src": "The Associated Press",
-        "byline": "\"photoURL\":\"\"},\"recentContent\":{}} \"The Associated Press\"  The Associated Pr"
-       },
-       {
-        "outlet": "Times Colonist",
-        "src": "The Associated Press",
-        "byline": "\"Anthony Izaguirre, The Associated Press\" \r\n             \r\nA"
+        "byline": "\"Hyung-jin Kim And Kim Tong-hyung The Associated Press\" \"Hyung-jin Kim And"
        },
        {
         "outlet": "CTV News",
@@ -827,120 +718,45 @@
       ],
       "copies": [
        {
-        "outlet": "CityNews Vancouver",
-        "url": "https://vancouver.citynews.ca/2026/11/25/macys-announces-thanksgiving-day-parade-postponed-to-saturday-due-to-expected-bad-weather/"
-       },
-       {
-        "outlet": "CityNews Ottawa",
-        "url": "https://ottawa.citynews.ca/2026/11/25/macys-announces-thanksgiving-day-parade-postponed-to-saturday-due-to-expected-bad-weather/"
-       },
-       {
-        "outlet": "CityNews Montreal",
-        "url": "https://montreal.citynews.ca/2026/11/25/macys-announces-thanksgiving-day-parade-postponed-to-saturday-due-to-expected-bad-weather/"
-       },
-       {
-        "outlet": "CityNews Halifax",
-        "url": "https://halifax.citynews.ca/2026/11/25/macys-announces-thanksgiving-day-parade-postponed-to-saturday-due-to-expected-bad-weather/"
-       },
-       {
-        "outlet": "CBC News",
-        "url": "https://www.cbc.ca/news/world/macy-s-thanksgiving-parade-postponed-9.7436280"
-       },
-       {
-        "outlet": "Times Colonist",
-        "url": "https://www.timescolonist.com/the-mix/bad-weather-postpones-macys-thanksgiving-day-parade-for-first-time-ever-13060315"
-       },
-       {
         "outlet": "CTV News",
-        "url": "https://www.ctvnews.ca/world/article/macys-thanksgiving-day-parade-postponed-to-saturday-due-to-expected-bad-weather/"
+        "url": "https://www.ctvnews.ca/world/article/north-koreas-kim-vows-to-build-more-nuclear-weapons-after-ignoring-trumps-overture/"
        },
        {
         "outlet": "CP24",
-        "url": "https://www.cp24.com/news/world/2026/11/25/macys-thanksgiving-day-parade-postponed-to-saturday-due-to-expected-bad-weather/"
+        "url": "https://www.cp24.com/news/world/2026/11/26/north-koreas-kim-vows-to-build-more-nuclear-weapons-after-ignoring-trumps-overture/"
        }
       ]
      },
      {
-      "t": "Wed 8:46 p.m.",
-      "primary": false,
-      "outlet": "CBS News",
-      "title": "Macy's Thanksgiving Day Parade postponed for 1st time in history",
-      "url": "https://www.cbsnews.com/news/macys-thanksgiving-day-parade-postponed/",
-      "desc": "For the first time in history, the Macy's Thanksgiving Day Parade has been postponed due to weather, Macy's said Wednesday.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "CBS News",
-        "src": "CBS News",
-        "byline": "own staff: editor"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Wed 7:52 p.m.",
-      "primary": false,
-      "outlet": "Al Jazeera",
-      "title": "Storms push Macy’s Thanksgiving Day Parade in New York City to Saturday",
-      "url": "https://www.aljazeera.com/news/2026/11/26/storms-push-macys-thanksgiving-day-parade-in-new-york-city-to-saturday?traffic_source=rss",
-      "desc": "The parade, which marks its 100th edition, got a last-minute rain check ahead of heavy gusts on Thursday.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Al Jazeera",
-        "src": "Al Jazeera",
-        "byline": "{\"@type\":\"Person\",\"name\":\"Al Jazeera Staff\",} Al Jazeera Staff Add Al Jazeera on Google By "
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Wed 6:20 p.m.",
-      "primary": false,
-      "outlet": "PBS NewsHour",
-      "title": "From her apartment, photographer captures unique view of Macy's Thanksgiving Day Parade",
-      "url": "https://www.pbs.org/newshour/show/from-her-apartment-photographer-captures-unique-view-of-macys-thanksgiving-day-parade",
-      "desc": "The Macy’s Thanksgiving Day Parade has been postponed to Saturday due to severe weather. When the balloons rise above Manhattan, few will have the same view of the spectacle as Elizabeth Kahane. The New York photographer has been capturing images of the parade from her apartment for almost three…",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "PBS NewsHour",
-        "src": "PBS NewsHour",
-        "byline": "[{\"@type\":\"Person\",\"name\":\"Stephanie Sy\"},{\"@type\":\"Person\",\"name\":\"Maea Lenei Buhre\"}] By — Stephanie Sy Stephanie Sy B"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Wed 5:58 p.m.",
-      "primary": false,
-      "outlet": "Global News",
-      "title": "Macy’s Thanksgiving Day Parade postponed due to inclement weather",
-      "url": "https://globalnews.ca/news/12166602/macys-thanksgiving-parade-postponed/",
-      "desc": "NBC, the official broadcaster of the parade, said it would air a rerun of the 2025 parade on Thursday and the 2026 parade would happen on Saturday.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Global News",
-        "src": "Corus",
-        "byline": "{\"@type\":\"Person\",\"name\":\"Rachel Morgan\",} Name By Rachel Morgan Global News Posted November 25, 2026 5:58 pm Updated No"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Wed 4:46 p.m.",
+      "t": "Wed 7:00 p.m.",
       "primary": false,
       "outlet": "Fox News",
-      "title": "100th Macy’s Thanksgiving Day Parade postponed: What to know",
-      "url": "https://www.foxnews.com/us/100th-macys-thanksgiving-day-parade-postponed-what-know",
-      "desc": "For the first time in its history, the Macy's Thanksgiving Day Parade has been rescheduled due to weather, shifting to Saturday amid a forecast of high winds.",
+      "title": "2nd Circuit deals blow to Manhattan DA, breathes new life into Trump's hush money appeal",
+      "url": "https://www.foxnews.com/politics/second-circuit-deals-blow-manhattan-da-breathes-new-life-trump-hush-money-appeal",
+      "desc": "President Donald Trump's bid to move his New York hush money case to federal court is revived after the 2nd Circuit cited errors in a prior denial.",
       "wire": "",
       "by": [
        {
         "outlet": "Fox News",
         "src": "Fox News",
-        "byline": "own staff: reporter"
+        "byline": "{\"@id\":\"https://www.foxnews.com/person/m/elaine-mallon#author\",\"name\":\"Elaine Mallon\",} {\"@id\":\"https://www.foxnews.com/"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Wed 6:50 p.m.",
+      "primary": false,
+      "outlet": "PBS NewsHour",
+      "title": "How Trump's newest tariffs could impact Americans and the economy",
+      "url": "https://www.pbs.org/newshour/show/how-trumps-newest-tariffs-could-impact-americans-and-the-economy",
+      "desc": "The Trump administration announced plans for a new round of tariffs on China, the European Union and 12 other major trading partners. China would face the highest rate with a new 20% tariff on most products. To discuss how this will impact Americans and the economy, Lisa Desjardins spoke with Gavin…",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "PBS NewsHour",
+        "src": "PBS NewsHour",
+        "byline": "[{\"@type\":\"Person\",\"name\":\"Lisa Desjardins\"},{\"@type\":\"Person\",\"name\":\"Karina Cuevas\"}] By — Lisa Desjardins Lisa Desjar"
        }
       ],
       "copies": []
@@ -949,23 +765,31 @@
     "replaces_top": false,
     "events": [],
     "theme": "",
-    "canada": "none",
-    "canus": false,
+    "ca_angle": {
+     "specific": 1,
+     "official": 0
+    },
+    "canada": "tie",
+    "canus": true,
     "incoherent": false,
     "popular": 0,
     "us_election": false,
-    "fronts": 4,
+    "fronts": 0,
     "fronts_ca": 0,
-    "fronts_who": [
-     "NBC News",
-     "CBS News",
-     "ABC News",
-     "NPR"
-    ],
-    "outled_ca": 1,
+    "fronts_who": [],
     "judgment": "national",
-    "judgment_why": "National: affects some people; carried across the country (5 cities).",
-    "weight": 43
+    "judgment_why": "National: affects some people; carried across the country (national desks).",
+    "weight": 26.5,
+    "videos": [
+     {
+      "net": "PBS NewsHour",
+      "url": "https://www.youtube.com/watch?v=DFT80onrsz8",
+      "title": "How Trump's newest tariffs could impact Americans and the economy",
+      "img": "https://i.ytimg.com/vi/DFT80onrsz8/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     }
+    ]
    },
    {
     "key": "auto-19ebbad6",
@@ -1101,11 +925,9 @@
     "incoherent": false,
     "popular": 0,
     "us_election": false,
-    "fronts": 1,
-    "fronts_ca": 1,
-    "fronts_who": [
-     "The Globe and Mail"
-    ],
+    "fronts": 0,
+    "fronts_ca": 0,
+    "fronts_who": [],
     "judgment": "regional",
     "judgment_why": "Regional: affects some people; carried beyond one city.",
     "weight": 23.5
@@ -1113,8 +935,8 @@
    {
     "key": "auto-9697a041",
     "words": [
-     "abc",
-     "fcc"
+     "fcc",
+     "abc"
     ],
     "score": 9,
     "outlets": 4,
@@ -1351,7 +1173,6 @@
      "CBS News",
      "ABC News"
     ],
-    "outled_ca": 1,
     "judgment": "national",
     "judgment_why": "National: affects some people; carried across the country (national desks).",
     "weight": 30.5
@@ -1359,28 +1180,23 @@
   ],
   "considered": [
    {
-    "title": "Bad weather postpones Macy’s Thanksgiving Day Parade for first time ever",
-    "url": "https://www.cp24.com/news/world/2026/11/25/macys-thanksgiving-day-parade-postponed-to-saturday-due-to-expected-bad-weather/",
+    "title": "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
+    "url": "https://www.ctvnews.ca/world/article/north-koreas-kim-vows-to-build-more-nuclear-weapons-after-ignoring-trumps-overture/",
     "rank": 1,
     "live": "",
-    "weight": 43,
-    "score": 17,
-    "independent": 6,
+    "weight": 26.5,
+    "score": 7,
+    "independent": 3,
     "most_read": 0,
-    "canada": "none",
+    "canada": "tie",
     "theme": "",
     "top": true,
-    "fronts": 4,
-    "fronts_who": [
-     "NBC News",
-     "CBS News",
-     "ABC News",
-     "NPR"
-    ],
+    "fronts": 0,
+    "fronts_who": [],
     "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
-    "carriers": 18,
+    "carriers": 5,
     "judgment": "national",
-    "why_judged": "National: affects some people; carried across the country (5 cities)."
+    "why_judged": "National: affects some people; carried across the country (national desks)."
    },
    {
     "title": "Taking Ozempic or Wegovy could lead to extra cancer screenings, new study suggests",
@@ -1394,10 +1210,8 @@
     "canada": "canadian",
     "theme": "",
     "top": true,
-    "fronts": 1,
-    "fronts_who": [
-     "The Globe and Mail"
-    ],
+    "fronts": 0,
+    "fronts_who": [],
     "rule": "Canadian, still developing",
     "carriers": 3,
     "judgment": "regional",
@@ -1426,9 +1240,33 @@
     "why_judged": "National: affects some people; carried across the country (national desks)."
    },
    {
+    "title": "Bad weather postpones Macy’s Thanksgiving Day Parade for first time ever",
+    "url": "https://www.cp24.com/news/world/2026/11/25/macys-thanksgiving-day-parade-postponed-to-saturday-due-to-expected-bad-weather/",
+    "rank": 4,
+    "live": "",
+    "weight": 39.5,
+    "score": 15,
+    "independent": 6,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": false,
+    "fronts": 4,
+    "fronts_who": [
+     "NBC News",
+     "CBS News",
+     "ABC News",
+     "NPR"
+    ],
+    "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
+    "carriers": 9,
+    "judgment": "national",
+    "why_judged": "National: affects some people; carried across the country (national desks)."
+   },
+   {
     "title": "Ábrego García, a Salvadoran mistakenly deported by U.S., goes to Spain but hopes to return after Trump",
     "url": "https://www.ctvnews.ca/world/article/abrego-garcia-a-salvadoran-mistakenly-deported-by-us-goes-to-spain-but-hopes-to-return-after-trump/",
-    "rank": 4,
+    "rank": 5,
     "live": "",
     "weight": 26.5,
     "score": 7,
@@ -1449,9 +1287,9 @@
    {
     "title": "Oxford County elects Ingersoll Mayor Brian Petrie as Warden",
     "url": "https://www.ctvnews.ca/london/article/oxford-county-elects-ingersoll-mayor-brian-petrie-as-warden/",
-    "rank": 5,
+    "rank": 6,
     "live": "",
-    "weight": 27.5,
+    "weight": 23.5,
     "score": 7,
     "independent": 2,
     "most_read": 0,
@@ -1464,27 +1302,6 @@
     "carriers": 5,
     "judgment": "national",
     "why_judged": "National: affects some people; carried across the country (3 cities)."
-   },
-   {
-    "title": "US-led consortium agrees to acquire assets from Russian oil company Lukoil",
-    "url": "https://www.thestar.com/news/world/united-states/us-led-consortium-agrees-to-acquire-assets-from-russian-oil-company-lukoil/article_0aa535ad-917c-5b8d-822a-183a1273b4e2.html",
-    "rank": 6,
-    "live": "",
-    "weight": 17.0,
-    "score": 6,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 1,
-    "fronts_who": [
-     "The Globe and Mail"
-    ],
-    "rule": "No Canadian tie",
-    "carriers": 4,
-    "judgment": "regional",
-    "why_judged": "Regional: affects some people; carried beyond one city."
    },
    {
     "title": "Spying on survivors: Why RCMP watched Wab Kinew's father in the 1960s",
@@ -1506,14 +1323,14 @@
     "why_judged": "Regional: affects some people; carried by a few newsrooms."
    },
    {
+    "title": "Poilievre claims constituent's job was threatened after meeting at CFB Wainwright",
+    "score": 13,
+    "why": "not built: only 2 independent report(s) (8 sites)"
+   },
+   {
     "title": "Andy Taylor, guitarist of new wave icons Duran Duran, dead at 65",
     "score": 13,
     "why": "not built: only 2 independent report(s) (10 sites)"
-   },
-   {
-    "title": "Poilievre claims constituent's job was threatened after meeting at CFB Wainwright",
-    "score": 12,
-    "why": "not built: only 2 independent report(s) (7 sites)"
    },
    {
     "title": "NATO's No. 2 commander strikes different tone on Canada than Pentagon",
@@ -1526,7 +1343,7 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Mark Carney is on a constitutional collision course with Quebec",
+    "title": "Concerns Canada’s EV policy opens door to Chinese ‘Trojan horse’",
     "score": 7,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
@@ -1562,11 +1379,11 @@
    {
     "key": "auto-3e401879",
     "words": [
-     "stellantis",
-     "productive",
      "negotiator",
-     "continue",
+     "stellantis",
      "brampton",
+     "continue",
+     "meeting",
      "talks"
     ],
     "score": 7,
@@ -1594,11 +1411,10 @@
      "alt": "Brian Petrie has been elected as Essex County's new warden. Nov. 25, 2026. (Bryan Bicknell/CTV News London)",
      "outlet": "CTV News",
      "url": "https://www.ctvnews.ca/london/article/oxford-county-elects-ingersoll-mayor-brian-petrie-as-warden/",
-     "since": "2026-11-26T02:43:47.426646+00:00"
+     "since": "2026-11-26T03:19:37.170621+00:00"
     },
     "photo_seen": [
-     "https://www.ctvnews.ca/resizer/v2/ZV7BIONTFVCZ7LUMFHMUS5LJDM.jpeg?smart=true&auth=7eee948b8f0c41290a5126d94e1cf1014017af71af3772d26d42e70ddacae231&width=1200&height=630",
-     "https://www.cp24.com/resizer/v2/VAUM65MFSJFIJHVQOGGR5G4F5A.jpg?smart=true&auth=547603c4da5f301994acf11ce59b02af0d4335c8d009330cc58e03f4dee944e1&width=1200&height=630"
+     "https://www.ctvnews.ca/resizer/v2/ZV7BIONTFVCZ7LUMFHMUS5LJDM.jpeg?smart=true&auth=7eee948b8f0c41290a5126d94e1cf1014017af71af3772d26d42e70ddacae231&width=1200&height=630"
     ],
     "photos": [
      {
@@ -1731,21 +1547,21 @@
     "fronts_who": [],
     "judgment": "national",
     "judgment_why": "National: affects some people; carried across the country (3 cities).",
-    "weight": 27.5,
+    "weight": 23.5,
     "videos": [
-     {
-      "net": "CBC News",
-      "url": "https://www.youtube.com/watch?v=MX8e8k6w8FA",
-      "title": "'They owe us': president of union at Stellantis's Brampton, Ont., plant",
-      "img": "https://i.ytimg.com/vi/MX8e8k6w8FA/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
      {
       "net": "Global News",
       "url": "https://www.youtube.com/watch?v=fsXdYxxFTzE",
       "title": "“Incredible arrogance” for Carney not to answer questions on Stellantis plant closure: Poilievre",
       "img": "https://i.ytimg.com/vi/fsXdYxxFTzE/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=MX8e8k6w8FA",
+      "title": "'They owe us': president of union at Stellantis's Brampton, Ont., plant",
+      "img": "https://i.ytimg.com/vi/MX8e8k6w8FA/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1831,12 +1647,12 @@
   ],
   "passed_over": [
    {
-    "title": "Ábrego García, a Salvadoran mistakenly deported by U.S., goes to Spain but hopes to return after Trump",
-    "url": "https://www.ctvnews.ca/world/article/abrego-garcia-a-salvadoran-mistakenly-deported-by-us-goes-to-spain-but-hopes-to-return-after-trump/"
+    "title": "Bad weather postpones Macy’s Thanksgiving Day Parade for first time ever",
+    "url": "https://www.cp24.com/news/world/2026/11/25/macys-thanksgiving-day-parade-postponed-to-saturday-due-to-expected-bad-weather/"
    },
    {
-    "title": "US-led consortium agrees to acquire assets from Russian oil company Lukoil",
-    "url": "https://www.thestar.com/news/world/united-states/us-led-consortium-agrees-to-acquire-assets-from-russian-oil-company-lukoil/article_0aa535ad-917c-5b8d-822a-183a1273b4e2.html"
+    "title": "Ábrego García, a Salvadoran mistakenly deported by U.S., goes to Spain but hopes to return after Trump",
+    "url": "https://www.ctvnews.ca/world/article/abrego-garcia-a-salvadoran-mistakenly-deported-by-us-goes-to-spain-but-hopes-to-return-after-trump/"
    }
   ]
  },
@@ -1982,20 +1798,6 @@
    "geo": "unknown"
   },
   {
-   "id": "I4u0MiABxak",
-   "r": "ca",
-   "o": "Global News",
-   "t": "Carney pushes back after Pentagon questions Canada’s defence commitments",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=I4u0MiABxak",
-   "img": "https://i.ytimg.com/vi/I4u0MiABxak/hqdefault.jpg",
-   "up": "2026-11-25",
-   "added": "2026-11-26T02:31:39.708028+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "eLRO6WF04gg",
    "r": "ca",
    "o": "Global News",
@@ -2010,30 +1812,44 @@
    "geo": "unknown"
   },
   {
-   "id": "cPkhFR64wGM",
+   "id": "p9GGkhWh_C8",
    "r": "ca",
    "o": "CTV News",
-   "t": "Failed jewelry store thief from Barrie pleads guilty in Oshawa mall smash-and-grab",
+   "t": "B.C. removes SOGI anti-bullying materials",
    "rec": false,
    "d": "",
-   "u": "https://www.youtube.com/watch?v=cPkhFR64wGM",
-   "img": "https://i.ytimg.com/vi/cPkhFR64wGM/hqdefault.jpg",
+   "u": "https://www.youtube.com/watch?v=p9GGkhWh_C8",
+   "img": "https://i.ytimg.com/vi/p9GGkhWh_C8/hqdefault.jpg",
    "up": "2026-11-25",
-   "added": "2026-11-26T03:01:40.223602+00:00",
+   "added": "2026-11-26T03:17:12.900365+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
   {
-   "id": "6h0GkzgNLwI",
+   "id": "TSaeHHrDfpY",
    "r": "ca",
    "o": "CTV News",
-   "t": "NDP deputy leader kicked out of legislature after accusing UCP of cheating",
+   "t": "Wild, windy weather forces ferry cancellations",
    "rec": false,
    "d": "",
-   "u": "https://www.youtube.com/watch?v=6h0GkzgNLwI",
-   "img": "https://i.ytimg.com/vi/6h0GkzgNLwI/hqdefault.jpg",
+   "u": "https://www.youtube.com/watch?v=TSaeHHrDfpY",
+   "img": "https://i.ytimg.com/vi/TSaeHHrDfpY/hqdefault.jpg",
    "up": "2026-11-25",
-   "added": "2026-11-26T03:01:40.223602+00:00",
+   "added": "2026-11-26T03:17:12.900365+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "SAmj6ml7ePk",
+   "r": "ca",
+   "o": "Global News",
+   "t": "How much is the EU willing to spend on Ukrainian aid in 2027?",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=SAmj6ml7ePk",
+   "img": "https://i.ytimg.com/vi/SAmj6ml7ePk/hqdefault.jpg",
+   "up": "2026-11-25",
+   "added": "2026-11-26T03:17:12.900365+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2164,20 +1980,6 @@
    "geo": "unknown"
   },
   {
-   "id": "PrwyPc35PyE",
-   "r": "us",
-   "o": "ABC News",
-   "t": "Mississippi jet crash kills family of 6, including children, after plunge into water",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=PrwyPc35PyE",
-   "img": "https://i.ytimg.com/vi/PrwyPc35PyE/hqdefault.jpg",
-   "up": "2026-11-25",
-   "added": "2026-11-26T02:06:14.464611+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "G8wDwuMl2U4",
    "r": "us",
    "o": "Fox News",
@@ -2230,20 +2032,6 @@
    "img": "https://i.ytimg.com/vi/9uhm2WBwgzQ/hqdefault.jpg",
    "up": "2026-11-25",
    "added": "2026-11-26T02:21:40.237334+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "EroBZox2I9U",
-   "r": "us",
-   "o": "CNN",
-   "t": "Parade delayed, Treasury cyberattack & more | CNN Primetime Roundup",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=EroBZox2I9U",
-   "img": "https://i.ytimg.com/vi/EroBZox2I9U/hqdefault.jpg",
-   "up": "2026-11-25",
-   "added": "2026-11-26T02:31:39.708028+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2314,6 +2102,34 @@
    "img": "https://i.ytimg.com/vi/541dfpI-xkM/hqdefault.jpg",
    "up": "2026-11-25",
    "added": "2026-11-26T03:07:12.600061+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "I8RvTZ850ls",
+   "r": "us",
+   "o": "ABC News",
+   "t": "Video captures young porch pirates in California, police say",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=I8RvTZ850ls",
+   "img": "https://i.ytimg.com/vi/I8RvTZ850ls/hqdefault.jpg",
+   "up": "2026-11-25",
+   "added": "2026-11-26T03:17:12.900365+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "AezrofiNQ_k",
+   "r": "us",
+   "o": "CNN",
+   "t": "Comedians roast Trump, Dem infighting, elections & more | Have I Got News For You",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=AezrofiNQ_k",
+   "img": "https://i.ytimg.com/vi/AezrofiNQ_k/hqdefault.jpg",
+   "up": "2026-11-25",
+   "added": "2026-11-26T03:17:12.900365+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2400,16 +2216,72 @@
    "added": "2026-11-26T01:36:14.498186+00:00",
    "pic": "globe",
    "geo": "unknown"
+  },
+  {
+   "id": "J2SiPlDxiLs",
+   "r": "world",
+   "o": "BBC News",
+   "t": "Macy's postpones Thanksgiving parade in New York due to weather | BBC News",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=J2SiPlDxiLs",
+   "img": "https://i.ytimg.com/vi/J2SiPlDxiLs/hqdefault.jpg",
+   "up": "2026-11-25",
+   "added": "2026-11-26T03:17:12.900365+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "AXMxLrMQ5iU",
+   "r": "world",
+   "o": "BBC News",
+   "t": "Is this the future of US power? Bukele's Haiti experiment? | The Global Story",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=AXMxLrMQ5iU",
+   "img": "https://i.ytimg.com/vi/AXMxLrMQ5iU/hqdefault.jpg",
+   "up": "2026-11-25",
+   "added": "2026-11-26T03:17:12.900365+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "gsZd4zPSbvc",
+   "r": "world",
+   "o": "Al Jazeera",
+   "t": "ISIL blamed for deadly attack on security post in northeastern Syria",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=gsZd4zPSbvc",
+   "img": "https://i.ytimg.com/vi/gsZd4zPSbvc/hqdefault.jpg",
+   "up": "2026-11-25",
+   "added": "2026-11-26T03:17:12.900365+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "WPtDEms07Lw",
+   "r": "world",
+   "o": "Al Jazeera",
+   "t": "Trump's midterm defeat: What changed in just two years? | Al Jazeera Explains",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=WPtDEms07Lw",
+   "img": "https://i.ytimg.com/vi/WPtDEms07Lw/hqdefault.jpg",
+   "up": "2026-11-25",
+   "added": "2026-11-26T03:17:12.900365+00:00",
+   "pic": "globe",
+   "geo": "unknown"
   }
  ],
  "ledes": [
   {
    "o": "CBS News",
-   "h": "Judge temporarily blocks FCC from reviewing ABC's licenses",
-   "u": "https://www.cbsnews.com/news/judge-temporarily-blocks-fcc-from-reviewing-abc-licenses/",
-   "img": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/08/18/3a8808d6-9b4b-4c9e-8440-c2929d1ab03a/thumbnail/1200x630/f188d65d8346d982da0174f93c79d9d6/gettyimages-2149193901.jpg",
-   "w": "Wed 10:00 p.m.",
-   "iso": "2026-11-26T03:00:27+00:00"
+   "h": "Maps show where Thanksgiving storms could disrupt holiday",
+   "u": "https://www.cbsnews.com/news/maps-thanksgiving-storms-disrupt-holiday-festivities-travel/",
+   "img": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/25/ff06cc72-8c3c-414d-9e3b-a8cd0ef25150/thumbnail/1200x630/22b93000277f78ae4644110514fac32a/freeway-holiday-forecast.png",
+   "w": "Wed 10:19 p.m.",
+   "iso": "2026-11-26T03:19:33+00:00"
   },
   {
    "o": "ABC News",
@@ -2784,7 +2656,7 @@
    "Good evening. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
    "Macy’s 100th Thanksgiving Day Parade will also be a first: Organizers made an unprecedented decision to postpone the event to Saturday because of bad weather, The Associated Press reports.",
    "A federal judge agreed Wednesday to block the Federal Communications Commission from conducting an early review of ABC’s broadcast licenses , agreeing with the network that the Trump administration was chilling the network’s free s, The Associated Press reports.",
-   "A consortium of investors that includes a U.S. government lender said Friday that it has agreed to acquire the international energy assets of Russian oil company Lukoil, The Associated Press reports.",
+   "North Korean leader Kim Jong Un visited facilities that produce nuclear ingredients and called for building more nuclear weapons, The Associated Press reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
   ]
  },
@@ -3168,12 +3040,12 @@
    "city": "Washington",
    "tz": "America/New_York",
    "world": false,
-   "w": "Immigration",
-   "label": "Ábrego García, a Salvadoran mistakenly deported by U.S.",
-   "u": "https://www.ctvnews.ca/world/article/abrego-garcia-a-salvadoran-mistakenly-deported-by-us-goes-to-spain-but-hopes-to-return-after-trump/",
-   "title": "Ábrego García, a Salvadoran mistakenly deported by U.S., goes to Spain but hopes to return after Trump",
+   "w": "Nuclear",
+   "label": "North Korea's Kim vows to build more nuclear weapons after…",
+   "u": "https://www.ctvnews.ca/world/article/north-koreas-kim-vows-to-build-more-nuclear-weapons-after-ignoring-trumps-overture/",
+   "title": "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
    "outlet": "CTV News",
-   "t": "Wed 9:35 p.m.",
+   "t": "Wed 10:08 p.m.",
    "hot": true
   },
   {
@@ -3240,6 +3112,30 @@
    "img": ""
   },
   {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Wed 10:14 p.m.",
+   "iso": "2026-11-26T03:14:17+00:00",
+   "title": "Ukrainian drones attack key Russian fertilizer plant linked to explosives production, Stavropol Krai governor says",
+   "summary": "The Nevinnomyssk Azot plant produces up to 1 million tons of ammonia and more than 1 million tons of ammonium nitrate annually, materials used in the production of explosives and artillery shells.",
+   "outlet": "Kyiv Independent, Toronto Star (AP), Al Jazeera",
+   "n": 3,
+   "url": "https://kyivindependent.com/ukrainian-drones-attack-key-russian-fertilizer-plant-linked-to-explosives-production-in-stavropol-krai-local-official-says/",
+   "img": "https://assets.kyivindependent.com/content/images/2026/11/stavkrai_20261126-031256_20261126-031401.png"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Wed 10:08 p.m.",
+   "iso": "2026-11-26T03:08:30+00:00",
+   "title": "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
+   "summary": "North Korean leader Kim Jong Un visited facilities that produce nuclear ingredients and called for building more nuclear weapons.",
+   "outlet": "CTV News + Toronto Star + CP24 (AP), Fox News, PBS NewsHour",
+   "n": 3,
+   "url": "https://www.ctvnews.ca/world/article/north-koreas-kim-vows-to-build-more-nuclear-weapons-after-ignoring-trumps-overture/",
+   "img": "https://www.ctvnews.ca/resizer/v2/6R5QBTQ25TIWJMFQGVBTWHFKUI.jpg?smart=true&auth=e42da5afcc36d1f3d62aee1e08b35ff32f3f7595519bb3524fae50c7151ce9ce&width=1200&height=630"
+  },
+  {
    "desk": "business",
    "pic": "chart",
    "t": "Wed 10:01 p.m.",
@@ -3250,30 +3146,6 @@
    "n": 3,
    "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
    "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/cdd4/live/6fdb6db0-e946-11f1-8b2f-671485cea0be.jpg"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Wed 9:29 p.m.",
-   "iso": "2026-11-26T02:29:48+00:00",
-   "title": "South Korea's central bank raises key interest rate to fight inflation",
-   "summary": "SEOUL, South Korea (AP) — South Korea’s central bank on Thursday raised its benchmark interest rate for the third time since July, aiming to tighten money supply in the face",
-   "outlet": "Toronto Star (AP), Fox News, PBS NewsHour",
-   "n": 3,
-   "url": "https://www.thestar.com/news/world/asia/south-korea-s-central-bank-raises-key-interest-rate-to-fight-inflation/article_7807d9c3-af51-58e5-b0b7-d1d60c8483b3.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/custom/image/f84403b8-7d76-11ee-9d02-a72a4951957f.png?resize=600%2C600"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Wed 9:08 p.m.",
-   "iso": "2026-11-26T02:08:56+00:00",
-   "title": "US-led consortium agrees to acquire assets from Russian oil company Lukoil",
-   "summary": "A consortium of investors that includes a U.S. government lender said Friday that it has agreed to acquire the international energy assets of Russian oil company Lukoil.",
-   "outlet": "Toronto Star + PBS NewsHour (AP), Al Jazeera, Kyiv Independent",
-   "n": 3,
-   "url": "https://www.thestar.com/news/world/united-states/us-led-consortium-agrees-to-acquire-assets-from-russian-oil-company-lukoil/article_0aa535ad-917c-5b8d-822a-183a1273b4e2.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/d/10/d10ba031-ed36-55c8-a9d1-92097cbb96e1/6a44931d1904d.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
   },
   {
    "desk": "politics",
@@ -3330,7 +3202,7 @@
    "iso": "2026-11-26T02:25:54+00:00",
    "title": "Poilievre says nurse may lose job after photo with him at Wainwright",
    "summary": "Pierre Poilievre says a nurse working on contract at CFB Wainwright has been told she might lose her job after she was photographed speaking with him in the aftermath of the Wainwright tragedy.",
-   "outlet": "CTV News + CKOM / PAnow + Narcity + Times Colonist + 2 more (CP), CBC News",
+   "outlet": "CTV News + Toronto Star + CKOM / PAnow + Narcity + 3 more (CP), CBC News",
    "n": 2,
    "url": "https://www.ctvnews.ca/politics/article/poilievre-says-nurse-may-lose-job-after-photo-with-him-at-wainwright/",
    "img": "https://www.ctvnews.ca/resizer/v2/W7VO3XDSCZQQRHHMDFZLSY63AM.jpg?smart=true&auth=bf2b00a8a3f53c1f6f0fe74bc67526555ad4fe5caeeea1e483bed167314f2356&width=1200&height=630"
@@ -3420,18 +3292,6 @@
    "img": ""
   },
   {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Wed 6:34 p.m.",
-   "iso": "2026-11-25T23:34:47+00:00",
-   "title": "Prime Minister Carney to visit Saskatchewan, meet with Premier Moe",
-   "summary": "Prime Minister Mark Carney is scheduled to visit Saskatchewan and meet with Premier Scott Moe Thursday.",
-   "outlet": "CTV News (CP), Global News",
-   "n": 2,
-   "url": "https://www.ctvnews.ca/regina/article/prime-minister-carney-to-visit-saskatchewan-meet-with-premier-moe/",
-   "img": "https://www.ctvnews.ca/resizer/v2/E5IT7VOANZC3RANX4Q4HIJXZ2Y.JPG?smart=true&auth=d505417ccb5bc5bb1ada27bdc5f27abe9f36d5fedb7b6694724de6ab11e0ff5b&width=1200&height=630"
-  },
-  {
    "desk": "business",
    "pic": "chart",
    "t": "Wed 10:03 p.m.",
@@ -3444,13 +3304,25 @@
    "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/26/576057.jpg?v=3.1"
   },
   {
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Wed 9:26 p.m.",
+   "iso": "2026-11-26T02:26:23+00:00",
+   "title": "B.C. premier pulls SOGI, admits own lack of clarity on the school resource",
+   "summary": "British Columbia’s newly sworn premier has ordered all mention of the SOGI 123 teaching resource removed from government websites, despite his acknowledgement that he’s not clear on what the anti-bullying materials entail.",
+   "outlet": "CTV News (CP)",
+   "n": 1,
+   "url": "https://www.ctvnews.ca/vancouver/article/bc-premier-pulls-sogi-admits-own-lack-of-clarity-on-the-school-resource/",
+   "img": "https://www.ctvnews.ca/resizer/v2/LNNWWOXLNVCPBM46MEQQ5HU5VA.jpeg?smart=true&auth=55e2bf5c083038fc2583ad714eb2af6c8c16c814fcad162fd950967066ae015c&width=1200&height=630"
+  },
+  {
    "desk": "us",
    "pic": "podium",
    "t": "Wed 8:51 p.m.",
    "iso": "2026-11-26T01:51:11+00:00",
    "title": "Senate committee makes amendments to Liberal government's 'lawful access' bill",
    "summary": "A Senate committee has made amendments to the Liberal government’s 'lawful access' bill aimed at reinforcing privacy safeguards and clarifying provisions.",
-   "outlet": "CTV News + CP24 (CP)",
+   "outlet": "CTV News + Toronto Star + CP24 (CP)",
    "n": 1,
    "url": "https://www.ctvnews.ca/politics/article/senate-committee-makes-amendments-to-liberal-governments-lawful-access-bill/",
    "img": "https://www.ctvnews.ca/resizer/v2/UDKAZISO75SRQLEQRW3FFUYX2Y.jpg?smart=true&auth=8e7ab4bba38fa9d28dd3164ba8f211325e87a262a43bacfbbbf23ba1d8d069de&width=1200&height=630"
@@ -3468,12 +3340,24 @@
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-25T212701Z_242027520_RC24VOAPXVX3_RTRMADP_3_USA-WEATHER-CALIFORNIA-1795647953.jpg?resize=1920%2C1440"
   },
   {
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Wed 8:39 p.m.",
+   "iso": "2026-11-26T01:39:43.641000+00:00",
+   "title": "B.C. premier removes sexual orientation and gender identity materials from schools",
+   "summary": "B.C. Premier Lorne Doerkson says he's taking immediate action on three top priorities after his first cabinet meeting. They include posting a notice of intent for a design of a bridge option to replace the George Massey Tunnel, taking SOGI 123 materials off government websites, and starting a return-to-office plan for the B.C. Public Service.",
+   "outlet": "CBC News",
+   "n": 1,
+   "url": "https://www.cbc.ca/news/canada/british-columbia/bc-premier-doerkson-immediate-priorities-9.7436031",
+   "img": "https://i.cbc.ca/ais/3359391e-679d-4aaa-a29a-17fad046a328,1795641880648/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1920%2C1080%29%3BResize%3D620"
+  },
+  {
    "desk": "us",
    "pic": "podium",
    "t": "Wed 8:22 p.m.",
    "iso": "2026-11-26T01:22:55+00:00",
    "title": "California warns of flooding as king tides peak over Thanksgiving",
-   "summary": "Parts of the Canadian province of British Columbia may also be affected by the storms, which come as millions of people travel for the holiday.",
+   "summary": "Parts of the Canadian province of British Columbia may also be affected by the storms and flooding, which come as millions of people travel for the holiday.",
    "outlet": "BBC News",
    "n": 1,
    "url": "https://www.bbc.co.uk/news/articles/ckn806qq760po?at_medium=RSS&at_campaign=rss",
@@ -3490,18 +3374,6 @@
    "n": 1,
    "url": "https://www.japantimes.co.jp/business/2026/11/26/markets/volatility-investors-tariff-tech-pain/",
    "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/26/576056.JPG?v=3.1"
-  },
-  {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Wed 7:24 p.m.",
-   "iso": "2026-11-26T00:24:46+00:00",
-   "title": "B.C. Conservatives remove SOGI from schools, effective immediately",
-   "summary": "The British Columbia government says it is removing all sexual orientation and gender identity (SOGI) materials from provincial websites and education resources, effective immediately.",
-   "outlet": "CTV News + CP24 (CP)",
-   "n": 1,
-   "url": "https://www.ctvnews.ca/vancouver/article/bc-conservatives-remove-sogi-from-schools-effective-immediately/",
-   "img": "https://www.ctvnews.ca/resizer/v2/NMWEFR4MJ7VDGOZYQVN222JXUI.jpg?smart=true&auth=3b83c239fdc15422a747093cb92a08059138f34e3294c33e0040765fcb1e6093&width=1200&height=630"
   },
   {
    "desk": "business",
@@ -3706,7 +3578,7 @@
     "U.S. wants to accommodate Canada on sectoral tariffs, Trump trade czar says",
     "Singer offers tearful apology for O Canada flub at Leafs-Islanders game in New York",
     "Canadian auto sector moving away from U.S. imports, new report shows",
-    "Canada-U.S. defence spat heightens as Pentagon prepared to ‘up the ante’"
+    "Bank of Canada expected to hike interest rate next month, economists say"
    ],
    "u": [
     "",
@@ -3762,18 +3634,18 @@
    "ca": true,
    "h": [
     "Musician killed during violent home invasion in midtown Toronto",
+    "Galloway has not proven that accusations have taken a toll on his writing, defence argues",
     "Ruling on oath to King does not prevent legislature from sitting, Quebec says",
     "Quebec’s legislators are shocked – shocked! – to discover they cannot vote to defy the Constitution",
     "Enbridge in talks to sell $1.5-billion pipeline stake to coalition of Indigenous communities",
-    "Rare vision loss risk from semaglutide medication, Health Canada warns",
     "NATO commander urges vigilance as Russian war on Ukraine persists"
    ],
    "u": [
     "https://www.theglobeandmail.com/canada/article-toronto-home-invasion-poplar-plains-road-november-25/",
+    "https://www.theglobeandmail.com/canada/article-galloway-has-not-proven-that-accusations-have-taken-a-toll-on-his/",
     "https://www.theglobeandmail.com/canada/article-quebec-premier-party-leaders-declaration-refusing-oath-to-king/",
     "https://www.theglobeandmail.com/opinion/article-quebec-oath-to-king-canada-constitution/",
     "https://www.theglobeandmail.com/business/article-enbridge-talks-15-billion-pipeline-coalition-indigenous-communities/",
-    "https://www.theglobeandmail.com/canada/article-semaglutide-medication-vision-loss-risk-rare-ozempic-wegovy-health/",
     "https://www.theglobeandmail.com/politics/article-nato-commander-urges-vigilance-as-russian-war-on-ukraine-persists/"
    ]
   },
@@ -3893,10 +3765,10 @@
    "h": [
     "US announces new tariffs on host of countries including China",
     "What we know about Trump's Thanksgiving tariffs",
-    "California warns of flooding as king tides peak over Thanksgiving",
+    "California warns of flooding as King Tides peak over Thanksgiving",
     "Israeli judges recommend dropping most serious charges against Netanyahu",
     "Moment Nasa spacecraft hit asteroid - and what happened next",
-    "A renovation was meant to improve these Hong Kong homes - it ended in an blaze that killed 168"
+    "A renovation was meant to improve these Hong Kong homes - it ended in a blaze that killed 168"
    ],
    "u": [
     "https://www.bbc.com/news/articles/c893r9ke5p97o",
@@ -3937,7 +3809,7 @@
     "url": "https://www.youtube.com/watch?v=wcY4K5CNVx4",
     "img": "https://i.ytimg.com/vi/wcY4K5CNVx4/hqdefault.jpg",
     "story": "Fox News' All-American Christmas tree",
-    "watching": "375"
+    "watching": "343"
    },
    {
     "net": "LiveNOW from FOX",
@@ -3946,38 +3818,11 @@
     "url": "https://www.youtube.com/watch?v=vkub-CBFWYs",
     "img": "https://i.ytimg.com/vi/vkub-CBFWYs/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "356",
+    "watching": "317",
     "rolling": true
    }
   ],
-  "upcoming": [
-   {
-    "net": "LiveNOW from FOX",
-    "r": "us",
-    "title": "WATCH LIVE: New York Thanksgiving Day Parade 2026",
-    "url": "https://www.youtube.com/watch?v=nKSsFZrrPYU",
-    "img": "https://i.ytimg.com/vi/nKSsFZrrPYU/hqdefault.jpg",
-    "story": "New York Thanksgiving Day Parade 2026",
-    "when": "2026-11-26T13:30:00+00:00",
-    "breaking": false,
-    "reports": [
-     {
-      "outlet": "Al Jazeera",
-      "title": "Storms push Macy’s Thanksgiving Day Parade in New York City to Saturday",
-      "url": "https://www.aljazeera.com/news/2026/11/26/storms-push-macys-thanksgiving-day-parade-in-new-york-city-to-saturday?traffic_source=rss",
-      "t": "Wed 7:52 p.m.",
-      "iso": "2026-11-26T00:52:56+00:00"
-     },
-     {
-      "outlet": "The Hill",
-      "title": "New York delays Macy’s Thanksgiving parade because of severe weather",
-      "url": "https://thehill.com/homenews/state-watch/6243709-nyc-macys-parade-set-saturday/",
-      "t": "Wed 4:08 p.m.",
-      "iso": "2026-11-25T21:08:16+00:00"
-     }
-    ]
-   }
-  ],
+  "upcoming": [],
   "always": [
    {
     "net": "CBC News",
@@ -4028,12 +3873,28 @@
    "story": "Iran war live: Explosion rocks Sanaa; missiles intercepted over Riyadh",
    "title": "Iran war live: Explosion rocks Sanaa; missiles intercepted over Riyadh",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/26/iran-war-live-explosion-rocks-sanaa-missiles-intercepted-over-riyadh?traffic_source=rss",
-   "updated": "2026-11-26T03:04:32+00:00",
+   "updated": "2026-11-26T03:11:27+00:00",
    "ended": false,
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-25T142119Z_494453788_RC22VOAYEVVA_RTRMADP_3_IRAN-CRISIS-SAUDI-HOUTHI-1795644562.jpg?resize=1920%2C1440"
   }
  ],
  "related": {
+  "auto-d2138648": {
+   "ties": [
+    "korea"
+   ],
+   "stories": [
+    {
+     "t": "Wed 4:51 p.m.",
+     "iso": "2026-11-25T21:51:17+00:00",
+     "outlet": "BBC News",
+     "title": "North Korea expels Swiss diplomat in sanctions row",
+     "url": "https://www.bbc.co.uk/news/articles/cq0l34e4kkr5o?at_medium=RSS&at_campaign=rss",
+     "tie": "Korea"
+    }
+   ],
+   "views": []
+  },
   "auto-3e401879": {
    "ties": [
     "Canadian auto jobs"
@@ -4051,9 +3912,135 @@
    "views": []
   }
  },
- "canangle": {},
+ "canangle": {
+  "auto-d2138648": {
+   "story": "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
+   "us": true,
+   "specific": 1,
+   "stories": [
+    {
+     "t": "Wed 1:43 p.m.",
+     "iso": "2026-11-25T18:43:28+00:00",
+     "outlet": "Global News",
+     "title": "U.S. wants to accommodate Canada on sectoral tariffs, Trump trade czar says",
+     "url": "https://globalnews.ca/news/12165941/us-accommodate-canada-sectoral-tariffs-trump/",
+     "ca": true,
+     "tie": ""
+    }
+   ],
+   "official": [],
+   "views": []
+  }
+ },
  "canangle_live": {},
- "bds": [],
+ "bds": [
+  {
+   "id": "bd-auto-9df14b69",
+   "auto": true,
+   "desk": "United States",
+   "status": "Developing",
+   "at": "2026-11-26T02:38:24+00:00",
+   "exact": true,
+   "img": "live/img/auto-9df14b69-c189b19d9a.jpg",
+   "credit": "via CP24",
+   "pic": "globe",
+   "h": "Bad weather postpones Macy’s Thanksgiving Day Parade for first time ever",
+   "lede": "Macy’s 100th Thanksgiving Day Parade will also be a first: Organizers made an unprecedented decision to postpone the event to Saturday because of bad weather.",
+   "newl": "Now carried by 6 independent newsrooms.",
+   "rows": [
+    [
+     "CTV News",
+     "Macy’s 100th Thanksgiving Day Parade will also be a first: Organizers made an unprecedented decision to postpone the event to Saturday because of bad weather.",
+     [
+      1
+     ]
+    ],
+    [
+     "CBS News",
+     "For the first time in history, the Macy's Thanksgiving Day Parade has been postponed due to weather, Macy's said Wednesday.",
+     [
+      3
+     ]
+    ],
+    [
+     "Times Colonist",
+     "NEW YORK (AP) — Macy’s 100th Thanksgiving Day Parade will also be a first: Organizers made an unprecedented decision to postpone the event to Saturday because of bad weather .",
+     [
+      4
+     ]
+    ],
+    [
+     "Al Jazeera",
+     "The parade, which marks its 100th edition, got a last-minute rain check ahead of heavy gusts on Thursday.",
+     [
+      5
+     ]
+    ],
+    [
+     "PBS NewsHour",
+     "The Macy’s Thanksgiving Day Parade has been postponed to Saturday due to severe weather. When the balloons rise above Manhattan, few will have the same view of the spectacle as Elizabeth Kahane. The New York photographer has been capturing images of the parade from her apartment for almost three…",
+     [
+      6
+     ]
+    ],
+    [
+     "Global News",
+     "NBC, the official broadcaster of the parade, said it would air a rerun of the 2025 parade on Thursday and the 2026 parade would happen on Saturday.",
+     [
+      7
+     ]
+    ]
+   ],
+   "src": [
+    [
+     "CTV News",
+     "Bad weather postpones Macy’s Thanksgiving Day Parade for first time ever",
+     "https://www.ctvnews.ca/world/article/macys-thanksgiving-day-parade-postponed-to-saturday-due-to-expected-bad-weather/"
+    ],
+    [
+     "CP24",
+     "Bad weather postpones Macy’s Thanksgiving Day Parade for first time ever",
+     "https://www.cp24.com/news/world/2026/11/25/macys-thanksgiving-day-parade-postponed-to-saturday-due-to-expected-bad-weather/"
+    ],
+    [
+     "CBS News",
+     "Macy's Thanksgiving Day Parade postponed for 1st time in history",
+     "https://www.cbsnews.com/news/macys-thanksgiving-day-parade-postponed/"
+    ],
+    [
+     "Times Colonist",
+     "Bad weather postpones Macy’s Thanksgiving Day Parade for first time ever",
+     "https://www.timescolonist.com/the-mix/bad-weather-postpones-macys-thanksgiving-day-parade-for-first-time-ever-13060315"
+    ],
+    [
+     "Al Jazeera",
+     "Storms push Macy’s Thanksgiving Day Parade in New York City to Saturday",
+     "https://www.aljazeera.com/news/2026/11/26/storms-push-macys-thanksgiving-day-parade-in-new-york-city-to-saturday?traffic_source=rss"
+    ],
+    [
+     "PBS NewsHour",
+     "From her apartment, photographer captures unique view of Macy's Thanksgiving Day Parade",
+     "https://www.pbs.org/newshour/show/from-her-apartment-photographer-captures-unique-view-of-macys-thanksgiving-day-parade"
+    ],
+    [
+     "Global News",
+     "Macy’s Thanksgiving Day Parade postponed due to inclement weather",
+     "https://globalnews.ca/news/12166602/macys-thanksgiving-parade-postponed/"
+    ],
+    [
+     "CBC News",
+     "Macy's Thanksgiving Parade postponed to Saturday due to expected high winds",
+     "https://www.cbc.ca/news/world/macy-s-thanksgiving-parade-postponed-9.7436280"
+    ],
+    [
+     "Fox News",
+     "100th Macy’s Thanksgiving Day Parade postponed: What to know",
+     "https://www.foxnews.com/us/100th-macys-thanksgiving-day-parade-postponed-what-know"
+    ]
+   ],
+   "lead": 2
+  }
+ ],
  "geo": {
   "-YVOgH-f4qQ": {
    "v": "unknown",
@@ -4528,8 +4515,8 @@
    "at": "2026-11-24T08:47:31.716289+00:00"
   },
   "c9v26lW7-j4": {
-   "v": "unplayable",
-   "at": "2026-11-26T03:07:12.600061+00:00"
+   "v": "ok",
+   "at": "2026-11-26T03:17:12.900365+00:00"
   },
   "cXN5OV4NYhI": {
    "v": "unknown",
@@ -4640,8 +4627,8 @@
    "at": "2026-11-23T18:20:17.357322+00:00"
   },
   "nfy6JJILPJI": {
-   "v": "unplayable",
-   "at": "2026-11-26T03:07:12.600061+00:00"
+   "v": "ok",
+   "at": "2026-11-26T03:17:12.900365+00:00"
   },
   "p0SJIuzrM0A": {
    "v": "unknown",
@@ -4781,11 +4768,15 @@
   }
  },
  "geo_blocked": [
-  "-NabWfv-VdA",
-  "c9v26lW7-j4",
-  "nfy6JJILPJI"
+  "-NabWfv-VdA"
  ],
  "noembed": [
-  "L6qtnHZxwEw"
+  "J3FV4iY8p5w",
+  "L6qtnHZxwEw",
+  "NuEr0Q_AS6U",
+  "c9v26lW7-j4",
+  "ldElU-Q5Qyo",
+  "nfy6JJILPJI",
+  "t_HBrWb84eY"
  ]
 }
