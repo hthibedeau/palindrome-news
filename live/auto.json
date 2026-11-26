@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-26T21:07:54.257166+00:00",
- "checkedLabel": "Thu 4:07 p.m.",
+ "checked": "2026-11-26T21:13:10.787211+00:00",
+ "checkedLabel": "Thu 4:13 p.m.",
  "stories": [
   {
    "key": "top",
@@ -31,9 +31,18 @@
  ],
  "wire": [
   [
+   "Thu 4:08 p.m.",
+   "Business",
+   "$168M loan guarantee provided for First Nations' investment in LNG pipeline",
+   "CTV News",
+   "https://www.ctvnews.ca/business/article/168m-loan-guarantee-provided-for-first-nations-investment-in-lng-pipeline/",
+   "2026-11-26T21:08:44+00:00",
+   6
+  ],
+  [
    "Thu 4:02 p.m.",
    "Canada",
-   "Major recycling plant fire burning south of Montreal",
+   "Preventative measures lifted amid fire at recycling facility south of Montreal",
    "CTV News",
    "https://www.ctvnews.ca/montreal/article/major-recycling-plant-fire-burning-south-of-montreal-avoid-the-area/",
    "2026-11-26T21:02:10+00:00",
@@ -49,13 +58,13 @@
    1
   ],
   [
-   "Thu 4:00 p.m.",
-   "Business",
-   "$168M loan guarantee provided for First Nations’ investment in LNG pipeline",
-   "The Canadian Press (via Winnipeg Free Press)",
-   "https://www.winnipegfreepress.com/business/2026/11/26/168m-loan-guarantee-provided-for-first-nations-investment-in-lng-pipeline",
-   "2026-11-26T21:00:04+00:00",
-   4
+   "Thu 3:58 p.m.",
+   "U.S.",
+   "Trump takes on Somali welfare dependency in Thanksgiving message, lays out who should stay in US",
+   "Fox News",
+   "https://www.foxnews.com/politics/trump-takes-somali-welfare-dependency-thanksgiving-message-lays-who-should-stay-us",
+   "2026-11-26T20:58:30+00:00",
+   2
   ],
   [
    "Thu 3:57 p.m.",
@@ -65,15 +74,6 @@
    "https://globalnews.ca/news/12167225/canadian-debt-mortgages-transunion/",
    "2026-11-26T20:57:36+00:00",
    1
-  ],
-  [
-   "Thu 3:55 p.m.",
-   "Latest",
-   "Doug Ford encourages Ontarians to 'fight back' against home invasions",
-   "CBC News",
-   "https://www.cbc.ca/news/canada/toronto/ford-home-invasion-ontario-9.7437456",
-   "2026-11-26T20:55:54.151000+00:00",
-   2
   ],
   [
    "Thu 3:54 p.m.",
@@ -100,7 +100,7 @@
    "Toronto Star",
    "https://www.thestar.com/news/canada/man-from-ontario-gets-4-5-years-for-meth-smuggling-at-vancouver-international-airport/article_04b0b3cf-aa2b-5ca4-9e60-a9e4b93bae4c.html",
    "2026-11-26T20:48:17+00:00",
-   4
+   3
   ],
   [
    "Thu 3:45 p.m.",
@@ -163,7 +163,7 @@
    "BBC News",
    "https://www.bbc.co.uk/news/articles/c39w9y5dx4k5o?at_medium=RSS&at_campaign=rss",
    "2026-11-26T20:35:39+00:00",
-   4
+   3
   ],
   [
    "Thu 3:35 p.m.",
@@ -181,7 +181,7 @@
    "Al Jazeera",
    "https://www.aljazeera.com/news/2026/11/26/attack-on-saudi-aramcos-jazan-refinery-kills-worker-disrupts-operations?traffic_source=rss",
    "2026-11-26T20:34:34+00:00",
-   4
+   3
   ],
   [
    "Thu 3:34 p.m.",
@@ -208,7 +208,7 @@
    "Toronto Star",
    "https://www.thestar.com/news/gta/local-crime/where-auto-thefts-in-east-york-were-reported-this-week/article_c67be59d-c519-53ba-b42c-57c1b90540a7.html",
    "2026-11-26T20:34:26+00:00",
-   4
+   5
   ],
   [
    "Thu 3:34 p.m.",
@@ -286,6 +286,16 @@
  "leads": [
   {
    "score": 18,
+   "title": "Canadian auto-parts makers, Ukrainian defence firms to team up to build military goods in Canada",
+   "url": "https://www.theglobeandmail.com/politics/article-canadian-auto-parts-makers-ukrainian-defence-firms-to-build-military/",
+   "outlets": 11,
+   "why": [
+    "National Newswatch #2"
+   ],
+   "theme": ""
+  },
+  {
+   "score": 18,
    "title": "Concerns Canada’s EV policy opens door to Chinese ‘Trojan horse’",
    "url": "https://www.ctvnews.ca/business/autos/article/concerns-canadas-ev-policy-opens-door-to-chinese-trojan-horse/",
    "outlets": 9,
@@ -297,13 +307,11 @@
    "theme": ""
   },
   {
-   "score": 17,
-   "title": "Canadian auto-parts makers, Ukrainian defence firms to team up to build military goods in Canada",
-   "url": "https://www.theglobeandmail.com/politics/article-canadian-auto-parts-makers-ukrainian-defence-firms-to-build-military/",
-   "outlets": 10,
-   "why": [
-    "National Newswatch #2"
-   ],
+   "score": 10,
+   "title": "$168M loan guarantee provided for First Nations' investment in LNG pipeline",
+   "url": "https://www.ctvnews.ca/business/article/168m-loan-guarantee-provided-for-first-nations-investment-in-lng-pipeline/",
+   "outlets": 8,
+   "why": [],
    "theme": ""
   },
   {
@@ -332,14 +340,6 @@
   },
   {
    "score": 9,
-   "title": "$168M loan guarantee provided for First Nations' investment in LNG pipeline",
-   "url": "https://www.narcity.com/12-b-c-first-nations-to-invest-in-lng-pipeline",
-   "outlets": 7,
-   "why": [],
-   "theme": ""
-  },
-  {
-   "score": 9,
    "title": "Labour group says Bill C-39 changes fail to protect workers' right to strike",
    "url": "https://www.timescolonist.com/the-mix/labour-group-says-bill-c-39-changes-fail-to-protect-workers-right-to-strike-13063776",
    "outlets": 7,
@@ -356,21 +356,19 @@
   },
   {
    "score": 8,
-   "title": "Ford says he wouldn't hesitate to shoot a home invader, encourages Ontarians to 'fight back'",
-   "url": "https://www.cbc.ca/news/canada/toronto/ford-home-invasion-ontario-9.7437456",
-   "outlets": 3,
-   "why": [
-    "CBC News front #2"
-   ],
+   "title": "The Best Advent Calendar Deals To Shop This Black Friday",
+   "url": "https://www.ctvnews.ca/shopping-trends/article/black-friday-advent-calendar-deals/",
+   "outlets": 6,
+   "why": [],
    "theme": ""
   },
   {
    "score": 8,
-   "title": "Two Italians killed in strike in Kuwait, as Iran denies responsibility",
-   "url": "https://www.bbc.co.uk/news/articles/c39w9y5dx4k5o?at_medium=RSS&at_campaign=rss",
+   "title": "Ford, Unifor call on Ottawa to exempt Canadian automakers from exhaust pollution penalties",
+   "url": "https://www.cbc.ca/news/canada/toronto/doug-ford-unifor-exhaust-penalties-ottawa-9.7437680?cmp=rss",
    "outlets": 6,
    "why": [],
-   "theme": ""
+   "theme": "Canadian auto jobs"
   }
  ],
  "canada": [
@@ -463,17 +461,6 @@
    "img": "https://globalnews.ca/wp-content/uploads/2026/11/8edc8a90c8b99d6081b8b0fa1801e16594be54278c8653b8ac9aad858a45008d.jpg?quality=65&strip=all&w=720&h=379&crop=1"
   },
   {
-   "t": "Thu 3:17 p.m.",
-   "iso": "2026-11-26T20:17:59+00:00",
-   "region": "National",
-   "title": "Supreme Court of Canada to hear challenge of law central to Ontario land dispute",
-   "summary": "OTTAWA - The Supreme Court of Canada has agreed to hear a developer's constitutional challenge of an Ontario law at the heart of a dispute over land in a protected area known as the provincial Greenbelt.",
-   "outlet": "Winnipeg Free Press + CP24",
-   "n": 1,
-   "url": "https://www.winnipegfreepress.com/canada/2026/11/26/supreme-court-of-canada-to-hear-challenge-of-law-central-to-ontario-land-dispute",
-   "img": ""
-  },
-  {
    "t": "Thu 3:04 p.m.",
    "iso": "2026-11-26T20:04:19.264000+00:00",
    "region": "North",
@@ -494,6 +481,17 @@
    "n": 1,
    "url": "https://www.cbc.ca/news/canada/nova-scotia/chignecto-isthmus-flood-protection-work-to-be-complete-by-2034-minister-says-9.7437530",
    "img": "https://i.cbc.ca/ais/1.6971431,1695140145000/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1920%2C1080%29%3BResize%3D620"
+  },
+  {
+   "t": "Thu 2:54 p.m.",
+   "iso": "2026-11-26T19:54:52.802000+00:00",
+   "region": "B.C.",
+   "title": "Flooding triggers evacuation order for dozens in Cedar, near Nanaimo",
+   "summary": "Dozens of properties were placed under evacuation order in the community of Cedar Thursday, and multiple areas of Vancouver Island are under evacuation alert, as a series of storms continue to drench B.C.'s coast.",
+   "outlet": "CBC News",
+   "n": 1,
+   "url": "https://www.cbc.ca/news/canada/british-columbia/flood-watch-king-tides-british-columbia-storm-9.7436709",
+   "img": "https://i.cbc.ca/ais/e5ec6237-60f1-460a-b44b-fefda1f1904c,1795717213864/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1920%2C1080%29%3BResize%3D620"
   },
   {
    "t": "Thu 2:40 p.m.",
@@ -578,242 +576,14 @@
   "stale_since": "2026-10-28T00:15:00+00:00",
   "stories": [
    {
-    "key": "auto-49338600",
-    "words": [
-     "italians",
-     "iranian",
-     "kuwait"
-    ],
-    "score": 8,
-    "outlets": 6,
-    "carriers": 6,
-    "tag": "Breaking",
-    "title": "Iran denies involvement after 2 Italian technicians killed in attack on Kuwait site",
-    "url": "https://www.cbc.ca/news/world/italian-workers-killed-kuwait-iran-strike-9.7437089",
-    "outlet": "CBC News",
-    "t": "Thu 2:48 p.m.",
-    "iso": "2026-11-26T19:48:44.716000+00:00",
-    "summary": "Two Italians were killed in a drone attack in Kuwait on Thursday that Italy and Kuwait blamed on Iran, although Tehran has denied any involvement.",
-    "first": {
-     "outlet": "Al Jazeera",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/26/two-dead-after-iranian-drone-attack-on-kuwait?traffic_source=rss",
-     "t": "Thu 10:55 a.m.",
-     "title": "Two dead after Iranian drone attack on Kuwait",
-     "iso": "2026-11-26T15:55:15+00:00"
-    },
-    "newest": "2026-11-26T20:35:39+00:00",
-    "photo": {
-     "src": "live/img/auto-49338600-3d00993a3c.jpg",
-     "orig": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/4cbd/live/babaff60-e9ac-11f1-a094-5fdc692f3e33.png",
-     "caption": "A logo of German arms manufacturer Rheinmetall. — via BBC News",
-     "alt": "A logo of German arms manufacturer Rheinmetall",
-     "outlet": "BBC News",
-     "url": "https://www.bbc.co.uk/news/articles/c39w9y5dx4k5o?at_medium=RSS&at_campaign=rss",
-     "since": "2026-11-26T21:09:50.023081+00:00"
-    },
-    "photo_seen": [
-     "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/26/9d94126a-cf9a-44ed-9f77-30461774944e/thumbnail/1200x630g2/2cd022452cd8713f2d0b6637141738bf/2026-11-20t110959z-393580283-rc2kroah1egc-rtrmadp-3-iran-crisis.jpg",
-     "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/4cbd/live/babaff60-e9ac-11f1-a094-5fdc692f3e33.png"
-    ],
-    "photos": [
-     {
-      "src": "live/img/auto-49338600-3d00993a3c.jpg",
-      "orig": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/4cbd/live/babaff60-e9ac-11f1-a094-5fdc692f3e33.png",
-      "caption": "A logo of German arms manufacturer Rheinmetall. — via BBC News",
-      "alt": "A logo of German arms manufacturer Rheinmetall",
-      "outlet": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c39w9y5dx4k5o?at_medium=RSS&at_campaign=rss"
-     },
-     {
-      "src": "live/img/auto-49338600-e41fb8f9d9.jpg",
-      "orig": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/26/9d94126a-cf9a-44ed-9f77-30461774944e/thumbnail/1200x630g2/2cd022452cd8713f2d0b6637141738bf/2026-11-20t110959z-393580283-rc2kroah1egc-rtrmadp-3-iran-crisis.jpg",
-      "caption": "From: Iran accused of carrying out drone attack killing 2 Italians in Kuwait. — via CBS News",
-      "alt": "Iran accused of carrying out drone attack killing 2 Italians in Kuwait",
-      "outlet": "CBS News",
-      "url": "https://www.cbsnews.com/live-updates/iran-war-us-military-ai-weapons-oil/"
-     }
-    ],
-    "independent": 6,
-    "reports": [
-     {
-      "t": "Thu 3:35 p.m.",
-      "iso": "2026-11-26T20:35:39+00:00",
-      "outlet": "BBC News",
-      "title": "Two Italians killed in strike in Kuwait, as Iran denies responsibility",
-      "url": "https://www.bbc.co.uk/news/articles/c39w9y5dx4k5o?at_medium=RSS&at_campaign=rss",
-      "desc": "The pair were technicians for German company Rheinmetall, according to Italy's foreign ministry."
-     },
-     {
-      "t": "Thu 3:35 p.m.",
-      "iso": "2026-11-26T20:35:23+00:00",
-      "outlet": "CBS News",
-      "title": "Iran accused of carrying out drone attack killing 2 Italians in Kuwait",
-      "url": "https://www.cbsnews.com/live-updates/iran-war-us-military-ai-weapons-oil/",
-      "desc": "Iran denies being behind a deadly attack on a Kuwaiti military facility that killed two Italian nationals."
-     },
-     {
-      "t": "Thu 2:48 p.m.",
-      "iso": "2026-11-26T19:48:44.716000+00:00",
-      "outlet": "CBC News",
-      "title": "Iran denies involvement after 2 Italian technicians killed in attack on Kuwait site",
-      "url": "https://www.cbc.ca/news/world/italian-workers-killed-kuwait-iran-strike-9.7437089",
-      "desc": "Two Italians were killed in a drone attack in Kuwait on Thursday that Italy and Kuwait blamed on Iran, although Tehran has denied any involvement."
-     },
-     {
-      "t": "Thu 1:15 p.m.",
-      "iso": "2026-11-26T18:15:56+00:00",
-      "outlet": "Middle East Eye",
-      "title": "Araghchi says Iran not behind drone attack that killed two in Kuwait",
-      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/araghchi-says-iran-not-behind-drone-attack-killed-two-kuwait",
-      "desc": ""
-     },
-     {
-      "t": "Thu 12:12 p.m.",
-      "iso": "2026-11-26T17:12:36+00:00",
-      "outlet": "ABC News",
-      "title": "Iran live updates: Iranian drone attack killed 2 Italians, Kuwait says",
-      "url": "https://abcnews.com/International/live-updates/iran-live-updates-tehran-strait-hormuz-safe-demands/?id=138369648",
-      "desc": "President Donald Trump announced \"major combat operations\" against Iran on Feb. 28."
-     },
-     {
-      "t": "Thu 11:32 a.m.",
-      "iso": "2026-11-26T16:32:31+00:00",
-      "outlet": "Al Jazeera",
-      "title": "Two Italians killed by ‘drone strike debris’ in Kuwait",
-      "url": "https://www.aljazeera.com/news/2026/11/26/two-italians-killed-after-iranian-drones-strike-facility-says-kuwait?traffic_source=rss",
-      "desc": "Iran has strongly denied any involvement in the fatal incident."
-     }
-    ],
-    "sources": [
-     {
-      "t": "Thu 3:35 p.m.",
-      "primary": false,
-      "outlet": "BBC News",
-      "title": "Two Italians killed in strike in Kuwait, as Iran denies responsibility",
-      "url": "https://www.bbc.co.uk/news/articles/c39w9y5dx4k5o?at_medium=RSS&at_campaign=rss",
-      "desc": "The pair were technicians for German company Rheinmetall, according to Italy's foreign ministry.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "BBC News",
-        "src": "BBC News",
-        "byline": "[{\"@type\":\"Person\",\"name\":\"James Gregory\"}] https://www.facebook.com/bbcnews"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Thu 3:35 p.m.",
-      "primary": false,
-      "outlet": "CBS News",
-      "title": "Iran accused of carrying out drone attack killing 2 Italians in Kuwait",
-      "url": "https://www.cbsnews.com/live-updates/iran-war-us-military-ai-weapons-oil/",
-      "desc": "Iran denies being behind a deadly attack on a Kuwaiti military facility that killed two Italian nationals.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "CBS News",
-        "src": "CBS News",
-        "byline": "own staff: editor"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Thu 2:48 p.m.",
-      "primary": false,
-      "outlet": "CBC News",
-      "title": "Iran denies involvement after 2 Italian technicians killed in attack on Kuwait site",
-      "url": "https://www.cbc.ca/news/world/italian-workers-killed-kuwait-iran-strike-9.7437089",
-      "desc": "Two Italians were killed in a drone attack in Kuwait on Thursday that Italy and Kuwait blamed on Iran, although Tehran has denied any involvement.",
-      "wire": "Reuters",
-      "by": [
-       {
-        "outlet": "CBC News",
-        "src": "Reuters",
-        "byline": "toURL\":\"\"},\"recentContent\":{}} \"Thomson Reuters\" \"Reuters\" \"Reuters"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Thu 1:15 p.m.",
-      "primary": false,
-      "outlet": "Middle East Eye",
-      "title": "Araghchi says Iran not behind drone attack that killed two in Kuwait",
-      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/araghchi-says-iran-not-behind-drone-attack-killed-two-kuwait",
-      "desc": "",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Middle East Eye",
-        "src": "Middle East Eye",
-        "byline": "https://www.facebook.com/middleeasteye/"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Thu 12:12 p.m.",
-      "primary": false,
-      "outlet": "ABC News",
-      "title": "Iran live updates: Iranian drone attack killed 2 Italians, Kuwait says",
-      "url": "https://abcnews.com/International/live-updates/iran-live-updates-tehran-strait-hormuz-safe-demands/?id=138369648",
-      "desc": "President Donald Trump announced \"major combat operations\" against Iran on Feb. 28.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "ABC News",
-        "src": "ABC News",
-        "byline": "[{\"name\":\"David Brennan\",,\"@type\":\"Person\"},{\"name\":\"Nadine El-Bawab\",,\"@type\":\"Person\"}] {\"@type\":\"Organization\",\"name\""
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Thu 11:32 a.m.",
-      "primary": false,
-      "outlet": "Al Jazeera",
-      "title": "Two Italians killed by ‘drone strike debris’ in Kuwait",
-      "url": "https://www.aljazeera.com/news/2026/11/26/two-italians-killed-after-iranian-drones-strike-facility-says-kuwait?traffic_source=rss",
-      "desc": "Iran has strongly denied any involvement in the fatal incident.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Al Jazeera",
-        "src": "Al Jazeera",
-        "byline": "{\"@type\":\"Person\",\"name\":\"Al Jazeera Staff\",} Al Jazeera Staff Add Al Jazeera on Google By "
-       }
-      ],
-      "copies": []
-     }
-    ],
-    "replaces_top": false,
-    "events": [],
-    "theme": "",
-    "canada": "none",
-    "canus": false,
-    "incoherent": false,
-    "popular": 0,
-    "us_election": false,
-    "fronts": 1,
-    "fronts_ca": 0,
-    "fronts_who": [
-     "CBS News"
-    ],
-    "judgment": "national",
-    "judgment_why": "National: affects many people; carried beyond one city.",
-    "weight": 31.0
-   },
-   {
     "key": "auto-c02c89af",
     "words": [
      "compliance",
-     "automaker",
+     "exemption",
      "penalties",
+     "automaker",
      "tailpipe",
-     "unifor",
-     "ford"
+     "unifor"
     ],
     "score": 8,
     "outlets": 2,
@@ -982,7 +752,7 @@
        {
         "outlet": "Global News",
         "src": "Corus",
-        "byline": "{\"@type\":\"Person\",\"name\":\"Rachel Morgan\",} Name Geoff Mitch Dekker Anonymous Tim Dobson Gino Artigiano Anonymous Humming"
+        "byline": "{\"@type\":\"Person\",\"name\":\"Rachel Morgan\",} Name Lex Curran Geoff Mitch Dekker Anonymous Tim Dobson Gino Artigiano Anonym"
        }
       ],
       "copies": []
@@ -1006,12 +776,215 @@
      {
       "net": "Global News",
       "url": "https://www.youtube.com/watch?v=fsXdYxxFTzE",
-      "title": "“Incredible arrogance” for Carney not to answer questions on Stellantis plant closure: Poilievre",
+      "title": "Liberals tout Honda, Ford Ontario deals as Conservatives criticize handling of Stellantis plant",
       "img": "https://i.ytimg.com/vi/fsXdYxxFTzE/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
     ]
+   },
+   {
+    "key": "auto-49338600",
+    "words": [
+     "italians",
+     "iranian",
+     "kuwait"
+    ],
+    "score": 7,
+    "outlets": 5,
+    "carriers": 5,
+    "tag": "Breaking",
+    "title": "Two Italians killed in strike in Kuwait, as Iran denies responsibility",
+    "url": "https://www.bbc.co.uk/news/articles/c39w9y5dx4k5o?at_medium=RSS&at_campaign=rss",
+    "outlet": "BBC News",
+    "t": "Thu 3:35 p.m.",
+    "iso": "2026-11-26T20:35:39+00:00",
+    "summary": "The pair were technicians for German company Rheinmetall, according to Italy's foreign ministry.",
+    "first": {
+     "outlet": "Al Jazeera",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/26/two-dead-after-iranian-drone-attack-on-kuwait?traffic_source=rss",
+     "t": "Thu 10:55 a.m.",
+     "title": "Two dead after Iranian drone attack on Kuwait",
+     "iso": "2026-11-26T15:55:15+00:00"
+    },
+    "newest": "2026-11-26T20:35:39+00:00",
+    "photo": {
+     "src": "live/img/auto-49338600-3d00993a3c.jpg",
+     "orig": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/4cbd/live/babaff60-e9ac-11f1-a094-5fdc692f3e33.png",
+     "caption": "A logo of German arms manufacturer Rheinmetall. — via BBC News",
+     "alt": "A logo of German arms manufacturer Rheinmetall",
+     "outlet": "BBC News",
+     "url": "https://www.bbc.co.uk/news/articles/c39w9y5dx4k5o?at_medium=RSS&at_campaign=rss",
+     "since": "2026-11-26T21:09:50.023081+00:00"
+    },
+    "photo_seen": [
+     "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/26/9d94126a-cf9a-44ed-9f77-30461774944e/thumbnail/1200x630g2/2cd022452cd8713f2d0b6637141738bf/2026-11-20t110959z-393580283-rc2kroah1egc-rtrmadp-3-iran-crisis.jpg",
+     "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/4cbd/live/babaff60-e9ac-11f1-a094-5fdc692f3e33.png"
+    ],
+    "photos": [
+     {
+      "src": "live/img/auto-49338600-3d00993a3c.jpg",
+      "orig": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/4cbd/live/babaff60-e9ac-11f1-a094-5fdc692f3e33.png",
+      "caption": "A logo of German arms manufacturer Rheinmetall. — via BBC News",
+      "alt": "A logo of German arms manufacturer Rheinmetall",
+      "outlet": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c39w9y5dx4k5o?at_medium=RSS&at_campaign=rss"
+     },
+     {
+      "src": "live/img/auto-49338600-e41fb8f9d9.jpg",
+      "orig": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/26/9d94126a-cf9a-44ed-9f77-30461774944e/thumbnail/1200x630g2/2cd022452cd8713f2d0b6637141738bf/2026-11-20t110959z-393580283-rc2kroah1egc-rtrmadp-3-iran-crisis.jpg",
+      "caption": "From: Iran accused of carrying out drone attack killing 2 Italians in Kuwait. — via CBS News",
+      "alt": "Iran accused of carrying out drone attack killing 2 Italians in Kuwait",
+      "outlet": "CBS News",
+      "url": "https://www.cbsnews.com/live-updates/iran-war-us-military-ai-weapons-oil/"
+     }
+    ],
+    "independent": 5,
+    "reports": [
+     {
+      "t": "Thu 3:35 p.m.",
+      "iso": "2026-11-26T20:35:39+00:00",
+      "outlet": "BBC News",
+      "title": "Two Italians killed in strike in Kuwait, as Iran denies responsibility",
+      "url": "https://www.bbc.co.uk/news/articles/c39w9y5dx4k5o?at_medium=RSS&at_campaign=rss",
+      "desc": "The pair were technicians for German company Rheinmetall, according to Italy's foreign ministry."
+     },
+     {
+      "t": "Thu 3:35 p.m.",
+      "iso": "2026-11-26T20:35:23+00:00",
+      "outlet": "CBS News",
+      "title": "Iran accused of carrying out drone attack killing 2 Italians in Kuwait",
+      "url": "https://www.cbsnews.com/live-updates/iran-war-us-military-ai-weapons-oil/",
+      "desc": "Iran denies being behind a deadly attack on a Kuwaiti military facility that killed two Italian nationals."
+     },
+     {
+      "t": "Thu 2:48 p.m.",
+      "iso": "2026-11-26T19:48:44.716000+00:00",
+      "outlet": "CBC News",
+      "title": "Iran denies involvement after 2 Italian technicians killed in attack on Kuwait site",
+      "url": "https://www.cbc.ca/news/world/italian-workers-killed-kuwait-iran-strike-9.7437089",
+      "desc": "Two Italians were killed in a drone attack in Kuwait on Thursday that Italy and Kuwait blamed on Iran, although Tehran has denied any involvement."
+     },
+     {
+      "t": "Thu 12:12 p.m.",
+      "iso": "2026-11-26T17:12:36+00:00",
+      "outlet": "ABC News",
+      "title": "Iran live updates: Iranian drone attack killed 2 Italians, Kuwait says",
+      "url": "https://abcnews.com/International/live-updates/iran-live-updates-tehran-strait-hormuz-safe-demands/?id=138369648",
+      "desc": "President Donald Trump announced \"major combat operations\" against Iran on Feb. 28."
+     },
+     {
+      "t": "Thu 11:32 a.m.",
+      "iso": "2026-11-26T16:32:31+00:00",
+      "outlet": "Al Jazeera",
+      "title": "Two Italians killed by ‘drone strike debris’ in Kuwait",
+      "url": "https://www.aljazeera.com/news/2026/11/26/two-italians-killed-after-iranian-drones-strike-facility-says-kuwait?traffic_source=rss",
+      "desc": "Iran has strongly denied any involvement in the fatal incident."
+     }
+    ],
+    "sources": [
+     {
+      "t": "Thu 3:35 p.m.",
+      "primary": false,
+      "outlet": "BBC News",
+      "title": "Two Italians killed in strike in Kuwait, as Iran denies responsibility",
+      "url": "https://www.bbc.co.uk/news/articles/c39w9y5dx4k5o?at_medium=RSS&at_campaign=rss",
+      "desc": "The pair were technicians for German company Rheinmetall, according to Italy's foreign ministry.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "BBC News",
+        "src": "BBC News",
+        "byline": "[{\"@type\":\"Person\",\"name\":\"James Gregory\"}] https://www.facebook.com/bbcnews"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Thu 3:35 p.m.",
+      "primary": false,
+      "outlet": "CBS News",
+      "title": "Iran accused of carrying out drone attack killing 2 Italians in Kuwait",
+      "url": "https://www.cbsnews.com/live-updates/iran-war-us-military-ai-weapons-oil/",
+      "desc": "Iran denies being behind a deadly attack on a Kuwaiti military facility that killed two Italian nationals.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "CBS News",
+        "src": "CBS News",
+        "byline": "own staff: editor"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Thu 2:48 p.m.",
+      "primary": false,
+      "outlet": "CBC News",
+      "title": "Iran denies involvement after 2 Italian technicians killed in attack on Kuwait site",
+      "url": "https://www.cbc.ca/news/world/italian-workers-killed-kuwait-iran-strike-9.7437089",
+      "desc": "Two Italians were killed in a drone attack in Kuwait on Thursday that Italy and Kuwait blamed on Iran, although Tehran has denied any involvement.",
+      "wire": "Reuters",
+      "by": [
+       {
+        "outlet": "CBC News",
+        "src": "Reuters",
+        "byline": "toURL\":\"\"},\"recentContent\":{}} \"Thomson Reuters\" \"Reuters\" \"Reuters"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Thu 12:12 p.m.",
+      "primary": false,
+      "outlet": "ABC News",
+      "title": "Iran live updates: Iranian drone attack killed 2 Italians, Kuwait says",
+      "url": "https://abcnews.com/International/live-updates/iran-live-updates-tehran-strait-hormuz-safe-demands/?id=138369648",
+      "desc": "President Donald Trump announced \"major combat operations\" against Iran on Feb. 28.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "ABC News",
+        "src": "ABC News",
+        "byline": "[{\"name\":\"David Brennan\",,\"@type\":\"Person\"},{\"name\":\"Nadine El-Bawab\",,\"@type\":\"Person\"}] {\"@type\":\"Organization\",\"name\""
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Thu 11:32 a.m.",
+      "primary": false,
+      "outlet": "Al Jazeera",
+      "title": "Two Italians killed by ‘drone strike debris’ in Kuwait",
+      "url": "https://www.aljazeera.com/news/2026/11/26/two-italians-killed-after-iranian-drones-strike-facility-says-kuwait?traffic_source=rss",
+      "desc": "Iran has strongly denied any involvement in the fatal incident.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "Al Jazeera",
+        "src": "Al Jazeera",
+        "byline": "{\"@type\":\"Person\",\"name\":\"Al Jazeera Staff\",} Al Jazeera Staff Add Al Jazeera on Google By "
+       }
+      ],
+      "copies": []
+     }
+    ],
+    "replaces_top": false,
+    "events": [],
+    "theme": "",
+    "canada": "none",
+    "canus": false,
+    "incoherent": false,
+    "popular": 0,
+    "us_election": false,
+    "fronts": 1,
+    "fronts_ca": 0,
+    "fronts_who": [
+     "CBS News"
+    ],
+    "judgment": "national",
+    "judgment_why": "National: affects many people; carried beyond one city.",
+    "weight": 28.5
    },
    {
     "key": "auto-4c7fc7c6",
@@ -1275,30 +1248,9 @@
   ],
   "considered": [
    {
-    "title": "Iran denies involvement after 2 Italian technicians killed in attack on Kuwait site",
-    "url": "https://www.cbc.ca/news/world/italian-workers-killed-kuwait-iran-strike-9.7437089",
-    "rank": 1,
-    "live": "",
-    "weight": 31.0,
-    "score": 8,
-    "independent": 6,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": true,
-    "fronts": 1,
-    "fronts_who": [
-     "CBS News"
-    ],
-    "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
-    "carriers": 6,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried beyond one city."
-   },
-   {
     "title": "Ford, Unifor call on Ottawa to exempt Canadian automakers from exhaust pollution penalties",
     "url": "https://www.cbc.ca/news/canada/toronto/doug-ford-unifor-exhaust-penalties-ottawa-9.7437680?cmp=rss",
-    "rank": 2,
+    "rank": 1,
     "live": "",
     "weight": 40.0,
     "score": 8,
@@ -1313,6 +1265,27 @@
     "carriers": 6,
     "judgment": "national",
     "why_judged": "National: affects many people; carried across the country (national desks)."
+   },
+   {
+    "title": "Two Italians killed in strike in Kuwait, as Iran denies responsibility",
+    "url": "https://www.bbc.co.uk/news/articles/c39w9y5dx4k5o?at_medium=RSS&at_campaign=rss",
+    "rank": 2,
+    "live": "",
+    "weight": 28.5,
+    "score": 7,
+    "independent": 5,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": true,
+    "fronts": 1,
+    "fronts_who": [
+     "CBS News"
+    ],
+    "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
+    "carriers": 5,
+    "judgment": "national",
+    "why_judged": "National: affects many people; carried beyond one city."
    },
    {
     "title": "Mexico seeks US talks about suspected SpaceX debris",
@@ -1391,14 +1364,19 @@
     "why_judged": "National: affects some people; carried across the country (3 cities)."
    },
    {
+    "title": "Canadian auto-parts makers, Ukrainian defence firms to team up to build military goods in Canada",
+    "score": 18,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
     "title": "Concerns Canada’s EV policy opens door to Chinese ‘Trojan horse’",
     "score": 18,
     "why": "not built: only 1 independent report(s) (6 sites)"
    },
    {
-    "title": "Canadian auto-parts makers, Ukrainian defence firms to team up to build military goods in Canada",
-    "score": 17,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+    "title": "$168M loan guarantee provided for First Nations' investment in LNG pipeline",
+    "score": 10,
+    "why": "not built: only 2 independent report(s) (8 sites)"
    },
    {
     "title": "Air traffic controller shortage persists, but delays caused by labour gap way down",
@@ -1409,11 +1387,6 @@
     "title": "What the Trump thumping may mean for Canada",
     "score": 9,
     "why": "not built: only 2 independent report(s) (6 sites)"
-   },
-   {
-    "title": "$168M loan guarantee provided for First Nations' investment in LNG pipeline",
-    "score": 9,
-    "why": "not built: only 2 independent report(s) (7 sites)"
    },
    {
     "title": "Labour group says Bill C-39 changes fail to protect workers' right to strike",
@@ -1427,8 +1400,8 @@
    },
    {
     "title": "Ford says he wouldn't hesitate to shoot a home invader, encourages Ontarians to 'fight back'",
-    "score": 8,
-    "why": "not built: only 2 independent report(s) (3 sites)"
+    "score": 7,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
     "title": "New Brunswick community plans to expropriate land from owner that closed mill",
@@ -1441,9 +1414,9 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Man from Ontario gets 4.5 years for meth smuggling at Vancouver International Airport",
+    "title": "N.S. premier shuts down speculation around imminent election call",
     "score": 7,
-    "why": "not built: only 2 independent report(s) (5 sites)"
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
   ],
   "moved": [],
@@ -1479,7 +1452,7 @@
      "alt": "U.S. President Donald Trump speaks at a pardoning ceremony on the helipad on the South Lawn of the White House, Tuesday, Nov. 24, 2026, in Washington. (AP Photo",
      "outlet": "CTV News",
      "url": "https://www.ctvnews.ca/world/trumps-tariffs/article/five-takeaways-from-trumps-new-tariffs/",
-     "since": "2026-11-26T21:09:53.475910+00:00"
+     "since": "2026-11-26T21:16:24.805786+00:00"
     },
     "photo_seen": [
      "https://www.ctvnews.ca/resizer/v2/I7DCCEOZV5ANRGV67GSLEKPJZA.jpg?smart=true&auth=6821d1945ca4e1c59ae5095e5bfe2ef231efb382fec1e2dfec4000f4fd9f287f&width=1200&height=630"
@@ -1718,8 +1691,8 @@
     "key": "auto-bcb17fc6",
     "words": [
      "francique",
-     "jamal",
-     "black"
+     "black",
+     "jamal"
     ],
     "score": 8,
     "outlets": 4,
@@ -1746,7 +1719,7 @@
      "alt": "A Monopoly Advent Calendar on a blue background.",
      "outlet": "CTV News",
      "url": "https://www.ctvnews.ca/shopping-trends/article/black-friday-advent-calendar-deals/",
-     "since": "2026-11-26T21:09:50.570995+00:00"
+     "since": "2026-11-26T21:16:24.020871+00:00"
     },
     "photo_seen": [
      "https://www.ctvnews.ca/resizer/v2/A4BK6JFYPFBRDCZRRVBELZIAKU.jpg?smart=true&auth=32b10517d3b7283d5fc9dca008941fddd61e4c43a77064e62d10b484be172b69&width=1200&height=630"
@@ -2080,7 +2053,7 @@
    "id": "B0__HbamUrw",
    "r": "ca",
    "o": "Global News",
-   "t": "Home invaders will “look like Swiss cheese”: Legal gun owner Doug Ford gives warning about break-ins",
+   "t": "“Use every tool you have” to “protect your family” against home invasions, Doug Ford tells Ontarians",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=B0__HbamUrw",
@@ -2108,7 +2081,7 @@
    "id": "GZ3tz0o7aSw",
    "r": "ca",
    "o": "CTV News",
-   "t": "Shoppers warned against AI-made Black Friday scam sites",
+   "t": "Tech expert warns against AI-made Black Friday scam sites: ‘There really is no vetting process’",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=GZ3tz0o7aSw",
@@ -2119,16 +2092,16 @@
    "geo": "unknown"
   },
   {
-   "id": "3H1ycDzykP0",
+   "id": "sDQgyWXI9CU",
    "r": "ca",
    "o": "CTV News",
-   "t": "WATCH: Toronto musician killed in home invasion performing at Grey Cup halftime show",
+   "t": "Clarity still needed as Ontario says e-bikes to face tighter regulations",
    "rec": false,
    "d": "",
-   "u": "https://www.youtube.com/watch?v=3H1ycDzykP0",
-   "img": "https://i.ytimg.com/vi/3H1ycDzykP0/hqdefault.jpg",
+   "u": "https://www.youtube.com/watch?v=sDQgyWXI9CU",
+   "img": "https://i.ytimg.com/vi/sDQgyWXI9CU/hqdefault.jpg",
    "up": "2026-11-26",
-   "added": "2026-11-26T21:07:54.257166+00:00",
+   "added": "2026-11-26T21:13:10.787211+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2276,7 +2249,7 @@
    "id": "mCJWsgv73A8",
    "r": "us",
    "o": "CNN",
-   "t": "Thanksgiving storm brings sweeping power outages to eastern US",
+   "t": "East Coast blasted by Thanksgiving storm. ~600K lose power",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=mCJWsgv73A8",
@@ -2385,10 +2358,38 @@
    "geo": "unknown"
   },
   {
+   "id": "g-he9QWCKH8",
+   "r": "us",
+   "o": "Bloomberg",
+   "t": "Spain's De Cos Set to Succeed Lagarde as ECB President",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=g-he9QWCKH8",
+   "img": "https://i.ytimg.com/vi/g-he9QWCKH8/hqdefault.jpg",
+   "up": "2026-11-26",
+   "added": "2026-11-26T21:13:10.787211+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "UOH-lARhAnw",
+   "r": "us",
+   "o": "Bloomberg",
+   "t": "Global Stocks Climb as AI Trade Rebounds",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=UOH-lARhAnw",
+   "img": "https://i.ytimg.com/vi/UOH-lARhAnw/hqdefault.jpg",
+   "up": "2026-11-26",
+   "added": "2026-11-26T21:13:10.787211+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
    "id": "26PQqzFIQI4",
    "r": "world",
    "o": "Al Jazeera",
-   "t": "How close should Britain get to the EU? | Counting the Cost",
+   "t": "After Brexit, is Britain heading back to the EU? | Counting the Cost",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=26PQqzFIQI4",
@@ -2430,7 +2431,7 @@
    "id": "kGu4pLZzP5I",
    "r": "world",
    "o": "DW News",
-   "t": "As Ukraine costs rise, Europe confronts difficult budget choices | DW News",
+   "t": "The budget battle exposing Europe's divisions over Ukraine and defense | DW News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=kGu4pLZzP5I",
@@ -2458,7 +2459,7 @@
    "id": "62W3X0hNoMU",
    "r": "world",
    "o": "Sky News",
-   "t": "A historic moment for UK migration",
+   "t": "Why was UK migration so high and why is it falling so fast?",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=62W3X0hNoMU",
@@ -2486,7 +2487,7 @@
    "id": "yV30I2mV5rY",
    "r": "world",
    "o": "DW News",
-   "t": "A powerful US storm system turns a holiday tradition into a weather story | DW News",
+   "t": "From New York to California, severe weather upends Thanksgiving plans | DW News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=yV30I2mV5rY",
@@ -2577,19 +2578,6 @@
  ],
  "papers": [
   {
-   "inst": "Fraser Institute",
-   "place": "Vancouver",
-   "kind": "Publication",
-   "by": "",
-   "date": "Nov. 26, 2026",
-   "d": "2026-11-26",
-   "pic": "chart",
-   "u": "https://www.fraserinstitute.org/commentary/alberta-government-should-save-more-and-spend-less",
-   "t": "Alberta government should save more and spend less",
-   "g": "Alberta government should save more and spend less beng Thu, 11/26/2026 - 13:37 EST. READ TIME 3 MIN. Alberta's fiscal outlook continues to improve, but not through intentional action by the Alberta government. Specifically, according to the province's latest fiscal update , the government now projects an $8.5 billion…",
-   "auto": true
-  },
-  {
    "inst": "Macdonald-Laurier Institute",
    "place": "Ottawa",
    "kind": "Publication",
@@ -2642,32 +2630,6 @@
    "auto": true
   },
   {
-   "inst": "Frontier Centre for Public Policy",
-   "place": "Winnipeg",
-   "kind": "Publication",
-   "by": "",
-   "date": "Nov. 26, 2026",
-   "d": "2026-11-26",
-   "pic": "chart",
-   "u": "https://frontiercentre.org/2026/11/26/local-government-performance-index-10th-edition/?utm_source=rss&utm_medium=rss&utm_campaign=local-government-performance-index-10th-edition",
-   "t": "Local Government Performance Index 10th Edition",
-   "g": "Frontier's 2026 Local Government Performance Index scores 79 Canadian municipalities on financial-reporting transparency. Seven cities tied at 32 of 33; British Columbia leads, Charlottetown trails. The index gauges disclosure quality, not whether governments spend wisely.",
-   "auto": true
-  },
-  {
-   "inst": "Frontier Centre for Public Policy",
-   "place": "Winnipeg",
-   "kind": "Publication",
-   "by": "",
-   "date": "Nov. 26, 2026",
-   "d": "2026-11-26",
-   "pic": "chart",
-   "u": "https://frontiercentre.org/2026/11/26/seven-canadian-cities-earn-top-marks-for-financial-transparency-is-yours-one-of-them/?utm_source=rss&utm_medium=rss&utm_campaign=seven-canadian-cities-earn-top-marks-for-financial-transparency-is-yours-one-of-them",
-   "t": "Seven Canadian cities earn top marks for financial transparency. Is yours one of them?",
-   "g": "Frontier's 2026 Local Government Performance Index scores 79 Canadian municipalities on financial-reporting transparency. Seven cities tied at 32 of 33 British Columbia leads, Charlottetown trails. The index gauges disclosure quality, not whether governments spend wisely.",
-   "auto": true
-  },
-  {
    "inst": "Atlantic Council",
    "place": "Washington",
    "kind": "Publication",
@@ -2707,19 +2669,6 @@
    "auto": true
   },
   {
-   "inst": "AEI",
-   "place": "Washington",
-   "kind": "Publication",
-   "by": "",
-   "date": "Nov. 25, 2026",
-   "d": "2026-11-25",
-   "pic": "chart",
-   "u": "https://www.aei.org/domestic-policy/power-politics-and-the-changing-geography-of-americas-data-centers/",
-   "t": "Power, Politics, and the Changing Geography of America’s Data Centers",
-   "g": "The 2026 elections will change the geography and timing of America’s AI investment. Some states will lose opportunities to other states. Americans will continue to demand AI, but providing it will become more expensive as developers move to less advantageous locations and wait longer for electricity. The post Power,…",
-   "auto": true
-  },
-  {
    "inst": "Atlantic Council",
    "place": "Washington",
    "kind": "Publication",
@@ -2756,6 +2705,58 @@
    "u": "https://www.lowyinstitute.org/the-interpreter/icj-genocide-ruling-what-now-for-over-1-million-rohingya-survivors-in-exile",
    "t": "ICJ genocide ruling: what now for over 1 million Rohingya survivors in exile?",
    "g": "A genocide ruling against Myanmar leaves the harder work still ahead: safe, dignified return for the displaced.",
+   "auto": true
+  },
+  {
+   "inst": "Heritage Foundation",
+   "place": "Washington",
+   "kind": "Publication",
+   "by": "",
+   "date": "Nov. 24, 2026",
+   "d": "2026-11-24",
+   "pic": "chart",
+   "u": "https://www.heritage.org/progressivism/commentary/the-common-thread-among-congressional-immigrants-thats-shaping-politics",
+   "t": "The Common Thread Among Congressional Immigrants That’s Shaping Politics",
+   "g": "Whatever one thinks of the midterms, we know this: we’re about to get a lot more anti-Westernism, socialism, and Islamism thanks in part to several young, immigrant socialists who have run for office . Among them are Ethiopian-born Melat Kiros, who just won a seat in Congress for Colorado; Ugandan-born Zohran Mamdani,…",
+   "auto": true
+  },
+  {
+   "inst": "Heritage Foundation",
+   "place": "Washington",
+   "kind": "Publication",
+   "by": "",
+   "date": "Nov. 24, 2026",
+   "d": "2026-11-24",
+   "pic": "chart",
+   "u": "https://www.heritage.org/education/commentary/aft-boss-randi-weingartens-sleazy-book-scam-keeps-growing-and-teachers-paid-it",
+   "t": "AFT Boss Randi Weingarten’s Sleazy Book Scam Keeps Growing—and Teachers Paid for It All",
+   "g": "Becoming a teacher is no way to get rich, but becoming the head of a teachers union? That’s a different story. Take Randi Weingarten, president of the American Federation of Teachers , who received $546,158 in total compensation last year, according to the union’s latest financial disclosure. That’s over seven times…",
+   "auto": true
+  },
+  {
+   "inst": "Peterson Institute",
+   "place": "Washington",
+   "kind": "Publication",
+   "by": "",
+   "date": "Nov. 24, 2026",
+   "d": "2026-11-24",
+   "pic": "chart",
+   "u": "https://www.piie.com/blogs/realtime-economics/2026/policy-driven-trade-imbalances-case-sovereign-wealth-funds",
+   "t": "Policy driven trade imbalances: The case of sovereign wealth funds",
+   "g": "Our recent working paper is the latest in a series of papers demonstrating the important role official policies play in driving global trade imbalances. The core results are that each $1 increase in a country's fiscal balance raises its trade balance $0.30 and each $1 purchase of official foreign assets raises the…",
+   "auto": true
+  },
+  {
+   "inst": "Pew Research Center",
+   "place": "Washington",
+   "kind": "Publication",
+   "by": "",
+   "date": "Nov. 24, 2026",
+   "d": "2026-11-24",
+   "pic": "chart",
+   "u": "https://www.pewresearch.org/newsletter/politics/politics-11-24-2026/",
+   "t": "How Americans feel about the midterms",
+   "g": "Politics A monthly digest of research on public attitudes on politics and major policy issues · Subscribe ↗ From our research The share of voters who say the elections across the U.S. were run and administered well this year.",
    "auto": true
   }
  ],
@@ -2898,12 +2899,28 @@
    "Good afternoon. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
    "The mother of a man who was fatally shot by police during an attempted arrest in Mississauga, Ont., nearly seven years ago told a coroner’s inquest Thursday she believes anti-Black racism played a role in her son’s death, The Canadian Press reports.",
    "Mexico seeks a meeting with U.S. aviation authorities to discuss permits for SpaceX to use Mexican airspace, Mexican President Claudia Sheinbaum said.",
-   "Iran denies responsibility for attack on Kuwait that killed two Italians, Middle East Eye reports.",
    "Five takeaways from Trump’s new tariffs, The Canadian Press reports.",
+   "Two Italians killed by ‘drone strike debris’ in Kuwait, Al Jazeera reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
   ]
  },
  "otr": [
+  {
+   "cat": "mp",
+   "media": "none",
+   "initials": "GC",
+   "name": "Government of Canada",
+   "role": "Official news releases",
+   "date": "Nov 26",
+   "platform": "Official statement",
+   "handle": "canada.ca",
+   "hed": "Tribunal Finds Injury—Certain Unarmoured Building Cables from China",
+   "summary": "Further to the Canadian International Trade Tribunal’s inquiry (NQ-2026-003), the Tribunal today found that the dumping and subsidizing of certain unarmoured building cables, originating in or exported from China, have caused injury to the…",
+   "href": "https://www.canada.ca/en/international-trade-tribunal/news/2026/11/tribunal-finds-injurycertain-unarmoured-building-cables-from-china.html",
+   "report": false,
+   "iso": "2026-11-26T21:10:00+00:00",
+   "auto": true
+  },
   {
    "cat": "premier",
    "media": "none",
@@ -2950,22 +2967,6 @@
    "href": "https://news.ontario.ca/en/advisory/1008326/minister_kusendova_bashta_to_hold_a_press_conference",
    "report": false,
    "iso": "2026-11-26T19:00:00+00:00",
-   "auto": true
-  },
-  {
-   "cat": "mp",
-   "media": "none",
-   "initials": "GC",
-   "name": "Government of Canada",
-   "role": "Official news releases",
-   "date": "Nov 26",
-   "platform": "Official statement",
-   "handle": "canada.ca",
-   "hed": "Minister Fraser launches first-ever growth capital pilot to back Atlantic businesses ready to expand",
-   "summary": "The $50-million pilot responds to the Atlantic Economic Panel’s call to help established businesses finance their next stage of growth",
-   "href": "https://www.canada.ca/en/atlantic-canada-opportunities/news/2026/11/minister-fraser-launches-first-ever-growth-capital-pilot-to-back-atlantic-businesses-ready-to-expand.html",
-   "report": false,
-   "iso": "2026-11-26T17:10:05+00:00",
    "auto": true
   },
   {
@@ -3194,12 +3195,12 @@
    "city": "St. John's",
    "tz": "America/St_Johns",
    "world": false,
-   "w": "Apologizes",
-   "label": "Province Apologizes to Innu Nation for ‘300 Year’…",
-   "u": "https://vocm.com/2026/11/26/317994/",
-   "title": "Province Apologizes to Innu Nation for ‘300 Year’ Controversy, Acknowledges Innu’s Historic Presence in Labrador",
-   "outlet": "VOCM",
-   "t": "Thu 3:47 p.m.",
+   "w": "Innu",
+   "label": "N.L. apologizes, says it now accepts Innu history dates…",
+   "u": "https://www.cbc.ca/news/canada/newfoundland-labrador/n-l-apologizes-says-it-now-accepts-innu-history-dates-back-more-than-300-years-9.7437647?cmp=rss",
+   "title": "N.L. apologizes, says it now accepts Innu history dates back more than 300 years",
+   "outlet": "CBC News",
+   "t": "Thu 3:05 p.m.",
    "hot": false
   },
   {
@@ -3254,24 +3255,24 @@
    "city": "Vancouver",
    "tz": "America/Vancouver",
    "world": false,
-   "w": "Ontario",
-   "label": "Man from Ontario gets 4.5 years for meth smuggling at…",
-   "u": "https://www.narcity.com/vancouver/man-gets-4-5-years-for-meth-smuggling-at-yvr",
-   "title": "Man from Ontario gets 4.5 years for meth smuggling at Vancouver International Airport",
-   "outlet": "Narcity",
-   "t": "Thu 3:48 p.m.",
+   "w": "Police",
+   "label": "Thorough review ongoing in cause of fatal crash outside…",
+   "u": "https://www.thestar.com/news/canada/british-columbia/thorough-review-ongoing-in-cause-of-fatal-crash-outside-delta-b-c-mall-police/article_b586a3c0-7490-5119-9b39-9fafae86091d.html",
+   "title": "Thorough review ongoing in cause of fatal crash outside Delta, B.C., mall: police",
+   "outlet": "Toronto Star",
+   "t": "Thu 3:13 p.m.",
    "hot": true
   },
   {
    "city": "Washington",
    "tz": "America/New_York",
    "world": false,
-   "w": "In court",
-   "label": "Supreme Court of Canada to hear challenge of Ontario law…",
-   "u": "https://www.ctvnews.ca/toronto/politics/queens-park/article/supreme-court-of-canada-to-hear-challenge-of-ontario-law-central-to-greenbelt-dispute/",
-   "title": "Supreme Court of Canada to hear challenge of Ontario law central to Greenbelt dispute",
-   "outlet": "CTV News",
-   "t": "Thu 3:42 p.m.",
+   "w": "Election",
+   "label": "Trump takes on Somali welfare dependency in Thanksgiving…",
+   "u": "https://www.foxnews.com/politics/trump-takes-somali-welfare-dependency-thanksgiving-message-lays-who-should-stay-us",
+   "title": "Trump takes on Somali welfare dependency in Thanksgiving message, lays out who should stay in US",
+   "outlet": "Fox News",
+   "t": "Thu 3:58 p.m.",
    "hot": true
   },
   {
@@ -3290,13 +3291,13 @@
    "city": "Kyiv",
    "tz": "Europe/Kyiv",
    "world": true,
-   "w": "Missile strikes",
-   "label": "Ukrainian intelligence says North Korea paused missile…",
-   "u": "https://www.foxnews.com/world/ukrainian-intelligence-north-korea-paused-missile-deliveries-russia-friction-south-korea",
-   "title": "Ukrainian intelligence says North Korea paused missile deliveries to Russia amid friction over South Korea",
-   "outlet": "Fox News",
-   "t": "Thu 2:10 p.m.",
-   "hot": false
+   "w": "Canada–EU",
+   "label": "Hungary joins coalition for return of abducted Ukrainian…",
+   "u": "https://kyivindependent.com/hungary-joins-coalition-for-return-of-abducted-ukrainian-children-following-magyar-visit-zelensky-says/",
+   "title": "Hungary joins coalition for return of abducted Ukrainian children following Magyar visit, Zelensky says",
+   "outlet": "Kyiv Independent",
+   "t": "Thu 3:59 p.m.",
+   "hot": true
   },
   {
    "city": "Mexico City",
@@ -3316,14 +3317,14 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Thu 3:34 p.m.",
-   "iso": "2026-11-26T20:34:26+00:00",
-   "title": "Where auto thefts in East York were reported this week",
-   "summary": "There was one vehicle reported stolen in the district from Nov. 19 to Nov. 25",
-   "outlet": "Toronto Star, ABC News, CTV News + CP24 (CP), Fox News, Kyiv Independent, CP24, CityNews Calgary, Al Jazeera, The Hill",
-   "n": 9,
-   "url": "https://www.thestar.com/news/gta/local-crime/where-auto-thefts-in-east-york-were-reported-this-week/article_c67be59d-c519-53ba-b42c-57c1b90540a7.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/7/69/76994e7d-09ab-50d7-8312-1dd23b2aeed6/64b958b62095a.image.jpg?crop=1200%2C630%2C0%2C84"
+   "t": "Thu 4:04 p.m.",
+   "iso": "2026-11-26T21:04:05+00:00",
+   "title": "Man sought in East York rock attack; two alleged drug traffickers nabbed in west end",
+   "summary": "",
+   "outlet": "Toronto Sun, Kyiv Independent, Toronto Star, ABC News, CTV News + CP24 (CP), Fox News, CP24, CityNews Calgary",
+   "n": 8,
+   "url": "https://torontosun.com/news/local-news/man-sought-in-rock-throwing-attack-in-east-york",
+   "img": ""
   },
   {
    "desk": "world",
@@ -3332,8 +3333,8 @@
    "iso": "2026-11-26T20:35:39+00:00",
    "title": "Two Italians killed in strike in Kuwait, as Iran denies responsibility",
    "summary": "The pair were technicians for German company Rheinmetall, according to Italy's foreign ministry.",
-   "outlet": "BBC News, CBS News, CBC News (Reuters), Middle East Eye, ABC News, Al Jazeera",
-   "n": 6,
+   "outlet": "BBC News, CBS News, CBC News (Reuters), ABC News, Al Jazeera",
+   "n": 5,
    "url": "https://www.bbc.co.uk/news/articles/c39w9y5dx4k5o?at_medium=RSS&at_campaign=rss",
    "img": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/4cbd/live/babaff60-e9ac-11f1-a094-5fdc692f3e33.png"
   },
@@ -3362,16 +3363,16 @@
    "img": "https://www.ctvnews.ca/resizer/v2/VUKHRJKWTVCBFFEBZJYTP5WZDQ.JPG?smart=true&auth=48459763bcb621e91567c903f94d996a32dfa82a1ffd36876044c3bc879ec2f9&width=1200&height=630"
   },
   {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Thu 3:34 p.m.",
-   "iso": "2026-11-26T20:34:34+00:00",
-   "title": "Attack on Saudi’s Jazan refinery kills one person, disrupts operations",
-   "summary": "The attack killed a Nepali national, injured several people and sparked a fire, Saudi Energy Ministry says.",
-   "outlet": "Al Jazeera, CTV News + CP24 (CP), Middle East Eye",
+   "desk": "us",
+   "pic": "podium",
+   "t": "Thu 3:58 p.m.",
+   "iso": "2026-11-26T20:58:30+00:00",
+   "title": "Trump takes on Somali welfare dependency in Thanksgiving message, lays out who should stay in US",
+   "summary": "President Donald Trump says only 2% of Minnesota's Somali community should stay, claiming on Truth Social the rest should be thrown out to save the state.",
+   "outlet": "Fox News, The Hill, Toronto Star + PBS NewsHour + CTV News + CP24 + 1 more (AP)",
    "n": 3,
-   "url": "https://www.aljazeera.com/news/2026/11/26/attack-on-saudi-aramcos-jazan-refinery-kills-worker-disrupts-operations?traffic_source=rss",
-   "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6b089a77b51e8-1795725943.jpg?resize=1920%2C1440"
+   "url": "https://www.foxnews.com/politics/trump-takes-somali-welfare-dependency-thanksgiving-message-lays-who-should-stay-us",
+   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/01/somalia-flag-donald-trump.png"
   },
   {
    "desk": "politics",
@@ -3384,18 +3385,6 @@
    "n": 3,
    "url": "https://www.cbc.ca/news/politics/diana-fox-carney-oceans-9.7437560",
    "img": "https://i.cbc.ca/ais/e0aa3484-822a-4338-b514-1318c3ba5221,1795722306530/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C229%2C4401%2C2475%29%3BResize%3D620"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Thu 3:21 p.m.",
-   "iso": "2026-11-26T20:21:44+00:00",
-   "title": "Socialist weather and dogs barking in Hebrew: America's Thanksgiving culture wars",
-   "summary": "From Mamdani's alleged war on Thanksgiving to Mike Huckabee's dogs 'barking in Hebrew', Americans found plenty to argue about this holiday",
-   "outlet": "Middle East Eye, Toronto Star + PBS NewsHour + CTV News + CP24 + 1 more (AP), The Hill",
-   "n": 3,
-   "url": "https://www.middleeasteye.net/trending/socialist-weather-and-dogs%20barking-hebrew-americas-thanksgiving-culture-wars",
-   "img": "https://www.middleeasteye.net/sites/default/files/images-story/New-York-Mayor-Zohran-Mamdani-NYPD-Commissioner-Jessica-Tisch-25-November-2026-Reuters.jpg"
   },
   {
    "desk": "business",
@@ -3412,14 +3401,14 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Thu 1:17 p.m.",
-   "iso": "2026-11-26T18:17:19+00:00",
-   "title": "UK antisemitism advisor launches probe into BBC, says culture demands Jewish staffers 'justify' existence",
-   "summary": "The United Kingdom's antisemitism advisor, Lord John Mann, is investigating the BBC, citing accounts from current and former Jewish employees.",
-   "outlet": "Fox News, Toronto Star + CP24 (CP), Middle East Eye",
-   "n": 3,
-   "url": "https://www.foxnews.com/media/uk-antisemitism-advisor-launches-probe-bbc-says-culture-demands-jewish-staffers-justify-existence",
-   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/bbc-broadcasting-house-london-refurbished.jpg"
+   "t": "Thu 4:08 p.m.",
+   "iso": "2026-11-26T21:08:44+00:00",
+   "title": "$168M loan guarantee provided for First Nations' investment in LNG pipeline",
+   "summary": "A dozen First Nations are being provided a loan guarantee to support their investment in a pipeline feeding natural gas to the LNG Canada plant.",
+   "outlet": "CTV News + CP24 + Times Colonist + The Canadian Press (via Winnipeg Free Press) + 3 more, CBC News",
+   "n": 2,
+   "url": "https://www.ctvnews.ca/business/article/168m-loan-guarantee-provided-for-first-nations-investment-in-lng-pipeline/",
+   "img": "https://www.ctvnews.ca/resizer/v2/UKU3TWHJXDNJGFPWX3MEJEP66M.jpg?smart=true&auth=8c9b41c36cac76420717bfcdee6dbf7667988c345b342b737bce2498c4ef89a6&width=1200&height=630"
   },
   {
    "desk": "politics",
@@ -3432,6 +3421,18 @@
    "n": 2,
    "url": "https://www.timescolonist.com/the-mix/new-brunswick-community-plans-to-expropriate-land-from-owner-that-closed-mill-13062917",
    "img": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/be40548d03f45ce0a35debf4962e81b32aa49875cdaf5071f15a489c4e55dbc5.jpg;w=1200;h=800;mode=crop"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Thu 3:34 p.m.",
+   "iso": "2026-11-26T20:34:34+00:00",
+   "title": "Attack on Saudi’s Jazan refinery kills one person, disrupts operations",
+   "summary": "The attack killed a Nepali national, injured several people and sparked a fire, Saudi Energy Ministry says.",
+   "outlet": "Al Jazeera, CTV News + CP24 (CP)",
+   "n": 2,
+   "url": "https://www.aljazeera.com/news/2026/11/26/attack-on-saudi-aramcos-jazan-refinery-kills-worker-disrupts-operations?traffic_source=rss",
+   "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6b089a77b51e8-1795725943.jpg?resize=1920%2C1440"
   },
   {
    "desk": "politics",
@@ -3482,6 +3483,42 @@
    "img": ""
   },
   {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Thu 12:30 p.m.",
+   "iso": "2026-11-26T17:30:24+00:00",
+   "title": "Leaders choose Spain's former central bank head as next European Central Bank president",
+   "summary": "European leaders have chosen the former head of Spain’s central bank, Pablo Hernández de Cos, as president of the European Central Bank.",
+   "outlet": "CP24 + Toronto Star + BNN Bloomberg, Al Jazeera",
+   "n": 2,
+   "url": "https://www.cp24.com/news/world/2026/11/26/leaders-choose-spains-former-central-bank-head-as-next-european-central-bank-president/",
+   "img": "https://www.cp24.com/resizer/v2/IURVROGDCBAK5L2VUT2HBELMHQ.jpg?smart=true&auth=6b7c4f425f66eb38d3a967c2db94bf3f4b6cba4d19809f9faedf05014e4d95e7&width=1200&height=630"
+  },
+  {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Thu 4:09 p.m.",
+   "iso": "2026-11-26T21:09:15+00:00",
+   "title": "Civic partners plead their case as some councillors hope to trim funding in city budget",
+   "summary": "",
+   "outlet": "Calgary Herald",
+   "n": 1,
+   "url": "https://calgaryherald.com/news/civic-partners-plead-case-city-budget-funding",
+   "img": ""
+  },
+  {
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Thu 4:07 p.m.",
+   "iso": "2026-11-26T21:07:34+00:00",
+   "title": "A 'bell-to-bell' ban on cellphones in schools? P.E.I.'s education minister says it's coming",
+   "summary": "As more provinces mull over how students use cellphones, Prince Edward Island's education minister says a full ban on the devices throughout the school day is in the works.",
+   "outlet": "CBC News",
+   "n": 1,
+   "url": "https://www.cbc.ca/news/canada/prince-edward-island/pei-schools-cellphones-ban-education-minister-9.7437644?cmp=rss",
+   "img": "https://i.cbc.ca/ais/dbc21118-2a13-4d03-a118-f6099a7c5002,1795546962900/full/max/0/default.jpg?im=Crop%2Crect%3D%2888%2C172%2C1613%2C907%29%3BResize%3D620"
+  },
+  {
    "desk": "business",
    "pic": "chart",
    "t": "Thu 3:57 p.m.",
@@ -3492,6 +3529,18 @@
    "n": 1,
    "url": "https://globalnews.ca/news/12167225/canadian-debt-mortgages-transunion/",
    "img": "https://globalnews.ca/wp-content/uploads/2026/11/CP173781289-e1795724464749.jpg?quality=65&strip=all&w=720&h=379&crop=1"
+  },
+  {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Thu 3:50 p.m.",
+   "iso": "2026-11-26T20:50:40+00:00",
+   "title": "Emmer: GOP should have said it wasn’t ‘realistic’ to fix economy in 2 years",
+   "summary": "",
+   "outlet": "The Hill",
+   "n": 1,
+   "url": "https://thehill.com/homenews/house/6244906-tom-emmer-republicans-economy-messaging/",
+   "img": ""
   },
   {
    "desk": "politics",
@@ -3554,18 +3603,6 @@
    "img": "https://www.ctvnews.ca/resizer/v2/DQYABSRAURAMRIG66TQRAI3UAY.jpeg?smart=true&auth=d378a9d8978c2046cde92547d009f97387967ef1bfa2239f57f6c57f9af1ba85&width=1200&height=630"
   },
   {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Thu 3:13 p.m.",
-   "iso": "2026-11-26T20:13:40+00:00",
-   "title": "'Baffled': B.C. Conservatives' SOGI, DRIPA, and CleanBC announcements spark backlash",
-   "summary": "Some backlash was sparked by a flurry of announcements from the B.C. Conservatives on SOGI, DRIPA, and other items.",
-   "outlet": "Daily Hive",
-   "n": 1,
-   "url": "https://dailyhive.com/vancouver/bc-conservatives-dripa-sogi-cleanbc-backlash",
-   "img": "https://images-dh-production-baselayer.dailyhive.com/uploads/2026/11/bc-conservatives.jpg?format=auto"
-  },
-  {
    "desk": "business",
    "pic": "chart",
    "t": "Thu 2:55 p.m.",
@@ -3588,42 +3625,6 @@
    "n": 1,
    "url": "https://www.cbsnews.com/news/trump-thanksgiving-commerce-department-gdp-investigation/",
    "img": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/26/40eac3b0-392e-4427-abf6-5a0622e23fc3/thumbnail/1200x630/87172368f17721919c8e89edede92565/gettyimages-2306401014.jpg"
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Thu 2:42 p.m.",
-   "iso": "2026-11-26T19:42:58+00:00",
-   "title": "Here’s who’s appearing on BNN Bloomberg Market Call on Friday",
-   "summary": "Here's a look at BNN Bloomberg's guest schedule.",
-   "outlet": "BNN Bloomberg",
-   "n": 1,
-   "url": "https://www.bnnbloomberg.ca/faq/2025/10/24/heres-whos-appearing-on-bnn-bloomberg-market-call/",
-   "img": "https://www.bnnbloomberg.ca/resizer/v2/SRWSMTWZKHKVGLH6BZHSBUW5JU.jpg?smart=true&auth=9b3c218d7a354bedc747ad445581d38ee1103930b0b2c6fa1c609b2931ed756c&width=1200&height=630"
-  },
-  {
-   "desk": "us",
-   "pic": "podium",
-   "t": "Thu 2:42 p.m.",
-   "iso": "2026-11-26T19:42:46+00:00",
-   "title": "Trump unloads on critics in wide-ranging Thanksgiving Day rant",
-   "summary": "",
-   "outlet": "The Hill",
-   "n": 1,
-   "url": "https://thehill.com/homenews/administration/6244831-trump-thanksgiving-message-critics-gdp-somali-community/",
-   "img": ""
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Thu 2:29 p.m.",
-   "iso": "2026-11-26T19:29:59.523000+00:00",
-   "title": "Oil price surge expected to flip Alberta's projected $9.4B deficit into $8.5B surplus",
-   "summary": "Alberta's government says the oil-rich province is on track to reach record-high resource revenues this year.",
-   "outlet": "CBC News",
-   "n": 1,
-   "url": "https://www.cbc.ca/news/canada/edmonton/q2-fiscal-update-alberta-9.7437528",
-   "img": "https://i.cbc.ca/ais/e7446679-2c0b-4d7b-8b22-ba57a343d603,1795725025180/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C90%2C6639%2C3734%29%3BResize%3D620"
   },
   {
    "desk": "us",
@@ -3871,7 +3872,7 @@
    "o": "The Globe and Mail",
    "ca": true,
    "h": [
-    "Ford says he would use his own gun to fight back against intruder",
+    "Ford says he would use his gun to fight back against home intruder",
     "Conservatives to oppose C-39 after Liberals refuse to accept major changes, Poilievre says",
     "Quebec government will sit without taking oath to King, Premier says",
     "Two Ontario MAID cases should have been referred to police, former oversight committee member says",
@@ -4047,7 +4048,7 @@
     "url": "https://www.youtube.com/watch?v=wcY4K5CNVx4",
     "img": "https://i.ytimg.com/vi/wcY4K5CNVx4/hqdefault.jpg",
     "story": "Fox News' All-American Christmas tree",
-    "watching": "341"
+    "watching": "353"
    },
    {
     "net": "MS NOW",
@@ -4056,7 +4057,7 @@
     "url": "https://www.youtube.com/watch?v=4W2U0738Lis",
     "img": "https://i.ytimg.com/vi/4W2U0738Lis/hqdefault.jpg",
     "story": "BEST of 'The Best People with Nicolle Wallace': MS NOW Thanksgiving Ma",
-    "watching": "428"
+    "watching": "403"
    },
    {
     "net": "The White House",
@@ -4065,7 +4066,7 @@
     "url": "https://www.youtube.com/watch?v=ZpJlociXFyM",
     "img": "https://i.ytimg.com/vi/ZpJlociXFyM/hqdefault.jpg",
     "story": "Lo-Fi Winning Beats to Pass the Gravy to",
-    "watching": "64"
+    "watching": "66"
    },
    {
     "net": "LiveNOW from FOX",
@@ -4074,7 +4075,7 @@
     "url": "https://www.youtube.com/watch?v=2-apL7shGVM",
     "img": "https://i.ytimg.com/vi/2-apL7shGVM/hqdefault.jpg",
     "story": "Live news, as it happens",
-    "watching": "1.4K",
+    "watching": "1.3K",
     "rolling": true
    },
    {
@@ -4084,7 +4085,7 @@
     "url": "https://www.youtube.com/watch?v=Y1HTf5gRiZQ",
     "img": "https://i.ytimg.com/vi/Y1HTf5gRiZQ/hqdefault.jpg",
     "story": "Witch Hunts of Papua New Guinea",
-    "watching": "113"
+    "watching": "117"
    }
   ],
   "upcoming": [
@@ -4150,44 +4151,7 @@
   ]
  },
  "pm": [],
- "blogs_auto": [
-  {
-   "net": "Middle East Eye",
-   "story": "Araghchi says Iran not behind drone attack that killed two in Kuwait",
-   "title": "Araghchi says Iran not behind drone attack that killed two in Kuwait",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/araghchi-says-iran-not-behind-drone-attack-killed-two-kuwait",
-   "updated": "2026-11-26T18:15:56+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Untitled_4.jpg"
-  },
-  {
-   "net": "Middle East Eye",
-   "story": "Gaza’s health ministry says 19 Palestinians killed by Israeli attacks ",
-   "title": "Gaza’s health ministry says 19 Palestinians killed by Israeli attacks in 48 hours",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/gazas-health-ministry-says-19-palestinians-killed-israeli-attacks-48",
-   "updated": "2026-11-26T20:20:20+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Untitled_4.jpg"
-  },
-  {
-   "net": "Middle East Eye",
-   "story": "Opinion: Why solidarity with Gaza failed to stop the genocide",
-   "title": "Opinion: Why solidarity with Gaza failed to stop the genocide",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/opinion-why-solidarity-gaza-failed-stop-genocide",
-   "updated": "2026-11-26T19:44:32+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Untitled_4.jpg"
-  },
-  {
-   "net": "Middle East Eye",
-   "story": "Saudi Arabia says operations at refinery in Jazan halted after attack",
-   "title": "Saudi Arabia says operations at refinery in Jazan halted after attack",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-says-operations-refinery-jazan-halted-after-attack",
-   "updated": "2026-11-26T19:21:47+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Untitled_4.jpg"
-  }
- ],
+ "blogs_auto": [],
  "related": {
   "auto-c02c89af": {
    "ties": [
@@ -5050,7 +5014,5 @@
   "4yU_RBjlbPY",
   "Ka-_-2F_QTo"
  ],
- "noembed": [
-  "t_HBrWb84eY"
- ]
+ "noembed": []
 }
