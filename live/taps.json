@@ -1,20 +1,17 @@
 {
- "checked": "2026-11-26T11:10:08.099908+00:00",
- "labels": 217,
- "problems": [],
+ "checked": "2026-11-26T20:19:43.172471+00:00",
+ "labels": 219,
+ "problems": [
+  {
+   "label": "BBC News",
+   "opens": "https://www.cbc.ca/news/canada/toronto/home-invasion-investigation-charges-laid-9.7437171",
+   "section": "developed",
+   "link": false,
+   "width": 1280
+  }
+ ],
  "guard": {
-  "fixed": [
-   {
-    "label": "ABC News",
-    "was": "(card link) abcnews.com",
-    "now": "https://abcnews.com/US/new-york-declares-emergency-thanksgiving-storm-threatens-east/story?id=138464273"
-   },
-   {
-    "label": "NPR",
-    "was": "(card link) npr.org",
-    "now": "https://www.npr.org/2026/11/26/nx-s1-5983712/indian-pueblo-kitchen-native-american-food-albuquerque"
-   }
-  ],
+  "fixed": [],
   "disabled": [],
   "lifted": []
  }
