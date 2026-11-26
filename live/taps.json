@@ -1,9 +1,20 @@
 {
- "checked": "2026-11-26T01:54:15.207953+00:00",
- "labels": 211,
+ "checked": "2026-11-26T11:10:08.099908+00:00",
+ "labels": 217,
  "problems": [],
  "guard": {
-  "fixed": [],
+  "fixed": [
+   {
+    "label": "ABC News",
+    "was": "(card link) abcnews.com",
+    "now": "https://abcnews.com/US/new-york-declares-emergency-thanksgiving-storm-threatens-east/story?id=138464273"
+   },
+   {
+    "label": "NPR",
+    "was": "(card link) npr.org",
+    "now": "https://www.npr.org/2026/11/26/nx-s1-5983712/indian-pueblo-kitchen-native-american-food-albuquerque"
+   }
+  ],
   "disabled": [],
   "lifted": []
  }
