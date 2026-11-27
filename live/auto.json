@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-27T08:22:15.994167+00:00",
- "checkedLabel": "Fri 3:22 a.m.",
+ "checked": "2026-11-27T08:26:15.422647+00:00",
+ "checkedLabel": "Fri 3:26 a.m.",
  "stories": [
   {
    "key": "top",
@@ -30,6 +30,15 @@
   }
  ],
  "wire": [
+  [
+   "Fri 3:24 a.m.",
+   "World",
+   "Deadly floods leave parts of Ecuador under water",
+   "Al Jazeera",
+   "https://www.aljazeera.com/video/newsfeed/2026/11/27/deadly-floods-leave-parts-of-ecuador-under-water?traffic_source=rss",
+   "2026-11-27T08:24:18+00:00",
+   1
+  ],
   [
    "Fri 3:19 a.m.",
    "Latest",
@@ -64,7 +73,7 @@
    "Toronto Star",
    "https://www.thestar.com/news/world/asia/pakistan-set-to-host-talks-with-saudi-arabia-and-turkey-under-trilateral-defense-pact/article_b076f3ec-d0f0-5835-b396-941f6d0547f5.html",
    "2026-11-27T07:59:51+00:00",
-   3
+   2
   ],
   [
    "Fri 2:55 a.m.",
@@ -73,7 +82,7 @@
    "Al Jazeera",
    "https://www.aljazeera.com/news/2026/11/27/new-zealand-election-results-set-up-tricky-talks-for-conservative-incumbent?traffic_source=rss",
    "2026-11-27T07:55:32+00:00",
-   2
+   1
   ],
   [
    "Fri 2:53 a.m.",
@@ -217,7 +226,7 @@
    "CBS News",
    "https://www.cbsnews.com/news/thanksgiving-day-storm-northeast-midwest-flooding-power-outages/",
    "2026-11-27T05:36:29+00:00",
-   2
+   1
   ],
   [
    "Fri 12:27 a.m.",
@@ -235,15 +244,6 @@
    "Toronto Star",
    "https://www.thestar.com/news/world/europe/french-politician-who-stood-up-to-bush-over-the-invasion-of-iraq-is-back-to-stop-le-pen/article_637a8354-f38c-55d1-8f0c-10daf03a6846.html",
    "2026-11-27T05:27:06+00:00",
-   1
-  ],
-  [
-   "Fri 12:26 a.m.",
-   "Latest",
-   "Kelowna hospital among longest waits for CT scans, new data reveals",
-   "Global News",
-   "https://globalnews.ca/news/12167980/kelowna-hospital-among-longest-waits-for-ct-scans-new-data-reveals/",
-   "2026-11-27T05:26:13+00:00",
    1
   ]
  ],
@@ -276,14 +276,6 @@
  ],
  "leads": [
   {
-   "score": 17,
-   "title": "Severe Storms Bring Thanksgiving Travel Disruptions and Power Outages Across the US",
-   "url": "https://vocm.com/2026/11/27/severe-storms-bring-thanksgiving-travel-disruptions-and-power-outages-across-the-us/",
-   "outlets": 19,
-   "why": [],
-   "theme": ""
-  },
-  {
    "score": 14,
    "title": "Zelenskyy warns of imminent major Russian attack on Ukraine’s power grid",
    "url": "https://abcnews.com/International/wireStory/zelenskyy-warns-imminent-major-russian-attack-ukraines-power-138468250",
@@ -299,6 +291,14 @@
    "why": [
     "CBC News front #2"
    ],
+   "theme": ""
+  },
+  {
+   "score": 10,
+   "title": "Powerful Thanksgiving Day storm causes flooding, power outages",
+   "url": "https://www.cbsnews.com/news/thanksgiving-day-storm-northeast-midwest-flooding-power-outages/",
+   "outlets": 10,
+   "why": [],
    "theme": ""
   },
   {
@@ -351,16 +351,18 @@
   },
   {
    "score": 8,
-   "title": "Was Paul Bernardo involved in the disappearance of Elizabeth Bain? Dateline Canada digs into new evidence",
-   "url": "https://winnipeg.citynews.ca/2026/11/26/paul-bernardo-elizabeth-bain-dateline-canada-evidence/",
-   "outlets": 8,
-   "why": [],
+   "title": "Defence minister 'very concerned' after Poilievre claims constituent's job was threatened",
+   "url": "https://www.cbc.ca/news/politics/defence-minister-wainwright-nurse-claims-job-threatened-9.7437979",
+   "outlets": 5,
+   "why": [
+    "CBC News front #3"
+   ],
    "theme": ""
   },
   {
    "score": 8,
-   "title": "Supreme Court set to rule on Quebec secularism law in landmark Charter case",
-   "url": "https://globalnews.ca/news/12168107/supreme-court-quebec-bill-21-charter-ruling/",
+   "title": "Was Paul Bernardo involved in the disappearance of Elizabeth Bain? Dateline Canada digs into new evidence",
+   "url": "https://winnipeg.citynews.ca/2026/11/26/paul-bernardo-elizabeth-bain-dateline-canada-evidence/",
    "outlets": 8,
    "why": [],
    "theme": ""
@@ -662,17 +664,9 @@
     "weight": 29.0,
     "videos": [
      {
-      "net": "CTV News",
-      "url": "https://www.youtube.com/watch?v=AHXnV12co7Y",
-      "title": "‘Kraft Dinner’ budget: Mayor’s comments prompt second protest at City Hall",
-      "img": "https://i.ytimg.com/vi/AHXnV12co7Y/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
       "net": "Global News",
       "url": "https://www.youtube.com/watch?v=SKEO2FfcbpE",
-      "title": "Montreal budget leaves bad taste as citizens protest mayor with Kraft Dinner pots",
+      "title": "Montreal mayor apologizes for controversial Kraft Dinner comment, maintains tone on budget choices",
       "img": "https://i.ytimg.com/vi/SKEO2FfcbpE/hqdefault.jpg",
       "rec": false,
       "up": ""
@@ -680,8 +674,16 @@
      {
       "net": "Global News",
       "url": "https://www.youtube.com/watch?v=L0BfwGqrmqM",
-      "title": "Montreal mayor draws backlash over Kraft Dinner and filet mignon budget analogy",
+      "title": "Protesters plan to bring Kraft Dinner to Montreal City Hall after mayor’s budget remarks",
       "img": "https://i.ytimg.com/vi/L0BfwGqrmqM/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CTV News",
+      "url": "https://www.youtube.com/watch?v=AHXnV12co7Y",
+      "title": "‘Kraft Dinner’ budget: Mayor’s comments prompt second protest at City Hall",
+      "img": "https://i.ytimg.com/vi/AHXnV12co7Y/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -966,9 +968,9 @@
     "url": "https://www.thestar.com/news/world/asia/pakistan-set-to-host-talks-with-saudi-arabia-and-turkey-under-trilateral-defense-pact/article_b076f3ec-d0f0-5835-b396-941f6d0547f5.html",
     "rank": 3,
     "live": "",
-    "weight": 19.5,
-    "score": 7,
-    "independent": 4,
+    "weight": 17.0,
+    "score": 6,
+    "independent": 3,
     "most_read": 0,
     "canada": "none",
     "theme": "",
@@ -978,7 +980,7 @@
      "BBC News"
     ],
     "rule": "No Canadian tie",
-    "carriers": 5,
+    "carriers": 4,
     "judgment": "regional",
     "why_judged": "Regional: affects some people; carried beyond one city."
    },
@@ -1021,9 +1023,9 @@
     "why_judged": "National: affects many people; carried beyond one city."
    },
    {
-    "title": "Severe Storms Bring Thanksgiving Travel Disruptions and Power Outages Across the US",
-    "score": 17,
-    "why": "not built: only 2 independent report(s) (5 sites)"
+    "title": "Powerful Thanksgiving Day storm causes flooding, power outages",
+    "score": 10,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
     "title": "‘Slam dunk with our own MPs:’ Government House leader confident Liberals will pass Bill C-39",
@@ -1042,6 +1044,11 @@
    },
    {
     "title": "Concerns Canada’s EV policy opens door to Chinese ‘Trojan horse’",
+    "score": 8,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Defence minister 'very concerned' after Poilievre claims constituent's job was threatened",
     "score": 8,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
@@ -1066,19 +1073,14 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Defence minister 'very concerned' after Poilievre claims constituent's job was threatened",
-    "score": 7,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "General Staff: Russia has lost 1,648,161 troops in Ukraine since Feb. 24, 2022",
-    "score": 7,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
     "title": "Performers and marching bands scramble after Macy’s Thanksgiving Day Parade delay",
     "score": 6,
     "why": "not built: only 2 independent report(s) (2 sites)"
+   },
+   {
+    "title": "General Staff: Russia has lost 1,648,161 troops in Ukraine since Feb. 24, 2022",
+    "score": 6,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
   ],
   "moved": [],
@@ -1192,7 +1194,7 @@
      "alt": "Victoria transit service to run Friday after tentative labour agreement",
      "outlet": "CTV News",
      "url": "https://www.ctvnews.ca/vancouver/vancouver-island/article/victoria-bus-strike-called-off-bc-transit-announces-deal/",
-     "since": "2026-11-27T08:23:57.062099+00:00"
+     "since": "2026-11-27T08:29:06.643810+00:00"
     },
     "photo_seen": [
      "https://www.ctvnews.ca/resizer/v2/O5YJD5N44ZD6FNP3QPBXD5ACW4.jpeg?smart=true&auth=e8a7cd9154b671c7b12079e98a88a0bf4746c68dc576afe29c54e5bdd126ed84&width=1200&height=630"
@@ -1420,7 +1422,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=5sWlOIa4Csk",
    "img": "https://i.ytimg.com/vi/5sWlOIa4Csk/hqdefault.jpg",
-   "up": "2026-11-27",
+   "up": "2026-11-26",
    "added": "2026-11-27T05:15:14.019876+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1583,7 +1585,7 @@
    "id": "RVGiZBebhBs",
    "r": "us",
    "o": "CNN",
-   "t": "3 new House reps on Iran, Trump probes & what keeps them up",
+   "t": "Can Dems work with the GOP? 3 new House reps weigh in",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=RVGiZBebhBs",
@@ -1734,20 +1736,6 @@
    "geo": "unknown"
   },
   {
-   "id": "t-mS9qnUrrE",
-   "r": "us",
-   "o": "Bloomberg",
-   "t": "Tech Stocks Rebound After Thanksgiving Holiday",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=t-mS9qnUrrE",
-   "img": "https://i.ytimg.com/vi/t-mS9qnUrrE/hqdefault.jpg",
-   "up": "2026-11-27",
-   "added": "2026-11-27T07:52:15.913146+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "HKpYZHvAFkM",
    "r": "us",
    "o": "Fox News",
@@ -1790,16 +1778,30 @@
    "geo": "unknown"
   },
   {
-   "id": "csuSi3fGqxo",
+   "id": "GN2Xo9WhZ00",
    "r": "us",
    "o": "Bloomberg",
-   "t": "Kuwait Says Iranian Drone Strike Kills Two as Houthi Attack Hits Jazan Refinery",
+   "t": "Nvidia, AI Fears Jolt Markets: Market Snapshot",
    "rec": false,
    "d": "",
-   "u": "https://www.youtube.com/watch?v=csuSi3fGqxo",
-   "img": "https://i.ytimg.com/vi/csuSi3fGqxo/hqdefault.jpg",
+   "u": "https://www.youtube.com/watch?v=GN2Xo9WhZ00",
+   "img": "https://i.ytimg.com/vi/GN2Xo9WhZ00/hqdefault.jpg",
    "up": "2026-11-27",
-   "added": "2026-11-27T08:12:15.378513+00:00",
+   "added": "2026-11-27T08:26:15.422647+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "wVRsJUkoRH0",
+   "r": "us",
+   "o": "Bloomberg",
+   "t": "US Investors Will Have to Chase Rally: Market Analysis",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=wVRsJUkoRH0",
+   "img": "https://i.ytimg.com/vi/wVRsJUkoRH0/hqdefault.jpg",
+   "up": "2026-11-27",
+   "added": "2026-11-27T08:26:15.422647+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1849,7 +1851,7 @@
    "id": "u8z0aTy6RPA",
    "r": "world",
    "o": "BBC News",
-   "t": "Why Are US Parents So Afraid to Let Kids Go Outside? | The Global Story",
+   "t": "The '80s Campaign That Still Haunts US Parents | The Global Story",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=u8z0aTy6RPA",
@@ -1979,11 +1981,11 @@
   },
   {
    "o": "NPR",
-   "h": "Eagles rally to stun Cowboys coming back from 21 points behind",
-   "u": "https://www.npr.org/2026/11/27/nx-s1-6055519/eagles-stun-cowboys",
-   "img": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5397x3036+0+281/resize/1400/quality/85/format/webp/?url=https%3A%2F%2Fnpr-production-npr.s3.us-east-1.amazonaws.com%2Fbrightspot%2Fc7%2Ff5%2Ffbca01ea430fab383dc4cd3b24d4%2Fap26331004503978.jpg",
-   "w": "Fri 3:23 a.m.",
-   "iso": "2026-11-27T08:23:12+00:00"
+   "h": "Strobe Talbott, former Time magazine reporter and deputy secretary of state, has died",
+   "u": "https://www.npr.org/2026/11/27/g-s1-155990/strobe-talbott-obit",
+   "img": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3888x2187+0+203/resize/1400/quality/85/format/webp/?url=https%3A%2F%2Fnpr-production-npr.s3.us-east-1.amazonaws.com%2Fbrightspot%2F7e%2Fcb%2F367e983047b195799abc793a8a87%2Fap26330767680840.jpg",
+   "w": "Fri 1:12 a.m.",
+   "iso": "2026-11-27T06:12:45+00:00"
   },
   {
    "o": "The Hill",
@@ -2693,12 +2695,12 @@
    "city": "Edmonton",
    "tz": "America/Edmonton",
    "world": false,
-   "w": "Fire",
-   "label": "A system tried by fire: Teamwork shone in tragedy after…",
-   "u": "https://edmontonjournal.com/health/health-cfb-wainwright-fire-teamwork",
-   "title": "A system tried by fire: Teamwork shone in tragedy after CFB Wainwright fire",
-   "outlet": "Edmonton Journal",
-   "t": "Thu 6:38 p.m.",
+   "w": "Budget",
+   "label": "Alberta expecting $18B budget turnaround propelled by oil…",
+   "u": "https://globalnews.ca/news/12168117/alberta-2026-q2-fiscal-update/",
+   "title": "Alberta expecting $18B budget turnaround propelled by oil royalties",
+   "outlet": "Global News",
+   "t": "Thu 8:29 p.m.",
    "hot": false
   },
   {
@@ -2779,6 +2781,18 @@
   {
    "desk": "world",
    "pic": "globe",
+   "t": "Fri 12:36 a.m.",
+   "iso": "2026-11-27T05:36:29+00:00",
+   "title": "Powerful Thanksgiving Day storm causes flooding, power outages",
+   "summary": "The storm hammered sections of the East Coast with torrential rain, high winds and flooding, knocking out power to hundreds of thousands of customers.",
+   "outlet": "CBS News (Reuters), BBC News, ABC News, CTV News + CP24 (CP), PBS NewsHour, Middle East Eye, CBC News, CBS News, CP24 + BNN Bloomberg",
+   "n": 9,
+   "url": "https://www.cbsnews.com/news/thanksgiving-day-storm-northeast-midwest-flooding-power-outages/",
+   "img": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/26/f85f3d06-275b-4c46-b8cd-a114f49aee37/thumbnail/1200x630/97c5d4c6ecfecc86540bd2159f622b69/ap26330556979279.jpg"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
    "t": "Fri 12:21 a.m.",
    "iso": "2026-11-27T05:21:00+00:00",
    "title": "Seoul repatriates six North Koreans found on drifting fishing boat",
@@ -2813,18 +2827,6 @@
    "img": "https://www.cp24.com/resizer/v2/7FPVGWMCIVAOUH7GUUVQQOUJYA.jpg?smart=true&auth=246663abb352d1b960572bb0f5fcb115fa45b567a856bf29b4e1decb6d4d80a1&width=1200&height=630"
   },
   {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Fri 2:59 a.m.",
-   "iso": "2026-11-27T07:59:51+00:00",
-   "title": "Pakistan set to host talks with Saudi Arabia and Turkey under trilateral defense pact",
-   "summary": "ISLAMABAD (AP) — Pakistan is set to host talks Friday with Saudi Arabia and Turkey under a trilateral defense pact that treats an attack on any member as an attack",
-   "outlet": "Toronto Star + The Canadian Press (via Winnipeg Free Press), Euronews, BBC News, Middle East Eye",
-   "n": 4,
-   "url": "https://www.thestar.com/news/world/asia/pakistan-set-to-host-talks-with-saudi-arabia-and-turkey-under-trilateral-defense-pact/article_b076f3ec-d0f0-5835-b396-941f6d0547f5.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/a/fd/afd38a03-0693-5b42-95e5-47483e164a5c/6b093905454c1.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
-  },
-  {
    "desk": "politics",
    "pic": "parliament",
    "t": "Thu 6:48 p.m.",
@@ -2837,16 +2839,16 @@
    "img": "https://globalnews.ca/wp-content/uploads/2026/11/981160b708b1126ee812308e267f71eb73c515c434fcd81b21c36c99a34525e2_78c416.jpg?quality=65&strip=all&w=720&h=379&crop=1"
   },
   {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Fri 2:55 a.m.",
-   "iso": "2026-11-27T07:55:32+00:00",
-   "title": "New Zealand election results set up tricky talks for conservative incumbent",
-   "summary": "Conservative PM Luxon and populist coalition partners face negotiations with centrist kingmaker.",
-   "outlet": "Al Jazeera, Euronews, CP24",
+   "desk": "world",
+   "pic": "globe",
+   "t": "Fri 2:59 a.m.",
+   "iso": "2026-11-27T07:59:51+00:00",
+   "title": "Pakistan set to host talks with Saudi Arabia and Turkey under trilateral defense pact",
+   "summary": "ISLAMABAD (AP) — Pakistan is set to host talks Friday with Saudi Arabia and Turkey under a trilateral defense pact that treats an attack on any member as an attack",
+   "outlet": "Toronto Star + The Canadian Press (via Winnipeg Free Press), BBC News, Middle East Eye",
    "n": 3,
-   "url": "https://www.aljazeera.com/news/2026/11/27/new-zealand-election-results-set-up-tricky-talks-for-conservative-incumbent?traffic_source=rss",
-   "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-27T032401Z_831668121_RC22WOAN8LR8_RTRMADP_3_NEW-ZEALAND-POLITICS-1795762066.jpg?resize=1920%2C1440"
+   "url": "https://www.thestar.com/news/world/asia/pakistan-set-to-host-talks-with-saudi-arabia-and-turkey-under-trilateral-defense-pact/article_b076f3ec-d0f0-5835-b396-941f6d0547f5.html",
+   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/a/fd/afd38a03-0693-5b42-95e5-47483e164a5c/6b093905454c1.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
   },
   {
    "desk": "world",
@@ -2859,18 +2861,6 @@
    "n": 3,
    "url": "https://www.timescolonist.com/world-news/deadlocked-final-result-in-new-zealands-election-leaves-a-centrist-newcomer-as-the-decider-13065687",
    "img": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/057bf5c1293dbd984d9913ec0860de29f6e2e70097ddb1254f4cd02ddd6263b8.jpg;w=1200;h=800;mode=crop"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Thu 11:59 p.m.",
-   "iso": "2026-11-27T04:59:27+00:00",
-   "title": "University of Michigan faculty vote in support of pro-Palestine students facing charges",
-   "summary": "",
-   "outlet": "Middle East Eye, Fox News, BBC News",
-   "n": 3,
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/university-michigan-faculty-vote-support-pro-palestine-students-facing",
-   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Untitled_4.jpg"
   },
   {
    "desk": "politics",
@@ -2939,22 +2929,22 @@
    "iso": "2026-11-27T00:06:52.533000+00:00",
    "title": "Defence minister 'very concerned' after Poilievre claims constituent's job was threatened",
    "summary": "Defence Minister David McGuinty says he's asked his deputy to raise concerns about a Wainwright, Alta., nurse's job being threatened after she was photographed with Conservative Leader Pierre Poilievre.",
-   "outlet": "CBC News, Global News, CKOM / PAnow + CP24 (CP)",
+   "outlet": "CBC News, Global News, Toronto Star + CKOM / PAnow + CP24 (CP)",
    "n": 3,
    "url": "https://www.cbc.ca/news/politics/defence-minister-wainwright-nurse-claims-job-threatened-9.7437979",
    "img": "https://i.cbc.ca/ais/89c3aa54-8807-4e7e-a60c-1b27f4bd671e,1795732785627/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C269%2C5006%2C2815%29%3BResize%3D620"
   },
   {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Fri 12:04 a.m.",
-   "iso": "2026-11-27T05:04:26+00:00",
-   "title": "Here are the main issues driving Spain's national election and why they matter for Europe",
-   "summary": "MADRID (AP) — Spain will elect a new government on Sunday in a snap election that could unseat Prime Minister Pedro Sánchez.",
-   "outlet": "Toronto Star + CP24 + BNN Bloomberg, Euronews",
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Fri 2:55 a.m.",
+   "iso": "2026-11-27T07:55:32+00:00",
+   "title": "New Zealand election results set up tricky talks for conservative incumbent",
+   "summary": "Conservative PM Luxon and populist coalition partners face negotiations with centrist kingmaker.",
+   "outlet": "Al Jazeera, CP24",
    "n": 2,
-   "url": "https://www.thestar.com/news/world/europe/here-are-the-main-issues-driving-spain-s-national-election-and-why-they-matter-for-europe/article_de165bd8-f69e-5aeb-b243-35aece79de87.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/2/29/22962199-9428-51ee-b707-beb000333bc5/6afdd7394d88c.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
+   "url": "https://www.aljazeera.com/news/2026/11/27/new-zealand-election-results-set-up-tricky-talks-for-conservative-incumbent?traffic_source=rss",
+   "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-27T032401Z_831668121_RC22WOAN8LR8_RTRMADP_3_NEW-ZEALAND-POLITICS-1795762066.jpg?resize=1920%2C1440"
   },
   {
    "desk": "politics",
@@ -2979,6 +2969,30 @@
    "n": 2,
    "url": "https://www.foxnews.com/politics/strobe-talbott-former-deputy-secretary-state-brookings-institution-president-dies-80",
    "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/strobe-talbott-wolfgang-ischinger-berlin.jpg"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Thu 7:51 p.m.",
+   "iso": "2026-11-27T00:51:04+00:00",
+   "title": "New Mexico authorities search for pregnant woman who escaped during prison transport",
+   "summary": "A pregnant inmate serving time in connection with vehicle thefts escaped by stealing a corrections transport vehicle, New Mexico authorities said.",
+   "outlet": "CTV News + Toronto Star + CP24 (AP), NBC News",
+   "n": 2,
+   "url": "https://www.ctvnews.ca/world/article/new-mexico-authorities-search-for-pregnant-woman-who-escaped-during-prison-transport/",
+   "img": "https://www.ctvnews.ca/resizer/v2/42IO6AZEOGNBJKV34V43FDEYBQ.jpg?smart=true&auth=e275e3c6c260663ba8aacca26fa609f00be19fab7e39bd320a7d605b26fd7fd1&width=1200&height=630"
+  },
+  {
+   "desk": "us",
+   "pic": "podium",
+   "t": "Thu 3:58 p.m.",
+   "iso": "2026-11-26T20:58:30+00:00",
+   "title": "Trump takes on Somali welfare dependency in Thanksgiving message, lays out who should stay in US",
+   "summary": "President Donald Trump says only 2% of Minnesota's Somali community should stay, claiming on Truth Social the rest should be thrown out to save the state.",
+   "outlet": "Fox News, The Hill",
+   "n": 2,
+   "url": "https://www.foxnews.com/politics/trump-takes-somali-welfare-dependency-thanksgiving-message-lays-who-should-stay-us",
+   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/01/somalia-flag-donald-trump.png"
   },
   {
    "desk": "business",
@@ -3091,6 +3105,18 @@
   {
    "desk": "business",
    "pic": "chart",
+   "t": "Thu 8:29 p.m.",
+   "iso": "2026-11-27T01:29:29+00:00",
+   "title": "Alberta expecting $18B budget turnaround propelled by oil royalties",
+   "summary": "In the 2022-23 fiscal year, the province took in a record $25 billion in resource revenues, but the province expects to break that with almost $29 billion this year.",
+   "outlet": "Global News + Toronto Star + CityNews Edmonton + CityNews Calgary (CP)",
+   "n": 1,
+   "url": "https://globalnews.ca/news/12168117/alberta-2026-q2-fiscal-update/",
+   "img": "https://globalnews.ca/wp-content/uploads/2026/10/CP176826406.jpg?quality=65&strip=all&w=720&h=379&crop=1"
+  },
+  {
+   "desk": "business",
+   "pic": "chart",
    "t": "Thu 8:13 p.m.",
    "iso": "2026-11-27T01:13:51+00:00",
    "title": "Funding future for Calgary’s Foothills Fieldhouse questioned during budget talks",
@@ -3099,30 +3125,6 @@
    "n": 1,
    "url": "https://globalnews.ca/news/12167937/funding-future-for-calgarys-foothills-fieldhouse-questioned-during-budget-talks/",
    "img": "https://globalnews.ca/wp-content/uploads/2026/11/Screenshot-2026-11-26-152614.png?w=720&h=379&crop=1"
-  },
-  {
-   "desk": "us",
-   "pic": "podium",
-   "t": "Thu 8:00 p.m.",
-   "iso": "2026-11-27T01:00:34+00:00",
-   "title": "Democrats, Republicans find rare common ground when asked what they're thankful for",
-   "summary": "Democrats and Republicans on Capitol Hill may clash on policy, but this Thanksgiving, lawmakers say family is what they're most thankful for.",
-   "outlet": "Fox News",
-   "n": 1,
-   "url": "https://www.foxnews.com/politics/democrats-republicans-find-rare-common-ground-when-asked-what-theyre-thankful",
-   "img": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/57f60224-5414-4692-a286-b0004f98776a/7f28eae6-a231-4d96-8944-ff1fddab3353/1280x720/match/image.jpg"
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Thu 7:39 p.m.",
-   "iso": "2026-11-27T00:39:06+00:00",
-   "title": "Trump claims \"fake economic numbers\" were released before election",
-   "summary": "President Trump demanded an investigation into the Commerce Department's recent revising of the GDP, which happens routinely.",
-   "outlet": "CBS News",
-   "n": 1,
-   "url": "https://www.cbsnews.com/news/trump-thanksgiving-commerce-department-gdp-investigation/",
-   "img": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/26/40eac3b0-392e-4427-abf6-5a0622e23fc3/thumbnail/1200x630/87172368f17721919c8e89edede92565/gettyimages-2306401014.jpg"
   }
  ],
  "reads": [
@@ -3498,7 +3500,7 @@
     "url": "https://www.youtube.com/watch?v=wcY4K5CNVx4",
     "img": "https://i.ytimg.com/vi/wcY4K5CNVx4/hqdefault.jpg",
     "story": "Fox News' All-American Christmas tree",
-    "watching": "2.4K"
+    "watching": "2.3K"
    },
    {
     "net": "MS NOW",
@@ -3507,7 +3509,7 @@
     "url": "https://www.youtube.com/watch?v=GjX7SROH1s4",
     "img": "https://i.ytimg.com/vi/GjX7SROH1s4/hqdefault.jpg",
     "story": "BEST of 'The Best People with Nicolle Wallace': MS NOW Thanksgiving Ma",
-    "watching": "298"
+    "watching": "302"
    },
    {
     "net": "The White House",
@@ -3516,7 +3518,7 @@
     "url": "https://www.youtube.com/watch?v=ZpJlociXFyM",
     "img": "https://i.ytimg.com/vi/ZpJlociXFyM/hqdefault.jpg",
     "story": "Lo-Fi Winning Beats to Pass the Gravy to",
-    "watching": "23"
+    "watching": "18"
    },
    {
     "net": "Reuters",
@@ -3525,7 +3527,7 @@
     "url": "https://www.youtube.com/watch?v=rovl4zoFQ3E",
     "img": "https://i.ytimg.com/vi/rovl4zoFQ3E/hqdefault.jpg",
     "story": "Powerful storm hits US East Coast",
-    "watching": "40"
+    "watching": "39"
    },
    {
     "net": "Sky News",
@@ -3534,7 +3536,7 @@
     "url": "https://www.youtube.com/watch?v=Ad_pjt3o7vk",
     "img": "https://i.ytimg.com/vi/Ad_pjt3o7vk/hqdefault.jpg",
     "story": "Black Friday could turn into 'Black Fraud Day,' MPs warn",
-    "watching": "515"
+    "watching": "548"
    }
   ],
   "upcoming": [
@@ -3677,6 +3679,14 @@
      "tie": "Canada and the U.S."
     },
     {
+     "t": "Wed 5:00 p.m.",
+     "iso": "2026-11-25T22:00:00+00:00",
+     "outlet": "Toronto Star",
+     "title": "Mark Carney says Donald Trump hasn’t raised Pentagon’s concerns about Canada’s military",
+     "url": "https://www.thestar.com/politics/federal/mark-carney-says-donald-trump-hasn-t-raised-pentagon-s-concerns-about-canada-s-military/article_49570449-0539-44a4-9e24-6a4511bf10eb.html",
+     "tie": "Canada and the U.S."
+    },
+    {
      "t": "Wed 4:14 p.m.",
      "iso": "2026-11-25T21:14:27+00:00",
      "outlet": "BNN Bloomberg",
@@ -3698,14 +3708,6 @@
      "outlet": "Global News",
      "title": "U.S. wants to accommodate Canada on sectoral tariffs, Trump trade czar says",
      "url": "https://globalnews.ca/news/12165941/us-accommodate-canada-sectoral-tariffs-trump/",
-     "tie": "Canada and the U.S."
-    },
-    {
-     "t": "Wed 12:42 p.m.",
-     "iso": "2026-11-25T17:42:23+00:00",
-     "outlet": "CBC News",
-     "title": "As Pentagon blasts Canada's defence spending, Carney says Trump hasn't raised concerns",
-     "url": "https://www.cbc.ca/news/politics/carney-trump-pentagon-criticism-canada-defence-spending-military-readiness-9.7435718?cmp=rss",
      "tie": "Canada and the U.S."
     },
     {
@@ -4570,9 +4572,6 @@
   "-NabWfv-VdA"
  ],
  "noembed": [
-  "J3FV4iY8p5w",
-  "L6qtnHZxwEw",
-  "NuEr0Q_AS6U",
   "ldElU-Q5Qyo",
   "nfy6JJILPJI",
   "t_HBrWb84eY"
