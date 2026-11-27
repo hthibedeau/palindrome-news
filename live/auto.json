@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-27T09:11:03.088709+00:00",
- "checkedLabel": "Fri 4:11 a.m.",
+ "checked": "2026-11-27T09:21:03.210892+00:00",
+ "checkedLabel": "Fri 4:21 a.m.",
  "stories": [
   {
    "key": "top",
@@ -31,13 +31,22 @@
  ],
  "wire": [
   [
-   "Fri 4:08 a.m.",
+   "Fri 4:18 a.m.",
    "Latest",
    "Performers and marching bands scramble after Macy’s Thanksgiving Day Parade delay",
    "NBC News",
    "https://www.nbcnews.com/nightly-news/video/performers-and-marching-bands-scramble-after-macy-s-thanksgiving-day-parade-delay-274245189694",
-   "2026-11-27T09:08:11+00:00",
+   "2026-11-27T09:18:16+00:00",
    1
+  ],
+  [
+   "Fri 4:17 a.m.",
+   "Latest",
+   "District of Squamish asks residents to limit indoor water use after wet B.C. weather",
+   "The Canadian Press (via Winnipeg Free Press)",
+   "https://www.winnipegfreepress.com/canada/2026/11/27/district-of-squamish-asks-residents-to-limit-indoor-water-use-after-wet-b-c-weather",
+   "2026-11-27T09:17:17+00:00",
+   4
   ],
   [
    "Fri 4:07 a.m.",
@@ -64,7 +73,7 @@
    "Toronto Star",
    "https://www.thestar.com/news/canada/yukon/carney-travels-to-yellowknife-for-announcement-on-major-initiative/article_8e7bf97f-d23f-52b3-9129-80f0952dd35d.html",
    "2026-11-27T09:00:09+00:00",
-   4
+   7
   ],
   [
    "Fri 4:00 a.m.",
@@ -73,7 +82,7 @@
    "Toronto Star",
    "https://www.thestar.com/news/canada/quebec/supreme-court-ruling-on-quebec-s-secularism-law-expected-friday-morning/article_c31e9234-8324-53f4-8a27-8c103c51c0d5.html",
    "2026-11-27T09:00:07+00:00",
-   4
+   7
   ],
   [
    "Fri 4:00 a.m.",
@@ -82,7 +91,7 @@
    "Toronto Star",
    "https://www.thestar.com/news/ontario/a-timeline-of-key-events-in-the-case-of-kenneth-law-who-admitted-to-aiding-suicides/article_29286ba6-af60-5390-8c06-bd460d661316.html",
    "2026-11-27T09:00:06+00:00",
-   4
+   7
   ],
   [
    "Fri 4:00 a.m.",
@@ -220,15 +229,6 @@
    1
   ],
   [
-   "Fri 2:18 a.m.",
-   "U.S.",
-   "No. 5 Texas Tech rallies past Oregon 62-59 in Players Era consolation round",
-   "The Canadian Press (via Winnipeg Free Press)",
-   "https://www.winnipegfreepress.com/uncategorized/2026/11/27/no-5-texas-tech-rallies-past-oregon-62-59-in-players-era-consolation-round",
-   "2026-11-27T07:18:05+00:00",
-   1
-  ],
-  [
    "Fri 2:16 a.m.",
    "World",
    "Can the Mecca pact turn its collective defence promise into real support?",
@@ -286,6 +286,16 @@
  "leads": [
   {
    "score": 17,
+   "title": "Supreme Court to render its decision on Quebec's secularism law today",
+   "url": "https://www.cbc.ca/news/politics/supreme-court-decison-bill-21-9.7437512",
+   "outlets": 12,
+   "why": [
+    "CBC News front #4"
+   ],
+   "theme": ""
+  },
+  {
+   "score": 17,
    "title": "Ottawa deems Whitehorse Power Centres project of national interest",
    "url": "https://www.timescolonist.com/national-news/ottawa-deems-whitehorse-power-centres-project-of-national-interest-13065824",
    "outlets": 17,
@@ -304,21 +314,29 @@
    "theme": ""
   },
   {
-   "score": 15,
-   "title": "Supreme Court to render its decision on Quebec's secularism law today",
-   "url": "https://www.cbc.ca/news/politics/supreme-court-decison-bill-21-9.7437512",
-   "outlets": 10,
-   "why": [
-    "CBC News front #5"
-   ],
-   "theme": ""
-  },
-  {
    "score": 12,
    "title": "Zelensky criticises 'strange' Trump-Putin friendship in BBC interview",
    "url": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo?at_medium=RSS&at_campaign=rss",
    "outlets": 10,
    "why": [],
+   "theme": ""
+  },
+  {
+   "score": 11,
+   "title": "Carney travels to Yellowknife for announcement on 'major' initiative",
+   "url": "https://www.narcity.com/carney-to-make-major-announcement-in-yellowknife",
+   "outlets": 9,
+   "why": [],
+   "theme": ""
+  },
+  {
+   "score": 10,
+   "title": "KDgate for Montreal mayor continues with website mocking Kraft Dinner comments",
+   "url": "https://www.cbc.ca/news/canada/montreal/kraft-dinner-mayor-soraya-martinez-ferrada-budget-9.7436967",
+   "outlets": 7,
+   "why": [
+    "CBC News front #6"
+   ],
    "theme": ""
   },
   {
@@ -329,6 +347,14 @@
    "why": [
     "National Newswatch #1"
    ],
+   "theme": ""
+  },
+  {
+   "score": 9,
+   "title": "A timeline of key events in the case of Kenneth Law, who admitted to aiding suicides",
+   "url": "https://www.narcity.com/timeline-of-key-events-in-the-case-of-kenneth-law-2678544174",
+   "outlets": 7,
+   "why": [],
    "theme": ""
   },
   {
@@ -348,34 +374,6 @@
     "National Newswatch #3"
    ],
    "theme": ""
-  },
-  {
-   "score": 8,
-   "title": "Carney travels to Yellowknife for announcement on 'major' initiative",
-   "url": "https://www.narcity.com/carney-to-make-major-announcement-in-yellowknife",
-   "outlets": 6,
-   "why": [],
-   "theme": ""
-  },
-  {
-   "score": 8,
-   "title": "Was Paul Bernardo involved in the disappearance of Elizabeth Bain? Dateline Canada digs into new evidence",
-   "url": "https://winnipeg.citynews.ca/2026/11/26/paul-bernardo-elizabeth-bain-dateline-canada-evidence/",
-   "outlets": 8,
-   "why": [],
-   "theme": ""
-  },
-  {
-   "score": 8,
-   "title": "What the Trump thumping may mean for Canada",
-   "url": "https://www.hilltimes.com/2026/11/23/what-the-trump-thumping-may-mean-for-canada/526426/",
-   "outlets": 2,
-   "why": [
-    "National Newswatch #10",
-    "National Newswatch #12",
-    "National Newswatch #19"
-   ],
-   "theme": "Canada and the U.S."
   }
  ],
  "canada": [
@@ -480,7 +478,7 @@
      "kraft",
      "hall"
     ],
-    "score": 7,
+    "score": 10,
     "outlets": 4,
     "carriers": 6,
     "tag": "Developing",
@@ -702,7 +700,7 @@
     "fronts_who": [],
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (national desks).",
-    "weight": 26.0,
+    "weight": 29.0,
     "videos": [
      {
       "net": "Global News",
@@ -715,7 +713,7 @@
      {
       "net": "Global News",
       "url": "https://www.youtube.com/watch?v=L0BfwGqrmqM",
-      "title": "Protesters plan to bring Kraft Dinner to Montreal City Hall after mayor’s budget remarks",
+      "title": "Montreal mayor’s Kraft Dinner remark draws criticism as city proposes 9.8% property tax hike",
       "img": "https://i.ytimg.com/vi/L0BfwGqrmqM/hqdefault.jpg",
       "rec": false,
       "up": ""
@@ -921,7 +919,6 @@
     "fronts_who": [
      "BBC News"
     ],
-    "outled_ca": 2,
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (national desks).",
     "weight": 32.5
@@ -933,8 +930,8 @@
     "url": "https://globalnews.ca/news/12168279/kraft-dinner-protest-montreal-mayor-property-tax-hike/",
     "rank": 1,
     "live": "",
-    "weight": 26.0,
-    "score": 7,
+    "weight": 29.0,
+    "score": 10,
     "independent": 4,
     "most_read": 0,
     "canada": "canadian",
@@ -969,31 +966,9 @@
     "why_judged": "National: affects many people; carried across the country (national desks)."
    },
    {
-    "title": "‘One of most important decisions in the history of Canadian democracy’: Top court to rule on Quebec’s Bill 21",
-    "url": "https://www.ctvnews.ca/montreal/article/supreme-court-to-rule-on-quebecs-secularism-law-experts-say-the-stakes-could-not-be-higher/",
-    "rank": 3,
-    "live": "",
-    "weight": 24.0,
-    "score": 15,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "canadian",
-    "theme": "",
-    "top": false,
-    "fronts": 2,
-    "fronts_who": [
-     "CTV News",
-     "National Post"
-    ],
-    "rule": "Canadian, older",
-    "carriers": 4,
-    "judgment": "regional",
-    "why_judged": "Regional: a single incident touching a few people; carried across the country (national desks)."
-   },
-   {
     "title": "Funeral boss 'The Undertaker' seen in police surveillance amid Toronto mafia probe",
     "url": "https://www.cbc.ca/news/canada/toronto/luigi-vescio-funeral-homes-ndrangheta-police-surveillance-9.7436041",
-    "rank": 4,
+    "rank": 3,
     "live": "",
     "weight": 9.5,
     "score": 0,
@@ -1012,7 +987,7 @@
    {
     "title": "This suspected North Korean operative said he had an IT company in Toronto. It wasn't real",
     "url": "https://www.cbc.ca/news/canada/suspected-north-korean-operative-software-company-9.7437137",
-    "rank": 5,
+    "rank": 4,
     "live": "",
     "weight": 43.0,
     "score": 16,
@@ -1031,7 +1006,7 @@
    {
     "title": "Victoria bus strike called off, B.C. Transit announces deal",
     "url": "https://www.ctvnews.ca/vancouver/vancouver-island/article/victoria-bus-strike-called-off-bc-transit-announces-deal/",
-    "rank": 6,
+    "rank": 5,
     "live": "",
     "weight": 24.5,
     "score": 8,
@@ -1048,9 +1023,19 @@
     "why_judged": "National: affects many people; carried beyond one city."
    },
    {
+    "title": "Supreme Court to render its decision on Quebec's secularism law today",
+    "score": 17,
+    "why": "not built: only 2 independent report(s) (3 sites)"
+   },
+   {
     "title": "Ottawa deems Whitehorse Power Centres project of national interest",
     "score": 17,
     "why": "not built: only 2 independent report(s) (4 sites)"
+   },
+   {
+    "title": "Carney travels to Yellowknife for announcement on 'major' initiative",
+    "score": 11,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
     "title": "‘Slam dunk with our own MPs:’ Government House leader confident Liberals will pass Bill C-39",
@@ -1058,13 +1043,13 @@
     "why": "not built: only 1 independent report(s) (3 sites)"
    },
    {
-    "title": "Air traffic controller shortage persists, but delays caused by labour gap way down",
+    "title": "A timeline of key events in the case of Kenneth Law, who admitted to aiding suicides",
     "score": 9,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+    "why": "not built: only 1 independent report(s) (7 sites)"
    },
    {
-    "title": "Carney travels to Yellowknife for announcement on 'major' initiative",
-    "score": 8,
+    "title": "Air traffic controller shortage persists, but delays caused by labour gap way down",
+    "score": 9,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
@@ -1083,17 +1068,7 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Ford says he wouldn't hesitate to shoot a home invader, encourages Ontarians to 'fight back'",
-    "score": 7,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
     "title": "Niagara family business says $500K weekly in Trump tariffs is forcing production to U.S.",
-    "score": 6,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "This Independent is giving Poilievre's Conservatives the jitters ahead of a crucial byelection",
     "score": 6,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
@@ -1101,191 +1076,16 @@
     "title": "The corruption case against Benjamin Netanyahu just suffered a serious blow. What comes next?",
     "score": 6,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "This Independent is giving Poilievre's Conservatives the jitters ahead of a crucial byelection",
+    "score": 6,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
   ],
   "moved": [],
   "top_n": 2,
   "more": [
-   {
-    "key": "auto-0d42b438",
-    "words": [
-     "bill",
-     "top"
-    ],
-    "score": 15,
-    "outlets": 3,
-    "carriers": 4,
-    "tag": "Developing",
-    "title": "‘One of most important decisions in the history of Canadian democracy’: Top court to rule on Quebec’s Bill 21",
-    "url": "https://www.ctvnews.ca/montreal/article/supreme-court-to-rule-on-quebecs-secularism-law-experts-say-the-stakes-could-not-be-higher/",
-    "outlet": "CTV News",
-    "t": "Thu 9:54 p.m.",
-    "iso": "2026-11-27T02:54:16+00:00",
-    "summary": "The ruling will come amid tensions between Ottawa and Quebec’s separatists, as Paul St-Pierre Plamondon has criticized federal involvement in the legal challenge.",
-    "first": {
-     "outlet": "CBC News",
-     "url": "https://www.cbc.ca/news/politics/bill-21-39-43-22-november-2026-9.7437899",
-     "t": "Thu 5:45 p.m.",
-     "title": "Bill C-39, Bill C-22 and Quebec's Bill 21: What you need to know",
-     "iso": "2026-11-26T22:45:00+00:00"
-    },
-    "newest": "2026-11-27T02:54:16+00:00",
-    "photo": {
-     "src": "live/img/auto-0d42b438-e84ba78550.jpg",
-     "orig": "https://www.ctvnews.ca/resizer/v2/B4T7T262XBVRRLLR4C5M7FRHZE.jpg?smart=true&auth=e4e172bb2055723d063d34779b1891a494426ae9f5dce8f10fa5be9a850b2d7a&width=1200&height=630",
-     "caption": "The flags of Canada and Quebec fly in Gatineau, Que., Monday, Nov. 1, 2021. THE CANADIAN PRESS/Adrian Wyld. — via CTV News",
-     "alt": "The flags of Canada and Quebec fly in Gatineau, Que., Monday, Nov. 1, 2021. THE CANADIAN PRESS/Adrian Wyld",
-     "outlet": "CTV News",
-     "url": "https://www.ctvnews.ca/montreal/article/supreme-court-to-rule-on-quebecs-secularism-law-experts-say-the-stakes-could-not-be-higher/",
-     "since": "2026-11-27T09:12:35.582215+00:00"
-    },
-    "photo_seen": [
-     "https://www.ctvnews.ca/resizer/v2/B4T7T262XBVRRLLR4C5M7FRHZE.jpg?smart=true&auth=e4e172bb2055723d063d34779b1891a494426ae9f5dce8f10fa5be9a850b2d7a&width=1200&height=630"
-    ],
-    "photos": [
-     {
-      "src": "live/img/auto-0d42b438-e84ba78550.jpg",
-      "orig": "https://www.ctvnews.ca/resizer/v2/B4T7T262XBVRRLLR4C5M7FRHZE.jpg?smart=true&auth=e4e172bb2055723d063d34779b1891a494426ae9f5dce8f10fa5be9a850b2d7a&width=1200&height=630",
-      "caption": "The flags of Canada and Quebec fly in Gatineau, Que., Monday, Nov. 1, 2021. THE CANADIAN PRESS/Adrian Wyld. — via CTV News",
-      "alt": "The flags of Canada and Quebec fly in Gatineau, Que., Monday, Nov. 1, 2021. THE CANADIAN PRESS/Adrian Wyld",
-      "outlet": "CTV News",
-      "url": "https://www.ctvnews.ca/montreal/article/supreme-court-to-rule-on-quebecs-secularism-law-experts-say-the-stakes-could-not-be-higher/"
-     },
-     {
-      "src": "live/img/auto-0d42b438-68ed4ec190.jpg",
-      "orig": "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/653/files/2025/11/ng-supreme-court-of-canada-file-photo-september-2025-3.jpg",
-      "caption": "From: Supreme Court ruling on Bill 21 could affect Saskatchewan. — via CKOM / PAnow",
-      "alt": "Supreme Court ruling on Bill 21 could affect Saskatchewan",
-      "outlet": "CKOM / PAnow",
-      "url": "https://www.ckom.com/2026/11/26/supreme-court-ruling-on-bill-21-could-affect-saskatchewan/"
-     }
-    ],
-    "independent": 3,
-    "reports": [
-     {
-      "t": "Thu 9:54 p.m.",
-      "iso": "2026-11-27T02:54:16+00:00",
-      "outlet": "CTV News",
-      "title": "‘One of most important decisions in the history of Canadian democracy’: Top court to rule on Quebec’s Bill 21",
-      "url": "https://www.ctvnews.ca/montreal/article/supreme-court-to-rule-on-quebecs-secularism-law-experts-say-the-stakes-could-not-be-higher/",
-      "desc": "The ruling will come amid tensions between Ottawa and Quebec’s separatists, as Paul St-Pierre Plamondon has criticized federal involvement in the legal challenge."
-     },
-     {
-      "t": "Thu 9:54 p.m.",
-      "iso": "2026-11-27T02:54:16+00:00",
-      "outlet": "CP24",
-      "title": "‘One of most important decisions in the history of Canadian democracy’: Top court to rule on Quebec’s Bill 21",
-      "url": "https://www.cp24.com/news/canada/2026/11/27/supreme-court-to-rule-on-quebecs-secularism-law-experts-say-the-stakes-could-not-be-higher/",
-      "desc": ""
-     },
-     {
-      "t": "Thu 5:51 p.m.",
-      "iso": "2026-11-26T22:51:35+00:00",
-      "outlet": "CKOM / PAnow",
-      "title": "Supreme Court ruling on Bill 21 could affect Saskatchewan",
-      "url": "https://www.ckom.com/2026/11/26/supreme-court-ruling-on-bill-21-could-affect-saskatchewan/",
-      "desc": "A Supreme Court of Canada ruling expected on Nov. 27 could impact another Supreme Court case involving Saskatchewan and the province’s pronoun policy, set to be argued before the court in March next year."
-     },
-     {
-      "t": "Thu 5:45 p.m.",
-      "iso": "2026-11-26T22:45:00+00:00",
-      "outlet": "CBC News",
-      "title": "Bill C-39, Bill C-22 and Quebec's Bill 21: What you need to know",
-      "url": "https://www.cbc.ca/news/politics/bill-21-39-43-22-november-2026-9.7437899",
-      "desc": "In Parliament, a bill is a written proposal for a new piece of Canadian law. Those proposals make the news because they're typically about big-ticket issues that affect Canadians across the entire country, like everyday affordability or personal privacy. Here's what to know about those in the…"
-     }
-    ],
-    "sources": [
-     {
-      "t": "Thu 9:54 p.m.",
-      "primary": false,
-      "outlet": "CTV News",
-      "title": "‘One of most important decisions in the history of Canadian democracy’: Top court to rule on Quebec’s Bill 21",
-      "url": "https://www.ctvnews.ca/montreal/article/supreme-court-to-rule-on-quebecs-secularism-law-experts-say-the-stakes-could-not-be-higher/",
-      "desc": "The ruling will come amid tensions between Ottawa and Quebec’s separatists, as Paul St-Pierre Plamondon has criticized federal involvement in the legal challenge.",
-      "wire": "The Canadian Press",
-      "by": [
-       {
-        "outlet": "CTV News",
-        "src": "The Canadian Press",
-        "byline": "watsky\" \"Codi Wilson\" \"Joshua Freeman\" \"The Canadian Press\" \"The Associated Pr"
-       },
-       {
-        "outlet": "CP24",
-        "src": "The Canadian Press",
-        "byline": "[ { \"@type\": \"Person\", \"name\": \"Genevieve Beauchemin\", } ] \"Genevieve Beauchemin\" \"Genevieve Beauchemin\" \"\" \"\" \"\" \"\" \"me"
-       }
-      ],
-      "copies": [
-       {
-        "outlet": "CP24",
-        "url": "https://www.cp24.com/news/canada/2026/11/27/supreme-court-to-rule-on-quebecs-secularism-law-experts-say-the-stakes-could-not-be-higher/"
-       }
-      ]
-     },
-     {
-      "t": "Thu 5:51 p.m.",
-      "primary": false,
-      "outlet": "CKOM / PAnow",
-      "title": "Supreme Court ruling on Bill 21 could affect Saskatchewan",
-      "url": "https://www.ckom.com/2026/11/26/supreme-court-ruling-on-bill-21-could-affect-saskatchewan/",
-      "desc": "A Supreme Court of Canada ruling expected on Nov. 27 could impact another Supreme Court case involving Saskatchewan and the province’s pronoun policy, set to be argued before the court in March next year.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "CKOM / PAnow",
-        "src": "Rawlco",
-        "byline": "[{\"@type\":\"Person\",\"name\":\"Libby Gray\"}] \"Libby Gray\" Libby Gray"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Thu 5:45 p.m.",
-      "primary": false,
-      "outlet": "CBC News",
-      "title": "Bill C-39, Bill C-22 and Quebec's Bill 21: What you need to know",
-      "url": "https://www.cbc.ca/news/politics/bill-21-39-43-22-november-2026-9.7437899",
-      "desc": "In Parliament, a bill is a written proposal for a new piece of Canadian law. Those proposals make the news because they're typically about big-ticket issues that affect Canadians across the entire country, like everyday affordability or personal privacy. Here's what to know about those in the…",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "CBC News",
-        "src": "CBC",
-        "byline": "[{\"@type\":\"NewsMediaOrganization\",,\"name\":\"CBC\"}] [{\"@type\":\"NewsMediaOrganization\",,\"name\":\"CBC\"}] {\"profile\":{\"title\":"
-       }
-      ],
-      "copies": []
-     }
-    ],
-    "replaces_top": false,
-    "events": [],
-    "theme": "",
-    "canada": "canadian",
-    "canus": false,
-    "incoherent": false,
-    "popular": 0,
-    "us_election": false,
-    "fronts": 2,
-    "fronts_ca": 2,
-    "fronts_who": [
-     "CTV News",
-     "National Post"
-    ],
-    "judgment": "regional",
-    "judgment_why": "Regional: a single incident touching a few people; carried across the country (national desks).",
-    "weight": 24.0,
-    "videos": [
-     {
-      "net": "CTV News",
-      "url": "https://www.youtube.com/watch?v=4tHE6dJjwuw",
-      "title": "Top court to rule on Quebec’s Bill 21 | CTV National News for Nov.26, 2026",
-      "img": "https://i.ytimg.com/vi/4tHE6dJjwuw/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     }
-    ]
-   },
    {
     "key": "scoop-9ca33eb1",
     "words": [
@@ -1395,7 +1195,7 @@
      "alt": "A suspected North Korean operative known as Aku Alatao takes part in an online interview with fake crypto company Bananacoin.",
      "outlet": "CBC News",
      "url": "https://www.cbc.ca/news/canada/suspected-north-korean-operative-software-company-9.7437137",
-     "since": "2026-11-27T09:12:35.134368+00:00"
+     "since": "2026-11-27T09:22:32.825811+00:00"
     },
     "photo_seen": [
      "https://i.cbc.ca/ais/e85568b3-7d5d-4ec9-956c-88d3553ddcc5,1795717498840/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C52%2C932%2C524%29%3BResize%3D620"
@@ -1522,6 +1322,162 @@
     "judgment": "national",
     "judgment_why": "National: affects some people; carried across the country (national desks).",
     "weight": 43.0
+   },
+   {
+    "key": "auto-bd610c3a",
+    "words": [
+     "transit"
+    ],
+    "score": 8,
+    "outlets": 3,
+    "carriers": 3,
+    "tag": "Developing",
+    "title": "Victoria bus strike called off, B.C. Transit announces deal",
+    "url": "https://www.ctvnews.ca/vancouver/vancouver-island/article/victoria-bus-strike-called-off-bc-transit-announces-deal/",
+    "outlet": "CTV News",
+    "t": "Thu 8:09 p.m.",
+    "iso": "2026-11-27T01:09:47+00:00",
+    "summary": "A planned strike that threatened to shut down Greater Victoria’s public transit system Friday has been called off.",
+    "first": {
+     "outlet": "CityNews Winnipeg",
+     "url": "https://winnipeg.citynews.ca/2026/11/26/fully-enclosed-safety-shields-transit-bus/",
+     "t": "Thu 1:33 p.m.",
+     "title": "Fully enclosed safety shields coming to some new Winnipeg Transit buses",
+     "iso": "2026-11-26T18:33:34+00:00"
+    },
+    "newest": "2026-11-27T01:09:47+00:00",
+    "photo": {
+     "src": "live/img/auto-bd610c3a-ff8234f88f.jpg",
+     "orig": "https://www.ctvnews.ca/resizer/v2/O5YJD5N44ZD6FNP3QPBXD5ACW4.jpeg?smart=true&auth=e8a7cd9154b671c7b12079e98a88a0bf4746c68dc576afe29c54e5bdd126ed84&width=1200&height=630",
+     "caption": "Victoria transit service to run Friday after tentative labour agreement. — via CTV News",
+     "alt": "Victoria transit service to run Friday after tentative labour agreement",
+     "outlet": "CTV News",
+     "url": "https://www.ctvnews.ca/vancouver/vancouver-island/article/victoria-bus-strike-called-off-bc-transit-announces-deal/",
+     "since": "2026-11-27T09:22:38.130515+00:00"
+    },
+    "photo_seen": [
+     "https://www.ctvnews.ca/resizer/v2/O5YJD5N44ZD6FNP3QPBXD5ACW4.jpeg?smart=true&auth=e8a7cd9154b671c7b12079e98a88a0bf4746c68dc576afe29c54e5bdd126ed84&width=1200&height=630"
+    ],
+    "photos": [
+     {
+      "src": "live/img/auto-bd610c3a-ff8234f88f.jpg",
+      "orig": "https://www.ctvnews.ca/resizer/v2/O5YJD5N44ZD6FNP3QPBXD5ACW4.jpeg?smart=true&auth=e8a7cd9154b671c7b12079e98a88a0bf4746c68dc576afe29c54e5bdd126ed84&width=1200&height=630",
+      "caption": "Victoria transit service to run Friday after tentative labour agreement. — via CTV News",
+      "alt": "Victoria transit service to run Friday after tentative labour agreement",
+      "outlet": "CTV News",
+      "url": "https://www.ctvnews.ca/vancouver/vancouver-island/article/victoria-bus-strike-called-off-bc-transit-announces-deal/"
+     },
+     {
+      "src": "live/img/auto-bd610c3a-97bc2fa192.jpg",
+      "orig": "https://i.cbc.ca/ais/18a7e1c4-2a7e-4d5e-822e-2d870667d7a5,1795726333569/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1677%2C943%29%3BResize%3D620",
+      "caption": "Evan Duncan, chair of the standing policy committee on public works, says transit safety is a priority for riders and drivers alike. (Trevor Brine/CBC) — via CBC News",
+      "alt": "Evan Duncan, chair of the standing policy committee on public works, says transit safety is a priority for riders and drivers alike.",
+      "outlet": "CBC News",
+      "url": "https://www.cbc.ca/news/canada/manitoba/full-safety-shields-coming-to-city-buses-winnipeg-transit-9.7437734?cmp=rss"
+     },
+     {
+      "src": "live/img/auto-bd610c3a-d2faa9cf33.jpg",
+      "orig": "https://winnipeg.citynews.ca/wp-content/blogs.dir/sites/13/Winnipeg-Transit-bus-1-1-scaled-e1769713109107.jpg",
+      "caption": "From: Fully enclosed safety shields coming to some new Winnipeg Transit buses. — via CityNews Winnipeg",
+      "alt": "Fully enclosed safety shields coming to some new Winnipeg Transit buses",
+      "outlet": "CityNews Winnipeg",
+      "url": "https://winnipeg.citynews.ca/2026/11/26/fully-enclosed-safety-shields-transit-bus/"
+     }
+    ],
+    "independent": 3,
+    "reports": [
+     {
+      "t": "Thu 8:09 p.m.",
+      "iso": "2026-11-27T01:09:47+00:00",
+      "outlet": "CTV News",
+      "title": "Victoria bus strike called off, B.C. Transit announces deal",
+      "url": "https://www.ctvnews.ca/vancouver/vancouver-island/article/victoria-bus-strike-called-off-bc-transit-announces-deal/",
+      "desc": "A planned strike that threatened to shut down Greater Victoria’s public transit system Friday has been called off."
+     },
+     {
+      "t": "Thu 5:13 p.m.",
+      "iso": "2026-11-26T22:13:11+00:00",
+      "outlet": "CBC News",
+      "title": "Full safety shields coming to city buses: Winnipeg Transit",
+      "url": "https://www.cbc.ca/news/canada/manitoba/full-safety-shields-coming-to-city-buses-winnipeg-transit-9.7437734?cmp=rss",
+      "desc": "Winnipeg Transit is getting 20 new buses equipped with full safety shields, and is launching a pilot project to test them on some of the fleet's existing buses in a bid to give drivers greater protection."
+     },
+     {
+      "t": "Thu 1:33 p.m.",
+      "iso": "2026-11-26T18:33:34+00:00",
+      "outlet": "CityNews Winnipeg",
+      "title": "Fully enclosed safety shields coming to some new Winnipeg Transit buses",
+      "url": "https://winnipeg.citynews.ca/2026/11/26/fully-enclosed-safety-shields-transit-bus/",
+      "desc": "Fully enclosed shields will be installed on 20 new Winnipeg Transit buses to protect drivers. And a pilot project will test shields on up to nine existing buses, as plans are ongoing for a retrofit of the entire fleet. More details are expected next month. That’s what Winnipeg Transit revealed in a…"
+     }
+    ],
+    "sources": [
+     {
+      "t": "Thu 8:09 p.m.",
+      "primary": false,
+      "outlet": "CTV News",
+      "title": "Victoria bus strike called off, B.C. Transit announces deal",
+      "url": "https://www.ctvnews.ca/vancouver/vancouver-island/article/victoria-bus-strike-called-off-bc-transit-announces-deal/",
+      "desc": "A planned strike that threatened to shut down Greater Victoria’s public transit system Friday has been called off.",
+      "wire": "The Canadian Press",
+      "by": [
+       {
+        "outlet": "CTV News",
+        "src": "The Canadian Press",
+        "byline": "watsky\" \"Codi Wilson\" \"Joshua Freeman\" \"The Canadian Press\" \"The Associated Pr"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Thu 5:13 p.m.",
+      "primary": false,
+      "outlet": "CBC News",
+      "title": "Full safety shields coming to city buses: Winnipeg Transit",
+      "url": "https://www.cbc.ca/news/canada/manitoba/full-safety-shields-coming-to-city-buses-winnipeg-transit-9.7437734?cmp=rss",
+      "desc": "Winnipeg Transit is getting 20 new buses equipped with full safety shields, and is launching a pilot project to test them on some of the fleet's existing buses in a bid to give drivers greater protection.",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "CBC News",
+        "src": "CBC",
+        "byline": "own staff: Reporter"
+       }
+      ],
+      "copies": []
+     },
+     {
+      "t": "Thu 1:33 p.m.",
+      "primary": false,
+      "outlet": "CityNews Winnipeg",
+      "title": "Fully enclosed safety shields coming to some new Winnipeg Transit buses",
+      "url": "https://winnipeg.citynews.ca/2026/11/26/fully-enclosed-safety-shields-transit-bus/",
+      "desc": "Fully enclosed shields will be installed on 20 new Winnipeg Transit buses to protect drivers. And a pilot project will test shields on up to nine existing buses, as plans are ongoing for a retrofit of the entire fleet. More details are expected next month. That’s what Winnipeg Transit revealed in a…",
+      "wire": "",
+      "by": [
+       {
+        "outlet": "CityNews Winnipeg",
+        "src": "Rogers",
+        "byline": "[{\"@id\":\"https://winnipeg.citynews.ca/#/schema/person/fede01291c2e6f3f5fe805acc41a6fdf\"}] \"rdm_dev\" News Staff By News S"
+       }
+      ],
+      "copies": []
+     }
+    ],
+    "replaces_top": false,
+    "events": [],
+    "theme": "",
+    "canada": "canadian",
+    "canus": false,
+    "incoherent": true,
+    "popular": 0,
+    "us_election": false,
+    "fronts": 0,
+    "fronts_ca": 0,
+    "fronts_who": [],
+    "judgment": "national",
+    "judgment_why": "National: affects many people; carried beyond one city.",
+    "weight": 24.5
    }
   ],
   "passed_over": []
@@ -1634,7 +1590,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=kpselW3NKMc",
    "img": "https://i.ytimg.com/vi/kpselW3NKMc/hqdefault.jpg",
-   "up": "2026-11-27",
+   "up": "2026-11-26",
    "added": "2026-11-27T05:15:14.019876+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -1696,20 +1652,6 @@
    "geo": "unknown"
   },
   {
-   "id": "GQK1zeIhw6U",
-   "r": "ca",
-   "o": "APTN News",
-   "t": "APTN National News: November 26, 2026 – Millions seized in drugs and cash, CFS 5-year-old death",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=GQK1zeIhw6U",
-   "img": "https://i.ytimg.com/vi/GQK1zeIhw6U/hqdefault.jpg",
-   "up": "2026-11-26",
-   "added": "2026-11-27T07:07:37.412529+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "AXtj3W49jC8",
    "r": "ca",
    "o": "Global News",
@@ -1720,6 +1662,20 @@
    "img": "https://i.ytimg.com/vi/AXtj3W49jC8/hqdefault.jpg",
    "up": "2026-11-27",
    "added": "2026-11-27T07:27:37.511657+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "LGQ9PsdJ5Eo",
+   "r": "ca",
+   "o": "APTN News",
+   "t": "Death of 5-year-old in CFS care re-ignites calls for inquiry into Manitoba system",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=LGQ9PsdJ5Eo",
+   "img": "https://i.ytimg.com/vi/LGQ9PsdJ5Eo/hqdefault.jpg",
+   "up": "2026-11-27",
+   "added": "2026-11-27T09:21:03.210892+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1948,34 +1904,6 @@
    "geo": "unknown"
   },
   {
-   "id": "RVGiZBebhBs",
-   "r": "us",
-   "o": "CNN",
-   "t": "Can Dems work with the GOP? 3 new House reps weigh in",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=RVGiZBebhBs",
-   "img": "https://i.ytimg.com/vi/RVGiZBebhBs/hqdefault.jpg",
-   "up": "2026-11-26",
-   "added": "2026-11-27T09:06:16.093986+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "Wfhj-d2Ue0E",
-   "r": "us",
-   "o": "CNN",
-   "t": "‘We went into fix-it mode’: Band directors react to Macy’s parade postponement",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=Wfhj-d2Ue0E",
-   "img": "https://i.ytimg.com/vi/Wfhj-d2Ue0E/hqdefault.jpg",
-   "up": "2026-11-26",
-   "added": "2026-11-27T09:06:16.093986+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "G0F6G9jTamM",
    "r": "us",
    "o": "Fox News",
@@ -2077,7 +2005,7 @@
    "id": "D8FCp4hg_OA",
    "r": "world",
    "o": "Sky News",
-   "t": "‘Nobody knows to look for them’: Britain’s youngest carers",
+   "t": "Too young to be noticed: Britain’s invisible infant carers",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=D8FCp4hg_OA",
@@ -2540,9 +2468,8 @@
   "lines": [
    "Good morning. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
    "Researchers say North Korean money launderers are using lesser-known cryptocurrency services to move stolen funds, Reuters reports.",
-   "‘One of most important decisions in the history of Canadian democracy’: Top court to rule on Quebec’s Bill 21, The Canadian Press reports.",
-   "Fully enclosed shields will be installed on 20 new Winnipeg Transit buses to protect drivers, CityNews Winnipeg reports.",
    "Protesters gathered in front of City Hall Thursday afternoon to protest comments made by Montreal Mayor Soraya Martinez Ferrada, The Canadian Press reports.",
+   "Fully enclosed shields will be installed on 20 new Winnipeg Transit buses to protect drivers, CityNews Winnipeg reports.",
    "Trump says Putin can come to G20 if he wants, The Canadian Press reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
   ]
@@ -2889,12 +2816,12 @@
    "city": "Winnipeg",
    "tz": "America/Winnipeg",
    "world": false,
-   "w": "The vote",
-   "label": "Winnipeg eyes deal with Saskatchewan insurer to chase down…",
-   "u": "https://www.cbc.ca/news/canada/manitoba/winnipeg-saskatchewan-government-insurance-unpaid-parking-tickets-9.7438036?cmp=rss",
-   "title": "Winnipeg eyes deal with Saskatchewan insurer to chase down unpaid parking tickets",
-   "outlet": "CBC News",
-   "t": "Thu 6:41 p.m.",
+   "w": "Trade",
+   "label": "Moe and Carney talk economy",
+   "u": "https://www.timescolonist.com/the-mix/moe-and-carney-talk-economy-electricity-and-trade-during-regina-visit-13063624",
+   "title": "Moe and Carney talk economy, electricity and trade during Regina visit",
+   "outlet": "Times Colonist",
+   "t": "Thu 11:42 p.m.",
    "hot": false
   },
   {
@@ -2913,12 +2840,12 @@
    "city": "Vancouver",
    "tz": "America/Vancouver",
    "world": false,
-   "w": "In court",
-   "label": "Ottawa deems Whitehorse Power Centres project of national…",
-   "u": "https://www.timescolonist.com/national-news/ottawa-deems-whitehorse-power-centres-project-of-national-interest-13065824",
-   "title": "Ottawa deems Whitehorse Power Centres project of national interest",
-   "outlet": "Times Colonist",
-   "t": "Fri 3:20 a.m.",
+   "w": "Weather",
+   "label": "District of Squamish asks residents to limit indoor water…",
+   "u": "https://www.narcity.com/b-c-drip-drying-but-flooding-still-a-risk",
+   "title": "District of Squamish asks residents to limit indoor water use after wet B.C. weather",
+   "outlet": "Narcity",
+   "t": "Fri 4:17 a.m.",
    "hot": true
   },
   {
@@ -2970,7 +2897,126 @@
    "hot": true
   }
  ],
- "bigweek": [],
+ "bigweek": [
+  {
+   "name": "Black Friday budget",
+   "date": "2026-12-04",
+   "what": "",
+   "days": 7,
+   "reports": [
+    {
+     "t": "Thu 8:13 p.m.",
+     "iso": "2026-11-27T01:13:51+00:00",
+     "outlet": "Global News",
+     "title": "Funding future for Calgary’s Foothills Fieldhouse questioned during budget talks",
+     "url": "https://globalnews.ca/news/12167937/funding-future-for-calgarys-foothills-fieldhouse-questioned-during-budget-talks/",
+     "canada": true,
+     "paywall": false,
+     "exclusive": false
+    },
+    {
+     "t": "Thu 6:55 p.m.",
+     "iso": "2026-11-26T23:55:42+00:00",
+     "outlet": "CTV News",
+     "title": "‘Kraft Dinner’ budget: Mayor’s comments prompt second protest at City Hall",
+     "url": "https://www.ctvnews.ca/montreal/article/mayors-kraft-dinner-comments-prompt-second-protest-at-city-hall/",
+     "canada": true,
+     "paywall": false,
+     "exclusive": false
+    },
+    {
+     "t": "Thu 2:02 p.m.",
+     "iso": "2026-11-26T19:02:03+00:00",
+     "outlet": "CityNews Edmonton",
+     "title": "Alberta expecting $18B budget turnaround propelled by oil royalties",
+     "url": "https://edmonton.citynews.ca/2026/11/26/alberta-budget-turnaround-oil-royalties/",
+     "canada": true,
+     "paywall": false,
+     "exclusive": false
+    },
+    {
+     "t": "Thu 12:31 p.m.",
+     "iso": "2026-11-26T17:31:02+00:00",
+     "outlet": "CityNews Montreal",
+     "title": "‘A really bad look’: Protesters use Kraft Dinner to make point about affordability after Montreal mayor’s budget comments",
+     "url": "https://montreal.citynews.ca/2026/11/26/kraft-dinner-protest-montreal-mayor/",
+     "canada": true,
+     "paywall": false,
+     "exclusive": false
+    },
+    {
+     "t": "Fri 4:00 a.m.",
+     "iso": "2026-11-27T09:00:05+00:00",
+     "outlet": "Times Colonist",
+     "title": "Black Friday arrives as budgets tighten, shoppers expected to spend less",
+     "url": "https://www.timescolonist.com/the-mix/black-friday-arrives-as-budgets-tighten-shoppers-expected-to-spend-less-13065939",
+     "canada": false,
+     "paywall": false,
+     "exclusive": false
+    },
+    {
+     "t": "Fri 3:59 a.m.",
+     "iso": "2026-11-27T08:59:38+00:00",
+     "outlet": "NBC News",
+     "title": "31+ Black Friday deals under $50 that won’t blow your budget",
+     "url": "https://www.nbcnews.com/select/shopping/black-friday-2026-deals-under-50-rcna611475",
+     "canada": false,
+     "paywall": false,
+     "exclusive": false
+    },
+    {
+     "t": "Fri 2:34 a.m.",
+     "iso": "2026-11-27T07:34:56+00:00",
+     "outlet": "Telegraph-Journal",
+     "title": "Budget barely passes over cost-sharing 'crisis'",
+     "url": "https://tj.news/saint-john-south/budget-barely-passes-over-cost-sharing-crisis",
+     "canada": false,
+     "paywall": false,
+     "exclusive": false
+    },
+    {
+     "t": "Thu 4:53 p.m.",
+     "iso": "2026-11-26T21:53:31+00:00",
+     "outlet": "CP24",
+     "title": "EU leaders split over budget spending and a US$49 billion loan to Ukraine",
+     "url": "https://www.cp24.com/news/world/2026/11/26/eu-leaders-divided-over-budget-spending-as-they-weigh-a-us49-billion-loan-to-ukraine/",
+     "canada": false,
+     "paywall": false,
+     "exclusive": false
+    },
+    {
+     "t": "Thu 4:09 p.m.",
+     "iso": "2026-11-26T21:09:15+00:00",
+     "outlet": "Calgary Herald",
+     "title": "Civic partners plead their case as some councillors hope to trim funding in city budget",
+     "url": "https://calgaryherald.com/news/civic-partners-plead-case-city-budget-funding",
+     "canada": false,
+     "paywall": false,
+     "exclusive": false
+    },
+    {
+     "t": "Wed 1:17 p.m.",
+     "iso": "2026-11-25T18:17:46+00:00",
+     "outlet": "CBC News",
+     "title": "Sask. budget deficit shrinks to $784M in mid-year update",
+     "url": "https://www.cbc.ca/news/canada/saskatchewan/sask-mid-year-budget-update-9.7435710?cmp=rss",
+     "canada": false,
+     "paywall": false,
+     "exclusive": false
+    }
+   ],
+   "official": [
+    {
+     "who": "Department of Finance Canada",
+     "url": "https://www.canada.ca/en/department-finance/news/2026/11/minister-champagne-introduces-legislation-to-implement-budget-2026-masters-of-our-destiny.html",
+     "title": "Minister Champagne introduces legislation to implement Budget 2026: Masters of our destiny",
+     "t": "Nov. 26",
+     "iso": "2026-11-26T16:29:55+00:00"
+    }
+   ],
+   "earlier": []
+  }
+ ],
  "desks": [
   {
    "desk": "world",
@@ -3015,7 +3061,7 @@
    "iso": "2026-11-27T09:01:18+00:00",
    "title": "Carney travels to Yellowknife for announcement on 'major' initiative",
    "summary": "Carney to make 'major' announcement in Yellowknife",
-   "outlet": "Narcity + Toronto Star + The Canadian Press (via Winnipeg Free Press) + Medicine Hat News, CBC News, Cabin Radio",
+   "outlet": "Narcity + Toronto Star + Times Colonist + The Canadian Press (via Winnipeg Free Press) + 3 more, CBC News, Cabin Radio",
    "n": 3,
    "url": "https://www.narcity.com/carney-to-make-major-announcement-in-yellowknife",
    "img": "https://www.narcity.com/media-library/carney-to-make-major-announcement-in-yellowknife.jpg?id=68784109&width=1200&height=600&coordinates=0%2C116%2C0%2C117"
@@ -3111,7 +3157,7 @@
    "iso": "2026-11-27T00:06:52.533000+00:00",
    "title": "Defence minister 'very concerned' after Poilievre claims constituent's job was threatened",
    "summary": "Defence Minister David McGuinty says he's asked his deputy to raise concerns about a Wainwright, Alta., nurse's job being threatened after she was photographed with Conservative Leader Pierre Poilievre.",
-   "outlet": "CBC News, Global News, Toronto Star + CKOM / PAnow + CP24 (CP)",
+   "outlet": "CBC News, Global News, Toronto Star + CP24 (CP)",
    "n": 3,
    "url": "https://www.cbc.ca/news/politics/defence-minister-wainwright-nurse-claims-job-threatened-9.7437979",
    "img": "https://i.cbc.ca/ais/89c3aa54-8807-4e7e-a60c-1b27f4bd671e,1795732785627/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C269%2C5006%2C2815%29%3BResize%3D620"
@@ -3165,13 +3211,25 @@
    "img": "https://www.ctvnews.ca/resizer/v2/42IO6AZEOGNBJKV34V43FDEYBQ.jpg?smart=true&auth=e275e3c6c260663ba8aacca26fa609f00be19fab7e39bd320a7d605b26fd7fd1&width=1200&height=630"
   },
   {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Fri 4:18 a.m.",
+   "iso": "2026-11-27T09:18:41+00:00",
+   "title": "What the ECB’s new leadership could mean for interest rates",
+   "summary": "",
+   "outlet": "Euronews",
+   "n": 1,
+   "url": "https://www.euronews.com/2026/11/27/what-the-ecbs-new-leadership-could-mean-for-interest-rates",
+   "img": ""
+  },
+  {
    "desk": "world",
    "pic": "globe",
    "t": "Fri 4:00 a.m.",
    "iso": "2026-11-27T09:00:58+00:00",
    "title": "A timeline of key events in the case of Kenneth Law, who admitted to aiding suicides",
    "summary": "Timeline of key events in the case of Kenneth Law",
-   "outlet": "Narcity + Toronto Star + The Canadian Press (via Winnipeg Free Press) + Medicine Hat News",
+   "outlet": "Narcity + Toronto Star + Times Colonist + The Canadian Press (via Winnipeg Free Press) + 3 more",
    "n": 1,
    "url": "https://www.narcity.com/timeline-of-key-events-in-the-case-of-kenneth-law-2678544174",
    "img": "https://www.narcity.com/media-library/timeline-of-key-events-in-the-case-of-kenneth-law.jpg?id=68784106&width=1200&height=600&coordinates=0%2C116%2C0%2C117"
@@ -3187,6 +3245,18 @@
    "n": 1,
    "url": "https://www.cbc.ca/news/canada/hamilton/stanpac-us-canada-tariffs-trade-9.7435346",
    "img": "https://i.cbc.ca/ais/2a63b0c4-d19b-4e17-92b4-6d38ed516aac,1795618555985/full/max/0/default.jpg?im=Crop%2Crect%3D%281%2C0%2C3531%2C1986%29%3BResize%3D620"
+  },
+  {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Fri 3:59 a.m.",
+   "iso": "2026-11-27T08:59:38+00:00",
+   "title": "31+ Black Friday deals under $50 that won’t blow your budget",
+   "summary": "Save up to 60% on affordable gifts, everyday essentials and editor-loved products during Black Friday.",
+   "outlet": "NBC News",
+   "n": 1,
+   "url": "https://www.nbcnews.com/select/shopping/black-friday-2026-deals-under-50-rcna611475",
+   "img": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-11/261127-BF-under-50-kb-social-V1-6c8d39.png"
   },
   {
    "desk": "business",
@@ -3227,18 +3297,6 @@
   {
    "desk": "us",
    "pic": "podium",
-   "t": "Fri 2:18 a.m.",
-   "iso": "2026-11-27T07:18:05+00:00",
-   "title": "No. 5 Texas Tech rallies past Oregon 62-59 in Players Era consolation round",
-   "summary": "LAS VEGAS (AP) — Cruz Davis scored 18 points and Jamichael Stillwell made a layup with 1:15 remaining to cap a rally as No. 5 Texas Tech beat Oregon 62-59 on Thursday night in the consolation round of the Players Era tournament.",
-   "outlet": "The Canadian Press (via Winnipeg Free Press)",
-   "n": 1,
-   "url": "https://www.winnipegfreepress.com/uncategorized/2026/11/27/no-5-texas-tech-rallies-past-oregon-62-59-in-players-era-consolation-round",
-   "img": ""
-  },
-  {
-   "desk": "us",
-   "pic": "podium",
    "t": "Fri 12:02 a.m.",
    "iso": "2026-11-27T05:02:40+00:00",
    "title": "Buffalo Bills outlast Kansas City Chiefs in defensive struggle to maintain top seed status in AFC",
@@ -3259,18 +3317,6 @@
    "n": 1,
    "url": "https://www.thestar.com/news/world/united-states/as-google-threatens-to-cut-schools-search-access-los-angeles-blocks-ai-features/article_09d6eba3-70b5-5a9f-8fa0-73104c24b7ba.html",
    "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/c/31/c31ec1c9-8943-5b54-8271-392faade9cc8/6ad7e33727530.image.jpg?crop=1700%2C893%2C0%2C93&resize=1200%2C630&order=crop%2Cresize"
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Thu 10:42 p.m.",
-   "iso": "2026-11-27T03:42:16+00:00",
-   "title": "Asian stock markets rise after earlier tech rout",
-   "summary": "Indices in Japan, South Korea, Australia and Hong Kong rise as New Zealand stocks dip on election uncertainty.",
-   "outlet": "Al Jazeera",
-   "n": 1,
-   "url": "https://www.aljazeera.com/economy/2026/11/27/asian-stock-markets-rise-after-earlier-tech-rout?traffic_source=rss",
-   "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/AP26330128296029-1-1795748879.jpg?resize=1920%2C1440"
   },
   {
    "desk": "us",
@@ -3309,18 +3355,6 @@
    "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/hunter-stokes.jpg"
   },
   {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Thu 8:13 p.m.",
-   "iso": "2026-11-27T01:13:51+00:00",
-   "title": "Funding future for Calgary’s Foothills Fieldhouse questioned during budget talks",
-   "summary": "A lack of funding commitments from other orders of government has some Calgary city councillors considering reallocating funding for the Foothills Fieldhouse to other priorities.",
-   "outlet": "Global News",
-   "n": 1,
-   "url": "https://globalnews.ca/news/12167937/funding-future-for-calgarys-foothills-fieldhouse-questioned-during-budget-talks/",
-   "img": "https://globalnews.ca/wp-content/uploads/2026/11/Screenshot-2026-11-26-152614.png?w=720&h=379&crop=1"
-  },
-  {
    "desk": "us",
    "pic": "podium",
    "t": "Thu 8:08 p.m.",
@@ -3331,6 +3365,18 @@
    "n": 1,
    "url": "https://www.foxnews.com/outkick-sports/unforgiving-rim-denies-arkansas-miracle-comeback-michigan-state-thanksgiving",
    "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/jeremy-fears-jr-celebrates-michigan-state-fox-news_.jpg"
+  },
+  {
+   "desk": "us",
+   "pic": "podium",
+   "t": "Thu 8:00 p.m.",
+   "iso": "2026-11-27T01:00:34+00:00",
+   "title": "Democrats, Republicans find rare common ground when asked what they're thankful for",
+   "summary": "Democrats and Republicans on Capitol Hill may clash on policy, but this Thanksgiving, lawmakers say family is what they're most thankful for.",
+   "outlet": "Fox News",
+   "n": 1,
+   "url": "https://www.foxnews.com/politics/democrats-republicans-find-rare-common-ground-when-asked-what-theyre-thankful",
+   "img": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/57f60224-5414-4692-a286-b0004f98776a/7f28eae6-a231-4d96-8944-ff1fddab3353/1280x720/match/image.jpg"
   }
  ],
  "reads": [
@@ -3484,6 +3530,26 @@
     "",
     "https://globalnews.ca/news/12167284/used-car-prices-falling/",
     ""
+   ]
+  },
+  {
+   "o": "Toronto Star",
+   "ca": true,
+   "h": [
+    "Toronto Star News - Breaking News Stories",
+    "Doug Ford says he would use his own gun to shoot a home invader",
+    "Chow says she recognizes Torontonians’ fears after home-invasion killing of musician: ‘I feel it too and I am angry’",
+    "Blue Rodeo, other Canadian musicians pay tribute to Toronto guitarist killed in home invasion",
+    "Hank Idsinga: I’m a former homicide cop. Torontonians should not have to live in fear",
+    "Ford says gambling ads are ‘out of control,’ but his government is resisting calls for a quick ban"
+   ],
+   "u": [
+    "",
+    "https://www.thestar.com/politics/provincial/doug-ford-says-he-would-use-his-own-gun-to-blow-away-a-home-invader/article_7a283d4b-8e56-404a-82af-9481551572e7.html",
+    "https://www.thestar.com/news/gta/police-identify-suspect-s-car-in-home-invasion-killing-of-toronto-musician/article_785ab37a-ba02-4e8f-9c46-45ba19cfbc37.html",
+    "https://www.thestar.com/news/gta/blue-rodeo-pays-tribute-to-toronto-musician-killed-in-home-invasion/article_4a1b151d-8df5-4cc9-a53f-853cd19be9eb.html",
+    "https://www.thestar.com/opinion/contributors/hank-idsinga-i-m-a-former-homicide-cop-torontonians-should-not-have-to-live-in-fear/article_959b5b24-af48-4e89-bb6a-54d58080bdbd.html",
+    "https://www.thestar.com/news/ontario/ford-says-gambling-ads-are-out-of-control-but-his-government-is-resisting-calls-for-a-quick-ban/article_1aff3f8a-6a0a-49c8-b283-72219d67334e.html"
    ]
   },
   {
@@ -3686,7 +3752,7 @@
     "url": "https://www.youtube.com/watch?v=wcY4K5CNVx4",
     "img": "https://i.ytimg.com/vi/wcY4K5CNVx4/hqdefault.jpg",
     "story": "Fox News' All-American Christmas tree",
-    "watching": "2K"
+    "watching": "1.8K"
    },
    {
     "net": "MS NOW",
@@ -3695,7 +3761,7 @@
     "url": "https://www.youtube.com/watch?v=GjX7SROH1s4",
     "img": "https://i.ytimg.com/vi/GjX7SROH1s4/hqdefault.jpg",
     "story": "BEST of 'The Best People with Nicolle Wallace': MS NOW Thanksgiving Ma",
-    "watching": "270"
+    "watching": "271"
    },
    {
     "net": "The White House",
@@ -3704,7 +3770,7 @@
     "url": "https://www.youtube.com/watch?v=ZpJlociXFyM",
     "img": "https://i.ytimg.com/vi/ZpJlociXFyM/hqdefault.jpg",
     "story": "Lo-Fi Winning Beats to Pass the Gravy to",
-    "watching": "15"
+    "watching": "21"
    },
    {
     "net": "Reuters",
@@ -3713,7 +3779,7 @@
     "url": "https://www.youtube.com/watch?v=rovl4zoFQ3E",
     "img": "https://i.ytimg.com/vi/rovl4zoFQ3E/hqdefault.jpg",
     "story": "Powerful storm hits US East Coast",
-    "watching": "54"
+    "watching": "52"
    },
    {
     "net": "Sky News",
@@ -3722,7 +3788,7 @@
     "url": "https://www.youtube.com/watch?v=Ad_pjt3o7vk",
     "img": "https://i.ytimg.com/vi/Ad_pjt3o7vk/hqdefault.jpg",
     "story": "Black Friday could turn into 'Black Fraud Day,' MPs warn",
-    "watching": "547"
+    "watching": "520"
    }
   ],
   "upcoming": [
@@ -3804,26 +3870,12 @@
    "story": "Live updates: The best Black Friday deals up to 70% off, handpicked by",
    "title": "Live updates: The best Black Friday deals up to 70% off, handpicked by a shopping expert",
    "url": "https://www.nbcnews.com/select/shopping/best-black-friday-deals-11-27-2026-rcna611358",
-   "updated": "2026-11-27T09:00:15.823000+00:00",
+   "updated": "2026-11-27T09:15:24.241000+00:00",
    "ended": false,
    "img": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-11/261127-BF-hero-kb-social-V1-9e541b.png"
   }
  ],
  "related": {
-  "auto-0d42b438": {
-   "ties": [
-    "quebec"
-   ],
-   "stories": [],
-   "views": [
-    {
-     "outlet": "Frontier Centre for Public Policy",
-     "kind": "Think tank",
-     "title": "Seven Canadian cities earn top marks for financial transparency. Is yours one of them?",
-     "url": "https://frontiercentre.org/2026/11/26/seven-canadian-cities-earn-top-marks-for-financial-transparency-is-yours-one-of-them/?utm_source=rss&utm_medium=rss&utm_campaign=seven-canadian-cities-earn-top-marks-for-financial-transparency-is-yours-one-of-them"
-    }
-   ]
-  },
   "scoop-9ca33eb1": {
    "ties": [
     "Canada and the U.S."
