@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-27T02:40:27.581201+00:00",
- "checkedLabel": "Thu 9:40 p.m.",
+ "checked": "2026-11-27T02:50:28.022909+00:00",
+ "checkedLabel": "Thu 9:50 p.m.",
  "stories": [
   {
    "key": "top",
@@ -31,6 +31,24 @@
  ],
  "wire": [
   [
+   "Thu 9:46 p.m.",
+   "World",
+   "Strobe Talbott, former Time magazine reporter and deputy secretary of state, has died",
+   "CTV News",
+   "https://www.ctvnews.ca/world/article/strobe-talbott-former-time-magazine-reporter-and-deputy-secretary-of-state-has-died/",
+   "2026-11-27T02:46:14.638000+00:00",
+   2
+  ],
+  [
+   "Thu 9:41 p.m.",
+   "Latest",
+   "Multiple soldiers remain in critical condition as health officials detail CFB Wainwright response",
+   "CTV News",
+   "https://www.ctvnews.ca/canada/article/multiple-soldiers-remain-in-critical-condition-as-health-officials-detail-cfb-wainwright-response/",
+   "2026-11-27T02:41:48+00:00",
+   3
+  ],
+  [
    "Thu 9:38 p.m.",
    "Canada",
    "Vet tranquilizer detected amid spike in Regina overdoses, Saskatchewan health officials warn",
@@ -55,7 +73,7 @@
    "CBS News",
    "https://www.cbsnews.com/live-updates/iran-war-us-military-ai-weapons-oil/",
    "2026-11-27T02:29:01+00:00",
-   2
+   3
   ],
   [
    "Thu 9:27 p.m.",
@@ -82,7 +100,7 @@
    "Toronto Star",
    "https://www.thestar.com/news/world/asian-shares-mostly-rise-ahead-of-wall-street-s-reopening-after-the-thanksgiving-holiday/article_8300fd1e-40b3-5f64-b735-f00d8aef6b81.html",
    "2026-11-27T02:22:23+00:00",
-   10
+   8
   ],
   [
    "Thu 9:21 p.m.",
@@ -163,7 +181,7 @@
    "CTV News",
    "https://www.ctvnews.ca/montreal/article/supreme-court-to-rule-on-quebecs-secularism-law-experts-say-the-stakes-could-not-be-higher/",
    "2026-11-27T01:50:16+00:00",
-   3
+   2
   ],
   [
    "Thu 8:47 p.m.",
@@ -236,32 +254,9 @@
    "https://www.ctvnews.ca/toronto/local/durham/article/new-details-emerge-on-plane-crash-that-killed-16-year-old-boy-in-lake-scugog/",
    "2026-11-27T01:13:34+00:00",
    2
-  ],
-  [
-   "Thu 8:13 p.m.",
-   "Latest",
-   "Iowa lead detonation results expected soon, EPA says",
-   "CBS News",
-   "https://www.cbsnews.com/news/iowa-lead-detonation-epa-testing-results-soon/",
-   "2026-11-27T01:13:00+00:00",
-   1
-  ],
-  [
-   "Thu 8:12 p.m.",
-   "World",
-   "Deadlocked final result in New Zealand's election leaves a new centrist party the decider",
-   "Toronto Star",
-   "https://www.thestar.com/news/world/australia/final-count-in-new-zealand-s-election-gives-neither-right-nor-left-bloc-enough-seats-for-a-majority/article_5c7fb5a5-b9bc-576d-8cfd-970b4149663e.html",
-   "2026-11-27T01:12:13+00:00",
-   3
   ]
  ],
  "blogs": [
-  {
-   "url": "https://www.thestar.com/news/gta/toronto-election-results-live/article_3ec1c84c-3d92-4440-b764-ac02c6602fb0.html",
-   "updated": "2026-11-26T13:45:20+00:00",
-   "ended": true
-  },
   {
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/27/israel-election-results-live-exit-polls-soon-as-netanyahu-faces-tight-race",
    "updated": "2026-10-28T22:40:53+00:00",
@@ -285,6 +280,14 @@
  ],
  "leads": [
   {
+   "score": 12,
+   "title": "Asian shares mostly rise ahead of Wall Street's reopening after the Thanksgiving holiday",
+   "url": "https://www.thestar.com/news/world/asian-shares-mostly-rise-ahead-of-wall-street-s-reopening-after-the-thanksgiving-holiday/article_8300fd1e-40b3-5f64-b735-f00d8aef6b81.html",
+   "outlets": 10,
+   "why": [],
+   "theme": ""
+  },
+  {
    "score": 11,
    "title": "KDgate for Montreal mayor continues with website mocking Kraft Dinner comments",
    "url": "https://www.cbc.ca/news/canada/montreal/kraft-dinner-mayor-soraya-martinez-ferrada-budget-9.7436967",
@@ -292,22 +295,6 @@
    "why": [
     "CBC News front #2"
    ],
-   "theme": ""
-  },
-  {
-   "score": 11,
-   "title": "Asian shares mostly rise ahead of Wall Street's reopening after the Thanksgiving holiday",
-   "url": "https://www.thestar.com/news/world/asian-shares-mostly-rise-ahead-of-wall-street-s-reopening-after-the-thanksgiving-holiday/article_8300fd1e-40b3-5f64-b735-f00d8aef6b81.html",
-   "outlets": 9,
-   "why": [],
-   "theme": ""
-  },
-  {
-   "score": 10,
-   "title": "What the Trump thumping may mean for Canada",
-   "url": "https://www.hilltimes.com/2026/11/23/what-the-trump-thumping-may-mean-for-canada/526426/",
-   "outlets": 8,
-   "why": [],
    "theme": ""
   },
   {
@@ -324,6 +311,14 @@
    "score": 9,
    "title": "Vet tranquilizer detected amid spike in Regina overdoses, Saskatchewan health officials warn",
    "url": "https://globalnews.ca/news/12168338/vet-tranquilizer-found-regina-overdoses-sask/",
+   "outlets": 7,
+   "why": [],
+   "theme": ""
+  },
+  {
+   "score": 9,
+   "title": "Iran accused of carrying out drone attack killing 2 Italians in Kuwait",
+   "url": "https://www.cbsnews.com/live-updates/iran-war-us-military-ai-weapons-oil/",
    "outlets": 7,
    "why": [],
    "theme": ""
@@ -350,30 +345,41 @@
   },
   {
    "score": 7,
-   "title": "Iran accused of carrying out drone attack killing 2 Italians in Kuwait",
-   "url": "https://www.cbsnews.com/live-updates/iran-war-us-military-ai-weapons-oil/",
+   "title": "Multiple soldiers remain in critical condition as health officials detail CFB Wainwright response",
+   "url": "https://www.ctvnews.ca/canada/article/multiple-soldiers-remain-in-critical-condition-as-health-officials-detail-cfb-wainwright-response/",
    "outlets": 5,
    "why": [],
    "theme": ""
   },
   {
    "score": 7,
-   "title": "Winnipeg rescue squadron honoured for their bravery during CFB Wainwright tragedy",
-   "url": "https://www.ctvnews.ca/winnipeg/article/winnipeg-rescue-squadron-honoured-for-their-bravery-during-cfb-wainwright-tragedy/",
+   "title": "Trump says Putin can come to G20 if he wants",
+   "url": "https://www.ctvnews.ca/world/article/trump-says-putin-can-come-to-g20-if-he-wants/",
    "outlets": 5,
    "why": [],
    "theme": ""
   },
   {
    "score": 7,
-   "title": "Starshield restrictions still hampering Ukraine's drone defenses, Zelensky tells BBC",
-   "url": "https://kyivindependent.com/starshield-restrictions-still-hampering-ukraines-drone-defenses-zelensky-tells-bbc/",
+   "title": "Surrey Mayor Doug McCallum puts hat in ring for Metro Vancouver chair",
+   "url": "https://vancouversun.com/news/surrey-mayor-doug-mccallum-puts-hat-in-ring-for-metro-vancouver-chair",
    "outlets": 5,
    "why": [],
    "theme": ""
   }
  ],
  "canada": [
+  {
+   "t": "Thu 9:48 p.m.",
+   "iso": "2026-11-27T02:48:42+00:00",
+   "region": "Manitoba",
+   "title": "Winnipeg Blue Bombers sign Allen & Janusas to contract extensions",
+   "summary": "The Bombers announced contract extensions for defensive back Cam Allen and receiver Vyshonne Janusas on Thursday.",
+   "outlet": "Global News",
+   "n": 1,
+   "url": "https://globalnews.ca/news/12168167/winnipeg-blue-bombers-sign-allen-janusas-to-contract-extensions/",
+   "img": "https://globalnews.ca/wp-content/uploads/2025/07/37842e5cadd862669ac100c7c6a35abf6052a7f919842c4e8cf46b5d9a763827.jpg?quality=65&strip=all&w=720&h=379&crop=1"
+  },
   {
    "t": "Thu 9:33 p.m.",
    "iso": "2026-11-27T02:33:30.209000+00:00",
@@ -439,17 +445,6 @@
    "n": 2,
    "url": "https://www.cbc.ca/news/canada/saskatchewan/mark-carney-visits-sask-2026-9.7437029",
    "img": "https://i.cbc.ca/ais/83b31b6c-a13d-40fd-b99f-bf4173b60384,1795731741723/full/max/0/default.jpg?im=Crop%2Crect%3D%28370%2C62%2C3794%2C2134%29%3BResize%3D620"
-  },
-  {
-   "t": "Thu 8:05 p.m.",
-   "iso": "2026-11-27T01:05:58+00:00",
-   "region": "Manitoba",
-   "title": "‘Courage to respond’: Kinew honours soldiers who responded to deadly Wainwright blaze",
-   "summary": "Manitoba members of the Canadian Armed Forces were honoured by Premier Wab Kinew for their “unwavering commitment to duty” in response to last month’s deadly wildfire at CFB Wainwright in Alberta.",
-   "outlet": "Winnipeg Free Press",
-   "n": 1,
-   "url": "https://www.winnipegfreepress.com/breakingnews/2026/11/26/courage-to-respond-kinew-honours-soldiers-who-responded-to-deadly-wainwright-blaze",
-   "img": ""
   },
   {
    "t": "Thu 7:42 p.m.",
@@ -584,15 +579,15 @@
      "cfb"
     ],
     "score": 7,
-    "outlets": 4,
+    "outlets": 3,
     "carriers": 5,
-    "tag": "Breaking",
-    "title": "Winnipeg rescue squadron honoured for their bravery during CFB Wainwright tragedy",
-    "url": "https://www.ctvnews.ca/winnipeg/article/winnipeg-rescue-squadron-honoured-for-their-bravery-during-cfb-wainwright-tragedy/",
+    "tag": "Developing",
+    "title": "Multiple soldiers remain in critical condition as health officials detail CFB Wainwright response",
+    "url": "https://www.ctvnews.ca/canada/article/multiple-soldiers-remain-in-critical-condition-as-health-officials-detail-cfb-wainwright-response/",
     "outlet": "CTV News",
-    "t": "Thu 8:41 p.m.",
-    "iso": "2026-11-27T01:41:46+00:00",
-    "summary": "The Manitoba government honoured 16 members of the 435 Transport and Rescue Squadron out of 17 Wing at CFB Winnipeg Thursday for their bravery during the deadly fire at CFB Wainwright.",
+    "t": "Thu 9:41 p.m.",
+    "iso": "2026-11-27T02:41:48+00:00",
+    "summary": "Health officials say 19 soldiers injured from the CFB Wainwright fire remain in Alberta hospitals and seven of them in critical condition, as of Tuesday.",
     "first": {
      "outlet": "CP24",
      "url": "https://www.cp24.com/news/canada/2026/11/26/officials-to-discuss-how-albertas-health-system-handled-cfb-wainwright-fire-response/",
@@ -600,7 +595,7 @@
      "title": "‘Our system held under pressure’: Alberta health officials commend workers who responded to CFB Wainwright fire",
      "iso": "2026-11-26T20:53:17+00:00"
     },
-    "newest": "2026-11-27T01:41:46+00:00",
+    "newest": "2026-11-27T02:41:48+00:00",
     "photo": {
      "src": "live/img/auto-15786394-3c864c736e.jpg",
      "orig": "https://www.ctvnews.ca/resizer/v2/IFJZSF2O7BHNLAXF2GZKOS5DNE.jpeg?smart=true&auth=c42ebe04ea1183af659ee10cd42a6e8588e7d881c84f1455020679955988c3d8&width=1200&height=630",
@@ -621,17 +616,33 @@
       "alt": "Master Warrant Officer Matthew Zukowski receives a Circle of Honour Award from Premier Wab Kinew after parachuting into CFB Wainwright in October during a deadl",
       "outlet": "CTV News",
       "url": "https://www.ctvnews.ca/winnipeg/article/winnipeg-rescue-squadron-honoured-for-their-bravery-during-cfb-wainwright-tragedy/"
+     },
+     {
+      "src": "live/img/auto-15786394-9bd48e175d.jpg",
+      "orig": "https://globalnews.ca/wp-content/uploads/2026/11/New-Waterford-Consolidated-hospital-design-credit-build-NS-1-e1795719166370.png?w=712&h=379&crop=1",
+      "caption": "A rendering of the planned New Waterford health centre. — via Global News",
+      "alt": "A rendering of the planned New Waterford health centre.",
+      "outlet": "Global News",
+      "url": "https://globalnews.ca/news/12167575/new-waterford-health-care-centre-stalled-fees/"
      }
     ],
-    "independent": 4,
+    "independent": 3,
     "reports": [
      {
-      "t": "Thu 8:41 p.m.",
-      "iso": "2026-11-27T01:41:46+00:00",
+      "t": "Thu 9:41 p.m.",
+      "iso": "2026-11-27T02:41:48+00:00",
       "outlet": "CTV News",
-      "title": "Winnipeg rescue squadron honoured for their bravery during CFB Wainwright tragedy",
-      "url": "https://www.ctvnews.ca/winnipeg/article/winnipeg-rescue-squadron-honoured-for-their-bravery-during-cfb-wainwright-tragedy/",
-      "desc": "The Manitoba government honoured 16 members of the 435 Transport and Rescue Squadron out of 17 Wing at CFB Winnipeg Thursday for their bravery during the deadly fire at CFB Wainwright."
+      "title": "Multiple soldiers remain in critical condition as health officials detail CFB Wainwright response",
+      "url": "https://www.ctvnews.ca/canada/article/multiple-soldiers-remain-in-critical-condition-as-health-officials-detail-cfb-wainwright-response/",
+      "desc": "Health officials say 19 soldiers injured from the CFB Wainwright fire remain in Alberta hospitals and seven of them in critical condition, as of Tuesday."
+     },
+     {
+      "t": "Thu 9:41 p.m.",
+      "iso": "2026-11-27T02:41:48+00:00",
+      "outlet": "CP24",
+      "title": "Multiple soldiers remain in critical condition as health officials detail CFB Wainwright response",
+      "url": "https://www.cp24.com/news/canada/2026/11/27/multiple-soldiers-remain-in-critical-condition-as-health-officials-detail-cfb-wainwright-response/",
+      "desc": ""
      },
      {
       "t": "Thu 8:15 p.m.",
@@ -656,33 +667,35 @@
       "title": "A system tried by fire: Teamwork shone in tragedy after CFB Wainwright fire",
       "url": "https://edmontonjournal.com/health/health-cfb-wainwright-fire-teamwork",
       "desc": ""
-     },
-     {
-      "t": "Thu 3:53 p.m.",
-      "iso": "2026-11-26T20:53:17+00:00",
-      "outlet": "CP24",
-      "title": "‘Our system held under pressure’: Alberta health officials commend workers who responded to CFB Wainwright fire",
-      "url": "https://www.cp24.com/news/canada/2026/11/26/officials-to-discuss-how-albertas-health-system-handled-cfb-wainwright-fire-response/",
-      "desc": "Alberta’s health workers who responded to the deadly fire at CFB Wainwright and continue to help its survivors have been formally recognized for their expedient and life-saving efforts."
      }
     ],
     "sources": [
      {
-      "t": "Thu 8:41 p.m.",
+      "t": "Thu 9:41 p.m.",
       "primary": false,
       "outlet": "CTV News",
-      "title": "Winnipeg rescue squadron honoured for their bravery during CFB Wainwright tragedy",
-      "url": "https://www.ctvnews.ca/winnipeg/article/winnipeg-rescue-squadron-honoured-for-their-bravery-during-cfb-wainwright-tragedy/",
-      "desc": "The Manitoba government honoured 16 members of the 435 Transport and Rescue Squadron out of 17 Wing at CFB Winnipeg Thursday for their bravery during the deadly fire at CFB Wainwright.",
+      "title": "Multiple soldiers remain in critical condition as health officials detail CFB Wainwright response",
+      "url": "https://www.ctvnews.ca/canada/article/multiple-soldiers-remain-in-critical-condition-as-health-officials-detail-cfb-wainwright-response/",
+      "desc": "Health officials say 19 soldiers injured from the CFB Wainwright fire remain in Alberta hospitals and seven of them in critical condition, as of Tuesday.",
       "wire": "The Canadian Press",
       "by": [
        {
         "outlet": "CTV News",
         "src": "The Canadian Press",
         "byline": "homson\" \"Megan Yamoah\" \"Adam Sawatsky\" \"The Canadian Press\" \"Angela Gemmill\" \""
+       },
+       {
+        "outlet": "CP24",
+        "src": "The Canadian Press",
+        "byline": "[ { \"@type\": \"Person\", \"name\": \"Kathy Le\", } ] \"Kathy Le\" \"John Ulan\" \"Kathy Le\" \"John Ulan\" \"\" \"\" \"\" \"\" \"\" \"\" \"\" \"media"
        }
       ],
-      "copies": []
+      "copies": [
+       {
+        "outlet": "CP24",
+        "url": "https://www.cp24.com/news/canada/2026/11/27/multiple-soldiers-remain-in-critical-condition-as-health-officials-detail-cfb-wainwright-response/"
+       }
+      ]
      },
      {
       "t": "Thu 6:38 p.m.",
@@ -723,24 +736,7 @@
        {
         "outlet": "The Canadian Press (via Winnipeg Free Press)",
         "src": "CP",
-        "byline": ""
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Thu 3:53 p.m.",
-      "primary": false,
-      "outlet": "CP24",
-      "title": "‘Our system held under pressure’: Alberta health officials commend workers who responded to CFB Wainwright fire",
-      "url": "https://www.cp24.com/news/canada/2026/11/26/officials-to-discuss-how-albertas-health-system-handled-cfb-wainwright-fire-response/",
-      "desc": "Alberta’s health workers who responded to the deadly fire at CFB Wainwright and continue to help its survivors have been formally recognized for their expedient and life-saving efforts.",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "CP24",
-        "src": "Bell",
-        "byline": "[ { \"@type\": \"Person\", \"name\": \"Alex Antoneshyn\", } ] \"Alex Antoneshyn\" \"John Ulan\" \"\" \"\" \"\" \"John Ulan\" \"John Ulan\" \"Jo"
+        "byline": "{ \"@type\": \"Person\", \"name\": \"Morgan Modjeski\" } [{\"@type\":\"Person\",\"name\":\"mmodjeski\"}] [\"mmodjeski\"] \"Morgan Modjeski\""
        }
       ],
       "copies": []
@@ -754,14 +750,15 @@
     "incoherent": false,
     "popular": 5,
     "us_election": false,
-    "fronts": 1,
-    "fronts_ca": 1,
+    "fronts": 2,
+    "fronts_ca": 2,
     "fronts_who": [
+     "CTV News",
      "Global News"
     ],
     "judgment": "national",
-    "judgment_why": "National: affects many people; carried beyond one city.",
-    "weight": 40.5,
+    "judgment_why": "National: affects many people; carried across the country (national desks).",
+    "weight": 39.5,
     "videos": [
      {
       "net": "CBC News",
@@ -780,18 +777,18 @@
       "up": ""
      },
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=23Z4WZfo2wc",
-      "title": "Alberta nurse who treated CFB Wainwright victims may lose job over a photo with Poilievre",
-      "img": "https://i.ytimg.com/vi/23Z4WZfo2wc/hqdefault.jpg",
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=GCRFKzo46WE",
+      "title": "Soldiers injured in CFB Wainwright fire still face 'long and challenging' recovery: doctors",
+      "img": "https://i.ytimg.com/vi/GCRFKzo46WE/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "CityNews",
-      "url": "https://www.youtube.com/watch?v=Id2yIzVGMiA",
-      "title": "CFB Wainwright fire a 'stress test' for Alberta's healthcare system",
-      "img": "https://i.ytimg.com/vi/Id2yIzVGMiA/hqdefault.jpg",
+      "net": "Global News",
+      "url": "https://www.youtube.com/watch?v=23Z4WZfo2wc",
+      "title": "Alberta nurse who treated CFB Wainwright victims may lose job over a photo with Poilievre",
+      "img": "https://i.ytimg.com/vi/23Z4WZfo2wc/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -994,7 +991,7 @@
      {
       "net": "Global News",
       "url": "https://www.youtube.com/watch?v=L0BfwGqrmqM",
-      "title": "Montreal mayor’s Kraft Dinner remark draws criticism as city proposes 9.8% property tax hike",
+      "title": "Montreal mayor draws backlash over Kraft Dinner and filet mignon budget analogy",
       "img": "https://i.ytimg.com/vi/L0BfwGqrmqM/hqdefault.jpg",
       "rec": false,
       "up": ""
@@ -1014,7 +1011,7 @@
     "words": [
      "putin"
     ],
-    "score": 10,
+    "score": 7,
     "outlets": 4,
     "carriers": 5,
     "tag": "Breaking",
@@ -1204,33 +1201,34 @@
     "fronts": 0,
     "fronts_ca": 0,
     "fronts_who": [],
-    "outled_ca": 1,
+    "outled_ca": 2,
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (national desks).",
-    "weight": 30.5
+    "weight": 27.5
    }
   ],
   "considered": [
    {
-    "title": "Winnipeg rescue squadron honoured for their bravery during CFB Wainwright tragedy",
-    "url": "https://www.ctvnews.ca/winnipeg/article/winnipeg-rescue-squadron-honoured-for-their-bravery-during-cfb-wainwright-tragedy/",
+    "title": "Multiple soldiers remain in critical condition as health officials detail CFB Wainwright response",
+    "url": "https://www.ctvnews.ca/canada/article/multiple-soldiers-remain-in-critical-condition-as-health-officials-detail-cfb-wainwright-response/",
     "rank": 1,
     "live": "",
-    "weight": 40.5,
+    "weight": 39.5,
     "score": 7,
-    "independent": 4,
+    "independent": 3,
     "most_read": 5,
     "canada": "canadian",
     "theme": "",
     "top": true,
-    "fronts": 1,
+    "fronts": 2,
     "fronts_who": [
+     "CTV News",
      "Global News"
     ],
-    "rule": "Canadian and breaking",
+    "rule": "Canadian, still developing",
     "carriers": 5,
     "judgment": "national",
-    "why_judged": "National: affects many people; carried beyond one city."
+    "why_judged": "National: affects many people; carried across the country (national desks)."
    },
    {
     "title": "Kraft Dinner protest targets Montreal mayor over historic property tax hike",
@@ -1256,8 +1254,8 @@
     "url": "https://www.ctvnews.ca/world/article/trump-says-putin-can-come-to-g20-if-he-wants/",
     "rank": 3,
     "live": "",
-    "weight": 30.5,
-    "score": 10,
+    "weight": 27.5,
+    "score": 7,
     "independent": 4,
     "most_read": 0,
     "canada": "none",
@@ -1294,9 +1292,9 @@
     "url": "https://www.cbsnews.com/live-updates/iran-war-us-military-ai-weapons-oil/",
     "rank": 5,
     "live": "",
-    "weight": 27.0,
-    "score": 7,
-    "independent": 4,
+    "weight": 30.5,
+    "score": 9,
+    "independent": 5,
     "most_read": 0,
     "canada": "none",
     "theme": "",
@@ -1306,13 +1304,13 @@
      "CBS News"
     ],
     "rule": "No Canadian tie",
-    "carriers": 4,
+    "carriers": 5,
     "judgment": "national",
     "why_judged": "National: affects many people; carried by a few newsrooms."
    },
    {
     "title": "Asian shares mostly rise ahead of Wall Street's reopening after the Thanksgiving holiday",
-    "score": 11,
+    "score": 12,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
@@ -1336,6 +1334,16 @@
     "why": "not built: only 2 independent report(s) (2 sites)"
    },
    {
+    "title": "Surrey Mayor Doug McCallum puts hat in ring for Metro Vancouver chair",
+    "score": 7,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "‘I just existed as a Jewish and Israeli student’: Antisemitism unchecked on campuses, report finds",
+    "score": 7,
+    "why": "not built: only 2 independent report(s) (3 sites)"
+   },
+   {
     "title": "Starshield restrictions still hampering Ukraine's drone defenses, Zelensky tells BBC",
     "score": 7,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
@@ -1354,16 +1362,6 @@
     "title": "BC Transit and Unifor reach tentative deal, one-day Victoria strike called off",
     "score": 6,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Defence minister 'very concerned' after Poilievre claims constituent's job was threatened",
-    "score": 6,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Politics and priorities: Liberals lead in federal ballot support, while jobs/the economy Canadians' concerns.",
-    "score": 5,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
   ],
   "moved": [],
@@ -1372,11 +1370,11 @@
    {
     "key": "auto-c02c89af",
     "words": [
-     "tentative",
-     "one-day",
      "transit",
-     "strike",
+     "one-day",
      "unifor",
+     "called",
+     "strike",
      "bc"
     ],
     "score": 7,
@@ -1404,11 +1402,10 @@
      "alt": "BC Transit and Unifor reach tentative deal, one-day Victoria strike called off",
      "outlet": "Narcity",
      "url": "https://www.narcity.com/victoria-transit-strike-called-off-after-deal",
-     "since": "2026-11-27T02:26:54.761997+00:00"
+     "since": "2026-11-27T02:52:44.294100+00:00"
     },
     "photo_seen": [
-     "https://www.cp24.com/resizer/v2/SL22OZJ6LLYQJ543Q4WMHMYAEA.jpg?smart=true&auth=5339a9e23459d14fd563baca0648722f3dacc83d015cd8227f9146339206bbd5&width=1200&height=630",
-     "https://i.cbc.ca/ais/9cd858c2-daa4-4d01-ba37-9f2f9c23ae79,1795736959987/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1920%2C1080%29%3B"
+     "https://www.narcity.com/media-library/victoria-transit-strike-called-off-after-deal.jpg?id=68783508&width=1200&height=600&coordinates=0%2C116%2C0%2C117"
     ],
     "photos": [
      {
@@ -1629,16 +1626,8 @@
      {
       "net": "Global News",
       "url": "https://www.youtube.com/watch?v=fsXdYxxFTzE",
-      "title": "Liberals tout Honda, Ford Ontario deals as Conservatives criticize handling of Stellantis plant",
+      "title": "“Get rid of this job-killing tax”: Poilievre blames carbon tax for Stellantis Brampton plant closing",
       "img": "https://i.ytimg.com/vi/fsXdYxxFTzE/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "CTV News",
-      "url": "https://www.youtube.com/watch?v=RuFsk44--pk",
-      "title": "Northlander tickets on sale; Unifor talks at an impasse",
-      "img": "https://i.ytimg.com/vi/RuFsk44--pk/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1696,20 +1685,6 @@
    "geo": "unknown"
   },
   {
-   "id": "f2pDEJIbcQo",
-   "r": "ca",
-   "o": "CityNews",
-   "t": "Storm surge, king tides cause evacuations, property damage",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=f2pDEJIbcQo",
-   "img": "https://i.ytimg.com/vi/f2pDEJIbcQo/hqdefault.jpg",
-   "up": "2026-11-26",
-   "added": "2026-11-27T00:34:07.443318+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "Ir1ecwaifnE",
    "r": "ca",
    "o": "CBC News",
@@ -1727,7 +1702,7 @@
    "id": "Cgx8qsWhczk",
    "r": "ca",
    "o": "Global News",
-   "t": "NDP to challenge new Alberta riding maps as they pass in legislature",
+   "t": "NDP had “no other choice” but to challenge Alberta boundaries map in court",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=Cgx8qsWhczk",
@@ -1741,7 +1716,7 @@
    "id": "JggJEwR-Wsg",
    "r": "ca",
    "o": "Global News",
-   "t": "How the international student program provided path for alleged members of India’s Bishnoi gang",
+   "t": "Canada cracks down on extortion gangs amid student visa revelations",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=JggJEwR-Wsg",
@@ -1811,25 +1786,11 @@
    "id": "w7V_WsuXPr4",
    "r": "ca",
    "o": "CTV News",
-   "t": "Sudbury Festive Ride checks run until New Year's Day",
+   "t": "Sudbury police launch holiday impaired driving campaign",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=w7V_WsuXPr4",
    "img": "https://i.ytimg.com/vi/w7V_WsuXPr4/hqdefault.jpg",
-   "up": "2026-11-26",
-   "added": "2026-11-27T02:40:27.581201+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
-   "id": "r7WfIKwuzRQ",
-   "r": "ca",
-   "o": "CTV News",
-   "t": "Serial sexual assault suspect wanted for multiple assaults 20 years ago arrested by Montreal police",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=r7WfIKwuzRQ",
-   "img": "https://i.ytimg.com/vi/r7WfIKwuzRQ/hqdefault.jpg",
    "up": "2026-11-26",
    "added": "2026-11-27T02:40:27.581201+00:00",
    "pic": "globe",
@@ -1846,6 +1807,34 @@
    "img": "https://i.ytimg.com/vi/fIgoTK3b4gA/hqdefault.jpg",
    "up": "2026-11-26",
    "added": "2026-11-27T02:40:27.581201+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "F0ywFsLS7n4",
+   "r": "ca",
+   "o": "CTV News",
+   "t": "Bill 19 on nurse-to-patient ratios defeated at Queen's Park",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=F0ywFsLS7n4",
+   "img": "https://i.ytimg.com/vi/F0ywFsLS7n4/hqdefault.jpg",
+   "up": "2026-11-26",
+   "added": "2026-11-27T02:50:28.022909+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "YjAXZc9c6RE",
+   "r": "ca",
+   "o": "CityNews",
+   "t": "Montreal campaign shines a light on invisible violence against women",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=YjAXZc9c6RE",
+   "img": "https://i.ytimg.com/vi/YjAXZc9c6RE/hqdefault.jpg",
+   "up": "2026-11-26",
+   "added": "2026-11-27T02:50:28.022909+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -2046,20 +2035,6 @@
    "geo": "unknown"
   },
   {
-   "id": "c8HLu4WeRDw",
-   "r": "us",
-   "o": "ABC News",
-   "t": "States of emergency as Thanksgiving storm batters the East Coast",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=c8HLu4WeRDw",
-   "img": "https://i.ytimg.com/vi/c8HLu4WeRDw/hqdefault.jpg",
-   "up": "2026-11-26",
-   "added": "2026-11-27T02:15:17.046329+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "DRy8zoGtUIE",
    "r": "us",
    "o": "C-SPAN",
@@ -2130,10 +2105,24 @@
    "geo": "unknown"
   },
   {
+   "id": "FAYjE1rH4Cs",
+   "r": "us",
+   "o": "ABC News",
+   "t": "Report: Nvidia to suspend sales to four counties in Southeast Asia",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=FAYjE1rH4Cs",
+   "img": "https://i.ytimg.com/vi/FAYjE1rH4Cs/hqdefault.jpg",
+   "up": "2026-11-26",
+   "added": "2026-11-27T02:50:28.022909+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
    "id": "p7KZs5dQGPk",
    "r": "world",
    "o": "Sky News",
-   "t": "Man guilty of 14 attempted murders over stabbing rampage across London, Peterborough and LNER train",
+   "t": "Huntingdon train attacker found guilty of all 14 counts of attempted murder",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=p7KZs5dQGPk",
@@ -2147,7 +2136,7 @@
    "id": "62W3X0hNoMU",
    "r": "world",
    "o": "Sky News",
-   "t": "UK net migration reaches 20-year low - what happens now?",
+   "t": "Why was UK migration so high and why is it falling so fast?",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=62W3X0hNoMU",
@@ -2256,16 +2245,16 @@
    "geo": "unknown"
   },
   {
-   "id": "MpEcr0JLRTU",
+   "id": "h7obQwQWOds",
    "r": "world",
    "o": "BBC News",
-   "t": "Kuwait drone strike kills two Italian nationals | BBC News",
+   "t": "Zelensky questions 'strange' Trump-Putin friendship | BBC News",
    "rec": false,
    "d": "",
-   "u": "https://www.youtube.com/watch?v=MpEcr0JLRTU",
-   "img": "https://i.ytimg.com/vi/MpEcr0JLRTU/hqdefault.jpg",
+   "u": "https://www.youtube.com/watch?v=h7obQwQWOds",
+   "img": "https://i.ytimg.com/vi/h7obQwQWOds/hqdefault.jpg",
    "up": "2026-11-26",
-   "added": "2026-11-27T01:45:17.369268+00:00",
+   "added": "2026-11-27T02:50:28.022909+00:00",
    "pic": "globe",
    "geo": "unknown"
   }
@@ -2658,9 +2647,9 @@
   "lines": [
    "Good evening. I’m Hannah Thibedeau, and this is your Palindrome News brief.",
    "Protesters gathered in front of City Hall Thursday afternoon to protest comments made by Montreal Mayor Soraya Martinez Ferrada, The Canadian Press reports.",
-   "The Manitoba government honoured 16 members of the 435 Transport and Rescue Squadron out of 17 Wing at CFB Winnipeg Thursday for their bravery during the deadly fire at CFB Wainwright, The Canadian Press reports.",
-   "Trump says Putin can come to G20 if he wants, The Canadian Press reports.",
+   "Health officials say 19 soldiers injured from the CFB Wainwright fire remain in Alberta hospitals and seven of them in critical condition, as of Tuesday, The Canadian Press reports.",
    "Iran accused of carrying out drone attack killing 2 Italians in Kuwait, CBS News reports.",
+   "Trump says Putin can come to G20 if he wants, The Canadian Press reports.",
    "That’s your brief. We’ll keep watching, so you don’t have to."
   ]
  },
@@ -3032,25 +3021,25 @@
    "city": "Vancouver",
    "tz": "America/Vancouver",
    "world": false,
-   "w": "Labour",
-   "label": "BC Transit and Unifor reach tentative deal",
-   "u": "https://www.narcity.com/victoria-transit-strike-called-off-after-deal",
-   "title": "BC Transit and Unifor reach tentative deal, one-day Victoria strike called off",
-   "outlet": "Narcity",
-   "t": "Thu 9:18 p.m.",
+   "w": "City hall",
+   "label": "Surrey Mayor Doug McCallum puts hat in ring for Metro…",
+   "u": "https://vancouversun.com/news/surrey-mayor-doug-mccallum-puts-hat-in-ring-for-metro-vancouver-chair",
+   "title": "Surrey Mayor Doug McCallum puts hat in ring for Metro Vancouver chair",
+   "outlet": "Vancouver Sun",
+   "t": "Thu 9:00 p.m.",
    "hot": true
   },
   {
    "city": "Washington",
    "tz": "America/New_York",
    "world": false,
-   "w": "Attacks",
-   "label": "Trump says Putin can come to G20 if he wants",
-   "u": "https://www.ctvnews.ca/world/article/trump-says-putin-can-come-to-g20-if-he-wants/",
-   "title": "Trump says Putin can come to G20 if he wants",
+   "w": "In court",
+   "label": "Supreme Court to rule on Quebec’s secularism law. Experts…",
+   "u": "https://www.ctvnews.ca/montreal/article/supreme-court-to-rule-on-quebecs-secularism-law-experts-say-the-stakes-could-not-be-higher/",
+   "title": "Supreme Court to rule on Quebec’s secularism law. Experts say the stakes could not be higher",
    "outlet": "CTV News",
-   "t": "Thu 9:27 p.m.",
-   "hot": true
+   "t": "Thu 8:50 p.m.",
+   "hot": false
   },
   {
    "city": "Tehran",
@@ -3065,16 +3054,28 @@
    "hot": true
   },
   {
-   "city": "Kyiv",
-   "tz": "Europe/Kyiv",
+   "city": "Moscow",
+   "tz": "Europe/Moscow",
    "world": true,
-   "w": "Drone strikes",
-   "label": "Starshield restrictions still hampering Ukraine's drone…",
-   "u": "https://kyivindependent.com/starshield-restrictions-still-hampering-ukraines-drone-defenses-zelensky-tells-bbc/",
-   "title": "Starshield restrictions still hampering Ukraine's drone defenses, Zelensky tells BBC",
-   "outlet": "Kyiv Independent",
-   "t": "Thu 8:17 p.m.",
-   "hot": false
+   "w": "Attacks",
+   "label": "Trump says Putin can come to G20 if he wants",
+   "u": "https://www.ctvnews.ca/world/article/trump-says-putin-can-come-to-g20-if-he-wants/",
+   "title": "Trump says Putin can come to G20 if he wants",
+   "outlet": "CTV News",
+   "t": "Thu 9:27 p.m.",
+   "hot": true
+  },
+  {
+   "city": "Jerusalem",
+   "tz": "Asia/Jerusalem",
+   "world": true,
+   "w": "Attacks",
+   "label": "‘I just existed as a Jewish and Israeli student’",
+   "u": "https://www.ctvnews.ca/canada/article/i-just-existed-as-a-jewish-and-israeli-student-antisemitism-unchecked-on-campuses-report-finds/",
+   "title": "‘I just existed as a Jewish and Israeli student’: Antisemitism unchecked on campuses, report finds",
+   "outlet": "CTV News",
+   "t": "Thu 8:52 p.m.",
+   "hot": true
   }
  ],
  "bigweek": [],
@@ -3082,14 +3083,14 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Thu 9:27 p.m.",
-   "iso": "2026-11-27T02:27:01+00:00",
-   "title": "Trump says Putin can come to G20 if he wants",
-   "summary": "U.S. President Donald Trump told reporters on Thursday he did not know if Russian President Vladimir Putin would attend next month’s G20 meeting in Florida, but if it were up to him and he wanted to come, he could.",
-   "outlet": "CTV News + CP24 (CP), Fox News, Al Jazeera, The Japan Times (AFP), Kyiv Independent, PBS NewsHour (AP)",
-   "n": 6,
-   "url": "https://www.ctvnews.ca/world/article/trump-says-putin-can-come-to-g20-if-he-wants/",
-   "img": "https://www.ctvnews.ca/resizer/v2/YDPC7PUAZRPVUQQWDP2NHKXFRM.jpg?smart=true&auth=fd4384f2af9e018333227dcc69ca643db3f0139dd882d08ce1fb90f1383e2d69&width=1200&height=630"
+   "t": "Thu 9:29 p.m.",
+   "iso": "2026-11-27T02:29:01+00:00",
+   "title": "Iran accused of carrying out drone attack killing 2 Italians in Kuwait",
+   "summary": "Iran denies being behind a deadly attack on a Kuwaiti military facility that killed two Italian nationals.",
+   "outlet": "CBS News, Middle East Eye, Fox News, Al Jazeera, Kyiv Independent, PBS NewsHour (AP), BBC News",
+   "n": 7,
+   "url": "https://www.cbsnews.com/live-updates/iran-war-us-military-ai-weapons-oil/",
+   "img": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/26/9d94126a-cf9a-44ed-9f77-30461774944e/thumbnail/1200x630g2/2cd022452cd8713f2d0b6637141738bf/2026-11-20t110959z-393580283-rc2kroah1egc-rtrmadp-3-iran-crisis.jpg"
   },
   {
    "desk": "politics",
@@ -3104,28 +3105,40 @@
    "img": "https://globalnews.ca/wp-content/uploads/2026/11/GettyImages-1258771727.jpg?quality=65&strip=all&w=720&h=379&crop=1"
   },
   {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Thu 9:29 p.m.",
-   "iso": "2026-11-27T02:29:01+00:00",
-   "title": "Iran accused of carrying out drone attack killing 2 Italians in Kuwait",
-   "summary": "Iran denies being behind a deadly attack on a Kuwaiti military facility that killed two Italian nationals.",
-   "outlet": "CBS News, Al Jazeera, Fox News, PBS NewsHour (AP), BBC News",
-   "n": 5,
-   "url": "https://www.cbsnews.com/live-updates/iran-war-us-military-ai-weapons-oil/",
-   "img": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/26/9d94126a-cf9a-44ed-9f77-30461774944e/thumbnail/1200x630g2/2cd022452cd8713f2d0b6637141738bf/2026-11-20t110959z-393580283-rc2kroah1egc-rtrmadp-3-iran-crisis.jpg"
-  },
-  {
    "desk": "business",
    "pic": "chart",
    "t": "Thu 9:22 p.m.",
    "iso": "2026-11-27T02:22:23+00:00",
    "title": "Asian shares mostly rise ahead of Wall Street's reopening after the Thanksgiving holiday",
    "summary": "TOKYO (AP) — Asian shares were mostly higher in early Friday trading, following a market holiday on Wall Street for Thanksgiving.",
-   "outlet": "Toronto Star + CTV News + CP24 + The Canadian Press (via Winnipeg Free Press), BBC News, PBS NewsHour, The Hill",
-   "n": 4,
+   "outlet": "Toronto Star + CTV News + CP24 + The Canadian Press (via Winnipeg Free Press), BBC News, PBS NewsHour, The Hill, Middle East Eye",
+   "n": 5,
    "url": "https://www.thestar.com/news/world/asian-shares-mostly-rise-ahead-of-wall-street-s-reopening-after-the-thanksgiving-holiday/article_8300fd1e-40b3-5f64-b735-f00d8aef6b81.html",
    "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/f/84/f840747d-823e-58af-b875-a0eec2524c18/6b07c3daf25f0.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
+  },
+  {
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Thu 9:41 p.m.",
+   "iso": "2026-11-27T02:41:48+00:00",
+   "title": "Multiple soldiers remain in critical condition as health officials detail CFB Wainwright response",
+   "summary": "Health officials say 19 soldiers injured from the CFB Wainwright fire remain in Alberta hospitals and seven of them in critical condition, as of Tuesday.",
+   "outlet": "CTV News + CP24 (CP), Edmonton Journal + Toronto Sun, The Canadian Press (via Winnipeg Free Press)",
+   "n": 3,
+   "url": "https://www.ctvnews.ca/canada/article/multiple-soldiers-remain-in-critical-condition-as-health-officials-detail-cfb-wainwright-response/",
+   "img": "https://www.ctvnews.ca/resizer/v2/SN7YBHXTWNH6JMRBMDY6E4LVN4.JPG?smart=true&auth=447cb2460663022e988d20c679983c4958dcef2366b4ff658ef3fb09fdae6b64&width=1200&height=630"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Thu 9:27 p.m.",
+   "iso": "2026-11-27T02:27:01+00:00",
+   "title": "Trump says Putin can come to G20 if he wants",
+   "summary": "U.S. President Donald Trump told reporters on Thursday he did not know if Russian President Vladimir Putin would attend next month’s G20 meeting in Florida, but if it were up to him and he wanted to come, he could.",
+   "outlet": "CTV News + CP24 (CP), Al Jazeera, The Japan Times (AFP)",
+   "n": 3,
+   "url": "https://www.ctvnews.ca/world/article/trump-says-putin-can-come-to-g20-if-he-wants/",
+   "img": "https://www.ctvnews.ca/resizer/v2/YDPC7PUAZRPVUQQWDP2NHKXFRM.jpg?smart=true&auth=fd4384f2af9e018333227dcc69ca643db3f0139dd882d08ce1fb90f1383e2d69&width=1200&height=630"
   },
   {
    "desk": "politics",
@@ -3140,16 +3153,16 @@
    "img": "https://edmonton.citynews.ca/wp-content/blogs.dir/sites/15/School-bus-fire-2-e1795745837850.jpeg"
   },
   {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Thu 8:41 p.m.",
-   "iso": "2026-11-27T01:41:46+00:00",
-   "title": "Winnipeg rescue squadron honoured for their bravery during CFB Wainwright tragedy",
-   "summary": "The Manitoba government honoured 16 members of the 435 Transport and Rescue Squadron out of 17 Wing at CFB Winnipeg Thursday for their bravery during the deadly fire at CFB Wainwright.",
-   "outlet": "CTV News + CP24 (CP), Edmonton Journal + Toronto Sun, The Canadian Press (via Winnipeg Free Press)",
+   "desk": "world",
+   "pic": "globe",
+   "t": "Thu 8:52 p.m.",
+   "iso": "2026-11-27T01:52:36+00:00",
+   "title": "‘I just existed as a Jewish and Israeli student’: Antisemitism unchecked on campuses, report finds",
+   "summary": "The report surveyed students who do not identify as Jewish about how aware they are of antisemitism, on campus and online, and how they see it.",
+   "outlet": "CTV News + Global News + CP24 (CP), Middle East Eye, Al Jazeera",
    "n": 3,
-   "url": "https://www.ctvnews.ca/winnipeg/article/winnipeg-rescue-squadron-honoured-for-their-bravery-during-cfb-wainwright-tragedy/",
-   "img": "https://www.ctvnews.ca/resizer/v2/IFJZSF2O7BHNLAXF2GZKOS5DNE.jpeg?smart=true&auth=c42ebe04ea1183af659ee10cd42a6e8588e7d881c84f1455020679955988c3d8&width=1200&height=630"
+   "url": "https://www.ctvnews.ca/canada/article/i-just-existed-as-a-jewish-and-israeli-student-antisemitism-unchecked-on-campuses-report-finds/",
+   "img": "https://www.ctvnews.ca/resizer/v2/2MZRK2INGJ2OOC36G5CIMAUFPE.jpg?smart=true&auth=aeb217168a459a62478997d15d5c9e7dd00a2ed37304c98e55fb148ad2f3f855&width=1200&height=630"
   },
   {
    "desk": "politics",
@@ -3166,6 +3179,18 @@
   {
    "desk": "world",
    "pic": "globe",
+   "t": "Thu 9:40 p.m.",
+   "iso": "2026-11-27T02:40:44+00:00",
+   "title": "Trump adds Ukraine to warning against expanding war, diverging from joint NATO statement",
+   "summary": "A NATO official speaking on condition of anonymity told Politico that both sides had agreed to the original statement, indicating that Trump had subsequently changed the wording unilaterally.",
+   "outlet": "Kyiv Independent, CP24 + BNN Bloomberg",
+   "n": 2,
+   "url": "https://kyivindependent.com/trump-adds-ukraine-to-warning-against-expanding-war-diverging-from-joint-nato-statement/",
+   "img": "https://assets.kyivindependent.com/content/images/2026/11/20261125_trip-sg-us_0027_20261127-023721.jpg"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
    "t": "Thu 9:25 p.m.",
    "iso": "2026-11-27T02:25:20+00:00",
    "title": "Deadlocked final result in New Zealand's election leaves a new centrist party the decider",
@@ -3176,16 +3201,16 @@
    "img": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/b9cd99256882b645c565b87836b3b1729a97cf6956334ff412a1e3881c139c8f.jpg;w=1200;h=800;mode=crop"
   },
   {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Thu 9:11 p.m.",
-   "iso": "2026-11-27T02:11:00+00:00",
-   "title": "Powerful Thanksgiving Day storm causes flooding, power outages",
-   "summary": "The storm hammered sections of the East Coast with torrential rain, high winds and flooding, knocking out power to hundreds of thousands of customers.",
-   "outlet": "CBS News (Reuters), ABC News",
+   "desk": "us",
+   "pic": "podium",
+   "t": "Thu 8:08 p.m.",
+   "iso": "2026-11-27T01:08:54+00:00",
+   "title": "Unforgiving rim denies Arkansas a miracle comeback against Michigan State on Thanksgiving",
+   "summary": "No. 11 Michigan State escaped with a 70-67 Thanksgiving win after Jordan Smith Jr.’s potential tying three rattled out in the final seconds.",
+   "outlet": "Fox News, Middle East Eye",
    "n": 2,
-   "url": "https://www.cbsnews.com/news/thanksgiving-day-storm-northeast-midwest-flooding-power-outages/",
-   "img": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/26/f85f3d06-275b-4c46-b8cd-a114f49aee37/thumbnail/1200x630/97c5d4c6ecfecc86540bd2159f622b69/ap26330556979279.jpg"
+   "url": "https://www.foxnews.com/outkick-sports/unforgiving-rim-denies-arkansas-miracle-comeback-michigan-state-thanksgiving",
+   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/jeremy-fears-jr-celebrates-michigan-state-fox-news_.jpg"
   },
   {
    "desk": "politics",
@@ -3236,6 +3261,30 @@
    "img": "https://www.cp24.com/resizer/v2/7FPVGWMCIVAOUH7GUUVQQOUJYA.jpg?smart=true&auth=246663abb352d1b960572bb0f5fcb115fa45b567a856bf29b4e1decb6d4d80a1&width=1200&height=630"
   },
   {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Thu 9:46 p.m.",
+   "iso": "2026-11-27T02:46:14.638000+00:00",
+   "title": "Strobe Talbott, former Time magazine reporter and deputy secretary of state, has died",
+   "summary": "Strobe Talbott, a former Time magazine reporter who later served as deputy secretary of state under President Bill Clinton and then headed the Brookings Institution, died Thursday. He was 80.",
+   "outlet": "CTV News + Toronto Star + CP24 (AP)",
+   "n": 1,
+   "url": "https://www.ctvnews.ca/world/article/strobe-talbott-former-time-magazine-reporter-and-deputy-secretary-of-state-has-died/",
+   "img": "https://www.ctvnews.ca/resizer/v2/AVU3Y4NGJTFTPJBPKZX4A55LDI.jpg?smart=true&auth=bec0008e72a5ce414232dc530133faa5dfa5be9a630c368d5b54643e006a94ad&width=1200&height=630"
+  },
+  {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Thu 9:38 p.m.",
+   "iso": "2026-11-27T02:38:00+00:00",
+   "title": "Faster inflation in Tokyo supports case for BOJ rate hike in December",
+   "summary": "The consumer price index excluding fresh food rose 2.9% in November from a year earlier in the capital, the highest level since July 2025, data shows.",
+   "outlet": "The Japan Times",
+   "n": 1,
+   "url": "https://www.japantimes.co.jp/business/2026/11/27/economy/tokyo-inflation-november/",
+   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/27/576273.jpg?v=3.1"
+  },
+  {
    "desk": "us",
    "pic": "podium",
    "t": "Thu 9:34 p.m.",
@@ -3272,18 +3321,6 @@
    "img": "https://www.ctvnews.ca/resizer/v2/HRFYATRMG6DI6RREXOVES7BPBY.jpg?smart=true&auth=6912866f5844f55af8a2e10899000869244feaec7916c5b6414a41c53bb2e890&width=1200&height=630"
   },
   {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Thu 8:52 p.m.",
-   "iso": "2026-11-27T01:52:36+00:00",
-   "title": "‘I just existed as a Jewish and Israeli student’: Antisemitism unchecked on campuses, report finds",
-   "summary": "The report surveyed students who do not identify as Jewish about how aware they are of antisemitism, on campus and online, and how they see it.",
-   "outlet": "CTV News + Global News + CP24 (CP)",
-   "n": 1,
-   "url": "https://www.ctvnews.ca/canada/article/i-just-existed-as-a-jewish-and-israeli-student-antisemitism-unchecked-on-campuses-report-finds/",
-   "img": "https://www.ctvnews.ca/resizer/v2/2MZRK2INGJ2OOC36G5CIMAUFPE.jpg?smart=true&auth=aeb217168a459a62478997d15d5c9e7dd00a2ed37304c98e55fb148ad2f3f855&width=1200&height=630"
-  },
-  {
    "desk": "us",
    "pic": "podium",
    "t": "Thu 8:42 p.m.",
@@ -3294,18 +3331,6 @@
    "n": 1,
    "url": "https://www.foxnews.com/us/tpusa-mourns-florida-high-school-chapter-president-killed-family-devastating-plane-crash",
    "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/hunter-stokes.jpg"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Thu 8:36 p.m.",
-   "iso": "2026-11-27T01:36:14+00:00",
-   "title": "Break-in suspects crashed stolen SUV into Whitby game store: police",
-   "summary": "Durham Regional Police investigators say suspects in a Whitby break-and-enter used a stolen SUV to crash their way into a game store. Officers responded to a break-and-enter call at We Got Gamez, located at 1910 Dundas Street East, on Thursday morning at around 2:55 a.m. “A black SUV was driven through the storefront of the […]",
-   "outlet": "CityNews + CTV News + CP24 (CP)",
-   "n": 1,
-   "url": "https://toronto.citynews.ca/2026/11/26/break-in-suspects-crashed-stolen-suv-into-whitby-game-store-police/",
-   "img": "https://toronto.citynews.ca/wp-content/blogs.dir/sites/10/2026/11/26/gamez1.png"
   },
   {
    "desk": "business",
@@ -3342,18 +3367,6 @@
    "n": 1,
    "url": "https://globalnews.ca/news/12167937/funding-future-for-calgarys-foothills-fieldhouse-questioned-during-budget-talks/",
    "img": "https://globalnews.ca/wp-content/uploads/2026/11/Screenshot-2026-11-26-152614.png?w=720&h=379&crop=1"
-  },
-  {
-   "desk": "us",
-   "pic": "podium",
-   "t": "Thu 8:08 p.m.",
-   "iso": "2026-11-27T01:08:54+00:00",
-   "title": "Unforgiving rim denies Arkansas a miracle comeback against Michigan State on Thanksgiving",
-   "summary": "No. 11 Michigan State escaped with a 70-67 Thanksgiving win after Jordan Smith Jr.’s potential tying three rattled out in the final seconds.",
-   "outlet": "Fox News",
-   "n": 1,
-   "url": "https://www.foxnews.com/outkick-sports/unforgiving-rim-denies-arkansas-miracle-comeback-michigan-state-thanksgiving",
-   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/jeremy-fears-jr-celebrates-michigan-state-fox-news_.jpg"
   },
   {
    "desk": "us",
@@ -3426,18 +3439,6 @@
    "n": 1,
    "url": "https://vancouversun.com/business/new-bc-energy-minister-at-forefront-of-government-mandate-to-supercharge-the-economy",
    "img": ""
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
-   "t": "Thu 6:48 p.m.",
-   "iso": "2026-11-26T23:48:15+00:00",
-   "title": "Councillor’s motion to ditch multi-million dollar energy expansion squashed",
-   "summary": "A councillor’s motion to scrap the expansion of the multi-million dollar Downtown District Energy Utility was squashed Thursday.",
-   "outlet": "CTV News (CP)",
-   "n": 1,
-   "url": "https://www.ctvnews.ca/edmonton/article/councillors-motion-to-ditch-multi-million-dollar-energy-expansion-squashed/",
-   "img": "https://www.ctvnews.ca/resizer/v2/WQDITPLINZGQBE6WLOACQRQKAM.png?smart=true&auth=b0f4ac5f8b5fc495e08c6118845808fbb510b56d33b93c314f51a4c7c1486c6f&width=1200&height=630"
   }
  ],
  "reads": [
@@ -3560,7 +3561,7 @@
     "Supreme Court to rule on Quebec’s secularism law. Experts say the stakes could not be higher",
     "A perfect storm: Dozens of homes forced to evacuate as massive floods hit B.C. coast",
     "Grand Theft Auto VI drives streaming spike for this Canadian pop star’s old song",
-    "Liberals support Conservative push for minister to testify after W5 drug-smuggling investigation",
+    "Multiple soldiers remain in critical condition as health officials detail CFB Wainwright response",
     "Conservatives demand PM Carney’s wife testify to Parliament",
     "'The ultimate David and Goliath story': Months later, he's still waiting for $7K from FIFA"
    ],
@@ -3568,7 +3569,7 @@
     "https://www.ctvnews.ca/montreal/article/supreme-court-to-rule-on-quebecs-secularism-law-experts-say-the-stakes-could-not-be-higher/",
     "https://www.ctvnews.ca/climate-and-environment/article/a-perfect-storm-king-tides-heavy-rain-bring-massive-floods-to-bc-coast/",
     "https://www.ctvnews.ca/entertainment/article/grand-theft-auto-vi-drives-streaming-spike-for-this-canadian-pop-stars-old-song/",
-    "https://www.ctvnews.ca/w5/article/transport-minister-could-soon-be-called-to-testify-before-committee-about-bag-tag-switching/",
+    "https://www.ctvnews.ca/canada/article/multiple-soldiers-remain-in-critical-condition-as-health-officials-detail-cfb-wainwright-response/",
     "https://www.ctvnews.ca/politics/article/conservatives-want-pms-wife-diana-fox-carney-to-testify-to-parliament-on-oceans-role/",
     "https://www.ctvnews.ca/vancouver/article/bc-man-still-waiting-for-7000-from-fifa-after-selling-world-cup-tickets-on-fan-marketplace/"
    ]
@@ -3770,7 +3771,7 @@
     "US too focused on Middle East and not pushing Russia hard enough, Zelensky tells BBC",
     "Zelensky questions 'strange' Trump-Putin friendship in BBC interview",
     "My dad's watch stopped the moment he died - I found it in the ashes of Hong Kong tower fire",
-    "Met Police ruined my life, says Kenyan man wrongly sentenced over attack on UK couple",
+    "UK police ruined my life, says Kenyan man wrongly sentenced over attack on British couple",
     "Major Thanksgiving storm brings flooding, flight delays across US",
     "Watch: Roofs torn off and streets under water as severe weather hits US"
    ],
@@ -3813,7 +3814,7 @@
     "url": "https://www.youtube.com/watch?v=wcY4K5CNVx4",
     "img": "https://i.ytimg.com/vi/wcY4K5CNVx4/hqdefault.jpg",
     "story": "Fox News' All-American Christmas tree",
-    "watching": "2.7K"
+    "watching": "3.2K"
    },
    {
     "net": "MS NOW",
@@ -3822,7 +3823,7 @@
     "url": "https://www.youtube.com/watch?v=GjX7SROH1s4",
     "img": "https://i.ytimg.com/vi/GjX7SROH1s4/hqdefault.jpg",
     "story": "BEST of 'The Best People with Nicolle Wallace': MS NOW Thanksgiving Ma",
-    "watching": "616"
+    "watching": "669"
    },
    {
     "net": "The White House",
@@ -3831,7 +3832,16 @@
     "url": "https://www.youtube.com/watch?v=ZpJlociXFyM",
     "img": "https://i.ytimg.com/vi/ZpJlociXFyM/hqdefault.jpg",
     "story": "Lo-Fi Winning Beats to Pass the Gravy to",
-    "watching": "35"
+    "watching": "38"
+   },
+   {
+    "net": "Reuters",
+    "r": "world",
+    "title": "LIVE: Weather map showing storm moving along the US East Coast",
+    "url": "https://www.youtube.com/watch?v=LeZ-C1hYKCs",
+    "img": "https://i.ytimg.com/vi/LeZ-C1hYKCs/hqdefault.jpg",
+    "story": "Weather map showing storm moving along the US East Coast",
+    "watching": "79"
    }
   ],
   "upcoming": [
@@ -3909,6 +3919,15 @@
  "pm": [],
  "blogs_auto": [
   {
+   "net": "Middle East Eye",
+   "story": "Several countries slam suspected Iranian attack on Kuwait",
+   "title": "Several countries slam suspected Iranian attack on Kuwait",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/several-countries-slam-suspected-iranian-attack-kuwait",
+   "updated": "2026-11-27T02:26:09+00:00",
+   "ended": false,
+   "img": "https://www.middleeasteye.net/sites/default/files/2026-11/Untitled_4.jpg"
+  },
+  {
    "net": "Al Jazeera",
    "story": "Iran war live: Iran’s Araghchi calls deadly Kuwait attack ‘suspicious’",
    "title": "Iran war live: Iran’s Araghchi calls deadly Kuwait attack ‘suspicious’",
@@ -3952,6 +3971,24 @@
  },
  "canangle": {},
  "canangle_live": {
+  "https://www.youtube.com/watch?v=LeZ-C1hYKCs": {
+   "story": "Weather map showing storm moving along the US East Coast",
+   "us": true,
+   "specific": 1,
+   "stories": [
+    {
+     "t": "Thu 7:57 p.m.",
+     "iso": "2026-11-27T00:57:51+00:00",
+     "outlet": "CTV News",
+     "title": "A perfect storm: Dozens of homes forced to evacuate as massive floods hit B.C. coast",
+     "url": "https://www.ctvnews.ca/climate-and-environment/article/a-perfect-storm-king-tides-heavy-rain-bring-massive-floods-to-bc-coast/",
+     "ca": true,
+     "tie": ""
+    }
+   ],
+   "official": [],
+   "views": []
+  },
   "https://abcnews.com/US/new-york-declares-emergency-thanksgiving-storm-threatens-east/story?id=138464273": {
    "story": "New York declares emergency as Thanksgiving storm threatens East Coast",
    "us": false,
