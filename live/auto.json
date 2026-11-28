@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-28T03:38:53.074849+00:00",
- "checkedLabel": "Fri 10:38 p.m.",
+ "checked": "2026-11-28T03:48:52.877373+00:00",
+ "checkedLabel": "Fri 10:48 p.m.",
  "stories": [
   {
    "key": "top",
@@ -82,6 +82,15 @@
  ],
  "wire": [
   [
+   "Fri 10:43 p.m.",
+   "Latest",
+   "Jake West scores 23 points, Northwestern rallies to beat Northeastern 65-61",
+   "The Canadian Press (via Winnipeg Free Press)",
+   "https://www.winnipegfreepress.com/uncategorized/2026/11/27/jake-west-scores-23-points-northwestern-rallies-to-beat-northeastern-65-61",
+   "2026-11-28T03:43:20+00:00",
+   1
+  ],
+  [
    "Fri 10:17 p.m.",
    "Canada",
    "Quebec physician burnout jumps to 80%: CMA",
@@ -115,7 +124,7 @@
    "Al Jazeera",
    "https://www.aljazeera.com/news/2026/11/28/parts-of-us-clean-up-after-thanksgiving-storm-lashes-east-coast?traffic_source=rss",
    "2026-11-28T03:00:00+00:00",
-   2
+   1
   ],
   [
    "Fri 9:59 p.m.",
@@ -296,15 +305,6 @@
    "https://www.bbc.co.uk/news/articles/cm3vg3lkrk03o?at_medium=RSS&at_campaign=rss",
    "2026-11-28T01:20:35+00:00",
    1
-  ],
-  [
-   "Fri 8:17 p.m.",
-   "Latest",
-   "Coroner’s jury deems Jamal Francique’s death a homicide, makes 21 recommendations",
-   "CTV News",
-   "https://www.ctvnews.ca/toronto/local/peel/article/coroners-jury-deems-jamal-franciques-death-a-homicide-makes-21-recommendations/",
-   "2026-11-28T01:17:47+00:00",
-   2
   ]
  ],
  "blogs": [
@@ -345,33 +345,11 @@
   },
   {
    "score": 11,
-   "title": "Kinew calls Bill 21 ‘legislative racism’ after Supreme Court upholds Quebec law",
-   "url": "https://www.ctvnews.ca/winnipeg/article/kinew-calls-bill-21-legislative-racism-after-supreme-court-upholds-quebec-law/",
-   "outlets": 6,
-   "why": [
-    "National Newswatch #2"
-   ],
-   "theme": ""
-  },
-  {
-   "score": 11,
    "title": "Mackenzie Valley Highway becomes first major project of national interest in Canada’s North",
    "url": "https://www.ctvnews.ca/politics/article/carney-travels-to-yellowknife-for-announcement-on-major-initiative/",
    "outlets": 7,
    "why": [
     "National Newswatch #15"
-   ],
-   "theme": ""
-  },
-  {
-   "score": 10,
-   "title": "Canadians hang up on Quebecor’s proposed Telus acquisition, pointing to high prices, lack of competition",
-   "url": "https://angusreid.org/wp-content/uploads/2026/11/2026.11.26_Telus.pdf",
-   "outlets": 2,
-   "why": [
-    "National Newswatch #5",
-    "National Newswatch #17",
-    "CBC News front #2"
    ],
    "theme": ""
   },
@@ -382,6 +360,28 @@
    "outlets": 3,
    "why": [
     "National Newswatch #1"
+   ],
+   "theme": ""
+  },
+  {
+   "score": 9,
+   "title": "Kinew calls Bill 21 ‘legislative racism’ after Supreme Court upholds Quebec law",
+   "url": "https://www.ctvnews.ca/winnipeg/article/kinew-calls-bill-21-legislative-racism-after-supreme-court-upholds-quebec-law/",
+   "outlets": 4,
+   "why": [
+    "National Newswatch #2"
+   ],
+   "theme": ""
+  },
+  {
+   "score": 9,
+   "title": "Canadians hang up on Quebecor’s proposed Telus acquisition, pointing to high prices, lack of competition",
+   "url": "https://angusreid.org/wp-content/uploads/2026/11/2026.11.26_Telus.pdf",
+   "outlets": 1,
+   "why": [
+    "National Newswatch #5",
+    "National Newswatch #17",
+    "CBC News front #2"
    ],
    "theme": ""
   },
@@ -848,9 +848,17 @@
       "up": ""
      },
      {
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=nurmw5VIpHo",
+      "title": "Ottawa designates Mackenzie Valley Highway a project of national interest",
+      "img": "https://i.ytimg.com/vi/nurmw5VIpHo/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
       "net": "Global News",
       "url": "https://www.youtube.com/watch?v=1qUqMHnCllA",
-      "title": "Carney announces Mackenzie Valley Highway designated as project of national interest",
+      "title": "Mackenzie Valley Highway becomes project of national interest",
       "img": "https://i.ytimg.com/vi/1qUqMHnCllA/hqdefault.jpg",
       "rec": false,
       "up": ""
@@ -1028,8 +1036,16 @@
     "outled_ca": 1,
     "judgment": "regional",
     "judgment_why": "Regional: affects some people; carried by a few newsrooms.",
-    "weight": 15.5,
+    "weight": 12.5,
     "videos": [
+     {
+      "net": "ABC News",
+      "url": "https://www.youtube.com/watch?v=tmwDQtK8MYY",
+      "title": "Hackers break into US Air Force cloud platform: Report",
+      "img": "https://i.ytimg.com/vi/tmwDQtK8MYY/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
      {
       "net": "NBC News",
       "url": "https://www.youtube.com/watch?v=rvBjxvPOC7E",
@@ -1043,14 +1059,6 @@
       "url": "https://www.youtube.com/watch?v=f7rjrWY7XRI",
       "title": "Hackers hit U.S. Air Force computing platform",
       "img": "https://i.ytimg.com/vi/f7rjrWY7XRI/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
-      "net": "ABC News",
-      "url": "https://www.youtube.com/watch?v=tmwDQtK8MYY",
-      "title": "Hackers break into US Air Force cloud platform: Report",
-      "img": "https://i.ytimg.com/vi/tmwDQtK8MYY/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
@@ -1090,7 +1098,7 @@
     "url": "https://www.cbsnews.com/news/u-s-air-force-cloud-platform-breached-by-hackers/",
     "rank": 2,
     "live": "",
-    "weight": 15.5,
+    "weight": 12.5,
     "score": 5,
     "independent": 3,
     "most_read": 0,
@@ -1175,19 +1183,19 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
-    "title": "Kinew calls Bill 21 ‘legislative racism’ after Supreme Court upholds Quebec law",
-    "score": 11,
-    "why": "not built: only 2 independent report(s) (5 sites)"
-   },
-   {
-    "title": "Canadians hang up on Quebecor’s proposed Telus acquisition, pointing to high prices, lack of competition",
-    "score": 10,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
     "title": "One day after MacKinnon called Bill C-39 a ‘slam dunk,’ PM Carney says he will whip votes",
     "score": 9,
     "why": "not built: only 1 independent report(s) (3 sites)"
+   },
+   {
+    "title": "Kinew calls Bill 21 ‘legislative racism’ after Supreme Court upholds Quebec law",
+    "score": 9,
+    "why": "not built: only 2 independent report(s) (3 sites)"
+   },
+   {
+    "title": "Canadians hang up on Quebecor’s proposed Telus acquisition, pointing to high prices, lack of competition",
+    "score": 9,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
     "title": "Judge reserves decision in bestselling author Steven Galloway's defamation lawsuit",
@@ -1264,7 +1272,7 @@
      "alt": "A sentencing hearing is set for Friday for an Ontario man, who pleaded guilty earlier this year to 14 counts of aiding suicide in the deaths of 14 people in the",
      "outlet": "CBC News",
      "url": "https://www.cbc.ca/news/canada/toronto/kenneth-law-sentencing-hearing-poison-seller-9.7438391",
-     "since": "2026-11-28T03:20:36.324100+00:00"
+     "since": "2026-11-28T03:50:37.140808+00:00"
     },
     "photo_seen": [
      "https://i.cbc.ca/ais/1.6831073,1702415985000/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C36%2C3877%2C2180%29%3BResize%3D620"
@@ -1510,8 +1518,8 @@
    {
     "key": "auto-df40de3c",
     "words": [
-     "nation",
-     "colomb"
+     "colomb",
+     "nation"
     ],
     "score": 6,
     "outlets": 3,
@@ -1538,7 +1546,7 @@
      "alt": "Members of Marcel Colomb First Nation speak on Friday after declaring a state of emergency in the community.",
      "outlet": "Global News",
      "url": "https://globalnews.ca/news/12169411/marcel-colomb-first-nation-in-manitoba-declares-state-of-emergency-over-water/",
-     "since": "2026-11-28T03:40:48.837932+00:00"
+     "since": "2026-11-28T03:50:38.667843+00:00"
     },
     "photo_seen": [
      "https://globalnews.ca/wp-content/uploads/2026/11/MARCEL.bmp?w=720&h=379&crop=1"
@@ -1811,24 +1819,10 @@
    "geo": "unknown"
   },
   {
-   "id": "TzsBictQT2k",
-   "r": "ca",
-   "o": "Global News",
-   "t": "Global National: Nov. 27, 2026 | Canada’s top court largely upholds Quebec’s secularism law",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=TzsBictQT2k",
-   "img": "https://i.ytimg.com/vi/TzsBictQT2k/hqdefault.jpg",
-   "up": "2026-11-27",
-   "added": "2026-11-28T03:28:52.759497+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "9M9-FoTiCrU",
    "r": "ca",
    "o": "CTV News",
-   "t": "Wiikwemkoong build 36-storey tower in Edmonton | CTV News Northern Ontario at 6 p.m. Nov. 27, 2026",
+   "t": "Light Up Rotary Park kicks off | CTV News Northern Ontario at 6 p.m. Nov. 27, 2026",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=9M9-FoTiCrU",
@@ -1863,6 +1857,20 @@
    "img": "https://i.ytimg.com/vi/qQxvgoZPsJA/hqdefault.jpg",
    "up": "2026-11-27",
    "added": "2026-11-28T03:38:53.074849+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "GtinCLMl-1A",
+   "r": "ca",
+   "o": "Global News",
+   "t": "Alberta Premier Smith looks to keep UCP party united at 1st general meeting since referendum",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=GtinCLMl-1A",
+   "img": "https://i.ytimg.com/vi/GtinCLMl-1A/hqdefault.jpg",
+   "up": "2026-11-27",
+   "added": "2026-11-28T03:48:52.877373+00:00",
    "pic": "globe",
    "geo": "unknown"
   },
@@ -1968,7 +1976,7 @@
    "id": "_mnkhZRrNMc",
    "r": "us",
    "o": "CBS News",
-   "t": "Democratic, Republican strategists react to Trump's stance on Nvidia and Jensen Huang",
+   "t": "Can Trump's support for Nvidia's Jensen Huang come back to bite him?",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=_mnkhZRrNMc",
@@ -2010,7 +2018,7 @@
    "id": "j9NE4ZEDEds",
    "r": "us",
    "o": "CNN",
-   "t": "Parade scramble, Israel could splinter, Dem investigations & more | CNN Primetime Roundup",
+   "t": "Macy’s parade update, splintered Israel, WH braces for oversight & more | CNN Primetime Roundup",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=j9NE4ZEDEds",
@@ -2024,7 +2032,7 @@
    "id": "kIxUb4A4ADc",
    "r": "us",
    "o": "Fox News",
-   "t": "‘TONE DEAF’: Obama 'wingman' faces backlash push for DEI in 2028",
+   "t": "‘TONE DEAF’: Democrats warned to put merit before DEI",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=kIxUb4A4ADc",
@@ -2164,7 +2172,7 @@
    "id": "Q5vxPBjlXeE",
    "r": "world",
    "o": "Reuters",
-   "t": "Air Force cloud hack, shoppers return to malls, Iraq's high-stakes crackdown | Reuters World News",
+   "t": "Black Friday mall revival and Musk's SpaceX share plan | Reuters World News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=Q5vxPBjlXeE",
@@ -2234,7 +2242,7 @@
    "id": "447KgpcrLtI",
    "r": "world",
    "o": "BBC News",
-   "t": "Nuclear watchdog sounds new Zaporizhzhia alert | BBC News",
+   "t": "IAEA raises alarm over nuclear plant safety | BBC News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=447KgpcrLtI",
@@ -2531,13 +2539,6 @@
  ],
  "eds": [
   [
-   "Toronto Star",
-   "Opinion",
-   "The Supreme Court made it easier for politicians to undermine fundamental freedoms. But the fight over Charter rights is just beginning",
-   "https://www.thestar.com/opinion/star-columnists/the-supreme-court-made-it-easier-for-politicians-to-undermine-fundamental-freedoms-but-the-fight-over-charter-rights-is-just-beginning/article_bcf0012f-182e-4f7a-acd9-055500f4495c.html",
-   "2026-11-28T00:45:00+00:00"
-  ],
-  [
    "Toronto Sun",
    "Editorial",
    "Premier Ford said what others are thinking",
@@ -2599,6 +2600,13 @@
    "The Times That Tried Men’s Souls",
    "https://www.wsj.com/opinion/the-times-that-tried-mens-souls-198d8e5d?mod=rss_opinion",
    "2026-11-27T22:37:00+00:00"
+  ],
+  [
+   "Washington Examiner",
+   "Opinion",
+   "America cannot afford an FAA moment for its electric grid",
+   "https://www.washingtonexaminer.com/op-eds/4815515/grid-modernization-electric-grid-reliability/",
+   "2026-11-27T16:00:00+00:00"
   ]
  ],
  "canus": {
@@ -2976,6 +2984,16 @@
    "img": "https://yellowknifer.com/wp-content/uploads/sites/55/2026/11/Carney.jpg?w=1024"
   },
   {
+   "o": "Thunder Bay Newswatch",
+   "region": "Thunder Bay",
+   "arctic": false,
+   "h": "Swanson's OT winner completes North Stars comeback",
+   "u": "https://www.tbnewswatch.com/local-news/swansons-ot-winner-completes-north-stars-comeback-13070383",
+   "t": "Fri 10:44 p.m.",
+   "desc": "",
+   "img": ""
+  },
+  {
    "o": "Prince George Citizen",
    "region": "Northern B.C.",
    "arctic": false,
@@ -2984,16 +3002,6 @@
    "t": "Fri 10:00 p.m.",
    "desc": "Evan J will be examining how Northern literary fiction can inform health and wellbeing",
    "img": "https://www.vmcdn.ca/f/files/princegeorgematters/pgc-evanjphoto.png;w=911;h=607;mode=crop"
-  },
-  {
-   "o": "Nelson Star",
-   "region": "Kootenays",
-   "arctic": false,
-   "h": "Lack of snow forces Whitewater Mountain Resort to delay start of season",
-   "u": "https://nelsonstar.com/2026/11/27/lack-of-snow-forces-whitewater-to-delay-start-of-season/",
-   "t": "Fri 9:32 p.m.",
-   "desc": "The Nelson-area resort was supposed to open Dec. 4",
-   "img": "https://nelsonstar.com/wp-content/uploads/sites/8/2026/11/IMG_0306.jpg?w=1024"
   }
  ],
  "clocks": [
@@ -3013,12 +3021,12 @@
    "city": "Halifax",
    "tz": "America/Halifax",
    "world": false,
-   "w": "In court",
-   "label": "Newfoundland’s Wakeham only Atlantic premier to react to…",
-   "u": "https://halifax.citynews.ca/2026/11/27/newfoundlands-wakeham-only-atlantic-premier-to-react-to-supreme-court-ruling/",
-   "title": "Newfoundland’s Wakeham only Atlantic premier to react to Supreme Court ruling",
+   "w": "Nichols",
+   "label": "Even with Nichols out, reigning Brier champion Dunstone…",
+   "u": "https://halifax.citynews.ca/2026/11/27/even-with-nichols-out-reigning-brier-champion-dunstone-remains-on-top-of-rankings/",
+   "title": "Even with Nichols out, reigning Brier champion Dunstone remains on top of rankings",
    "outlet": "CityNews Halifax",
-   "t": "Fri 4:39 p.m.",
+   "t": "Fri 5:00 p.m.",
    "hot": false
   },
   {
@@ -3074,11 +3082,11 @@
    "tz": "America/New_York",
    "world": false,
    "w": "In court",
-   "label": "Sask. welcomes Supreme Court ruling on Quebec secularism…",
-   "u": "https://www.ctvnews.ca/regina/article/sask-welcomes-supreme-court-ruling-on-quebec-secularism-law-notwithstanding-clause-use/",
-   "title": "Sask. welcomes Supreme Court ruling on Quebec secularism law, notwithstanding clause use",
-   "outlet": "CTV News",
-   "t": "Fri 7:58 p.m.",
+   "label": "Mexico and U.S. combat drug cartels together as Trump…",
+   "u": "https://www.japantimes.co.jp/news/2026/11/28/world/crime-legal/mexico-us-combat-drug-cartels/",
+   "title": "Mexico and U.S. combat drug cartels together as Trump pressure looms large",
+   "outlet": "The Japan Times",
+   "t": "Fri 8:09 p.m.",
    "hot": false
   },
   {
@@ -3824,13 +3832,22 @@
  "live": {
   "now": [
    {
+    "net": "Fox News",
+    "r": "us",
+    "title": "WATCH LIVE: Fox News' All-American Christmas tree",
+    "url": "https://www.youtube.com/watch?v=wcY4K5CNVx4",
+    "img": "https://i.ytimg.com/vi/wcY4K5CNVx4/hqdefault.jpg",
+    "story": "Fox News' All-American Christmas tree",
+    "watching": "220"
+   },
+   {
     "net": "LiveNOW from FOX",
     "r": "us",
     "title": "LIVE: Storms nationwide impact holiday travel, US-Iran conflict latest & more top stories",
     "url": "https://www.youtube.com/watch?v=pu49AmFJRp4",
     "img": "https://i.ytimg.com/vi/pu49AmFJRp4/hqdefault.jpg",
     "story": "Storms nationwide impact holiday travel, US-Iran conflict latest & mor",
-    "watching": "378"
+    "watching": "375"
    },
    {
     "net": "MS NOW",
@@ -3839,7 +3856,7 @@
     "url": "https://www.youtube.com/watch?v=EIqVYck-K20",
     "img": "https://i.ytimg.com/vi/EIqVYck-K20/hqdefault.jpg",
     "story": "WATCH: Top MS NOW Interviews of 2026",
-    "watching": "299"
+    "watching": "289"
    }
   ],
   "upcoming": [
@@ -3904,7 +3921,7 @@
    "story": "Iran war live: Italy says drone in deadly Kuwait attack was made in Ir",
    "title": "Iran war live: Italy says drone in deadly Kuwait attack was made in Iran",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/28/iran-war-live-italy-says-drone-in-deadly-kuwait-attack-was-made-in-iran?traffic_source=rss",
-   "updated": "2026-11-28T03:33:02+00:00",
+   "updated": "2026-11-28T03:40:00+00:00",
    "ended": false,
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1795823699.jpg?resize=1920%2C1080&quality=80"
   }
