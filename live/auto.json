@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-28T09:23:32.127962+00:00",
- "checkedLabel": "Sat 4:23 a.m.",
+ "checked": "2026-11-28T09:33:31.828239+00:00",
+ "checkedLabel": "Sat 4:33 a.m.",
  "stories": [
   {
    "key": "top",
@@ -65,9 +65,18 @@
  ],
  "wire": [
   [
+   "Sat 4:30 a.m.",
+   "Latest",
+   "St. John’s landfill traffic-cam is live. Can it save you time?",
+   "CBC News",
+   "https://www.cbc.ca/player/play/9.7439363?cmp=rss",
+   "2026-11-28T09:30:00+00:00",
+   1
+  ],
+  [
    "Sat 4:16 a.m.",
    "U.S.",
-   "Zelenskyy questions Trump’s ‘strange’ reference to Putin as a friend",
+   "Zelenskyy questions Trump’s ‘strange’ reference to Putin as a ‘friend’",
    "NBC News",
    "https://www.nbcnews.com/world/ukraine/zelenskyy-questions-trumps-strange-reference-putin-friend-rcna611653",
    "2026-11-28T09:16:01+00:00",
@@ -170,7 +179,7 @@
    "Al Jazeera",
    "https://www.aljazeera.com/news/2026/11/28/uns-albanese-leaves-costa-rica-airport-after-constitutional-court-verdict?traffic_source=rss",
    "2026-11-28T08:05:18+00:00",
-   2
+   1
   ],
   [
    "Sat 3:01 a.m.",
@@ -252,15 +261,6 @@
    "https://www.aljazeera.com/opinions/2026/11/28/trumps-tariffs-have-become-americas-new-normal?traffic_source=rss",
    "2026-11-28T06:57:19+00:00",
    1
-  ],
-  [
-   "Sat 1:25 a.m.",
-   "World",
-   "Elon Musk can afford a little MAGA amnesia",
-   "Al Jazeera",
-   "https://www.aljazeera.com/opinions/2026/11/28/elon-musk-can-afford-a-little-maga-amnesia?traffic_source=rss",
-   "2026-11-28T06:25:24+00:00",
-   1
   ]
  ],
  "blogs": [
@@ -297,28 +297,39 @@
    "url": "https://www.ctvnews.ca/politics/article/carney-travels-to-yellowknife-for-announcement-on-major-initiative/",
    "outlets": 14,
    "why": [
-    "National Newswatch #14",
+    "National Newswatch #15",
     "CBC News front #5"
    ],
    "theme": ""
   },
   {
-   "score": 15,
+   "score": 14,
    "title": "Kinew calls Bill 21 ‘legislative racism’ after Supreme Court upholds Quebec law",
    "url": "https://www.ctvnews.ca/winnipeg/article/kinew-calls-bill-21-legislative-racism-after-supreme-court-upholds-quebec-law/",
    "outlets": 10,
    "why": [
-    "National Newswatch #2"
+    "National Newswatch #3"
    ],
    "theme": ""
   },
   {
-   "score": 13,
+   "score": 12,
+   "title": "Canada is spending billions on defence. But is it getting ready for war?",
+   "url": "https://www.cbc.ca/news/politics/defence-canada-nato-europe-war-russia-9.7439845",
+   "outlets": 1,
+   "why": [
+    "National Newswatch #1",
+    "CBC News front #1"
+   ],
+   "theme": ""
+  },
+  {
+   "score": 12,
    "title": "One day after MacKinnon called Bill C-39 a ‘slam dunk,’ PM Carney says he will whip votes",
    "url": "https://www.ctvnews.ca/politics/article/pm-carney-says-he-will-whip-vote-over-bill-c-39-one-day-after-house-leader-calls-it-a-slam-dunk/",
    "outlets": 7,
    "why": [
-    "National Newswatch #1"
+    "National Newswatch #2"
    ],
    "theme": ""
   },
@@ -344,8 +355,8 @@
    "url": "https://angusreid.org/wp-content/uploads/2026/11/2026.11.26_Telus.pdf",
    "outlets": 5,
    "why": [
-    "National Newswatch #4",
-    "National Newswatch #16"
+    "National Newswatch #5",
+    "National Newswatch #17"
    ],
    "theme": ""
   },
@@ -358,17 +369,6 @@
    "theme": ""
   },
   {
-   "score": 10,
-   "title": "What the Trump thumping may mean for Canada",
-   "url": "https://www.hilltimes.com/2026/11/23/what-the-trump-thumping-may-mean-for-canada/526426/",
-   "outlets": 6,
-   "why": [
-    "National Newswatch #13",
-    "National Newswatch #20"
-   ],
-   "theme": "Canada and the U.S."
-  },
-  {
    "score": 8,
    "title": "No. 5 Texas Tech holds off San Diego State 78-75 for fifth in Players Era bracket",
    "url": "https://www.winnipegfreepress.com/uncategorized/2026/11/28/no-5-texas-tech-holds-off-san-diego-state-78-75-for-fifth-in-players-era-bracket",
@@ -377,12 +377,14 @@
    "theme": ""
   },
   {
-   "score": 7,
-   "title": "Zelenskyy questions Trump’s ‘strange’ reference to Putin as a friend",
-   "url": "https://www.nbcnews.com/world/ukraine/zelenskyy-questions-trumps-strange-reference-putin-friend-rcna611653",
-   "outlets": 5,
-   "why": [],
-   "theme": ""
+   "score": 8,
+   "title": "What the Trump thumping may mean for Canada",
+   "url": "https://www.hilltimes.com/2026/11/23/what-the-trump-thumping-may-mean-for-canada/526426/",
+   "outlets": 6,
+   "why": [
+    "National Newswatch #14"
+   ],
+   "theme": "Canada and the U.S."
   }
  ],
  "canada": [
@@ -450,13 +452,13 @@
     "key": "auto-f7fe893b",
     "words": [
      "atlantic",
-     "wakeham",
      "supreme",
      "court's",
+     "wakeham",
      "bill",
      "maid"
     ],
-    "score": 15,
+    "score": 14,
     "outlets": 4,
     "carriers": 7,
     "tag": "Developing",
@@ -697,21 +699,21 @@
     "leads_ca": true,
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (3 cities).",
-    "weight": 39.5,
+    "weight": 38.5,
     "videos": [
      {
-      "net": "CityNews",
-      "url": "https://www.youtube.com/watch?v=hxcEUbWPvqM",
-      "title": "Supreme Court of Canada upholds most of Quebec’s secularism law",
-      "img": "https://i.ytimg.com/vi/hxcEUbWPvqM/hqdefault.jpg",
+      "net": "Global News",
+      "url": "https://www.youtube.com/watch?v=qQxvgoZPsJA",
+      "title": "How provinces may use notwithstanding clause now in wake of Supreme Court's Quebec secularism ruling",
+      "img": "https://i.ytimg.com/vi/qQxvgoZPsJA/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "CTV News",
-      "url": "https://www.youtube.com/watch?v=ry2Nm3nIRxU",
-      "title": "Court allows religious hospitals to refuse MAID",
-      "img": "https://i.ytimg.com/vi/ry2Nm3nIRxU/hqdefault.jpg",
+      "net": "Global News",
+      "url": "https://www.youtube.com/watch?v=WUTltVJJpKw",
+      "title": "BC Supreme Court rules that faith-based hospitals can refuse MAID",
+      "img": "https://i.ytimg.com/vi/WUTltVJJpKw/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
@@ -732,150 +734,6 @@
       "up": ""
      }
     ]
-   },
-   {
-    "key": "auto-30a94aea",
-    "words": [
-     "israeli"
-    ],
-    "score": 7,
-    "outlets": 3,
-    "carriers": 3,
-    "tag": "Developing",
-    "title": "Houthis report airstrikes in Yemen, Israeli strike kills 2 near Gaza clinic, and other Mideast news",
-    "url": "https://www.thestar.com/news/world/middle-east/houthis-report-airstrikes-in-yemen-israeli-strike-kills-2-near-gaza-clinic-and-other-mideast-news/article_7a263cb4-3d72-5d78-8846-f6fd4fe97803.html",
-    "outlet": "Toronto Star",
-    "t": "Sat 3:34 a.m.",
-    "iso": "2026-11-28T08:34:32+00:00",
-    "summary": "An airstrike in the Yemeni capital Sanaa early Saturday wounded at least 15 people, according to the Iran-backed Houthis, and another strike in a Red Sea port city ignited a",
-    "first": {
-     "outlet": "The Japan Times",
-     "url": "https://www.japantimes.co.jp/news/2026/11/28/world/son-hamas-chief-survives-israeli-strike/",
-     "t": "Fri 8:08 p.m.",
-     "title": "Son of Hamas chief survives Israeli strike, militant group says",
-     "iso": "2026-11-28T01:08:00+00:00"
-    },
-    "newest": "2026-11-28T08:34:32+00:00",
-    "photo": {
-     "src": "live/img/auto-30a94aea-b0ee1c6d80.jpg",
-     "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/2/bf/2bffec10-c5c6-5569-9f70-732f1cd19298/6b0a93610d84c.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize",
-     "caption": "From: Houthis report airstrikes in Yemen, Israeli strike kills 2 near Gaza clinic, and other Mideast news. — via Toronto Star",
-     "alt": "Houthis report airstrikes in Yemen, Israeli strike kills 2 near Gaza clinic, and other Mideast news",
-     "outlet": "Toronto Star",
-     "url": "https://www.thestar.com/news/world/middle-east/houthis-report-airstrikes-in-yemen-israeli-strike-kills-2-near-gaza-clinic-and-other-mideast-news/article_7a263cb4-3d72-5d78-8846-f6fd4fe97803.html",
-     "since": "2026-11-28T09:24:58.855728+00:00"
-    },
-    "photo_seen": [
-     "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/2/bf/2bffec10-c5c6-5569-9f70-732f1cd19298/6b0a93610d84c.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize",
-     "https://www.middleeasteye.net/sites/default/files/2026-08/Vessels%20in%20the%20Strait%20of%20Hormuz%20are%20visible%20near%20the%20beach%20of%20Bandar%20Abbas%20Iran%2028%20august%202026%20retuers.jpg"
-    ],
-    "photos": [
-     {
-      "src": "live/img/auto-30a94aea-b0ee1c6d80.jpg",
-      "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/2/bf/2bffec10-c5c6-5569-9f70-732f1cd19298/6b0a93610d84c.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize",
-      "caption": "From: Houthis report airstrikes in Yemen, Israeli strike kills 2 near Gaza clinic, and other Mideast news. — via Toronto Star",
-      "alt": "Houthis report airstrikes in Yemen, Israeli strike kills 2 near Gaza clinic, and other Mideast news",
-      "outlet": "Toronto Star",
-      "url": "https://www.thestar.com/news/world/middle-east/houthis-report-airstrikes-in-yemen-israeli-strike-kills-2-near-gaza-clinic-and-other-mideast-news/article_7a263cb4-3d72-5d78-8846-f6fd4fe97803.html"
-     }
-    ],
-    "independent": 3,
-    "reports": [
-     {
-      "t": "Sat 3:34 a.m.",
-      "iso": "2026-11-28T08:34:32+00:00",
-      "outlet": "Toronto Star",
-      "title": "Houthis report airstrikes in Yemen, Israeli strike kills 2 near Gaza clinic, and other Mideast news",
-      "url": "https://www.thestar.com/news/world/middle-east/houthis-report-airstrikes-in-yemen-israeli-strike-kills-2-near-gaza-clinic-and-other-mideast-news/article_7a263cb4-3d72-5d78-8846-f6fd4fe97803.html",
-      "desc": "An airstrike in the Yemeni capital Sanaa early Saturday wounded at least 15 people, according to the Iran-backed Houthis, and another strike in a Red Sea port city ignited a"
-     },
-     {
-      "t": "Sat 12:35 a.m.",
-      "iso": "2026-11-28T05:35:41+00:00",
-      "outlet": "Middle East Eye",
-      "title": "US activist returning from West Bank tour detained by Israeli police, UCPiP says",
-      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-activist-returning-west-bank-tour-detained-israeli-police-ucpip-says",
-      "desc": ""
-     },
-     {
-      "t": "Fri 8:08 p.m.",
-      "iso": "2026-11-28T01:08:00+00:00",
-      "outlet": "The Japan Times",
-      "title": "Son of Hamas chief survives Israeli strike, militant group says",
-      "url": "https://www.japantimes.co.jp/news/2026/11/28/world/son-hamas-chief-survives-israeli-strike/",
-      "desc": "Izzeldeen al-Hayya and his family had survived a dawn airstrike that wounded several, including al-Hayya’s daughter-in-law."
-     }
-    ],
-    "sources": [
-     {
-      "t": "Sat 3:34 a.m.",
-      "primary": false,
-      "outlet": "Toronto Star",
-      "title": "Houthis report airstrikes in Yemen, Israeli strike kills 2 near Gaza clinic, and other Mideast news",
-      "url": "https://www.thestar.com/news/world/middle-east/houthis-report-airstrikes-in-yemen-israeli-strike-kills-2-near-gaza-clinic-and-other-mideast-news/article_7a263cb4-3d72-5d78-8846-f6fd4fe97803.html",
-      "desc": "An airstrike in the Yemeni capital Sanaa early Saturday wounded at least 15 people, according to the Iran-backed Houthis, and another strike in a Red Sea port city ignited a",
-      "wire": "The Associated Press",
-      "by": [
-       {
-        "outlet": "Toronto Star",
-        "src": "The Associated Press",
-        "byline": "Samy Magdy And Menelaos Hadjicostis The Associated Press\" \"Sally Abou Aljoud"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Sat 12:35 a.m.",
-      "primary": false,
-      "outlet": "Middle East Eye",
-      "title": "US activist returning from West Bank tour detained by Israeli police, UCPiP says",
-      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-activist-returning-west-bank-tour-detained-israeli-police-ucpip-says",
-      "desc": "",
-      "wire": "",
-      "by": [
-       {
-        "outlet": "Middle East Eye",
-        "src": "Middle East Eye",
-        "byline": "https://www.facebook.com/middleeasteye/"
-       }
-      ],
-      "copies": []
-     },
-     {
-      "t": "Fri 8:08 p.m.",
-      "primary": false,
-      "outlet": "The Japan Times",
-      "title": "Son of Hamas chief survives Israeli strike, militant group says",
-      "url": "https://www.japantimes.co.jp/news/2026/11/28/world/son-hamas-chief-survives-israeli-strike/",
-      "desc": "Izzeldeen al-Hayya and his family had survived a dawn airstrike that wounded several, including al-Hayya’s daughter-in-law.",
-      "wire": "Reuters",
-      "by": [
-       {
-        "outlet": "The Japan Times",
-        "src": "Reuters",
-        "byline": "Reuters \n           By  Ale"
-       }
-      ],
-      "copies": []
-     }
-    ],
-    "replaces_top": false,
-    "events": [],
-    "theme": "",
-    "canada": "none",
-    "canus": false,
-    "incoherent": false,
-    "popular": 0,
-    "us_election": false,
-    "fronts": 1,
-    "fronts_ca": 0,
-    "fronts_who": [
-     "BBC News"
-    ],
-    "outled_ca": 5,
-    "judgment": "national",
-    "judgment_why": "National: affects many people; carried beyond one city.",
-    "weight": 25.5
    },
    {
     "key": "auto-f5067bcf",
@@ -1251,14 +1109,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/28/parts-of-us-clean-up-after-thanksgiving-storm-lashes-east-coast?traffic_source=rss"
      },
      {
-      "src": "live/img/auto-51fd2cb1-922b1f12af.jpg",
-      "orig": "https://www.cp24.com/resizer/v2/WKYJMD6WTERWWSP3TDNZBN2NJA.jpg?smart=true&auth=3b950a5eb73ce65b799e65c9831ccc8a9eba8c69dabe2305cfd0cf7209e036cc&width=1200&height=630",
-      "caption": "Waves crash against Virginia Beach Fishing Pier on Thanksgiving Day in Virginia Beach, Va., Thursday, Nov. 26, 2026. (L. Todd Spencer/The Virginian-Pilot via AP). — via CP24",
-      "alt": "Waves crash against Virginia Beach Fishing Pier on Thanksgiving Day in Virginia Beach, Va., Thursday, Nov. 26, 2026. (L. Todd Spencer/The Virginian-Pilot via AP",
-      "outlet": "CP24",
-      "url": "https://www.cp24.com/news/world/2026/11/27/heavy-rain-winds-down-as-power-remains-out-for-hundreds-of-thousands-on-the-us-east-coast/"
-     },
-     {
       "src": "live/img/auto-51fd2cb1-1efb84d90d.jpg",
       "orig": "https://i.abcnewsfe.com/a/c6a5c881-4a8d-4825-bb6e-1fc30d7f6732/nj-flooding-01-rt-jt-261127_1795803356714_hpMain_16x9.jpg?w=1600",
       "caption": "From: Millions clean up after massive Thanksgiving storms on East Coast. — via ABC News",
@@ -1389,220 +1239,7 @@
     "judgment": "regional",
     "judgment_why": "Regional: affects some people; carried beyond one city.",
     "weight": 11.0
-   }
-  ],
-  "considered": [
-   {
-    "title": "Sask. welcomes Supreme Court ruling on Quebec secularism law, notwithstanding clause use",
-    "url": "https://www.ctvnews.ca/regina/article/sask-welcomes-supreme-court-ruling-on-quebec-secularism-law-notwithstanding-clause-use/",
-    "rank": 1,
-    "live": "",
-    "weight": 39.5,
-    "score": 15,
-    "independent": 4,
-    "most_read": 5,
-    "canada": "canadian",
-    "theme": "",
-    "top": true,
-    "fronts": 5,
-    "fronts_who": [
-     "CTV News",
-     "Global News",
-     "Toronto Star",
-     "National Post",
-     "The Globe and Mail"
-    ],
-    "rule": "Canadian, leading the most Canadian front pages: the story Canada's newsrooms are leading with",
-    "carriers": 7,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (3 cities)."
    },
-   {
-    "title": "Houthis report airstrikes in Yemen, Israeli strike kills 2 near Gaza clinic, and other Mideast news",
-    "url": "https://www.thestar.com/news/world/middle-east/houthis-report-airstrikes-in-yemen-israeli-strike-kills-2-near-gaza-clinic-and-other-mideast-news/article_7a263cb4-3d72-5d78-8846-f6fd4fe97803.html",
-    "rank": 2,
-    "live": "",
-    "weight": 25.5,
-    "score": 7,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": true,
-    "fronts": 1,
-    "fronts_who": [
-     "BBC News"
-    ],
-    "rule": "Breaking news from abroad that Canadian newsrooms are carrying",
-    "carriers": 3,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried beyond one city."
-   },
-   {
-    "title": "Government reveals contractor shortlist for 24 Sussex overhaul",
-    "url": "https://www.cbc.ca/news/politics/contractor-shortlist-24-sussex-renovation-9.7439108?cmp=rss",
-    "rank": 3,
-    "live": "",
-    "weight": 26.0,
-    "score": 12,
-    "independent": 4,
-    "most_read": 0,
-    "canada": "general",
-    "theme": "",
-    "top": false,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "From abroad, tied to Canada",
-    "carriers": 12,
-    "judgment": "national",
-    "why_judged": "National: affects some people; carried across the country (8 cities)."
-   },
-   {
-    "title": "Parts of US clean up after Thanksgiving storm lashes East Coast",
-    "url": "https://www.aljazeera.com/news/2026/11/28/parts-of-us-clean-up-after-thanksgiving-storm-lashes-east-coast?traffic_source=rss",
-    "rank": 4,
-    "live": "",
-    "weight": 11.0,
-    "score": 10,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "tie",
-    "theme": "",
-    "top": false,
-    "fronts": 4,
-    "fronts_who": [
-     "NBC News",
-     "CBS News",
-     "ABC News",
-     "BBC News"
-    ],
-    "rule": "From abroad, tied to Canada",
-    "carriers": 4,
-    "judgment": "regional",
-    "why_judged": "Regional: affects some people; carried beyond one city."
-   },
-   {
-    "title": "'Beyond time': Ottawa lists Mackenzie Valley Highway as project of national interest",
-    "url": "https://www.timescolonist.com/the-mix/beyond-time-ottawa-lists-mackenzie-valley-highway-as-project-of-national-interest-13068193",
-    "rank": 5,
-    "live": "",
-    "weight": 43.0,
-    "score": 21,
-    "independent": 4,
-    "most_read": 2,
-    "canada": "canadian",
-    "theme": "",
-    "top": false,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "Canadian, older",
-    "carriers": 8,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (national desks)."
-   },
-   {
-    "title": "CRTC orders Bell, Rogers, Telus to stop charging prohibited wireless fees by Dec. 27",
-    "url": "https://www.cbc.ca/news/business/bell-rogers-telus-fees-9.7438448",
-    "rank": 6,
-    "live": "",
-    "weight": 30.5,
-    "score": 10,
-    "independent": 3,
-    "most_read": 3,
-    "canada": "canadian",
-    "theme": "",
-    "top": false,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "Canadian, older",
-    "carriers": 5,
-    "judgment": "national",
-    "why_judged": "National: affects some people; carried across the country (national desks)."
-   },
-   {
-    "title": "U.S. military says it disabled another ship that tried to breach naval blockade on Iranian ports",
-    "url": "https://www.cp24.com/news/world/2026/11/27/us-military-says-it-disabled-another-ship-that-tried-to-breach-naval-blockade-on-iranian-ports/",
-    "rank": 7,
-    "live": "",
-    "weight": 24.0,
-    "score": 7,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 0,
-    "fronts_who": [],
-    "rule": "No Canadian tie",
-    "carriers": 6,
-    "judgment": "national",
-    "why_judged": "National: affects many people; carried across the country (national desks)."
-   },
-   {
-    "title": "Zelenskyy questions Trump’s ‘strange’ reference to Putin as a friend",
-    "url": "https://www.nbcnews.com/world/ukraine/zelenskyy-questions-trumps-strange-reference-putin-friend-rcna611653",
-    "rank": 8,
-    "live": "",
-    "weight": 17.5,
-    "score": 7,
-    "independent": 3,
-    "most_read": 0,
-    "canada": "none",
-    "theme": "",
-    "top": false,
-    "fronts": 1,
-    "fronts_who": [
-     "NBC News"
-    ],
-    "rule": "No Canadian tie",
-    "carriers": 3,
-    "judgment": "regional",
-    "why_judged": "Regional: affects some people; carried beyond one city."
-   },
-   {
-    "title": "One day after MacKinnon called Bill C-39 a ‘slam dunk,’ PM Carney says he will whip votes",
-    "score": 13,
-    "why": "not built: only 2 independent report(s) (4 sites)"
-   },
-   {
-    "title": "Employer, nurse at odds over alleged Poilievre photo fallout",
-    "score": 12,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Poilievre heading to Washington next week as Canada-U.S. trade talks continue",
-    "score": 10,
-    "why": "not built: only 2 independent report(s) (4 sites)"
-   },
-   {
-    "title": "Ontario’s Doug Ford calls for US-style self-defense laws after violent home invasions",
-    "score": 10,
-    "why": "not built: only 1 independent report(s) (1 sites)"
-   },
-   {
-    "title": "Poilievre heading to Washington next week in push for tariff-free trade with U.S.",
-    "score": 10,
-    "why": "not built: only 1 independent report(s) (1 sites)"
-   },
-   {
-    "title": "No. 5 Texas Tech holds off San Diego State 78-75 for fifth in Players Era bracket",
-    "score": 8,
-    "why": "not built: only 2 independent report(s) (3 sites)"
-   },
-   {
-    "title": "Why Six Nations is no longer in the name of this federal riding in Ontario",
-    "score": 7,
-    "why": "not built: only 2 independent report(s) (3 sites)"
-   },
-   {
-    "title": "Postponed Macy's 100th Thanksgiving Day parade gets a do-over with 100 balloons and 1,000 clowns",
-    "score": 7,
-    "why": "not built: only 1 independent report(s) (2 sites)"
-   }
-  ],
-  "moved": [],
-  "top_n": 2,
-  "more": [
    {
     "key": "auto-37fb6e8f",
     "words": [
@@ -1635,7 +1272,7 @@
      "alt": "'Beyond time': Ottawa lists Mackenzie Valley Highway as project of national interest",
      "outlet": "Times Colonist",
      "url": "https://www.timescolonist.com/the-mix/beyond-time-ottawa-lists-mackenzie-valley-highway-as-project-of-national-interest-13068193",
-     "since": "2026-11-28T09:24:47.883702+00:00"
+     "since": "2026-11-28T09:34:50.415545+00:00"
     },
     "photo_seen": [
      "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/35888d01f0c9e7082c5543846fc4ce452c8991bc623db3ce586b8dd7c57a5119.jpg;w=1200;h=800;mode=crop"
@@ -1864,30 +1501,231 @@
     "weight": 43.0,
     "videos": [
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=1qUqMHnCllA",
-      "title": "Mackenzie Valley Highway becomes project of national interest",
-      "img": "https://i.ytimg.com/vi/1qUqMHnCllA/hqdefault.jpg",
-      "rec": false,
-      "up": ""
-     },
-     {
       "net": "APTN News",
       "url": "https://www.youtube.com/watch?v=18RSaBtBd5Y",
       "title": "Prime minister designates proposed northern highway project of national interest | APTN News",
       "img": "https://i.ytimg.com/vi/18RSaBtBd5Y/hqdefault.jpg",
       "rec": false,
       "up": ""
+     },
+     {
+      "net": "Global News",
+      "url": "https://www.youtube.com/watch?v=1qUqMHnCllA",
+      "title": "Carney lists NWT’s Mackenzie Valley Highway as project of national interest",
+      "img": "https://i.ytimg.com/vi/1qUqMHnCllA/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=nurmw5VIpHo",
+      "title": "Ottawa designates Mackenzie Valley Highway a project of national interest",
+      "img": "https://i.ytimg.com/vi/nurmw5VIpHo/hqdefault.jpg",
+      "rec": false,
+      "up": ""
      }
     ]
+   }
+  ],
+  "considered": [
+   {
+    "title": "Sask. welcomes Supreme Court ruling on Quebec secularism law, notwithstanding clause use",
+    "url": "https://www.ctvnews.ca/regina/article/sask-welcomes-supreme-court-ruling-on-quebec-secularism-law-notwithstanding-clause-use/",
+    "rank": 1,
+    "live": "",
+    "weight": 38.5,
+    "score": 14,
+    "independent": 4,
+    "most_read": 5,
+    "canada": "canadian",
+    "theme": "",
+    "top": true,
+    "fronts": 5,
+    "fronts_who": [
+     "CTV News",
+     "Global News",
+     "Toronto Star",
+     "National Post",
+     "The Globe and Mail"
+    ],
+    "rule": "Canadian, leading the most Canadian front pages: the story Canada's newsrooms are leading with",
+    "carriers": 7,
+    "judgment": "national",
+    "why_judged": "National: affects many people; carried across the country (3 cities)."
    },
+   {
+    "title": "Government reveals contractor shortlist for 24 Sussex overhaul",
+    "url": "https://www.cbc.ca/news/politics/contractor-shortlist-24-sussex-renovation-9.7439108?cmp=rss",
+    "rank": 2,
+    "live": "",
+    "weight": 26.0,
+    "score": 12,
+    "independent": 4,
+    "most_read": 0,
+    "canada": "general",
+    "theme": "",
+    "top": true,
+    "fronts": 0,
+    "fronts_who": [],
+    "rule": "From abroad, tied to Canada",
+    "carriers": 12,
+    "judgment": "national",
+    "why_judged": "National: affects some people; carried across the country (8 cities)."
+   },
+   {
+    "title": "Parts of US clean up after Thanksgiving storm lashes East Coast",
+    "url": "https://www.aljazeera.com/news/2026/11/28/parts-of-us-clean-up-after-thanksgiving-storm-lashes-east-coast?traffic_source=rss",
+    "rank": 3,
+    "live": "",
+    "weight": 11.0,
+    "score": 10,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "tie",
+    "theme": "",
+    "top": false,
+    "fronts": 4,
+    "fronts_who": [
+     "NBC News",
+     "CBS News",
+     "ABC News",
+     "BBC News"
+    ],
+    "rule": "From abroad, tied to Canada",
+    "carriers": 4,
+    "judgment": "regional",
+    "why_judged": "Regional: affects some people; carried beyond one city."
+   },
+   {
+    "title": "'Beyond time': Ottawa lists Mackenzie Valley Highway as project of national interest",
+    "url": "https://www.timescolonist.com/the-mix/beyond-time-ottawa-lists-mackenzie-valley-highway-as-project-of-national-interest-13068193",
+    "rank": 4,
+    "live": "",
+    "weight": 43.0,
+    "score": 21,
+    "independent": 4,
+    "most_read": 2,
+    "canada": "canadian",
+    "theme": "",
+    "top": false,
+    "fronts": 0,
+    "fronts_who": [],
+    "rule": "Canadian, older",
+    "carriers": 8,
+    "judgment": "national",
+    "why_judged": "National: affects many people; carried across the country (national desks)."
+   },
+   {
+    "title": "CRTC orders Bell, Rogers, Telus to stop charging prohibited wireless fees by Dec. 27",
+    "url": "https://www.cbc.ca/news/business/bell-rogers-telus-fees-9.7438448",
+    "rank": 5,
+    "live": "",
+    "weight": 30.5,
+    "score": 10,
+    "independent": 3,
+    "most_read": 3,
+    "canada": "canadian",
+    "theme": "",
+    "top": false,
+    "fronts": 0,
+    "fronts_who": [],
+    "rule": "Canadian, older",
+    "carriers": 5,
+    "judgment": "national",
+    "why_judged": "National: affects some people; carried across the country (national desks)."
+   },
+   {
+    "title": "Zelenskyy questions Trump’s ‘strange’ reference to Putin as a ‘friend’",
+    "url": "https://www.nbcnews.com/world/ukraine/zelenskyy-questions-trumps-strange-reference-putin-friend-rcna611653",
+    "rank": 6,
+    "live": "",
+    "weight": 17.5,
+    "score": 7,
+    "independent": 3,
+    "most_read": 0,
+    "canada": "none",
+    "theme": "",
+    "top": false,
+    "fronts": 1,
+    "fronts_who": [
+     "NBC News"
+    ],
+    "rule": "No Canadian tie",
+    "carriers": 3,
+    "judgment": "regional",
+    "why_judged": "Regional: affects some people; carried beyond one city."
+   },
+   {
+    "title": "Canada is spending billions on defence. But is it getting ready for war?",
+    "score": 12,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "One day after MacKinnon called Bill C-39 a ‘slam dunk,’ PM Carney says he will whip votes",
+    "score": 12,
+    "why": "not built: only 1 independent report(s) (4 sites)"
+   },
+   {
+    "title": "Employer, nurse at odds over alleged Poilievre photo fallout",
+    "score": 12,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "No. 5 Texas Tech holds off San Diego State 78-75 for fifth in Players Era bracket",
+    "score": 8,
+    "why": "not built: only 2 independent report(s) (3 sites)"
+   },
+   {
+    "title": "Poilievre heading to Washington next week as Canada-U.S. trade talks continue",
+    "score": 8,
+    "why": "not built: only 2 independent report(s) (4 sites)"
+   },
+   {
+    "title": "Ontario’s Doug Ford calls for US-style self-defense laws after violent home invasions",
+    "score": 8,
+    "why": "not built: only 1 independent report(s) (1 sites)"
+   },
+   {
+    "title": "Poilievre heading to Washington next week in push for tariff-free trade with U.S.",
+    "score": 8,
+    "why": "not built: only 1 independent report(s) (1 sites)"
+   },
+   {
+    "title": "Why Six Nations is no longer in the name of this federal riding in Ontario",
+    "score": 7,
+    "why": "not built: only 2 independent report(s) (3 sites)"
+   },
+   {
+    "title": "Postponed Macy's 100th Thanksgiving Day parade gets a do-over with 100 balloons and 1,000 clowns",
+    "score": 7,
+    "why": "not built: only 1 independent report(s) (2 sites)"
+   },
+   {
+    "title": "Did that tip seem steep? The math might have included the tax",
+    "score": 6,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Trump has outsized influence in stock markets, but investors grow wary",
+    "score": 6,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Would you use LinkedIn to find love?",
+    "score": 6,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   }
+  ],
+  "moved": [],
+  "top_n": 2,
+  "more": [
    {
     "key": "auto-07da4fa6",
     "words": [
      "rogers",
      "telus",
-     "bell",
-     "crtc"
+     "crtc",
+     "bell"
     ],
     "score": 10,
     "outlets": 3,
@@ -1914,7 +1752,7 @@
      "alt": "Canada’s telecommunications regulator says Bell, Rogers and Telus have charged consumers fees that are prohibited under the Telecommunications Act, and has orde",
      "outlet": "CBC News",
      "url": "https://www.cbc.ca/news/business/bell-rogers-telus-fees-9.7438448",
-     "since": "2026-11-28T09:24:54.099628+00:00"
+     "since": "2026-11-28T09:34:59.538755+00:00"
     },
     "photo_seen": [
      "https://i.cbc.ca/ais/1.5484128,1622163030000/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1919%2C1079%29%3BResize%3D620"
@@ -2096,12 +1934,8 @@
   ],
   "passed_over": [
    {
-    "title": "Zelenskyy questions Trump’s ‘strange’ reference to Putin as a friend",
+    "title": "Zelenskyy questions Trump’s ‘strange’ reference to Putin as a ‘friend’",
     "url": "https://www.nbcnews.com/world/ukraine/zelenskyy-questions-trumps-strange-reference-putin-friend-rcna611653"
-   },
-   {
-    "title": "U.S. military says it disabled another ship that tried to breach naval blockade on Iranian ports",
-    "url": "https://www.cp24.com/news/world/2026/11/27/us-military-says-it-disabled-another-ship-that-tried-to-breach-naval-blockade-on-iranian-ports/"
    }
   ]
  },
@@ -2446,7 +2280,7 @@
    "id": "_mnkhZRrNMc",
    "r": "us",
    "o": "CBS News",
-   "t": "Democratic, Republican strategists react to Trump's stance on Nvidia and Jensen Huang",
+   "t": "Can Trump's support for Nvidia's Jensen Huang come back to bite him?",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=_mnkhZRrNMc",
@@ -2555,20 +2389,6 @@
    "geo": "unknown"
   },
   {
-   "id": "53-G7WpYdCI",
-   "r": "us",
-   "o": "Fox News",
-   "t": "'TROJAN HORSE': Trump could meet with El-Sayed to discuss TRUMPCARE",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=53-G7WpYdCI",
-   "img": "https://i.ytimg.com/vi/53-G7WpYdCI/hqdefault.jpg",
-   "up": "2026-11-28",
-   "added": "2026-11-28T08:25:34.342815+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "Hds2zRkJkTM",
    "r": "us",
    "o": "Fox News",
@@ -2583,10 +2403,24 @@
    "geo": "unknown"
   },
   {
+   "id": "gNucbv3_Otc",
+   "r": "us",
+   "o": "Fox News",
+   "t": "‘CHAOS’: Sen Blackburn RIPS Rep Jayapal’s ‘fight oligarchy’ trip to Paris",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=gNucbv3_Otc",
+   "img": "https://i.ytimg.com/vi/gNucbv3_Otc/hqdefault.jpg",
+   "up": "2026-11-28",
+   "added": "2026-11-28T09:33:31.828239+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
    "id": "STcyI6ukDIs",
    "r": "world",
    "o": "Al Jazeera",
-   "t": "Sanchez faces close call or defeat in Spain's snap election: Analysis",
+   "t": "Spain's Sanchez faces a close call or defeat in snap election: Analysis",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=STcyI6ukDIs",
@@ -2614,7 +2448,7 @@
    "id": "Arfsd-Rm4q0",
    "r": "world",
    "o": "Sky News",
-   "t": "Hospital admissions for flu almost double compared to this time last year",
+   "t": "Hospital admissions for flu have surged by 80% in a week - what's causing the spike?",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=Arfsd-Rm4q0",
@@ -2642,7 +2476,7 @@
    "id": "447KgpcrLtI",
    "r": "world",
    "o": "BBC News",
-   "t": "Nuclear watchdog sounds new Zaporizhzhia alert | BBC News",
+   "t": "New push for ceasefire at Zaporizhzhia plant | BBC News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=447KgpcrLtI",
@@ -2684,7 +2518,7 @@
    "id": "Q5vxPBjlXeE",
    "r": "world",
    "o": "Reuters",
-   "t": "Hackers hit Air Force cloud as Musk unveils SpaceX share giveaway | Reuters World News",
+   "t": "Black Friday mall revival and Musk's SpaceX share plan | Reuters World News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=Q5vxPBjlXeE",
@@ -2739,6 +2573,14 @@
    "img": "https://i.abcnewsfe.com/a/c6a5c881-4a8d-4825-bb6e-1fc30d7f6732/nj-flooding-01-rt-jt-261127_1795803356714_hpMain_16x9.jpg?w=1600",
    "w": "Fri 2:23 p.m.",
    "iso": "2026-11-27T19:23:00+00:00"
+  },
+  {
+   "o": "NBC News",
+   "h": "Zelenskyy questions Trump’s ‘strange’ reference to Putin as a ‘friend’",
+   "u": "https://www.nbcnews.com/world/ukraine/zelenskyy-questions-trumps-strange-reference-putin-friend-rcna611653",
+   "img": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-11/261110-zelenskyy-rs-897c1a.jpg",
+   "w": "Sat 4:16 a.m.",
+   "iso": "2026-11-28T09:16:01+00:00"
   },
   {
    "o": "PBS News",
@@ -3512,15 +3354,27 @@
    "hot": false
   },
   {
+   "city": "Beijing",
+   "tz": "Asia/Shanghai",
+   "world": true,
+   "w": "The vote",
+   "label": "Taiwan holds elections to choose mayors and other local…",
+   "u": "https://www.timescolonist.com/world-news/taiwan-holds-elections-to-choose-mayors-and-other-local-leaders-as-china-looks-on-13070161",
+   "title": "Taiwan holds elections to choose mayors and other local leaders as China looks on",
+   "outlet": "Times Colonist",
+   "t": "Sat 1:56 a.m.",
+   "hot": false
+  },
+  {
    "city": "Tehran",
    "tz": "Asia/Tehran",
    "world": true,
    "w": "Fire",
-   "label": "US military fires at a ship that violated blockade of…",
-   "u": "https://www.euronews.com/2026/11/28/us-military-fires-at-a-ship-that-violated-blockade-of-iranian-ports",
-   "title": "US military fires at a ship that violated blockade of Iranian ports",
-   "outlet": "Euronews",
-   "t": "Sat 1:55 a.m.",
+   "label": "U.S. military fires on ship violating Iran blockade",
+   "u": "https://www.japantimes.co.jp/news/2026/11/28/world/us-military-fires-ship-iran-blockade/",
+   "title": "U.S. military fires on ship violating Iran blockade",
+   "outlet": "The Japan Times",
+   "t": "Fri 8:09 p.m.",
    "hot": false
   },
   {
@@ -3530,21 +3384,9 @@
    "w": "Canada–EU",
    "label": "Zelenskyy questions Trump’s ‘strange’ reference to Putin…",
    "u": "https://www.nbcnews.com/world/ukraine/zelenskyy-questions-trumps-strange-reference-putin-friend-rcna611653",
-   "title": "Zelenskyy questions Trump’s ‘strange’ reference to Putin as a friend",
+   "title": "Zelenskyy questions Trump’s ‘strange’ reference to Putin as a ‘friend’",
    "outlet": "NBC News",
    "t": "Sat 4:16 a.m.",
-   "hot": true
-  },
-  {
-   "city": "Jerusalem",
-   "tz": "Asia/Jerusalem",
-   "world": true,
-   "w": "Attacks",
-   "label": "Houthis report airstrikes in Yemen",
-   "u": "https://www.thestar.com/news/world/middle-east/houthis-report-airstrikes-in-yemen-israeli-strike-kills-2-near-gaza-clinic-and-other-mideast-news/article_7a263cb4-3d72-5d78-8846-f6fd4fe97803.html",
-   "title": "Houthis report airstrikes in Yemen, Israeli strike kills 2 near Gaza clinic, and other Mideast news",
-   "outlet": "Toronto Star",
-   "t": "Sat 3:34 a.m.",
    "hot": true
   }
  ],
@@ -3565,26 +3407,26 @@
   {
    "desk": "world",
    "pic": "globe",
-   "t": "Sat 3:34 a.m.",
-   "iso": "2026-11-28T08:34:32+00:00",
-   "title": "Houthis report airstrikes in Yemen, Israeli strike kills 2 near Gaza clinic, and other Mideast news",
-   "summary": "An airstrike in the Yemeni capital Sanaa early Saturday wounded at least 15 people, according to the Iran-backed Houthis, and another strike in a Red Sea port city ignited a",
-   "outlet": "Toronto Star (AP), Middle East Eye, Al Jazeera, The Japan Times (Reuters), Calgary Herald",
-   "n": 5,
-   "url": "https://www.thestar.com/news/world/middle-east/houthis-report-airstrikes-in-yemen-israeli-strike-kills-2-near-gaza-clinic-and-other-mideast-news/article_7a263cb4-3d72-5d78-8846-f6fd4fe97803.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/2/bf/2bffec10-c5c6-5569-9f70-732f1cd19298/6b0a93610d84c.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
    "t": "Sat 4:16 a.m.",
    "iso": "2026-11-28T09:16:01+00:00",
-   "title": "Zelenskyy questions Trump’s ‘strange’ reference to Putin as a friend",
+   "title": "Zelenskyy questions Trump’s ‘strange’ reference to Putin as a ‘friend’",
    "summary": "“He can’t be a friend,” Zelenskyy said, likening the statement to someone calling Adolf Hitler a friend during World War II.",
    "outlet": "NBC News + PBS NewsHour (AP), CBC News, CP24, BBC News",
    "n": 4,
    "url": "https://www.nbcnews.com/world/ukraine/zelenskyy-questions-trumps-strange-reference-putin-friend-rcna611653",
    "img": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-11/261110-zelenskyy-rs-897c1a.jpg"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Sat 3:34 a.m.",
+   "iso": "2026-11-28T08:34:32+00:00",
+   "title": "Houthis report airstrikes in Yemen, Israeli strike kills 2 near Gaza clinic, and other Mideast news",
+   "summary": "An airstrike in the Yemeni capital Sanaa early Saturday wounded at least 15 people, according to the Iran-backed Houthis, and another strike in a Red Sea port city ignited a",
+   "outlet": "Toronto Star (AP), Al Jazeera, The Japan Times (Reuters), Calgary Herald",
+   "n": 4,
+   "url": "https://www.thestar.com/news/world/middle-east/houthis-report-airstrikes-in-yemen-israeli-strike-kills-2-near-gaza-clinic-and-other-mideast-news/article_7a263cb4-3d72-5d78-8846-f6fd4fe97803.html",
+   "img": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/2/bf/2bffec10-c5c6-5569-9f70-732f1cd19298/6b0a93610d84c.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize"
   },
   {
    "desk": "us",
@@ -3605,22 +3447,10 @@
    "iso": "2026-11-28T07:22:17+00:00",
    "title": "Uganda starts mRNA Ebola vaccine trial in first for Africa",
    "summary": "The trial targets the less common Bundibugyo strain behind the Ebola outbreak in neighbouring DRC.",
-   "outlet": "Al Jazeera, Euronews + Toronto Star (AP), BBC News, CP24 (Reuters)",
+   "outlet": "Al Jazeera, Toronto Star (AP), BBC News, CP24 (Reuters)",
    "n": 4,
    "url": "https://www.aljazeera.com/news/2026/11/28/uganda-starts-mrna-ebola-vaccine-trial-in-first-for-africa?traffic_source=rss",
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/AP26329472525576-1795846807.jpg?resize=1920%2C1440"
-  },
-  {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Sat 1:55 a.m.",
-   "iso": "2026-11-28T06:55:55+00:00",
-   "title": "US military fires at a ship that violated blockade of Iranian ports",
-   "summary": "",
-   "outlet": "Euronews, Middle East Eye, Toronto Star + PBS NewsHour + CP24 + BNN Bloomberg, The Hill",
-   "n": 4,
-   "url": "https://www.euronews.com/2026/11/28/us-military-fires-at-a-ship-that-violated-blockade-of-iranian-ports",
-   "img": ""
   },
   {
    "desk": "us",
@@ -3681,6 +3511,18 @@
    "n": 3,
    "url": "https://dailyhive.com/vancouver/metro-vancouver-regional-district-new-board-chair-linda-buchanan",
    "img": "https://images-dh-production-baselayer.dailyhive.com/uploads/2026/04/invest-vancouver-f.jpg?format=auto"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Fri 8:09 p.m.",
+   "iso": "2026-11-28T01:09:00+00:00",
+   "title": "U.S. military fires on ship violating Iran blockade",
+   "summary": "U.S. aircraft fired “precision munitions” into the Pacific Archer’s stern after it attempted to run the blockade.",
+   "outlet": "The Japan Times (AFP), Toronto Star + PBS NewsHour + CP24 + BNN Bloomberg, The Hill",
+   "n": 3,
+   "url": "https://www.japantimes.co.jp/news/2026/11/28/world/us-military-fires-ship-iran-blockade/",
+   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/28/576433.JPG?v=3.1"
   },
   {
    "desk": "world",
@@ -3781,18 +3623,6 @@
   {
    "desk": "business",
    "pic": "chart",
-   "t": "Sat 2:00 a.m.",
-   "iso": "2026-11-28T07:00:45+00:00",
-   "title": "What now for the EU budget after a chaotic, inconclusive summit?",
-   "summary": "A chaotic summit in Brussels has raised serious doubt over whether EU leaders will abandon their red lines and agree on a new budget by the end of the year. Here's what to expect.",
-   "outlet": "Euronews",
-   "n": 1,
-   "url": "https://www.euronews.com/2026/11/28/what-now-for-the-eu-budget-after-a-chaotic-inconclusive-summit",
-   "img": "https://images.euronews.com/articles/stories/10/01/02/41/1200x675_cmsv2_c8ee5fb8-b629-5545-992c-ab23af0a01af-10010241.jpg"
-  },
-  {
-   "desk": "business",
-   "pic": "chart",
    "t": "Sat 1:57 a.m.",
    "iso": "2026-11-28T06:57:19+00:00",
    "title": "Trump’s tariffs have become America’s new normal",
@@ -3873,6 +3703,18 @@
    "n": 1,
    "url": "https://www.ctvnews.ca/regina/article/economic-impact-of-agribition-2026-will-be-widespread-organizers-say/",
    "img": "https://www.ctvnews.ca/resizer/v2/EF6XUTA42BGG7LB5EGA64VFPPQ.jpg?smart=true&auth=942e8741cd7bd62f033d71d28283e65ce3a61fd75479c144fafe61954086614e&width=1200&height=630"
+  },
+  {
+   "desk": "business",
+   "pic": "chart",
+   "t": "Fri 7:23 p.m.",
+   "iso": "2026-11-28T00:23:58+00:00",
+   "title": "Mamdani handed out $95K in staff raises the same day he warned of $12B budget deficit: report",
+   "summary": "New York City Mayor Zohran Mamdani approved $850,000 in raises for City Hall aides in his first year, according to payroll records reviewed by the New York Post.",
+   "outlet": "Fox News",
+   "n": 1,
+   "url": "https://www.foxnews.com/politics/mamdani-handed-95k-staff-raises-same-day-warned-12b-budget-deficit-report",
+   "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/zohran-mamdani-nypd-strategic-response-group.jpg"
   },
   {
    "desk": "us",
@@ -4088,20 +3930,20 @@
    "o": "National Post",
    "ca": true,
    "h": [
-    "Carson Jerema: Danielle Smith targets separatist factions at UCP convention Friday night",
+    "Don't put too much hope on a Democratic Congress ending Trump’s tariffs",
+    "Religious hospitals do not have to provide MAID, B.C. court rules",
     "Chris Selley: The Bill 21 ruling shows Quebec can be Quebec within Canada",
-    "Kerry Sun: Supreme Court couldn't help itself from tampering with Sec. 33",
+    "Divided SCC rules no new limits on notwithstanding clause, upholds much of Bill 21",
     "Poilievre heading to Washington as LeBlanc continues talks with Americans",
-    "John Ivison: Storm clouds of trade peace are gathering for Mark Carney",
-    "'Alternative grading' lets students mark themselves. How does that work?"
+    "John Ivison: Storm clouds of trade peace are gathering for Mark Carney"
    ],
    "u": [
-    "https://nationalpost.com/opinion/carson-jerema-danielle-smith-targets-separatist-factions-at-ucp-convention-friday-night/",
+    "https://nationalpost.com/news/dont-put-too-much-hope-on-a-democratic-congress-ending-trumps-tariffs/",
+    "https://nationalpost.com/news/religious-hospitals-do-not-have-to-provide-maid-bc-court/",
     "https://nationalpost.com/opinion/chris-selley-the-bill-21-ruling-shows-quebec-can-be-quebec-within-canada/",
-    "https://nationalpost.com/opinion/kerry-sun-supreme-court-couldnt-help-itself-from-tampering-with-sec-33/",
+    "https://nationalpost.com/news/supreme-court-to-deliver-historic-ruling-on-quebecs-bill-21/",
     "https://nationalpost.com/news/canadian-politics/poilievre-heading-to-washington-as-leblanc-continues-talks-with-americans/",
-    "https://nationalpost.com/opinion/john-ivison-storm-clouds-of-trade-peace-mark-carney/",
-    "https://nationalpost.com/news/alternative-grading-lets-students-mark-themselves-how-does-that-work/"
+    "https://nationalpost.com/opinion/john-ivison-storm-clouds-of-trade-peace-mark-carney/"
    ]
   },
   {
@@ -4182,7 +4024,7 @@
     "Everything to know about the 100th Macy’s Thanksgiving Day Parade",
     "Black Friday shoppers head to brick-and-mortar stores across the U.S.",
     "Hackers attack and penetrate Air Force’s computing platform",
-    "Zelenskyy questions Trump’s ‘strange’ reference to Putin as a friend",
+    "Zelenskyy questions Trump’s ‘strange’ reference to Putin as a ‘friend’",
     "Luka Dončić is a scoring machine. The NBA has rarely seen anything like it."
    ],
    "u": [
@@ -4278,13 +4120,22 @@
  "live": {
   "now": [
    {
+    "net": "Fox News",
+    "r": "us",
+    "title": "WATCH LIVE: Fox News' All-American Christmas tree",
+    "url": "https://www.youtube.com/watch?v=wcY4K5CNVx4",
+    "img": "https://i.ytimg.com/vi/wcY4K5CNVx4/hqdefault.jpg",
+    "story": "Fox News' All-American Christmas tree",
+    "watching": "118"
+   },
+   {
     "net": "LiveNOW from FOX",
     "r": "us",
     "title": "LIVE: Storms nationwide impact holiday travel, US-Iran conflict latest & more top stories",
     "url": "https://www.youtube.com/watch?v=pu49AmFJRp4",
     "img": "https://i.ytimg.com/vi/pu49AmFJRp4/hqdefault.jpg",
     "story": "Storms nationwide impact holiday travel, US-Iran conflict latest & mor",
-    "watching": "272"
+    "watching": "277"
    },
    {
     "net": "Sky News",
@@ -4293,7 +4144,7 @@
     "url": "https://www.youtube.com/watch?v=9XlS3uhDHkE",
     "img": "https://i.ytimg.com/vi/9XlS3uhDHkE/hqdefault.jpg",
     "story": "Princess of Wales to appear in cancer documentary",
-    "watching": "314",
+    "watching": "298",
     "reports": [
      {
       "outlet": "NBC News",
@@ -4314,7 +4165,18 @@
     "watching": "20K"
    }
   ],
-  "upcoming": [],
+  "upcoming": [
+   {
+    "net": "ABC News (Australia)",
+    "r": "world",
+    "title": "LIVE: Labor leader Ben Carroll speaks to supporters after party loses Victorian election| ABC NEWS",
+    "url": "https://www.youtube.com/watch?v=lX2ADFSiQQo",
+    "img": "https://i.ytimg.com/vi/lX2ADFSiQQo/hqdefault.jpg",
+    "story": "Labor leader Ben Carroll speaks to supporters after party loses Victor",
+    "when": "2026-11-28T10:00:00+00:00",
+    "breaking": false
+   }
+  ],
   "always": [
    {
     "net": "CBC News",
@@ -4359,68 +4221,22 @@
   ]
  },
  "pm": [],
- "blogs_auto": [
-  {
-   "net": "Middle East Eye",
-   "story": "Iranian tennis player withdraws from ITF match to avoid Israeli oppone",
-   "title": "Iranian tennis player withdraws from ITF match to avoid Israeli opponent",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-tennis-player-withdraws-itf-match-avoid-israeli-opponent",
-   "updated": "2026-11-28T07:55:46+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/2026-08/Vessels%20in%20the%20Strait%20of%20Hormuz%20are%20visible%20near%20the%20beach%20of%20Bandar%20Abbas%20Iran%2028%20august%202026%20retuers.jpg"
-  },
-  {
-   "net": "Middle East Eye",
-   "story": "Israeli gunfire kills Palestinian child in Gaza's Khan Younis",
-   "title": "Israeli gunfire kills Palestinian child in Gaza's Khan Younis",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-gunfire-kills-palestinian-child-gazas-khan-younis",
-   "updated": "2026-11-28T07:38:28+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/2026-08/Vessels%20in%20the%20Strait%20of%20Hormuz%20are%20visible%20near%20the%20beach%20of%20Bandar%20Abbas%20Iran%2028%20august%202026%20retuers.jpg"
-  },
-  {
-   "net": "Middle East Eye",
-   "story": "Israeli jets carry out air raid on Lebanese town in Nabatieh, NNA repo",
-   "title": "Israeli jets carry out air raid on Lebanese town in Nabatieh, NNA reports",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-jets-carry-out-air-raid-lebanese-town-nabatieh-nna-reports",
-   "updated": "2026-11-28T06:52:40+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/2026-08/Vessels%20in%20the%20Strait%20of%20Hormuz%20are%20visible%20near%20the%20beach%20of%20Bandar%20Abbas%20Iran%2028%20august%202026%20retuers.jpg"
-  },
-  {
-   "net": "Middle East Eye",
-   "story": "Morning update",
-   "title": "Morning update",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-683",
-   "updated": "2026-11-28T07:58:45+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/2026-08/Vessels%20in%20the%20Strait%20of%20Hormuz%20are%20visible%20near%20the%20beach%20of%20Bandar%20Abbas%20Iran%2028%20august%202026%20retuers.jpg"
-  },
-  {
-   "net": "Middle East Eye",
-   "story": "'Banana republic again': Former Costa Rican president slams Albanese b",
-   "title": "'Banana republic again': Former Costa Rican president slams Albanese ban",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/banana-republic-again-former-costa-rican-president-slams-albanese-ban",
-   "updated": "2026-11-28T07:25:34+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/2026-08/Vessels%20in%20the%20Strait%20of%20Hormuz%20are%20visible%20near%20the%20beach%20of%20Bandar%20Abbas%20Iran%2028%20august%202026%20retuers.jpg"
-  },
-  {
-   "net": "Middle East Eye",
-   "story": "UKMTO says five percent of ships attacked since 17 Aug sunk or lost",
-   "title": "UKMTO says five percent of ships attacked since 17 Aug sunk or lost",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/ukmto-says-five-percent-ships-attacked-17-aug-sunk-or-lost",
-   "updated": "2026-11-28T06:34:33+00:00",
-   "ended": false,
-   "img": "https://www.middleeasteye.net/sites/default/files/2026-08/Vessels%20in%20the%20Strait%20of%20Hormuz%20are%20visible%20near%20the%20beach%20of%20Bandar%20Abbas%20Iran%2028%20august%202026%20retuers.jpg"
-  }
- ],
+ "blogs_auto": [],
  "related": {
   "auto-f7fe893b": {
    "ties": [
+    "wakeham",
     "bill"
    ],
    "stories": [
+    {
+     "t": "Fri 10:28 a.m.",
+     "iso": "2026-11-27T15:28:36+00:00",
+     "outlet": "CBC News",
+     "title": "Quebec to carry out audit into Churchill River deal. Wakeham vows he won’t accept changes",
+     "url": "https://www.cbc.ca/news/canada/newfoundland-labrador/churchill-falls-audit-9.7438616?cmp=rss",
+     "tie": "Wakeham"
+    },
     {
      "t": "Fri 7:30 a.m.",
      "iso": "2026-11-27T12:30:23+00:00",
@@ -4475,31 +4291,6 @@
   }
  },
  "canangle_live": {
-  "https://www.middleeasteye.net/live-blog/live-blog-update/banana-republic-again-former-costa-rican-president-slams-albanese-ban": {
-   "story": "'Banana republic again': Former Costa Rican president slams Albanese ban",
-   "us": false,
-   "specific": 1,
-   "stories": [
-    {
-     "t": "Fri 6:16 p.m.",
-     "iso": "2026-11-27T23:16:47+00:00",
-     "outlet": "CTV News",
-     "title": "Former B.C. minister George Heyman, ‘giant’ and ‘troublemaker,’ dies at 77",
-     "url": "https://www.ctvnews.ca/vancouver/article/former-bc-minister-george-heyman-giant-and-troublemaker-dies-at-77/",
-     "ca": true,
-     "tie": ""
-    }
-   ],
-   "official": [],
-   "views": [
-    {
-     "outlet": "Vancouver Sun",
-     "kind": "Column · Vaughn Palmer",
-     "title": "Former B.C. premier David Eby keeps a low profile, skips MLAs' swearing-in",
-     "url": "https://vancouversun.com/opinion/columnists/vaughn-palmer-former-bc-premier-david-eby-keeps-low-profile"
-    }
-   ]
-  },
   "https://www.youtube.com/watch?v=unKxkqf7To0": {
    "story": "Victoria Votes 2026 | ABC NEWS",
    "us": false,
@@ -4513,6 +4304,60 @@
      "url": "https://www.ctvnews.ca/politics/article/pm-carney-says-he-will-whip-vote-over-bill-c-39-one-day-after-house-leader-calls-it-a-slam-dunk/",
      "ca": true,
      "tie": ""
+    }
+   ],
+   "official": [],
+   "views": []
+  },
+  "https://www.youtube.com/watch?v=lX2ADFSiQQo": {
+   "story": "Labor leader Ben Carroll speaks to supporters after party loses Victorian election| ABC NEWS",
+   "us": true,
+   "specific": 0,
+   "stories": [
+    {
+     "t": "Fri 4:12 p.m.",
+     "iso": "2026-11-27T21:12:06+00:00",
+     "outlet": "The Hill",
+     "title": "Ontario’s Doug Ford calls for US-style self-defense laws after violent home invasions",
+     "url": "https://thehill.com/policy/international/6245638-ontario-doug-ford-self-defense-toronto-home-invasions/",
+     "ca": false,
+     "tie": "Canada and the U.S."
+    },
+    {
+     "t": "Fri 12:29 p.m.",
+     "iso": "2026-11-27T17:29:21+00:00",
+     "outlet": "Toronto Star",
+     "title": "Poilievre heading to Washington next week as Canada-U.S. trade talks continue",
+     "url": "https://www.thestar.com/politics/federal/poilievre-heading-to-washington-next-week-as-canada-u-s-trade-talks-continue/article_83f4422a-cc12-5065-8d74-9a5054770a08.html",
+     "ca": true,
+     "tie": "Canada and the U.S."
+    },
+    {
+     "t": "Fri 12:24 p.m.",
+     "iso": "2026-11-27T17:24:19+00:00",
+     "outlet": "CP24",
+     "title": "Carney will ‘likely’ not oust Hoekstra but petition could help trade negotiations, Elizabeth May says",
+     "url": "https://www.cp24.com/news/canada/2026/11/27/canadas-parliament-receives-petition-to-oust-trumps-envoy/",
+     "ca": true,
+     "tie": "Canada and the U.S."
+    },
+    {
+     "t": "Thu 5:24 p.m.",
+     "iso": "2026-11-26T22:24:15+00:00",
+     "outlet": "Politico",
+     "title": "Campaign to oust Trump’s ambassador reaches Canada’s Parliament",
+     "url": "https://www.politico.com/news/2026/11/26/trump-ambassador-hoekstra-canada-parliament-01184307",
+     "ca": false,
+     "tie": "Canada and the U.S."
+    },
+    {
+     "t": "Wed 12:36 p.m.",
+     "iso": "2026-11-25T17:36:11+00:00",
+     "outlet": "BNN Bloomberg",
+     "title": "U.S. trade deal must ‘accommodate’ Canada, says Trump’s representative",
+     "url": "https://www.bnnbloomberg.ca/tariffs/2026/11/25/us-trade-deal-must-accommodate-canada-says-trumps-representative/",
+     "ca": true,
+     "tie": "Canada and the U.S."
     }
    ],
    "official": [],
