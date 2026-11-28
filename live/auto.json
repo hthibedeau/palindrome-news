@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-28T07:45:35.230209+00:00",
- "checkedLabel": "Sat 2:45 a.m.",
+ "checked": "2026-11-28T07:55:35.201506+00:00",
+ "checkedLabel": "Sat 2:55 a.m.",
  "stories": [
   {
    "key": "top",
@@ -65,13 +65,13 @@
  ],
  "wire": [
   [
-   "Sat 2:41 a.m.",
+   "Sat 2:42 a.m.",
    "World",
-   "An explosion at a middle school in eastern Afghanistan killed or wounded several students",
-   "The Canadian Press (via Winnipeg Free Press)",
-   "https://www.winnipegfreepress.com/world/2026/11/28/an-explosion-at-a-middle-school-in-eastern-afghanistan-killed-or-wounded-several-students",
-   "2026-11-28T07:41:48+00:00",
-   1
+   "Students killed, injured in school explosion in Afghanistan’s Kunar region",
+   "Al Jazeera",
+   "https://www.aljazeera.com/news/2026/11/28/students-killed-injured-in-school-explosion-in-afghanistans-kunar-region?traffic_source=rss",
+   "2026-11-28T07:42:09+00:00",
+   3
   ],
   [
    "Sat 2:22 a.m.",
@@ -128,6 +128,15 @@
    1
   ],
   [
+   "Sat 12:37 a.m.",
+   "World",
+   "Zapatistas begin a 'Tour for Life' from Chiapas to Mexico City to meet with families of disappeared",
+   "Toronto Star",
+   "https://www.thestar.com/news/world/americas/zapatistas-begin-a-tour-for-life-from-chiapas-to-mexico-city-to-meet-with-families-of-disappeared/article_11ffb144-c2d7-51bf-a162-7f1d0f283a4b.html",
+   "2026-11-28T05:37:34+00:00",
+   1
+  ],
+  [
    "Fri 11:59 p.m.",
    "World",
    "Behind India’s IIT dream: Student suicides and gaps in support",
@@ -143,15 +152,6 @@
    "Al Jazeera",
    "https://www.aljazeera.com/news/2026/11/28/el-nino-linked-deluges-flood-cities-in-peru-ecuador?traffic_source=rss",
    "2026-11-28T04:57:32+00:00",
-   1
-  ],
-  [
-   "Fri 11:46 p.m.",
-   "World",
-   "UN chief frontrunner urged to speak out over Albanese detention",
-   "Al Jazeera",
-   "https://www.aljazeera.com/news/2026/11/28/un-chief-frontrunner-urged-to-speak-out-over-albanese-detention-2?traffic_source=rss",
-   "2026-11-28T04:46:16+00:00",
    1
   ]
  ],
@@ -184,10 +184,10 @@
  ],
  "leads": [
   {
-   "score": 18,
+   "score": 19,
    "title": "Mackenzie Valley Highway becomes first major project of national interest in Canada’s North",
    "url": "https://www.ctvnews.ca/politics/article/carney-travels-to-yellowknife-for-announcement-on-major-initiative/",
-   "outlets": 14,
+   "outlets": 15,
    "why": [
     "National Newswatch #15"
    ],
@@ -205,6 +205,16 @@
   },
   {
    "score": 13,
+   "title": "One day after MacKinnon called Bill C-39 a ‘slam dunk,’ PM Carney says he will whip votes",
+   "url": "https://www.ctvnews.ca/politics/article/pm-carney-says-he-will-whip-vote-over-bill-c-39-one-day-after-house-leader-calls-it-a-slam-dunk/",
+   "outlets": 7,
+   "why": [
+    "National Newswatch #1"
+   ],
+   "theme": ""
+  },
+  {
+   "score": 13,
    "title": "Canadians hang up on Quebecor’s proposed Telus acquisition, pointing to high prices, lack of competition",
    "url": "https://angusreid.org/wp-content/uploads/2026/11/2026.11.26_Telus.pdf",
    "outlets": 5,
@@ -217,12 +227,10 @@
   },
   {
    "score": 12,
-   "title": "One day after MacKinnon called Bill C-39 a ‘slam dunk,’ PM Carney says he will whip votes",
-   "url": "https://www.ctvnews.ca/politics/article/pm-carney-says-he-will-whip-vote-over-bill-c-39-one-day-after-house-leader-calls-it-a-slam-dunk/",
-   "outlets": 6,
-   "why": [
-    "National Newswatch #1"
-   ],
+   "title": "Employer, nurse at odds over alleged Poilievre photo fallout",
+   "url": "https://www.ctvnews.ca/politics/article/employer-denies-allegation-nurse-contract-not-being-renewed-over-poilievre-photo/",
+   "outlets": 12,
+   "why": [],
    "theme": ""
   },
   {
@@ -230,14 +238,6 @@
    "title": "Government releases shortlist of teams left in bid to rebuild 24 Sussex",
    "url": "https://ottawacitizen.com/news/shortlist-bid-24-sussex",
    "outlets": 12,
-   "why": [],
-   "theme": ""
-  },
-  {
-   "score": 11,
-   "title": "Employer, nurse at odds over alleged Poilievre photo fallout",
-   "url": "https://www.ctvnews.ca/politics/article/employer-denies-allegation-nurse-contract-not-being-renewed-over-poilievre-photo/",
-   "outlets": 11,
    "why": [],
    "theme": ""
   },
@@ -251,6 +251,24 @@
   },
   {
    "score": 8,
+   "title": "Judge reserves decision in bestselling author Steven Galloway's defamation lawsuit",
+   "url": "https://www.cbc.ca/news/canada/british-columbia/steven-galloway-defamation-lawsuit-decision-reserved-9.7440019",
+   "outlets": 5,
+   "why": [
+    "CBC News front #5"
+   ],
+   "theme": ""
+  },
+  {
+   "score": 8,
+   "title": "US military fires at a ship that violated blockade of Iranian ports",
+   "url": "https://www.euronews.com/2026/11/28/us-military-fires-at-a-ship-that-violated-blockade-of-iranian-ports",
+   "outlets": 6,
+   "why": [],
+   "theme": ""
+  },
+  {
+   "score": 8,
    "title": "What the Trump thumping may mean for Canada",
    "url": "https://www.hilltimes.com/2026/11/23/what-the-trump-thumping-may-mean-for-canada/526426/",
    "outlets": 6,
@@ -258,24 +276,6 @@
     "National Newswatch #14"
    ],
    "theme": "Canada and the U.S."
-  },
-  {
-   "score": 7,
-   "title": "Judge reserves decision in bestselling author Steven Galloway's defamation lawsuit",
-   "url": "https://www.cbc.ca/news/canada/british-columbia/steven-galloway-defamation-lawsuit-decision-reserved-9.7440019",
-   "outlets": 4,
-   "why": [
-    "CBC News front #5"
-   ],
-   "theme": ""
-  },
-  {
-   "score": 7,
-   "title": "US military fires at a ship that violated blockade of Iranian ports",
-   "url": "https://www.euronews.com/2026/11/28/us-military-fires-at-a-ship-that-violated-blockade-of-iranian-ports",
-   "outlets": 5,
-   "why": [],
-   "theme": ""
   }
  ],
  "canada": [
@@ -313,8 +313,8 @@
      "court's",
      "wakeham",
      "supreme",
-     "bill",
-     "maid"
+     "maid",
+     "bill"
     ],
     "score": 15,
     "outlets": 4,
@@ -368,12 +368,12 @@
       "url": "https://www.cbc.ca/player/play/video/9.7439876"
      },
      {
-      "src": "live/img/auto-f7fe893b-a95951b493.jpg",
-      "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/d/32/d3294400-9bea-5268-8ca8-d1c0bb292279/6b09ef57cee6b.image.jpg?crop=1400%2C735%2C0%2C125&resize=1200%2C630&order=crop%2Cresize",
-      "caption": "From: Five takeaways from the Supreme Court's ruling on Quebec secularism law. — via Toronto Star",
-      "alt": "Five takeaways from the Supreme Court's ruling on Quebec secularism law",
+      "src": "live/img/auto-f7fe893b-a46c5f5566.jpg",
+      "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/d/09/d096797e-a690-5951-883d-8400485a559e/6ae38639881bc.image.jpg?crop=1620%2C851%2C0%2C114&resize=1200%2C630&order=crop%2Cresize",
+      "caption": "From: Newfoundland's Wakeham only Atlantic premier to react to Supreme Court ruling. — via Toronto Star",
+      "alt": "Newfoundland's Wakeham only Atlantic premier to react to Supreme Court ruling",
       "outlet": "Toronto Star",
-      "url": "https://www.thestar.com/news/canada/quebec/five-takeaways-from-the-supreme-court-s-ruling-on-quebec-secularism-law/article_7dc95f6d-3ec6-56bb-9f93-6d3145c33bb9.html"
+      "url": "https://www.thestar.com/news/canada/newfoundland-and-labrador/newfoundland-s-wakeham-only-atlantic-premier-to-react-to-supreme-court-ruling/article_651d8611-5cf3-5524-b75f-51091f341505.html"
      }
     ],
     "independent": 4,
@@ -405,10 +405,18 @@
      {
       "t": "Fri 4:39 p.m.",
       "iso": "2026-11-27T21:39:17+00:00",
+      "outlet": "Toronto Star",
+      "title": "Newfoundland's Wakeham only Atlantic premier to react to Supreme Court ruling",
+      "url": "https://www.thestar.com/news/canada/newfoundland-and-labrador/newfoundland-s-wakeham-only-atlantic-premier-to-react-to-supreme-court-ruling/article_651d8611-5cf3-5524-b75f-51091f341505.html",
+      "desc": "FREDERICTON - Only one of Canada’s Atlantic premiers has reacted to a landmark Supreme Court of Canada ruling about Charter rights."
+     },
+     {
+      "t": "Fri 4:39 p.m.",
+      "iso": "2026-11-27T21:39:17+00:00",
       "outlet": "CityNews Halifax",
       "title": "Newfoundland’s Wakeham only Atlantic premier to react to Supreme Court ruling",
       "url": "https://halifax.citynews.ca/2026/11/27/newfoundlands-wakeham-only-atlantic-premier-to-react-to-supreme-court-ruling/",
-      "desc": "FREDERICTON — Only one of Canada’s Atlantic premiers has reacted to a landmark Supreme Court of Canada ruling about Charter rights."
+      "desc": ""
      },
      {
       "t": "Fri 4:03 p.m.",
@@ -417,14 +425,6 @@
       "title": "Quebec’s Bill 21: ‘Bottom line nothing changes,’ says lawyer after Supreme Court decision",
       "url": "https://montreal.citynews.ca/2026/11/27/quebec-bill-21-lawyer-supreme-court/",
       "desc": "On Friday, the majority of the Supreme Court of Canada ruled that Quebec’s Bill 21 violates fundamental rights and freedoms. But that the law remains in effect because the Quebec government invoked the notwithstanding clause. Alexandra Belley McKinnon is a lawyer representing Coalition Inclusion…"
-     },
-     {
-      "t": "Fri 3:57 p.m.",
-      "iso": "2026-11-27T20:57:00+00:00",
-      "outlet": "Toronto Star",
-      "title": "Five takeaways from the Supreme Court's ruling on Quebec secularism law",
-      "url": "https://www.thestar.com/news/canada/quebec/five-takeaways-from-the-supreme-court-s-ruling-on-quebec-secularism-law/article_7dc95f6d-3ec6-56bb-9f93-6d3145c33bb9.html",
-      "desc": "The Supreme Court's historic decision provides more clarity on how governments can use the so-called notwithstanding clause of the Constitution."
      },
      {
       "t": "Fri 3:48 p.m.",
@@ -437,18 +437,18 @@
     ],
     "sources": [
      {
-      "t": "Fri 3:57 p.m.",
+      "t": "Fri 4:39 p.m.",
       "primary": false,
       "outlet": "Toronto Star",
-      "title": "Five takeaways from the Supreme Court's ruling on Quebec secularism law",
-      "url": "https://www.thestar.com/news/canada/quebec/five-takeaways-from-the-supreme-court-s-ruling-on-quebec-secularism-law/article_7dc95f6d-3ec6-56bb-9f93-6d3145c33bb9.html",
-      "desc": "The Supreme Court's historic decision provides more clarity on how governments can use the so-called notwithstanding clause of the Constitution.",
+      "title": "Newfoundland's Wakeham only Atlantic premier to react to Supreme Court ruling",
+      "url": "https://www.thestar.com/news/canada/newfoundland-and-labrador/newfoundland-s-wakeham-only-atlantic-premier-to-react-to-supreme-court-ruling/article_651d8611-5cf3-5524-b75f-51091f341505.html",
+      "desc": "FREDERICTON - Only one of Canada’s Atlantic premiers has reacted to a landmark Supreme Court of Canada ruling about Charter rights.",
       "wire": "The Canadian Press",
       "by": [
        {
         "outlet": "Toronto Star",
         "src": "The Canadian Press",
-        "byline": "\"Erika Morris The Canadian Press\" \"Erika Morris <spa"
+        "byline": "\"Eli Ridder The Canadian Press\" \"Eli Ridder <span"
        },
        {
         "outlet": "CityNews Halifax",
@@ -566,26 +566,26 @@
       "up": ""
      },
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=qQxvgoZPsJA",
-      "title": "How provinces may use notwithstanding clause now in wake of Supreme Court's Quebec secularism ruling",
-      "img": "https://i.ytimg.com/vi/qQxvgoZPsJA/hqdefault.jpg",
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=P_pRUcQlIIA",
+      "title": "'Still room' for debate around Bill 21 despite Supreme Court ruling, law prof says",
+      "img": "https://i.ytimg.com/vi/P_pRUcQlIIA/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=WUTltVJJpKw",
-      "title": "BC Supreme Court rules that faith-based hospitals can refuse MAID",
-      "img": "https://i.ytimg.com/vi/WUTltVJJpKw/hqdefault.jpg",
+      "net": "CBC News",
+      "url": "https://www.youtube.com/watch?v=6n386byO6KM",
+      "title": "Supreme Court of Canada upholds Quebec’s controversial secularism law",
+      "img": "https://i.ytimg.com/vi/6n386byO6KM/hqdefault.jpg",
       "rec": false,
       "up": ""
      },
      {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=nnfPG9MH9fE",
-      "title": "Bill 21: Supreme Court largely upholds Quebec's secularism law",
-      "img": "https://i.ytimg.com/vi/nnfPG9MH9fE/hqdefault.jpg",
+      "net": "CTV News",
+      "url": "https://www.youtube.com/watch?v=ry2Nm3nIRxU",
+      "title": "Court allows religious hospitals to refuse MAID",
+      "img": "https://i.ytimg.com/vi/ry2Nm3nIRxU/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -596,7 +596,7 @@
     "words": [
      "ebola"
     ],
-    "score": 5,
+    "score": 6,
     "outlets": 3,
     "carriers": 3,
     "tag": "Developing",
@@ -742,7 +742,7 @@
     "outled_ca": 5,
     "judgment": "national",
     "judgment_why": "National: affects many people; carried beyond one city.",
-    "weight": 23.5
+    "weight": 24.5
    },
    {
     "key": "auto-37fb6e8f",
@@ -751,9 +751,9 @@
      "highway",
      "valley"
     ],
-    "score": 18,
+    "score": 19,
     "outlets": 4,
-    "carriers": 7,
+    "carriers": 8,
     "tag": "Developing",
     "title": "'Beyond time': Ottawa lists Mackenzie Valley Highway as project of national interest",
     "url": "https://www.timescolonist.com/the-mix/beyond-time-ottawa-lists-mackenzie-valley-highway-as-project-of-national-interest-13068193",
@@ -800,6 +800,14 @@
       "alt": "Prime Minister Mark Carney officially lists Mackenzie Valley Highway as project of national interest",
       "outlet": "CBC News",
       "url": "https://www.cbc.ca/news/canada/north/livestory/prime-minister-mark-carney-north-9.7438167"
+     },
+     {
+      "src": "live/img/auto-37fb6e8f-d4bc7fd348.jpg",
+      "orig": "https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/1/9f/19fa334d-fcb9-5028-89f4-cfd710b5ea19/6b0947c2dcf32.image.jpg?crop=1400%2C735%2C0%2C99&resize=1200%2C630&order=crop%2Cresize",
+      "caption": "From: 'Beyond time': Ottawa lists Mackenzie Valley Highway as project of national interest. — via Toronto Star",
+      "alt": "'Beyond time': Ottawa lists Mackenzie Valley Highway as project of national interest",
+      "outlet": "Toronto Star",
+      "url": "https://www.thestar.com/news/canada/carney-travels-to-yellowknife-for-announcement-on-major-initiative/article_8e7bf97f-d23f-52b3-9129-80f0952dd35d.html"
      },
      {
       "src": "live/img/auto-37fb6e8f-5694bb2c73.jpg",
@@ -861,6 +869,14 @@
       "desc": ""
      },
      {
+      "t": "Fri 1:40 p.m.",
+      "iso": "2026-11-27T18:40:00+00:00",
+      "outlet": "Toronto Star",
+      "title": "'Beyond time': Ottawa lists Mackenzie Valley Highway as project of national interest",
+      "url": "https://www.thestar.com/news/canada/carney-travels-to-yellowknife-for-announcement-on-major-initiative/article_8e7bf97f-d23f-52b3-9129-80f0952dd35d.html",
+      "desc": "The prime minister's announcement with Northwest Territories Premier R.J. Simpson has been billed as one that would \"connect and transform Canada’s North.\""
+     },
+     {
       "t": "Fri 1:36 p.m.",
       "iso": "2026-11-27T18:36:21+00:00",
       "outlet": "Cabin Radio",
@@ -871,14 +887,19 @@
     ],
     "sources": [
      {
-      "t": "Fri 7:35 p.m.",
+      "t": "Fri 1:40 p.m.",
       "primary": false,
-      "outlet": "CP24",
-      "title": "Mackenzie Valley Highway becomes first major project of national interest in Canada’s North",
-      "url": "https://www.cp24.com/news/canada/2026/11/27/mackenzie-valley-highway-becomes-first-major-project-of-national-interest-in-canadas-north/",
-      "desc": "The government says the 800-km proposed highway would improve access for more than 10,000 people, including providing year-round road access to 2,000 people in the three N.W.T. communities",
+      "outlet": "Toronto Star",
+      "title": "'Beyond time': Ottawa lists Mackenzie Valley Highway as project of national interest",
+      "url": "https://www.thestar.com/news/canada/carney-travels-to-yellowknife-for-announcement-on-major-initiative/article_8e7bf97f-d23f-52b3-9129-80f0952dd35d.html",
+      "desc": "The prime minister's announcement with Northwest Territories Premier R.J. Simpson has been billed as one that would \"connect and transform Canada’s North.\"",
       "wire": "The Canadian Press",
       "by": [
+       {
+        "outlet": "Toronto Star",
+        "src": "The Canadian Press",
+        "byline": "\"Brittany Hobson The Canadian Press\" \"Brittany Hobson <"
+       },
        {
         "outlet": "CP24",
         "src": "The Canadian Press",
@@ -901,6 +922,10 @@
        }
       ],
       "copies": [
+       {
+        "outlet": "CP24",
+        "url": "https://www.cp24.com/news/canada/2026/11/27/mackenzie-valley-highway-becomes-first-major-project-of-national-interest-in-canadas-north/"
+       },
        {
         "outlet": "BNN Bloomberg",
         "url": "https://www.bnnbloomberg.ca/business/politics/2026/11/27/mackenzie-valley-highway-becomes-first-major-project-of-national-interest-in-canadas-north/"
@@ -980,7 +1005,7 @@
     "fronts_who": [],
     "judgment": "national",
     "judgment_why": "National: affects many people; carried across the country (national desks).",
-    "weight": 43.5,
+    "weight": 45.0,
     "videos": [
      {
       "net": "CPAC",
@@ -988,14 +1013,6 @@
       "title": "PM Carney deems Mackenzie Valley Highway as a project of national interest – November 27, 2026",
       "img": "https://i.ytimg.com/vi/NLqsW9kixdI/hqdefault.jpg",
       "rec": true,
-      "up": ""
-     },
-     {
-      "net": "Global News",
-      "url": "https://www.youtube.com/watch?v=1qUqMHnCllA",
-      "title": "Mackenzie Valley Highway becomes project of national interest",
-      "img": "https://i.ytimg.com/vi/1qUqMHnCllA/hqdefault.jpg",
-      "rec": false,
       "up": ""
      },
      {
@@ -1011,6 +1028,14 @@
       "url": "https://www.youtube.com/watch?v=nurmw5VIpHo",
       "title": "Ottawa designates Mackenzie Valley Highway a project of national interest",
       "img": "https://i.ytimg.com/vi/nurmw5VIpHo/hqdefault.jpg",
+      "rec": false,
+      "up": ""
+     },
+     {
+      "net": "Global News",
+      "url": "https://www.youtube.com/watch?v=1qUqMHnCllA",
+      "title": "Mackenzie Valley Highway becomes project of national interest",
+      "img": "https://i.ytimg.com/vi/1qUqMHnCllA/hqdefault.jpg",
       "rec": false,
       "up": ""
      }
@@ -1372,8 +1397,8 @@
     "url": "https://www.aljazeera.com/news/2026/11/28/uganda-starts-mrna-ebola-vaccine-trial-in-first-for-africa?traffic_source=rss",
     "rank": 2,
     "live": "",
-    "weight": 23.5,
-    "score": 5,
+    "weight": 24.5,
+    "score": 6,
     "independent": 3,
     "most_read": 0,
     "canada": "tie",
@@ -1391,8 +1416,8 @@
     "url": "https://www.timescolonist.com/the-mix/beyond-time-ottawa-lists-mackenzie-valley-highway-as-project-of-national-interest-13068193",
     "rank": 3,
     "live": "",
-    "weight": 43.5,
-    "score": 18,
+    "weight": 45.0,
+    "score": 19,
     "independent": 4,
     "most_read": 2,
     "canada": "canadian",
@@ -1401,7 +1426,7 @@
     "fronts": 0,
     "fronts_who": [],
     "rule": "Canadian, still developing",
-    "carriers": 7,
+    "carriers": 8,
     "judgment": "national",
     "why_judged": "National: affects many people; carried across the country (national desks)."
    },
@@ -1471,13 +1496,23 @@
    },
    {
     "title": "One day after MacKinnon called Bill C-39 a ‘slam dunk,’ PM Carney says he will whip votes",
-    "score": 12,
-    "why": "not built: only 2 independent report(s) (4 sites)"
+    "score": 13,
+    "why": "not built: only 1 independent report(s) (4 sites)"
    },
    {
     "title": "Employer, nurse at odds over alleged Poilievre photo fallout",
-    "score": 11,
+    "score": 12,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Judge reserves decision in bestselling author Steven Galloway's defamation lawsuit",
+    "score": 8,
+    "why": "not built: only 1 independent report(s) (5 sites)"
+   },
+   {
+    "title": "US military fires at a ship that violated blockade of Iranian ports",
+    "score": 8,
+    "why": "not built: only 2 independent report(s) (5 sites)"
    },
    {
     "title": "Poilievre heading to Washington next week as Canada-U.S. trade talks continue",
@@ -1495,16 +1530,6 @@
     "why": "not built: only 1 independent report(s) (1 sites)"
    },
    {
-    "title": "Judge reserves decision in bestselling author Steven Galloway's defamation lawsuit",
-    "score": 7,
-    "why": "not built: only 1 independent report(s) (4 sites)"
-   },
-   {
-    "title": "US military fires at a ship that violated blockade of Iranian ports",
-    "score": 7,
-    "why": "not built: only 2 independent report(s) (4 sites)"
-   },
-   {
     "title": "Canada's top court upholds Quebec law banning some workers from wearing religious symbols",
     "score": 6,
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
@@ -1515,19 +1540,19 @@
     "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    },
    {
+    "title": "Taiwan holds elections to choose mayors and other local leaders as China looks on",
+    "score": 6,
+    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
+   },
+   {
+    "title": "Upheld Quebec religious symbols bill 'legislative racism,' Manitoba premier says",
+    "score": 6,
+    "why": "not built: only 1 independent report(s) (6 sites)"
+   },
+   {
     "title": "Black Friday deals a mixed bag for Winnipeg shoppers",
     "score": 6,
     "why": "not built: only 2 independent report(s) (3 sites)"
-   },
-   {
-    "title": "What the Trump thumping may mean for Canada",
-    "score": 5,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
-   },
-   {
-    "title": "Taiwan holds elections to choose mayors and other local leaders as China looks on",
-    "score": 5,
-    "why": "not built: its headlines don't share a name often enough to be sure they are one story"
    }
   ],
   "moved": [],
@@ -1563,7 +1588,7 @@
      "alt": "Parts of US clean up after Thanksgiving storm lashes East Coast",
      "outlet": "Al Jazeera",
      "url": "https://www.aljazeera.com/news/2026/11/28/parts-of-us-clean-up-after-thanksgiving-storm-lashes-east-coast?traffic_source=rss",
-     "since": "2026-11-28T07:46:33.162833+00:00"
+     "since": "2026-11-28T07:56:38.183152+00:00"
     },
     "photo_seen": [
      "https://www.aljazeera.com/wp-content/uploads/2026/11/AP26331673311397-1795832472.jpg?resize=1920%2C1440"
@@ -1742,7 +1767,7 @@
      "alt": "Canada’s telecommunications regulator says Bell, Rogers and Telus have charged consumers fees that are prohibited under the Telecommunications Act, and has orde",
      "outlet": "CBC News",
      "url": "https://www.cbc.ca/news/business/bell-rogers-telus-fees-9.7438448",
-     "since": "2026-11-28T07:46:30.400315+00:00"
+     "since": "2026-11-28T07:56:34.985152+00:00"
     },
     "photo_seen": [
      "https://i.cbc.ca/ais/1.5484128,1622163030000/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1919%2C1079%29%3BResize%3D620"
@@ -2096,6 +2121,34 @@
    "geo": "unknown"
   },
   {
+   "id": "jYZqw7HmyN8",
+   "r": "ca",
+   "o": "CTV News",
+   "t": "Landmark ruling over religious symbols | CTV National News for Friday, Nov. 27, 206",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=jYZqw7HmyN8",
+   "img": "https://i.ytimg.com/vi/jYZqw7HmyN8/hqdefault.jpg",
+   "up": "2026-11-28",
+   "added": "2026-11-28T07:55:35.201506+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
+   "id": "rTxO8TKJdUQ",
+   "r": "ca",
+   "o": "CTV News",
+   "t": "Deadly Mount Pleasant crash | CTV News Vancouver at Six for November 27, 2026",
+   "rec": false,
+   "d": "",
+   "u": "https://www.youtube.com/watch?v=rTxO8TKJdUQ",
+   "img": "https://i.ytimg.com/vi/rTxO8TKJdUQ/hqdefault.jpg",
+   "up": "2026-11-27",
+   "added": "2026-11-28T07:55:35.201506+00:00",
+   "pic": "globe",
+   "geo": "unknown"
+  },
+  {
    "id": "XixklQ17L5Y",
    "r": "us",
    "o": "C-SPAN",
@@ -2253,7 +2306,7 @@
    "id": "_mnkhZRrNMc",
    "r": "us",
    "o": "CBS News",
-   "t": "Can Trump's support for Nvidia's Jensen Huang come back to bite him?",
+   "t": "Democratic, Republican strategists react to Trump's stance on Nvidia and Jensen Huang",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=_mnkhZRrNMc",
@@ -2272,7 +2325,7 @@
    "d": "",
    "u": "https://www.youtube.com/watch?v=cenzCDbxV7M",
    "img": "https://i.ytimg.com/vi/cenzCDbxV7M/hqdefault.jpg",
-   "up": "2026-11-28",
+   "up": "2026-11-27",
    "added": "2026-11-28T05:28:05.501525+00:00",
    "pic": "globe",
    "geo": "unknown"
@@ -2376,20 +2429,6 @@
    "geo": "unknown"
   },
   {
-   "id": "Q5vxPBjlXeE",
-   "r": "world",
-   "o": "Reuters",
-   "t": "Hackers hit Air Force cloud as Musk unveils SpaceX share giveaway | Reuters World News",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=Q5vxPBjlXeE",
-   "img": "https://i.ytimg.com/vi/Q5vxPBjlXeE/hqdefault.jpg",
-   "up": "2026-11-27",
-   "added": "2026-11-27T22:21:32.543767+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "AQDGPLkkUb0",
    "r": "world",
    "o": "Al Jazeera",
@@ -2404,24 +2443,10 @@
    "geo": "unknown"
   },
   {
-   "id": "YkMLnjoLsHg",
-   "r": "world",
-   "o": "Reuters",
-   "t": "Bargain hunters beat the sunrise to Black Friday deals",
-   "rec": false,
-   "d": "",
-   "u": "https://www.youtube.com/watch?v=YkMLnjoLsHg",
-   "img": "https://i.ytimg.com/vi/YkMLnjoLsHg/hqdefault.jpg",
-   "up": "2026-11-27",
-   "added": "2026-11-27T23:16:20.160985+00:00",
-   "pic": "globe",
-   "geo": "unknown"
-  },
-  {
    "id": "STcyI6ukDIs",
    "r": "world",
    "o": "Al Jazeera",
-   "t": "Sanchez faces close call or defeat in Spain's snap election: Analysis",
+   "t": "Spain's Sanchez faces a close call or defeat in snap election: Analysis",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=STcyI6ukDIs",
@@ -2435,7 +2460,7 @@
    "id": "q8DAOIG30LY",
    "r": "world",
    "o": "DW News",
-   "t": "Has Japan's first female PM lived up to expectations? | DW News",
+   "t": "Sanae Takaichi's first year: Tough on China, close to Trump | DW News",
    "rec": false,
    "d": "",
    "u": "https://www.youtube.com/watch?v=q8DAOIG30LY",
@@ -3276,12 +3301,12 @@
    "city": "Vancouver",
    "tz": "America/Vancouver",
    "world": false,
-   "w": "Jobs",
-   "label": "'A historic leader': Workers rights advocate and MLA…",
-   "u": "https://vancouversun.com/news/a-historic-leader-workers-rights-advocate-and-mla-george-heyman-dies-at-77",
-   "title": "'A historic leader': Workers rights advocate and MLA George Heyman dies at 77",
-   "outlet": "Vancouver Sun",
-   "t": "Fri 7:43 p.m.",
+   "w": "In court",
+   "label": "Judge reserves decision in bestselling author Steven…",
+   "u": "https://www.cbc.ca/news/canada/british-columbia/steven-galloway-defamation-lawsuit-decision-reserved-9.7440019",
+   "title": "Judge reserves decision in bestselling author Steven Galloway's defamation lawsuit",
+   "outlet": "CBC News",
+   "t": "Fri 9:19 p.m.",
    "hot": false
   },
   {
@@ -3354,10 +3379,22 @@
    "iso": "2026-11-28T02:35:20+00:00",
    "title": "Multiple Florida State captains refuse handshakes with Florida at coin toss, raising sportsmanship questions",
    "summary": "Florida State Seminoles captains refused handshakes at the coin toss vs the Florida Gators, drawing fan backlash, with only Duce Robinson offering a hand.",
-   "outlet": "Fox News, The Hill, ABC News (AP), NBC News",
+   "outlet": "Fox News, The Hill, Toronto Star + ABC News (AP), NBC News",
    "n": 4,
    "url": "https://www.foxnews.com/outkick-sports/multiple-florida-state-captains-refuse-handshakes-florida-coin-toss-raising-sportsmanship-questions",
    "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/Rick-Stockstill-FSU-Seminoles-vs-Florida.jpg"
+  },
+  {
+   "desk": "world",
+   "pic": "globe",
+   "t": "Fri 9:22 p.m.",
+   "iso": "2026-11-28T02:22:25.854000+00:00",
+   "title": "Kenneth Law apologizes in court to families of victims",
+   "summary": "Prosecutors are seeking a 25-year sentence for an Ontario man who sold potentially deadly substances online to people who then used those products to take their own lives.",
+   "outlet": "CBC News + Toronto Star (CP), BBC News, Toronto Sun, Toronto Star",
+   "n": 4,
+   "url": "https://www.cbc.ca/news/canada/toronto/kenneth-law-sentencing-hearing-poison-seller-9.7438391",
+   "img": "https://i.cbc.ca/ais/1.6831073,1702415985000/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C36%2C3877%2C2180%29%3BResize%3D620"
   },
   {
    "desk": "us",
@@ -3372,25 +3409,13 @@
    "img": "https://static.foxnews.com/foxnews.com/content/uploads/2026/11/dca-american-planes.png"
   },
   {
-   "desk": "world",
-   "pic": "globe",
-   "t": "Fri 8:09 p.m.",
-   "iso": "2026-11-28T01:09:00+00:00",
-   "title": "Mexico and U.S. combat drug cartels together as Trump pressure looms large",
-   "summary": "Mexico’s recent string of cartel kingpin takedowns aided by U.S. intelligence suggest closer cooperation with Washington.",
-   "outlet": "The Japan Times (AFP), CBC News, PBS NewsHour (AP), BBC News",
-   "n": 4,
-   "url": "https://www.japantimes.co.jp/news/2026/11/28/world/crime-legal/mexico-us-combat-drug-cartels/",
-   "img": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/28/576434.jpg?v=3.1"
-  },
-  {
    "desk": "politics",
    "pic": "parliament",
    "t": "Fri 5:45 p.m.",
    "iso": "2026-11-27T22:45:54+00:00",
    "title": "NB Power extends winter disconnection moratorium for vulnerable customers",
    "summary": "NB Power has announced that a pilot program, which offered more leniency for vulnerable populations who have difficulty paying their bills, will continue this winter.",
-   "outlet": "Global News, CP24 + BNN Bloomberg + CTV News, Yukon News, CBC News",
+   "outlet": "Global News, Toronto Star + CP24 + BNN Bloomberg + CTV News, Yukon News, CBC News",
    "n": 4,
    "url": "https://globalnews.ca/news/12169243/nb-power-winter-disconnection-moratorium/",
    "img": "https://globalnews.ca/wp-content/uploads/2023/12/2023122411120-6588566a2d12bdcd37e6ea73jpeg-2.jpg?quality=65&strip=all&w=720&h=379&crop=1"
@@ -3402,7 +3427,7 @@
    "iso": "2026-11-28T07:22:17+00:00",
    "title": "Uganda starts mRNA Ebola vaccine trial in first for Africa",
    "summary": "The trial targets the less common Bundibugyo strain behind the Ebola outbreak in neighbouring DRC.",
-   "outlet": "Al Jazeera, Euronews (AP), CP24 (Reuters)",
+   "outlet": "Al Jazeera, Euronews + Toronto Star (AP), CP24 (Reuters)",
    "n": 3,
    "url": "https://www.aljazeera.com/news/2026/11/28/uganda-starts-mrna-ebola-vaccine-trial-in-first-for-africa?traffic_source=rss",
    "img": "https://www.aljazeera.com/wp-content/uploads/2026/11/AP26329472525576-1795846807.jpg?resize=1920%2C1440"
@@ -3414,7 +3439,7 @@
    "iso": "2026-11-28T06:56:56+00:00",
    "title": "Taiwan holds elections to choose mayors and other local leaders as China looks on",
    "summary": "TAIPEI, Taiwan (AP) — Taiwan is choosing mayors, council members and other local leaders across its 22 cities and counties in an election Saturday that will test whether the ruling party can notch some wins at the local level.",
-   "outlet": "Times Colonist (AP), Al Jazeera, The Japan Times",
+   "outlet": "Times Colonist + Toronto Star (AP), Al Jazeera, The Japan Times",
    "n": 3,
    "url": "https://www.timescolonist.com/world-news/taiwan-holds-elections-to-choose-mayors-and-other-local-leaders-as-china-looks-on-13070161",
    "img": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2026/11/ce19ef782068c66d5627b30a88c2bf940c469ac5b5052118eaf7715c68e76722.jpg;w=1200;h=800;mode=crop"
@@ -3426,7 +3451,7 @@
    "iso": "2026-11-28T06:55:55+00:00",
    "title": "US military fires at a ship that violated blockade of Iranian ports",
    "summary": "US military maintained a \"strict\" blockade of Iranian ports by firing at a ship that violated the naval containment on Thursday.",
-   "outlet": "Euronews, PBS NewsHour + CP24 + BNN Bloomberg, The Hill",
+   "outlet": "Euronews, Toronto Star + PBS NewsHour + CP24 + BNN Bloomberg, The Hill",
    "n": 3,
    "url": "https://www.euronews.com/2026/11/28/us-military-fires-at-a-ship-that-violated-blockade-of-iranian-ports",
    "img": "https://images.euronews.com/articles/stories/10/01/22/31/1200x675_cmsv2_8cf904e4-2a89-5890-bf87-5408d4553c78-10012231.jpg"
@@ -3502,6 +3527,18 @@
    "n": 2,
    "url": "https://cabinradio.ca/323567/news/dehcho/fort-simpson/fort-simpson-schools-reopen-on-monday-after-no-bed-bugs-found/",
    "img": "https://cabinradio.ca/wp-content/uploads/2023/08/IMG_6735.jpg"
+  },
+  {
+   "desk": "politics",
+   "pic": "parliament",
+   "t": "Fri 9:03 p.m.",
+   "iso": "2026-11-28T02:03:24+00:00",
+   "title": "Upheld Quebec religious symbols bill 'legislative racism,' Manitoba premier says",
+   "summary": "Manitoba's premier is condemning other provincial governments using the notwithstanding clause to target minorities, calling a Quebec law now upheld by Canada's top court an act of \"legislative racism.\"",
+   "outlet": "CBC News + Toronto Star + CTV News + CP24 + 2 more (CP), CTV News",
+   "n": 2,
+   "url": "https://www.cbc.ca/news/canada/manitoba/wab-kinew-quebec-bill-21-legislative-racism-alberta-saskatchewan-discrimination-supreme-court-ruling-9.7440050?cmp=rss",
+   "img": "https://i.cbc.ca/ais/eef82dba-356a-44d1-9952-c768d463c1c6,1795030953030/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C140%2C5712%2C3213%29%3BResize%3D620"
   },
   {
    "desk": "politics",
@@ -3582,7 +3619,7 @@
    "iso": "2026-11-28T02:44:01+00:00",
    "title": "Employer, nurse at odds over alleged Poilievre photo fallout",
    "summary": "Poilievre said his parliamentary privilege was violated when he said a nurse was told she might lose her job after she was photographed speaking with him after the fire at CFB Wainwright.",
-   "outlet": "CTV News + CityNews Winnipeg + CityNews Vancouver + CityNews Ottawa + 7 more (CP)",
+   "outlet": "CTV News + Toronto Star + CityNews Winnipeg + CityNews Vancouver + 8 more (CP)",
    "n": 1,
    "url": "https://www.ctvnews.ca/politics/article/employer-denies-allegation-nurse-contract-not-being-renewed-over-poilievre-photo/",
    "img": "https://www.ctvnews.ca/resizer/v2/WQOTZSMIMKV3RYIIP2ZFB6TIPY.jpg?smart=true&auth=7716b43a73ac0c46fe61e52a0d34e5e0cece7d30b3b3b227619f1788040ffe72&width=1200&height=630"
@@ -3598,18 +3635,6 @@
    "n": 1,
    "url": "https://globalnews.ca/news/12169570/significant-investment-address-public-safety-kelowna-2027-draft-budget/",
    "img": "https://globalnews.ca/wp-content/uploads/2025/05/city-hall-kelowna.jpg?quality=65&strip=all&w=720&h=379&crop=1"
-  },
-  {
-   "desk": "politics",
-   "pic": "parliament",
-   "t": "Fri 9:03 p.m.",
-   "iso": "2026-11-28T02:03:24+00:00",
-   "title": "Upheld Quebec religious symbols bill 'legislative racism,' Manitoba premier says",
-   "summary": "Manitoba's premier is condemning other provincial governments using the notwithstanding clause to target minorities, calling a Quebec law now upheld by Canada's top court an act of \"legislative racism.\"",
-   "outlet": "CBC News + CTV News + CP24 + CityNews Winnipeg + 1 more (CP)",
-   "n": 1,
-   "url": "https://www.cbc.ca/news/canada/manitoba/wab-kinew-quebec-bill-21-legislative-racism-alberta-saskatchewan-discrimination-supreme-court-ruling-9.7440050?cmp=rss",
-   "img": "https://i.cbc.ca/ais/eef82dba-356a-44d1-9952-c768d463c1c6,1795030953030/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C140%2C5712%2C3213%29%3BResize%3D620"
   },
   {
    "desk": "us",
@@ -4069,7 +4094,7 @@
     "url": "https://www.youtube.com/watch?v=wcY4K5CNVx4",
     "img": "https://i.ytimg.com/vi/wcY4K5CNVx4/hqdefault.jpg",
     "story": "Fox News' All-American Christmas tree",
-    "watching": "134"
+    "watching": "127"
    },
    {
     "net": "LiveNOW from FOX",
@@ -4078,7 +4103,7 @@
     "url": "https://www.youtube.com/watch?v=pu49AmFJRp4",
     "img": "https://i.ytimg.com/vi/pu49AmFJRp4/hqdefault.jpg",
     "story": "Storms nationwide impact holiday travel, US-Iran conflict latest & mor",
-    "watching": "273"
+    "watching": "270"
    },
    {
     "net": "Sky News",
@@ -4087,7 +4112,7 @@
     "url": "https://www.youtube.com/watch?v=9XlS3uhDHkE",
     "img": "https://i.ytimg.com/vi/9XlS3uhDHkE/hqdefault.jpg",
     "story": "Princess of Wales to appear in cancer documentary",
-    "watching": "178",
+    "watching": "212",
     "reports": [
      {
       "outlet": "NBC News",
@@ -4105,7 +4130,7 @@
     "url": "https://www.youtube.com/watch?v=unKxkqf7To0",
     "img": "https://i.ytimg.com/vi/unKxkqf7To0/hqdefault.jpg",
     "story": "Victoria Votes 2026",
-    "watching": "12K"
+    "watching": "13K"
    }
   ],
   "upcoming": [],
@@ -4977,6 +5002,11 @@
   "-NabWfv-VdA"
  ],
  "noembed": [
-  "L6qtnHZxwEw"
+  "8ITwByWccEA",
+  "J3FV4iY8p5w",
+  "L6qtnHZxwEw",
+  "NuEr0Q_AS6U",
+  "ldElU-Q5Qyo",
+  "t_HBrWb84eY"
  ]
 }
